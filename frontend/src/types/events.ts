@@ -10,8 +10,132 @@ export interface Events {
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "CreateRoomRequest".
+ */
+export interface CreateRoomRequest {
+  nickname: string;
+  avatar:
+    | "burro"
+    | "cachorro"
+    | "coelho"
+    | "coruja"
+    | "galinha"
+    | "gato"
+    | "leao"
+    | "macaco"
+    | "ovelha"
+    | "panda"
+    | "pinguim"
+    | "porco"
+    | "raposa"
+    | "sapo"
+    | "urso"
+    | "vaca";
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "ErrorAck".
+ */
+export interface ErrorAck {
+  ok: false;
+  error: string;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "JoinRoomRequest".
+ */
+export interface JoinRoomRequest {
+  nickname: string;
+  avatar:
+    | "burro"
+    | "cachorro"
+    | "coelho"
+    | "coruja"
+    | "galinha"
+    | "gato"
+    | "leao"
+    | "macaco"
+    | "ovelha"
+    | "panda"
+    | "pinguim"
+    | "porco"
+    | "raposa"
+    | "sapo"
+    | "urso"
+    | "vaca";
+  code: string;
+}
+/**
+ * Resposta de create_room, join_room e rejoin_room quando dá certo.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "JoinedAck".
+ */
+export interface JoinedAck {
+  ok: true;
+  player_id: string;
+  token: string;
+  room: RoomState;
+}
+/**
+ * Enviado no evento `room_state` sempre que a sala muda.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "RoomState".
+ */
+export interface RoomState {
+  code: string;
+  status: "lobby" | "playing";
+  host_id: string;
+  max_players: number;
+  min_players: number;
+  players: PlayerView[];
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "PlayerView".
+ */
+export interface PlayerView {
+  id: string;
+  nickname: string;
+  avatar:
+    | "burro"
+    | "cachorro"
+    | "coelho"
+    | "coruja"
+    | "galinha"
+    | "gato"
+    | "leao"
+    | "macaco"
+    | "ovelha"
+    | "panda"
+    | "pinguim"
+    | "porco"
+    | "raposa"
+    | "sapo"
+    | "urso"
+    | "vaca";
+  connected: boolean;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "OkAck".
+ */
+export interface OkAck {
+  ok: true;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "Pong".
  */
 export interface Pong {
   server_time: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "RejoinRoomRequest".
+ */
+export interface RejoinRoomRequest {
+  code: string;
+  token: string;
 }

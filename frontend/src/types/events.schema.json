@@ -1,5 +1,182 @@
 {
   "$defs": {
+    "CreateRoomRequest": {
+      "properties": {
+        "nickname": {
+          "maxLength": 16,
+          "minLength": 1,
+          "type": "string"
+        },
+        "avatar": {
+          "enum": [
+            "burro",
+            "cachorro",
+            "coelho",
+            "coruja",
+            "galinha",
+            "gato",
+            "leao",
+            "macaco",
+            "ovelha",
+            "panda",
+            "pinguim",
+            "porco",
+            "raposa",
+            "sapo",
+            "urso",
+            "vaca"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "nickname",
+        "avatar"
+      ],
+      "title": "CreateRoomRequest",
+      "type": "object"
+    },
+    "ErrorAck": {
+      "properties": {
+        "ok": {
+          "const": false,
+          "default": false,
+          "type": "boolean"
+        },
+        "error": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ok",
+        "error"
+      ],
+      "title": "ErrorAck",
+      "type": "object"
+    },
+    "JoinRoomRequest": {
+      "properties": {
+        "nickname": {
+          "maxLength": 16,
+          "minLength": 1,
+          "type": "string"
+        },
+        "avatar": {
+          "enum": [
+            "burro",
+            "cachorro",
+            "coelho",
+            "coruja",
+            "galinha",
+            "gato",
+            "leao",
+            "macaco",
+            "ovelha",
+            "panda",
+            "pinguim",
+            "porco",
+            "raposa",
+            "sapo",
+            "urso",
+            "vaca"
+          ],
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nickname",
+        "avatar",
+        "code"
+      ],
+      "title": "JoinRoomRequest",
+      "type": "object"
+    },
+    "JoinedAck": {
+      "description": "Resposta de create_room, join_room e rejoin_room quando dá certo.",
+      "properties": {
+        "ok": {
+          "const": true,
+          "default": true,
+          "type": "boolean"
+        },
+        "player_id": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        },
+        "room": {
+          "$ref": "#/$defs/RoomState"
+        }
+      },
+      "required": [
+        "ok",
+        "player_id",
+        "token",
+        "room"
+      ],
+      "title": "JoinedAck",
+      "type": "object"
+    },
+    "OkAck": {
+      "properties": {
+        "ok": {
+          "const": true,
+          "default": true,
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "ok"
+      ],
+      "title": "OkAck",
+      "type": "object"
+    },
+    "PlayerView": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "nickname": {
+          "type": "string"
+        },
+        "avatar": {
+          "enum": [
+            "burro",
+            "cachorro",
+            "coelho",
+            "coruja",
+            "galinha",
+            "gato",
+            "leao",
+            "macaco",
+            "ovelha",
+            "panda",
+            "pinguim",
+            "porco",
+            "raposa",
+            "sapo",
+            "urso",
+            "vaca"
+          ],
+          "type": "string"
+        },
+        "connected": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "nickname",
+        "avatar",
+        "connected"
+      ],
+      "title": "PlayerView",
+      "type": "object"
+    },
     "Pong": {
       "properties": {
         "server_time": {
@@ -10,6 +187,62 @@
         "server_time"
       ],
       "title": "Pong",
+      "type": "object"
+    },
+    "RejoinRoomRequest": {
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "token"
+      ],
+      "title": "RejoinRoomRequest",
+      "type": "object"
+    },
+    "RoomState": {
+      "description": "Enviado no evento `room_state` sempre que a sala muda.",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "lobby",
+            "playing"
+          ],
+          "type": "string"
+        },
+        "host_id": {
+          "type": "string"
+        },
+        "max_players": {
+          "type": "integer"
+        },
+        "min_players": {
+          "type": "integer"
+        },
+        "players": {
+          "items": {
+            "$ref": "#/$defs/PlayerView"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "status",
+        "host_id",
+        "max_players",
+        "min_players",
+        "players"
+      ],
+      "title": "RoomState",
       "type": "object"
     }
   },
