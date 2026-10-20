@@ -1,0 +1,17 @@
+{
+  "$defs": {
+    "Pong": {
+      "properties": {
+        "server_time": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "server_time"
+      ],
+      "title": "Pong",
+      "type": "object"
+    }
+  },
+  "title": "Events"
+}
