@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <filter id="sticker-burro" x="-20%" y="-20%" width="140%" height="140%">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" result="grown"/>
+      <feFlood flood-color="#F8FAFC"/>
+      <feComposite in2="grown" operator="in" result="outline"/>
+      <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="mouth-burro"><path d="M57 92 Q72 113.2625 87 92 Q72 97 57 92 Z"/></clipPath>
+  </defs>
+  <circle cx="64" cy="64" r="61" fill="#FFC107" stroke="#0B0F1A" stroke-width="3"/>
+  <g filter="url(#sticker-burro)">
+
+    <path d="M44 52 C30 30 30 12 40 8 C50 14 54 34 54 48 Z" fill="#8A8F99" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M43 44 C36 30 37 18 41 15 C47 22 49 34 49 44 Z" fill="#F4A7B4"/>
+    <path d="M84 48 C88 26 98 10 108 12 C112 24 104 42 92 54 Z" fill="#8A8F99" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M89 46 C93 30 99 20 104 19 C105 28 100 38 93 47 Z" fill="#F4A7B4"/>
+    <path d="M30 76 C28 50 44 38 64 38 C86 38 100 52 98 74 C97 84 92 92 86 96 L44 96 C36 92 31 86 30 76 Z" fill="#8A8F99" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M52 40 l4 -10 l4 8 l5 -10 l3 11 l6 -7 l0 10" fill="#4B5160" stroke="#0B0F1A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M40 80 C40 66 56 62 72 62 C92 62 104 70 104 84 C104 100 90 112 72 112 C54 112 40 100 40 80 Z" fill="#E9E4DA" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="58" cy="74" rx="3" ry="4.5" fill="#0B0F1A"/><ellipse cx="88" cy="74" rx="3" ry="4.5" fill="#0B0F1A"/>
+    <path d="M57 92 Q72 113.2625 87 92 Q72 97 57 92 Z" fill="#5B1A26"/><g clip-path="url(#mouth-burro)"><rect x="60.75" y="92" width="22.5" height="7.04" fill="#F8FAFC"/><path d="M72 94 v5.04" stroke="#0B0F1A" stroke-width="1.5"/></g><path d="M57 92 Q72 113.2625 87 92 Q72 97 57 92 Z" fill="none" stroke="#0B0F1A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M39.5 48 L92.5 48" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><rect x="43.5" y="46" width="20" height="13" rx="5" fill="#0B0F1A"/><rect x="68.5" y="46" width="20" height="13" rx="5" fill="#0B0F1A"/><path d="M47.5 50 l5 0 M72.5 50 l5 0" stroke="#6B7280" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>
