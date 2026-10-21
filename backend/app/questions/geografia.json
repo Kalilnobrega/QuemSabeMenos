@@ -1,0 +1,775 @@
+{
+  "theme": "Geografia",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital da França?",
+      "options": [
+        "Paris",
+        "Londres",
+        "Roma",
+        "Madri"
+      ],
+      "answer": 0,
+      "fact": "Paris é cortada pelo rio Sena e é chamada de Cidade Luz, em parte por ter sido pioneira na iluminação pública."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior oceano do planeta?",
+      "options": [
+        "Pacífico",
+        "Atlântico",
+        "Índico",
+        "Ártico"
+      ],
+      "answer": 0,
+      "fact": "O Pacífico cobre cerca de um terço da superfície da Terra, mais que todos os continentes juntos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que continente fica o Egito?",
+      "options": [
+        "África",
+        "Ásia",
+        "Europa",
+        "Oceania"
+      ],
+      "answer": 0,
+      "fact": "O Egito fica no nordeste da África, mas a península do Sinai está na Ásia. Por isso o país é transcontinental."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual país tem o formato de uma bota?",
+      "options": [
+        "Itália",
+        "Espanha",
+        "Portugal",
+        "Grécia"
+      ],
+      "answer": 0,
+      "fact": "A \"bota\" italiana até chuta uma \"bola\": a ilha da Sicília, bem na ponta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital da Argentina?",
+      "options": [
+        "Buenos Aires",
+        "Montevidéu",
+        "Santiago",
+        "Lima"
+      ],
+      "answer": 0,
+      "fact": "Montevidéu é a capital do Uruguai, Santiago a do Chile e Lima a do Peru."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior país do mundo em área?",
+      "options": [
+        "Rússia",
+        "Canadá",
+        "China",
+        "Estados Unidos"
+      ],
+      "answer": 0,
+      "fact": "A Rússia tem mais de 17 milhões de km², o dobro do Brasil, e se espalha por 11 fusos horários."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Austrália?",
+      "options": [
+        "Camberra",
+        "Sydney",
+        "Melbourne",
+        "Perth"
+      ],
+      "answer": 0,
+      "fact": "Camberra foi construída para ser capital como meio-termo na disputa entre Sydney e Melbourne, as maiores cidades do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a montanha mais alta do mundo?",
+      "options": [
+        "Everest",
+        "K2",
+        "Aconcágua",
+        "Kilimanjaro"
+      ],
+      "answer": 0,
+      "fact": "O Everest tem cerca de 8.849 metros e fica na fronteira entre o Nepal e a China, no Tibete."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país fica Machu Picchu?",
+      "options": [
+        "Peru",
+        "Bolívia",
+        "Chile",
+        "Equador"
+      ],
+      "answer": 0,
+      "fact": "Machu Picchu foi construída pelos incas no século XV, nos Andes, a cerca de 2.400 metros de altitude."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o menor país do mundo?",
+      "options": [
+        "Vaticano",
+        "Mônaco",
+        "San Marino",
+        "Liechtenstein"
+      ],
+      "answer": 0,
+      "fact": "O Vaticano tem menos de 0,5 km², fica dentro de Roma e é governado pelo papa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital do Canadá?",
+      "options": [
+        "Ottawa",
+        "Toronto",
+        "Vancouver",
+        "Montreal"
+      ],
+      "answer": 0,
+      "fact": "Toronto é a maior cidade do Canadá, mas a capital é Ottawa, escolhida pela rainha Vitória em 1857."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o deserto não polar mais seco do mundo?",
+      "options": [
+        "Atacama",
+        "Saara",
+        "Gobi",
+        "Kalahari"
+      ],
+      "answer": 0,
+      "fact": "Algumas áreas do Atacama passam anos sem uma gota de chuva. Por parecer Marte, a NASA testa equipamentos lá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Com quantos países o Brasil faz fronteira?",
+      "options": [
+        "10",
+        "9",
+        "11",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "O Brasil só não faz fronteira com dois países da América do Sul: Chile e Equador. E a Guiana Francesa conta como França!"
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital da Turquia?",
+      "options": [
+        "Ancara",
+        "Istambul",
+        "Esmirna",
+        "Antália"
+      ],
+      "answer": 0,
+      "fact": "Istambul é a maior e mais famosa cidade da Turquia, mas a capital é Ancara desde 1923."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o lago mais profundo do mundo?",
+      "options": [
+        "Baikal",
+        "Titicaca",
+        "Superior",
+        "Vitória"
+      ],
+      "answer": 0,
+      "fact": "O Baikal, na Sibéria, tem mais de 1.600 metros de profundidade e guarda cerca de 20% da água doce de superfície do planeta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital da Itália?",
+      "options": [
+        "Roma",
+        "Milão",
+        "Veneza",
+        "Nápoles"
+      ],
+      "answer": 0,
+      "fact": "Roma é chamada de Cidade Eterna e tem um país inteiro dentro dela: o Vaticano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital da Espanha?",
+      "options": [
+        "Madri",
+        "Barcelona",
+        "Sevilha",
+        "Lisboa"
+      ],
+      "answer": 0,
+      "fact": "Madri fica bem no centro da Península Ibérica e virou capital em 1561."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital de Portugal?",
+      "options": [
+        "Lisboa",
+        "Porto",
+        "Coimbra",
+        "Braga"
+      ],
+      "answer": 0,
+      "fact": "Lisboa foi quase destruída por um terremoto seguido de tsunami em 1755."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do Japão?",
+      "options": [
+        "Tóquio",
+        "Quioto",
+        "Osaka",
+        "Pequim"
+      ],
+      "answer": 0,
+      "fact": "Antes de Tóquio, a capital imperial era Quioto. E Tóquio já se chamou Edo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica o Big Ben?",
+      "options": [
+        "Reino Unido",
+        "França",
+        "Alemanha",
+        "Irlanda"
+      ],
+      "answer": 0,
+      "fact": "Big Ben é o nome do sino. A torre se chama Elizabeth Tower desde 2012."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior continente do mundo?",
+      "options": [
+        "Ásia",
+        "África",
+        "América",
+        "Europa"
+      ],
+      "answer": 0,
+      "fact": "A Ásia tem cerca de 30% das terras do planeta e mais da metade da população mundial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que continente fica a Austrália?",
+      "options": [
+        "Oceania",
+        "Ásia",
+        "África",
+        "América"
+      ],
+      "answer": 0,
+      "fact": "A Austrália é tão grande que costuma ser chamada de continente-ilha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que oceano banha o litoral brasileiro?",
+      "options": [
+        "Atlântico",
+        "Pacífico",
+        "Índico",
+        "Ártico"
+      ],
+      "answer": 0,
+      "fact": "O Brasil tem cerca de 7.400 km de litoral, todo voltado para o Atlântico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o país mais populoso da América do Sul?",
+      "options": [
+        "Brasil",
+        "Argentina",
+        "Colômbia",
+        "Peru"
+      ],
+      "answer": 0,
+      "fact": "O Brasil tem mais de 200 milhões de habitantes, cerca de metade da população do continente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital dos Estados Unidos?",
+      "options": [
+        "Washington",
+        "Nova York",
+        "Los Angeles",
+        "Chicago"
+      ],
+      "answer": 0,
+      "fact": "Washington, D.C. não pertence a nenhum estado: fica no Distrito de Colúmbia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a Grande Muralha?",
+      "options": [
+        "China",
+        "Japão",
+        "Mongólia",
+        "Coreia do Sul"
+      ],
+      "answer": 0,
+      "fact": "Somando todos os trechos, a muralha passa de 20 mil km. E não, ela não é visível da Lua a olho nu."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital da Inglaterra?",
+      "options": [
+        "Londres",
+        "Manchester",
+        "Liverpool",
+        "Dublin"
+      ],
+      "answer": 0,
+      "fact": "Londres foi fundada pelos romanos, com o nome de Londinium, há quase 2 mil anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país é famoso pelos cangurus?",
+      "options": [
+        "Austrália",
+        "Nova Zelândia",
+        "África do Sul",
+        "Indonésia"
+      ],
+      "answer": 0,
+      "fact": "O filhote de canguru nasce do tamanho de um feijão e termina de se desenvolver na bolsa da mãe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do México?",
+      "options": [
+        "Cidade do México",
+        "Cancún",
+        "Guadalajara",
+        "Monterrey"
+      ],
+      "answer": 0,
+      "fact": "A Cidade do México fica a mais de 2.200 metros de altitude e afunda alguns centímetros por ano, porque foi construída sobre um antigo lago."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior deserto quente do mundo?",
+      "options": [
+        "Saara",
+        "Atacama",
+        "Gobi",
+        "Kalahari"
+      ],
+      "answer": 0,
+      "fact": "O Saara tem área parecida com a dos Estados Unidos. Contando os desertos frios, os maiores são a Antártida e o Ártico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior país da África em área?",
+      "options": [
+        "Argélia",
+        "Congo",
+        "Sudão",
+        "Egito"
+      ],
+      "answer": 0,
+      "fact": "A Argélia virou a maior da África em 2011, quando o Sudão do Sul se separou do Sudão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Alemanha?",
+      "options": [
+        "Berlim",
+        "Munique",
+        "Frankfurt",
+        "Hamburgo"
+      ],
+      "answer": 0,
+      "fact": "Durante a divisão do país, a capital da Alemanha Ocidental era Bonn."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Rússia?",
+      "options": [
+        "Moscou",
+        "São Petersburgo",
+        "Kiev",
+        "Varsóvia"
+      ],
+      "answer": 0,
+      "fact": "São Petersburgo foi a capital do Império Russo por cerca de 200 anos, até 1918."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Egito?",
+      "options": [
+        "Cairo",
+        "Alexandria",
+        "Luxor",
+        "Gizé"
+      ],
+      "answer": 0,
+      "fact": "O Cairo é a maior cidade do mundo árabe e fica às margens do rio Nilo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Desde 2023, qual é o país mais populoso do mundo?",
+      "options": [
+        "Índia",
+        "China",
+        "Estados Unidos",
+        "Indonésia"
+      ],
+      "answer": 0,
+      "fact": "Segundo a ONU, a Índia ultrapassou a China em 2023. Os dois passam de 1,4 bilhão de habitantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Índia?",
+      "options": [
+        "Nova Délhi",
+        "Mumbai",
+        "Calcutá",
+        "Bangalore"
+      ],
+      "answer": 0,
+      "fact": "Mumbai é a cidade mais populosa e o centro financeiro do país, mas a capital é Nova Délhi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Grécia?",
+      "options": [
+        "Atenas",
+        "Esparta",
+        "Tessalônica",
+        "Creta"
+      ],
+      "answer": 0,
+      "fact": "Atenas é uma das cidades mais antigas do mundo, habitada há mais de 3 mil anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior país da América do Sul?",
+      "options": [
+        "Brasil",
+        "Argentina",
+        "Peru",
+        "Colômbia"
+      ],
+      "answer": 0,
+      "fact": "O Brasil ocupa quase metade da área da América do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que país é longo e estreito, com mais de 4 mil km de norte a sul?",
+      "options": [
+        "Chile",
+        "Argentina",
+        "Peru",
+        "Noruega"
+      ],
+      "answer": 0,
+      "fact": "O Chile tem mais de 4 mil km de comprimento, mas em média só uns 180 km de largura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da China?",
+      "options": [
+        "Pequim",
+        "Xangai",
+        "Hong Kong",
+        "Cantão"
+      ],
+      "answer": 0,
+      "fact": "Pequim significa \"capital do norte\". Xangai é a cidade mais populosa do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que continente fica o monte Kilimanjaro?",
+      "options": [
+        "África",
+        "Ásia",
+        "América",
+        "Europa"
+      ],
+      "answer": 0,
+      "fact": "O Kilimanjaro, na Tanzânia, é a montanha mais alta da África, com quase 5.900 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Colômbia?",
+      "options": [
+        "Bogotá",
+        "Medellín",
+        "Cali",
+        "Cartagena"
+      ],
+      "answer": 0,
+      "fact": "Bogotá fica a cerca de 2.600 metros de altitude, uma das capitais mais altas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que linha imaginária divide a Terra em hemisférios Norte e Sul?",
+      "options": [
+        "Linha do Equador",
+        "Trópico de Capricórnio",
+        "Meridiano de Greenwich",
+        "Círculo Polar Ártico"
+      ],
+      "answer": 0,
+      "fact": "A Linha do Equador corta o Brasil, passando por estados como Amapá, Pará, Amazonas e Roraima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o rio mais extenso da Europa?",
+      "options": [
+        "Volga",
+        "Danúbio",
+        "Reno",
+        "Tâmisa"
+      ],
+      "answer": 0,
+      "fact": "O Volga corre todo dentro da Rússia e deságua no mar Cáspio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estreito separa a Europa da África?",
+      "options": [
+        "Gibraltar",
+        "Bósforo",
+        "Magalhães",
+        "Bering"
+      ],
+      "answer": 0,
+      "fact": "No ponto mais estreito, são só uns 14 km entre a Espanha e o Marrocos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital da Nova Zelândia?",
+      "options": [
+        "Wellington",
+        "Auckland",
+        "Christchurch",
+        "Sydney"
+      ],
+      "answer": 0,
+      "fact": "Auckland é a maior cidade, mas a capital é Wellington, a capital nacional mais ao sul do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital da Suíça?",
+      "options": [
+        "Berna",
+        "Zurique",
+        "Genebra",
+        "Basileia"
+      ],
+      "answer": 0,
+      "fact": "Oficialmente, a Constituição suíça nem fala em capital: Berna é chamada de \"cidade federal\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o ponto mais baixo em terra firme no planeta?",
+      "options": [
+        "Mar Morto",
+        "Vale da Morte",
+        "Depressão de Afar",
+        "Lago Assal"
+      ],
+      "answer": 0,
+      "fact": "As margens do Mar Morto ficam mais de 400 metros abaixo do nível do mar. A água é tão salgada que dá para boiar sem esforço."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital do Marrocos?",
+      "options": [
+        "Rabat",
+        "Casablanca",
+        "Marrakech",
+        "Fez"
+      ],
+      "answer": 0,
+      "fact": "Casablanca é a maior cidade, mas a capital é Rabat."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual rio europeu atravessa mais países?",
+      "options": [
+        "Danúbio",
+        "Reno",
+        "Volga",
+        "Sena"
+      ],
+      "answer": 0,
+      "fact": "O Danúbio passa por 10 países e quatro capitais: Viena, Bratislava, Budapeste e Belgrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que país é chamado de Terra do Sol Nascente?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "O nome do Japão no idioma local, Nihon, significa algo como \"origem do sol\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos fusos horários tem o território brasileiro?",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "Contando as ilhas oceânicas, como Fernando de Noronha, são 4. O horário de Brasília é o oficial do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica Petra, a cidade esculpida na rocha?",
+      "options": [
+        "Jordânia",
+        "Egito",
+        "Israel",
+        "Síria"
+      ],
+      "answer": 0,
+      "fact": "Petra foi construída pelos nabateus há mais de 2 mil anos e é uma das sete maravilhas do mundo moderno."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital do Vietnã?",
+      "options": [
+        "Hanói",
+        "Ho Chi Minh",
+        "Da Nang",
+        "Bangkok"
+      ],
+      "answer": 0,
+      "fact": "Ho Chi Minh, a antiga Saigon, é a maior cidade, mas a capital é Hanói."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que país tem a maior área de floresta tropical do mundo?",
+      "options": [
+        "Brasil",
+        "Congo",
+        "Indonésia",
+        "Peru"
+      ],
+      "answer": 0,
+      "fact": "Cerca de 60% da Amazônia fica em território brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica o Salar de Uyuni, o maior deserto de sal do mundo?",
+      "options": [
+        "Bolívia",
+        "Chile",
+        "Peru",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "Depois das chuvas, uma fina camada de água transforma o salar num espelho gigante."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a capital do Butão?",
+      "options": [
+        "Thimphu",
+        "Katmandu",
+        "Paro",
+        "Daca",
+        "Lhasa",
+        "Vientiane"
+      ],
+      "answer": 0,
+      "fact": "O Butão mede o progresso pela \"Felicidade Interna Bruta\", e Thimphu é famosa por não ter semáforos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Contando os territórios ultramarinos, que país tem mais fusos horários?",
+      "options": [
+        "França",
+        "Rússia",
+        "Estados Unidos",
+        "Reino Unido",
+        "China",
+        "Austrália"
+      ],
+      "answer": 0,
+      "fact": "Com territórios espalhados pelo mundo, a França tem 12 fusos horários, ou 13 contando sua área reivindicada na Antártida."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a capital do Cazaquistão?",
+      "options": [
+        "Astana",
+        "Almaty",
+        "Tashkent",
+        "Bishkek",
+        "Dushanbe",
+        "Ashgabat"
+      ],
+      "answer": 0,
+      "fact": "A cidade já se chamou Akmola e Nur-Sultan. Desde 2022, voltou a se chamar Astana."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que país tem mais lagos no mundo?",
+      "options": [
+        "Canadá",
+        "Finlândia",
+        "Rússia",
+        "Estados Unidos",
+        "Suécia",
+        "Brasil"
+      ],
+      "answer": 0,
+      "fact": "Estima-se que o Canadá tenha mais da metade de todos os lagos do planeta."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o único país cuja bandeira não tem quatro lados?",
+      "options": [
+        "Nepal",
+        "Suíça",
+        "Butão",
+        "Vaticano",
+        "Catar",
+        "Japão"
+      ],
+      "answer": 0,
+      "fact": "A bandeira do Nepal é formada por dois triângulos. Suíça e Vaticano têm bandeiras quadradas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o rio mais extenso que corre inteiro dentro de um só país?",
+      "options": [
+        "Yangtzé",
+        "Mississípi",
+        "São Francisco",
+        "Volga",
+        "Rio Amarelo",
+        "Ob"
+      ],
+      "answer": 0,
+      "fact": "O Yangtzé tem cerca de 6.300 km, todos dentro da China."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Com quantos países a Rússia faz fronteira por terra?",
+      "options": [
+        "14",
+        "10",
+        "12",
+        "16",
+        "18",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "Entre eles estão Noruega, Polônia, China, Mongólia e até a Coreia do Norte."
+    }
+  ]
+}

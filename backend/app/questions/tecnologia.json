@@ -1,0 +1,761 @@
+{
+  "theme": "Tecnologia",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa criou o iPhone?",
+      "options": [
+        "Apple",
+        "Samsung",
+        "Google",
+        "Nokia"
+      ],
+      "answer": 0,
+      "fact": "O primeiro iPhone foi apresentado por Steve Jobs em janeiro de 2007."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem fundou a Microsoft ao lado de Paul Allen?",
+      "options": [
+        "Bill Gates",
+        "Steve Jobs",
+        "Mark Zuckerberg",
+        "Elon Musk"
+      ],
+      "answer": 0,
+      "fact": "A Microsoft foi fundada em 1975. Um dos seus primeiros grandes sucessos foi o MS-DOS, usado nos PCs da IBM."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual rede social tinha um passarinho azul como logotipo?",
+      "options": [
+        "Twitter",
+        "Facebook",
+        "Instagram",
+        "TikTok"
+      ],
+      "answer": 0,
+      "fact": "O passarinho se chamava Larry, em homenagem ao jogador de basquete Larry Bird. Em 2023, a rede virou X."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Junto com o Ctrl, qual tecla costuma desfazer a última ação?",
+      "options": [
+        "Z",
+        "X",
+        "C",
+        "V"
+      ],
+      "answer": 0,
+      "fact": "Ctrl+X recorta, Ctrl+C copia e Ctrl+V cola. No Mac, troque Ctrl por Command."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa é dona do buscador mais usado do mundo?",
+      "options": [
+        "Google",
+        "Microsoft",
+        "Yahoo",
+        "Amazon"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de \"googol\", o número 1 seguido de 100 zeros, uma referência à quantidade enorme de informação na web."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bits tem um byte?",
+      "options": [
+        "8",
+        "4",
+        "16",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Com 8 bits dá para formar 256 combinações diferentes de zeros e uns."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa a sigla CPU?",
+      "options": [
+        "Unidade Central de Processamento",
+        "Computador Pessoal Universal",
+        "Central de Programas do Usuário",
+        "Cabo de Potência Unificado"
+      ],
+      "answer": 0,
+      "fact": "A CPU é o \"cérebro\" do computador. A sigla vem do inglês Central Processing Unit."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem criou o Facebook?",
+      "options": [
+        "Mark Zuckerberg",
+        "Jack Dorsey",
+        "Larry Page",
+        "Jeff Bezos"
+      ],
+      "answer": 0,
+      "fact": "O Facebook nasceu em 2004 num dormitório da Universidade Harvard, no começo só para estudantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual sistema para celulares é desenvolvido pelo Google?",
+      "options": [
+        "Android",
+        "iOS",
+        "Windows Phone",
+        "Symbian"
+      ],
+      "answer": 0,
+      "fact": "O Android foi criado por uma startup que o Google comprou em 2005. As versões antigas tinham nomes de doces."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual linguagem é usada para estruturar páginas da web?",
+      "options": [
+        "HTML",
+        "Python",
+        "C++",
+        "Java"
+      ],
+      "answer": 0,
+      "fact": "HTML significa HyperText Markup Language. Ele estrutura a página; o visual fica com o CSS e a interação, com o JavaScript."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o primeiro iPhone?",
+      "options": [
+        "2007",
+        "2005",
+        "2008",
+        "2010"
+      ],
+      "answer": 0,
+      "fact": "O iPhone foi anunciado em janeiro e chegou às lojas em junho de 2007, nos Estados Unidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é considerada a primeira programadora da história?",
+      "options": [
+        "Ada Lovelace",
+        "Grace Hopper",
+        "Marie Curie",
+        "Hedy Lamarr"
+      ],
+      "answer": 0,
+      "fact": "No século XIX, Ada Lovelace escreveu um algoritmo para a máquina analítica de Charles Babbage, que nem chegou a ser construída."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla WWW?",
+      "options": [
+        "World Wide Web",
+        "World Web Window",
+        "Wide World Web",
+        "Web World Wide"
+      ],
+      "answer": 0,
+      "fact": "A web foi criada por Tim Berners-Lee em 1989, no CERN, na Suíça. A internet é mais antiga: a web é só uma parte dela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava o primeiro computador eletrônico de uso geral, de 1945?",
+      "options": [
+        "ENIAC",
+        "UNIVAC",
+        "Colossus",
+        "Mark I"
+      ],
+      "answer": 0,
+      "fact": "O ENIAC pesava cerca de 27 toneladas e ocupava uma sala inteira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa criou a linguagem Java?",
+      "options": [
+        "Sun Microsystems",
+        "Microsoft",
+        "IBM",
+        "Oracle"
+      ],
+      "answer": 0,
+      "fact": "Java foi lançado em 1995 pela Sun. A Oracle comprou a Sun em 2010 e hoje é dona da linguagem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa fabrica o PlayStation?",
+      "options": [
+        "Sony",
+        "Microsoft",
+        "Nintendo",
+        "Sega"
+      ],
+      "answer": 0,
+      "fact": "O primeiro PlayStation, de 1994, nasceu de uma parceria cancelada entre Sony e Nintendo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa fabrica o Xbox?",
+      "options": [
+        "Microsoft",
+        "Sony",
+        "Nintendo",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "O primeiro Xbox foi lançado em 2001."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que rede social de fotos foi comprada pelo Facebook?",
+      "options": [
+        "Instagram",
+        "TikTok",
+        "Twitter",
+        "LinkedIn"
+      ],
+      "answer": 0,
+      "fact": "O Facebook comprou o Instagram em 2012 por cerca de 1 bilhão de dólares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que serve um antivírus?",
+      "options": [
+        "Proteger contra programas maliciosos",
+        "Deixar a internet mais rápida",
+        "Aumentar a memória",
+        "Limpar a tela"
+      ],
+      "answer": 0,
+      "fact": "Um dos primeiros vírus a se espalhar fora de laboratório foi o Elk Cloner, de 1982, em computadores Apple II."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que significa o \"e\" de e-mail?",
+      "options": [
+        "Eletrônico",
+        "Expresso",
+        "Externo",
+        "Especial"
+      ],
+      "answer": 0,
+      "fact": "O primeiro e-mail entre computadores foi enviado em 1971 por Ray Tomlinson, que escolheu o @ para os endereços."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a assistente de voz da Apple?",
+      "options": [
+        "Siri",
+        "Alexa",
+        "Cortana",
+        "Bixby"
+      ],
+      "answer": 0,
+      "fact": "Alexa é da Amazon, Cortana da Microsoft e Bixby da Samsung."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa é dona do YouTube?",
+      "options": [
+        "Google",
+        "Meta",
+        "Amazon",
+        "Microsoft"
+      ],
+      "answer": 0,
+      "fact": "O primeiro vídeo do YouTube, \"Me at the zoo\", foi postado em 2005. O Google comprou o site no ano seguinte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é Wi-Fi?",
+      "options": [
+        "Uma conexão sem fio a uma rede",
+        "Um tipo de cabo",
+        "Um antivírus",
+        "Uma marca de celular"
+      ],
+      "answer": 0,
+      "fact": "Wi-Fi é uma marca registrada e, ao contrário do que muitos pensam, não é sigla de \"wireless fidelity\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa fabrica o console Switch?",
+      "options": [
+        "Nintendo",
+        "Sony",
+        "Microsoft",
+        "Sega"
+      ],
+      "answer": 0,
+      "fact": "A Nintendo foi fundada em 1889, no Japão, fabricando cartas de baralho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual aplicativo de mensagens tem um telefone verde como ícone?",
+      "options": [
+        "WhatsApp",
+        "Telegram",
+        "Signal",
+        "Messenger"
+      ],
+      "answer": 0,
+      "fact": "O WhatsApp foi comprado pelo Facebook em 2014, por cerca de 19 bilhões de dólares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que dispositivo serve para mover a setinha na tela do computador?",
+      "options": [
+        "Mouse",
+        "Teclado",
+        "Monitor",
+        "Impressora"
+      ],
+      "answer": 0,
+      "fact": "O mouse foi apresentado em 1968 por Douglas Engelbart. O primeiro protótipo era de madeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um pendrive?",
+      "options": [
+        "Uma memória portátil USB",
+        "Um tipo de impressora",
+        "Um cabo de energia",
+        "Um programa de música"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros pendrives, por volta de 2000, guardavam só 8 megabytes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual empresa criou o ChatGPT?",
+      "options": [
+        "OpenAI",
+        "Google",
+        "Meta",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "O ChatGPT foi lançado em novembro de 2022 e chegou a 100 milhões de usuários em cerca de dois meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que serve a tecla Caps Lock?",
+      "options": [
+        "Escrever em letras maiúsculas",
+        "Apagar o texto",
+        "Salvar o arquivo",
+        "Desligar o computador"
+      ],
+      "answer": 0,
+      "fact": "\"Caps\" vem de \"capital letters\", letras maiúsculas em inglês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa a sigla USB?",
+      "options": [
+        "Universal Serial Bus",
+        "Unidade de Sistema Básico",
+        "United System Board",
+        "Universal Speed Band"
+      ],
+      "answer": 0,
+      "fact": "O USB surgiu em 1996 para substituir vários tipos diferentes de conectores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem fundou a Apple ao lado de Steve Wozniak?",
+      "options": [
+        "Steve Jobs",
+        "Bill Gates",
+        "Tim Cook",
+        "Elon Musk"
+      ],
+      "answer": 0,
+      "fact": "A Apple foi fundada em 1976 e, segundo a lenda, começou na garagem da casa dos pais de Jobs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem fundou a Amazon?",
+      "options": [
+        "Jeff Bezos",
+        "Elon Musk",
+        "Larry Page",
+        "Jack Ma"
+      ],
+      "answer": 0,
+      "fact": "A Amazon começou em 1994 vendendo livros pela internet."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que linguagem de programação tem nome inspirado num grupo de comédia britânico?",
+      "options": [
+        "Python",
+        "Java",
+        "Ruby",
+        "C#"
+      ],
+      "answer": 0,
+      "fact": "O criador, Guido van Rossum, era fã do Monty Python."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual unidade vem logo depois do gigabyte?",
+      "options": [
+        "Terabyte",
+        "Megabyte",
+        "Petabyte",
+        "Kilobyte"
+      ],
+      "answer": 0,
+      "fact": "A ordem é kilo, mega, giga, tera, peta. Cada uma é cerca de mil vezes maior que a anterior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é phishing?",
+      "options": [
+        "Golpe com mensagens falsas para roubar dados",
+        "Um tipo de vírus de celular",
+        "Uma técnica de programação",
+        "Uma rede social"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de \"fishing\", pescar: o golpista joga a isca e espera a vítima morder."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sistema operacional tem um pinguim como mascote?",
+      "options": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "Android"
+      ],
+      "answer": 0,
+      "fact": "O pinguim se chama Tux. O Linux foi criado por Linus Torvalds em 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa a sigla RAM?",
+      "options": [
+        "Memória de acesso aleatório",
+        "Rede de acesso móvel",
+        "Registro automático de mídia",
+        "Recurso de armazenamento magnético"
+      ],
+      "answer": 0,
+      "fact": "A RAM guarda dados temporários enquanto o computador está ligado. Ao desligar, ela é apagada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Google foi fundado?",
+      "options": [
+        "1998",
+        "1994",
+        "2004",
+        "2001"
+      ],
+      "answer": 0,
+      "fact": "Foi fundado por Larry Page e Sergey Brin, que estudavam na Universidade Stanford."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um bug em programação?",
+      "options": [
+        "Um erro no programa",
+        "Um vírus",
+        "Um tipo de cabo",
+        "Uma atualização"
+      ],
+      "answer": 0,
+      "fact": "O termo ficou famoso em 1947, quando encontraram uma mariposa presa num computador de Harvard."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual empresa fabrica os processadores Ryzen?",
+      "options": [
+        "AMD",
+        "Intel",
+        "Nvidia",
+        "Qualcomm"
+      ],
+      "answer": 0,
+      "fact": "AMD e Intel são as principais fabricantes de processadores para computadores pessoais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa a sigla HTTP?",
+      "options": [
+        "Protocolo de Transferência de Hipertexto",
+        "Página Web de Alta Tecnologia",
+        "Hospedagem de Texto e Programas",
+        "Programa de Transmissão Rápida"
+      ],
+      "answer": 0,
+      "fact": "O S de HTTPS indica que a conexão é segura, com criptografia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa lançou o primeiro celular comercial, em 1983?",
+      "options": [
+        "Motorola",
+        "Nokia",
+        "Apple",
+        "Samsung"
+      ],
+      "answer": 0,
+      "fact": "O Motorola DynaTAC pesava cerca de 800 gramas e ganhou o apelido de \"tijolão\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual empresa é dona do Instagram e do WhatsApp?",
+      "options": [
+        "Meta",
+        "Google",
+        "Microsoft",
+        "Amazon"
+      ],
+      "answer": 0,
+      "fact": "Em 2021, a empresa Facebook mudou de nome para Meta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla GPU?",
+      "options": [
+        "Unidade de processamento gráfico",
+        "Gerenciador de programas do usuário",
+        "Grade de potência unificada",
+        "Gravador de pacotes universal"
+      ],
+      "answer": 0,
+      "fact": "Hoje as GPUs também são usadas para treinar inteligência artificial, porque fazem muitos cálculos em paralelo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem propôs a \"máquina universal\" e é considerado um dos pais da computação?",
+      "options": [
+        "Alan Turing",
+        "John von Neumann",
+        "Charles Babbage",
+        "Claude Shannon"
+      ],
+      "answer": 0,
+      "fact": "Turing também ajudou a decifrar o código Enigma dos nazistas na Segunda Guerra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa software open source?",
+      "options": [
+        "Software de código aberto",
+        "Software gratuito para empresas",
+        "Software sem internet",
+        "Software de segurança"
+      ],
+      "answer": 0,
+      "fact": "Linux, Firefox e Android têm código aberto: qualquer pessoa pode ver e modificar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Na base binária, quantos bytes tem um kilobyte?",
+      "options": [
+        "1.024",
+        "1.000",
+        "100",
+        "512"
+      ],
+      "answer": 0,
+      "fact": "Como 1.024 é 2 elevado a 10, a base binária usa esse número no lugar de mil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro navegador gráfico popular da web?",
+      "options": [
+        "Mosaic",
+        "Internet Explorer",
+        "Netscape",
+        "Chrome"
+      ],
+      "answer": 0,
+      "fact": "O Mosaic, de 1993, deu origem ao Netscape, que dominou a web nos anos 1990."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Segundo a Lei de Moore, de quanto em quanto tempo dobra o número de transistores num chip?",
+      "options": [
+        "Cerca de 2 anos",
+        "Cerca de 10 anos",
+        "Cerca de 6 meses",
+        "Cerca de 5 anos"
+      ],
+      "answer": 0,
+      "fact": "Gordon Moore, cofundador da Intel, fez a previsão em 1965 e a ajustou em 1975."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa criou a linguagem C#?",
+      "options": [
+        "Microsoft",
+        "Apple",
+        "Google",
+        "Sun Microsystems"
+      ],
+      "answer": 0,
+      "fact": "A C# foi lançada por volta de 2000, como parte da plataforma .NET."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava o primeiro computador da Apple?",
+      "options": [
+        "Apple I",
+        "Macintosh",
+        "Lisa",
+        "iMac"
+      ],
+      "answer": 0,
+      "fact": "O Apple I foi montado à mão por Wozniak em 1976 e vendido por US$ 666,66."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Para que serve um CAPTCHA?",
+      "options": [
+        "Diferenciar humanos de robôs",
+        "Acelerar o download",
+        "Proteger senhas salvas",
+        "Bloquear anúncios"
+      ],
+      "answer": 0,
+      "fact": "A sigla, em inglês, significa algo como \"teste de Turing público e automático para diferenciar computadores e humanos\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a primeira criptomoeda criada?",
+      "options": [
+        "Bitcoin",
+        "Ethereum",
+        "Dogecoin",
+        "Litecoin"
+      ],
+      "answer": 0,
+      "fact": "O Bitcoin surgiu em 2009, criado por alguém sob o pseudônimo de Satoshi Nakamoto, cuja identidade continua desconhecida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava a rede que deu origem à internet?",
+      "options": [
+        "ARPANET",
+        "Ethernet",
+        "Intranet",
+        "WWW"
+      ],
+      "answer": 0,
+      "fact": "A ARPANET foi criada pelo Departamento de Defesa dos EUA e fez sua primeira conexão em 1969."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla SSD?",
+      "options": [
+        "Unidade de estado sólido",
+        "Sistema de segurança digital",
+        "Disco de sincronização simples",
+        "Servidor de dados seguro"
+      ],
+      "answer": 0,
+      "fact": "Sem partes móveis, o SSD é bem mais rápido que o HD tradicional, que usa discos girando."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual empresa lançou o celular 3310, famoso pela resistência?",
+      "options": [
+        "Nokia",
+        "Motorola",
+        "Siemens",
+        "Ericsson"
+      ],
+      "answer": 0,
+      "fact": "O Nokia 3310, de 2000, também ficou famoso pelo jogo da cobrinha."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi o primeiro domínio .com registrado?",
+      "options": [
+        "symbolics.com",
+        "ibm.com",
+        "apple.com",
+        "xerox.com",
+        "arpa.com",
+        "digital.com"
+      ],
+      "answer": 0,
+      "fact": "Foi registrado em 15 de março de 1985 pela Symbolics, uma fabricante de computadores."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi a primeira mensagem enviada pela ARPANET, em 1969?",
+      "options": [
+        "LO",
+        "HELLO",
+        "TEST",
+        "LOGIN",
+        "QWERTY",
+        "OK"
+      ],
+      "answer": 0,
+      "fact": "Tentaram digitar LOGIN, mas o sistema travou depois das duas primeiras letras."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanta memória RAM tinha o computador de bordo da Apollo 11?",
+      "options": [
+        "Cerca de 4 KB",
+        "Cerca de 64 KB",
+        "Cerca de 1 MB",
+        "Cerca de 512 KB",
+        "Cerca de 16 MB",
+        "Cerca de 128 bytes"
+      ],
+      "answer": 0,
+      "fact": "Um celular comum de hoje tem milhões de vezes mais memória."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que empresa lançou o Simon, o primeiro smartphone com tela sensível ao toque, em 1994?",
+      "options": [
+        "IBM",
+        "Nokia",
+        "Motorola",
+        "Apple",
+        "Palm",
+        "BlackBerry"
+      ],
+      "answer": 0,
+      "fact": "O IBM Simon já tinha agenda, e-mail e até aplicativos, 13 anos antes do iPhone."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "O que significa a sigla GNU, do projeto de software livre?",
+      "options": [
+        "GNU's Not Unix",
+        "General Network Utility",
+        "Global Network Unix",
+        "Graphical New Unix",
+        "Great Northern Unix",
+        "General Native Utilities"
+      ],
+      "answer": 0,
+      "fact": "É uma sigla recursiva: a primeira letra se refere à própria sigla."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi enviado o primeiro SMS da história?",
+      "options": [
+        "1992",
+        "1985",
+        "1997",
+        "2000",
+        "1989",
+        "1995"
+      ],
+      "answer": 0,
+      "fact": "A mensagem foi \"Merry Christmas\", enviada de um computador para um celular, no Reino Unido."
+    }
+  ]
+}

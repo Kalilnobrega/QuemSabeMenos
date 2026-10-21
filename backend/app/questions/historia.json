@@ -1,0 +1,775 @@
+{
+  "theme": "História",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Em que ano os portugueses chegaram ao Brasil?",
+      "options": [
+        "1500",
+        "1492",
+        "1822",
+        "1530"
+      ],
+      "answer": 0,
+      "fact": "A esquadra de Pedro Álvares Cabral chegou à Bahia em 22 de abril de 1500. Os povos indígenas, claro, já viviam aqui havia milhares de anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem foi o primeiro homem a pisar na Lua?",
+      "options": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "Michael Collins"
+      ],
+      "answer": 0,
+      "fact": "Foi em 20 de julho de 1969, na missão Apollo 11. Buzz Aldrin desceu logo depois; Michael Collins ficou em órbita."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que povo construiu as pirâmides de Gizé?",
+      "options": [
+        "Egípcios",
+        "Romanos",
+        "Maias",
+        "Gregos"
+      ],
+      "answer": 0,
+      "fact": "A Grande Pirâmide tem cerca de 4.500 anos e foi a construção mais alta do mundo por quase 4 mil anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano começou a Segunda Guerra Mundial?",
+      "options": [
+        "1939",
+        "1914",
+        "1945",
+        "1929"
+      ],
+      "answer": 0,
+      "fact": "A guerra começou com a invasão da Polônia pela Alemanha, em 1º de setembro de 1939, e terminou em 1945."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem proclamou a independência do Brasil?",
+      "options": [
+        "Dom Pedro I",
+        "Dom Pedro II",
+        "Tiradentes",
+        "Deodoro da Fonseca"
+      ],
+      "answer": 0,
+      "fact": "Segundo a tradição, o grito de \"Independência ou morte!\" foi dado às margens do riacho Ipiranga, em São Paulo, em 7 de setembro de 1822."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano caiu o Muro de Berlim?",
+      "options": [
+        "1989",
+        "1991",
+        "1985",
+        "1961"
+      ],
+      "answer": 0,
+      "fact": "O muro dividiu Berlim por 28 anos. Sua queda, em 9 de novembro de 1989, abriu caminho para a reunificação alemã em 1990."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que navio afundou em 1912 depois de bater em um iceberg?",
+      "options": [
+        "Titanic",
+        "Lusitania",
+        "Britannic",
+        "Queen Mary"
+      ],
+      "answer": 0,
+      "fact": "Considerado \"inafundável\", o Titanic afundou na viagem inaugural, em abril de 1912. Mais de 1.500 pessoas morreram."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem foi o primeiro presidente dos Estados Unidos?",
+      "options": [
+        "George Washington",
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "John Adams"
+      ],
+      "answer": 0,
+      "fact": "Washington governou de 1789 a 1797. A capital americana leva o nome dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que cidade-estado grega nasceu a democracia?",
+      "options": [
+        "Atenas",
+        "Esparta",
+        "Tebas",
+        "Corinto"
+      ],
+      "answer": 0,
+      "fact": "Na Atenas antiga, os cidadãos votavam diretamente nas assembleias, mas mulheres, estrangeiros e escravizados ficavam de fora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano terminou a Primeira Guerra Mundial?",
+      "options": [
+        "1918",
+        "1914",
+        "1919",
+        "1920"
+      ],
+      "answer": 0,
+      "fact": "O armistício foi assinado em 11 de novembro de 1918. O Tratado de Versalhes, que formalizou a paz, veio em 1919: daí a pegadinha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a escravidão foi abolida no Brasil?",
+      "options": [
+        "1888",
+        "1822",
+        "1889",
+        "1871"
+      ],
+      "answer": 0,
+      "fact": "A Lei Áurea foi assinada pela princesa Isabel em 13 de maio de 1888. O Brasil foi o último país das Américas a abolir a escravidão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi o último imperador do Brasil?",
+      "options": [
+        "Dom Pedro II",
+        "Dom Pedro I",
+        "Dom João VI",
+        "Dom Miguel"
+      ],
+      "answer": 0,
+      "fact": "Dom Pedro II reinou por quase 50 anos, até a Proclamação da República, em 1889, quando partiu para o exílio na Europa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava a antiga rota comercial entre a China e a Europa?",
+      "options": [
+        "Rota da Seda",
+        "Rota das Especiarias",
+        "Rota do Ouro",
+        "Caminho de Santiago"
+      ],
+      "answer": 0,
+      "fact": "Além de seda, a rota levava especiarias, papel, pólvora e até ideias e religiões entre o Oriente e o Ocidente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano começou a Revolução Francesa?",
+      "options": [
+        "1789",
+        "1776",
+        "1815",
+        "1848"
+      ],
+      "answer": 0,
+      "fact": "O marco inicial é a tomada da Bastilha, em 14 de julho de 1789, até hoje feriado nacional na França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem liderava a União Soviética durante a Segunda Guerra Mundial?",
+      "options": [
+        "Josef Stalin",
+        "Vladimir Lênin",
+        "Nikita Khrushchev",
+        "Leon Trótski"
+      ],
+      "answer": 0,
+      "fact": "Stalin comandou a União Soviética de meados dos anos 1920 até morrer, em 1953. Lênin havia morrido em 1924."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem chegou à América em 1492?",
+      "options": [
+        "Cristóvão Colombo",
+        "Pedro Álvares Cabral",
+        "Vasco da Gama",
+        "Américo Vespúcio"
+      ],
+      "answer": 0,
+      "fact": "Colombo achava que tinha chegado às Índias. Por isso os povos da América foram chamados de \"índios\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como eram chamados os guerreiros nórdicos que navegavam em barcos longos?",
+      "options": [
+        "Vikings",
+        "Samurais",
+        "Espartanos",
+        "Hunos"
+      ],
+      "answer": 0,
+      "fact": "Os vikings chegaram à América do Norte por volta do ano 1000, quase 500 anos antes de Colombo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país lançou as bombas atômicas sobre Hiroshima e Nagasaki?",
+      "options": [
+        "Estados Unidos",
+        "União Soviética",
+        "Alemanha",
+        "Reino Unido"
+      ],
+      "answer": 0,
+      "fact": "As bombas foram lançadas em agosto de 1945, poucos dias antes da rendição do Japão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem liderou a Alemanha nazista?",
+      "options": [
+        "Adolf Hitler",
+        "Benito Mussolini",
+        "Winston Churchill",
+        "Franklin Roosevelt"
+      ],
+      "answer": 0,
+      "fact": "Mussolini governava a Itália fascista; Churchill e Roosevelt lideravam os Aliados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que povo construiu o Coliseu?",
+      "options": [
+        "Romanos",
+        "Gregos",
+        "Egípcios",
+        "Persas"
+      ],
+      "answer": 0,
+      "fact": "Inaugurado no ano 80, o Coliseu recebia dezenas de milhares de pessoas para assistir a lutas de gladiadores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que guerreiros japoneses seguiam o código bushido?",
+      "options": [
+        "Samurais",
+        "Ninjas",
+        "Vikings",
+        "Cavaleiros"
+      ],
+      "answer": 0,
+      "fact": "Bushido significa \"caminho do guerreiro\". Os samurais deixaram de existir como classe no fim do século XIX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Tiradentes foi líder de qual movimento?",
+      "options": [
+        "Inconfidência Mineira",
+        "Revolução Farroupilha",
+        "Cabanagem",
+        "Guerra de Canudos"
+      ],
+      "answer": 0,
+      "fact": "Tiradentes era alferes e também trabalhava como dentista, daí o apelido. Foi executado em 21 de abril de 1792."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem foi o primeiro ser humano a ir ao espaço?",
+      "options": [
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "John Glenn",
+        "Valentina Tereshkova"
+      ],
+      "answer": 0,
+      "fact": "Em 1961, o soviético Gagarin deu uma volta completa na Terra em cerca de 108 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que povo usava a escrita chamada hieróglifo?",
+      "options": [
+        "Egípcios",
+        "Romanos",
+        "Chineses",
+        "Astecas"
+      ],
+      "answer": 0,
+      "fact": "Os hieróglifos só foram decifrados em 1822, graças à Pedra de Roseta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Napoleão Bonaparte foi imperador de qual país?",
+      "options": [
+        "França",
+        "Itália",
+        "Espanha",
+        "Áustria"
+      ],
+      "answer": 0,
+      "fact": "Napoleão nasceu na Córsega, ilha que tinha passado para o domínio francês um ano antes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que líder pregava a não violência na luta pela independência da Índia?",
+      "options": [
+        "Mahatma Gandhi",
+        "Nelson Mandela",
+        "Martin Luther King",
+        "Dalai Lama"
+      ],
+      "answer": 0,
+      "fact": "A Índia se tornou independente do Reino Unido em 1947. \"Mahatma\" significa \"grande alma\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem foi o primeiro presidente negro dos Estados Unidos?",
+      "options": [
+        "Barack Obama",
+        "Colin Powell",
+        "Martin Luther King",
+        "Jesse Jackson"
+      ],
+      "answer": 0,
+      "fact": "Obama governou de 2009 a 2017. Antes, foi senador pelo estado de Illinois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual rainha do Egito ficou famosa por se relacionar com Júlio César e Marco Antônio?",
+      "options": [
+        "Cleópatra",
+        "Nefertiti",
+        "Hatshepsut",
+        "Isabel"
+      ],
+      "answer": 0,
+      "fact": "Cleópatra viveu mais perto da invenção do iPhone do que da construção da Grande Pirâmide."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Os astecas viviam no território de qual país atual?",
+      "options": [
+        "México",
+        "Peru",
+        "Brasil",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "A capital asteca, Tenochtitlán, ficava numa ilha de um lago, onde hoje é a Cidade do México."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país começou a Revolução Industrial?",
+      "options": [
+        "Inglaterra",
+        "França",
+        "Estados Unidos",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "Ela começou no século XVIII, com as máquinas a vapor e a indústria têxtil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual imperador romano teria tocado lira enquanto Roma pegava fogo?",
+      "options": [
+        "Nero",
+        "Júlio César",
+        "Augusto",
+        "Calígula"
+      ],
+      "answer": 0,
+      "fact": "Nero estava fora de Roma quando o grande incêndio começou, no ano 64. A história da lira é provavelmente lenda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem foi o primeiro presidente do Brasil?",
+      "options": [
+        "Deodoro da Fonseca",
+        "Floriano Peixoto",
+        "Getúlio Vargas",
+        "Prudente de Morais"
+      ],
+      "answer": 0,
+      "fact": "O marechal Deodoro proclamou a República em 1889 e governou até 1891."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que presidente criou a CLT e governou o Brasil por 15 anos seguidos?",
+      "options": [
+        "Getúlio Vargas",
+        "Juscelino Kubitschek",
+        "Eurico Dutra",
+        "Jânio Quadros"
+      ],
+      "answer": 0,
+      "fact": "Vargas governou de 1930 a 1945 e voltou eleito em 1951. A CLT é de 1943."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem foi o primeiro imperador romano?",
+      "options": [
+        "Augusto",
+        "Júlio César",
+        "Nero",
+        "Constantino"
+      ],
+      "answer": 0,
+      "fact": "Júlio César nunca foi imperador: foi ditador. Seu herdeiro, Otaviano, recebeu o título de Augusto em 27 a.C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamou a disputa entre Estados Unidos e União Soviética sem confronto direto?",
+      "options": [
+        "Guerra Fria",
+        "Guerra dos Cem Anos",
+        "Guerra do Golfo",
+        "Guerra da Coreia"
+      ],
+      "answer": 0,
+      "fact": "Ela durou de 1947 a 1991, com corrida armamentista e espacial, mas sem guerra direta entre as duas potências."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem fez o discurso \"Eu tenho um sonho\", em 1963?",
+      "options": [
+        "Martin Luther King Jr.",
+        "Malcolm X",
+        "John F. Kennedy",
+        "Abraham Lincoln"
+      ],
+      "answer": 0,
+      "fact": "O discurso foi feito em Washington para mais de 200 mil pessoas, na luta pelos direitos civis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que presidente americano liderou o fim da escravidão nos Estados Unidos?",
+      "options": [
+        "Abraham Lincoln",
+        "George Washington",
+        "Thomas Jefferson",
+        "Ulysses Grant"
+      ],
+      "answer": 0,
+      "fact": "Lincoln assinou a Proclamação de Emancipação em 1863; a escravidão foi abolida de vez pela 13ª Emenda, em 1865."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Nelson Mandela foi presidente de qual país?",
+      "options": [
+        "África do Sul",
+        "Quênia",
+        "Nigéria",
+        "Zimbábue"
+      ],
+      "answer": 0,
+      "fact": "Mandela passou 27 anos preso antes de se tornar o primeiro presidente negro da África do Sul, em 1994."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Joana d'Arc é heroína de qual país?",
+      "options": [
+        "França",
+        "Inglaterra",
+        "Espanha",
+        "Portugal"
+      ],
+      "answer": 0,
+      "fact": "Ela liderou tropas na Guerra dos Cem Anos e foi queimada pelos ingleses em 1431, com apenas 19 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que império os espanhóis conquistaram no Peru?",
+      "options": [
+        "Inca",
+        "Asteca",
+        "Maia",
+        "Olmeca"
+      ],
+      "answer": 0,
+      "fact": "Em 1532, Francisco Pizarro capturou o imperador inca Atahualpa com poucas centenas de soldados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem chegou à Índia por mar contornando a África, em 1498?",
+      "options": [
+        "Vasco da Gama",
+        "Pedro Álvares Cabral",
+        "Cristóvão Colombo",
+        "Bartolomeu Dias"
+      ],
+      "answer": 0,
+      "fact": "Vasco da Gama chegou a Calicute e abriu a rota marítima das especiarias para Portugal."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual guerra, entre 1864 e 1870, opôs Brasil, Argentina e Uruguai a um país vizinho?",
+      "options": [
+        "Guerra do Paraguai",
+        "Guerra dos Farrapos",
+        "Guerra de Canudos",
+        "Guerra do Contestado"
+      ],
+      "answer": 0,
+      "fact": "Foi o maior conflito armado da história da América do Sul e devastou a população paraguaia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem comandou a primeira expedição a dar a volta ao mundo?",
+      "options": [
+        "Fernão de Magalhães",
+        "Vasco da Gama",
+        "Cristóvão Colombo",
+        "James Cook"
+      ],
+      "answer": 0,
+      "fact": "Magalhães morreu nas Filipinas, em 1521. Quem completou a viagem foi Juan Sebastián Elcano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano caiu o Império Romano do Ocidente?",
+      "options": [
+        "476",
+        "410",
+        "1453",
+        "325"
+      ],
+      "answer": 0,
+      "fact": "1453 é a queda de Constantinopla, o fim do Império Romano do Oriente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi o primeiro presidente eleito pelo voto direto depois da ditadura militar?",
+      "options": [
+        "Fernando Collor",
+        "Tancredo Neves",
+        "José Sarney",
+        "Fernando Henrique Cardoso"
+      ],
+      "answer": 0,
+      "fact": "Tancredo foi eleito em 1985 pelo voto indireto e morreu antes de tomar posse. Collor venceu a eleição direta de 1989."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano começou a ditadura militar no Brasil?",
+      "options": [
+        "1964",
+        "1968",
+        "1954",
+        "1970"
+      ],
+      "answer": 0,
+      "fact": "O regime durou até 1985. O AI-5, de 1968, foi o seu ato mais duro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu a carta que relata a chegada dos portugueses ao Brasil?",
+      "options": [
+        "Pero Vaz de Caminha",
+        "Pedro Álvares Cabral",
+        "José de Anchieta",
+        "Américo Vespúcio"
+      ],
+      "answer": 0,
+      "fact": "A carta de Caminha ao rei Dom Manuel é considerada a \"certidão de nascimento\" do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade foi destruída pela erupção do Vesúvio, no ano 79?",
+      "options": [
+        "Pompeia",
+        "Roma",
+        "Atenas",
+        "Cartago"
+      ],
+      "answer": 0,
+      "fact": "As cinzas preservaram corpos, casas e até pães. As escavações continuam até hoje."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual faraó teve o túmulo encontrado quase intacto em 1922?",
+      "options": [
+        "Tutancâmon",
+        "Ramsés II",
+        "Quéops",
+        "Akhenaton"
+      ],
+      "answer": 0,
+      "fact": "Howard Carter achou o túmulo no Vale dos Reis. A máscara de ouro do faraó é uma das peças mais famosas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro país a garantir às mulheres o voto em eleições nacionais?",
+      "options": [
+        "Nova Zelândia",
+        "Estados Unidos",
+        "Reino Unido",
+        "França"
+      ],
+      "answer": 0,
+      "fact": "A Nova Zelândia aprovou o voto feminino em 1893. No Brasil, as mulheres passaram a votar em 1932."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que revolta de 1904, no Rio de Janeiro, foi contra a vacinação obrigatória?",
+      "options": [
+        "Revolta da Vacina",
+        "Revolta da Chibata",
+        "Guerra de Canudos",
+        "Balaiada"
+      ],
+      "answer": 0,
+      "fact": "A vacina era contra a varíola, numa campanha liderada pelo médico Oswaldo Cruz."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem liderou a Revolução Russa de 1917?",
+      "options": [
+        "Lênin",
+        "Stalin",
+        "Trótski",
+        "Nicolau II"
+      ],
+      "answer": 0,
+      "fact": "Lênin liderou os bolcheviques. O czar Nicolau II e sua família foram executados em 1918."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual cidade foi a capital do Império Bizantino?",
+      "options": [
+        "Constantinopla",
+        "Roma",
+        "Atenas",
+        "Alexandria"
+      ],
+      "answer": 0,
+      "fact": "Hoje ela se chama Istambul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que navegador deu nome ao continente americano?",
+      "options": [
+        "Américo Vespúcio",
+        "Cristóvão Colombo",
+        "Pedro Álvares Cabral",
+        "Fernão de Magalhães"
+      ],
+      "answer": 0,
+      "fact": "O italiano Américo Vespúcio defendeu que aquelas terras eram um \"Novo Mundo\", e não a Ásia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamou o plano dos EUA para reconstruir a Europa depois da Segunda Guerra?",
+      "options": [
+        "Plano Marshall",
+        "Plano Real",
+        "New Deal",
+        "Plano Cohen"
+      ],
+      "answer": 0,
+      "fact": "Leva o nome de George Marshall, secretário de Estado americano, e começou a valer em 1948."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rainha deu nome a uma era ao governar o Reino Unido por boa parte do século XIX?",
+      "options": [
+        "Rainha Vitória",
+        "Elizabeth I",
+        "Maria I",
+        "Ana"
+      ],
+      "answer": 0,
+      "fact": "Vitória reinou por 63 anos, de 1837 a 1901."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto tempo durou a guerra mais curta da história?",
+      "options": [
+        "Menos de uma hora",
+        "Um dia",
+        "Três dias",
+        "Uma semana",
+        "Seis horas",
+        "Duas semanas"
+      ],
+      "answer": 0,
+      "fact": "Foi a Guerra Anglo-Zanzibari, em 1896, entre o Reino Unido e o Sultanato de Zanzibar. Durou cerca de 40 minutos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos durou a Guerra dos Cem Anos?",
+      "options": [
+        "116",
+        "100",
+        "99",
+        "120",
+        "105",
+        "83"
+      ],
+      "answer": 0,
+      "fact": "Ela foi de 1337 a 1453, com longos períodos de trégua no meio."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que imperador romano teria planejado tornar seu cavalo cônsul?",
+      "options": [
+        "Calígula",
+        "Nero",
+        "Cômodo",
+        "Tibério",
+        "Domiciano",
+        "Heliogábalo"
+      ],
+      "answer": 0,
+      "fact": "O cavalo se chamava Incitatus e, segundo os relatos antigos, tinha até estábulo de mármore."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos dias William Henry Harrison governou os EUA antes de morrer?",
+      "options": [
+        "31",
+        "7",
+        "90",
+        "180",
+        "15",
+        "62"
+      ],
+      "answer": 0,
+      "fact": "Ele fez o discurso de posse mais longo da história, quase duas horas no frio, e morreu um mês depois, de doença."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que presidente do Brasil ficou só três dias no cargo, em 1955?",
+      "options": [
+        "Carlos Luz",
+        "Ranieri Mazzilli",
+        "Café Filho",
+        "Nereu Ramos",
+        "Delfim Moreira",
+        "José Linhares"
+      ],
+      "answer": 0,
+      "fact": "Carlos Luz foi afastado por um movimento militar que garantiu a posse de Juscelino Kubitschek."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi assinado o Tratado de Tordesilhas?",
+      "options": [
+        "1494",
+        "1500",
+        "1492",
+        "1488",
+        "1503",
+        "1534"
+      ],
+      "answer": 0,
+      "fact": "O tratado dividiu as terras \"descobertas e por descobrir\" entre Portugal e Espanha, antes mesmo de Cabral chegar ao Brasil."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi a primeira capital dos Estados Unidos sob a Constituição?",
+      "options": [
+        "Nova York",
+        "Filadélfia",
+        "Washington",
+        "Boston",
+        "Baltimore",
+        "Annapolis"
+      ],
+      "answer": 0,
+      "fact": "George Washington tomou posse em Nova York, em 1789. Depois a capital foi para a Filadélfia e, em 1800, para Washington."
+    }
+  ]
+}

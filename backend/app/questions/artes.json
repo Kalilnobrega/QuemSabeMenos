@@ -1,0 +1,761 @@
+{
+  "theme": "Artes",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Quem pintou a Mona Lisa?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Van Gogh",
+        "Picasso"
+      ],
+      "answer": 0,
+      "fact": "A Mona Lisa é pequena: cerca de 77 × 53 cm. Foi roubada do Louvre em 1911 e só reapareceu dois anos depois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas são as cores primárias tradicionais?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Na pintura tradicional, as primárias são vermelho, amarelo e azul. Nas telas, as primárias da luz são vermelho, verde e azul (RGB)."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual instrumento tem teclas brancas e pretas?",
+      "options": [
+        "Piano",
+        "Violão",
+        "Flauta",
+        "Bateria"
+      ],
+      "answer": 0,
+      "fact": "Um piano comum tem 88 teclas: 52 brancas e 36 pretas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem escreveu \"Romeu e Julieta\"?",
+      "options": [
+        "William Shakespeare",
+        "Dante Alighieri",
+        "Miguel de Cervantes",
+        "Molière"
+      ],
+      "answer": 0,
+      "fact": "A peça se passa em Verona, na Itália, e foi escrita no fim do século XVI."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pintor cortou parte da própria orelha?",
+      "options": [
+        "Van Gogh",
+        "Picasso",
+        "Salvador Dalí",
+        "Monet"
+      ],
+      "answer": 0,
+      "fact": "Van Gogh vendeu pouquíssimos quadros em vida. Hoje, suas obras estão entre as mais caras do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem pintou o teto da Capela Sistina?",
+      "options": [
+        "Michelangelo",
+        "Rafael",
+        "Leonardo da Vinci",
+        "Donatello"
+      ],
+      "answer": 0,
+      "fact": "Michelangelo levou cerca de quatro anos, de 1508 a 1512, pintando o teto, boa parte do tempo em andaimes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que museu fica a Mona Lisa?",
+      "options": [
+        "Louvre",
+        "Prado",
+        "MoMA",
+        "Museu Britânico"
+      ],
+      "answer": 0,
+      "fact": "O Louvre já foi um palácio real e é o museu mais visitado do mundo. A Mona Lisa fica atrás de um vidro blindado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem pintou o \"Abaporu\"?",
+      "options": [
+        "Tarsila do Amaral",
+        "Anita Malfatti",
+        "Di Cavalcanti",
+        "Candido Portinari"
+      ],
+      "answer": 0,
+      "fact": "Abaporu significa \"homem que come gente\" em tupi. A obra inspirou o Movimento Antropofágico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que pintor espanhol ficou famoso pelos relógios derretidos?",
+      "options": [
+        "Salvador Dalí",
+        "Pablo Picasso",
+        "Francisco Goya",
+        "Joan Miró"
+      ],
+      "answer": 0,
+      "fact": "O quadro dos relógios derretidos se chama \"A Persistência da Memória\" e é de 1931."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem compôs \"As Quatro Estações\"?",
+      "options": [
+        "Vivaldi",
+        "Mozart",
+        "Bach",
+        "Beethoven"
+      ],
+      "answer": 0,
+      "fact": "Cada concerto representa uma estação do ano, com sons que imitam pássaros, tempestades e até um cachorro latindo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Picasso foi um dos criadores de qual movimento artístico?",
+      "options": [
+        "Cubismo",
+        "Impressionismo",
+        "Surrealismo",
+        "Barroco"
+      ],
+      "answer": 0,
+      "fact": "Picasso e Georges Braque criaram o cubismo, que mostra objetos de vários ângulos ao mesmo tempo, com formas geométricas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem esculpiu \"O Pensador\"?",
+      "options": [
+        "Auguste Rodin",
+        "Michelangelo",
+        "Bernini",
+        "Donatello"
+      ],
+      "answer": 0,
+      "fact": "\"O Pensador\" fazia parte de uma obra maior, \"A Porta do Inferno\", inspirada na \"Divina Comédia\", de Dante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que compositor continuou compondo mesmo depois de ficar surdo?",
+      "options": [
+        "Beethoven",
+        "Mozart",
+        "Chopin",
+        "Haydn"
+      ],
+      "answer": 0,
+      "fact": "Beethoven compôs a famosa Nona Sinfonia quando já estava completamente surdo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem pintou \"A Noite Estrelada\"?",
+      "options": [
+        "Van Gogh",
+        "Monet",
+        "Renoir",
+        "Cézanne"
+      ],
+      "answer": 0,
+      "fact": "Van Gogh pintou \"A Noite Estrelada\" em 1889, inspirado na vista da janela do sanatório onde estava internado, na França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade mineira estão os Profetas de Aleijadinho?",
+      "options": [
+        "Congonhas",
+        "Ouro Preto",
+        "Mariana",
+        "Tiradentes"
+      ],
+      "answer": 0,
+      "fact": "Os 12 profetas foram esculpidos em pedra-sabão no início do século XIX, no Santuário do Bom Jesus de Matosinhos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cordas tem um violão comum?",
+      "options": [
+        "6",
+        "4",
+        "5",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "O cavaquinho tem 4 cordas, e a viola caipira, 10, organizadas em 5 pares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que instrumento é tocado com um arco?",
+      "options": [
+        "Violino",
+        "Flauta",
+        "Trompete",
+        "Bateria"
+      ],
+      "answer": 0,
+      "fact": "Os violinos feitos por Antonio Stradivari, há mais de 300 anos, valem milhões hoje."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem escreveu \"Dom Quixote\"?",
+      "options": [
+        "Miguel de Cervantes",
+        "William Shakespeare",
+        "Luís de Camões",
+        "Dante Alighieri"
+      ],
+      "answer": 0,
+      "fact": "Publicado em 1605, Dom Quixote é considerado um dos primeiros romances modernos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que arte usa o movimento do corpo ao som de música?",
+      "options": [
+        "Dança",
+        "Escultura",
+        "Pintura",
+        "Arquitetura"
+      ],
+      "answer": 0,
+      "fact": "O balé nasceu nas cortes italianas e se desenvolveu na França. Por isso os passos têm nomes em francês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cor surge da mistura de vermelho com amarelo?",
+      "options": [
+        "Laranja",
+        "Verde",
+        "Roxo",
+        "Marrom"
+      ],
+      "answer": 0,
+      "fact": "O laranja é uma cor secundária. Em várias línguas, a fruta deu nome à cor, e não o contrário."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que representam as duas máscaras, uma sorrindo e outra chorando, símbolo do teatro?",
+      "options": [
+        "Comédia e tragédia",
+        "Dia e noite",
+        "Bem e mal",
+        "Amor e ódio"
+      ],
+      "answer": 0,
+      "fact": "Elas vêm do teatro grego antigo, em que os atores usavam máscaras em cena."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que instrumento tem tambores, pratos e é tocado com baquetas?",
+      "options": [
+        "Bateria",
+        "Piano",
+        "Harpa",
+        "Violão"
+      ],
+      "answer": 0,
+      "fact": "A bateria moderna surgiu nos Estados Unidos no começo do século XX, junto com o jazz."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem escreveu \"Os Lusíadas\"?",
+      "options": [
+        "Luís de Camões",
+        "Fernando Pessoa",
+        "Eça de Queirós",
+        "Machado de Assis"
+      ],
+      "answer": 0,
+      "fact": "O poema épico, de 1572, conta a viagem de Vasco da Gama à Índia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a principal ferramenta de quem esculpe pedra?",
+      "options": [
+        "Cinzel",
+        "Pincel",
+        "Agulha",
+        "Esquadro"
+      ],
+      "answer": 0,
+      "fact": "Atribui-se a Michelangelo a ideia de que a escultura já existe dentro do bloco: o artista só tira o excesso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que instrumento de sopro é de metal e tem pistões?",
+      "options": [
+        "Trompete",
+        "Flauta doce",
+        "Clarinete",
+        "Oboé"
+      ],
+      "answer": 0,
+      "fact": "Apesar de ser de metal, o saxofone é considerado um instrumento de madeira, por causa da palheta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que arte é feita com tinta spray em muros da cidade?",
+      "options": [
+        "Grafite",
+        "Escultura",
+        "Cerâmica",
+        "Mosaico"
+      ],
+      "answer": 0,
+      "fact": "Os irmãos paulistanos Os Gêmeos são famosos no mundo todo pelos grafites de personagens amarelos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o famoso museu de arte da Avenida Paulista?",
+      "options": [
+        "MASP",
+        "MAM",
+        "Pinacoteca",
+        "Inhotim"
+      ],
+      "answer": 0,
+      "fact": "O prédio, de Lina Bo Bardi, fica suspenso sobre um vão livre de 74 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas são as notas musicais básicas (dó, ré, mi...)?",
+      "options": [
+        "7",
+        "5",
+        "8",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Dó, ré, mi, fá, sol, lá, si. Os nomes vêm de um hino medieval em latim."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país nasceu o tango?",
+      "options": [
+        "Argentina",
+        "Espanha",
+        "Cuba",
+        "México"
+      ],
+      "answer": 0,
+      "fact": "O tango nasceu na região do Rio da Prata, entre Buenos Aires e Montevidéu, no fim do século XIX."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem pintou \"O Grito\"?",
+      "options": [
+        "Edvard Munch",
+        "Van Gogh",
+        "Gustav Klimt",
+        "Wassily Kandinsky"
+      ],
+      "answer": 0,
+      "fact": "Munch fez várias versões de \"O Grito\". Duas delas já foram roubadas e recuperadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem pintou \"Guernica\"?",
+      "options": [
+        "Pablo Picasso",
+        "Salvador Dalí",
+        "Francisco Goya",
+        "Joan Miró"
+      ],
+      "answer": 0,
+      "fact": "O painel retrata o bombardeio da cidade basca de Guernica, em 1937, durante a Guerra Civil Espanhola."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem compôs a ópera \"A Flauta Mágica\"?",
+      "options": [
+        "Mozart",
+        "Beethoven",
+        "Bach",
+        "Wagner"
+      ],
+      "answer": 0,
+      "fact": "Mozart compôs mais de 600 obras e morreu com apenas 35 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que escritora brasileira escreveu \"A Hora da Estrela\"?",
+      "options": [
+        "Clarice Lispector",
+        "Cecília Meireles",
+        "Rachel de Queiroz",
+        "Lygia Fagundes Telles"
+      ],
+      "answer": 0,
+      "fact": "Clarice nasceu na Ucrânia e chegou ao Brasil ainda bebê."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem escreveu \"Grande Sertão: Veredas\"?",
+      "options": [
+        "Guimarães Rosa",
+        "Graciliano Ramos",
+        "Jorge Amado",
+        "Euclides da Cunha"
+      ],
+      "answer": 0,
+      "fact": "O livro é famoso pela linguagem inventiva, cheia de palavras criadas pelo autor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que arquiteto projetou o Congresso Nacional, em Brasília?",
+      "options": [
+        "Oscar Niemeyer",
+        "Lúcio Costa",
+        "Burle Marx",
+        "Lina Bo Bardi"
+      ],
+      "answer": 0,
+      "fact": "Niemeyer viveu até os 104 anos e trabalhou praticamente até o fim."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que pintor brasileiro pintou \"Os Retirantes\"?",
+      "options": [
+        "Candido Portinari",
+        "Di Cavalcanti",
+        "Tarsila do Amaral",
+        "Anita Malfatti"
+      ],
+      "answer": 0,
+      "fact": "Portinari também pintou os painéis \"Guerra e Paz\", na sede da ONU, em Nova York."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que pintor francês é famoso pelos quadros de nenúfares?",
+      "options": [
+        "Claude Monet",
+        "Auguste Renoir",
+        "Edgar Degas",
+        "Paul Cézanne"
+      ],
+      "answer": 0,
+      "fact": "O impressionismo ganhou esse nome por causa de um quadro de Monet: \"Impressão, Nascer do Sol\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que cidade está a estátua de Davi, de Michelangelo?",
+      "options": [
+        "Florença",
+        "Roma",
+        "Veneza",
+        "Milão"
+      ],
+      "answer": 0,
+      "fact": "A estátua tem mais de 5 metros e foi esculpida num único bloco de mármore."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que evento de 1922 marcou o início do modernismo no Brasil?",
+      "options": [
+        "Semana de Arte Moderna",
+        "Tropicália",
+        "Bossa Nova",
+        "Cinema Novo"
+      ],
+      "answer": 0,
+      "fact": "Aconteceu no Theatro Municipal de São Paulo, no centenário da Independência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem foi a primeira maestrina do Brasil?",
+      "options": [
+        "Chiquinha Gonzaga",
+        "Carmen Miranda",
+        "Elis Regina",
+        "Dona Ivone Lara"
+      ],
+      "answer": 0,
+      "fact": "Ela compôs a primeira marchinha de Carnaval, \"Ó Abre Alas\", em 1899."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem pintou \"Moça com Brinco de Pérola\"?",
+      "options": [
+        "Johannes Vermeer",
+        "Rembrandt",
+        "Van Gogh",
+        "Rubens"
+      ],
+      "answer": 0,
+      "fact": "Pouco se sabe sobre a moça retratada. A pintura até inspirou um livro e um filme."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que estilo musical surgiu no Rio no fim dos anos 1950, com João Gilberto?",
+      "options": [
+        "Bossa nova",
+        "Samba-rock",
+        "Axé",
+        "Tropicália"
+      ],
+      "answer": 0,
+      "fact": "A batida de violão de João Gilberto em \"Chega de Saudade\", de 1958, é considerada o marco inicial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem escreveu \"A Metamorfose\", em que um homem acorda transformado em inseto?",
+      "options": [
+        "Franz Kafka",
+        "Albert Camus",
+        "Fiódor Dostoiévski",
+        "Liev Tolstói"
+      ],
+      "answer": 0,
+      "fact": "Kafka pediu que suas obras fossem queimadas depois de sua morte, mas o amigo Max Brod não obedeceu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que compositor brasileiro escreveu as \"Bachianas Brasileiras\"?",
+      "options": [
+        "Heitor Villa-Lobos",
+        "Carlos Gomes",
+        "Tom Jobim",
+        "Ernesto Nazareth"
+      ],
+      "answer": 0,
+      "fact": "Villa-Lobos misturou música erudita com ritmos populares e sons da natureza brasileira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual ópera de Carlos Gomes tem um herói indígena?",
+      "options": [
+        "O Guarani",
+        "Iracema",
+        "Macunaíma",
+        "Aida"
+      ],
+      "answer": 0,
+      "fact": "A abertura de \"O Guarani\" ficou famosa como tema do programa de rádio \"A Voz do Brasil\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem pintou \"O Nascimento de Vênus\"?",
+      "options": [
+        "Sandro Botticelli",
+        "Rafael",
+        "Ticiano",
+        "Caravaggio"
+      ],
+      "answer": 0,
+      "fact": "A pintura, do século XV, está na Galeria Uffizi, em Florença."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu \"Cem Anos de Solidão\"?",
+      "options": [
+        "Gabriel García Márquez",
+        "Mario Vargas Llosa",
+        "Jorge Luis Borges",
+        "Julio Cortázar"
+      ],
+      "answer": 0,
+      "fact": "O colombiano ganhou o Nobel de Literatura em 1982. O livro se passa na cidade fictícia de Macondo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pintor espanhol pintou \"As Meninas\"?",
+      "options": [
+        "Diego Velázquez",
+        "Francisco Goya",
+        "El Greco",
+        "Bartolomé Murillo"
+      ],
+      "answer": 0,
+      "fact": "No quadro, o próprio Velázquez aparece pintando, num jogo de olhares que intriga até hoje."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o único escritor de língua portuguesa a ganhar o Nobel de Literatura?",
+      "options": [
+        "José Saramago",
+        "Jorge Amado",
+        "Fernando Pessoa",
+        "Carlos Drummond de Andrade"
+      ],
+      "answer": 0,
+      "fact": "O português ganhou em 1998. Autor de \"Ensaio sobre a Cegueira\", ele escrevia com pouquíssima pontuação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem pintou \"O Beijo\", coberto de folhas de ouro?",
+      "options": [
+        "Gustav Klimt",
+        "Edvard Munch",
+        "Egon Schiele",
+        "Henri Matisse"
+      ],
+      "answer": 0,
+      "fact": "A obra, do início do século XX, é da chamada \"fase dourada\" do austríaco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que poeta escreveu \"No meio do caminho tinha uma pedra\"?",
+      "options": [
+        "Carlos Drummond de Andrade",
+        "Manuel Bandeira",
+        "Vinicius de Moraes",
+        "Cecília Meireles"
+      ],
+      "answer": 0,
+      "fact": "O poema causou polêmica em 1928 justamente pela repetição. Hoje é um dos mais famosos do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pintor da Semana de 22 é famoso por retratar o samba e o Carnaval?",
+      "options": [
+        "Di Cavalcanti",
+        "Candido Portinari",
+        "Alfredo Volpi",
+        "Guignard"
+      ],
+      "answer": 0,
+      "fact": "Di Cavalcanti foi um dos idealizadores da Semana de Arte Moderna."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pintor ficou famoso pelas bandeirinhas coloridas de festa junina?",
+      "options": [
+        "Alfredo Volpi",
+        "Tarsila do Amaral",
+        "Candido Portinari",
+        "Djanira"
+      ],
+      "answer": 0,
+      "fact": "Volpi nasceu na Itália e começou a vida como pintor de paredes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem compôs as \"Variações Goldberg\" e os \"Concertos de Brandemburgo\"?",
+      "options": [
+        "Johann Sebastian Bach",
+        "Georg Friedrich Händel",
+        "Joseph Haydn",
+        "Franz Schubert"
+      ],
+      "answer": 0,
+      "fact": "Bach teve 20 filhos, e vários deles também viraram compositores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu \"Macunaíma\", o herói sem nenhum caráter?",
+      "options": [
+        "Mário de Andrade",
+        "Oswald de Andrade",
+        "Monteiro Lobato",
+        "José de Alencar"
+      ],
+      "answer": 0,
+      "fact": "Mário foi um dos líderes da Semana de 22. Oswald, que não era seu parente, escreveu o Manifesto Antropófago."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que artista é famoso pelas latas de sopa Campbell e pelos retratos de Marilyn Monroe?",
+      "options": [
+        "Andy Warhol",
+        "Roy Lichtenstein",
+        "Jean-Michel Basquiat",
+        "Keith Haring"
+      ],
+      "answer": 0,
+      "fact": "Warhol é o maior nome da pop art e disse que, no futuro, todos seriam famosos por 15 minutos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual era o nome de batismo do Aleijadinho?",
+      "options": [
+        "Antônio Francisco Lisboa",
+        "Manuel Francisco Lisboa",
+        "Manuel da Costa Ataíde",
+        "José Joaquim da Rocha",
+        "Antônio Dias",
+        "Francisco Xavier de Brito"
+      ],
+      "answer": 0,
+      "fact": "Manuel Francisco Lisboa, que aparece nas alternativas, era o pai dele, um arquiteto português."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a obra de arte mais cara já vendida em leilão?",
+      "options": [
+        "Salvator Mundi",
+        "Os Jogadores de Cartas",
+        "Nu Couché",
+        "O Grito",
+        "Shot Sage Blue Marilyn",
+        "Les Femmes d'Alger"
+      ],
+      "answer": 0,
+      "fact": "A pintura atribuída a Leonardo da Vinci foi vendida por cerca de 450 milhões de dólares em 2017."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas sinfonias Beethoven completou?",
+      "options": [
+        "9",
+        "5",
+        "7",
+        "12",
+        "32",
+        "41"
+      ],
+      "answer": 0,
+      "fact": "Mozart, por comparação, tem 41 sinfonias numeradas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que pintura de Tarsila do Amaral, de 1933, mostra dezenas de rostos diante de chaminés de fábrica?",
+      "options": [
+        "Operários",
+        "Abaporu",
+        "A Negra",
+        "Antropofagia",
+        "A Cuca",
+        "Morro da Favela"
+      ],
+      "answer": 0,
+      "fact": "A obra marca a fase social de Tarsila, depois de uma viagem à União Soviética."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Como se chama o cão que reconhece Ulisses na volta para casa, na \"Odisseia\"?",
+      "options": [
+        "Argos",
+        "Cérbero",
+        "Laelaps",
+        "Órion",
+        "Hércules",
+        "Ájax"
+      ],
+      "answer": 0,
+      "fact": "Argos esperou 20 anos pelo dono e morreu logo depois de reconhecê-lo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que instrumento de orquestra costuma ter 47 cordas?",
+      "options": [
+        "Harpa",
+        "Cítara",
+        "Piano",
+        "Alaúde",
+        "Sitar",
+        "Cravo"
+      ],
+      "answer": 0,
+      "fact": "A harpa de concerto tem 47 cordas e 7 pedais, que mudam a afinação."
+    }
+  ]
+}

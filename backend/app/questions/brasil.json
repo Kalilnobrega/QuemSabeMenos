@@ -1,0 +1,775 @@
+{
+  "theme": "Brasil",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do Brasil?",
+      "options": [
+        "Brasília",
+        "Rio de Janeiro",
+        "São Paulo",
+        "Salvador"
+      ],
+      "answer": 0,
+      "fact": "Brasília virou capital em 1960. Antes, a capital era o Rio de Janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que cidade fica o Cristo Redentor?",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Salvador",
+        "Belo Horizonte"
+      ],
+      "answer": 0,
+      "fact": "O Cristo fica no morro do Corcovado, foi inaugurado em 1931 e é uma das sete maravilhas do mundo moderno."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a moeda do Brasil?",
+      "options": [
+        "Real",
+        "Peso",
+        "Cruzeiro",
+        "Dólar"
+      ],
+      "answer": 0,
+      "fact": "O real entrou em circulação em 1º de julho de 1994, com o Plano Real, para acabar com a hiperinflação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas cores NÃO aparece na bandeira do Brasil?",
+      "options": [
+        "Vermelho",
+        "Verde",
+        "Amarelo",
+        "Azul"
+      ],
+      "answer": 0,
+      "fact": "A bandeira tem verde, amarelo, azul e branco. O lema \"Ordem e Progresso\" fica na faixa branca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que festa tem desfiles de escolas de samba em fevereiro ou março?",
+      "options": [
+        "Carnaval",
+        "Festa Junina",
+        "Réveillon",
+        "Oktoberfest"
+      ],
+      "answer": 0,
+      "fact": "O Carnaval acontece 47 dias antes da Páscoa, por isso muda de data todo ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior estado brasileiro em área?",
+      "options": [
+        "Amazonas",
+        "Pará",
+        "Mato Grosso",
+        "Minas Gerais"
+      ],
+      "answer": 0,
+      "fact": "O Amazonas tem mais de 1,5 milhão de km², quase 20% de todo o território brasileiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Sem contar o Distrito Federal, quantos estados tem o Brasil?",
+      "options": [
+        "26",
+        "27",
+        "25",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "São 26 estados mais o Distrito Federal, onde fica Brasília: 27 unidades federativas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o ponto mais alto do Brasil?",
+      "options": [
+        "Pico da Neblina",
+        "Pico da Bandeira",
+        "Monte Roraima",
+        "Pico Paraná"
+      ],
+      "answer": 0,
+      "fact": "O Pico da Neblina tem cerca de 2.995 metros e fica no Amazonas, perto da Venezuela. Vive coberto de nuvens, daí o nome."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Bahia?",
+      "options": [
+        "Salvador",
+        "Recife",
+        "Feira de Santana",
+        "Ilhéus"
+      ],
+      "answer": 0,
+      "fact": "O Centro Histórico de Salvador, com o Pelourinho, é Patrimônio Mundial da UNESCO desde 1985."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que estado é a terra do pão de queijo?",
+      "options": [
+        "Minas Gerais",
+        "Goiás",
+        "São Paulo",
+        "Bahia"
+      ],
+      "answer": 0,
+      "fact": "O pão de queijo é feito com polvilho, que vem da mandioca, por isso não leva farinha de trigo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a primeira capital do Brasil?",
+      "options": [
+        "Salvador",
+        "Rio de Janeiro",
+        "São Paulo",
+        "Recife"
+      ],
+      "answer": 0,
+      "fact": "Salvador foi a capital de 1549 a 1763, quando a sede do governo passou para o Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Brasília foi inaugurada?",
+      "options": [
+        "1960",
+        "1950",
+        "1964",
+        "1955"
+      ],
+      "answer": 0,
+      "fact": "Brasília foi inaugurada em 21 de abril de 1960, no governo de Juscelino Kubitschek, com projeto de Lúcio Costa e Oscar Niemeyer."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o menor estado brasileiro em área?",
+      "options": [
+        "Sergipe",
+        "Alagoas",
+        "Espírito Santo",
+        "Rio de Janeiro"
+      ],
+      "answer": 0,
+      "fact": "Sergipe tem cerca de 22 mil km², menos que o município de Corumbá (MS), que passa de 60 mil km²."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu \"Dom Casmurro\"?",
+      "options": [
+        "Machado de Assis",
+        "José de Alencar",
+        "Jorge Amado",
+        "Graciliano Ramos"
+      ],
+      "answer": 0,
+      "fact": "Até hoje se discute se Capitu traiu Bentinho. Machado de Assis nunca respondeu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que estado pertence Fernando de Noronha?",
+      "options": [
+        "Pernambuco",
+        "Rio Grande do Norte",
+        "Paraíba",
+        "Ceará"
+      ],
+      "answer": 0,
+      "fact": "O arquipélago fica a mais de 300 km do continente e é Patrimônio Natural da Humanidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do estado de São Paulo?",
+      "options": [
+        "São Paulo",
+        "Campinas",
+        "Santos",
+        "Guarulhos"
+      ],
+      "answer": 0,
+      "fact": "São Paulo é a maior cidade do Brasil e da América do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a ave-símbolo do Brasil?",
+      "options": [
+        "Sabiá-laranjeira",
+        "Arara-azul",
+        "Tucano",
+        "Bem-te-vi"
+      ],
+      "answer": 0,
+      "fact": "O sabiá virou ave-símbolo oficial em 2002. É o pássaro da \"Canção do Exílio\", de Gonçalves Dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que prato típico leva feijão-preto e carnes de porco?",
+      "options": [
+        "Feijoada",
+        "Acarajé",
+        "Moqueca",
+        "Vatapá"
+      ],
+      "answer": 0,
+      "fact": "Em muitos restaurantes, a feijoada é tradição às quartas e aos sábados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual morro do Rio de Janeiro é famoso pelo bondinho?",
+      "options": [
+        "Pão de Açúcar",
+        "Corcovado",
+        "Dois Irmãos",
+        "Vidigal"
+      ],
+      "answer": 0,
+      "fact": "O bondinho do Pão de Açúcar foi inaugurado em 1912, um dos primeiros do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital de Minas Gerais?",
+      "options": [
+        "Belo Horizonte",
+        "Ouro Preto",
+        "Uberlândia",
+        "Juiz de Fora"
+      ],
+      "answer": 0,
+      "fact": "Até 1897, a capital mineira era Ouro Preto. BH foi uma das primeiras cidades planejadas do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior rio do Brasil em volume de água?",
+      "options": [
+        "Amazonas",
+        "São Francisco",
+        "Paraná",
+        "Tietê"
+      ],
+      "answer": 0,
+      "fact": "O Amazonas despeja no oceano cerca de 20% de toda a água doce que chega aos mares do planeta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida típica do Sul é tomada numa cuia?",
+      "options": [
+        "Chimarrão",
+        "Tereré",
+        "Caipirinha",
+        "Quentão"
+      ],
+      "answer": 0,
+      "fact": "O tereré é parecido, mas é tomado gelado e é mais comum no Mato Grosso do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que festa de junho tem quadrilha e fogueira?",
+      "options": [
+        "Festa Junina",
+        "Carnaval",
+        "Círio de Nazaré",
+        "Oktoberfest"
+      ],
+      "answer": 0,
+      "fact": "As festas juninas homenageiam santos como Santo Antônio, São João e São Pedro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do Rio Grande do Sul?",
+      "options": [
+        "Porto Alegre",
+        "Caxias do Sul",
+        "Pelotas",
+        "Florianópolis"
+      ],
+      "answer": 0,
+      "fact": "Porto Alegre fica às margens do Guaíba, famoso pelo pôr do sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior felino das Américas?",
+      "options": [
+        "Onça-pintada",
+        "Jaguatirica",
+        "Onça-parda",
+        "Leão"
+      ],
+      "answer": 0,
+      "fact": "A onça-pintada tem uma das mordidas mais fortes entre os grandes felinos, proporcionalmente ao tamanho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a língua oficial do Brasil?",
+      "options": [
+        "Português",
+        "Espanhol",
+        "Tupi",
+        "Inglês"
+      ],
+      "answer": 0,
+      "fact": "A Libras, língua brasileira de sinais, também é reconhecida por lei desde 2002."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital de Pernambuco?",
+      "options": [
+        "Recife",
+        "Olinda",
+        "Caruaru",
+        "Petrolina"
+      ],
+      "answer": 0,
+      "fact": "Recife é chamada de Veneza Brasileira por causa dos rios e das pontes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do Ceará?",
+      "options": [
+        "Fortaleza",
+        "Natal",
+        "Juazeiro do Norte",
+        "João Pessoa"
+      ],
+      "answer": 0,
+      "fact": "O Ceará foi a primeira província do Brasil a abolir a escravidão, em 1884."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que floresta cobre boa parte do Norte do Brasil?",
+      "options": [
+        "Amazônia",
+        "Mata Atlântica",
+        "Cerrado",
+        "Caatinga"
+      ],
+      "answer": 0,
+      "fact": "A Amazônia abriga cerca de 10% das espécies conhecidas do planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual bioma brasileiro é a maior planície alagável do mundo?",
+      "options": [
+        "Pantanal",
+        "Cerrado",
+        "Amazônia",
+        "Pampa"
+      ],
+      "answer": 0,
+      "fact": "O Pantanal fica principalmente em Mato Grosso e Mato Grosso do Sul, e chega à Bolívia e ao Paraguai."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estado fica a Chapada Diamantina?",
+      "options": [
+        "Bahia",
+        "Minas Gerais",
+        "Goiás",
+        "Mato Grosso"
+      ],
+      "answer": 0,
+      "fact": "O nome vem dos diamantes encontrados na região no século XIX."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama quem nasce em Salvador?",
+      "options": [
+        "Soteropolitano",
+        "Salvadorense",
+        "Salvatoriano",
+        "Baianense"
+      ],
+      "answer": 0,
+      "fact": "Vem do grego: Soterópolis, \"cidade do Salvador\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama quem nasce na cidade do Rio de Janeiro?",
+      "options": [
+        "Carioca",
+        "Fluminense",
+        "Paulista",
+        "Capixaba"
+      ],
+      "answer": 0,
+      "fact": "Quem nasce no estado do Rio é fluminense. Capixaba é quem nasce no Espírito Santo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Amazonas?",
+      "options": [
+        "Manaus",
+        "Belém",
+        "Porto Velho",
+        "Rio Branco"
+      ],
+      "answer": 0,
+      "fact": "O Teatro Amazonas, de 1896, foi construído no auge do ciclo da borracha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cidade fica junto às Cataratas do Iguaçu?",
+      "options": [
+        "Foz do Iguaçu",
+        "Curitiba",
+        "Cascavel",
+        "Londrina"
+      ],
+      "answer": 0,
+      "fact": "As cataratas têm cerca de 275 quedas, na fronteira entre o Brasil e a Argentina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Perto de Manaus, quais rios correm lado a lado sem se misturar?",
+      "options": [
+        "Negro e Solimões",
+        "Negro e Tapajós",
+        "Madeira e Solimões",
+        "Xingu e Tocantins"
+      ],
+      "answer": 0,
+      "fact": "É o Encontro das Águas: o Negro é escuro e o Solimões, barrento. Juntos, formam o rio Amazonas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos dura o mandato do presidente do Brasil?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Desde 1997, é permitida uma reeleição consecutiva."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Paraná?",
+      "options": [
+        "Curitiba",
+        "Londrina",
+        "Maringá",
+        "Foz do Iguaçu"
+      ],
+      "answer": 0,
+      "fact": "Curitiba é famosa pelo transporte público e por parques como o Jardim Botânico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ritmo pernambucano é dançado com sombrinhas coloridas?",
+      "options": [
+        "Frevo",
+        "Axé",
+        "Samba",
+        "Forró"
+      ],
+      "answer": 0,
+      "fact": "O frevo é Patrimônio Imaterial da Humanidade pela UNESCO desde 2012."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem é considerado o Rei do Baião?",
+      "options": [
+        "Luiz Gonzaga",
+        "Dominguinhos",
+        "Jackson do Pandeiro",
+        "Alceu Valença"
+      ],
+      "answer": 0,
+      "fact": "\"Asa Branca\", de 1947, virou uma espécie de hino do sertão nordestino."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o estado mais populoso do Brasil?",
+      "options": [
+        "São Paulo",
+        "Minas Gerais",
+        "Rio de Janeiro",
+        "Bahia"
+      ],
+      "answer": 0,
+      "fact": "São Paulo tem mais de 44 milhões de habitantes, mais do que muitos países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Pará?",
+      "options": [
+        "Belém",
+        "Santarém",
+        "Marabá",
+        "Macapá"
+      ],
+      "answer": 0,
+      "fact": "Belém recebe em outubro o Círio de Nazaré, uma das maiores procissões católicas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bolinho baiano de feijão-fradinho é frito no azeite de dendê?",
+      "options": [
+        "Acarajé",
+        "Tapioca",
+        "Pamonha",
+        "Coxinha"
+      ],
+      "answer": 0,
+      "fact": "O ofício das baianas de acarajé é patrimônio cultural do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro nome dado pelos portugueses ao Brasil?",
+      "options": [
+        "Ilha de Vera Cruz",
+        "Terra de Santa Cruz",
+        "Pindorama",
+        "Terra Brasilis"
+      ],
+      "answer": 0,
+      "fact": "Depois veio Terra de Santa Cruz. \"Brasil\" vem do pau-brasil, árvore de madeira avermelhada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estado brasileiro foi comprado da Bolívia?",
+      "options": [
+        "Acre",
+        "Rondônia",
+        "Roraima",
+        "Amapá"
+      ],
+      "answer": 0,
+      "fact": "O Tratado de Petrópolis, de 1903, oficializou a compra depois de conflitos na região."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital do Tocantins?",
+      "options": [
+        "Palmas",
+        "Araguaína",
+        "Gurupi",
+        "Porto Nacional"
+      ],
+      "answer": 0,
+      "fact": "Fundada em 1989, Palmas é a capital estadual mais jovem do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual rio é chamado de Velho Chico?",
+      "options": [
+        "São Francisco",
+        "Parnaíba",
+        "Tocantins",
+        "Paraíba do Sul"
+      ],
+      "answer": 0,
+      "fact": "Ele nasce na Serra da Canastra, em Minas, e deságua no mar entre Alagoas e Sergipe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual estado tem o maior litoral do Brasil?",
+      "options": [
+        "Bahia",
+        "Maranhão",
+        "Rio de Janeiro",
+        "Santa Catarina"
+      ],
+      "answer": 0,
+      "fact": "São mais de 900 km de costa, cerca de um oitavo do litoral brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade foi a capital do Brasil entre 1763 e 1960?",
+      "options": [
+        "Rio de Janeiro",
+        "Salvador",
+        "São Paulo",
+        "Petrópolis"
+      ],
+      "answer": 0,
+      "fact": "O Rio também foi sede de todo o Império Português entre 1808 e 1821, quando a família real fugiu de Napoleão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é considerado o pai da aviação no Brasil?",
+      "options": [
+        "Santos Dumont",
+        "Bartolomeu de Gusmão",
+        "Gago Coutinho",
+        "Marechal Rondon"
+      ],
+      "answer": 0,
+      "fact": "Em 1906, em Paris, ele voou com o 14-Bis diante de uma multidão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que estado fica o ponto mais a leste das Américas?",
+      "options": [
+        "Paraíba",
+        "Rio Grande do Norte",
+        "Pernambuco",
+        "Ceará"
+      ],
+      "answer": 0,
+      "fact": "É a Ponta do Seixas, em João Pessoa, onde o sol nasce primeiro no continente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a primeira vila fundada pelos portugueses no Brasil?",
+      "options": [
+        "São Vicente",
+        "Salvador",
+        "Olinda",
+        "Rio de Janeiro"
+      ],
+      "answer": 0,
+      "fact": "Foi fundada por Martim Afonso de Sousa em 1532, no litoral de São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a maior ilha fluviomarinha do mundo?",
+      "options": [
+        "Marajó",
+        "Ilha do Bananal",
+        "Ilhabela",
+        "Ilha de Santa Catarina"
+      ],
+      "answer": 0,
+      "fact": "Marajó, no Pará, é maior que a Bélgica e famosa pelos búfalos, usados até pela polícia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi o primeiro brasileiro a ir ao espaço?",
+      "options": [
+        "Marcos Pontes",
+        "César Lattes",
+        "Oswaldo Cruz",
+        "Carlos Chagas"
+      ],
+      "answer": 0,
+      "fact": "O astronauta foi à Estação Espacial Internacional em 2006, numa missão russa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem compôs a música do Hino Nacional brasileiro?",
+      "options": [
+        "Francisco Manuel da Silva",
+        "Carlos Gomes",
+        "Heitor Villa-Lobos",
+        "Chiquinha Gonzaga"
+      ],
+      "answer": 0,
+      "fact": "A música é do século XIX; a letra, de Osório Duque-Estrada, só foi oficializada em 1922."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capital do Amapá?",
+      "options": [
+        "Macapá",
+        "Boa Vista",
+        "Oiapoque",
+        "Santana"
+      ],
+      "answer": 0,
+      "fact": "Macapá é cortada pela Linha do Equador, e o estádio Zerão tem o meio de campo bem em cima dela."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o ponto mais ao norte do Brasil?",
+      "options": [
+        "Monte Caburaí",
+        "Oiapoque",
+        "Pico da Neblina",
+        "Monte Roraima",
+        "Cabo Orange",
+        "Ilha de Marajó"
+      ],
+      "answer": 0,
+      "fact": "Muita gente aprendeu \"do Oiapoque ao Chuí\", mas o extremo norte é o Monte Caburaí, em Roraima, uns 84 km mais ao norte."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o maior município do Brasil em área?",
+      "options": [
+        "Altamira",
+        "Corumbá",
+        "São Gabriel da Cachoeira",
+        "Barcelos",
+        "Oriximiná",
+        "Manaus"
+      ],
+      "answer": 0,
+      "fact": "Altamira, no Pará, tem mais de 159 mil km², área maior que a de Portugal."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas estrelas tem a bandeira do Brasil?",
+      "options": [
+        "27",
+        "26",
+        "21",
+        "25",
+        "24",
+        "30"
+      ],
+      "answer": 0,
+      "fact": "Cada estrela representa um estado ou o Distrito Federal. A única acima da faixa branca é a Espiga, que representa o Pará."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o menor município do Brasil em área?",
+      "options": [
+        "Santa Cruz de Minas",
+        "Águas de São Pedro",
+        "São Caetano do Sul",
+        "Olinda",
+        "Nilópolis",
+        "Fernando de Noronha"
+      ],
+      "answer": 0,
+      "fact": "Santa Cruz de Minas (MG) tem cerca de 3,5 km², pouco menos que Águas de São Pedro (SP)."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi a primeira transmissão de TV no Brasil?",
+      "options": [
+        "1950",
+        "1945",
+        "1955",
+        "1960",
+        "1939",
+        "1964"
+      ],
+      "answer": 0,
+      "fact": "A TV Tupi, de Assis Chateaubriand, inaugurou a televisão brasileira em setembro de 1950."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi o primeiro jornal impresso no Brasil?",
+      "options": [
+        "Gazeta do Rio de Janeiro",
+        "Correio Braziliense",
+        "Jornal do Commercio",
+        "Diário de Pernambuco",
+        "O Estado de S. Paulo",
+        "Jornal do Brasil"
+      ],
+      "answer": 0,
+      "fact": "O Correio Braziliense é do mesmo ano, 1808, mas era impresso em Londres."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos estados brasileiros fazem fronteira com outros países?",
+      "options": [
+        "11",
+        "9",
+        "10",
+        "12",
+        "8",
+        "13"
+      ],
+      "answer": 0,
+      "fact": "São Amapá, Pará, Roraima, Amazonas, Acre, Rondônia, Mato Grosso, Mato Grosso do Sul, Paraná, Santa Catarina e Rio Grande do Sul."
+    }
+  ]
+}

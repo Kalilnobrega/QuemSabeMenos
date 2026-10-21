@@ -1,0 +1,761 @@
+{
+  "theme": "Entretenimento",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual é o nome do ratinho mais famoso da Disney?",
+      "options": [
+        "Mickey",
+        "Jerry",
+        "Speedy",
+        "Remy"
+      ],
+      "answer": 0,
+      "fact": "Mickey estreou em 1928, no curta \"O Vapor Willie\", um dos primeiros desenhos com som sincronizado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual super-herói é conhecido como o Homem-Morcego?",
+      "options": [
+        "Batman",
+        "Superman",
+        "Homem-Aranha",
+        "Flash"
+      ],
+      "answer": 0,
+      "fact": "Batman estreou nos quadrinhos em 1939. Ao contrário da maioria dos heróis, ele não tem superpoderes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que filme aparece o Buzz Lightyear?",
+      "options": [
+        "Toy Story",
+        "Shrek",
+        "Carros",
+        "Procurando Nemo"
+      ],
+      "answer": 0,
+      "fact": "Toy Story, de 1995, foi o primeiro longa-metragem totalmente animado por computador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que cor é o Shrek?",
+      "options": [
+        "Verde",
+        "Azul",
+        "Amarelo",
+        "Roxo"
+      ],
+      "answer": 0,
+      "fact": "Shrek é baseado num livro infantil de William Steig, de 1990. O filme ganhou o primeiro Oscar de melhor animação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o nome do bruxo criado por J.K. Rowling?",
+      "options": [
+        "Harry Potter",
+        "Frodo",
+        "Merlin",
+        "Gandalf"
+      ],
+      "answer": 0,
+      "fact": "O primeiro livro saiu em 1997, depois de ser recusado por várias editoras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual banda gravou \"Bohemian Rhapsody\"?",
+      "options": [
+        "Queen",
+        "The Beatles",
+        "Rolling Stones",
+        "Led Zeppelin"
+      ],
+      "answer": 0,
+      "fact": "Lançada em 1975, a música tem quase 6 minutos, mistura balada, ópera e rock e não tem refrão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem é conhecido como o \"Rei do Pop\"?",
+      "options": [
+        "Michael Jackson",
+        "Elvis Presley",
+        "Prince",
+        "Freddie Mercury"
+      ],
+      "answer": 0,
+      "fact": "\"Thriller\", de 1982, é considerado o álbum mais vendido da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o nome do reino de \"Frozen\"?",
+      "options": [
+        "Arendelle",
+        "Agrabah",
+        "Corona",
+        "Atlântica"
+      ],
+      "answer": 0,
+      "fact": "Frozen se inspira em \"A Rainha da Neve\", conto do dinamarquês Hans Christian Andersen."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual vilão de \"Star Wars\" é o pai de Luke Skywalker?",
+      "options": [
+        "Darth Vader",
+        "Darth Maul",
+        "Palpatine",
+        "Kylo Ren"
+      ],
+      "answer": 0,
+      "fact": "A revelação está em \"O Império Contra-Ataca\", de 1980. A fala original é \"No, I am your father\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anões acompanham a Branca de Neve?",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Os anões são Mestre, Dunga, Feliz, Soneca, Atchim, Dengoso e Zangado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem dirigiu o filme \"Titanic\", de 1997?",
+      "options": [
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott",
+        "Christopher Nolan"
+      ],
+      "answer": 0,
+      "fact": "Titanic ganhou 11 Oscars, empatado com Ben-Hur e O Senhor dos Anéis: O Retorno do Rei como os filmes mais premiados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual banda lançou o álbum \"Abbey Road\"?",
+      "options": [
+        "The Beatles",
+        "Pink Floyd",
+        "Queen",
+        "The Who"
+      ],
+      "answer": 0,
+      "fact": "A capa, com os quatro atravessando a faixa de pedestres, foi fotografada em frente ao estúdio Abbey Road, em Londres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que série a frase \"Winter is coming\" ficou famosa?",
+      "options": [
+        "Game of Thrones",
+        "Vikings",
+        "The Witcher",
+        "Os Anéis de Poder"
+      ],
+      "answer": 0,
+      "fact": "É o lema da Casa Stark: \"O inverno está chegando\". A série é baseada nos livros de George R. R. Martin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o nome verdadeiro do Homem de Ferro?",
+      "options": [
+        "Tony Stark",
+        "Bruce Wayne",
+        "Steve Rogers",
+        "Peter Parker"
+      ],
+      "answer": 0,
+      "fact": "Robert Downey Jr. viveu o Homem de Ferro em 2008, no filme que iniciou o Universo Cinematográfico da Marvel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual hobbit carrega o Um Anel em \"O Senhor dos Anéis\"?",
+      "options": [
+        "Frodo",
+        "Bilbo",
+        "Sam",
+        "Pippin"
+      ],
+      "answer": 0,
+      "fact": "Bilbo encontrou o Anel em \"O Hobbit\" e o deixou para o sobrinho Frodo, que precisou destruí-lo na Montanha da Perdição."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual personagem amarelo mora num abacaxi no fundo do mar?",
+      "options": [
+        "Bob Esponja",
+        "Patrick",
+        "Lula Molusco",
+        "Seu Siriguejo"
+      ],
+      "answer": 0,
+      "fact": "Bob Esponja trabalha no Siri Cascudo. Patrick, seu melhor amigo, é uma estrela-do-mar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o encanador de boné vermelho da Nintendo?",
+      "options": [
+        "Mario",
+        "Luigi",
+        "Wario",
+        "Sonic"
+      ],
+      "answer": 0,
+      "fact": "Mario apareceu pela primeira vez em 1981, no jogo Donkey Kong, com o nome de Jumpman."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o leão protagonista de \"O Rei Leão\"?",
+      "options": [
+        "Simba",
+        "Mufasa",
+        "Scar",
+        "Nala"
+      ],
+      "answer": 0,
+      "fact": "Mufasa é o pai de Simba, e Scar, o tio vilão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que super-herói usa um escudo com uma estrela?",
+      "options": [
+        "Capitão América",
+        "Thor",
+        "Hulk",
+        "Homem de Ferro"
+      ],
+      "answer": 0,
+      "fact": "O Capitão América estreou nos quadrinhos em 1941, socando Hitler na capa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que cor é o Hulk?",
+      "options": [
+        "Verde",
+        "Azul",
+        "Vermelho",
+        "Roxo"
+      ],
+      "answer": 0,
+      "fact": "Na primeira revista, de 1962, o Hulk era cinza. A cor mudou para verde porque o cinza saía mal na impressão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual boneco de madeira tem o nariz que cresce quando mente?",
+      "options": [
+        "Pinóquio",
+        "Gepeto",
+        "Grilo Falante",
+        "Peter Pan"
+      ],
+      "answer": 0,
+      "fact": "Pinóquio foi criado pelo italiano Carlo Collodi em 1883."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o peixe-palhaço procurado pelo pai num filme da Pixar?",
+      "options": [
+        "Nemo",
+        "Dory",
+        "Marlin",
+        "Bruce"
+      ],
+      "answer": 0,
+      "fact": "Marlin é o pai, e Dory, a amiga esquecida que depois ganhou um filme só dela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que cidade mora o Homem-Aranha?",
+      "options": [
+        "Nova York",
+        "Gotham",
+        "Metrópolis",
+        "Chicago"
+      ],
+      "answer": 0,
+      "fact": "Gotham é a cidade do Batman e Metrópolis, a do Superman, ambas fictícias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que princesa perde o sapatinho de cristal?",
+      "options": [
+        "Cinderela",
+        "Branca de Neve",
+        "Aurora",
+        "Rapunzel"
+      ],
+      "answer": 0,
+      "fact": "A história tem versões antigas em vários países. A mais famosa é a do francês Charles Perrault, de 1697."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o cachorro do Charlie Brown?",
+      "options": [
+        "Snoopy",
+        "Pluto",
+        "Scooby-Doo",
+        "Bidu"
+      ],
+      "answer": 0,
+      "fact": "Snoopy tem um amigo passarinho chamado Woodstock."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a profissão do Popeye?",
+      "options": [
+        "Marinheiro",
+        "Pescador",
+        "Pirata",
+        "Cozinheiro"
+      ],
+      "answer": 0,
+      "fact": "Popeye fica forte comendo espinafre, e dizem que ajudou a aumentar o consumo do vegetal nos EUA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que personagem da Turma da Mônica é dono do cachorro Bidu?",
+      "options": [
+        "Franjinha",
+        "Cebolinha",
+        "Cascão",
+        "Magali"
+      ],
+      "answer": 0,
+      "fact": "Bidu e Franjinha foram os primeiros personagens de Mauricio de Sousa, em 1959."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a boneca mais famosa da Mattel?",
+      "options": [
+        "Barbie",
+        "Polly",
+        "Susi",
+        "Emília"
+      ],
+      "answer": 0,
+      "fact": "A Barbie foi lançada em 1959. O nome completo dela é Barbara Millicent Roberts."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a comida favorita do Chaves?",
+      "options": [
+        "Sanduíche de presunto",
+        "Churros",
+        "Pizza",
+        "Tortinha de maçã"
+      ],
+      "answer": 0,
+      "fact": "O Chaves não morava no barril: ele morava na casa 8 e só se escondia lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem interpretou Jack em \"Titanic\"?",
+      "options": [
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Cruise",
+        "Johnny Depp"
+      ],
+      "answer": 0,
+      "fact": "DiCaprio só ganhou o seu primeiro Oscar em 2016, por \"O Regresso\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual banda irlandesa tem Bono como vocalista?",
+      "options": [
+        "U2",
+        "Coldplay",
+        "The Cranberries",
+        "Oasis"
+      ],
+      "answer": 0,
+      "fact": "O apelido Bono vem de Bonavox, uma loja de aparelhos auditivos de Dublin."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantor brasileiro é chamado de \"Rei\"?",
+      "options": [
+        "Roberto Carlos",
+        "Caetano Veloso",
+        "Gilberto Gil",
+        "Erasmo Carlos"
+      ],
+      "answer": 0,
+      "fact": "Roberto Carlos liderou a Jovem Guarda nos anos 1960, ao lado de Erasmo Carlos e Wanderléa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem é o diretor de Hogwarts nos livros de Harry Potter?",
+      "options": [
+        "Alvo Dumbledore",
+        "Severo Snape",
+        "Rúbeo Hagrid",
+        "Minerva McGonagall"
+      ],
+      "answer": 0,
+      "fact": "O nome completo dele é Alvo Percival Wulfrico Brian Dumbledore."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que série os amigos se encontram no café Central Perk?",
+      "options": [
+        "Friends",
+        "Seinfeld",
+        "How I Met Your Mother",
+        "The Office"
+      ],
+      "answer": 0,
+      "fact": "Friends teve 10 temporadas, de 1994 a 2004."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantora é conhecida como a Rainha do Pop?",
+      "options": [
+        "Madonna",
+        "Britney Spears",
+        "Beyoncé",
+        "Lady Gaga"
+      ],
+      "answer": 0,
+      "fact": "Madonna lançou o primeiro single em 1982 e está entre as artistas que mais venderam discos na história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o grande vilão da saga Harry Potter?",
+      "options": [
+        "Voldemort",
+        "Draco Malfoy",
+        "Sauron",
+        "Severo Snape"
+      ],
+      "answer": 0,
+      "fact": "O nome verdadeiro dele é Tom Servolo Riddle, um anagrama de \"Eis Lord Voldemort\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país surgiu o K-pop?",
+      "options": [
+        "Coreia do Sul",
+        "Japão",
+        "China",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "O BTS foi o primeiro grupo de K-pop a chegar ao topo da parada de álbuns dos Estados Unidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que franquia de filmes aparece o capitão Jack Sparrow?",
+      "options": [
+        "Piratas do Caribe",
+        "Peter Pan",
+        "A Ilha do Tesouro",
+        "Hook"
+      ],
+      "answer": 0,
+      "fact": "A franquia nasceu de um brinquedo dos parques da Disney."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a nacionalidade da cantora Shakira?",
+      "options": [
+        "Colombiana",
+        "Mexicana",
+        "Espanhola",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "Shakira cantou \"Waka Waka\", música oficial da Copa do Mundo de 2010, na África do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o pai da família Simpson?",
+      "options": [
+        "Homer",
+        "Bart",
+        "Ned",
+        "Moe"
+      ],
+      "answer": 0,
+      "fact": "Os Simpsons estreou como série em 1989 e é a sitcom americana mais longa da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem compôs \"Garota de Ipanema\" com Vinicius de Moraes?",
+      "options": [
+        "Tom Jobim",
+        "Chico Buarque",
+        "João Gilberto",
+        "Caetano Veloso"
+      ],
+      "answer": 0,
+      "fact": "É uma das músicas mais gravadas do mundo e virou símbolo da bossa nova."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atriz interpretou Hermione nos filmes de Harry Potter?",
+      "options": [
+        "Emma Watson",
+        "Emma Stone",
+        "Keira Knightley",
+        "Natalie Portman"
+      ],
+      "answer": 0,
+      "fact": "Emma Watson tinha 9 anos quando foi escolhida para o papel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o robô dourado de \"Star Wars\"?",
+      "options": [
+        "C-3PO",
+        "R2-D2",
+        "BB-8",
+        "Chewbacca"
+      ],
+      "answer": 0,
+      "fact": "C-3PO diz ser fluente em mais de seis milhões de formas de comunicação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro longa-metragem de animação da Disney?",
+      "options": [
+        "Branca de Neve e os Sete Anões",
+        "Pinóquio",
+        "Fantasia",
+        "Dumbo"
+      ],
+      "answer": 0,
+      "fact": "Lançado em 1937, foi apelidado de \"loucura de Disney\" por quem achava que ninguém veria um desenho tão longo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que diretor fez \"Tubarão\", \"E.T.\" e \"Jurassic Park\"?",
+      "options": [
+        "Steven Spielberg",
+        "George Lucas",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "answer": 0,
+      "fact": "Spielberg tinha só 28 anos quando lançou \"Tubarão\", em 1975."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que banda gravou o álbum \"The Dark Side of the Moon\"?",
+      "options": [
+        "Pink Floyd",
+        "Led Zeppelin",
+        "The Doors",
+        "Queen"
+      ],
+      "answer": 0,
+      "fact": "O disco passou mais de 900 semanas na parada de álbuns da Billboard."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro filme brasileiro a ganhar o Oscar de melhor filme internacional?",
+      "options": [
+        "Ainda Estou Aqui",
+        "Central do Brasil",
+        "Cidade de Deus",
+        "O Pagador de Promessas"
+      ],
+      "answer": 0,
+      "fact": "Ganhou em 2025. Fernanda Torres também concorreu ao Oscar de melhor atriz pelo filme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu \"O Pequeno Príncipe\"?",
+      "options": [
+        "Antoine de Saint-Exupéry",
+        "Victor Hugo",
+        "Júlio Verne",
+        "Albert Camus"
+      ],
+      "answer": 0,
+      "fact": "O autor era aviador, e o livro é um dos mais traduzidos do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano estreou o primeiro filme de \"Star Wars\"?",
+      "options": [
+        "1977",
+        "1980",
+        "1983",
+        "1972"
+      ],
+      "answer": 0,
+      "fact": "O primeiro filme lançado hoje se chama \"Episódio IV: Uma Nova Esperança\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a cidade fictícia de \"Stranger Things\"?",
+      "options": [
+        "Hawkins",
+        "Springfield",
+        "Derry",
+        "Riverdale"
+      ],
+      "answer": 0,
+      "fact": "Derry é a cidade de \"It\", de Stephen King, uma das inspirações da série."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro videoclipe exibido pela MTV americana?",
+      "options": [
+        "Video Killed the Radio Star",
+        "Thriller",
+        "Like a Virgin",
+        "Billie Jean"
+      ],
+      "answer": 0,
+      "fact": "A MTV estreou em 1981 com essa música dos Buggles, cujo título diz que o vídeo matou a estrela do rádio. Ironia proposital."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual personagem de Monteiro Lobato é uma boneca de pano falante?",
+      "options": [
+        "Emília",
+        "Narizinho",
+        "Cuca",
+        "Dona Benta"
+      ],
+      "answer": 0,
+      "fact": "A Emília começa a falar depois de tomar as pílulas falantes do Doutor Caramujo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem compôs as trilhas de \"Star Wars\", \"Tubarão\" e \"Harry Potter\"?",
+      "options": [
+        "John Williams",
+        "Hans Zimmer",
+        "Ennio Morricone",
+        "Howard Shore"
+      ],
+      "answer": 0,
+      "fact": "John Williams é a pessoa viva com mais indicações ao Oscar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual era a banda de Kurt Cobain?",
+      "options": [
+        "Nirvana",
+        "Pearl Jam",
+        "Soundgarden",
+        "Foo Fighters"
+      ],
+      "answer": 0,
+      "fact": "Dave Grohl, baterista do Nirvana, depois fundou o Foo Fighters."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país o Tetris foi criado?",
+      "options": [
+        "União Soviética",
+        "Japão",
+        "Estados Unidos",
+        "Coreia do Sul"
+      ],
+      "answer": 0,
+      "fact": "Foi criado em 1984 por Alexey Pajitnov, num computador da Academia de Ciências, em Moscou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o nome kryptoniano do Superman?",
+      "options": [
+        "Kal-El",
+        "Clark Kent",
+        "Jor-El",
+        "Zod"
+      ],
+      "answer": 0,
+      "fact": "Jor-El é o pai dele, e Clark Kent é o nome que recebeu dos pais adotivos na Terra."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual era o nome original do Mickey Mouse?",
+      "options": [
+        "Mortimer",
+        "Oswald",
+        "Milton",
+        "Marvin",
+        "Morris",
+        "Monty"
+      ],
+      "answer": 0,
+      "fact": "Foi Lillian, esposa de Walt Disney, quem sugeriu trocar Mortimer por Mickey."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Como se chama o cachorro do Tintim nas edições brasileiras?",
+      "options": [
+        "Milu",
+        "Bidu",
+        "Rex",
+        "Floquinho",
+        "Totó",
+        "Pluto"
+      ],
+      "answer": 0,
+      "fact": "No original francês, ele se chama Milou; em inglês, Snowy."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Como se chamava o macaco de Ross em \"Friends\"?",
+      "options": [
+        "Marcel",
+        "Bobo",
+        "Charlie",
+        "Abu",
+        "George",
+        "Jack"
+      ],
+      "answer": 0,
+      "fact": "Marcel foi interpretado por duas macacas-prego, Katie e Monkey."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "O baterista de que banda continuou tocando depois de perder um braço?",
+      "options": [
+        "Def Leppard",
+        "Metallica",
+        "AC/DC",
+        "Iron Maiden",
+        "Bon Jovi",
+        "Kiss"
+      ],
+      "answer": 0,
+      "fact": "Rick Allen perdeu o braço num acidente de carro em 1984 e voltou a tocar com uma bateria adaptada."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o filme mais longo a ganhar o Oscar de melhor filme?",
+      "options": [
+        "E o Vento Levou",
+        "Lawrence da Arábia",
+        "Ben-Hur",
+        "O Poderoso Chefão: Parte II",
+        "O Senhor dos Anéis: O Retorno do Rei",
+        "Titanic"
+      ],
+      "answer": 0,
+      "fact": "Com quase 4 horas, \"E o Vento Levou\", de 1939, segue como o vencedor mais longo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual era o nome de nascimento de Freddie Mercury?",
+      "options": [
+        "Farrokh Bulsara",
+        "Frederick Morrison",
+        "Freddie Johnson",
+        "Faruk Mehta",
+        "Fred Bailey",
+        "Francis Merrick"
+      ],
+      "answer": 0,
+      "fact": "Ele nasceu em Zanzibar, em 1946, numa família de origem parse."
+    }
+  ]
+}

@@ -1,0 +1,775 @@
+{
+  "theme": "Conhecimentos gerais",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem um ano bissexto?",
+      "options": [
+        "366",
+        "365",
+        "364",
+        "367"
+      ],
+      "answer": 0,
+      "fact": "O dia extra é 29 de fevereiro. Ele existe porque a Terra leva cerca de 365 dias e 6 horas para dar a volta no Sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cor surge da mistura de azul com amarelo?",
+      "options": [
+        "Verde",
+        "Roxo",
+        "Laranja",
+        "Marrom"
+      ],
+      "answer": 0,
+      "fact": "Na pintura tradicional, azul e amarelo são cores primárias. Misturadas, viram verde, uma cor secundária."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem uma aranha?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "Aranhas não são insetos, são aracnídeos. Insetos têm 6 patas; aranhas, 8."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos tem uma hora e meia?",
+      "options": [
+        "90",
+        "60",
+        "120",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "Uma hora tem 60 minutos e meia hora, 30. Somando, 90 minutos: o tempo de uma partida de futebol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual animal é conhecido como o \"rei da selva\"?",
+      "options": [
+        "Leão",
+        "Tigre",
+        "Elefante",
+        "Gorila"
+      ],
+      "answer": 0,
+      "fact": "Curiosidade: leões vivem em savanas, não em selvas. O apelido vem da imponência, não do habitat."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que mês se comemora o Dia das Crianças no Brasil?",
+      "options": [
+        "Outubro",
+        "Junho",
+        "Dezembro",
+        "Maio"
+      ],
+      "answer": 0,
+      "fact": "É 12 de outubro, a mesma data do Dia de Nossa Senhora Aparecida, padroeira do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos lados tem um hexágono?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "\"Hexa\" vem do grego e significa seis. Os favos de mel das abelhas são hexagonais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o idioma mais falado no México?",
+      "options": [
+        "Espanhol",
+        "Inglês",
+        "Náuatle",
+        "Português"
+      ],
+      "answer": 0,
+      "fact": "O México é o país com mais falantes nativos de espanhol do mundo. O náuatle, língua dos astecas, ainda é falado por mais de 1 milhão de pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o plural de \"cidadão\"?",
+      "options": [
+        "Cidadãos",
+        "Cidadões",
+        "Cidadães",
+        "Cidadãoes"
+      ],
+      "answer": 0,
+      "fact": "Palavras terminadas em -ão têm plurais diferentes: cidadãos, pães, leões. Não tem regra fixa, é decorar mesmo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas casas tem um tabuleiro de xadrez?",
+      "options": [
+        "64",
+        "81",
+        "100",
+        "48"
+      ],
+      "answer": 0,
+      "fact": "O tabuleiro tem 8 × 8 casas, alternando claras e escuras. Cada jogador começa com 16 peças."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o único número primo par?",
+      "options": [
+        "2",
+        "0",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "Todo outro número par é divisível por 2, então não pode ser primo. O 2 é a exceção."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos segundos tem um dia?",
+      "options": [
+        "86.400",
+        "3.600",
+        "84.600",
+        "864.000"
+      ],
+      "answer": 0,
+      "fact": "São 24 horas × 60 minutos × 60 segundos = 86.400 segundos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o medo de aranhas?",
+      "options": [
+        "Aracnofobia",
+        "Claustrofobia",
+        "Acrofobia",
+        "Agorafobia"
+      ],
+      "answer": 0,
+      "fact": "Vem do grego \"aráchne\", aranha. Claustrofobia é medo de lugares fechados; acrofobia, de altura."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país o papel foi inventado?",
+      "options": [
+        "China",
+        "Egito",
+        "Japão",
+        "Grécia"
+      ],
+      "answer": 0,
+      "fact": "A invenção é atribuída a Cai Lun, oficial chinês, por volta do ano 105. O papiro egípcio é mais antigo, mas é feito de outro jeito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a moeda oficial do Japão?",
+      "options": [
+        "Iene",
+        "Yuan",
+        "Won",
+        "Rupia"
+      ],
+      "answer": 0,
+      "fact": "O iene usa o símbolo ¥, o mesmo do yuan chinês. O won é da Coreia do Sul e a rupia, da Índia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses tem um ano?",
+      "options": [
+        "12",
+        "10",
+        "11",
+        "13"
+      ],
+      "answer": 0,
+      "fact": "Julho e agosto homenageiam dois romanos: Júlio César e o imperador Augusto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas tem um dia?",
+      "options": [
+        "24",
+        "12",
+        "20",
+        "48"
+      ],
+      "answer": 0,
+      "fact": "A divisão do dia em 24 partes vem dos antigos egípcios, que dividiam o dia e a noite em 12 partes cada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o ponto cardeal oposto ao norte?",
+      "options": [
+        "Sul",
+        "Leste",
+        "Oeste",
+        "Nordeste"
+      ],
+      "answer": 0,
+      "fact": "A bússola aponta para o norte magnético, que fica perto, mas não exatamente, no Polo Norte geográfico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas letras tem o alfabeto da língua portuguesa?",
+      "options": [
+        "26",
+        "23",
+        "24",
+        "28"
+      ],
+      "answer": 0,
+      "fact": "K, W e Y voltaram oficialmente ao alfabeto com o Acordo Ortográfico, em vigor no Brasil desde 2009."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual inseto produz o mel?",
+      "options": [
+        "Abelha",
+        "Vespa",
+        "Formiga",
+        "Borboleta"
+      ],
+      "answer": 0,
+      "fact": "Para produzir 1 kg de mel, as abelhas visitam milhões de flores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem uma semana?",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "O português é uma das poucas línguas que não usam nomes de planetas ou deuses nos dias da semana: temos segunda-feira, terça-feira..."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a cor da esmeralda?",
+      "options": [
+        "Verde",
+        "Vermelha",
+        "Azul",
+        "Amarela"
+      ],
+      "answer": 0,
+      "fact": "A esmeralda é uma variedade do mineral berilo. A Colômbia é uma das maiores produtoras, e o Brasil também tem jazidas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas rodas tem um triciclo?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "O prefixo \"tri\" significa três, como em triângulo e tricampeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que estado físico está a água quando vira gelo?",
+      "options": [
+        "Sólido",
+        "Líquido",
+        "Gasoso",
+        "Plasma"
+      ],
+      "answer": 0,
+      "fact": "O gelo boia porque é menos denso que a água líquida, algo raro entre as substâncias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior animal do mundo?",
+      "options": [
+        "Baleia-azul",
+        "Elefante-africano",
+        "Tubarão-baleia",
+        "Girafa"
+      ],
+      "answer": 0,
+      "fact": "A baleia-azul pode passar de 30 metros e é o maior animal de que se tem notícia, maior até que os dinossauros conhecidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o animal terrestre mais rápido?",
+      "options": [
+        "Guepardo",
+        "Leão",
+        "Cavalo",
+        "Gazela"
+      ],
+      "answer": 0,
+      "fact": "O guepardo pode passar de 100 km/h, mas só aguenta essa velocidade por poucos segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um metro?",
+      "options": [
+        "100",
+        "10",
+        "1.000",
+        "50"
+      ],
+      "answer": 0,
+      "fact": "O metro já foi definido como a décima milionésima parte da distância entre o Polo Norte e a Linha do Equador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual fruta aparece no apelido de Nova York?",
+      "options": [
+        "Maçã",
+        "Laranja",
+        "Banana",
+        "Uva"
+      ],
+      "answer": 0,
+      "fact": "Nova York é \"The Big Apple\", a Grande Maçã, apelido popularizado nos anos 1920."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que estação do ano as folhas costumam cair das árvores?",
+      "options": [
+        "Outono",
+        "Inverno",
+        "Primavera",
+        "Verão"
+      ],
+      "answer": 0,
+      "fact": "Nos Estados Unidos, o outono é chamado de \"fall\" (queda), justamente por causa das folhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos zeros tem o número um milhão?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "Um bilhão tem 9 zeros e um trilhão, 12."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o símbolo @?",
+      "options": [
+        "Arroba",
+        "Asterisco",
+        "E comercial",
+        "Cerquilha"
+      ],
+      "answer": 0,
+      "fact": "Arroba também é uma antiga unidade de peso, usada até hoje no Brasil para gado: cerca de 15 kg."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos lados tem um octógono?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "A placa de PARE é octogonal em quase todo o mundo, para ser reconhecida até de costas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cartas tem um baralho comum, sem os coringas?",
+      "options": [
+        "52",
+        "54",
+        "48",
+        "40"
+      ],
+      "answer": 0,
+      "fact": "São 4 naipes com 13 cartas cada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que dia se comemora o Natal?",
+      "options": [
+        "25 de dezembro",
+        "24 de dezembro",
+        "31 de dezembro",
+        "6 de janeiro"
+      ],
+      "answer": 0,
+      "fact": "A data foi fixada pela Igreja no século IV. A Bíblia não diz em que dia Jesus nasceu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o símbolo #?",
+      "options": [
+        "Cerquilha",
+        "Arroba",
+        "Asterisco",
+        "Til"
+      ],
+      "answer": 0,
+      "fact": "Também é chamado de jogo da velha ou, nas redes sociais, de hashtag."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de lobos?",
+      "options": [
+        "Alcateia",
+        "Cardume",
+        "Manada",
+        "Revoada"
+      ],
+      "answer": 0,
+      "fact": "Cardume é de peixes, manada de bois ou elefantes e revoada, de aves voando."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de estrelas?",
+      "options": [
+        "Constelação",
+        "Galáxia",
+        "Arquipélago",
+        "Cordilheira"
+      ],
+      "answer": 0,
+      "fact": "Arquipélago é o coletivo de ilhas, e cordilheira, de montanhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos tem um século?",
+      "options": [
+        "100",
+        "10",
+        "1.000",
+        "50"
+      ],
+      "answer": 0,
+      "fact": "Uma década tem 10 anos e um milênio, mil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual número romano representa o 10?",
+      "options": [
+        "X",
+        "V",
+        "L",
+        "C"
+      ],
+      "answer": 0,
+      "fact": "No sistema romano, I = 1, V = 5, X = 10, L = 50, C = 100, D = 500 e M = 1.000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o macho da abelha?",
+      "options": [
+        "Zangão",
+        "Abelhão",
+        "Vespão",
+        "Marimbondo"
+      ],
+      "answer": 0,
+      "fact": "O zangão não tem ferrão e não produz mel. Sua função principal é fecundar a rainha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 15% de 200?",
+      "options": [
+        "30",
+        "15",
+        "20",
+        "35"
+      ],
+      "answer": 0,
+      "fact": "Truque: 10% de 200 é 20, e 5% é a metade disso, 10. Somando, 30."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o plural de \"pastel\"?",
+      "options": [
+        "Pastéis",
+        "Pastels",
+        "Pastéus",
+        "Pasteles"
+      ],
+      "answer": 0,
+      "fact": "Palavras terminadas em -el trocam o L por IS: papel vira papéis; anel, anéis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que instrumento mede a temperatura?",
+      "options": [
+        "Termômetro",
+        "Barômetro",
+        "Higrômetro",
+        "Anemômetro"
+      ],
+      "answer": 0,
+      "fact": "O barômetro mede a pressão do ar; o higrômetro, a umidade; e o anemômetro, o vento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de casamento se comemoram nas bodas de ouro?",
+      "options": [
+        "50",
+        "25",
+        "40",
+        "60"
+      ],
+      "answer": 0,
+      "fact": "Bodas de prata são 25 anos, e bodas de diamante, 60."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual número romano representa o 50?",
+      "options": [
+        "L",
+        "C",
+        "D",
+        "V"
+      ],
+      "answer": 0,
+      "fact": "L vale 50, C vale 100 e D vale 500. Por isso o ano de 1900 se escreve MCM."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Num dado comum, quanto dá a soma de duas faces opostas?",
+      "options": [
+        "7",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "O 1 fica oposto ao 6, o 2 ao 5 e o 3 ao 4: sempre somam 7."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilates tem o ouro puro?",
+      "options": [
+        "24",
+        "18",
+        "12",
+        "22"
+      ],
+      "answer": 0,
+      "fact": "O ouro 18 quilates tem 75% de ouro; o resto é liga de outros metais, que deixa a joia mais resistente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a palavra ou frase que se lê igual de trás para frente?",
+      "options": [
+        "Palíndromo",
+        "Anagrama",
+        "Acróstico",
+        "Trocadilho"
+      ],
+      "answer": 0,
+      "fact": "Exemplos: \"ovo\", \"radar\" e a frase \"Socorram-me, subi no ônibus em Marrocos\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos minutos tem um dia?",
+      "options": [
+        "1.440",
+        "1.200",
+        "2.400",
+        "1.000"
+      ],
+      "answer": 0,
+      "fact": "São 24 horas vezes 60 minutos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que a escala Richter mede?",
+      "options": [
+        "Terremotos",
+        "Ventos",
+        "Temperatura",
+        "Acidez"
+      ],
+      "answer": 0,
+      "fact": "Cada ponto a mais na escala representa cerca de 32 vezes mais energia liberada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano começou o século XXI?",
+      "options": [
+        "2001",
+        "2000",
+        "1999",
+        "2010"
+      ],
+      "answer": 0,
+      "fact": "Como não existe ano zero, o primeiro século vai do ano 1 ao 100. Por isso o século XXI começa em 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pontas tem a estrela de Davi?",
+      "options": [
+        "6",
+        "5",
+        "8",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "A estrela de Davi é formada por dois triângulos sobrepostos e aparece na bandeira de Israel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o único mamífero capaz de voar de verdade?",
+      "options": [
+        "Morcego",
+        "Esquilo-voador",
+        "Gambá",
+        "Colugo"
+      ],
+      "answer": 0,
+      "fact": "O esquilo-voador e o colugo apenas planam; o morcego bate as asas, que são membranas entre os dedos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o material natural mais duro?",
+      "options": [
+        "Diamante",
+        "Quartzo",
+        "Granito",
+        "Rubi"
+      ],
+      "answer": 0,
+      "fact": "Na escala de Mohs, que vai de 1 a 10, o diamante tem a nota máxima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a raiz quadrada de 144?",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "11"
+      ],
+      "answer": 0,
+      "fact": "12 × 12 = 144. E uma dúzia de dúzias tem até nome: grosa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que unidade mede a intensidade do som?",
+      "options": [
+        "Decibel",
+        "Hertz",
+        "Watt",
+        "Lúmen"
+      ],
+      "answer": 0,
+      "fact": "O hertz mede a frequência. Ouvir mais de 85 decibéis por muito tempo já pode prejudicar a audição."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos corações tem um polvo?",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "4",
+        "8",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "Dois bombeiam sangue para as brânquias e um para o resto do corpo. E o sangue do polvo é azul."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que animal tem impressões digitais quase idênticas às humanas?",
+      "options": [
+        "Coala",
+        "Chimpanzé",
+        "Gorila",
+        "Orangotango",
+        "Macaco-prego",
+        "Panda"
+      ],
+      "answer": 0,
+      "fact": "As digitais do coala são tão parecidas com as nossas que, em tese, poderiam confundir uma perícia."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual destas frutas é, botanicamente, uma baga?",
+      "options": [
+        "Banana",
+        "Morango",
+        "Framboesa",
+        "Amora",
+        "Cereja",
+        "Maçã"
+      ],
+      "answer": 0,
+      "fact": "Morango, framboesa e amora não são bagas: são frutos agregados. A cereja é uma drupa, e a maçã, um pomo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a única letra que não aparece no nome de nenhum estado dos EUA?",
+      "options": [
+        "Q",
+        "Z",
+        "X",
+        "J",
+        "K",
+        "W"
+      ],
+      "answer": 0,
+      "fact": "O J só aparece em New Jersey, e o Z, só em Arizona."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Contando todos os tamanhos, quantos quadrados existem num tabuleiro de xadrez?",
+      "options": [
+        "204",
+        "64",
+        "128",
+        "100",
+        "196",
+        "256"
+      ],
+      "answer": 0,
+      "fact": "Somando os quadrados de 1×1 até 8×8: 64 + 49 + 36 + 25 + 16 + 9 + 4 + 1 = 204."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "\"Cáfila\" é o coletivo de qual animal?",
+      "options": [
+        "Camelos",
+        "Cães",
+        "Lobos",
+        "Corvos",
+        "Abelhas",
+        "Cabras"
+      ],
+      "answer": 0,
+      "fact": "Cáfila é de camelos, vara é de porcos e alcateia, de lobos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos minutos tem uma semana?",
+      "options": [
+        "10.080",
+        "8.640",
+        "1.440",
+        "10.800",
+        "12.000",
+        "7.200"
+      ],
+      "answer": 0,
+      "fact": "São 7 dias × 24 horas × 60 minutos."
+    }
+  ]
+}

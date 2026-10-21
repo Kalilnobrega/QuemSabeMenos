@@ -1,0 +1,775 @@
+{
+  "theme": "Esportes",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores um time de futebol tem em campo?",
+      "options": [
+        "11",
+        "10",
+        "9",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "São 10 jogadores de linha e 1 goleiro. Se um time ficar com menos de 7, a partida é encerrada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se usa raquete e peteca?",
+      "options": [
+        "Badminton",
+        "Tênis",
+        "Squash",
+        "Pingue-pongue"
+      ],
+      "answer": 0,
+      "fact": "Numa cortada, a peteca pode passar de 400 km/h: é o golpe mais rápido entre os esportes de raquete."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual país sediou a Copa do Mundo de 2014?",
+      "options": [
+        "Brasil",
+        "Alemanha",
+        "Rússia",
+        "África do Sul"
+      ],
+      "answer": 0,
+      "fact": "Foi a segunda Copa no Brasil; a primeira foi em 1950. Em 2014, a campeã foi a Alemanha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis tem a bandeira olímpica?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Os anéis representam os continentes unidos pelo esporte. Pelo menos uma das cores aparece na bandeira de todos os países."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte Ayrton Senna foi campeão mundial?",
+      "options": [
+        "Fórmula 1",
+        "Tênis",
+        "Futebol",
+        "Vôlei"
+      ],
+      "answer": 0,
+      "fact": "Senna foi tricampeão mundial de Fórmula 1, em 1988, 1990 e 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual jogador brasileiro é chamado de \"Rei do Futebol\"?",
+      "options": [
+        "Pelé",
+        "Zico",
+        "Romário",
+        "Ronaldo"
+      ],
+      "answer": 0,
+      "fact": "Pelé é o único jogador tricampeão do mundo: 1958, 1962 e 1970."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos jogadores um time de vôlei tem em quadra?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "No vôlei, o time faz rodízio de posições cada vez que recupera o saque."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país nasceram os Jogos Olímpicos?",
+      "options": [
+        "Grécia",
+        "Itália",
+        "França",
+        "Egito"
+      ],
+      "answer": 0,
+      "fact": "Os Jogos antigos aconteciam em Olímpia, em homenagem a Zeus. A versão moderna começou em Atenas, em 1896."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual seleção ganhou a Copa do Mundo de 2022?",
+      "options": [
+        "Argentina",
+        "França",
+        "Brasil",
+        "Croácia"
+      ],
+      "answer": 0,
+      "fact": "A Argentina venceu a França nos pênaltis, depois de um 3 a 3 eletrizante. Foi o terceiro título argentino."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Wimbledon é um torneio de qual esporte?",
+      "options": [
+        "Tênis",
+        "Golfe",
+        "Polo",
+        "Críquete"
+      ],
+      "answer": 0,
+      "fact": "Wimbledon, de 1877, é o torneio de tênis mais antigo do mundo e exige que os jogadores usem branco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a distância oficial de uma maratona?",
+      "options": [
+        "42,195 km",
+        "40 km",
+        "42 km",
+        "45,5 km"
+      ],
+      "answer": 0,
+      "fact": "A distância foi fixada a partir do percurso da maratona da Olimpíada de Londres, em 1908."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o maior medalhista olímpico da história?",
+      "options": [
+        "Michael Phelps",
+        "Usain Bolt",
+        "Carl Lewis",
+        "Larisa Latynina"
+      ],
+      "answer": 0,
+      "fact": "O nadador americano conquistou 28 medalhas olímpicas, 23 delas de ouro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Brasil ganhou sua primeira Copa do Mundo?",
+      "options": [
+        "1958",
+        "1962",
+        "1970",
+        "1950"
+      ],
+      "answer": 0,
+      "fact": "A Copa de 1958 foi na Suécia, e um garoto de 17 anos chamado Pelé brilhou na final."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogadores um time de rúgbi union tem em campo?",
+      "options": [
+        "15",
+        "13",
+        "11",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "O rúgbi union tem 15 jogadores; o rúgbi league, 13; e o rúgbi de sete, como o nome diz, 7."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país o vôlei foi inventado?",
+      "options": [
+        "Estados Unidos",
+        "Brasil",
+        "Japão",
+        "Rússia"
+      ],
+      "answer": 0,
+      "fact": "O vôlei foi criado em 1895 por William Morgan, professor de educação física em Massachusetts, como alternativa mais leve ao basquete."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores um time de basquete tem em quadra?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "O basquete foi inventado em 1891 por James Naismith, que usou cestos de pêssego como cestas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se faz um strike derrubando todos os pinos?",
+      "options": [
+        "Boliche",
+        "Golfe",
+        "Sinuca",
+        "Bocha"
+      ],
+      "answer": 0,
+      "fact": "Strike é derrubar os 10 pinos na primeira bola. Três strikes seguidos são chamados de \"turkey\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se usa um taco para acertar a bola num buraco?",
+      "options": [
+        "Golfe",
+        "Hóquei",
+        "Beisebol",
+        "Críquete"
+      ],
+      "answer": 0,
+      "fact": "O golfe já foi jogado na Lua: o astronauta Alan Shepard deu tacadas lá em 1971."
+    },
+    {
+      "difficulty": "easy",
+      "text": "No futebol, de que cor é o cartão que expulsa um jogador?",
+      "options": [
+        "Vermelho",
+        "Amarelo",
+        "Azul",
+        "Verde"
+      ],
+      "answer": 0,
+      "fact": "Os cartões estrearam na Copa de 1970, inspirados nas cores do semáforo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte Michael Jordan ficou famoso?",
+      "options": [
+        "Basquete",
+        "Beisebol",
+        "Futebol americano",
+        "Golfe"
+      ],
+      "answer": 0,
+      "fact": "Jordan chegou a largar o basquete para jogar beisebol, mas voltou e ganhou mais três títulos da NBA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o esporte de Serena Williams?",
+      "options": [
+        "Tênis",
+        "Golfe",
+        "Atletismo",
+        "Vôlei"
+      ],
+      "answer": 0,
+      "fact": "Serena ganhou 23 títulos de Grand Slam em simples, recorde da Era Aberta entre as mulheres."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se disputa o Super Bowl?",
+      "options": [
+        "Futebol americano",
+        "Basquete",
+        "Beisebol",
+        "Hóquei"
+      ],
+      "answer": 0,
+      "fact": "É o evento esportivo mais assistido dos Estados Unidos, famoso também pelo show do intervalo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país o judô foi criado?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Brasil"
+      ],
+      "answer": 0,
+      "fact": "O judô foi criado por Jigoro Kano em 1882. O nome significa \"caminho suave\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte existe o nocaute?",
+      "options": [
+        "Boxe",
+        "Natação",
+        "Tênis",
+        "Futebol"
+      ],
+      "answer": 0,
+      "fact": "No boxe, o lutador que cai tem até 10 segundos para se levantar antes de ser declarado nocauteado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores um time de futsal tem em quadra?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "O futsal foi criado no Uruguai, em 1930, e o Brasil é o maior vencedor da Copa do Mundo da modalidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o esporte de Usain Bolt?",
+      "options": [
+        "Atletismo",
+        "Natação",
+        "Ciclismo",
+        "Futebol"
+      ],
+      "answer": 0,
+      "fact": "Em 2009, Bolt correu os 100 metros em 9,58 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que esporte se pratica em pé numa prancha, nas ondas?",
+      "options": [
+        "Surfe",
+        "Remo",
+        "Vela",
+        "Esqui aquático"
+      ],
+      "answer": 0,
+      "fact": "O surfe estreou nas Olimpíadas nos Jogos de Tóquio, e o primeiro campeão olímpico foi o brasileiro Italo Ferreira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores um time de handebol tem em quadra?",
+      "options": [
+        "7",
+        "6",
+        "5",
+        "11"
+      ],
+      "answer": 0,
+      "fact": "São 6 jogadores de linha e 1 goleiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se luta sobre um tatame?",
+      "options": [
+        "Judô",
+        "Natação",
+        "Tênis",
+        "Basquete"
+      ],
+      "answer": 0,
+      "fact": "Tatame é a palavra japonesa para os tapetes de palha das casas tradicionais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos sets um time precisa vencer para ganhar uma partida de vôlei?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "A partida é melhor de cinco sets. O quinto, o tie-break, vai só até 15 pontos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que cidade foram as Olimpíadas de 2016?",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Londres",
+        "Tóquio"
+      ],
+      "answer": 0,
+      "fact": "Foram os primeiros Jogos Olímpicos realizados na América do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos vale um touchdown no futebol americano?",
+      "options": [
+        "6",
+        "3",
+        "7",
+        "2"
+      ],
+      "answer": 0,
+      "fact": "Depois do touchdown, o time ainda pode tentar 1 ou 2 pontos extras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No tênis, como se chama o saque que o adversário nem consegue tocar?",
+      "options": [
+        "Ace",
+        "Smash",
+        "Lob",
+        "Voleio"
+      ],
+      "answer": 0,
+      "fact": "O termo também é usado no vôlei. Smash é a cortada; lob, a bola alta por cima do adversário."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que piloto brasileiro foi campeão de Fórmula 1 em 1972 e 1974?",
+      "options": [
+        "Emerson Fittipaldi",
+        "Nelson Piquet",
+        "Ayrton Senna",
+        "Rubens Barrichello"
+      ],
+      "answer": 0,
+      "fact": "Emerson foi o primeiro brasileiro campeão de F1. Depois vieram Piquet e Senna, ambos tricampeões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Por qual time Michael Jordan ganhou seus títulos da NBA?",
+      "options": [
+        "Chicago Bulls",
+        "Los Angeles Lakers",
+        "Boston Celtics",
+        "Washington Wizards"
+      ],
+      "answer": 0,
+      "fact": "Com os Bulls, Jordan ganhou 6 títulos nos anos 1990. Ele também jogou nos Wizards, já no fim da carreira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos tem o tempo regulamentar de um jogo da NBA?",
+      "options": [
+        "48",
+        "40",
+        "60",
+        "90"
+      ],
+      "answer": 0,
+      "fact": "São quatro quartos de 12 minutos. Nos jogos da FIBA, os quartos têm 10."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte o brasileiro Gustavo Kuerten foi número 1 do mundo?",
+      "options": [
+        "Tênis",
+        "Surfe",
+        "Vôlei de praia",
+        "Skate"
+      ],
+      "answer": 0,
+      "fact": "Guga ganhou Roland Garros três vezes e ficou famoso por desenhar um coração no saibro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que país sediou a primeira Copa do Mundo, em 1930?",
+      "options": [
+        "Uruguai",
+        "Brasil",
+        "Itália",
+        "França"
+      ],
+      "answer": 0,
+      "fact": "O Uruguai também foi o campeão, vencendo a Argentina na final."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos jogadores um time de polo aquático tem na água?",
+      "options": [
+        "7",
+        "6",
+        "5",
+        "11"
+      ],
+      "answer": 0,
+      "fact": "São 6 jogadores de linha e 1 goleiro. Quem está na água não pode encostar no fundo da piscina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte Rebeca Andrade é campeã olímpica?",
+      "options": [
+        "Ginástica artística",
+        "Atletismo",
+        "Natação",
+        "Judô"
+      ],
+      "answer": 0,
+      "fact": "Em Paris 2024, Rebeca se tornou a maior medalhista olímpica do Brasil, com 6 medalhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa um hat-trick no futebol?",
+      "options": [
+        "Três gols do mesmo jogador numa partida",
+        "Um gol de bicicleta",
+        "Um gol olímpico",
+        "Três gols de cabeça"
+      ],
+      "answer": 0,
+      "fact": "O termo veio do críquete, em que o jogador ganhava um chapéu por eliminar três adversários seguidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que esporte o brasileiro Oscar Schmidt jogava?",
+      "options": [
+        "Basquete",
+        "Vôlei",
+        "Handebol",
+        "Futebol"
+      ],
+      "answer": 0,
+      "fact": "O Mão Santa é o maior pontuador da história do basquete olímpico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte se faz um pit stop?",
+      "options": [
+        "Automobilismo",
+        "Ciclismo",
+        "Vela",
+        "Atletismo"
+      ],
+      "answer": 0,
+      "fact": "Na Fórmula 1, as equipes trocam os quatro pneus em menos de 3 segundos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que é um gol olímpico?",
+      "options": [
+        "Gol direto de escanteio",
+        "Gol do meio de campo",
+        "Gol de bicicleta",
+        "Gol de pênalti numa final"
+      ],
+      "answer": 0,
+      "fact": "O nome surgiu em 1924, quando a Argentina fez um gol assim contra o Uruguai, então campeão olímpico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção venceu a Copa de 1950 no Maracanã?",
+      "options": [
+        "Uruguai",
+        "Brasil",
+        "Itália",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "A derrota do Brasil na partida decisiva ficou conhecida como Maracanaço."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos buracos tem um campo de golfe oficial?",
+      "options": [
+        "18",
+        "9",
+        "12",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "O padrão de 18 buracos vem do campo de St. Andrews, na Escócia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nadador brasileiro foi campeão olímpico dos 50 m livre em 2008?",
+      "options": [
+        "César Cielo",
+        "Gustavo Borges",
+        "Thiago Pereira",
+        "Bruno Fratus"
+      ],
+      "answer": 0,
+      "fact": "No ano seguinte, Cielo bateu os recordes mundiais dos 50 e dos 100 metros livre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que altura do chão fica a cesta de basquete?",
+      "options": [
+        "3,05 m",
+        "2,50 m",
+        "3,50 m",
+        "2,80 m"
+      ],
+      "answer": 0,
+      "fact": "São 10 pés, a altura em que Naismith pregou os cestos num ginásio, em 1891."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes o Brasil ganhou o ouro olímpico no futebol masculino?",
+      "options": [
+        "2",
+        "0",
+        "1",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "O primeiro ouro veio no Rio, em 2016, e o segundo nos Jogos de Tóquio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tenista suíço ganhou Wimbledon 8 vezes?",
+      "options": [
+        "Roger Federer",
+        "Stan Wawrinka",
+        "Rafael Nadal",
+        "Novak Djokovic"
+      ],
+      "answer": 0,
+      "fact": "Federer tem o recorde masculino de títulos em Wimbledon."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogadores um time de beisebol tem em campo na defesa?",
+      "options": [
+        "9",
+        "11",
+        "7",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Uma partida tem 9 entradas e não tem limite de tempo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que skatista brasileira ganhou prata olímpica aos 13 anos?",
+      "options": [
+        "Rayssa Leal",
+        "Letícia Bufoni",
+        "Pâmela Rosa",
+        "Dora Varella"
+      ],
+      "answer": 0,
+      "fact": "Em Tóquio, Rayssa se tornou a medalhista mais jovem da história do Brasil. Em Paris 2024, levou o bronze."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o comprimento de uma piscina olímpica?",
+      "options": [
+        "50 m",
+        "25 m",
+        "100 m",
+        "40 m"
+      ],
+      "answer": 0,
+      "fact": "Uma piscina olímpica tem cerca de 2,5 milhões de litros de água."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o nome oficial do Maracanã?",
+      "options": [
+        "Estádio Jornalista Mário Filho",
+        "Estádio Magalhães Pinto",
+        "Estádio Cícero Pompeu de Toledo",
+        "Estádio Mané Garrincha"
+      ],
+      "answer": 0,
+      "fact": "Mário Filho fez campanha pela construção do estádio. O Mineirão é o Magalhães Pinto, e o Morumbi, o Cícero Pompeu de Toledo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que esporte se disputa a Stanley Cup?",
+      "options": [
+        "Hóquei no gelo",
+        "Beisebol",
+        "Basquete",
+        "Futebol americano"
+      ],
+      "answer": 0,
+      "fact": "É um dos troféus mais antigos do esporte, de 1893, e os campeões têm os nomes gravados nele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção venceu a primeira Copa do Mundo feminina, em 1991?",
+      "options": [
+        "Estados Unidos",
+        "Noruega",
+        "China",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "Foi na China. A brasileira Marta é a maior artilheira da história das Copas, entre homens e mulheres, com 17 gols."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o vôlei virou esporte olímpico?",
+      "options": [
+        "1964",
+        "1948",
+        "1956",
+        "1972",
+        "1980",
+        "1936"
+      ],
+      "answer": 0,
+      "fact": "Estreou nos Jogos de Tóquio, em 1964. O vôlei de praia só entrou em 1996."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o diâmetro interno do aro da cesta de basquete?",
+      "options": [
+        "45 cm",
+        "38 cm",
+        "50 cm",
+        "42 cm",
+        "55 cm",
+        "40 cm"
+      ],
+      "answer": 0,
+      "fact": "A bola tem cerca de 24 cm de diâmetro, então quase cabem duas lado a lado no aro."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quem é a única pessoa a ganhar os 4 Grand Slams e o ouro olímpico no mesmo ano?",
+      "options": [
+        "Steffi Graf",
+        "Serena Williams",
+        "Martina Navratilova",
+        "Roger Federer",
+        "Rafael Nadal",
+        "Novak Djokovic"
+      ],
+      "answer": 0,
+      "fact": "A alemã Steffi Graf conseguiu o chamado Golden Slam em 1988."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos jogadores cada time tem em campo no críquete?",
+      "options": [
+        "11",
+        "9",
+        "13",
+        "15",
+        "7",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Uma partida de teste de críquete pode durar até cinco dias."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a distância da marca do pênalti até a linha do gol?",
+      "options": [
+        "11 m",
+        "9,15 m",
+        "12 m",
+        "10 m",
+        "16,5 m",
+        "7,32 m"
+      ],
+      "answer": 0,
+      "fact": "9,15 m é a distância da barreira, 16,5 m é o comprimento da grande área e 7,32 m, a largura do gol."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos jogadores cada time tem em campo no polo a cavalo?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "A partida é dividida em períodos chamados chukkers, e os cavalos são trocados ao longo do jogo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quem marcou o primeiro gol da história das Copas do Mundo?",
+      "options": [
+        "Lucien Laurent",
+        "Guillermo Stábile",
+        "Pedro Cea",
+        "Héctor Castro",
+        "Bert Patenaude",
+        "Preguinho"
+      ],
+      "answer": 0,
+      "fact": "O francês marcou na vitória por 4 a 1 sobre o México, em 1930. Preguinho fez o primeiro gol do Brasil em Copas."
+    }
+  ]
+}

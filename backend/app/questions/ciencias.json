@@ -1,0 +1,775 @@
+{
+  "theme": "Ciências",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior planeta do Sistema Solar?",
+      "options": [
+        "Júpiter",
+        "Saturno",
+        "Netuno",
+        "Terra"
+      ],
+      "answer": 0,
+      "fact": "Júpiter é tão grande que caberiam mais de 1.300 Terras dentro dele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que gás as plantas absorvem para fazer fotossíntese?",
+      "options": [
+        "Gás carbônico",
+        "Oxigênio",
+        "Nitrogênio",
+        "Hélio"
+      ],
+      "answer": 0,
+      "fact": "As plantas usam gás carbônico, água e luz para produzir açúcar, e liberam o oxigênio que a gente respira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura a água ferve ao nível do mar?",
+      "options": [
+        "100 °C",
+        "90 °C",
+        "80 °C",
+        "120 °C"
+      ],
+      "answer": 0,
+      "fact": "Em lugares altos a água ferve antes: em La Paz, na Bolívia, por volta de 88 °C, porque a pressão do ar é menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual órgão bombeia o sangue pelo corpo?",
+      "options": [
+        "Coração",
+        "Pulmão",
+        "Fígado",
+        "Rim"
+      ],
+      "answer": 0,
+      "fact": "O coração bate cerca de 100 mil vezes por dia, sem descanso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual planeta é conhecido como o planeta vermelho?",
+      "options": [
+        "Marte",
+        "Vênus",
+        "Mercúrio",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "A cor vem do óxido de ferro, basicamente ferrugem, que cobre o solo de Marte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos ossos tem o corpo humano adulto?",
+      "options": [
+        "206",
+        "186",
+        "226",
+        "306"
+      ],
+      "answer": 0,
+      "fact": "Bebês nascem com cerca de 300 ossos, e vários se fundem com o crescimento. O menor de todos é o estribo, no ouvido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o símbolo químico do ouro?",
+      "options": [
+        "Au",
+        "Ag",
+        "Go",
+        "Or"
+      ],
+      "answer": 0,
+      "fact": "Au vem do latim \"aurum\". A prata é Ag, de \"argentum\", palavra que também deu nome à Argentina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade aproximada da luz?",
+      "options": [
+        "300 mil km/s",
+        "30 mil km/s",
+        "3 mil km/s",
+        "3 milhões de km/s"
+      ],
+      "answer": 0,
+      "fact": "A luz do Sol leva cerca de 8 minutos para chegar até a Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o planeta mais próximo do Sol?",
+      "options": [
+        "Mercúrio",
+        "Vênus",
+        "Marte",
+        "Terra"
+      ],
+      "answer": 0,
+      "fact": "Mesmo sendo o mais próximo do Sol, Mercúrio não é o planeta mais quente: é Vênus, cuja atmosfera densa retém o calor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior órgão do corpo humano?",
+      "options": [
+        "Pele",
+        "Fígado",
+        "Intestino",
+        "Pulmão"
+      ],
+      "answer": 0,
+      "fact": "A pele de um adulto pesa alguns quilos e se renova o tempo todo: perdemos milhões de células por dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o elemento químico mais abundante no universo?",
+      "options": [
+        "Hidrogênio",
+        "Hélio",
+        "Oxigênio",
+        "Carbono"
+      ],
+      "answer": 0,
+      "fact": "Cerca de três quartos da matéria comum do universo é hidrogênio. É o combustível das estrelas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o símbolo químico do sódio?",
+      "options": [
+        "Na",
+        "So",
+        "Sd",
+        "S"
+      ],
+      "answer": 0,
+      "fact": "Na vem do latim \"natrium\". O sal de cozinha é cloreto de sódio: NaCl."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cromossomos tem uma célula humana comum?",
+      "options": [
+        "46",
+        "23",
+        "48",
+        "44"
+      ],
+      "answer": 0,
+      "fact": "São 23 pares: metade vem da mãe e metade do pai. Óvulos e espermatozoides têm só 23."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o pH da água pura a 25 °C?",
+      "options": [
+        "7",
+        "0",
+        "14",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "pH 7 é neutro. Abaixo disso é ácido (o limão fica perto de 2); acima, básico, como a água sanitária."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a unidade de medida de força no Sistema Internacional?",
+      "options": [
+        "Newton",
+        "Joule",
+        "Watt",
+        "Pascal"
+      ],
+      "answer": 0,
+      "fact": "A unidade homenageia Isaac Newton. Joule mede energia, watt mede potência e pascal, pressão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos planetas tem o Sistema Solar?",
+      "options": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Plutão deixou de ser considerado planeta em 2006 e passou a ser um planeta anão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a estrela mais próxima da Terra?",
+      "options": [
+        "Sol",
+        "Sirius",
+        "Alfa Centauri",
+        "Estrela Polar"
+      ],
+      "answer": 0,
+      "fact": "Depois do Sol, a estrela mais próxima é Proxima Centauri, a pouco mais de 4 anos-luz."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que órgão usamos para respirar?",
+      "options": [
+        "Pulmão",
+        "Fígado",
+        "Estômago",
+        "Rim"
+      ],
+      "answer": 0,
+      "fact": "Um adulto respira mais de 20 mil vezes por dia, sem nem perceber."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais é um mamífero?",
+      "options": [
+        "Golfinho",
+        "Tubarão",
+        "Salmão",
+        "Polvo"
+      ],
+      "answer": 0,
+      "fact": "Golfinhos respiram ar, mamam quando filhotes e têm sangue quente, como nós."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a fórmula química da água?",
+      "options": [
+        "H2O",
+        "CO2",
+        "O2",
+        "NaCl"
+      ],
+      "answer": 0,
+      "fact": "Cada molécula de água tem dois átomos de hidrogênio e um de oxigênio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Tradicionalmente, quantos sentidos tem o ser humano?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Visão, audição, olfato, paladar e tato. A ciência hoje também fala de outros, como o equilíbrio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que força nos mantém presos ao chão?",
+      "options": [
+        "Gravidade",
+        "Magnetismo",
+        "Atrito",
+        "Eletricidade"
+      ],
+      "answer": 0,
+      "fact": "Na Lua, a gravidade é cerca de 1/6 da Terra: quem pesa 60 kg se sentiria com 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a transformação da lagarta em borboleta?",
+      "options": [
+        "Metamorfose",
+        "Fotossíntese",
+        "Mitose",
+        "Evolução"
+      ],
+      "answer": 0,
+      "fact": "Dentro do casulo, o corpo da lagarta praticamente se desmancha e se reorganiza."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que planeta tem anéis bem visíveis?",
+      "options": [
+        "Saturno",
+        "Marte",
+        "Vênus",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Os anéis de Saturno são formados por bilhões de pedaços de gelo e rocha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que gás precisamos respirar para viver?",
+      "options": [
+        "Oxigênio",
+        "Gás carbônico",
+        "Hélio",
+        "Nitrogênio"
+      ],
+      "answer": 0,
+      "fact": "Plantas e algas, inclusive as dos oceanos, produzem o oxigênio que respiramos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal é famoso por mudar de cor?",
+      "options": [
+        "Camaleão",
+        "Iguana",
+        "Sapo",
+        "Lagartixa"
+      ],
+      "answer": 0,
+      "fact": "O camaleão muda de cor mais para se comunicar e controlar a temperatura do que para se camuflar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte da planta fica embaixo da terra e absorve água?",
+      "options": [
+        "Raiz",
+        "Folha",
+        "Caule",
+        "Flor"
+      ],
+      "answer": 0,
+      "fact": "Algumas árvores têm raízes que se espalham por uma área maior que a da própria copa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o terceiro planeta a partir do Sol?",
+      "options": [
+        "Terra",
+        "Marte",
+        "Vênus",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "A Terra fica a cerca de 150 milhões de km do Sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamam os animais que comem só plantas?",
+      "options": [
+        "Herbívoros",
+        "Carnívoros",
+        "Onívoros",
+        "Insetívoros"
+      ],
+      "answer": 0,
+      "fact": "Seres humanos são onívoros: comemos plantas e animais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Há quanto tempo os dinossauros foram extintos, aproximadamente?",
+      "options": [
+        "66 milhões de anos",
+        "10 mil anos",
+        "1 milhão de anos",
+        "1 bilhão de anos"
+      ],
+      "answer": 0,
+      "fact": "A explicação mais aceita é a queda de um asteroide na região do atual México."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior osso do corpo humano?",
+      "options": [
+        "Fêmur",
+        "Tíbia",
+        "Úmero",
+        "Costela"
+      ],
+      "answer": 0,
+      "fact": "O fêmur, na coxa, é tão resistente que aguenta várias vezes o peso do corpo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o símbolo químico do ferro?",
+      "options": [
+        "Fe",
+        "Fr",
+        "Ir",
+        "F"
+      ],
+      "answer": 0,
+      "fact": "Fe vem do latim \"ferrum\". É o ferro presente na hemoglobina que deixa o sangue vermelho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dentes tem um adulto, contando os sisos?",
+      "options": [
+        "32",
+        "28",
+        "30",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "Os sisos costumam nascer entre os 17 e os 25 anos, e muita gente nem tem todos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cientista propôs a teoria da evolução por seleção natural?",
+      "options": [
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Louis Pasteur",
+        "Isaac Newton"
+      ],
+      "answer": 0,
+      "fact": "Darwin reuniu boa parte das ideias numa viagem de cinco anos no navio Beagle, que passou pelo Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem descobriu a penicilina?",
+      "options": [
+        "Alexander Fleming",
+        "Louis Pasteur",
+        "Marie Curie",
+        "Edward Jenner"
+      ],
+      "answer": 0,
+      "fact": "Fleming a descobriu por acaso em 1928, ao ver um fungo matando bactérias numa placa esquecida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o gás mais abundante na atmosfera da Terra?",
+      "options": [
+        "Nitrogênio",
+        "Oxigênio",
+        "Gás carbônico",
+        "Argônio"
+      ],
+      "answer": 0,
+      "fact": "O nitrogênio forma cerca de 78% do ar; o oxigênio, uns 21%."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura normal do corpo humano?",
+      "options": [
+        "Cerca de 36,5 °C",
+        "Cerca de 34 °C",
+        "Cerca de 39 °C",
+        "Cerca de 40,5 °C"
+      ],
+      "answer": 0,
+      "fact": "Acima de 37,8 °C, em geral, já se considera febre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cavidades tem o coração humano?",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "São dois átrios e dois ventrículos. O lado direito manda sangue aos pulmões; o esquerdo, ao resto do corpo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a unidade de medida da corrente elétrica?",
+      "options": [
+        "Ampere",
+        "Volt",
+        "Ohm",
+        "Watt"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia o físico francês André-Marie Ampère."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior órgão interno do corpo humano?",
+      "options": [
+        "Fígado",
+        "Pulmão",
+        "Coração",
+        "Intestino"
+      ],
+      "answer": 0,
+      "fact": "O fígado faz centenas de funções e consegue se regenerar mesmo depois de perder parte do tecido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que metal é líquido à temperatura ambiente?",
+      "options": [
+        "Mercúrio",
+        "Chumbo",
+        "Alumínio",
+        "Estanho"
+      ],
+      "answer": 0,
+      "fact": "Por ser tóxico, o mercúrio foi sendo retirado dos termômetros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que vitamina o corpo produz com a luz do sol?",
+      "options": [
+        "Vitamina D",
+        "Vitamina C",
+        "Vitamina A",
+        "Vitamina B12"
+      ],
+      "answer": 0,
+      "fact": "A vitamina D ajuda o corpo a absorver cálcio e fortalecer os ossos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem criou a teoria da relatividade?",
+      "options": [
+        "Albert Einstein",
+        "Isaac Newton",
+        "Galileu Galilei",
+        "Stephen Hawking"
+      ],
+      "answer": 0,
+      "fact": "Einstein publicou a relatividade restrita em 1905 e a geral em 1915. A equação mais famosa é E = mc²."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que planeta gira \"deitado\", com o eixo quase paralelo à órbita?",
+      "options": [
+        "Urano",
+        "Netuno",
+        "Saturno",
+        "Vênus"
+      ],
+      "answer": 0,
+      "fact": "Provavelmente por causa de uma colisão gigante no passado. Cada polo passa cerca de 42 anos de dia e 42 de noite."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o símbolo químico do potássio?",
+      "options": [
+        "K",
+        "P",
+        "Po",
+        "Pt"
+      ],
+      "answer": 0,
+      "fact": "K vem do latim \"kalium\". A banana é famosa por ser rica em potássio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos elementos químicos são conhecidos hoje?",
+      "options": [
+        "118",
+        "92",
+        "108",
+        "150"
+      ],
+      "answer": 0,
+      "fact": "Os quatro últimos receberam nome em 2016. Cerca de 90 deles existem naturalmente na Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a velocidade aproximada do som no ar?",
+      "options": [
+        "343 m/s",
+        "34 m/s",
+        "3.430 m/s",
+        "30.000 m/s"
+      ],
+      "answer": 0,
+      "fact": "Dá para estimar a distância de um raio: cada 3 segundos entre o clarão e o trovão equivalem a cerca de 1 km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem descobriu os elementos polônio e rádio?",
+      "options": [
+        "Marie Curie",
+        "Dmitri Mendeleiev",
+        "Rosalind Franklin",
+        "Lise Meitner"
+      ],
+      "answer": 0,
+      "fact": "Marie Curie foi a primeira pessoa a ganhar dois prêmios Nobel, em Física e em Química."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que parte do cérebro controla o equilíbrio e a coordenação?",
+      "options": [
+        "Cerebelo",
+        "Hipocampo",
+        "Córtex frontal",
+        "Tálamo"
+      ],
+      "answer": 0,
+      "fact": "O álcool afeta o cerebelo, e por isso deixa a pessoa cambaleando."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tipo sanguíneo é considerado doador universal?",
+      "options": [
+        "O negativo",
+        "AB positivo",
+        "A positivo",
+        "B negativo"
+      ],
+      "answer": 0,
+      "fact": "Já o AB positivo é o receptor universal de hemácias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que planeta fica o maior vulcão conhecido do Sistema Solar?",
+      "options": [
+        "Marte",
+        "Vênus",
+        "Terra",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "O Monte Olimpo, em Marte, tem cerca de 22 km de altura, quase três vezes o Everest."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que camada da atmosfera protege a Terra dos raios ultravioleta?",
+      "options": [
+        "Camada de ozônio",
+        "Ionosfera",
+        "Troposfera",
+        "Magnetosfera"
+      ],
+      "answer": 0,
+      "fact": "O buraco na camada de ozônio está se recuperando desde que o Protocolo de Montreal, de 1987, proibiu os CFCs."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem organizou a primeira tabela periódica dos elementos?",
+      "options": [
+        "Dmitri Mendeleiev",
+        "Antoine Lavoisier",
+        "John Dalton",
+        "Niels Bohr"
+      ],
+      "answer": 0,
+      "fact": "Mendeleiev deixou espaços para elementos ainda desconhecidos e previu suas propriedades."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual partícula do átomo tem carga negativa?",
+      "options": [
+        "Elétron",
+        "Próton",
+        "Nêutron",
+        "Fóton"
+      ],
+      "answer": 0,
+      "fact": "O elétron é cerca de 1.800 vezes mais leve que o próton."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o animal terrestre mais pesado?",
+      "options": [
+        "Elefante-africano",
+        "Hipopótamo",
+        "Rinoceronte-branco",
+        "Girafa"
+      ],
+      "answer": 0,
+      "fact": "Um elefante-africano macho pode passar de 6 toneladas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que corresponde ao zero na escala Kelvin?",
+      "options": [
+        "Zero absoluto",
+        "Ponto de fusão do gelo",
+        "Temperatura ambiente",
+        "Ponto de ebulição da água"
+      ],
+      "answer": 0,
+      "fact": "O zero absoluto, −273,15 °C, é a menor temperatura possível."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas vértebras tem o pescoço de uma girafa?",
+      "options": [
+        "7",
+        "14",
+        "22",
+        "32",
+        "12",
+        "18"
+      ],
+      "answer": 0,
+      "fact": "É o mesmo número do pescoço humano. As vértebras da girafa só são muito maiores."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que elemento químico tem o símbolo W?",
+      "options": [
+        "Tungstênio",
+        "Vanádio",
+        "Ósmio",
+        "Xenônio",
+        "Ítrio",
+        "Bário"
+      ],
+      "answer": 0,
+      "fact": "W vem de \"wolfram\", outro nome do tungstênio, o metal com o maior ponto de fusão."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto tempo a luz refletida pela Lua leva para chegar à Terra?",
+      "options": [
+        "Cerca de 1,3 segundo",
+        "Cerca de 8 minutos",
+        "Cerca de 0,1 segundo",
+        "Cerca de 13 segundos",
+        "Cerca de 1 minuto",
+        "Cerca de 4 segundos"
+      ],
+      "answer": 0,
+      "fact": "A Lua fica a cerca de 384 mil km da Terra. Já a luz do Sol leva uns 8 minutos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que planeta uma volta em torno do próprio eixo demora mais que uma volta ao redor do Sol?",
+      "options": [
+        "Vênus",
+        "Mercúrio",
+        "Marte",
+        "Netuno",
+        "Urano",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "Vênus leva uns 243 dias terrestres para girar em torno de si e só 225 para dar a volta no Sol. E ainda gira ao contrário."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o gás nobre mais abundante na atmosfera da Terra?",
+      "options": [
+        "Argônio",
+        "Neônio",
+        "Hélio",
+        "Criptônio",
+        "Xenônio",
+        "Radônio"
+      ],
+      "answer": 0,
+      "fact": "O argônio forma quase 1% do ar, bem mais que o gás carbônico."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual planeta do Sistema Solar não tem nome de deus greco-romano?",
+      "options": [
+        "Terra",
+        "Urano",
+        "Netuno",
+        "Marte",
+        "Saturno",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Todos os outros homenageiam deuses. Urano, por exemplo, era o deus grego do céu."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a velocidade de escape da Terra?",
+      "options": [
+        "Cerca de 11,2 km/s",
+        "Cerca de 7,9 km/s",
+        "Cerca de 3 km/s",
+        "Cerca de 25 km/s",
+        "Cerca de 42 km/s",
+        "Cerca de 1,2 km/s"
+      ],
+      "answer": 0,
+      "fact": "É a velocidade mínima para escapar da gravidade sem propulsão. Na Lua, bastam cerca de 2,4 km/s."
+    }
+  ]
+}
