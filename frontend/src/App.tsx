@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import logo from './assets/logo.png'
+import { Game } from './components/Game'
 import { Lobby } from './components/Lobby'
 import { ProfileForm } from './components/ProfileForm'
 import { loadSession, saveSession } from './lib/storage'
@@ -20,7 +21,8 @@ function setUrl(path: string) {
 }
 
 export default function App() {
-  const { connected, rejoining, room, playerId, create, join, leave, start } = useRoom()
+  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, setRounds } = useRoom()
+  const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
 
   useEffect(() => {
@@ -34,8 +36,10 @@ export default function App() {
   }
 
   let content
-  if (room) {
-    content = <Lobby room={room} playerId={playerId} onLeave={leaveRoom} onStart={start} />
+  if (snapshot && room?.game) {
+    content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onPlayAgain={playAgain} onLeave={leaveRoom} />
+  } else if (room) {
+    content = <Lobby room={room} playerId={playerId} onLeave={leaveRoom} onStart={start} onSetRounds={setRounds} />
   } else if (rejoining) {
     content = <p className="font-hand text-xl text-steel">Voltando para a sala…</p>
   } else if (screen.name === 'home') {

@@ -14,18 +14,37 @@ async function call<T>(event: string, data?: unknown): Promise<T | ErrorAck> {
   }
 }
 
-/** Estado da sala do jogador e as ações do lobby. Reentra sozinho na sala ao reconectar. */
+export interface Snapshot {
+  room: RoomState
+  /** performance.now() de quando o estado chegou; os prazos do jogo são relativos a ele. */
+  receivedAt: number
+}
+
+/** Envia um comando e devolve a mensagem de erro, ou null se deu certo. */
+async function request(event: string, data?: unknown): Promise<string | null> {
+  const ack = await call<OkAck>(event, data)
+  return ack.ok ? null : ack.error
+}
+
+/** Estado da sala do jogador e as ações do lobby e da partida. Reentra sozinho na sala ao reconectar. */
 export function useRoom() {
   const [connected, setConnected] = useState(socket.connected)
-  const [room, setRoom] = useState<RoomState | null>(null)
+  const [snapshot, setSnapshot] = useState<Snapshot | null>(null)
   const [playerId, setPlayerId] = useState<string | null>(null)
   const [rejoining, setRejoining] = useState(() => loadSession() !== null)
 
-  const enter = useCallback((ack: JoinedAck) => {
-    saveSession({ code: ack.room.code, token: ack.token })
-    setPlayerId(ack.player_id)
-    setRoom(ack.room)
+  const setRoom = useCallback((room: RoomState | null) => {
+    setSnapshot(room ? { room, receivedAt: performance.now() } : null)
   }, [])
+
+  const enter = useCallback(
+    (ack: JoinedAck) => {
+      saveSession({ code: ack.room.code, token: ack.token })
+      setPlayerId(ack.player_id)
+      setRoom(ack.room)
+    },
+    [setRoom],
+  )
 
   useEffect(() => {
     const rejoin = async () => {
@@ -55,7 +74,7 @@ export function useRoom() {
       socket.off('disconnect', onDisconnect)
       socket.off('room_state', setRoom)
     }
-  }, [enter])
+  }, [enter, setRoom])
 
   const joinWith = useCallback(
     async (event: 'create_room' | 'join_room', profile: Profile, code?: string) => {
@@ -76,12 +95,12 @@ export function useRoom() {
     setRoom(null)
     setPlayerId(null)
     void call<OkAck>('leave_room')
-  }, [])
+  }, [setRoom])
 
-  const start = useCallback(async () => {
-    const ack = await call<OkAck>('start_game')
-    return ack.ok ? null : ack.error
-  }, [])
+  const start = useCallback(() => request('start_game'), [])
+  const playAgain = useCallback(() => request('play_again'), [])
+  const answer = useCallback((option: number) => request('submit_answer', { option }), [])
+  const setRounds = useCallback((rounds: number) => request('update_settings', { rounds }), [])
 
-  return { connected, rejoining, room, playerId, create, join, leave, start }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, setRounds }
 }

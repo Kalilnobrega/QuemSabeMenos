@@ -7,13 +7,14 @@ interface Props {
   playerId: string | null
   onLeave: () => void
   onStart: () => Promise<string | null>
+  onSetRounds: (rounds: number) => Promise<string | null>
 }
 
 function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
 
-export function Lobby({ room, playerId, onLeave, onStart }: Props) {
+export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) {
   const [notice, setNotice] = useState<string | null>(null)
   const [starting, setStarting] = useState(false)
 
@@ -42,17 +43,7 @@ export function Lobby({ room, playerId, onLeave, onStart }: Props) {
     setStarting(false)
   }
 
-  if (room.status === 'playing') {
-    return (
-      <section className="flex flex-col items-center gap-6 text-center">
-        <h1 className="font-display text-5xl tracking-wide text-brand">A partida começou!</h1>
-        <p className="font-hand text-xl text-steel">O jogo ainda está sendo construído. Volte em breve 🫏</p>
-        <button onClick={onLeave} className="text-steel underline hover:text-chalk">
-          Sair da sala
-        </button>
-      </section>
-    )
-  }
+  const setRounds = async (rounds: number) => setNotice(await onSetRounds(rounds))
 
   return (
     <section className="flex w-full flex-col gap-6">
@@ -91,6 +82,30 @@ export function Lobby({ room, playerId, onLeave, onStart }: Props) {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <h2 className="font-display text-2xl tracking-wide">Perguntas</h2>
+        {isHost ? (
+          <div className="grid grid-cols-6 gap-2">
+            {room.settings.round_options.map((rounds) => (
+              <button
+                key={rounds}
+                onClick={() => setRounds(rounds)}
+                aria-pressed={room.settings.rounds === rounds}
+                className={`rounded-lg py-2 font-semibold ${
+                  room.settings.rounds === rounds ? 'bg-brand text-ink' : 'bg-panel text-steel hover:text-chalk'
+                }`}
+              >
+                {rounds}
+              </button>
+            ))}
+          </div>
+        ) : (
+          <p className="text-steel">
+            {room.settings.rounds} perguntas, {room.settings.answer_seconds} segundos cada
+          </p>
+        )}
       </div>
 
       {notice && <p className="text-center text-steel">{notice}</p>}

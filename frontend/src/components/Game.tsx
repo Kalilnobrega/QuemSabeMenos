@@ -1,0 +1,294 @@
+import { useEffect, useState } from 'react'
+import { AVATAR_URLS } from '../lib/avatars'
+import type { Snapshot } from '../lib/useRoom'
+import type { GameView, PlayerView, RoomState } from '../types/events'
+
+const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
+
+const DIFFICULTY = {
+  easy: { label: 'Fácil', className: 'bg-emerald-500/15 text-emerald-300' },
+  medium: { label: 'Média', className: 'bg-brand/15 text-brand' },
+  hard: { label: 'Difícil', className: 'bg-red-500/15 text-red-300' },
+  impossible: { label: '🔥 Impossível', className: 'bg-orange-500/20 text-orange-300' },
+}
+
+interface Props {
+  snapshot: Snapshot
+  playerId: string | null
+  onAnswer: (option: number) => Promise<string | null>
+  onPlayAgain: () => Promise<string | null>
+  onLeave: () => void
+}
+
+export function Game({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Props) {
+  const game = snapshot.room.game!
+  if (game.phase === 'finished') {
+    return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
+  }
+  // key: cada rodada começa com a escolha local zerada.
+  return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} />
+}
+
+/** Re-renderiza a cada quadro enquanto `active`, para o texto digitando e o cronômetro. */
+function useNow(active: boolean) {
+  const [now, setNow] = useState(() => performance.now())
+  useEffect(() => {
+    if (!active) return
+    let frame = requestAnimationFrame(function tick() {
+      setNow(performance.now())
+      frame = requestAnimationFrame(tick)
+    })
+    return () => cancelAnimationFrame(frame)
+  }, [active])
+  return now
+}
+
+function formatScore(score: number) {
+  return score < 0 ? `−${-score}` : `${score}`
+}
+
+function formatDelta(delta: number) {
+  return delta > 0 ? `+${delta}` : formatScore(delta)
+}
+
+interface RoundProps {
+  snapshot: Snapshot
+  game: GameView
+  playerId: string | null
+  onAnswer: (option: number) => Promise<string | null>
+}
+
+function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
+  const { room, receivedAt } = snapshot
+  const [choice, setChoice] = useState<number | null>(null)
+  const [error, setError] = useState<string | null>(null)
+
+  const timed = game.phase !== 'finished'
+  const now = useNow(timed)
+  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const progress = game.phase_duration_ms > 0 ? 1 - remaining / game.phase_duration_ms : 1
+
+  const question = game.question!
+  const typing = game.phase === 'reading'
+  const text = typing ? question.text.slice(0, Math.ceil(question.text.length * progress)) : question.text
+  const answered = choice !== null || (playerId !== null && game.answered.includes(playerId))
+  const canAnswer = game.phase === 'answering' && !answered
+  const showResults = game.phase === 'results'
+  const myResult = game.results.find((r) => r.player_id === playerId)
+  const connectedCount = room.players.filter((p) => p.connected).length
+  const difficulty = DIFFICULTY[question.difficulty]
+  const isFinal = question.difficulty === 'impossible'
+  // No resultado os botões ficam mais baixos, para a curiosidade caber na tela do celular.
+  const optionSize = showResults ? 'min-h-12 py-2' : isFinal ? 'min-h-16 py-3' : 'min-h-20 py-3'
+
+  const pick = async (option: number) => {
+    if (!canAnswer) return
+    setChoice(option)
+    const failure = await onAnswer(option)
+    if (failure) {
+      setChoice(null)
+      setError(failure)
+    }
+  }
+
+  const optionClass = (index: number) => {
+    const chosen = choice === index || myResult?.option === index
+    if (showResults) {
+      if (index === game.correct_option) return 'bg-emerald-600 text-white'
+      if (chosen) return 'bg-red-500/80 text-white'
+      return 'bg-panel opacity-40'
+    }
+    if (chosen) return 'bg-brand/20 ring-2 ring-brand'
+    if (!canAnswer) return 'bg-panel opacity-50'
+    return 'bg-panel hover:bg-panel/70 active:scale-[0.98]'
+  }
+
+  return (
+    <section className="flex w-full flex-col gap-5">
+      {isFinal && typing && (
+        <div className="rounded-2xl border border-orange-400/40 bg-orange-500/10 px-4 py-3 text-center">
+          <p className="font-display text-3xl tracking-wide text-orange-300">🔥 Pergunta final: impossível!</p>
+          <p className="text-sm text-steel">Vale até 400 QI, e errar não tira pontos. Na dúvida, chuta!</p>
+        </div>
+      )}
+      <header className="flex items-center justify-between gap-2 text-sm">
+        <span className="font-semibold text-steel">
+          Pergunta {game.round}/{game.total_rounds}
+        </span>
+        <span className="flex gap-2">
+          <span className="rounded-full bg-panel px-3 py-1 text-steel">{question.theme}</span>
+          <span className={`rounded-full px-3 py-1 font-semibold ${difficulty.className}`}>{difficulty.label}</span>
+        </span>
+      </header>
+
+      <div className="flex h-8 items-center gap-3">
+        <div className="h-2 flex-1 overflow-hidden rounded-full bg-panel">
+          {game.phase !== 'reading' && (
+            <div
+              className={`h-full rounded-full ${
+                showResults ? 'bg-steel/60' : remaining < 3000 ? 'bg-red-400' : 'bg-brand'
+              }`}
+              style={{ width: `${(1 - progress) * 100}%` }}
+            />
+          )}
+        </div>
+        <span className="w-8 text-right font-display text-2xl tabular-nums">
+          {game.phase === 'answering' ? Math.ceil(remaining / 1000) : ''}
+        </span>
+      </div>
+
+      <h1 className="min-h-[5.5rem] text-2xl leading-snug font-bold">
+        {text}
+        {typing && <span className="ml-0.5 inline-block w-[0.5ch] animate-pulse text-brand">|</span>}
+      </h1>
+
+      <div className="grid auto-rows-fr grid-cols-2 gap-3">
+        {question.options.map((option, index) => (
+          <button
+            key={index}
+            onClick={() => pick(index)}
+            disabled={!canAnswer}
+            className={`flex items-center gap-2 rounded-xl px-3 text-left text-base leading-tight font-semibold transition ${optionSize} ${optionClass(index)}`}
+          >
+            <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
+            <span className="min-w-0 [overflow-wrap:anywhere]">{option}</span>
+          </button>
+        ))}
+      </div>
+
+      {error && <p className="text-center text-red-300">{error}</p>}
+
+      {showResults ? (
+        <RoundSummary room={room} game={game} playerId={playerId} />
+      ) : (
+        <p className="text-center font-hand text-xl text-steel">
+          {typing
+            ? 'Leia com atenção…'
+            : answered
+              ? `Resposta enviada! Esperando a galera (${game.answered.length}/${connectedCount})`
+              : `${game.answered.length}/${connectedCount} já responderam`}
+        </p>
+      )}
+    </section>
+  )
+}
+
+function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameView; playerId: string | null }) {
+  const mine = game.results.find((r) => r.player_id === playerId)
+  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta]))
+
+  let headline = null
+  // A curiosidade vem logo depois do veredito, antes do ranking, para caber na tela do celular.
+  if (mine) {
+    const verdict = mine.option === null ? 'Não respondeu!' : mine.correct ? 'Acertou!' : 'Errou!'
+    headline = (
+      <p className="text-center font-display text-3xl tracking-wide">
+        <span className={mine.correct ? 'text-emerald-300' : 'text-red-300'}>{verdict}</span>{' '}
+        <span className="text-chalk">{formatDelta(mine.delta)} QI</span>
+      </p>
+    )
+  }
+
+  return (
+    <div className="flex flex-col gap-3">
+      {headline}
+      {game.fact && (
+        <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
+          <p className="font-display text-lg tracking-wide text-brand">💡 Você sabia?</p>
+          <p className="mt-1 leading-relaxed">{game.fact}</p>
+        </div>
+      )}
+      <Ranking players={room.players} playerId={playerId} deltas={deltas} />
+    </div>
+  )
+}
+
+interface RankingProps {
+  players: PlayerView[]
+  playerId: string | null
+  deltas?: Record<string, number>
+}
+
+function Ranking({ players, playerId, deltas }: RankingProps) {
+  const sorted = [...players].sort((a, b) => b.score - a.score)
+  return (
+    <ol className="flex flex-col gap-2">
+      {sorted.map((player, index) => (
+        <li
+          key={player.id}
+          className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${player.connected ? '' : 'opacity-50'} ${
+            player.id === playerId ? 'ring-1 ring-brand/60' : ''
+          }`}
+        >
+          <span className="w-5 text-center font-display text-lg text-steel">{index + 1}</span>
+          <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
+          <span className="flex-1 truncate font-semibold">{player.nickname}</span>
+          {deltas && player.id in deltas && (
+            <span className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : 'text-red-300'}`}>
+              {formatDelta(deltas[player.id])}
+            </span>
+          )}
+          <span className="w-16 text-right font-display text-xl tracking-wide text-brand">{formatScore(player.score)}</span>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+interface PodiumProps {
+  room: RoomState
+  playerId: string | null
+  onPlayAgain: () => Promise<string | null>
+  onLeave: () => void
+}
+
+function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
+  const [notice, setNotice] = useState<string | null>(null)
+  const sorted = [...room.players].sort((a, b) => b.score - a.score)
+  const best = sorted[0]
+  const worst = sorted.length > 1 ? sorted[sorted.length - 1] : null
+  const isHost = room.host_id === playerId
+
+  return (
+    <section className="flex w-full flex-col gap-6">
+      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
+
+      <div className="grid grid-cols-2 gap-3">
+        {best && <Highlight title="O menos burro" emoji="🏆" player={best} tone="text-brand" />}
+        {worst && <Highlight title="Quem sabe menos" emoji="🫏" player={worst} tone="text-red-300" />}
+      </div>
+
+      <Ranking players={room.players} playerId={playerId} />
+
+      {notice && <p className="text-center text-steel">{notice}</p>}
+
+      {isHost ? (
+        <button
+          onClick={async () => setNotice(await onPlayAgain())}
+          className="rounded-xl bg-brand py-4 font-display text-2xl tracking-wide text-ink"
+        >
+          Jogar de novo
+        </button>
+      ) : (
+        <p className="text-center font-hand text-xl text-steel">Esperando o anfitrião decidir se tem revanche…</p>
+      )}
+
+      <button onClick={onLeave} className="text-steel underline hover:text-chalk">
+        Sair da sala
+      </button>
+    </section>
+  )
+}
+
+function Highlight({ title, emoji, player, tone }: { title: string; emoji: string; player: PlayerView; tone: string }) {
+  return (
+    <div className="flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center">
+      <span className={`font-display text-lg tracking-wide ${tone}`}>
+        {emoji} {title}
+      </span>
+      <img src={AVATAR_URLS[player.avatar]} alt="" className="size-20" />
+      <span className="w-full truncate text-lg font-bold">{player.nickname}</span>
+      <span className="font-display text-2xl text-brand">{formatScore(player.score)} QI</span>
+    </div>
+  )
+}
