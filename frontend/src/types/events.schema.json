@@ -54,6 +54,88 @@
       "title": "ErrorAck",
       "type": "object"
     },
+    "GameView": {
+      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Depois da última rodada: finished.",
+      "properties": {
+        "round": {
+          "type": "integer"
+        },
+        "total_rounds": {
+          "type": "integer"
+        },
+        "phase": {
+          "enum": [
+            "reading",
+            "answering",
+            "results",
+            "finished"
+          ],
+          "type": "string"
+        },
+        "phase_duration_ms": {
+          "type": "integer"
+        },
+        "phase_ends_in_ms": {
+          "type": "integer"
+        },
+        "question": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QuestionView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "answered": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "correct_option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "results": {
+          "items": {
+            "$ref": "#/$defs/RoundResult"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "round",
+        "total_rounds",
+        "phase",
+        "phase_duration_ms",
+        "phase_ends_in_ms",
+        "question",
+        "answered",
+        "correct_option",
+        "fact",
+        "results"
+      ],
+      "title": "GameView",
+      "type": "object"
+    },
     "JoinRoomRequest": {
       "properties": {
         "nickname": {
@@ -166,13 +248,17 @@
         },
         "connected": {
           "type": "boolean"
+        },
+        "score": {
+          "type": "integer"
         }
       },
       "required": [
         "id",
         "nickname",
         "avatar",
-        "connected"
+        "connected",
+        "score"
       ],
       "title": "PlayerView",
       "type": "object"
@@ -189,6 +275,39 @@
       "title": "Pong",
       "type": "object"
     },
+    "QuestionView": {
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard",
+            "impossible"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "options",
+        "theme",
+        "difficulty"
+      ],
+      "title": "QuestionView",
+      "type": "object"
+    },
     "RejoinRoomRequest": {
       "properties": {
         "code": {
@@ -203,6 +322,29 @@
         "token"
       ],
       "title": "RejoinRoomRequest",
+      "type": "object"
+    },
+    "RoomSettings": {
+      "properties": {
+        "rounds": {
+          "type": "integer"
+        },
+        "answer_seconds": {
+          "type": "number"
+        },
+        "round_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "rounds",
+        "answer_seconds",
+        "round_options"
+      ],
+      "title": "RoomSettings",
       "type": "object"
     },
     "RoomState": {
@@ -227,11 +369,24 @@
         "min_players": {
           "type": "integer"
         },
+        "settings": {
+          "$ref": "#/$defs/RoomSettings"
+        },
         "players": {
           "items": {
             "$ref": "#/$defs/PlayerView"
           },
           "type": "array"
+        },
+        "game": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GameView"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -240,9 +395,66 @@
         "host_id",
         "max_players",
         "min_players",
-        "players"
+        "settings",
+        "players",
+        "game"
       ],
       "title": "RoomState",
+      "type": "object"
+    },
+    "RoundResult": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "delta": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "option",
+        "correct",
+        "delta"
+      ],
+      "title": "RoundResult",
+      "type": "object"
+    },
+    "SubmitAnswerRequest": {
+      "properties": {
+        "option": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "option"
+      ],
+      "title": "SubmitAnswerRequest",
+      "type": "object"
+    },
+    "UpdateSettingsRequest": {
+      "properties": {
+        "rounds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "rounds"
+      ],
+      "title": "UpdateSettingsRequest",
       "type": "object"
     }
   },

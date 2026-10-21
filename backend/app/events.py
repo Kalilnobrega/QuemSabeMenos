@@ -14,7 +14,10 @@ Avatar = Literal[
     "ovelha", "panda", "pinguim", "porco", "raposa", "sapo", "urso", "vaca",
 ]
 
+Difficulty = Literal["easy", "medium", "hard", "impossible"]
+
 NICKNAME_MAX_LENGTH = 16
+ROUND_OPTIONS = (5, 10, 15, 20, 25, 30)
 
 
 class Pong(BaseModel):
@@ -41,6 +44,14 @@ class RejoinRoomRequest(BaseModel):
     token: str
 
 
+class UpdateSettingsRequest(BaseModel):
+    rounds: int
+
+
+class SubmitAnswerRequest(BaseModel):
+    option: int
+
+
 # --- Servidor → cliente -------------------------------------------------------
 
 class PlayerView(BaseModel):
@@ -48,6 +59,43 @@ class PlayerView(BaseModel):
     nickname: str
     avatar: Avatar
     connected: bool
+    score: int
+
+
+class RoomSettings(BaseModel):
+    rounds: int
+    answer_seconds: float
+    round_options: list[int]
+
+
+class QuestionView(BaseModel):
+    text: str
+    options: list[str]
+    theme: str
+    difficulty: Difficulty
+
+
+class RoundResult(BaseModel):
+    player_id: str
+    option: int | None  # None = não respondeu
+    correct: bool
+    delta: int
+
+
+class GameView(BaseModel):
+    """Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
+    answering → results. Depois da última rodada: finished."""
+
+    round: int  # começa em 1
+    total_rounds: int
+    phase: Literal["reading", "answering", "results", "finished"]
+    phase_duration_ms: int
+    phase_ends_in_ms: int  # relativo ao envio, para não depender do relógio do celular
+    question: QuestionView | None
+    answered: list[str]  # ids de quem já respondeu nesta rodada
+    correct_option: int | None  # só aparece em results
+    fact: str | None  # curiosidade sobre a resposta, também só em results
+    results: list[RoundResult]
 
 
 class RoomState(BaseModel):
@@ -58,7 +106,9 @@ class RoomState(BaseModel):
     host_id: str
     max_players: int
     min_players: int
+    settings: RoomSettings
     players: list[PlayerView]
+    game: GameView | None
 
 
 class Ack(BaseModel):
@@ -89,6 +139,8 @@ EVENT_MODELS: list[type[BaseModel]] = [
     CreateRoomRequest,
     JoinRoomRequest,
     RejoinRoomRequest,
+    UpdateSettingsRequest,
+    SubmitAnswerRequest,
     RoomState,
     JoinedAck,
     OkAck,

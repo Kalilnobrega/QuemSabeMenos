@@ -3,7 +3,7 @@ import asyncio
 import pytest
 import socketio
 
-from app import main
+from app import game, main, rooms
 from app.rooms import RoomManager
 
 
@@ -11,6 +11,12 @@ from app.rooms import RoomManager
 def fresh_rooms(monkeypatch):
     monkeypatch.setattr(main, "rooms", RoomManager())
     monkeypatch.setattr(main, "RECONNECT_GRACE_SECONDS", 0.2)
+    # Partidas rápidas nos testes.
+    monkeypatch.setattr(game, "MIN_READING_SECONDS", 0.05)
+    monkeypatch.setattr(game, "TYPING_SECONDS_PER_CHAR", 0)
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 0.05)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 0.05)
+    monkeypatch.setattr(rooms, "ANSWER_SECONDS", 1.0)
 
 
 class Client:
@@ -126,3 +132,67 @@ async def test_host_starts_game(connect):
     assert not (await bia.call("start_game"))["ok"]
     assert (await ana.call("start_game"))["ok"]
     await bia.wait_for(lambda s: s["status"] == "playing")
+
+
+async def setup_room(connect) -> tuple[Client, Client, dict, dict]:
+    ana, bia = await connect(), await connect()
+    created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
+    joined = await bia.call("join_room", {"code": created["room"]["code"], "nickname": "Bia", "avatar": "sapo"})
+    return ana, bia, created, joined
+
+
+async def test_only_host_changes_rounds(connect):
+    ana, bia, *_ = await setup_room(connect)
+    assert not (await bia.call("update_settings", {"rounds": 5}))["ok"]
+    assert not (await ana.call("update_settings", {"rounds": 7}))["ok"]
+    assert (await ana.call("update_settings", {"rounds": 5}))["ok"]
+    await bia.wait_for(lambda s: s["settings"]["rounds"] == 5)
+
+
+async def test_full_game(connect):
+    ana, bia, created, joined = await setup_room(connect)
+    await ana.call("update_settings", {"rounds": 5})
+    assert (await ana.call("start_game"))["ok"]
+
+    for round_number in range(1, 6):
+        state = await ana.wait_for(lambda s: s["game"] and s["game"]["round"] == round_number)
+        assert state["game"]["question"]["text"]
+        assert state["game"]["correct_option"] is None
+
+        # Antes da pergunta terminar de aparecer, responder não vale.
+        if state["game"]["phase"] == "reading":
+            assert not (await ana.call("submit_answer", {"option": 0}))["ok"]
+
+        await ana.wait_for(lambda s: s["game"]["round"] == round_number and s["game"]["phase"] == "answering")
+        assert (await ana.call("submit_answer", {"option": 0}))["ok"]
+        assert (await bia.call("submit_answer", {"option": 1}))["ok"]
+
+        # Todos responderam: a rodada fecha antes do tempo (1 s).
+        results = await ana.wait_for(
+            lambda s: s["game"]["round"] == round_number and s["game"]["phase"] in ("results", "finished"), timeout=0.8
+        )
+        assert results["game"]["correct_option"] is not None
+        assert results["game"]["fact"]
+        assert {r["player_id"] for r in results["game"]["results"]} == {created["player_id"], joined["player_id"]}
+
+    final = await bia.wait_for(lambda s: s["game"]["phase"] == "finished")
+    scores = {p["id"]: p["score"] for p in final["players"]}
+    assert any(score != 0 for score in scores.values())
+
+    assert not (await bia.call("play_again"))["ok"]
+    assert (await ana.call("play_again"))["ok"]
+    lobby = await bia.wait_for(lambda s: s["status"] == "lobby")
+    assert lobby["game"] is None
+    assert all(p["score"] == 0 for p in lobby["players"])
+
+
+async def test_round_ends_when_time_runs_out(connect):
+    ana, bia, created, _ = await setup_room(connect)
+    await ana.call("update_settings", {"rounds": 5})
+    await ana.call("start_game")
+    await ana.wait_for(lambda s: s["game"] and s["game"]["phase"] == "answering")
+    await ana.call("submit_answer", {"option": 0})
+
+    results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
+    bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -10}

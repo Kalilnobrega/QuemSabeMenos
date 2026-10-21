@@ -41,6 +41,45 @@ export interface ErrorAck {
   error: string;
 }
 /**
+ * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
+ * answering → results. Depois da última rodada: finished.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "GameView".
+ */
+export interface GameView {
+  round: number;
+  total_rounds: number;
+  phase: "reading" | "answering" | "results" | "finished";
+  phase_duration_ms: number;
+  phase_ends_in_ms: number;
+  question: QuestionView | null;
+  answered: string[];
+  correct_option: number | null;
+  fact: string | null;
+  results: RoundResult[];
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "QuestionView".
+ */
+export interface QuestionView {
+  text: string;
+  options: string[];
+  theme: string;
+  difficulty: "easy" | "medium" | "hard" | "impossible";
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "RoundResult".
+ */
+export interface RoundResult {
+  player_id: string;
+  option: number | null;
+  correct: boolean;
+  delta: number;
+}
+/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "JoinRoomRequest".
  */
@@ -89,7 +128,18 @@ export interface RoomState {
   host_id: string;
   max_players: number;
   min_players: number;
+  settings: RoomSettings;
   players: PlayerView[];
+  game: GameView | null;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "RoomSettings".
+ */
+export interface RoomSettings {
+  rounds: number;
+  answer_seconds: number;
+  round_options: number[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -116,6 +166,7 @@ export interface PlayerView {
     | "urso"
     | "vaca";
   connected: boolean;
+  score: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -138,4 +189,18 @@ export interface Pong {
 export interface RejoinRoomRequest {
   code: string;
   token: string;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "SubmitAnswerRequest".
+ */
+export interface SubmitAnswerRequest {
+  option: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "UpdateSettingsRequest".
+ */
+export interface UpdateSettingsRequest {
+  rounds: number;
 }
