@@ -45,7 +45,10 @@ class RejoinRoomRequest(BaseModel):
 
 
 class UpdateSettingsRequest(BaseModel):
-    rounds: int
+    """Só os campos enviados mudam."""
+
+    rounds: int | None = None
+    themes: list[str] | None = None
 
 
 class SubmitAnswerRequest(BaseModel):
@@ -69,6 +72,8 @@ class RoomSettings(BaseModel):
     answer_seconds: float
     speed_grace_seconds: float  # respostas até aqui valem o máximo
     round_options: list[int]
+    themes: list[str]  # temas sorteados na partida (pelo menos um)
+    theme_options: list[str]
 
 
 class QuestionView(BaseModel):

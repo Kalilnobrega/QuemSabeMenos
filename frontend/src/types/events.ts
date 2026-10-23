@@ -158,6 +158,8 @@ export interface RoomSettings {
   answer_seconds: number;
   speed_grace_seconds: number;
   round_options: number[];
+  themes: string[];
+  theme_options: string[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -218,9 +220,12 @@ export interface SubmitAnswerRequest {
   option: number;
 }
 /**
+ * Só os campos enviados mudam.
+ *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  rounds: number;
+  rounds?: number | null;
+  themes?: string[] | null;
 }

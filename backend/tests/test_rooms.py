@@ -138,3 +138,27 @@ def test_only_host_starts_with_enough_players(manager):
 def test_avatar_ids_match_frontend_assets():
     assets = Path(__file__).resolve().parents[2] / "frontend" / "src" / "assets" / "avatars"
     assert {f.stem for f in assets.glob("*.svg")} == set(get_args(Avatar))
+
+
+def test_rooms_start_with_every_theme(manager):
+    room, _ = manager.create("sid-ana", profile("Ana"))
+    settings = room.view().settings
+    assert settings.themes == settings.theme_options
+    assert "Games" in settings.theme_options
+
+
+def test_host_picks_themes_and_the_match_uses_only_them(manager):
+    room, _ = manager.create("sid-ana", profile("Ana"))
+    manager.join("sid-bia", room.code, profile("Bia"))
+    with pytest.raises(RoomError, match="anfitrião"):
+        manager.update_settings("sid-bia", themes=["Games"])
+    with pytest.raises(RoomError, match="pelo menos um"):
+        manager.update_settings("sid-ana", themes=[])
+    with pytest.raises(RoomError, match="inválido"):
+        manager.update_settings("sid-ana", themes=["Culinária"])
+
+    manager.update_settings("sid-ana", themes=["Geografia", "Games"], rounds=35)
+    assert room.themes == ["Games", "Geografia"]  # na ordem da lista de temas
+    manager.start("sid-ana", now=0)
+    assert {q.theme for q in room.game.questions} <= {"Games", "Geografia"}
+    assert len(room.game.questions) == 36  # 35 + a impossível

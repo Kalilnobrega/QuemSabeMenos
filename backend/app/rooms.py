@@ -70,6 +70,8 @@ class Room:
     players: list[Player]  # em ordem de chegada
     status: Literal["lobby", "playing"] = "lobby"
     rounds: int = DEFAULT_ROUNDS
+    theme_options: list[str] = field(default_factory=list)  # temas do banco
+    themes: list[str] = field(default_factory=list)  # escolhidos pelo anfitrião; começam todos
     game: Game | None = None
     # Perguntas já sorteadas nesta sala, para "jogar de novo" trazer perguntas novas.
     used_questions: set[str] = field(default_factory=set)
@@ -93,6 +95,8 @@ class Room:
                 answer_seconds=ANSWER_SECONDS,
                 speed_grace_seconds=SPEED_GRACE_SECONDS,
                 round_options=list(ROUND_OPTIONS),
+                themes=self.themes,
+                theme_options=self.theme_options,
             ),
             players=[p.view() for p in self.players],
             game=self.game.view(now) if self.game else None,
@@ -113,6 +117,7 @@ def normalize_nickname(nickname: str) -> str:
 class RoomManager:
     def __init__(self, bank: list[Question] | None = None, rng: random.Random | None = None) -> None:
         self.bank = load_bank() if bank is None else bank
+        self.theme_options = sorted({q.theme for q in self.bank})
         self.rng = rng or random.Random()
         self.rooms: dict[str, Room] = {}
         self._sessions: dict[str, tuple[str, str]] = {}  # sid -> (código da sala, id do jogador)
@@ -125,7 +130,13 @@ class RoomManager:
 
     def create(self, sid: str, profile: Profile) -> tuple[Room, Player]:
         player = Player(nickname=normalize_nickname(profile.nickname), avatar=profile.avatar, sid=sid)
-        room = Room(code=self._new_code(), host_id=player.id, players=[player])
+        room = Room(
+            code=self._new_code(),
+            host_id=player.id,
+            players=[player],
+            theme_options=self.theme_options,
+            themes=list(self.theme_options),
+        )
         self.rooms[room.code] = room
         self._sessions[sid] = (room.code, player.id)
         return room, player
@@ -188,13 +199,21 @@ class RoomManager:
             return None
         return self._remove(room, player)
 
-    def update_settings(self, sid: str, rounds: int) -> Room:
+    def update_settings(self, sid: str, rounds: int | None = None, themes: list[str] | None = None) -> Room:
         room = self._host_room(sid, "mudar as configurações")
         if room.status != "lobby":
             raise RoomError("A partida já começou.")
-        if rounds not in ROUND_OPTIONS:
+        if rounds is not None and rounds not in ROUND_OPTIONS:
             raise RoomError("Número de perguntas inválido.")
-        room.rounds = rounds
+        if themes is not None:
+            if not themes:
+                raise RoomError("Escolha pelo menos um tema.")
+            if not set(themes) <= set(self.theme_options):
+                raise RoomError("Tema inválido.")
+        if rounds is not None:
+            room.rounds = rounds
+        if themes is not None:
+            room.themes = [t for t in self.theme_options if t in themes]  # na ordem da lista
         return room
 
     def start(self, sid: str, now: float | None = None) -> Room:
@@ -204,7 +223,8 @@ class RoomManager:
             raise RoomError("A partida já começou.")
         if len(room.players) < MIN_PLAYERS:
             raise RoomError(f"Precisa de pelo menos {MIN_PLAYERS} jogadores.")
-        questions = pick_questions(self.bank, room.rounds, room.used_questions, self.rng)
+        bank = [q for q in self.bank if q.theme in room.themes]
+        questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
         room.used_questions |= {q.id for q in questions}
         for player in room.players:
             player.score = STARTING_IQ

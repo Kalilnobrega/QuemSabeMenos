@@ -184,7 +184,7 @@ async def leave_room(sid: str) -> dict:
 async def update_settings(sid: str, data: dict) -> dict:
     try:
         request = UpdateSettingsRequest.model_validate(data)
-        room = rooms.update_settings(sid, request.rounds)
+        room = rooms.update_settings(sid, request.rounds, request.themes)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:

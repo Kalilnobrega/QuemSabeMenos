@@ -391,13 +391,27 @@
             "type": "integer"
           },
           "type": "array"
+        },
+        "themes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "theme_options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         }
       },
       "required": [
         "rounds",
         "answer_seconds",
         "speed_grace_seconds",
-        "round_options"
+        "round_options",
+        "themes",
+        "theme_options"
       ],
       "title": "RoomSettings",
       "type": "object"
@@ -508,14 +522,34 @@
       "type": "object"
     },
     "UpdateSettingsRequest": {
+      "description": "Só os campos enviados mudam.",
       "properties": {
         "rounds": {
-          "type": "integer"
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "themes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
-      "required": [
-        "rounds"
-      ],
       "title": "UpdateSettingsRequest",
       "type": "object"
     }

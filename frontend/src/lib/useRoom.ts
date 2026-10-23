@@ -101,6 +101,7 @@ export function useRoom() {
   const playAgain = useCallback(() => request('play_again'), [])
   const answer = useCallback((option: number) => request('submit_answer', { option }), [])
   const setRounds = useCallback((rounds: number) => request('update_settings', { rounds }), [])
+  const setThemes = useCallback((themes: string[]) => request('update_settings', { themes }), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, setRounds }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, setRounds, setThemes }
 }

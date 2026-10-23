@@ -10,13 +10,14 @@ interface Props {
   onLeave: () => void
   onStart: () => Promise<string | null>
   onSetRounds: (rounds: number) => Promise<string | null>
+  onSetThemes: (themes: string[]) => Promise<string | null>
 }
 
 function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
 
-export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) {
+export function Lobby({ room, playerId, onLeave, onStart, onSetRounds, onSetThemes }: Props) {
   const [notice, setNotice] = useState<string | null>(null)
   const [starting, setStarting] = useState(false)
 
@@ -46,6 +47,17 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
   }
 
   const setRounds = async (rounds: number) => setNotice(await onSetRounds(rounds))
+
+  const { themes, theme_options: themeOptions } = room.settings
+  const allThemes = themes.length === themeOptions.length
+  const toggleTheme = async (theme: string) => {
+    if (themes.includes(theme) && themes.length === 1) {
+      setNotice('Escolha pelo menos um tema.')
+      return
+    }
+    const next = themes.includes(theme) ? themes.filter((t) => t !== theme) : [...themes, theme]
+    setNotice(await onSetThemes(next))
+  }
 
   return (
     <section className="flex w-full flex-col gap-6">
@@ -105,6 +117,38 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
           <p className="text-steel">
             {room.settings.rounds} perguntas, {room.settings.answer_seconds} segundos cada
           </p>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <h2 className="flex items-baseline justify-between font-display text-2xl tracking-wide">
+          Temas
+          {isHost && !allThemes && (
+            <button onClick={async () => setNotice(await onSetThemes(themeOptions))} className="font-sans text-sm font-semibold text-brand">
+              Marcar todos
+            </button>
+          )}
+        </h2>
+        {isHost ? (
+          <div className="grid grid-cols-2 gap-2">
+            {themeOptions.map((theme) => {
+              const selected = themes.includes(theme)
+              return (
+                <button
+                  key={theme}
+                  onClick={() => toggleTheme(theme)}
+                  aria-pressed={selected}
+                  className={`btn-3d btn-sm rounded-lg px-3 py-2 text-left font-semibold ${
+                    selected ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                  }`}
+                >
+                  {theme}
+                </button>
+              )
+            })}
+          </div>
+        ) : (
+          <p className="text-steel">{allThemes ? 'Todos os temas misturados' : themes.join(', ')}</p>
         )}
       </div>
 
