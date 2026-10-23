@@ -756,6 +756,2154 @@
       ],
       "answer": 0,
       "fact": "A mensagem foi \"Merry Christmas\", enviada de um computador para um celular, no Reino Unido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa de Taiwan fabrica boa parte dos chips mais avançados do mundo?",
+      "options": [
+        "TSMC",
+        "Foxconn",
+        "Acer",
+        "Asus"
+      ],
+      "answer": 0,
+      "fact": "Os chips dos iPhones e de muitas placas de IA são fabricados pela TSMC."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi um dos fundadores do Twitter e seu primeiro CEO?",
+      "options": [
+        "Jack Dorsey",
+        "Elon Musk",
+        "Evan Spiegel",
+        "Kevin Systrom"
+      ],
+      "answer": 0,
+      "fact": "O primeiro tuíte da história, de 2006, foi dele: \"just setting up my twttr\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual era o nome original do Google, quando era um projeto universitário?",
+      "options": [
+        "BackRub",
+        "PageRank",
+        "Googol",
+        "WebCrawler"
+      ],
+      "answer": 0,
+      "fact": "O nome Google vem de \"googol\", o número 1 seguido de 100 zeros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava o famoso robô humanoide da Honda?",
+      "options": [
+        "ASIMO",
+        "Atlas",
+        "Sophia",
+        "Pepper"
+      ],
+      "answer": 0,
+      "fact": "O ASIMO conseguia andar, correr e subir escadas, e foi aposentado em 2022."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem o Google recomenda para criar apps Android modernos?",
+      "options": [
+        "Kotlin",
+        "Swift",
+        "Objective-C",
+        "Visual Basic"
+      ],
+      "answer": 0,
+      "fact": "O Kotlin foi criado pela empresa tcheca JetBrains."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o nome da entidade que registra os domínios .br?",
+      "options": [
+        "Registro.br",
+        "Anatel",
+        "ICANN Brasil",
+        "Serpro"
+      ],
+      "answer": 0,
+      "fact": "O Registro.br é ligado ao Comitê Gestor da Internet no Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Por quanto o Facebook comprou o WhatsApp, em 2014?",
+      "options": [
+        "Cerca de 19 bilhões de dólares",
+        "Cerca de 1 bilhão de dólares",
+        "Cerca de 100 milhões de dólares",
+        "Cerca de 50 bilhões de dólares"
+      ],
+      "answer": 0,
+      "fact": "Na época, o WhatsApp tinha só cerca de 50 funcionários."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tecnologia de tela tem pixels que acendem sozinhos, sem luz de fundo?",
+      "options": [
+        "OLED",
+        "LCD",
+        "Plasma",
+        "CRT"
+      ],
+      "answer": 0,
+      "fact": "Como cada pixel apaga totalmente, as telas OLED mostram um preto perfeito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a resolução de uma tela 4K comum, em pixels?",
+      "options": [
+        "3840 × 2160",
+        "1920 × 1080",
+        "1280 × 720",
+        "7680 × 4320"
+      ],
+      "answer": 0,
+      "fact": "7680 × 4320 é a resolução 8K."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tipo de tela sensível ao toque reage à eletricidade do dedo?",
+      "options": [
+        "Capacitiva",
+        "Resistiva",
+        "Óptica",
+        "Magnética"
+      ],
+      "answer": 0,
+      "fact": "Por isso telas capacitivas não funcionam com luvas comuns."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Com que pseudônimo o criador do Bitcoin se apresentou?",
+      "options": [
+        "Satoshi Nakamoto",
+        "Vitalik Buterin",
+        "Hal Finney",
+        "Nick Szabo"
+      ],
+      "answer": 0,
+      "fact": "A verdadeira identidade de Satoshi Nakamoto continua desconhecida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que atalho do Windows abre a ferramenta de capturar só uma parte da tela?",
+      "options": [
+        "Windows + Shift + S",
+        "Ctrl + P",
+        "Alt + Tab",
+        "Windows + L"
+      ],
+      "answer": 0,
+      "fact": "Windows + L bloqueia o computador, e Alt + Tab alterna entre as janelas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Android é baseado no núcleo de qual sistema?",
+      "options": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "FreeBSD"
+      ],
+      "answer": 0,
+      "fact": "O Android foi criado por uma empresa comprada pelo Google em 2005."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o cofundador e CEO da Nvidia?",
+      "options": [
+        "Jensen Huang",
+        "Lisa Su",
+        "Pat Gelsinger",
+        "Satya Nadella"
+      ],
+      "answer": 0,
+      "fact": "Huang é conhecido por se apresentar sempre de jaqueta de couro preta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que site de perguntas e respostas é o mais famoso entre programadores?",
+      "options": [
+        "Stack Overflow",
+        "Quora",
+        "GitHub",
+        "Yahoo Respostas"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de um erro de programação que acontece quando a pilha de memória transborda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sistema de controle de versão foi criado por Linus Torvalds em 2005?",
+      "options": [
+        "Git",
+        "SVN",
+        "Mercurial",
+        "CVS"
+      ],
+      "answer": 0,
+      "fact": "Ele criou o Git para gerenciar o próprio código do Linux."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla PDF?",
+      "options": [
+        "Portable Document Format",
+        "Printed Data File",
+        "Public Document Folder",
+        "Personal Digital Form"
+      ],
+      "answer": 0,
+      "fact": "\"Portable\" quer dizer que o documento abre igual em qualquer aparelho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro microprocessador comercial, lançado pela Intel em 1971?",
+      "options": [
+        "Intel 4004",
+        "Intel 8086",
+        "Pentium",
+        "Z80"
+      ],
+      "answer": 0,
+      "fact": "O 4004 foi criado para uma calculadora japonesa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cofundador da Intel deu nome à lei sobre a duplicação dos transistores nos chips?",
+      "options": [
+        "Gordon Moore",
+        "Robert Noyce",
+        "Andy Grove",
+        "Federico Faggin"
+      ],
+      "answer": 0,
+      "fact": "Moore fez a previsão em 1965, quando ainda trabalhava na Fairchild."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que laboratório o transistor foi inventado, em 1947?",
+      "options": [
+        "Bell Labs",
+        "IBM Research",
+        "Xerox PARC",
+        "MIT"
+      ],
+      "answer": 0,
+      "fact": "Os três inventores do transistor ganharam o Nobel de Física em 1956."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação foi criada por Dennis Ritchie?",
+      "options": [
+        "C",
+        "Java",
+        "Python",
+        "Pascal"
+      ],
+      "answer": 0,
+      "fact": "Ritchie também ajudou a criar o sistema Unix."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem foi criada por Bjarne Stroustrup como uma extensão do C?",
+      "options": [
+        "C++",
+        "C#",
+        "Objective-C",
+        "Go"
+      ],
+      "answer": 0,
+      "fact": "O nome brinca com o operador \"++\", que soma 1 a uma variável."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem é usada para consultar bancos de dados relacionais?",
+      "options": [
+        "SQL",
+        "HTML",
+        "CSS",
+        "Assembly"
+      ],
+      "answer": 0,
+      "fact": "SQL quer dizer \"Structured Query Language\", linguagem de consulta estruturada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que centro de pesquisa criou a interface com janelas e mouse que inspirou o Macintosh?",
+      "options": [
+        "Xerox PARC",
+        "Bell Labs",
+        "IBM Research",
+        "Stanford"
+      ],
+      "answer": 0,
+      "fact": "Steve Jobs visitou o laboratório da Xerox em 1979 e se impressionou com o que viu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem inventou o mouse de computador, nos anos 1960?",
+      "options": [
+        "Douglas Engelbart",
+        "Steve Jobs",
+        "Alan Kay",
+        "Bill Gates"
+      ],
+      "answer": 0,
+      "fact": "Em 1968, Engelbart fez uma demonstração histórica chamada de \"a mãe de todas as demos\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que programa de 1988 é considerado o primeiro worm a se espalhar pela internet?",
+      "options": [
+        "Worm de Morris",
+        "ILOVEYOU",
+        "Melissa",
+        "Stuxnet"
+      ],
+      "answer": 0,
+      "fact": "Seu criador, Robert Morris, era estudante e virou depois professor do MIT."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ransomware atacou hospitais britânicos e milhares de empresas em 2017?",
+      "options": [
+        "WannaCry",
+        "Stuxnet",
+        "Conficker",
+        "Melissa"
+      ],
+      "answer": 0,
+      "fact": "O ataque explorou uma falha antiga do Windows que não tinha sido atualizada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que dupla criou o protocolo TCP/IP, base da internet?",
+      "options": [
+        "Vint Cerf e Bob Kahn",
+        "Bill Gates e Paul Allen",
+        "Larry Page e Sergey Brin",
+        "Steve Jobs e Steve Wozniak"
+      ],
+      "answer": 0,
+      "fact": "Vint Cerf é chamado de um dos \"pais da internet\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sistema traduz nomes de sites em endereços IP?",
+      "options": [
+        "DNS",
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "answer": 0,
+      "fact": "Sem o DNS, seria preciso decorar números para acessar cada site."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tem um endereço IPv4?",
+      "options": [
+        "32",
+        "64",
+        "128",
+        "16"
+      ],
+      "answer": 0,
+      "fact": "O IPv6, criado porque os endereços IPv4 estavam acabando, tem 128 bits."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a porta padrão do protocolo HTTPS?",
+      "options": [
+        "443",
+        "80",
+        "21",
+        "8080"
+      ],
+      "answer": 0,
+      "fact": "A porta 80 é a do HTTP comum, sem criptografia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a criptografia que usa um par de chaves, uma pública e uma privada?",
+      "options": [
+        "Assimétrica",
+        "Simétrica",
+        "Hash",
+        "Esteganografia"
+      ],
+      "answer": 0,
+      "fact": "Na assimétrica, o que é trancado com a chave pública só abre com a chave privada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país nasceu a arquitetura ARM, usada na maioria dos celulares?",
+      "options": [
+        "Reino Unido",
+        "Estados Unidos",
+        "Japão",
+        "Coreia do Sul"
+      ],
+      "answer": 0,
+      "fact": "A ARM nasceu da empresa britânica Acorn Computers, nos anos 1980."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamou o primeiro chip próprio da Apple para computadores Mac, de 2020?",
+      "options": [
+        "M1",
+        "A14",
+        "T2",
+        "G5"
+      ],
+      "answer": 0,
+      "fact": "Com o M1, a Apple deixou de usar processadores Intel nos Macs."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade fica a garagem onde a Apple foi fundada, em 1976?",
+      "options": [
+        "Los Altos",
+        "São Francisco",
+        "Seattle",
+        "Palo Alto"
+      ],
+      "answer": 0,
+      "fact": "A garagem ficava na casa dos pais de Steve Jobs."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro computador construído no Brasil, em 1972?",
+      "options": [
+        "Patinho Feio",
+        "Cisne Branco",
+        "Zezinho",
+        "Curumim"
+      ],
+      "answer": 0,
+      "fact": "O Patinho Feio foi criado por professores e alunos da Escola Politécnica da USP."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lei de 2014 estabeleceu direitos e deveres no uso da internet no Brasil?",
+      "options": [
+        "Marco Civil da Internet",
+        "LGPD",
+        "Lei Carolina Dieckmann",
+        "Lei do Software"
+      ],
+      "answer": 0,
+      "fact": "O Marco Civil garante, entre outras coisas, a neutralidade da rede."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que matemático é considerado o pai da teoria da informação?",
+      "options": [
+        "Claude Shannon",
+        "Alan Turing",
+        "John von Neumann",
+        "Norbert Wiener"
+      ],
+      "answer": 0,
+      "fact": "Shannon também construiu um rato mecânico que aprendia a sair de um labirinto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de 1959, ainda usada por bancos, teve participação de Grace Hopper?",
+      "options": [
+        "COBOL",
+        "Fortran",
+        "BASIC",
+        "Pascal"
+      ],
+      "answer": 0,
+      "fact": "Grace Hopper ajudou a popularizar o termo \"bug\" depois que uma mariposa foi achada dentro de um computador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que instituto alemão desenvolveu o formato de áudio MP3?",
+      "options": [
+        "Fraunhofer",
+        "Max Planck",
+        "Siemens",
+        "Bosch"
+      ],
+      "answer": 0,
+      "fact": "O MP3 comprime o som eliminando sons que o ouvido humano quase não percebe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava o sistema operacional da Microsoft, de texto, antes do Windows?",
+      "options": [
+        "MS-DOS",
+        "OS/2",
+        "Unix",
+        "CP/M"
+      ],
+      "answer": 0,
+      "fact": "No MS-DOS, tudo era feito digitando comandos numa tela preta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que computador da Apple, de 1977, ajudou a popularizar os computadores pessoais?",
+      "options": [
+        "Apple II",
+        "Macintosh",
+        "Lisa",
+        "Apple I"
+      ],
+      "answer": 0,
+      "fact": "O Apple II já vinha com tela colorida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que versão do Windows lançou o botão \"Iniciar\", em 1995?",
+      "options": [
+        "Windows 95",
+        "Windows 3.1",
+        "Windows 98",
+        "Windows XP"
+      ],
+      "answer": 0,
+      "fact": "A campanha de lançamento usou a música \"Start Me Up\", dos Rolling Stones."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que versão do Windows tinha como papel de parede a foto de uma colina verde com céu azul?",
+      "options": [
+        "Windows XP",
+        "Windows 7",
+        "Windows Vista",
+        "Windows 98"
+      ],
+      "answer": 0,
+      "fact": "A foto, chamada \"Bliss\", foi tirada na Califórnia em 1996."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que versão do Windows veio depois do 8, pulando um número?",
+      "options": [
+        "Windows 10",
+        "Windows 9",
+        "Windows 11",
+        "Windows XP"
+      ],
+      "answer": 0,
+      "fact": "A Microsoft nunca lançou um Windows 9."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa comprou a Sun Microsystems, criadora do Java, em 2010?",
+      "options": [
+        "Oracle",
+        "IBM",
+        "Google",
+        "Microsoft"
+      ],
+      "answer": 0,
+      "fact": "Por causa do Java, a Oracle processou o Google por anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro celular com Android, lançado em 2008?",
+      "options": [
+        "HTC Dream",
+        "Nexus One",
+        "Samsung Galaxy S",
+        "Motorola Droid"
+      ],
+      "answer": 0,
+      "fact": "O HTC Dream tinha um teclado físico que deslizava para fora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa comprou a Motorola Mobility em 2011?",
+      "options": [
+        "Google",
+        "Lenovo",
+        "Microsoft",
+        "Samsung"
+      ],
+      "answer": 0,
+      "fact": "Poucos anos depois, o Google vendeu a Motorola para a chinesa Lenovo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamam os robôs que percorrem a web lendo páginas para os buscadores?",
+      "options": [
+        "Crawlers",
+        "Cookies",
+        "Firewalls",
+        "Proxies"
+      ],
+      "answer": 0,
+      "fact": "O robô do Google se chama Googlebot."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa SEO?",
+      "options": [
+        "Otimização para mecanismos de busca",
+        "Segurança de e-mail online",
+        "Sistema eletrônico operacional",
+        "Servidor de entrada e saída"
+      ],
+      "answer": 0,
+      "fact": "Bom SEO ajuda uma página a aparecer mais alto nos resultados do Google."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla API?",
+      "options": [
+        "Interface de programação de aplicações",
+        "Aplicativo de internet portátil",
+        "Acesso privado à internet",
+        "Arquivo de instalação programada"
+      ],
+      "answer": 0,
+      "fact": "As APIs permitem que um programa converse com outro, como um app de clima consultando um servidor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla LED?",
+      "options": [
+        "Diodo emissor de luz",
+        "Lâmpada elétrica digital",
+        "Luz eletrônica difusa",
+        "Lente de energia direta"
+      ],
+      "answer": 0,
+      "fact": "O LED azul, que permitiu criar lâmpadas LED brancas, rendeu o Nobel de Física de 2014."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa LCD, nas telas?",
+      "options": [
+        "Tela de cristal líquido",
+        "Luz de cor digital",
+        "Lente de contraste dinâmico",
+        "Leitor de código digital"
+      ],
+      "answer": 0,
+      "fact": "Os cristais líquidos não brilham sozinhos: as telas LCD precisam de luz de fundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em quais frequências o Wi-Fi doméstico costuma funcionar?",
+      "options": [
+        "2,4 GHz e 5 GHz",
+        "900 MHz e 1,8 GHz",
+        "60 Hz e 120 Hz",
+        "10 GHz e 20 GHz"
+      ],
+      "answer": 0,
+      "fact": "A faixa de 2,4 GHz alcança mais longe, e a de 5 GHz é mais rápida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que unidade vem logo depois do terabyte?",
+      "options": [
+        "Petabyte",
+        "Exabyte",
+        "Zettabyte",
+        "Gigabyte"
+      ],
+      "answer": 0,
+      "fact": "Depois do petabyte vêm o exabyte, o zettabyte e o yottabyte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a unidade de informação dos computadores quânticos?",
+      "options": [
+        "Qubit",
+        "Quark",
+        "Quanta",
+        "Byte quântico"
+      ],
+      "answer": 0,
+      "fact": "Um qubit pode estar em combinação de 0 e 1 ao mesmo tempo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o endereço do primeiro site da história, criado no CERN?",
+      "options": [
+        "info.cern.ch",
+        "www.cern.com",
+        "home.web.org",
+        "first.site.net"
+      ],
+      "answer": 0,
+      "fact": "A página explicava o que era a World Wide Web e ainda pode ser visitada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a internet comercial começou a ser oferecida no Brasil?",
+      "options": [
+        "1995",
+        "1988",
+        "2000",
+        "1992"
+      ],
+      "answer": 0,
+      "fact": "Antes disso, a internet no Brasil era usada principalmente por universidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa criou o Windows?",
+      "options": [
+        "Microsoft",
+        "Apple",
+        "Google",
+        "IBM"
+      ],
+      "answer": 0,
+      "fact": "A primeira versão do Windows saiu em 1985."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o sistema operacional do iPhone?",
+      "options": [
+        "iOS",
+        "Android",
+        "Windows",
+        "Linux"
+      ],
+      "answer": 0,
+      "fact": "O Android, do Google, é o sistema mais usado em celulares no mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla apaga o caractere à esquerda do cursor?",
+      "options": [
+        "Backspace",
+        "Delete",
+        "Esc",
+        "Tab"
+      ],
+      "answer": 0,
+      "fact": "Já a tecla Delete apaga o que está à direita do cursor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que atalho copia um texto selecionado no Windows?",
+      "options": [
+        "Ctrl + C",
+        "Ctrl + V",
+        "Ctrl + X",
+        "Ctrl + Z"
+      ],
+      "answer": 0,
+      "fact": "Ctrl + V cola, e Ctrl + X recorta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que rede social chinesa é famosa pelos vídeos curtos com dancinhas?",
+      "options": [
+        "TikTok",
+        "Kwai",
+        "Snapchat",
+        "Pinterest"
+      ],
+      "answer": 0,
+      "fact": "Na China, o aplicativo tem outro nome: Douyin."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo popularizou as corridas de carro por app no mundo?",
+      "options": [
+        "Uber",
+        "Waze",
+        "iFood",
+        "Airbnb"
+      ],
+      "answer": 0,
+      "fact": "A Uber chegou ao Brasil em 2014."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o navegador de internet do Google?",
+      "options": [
+        "Chrome",
+        "Safari",
+        "Firefox",
+        "Edge"
+      ],
+      "answer": 0,
+      "fact": "O Chrome foi lançado em 2008 e virou o navegador mais usado do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o navegador de internet da Apple?",
+      "options": [
+        "Safari",
+        "Chrome",
+        "Opera",
+        "Edge"
+      ],
+      "answer": 0,
+      "fact": "O Safari vem instalado em todos os iPhones e Macs."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que site é uma enciclopédia livre escrita por voluntários?",
+      "options": [
+        "Wikipédia",
+        "Google",
+        "Yahoo",
+        "Reddit"
+      ],
+      "answer": 0,
+      "fact": "A Wikipédia foi criada em 2001 e tem versões em centenas de idiomas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa fabrica os celulares Galaxy?",
+      "options": [
+        "Samsung",
+        "Apple",
+        "Motorola",
+        "Xiaomi"
+      ],
+      "answer": 0,
+      "fact": "A Samsung é sul-coreana e começou em 1938 vendendo alimentos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a imagem que registra o que está aparecendo na tela?",
+      "options": [
+        "Captura de tela (print)",
+        "Papel de parede",
+        "Ícone",
+        "Cursor"
+      ],
+      "answer": 0,
+      "fact": "No Windows, a tecla Print Screen copia a imagem da tela inteira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a assistente de voz da Amazon?",
+      "options": [
+        "Alexa",
+        "Siri",
+        "Cortana",
+        "Bixby"
+      ],
+      "answer": 0,
+      "fact": "O nome Alexa foi inspirado na antiga Biblioteca de Alexandria."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o nome do formato de teclado mais comum, pelas primeiras letras da linha de cima?",
+      "options": [
+        "QWERTY",
+        "ABCDEF",
+        "AZERTY",
+        "DVORAK"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, o padrão é o ABNT2, uma variação com a tecla Ç."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa criou o leitor de livros digitais Kindle?",
+      "options": [
+        "Amazon",
+        "Apple",
+        "Google",
+        "Sony"
+      ],
+      "answer": 0,
+      "fact": "O primeiro Kindle foi lançado em 2007."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa criou o Gmail?",
+      "options": [
+        "Google",
+        "Microsoft",
+        "Yahoo",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "O Gmail foi lançado em 1º de abril de 2004, e muita gente achou que era mentira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo de videochamadas virou febre na pandemia de 2020?",
+      "options": [
+        "Zoom",
+        "Skype",
+        "Discord",
+        "Telegram"
+      ],
+      "answer": 0,
+      "fact": "Em poucos meses de 2020, o Zoom passou de 10 milhões para 300 milhões de participantes diários."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que serviço de streaming tem como logo um \"N\" vermelho?",
+      "options": [
+        "Netflix",
+        "Globoplay",
+        "Prime Video",
+        "Disney+"
+      ],
+      "answer": 0,
+      "fact": "A Netflix começou em 1997 alugando DVDs pelo correio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que serviço de música, criado na Suécia, tem logo verde?",
+      "options": [
+        "Spotify",
+        "Deezer",
+        "Apple Music",
+        "YouTube Music"
+      ],
+      "answer": 0,
+      "fact": "O Spotify foi lançado em 2008."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um QR Code?",
+      "options": [
+        "Um código que a câmera do celular consegue ler",
+        "Um tipo de senha",
+        "Um vírus de computador",
+        "Um cabo de internet"
+      ],
+      "answer": 0,
+      "fact": "O QR Code foi criado no Japão, em 1994, para controlar peças numa fábrica de carros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o Pix?",
+      "options": [
+        "Um pagamento instantâneo criado pelo Banco Central",
+        "Um banco digital",
+        "Uma moeda virtual",
+        "Um cartão de crédito"
+      ],
+      "answer": 0,
+      "fact": "O Pix foi lançado em novembro de 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que rede social é usada para currículos e vagas de emprego?",
+      "options": [
+        "LinkedIn",
+        "Facebook",
+        "TikTok",
+        "Pinterest"
+      ],
+      "answer": 0,
+      "fact": "O LinkedIn foi comprado pela Microsoft em 2016."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo de mensagens tem um aviãozinho de papel como ícone?",
+      "options": [
+        "Telegram",
+        "WhatsApp",
+        "Messenger",
+        "Signal"
+      ],
+      "answer": 0,
+      "fact": "O Telegram foi criado pelos irmãos russos Pavel e Nikolai Durov."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é Bluetooth?",
+      "options": [
+        "Uma conexão sem fio de curto alcance",
+        "Um tipo de tela",
+        "Um vírus",
+        "Um cabo de energia"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia o rei viking Harald \"Dente Azul\", que unificou a Dinamarca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que língua vem a palavra \"emoji\"?",
+      "options": [
+        "Japonês",
+        "Inglês",
+        "Coreano",
+        "Chinês"
+      ],
+      "answer": 0,
+      "fact": "Vem de \"e\" (imagem) + \"moji\" (letra)."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas senhas é a mais segura?",
+      "options": [
+        "Uma senha longa com letras, números e símbolos",
+        "123456",
+        "A data de nascimento",
+        "O nome do cachorro"
+      ],
+      "answer": 0,
+      "fact": "\"123456\" aparece todos os anos entre as senhas mais usadas do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamam as mensagens indesejadas enviadas em massa?",
+      "options": [
+        "Spam",
+        "Backup",
+        "Cookie",
+        "Firewall"
+      ],
+      "answer": 0,
+      "fact": "O nome veio de um quadro do grupo de comédia britânico Monty Python."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa fabrica os processadores Core i5 e i7?",
+      "options": [
+        "Intel",
+        "AMD",
+        "Nvidia",
+        "Qualcomm"
+      ],
+      "answer": 0,
+      "fact": "A Intel foi fundada em 1968, no Vale do Silício."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o Vale do Silício?",
+      "options": [
+        "Uma região da Califórnia com grandes empresas de tecnologia",
+        "Uma mina de cristais",
+        "Uma cidade no Japão",
+        "Um laboratório da NASA"
+      ],
+      "answer": 0,
+      "fact": "O nome vem do silício, o material usado nos chips."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que quer dizer guardar arquivos \"na nuvem\"?",
+      "options": [
+        "Guardar na internet, em servidores",
+        "Guardar num pendrive",
+        "Imprimir os arquivos",
+        "Apagar os arquivos"
+      ],
+      "answer": 0,
+      "fact": "Google Drive, iCloud e Dropbox são exemplos de serviços de nuvem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes formatos é de imagem?",
+      "options": [
+        "JPG",
+        "MP3",
+        "DOCX",
+        "EXE"
+      ],
+      "answer": 0,
+      "fact": "MP3 é de música, DOCX é de texto do Word, e EXE é de programa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que formato de arquivo mantém a formatação igual em qualquer computador?",
+      "options": [
+        "PDF",
+        "TXT",
+        "MP4",
+        "HTML"
+      ],
+      "answer": 0,
+      "fact": "O PDF foi criado pela Adobe, em 1993."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que programa da Microsoft é usado para fazer planilhas?",
+      "options": [
+        "Excel",
+        "Word",
+        "PowerPoint",
+        "Paint"
+      ],
+      "answer": 0,
+      "fact": "O Excel foi lançado primeiro para o Mac, em 1985."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que programa da Microsoft é usado para fazer apresentações de slides?",
+      "options": [
+        "PowerPoint",
+        "Excel",
+        "Word",
+        "Outlook"
+      ],
+      "answer": 0,
+      "fact": "O PowerPoint foi criado por uma pequena empresa e comprado pela Microsoft em 1987."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa lançou o Walkman, o toca-fitas portátil?",
+      "options": [
+        "Sony",
+        "Philips",
+        "Panasonic",
+        "Toshiba"
+      ],
+      "answer": 0,
+      "fact": "Lançado em 1979, o Walkman permitiu ouvir música andando pela rua."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um drone?",
+      "options": [
+        "Uma aeronave sem piloto a bordo",
+        "Um robô aspirador",
+        "Um tipo de satélite",
+        "Um celular dobrável"
+      ],
+      "answer": 0,
+      "fact": "Os drones são controlados à distância ou voam sozinhos por GPS."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que marca de carros elétricos tem Elon Musk como principal dono?",
+      "options": [
+        "Tesla",
+        "BYD",
+        "Ford",
+        "Toyota"
+      ],
+      "answer": 0,
+      "fact": "A empresa leva o nome do inventor Nikola Tesla."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que empresa de Elon Musk faz foguetes que pousam de volta?",
+      "options": [
+        "SpaceX",
+        "Blue Origin",
+        "NASA",
+        "Boeing"
+      ],
+      "answer": 0,
+      "fact": "Os foguetes Falcon 9 pousam em pé para serem reutilizados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que significa a sigla IA?",
+      "options": [
+        "Inteligência artificial",
+        "Internet avançada",
+        "Informação automática",
+        "Imagem animada"
+      ],
+      "answer": 0,
+      "fact": "O termo \"inteligência artificial\" foi criado em 1956, numa conferência nos Estados Unidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que serve o GPS?",
+      "options": [
+        "Para saber a localização",
+        "Para medir a temperatura",
+        "Para carregar a bateria",
+        "Para tirar fotos"
+      ],
+      "answer": 0,
+      "fact": "O GPS foi criado pelas Forças Armadas dos Estados Unidos e usa dezenas de satélites."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é streaming?",
+      "options": [
+        "Ver ou ouvir conteúdo pela internet sem precisar baixar",
+        "Gravar um DVD",
+        "Apagar arquivos",
+        "Imprimir fotos"
+      ],
+      "answer": 0,
+      "fact": "Netflix, Spotify e YouTube são serviços de streaming."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que era o disquete?",
+      "options": [
+        "Um disco para guardar arquivos",
+        "Um tipo de mouse",
+        "Um jogo",
+        "Um modem"
+      ],
+      "answer": 0,
+      "fact": "O ícone de \"salvar\" de muitos programas ainda é um desenho de disquete."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que botão do mouse costuma abrir um menu de opções?",
+      "options": [
+        "O direito",
+        "O esquerdo",
+        "A rodinha",
+        "Nenhum"
+      ],
+      "answer": 0,
+      "fact": "O primeiro mouse, de 1964, era uma caixinha de madeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem o logotipo do Google?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "As cores são azul, vermelho, amarelo e verde."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a foto que a pessoa tira de si mesma?",
+      "options": [
+        "Selfie",
+        "Story",
+        "Meme",
+        "Print"
+      ],
+      "answer": 0,
+      "fact": "\"Selfie\" foi eleita a palavra do ano pelo Dicionário Oxford em 2013."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que significa \"LOL\" na internet?",
+      "options": [
+        "Rindo alto",
+        "Muito obrigado",
+        "Até logo",
+        "Estou ocupado"
+      ],
+      "answer": 0,
+      "fact": "Vem do inglês \"laughing out loud\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo brasileiro de entrega de comida tem logo vermelho?",
+      "options": [
+        "iFood",
+        "Rappi",
+        "Uber Eats",
+        "99Food"
+      ],
+      "answer": 0,
+      "fact": "O iFood foi fundado em 2011."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que banco digital brasileiro é famoso pela cor roxa?",
+      "options": [
+        "Nubank",
+        "Inter",
+        "C6 Bank",
+        "PicPay"
+      ],
+      "answer": 0,
+      "fact": "O Nubank foi fundado em 2013 e começou só com um cartão de crédito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo de mapas usa avisos dos próprios motoristas sobre o trânsito?",
+      "options": [
+        "Waze",
+        "Uber",
+        "Google Earth",
+        "Moovit"
+      ],
+      "answer": 0,
+      "fact": "O Waze foi criado em Israel e comprado pelo Google em 2013."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que site de compras, de logo amarelo, foi fundado na Argentina?",
+      "options": [
+        "Mercado Livre",
+        "Amazon",
+        "Shopee",
+        "Americanas"
+      ],
+      "answer": 0,
+      "fact": "O Mercado Livre foi fundado em 1999, em Buenos Aires."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamam as imagens engraçadas que viralizam na internet?",
+      "options": [
+        "Memes",
+        "Spams",
+        "Pop-ups",
+        "Banners"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"meme\" foi criada pelo biólogo Richard Dawkins, em 1976."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que rede social tem um fantasminha no logo?",
+      "options": [
+        "Snapchat",
+        "TikTok",
+        "Instagram",
+        "Discord"
+      ],
+      "answer": 0,
+      "fact": "O Snapchat ficou famoso pelas fotos que somem depois de vistas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cartãozinho colocado no celular identifica a linha na operadora?",
+      "options": [
+        "Chip (SIM)",
+        "Cartão de memória",
+        "Bateria",
+        "Antena"
+      ],
+      "answer": 0,
+      "fact": "Muitos celulares novos usam o eSIM, um chip digital que já vem embutido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um sistema operacional de computador?",
+      "options": [
+        "Linux",
+        "Word",
+        "Photoshop",
+        "Excel"
+      ],
+      "answer": 0,
+      "fact": "Windows, macOS e Linux são os sistemas mais usados em computadores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que serve um roteador de internet em casa?",
+      "options": [
+        "Distribuir a internet entre os aparelhos",
+        "Imprimir documentos",
+        "Esfriar o computador",
+        "Aumentar o volume"
+      ],
+      "answer": 0,
+      "fact": "Paredes grossas e espelhos podem atrapalhar o sinal do roteador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que nome o Twitter passou a ter em 2023?",
+      "options": [
+        "X",
+        "Threads",
+        "Bluesky",
+        "Meta"
+      ],
+      "answer": 0,
+      "fact": "Elon Musk comprou o Twitter em 2022."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que significa \"HD\" quando falamos de telas?",
+      "options": [
+        "Alta definição",
+        "Disco rígido",
+        "Muito escuro",
+        "Hora digital"
+      ],
+      "answer": 0,
+      "fact": "Uma tela Full HD tem 1920 × 1080 pixels; a 4K tem cerca de quatro vezes mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla deixa a letra maiúscula só enquanto está pressionada?",
+      "options": [
+        "Shift",
+        "Caps Lock",
+        "Ctrl",
+        "Alt"
+      ],
+      "answer": 0,
+      "fact": "Diferente do Caps Lock, o Shift só funciona enquanto o dedo está nele."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quem construiu o Z3, um dos primeiros computadores programáveis, em 1941?",
+      "options": [
+        "Konrad Zuse",
+        "Alan Turing",
+        "John von Neumann",
+        "Charles Babbage",
+        "Howard Aiken",
+        "John Atanasoff"
+      ],
+      "answer": 0,
+      "fact": "O Z3 foi construído na Alemanha e destruído num bombardeio em 1943."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto pesava o ENIAC, computador de 1945?",
+      "options": [
+        "Cerca de 27 toneladas",
+        "Cerca de 500 kg",
+        "Cerca de 2 toneladas",
+        "Cerca de 8 toneladas",
+        "Cerca de 60 toneladas",
+        "Cerca de 120 toneladas"
+      ],
+      "answer": 0,
+      "fact": "O ENIAC ocupava uma sala inteira e tinha cerca de 18 mil válvulas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Como se chama o primeiro vídeo publicado no YouTube, em 2005?",
+      "options": [
+        "Me at the zoo",
+        "Charlie bit my finger",
+        "Hello World",
+        "First video",
+        "Evolution of Dance",
+        "Gangnam Style"
+      ],
+      "answer": 0,
+      "fact": "No vídeo, o cofundador Jawed Karim fala por 19 segundos diante dos elefantes de um zoológico."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual era o preço do primeiro iPhone de 4 GB, nos EUA, em 2007?",
+      "options": [
+        "499 dólares",
+        "199 dólares",
+        "299 dólares",
+        "399 dólares",
+        "699 dólares",
+        "999 dólares"
+      ],
+      "answer": 0,
+      "fact": "Poucos meses depois, a Apple baixou o preço e devolveu crédito aos primeiros compradores."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quem propôs o primeiro emoticon de sorriso, :-), em 1982?",
+      "options": [
+        "Scott Fahlman",
+        "Tim Berners-Lee",
+        "Ray Tomlinson",
+        "Vint Cerf",
+        "Steve Wozniak",
+        "Bill Gates"
+      ],
+      "answer": 0,
+      "fact": "Fahlman sugeriu o símbolo num fórum da Universidade Carnegie Mellon, para marcar mensagens de brincadeira."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos bitcoins um programador pagou por duas pizzas, em 2010?",
+      "options": [
+        "10.000",
+        "1",
+        "10",
+        "100",
+        "1.000",
+        "100.000"
+      ],
+      "answer": 0,
+      "fact": "O dia da compra, 22 de maio, é lembrado como o \"Bitcoin Pizza Day\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de bateria é usado na maioria dos celulares?",
+      "options": [
+        "Íon de lítio",
+        "Chumbo-ácido",
+        "Níquel-cádmio",
+        "Alcalina"
+      ],
+      "answer": 0,
+      "fact": "Os criadores da bateria de íon de lítio ganharam o Nobel de Química em 2019."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tecnologia permite pagar aproximando o celular da maquininha?",
+      "options": [
+        "NFC",
+        "Bluetooth",
+        "GPS",
+        "Infravermelho"
+      ],
+      "answer": 0,
+      "fact": "NFC quer dizer \"comunicação por campo de proximidade\" e só funciona a poucos centímetros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como é chamado o ícone de três risquinhos que abre o menu dos aplicativos?",
+      "options": [
+        "Menu hambúrguer",
+        "Menu kebab",
+        "Menu escada",
+        "Menu grade"
+      ],
+      "answer": 0,
+      "fact": "O apelido vem do desenho, que lembra o pão e a carne de um hambúrguer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aplicativo chinês junta mensagens, pagamentos e serviços num só lugar?",
+      "options": [
+        "WeChat",
+        "TikTok",
+        "Line",
+        "Telegram"
+      ],
+      "answer": 0,
+      "fact": "Na China, o WeChat é usado até para pagar contas na rua."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem fundou o Google?",
+      "options": [
+        "Larry Page e Sergey Brin",
+        "Bill Gates e Paul Allen",
+        "Steve Jobs e Steve Wozniak",
+        "Mark Zuckerberg e Eduardo Saverin"
+      ],
+      "answer": 0,
+      "fact": "O Google começou como um projeto de doutorado na Universidade Stanford."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que linguagem de programação deixa as páginas da web interativas?",
+      "options": [
+        "JavaScript",
+        "HTML",
+        "SQL",
+        "COBOL"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome parecido, JavaScript não tem relação direta com a linguagem Java."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que linguagem define cores, fontes e o visual das páginas da web?",
+      "options": [
+        "CSS",
+        "HTML",
+        "Python",
+        "C++"
+      ],
+      "answer": 0,
+      "fact": "O HTML cuida da estrutura da página, e o CSS cuida da aparência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é uma URL?",
+      "options": [
+        "O endereço de uma página na internet",
+        "Um tipo de vírus",
+        "Uma senha de Wi-Fi",
+        "Um programa de edição"
+      ],
+      "answer": 0,
+      "fact": "Por exemplo: https://www.exemplo.com.br é uma URL."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que faz um firewall?",
+      "options": [
+        "Bloqueia acessos indesejados a uma rede ou computador",
+        "Aumenta a velocidade da internet",
+        "Limpa a tela",
+        "Guarda fotos"
+      ],
+      "answer": 0,
+      "fact": "O nome vem das paredes corta-fogo usadas em prédios para conter incêndios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um backup?",
+      "options": [
+        "Uma cópia de segurança dos arquivos",
+        "Um programa de mensagens",
+        "Um tipo de vírus",
+        "Um modo de economia de bateria"
+      ],
+      "answer": 0,
+      "fact": "A regra clássica do backup é ter três cópias, em dois tipos de mídia, com uma fora de casa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que faz um ransomware?",
+      "options": [
+        "Sequestra os arquivos e pede resgate para liberá-los",
+        "Acelera o computador",
+        "Bloqueia anúncios",
+        "Atualiza o sistema"
+      ],
+      "answer": 0,
+      "fact": "Muitos ataques de ransomware pedem o pagamento em criptomoedas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é a verificação em duas etapas?",
+      "options": [
+        "Pedir um segundo código além da senha para entrar",
+        "Ter duas senhas iguais",
+        "Entrar duas vezes no mesmo site",
+        "Usar dois computadores"
+      ],
+      "answer": 0,
+      "fact": "O código extra costuma vir por SMS ou por um aplicativo autenticador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa fabrica as placas de vídeo GeForce?",
+      "options": [
+        "Nvidia",
+        "Intel",
+        "AMD",
+        "Asus"
+      ],
+      "answer": 0,
+      "fact": "A Nvidia virou uma das empresas mais valiosas do mundo com os chips usados em inteligência artificial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que geração de internet móvel veio depois do 4G?",
+      "options": [
+        "5G",
+        "3G",
+        "4G+",
+        "6G"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, o 5G começou a funcionar em 2022."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa \"IoT\"?",
+      "options": [
+        "Internet das coisas",
+        "Interface de operação total",
+        "Inteligência online de tráfego",
+        "Instalação de ondas de transmissão"
+      ],
+      "answer": 0,
+      "fact": "Geladeiras, lâmpadas e relógios conectados à internet fazem parte da IoT."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que unidade costuma medir a velocidade da internet?",
+      "options": [
+        "Mbps",
+        "Volts",
+        "Hertz",
+        "Megapixels"
+      ],
+      "answer": 0,
+      "fact": "Atenção: são megabits por segundo, e 8 bits formam 1 byte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que conector a União Europeia tornou obrigatório nos celulares novos a partir de 2024?",
+      "options": [
+        "USB-C",
+        "Lightning",
+        "Micro-USB",
+        "Mini-USB"
+      ],
+      "answer": 0,
+      "fact": "A regra fez até a Apple trocar o conector dos iPhones."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que conector a Apple usou nos iPhones de 2012 a 2023?",
+      "options": [
+        "Lightning",
+        "USB-C",
+        "Micro-USB",
+        "30 pinos"
+      ],
+      "answer": 0,
+      "fact": "Antes do Lightning, os iPhones usavam um conector largo de 30 pinos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que marca canadense fazia celulares com teclado físico, muito usados por executivos nos anos 2000?",
+      "options": [
+        "BlackBerry",
+        "Nokia",
+        "Palm",
+        "Siemens"
+      ],
+      "answer": 0,
+      "fact": "O BlackBerry ficou tão popular que ganhou o apelido de \"CrackBerry\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que computador da IBM venceu o campeão mundial de xadrez Garry Kasparov, em 1997?",
+      "options": [
+        "Deep Blue",
+        "Watson",
+        "HAL 9000",
+        "AlphaZero"
+      ],
+      "answer": 0,
+      "fact": "Kasparov tinha vencido a primeira disputa contra o Deep Blue, em 1996."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que programa de IA venceu o campeão de Go Lee Sedol, em 2016?",
+      "options": [
+        "AlphaGo",
+        "Deep Blue",
+        "Watson",
+        "ChatGPT"
+      ],
+      "answer": 0,
+      "fact": "O AlphaGo foi criado pela DeepMind, empresa do Google."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que linguagem a Apple lançou em 2014 para criar apps de iPhone?",
+      "options": [
+        "Swift",
+        "Kotlin",
+        "Ruby",
+        "Rust"
+      ],
+      "answer": 0,
+      "fact": "O Swift substituiu aos poucos o Objective-C nos apps da Apple."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um algoritmo?",
+      "options": [
+        "Uma sequência de passos para resolver um problema",
+        "Um tipo de computador",
+        "Uma peça do teclado",
+        "Um vírus"
+      ],
+      "answer": 0,
+      "fact": "Uma receita de bolo também é, de certa forma, um algoritmo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um bit?",
+      "options": [
+        "A menor unidade de informação: 0 ou 1",
+        "Um tipo de cabo",
+        "Um programa",
+        "Um megabyte"
+      ],
+      "answer": 0,
+      "fact": "Oito bits formam um byte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que sistema de numeração os computadores trabalham por dentro?",
+      "options": [
+        "Binário",
+        "Decimal",
+        "Romano",
+        "Hexadecimal apenas"
+      ],
+      "answer": 0,
+      "fact": "No binário só existem dois dígitos: 0 e 1."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um cookie na internet?",
+      "options": [
+        "Um arquivinho que o site guarda no navegador",
+        "Um vírus que rouba senhas",
+        "Um tipo de anúncio",
+        "Um jogo online"
+      ],
+      "answer": 0,
+      "fact": "É por causa dos cookies que muitos sites lembram do seu login e do seu carrinho de compras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é uma VPN?",
+      "options": [
+        "Uma rede privada virtual, que protege a conexão",
+        "Um tipo de vírus",
+        "Um programa de vídeo",
+        "Um cabo de rede"
+      ],
+      "answer": 0,
+      "fact": "Empresas usam VPN para que os funcionários acessem a rede interna de casa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que indica o \"S\" do HTTPS?",
+      "options": [
+        "Que a conexão é segura",
+        "Que o site é de serviço",
+        "Que o site é simples",
+        "Que o site é de São Paulo"
+      ],
+      "answer": 0,
+      "fact": "O cadeado ao lado do endereço mostra que a conexão está criptografada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o domínio de internet do Brasil?",
+      "options": [
+        ".br",
+        ".bz",
+        ".bra",
+        ".bs"
+      ],
+      "answer": 0,
+      "fact": "O .bz é de Belize, e o .bs, das Bahamas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a primeira rede social a passar de 1 bilhão de usuários?",
+      "options": [
+        "Facebook",
+        "Orkut",
+        "MySpace",
+        "Twitter"
+      ],
+      "answer": 0,
+      "fact": "O Facebook chegou a 1 bilhão de usuários ativos em 2012."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que rede social do Google fez enorme sucesso no Brasil nos anos 2000?",
+      "options": [
+        "Orkut",
+        "MySpace",
+        "Google+",
+        "Fotolog"
+      ],
+      "answer": 0,
+      "fact": "O Orkut foi desativado em 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que programa de mensagens da Microsoft era febre nos anos 2000?",
+      "options": [
+        "MSN Messenger",
+        "ICQ",
+        "Skype",
+        "Yahoo Messenger"
+      ],
+      "answer": 0,
+      "fact": "O MSN foi desativado em 2013, e os usuários foram levados para o Skype."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que serviço de troca de músicas, de 1999, enfrentou processos das gravadoras?",
+      "options": [
+        "Napster",
+        "Spotify",
+        "iTunes",
+        "Kazaa"
+      ],
+      "answer": 0,
+      "fact": "Um dos processos foi movido pela banda Metallica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que memória do computador perde os dados quando ele é desligado?",
+      "options": [
+        "RAM",
+        "SSD",
+        "HD",
+        "Pendrive"
+      ],
+      "answer": 0,
+      "fact": "É por isso que um trabalho não salvo se perde quando falta luz."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é a placa-mãe de um computador?",
+      "options": [
+        "A placa principal, que liga todos os componentes",
+        "A placa de vídeo",
+        "A fonte de energia",
+        "O gabinete"
+      ],
+      "answer": 0,
+      "fact": "Processador, memória e placa de vídeo são encaixados na placa-mãe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que peça resfria o processador do computador?",
+      "options": [
+        "Cooler",
+        "Fonte",
+        "Placa de som",
+        "Modem"
+      ],
+      "answer": 0,
+      "fact": "Sem resfriamento, o processador esquenta e o computador desliga para se proteger."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem criou a World Wide Web?",
+      "options": [
+        "Tim Berners-Lee",
+        "Bill Gates",
+        "Steve Jobs",
+        "Vint Cerf"
+      ],
+      "answer": 0,
+      "fact": "Ele criou a web em 1989, quando trabalhava no CERN, na Suíça."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que inventor britânico projetou a Máquina Analítica, ancestral do computador?",
+      "options": [
+        "Charles Babbage",
+        "Alan Turing",
+        "Isaac Newton",
+        "John von Neumann"
+      ],
+      "answer": 0,
+      "fact": "Ada Lovelace escreveu programas para a Máquina Analítica, que nunca chegou a ser construída."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aplicativo de namoro ficou famoso pelo gesto de deslizar para a direita?",
+      "options": [
+        "Tinder",
+        "Badoo",
+        "Bumble",
+        "Happn"
+      ],
+      "answer": 0,
+      "fact": "O Tinder foi lançado em 2012."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um deepfake?",
+      "options": [
+        "Um vídeo ou áudio falso criado com inteligência artificial",
+        "Um vírus de celular",
+        "Um tipo de câmera",
+        "Um filtro de foto comum"
+      ],
+      "answer": 0,
+      "fact": "Deepfakes podem trocar o rosto ou imitar a voz de uma pessoa de forma muito realista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tecnologia registra transações num livro digital compartilhado e é a base do Bitcoin?",
+      "options": [
+        "Blockchain",
+        "Bluetooth",
+        "Big data",
+        "Backup"
+      ],
+      "answer": 0,
+      "fact": "Num blockchain, cada bloco de dados fica ligado ao anterior, o que dificulta fraudes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que lei brasileira protege os dados pessoais, em vigor desde 2020?",
+      "options": [
+        "LGPD",
+        "CLT",
+        "ECA",
+        "Marco Civil"
+      ],
+      "answer": 0,
+      "fact": "A LGPD foi inspirada na lei europeia de proteção de dados, a GDPR."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atalho do Windows abre direto o Gerenciador de Tarefas?",
+      "options": [
+        "Ctrl + Shift + Esc",
+        "Ctrl + Alt + T",
+        "Alt + F4",
+        "Windows + D"
+      ],
+      "answer": 0,
+      "fact": "Alt + F4 fecha a janela aberta, e Windows + D mostra a área de trabalho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que fundação criou o navegador Firefox?",
+      "options": [
+        "Mozilla",
+        "Apache",
+        "Linux Foundation",
+        "Wikimedia"
+      ],
+      "answer": 0,
+      "fact": "O Firefox foi lançado em 2004."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que navegador da Microsoft substituiu o Internet Explorer?",
+      "options": [
+        "Edge",
+        "Chrome",
+        "Opera",
+        "Safari"
+      ],
+      "answer": 0,
+      "fact": "O Internet Explorer foi oficialmente aposentado em 2022."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que navegador dominava a web nos anos 1990, antes do Internet Explorer?",
+      "options": [
+        "Netscape Navigator",
+        "Firefox",
+        "Chrome",
+        "Opera"
+      ],
+      "answer": 0,
+      "fact": "O código do Netscape deu origem, anos depois, ao Firefox."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o buscador da Microsoft?",
+      "options": [
+        "Bing",
+        "Yahoo",
+        "DuckDuckGo",
+        "Ask"
+      ],
+      "answer": 0,
+      "fact": "O Bing foi lançado em 2009."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa é dona do serviço de streaming Prime Video?",
+      "options": [
+        "Amazon",
+        "Netflix",
+        "Google",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "O Prime Video faz parte da assinatura Amazon Prime, que também dá frete grátis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual era o nome da assistente de voz da Microsoft?",
+      "options": [
+        "Cortana",
+        "Alexa",
+        "Siri",
+        "Bixby"
+      ],
+      "answer": 0,
+      "fact": "O nome veio de uma personagem de inteligência artificial da série de games Halo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem é o CEO da Apple desde 2011?",
+      "options": [
+        "Tim Cook",
+        "Steve Jobs",
+        "Steve Wozniak",
+        "Jony Ive"
+      ],
+      "answer": 0,
+      "fact": "Tim Cook assumiu pouco antes da morte de Steve Jobs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que rede social é dividida em comunidades chamadas \"subreddits\"?",
+      "options": [
+        "Reddit",
+        "Discord",
+        "Tumblr",
+        "Quora"
+      ],
+      "answer": 0,
+      "fact": "No Reddit, os usuários votam para cima ou para baixo nas postagens."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que plataforma de código, comprada pela Microsoft em 2018, guarda projetos de programação?",
+      "options": [
+        "GitHub",
+        "GitLab",
+        "Stack Overflow",
+        "Bitbucket"
+      ],
+      "answer": 0,
+      "fact": "O mascote do GitHub é o Octocat, metade gato, metade polvo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem criou o Linux?",
+      "options": [
+        "Linus Torvalds",
+        "Richard Stallman",
+        "Bill Gates",
+        "Dennis Ritchie"
+      ],
+      "answer": 0,
+      "fact": "Ele começou o projeto em 1991, ainda estudante na Finlândia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que robô da NASA pousou em Marte em 2021, levando um pequeno helicóptero?",
+      "options": [
+        "Perseverance",
+        "Curiosity",
+        "Opportunity",
+        "Spirit"
+      ],
+      "answer": 0,
+      "fact": "O helicóptero Ingenuity fez o primeiro voo motorizado em outro planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que telescópio espacial foi lançado em 2021 como sucessor do Hubble?",
+      "options": [
+        "James Webb",
+        "Kepler",
+        "Chandra",
+        "Spitzer"
+      ],
+      "answer": 0,
+      "fact": "O James Webb observa principalmente no infravermelho e tem um espelho dourado de 6,5 m."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a memória rápida que guarda dados usados com frequência?",
+      "options": [
+        "Cache",
+        "Swap",
+        "BIOS",
+        "Disco rígido"
+      ],
+      "answer": 0,
+      "fact": "Limpar o cache do navegador pode resolver páginas que carregam com erro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o tempo de resposta de uma conexão, medido em milissegundos?",
+      "options": [
+        "Latência (ping)",
+        "Download",
+        "Largura de banda",
+        "Upload"
+      ],
+      "answer": 0,
+      "fact": "Em chamadas de vídeo e jogos online, uma latência alta causa atrasos."
     }
   ]
 }

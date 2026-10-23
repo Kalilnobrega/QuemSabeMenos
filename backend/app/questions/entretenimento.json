@@ -756,6 +756,2154 @@
       ],
       "answer": 0,
       "fact": "Ele nasceu em Zanzibar, em 1946, numa família de origem parse."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ator ganhou um Oscar póstumo pelo Coringa de \"O Cavaleiro das Trevas\"?",
+      "options": [
+        "Heath Ledger",
+        "Joaquin Phoenix",
+        "Jack Nicholson",
+        "Jared Leto"
+      ],
+      "answer": 0,
+      "fact": "Heath Ledger morreu em janeiro de 2008, meses antes da estreia do filme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que novela brasileira fez enorme sucesso na China e na União Soviética nos anos 1980?",
+      "options": [
+        "Escrava Isaura",
+        "Roque Santeiro",
+        "Dancin' Days",
+        "Pantanal"
+      ],
+      "answer": 0,
+      "fact": "A novela, de 1976, foi exibida em dezenas de países."
+    },
+    {
+      "difficulty": "hard",
+      "text": "De que programa infantil da TV Cultura vem o bordão \"Senta que lá vem história\"?",
+      "options": [
+        "Rá-Tim-Bum",
+        "Castelo Rá-Tim-Bum",
+        "Cocoricó",
+        "Vila Sésamo"
+      ],
+      "answer": 0,
+      "fact": "\"Rá-Tim-Bum\" estreou em 1990 e é anterior ao \"Castelo Rá-Tim-Bum\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o bar onde os amigos de \"How I Met Your Mother\" se encontram?",
+      "options": [
+        "MacLaren's",
+        "Central Perk",
+        "Moe's",
+        "Cheers"
+      ],
+      "answer": 0,
+      "fact": "O bar fica embaixo do apartamento de Ted e Marshall, em Nova York."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem dirigiu \"O Poderoso Chefão\"?",
+      "options": [
+        "Francis Ford Coppola",
+        "Martin Scorsese",
+        "Brian De Palma",
+        "Sergio Leone"
+      ],
+      "answer": 0,
+      "fact": "\"O Poderoso Chefão\" ganhou o Oscar de melhor filme em 1973."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ator interpretou Don Vito Corleone em \"O Poderoso Chefão\", de 1972?",
+      "options": [
+        "Marlon Brando",
+        "Al Pacino",
+        "Robert De Niro",
+        "James Caan"
+      ],
+      "answer": 0,
+      "fact": "Brando recusou o Oscar pelo papel e mandou uma ativista indígena discursar no lugar dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro filme a ganhar o Oscar de melhor filme?",
+      "options": [
+        "Asas",
+        "Cantando na Chuva",
+        "E o Vento Levou",
+        "Casablanca"
+      ],
+      "answer": 0,
+      "fact": "\"Asas\" era um filme mudo sobre aviadores da Primeira Guerra Mundial."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que filme empata com \"Titanic\" e \"Ben-Hur\" como o maior vencedor de Oscars?",
+      "options": [
+        "O Senhor dos Anéis: O Retorno do Rei",
+        "A Lista de Schindler",
+        "Forrest Gump",
+        "O Poderoso Chefão"
+      ],
+      "answer": 0,
+      "fact": "Os três filmes ganharam 11 estatuetas cada um."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem dirigiu \"Psicose\", de 1960?",
+      "options": [
+        "Alfred Hitchcock",
+        "Orson Welles",
+        "Stanley Kubrick",
+        "Billy Wilder"
+      ],
+      "answer": 0,
+      "fact": "Hitchcock aparecia rapidamente, sem fala, em quase todos os seus filmes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem dirigiu \"2001: Uma Odisseia no Espaço\"?",
+      "options": [
+        "Stanley Kubrick",
+        "Steven Spielberg",
+        "Ridley Scott",
+        "George Lucas"
+      ],
+      "answer": 0,
+      "fact": "O computador HAL 9000, do filme, virou um dos vilões mais famosos do cinema."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que diretor fez \"Interestelar\" e \"A Origem\"?",
+      "options": [
+        "Christopher Nolan",
+        "Denis Villeneuve",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "answer": 0,
+      "fact": "Nolan prefere efeitos práticos: em \"Interestelar\", plantou um milharal de verdade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que filme sul-coreano venceu o Oscar de melhor filme em 2020?",
+      "options": [
+        "Parasita",
+        "Oldboy",
+        "Em Chamas",
+        "Invasão Zumbi"
+      ],
+      "answer": 0,
+      "fact": "Foi o primeiro filme em língua não inglesa a ganhar o prêmio principal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem dirigiu \"Central do Brasil\"?",
+      "options": [
+        "Walter Salles",
+        "Fernando Meirelles",
+        "Kleber Mendonça Filho",
+        "José Padilha"
+      ],
+      "answer": 0,
+      "fact": "\"Central do Brasil\" ganhou o Urso de Ouro no Festival de Berlim, em 1998."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que filme brasileiro ganhou a Palma de Ouro em Cannes, em 1962?",
+      "options": [
+        "O Pagador de Promessas",
+        "Vidas Secas",
+        "Deus e o Diabo na Terra do Sol",
+        "Orfeu Negro"
+      ],
+      "answer": 0,
+      "fact": "É até hoje o único filme brasileiro com a Palma de Ouro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cineasta do Cinema Novo dirigiu \"Deus e o Diabo na Terra do Sol\"?",
+      "options": [
+        "Glauber Rocha",
+        "Nelson Pereira dos Santos",
+        "Cacá Diegues",
+        "Ruy Guerra"
+      ],
+      "answer": 0,
+      "fact": "O lema do Cinema Novo era \"uma câmera na mão e uma ideia na cabeça\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cantora fez sucesso em Hollywood com turbantes cheios de frutas?",
+      "options": [
+        "Carmen Miranda",
+        "Aurora Miranda",
+        "Dalva de Oliveira",
+        "Emilinha Borba"
+      ],
+      "answer": 0,
+      "fact": "Carmen Miranda nasceu em Portugal e veio para o Brasil ainda bebê."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu os livros que deram origem a \"Game of Thrones\"?",
+      "options": [
+        "George R. R. Martin",
+        "J. R. R. Tolkien",
+        "Robert Jordan",
+        "Brandon Sanderson"
+      ],
+      "answer": 0,
+      "fact": "A saga literária se chama \"As Crônicas de Gelo e Fogo\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem escreveu \"O Hobbit\"?",
+      "options": [
+        "J. R. R. Tolkien",
+        "C. S. Lewis",
+        "George R. R. Martin",
+        "Terry Pratchett"
+      ],
+      "answer": 0,
+      "fact": "Tolkien era professor de línguas e criou idiomas élficos completos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em \"Breaking Bad\", que apelido Walter White usa no mundo do crime?",
+      "options": [
+        "Heisenberg",
+        "Pinkman",
+        "Ozymandias",
+        "Gus"
+      ],
+      "answer": 0,
+      "fact": "O apelido homenageia o físico alemão Werner Heisenberg."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o sobrenome de Rachel, em \"Friends\"?",
+      "options": [
+        "Green",
+        "Geller",
+        "Bing",
+        "Tribbiani"
+      ],
+      "answer": 0,
+      "fact": "Geller é o sobrenome de Ross e Monica; Bing, de Chandler; e Tribbiani, de Joey."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que empresa de papel se passa a série \"The Office\" americana?",
+      "options": [
+        "Dunder Mifflin",
+        "Wernham Hogg",
+        "Sterling Cooper",
+        "Pied Piper"
+      ],
+      "answer": 0,
+      "fact": "Wernham Hogg é a empresa da versão britânica original da série."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o dono da usina nuclear em \"Os Simpsons\"?",
+      "options": [
+        "Sr. Burns",
+        "Smithers",
+        "Moe",
+        "Ned Flanders"
+      ],
+      "answer": 0,
+      "fact": "O fiel assistente do Sr. Burns se chama Smithers."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a cidade submarina onde mora o Bob Esponja?",
+      "options": [
+        "Fenda do Biquíni",
+        "Atlântida",
+        "Recife de Coral",
+        "Baía das Conchas"
+      ],
+      "answer": 0,
+      "fact": "O criador do desenho, Stephen Hillenburg, era biólogo marinho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que desenho tem um menino gênio com um laboratório secreto e a irmã Dee Dee?",
+      "options": [
+        "O Laboratório de Dexter",
+        "Jimmy Neutron",
+        "Johnny Bravo",
+        "As Meninas Superpoderosas"
+      ],
+      "answer": 0,
+      "fact": "O desenho estreou em 1996 no Cartoon Network."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que anime gira em torno de um caderno que mata quem tem o nome escrito nele?",
+      "options": [
+        "Death Note",
+        "Tokyo Ghoul",
+        "Bleach",
+        "Fullmetal Alchemist"
+      ],
+      "answer": 0,
+      "fact": "O dono do caderno é o estudante Light Yagami."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que anime a humanidade vive cercada por muralhas para se proteger de titãs?",
+      "options": [
+        "Ataque dos Titãs",
+        "One Punch Man",
+        "Demon Slayer",
+        "Neon Genesis Evangelion"
+      ],
+      "answer": 0,
+      "fact": "O mangá foi criado por Hajime Isayama."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em \"One Piece\", qual é o grande sonho de Luffy?",
+      "options": [
+        "Ser o Rei dos Piratas",
+        "Achar o pai",
+        "Virar marinheiro",
+        "Comer todas as frutas do diabo"
+      ],
+      "answer": 0,
+      "fact": "Luffy ganhou o corpo de borracha ao comer uma Akuma no Mi, a fruta do diabo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem criou o mangá \"Dragon Ball\"?",
+      "options": [
+        "Akira Toriyama",
+        "Eiichiro Oda",
+        "Masashi Kishimoto",
+        "Osamu Tezuka"
+      ],
+      "answer": 0,
+      "fact": "Toriyama também criou o mangá \"Dr. Slump\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que autor japonês criou \"Astro Boy\" e é chamado de \"deus do mangá\"?",
+      "options": [
+        "Osamu Tezuka",
+        "Akira Toriyama",
+        "Hayao Miyazaki",
+        "Rumiko Takahashi"
+      ],
+      "answer": 0,
+      "fact": "Tezuka publicou centenas de obras e influenciou gerações de desenhistas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em \"Meu Amigo Totoro\", que criatura faz o papel de ônibus?",
+      "options": [
+        "Um gato gigante",
+        "Uma lagarta",
+        "Um dragão",
+        "Uma coruja"
+      ],
+      "answer": 0,
+      "fact": "O \"Gatobus\" tem várias patas e olhos que acendem como faróis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é considerado o álbum mais vendido da história?",
+      "options": [
+        "Thriller",
+        "Back in Black",
+        "The Dark Side of the Moon",
+        "Abbey Road"
+      ],
+      "answer": 0,
+      "fact": "O álbum de Michael Jackson foi lançado em 1982."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que banda gravou \"Stairway to Heaven\"?",
+      "options": [
+        "Led Zeppelin",
+        "Deep Purple",
+        "Black Sabbath",
+        "Pink Floyd"
+      ],
+      "answer": 0,
+      "fact": "O vocalista do Led Zeppelin era Robert Plant, e o guitarrista, Jimmy Page."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que banda gravou \"Hotel California\"?",
+      "options": [
+        "Eagles",
+        "Fleetwood Mac",
+        "The Doors",
+        "Creedence Clearwater Revival"
+      ],
+      "answer": 0,
+      "fact": "A música ganhou o Grammy de gravação do ano em 1978."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cantora gravou \"I Will Always Love You\" para o filme \"O Guarda-Costas\"?",
+      "options": [
+        "Whitney Houston",
+        "Mariah Carey",
+        "Celine Dion",
+        "Tina Turner"
+      ],
+      "answer": 0,
+      "fact": "A música é original de Dolly Parton, que a gravou em 1974."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o nome verdadeiro da cantora Lady Gaga?",
+      "options": [
+        "Stefani Germanotta",
+        "Alecia Moore",
+        "Robyn Fenty",
+        "Katheryn Hudson"
+      ],
+      "answer": 0,
+      "fact": "Alecia Moore é a P!nk, Robyn Fenty é a Rihanna e Katheryn Hudson é a Katy Perry."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cantor americano é apelidado de \"The Boss\"?",
+      "options": [
+        "Bruce Springsteen",
+        "Bob Dylan",
+        "Elvis Presley",
+        "Billy Joel"
+      ],
+      "answer": 0,
+      "fact": "Um de seus maiores sucessos é \"Born in the U.S.A.\", de 1984."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que DJ sueco gravou \"Wake Me Up\" e \"Levels\"?",
+      "options": [
+        "Avicii",
+        "David Guetta",
+        "Calvin Harris",
+        "Alok"
+      ],
+      "answer": 0,
+      "fact": "Avicii morreu em 2018, aos 28 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que dupla francesa de música eletrônica se apresentava com capacetes de robô?",
+      "options": [
+        "Daft Punk",
+        "Justice",
+        "Air",
+        "The Chemical Brothers"
+      ],
+      "answer": 0,
+      "fact": "A dupla anunciou o fim em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que grupo mexicano, nascido de uma novela, lotou estádios no Brasil nos anos 2000?",
+      "options": [
+        "RBD",
+        "Menudo",
+        "Timbiriche",
+        "Maná"
+      ],
+      "answer": 0,
+      "fact": "A novela \"Rebelde\" foi exibida no Brasil pelo SBT."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ator foi o primeiro James Bond do cinema?",
+      "options": [
+        "Sean Connery",
+        "Roger Moore",
+        "Pierce Brosnan",
+        "Daniel Craig"
+      ],
+      "answer": 0,
+      "fact": "O primeiro filme foi \"007 contra o Satânico Dr. No\", de 1962."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ator interpretou Indiana Jones e Han Solo?",
+      "options": [
+        "Harrison Ford",
+        "Mark Hamill",
+        "Kevin Costner",
+        "Tom Selleck"
+      ],
+      "answer": 0,
+      "fact": "Antes da fama, Harrison Ford trabalhava como carpinteiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem dirigiu a trilogia \"O Senhor dos Anéis\" no cinema?",
+      "options": [
+        "Peter Jackson",
+        "Guillermo del Toro",
+        "Steven Spielberg",
+        "Ridley Scott"
+      ],
+      "answer": 0,
+      "fact": "Os filmes foram gravados na Nova Zelândia, terra natal do diretor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em \"De Volta para o Futuro\", que carro vira máquina do tempo?",
+      "options": [
+        "DeLorean",
+        "Mustang",
+        "Fusca",
+        "Corvette"
+      ],
+      "answer": 0,
+      "fact": "Para viajar no tempo, o carro precisa chegar a 88 milhas por hora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "De que cor são os sapatos mágicos de Dorothy no filme \"O Mágico de Oz\", de 1939?",
+      "options": [
+        "Vermelhos",
+        "Prateados",
+        "Dourados",
+        "Azuis"
+      ],
+      "answer": 0,
+      "fact": "No livro eles eram prateados; o filme trocou a cor para exibir o Technicolor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o hotel de \"O Iluminado\"?",
+      "options": [
+        "Overlook",
+        "Bates",
+        "Grand Budapest",
+        "Continental"
+      ],
+      "answer": 0,
+      "fact": "O Motel Bates é o de \"Psicose\", e o Grand Budapest é do filme de Wes Anderson."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que apelido a equipe de \"Tubarão\" deu ao tubarão mecânico do filme?",
+      "options": [
+        "Bruce",
+        "Jaws",
+        "Moby",
+        "Chomp"
+      ],
+      "answer": 0,
+      "fact": "O nome veio do advogado de Steven Spielberg."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que apresentador jogava bacalhau na plateia e dizia \"Quem não se comunica se trumbica\"?",
+      "options": [
+        "Chacrinha",
+        "Silvio Santos",
+        "Flávio Cavalcanti",
+        "Bolinha"
+      ],
+      "answer": 0,
+      "fact": "Chacrinha se vestia com fantasias exageradas e chamava as dançarinas de \"chacretes\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem criou e interpretou o Chaves?",
+      "options": [
+        "Roberto Gómez Bolaños",
+        "Ramón Valdés",
+        "Carlos Villagrán",
+        "Édgar Vivar"
+      ],
+      "answer": 0,
+      "fact": "Bolaños era chamado de \"Chespirito\", um \"pequeno Shakespeare\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a primeira novela diária da TV brasileira, em 1963?",
+      "options": [
+        "2-5499 Ocupado",
+        "O Direito de Nascer",
+        "Beto Rockfeller",
+        "Irmãos Coragem"
+      ],
+      "answer": 0,
+      "fact": "Foi exibida pela TV Excelsior, com Tarcísio Meira e Glória Menezes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que novela tinha a Viúva Porcina e foi censurada antes de finalmente ir ao ar em 1985?",
+      "options": [
+        "Roque Santeiro",
+        "Tieta",
+        "Saramandaia",
+        "Gabriela"
+      ],
+      "answer": 0,
+      "fact": "A primeira versão foi proibida pela censura em 1975."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ator interpretou Rocky Balboa?",
+      "options": [
+        "Sylvester Stallone",
+        "Arnold Schwarzenegger",
+        "Jean-Claude Van Damme",
+        "Dolph Lundgren"
+      ],
+      "answer": 0,
+      "fact": "Stallone escreveu o roteiro e insistiu em ser o protagonista."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que frase o Exterminador, de Schwarzenegger, diz no filme de 1984?",
+      "options": [
+        "\"Eu voltarei\"",
+        "\"Hasta la vista, baby\"",
+        "\"Que a Força esteja com você\"",
+        "\"Eu sou seu pai\""
+      ],
+      "answer": 0,
+      "fact": "\"Hasta la vista, baby\" só aparece na continuação, de 1991."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o vilão de \"Duro de Matar\", de 1988?",
+      "options": [
+        "Hans Gruber",
+        "Simon Gruber",
+        "Bane",
+        "Lex Luthor"
+      ],
+      "answer": 0,
+      "fact": "Foi o primeiro papel no cinema do ator Alan Rickman, que depois viveu Snape em \"Harry Potter\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ator interpretou o Coringa no \"Batman\" de 1989?",
+      "options": [
+        "Jack Nicholson",
+        "Heath Ledger",
+        "Mark Hamill",
+        "Cesar Romero"
+      ],
+      "answer": 0,
+      "fact": "O filme foi dirigido por Tim Burton, com Michael Keaton como Batman."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que atriz tem o recorde de quatro Oscars de atuação?",
+      "options": [
+        "Katharine Hepburn",
+        "Meryl Streep",
+        "Bette Davis",
+        "Frances McDormand"
+      ],
+      "answer": 0,
+      "fact": "Katharine Hepburn nunca foi pessoalmente receber nenhuma das quatro estatuetas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a primeira animação indicada ao Oscar de melhor filme?",
+      "options": [
+        "A Bela e a Fera",
+        "Toy Story",
+        "O Rei Leão",
+        "Branca de Neve"
+      ],
+      "answer": 0,
+      "fact": "\"A Bela e a Fera\" foi indicada em 1992."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cantor brasileiro estourou na Europa com \"Ai Se Eu Te Pego\", em 2011?",
+      "options": [
+        "Michel Teló",
+        "Gusttavo Lima",
+        "Luan Santana",
+        "Latino"
+      ],
+      "answer": 0,
+      "fact": "A música chegou ao topo das paradas em vários países europeus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que banda brasileira de metal fez sucesso mundial com o álbum \"Roots\"?",
+      "options": [
+        "Sepultura",
+        "Angra",
+        "Krisiun",
+        "Viper"
+      ],
+      "answer": 0,
+      "fact": "O Sepultura foi fundado em Belo Horizonte, em 1984."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o cachorro de \"Os Jetsons\"?",
+      "options": [
+        "Astro",
+        "Dino",
+        "Muttley",
+        "Bidu"
+      ],
+      "answer": 0,
+      "fact": "Dino é o bichinho de estimação dos Flintstones, e Muttley é o cachorro que ri de \"Corrida Maluca\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o boneco de neve de \"Frozen\"?",
+      "options": [
+        "Olaf",
+        "Sven",
+        "Kristoff",
+        "Hans"
+      ],
+      "answer": 0,
+      "fact": "Olaf é um boneco de neve que sonha com o verão, sem imaginar o que o calor faria com ele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a sereia da Disney que sonha em viver em terra firme?",
+      "options": [
+        "Ariel",
+        "Moana",
+        "Bela",
+        "Jasmine"
+      ],
+      "answer": 0,
+      "fact": "No conto original de Hans Christian Andersen, a história da pequena sereia termina bem mais triste."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o cowboy de \"Toy Story\"?",
+      "options": [
+        "Woody",
+        "Buzz",
+        "Rex",
+        "Slinky"
+      ],
+      "answer": 0,
+      "fact": "Na versão original em inglês, Woody tem a voz de Tom Hanks."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quem é a esposa do Shrek?",
+      "options": [
+        "Fiona",
+        "Cinderela",
+        "Rapunzel",
+        "Aurora"
+      ],
+      "answer": 0,
+      "fact": "Por causa de um feitiço, Fiona virava ogra todas as noites, ao pôr do sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fadinha é amiga do Peter Pan?",
+      "options": [
+        "Sininho",
+        "Fada Madrinha",
+        "Fada Azul",
+        "Malévola"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, a fadinha se chama Tinker Bell."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o vilão de \"O Rei Leão\"?",
+      "options": [
+        "Scar",
+        "Mufasa",
+        "Rafiki",
+        "Zazu"
+      ],
+      "answer": 0,
+      "fact": "Scar é o tio de Simba e irmão de Mufasa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bicho é o Pumba, de \"O Rei Leão\"?",
+      "options": [
+        "Javali",
+        "Suricato",
+        "Hiena",
+        "Porco-espinho"
+      ],
+      "answer": 0,
+      "fact": "Timão, o melhor amigo do Pumba, é um suricato."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que cor são os Smurfs?",
+      "options": [
+        "Azul",
+        "Verde",
+        "Amarelo",
+        "Roxo"
+      ],
+      "answer": 0,
+      "fact": "Os Smurfs foram criados pelo desenhista belga Peyo, em 1958."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o coelho de pelúcia da Mônica?",
+      "options": [
+        "Sansão",
+        "Bidu",
+        "Floquinho",
+        "Mingau"
+      ],
+      "answer": 0,
+      "fact": "A Mônica usa o Sansão para dar coelhadas no Cebolinha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que personagem da Turma da Mônica troca o R pelo L?",
+      "options": [
+        "Cebolinha",
+        "Cascão",
+        "Chico Bento",
+        "Franjinha"
+      ],
+      "answer": 0,
+      "fact": "O Cebolinha vive bolando \"planos infalíveis\" para pegar o Sansão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que personagem da Turma da Mônica tem pavor de tomar banho?",
+      "options": [
+        "Cascão",
+        "Cebolinha",
+        "Chico Bento",
+        "Do Contra"
+      ],
+      "answer": 0,
+      "fact": "O melhor amigo do Cascão é o Cebolinha, parceiro nos planos contra a Mônica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a fruta preferida da Magali?",
+      "options": [
+        "Melancia",
+        "Banana",
+        "Maçã",
+        "Uva"
+      ],
+      "answer": 0,
+      "fact": "A Magali foi inspirada numa das filhas de Mauricio de Sousa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que personagem do seriado mexicano vive escondido dentro de um barril?",
+      "options": [
+        "Chaves",
+        "Quico",
+        "Seu Madruga",
+        "Nhonho"
+      ],
+      "answer": 0,
+      "fact": "No seriado, o Chaves diz morar na casa número 8, mas passa o dia no barril."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o professor do Chaves, que leva flores para Dona Florinda?",
+      "options": [
+        "Professor Girafales",
+        "Seu Barriga",
+        "Seu Madruga",
+        "Jaiminho"
+      ],
+      "answer": 0,
+      "fact": "Toda visita termina com o convite de Dona Florinda: \"Não gostaria de entrar e tomar uma xícara de café?\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que super-herói é chamado de Homem de Aço?",
+      "options": [
+        "Superman",
+        "Batman",
+        "Homem de Ferro",
+        "Lanterna Verde"
+      ],
+      "answer": 0,
+      "fact": "O Superman foi criado em 1938 por Jerry Siegel e Joe Shuster."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que cidade o Batman protege os cidadãos?",
+      "options": [
+        "Gotham",
+        "Metrópolis",
+        "Nova York",
+        "Star City"
+      ],
+      "answer": 0,
+      "fact": "O mordomo fiel de Bruce Wayne se chama Alfred."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que arma da Mulher-Maravilha obriga as pessoas a dizerem a verdade?",
+      "options": [
+        "Laço da verdade",
+        "Escudo de vibranium",
+        "Espada mágica",
+        "Braceletes"
+      ],
+      "answer": 0,
+      "fact": "A Mulher-Maravilha vem de Themyscira, a ilha das amazonas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o nome do vilão roxo que busca as Joias do Infinito?",
+      "options": [
+        "Thanos",
+        "Loki",
+        "Ultron",
+        "Galactus"
+      ],
+      "answer": 0,
+      "fact": "Com as seis joias na manopla, Thanos estala os dedos e apaga metade da vida do universo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que herói da Marvel é o rei de Wakanda?",
+      "options": [
+        "Pantera Negra",
+        "Falcão",
+        "Visão",
+        "Doutor Estranho"
+      ],
+      "answer": 0,
+      "fact": "O metal mais valioso de Wakanda é o vibranium."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que garota com poderes mentais é uma das protagonistas de \"Stranger Things\"?",
+      "options": [
+        "Eleven (Onze)",
+        "Wandinha",
+        "Matilda",
+        "Hermione"
+      ],
+      "answer": 0,
+      "fact": "Eleven adora waffles e tem esse nome por causa de um número tatuado no pulso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que série de 2022 conta as aventuras da filha da família Addams num colégio interno?",
+      "options": [
+        "Wandinha",
+        "Stranger Things",
+        "Riverdale",
+        "The Crown"
+      ],
+      "answer": 0,
+      "fact": "A dança da personagem num baile da escola virou febre nas redes sociais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que série espanhola tem assaltantes de macacão vermelho e máscara de Dalí?",
+      "options": [
+        "La Casa de Papel",
+        "Elite",
+        "Narcos",
+        "Round 6"
+      ],
+      "answer": 0,
+      "fact": "Os assaltantes usam nomes de cidades, como Tóquio, Berlim e Rio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que série sul-coreana tem uma competição mortal com brincadeiras infantis?",
+      "options": [
+        "Round 6",
+        "Kingdom",
+        "Pousando no Amor",
+        "Alice in Borderland"
+      ],
+      "answer": 0,
+      "fact": "A série estreou em 2021 e virou fenômeno no mundo todo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o petisco preferido do Scooby-Doo?",
+      "options": [
+        "Biscoito Scooby",
+        "Pizza",
+        "Cachorro-quente",
+        "Rosquinha"
+      ],
+      "answer": 0,
+      "fact": "O desenho do cachorro medroso que resolve mistérios estreou em 1969."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que gato vive tentando pegar o rato Jerry?",
+      "options": [
+        "Tom",
+        "Garfield",
+        "Frajola",
+        "Mingau"
+      ],
+      "answer": 0,
+      "fact": "\"Tom & Jerry\" estreou em 1940 e ganhou sete Oscars de curta-metragem de animação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que coelho do desenho pergunta \"O que é que há, velhinho?\"?",
+      "options": [
+        "Pernalonga",
+        "Patolino",
+        "Coelho da Páscoa",
+        "Roger Rabbit"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, o Pernalonga se chama Bugs Bunny."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pato da Disney usa roupa de marinheiro?",
+      "options": [
+        "Pato Donald",
+        "Patolino",
+        "Tio Patinhas",
+        "Peninha"
+      ],
+      "answer": 0,
+      "fact": "O Donald é tio de três patinhos: Huguinho, Zezinho e Luisinho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o cachorro do Mickey?",
+      "options": [
+        "Pluto",
+        "Pateta",
+        "Bidu",
+        "Scooby"
+      ],
+      "answer": 0,
+      "fact": "O Pateta também é um cachorro, mas fala e anda em pé."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que princesa da Disney tem cabelos enormes e vive presa numa torre?",
+      "options": [
+        "Rapunzel",
+        "Aurora",
+        "Bela",
+        "Cinderela"
+      ],
+      "answer": 0,
+      "fact": "No filme \"Enrolados\", de 2010, os cabelos mágicos de Rapunzel brilham quando ela canta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em \"O Mágico de Oz\", que personagem é feito de palha?",
+      "options": [
+        "Espantalho",
+        "Homem de Lata",
+        "Leão Covarde",
+        "Totó"
+      ],
+      "answer": 0,
+      "fact": "O Espantalho queria um cérebro; o Homem de Lata, um coração; e o Leão, coragem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o boneco assassino dos filmes de terror \"Brinquedo Assassino\"?",
+      "options": [
+        "Chucky",
+        "Annabelle",
+        "Jigsaw",
+        "Freddy"
+      ],
+      "answer": 0,
+      "fact": "O primeiro filme do Chucky é de 1988."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que vilão de terror usa uma luva com lâminas e ataca nos sonhos?",
+      "options": [
+        "Freddy Krueger",
+        "Jason",
+        "Michael Myers",
+        "Pennywise"
+      ],
+      "answer": 0,
+      "fact": "Ele é o vilão da série de filmes \"A Hora do Pesadelo\", que começou em 1984."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que mago de barba branca acompanha os hobbits em \"O Senhor dos Anéis\"?",
+      "options": [
+        "Gandalf",
+        "Saruman",
+        "Dumbledore",
+        "Merlin"
+      ],
+      "answer": 0,
+      "fact": "Ele começa como Gandalf, o Cinzento, e depois volta como Gandalf, o Branco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que criatura de \"O Senhor dos Anéis\" chama o Anel de \"meu precioso\"?",
+      "options": [
+        "Gollum",
+        "Sauron",
+        "Orc",
+        "Ent"
+      ],
+      "answer": 0,
+      "fact": "Antes de ser corrompido pelo Anel, Gollum era um hobbit chamado Sméagol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cantora gravou \"Shake It Off\" e \"Love Story\"?",
+      "options": [
+        "Taylor Swift",
+        "Katy Perry",
+        "Lady Gaga",
+        "Ariana Grande"
+      ],
+      "answer": 0,
+      "fact": "Taylor Swift regravou os primeiros álbuns para ser dona das próprias gravações."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cantora brasileira gravou \"Envolver\" e \"Show das Poderosas\"?",
+      "options": [
+        "Anitta",
+        "Ludmilla",
+        "Iza",
+        "Pabllo Vittar"
+      ],
+      "answer": 0,
+      "fact": "Em 2022, \"Envolver\" chegou ao 1º lugar das músicas mais ouvidas do mundo no Spotify."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que apresentador ficou famoso jogando aviõezinhos de dinheiro e perguntando \"Quem quer dinheiro?\"?",
+      "options": [
+        "Silvio Santos",
+        "Faustão",
+        "Gugu Liberato",
+        "Raul Gil"
+      ],
+      "answer": 0,
+      "fact": "Silvio Santos fundou o SBT, que entrou no ar em 1981."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que apresentadora era chamada de \"Rainha dos Baixinhos\"?",
+      "options": [
+        "Xuxa",
+        "Angélica",
+        "Eliana",
+        "Mara Maravilha"
+      ],
+      "answer": 0,
+      "fact": "O \"Xou da Xuxa\" estreou na TV Globo em 1986."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que reality show tem casa vigiada por câmeras e paredão?",
+      "options": [
+        "Big Brother Brasil",
+        "A Fazenda",
+        "MasterChef",
+        "No Limite"
+      ],
+      "answer": 0,
+      "fact": "O primeiro BBB foi ao ar em 2002."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que vilã do Sítio do Picapau Amarelo é uma bruxa com cara de jacaré?",
+      "options": [
+        "Cuca",
+        "Iara",
+        "Saci",
+        "Emília"
+      ],
+      "answer": 0,
+      "fact": "A Cuca vem de uma lenda portuguesa da \"coca\", usada para assustar crianças."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual era o personagem de Renato Aragão em \"Os Trapalhões\"?",
+      "options": [
+        "Didi",
+        "Dedé",
+        "Mussum",
+        "Zacarias"
+      ],
+      "answer": 0,
+      "fact": "O quarteto era formado por Didi, Dedé, Mussum e Zacarias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que desenho japonês os heróis viram Super Saiyajins?",
+      "options": [
+        "Dragon Ball",
+        "Naruto",
+        "Pokémon",
+        "One Piece"
+      ],
+      "answer": 0,
+      "fact": "O protagonista de Dragon Ball é Goku, um guerreiro de outro planeta criado na Terra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que anime tem um ninja loiro que sonha em ser Hokage?",
+      "options": [
+        "Naruto",
+        "Bleach",
+        "Dragon Ball",
+        "One Piece"
+      ],
+      "answer": 0,
+      "fact": "Hokage é o líder da Vila da Folha, onde Naruto mora."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que anime tem os Cavaleiros de Ouro e a deusa Atena?",
+      "options": [
+        "Cavaleiros do Zodíaco",
+        "Sailor Moon",
+        "Dragon Ball",
+        "Yu Yu Hakusho"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, o desenho virou febre depois de estrear na TV Manchete, em 1994."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a coruja branca de Harry Potter?",
+      "options": [
+        "Edwiges",
+        "Perebas",
+        "Bichento",
+        "Fawkes"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, ela se chama Hedwig."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que casa de Hogwarts Harry Potter estuda?",
+      "options": [
+        "Grifinória",
+        "Sonserina",
+        "Corvinal",
+        "Lufa-Lufa"
+      ],
+      "answer": 0,
+      "fact": "O Chapéu Seletor chegou a pensar em mandar Harry para a Sonserina."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que esporte os bruxos jogam montados em vassouras em \"Harry Potter\"?",
+      "options": [
+        "Quadribol",
+        "Polo voador",
+        "Bruxobol",
+        "Vassourada"
+      ],
+      "answer": 0,
+      "fact": "Hoje existe uma versão real do esporte, com os jogadores correndo com um bastão entre as pernas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pequeno mestre verde treina os Jedi em \"Star Wars\"?",
+      "options": [
+        "Yoda",
+        "Obi-Wan Kenobi",
+        "Chewbacca",
+        "R2-D2"
+      ],
+      "answer": 0,
+      "fact": "Yoda fala com a ordem das palavras invertida: \"Forte com a Força você é\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que arma os Jedi usam em \"Star Wars\"?",
+      "options": [
+        "Sabre de luz",
+        "Espada de prata",
+        "Arco de laser",
+        "Bastão elétrico"
+      ],
+      "answer": 0,
+      "fact": "Os sabres dos vilões Sith costumam ser vermelhos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que filme da Pixar tem um robozinho que limpa a Terra abandonada?",
+      "options": [
+        "Wall-E",
+        "Robôs",
+        "O Gigante de Ferro",
+        "Big Hero 6"
+      ],
+      "answer": 0,
+      "fact": "Wall-E quase não tem diálogos nos primeiros 40 minutos do filme."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que filme da Pixar mostra as emoções dentro da cabeça de uma menina?",
+      "options": [
+        "Divertida Mente",
+        "Soul",
+        "Viva: A Vida é uma Festa",
+        "Luca"
+      ],
+      "answer": 0,
+      "fact": "No primeiro filme, as emoções são Alegria, Tristeza, Raiva, Medo e Nojinho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que filme da Pixar tem um rato que sonha em ser chef em Paris?",
+      "options": [
+        "Ratatouille",
+        "Stuart Little",
+        "O Ratinho Detetive",
+        "Por Água Abaixo"
+      ],
+      "answer": 0,
+      "fact": "O ratinho cozinheiro se chama Remy."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que filme da Pixar uma casa sai voando presa a milhares de balões?",
+      "options": [
+        "Up: Altas Aventuras",
+        "Valente",
+        "Carros",
+        "Os Incríveis"
+      ],
+      "answer": 0,
+      "fact": "O dono da casa, Carl, tem 78 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que filme da Disney tem uma família colombiana com dons mágicos?",
+      "options": [
+        "Encanto",
+        "Moana",
+        "Viva: A Vida é uma Festa",
+        "Raya"
+      ],
+      "answer": 0,
+      "fact": "A música \"Não Falamos do Bruno\" virou um sucesso enorme."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o Stitch, de \"Lilo & Stitch\"?",
+      "options": [
+        "Um alienígena",
+        "Um cachorro",
+        "Um coala",
+        "Um robô"
+      ],
+      "answer": 0,
+      "fact": "Stitch foi criado num laboratório e é o \"Experimento 626\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que o Popeye come para ficar forte?",
+      "options": [
+        "Espinafre",
+        "Cenoura",
+        "Brócolis",
+        "Feijão"
+      ],
+      "answer": 0,
+      "fact": "Conta-se que o desenho ajudou a aumentar o consumo de espinafre nos Estados Unidos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos episódios a série \"Friends\" teve?",
+      "options": [
+        "236",
+        "180",
+        "198",
+        "210",
+        "254",
+        "272"
+      ],
+      "answer": 0,
+      "fact": "Foram 10 temporadas, de 1994 a 2004."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o planeta natal de Spock, de \"Star Trek\"?",
+      "options": [
+        "Vulcano",
+        "Krypton",
+        "Tatooine",
+        "Romulus",
+        "Kronos",
+        "Gallifrey"
+      ],
+      "answer": 0,
+      "fact": "Krypton é do Superman; Tatooine, de Star Wars; e Gallifrey, de Doctor Who."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos Oscars competitivos Walt Disney ganhou?",
+      "options": [
+        "22",
+        "8",
+        "12",
+        "17",
+        "31",
+        "40"
+      ],
+      "answer": 0,
+      "fact": "É o maior número de Oscars ganhos por uma única pessoa."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano estreou \"Os Simpsons\" como série própria?",
+      "options": [
+        "1989",
+        "1985",
+        "1987",
+        "1991",
+        "1992",
+        "1995"
+      ],
+      "answer": 0,
+      "fact": "Antes disso, a família já aparecia em curtas no \"The Tracey Ullman Show\", desde 1987."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi a primeira novela produzida pela TV Globo, em 1965?",
+      "options": [
+        "Ilusões Perdidas",
+        "Irmãos Coragem",
+        "O Direito de Nascer",
+        "Véu de Noiva",
+        "Sangue e Areia",
+        "A Moreninha"
+      ],
+      "answer": 0,
+      "fact": "A TV Globo entrou no ar em abril de 1965."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o nome completo de Dumbledore, em \"Harry Potter\"?",
+      "options": [
+        "Alvo Percival Wulfrico Brian Dumbledore",
+        "Alvo Severo Dumbledore",
+        "Alvo Aberforth Dumbledore",
+        "Alvo Nicolau Dumbledore",
+        "Alvo Godrico Dumbledore",
+        "Alvo Merlim Dumbledore"
+      ],
+      "answer": 0,
+      "fact": "Aberforth é o irmão de Dumbledore, dono do bar Cabeça de Javali."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o pai do Nemo, em \"Procurando Nemo\"?",
+      "options": [
+        "Marlin",
+        "Gill",
+        "Crush",
+        "Bruce"
+      ],
+      "answer": 0,
+      "fact": "Na busca pelo filho, Marlin conta com a ajuda de Dory, uma peixinha esquecida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que série um professor de química vira um grande fabricante de drogas?",
+      "options": [
+        "Breaking Bad",
+        "Ozark",
+        "Narcos",
+        "Better Call Saul"
+      ],
+      "answer": 0,
+      "fact": "\"Better Call Saul\" é uma série derivada, sobre o advogado do protagonista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que personagem francês de quadrinhos é um gaulês baixinho que bebe poção mágica?",
+      "options": [
+        "Asterix",
+        "Tintim",
+        "Lucky Luke",
+        "Spirou"
+      ],
+      "answer": 0,
+      "fact": "O melhor amigo de Asterix é Obelix, que caiu no caldeirão da poção quando era bebê."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que princesa da Disney vira sapo depois de beijar um príncipe-sapo?",
+      "options": [
+        "Tiana",
+        "Ariel",
+        "Bela",
+        "Mulan"
+      ],
+      "answer": 0,
+      "fact": "\"A Princesa e o Sapo\", de 2009, se passa em Nova Orleans."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que palhaço apresentava um famoso programa infantil no SBT nos anos 1980?",
+      "options": [
+        "Bozo",
+        "Carequinha",
+        "Arrelia",
+        "Patati"
+      ],
+      "answer": 0,
+      "fact": "O personagem veio dos Estados Unidos, e vários atores se revezaram por baixo da maquiagem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que série de comédia brasileira tinha a família de Lineu, Nenê, Tuco e Bebel?",
+      "options": [
+        "A Grande Família",
+        "Sai de Baixo",
+        "Toma Lá, Dá Cá",
+        "Os Normais"
+      ],
+      "answer": 0,
+      "fact": "A versão mais famosa ficou no ar na TV Globo de 2001 a 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que personagem de \"Friends\" é paleontólogo?",
+      "options": [
+        "Ross",
+        "Chandler",
+        "Joey",
+        "Monica"
+      ],
+      "answer": 0,
+      "fact": "Ross é irmão de Monica e vive um namora-e-termina com Rachel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem dublou o Gênio no \"Aladdin\" de 1992, em inglês?",
+      "options": [
+        "Robin Williams",
+        "Will Smith",
+        "Eddie Murphy",
+        "Jim Carrey"
+      ],
+      "answer": 0,
+      "fact": "Robin Williams improvisou tanto nas gravações que deixou horas de material para os animadores escolherem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ator ganhou o Oscar interpretando o Coringa no filme de 2019?",
+      "options": [
+        "Joaquin Phoenix",
+        "Heath Ledger",
+        "Jared Leto",
+        "Jack Nicholson"
+      ],
+      "answer": 0,
+      "fact": "O filme mostra a origem do vilão, um comediante fracassado de Gotham."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ator interpretou o Wolverine nos filmes dos X-Men?",
+      "options": [
+        "Hugh Jackman",
+        "Chris Hemsworth",
+        "Ryan Reynolds",
+        "Christian Bale"
+      ],
+      "answer": 0,
+      "fact": "Hugh Jackman viveu o personagem por mais de 20 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o nome verdadeiro do Homem-Aranha?",
+      "options": [
+        "Peter Parker",
+        "Bruce Wayne",
+        "Clark Kent",
+        "Steve Rogers"
+      ],
+      "answer": 0,
+      "fact": "O personagem foi criado por Stan Lee e Steve Ditko em 1962."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que filme o herói escolhe entre uma pílula azul e uma vermelha?",
+      "options": [
+        "Matrix",
+        "A Origem",
+        "O Show de Truman",
+        "Blade Runner"
+      ],
+      "answer": 0,
+      "fact": "\"Matrix\" é de 1999 e popularizou o efeito de câmera lenta em volta dos personagens."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem dirigiu \"Pulp Fiction\"?",
+      "options": [
+        "Quentin Tarantino",
+        "Martin Scorsese",
+        "Steven Spielberg",
+        "David Fincher"
+      ],
+      "answer": 0,
+      "fact": "\"Pulp Fiction\" ganhou a Palma de Ouro em Cannes, em 1994."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que filme Tom Hanks diz que \"a vida é como uma caixa de chocolates\"?",
+      "options": [
+        "Forrest Gump",
+        "Náufrago",
+        "O Terminal",
+        "Quero Ser Grande"
+      ],
+      "answer": 0,
+      "fact": "\"Forrest Gump\" ganhou seis Oscars, incluindo o de melhor filme."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Com que filme Leonardo DiCaprio finalmente ganhou o Oscar de melhor ator?",
+      "options": [
+        "O Regresso",
+        "O Lobo de Wall Street",
+        "Titanic",
+        "A Origem"
+      ],
+      "answer": 0,
+      "fact": "DiCaprio venceu em 2016, depois de várias indicações sem levar o prêmio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atriz interpreta Katniss Everdeen em \"Jogos Vorazes\"?",
+      "options": [
+        "Jennifer Lawrence",
+        "Emma Stone",
+        "Kristen Stewart",
+        "Shailene Woodley"
+      ],
+      "answer": 0,
+      "fact": "Katniss se oferece para os jogos no lugar da irmã mais nova."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que saga aparece a família de vampiros Cullen?",
+      "options": [
+        "Crepúsculo",
+        "Diários de um Vampiro",
+        "Anjos da Noite",
+        "Drácula"
+      ],
+      "answer": 0,
+      "fact": "Os vampiros de \"Crepúsculo\" brilham quando ficam no sol."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que filme de terror uma menina sai de dentro da televisão?",
+      "options": [
+        "O Chamado",
+        "Poltergeist",
+        "Invocação do Mal",
+        "O Exorcista"
+      ],
+      "answer": 0,
+      "fact": "\"O Chamado\" é um remake do filme japonês \"Ringu\", de 1998."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o palhaço assustador de \"It: A Coisa\"?",
+      "options": [
+        "Pennywise",
+        "Coringa",
+        "Pogo",
+        "Krusty"
+      ],
+      "answer": 0,
+      "fact": "Pennywise costuma aparecer segurando um balão vermelho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que escritor é chamado de \"mestre do terror\" e escreveu \"O Iluminado\"?",
+      "options": [
+        "Stephen King",
+        "Edgar Allan Poe",
+        "H. P. Lovecraft",
+        "Anne Rice"
+      ],
+      "answer": 0,
+      "fact": "Stephen King já publicou mais de 60 romances."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que filme brasileiro de 2002 tem o personagem Zé Pequeno?",
+      "options": [
+        "Cidade de Deus",
+        "Tropa de Elite",
+        "Carandiru",
+        "Central do Brasil"
+      ],
+      "answer": 0,
+      "fact": "\"Cidade de Deus\" recebeu quatro indicações ao Oscar, incluindo a de melhor direção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que filme brasileiro aparece o Capitão Nascimento?",
+      "options": [
+        "Tropa de Elite",
+        "Cidade de Deus",
+        "Bacurau",
+        "O Som ao Redor"
+      ],
+      "answer": 0,
+      "fact": "\"Tropa de Elite\" ganhou o Urso de Ouro no Festival de Berlim, em 2008."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atriz brasileira foi indicada ao Oscar de melhor atriz por \"Central do Brasil\"?",
+      "options": [
+        "Fernanda Montenegro",
+        "Fernanda Torres",
+        "Sônia Braga",
+        "Regina Casé"
+      ],
+      "answer": 0,
+      "fact": "Em 2025, sua filha Fernanda Torres também foi indicada, por \"Ainda Estou Aqui\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que humorista criou personagens como o Professor Raimundo?",
+      "options": [
+        "Chico Anysio",
+        "Jô Soares",
+        "Renato Aragão",
+        "Ronald Golias"
+      ],
+      "answer": 0,
+      "fact": "Chico Anysio criou mais de 200 personagens ao longo da carreira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que programa infantil da TV Cultura o aprendiz de feiticeiro Nino tem 300 anos?",
+      "options": [
+        "Castelo Rá-Tim-Bum",
+        "Cocoricó",
+        "X-Tudo",
+        "Glub-Glub"
+      ],
+      "answer": 0,
+      "fact": "O programa estreou em 1994 e foi gravado num castelo cenográfico em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que novela a vilã Carminha disse \"Me serve, vadia!\"?",
+      "options": [
+        "Avenida Brasil",
+        "Senhora do Destino",
+        "Império",
+        "A Favorita"
+      ],
+      "answer": 0,
+      "fact": "O último capítulo de \"Avenida Brasil\", em 2012, parou o país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que novela de 1988 tinha a vilã Odete Roitman?",
+      "options": [
+        "Vale Tudo",
+        "Roque Santeiro",
+        "Tieta",
+        "Pantanal"
+      ],
+      "answer": 0,
+      "fact": "A pergunta \"Quem matou Odete Roitman?\" mobilizou o Brasil no fim da novela, em 1989."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que apresentador comandou o \"Domingão\" na TV Globo por mais de 30 anos?",
+      "options": [
+        "Faustão",
+        "Gugu Liberato",
+        "Luciano Huck",
+        "Serginho Groisman"
+      ],
+      "answer": 0,
+      "fact": "O bordão \"Ô loco, meu!\" virou marca registrada do apresentador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que personagem de Jim Carrey tem o rosto verde?",
+      "options": [
+        "O Máskara",
+        "Ace Ventura",
+        "Grinch",
+        "Truman"
+      ],
+      "answer": 0,
+      "fact": "O filme \"O Máskara\" é de 1994 e lançou Cameron Diaz no cinema."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ator interpreta o capitão Jack Sparrow?",
+      "options": [
+        "Johnny Depp",
+        "Orlando Bloom",
+        "Geoffrey Rush",
+        "Javier Bardem"
+      ],
+      "answer": 0,
+      "fact": "Johnny Depp disse que se inspirou no guitarrista Keith Richards para criar o pirata."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantora gravou \"Rolling in the Deep\" e \"Hello\"?",
+      "options": [
+        "Adele",
+        "Amy Winehouse",
+        "Beyoncé",
+        "Rihanna"
+      ],
+      "answer": 0,
+      "fact": "O álbum \"21\", de Adele, ganhou o Grammy de álbum do ano em 2012."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantor gravou \"Shape of You\"?",
+      "options": [
+        "Ed Sheeran",
+        "Justin Bieber",
+        "Bruno Mars",
+        "Shawn Mendes"
+      ],
+      "answer": 0,
+      "fact": "\"Shape of You\" foi a primeira música a passar de 3 bilhões de reproduções no Spotify."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que banda britânica gravou \"Yellow\" e \"Viva la Vida\"?",
+      "options": [
+        "Coldplay",
+        "Oasis",
+        "Radiohead",
+        "Muse"
+      ],
+      "answer": 0,
+      "fact": "O vocalista do Coldplay é Chris Martin."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantor canadense ficou famoso ainda adolescente com a música \"Baby\"?",
+      "options": [
+        "Justin Bieber",
+        "Shawn Mendes",
+        "The Weeknd",
+        "Drake"
+      ],
+      "answer": 0,
+      "fact": "Bieber foi descoberto por vídeos que a mãe postava no YouTube."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantora chama os fãs de \"Little Monsters\"?",
+      "options": [
+        "Lady Gaga",
+        "Katy Perry",
+        "Madonna",
+        "Britney Spears"
+      ],
+      "answer": 0,
+      "fact": "Lady Gaga ganhou o Oscar de melhor canção por \"Shallow\", em 2019."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que rapper tem o alter ego Slim Shady?",
+      "options": [
+        "Eminem",
+        "50 Cent",
+        "Snoop Dogg",
+        "Jay-Z"
+      ],
+      "answer": 0,
+      "fact": "Eminem ganhou o Oscar de melhor canção por \"Lose Yourself\", em 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que banda de rock tem Axl Rose como vocalista?",
+      "options": [
+        "Guns N' Roses",
+        "Bon Jovi",
+        "Aerosmith",
+        "Metallica"
+      ],
+      "answer": 0,
+      "fact": "\"Sweet Child O' Mine\" é um dos maiores sucessos da banda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cantor gravou \"Like a Rolling Stone\" e ganhou o Nobel de Literatura?",
+      "options": [
+        "Bob Dylan",
+        "Leonard Cohen",
+        "Bruce Springsteen",
+        "Paul Simon"
+      ],
+      "answer": 0,
+      "fact": "Bob Dylan recebeu o Nobel em 2016, pelas letras de suas canções."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que banda tem Mick Jagger como vocalista?",
+      "options": [
+        "Rolling Stones",
+        "The Who",
+        "Led Zeppelin",
+        "The Doors"
+      ],
+      "answer": 0,
+      "fact": "O logo da boca com a língua para fora foi criado em 1970."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que festival de música acontece no Rio de Janeiro desde 1985?",
+      "options": [
+        "Rock in Rio",
+        "Lollapalooza",
+        "Coachella",
+        "Tomorrowland"
+      ],
+      "answer": 0,
+      "fact": "Na primeira edição, o Queen cantou \"Love of My Life\" acompanhado por centenas de milhares de pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que série aparece o físico Sheldon Cooper?",
+      "options": [
+        "The Big Bang Theory",
+        "How I Met Your Mother",
+        "Silicon Valley",
+        "Young Justice"
+      ],
+      "answer": 0,
+      "fact": "O bordão de Sheldon é \"Bazinga!\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que série médicos trabalham no hospital Seattle Grace?",
+      "options": [
+        "Grey's Anatomy",
+        "House",
+        "ER",
+        "The Good Doctor"
+      ],
+      "answer": 0,
+      "fact": "\"Grey's Anatomy\" estreou em 2005 e é uma das séries médicas mais longas da TV."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que série mostra um mundo dominado por zumbis e o xerife Rick Grimes?",
+      "options": [
+        "The Walking Dead",
+        "The Last of Us",
+        "Z Nation",
+        "Black Summer"
+      ],
+      "answer": 0,
+      "fact": "A série foi baseada em quadrinhos de Robert Kirkman."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que série conta a vida da rainha Elizabeth II desde a juventude?",
+      "options": [
+        "The Crown",
+        "Victoria",
+        "Bridgerton",
+        "Downton Abbey"
+      ],
+      "answer": 0,
+      "fact": "Três atrizes diferentes interpretaram a rainha ao longo das temporadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que princesa da Disney se disfarça de soldado para lutar no lugar do pai?",
+      "options": [
+        "Mulan",
+        "Pocahontas",
+        "Moana",
+        "Merida"
+      ],
+      "answer": 0,
+      "fact": "O dragãozinho Mushu acompanha Mulan na aventura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a vilã de \"A Pequena Sereia\"?",
+      "options": [
+        "Úrsula",
+        "Malévola",
+        "Cruella",
+        "Rainha de Copas"
+      ],
+      "answer": 0,
+      "fact": "Úrsula é uma bruxa do mar com tentáculos de polvo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a vilã de \"101 Dálmatas\"?",
+      "options": [
+        "Cruella de Vil",
+        "Úrsula",
+        "Malévola",
+        "Madame Min"
+      ],
+      "answer": 0,
+      "fact": "Cruella queria fazer um casaco com a pele dos filhotes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que estúdio japonês fez \"A Viagem de Chihiro\" e \"Meu Amigo Totoro\"?",
+      "options": [
+        "Studio Ghibli",
+        "Toei Animation",
+        "Pixar",
+        "Madhouse"
+      ],
+      "answer": 0,
+      "fact": "\"A Viagem de Chihiro\" ganhou o Oscar de melhor animação em 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem criou \"Os Simpsons\"?",
+      "options": [
+        "Matt Groening",
+        "Seth MacFarlane",
+        "Trey Parker",
+        "Mike Judge"
+      ],
+      "answer": 0,
+      "fact": "Os nomes de Homer, Marge, Lisa e Maggie vieram da família do próprio Groening."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que personagem de desenho grita \"Yabba Dabba Doo!\"?",
+      "options": [
+        "Fred Flintstone",
+        "Barney Rubble",
+        "Zé Colmeia",
+        "Manda-Chuva"
+      ],
+      "answer": 0,
+      "fact": "\"Os Flintstones\", de 1960, foi a primeira série animada exibida em horário nobre nos Estados Unidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ator interpreta o Capitão América nos filmes da Marvel?",
+      "options": [
+        "Chris Evans",
+        "Chris Hemsworth",
+        "Chris Pratt",
+        "Sebastian Stan"
+      ],
+      "answer": 0,
+      "fact": "Antes de viver o Capitão, Chris Evans foi o Tocha Humana em \"Quarteto Fantástico\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atriz interpreta a Viúva Negra nos filmes da Marvel?",
+      "options": [
+        "Scarlett Johansson",
+        "Elizabeth Olsen",
+        "Brie Larson",
+        "Zoe Saldaña"
+      ],
+      "answer": 0,
+      "fact": "A personagem ganhou um filme próprio em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que filme de 2009 tem os alienígenas azuis chamados Na'vi?",
+      "options": [
+        "Avatar",
+        "Distrito 9",
+        "John Carter",
+        "Guerra dos Mundos"
+      ],
+      "answer": 0,
+      "fact": "\"Avatar\", de James Cameron, é a maior bilheteria da história do cinema."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que filme sobre o criador da bomba atômica venceu o Oscar de melhor filme em 2024?",
+      "options": [
+        "Oppenheimer",
+        "Barbie",
+        "Duna",
+        "Assassinos da Lua das Flores"
+      ],
+      "answer": 0,
+      "fact": "O filme foi dirigido por Christopher Nolan."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que série brasileira da Netflix trouxe o Curupira e a Cuca para os dias de hoje?",
+      "options": [
+        "Cidade Invisível",
+        "Sintonia",
+        "3%",
+        "Irmandade"
+      ],
+      "answer": 0,
+      "fact": "A série estreou em 2021 e mistura investigação policial com folclore."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ator interpreta o Mr. Bean?",
+      "options": [
+        "Rowan Atkinson",
+        "Hugh Grant",
+        "Ben Stiller",
+        "John Cleese"
+      ],
+      "answer": 0,
+      "fact": "Rowan Atkinson também é engenheiro elétrico de formação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que programa de humor apareciam o Seu Creysson e o Massaranduba?",
+      "options": [
+        "Casseta & Planeta",
+        "Zorra Total",
+        "Os Trapalhões",
+        "Escolinha do Professor Raimundo"
+      ],
+      "answer": 0,
+      "fact": "O grupo começou em revistas de humor nos anos 1980 antes de ir para a TV."
     }
   ]
 }

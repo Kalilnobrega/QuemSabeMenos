@@ -770,6 +770,2140 @@
       ],
       "answer": 0,
       "fact": "É a velocidade mínima para escapar da gravidade sem propulsão. Na Lua, bastam cerca de 2,4 km/s."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior planeta rochoso do Sistema Solar?",
+      "options": [
+        "Terra",
+        "Marte",
+        "Vênus",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Vênus fica logo atrás: tem cerca de 95% do diâmetro da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que animal tem o maior cérebro do reino animal?",
+      "options": [
+        "Cachalote",
+        "Elefante-africano",
+        "Baleia-azul",
+        "Golfinho"
+      ],
+      "answer": 0,
+      "fact": "O cérebro do cachalote pode pesar cerca de 8 kg, mais de cinco vezes o humano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Além do ornitorrinco, que outro mamífero bota ovos?",
+      "options": [
+        "Equidna",
+        "Tatu",
+        "Pangolim",
+        "Ouriço"
+      ],
+      "answer": 0,
+      "fact": "Ornitorrinco e equidnas formam o grupo dos monotremados, os mamíferos que botam ovos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ave tem a maior envergadura de asas do mundo?",
+      "options": [
+        "Albatroz-errante",
+        "Condor-dos-andes",
+        "Águia-harpia",
+        "Pelicano"
+      ],
+      "answer": 0,
+      "fact": "As asas abertas do albatroz-errante podem passar de 3 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a estrela mais brilhante do céu noturno?",
+      "options": [
+        "Sirius",
+        "Polaris",
+        "Betelgeuse",
+        "Vega"
+      ],
+      "answer": 0,
+      "fact": "Sirius fica na constelação do Cão Maior, a cerca de 8,6 anos-luz da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o menor osso do corpo humano?",
+      "options": [
+        "Estribo",
+        "Martelo",
+        "Falange do dedinho",
+        "Rótula"
+      ],
+      "answer": 0,
+      "fact": "O estribo fica dentro do ouvido e mede cerca de 3 milímetros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o elemento químico mais abundante na crosta terrestre?",
+      "options": [
+        "Oxigênio",
+        "Silício",
+        "Ferro",
+        "Alumínio"
+      ],
+      "answer": 0,
+      "fact": "O oxigênio, preso nas rochas e minerais, forma quase metade da massa da crosta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o símbolo químico do chumbo?",
+      "options": [
+        "Pb",
+        "Ch",
+        "Cu",
+        "Pl"
+      ],
+      "answer": 0,
+      "fact": "Pb vem do latim \"plumbum\", que deu origem a \"plumber\", encanador em inglês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o símbolo químico do mercúrio?",
+      "options": [
+        "Hg",
+        "Me",
+        "Mr",
+        "Mc"
+      ],
+      "answer": 0,
+      "fact": "Hg vem do grego \"hydrargyrum\", que quer dizer \"prata líquida\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que gás nobre brilha em vermelho-alaranjado nos letreiros luminosos?",
+      "options": [
+        "Neônio",
+        "Argônio",
+        "Criptônio",
+        "Xenônio"
+      ],
+      "answer": 0,
+      "fact": "O neônio foi descoberto em 1898, e o nome vem do grego \"neos\", novo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o metal mais abundante na crosta terrestre?",
+      "options": [
+        "Alumínio",
+        "Ferro",
+        "Cobre",
+        "Ouro"
+      ],
+      "answer": 0,
+      "fact": "Apesar de abundante, o alumínio só ficou barato no fim do século XIX, com a eletrólise."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número atômico do carbono?",
+      "options": [
+        "6",
+        "12",
+        "8",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "O número atômico é a quantidade de prótons no núcleo do átomo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que químico disse que \"na natureza nada se cria, nada se perde, tudo se transforma\"?",
+      "options": [
+        "Antoine Lavoisier",
+        "John Dalton",
+        "Robert Boyle",
+        "Dmitri Mendeleiev"
+      ],
+      "answer": 0,
+      "fact": "Lavoisier foi guilhotinado em 1794, durante a Revolução Francesa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista descobriu o elétron, em 1897?",
+      "options": [
+        "J. J. Thomson",
+        "Ernest Rutherford",
+        "Niels Bohr",
+        "James Chadwick"
+      ],
+      "answer": 0,
+      "fact": "Thomson imaginou o átomo como um \"pudim de passas\", com elétrons espalhados numa massa positiva."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista mostrou que o átomo tem um núcleo pequeno e denso, em 1911?",
+      "options": [
+        "Ernest Rutherford",
+        "J. J. Thomson",
+        "Niels Bohr",
+        "Albert Einstein"
+      ],
+      "answer": 0,
+      "fact": "Ele chegou a isso bombardeando uma folha finíssima de ouro com partículas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que físico dinamarquês propôs que os elétrons giram em órbitas com energias definidas?",
+      "options": [
+        "Niels Bohr",
+        "Werner Heisenberg",
+        "Max Planck",
+        "Erwin Schrödinger"
+      ],
+      "answer": 0,
+      "fact": "Bohr ganhou o Nobel de Física em 1922."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é, aproximadamente, a aceleração da gravidade na superfície da Terra?",
+      "options": [
+        "9,8 m/s²",
+        "3,7 m/s²",
+        "15 m/s²",
+        "1,6 m/s²"
+      ],
+      "answer": 0,
+      "fact": "Na Lua, a gravidade é cerca de seis vezes menor: 1,6 m/s²."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lei de Newton diz que toda ação tem uma reação igual e contrária?",
+      "options": [
+        "Terceira lei",
+        "Primeira lei",
+        "Segunda lei",
+        "Lei da gravitação"
+      ],
+      "answer": 0,
+      "fact": "É essa lei que explica como um foguete sobe: ele empurra gases para baixo e é empurrado para cima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a unidade de medida da resistência elétrica?",
+      "options": [
+        "Ohm",
+        "Volt",
+        "Ampere",
+        "Watt"
+      ],
+      "answer": 0,
+      "fact": "O símbolo do ohm é a letra grega ômega (Ω)."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que unidade mede a frequência de uma onda?",
+      "options": [
+        "Hertz",
+        "Decibel",
+        "Newton",
+        "Pascal"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia Heinrich Hertz, que comprovou a existência das ondas de rádio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que temperatura, aproximadamente, a água ferve no topo do Everest?",
+      "options": [
+        "Cerca de 70 °C",
+        "100 °C",
+        "Cerca de 120 °C",
+        "Cerca de 40 °C"
+      ],
+      "answer": 0,
+      "fact": "Com menos pressão do ar, a água ferve mais cedo, e o macarrão demora mais para cozinhar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o zero absoluto em graus Celsius?",
+      "options": [
+        "-273,15 °C",
+        "-100 °C",
+        "-459,67 °C",
+        "0 °C"
+      ],
+      "answer": 0,
+      "fact": "-459,67 é o zero absoluto em graus Fahrenheit."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista descobriu a radioatividade, em 1896, estudando o urânio?",
+      "options": [
+        "Henri Becquerel",
+        "Marie Curie",
+        "Wilhelm Röntgen",
+        "Ernest Rutherford"
+      ],
+      "answer": 0,
+      "fact": "Becquerel dividiu o Nobel de Física de 1903 com Marie e Pierre Curie."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem descobriu os raios X, em 1895?",
+      "options": [
+        "Wilhelm Röntgen",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Henri Becquerel"
+      ],
+      "answer": 0,
+      "fact": "Uma das primeiras radiografias mostrou a mão da esposa de Röntgen, com a aliança."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista francês criou a vacina contra a raiva e o processo de pasteurização?",
+      "options": [
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Robert Koch",
+        "Claude Bernard"
+      ],
+      "answer": 0,
+      "fact": "A pasteurização aquece o alimento para matar micróbios sem estragar o sabor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem criou a primeira vacina injetável contra a poliomielite?",
+      "options": [
+        "Jonas Salk",
+        "Albert Sabin",
+        "Edward Jenner",
+        "Louis Pasteur"
+      ],
+      "answer": 0,
+      "fact": "Salk não patenteou a vacina e perguntou: \"Dá para patentear o Sol?\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que inseto transmite a doença de Chagas?",
+      "options": [
+        "Barbeiro",
+        "Mosquito-prego",
+        "Pulga",
+        "Mosca-tsé-tsé"
+      ],
+      "answer": 0,
+      "fact": "Carlos Chagas descreveu o parasita, o inseto transmissor e a doença, sozinho, em 1909."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que médico brasileiro comandou a vacinação obrigatória que levou à Revolta da Vacina?",
+      "options": [
+        "Oswaldo Cruz",
+        "Carlos Chagas",
+        "Vital Brazil",
+        "Adolfo Lutz"
+      ],
+      "answer": 0,
+      "fact": "A Fiocruz, no Rio de Janeiro, leva o nome dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que físico brasileiro participou da descoberta do méson pi, em 1947?",
+      "options": [
+        "César Lattes",
+        "Mario Schenberg",
+        "José Leite Lopes",
+        "Marcelo Gleiser"
+      ],
+      "answer": 0,
+      "fact": "A Plataforma Lattes, onde os pesquisadores brasileiros guardam o currículo, leva o nome dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a maior lua de Saturno?",
+      "options": [
+        "Titã",
+        "Encélado",
+        "Europa",
+        "Reia"
+      ],
+      "answer": 0,
+      "fact": "Titã tem atmosfera densa e lagos de metano líquido na superfície."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a maior lua do Sistema Solar?",
+      "options": [
+        "Ganimedes",
+        "Titã",
+        "Lua",
+        "Calisto"
+      ],
+      "answer": 0,
+      "fact": "Ganimedes, que orbita Júpiter, é maior que o planeta Mercúrio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamam as duas luas de Marte?",
+      "options": [
+        "Fobos e Deimos",
+        "Io e Europa",
+        "Titã e Reia",
+        "Tritão e Nereida"
+      ],
+      "answer": 0,
+      "fact": "Os nomes vêm dos filhos do deus da guerra: Medo e Terror."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sonda foi a primeira a sair da heliosfera, a bolha do vento solar, em 2012?",
+      "options": [
+        "Voyager 1",
+        "Pioneer 10",
+        "New Horizons",
+        "Cassini"
+      ],
+      "answer": 0,
+      "fact": "Lançada em 1977, a Voyager 1 é o objeto feito pelo homem mais distante da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a grande galáxia mais próxima da Via Láctea?",
+      "options": [
+        "Andrômeda",
+        "Triângulo",
+        "Sombrero",
+        "Redemoinho"
+      ],
+      "answer": 0,
+      "fact": "Andrômeda fica a cerca de 2,5 milhões de anos-luz e é visível a olho nu em céus bem escuros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade aproximada do Universo?",
+      "options": [
+        "13,8 bilhões de anos",
+        "4,5 bilhões de anos",
+        "100 bilhões de anos",
+        "6 mil anos"
+      ],
+      "answer": 0,
+      "fact": "A estimativa vem da medição da radiação cósmica de fundo, o \"eco\" do Big Bang."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade aproximada da Terra?",
+      "options": [
+        "4,5 bilhões de anos",
+        "13,8 bilhões de anos",
+        "500 milhões de anos",
+        "65 milhões de anos"
+      ],
+      "answer": 0,
+      "fact": "As rochas mais antigas da Terra têm cerca de 4 bilhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o ponto da órbita em que a Terra fica mais perto do Sol?",
+      "options": [
+        "Periélio",
+        "Afélio",
+        "Equinócio",
+        "Solstício"
+      ],
+      "answer": 0,
+      "fact": "O periélio acontece no começo de janeiro, mostrando que as estações não vêm da distância ao Sol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a estrela mais próxima do Sistema Solar, depois do Sol?",
+      "options": [
+        "Proxima Centauri",
+        "Sirius",
+        "Betelgeuse",
+        "Estrela Polar"
+      ],
+      "answer": 0,
+      "fact": "Proxima Centauri fica a cerca de 4,2 anos-luz de distância."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que categoria de estrela o Sol se encaixa?",
+      "options": [
+        "Anã amarela",
+        "Gigante vermelha",
+        "Anã branca",
+        "Supergigante azul"
+      ],
+      "answer": 0,
+      "fact": "Daqui a uns 5 bilhões de anos, o Sol deve virar uma gigante vermelha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que objeto do espaço tem gravidade tão forte que nem a luz escapa?",
+      "options": [
+        "Buraco negro",
+        "Estrela de nêutrons",
+        "Quasar",
+        "Nebulosa"
+      ],
+      "answer": 0,
+      "fact": "A primeira imagem de um buraco negro, na galáxia M87, foi divulgada em 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista criou o sistema de nomes científicos de duas palavras, como \"Homo sapiens\"?",
+      "options": [
+        "Carl Lineu",
+        "Charles Darwin",
+        "Gregor Mendel",
+        "Jean-Baptiste Lamarck"
+      ],
+      "answer": 0,
+      "fact": "Lineu era sueco e publicou o sistema no século XVIII."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior órgão do sistema linfático?",
+      "options": [
+        "Baço",
+        "Timo",
+        "Fígado",
+        "Apêndice"
+      ],
+      "answer": 0,
+      "fact": "O baço filtra o sangue e remove as hemácias velhas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que glândula do cérebro é chamada de \"glândula mestra\"?",
+      "options": [
+        "Hipófise",
+        "Tireoide",
+        "Pineal",
+        "Suprarrenal"
+      ],
+      "answer": 0,
+      "fact": "A hipófise tem o tamanho de um grão de ervilha e comanda várias outras glândulas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que hormônio é liberado em situações de susto ou perigo?",
+      "options": [
+        "Adrenalina",
+        "Insulina",
+        "Melatonina",
+        "Ocitocina"
+      ],
+      "answer": 0,
+      "fact": "A adrenalina acelera o coração e prepara o corpo para lutar ou fugir."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o nome do osso do calcanhar?",
+      "options": [
+        "Calcâneo",
+        "Tálus",
+        "Patela",
+        "Fíbula"
+      ],
+      "answer": 0,
+      "fact": "O calcâneo é o maior osso do pé."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o único osso do corpo que não se articula com nenhum outro?",
+      "options": [
+        "Hioide",
+        "Estribo",
+        "Cóccix",
+        "Esterno"
+      ],
+      "answer": 0,
+      "fact": "O hioide fica no pescoço, acima da laringe, preso só por músculos e ligamentos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que proteína dá a cor vermelha ao sangue e carrega o oxigênio?",
+      "options": [
+        "Hemoglobina",
+        "Queratina",
+        "Colágeno",
+        "Insulina"
+      ],
+      "answer": 0,
+      "fact": "A hemoglobina tem ferro, e é por isso que a falta de ferro causa anemia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tipo sanguíneo é considerado receptor universal?",
+      "options": [
+        "AB positivo",
+        "O negativo",
+        "A positivo",
+        "B negativo"
+      ],
+      "answer": 0,
+      "fact": "Quem tem sangue AB positivo pode receber de todos os outros tipos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista descobriu os grupos sanguíneos A, B e O, em 1901?",
+      "options": [
+        "Karl Landsteiner",
+        "Louis Pasteur",
+        "Robert Koch",
+        "William Harvey"
+      ],
+      "answer": 0,
+      "fact": "A descoberta tornou as transfusões de sangue seguras e rendeu a ele o Nobel de 1930."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que vitamina é essencial para a coagulação do sangue?",
+      "options": [
+        "Vitamina K",
+        "Vitamina C",
+        "Vitamina D",
+        "Vitamina A"
+      ],
+      "answer": 0,
+      "fact": "O \"K\" vem de \"Koagulation\", em alemão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que região do cérebro é essencial para formar novas memórias?",
+      "options": [
+        "Hipocampo",
+        "Cerebelo",
+        "Bulbo",
+        "Hipotálamo"
+      ],
+      "answer": 0,
+      "fact": "O nome vem do grego e quer dizer cavalo-marinho, por causa do formato."
+    },
+    {
+      "difficulty": "hard",
+      "text": "De que proteína são feitos os cabelos e as unhas?",
+      "options": [
+        "Queratina",
+        "Hemoglobina",
+        "Colágeno",
+        "Melanina"
+      ],
+      "answer": 0,
+      "fact": "A mesma queratina forma chifres, cascos e penas de outros animais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que animal marinho tem sangue azul, usado para testar a pureza de vacinas?",
+      "options": [
+        "Caranguejo-ferradura",
+        "Polvo-gigante",
+        "Lula",
+        "Água-viva"
+      ],
+      "answer": 0,
+      "fact": "O sangue é azul por causa da hemocianina, que usa cobre em vez de ferro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o único mamífero coberto de escamas?",
+      "options": [
+        "Pangolim",
+        "Tatu",
+        "Ouriço",
+        "Tamanduá"
+      ],
+      "answer": 0,
+      "fact": "Quando se sente ameaçado, o pangolim se enrola como uma bola."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que mamífero tem a gravidez mais longa?",
+      "options": [
+        "Elefante",
+        "Baleia-azul",
+        "Girafa",
+        "Rinoceronte"
+      ],
+      "answer": 0,
+      "fact": "A gestação do elefante dura cerca de 22 meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é considerado o peixe mais rápido do mundo?",
+      "options": [
+        "Agulhão-veleiro",
+        "Tubarão-mako",
+        "Atum",
+        "Peixe-espada"
+      ],
+      "answer": 0,
+      "fact": "O agulhão-veleiro tem uma grande barbatana nas costas, que lembra a vela de um barco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que animal dorme cerca de 20 horas por dia?",
+      "options": [
+        "Coala",
+        "Gato",
+        "Leão",
+        "Cavalo"
+      ],
+      "answer": 0,
+      "fact": "As folhas de eucalipto dão pouca energia, e o coala economiza dormindo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que animal tem os maiores olhos do reino animal?",
+      "options": [
+        "Lula-colossal",
+        "Baleia-azul",
+        "Avestruz",
+        "Polvo-gigante"
+      ],
+      "answer": 0,
+      "fact": "Cada olho da lula-colossal pode ter o tamanho de uma bola de futebol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o único satélite natural da Terra?",
+      "options": [
+        "Lua",
+        "Sol",
+        "Marte",
+        "Vênus"
+      ],
+      "answer": 0,
+      "fact": "A Lua se afasta da Terra cerca de 3,8 centímetros por ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que órgão do corpo pensa e controla os outros órgãos?",
+      "options": [
+        "Cérebro",
+        "Coração",
+        "Fígado",
+        "Estômago"
+      ],
+      "answer": 0,
+      "fact": "O cérebro humano tem cerca de 86 bilhões de neurônios."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pulmões tem o ser humano?",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "O pulmão esquerdo é um pouco menor que o direito, para dar espaço ao coração."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que órgão filtra o sangue e produz a urina?",
+      "options": [
+        "Rim",
+        "Pulmão",
+        "Coração",
+        "Intestino"
+      ],
+      "answer": 0,
+      "fact": "Os rins filtram cerca de 180 litros de líquido do sangue por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a passagem da água do estado líquido para o gasoso?",
+      "options": [
+        "Evaporação",
+        "Condensação",
+        "Solidificação",
+        "Fusão"
+      ],
+      "answer": 0,
+      "fact": "A condensação é o caminho inverso, como as gotinhas que se formam por fora de um copo gelado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o animal mais alto do mundo?",
+      "options": [
+        "Girafa",
+        "Elefante",
+        "Avestruz",
+        "Camelo"
+      ],
+      "answer": 0,
+      "fact": "Uma girafa adulta pode passar de 5 metros de altura."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que as abelhas recolhem das flores para fazer mel?",
+      "options": [
+        "Néctar",
+        "Seiva",
+        "Resina",
+        "Orvalho"
+      ],
+      "answer": 0,
+      "fact": "Para fazer meio quilo de mel, as abelhas visitam milhões de flores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem um inseto?",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Aranhas não são insetos: são aracnídeos, com 8 patas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A baleia é que tipo de animal?",
+      "options": [
+        "Mamífero",
+        "Peixe",
+        "Réptil",
+        "Anfíbio"
+      ],
+      "answer": 0,
+      "fact": "A baleia respira ar e amamenta os filhotes, como todo mamífero."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais é um réptil?",
+      "options": [
+        "Jacaré",
+        "Sapo",
+        "Golfinho",
+        "Pinguim"
+      ],
+      "answer": 0,
+      "fact": "Sapos e rãs são anfíbios: nascem na água, como girinos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a camada mais externa da Terra, onde vivemos?",
+      "options": [
+        "Crosta",
+        "Manto",
+        "Núcleo",
+        "Atmosfera"
+      ],
+      "answer": 0,
+      "fact": "Debaixo da crosta ficam o manto e o núcleo, onde a temperatura passa de 5 mil °C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a rocha derretida que sai de um vulcão em erupção?",
+      "options": [
+        "Lava",
+        "Areia",
+        "Cinza",
+        "Granito"
+      ],
+      "answer": 0,
+      "fact": "Enquanto ainda está dentro da Terra, a rocha derretida se chama magma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta é famosa por ter muita vitamina C?",
+      "options": [
+        "Laranja",
+        "Banana",
+        "Abacate",
+        "Coco"
+      ],
+      "answer": 0,
+      "fact": "Nas viagens longas de navio, os marinheiros pegavam escorbuto por falta de vitamina C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que mineral, presente no leite, é importante para os ossos?",
+      "options": [
+        "Cálcio",
+        "Ferro",
+        "Sódio",
+        "Iodo"
+      ],
+      "answer": 0,
+      "fact": "Cerca de 99% do cálcio do corpo fica nos ossos e nos dentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas a Terra leva para dar uma volta em torno de si mesma?",
+      "options": [
+        "24 horas",
+        "12 horas",
+        "48 horas",
+        "365 horas"
+      ],
+      "answer": 0,
+      "fact": "Medindo pelas estrelas, a volta leva 23 horas e 56 minutos: é o chamado dia sideral."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto tempo a Terra leva para dar uma volta completa ao redor do Sol?",
+      "options": [
+        "Cerca de um ano",
+        "Um mês",
+        "Um dia",
+        "Dez anos"
+      ],
+      "answer": 0,
+      "fact": "São cerca de 365 dias e 6 horas, e é por isso que existe o ano bissexto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o planeta mais distante do Sol?",
+      "options": [
+        "Netuno",
+        "Urano",
+        "Saturno",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "Netuno tem os ventos mais rápidos do Sistema Solar, que passam de 2 mil km/h."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o caminho que um planeta percorre ao redor do Sol?",
+      "options": [
+        "Órbita",
+        "Eclipse",
+        "Rotação",
+        "Galáxia"
+      ],
+      "answer": 0,
+      "fact": "As órbitas dos planetas são elipses, um pouco achatadas, e não círculos perfeitos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o nome da nossa galáxia?",
+      "options": [
+        "Via Láctea",
+        "Andrômeda",
+        "Órion",
+        "Nebulosa de Caranguejo"
+      ],
+      "answer": 0,
+      "fact": "A Via Láctea tem entre 100 e 400 bilhões de estrelas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cientista teria pensado na gravidade ao ver uma maçã cair?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileu Galilei",
+        "Charles Darwin"
+      ],
+      "answer": 0,
+      "fact": "Foi o próprio Newton, já idoso, quem contou a história da maçã a um amigo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que instrumento é usado para ver coisas muito pequenas, como células?",
+      "options": [
+        "Microscópio",
+        "Telescópio",
+        "Estetoscópio",
+        "Periscópio"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros microscópios surgiram no fim do século XVI, na Holanda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que instrumento é usado para observar estrelas e planetas?",
+      "options": [
+        "Telescópio",
+        "Microscópio",
+        "Termômetro",
+        "Barômetro"
+      ],
+      "answer": 0,
+      "fact": "Galileu foi um dos primeiros a apontar um telescópio para o céu, em 1609."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que gás soltamos quando expiramos?",
+      "options": [
+        "Gás carbônico",
+        "Hélio",
+        "Hidrogênio",
+        "Ozônio"
+      ],
+      "answer": 0,
+      "fact": "O ar que expiramos ainda tem cerca de 16% de oxigênio, e por isso a respiração boca a boca funciona."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Tradicionalmente, quantas cores tem o arco-íris?",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "Foi Isaac Newton quem dividiu o arco-íris em 7 cores, inspirado nas 7 notas musicais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes materiais é atraído por um ímã?",
+      "options": [
+        "Ferro",
+        "Alumínio",
+        "Plástico",
+        "Madeira"
+      ],
+      "answer": 0,
+      "fact": "Alumínio, cobre e ouro não são atraídos por ímãs comuns."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a energia gerada pela força do vento?",
+      "options": [
+        "Eólica",
+        "Solar",
+        "Hidrelétrica",
+        "Nuclear"
+      ],
+      "answer": 0,
+      "fact": "O Nordeste é a região que mais produz energia eólica no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que metal é usado nos fios elétricos por conduzir bem a eletricidade?",
+      "options": [
+        "Cobre",
+        "Ferro",
+        "Chumbo",
+        "Zinco"
+      ],
+      "answer": 0,
+      "fact": "A prata conduz eletricidade ainda melhor que o cobre, mas é cara demais para fios."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doença é transmitida pelo mosquito Aedes aegypti?",
+      "options": [
+        "Dengue",
+        "Malária",
+        "Tuberculose",
+        "Gripe"
+      ],
+      "answer": 0,
+      "fact": "O mesmo mosquito também transmite zika e chikungunya."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Onde começa a digestão dos alimentos?",
+      "options": [
+        "Na boca",
+        "No estômago",
+        "No intestino",
+        "No fígado"
+      ],
+      "answer": 0,
+      "fact": "A saliva já começa a quebrar o amido dos alimentos enquanto mastigamos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior peixe do mundo?",
+      "options": [
+        "Tubarão-baleia",
+        "Tubarão-branco",
+        "Peixe-espada",
+        "Arraia-jamanta"
+      ],
+      "answer": 0,
+      "fact": "Apesar do tamanho, o tubarão-baleia se alimenta de plâncton e de peixes pequenos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais pode viver mais de 150 anos?",
+      "options": [
+        "Tartaruga-gigante",
+        "Elefante",
+        "Cachorro",
+        "Cavalo"
+      ],
+      "answer": 0,
+      "fact": "A tartaruga Jonathan, que vive na ilha de Santa Helena, nasceu por volta de 1832."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a maior ave do mundo?",
+      "options": [
+        "Avestruz",
+        "Águia",
+        "Pinguim-imperador",
+        "Ema"
+      ],
+      "answer": 0,
+      "fact": "O avestruz não voa, mas corre a até 70 km/h."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ave não voa e vive na Antártida?",
+      "options": [
+        "Pinguim",
+        "Gaivota",
+        "Albatroz",
+        "Pelicano"
+      ],
+      "answer": 0,
+      "fact": "Quase todas as espécies de pinguim vivem no Hemisfério Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fenômeno faz o nível do mar subir e descer ao longo do dia?",
+      "options": [
+        "Maré",
+        "Onda",
+        "Tsunami",
+        "Corrente"
+      ],
+      "answer": 0,
+      "fact": "As marés são causadas principalmente pela atração da Lua."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o cientista que estuda as estrelas e os planetas?",
+      "options": [
+        "Astrônomo",
+        "Astrólogo",
+        "Geólogo",
+        "Biólogo"
+      ],
+      "answer": 0,
+      "fact": "Astrologia, a dos signos, não é ciência; astronomia é."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o cientista que estuda os fósseis, como os de dinossauros?",
+      "options": [
+        "Paleontólogo",
+        "Arqueólogo",
+        "Meteorologista",
+        "Veterinário"
+      ],
+      "answer": 0,
+      "fact": "Fósseis de dinossauros já foram encontrados em vários estados do Brasil, como Rio Grande do Sul e Minas Gerais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é miopia?",
+      "options": [
+        "Dificuldade de enxergar de longe",
+        "Dificuldade de enxergar de perto",
+        "Não enxergar cores",
+        "Ver tudo dobrado"
+      ],
+      "answer": 0,
+      "fact": "Na hipermetropia é o contrário: a dificuldade é enxergar de perto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que gás faz os balões de festa flutuarem?",
+      "options": [
+        "Hélio",
+        "Oxigênio",
+        "Gás carbônico",
+        "Nitrogênio"
+      ],
+      "answer": 0,
+      "fact": "O hélio é mais leve que o ar e também deixa a voz fina quando inalado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que acontece num eclipse solar?",
+      "options": [
+        "A Lua passa na frente do Sol",
+        "A Terra passa na frente da Lua",
+        "O Sol se apaga",
+        "Marte passa na frente do Sol"
+      ],
+      "answer": 0,
+      "fact": "Num eclipse total, o dia escurece por alguns minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que é feita a maior parte do corpo humano?",
+      "options": [
+        "Água",
+        "Ossos",
+        "Gordura",
+        "Músculos"
+      ],
+      "answer": 0,
+      "fact": "Cerca de 60% do corpo de um adulto é água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que espécie é o macho que fica \"grávido\" dos filhotes?",
+      "options": [
+        "Cavalo-marinho",
+        "Pinguim",
+        "Canguru",
+        "Golfinho"
+      ],
+      "answer": 0,
+      "fact": "A fêmea deposita os ovos numa bolsa do macho, que carrega os filhotes até nascerem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal vive em árvores e se move bem devagar?",
+      "options": [
+        "Bicho-preguiça",
+        "Macaco-prego",
+        "Esquilo",
+        "Tamanduá"
+      ],
+      "answer": 0,
+      "fact": "A preguiça desce da árvore mais ou menos uma vez por semana, só para fazer cocô."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal produz a seda?",
+      "options": [
+        "Bicho-da-seda",
+        "Aranha-armadeira",
+        "Abelha",
+        "Borboleta-monarca"
+      ],
+      "answer": 0,
+      "fact": "Um único casulo do bicho-da-seda tem centenas de metros de fio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o filhote do sapo?",
+      "options": [
+        "Girino",
+        "Larva",
+        "Alevino",
+        "Pupa"
+      ],
+      "answer": 0,
+      "fact": "O girino respira por brânquias e, quando vira sapo, passa a usar pulmões."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte da planta faz a fotossíntese?",
+      "options": [
+        "Folha",
+        "Raiz",
+        "Semente",
+        "Flor"
+      ],
+      "answer": 0,
+      "fact": "O verde das folhas vem da clorofila, que capta a luz do sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas são as fases principais da Lua?",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "O ciclo completo das fases da Lua leva cerca de 29 dias e meio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que astro de gelo e poeira forma uma cauda brilhante quando chega perto do Sol?",
+      "options": [
+        "Cometa",
+        "Meteoro",
+        "Satélite",
+        "Planeta anão"
+      ],
+      "answer": 0,
+      "fact": "O cometa Halley passa perto da Terra a cada 76 anos; a próxima visita será em 2061."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que serve uma vacina?",
+      "options": [
+        "Ensinar o corpo a se defender de uma doença",
+        "Curar uma infecção já instalada",
+        "Matar bactérias no sangue",
+        "Aliviar a dor"
+      ],
+      "answer": 0,
+      "fact": "Graças à vacinação, a varíola foi declarada erradicada do mundo em 1980."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Contra qual doença o Zé Gotinha faz campanha de vacinação?",
+      "options": [
+        "Poliomielite",
+        "Dengue",
+        "Catapora",
+        "Sarampo"
+      ],
+      "answer": 0,
+      "fact": "O Zé Gotinha foi criado em 1986 para as campanhas contra a paralisia infantil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura a água pura congela, ao nível do mar?",
+      "options": [
+        "0 °C",
+        "10 °C",
+        "-10 °C",
+        "4 °C"
+      ],
+      "answer": 0,
+      "fact": "Ao congelar, a água se expande, e é por isso que o gelo boia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que nutriente do arroz, do pão e do macarrão é a principal fonte de energia do corpo?",
+      "options": [
+        "Carboidrato",
+        "Proteína",
+        "Vitamina",
+        "Fibra"
+      ],
+      "answer": 0,
+      "fact": "O cérebro usa a glicose, que vem dos carboidratos, como seu combustível principal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que nutriente, presente na carne e no ovo, ajuda a formar os músculos?",
+      "options": [
+        "Proteína",
+        "Carboidrato",
+        "Gordura",
+        "Açúcar"
+      ],
+      "answer": 0,
+      "fact": "Feijão, lentilha e grão-de-bico também são ótimas fontes de proteína."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o som que volta depois de bater numa parede ou montanha?",
+      "options": [
+        "Eco",
+        "Ruído",
+        "Ultrassom",
+        "Sopro"
+      ],
+      "answer": 0,
+      "fact": "Os morcegos usam o eco dos próprios gritos para se orientar no escuro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que viaja mais rápido: a luz ou o som?",
+      "options": [
+        "A luz",
+        "O som",
+        "Os dois são iguais",
+        "Depende do clima"
+      ],
+      "answer": 0,
+      "fact": "É por isso que vemos o relâmpago antes de ouvir o trovão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um planeta anão?",
+      "options": [
+        "Plutão",
+        "Marte",
+        "Mercúrio",
+        "Netuno"
+      ],
+      "answer": 0,
+      "fact": "Plutão deixou de ser considerado planeta em 2006."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doença é causada pela falta de insulina no corpo?",
+      "options": [
+        "Diabetes",
+        "Anemia",
+        "Asma",
+        "Hipertensão"
+      ],
+      "answer": 0,
+      "fact": "A insulina foi descoberta em 1921, no Canadá."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o aparelho que o médico usa para ouvir o coração?",
+      "options": [
+        "Estetoscópio",
+        "Termômetro",
+        "Microscópio",
+        "Bisturi"
+      ],
+      "answer": 0,
+      "fact": "O estetoscópio foi inventado em 1816 pelo médico francês René Laennec."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos ossos tem o crânio humano adulto?",
+      "options": [
+        "22",
+        "8",
+        "14",
+        "18",
+        "29",
+        "32"
+      ],
+      "answer": 0,
+      "fact": "Oito ossos formam a caixa craniana, e catorze, o rosto."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanta saliva um adulto produz por dia, aproximadamente?",
+      "options": [
+        "Entre 1 e 1,5 litro",
+        "Cerca de 50 ml",
+        "Cerca de 200 ml",
+        "Entre 3 e 4 litros",
+        "Cerca de 6 litros",
+        "Cerca de 10 litros"
+      ],
+      "answer": 0,
+      "fact": "A saliva ajuda a digerir o amido e protege os dentes contra as cáries."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a temperatura aproximada da superfície do Sol?",
+      "options": [
+        "5.500 °C",
+        "1.000 °C",
+        "2.000 °C",
+        "50.000 °C",
+        "100.000 °C",
+        "15 milhões de °C"
+      ],
+      "answer": 0,
+      "fact": "No núcleo do Sol, a temperatura passa de 15 milhões de graus."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas vezes o coração de um adulto bate por dia, em média?",
+      "options": [
+        "Cerca de 100 mil",
+        "Cerca de 3 mil",
+        "Cerca de 10 mil",
+        "Cerca de 30 mil",
+        "Cerca de 500 mil",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "Ao longo de uma vida, são mais de 2,5 bilhões de batidas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que planeta tem o maior número de luas confirmadas?",
+      "options": [
+        "Saturno",
+        "Júpiter",
+        "Urano",
+        "Netuno",
+        "Marte",
+        "Terra"
+      ],
+      "answer": 0,
+      "fact": "Em 2025, astrônomos anunciaram de uma vez 128 novas luas de Saturno."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o menor planeta do Sistema Solar?",
+      "options": [
+        "Mercúrio",
+        "Marte",
+        "Vênus",
+        "Plutão"
+      ],
+      "answer": 0,
+      "fact": "Mercúrio é só um pouco maior que a nossa Lua."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a passagem do estado sólido para o líquido, como o gelo derretendo?",
+      "options": [
+        "Fusão",
+        "Evaporação",
+        "Condensação",
+        "Sublimação"
+      ],
+      "answer": 0,
+      "fact": "A sublimação é a passagem direta do sólido para o gasoso, como acontece com o gelo-seco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que mamífero australiano tem bico de pato e bota ovos?",
+      "options": [
+        "Ornitorrinco",
+        "Coala",
+        "Canguru",
+        "Vombate"
+      ],
+      "answer": 0,
+      "fact": "O macho do ornitorrinco tem um esporão venenoso nas patas traseiras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que parte da planta costuma se transformar no fruto?",
+      "options": [
+        "A flor",
+        "A folha",
+        "A raiz",
+        "O caule"
+      ],
+      "answer": 0,
+      "fact": "Depois de polinizada, a flor desenvolve o fruto, que protege as sementes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dentes de leite tem uma criança?",
+      "options": [
+        "20",
+        "32",
+        "24",
+        "16"
+      ],
+      "answer": 0,
+      "fact": "Os dentes de leite começam a cair por volta dos 6 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que parte do olho dá a cor dos olhos?",
+      "options": [
+        "Íris",
+        "Pupila",
+        "Córnea",
+        "Retina"
+      ],
+      "answer": 0,
+      "fact": "A pupila é o furinho preto no centro da íris, que aumenta ou diminui conforme a luz."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que causa as estações do ano?",
+      "options": [
+        "A inclinação do eixo da Terra",
+        "A distância entre a Terra e o Sol",
+        "As fases da Lua",
+        "As correntes oceânicas"
+      ],
+      "answer": 0,
+      "fact": "Quando é verão no Hemisfério Sul, é inverno no Norte, porque cada um recebe o sol de um jeito."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o planeta mais quente do Sistema Solar?",
+      "options": [
+        "Vênus",
+        "Mercúrio",
+        "Marte",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "A atmosfera densa de Vênus prende o calor, e a temperatura passa de 460 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que médico inglês criou a primeira vacina, contra a varíola, em 1796?",
+      "options": [
+        "Edward Jenner",
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Robert Koch"
+      ],
+      "answer": 0,
+      "fact": "A palavra vacina vem de \"vaca\": Jenner usou o vírus da varíola bovina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tipo sanguíneo mais comum no Brasil?",
+      "options": [
+        "O positivo",
+        "A positivo",
+        "B negativo",
+        "AB positivo"
+      ],
+      "answer": 0,
+      "fact": "Somados, os tipos O positivo e A positivo correspondem à maioria dos brasileiros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o animal mais rápido do mundo, num mergulho?",
+      "options": [
+        "Falcão-peregrino",
+        "Guepardo",
+        "Águia-real",
+        "Andorinha"
+      ],
+      "answer": 0,
+      "fact": "No mergulho para caçar, o falcão-peregrino passa de 300 km/h."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo a luz do Sol leva para chegar à Terra?",
+      "options": [
+        "Cerca de 8 minutos",
+        "Cerca de 1 segundo",
+        "Cerca de 1 hora",
+        "Cerca de 1 dia"
+      ],
+      "answer": 0,
+      "fact": "Se o Sol se apagasse, só perceberíamos uns 8 minutos depois."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que parte do ouvido ficam os órgãos que ajudam no equilíbrio?",
+      "options": [
+        "Ouvido interno",
+        "Ouvido médio",
+        "Ouvido externo",
+        "Lóbulo da orelha"
+      ],
+      "answer": 0,
+      "fact": "Por isso uma labirintite, inflamação no ouvido interno, pode dar tontura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pontas tem um floco de neve?",
+      "options": [
+        "6",
+        "4",
+        "5",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "As moléculas de água se organizam em hexágonos ao congelar, por isso os flocos têm 6 pontas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que mede um ano-luz?",
+      "options": [
+        "Distância",
+        "Tempo",
+        "Velocidade",
+        "Brilho"
+      ],
+      "answer": 0,
+      "fact": "Um ano-luz é a distância que a luz percorre em um ano: cerca de 9,5 trilhões de quilômetros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que células do sangue defendem o corpo contra infecções?",
+      "options": [
+        "Glóbulos brancos",
+        "Glóbulos vermelhos",
+        "Plaquetas",
+        "Neurônios"
+      ],
+      "answer": 0,
+      "fact": "As plaquetas ajudam na coagulação, fechando os machucados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que células do sangue transportam o oxigênio?",
+      "options": [
+        "Glóbulos vermelhos",
+        "Glóbulos brancos",
+        "Plaquetas",
+        "Anticorpos"
+      ],
+      "answer": 0,
+      "fact": "Os glóbulos vermelhos, ou hemácias, vivem cerca de 120 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que planeta tem uma enorme tempestade chamada Grande Mancha Vermelha?",
+      "options": [
+        "Júpiter",
+        "Marte",
+        "Saturno",
+        "Netuno"
+      ],
+      "answer": 0,
+      "fact": "A Grande Mancha Vermelha é maior que a Terra e é observada há mais de 150 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de sangue tem, em média, um adulto?",
+      "options": [
+        "Cerca de 5 litros",
+        "Cerca de 1 litro",
+        "Cerca de 12 litros",
+        "Cerca de 20 litros"
+      ],
+      "answer": 0,
+      "fact": "Numa doação, a pessoa doa cerca de 450 ml, e o corpo repõe tudo em poucas semanas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que continente não existem formigas nativas?",
+      "options": [
+        "Antártida",
+        "Oceania",
+        "Europa",
+        "África"
+      ],
+      "answer": 0,
+      "fact": "Fora o frio extremo da Antártida, as formigas estão no mundo inteiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a força que faz um barco boiar?",
+      "options": [
+        "Empuxo",
+        "Atrito",
+        "Gravidade",
+        "Inércia"
+      ],
+      "answer": 0,
+      "fact": "A ideia é atribuída a Arquimedes, que teria gritado \"Eureka!\" ao perceber isso numa banheira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que órgão produz a insulina?",
+      "options": [
+        "Pâncreas",
+        "Fígado",
+        "Rim",
+        "Baço"
+      ],
+      "answer": 0,
+      "fact": "O pâncreas também produz enzimas que ajudam a digerir os alimentos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o símbolo químico da prata?",
+      "options": [
+        "Ag",
+        "Pr",
+        "Pt",
+        "Si"
+      ],
+      "answer": 0,
+      "fact": "Ag vem do latim \"argentum\", palavra que também deu nome à Argentina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a fórmula química do gás carbônico?",
+      "options": [
+        "CO2",
+        "CO",
+        "O2",
+        "CH4"
+      ],
+      "answer": 0,
+      "fact": "O gelo-seco é gás carbônico congelado, a -78 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que astrônomo propôs, no século XVI, que a Terra gira em torno do Sol?",
+      "options": [
+        "Nicolau Copérnico",
+        "Ptolomeu",
+        "Aristóteles",
+        "Johannes Kepler"
+      ],
+      "answer": 0,
+      "fact": "O livro de Copérnico foi publicado em 1543, ano de sua morte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cientista italiano foi julgado pela Inquisição por defender que a Terra gira em torno do Sol?",
+      "options": [
+        "Galileu Galilei",
+        "Giordano Bruno",
+        "Leonardo da Vinci",
+        "Copérnico"
+      ],
+      "answer": 0,
+      "fact": "Galileu foi condenado em 1633 e passou o resto da vida em prisão domiciliar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que estuda a botânica?",
+      "options": [
+        "As plantas",
+        "Os animais",
+        "As rochas",
+        "Os astros"
+      ],
+      "answer": 0,
+      "fact": "A zoologia estuda os animais, e a micologia, os fungos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de ser vivo é o cogumelo?",
+      "options": [
+        "Fungo",
+        "Planta",
+        "Bactéria",
+        "Alga"
+      ],
+      "answer": 0,
+      "fact": "Fungos não são plantas: não fazem fotossíntese."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que parte da célula fica guardado o DNA?",
+      "options": [
+        "No núcleo",
+        "Na membrana",
+        "No citoplasma",
+        "Na parede celular"
+      ],
+      "answer": 0,
+      "fact": "Se fosse esticado, o DNA de uma única célula humana teria cerca de 2 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que parte da célula é conhecida como a \"usina de energia\"?",
+      "options": [
+        "Mitocôndria",
+        "Ribossomo",
+        "Núcleo",
+        "Vacúolo"
+      ],
+      "answer": 0,
+      "fact": "As mitocôndrias têm DNA próprio, herdado só da mãe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o formato da molécula de DNA?",
+      "options": [
+        "Dupla hélice",
+        "Esfera",
+        "Cubo",
+        "Linha reta"
+      ],
+      "answer": 0,
+      "fact": "Watson e Crick descreveram a estrutura em 1953, com base em imagens feitas por Rosalind Franklin."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que vírus causa a aids?",
+      "options": [
+        "HIV",
+        "HPV",
+        "H1N1",
+        "Zika"
+      ],
+      "answer": 0,
+      "fact": "Quem faz o tratamento corretamente pode ficar com o vírus indetectável e não transmiti-lo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Contra que doença é a vacina BCG, que deixa uma cicatriz no braço?",
+      "options": [
+        "Tuberculose",
+        "Sarampo",
+        "Febre amarela",
+        "Tétano"
+      ],
+      "answer": 0,
+      "fact": "A BCG é aplicada logo depois do nascimento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que substância dá o sabor azedo do limão?",
+      "options": [
+        "Ácido cítrico",
+        "Ácido sulfúrico",
+        "Cloreto de sódio",
+        "Bicarbonato"
+      ],
+      "answer": 0,
+      "fact": "O ácido cítrico também é usado como conservante em sucos e refrigerantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que unidade aparece na conta de luz para medir a energia consumida?",
+      "options": [
+        "Quilowatt-hora (kWh)",
+        "Volt",
+        "Ampere",
+        "Litro"
+      ],
+      "answer": 0,
+      "fact": "Na maioria das casas brasileiras, o chuveiro elétrico é o aparelho que mais gasta energia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que unidade mede a tensão elétrica?",
+      "options": [
+        "Volt",
+        "Watt",
+        "Ohm",
+        "Joule"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia o italiano Alessandro Volta, inventor da pilha elétrica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que fenômeno faz um lápis parecer quebrado dentro de um copo d'água?",
+      "options": [
+        "Refração",
+        "Reflexão",
+        "Difração",
+        "Evaporação"
+      ],
+      "answer": 0,
+      "fact": "A luz muda de velocidade ao passar do ar para a água, e por isso muda de direção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cor de luz junta todas as cores do arco-íris?",
+      "options": [
+        "Branca",
+        "Preta",
+        "Amarela",
+        "Cinza"
+      ],
+      "answer": 0,
+      "fact": "Newton mostrou isso com um prisma, separando a luz branca em várias cores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que camada da atmosfera vivemos e acontecem as chuvas?",
+      "options": [
+        "Troposfera",
+        "Estratosfera",
+        "Mesosfera",
+        "Termosfera"
+      ],
+      "answer": 0,
+      "fact": "A troposfera vai até cerca de 12 km de altura, perto de onde voam os aviões comerciais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de rocha se forma quando a lava esfria?",
+      "options": [
+        "Magmática",
+        "Sedimentar",
+        "Metamórfica",
+        "Calcária"
+      ],
+      "answer": 0,
+      "fact": "O granito e o basalto são exemplos de rochas magmáticas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O grafite do lápis é feito de qual elemento químico?",
+      "options": [
+        "Carbono",
+        "Chumbo",
+        "Silício",
+        "Enxofre"
+      ],
+      "answer": 0,
+      "fact": "O diamante também é carbono puro; o que muda é a organização dos átomos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o animal que mais causa mortes de pessoas no mundo?",
+      "options": [
+        "Mosquito",
+        "Tubarão",
+        "Cobra",
+        "Leão"
+      ],
+      "answer": 0,
+      "fact": "Os mosquitos transmitem doenças como malária e dengue, que matam centenas de milhares por ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas asas tem uma abelha?",
+      "options": [
+        "4",
+        "2",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "As abelhas batem as asas mais de 200 vezes por segundo, e isso faz o zumbido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior réptil do mundo?",
+      "options": [
+        "Crocodilo-de-água-salgada",
+        "Sucuri",
+        "Dragão-de-komodo",
+        "Tartaruga-de-couro"
+      ],
+      "answer": 0,
+      "fact": "Os machos do crocodilo-de-água-salgada podem passar de 6 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos compartimentos tem o estômago da vaca?",
+      "options": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "Rúmen, retículo, omaso e abomaso: a vaca rumina, ou seja, volta a mastigar a comida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Por que o céu é azul durante o dia?",
+      "options": [
+        "Porque o ar espalha mais a luz azul do Sol",
+        "Porque reflete a cor do mar",
+        "Porque o ar tem um gás azul",
+        "Porque o ozônio é azul"
+      ],
+      "answer": 0,
+      "fact": "No fim da tarde a luz atravessa mais ar, o azul se perde e sobram os tons alaranjados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A quantos graus Fahrenheit a água congela?",
+      "options": [
+        "32 °F",
+        "0 °F",
+        "100 °F",
+        "212 °F"
+      ],
+      "answer": 0,
+      "fact": "A escala Fahrenheit ainda é usada nos Estados Unidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que acontece num eclipse lunar?",
+      "options": [
+        "A Terra fica entre o Sol e a Lua",
+        "A Lua fica entre o Sol e a Terra",
+        "O Sol fica entre a Terra e a Lua",
+        "Vênus encobre a Lua"
+      ],
+      "answer": 0,
+      "fact": "No eclipse total, a Lua pode ficar avermelhada, a chamada \"lua de sangue\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o primeiro satélite artificial, lançado em 1957?",
+      "options": [
+        "Sputnik 1",
+        "Apollo 11",
+        "Hubble",
+        "Explorer 1"
+      ],
+      "answer": 0,
+      "fact": "O Sputnik era uma esfera de 58 cm que emitia bipes de rádio enquanto orbitava a Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem foi a primeira mulher a ir ao espaço?",
+      "options": [
+        "Valentina Tereshkova",
+        "Sally Ride",
+        "Marie Curie",
+        "Christa McAuliffe"
+      ],
+      "answer": 0,
+      "fact": "A soviética Valentina Tereshkova voou em 1963, a bordo da Vostok 6."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O pH de um ácido é maior ou menor que 7?",
+      "options": [
+        "Menor que 7",
+        "Maior que 7",
+        "Igual a 7",
+        "Sempre zero"
+      ],
+      "answer": 0,
+      "fact": "O suco do estômago é muito ácido, com pH entre 1 e 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a divisão de uma célula em duas iguais?",
+      "options": [
+        "Mitose",
+        "Meiose",
+        "Fotossíntese",
+        "Osmose"
+      ],
+      "answer": 0,
+      "fact": "Na meiose, que forma óvulos e espermatozoides, as células ficam com metade dos cromossomos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que estrutura liga o músculo ao osso?",
+      "options": [
+        "Tendão",
+        "Ligamento",
+        "Cartilagem",
+        "Nervo"
+      ],
+      "answer": 0,
+      "fact": "O tendão de Aquiles, no calcanhar, é o mais forte do corpo humano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que glândula do pescoço controla o metabolismo do corpo?",
+      "options": [
+        "Tireoide",
+        "Pâncreas",
+        "Suprarrenal",
+        "Timo"
+      ],
+      "answer": 0,
+      "fact": "O sal de cozinha no Brasil recebe iodo para evitar problemas na tireoide."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que problema é causado principalmente pela falta de ferro no sangue?",
+      "options": [
+        "Anemia",
+        "Diabetes",
+        "Gastrite",
+        "Asma"
+      ],
+      "answer": 0,
+      "fact": "Feijão e folhas verde-escuras são boas fontes de ferro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que gás vai nos botijões de cozinha?",
+      "options": [
+        "GLP",
+        "Hélio",
+        "Oxigênio",
+        "Nitrogênio"
+      ],
+      "answer": 0,
+      "fact": "O GLP não tem cheiro: o odor é colocado de propósito, para que um vazamento seja percebido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o principal componente do aço?",
+      "options": [
+        "Ferro",
+        "Alumínio",
+        "Cobre",
+        "Estanho"
+      ],
+      "answer": 0,
+      "fact": "O aço é ferro misturado com um pouco de carbono, o que o deixa bem mais resistente."
     }
   ]
 }
