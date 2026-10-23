@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 158 158">
+  <!-- X com contorno escuro e borda branca de adesivo. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-6 65 65)">
+    <path d="M32 32 L98 98 M98 32 L32 98" stroke="#F8FAFC" stroke-width="52"/>
+    <path d="M32 32 L98 98 M98 32 L32 98" stroke="#12141B" stroke-width="42"/>
+    <path d="M32 32 L98 98 M98 32 L32 98" stroke="#FFC107" stroke-width="26"/>
+    </g>
+  </g>
+</svg>

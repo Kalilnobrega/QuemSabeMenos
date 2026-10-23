@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-72 -84 278 270">
+  <!-- "HA HA" da identidade: letras arredondadas, contorno preto e borda branca de adesivo. -->
+  <g transform="rotate(-9 69 75)" stroke-linejoin="round" stroke-linecap="round">
+    <path transform="translate(0 0)" d="M0 0 H15 V25 H29 V0 H44 V64 H29 V39 H15 V64 H0 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="41"/>
+    <path transform="translate(60 0)" d="M0 64 L16 0 H36 L52 64 H37 L34 52 H18 L15 64 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="41"/>
+    <path transform="translate(26 86)" d="M0 0 H15 V25 H29 V0 H44 V64 H29 V39 H15 V64 H0 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="41"/>
+    <path transform="translate(86 86)" d="M0 64 L16 0 H36 L52 64 H37 L34 52 H18 L15 64 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="41"/>
+    <path transform="translate(0 0)" d="M0 0 H15 V25 H29 V0 H44 V64 H29 V39 H15 V64 H0 Z" fill="#12141B" stroke="#12141B" stroke-width="27"/>
+    <path transform="translate(60 0)" d="M0 64 L16 0 H36 L52 64 H37 L34 52 H18 L15 64 Z" fill="#12141B" stroke="#12141B" stroke-width="27"/>
+    <path transform="translate(26 86)" d="M0 0 H15 V25 H29 V0 H44 V64 H29 V39 H15 V64 H0 Z" fill="#12141B" stroke="#12141B" stroke-width="27"/>
+    <path transform="translate(86 86)" d="M0 64 L16 0 H36 L52 64 H37 L34 52 H18 L15 64 Z" fill="#12141B" stroke="#12141B" stroke-width="27"/>
+    <path transform="translate(0 0)" d="M0 0 H15 V25 H29 V0 H44 V64 H29 V39 H15 V64 H0 Z" fill="#FFC107" fill-rule="evenodd" stroke="#FFC107" stroke-width="8"/>
+    <path transform="translate(60 0)" d="M0 64 L16 0 H36 L52 64 H37 L34 52 H18 L15 64 Z M16.5 43 H35.5 L26 8 Z" fill="#FFC107" fill-rule="evenodd" stroke="#FFC107" stroke-width="8"/>
+    <path transform="translate(26 86)" d="M0 0 H15 V25 H29 V0 H44 V64 H29 V39 H15 V64 H0 Z" fill="#FFC107" fill-rule="evenodd" stroke="#FFC107" stroke-width="8"/>
+    <path transform="translate(86 86)" d="M0 64 L16 0 H36 L52 64 H37 L34 52 H18 L15 64 Z M16.5 43 H35.5 L26 8 Z" fill="#FFC107" fill-rule="evenodd" stroke="#FFC107" stroke-width="8"/>
+  </g>
+  <g stroke="#FFC107" stroke-width="8" stroke-linecap="round"><path d="M122 -18 L118 -48"/><path d="M136 -22 L148 -70"/><path d="M150 -12 L178 -46"/><path d="M160 6 L192 -8"/><path d="M-22 94 L-58 92"/><path d="M-20 112 L-60 132"/><path d="M-8 130 L-36 166"/><path d="M6 142 L-2 164"/></g>
+</svg>

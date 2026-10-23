@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -6 160 132">
+  <!-- Coroa com contorno escuro e borda branca de adesivo (cantos arredondados). -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-8 70 64)">
+      <path d="M26 96 L18 42 L46 64 L70 26 L94 64 L122 42 L114 96 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="18"/>
+      <circle cx="18" cy="38" r="9" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="17"/>
+      <circle cx="70" cy="22" r="9" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="17"/>
+      <circle cx="122" cy="38" r="9" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="17"/>
+      <path d="M26 96 L18 42 L46 64 L70 26 L94 64 L122 42 L114 96 Z" fill="#FFC107" stroke="#12141B" stroke-width="8"/>
+      <path d="M36 84 L106 84" stroke="#E0A400" stroke-width="6"/>
+      <circle cx="18" cy="38" r="9" fill="#FFC107" stroke="#12141B" stroke-width="7"/>
+      <circle cx="70" cy="22" r="9" fill="#FFC107" stroke="#12141B" stroke-width="7"/>
+      <circle cx="122" cy="38" r="9" fill="#FFC107" stroke="#12141B" stroke-width="7"/>
+    </g>
+  </g>
+</svg>

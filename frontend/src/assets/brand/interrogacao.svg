@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -12 150 168">
+  <!-- Interrogação com contorno escuro e borda branca de adesivo. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(10 60 70)">
+    <path d="M34 46 C34 16 88 14 88 44 C88 66 60 66 60 88" stroke="#F8FAFC" stroke-width="50"/>
+    <path d="M34 46 C34 16 88 14 88 44 C88 66 60 66 60 88" stroke="#12141B" stroke-width="40"/>
+    <path d="M34 46 C34 16 88 14 88 44 C88 66 60 66 60 88" stroke="#FFC107" stroke-width="24"/>
+    <circle cx="60" cy="116" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="18"/>
+    <circle cx="60" cy="116" r="15" fill="#FFC107" stroke="#12141B" stroke-width="8"/>
+    </g>
+  </g>
+</svg>

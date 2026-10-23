@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import coroa from '../assets/brand/coroa.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import type { RoomState } from '../types/events'
 
@@ -73,11 +74,9 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
                 {player.nickname}
                 {player.id === playerId && <span className="ml-2 text-sm font-normal text-steel">(você)</span>}
               </span>
-              {!player.connected && <span className="font-hand text-steel">reconectando…</span>}
+              {!player.connected && <span className="font-hand font-medium text-steel">reconectando…</span>}
               {player.id === room.host_id && (
-                <span title="Anfitrião" className="text-2xl">
-                  👑
-                </span>
+                <img src={coroa} alt="Anfitrião" title="Anfitrião" className="size-8" />
               )}
             </li>
           ))}
@@ -120,13 +119,13 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
             Começar partida
           </button>
           {!enoughPlayers && (
-            <p className="text-center font-hand text-lg text-steel">
+            <p className="text-center font-hand font-medium text-base text-steel">
               Precisa de pelo menos {room.min_players} jogadores. Chama a galera!
             </p>
           )}
         </div>
       ) : (
-        <p className="text-center font-hand text-xl text-steel">Esperando o anfitrião começar…</p>
+        <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião começar…</p>
       )}
 
       <button onClick={onLeave} className="text-steel underline hover:text-chalk">
