@@ -78,7 +78,7 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
                 onClick={() => setProfile({ ...profile, avatar })}
                 aria-label={AVATAR_NAMES[avatar]}
                 aria-pressed={selected}
-                className={`rounded-full p-1 transition ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-70 hover:opacity-100'}`}
+                className={`rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-70 hover:opacity-100'}`}
               >
                 <img src={AVATAR_URLS[avatar]} alt="" className="w-full" />
               </button>
