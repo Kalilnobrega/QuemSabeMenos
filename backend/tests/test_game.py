@@ -51,8 +51,8 @@ def test_points_follow_the_rules():
     assert points("impossible", True, 1) == 35
     assert points("impossible", True, 0) == 35  # sem bônus de tempo
     assert points("easy", False) == -15
-    assert points("medium", False) == -7
-    assert points("hard", False) == -4
+    assert points("medium", False) == -10
+    assert points("hard", False) == -5
     assert points("impossible", False) == 0
     assert points("easy", None) == -10
 
@@ -127,7 +127,7 @@ def test_round_flow_and_scoring():
     assert not game.everyone_answered(["ana", "bia", "caio"])
 
     game.close_round([ana, bia, caio], now=12)
-    assert (ana.score, bia.score, caio.score) == (11, -7, -10)
+    assert (ana.score, bia.score, caio.score) == (11, -10, -10)
     assert (ana.answer_ms, bia.answer_ms, caio.answer_ms) == (2000, 3000, 10000)
     view = game.view(now=12)
     assert view.correct_option == 2
@@ -162,10 +162,10 @@ def test_right_streaks_count_medium_and_hard_and_repeats_pay_half():
     game = Game(questions=qs, answer_seconds=10)
     ana = P("ana")
     got = [play(game, [ana], {"ana": 0})["ana"] for _ in range(3)]
-    assert got == [[], [], [("streak", 3, 5)]] and ana.streak == 3
+    assert got == [[], [], [("streak", 3, 3)]] and ana.streak == 3
     assert play(game, [ana], {"ana": 1})["ana"] == [] and ana.streak == -1  # errou: zera
     got = [play(game, [ana], {"ana": 0})["ana"] for _ in range(3)]
-    assert got == [[], [], [("streak", 3, 3)]]  # repetida: metade de 5, arredondada para cima
+    assert got == [[], [], [("streak", 3, 2)]]  # repetida: metade de 3, arredondada para cima
     assert ana.streak == 3
 
 
@@ -203,7 +203,7 @@ def test_speed_bonus_starts_decaying_after_the_grace_period():
 def test_shorter_matches_are_worth_more_per_question():
     assert point_scale(20) == 1 and point_scale(10) == 2
     assert points("hard", True, 1, scale=point_scale(10)) == 44
-    assert points("medium", False, scale=point_scale(35)) == -4
+    assert points("medium", False, scale=point_scale(35)) == -6
     assert points("impossible", True, 1, scale=point_scale(10)) == 35  # a final não muda
 
 

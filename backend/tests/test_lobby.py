@@ -189,7 +189,7 @@ async def test_full_game(connect):
     assert (await ana.call("play_again"))["ok"]
     lobby = await bia.wait_for(lambda s: s["status"] == "lobby")
     assert lobby["game"] is None
-    assert all(p["score"] == 40 and p["answer_ms"] == 0 and p["streak"] == 0 for p in lobby["players"])
+    assert all(p["score"] == 50 and p["answer_ms"] == 0 and p["streak"] == 0 for p in lobby["players"])
 
 
 async def test_round_ends_when_time_runs_out(connect):

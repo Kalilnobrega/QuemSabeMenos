@@ -20,20 +20,20 @@ QUESTIONS_DIR = Path(__file__).parent / "questions"
 DIFFICULTIES: tuple[Difficulty, ...] = ("easy", "medium", "hard")
 FINAL_DIFFICULTY: Difficulty = "impossible"
 OPTION_COUNT = {"easy": 4, "medium": 4, "hard": 4, "impossible": 6}
-# Pontuação calibrada em partidas de verdade de 20 perguntas: antes da pergunta final, um
-# jogador bom termina perto de 150-170 e um médio perto de 60. Ajuste aqui depois de jogar.
-STARTING_IQ = 40
+# Pontuação calibrada em partidas de verdade de 20 perguntas: com os bônus e antes da pergunta
+# final, um jogador ruim termina perto de 55, um médio perto de 110 e um bom perto de 160-190.
+STARTING_IQ = 50
 REFERENCE_ROUNDS = 20
 # Acerto rende do mínimo (respondeu no último instante) ao máximo (na hora).
 CORRECT_POINTS = {"easy": (0, 0), "medium": (5, 11), "hard": (13, 22), "impossible": (35, 35)}
-WRONG_PENALTY = {"easy": -15, "medium": -7, "hard": -4, "impossible": 0}
+WRONG_PENALTY = {"easy": -15, "medium": -10, "hard": -5, "impossible": 0}
 # Bônus. Acertar todas as fáceis rende 1 por fácil
 # (sem escala: partida longa tem mais fáceis, mas é mais difícil gabaritar). Sequências de
 # acertos contam só médias e difíceis; de erros, qualquer nível (não responder é erro).
 # A pergunta final não entra em nenhuma. Repetir uma sequência na mesma partida vale a metade
 # (arredondada para longe do zero).
 PERFECT_EASY_BONUS = 1
-STREAK_BONUS = {3: 5, 5: 10, 10: 20}
+STREAK_BONUS = {3: 3, 5: 10, 10: 20}
 WRONG_STREAK_PENALTY = {3: -5, 5: -10}
 # Quem responde nos primeiros segundos leva o máximo; depois o valor cai até o mínimo.
 SPEED_GRACE_SECONDS = 3.0
