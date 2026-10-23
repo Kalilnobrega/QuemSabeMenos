@@ -26,3 +26,20 @@ npm run dev
 
 Os eventos do Socket.IO são definidos como modelos Pydantic em `backend/app/events.py`.
 Depois de alterá-los, rode `npm run types` no frontend para gerar `src/types/events.ts`.
+
+## Deploy
+
+**Backend no Railway** (serviço apontando para este repositório):
+
+- Root Directory: `/backend`
+- Config file path: `/backend/railway.json` (o arquivo de config não segue o Root Directory)
+- Variável `CORS_ORIGINS`: o domínio do front na Vercel, ex. `https://quem-sabe-menos.vercel.app`
+  (vários domínios separados por vírgula)
+- Mantenha **uma única réplica**: salas e partidas ficam na memória do processo.
+  Cada deploy reinicia o servidor e encerra as partidas em andamento.
+
+**Frontend na Vercel**:
+
+- Root Directory: `frontend` (framework Vite detectado automaticamente)
+- Variável `VITE_SERVER_URL`: o domínio público do Railway, ex. `https://quem-sabe-menos.up.railway.app`.
+  Ela entra no build, então mudar o valor exige um novo deploy.
