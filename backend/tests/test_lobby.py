@@ -15,6 +15,7 @@ def fresh_rooms(monkeypatch):
     monkeypatch.setattr(game, "MIN_READING_SECONDS", 0.05)
     monkeypatch.setattr(game, "TYPING_SECONDS_PER_CHAR", 0)
     monkeypatch.setattr(game, "START_SECONDS", 0.05)
+    monkeypatch.setattr(game, "LEVEL_SECONDS", 0.05)
     monkeypatch.setattr(game, "INTRO_SECONDS", 0.05)
     monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 0.05)
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 0.05)
@@ -160,7 +161,7 @@ async def test_full_game(connect):
         state = await ana.wait_for(
             lambda s: s["game"]
             and s["game"]["round"] == round_number
-            and s["game"]["phase"] not in ("starting", "intro")
+            and s["game"]["phase"] not in ("starting", "level", "intro")
         )
         assert state["game"]["question"]["text"]
         assert state["game"]["correct_option"] is None

@@ -153,6 +153,16 @@ def test_game_opens_with_a_countdown_before_the_first_question():
     assert game.view(now=20).phase == "reading"  # só a 1ª rodada tem a contagem
 
 
+def test_level_change_gets_a_short_presentation():
+    game = Game(questions=[question("e1"), question("e2"), question("m1", "medium")], answer_seconds=10)
+    game.round = 0  # pula a contagem de abertura
+    game.start_round(now=0)
+    assert game.phase == "reading"  # mesma dificuldade: direto
+    game.start_round(now=10)
+    view = game.view(now=10)
+    assert view.phase == "level" and view.difficulty == "medium" and view.question is None
+
+
 def test_final_question_starts_with_an_intro_without_the_question():
     final = Question(
         id="f", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f"

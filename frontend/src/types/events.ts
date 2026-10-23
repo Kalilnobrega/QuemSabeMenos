@@ -42,9 +42,9 @@ export interface ErrorAck {
 }
 /**
  * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
- * answering → results. A partida abre com starting (contagem antes da 1ª pergunta) e a
- * pergunta final começa com intro; nas duas a pergunta não é enviada. Depois da última
- * rodada: finished.
+ * answering → results. Telas de preparação, em que a pergunta não é enviada: starting
+ * (antes da 1ª pergunta), level (quando a dificuldade muda) e intro (antes da final).
+ * Depois da última rodada: finished.
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "GameView".
@@ -52,9 +52,10 @@ export interface ErrorAck {
 export interface GameView {
   round: number;
   total_rounds: number;
-  phase: "starting" | "intro" | "reading" | "answering" | "results" | "finished";
+  phase: "starting" | "level" | "intro" | "reading" | "answering" | "results" | "finished";
   phase_duration_ms: number;
   phase_ends_in_ms: number;
+  difficulty: "easy" | "medium" | "hard" | "impossible";
   question: QuestionView | null;
   answered: string[];
   correct_option: number | null;
