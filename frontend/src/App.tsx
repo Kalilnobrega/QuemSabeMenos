@@ -114,7 +114,15 @@ export default function App() {
       }`}
     >
       {content}
-      {!connected && <p className="font-hand font-medium text-base text-steel">🔴 Conectando ao servidor…</p>}
+      {!connected && (
+        <p className="flex items-center gap-2 font-hand font-medium text-base text-steel">
+          <span className="relative flex size-2.5" aria-hidden="true">
+            <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-400 opacity-75" />
+            <span className="relative inline-flex size-2.5 rounded-full bg-red-500" />
+          </span>
+          Conectando ao servidor…
+        </p>
+      )}
     </main>
   )
 }
