@@ -41,5 +41,5 @@ Depois de alterá-los, rode `npm run types` no frontend para gerar `src/types/ev
 **Frontend na Vercel**:
 
 - Root Directory: `frontend` (framework Vite detectado automaticamente)
-- Variável `VITE_SERVER_URL`: o domínio público do Railway, ex. `https://quem-sabe-menos.up.railway.app`.
-  Ela entra no build, então mudar o valor exige um novo deploy.
+- O endereço do backend fica em `frontend/.env.production` (`VITE_SERVER_URL`).
+  Ele entra no build: ao trocar de servidor, edite o arquivo e faça push.
