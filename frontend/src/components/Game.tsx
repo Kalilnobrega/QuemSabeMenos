@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
@@ -7,11 +7,56 @@ import type { GameView, PlayerView, RoomState } from '../types/events'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
-const DIFFICULTY = {
+/** Lâmpada da curiosidade (no lugar do emoji): amarela, com contorno escuro e brilho. */
+function BulbIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 28 28" className={className} aria-hidden="true">
+      <g stroke="#FFC107" strokeWidth="2" strokeLinecap="round">
+        <path d="M14 1.5v2.5M4.5 5.5l1.8 1.8M23.5 5.5l-1.8 1.8M1.5 14h2.5M24 14h2.5" />
+      </g>
+      <path
+        d="M14 6.5a7 7 0 0 0-4.2 12.6c.8.6 1.2 1.3 1.2 2.1h6c0-.8.4-1.5 1.2-2.1A7 7 0 0 0 14 6.5Z"
+        fill="#FFC107"
+        stroke="#12141B"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
+      <path d="M11.5 12a3 3 0 0 1 2.5-2" fill="none" stroke="#FFF3C4" strokeWidth="1.6" strokeLinecap="round" />
+      <rect x="10.8" y="21.2" width="6.4" height="4.3" rx="1.4" fill="#9CA3AF" stroke="#12141B" strokeWidth="1.6" />
+      <path d="M11.2 23.3h5.6" stroke="#12141B" strokeWidth="1.2" />
+    </svg>
+  )
+}
+
+/** Foguinho da marca (no lugar do emoji), simples para ficar nítido em tamanho pequeno. */
+function FlameIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 28" className={className} aria-hidden="true">
+      <path
+        d="M12 1.5c3 5.5 8.5 8.5 8.5 15A8.5 8.5 0 0 1 3.5 16.5c0-4 2.4-6 3.4-8.5 1.3 2.8 2.6 3.4 3.2 3.4C9.6 7.5 10.4 4.5 12 1.5Z"
+        fill="#F97316"
+        stroke="#12141B"
+        strokeWidth="2"
+        strokeLinejoin="round"
+      />
+      <path d="M12 12.5c2 3 4.4 4.3 4.4 7.3a4.4 4.4 0 0 1-8.8 0c0-1.8 1-2.8 1.6-4 .7 1.4 1.3 1.7 1.7 1.7-.4-1.9 0-3.4 1.1-5Z" fill="#FFC107" />
+    </svg>
+  )
+}
+
+const DIFFICULTY: Record<string, { label: ReactNode; className: string }> = {
   easy: { label: 'Fácil', className: 'bg-emerald-500/15 text-emerald-300' },
   medium: { label: 'Média', className: 'bg-brand/15 text-brand' },
   hard: { label: 'Difícil', className: 'bg-red-500/15 text-red-300' },
-  impossible: { label: '🔥 Impossível', className: 'bg-orange-500/20 text-orange-300' },
+  impossible: {
+    label: (
+      <span className="flex items-center gap-1">
+        <FlameIcon className="size-4" />
+        Impossível
+      </span>
+    ),
+    className: 'bg-orange-500/20 text-orange-300',
+  },
 }
 
 interface Props {
@@ -27,6 +72,9 @@ export function Game({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Pro
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
   }
+  if (game.phase === 'level') {
+    return <LevelIntro game={game} />
+  }
   if (game.phase === 'intro') {
     return <FinalIntro snapshot={snapshot} />
   }
@@ -35,6 +83,60 @@ export function Game({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Pro
   }
   // key: cada rodada começa com a escolha local zerada.
   return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} />
+}
+
+const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
+  { key: 'easy', label: 'Fácil' },
+  { key: 'medium', label: 'Média' },
+  { key: 'hard', label: 'Difícil' },
+  { key: 'impossible', label: <FlameIcon className="size-3.5" /> },
+]
+
+const LEVEL_INTRO: Record<string, { title: string; color: string; pill: string; shadow: string; line: string }> = {
+  medium: {
+    title: 'Média',
+    color: 'text-brand',
+    pill: 'bg-brand text-ink',
+    shadow: '#7a5a00',
+    line: 'Agora as perguntas valem mais QI.',
+  },
+  hard: {
+    title: 'Difícil',
+    color: 'text-red-300',
+    pill: 'bg-red-400 text-ink',
+    shadow: '#7f1d1d',
+    line: 'Valem muito QI, e errar quase não tira pontos.',
+  },
+}
+
+/** Apresentação rápida quando a dificuldade muda: a trilha de níveis e o nome do novo nível. */
+function LevelIntro({ game }: { game: GameView }) {
+  const info = LEVEL_INTRO[game.difficulty] ?? LEVEL_INTRO.medium
+  const current = LEVEL_TRACK.findIndex((level) => level.key === game.difficulty)
+
+  return (
+    <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
+      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
+      <ol className="intro-step flex items-center gap-1.5" aria-label="Níveis da partida">
+        {LEVEL_TRACK.map((level, index) => (
+          <li
+            key={level.key}
+            className={`rounded-full px-3 py-1 text-xs font-semibold ${
+              index === current ? `${info.pill} scale-110` : index < current ? 'bg-panel text-steel line-through' : 'bg-panel text-steel'
+            }`}
+          >
+            {level.label}
+          </li>
+        ))}
+      </ol>
+      <h1 className={`intro-slam font-display text-6xl ${info.color}`} style={{ textShadow: `0 4px 0 ${info.shadow}` }}>
+        {info.title}
+      </h1>
+      <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.7s' }}>
+        {info.line}
+      </p>
+    </section>
+  )
 }
 
 /** Contagem antes da 1ª pergunta: "Prepare-se!", a escalação dos jogadores e uma dica. */
@@ -364,7 +466,10 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
       {headline}
       {game.fact && (
         <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
-          <p className="font-display text-lg tracking-wide text-brand">💡 Você sabia?</p>
+          <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
+            <BulbIcon className="size-5" />
+            Você sabia?
+          </p>
           <p className="mt-1 leading-relaxed">{game.fact}</p>
         </div>
       )}
