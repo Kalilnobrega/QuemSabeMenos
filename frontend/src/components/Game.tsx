@@ -92,18 +92,18 @@ const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
   { key: 'impossible', label: <FlameIcon className="size-3.5" /> },
 ]
 
-const LEVEL_INTRO: Record<string, { title: string; color: string; pill: string; shadow: string; line: string }> = {
+const LEVEL_INTRO: Record<string, { title: string; color: string; marker: string; shadow: string; line: string }> = {
   medium: {
     title: 'Média',
     color: 'text-brand',
-    pill: 'bg-brand text-ink',
+    marker: 'bg-brand',
     shadow: '#7a5a00',
     line: 'Agora as perguntas valem mais QI.',
   },
   hard: {
     title: 'Difícil',
     color: 'text-red-300',
-    pill: 'bg-red-400 text-ink',
+    marker: 'bg-red-400',
     shadow: '#7f1d1d',
     line: 'Valem muito QI, e errar quase não tira pontos.',
   },
@@ -114,15 +114,46 @@ function LevelIntro({ game }: { game: GameView }) {
   const info = LEVEL_INTRO[game.difficulty] ?? LEVEL_INTRO.medium
   const current = LEVEL_TRACK.findIndex((level) => level.key === game.difficulty)
 
+  const trackRef = useRef<HTMLOListElement>(null)
+  const markerRef = useRef<HTMLSpanElement>(null)
+
+  // O destaque colorido nasce em cima do nível anterior e pula, em arco, até o novo.
+  useLayoutEffect(() => {
+    const track = trackRef.current
+    const marker = markerRef.current
+    if (!track || !marker) return
+    const items = [...track.querySelectorAll('li')] as HTMLElement[]
+    const target = items[current]
+    const from = items[current - 1]
+    Object.assign(marker.style, {
+      left: `${target.offsetLeft}px`,
+      top: `${target.offsetTop}px`,
+      width: `${target.offsetWidth}px`,
+      height: `${target.offsetHeight}px`,
+    })
+    if (!from || reducedMotion()) return
+    const dx = from.offsetLeft - target.offsetLeft
+    const scale = from.offsetWidth / target.offsetWidth
+    marker.animate(
+      [
+        { transform: `translateX(${dx}px) scaleX(${scale})` },
+        { transform: `translateX(${dx / 2}px) translateY(-16px) scale(1.15)`, offset: 0.5 },
+        { transform: 'translateY(2px) scale(1.05, 0.9)', offset: 0.85 },
+        { transform: 'none' },
+      ],
+      { duration: 650, delay: 450, easing: 'ease-in-out', fill: 'backwards' },
+    )
+  }, [current])
   return (
     <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
-      <ol className="intro-step flex items-center gap-1.5" aria-label="Níveis da partida">
+      <ol ref={trackRef} className="intro-step relative flex items-center gap-1.5" aria-label="Níveis da partida">
+        <span ref={markerRef} className={`absolute rounded-full ${info.marker}`} style={{ transformOrigin: 'left center' }} aria-hidden="true" />
         {LEVEL_TRACK.map((level, index) => (
           <li
             key={level.key}
-            className={`rounded-full px-3 py-1 text-xs font-semibold ${
-              index === current ? `${info.pill} scale-110` : index < current ? 'bg-panel text-steel line-through' : 'bg-panel text-steel'
+            className={`relative rounded-full px-3 py-1 text-xs font-semibold ${
+              index === current ? 'level-land text-ink' : index < current ? 'bg-panel text-steel line-through' : 'bg-panel text-steel'
             }`}
           >
             {level.label}

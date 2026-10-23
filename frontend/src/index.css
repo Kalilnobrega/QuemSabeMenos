@@ -40,6 +40,13 @@ body {
 .intro-count {
   animation: intro-count 1s ease-out both;
 }
+/* Texto do novo nível muda de cor quando o destaque pousa nele. */
+.level-land {
+  animation: level-land 0.01s 1.05s both;
+}
+@keyframes level-land {
+  from { color: #6b7280; }
+}
 .avatar-pop {
   animation: avatar-pop 0.45s cubic-bezier(0.2, 1.6, 0.4, 1) both;
 }
@@ -66,7 +73,7 @@ body {
   to { opacity: 0.2; transform: scale(0.9); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .final-intro-glow, .intro-flame, .intro-step, .intro-step-late, .intro-slam, .intro-count, .avatar-pop { animation: none; }
+  .final-intro-glow, .intro-flame, .intro-step, .intro-step-late, .intro-slam, .intro-count, .avatar-pop, .level-land { animation: none; }
 }
 
 /* Partida: entrada da rodada, cronômetro, revelação, pódio */
