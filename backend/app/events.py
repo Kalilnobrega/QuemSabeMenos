@@ -59,12 +59,14 @@ class PlayerView(BaseModel):
     nickname: str
     avatar: Avatar
     connected: bool
-    score: int
+    score: int  # QI na partida
+    answer_ms: int  # tempo total de resposta; desempata quem tem o mesmo QI
 
 
 class RoomSettings(BaseModel):
     rounds: int
     answer_seconds: float
+    speed_grace_seconds: float  # respostas até aqui valem o máximo
     round_options: list[int]
 
 

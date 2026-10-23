@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from app.events import ROUND_OPTIONS, Avatar, PlayerView, Profile, RoomSettings, RoomState
-from app.game import Game, GameError, Question, load_bank, pick_questions
+from app.game import SPEED_GRACE_SECONDS, STARTING_IQ, Game, GameError, Question, load_bank, pick_questions
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
@@ -32,7 +32,8 @@ class Player:
     sid: str | None
     id: str = field(default_factory=lambda: uuid.uuid4().hex)
     token: str = field(default_factory=lambda: secrets.token_urlsafe(16))
-    score: int = 0
+    score: int = STARTING_IQ
+    answer_ms: int = 0
     # Muda a cada desconexão, para um timer antigo não expulsar quem já voltou.
     disconnect_seq: int = 0
 
@@ -42,7 +43,12 @@ class Player:
 
     def view(self) -> PlayerView:
         return PlayerView(
-            id=self.id, nickname=self.nickname, avatar=self.avatar, connected=self.connected, score=self.score
+            id=self.id,
+            nickname=self.nickname,
+            avatar=self.avatar,
+            connected=self.connected,
+            score=self.score,
+            answer_ms=self.answer_ms,
         )
 
 
@@ -71,7 +77,12 @@ class Room:
             host_id=self.host_id,
             max_players=MAX_PLAYERS,
             min_players=MIN_PLAYERS,
-            settings=RoomSettings(rounds=self.rounds, answer_seconds=ANSWER_SECONDS, round_options=list(ROUND_OPTIONS)),
+            settings=RoomSettings(
+                rounds=self.rounds,
+                answer_seconds=ANSWER_SECONDS,
+                speed_grace_seconds=SPEED_GRACE_SECONDS,
+                round_options=list(ROUND_OPTIONS),
+            ),
             players=[p.view() for p in self.players],
             game=self.game.view(now) if self.game else None,
         )
@@ -185,7 +196,8 @@ class RoomManager:
         questions = pick_questions(self.bank, room.rounds, room.used_questions, self.rng)
         room.used_questions |= {q.id for q in questions}
         for player in room.players:
-            player.score = 0
+            player.score = STARTING_IQ
+            player.answer_ms = 0
         room.game = Game(questions=questions, answer_seconds=ANSWER_SECONDS)
         room.game.start_round(time.monotonic() if now is None else now)
         room.status = "playing"
@@ -210,7 +222,8 @@ class RoomManager:
         room.game = None
         room.status = "lobby"
         for player in room.players:
-            player.score = 0
+            player.score = STARTING_IQ
+            player.answer_ms = 0
         return room
 
     def _host_room(self, sid: str, action: str) -> Room:

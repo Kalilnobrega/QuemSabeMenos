@@ -19,8 +19,14 @@ QUESTIONS_DIR = Path(__file__).parent / "questions"
 DIFFICULTIES: tuple[Difficulty, ...] = ("easy", "medium", "hard")
 FINAL_DIFFICULTY: Difficulty = "impossible"
 OPTION_COUNT = {"easy": 4, "medium": 4, "hard": 4, "impossible": 6}
-BASE_POINTS = {"easy": 50, "medium": 100, "hard": 200, "impossible": 400}
-WRONG_PENALTY = {"easy": -30, "medium": -15, "hard": 0, "impossible": 0}
+# Pontuação calibrada para, numa partida de 15, antes da pergunta final, um jogador
+# médio terminar perto de 80 e um bom perto de 150. Ajuste aqui depois de jogar.
+STARTING_IQ = 50
+# Acerto rende do mínimo (respondeu no último instante) ao máximo (na hora).
+CORRECT_POINTS = {"easy": (0, 0), "medium": (6, 12), "hard": (15, 25), "impossible": (35, 35)}
+WRONG_PENALTY = {"easy": -15, "medium": -7, "hard": -2, "impossible": 0}
+# Quem responde nos primeiros segundos leva o máximo; depois o valor cai até o mínimo.
+SPEED_GRACE_SECONDS = 3.0
 NO_ANSWER_PENALTY = -10
 
 # Velocidade do efeito de digitação; o tempo de resposta só começa depois.
@@ -119,12 +125,14 @@ def points(difficulty: Difficulty, correct: bool | None, remaining_fraction: flo
         return NO_ANSWER_PENALTY
     if not correct:
         return WRONG_PENALTY[difficulty]
-    return round(BASE_POINTS[difficulty] * (0.5 + 0.5 * max(0.0, min(1.0, remaining_fraction))))
+    low, high = CORRECT_POINTS[difficulty]
+    return round(low + (high - low) * max(0.0, min(1.0, remaining_fraction)))
 
 
 class Scorable(Protocol):
     id: str
     score: int
+    answer_ms: int  # tempo total de resposta na partida, para desempate
 
 
 @dataclass
@@ -173,6 +181,13 @@ class Game:
     def everyone_answered(self, player_ids: list[str]) -> bool:
         return all(pid in self.answers for pid in player_ids)
 
+    def speed_fraction(self, elapsed: float) -> float:
+        """1 dentro da carência, caindo até 0 no fim do tempo de resposta."""
+        decay = self.answer_seconds - SPEED_GRACE_SECONDS
+        if elapsed <= SPEED_GRACE_SECONDS or decay <= 0:
+            return 1.0
+        return max(0.0, 1 - (elapsed - SPEED_GRACE_SECONDS) / decay)
+
     def close_round(self, players: list[Scorable], now: float) -> None:
         """Calcula os pontos da rodada e aplica no placar dos jogadores."""
         difficulty = self.question.difficulty
@@ -181,11 +196,13 @@ class Game:
             answer = self.answers.get(player.id)
             if answer is None:
                 correct, delta = False, points(difficulty, None)
+                elapsed = self.answer_seconds
             else:
                 correct = answer.option == self.question.answer
-                remaining = (self.phase_ends_at - answer.at) / self.answer_seconds
-                delta = points(difficulty, correct, remaining)
+                elapsed = self.answer_seconds - (self.phase_ends_at - answer.at)
+                delta = points(difficulty, correct, self.speed_fraction(elapsed))
             player.score += delta
+            player.answer_ms += round(max(0.0, elapsed) * 1000)
             self.results.append(
                 RoundResult(player_id=player.id, option=answer.option if answer else None, correct=correct, delta=delta)
             )

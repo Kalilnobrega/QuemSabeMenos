@@ -139,6 +139,7 @@ export interface RoomState {
 export interface RoomSettings {
   rounds: number;
   answer_seconds: number;
+  speed_grace_seconds: number;
   round_options: number[];
 }
 /**
@@ -167,6 +168,7 @@ export interface PlayerView {
     | "vaca";
   connected: boolean;
   score: number;
+  answer_ms: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema

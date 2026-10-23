@@ -251,6 +251,9 @@
         },
         "score": {
           "type": "integer"
+        },
+        "answer_ms": {
+          "type": "integer"
         }
       },
       "required": [
@@ -258,7 +261,8 @@
         "nickname",
         "avatar",
         "connected",
-        "score"
+        "score",
+        "answer_ms"
       ],
       "title": "PlayerView",
       "type": "object"
@@ -332,6 +336,9 @@
         "answer_seconds": {
           "type": "number"
         },
+        "speed_grace_seconds": {
+          "type": "number"
+        },
         "round_options": {
           "items": {
             "type": "integer"
@@ -342,6 +349,7 @@
       "required": [
         "rounds",
         "answer_seconds",
+        "speed_grace_seconds",
         "round_options"
       ],
       "title": "RoomSettings",

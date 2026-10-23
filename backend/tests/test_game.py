@@ -24,6 +24,7 @@ from app.game import (
 class P:
     id: str
     score: int = 0
+    answer_ms: int = 0
 
 
 def question(qid: str, difficulty: str = "easy", answer: int = 0) -> Question:
@@ -39,16 +40,19 @@ def question(qid: str, difficulty: str = "easy", answer: int = 0) -> Question:
 
 
 def test_points_follow_the_rules():
-    assert points("easy", True, 1) == 50
-    assert points("medium", True, 1) == 100
-    assert points("hard", True, 0.5) == 150  # 200 × (0,5 + 0,5 × 0,5)
-    assert points("hard", True, 0) == 100
-    assert points("easy", False) == -30
-    assert points("medium", False) == -15
-    assert points("hard", False) == 0
-    assert points("easy", None) == -10
-    assert points("impossible", True, 1) == 400  # o dobro da difícil
+    assert points("easy", True, 1) == 0  # fácil não dá QI, só tira
+    assert points("medium", True, 1) == 12
+    assert points("medium", True, 0) == 6
+    assert points("hard", True, 1) == 25
+    assert points("hard", True, 0.5) == 20
+    assert points("hard", True, 0) == 15
+    assert points("impossible", True, 1) == 35
+    assert points("impossible", True, 0) == 35  # sem bônus de tempo
+    assert points("easy", False) == -15
+    assert points("medium", False) == -7
+    assert points("hard", False) == -2
     assert points("impossible", False) == 0
+    assert points("easy", None) == -10
 
 
 def test_split_by_difficulty():
@@ -113,18 +117,27 @@ def test_round_flow_and_scoring():
         game.answer("ana", 2, now=0.5)  # bloqueado enquanto o texto aparece
 
     game.open_answers(now=2)
-    game.answer("ana", 2, now=4)  # certa, sobrando 8 de 10 s
+    game.answer("ana", 2, now=4)  # certa, 2 s depois de liberar: dentro da carência
     game.answer("bia", 0, now=5)  # errada
     with pytest.raises(GameError, match="já respondeu"):
         game.answer("ana", 1, now=5)
     assert not game.everyone_answered(["ana", "bia", "caio"])
 
     game.close_round([ana, bia, caio], now=12)
-    assert (ana.score, bia.score, caio.score) == (90, -15, -10)
+    assert (ana.score, bia.score, caio.score) == (12, -7, -10)
+    assert (ana.answer_ms, bia.answer_ms, caio.answer_ms) == (2000, 3000, 10000)
     view = game.view(now=12)
     assert view.correct_option == 2
     assert view.fact == "Dois é o único primo par."
     assert not game.has_next_round
+
+
+def test_speed_bonus_starts_decaying_after_the_grace_period():
+    game = Game(questions=[question("q1", "hard")], answer_seconds=10)
+    assert game.speed_fraction(0) == game.speed_fraction(3) == 1
+    assert game.speed_fraction(6.5) == 0.5
+    assert game.speed_fraction(10) == 0
+    assert points("hard", True, game.speed_fraction(6.5)) == 20
 
 
 def test_answer_after_deadline_is_rejected():

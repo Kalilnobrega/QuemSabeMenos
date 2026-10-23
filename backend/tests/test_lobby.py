@@ -176,14 +176,13 @@ async def test_full_game(connect):
         assert {r["player_id"] for r in results["game"]["results"]} == {created["player_id"], joined["player_id"]}
 
     final = await bia.wait_for(lambda s: s["game"]["phase"] == "finished")
-    scores = {p["id"]: p["score"] for p in final["players"]}
-    assert any(score != 0 for score in scores.values())
+    assert all(p["answer_ms"] > 0 for p in final["players"])
 
     assert not (await bia.call("play_again"))["ok"]
     assert (await ana.call("play_again"))["ok"]
     lobby = await bia.wait_for(lambda s: s["status"] == "lobby")
     assert lobby["game"] is None
-    assert all(p["score"] == 0 for p in lobby["players"])
+    assert all(p["score"] == 50 and p["answer_ms"] == 0 for p in lobby["players"])
 
 
 async def test_round_ends_when_time_runs_out(connect):
