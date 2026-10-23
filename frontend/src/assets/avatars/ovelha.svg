@@ -1,15 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <filter id="sticker-ovelha" x="-20%" y="-20%" width="140%" height="140%">
-      <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" result="grown"/>
-      <feFlood flood-color="#F8FAFC"/>
-      <feComposite in2="grown" operator="in" result="outline"/>
-      <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="mouth-ovelha"><path d="M54 92 Q64 106.175 74 92 Q64 97 54 92 Z"/></clipPath>
   </defs>
   <circle cx="64" cy="64" r="61" fill="#FFC107" stroke="#0B0F1A" stroke-width="3"/>
-  <g filter="url(#sticker-ovelha)">
+  <g >
+    <g stroke="#F8FAFC" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+
+    <circle cx="64.0" cy="24.0" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="88.0" cy="31.6" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="102.0" cy="50.6" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="102.0" cy="73.4" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="88.0" cy="92.4" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40.0" cy="92.4" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="26.0" cy="73.4" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="26.0" cy="50.6" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40.0" cy="31.6" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="64" cy="62" r="40" fill="#F8FAFC"/>
+    <ellipse cx="28" cy="70" rx="12" ry="6" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" transform="rotate(25 28 70)"/>
+    <ellipse cx="100" cy="70" rx="12" ry="6" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-25 100 70)"/>
+    <ellipse cx="64" cy="78" rx="24" ry="28" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="54" cy="46" r="10" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="66" cy="42" r="11" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="76" cy="48" r="9" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="54" cy="70" r="7" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="56" cy="71" r="3.2" fill="#F8FAFC"/><circle cx="57.2" cy="69.8" r="1" fill="#F8FAFC"/><circle cx="74" cy="70" r="7" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="72" cy="71" r="3.2" fill="#F8FAFC"/><circle cx="73.2" cy="69.8" r="1" fill="#F8FAFC"/>
+    <path d="M60 82 l2 2 M68 82 l-2 2" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round"/>
+    <path d="M54 92 Q64 106.175 74 92 Q64 97 54 92 Z" fill="#F8FAFC"/><g clip-path="url(#mouth-ovelha)"><rect x="56.5" y="92" width="15.0" height="5.359999999999999" fill="#F8FAFC"/><path d="M64 94 v3.36" stroke="#F8FAFC" stroke-width="8.5"/></g><path d="M54 92 Q64 106.175 74 92 Q64 97 54 92 Z" fill="none" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
 
     <circle cx="64.0" cy="24.0" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="88.0" cy="31.6" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="102.0" cy="50.6" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="102.0" cy="73.4" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="88.0" cy="92.4" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40.0" cy="92.4" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="26.0" cy="73.4" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="26.0" cy="50.6" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="40.0" cy="31.6" r="15" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
     <circle cx="64" cy="62" r="40" fill="#F8FAFC"/>

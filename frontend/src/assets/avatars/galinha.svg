@@ -1,15 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <filter id="sticker-galinha" x="-20%" y="-20%" width="140%" height="140%">
-      <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" result="grown"/>
-      <feFlood flood-color="#F8FAFC"/>
-      <feComposite in2="grown" operator="in" result="outline"/>
-      <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="mouth-galinha"><path d="M0 0"/></clipPath>
   </defs>
   <circle cx="64" cy="64" r="61" fill="#FFC107" stroke="#0B0F1A" stroke-width="3"/>
-  <g filter="url(#sticker-galinha)">
+  <g >
+    <g stroke="#F8FAFC" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+
+    <path d="M50 34 C46 22 52 14 58 20 C58 10 68 8 70 18 C74 10 84 14 80 26 C84 28 82 34 78 36 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="64" cy="70" rx="36" ry="38" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="50" cy="62" r="8.5" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="53" cy="64" r="3.8" fill="#F8FAFC"/><circle cx="54.2" cy="62.8" r="1" fill="#F8FAFC"/><circle cx="78" cy="61" r="6.5" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="75.5" cy="59.5" r="3" fill="#F8FAFC"/><circle cx="76.7" cy="58.3" r="1" fill="#F8FAFC"/>
+    <path d="M52 76 L76 76 L64 90 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M54 76 L74 76" stroke="#F8FAFC" stroke-width="9.5"/>
+    <path d="M60 88 C58 98 70 100 68 89" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M28 74 q-8 6 -4 14 M100 74 q8 6 4 14" fill="none" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="38" cy="78" rx="5" ry="3" fill="#F8FAFC" /><ellipse cx="90" cy="78" rx="5" ry="3" fill="#F8FAFC" />
+    </g>
 
     <path d="M50 34 C46 22 52 14 58 20 C58 10 68 8 70 18 C74 10 84 14 80 26 C84 28 82 34 78 36 Z" fill="#E63946" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
     <ellipse cx="64" cy="70" rx="36" ry="38" fill="#F8FAFC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>

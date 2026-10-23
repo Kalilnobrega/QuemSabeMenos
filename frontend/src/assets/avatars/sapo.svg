@@ -1,15 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <filter id="sticker-sapo" x="-20%" y="-20%" width="140%" height="140%">
-      <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" result="grown"/>
-      <feFlood flood-color="#F8FAFC"/>
-      <feComposite in2="grown" operator="in" result="outline"/>
-      <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="mouth-sapo"><path d="M38 82 Q64 106.3 90 82 Q64 87 38 82 Z"/></clipPath>
   </defs>
   <circle cx="64" cy="64" r="61" fill="#FFC107" stroke="#0B0F1A" stroke-width="3"/>
-  <g filter="url(#sticker-sapo)">
+  <g >
+    <g stroke="#F8FAFC" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+
+    <ellipse cx="64" cy="78" rx="46" ry="32" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="42" cy="46" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="86" cy="46" r="15" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="42" cy="46" r="10" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="45" cy="47" r="4.5" fill="#F8FAFC"/><circle cx="46.2" cy="45.8" r="1" fill="#F8FAFC"/><circle cx="86" cy="46" r="10" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="83" cy="47" r="4.5" fill="#F8FAFC"/><circle cx="84.2" cy="45.8" r="1" fill="#F8FAFC"/>
+    <path d="M58 70 l2 2 M70 70 l-2 2" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M38 82 Q64 106.3 90 82 Q64 87 38 82 Z" fill="#F8FAFC"/><g clip-path="url(#mouth-sapo)"></g><path d="M38 82 Q64 106.3 90 82 Q64 87 38 82 Z" fill="none" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="28" cy="80" rx="5" ry="3" fill="#F8FAFC" /><ellipse cx="100" cy="80" rx="5" ry="3" fill="#F8FAFC" />
+    </g>
 
     <ellipse cx="64" cy="78" rx="46" ry="32" fill="#6CC24A" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
     <circle cx="42" cy="46" r="15" fill="#6CC24A" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>

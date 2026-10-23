@@ -1,15 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <filter id="sticker-raposa" x="-20%" y="-20%" width="140%" height="140%">
-      <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" result="grown"/>
-      <feFlood flood-color="#F8FAFC"/>
-      <feComposite in2="grown" operator="in" result="outline"/>
-      <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="mouth-raposa"><path d="M53 90 Q64 105.5925 75 90 Q64 95 53 90 Z"/></clipPath>
   </defs>
   <circle cx="64" cy="64" r="61" fill="#FFC107" stroke="#0B0F1A" stroke-width="3"/>
-  <g filter="url(#sticker-raposa)">
+  <g >
+    <g stroke="#F8FAFC" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+
+    <path d="M26 58 L22 14 L54 36 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><path d="M31 44 L29 26 L45 37 Z" fill="#F8FAFC"/>
+    <path d="M102 58 L106 14 L74 36 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><path d="M97 44 L99 26 L83 37 Z" fill="#F8FAFC"/>
+    <path d="M20 62 C20 42 40 34 64 34 C88 34 108 42 108 62 C108 84 84 108 64 112 C44 108 20 84 20 62 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M22 64 C34 62 50 70 58 84 C60 96 64 104 64 112 C44 108 26 88 22 64 Z M106 64 C94 62 78 70 70 84 C68 96 64 104 64 112 C84 108 102 88 106 64 Z" fill="#F8FAFC"/>
+    <path d="M20 62 C20 84 44 108 64 112 C84 108 108 84 108 62" fill="none" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M38.5 56 L89.5 56" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/><rect x="42.5" y="54" width="19" height="12" rx="5" fill="#F8FAFC"/><rect x="66.5" y="54" width="19" height="12" rx="5" fill="#F8FAFC"/><path d="M46.5 58 l5 0 M70.5 58 l5 0" stroke="#F8FAFC" stroke-width="9.5" stroke-linecap="round"/>
+    <ellipse cx="64" cy="80" rx="6" ry="4.5" fill="#F8FAFC"/>
+    <path d="M53 90 Q64 105.5925 75 90 Q64 95 53 90 Z" fill="#F8FAFC"/><g clip-path="url(#mouth-raposa)"><rect x="55.75" y="90" width="16.5" height="5.696" fill="#F8FAFC"/><path d="M64 92 v3.696" stroke="#F8FAFC" stroke-width="8.5"/></g><path d="M53 90 Q64 105.5925 75 90 Q64 95 53 90 Z" fill="none" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
 
     <path d="M26 58 L22 14 L54 36 Z" fill="#E8742A" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path d="M31 44 L29 26 L45 37 Z" fill="#0B0F1A"/>
     <path d="M102 58 L106 14 L74 36 Z" fill="#E8742A" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path d="M97 44 L99 26 L83 37 Z" fill="#0B0F1A"/>

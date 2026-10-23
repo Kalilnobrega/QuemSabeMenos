@@ -1,15 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <filter id="sticker-coelho" x="-20%" y="-20%" width="140%" height="140%">
-      <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" result="grown"/>
-      <feFlood flood-color="#F8FAFC"/>
-      <feComposite in2="grown" operator="in" result="outline"/>
-      <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
     <clipPath id="mouth-coelho"><path d="M52 86 Q64 103.01 76 86 Q64 91 52 86 Z"/></clipPath>
   </defs>
   <circle cx="64" cy="64" r="61" fill="#FFC107" stroke="#0B0F1A" stroke-width="3"/>
-  <g filter="url(#sticker-coelho)">
+  <g >
+    <g stroke="#F8FAFC" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+
+    <path d="M42 50 C32 30 34 6 44 6 C54 6 56 30 54 48 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M44 42 C38 28 40 14 44 14 C48 14 49 30 49 42 Z" fill="#F8FAFC"/>
+    <path d="M78 46 C80 26 92 4 102 8 C110 14 100 36 88 52 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M83 42 C86 28 94 14 99 16 C102 22 96 34 88 44 Z" fill="#F8FAFC"/>
+    <ellipse cx="64" cy="74" rx="38" ry="34" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="11" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="48" cy="66" r="8.5" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="51" cy="68" r="3.8" fill="#F8FAFC"/><circle cx="52.2" cy="66.8" r="1" fill="#F8FAFC"/><circle cx="80" cy="65" r="6.5" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><circle cx="77.5" cy="63.5" r="3" fill="#F8FAFC"/><circle cx="78.7" cy="62.3" r="1" fill="#F8FAFC"/>
+    <path d="M60 78 L68 78 L64 83 Z" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M52 86 Q64 103.01 76 86 Q64 91 52 86 Z" fill="#F8FAFC"/><g clip-path="url(#mouth-coelho)"></g><path d="M52 86 Q64 103.01 76 86 Q64 91 52 86 Z" fill="none" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="57" y="87" width="14" height="13" rx="2" fill="#F8FAFC" stroke="#F8FAFC" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><path d="M64 87 v13" stroke="#F8FAFC" stroke-width="9"/>
+    <ellipse cx="36" cy="82" rx="5" ry="3" fill="#F8FAFC" /><ellipse cx="92" cy="82" rx="5" ry="3" fill="#F8FAFC" />
+    </g>
 
     <path d="M42 50 C32 30 34 6 44 6 C54 6 56 30 54 48 Z" fill="#E7E2EC" stroke="#0B0F1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
     <path d="M44 42 C38 28 40 14 44 14 C48 14 49 30 49 42 Z" fill="#F4A7B4"/>
