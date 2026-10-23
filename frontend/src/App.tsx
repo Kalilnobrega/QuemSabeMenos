@@ -74,7 +74,7 @@ export default function App() {
         <div className="flex w-full flex-col gap-3">
           <button
             onClick={() => setScreen({ name: 'create' })}
-            className="rounded-xl bg-brand py-4 font-display text-2xl tracking-wide text-ink"
+            className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
           >
             <span className="flex items-center justify-center gap-3">
               <UsersIcon />
@@ -83,7 +83,7 @@ export default function App() {
           </button>
           <button
             onClick={() => setScreen({ name: 'join', code: '' })}
-            className="rounded-xl bg-panel py-4 font-display text-2xl tracking-wide"
+            className="btn-3d btn-dark rounded-xl py-4 font-display text-2xl tracking-wide"
           >
             <span className="flex items-center justify-center gap-3">
               <KeyIcon />

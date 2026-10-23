@@ -77,6 +77,30 @@ body {
 }
 
 /* Partida: entrada da rodada, cronômetro, revelação, pódio */
+/* Botões 3D: base sólida mais escura embaixo; ao tocar, o botão afunda até ela.
+   Usa a propriedade translate (não transform) para não brigar com as animações de entrada. */
+.btn-3d {
+  --btn-depth: 6px;
+  box-shadow: 0 var(--btn-depth) 0 var(--btn-base, #3b4664);
+  transition: translate 80ms ease-out, box-shadow 80ms ease-out, background-color 150ms, filter 150ms;
+}
+.btn-sm {
+  --btn-depth: 4px;
+}
+.btn-3d:not(:disabled):hover {
+  filter: brightness(1.08);
+}
+.btn-3d:not(:disabled):active,
+.btn-3d.is-pressed {
+  translate: 0 calc(var(--btn-depth) - 1px);
+  box-shadow: 0 1px 0 var(--btn-base, #3b4664);
+}
+.btn-brand { background-color: var(--color-brand); --btn-base: #b07f00; }
+.btn-dark { background-color: #232b3f; --btn-base: #3b4664; }
+.btn-light { background-color: var(--color-chalk); --btn-base: #9ca3af; }
+.btn-correct { background-color: #059669; --btn-base: #065f46; }
+.btn-wrong { background-color: #ef4444; --btn-base: #991b1b; }
+
 /* Entrada da rodada: cabeçalho e cronômetro ficam parados; o selo de dificuldade dá um pop,
    a pergunta sobe de leve e as alternativas vêm em cascata. */
 .round-chip {

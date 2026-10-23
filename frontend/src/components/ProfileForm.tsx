@@ -92,7 +92,7 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
       <button
         type="submit"
         disabled={!ready || sending || disabled}
-        className="rounded-xl bg-brand py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50"
+        className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50"
       >
         {sending ? 'Só um instante…' : mode === 'create' ? 'Criar sala' : 'Entrar'}
       </button>

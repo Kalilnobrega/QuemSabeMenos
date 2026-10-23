@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
+import { LeaveButton } from './LeaveButton'
 import { AVATAR_URLS } from '../lib/avatars'
 import type { RoomState } from '../types/events'
 
@@ -51,7 +52,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
       <header className="flex flex-col items-center gap-3 rounded-2xl bg-panel p-5">
         <span className="text-sm font-semibold tracking-widest text-steel uppercase">Código da sala</span>
         <span className="font-display text-6xl tracking-[0.25em] text-brand">{room.code}</span>
-        <button onClick={invite} className="rounded-xl bg-chalk px-5 py-2 font-semibold text-ink hover:bg-white">
+        <button onClick={invite} className="btn-3d btn-sm btn-light rounded-xl px-5 py-2 font-semibold text-ink">
           Convidar a galera
         </button>
       </header>
@@ -92,8 +93,8 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
                 key={rounds}
                 onClick={() => setRounds(rounds)}
                 aria-pressed={room.settings.rounds === rounds}
-                className={`rounded-lg py-2 font-semibold ${
-                  room.settings.rounds === rounds ? 'bg-brand text-ink' : 'bg-panel text-steel hover:text-chalk'
+                className={`btn-3d btn-sm rounded-lg py-2 font-semibold ${
+                  room.settings.rounds === rounds ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
                 }`}
               >
                 {rounds}
@@ -114,7 +115,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
           <button
             onClick={start}
             disabled={!enoughPlayers || starting}
-            className="rounded-xl bg-brand py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50"
+            className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50"
           >
             Começar partida
           </button>
@@ -128,9 +129,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds }: Props) 
         <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião começar…</p>
       )}
 
-      <button onClick={onLeave} className="text-steel underline hover:text-chalk">
-        Sair da sala
-      </button>
+      <LeaveButton onLeave={onLeave} />
     </section>
   )
 }

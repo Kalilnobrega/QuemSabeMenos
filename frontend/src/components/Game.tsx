@@ -4,6 +4,7 @@ import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import type { Snapshot } from '../lib/useRoom'
 import type { GameView, PlayerView, RoomState } from '../types/events'
+import { LeaveButton } from './LeaveButton'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -113,7 +114,6 @@ const LEVEL_INTRO: Record<string, { title: string; color: string; marker: string
 function LevelIntro({ game }: { game: GameView }) {
   const info = LEVEL_INTRO[game.difficulty] ?? LEVEL_INTRO.medium
   const current = LEVEL_TRACK.findIndex((level) => level.key === game.difficulty)
-
   const trackRef = useRef<HTMLOListElement>(null)
   const markerRef = useRef<HTMLSpanElement>(null)
 
@@ -144,6 +144,7 @@ function LevelIntro({ game }: { game: GameView }) {
       { duration: 650, delay: 450, easing: 'ease-in-out', fill: 'backwards' },
     )
   }, [current])
+
   return (
     <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
@@ -384,13 +385,13 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
   const optionClass = (index: number) => {
     const chosen = choice === index || myResult?.option === index
     if (showResults) {
-      if (index === game.correct_option) return 'reveal-pop bg-emerald-600 text-white'
-      if (chosen) return 'reveal-shake bg-red-500/80 text-white'
-      return 'bg-panel opacity-40'
+      if (index === game.correct_option) return 'reveal-pop btn-correct text-white'
+      if (chosen) return 'reveal-shake btn-wrong is-pressed text-white'
+      return 'btn-dark opacity-40'
     }
-    if (chosen) return 'bg-brand/20 ring-2 ring-brand'
-    if (!canAnswer) return 'bg-panel opacity-50'
-    return 'bg-panel hover:bg-panel/70 active:scale-[0.98]'
+    if (chosen) return 'btn-dark is-pressed outline-2 outline-brand'
+    if (!canAnswer) return 'btn-dark opacity-50'
+    return 'btn-dark'
   }
 
   return (
@@ -443,7 +444,7 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
             onClick={() => pick(index)}
             disabled={!canAnswer}
             style={{ animationDelay: `${0.12 + index * 0.06}s` }}
-            className={`round-option flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold transition ${optionClass(index)}`}
+            className={`round-option btn-3d btn-sm flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
           >
             <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
             <span className="min-w-0 [overflow-wrap:anywhere]">{option}</span>
@@ -604,7 +605,7 @@ function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
       {isHost ? (
         <button
           onClick={async () => setNotice(await onPlayAgain())}
-          className="rounded-xl bg-brand py-4 font-display text-2xl tracking-wide text-ink"
+          className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
         >
           Jogar de novo
         </button>
@@ -612,9 +613,7 @@ function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
         <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião decidir se tem revanche…</p>
       )}
 
-      <button onClick={onLeave} className="text-steel underline hover:text-chalk">
-        Sair da sala
-      </button>
+      <LeaveButton onLeave={onLeave} />
     </section>
   )
 }
