@@ -201,4 +201,4 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -10}
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -20}  # partida de 10: vale o dobro

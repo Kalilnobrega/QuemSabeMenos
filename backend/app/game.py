@@ -19,12 +19,13 @@ QUESTIONS_DIR = Path(__file__).parent / "questions"
 DIFFICULTIES: tuple[Difficulty, ...] = ("easy", "medium", "hard")
 FINAL_DIFFICULTY: Difficulty = "impossible"
 OPTION_COUNT = {"easy": 4, "medium": 4, "hard": 4, "impossible": 6}
-# Pontuação calibrada para, numa partida de 15, antes da pergunta final, um jogador
-# médio terminar perto de 80 e um bom perto de 150. Ajuste aqui depois de jogar.
+# Pontuação calibrada em partidas de verdade de 20 perguntas: antes da pergunta final, um
+# jogador bom termina perto de 150-170 e um médio perto de 60. Ajuste aqui depois de jogar.
 STARTING_IQ = 50
+REFERENCE_ROUNDS = 20
 # Acerto rende do mínimo (respondeu no último instante) ao máximo (na hora).
-CORRECT_POINTS = {"easy": (0, 0), "medium": (6, 12), "hard": (15, 25), "impossible": (35, 35)}
-WRONG_PENALTY = {"easy": -15, "medium": -7, "hard": -2, "impossible": 0}
+CORRECT_POINTS = {"easy": (0, 0), "medium": (5, 11), "hard": (13, 22), "impossible": (35, 35)}
+WRONG_PENALTY = {"easy": -15, "medium": -7, "hard": -4, "impossible": 0}
 # Quem responde nos primeiros segundos leva o máximo; depois o valor cai até o mínimo.
 SPEED_GRACE_SECONDS = 3.0
 NO_ANSWER_PENALTY = -10
@@ -125,14 +126,22 @@ def results_seconds(fact: str) -> float:
     return min(MAX_RESULTS_SECONDS, max(MIN_RESULTS_SECONDS, 4 + len(fact) * RESULTS_SECONDS_PER_CHAR))
 
 
-def points(difficulty: Difficulty, correct: bool | None, remaining_fraction: float = 0) -> int:
-    """correct=None significa que não respondeu."""
+def point_scale(rounds: int) -> float:
+    """Partidas curtas valem mais por pergunta e longas valem menos, para o QI final ficar
+    na mesma faixa em qualquer tamanho (a tabela vale como está numa partida de 20)."""
+    return REFERENCE_ROUNDS / rounds
+
+
+def points(difficulty: Difficulty, correct: bool | None, remaining_fraction: float = 0, scale: float = 1.0) -> int:
+    """correct=None significa que não respondeu. A pergunta final não muda com a escala."""
+    if difficulty == FINAL_DIFFICULTY:
+        scale = 1.0
     if correct is None:
-        return NO_ANSWER_PENALTY
+        return round(NO_ANSWER_PENALTY * scale)
     if not correct:
-        return WRONG_PENALTY[difficulty]
+        return round(WRONG_PENALTY[difficulty] * scale)
     low, high = CORRECT_POINTS[difficulty]
-    return round(low + (high - low) * max(0.0, min(1.0, remaining_fraction)))
+    return round((low + (high - low) * max(0.0, min(1.0, remaining_fraction))) * scale)
 
 
 class Scorable(Protocol):
@@ -151,6 +160,7 @@ class Answer:
 class Game:
     questions: list[Question]
     answer_seconds: float
+    point_scale: float = 1.0  # ver point_scale()
     round: int = -1  # índice da pergunta atual; -1 antes de começar
     phase: Literal["starting", "level", "intro", "reading", "answering", "results", "finished"] = "reading"
     phase_started_at: float = 0
@@ -211,12 +221,12 @@ class Game:
         for player in players:
             answer = self.answers.get(player.id)
             if answer is None:
-                correct, delta = False, points(difficulty, None)
+                correct, delta = False, points(difficulty, None, scale=self.point_scale)
                 elapsed = self.answer_seconds
             else:
                 correct = answer.option == self.question.answer
                 elapsed = self.answer_seconds - (self.phase_ends_at - answer.at)
-                delta = points(difficulty, correct, self.speed_fraction(elapsed))
+                delta = points(difficulty, correct, self.speed_fraction(elapsed), self.point_scale)
             player.score += delta
             player.answer_ms += round(max(0.0, elapsed) * 1000)
             self.results.append(

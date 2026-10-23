@@ -13,6 +13,7 @@ from app.game import (
     Question,
     load_bank,
     pick_questions,
+    point_scale,
     points,
     reading_seconds,
     results_seconds,
@@ -41,16 +42,16 @@ def question(qid: str, difficulty: str = "easy", answer: int = 0) -> Question:
 
 def test_points_follow_the_rules():
     assert points("easy", True, 1) == 0  # fácil não dá QI, só tira
-    assert points("medium", True, 1) == 12
-    assert points("medium", True, 0) == 6
-    assert points("hard", True, 1) == 25
-    assert points("hard", True, 0.5) == 20
-    assert points("hard", True, 0) == 15
+    assert points("medium", True, 1) == 11
+    assert points("medium", True, 0) == 5
+    assert points("hard", True, 1) == 22
+    assert points("hard", True, 0.5) == 18
+    assert points("hard", True, 0) == 13
     assert points("impossible", True, 1) == 35
     assert points("impossible", True, 0) == 35  # sem bônus de tempo
     assert points("easy", False) == -15
     assert points("medium", False) == -7
-    assert points("hard", False) == -2
+    assert points("hard", False) == -4
     assert points("impossible", False) == 0
     assert points("easy", None) == -10
 
@@ -125,7 +126,7 @@ def test_round_flow_and_scoring():
     assert not game.everyone_answered(["ana", "bia", "caio"])
 
     game.close_round([ana, bia, caio], now=12)
-    assert (ana.score, bia.score, caio.score) == (12, -7, -10)
+    assert (ana.score, bia.score, caio.score) == (11, -7, -10)
     assert (ana.answer_ms, bia.answer_ms, caio.answer_ms) == (2000, 3000, 10000)
     view = game.view(now=12)
     assert view.correct_option == 2
@@ -138,7 +139,14 @@ def test_speed_bonus_starts_decaying_after_the_grace_period():
     assert game.speed_fraction(0) == game.speed_fraction(3) == 1
     assert game.speed_fraction(6.5) == 0.5
     assert game.speed_fraction(10) == 0
-    assert points("hard", True, game.speed_fraction(6.5)) == 20
+    assert points("hard", True, game.speed_fraction(6.5)) == 18
+
+
+def test_shorter_matches_are_worth_more_per_question():
+    assert point_scale(20) == 1 and point_scale(10) == 2
+    assert points("hard", True, 1, scale=point_scale(10)) == 44
+    assert points("medium", False, scale=point_scale(35)) == -4
+    assert points("impossible", True, 1, scale=point_scale(10)) == 35  # a final não muda
 
 
 def test_game_opens_with_a_countdown_before_the_first_question():

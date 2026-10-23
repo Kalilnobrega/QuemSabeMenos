@@ -11,7 +11,16 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from app.events import ROUND_OPTIONS, Avatar, PlayerView, Profile, RoomSettings, RoomState
-from app.game import SPEED_GRACE_SECONDS, STARTING_IQ, Game, GameError, Question, load_bank, pick_questions
+from app.game import (
+    SPEED_GRACE_SECONDS,
+    STARTING_IQ,
+    Game,
+    GameError,
+    Question,
+    load_bank,
+    pick_questions,
+    point_scale,
+)
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
@@ -198,7 +207,7 @@ class RoomManager:
         for player in room.players:
             player.score = STARTING_IQ
             player.answer_ms = 0
-        room.game = Game(questions=questions, answer_seconds=ANSWER_SECONDS)
+        room.game = Game(questions=questions, answer_seconds=ANSWER_SECONDS, point_scale=point_scale(room.rounds))
         room.game.start_round(time.monotonic() if now is None else now)
         room.status = "playing"
         return room
