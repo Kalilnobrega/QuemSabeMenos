@@ -184,7 +184,8 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">A partida vai começar</p>
       <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Prepare-se!</h1>
       <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
-        {game.total_rounds} perguntas · {room.settings.answer_seconds} segundos cada
+        {room.settings.rounds} perguntas{game.total_rounds > room.settings.rounds && ' + a final impossível'} ·{' '}
+        {room.settings.answer_seconds} segundos cada
       </p>
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {room.players.map((player, index) => (
@@ -398,7 +399,7 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
     <section className="flex w-full flex-col gap-5">
       <header className="flex items-center justify-between gap-2 text-sm">
         <span className="font-semibold text-steel">
-          Pergunta {game.round}/{game.total_rounds}
+          {game.round > room.settings.rounds ? 'Pergunta extra' : `Pergunta ${game.round}/${room.settings.rounds}`}
         </span>
         <span className="flex gap-2">
           <span className="rounded-full bg-panel px-3 py-1 text-steel">{question.theme}</span>

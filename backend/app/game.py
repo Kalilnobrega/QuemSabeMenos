@@ -90,11 +90,12 @@ def split_by_difficulty(rounds: int) -> dict[Difficulty, int]:
 def pick_questions(bank: list[Question], rounds: int, used: set[str], rng: random.Random) -> list[Question]:
     """Sorteia as perguntas da partida, das fáceis às difíceis, evitando as já usadas na sala.
 
-    A última é a pergunta final, impossível, quando o banco tem alguma.
+    São `rounds` perguntas normais e, quando o banco tem alguma, uma pergunta final impossível
+    extra no fim (15 rodadas → 16 perguntas).
     As alternativas são embaralhadas para a certa não ficar sempre na mesma posição.
     """
     has_final = any(q.difficulty == FINAL_DIFFICULTY for q in bank)
-    counts = split_by_difficulty(rounds - 1 if has_final else rounds)
+    counts = split_by_difficulty(rounds)
     if has_final:
         counts[FINAL_DIFFICULTY] = 1
     picked = []

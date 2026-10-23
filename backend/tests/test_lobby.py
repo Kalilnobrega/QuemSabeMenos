@@ -157,7 +157,7 @@ async def test_full_game(connect):
     await ana.call("update_settings", {"rounds": 10})
     assert (await ana.call("start_game"))["ok"]
 
-    for round_number in range(1, 11):
+    for round_number in range(1, 12):  # 10 rodadas + a final impossível
         state = await ana.wait_for(
             lambda s: s["game"]
             and s["game"]["round"] == round_number

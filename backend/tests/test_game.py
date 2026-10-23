@@ -75,7 +75,7 @@ def test_bank_is_valid_and_has_every_difficulty():
 def test_pick_questions_goes_from_easy_to_hard_and_avoids_used():
     bank = load_bank()
     first = pick_questions(bank, 15, set(), random.Random(1))
-    assert [q.difficulty for q in first] == ["easy"] * 5 + ["medium"] * 5 + ["hard"] * 4 + ["impossible"]
+    assert [q.difficulty for q in first] == ["easy"] * 5 + ["medium"] * 5 + ["hard"] * 5 + ["impossible"]
     assert len(first[-1].options) == 6
 
     second = pick_questions(bank, 15, {q.id for q in first}, random.Random(2))
