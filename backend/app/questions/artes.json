@@ -171,15 +171,15 @@
     },
     {
       "difficulty": "hard",
-      "text": "Em que cidade mineira estão os Profetas de Aleijadinho?",
+      "text": "Quem projetou o MASP, o museu com o famoso vão livre na Avenida Paulista?",
       "options": [
-        "Congonhas",
-        "Ouro Preto",
-        "Mariana",
-        "Tiradentes"
+        "Lina Bo Bardi",
+        "Oscar Niemeyer",
+        "Paulo Mendes da Rocha",
+        "Lúcio Costa"
       ],
       "answer": 0,
-      "fact": "Os 12 profetas foram esculpidos em pedra-sabão no início do século XIX, no Santuário do Bom Jesus de Matosinhos."
+      "fact": "Inaugurado em 1968, o MASP tem um vão livre de 74 metros pensado como uma praça pública embaixo do museu."
     },
     {
       "difficulty": "easy",
@@ -219,15 +219,15 @@
     },
     {
       "difficulty": "easy",
-      "text": "Que arte usa o movimento do corpo ao som de música?",
+      "text": "Qual destes é um instrumento de sopro?",
       "options": [
-        "Dança",
-        "Escultura",
-        "Pintura",
-        "Arquitetura"
+        "Flauta",
+        "Violino",
+        "Violão",
+        "Bateria"
       ],
       "answer": 0,
-      "fact": "O balé nasceu nas cortes italianas e se desenvolveu na França. Por isso os passos têm nomes em francês."
+      "fact": "A flauta é um dos instrumentos mais antigos: já foram achadas flautas feitas de osso com cerca de 40 mil anos."
     },
     {
       "difficulty": "easy",
@@ -242,7 +242,7 @@
       "fact": "O laranja é uma cor secundária. Em várias línguas, a fruta deu nome à cor, e não o contrário."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "O que representam as duas máscaras, uma sorrindo e outra chorando, símbolo do teatro?",
       "options": [
         "Comédia e tragédia",
