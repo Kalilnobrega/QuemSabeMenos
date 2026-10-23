@@ -47,6 +47,11 @@ function formatScore(score: number) {
   return score < 0 ? `−${-score}` : `${score}`
 }
 
+/** Mais QI primeiro; no empate, quem respondeu mais rápido na soma da partida. */
+function byRanking(a: PlayerView, b: PlayerView) {
+  return b.score - a.score || a.answer_ms - b.answer_ms
+}
+
 function formatDelta(delta: number) {
   return delta > 0 ? `+${delta}` : formatScore(delta)
 }
@@ -67,6 +72,17 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
   const now = useNow(timed)
   const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
   const progress = game.phase_duration_ms > 0 ? 1 - remaining / game.phase_duration_ms : 1
+
+  // Na resposta, a barra fica cheia e dourada durante a carência (pontos máximos)
+  // e depois esvazia até o fim do tempo, junto com os pontos.
+  const graceMs = room.settings.speed_grace_seconds * 1000
+  const inGrace = game.phase === 'answering' && game.phase_duration_ms - remaining < graceMs
+  const barFill =
+    game.phase === 'answering'
+      ? inGrace
+        ? 1
+        : remaining / Math.max(1, game.phase_duration_ms - graceMs)
+      : 1 - progress
 
   const question = game.question!
   const typing = game.phase === 'reading'
@@ -108,7 +124,7 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
       {isFinal && typing && (
         <div className="rounded-2xl border border-orange-400/40 bg-orange-500/10 px-4 py-3 text-center">
           <p className="font-display text-3xl tracking-wide text-orange-300">🔥 Pergunta final: impossível!</p>
-          <p className="text-sm text-steel">Vale até 400 QI, e errar não tira pontos. Na dúvida, chuta!</p>
+          <p className="text-sm text-steel">Vale 35 de QI, e o tempo não conta: pense com calma. Errar não tira pontos.</p>
         </div>
       )}
       <header className="flex items-center justify-between gap-2 text-sm">
@@ -126,9 +142,15 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
           {game.phase !== 'reading' && (
             <div
               className={`h-full rounded-full ${
-                showResults ? 'bg-steel/60' : remaining < 3000 ? 'bg-red-400' : 'bg-brand'
+                showResults
+                  ? 'bg-steel/60'
+                  : inGrace
+                    ? 'bg-brand shadow-[0_0_12px_rgba(255,193,7,0.8)]'
+                    : remaining < 3000
+                      ? 'bg-red-400'
+                      : 'bg-amber-200'
               }`}
-              style={{ width: `${(1 - progress) * 100}%` }}
+              style={{ width: `${Math.min(1, Math.max(0, barFill)) * 100}%` }}
             />
           )}
         </div>
@@ -184,7 +206,9 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
     headline = (
       <p className="text-center font-display text-3xl tracking-wide">
         <span className={mine.correct ? 'text-emerald-300' : 'text-red-300'}>{verdict}</span>{' '}
-        <span className="text-chalk">{formatDelta(mine.delta)} QI</span>
+        <span className="text-chalk">
+          {mine.correct && mine.delta === 0 ? 'Não fez mais que a obrigação.' : `${formatDelta(mine.delta)} QI`}
+        </span>
       </p>
     )
   }
@@ -210,7 +234,7 @@ interface RankingProps {
 }
 
 function Ranking({ players, playerId, deltas }: RankingProps) {
-  const sorted = [...players].sort((a, b) => b.score - a.score)
+  const sorted = [...players].sort(byRanking)
   return (
     <ol className="flex flex-col gap-2">
       {sorted.map((player, index) => (
@@ -224,7 +248,7 @@ function Ranking({ players, playerId, deltas }: RankingProps) {
           <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
           <span className="flex-1 truncate font-semibold">{player.nickname}</span>
           {deltas && player.id in deltas && (
-            <span className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : 'text-red-300'}`}>
+            <span className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : deltas[player.id] < 0 ? 'text-red-300' : 'text-steel'}`}>
               {formatDelta(deltas[player.id])}
             </span>
           )}
@@ -244,7 +268,7 @@ interface PodiumProps {
 
 function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
   const [notice, setNotice] = useState<string | null>(null)
-  const sorted = [...room.players].sort((a, b) => b.score - a.score)
+  const sorted = [...room.players].sort(byRanking)
   const best = sorted[0]
   const worst = sorted.length > 1 ? sorted[sorted.length - 1] : null
   const isHost = room.host_id === playerId
