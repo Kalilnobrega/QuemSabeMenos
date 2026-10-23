@@ -17,7 +17,7 @@ Avatar = Literal[
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
 
 NICKNAME_MAX_LENGTH = 16
-ROUND_OPTIONS = (5, 10, 15, 20, 25, 30)
+ROUND_OPTIONS = (10, 15, 20, 25, 30, 35)
 
 
 class Pong(BaseModel):

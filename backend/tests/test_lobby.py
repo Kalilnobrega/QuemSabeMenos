@@ -146,18 +146,18 @@ async def setup_room(connect) -> tuple[Client, Client, dict, dict]:
 
 async def test_only_host_changes_rounds(connect):
     ana, bia, *_ = await setup_room(connect)
-    assert not (await bia.call("update_settings", {"rounds": 5}))["ok"]
+    assert not (await bia.call("update_settings", {"rounds": 10}))["ok"]
     assert not (await ana.call("update_settings", {"rounds": 7}))["ok"]
-    assert (await ana.call("update_settings", {"rounds": 5}))["ok"]
-    await bia.wait_for(lambda s: s["settings"]["rounds"] == 5)
+    assert (await ana.call("update_settings", {"rounds": 10}))["ok"]
+    await bia.wait_for(lambda s: s["settings"]["rounds"] == 10)
 
 
 async def test_full_game(connect):
     ana, bia, created, joined = await setup_room(connect)
-    await ana.call("update_settings", {"rounds": 5})
+    await ana.call("update_settings", {"rounds": 10})
     assert (await ana.call("start_game"))["ok"]
 
-    for round_number in range(1, 6):
+    for round_number in range(1, 11):
         state = await ana.wait_for(
             lambda s: s["game"]
             and s["game"]["round"] == round_number
@@ -194,7 +194,7 @@ async def test_full_game(connect):
 
 async def test_round_ends_when_time_runs_out(connect):
     ana, bia, created, _ = await setup_room(connect)
-    await ana.call("update_settings", {"rounds": 5})
+    await ana.call("update_settings", {"rounds": 10})
     await ana.call("start_game")
     await ana.wait_for(lambda s: s["game"] and s["game"]["phase"] == "answering")
     await ana.call("submit_answer", {"option": 0})
