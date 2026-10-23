@@ -55,7 +55,7 @@
       "type": "object"
     },
     "GameView": {
-      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Depois da última rodada: finished.",
+      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. A partida abre com starting (contagem antes da 1ª pergunta) e a\npergunta final começa com intro; nas duas a pergunta não é enviada. Depois da última\nrodada: finished.",
       "properties": {
         "round": {
           "type": "integer"
@@ -65,6 +65,8 @@
         },
         "phase": {
           "enum": [
+            "starting",
+            "intro",
             "reading",
             "answering",
             "results",

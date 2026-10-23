@@ -19,6 +19,7 @@ from app.events import (
     SubmitAnswerRequest,
     UpdateSettingsRequest,
 )
+from app import game as rules
 from app.rooms import Player, Room, RoomError, RoomManager
 
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
@@ -92,6 +93,12 @@ async def run_game(room: Room) -> None:
         while alive():
             done.clear()
             await broadcast(room)
+            if game.phase in rules.PREPARATION_PHASES:
+                await asyncio.sleep(game.phase_ends_at - time.monotonic())
+                if not alive():
+                    return
+                game.begin_reading(time.monotonic())
+                await broadcast(room)
             await asyncio.sleep(game.phase_ends_at - time.monotonic())
             if not alive():
                 return

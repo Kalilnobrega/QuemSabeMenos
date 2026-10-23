@@ -112,6 +112,7 @@ def test_round_flow_and_scoring():
     ana, bia, caio = P("ana"), P("bia"), P("caio")
 
     game.start_round(now=0)
+    game.begin_reading(now=0)  # pula a contagem de abertura
     assert game.phase == "reading"
     with pytest.raises(GameError):
         game.answer("ana", 2, now=0.5)  # bloqueado enquanto o texto aparece
@@ -140,6 +141,33 @@ def test_speed_bonus_starts_decaying_after_the_grace_period():
     assert points("hard", True, game.speed_fraction(6.5)) == 20
 
 
+def test_game_opens_with_a_countdown_before_the_first_question():
+    game = Game(questions=[question("q1"), question("q2")], answer_seconds=10)
+    game.start_round(now=0)
+    assert game.view(now=1).phase == "starting" and game.view(now=1).question is None
+    game.begin_reading(now=5)
+    assert game.view(now=5).phase == "reading"
+    game.open_answers(now=6)
+    game.close_round([], now=16)
+    game.start_round(now=20)
+    assert game.view(now=20).phase == "reading"  # só a 1ª rodada tem a contagem
+
+
+def test_final_question_starts_with_an_intro_without_the_question():
+    final = Question(
+        id="f", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f"
+    )
+    game = Game(questions=[question("q1"), final], answer_seconds=10)
+    game.round = 0  # pula a contagem de abertura
+    game.start_round(now=0)
+    view = game.view(now=1)
+    assert view.phase == "intro" and view.question is None
+    with pytest.raises(GameError):
+        game.answer("ana", 0, now=1)
+    game.begin_reading(now=4)
+    assert game.view(now=4).question.text == "?"
+
+
 def test_answer_after_deadline_is_rejected():
     game = Game(questions=[question("q1")], answer_seconds=10)
     game.start_round(now=0)
@@ -157,6 +185,7 @@ def test_results_last_longer_for_longer_facts():
 def test_view_hides_answer_until_results():
     game = Game(questions=[question("q1")], answer_seconds=10)
     game.start_round(now=0)
+    game.begin_reading(now=0)
     view = game.view(now=0.5)
     assert view.correct_option is None
     assert view.fact is None

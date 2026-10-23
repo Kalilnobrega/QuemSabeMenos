@@ -34,6 +34,10 @@ TYPING_SECONDS_PER_CHAR = 0.035
 MIN_READING_SECONDS = 1.5
 MAX_READING_SECONDS = 6.0
 # O resultado fica na tela o suficiente para ler a curiosidade.
+# Telas de preparação: antes da 1ª pergunta e antes da final (o tempo só começa depois).
+START_SECONDS = 5.0
+INTRO_SECONDS = 5.0
+PREPARATION_PHASES = ("starting", "intro")
 RESULTS_SECONDS_PER_CHAR = 0.055
 MIN_RESULTS_SECONDS = 7.0
 MAX_RESULTS_SECONDS = 12.0
@@ -146,7 +150,7 @@ class Game:
     questions: list[Question]
     answer_seconds: float
     round: int = -1  # índice da pergunta atual; -1 antes de começar
-    phase: Literal["reading", "answering", "results", "finished"] = "reading"
+    phase: Literal["starting", "intro", "reading", "answering", "results", "finished"] = "reading"
     phase_started_at: float = 0
     phase_ends_at: float = 0
     answers: dict[str, Answer] = field(default_factory=dict)
@@ -164,6 +168,14 @@ class Game:
         self.round += 1
         self.answers = {}
         self.results = []
+        if self.round == 0:
+            self._enter("starting", now, START_SECONDS)
+        elif self.question.difficulty == FINAL_DIFFICULTY:
+            self._enter("intro", now, INTRO_SECONDS)
+        else:
+            self.begin_reading(now)
+
+    def begin_reading(self, now: float) -> None:
         self._enter("reading", now, reading_seconds(self.question.text))
 
     def open_answers(self, now: float) -> None:
@@ -220,14 +232,16 @@ class Game:
             phase=self.phase,
             phase_duration_ms=round((self.phase_ends_at - self.phase_started_at) * 1000),
             phase_ends_in_ms=max(0, round((self.phase_ends_at - now) * 1000)),
-            question=QuestionView(text=q.text, options=q.options, theme=q.theme, difficulty=q.difficulty),
+            question=None
+            if self.phase in PREPARATION_PHASES
+            else QuestionView(text=q.text, options=q.options, theme=q.theme, difficulty=q.difficulty),
             answered=list(self.answers),
             correct_option=q.answer if show_answer else None,
             fact=q.fact if show_answer else None,
             results=self.results,
         )
 
-    def _enter(self, phase: Literal["reading", "answering", "results", "finished"], now: float, seconds: float):
+    def _enter(self, phase: Literal["starting", "intro", "reading", "answering", "results", "finished"], now: float, seconds: float):
         self.phase = phase
         self.phase_started_at = now
         self.phase_ends_at = now + seconds

@@ -86,14 +86,16 @@ class RoundResult(BaseModel):
 
 class GameView(BaseModel):
     """Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
-    answering → results. Depois da última rodada: finished."""
+    answering → results. A partida abre com starting (contagem antes da 1ª pergunta) e a
+    pergunta final começa com intro; nas duas a pergunta não é enviada. Depois da última
+    rodada: finished."""
 
     round: int  # começa em 1
     total_rounds: int
-    phase: Literal["reading", "answering", "results", "finished"]
+    phase: Literal["starting", "intro", "reading", "answering", "results", "finished"]
     phase_duration_ms: int
     phase_ends_in_ms: int  # relativo ao envio, para não depender do relógio do celular
-    question: QuestionView | None
+    question: QuestionView | None  # None em starting e intro
     answered: list[str]  # ids de quem já respondeu nesta rodada
     correct_option: int | None  # só aparece em results
     fact: str | None  # curiosidade sobre a resposta, também só em results
