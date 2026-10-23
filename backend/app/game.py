@@ -4,6 +4,7 @@ Lógica pura: quem chama passa o relógio (`now`) e o main.py cuida das esperas.
 """
 
 import json
+import math
 import random
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -11,7 +12,7 @@ from typing import Literal, Protocol
 
 from pydantic import BaseModel, Field, model_validator
 
-from app.events import Difficulty, GameView, QuestionView, RoundResult
+from app.events import Bonus, Difficulty, GameView, QuestionView, RoundResult
 
 QUESTIONS_DIR = Path(__file__).parent / "questions"
 
@@ -21,11 +22,19 @@ FINAL_DIFFICULTY: Difficulty = "impossible"
 OPTION_COUNT = {"easy": 4, "medium": 4, "hard": 4, "impossible": 6}
 # Pontuação calibrada em partidas de verdade de 20 perguntas: antes da pergunta final, um
 # jogador bom termina perto de 150-170 e um médio perto de 60. Ajuste aqui depois de jogar.
-STARTING_IQ = 50
+STARTING_IQ = 40
 REFERENCE_ROUNDS = 20
 # Acerto rende do mínimo (respondeu no último instante) ao máximo (na hora).
 CORRECT_POINTS = {"easy": (0, 0), "medium": (5, 11), "hard": (13, 22), "impossible": (35, 35)}
 WRONG_PENALTY = {"easy": -15, "medium": -7, "hard": -4, "impossible": 0}
+# Bônus. Acertar todas as fáceis rende 1 por fácil
+# (sem escala: partida longa tem mais fáceis, mas é mais difícil gabaritar). Sequências de
+# acertos contam só médias e difíceis; de erros, qualquer nível (não responder é erro).
+# A pergunta final não entra em nenhuma. Repetir uma sequência na mesma partida vale a metade
+# (arredondada para longe do zero).
+PERFECT_EASY_BONUS = 1
+STREAK_BONUS = {3: 5, 5: 10, 10: 20}
+WRONG_STREAK_PENALTY = {3: -5, 5: -10}
 # Quem responde nos primeiros segundos leva o máximo; depois o valor cai até o mínimo.
 SPEED_GRACE_SECONDS = 3.0
 NO_ANSWER_PENALTY = -10
@@ -148,6 +157,15 @@ class Scorable(Protocol):
     id: str
     score: int
     answer_ms: int  # tempo total de resposta na partida, para desempate
+    streak: int  # > 0: acertos seguidos; < 0: erros seguidos
+
+
+@dataclass
+class Streak:
+    right: int = 0
+    wrong: int = 0
+    perfect_easy: bool = True
+    awarded: dict[tuple[str, int], int] = field(default_factory=dict)  # quantas vezes ganhou cada um
 
 
 @dataclass
@@ -167,6 +185,7 @@ class Game:
     phase_ends_at: float = 0
     answers: dict[str, Answer] = field(default_factory=dict)
     results: list[RoundResult] = field(default_factory=list)
+    streaks: dict[str, Streak] = field(default_factory=dict)
 
     @property
     def question(self) -> Question:
@@ -227,12 +246,48 @@ class Game:
                 correct = answer.option == self.question.answer
                 elapsed = self.answer_seconds - (self.phase_ends_at - answer.at)
                 delta = points(difficulty, correct, self.speed_fraction(elapsed), self.point_scale)
-            player.score += delta
+            bonuses = self._bonuses(player, difficulty, correct)
+            player.score += delta + sum(b.delta for b in bonuses)
             player.answer_ms += round(max(0.0, elapsed) * 1000)
             self.results.append(
-                RoundResult(player_id=player.id, option=answer.option if answer else None, correct=correct, delta=delta)
+                RoundResult(
+                    player_id=player.id,
+                    option=answer.option if answer else None,
+                    correct=correct,
+                    delta=delta,
+                    bonuses=bonuses,
+                )
             )
         self._enter("results", now, results_seconds(self.question.fact))
+
+    def _bonuses(self, player: Scorable, difficulty: Difficulty, correct: bool) -> list[Bonus]:
+        """Atualiza as sequências do jogador e devolve os bônus que ele ganhou nesta rodada."""
+        if difficulty == FINAL_DIFFICULTY:
+            return []
+        streak = self.streaks.setdefault(player.id, Streak())
+        bonuses = []
+
+        def award(kind: str, count: int, value: int) -> None:
+            times = streak.awarded.get((kind, count), 0)
+            streak.awarded[(kind, count)] = times + 1
+            if times:
+                value = int(math.copysign(math.ceil(abs(value) / 2), value))
+            bonuses.append(Bonus(kind=kind, count=count, delta=value, repeat=times > 0))
+
+        streak.wrong = 0 if correct else streak.wrong + 1
+        if streak.wrong in WRONG_STREAK_PENALTY:
+            award("wrong_streak", streak.wrong, round(WRONG_STREAK_PENALTY[streak.wrong] * self.point_scale))
+        if difficulty == "easy":
+            streak.perfect_easy &= correct
+            easy = [i for i, q in enumerate(self.questions) if q.difficulty == "easy"]
+            if streak.perfect_easy and self.round == easy[-1]:
+                award("perfect_easy", len(easy), len(easy) * PERFECT_EASY_BONUS)
+        else:
+            streak.right = streak.right + 1 if correct else 0
+            if streak.right in STREAK_BONUS:
+                award("streak", streak.right, round(STREAK_BONUS[streak.right] * self.point_scale))
+        player.streak = streak.right or -streak.wrong
+        return bonuses
 
     def finish(self, now: float) -> None:
         self._enter("finished", now, 0)

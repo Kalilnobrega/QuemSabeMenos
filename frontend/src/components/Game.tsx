@@ -3,7 +3,7 @@ import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import type { Snapshot } from '../lib/useRoom'
-import type { GameView, PlayerView, RoomState, RoundResult } from '../types/events'
+import type { Bonus, GameView, PlayerView, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -25,6 +25,36 @@ function BulbIcon({ className }: { className?: string }) {
       <path d="M11.5 12a3 3 0 0 1 2.5-2" fill="none" stroke="#FFF3C4" strokeWidth="1.6" strokeLinecap="round" />
       <rect x="10.8" y="21.2" width="6.4" height="4.3" rx="1.4" fill="#9CA3AF" stroke="#12141B" strokeWidth="1.6" />
       <path d="M11.2 23.3h5.6" stroke="#12141B" strokeWidth="1.2" />
+    </svg>
+  )
+}
+
+/** Floco de gelo das sequências de erros: o contrário do foguinho. */
+function SnowflakeIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" strokeLinecap="round" aria-hidden="true">
+      <g stroke="#12141B" strokeWidth="5">
+        <path d="M12 2.5v19M3.8 7.2l16.4 9.6M3.8 16.8l16.4-9.6" />
+      </g>
+      <g stroke="#7DD3FC" strokeWidth="2.6">
+        <path d="M12 2.5v19M3.8 7.2l16.4 9.6M3.8 16.8l16.4-9.6" />
+        <path d="M9.5 4.5 12 7l2.5-2.5M9.5 19.5 12 17l2.5 2.5" />
+      </g>
+    </svg>
+  )
+}
+
+/** Estrela de quem gabaritou as fáceis. */
+function StarIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path
+        d="m12 2.8 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.6l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8L12 2.8Z"
+        fill="#FFC107"
+        stroke="#12141B"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -398,8 +428,9 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
   return (
     <section className="flex w-full flex-col gap-5">
       <header className="flex items-center justify-between gap-2 text-sm">
-        <span className="font-semibold text-steel">
+        <span className="flex items-center gap-2 font-semibold text-steel">
           {game.round > room.settings.rounds ? 'Pergunta extra' : `Pergunta ${game.round}/${room.settings.rounds}`}
+          <StreakChip streak={room.players.find((p) => p.id === playerId)?.streak ?? 0} />
         </span>
         <span className="flex gap-2">
           <span className="rounded-full bg-panel px-3 py-1 text-steel">{question.theme}</span>
@@ -473,7 +504,8 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
 
 function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameView; playerId: string | null }) {
   const mine = game.results.find((r) => r.player_id === playerId)
-  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta]))
+  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r)]))
+  const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
 
   let headline = null
   // A curiosidade vem logo depois do veredito, antes do ranking, para caber na tela do celular.
@@ -498,6 +530,29 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
   return (
     <div className="flex flex-col gap-3">
       {headline}
+      {highlights.length > 0 && (
+        <ul className="flex flex-col gap-1.5">
+          {highlights.map(({ result, bonus }, index) => {
+            const player = room.players.find((p) => p.id === result.player_id)
+            return (
+              <li
+                key={`${result.player_id}-${bonus.kind}-${bonus.count}`}
+                className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${BONUS_STYLE[bonus.kind]} ${
+                  result.player_id === playerId ? 'ring-1 ring-brand/60' : ''
+                }`}
+                style={{ animationDelay: `${0.4 + index * 0.12}s` }}
+              >
+                {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+                <BonusIcon kind={bonus.kind} className="size-5 shrink-0" />
+                <span className="min-w-0 flex-1 truncate">
+                  {result.player_id === playerId ? 'Você' : player?.nickname}: {bonusLabel(bonus)}
+                </span>
+                <span className="font-display text-lg">{formatDelta(bonus.delta)}</span>
+              </li>
+            )
+          })}
+        </ul>
+      )}
       {game.fact && (
         <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
           <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
@@ -514,6 +569,46 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
         picks={Object.fromEntries(game.results.map((r) => [r.player_id, r]))}
       />
     </div>
+  )
+}
+
+const BONUS_STYLE: Record<Bonus['kind'], string> = {
+  perfect_easy: 'bg-brand/15 text-brand',
+  streak: 'bg-orange-500/15 text-orange-200',
+  wrong_streak: 'bg-sky-400/10 text-sky-200',
+}
+
+function bonusLabel(bonus: Bonus) {
+  if (bonus.kind === 'perfect_easy') return 'gabaritou as fáceis!'
+  const again = bonus.repeat ? ' de novo' : ''
+  if (bonus.kind === 'streak') return `${bonus.count} acertos seguidos${again}!`
+  return `${bonus.count} erros seguidos${again}!`
+}
+
+function bonusTotal(result: RoundResult) {
+  return result.bonuses.reduce((sum, bonus) => sum + bonus.delta, 0)
+}
+
+function BonusIcon({ kind, className }: { kind: Bonus['kind']; className?: string }) {
+  if (kind === 'perfect_easy') return <StarIcon className={className} />
+  if (kind === 'streak') return <FlameIcon className={className} />
+  return <SnowflakeIcon className={className} />
+}
+
+/** Sequência atual no cabeçalho: foguinho a partir de 2 acertos seguidos, gelo a partir de 2 erros. */
+function StreakChip({ streak }: { streak: number }) {
+  if (Math.abs(streak) < 2) return null
+  const hot = streak > 0
+  return (
+    <span
+      className={`round-chip flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-bold ${
+        hot ? 'bg-orange-500/20 text-orange-300' : 'bg-sky-400/15 text-sky-200'
+      }`}
+      title={hot ? `${streak} acertos seguidos` : `${-streak} erros seguidos`}
+    >
+      {hot ? <FlameIcon className="size-3.5" /> : <SnowflakeIcon className="size-3.5" />}
+      {Math.abs(streak)}
+    </span>
   )
 }
 

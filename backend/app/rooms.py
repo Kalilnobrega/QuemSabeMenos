@@ -43,6 +43,7 @@ class Player:
     token: str = field(default_factory=lambda: secrets.token_urlsafe(16))
     score: int = STARTING_IQ
     answer_ms: int = 0
+    streak: int = 0
     # Muda a cada desconexão, para um timer antigo não expulsar quem já voltou.
     disconnect_seq: int = 0
 
@@ -58,6 +59,7 @@ class Player:
             connected=self.connected,
             score=self.score,
             answer_ms=self.answer_ms,
+            streak=self.streak,
         )
 
 
@@ -207,6 +209,7 @@ class RoomManager:
         for player in room.players:
             player.score = STARTING_IQ
             player.answer_ms = 0
+            player.streak = 0
         room.game = Game(questions=questions, answer_seconds=ANSWER_SECONDS, point_scale=point_scale(room.rounds))
         room.game.start_round(time.monotonic() if now is None else now)
         room.status = "playing"
@@ -233,6 +236,7 @@ class RoomManager:
         for player in room.players:
             player.score = STARTING_IQ
             player.answer_ms = 0
+            player.streak = 0
         return room
 
     def _host_room(self, sid: str, action: str) -> Room:

@@ -1,5 +1,35 @@
 {
   "$defs": {
+    "Bonus": {
+      "description": "Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências\nde erros (negativo). Uma sequência repetida na mesma partida vale a metade.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "perfect_easy",
+            "streak",
+            "wrong_streak"
+          ],
+          "type": "string"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "delta": {
+          "type": "integer"
+        },
+        "repeat": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "count",
+        "delta",
+        "repeat"
+      ],
+      "title": "Bonus",
+      "type": "object"
+    },
     "CreateRoomRequest": {
       "properties": {
         "nickname": {
@@ -267,6 +297,9 @@
         },
         "answer_ms": {
           "type": "integer"
+        },
+        "streak": {
+          "type": "integer"
         }
       },
       "required": [
@@ -275,7 +308,8 @@
         "avatar",
         "connected",
         "score",
-        "answer_ms"
+        "answer_ms",
+        "streak"
       ],
       "title": "PlayerView",
       "type": "object"
@@ -443,13 +477,20 @@
         },
         "delta": {
           "type": "integer"
+        },
+        "bonuses": {
+          "items": {
+            "$ref": "#/$defs/Bonus"
+          },
+          "type": "array"
         }
       },
       "required": [
         "player_id",
         "option",
         "correct",
-        "delta"
+        "delta",
+        "bonuses"
       ],
       "title": "RoundResult",
       "type": "object"

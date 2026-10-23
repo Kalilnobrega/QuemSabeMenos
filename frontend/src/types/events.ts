@@ -9,6 +9,19 @@ export interface Events {
   [k: string]: unknown;
 }
 /**
+ * Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
+ * de erros (negativo). Uma sequência repetida na mesma partida vale a metade.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "Bonus".
+ */
+export interface Bonus {
+  kind: "perfect_easy" | "streak" | "wrong_streak";
+  count: number;
+  delta: number;
+  repeat: boolean;
+}
+/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "CreateRoomRequest".
  */
@@ -81,6 +94,7 @@ export interface RoundResult {
   option: number | null;
   correct: boolean;
   delta: number;
+  bonuses: Bonus[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -172,6 +186,7 @@ export interface PlayerView {
   connected: boolean;
   score: number;
   answer_ms: number;
+  streak: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema

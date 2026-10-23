@@ -26,6 +26,7 @@ class P:
     id: str
     score: int = 0
     answer_ms: int = 0
+    streak: int = 0
 
 
 def question(qid: str, difficulty: str = "easy", answer: int = 0) -> Question:
@@ -132,6 +133,63 @@ def test_round_flow_and_scoring():
     assert view.correct_option == 2
     assert view.fact == "Dois é o único primo par."
     assert not game.has_next_round
+
+
+def play(game: Game, players: list[P], picks: dict[str, int | None]) -> dict[str, list[tuple[str, int, int]]]:
+    """Joga a próxima rodada inteira; picks: alternativa de cada jogador (None = não respondeu).
+    Devolve os bônus de cada um como (tipo, contagem, pontos)."""
+    game.round += 1
+    game.answers = {}
+    game.open_answers(now=0)
+    for pid, option in picks.items():
+        if option is not None:
+            game.answer(pid, option, now=1)
+    game.close_round(players, now=20)
+    return {r.player_id: [(b.kind, b.count, b.delta) for b in r.bonuses] for r in game.results}
+
+
+def test_perfect_easy_bonus_comes_on_the_last_easy_question():
+    game = Game(questions=[question(f"e{i}") for i in range(3)] + [question("m", "medium")], answer_seconds=10)
+    ana, bia = P("ana"), P("bia")
+    assert play(game, [ana, bia], {"ana": 0, "bia": 1}) == {"ana": [], "bia": []}
+    assert play(game, [ana, bia], {"ana": 0, "bia": 0}) == {"ana": [], "bia": []}
+    assert play(game, [ana, bia], {"ana": 0, "bia": 0}) == {"ana": [("perfect_easy", 3, 3)], "bia": []}
+    assert ana.score == 3
+
+
+def test_right_streaks_count_medium_and_hard_and_repeats_pay_half():
+    qs = [question(f"m{i}", "medium") for i in range(4)] + [question(f"h{i}", "hard") for i in range(4)]
+    game = Game(questions=qs, answer_seconds=10)
+    ana = P("ana")
+    got = [play(game, [ana], {"ana": 0})["ana"] for _ in range(3)]
+    assert got == [[], [], [("streak", 3, 5)]] and ana.streak == 3
+    assert play(game, [ana], {"ana": 1})["ana"] == [] and ana.streak == -1  # errou: zera
+    got = [play(game, [ana], {"ana": 0})["ana"] for _ in range(3)]
+    assert got == [[], [], [("streak", 3, 3)]]  # repetida: metade de 5, arredondada para cima
+    assert ana.streak == 3
+
+
+def test_wrong_streaks_take_iq_and_no_answer_counts_as_wrong():
+    game = Game(questions=[question(f"e{i}") for i in range(6)], answer_seconds=10, point_scale=2)
+    bia = P("bia")
+    got = [play(game, [bia], {"bia": pick})["bia"] for pick in (1, None, 1, 1, 1, 0)]
+    assert got == [[], [], [("wrong_streak", 3, -10)], [], [("wrong_streak", 5, -20)], []]  # escala 2
+    assert bia.streak == 0
+
+
+def test_repeated_wrong_streak_takes_half():
+    game = Game(questions=[question(f"e{i}") for i in range(7)], answer_seconds=10)
+    bia = P("bia")
+    got = [play(game, [bia], {"bia": pick})["bia"] for pick in (1, 1, 1, 0, 1, 1, 1)]
+    assert got[2] == [("wrong_streak", 3, -5)] and got[6] == [("wrong_streak", 3, -3)]
+
+
+def test_final_question_does_not_touch_streaks():
+    final = Question(id="i", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f")
+    game = Game(questions=[question("m", "medium"), final], answer_seconds=10)
+    ana = P("ana")
+    play(game, [ana], {"ana": 0})
+    assert play(game, [ana], {"ana": 1})["ana"] == [] and ana.streak == 1
 
 
 def test_speed_bonus_starts_decaying_after_the_grace_period():

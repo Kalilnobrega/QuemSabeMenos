@@ -61,6 +61,7 @@ class PlayerView(BaseModel):
     connected: bool
     score: int  # QI na partida
     answer_ms: int  # tempo total de resposta; desempata quem tem o mesmo QI
+    streak: int  # > 0: acertos seguidos em médias/difíceis; < 0: erros seguidos
 
 
 class RoomSettings(BaseModel):
@@ -77,11 +78,22 @@ class QuestionView(BaseModel):
     difficulty: Difficulty
 
 
+class Bonus(BaseModel):
+    """Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
+    de erros (negativo). Uma sequência repetida na mesma partida vale a metade."""
+
+    kind: Literal["perfect_easy", "streak", "wrong_streak"]
+    count: int  # quantas fáceis ou o tamanho da sequência
+    delta: int
+    repeat: bool  # já tinha feito essa sequência nesta partida
+
+
 class RoundResult(BaseModel):
     player_id: str
     option: int | None  # None = não respondeu
     correct: bool
-    delta: int
+    delta: int  # pontos da resposta, sem os bônus
+    bonuses: list[Bonus]
 
 
 class GameView(BaseModel):
