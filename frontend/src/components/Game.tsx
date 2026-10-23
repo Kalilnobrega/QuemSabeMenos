@@ -3,7 +3,7 @@ import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import type { Snapshot } from '../lib/useRoom'
-import type { GameView, PlayerView, RoomState } from '../types/events'
+import type { GameView, PlayerView, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -388,7 +388,7 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
     if (showResults) {
       if (index === game.correct_option) return 'reveal-pop btn-correct text-white'
       if (chosen) return 'reveal-shake btn-wrong is-pressed text-white'
-      return 'btn-dark opacity-40'
+      return 'btn-dark [&>span:not(.voters)]:opacity-40'
     }
     if (chosen) return 'btn-dark is-pressed outline-2 outline-brand'
     if (!canAnswer) return 'btn-dark opacity-50'
@@ -445,10 +445,11 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
             onClick={() => pick(index)}
             disabled={!canAnswer}
             style={{ animationDelay: `${0.12 + index * 0.06}s` }}
-            className={`round-option btn-3d btn-sm flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
+            className={`round-option btn-3d btn-sm relative flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
           >
             <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
             <span className="min-w-0 [overflow-wrap:anywhere]">{option}</span>
+            {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
           </button>
         ))}
       </div>
@@ -506,8 +507,53 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
           <p className="mt-1 leading-relaxed">{game.fact}</p>
         </div>
       )}
-      <Ranking players={room.players} playerId={playerId} deltas={deltas} />
+      <Ranking
+        players={room.players}
+        playerId={playerId}
+        deltas={deltas}
+        picks={Object.fromEntries(game.results.map((r) => [r.player_id, r]))}
+      />
     </div>
+  )
+}
+
+const MAX_VOTERS = 4
+
+/** Avatares de quem marcou a alternativa, empilhados no canto e entrando depois da revelação. */
+function Voters({ players }: { players: PlayerView[] }) {
+  if (players.length === 0) return null
+  const shown = players.slice(0, players.length > MAX_VOTERS ? MAX_VOTERS - 1 : MAX_VOTERS)
+  const hidden = players.length - shown.length
+  return (
+    <span className="voters absolute -bottom-3 right-1.5 flex" title={players.map((p) => p.nickname).join(', ')}>
+      {shown.map((player, index) => (
+        <img
+          key={player.id}
+          src={AVATAR_URLS[player.avatar]}
+          alt={player.nickname}
+          className="avatar-pop -ml-2.5 size-7 rounded-full border-2 border-ink first:ml-0"
+          style={{ animationDelay: `${0.5 + index * 0.08}s` }}
+        />
+      ))}
+      {hidden > 0 && (
+        <span
+          className="avatar-pop -ml-2.5 flex size-7 items-center justify-center rounded-full border-2 border-ink bg-chalk text-xs font-bold text-ink"
+          style={{ animationDelay: `${0.5 + shown.length * 0.08}s` }}
+        >
+          +{hidden}
+        </span>
+      )}
+    </span>
+  )
+}
+
+/** Letra que o jogador marcou: verde se acertou, vermelha se errou, traço se não respondeu. */
+function PickBadge({ result }: { result: RoundResult }) {
+  const tone = result.option === null ? 'bg-[#232b3f] text-steel' : result.correct ? 'bg-emerald-600 text-white' : 'bg-red-500 text-white'
+  return (
+    <span className={`flex size-7 shrink-0 items-center justify-center rounded-lg font-display text-base ${tone}`}>
+      {result.option === null ? '—' : LETTERS[result.option]}
+    </span>
   )
 }
 
@@ -515,9 +561,10 @@ interface RankingProps {
   players: PlayerView[]
   playerId: string | null
   deltas?: Record<string, number>
+  picks?: Record<string, RoundResult>
 }
 
-function Ranking({ players, playerId, deltas }: RankingProps) {
+function Ranking({ players, playerId, deltas, picks }: RankingProps) {
   const sorted = [...players].sort(byRanking)
   const listRef = useRef<HTMLOListElement>(null)
 
@@ -557,7 +604,9 @@ function Ranking({ players, playerId, deltas }: RankingProps) {
         >
           <span className="w-5 text-center font-display text-lg text-steel">{index + 1}</span>
           <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
-          <span className="flex-1 truncate font-semibold">{player.nickname}</span>
+          <span className="min-w-0 truncate font-semibold">{player.nickname}</span>
+          {picks?.[player.id] && <PickBadge result={picks[player.id]} />}
+          <span className="flex-1" />
           {deltas && player.id in deltas && (
             <span className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : deltas[player.id] < 0 ? 'text-red-300' : 'text-steel'}`}>
               {formatDelta(deltas[player.id])}
