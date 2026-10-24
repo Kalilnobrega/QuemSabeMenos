@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import type { ErrorAck, JoinedAck, OkAck, RoomState } from '../types/events'
+import type { ErrorAck, JoinedAck, OkAck, RoomState, UpdateSettingsRequest } from '../types/events'
 import { socket } from './socket'
 import { loadSession, saveProfile, saveSession, type Profile } from './storage'
 
@@ -100,8 +100,7 @@ export function useRoom() {
   const start = useCallback(() => request('start_game'), [])
   const playAgain = useCallback(() => request('play_again'), [])
   const answer = useCallback((option: number) => request('submit_answer', { option }), [])
-  const setRounds = useCallback((rounds: number) => request('update_settings', { rounds }), [])
-  const setThemes = useCallback((themes: string[]) => request('update_settings', { themes }), [])
+  const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, setRounds, setThemes }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, updateSettings }
 }

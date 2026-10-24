@@ -18,6 +18,8 @@ Difficulty = Literal["easy", "medium", "hard", "impossible"]
 
 NICKNAME_MAX_LENGTH = 16
 ROUND_OPTIONS = (10, 15, 20, 25, 30, 35)
+ANSWER_OPTIONS = (10, 15, 20, 25, 30)  # segundos para responder
+GRACE_OPTIONS = (0, 2, 3, 5)  # segundos de QI cheio
 
 
 class Pong(BaseModel):
@@ -48,6 +50,8 @@ class UpdateSettingsRequest(BaseModel):
     """Só os campos enviados mudam."""
 
     rounds: int | None = None
+    answer_seconds: float | None = None
+    speed_grace_seconds: float | None = None
     themes: list[str] | None = None
 
 
@@ -72,6 +76,8 @@ class RoomSettings(BaseModel):
     answer_seconds: float
     speed_grace_seconds: float  # respostas até aqui valem o máximo
     round_options: list[int]
+    answer_options: list[int]
+    grace_options: list[int]
     themes: list[str]  # temas sorteados na partida (pelo menos um)
     theme_options: list[str]
 

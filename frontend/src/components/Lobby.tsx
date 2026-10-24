@@ -3,24 +3,24 @@ import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import type { RoomState } from '../types/events'
+import type { RoomState, UpdateSettingsRequest } from '../types/events'
 
 interface Props {
   room: RoomState
   playerId: string | null
   onLeave: () => void
   onStart: () => Promise<string | null>
-  onSetRounds: (rounds: number) => Promise<string | null>
-  onSetThemes: (themes: string[]) => Promise<string | null>
+  onUpdateSettings: (patch: UpdateSettingsRequest) => Promise<string | null>
 }
 
 function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
 
-export function Lobby({ room, playerId, onLeave, onStart, onSetRounds, onSetThemes }: Props) {
+export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Props) {
   const [notice, setNotice] = useState<string | null>(null)
   const [starting, setStarting] = useState(false)
+  const [settingsOpen, setSettingsOpen] = useState(false)
 
   const isHost = room.host_id === playerId
 
@@ -56,18 +56,14 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds, onSetThem
     setStarting(false)
   }
 
-  const setRounds = async (rounds: number) => setNotice(await onSetRounds(rounds))
-
   const { themes, theme_options: themeOptions } = room.settings
   const allThemes = themes.length === themeOptions.length
-  const toggleTheme = async (theme: string) => {
-    if (themes.includes(theme) && themes.length === 1) {
-      setNotice('Escolha pelo menos um tema.')
-      return
-    }
-    const next = themes.includes(theme) ? themes.filter((t) => t !== theme) : [...themes, theme]
-    setNotice(await onSetThemes(next))
-  }
+  const summary = [
+    `${room.settings.rounds} perguntas`,
+    `${room.settings.answer_seconds} s para responder`,
+    room.settings.speed_grace_seconds ? `${room.settings.speed_grace_seconds} s de QI cheio` : 'sem QI cheio',
+    allThemes ? 'todos os temas' : themes.length <= 3 ? themes.join(', ') : `${themes.length} temas`,
+  ]
 
   return (
     <section className="flex w-full flex-col gap-6">
@@ -107,58 +103,22 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds, onSetThem
       </div>
 
       <div className="flex flex-col gap-3">
-        <h2 className="font-display text-2xl tracking-wide">Perguntas</h2>
-        {isHost ? (
-          <div className="grid grid-cols-6 gap-2">
-            {room.settings.round_options.map((rounds) => (
-              <button
-                key={rounds}
-                onClick={() => setRounds(rounds)}
-                aria-pressed={room.settings.rounds === rounds}
-                className={`btn-3d btn-sm rounded-lg py-2 font-semibold ${
-                  room.settings.rounds === rounds ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
-                }`}
-              >
-                {rounds}
-              </button>
-            ))}
-          </div>
-        ) : (
-          <p className="text-steel">
-            {room.settings.rounds} perguntas, {room.settings.answer_seconds} segundos cada
-          </p>
-        )}
-      </div>
-
-      <div className="flex flex-col gap-3">
-        <h2 className="flex items-baseline justify-between font-display text-2xl tracking-wide">
-          Temas
-          {isHost && !allThemes && (
-            <button onClick={async () => setNotice(await onSetThemes(themeOptions))} className="font-sans text-sm font-semibold text-brand">
-              Marcar todos
-            </button>
-          )}
-        </h2>
-        {isHost ? (
-          <div className="grid grid-cols-2 gap-2">
-            {themeOptions.map((theme) => {
-              const selected = themes.includes(theme)
-              return (
-                <button
-                  key={theme}
-                  onClick={() => toggleTheme(theme)}
-                  aria-pressed={selected}
-                  className={`btn-3d btn-sm rounded-lg px-3 py-2 text-left font-semibold ${
-                    selected ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
-                  }`}
-                >
-                  {theme}
-                </button>
-              )
-            })}
-          </div>
-        ) : (
-          <p className="text-steel">{allThemes ? 'Todos os temas misturados' : themes.join(', ')}</p>
+        <h2 className="font-display text-2xl tracking-wide">Partida</h2>
+        <ul className="flex flex-wrap gap-2">
+          {summary.map((item) => (
+            <li key={item} className="rounded-full bg-panel px-3 py-1 text-sm font-semibold text-steel">
+              {item}
+            </li>
+          ))}
+        </ul>
+        {isHost && (
+          <button
+            onClick={() => setSettingsOpen(true)}
+            className="btn-3d btn-sm btn-dark flex items-center justify-center gap-2 rounded-xl py-3 font-semibold text-chalk"
+          >
+            <SettingsIcon />
+            Configurações
+          </button>
         )}
       </div>
 
@@ -184,6 +144,160 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds, onSetThem
       )}
 
       <LeaveButton onLeave={onLeave} />
+
+      {isHost && settingsOpen && (
+        <SettingsSheet room={room} onUpdate={onUpdateSettings} onClose={() => setSettingsOpen(false)} />
+      )}
     </section>
+  )
+}
+
+/** Três controles deslizantes, cada um com o botão numa altura diferente. */
+function SettingsIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+      <path d="M4 6h16M4 12h16M4 18h16" opacity="0.45" />
+      <circle cx="8" cy="6" r="2.4" fill="currentColor" stroke="none" />
+      <circle cx="16" cy="12" r="2.4" fill="currentColor" stroke="none" />
+      <circle cx="10" cy="18" r="2.4" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+interface SettingsSheetProps {
+  room: RoomState
+  onUpdate: (patch: UpdateSettingsRequest) => Promise<string | null>
+  onClose: () => void
+}
+
+/** Painel do anfitrião com as configurações da partida; cada toque já vale para a sala toda. */
+function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
+  const [notice, setNotice] = useState<string | null>(null)
+  const { settings } = room
+  const { themes, theme_options: themeOptions } = settings
+  const allThemes = themes.length === themeOptions.length
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+
+  const update = async (patch: UpdateSettingsRequest) => setNotice(await onUpdate(patch))
+  const toggleTheme = (theme: string) => {
+    if (themes.includes(theme) && themes.length === 1) {
+      setNotice('Escolha pelo menos um tema.')
+      return
+    }
+    update({ themes: themes.includes(theme) ? themes.filter((t) => t !== theme) : [...themes, theme] })
+  }
+
+  return (
+    <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/70 sm:items-center" onClick={onClose}>
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="settings-title"
+        onClick={(e) => e.stopPropagation()}
+        className="settings-sheet flex max-h-[90dvh] w-full max-w-md flex-col gap-5 overflow-y-auto rounded-t-3xl border border-white/10 bg-ink p-5 pb-8 sm:rounded-3xl"
+      >
+        <h2 id="settings-title" className="text-center font-display text-3xl tracking-wide text-brand">
+          Configurações
+        </h2>
+
+        <OptionRow
+          title="Perguntas"
+          hint="Mais a impossível no final"
+          options={settings.round_options}
+          value={settings.rounds}
+          label={(n) => String(n)}
+          onPick={(rounds) => update({ rounds })}
+        />
+        <OptionRow
+          title="Tempo de resposta"
+          hint="Segundos para escolher a alternativa"
+          options={settings.answer_options}
+          value={settings.answer_seconds}
+          label={(n) => `${n}s`}
+          onPick={(answer_seconds) => update({ answer_seconds })}
+        />
+        <OptionRow
+          title="Tempo de QI cheio"
+          hint="Quem acerta dentro desse tempo leva o máximo de QI"
+          options={settings.grace_options}
+          value={settings.speed_grace_seconds}
+          label={(n) => (n ? `${n}s` : 'Não')}
+          onPick={(speed_grace_seconds) => update({ speed_grace_seconds })}
+        />
+
+        <div className="flex flex-col gap-2">
+          <h3 className="flex items-baseline justify-between font-display text-xl tracking-wide">
+            Temas
+            {!allThemes && (
+              <button onClick={() => update({ themes: themeOptions })} className="font-sans text-sm font-semibold text-brand">
+                Marcar todos
+              </button>
+            )}
+          </h3>
+          <div className="grid grid-cols-2 gap-2">
+            {themeOptions.map((theme) => {
+              const selected = themes.includes(theme)
+              return (
+                <button
+                  key={theme}
+                  onClick={() => toggleTheme(theme)}
+                  aria-pressed={selected}
+                  className={`btn-3d btn-sm rounded-lg px-3 py-2 text-left font-semibold ${
+                    selected ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                  }`}
+                >
+                  {theme}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
+        {notice && <p className="text-center text-steel">{notice}</p>}
+
+        <button onClick={onClose} className="btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink">
+          Pronto
+        </button>
+      </div>
+    </div>
+  )
+}
+
+interface OptionRowProps {
+  title: string
+  hint: string
+  options: number[]
+  value: number
+  label: (option: number) => string
+  onPick: (option: number) => void
+}
+
+function OptionRow({ title, hint, options, value, label, onPick }: OptionRowProps) {
+  return (
+    <div className="flex flex-col gap-2">
+      <div>
+        <h3 className="font-display text-xl tracking-wide">{title}</h3>
+        <p className="text-sm text-steel">{hint}</p>
+      </div>
+      <div className="flex gap-2">
+        {options.map((option) => (
+          <button
+            key={option}
+            onClick={() => onPick(option)}
+            aria-pressed={value === option}
+            className={`btn-3d btn-sm flex-1 rounded-lg py-2 font-semibold ${
+              value === option ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+            }`}
+          >
+            {label(option)}
+          </button>
+        ))}
+      </div>
+    </div>
   )
 }

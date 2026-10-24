@@ -10,7 +10,7 @@ import uuid
 from dataclasses import dataclass, field
 from typing import Literal
 
-from app.events import ROUND_OPTIONS, Avatar, PlayerView, Profile, RoomSettings, RoomState
+from app.events import ANSWER_OPTIONS, GRACE_OPTIONS, ROUND_OPTIONS, Avatar, PlayerView, Profile, RoomSettings, RoomState
 from app.game import (
     SPEED_GRACE_SECONDS,
     STARTING_IQ,
@@ -70,6 +70,8 @@ class Room:
     players: list[Player]  # em ordem de chegada
     status: Literal["lobby", "playing"] = "lobby"
     rounds: int = DEFAULT_ROUNDS
+    answer_seconds: float = ANSWER_SECONDS
+    speed_grace_seconds: float = SPEED_GRACE_SECONDS
     theme_options: list[str] = field(default_factory=list)  # temas do banco
     themes: list[str] = field(default_factory=list)  # escolhidos pelo anfitrião; começam todos
     game: Game | None = None
@@ -92,9 +94,11 @@ class Room:
             min_players=MIN_PLAYERS,
             settings=RoomSettings(
                 rounds=self.rounds,
-                answer_seconds=ANSWER_SECONDS,
-                speed_grace_seconds=SPEED_GRACE_SECONDS,
+                answer_seconds=self.answer_seconds,
+                speed_grace_seconds=self.speed_grace_seconds,
                 round_options=list(ROUND_OPTIONS),
+                answer_options=list(ANSWER_OPTIONS),
+                grace_options=list(GRACE_OPTIONS),
                 themes=self.themes,
                 theme_options=self.theme_options,
             ),
@@ -134,6 +138,7 @@ class RoomManager:
             code=self._new_code(),
             host_id=player.id,
             players=[player],
+            answer_seconds=ANSWER_SECONDS,
             theme_options=self.theme_options,
             themes=list(self.theme_options),
         )
@@ -199,12 +204,23 @@ class RoomManager:
             return None
         return self._remove(room, player)
 
-    def update_settings(self, sid: str, rounds: int | None = None, themes: list[str] | None = None) -> Room:
+    def update_settings(
+        self,
+        sid: str,
+        rounds: int | None = None,
+        themes: list[str] | None = None,
+        answer_seconds: float | None = None,
+        speed_grace_seconds: float | None = None,
+    ) -> Room:
         room = self._host_room(sid, "mudar as configurações")
         if room.status != "lobby":
             raise RoomError("A partida já começou.")
         if rounds is not None and rounds not in ROUND_OPTIONS:
             raise RoomError("Número de perguntas inválido.")
+        if answer_seconds is not None and answer_seconds not in ANSWER_OPTIONS:
+            raise RoomError("Tempo de resposta inválido.")
+        if speed_grace_seconds is not None and speed_grace_seconds not in GRACE_OPTIONS:
+            raise RoomError("Tempo de QI cheio inválido.")
         if themes is not None:
             if not themes:
                 raise RoomError("Escolha pelo menos um tema.")
@@ -212,6 +228,10 @@ class RoomManager:
                 raise RoomError("Tema inválido.")
         if rounds is not None:
             room.rounds = rounds
+        if answer_seconds is not None:
+            room.answer_seconds = answer_seconds
+        if speed_grace_seconds is not None:
+            room.speed_grace_seconds = speed_grace_seconds
         if themes is not None:
             room.themes = [t for t in self.theme_options if t in themes]  # na ordem da lista
         return room
@@ -230,7 +250,12 @@ class RoomManager:
             player.score = STARTING_IQ
             player.answer_ms = 0
             player.streak = 0
-        room.game = Game(questions=questions, answer_seconds=ANSWER_SECONDS, point_scale=point_scale(room.rounds))
+        room.game = Game(
+            questions=questions,
+            answer_seconds=room.answer_seconds,
+            point_scale=point_scale(room.rounds),
+            speed_grace_seconds=room.speed_grace_seconds,
+        )
         room.game.start_round(time.monotonic() if now is None else now)
         room.status = "playing"
         return room

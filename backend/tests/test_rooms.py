@@ -162,3 +162,19 @@ def test_host_picks_themes_and_the_match_uses_only_them(manager):
     manager.start("sid-ana", now=0)
     assert {q.theme for q in room.game.questions} <= {"Games", "Geografia"}
     assert len(room.game.questions) == 36  # 35 + a impossível
+
+
+def test_host_sets_answer_time_and_full_iq_time(manager):
+    room, _ = manager.create("sid-ana", profile("Ana"))
+    manager.join("sid-bia", room.code, profile("Bia"))
+    with pytest.raises(RoomError, match="inválido"):
+        manager.update_settings("sid-ana", answer_seconds=7)
+    with pytest.raises(RoomError, match="inválido"):
+        manager.update_settings("sid-ana", speed_grace_seconds=4)
+
+    manager.update_settings("sid-ana", answer_seconds=20, speed_grace_seconds=5)
+    assert room.view().settings.answer_seconds == 20
+    manager.start("sid-ana", now=0)
+    assert room.game.answer_seconds == 20
+    assert room.game.speed_fraction(5) == 1.0
+    assert room.game.speed_fraction(12.5) == 0.5

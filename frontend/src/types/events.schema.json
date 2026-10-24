@@ -392,6 +392,18 @@
           },
           "type": "array"
         },
+        "answer_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "grace_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
         "themes": {
           "items": {
             "type": "string"
@@ -410,6 +422,8 @@
         "answer_seconds",
         "speed_grace_seconds",
         "round_options",
+        "answer_options",
+        "grace_options",
         "themes",
         "theme_options"
       ],
@@ -528,6 +542,28 @@
           "anyOf": [
             {
               "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "answer_seconds": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "speed_grace_seconds": {
+          "anyOf": [
+            {
+              "type": "number"
             },
             {
               "type": "null"

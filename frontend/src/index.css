@@ -121,6 +121,12 @@ body {
 .reveal-shake {
   animation: reveal-shake 0.5s ease-in-out;
 }
+.settings-sheet {
+  animation: sheet-up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes sheet-up {
+  from { opacity: 0.25; transform: translateY(40px); }
+}
 .podium-card {
   animation: card-enter 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
@@ -172,6 +178,6 @@ body {
   50% { transform: rotate(18deg) scale(1.1); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble { animation: none; }
+  .settings-sheet, .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble { animation: none; }
   .confetti { display: none; }
 }

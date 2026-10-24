@@ -179,6 +179,7 @@ class Game:
     questions: list[Question]
     answer_seconds: float
     point_scale: float = 1.0  # ver point_scale()
+    speed_grace_seconds: float = SPEED_GRACE_SECONDS
     round: int = -1  # índice da pergunta atual; -1 antes de começar
     phase: Literal["starting", "level", "intro", "reading", "answering", "results", "finished"] = "reading"
     phase_started_at: float = 0
@@ -228,10 +229,11 @@ class Game:
 
     def speed_fraction(self, elapsed: float) -> float:
         """1 dentro da carência, caindo até 0 no fim do tempo de resposta."""
-        decay = self.answer_seconds - SPEED_GRACE_SECONDS
-        if elapsed <= SPEED_GRACE_SECONDS or decay <= 0:
+        grace = self.speed_grace_seconds
+        decay = self.answer_seconds - grace
+        if elapsed <= grace or decay <= 0:
             return 1.0
-        return max(0.0, 1 - (elapsed - SPEED_GRACE_SECONDS) / decay)
+        return max(0.0, 1 - (elapsed - grace) / decay)
 
     def close_round(self, players: list[Scorable], now: float) -> None:
         """Calcula os pontos da rodada e aplica no placar dos jogadores."""

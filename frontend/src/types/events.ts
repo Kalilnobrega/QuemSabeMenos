@@ -158,6 +158,8 @@ export interface RoomSettings {
   answer_seconds: number;
   speed_grace_seconds: number;
   round_options: number[];
+  answer_options: number[];
+  grace_options: number[];
   themes: string[];
   theme_options: string[];
 }
@@ -227,5 +229,7 @@ export interface SubmitAnswerRequest {
  */
 export interface UpdateSettingsRequest {
   rounds?: number | null;
+  answer_seconds?: number | null;
+  speed_grace_seconds?: number | null;
   themes?: string[] | null;
 }
