@@ -3,6 +3,7 @@ import { Game } from './components/Game'
 import { Lobby } from './components/Lobby'
 import { Logo } from './components/Logo'
 import { ProfileForm } from './components/ProfileForm'
+import { SoundToggle } from './components/SoundToggle'
 import { loadSession, saveSession } from './lib/storage'
 import { useRoom } from './lib/useRoom'
 
@@ -114,6 +115,7 @@ export default function App() {
       }`}
     >
       {content}
+      <SoundToggle />
       {!connected && (
         <p className="flex items-center gap-2 font-hand font-medium text-base text-steel">
           <span className="relative flex size-2.5" aria-hidden="true">

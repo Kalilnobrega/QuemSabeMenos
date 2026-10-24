@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 're
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
+import { playSound, type SoundId } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { Bonus, GameView, PlayerView, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
@@ -146,6 +147,10 @@ function LevelIntro({ game }: { game: GameView }) {
   const current = LEVEL_TRACK.findIndex((level) => level.key === game.difficulty)
   const trackRef = useRef<HTMLOListElement>(null)
   const markerRef = useRef<HTMLSpanElement>(null)
+  useSoundsOnMount([
+    ['levelHop', 450],
+    ['levelUp', 1050],
+  ])
 
   // O destaque colorido nasce em cima do nível anterior e pula, em arco, até o novo.
   useLayoutEffect(() => {
@@ -208,6 +213,11 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
   const now = useNow(true)
   const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
   const count = Math.ceil(remaining / 1000)
+  useSoundsOnMount([
+    ['start', 0],
+    ['slam', 520], // a batida cai aos 0,15 s do som, quando o título encosta na tela
+  ])
+  useCountdownSounds(count)
 
   return (
     <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
@@ -241,6 +251,8 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
   const now = useNow(true)
   const remaining = Math.max(0, snapshot.receivedAt + game.phase_ends_in_ms - now)
   const count = Math.ceil(remaining / 1000)
+  useSoundsOnMount([['impossible', 0]])
+  useCountdownSounds(count)
 
   return (
     <section className="final-intro relative isolate flex min-h-[72dvh] w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-3xl px-4 text-center">
@@ -308,6 +320,23 @@ function formatScore(score: number) {
 /** Vibra o celular, quando o navegador permite (no iPhone é ignorado). */
 function vibrate(pattern: number | number[]) {
   navigator.vibrate?.(pattern)
+}
+
+/** Agenda sons para quando o componente aparece, em milissegundos; cancela se ele sair antes. */
+function useSoundsOnMount(sounds: [SoundId, number][]) {
+  const planned = useRef(sounds)
+  useEffect(() => {
+    const timers = planned.current.map(([id, ms]) => setTimeout(() => playSound(id), ms))
+    return () => timers.forEach(clearTimeout)
+  }, [])
+}
+
+/** "Tic" no 3 e no 2 e "gong" no 1 das contagens regressivas. */
+function useCountdownSounds(count: number) {
+  useEffect(() => {
+    if (count === 3 || count === 2) playSound('countTick')
+    else if (count === 1) playSound('countGo')
+  }, [count])
 }
 
 const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
@@ -392,19 +421,40 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
   const secondsLeft = Math.ceil(remaining / 1000)
   const urgent = game.phase === 'answering' && remaining < 3000
 
-  // Vibra a cada um dos 3 últimos segundos, só para quem ainda não respondeu.
+  // Tec-tec enquanto o texto aparece, a cada três letras.
   useEffect(() => {
-    if (urgent && !answered && secondsLeft > 0) vibrate(25)
+    if (typing && text.length > 0 && text.length % 3 === 0) playSound('typing')
+  }, [typing, text.length])
+
+  useEffect(() => {
+    if (game.phase === 'answering') playSound('answersOpen')
+  }, [game.phase])
+
+  // Vibra e faz tique-taque a cada um dos 3 últimos segundos, só para quem ainda não respondeu.
+  useEffect(() => {
+    if (!urgent || answered) return
+    if (secondsLeft > 0) {
+      vibrate(25)
+      playSound('urgentTick', secondsLeft)
+    } else {
+      playSound('timeUp')
+    }
   }, [urgent, answered, secondsLeft])
 
-  // Vibração diferente para acerto e erro, quando a resposta é revelada.
+  // Som e vibração diferentes para acerto, erro e falta de resposta, quando a resposta é revelada.
   useEffect(() => {
-    if (!showResults || !myResult || myResult.option === null) return
+    if (!showResults || !myResult) return
+    if (myResult.option === null) {
+      playSound('noAnswer')
+      return
+    }
     vibrate(myResult.correct ? 40 : [70, 50, 70])
+    playSound(myResult.correct ? 'correct' : 'wrong')
   }, [showResults, myResult])
 
   const pick = async (option: number) => {
     if (!canAnswer) return
+    playSound('select')
     setChoice(option)
     const failure = await onAnswer(option)
     if (failure) {
@@ -506,6 +556,16 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
   const mine = game.results.find((r) => r.player_id === playerId)
   const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r)]))
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
+
+  // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
+  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy' }
+  const kinds = [...new Set(highlights.map((h) => h.bonus.kind))]
+  useSoundsOnMount(kinds.map((kind) => [bonusSounds[kind], 400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120]))
+  useEffect(() => {
+    if (mine && mine.delta !== 0) playSound('countUp', mine.delta)
+    // Só quando o resumo aparece.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   let headline = null
   // A curiosidade vem logo depois do veredito, antes do ranking, para caber na tela do celular.
@@ -673,6 +733,7 @@ function Ranking({ players, playerId, deltas, picks }: RankingProps) {
       .map((p) => p.id)
     const items = [...list.children] as HTMLElement[]
     const step = items.length > 1 ? items[1].offsetTop - items[0].offsetTop : 0
+    if (items.some((el, index) => before.indexOf(el.dataset.id!) !== index)) setTimeout(() => playSound('rankingSwish'), 350)
     items.forEach((el, index) => {
       const shift = (before.indexOf(el.dataset.id!) - index) * step
       if (!shift) return
@@ -733,6 +794,7 @@ function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
   const best = sorted[0]
   const worst = sorted.length > 1 ? sorted[sorted.length - 1] : null
   const isHost = room.host_id === playerId
+  useSoundsOnMount(worst ? [['podiumWinner', 300], ['podiumLoser', 1700]] : [['podiumWinner', 300]])
 
   return (
     <section className="flex w-full flex-col gap-6">

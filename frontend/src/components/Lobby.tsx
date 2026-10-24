@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { AVATAR_URLS } from '../lib/avatars'
+import { playSound } from '../lib/sounds'
 import type { RoomState } from '../types/events'
 
 interface Props {
@@ -22,6 +23,15 @@ export function Lobby({ room, playerId, onLeave, onStart, onSetRounds, onSetThem
   const [starting, setStarting] = useState(false)
 
   const isHost = room.host_id === playerId
+
+  // "Pop" quando alguém entra ou sai da sala.
+  const playerCount = useRef(room.players.length)
+  useEffect(() => {
+    const count = room.players.length
+    if (count > playerCount.current) playSound('join')
+    else if (count < playerCount.current) playSound('leave')
+    playerCount.current = count
+  }, [room.players.length])
   const enoughPlayers = room.players.length >= room.min_players
 
   const invite = async () => {
