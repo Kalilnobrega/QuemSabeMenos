@@ -788,39 +788,102 @@ interface PodiumProps {
   onLeave: () => void
 }
 
+// Momentos da revelação do pódio, em ms: 3º, 2º, 1º (com fanfarra e confete), o último e, por fim, o resto da tela.
+const PODIUM_STEPS = [900, 2300, 3800, 6300, 8000]
+
+const PODIUM_PLACES = [
+  { place: 1, label: '1º', step: 'h-24 bg-brand text-ink', order: 'order-2' },
+  { place: 2, label: '2º', step: 'h-16 bg-slate-300 text-ink', order: 'order-1' },
+  { place: 3, label: '3º', step: 'h-10 bg-amber-700 text-chalk', order: 'order-3' },
+]
+
+/** Fim de jogo em etapas: o pódio enche do 3º para o 1º, depois aparece quem sabe menos. */
 function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
   const [notice, setNotice] = useState<string | null>(null)
   const sorted = [...room.players].sort(byRanking)
-  const best = sorted[0]
   const worst = sorted.length > 1 ? sorted[sorted.length - 1] : null
   const isHost = room.host_id === playerId
-  useSoundsOnMount(worst ? [['podiumWinner', 300], ['podiumLoser', 1700]] : [['podiumWinner', 300]])
+  const places = PODIUM_PLACES.filter((p) => p.place <= sorted.length)
+
+  // Quantas etapas já foram reveladas (0 = pódio vazio; PODIUM_STEPS.length = tudo).
+  const [stage, setStage] = useState(() => (reducedMotion() ? PODIUM_STEPS.length : 0))
+  useEffect(() => {
+    if (stage >= PODIUM_STEPS.length) return
+    const timers = PODIUM_STEPS.map((ms, i) => setTimeout(() => setStage((s) => Math.max(s, i + 1)), ms))
+    return () => timers.forEach(clearTimeout)
+    // Agenda uma vez, quando o pódio aparece.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Cada etapa revelada toca o seu som (3º e 2º com o carimbo, 1º com a fanfarra, o último com o trombone).
+  const revealed = (place: number) => stage >= 4 - place
+  useEffect(() => {
+    const sounds: Record<number, SoundId | undefined> = { 1: 'slam', 2: 'slam', 3: 'podiumWinner', 4: worst ? 'podiumLoser' : undefined }
+    const sound = sounds[stage]
+    if (sound && !(stage === 1 && sorted.length < 3)) playSound(sound)
+    // Só quando a etapa muda.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stage])
+
+  const done = stage >= PODIUM_STEPS.length
 
   return (
     <section className="flex w-full flex-col gap-6">
       <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
 
-      <div className="grid grid-cols-2 gap-3">
-        {best && <Highlight title="O menos burro" icon={coroa} player={best} tone="text-brand" winner />}
-        {worst && <Highlight title="Quem sabe menos" icon={haha} player={worst} tone="text-red-300" />}
+      <div className="relative flex items-end justify-center gap-2" aria-label="Pódio">
+        {stage >= 3 && <Confetti />}
+        {places.map(({ place, label, step, order }) => {
+          const player = sorted[place - 1]
+          const shown = revealed(place)
+          return (
+            <div key={place} className={`flex w-1/3 max-w-36 flex-col items-center gap-1.5 ${order}`}>
+              <div className="relative flex min-h-36 w-full flex-col items-center justify-end gap-1 text-center">
+                {shown ? (
+                  <div key="shown" className="podium-card relative flex w-full flex-col items-center gap-1">
+                    <div className="relative">
+                      <img src={AVATAR_URLS[player.avatar]} alt="" className={place === 1 ? 'size-20' : 'size-16'} />
+                      {place === 1 && <img src={coroa} alt="" className="icon-bounce absolute -top-5 -right-5 size-10" />}
+                    </div>
+                    <span className="w-full truncate font-bold">{player.nickname}</span>
+                    <span className="font-display text-xl text-brand">{formatScore(player.score)} QI</span>
+                  </div>
+                ) : (
+                  <span className="font-display text-5xl text-steel/40">?</span>
+                )}
+              </div>
+              <div className={`flex w-full items-start justify-center rounded-t-xl pt-1 font-display text-2xl ${step}`}>{label}</div>
+            </div>
+          )
+        })}
       </div>
 
-      <Ranking players={room.players} playerId={playerId} />
+      {worst && stage >= 4 && <Highlight title="Quem sabe menos" icon={haha} player={worst} tone="text-red-300" />}
 
-      {notice && <p className="text-center text-steel">{notice}</p>}
+      {done ? (
+        <>
+          <Ranking players={room.players} playerId={playerId} />
 
-      {isHost ? (
-        <button
-          onClick={async () => setNotice(await onPlayAgain())}
-          className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
-        >
-          Jogar de novo
-        </button>
+          {notice && <p className="text-center text-steel">{notice}</p>}
+
+          {isHost ? (
+            <button
+              onClick={async () => setNotice(await onPlayAgain())}
+              className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
+            >
+              Jogar de novo
+            </button>
+          ) : (
+            <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião decidir se tem revanche…</p>
+          )}
+
+          <LeaveButton onLeave={onLeave} />
+        </>
       ) : (
-        <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião decidir se tem revanche…</p>
+        <button onClick={() => setStage(PODIUM_STEPS.length)} className="mx-auto font-semibold text-steel underline-offset-4 hover:underline">
+          Pular
+        </button>
       )}
-
-      <LeaveButton onLeave={onLeave} />
     </section>
   )
 }
