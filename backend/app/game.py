@@ -468,6 +468,7 @@ class Game:
                     player_id=player.id,
                     option=answer.option if answer else None,
                     correct=correct,
+                    elapsed_ms=round(elapsed * 1000) if answer else None,
                     delta=delta + shielded,
                     bonuses=self._bonuses(player, difficulty, correct),
                     bet=bet,

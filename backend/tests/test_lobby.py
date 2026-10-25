@@ -1,16 +1,20 @@
 import asyncio
+import json
 
+import httpx
 import pytest
 import socketio
 
 from app import game, main, rooms
+from app.history import MatchHistory
 from app.powerups import INSTANT, TARGETED
 from app.rooms import RoomManager
 
 
 @pytest.fixture(autouse=True)
-def fresh_rooms(monkeypatch):
+def fresh_rooms(monkeypatch, tmp_path):
     monkeypatch.setattr(main, "rooms", RoomManager())
+    monkeypatch.setattr(main, "history", MatchHistory(tmp_path / "matches.db"))
     monkeypatch.setattr(main, "RECONNECT_GRACE_SECONDS", 0.2)
     # Partidas rápidas nos testes.
     # A leitura precisa de folga: o teste vê "reading" e tenta responder antes de liberar.
@@ -200,6 +204,15 @@ async def test_full_game(connect):
         assert all((r["bet"] is not None) == (round_number == 9) for r in results["game"]["results"])
 
     final = await bia.wait_for(lambda s: s["game"]["phase"] == "finished")
+    await asyncio.sleep(0.05)  # o histórico fecha a partida logo depois de transmitir o fim
+
+    db = main.history.db
+    (status, mode, players), = db.execute("SELECT status, mode, players FROM matches").fetchall()
+    assert (status, mode) == ("finished", "classic")
+    assert [p["nickname"] for p in json.loads(players)] == [p["nickname"] for p in sorted(final["players"], key=lambda p: (-p["score"], p["answer_ms"]))]
+    assert db.execute("SELECT count(*), sum(bet_round), sum(skipped) FROM rounds").fetchone() == (11, 1, 0)
+    rows = db.execute("SELECT nickname, option, correct, elapsed_ms FROM answers WHERE round = 1 ORDER BY nickname").fetchall()
+    assert [(n, o) for n, o, _, _ in rows] == [("Ana", 0), ("Bia", 1)] and all(ms is not None for *_, ms in rows)
     assert all(p["answer_ms"] > 0 for p in final["players"])
 
     assert not (await bia.call("play_again"))["ok"]
@@ -218,7 +231,7 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
 
 
 async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connect, monkeypatch):
@@ -253,3 +266,25 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     hidden = await bia.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
     assert hidden["game"]["active"] == ([] if kind == "steal" else state["game"]["active"])
 
+
+async def test_abandoned_match_is_kept_in_history(connect):
+    ana, bia, created, _ = await setup_room(connect)
+    await ana.call("start_game")
+    await ana.wait_for(lambda s: s["game"] and s["game"]["phase"] == "answering")
+    await ana.call("leave_room")
+    await bia.call("leave_room")  # sala vazia: some, e a partida fecha quando a fase acabar
+
+    async def closed():
+        while main.history.db.execute("SELECT status FROM matches").fetchall() != [("abandoned",)]:
+            await asyncio.sleep(0.05)
+
+    await asyncio.wait_for(closed(), timeout=2)
+
+
+async def test_history_download_needs_the_token(server_url, monkeypatch):
+    async with httpx.AsyncClient(base_url=server_url) as client:
+        assert (await client.get("/history.db")).status_code == 404  # sem token configurado: desligada
+        monkeypatch.setattr(main, "HISTORY_TOKEN", "segredo")
+        assert (await client.get("/history.db", headers={"Authorization": "Bearer errado"})).status_code == 404
+        response = await client.get("/history.db", headers={"Authorization": "Bearer segredo"})
+    assert response.status_code == 200 and response.content.startswith(b"SQLite format 3")

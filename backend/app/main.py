@@ -1,10 +1,13 @@
 import asyncio
+import logging
 import os
+import secrets
 import time
 from contextlib import suppress
+from pathlib import Path
 
 import socketio
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import ValidationError
 
@@ -23,14 +26,22 @@ from app.events import (
     UsePowerUpRequest,
 )
 from app import game as rules
+from app.history import MatchHistory
 from app.rooms import Player, Room, RoomError, RoomManager
 
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
 # Tempo que um jogador desconectado continua na sala esperando voltar.
 RECONNECT_GRACE_SECONDS = float(os.getenv("RECONNECT_GRACE_SECONDS", "30"))
+# No Railway, apontar para um Volume (ex.: /data/matches.db): o disco comum some a cada deploy.
+HISTORY_DB = os.getenv("HISTORY_DB", str(Path(__file__).resolve().parents[1] / "matches.db"))
+# Sem token, a rota de download do histórico fica desligada.
+HISTORY_TOKEN = os.getenv("HISTORY_TOKEN", "")
+
+logger = logging.getLogger(__name__)
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins=CORS_ORIGINS)
 rooms = RoomManager()
+history = MatchHistory(HISTORY_DB)
 # Sinaliza que todos os conectados já responderam (ou apostaram, ou pularam a revelação),
 # para encerrar a fase antes do tempo.
 round_done: dict[str, asyncio.Event] = {}
@@ -43,6 +54,22 @@ api.add_middleware(CORSMiddleware, allow_origins=CORS_ORIGINS, allow_methods=["*
 async def health() -> dict[str, str]:
     return {"status": "ok"}
 
+
+@api.get("/history.db")
+async def download_history(authorization: str = Header("")) -> Response:
+    """O banco do histórico inteiro. Pede `Authorization: Bearer <HISTORY_TOKEN>`."""
+    if not HISTORY_TOKEN or not secrets.compare_digest(authorization, f"Bearer {HISTORY_TOKEN}"):
+        raise HTTPException(status_code=404)
+    return Response(history.snapshot(), media_type="application/vnd.sqlite3")
+
+
+def record(action, *args):
+    """Grava no histórico sem deixar um erro de disco derrubar a partida."""
+    try:
+        return action(*args)
+    except Exception:
+        logger.exception("Falha ao gravar o histórico da partida")
+        return None
 
 
 def error(message: str) -> dict:
@@ -101,6 +128,7 @@ async def run_game(room: Room) -> None:
     """
     game = room.game
     done = round_done[room.code] = asyncio.Event()
+    match_id = record(history.start, room, time.time())
 
     def alive() -> bool:
         return rooms.rooms.get(room.code) is room and room.game is game
@@ -125,11 +153,13 @@ async def run_game(room: Room) -> None:
                     return
                 game.begin_reading(time.monotonic())
                 await broadcast(room)
+            reading_at = time.time()
             await asyncio.sleep(game.phase_ends_at - time.monotonic())
             if not alive():
                 return
 
             game.open_answers(time.monotonic())
+            answers_at = time.time()
             await broadcast(room)
             # Cada um tem o seu prazo (Tempo extra, Acelerador): espera até o último de quem falta.
             while (close_at := game.answers_close_at(room.connected_ids())) and close_at > time.monotonic():
@@ -143,9 +173,15 @@ async def run_game(room: Room) -> None:
 
             done.clear()
             game.close_round(room.players, time.monotonic())
+            if match_id:
+                record(history.round_closed, match_id, room, reading_at, answers_at, time.time())
             await broadcast(room)
+            skipped = False
             with suppress(TimeoutError):
                 await asyncio.wait_for(done.wait(), game.phase_ends_at - time.monotonic())
+                skipped = True
+            if match_id:
+                record(history.round_ended, match_id, game.round + 1, time.time(), skipped)
             if not alive():
                 return
             if not game.has_next_round:
@@ -156,6 +192,8 @@ async def run_game(room: Room) -> None:
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
+        if match_id:
+            record(history.finish, match_id, room, "finished" if game.phase == "finished" else "abandoned", time.time())
 
 
 @sio.event

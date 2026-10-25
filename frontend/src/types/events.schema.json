@@ -869,6 +869,16 @@
         "correct": {
           "type": "boolean"
         },
+        "elapsed_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
         "delta": {
           "type": "integer"
         },
@@ -950,6 +960,7 @@
         "player_id",
         "option",
         "correct",
+        "elapsed_ms",
         "delta",
         "bonuses",
         "bet",

@@ -5,3 +5,7 @@
 .venv/
 __pycache__/
 .pytest_cache/
+
+# Histórico local das partidas
+backend/matches.db
+backend/.history-token

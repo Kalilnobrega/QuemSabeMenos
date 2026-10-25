@@ -218,6 +218,7 @@ export interface RoundResult {
   player_id: string;
   option: number | null;
   correct: boolean;
+  elapsed_ms: number | null;
   delta: number;
   bonuses: Bonus[];
   bet: number | null;

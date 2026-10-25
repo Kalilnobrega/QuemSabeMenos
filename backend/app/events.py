@@ -154,6 +154,7 @@ class RoundResult(BaseModel):
     player_id: str
     option: int | None  # None = não respondeu
     correct: bool
+    elapsed_ms: int | None  # quanto levou para responder; None = não respondeu
     delta: int  # pontos da resposta, sem os bônus e sem a aposta (0 se o escudo segurou)
     bonuses: list[Bonus]
     bet: int | None  # None fora da rodada da aposta; 0 = não apostou
