@@ -299,6 +299,8 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
   const limit = maxBet(me?.score ?? 0, game)
   const [placed, setPlaced] = useState<number | null>(null)
   const [typed, setTyped] = useState('')
+  /** Atalho escolhido ('pass' ou a porcentagem); a aposta só vai ao confirmar no ✓. */
+  const [shortcut, setShortcut] = useState<'pass' | number | null>(null)
   const [error, setError] = useState<string | null>(null)
   const now = useNow(true)
   const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
@@ -330,8 +332,16 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
     }
   }
 
+  const select = (key: 'pass' | number, amount: number) => {
+    playSound('select')
+    setShortcut(key)
+    setTyped(String(amount))
+    setError(null)
+  }
+
   const typedAmount = typed === '' ? null : Number(typed)
   const typedValid = typedAmount !== null && Number.isInteger(typedAmount) && typedAmount >= 0 && typedAmount <= limit
+  const selectedClass = (key: 'pass' | number, outline: string) => (shortcut === key ? `is-pressed outline-2 ${outline}` : '')
 
   return (
     <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
@@ -361,7 +371,10 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
               Odd {formatOdds(game.bet_odds)}: acertou, ganha {Math.round((game.bet_odds - 1) * 100)}% do apostado; errou, perde tudo que apostou.
             </p>
             <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
-              <button onClick={() => place(0)} className="btn-3d btn-sm btn-dark flex flex-col items-center rounded-xl py-2 font-semibold text-steel">
+              <button
+                onClick={() => select('pass', 0)}
+                className={`btn-3d btn-sm btn-dark flex flex-col items-center rounded-xl py-2 font-semibold text-steel ${selectedClass('pass', 'outline-brand')}`}
+              >
                 Passar
                 <span className="text-xs">0</span>
               </button>
@@ -370,10 +383,10 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
                 return (
                   <button
                     key={percent}
-                    onClick={() => place(amount)}
+                    onClick={() => select(percent, amount)}
                     className={`btn-3d btn-sm flex flex-col items-center rounded-xl py-2 font-display text-lg sm:text-xl ${
                       percent === game.bet_max_percent ? 'btn-brand text-ink' : 'btn-dark text-chalk'
-                    }`}
+                    } ${selectedClass(percent, percent === game.bet_max_percent ? 'outline-chalk' : 'outline-brand')}`}
                   >
                     {percent}%
                     <span className="font-sans text-xs font-semibold opacity-80">{amount}</span>
@@ -391,15 +404,20 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
             >
               <input
                 value={typed}
-                onChange={(e) => setTyped(e.target.value.replace(/\D/g, '').slice(0, 5))}
+                onChange={(e) => {
+                  setShortcut(null)
+                  setTyped(e.target.value.replace(/\D/g, '').slice(0, 5))
+                }}
                 inputMode="numeric"
                 placeholder={`Outro valor (0 a ${limit})`}
                 aria-label="Valor da aposta"
                 className="min-w-0 flex-1 rounded-xl bg-panel px-4 py-3 text-lg placeholder:text-steel focus:outline-2 focus:outline-brand"
               />
-              <button type="submit" disabled={!typedValid} className="btn-3d btn-sm btn-brand rounded-xl px-4 font-semibold text-ink disabled:opacity-50">
-                Apostar
-              </button>
+              {typedValid && (
+                <button type="submit" aria-label={`Confirmar aposta de ${typedAmount}`} className="btn-3d btn-sm btn-brand rounded-xl px-5 font-display text-2xl text-ink">
+                  ✓
+                </button>
+              )}
             </form>
           </>
         )}
