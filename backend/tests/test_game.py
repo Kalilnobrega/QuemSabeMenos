@@ -391,14 +391,14 @@ def test_powerups_are_armed_on_the_reveal_and_count_on_the_next_question():
     assert game.view(now=0, viewer="ana").armed.target == "bia"
     assert game.view(now=0, viewer="bia").armed is None
 
-    reveal(game, [ana, bia], {"ana": 0, "bia": 1})  # bia erra a fácil: -15, ana leva os 15
+    reveal(game, [ana, bia], {"ana": 0, "bia": 1})  # bia erra a fácil: -15, e ana leva 10 dela
     by_id = {r.player_id: r for r in game.results}
-    assert (by_id["ana"].stolen, ana.score) == (15, 67)  # + 2 de gabaritar as fáceis
-    assert (by_id["bia"].delta, bia.score) == (-15, 35)
+    assert (by_id["ana"].stolen, ana.score) == (10, 62)  # + 2 de gabaritar as fáceis
+    assert (by_id["bia"].delta, by_id["bia"].robbed, bia.score) == (-15, 10, 25)
     assert not game.can_arm  # acabou a partida
 
 
-def test_steal_takes_half_of_a_right_answer_from_the_target():
+def test_steal_takes_ten_plus_half_of_a_right_answer_from_the_target():
     game = Game(powers=True, questions=[question("m0", "medium"), question("m1", "medium")], answer_seconds=10)
     ana, bia = P("ana", 50), P("bia", 50)
     game.powerups = {"ana": ["steal"], "bia": []}
@@ -409,12 +409,12 @@ def test_steal_takes_half_of_a_right_answer_from_the_target():
     assert [u.kind for u in game.view(now=0, viewer="ana").active] == ["steal"]
     game.open_answers(now=0)
     game.answer("ana", 1, now=1)
-    game.answer("bia", 0, now=1)  # bia acerta na carência: +11, ana leva 5
+    game.answer("bia", 0, now=1)  # bia acerta na carência: +11, ana leva 10 + 5
     game.close_round([ana, bia], now=20)
     assert [u.kind for u in game.view(now=20, viewer="bia").active] == ["steal"]
     by_id = {r.player_id: r for r in game.results}
-    assert (by_id["bia"].delta, by_id["bia"].robbed, bia.score) == (11, 5, 46)
-    assert (by_id["ana"].stolen, ana.score) == (5, 35)  # errou: -10, +5 roubados
+    assert (by_id["bia"].delta, by_id["bia"].robbed, bia.score) == (11, 15, 36)
+    assert (by_id["ana"].stolen, ana.score) == (15, 45)  # errou: -10, +15 roubados
 
 
 def test_shield_holds_the_penalty_and_blocks_a_steal():
@@ -587,14 +587,14 @@ def test_peek_shows_what_the_others_picked():
         game.powerups["ana"].append("fifty_fifty")
         game.use_now("ana", "fifty_fifty")
 
-def test_extra_time_gives_more_time_for_three_common_questions():
+def test_extra_time_gives_more_time_and_full_iq_for_three_common_questions():
     game, ana, bia = armed_game(6)
     arm(game, "ana", "extra_time")
     for left in (3, 2, 1):
         game.start_round(now=0)
         game.open_answers(now=0)
         assert game.answer_window("ana") == 15 and game.answer_window("bia") == 10
-        assert game.grace_window("ana") == 5
+        assert game.grace_window("ana") == 15  # QI cheio o tempo todo
         assert [(x.kind, x.rounds_left) for x in game.view(now=0, viewer="ana").lasting] == [("extra_time", left)]
         assert game.phase_ends_at == 15
         with pytest.raises(GameError, match="Agora não"):
@@ -649,7 +649,7 @@ def test_reversed_steal_robs_the_thief():
     arm(game, "bia", "reverse")
     reveal(game, [ana, bia], {"ana": 1, "bia": 0})  # ana erra: -10, e quem rouba agora é a bia
     by_id = {r.player_id: r for r in game.results}
-    assert (by_id["bia"].stolen, by_id["ana"].delta) == (10, -10)
+    assert (by_id["bia"].stolen, by_id["ana"].delta, by_id["ana"].robbed) == (10, -10, 10)
 
 
 def test_shield_lasts_two_questions_and_breaks_if_unused():
@@ -671,20 +671,45 @@ def test_shield_lasts_two_questions_and_breaks_if_unused():
     assert game.results[0].expired == ["shield"] and game.lasting["ana"] == {}
 
 
-def test_second_chance_lasts_until_the_first_mistake():
-    game, ana, bia = armed_game(4)
+def test_second_chance_counts_on_both_questions():
+    game, ana, bia = armed_game(5)
     arm(game, "ana", "second_chance")
-    reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # acertou de primeira: continua
-    game.start_round(now=0)
-    game.open_answers(now=0)
-    game.answer("ana", 1, now=1)
-    assert game.view(now=1, viewer="ana").first_wrong == 1  # ainda valia
-    game.answer("ana", 0, now=2)
-    game.close_round([ana, bia], now=20)
+    for _ in range(2):
+        game.start_round(now=0)
+        game.open_answers(now=0)
+        game.answer("ana", 1, now=1)
+        assert game.view(now=1, viewer="ana").first_wrong == 1  # vale nas duas
+        game.answer("ana", 0, now=2)
+        game.close_round([ana, bia], now=20)
     assert game.results[0].expired == [] and "second_chance" not in game.lasting["ana"]
 
+    arm(game, "ana", "second_chance")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # duas sem errar: quebrou
+    assert game.results[0].expired == ["second_chance"]
 
-def test_reverse_lasts_two_questions_and_is_spent_when_it_bounces():
+
+def test_reverse_is_secret_and_lasts_three_questions_or_two_for_the_leader():
+    game, ana, bia = armed_game(8)
+    reveal(game, [ana, bia], {"ana": 0, "bia": 1})  # ana em 1º
+    arm(game, "ana", "reverse")
+    arm(game, "bia", "reverse")
+    game.start_round(now=0)
+    assert [u.kind for u in game.view(now=0, viewer="ana").active] == ["reverse"]
+    assert [u.by for u in game.view(now=0, viewer="bia").active] == ["bia"]  # só vê o próprio
+    assert [(x.kind, x.rounds_left, x.total) for x in game.view(now=0, viewer="ana").lasting] == [("reverse", 2, 2)]
+    assert [(x.kind, x.rounds_left, x.total) for x in game.view(now=0, viewer="bia").lasting] == [("reverse", 3, 3)]
+    game.open_answers(now=0)
+    game.close_round([ana, bia], now=20)
+    assert [u.by for u in game.view(now=20, viewer="ana").active] == ["ana"]  # nem na revelação
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["ana"].expired == ["reverse"] and by_id["bia"].expired == []
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    assert game.results[1].expired == ["reverse"]
+
+
+def test_reverse_lasts_until_it_bounces():
     game, ana, bia = armed_game(5)
     arm(game, "bia", "reverse")
     reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # ninguém atacou: continua

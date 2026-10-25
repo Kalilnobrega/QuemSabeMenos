@@ -240,6 +240,9 @@ class Game:
     first_wrong: dict[str, Answer] = field(default_factory=dict)  # Segunda chance: 1ª tentativa errada
     # Habilidades que duram mais de uma pergunta: perguntas comuns restantes de cada uma, por jogador.
     lasting: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
+    lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)  # com quantas começou
+    used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
+    leaders: set[str] = field(default_factory=set)  # em 1º depois da última rodada (o empate conta)
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
     ready: set[str] = field(default_factory=set)  # quem quer pular a revelação
@@ -330,7 +333,12 @@ class Game:
         self.armed = {}
         for use in armed:
             if use.kind in powerups.LASTING:
-                self.lasting.setdefault(use.by, {})[use.kind] = powerups.LASTING[use.kind]
+                rounds = powerups.LASTING[use.kind]
+                if use.kind == "reverse" and use.by in self.leaders:
+                    rounds = powerups.REVERSE_LEADER_ROUNDS
+                self.lasting.setdefault(use.by, {})[use.kind] = rounds
+                self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
+                self.used_lasting.get(use.by, set()).discard(use.kind)
         reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
         self.active = powerups.reflect(armed, reversers)
         for use in self.active:
@@ -383,10 +391,9 @@ class Game:
     def grace_window(self, player_id: str) -> float:
         if self._affects("accelerator", player_id) or self._affects("silence", player_id):
             return 0.0
-        grace = self.speed_grace_seconds
         if player_id in self._extra_time_ids():
-            grace += powerups.EXTRA_GRACE_SECONDS
-        return grace
+            return self.answer_window(player_id)  # QI cheio o tempo todo
+        return self.speed_grace_seconds
 
     def deadline(self, player_id: str) -> float:
         return self.phase_started_at + self.answer_window(player_id)
@@ -406,7 +413,7 @@ class Game:
         answer = Answer(option, min(now, self.deadline(player_id)))
         if option != self.question.answer and not tried and self._affects("second_chance", player_id):
             self.first_wrong[player_id] = answer
-            self.lasting[player_id].pop("second_chance")
+            self.used_lasting.setdefault(player_id, set()).add("second_chance")
             return
         self.answers[player_id] = answer
 
@@ -487,16 +494,16 @@ class Game:
             thief, target = by_id.get(use.by), by_id.get(use.target or "")
             if use.kind != "steal" or not thief or not target:
                 continue
-            if target.delta < 0:
-                thief.stolen += int(-target.delta * powerups.STEAL_LOSS_SHARE)
-            elif target.delta > 0:
-                share = int(target.delta * powerups.STEAL_GAIN_SHARE)
+            if not target.shielded:
+                share = powerups.STEAL_FIXED + max(0, int(target.delta * powerups.STEAL_GAIN_SHARE))
                 thief.stolen += share
                 target.robbed += share
         for player, result in zip(players, self.results):
             player.score += (
                 result.delta + sum(b.delta for b in result.bonuses) + result.bet_delta + result.stolen - result.robbed
             )
+        top = max((p.score for p in players), default=0)
+        self.leaders = {p.id for p in players if p.score == top}
         if self._counts_for_powers():
             self._wear_lasting()
         if self.powers and difficulty != FINAL_DIFFICULTY:
@@ -515,7 +522,7 @@ class Game:
                 kinds[kind] -= 1
                 if kinds[kind] <= 0:
                     del kinds[kind]
-                    if kind in powerups.BREAKABLE and result:
+                    if kind in powerups.BREAKABLE and kind not in self.used_lasting.get(pid, set()) and result:
                         result.expired.append(kind)
 
     def _powerup_gains(self, players: list[Scorable]) -> None:
@@ -619,7 +626,7 @@ class Game:
 
     def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
         return [
-            LastingPowerUp(kind=kind, rounds_left=left, total=powerups.LASTING[kind])
+            LastingPowerUp(kind=kind, rounds_left=left, total=self.lasting_total[viewer][kind])
             for kind, left in self.lasting.get(viewer, {}).items()
             if self._affects(kind, viewer)
         ]
@@ -633,10 +640,12 @@ class Game:
         return counts
 
     def _visible_uses(self, viewer: str | None, show_answer: bool) -> list[PowerUpUse]:
-        """O roubo é surpresa: durante a pergunta só quem roubou sabe; o alvo descobre na revelação."""
+        """O roubo é surpresa: durante a pergunta só quem roubou sabe; o alvo descobre na revelação.
+        O Reverso armado só aparece para o dono; os outros só descobrem quando ele devolve."""
+        uses = [use for use in self.active if use.kind != "reverse" or use.by == viewer]
         if show_answer:
-            return self.active
-        return [use for use in self.active if use.kind != "steal" or use.by == viewer]
+            return uses
+        return [use for use in uses if use.kind != "steal" or use.by == viewer]
 
     def _enter(self, phase: Phase, now: float, seconds: float):
         self.phase = phase

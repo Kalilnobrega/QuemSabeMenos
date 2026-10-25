@@ -262,9 +262,9 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     # Todos pularam: a próxima pergunta abre bem antes dos 5 s, já com a habilidade valendo.
     state = await ana.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
     assert state["game"]["active"] == [{"kind": kind, "by": created["player_id"], "target": target, "reflected_by": None}]
-    # O roubo é surpresa: o alvo só fica sabendo na revelação.
+    # O roubo é surpresa (o alvo só fica sabendo na revelação) e o Reverso armado é segredo.
     hidden = await bia.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
-    assert hidden["game"]["active"] == ([] if kind == "steal" else state["game"]["active"])
+    assert hidden["game"]["active"] == ([] if kind in ("steal", "reverse") else state["game"]["active"])
 
 
 async def test_abandoned_match_is_kept_in_history(connect):

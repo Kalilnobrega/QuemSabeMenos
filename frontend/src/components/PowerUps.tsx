@@ -323,9 +323,9 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
         shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira QI.',
         double: 'Dobro: esta vale o dobro, para o bem e para o mal.',
         peek: 'Espiar: veja nas alternativas o que a galera escolheu.',
-        extra_time: 'Tempo extra: +5s e mais QI cheio nesta e nas próximas 2.',
-        second_chance: 'Segunda chance por até 2 perguntas: no primeiro erro, tenta de novo.',
-        reverse: 'Seu Reverso está pronto por até 2 perguntas: o primeiro poder em você volta.',
+        extra_time: 'Tempo extra: +5s e QI cheio o tempo todo nesta e nas próximas 2.',
+        second_chance: 'Segunda chance nesta e na próxima: errou, tenta de novo.',
+        reverse: 'Seu Reverso está pronto (só você sabe): o primeiro poder em você volta.',
       }
       return by === 'você' ? self[use.kind]! : `${by} usou ${info.name}.`
     }
