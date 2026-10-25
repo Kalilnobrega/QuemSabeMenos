@@ -363,9 +363,9 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
       <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Aposta!</h1>
       <div className="intro-step flex flex-col items-center gap-2" style={{ animationDelay: '0.5s' }}>
         <span className="text-sm font-semibold text-steel">Tema da pergunta</span>
-        <span className="flex gap-2">
-          <span className="rounded-full bg-panel px-4 py-1.5 text-lg font-bold text-chalk">{game.theme}</span>
-          <span className={`rounded-full px-4 py-1.5 text-lg font-semibold ${DIFFICULTY[game.difficulty].className}`}>
+        <span className="flex flex-wrap justify-center gap-2">
+          <span className="rounded-full bg-panel px-4 py-1.5 text-lg font-bold whitespace-nowrap text-chalk">{game.theme}</span>
+          <span className={`rounded-full px-4 py-1.5 text-lg font-semibold whitespace-nowrap ${DIFFICULTY[game.difficulty].className}`}>
             {DIFFICULTY[game.difficulty].label}
           </span>
         </span>
@@ -675,13 +675,16 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   return (
     <section className="flex w-full flex-col gap-5">
       <header className="flex items-center justify-between gap-2 text-sm">
-        <span className="flex items-center gap-2 font-semibold text-steel">
+        <span className="flex shrink-0 items-center gap-2 font-semibold whitespace-nowrap text-steel">
           {game.round > room.settings.rounds ? 'Pergunta extra' : `Pergunta ${game.round}/${room.settings.rounds}`}
           <StreakChip streak={room.players.find((p) => p.id === playerId)?.streak ?? 0} />
         </span>
-        <span className="flex gap-2">
-          <span className="rounded-full bg-panel px-3 py-1 text-steel">{question.theme}</span>
-          <span className={`round-chip rounded-full px-3 py-1 font-semibold ${difficulty.className}`}>{difficulty.label}</span>
+        {/* Uma linha só: tema longo corta com reticências, o selo de dificuldade nunca encolhe. */}
+        <span className="flex min-w-0 items-center gap-1.5">
+          <span className="min-w-0 truncate rounded-full bg-panel px-2.5 py-1 text-steel" title={question.theme}>
+            {question.theme}
+          </span>
+          <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${difficulty.className}`}>{difficulty.label}</span>
         </span>
       </header>
 
