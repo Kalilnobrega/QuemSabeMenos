@@ -100,7 +100,8 @@ export function useRoom() {
   const start = useCallback(() => request('start_game'), [])
   const playAgain = useCallback(() => request('play_again'), [])
   const answer = useCallback((option: number) => request('submit_answer', { option }), [])
+  const bet = useCallback((amount: number) => request('submit_bet', { amount }), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, updateSettings }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, updateSettings }
 }

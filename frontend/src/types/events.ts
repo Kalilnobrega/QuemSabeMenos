@@ -56,7 +56,8 @@ export interface ErrorAck {
 /**
  * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
  * answering → results. Telas de preparação, em que a pergunta não é enviada: starting
- * (antes da 1ª pergunta), level (quando a dificuldade muda) e intro (antes da final).
+ * (antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o
+ * tema à mostra) e intro (antes da final).
  * Depois da última rodada: finished.
  *
  * This interface was referenced by `Events`'s JSON-Schema
@@ -65,12 +66,18 @@ export interface ErrorAck {
 export interface GameView {
   round: number;
   total_rounds: number;
-  phase: "starting" | "level" | "intro" | "reading" | "answering" | "results" | "finished";
+  phase: "starting" | "level" | "intro" | "betting" | "reading" | "answering" | "results" | "finished";
   phase_duration_ms: number;
   phase_ends_in_ms: number;
   difficulty: "easy" | "medium" | "hard" | "impossible";
+  theme: string;
   question: QuestionView | null;
   answered: string[];
+  bet_round: number | null;
+  bet_percents: number[];
+  bet_max_percent: number;
+  bet_odds: number;
+  bets_placed: string[];
   correct_option: number | null;
   fact: string | null;
   results: RoundResult[];
@@ -95,6 +102,8 @@ export interface RoundResult {
   correct: boolean;
   delta: number;
   bonuses: Bonus[];
+  bet: number | null;
+  bet_delta: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -220,6 +229,13 @@ export interface RejoinRoomRequest {
  */
 export interface SubmitAnswerRequest {
   option: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "SubmitBetRequest".
+ */
+export interface SubmitBetRequest {
+  amount: number;
 }
 /**
  * Só os campos enviados mudam.

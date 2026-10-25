@@ -17,6 +17,7 @@ def fresh_rooms(monkeypatch):
     monkeypatch.setattr(game, "START_SECONDS", 0.05)
     monkeypatch.setattr(game, "LEVEL_SECONDS", 0.05)
     monkeypatch.setattr(game, "INTRO_SECONDS", 0.05)
+    monkeypatch.setattr(game, "BET_SECONDS", 1.0)
     monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 0.05)
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 0.05)
     monkeypatch.setattr(rooms, "ANSWER_SECONDS", 1.0)
@@ -163,6 +164,18 @@ async def test_full_game(connect):
             and s["game"]["round"] == round_number
             and s["game"]["phase"] not in ("starting", "level", "intro")
         )
+        if state["game"]["phase"] == "betting":
+            assert state["game"]["question"] is None and state["game"]["theme"]
+            assert round_number == state["game"]["bet_round"] == 9  # 10 rodadas: 4/3/3, a 2ª difícil
+            bia_score = next(p["score"] for p in state["players"] if p["id"] == joined["player_id"])
+            assert not (await ana.call("submit_bet", {"amount": 10_000}))["ok"]
+            assert (await ana.call("submit_bet", {"amount": 0}))["ok"]
+            if bia_score > 0:  # sem QI a Bia não aposta, e a aposta da Ana já fecha a fase
+                assert (await bia.call("submit_bet", {"amount": bia_score // 2}))["ok"]
+            # Todos apostaram: a pergunta aparece antes do tempo (1 s).
+            state = await ana.wait_for(
+                lambda s: s["game"]["phase"] in ("reading", "answering"), timeout=0.8
+            )
         assert state["game"]["question"]["text"]
         assert state["game"]["correct_option"] is None
 
@@ -181,6 +194,7 @@ async def test_full_game(connect):
         assert results["game"]["correct_option"] is not None
         assert results["game"]["fact"]
         assert {r["player_id"] for r in results["game"]["results"]} == {created["player_id"], joined["player_id"]}
+        assert all((r["bet"] is not None) == (round_number == 9) for r in results["game"]["results"])
 
     final = await bia.wait_for(lambda s: s["game"]["phase"] == "finished")
     assert all(p["answer_ms"] > 0 for p in final["players"])
@@ -201,4 +215,4 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -20, "bonuses": []}  # partida de 10: vale o dobro
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0}  # partida de 10: vale o dobro

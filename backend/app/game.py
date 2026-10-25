@@ -48,10 +48,20 @@ MAX_READING_SECONDS = 6.0
 START_SECONDS = 5.0
 LEVEL_SECONDS = 3.0  # apresentação rápida quando a dificuldade muda
 INTRO_SECONDS = 5.0
-PREPARATION_PHASES = ("starting", "level", "intro")
+BET_SECONDS = 12.0
+PREPARATION_PHASES = ("starting", "level", "intro", "betting")
 RESULTS_SECONDS_PER_CHAR = 0.055
 MIN_RESULTS_SECONDS = 7.0
 MAX_RESULTS_SECONDS = 12.0
+# Aposta: uma vez por partida, antes da pergunta do meio das difíceis. Cada um aposta até
+# metade do QI que tem (atalhos em porcentagem ou um valor digitado); acertou, ganha o valor;
+# errou ou não respondeu, perde. Quem não aposta a tempo fica com 0.
+BET_PERCENTS = (25, 50, 75, 100)
+BET_MAX_PERCENT = 100  # com odd 1,5 dá para apostar tudo
+BET_ODDS = 1.5  # odd decimal: apostou 100 e acertou, recebe 150 (lucro 50); errou, perde os 100
+
+
+Phase = Literal["starting", "level", "intro", "betting", "reading", "answering", "results", "finished"]
 
 
 class GameError(Exception):
@@ -135,6 +145,20 @@ def results_seconds(fact: str) -> float:
     return min(MAX_RESULTS_SECONDS, max(MIN_RESULTS_SECONDS, 4 + len(fact) * RESULTS_SECONDS_PER_CHAR))
 
 
+def max_bet(score: int) -> int:
+    return max(0, score * BET_MAX_PERCENT // 100)
+
+
+def bet_win(amount: int) -> int:
+    return int(amount * (BET_ODDS - 1))
+
+
+def bet_round(questions: list[Question]) -> int | None:
+    """Índice da pergunta com aposta: a do meio das difíceis (6 difíceis → a 4ª)."""
+    hard = [i for i, q in enumerate(questions) if q.difficulty == "hard"]
+    return hard[len(hard) // 2] if hard else None
+
+
 def point_scale(rounds: int) -> float:
     """Partidas curtas valem mais por pergunta e longas valem menos, para o QI final ficar
     na mesma faixa em qualquer tamanho (a tabela vale como está numa partida de 20)."""
@@ -181,12 +205,20 @@ class Game:
     point_scale: float = 1.0  # ver point_scale()
     speed_grace_seconds: float = SPEED_GRACE_SECONDS
     round: int = -1  # índice da pergunta atual; -1 antes de começar
-    phase: Literal["starting", "level", "intro", "reading", "answering", "results", "finished"] = "reading"
+    phase: Phase = "reading"
     phase_started_at: float = 0
     phase_ends_at: float = 0
     answers: dict[str, Answer] = field(default_factory=dict)
     results: list[RoundResult] = field(default_factory=list)
     streaks: dict[str, Streak] = field(default_factory=dict)
+    bets: dict[str, int] = field(default_factory=dict)  # só na rodada da aposta
+
+    def __post_init__(self) -> None:
+        self.bet_round = bet_round(self.questions)
+
+    @property
+    def is_bet_round(self) -> bool:
+        return self.round == self.bet_round
 
     @property
     def question(self) -> Question:
@@ -200,12 +232,15 @@ class Game:
         self.round += 1
         self.answers = {}
         self.results = []
+        self.bets = {}
         if self.round == 0:
             self._enter("starting", now, START_SECONDS)
         elif self.question.difficulty == FINAL_DIFFICULTY:
             self._enter("intro", now, INTRO_SECONDS)
         elif self.question.difficulty != self.questions[self.round - 1].difficulty:
             self._enter("level", now, LEVEL_SECONDS)
+        elif self.is_bet_round:
+            self._enter("betting", now, BET_SECONDS)
         else:
             self.begin_reading(now)
 
@@ -223,6 +258,19 @@ class Game:
         if not 0 <= option < len(self.question.options):
             raise GameError("Alternativa inválida.")
         self.answers[player_id] = Answer(option, now)
+
+    def bet(self, player: Scorable, amount: int, now: float) -> None:
+        if self.phase != "betting" or now > self.phase_ends_at:
+            raise GameError("Agora não dá para apostar.")
+        if player.id in self.bets:
+            raise GameError("Você já apostou.")
+        if not 0 <= amount <= max_bet(player.score):
+            raise GameError(f"Dá para apostar de 0 a {max_bet(player.score)} de QI.")
+        self.bets[player.id] = amount
+
+    def everyone_bet(self, players: list[Scorable]) -> bool:
+        """Quem não tem QI para apostar não precisa esperar."""
+        return all(p.id in self.bets or max_bet(p.score) == 0 for p in players)
 
     def everyone_answered(self, player_ids: list[str]) -> bool:
         return all(pid in self.answers for pid in player_ids)
@@ -249,7 +297,9 @@ class Game:
                 elapsed = self.answer_seconds - (self.phase_ends_at - answer.at)
                 delta = points(difficulty, correct, self.speed_fraction(elapsed), self.point_scale)
             bonuses = self._bonuses(player, difficulty, correct)
-            player.score += delta + sum(b.delta for b in bonuses)
+            bet = self.bets.get(player.id, 0) if self.is_bet_round else None
+            bet_delta = (bet_win(bet) if correct else -bet) if bet else 0
+            player.score += delta + sum(b.delta for b in bonuses) + bet_delta
             player.answer_ms += round(max(0.0, elapsed) * 1000)
             self.results.append(
                 RoundResult(
@@ -258,6 +308,8 @@ class Game:
                     correct=correct,
                     delta=delta,
                     bonuses=bonuses,
+                    bet=bet,
+                    bet_delta=bet_delta,
                 )
             )
         self._enter("results", now, results_seconds(self.question.fact))
@@ -304,16 +356,22 @@ class Game:
             phase_duration_ms=round((self.phase_ends_at - self.phase_started_at) * 1000),
             phase_ends_in_ms=max(0, round((self.phase_ends_at - now) * 1000)),
             difficulty=q.difficulty,
+            theme=q.theme,
             question=None
             if self.phase in PREPARATION_PHASES
             else QuestionView(text=q.text, options=q.options, theme=q.theme, difficulty=q.difficulty),
             answered=list(self.answers),
+            bet_round=None if self.bet_round is None else self.bet_round + 1,
+            bet_percents=list(BET_PERCENTS),
+            bet_max_percent=BET_MAX_PERCENT,
+            bet_odds=BET_ODDS,
+            bets_placed=list(self.bets),
             correct_option=q.answer if show_answer else None,
             fact=q.fact if show_answer else None,
             results=self.results,
         )
 
-    def _enter(self, phase: Literal["starting", "level", "intro", "reading", "answering", "results", "finished"], now: float, seconds: float):
+    def _enter(self, phase: Phase, now: float, seconds: float):
         self.phase = phase
         self.phase_started_at = now
         self.phase_ends_at = now + seconds

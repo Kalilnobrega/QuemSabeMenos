@@ -17,6 +17,7 @@ from app.events import (
     Pong,
     RejoinRoomRequest,
     SubmitAnswerRequest,
+    SubmitBetRequest,
     UpdateSettingsRequest,
 )
 from app import game as rules
@@ -28,7 +29,7 @@ RECONNECT_GRACE_SECONDS = float(os.getenv("RECONNECT_GRACE_SECONDS", "30"))
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins=CORS_ORIGINS)
 rooms = RoomManager()
-# Sinaliza que todos os conectados já responderam, para encerrar a rodada antes do tempo.
+# Sinaliza que todos os conectados já responderam (ou apostaram), para encerrar a fase antes do tempo.
 round_done: dict[str, asyncio.Event] = {}
 
 api = FastAPI(title="Quem Sabe Menos?")
@@ -56,7 +57,12 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 
 def check_round_done(room: Room) -> None:
     game = room.game
-    if game and game.phase == "answering" and game.everyone_answered(room.connected_ids()):
+    if not game:
+        return
+    connected = [p for p in room.players if p.connected]
+    if (game.phase == "answering" and game.everyone_answered(room.connected_ids())) or (
+        game.phase == "betting" and game.everyone_bet(connected)
+    ):
         if event := round_done.get(room.code):
             event.set()
 
@@ -92,8 +98,18 @@ async def run_game(room: Room) -> None:
     try:
         while alive():
             done.clear()
+            if game.phase == "betting" and game.everyone_bet([p for p in room.players if p.connected]):
+                game.begin_reading(time.monotonic())  # ninguém tem QI para apostar: nem mostra a aposta
             await broadcast(room)
-            if game.phase in rules.PREPARATION_PHASES:
+            if game.phase == "betting":
+                with suppress(TimeoutError):
+                    await asyncio.wait_for(done.wait(), game.phase_ends_at - time.monotonic())
+                done.clear()
+                if not alive():
+                    return
+                game.begin_reading(time.monotonic())
+                await broadcast(room)
+            elif game.phase in rules.PREPARATION_PHASES:
                 await asyncio.sleep(game.phase_ends_at - time.monotonic())
                 if not alive():
                     return
@@ -210,6 +226,20 @@ async def submit_answer(sid: str, data: dict) -> dict:
     try:
         request = SubmitAnswerRequest.model_validate(data)
         room = rooms.answer(sid, request.option, time.monotonic())
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    check_round_done(room)
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def submit_bet(sid: str, data: dict) -> dict:
+    try:
+        request = SubmitBetRequest.model_validate(data)
+        room = rooms.bet(sid, request.amount, time.monotonic())
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:

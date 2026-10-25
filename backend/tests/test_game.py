@@ -8,10 +8,14 @@ from app.game import (
     MAX_RESULTS_SECONDS,
     MIN_RESULTS_SECONDS,
     MIN_READING_SECONDS,
+    BET_SECONDS,
     Game,
     GameError,
     Question,
+    bet_round,
+    bet_win,
     load_bank,
+    max_bet,
     pick_questions,
     point_scale,
     points,
@@ -267,3 +271,70 @@ def test_view_hides_answer_until_results():
     assert view.fact is None
     assert view.round == 1 and view.total_rounds == 1
     assert view.phase_ends_in_ms == round((reading_seconds("Quanto é 1+1?") - 0.5) * 1000)
+
+
+def test_bet_comes_before_the_middle_hard_question():
+    qs = [question("e"), question("m", "medium")] + [question(f"h{i}", "hard") for i in range(6)]
+    assert bet_round(qs) == 2 + 3  # 6 difíceis: a 4ª
+    assert bet_round([question("h", "hard")]) == 0
+    assert bet_round([question("e")]) is None
+
+
+def test_bet_is_capped_at_the_whole_iq():
+    assert max_bet(150) == 150 and max_bet(51) == 51
+    assert max_bet(0) == max_bet(-20) == 0
+
+
+def test_bet_pays_odds_of_one_and_a_half():
+    assert bet_win(100) == 50 and bet_win(25) == 12 and bet_win(1) == 0
+
+
+def test_betting_phase_shows_only_the_theme():
+    qs = [question("h0", "hard"), question("h1", "hard")]
+    game = Game(questions=qs, answer_seconds=10)
+    game.round = 0
+    game.start_round(now=0)
+    view = game.view(now=1)
+    assert view.phase == "betting" and view.question is None and view.theme == "Teste"
+    assert game.phase_ends_at == BET_SECONDS
+    assert view.bet_round == 2
+
+
+def test_bets_pay_on_right_answers_and_cost_on_wrong_or_missing_ones():
+    qs = [question("h0", "hard"), question("h1", "hard")]
+    game = Game(questions=qs, answer_seconds=10)
+    ana, bia, caio, dani = P("ana", 100), P("bia", 100), P("caio", 100), P("dani", -5)
+    game.round = 0
+    game.start_round(now=0)
+    with pytest.raises(GameError, match="0 a 100"):
+        game.bet(ana, 101, now=1)
+    game.bet(ana, 50, now=1)
+    with pytest.raises(GameError, match="já apostou"):
+        game.bet(ana, 10, now=1)
+    game.bet(bia, 25, now=1)
+    assert not game.everyone_bet([ana, bia, caio, dani])
+    game.bet(caio, 10, now=2)
+    assert game.everyone_bet([ana, bia, caio, dani])  # dani não tem QI para apostar
+    assert game.view(now=2).bets_placed == ["ana", "bia", "caio"]
+    with pytest.raises(GameError):
+        game.bet(dani, 0, now=BET_SECONDS + 1)  # fora da fase
+
+    game.begin_reading(now=3)
+    game.open_answers(now=4)
+    game.answer("ana", 0, now=5)  # certa, na carência: +22
+    game.answer("bia", 1, now=5)  # errada: -5
+    game.close_round([ana, bia, caio, dani], now=14)
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["ana"].bet, by_id["ana"].bet_delta, ana.score) == (50, 25, 147)
+    assert (by_id["bia"].bet, by_id["bia"].bet_delta, bia.score) == (25, -25, 70)
+    assert (by_id["caio"].bet, by_id["caio"].bet_delta, caio.score) == (10, -10, 80)  # não respondeu
+    assert (by_id["dani"].bet, by_id["dani"].bet_delta) == (0, 0)
+
+
+def test_other_rounds_have_no_bet():
+    game = Game(questions=[question("h0", "hard"), question("h1", "hard")], answer_seconds=10)
+    ana = P("ana", 100)
+    play(game, [ana], {"ana": 0})
+    assert game.results[0].bet is None
+    game.start_round(now=0)  # round 1 = aposta
+    assert game.phase == "betting"

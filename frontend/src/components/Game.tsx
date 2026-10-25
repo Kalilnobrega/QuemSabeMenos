@@ -95,11 +95,12 @@ interface Props {
   snapshot: Snapshot
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
+  onBet: (amount: number) => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
-export function Game({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Props) {
+export function Game({ snapshot, playerId, onAnswer, onBet, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
@@ -109,6 +110,9 @@ export function Game({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Pro
   }
   if (game.phase === 'intro') {
     return <FinalIntro snapshot={snapshot} />
+  }
+  if (game.phase === 'betting') {
+    return <Betting snapshot={snapshot} playerId={playerId} onBet={onBet} />
   }
   if (game.phase === 'finished') {
     return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
@@ -270,6 +274,152 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
           </span>
         )}
       </div>
+    </section>
+  )
+}
+
+/** Quanto o jogador pode apostar: até a porcentagem máxima do QI, arredondada para baixo. */
+function maxBet(score: number, game: GameView) {
+  return Math.max(0, Math.floor((score * game.bet_max_percent) / 100))
+}
+
+function betWin(amount: number, game: GameView) {
+  return Math.floor(amount * game.bet_odds)
+}
+
+function formatOdds(odds: number) {
+  return odds.toLocaleString('pt-BR')
+}
+
+/** Aposta antes da pergunta do meio das difíceis: só o tema aparece, e cada um arrisca até metade do QI. */
+function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: string | null; onBet: (amount: number) => Promise<string | null> }) {
+  const { room, receivedAt } = snapshot
+  const game = room.game!
+  const me = room.players.find((p) => p.id === playerId)
+  const limit = maxBet(me?.score ?? 0, game)
+  const [placed, setPlaced] = useState<number | null>(null)
+  const [typed, setTyped] = useState('')
+  const [error, setError] = useState<string | null>(null)
+  const now = useNow(true)
+  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const secondsLeft = Math.ceil(remaining / 1000)
+  const urgent = remaining < 3000
+  const done = placed !== null || (playerId !== null && game.bets_placed.includes(playerId))
+  const connected = room.players.filter((p) => p.connected)
+  const waitingFor = connected.filter((p) => maxBet(p.score, game) > 0)
+  const betCount = waitingFor.filter((p) => game.bets_placed.includes(p.id)).length
+  useSoundsOnMount([['levelUp', 0]])
+
+  useEffect(() => {
+    if (!urgent || done || limit === 0) return
+    if (secondsLeft > 0) {
+      vibrate(25)
+      playSound('urgentTick', secondsLeft)
+    }
+  }, [urgent, done, limit, secondsLeft])
+
+  const place = async (amount: number) => {
+    if (done) return
+    playSound('select')
+    setPlaced(amount)
+    setError(null)
+    const failure = await onBet(amount)
+    if (failure) {
+      setPlaced(null)
+      setError(failure)
+    }
+  }
+
+  const typedAmount = typed === '' ? null : Number(typed)
+  const typedValid = typedAmount !== null && Number.isInteger(typedAmount) && typedAmount >= 0 && typedAmount <= limit
+
+  return (
+    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
+      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Antes da próxima pergunta</p>
+      <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Aposta!</h1>
+      <div className="intro-step flex flex-col items-center gap-2" style={{ animationDelay: '0.5s' }}>
+        <span className="text-sm font-semibold text-steel">Tema da pergunta</span>
+        <span className="flex gap-2">
+          <span className="rounded-full bg-panel px-4 py-1.5 text-lg font-bold text-chalk">{game.theme}</span>
+          <span className={`rounded-full px-4 py-1.5 text-lg font-semibold ${DIFFICULTY[game.difficulty].className}`}>
+            {DIFFICULTY[game.difficulty].label}
+          </span>
+        </span>
+      </div>
+
+      <div className="intro-step flex w-full flex-col gap-3" style={{ animationDelay: '0.8s' }}>
+        {limit === 0 ? (
+          <p className="font-hand text-lg font-medium text-chalk">Sem QI para apostar. Só torce!</p>
+        ) : done ? (
+          <p className="font-hand text-lg font-medium text-chalk">
+            {placed === 0 ? 'Você passou.' : placed !== null ? `Você apostou ${placed} de QI! Acertou, ganha ${betWin(placed, game)}; errou, perde ${placed}.` : 'Aposta feita!'}
+          </p>
+        ) : (
+          <>
+            <p className="font-hand text-lg font-medium text-chalk">
+              Você tem {formatScore(me?.score ?? 0)} de QI e pode apostar até <span className="text-brand">{limit}</span>.
+              Odd {formatOdds(game.bet_odds)}: acertou, ganha {Math.round((game.bet_odds - 1) * 100)}% do apostado; errou, perde tudo que apostou.
+            </p>
+            <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
+              <button onClick={() => place(0)} className="btn-3d btn-sm btn-dark flex flex-col items-center rounded-xl py-2 font-semibold text-steel">
+                Passar
+                <span className="text-xs">0</span>
+              </button>
+              {game.bet_percents.map((percent) => {
+                const amount = Math.floor(((me?.score ?? 0) * percent) / 100)
+                return (
+                  <button
+                    key={percent}
+                    onClick={() => place(amount)}
+                    className={`btn-3d btn-sm flex flex-col items-center rounded-xl py-2 font-display text-lg sm:text-xl ${
+                      percent === game.bet_max_percent ? 'btn-brand text-ink' : 'btn-dark text-chalk'
+                    }`}
+                  >
+                    {percent}%
+                    <span className="font-sans text-xs font-semibold opacity-80">{amount}</span>
+                    <span className="font-sans text-xs font-semibold opacity-80">+{betWin(amount, game)}</span>
+                  </button>
+                )
+              })}
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault()
+                if (typedValid) void place(typedAmount)
+              }}
+              className="flex gap-2"
+            >
+              <input
+                value={typed}
+                onChange={(e) => setTyped(e.target.value.replace(/\D/g, '').slice(0, 5))}
+                inputMode="numeric"
+                placeholder={`Outro valor (0 a ${limit})`}
+                aria-label="Valor da aposta"
+                className="min-w-0 flex-1 rounded-xl bg-panel px-4 py-3 text-lg placeholder:text-steel focus:outline-2 focus:outline-brand"
+              />
+              <button type="submit" disabled={!typedValid} className="btn-3d btn-sm btn-brand rounded-xl px-4 font-semibold text-ink disabled:opacity-50">
+                Apostar
+              </button>
+            </form>
+          </>
+        )}
+        {error && <p className="text-red-300">{error}</p>}
+      </div>
+
+      <div className="flex w-full items-center gap-3">
+        <div className="h-2 flex-1 overflow-hidden rounded-full bg-panel">
+          <div
+            className={`h-full rounded-full ${urgent ? 'bg-red-400' : 'bg-amber-200'}`}
+            style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }}
+          />
+        </div>
+        <span key={urgent ? secondsLeft : 'calm'} className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-red-400' : ''}`}>
+          {secondsLeft}
+        </span>
+      </div>
+      <p className="font-hand text-lg font-medium text-steel">
+        {betCount}/{waitingFor.length} já apostaram
+      </p>
     </section>
   )
 }
@@ -554,7 +704,8 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
 
 function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameView; playerId: string | null }) {
   const mine = game.results.find((r) => r.player_id === playerId)
-  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r)]))
+  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta]))
+  const bets = game.results.filter((r) => r.bet)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
@@ -590,6 +741,29 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
   return (
     <div className="flex flex-col gap-3">
       {headline}
+      {bets.length > 0 && (
+        <ul className="flex flex-col gap-1.5" aria-label="Apostas">
+          {bets.map((result, index) => {
+            const player = room.players.find((p) => p.id === result.player_id)
+            return (
+              <li
+                key={result.player_id}
+                className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${
+                  result.bet_delta > 0 ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'
+                } ${result.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
+                style={{ animationDelay: `${0.4 + index * 0.12}s` }}
+              >
+                {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+                <span className="min-w-0 flex-1 truncate">
+                  {result.player_id === playerId ? 'Você' : player?.nickname} apostou {result.bet}
+                  {result.bet === maxBet(player ? player.score - deltas[result.player_id] : 0, game) && ' (tudo que podia!)'}
+                </span>
+                <span className="font-display text-lg">{formatDelta(result.bet_delta)}</span>
+              </li>
+            )
+          })}
+        </ul>
+      )}
       {highlights.length > 0 && (
         <ul className="flex flex-col gap-1.5">
           {highlights.map(({ result, bonus }, index) => {

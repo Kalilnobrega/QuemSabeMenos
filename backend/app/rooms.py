@@ -271,6 +271,17 @@ class RoomManager:
             raise RoomError(str(e)) from e
         return room
 
+    def bet(self, sid: str, amount: int, now: float) -> Room:
+        found = self.session(sid)
+        if not found or not found[0].game:
+            raise RoomError("Não tem partida rolando.")
+        room, player = found
+        try:
+            room.game.bet(player, amount, now)
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
+
     def play_again(self, sid: str) -> Room:
         """Volta a sala para o lobby depois do fim da partida."""
         room = self._host_room(sid, "recomeçar")

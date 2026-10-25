@@ -47,7 +47,7 @@ function setUrl(path: string) {
 }
 
 export default function App() {
-  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, updateSettings } = useRoom()
+  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, updateSettings } = useRoom()
   const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
 
@@ -63,7 +63,7 @@ export default function App() {
 
   let content
   if (snapshot && room?.game) {
-    content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onPlayAgain={playAgain} onLeave={leaveRoom} />
+    content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (room) {
     content = <Lobby room={room} playerId={playerId} onLeave={leaveRoom} onStart={start} onUpdateSettings={updateSettings} />
   } else if (rejoining) {

@@ -59,6 +59,10 @@ class SubmitAnswerRequest(BaseModel):
     option: int
 
 
+class SubmitBetRequest(BaseModel):
+    amount: int = Field(ge=0)
+
+
 # --- Servidor → cliente -------------------------------------------------------
 
 class PlayerView(BaseModel):
@@ -103,24 +107,33 @@ class RoundResult(BaseModel):
     player_id: str
     option: int | None  # None = não respondeu
     correct: bool
-    delta: int  # pontos da resposta, sem os bônus
+    delta: int  # pontos da resposta, sem os bônus e sem a aposta
     bonuses: list[Bonus]
+    bet: int | None  # None fora da rodada da aposta; 0 = não apostou
+    bet_delta: int  # +bet × (bet_odds - 1) (para baixo) se acertou, -bet se errou ou não respondeu
 
 
 class GameView(BaseModel):
     """Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
     answering → results. Telas de preparação, em que a pergunta não é enviada: starting
-    (antes da 1ª pergunta), level (quando a dificuldade muda) e intro (antes da final).
+    (antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o
+    tema à mostra) e intro (antes da final).
     Depois da última rodada: finished."""
 
     round: int  # começa em 1
     total_rounds: int
-    phase: Literal["starting", "level", "intro", "reading", "answering", "results", "finished"]
+    phase: Literal["starting", "level", "intro", "betting", "reading", "answering", "results", "finished"]
     phase_duration_ms: int
     phase_ends_in_ms: int  # relativo ao envio, para não depender do relógio do celular
     difficulty: Difficulty  # da pergunta da rodada (enviada também nas telas de preparação)
+    theme: str  # idem
     question: QuestionView | None  # None em starting, level e intro
     answered: list[str]  # ids de quem já respondeu nesta rodada
+    bet_round: int | None  # rodada com aposta (começa em 1)
+    bet_percents: list[int]  # atalhos de aposta, em % do QI
+    bet_max_percent: int  # aposta máxima, em % do QI (arredondada para baixo)
+    bet_odds: float  # quanto a aposta paga se acertar (odd decimal: 1.5 = apostou 100, lucra 50)
+    bets_placed: list[str]  # ids de quem já apostou; os valores só aparecem em results
     correct_option: int | None  # só aparece em results
     fact: str | None  # curiosidade sobre a resposta, também só em results
     results: list[RoundResult]
@@ -169,6 +182,7 @@ EVENT_MODELS: list[type[BaseModel]] = [
     RejoinRoomRequest,
     UpdateSettingsRequest,
     SubmitAnswerRequest,
+    SubmitBetRequest,
     RoomState,
     JoinedAck,
     OkAck,

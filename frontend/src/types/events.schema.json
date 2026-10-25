@@ -85,7 +85,7 @@
       "type": "object"
     },
     "GameView": {
-      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Telas de preparação, em que a pergunta não é enviada: starting\n(antes da 1ª pergunta), level (quando a dificuldade muda) e intro (antes da final).\nDepois da última rodada: finished.",
+      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Telas de preparação, em que a pergunta não é enviada: starting\n(antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o\ntema à mostra) e intro (antes da final).\nDepois da última rodada: finished.",
       "properties": {
         "round": {
           "type": "integer"
@@ -98,6 +98,7 @@
             "starting",
             "level",
             "intro",
+            "betting",
             "reading",
             "answering",
             "results",
@@ -120,6 +121,9 @@
           ],
           "type": "string"
         },
+        "theme": {
+          "type": "string"
+        },
         "question": {
           "anyOf": [
             {
@@ -131,6 +135,34 @@
           ]
         },
         "answered": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "bet_round": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bet_percents": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "bet_max_percent": {
+          "type": "integer"
+        },
+        "bet_odds": {
+          "type": "number"
+        },
+        "bets_placed": {
           "items": {
             "type": "string"
           },
@@ -170,8 +202,14 @@
         "phase_duration_ms",
         "phase_ends_in_ms",
         "difficulty",
+        "theme",
         "question",
         "answered",
+        "bet_round",
+        "bet_percents",
+        "bet_max_percent",
+        "bet_odds",
+        "bets_placed",
         "correct_option",
         "fact",
         "results"
@@ -511,6 +549,19 @@
             "$ref": "#/$defs/Bonus"
           },
           "type": "array"
+        },
+        "bet": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bet_delta": {
+          "type": "integer"
         }
       },
       "required": [
@@ -518,7 +569,9 @@
         "option",
         "correct",
         "delta",
-        "bonuses"
+        "bonuses",
+        "bet",
+        "bet_delta"
       ],
       "title": "RoundResult",
       "type": "object"
@@ -533,6 +586,19 @@
         "option"
       ],
       "title": "SubmitAnswerRequest",
+      "type": "object"
+    },
+    "SubmitBetRequest": {
+      "properties": {
+        "amount": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "amount"
+      ],
+      "title": "SubmitBetRequest",
       "type": "object"
     },
     "UpdateSettingsRequest": {
