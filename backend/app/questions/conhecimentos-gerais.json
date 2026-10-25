@@ -4112,6 +4112,1374 @@
       ],
       "answer": 0,
       "fact": "Conta a história que a ideia nasceu depois que um empresário esqueceu a carteira num jantar em Nova York."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o médico que cuida dos dentes?",
+      "options": [
+        "Dentista",
+        "Dermatologista",
+        "Ortopedista",
+        "Pediatra"
+      ],
+      "answer": 0,
+      "fact": "O dentista especialista em aparelhos é o ortodontista."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que profissional cuida da saúde dos animais?",
+      "options": [
+        "Veterinário",
+        "Zootecnista",
+        "Biólogo",
+        "Agrônomo"
+      ],
+      "answer": 0,
+      "fact": "A primeira escola de veterinária do mundo foi criada em Lyon, na França, em 1761."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o médico que cuida dos ossos e das articulações?",
+      "options": [
+        "Ortopedista",
+        "Dermatologista",
+        "Pediatra",
+        "Urologista"
+      ],
+      "answer": 0,
+      "fact": "Muitos ortopedistas também tratam lesões de esporte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o profissional que apaga incêndios?",
+      "options": [
+        "Bombeiro",
+        "Policial",
+        "Guarda-vidas",
+        "Eletricista"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, os bombeiros também fazem resgates em enchentes e acidentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o profissional que conserta canos e torneiras?",
+      "options": [
+        "Encanador",
+        "Eletricista",
+        "Pedreiro",
+        "Marceneiro"
+      ],
+      "answer": 0,
+      "fact": "Em Portugal, o encanador é chamado de canalizador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o profissional que trabalha com madeira, fazendo móveis?",
+      "options": [
+        "Marceneiro",
+        "Serralheiro",
+        "Pedreiro",
+        "Vidraceiro"
+      ],
+      "answer": 0,
+      "fact": "O serralheiro trabalha com metal, fazendo portões e grades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o profissional que pilota aviões?",
+      "options": [
+        "Piloto",
+        "Comissário",
+        "Controlador",
+        "Mecânico"
+      ],
+      "answer": 0,
+      "fact": "O copiloto é chamado de primeiro oficial na aviação comercial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama quem trabalha entregando cartas?",
+      "options": [
+        "Carteiro",
+        "Mensageiro",
+        "Motoboy",
+        "Porteiro"
+      ],
+      "answer": 0,
+      "fact": "O Dia do Carteiro é comemorado em 25 de janeiro no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o contrário de \"alto\"?",
+      "options": [
+        "Baixo",
+        "Grande",
+        "Largo",
+        "Comprido"
+      ],
+      "answer": 0,
+      "fact": "Palavras de sentido oposto se chamam antônimos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o contrário de \"quente\"?",
+      "options": [
+        "Frio",
+        "Morno",
+        "Seco",
+        "Úmido"
+      ],
+      "answer": 0,
+      "fact": "\"Morno\" fica no meio do caminho entre quente e frio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o plural de \"flor\"?",
+      "options": [
+        "Flores",
+        "Flors",
+        "Floris",
+        "Flor"
+      ],
+      "answer": 0,
+      "fact": "Palavras terminadas em \"r\" costumam ganhar \"-es\" no plural."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o feminino de \"cavalo\"?",
+      "options": [
+        "Égua",
+        "Cavala",
+        "Potra",
+        "Mula"
+      ],
+      "answer": 0,
+      "fact": "O filhote do cavalo é o potro, e o da égua, a potranca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o feminino de \"galo\"?",
+      "options": [
+        "Galinha",
+        "Gala",
+        "Franga",
+        "Pata"
+      ],
+      "answer": 0,
+      "fact": "A franga é a galinha jovem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o feminino de \"rei\"?",
+      "options": [
+        "Rainha",
+        "Reina",
+        "Reiza",
+        "Princesa"
+      ],
+      "answer": 0,
+      "fact": "Rainha também é o nome da peça mais poderosa do xadrez em muitos países."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o feminino de \"ator\"?",
+      "options": [
+        "Atriz",
+        "Atora",
+        "Atoriz",
+        "Atrice"
+      ],
+      "answer": 0,
+      "fact": "\"Imperador\" e \"ator\" formam o feminino do mesmo jeito: imperatriz e atriz."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o filhote do porco?",
+      "options": [
+        "Leitão",
+        "Bezerro",
+        "Cabrito",
+        "Cordeiro"
+      ],
+      "answer": 0,
+      "fact": "Leitão à pururuca é um prato tradicional da cozinha mineira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o filhote da cabra?",
+      "options": [
+        "Cabrito",
+        "Cordeiro",
+        "Bezerro",
+        "Leitão"
+      ],
+      "answer": 0,
+      "fact": "As cabras estão entre os primeiros animais domesticados, há cerca de 10 mil anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o filhote da galinha?",
+      "options": [
+        "Pintinho",
+        "Franguinho",
+        "Patinho",
+        "Filhotinho"
+      ],
+      "answer": 0,
+      "fact": "Um pintinho sai do ovo depois de cerca de 21 dias de choco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal faz \"miau\"?",
+      "options": [
+        "Gato",
+        "Cachorro",
+        "Rato",
+        "Coelho"
+      ],
+      "answer": 0,
+      "fact": "Os gatos adultos quase só miam para se comunicar com humanos, e não entre si."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal é o símbolo do Natal que puxa o trenó do Papai Noel?",
+      "options": [
+        "Rena",
+        "Cavalo",
+        "Alce",
+        "Cachorro"
+      ],
+      "answer": 0,
+      "fact": "Na natureza, renas machos e fêmeas têm chifres."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que festa se comemora em 31 de dezembro?",
+      "options": [
+        "Réveillon",
+        "Natal",
+        "Carnaval",
+        "Páscoa"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, é tradição vestir branco e pular sete ondas na virada do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a cor do semáforo que manda parar?",
+      "options": [
+        "Vermelho",
+        "Amarelo",
+        "Verde",
+        "Azul"
+      ],
+      "answer": 0,
+      "fact": "O primeiro semáforo elétrico foi instalado nos Estados Unidos em 1914."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o ponto cardeal oposto ao leste?",
+      "options": [
+        "Oeste",
+        "Norte",
+        "Sul",
+        "Nordeste"
+      ],
+      "answer": 0,
+      "fact": "Os pontos colaterais, como nordeste e sudoeste, ficam entre os pontos cardeais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem a bandeira da Itália?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "As cores da bandeira italiana são verde, branco e vermelho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que objeto se usa para ver as horas no pulso?",
+      "options": [
+        "Relógio",
+        "Pulseira",
+        "Bússola",
+        "Termômetro"
+      ],
+      "answer": 0,
+      "fact": "Os relógios de pulso se popularizaram entre os homens depois da Primeira Guerra Mundial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que objeto se usa para cortar papel?",
+      "options": [
+        "Tesoura",
+        "Régua",
+        "Grampeador",
+        "Apontador"
+      ],
+      "answer": 0,
+      "fact": "As tesouras existem há mais de 3 mil anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que objeto se usa para se proteger da chuva?",
+      "options": [
+        "Guarda-chuva",
+        "Leque",
+        "Chapéu de palha",
+        "Óculos"
+      ],
+      "answer": 0,
+      "fact": "O guarda-chuva com armação dobrável se popularizou na Europa no século XVIII."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um meio de transporte aquático?",
+      "options": [
+        "Barco",
+        "Trem",
+        "Ônibus",
+        "Bicicleta"
+      ],
+      "answer": 0,
+      "fact": "Os navios são responsáveis pelo transporte de cerca de 80% das mercadorias do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número se coloca na frente de um telefone para ligar para outro país a partir do Brasil?",
+      "options": [
+        "00",
+        "0800",
+        "190",
+        "55"
+      ],
+      "answer": 0,
+      "fact": "Depois do 00, vem o código da operadora e o código do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que instrumento se usa para ver coisas distantes com os dois olhos?",
+      "options": [
+        "Binóculo",
+        "Microscópio",
+        "Lupa",
+        "Periscópio"
+      ],
+      "answer": 0,
+      "fact": "O periscópio é usado em submarinos para ver acima da água."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas palavras é uma proparoxítona?",
+      "options": [
+        "Lâmpada",
+        "Café",
+        "Sapato",
+        "Jacaré"
+      ],
+      "answer": 0,
+      "fact": "Toda proparoxítona é acentuada em português."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas palavras é oxítona?",
+      "options": [
+        "Sofá",
+        "Mesa",
+        "Árvore",
+        "Lápis"
+      ],
+      "answer": 0,
+      "fact": "Oxítonas têm a sílaba mais forte no final da palavra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o sinônimo de \"célere\"?",
+      "options": [
+        "Rápido",
+        "Famoso",
+        "Lento",
+        "Alegre"
+      ],
+      "answer": 0,
+      "fact": "\"Celeridade\" quer dizer rapidez."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o sinônimo de \"exíguo\"?",
+      "options": [
+        "Escasso",
+        "Enorme",
+        "Estranho",
+        "Exato"
+      ],
+      "answer": 0,
+      "fact": "Um prazo exíguo é um prazo muito curto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o antônimo de \"generoso\"?",
+      "options": [
+        "Avarento",
+        "Gentil",
+        "Modesto",
+        "Humilde"
+      ],
+      "answer": 0,
+      "fact": "Avarento é quem tem apego exagerado ao dinheiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o antônimo de \"ascender\"?",
+      "options": [
+        "Descender",
+        "Acender",
+        "Apagar",
+        "Subir"
+      ],
+      "answer": 0,
+      "fact": "\"Acender\", com c, é botar fogo ou ligar; \"ascender\", com sc, é subir."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de bois?",
+      "options": [
+        "Boiada",
+        "Matilha",
+        "Vara",
+        "Récua"
+      ],
+      "answer": 0,
+      "fact": "A boiada também é chamada de manada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de músicos?",
+      "options": [
+        "Banda",
+        "Elenco",
+        "Plateia",
+        "Tropa"
+      ],
+      "answer": 0,
+      "fact": "Um grupo grande de músicos de orquestra também é chamado de filarmônica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de aviões?",
+      "options": [
+        "Esquadrilha",
+        "Frota",
+        "Flotilha",
+        "Comboio"
+      ],
+      "answer": 0,
+      "fact": "Frota é o coletivo de navios ou de veículos de uma empresa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de livros?",
+      "options": [
+        "Biblioteca",
+        "Antologia",
+        "Arquivo",
+        "Acervo"
+      ],
+      "answer": 0,
+      "fact": "Antologia é uma coleção de textos escolhidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de pássaros?",
+      "options": [
+        "Bando",
+        "Revoada",
+        "Enxame",
+        "Cardume"
+      ],
+      "answer": 0,
+      "fact": "Revoada é um bando de aves voando juntas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o plural de \"cão\"?",
+      "options": [
+        "Cães",
+        "Cãos",
+        "Cões",
+        "Cãoes"
+      ],
+      "answer": 0,
+      "fact": "Palavras terminadas em \"ão\" podem ter plurais em \"ões\", \"ães\" ou \"ãos\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o plural de \"mão\"?",
+      "options": [
+        "Mãos",
+        "Mães",
+        "Mões",
+        "Mãoses"
+      ],
+      "answer": 0,
+      "fact": "\"Mão\" é uma das palavras terminadas em \"ão\" cujo plural é \"ãos\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o plural de \"pão de queijo\"?",
+      "options": [
+        "Pães de queijo",
+        "Pão de queijos",
+        "Pães de queijos",
+        "Pãos de queijo"
+      ],
+      "answer": 0,
+      "fact": "Em palavras ligadas por preposição, só a primeira vai para o plural."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o diminutivo de \"pé\"?",
+      "options": [
+        "Pezinho",
+        "Pezito",
+        "Peíto",
+        "Pequeno pé"
+      ],
+      "answer": 0,
+      "fact": "O diminutivo pode indicar tamanho pequeno ou carinho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sinal de pontuação introduz uma enumeração ou explicação?",
+      "options": [
+        "Dois-pontos",
+        "Ponto e vírgula",
+        "Reticências",
+        "Vírgula"
+      ],
+      "answer": 0,
+      "fact": "Dois-pontos também são usados antes de uma fala."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamam os três pontinhos que indicam uma pausa ou algo não dito?",
+      "options": [
+        "Reticências",
+        "Dois-pontos",
+        "Aspas",
+        "Asterisco"
+      ],
+      "answer": 0,
+      "fact": "Em excesso, as reticências deixam o texto com cara de indeciso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus grego é o deus da guerra?",
+      "options": [
+        "Ares",
+        "Apolo",
+        "Hades",
+        "Hefesto"
+      ],
+      "answer": 0,
+      "fact": "O equivalente romano de Ares é Marte, que deu nome ao planeta vermelho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus grego reinava sobre o mundo dos mortos?",
+      "options": [
+        "Hades",
+        "Ares",
+        "Cronos",
+        "Hermes"
+      ],
+      "answer": 0,
+      "fact": "Na mitologia romana, ele é chamado de Plutão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deusa grega é a deusa do amor e da beleza?",
+      "options": [
+        "Afrodite",
+        "Atena",
+        "Hera",
+        "Ártemis"
+      ],
+      "answer": 0,
+      "fact": "Na mitologia romana, ela é Vênus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus romano do amor é representado como um menino com asas?",
+      "options": [
+        "Cupido",
+        "Baco",
+        "Netuno",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Na mitologia grega, ele se chama Eros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus nórdico é famoso por ser trapaceiro e mudar de forma?",
+      "options": [
+        "Loki",
+        "Odin",
+        "Thor",
+        "Freyr"
+      ],
+      "answer": 0,
+      "fact": "Na mitologia nórdica, Loki é pai de vários monstros, como o lobo Fenrir."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus egípcio tem cabeça de chacal e era ligado aos mortos?",
+      "options": [
+        "Anúbis",
+        "Rá",
+        "Hórus",
+        "Osíris"
+      ],
+      "answer": 0,
+      "fact": "Anúbis era o deus da mumificação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus egípcio do Sol é muitas vezes mostrado com cabeça de falcão e um disco solar?",
+      "options": [
+        "Rá",
+        "Anúbis",
+        "Set",
+        "Thot"
+      ],
+      "answer": 0,
+      "fact": "Os faraós eram considerados filhos de Rá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deusa grega da caça é irmã gêmea de Apolo?",
+      "options": [
+        "Ártemis",
+        "Atena",
+        "Hera",
+        "Deméter"
+      ],
+      "answer": 0,
+      "fact": "Na mitologia romana, ela é Diana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que herói grego liderou os argonautas em busca do velocino de ouro?",
+      "options": [
+        "Jasão",
+        "Teseu",
+        "Perseu",
+        "Ulisses"
+      ],
+      "answer": 0,
+      "fact": "O navio dos argonautas se chamava Argo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que jovem grego voou perto demais do Sol, com asas de cera, e caiu?",
+      "options": [
+        "Ícaro",
+        "Dédalo",
+        "Narciso",
+        "Orfeu"
+      ],
+      "answer": 0,
+      "fact": "Dédalo, o pai de Ícaro, foi quem construiu as asas e o labirinto do Minotauro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que jovem da mitologia grega se apaixonou pelo próprio reflexo na água?",
+      "options": [
+        "Narciso",
+        "Ícaro",
+        "Adônis",
+        "Orfeu"
+      ],
+      "answer": 0,
+      "fact": "O nome dele deu origem à palavra \"narcisismo\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cantor da mitologia grega desceu ao mundo dos mortos para buscar sua amada Eurídice?",
+      "options": [
+        "Orfeu",
+        "Narciso",
+        "Apolo",
+        "Teseu"
+      ],
+      "answer": 0,
+      "fact": "Ele perdeu Eurídice para sempre ao olhar para trás antes da hora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que princesa troiana tinha o dom da profecia, mas ninguém acreditava nela?",
+      "options": [
+        "Cassandra",
+        "Helena",
+        "Andrômaca",
+        "Hécuba"
+      ],
+      "answer": 0,
+      "fact": "Hoje, \"Cassandra\" é como se chama quem prevê desgraças e é ignorado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rei da mitologia grega transformava em ouro tudo o que tocava?",
+      "options": [
+        "Midas",
+        "Creso",
+        "Minos",
+        "Tântalo"
+      ],
+      "answer": 0,
+      "fact": "O \"toque de Midas\" virou expressão para quem transforma tudo em sucesso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que personagem grego foi condenado a empurrar uma pedra morro acima para sempre?",
+      "options": [
+        "Sísifo",
+        "Tântalo",
+        "Prometeu",
+        "Atlas"
+      ],
+      "answer": 0,
+      "fact": "Albert Camus escreveu um ensaio famoso sobre ele, \"O Mito de Sísifo\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que titã roubou o fogo dos deuses para dar aos humanos?",
+      "options": [
+        "Prometeu",
+        "Atlas",
+        "Cronos",
+        "Hipérion"
+      ],
+      "answer": 0,
+      "fact": "Como castigo, uma águia comia o fígado dele todos os dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o rio do esquecimento no mundo dos mortos grego?",
+      "options": [
+        "Lete",
+        "Estige",
+        "Aqueronte",
+        "Cócito"
+      ],
+      "answer": 0,
+      "fact": "Quem bebia a água do Lete esquecia a vida passada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o barqueiro que levava as almas pelo rio do mundo dos mortos, na mitologia grega?",
+      "options": [
+        "Caronte",
+        "Cérbero",
+        "Hermes",
+        "Tânatos"
+      ],
+      "answer": 0,
+      "fact": "Os gregos colocavam uma moeda na boca dos mortos para pagar a travessia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que árvore gigante liga os nove mundos na mitologia nórdica?",
+      "options": [
+        "Yggdrasil",
+        "Asgard",
+        "Bifrost",
+        "Midgard"
+      ],
+      "answer": 0,
+      "fact": "Bifrost é a ponte de arco-íris que liga Asgard a Midgard, o mundo dos humanos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a batalha do fim do mundo na mitologia nórdica?",
+      "options": [
+        "Ragnarök",
+        "Valhalla",
+        "Asgard",
+        "Midgard"
+      ],
+      "answer": 0,
+      "fact": "No Ragnarök, Thor e a serpente Jörmungandr matam um ao outro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"alea jacta est\", atribuída a Júlio César?",
+      "options": [
+        "A sorte está lançada",
+        "Vim, vi e venci",
+        "Até tu, Brutus?",
+        "Dividir para conquistar"
+      ],
+      "answer": 0,
+      "fact": "César teria dito a frase ao atravessar o rio Rubicão com seu exército, em 49 a.C."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"veni, vidi, vici\"?",
+      "options": [
+        "Vim, vi e venci",
+        "A sorte está lançada",
+        "Vi, venci e voltei",
+        "Venci, vi e vim"
+      ],
+      "answer": 0,
+      "fact": "César usou a frase para anunciar uma vitória rápida na Ásia Menor, em 47 a.C."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"habeas corpus\"?",
+      "options": [
+        "Que tenhas o corpo",
+        "Corpo presente",
+        "Pelo corpo",
+        "Corpo livre"
+      ],
+      "answer": 0,
+      "fact": "É a garantia que protege alguém de prisão ilegal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"per capita\"?",
+      "options": [
+        "Por cabeça",
+        "Por cento",
+        "Por capítulo",
+        "Pelo capital"
+      ],
+      "answer": 0,
+      "fact": "O PIB per capita é o PIB dividido pelo número de habitantes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"status quo\"?",
+      "options": [
+        "O estado em que as coisas estão",
+        "Situação de emergência",
+        "O status mais alto",
+        "Mudança completa"
+      ],
+      "answer": 0,
+      "fact": "Manter o status quo é deixar tudo como está."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"persona non grata\"?",
+      "options": [
+        "Pessoa indesejada",
+        "Pessoa importante",
+        "Pessoa desconhecida",
+        "Pessoa sem nome"
+      ],
+      "answer": 0,
+      "fact": "O termo é usado na diplomacia, quando um país não aceita mais um diplomata estrangeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a expressão latina \"a priori\"?",
+      "options": [
+        "Antes da experiência ou de verificar",
+        "Depois do fato",
+        "Em primeiro lugar no ranking",
+        "Por prioridade"
+      ],
+      "answer": 0,
+      "fact": "O oposto de \"a priori\" é \"a posteriori\", depois da experiência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla \"ONU\"?",
+      "options": [
+        "Organização das Nações Unidas",
+        "Ordem das Nações Unidas",
+        "Organização Nacional Universal",
+        "Organismo das Nações Unificadas"
+      ],
+      "answer": 0,
+      "fact": "A ONU foi fundada em 1945, logo depois da Segunda Guerra Mundial."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que significa a sigla \"Unesco\"?",
+      "options": [
+        "Organização das Nações Unidas para a Educação, a Ciência e a Cultura",
+        "União Europeia de Escolas",
+        "Organização Mundial do Comércio",
+        "Fundo das Nações Unidas para a Infância"
+      ],
+      "answer": 0,
+      "fact": "O Unicef é o Fundo das Nações Unidas para a Infância."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a sede da Unesco?",
+      "options": [
+        "Paris",
+        "Genebra",
+        "Nova York",
+        "Viena"
+      ],
+      "answer": 0,
+      "fact": "O prédio da sede, em forma de Y, foi inaugurado em 1958."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade fica a sede da Organização Mundial da Saúde?",
+      "options": [
+        "Genebra",
+        "Paris",
+        "Nova York",
+        "Bruxelas"
+      ],
+      "answer": 0,
+      "fact": "A OMS foi criada em 1948, e o dia 7 de abril, data de sua criação, é o Dia Mundial da Saúde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade é sede do Tribunal Internacional de Justiça da ONU?",
+      "options": [
+        "Haia",
+        "Genebra",
+        "Bruxelas",
+        "Estrasburgo"
+      ],
+      "answer": 0,
+      "fact": "O tribunal funciona no Palácio da Paz, em Haia, na Holanda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o símbolo ¶, que marca o fim de parágrafo nos editores de texto?",
+      "options": [
+        "Pé de mosca",
+        "Parágrafo duplo",
+        "Seção",
+        "Cedilha"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, esse símbolo se chama \"pilcrow\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o sinal gráfico da crase?",
+      "options": [
+        "Acento grave",
+        "Acento agudo",
+        "Til",
+        "Trema"
+      ],
+      "answer": 0,
+      "fact": "O acento grave, em português, só é usado para indicar a crase."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a figura de linguagem que dá características humanas a seres não humanos?",
+      "options": [
+        "Personificação",
+        "Hipérbole",
+        "Metáfora",
+        "Eufemismo"
+      ],
+      "answer": 0,
+      "fact": "Também é chamada de prosopopeia, como em \"o vento sussurrava\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a figura de linguagem que junta ideias opostas, como \"um silêncio ensurdecedor\"?",
+      "options": [
+        "Paradoxo",
+        "Eufemismo",
+        "Pleonasmo",
+        "Hipérbole"
+      ],
+      "answer": 0,
+      "fact": "Quando os opostos aparecem colados, a figura também é chamada de oxímoro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a figura de linguagem que diz o contrário do que se pensa, com intenção de criticar?",
+      "options": [
+        "Ironia",
+        "Eufemismo",
+        "Antítese",
+        "Pleonasmo"
+      ],
+      "answer": 0,
+      "fact": "O sarcasmo é uma ironia mais agressiva."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a repetição desnecessária de uma ideia, como em \"subir para cima\"?",
+      "options": [
+        "Pleonasmo",
+        "Eufemismo",
+        "Antítese",
+        "Onomatopeia"
+      ],
+      "answer": 0,
+      "fact": "\"Entrar para dentro\" e \"elo de ligação\" são outros pleonasmos famosos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o medo de lugares abertos ou cheios de gente?",
+      "options": [
+        "Agorafobia",
+        "Claustrofobia",
+        "Acrofobia",
+        "Hidrofobia"
+      ],
+      "answer": 0,
+      "fact": "\"Ágora\" era a praça pública das cidades gregas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas palavras, aproximadamente, tem o Vocabulário Ortográfico da Língua Portuguesa, da ABL?",
+      "options": [
+        "Cerca de 382 mil",
+        "Cerca de 38 mil",
+        "Cerca de 120 mil",
+        "Cerca de 1 milhão",
+        "Cerca de 60 mil",
+        "Cerca de 750 mil"
+      ],
+      "answer": 0,
+      "fact": "A edição de 2021 do Volp incluiu cerca de mil palavras novas, como \"feminicídio\"."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano entrou em vigor no Brasil o último Acordo Ortográfico da Língua Portuguesa?",
+      "options": [
+        "2009",
+        "2001",
+        "2005",
+        "2012",
+        "2016",
+        "1990"
+      ],
+      "answer": 0,
+      "fact": "O acordo foi assinado em 1990, mas só começou a valer quase 20 anos depois."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países fazem parte da ONU hoje?",
+      "options": [
+        "193",
+        "152",
+        "170",
+        "201",
+        "210",
+        "186"
+      ],
+      "answer": 0,
+      "fact": "O último país a entrar foi o Sudão do Sul, em 2011."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundada a Cruz Vermelha?",
+      "options": [
+        "1863",
+        "1815",
+        "1840",
+        "1880",
+        "1901",
+        "1919"
+      ],
+      "answer": 0,
+      "fact": "O fundador, Henry Dunant, ganhou o primeiro Prêmio Nobel da Paz, em 1901."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas línguas oficiais a Constituição da Índia reconhece?",
+      "options": [
+        "22",
+        "2",
+        "8",
+        "15",
+        "30",
+        "45"
+      ],
+      "answer": 0,
+      "fact": "O governo central usa principalmente o hindi e o inglês."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos de casamento se comemoram nas bodas de pérola?",
+      "options": [
+        "30",
+        "20",
+        "35",
+        "25",
+        "45",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "Na tradição brasileira, as bodas de pérola marcam três décadas de casamento."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos de casamento se comemoram nas bodas de cristal?",
+      "options": [
+        "15",
+        "10",
+        "5",
+        "20",
+        "25",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "As bodas de estanho, por sua vez, marcam 10 anos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas pessoas, aproximadamente, falam português como língua materna no mundo?",
+      "options": [
+        "Cerca de 250 milhões",
+        "Cerca de 80 milhões",
+        "Cerca de 150 milhões",
+        "Cerca de 400 milhões",
+        "Cerca de 600 milhões",
+        "Cerca de 50 milhões"
+      ],
+      "answer": 0,
+      "fact": "O português está entre as dez línguas mais faladas do mundo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi instalado o primeiro semáforo do mundo, movido a gás, em Londres?",
+      "options": [
+        "1868",
+        "1830",
+        "1851",
+        "1885",
+        "1899",
+        "1914"
+      ],
+      "answer": 0,
+      "fact": "O semáforo explodiu poucos meses depois, ferindo o policial que o operava."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi criado o código de endereçamento postal (CEP) no Brasil?",
+      "options": [
+        "1971",
+        "1955",
+        "1964",
+        "1980",
+        "1988",
+        "1993"
+      ],
+      "answer": 0,
+      "fact": "O CEP passou a ter oito dígitos em 1992."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas letras tem o alfabeto havaiano?",
+      "options": [
+        "13",
+        "26",
+        "7",
+        "18",
+        "21",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "São só cinco vogais e oito consoantes."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas teclas tem um teclado de computador padrão brasileiro ABNT2, aproximadamente?",
+      "options": [
+        "107",
+        "88",
+        "99",
+        "115",
+        "125",
+        "76"
+      ],
+      "answer": 0,
+      "fact": "O ABNT2 tem teclas próprias para o \"ç\" e para os acentos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi inventado o código Morse?",
+      "options": [
+        "Década de 1830",
+        "Década de 1790",
+        "Década de 1810",
+        "Década de 1870",
+        "Década de 1890",
+        "Década de 1760"
+      ],
+      "answer": 0,
+      "fact": "Samuel Morse também era pintor, e começou a pensar no telégrafo depois de uma tragédia familiar."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o SOS foi adotado como sinal internacional de socorro?",
+      "options": [
+        "1906",
+        "1878",
+        "1890",
+        "1912",
+        "1920",
+        "1935"
+      ],
+      "answer": 0,
+      "fact": "O Titanic, em 1912, foi um dos primeiros navios a usar o SOS num naufrágio famoso."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi inventado o zíper moderno?",
+      "options": [
+        "1913",
+        "1851",
+        "1890",
+        "1925",
+        "1938",
+        "1870"
+      ],
+      "answer": 0,
+      "fact": "O nome \"zipper\" veio de uma marca de botas de borracha que usava o fecho."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi patenteado o clipe de papel de arame?",
+      "options": [
+        "1899",
+        "1850",
+        "1870",
+        "1920",
+        "1935",
+        "1810"
+      ],
+      "answer": 0,
+      "fact": "O clipe virou símbolo de resistência na Noruega durante a ocupação nazista."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi inventada a caneta esferográfica moderna, pelo húngaro László Bíró?",
+      "options": [
+        "1938",
+        "1902",
+        "1921",
+        "1955",
+        "1967",
+        "1888"
+      ],
+      "answer": 0,
+      "fact": "Em vários países, como a Argentina, a caneta esferográfica é chamada de \"birome\" ou \"biro\"."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos fusos horários oficiais tem a Rússia?",
+      "options": [
+        "11",
+        "7",
+        "9",
+        "13",
+        "15",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "Quando é meio-dia em Moscou, já são 9 da noite em Kamchatka."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos fusos horários tem a França, contando os territórios ultramarinos?",
+      "options": [
+        "12",
+        "1",
+        "5",
+        "8",
+        "15",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "É o país com mais fusos horários do mundo, por causa dos territórios espalhados pelo planeta."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos fusos horários tem o Brasil?",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "5",
+        "6",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "O fuso de Fernando de Noronha fica uma hora à frente do horário de Brasília."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a Libras foi reconhecida por lei como meio legal de comunicação no Brasil?",
+      "options": [
+        "2002",
+        "1988",
+        "1995",
+        "2008",
+        "2015",
+        "1979"
+      ],
+      "answer": 0,
+      "fact": "A Libras não é uma tradução do português: tem gramática própria."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a única bandeira de país com um mapa do próprio país?",
+      "options": [
+        "Chipre",
+        "Kosovo",
+        "Malta",
+        "Nepal",
+        "Bósnia",
+        "Cuba"
+      ],
+      "answer": 0,
+      "fact": "A bandeira do Kosovo também tem um mapa, mas o Kosovo não é reconhecido por todos os países."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Natal passou a ser comemorado em 25 de dezembro, segundo os primeiros registros?",
+      "options": [
+        "Por volta de 336",
+        "Por volta de 100",
+        "Por volta de 200",
+        "Por volta de 500",
+        "Por volta de 800",
+        "Por volta de 1000"
+      ],
+      "answer": 0,
+      "fact": "A data coincidia com festas romanas ligadas ao solstício e ao \"Sol Invicto\"."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos idiomas oficiais tem a União Europeia?",
+      "options": [
+        "24",
+        "12",
+        "17",
+        "27",
+        "30",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Todos os documentos oficiais importantes precisam ser traduzidos para todas essas línguas."
     }
   ]
 }

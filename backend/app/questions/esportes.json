@@ -4112,6 +4112,1374 @@
       ],
       "answer": 0,
       "fact": "O saque foi do australiano Sam Groth, em 2012."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se usa uma bola laranja e uma cesta?",
+      "options": [
+        "Basquete",
+        "Vôlei",
+        "Handebol",
+        "Futsal"
+      ],
+      "answer": 0,
+      "fact": "O primeiro jogo de basquete usou cestos de pêssego como cesta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte olímpico os atletas tentam derrubar o adversário de costas no chão, sem socos nem chutes?",
+      "options": [
+        "Luta olímpica",
+        "Boxe",
+        "Esgrima",
+        "Taekwondo"
+      ],
+      "answer": 0,
+      "fact": "A luta olímpica tem dois estilos: livre e greco-romana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se usa luvas acolchoadas e se luta num ringue de quatro cordas?",
+      "options": [
+        "Boxe",
+        "Judô",
+        "Esgrima",
+        "Sumô"
+      ],
+      "answer": 0,
+      "fact": "O ringue de boxe é quadrado, apesar do nome em inglês \"ring\", que quer dizer anel."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte o jogador usa um taco para bater num disco sobre o gelo?",
+      "options": [
+        "Hóquei no gelo",
+        "Curling",
+        "Patinação",
+        "Bobsled"
+      ],
+      "answer": 0,
+      "fact": "O hóquei no gelo é o esporte nacional do Canadá no inverno."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se joga com uma bola pequena, verde-amarelada, e raquetes numa quadra com rede?",
+      "options": [
+        "Tênis",
+        "Badminton",
+        "Squash",
+        "Padel"
+      ],
+      "answer": 0,
+      "fact": "As bolas de tênis eram brancas até 1972, quando passaram a ser amarelas para aparecer melhor na TV."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se joga com as mãos e o objetivo é fazer gol, com sete jogadores de cada lado?",
+      "options": [
+        "Handebol",
+        "Basquete",
+        "Polo aquático",
+        "Futsal"
+      ],
+      "answer": 0,
+      "fact": "O handebol foi criado na Europa no fim do século XIX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte os jogadores ficam dentro da piscina e tentam fazer gol com as mãos?",
+      "options": [
+        "Polo aquático",
+        "Nado artístico",
+        "Saltos ornamentais",
+        "Handebol"
+      ],
+      "answer": 0,
+      "fact": "O polo aquático é um dos esportes coletivos mais antigos das Olimpíadas, desde 1900."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte o atleta salta de uma plataforma alta e faz acrobacias até cair na piscina?",
+      "options": [
+        "Saltos ornamentais",
+        "Nado artístico",
+        "Polo aquático",
+        "Trampolim acrobático"
+      ],
+      "answer": 0,
+      "fact": "A plataforma mais alta dos saltos olímpicos fica a 10 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se pedala em alta velocidade num velódromo?",
+      "options": [
+        "Ciclismo de pista",
+        "Mountain bike",
+        "BMX",
+        "Triatlo"
+      ],
+      "answer": 0,
+      "fact": "As pistas dos velódromos são inclinadas nas curvas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte de bicicleta os atletas pulam rampas e fazem manobras numa pista de terra curta?",
+      "options": [
+        "BMX",
+        "Ciclismo de estrada",
+        "Mountain bike",
+        "Ciclismo de pista"
+      ],
+      "answer": 0,
+      "fact": "O BMX virou esporte olímpico em Pequim 2008."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a competição entre seleções de futebol disputada a cada quatro anos, a mais importante do mundo?",
+      "options": [
+        "Copa do Mundo",
+        "Copa América",
+        "Libertadores",
+        "Eurocopa"
+      ],
+      "answer": 0,
+      "fact": "A Copa do Mundo masculina é disputada desde 1930."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que esporte radical consiste em saltar de uma ponte ou plataforma preso por uma corda elástica?",
+      "options": [
+        "Bungee jump",
+        "Paraquedismo",
+        "Rapel",
+        "Asa-delta"
+      ],
+      "answer": 0,
+      "fact": "O bungee jump comercial foi popularizado na Nova Zelândia, nos anos 1980."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes esportes é praticado no gelo?",
+      "options": [
+        "Curling",
+        "Rúgbi",
+        "Golfe",
+        "Críquete"
+      ],
+      "answer": 0,
+      "fact": "No curling, os jogadores varrem o gelo para controlar a velocidade da pedra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores um time de vôlei de quadra tem em jogo?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "Os jogadores fazem rodízio de posição sempre que o time recupera o saque."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos vale uma cesta normal, de dentro do arco, no basquete?",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "A linha de três pontos foi criada na NBA em 1979."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte existe a \"jogada de três pontos\" e o \"garrafão\"?",
+      "options": [
+        "Basquete",
+        "Futsal",
+        "Vôlei",
+        "Handebol"
+      ],
+      "answer": 0,
+      "fact": "O garrafão tem esse nome porque já teve formato parecido com o de uma garrafa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o jogador que defende o gol no handebol e no futebol?",
+      "options": [
+        "Goleiro",
+        "Zagueiro",
+        "Líbero",
+        "Pivô"
+      ],
+      "answer": 0,
+      "fact": "O goleiro é o único jogador que pode usar as mãos, e só dentro da própria área."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se ganha por ficar em primeiro lugar numa prova olímpica?",
+      "options": [
+        "Medalha de ouro",
+        "Medalha de prata",
+        "Medalha de bronze",
+        "Troféu de cristal"
+      ],
+      "answer": 0,
+      "fact": "As medalhas de ouro olímpicas são, na verdade, de prata banhada a ouro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que medalha recebe o terceiro colocado nas Olimpíadas?",
+      "options": [
+        "Bronze",
+        "Prata",
+        "Ouro",
+        "Cobre"
+      ],
+      "answer": 0,
+      "fact": "Nas lutas, como judô e boxe, são entregues duas medalhas de bronze."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que evento esportivo reúne atletas com deficiência, logo depois das Olimpíadas?",
+      "options": [
+        "Paralimpíadas",
+        "Pan-Americano",
+        "Jogos Mundiais",
+        "Olimpíadas de Inverno"
+      ],
+      "answer": 0,
+      "fact": "O Brasil está entre as maiores potências das Paralimpíadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que esporte se pratica na neve com esquis, carregando uma espingarda e atirando em alvos?",
+      "options": [
+        "Biatlo",
+        "Curling",
+        "Snowboard",
+        "Esqui alpino"
+      ],
+      "answer": 0,
+      "fact": "O biatlo nasceu de treinos militares de soldados na neve."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o barco estreito em que o atleta rema sentado, com um remo de duas pás?",
+      "options": [
+        "Caiaque",
+        "Veleiro",
+        "Bote",
+        "Jangada"
+      ],
+      "answer": 0,
+      "fact": "No caiaque, o atleta fica de frente para onde vai; no remo olímpico, fica de costas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte os atletas ficam de costas para o sentido do barco e remam com as duas mãos?",
+      "options": [
+        "Remo",
+        "Canoagem",
+        "Vela",
+        "Surfe"
+      ],
+      "answer": 0,
+      "fact": "O remo é um dos esportes mais tradicionais do Brasil, com clubes centenários."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte de raquete a bola é rebatida contra as paredes de uma sala fechada?",
+      "options": [
+        "Squash",
+        "Tênis",
+        "Padel",
+        "Badminton"
+      ],
+      "answer": 0,
+      "fact": "O squash vai estrear como esporte olímpico nos Jogos de Los Angeles 2028."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se usa o termo \"gol de placa\"?",
+      "options": [
+        "Futebol",
+        "Basquete",
+        "Vôlei",
+        "Tênis"
+      ],
+      "answer": 0,
+      "fact": "A expressão surgiu em 1961, quando um gol de Pelé no Maracanã ganhou uma placa comemorativa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes esportes é disputado com um volante, em carros?",
+      "options": [
+        "Automobilismo",
+        "Hipismo",
+        "Motocross",
+        "Ciclismo"
+      ],
+      "answer": 0,
+      "fact": "A Fórmula 1 é a principal categoria do automobilismo mundial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se disputa o Campeonato Mundial de MotoGP?",
+      "options": [
+        "Motociclismo",
+        "Automobilismo",
+        "Ciclismo",
+        "Motocross"
+      ],
+      "answer": 0,
+      "fact": "O italiano Valentino Rossi é um dos maiores nomes da história da MotoGP."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bola é usada no boliche?",
+      "options": [
+        "Uma bola pesada com furos para os dedos",
+        "Uma bola de borracha oca",
+        "Uma bola oval",
+        "Uma bola de tênis grande"
+      ],
+      "answer": 0,
+      "fact": "As bolas de boliche podem pesar até cerca de 7 quilos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte o objetivo é acertar a bola branca nas outras bolas para colocá-las nas caçapas?",
+      "options": [
+        "Sinuca",
+        "Boliche",
+        "Bocha",
+        "Críquete"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, sinuca e bilhar são usados quase como sinônimos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte a seleção masculina do Brasil foi campeã mundial em 2002, 2006 e 2010?",
+      "options": [
+        "Vôlei",
+        "Basquete",
+        "Handebol",
+        "Futsal"
+      ],
+      "answer": 0,
+      "fact": "O Brasil também é o maior vencedor da antiga Liga Mundial de vôlei, com nove títulos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte o Brasil foi campeão mundial masculino em 1959 e 1963?",
+      "options": [
+        "Basquete",
+        "Vôlei",
+        "Handebol",
+        "Futebol de areia"
+      ],
+      "answer": 0,
+      "fact": "Amaury Pasos e Wlamir Marques eram estrelas daquela geração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte Falcão é considerado um dos maiores jogadores de todos os tempos?",
+      "options": [
+        "Futsal",
+        "Vôlei",
+        "Basquete",
+        "Futebol de areia"
+      ],
+      "answer": 0,
+      "fact": "Falcão foi eleito várias vezes o melhor jogador de futsal do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que modalidade de vôlei é disputada por atletas com deficiência, sentados no chão?",
+      "options": [
+        "Vôlei sentado",
+        "Goalball",
+        "Vôlei de praia",
+        "Bocha paralímpica"
+      ],
+      "answer": 0,
+      "fact": "A seleção feminina brasileira já ganhou medalhas paralímpicas no vôlei sentado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que esporte pratica Ana Marcela Cunha, campeã olímpica em Tóquio?",
+      "options": [
+        "Maratona aquática",
+        "Natação em piscina",
+        "Canoagem",
+        "Triatlo"
+      ],
+      "answer": 0,
+      "fact": "Ana Marcela é baiana e uma das maiores nadadoras de águas abertas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que goleiro foi titular do Brasil nos títulos de 1958 e 1962?",
+      "options": [
+        "Gilmar",
+        "Castilho",
+        "Félix",
+        "Barbosa"
+      ],
+      "answer": 0,
+      "fact": "Gilmar dos Santos Neves é o único goleiro bicampeão mundial pela seleção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que goleiro foi titular do Brasil na conquista do tetra, em 1994?",
+      "options": [
+        "Taffarel",
+        "Dida",
+        "Zetti",
+        "Marcos"
+      ],
+      "answer": 0,
+      "fact": "Taffarel defendeu pênaltis decisivos na final contra a Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que lateral e capitão levantou a taça da Copa de 2002 pelo Brasil?",
+      "options": [
+        "Cafu",
+        "Lúcio",
+        "Roque Júnior",
+        "Roberto Carlos"
+      ],
+      "answer": 0,
+      "fact": "Cafu jogou três finais de Copa seguidas: 1994, 1998 e 2002."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que capitão levantou a taça do tetra, em 1994?",
+      "options": [
+        "Dunga",
+        "Raí",
+        "Bebeto",
+        "Mauro Silva"
+      ],
+      "answer": 0,
+      "fact": "Raí começou a Copa como capitão, mas perdeu a vaga de titular durante o torneio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que capitão levantou a taça do tri, em 1970?",
+      "options": [
+        "Carlos Alberto Torres",
+        "Pelé",
+        "Gérson",
+        "Rivellino"
+      ],
+      "answer": 0,
+      "fact": "Carlos Alberto também marcou o quarto gol da final contra a Itália, considerado um dos mais bonitos das Copas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que jogador brasileiro marcou dois gols na final da Copa de 2002, contra a Alemanha?",
+      "options": [
+        "Ronaldo",
+        "Rivaldo",
+        "Ronaldinho Gaúcho",
+        "Kléberson"
+      ],
+      "answer": 0,
+      "fact": "Foram os dois únicos gols do jogo, vencido pelo Brasil por 2 a 0."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que jogador era chamado de \"Anjo de Pernas Tortas\" e brilhou nas Copas de 1958 e 1962?",
+      "options": [
+        "Garrincha",
+        "Didi",
+        "Vavá",
+        "Zagallo"
+      ],
+      "answer": 0,
+      "fact": "Garrincha tinha uma perna seis centímetros mais curta que a outra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time paulista tem o apelido de \"Verdão\" e o porco como mascote?",
+      "options": [
+        "Palmeiras",
+        "Corinthians",
+        "São Paulo",
+        "Guarani"
+      ],
+      "answer": 0,
+      "fact": "O porco virou mascote depois que rivais usavam o apelido como provocação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time paulista é chamado de \"Tricolor do Morumbi\"?",
+      "options": [
+        "São Paulo",
+        "Fluminense",
+        "Grêmio",
+        "Bahia"
+      ],
+      "answer": 0,
+      "fact": "O estádio do Morumbi se chama oficialmente Cícero Pompeu de Toledo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time carioca é chamado de \"Tricolor das Laranjeiras\"?",
+      "options": [
+        "Fluminense",
+        "Botafogo",
+        "Vasco",
+        "Bangu"
+      ],
+      "answer": 0,
+      "fact": "O Fluminense ganhou a Libertadores pela primeira vez em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país foi disputada a Copa do Mundo de 2006?",
+      "options": [
+        "Alemanha",
+        "França",
+        "Japão",
+        "Itália"
+      ],
+      "answer": 0,
+      "fact": "A Itália ganhou aquela Copa nos pênaltis, contra a França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time gaúcho tem o apelido de \"Imortal Tricolor\"?",
+      "options": [
+        "Grêmio",
+        "Internacional",
+        "Juventude",
+        "Caxias"
+      ],
+      "answer": 0,
+      "fact": "O Grêmio foi campeão mundial de clubes em 1983."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time mineiro tem o galo como mascote?",
+      "options": [
+        "Atlético Mineiro",
+        "Cruzeiro",
+        "América Mineiro",
+        "Villa Nova"
+      ],
+      "answer": 0,
+      "fact": "O Atlético Mineiro ganhou a Libertadores em 2013."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time paranaense tem o apelido de \"Furacão\"?",
+      "options": [
+        "Athletico Paranaense",
+        "Coritiba",
+        "Paraná Clube",
+        "Londrina"
+      ],
+      "answer": 0,
+      "fact": "O Athletico ganhou a Copa Sul-Americana em 2018 e 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time baiano tem o apelido de \"Esquadrão de Aço\"?",
+      "options": [
+        "Bahia",
+        "Vitória",
+        "Jacuipense",
+        "Bahia de Feira"
+      ],
+      "answer": 0,
+      "fact": "O Bahia foi o primeiro campeão brasileiro, na Taça Brasil de 1959."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estádio o Corinthians manda seus jogos desde 2014?",
+      "options": [
+        "Neo Química Arena",
+        "Pacaembu",
+        "Morumbi",
+        "Allianz Parque"
+      ],
+      "answer": 0,
+      "fact": "O estádio foi palco da abertura da Copa do Mundo de 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estádio o Palmeiras manda seus jogos?",
+      "options": [
+        "Allianz Parque",
+        "Neo Química Arena",
+        "Morumbi",
+        "Canindé"
+      ],
+      "answer": 0,
+      "fact": "O Allianz Parque foi construído no lugar do antigo Palestra Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país foi disputada a Copa do Mundo de 1994, vencida pelo Brasil?",
+      "options": [
+        "Estados Unidos",
+        "Itália",
+        "França",
+        "México"
+      ],
+      "answer": 0,
+      "fact": "A final contra a Itália foi a primeira decidida nos pênaltis na história das Copas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time cearense é chamado de \"Vozão\"?",
+      "options": [
+        "Ceará",
+        "Fortaleza",
+        "Ferroviário",
+        "Icasa"
+      ],
+      "answer": 0,
+      "fact": "O clássico entre Ceará e Fortaleza é chamado de Clássico-Rei."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país o Brasil ganhou a Copa de 1962?",
+      "options": [
+        "Chile",
+        "Suécia",
+        "México",
+        "Inglaterra"
+      ],
+      "answer": 0,
+      "fact": "Amarildo substituiu Pelé, que se machucou no começo do torneio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país o Brasil ganhou a Copa de 1970?",
+      "options": [
+        "México",
+        "Chile",
+        "Alemanha",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira Copa transmitida em cores pela TV."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que países o Brasil ganhou a Copa de 2002?",
+      "options": [
+        "Coreia do Sul e Japão",
+        "China e Japão",
+        "Coreia do Sul e China",
+        "Japão e Tailândia"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira Copa disputada na Ásia e a primeira com dois países-sede."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que seleção eliminou o Brasil na Copa de 1982, num jogo histórico em Barcelona?",
+      "options": [
+        "Itália",
+        "Argentina",
+        "França",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "O italiano Paolo Rossi marcou os três gols da vitória por 3 a 2."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção venceu o Brasil na final da Copa de 1998?",
+      "options": [
+        "França",
+        "Alemanha",
+        "Itália",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "Zidane marcou dois gols de cabeça na final, em Paris."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção eliminou o Brasil nas quartas de final da Copa de 2022?",
+      "options": [
+        "Croácia",
+        "Argentina",
+        "Holanda",
+        "Bélgica"
+      ],
+      "answer": 0,
+      "fact": "O jogo foi decidido nos pênaltis, depois de um empate em 1 a 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção eliminou o Brasil nas quartas de final da Copa de 2018?",
+      "options": [
+        "Bélgica",
+        "Croácia",
+        "França",
+        "Uruguai"
+      ],
+      "answer": 0,
+      "fact": "A Bélgica venceu por 2 a 1, em Kazan, na Rússia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que jogador fez o gol do Uruguai na virada de 2 a 1 do \"Maracanazo\", em 1950?",
+      "options": [
+        "Ghiggia",
+        "Schiaffino",
+        "Obdulio Varela",
+        "Míguez"
+      ],
+      "answer": 0,
+      "fact": "Ghiggia dizia que só três pessoas calaram o Maracanã: o papa, Frank Sinatra e ele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que goleiro levou a culpa pela derrota do Brasil na final da Copa de 1950?",
+      "options": [
+        "Barbosa",
+        "Gilmar",
+        "Castilho",
+        "Félix"
+      ],
+      "answer": 0,
+      "fact": "Barbosa disse, anos depois, que pagou por aquela derrota a vida inteira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lateral brasileiro marcou um gol de falta com uma curva impressionante contra a França, em 1997?",
+      "options": [
+        "Roberto Carlos",
+        "Rivellino",
+        "Zico",
+        "Marcelinho Carioca"
+      ],
+      "answer": 0,
+      "fact": "O gol foi marcado num torneio na França, um ano antes da Copa de 1998."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que jogador brasileiro foi eleito o melhor da Copa de 1994?",
+      "options": [
+        "Romário",
+        "Bebeto",
+        "Dunga",
+        "Taffarel"
+      ],
+      "answer": 0,
+      "fact": "Romário marcou cinco gols naquela Copa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que meia brasileiro foi eleito o melhor jogador da Copa de 1958?",
+      "options": [
+        "Didi",
+        "Pelé",
+        "Garrincha",
+        "Nilton Santos"
+      ],
+      "answer": 0,
+      "fact": "Didi ficou famoso pela cobrança de falta chamada \"folha seca\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção venceu o Brasil na final da Copa América de 2021, no Maracanã?",
+      "options": [
+        "Argentina",
+        "Uruguai",
+        "Chile",
+        "Colômbia"
+      ],
+      "answer": 0,
+      "fact": "O gol do título foi marcado por Ángel Di María."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que time brasileiro ganhou o Mundial de Clubes de 2005 vencendo o Liverpool?",
+      "options": [
+        "São Paulo",
+        "Internacional",
+        "Corinthians",
+        "Santos"
+      ],
+      "answer": 0,
+      "fact": "O gol do título foi marcado por Mineiro, em Yokohama."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que time brasileiro venceu o Barcelona na final do Mundial de Clubes de 2006?",
+      "options": [
+        "Internacional",
+        "São Paulo",
+        "Corinthians",
+        "Grêmio"
+      ],
+      "answer": 0,
+      "fact": "O gol do título foi marcado por Adriano Gabiru."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que goleiro brasileiro marcou mais de 100 gols na carreira, cobrando faltas e pênaltis?",
+      "options": [
+        "Rogério Ceni",
+        "Taffarel",
+        "Marcos",
+        "Dida"
+      ],
+      "answer": 0,
+      "fact": "Rogério Ceni marcou 131 gols pelo São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que jogador do Flamengo marcou dois gols na virada sobre o River Plate, na final da Libertadores de 2019?",
+      "options": [
+        "Gabigol",
+        "Bruno Henrique",
+        "Arrascaeta",
+        "Everton Ribeiro"
+      ],
+      "answer": 0,
+      "fact": "Os dois gols saíram depois dos 43 minutos do segundo tempo, em Lima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que clube brasileiro ganhou a Libertadores de 2020 e a de 2021, seguidas?",
+      "options": [
+        "Palmeiras",
+        "Flamengo",
+        "Santos",
+        "Grêmio"
+      ],
+      "answer": 0,
+      "fact": "Nas duas finais, o adversário também era brasileiro: Santos, em 2020, e Flamengo, em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que país é o maior campeão da Copa Libertadores somando os títulos dos seus clubes?",
+      "options": [
+        "Argentina",
+        "Brasil",
+        "Uruguai",
+        "Colômbia"
+      ],
+      "answer": 0,
+      "fact": "O Independiente, da Argentina, é o clube com mais títulos, sete."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tenista brasileiro ganhou Roland Garros três vezes?",
+      "options": [
+        "Gustavo Kuerten",
+        "Thomaz Koch",
+        "Fernando Meligeni",
+        "Marcelo Melo"
+      ],
+      "answer": 0,
+      "fact": "Guga desenhou um coração no saibro depois de vencer em 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tenista brasileiro foi número 1 do mundo nas duplas, em 2015?",
+      "options": [
+        "Marcelo Melo",
+        "Bruno Soares",
+        "Thomaz Bellucci",
+        "André Sá"
+      ],
+      "answer": 0,
+      "fact": "Marcelo Melo ganhou Roland Garros e Wimbledon nas duplas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nadador brasileiro ganhou a prata nos 400 m medley em Los Angeles 1984?",
+      "options": [
+        "Ricardo Prado",
+        "Gustavo Borges",
+        "Djan Madruga",
+        "Fernando Scherer"
+      ],
+      "answer": 0,
+      "fact": "Ricardo Prado chegou a ter o recorde mundial da prova, em 1982."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nadador brasileiro ganhou quatro medalhas olímpicas, entre 1992 e 2000?",
+      "options": [
+        "Gustavo Borges",
+        "César Cielo",
+        "Thiago Pereira",
+        "Fernando Scherer"
+      ],
+      "answer": 0,
+      "fact": "Gustavo Borges é um dos maiores nomes da natação brasileira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que boxeadora brasileira ganhou bronze em Londres 2012, a primeira medalha do boxe feminino do país?",
+      "options": [
+        "Adriana Araújo",
+        "Beatriz Ferreira",
+        "Viviane Pereira",
+        "Rose Volante"
+      ],
+      "answer": 0,
+      "fact": "Adriana Araújo é baiana, como vários boxeadores olímpicos do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nadador brasileiro ganhou a prata nos 400 m medley em Londres 2012?",
+      "options": [
+        "Thiago Pereira",
+        "César Cielo",
+        "Bruno Fratus",
+        "Felipe França"
+      ],
+      "answer": 0,
+      "fact": "Thiago Pereira é o recordista de medalhas em Jogos Pan-Americanos, com 23."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que piloto brasileiro foi companheiro de Michael Schumacher na Ferrari de 2000 a 2005?",
+      "options": [
+        "Rubens Barrichello",
+        "Felipe Massa",
+        "Ricardo Zonta",
+        "Cristiano da Matta"
+      ],
+      "answer": 0,
+      "fact": "Barrichello é um dos pilotos com mais largadas na história da Fórmula 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que brasileiro foi campeão da Fórmula Indy em 1989?",
+      "options": [
+        "Emerson Fittipaldi",
+        "Gil de Ferran",
+        "Cristiano da Matta",
+        "Hélio Castroneves"
+      ],
+      "answer": 0,
+      "fact": "Emerson também venceu as 500 Milhas de Indianápolis em 1989 e 1993."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que judoca brasileiro ganhou o ouro em Seul 1988, o primeiro título olímpico do judô do país?",
+      "options": [
+        "Aurélio Miguel",
+        "Rogério Sampaio",
+        "Leandro Guilheiro",
+        "Tiago Camilo"
+      ],
+      "answer": 0,
+      "fact": "Aurélio Miguel lutava na categoria meio-pesado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que time da NBA tem Stephen Curry como maior estrela?",
+      "options": [
+        "Golden State Warriors",
+        "Los Angeles Lakers",
+        "Boston Celtics",
+        "Miami Heat"
+      ],
+      "answer": 0,
+      "fact": "Curry é o jogador com mais cestas de três pontos na história da NBA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que jogador brasileiro de basquete foi campeão da NBA com o San Antonio Spurs, em 2014?",
+      "options": [
+        "Tiago Splitter",
+        "Nenê",
+        "Leandrinho",
+        "Anderson Varejão"
+      ],
+      "answer": 0,
+      "fact": "Splitter foi o primeiro brasileiro campeão da NBA jogando de fato pelo time campeão."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos gols Pelé marcou na carreira, segundo a contagem oficial do Santos e da seleção?",
+      "options": [
+        "1.283",
+        "1.000",
+        "1.091",
+        "1.364",
+        "982",
+        "1.150"
+      ],
+      "answer": 0,
+      "fact": "A contagem inclui jogos amistosos, o que gera discussão até hoje."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos gols Pelé marcou pela seleção brasileira, em jogos oficiais da FIFA?",
+      "options": [
+        "77",
+        "95",
+        "64",
+        "81",
+        "58",
+        "102"
+      ],
+      "answer": 0,
+      "fact": "Neymar ultrapassou essa marca em 2023."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi disputada a primeira Copa do Mundo de futebol?",
+      "options": [
+        "1930",
+        "1924",
+        "1934",
+        "1938",
+        "1926",
+        "1950"
+      ],
+      "answer": 0,
+      "fact": "A primeira Copa teve só 13 seleções."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas seleções participaram da primeira Copa do Mundo, em 1930?",
+      "options": [
+        "13",
+        "8",
+        "16",
+        "24",
+        "11",
+        "32"
+      ],
+      "answer": 0,
+      "fact": "Só quatro seleções europeias aceitaram atravessar o oceano até o Uruguai."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas seleções vão disputar a Copa do Mundo de 2026?",
+      "options": [
+        "48",
+        "32",
+        "40",
+        "36",
+        "64",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "É o primeiro aumento desde 1998, quando a Copa passou a ter 32 seleções."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi o público oficial da final da Copa de 1950, no Maracanã?",
+      "options": [
+        "Cerca de 173 mil",
+        "Cerca de 80 mil",
+        "Cerca de 120 mil",
+        "Cerca de 250 mil",
+        "Cerca de 60 mil",
+        "Cerca de 300 mil"
+      ],
+      "answer": 0,
+      "fact": "Estima-se que o público real tenha passado de 200 mil pessoas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a maior goleada da história das Copas do Mundo?",
+      "options": [
+        "Hungria 10 x 1 El Salvador",
+        "Alemanha 8 x 0 Arábia Saudita",
+        "Brasil 7 x 1 Alemanha",
+        "Iugoslávia 9 x 0 Zaire",
+        "Hungria 9 x 0 Coreia do Sul",
+        "Inglaterra 6 x 1 Panamá"
+      ],
+      "answer": 0,
+      "fact": "O jogo aconteceu na Copa de 1982, na Espanha."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos gols Just Fontaine marcou numa única Copa, o recorde, em 1958?",
+      "options": [
+        "13",
+        "9",
+        "11",
+        "15",
+        "10",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Ele jogou com chuteiras emprestadas, porque as dele tinham estragado."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos gols Miroslav Klose marcou em Copas do Mundo, o recorde masculino?",
+      "options": [
+        "16",
+        "15",
+        "14",
+        "13",
+        "18",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Ele passou Ronaldo, que tinha 15, no 7 a 1 de 2014."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos gols Marta marcou em Copas do Mundo, o recorde entre homens e mulheres?",
+      "options": [
+        "17",
+        "15",
+        "14",
+        "16",
+        "19",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Marta jogou seis Copas do Mundo, de 2003 a 2023."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o recorde mundial masculino dos 100 metros rasos?",
+      "options": [
+        "9,58 s",
+        "9,63 s",
+        "9,69 s",
+        "9,72 s",
+        "9,49 s",
+        "9,79 s"
+      ],
+      "answer": 0,
+      "fact": "Usain Bolt também tem o recorde dos 200 metros, com 19,19 s."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual era o recorde mundial masculino da maratona em 2024?",
+      "options": [
+        "2h00min35s",
+        "1h59min40s",
+        "2h01min09s",
+        "2h02min57s",
+        "2h03min38s",
+        "2h05min12s"
+      ],
+      "answer": 0,
+      "fact": "O recorde era do queniano Kelvin Kiptum, morto num acidente de carro em 2024."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a velocidade máxima aproximada de Usain Bolt no recorde dos 100 m?",
+      "options": [
+        "Cerca de 44 km/h",
+        "Cerca de 36 km/h",
+        "Cerca de 40 km/h",
+        "Cerca de 52 km/h",
+        "Cerca de 60 km/h",
+        "Cerca de 32 km/h"
+      ],
+      "answer": 0,
+      "fact": "Ele atingiu essa velocidade entre os 60 e os 80 metros da prova."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual era o recorde mundial do salto com vara masculino no fim de 2024?",
+      "options": [
+        "6,26 m",
+        "6,14 m",
+        "6,02 m",
+        "6,40 m",
+        "5,96 m",
+        "6,51 m"
+      ],
+      "answer": 0,
+      "fact": "O sueco Armand Duplantis vem quebrando o próprio recorde centímetro a centímetro."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos ouros olímpicos Michael Phelps ganhou na carreira?",
+      "options": [
+        "23",
+        "18",
+        "20",
+        "28",
+        "15",
+        "25"
+      ],
+      "answer": 0,
+      "fact": "No total, ele ganhou 28 medalhas olímpicas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas medalhas olímpicas o Brasil ganhou em Paris 2024?",
+      "options": [
+        "20",
+        "15",
+        "21",
+        "17",
+        "25",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira vez que as mulheres ganharam mais medalhas que os homens pelo Brasil."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas medalhas o Brasil ganhou na sua primeira participação olímpica?",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "5",
+        "0",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "Foram um ouro, uma prata e um bronze, todos no tiro esportivo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas vezes Ayrton Senna largou na pole position na Fórmula 1?",
+      "options": [
+        "65",
+        "41",
+        "52",
+        "72",
+        "80",
+        "38"
+      ],
+      "answer": 0,
+      "fact": "O recorde de poles de Senna só foi batido por Michael Schumacher, em 2006."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Ayrton Senna ganhou o seu primeiro título mundial de Fórmula 1?",
+      "options": [
+        "1988",
+        "1985",
+        "1986",
+        "1990",
+        "1991",
+        "1984"
+      ],
+      "answer": 0,
+      "fact": "Senna foi campeão em 1988, 1990 e 1991, sempre pela McLaren."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Guga ganhou Roland Garros pela primeira vez, como número 66 do mundo?",
+      "options": [
+        "1997",
+        "1995",
+        "1996",
+        "1998",
+        "1999",
+        "2000"
+      ],
+      "answer": 0,
+      "fact": "Ele foi o primeiro brasileiro a vencer um Grand Slam em simples no masculino."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas medalhas de ouro paralímpicas o nadador Daniel Dias ganhou?",
+      "options": [
+        "14",
+        "8",
+        "10",
+        "12",
+        "18",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "Ele ganhou 27 medalhas paralímpicas no total."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o peso oficial de uma bola de basquete masculina, aproximadamente?",
+      "options": [
+        "Cerca de 600 gramas",
+        "Cerca de 300 gramas",
+        "Cerca de 450 gramas",
+        "Cerca de 900 gramas",
+        "Cerca de 1,2 kg",
+        "Cerca de 750 gramas"
+      ],
+      "answer": 0,
+      "fact": "A bola usada no basquete feminino é um pouco menor e mais leve."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos jogos, aproximadamente, Pelé disputou na carreira?",
+      "options": [
+        "Cerca de 1.360",
+        "Cerca de 800",
+        "Cerca de 1.000",
+        "Cerca de 1.700",
+        "Cerca de 2.100",
+        "Cerca de 600"
+      ],
+      "answer": 0,
+      "fact": "Muitos desses jogos foram amistosos do Santos em excursões pelo mundo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundado o Clube de Regatas do Flamengo?",
+      "options": [
+        "1895",
+        "1902",
+        "1911",
+        "1889",
+        "1920",
+        "1899"
+      ],
+      "answer": 0,
+      "fact": "O clube nasceu dedicado ao remo; o futebol só chegou em 1911."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que seleção ganhou a Copa do Mundo de 2010?",
+      "options": [
+        "Espanha",
+        "Holanda",
+        "Alemanha",
+        "Brasil"
+      ],
+      "answer": 0,
+      "fact": "O gol do título foi marcado por Iniesta, na prorrogação da final."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que judoca brasileiro ganhou o ouro em Barcelona 1992?",
+      "options": [
+        "Rogério Sampaio",
+        "Aurélio Miguel",
+        "Flávio Canto",
+        "Tiago Camilo"
+      ],
+      "answer": 0,
+      "fact": "Rogério Sampaio lutava na categoria meio-leve."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que craque da seleção de 1982 era chamado de \"Galinho de Quintino\"?",
+      "options": [
+        "Zico",
+        "Sócrates",
+        "Falcão",
+        "Éder"
+      ],
+      "answer": 0,
+      "fact": "Zico é o maior artilheiro da história do Flamengo."
     }
   ]
 }

@@ -4112,6 +4112,1374 @@
       ],
       "answer": 0,
       "fact": "Só cerca de 700 sobreviveram."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que povo antigo é famoso pelos deuses do Olimpo, como Zeus e Atena?",
+      "options": [
+        "Gregos",
+        "Romanos",
+        "Egípcios",
+        "Vikings"
+      ],
+      "answer": 0,
+      "fact": "Zeus era o rei dos deuses e morava no monte Olimpo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que antigo império tinha Roma como capital?",
+      "options": [
+        "Império Romano",
+        "Império Persa",
+        "Império Otomano",
+        "Império Mongol"
+      ],
+      "answer": 0,
+      "fact": "No auge, o Império Romano ia da Inglaterra até o Egito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que objeto os cavaleiros medievais usavam para proteger o corpo nas batalhas?",
+      "options": [
+        "Armadura",
+        "Toga",
+        "Túnica",
+        "Capa"
+      ],
+      "answer": 0,
+      "fact": "Uma armadura completa podia pesar de 20 a 25 quilos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamavam as grandes construções de pedra onde viviam reis e nobres na Idade Média?",
+      "options": [
+        "Castelos",
+        "Pirâmides",
+        "Templos",
+        "Aquedutos"
+      ],
+      "answer": 0,
+      "fact": "Muitos castelos tinham um fosso cheio de água ao redor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o governante de um reino?",
+      "options": [
+        "Rei",
+        "Presidente",
+        "Governador",
+        "Prefeito"
+      ],
+      "answer": 0,
+      "fact": "Num reino, o poder costuma passar de pai para filho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que muralha gigante foi construída para proteger a China de invasores?",
+      "options": [
+        "Grande Muralha",
+        "Muralha de Adriano",
+        "Muro de Berlim",
+        "Muralha de Constantinopla"
+      ],
+      "answer": 0,
+      "fact": "A Grande Muralha não é visível a olho nu do espaço, ao contrário do que diz a lenda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que guerra o Brasil enviou soldados, os \"pracinhas\", para lutar na Itália?",
+      "options": [
+        "Segunda Guerra Mundial",
+        "Primeira Guerra Mundial",
+        "Guerra do Paraguai",
+        "Guerra da Coreia"
+      ],
+      "answer": 0,
+      "fact": "Os pracinhas lutaram ao lado dos Aliados, contra os nazistas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal os antigos egípcios consideravam sagrado e mumificavam aos milhares?",
+      "options": [
+        "Gato",
+        "Cachorro",
+        "Cavalo",
+        "Porco"
+      ],
+      "answer": 0,
+      "fact": "A deusa Bastet era representada com cabeça de gato."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que povo viveu no Brasil antes da chegada dos portugueses?",
+      "options": [
+        "Povos indígenas",
+        "Povos vikings",
+        "Colonos romanos",
+        "Guerreiros astecas"
+      ],
+      "answer": 0,
+      "fact": "Estima-se que havia milhões de indígenas no território brasileiro em 1500."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamavam os navegadores que atacavam navios e escondiam tesouros, segundo as histórias?",
+      "options": [
+        "Piratas",
+        "Vikings",
+        "Cruzados",
+        "Bandeirantes"
+      ],
+      "answer": 0,
+      "fact": "O pirata Barba Negra aterrorizou o Caribe no começo do século XVIII."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de governo existe quando o povo escolhe seus líderes pelo voto?",
+      "options": [
+        "Democracia",
+        "Monarquia",
+        "Ditadura",
+        "Anarquia"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"democracia\" vem do grego e quer dizer \"governo do povo\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de governo é comandado por um rei ou uma rainha?",
+      "options": [
+        "Monarquia",
+        "República",
+        "Democracia direta",
+        "Anarquia"
+      ],
+      "answer": 0,
+      "fact": "Ainda existem monarquias na Europa, como no Reino Unido, na Espanha e na Suécia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país surgiu o Carnaval como o Brasil conhece hoje, com o entrudo?",
+      "options": [
+        "Portugal",
+        "Itália",
+        "França",
+        "Espanha"
+      ],
+      "answer": 0,
+      "fact": "O entrudo era uma brincadeira de jogar água, farinha e lama nas pessoas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cientista polonesa ganhou dois prêmios Nobel, em física e em química?",
+      "options": [
+        "Marie Curie",
+        "Rosalind Franklin",
+        "Ada Lovelace",
+        "Lise Meitner"
+      ],
+      "answer": 0,
+      "fact": "Ela foi a primeira mulher a ganhar um Nobel, em 1903."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país atual nasceu Cristóvão Colombo?",
+      "options": [
+        "Itália",
+        "Espanha",
+        "Portugal",
+        "França"
+      ],
+      "answer": 0,
+      "fact": "Colombo fez quatro viagens às Américas e morreu acreditando ter chegado à Ásia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pintor italiano do Renascimento também desenhou máquinas voadoras?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Rafael",
+        "Botticelli"
+      ],
+      "answer": 0,
+      "fact": "Muitos dos inventos de Leonardo só foram testados séculos depois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cientista italiano usou um telescópio para observar as luas de Júpiter?",
+      "options": [
+        "Galileu Galilei",
+        "Isaac Newton",
+        "Copérnico",
+        "Kepler"
+      ],
+      "answer": 0,
+      "fact": "As quatro maiores luas de Júpiter são chamadas de luas galileanas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país europeu colonizou a Índia, até a independência em 1947?",
+      "options": [
+        "Reino Unido",
+        "França",
+        "Portugal",
+        "Holanda"
+      ],
+      "answer": 0,
+      "fact": "Gandhi liderou a luta pela independência com protestos sem violência."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que continente aconteceu a maior parte das batalhas da Primeira Guerra Mundial?",
+      "options": [
+        "Europa",
+        "Ásia",
+        "África",
+        "América"
+      ],
+      "answer": 0,
+      "fact": "A guerra deixou cerca de 17 milhões de mortos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que cidade fica o Museu do Louvre?",
+      "options": [
+        "Paris",
+        "Londres",
+        "Roma",
+        "Madri"
+      ],
+      "answer": 0,
+      "fact": "O Louvre foi um palácio real antes de virar museu, em 1793."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país europeu mandou muitos imigrantes para o Sul do Brasil, que fundaram cidades como Blumenau?",
+      "options": [
+        "Alemanha",
+        "Inglaterra",
+        "Holanda",
+        "Rússia"
+      ],
+      "answer": 0,
+      "fact": "Blumenau foi fundada em 1850 pelo alemão Hermann Blumenau."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que região do Brasil foi construída Brasília?",
+      "options": [
+        "Centro-Oeste",
+        "Sudeste",
+        "Nordeste",
+        "Norte"
+      ],
+      "answer": 0,
+      "fact": "A ideia de levar a capital para o interior já aparecia na Constituição de 1891."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país europeu colonizou Angola e Moçambique?",
+      "options": [
+        "Portugal",
+        "Espanha",
+        "França",
+        "Inglaterra"
+      ],
+      "answer": 0,
+      "fact": "Angola e Moçambique ficaram independentes em 1975."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que imperador romano deu nome ao mês de agosto?",
+      "options": [
+        "Augusto",
+        "Júlio César",
+        "Nero",
+        "Constantino"
+      ],
+      "answer": 0,
+      "fact": "Antes, o mês se chamava \"sextilis\", por ser o sexto do antigo calendário romano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica Hiroshima, cidade atingida por uma bomba atômica em 1945?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia",
+        "Vietnã"
+      ],
+      "answer": 0,
+      "fact": "A bomba foi lançada em 6 de agosto de 1945."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país teve a revolução de 1917 que levou os comunistas ao poder?",
+      "options": [
+        "Rússia",
+        "China",
+        "Cuba",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "A revolução acabou com o governo dos czares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que roupa os astronautas usam para respirar e se proteger no espaço?",
+      "options": [
+        "Traje espacial",
+        "Paraquedas",
+        "Armadura",
+        "Roupa de mergulho"
+      ],
+      "answer": 0,
+      "fact": "O traje usado na Lua pesava cerca de 80 quilos na Terra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que povo antigo construía estradas tão boas que se dizia que \"todos os caminhos levam\" à sua capital?",
+      "options": [
+        "Romanos",
+        "Gregos",
+        "Egípcios",
+        "Persas"
+      ],
+      "answer": 0,
+      "fact": "A Via Ápia, começada em 312 a.C., ainda existe em partes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país asiático foi governado por imperadores até 1912, quando virou república?",
+      "options": [
+        "China",
+        "Japão",
+        "Índia",
+        "Coreia"
+      ],
+      "answer": 0,
+      "fact": "O último imperador, Puyi, subiu ao trono com apenas 2 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cidade italiana foi o berço do Renascimento, governada pela família Médici?",
+      "options": [
+        "Florença",
+        "Roma",
+        "Veneza",
+        "Milão"
+      ],
+      "answer": 0,
+      "fact": "Os Médici patrocinaram artistas como Botticelli e Michelangelo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que rio foi o berço da civilização egípcia?",
+      "options": [
+        "Nilo",
+        "Eufrates",
+        "Tigre",
+        "Jordão"
+      ],
+      "answer": 0,
+      "fact": "As cheias do Nilo deixavam a terra fértil para a agricultura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Entre que dois rios ficava a Mesopotâmia?",
+      "options": [
+        "Tigre e Eufrates",
+        "Nilo e Jordão",
+        "Indo e Ganges",
+        "Danúbio e Reno"
+      ],
+      "answer": 0,
+      "fact": "\"Mesopotâmia\" significa \"terra entre rios\" em grego."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que povo antigo do Peru registrava números em cordões com nós, os quipos?",
+      "options": [
+        "Incas",
+        "Maias",
+        "Astecas",
+        "Olmecas"
+      ],
+      "answer": 0,
+      "fact": "Os incas não tinham escrita, mas guardavam informações nos quipos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que filósofo chinês ensinou o respeito aos mais velhos e à tradição, por volta de 500 a.C.?",
+      "options": [
+        "Confúcio",
+        "Lao-Tsé",
+        "Buda",
+        "Sun Tzu"
+      ],
+      "answer": 0,
+      "fact": "As ideias de Confúcio influenciaram a China por mais de 2 mil anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que historiador grego é chamado de \"pai da história\"?",
+      "options": [
+        "Heródoto",
+        "Tucídides",
+        "Plutarco",
+        "Xenofonte"
+      ],
+      "answer": 0,
+      "fact": "Heródoto viajou pelo Egito e pela Pérsia para escrever suas \"Histórias\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que povo germânico saqueou Roma em 410?",
+      "options": [
+        "Visigodos",
+        "Vândalos",
+        "Hunos",
+        "Francos"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"vandalismo\" vem dos vândalos, que saquearam Roma em 455."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que líder dos hunos aterrorizou o Império Romano no século V?",
+      "options": [
+        "Átila",
+        "Gengis Khan",
+        "Alarico",
+        "Odoacro"
+      ],
+      "answer": 0,
+      "fact": "Átila era chamado de \"Flagelo de Deus\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano os árabes chegaram à Península Ibérica, iniciando quase 800 anos de domínio?",
+      "options": [
+        "711",
+        "476",
+        "1066",
+        "1095"
+      ],
+      "answer": 0,
+      "fact": "O domínio muçulmano terminou em 1492, com a queda de Granada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano terminou a Reconquista, com a queda de Granada?",
+      "options": [
+        "1492",
+        "1453",
+        "1415",
+        "1500"
+      ],
+      "answer": 0,
+      "fact": "Foi o mesmo ano em que Colombo chegou à América."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que reis espanhóis financiaram a viagem de Cristóvão Colombo?",
+      "options": [
+        "Fernando e Isabel",
+        "Carlos V e Isabel",
+        "Filipe II e Maria",
+        "Dom Manuel e Leonor"
+      ],
+      "answer": 0,
+      "fact": "Os dois eram chamados de \"Reis Católicos\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tratado dividiu as terras do Novo Mundo entre Portugal e Espanha, antes da chegada ao Brasil?",
+      "options": [
+        "Tratado de Tordesilhas",
+        "Tratado de Madri",
+        "Tratado de Versalhes",
+        "Tratado de Lisboa"
+      ],
+      "answer": 0,
+      "fact": "A linha passava a 370 léguas a oeste de Cabo Verde."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que século Pedro Álvares Cabral chegou ao Brasil?",
+      "options": [
+        "XV",
+        "XVI",
+        "XIV",
+        "XVII"
+      ],
+      "answer": 0,
+      "fact": "O ano de 1500 ainda pertence ao século XV, que vai de 1401 a 1500."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamava a divisão do Brasil colonial em grandes faixas de terra entregues a nobres?",
+      "options": [
+        "Capitanias hereditárias",
+        "Sesmarias",
+        "Províncias",
+        "Comarcas"
+      ],
+      "answer": 0,
+      "fact": "Só duas capitanias prosperaram de verdade: Pernambuco e São Vicente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que povo antigo tinha um calendário que, segundo boatos, previa o fim do mundo em 2012?",
+      "options": [
+        "Maias",
+        "Astecas",
+        "Incas",
+        "Toltecas"
+      ],
+      "answer": 0,
+      "fact": "O calendário maia só encerrava um grande ciclo, sem prever nenhuma catástrofe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que movimento dos anos 1920 reuniu jovens oficiais do Exército contra a República Velha?",
+      "options": [
+        "Tenentismo",
+        "Integralismo",
+        "Modernismo",
+        "Coronelismo"
+      ],
+      "answer": 0,
+      "fact": "Os tenentes defendiam, entre outras coisas, o voto secreto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cidade era a capital de Minas Gerais na época da Inconfidência?",
+      "options": [
+        "Vila Rica",
+        "Mariana",
+        "São João del-Rei",
+        "Sabará"
+      ],
+      "answer": 0,
+      "fact": "Vila Rica é a atual Ouro Preto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a família real portuguesa chegou ao Brasil?",
+      "options": [
+        "1808",
+        "1789",
+        "1822",
+        "1815"
+      ],
+      "answer": 0,
+      "fact": "A família fugiu de Portugal por causa da invasão das tropas de Napoleão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que país europeu dominou a atual Indonésia por séculos, com a Companhia das Índias Orientais?",
+      "options": [
+        "Holanda",
+        "Portugal",
+        "Inglaterra",
+        "Espanha"
+      ],
+      "answer": 0,
+      "fact": "A Indonésia declarou a independência em 1945."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamava a moeda criada em 1986 pelo plano econômico do governo Sarney?",
+      "options": [
+        "Cruzado",
+        "Cruzeiro",
+        "Real",
+        "Cruzado novo"
+      ],
+      "answer": 0,
+      "fact": "O plano congelou os preços, e os \"fiscais do Sarney\" vigiavam os supermercados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que enfermeira inglesa ficou conhecida como \"a dama da lâmpada\" na Guerra da Crimeia?",
+      "options": [
+        "Florence Nightingale",
+        "Anna Nery",
+        "Clara Barton",
+        "Mary Seacole"
+      ],
+      "answer": 0,
+      "fact": "A brasileira Anna Nery é considerada a primeira enfermeira do Brasil, na Guerra do Paraguai."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que presidente do Brasil criou a Petrobras, em 1953?",
+      "options": [
+        "Getúlio Vargas",
+        "Juscelino Kubitschek",
+        "Eurico Gaspar Dutra",
+        "João Goulart"
+      ],
+      "answer": 0,
+      "fact": "A campanha \"O petróleo é nosso\" mobilizou o país na época."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que presidente foi deposto pelo golpe militar de 1964?",
+      "options": [
+        "João Goulart",
+        "Jânio Quadros",
+        "Juscelino Kubitschek",
+        "Getúlio Vargas"
+      ],
+      "answer": 0,
+      "fact": "João Goulart era chamado de Jango."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que reino criou, em 1478, a Inquisição que ficou famosa pela perseguição a judeus convertidos?",
+      "options": [
+        "Espanha",
+        "Portugal",
+        "Itália",
+        "França"
+      ],
+      "answer": 0,
+      "fact": "A Inquisição espanhola só foi abolida de vez em 1834."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que presidente usava uma vassoura como símbolo de campanha, prometendo \"varrer a corrupção\"?",
+      "options": [
+        "Jânio Quadros",
+        "Fernando Collor",
+        "Getúlio Vargas",
+        "Eurico Dutra"
+      ],
+      "answer": 0,
+      "fact": "Jânio também proibiu o biquíni em concursos de beleza e as brigas de galo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi realizada a primeira eleição direta para presidente depois da ditadura?",
+      "options": [
+        "1989",
+        "1985",
+        "1988",
+        "1990"
+      ],
+      "answer": 0,
+      "fact": "Foram 22 candidatos no primeiro turno."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que presidente brasileiro confiscou a poupança dos brasileiros em 1990?",
+      "options": [
+        "Fernando Collor",
+        "Itamar Franco",
+        "José Sarney",
+        "Fernando Henrique Cardoso"
+      ],
+      "answer": 0,
+      "fact": "O confisco fazia parte do Plano Collor, contra a inflação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que país asiático ficou fechado ao comércio ocidental por mais de 200 anos, até 1854?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "Os \"navios negros\" do comodoro americano Perry pressionaram o país a abrir os portos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que deputado presidiu a Assembleia Constituinte e chamou a Constituição de 1988 de \"Constituição Cidadã\"?",
+      "options": [
+        "Ulysses Guimarães",
+        "Tancredo Neves",
+        "Mário Covas",
+        "Franco Montoro"
+      ],
+      "answer": 0,
+      "fact": "Ulysses morreu num acidente de helicóptero em 1992."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lei de 1824 foi a primeira Constituição do Brasil, outorgada por Dom Pedro I?",
+      "options": [
+        "Constituição do Império",
+        "Lei Áurea",
+        "Ato Adicional",
+        "Carta Magna"
+      ],
+      "answer": 0,
+      "fact": "Ela foi a Constituição que durou mais tempo no Brasil: mais de 60 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que poder exclusivo do imperador foi criado pela Constituição de 1824?",
+      "options": [
+        "Poder Moderador",
+        "Poder Executivo",
+        "Poder Imperial",
+        "Poder Real"
+      ],
+      "answer": 0,
+      "fact": "Com ele, o imperador podia dissolver a Câmara e nomear ministros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que guerra entre portugueses e paulistas aconteceu em Minas Gerais, no começo do século XVIII?",
+      "options": [
+        "Guerra dos Emboabas",
+        "Guerra dos Mascates",
+        "Revolta de Beckman",
+        "Guerra dos Bárbaros"
+      ],
+      "answer": 0,
+      "fact": "\"Emboaba\" era como os paulistas chamavam os forasteiros, em tupi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que guerra opôs os comerciantes portugueses do Recife e os senhores de engenho de Olinda, em 1710?",
+      "options": [
+        "Guerra dos Mascates",
+        "Guerra dos Emboabas",
+        "Insurreição Pernambucana",
+        "Revolução Praieira"
+      ],
+      "answer": 0,
+      "fact": "\"Mascate\" era um apelido dado aos comerciantes do Recife."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que revolta de 1817, em Pernambuco, chegou a proclamar uma república?",
+      "options": [
+        "Revolução Pernambucana",
+        "Confederação do Equador",
+        "Revolução Praieira",
+        "Guerra dos Mascates"
+      ],
+      "answer": 0,
+      "fact": "O movimento durou cerca de 75 dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que movimento de 1824 tentou criar uma república no Nordeste, com Frei Caneca?",
+      "options": [
+        "Confederação do Equador",
+        "Revolução Pernambucana",
+        "Sabinada",
+        "Balaiada"
+      ],
+      "answer": 0,
+      "fact": "Frei Caneca foi condenado à forca, mas os carrascos se recusaram, e ele acabou fuzilado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que revolta aconteceu no Maranhão entre 1838 e 1841?",
+      "options": [
+        "Balaiada",
+        "Cabanagem",
+        "Sabinada",
+        "Farroupilha"
+      ],
+      "answer": 0,
+      "fact": "O nome vem do apelido de um dos líderes, que fazia balaios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que revolta baiana de 1837 a 1838 proclamou uma república temporária em Salvador?",
+      "options": [
+        "Sabinada",
+        "Balaiada",
+        "Revolta dos Malês",
+        "Conjuração Baiana"
+      ],
+      "answer": 0,
+      "fact": "O nome vem do médico Francisco Sabino, um dos líderes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que guerra no interior de Santa Catarina e do Paraná, entre 1912 e 1916, envolveu camponeses e monges?",
+      "options": [
+        "Guerra do Contestado",
+        "Guerra de Canudos",
+        "Revolução Federalista",
+        "Guerra dos Farrapos"
+      ],
+      "answer": 0,
+      "fact": "A região disputada era o território \"contestado\" entre os dois estados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que governador gaúcho liderou a Campanha da Legalidade, em 1961, para garantir a posse de Jango?",
+      "options": [
+        "Leonel Brizola",
+        "Ulysses Guimarães",
+        "Miguel Arraes",
+        "Carlos Lacerda"
+      ],
+      "answer": 0,
+      "fact": "Brizola usou uma rede de rádios para mobilizar a população."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que militante comunista alemã, esposa de Prestes, foi entregue aos nazistas por Getúlio Vargas?",
+      "options": [
+        "Olga Benário",
+        "Rosa Luxemburgo",
+        "Pagu",
+        "Clara Zetkin"
+      ],
+      "answer": 0,
+      "fact": "A história dela virou livro de Fernando Morais e filme, em 2004."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que escritora e militante modernista, chamada de Pagu, foi presa várias vezes nos anos 1930?",
+      "options": [
+        "Patrícia Galvão",
+        "Tarsila do Amaral",
+        "Anita Malfatti",
+        "Rachel de Queiroz"
+      ],
+      "answer": 0,
+      "fact": "Pagu foi a primeira mulher presa por motivos políticos no Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que arquiduque austríaco foi imperador do México e acabou fuzilado em 1867?",
+      "options": [
+        "Maximiliano I",
+        "Napoleão III",
+        "Francisco José",
+        "Luís Filipe"
+      ],
+      "answer": 0,
+      "fact": "Ele foi levado ao trono com o apoio da França de Napoleão III."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que imperador do Império Austro-Húngaro reinou de 1848 a 1916?",
+      "options": [
+        "Francisco José",
+        "Maximiliano",
+        "Guilherme II",
+        "Carlos I"
+      ],
+      "answer": 0,
+      "fact": "Ele foi casado com a imperatriz Elisabeth, a famosa Sissi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que arquiduque foi assassinado em Sarajevo, em 1914, dando início à Primeira Guerra?",
+      "options": [
+        "Francisco Ferdinando",
+        "Francisco José",
+        "Guilherme II",
+        "Nicolau II"
+      ],
+      "answer": 0,
+      "fact": "O assassino foi o jovem sérvio-bósnio Gavrilo Princip."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade antiga do México tem as Pirâmides do Sol e da Lua e já estava abandonada quando os astecas chegaram?",
+      "options": [
+        "Teotihuacán",
+        "Tenochtitlán",
+        "Chichén Itzá",
+        "Tikal"
+      ],
+      "answer": 0,
+      "fact": "O nome, dado pelos astecas, significa \"lugar onde nascem os deuses\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que monge místico tinha grande influência sobre a família do último czar russo?",
+      "options": [
+        "Rasputin",
+        "Trotsky",
+        "Lênin",
+        "Stálin"
+      ],
+      "answer": 0,
+      "fact": "Rasputin sobreviveu a envenenamento e tiros antes de ser jogado num rio congelado, segundo a lenda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que revolucionário russo criou o Exército Vermelho e foi assassinado no México em 1940?",
+      "options": [
+        "Leon Trotsky",
+        "Lênin",
+        "Stálin",
+        "Bukharin"
+      ],
+      "answer": 0,
+      "fact": "Trotsky foi morto com uma picareta de gelo por um agente de Stálin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade foi palco da maior batalha de tanques da história, em 1943, na União Soviética?",
+      "options": [
+        "Kursk",
+        "Stalingrado",
+        "Leningrado",
+        "Moscou"
+      ],
+      "answer": 0,
+      "fact": "A batalha de Kursk reuniu cerca de 6 mil tanques."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade soviética ficou cercada pelos nazistas por quase 900 dias?",
+      "options": [
+        "Leningrado",
+        "Stalingrado",
+        "Moscou",
+        "Kiev"
+      ],
+      "answer": 0,
+      "fact": "Hoje a cidade se chama São Petersburgo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que batalha de 1942, no Pacífico, foi a virada dos EUA contra o Japão?",
+      "options": [
+        "Batalha de Midway",
+        "Batalha de Iwo Jima",
+        "Batalha de Okinawa",
+        "Pearl Harbor"
+      ],
+      "answer": 0,
+      "fact": "Os japoneses perderam quatro porta-aviões em Midway."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que força militar brasileira lutou na Itália na Segunda Guerra?",
+      "options": [
+        "Força Expedicionária Brasileira",
+        "Legião Brasileira",
+        "Exército Verde-Amarelo",
+        "Brigada Tupiniquim"
+      ],
+      "answer": 0,
+      "fact": "O lema dos pracinhas era \"A cobra vai fumar\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que monte italiano foi tomado pelos pracinhas brasileiros em 1945?",
+      "options": [
+        "Monte Castello",
+        "Monte Cassino",
+        "Monte Bianco",
+        "Monte Etna"
+      ],
+      "answer": 0,
+      "fact": "A conquista de Monte Castello levou vários ataques ao longo de três meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que julgamento, entre 1945 e 1946, condenou líderes nazistas?",
+      "options": [
+        "Tribunal de Nuremberg",
+        "Tribunal de Haia",
+        "Julgamento de Eichmann",
+        "Tribunal de Tóquio"
+      ],
+      "answer": 0,
+      "fact": "Doze réus foram condenados à morte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ponte aérea levou alimentos a Berlim Ocidental durante o bloqueio soviético de 1948 e 1949?",
+      "options": [
+        "Ponte Aérea de Berlim",
+        "Plano Marshall",
+        "Operação Overlord",
+        "Operação Barbarossa"
+      ],
+      "answer": 0,
+      "fact": "Em alguns momentos, um avião pousava em Berlim a cada três minutos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que país foi o primeiro a dar às mulheres o direito de votar na América Latina, em 1929?",
+      "options": [
+        "Equador",
+        "Brasil",
+        "Uruguai",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "O Brasil garantiu o voto feminino em 1932."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi a primeira mulher eleita prefeita no Brasil, em 1928?",
+      "options": [
+        "Alzira Soriano",
+        "Bertha Lutz",
+        "Carlota Pereira de Queirós",
+        "Nísia Floresta"
+      ],
+      "answer": 0,
+      "fact": "Alzira Soriano foi eleita em Lajes, no Rio Grande do Norte."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi a primeira eleição em que as mulheres brasileiras votaram para presidente?",
+      "options": [
+        "1945",
+        "1932",
+        "1934",
+        "1950",
+        "1960",
+        "1937"
+      ],
+      "answer": 0,
+      "fact": "Embora o voto feminino tenha sido garantido em 1932, não houve eleição presidencial direta até 1945."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos durou o Império do Brasil, de 1822 a 1889?",
+      "options": [
+        "67",
+        "58",
+        "75",
+        "81",
+        "49",
+        "63"
+      ],
+      "answer": 0,
+      "fact": "Foram dois imperadores e um longo período de regência entre eles."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos Dom Pedro II reinou, contando a partir da maioridade, em 1840?",
+      "options": [
+        "49",
+        "58",
+        "36",
+        "42",
+        "65",
+        "30"
+      ],
+      "answer": 0,
+      "fact": "Ele foi deposto pela Proclamação da República, em 1889, e morreu em Paris dois anos depois."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Com quantos anos Dom Pedro II foi declarado maior de idade e assumiu o trono?",
+      "options": [
+        "14",
+        "18",
+        "21",
+        "12",
+        "16",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "O \"Golpe da Maioridade\" antecipou a posse para acabar com as revoltas do período regencial."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas pessoas, aproximadamente, foram trazidas da África para o Brasil como escravizadas?",
+      "options": [
+        "Cerca de 4,8 milhões",
+        "Cerca de 500 mil",
+        "Cerca de 1,5 milhão",
+        "Cerca de 12 milhões",
+        "Cerca de 9 milhões",
+        "Cerca de 200 mil"
+      ],
+      "answer": 0,
+      "fact": "O Brasil foi o país que mais recebeu africanos escravizados nas Américas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos soldados brasileiros, aproximadamente, foram enviados à Itália na Segunda Guerra?",
+      "options": [
+        "Cerca de 25 mil",
+        "Cerca de 2 mil",
+        "Cerca de 8 mil",
+        "Cerca de 60 mil",
+        "Cerca de 150 mil",
+        "Cerca de 500"
+      ],
+      "answer": 0,
+      "fact": "Cerca de 450 deles morreram em combate."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos durou a construção da Grande Pirâmide de Gizé, segundo estimativas?",
+      "options": [
+        "Cerca de 20 anos",
+        "Cerca de 2 anos",
+        "Cerca de 5 anos",
+        "Cerca de 50 anos",
+        "Cerca de 100 anos",
+        "Cerca de 200 anos"
+      ],
+      "answer": 0,
+      "fact": "Os construtores não eram escravizados, como se pensava: eram trabalhadores pagos, organizados em equipes."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos blocos de pedra, aproximadamente, formam a Grande Pirâmide de Gizé?",
+      "options": [
+        "Cerca de 2,3 milhões",
+        "Cerca de 50 mil",
+        "Cerca de 230 mil",
+        "Cerca de 10 milhões",
+        "Cerca de 800 mil",
+        "Cerca de 25 milhões"
+      ],
+      "answer": 0,
+      "fact": "Alguns blocos pesam mais de 50 toneladas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos durou o reinado de Luís XIV, o Rei Sol?",
+      "options": [
+        "72",
+        "45",
+        "54",
+        "61",
+        "80",
+        "38"
+      ],
+      "answer": 0,
+      "fact": "É o reinado mais longo de um monarca de um grande país europeu."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi criado o Banco do Brasil?",
+      "options": [
+        "1808",
+        "1822",
+        "1792",
+        "1850",
+        "1889",
+        "1763"
+      ],
+      "answer": 0,
+      "fact": "O banco foi criado por Dom João VI pouco depois de a família real chegar ao Brasil."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundada a Companhia de Jesus, a ordem dos jesuítas?",
+      "options": [
+        "1540",
+        "1500",
+        "1517",
+        "1565",
+        "1600",
+        "1492"
+      ],
+      "answer": 0,
+      "fact": "Os jesuítas chegaram ao Brasil em 1549, com Tomé de Sousa."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas teses Martinho Lutero publicou contra a venda de indulgências?",
+      "options": [
+        "95",
+        "10",
+        "45",
+        "33",
+        "120",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "O documento foi escrito em latim e logo traduzido e espalhado graças à imprensa."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi assinada a Declaração Universal dos Direitos Humanos?",
+      "options": [
+        "1948",
+        "1945",
+        "1919",
+        "1955",
+        "1963",
+        "1789"
+      ],
+      "answer": 0,
+      "fact": "O documento foi aprovado pela Assembleia Geral da ONU, em Paris."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos dias durou a Comuna de Paris, em 1871?",
+      "options": [
+        "72",
+        "7",
+        "30",
+        "150",
+        "365",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "Foi um dos primeiros governos operários da história."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos durou a Guerra Fria, de 1947 a 1991, aproximadamente?",
+      "options": [
+        "44",
+        "30",
+        "25",
+        "50",
+        "60",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "Nesse período, EUA e União Soviética nunca se enfrentaram diretamente numa guerra."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a União Soviética deixou de existir?",
+      "options": [
+        "1991",
+        "1989",
+        "1990",
+        "1993",
+        "1985",
+        "1995"
+      ],
+      "answer": 0,
+      "fact": "A bandeira soviética foi baixada do Kremlin no dia 25 de dezembro."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos soldados americanos, aproximadamente, morreram na Guerra do Vietnã?",
+      "options": [
+        "Cerca de 58 mil",
+        "Cerca de 5 mil",
+        "Cerca de 20 mil",
+        "Cerca de 150 mil",
+        "Cerca de 400 mil",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "Os nomes de todos eles estão gravados num memorial em Washington."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano morreu Cleópatra, a última rainha do Egito ptolomaico?",
+      "options": [
+        "30 a.C.",
+        "44 a.C.",
+        "69 a.C.",
+        "14 d.C.",
+        "1 a.C.",
+        "100 a.C."
+      ],
+      "answer": 0,
+      "fact": "Ela viveu mais perto da invenção do iPhone do que da construção da Grande Pirâmide."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que dia de 1500 a frota de Cabral partiu de Lisboa?",
+      "options": [
+        "9 de março",
+        "22 de abril",
+        "1º de janeiro",
+        "7 de setembro",
+        "12 de outubro",
+        "25 de dezembro"
+      ],
+      "answer": 0,
+      "fact": "A viagem até a costa brasileira levou cerca de 44 dias."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foram criados os primeiros cursos de Direito do Brasil, em São Paulo e Olinda?",
+      "options": [
+        "1827",
+        "1808",
+        "1792",
+        "1850",
+        "1889",
+        "1900"
+      ],
+      "answer": 0,
+      "fact": "Por isso, 11 de agosto é o Dia do Advogado no Brasil."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos navios restaram da frota de Fernão de Magalhães ao completar a volta ao mundo?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "0",
+        "5",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "O navio que completou a volta se chamava Victoria."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos homens, aproximadamente, voltaram da primeira volta ao mundo, de Magalhães?",
+      "options": [
+        "18",
+        "80",
+        "150",
+        "2",
+        "45",
+        "240"
+      ],
+      "answer": 0,
+      "fact": "Dos cerca de 240 que partiram, só esses voltaram; o próprio Magalhães morreu nas Filipinas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Galileu foi condenado pela Inquisição?",
+      "options": [
+        "1633",
+        "1564",
+        "1600",
+        "1610",
+        "1687",
+        "1543"
+      ],
+      "answer": 0,
+      "fact": "A Igreja só reconheceu oficialmente o erro em 1992."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos anos Galileu tinha quando foi condenado pela Inquisição?",
+      "options": [
+        "69",
+        "45",
+        "52",
+        "60",
+        "77",
+        "38"
+      ],
+      "answer": 0,
+      "fact": "Ele passou o resto da vida em prisão domiciliar, perto de Florença."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sistema da República Velha dava aos grandes fazendeiros o controle dos votos de uma região?",
+      "options": [
+        "Coronelismo",
+        "Tenentismo",
+        "Integralismo",
+        "Populismo"
+      ],
+      "answer": 0,
+      "fact": "O \"voto de cabresto\" era o voto controlado pelo coronel local."
     }
   ]
 }

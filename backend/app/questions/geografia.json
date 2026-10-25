@@ -4112,6 +4112,1374 @@
       ],
       "answer": 0,
       "fact": "É quase o dobro da área do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país ficam as pirâmides de Gizé?",
+      "options": [
+        "Egito",
+        "México",
+        "Peru",
+        "Sudão"
+      ],
+      "answer": 0,
+      "fact": "A Grande Pirâmide foi a construção mais alta feita pelo homem por cerca de 3.800 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica o Cristo Redentor?",
+      "options": [
+        "Brasil",
+        "Portugal",
+        "Argentina",
+        "México"
+      ],
+      "answer": 0,
+      "fact": "O Cristo foi eleito uma das Sete Novas Maravilhas do Mundo em 2007."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a Sagrada Família, a basílica de Gaudí?",
+      "options": [
+        "Espanha",
+        "Itália",
+        "Portugal",
+        "França"
+      ],
+      "answer": 0,
+      "fact": "A Sagrada Família fica em Barcelona."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Nova York?",
+      "options": [
+        "Estados Unidos",
+        "Canadá",
+        "Inglaterra",
+        "Austrália"
+      ],
+      "answer": 0,
+      "fact": "Nova York já se chamou Nova Amsterdã, quando era colônia holandesa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Toronto?",
+      "options": [
+        "Canadá",
+        "Estados Unidos",
+        "Austrália",
+        "Inglaterra"
+      ],
+      "answer": 0,
+      "fact": "A Torre CN, de Toronto, foi a estrutura mais alta do mundo por mais de 30 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Sydney?",
+      "options": [
+        "Austrália",
+        "Nova Zelândia",
+        "Canadá",
+        "Reino Unido"
+      ],
+      "answer": 0,
+      "fact": "Apesar de ser a maior cidade do país, Sydney não é a capital da Austrália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Tóquio?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "A região metropolitana de Tóquio é a mais populosa do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Lisboa?",
+      "options": [
+        "Portugal",
+        "Espanha",
+        "Brasil",
+        "Itália"
+      ],
+      "answer": 0,
+      "fact": "Lisboa é uma das capitais mais antigas da Europa Ocidental."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Buenos Aires?",
+      "options": [
+        "Argentina",
+        "Uruguai",
+        "Chile",
+        "Paraguai"
+      ],
+      "answer": 0,
+      "fact": "O nome da cidade quer dizer \"bons ares\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Berlim?",
+      "options": [
+        "Alemanha",
+        "Áustria",
+        "Polônia",
+        "Suíça"
+      ],
+      "answer": 0,
+      "fact": "O Muro de Berlim dividiu a cidade de 1961 a 1989."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Moscou?",
+      "options": [
+        "Rússia",
+        "Ucrânia",
+        "Polônia",
+        "Cazaquistão"
+      ],
+      "answer": 0,
+      "fact": "A Praça Vermelha, em Moscou, tem esse nome desde muito antes do comunismo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade do Cairo?",
+      "options": [
+        "Egito",
+        "Marrocos",
+        "Turquia",
+        "Arábia Saudita"
+      ],
+      "answer": 0,
+      "fact": "O Cairo é a maior cidade do mundo árabe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica a cidade de Pequim?",
+      "options": [
+        "China",
+        "Japão",
+        "Coreia do Sul",
+        "Vietnã"
+      ],
+      "answer": 0,
+      "fact": "A Cidade Proibida, em Pequim, foi o palácio dos imperadores chineses por quase 500 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior país do mundo em população, junto com a Índia?",
+      "options": [
+        "China",
+        "Estados Unidos",
+        "Indonésia",
+        "Brasil"
+      ],
+      "answer": 0,
+      "fact": "Índia e China têm, cada uma, mais de 1,4 bilhão de habitantes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país fica o rio Ganges, sagrado para os hindus?",
+      "options": [
+        "Índia",
+        "Paquistão",
+        "Nepal",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "Milhões de peregrinos se banham no Ganges na cidade de Varanasi."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país é chamado de \"Terra do Tango\"?",
+      "options": [
+        "Argentina",
+        "Uruguai",
+        "Espanha",
+        "Chile"
+      ],
+      "answer": 0,
+      "fact": "O tango nasceu nos bairros portuários de Buenos Aires e Montevidéu."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país tem como símbolos o pássaro kiwi e a cultura maori?",
+      "options": [
+        "Nova Zelândia",
+        "Austrália",
+        "Fiji",
+        "Havaí"
+      ],
+      "answer": 0,
+      "fact": "Os maoris chegaram à Nova Zelândia por volta do ano 1300."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes países fica na América do Sul?",
+      "options": [
+        "Peru",
+        "México",
+        "Cuba",
+        "Panamá"
+      ],
+      "answer": 0,
+      "fact": "A América do Sul tem 12 países independentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes países fica na África?",
+      "options": [
+        "Quênia",
+        "Tailândia",
+        "Peru",
+        "Grécia"
+      ],
+      "answer": 0,
+      "fact": "O Quênia é famoso pelos safáris e pelos corredores de longa distância."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes países fica na Oceania?",
+      "options": [
+        "Nova Zelândia",
+        "Indonésia",
+        "Japão",
+        "Filipinas"
+      ],
+      "answer": 0,
+      "fact": "A Nova Zelândia foi um dos últimos grandes territórios a ser habitados por humanos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes países fica na Europa?",
+      "options": [
+        "Polônia",
+        "Egito",
+        "Índia",
+        "Chile"
+      ],
+      "answer": 0,
+      "fact": "A Polônia faz fronteira com sete países."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que continente é formado por 12 países, incluindo o Brasil?",
+      "options": [
+        "América do Sul",
+        "América Central",
+        "América do Norte",
+        "Europa"
+      ],
+      "answer": 0,
+      "fact": "A Guiana Francesa fica na América do Sul, mas é parte da França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que continente fica o Japão?",
+      "options": [
+        "Ásia",
+        "Oceania",
+        "Europa",
+        "América do Norte"
+      ],
+      "answer": 0,
+      "fact": "O Japão fica sobre o encontro de quatro placas tectônicas, por isso tem tantos terremotos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes países fala espanhol?",
+      "options": [
+        "México",
+        "Brasil",
+        "Portugal",
+        "Canadá"
+      ],
+      "answer": 0,
+      "fact": "O México é o país com mais falantes nativos de espanhol do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes países é uma ilha?",
+      "options": [
+        "Islândia",
+        "Suíça",
+        "Bolívia",
+        "Hungria"
+      ],
+      "answer": 0,
+      "fact": "A Islândia fica sobre a fronteira entre duas placas tectônicas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o oceano entre a América e a Europa?",
+      "options": [
+        "Atlântico",
+        "Pacífico",
+        "Índico",
+        "Ártico"
+      ],
+      "answer": 0,
+      "fact": "O Atlântico fica cerca de 2,5 centímetros mais largo a cada ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que continente fica a Argentina?",
+      "options": [
+        "América do Sul",
+        "América Central",
+        "Europa",
+        "África"
+      ],
+      "answer": 0,
+      "fact": "A Argentina é o segundo maior país da América do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que oceano fica a oeste da América do Sul?",
+      "options": [
+        "Pacífico",
+        "Atlântico",
+        "Índico",
+        "Ártico"
+      ],
+      "answer": 0,
+      "fact": "O nome \"Pacífico\" foi dado por Fernão de Magalhães, que encontrou ali águas calmas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país fica ao norte dos Estados Unidos?",
+      "options": [
+        "Canadá",
+        "México",
+        "Groenlândia",
+        "Rússia"
+      ],
+      "answer": 0,
+      "fact": "A fronteira entre os dois países é a mais longa do mundo entre apenas dois países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da África do Sul que sedia o governo?",
+      "options": [
+        "Pretória",
+        "Joanesburgo",
+        "Cidade do Cabo",
+        "Durban"
+      ],
+      "answer": 0,
+      "fact": "A África do Sul tem três capitais: Pretória, Cidade do Cabo e Bloemfontein."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Nepal?",
+      "options": [
+        "Katmandu",
+        "Lhasa",
+        "Thimphu",
+        "Daca"
+      ],
+      "answer": 0,
+      "fact": "Katmandu fica a cerca de 1.400 metros de altitude."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Bangladesh?",
+      "options": [
+        "Daca",
+        "Katmandu",
+        "Calcutá",
+        "Karachi"
+      ],
+      "answer": 0,
+      "fact": "Daca é uma das cidades mais densamente povoadas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Camboja?",
+      "options": [
+        "Phnom Penh",
+        "Bangcoc",
+        "Vientiane",
+        "Hanói"
+      ],
+      "answer": 0,
+      "fact": "A moeda do Camboja é o riel, mas o dólar americano também é muito usado no país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Armênia?",
+      "options": [
+        "Ierevan",
+        "Tbilisi",
+        "Baku",
+        "Ancara"
+      ],
+      "answer": 0,
+      "fact": "Ierevan é uma das cidades habitadas mais antigas do mundo, fundada em 782 a.C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Guiana?",
+      "options": [
+        "Georgetown",
+        "Paramaribo",
+        "Caiena",
+        "Kingston"
+      ],
+      "answer": 0,
+      "fact": "Georgetown fica abaixo do nível do mar e é protegida por um grande muro contra as marés."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Suriname?",
+      "options": [
+        "Paramaribo",
+        "Georgetown",
+        "Caiena",
+        "Willemstad"
+      ],
+      "answer": 0,
+      "fact": "O Suriname tem o holandês como língua oficial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de El Salvador?",
+      "options": [
+        "San Salvador",
+        "Tegucigalpa",
+        "Manágua",
+        "Cidade da Guatemala"
+      ],
+      "answer": 0,
+      "fact": "El Salvador é o menor país da América Central."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Bielorrússia?",
+      "options": [
+        "Minsk",
+        "Kiev",
+        "Vilnius",
+        "Riga"
+      ],
+      "answer": 0,
+      "fact": "Minsk foi quase totalmente reconstruída depois da Segunda Guerra Mundial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Zâmbia?",
+      "options": [
+        "Lusaka",
+        "Harare",
+        "Lilongwe",
+        "Gaborone"
+      ],
+      "answer": 0,
+      "fact": "A Zâmbia divide com o Zimbábue as famosas Cataratas Vitória."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Geórgia, o país do Cáucaso?",
+      "options": [
+        "Tbilisi",
+        "Ierevan",
+        "Baku",
+        "Atlanta"
+      ],
+      "answer": 0,
+      "fact": "A Geórgia é considerada um dos berços do vinho, com tradição de 8 mil anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Azerbaijão?",
+      "options": [
+        "Baku",
+        "Tbilisi",
+        "Ierevan",
+        "Tashkent"
+      ],
+      "answer": 0,
+      "fact": "Baku fica abaixo do nível do mar, às margens do mar Cáspio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Malta?",
+      "options": [
+        "Valeta",
+        "Nicósia",
+        "Mdina",
+        "Palermo"
+      ],
+      "answer": 0,
+      "fact": "Valeta é uma das menores capitais da Europa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Chipre?",
+      "options": [
+        "Nicósia",
+        "Valeta",
+        "Atenas",
+        "Limassol"
+      ],
+      "answer": 0,
+      "fact": "Nicósia é a última capital dividida da Europa, entre as partes grega e turca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Kuwait?",
+      "options": [
+        "Cidade do Kuwait",
+        "Doha",
+        "Manama",
+        "Riad"
+      ],
+      "answer": 0,
+      "fact": "O dinar kuwaitiano é a moeda de maior valor do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Omã?",
+      "options": [
+        "Mascate",
+        "Doha",
+        "Manama",
+        "Abu Dhabi"
+      ],
+      "answer": 0,
+      "fact": "Omã é um dos países mais antigos do mundo árabe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital da Líbia?",
+      "options": [
+        "Trípoli",
+        "Túnis",
+        "Cairo",
+        "Cartum"
+      ],
+      "answer": 0,
+      "fact": "Também existe uma cidade chamada Trípoli no Líbano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Sudão?",
+      "options": [
+        "Cartum",
+        "Juba",
+        "Adis Abeba",
+        "Trípoli"
+      ],
+      "answer": 0,
+      "fact": "Em Cartum, o Nilo Azul e o Nilo Branco se encontram."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Uganda?",
+      "options": [
+        "Kampala",
+        "Nairóbi",
+        "Kigali",
+        "Dodoma"
+      ],
+      "answer": 0,
+      "fact": "Uganda é chamada de \"Pérola da África\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Ruanda?",
+      "options": [
+        "Kigali",
+        "Kampala",
+        "Bujumbura",
+        "Nairóbi"
+      ],
+      "answer": 0,
+      "fact": "Kigali é conhecida como uma das cidades mais limpas da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Zimbábue?",
+      "options": [
+        "Harare",
+        "Lusaka",
+        "Maputo",
+        "Gaborone"
+      ],
+      "answer": 0,
+      "fact": "Harare se chamava Salisbury até 1982."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Madagascar?",
+      "options": [
+        "Antananarivo",
+        "Maputo",
+        "Port Louis",
+        "Nairóbi"
+      ],
+      "answer": 0,
+      "fact": "Madagascar tem animais que só existem lá, como os lêmures."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Malawi?",
+      "options": [
+        "Lilongwe",
+        "Lusaka",
+        "Harare",
+        "Maputo"
+      ],
+      "answer": 0,
+      "fact": "O Lago Malawi ocupa cerca de um quinto do território do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Timor-Leste?",
+      "options": [
+        "Díli",
+        "Jacarta",
+        "Manila",
+        "Kupang"
+      ],
+      "answer": 0,
+      "fact": "O Timor-Leste se tornou independente em 2002, o primeiro país novo do século XXI."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital de Botsuana?",
+      "options": [
+        "Gaborone",
+        "Windhoek",
+        "Lusaka",
+        "Pretória"
+      ],
+      "answer": 0,
+      "fact": "Botsuana tem a maior população de elefantes da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país fica a cidade de Casablanca?",
+      "options": [
+        "Marrocos",
+        "Argélia",
+        "Tunísia",
+        "Egito"
+      ],
+      "answer": 0,
+      "fact": "O filme \"Casablanca\", de 1942, foi todo gravado em estúdios de Hollywood."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país fica a cidade de Cracóvia?",
+      "options": [
+        "Polônia",
+        "República Tcheca",
+        "Hungria",
+        "Eslováquia"
+      ],
+      "answer": 0,
+      "fact": "Cracóvia foi a capital da Polônia até o fim do século XVI."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica a cidade de Cusco, antiga capital inca?",
+      "options": [
+        "Peru",
+        "Bolívia",
+        "Equador",
+        "Chile"
+      ],
+      "answer": 0,
+      "fact": "Cusco fica a cerca de 3.400 metros de altitude."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica a cidade de Potosí, famosa pelas minas de prata?",
+      "options": [
+        "Bolívia",
+        "Peru",
+        "Chile",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "No século XVII, Potosí era uma das maiores cidades do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica a cidade de Kyoto, antiga capital imperial?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Vietnã"
+      ],
+      "answer": 0,
+      "fact": "Kyoto tem mais de 1.600 templos budistas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica a cidade de Lhasa, no Tibete?",
+      "options": [
+        "China",
+        "Nepal",
+        "Índia",
+        "Butão"
+      ],
+      "answer": 0,
+      "fact": "Lhasa fica a cerca de 3.650 metros de altitude."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio forma a fronteira entre a China e a Rússia, no extremo leste?",
+      "options": [
+        "Amur",
+        "Ussuri",
+        "Lena",
+        "Ienissei"
+      ],
+      "answer": 0,
+      "fact": "O Amur é chamado pelos chineses de Heilongjiang, o \"Rio do Dragão Negro\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica a cidade de Genebra, sede de vários órgãos da ONU?",
+      "options": [
+        "Suíça",
+        "França",
+        "Bélgica",
+        "Áustria"
+      ],
+      "answer": 0,
+      "fact": "O Jato d'Água de Genebra lança água a cerca de 140 metros de altura."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade holandesa é a sede do governo e do parlamento, apesar de não ser a capital oficial?",
+      "options": [
+        "Haia",
+        "Amsterdã",
+        "Roterdã",
+        "Utrecht"
+      ],
+      "answer": 0,
+      "fact": "Amsterdã é a capital oficial, mas o rei, o parlamento e o governo ficam em Haia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica o Lago Titicaca, além do Peru?",
+      "options": [
+        "Bolívia",
+        "Chile",
+        "Equador",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "O Titicaca é o lago navegável mais alto do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país fica o deserto do Namibe, um dos mais antigos do mundo?",
+      "options": [
+        "Namíbia",
+        "Angola",
+        "Botsuana",
+        "África do Sul"
+      ],
+      "answer": 0,
+      "fact": "As dunas do Namibe estão entre as mais altas do planeta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a montanha mais alta da Austrália continental?",
+      "options": [
+        "Monte Kosciuszko",
+        "Monte Cook",
+        "Uluru",
+        "Monte Wellington"
+      ],
+      "answer": 0,
+      "fact": "O Uluru é famoso, mas tem só cerca de 350 metros acima da planície."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cordilheira atravessa o Marrocos, a Argélia e a Tunísia?",
+      "options": [
+        "Atlas",
+        "Andes",
+        "Alpes",
+        "Cáucaso"
+      ],
+      "answer": 0,
+      "fact": "O ponto mais alto da cordilheira é o monte Toubkal, no Marrocos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que país tem a maior parte da Floresta Amazônica, depois do Brasil?",
+      "options": [
+        "Peru",
+        "Colômbia",
+        "Bolívia",
+        "Venezuela"
+      ],
+      "answer": 0,
+      "fact": "O Brasil tem cerca de 60% da floresta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio é o mais extenso da América do Norte?",
+      "options": [
+        "Missouri",
+        "Mississippi",
+        "Rio Grande",
+        "Yukon"
+      ],
+      "answer": 0,
+      "fact": "O Missouri é afluente do Mississippi, e juntos formam um dos maiores sistemas fluviais do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio passa pela cidade alemã de Dresden e por Hamburgo?",
+      "options": [
+        "Elba",
+        "Reno",
+        "Danúbio",
+        "Oder"
+      ],
+      "answer": 0,
+      "fact": "O Elba deságua no Mar do Norte, perto de Hamburgo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio passa por Colônia e Basileia e forma parte da fronteira entre França e Alemanha?",
+      "options": [
+        "Reno",
+        "Danúbio",
+        "Sena",
+        "Elba"
+      ],
+      "answer": 0,
+      "fact": "O Reno é uma das hidrovias mais movimentadas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio passa por Varsóvia?",
+      "options": [
+        "Vístula",
+        "Oder",
+        "Elba",
+        "Danúbio"
+      ],
+      "answer": 0,
+      "fact": "O Vístula é o rio mais longo da Polônia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio passa por Praga?",
+      "options": [
+        "Moldava",
+        "Danúbio",
+        "Elba",
+        "Reno"
+      ],
+      "answer": 0,
+      "fact": "A Ponte Carlos, sobre o Moldava, tem mais de 600 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio passa por Florença?",
+      "options": [
+        "Arno",
+        "Tibre",
+        "Pó",
+        "Ádige"
+      ],
+      "answer": 0,
+      "fact": "A Ponte Vecchio, sobre o Arno, tem lojas construídas sobre ela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio passa pela cidade do Porto, em Portugal?",
+      "options": [
+        "Douro",
+        "Tejo",
+        "Minho",
+        "Mondego"
+      ],
+      "answer": 0,
+      "fact": "O vinho do Porto era levado pelo rio em barcos chamados rabelos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que país pertence o arquipélago de Svalbard, terra de ursos-polares?",
+      "options": [
+        "Noruega",
+        "Dinamarca",
+        "Rússia",
+        "Islândia"
+      ],
+      "answer": 0,
+      "fact": "Em Svalbard fica um cofre que guarda sementes de plantas do mundo todo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio atravessa a Tailândia, o Laos, o Camboja e o Vietnã?",
+      "options": [
+        "Mekong",
+        "Ganges",
+        "Irrawaddy",
+        "Yangtzé"
+      ],
+      "answer": 0,
+      "fact": "O delta do Mekong é chamado de \"tigela de arroz\" do Vietnã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que mar fica entre a Suécia e a Finlândia, ao norte da Europa?",
+      "options": [
+        "Mar Báltico",
+        "Mar do Norte",
+        "Mar Branco",
+        "Mar de Barents"
+      ],
+      "answer": 0,
+      "fact": "A água do Báltico é pouco salgada, por causa dos muitos rios que desembocam nele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que mar separa a Grã-Bretanha da Noruega e da Dinamarca?",
+      "options": [
+        "Mar do Norte",
+        "Mar Báltico",
+        "Mar Celta",
+        "Mar da Irlanda"
+      ],
+      "answer": 0,
+      "fact": "O mar do Norte tem grandes reservas de petróleo e gás."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que canal separa a Inglaterra da França?",
+      "options": [
+        "Canal da Mancha",
+        "Canal de Suez",
+        "Estreito de Dover",
+        "Mar do Norte"
+      ],
+      "answer": 0,
+      "fact": "O Eurotúnel, sob o canal, tem cerca de 50 quilômetros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior lago de água doce do mundo em área, na fronteira entre EUA e Canadá?",
+      "options": [
+        "Lago Superior",
+        "Lago Michigan",
+        "Lago Huron",
+        "Lago Ontário"
+      ],
+      "answer": 0,
+      "fact": "O Lago Superior guarda cerca de 10% da água doce de superfície do planeta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país ficam as ruínas de Persépolis?",
+      "options": [
+        "Irã",
+        "Iraque",
+        "Turquia",
+        "Síria"
+      ],
+      "answer": 0,
+      "fact": "Persépolis foi a capital cerimonial do Império Persa, fundada por Dario I."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estreito separa a Península Malaia da ilha de Sumatra?",
+      "options": [
+        "Estreito de Malaca",
+        "Estreito de Ormuz",
+        "Estreito de Bering",
+        "Estreito de Magalhães"
+      ],
+      "answer": 0,
+      "fact": "É uma das rotas marítimas mais movimentadas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estreito, no sul do Chile, liga o Atlântico ao Pacífico?",
+      "options": [
+        "Estreito de Magalhães",
+        "Passagem de Drake",
+        "Canal de Beagle",
+        "Estreito de Gibraltar"
+      ],
+      "answer": 0,
+      "fact": "Fernão de Magalhães atravessou o estreito em 1520."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a extensão da Grande Muralha da China, somando todos os trechos?",
+      "options": [
+        "Cerca de 21 mil km",
+        "Cerca de 3 mil km",
+        "Cerca de 6 mil km",
+        "Cerca de 9 mil km",
+        "Cerca de 40 mil km",
+        "Cerca de 1.500 km"
+      ],
+      "answer": 0,
+      "fact": "O número vem de um levantamento oficial chinês divulgado em 2012."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a altitude do Aconcágua, a montanha mais alta das Américas?",
+      "options": [
+        "Cerca de 6.960 metros",
+        "Cerca de 5.890 metros",
+        "Cerca de 6.190 metros",
+        "Cerca de 7.410 metros",
+        "Cerca de 6.540 metros",
+        "Cerca de 8.020 metros"
+      ],
+      "answer": 0,
+      "fact": "O Aconcágua fica na Argentina, perto da fronteira com o Chile."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "A quantos metros abaixo do nível do mar fica a superfície do Mar Morto, aproximadamente?",
+      "options": [
+        "Cerca de 430 metros",
+        "Cerca de 50 metros",
+        "Cerca de 150 metros",
+        "Cerca de 900 metros",
+        "Cerca de 1.200 metros",
+        "Cerca de 10 metros"
+      ],
+      "answer": 0,
+      "fact": "O nível do Mar Morto baixa cerca de 1 metro por ano."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países fazem fronteira com a China?",
+      "options": [
+        "14",
+        "8",
+        "10",
+        "12",
+        "16",
+        "18"
+      ],
+      "answer": 0,
+      "fact": "A China e a Rússia são os países com mais vizinhos por terra."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países existem na Europa, segundo a ONU, aproximadamente?",
+      "options": [
+        "44",
+        "28",
+        "36",
+        "52",
+        "60",
+        "31"
+      ],
+      "answer": 0,
+      "fact": "A Rússia é o maior país europeu, e o Vaticano, o menor."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países tem a União Europeia?",
+      "options": [
+        "27",
+        "25",
+        "28",
+        "30",
+        "24",
+        "32"
+      ],
+      "answer": 0,
+      "fact": "O Reino Unido saiu do bloco em 2020."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos estados têm os Estados Unidos?",
+      "options": [
+        "50",
+        "48",
+        "52",
+        "51",
+        "46",
+        "54"
+      ],
+      "answer": 0,
+      "fact": "Os dois últimos a entrar foram o Alasca e o Havaí, em 1959."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países existem nas Américas?",
+      "options": [
+        "35",
+        "22",
+        "28",
+        "41",
+        "48",
+        "31"
+      ],
+      "answer": 0,
+      "fact": "A maior parte deles fica na América Central e no Caribe."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a área aproximada da Groenlândia?",
+      "options": [
+        "Cerca de 2,2 milhões de km²",
+        "Cerca de 500 mil km²",
+        "Cerca de 1 milhão de km²",
+        "Cerca de 4,5 milhões de km²",
+        "Cerca de 8 milhões de km²",
+        "Cerca de 350 mil km²"
+      ],
+      "answer": 0,
+      "fact": "Nos mapas comuns, a Groenlândia parece do tamanho da África, mas é cerca de 14 vezes menor."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a profundidade máxima do Lago Baikal?",
+      "options": [
+        "Cerca de 1.640 metros",
+        "Cerca de 400 metros",
+        "Cerca de 800 metros",
+        "Cerca de 2.500 metros",
+        "Cerca de 3.200 metros",
+        "Cerca de 1.100 metros"
+      ],
+      "answer": 0,
+      "fact": "O Baikal guarda cerca de 20% da água doce líquida de superfície do planeta."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a área aproximada do Saara?",
+      "options": [
+        "Cerca de 9 milhões de km²",
+        "Cerca de 2 milhões de km²",
+        "Cerca de 4 milhões de km²",
+        "Cerca de 15 milhões de km²",
+        "Cerca de 6 milhões de km²",
+        "Cerca de 20 milhões de km²"
+      ],
+      "answer": 0,
+      "fact": "O Saara já foi verde, com lagos e animais, há cerca de 6 mil anos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a extensão aproximada do rio Nilo?",
+      "options": [
+        "Cerca de 6.650 km",
+        "Cerca de 4.300 km",
+        "Cerca de 5.200 km",
+        "Cerca de 7.800 km",
+        "Cerca de 3.900 km",
+        "Cerca de 9.100 km"
+      ],
+      "answer": 0,
+      "fact": "O Nilo atravessa ou banha 11 países."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a população aproximada do Vaticano?",
+      "options": [
+        "Cerca de 800 pessoas",
+        "Cerca de 80 pessoas",
+        "Cerca de 5 mil pessoas",
+        "Cerca de 20 mil pessoas",
+        "Cerca de 200 pessoas",
+        "Cerca de 50 mil pessoas"
+      ],
+      "answer": 0,
+      "fact": "O Vaticano tem menos de meio quilômetro quadrado."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a área do Vaticano?",
+      "options": [
+        "Cerca de 0,44 km²",
+        "Cerca de 4,4 km²",
+        "Cerca de 44 km²",
+        "Cerca de 0,04 km²",
+        "Cerca de 1,2 km²",
+        "Cerca de 12 km²"
+      ],
+      "answer": 0,
+      "fact": "O Vaticano é cerca de quatro vezes menor que o Parque Ibirapuera, em São Paulo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a população aproximada da Índia, a maior do mundo?",
+      "options": [
+        "Cerca de 1,4 bilhão",
+        "Cerca de 900 milhões",
+        "Cerca de 1,1 bilhão",
+        "Cerca de 1,8 bilhão",
+        "Cerca de 2,2 bilhões",
+        "Cerca de 700 milhões"
+      ],
+      "answer": 0,
+      "fact": "A Índia passou a China como país mais populoso em 2023."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a população mundial aproximada em 2024?",
+      "options": [
+        "Cerca de 8,1 bilhões",
+        "Cerca de 6,5 bilhões",
+        "Cerca de 7,2 bilhões",
+        "Cerca de 9,3 bilhões",
+        "Cerca de 10 bilhões",
+        "Cerca de 5,8 bilhões"
+      ],
+      "answer": 0,
+      "fact": "A população mundial passou de 8 bilhões em novembro de 2022, segundo a ONU."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a população mundial chegou a 1 bilhão de pessoas, segundo estimativas?",
+      "options": [
+        "Por volta de 1804",
+        "Por volta de 1650",
+        "Por volta de 1750",
+        "Por volta de 1900",
+        "Por volta de 1927",
+        "Por volta de 1500"
+      ],
+      "answer": 0,
+      "fact": "O segundo bilhão só chegou mais de 120 anos depois, em 1927."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o comprimento da Linha do Equador?",
+      "options": [
+        "Cerca de 40 mil km",
+        "Cerca de 12 mil km",
+        "Cerca de 25 mil km",
+        "Cerca de 64 mil km",
+        "Cerca de 100 mil km",
+        "Cerca de 6 mil km"
+      ],
+      "answer": 0,
+      "fact": "O raio da Terra no Equador é cerca de 21 km maior que nos polos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que temperatura média, aproximadamente, tem Oymyakon, na Rússia, em janeiro?",
+      "options": [
+        "Cerca de −46 °C",
+        "Cerca de −10 °C",
+        "Cerca de −25 °C",
+        "Cerca de −70 °C",
+        "Cerca de −89 °C",
+        "Cerca de −5 °C"
+      ],
+      "answer": 0,
+      "fact": "Oymyakon é considerada a cidade habitada mais fria do mundo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas ilhas tem o Japão, segundo a recontagem oficial de 2023?",
+      "options": [
+        "Cerca de 14 mil",
+        "Cerca de 400",
+        "Cerca de 2 mil",
+        "Cerca de 6.800",
+        "Cerca de 30 mil",
+        "Cerca de 100"
+      ],
+      "answer": 0,
+      "fact": "A contagem anterior, de 1987, apontava 6.852 ilhas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a profundidade média dos oceanos, aproximadamente?",
+      "options": [
+        "Cerca de 3.700 metros",
+        "Cerca de 800 metros",
+        "Cerca de 1.500 metros",
+        "Cerca de 6.200 metros",
+        "Cerca de 11.000 metros",
+        "Cerca de 300 metros"
+      ],
+      "answer": 0,
+      "fact": "Mais de 80% do fundo do mar ainda não foi mapeado em detalhe."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que porcentagem da superfície da Terra é coberta por oceanos?",
+      "options": [
+        "Cerca de 71%",
+        "Cerca de 50%",
+        "Cerca de 60%",
+        "Cerca de 80%",
+        "Cerca de 90%",
+        "Cerca de 40%"
+      ],
+      "answer": 0,
+      "fact": "O oceano Pacífico sozinho é maior que todos os continentes juntos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos fusos horários a China usa oficialmente?",
+      "options": [
+        "1",
+        "5",
+        "3",
+        "4",
+        "2",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Apesar de ter tamanho para uns cinco fusos, a China inteira segue o horário de Pequim."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países do mundo não têm saída para o mar?",
+      "options": [
+        "Cerca de 44",
+        "Cerca de 12",
+        "Cerca de 25",
+        "Cerca de 60",
+        "Cerca de 80",
+        "Cerca de 6"
+      ],
+      "answer": 0,
+      "fact": "O Uzbequistão e o Liechtenstein são duplamente sem saída: cercados só por países também sem mar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a capital do Laos?",
+      "options": [
+        "Vientiane",
+        "Phnom Penh",
+        "Bangcoc",
+        "Hanói"
+      ],
+      "answer": 0,
+      "fact": "O Laos é o único país do Sudeste Asiático sem saída para o mar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país fica a cidade de Bergen, com casinhas coloridas no porto?",
+      "options": [
+        "Noruega",
+        "Suécia",
+        "Dinamarca",
+        "Islândia"
+      ],
+      "answer": 0,
+      "fact": "Bergen é uma das cidades mais chuvosas da Europa."
     }
   ]
 }

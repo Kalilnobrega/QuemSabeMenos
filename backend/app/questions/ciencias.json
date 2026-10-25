@@ -4112,6 +4112,1374 @@
       ],
       "answer": 0,
       "fact": "A luz produzida no núcleo pode levar milhares de anos para chegar à superfície."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal produz a maior parte do leite que tomamos no Brasil?",
+      "options": [
+        "Vaca",
+        "Cabra",
+        "Ovelha",
+        "Búfala"
+      ],
+      "answer": 0,
+      "fact": "Uma vaca leiteira pode produzir mais de 30 litros de leite por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamam os animais que comem só carne?",
+      "options": [
+        "Carnívoros",
+        "Herbívoros",
+        "Onívoros",
+        "Detritívoros"
+      ],
+      "answer": 0,
+      "fact": "Leões, tubarões e corujas são exemplos de animais carnívoros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o animal que come plantas e carne, como o ser humano?",
+      "options": [
+        "Onívoro",
+        "Carnívoro",
+        "Herbívoro",
+        "Insetívoro"
+      ],
+      "answer": 0,
+      "fact": "Ursos, porcos e corvos também são onívoros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que barulho forte a gente ouve depois de ver um relâmpago?",
+      "options": [
+        "Trovão",
+        "Eco",
+        "Vento",
+        "Granizo"
+      ],
+      "answer": 0,
+      "fact": "Como a luz é mais rápida que o som, a gente vê o relâmpago antes de ouvir o trovão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que planeta é conhecido como o \"planeta azul\"?",
+      "options": [
+        "Terra",
+        "Netuno",
+        "Urano",
+        "Vênus"
+      ],
+      "answer": 0,
+      "fact": "Cerca de 71% da superfície da Terra é coberta por água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal grande e cinza, com chifre no focinho, vive na África e na Ásia?",
+      "options": [
+        "Rinoceronte",
+        "Hipopótamo",
+        "Elefante",
+        "Búfalo"
+      ],
+      "answer": 0,
+      "fact": "Existem cinco espécies de rinoceronte, e várias estão ameaçadas pela caça ilegal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais é um peixe?",
+      "options": [
+        "Sardinha",
+        "Baleia",
+        "Golfinho",
+        "Foca"
+      ],
+      "answer": 0,
+      "fact": "Baleias, golfinhos e focas são mamíferos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte do corpo serve para mastigar e, no adulto, tem 32 peças?",
+      "options": [
+        "Dentes",
+        "Língua",
+        "Mandíbula",
+        "Gengiva"
+      ],
+      "answer": 0,
+      "fact": "O esmalte dos dentes é a substância mais dura do corpo humano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que inseto pula alto e \"canta\" esfregando as asas, principalmente à noite?",
+      "options": [
+        "Grilo",
+        "Cigarra",
+        "Besouro",
+        "Formiga"
+      ],
+      "answer": 0,
+      "fact": "Dá para estimar a temperatura do ar contando quantas vezes o grilo canta por minuto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que inseto canta alto nas árvores no verão?",
+      "options": [
+        "Cigarra",
+        "Formiga",
+        "Mosca",
+        "Abelha"
+      ],
+      "answer": 0,
+      "fact": "Algumas cigarras passam mais de 10 anos debaixo da terra antes de sair."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que inseto vermelho com bolinhas pretas come pulgões?",
+      "options": [
+        "Joaninha",
+        "Vaga-lume",
+        "Barata",
+        "Grilo"
+      ],
+      "answer": 0,
+      "fact": "Uma joaninha pode comer dezenas de pulgões por dia, por isso ajuda os agricultores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o conjunto de estrelas que forma um desenho no céu?",
+      "options": [
+        "Constelação",
+        "Galáxia",
+        "Nebulosa",
+        "Cometa"
+      ],
+      "answer": 0,
+      "fact": "A União Astronômica Internacional reconhece 88 constelações oficiais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamam as pedrinhas de gelo que caem do céu em algumas tempestades?",
+      "options": [
+        "Granizo",
+        "Neve",
+        "Geada",
+        "Orvalho"
+      ],
+      "answer": 0,
+      "fact": "Pedras de granizo podem passar do tamanho de uma bola de tênis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte do corpo usamos para ouvir?",
+      "options": [
+        "Orelha",
+        "Nariz",
+        "Olho",
+        "Língua"
+      ],
+      "answer": 0,
+      "fact": "A orelha externa funciona como uma concha que direciona o som para dentro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte do corpo sente o gosto dos alimentos?",
+      "options": [
+        "Língua",
+        "Nariz",
+        "Dente",
+        "Lábio"
+      ],
+      "answer": 0,
+      "fact": "Grande parte do que chamamos de sabor, na verdade, vem do olfato."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dedos temos em cada mão?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "O polegar opositor permite segurar objetos com precisão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que órgão fica dentro do crânio?",
+      "options": [
+        "Cérebro",
+        "Coração",
+        "Pulmão",
+        "Fígado"
+      ],
+      "answer": 0,
+      "fact": "O cérebro de um adulto pesa cerca de 1,4 quilo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que corre dentro das veias e artérias?",
+      "options": [
+        "Sangue",
+        "Água",
+        "Ar",
+        "Saliva"
+      ],
+      "answer": 0,
+      "fact": "O sangue leva oxigênio e nutrientes para todas as células do corpo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cor tem o sangue humano?",
+      "options": [
+        "Vermelho",
+        "Azul",
+        "Verde",
+        "Roxo"
+      ],
+      "answer": 0,
+      "fact": "As veias parecem azuis através da pele por causa da forma como a luz é absorvida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a passagem da água líquida para gelo?",
+      "options": [
+        "Solidificação",
+        "Evaporação",
+        "Fusão",
+        "Condensação"
+      ],
+      "answer": 0,
+      "fact": "Ao congelar, a água aumenta de volume, por isso garrafas cheias podem estourar no congelador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o estado físico do vapor de água?",
+      "options": [
+        "Gasoso",
+        "Sólido",
+        "Líquido",
+        "Plasma"
+      ],
+      "answer": 0,
+      "fact": "A \"fumacinha\" que sai da panela já é vapor condensando em gotinhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De onde vem a luz da Lua?",
+      "options": [
+        "Do Sol, refletida",
+        "Da própria Lua",
+        "Das estrelas",
+        "Da Terra"
+      ],
+      "answer": 0,
+      "fact": "A Lua não tem luz própria: ela reflete a luz do Sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o astro que fica no centro do Sistema Solar?",
+      "options": [
+        "Sol",
+        "Terra",
+        "Lua",
+        "Júpiter"
+      ],
+      "answer": 0,
+      "fact": "O Sol tem mais de 99% da massa de todo o Sistema Solar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho mede o peso das pessoas?",
+      "options": [
+        "Balança",
+        "Fita métrica",
+        "Régua",
+        "Termômetro"
+      ],
+      "answer": 0,
+      "fact": "Tecnicamente, a balança mede a massa, em quilogramas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que a planta precisa para crescer, além de água e luz?",
+      "options": [
+        "Gás carbônico",
+        "Açúcar",
+        "Leite",
+        "Sal"
+      ],
+      "answer": 0,
+      "fact": "A planta produz o próprio alimento com luz, água e gás carbônico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de animal é a minhoca?",
+      "options": [
+        "Invertebrado",
+        "Mamífero",
+        "Réptil",
+        "Peixe"
+      ],
+      "answer": 0,
+      "fact": "Minhocas não têm pulmões: respiram pela pele, que precisa estar úmida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o lixo que pode ser transformado em produto novo?",
+      "options": [
+        "Reciclável",
+        "Orgânico",
+        "Tóxico",
+        "Hospitalar"
+      ],
+      "answer": 0,
+      "fact": "Uma lata de alumínio pode ser reciclada infinitas vezes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cor de lixeira é usada para o plástico na coleta seletiva?",
+      "options": [
+        "Vermelha",
+        "Azul",
+        "Verde",
+        "Amarela"
+      ],
+      "answer": 0,
+      "fact": "Na coleta seletiva, azul é papel, verde é vidro e amarelo é metal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o lixo de restos de comida e cascas, que pode virar adubo?",
+      "options": [
+        "Orgânico",
+        "Reciclável",
+        "Eletrônico",
+        "Hospitalar"
+      ],
+      "answer": 0,
+      "fact": "Restos de comida representam cerca de metade do lixo doméstico no Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o processo de transformar restos de comida em adubo?",
+      "options": [
+        "Compostagem",
+        "Reciclagem",
+        "Fermentação",
+        "Decantação"
+      ],
+      "answer": 0,
+      "fact": "Minhocas aceleram muito a compostagem: é a chamada vermicompostagem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a separação de uma mistura deixando a parte pesada assentar no fundo?",
+      "options": [
+        "Decantação",
+        "Filtração",
+        "Destilação",
+        "Evaporação"
+      ],
+      "answer": 0,
+      "fact": "As estações de tratamento de água usam a decantação antes da filtração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o processo de separar o sal da água do mar pela evaporação?",
+      "options": [
+        "Evaporação nas salinas",
+        "Filtração",
+        "Decantação",
+        "Centrifugação"
+      ],
+      "answer": 0,
+      "fact": "O Rio Grande do Norte produz a maior parte do sal marinho do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que órgão do corpo humano tem cerca de 10 mil papilas, as \"pontinhas\" do paladar?",
+      "options": [
+        "Língua",
+        "Nariz",
+        "Palato",
+        "Garganta"
+      ],
+      "answer": 0,
+      "fact": "As papilas se renovam a cada uma ou duas semanas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a pele fininha dentro do ouvido que vibra com o som?",
+      "options": [
+        "Tímpano",
+        "Cóclea",
+        "Bigorna",
+        "Córnea"
+      ],
+      "answer": 0,
+      "fact": "Atrás do tímpano ficam três ossinhos: martelo, bigorna e estribo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o gelo fininho que se forma sobre a grama em noites muito frias?",
+      "options": [
+        "Geada",
+        "Granizo",
+        "Orvalho",
+        "Neblina"
+      ],
+      "answer": 0,
+      "fact": "A geada pode queimar plantações e é um grande problema para os cafezais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a parte transparente da frente do olho?",
+      "options": [
+        "Córnea",
+        "Íris",
+        "Pupila",
+        "Retina"
+      ],
+      "answer": 0,
+      "fact": "A córnea não tem vasos sanguíneos: recebe oxigênio direto do ar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos ossos tem o ouvido médio?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "Martelo, bigorna e estribo são os menores ossos do corpo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de vaso leva o sangue do coração para o corpo?",
+      "options": [
+        "Artéria",
+        "Veia",
+        "Capilar",
+        "Linfático"
+      ],
+      "answer": 0,
+      "fact": "As artérias têm paredes grossas e elásticas, porque aguentam a pressão do coração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a maior artéria do corpo humano?",
+      "options": [
+        "Aorta",
+        "Carótida",
+        "Femoral",
+        "Pulmonar"
+      ],
+      "answer": 0,
+      "fact": "A aorta sai do ventrículo esquerdo do coração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que vasos finíssimos ligam as artérias às veias?",
+      "options": [
+        "Capilares",
+        "Tendões",
+        "Linfáticos",
+        "Nervos"
+      ],
+      "answer": 0,
+      "fact": "Alguns capilares são tão finos que os glóbulos vermelhos passam em fila."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que órgão guarda a urina até ela ser eliminada?",
+      "options": [
+        "Bexiga",
+        "Rim",
+        "Fígado",
+        "Intestino"
+      ],
+      "answer": 0,
+      "fact": "Uma bexiga adulta comporta cerca de meio litro de urina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que órgão acontece a maior parte da absorção dos nutrientes?",
+      "options": [
+        "Intestino delgado",
+        "Estômago",
+        "Intestino grosso",
+        "Esôfago"
+      ],
+      "answer": 0,
+      "fact": "O intestino delgado de um adulto pode passar de 6 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tubo leva a comida da boca até o estômago?",
+      "options": [
+        "Esôfago",
+        "Traqueia",
+        "Laringe",
+        "Faringe"
+      ],
+      "answer": 0,
+      "fact": "A comida desce pelo esôfago por movimentos de contração, e não só pela gravidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tubo leva o ar até os pulmões?",
+      "options": [
+        "Traqueia",
+        "Esôfago",
+        "Aorta",
+        "Uretra"
+      ],
+      "answer": 0,
+      "fact": "A epiglote é a \"tampinha\" que fecha a traqueia quando a gente engole."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que músculo, embaixo dos pulmões, é o principal da respiração?",
+      "options": [
+        "Diafragma",
+        "Abdômen",
+        "Peitoral",
+        "Intercostal"
+      ],
+      "answer": 0,
+      "fact": "O soluço acontece quando o diafragma se contrai de repente, sem querer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de animal é o morcego?",
+      "options": [
+        "Mamífero",
+        "Ave",
+        "Réptil",
+        "Inseto"
+      ],
+      "answer": 0,
+      "fact": "O morcego é o único mamífero capaz de voar de verdade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como o morcego se orienta no escuro?",
+      "options": [
+        "Pela ecolocalização",
+        "Pela visão noturna",
+        "Pelo olfato",
+        "Pelo campo magnético"
+      ],
+      "answer": 0,
+      "fact": "O morcego emite sons agudos e escuta o eco que volta dos objetos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que animal marinho é parente da estrela-do-mar e tem o corpo coberto de espinhos?",
+      "options": [
+        "Ouriço-do-mar",
+        "Água-viva",
+        "Polvo",
+        "Caranguejo"
+      ],
+      "answer": 0,
+      "fact": "A estrela-do-mar consegue regenerar braços perdidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que animal marinho transparente queima a pele com seus tentáculos?",
+      "options": [
+        "Água-viva",
+        "Medusa-de-pedra",
+        "Lula",
+        "Anêmona"
+      ],
+      "answer": 0,
+      "fact": "As águas-vivas existem há mais de 500 milhões de anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o comportamento de alguns animais de se fingirem de mortos para escapar?",
+      "options": [
+        "Tanatose",
+        "Mimetismo",
+        "Camuflagem",
+        "Hibernação"
+      ],
+      "answer": 0,
+      "fact": "O gambá-norte-americano é famoso por isso, e chega a soltar cheiro de bicho morto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o fenômeno em que animais viajam longas distâncias de acordo com as estações?",
+      "options": [
+        "Migração",
+        "Hibernação",
+        "Metamorfose",
+        "Muda"
+      ],
+      "answer": 0,
+      "fact": "A andorinha-do-ártico faz a maior migração conhecida, de polo a polo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamam os animais que só saem para se alimentar à noite?",
+      "options": [
+        "Noturnos",
+        "Diurnos",
+        "Crepusculares",
+        "Migratórios"
+      ],
+      "answer": 0,
+      "fact": "As corujas conseguem girar a cabeça cerca de 270 graus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a camada de gases que envolve a Terra?",
+      "options": [
+        "Atmosfera",
+        "Litosfera",
+        "Hidrosfera",
+        "Biosfera"
+      ],
+      "answer": 0,
+      "fact": "Sem a atmosfera, a temperatura média da Terra seria de cerca de −18 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o grupo de animais que inclui caranguejos, camarões e lagostas?",
+      "options": [
+        "Crustáceos",
+        "Moluscos",
+        "Aracnídeos",
+        "Anelídeos"
+      ],
+      "answer": 0,
+      "fact": "O tatuzinho-de-jardim também é um crustáceo, embora viva na terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que planeta o Sol nasce no oeste e se põe no leste?",
+      "options": [
+        "Vênus",
+        "Marte",
+        "Urano",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Vênus gira no sentido contrário ao da maioria dos planetas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos-luz, aproximadamente, a Via Láctea tem de diâmetro?",
+      "options": [
+        "Cerca de 100 mil",
+        "Cerca de 1 mil",
+        "Cerca de 10 mil",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "O Sistema Solar leva cerca de 230 milhões de anos para dar uma volta no centro da galáxia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a estrutura que liga um osso a outro nas articulações?",
+      "options": [
+        "Ligamento",
+        "Tendão",
+        "Cartilagem",
+        "Músculo"
+      ],
+      "answer": 0,
+      "fact": "Uma lesão comum no futebol é a ruptura do ligamento cruzado do joelho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a perda de água em forma de vapor pelas folhas das plantas?",
+      "options": [
+        "Transpiração",
+        "Fotossíntese",
+        "Respiração",
+        "Germinação"
+      ],
+      "answer": 0,
+      "fact": "Uma árvore grande pode liberar centenas de litros de água por dia assim."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estrutura da célula vegetal faz a fotossíntese?",
+      "options": [
+        "Cloroplasto",
+        "Mitocôndria",
+        "Vacúolo",
+        "Ribossomo"
+      ],
+      "answer": 0,
+      "fact": "Os cloroplastos têm DNA próprio, sinal de que um dia foram bactérias independentes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a região além de Netuno, cheia de corpos gelados, onde fica Plutão?",
+      "options": [
+        "Cinturão de Kuiper",
+        "Nuvem de Oort",
+        "Cinturão de asteroides",
+        "Heliopausa"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia o astrônomo Gerard Kuiper."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que telescópio espacial foi lançado em 1990 e precisou de \"óculos\" corretivos depois?",
+      "options": [
+        "Hubble",
+        "James Webb",
+        "Chandra",
+        "Kepler"
+      ],
+      "answer": 0,
+      "fact": "Um defeito no espelho deixava as imagens borradas, e astronautas instalaram a correção em 1993."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sonda pousou em 2012 em Marte e continua explorando a cratera Gale?",
+      "options": [
+        "Curiosity",
+        "Spirit",
+        "Opportunity",
+        "Sojourner"
+      ],
+      "answer": 0,
+      "fact": "O Curiosity tem o tamanho de um carro pequeno e é movido a energia nuclear."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o pequeno helicóptero que voou em Marte em 2021?",
+      "options": [
+        "Ingenuity",
+        "Perseverance",
+        "Curiosity",
+        "Zhurong"
+      ],
+      "answer": 0,
+      "fact": "Foi o primeiro voo motorizado e controlado em outro planeta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o limite ao redor de um buraco negro a partir do qual nada escapa?",
+      "options": [
+        "Horizonte de eventos",
+        "Singularidade",
+        "Disco de acreção",
+        "Ergosfera"
+      ],
+      "answer": 0,
+      "fact": "A primeira imagem de um buraco negro foi divulgada em 2019, da galáxia M87."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a estrela que explode no fim da vida, brilhando muito?",
+      "options": [
+        "Supernova",
+        "Anã branca",
+        "Pulsar",
+        "Gigante vermelha"
+      ],
+      "answer": 0,
+      "fact": "Os elementos mais pesados, como o ouro, são formados em explosões estelares e colisões de estrelas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que se transforma uma estrela como o Sol no fim da vida, depois de virar gigante vermelha?",
+      "options": [
+        "Anã branca",
+        "Buraco negro",
+        "Estrela de nêutrons",
+        "Supernova"
+      ],
+      "answer": 0,
+      "fact": "O Sol ainda tem cerca de 5 bilhões de anos pela frente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nome recebe uma estrela de nêutrons que gira e emite pulsos regulares de radiação?",
+      "options": [
+        "Pulsar",
+        "Quasar",
+        "Magnetar",
+        "Nova"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros sinais de pulsar foram tão regulares que chegaram a ser apelidados de \"LGM\", \"homenzinhos verdes\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o planeta com a maior densidade do Sistema Solar?",
+      "options": [
+        "Terra",
+        "Júpiter",
+        "Mercúrio",
+        "Vênus"
+      ],
+      "answer": 0,
+      "fact": "Saturno é o menos denso: boiaria numa banheira gigante cheia de água."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a substância que acelera uma reação química sem ser consumida?",
+      "options": [
+        "Catalisador",
+        "Reagente",
+        "Solvente",
+        "Inibidor"
+      ],
+      "answer": 0,
+      "fact": "As enzimas são catalisadores produzidos pelos seres vivos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que partícula de luz foi proposta por Einstein para explicar o efeito fotoelétrico?",
+      "options": [
+        "Fóton",
+        "Elétron",
+        "Quark",
+        "Neutrino"
+      ],
+      "answer": 0,
+      "fact": "Einstein ganhou o Nobel de Física de 1921 por esse trabalho, e não pela relatividade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que partícula, chamada de \"partícula de Deus\", foi confirmada em 2012?",
+      "options": [
+        "Bóson de Higgs",
+        "Neutrino",
+        "Quark top",
+        "Gráviton"
+      ],
+      "answer": 0,
+      "fact": "A partícula foi encontrada no LHC, o grande acelerador de partículas na fronteira da França com a Suíça."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quais partículas formam os prótons e os nêutrons?",
+      "options": [
+        "Quarks",
+        "Elétrons",
+        "Fótons",
+        "Neutrinos"
+      ],
+      "answer": 0,
+      "fact": "O nome \"quark\" foi tirado de um verso do romance \"Finnegans Wake\", de James Joyce."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lei da física diz que a energia não pode ser criada nem destruída, só transformada?",
+      "options": [
+        "Conservação da energia",
+        "Lei da inércia",
+        "Lei de Ohm",
+        "Lei de Hooke"
+      ],
+      "answer": 0,
+      "fact": "Por isso uma máquina de movimento perpétuo é impossível."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lei de Newton é conhecida como a lei da inércia?",
+      "options": [
+        "Primeira lei",
+        "Segunda lei",
+        "Terceira lei",
+        "Lei da gravitação"
+      ],
+      "answer": 0,
+      "fact": "Inércia é a tendência de um corpo continuar parado ou em movimento retilíneo constante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a fórmula da segunda lei de Newton?",
+      "options": [
+        "F = m × a",
+        "E = m × c²",
+        "V = R × I",
+        "P = m × g"
+      ],
+      "answer": 0,
+      "fact": "Ela diz que a força é igual à massa vezes a aceleração."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a fórmula da lei de Ohm?",
+      "options": [
+        "V = R × I",
+        "F = m × a",
+        "P = V × I",
+        "E = m × c²"
+      ],
+      "answer": 0,
+      "fact": "A lei relaciona tensão, resistência e corrente elétrica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista criou a escala de temperatura em que a água ferve a 212 graus?",
+      "options": [
+        "Daniel Fahrenheit",
+        "Anders Celsius",
+        "Lord Kelvin",
+        "René Réaumur"
+      ],
+      "answer": 0,
+      "fact": "Nos Estados Unidos, essa escala ainda é a mais usada no dia a dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que dois metais formam principalmente o núcleo da Terra?",
+      "options": [
+        "Ferro e níquel",
+        "Ferro e cobre",
+        "Níquel e ouro",
+        "Alumínio e ferro"
+      ],
+      "answer": 0,
+      "fact": "O núcleo interno da Terra é sólido, apesar de estar a mais de 5 mil graus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o símbolo químico do fósforo?",
+      "options": [
+        "P",
+        "F",
+        "Fo",
+        "Ph"
+      ],
+      "answer": 0,
+      "fact": "O fósforo foi descoberto em 1669 por um alquimista que procurava ouro na urina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o símbolo químico do flúor?",
+      "options": [
+        "F",
+        "Fl",
+        "Fr",
+        "P"
+      ],
+      "answer": 0,
+      "fact": "O flúor é o elemento mais reativo da tabela periódica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número atômico do oxigênio?",
+      "options": [
+        "8",
+        "6",
+        "16",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "O número atômico é a quantidade de prótons no núcleo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número atômico do hidrogênio?",
+      "options": [
+        "1",
+        "2",
+        "0",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "O hidrogênio é o único elemento cujo átomo mais comum não tem nêutrons."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que órgão humano é atacado pela hepatite?",
+      "options": [
+        "Fígado",
+        "Pâncreas",
+        "Rim",
+        "Baço"
+      ],
+      "answer": 0,
+      "fact": "Os tipos mais comuns de hepatite são causados por vírus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a ligação química em que dois átomos compartilham elétrons?",
+      "options": [
+        "Covalente",
+        "Iônica",
+        "Metálica",
+        "Nuclear"
+      ],
+      "answer": 0,
+      "fact": "Na água, o oxigênio compartilha elétrons com dois hidrogênios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista austríaco propôs o experimento mental do gato que está vivo e morto ao mesmo tempo?",
+      "options": [
+        "Erwin Schrödinger",
+        "Werner Heisenberg",
+        "Max Planck",
+        "Wolfgang Pauli"
+      ],
+      "answer": 0,
+      "fact": "Schrödinger criou o exemplo para mostrar como a mecânica quântica parecia absurda aplicada ao dia a dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que físico alemão formulou o princípio da incerteza?",
+      "options": [
+        "Werner Heisenberg",
+        "Max Planck",
+        "Erwin Schrödinger",
+        "Albert Einstein"
+      ],
+      "answer": 0,
+      "fact": "O princípio diz que não dá para saber com precisão, ao mesmo tempo, a posição e a velocidade de uma partícula."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas espécies de formigas são conhecidas, aproximadamente?",
+      "options": [
+        "Mais de 14 mil",
+        "Cerca de 1.200",
+        "Cerca de 3.500",
+        "Mais de 50 mil",
+        "Cerca de 500",
+        "Mais de 120 mil"
+      ],
+      "answer": 0,
+      "fact": "Um estudo de 2022 estimou que existam cerca de 20 quatrilhões de formigas no planeta."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas células, aproximadamente, tem o corpo humano?",
+      "options": [
+        "Cerca de 37 trilhões",
+        "Cerca de 3,7 bilhões",
+        "Cerca de 370 bilhões",
+        "Cerca de 370 trilhões",
+        "Cerca de 10 trilhões",
+        "Cerca de 1 quatrilhão"
+      ],
+      "answer": 0,
+      "fact": "O número de bactérias no corpo é parecido com o de células humanas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos quilos de bactérias, aproximadamente, vivem no intestino de um adulto?",
+      "options": [
+        "Cerca de 0,2 kg",
+        "Cerca de 2 kg",
+        "Cerca de 5 kg",
+        "Cerca de 20 gramas",
+        "Cerca de 1 kg",
+        "Cerca de 10 kg"
+      ],
+      "answer": 0,
+      "fact": "A estimativa antiga, de 2 quilos, foi revista em estudos de 2016."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o valor exato da velocidade da luz no vácuo?",
+      "options": [
+        "299.792.458 m/s",
+        "300.000.000 m/s",
+        "299.729.458 m/s",
+        "299.792.548 m/s",
+        "298.792.458 m/s",
+        "299.972.458 m/s"
+      ],
+      "answer": 0,
+      "fact": "Desde 1983, o metro é definido a partir da velocidade da luz."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos glóbulos vermelhos, aproximadamente, o corpo produz por segundo?",
+      "options": [
+        "Cerca de 2 milhões",
+        "Cerca de 2 mil",
+        "Cerca de 20 mil",
+        "Cerca de 200 milhões",
+        "Cerca de 200",
+        "Cerca de 2 bilhões"
+      ],
+      "answer": 0,
+      "fact": "Eles são produzidos na medula óssea."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas vezes por minuto o coração de um beija-flor pode bater durante o voo?",
+      "options": [
+        "Cerca de 1.200",
+        "Cerca de 120",
+        "Cerca de 300",
+        "Cerca de 600",
+        "Cerca de 2.500",
+        "Cerca de 60"
+      ],
+      "answer": 0,
+      "fact": "À noite, o beija-flor entra num estado de torpor e o ritmo do coração cai muito."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos litros de água, aproximadamente, há na Terra?",
+      "options": [
+        "Cerca de 1,4 sextilhão de litros",
+        "Cerca de 1,4 trilhão de litros",
+        "Cerca de 14 bilhões de litros",
+        "Cerca de 140 quatrilhões de litros",
+        "Cerca de 1,4 quintilhão de litros",
+        "Cerca de 14 trilhões de litros"
+      ],
+      "answer": 0,
+      "fact": "Cerca de 97% dessa água está nos oceanos, salgada."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que porcentagem da água da Terra é doce?",
+      "options": [
+        "Cerca de 2,5%",
+        "Cerca de 10%",
+        "Cerca de 25%",
+        "Cerca de 0,1%",
+        "Cerca de 15%",
+        "Cerca de 50%"
+      ],
+      "answer": 0,
+      "fact": "E a maior parte da água doce está congelada nas geleiras e calotas polares."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o número atômico do ouro?",
+      "options": [
+        "79",
+        "47",
+        "82",
+        "80",
+        "78",
+        "92"
+      ],
+      "answer": 0,
+      "fact": "O símbolo do ouro, Au, vem do latim \"aurum\"."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto a Lua se afasta da Terra por ano?",
+      "options": [
+        "Cerca de 3,8 cm",
+        "Cerca de 3,8 mm",
+        "Cerca de 38 cm",
+        "Cerca de 3,8 m",
+        "Cerca de 0,38 mm",
+        "Cerca de 38 m"
+      ],
+      "answer": 0,
+      "fact": "A medição é feita com lasers apontados para espelhos deixados na Lua pelas missões Apollo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a temperatura média na superfície de Marte?",
+      "options": [
+        "Cerca de −63 °C",
+        "Cerca de −20 °C",
+        "Cerca de −5 °C",
+        "Cerca de −120 °C",
+        "Cerca de −150 °C",
+        "Cerca de 15 °C"
+      ],
+      "answer": 0,
+      "fact": "Num dia de verão perto do equador marciano, a temperatura pode chegar a cerca de 20 °C."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "A que velocidade, aproximadamente, a Terra se move ao redor do Sol?",
+      "options": [
+        "Cerca de 107 mil km/h",
+        "Cerca de 1.670 km/h",
+        "Cerca de 10 mil km/h",
+        "Cerca de 1 milhão de km/h",
+        "Cerca de 30 mil km/h",
+        "Cerca de 500 mil km/h"
+      ],
+      "answer": 0,
+      "fact": "Isso dá cerca de 30 quilômetros por segundo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "A que velocidade gira a superfície da Terra na linha do Equador?",
+      "options": [
+        "Cerca de 1.670 km/h",
+        "Cerca de 167 km/h",
+        "Cerca de 470 km/h",
+        "Cerca de 107 mil km/h",
+        "Cerca de 5 mil km/h",
+        "Cerca de 16 mil km/h"
+      ],
+      "answer": 0,
+      "fact": "Nos polos, a velocidade de rotação da superfície é praticamente zero."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas vezes a massa do Sol é maior que a da Terra, aproximadamente?",
+      "options": [
+        "Cerca de 333 mil vezes",
+        "Cerca de 1.300 vezes",
+        "Cerca de 33 mil vezes",
+        "Cerca de 3,3 milhões de vezes",
+        "Cerca de 109 vezes",
+        "Cerca de 1 milhão de vezes"
+      ],
+      "answer": 0,
+      "fact": "Em volume, caberiam cerca de 1,3 milhão de Terras dentro do Sol."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a OMS declarou a varíola erradicada?",
+      "options": [
+        "1980",
+        "1965",
+        "1972",
+        "1977",
+        "1988",
+        "1995"
+      ],
+      "answer": 0,
+      "fact": "O último caso natural da doença aconteceu na Somália, em 1977."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas luas confirmadas tem Júpiter, aproximadamente?",
+      "options": [
+        "Mais de 90",
+        "Cerca de 16",
+        "Cerca de 40",
+        "Cerca de 63",
+        "Mais de 200",
+        "Cerca de 4"
+      ],
+      "answer": 0,
+      "fact": "As quatro maiores foram descobertas por Galileu em 1610."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a temperatura média na superfície de Vênus?",
+      "options": [
+        "Cerca de 465 °C",
+        "Cerca de 100 °C",
+        "Cerca de 250 °C",
+        "Cerca de 800 °C",
+        "Cerca de 60 °C",
+        "Cerca de 1.200 °C"
+      ],
+      "answer": 0,
+      "fact": "O calor é tão grande que derreteria chumbo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi a menor temperatura já registrada na superfície da Terra?",
+      "options": [
+        "Cerca de −89 °C",
+        "Cerca de −45 °C",
+        "Cerca de −62 °C",
+        "Cerca de −110 °C",
+        "Cerca de −130 °C",
+        "Cerca de −71 °C"
+      ],
+      "answer": 0,
+      "fact": "O recorde foi medido em 1983, na estação russa Vostok, na Antártida."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual foi a maior temperatura do ar já registrada oficialmente na Terra?",
+      "options": [
+        "Cerca de 57 °C",
+        "Cerca de 49 °C",
+        "Cerca de 53 °C",
+        "Cerca de 62 °C",
+        "Cerca de 66 °C",
+        "Cerca de 71 °C"
+      ],
+      "answer": 0,
+      "fact": "O recorde, de 1913, é do Vale da Morte, nos Estados Unidos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi anunciada a primeira detecção de ondas gravitacionais?",
+      "options": [
+        "2016",
+        "1998",
+        "2005",
+        "2012",
+        "2019",
+        "1987"
+      ],
+      "answer": 0,
+      "fact": "O sinal veio da colisão de dois buracos negros a mais de 1 bilhão de anos-luz."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos fios de cabelo, em média, uma pessoa perde por dia?",
+      "options": [
+        "Entre 50 e 100",
+        "Entre 5 e 10",
+        "Entre 300 e 500",
+        "Entre 1.000 e 2.000",
+        "Entre 20 e 30",
+        "Entre 150 e 250"
+      ],
+      "answer": 0,
+      "fact": "Uma cabeça tem, em média, cerca de 100 mil fios."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto cresce a unha da mão, em média, por mês?",
+      "options": [
+        "Cerca de 3 mm",
+        "Cerca de 0,3 mm",
+        "Cerca de 1 cm",
+        "Cerca de 7 mm",
+        "Cerca de 1,5 cm",
+        "Cerca de 0,1 mm"
+      ],
+      "answer": 0,
+      "fact": "As unhas dos pés crescem bem mais devagar que as das mãos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos elementos químicos são gases à temperatura ambiente?",
+      "options": [
+        "11",
+        "6",
+        "8",
+        "14",
+        "18",
+        "22"
+      ],
+      "answer": 0,
+      "fact": "Só dois elementos são líquidos à temperatura ambiente: o mercúrio e o bromo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que porcentagem do DNA humano é igual à do chimpanzé, aproximadamente?",
+      "options": [
+        "Cerca de 98%",
+        "Cerca de 70%",
+        "Cerca de 85%",
+        "Cerca de 60%",
+        "Cerca de 99,9%",
+        "Cerca de 90%"
+      ],
+      "answer": 0,
+      "fact": "Duas pessoas quaisquer compartilham cerca de 99,9% do DNA."
     }
   ]
 }

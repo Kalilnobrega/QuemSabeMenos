@@ -4112,6 +4112,1374 @@
       ],
       "answer": 0,
       "fact": "A bateria durava cerca de 30 minutos de conversa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho, como o Chromecast ou o Fire TV, faz uma TV comum rodar aplicativos de vídeo?",
+      "options": [
+        "Dispositivo de streaming",
+        "Antena digital",
+        "Decodificador de satélite",
+        "Videocassete"
+      ],
+      "answer": 0,
+      "fact": "Esses aparelhos costumam ser ligados na entrada HDMI da TV."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que atalho do teclado seleciona tudo num documento, no Windows?",
+      "options": [
+        "Ctrl + A",
+        "Ctrl + S",
+        "Ctrl + T",
+        "Ctrl + E"
+      ],
+      "answer": 0,
+      "fact": "Em português, muitos programas usam \"Ctrl + T\", de \"tudo\", no lugar do \"Ctrl + A\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que botão do celular serve para ligar e desligar o aparelho?",
+      "options": [
+        "Botão de energia",
+        "Botão de volume",
+        "Botão de início",
+        "Botão de câmera"
+      ],
+      "answer": 0,
+      "fact": "Segurar o botão de energia por alguns segundos costuma reiniciar um celular travado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o ícone de polegar para cima usado para curtir algo?",
+      "options": [
+        "Joinha",
+        "Coração",
+        "Estrela",
+        "Sininho"
+      ],
+      "answer": 0,
+      "fact": "O botão de curtir do Facebook foi lançado em 2009."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla, no canto de baixo do teclado, é usada em atalhos como copiar e colar?",
+      "options": [
+        "Ctrl",
+        "Alt",
+        "Tab",
+        "Fn"
+      ],
+      "answer": 0,
+      "fact": "\"Ctrl\" é a abreviação de \"Control\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla faz o cursor pular para o próximo campo de um formulário?",
+      "options": [
+        "Tab",
+        "Enter",
+        "Esc",
+        "Delete"
+      ],
+      "answer": 0,
+      "fact": "A tecla Tab vem das máquinas de escrever, onde servia para fazer tabelas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o pequeno desenho que representa um programa na tela?",
+      "options": [
+        "Ícone",
+        "Cursor",
+        "Pixel",
+        "Janela"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros ícones de computador foram desenhados nos anos 1970, no Xerox PARC."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a seta que se move na tela quando mexemos o mouse?",
+      "options": [
+        "Cursor",
+        "Ícone",
+        "Pixel",
+        "Barra"
+      ],
+      "answer": 0,
+      "fact": "O cursor muda de forma, como uma mãozinha, quando passa por cima de um link."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o programa que usamos para entrar em sites, como o Chrome?",
+      "options": [
+        "Navegador",
+        "Antivírus",
+        "Editor de texto",
+        "Sistema operacional"
+      ],
+      "answer": 0,
+      "fact": "O primeiro navegador da web se chamava WorldWideWeb, de 1990."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o endereço que termina em \".com\" ou \".com.br\"?",
+      "options": [
+        "Endereço de site",
+        "Senha",
+        "E-mail",
+        "Arroba"
+      ],
+      "answer": 0,
+      "fact": "O \".br\" mostra que o site está registrado no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que símbolo separa o nome do usuário e o provedor num endereço de e-mail?",
+      "options": [
+        "@",
+        "#",
+        "&",
+        "%"
+      ],
+      "answer": 0,
+      "fact": "O \"@\" era usado no comércio muito antes da internet, como abreviação de preço e de peso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a mensagem eletrônica enviada pela internet para uma caixa de entrada?",
+      "options": [
+        "E-mail",
+        "SMS",
+        "Telegrama",
+        "Fax"
+      ],
+      "answer": 0,
+      "fact": "Hoje são enviados centenas de bilhões de e-mails por dia no mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho usamos para fazer ligações e acessar a internet no bolso?",
+      "options": [
+        "Celular",
+        "Tablet",
+        "Notebook",
+        "Rádio"
+      ],
+      "answer": 0,
+      "fact": "Hoje há mais celulares ativos no mundo do que pessoas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte do computador mostra as imagens?",
+      "options": [
+        "Monitor",
+        "Teclado",
+        "Mouse",
+        "Gabinete"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros monitores de computador mostravam só texto verde ou âmbar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que parte do computador usamos para digitar letras e números?",
+      "options": [
+        "Teclado",
+        "Monitor",
+        "Mouse",
+        "Caixa de som"
+      ],
+      "answer": 0,
+      "fact": "O teclado QWERTY foi pensado para máquinas de escrever, no século XIX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho grava e mostra imagens em movimento, como num celular ou na TV?",
+      "options": [
+        "Câmera de vídeo",
+        "Microfone",
+        "Impressora",
+        "Scanner"
+      ],
+      "answer": 0,
+      "fact": "A primeira câmera de vídeo portátil para o público chegou nos anos 1980."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que objeto se usa para ouvir música sem incomodar as outras pessoas?",
+      "options": [
+        "Fone de ouvido",
+        "Microfone",
+        "Caixa de som",
+        "Alto-falante"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros fones de ouvido foram usados por telefonistas, no começo do século XX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho é usado para falar e ser ouvido mais alto num show ou numa chamada?",
+      "options": [
+        "Microfone",
+        "Fone de ouvido",
+        "Antena",
+        "Controle remoto"
+      ],
+      "answer": 0,
+      "fact": "O microfone transforma o som em sinal elétrico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que objeto se usa para mudar o canal da TV sem levantar do sofá?",
+      "options": [
+        "Controle remoto",
+        "Antena",
+        "Decodificador",
+        "Joystick"
+      ],
+      "answer": 0,
+      "fact": "Os primeiros controles remotos de TV eram ligados ao aparelho por um fio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a ação de passar a acompanhar as publicações de alguém numa rede social?",
+      "options": [
+        "Seguir",
+        "Bloquear",
+        "Silenciar",
+        "Denunciar"
+      ],
+      "answer": 0,
+      "fact": "Quem tem muitos seguidores costuma ser chamado de influenciador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que rede social criada por Mark Zuckerberg tem um \"f\" no logo?",
+      "options": [
+        "Facebook",
+        "Flickr",
+        "Foursquare",
+        "Fotolog"
+      ],
+      "answer": 0,
+      "fact": "O Facebook começou em 2004, só para alunos de Harvard."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o conjunto de letras e números secretos para entrar numa conta?",
+      "options": [
+        "Senha",
+        "Login",
+        "E-mail",
+        "Usuário"
+      ],
+      "answer": 0,
+      "fact": "\"123456\" foi por muitos anos a senha mais usada do mundo, e uma das menos seguras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a transmissão de vídeo feita no mesmo instante em que acontece?",
+      "options": [
+        "Ao vivo",
+        "Gravada",
+        "Editada",
+        "Reprise"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, a transmissão ao vivo é chamada de \"live\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a internet do celular fornecida pela operadora, sem Wi-Fi?",
+      "options": [
+        "Dados móveis",
+        "Bluetooth",
+        "Rádio",
+        "Infravermelho"
+      ],
+      "answer": 0,
+      "fact": "O 4G e o 5G são gerações de dados móveis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que serve o carregador do celular?",
+      "options": [
+        "Recarregar a bateria",
+        "Aumentar o sinal",
+        "Guardar fotos",
+        "Proteger a tela"
+      ],
+      "answer": 0,
+      "fact": "A maioria dos carregadores modernos usa o conector USB-C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo de transporte, de logo amarelo e preto, é muito usado no Brasil, junto com o Uber?",
+      "options": [
+        "99",
+        "Waze",
+        "iFood",
+        "Rappi"
+      ],
+      "answer": 0,
+      "fact": "A 99 foi criada no Brasil em 2012 e depois comprada por uma empresa chinesa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o espaço do celular onde ficam as fotos e os aplicativos, medido em GB?",
+      "options": [
+        "Armazenamento",
+        "Wi-Fi",
+        "GPS",
+        "Bluetooth"
+      ],
+      "answer": 0,
+      "fact": "Fotos e vídeos costumam ser o que mais ocupa o armazenamento do celular."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que nome se dá a um programa instalado no celular, como o WhatsApp?",
+      "options": [
+        "Aplicativo",
+        "Navegador",
+        "Arquivo",
+        "Site"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"app\" é a abreviação de \"application\", aplicativo em inglês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a loja de aplicativos dos celulares Android?",
+      "options": [
+        "Google Play",
+        "App Store",
+        "Microsoft Store",
+        "Steam"
+      ],
+      "answer": 0,
+      "fact": "A loja da Apple, para iPhone, se chama App Store."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Apple lançou o iPad?",
+      "options": [
+        "2010",
+        "2007",
+        "2008",
+        "2012"
+      ],
+      "answer": 0,
+      "fact": "O iPad original tinha uma tela de 9,7 polegadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Apple Watch?",
+      "options": [
+        "2015",
+        "2012",
+        "2013",
+        "2017"
+      ],
+      "answer": 0,
+      "fact": "O primeiro modelo tinha uma versão de ouro maciço que custava mais de 10 mil dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que nome tem o sistema de pagamento por aproximação da Apple?",
+      "options": [
+        "Apple Pay",
+        "Apple Cash",
+        "iPay",
+        "Apple Wallet"
+      ],
+      "answer": 0,
+      "fact": "O sistema usa a tecnologia NFC."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o gerenciador de arquivos do Windows?",
+      "options": [
+        "Explorador de Arquivos",
+        "Painel de Controle",
+        "Gerenciador de Tarefas",
+        "Bloco de Notas"
+      ],
+      "answer": 0,
+      "fact": "Um atalho para abri-lo é Windows + E."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o gerenciador de arquivos do Mac?",
+      "options": [
+        "Finder",
+        "Explorador de Arquivos",
+        "Dock",
+        "Spotlight"
+      ],
+      "answer": 0,
+      "fact": "O ícone do Finder é um rostinho sorrindo, azul e branco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que programa simples do Windows abre arquivos de texto puro, sem formatação?",
+      "options": [
+        "Bloco de Notas",
+        "Paint",
+        "WordPad",
+        "Word"
+      ],
+      "answer": 0,
+      "fact": "O Bloco de Notas salva textos puros, sem negrito, cores ou imagens."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que programa de desenho vinha no Windows desde a primeira versão?",
+      "options": [
+        "Paint",
+        "Photoshop",
+        "Corel Draw",
+        "GIMP"
+      ],
+      "answer": 0,
+      "fact": "O Paint quase foi descontinuado em 2017, mas foi mantido depois de protestos dos fãs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que extensão de arquivo é usada pelas planilhas do Excel mais recentes?",
+      "options": [
+        ".xlsx",
+        ".docx",
+        ".pptx",
+        ".csv"
+      ],
+      "answer": 0,
+      "fact": "O \"x\" no final vem do formato XML, usado desde o Office 2007."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que extensão de arquivo é usada pelas apresentações do PowerPoint mais recentes?",
+      "options": [
+        ".pptx",
+        ".xlsx",
+        ".docx",
+        ".ppsx"
+      ],
+      "answer": 0,
+      "fact": "O PowerPoint foi criado por uma empresa independente e comprado pela Microsoft em 1987."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que formato de vídeo é um dos mais usados na internet, de extensão de três letras?",
+      "options": [
+        "MP4",
+        "MP3",
+        "JPG",
+        "PDF"
+      ],
+      "answer": 0,
+      "fact": "O MP4 pode guardar vídeo, áudio e legendas no mesmo arquivo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que formato de imagem animada, muito usado em memes, foi criado em 1987?",
+      "options": [
+        "GIF",
+        "PNG",
+        "JPG",
+        "BMP"
+      ],
+      "answer": 0,
+      "fact": "O criador do GIF diz que a pronúncia certa é \"jif\", o que gera polêmica até hoje."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o bloqueio de tela de celular desenhando um padrão com o dedo?",
+      "options": [
+        "Padrão de desbloqueio",
+        "Senha numérica",
+        "Biometria",
+        "Reconhecimento facial"
+      ],
+      "answer": 0,
+      "fact": "Alguns padrões são tão comuns que podem ser adivinhados em poucas tentativas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a leitura do dedo usada para desbloquear o celular?",
+      "options": [
+        "Impressão digital",
+        "Reconhecimento facial",
+        "PIN",
+        "Padrão"
+      ],
+      "answer": 0,
+      "fact": "Nem gêmeos idênticos têm impressões digitais iguais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tecnologia do celular conta passos e percebe se ele está deitado ou em pé?",
+      "options": [
+        "Acelerômetro",
+        "GPS",
+        "Bluetooth",
+        "NFC"
+      ],
+      "answer": 0,
+      "fact": "O acelerômetro é o que gira a tela quando o celular é virado de lado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a tecnologia que leva o usuário a um mundo 3D usando óculos especiais?",
+      "options": [
+        "Realidade virtual",
+        "Realidade aumentada",
+        "Holografia",
+        "Streaming"
+      ],
+      "answer": 0,
+      "fact": "O primeiro aparelho de realidade virtual, de 1968, era tão pesado que ficava preso ao teto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a tecnologia que mistura objetos virtuais com a imagem do mundo real, como em \"Pokémon GO\"?",
+      "options": [
+        "Realidade aumentada",
+        "Realidade virtual",
+        "Holografia",
+        "Metaverso"
+      ],
+      "answer": 0,
+      "fact": "Os filtros de rosto das redes sociais também usam realidade aumentada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a pessoa que invade sistemas de computador?",
+      "options": [
+        "Hacker",
+        "Programador",
+        "Blogueiro",
+        "Designer"
+      ],
+      "answer": 0,
+      "fact": "Alguns hackers trabalham para empresas, testando a segurança dos sistemas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o golpe em que alguém se passa por outra pessoa no WhatsApp para pedir dinheiro?",
+      "options": [
+        "Clonagem de WhatsApp",
+        "Phishing de banco",
+        "Ransomware",
+        "Spam"
+      ],
+      "answer": 0,
+      "fact": "A verificação em duas etapas do WhatsApp ajuda a evitar esse golpe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aparelho liga vários computadores por cabo numa mesma rede local?",
+      "options": [
+        "Switch",
+        "Modem",
+        "Antena",
+        "Nobreak"
+      ],
+      "answer": 0,
+      "fact": "Ele é diferente do antigo \"hub\", que mandava os dados para todos os computadores ao mesmo tempo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa chinesa é dona do TikTok?",
+      "options": [
+        "ByteDance",
+        "Tencent",
+        "Alibaba",
+        "Huawei"
+      ],
+      "answer": 0,
+      "fact": "Na China, a versão local do aplicativo se chama Douyin."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aplicativo de vídeos curtos, também chinês, é muito popular no interior do Brasil?",
+      "options": [
+        "Kwai",
+        "TikTok",
+        "Likee",
+        "Triller"
+      ],
+      "answer": 0,
+      "fact": "O Kwai é da empresa chinesa Kuaishou."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é o serviço de música Deezer?",
+      "options": [
+        "França",
+        "Suécia",
+        "Estados Unidos",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "O Spotify, seu principal rival, é da Suécia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual era o nome do serviço de mensagens instantâneas do Google, antes do Hangouts?",
+      "options": [
+        "Google Talk",
+        "Google Wave",
+        "Google Buzz",
+        "Google Allo"
+      ],
+      "answer": 0,
+      "fact": "O Google Talk foi lançado em 2005."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que site de fotos e ideias tem um \"P\" vermelho no logo?",
+      "options": [
+        "Pinterest",
+        "Picasa",
+        "Flickr",
+        "Tumblr"
+      ],
+      "answer": 0,
+      "fact": "O Pinterest é muito usado para receitas, decoração e moda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que site de leilões e compras online foi fundado nos Estados Unidos em 1995?",
+      "options": [
+        "eBay",
+        "Amazon",
+        "Mercado Livre",
+        "AliExpress"
+      ],
+      "answer": 0,
+      "fact": "O primeiro item vendido no eBay foi uma caneta laser quebrada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que site chinês de compras online é famoso pelos produtos baratos enviados para o mundo todo?",
+      "options": [
+        "AliExpress",
+        "eBay",
+        "Shopee",
+        "Amazon"
+      ],
+      "answer": 0,
+      "fact": "O site foi lançado em 2010 e virou febre no Brasil pelos fretes baratos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa chinesa de comércio eletrônico foi fundada por Jack Ma?",
+      "options": [
+        "Alibaba",
+        "Tencent",
+        "Baidu",
+        "Huawei"
+      ],
+      "answer": 0,
+      "fact": "O nome \"Alibaba\" foi inspirado no personagem das \"Mil e Uma Noites\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o principal buscador da China?",
+      "options": [
+        "Baidu",
+        "Google",
+        "Bing",
+        "Yandex"
+      ],
+      "answer": 0,
+      "fact": "O Google é bloqueado na China desde 2010."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o principal buscador da Rússia?",
+      "options": [
+        "Yandex",
+        "Baidu",
+        "Google",
+        "Mail.ru"
+      ],
+      "answer": 0,
+      "fact": "O Yandex também tem serviços de táxi, mapas e entregas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa chinesa é dona do WeChat?",
+      "options": [
+        "Tencent",
+        "Alibaba",
+        "Baidu",
+        "ByteDance"
+      ],
+      "answer": 0,
+      "fact": "A Tencent também é dona de partes de várias empresas de games."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa sul-coreana fabrica os televisores OLED mais vendidos do mundo, junto com a Samsung?",
+      "options": [
+        "LG",
+        "Sony",
+        "Philips",
+        "Panasonic"
+      ],
+      "answer": 0,
+      "fact": "O nome LG vem de \"Lucky Goldstar\", marcas antigas do grupo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa japonesa criou o disquete de 3,5 polegadas?",
+      "options": [
+        "Sony",
+        "Toshiba",
+        "Panasonic",
+        "Nintendo"
+      ],
+      "answer": 0,
+      "fact": "A Sony lançou o disquete de 3,5 polegadas em 1981."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos megabytes guardava um disquete comum de 3,5 polegadas?",
+      "options": [
+        "1,44 MB",
+        "10 MB",
+        "700 MB",
+        "0,5 MB"
+      ],
+      "answer": 0,
+      "fact": "Seriam necessários quase 500 disquetes para guardar um único CD."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos megabytes cabem, aproximadamente, num CD comum?",
+      "options": [
+        "700 MB",
+        "4,7 GB",
+        "1,44 MB",
+        "25 GB"
+      ],
+      "answer": 0,
+      "fact": "Um CD de música guarda cerca de 80 minutos de áudio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gigabytes cabem num DVD comum de uma camada?",
+      "options": [
+        "4,7 GB",
+        "700 MB",
+        "25 GB",
+        "1,44 GB"
+      ],
+      "answer": 0,
+      "fact": "O DVD foi lançado em 1995, como sucessor do CD."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tecnologia de disco óptico venceu a \"guerra dos formatos\" contra o HD DVD?",
+      "options": [
+        "Blu-ray",
+        "DVD duplo",
+        "Laserdisc",
+        "VHS"
+      ],
+      "answer": 0,
+      "fact": "O PlayStation 3 ajudou a popularizar o Blu-ray, porque lia esse tipo de disco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que formato de fita de vídeo venceu o Betamax, da Sony, nos anos 1980?",
+      "options": [
+        "VHS",
+        "Video8",
+        "Laserdisc",
+        "MiniDV"
+      ],
+      "answer": 0,
+      "fact": "O Betamax tinha qualidade de imagem melhor, mas fitas menos longas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que padrão de rede sem fio é o nome técnico do Wi-Fi?",
+      "options": [
+        "IEEE 802.11",
+        "IEEE 802.3",
+        "USB 3.0",
+        "ISO 9001"
+      ],
+      "answer": 0,
+      "fact": "O 802.3 é o padrão das redes com cabo, o Ethernet."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o cabo de rede mais comum, com conector RJ-45?",
+      "options": [
+        "Cabo Ethernet",
+        "Cabo coaxial",
+        "Cabo HDMI",
+        "Cabo VGA"
+      ],
+      "answer": 0,
+      "fact": "O nome \"Ethernet\" foi criado na Xerox, nos anos 1970."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que conector de vídeo azul, antigo, era usado para ligar monitores ao computador?",
+      "options": [
+        "VGA",
+        "HDMI",
+        "DisplayPort",
+        "DVI"
+      ],
+      "answer": 0,
+      "fact": "O padrão VGA foi lançado pela IBM em 1987."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que padrão de criptografia o Wi-Fi doméstico costuma usar hoje?",
+      "options": [
+        "WPA2 ou WPA3",
+        "WEP",
+        "SSL",
+        "MD5"
+      ],
+      "answer": 0,
+      "fact": "O antigo padrão WEP podia ser quebrado em poucos minutos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que algoritmo de criptografia é usado pelo governo americano desde 2001 e protege muita coisa na internet?",
+      "options": [
+        "AES",
+        "RSA",
+        "DES",
+        "MD5"
+      ],
+      "answer": 0,
+      "fact": "AES significa \"Advanced Encryption Standard\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sigla designa o certificado que deixa a conexão de um site segura, com cadeado no navegador?",
+      "options": [
+        "SSL/TLS",
+        "DNS",
+        "FTP",
+        "SMTP"
+      ],
+      "answer": 0,
+      "fact": "O TLS é o sucessor do antigo SSL."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que protocolo é usado para transferir arquivos entre computadores, desde os anos 1970?",
+      "options": [
+        "FTP",
+        "SMTP",
+        "DNS",
+        "HTTP"
+      ],
+      "answer": 0,
+      "fact": "FTP significa \"File Transfer Protocol\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que protocolo é usado para acessar e controlar outro computador por linha de comando, de forma segura?",
+      "options": [
+        "SSH",
+        "FTP",
+        "Telnet",
+        "SMTP"
+      ],
+      "answer": 0,
+      "fact": "O SSH substituiu o Telnet, que mandava até as senhas sem criptografia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o ataque que derruba um site com uma enxurrada de acessos falsos?",
+      "options": [
+        "DDoS",
+        "Phishing",
+        "Ransomware",
+        "Keylogger"
+      ],
+      "answer": 0,
+      "fact": "A sigla significa \"ataque distribuído de negação de serviço\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o programa malicioso que grava tudo o que a pessoa digita?",
+      "options": [
+        "Keylogger",
+        "Ransomware",
+        "Adware",
+        "Rootkit"
+      ],
+      "answer": 0,
+      "fact": "Por isso alguns bancos usam teclados virtuais na tela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nome recebem as vulnerabilidades desconhecidas pelo fabricante, exploradas antes de uma correção?",
+      "options": [
+        "Dia zero",
+        "Backdoor",
+        "Bug bounty",
+        "Patch"
+      ],
+      "answer": 0,
+      "fact": "O nome indica que o fabricante teve \"zero dias\" para corrigir o problema."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a recompensa que empresas pagam a quem encontra falhas de segurança nos seus sistemas?",
+      "options": [
+        "Bug bounty",
+        "Patch",
+        "Backdoor",
+        "Hackathon"
+      ],
+      "answer": 0,
+      "fact": "Algumas empresas já pagaram centenas de milhares de dólares por uma única falha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sistema operacional de celular a Nokia usava antes de adotar o Windows Phone?",
+      "options": [
+        "Symbian",
+        "Android",
+        "BlackBerry OS",
+        "webOS"
+      ],
+      "answer": 0,
+      "fact": "O Symbian chegou a ser o sistema de celular mais usado do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação foi criada por Rasmus Lerdorf e é muito usada em sites, como o WordPress?",
+      "options": [
+        "PHP",
+        "Python",
+        "Ruby",
+        "Perl"
+      ],
+      "answer": 0,
+      "fact": "PHP significava originalmente \"Personal Home Page\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação foi criada no Brasil, na PUC-Rio, em 1993?",
+      "options": [
+        "Lua",
+        "Ruby",
+        "Elixir",
+        "Go"
+      ],
+      "answer": 0,
+      "fact": "Lua é usada em jogos como \"Roblox\" e \"World of Warcraft\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação foi criada pelo Google em 2009?",
+      "options": [
+        "Go",
+        "Kotlin",
+        "Rust",
+        "Dart"
+      ],
+      "answer": 0,
+      "fact": "O mascote da linguagem Go é um esquilo-da-terra azul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação, criada pela Mozilla, é famosa pela segurança no uso de memória?",
+      "options": [
+        "Rust",
+        "Go",
+        "Swift",
+        "Kotlin"
+      ],
+      "answer": 0,
+      "fact": "O mascote não oficial do Rust é um caranguejo chamado Ferris."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação foi criada pelo brasileiro José Valim, em 2012?",
+      "options": [
+        "Elixir",
+        "Lua",
+        "Crystal",
+        "Julia"
+      ],
+      "answer": 0,
+      "fact": "Elixir roda sobre a máquina virtual da linguagem Erlang."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos usuários ativos por mês, aproximadamente, o WhatsApp tinha em 2023?",
+      "options": [
+        "Mais de 2 bilhões",
+        "Cerca de 500 milhões",
+        "Cerca de 900 milhões",
+        "Mais de 5 bilhões",
+        "Cerca de 1,2 bilhão",
+        "Cerca de 300 milhões"
+      ],
+      "answer": 0,
+      "fact": "O Brasil é um dos países onde o WhatsApp é mais usado."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas pessoas, aproximadamente, usam a internet no mundo, segundo a ONU em 2023?",
+      "options": [
+        "Cerca de 5,4 bilhões",
+        "Cerca de 2 bilhões",
+        "Cerca de 3,5 bilhões",
+        "Cerca de 7,5 bilhões",
+        "Cerca de 1 bilhão",
+        "Cerca de 4 bilhões"
+      ],
+      "answer": 0,
+      "fact": "Ainda assim, cerca de um terço da população mundial continua sem acesso."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos sites existem na internet, aproximadamente, contando os inativos?",
+      "options": [
+        "Cerca de 1,1 bilhão",
+        "Cerca de 50 milhões",
+        "Cerca de 200 milhões",
+        "Cerca de 10 bilhões",
+        "Cerca de 500 mil",
+        "Cerca de 50 bilhões"
+      ],
+      "answer": 0,
+      "fact": "A grande maioria desses sites está inativa ou abandonada."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas buscas por dia, aproximadamente, o Google recebe?",
+      "options": [
+        "Cerca de 8,5 bilhões",
+        "Cerca de 100 milhões",
+        "Cerca de 1 bilhão",
+        "Cerca de 50 bilhões",
+        "Cerca de 300 milhões",
+        "Cerca de 200 bilhões"
+      ],
+      "answer": 0,
+      "fact": "Isso dá cerca de 100 mil buscas por segundo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas horas de vídeo, aproximadamente, são enviadas ao YouTube por minuto?",
+      "options": [
+        "Cerca de 500 horas",
+        "Cerca de 10 horas",
+        "Cerca de 50 horas",
+        "Cerca de 5 mil horas",
+        "Cerca de 50 mil horas",
+        "Cerca de 2 horas"
+      ],
+      "answer": 0,
+      "fact": "Seria preciso mais de 50 anos para assistir a tudo o que é enviado num único dia."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos iPhones, aproximadamente, a Apple já vendeu desde 2007?",
+      "options": [
+        "Mais de 2 bilhões",
+        "Cerca de 300 milhões",
+        "Cerca de 800 milhões",
+        "Mais de 5 bilhões",
+        "Cerca de 100 milhões",
+        "Cerca de 1,2 bilhão"
+      ],
+      "answer": 0,
+      "fact": "O iPhone é um dos produtos mais vendidos da história."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos caracteres tinha o limite original de um tuíte?",
+      "options": [
+        "140",
+        "100",
+        "160",
+        "200",
+        "280",
+        "120"
+      ],
+      "answer": 0,
+      "fact": "O limite foi dobrado para 280 caracteres em 2017."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi lançado o navegador Google Chrome?",
+      "options": [
+        "2008",
+        "2004",
+        "2006",
+        "2010",
+        "2012",
+        "2002"
+      ],
+      "answer": 0,
+      "fact": "Em poucos anos, o Chrome passou o Internet Explorer e virou o navegador mais usado do mundo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos transistores, aproximadamente, tem um chip de celular moderno de ponta?",
+      "options": [
+        "Mais de 15 bilhões",
+        "Cerca de 15 milhões",
+        "Cerca de 150 milhões",
+        "Cerca de 1,5 bilhão",
+        "Mais de 1 trilhão",
+        "Cerca de 15 mil"
+      ],
+      "answer": 0,
+      "fact": "O primeiro microprocessador, de 1971, tinha cerca de 2.300."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "De quantos nanômetros é a tecnologia de fabricação dos chips mais avançados lançados em 2023?",
+      "options": [
+        "3 nm",
+        "14 nm",
+        "28 nm",
+        "7 nm",
+        "45 nm",
+        "90 nm"
+      ],
+      "answer": 0,
+      "fact": "O nome \"3 nm\" é mais comercial do que uma medida real de alguma peça do chip."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi enviado o primeiro e-mail?",
+      "options": [
+        "1971",
+        "1965",
+        "1969",
+        "1975",
+        "1982",
+        "1990"
+      ],
+      "answer": 0,
+      "fact": "O remetente, Ray Tomlinson, escolheu o \"@\" para separar usuário e computador."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Brasil teve sua primeira conexão à internet, ligando universidades?",
+      "options": [
+        "1988",
+        "1980",
+        "1984",
+        "1992",
+        "1995",
+        "1998"
+      ],
+      "answer": 0,
+      "fact": "A primeira conexão ligou o Laboratório Nacional de Computação Científica a uma universidade americana."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi criado o domínio .br?",
+      "options": [
+        "1989",
+        "1985",
+        "1993",
+        "1995",
+        "1998",
+        "1980"
+      ],
+      "answer": 0,
+      "fact": "O registro de domínios no Brasil é feito pelo Registro.br."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a Apple lançou o primeiro iPod?",
+      "options": [
+        "2001",
+        "1998",
+        "1999",
+        "2003",
+        "2005",
+        "1996"
+      ],
+      "answer": 0,
+      "fact": "O iPod foi lançado com uma roda de rolagem mecânica para navegar pelas músicas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas músicas o primeiro iPod prometia guardar?",
+      "options": [
+        "1.000",
+        "100",
+        "500",
+        "5.000",
+        "10.000",
+        "250"
+      ],
+      "answer": 0,
+      "fact": "O primeiro iPod tinha um disco rígido de 5 GB."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundado o Twitter?",
+      "options": [
+        "2006",
+        "2003",
+        "2004",
+        "2008",
+        "2010",
+        "2001"
+      ],
+      "answer": 0,
+      "fact": "O primeiro tuíte foi \"just setting up my twttr\", de Jack Dorsey."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundada a Amazon?",
+      "options": [
+        "1994",
+        "1990",
+        "1997",
+        "1999",
+        "2001",
+        "1987"
+      ],
+      "answer": 0,
+      "fact": "A Amazon começou vendendo apenas livros, numa garagem perto de Seattle."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundada a Microsoft?",
+      "options": [
+        "1975",
+        "1970",
+        "1980",
+        "1983",
+        "1968",
+        "1977"
+      ],
+      "answer": 0,
+      "fact": "A Microsoft foi fundada em Albuquerque, no Novo México."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas unidades do Apple I, o primeiro computador da Apple, foram fabricadas, aproximadamente?",
+      "options": [
+        "Cerca de 200",
+        "Cerca de 20",
+        "Cerca de 2 mil",
+        "Cerca de 20 mil",
+        "Cerca de 50",
+        "Cerca de 5 mil"
+      ],
+      "answer": 0,
+      "fact": "Hoje, um Apple I que ainda funciona pode valer centenas de milhares de dólares em leilão."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi lançado o Windows 1.0?",
+      "options": [
+        "1985",
+        "1981",
+        "1983",
+        "1988",
+        "1990",
+        "1992"
+      ],
+      "answer": 0,
+      "fact": "O Windows 1.0 era uma interface gráfica que rodava sobre o MS-DOS."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Orkut foi desativado?",
+      "options": [
+        "2014",
+        "2010",
+        "2012",
+        "2016",
+        "2018",
+        "2008"
+      ],
+      "answer": 0,
+      "fact": "O Brasil chegou a ter mais da metade dos usuários do Orkut."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o MSN Messenger foi encerrado na maior parte do mundo?",
+      "options": [
+        "2013",
+        "2009",
+        "2011",
+        "2015",
+        "2017",
+        "2007"
+      ],
+      "answer": 0,
+      "fact": "Os usuários foram migrados para o Skype, comprado pela Microsoft."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Pix entrou em funcionamento no Brasil?",
+      "options": [
+        "2020",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2017"
+      ],
+      "answer": 0,
+      "fact": "Em poucos anos, o Pix passou o cartão de débito e o crédito em número de transações."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o 5G \"puro\" começou a funcionar nas capitais brasileiras?",
+      "options": [
+        "2022",
+        "2019",
+        "2020",
+        "2021",
+        "2023",
+        "2018"
+      ],
+      "answer": 0,
+      "fact": "Brasília foi a primeira capital a receber o 5G puro, em julho de 2022."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a área do celular que mostra os avisos quando se arrasta o dedo de cima para baixo?",
+      "options": [
+        "Central de notificações",
+        "Tela de bloqueio",
+        "Área de trabalho",
+        "Barra de tarefas"
+      ],
+      "answer": 0,
+      "fact": "No Android, ela também traz atalhos para Wi-Fi, lanterna e Bluetooth."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que linguagem de programação foi criada por Yukihiro Matsumoto, no Japão?",
+      "options": [
+        "Ruby",
+        "Python",
+        "Perl",
+        "Lua"
+      ],
+      "answer": 0,
+      "fact": "O framework Ruby on Rails tornou a linguagem famosa nos anos 2000."
     }
   ]
 }

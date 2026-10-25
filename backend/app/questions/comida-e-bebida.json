@@ -1,0 +1,5485 @@
+{
+  "theme": "Comida e bebida",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual é o ingrediente principal do pão?",
+      "options": [
+        "Farinha de trigo",
+        "Farinha de mandioca",
+        "Fubá",
+        "Polvilho"
+      ],
+      "answer": 0,
+      "fact": "O pão está entre os alimentos preparados mais antigos: há restos de pães de mais de 14 mil anos encontrados na Jordânia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que é feita a pipoca?",
+      "options": [
+        "Milho",
+        "Arroz",
+        "Trigo",
+        "Soja"
+      ],
+      "answer": 0,
+      "fact": "O milho de pipoca estoura porque a água dentro do grão vira vapor e rompe a casca dura."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida é feita espremendo laranjas?",
+      "options": [
+        "Suco de laranja",
+        "Limonada",
+        "Refresco de caju",
+        "Groselha"
+      ],
+      "answer": 0,
+      "fact": "O Brasil é o maior produtor de laranja do mundo e exporta a maior parte como suco concentrado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que animal vem o bacon?",
+      "options": [
+        "Porco",
+        "Boi",
+        "Frango",
+        "Carneiro"
+      ],
+      "answer": 0,
+      "fact": "O bacon é feito da barriga do porco, curada com sal e geralmente defumada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta amarela os macacos dos desenhos animados adoram?",
+      "options": [
+        "Banana",
+        "Manga",
+        "Mamão",
+        "Abacaxi"
+      ],
+      "answer": 0,
+      "fact": "Na natureza, os macacos comem muitas frutas, folhas e até insetos, não só banana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o principal ingrediente do guaraná em pó?",
+      "options": [
+        "Semente de guaraná",
+        "Folha de chá",
+        "Casca de laranja",
+        "Grão de café"
+      ],
+      "answer": 0,
+      "fact": "A semente do guaraná tem mais cafeína que o grão de café."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento as galinhas botam?",
+      "options": [
+        "Ovo",
+        "Leite",
+        "Mel",
+        "Queijo"
+      ],
+      "answer": 0,
+      "fact": "Uma galinha poedeira pode botar cerca de 300 ovos por ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que é feito o queijo?",
+      "options": [
+        "Leite",
+        "Ovo",
+        "Farinha",
+        "Soja"
+      ],
+      "answer": 0,
+      "fact": "São necessários cerca de 10 litros de leite para fazer 1 quilo de queijo duro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes alimentos é um legume de cor laranja muito usado em bolos?",
+      "options": [
+        "Cenoura",
+        "Beterraba",
+        "Pepino",
+        "Chuchu"
+      ],
+      "answer": 0,
+      "fact": "As cenouras antigas eram roxas ou amarelas; a cor laranja só se popularizou no século XVII."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida quente se mistura com leite no famoso \"pingado\" da padaria?",
+      "options": [
+        "Café",
+        "Chá-mate",
+        "Chocolate quente",
+        "Chá de camomila"
+      ],
+      "answer": 0,
+      "fact": "O \"pingado\" é o café com leite servido na padaria, comum principalmente em São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país surgiu o hambúrguer como o conhecemos hoje, no pão?",
+      "options": [
+        "Estados Unidos",
+        "Alemanha",
+        "Inglaterra",
+        "Canadá"
+      ],
+      "answer": 0,
+      "fact": "O nome vem da cidade alemã de Hamburgo, mas o sanduíche no pão se popularizou nos Estados Unidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta é usada para fazer a goiabada?",
+      "options": [
+        "Goiaba",
+        "Banana",
+        "Figo",
+        "Marmelo"
+      ],
+      "answer": 0,
+      "fact": "A goiabada cascão leva pedaços da casca da fruta, por isso tem textura mais grossa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se coloca na pipoca para ela ficar doce, em festas juninas?",
+      "options": [
+        "Açúcar",
+        "Sal",
+        "Pimenta",
+        "Orégano"
+      ],
+      "answer": 0,
+      "fact": "A pipoca doce de festa costuma levar açúcar e, às vezes, corante vermelho ou chocolate."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De qual fruta se faz o vinho?",
+      "options": [
+        "Uva",
+        "Maçã",
+        "Pêssego",
+        "Laranja"
+      ],
+      "answer": 0,
+      "fact": "São necessários cerca de 1,2 quilo de uva para fazer uma garrafa de 750 ml de vinho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento se faz batendo o creme do leite até virar uma massa amarela?",
+      "options": [
+        "Manteiga",
+        "Requeijão",
+        "Iogurte",
+        "Coalhada"
+      ],
+      "answer": 0,
+      "fact": "Para fazer 1 quilo de manteiga são necessários cerca de 20 litros de leite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um tempero verde muito usado na comida brasileira?",
+      "options": [
+        "Cebolinha",
+        "Canela",
+        "Cravo",
+        "Noz-moscada"
+      ],
+      "answer": 0,
+      "fact": "O \"cheiro-verde\" é a dupla de salsinha com cebolinha, presente em quase toda cozinha brasileira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta grande, verde por fora e vermelha por dentro, tem muitas sementes pretas?",
+      "options": [
+        "Melancia",
+        "Melão",
+        "Mamão",
+        "Abóbora"
+      ],
+      "answer": 0,
+      "fact": "A melancia tem cerca de 92% de água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas bebidas é alcoólica?",
+      "options": [
+        "Cerveja",
+        "Guaraná",
+        "Água de coco",
+        "Mate"
+      ],
+      "answer": 0,
+      "fact": "A cerveja é uma das bebidas mais antigas do mundo: os sumérios já a fabricavam há mais de 5 mil anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que comida italiana é um disco de massa coberto com molho de tomate e queijo, assado no forno?",
+      "options": [
+        "Pizza",
+        "Lasanha",
+        "Calzone",
+        "Nhoque"
+      ],
+      "answer": 0,
+      "fact": "São Paulo é uma das cidades que mais consomem pizza no mundo, com mais de 1 milhão por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que massa italiana é feita em camadas, intercaladas com molho e queijo?",
+      "options": [
+        "Lasanha",
+        "Espaguete",
+        "Ravióli",
+        "Penne"
+      ],
+      "answer": 0,
+      "fact": "A lasanha é um dos pratos mais antigos da Itália; há receitas dela em livros de cozinha do século XIV."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes alimentos é feito de batata?",
+      "options": [
+        "Purê",
+        "Polenta",
+        "Cuscuz",
+        "Farofa"
+      ],
+      "answer": 0,
+      "fact": "A batata é originária dos Andes, na região do Peru e da Bolívia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta é usada para fazer a limonada?",
+      "options": [
+        "Limão",
+        "Laranja",
+        "Maracujá",
+        "Abacaxi"
+      ],
+      "answer": 0,
+      "fact": "O limão mais comum no Brasil, o taiti, é na verdade uma lima ácida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento as abelhas produzem?",
+      "options": [
+        "Mel",
+        "Geleia",
+        "Melado",
+        "Açúcar mascavo"
+      ],
+      "answer": 0,
+      "fact": "Para produzir 1 quilo de mel, as abelhas visitam milhões de flores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que salgadinho de festa é uma salsicha enrolada em massa?",
+      "options": [
+        "Enroladinho de salsicha",
+        "Coxinha",
+        "Risole",
+        "Esfiha"
+      ],
+      "answer": 0,
+      "fact": "O enroladinho é presença garantida em festa infantil no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a cor da gema do ovo?",
+      "options": [
+        "Amarela",
+        "Branca",
+        "Vermelha",
+        "Verde"
+      ],
+      "answer": 0,
+      "fact": "A cor da gema depende da alimentação da galinha, não do valor nutritivo do ovo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o \"pão francês\" no Brasil?",
+      "options": [
+        "Um pão pequeno de casca crocante",
+        "Um pão doce com recheio",
+        "Um pão de forma fatiado",
+        "Um pão sem miolo"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome, o pão francês é uma criação brasileira, inspirada em pães que a elite via em Paris."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que comida japonesa é feita com arroz e peixe cru, enrolada em alga?",
+      "options": [
+        "Sushi",
+        "Lámen",
+        "Yakissoba",
+        "Tempurá"
+      ],
+      "answer": 0,
+      "fact": "A alga usada para enrolar o sushi se chama nori."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que macarrão frito com legumes e carne, de origem oriental, é muito vendido em feiras e no delivery?",
+      "options": [
+        "Yakissoba",
+        "Lámen",
+        "Udon",
+        "Nhoque"
+      ],
+      "answer": 0,
+      "fact": "\"Yakissoba\" é um nome japonês: significa \"macarrão frito\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas frutas tem um caroço grande no meio?",
+      "options": [
+        "Manga",
+        "Uva",
+        "Banana",
+        "Morango"
+      ],
+      "answer": 0,
+      "fact": "O Brasil tem dezenas de variedades de manga, como a palmer, a tommy e a espada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce gelado se toma no palito ou na casquinha?",
+      "options": [
+        "Sorvete",
+        "Pudim",
+        "Mousse",
+        "Gelatina"
+      ],
+      "answer": 0,
+      "fact": "O sorvete de casquinha ficou famoso na Feira Mundial de St. Louis, nos Estados Unidos, em 1904."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida é a mais consumida no mundo, depois da água?",
+      "options": [
+        "Chá",
+        "Café",
+        "Cerveja",
+        "Refrigerante"
+      ],
+      "answer": 0,
+      "fact": "O chá é bebido há milhares de anos na China."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que comida de festa junina é feita de milho cozido, com leite e açúcar, em forma de creme?",
+      "options": [
+        "Curau",
+        "Pipoca",
+        "Pé de moleque",
+        "Quentão"
+      ],
+      "answer": 0,
+      "fact": "Em algumas regiões do Nordeste, o curau é chamado de canjica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes não é um tipo de carne?",
+      "options": [
+        "Tofu",
+        "Picanha",
+        "Filé-mignon",
+        "Costela"
+      ],
+      "answer": 0,
+      "fact": "O tofu é feito de leite de soja coalhado, de forma parecida com a do queijo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o corte de carne mais famoso do churrasco brasileiro, com uma capa de gordura?",
+      "options": [
+        "Picanha",
+        "Músculo",
+        "Acém",
+        "Patinho"
+      ],
+      "answer": 0,
+      "fact": "A picanha fica na parte de trás do boi e cada animal tem só duas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida se faz com chá gelado, limão e açúcar e é vendida nas praias do Rio?",
+      "options": [
+        "Mate gelado",
+        "Caipirinha",
+        "Água tônica",
+        "Chimarrão"
+      ],
+      "answer": 0,
+      "fact": "O mate de praia carioca é vendido nos tradicionais galões, junto com o biscoito de polvilho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que biscoito de polvilho é vendido nas praias do Rio de Janeiro junto com o mate?",
+      "options": [
+        "Biscoito Globo",
+        "Biscoito Maria",
+        "Biscoito de maisena",
+        "Biscoito recheado"
+      ],
+      "answer": 0,
+      "fact": "O Biscoito Globo foi criado em São Paulo, mas virou símbolo do Rio de Janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes legumes faz a gente chorar quando é cortado?",
+      "options": [
+        "Cebola",
+        "Alho",
+        "Tomate",
+        "Pimentão"
+      ],
+      "answer": 0,
+      "fact": "A cebola solta um gás que irrita os olhos; gelar a cebola antes de cortar ajuda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta é marrom e peluda por fora e verde por dentro?",
+      "options": [
+        "Kiwi",
+        "Abacate",
+        "Maracujá",
+        "Goiaba"
+      ],
+      "answer": 0,
+      "fact": "O kiwi ganhou esse nome na Nova Zelândia, por lembrar o pássaro kiwi."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida vem dentro de um fruto verde e é vendida gelada na praia?",
+      "options": [
+        "Água de coco",
+        "Caldo de cana",
+        "Suco de caju",
+        "Mate"
+      ],
+      "answer": 0,
+      "fact": "Um coco verde tem em média de 300 a 500 ml de água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que é feito o caldo de cana?",
+      "options": [
+        "Cana-de-açúcar moída",
+        "Milho cozido",
+        "Beterraba espremida",
+        "Mandioca ralada"
+      ],
+      "answer": 0,
+      "fact": "O caldo de cana também é chamado de garapa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tempero mais básico, que dá o gosto salgado à comida?",
+      "options": [
+        "Sal",
+        "Açúcar",
+        "Vinagre",
+        "Cominho"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"salário\" vem do latim e tem ligação com o sal, que era muito valioso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ingrediente em lata é a base do pudim mais famoso do Brasil?",
+      "options": [
+        "Leite condensado",
+        "Creme de leite",
+        "Leite em pó",
+        "Doce de leite"
+      ],
+      "answer": 0,
+      "fact": "O leite condensado chegou ao Brasil no fim do século XIX e mudou a doceria nacional."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento de café da manhã é feito de cereais, como aveia, com frutas secas e mel?",
+      "options": [
+        "Granola",
+        "Cuscuz",
+        "Tapioca",
+        "Mingau"
+      ],
+      "answer": 0,
+      "fact": "A granola foi criada nos Estados Unidos no século XIX como comida saudável."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que comida é preparada mexendo o fubá na água quente até engrossar?",
+      "options": [
+        "Polenta",
+        "Purê",
+        "Farofa",
+        "Pirão"
+      ],
+      "answer": 0,
+      "fact": "A polenta veio para o Brasil com os imigrantes italianos e é muito popular no Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o pirão?",
+      "options": [
+        "Um creme de farinha de mandioca com caldo",
+        "Um doce de leite com coco",
+        "Um pão de milho assado",
+        "Uma salada de folhas cruas"
+      ],
+      "answer": 0,
+      "fact": "O pirão é o acompanhamento clássico de peixes e moquecas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que molho vermelho de tomate vem em frasco e acompanha a batata frita?",
+      "options": [
+        "Ketchup",
+        "Mostarda",
+        "Maionese",
+        "Shoyu"
+      ],
+      "answer": 0,
+      "fact": "As primeiras receitas de ketchup, no século XVIII, não levavam tomate: eram feitas de cogumelos ou peixe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento é feito torrando a farinha de mandioca com manteiga, ovo ou bacon?",
+      "options": [
+        "Farofa",
+        "Pirão",
+        "Tapioca",
+        "Beiju"
+      ],
+      "answer": 0,
+      "fact": "A farofa é acompanhamento indispensável no churrasco e na feijoada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida gaseificada escura tem uma receita secreta muito famosa?",
+      "options": [
+        "Coca-Cola",
+        "Guaraná",
+        "Soda limonada",
+        "Água tônica"
+      ],
+      "answer": 0,
+      "fact": "A Coca-Cola foi criada em 1886 por um farmacêutico de Atlanta, nos Estados Unidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta pequena e roxa nasce em cachos?",
+      "options": [
+        "Uva",
+        "Ameixa",
+        "Jabuticaba",
+        "Amora"
+      ],
+      "answer": 0,
+      "fact": "O Brasil já produz uvas o ano todo no Vale do São Francisco, graças ao clima seco e quente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta brasileira, preta e redonda, nasce grudada no tronco da árvore?",
+      "options": [
+        "Jabuticaba",
+        "Acerola",
+        "Pitanga",
+        "Amora"
+      ],
+      "answer": 0,
+      "fact": "A jabuticabeira pode levar mais de 10 anos para dar os primeiros frutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes alimentos é um tipo de feijão?",
+      "options": [
+        "Feijão-carioca",
+        "Feijão-de-batata",
+        "Feijão-de-arroz",
+        "Feijão-de-trigo"
+      ],
+      "answer": 0,
+      "fact": "O feijão-carioca ganhou esse nome pelas listras, que lembram o calçadão de Copacabana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que sobremesa é feita com ovos, leite condensado e leite, com calda de caramelo?",
+      "options": [
+        "Pudim",
+        "Mousse",
+        "Pavê",
+        "Manjar"
+      ],
+      "answer": 0,
+      "fact": "O pudim de leite condensado é uma das sobremesas mais populares do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que sobremesa em camadas leva biscoito, creme e às vezes chocolate?",
+      "options": [
+        "Pavê",
+        "Pudim",
+        "Quindim",
+        "Sagu"
+      ],
+      "answer": 0,
+      "fact": "A piada mais famosa das festas de fim de ano é perguntar se \"é pavê ou pra comer\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida fermentada de leite é vendida em potinhos e pode ter sabor de frutas?",
+      "options": [
+        "Iogurte",
+        "Requeijão",
+        "Creme de leite",
+        "Leite condensado"
+      ],
+      "answer": 0,
+      "fact": "O iogurte é feito com bactérias que transformam o açúcar do leite em ácido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um \"pastel de feira\"?",
+      "options": [
+        "Massa frita com recheio",
+        "Bolo assado de frutas",
+        "Pão recheado assado",
+        "Doce de coco"
+      ],
+      "answer": 0,
+      "fact": "O pastel de feira foi popularizado no Brasil por imigrantes chineses e japoneses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta de casca enrugada tem polpa cheia de sementes azedinhas e é ótima para suco?",
+      "options": [
+        "Maracujá",
+        "Goiaba",
+        "Caju",
+        "Pitanga"
+      ],
+      "answer": 0,
+      "fact": "A flor do maracujá é chamada de flor-da-paixão, e por isso a fruta se chama \"passion fruit\" em inglês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "No Sul do Brasil, como é chamada a tangerina?",
+      "options": [
+        "Bergamota",
+        "Mexerica",
+        "Poncã",
+        "Mimosa"
+      ],
+      "answer": 0,
+      "fact": "A mesma fruta é chamada de mexerica em Minas e em boa parte de São Paulo, e de tangerina no Rio de Janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bolo junino é feito com milho verde ralado e assado em forma?",
+      "options": [
+        "Bolo de milho",
+        "Pé de moleque",
+        "Cocada",
+        "Maria-mole"
+      ],
+      "answer": 0,
+      "fact": "O milho é o ingrediente símbolo das festas juninas porque sua colheita acontece nessa época."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento se faz com leite, farinha e ovos, em discos finos na frigideira?",
+      "options": [
+        "Panqueca",
+        "Omelete",
+        "Tapioca",
+        "Crepioca"
+      ],
+      "answer": 0,
+      "fact": "Na França, a versão fina da panqueca é o crepe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um tipo de pimenta?",
+      "options": [
+        "Malagueta",
+        "Mostarda",
+        "Gengibre",
+        "Cúrcuma"
+      ],
+      "answer": 0,
+      "fact": "A pimenta-malagueta é muito usada no Brasil, principalmente na culinária baiana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se coloca no cachorro-quente?",
+      "options": [
+        "Salsicha",
+        "Hambúrguer",
+        "Frango empanado",
+        "Peixe"
+      ],
+      "answer": 0,
+      "fact": "Na Alemanha, as salsichas de Frankfurt deram origem ao nome \"frankfurter\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida é feita misturando frutas batidas com leite no liquidificador?",
+      "options": [
+        "Vitamina",
+        "Refresco",
+        "Chá",
+        "Garapa"
+      ],
+      "answer": 0,
+      "fact": "Em Portugal, essa bebida é chamada de batido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta aveludada é vendida em calda, na lata, como sobremesa?",
+      "options": [
+        "Pêssego",
+        "Maçã",
+        "Pera",
+        "Figo"
+      ],
+      "answer": 0,
+      "fact": "O pêssego é originário da China, apesar de o nome científico, Prunus persica, sugerir a Pérsia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se usa para adoçar a comida quando não se quer açúcar?",
+      "options": [
+        "Adoçante",
+        "Vinagre",
+        "Fermento",
+        "Amido"
+      ],
+      "answer": 0,
+      "fact": "Alguns adoçantes são centenas de vezes mais doces que o açúcar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento é usado para fazer o bolo crescer?",
+      "options": [
+        "Fermento",
+        "Sal",
+        "Óleo",
+        "Vinagre"
+      ],
+      "answer": 0,
+      "fact": "O fermento químico solta gás carbônico quando aquecido, formando as bolhas do bolo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce macio de festa, rosa ou branco, é feito com claras e gelatina?",
+      "options": [
+        "Maria-mole",
+        "Cocada",
+        "Paçoca",
+        "Quindim"
+      ],
+      "answer": 0,
+      "fact": "A maria-mole tradicional é coberta com coco ralado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas comidas é típica do café da manhã nordestino, feita com flocos de milho no vapor?",
+      "options": [
+        "Cuscuz",
+        "Pão de queijo",
+        "Croissant",
+        "Panqueca"
+      ],
+      "answer": 0,
+      "fact": "O cuscuz nordestino é cozido numa panela própria, a cuscuzeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que carne vem do peixe e é muito comida na Semana Santa?",
+      "options": [
+        "Bacalhau",
+        "Picanha",
+        "Lombo",
+        "Peito de peru"
+      ],
+      "answer": 0,
+      "fact": "O bacalhau consumido no Brasil vem principalmente da Noruega e de Portugal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o \"X-salada\"?",
+      "options": [
+        "Um sanduíche de hambúrguer com queijo e salada",
+        "Uma salada de frutas",
+        "Um prato de arroz com legumes",
+        "Um tipo de pastel"
+      ],
+      "answer": 0,
+      "fact": "O \"X\" vem da pronúncia de \"cheese\", queijo em inglês, que soa parecido com \"xis\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta vermelha e redonda é a base do molho do macarrão?",
+      "options": [
+        "Tomate",
+        "Pimentão",
+        "Beterraba",
+        "Morango"
+      ],
+      "answer": 0,
+      "fact": "O tomate chegou à Europa vindo das Américas e, por muito tempo, foi visto como planta ornamental."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que legume roxo-escuro é usado na salada e tinge tudo de vermelho?",
+      "options": [
+        "Beterraba",
+        "Berinjela",
+        "Repolho roxo",
+        "Rabanete"
+      ],
+      "answer": 0,
+      "fact": "O suco de beterraba já foi usado como corante natural de alimentos e até de tecidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta verde de casca dura é ralada para fazer cocada e beijinho?",
+      "options": [
+        "Coco",
+        "Limão",
+        "Abacate",
+        "Kiwi"
+      ],
+      "answer": 0,
+      "fact": "O coqueiro é chamado de \"árvore da vida\" porque quase todas as suas partes têm uso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um doce feito de amendoim?",
+      "options": [
+        "Paçoca",
+        "Quindim",
+        "Cocada",
+        "Suspiro"
+      ],
+      "answer": 0,
+      "fact": "O amendoim é originário da América do Sul e era cultivado pelos indígenas antes da chegada dos europeus."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce crocante e branquinho é feito só de claras batidas com açúcar?",
+      "options": [
+        "Suspiro",
+        "Marshmallow",
+        "Quindim",
+        "Merengue de chocolate"
+      ],
+      "answer": 0,
+      "fact": "Em muitos países, o suspiro é conhecido como merengue."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um \"pão na chapa\"?",
+      "options": [
+        "Pão francês com manteiga tostado na chapa",
+        "Pão de queijo frito",
+        "Pão doce com recheio",
+        "Torrada com queijo e presunto"
+      ],
+      "answer": 0,
+      "fact": "O pão na chapa com café com leite é um clássico das padarias paulistanas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que lanche leva presunto e queijo entre duas fatias de pão, tostado na sanduicheira?",
+      "options": [
+        "Misto-quente",
+        "Bauru",
+        "Cachorro-quente",
+        "Beirute"
+      ],
+      "answer": 0,
+      "fact": "Em Portugal, o misto-quente é chamado de tosta mista."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento se põe no café para clarear e deixá-lo mais suave?",
+      "options": [
+        "Leite",
+        "Água",
+        "Mel",
+        "Canela"
+      ],
+      "answer": 0,
+      "fact": "Café com leite é tão tradicional que deu nome à \"política do café com leite\" da República Velha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas bebidas é feita a partir do grão torrado de uma planta?",
+      "options": [
+        "Café",
+        "Suco de uva",
+        "Água de coco",
+        "Leite"
+      ],
+      "answer": 0,
+      "fact": "Os grãos de café são as sementes de um fruto vermelho chamado cereja do café."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta cítrica tem o mesmo nome de uma cor?",
+      "options": [
+        "Laranja",
+        "Limão",
+        "Tangerina",
+        "Lima"
+      ],
+      "answer": 0,
+      "fact": "A cor laranja ganhou esse nome por causa da fruta, e não o contrário."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se usa para fritar a batata frita?",
+      "options": [
+        "Óleo",
+        "Água",
+        "Vinagre",
+        "Leite"
+      ],
+      "answer": 0,
+      "fact": "A batata frita mais crocante costuma ser frita duas vezes: primeiro em temperatura mais baixa, depois mais alta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce em pedaços, feito de um legume laranja, é comum nas festas juninas?",
+      "options": [
+        "Doce de abóbora",
+        "Pé de moleque",
+        "Bala de coco",
+        "Cocada preta"
+      ],
+      "answer": 0,
+      "fact": "O doce de abóbora em pedaços fica crocante por fora quando a abóbora é deixada em cal virgem antes do cozimento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas frutas é vermelha por fora e branca por dentro, com sementes pretinhas, e vem de um cacto?",
+      "options": [
+        "Pitaia",
+        "Lichia",
+        "Romã",
+        "Goiaba"
+      ],
+      "answer": 0,
+      "fact": "A pitaia também é chamada de fruta-do-dragão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento de origem animal é a base da omelete?",
+      "options": [
+        "Ovo",
+        "Leite",
+        "Queijo",
+        "Carne moída"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"omelete\" vem do francês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é \"arroz-doce\"?",
+      "options": [
+        "Arroz cozido no leite com açúcar e canela",
+        "Arroz frito com legumes",
+        "Arroz com feijão e carne",
+        "Bolinho de arroz frito"
+      ],
+      "answer": 0,
+      "fact": "O arroz-doce é sobremesa típica de Portugal e veio para o Brasil com os colonizadores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida de festa infantil é feita de groselha, guaraná e às vezes leite?",
+      "options": [
+        "Ponche",
+        "Quentão",
+        "Chocolate quente",
+        "Mate"
+      ],
+      "answer": 0,
+      "fact": "\"Ponche\" vem de uma palavra hindi que quer dizer \"cinco\", pelo número original de ingredientes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se bate com açúcar para fazer o chantili?",
+      "options": [
+        "Creme de leite fresco",
+        "Leite condensado",
+        "Manteiga",
+        "Requeijão"
+      ],
+      "answer": 0,
+      "fact": "Conta-se que o chantili foi criado no Castelo de Chantilly, na França, no século XVII."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta parecida com a laranja é pequena, verde e tem gosto muito azedo?",
+      "options": [
+        "Limão",
+        "Mexerica",
+        "Lima-da-pérsia",
+        "Caqui"
+      ],
+      "answer": 0,
+      "fact": "Os marinheiros ingleses levavam limão nas viagens para evitar o escorbuto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o sistema de churrascaria em que os garçons passam com espetos e o cliente come à vontade?",
+      "options": [
+        "Rodízio",
+        "À la carte",
+        "Prato feito",
+        "Self-service"
+      ],
+      "answer": 0,
+      "fact": "No rodízio, o cartão verde e vermelho indica se o cliente quer mais carne ou não."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o \"self-service por quilo\"?",
+      "options": [
+        "Restaurante em que se paga pelo peso do prato",
+        "Restaurante só de churrasco",
+        "Lanchonete de fast-food",
+        "Restaurante com garçom em todas as mesas"
+      ],
+      "answer": 0,
+      "fact": "O restaurante por quilo é uma invenção muito brasileira, que se espalhou nos anos 1980 e 1990."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual sabor de pizza leva rodelas de linguiça defumada e cebola?",
+      "options": [
+        "Calabresa",
+        "Margherita",
+        "Portuguesa",
+        "Quatro queijos"
+      ],
+      "answer": 0,
+      "fact": "A calabresa usada no Brasil é diferente do embutido da região da Calábria, na Itália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual sabor de pizza leva ovo, presunto, cebola, ervilha e azeitona?",
+      "options": [
+        "Portuguesa",
+        "Calabresa",
+        "Napolitana",
+        "Margherita"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome, a pizza portuguesa é uma criação brasileira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que salgado assado do Oriente Médio é aberto ou fechado e tem recheio de carne?",
+      "options": [
+        "Esfiha",
+        "Coxinha",
+        "Empada",
+        "Croquete"
+      ],
+      "answer": 0,
+      "fact": "A esfiha chegou ao Brasil com os imigrantes sírios e libaneses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bolinho frito de origem árabe é feito de carne moída com trigo?",
+      "options": [
+        "Quibe",
+        "Croquete",
+        "Bolinho de bacalhau",
+        "Risole"
+      ],
+      "answer": 0,
+      "fact": "No Líbano, o quibe cru é um prato muito tradicional."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta deixa a língua \"pinicando\" quando comida fresca, por causa de uma enzima?",
+      "options": [
+        "Abacaxi",
+        "Banana",
+        "Maçã",
+        "Pera"
+      ],
+      "answer": 0,
+      "fact": "A bromelina do abacaxi digere proteínas, inclusive as da nossa língua; por isso ele fresco impede a gelatina de endurecer."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que alimento é a base do miojo?",
+      "options": [
+        "Macarrão",
+        "Arroz",
+        "Batata",
+        "Feijão"
+      ],
+      "answer": 0,
+      "fact": "O miojo leva cerca de 3 minutos para ficar pronto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce dos Estados Unidos é um bolinho redondo com furo no meio?",
+      "options": [
+        "Donut",
+        "Cupcake",
+        "Muffin",
+        "Brownie"
+      ],
+      "answer": 0,
+      "fact": "Muitos americanos comemoram o Dia Nacional do Donut, que acontece na primeira sexta de junho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bolinho de chocolate denso, cortado em quadrados, veio dos Estados Unidos?",
+      "options": [
+        "Brownie",
+        "Cookie",
+        "Muffin",
+        "Cupcake"
+      ],
+      "answer": 0,
+      "fact": "O brownie surgiu em Chicago, no fim do século XIX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que biscoito grande e redondo, com gotas de chocolate, é típico dos Estados Unidos?",
+      "options": [
+        "Cookie",
+        "Biscoito Maria",
+        "Wafer",
+        "Biscoito de polvilho"
+      ],
+      "answer": 0,
+      "fact": "O cookie com gotas de chocolate foi inventado por volta de 1938, numa pousada de Massachusetts."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que lanche rápido francês é um pão comprido e fino?",
+      "options": [
+        "Baguete",
+        "Ciabatta",
+        "Bisnaga",
+        "Brioche"
+      ],
+      "answer": 0,
+      "fact": "A França vende cerca de 6 bilhões de baguetes por ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pão francês em formato de meia-lua é feito de massa folhada com manteiga?",
+      "options": [
+        "Croissant",
+        "Brioche",
+        "Baguete",
+        "Bagel"
+      ],
+      "answer": 0,
+      "fact": "\"Croissant\" significa \"crescente\" em francês, pelo formato de lua crescente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um tipo de queijo muito comum no Brasil, branco e fresco?",
+      "options": [
+        "Queijo minas frescal",
+        "Parmesão",
+        "Gorgonzola",
+        "Cheddar"
+      ],
+      "answer": 0,
+      "fact": "O queijo minas frescal tem muita água e por isso dura pouco na geladeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que queijo amarelo, duro e ralado vai por cima do macarrão?",
+      "options": [
+        "Parmesão",
+        "Muçarela",
+        "Requeijão",
+        "Ricota"
+      ],
+      "answer": 0,
+      "fact": "O Parmigiano Reggiano verdadeiro só pode ser feito numa região específica do norte da Itália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que queijo é usado no pastel e derrete formando \"fios\"?",
+      "options": [
+        "Muçarela",
+        "Parmesão",
+        "Ricota",
+        "Gorgonzola"
+      ],
+      "answer": 0,
+      "fact": "A muçarela original italiana é feita com leite de búfala."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de comida é o \"strogonoff\" no Brasil?",
+      "options": [
+        "Carne ou frango com molho de creme de leite",
+        "Macarrão com molho de tomate",
+        "Sopa de legumes",
+        "Torta de frango"
+      ],
+      "answer": 0,
+      "fact": "O estrogonofe tem origem russa e virou prato de domingo no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que acompanhamento crocante vai em cima do strogonoff?",
+      "options": [
+        "Batata palha",
+        "Farofa",
+        "Pipoca",
+        "Torrada"
+      ],
+      "answer": 0,
+      "fact": "A batata palha é feita com batata cortada em fios finíssimos e frita."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida é feita de cacau em pó com leite quente?",
+      "options": [
+        "Chocolate quente",
+        "Café com leite",
+        "Leite com mel",
+        "Chá-mate"
+      ],
+      "answer": 0,
+      "fact": "Os astecas tomavam uma bebida de cacau amarga e com pimenta, bem diferente da versão doce de hoje."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta seca aparece no arroz de Natal e divide opiniões?",
+      "options": [
+        "Uva-passa",
+        "Damasco",
+        "Ameixa seca",
+        "Tâmara"
+      ],
+      "answer": 0,
+      "fact": "A uva-passa é feita simplesmente secando a uva, ao sol ou em estufas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que festa é tradição comer o peru assado e a rabanada?",
+      "options": [
+        "Natal",
+        "Páscoa",
+        "Carnaval",
+        "Festa junina"
+      ],
+      "answer": 0,
+      "fact": "A rabanada é feita com pão amanhecido molhado no leite e no ovo, frito e passado no açúcar com canela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce de Natal é feito de pão amanhecido passado no leite, frito e coberto de açúcar com canela?",
+      "options": [
+        "Rabanada",
+        "Panetone",
+        "Bolo de rolo",
+        "Sonho"
+      ],
+      "answer": 0,
+      "fact": "Em Portugal, a rabanada também é tradição no Natal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bolo doce italiano com frutas cristalizadas é típico do Natal?",
+      "options": [
+        "Panetone",
+        "Colomba",
+        "Stollen",
+        "Tiramisu"
+      ],
+      "answer": 0,
+      "fact": "Conta a lenda que o panetone foi criado em Milão por um ajudante de cozinha chamado Toni: \"pan de Toni\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pão doce frito, recheado com creme e coberto de açúcar, é clássico das padarias?",
+      "options": [
+        "Sonho",
+        "Bomba",
+        "Carolina",
+        "Churros"
+      ],
+      "answer": 0,
+      "fact": "Em Portugal, o sonho é um doce frito de massa leve, sem recheio, comido no Natal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce de massa frita em formato comprido, passado no açúcar com canela, costuma ter recheio de doce de leite?",
+      "options": [
+        "Churros",
+        "Sonho",
+        "Rosquinha",
+        "Pastel de Belém"
+      ],
+      "answer": 0,
+      "fact": "O churros é de origem espanhola e é muito comido no café da manhã na Espanha, mergulhado em chocolate."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o principal ingrediente da salada de maionese?",
+      "options": [
+        "Batata",
+        "Arroz",
+        "Alface",
+        "Repolho"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, a salada de maionese é presença certa no almoço de domingo e no churrasco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que folha verde é a base da maioria das saladas no Brasil?",
+      "options": [
+        "Alface",
+        "Couve",
+        "Espinafre",
+        "Rúcula"
+      ],
+      "answer": 0,
+      "fact": "A alface é composta por cerca de 95% de água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que verdura picadinha acompanha a feijoada, refogada no alho?",
+      "options": [
+        "Couve",
+        "Alface",
+        "Rúcula",
+        "Agrião"
+      ],
+      "answer": 0,
+      "fact": "A couve é rica em cálcio e vitamina C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta vermelha de casca grossa é cheia de sementes envoltas em polpa, e é comida no Ano-Novo para dar sorte?",
+      "options": [
+        "Romã",
+        "Pitanga",
+        "Acerola",
+        "Caqui"
+      ],
+      "answer": 0,
+      "fact": "Pela tradição, guardar sementes de romã na carteira no Réveillon traz dinheiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que comida se come no Réveillon para atrair dinheiro, segundo a tradição?",
+      "options": [
+        "Lentilha",
+        "Feijão-preto",
+        "Grão-de-bico",
+        "Ervilha"
+      ],
+      "answer": 0,
+      "fact": "A lentilha lembra moedinhas, e por isso virou símbolo de prosperidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um tipo de grão parecido com feijão, usado no homus?",
+      "options": [
+        "Grão-de-bico",
+        "Lentilha",
+        "Ervilha",
+        "Milho"
+      ],
+      "answer": 0,
+      "fact": "Líbano e Israel já disputaram o recorde de maior prato de homus do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de carne é a \"carne moída\"?",
+      "options": [
+        "Carne triturada em pedacinhos",
+        "Carne cozida no vapor",
+        "Carne crua em tiras",
+        "Carne seca ao sol"
+      ],
+      "answer": 0,
+      "fact": "A carne moída é a base do hambúrguer, da almôndega e do recheio de pastel."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bolinhas de carne moída são servidas com molho de tomate?",
+      "options": [
+        "Almôndegas",
+        "Quibes",
+        "Croquetes",
+        "Nhoques"
+      ],
+      "answer": 0,
+      "fact": "Na Suécia, as almôndegas são um prato nacional, servidas com geleia de frutas vermelhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que massa italiana em formato de bolinhas é feita com batata?",
+      "options": [
+        "Nhoque",
+        "Ravióli",
+        "Capeletti",
+        "Fusilli"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, há a tradição de comer nhoque no dia 29 de cada mês, com dinheiro sob o prato, para atrair sorte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que massa recheada italiana tem formato de \"chapeuzinho\" e é servida na sopa?",
+      "options": [
+        "Capeletti",
+        "Lasanha",
+        "Espaguete",
+        "Penne"
+      ],
+      "answer": 0,
+      "fact": "\"Cappelletti\" significa \"chapeuzinhos\" em italiano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de macarrão é longo, fino e redondo?",
+      "options": [
+        "Espaguete",
+        "Penne",
+        "Parafuso",
+        "Talharim"
+      ],
+      "answer": 0,
+      "fact": "\"Spaghetti\" vem de \"spago\", que significa \"barbante\" em italiano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que molho italiano verde é feito de manjericão, alho, queijo e azeite?",
+      "options": [
+        "Pesto",
+        "Bolonhesa",
+        "Branco",
+        "Ao sugo"
+      ],
+      "answer": 0,
+      "fact": "O pesto é originário de Gênova, na Itália, e tradicionalmente é feito no pilão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que molho de carne moída com tomate leva o nome de uma cidade italiana?",
+      "options": [
+        "Bolonhesa",
+        "Pesto",
+        "Carbonara",
+        "Alfredo"
+      ],
+      "answer": 0,
+      "fact": "Na cidade de Bolonha, o molho é chamado de \"ragù\" e é servido com talharim, não com espaguete."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que folha cheirosa enfeita a pizza margherita, ao lado do tomate e da muçarela?",
+      "options": [
+        "Manjericão",
+        "Salsinha",
+        "Coentro",
+        "Hortelã"
+      ],
+      "answer": 0,
+      "fact": "Diz a lenda que a pizza margherita imita as cores da bandeira italiana: verde, branco e vermelho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual tempero verde divide opiniões: muitos amam e outros acham que tem gosto de sabão?",
+      "options": [
+        "Coentro",
+        "Salsinha",
+        "Orégano",
+        "Louro"
+      ],
+      "answer": 0,
+      "fact": "Quem acha que o coentro tem gosto de sabão pode ter uma variação genética que muda a percepção do sabor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tempero seco é jogado em cima da pizza?",
+      "options": [
+        "Orégano",
+        "Canela",
+        "Cominho",
+        "Açafrão"
+      ],
+      "answer": 0,
+      "fact": "O orégano é mais aromático seco do que fresco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que especiaria em casca marrom é usada no arroz-doce e na canjica?",
+      "options": [
+        "Canela",
+        "Cravo",
+        "Noz-moscada",
+        "Gengibre"
+      ],
+      "answer": 0,
+      "fact": "A canela é a casca seca de uma árvore originária do Sri Lanka."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é o \"feijão tropeiro\"?",
+      "options": [
+        "Feijão com farinha, linguiça, ovo e couve",
+        "Feijão com leite de coco",
+        "Feijão branco com frutos do mar",
+        "Feijão cozido com açúcar"
+      ],
+      "answer": 0,
+      "fact": "O nome vem dos tropeiros, que levavam comida que não estragava nas longas viagens."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas é uma fruta seca muito comida no Natal?",
+      "options": [
+        "Nozes",
+        "Melancia",
+        "Mamão",
+        "Goiaba"
+      ],
+      "answer": 0,
+      "fact": "As nozes têm um formato que lembra o cérebro humano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida é feita colocando sachês ou folhas em água quente?",
+      "options": [
+        "Chá",
+        "Suco",
+        "Refrigerante",
+        "Vitamina"
+      ],
+      "answer": 0,
+      "fact": "O saquinho de chá foi popularizado por acaso, quando clientes passaram a mergulhar as amostras de saquinho direto na água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta pequena, preta e cheia de bolinhas nasce em arbustos e é usada em geleias?",
+      "options": [
+        "Amora",
+        "Jabuticaba",
+        "Uva",
+        "Ameixa"
+      ],
+      "answer": 0,
+      "fact": "A amora-preta é uma fruta agregada: cada bolinha é um pequeno fruto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta laranja e mole, de sementes pretas no meio, é comida no café da manhã com uma colher?",
+      "options": [
+        "Mamão",
+        "Manga",
+        "Caqui",
+        "Melão"
+      ],
+      "answer": 0,
+      "fact": "O mamão tem uma enzima, a papaína, que ajuda a amaciar a carne."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta amarelada e doce, de casca com rede, tem sementes no centro e é parente da melancia?",
+      "options": [
+        "Melão",
+        "Mamão",
+        "Abóbora",
+        "Carambola"
+      ],
+      "answer": 0,
+      "fact": "O melão e a melancia são da mesma família das abóboras e do pepino."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta amarela em forma de estrela quando cortada é bem azedinha?",
+      "options": [
+        "Carambola",
+        "Kiwi",
+        "Pitaia",
+        "Caju"
+      ],
+      "answer": 0,
+      "fact": "A carambola deve ser evitada por pessoas com problemas nos rins."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta cearense tem a castanha do lado de fora?",
+      "options": [
+        "Caju",
+        "Coco",
+        "Graviola",
+        "Seriguela"
+      ],
+      "answer": 0,
+      "fact": "A parte carnuda do caju é o pseudofruto; o fruto verdadeiro é a castanha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta de polpa verde e cremosa é batida com leite e açúcar numa vitamina bem brasileira?",
+      "options": [
+        "Abacate",
+        "Kiwi",
+        "Pera",
+        "Goiaba"
+      ],
+      "answer": 0,
+      "fact": "Fora do Brasil, o abacate costuma ser comido salgado, em saladas e pastas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é o prato paella, feito de arroz com frutos do mar e açafrão?",
+      "options": [
+        "Espanha",
+        "Portugal",
+        "Itália",
+        "México"
+      ],
+      "answer": 0,
+      "fact": "A paella nasceu em Valência, e o nome vem da frigideira larga em que é preparada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país vem o taco, uma tortilha de milho dobrada com recheio?",
+      "options": [
+        "México",
+        "Espanha",
+        "Peru",
+        "Argentina"
+      ],
+      "answer": 0,
+      "fact": "A tortilha de milho é base da alimentação mexicana há milhares de anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é o prato ceviche, de peixe cru marinado no limão?",
+      "options": [
+        "Peru",
+        "México",
+        "Chile",
+        "Colômbia"
+      ],
+      "answer": 0,
+      "fact": "O Peru comemora o Dia Nacional do Ceviche em 28 de junho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país vem o croissant, apesar de ser símbolo da França?",
+      "options": [
+        "Áustria",
+        "Suíça",
+        "Bélgica",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "O croissant descende do kipferl, um pão em forma de meia-lua de Viena."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é o fondue, de queijo derretido numa panela no centro da mesa?",
+      "options": [
+        "Suíça",
+        "França",
+        "Itália",
+        "Áustria"
+      ],
+      "answer": 0,
+      "fact": "O fondue foi promovido como prato nacional suíço pela união dos produtores de queijo, nos anos 1930."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que país é famoso pelo kimchi, uma conserva picante de acelga fermentada?",
+      "options": [
+        "Coreia do Sul",
+        "Japão",
+        "China",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "Muitas famílias coreanas têm uma geladeira só para guardar kimchi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país vem o curry, mistura de especiarias de cor amarelada?",
+      "options": [
+        "Índia",
+        "China",
+        "Tailândia",
+        "Marrocos"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"curry\" vem do tâmil \"kari\", que significa molho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é a bebida saquê, feita de arroz fermentado?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Vietnã"
+      ],
+      "answer": 0,
+      "fact": "Apesar de chamado de \"vinho de arroz\", o saquê é produzido de forma mais parecida com a cerveja."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país vem a tequila?",
+      "options": [
+        "México",
+        "Espanha",
+        "Cuba",
+        "Colômbia"
+      ],
+      "answer": 0,
+      "fact": "A tequila só pode ter esse nome se for produzida em regiões específicas, principalmente no estado de Jalisco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que planta é feita a tequila?",
+      "options": [
+        "Agave azul",
+        "Cana-de-açúcar",
+        "Milho",
+        "Cacto mandacaru"
+      ],
+      "answer": 0,
+      "fact": "O coração do agave, chamado de piña, pode pesar mais de 50 quilos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é a vodca, junto com a Polônia?",
+      "options": [
+        "Rússia",
+        "Alemanha",
+        "Noruega",
+        "Suécia"
+      ],
+      "answer": 0,
+      "fact": "Rússia e Polônia disputam há séculos quem inventou a vodca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida destilada é típica da Escócia?",
+      "options": [
+        "Uísque",
+        "Gim",
+        "Rum",
+        "Conhaque"
+      ],
+      "answer": 0,
+      "fact": "Na Escócia, o uísque é escrito \"whisky\", sem o \"e\" usado na Irlanda e nos Estados Unidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que é feito o rum?",
+      "options": [
+        "Cana-de-açúcar",
+        "Cevada",
+        "Uva",
+        "Batata"
+      ],
+      "answer": 0,
+      "fact": "Na Austrália colonial, o rum chegou a ser usado como moeda, e houve até uma \"Rebelião do Rum\", em 1808."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas bebidas é feita de uva destilada?",
+      "options": [
+        "Conhaque",
+        "Gim",
+        "Rum",
+        "Saquê"
+      ],
+      "answer": 0,
+      "fact": "O conhaque só leva esse nome se for produzido na região de Cognac, na França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida espumante só pode ter esse nome se vier de uma região da França?",
+      "options": [
+        "Champanhe",
+        "Prosecco",
+        "Cava",
+        "Lambrusco"
+      ],
+      "answer": 0,
+      "fact": "Fora da região de Champagne, a bebida feita do mesmo jeito se chama espumante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é o prosecco, um espumante leve?",
+      "options": [
+        "Itália",
+        "França",
+        "Espanha",
+        "Portugal"
+      ],
+      "answer": 0,
+      "fact": "O prosecco é produzido principalmente nas regiões do Vêneto e de Friuli, no norte da Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que fruta é a base do vinagre balsâmico tradicional?",
+      "options": [
+        "Uva",
+        "Maçã",
+        "Figo",
+        "Cereja"
+      ],
+      "answer": 0,
+      "fact": "O balsâmico tradicional de Modena pode envelhecer por mais de 25 anos em barris de madeira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ingrediente dá a cor amarela ao arroz da paella e ao risoto milanês?",
+      "options": [
+        "Açafrão",
+        "Urucum",
+        "Páprica",
+        "Mostarda"
+      ],
+      "answer": 0,
+      "fact": "No risoto à milanesa, esse ingrediente é dissolvido no caldo para colorir o arroz por igual."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que se faz o urucum, que dá cor vermelha à comida?",
+      "options": [
+        "Sementes de um fruto",
+        "Raiz de uma planta",
+        "Casca de árvore",
+        "Pétalas de flor"
+      ],
+      "answer": 0,
+      "fact": "Os indígenas usavam o urucum para pintar o corpo e se proteger do sol e dos insetos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o pó vermelho feito de urucum, usado para colorir comida?",
+      "options": [
+        "Colorau",
+        "Páprica",
+        "Cúrcuma",
+        "Pimenta-do-reino"
+      ],
+      "answer": 0,
+      "fact": "O colorau é quase sem gosto: serve principalmente para dar cor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tempero amarelo da Índia, também chamado de açafrão-da-terra, é uma raiz?",
+      "options": [
+        "Cúrcuma",
+        "Cominho",
+        "Gengibre",
+        "Mostarda"
+      ],
+      "answer": 0,
+      "fact": "A cúrcuma é o que dá a cor amarela à maioria das misturas de curry."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que planta vem a pimenta-do-reino?",
+      "options": [
+        "De uma trepadeira",
+        "De um cacto",
+        "De uma árvore frutífera",
+        "De uma erva rasteira"
+      ],
+      "answer": 0,
+      "fact": "A pimenta-do-reino foi uma das especiarias que levaram os europeus às Grandes Navegações."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que molho escuro e salgado da culinária japonesa é feito de soja fermentada?",
+      "options": [
+        "Shoyu",
+        "Teriyaki",
+        "Missô",
+        "Wasabi"
+      ],
+      "answer": 0,
+      "fact": "O shoyu pode levar meses fermentando antes de ficar pronto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que pasta verde e ardida acompanha o sushi?",
+      "options": [
+        "Wasabi",
+        "Gengibre em conserva",
+        "Missô",
+        "Tahine"
+      ],
+      "answer": 0,
+      "fact": "A maioria do wasabi servido fora do Japão é raiz-forte tingida de verde."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que fatias rosadas e azedinhas acompanham o sushi para limpar o paladar?",
+      "options": [
+        "Gengibre em conserva",
+        "Rabanete em conserva",
+        "Nabo em fatias",
+        "Cebola roxa curtida"
+      ],
+      "answer": 0,
+      "fact": "O gengibre em conserva do sushi se chama gari."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a sopa japonesa de macarrão com caldo, ovo e carne?",
+      "options": [
+        "Lámen",
+        "Missoshiru",
+        "Udon frito",
+        "Sukiyaki"
+      ],
+      "answer": 0,
+      "fact": "O lámen instantâneo foi eleito pelos japoneses uma das maiores invenções do país no século XX."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sopa japonesa é feita com pasta de soja fermentada, tofu e cebolinha?",
+      "options": [
+        "Missoshiru",
+        "Lámen",
+        "Tempurá",
+        "Gyoza"
+      ],
+      "answer": 0,
+      "fact": "O missô é tão importante no Japão que muitas famílias tomam missoshiru todos os dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a técnica japonesa de empanar e fritar legumes e camarão numa massa leve?",
+      "options": [
+        "Tempurá",
+        "Teppanyaki",
+        "Sashimi",
+        "Hot roll"
+      ],
+      "answer": 0,
+      "fact": "O tempurá foi levado ao Japão pelos portugueses, no século XVI."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o peixe cru fatiado, servido sem arroz?",
+      "options": [
+        "Sashimi",
+        "Sushi",
+        "Temaki",
+        "Niguiri"
+      ],
+      "answer": 0,
+      "fact": "\"Sashimi\" significa algo como \"corpo perfurado\" em japonês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o sushi em formato de cone, enrolado na alga?",
+      "options": [
+        "Temaki",
+        "Uramaki",
+        "Niguiri",
+        "Hossomaki"
+      ],
+      "answer": 0,
+      "fact": "O temaki foi pensado como um sushi para comer com as mãos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que peixe é o mais usado no sushi servido no Brasil?",
+      "options": [
+        "Salmão",
+        "Atum",
+        "Tilápia",
+        "Sardinha"
+      ],
+      "answer": 0,
+      "fact": "No Japão, o salmão cru só se popularizou nos anos 1980, graças a uma campanha da Noruega."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de comida é o gyoza?",
+      "options": [
+        "Pastelzinho japonês de massa fina",
+        "Bolinho de arroz doce",
+        "Espetinho de frango",
+        "Sopa de cogumelos"
+      ],
+      "answer": 0,
+      "fact": "O gyoza japonês descende do jiaozi chinês, comido no Ano-Novo da China."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes pratos é árabe e feito de trigo, tomate, salsinha e hortelã?",
+      "options": [
+        "Tabule",
+        "Homus",
+        "Coalhada seca",
+        "Falafel"
+      ],
+      "answer": 0,
+      "fact": "O tabule é tão tradicional que o Líbano criou um Dia Nacional do Tabule."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bolinho frito do Oriente Médio é feito de grão-de-bico ou fava?",
+      "options": [
+        "Falafel",
+        "Quibe",
+        "Esfiha",
+        "Charuto"
+      ],
+      "answer": 0,
+      "fact": "No Egito, o falafel é feito com fava e chama-se ta'ameya."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato árabe consiste em folhas de uva ou repolho enroladas com arroz e carne?",
+      "options": [
+        "Charuto",
+        "Tabule",
+        "Quibe",
+        "Cuscuz marroquino"
+      ],
+      "answer": 0,
+      "fact": "Na Turquia e na Grécia, o charuto de folha de uva se chama dolma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que pasta de gergelim é usada no homus e em molhos árabes?",
+      "options": [
+        "Tahine",
+        "Missô",
+        "Pesto",
+        "Tapenade"
+      ],
+      "answer": 0,
+      "fact": "O tahine também é usado em doces, como a halva."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato grego é feito de camadas de berinjela, carne moída e molho branco?",
+      "options": [
+        "Moussaka",
+        "Gyros",
+        "Souvlaki",
+        "Tzatziki"
+      ],
+      "answer": 0,
+      "fact": "A versão grega moderna da moussaka, gratinada no forno, foi popularizada nos anos 1920."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que molho grego é feito de iogurte, pepino e alho?",
+      "options": [
+        "Tzatziki",
+        "Homus",
+        "Tahine",
+        "Guacamole"
+      ],
+      "answer": 0,
+      "fact": "O tzatziki é o acompanhamento clássico do gyros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato húngaro é um ensopado de carne com muita páprica?",
+      "options": [
+        "Gulache",
+        "Fondue",
+        "Ratatouille",
+        "Moussaka"
+      ],
+      "answer": 0,
+      "fact": "O gulache era a comida dos vaqueiros húngaros, preparada em caldeirões ao ar livre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato francês de legumes cozidos ganhou fama com um filme da Pixar?",
+      "options": [
+        "Ratatouille",
+        "Bouillabaisse",
+        "Cassoulet",
+        "Quiche"
+      ],
+      "answer": 0,
+      "fact": "A ratatouille é originária de Nice, no sul da França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que torta salgada francesa é feita com ovos, creme de leite e recheio, como bacon?",
+      "options": [
+        "Quiche",
+        "Crepe",
+        "Suflê",
+        "Brioche"
+      ],
+      "answer": 0,
+      "fact": "A quiche lorraine, a mais famosa, vem da região da Lorena."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato francês cresce no forno e murcha rápido se demorar a servir?",
+      "options": [
+        "Suflê",
+        "Quiche",
+        "Crème brûlée",
+        "Gratinado"
+      ],
+      "answer": 0,
+      "fact": "O suflê cresce porque o ar das claras batidas se expande com o calor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa francesa é um creme com uma casquinha de açúcar queimado por cima?",
+      "options": [
+        "Crème brûlée",
+        "Petit gâteau",
+        "Mil-folhas",
+        "Profiteroles"
+      ],
+      "answer": 0,
+      "fact": "\"Crème brûlée\" significa \"creme queimado\" em francês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bolinho de chocolate tem o recheio derretido e é servido com sorvete?",
+      "options": [
+        "Petit gâteau",
+        "Brownie",
+        "Cupcake",
+        "Madeleine"
+      ],
+      "answer": 0,
+      "fact": "O nome \"petit gâteau\" significa simplesmente \"bolinho\" em francês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa italiana leva café, biscoito champanhe e queijo mascarpone?",
+      "options": [
+        "Tiramisu",
+        "Panna cotta",
+        "Cannoli",
+        "Zabaione"
+      ],
+      "answer": 0,
+      "fact": "\"Tiramisu\" significa \"me puxa para cima\" em italiano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que doce italiano é um canudo de massa frita recheado com creme de queijo?",
+      "options": [
+        "Cannoli",
+        "Tiramisu",
+        "Panetone",
+        "Biscotti"
+      ],
+      "answer": 0,
+      "fact": "O cannoli é típico da Sicília e aparece no filme \"O Poderoso Chefão\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sorvete italiano é mais denso e cremoso que o comum?",
+      "options": [
+        "Gelato",
+        "Sorbet",
+        "Frozen",
+        "Picolé"
+      ],
+      "answer": 0,
+      "fact": "O gelato tem menos ar e menos gordura que o sorvete americano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo italiano cremoso é usado no tiramisu?",
+      "options": [
+        "Mascarpone",
+        "Ricota",
+        "Gorgonzola",
+        "Pecorino"
+      ],
+      "answer": 0,
+      "fact": "Tecnicamente, o mascarpone é mais um creme coalhado do que um queijo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato italiano é feito de arroz cozido aos poucos com caldo até ficar cremoso?",
+      "options": [
+        "Risoto",
+        "Paella",
+        "Arroz de forno",
+        "Galinhada"
+      ],
+      "answer": 0,
+      "fact": "O risoto pede caldo quente adicionado aos poucos e mexido sem parar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de arroz é o mais usado para fazer risoto?",
+      "options": [
+        "Arbóreo",
+        "Agulhinha",
+        "Parboilizado",
+        "Basmati"
+      ],
+      "answer": 0,
+      "fact": "O amido do arbóreo é o que deixa o risoto cremoso sem precisar de creme de leite."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que massa italiana em forma de canudinhos cortados na diagonal tem nome que lembra \"caneta\"?",
+      "options": [
+        "Penne",
+        "Fusilli",
+        "Rigatoni",
+        "Farfalle"
+      ],
+      "answer": 0,
+      "fact": "\"Penne\" vem de \"penna\", que significa \"pena\" e também \"caneta\" em italiano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes molhos de macarrão leva ovo, queijo e bacon ou guanciale?",
+      "options": [
+        "Carbonara",
+        "Bolonhesa",
+        "Pesto",
+        "Puttanesca"
+      ],
+      "answer": 0,
+      "fact": "A carbonara original não leva creme de leite."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes queijos tem buracos grandes?",
+      "options": [
+        "Emmental",
+        "Brie",
+        "Muçarela",
+        "Provolone"
+      ],
+      "answer": 0,
+      "fact": "Os buracos do emmental são formados por bolhas de gás liberadas por bactérias durante a maturação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo francês tem casca branca e aveludada e miolo cremoso?",
+      "options": [
+        "Brie",
+        "Roquefort",
+        "Parmesão",
+        "Cheddar"
+      ],
+      "answer": 0,
+      "fact": "O brie era chamado de \"rei dos queijos\" na corte francesa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo holandês tem casca vermelha de cera?",
+      "options": [
+        "Edam",
+        "Gouda",
+        "Brie",
+        "Feta"
+      ],
+      "answer": 0,
+      "fact": "O edam é vendido em formato de bola, coberto de parafina vermelha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo grego salgado e esfarelado vai na salada grega?",
+      "options": [
+        "Feta",
+        "Ricota",
+        "Coalho",
+        "Cottage"
+      ],
+      "answer": 0,
+      "fact": "O feta tradicional é feito com leite de ovelha ou mistura de ovelha e cabra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo inglês alaranjado é usado em hambúrgueres e nachos?",
+      "options": [
+        "Cheddar",
+        "Gouda",
+        "Prato",
+        "Provolone"
+      ],
+      "answer": 0,
+      "fact": "O cheddar vem do vilarejo de Cheddar, na Inglaterra; a cor laranja vem do urucum."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo do Nordeste é assado no espeto na praia?",
+      "options": [
+        "Queijo coalho",
+        "Queijo prato",
+        "Queijo minas padrão",
+        "Queijo canastra"
+      ],
+      "answer": 0,
+      "fact": "O queijo coalho tem esse nome porque é feito com o coalho, uma enzima que talha o leite."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo mineiro famoso tem o nome de uma serra?",
+      "options": [
+        "Canastra",
+        "Mantiqueira",
+        "Espinhaço",
+        "Caparaó"
+      ],
+      "answer": 0,
+      "fact": "O queijo da Serra da Canastra é feito com leite cru e foi reconhecido como patrimônio cultural."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é o requeijão cremoso?",
+      "options": [
+        "Um queijo cremoso de passar no pão",
+        "Um iogurte salgado de passar no pão",
+        "Uma manteiga com sal e ervas",
+        "Um creme de leite azedo"
+      ],
+      "answer": 0,
+      "fact": "O requeijão cremoso de copo é uma criação brasileira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que queijo branco e macio, feito do soro do leite, é usado em recheios de massas e tortas?",
+      "options": [
+        "Ricota",
+        "Muçarela",
+        "Prato",
+        "Coalho"
+      ],
+      "answer": 0,
+      "fact": "A ricota tem esse nome porque é \"recozida\": o soro que sobra do queijo é aquecido de novo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida é feita com café expresso e leite vaporizado com espuma?",
+      "options": [
+        "Cappuccino",
+        "Macchiato",
+        "Ristretto",
+        "Americano"
+      ],
+      "answer": 0,
+      "fact": "O nome lembra a cor do hábito dos frades capuchinhos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o café expresso bem curto e concentrado?",
+      "options": [
+        "Ristretto",
+        "Lungo",
+        "Americano",
+        "Latte"
+      ],
+      "answer": 0,
+      "fact": "\"Ristretto\" significa \"restrito\" em italiano: sai com menos água."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o café expresso diluído com água quente?",
+      "options": [
+        "Americano",
+        "Ristretto",
+        "Macchiato",
+        "Mocha"
+      ],
+      "answer": 0,
+      "fact": "Diz-se que o nome vem dos soldados americanos na Itália, que diluíam o expresso para parecer o café de casa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida de café leva expresso e uma \"manchinha\" de espuma de leite?",
+      "options": [
+        "Macchiato",
+        "Cappuccino",
+        "Latte",
+        "Affogato"
+      ],
+      "answer": 0,
+      "fact": "\"Macchiato\" significa \"manchado\" em italiano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa italiana é uma bola de sorvete afogada num café expresso?",
+      "options": [
+        "Affogato",
+        "Tiramisu",
+        "Panna cotta",
+        "Granita"
+      ],
+      "answer": 0,
+      "fact": "\"Affogato\" significa \"afogado\" em italiano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que espécie de café é considerada a mais nobre e aromática?",
+      "options": [
+        "Arábica",
+        "Robusta",
+        "Conilon",
+        "Liberica"
+      ],
+      "answer": 0,
+      "fact": "O café arábica responde por cerca de 60% da produção mundial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que continente o café foi descoberto?",
+      "options": [
+        "África",
+        "Ásia",
+        "América do Sul",
+        "Europa"
+      ],
+      "answer": 0,
+      "fact": "A lenda conta que um pastor etíope percebeu que suas cabras ficavam agitadas ao comer os frutos do café."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a técnica de cozinhar rapidamente o alimento em água fervente e depois jogar na água gelada?",
+      "options": [
+        "Branquear",
+        "Flambar",
+        "Gratinar",
+        "Caramelizar"
+      ],
+      "answer": 0,
+      "fact": "Branquear legumes preserva a cor viva e a textura crocante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a técnica de pôr fogo na bebida alcoólica dentro da panela?",
+      "options": [
+        "Flambar",
+        "Gratinar",
+        "Defumar",
+        "Saltear"
+      ],
+      "answer": 0,
+      "fact": "Ao flambar, a maior parte do álcool evapora, mas fica o aroma da bebida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa cozinhar \"em banho-maria\"?",
+      "options": [
+        "Cozinhar dentro de um recipiente posto em água quente",
+        "Cozinhar no vapor dentro do forno",
+        "Cozinhar mergulhando na água fervente",
+        "Cozinhar no micro-ondas com água"
+      ],
+      "answer": 0,
+      "fact": "O nome viria de Maria, a Judia, uma alquimista antiga a quem se atribui a técnica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o ponto do macarrão cozido, mas ainda firme ao morder?",
+      "options": [
+        "Al dente",
+        "Al forno",
+        "Al sugo",
+        "Al pesto"
+      ],
+      "answer": 0,
+      "fact": "\"Al dente\" significa \"ao dente\" em italiano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é \"gratinar\" um prato?",
+      "options": [
+        "Dourar a superfície no forno, geralmente com queijo",
+        "Cozinhar no vapor",
+        "Fritar em pouco óleo",
+        "Deixar marinando na geladeira"
+      ],
+      "answer": 0,
+      "fact": "O gratinado ganhou o nome do francês \"gratin\", a crosta que se forma por cima."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que reação química deixa a carne dourada e cheirosa quando é selada?",
+      "options": [
+        "Reação de Maillard",
+        "Fermentação",
+        "Oxidação",
+        "Caramelização"
+      ],
+      "answer": 0,
+      "fact": "A reação de Maillard, entre açúcares e proteínas, também dá o sabor da casca do pão e do café torrado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que acontece com o açúcar na caramelização?",
+      "options": [
+        "Ele derrete e escurece com o calor",
+        "Ele vira álcool",
+        "Ele cristaliza no frio",
+        "Ele absorve água e incha"
+      ],
+      "answer": 0,
+      "fact": "O açúcar começa a caramelizar por volta de 160 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de alimento é a farinha de rosca?",
+      "options": [
+        "Pão seco moído",
+        "Mandioca ralada",
+        "Milho triturado",
+        "Trigo integral"
+      ],
+      "answer": 0,
+      "fact": "A farinha de rosca é a responsável pela casquinha crocante do bife à milanesa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um prato \"à milanesa\"?",
+      "options": [
+        "Empanado com ovo e farinha de rosca e frito",
+        "Cozido com molho de tomate",
+        "Assado com queijo por cima",
+        "Grelhado com ervas"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de Milão, onde a costeleta à milanesa é tradicional."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um prato \"à parmegiana\" no Brasil?",
+      "options": [
+        "Empanado coberto com molho de tomate e queijo gratinado",
+        "Grelhado e coberto com parmesão ralado",
+        "Cozido no leite com queijo derretido",
+        "Assado com batatas, ervas e alho"
+      ],
+      "answer": 0,
+      "fact": "Na Itália, a parmigiana tradicional é feita com berinjela, não com bife."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que lanche paulistano leva rosbife, queijo derretido, tomate e pepino no pão francês?",
+      "options": [
+        "Bauru",
+        "Beirute",
+        "Misto-quente",
+        "Cheeseburger"
+      ],
+      "answer": 0,
+      "fact": "O Bauru foi criado em 1934 por um estudante apelidado de Bauru, no Ponto Chic, em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sanduíche gaúcho é servido no prato, coberto de ovo, queijo e molho, e comido com garfo?",
+      "options": [
+        "Xis",
+        "Bauru",
+        "Beirute",
+        "Prensado"
+      ],
+      "answer": 0,
+      "fact": "O xis gaúcho costuma ser gigante, maior que o próprio prato."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sanduíche paulistano é feito no pão sírio, com rosbife ou filé, queijo e salada?",
+      "options": [
+        "Beirute",
+        "Bauru",
+        "Shawarma",
+        "Kebab"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome da capital do Líbano, o beirute é uma criação de lanchonetes paulistanas de imigrantes libaneses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que salgado mineiro é feito com angu de milho e recheio de carne, frito em formato de pastel?",
+      "options": [
+        "Pastel de angu",
+        "Coxinha",
+        "Quibe",
+        "Empada"
+      ],
+      "answer": 0,
+      "fact": "O pastel de angu é tradição na cidade de Itabirito, onde ganhou até festival próprio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que doce de origem portuguesa é feito com gemas e calda de açúcar, em fios finos e amarelos?",
+      "options": [
+        "Fios de ovos",
+        "Quindim",
+        "Ambrosia",
+        "Papo de anjo"
+      ],
+      "answer": 0,
+      "fact": "Os doces de ovos portugueses nasceram nos conventos, que usavam as claras para engomar roupas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que doce brasileiro de festa é uma uva verde coberta de brigadeiro branco?",
+      "options": [
+        "Bombom de uva",
+        "Olho de sogra",
+        "Camafeu",
+        "Cajuzinho"
+      ],
+      "answer": 0,
+      "fact": "O bombom de uva virou febre nas docerias brasileiras e combina o azedinho da uva com o doce do leite condensado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que doce de festa é uma ameixa seca recheada com doce de coco?",
+      "options": [
+        "Olho de sogra",
+        "Camafeu",
+        "Beijinho",
+        "Cajuzinho"
+      ],
+      "answer": 0,
+      "fact": "O nome \"olho de sogra\" é uma brincadeira com o formato, que lembra um olho arregalado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que docinho de festa tem formato de caju e é feito de amendoim?",
+      "options": [
+        "Cajuzinho",
+        "Bem-casado",
+        "Camafeu",
+        "Cocadinha"
+      ],
+      "answer": 0,
+      "fact": "Apesar do formato, o cajuzinho não leva caju."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que doce é dado aos convidados de casamento, feito de duas partes de pão de ló unidas por recheio?",
+      "options": [
+        "Bem-casado",
+        "Bem-nascido",
+        "Camafeu",
+        "Quindim"
+      ],
+      "answer": 0,
+      "fact": "Pela tradição, o bem-casado deseja aos noivos uma união tão doce quanto o doce."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é a ambrosia, sobremesa tradicional?",
+      "options": [
+        "Um doce de ovos e leite talhado com calda",
+        "Um sorvete de frutas vermelhas",
+        "Uma torta de maçã com canela",
+        "Um pudim de pão com passas"
+      ],
+      "answer": 0,
+      "fact": "Na mitologia grega, ambrosia era o alimento dos deuses, que dava imortalidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa é feita de tapioca cozida em vinho tinto ou suco de uva?",
+      "options": [
+        "Sagu",
+        "Canjica",
+        "Manjar",
+        "Curau"
+      ],
+      "answer": 0,
+      "fact": "As bolinhas do sagu são feitas de fécula de mandioca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa branca de coco e leite é servida com calda de ameixa?",
+      "options": [
+        "Manjar",
+        "Pudim de leite",
+        "Mousse de maracujá",
+        "Sagu"
+      ],
+      "answer": 0,
+      "fact": "Na Idade Média, o manjar branco era um prato salgado, com frango e amêndoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa leva creme de leite e suco de maracujá ou limão, bem aerada?",
+      "options": [
+        "Mousse",
+        "Pudim",
+        "Pavê",
+        "Manjar"
+      ],
+      "answer": 0,
+      "fact": "\"Mousse\" significa \"espuma\" em francês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que torta doce leva massa de biscoito, recheio de limão e cobertura de merengue?",
+      "options": [
+        "Torta de limão",
+        "Torta holandesa",
+        "Cheesecake",
+        "Banoffee"
+      ],
+      "answer": 0,
+      "fact": "O merengue da torta de limão costuma ser maçaricado para ficar dourado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que torta gelada leva bolacha, creme e uma cobertura de chocolate com bolachas em pé na borda?",
+      "options": [
+        "Torta holandesa",
+        "Torta de limão",
+        "Banoffee",
+        "Cheesecake"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome, a torta holandesa é uma criação brasileira, de Campinas, nos anos 1990."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa inglesa leva banana, doce de leite e chantili sobre base de biscoito?",
+      "options": [
+        "Banoffee",
+        "Pavlova",
+        "Trifle",
+        "Crumble"
+      ],
+      "answer": 0,
+      "fact": "O nome é a junção de \"banana\" com \"toffee\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sobremesa leva o nome de uma bailarina russa e é feita de merengue com frutas?",
+      "options": [
+        "Pavlova",
+        "Anna Karenina",
+        "Nijinsky",
+        "Tchaikovsky"
+      ],
+      "answer": 0,
+      "fact": "Austrália e Nova Zelândia disputam até hoje quem criou a pavlova."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que torta americana feita de queijo cremoso costuma levar calda de frutas vermelhas?",
+      "options": [
+        "Cheesecake",
+        "Torta de maçã",
+        "Banoffee",
+        "Torta de abóbora"
+      ],
+      "answer": 0,
+      "fact": "A cheesecake moderna de Nova York usa cream cheese, criado nos Estados Unidos em 1872."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida de verão espanhola leva vinho tinto, frutas picadas e gelo?",
+      "options": [
+        "Sangria",
+        "Clericot",
+        "Quentão",
+        "Mojito"
+      ],
+      "answer": 0,
+      "fact": "O nome \"sangria\" vem de \"sangre\", sangue, pela cor vermelha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que drinque cubano leva rum, hortelã, limão, açúcar e água com gás?",
+      "options": [
+        "Mojito",
+        "Daiquiri",
+        "Piña colada",
+        "Cuba libre"
+      ],
+      "answer": 0,
+      "fact": "Ernest Hemingway ajudou a fazer a fama do mojito em Havana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que drinque leva rum, leite de coco e abacaxi?",
+      "options": [
+        "Piña colada",
+        "Mojito",
+        "Margarita",
+        "Caipiroska"
+      ],
+      "answer": 0,
+      "fact": "A piña colada é a bebida oficial de Porto Rico desde 1978."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que drinque mexicano leva tequila, limão e sal na borda do copo?",
+      "options": [
+        "Margarita",
+        "Mojito",
+        "Cosmopolitan",
+        "Bloody Mary"
+      ],
+      "answer": 0,
+      "fact": "A borda de sal realça o sabor e corta a acidez do limão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que drinque é uma caipirinha feita com vodca no lugar da cachaça?",
+      "options": [
+        "Caipiroska",
+        "Caipirissima",
+        "Batida",
+        "Mojito"
+      ],
+      "answer": 0,
+      "fact": "A versão com saquê se chama caipisaquê."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que drinque leva rum com Coca-Cola e limão?",
+      "options": [
+        "Cuba libre",
+        "Mojito",
+        "Hi-fi",
+        "Piña colada"
+      ],
+      "answer": 0,
+      "fact": "O nome \"Cuba Libre\" faz referência ao grito da independência de Cuba."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida feita com vinho branco e frutas picadas, prima da sangria, é tradição nas festas de fim de ano no Sul e no Uruguai?",
+      "options": [
+        "Clericot",
+        "Quentão",
+        "Ponche",
+        "Cooler"
+      ],
+      "answer": 0,
+      "fact": "O clericot também é muito tradicional na Argentina, nas ceias de Natal e Ano-Novo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida quente de inverno é feita com vinho tinto, açúcar e especiarias?",
+      "options": [
+        "Vinho quente",
+        "Quentão",
+        "Licor",
+        "Grogue"
+      ],
+      "answer": 0,
+      "fact": "Na Alemanha, o vinho quente se chama glühwein e é tradição nos mercados de Natal."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um licor?",
+      "options": [
+        "Bebida alcoólica adoçada e aromatizada",
+        "Vinho sem álcool e sem gás",
+        "Cerveja escura de trigo",
+        "Destilado puro, sem açúcar"
+      ],
+      "answer": 0,
+      "fact": "O licor 43, da Espanha, leva esse nome por ter 43 ingredientes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida brasileira mistura cachaça, leite condensado e fruta no liquidificador?",
+      "options": [
+        "Batida",
+        "Caipirinha",
+        "Quentão",
+        "Rabo de galo"
+      ],
+      "answer": 0,
+      "fact": "A batida de coco é uma das mais populares em festas e quiosques de praia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que drinque de boteco mistura cachaça com vermute?",
+      "options": [
+        "Rabo de galo",
+        "Caipirinha",
+        "Batida",
+        "Cuba libre"
+      ],
+      "answer": 0,
+      "fact": "O nome seria uma tradução brincalhona de \"cocktail\", \"rabo de galo\" em inglês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de cerveja é clara, leve e a mais vendida do Brasil?",
+      "options": [
+        "Pilsen",
+        "Stout",
+        "IPA",
+        "Weiss"
+      ],
+      "answer": 0,
+      "fact": "A pilsen nasceu na cidade de Plzeň, na atual República Tcheca, em 1842."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de cerveja é feita com trigo e costuma ter aroma de banana e cravo?",
+      "options": [
+        "Weiss",
+        "Stout",
+        "Pilsen",
+        "Porter"
+      ],
+      "answer": 0,
+      "fact": "\"Weiss\" significa \"branca\" em alemão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que estilo de cerveja é bem amargo e lupulado, criado na Inglaterra para aguentar viagens à Índia?",
+      "options": [
+        "IPA",
+        "Pilsen",
+        "Bock",
+        "Lager"
+      ],
+      "answer": 0,
+      "fact": "IPA é a sigla de India Pale Ale."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que estilo de cerveja irlandesa é preta e cremosa, como a Guinness?",
+      "options": [
+        "Stout",
+        "Weiss",
+        "Pilsen",
+        "Lager"
+      ],
+      "answer": 0,
+      "fact": "A espuma cremosa da Guinness vem do nitrogênio usado na bebida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que flor dá o amargor e o aroma da cerveja?",
+      "options": [
+        "Lúpulo",
+        "Camomila",
+        "Hibisco",
+        "Lavanda"
+      ],
+      "answer": 0,
+      "fact": "O lúpulo também ajuda a conservar a cerveja."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que festa alemã, em Munique, é a maior festa de cerveja do mundo?",
+      "options": [
+        "Oktoberfest",
+        "Carnaval de Colônia",
+        "Festa da Uva",
+        "Kerb"
+      ],
+      "answer": 0,
+      "fact": "A Oktoberfest começou em 1810, para celebrar o casamento de um príncipe da Baviera."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida japonesa é feita de chá verde em pó, batido com um batedor de bambu?",
+      "options": [
+        "Matcha",
+        "Sencha",
+        "Oolong",
+        "Chai"
+      ],
+      "answer": 0,
+      "fact": "O matcha é o chá usado na tradicional cerimônia do chá japonesa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o profissional que é especialista em vinhos num restaurante?",
+      "options": [
+        "Sommelier",
+        "Barista",
+        "Maître",
+        "Chef pâtissier"
+      ],
+      "answer": 0,
+      "fact": "O sommelier também cuida da adega e da temperatura de serviço dos vinhos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o profissional especialista em preparar café?",
+      "options": [
+        "Barista",
+        "Sommelier",
+        "Mixologista",
+        "Confeiteiro"
+      ],
+      "answer": 0,
+      "fact": "Existe até campeonato mundial de baristas, disputado todos os anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o chef especialista em doces e confeitaria?",
+      "options": [
+        "Pâtissier",
+        "Sommelier",
+        "Saucier",
+        "Maître"
+      ],
+      "answer": 0,
+      "fact": "Na cozinha francesa clássica, cada setor tem um chef próprio, como o saucier, dos molhos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é o \"mise en place\" na cozinha?",
+      "options": [
+        "Separar e preparar todos os ingredientes antes",
+        "Decorar o prato na hora de servir",
+        "Lavar a louça enquanto cozinha",
+        "Provar a comida antes de servir"
+      ],
+      "answer": 0,
+      "fact": "A expressão francesa significa \"pôr no lugar\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes vinhos é feito de uvas tintas?",
+      "options": [
+        "Cabernet Sauvignon",
+        "Chardonnay",
+        "Sauvignon Blanc",
+        "Riesling"
+      ],
+      "answer": 0,
+      "fact": "A cabernet sauvignon é uma das uvas tintas mais plantadas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas uvas é usada para fazer vinho branco?",
+      "options": [
+        "Chardonnay",
+        "Merlot",
+        "Malbec",
+        "Pinot Noir"
+      ],
+      "answer": 0,
+      "fact": "A chardonnay também é uma das uvas usadas no champanhe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que uva é o símbolo dos vinhos tintos da Argentina?",
+      "options": [
+        "Malbec",
+        "Carménère",
+        "Tannat",
+        "Tempranillo"
+      ],
+      "answer": 0,
+      "fact": "A malbec veio da França, mas se adaptou tão bem à Argentina que virou marca do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que uva virou o símbolo dos vinhos do Chile?",
+      "options": [
+        "Carménère",
+        "Malbec",
+        "Tannat",
+        "Merlot"
+      ],
+      "answer": 0,
+      "fact": "A carménère foi dada como extinta na Europa e \"redescoberta\" no Chile em 1994, onde era confundida com a merlot."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que uva é o símbolo dos vinhos do Uruguai?",
+      "options": [
+        "Tannat",
+        "Malbec",
+        "Carménère",
+        "Syrah"
+      ],
+      "answer": 0,
+      "fact": "A tannat tem esse nome por causa da alta quantidade de taninos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bebida portuguesa é um vinho fortificado e doce, da região do Douro?",
+      "options": [
+        "Vinho do Porto",
+        "Vinho verde",
+        "Licor Beirão",
+        "Madeira"
+      ],
+      "answer": 0,
+      "fact": "O vinho do Porto recebe aguardente durante a fermentação, o que interrompe o processo e mantém o açúcar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que nutriente está em alta no azeite, no abacate e nas castanhas, e é considerado \"gordura boa\"?",
+      "options": [
+        "Gordura insaturada",
+        "Gordura trans",
+        "Colesterol",
+        "Amido"
+      ],
+      "answer": 0,
+      "fact": "A gordura insaturada fica líquida em temperatura ambiente, como os óleos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de gordura, comum em alimentos industrializados, é a mais prejudicial ao coração?",
+      "options": [
+        "Gordura trans",
+        "Gordura insaturada",
+        "Ômega 3",
+        "Gordura vegetal natural"
+      ],
+      "answer": 0,
+      "fact": "A gordura trans industrial foi proibida em vários países, inclusive no Brasil a partir de 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que proteína do trigo deixa a massa do pão elástica e não pode ser comida por celíacos?",
+      "options": [
+        "Glúten",
+        "Lactose",
+        "Caseína",
+        "Albumina"
+      ],
+      "answer": 0,
+      "fact": "A doença celíaca é uma reação do sistema imunológico ao glúten."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que açúcar do leite causa desconforto em quem tem intolerância?",
+      "options": [
+        "Lactose",
+        "Frutose",
+        "Sacarose",
+        "Glicose"
+      ],
+      "answer": 0,
+      "fact": "Boa parte dos adultos do mundo tem alguma dificuldade para digerir a lactose."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que açúcar é o das frutas e do mel?",
+      "options": [
+        "Frutose",
+        "Lactose",
+        "Maltose",
+        "Sacarose"
+      ],
+      "answer": 0,
+      "fact": "A frutose é o açúcar natural mais doce que existe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é a \"carne de sol\"?",
+      "options": [
+        "Carne salgada e secada por pouco tempo, ainda úmida",
+        "Carne crua temperada com limão",
+        "Carne defumada no fogão a lenha",
+        "Carne cozida e desfiada"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome, a carne de sol costuma ser secada à sombra, em lugar ventilado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é o charque?",
+      "options": [
+        "Carne bem salgada e seca ao sol, que dura muito",
+        "Carne crua moída com temperos",
+        "Linguiça de porco defumada",
+        "Peixe seco ao vento"
+      ],
+      "answer": 0,
+      "fact": "O charque foi tão importante no Sul que deu origem a uma guerra: a Revolução Farroupilha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato nordestino é feito de miúdos de bode ou carneiro cozidos no próprio bucho?",
+      "options": [
+        "Buchada",
+        "Sarapatel",
+        "Panelada",
+        "Mocotó"
+      ],
+      "answer": 0,
+      "fact": "A buchada de bode é tradicional no Sertão e costuma ser servida em ocasiões especiais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato feito com o pé do boi vira um caldo grosso e famoso, tido como revigorante?",
+      "options": [
+        "Mocotó",
+        "Rabada",
+        "Dobradinha",
+        "Sarapatel"
+      ],
+      "answer": 0,
+      "fact": "O mocotó é rico em colágeno, por isso o caldo fica gelatinoso quando esfria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato é feito com o estômago do boi cozido com feijão-branco?",
+      "options": [
+        "Dobradinha",
+        "Rabada",
+        "Mocotó",
+        "Buchada"
+      ],
+      "answer": 0,
+      "fact": "A dobradinha é parente da tripa à moda do Porto, prato que deu aos portuenses o apelido de \"tripeiros\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato é feito com o rabo do boi, cozido lentamente e servido com agrião ou polenta?",
+      "options": [
+        "Rabada",
+        "Mocotó",
+        "Dobradinha",
+        "Cozido"
+      ],
+      "answer": 0,
+      "fact": "A rabada é um prato tradicional dos botecos e do almoço de domingo no Rio de Janeiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato português leva carnes, linguiças e legumes cozidos juntos, servido com pirão?",
+      "options": [
+        "Cozido",
+        "Feijoada",
+        "Caldeirada",
+        "Arroz de pato"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, o cozido virou tradição de domingo em muitas famílias de origem portuguesa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho francês clássico é feito de gema, manteiga clarificada e limão?",
+      "options": [
+        "Holandês",
+        "Bechamel",
+        "Béarnaise",
+        "Velouté"
+      ],
+      "answer": 0,
+      "fact": "O molho holandês é a base do famoso ovo Benedict."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho francês é feito de manteiga, farinha e leite, e é a base da lasanha à bolonhesa?",
+      "options": [
+        "Bechamel",
+        "Velouté",
+        "Holandês",
+        "Espanhol"
+      ],
+      "answer": 0,
+      "fact": "O bechamel é um dos cinco \"molhos-mãe\" da cozinha francesa clássica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a mistura de manteiga e farinha cozidas usada para engrossar molhos?",
+      "options": [
+        "Roux",
+        "Mirepoix",
+        "Bouquet garni",
+        "Beurre blanc"
+      ],
+      "answer": 0,
+      "fact": "Quanto mais tempo o roux cozinha, mais escuro ele fica e menos poder de engrossar tem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a base francesa de cebola, cenoura e salsão picados?",
+      "options": [
+        "Mirepoix",
+        "Roux",
+        "Brunoise",
+        "Julienne"
+      ],
+      "answer": 0,
+      "fact": "A versão italiana da mirepoix se chama soffritto, e a espanhola, sofrito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o corte de legumes em tirinhas finas e compridas?",
+      "options": [
+        "Julienne",
+        "Brunoise",
+        "Chiffonade",
+        "Paysanne"
+      ],
+      "answer": 0,
+      "fact": "A brunoise é feita cortando a julienne em cubinhos de cerca de 2 mm."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o corte de folhas enroladas e fatiadas em tiras finíssimas?",
+      "options": [
+        "Chiffonade",
+        "Julienne",
+        "Brunoise",
+        "Macedônia"
+      ],
+      "answer": 0,
+      "fact": "\"Chiffonade\" vem de \"chiffon\", que significa trapo ou pano em francês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que técnica cozinha o alimento embalado a vácuo, em água com temperatura controlada, por horas?",
+      "options": [
+        "Sous-vide",
+        "Confit",
+        "Poché",
+        "Braseado"
+      ],
+      "answer": 0,
+      "fact": "\"Sous-vide\" significa \"sob vácuo\" em francês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que técnica francesa cozinha lentamente a carne mergulhada na própria gordura?",
+      "options": [
+        "Confit",
+        "Sous-vide",
+        "Flambado",
+        "Poché"
+      ],
+      "answer": 0,
+      "fact": "O confit de pato foi criado como forma de conservar a carne antes da geladeira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o ovo cozido sem casca em água quase fervente, com a gema mole?",
+      "options": [
+        "Ovo pochê",
+        "Ovo cocotte",
+        "Ovo mollet",
+        "Ovo frito"
+      ],
+      "answer": 0,
+      "fact": "Um pouco de vinagre na água ajuda a clara a firmar mais rápido no ovo pochê."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato leva muffin inglês, presunto, ovo pochê e molho holandês?",
+      "options": [
+        "Ovos Benedict",
+        "Ovos mexidos",
+        "Croque madame",
+        "Shakshuka"
+      ],
+      "answer": 0,
+      "fact": "O ovo Benedict ficou famoso em Nova York no fim do século XIX."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sanduíche francês de presunto e queijo gratinado leva um ovo frito por cima?",
+      "options": [
+        "Croque madame",
+        "Croque monsieur",
+        "Bauru",
+        "Misto-quente"
+      ],
+      "answer": 0,
+      "fact": "Segundo a explicação popular, o ovo por cima lembraria o chapéu de uma senhora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato do Norte da África e de Israel é feito de ovos cozidos em molho de tomate com pimentão?",
+      "options": [
+        "Shakshuka",
+        "Tajine",
+        "Harira",
+        "Baba ghanoush"
+      ],
+      "answer": 0,
+      "fact": "O nome \"shakshuka\" vem de uma palavra que significa algo como \"misturado\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pasta árabe é feita de berinjela assada, tahine e alho?",
+      "options": [
+        "Baba ghanoush",
+        "Homus",
+        "Muhammara",
+        "Labneh"
+      ],
+      "answer": 0,
+      "fact": "O sabor defumado vem de assar a berinjela direto no fogo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a panela marroquina de barro com tampa em forma de cone?",
+      "options": [
+        "Tajine",
+        "Wok",
+        "Cuscuzeira",
+        "Paellera"
+      ],
+      "answer": 0,
+      "fact": "A tampa cônica faz o vapor condensar e voltar para a comida, que cozinha quase sem água."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato vietnamita é uma sopa de macarrão de arroz com caldo de carne e ervas?",
+      "options": [
+        "Pho",
+        "Lámen",
+        "Pad thai",
+        "Laksa"
+      ],
+      "answer": 0,
+      "fact": "O pho costuma ser comido no café da manhã no Vietnã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato tailandês é um macarrão de arroz salteado com amendoim, ovo e tamarindo?",
+      "options": [
+        "Pad thai",
+        "Pho",
+        "Tom yum",
+        "Nasi goreng"
+      ],
+      "answer": 0,
+      "fact": "O pad thai foi promovido como prato nacional pelo governo tailandês nos anos 1930 e 1940."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sopa tailandesa é azeda e picante, com camarão, capim-limão e galanga?",
+      "options": [
+        "Tom yum",
+        "Pho",
+        "Laksa",
+        "Tom kha"
+      ],
+      "answer": 0,
+      "fact": "O tom kha é parecido, mas leva leite de coco e é menos picante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que arroz frito indonésio é considerado prato nacional do país?",
+      "options": [
+        "Nasi goreng",
+        "Pad thai",
+        "Bibimbap",
+        "Biryani"
+      ],
+      "answer": 0,
+      "fact": "\"Nasi goreng\" significa simplesmente \"arroz frito\" em indonésio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato coreano é uma tigela de arroz com legumes, carne, ovo e pasta de pimenta?",
+      "options": [
+        "Bibimbap",
+        "Bulgogi",
+        "Kimbap",
+        "Tteokbokki"
+      ],
+      "answer": 0,
+      "fact": "\"Bibimbap\" significa \"arroz misturado\" em coreano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato coreano é feito de carne bovina marinada e grelhada?",
+      "options": [
+        "Bulgogi",
+        "Bibimbap",
+        "Japchae",
+        "Samgyeopsal"
+      ],
+      "answer": 0,
+      "fact": "\"Bulgogi\" significa \"carne de fogo\" em coreano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato indiano de arroz é cozido em camadas com carne e especiarias?",
+      "options": [
+        "Biryani",
+        "Tikka masala",
+        "Dal",
+        "Korma"
+      ],
+      "answer": 0,
+      "fact": "O biryani tem origem na cozinha dos imperadores mogóis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pão indiano achatado é assado nas paredes de um forno de barro?",
+      "options": [
+        "Naan",
+        "Chapati",
+        "Pita",
+        "Tortilha"
+      ],
+      "answer": 0,
+      "fact": "O forno de barro em que o naan é assado se chama tandoor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato de frango em molho cremoso de tomate e especiarias, famoso como \"indiano\", pode ter sido criado no Reino Unido?",
+      "options": [
+        "Frango tikka masala",
+        "Frango tandoori",
+        "Frango korma",
+        "Frango vindaloo"
+      ],
+      "answer": 0,
+      "fact": "Um ministro britânico chegou a chamar o tikka masala de \"verdadeiro prato nacional britânico\", em 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que mistura indiana de especiarias, cujo nome significa \"mistura quente\", leva cravo, canela e cardamomo?",
+      "options": [
+        "Garam masala",
+        "Curry madras",
+        "Ras el hanout",
+        "Zaatar"
+      ],
+      "answer": 0,
+      "fact": "\"Garam\" quer dizer \"quente\" e \"masala\", \"mistura\" em hindi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que mistura de especiarias marroquina tem um nome que significa \"o melhor da loja\"?",
+      "options": [
+        "Ras el hanout",
+        "Garam masala",
+        "Zaatar",
+        "Baharat"
+      ],
+      "answer": 0,
+      "fact": "Cada vendedor tem sua receita de ras el hanout, que pode ter mais de 20 especiarias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que especiaria é o estigma seco de uma flor e é a mais cara do mundo por peso?",
+      "options": [
+        "Açafrão",
+        "Cardamomo",
+        "Baunilha",
+        "Cravo"
+      ],
+      "answer": 0,
+      "fact": "São necessárias cerca de 150 mil flores para produzir 1 quilo dessa especiaria."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que especiaria é uma vagem de orquídea e só é polinizada naturalmente por uma abelha do México?",
+      "options": [
+        "Baunilha",
+        "Cardamomo",
+        "Anis-estrelado",
+        "Cumaru"
+      ],
+      "answer": 0,
+      "fact": "Fora do México, a flor da baunilha precisa ser polinizada à mão, uma a uma."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que especiaria em forma de estrela é usada em caldas e no chá de especiarias?",
+      "options": [
+        "Anis-estrelado",
+        "Cravo",
+        "Cardamomo",
+        "Noz-moscada"
+      ],
+      "answer": 0,
+      "fact": "O anis-estrelado é uma das cinco especiarias do pó chinês \"cinco especiarias\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que especiaria é o botão seco de uma flor e tem formato de preginho?",
+      "options": [
+        "Cravo",
+        "Anis-estrelado",
+        "Pimenta-da-jamaica",
+        "Zimbro"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, o cravo se chama \"clove\", do latim \"clavus\", prego."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que especiaria é a semente de uma fruta e é coberta por uma rede vermelha chamada macis?",
+      "options": [
+        "Noz-moscada",
+        "Cardamomo",
+        "Cumaru",
+        "Pimenta-do-reino"
+      ],
+      "answer": 0,
+      "fact": "No século XVII, a ilha de Run, nas Molucas, foi trocada por Manhattan por causa da noz-moscada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que semente amazônica, chamada de \"baunilha brasileira\", tem aroma doce e forte?",
+      "options": [
+        "Cumaru",
+        "Puxuri",
+        "Pataqueira",
+        "Cacau"
+      ],
+      "answer": 0,
+      "fact": "O cumaru tem cumarina, substância que é limitada em alimentos em alguns países."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que fruto seco é usado para aromatizar o gim?",
+      "options": [
+        "Zimbro",
+        "Cardamomo",
+        "Anis",
+        "Pimenta-rosa"
+      ],
+      "answer": 0,
+      "fact": "O nome \"gin\" vem do holandês \"jenever\", que significa zimbro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "De que país vem o gim moderno, antes de virar febre em Londres?",
+      "options": [
+        "Holanda",
+        "Escócia",
+        "Irlanda",
+        "Bélgica"
+      ],
+      "answer": 0,
+      "fact": "Em Londres, no século XVIII, o consumo de gim foi tão alto que a época ficou conhecida como \"Gin Craze\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que bebida francesa verde e muito forte era chamada de \"fada verde\"?",
+      "options": [
+        "Absinto",
+        "Chartreuse",
+        "Pastis",
+        "Anisete"
+      ],
+      "answer": 0,
+      "fact": "O absinto foi proibido em vários países no começo do século XX e voltou a ser liberado nos anos 1990 e 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que licor italiano de amêndoas tem o nome de uma cidade perto de Milão?",
+      "options": [
+        "Amaretto",
+        "Frangelico",
+        "Limoncello",
+        "Sambuca"
+      ],
+      "answer": 0,
+      "fact": "O mais famoso é o de Saronno, cidade perto de Milão, e muitos são feitos com caroço de damasco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que licor italiano é feito com cascas de limão-siciliano?",
+      "options": [
+        "Limoncello",
+        "Amaretto",
+        "Sambuca",
+        "Frangelico"
+      ],
+      "answer": 0,
+      "fact": "O limoncello é típico da Costa Amalfitana e é servido bem gelado depois das refeições."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque italiano leva gim, vermute tinto e Campari, em partes iguais?",
+      "options": [
+        "Negroni",
+        "Aperol spritz",
+        "Bellini",
+        "Americano"
+      ],
+      "answer": 0,
+      "fact": "O negroni teria sido criado em Florença, em 1919, para o conde Camillo Negroni."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque de Veneza leva espumante e purê de pêssego branco?",
+      "options": [
+        "Bellini",
+        "Mimosa",
+        "Spritz",
+        "Rossini"
+      ],
+      "answer": 0,
+      "fact": "O Bellini foi criado no Harry's Bar, em Veneza, e homenageia o pintor Giovanni Bellini."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque leva espumante e suco de laranja e é servido em brunches?",
+      "options": [
+        "Mimosa",
+        "Bellini",
+        "Kir royal",
+        "Rossini"
+      ],
+      "answer": 0,
+      "fact": "Na Inglaterra, uma versão com mais espumante e menos suco se chama Buck's Fizz."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque leva vodca, suco de tomate, limão e molho inglês?",
+      "options": [
+        "Bloody Mary",
+        "Cosmopolitan",
+        "Moscow mule",
+        "Screwdriver"
+      ],
+      "answer": 0,
+      "fact": "O Bloody Mary é famoso como \"cura\" de ressaca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque é servido numa caneca de cobre com vodca, limão e cerveja de gengibre?",
+      "options": [
+        "Moscow mule",
+        "Cuba libre",
+        "Gin tônica",
+        "Dark 'n' stormy"
+      ],
+      "answer": 0,
+      "fact": "O Moscow mule foi criado nos Estados Unidos nos anos 1940, apesar do nome."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque clássico é feito com gim e vermute seco, servido com azeitona?",
+      "options": [
+        "Dry martini",
+        "Negroni",
+        "Manhattan",
+        "Gimlet"
+      ],
+      "answer": 0,
+      "fact": "James Bond pedia o martini \"batido, não mexido\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que drinque americano leva uísque bourbon, açúcar, angostura e casca de laranja?",
+      "options": [
+        "Old fashioned",
+        "Manhattan",
+        "Mint julep",
+        "Whiskey sour"
+      ],
+      "answer": 0,
+      "fact": "O old fashioned é considerado um dos coquetéis mais antigos registrados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que destilado americano deve ser feito com pelo menos 51% de milho e envelhecido em barril novo de carvalho queimado?",
+      "options": [
+        "Bourbon",
+        "Rye whiskey",
+        "Scotch",
+        "Tennessee whiskey"
+      ],
+      "answer": 0,
+      "fact": "Em 1964, o Congresso americano declarou o bourbon um \"produto distintivo dos Estados Unidos\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que destilado peruano e chileno é feito de uva e é a base de um drinque com clara de ovo?",
+      "options": [
+        "Pisco",
+        "Grappa",
+        "Singani",
+        "Aguardiente"
+      ],
+      "answer": 0,
+      "fact": "Peru e Chile disputam até hoje a origem do pisco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que destilado italiano é feito com o bagaço da uva que sobra do vinho?",
+      "options": [
+        "Grappa",
+        "Limoncello",
+        "Sambuca",
+        "Amaro"
+      ],
+      "answer": 0,
+      "fact": "A versão portuguesa da grappa se chama bagaceira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual destilado mexicano é parente da tequila, mas pode ser feito de vários tipos de agave e tem sabor defumado?",
+      "options": [
+        "Mezcal",
+        "Pulque",
+        "Sotol",
+        "Raicilla"
+      ],
+      "answer": 0,
+      "fact": "O sabor defumado vem de assar os corações de agave em buracos no chão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que estado fica Salinas, cidade famosa por suas cachaças artesanais?",
+      "options": [
+        "Minas Gerais",
+        "Paraíba",
+        "Pernambuco",
+        "São Paulo"
+      ],
+      "answer": 0,
+      "fact": "Salinas se apresenta como a \"capital mundial da cachaça\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que queijo de leite de ovelha, salgado e duro, é o usado na carbonara tradicional de Roma?",
+      "options": [
+        "Pecorino romano",
+        "Parmesão",
+        "Grana padano",
+        "Provolone"
+      ],
+      "answer": 0,
+      "fact": "O pecorino romano é um dos queijos mais antigos da Itália, já citado por autores da Roma antiga."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que expressão indica que o vinho é seco, com pouco açúcar, nos espumantes?",
+      "options": [
+        "Brut",
+        "Demi-sec",
+        "Doux",
+        "Moscatel"
+      ],
+      "answer": 0,
+      "fact": "O \"extra brut\" e o \"nature\" são ainda mais secos que o brut."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que espumante italiano doce e aromático é feito com a uva moscatel?",
+      "options": [
+        "Asti",
+        "Prosecco",
+        "Lambrusco",
+        "Franciacorta"
+      ],
+      "answer": 0,
+      "fact": "O Brasil também produz moscatel espumante, principalmente em Farroupilha, no Rio Grande do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que vinho tinto italiano é levemente espumante e costuma ser doce ou meio seco?",
+      "options": [
+        "Lambrusco",
+        "Chianti",
+        "Barolo",
+        "Amarone"
+      ],
+      "answer": 0,
+      "fact": "O Lambrusco é típico da região da Emília-Romanha, a mesma de Bolonha e Modena."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que região italiana é famosa pelo vinho Chianti?",
+      "options": [
+        "Toscana",
+        "Piemonte",
+        "Vêneto",
+        "Sicília"
+      ],
+      "answer": 0,
+      "fact": "A garrafa tradicional do Chianti, envolta em palha, se chama fiasco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que vinho italiano do Piemonte, feito com a uva nebbiolo, é chamado de \"rei dos vinhos\"?",
+      "options": [
+        "Barolo",
+        "Chianti",
+        "Brunello",
+        "Amarone"
+      ],
+      "answer": 0,
+      "fact": "A uva nebbiolo tem esse nome por causa da neblina (\"nebbia\") do outono no Piemonte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que região francesa é famosa pelos tintos feitos com cabernet sauvignon e merlot e tem uma cidade portuária com o mesmo nome?",
+      "options": [
+        "Bordeaux",
+        "Borgonha",
+        "Champagne",
+        "Alsácia"
+      ],
+      "answer": 0,
+      "fact": "A cor \"bordô\" vem do nome dessa região."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que uva é a principal dos tintos da Borgonha?",
+      "options": [
+        "Pinot noir",
+        "Cabernet sauvignon",
+        "Syrah",
+        "Merlot"
+      ],
+      "answer": 0,
+      "fact": "O Romanée-Conti, um dos vinhos mais caros do mundo, é um pinot noir da Borgonha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que uva tinta, chamada de shiraz na Austrália, é típica do vale do Rhône?",
+      "options": [
+        "Syrah",
+        "Tempranillo",
+        "Grenache",
+        "Malbec"
+      ],
+      "answer": 0,
+      "fact": "A lenda que liga a uva à cidade iraniana de Shiraz não tem comprovação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que uva é a mais importante da Espanha, base dos vinhos de Rioja?",
+      "options": [
+        "Tempranillo",
+        "Garnacha",
+        "Albariño",
+        "Monastrell"
+      ],
+      "answer": 0,
+      "fact": "\"Tempranillo\" vem de \"temprano\", cedo, porque a uva amadurece antes das outras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que vinho português é jovem, leve e às vezes levemente frisante, do Minho?",
+      "options": [
+        "Vinho verde",
+        "Vinho do Porto",
+        "Madeira",
+        "Moscatel de Setúbal"
+      ],
+      "answer": 0,
+      "fact": "O nome não tem a ver com a cor: \"verde\" se refere à juventude do vinho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que região gaúcha fica o Vale dos Vinhedos, primeira indicação de procedência de vinho do Brasil?",
+      "options": [
+        "Serra Gaúcha",
+        "Campanha",
+        "Serra do Sudeste",
+        "Campos de Cima da Serra"
+      ],
+      "answer": 0,
+      "fact": "O Vale dos Vinhedos fica entre Bento Gonçalves, Garibaldi e Monte Belo do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que são os \"taninos\" de um vinho?",
+      "options": [
+        "Substâncias que dão sensação de secura na boca",
+        "O açúcar que sobra da fermentação",
+        "O gás que forma as bolhas",
+        "O álcool evaporado"
+      ],
+      "answer": 0,
+      "fact": "Os taninos vêm da casca, das sementes e dos engaços da uva, e também da madeira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o depósito que se forma no fundo de vinhos velhos?",
+      "options": [
+        "Borra",
+        "Tanino",
+        "Mosto",
+        "Bagaço"
+      ],
+      "answer": 0,
+      "fact": "Por causa da borra, vinhos velhos costumam ser decantados antes de servir."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o suco de uva ainda não fermentado, no começo da produção do vinho?",
+      "options": [
+        "Mosto",
+        "Borra",
+        "Bagaço",
+        "Vinhaça"
+      ],
+      "answer": 0,
+      "fact": "O mosto também é usado para fazer suco de uva integral."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que mede o \"IBU\" de uma cerveja?",
+      "options": [
+        "O amargor",
+        "A cor",
+        "O teor de álcool",
+        "A quantidade de gás"
+      ],
+      "answer": 0,
+      "fact": "IBU é a sigla de International Bitterness Units, unidades internacionais de amargor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lei alemã de 1516 dizia que cerveja só podia ter água, malte e lúpulo?",
+      "options": [
+        "Lei da Pureza",
+        "Lei do Lúpulo",
+        "Lei da Baviera",
+        "Lei de Munique"
+      ],
+      "answer": 0,
+      "fact": "A levedura não estava na lista porque ainda não se sabia que ela existia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que é uma cerveja \"lager\", em relação à \"ale\"?",
+      "options": [
+        "Fermentada em baixa temperatura",
+        "Feita só com trigo",
+        "Envelhecida em barril de vinho",
+        "Sem lúpulo"
+      ],
+      "answer": 0,
+      "fact": "\"Lager\" vem do alemão \"lagern\", que significa armazenar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cerveja belga é fermentada espontaneamente, com leveduras do próprio ar?",
+      "options": [
+        "Lambic",
+        "Tripel",
+        "Dubbel",
+        "Saison"
+      ],
+      "answer": 0,
+      "fact": "As lambics são produzidas tradicionalmente no vale do rio Senne, perto de Bruxelas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamam as cervejas produzidas por monges dentro de mosteiros reconhecidos?",
+      "options": [
+        "Trapistas",
+        "Abadias",
+        "Lambics",
+        "Saisons"
+      ],
+      "answer": 0,
+      "fact": "Só uma dúzia de mosteiros no mundo pode usar o selo \"Authentic Trappist Product\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual destas cervejas é forte, escura e feita tradicionalmente em mosteiros da Baviera para o jejum da Quaresma?",
+      "options": [
+        "Doppelbock",
+        "Pilsen",
+        "Weiss",
+        "Kölsch"
+      ],
+      "answer": 0,
+      "fact": "Os monges chamavam a doppelbock de \"pão líquido\", pois a bebiam durante o jejum."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato paraense é um pato cozido no tucupi com jambu, servido no Círio de Nazaré?",
+      "options": [
+        "Pato no tucupi",
+        "Tacacá",
+        "Maniçoba",
+        "Caruru"
+      ],
+      "answer": 0,
+      "fact": "O pato no tucupi é o prato mais tradicional do almoço do Círio, em Belém."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que erva amazônica provoca uma leve dormência e formigamento na boca?",
+      "options": [
+        "Jambu",
+        "Chicória",
+        "Alfavaca",
+        "Coentro-do-pará"
+      ],
+      "answer": 0,
+      "fact": "O jambu tem espilantol, substância que causa a dormência e já é usada até em cachaças."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que caldo quente paraense, servido na cuia, leva tucupi, goma, jambu e camarão seco?",
+      "options": [
+        "Tacacá",
+        "Vatapá",
+        "Caruru",
+        "Pirarucu de casaca"
+      ],
+      "answer": 0,
+      "fact": "Em Belém, o tacacá é tomado no fim da tarde, mesmo com todo o calor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que peixe amazônico, um dos maiores de água doce do mundo, é chamado de \"bacalhau da Amazônia\"?",
+      "options": [
+        "Pirarucu",
+        "Tambaqui",
+        "Tucunaré",
+        "Filhote"
+      ],
+      "answer": 0,
+      "fact": "O pirarucu precisa subir à superfície para respirar ar, por isso é fácil de localizar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que peixe amazônico de carne gorda é muito servido assado como \"costela\"?",
+      "options": [
+        "Tambaqui",
+        "Pirarucu",
+        "Tucunaré",
+        "Jaraqui"
+      ],
+      "answer": 0,
+      "fact": "A \"costelinha de tambaqui\" é um dos pratos mais pedidos em Manaus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que farinha amazônica tem grãos grandes e crocantes, parecidos com bolinhas?",
+      "options": [
+        "Farinha d'água ou ovinha",
+        "Farinha de rosca",
+        "Farinha de copioba",
+        "Farinha panada"
+      ],
+      "answer": 0,
+      "fact": "A farinha de Bragança, no Pará, tem indicação geográfica e é famosa pelos grãos graúdos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que farinha de mandioca baiana, fina e torrada, tem fama de ser uma das melhores do Brasil?",
+      "options": [
+        "Copioba",
+        "Ovinha",
+        "Puba",
+        "D'água"
+      ],
+      "answer": 0,
+      "fact": "A farinha de copioba vem do Recôncavo Baiano e tem indicação geográfica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato baiano é feito com quiabo, camarão seco, amendoim e dendê?",
+      "options": [
+        "Caruru",
+        "Vatapá",
+        "Abará",
+        "Bobó"
+      ],
+      "answer": 0,
+      "fact": "Em 27 de setembro, dia de São Cosme e Damião, é tradição oferecer caruru às crianças na Bahia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que bolinho baiano é parecido com o acarajé, mas cozido no vapor, enrolado em folha de bananeira?",
+      "options": [
+        "Abará",
+        "Acaçá",
+        "Cocada baiana",
+        "Bolinho de estudante"
+      ],
+      "answer": 0,
+      "fact": "O abará usa a mesma massa de feijão-fradinho do acarajé."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato baiano é um creme de mandioca com camarão e dendê?",
+      "options": [
+        "Bobó de camarão",
+        "Vatapá",
+        "Caruru",
+        "Xinxim"
+      ],
+      "answer": 0,
+      "fact": "No bobó, a mandioca cozida e batida é o que dá a textura cremosa, sem precisar de creme de leite."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato baiano é feito de galinha com amendoim, castanha e camarão seco?",
+      "options": [
+        "Xinxim de galinha",
+        "Vatapá",
+        "Caruru",
+        "Moqueca de galinha"
+      ],
+      "answer": 0,
+      "fact": "O xinxim é um prato ligado às tradições do candomblé."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a principal diferença entre a moqueca baiana e a capixaba?",
+      "options": [
+        "A capixaba não leva dendê nem leite de coco",
+        "A capixaba é feita só com camarão",
+        "A baiana é cozida em panela de pedra",
+        "A baiana não leva tomate"
+      ],
+      "answer": 0,
+      "fact": "A moqueca capixaba é feita numa panela de barro preta, artesanal, e leva urucum para dar cor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que bairro de Vitória é famoso pelas paneleiras que fazem as panelas de barro da moqueca capixaba?",
+      "options": [
+        "Goiabeiras",
+        "Jardim da Penha",
+        "Praia do Canto",
+        "Jucutuquara"
+      ],
+      "answer": 0,
+      "fact": "O ofício das paneleiras de Goiabeiras foi o primeiro bem registrado como patrimônio imaterial do Brasil, em 2002."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato capixaba de Semana Santa leva bacalhau, palmito, frutos do mar e ovos?",
+      "options": [
+        "Torta capixaba",
+        "Moqueca de banana",
+        "Bobó",
+        "Caldeirada"
+      ],
+      "answer": 0,
+      "fact": "A torta capixaba é a estrela da Sexta-Feira Santa no Espírito Santo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato mineiro leva frango cozido com o caldo engrossado pelo próprio sangue da ave?",
+      "options": [
+        "Frango ao molho pardo",
+        "Frango com quiabo",
+        "Galinhada",
+        "Frango caipira"
+      ],
+      "answer": 0,
+      "fact": "Em Portugal existe um prato parecido, a galinha de cabidela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que doce mineiro em calda é feito de mamão verde cortado em tirinhas?",
+      "options": [
+        "Doce de mamão verde",
+        "Doce de abóbora",
+        "Doce de cidra",
+        "Ambrosia"
+      ],
+      "answer": 0,
+      "fact": "Em Minas, os doces em calda costumam ser servidos com uma fatia de queijo fresco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade histórica mineira sedia, desde 1998, um dos festivais de gastronomia mais famosos do Brasil?",
+      "options": [
+        "Tiradentes",
+        "Ouro Preto",
+        "Diamantina",
+        "Mariana"
+      ],
+      "answer": 0,
+      "fact": "Tiradentes tem menos de 10 mil habitantes, mas recebe milhares de turistas durante o festival."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade foi a primeira do Brasil reconhecida pela Unesco como Cidade Criativa da Gastronomia, em 2014?",
+      "options": [
+        "Florianópolis",
+        "Belém",
+        "Belo Horizonte",
+        "Paraty"
+      ],
+      "answer": 0,
+      "fact": "Florianópolis foi escolhida principalmente pela produção de ostras e pela culinária açoriana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estado brasileiro é o maior produtor de ostras do país?",
+      "options": [
+        "Santa Catarina",
+        "Paraná",
+        "São Paulo",
+        "Bahia"
+      ],
+      "answer": 0,
+      "fact": "O cultivo de ostras em Santa Catarina começou nos anos 1980 com apoio da universidade federal do estado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato paranaense é um cozido de carne feito por horas numa panela de barro selada com massa de farinha?",
+      "options": [
+        "Barreado",
+        "Entrevero",
+        "Carne de onça",
+        "Pinhão cozido"
+      ],
+      "answer": 0,
+      "fact": "O barreado é típico de Morretes e Paranaguá, no litoral do Paraná."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato curitibano é carne crua moída, temperada e servida sobre pão preto?",
+      "options": [
+        "Carne de onça",
+        "Barreado",
+        "Entrevero",
+        "Steak tartare"
+      ],
+      "answer": 0,
+      "fact": "O nome seria uma brincadeira com o hálito forte de quem come o prato, cheio de cebola crua."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que semente de araucária é cozida e comida no inverno do Sul?",
+      "options": [
+        "Pinhão",
+        "Castanha-do-pará",
+        "Baru",
+        "Pequi"
+      ],
+      "answer": 0,
+      "fact": "A gralha-azul, ave símbolo do Paraná, ajuda a plantar araucárias ao enterrar pinhões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato da Serra Gaúcha, de origem italiana, é um frango jovem assado servido com massa, polenta e salada?",
+      "options": [
+        "Galeto al primo canto",
+        "Barreado",
+        "Arroz carreteiro",
+        "Entrevero"
+      ],
+      "answer": 0,
+      "fact": "O galeto virou símbolo de Caxias do Sul, onde é tradição de almoço de domingo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o grão castanho do Cerrado, de sabor parecido com o do amendoim?",
+      "options": [
+        "Baru",
+        "Pequi",
+        "Cagaita",
+        "Buriti"
+      ],
+      "answer": 0,
+      "fact": "O baru é rico em proteína e virou ingrediente queridinho de chefs brasileiros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que palmeira do Cerrado e da Amazônia dá um fruto alaranjado e escamoso, usado em doces?",
+      "options": [
+        "Buriti",
+        "Açaí",
+        "Pupunha",
+        "Babaçu"
+      ],
+      "answer": 0,
+      "fact": "O buriti é uma das frutas mais ricas em vitamina A do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que fruto de uma palmeira amazônica é cozido com sal e comido no café da manhã no Norte?",
+      "options": [
+        "Pupunha",
+        "Tucumã",
+        "Buriti",
+        "Bacaba"
+      ],
+      "answer": 0,
+      "fact": "A pupunha também fornece um palmito cultivado, que não ameaça as palmeiras nativas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sanduíche de Manaus leva pão, queijo coalho, banana frita e tucumã?",
+      "options": [
+        "X-caboquinho",
+        "X-tudo",
+        "Bauru amazônico",
+        "Pão de tapioca"
+      ],
+      "answer": 0,
+      "fact": "O x-caboquinho foi declarado patrimônio cultural imaterial de Manaus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que fruta amazônica de casca amarela e polpa branca, parente do mangostão, vira sorvete no Pará?",
+      "options": [
+        "Bacuri",
+        "Cupuaçu",
+        "Taperebá",
+        "Graviola"
+      ],
+      "answer": 0,
+      "fact": "A polpa do bacuri é tão valorizada que costuma ser uma das mais caras das feiras de Belém."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual destes frutos do Nordeste, pequeno e amarelo, também é chamado de taperebá no Norte?",
+      "options": [
+        "Cajá",
+        "Seriguela",
+        "Umbu",
+        "Pitomba"
+      ],
+      "answer": 0,
+      "fact": "O cajá é muito usado em sucos, sorvetes e picolés no Nordeste e no Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que fruta do Sertão nordestino era chamada por Euclides da Cunha de \"árvore sagrada do sertão\"?",
+      "options": [
+        "Umbu",
+        "Caju",
+        "Mangaba",
+        "Juá"
+      ],
+      "answer": 0,
+      "fact": "O umbuzeiro guarda água nas raízes, o que o ajuda a resistir às secas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "De que é feita a rapadura?",
+      "options": [
+        "Caldo de cana fervido até endurecer",
+        "Mel de abelha cristalizado",
+        "Açúcar refinado com melaço",
+        "Beterraba cozida"
+      ],
+      "answer": 0,
+      "fact": "A rapadura era alimento dos tropeiros e vaqueiros porque é muito energética e não estraga."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que doce pernambucano de massa de mandioca, coco e açúcar leva o nome de uma família de senhores de engenho?",
+      "options": [
+        "Bolo Souza Leão",
+        "Bolo de rolo",
+        "Cartola",
+        "Bolo de noiva"
+      ],
+      "answer": 0,
+      "fact": "O bolo Souza Leão, assim como o bolo de rolo, foi declarado patrimônio cultural imaterial de Pernambuco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que sobremesa pernambucana é banana frita com queijo derretido, açúcar e canela?",
+      "options": [
+        "Cartola",
+        "Bolo de rolo",
+        "Cocada de forno",
+        "Romeu e Julieta"
+      ],
+      "answer": 0,
+      "fact": "A cartola é patrimônio imaterial de Pernambuco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que doce cearense de goma de mandioca e coco é assado em folha de bananeira e fica bem elástico?",
+      "options": [
+        "Grude",
+        "Beiju",
+        "Mungunzá",
+        "Cocada de forno"
+      ],
+      "answer": 0,
+      "fact": "O nome vem da textura grudenta do doce."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a canjica de milho branco com leite de coco no Nordeste?",
+      "options": [
+        "Mungunzá",
+        "Curau",
+        "Pamonha",
+        "Canjiquinha"
+      ],
+      "answer": 0,
+      "fact": "No Sudeste, esse mesmo prato costuma ser chamado de canjica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que prato nordestino é feito com sangue e miúdos de porco, temperados e cozidos?",
+      "options": [
+        "Sarapatel",
+        "Buchada",
+        "Panelada",
+        "Chouriço"
+      ],
+      "answer": 0,
+      "fact": "O sarapatel tem origem portuguesa e é muito popular na Bahia e em Pernambuco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que doce nordestino escuro é feito com sangue de porco, açúcar e especiarias?",
+      "options": [
+        "Chouriço doce",
+        "Rapadura",
+        "Cocada preta",
+        "Doce de jenipapo"
+      ],
+      "answer": 0,
+      "fact": "O chouriço doce é tradição no Sertão, preparado na época de matança do porco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que licor nordestino de São João é feito com uma fruta escura e azeda?",
+      "options": [
+        "Licor de jenipapo",
+        "Licor de pequi",
+        "Licor de umbu",
+        "Licor de cajá"
+      ],
+      "answer": 0,
+      "fact": "O jenipapo também era usado pelos indígenas como tinta corporal preta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que bebida fermentada nordestina é feita com casca de abacaxi ou milho, açúcar e gengibre?",
+      "options": [
+        "Aluá",
+        "Caxiri",
+        "Quentão",
+        "Garapa"
+      ],
+      "answer": 0,
+      "fact": "O aluá é feito deixando os ingredientes fermentarem por alguns dias e era muito comum nas festas juninas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que refrigerante maranhense é cor-de-rosa e tem sabor de \"tutti-frutti\"?",
+      "options": [
+        "Guaraná Jesus",
+        "Mineirinho",
+        "Tubaína",
+        "Guaraná Antarctica"
+      ],
+      "answer": 0,
+      "fact": "O Guaraná Jesus foi criado em 1920 por um farmacêutico chamado Jesus Norberto Gomes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que refrigerante carioca, feito com a erva chapéu-de-couro, tem nome que parece de outro estado?",
+      "options": [
+        "Mineirinho",
+        "Guaraná Jesus",
+        "Taí",
+        "Tubaína"
+      ],
+      "answer": 0,
+      "fact": "Apesar do nome, o Mineirinho é fabricado no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que bebida de São Paulo, vendida em garrafa de vidro, virou sinônimo de refrigerante popular e barato?",
+      "options": [
+        "Tubaína",
+        "Guaraná Jesus",
+        "Taí",
+        "Mineirinho"
+      ],
+      "answer": 0,
+      "fact": "\"Tubaína\" era o nome de uma marca, mas virou nome genérico de refrigerantes regionais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que autora escreveu \"Fogão de lenha\", livro de referência da culinária de Minas?",
+      "options": [
+        "Maria Stella Libanio Christo",
+        "Nina Horta",
+        "Ofélia Anunciato",
+        "Palmirinha Onofre"
+      ],
+      "answer": 0,
+      "fact": "O livro \"Fogão de lenha: quitandas e quitutes de Minas Gerais\" foi publicado em 1977."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que livro de receitas brasileiro, lançado em 1940, ficou famoso com o nome de uma personagem de Monteiro Lobato?",
+      "options": [
+        "Dona Benta",
+        "Tia Nastácia",
+        "Dona Ofélia",
+        "Cozinha Brasileira"
+      ],
+      "answer": 0,
+      "fact": "O \"Dona Benta: comer bem\" já teve mais de 70 edições."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef paulistano comanda o D.O.M., que esteve entre os melhores restaurantes do mundo?",
+      "options": [
+        "Alex Atala",
+        "Claude Troisgros",
+        "Paola Carosella",
+        "Henrique Fogaça"
+      ],
+      "answer": 0,
+      "fact": "Alex Atala ficou conhecido por usar ingredientes amazônicos, como formigas, na alta gastronomia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef brasileira foi eleita a melhor chef mulher do mundo pelo \"50 Best\", em 2014?",
+      "options": [
+        "Helena Rizzo",
+        "Paola Carosella",
+        "Roberta Sudbrack",
+        "Bel Coelho"
+      ],
+      "answer": 0,
+      "fact": "Helena Rizzo comanda o restaurante Maní, em São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef francês, radicado no Rio de Janeiro, ficou famoso na TV com o programa \"Que Marravilha\"?",
+      "options": [
+        "Claude Troisgros",
+        "Erick Jacquin",
+        "Laurent Suaudeau",
+        "Olivier Anquier"
+      ],
+      "answer": 0,
+      "fact": "Claude Troisgros é de uma família francesa tradicional de chefs com estrelas Michelin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que guia francês dá estrelas aos melhores restaurantes do mundo?",
+      "options": [
+        "Michelin",
+        "Gault & Millau",
+        "Zagat",
+        "Larousse"
+      ],
+      "answer": 0,
+      "fact": "O guia foi criado em 1900 por uma fábrica de pneus, para incentivar as pessoas a viajar de carro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas estrelas no máximo um restaurante pode ganhar do Guia Michelin?",
+      "options": [
+        "Três",
+        "Cinco",
+        "Quatro",
+        "Duas"
+      ],
+      "answer": 0,
+      "fact": "Três estrelas significam, segundo o guia, \"uma cozinha excepcional, que vale a viagem\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que restaurante espanhol de Ferran Adrià ficou famoso pela gastronomia molecular?",
+      "options": [
+        "El Bulli",
+        "Noma",
+        "Arzak",
+        "El Celler de Can Roca"
+      ],
+      "answer": 0,
+      "fact": "O El Bulli recebia mais de 1 milhão de pedidos de reserva para cerca de 8 mil lugares por ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef francês do século XIX organizou as cozinhas em \"brigadas\" e é chamado de \"rei dos chefs\"?",
+      "options": [
+        "Auguste Escoffier",
+        "Paul Bocuse",
+        "Marie-Antoine Carême",
+        "Joël Robuchon"
+      ],
+      "answer": 0,
+      "fact": "Escoffier criou o pêssego Melba em homenagem à cantora Nellie Melba."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef francês, morto em 2018, deu nome ao principal concurso de gastronomia do mundo?",
+      "options": [
+        "Paul Bocuse",
+        "Joël Robuchon",
+        "Alain Ducasse",
+        "Auguste Escoffier"
+      ],
+      "answer": 0,
+      "fact": "O Bocuse d'Or é disputado em Lyon e é chamado de \"Olimpíada da gastronomia\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef francês acumulou o maior número de estrelas Michelin da história?",
+      "options": [
+        "Joël Robuchon",
+        "Alain Ducasse",
+        "Paul Bocuse",
+        "Gordon Ramsay"
+      ],
+      "answer": 0,
+      "fact": "Robuchon chegou a ter mais de 30 estrelas Michelin ao mesmo tempo, somando seus restaurantes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que chef americana levou a culinária francesa à TV dos Estados Unidos nos anos 1960?",
+      "options": [
+        "Julia Child",
+        "Martha Stewart",
+        "Ina Garten",
+        "Rachael Ray"
+      ],
+      "answer": 0,
+      "fact": "A história de Julia Child foi contada no filme \"Julie & Julia\", com Meryl Streep."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pequena cidade francesa dá nome a uma mostarda famosa?",
+      "options": [
+        "Dijon",
+        "Lyon",
+        "Bordeaux",
+        "Reims"
+      ],
+      "answer": 0,
+      "fact": "A mostarda de Dijon tradicionalmente usa verjus, o suco ácido de uvas verdes, no lugar do vinagre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho inglês escuro, feito com anchova fermentada e tamarindo, leva o nome de uma cidade?",
+      "options": [
+        "Worcestershire",
+        "Cambridge",
+        "Yorkshire",
+        "Manchester"
+      ],
+      "answer": 0,
+      "fact": "O molho inglês foi criado em 1837 por dois farmacêuticos de Worcester, Lea e Perrins."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho apimentado americano é feito em Avery Island, na Louisiana, desde 1868?",
+      "options": [
+        "Tabasco",
+        "Sriracha",
+        "Cholula",
+        "Valentina"
+      ],
+      "answer": 0,
+      "fact": "As pimentas do Tabasco envelhecem por até três anos em barris de carvalho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho picante, batizado com o nome de uma cidade tailandesa, ficou famoso nos Estados Unidos numa garrafa com um galo?",
+      "options": [
+        "Sriracha",
+        "Tabasco",
+        "Harissa",
+        "Sambal"
+      ],
+      "answer": 0,
+      "fact": "A versão do galo é feita na Califórnia, por um imigrante vietnamita, desde 1980."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pasta picante do Norte da África é feita de pimentas vermelhas, alho e especiarias?",
+      "options": [
+        "Harissa",
+        "Chimichurri",
+        "Sambal",
+        "Mole"
+      ],
+      "answer": 0,
+      "fact": "A harissa foi reconhecida pela Unesco como patrimônio da Tunísia em 2022."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho argentino de salsinha, alho, orégano, azeite e vinagre acompanha o churrasco?",
+      "options": [
+        "Chimichurri",
+        "Pesto",
+        "Vinagrete",
+        "Salsa criolla"
+      ],
+      "answer": 0,
+      "fact": "Há várias lendas sobre o nome \"chimichurri\", inclusive uma que o liga a um inglês chamado Jimmy."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho mexicano escuro leva chocolate, pimentas e dezenas de ingredientes?",
+      "options": [
+        "Mole poblano",
+        "Pico de gallo",
+        "Salsa verde",
+        "Guacamole"
+      ],
+      "answer": 0,
+      "fact": "Uma lenda diz que o mole poblano foi criado por freiras de Puebla para receber um arcebispo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que molho mexicano fresco é feito de tomate, cebola, coentro e pimenta picados?",
+      "options": [
+        "Pico de gallo",
+        "Mole",
+        "Salsa verde",
+        "Chipotle"
+      ],
+      "answer": 0,
+      "fact": "\"Pico de gallo\" significa \"bico de galo\" em espanhol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pimenta mexicana é o jalapeño seco e defumado?",
+      "options": [
+        "Chipotle",
+        "Habanero",
+        "Serrano",
+        "Ancho"
+      ],
+      "answer": 0,
+      "fact": "A palavra \"chipotle\" vem do náuatle e significa \"pimenta defumada\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que escala mede o ardor das pimentas?",
+      "options": [
+        "Escala de Scoville",
+        "Escala de Mohs",
+        "Escala de Richter",
+        "Escala Brix"
+      ],
+      "answer": 0,
+      "fact": "A escala foi criada em 1912 pelo farmacêutico americano Wilbur Scoville."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que substância é responsável pelo ardor das pimentas?",
+      "options": [
+        "Capsaicina",
+        "Piperina",
+        "Cafeína",
+        "Alicina"
+      ],
+      "answer": 0,
+      "fact": "A capsaicina engana o corpo, ativando os mesmos sensores que detectam calor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que substância dá o ardor à pimenta-do-reino?",
+      "options": [
+        "Piperina",
+        "Capsaicina",
+        "Alicina",
+        "Gingerol"
+      ],
+      "answer": 0,
+      "fact": "É a piperina que faz a gente espirrar perto da pimenta moída na hora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que unidade mede a quantidade de açúcar em sucos e no mosto da uva?",
+      "options": [
+        "Grau Brix",
+        "Grau Gay-Lussac",
+        "pH",
+        "Scoville"
+      ],
+      "answer": 0,
+      "fact": "Um grau Brix corresponde a 1 grama de açúcar em 100 gramas de solução."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a Coca-Cola foi criada, em Atlanta?",
+      "options": [
+        "1886",
+        "1878",
+        "1892",
+        "1899",
+        "1903",
+        "1871"
+      ],
+      "answer": 0,
+      "fact": "A primeira Coca-Cola foi vendida numa farmácia, por 5 centavos o copo, e eram vendidos cerca de 9 copos por dia."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Guaraná Antarctica foi lançado?",
+      "options": [
+        "1921",
+        "1909",
+        "1915",
+        "1928",
+        "1934",
+        "1940"
+      ],
+      "answer": 0,
+      "fact": "O Guaraná Antarctica foi criado pela Companhia Antarctica Paulista, que mais tarde se uniu à Brahma para formar a AmBev."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi inaugurada a primeira loja do McDonald's no Brasil, em Copacabana?",
+      "options": [
+        "1979",
+        "1975",
+        "1983",
+        "1986",
+        "1972",
+        "1990"
+      ],
+      "answer": 0,
+      "fact": "Na Argentina, o McDonald's só chegou em 1986, sete anos depois do Brasil."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos litros de leite são necessários, em média, para fazer 1 quilo de parmesão?",
+      "options": [
+        "16 litros",
+        "8 litros",
+        "10 litros",
+        "12 litros",
+        "20 litros",
+        "25 litros"
+      ],
+      "answer": 0,
+      "fact": "Uma peça inteira de Parmigiano Reggiano pesa cerca de 40 quilos e consome mais de 500 litros de leite."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos grãos de café, aproximadamente, vão numa xícara de expresso?",
+      "options": [
+        "50",
+        "20",
+        "35",
+        "80",
+        "100",
+        "150"
+      ],
+      "answer": 0,
+      "fact": "Um expresso usa cerca de 7 gramas de café moído, e cada grão pesa por volta de 0,13 grama."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a temperatura ideal da água para extrair um expresso?",
+      "options": [
+        "Cerca de 92 °C",
+        "Cerca de 80 °C",
+        "Cerca de 85 °C",
+        "Cerca de 100 °C",
+        "Cerca de 75 °C",
+        "Cerca de 105 °C"
+      ],
+      "answer": 0,
+      "fact": "Água fervente demais \"queima\" o café e deixa o expresso amargo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a pressão padrão de uma máquina de café expresso?",
+      "options": [
+        "9 bar",
+        "3 bar",
+        "5 bar",
+        "12 bar",
+        "15 bar",
+        "20 bar"
+      ],
+      "answer": 0,
+      "fact": "Muitas máquinas anunciam 15 ou 20 bar, mas a extração ideal acontece por volta de 9 bar."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto tempo, no mínimo, o Parmigiano Reggiano precisa envelhecer?",
+      "options": [
+        "12 meses",
+        "6 meses",
+        "9 meses",
+        "18 meses",
+        "24 meses",
+        "36 meses"
+      ],
+      "answer": 0,
+      "fact": "Peças com 24 ou 36 meses são vendidas como \"stravecchio\", extra-envelhecidas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas unidades Scoville tem, em média, o jalapeño?",
+      "options": [
+        "De 2.500 a 8.000",
+        "De 100 a 500",
+        "De 500 a 1.000",
+        "De 30.000 a 50.000",
+        "De 100.000 a 350.000",
+        "De 1 a 100"
+      ],
+      "answer": 0,
+      "fact": "O pimentão doce tem 0 unidades Scoville."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o segundo maior produtor de café do mundo?",
+      "options": [
+        "Vietnã",
+        "Colômbia",
+        "Etiópia",
+        "Indonésia",
+        "Honduras",
+        "Índia"
+      ],
+      "answer": 0,
+      "fact": "O Vietnã multiplicou a produção a partir dos anos 1990, principalmente com o café robusta."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual país é o maior produtor de cacau do mundo?",
+      "options": [
+        "Costa do Marfim",
+        "Gana",
+        "Brasil",
+        "Equador",
+        "Indonésia",
+        "Nigéria"
+      ],
+      "answer": 0,
+      "fact": "A Costa do Marfim produz cerca de 40% do cacau do planeta."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o país que mais consome chocolate por pessoa no mundo?",
+      "options": [
+        "Suíça",
+        "Bélgica",
+        "Alemanha",
+        "Estados Unidos",
+        "Reino Unido",
+        "Áustria"
+      ],
+      "answer": 0,
+      "fact": "Cada suíço come, em média, cerca de 10 quilos de chocolate por ano."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o chocolate ao leite sólido foi criado, na Suíça?",
+      "options": [
+        "1875",
+        "1820",
+        "1848",
+        "1890",
+        "1902",
+        "1867"
+      ],
+      "answer": 0,
+      "fact": "Daniel Peter criou o chocolate ao leite usando o leite condensado de seu vizinho, Henri Nestlé."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas calorias tem, aproximadamente, 1 grama de gordura?",
+      "options": [
+        "9",
+        "4",
+        "7",
+        "12",
+        "2",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "Por isso alimentos gordurosos concentram tantas calorias em pouco volume."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas calorias tem, aproximadamente, 1 grama de álcool?",
+      "options": [
+        "7",
+        "4",
+        "9",
+        "2",
+        "12",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "É por isso que bebidas alcoólicas podem ser bem calóricas, mesmo sem açúcar."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas variedades de batata existem no Peru, segundo o Centro Internacional da Batata?",
+      "options": [
+        "Mais de 3.000",
+        "Cerca de 300",
+        "Cerca de 800",
+        "Cerca de 1.500",
+        "Cerca de 100",
+        "Mais de 10.000"
+      ],
+      "answer": 0,
+      "fact": "O Peru tem um Dia Nacional da Batata, comemorado em 30 de maio."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que porcentagem de um ovo de galinha, aproximadamente, é a casca?",
+      "options": [
+        "Cerca de 10%",
+        "Cerca de 3%",
+        "Cerca de 6%",
+        "Cerca de 15%",
+        "Cerca de 20%",
+        "Cerca de 25%"
+      ],
+      "answer": 0,
+      "fact": "A casca do ovo tem milhares de poros minúsculos por onde passam ar e umidade."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos poros, aproximadamente, tem a casca de um ovo de galinha?",
+      "options": [
+        "Entre 7 mil e 17 mil",
+        "Entre 100 e 500",
+        "Entre 1 mil e 2 mil",
+        "Entre 50 mil e 80 mil",
+        "Mais de 200 mil",
+        "Cerca de 30"
+      ],
+      "answer": 0,
+      "fact": "Por esses poros o ar entra, e por isso o ovo velho boia na água."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi publicado o primeiro Guia Michelin?",
+      "options": [
+        "1900",
+        "1889",
+        "1911",
+        "1926",
+        "1933",
+        "1895"
+      ],
+      "answer": 0,
+      "fact": "Até 1920, o Guia Michelin era distribuído de graça."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Guia Michelin passou a avaliar restaurantes do Brasil, com São Paulo e Rio?",
+      "options": [
+        "2015",
+        "2008",
+        "2011",
+        "2018",
+        "2020",
+        "2005"
+      ],
+      "answer": 0,
+      "fact": "O Rio e São Paulo tiveram edições do guia até 2020, e o Brasil voltou a ter uma edição nacional em 2024."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto pesou, aproximadamente, a maior pizza já feita no mundo, segundo o Guinness, feita em Roma em 2012?",
+      "options": [
+        "23 toneladas",
+        "3 toneladas",
+        "8 toneladas",
+        "12 toneladas",
+        "40 toneladas",
+        "60 toneladas"
+      ],
+      "answer": 0,
+      "fact": "A pizza, chamada \"Ottavia\", tinha mais de 1.200 metros quadrados."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o macarrão instantâneo chegou ao Brasil?",
+      "options": [
+        "1965",
+        "1958",
+        "1972",
+        "1979",
+        "1985",
+        "1990"
+      ],
+      "answer": 0,
+      "fact": "A marca Miojo foi tão pioneira que virou nome genérico do macarrão instantâneo no Brasil."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos grãos de arroz, aproximadamente, há em 1 quilo de arroz branco?",
+      "options": [
+        "Cerca de 50 mil",
+        "Cerca de 5 mil",
+        "Cerca de 15 mil",
+        "Cerca de 120 mil",
+        "Cerca de 250 mil",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "Cada grão de arroz agulhinha pesa por volta de 0,02 grama."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que temperatura, aproximadamente, o chocolate amargo começa a derreter?",
+      "options": [
+        "Cerca de 34 °C",
+        "Cerca de 20 °C",
+        "Cerca de 27 °C",
+        "Cerca de 42 °C",
+        "Cerca de 50 °C",
+        "Cerca de 60 °C"
+      ],
+      "answer": 0,
+      "fact": "O chocolate derrete pouco abaixo da temperatura do corpo, por isso derrete na boca e não na mão fria."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "A que temperatura interna a carne está \"ao ponto para mal\"?",
+      "options": [
+        "Cerca de 55 °C",
+        "Cerca de 40 °C",
+        "Cerca de 47 °C",
+        "Cerca de 63 °C",
+        "Cerca de 70 °C",
+        "Cerca de 80 °C"
+      ],
+      "answer": 0,
+      "fact": "O ponto \"bem passado\" fica acima dos 70 °C no centro da carne."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos quilos de café verde são necessários, aproximadamente, para obter 1 quilo de café torrado?",
+      "options": [
+        "Cerca de 1,2 kg",
+        "Cerca de 0,5 kg",
+        "Cerca de 3 kg",
+        "Cerca de 5 kg",
+        "Cerca de 2 kg",
+        "Cerca de 10 kg"
+      ],
+      "answer": 0,
+      "fact": "Na torra, o café perde de 15% a 20% do peso, principalmente água."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto tempo, aproximadamente, leva para uma árvore de cacau dar os primeiros frutos?",
+      "options": [
+        "De 3 a 5 anos",
+        "De 6 a 8 meses",
+        "De 1 a 2 anos",
+        "De 8 a 10 anos",
+        "De 12 a 15 anos",
+        "De 20 a 25 anos"
+      ],
+      "answer": 0,
+      "fact": "Os frutos de cacau nascem direto no tronco e nos galhos grossos da árvore."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas sementes, em média, tem um fruto de cacau?",
+      "options": [
+        "De 30 a 50",
+        "De 5 a 10",
+        "De 10 a 20",
+        "De 80 a 100",
+        "De 150 a 200",
+        "Mais de 300"
+      ],
+      "answer": 0,
+      "fact": "São necessários cerca de 400 grãos de cacau para fazer meio quilo de chocolate."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual destas frutas tem a maior quantidade de vitamina C por grama?",
+      "options": [
+        "Camu-camu",
+        "Acerola",
+        "Laranja",
+        "Goiaba",
+        "Kiwi",
+        "Caju"
+      ],
+      "answer": 0,
+      "fact": "O camu-camu, da Amazônia, pode ter mais de 50 vezes a vitamina C da laranja."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos quilos de uva são necessários, aproximadamente, para fazer 1 litro de vinho?",
+      "options": [
+        "Cerca de 1,6 kg",
+        "Cerca de 0,5 kg",
+        "Cerca de 1 kg",
+        "Cerca de 3 kg",
+        "Cerca de 5 kg",
+        "Cerca de 8 kg"
+      ],
+      "answer": 0,
+      "fact": "Nos vinhos de sobremesa feitos com uvas secas, essa quantidade pode ser várias vezes maior."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que país é o maior produtor de vinho do mundo, na maioria dos anos?",
+      "options": [
+        "Itália",
+        "França",
+        "Espanha",
+        "Estados Unidos",
+        "Argentina",
+        "Chile"
+      ],
+      "answer": 0,
+      "fact": "Itália e França se revezam no topo, e a Espanha tem a maior área plantada de uvas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Que país tem a maior área de vinhedos do mundo?",
+      "options": [
+        "Espanha",
+        "França",
+        "Itália",
+        "China",
+        "Estados Unidos",
+        "Turquia"
+      ],
+      "answer": 0,
+      "fact": "Boa parte dos vinhedos espanhóis tem baixa densidade, por causa do clima seco."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi fundada a Brahma, no Rio de Janeiro?",
+      "options": [
+        "1888",
+        "1853",
+        "1869",
+        "1901",
+        "1914",
+        "1875"
+      ],
+      "answer": 0,
+      "fact": "A Brahma foi fundada pelo suíço Joseph Villiger, e o nome homenageia o inventor inglês Joseph Bramah, criador de um tipo de bomba de chope."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas garrafas de champanhe, aproximadamente, são vendidas por ano no mundo?",
+      "options": [
+        "Cerca de 300 milhões",
+        "Cerca de 30 milhões",
+        "Cerca de 80 milhões",
+        "Cerca de 1 bilhão",
+        "Cerca de 3 bilhões",
+        "Cerca de 10 milhões"
+      ],
+      "answer": 0,
+      "fact": "Uma garrafa de champanhe tem uma pressão interna de cerca de 6 atmosferas, três vezes a de um pneu de carro."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas bolhas, aproximadamente, tem uma taça de champanhe?",
+      "options": [
+        "Cerca de 1 milhão",
+        "Cerca de 10 mil",
+        "Cerca de 100 mil",
+        "Cerca de 50 milhões",
+        "Cerca de 1 bilhão",
+        "Cerca de 1.000"
+      ],
+      "answer": 0,
+      "fact": "O número foi estimado por pesquisadores da Universidade de Reims, na região de Champagne."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Big Mac foi criado?",
+      "options": [
+        "1967",
+        "1955",
+        "1961",
+        "1972",
+        "1975",
+        "1980"
+      ],
+      "answer": 0,
+      "fact": "O Big Mac foi inventado por um franqueado de Pittsburgh, Jim Delligatti, e só no ano seguinte foi vendido em todo o país."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos litros de água, aproximadamente, são usados para produzir 1 quilo de carne bovina?",
+      "options": [
+        "Cerca de 15 mil",
+        "Cerca de 500",
+        "Cerca de 2 mil",
+        "Cerca de 5 mil",
+        "Cerca de 40 mil",
+        "Cerca de 100 mil"
+      ],
+      "answer": 0,
+      "fact": "A maior parte dessa água é a da chuva usada para crescer o pasto e a ração do animal."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a Nutella ganhou esse nome?",
+      "options": [
+        "1964",
+        "1946",
+        "1952",
+        "1958",
+        "1971",
+        "1978"
+      ],
+      "answer": 0,
+      "fact": "A Nutella descende de uma pasta de avelã criada em 1946 por Pietro Ferrero, quando o cacau estava escasso no pós-guerra."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas \"sementes\", em média, tem um morango?",
+      "options": [
+        "Cerca de 200",
+        "Cerca de 20",
+        "Cerca de 50",
+        "Cerca de 100",
+        "Cerca de 500",
+        "Cerca de 1.000"
+      ],
+      "answer": 0,
+      "fact": "Cada \"semente\" do morango é, na verdade, um pequeno fruto chamado aquênio."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano a pizza margherita teria sido criada em Nápoles, em homenagem à rainha?",
+      "options": [
+        "1889",
+        "1846",
+        "1861",
+        "1875",
+        "1901",
+        "1912"
+      ],
+      "answer": 0,
+      "fact": "A história conta que o pizzaiolo Raffaele Esposito preparou três pizzas para a rainha, e a favorita levou o nome dela."
+    }
+  ]
+}
