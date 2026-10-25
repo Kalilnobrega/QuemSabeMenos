@@ -233,6 +233,7 @@ class Game:
     powerup_max: int = powerups.MAX_HELD
     # Habilidades (ver powerups.py): guardadas, armadas para a próxima pergunta e valendo nesta.
     powerups: dict[str, list[PowerUp]] = field(default_factory=dict)
+    legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)  # ataques lendários guardados
     starting_powerups: dict[str, PowerUp] = field(default_factory=dict)
     armed: dict[str, PowerUpUse] = field(default_factory=dict)
     active: list[PowerUpUse] = field(default_factory=list)
@@ -276,11 +277,20 @@ class Game:
             self.powerups[pid] = [kind]
             self.starting_powerups[pid] = kind
 
-    def arm(self, player_id: str, kind: PowerUp, target: str | None, player_ids: list[str]) -> None:
+    def arm(
+        self, player_id: str, kind: PowerUp, target: str | None, player_ids: list[str], legendary: bool = False
+    ) -> None:
         if not self.can_arm:
             raise GameError("Agora não dá para usar habilidade.")
         if player_id in self.armed:
             raise GameError("Você já armou uma habilidade para a próxima pergunta.")
+        if legendary:
+            held = self.legendaries.get(player_id, [])
+            if kind not in held:
+                raise GameError("Você não tem essa habilidade.")
+            held.remove(kind)
+            self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None, legendary=True)
+            return
         held = self.powerups.get(player_id, [])
         if kind not in held:
             raise GameError("Você não tem essa habilidade.")
@@ -370,7 +380,9 @@ class Game:
         """A habilidade vale para o jogador nesta pergunta (como alvo, ou para si nas que não miram)."""
         if kind in powerups.LASTING:
             return self._counts_for_powers() and self.lasting.get(player_id, {}).get(kind, 0) > 0
-        return any((use.target or use.by) == player_id for use in self._uses(kind))
+        return any(
+            use.by != player_id if use.legendary else (use.target or use.by) == player_id for use in self._uses(kind)
+        )
 
     def _counts_for_powers(self) -> bool:
         """Pergunta comum, em que as habilidades valem (nem a aposta nem a final)."""
@@ -491,11 +503,17 @@ class Game:
             )
         by_id = {r.player_id: r for r in self.results}
         for use in self.active:
-            thief, target = by_id.get(use.by), by_id.get(use.target or "")
-            if use.kind != "steal" or not thief or not target:
+            thief = by_id.get(use.by)
+            if use.kind != "steal" or not thief:
                 continue
-            if not target.shielded:
-                share = powerups.STEAL_FIXED + max(0, int(target.delta * powerups.STEAL_GAIN_SHARE))
+            if use.legendary:
+                targets, fixed = [r for r in self.results if r is not thief], powerups.LEGENDARY_STEAL_FIXED
+            else:
+                targets, fixed = [by_id[use.target]] if use.target in by_id else [], powerups.STEAL_FIXED
+            for target in targets:
+                if target.shielded:
+                    continue
+                share = fixed + max(0, int(target.delta * powerups.STEAL_GAIN_SHARE))
                 thief.stolen += share
                 target.robbed += share
         for player, result in zip(players, self.results):
@@ -538,11 +556,18 @@ class Game:
             else:
                 continue
             held = self.powerups.setdefault(player.id, [])
-            if len(held) >= self.powerup_max:
+            legendaries = self.legendaries.setdefault(player.id, [])
+            if len(held) + len(legendaries) >= self.powerup_max:
                 continue  # com as mãos cheias, a sequência continua valendo para depois
-            kind = self.rng.choice(powerups.POWERUPS)
-            held.append(kind)
-            result.gained = PowerUpGain(kind=kind, reason=reason)
+            chance = powerups.LEGENDARY_TRAILING_CHANCE if player.id in behind else powerups.LEGENDARY_CHANCE
+            legendary = self.rng.random() < chance
+            if legendary:
+                kind = self.rng.choice(sorted(powerups.TARGETED))
+                legendaries.append(kind)
+            else:
+                kind = self.rng.choice(powerups.POWERUPS)
+                held.append(kind)
+            result.gained = PowerUpGain(kind=kind, reason=reason, legendary=legendary)
             if reason == "streak":
                 self.right_runs[player.id] = 0
             else:
@@ -607,6 +632,7 @@ class Game:
             bet_odds=BET_ODDS,
             bets_placed=list(self.bets),
             powerups=list(self.powerups.get(viewer, [])) if viewer else [],
+            legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
             powerup_max=self.powerup_max,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
             can_arm=self.can_arm,

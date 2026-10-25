@@ -98,7 +98,7 @@ interface Props {
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
   onBet: (amount: number) => Promise<string | null>
-  onArm: (kind: PowerUpUse['kind'], target: string | null) => Promise<string | null>
+  onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
@@ -597,7 +597,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   const question = game.question!
   const typing = game.phase === 'reading'
   // Poderes jogados em você (só até a revelação).
-  const hits = (kind: PowerUpUse['kind']) => game.phase !== 'results' && game.active.some((use) => use.kind === kind && use.target === playerId)
+  const hits = (kind: PowerUpUse['kind']) =>
+    game.phase !== 'results' && game.active.some((use) => use.kind === kind && (use.legendary ? use.by !== playerId : use.target === playerId))
   const silenced = hits('silence')
   const scrambled = hits('scramble')
   const fullText = scrambled ? scrambleWords(question.text, game.round) : question.text
@@ -814,10 +815,10 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
       <PowerUpBar powers={room.settings.mode === 'powers'} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
       {powerupLines.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Habilidades">
-          {powerupLines.map(({ key, kind, player, text, delta, me }, index) => (
+          {powerupLines.map(({ key, kind, player, text, delta, me, legendary }, index) => (
             <li
               key={key}
-              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${POWERUP_INFO[kind].tone} ${me ? 'ring-1 ring-brand/60' : ''}`}
+              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${legendary ? 'legendary' : POWERUP_INFO[kind].tone} ${me && !legendary ? 'ring-1 ring-brand/60' : ''}`}
               style={{ animationDelay: `${0.4 + index * 0.12}s` }}
             >
               {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
@@ -896,7 +897,8 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
 /** Linhas da revelação: escudos que seguraram, roubos e habilidades ganhas. */
 function powerupEvents(room: RoomState, game: GameView, playerId: string | null) {
   const who = (id: string | null) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
-  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean }[] = []
+  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean; legendary?: boolean }[] = []
+  const mine = game.results.find((r) => r.player_id === playerId)
   for (const result of game.results) {
     const player = room.players.find((p) => p.id === result.player_id)
     const me = result.player_id === playerId
@@ -914,7 +916,17 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       lines.push({ key: `${result.player_id}-shield`, kind: 'shield', player, text: `${who(result.player_id)}: o Escudo segurou ${result.shielded} de QI!`, delta: null, me })
     }
     const steal = game.active.find((use) => use.kind === 'steal' && use.by === result.player_id)
-    if (steal) {
+    if (steal?.legendary) {
+      lines.push({
+        key: `${result.player_id}-steal`,
+        kind: 'steal',
+        player,
+        text: result.stolen ? `${who(result.player_id)} roubou de todo mundo com o Roubo lendário!` : `${who(result.player_id)} não roubou nada com o Roubo lendário.`,
+        delta: result.stolen ? (me ? result.stolen : -(mine?.robbed ?? 0)) : null, // do ponto de vista de quem lê
+        me: true,
+        legendary: true,
+      })
+    } else if (steal) {
       const target = who(steal.target)
       if (steal.reflected_by) {
         lines.push({
@@ -936,7 +948,7 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       })
     }
     if (result.gained) {
-      lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me })
+      lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary })
     }
   }
   return lines

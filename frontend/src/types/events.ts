@@ -31,6 +31,7 @@ export interface ArmPowerUpRequest {
     | "silence"
     | "magnifier";
   target?: string | null;
+  legendary?: boolean;
 }
 /**
  * Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
@@ -118,6 +119,22 @@ export interface GameView {
     | "silence"
     | "magnifier"
   )[];
+  legendary_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+  )[];
   powerup_max: number;
   starting_powerup:
     | (
@@ -184,6 +201,7 @@ export interface PowerUpUse {
   by: string;
   target: string | null;
   reflected_by: string | null;
+  legendary?: boolean;
 }
 /**
  * Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
@@ -267,6 +285,7 @@ export interface PowerUpGain {
     | "silence"
     | "magnifier";
   reason: "start" | "streak" | "comeback";
+  legendary?: boolean;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema

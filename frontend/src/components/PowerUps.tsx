@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import { INSTANT, POWERUP_INFO, type Kind } from '../lib/powerups'
+import { INSTANT, LEGENDARY_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
 import type { GameView, PlayerView, PowerUpUse } from '../types/events'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
@@ -303,7 +303,8 @@ function clearedFraction(canvas: HTMLCanvasElement) {
 export function ActivePowerUps({ game, players, playerId }: { game: GameView; players: PlayerView[]; playerId: string | null }) {
   const name = (id: string | null) => (id === playerId ? 'você' : (players.find((p) => p.id === id)?.nickname ?? '?'))
   const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
-  const mine = (use: PowerUpUse) => use.by === playerId || use.target === playerId || use.reflected_by === playerId
+  // A lendária pega todo mundo: sempre é com você.
+  const mine = (use: PowerUpUse) => use.legendary || use.by === playerId || use.target === playerId || use.reflected_by === playerId
   const uses = [...game.active].sort((a, b) => Number(mine(b)) - Number(mine(a)))
   // As que duram mais de uma pergunta: o anúncio de quem usou só aparece na primeira.
   const later = game.lasting.filter((l) => !game.active.some((u) => u.kind === l.kind && u.by === playerId))
@@ -313,6 +314,10 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
     const by = name(use.by)
     const target = name(use.target)
     const info = POWERUP_INFO[use.kind]
+    if (use.legendary) {
+      if (use.kind === 'steal') return 'Roubo LENDÁRIO: você está de olho no QI de todo mundo!'
+      return by === 'você' ? `Você jogou ${info.name} LENDÁRIO em todo mundo!` : `${cap(by)} jogou ${info.name} LENDÁRIO em todo mundo, inclusive em você!`
+    }
     if (use.reflected_by && use.kind !== 'steal') {
       return `${cap(name(use.reflected_by))} devolveu ${info.name} com o Reverso: agora é ${by === 'você' ? 'em você' : `em ${by}`}!`
     }
@@ -348,9 +353,9 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
     <ul className="flex flex-col gap-1.5" aria-label="Habilidades valendo">
       {uses.map((use, index) => (
         <li
-          key={`${use.by}-${use.kind}-${use.target}`}
-          className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm font-semibold ${POWERUP_INFO[use.kind].tone} ${
-            mine(use) ? 'ring-1 ring-brand/60' : 'opacity-70'
+          key={`${use.by}-${use.kind}-${use.target}-${use.legendary}`}
+          className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm font-semibold ${
+            use.legendary ? 'legendary' : `${POWERUP_INFO[use.kind].tone} ${mine(use) ? 'ring-1 ring-brand/60' : 'opacity-70'}`
           }`}
           style={{ animationDelay: `${index * 0.1}s` }}
         >
@@ -409,13 +414,13 @@ interface BarProps {
   game: GameView
   players: PlayerView[]
   playerId: string | null
-  onArm: (kind: Kind, target: string | null) => Promise<string | null>
+  onArm: (kind: Kind, target: string | null, legendary?: boolean) => Promise<string | null>
   onSkip: () => Promise<string | null>
 }
 
 /** Na revelação: as suas habilidades (armar para a próxima pergunta) e o botão de pular. */
 export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: BarProps) {
-  const [selected, setSelected] = useState<Kind | null>(null)
+  const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [skipped, setSkipped] = useState(false)
   const connected = players.filter((p) => p.connected)
@@ -423,10 +428,10 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
   const isReady = skipped || (playerId !== null && game.ready.includes(playerId))
   const targets = players.filter((p) => p.id !== playerId)
 
-  const arm = async (kind: Kind, target: string | null) => {
+  const arm = async (kind: Kind, target: string | null, legendary = false) => {
     playSound('levelUp')
     setSelected(null)
-    setError(await onArm(kind, target))
+    setError(await onArm(kind, target, legendary))
   }
 
   const skip = async () => {
@@ -442,18 +447,43 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
   } else if (game.armed) {
     const info = POWERUP_INFO[game.armed.kind]
     const target = players.find((p) => p.id === game.armed?.target)
-    body = (
+    body = game.armed.legendary ? (
+      <p className="legendary flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold">
+        <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
+        {info.name} LENDÁRIO armado em todo mundo para a próxima!
+      </p>
+    ) : (
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
         {info.name} armado{target ? ` em ${target.nickname}` : ''} para a próxima!
       </p>
     )
-  } else if (selected) {
-    const info = POWERUP_INFO[selected]
+  } else if (selected?.legendary) {
+    const info = POWERUP_INFO[selected.kind]
     body = (
       <div className="flex flex-col gap-2">
         <p className="flex items-center gap-2 text-sm">
-          <PowerUpIcon kind={selected} className="size-6 shrink-0" />
+          <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
+          <span>
+            <span className="font-bold text-brand">{info.name} LENDÁRIO:</span> {info.hint} {LEGENDARY_HINT}
+          </span>
+        </p>
+        <div className="flex gap-2">
+          <button onClick={() => void arm(selected.kind, null, true)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
+            Jogar em todo mundo
+          </button>
+          <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    )
+  } else if (selected) {
+    const info = POWERUP_INFO[selected.kind]
+    body = (
+      <div className="flex flex-col gap-2">
+        <p className="flex items-center gap-2 text-sm">
+          <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
             <span className="font-bold">{info.name}:</span> {info.hint}
           </span>
@@ -465,7 +495,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
               {targets.map((p) => (
                 <button
                   key={p.id}
-                  onClick={() => void arm(selected, p.id)}
+                  onClick={() => void arm(selected.kind, p.id)}
                   className="btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl py-1 pr-3 pl-1 text-sm font-semibold"
                 >
                   <img src={AVATAR_URLS[p.avatar]} alt="" className="size-7" />
@@ -477,7 +507,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         ) : null}
         <div className="flex gap-2">
           {!info.targeted && (
-            <button onClick={() => void arm(selected, null)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
+            <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
               Usar na próxima
             </button>
           )}
@@ -487,7 +517,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         </div>
       </div>
     )
-  } else if (game.powerups.length === 0) {
+  } else if (game.powerups.length === 0 && game.legendary_powerups.length === 0) {
     body = <p className="text-sm text-steel">Sem habilidades. Acerte 3 seguidas para ganhar uma.</p>
   } else {
     body = (
@@ -512,7 +542,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
                 key={`${kind}-${index}`}
                 onClick={() => {
                   playSound('select')
-                  setSelected(kind)
+                  setSelected({ kind, legendary: false })
                 }}
                 disabled={!game.can_arm}
                 className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm ? '' : 'opacity-50'}`}
@@ -522,6 +552,23 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
               </button>
             ),
           )}
+          {game.legendary_powerups.map((kind, index) => (
+            <button
+              key={`legendary-${kind}-${index}`}
+              onClick={() => {
+                playSound('select')
+                setSelected({ kind, legendary: true })
+              }}
+              disabled={!game.can_arm}
+              className={`btn-3d btn-sm legendary legendary-pulse flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm ? '' : 'opacity-50'}`}
+            >
+              <PowerUpIcon kind={kind} className="size-6" />
+              <span className="flex flex-col text-left leading-tight">
+                {POWERUP_INFO[kind].name}
+                <span className="text-[0.65rem] font-bold tracking-wide uppercase">Lendário</span>
+              </span>
+            </button>
+          ))}
         </div>
         <p className="text-xs text-steel">{game.can_arm ? 'Toque para usar na próxima pergunta.' : 'Habilidades não valem na aposta nem na final.'}</p>
       </div>

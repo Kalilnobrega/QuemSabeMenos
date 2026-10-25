@@ -316,10 +316,10 @@ class RoomManager:
             raise RoomError(str(e)) from e
         return room
 
-    def arm_powerup(self, sid: str, kind: PowerUp, target: str | None) -> Room:
+    def arm_powerup(self, sid: str, kind: PowerUp, target: str | None, legendary: bool = False) -> Room:
         room, player = self._playing(sid)
         try:
-            room.game.arm(player.id, kind, target, [p.id for p in room.players])
+            room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary)
         except GameError as e:
             raise RoomError(str(e)) from e
         return room

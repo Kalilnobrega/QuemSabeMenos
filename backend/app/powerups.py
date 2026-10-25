@@ -9,6 +9,9 @@ As que chegam ao fim sem uso quebram. Fora da aposta e da pergunta final.
 Cada um ganha uma sorteada no início e outra a cada 3 acertos seguidos (qualquer nível). O
 lanterna, se estiver muito atrás dos primeiros, ganha uma a cada 3 rodadas seguidas em último.
 Dá para guardar no máximo 2 (o anfitrião pode mudar para 1 ou 3); ganhar com as mãos cheias não dá nada.
+
+Cada habilidade ganha na partida tem uma chance pequena de vir como um ataque lendário (maior para o
+lanterna): vale em todos os outros jogadores de uma vez e o Reverso não segura.
 """
 
 import random
@@ -43,8 +46,12 @@ BREAKABLE: frozenset[PowerUp] = frozenset({"shield", "second_chance", "reverse"}
 MAX_HELD = 2
 STREAK_FOR_POWERUP = 3
 COMEBACK_ROUNDS = 3
-# Distância até o 2º colocado (até o 1º, com 2 jogadores) para o último ganhar habilidade.
-COMEBACK_GAP = 30
+# Distância até o 2º colocado (até o 1º, com 2 jogadores) para o último ganhar habilidade
+# (e ter mais chance de lendária).
+COMEBACK_GAP = 20
+LEGENDARY_CHANCE = 0.05
+LEGENDARY_TRAILING_CHANCE = 0.20
+LEGENDARY_STEAL_FIXED = 5  # o Roubo lendário tira menos de cada um
 FIFTY_FIFTY_REMOVES = 2
 # Roubo: o ladrão leva 10 fixos e, se o alvo acertar, mais metade do que ele ganhar; tudo sai do
 # alvo. O Escudo que segura o erro do alvo bloqueia o roubo.
@@ -69,7 +76,7 @@ def fifty_fifty(options: int, answer: int, rng: random.Random) -> list[int]:
 
 def reflect(uses: list[PowerUpUse], reversers: set[str]) -> list[PowerUpUse]:
     """Aplica o Reverso: a sabotagem volta para quem jogou (uma volta só, sem pingue-pongue).
-    No roubo, quem rebateu passa a roubar quem tentou roubar."""
+    No roubo, quem rebateu passa a roubar quem tentou roubar. A lendária (sem alvo) não volta."""
     result = []
     for use in uses:
         if use.kind in TARGETED and use.target in reversers:

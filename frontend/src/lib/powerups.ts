@@ -29,8 +29,11 @@ const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
 }
 
 export function gainLabel(gain: PowerUpGain) {
-  return `ganhou ${POWERUP_INFO[gain.kind].name} (${GAIN_REASON[gain.reason]})!`
+  const name = gain.legendary ? `${POWERUP_INFO[gain.kind].name} LENDÁRIO` : POWERUP_INFO[gain.kind].name
+  return `ganhou ${name} (${GAIN_REASON[gain.reason]})!`
 }
+
+export const LEGENDARY_HINT = 'Lendário: vale em todos os outros jogadores de uma vez, e o Reverso não segura.'
 
 /** Embaralhar: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */
 export function scrambleWords(text: string, seed: number) {

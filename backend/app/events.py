@@ -78,6 +78,7 @@ class ArmPowerUpRequest(BaseModel):
 
     kind: PowerUp
     target: str | None = None
+    legendary: bool = False  # a versão lendária de um ataque: vale em todos os outros, sem alvo
 
 
 class UsePowerUpRequest(BaseModel):
@@ -135,6 +136,7 @@ class PowerUpUse(BaseModel):
     by: str  # id de quem usou (no roubo rebatido, quem rebateu e agora rouba)
     target: str | None  # id do alvo; None nas que valem para quem usou
     reflected_by: str | None  # quem devolveu com o Reverso (o alvo original)
+    legendary: bool = False  # ataque lendário: pega todos menos quem jogou (target None)
 
 
 class LastingPowerUp(BaseModel):
@@ -148,6 +150,7 @@ class LastingPowerUp(BaseModel):
 class PowerUpGain(BaseModel):
     kind: PowerUp
     reason: Literal["start", "streak", "comeback"]  # sorteio inicial, acertos seguidos ou lanterna
+    legendary: bool = False
 
 
 class RoundResult(BaseModel):
@@ -190,6 +193,7 @@ class GameView(BaseModel):
     bet_odds: float  # quanto a aposta paga se acertar (odd decimal: 1.5 = apostou 100, lucra 50)
     bets_placed: list[str]  # ids de quem já apostou; os valores só aparecem em results
     powerups: list[PowerUp]  # as suas habilidades guardadas
+    legendary_powerups: list[PowerUp]  # os seus ataques lendários guardados (contam no máximo)
     powerup_max: int
     starting_powerup: PowerUp | None  # a sua habilidade sorteada no início
     can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)

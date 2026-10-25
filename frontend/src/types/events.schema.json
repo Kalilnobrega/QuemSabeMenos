@@ -32,6 +32,10 @@
             }
           ],
           "default": null
+        },
+        "legendary": {
+          "default": false,
+          "type": "boolean"
         }
       },
       "required": [
@@ -230,6 +234,28 @@
           },
           "type": "array"
         },
+        "legendary_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
         "powerup_max": {
           "type": "integer"
         },
@@ -368,6 +394,7 @@
         "bet_odds",
         "bets_placed",
         "powerups",
+        "legendary_powerups",
         "powerup_max",
         "starting_powerup",
         "can_arm",
@@ -599,6 +626,10 @@
             "comeback"
           ],
           "type": "string"
+        },
+        "legendary": {
+          "default": false,
+          "type": "boolean"
         }
       },
       "required": [
@@ -651,6 +682,10 @@
               "type": "null"
             }
           ]
+        },
+        "legendary": {
+          "default": false,
+          "type": "boolean"
         }
       },
       "required": [

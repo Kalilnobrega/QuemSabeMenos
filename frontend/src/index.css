@@ -177,7 +177,18 @@ body {
   0%, 100% { transform: rotate(4deg) scale(1); }
   50% { transform: rotate(18deg) scale(1.1); }
 }
+/* Ataque lendário: dourado nos avisos; na barra de habilidades também pulsa (legendary-pulse). */
+.legendary {
+  background-image: linear-gradient(135deg, #3b2a05, #6b4700 50%, #3b2a05);
+  color: #ffe082;
+  box-shadow: 0 0 0 2px #ffc107, 0 0 10px rgba(255, 193, 7, 0.5);
+}
+.legendary-pulse { animation: legendary-glow 1.4s ease-in-out infinite alternate; }
+@keyframes legendary-glow {
+  from { box-shadow: 0 0 0 2px #ffc107, 0 0 6px rgba(255, 193, 7, 0.35); }
+  to { box-shadow: 0 0 0 2px #ffe082, 0 0 18px rgba(255, 193, 7, 0.8); }
+}
 @media (prefers-reduced-motion: reduce) {
-  .settings-sheet, .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble { animation: none; }
+  .settings-sheet, .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble, .legendary-pulse { animation: none; }
   .confetti { display: none; }
 }

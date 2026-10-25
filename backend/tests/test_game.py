@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 import pytest
 
+from app.events import PowerUpGain
 from app.game import (
     MAX_READING_SECONDS,
     MAX_RESULTS_SECONDS,
@@ -471,7 +472,8 @@ def test_three_right_in_a_row_earns_a_powerup_up_to_two():
         play(game, [ana], {"ana": 0})
         gains.append(game.results[0].gained)
     assert [g is not None for g in gains] == [False, False, True, False, False, True, False]
-    assert gains[2].reason == "streak" and len(game.powerups["ana"]) == 2  # cheio: o 3º não vem
+    assert gains[2].reason == "streak"
+    assert len(game.powerups["ana"]) + len(game.legendaries["ana"]) == 2  # cheio: o 3º não vem
 
 
 def test_far_behind_last_place_earns_a_powerup_every_three_rounds():
@@ -489,8 +491,79 @@ def test_trailing_needs_a_big_gap_to_the_top_two():
     from app.powerups import trailing
 
     assert trailing([P("a", 100), P("b", 90), P("c", 50)]) == {"c"}
-    assert trailing([P("a", 100), P("b", 60), P("c", 40)]) == set()  # perto do 2º
+    assert trailing([P("a", 100), P("b", 60), P("c", 40)]) == {"c"}  # 20 atrás já conta
+    assert trailing([P("a", 100), P("b", 55), P("c", 40)]) == set()  # perto do 2º
     assert trailing([P("a", 100), P("b", 40)]) == {"b"}  # com 2, compara com o 1º
+
+
+class LuckyRng(random.Random):
+    """Sempre tira a lendária (random() = 0) e a primeira opção de cada sorteio."""
+
+    def random(self) -> float:
+        return 0.0
+
+    def choice(self, seq):
+        return seq[0]
+
+
+def test_gains_can_be_legendary_attacks_more_often_for_the_far_behind_last():
+    game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=LuckyRng())
+    ana, bia, caio = P("ana", 100), P("bia", 80), P("caio", 0)
+    game.powerups = {"ana": [], "bia": [], "caio": []}
+    for _ in range(3):
+        play(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 1})
+    gains = {r.player_id: r.gained for r in game.results}
+    assert gains["ana"] == PowerUpGain(kind="accelerator", reason="streak", legendary=True)
+    assert gains["caio"] == PowerUpGain(kind="accelerator", reason="comeback", legendary=True)
+    assert game.legendaries["ana"] == ["accelerator"] and game.powerups["ana"] == []
+    assert game.view(now=0, viewer="ana").legendary_powerups == ["accelerator"]
+
+    class Unlucky(LuckyRng):
+        def __init__(self, roll: float) -> None:
+            super().__init__()
+            self.roll = roll
+
+        def random(self) -> float:
+            return self.roll
+
+    for roll, behind, legendary in ((0.1, False, False), (0.1, True, True), (0.04, False, True)):
+        game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=Unlucky(roll))
+        ana, bia = P("ana", 0 if behind else 100), P("bia", 100 if behind else 0)
+        game.powerups = {"ana": [], "bia": []}
+        for _ in range(3):
+            play(game, [ana, bia], {"ana": 0, "bia": 1})
+        assert game.results[0].gained.legendary is legendary
+
+
+def test_legendary_attack_hits_everyone_else_and_ignores_the_reverse():
+    game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10)
+    ana, bia, caio = P("ana", 50), P("bia", 50), P("caio", 50)
+    game.powerups = {"ana": [], "bia": ["reverse"], "caio": []}
+    game.legendaries = {"ana": ["mirror"]}
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 1, "caio": 0})  # bia fora do 1º: Reverso de 3
+    with pytest.raises(GameError, match="não tem"):
+        game.arm("ana", "scratch", None, ["ana", "bia", "caio"], legendary=True)
+    game.arm("ana", "mirror", None, ["ana", "bia", "caio"], legendary=True)
+    game.arm("bia", "reverse", None, ["ana", "bia", "caio"])
+    assert game.legendaries["ana"] == []
+    game.start_round(now=0)
+    assert [(u.kind, u.target, u.legendary) for u in game.active if u.kind == "mirror"] == [("mirror", None, True)]
+    assert game._affects("mirror", "bia") and game._affects("mirror", "caio") and not game._affects("mirror", "ana")
+    assert game.lasting["bia"]["reverse"] == 3  # não segurou: continua guardado
+
+
+def test_legendary_steal_takes_five_plus_half_from_each():
+    game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10)
+    ana, bia, caio = P("ana", 50), P("bia", 50), P("caio", 50)
+    game.powerups = {"ana": [], "bia": [], "caio": ["shield"]}
+    game.legendaries = {"ana": ["steal"]}
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 0})
+    game.arm("ana", "steal", None, ["ana", "bia", "caio"], legendary=True)
+    game.arm("caio", "shield", None, ["ana", "bia", "caio"])
+    reveal(game, [ana, bia, caio], {"ana": 1, "bia": 0, "caio": 1})  # bia acerta +11; caio erra com escudo
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["bia"].robbed == 5 + 5 and by_id["caio"].robbed == 0
+    assert by_id["ana"].stolen == 10
 
 
 def test_everyone_ready_skips_the_reveal():
@@ -521,7 +594,7 @@ def test_the_host_can_change_how_many_powerups_fit():
     game.powerups = {"ana": []}
     for _ in range(9):
         play(game, [ana], {"ana": 0})
-    assert len(game.powerups["ana"]) == 3
+    assert len(game.powerups["ana"]) + len(game.legendaries["ana"]) == 3
     assert game.view(now=0, viewer="ana").powerup_max == 3
 
 
