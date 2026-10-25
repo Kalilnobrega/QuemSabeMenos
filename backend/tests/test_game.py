@@ -606,27 +606,32 @@ def test_extra_time_gives_more_time_for_three_common_questions():
     assert game.answer_window("ana") == 10  # acabou
 
 
-def test_accelerator_halves_the_time_and_removes_full_iq():
+def test_accelerator_cuts_the_time_to_a_third_and_removes_full_iq():
     game, ana, bia = armed_game(2)
     arm(game, "ana", "accelerator", "bia")
     game.start_round(now=0)
     game.open_answers(now=0)
-    assert game.answer_window("bia") == 5 and game.grace_window("bia") == 0
-    assert game.view(now=0, viewer="bia").phase_ends_in_ms == 5000
+    assert game.answer_window("bia") == pytest.approx(10 / 3) and game.grace_window("bia") == 0
+    assert game.view(now=0, viewer="bia").phase_ends_in_ms == pytest.approx(3333, abs=1)
     assert game.view(now=0, viewer="ana").phase_ends_in_ms == 10000
-    game.answer("bia", 0, now=2.5)
+    game.answer("bia", 0, now=10 / 6)
     game.close_round([ana, bia], now=20)
     assert {r.player_id: r.delta for r in game.results}["bia"] == 8  # metade do tempo: 5 + 6 × 0,5
 
 
-def test_silence_hides_who_answered():
+def test_silence_hides_who_answered_and_removes_full_iq():
     game, ana, bia = armed_game(2)
     arm(game, "ana", "silence", "bia")
     game.start_round(now=0)
     game.open_answers(now=0)
+    assert game.grace_window("bia") == 0 and game.grace_window("ana") == game.speed_grace_seconds
     game.answer("ana", 0, now=1)
     assert game.view(now=1, viewer="bia").answered == []
     assert game.view(now=1, viewer="ana").answered == ["ana"]
+    game.answer("bia", 0, now=1)
+    game.close_round([ana, bia], now=20)
+    deltas = {r.player_id: r.delta for r in game.results}
+    assert deltas["ana"] > deltas["bia"]
 
 
 def test_reverse_sends_sabotage_back_once():

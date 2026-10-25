@@ -599,7 +599,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   // Poderes jogados em você (só até a revelação).
   const hits = (kind: PowerUpUse['kind']) => game.phase !== 'results' && game.active.some((use) => use.kind === kind && use.target === playerId)
   const silenced = hits('silence')
-  const fullText = hits('scramble') ? scrambleWords(question.text, game.round) : question.text
+  const scrambled = hits('scramble')
+  const fullText = scrambled ? scrambleWords(question.text, game.round) : question.text
   const text = typing ? fullText.slice(0, Math.ceil(fullText.length * progress)) : fullText
   const mirrored = hits('mirror') ? '-scale-x-100' : ''
   // Segunda chance: a primeira escolha errada não encerra a sua resposta.
@@ -730,7 +731,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
                 className={`round-option btn-3d btn-sm relative flex min-h-14 w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
               >
                 <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
-                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{option}</span>
+                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
                 {game.peek && !showResults && <PeekBadge count={game.peek[index]} />}
                 {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
               </button>

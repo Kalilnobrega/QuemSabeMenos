@@ -15,11 +15,11 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   reverse: { name: 'Reverso', hint: 'Vale por até 2 perguntas: o primeiro poder jogado em você volta para quem jogou.', targeted: false, tone: 'bg-red-500/15 text-red-200' },
   scratch: { name: 'Raspadinha', hint: 'A próxima pergunta do alvo vem coberta: tem que raspar para ver.', targeted: true, tone: 'bg-zinc-300/15 text-zinc-200' },
   steal: { name: 'Roubo', hint: 'Na próxima, se o alvo errar, você leva todo o QI que ele perder; se acertar, metade do que ganhar.', targeted: true, tone: 'bg-emerald-500/15 text-emerald-200' },
-  scramble: { name: 'Letrinha', hint: 'A pergunta do alvo vem com as letras embaralhadas dentro das palavras.', targeted: true, tone: 'bg-fuchsia-400/15 text-fuchsia-200' },
-  accelerator: { name: 'Acelerador', hint: 'O alvo tem metade do tempo para responder e fica sem QI cheio.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
+  scramble: { name: 'Embaralhar', hint: 'A pergunta e as alternativas do alvo vêm com as letras embaralhadas dentro das palavras.', targeted: true, tone: 'bg-fuchsia-400/15 text-fuchsia-200' },
+  accelerator: { name: 'Acelerador', hint: 'O alvo tem um terço do tempo para responder e fica sem QI cheio.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
   mirror: { name: 'Espelho', hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.', targeted: true, tone: 'bg-cyan-400/15 text-cyan-200' },
   magnifier: { name: 'Lupa', hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.', targeted: true, tone: 'bg-yellow-200/15 text-yellow-100' },
-  silence: { name: 'Silêncio', hint: 'O alvo não vê o tempo nem quantos já responderam.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
+  silence: { name: 'Silêncio', hint: 'O alvo não vê o tempo nem quantos já responderam, e fica sem QI cheio.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
 const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
@@ -32,7 +32,7 @@ export function gainLabel(gain: PowerUpGain) {
   return `ganhou ${POWERUP_INFO[gain.kind].name} (${GAIN_REASON[gain.reason]})!`
 }
 
-/** Letrinha: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */
+/** Embaralhar: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */
 export function scrambleWords(text: string, seed: number) {
   let state = seed * 9301 + 49297
   const random = () => {

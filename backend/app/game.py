@@ -381,7 +381,7 @@ class Game:
         return seconds
 
     def grace_window(self, player_id: str) -> float:
-        if self._affects("accelerator", player_id):
+        if self._affects("accelerator", player_id) or self._affects("silence", player_id):
             return 0.0
         grace = self.speed_grace_seconds
         if player_id in self._extra_time_ids():

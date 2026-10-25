@@ -21,9 +21,10 @@ from app.events import PowerUp, PowerUpUse
 #   e mais QI cheio por 3 perguntas. Segunda chance: errou, tenta de novo valendo metade.
 #   Reverso (a carta do Uno): a sabotagem que mirar você volta para quem jogou.
 # Contra outro jogador:
-#   Raspadinha: pergunta e alternativas cobertas. Roubo: leva o QI do alvo (surpresa).
-#   Letrinha: letras embaralhadas dentro das palavras. Acelerador: metade do tempo e sem QI cheio.
-#   Espelho: a pergunta aparece espelhada. Silêncio: sem cronômetro e sem saber quem respondeu.
+#   Raspadinha: pergunta e alternativas cobertas. Roubo: leva QI do alvo (surpresa).
+#   Embaralhar: letras embaralhadas dentro das palavras da pergunta e das alternativas.
+#   Acelerador: um terço do tempo e sem QI cheio. Espelho: a pergunta aparece espelhada.
+#   Silêncio: sem cronômetro, sem saber quem respondeu e sem QI cheio.
 #   Lupa: pergunta e alternativas borradas; só dá para ler arrastando uma lupa por cima.
 POWERUPS: tuple[PowerUp, ...] = (
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
@@ -51,7 +52,7 @@ DOUBLE_FACTOR = 2
 SECOND_CHANCE_SHARE = 0.5
 EXTRA_SECONDS = 5.0
 EXTRA_GRACE_SECONDS = 2.0
-ACCELERATOR_FACTOR = 0.5  # e o QI cheio vai a zero
+ACCELERATOR_FACTOR = 1 / 3  # e o QI cheio vai a zero (no Silêncio também)
 
 
 class Ranked(Protocol):

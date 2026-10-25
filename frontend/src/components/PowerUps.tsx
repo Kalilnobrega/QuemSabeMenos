@@ -140,8 +140,8 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   )
 }
 
-const SCRATCH_RADIUS = 22
-const SCRATCH_REVEAL = 0.55 // fração raspada que tira a cobertura
+const SCRATCH_RADIUS = 12
+const SCRATCH_REVEAL = 0.9 // fração raspada que tira a cobertura
 
 /** Cobertura prateada da raspadinha: some quando o jogador raspa a maior parte (e trava os toques até lá). */
 export function ScratchCard({ active, className = '', children }: { active: boolean; className?: string; children: ReactNode }) {
@@ -223,7 +223,7 @@ export function ScratchCard({ active, className = '', children }: { active: bool
   )
 }
 
-const LENS = 124 // diâmetro da lupa, em px
+const LENS = 96 // diâmetro da lupa, em px
 
 /**
  * Lupa: tudo dentro fica borrado (impossível de ler), menos o círculo da lupa. A lupa é arrastada
@@ -254,7 +254,7 @@ export function Magnifier({ active, children }: { active: boolean; children: Rea
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 z-20"
-            style={{ backdropFilter: 'blur(7px)', WebkitBackdropFilter: 'blur(7px)', maskImage: hole, WebkitMaskImage: hole }}
+            style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', maskImage: hole, WebkitMaskImage: hole }}
           />
           <div
             aria-hidden="true"
@@ -333,11 +333,11 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
     if (use.target === playerId) {
       const hit: Partial<Record<Kind, string>> = {
         scratch: 'jogou Raspadinha em você! Raspe para ver.',
-        scramble: 'jogou Letrinha em você! Boa leitura.',
-        accelerator: 'jogou Acelerador em você: metade do tempo e sem QI cheio!',
+        scramble: 'jogou Embaralhar em você! Boa leitura.',
+        accelerator: 'jogou Acelerador em você: um terço do tempo e sem QI cheio!',
         mirror: 'jogou Espelho em você!',
         magnifier: 'jogou Lupa em você! Arraste a lupa pelo cabo para ler.',
-        silence: 'jogou Silêncio em você: sem relógio, sem saber quem respondeu.',
+        silence: 'jogou Silêncio em você: sem relógio, sem saber quem respondeu e sem QI cheio.',
       }
       return `${cap(by)} ${hit[use.kind]}`
     }
