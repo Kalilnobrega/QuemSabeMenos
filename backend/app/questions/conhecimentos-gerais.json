@@ -2904,6 +2904,1214 @@
       ],
       "answer": 0,
       "fact": "Em Portugal é diferente: lá, um \"bilião\" vale um milhão de milhões, com 12 zeros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o mês de abril?",
+      "options": [
+        "30",
+        "31",
+        "28",
+        "29"
+      ],
+      "answer": 0,
+      "fact": "Abril, junho, setembro e novembro têm 30 dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é a metade de 250?",
+      "options": [
+        "125",
+        "150",
+        "100",
+        "120"
+      ],
+      "answer": 0,
+      "fact": "E o dobro de 250 é 500."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos tem um minuto?",
+      "options": [
+        "60",
+        "100",
+        "30",
+        "120"
+      ],
+      "answer": 0,
+      "fact": "A divisão em 60 vem dos antigos babilônios, que contavam em grupos de 60."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas faces tem um cubo?",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "O dado comum é um cubo, com uma face para cada número de 1 a 6."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas palavras é o contrário de \"corajoso\"?",
+      "options": [
+        "Medroso",
+        "Valente",
+        "Forte",
+        "Ousado"
+      ],
+      "answer": 0,
+      "fact": "\"Valente\" e \"ousado\" são sinônimos de corajoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas são as estações do ano?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, a primavera começa em setembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O trevinho preto representa qual naipe do baralho?",
+      "options": [
+        "Paus",
+        "Espadas",
+        "Ouros",
+        "Copas"
+      ],
+      "answer": 0,
+      "fact": "Os outros naipes são copas, espadas e ouros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos milímetros tem um centímetro?",
+      "options": [
+        "10",
+        "100",
+        "1.000",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "E um metro tem 1.000 milímetros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal canta \"cocoricó\" logo de manhã?",
+      "options": [
+        "Galo",
+        "Pato",
+        "Peru",
+        "Ganso"
+      ],
+      "answer": 0,
+      "fact": "O galo canta antes de o Sol nascer, guiado pelo seu relógio biológico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que especialista cuida da saúde dos olhos?",
+      "options": [
+        "Oftalmologista",
+        "Otorrinolaringologista",
+        "Dermatologista",
+        "Ortopedista"
+      ],
+      "answer": 0,
+      "fact": "O otorrino cuida de ouvido, nariz e garganta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que meio de transporte anda sobre trilhos e tem vagões?",
+      "options": [
+        "Trem",
+        "Ônibus",
+        "Navio",
+        "Avião"
+      ],
+      "answer": 0,
+      "fact": "O metrô também anda sobre trilhos, só que dentro das cidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual número completa a sequência 2, 4, 6, __, 10?",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "São os números pares, que pulam de 2 em 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas palavras é um verbo?",
+      "options": [
+        "Correr",
+        "Mesa",
+        "Azul",
+        "Rápido"
+      ],
+      "answer": 0,
+      "fact": "Verbos indicam ação, estado ou fenômeno, como correr, ser e chover."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o aumentativo de \"casa\"?",
+      "options": [
+        "Casarão",
+        "Casinha",
+        "Casebre",
+        "Casario"
+      ],
+      "answer": 0,
+      "fact": "Casinha é o diminutivo, e casebre é uma casa pobre e pequena."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que sinal de pontuação mostra surpresa ou espanto?",
+      "options": [
+        "Ponto de exclamação",
+        "Ponto final",
+        "Vírgula",
+        "Dois-pontos"
+      ],
+      "answer": 0,
+      "fact": "Em espanhol, ele também aparece de cabeça para baixo no começo da frase: ¡Hola!"
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia é comemorado o Dia da Mentira?",
+      "options": [
+        "1º de abril",
+        "1º de janeiro",
+        "31 de outubro",
+        "29 de fevereiro"
+      ],
+      "answer": 0,
+      "fact": "Em vários países, a data é celebrada com pegadinhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que animal vem a lã mais usada em roupas?",
+      "options": [
+        "Ovelha",
+        "Vaca",
+        "Galinha",
+        "Porco"
+      ],
+      "answer": 0,
+      "fact": "A lã é cortada sem machucar o animal e volta a crescer."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos tem uma dúzia e meia?",
+      "options": [
+        "18",
+        "15",
+        "12",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "Uma dúzia tem 12 itens, e meia dúzia, 6."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o triplo de 15?",
+      "options": [
+        "45",
+        "30",
+        "60",
+        "35"
+      ],
+      "answer": 0,
+      "fact": "O triplo é o número multiplicado por 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ave branca é símbolo da paz?",
+      "options": [
+        "Pomba",
+        "Gaivota",
+        "Garça",
+        "Cisne"
+      ],
+      "answer": 0,
+      "fact": "A pomba da paz ficou famosa com um desenho de Picasso, de 1949."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que flor amarela, quando jovem, vira acompanhando o Sol?",
+      "options": [
+        "Girassol",
+        "Margarida",
+        "Rosa",
+        "Orquídea"
+      ],
+      "answer": 0,
+      "fact": "As flores adultas param de girar e ficam viradas para o leste."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cor costuma simbolizar a esperança?",
+      "options": [
+        "Verde",
+        "Preto",
+        "Roxo",
+        "Cinza"
+      ],
+      "answer": 0,
+      "fact": "O branco, por sua vez, simboliza a paz."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que arma o Cupido carrega para fazer as pessoas se apaixonarem?",
+      "options": [
+        "Arco e flecha",
+        "Espada",
+        "Lança",
+        "Estilingue"
+      ],
+      "answer": 0,
+      "fact": "Cupido é o deus romano do amor, filho da deusa Vênus."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número o V romano representa?",
+      "options": [
+        "5",
+        "10",
+        "50",
+        "500"
+      ],
+      "answer": 0,
+      "fact": "O I vale 1, o V vale 5 e o X vale 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem um quilômetro?",
+      "options": [
+        "1.000",
+        "100",
+        "10.000",
+        "500"
+      ],
+      "answer": 0,
+      "fact": "\"Quilo\" quer dizer mil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o feminino de \"imperador\"?",
+      "options": [
+        "Imperatriz",
+        "Imperadora",
+        "Rainha",
+        "Princesa"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, a última imperatriz foi Teresa Cristina, mulher de D. Pedro II."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o plural de \"animal\"?",
+      "options": [
+        "Animais",
+        "Animales",
+        "Animals",
+        "Animaes"
+      ],
+      "answer": 0,
+      "fact": "Palavras terminadas em \"al\" costumam trocar o \"l\" por \"is\" no plural."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Meio século equivale a quantos anos?",
+      "options": [
+        "50",
+        "25",
+        "100",
+        "500"
+      ],
+      "answer": 0,
+      "fact": "Um século tem 100 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que significa levantar uma bandeira branca?",
+      "options": [
+        "Rendição ou trégua",
+        "Vitória",
+        "Declaração de guerra",
+        "Pedido de comida"
+      ],
+      "answer": 0,
+      "fact": "O costume é usado em guerras desde a Antiguidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "No semáforo, o que a luz amarela indica?",
+      "options": [
+        "Atenção: o sinal vai fechar",
+        "Pode acelerar",
+        "Pare imediatamente",
+        "Pedestres podem passar"
+      ],
+      "answer": 0,
+      "fact": "O primeiro semáforo elétrico foi instalado nos Estados Unidos, em 1914."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Segundo o ditado, que animal \"nunca esquece\"?",
+      "options": [
+        "Elefante",
+        "Cachorro",
+        "Papagaio",
+        "Gato"
+      ],
+      "answer": 0,
+      "fact": "Elefantes reconhecem companheiros mesmo depois de anos separados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Na fábula, quem trabalha o verão inteiro enquanto a cigarra só canta?",
+      "options": [
+        "A formiga",
+        "A abelha",
+        "O grilo",
+        "A joaninha"
+      ],
+      "answer": 0,
+      "fact": "A fábula é atribuída a Esopo, contador de histórias da Grécia antiga."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o coletivo de soldados?",
+      "options": [
+        "Tropa",
+        "Matilha",
+        "Cardume",
+        "Alcateia"
+      ],
+      "answer": 0,
+      "fact": "Matilha é de cães, cardume é de peixes e alcateia é de lobos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o formato da placa de trânsito \"PARE\"?",
+      "options": [
+        "Octógono",
+        "Triângulo",
+        "Círculo",
+        "Quadrado"
+      ],
+      "answer": 0,
+      "fact": "É a única placa com oito lados, para ser reconhecida até de costas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na frase \"O gato preto dormiu\", que classe de palavra é \"preto\"?",
+      "options": [
+        "Adjetivo",
+        "Verbo",
+        "Substantivo",
+        "Advérbio"
+      ],
+      "answer": 0,
+      "fact": "Adjetivos dão uma característica ao substantivo, que aqui é \"gato\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que peça do xadrez só anda na diagonal?",
+      "options": [
+        "Bispo",
+        "Torre",
+        "Rei",
+        "Peão"
+      ],
+      "answer": 0,
+      "fact": "Cada jogador começa com dois bispos: um nas casas claras e outro nas escuras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que instrumento escolar serve para medir ângulos?",
+      "options": [
+        "Transferidor",
+        "Compasso",
+        "Esquadro",
+        "Régua"
+      ],
+      "answer": 0,
+      "fact": "O compasso serve para desenhar círculos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 2 elevado ao cubo (2³)?",
+      "options": [
+        "8",
+        "6",
+        "9",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "É o mesmo que 2 × 2 × 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Botanicamente, qual destes é um fruto?",
+      "options": [
+        "Tomate",
+        "Cenoura",
+        "Batata",
+        "Alface"
+      ],
+      "answer": 0,
+      "fact": "Fruto é o que nasce da flor e guarda as sementes, como o tomate."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ave é o símbolo nacional dos Estados Unidos?",
+      "options": [
+        "Águia-careca",
+        "Peru",
+        "Falcão",
+        "Condor"
+      ],
+      "answer": 0,
+      "fact": "Benjamin Franklin teria preferido o peru como símbolo, segundo uma carta famosa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em algarismos romanos, que letra vale 1.000?",
+      "options": [
+        "M",
+        "D",
+        "C",
+        "K"
+      ],
+      "answer": 0,
+      "fact": "O D vale 500, e o C vale 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o antônimo de \"prolixo\"?",
+      "options": [
+        "Conciso",
+        "Demorado",
+        "Confuso",
+        "Repetitivo"
+      ],
+      "answer": 0,
+      "fact": "Prolixo é quem fala ou escreve demais, dando voltas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o sinônimo de \"perspicaz\"?",
+      "options": [
+        "Sagaz",
+        "Distraído",
+        "Lento",
+        "Ingênuo"
+      ],
+      "answer": 0,
+      "fact": "Perspicaz é quem percebe as coisas com rapidez e esperteza."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a medida de 1.000 quilos?",
+      "options": [
+        "Tonelada",
+        "Arroba",
+        "Quintal",
+        "Megagrama"
+      ],
+      "answer": 0,
+      "fact": "A arroba, usada para pesar gado, tem 15 quilos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deusa grega da sabedoria deu nome à capital da Grécia?",
+      "options": [
+        "Atena",
+        "Afrodite",
+        "Hera",
+        "Ártemis"
+      ],
+      "answer": 0,
+      "fact": "Na lenda, ela venceu Poseidon na disputa para ser a protetora da cidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que deus romano corresponde a Zeus, o rei dos deuses?",
+      "options": [
+        "Júpiter",
+        "Marte",
+        "Netuno",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "O maior planeta do Sistema Solar leva o nome dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na mitologia nórdica, qual deus é o pai de Thor?",
+      "options": [
+        "Odin",
+        "Loki",
+        "Freyr",
+        "Tyr"
+      ],
+      "answer": 0,
+      "fact": "Odin trocou um dos olhos por um gole da fonte da sabedoria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que ave mitológica morre em chamas e renasce das próprias cinzas?",
+      "options": [
+        "Fênix",
+        "Grifo",
+        "Harpia",
+        "Pégaso"
+      ],
+      "answer": 0,
+      "fact": "Por isso a fênix virou símbolo de recomeço."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na mitologia grega, quem abriu a caixa que soltou os males do mundo?",
+      "options": [
+        "Pandora",
+        "Medusa",
+        "Helena",
+        "Afrodite"
+      ],
+      "answer": 0,
+      "fact": "No fundo da caixa só ficou a esperança."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que monstro da mitologia grega tinha corpo de homem e cabeça de touro?",
+      "options": [
+        "Minotauro",
+        "Centauro",
+        "Ciclope",
+        "Sátiro"
+      ],
+      "answer": 0,
+      "fact": "Ele vivia num labirinto na ilha de Creta e foi morto por Teseu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos de casamento se comemoram nas bodas de papel?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "As bodas de algodão são as de 2 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas pedras preciosas costuma ser azul?",
+      "options": [
+        "Safira",
+        "Rubi",
+        "Esmeralda",
+        "Topázio-imperial"
+      ],
+      "answer": 0,
+      "fact": "Rubi e safira são do mesmo mineral, o coríndon; só a cor muda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que nome tem o sinal *, usado para chamar uma nota de rodapé?",
+      "options": [
+        "Asterisco",
+        "Cerquilha",
+        "Arroba",
+        "Til"
+      ],
+      "answer": 0,
+      "fact": "O nome vem do grego e quer dizer \"estrelinha\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o tracinho que une palavras como \"guarda-chuva\"?",
+      "options": [
+        "Hífen",
+        "Travessão",
+        "Til",
+        "Apóstrofo"
+      ],
+      "answer": 0,
+      "fact": "O travessão é mais longo e marca falas e pausas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que quer dizer a sigla CEP?",
+      "options": [
+        "Código de Endereçamento Postal",
+        "Cadastro Estadual de Pessoas",
+        "Centro de Entregas Postais",
+        "Código Especial de Pacotes"
+      ],
+      "answer": 0,
+      "fact": "No Brasil, o CEP tem 8 dígitos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que quer dizer \"a.C.\" depois de um ano?",
+      "options": [
+        "Antes de Cristo",
+        "Após o Carnaval",
+        "Ano Comum",
+        "Antes do Calendário"
+      ],
+      "answer": 0,
+      "fact": "E \"d.C.\" quer dizer \"depois de Cristo\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas línguas é escrita da direita para a esquerda?",
+      "options": [
+        "Árabe",
+        "Russo",
+        "Japonês",
+        "Grego"
+      ],
+      "answer": 0,
+      "fact": "O hebraico também é escrito da direita para a esquerda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma dos ângulos internos de um triângulo?",
+      "options": [
+        "180°",
+        "90°",
+        "270°",
+        "360°"
+      ],
+      "answer": 0,
+      "fact": "Num quadrilátero, como o quadrado, a soma é 360°."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o triângulo com os três lados iguais?",
+      "options": [
+        "Equilátero",
+        "Isósceles",
+        "Escaleno",
+        "Retângulo"
+      ],
+      "answer": 0,
+      "fact": "O isósceles tem dois lados iguais, e o escaleno, nenhum."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 3² + 4²?",
+      "options": [
+        "25",
+        "49",
+        "12",
+        "14"
+      ],
+      "answer": 0,
+      "fact": "É o famoso triângulo 3-4-5 do teorema de Pitágoras: 9 + 16 = 25 = 5²."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama quem não come carne nem nenhum produto de origem animal?",
+      "options": [
+        "Vegano",
+        "Vegetariano",
+        "Carnívoro",
+        "Flexitariano"
+      ],
+      "answer": 0,
+      "fact": "O vegetariano tira a carne, mas pode comer ovos e laticínios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos lados tem um decágono?",
+      "options": [
+        "10",
+        "8",
+        "12",
+        "20"
+      ],
+      "answer": 0,
+      "fact": "\"Deca\" quer dizer dez, como em \"década\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que signo do zodíaco é representado por uma balança?",
+      "options": [
+        "Libra",
+        "Virgem",
+        "Aquário",
+        "Gêmeos"
+      ],
+      "answer": 0,
+      "fact": "É o único signo representado por um objeto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que dia se comemora o Dia do Professor no Brasil?",
+      "options": [
+        "15 de outubro",
+        "12 de outubro",
+        "1º de maio",
+        "7 de setembro"
+      ],
+      "answer": 0,
+      "fact": "A data lembra um decreto de 1827 que criou as escolas de primeiras letras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros quadrados tem um hectare?",
+      "options": [
+        "10.000",
+        "1.000",
+        "100",
+        "100.000"
+      ],
+      "answer": 0,
+      "fact": "Um campo de futebol oficial tem cerca de 0,7 hectare."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o aparelho que mede a pressão arterial?",
+      "options": [
+        "Esfigmomanômetro",
+        "Estetoscópio",
+        "Oxímetro",
+        "Barômetro"
+      ],
+      "answer": 0,
+      "fact": "O barômetro mede a pressão do ar, não a do sangue."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos centímetros tem um pé, a medida inglesa?",
+      "options": [
+        "30,48",
+        "25",
+        "33,3",
+        "40"
+      ],
+      "answer": 0,
+      "fact": "Uma jarda tem 3 pés, e uma milha, 5.280 pés."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país foi inventado o macarrão instantâneo, em 1958?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "O criador, Momofuku Ando, fundou a empresa Nissin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o medo de falar em público?",
+      "options": [
+        "Glossofobia",
+        "Agorafobia",
+        "Fonofobia",
+        "Sociofobia"
+      ],
+      "answer": 0,
+      "fact": "É um dos medos mais comuns do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de casamento se comemoram nas bodas de esmeralda?",
+      "options": [
+        "40",
+        "20",
+        "30",
+        "45"
+      ],
+      "answer": 0,
+      "fact": "Nas listas brasileiras, as bodas de rubi vêm logo depois, aos 45 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que quer dizer a expressão latina \"carpe diem\"?",
+      "options": [
+        "Aproveite o dia",
+        "Conhece a ti mesmo",
+        "Tudo passa",
+        "O tempo voa"
+      ],
+      "answer": 0,
+      "fact": "Ela vem de um poema do romano Horácio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que quer dizer a expressão latina \"in loco\"?",
+      "options": [
+        "No próprio lugar",
+        "Em segredo",
+        "Por escrito",
+        "De graça"
+      ],
+      "answer": 0,
+      "fact": "Uma visita \"in loco\" é feita no lugar onde as coisas acontecem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior número primo menor que 100?",
+      "options": [
+        "97",
+        "99",
+        "91",
+        "93"
+      ],
+      "answer": 0,
+      "fact": "Existem 25 números primos entre 1 e 100."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 13 × 13?",
+      "options": [
+        "169",
+        "139",
+        "156",
+        "196"
+      ],
+      "answer": 0,
+      "fact": "196 é 14 × 14."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em algarismos romanos, XL equivale a que número?",
+      "options": [
+        "40",
+        "60",
+        "90",
+        "110"
+      ],
+      "answer": 0,
+      "fact": "Um número menor à esquerda é subtraído: XL é 50 menos 10."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que deus grego, de sandálias aladas, era o mensageiro dos deuses?",
+      "options": [
+        "Hermes",
+        "Apolo",
+        "Dionísio",
+        "Hefesto"
+      ],
+      "answer": 0,
+      "fact": "Para os romanos, ele se chamava Mercúrio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Na mitologia nórdica, como se chama o salão para onde vão os guerreiros mortos em batalha?",
+      "options": [
+        "Valhalla",
+        "Asgard",
+        "Midgard",
+        "Yggdrasil"
+      ],
+      "answer": 0,
+      "fact": "Asgard é o reino dos deuses, onde fica o Valhalla."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que titã da mitologia grega foi condenado a carregar o céu nas costas?",
+      "options": [
+        "Atlas",
+        "Cronos",
+        "Prometeu",
+        "Hipérion"
+      ],
+      "answer": 0,
+      "fact": "Os livros de mapas ganharam o nome de atlas por causa dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que herói grego cortou a cabeça da Medusa?",
+      "options": [
+        "Perseu",
+        "Hércules",
+        "Teseu",
+        "Aquiles"
+      ],
+      "answer": 0,
+      "fact": "Ele usou o reflexo de um escudo para não olhar a Medusa diretamente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que herói grego levou dez anos para voltar para casa depois da Guerra de Troia?",
+      "options": [
+        "Ulisses",
+        "Aquiles",
+        "Heitor",
+        "Páris"
+      ],
+      "answer": 0,
+      "fact": "A viagem é contada na \"Odisseia\", de Homero."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o cão de três cabeças que guarda o mundo dos mortos, na mitologia grega?",
+      "options": [
+        "Cérbero",
+        "Ortro",
+        "Argos",
+        "Fenrir"
+      ],
+      "answer": 0,
+      "fact": "Fenrir é um lobo gigante da mitologia nórdica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que pedra preciosa tem cor violeta?",
+      "options": [
+        "Ametista",
+        "Turmalina",
+        "Água-marinha",
+        "Topázio"
+      ],
+      "answer": 0,
+      "fact": "O Brasil é um dos maiores produtores de ametista do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama quem estuda a origem das palavras?",
+      "options": [
+        "Etimologista",
+        "Entomologista",
+        "Ortografista",
+        "Lexicógrafo"
+      ],
+      "answer": 0,
+      "fact": "O entomologista estuda os insetos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que figura de linguagem exagera, como em \"já te falei um milhão de vezes\"?",
+      "options": [
+        "Hipérbole",
+        "Metáfora",
+        "Ironia",
+        "Eufemismo"
+      ],
+      "answer": 0,
+      "fact": "O eufemismo faz o contrário: suaviza, como \"ele partiu\" em vez de \"ele morreu\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a palavra que imita um som, como \"tic-tac\" ou \"atchim\"?",
+      "options": [
+        "Onomatopeia",
+        "Aliteração",
+        "Neologismo",
+        "Pleonasmo"
+      ],
+      "answer": 0,
+      "fact": "Os quadrinhos usam muitas onomatopeias, como \"pou!\" e \"crash!\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que letra grega é usada em matemática para indicar uma soma?",
+      "options": [
+        "Sigma",
+        "Pi",
+        "Delta",
+        "Lambda"
+      ],
+      "answer": 0,
+      "fact": "O sigma maiúsculo (Σ) indica a soma de vários termos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a última letra do alfabeto grego?",
+      "options": [
+        "Ômega",
+        "Ípsilon",
+        "Zeta",
+        "Psi"
+      ],
+      "answer": 0,
+      "fact": "Por isso \"o alfa e o ômega\" quer dizer \"o começo e o fim\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que país criou o sistema métrico decimal, no fim do século 18?",
+      "options": [
+        "França",
+        "Inglaterra",
+        "Alemanha",
+        "Estados Unidos"
+      ],
+      "answer": 0,
+      "fact": "O metro foi definido como a décima milionésima parte da distância do Polo Norte ao Equador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilos tem uma arroba?",
+      "options": [
+        "15",
+        "10",
+        "20",
+        "50"
+      ],
+      "answer": 0,
+      "fact": "A arroba ainda é usada para pesar o gado no Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros tem um galão americano, aproximadamente?",
+      "options": [
+        "3,8",
+        "1",
+        "5",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "O galão britânico é maior: cerca de 4,5 litros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem um lustro?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "50"
+      ],
+      "answer": 0,
+      "fact": "Um decênio tem 10 anos, e um quinquênio, 5, igual ao lustro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a moeda da África do Sul?",
+      "options": [
+        "Rand",
+        "Xelim",
+        "Naira",
+        "Dirham"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de Witwatersrand, a região das minas de ouro perto de Joanesburgo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a moeda da Índia?",
+      "options": [
+        "Rúpia",
+        "Iene",
+        "Baht",
+        "Rupia indonésia"
+      ],
+      "answer": 0,
+      "fact": "A palavra vem do sânscrito e quer dizer \"prata trabalhada\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que instrumento do avião mostra a que altura ele está voando?",
+      "options": [
+        "Altímetro",
+        "Velocímetro",
+        "Hodômetro",
+        "Sonar"
+      ],
+      "answer": 0,
+      "fact": "O velocímetro mede a velocidade, e o hodômetro, a distância percorrida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamam os dois pontinhos sobre o \"ü\", abolidos do português pelo último acordo ortográfico?",
+      "options": [
+        "Trema",
+        "Til",
+        "Cedilha",
+        "Crase"
+      ],
+      "answer": 0,
+      "fact": "Hoje o trema só aparece em nomes estrangeiros, como Müller."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas faces tem um icosaedro?",
+      "options": [
+        "20",
+        "12",
+        "8",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "É o formato do dado de 20 lados, famoso nos jogos de RPG."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas línguas são faladas no mundo hoje, aproximadamente?",
+      "options": [
+        "Cerca de 7 mil",
+        "Cerca de 500",
+        "Cerca de 1.500",
+        "Cerca de 3 mil",
+        "Cerca de 15 mil",
+        "Cerca de 50 mil"
+      ],
+      "answer": 0,
+      "fact": "Quase metade delas está ameaçada de desaparecer."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi patenteado o lápis com borracha na ponta?",
+      "options": [
+        "1858",
+        "1700",
+        "1800",
+        "1900",
+        "1925",
+        "1950"
+      ],
+      "answer": 0,
+      "fact": "A patente americana foi dada a Hymen Lipman."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Somando os pontos de todas as peças de um dominó comum, quanto dá?",
+      "options": [
+        "168",
+        "28",
+        "84",
+        "120",
+        "200",
+        "252"
+      ],
+      "answer": 0,
+      "fact": "Cada número, de 0 a 6, aparece 8 vezes no jogo."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano surgiu o primeiro cartão de crédito de uso geral, o Diners Club?",
+      "options": [
+        "1950",
+        "1920",
+        "1935",
+        "1965",
+        "1975",
+        "1985"
+      ],
+      "answer": 0,
+      "fact": "Conta a história que a ideia nasceu depois que um empresário esqueceu a carteira num jantar em Nova York."
     }
   ]
 }

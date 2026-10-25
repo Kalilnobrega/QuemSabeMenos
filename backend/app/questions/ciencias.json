@@ -2904,6 +2904,1214 @@
       ],
       "answer": 0,
       "fact": "O aço é ferro misturado com um pouco de carbono, o que o deixa bem mais resistente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que órgão \"ronca\" quando estamos com fome?",
+      "options": [
+        "Estômago",
+        "Coração",
+        "Pulmão",
+        "Fígado"
+      ],
+      "answer": 0,
+      "fact": "O ronco vem dos movimentos do estômago e do intestino empurrando gases e líquidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que sentido usamos para perceber os cheiros?",
+      "options": [
+        "Olfato",
+        "Paladar",
+        "Tato",
+        "Audição"
+      ],
+      "answer": 0,
+      "fact": "O olfato é responsável por boa parte do que sentimos como sabor da comida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que conjunto de ossos protege o cérebro?",
+      "options": [
+        "Crânio",
+        "Costelas",
+        "Coluna",
+        "Bacia"
+      ],
+      "answer": 0,
+      "fact": "Os ossos do crânio de um bebê ainda não estão totalmente unidos, deixando a \"moleira\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ave colorida consegue imitar a fala humana?",
+      "options": [
+        "Papagaio",
+        "Pombo",
+        "Pardal",
+        "Coruja"
+      ],
+      "answer": 0,
+      "fact": "Ele não entende as palavras: só repete os sons que ouve."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que grupo de animais tem o corpo coberto de penas?",
+      "options": [
+        "Aves",
+        "Répteis",
+        "Mamíferos",
+        "Anfíbios"
+      ],
+      "answer": 0,
+      "fact": "Todas as aves têm penas, até as que não voam, como o avestruz e o pinguim."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais é um anfíbio?",
+      "options": [
+        "Sapo",
+        "Lagarto",
+        "Tartaruga",
+        "Cobra"
+      ],
+      "answer": 0,
+      "fact": "Anfíbios passam parte da vida na água e parte em terra firme."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que se forma quando a luz do Sol atravessa gotinhas de chuva no ar?",
+      "options": [
+        "Arco-íris",
+        "Relâmpago",
+        "Neblina",
+        "Granizo"
+      ],
+      "answer": 0,
+      "fact": "Para ver um arco-íris, o Sol precisa estar atrás de você."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que legume laranja é famoso por fazer bem para a visão?",
+      "options": [
+        "Cenoura",
+        "Beterraba",
+        "Batata",
+        "Chuchu"
+      ],
+      "answer": 0,
+      "fact": "Ela é rica em betacaroteno, que o corpo transforma em vitamina A."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Na fotossíntese, que gás a planta solta no ar?",
+      "options": [
+        "Oxigênio",
+        "Gás carbônico",
+        "Hélio",
+        "Nitrogênio"
+      ],
+      "answer": 0,
+      "fact": "Boa parte do oxigênio do planeta vem das algas e do fitoplâncton dos oceanos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes é um inseto?",
+      "options": [
+        "Borboleta",
+        "Aranha",
+        "Escorpião",
+        "Minhoca"
+      ],
+      "answer": 0,
+      "fact": "Aranhas e escorpiões são aracnídeos, com 8 patas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o conjunto de todos os ossos do corpo?",
+      "options": [
+        "Esqueleto",
+        "Músculo",
+        "Cartilagem",
+        "Articulação"
+      ],
+      "answer": 0,
+      "fact": "Um bebê nasce com cerca de 300 ossos, que vão se juntando com o crescimento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal constrói represas nos rios com galhos e troncos?",
+      "options": [
+        "Castor",
+        "Lontra",
+        "Capivara",
+        "Esquilo"
+      ],
+      "answer": 0,
+      "fact": "Os dentes do castor nunca param de crescer, por isso ele vive roendo madeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal troca a pele inteira algumas vezes por ano, conforme cresce?",
+      "options": [
+        "Cobra",
+        "Sapo",
+        "Tartaruga",
+        "Jacaré"
+      ],
+      "answer": 0,
+      "fact": "A pele velha sai inteira, como uma meia virada do avesso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal marinho tem oito braços cheios de ventosas?",
+      "options": [
+        "Polvo",
+        "Lula",
+        "Estrela-do-mar",
+        "Água-viva"
+      ],
+      "answer": 0,
+      "fact": "A lula tem oito braços e mais dois tentáculos compridos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a tempestade com ventos girando em forma de funil?",
+      "options": [
+        "Tornado",
+        "Furacão",
+        "Tsunami",
+        "Ciclone"
+      ],
+      "answer": 0,
+      "fact": "Furacões são muito maiores e se formam sobre o mar quente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que substância deixa as folhas das plantas verdes?",
+      "options": [
+        "Clorofila",
+        "Celulose",
+        "Seiva",
+        "Amido"
+      ],
+      "answer": 0,
+      "fact": "A clorofila captura a luz do Sol para a planta fazer a fotossíntese."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O filhote do cavalo recebe que nome?",
+      "options": [
+        "Potro",
+        "Bezerro",
+        "Cabrito",
+        "Leitão"
+      ],
+      "answer": 0,
+      "fact": "A fêmea do cavalo é a égua."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas é uma fonte de energia renovável?",
+      "options": [
+        "Solar",
+        "Carvão",
+        "Petróleo",
+        "Gás natural"
+      ],
+      "answer": 0,
+      "fact": "Renovável é a energia de fontes que não se esgotam, como o Sol e o vento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o dente que costuma nascer por último, no fundo da boca?",
+      "options": [
+        "Siso",
+        "Canino",
+        "Incisivo",
+        "Dente de leite"
+      ],
+      "answer": 0,
+      "fact": "Muita gente precisa tirar o siso por falta de espaço na boca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que planeta fica entre a Terra e Júpiter?",
+      "options": [
+        "Marte",
+        "Vênus",
+        "Saturno",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Entre Marte e Júpiter também fica o cinturão de asteroides."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais bota ovos?",
+      "options": [
+        "Galinha",
+        "Vaca",
+        "Cachorro",
+        "Gato"
+      ],
+      "answer": 0,
+      "fact": "Animais que botam ovos são chamados de ovíparos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ciência estuda os animais?",
+      "options": [
+        "Zoologia",
+        "Botânica",
+        "Geologia",
+        "Astronomia"
+      ],
+      "answer": 0,
+      "fact": "A palavra vem do grego \"zoon\", que quer dizer animal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal africano tem listras pretas e brancas?",
+      "options": [
+        "Zebra",
+        "Girafa",
+        "Hiena",
+        "Antílope"
+      ],
+      "answer": 0,
+      "fact": "As listras de cada zebra são únicas, como uma impressão digital."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ossos protegem o coração e os pulmões?",
+      "options": [
+        "Costelas",
+        "Vértebras",
+        "Clavículas",
+        "Fêmures"
+      ],
+      "answer": 0,
+      "fact": "A maioria das pessoas tem 12 pares de costelas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O tubarão é que tipo de animal?",
+      "options": [
+        "Peixe",
+        "Mamífero",
+        "Réptil",
+        "Anfíbio"
+      ],
+      "answer": 0,
+      "fact": "O esqueleto do tubarão é feito de cartilagem, não de osso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a onda gigante causada por um terremoto no fundo do mar?",
+      "options": [
+        "Tsunami",
+        "Pororoca",
+        "Ressaca",
+        "Furacão"
+      ],
+      "answer": 0,
+      "fact": "A palavra vem do japonês e quer dizer \"onda do porto\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bichinho cava túneis e deixa a terra fofa e fértil?",
+      "options": [
+        "Minhoca",
+        "Besouro",
+        "Lesma",
+        "Grilo"
+      ],
+      "answer": 0,
+      "fact": "Os túneis das minhocas deixam o ar e a água chegarem às raízes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bichinho de concha em espiral anda devagar e deixa um rastro de gosma?",
+      "options": [
+        "Caracol",
+        "Minhoca",
+        "Lagarta",
+        "Centopeia"
+      ],
+      "answer": 0,
+      "fact": "A gosma ajuda o caracol a deslizar e protege o corpo dele contra cortes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o maior primata do mundo?",
+      "options": [
+        "Gorila",
+        "Chimpanzé",
+        "Orangotango",
+        "Babuíno"
+      ],
+      "answer": 0,
+      "fact": "Gorilas e humanos compartilham cerca de 98% do DNA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que faz existir o dia e a noite?",
+      "options": [
+        "A Terra girar em torno de si mesma",
+        "A Lua passar na frente do Sol",
+        "As nuvens taparem o Sol",
+        "O Sol se apagar à noite"
+      ],
+      "answer": 0,
+      "fact": "Enquanto um lado da Terra está virado para o Sol, o outro fica no escuro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que inseto vive em colônias com uma rainha e carrega folhas muitas vezes maiores que ela?",
+      "options": [
+        "Formiga",
+        "Mosca",
+        "Pernilongo",
+        "Barata"
+      ],
+      "answer": 0,
+      "fact": "A saúva corta pedaços de folhas para cultivar o fungo de que se alimenta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que animal passa o inverno dormindo numa toca, em hibernação?",
+      "options": [
+        "Urso",
+        "Leão",
+        "Cavalo",
+        "Lobo"
+      ],
+      "answer": 0,
+      "fact": "Durante a hibernação, o coração do urso bate bem mais devagar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que planeta é chamado de \"estrela-d'alva\" por brilhar no céu ao amanhecer?",
+      "options": [
+        "Vênus",
+        "Marte",
+        "Júpiter",
+        "Mercúrio"
+      ],
+      "answer": 0,
+      "fact": "Depois da Lua, é o astro mais brilhante do céu noturno."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual planeta gira mais rápido em torno de si mesmo?",
+      "options": [
+        "Júpiter",
+        "Mercúrio",
+        "Terra",
+        "Netuno"
+      ],
+      "answer": 0,
+      "fact": "Um dia em Júpiter dura menos de 10 horas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No ciclo da água, como se chama a queda de chuva, neve ou granizo?",
+      "options": [
+        "Precipitação",
+        "Condensação",
+        "Evaporação",
+        "Infiltração"
+      ],
+      "answer": 0,
+      "fact": "A água evapora, condensa nas nuvens e volta ao chão pela precipitação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que metal são feitas as latinhas de refrigerante?",
+      "options": [
+        "Alumínio",
+        "Ferro",
+        "Cobre",
+        "Estanho"
+      ],
+      "answer": 0,
+      "fact": "Uma latinha reciclada pode voltar à prateleira em cerca de 60 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o osso pequeno que fica na frente do joelho?",
+      "options": [
+        "Patela",
+        "Calcâneo",
+        "Fíbula",
+        "Úmero"
+      ],
+      "answer": 0,
+      "fact": "Antigamente, ele era chamado de rótula."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamam as duas pontas de um ímã?",
+      "options": [
+        "Polos norte e sul",
+        "Ânodo e cátodo",
+        "Próton e nêutron",
+        "Núcleo e órbita"
+      ],
+      "answer": 0,
+      "fact": "Polos iguais se repelem, e polos diferentes se atraem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que vasos levam o sangue de volta ao coração?",
+      "options": [
+        "Veias",
+        "Artérias",
+        "Capilares",
+        "Nervos"
+      ],
+      "answer": 0,
+      "fact": "As artérias levam o sangue do coração para o corpo, e as veias o trazem de volta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior felino do mundo?",
+      "options": [
+        "Tigre",
+        "Leão",
+        "Onça-pintada",
+        "Leopardo"
+      ],
+      "answer": 0,
+      "fact": "O tigre-siberiano pode passar de 300 kg."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que gás tóxico e sem cheiro sai do escapamento dos carros?",
+      "options": [
+        "Monóxido de carbono",
+        "Oxigênio",
+        "Hélio",
+        "Nitrogênio"
+      ],
+      "answer": 0,
+      "fact": "Ele se liga ao sangue no lugar do oxigênio, por isso é tão perigoso em lugares fechados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o osso do braço, entre o ombro e o cotovelo?",
+      "options": [
+        "Úmero",
+        "Rádio",
+        "Ulna",
+        "Clavícula"
+      ],
+      "answer": 0,
+      "fact": "O rádio e a ulna ficam no antebraço, entre o cotovelo e o pulso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que órgão produz a bile, que ajuda a digerir as gorduras?",
+      "options": [
+        "Fígado",
+        "Pâncreas",
+        "Rim",
+        "Baço"
+      ],
+      "answer": 0,
+      "fact": "A bile fica guardada na vesícula biliar até a hora da digestão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A falta de que vitamina causa o escorbuto?",
+      "options": [
+        "Vitamina C",
+        "Vitamina A",
+        "Vitamina D",
+        "Vitamina B12"
+      ],
+      "answer": 0,
+      "fact": "A doença atacava os marinheiros em longas viagens sem frutas frescas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a unidade de medida da potência?",
+      "options": [
+        "Watt",
+        "Joule",
+        "Pascal",
+        "Kelvin"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia James Watt, que aperfeiçoou a máquina a vapor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Com que órgão os peixes respiram debaixo d'água?",
+      "options": [
+        "Brânquias",
+        "Pulmões",
+        "Narinas",
+        "Escamas"
+      ],
+      "answer": 0,
+      "fact": "As brânquias tiram da água o oxigênio dissolvido nela."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama cada parte colorida da flor, que atrai os insetos?",
+      "options": [
+        "Pétala",
+        "Sépala",
+        "Caule",
+        "Estame"
+      ],
+      "answer": 0,
+      "fact": "As sépalas são as partes verdes que protegem o botão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o transporte de pólen de uma flor para outra?",
+      "options": [
+        "Polinização",
+        "Germinação",
+        "Fotossíntese",
+        "Transpiração"
+      ],
+      "answer": 0,
+      "fact": "Abelhas, borboletas, morcegos e até o vento fazem a polinização."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que constelação em forma de cruz aparece na bandeira do Brasil?",
+      "options": [
+        "Cruzeiro do Sul",
+        "Órion",
+        "Escorpião",
+        "Ursa Maior"
+      ],
+      "answer": 0,
+      "fact": "Ela só é bem visível de quem está no Hemisfério Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que sábio grego teria gritado \"Eureca!\" ao descobrir o empuxo, durante um banho?",
+      "options": [
+        "Arquimedes",
+        "Pitágoras",
+        "Aristóteles",
+        "Euclides"
+      ],
+      "answer": 0,
+      "fact": "\"Eureca\" quer dizer \"encontrei!\" em grego."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o elemento químico mais leve?",
+      "options": [
+        "Hidrogênio",
+        "Hélio",
+        "Oxigênio",
+        "Lítio"
+      ],
+      "answer": 0,
+      "fact": "O núcleo do tipo mais comum dele tem uma única partícula."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o símbolo químico do cobre?",
+      "options": [
+        "Cu",
+        "Co",
+        "Cb",
+        "Cr"
+      ],
+      "answer": 0,
+      "fact": "Vem do latim \"cuprum\", nome ligado à ilha de Chipre, rica em cobre na Antiguidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A orca, apesar do apelido de \"baleia-assassina\", é o maior membro de que família?",
+      "options": [
+        "Golfinhos",
+        "Tubarões",
+        "Focas",
+        "Baleias-azuis"
+      ],
+      "answer": 0,
+      "fact": "As orcas caçam em grupo e podem atacar até baleias grandes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que camada da Terra fica entre a crosta e o núcleo?",
+      "options": [
+        "Manto",
+        "Litosfera",
+        "Atmosfera",
+        "Magma"
+      ],
+      "answer": 0,
+      "fact": "O manto tem cerca de 2.900 km de espessura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que célula transmite os impulsos nervosos?",
+      "options": [
+        "Neurônio",
+        "Hemácia",
+        "Plaqueta",
+        "Leucócito"
+      ],
+      "answer": 0,
+      "fact": "O cérebro humano tem cerca de 86 bilhões de neurônios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Onde são produzidas as células do sangue?",
+      "options": [
+        "Na medula óssea",
+        "No coração",
+        "No fígado",
+        "No baço"
+      ],
+      "answer": 0,
+      "fact": "A medula óssea é o \"tutano\", a parte mole dentro de ossos como o fêmur."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Onde ficam as papilas gustativas, que sentem o sabor?",
+      "options": [
+        "Na língua",
+        "No nariz",
+        "Na garganta",
+        "Nos dentes"
+      ],
+      "answer": 0,
+      "fact": "As papilas se renovam a cada uma ou duas semanas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a passagem do vapor para líquido, como as gotas num copo gelado?",
+      "options": [
+        "Condensação",
+        "Evaporação",
+        "Fusão",
+        "Sublimação"
+      ],
+      "answer": 0,
+      "fact": "O ar perto do copo esfria, e o vapor d'água vira gotinhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o ser vivo que vive às custas de outro e o prejudica?",
+      "options": [
+        "Parasita",
+        "Predador",
+        "Decompositor",
+        "Produtor"
+      ],
+      "answer": 0,
+      "fact": "Piolhos, carrapatos e lombrigas são exemplos de parasitas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que mamífero aquático e herbívoro vive na Amazônia e no litoral do Nordeste?",
+      "options": [
+        "Peixe-boi",
+        "Boto",
+        "Lontra",
+        "Ariranha"
+      ],
+      "answer": 0,
+      "fact": "Ele pode comer cerca de 10% do próprio peso em plantas por dia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a produção de luz por seres vivos, como os vaga-lumes?",
+      "options": [
+        "Bioluminescência",
+        "Fotossíntese",
+        "Fosforescência",
+        "Refração"
+      ],
+      "answer": 0,
+      "fact": "Muitos peixes do fundo do mar também produzem a própria luz."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destas doenças é causada por um vírus?",
+      "options": [
+        "Gripe",
+        "Tuberculose",
+        "Cólera",
+        "Tétano"
+      ],
+      "answer": 0,
+      "fact": "Antibióticos não funcionam contra vírus, só contra bactérias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamam os dentes da frente, usados para cortar os alimentos?",
+      "options": [
+        "Incisivos",
+        "Caninos",
+        "Molares",
+        "Pré-molares"
+      ],
+      "answer": 0,
+      "fact": "Os molares, no fundo da boca, são os que trituram a comida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que luzes coloridas aparecem no céu perto dos polos da Terra?",
+      "options": [
+        "Auroras polares",
+        "Arco-íris duplos",
+        "Halos solares",
+        "Estrelas cadentes"
+      ],
+      "answer": 0,
+      "fact": "Elas surgem quando partículas vindas do Sol batem na atmosfera."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O símbolo químico Sn pertence a qual elemento?",
+      "options": [
+        "Estanho",
+        "Enxofre",
+        "Selênio",
+        "Silício"
+      ],
+      "answer": 0,
+      "fact": "O símbolo vem do latim \"stannum\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vértebras tem a coluna humana, contando as do sacro e do cóccix?",
+      "options": [
+        "33",
+        "24",
+        "26",
+        "40"
+      ],
+      "answer": 0,
+      "fact": "Várias se fundem com a idade, por isso às vezes se conta 26 ossos na coluna adulta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto tempo Netuno leva para dar uma volta ao redor do Sol?",
+      "options": [
+        "Cerca de 165 anos",
+        "Cerca de 12 anos",
+        "Cerca de 30 anos",
+        "Cerca de 84 anos"
+      ],
+      "answer": 0,
+      "fact": "Descoberto em 1846, ele só completou a primeira volta desde então em 2011."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior anfíbio do mundo?",
+      "options": [
+        "Salamandra-gigante-da-china",
+        "Sapo-golias",
+        "Rã-touro",
+        "Axolote"
+      ],
+      "answer": 0,
+      "fact": "Ela pode passar de 1,5 metro de comprimento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tipo de lente corrige a miopia?",
+      "options": [
+        "Divergente",
+        "Convergente",
+        "Bifocal",
+        "Cilíndrica"
+      ],
+      "answer": 0,
+      "fact": "Para a hipermetropia, usa-se a lente convergente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista inglesa fez as imagens de raios X decisivas para descobrir a estrutura do DNA?",
+      "options": [
+        "Rosalind Franklin",
+        "Marie Curie",
+        "Ada Lovelace",
+        "Dorothy Hodgkin"
+      ],
+      "answer": 0,
+      "fact": "Ela morreu em 1958 e não chegou a dividir o Nobel dado pela descoberta, em 1962."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista descobriu as leis da hereditariedade estudando ervilhas?",
+      "options": [
+        "Gregor Mendel",
+        "Charles Darwin",
+        "Louis Pasteur",
+        "Carl Lineu"
+      ],
+      "answer": 0,
+      "fact": "Mendel era um monge, e seu trabalho só foi reconhecido depois da sua morte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista brasileiro criou soros contra veneno de cobra e fundou o Instituto Butantan?",
+      "options": [
+        "Vital Brazil",
+        "Oswaldo Cruz",
+        "Adolfo Lutz",
+        "Carlos Chagas"
+      ],
+      "answer": 0,
+      "fact": "Ele percebeu que cada tipo de cobra pedia um soro diferente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que partícula do núcleo do átomo não tem carga elétrica?",
+      "options": [
+        "Nêutron",
+        "Próton",
+        "Elétron",
+        "Fóton"
+      ],
+      "answer": 0,
+      "fact": "Ele foi descoberto pelo inglês James Chadwick, em 1932."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que hormônio, liberado quando escurece, ajuda a regular o sono?",
+      "options": [
+        "Melatonina",
+        "Adrenalina",
+        "Insulina",
+        "Serotonina"
+      ],
+      "answer": 0,
+      "fact": "Ela é produzida pela glândula pineal, no cérebro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que estrutura, dentro da coluna, liga o cérebro aos nervos do corpo?",
+      "options": [
+        "Medula espinhal",
+        "Medula óssea",
+        "Cerebelo",
+        "Hipotálamo"
+      ],
+      "answer": 0,
+      "fact": "Diferente da medula óssea, que produz sangue, a espinhal conduz os impulsos nervosos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lua de Júpiter tem centenas de vulcões ativos?",
+      "options": [
+        "Io",
+        "Europa",
+        "Calisto",
+        "Ganimedes"
+      ],
+      "answer": 0,
+      "fact": "É o corpo com mais atividade vulcânica de todo o Sistema Solar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama a nuvem de cometas que envolve o Sistema Solar, bem além de Netuno?",
+      "options": [
+        "Nuvem de Oort",
+        "Cinturão de Kuiper",
+        "Nebulosa de Órion",
+        "Cinturão de Van Allen"
+      ],
+      "answer": 0,
+      "fact": "Ela pode se estender a mais de um ano-luz do Sol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior objeto do cinturão de asteroides, classificado como planeta anão?",
+      "options": [
+        "Ceres",
+        "Vesta",
+        "Plutão",
+        "Éris"
+      ],
+      "answer": 0,
+      "fact": "Ceres tem cerca de 940 km de diâmetro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que reação produz a energia do Sol, no seu núcleo?",
+      "options": [
+        "Fusão nuclear",
+        "Fissão nuclear",
+        "Combustão",
+        "Oxidação"
+      ],
+      "answer": 0,
+      "fact": "Ali, núcleos leves se juntam e formam núcleos mais pesados, liberando energia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ácido forte faz parte do suco gástrico do estômago?",
+      "options": [
+        "Ácido clorídrico",
+        "Ácido sulfúrico",
+        "Ácido cítrico",
+        "Ácido acético"
+      ],
+      "answer": 0,
+      "fact": "O estômago se protege com uma camada de muco que se renova o tempo todo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que astrônomo mostrou que os planetas giram em órbitas elípticas?",
+      "options": [
+        "Johannes Kepler",
+        "Galileu Galilei",
+        "Nicolau Copérnico",
+        "Tycho Brahe"
+      ],
+      "answer": 0,
+      "fact": "Ele usou as anotações precisas do dinamarquês Tycho Brahe, de quem foi assistente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista inventou o para-raios, depois de experiências com uma pipa?",
+      "options": [
+        "Benjamin Franklin",
+        "Thomas Edison",
+        "Nikola Tesla",
+        "Michael Faraday"
+      ],
+      "answer": 0,
+      "fact": "Franklin também foi um dos líderes da independência dos Estados Unidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a unidade de energia no Sistema Internacional?",
+      "options": [
+        "Joule",
+        "Watt",
+        "Newton",
+        "Pascal"
+      ],
+      "answer": 0,
+      "fact": "Uma caloria de alimento, a \"kcal\", vale cerca de 4.184 joules."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que doença é causada pelo protozoário Plasmodium?",
+      "options": [
+        "Malária",
+        "Dengue",
+        "Febre amarela",
+        "Doença de Chagas"
+      ],
+      "answer": 0,
+      "fact": "Ela é transmitida pela fêmea do mosquito Anopheles."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que doença, transmitida pela urina de ratos, costuma aumentar depois das enchentes?",
+      "options": [
+        "Leptospirose",
+        "Toxoplasmose",
+        "Raiva",
+        "Hanseníase"
+      ],
+      "answer": 0,
+      "fact": "A bactéria entra no corpo por feridas na pele ou pelas mucosas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que animal microscópico, o \"urso-d'água\", consegue sobreviver até no vácuo do espaço?",
+      "options": [
+        "Tardígrado",
+        "Rotífero",
+        "Ácaro",
+        "Paramécio"
+      ],
+      "answer": 0,
+      "fact": "Ele mede menos de 1 mm e aguenta frio extremo, radiação e desidratação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ave consegue voar para trás?",
+      "options": [
+        "Beija-flor",
+        "Andorinha",
+        "Gaivota",
+        "Pardal"
+      ],
+      "answer": 0,
+      "fact": "Suas asas podem bater mais de 50 vezes por segundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual mamífero pode viver mais tempo, passando de 200 anos?",
+      "options": [
+        "Baleia-da-groenlândia",
+        "Elefante-africano",
+        "Orca",
+        "Tartaruga-gigante"
+      ],
+      "answer": 0,
+      "fact": "Arpões antigos achados em baleias vivas ajudaram a confirmar essas idades."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual metal é o melhor condutor de eletricidade?",
+      "options": [
+        "Prata",
+        "Cobre",
+        "Ouro",
+        "Alumínio"
+      ],
+      "answer": 0,
+      "fact": "Mesmo assim, os fios usam cobre, que é muito mais barato."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cientista propôs, em 1912, que os continentes já estiveram unidos?",
+      "options": [
+        "Alfred Wegener",
+        "Charles Lyell",
+        "James Hutton",
+        "Alexander von Humboldt"
+      ],
+      "answer": 0,
+      "fact": "A ideia só foi aceita décadas depois, com a teoria das placas tectônicas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos ossos tem a mão humana?",
+      "options": [
+        "27",
+        "14",
+        "20",
+        "35"
+      ],
+      "answer": 0,
+      "fact": "Mãos e pés, juntos, têm mais da metade dos ossos do corpo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior músculo do corpo humano?",
+      "options": [
+        "Glúteo máximo",
+        "Quadríceps",
+        "Bíceps",
+        "Peitoral maior"
+      ],
+      "answer": 0,
+      "fact": "É ele que nos mantém de pé e ajuda a subir escadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nervo leva as imagens do olho até o cérebro?",
+      "options": [
+        "Nervo óptico",
+        "Nervo vago",
+        "Nervo ciático",
+        "Nervo trigêmeo"
+      ],
+      "answer": 0,
+      "fact": "O ponto onde ele sai do olho não tem células de visão: é o \"ponto cego\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que astrônomo sueco criou a escala de temperatura em graus Celsius?",
+      "options": [
+        "Anders Celsius",
+        "Daniel Fahrenheit",
+        "Lord Kelvin",
+        "Isaac Newton"
+      ],
+      "answer": 0,
+      "fact": "Na versão original, 0 era a fervura da água e 100, o congelamento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que mede a escala de Mohs?",
+      "options": [
+        "A dureza dos minerais",
+        "A força dos ventos",
+        "A acidez de um líquido",
+        "O brilho das estrelas"
+      ],
+      "answer": 0,
+      "fact": "O diamante é o 10, o topo da escala, e o talco é o 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que parte do olho capta a luz e funciona como a \"tela\" de uma câmera?",
+      "options": [
+        "Retina",
+        "Córnea",
+        "Pupila",
+        "Cristalino"
+      ],
+      "answer": 0,
+      "fact": "A retina tem dois tipos de células: os cones, para as cores, e os bastonetes, para pouca luz."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas Terras, lado a lado, caberiam no diâmetro do Sol?",
+      "options": [
+        "Cerca de 109",
+        "Cerca de 10",
+        "Cerca de 50",
+        "Cerca de 500",
+        "Cerca de 1.000",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "Em volume, caberiam mais de 1 milhão de Terras dentro do Sol."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Somando todos os vasos sanguíneos de um adulto, que comprimento eles teriam?",
+      "options": [
+        "Cerca de 100 mil km",
+        "Cerca de 300 km",
+        "Cerca de 1.000 km",
+        "Cerca de 10 mil km",
+        "Cerca de 500 mil km",
+        "Cerca de 1 milhão de km"
+      ],
+      "answer": 0,
+      "fact": "Daria para dar mais de duas voltas na Terra."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos litros de ar um adulto respira por dia, aproximadamente?",
+      "options": [
+        "Cerca de 11 mil",
+        "Cerca de 500",
+        "Cerca de 2 mil",
+        "Cerca de 50 mil",
+        "Cerca de 100 mil",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "Em repouso, cada respiração movimenta só cerca de meio litro de ar."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a temperatura aproximada do núcleo do Sol?",
+      "options": [
+        "15 milhões de °C",
+        "5.500 °C",
+        "100 mil °C",
+        "1 milhão de °C",
+        "150 milhões de °C",
+        "1 bilhão de °C"
+      ],
+      "answer": 0,
+      "fact": "A luz produzida no núcleo pode levar milhares de anos para chegar à superfície."
     }
   ]
 }

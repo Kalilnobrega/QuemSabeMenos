@@ -2904,6 +2904,1214 @@
       ],
       "answer": 0,
       "fact": "O Brasil é o maior exportador mundial de suco de laranja."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a capital do estado do Rio de Janeiro?",
+      "options": [
+        "Rio de Janeiro",
+        "Niterói",
+        "Petrópolis",
+        "Campos dos Goytacazes"
+      ],
+      "answer": 0,
+      "fact": "Niterói foi a capital do estado do Rio até 1975."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que docinho de festa, primo do brigadeiro, é feito de coco e leva um cravo em cima?",
+      "options": [
+        "Beijinho",
+        "Cajuzinho",
+        "Olho de sogra",
+        "Bicho de pé"
+      ],
+      "answer": 0,
+      "fact": "O cravo-da-índia em cima é só enfeite, e muita gente tira antes de comer."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta amazônica dá nome a um refrigerante muito popular no Brasil?",
+      "options": [
+        "Guaraná",
+        "Açaí",
+        "Cupuaçu",
+        "Acerola"
+      ],
+      "answer": 0,
+      "fact": "As sementes do guaraná têm mais cafeína que os grãos de café."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que prato típico gaúcho é carne assada no espeto, na brasa?",
+      "options": [
+        "Churrasco",
+        "Feijoada",
+        "Moqueca",
+        "Galinhada"
+      ],
+      "answer": 0,
+      "fact": "O churrasco nasceu com os peões e tropeiros dos pampas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que bebida, também chamada de pinga, é destilada do caldo da cana-de-açúcar?",
+      "options": [
+        "Cachaça",
+        "Rum",
+        "Tequila",
+        "Vodca"
+      ],
+      "answer": 0,
+      "fact": "A cachaça é feita do caldo de cana fresco; o rum, quase sempre, do melaço."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce cremoso e marrom é feito cozinhando leite com açúcar por horas?",
+      "options": [
+        "Doce de leite",
+        "Brigadeiro",
+        "Quindim",
+        "Cocada"
+      ],
+      "answer": 0,
+      "fact": "Brasileiros e argentinos disputam até hoje a origem do doce de leite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce é feito de coco ralado e açúcar, em pedaços ou bolinhas?",
+      "options": [
+        "Cocada",
+        "Paçoca",
+        "Pé de moleque",
+        "Rapadura"
+      ],
+      "answer": 0,
+      "fact": "Existem cocadas brancas, queimadas e até de maracujá."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que salgado frito, de massa fina, é o rei das feiras de rua, junto com o caldo de cana?",
+      "options": [
+        "Pastel",
+        "Coxinha",
+        "Esfiha",
+        "Empada"
+      ],
+      "answer": 0,
+      "fact": "A dupla pastel e caldo de cana é um clássico das feiras de São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que expressão de espanto é típica do Nordeste?",
+      "options": [
+        "Oxente",
+        "Uai",
+        "Bah",
+        "Égua"
+      ],
+      "answer": 0,
+      "fact": "\"Oxente\" vem de \"ó, gente!\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que cidade fica a Avenida Paulista?",
+      "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Campinas",
+        "Curitiba"
+      ],
+      "answer": 0,
+      "fact": "A avenida foi inaugurada em 1891 e hoje fecha para os carros aos domingos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a cidade mais populosa do Brasil?",
+      "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Brasília",
+        "Salvador"
+      ],
+      "answer": 0,
+      "fact": "Com mais de 11 milhões de habitantes, é a maior cidade do Hemisfério Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes estados fica na região Sudeste?",
+      "options": [
+        "Espírito Santo",
+        "Bahia",
+        "Goiás",
+        "Paraná"
+      ],
+      "answer": 0,
+      "fact": "O Sudeste tem quatro estados: São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destas frutas é nativa do Brasil?",
+      "options": [
+        "Maracujá",
+        "Maçã",
+        "Pera",
+        "Kiwi"
+      ],
+      "answer": 0,
+      "fact": "Abacaxi, caju e goiaba também são frutas nativas das Américas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que comida de milho ralado é cozida enrolada na palha?",
+      "options": [
+        "Pamonha",
+        "Curau",
+        "Canjica",
+        "Cuscuz"
+      ],
+      "answer": 0,
+      "fact": "Já o curau é um creme de milho servido numa tigela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a refeição barata que já vem montada, com arroz, feijão, carne e salada?",
+      "options": [
+        "Prato feito",
+        "À la carte",
+        "Rodízio",
+        "Bufê"
+      ],
+      "answer": 0,
+      "fact": "O \"PF\" é o almoço clássico dos trabalhadores em todo o país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que feriado nacional cai em 2 de novembro?",
+      "options": [
+        "Finados",
+        "Proclamação da República",
+        "Tiradentes",
+        "Consciência Negra"
+      ],
+      "answer": 0,
+      "fact": "É o dia em que muita gente visita os túmulos de parentes nos cemitérios."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes alimentos foi herdado dos povos indígenas?",
+      "options": [
+        "Mandioca",
+        "Trigo",
+        "Arroz",
+        "Café"
+      ],
+      "answer": 0,
+      "fact": "Farinha, beiju e polvilho vêm todos da mandioca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que figura geométrica amarela fica no meio da bandeira do Brasil?",
+      "options": [
+        "Losango",
+        "Círculo",
+        "Triângulo",
+        "Quadrado"
+      ],
+      "answer": 0,
+      "fact": "O verde e o amarelo vêm das famílias de D. Pedro I (Bragança) e de D. Leopoldina (Habsburgo)."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pássaro de barriga amarela parece cantar o próprio nome?",
+      "options": [
+        "Bem-te-vi",
+        "Sabiá",
+        "Canário",
+        "João-de-barro"
+      ],
+      "answer": 0,
+      "fact": "É uma das aves mais comuns nas cidades brasileiras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que pássaro constrói um ninho de barro com formato de forno?",
+      "options": [
+        "João-de-barro",
+        "Beija-flor",
+        "Pica-pau",
+        "Tico-tico"
+      ],
+      "answer": 0,
+      "fact": "O casal leva semanas carregando bolinhas de barro no bico para erguer o ninho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que cidade é chamada de \"Cidade Maravilhosa\"?",
+      "options": [
+        "Rio de Janeiro",
+        "Salvador",
+        "Florianópolis",
+        "Recife"
+      ],
+      "answer": 0,
+      "fact": "A marchinha \"Cidade Maravilhosa\", de 1934, virou o hino oficial da cidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual destes animais NÃO vive solto na natureza brasileira?",
+      "options": [
+        "Leão",
+        "Onça-pintada",
+        "Anta",
+        "Capivara"
+      ],
+      "answer": 0,
+      "fact": "Os leões selvagens vivem hoje na África e numa pequena região da Índia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que frutinha vermelha, muito usada em sucos, é campeã de vitamina C?",
+      "options": [
+        "Acerola",
+        "Morango",
+        "Cereja",
+        "Pitanga"
+      ],
+      "answer": 0,
+      "fact": "Uma única acerola pode ter mais vitamina C que uma laranja inteira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a dupla mais tradicional do prato brasileiro?",
+      "options": [
+        "Arroz e feijão",
+        "Pão e manteiga",
+        "Macarrão e queijo",
+        "Batata e carne"
+      ],
+      "answer": 0,
+      "fact": "Juntos, arroz e feijão se completam e formam uma proteína de boa qualidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que região do Brasil tem o clima mais frio?",
+      "options": [
+        "Sul",
+        "Sudeste",
+        "Centro-Oeste",
+        "Nordeste"
+      ],
+      "answer": 0,
+      "fact": "Em cidades da Serra Catarinense, como São Joaquim, às vezes neva."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número de documento todo brasileiro tem na Receita Federal, com 11 dígitos?",
+      "options": [
+        "CPF",
+        "RG",
+        "CNPJ",
+        "CEP"
+      ],
+      "answer": 0,
+      "fact": "O CNPJ é o número das empresas, e o CEP, o dos endereços."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para que número se liga para chamar a polícia?",
+      "options": [
+        "190",
+        "192",
+        "193",
+        "180"
+      ],
+      "answer": 0,
+      "fact": "Os bombeiros atendem no 193, e o SAMU, no 192."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ave colorida, de cauda longa, é parente do papagaio?",
+      "options": [
+        "Arara",
+        "Tucano",
+        "Gavião",
+        "Garça"
+      ],
+      "answer": 0,
+      "fact": "A arara-azul é o maior papagaio do mundo em comprimento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que doce junino é feito de amendoim moído com açúcar e esfarela fácil?",
+      "options": [
+        "Paçoca",
+        "Pé de moleque",
+        "Cocada",
+        "Rapadura"
+      ],
+      "answer": 0,
+      "fact": "O nome vem do tupi e quer dizer algo como \"esmigalhado\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que fruta tropical tem uma coroa de folhas e casca cheia de \"escamas\"?",
+      "options": [
+        "Abacaxi",
+        "Manga",
+        "Mamão",
+        "Goiaba"
+      ],
+      "answer": 0,
+      "fact": "O abacaxi é nativo da América do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que réptil terrestre, de casco alto, é muito criado como bicho de estimação no Brasil?",
+      "options": [
+        "Jabuti",
+        "Iguana",
+        "Teiú",
+        "Camaleão"
+      ],
+      "answer": 0,
+      "fact": "Diferente das tartarugas e dos cágados, o jabuti vive em terra firme e não nada bem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que petisco de boteco é feito de pele de porco frita e crocante?",
+      "options": [
+        "Torresmo",
+        "Coxinha",
+        "Bolinho de bacalhau",
+        "Pastel"
+      ],
+      "answer": 0,
+      "fact": "O torresmo é acompanhamento clássico do feijão tropeiro mineiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a cédula de maior valor do real?",
+      "options": [
+        "R$ 200",
+        "R$ 100",
+        "R$ 500",
+        "R$ 1.000"
+      ],
+      "answer": 0,
+      "fact": "Ela foi lançada em 2020. Antes, a maior era a de 100 reais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que bioma acompanha o litoral, do Nordeste ao Sul, e foi o mais desmatado do Brasil?",
+      "options": [
+        "Mata Atlântica",
+        "Cerrado",
+        "Caatinga",
+        "Pampa"
+      ],
+      "answer": 0,
+      "fact": "Resta só cerca de 12% da floresta original."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o código telefônico internacional do Brasil?",
+      "options": [
+        "+55",
+        "+51",
+        "+54",
+        "+57"
+      ],
+      "answer": 0,
+      "fact": "O +54 é da Argentina, e o +351, de Portugal."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o parque mais famoso de São Paulo, com o Obelisco e a Oca?",
+      "options": [
+        "Ibirapuera",
+        "Villa-Lobos",
+        "Parque do Carmo",
+        "Trianon"
+      ],
+      "answer": 0,
+      "fact": "Foi inaugurado em 1954, nos 400 anos da cidade, com prédios de Oscar Niemeyer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que árvore do Sul do Brasil tem pinhas que dão o pinhão?",
+      "options": [
+        "Araucária",
+        "Ipê",
+        "Jatobá",
+        "Seringueira"
+      ],
+      "answer": 0,
+      "fact": "Também chamada de pinheiro-do-paraná, ela está ameaçada de extinção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que árvore brasileira fica coberta de flores amarelas, roxas ou brancas no fim do inverno?",
+      "options": [
+        "Ipê",
+        "Embaúba",
+        "Pau-brasil",
+        "Mangueira"
+      ],
+      "answer": 0,
+      "fact": "Em 1961, a flor do ipê-amarelo foi declarada flor-símbolo do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estado ficam as cidades de Campinas e Sorocaba?",
+      "options": [
+        "São Paulo",
+        "Minas Gerais",
+        "Paraná",
+        "Goiás"
+      ],
+      "answer": 0,
+      "fact": "Campinas é a maior cidade do interior paulista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que macaquinho comum nas cidades tem tufos brancos nas orelhas?",
+      "options": [
+        "Sagui",
+        "Bugio",
+        "Macaco-prego",
+        "Mico-leão-dourado"
+      ],
+      "answer": 0,
+      "fact": "O sagui-de-tufos-brancos é do Nordeste, mas se espalhou por várias cidades do Sudeste."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que apelido recebem os nascidos em Florianópolis?",
+      "options": [
+        "Manezinho da Ilha",
+        "Gaúcho",
+        "Capixaba",
+        "Potiguar"
+      ],
+      "answer": 0,
+      "fact": "Florianópolis fica quase toda na Ilha de Santa Catarina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior estado da região Sul em área?",
+      "options": [
+        "Rio Grande do Sul",
+        "Paraná",
+        "Santa Catarina",
+        "São Paulo"
+      ],
+      "answer": 0,
+      "fact": "São Paulo é do Sudeste, e Santa Catarina é o menor dos três estados do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual região tem a maior população do Brasil?",
+      "options": [
+        "Sudeste",
+        "Nordeste",
+        "Sul",
+        "Norte"
+      ],
+      "answer": 0,
+      "fact": "Segundo o Censo de 2022, quase 42% dos brasileiros vivem no Sudeste."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em quais estados fica o Pantanal brasileiro?",
+      "options": [
+        "Mato Grosso e Mato Grosso do Sul",
+        "Goiás e Tocantins",
+        "Pará e Amazonas",
+        "Bahia e Minas Gerais"
+      ],
+      "answer": 0,
+      "fact": "O Pantanal também avança pela Bolívia e pelo Paraguai."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que cidade fica o Farol da Barra?",
+      "options": [
+        "Salvador",
+        "Recife",
+        "Fortaleza",
+        "Natal"
+      ],
+      "answer": 0,
+      "fact": "O primeiro farol do lugar, de 1698, é considerado o mais antigo das Américas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que moqueca, feita em panela de barro, leva urucum em vez de dendê?",
+      "options": [
+        "Moqueca capixaba",
+        "Moqueca baiana",
+        "Caldeirada",
+        "Peixada"
+      ],
+      "answer": 0,
+      "fact": "As panelas de barro são feitas pelas paneleiras de Goiabeiras, em Vitória."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato baiano é um creme de pão, camarão seco, amendoim e dendê?",
+      "options": [
+        "Vatapá",
+        "Caruru",
+        "Abará",
+        "Bobó de camarão"
+      ],
+      "answer": 0,
+      "fact": "O caruru, que muitas vezes vai junto, é feito com quiabo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato paulista tem feijão com farinha, couve, ovo, linguiça e banana à milanesa?",
+      "options": [
+        "Virado à paulista",
+        "Feijão tropeiro",
+        "Baião de dois",
+        "Arroz carreteiro"
+      ],
+      "answer": 0,
+      "fact": "É o prato tradicional de segunda-feira nos restaurantes de São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato nordestino mistura arroz e feijão cozidos juntos, com queijo coalho?",
+      "options": [
+        "Baião de dois",
+        "Arroz carreteiro",
+        "Feijão tropeiro",
+        "Galinhada"
+      ],
+      "answer": 0,
+      "fact": "O nome vem da música \"Baião de Dois\", de Luiz Gonzaga e Humberto Teixeira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prato gaúcho é feito de arroz com charque picado?",
+      "options": [
+        "Arroz carreteiro",
+        "Baião de dois",
+        "Galinhada",
+        "Arroz de pequi"
+      ],
+      "answer": 0,
+      "fact": "Era a comida dos carreteiros, que viajavam dias levando carga em carros de boi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que serra separa o litoral do planalto paulista e é cortada pela Rodovia dos Imigrantes?",
+      "options": [
+        "Serra do Mar",
+        "Serra da Mantiqueira",
+        "Serra da Cantareira",
+        "Serra Geral"
+      ],
+      "answer": 0,
+      "fact": "Ela guarda um dos maiores trechos preservados de Mata Atlântica do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cidade goiana é famosa pelas águas termais?",
+      "options": [
+        "Caldas Novas",
+        "Pirenópolis",
+        "Anápolis",
+        "Trindade"
+      ],
+      "answer": 0,
+      "fact": "A cidade se apresenta como a maior estância hidrotermal do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cidade paraibana disputa com Caruaru o título de maior São João do mundo?",
+      "options": [
+        "Campina Grande",
+        "João Pessoa",
+        "Patos",
+        "Sousa"
+      ],
+      "answer": 0,
+      "fact": "A festa dura o mês de junho inteiro, no Parque do Povo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estado fica Maragogi, com suas piscinas naturais?",
+      "options": [
+        "Alagoas",
+        "Pernambuco",
+        "Bahia",
+        "Paraíba"
+      ],
+      "answer": 0,
+      "fact": "Fica na Costa dos Corais, uma das maiores áreas de recifes do litoral brasileiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estado fica Ilhabela?",
+      "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Santa Catarina",
+        "Espírito Santo"
+      ],
+      "answer": 0,
+      "fact": "O município fica na Ilha de São Sebastião, no litoral norte paulista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estado ficam Búzios e Arraial do Cabo?",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Espírito Santo",
+        "Bahia"
+      ],
+      "answer": 0,
+      "fact": "Búzios ficou famosa nos anos 1960, depois de uma visita da atriz Brigitte Bardot."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo dura o mandato de um senador?",
+      "options": [
+        "8 anos",
+        "4 anos",
+        "6 anos",
+        "5 anos"
+      ],
+      "answer": 0,
+      "fact": "As eleições para o Senado renovam, a cada 4 anos, ora um terço, ora dois terços das vagas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A partir de que idade o voto passa a ser obrigatório no Brasil?",
+      "options": [
+        "18 anos",
+        "16 anos",
+        "21 anos",
+        "17 anos"
+      ],
+      "answer": 0,
+      "fact": "Depois dos 70 anos, o voto volta a ser facultativo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que órgão emite o passaporte brasileiro comum?",
+      "options": [
+        "Polícia Federal",
+        "Receita Federal",
+        "Detran",
+        "Ministério da Justiça"
+      ],
+      "answer": 0,
+      "fact": "O passaporte comum de quem tem mais de 18 anos vale 10 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que projeto protege as tartarugas marinhas no litoral brasileiro desde 1980?",
+      "options": [
+        "Tamar",
+        "Tatu",
+        "Tubarão Vivo",
+        "Mar Limpo"
+      ],
+      "answer": 0,
+      "fact": "O nome junta as sílabas de \"tartaruga marinha\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes estados NÃO faz fronteira com outro país?",
+      "options": [
+        "Goiás",
+        "Paraná",
+        "Acre",
+        "Roraima"
+      ],
+      "answer": 0,
+      "fact": "Goiás fica no centro do país, cercado só por estados brasileiros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que floresta no meio do Rio de Janeiro é uma das maiores florestas urbanas do mundo?",
+      "options": [
+        "Floresta da Tijuca",
+        "Mata do Jambeiro",
+        "Horto Florestal",
+        "Mata Santa Genebra"
+      ],
+      "answer": 0,
+      "fact": "Ela foi replantada no século 19, depois de desmatada para o plantio de café."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que palácio de Brasília é a residência oficial do presidente?",
+      "options": [
+        "Palácio da Alvorada",
+        "Palácio do Planalto",
+        "Palácio do Itamaraty",
+        "Palácio do Jaburu"
+      ],
+      "answer": 0,
+      "fact": "O Palácio do Jaburu é a residência do vice-presidente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que estado fica o Beach Park, um dos maiores parques aquáticos do Brasil?",
+      "options": [
+        "Ceará",
+        "Bahia",
+        "Rio Grande do Norte",
+        "Pernambuco"
+      ],
+      "answer": 0,
+      "fact": "Ele fica no Porto das Dunas, em Aquiraz, perto de Fortaleza."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o bicho estampado na cédula de 50 reais?",
+      "options": [
+        "Onça-pintada",
+        "Garoupa",
+        "Arara",
+        "Tartaruga-marinha"
+      ],
+      "answer": 0,
+      "fact": "Na nota de 100 aparece a garoupa, e na de 10, a arara."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que monte do sul da Bahia foi a primeira terra avistada pela frota de Cabral, em 1500?",
+      "options": [
+        "Monte Pascoal",
+        "Monte Roraima",
+        "Pico do Cabugi",
+        "Morro de São Paulo"
+      ],
+      "answer": 0,
+      "fact": "Ele tem cerca de 586 metros e hoje é parque nacional."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade catarinense fica o parque Beto Carrero World?",
+      "options": [
+        "Penha",
+        "Balneário Camboriú",
+        "Itajaí",
+        "Blumenau"
+      ],
+      "answer": 0,
+      "fact": "É considerado o maior parque temático da América Latina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos deputados federais tem a Câmara dos Deputados?",
+      "options": [
+        "513",
+        "81",
+        "405",
+        "594"
+      ],
+      "answer": 0,
+      "fact": "Cada estado tem de 8 a 70 deputados, conforme a população."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior macaco das Américas, ameaçado de extinção na Mata Atlântica?",
+      "options": [
+        "Muriqui",
+        "Bugio",
+        "Macaco-aranha",
+        "Mico-leão-dourado"
+      ],
+      "answer": 0,
+      "fact": "Ele também é chamado de mono-carvoeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que estado fica a Serra do Roncador?",
+      "options": [
+        "Mato Grosso",
+        "Goiás",
+        "Tocantins",
+        "Pará"
+      ],
+      "answer": 0,
+      "fact": "A serra inspirou lendas e expedições, como a do explorador inglês Percy Fawcett, que sumiu em 1925."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a maior cidade brasileira que não é capital de estado?",
+      "options": [
+        "Guarulhos",
+        "Campinas",
+        "São Gonçalo",
+        "Duque de Caxias"
+      ],
+      "answer": 0,
+      "fact": "Ela abriga o aeroporto mais movimentado do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade nasceu o pai da aviação brasileira?",
+      "options": [
+        "Palmira, em Minas Gerais",
+        "Petrópolis, no Rio de Janeiro",
+        "Paris, na França",
+        "São Paulo, em São Paulo"
+      ],
+      "answer": 0,
+      "fact": "Hoje a cidade leva o nome dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Segundo o Censo de 2022, que estado tem a maior população indígena?",
+      "options": [
+        "Amazonas",
+        "Bahia",
+        "Mato Grosso do Sul",
+        "Roraima"
+      ],
+      "answer": 0,
+      "fact": "O Censo contou cerca de 1,7 milhão de indígenas no Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que estado fica o arquipélago de Abrolhos, famoso pelas baleias-jubarte?",
+      "options": [
+        "Bahia",
+        "Espírito Santo",
+        "Pernambuco",
+        "Rio de Janeiro"
+      ],
+      "answer": 0,
+      "fact": "Foi o primeiro parque nacional marinho do Brasil, criado em 1983."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que rio separa os estados de São Paulo e Mato Grosso do Sul?",
+      "options": [
+        "Paraná",
+        "Tietê",
+        "Paraguai",
+        "Grande"
+      ],
+      "answer": 0,
+      "fact": "Mais ao sul, o mesmo rio forma a fronteira com o Paraguai e passa por Itaipu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que órgão federal cuida do patrimônio histórico e artístico do Brasil?",
+      "options": [
+        "IPHAN",
+        "IBAMA",
+        "FUNAI",
+        "ANCINE"
+      ],
+      "answer": 0,
+      "fact": "Foi criado em 1937, com participação do escritor Mário de Andrade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ilha baiana fica a vila de Morro de São Paulo?",
+      "options": [
+        "Tinharé",
+        "Itaparica",
+        "Boipeba",
+        "Ilha dos Frades"
+      ],
+      "answer": 0,
+      "fact": "Na vila não circulam carros, e as malas são levadas em carrinhos de mão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que bairro do Rio de Janeiro ganhou o apelido de \"Princesinha do Mar\"?",
+      "options": [
+        "Copacabana",
+        "Ipanema",
+        "Leblon",
+        "Botafogo"
+      ],
+      "answer": 0,
+      "fact": "O apelido ficou famoso com a canção \"Copacabana\", de 1946."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade paulista é chamada de \"Capital Nacional do Agronegócio\"?",
+      "options": [
+        "Ribeirão Preto",
+        "Campinas",
+        "Barretos",
+        "Piracicaba"
+      ],
+      "answer": 0,
+      "fact": "A região é uma das maiores produtoras de cana-de-açúcar do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade de Mato Grosso do Sul é chamada de \"Capital do Pantanal\"?",
+      "options": [
+        "Corumbá",
+        "Campo Grande",
+        "Bonito",
+        "Ponta Porã"
+      ],
+      "answer": 0,
+      "fact": "Fica às margens do rio Paraguai, na fronteira com a Bolívia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que estado fica o Vale do Jequitinhonha?",
+      "options": [
+        "Minas Gerais",
+        "Bahia",
+        "Espírito Santo",
+        "Goiás"
+      ],
+      "answer": 0,
+      "fact": "A região é famosa pelo artesanato em barro, como as bonecas feitas pelas artesãs locais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior lago artificial do Brasil em área?",
+      "options": [
+        "Sobradinho",
+        "Itaipu",
+        "Tucuruí",
+        "Furnas"
+      ],
+      "answer": 0,
+      "fact": "A represa fica no norte da Bahia e formou um dos maiores lagos artificiais do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade fluminense ficam as usinas nucleares do Brasil?",
+      "options": [
+        "Angra dos Reis",
+        "Paraty",
+        "Resende",
+        "Macaé"
+      ],
+      "answer": 0,
+      "fact": "A usina Angra 1 começou a operar em 1985."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade paulista foi chamada de \"Vale da Morte\" pela poluição das indústrias, nos anos 1980?",
+      "options": [
+        "Cubatão",
+        "Santos",
+        "São Bernardo do Campo",
+        "Paulínia"
+      ],
+      "answer": 0,
+      "fact": "Com filtros e controle ambiental, a poluição caiu muito nas décadas seguintes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Segundo o Censo de 2022, qual é a cidade mais populosa do Nordeste?",
+      "options": [
+        "Fortaleza",
+        "Salvador",
+        "Recife",
+        "São Luís"
+      ],
+      "answer": 0,
+      "fact": "Fortaleza passou Salvador por uma diferença de cerca de 10 mil habitantes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que ilha do litoral do Paraná é famosa por não permitir carros?",
+      "options": [
+        "Ilha do Mel",
+        "Ilha de São Francisco do Sul",
+        "Ilha do Cardoso",
+        "Ilha Comprida"
+      ],
+      "answer": 0,
+      "fact": "O Farol das Conchas, de 1872, é um dos cartões-postais da ilha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual estado produz mais vinho no Brasil?",
+      "options": [
+        "Rio Grande do Sul",
+        "Santa Catarina",
+        "São Paulo",
+        "Pernambuco"
+      ],
+      "answer": 0,
+      "fact": "A Serra Gaúcha concentra a maior parte das vinícolas do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade gaúcha é chamada de \"Capital Nacional do Chimarrão\"?",
+      "options": [
+        "Venâncio Aires",
+        "Caxias do Sul",
+        "Pelotas",
+        "Bagé"
+      ],
+      "answer": 0,
+      "fact": "A cidade promove a Fenachim, a Festa Nacional do Chimarrão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual estado é hoje o maior produtor de cacau do Brasil?",
+      "options": [
+        "Pará",
+        "Bahia",
+        "Espírito Santo",
+        "Rondônia"
+      ],
+      "answer": 0,
+      "fact": "Por décadas a Bahia liderou, com a região de Ilhéus, até ser ultrapassada pelo Pará."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual estado produz a maior parte do petróleo do Brasil?",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Espírito Santo",
+        "Bahia"
+      ],
+      "answer": 0,
+      "fact": "A maior parte vem do pré-sal, no mar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que tribunal organiza as eleições no Brasil?",
+      "options": [
+        "TSE",
+        "STF",
+        "STJ",
+        "TCU"
+      ],
+      "answer": 0,
+      "fact": "A urna eletrônica é usada no país desde 1996."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano as mulheres conquistaram o direito de votar no Brasil?",
+      "options": [
+        "1932",
+        "1889",
+        "1946",
+        "1964"
+      ],
+      "answer": 0,
+      "fact": "O primeiro Código Eleitoral do país, de 1932, garantiu o voto feminino."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que nome oficial tem o Aeroporto do Galeão, no Rio de Janeiro?",
+      "options": [
+        "Tom Jobim",
+        "Santos Dumont",
+        "Juscelino Kubitschek",
+        "Vinicius de Moraes"
+      ],
+      "answer": 0,
+      "fact": "O apelido Galeão vem de um navio construído ali no século 17."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que cidade pernambucana, no Vale do São Francisco, produz uva e vinho em pleno semiárido?",
+      "options": [
+        "Petrolina",
+        "Caruaru",
+        "Garanhuns",
+        "Serra Talhada"
+      ],
+      "answer": 0,
+      "fact": "Ela fica de frente para Juazeiro, na Bahia, do outro lado do rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que estado pertence o arquipélago de São Pedro e São Paulo, no meio do Atlântico?",
+      "options": [
+        "Pernambuco",
+        "Rio Grande do Norte",
+        "Bahia",
+        "Ceará"
+      ],
+      "answer": 0,
+      "fact": "Fica a cerca de 1.000 km da costa e tem uma estação científica da Marinha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a rodovia mais extensa do Brasil?",
+      "options": [
+        "BR-116",
+        "BR-101",
+        "BR-230",
+        "BR-040"
+      ],
+      "answer": 0,
+      "fact": "Ela vai de Fortaleza a Jaguarão, na fronteira com o Uruguai."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o ponto extremo oeste do Brasil?",
+      "options": [
+        "Nascente do rio Moa, no Acre",
+        "Monte Caburaí, em Roraima",
+        "Arroio Chuí, no Rio Grande do Sul",
+        "Ponta do Seixas, na Paraíba",
+        "Pico da Neblina, no Amazonas",
+        "Foz do Iguaçu, no Paraná"
+      ],
+      "answer": 0,
+      "fact": "Fica na Serra da Contamana, na fronteira com o Peru."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a altura da árvore mais alta já medida na Amazônia, um angelim-vermelho?",
+      "options": [
+        "Cerca de 88 metros",
+        "Cerca de 30 metros",
+        "Cerca de 45 metros",
+        "Cerca de 60 metros",
+        "Cerca de 120 metros",
+        "Cerca de 150 metros"
+      ],
+      "answer": 0,
+      "fact": "Ela foi encontrada com a ajuda de imagens de satélite, em 2019, na divisa entre o Pará e o Amapá."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a extensão aproximada da fronteira terrestre do Brasil?",
+      "options": [
+        "Cerca de 16.900 km",
+        "Cerca de 5.000 km",
+        "Cerca de 8.000 km",
+        "Cerca de 12.000 km",
+        "Cerca de 22.000 km",
+        "Cerca de 30.000 km"
+      ],
+      "answer": 0,
+      "fact": "O Brasil faz fronteira com 10 países da América do Sul."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas línguas indígenas foram registradas no Censo de 2010?",
+      "options": [
+        "274",
+        "30",
+        "50",
+        "120",
+        "400",
+        "600"
+      ],
+      "answer": 0,
+      "fact": "O mesmo Censo contou 305 etnias indígenas no país."
     }
   ]
 }

@@ -2904,6 +2904,1214 @@
       ],
       "answer": 0,
       "fact": "Em chamadas de vídeo e jogos online, uma latência alta causa atrasos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a maior tecla de um teclado de computador?",
+      "options": [
+        "Barra de espaço",
+        "Enter",
+        "Shift",
+        "Backspace"
+      ],
+      "answer": 0,
+      "fact": "Ela costuma ser apertada com o polegar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Depois de copiar um texto no Windows, que atalho cola?",
+      "options": [
+        "Ctrl + V",
+        "Ctrl + X",
+        "Ctrl + P",
+        "Ctrl + S"
+      ],
+      "answer": 0,
+      "fact": "Ctrl + X recorta, Ctrl + P imprime e Ctrl + S salva."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla do computador tira uma foto da tela inteira?",
+      "options": [
+        "Print Screen",
+        "Home",
+        "Insert",
+        "Tab"
+      ],
+      "answer": 0,
+      "fact": "No celular, isso costuma ser feito apertando dois botões ao mesmo tempo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que quer dizer estar \"online\"?",
+      "options": [
+        "Estar conectado à internet",
+        "Estar sem bateria",
+        "Estar com o celular desligado",
+        "Estar no modo avião"
+      ],
+      "answer": 0,
+      "fact": "O contrário é estar \"offline\", desconectado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho passa para o papel o que está no computador?",
+      "options": [
+        "Impressora",
+        "Scanner",
+        "Monitor",
+        "Roteador"
+      ],
+      "answer": 0,
+      "fact": "O scanner faz o caminho inverso: transforma papel em arquivo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho transforma uma folha de papel num arquivo digital?",
+      "options": [
+        "Scanner",
+        "Impressora",
+        "Projetor",
+        "Teclado"
+      ],
+      "answer": 0,
+      "fact": "Hoje muita gente usa a câmera do celular como scanner."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um e-book?",
+      "options": [
+        "Um livro digital",
+        "Um caderno de anotações",
+        "Um tipo de e-mail",
+        "Um videogame"
+      ],
+      "answer": 0,
+      "fact": "Eles podem ser lidos no celular, no computador ou em leitores como o Kindle."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que serviço do Google guarda arquivos na nuvem?",
+      "options": [
+        "Google Drive",
+        "Google Maps",
+        "Google Tradutor",
+        "Google Chrome"
+      ],
+      "answer": 0,
+      "fact": "A conta gratuita vem com 15 GB de espaço."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que site os criadores pedem para você \"se inscrever no canal\"?",
+      "options": [
+        "YouTube",
+        "WhatsApp",
+        "Wikipédia",
+        "Google Maps"
+      ],
+      "answer": 0,
+      "fact": "O primeiro vídeo do site foi publicado em 2005."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que ícone aparece no celular quando o modo que desliga todas as conexões sem fio está ativo?",
+      "options": [
+        "Um avião",
+        "Um cadeado",
+        "Uma lua",
+        "Um sino"
+      ],
+      "answer": 0,
+      "fact": "O modo avião serve para não interferir nos equipamentos do avião."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla apaga o caractere à direita do cursor?",
+      "options": [
+        "Delete",
+        "Backspace",
+        "Esc",
+        "Tab"
+      ],
+      "answer": 0,
+      "fact": "O Backspace apaga para a esquerda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla confirma um comando ou pula para a linha de baixo?",
+      "options": [
+        "Enter",
+        "Esc",
+        "Shift",
+        "Caps Lock"
+      ],
+      "answer": 0,
+      "fact": "Em alguns teclados ela aparece com o nome \"Return\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tecla, no canto superior esquerdo, costuma cancelar ou fechar menus?",
+      "options": [
+        "Esc",
+        "Enter",
+        "Tab",
+        "Alt"
+      ],
+      "answer": 0,
+      "fact": "Esc vem de \"escape\", que quer dizer \"fugir\" em inglês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a TV que se conecta à internet e roda aplicativos?",
+      "options": [
+        "Smart TV",
+        "TV de tubo",
+        "TV analógica",
+        "Projetor"
+      ],
+      "answer": 0,
+      "fact": "Com ela dá para ver Netflix e YouTube sem outro aparelho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que unidade costuma ser medida a capacidade de um pendrive?",
+      "options": [
+        "Gigabytes",
+        "Watts",
+        "Metros",
+        "Graus"
+      ],
+      "answer": 0,
+      "fact": "Um gigabyte tem mais de um bilhão de bytes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que quer dizer fazer o \"download\" de um arquivo?",
+      "options": [
+        "Baixar o arquivo da internet",
+        "Apagar o arquivo",
+        "Enviar o arquivo para a internet",
+        "Imprimir o arquivo"
+      ],
+      "answer": 0,
+      "fact": "Enviar um arquivo para a internet é fazer o \"upload\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que serviço do Google mostra mapas, rotas e até fotos das ruas?",
+      "options": [
+        "Google Maps",
+        "Google Drive",
+        "Gmail",
+        "Google Fotos"
+      ],
+      "answer": 0,
+      "fact": "As fotos das ruas fazem parte do Street View."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Para onde vão os arquivos apagados no computador antes de sumirem de vez?",
+      "options": [
+        "Lixeira",
+        "Área de trabalho",
+        "Pasta Downloads",
+        "Impressora"
+      ],
+      "answer": 0,
+      "fact": "Enquanto estão na lixeira, dá para recuperar os arquivos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a tela inicial do computador, onde ficam os ícones?",
+      "options": [
+        "Área de trabalho",
+        "Lixeira",
+        "Barra de rolagem",
+        "Proteção de tela"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, ela é chamada de \"desktop\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que tipo de arquivo é um MP3?",
+      "options": [
+        "Música",
+        "Vídeo",
+        "Planilha",
+        "Foto"
+      ],
+      "answer": 0,
+      "fact": "O formato comprime o som e deixa os arquivos bem menores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a bateria portátil usada para carregar o celular fora de casa?",
+      "options": [
+        "Power bank",
+        "Pendrive",
+        "Roteador",
+        "Modem"
+      ],
+      "answer": 0,
+      "fact": "A capacidade dela é medida em mAh."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama a tela que funciona com o toque dos dedos?",
+      "options": [
+        "Touchscreen",
+        "Tela de plasma",
+        "Tela plana",
+        "Tela de tubo"
+      ],
+      "answer": 0,
+      "fact": "Quase todos os celulares de hoje usam esse tipo de tela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é fazer \"login\" num site?",
+      "options": [
+        "Entrar na sua conta",
+        "Apagar a conta",
+        "Comprar algo",
+        "Desligar o computador"
+      ],
+      "answer": 0,
+      "fact": "Sair da conta é fazer \"logout\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que computador portátil tem tela e teclado juntos, numa peça que fecha?",
+      "options": [
+        "Notebook",
+        "Tablet",
+        "Desktop",
+        "Servidor"
+      ],
+      "answer": 0,
+      "fact": "O primeiro notebook de sucesso surgiu nos anos 1980."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho é parecido com um celular grande, mas sem fazer ligações comuns?",
+      "options": [
+        "Tablet",
+        "Notebook",
+        "Smart TV",
+        "Kindle"
+      ],
+      "answer": 0,
+      "fact": "O iPad, lançado em 2010, popularizou os tablets."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que relógio conectado ao celular mede passos e batimentos do coração?",
+      "options": [
+        "Smartwatch",
+        "Cronômetro",
+        "Relógio de bolso",
+        "Ampulheta"
+      ],
+      "answer": 0,
+      "fact": "Muitos modelos também avisam quando chega uma mensagem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aplicativo do Google serve para fazer planilhas?",
+      "options": [
+        "Google Planilhas",
+        "Google Docs",
+        "Google Agenda",
+        "Google Fotos"
+      ],
+      "answer": 0,
+      "fact": "Ele funciona no navegador e permite várias pessoas editarem ao mesmo tempo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chamam as imagens divertidas enviadas no WhatsApp como se fossem adesivos?",
+      "options": [
+        "Figurinhas",
+        "Wallpapers",
+        "Ícones",
+        "Pop-ups"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, elas se chamam \"stickers\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Nas redes sociais, o que quer dizer \"dar like\" num post?",
+      "options": [
+        "Curtir",
+        "Denunciar",
+        "Apagar",
+        "Compartilhar"
+      ],
+      "answer": 0,
+      "fact": "O botão de curtir do Facebook ficou famoso a partir de 2009."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que recurso desbloqueia o celular apenas olhando para a tela?",
+      "options": [
+        "Reconhecimento facial",
+        "Leitor de código de barras",
+        "Modo avião",
+        "Bluetooth"
+      ],
+      "answer": 0,
+      "fact": "Ele usa a câmera frontal e, em alguns aparelhos, sensores infravermelhos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "O que é um \"link\" num texto da internet?",
+      "options": [
+        "Um atalho clicável para outra página",
+        "Um tipo de vírus",
+        "Uma senha",
+        "Uma foto"
+      ],
+      "answer": 0,
+      "fact": "Os links costumam aparecer em azul e sublinhados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que aparelho limpa o chão da casa sozinho?",
+      "options": [
+        "Robô aspirador",
+        "Lava-louças",
+        "Micro-ondas",
+        "Ventilador"
+      ],
+      "answer": 0,
+      "fact": "Ele mapeia os cômodos e volta sozinho para a base de carregamento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que serviço de e-mail é da Microsoft?",
+      "options": [
+        "Outlook",
+        "Gmail",
+        "Yahoo Mail",
+        "Proton Mail"
+      ],
+      "answer": 0,
+      "fact": "Ele substituiu o antigo Hotmail, muito usado nos anos 2000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aparelho recebe o sinal da operadora e leva a internet para dentro de casa?",
+      "options": [
+        "Modem",
+        "Monitor",
+        "Scanner",
+        "Estabilizador"
+      ],
+      "answer": 0,
+      "fact": "O roteador, muitas vezes junto com o modem, distribui o sinal pelo Wi-Fi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o aplicativo de chamadas de vídeo da Apple?",
+      "options": [
+        "FaceTime",
+        "Zoom",
+        "Skype",
+        "Meet"
+      ],
+      "answer": 0,
+      "fact": "Ele foi lançado em 2010, junto com o iPhone 4."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o programa que conversa com as pessoas por texto, simulando um atendente?",
+      "options": [
+        "Chatbot",
+        "Antivírus",
+        "Navegador",
+        "Firewall"
+      ],
+      "answer": 0,
+      "fact": "Muitos chatbots hoje usam inteligência artificial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o número que identifica um aparelho numa rede, como a internet?",
+      "options": [
+        "Endereço IP",
+        "CEP",
+        "CPF",
+        "Número de série"
+      ],
+      "answer": 0,
+      "fact": "IP vem de \"Internet Protocol\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atalho do Windows bloqueia a tela rapidamente?",
+      "options": [
+        "Windows + L",
+        "Ctrl + L",
+        "Alt + F4",
+        "Windows + D"
+      ],
+      "answer": 0,
+      "fact": "Windows + D mostra a área de trabalho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que atalho fecha a janela ativa no Windows?",
+      "options": [
+        "Alt + F4",
+        "Ctrl + Z",
+        "Ctrl + Alt + Del",
+        "Alt + Tab"
+      ],
+      "answer": 0,
+      "fact": "Alt + Tab troca de uma janela para outra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa americana fabrica os processadores de celular Snapdragon?",
+      "options": [
+        "Qualcomm",
+        "Intel",
+        "Apple",
+        "Samsung"
+      ],
+      "answer": 0,
+      "fact": "Muitos celulares Android usam chips Snapdragon."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa comprou o Waze, em 2013?",
+      "options": [
+        "Google",
+        "Apple",
+        "Microsoft",
+        "Uber"
+      ],
+      "answer": 0,
+      "fact": "O Waze foi criado em Israel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa comprou o LinkedIn, em 2016?",
+      "options": [
+        "Microsoft",
+        "Google",
+        "Meta",
+        "Amazon"
+      ],
+      "answer": 0,
+      "fact": "A compra custou cerca de 26 bilhões de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa criou o Photoshop?",
+      "options": [
+        "Adobe",
+        "Microsoft",
+        "Apple",
+        "Corel"
+      ],
+      "answer": 0,
+      "fact": "O nome virou verbo em inglês: \"to photoshop\" é editar uma foto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que formato de imagem aceita fundo transparente?",
+      "options": [
+        "PNG",
+        "JPG",
+        "BMP",
+        "MP4"
+      ],
+      "answer": 0,
+      "fact": "O JPG é ótimo para fotos, mas não guarda transparência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que quer dizer a sigla SMS?",
+      "options": [
+        "Serviço de Mensagens Curtas",
+        "Sistema de Mídia Social",
+        "Sinal Móvel Seguro",
+        "Serviço Multimídia de Som"
+      ],
+      "answer": 0,
+      "fact": "O limite original de uma mensagem SMS era de 160 caracteres."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é um malware?",
+      "options": [
+        "Um programa malicioso",
+        "Um tipo de memória",
+        "Um cabo de rede",
+        "Um aplicativo de música"
+      ],
+      "answer": 0,
+      "fact": "Vírus, worms e ransomwares são tipos de malware."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a extensão dos documentos do Word mais recentes?",
+      "options": [
+        ".docx",
+        ".pdf",
+        ".xlsx",
+        ".pptx"
+      ],
+      "answer": 0,
+      "fact": "A extensão .xlsx é das planilhas do Excel, e a .pptx, das apresentações do PowerPoint."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tipo de memória guarda os dados mesmo sem energia e é usada em pendrives?",
+      "options": [
+        "Memória flash",
+        "Memória RAM",
+        "Memória cache",
+        "Memória virtual"
+      ],
+      "answer": 0,
+      "fact": "Os SSDs também usam memória flash."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aparelho mantém o computador ligado por alguns minutos quando falta luz?",
+      "options": [
+        "Nobreak",
+        "Estabilizador",
+        "Filtro de linha",
+        "Roteador"
+      ],
+      "answer": 0,
+      "fact": "O estabilizador só controla a tensão, sem bateria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que cabo é o mais usado para ligar o computador ou o videogame à TV, com imagem e som?",
+      "options": [
+        "HDMI",
+        "USB",
+        "VGA",
+        "Ethernet"
+      ],
+      "answer": 0,
+      "fact": "O VGA, mais antigo, só transmitia imagem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o assistente de inteligência artificial da Microsoft?",
+      "options": [
+        "Copilot",
+        "Siri",
+        "Alexa",
+        "Bixby"
+      ],
+      "answer": 0,
+      "fact": "A Siri é da Apple, a Alexa, da Amazon, e a Bixby, da Samsung."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa criou o assistente de inteligência artificial Gemini?",
+      "options": [
+        "Google",
+        "Microsoft",
+        "Meta",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "Ele substituiu o Bard, lançado pelo Google em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é o Starlink?",
+      "options": [
+        "Uma internet via satélite",
+        "Uma rede social",
+        "Um carro elétrico",
+        "Um foguete"
+      ],
+      "answer": 0,
+      "fact": "O serviço é da SpaceX, de Elon Musk, e usa milhares de pequenos satélites."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o menor ponto que forma uma imagem digital?",
+      "options": [
+        "Pixel",
+        "Byte",
+        "Bit",
+        "Frame"
+      ],
+      "answer": 0,
+      "fact": "Uma tela Full HD tem mais de 2 milhões de pixels."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que formato de arquivo junta e compacta vários arquivos num só?",
+      "options": [
+        "ZIP",
+        "MP3",
+        "PNG",
+        "TXT"
+      ],
+      "answer": 0,
+      "fact": "O RAR é outro formato famoso de compactação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a rede que liga computadores num mesmo prédio ou casa?",
+      "options": [
+        "Rede local (LAN)",
+        "Rede mundial (WWW)",
+        "Rede social",
+        "Rede elétrica"
+      ],
+      "answer": 0,
+      "fact": "Em inglês, LAN quer dizer \"Local Area Network\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Num e-mail, o que quer dizer o campo \"CC\"?",
+      "options": [
+        "Com cópia",
+        "Conta corrente",
+        "Código de confirmação",
+        "Caixa de correio"
+      ],
+      "answer": 0,
+      "fact": "Já o \"CCO\" é com cópia oculta: os outros destinatários não veem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o sistema operacional dos computadores Mac?",
+      "options": [
+        "macOS",
+        "iOS",
+        "Windows",
+        "Android"
+      ],
+      "answer": 0,
+      "fact": "O iOS é o sistema do iPhone."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que falha nos computadores assustou o mundo na virada para o ano 2000?",
+      "options": [
+        "Bug do milênio",
+        "Vírus ILOVEYOU",
+        "Apagão de 2000",
+        "Worm de Morris"
+      ],
+      "answer": 0,
+      "fact": "Muitos sistemas guardavam o ano com só dois dígitos, e \"00\" podia virar 1900."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que empresa de Elon Musk desenvolve chips para serem implantados no cérebro?",
+      "options": [
+        "Neuralink",
+        "SpaceX",
+        "Tesla",
+        "xAI"
+      ],
+      "answer": 0,
+      "fact": "O primeiro implante num ser humano foi feito em 2024."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pixels tem uma tela Full HD?",
+      "options": [
+        "1920 × 1080",
+        "1280 × 720",
+        "3840 × 2160",
+        "800 × 600"
+      ],
+      "answer": 0,
+      "fact": "O 4K tem quatro vezes mais pixels que o Full HD."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que é o hardware de um computador?",
+      "options": [
+        "As peças físicas",
+        "Os programas",
+        "A conexão com a internet",
+        "As senhas"
+      ],
+      "answer": 0,
+      "fact": "Os programas são o software."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que portal dos anos 1990 era um guia de sites e depois perdeu espaço para o Google?",
+      "options": [
+        "Yahoo!",
+        "Orkut",
+        "Napster",
+        "MSN"
+      ],
+      "answer": 0,
+      "fact": "A empresa recusou comprar o Google por 1 milhão de dólares em 1998."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que aplicativo de videochamadas do Google ficou famoso nas aulas online da pandemia?",
+      "options": [
+        "Google Meet",
+        "Zoom",
+        "Microsoft Teams",
+        "Skype"
+      ],
+      "answer": 0,
+      "fact": "Antes, o Google tinha outros apps de vídeo, como o Hangouts e o Duo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Google lançou o Gmail?",
+      "options": [
+        "2004",
+        "1998",
+        "2001",
+        "2008"
+      ],
+      "answer": 0,
+      "fact": "O lançamento foi num 1º de abril, e muita gente achou que era brincadeira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o WhatsApp foi criado?",
+      "options": [
+        "2009",
+        "2004",
+        "2012",
+        "2015"
+      ],
+      "answer": 0,
+      "fact": "Ele foi criado por Jan Koum e Brian Acton, ex-funcionários do Yahoo!."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual cofundador do Instagram é brasileiro?",
+      "options": [
+        "Mike Krieger",
+        "Kevin Systrom",
+        "Eduardo Saverin",
+        "Jan Koum"
+      ],
+      "answer": 0,
+      "fact": "Ele nasceu em São Paulo e foi estudar em Stanford, onde conheceu Kevin Systrom."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa taiwanesa é a maior montadora dos iPhones?",
+      "options": [
+        "Foxconn",
+        "TSMC",
+        "Samsung",
+        "LG"
+      ],
+      "answer": 0,
+      "fact": "A TSMC fabrica os chips, e a Foxconn monta os aparelhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chama o famoso robô em forma de cachorro da Boston Dynamics?",
+      "options": [
+        "Spot",
+        "Atlas",
+        "ASIMO",
+        "Aibo"
+      ],
+      "answer": 0,
+      "fact": "O Aibo é o cachorro-robô da Sony, e o Atlas, o humanoide da Boston Dynamics."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que brasileiro foi um dos cofundadores do Facebook?",
+      "options": [
+        "Eduardo Saverin",
+        "Mike Krieger",
+        "Jorge Lemann",
+        "Paulo Lemann"
+      ],
+      "answer": 0,
+      "fact": "A história dele aparece no filme \"A Rede Social\", de 2010."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem fundou a Netflix, ao lado de Marc Randolph, em 1997?",
+      "options": [
+        "Reed Hastings",
+        "Jeff Bezos",
+        "Larry Ellison",
+        "Steve Chen"
+      ],
+      "answer": 0,
+      "fact": "No começo, a empresa alugava DVDs pelo correio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem criou a linguagem JavaScript, em 1995?",
+      "options": [
+        "Brendan Eich",
+        "Bill Gates",
+        "Tim Berners-Lee",
+        "Guido van Rossum"
+      ],
+      "answer": 0,
+      "fact": "Ele desenvolveu a primeira versão em cerca de dez dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que filósofo e matemático alemão descreveu o sistema binário moderno, no século 17?",
+      "options": [
+        "Gottfried Leibniz",
+        "Isaac Newton",
+        "René Descartes",
+        "Blaise Pascal"
+      ],
+      "answer": 0,
+      "fact": "Ele também criou o cálculo, ao mesmo tempo que Newton."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a porta padrão do protocolo HTTP, sem o S?",
+      "options": [
+        "80",
+        "21",
+        "25",
+        "8080"
+      ],
+      "answer": 0,
+      "fact": "A porta 21 é do FTP, e a 25, do envio de e-mails."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No IPv6, sucessor do IPv4, cada endereço tem quantos bits?",
+      "options": [
+        "128",
+        "32",
+        "64",
+        "256"
+      ],
+      "answer": 0,
+      "fact": "O IPv6 foi criado porque os endereços IPv4 estavam acabando."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava o algoritmo do Google que ordenava as páginas pelos links que recebiam?",
+      "options": [
+        "PageRank",
+        "LinkScore",
+        "WebRank",
+        "SearchRank"
+      ],
+      "answer": 0,
+      "fact": "O nome é um trocadilho com o sobrenome de Larry Page."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Google comprou a startup que criou o Android?",
+      "options": [
+        "2005",
+        "2000",
+        "2008",
+        "2012"
+      ],
+      "answer": 0,
+      "fact": "O primeiro celular Android só saiu em 2008."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que computador da Apple, de 1984, popularizou o mouse e as janelas na tela?",
+      "options": [
+        "Macintosh",
+        "Apple II",
+        "Lisa",
+        "iMac"
+      ],
+      "answer": 0,
+      "fact": "Ele foi lançado com um famoso comercial no Super Bowl, inspirado no livro \"1984\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa criou a tecnologia Bluetooth?",
+      "options": [
+        "Ericsson",
+        "Nokia",
+        "Motorola",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia o rei viking Harald \"Dente Azul\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa japonesa criou o CD, junto com a holandesa Philips?",
+      "options": [
+        "Sony",
+        "Panasonic",
+        "Toshiba",
+        "Nintendo"
+      ],
+      "answer": 0,
+      "fact": "O tamanho do disco teria sido pensado para caber a Nona Sinfonia de Beethoven inteira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que país foi criado o Brain, considerado o primeiro vírus de computador pessoal, em 1986?",
+      "options": [
+        "Paquistão",
+        "Estados Unidos",
+        "Rússia",
+        "Alemanha"
+      ],
+      "answer": 0,
+      "fact": "Os irmãos que o criaram puseram no vírus o endereço e o telefone da loja deles."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que hacker americano foi um dos mais procurados pelo FBI nos anos 1990?",
+      "options": [
+        "Kevin Mitnick",
+        "Kevin Mitchell",
+        "Edward Snowden",
+        "Julian Assange"
+      ],
+      "answer": 0,
+      "fact": "Depois de preso, ele virou consultor de segurança."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa chinesa criou o sistema operacional HarmonyOS?",
+      "options": [
+        "Huawei",
+        "Xiaomi",
+        "Lenovo",
+        "Tencent"
+      ],
+      "answer": 0,
+      "fact": "A empresa criou o sistema depois de perder acesso a serviços do Google."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa holandesa fabrica as máquinas usadas para produzir os chips mais avançados do mundo?",
+      "options": [
+        "ASML",
+        "Philips",
+        "TSMC",
+        "Intel"
+      ],
+      "answer": 0,
+      "fact": "As máquinas usam luz ultravioleta extrema e custam centenas de milhões de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que protocolo é usado para enviar e-mails pela internet?",
+      "options": [
+        "SMTP",
+        "HTTP",
+        "FTP",
+        "DNS"
+      ],
+      "answer": 0,
+      "fact": "O \"M\" de SMTP vem de \"Mail\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que laboratório nasceu o sistema operacional Unix, em 1969?",
+      "options": [
+        "Bell Labs",
+        "Xerox PARC",
+        "MIT",
+        "IBM"
+      ],
+      "answer": 0,
+      "fact": "Linux e macOS foram inspirados no Unix."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que computador da IBM venceu campeões humanos no programa de perguntas \"Jeopardy!\", em 2011?",
+      "options": [
+        "Watson",
+        "Deep Blue",
+        "HAL 9000",
+        "Summit"
+      ],
+      "answer": 0,
+      "fact": "O Deep Blue, também da IBM, tinha vencido Kasparov no xadrez, em 1997."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o primeiro iPhone sem o botão Home na frente?",
+      "options": [
+        "iPhone X",
+        "iPhone 8",
+        "iPhone 7",
+        "iPhone 11"
+      ],
+      "answer": 0,
+      "fact": "Ele foi lançado em 2017, nos 10 anos do iPhone."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Como se chamava o projeto do Google que tentava levar internet por balões na estratosfera?",
+      "options": [
+        "Loon",
+        "Wing",
+        "Fiber",
+        "Starlink"
+      ],
+      "answer": 0,
+      "fact": "O projeto foi encerrado em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem criou a linguagem Java?",
+      "options": [
+        "James Gosling",
+        "Dennis Ritchie",
+        "Bjarne Stroustrup",
+        "Brendan Eich"
+      ],
+      "answer": 0,
+      "fact": "Ele trabalhava na Sun Microsystems."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi o terceiro fundador da Apple, que vendeu sua parte poucos dias depois?",
+      "options": [
+        "Ronald Wayne",
+        "Mike Markkula",
+        "Tim Cook",
+        "John Sculley"
+      ],
+      "answer": 0,
+      "fact": "Ele recebeu 800 dólares por 10% da empresa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que empresa comprou a divisão de celulares da Nokia, em 2014?",
+      "options": [
+        "Microsoft",
+        "Google",
+        "Samsung",
+        "Apple"
+      ],
+      "answer": 0,
+      "fact": "A aposta nos celulares Windows Phone não deu certo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o Windows XP?",
+      "options": [
+        "2001",
+        "1998",
+        "2004",
+        "2007"
+      ],
+      "answer": 0,
+      "fact": "O suporte da Microsoft ao XP só acabou em 2014."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o ChatGPT foi lançado ao público?",
+      "options": [
+        "2022",
+        "2018",
+        "2020",
+        "2024"
+      ],
+      "answer": 0,
+      "fact": "Ele chegou a 100 milhões de usuários em cerca de dois meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o presidente-executivo do Google desde 2015?",
+      "options": [
+        "Sundar Pichai",
+        "Satya Nadella",
+        "Tim Cook",
+        "Larry Page"
+      ],
+      "answer": 0,
+      "fact": "Ele nasceu na Índia e cresceu na cidade de Chennai."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o presidente-executivo da Microsoft desde 2014?",
+      "options": [
+        "Satya Nadella",
+        "Sundar Pichai",
+        "Bill Gates",
+        "Steve Ballmer"
+      ],
+      "answer": 0,
+      "fact": "Ele também nasceu na Índia, em Hyderabad."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano surgiu a SixDegrees, considerada a primeira rede social?",
+      "options": [
+        "1997",
+        "1985",
+        "1990",
+        "2001",
+        "2003",
+        "2005"
+      ],
+      "answer": 0,
+      "fact": "Ela já permitia criar perfil e listar amigos, mas acabou em 2001."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos transistores tinha o Intel 4004, o primeiro microprocessador comercial?",
+      "options": [
+        "Cerca de 2.300",
+        "Cerca de 50",
+        "Cerca de 500",
+        "Cerca de 25 mil",
+        "Cerca de 1 milhão",
+        "Cerca de 100 milhões"
+      ],
+      "answer": 0,
+      "fact": "Os chips de hoje têm dezenas de bilhões de transistores."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto o primeiro disco rígido da IBM, o RAMAC, de 1956, conseguia guardar?",
+      "options": [
+        "Cerca de 3,75 MB",
+        "Cerca de 10 KB",
+        "Cerca de 300 KB",
+        "Cerca de 100 MB",
+        "Cerca de 1 GB",
+        "Cerca de 10 GB"
+      ],
+      "answer": 0,
+      "fact": "Ele pesava cerca de uma tonelada e era alugado, não vendido."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto custava o primeiro celular comercial, o Motorola DynaTAC, nos EUA, em 1983?",
+      "options": [
+        "Cerca de 4 mil dólares",
+        "Cerca de 100 dólares",
+        "Cerca de 500 dólares",
+        "Cerca de 1.000 dólares",
+        "Cerca de 10 mil dólares",
+        "Cerca de 50 mil dólares"
+      ],
+      "answer": 0,
+      "fact": "A bateria durava cerca de 30 minutos de conversa."
     }
   ]
 }

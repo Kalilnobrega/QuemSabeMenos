@@ -2904,6 +2904,1214 @@
       ],
       "answer": 0,
       "fact": "A Ferrari é a única equipe que disputou todas as temporadas da Fórmula 1 desde 1950."
+    },
+    {
+      "difficulty": "easy",
+      "text": "No futebol, de que cor é o cartão de advertência?",
+      "options": [
+        "Amarelo",
+        "Vermelho",
+        "Azul",
+        "Verde"
+      ],
+      "answer": 0,
+      "fact": "Os cartões amarelo e vermelho estrearam na Copa do Mundo de 1970."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo a seleção brasileira masculina já ganhou?",
+      "options": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Os títulos vieram em 1958, 1962, 1970, 1994 e 2002."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número Pelé usava na camisa da seleção?",
+      "options": [
+        "10",
+        "9",
+        "7",
+        "11"
+      ],
+      "answer": 0,
+      "fact": "Desde ele, a camisa 10 virou a do craque do time."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos dura cada tempo de um jogo de futebol?",
+      "options": [
+        "45",
+        "30",
+        "40",
+        "60"
+      ],
+      "answer": 0,
+      "fact": "Os minutos de acréscimo compensam o tempo parado durante o jogo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o formato da bola de rúgbi?",
+      "options": [
+        "Oval",
+        "Redonda",
+        "Quadrada",
+        "Triangular"
+      ],
+      "answer": 0,
+      "fact": "Por causa do formato, ela quica de um jeito imprevisível."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que estilo de natação o atleta nada de barriga para cima?",
+      "options": [
+        "Costas",
+        "Peito",
+        "Borboleta",
+        "Crawl"
+      ],
+      "answer": 0,
+      "fact": "É o único estilo em que a largada é feita dentro da água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos vale um lance livre no basquete?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "O lance livre é cobrado depois de certas faltas, sem marcação do adversário."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país foi disputada a Copa do Mundo de 2022?",
+      "options": [
+        "Catar",
+        "Rússia",
+        "Arábia Saudita",
+        "Emirados Árabes Unidos"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira Copa jogada no fim do ano, em novembro e dezembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que jogador argentino ergueu a taça da Copa de 2022 como capitão?",
+      "options": [
+        "Lionel Messi",
+        "Diego Maradona",
+        "Ángel Di María",
+        "Lautaro Martínez"
+      ],
+      "answer": 0,
+      "fact": "Messi também tem o recorde de Bolas de Ouro: oito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que jogador português comemora os gols com um pulo e o grito \"Siuuu\"?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Luís Figo",
+        "Eusébio",
+        "Bernardo Silva"
+      ],
+      "answer": 0,
+      "fact": "Ele é o maior artilheiro da história das seleções."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que craque brasileiro, famoso pelo sorriso e pelos dribles, era chamado de \"Bruxo\"?",
+      "options": [
+        "Ronaldinho Gaúcho",
+        "Romário",
+        "Kaká",
+        "Rivaldo"
+      ],
+      "answer": 0,
+      "fact": "Ele foi eleito o melhor jogador do mundo pela FIFA em 2004 e 2005."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte o jogador faz uma \"cortada\" por cima da rede?",
+      "options": [
+        "Vôlei",
+        "Tênis",
+        "Badminton",
+        "Futevôlei"
+      ],
+      "answer": 0,
+      "fact": "A cortada é o ataque mais forte do vôlei, batendo na bola de cima para baixo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que time paulista é chamado de \"Timão\"?",
+      "options": [
+        "Corinthians",
+        "Palmeiras",
+        "São Paulo",
+        "Santos"
+      ],
+      "answer": 0,
+      "fact": "O clube foi fundado em 1910 por operários do bairro do Bom Retiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que time carioca tem o urubu como mascote?",
+      "options": [
+        "Flamengo",
+        "Vasco",
+        "Fluminense",
+        "Botafogo"
+      ],
+      "answer": 0,
+      "fact": "A torcida adotou o urubu em 1969, depois que um foi solto num jogo contra o Botafogo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que time paulista tem o apelido de \"Peixe\"?",
+      "options": [
+        "Santos",
+        "Corinthians",
+        "Palmeiras",
+        "São Paulo"
+      ],
+      "answer": 0,
+      "fact": "O apelido começou como provocação dos rivais e foi abraçado pela torcida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que time gaúcho é chamado de \"Colorado\"?",
+      "options": [
+        "Internacional",
+        "Grêmio",
+        "Juventude",
+        "Caxias"
+      ],
+      "answer": 0,
+      "fact": "O estádio do clube é o Beira-Rio, em Porto Alegre."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que time mineiro tem a raposa como mascote?",
+      "options": [
+        "Cruzeiro",
+        "Atlético-MG",
+        "América-MG",
+        "Villa Nova"
+      ],
+      "answer": 0,
+      "fact": "O mascote do Atlético-MG, rival do Cruzeiro, é o galo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o principal torneio de clubes de futebol da América do Sul?",
+      "options": [
+        "Libertadores",
+        "Copa América",
+        "Sul-Americana",
+        "Recopa"
+      ],
+      "answer": 0,
+      "fact": "O nome homenageia os líderes das independências sul-americanas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o torneio de clubes mais importante do futebol europeu?",
+      "options": [
+        "Liga dos Campeões",
+        "Eurocopa",
+        "Liga Europa",
+        "Copa do Rei"
+      ],
+      "answer": 0,
+      "fact": "A Eurocopa é disputada por seleções, não por clubes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que país nasceu o futebol moderno?",
+      "options": [
+        "Inglaterra",
+        "Brasil",
+        "Itália",
+        "Espanha"
+      ],
+      "answer": 0,
+      "fact": "As primeiras regras oficiais foram criadas em Londres, em 1863."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte se disputa o famoso Grande Prêmio de Mônaco?",
+      "options": [
+        "Fórmula 1",
+        "Ciclismo",
+        "Iatismo",
+        "Motocross"
+      ],
+      "answer": 0,
+      "fact": "A corrida passa pelas ruas estreitas do principado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a principal liga de basquete dos Estados Unidos?",
+      "options": [
+        "NBA",
+        "NFL",
+        "MLB",
+        "NHL"
+      ],
+      "answer": 0,
+      "fact": "NFL é a liga de futebol americano, e MLB, a de beisebol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o chute cobrado da marca a 11 metros do gol?",
+      "options": [
+        "Pênalti",
+        "Escanteio",
+        "Tiro de meta",
+        "Lateral"
+      ],
+      "answer": 0,
+      "fact": "Na decisão por pênaltis, cada time cobra pelo menos cinco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que jogador de futebol pode pegar a bola com as mãos, dentro da área?",
+      "options": [
+        "Goleiro",
+        "Zagueiro",
+        "Lateral",
+        "Volante"
+      ],
+      "answer": 0,
+      "fact": "Fora da área, o goleiro joga como qualquer outro jogador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o esporte da brasileira Marta?",
+      "options": [
+        "Futebol",
+        "Vôlei",
+        "Basquete",
+        "Handebol"
+      ],
+      "answer": 0,
+      "fact": "Ela foi eleita seis vezes a melhor jogadora do mundo pela FIFA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De que cor é a camisa principal da seleção brasileira?",
+      "options": [
+        "Amarela",
+        "Azul",
+        "Branca",
+        "Verde"
+      ],
+      "answer": 0,
+      "fact": "A amarela substituiu a camisa branca depois da derrota na Copa de 1950."
+    },
+    {
+      "difficulty": "easy",
+      "text": "No vôlei, quantos toques o time pode dar antes de passar a bola?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "O toque do bloqueio não entra na conta dos três."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que modalidade os atletas fazem coreografias dentro da piscina?",
+      "options": [
+        "Nado artístico",
+        "Polo aquático",
+        "Salto ornamental",
+        "Maratona aquática"
+      ],
+      "answer": 0,
+      "fact": "Até 2017, ela se chamava nado sincronizado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que país recebeu a Copa do Mundo vencida pela França, em 2018?",
+      "options": [
+        "Rússia",
+        "Alemanha",
+        "Catar",
+        "Japão"
+      ],
+      "answer": 0,
+      "fact": "Na final, a França venceu a Croácia por 4 a 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o apelido do ex-atacante Ronaldo, bicampeão mundial com o Brasil?",
+      "options": [
+        "Fenômeno",
+        "Rei",
+        "Bruxo",
+        "Imperador"
+      ],
+      "answer": 0,
+      "fact": "O \"Imperador\" era Adriano, e o \"Bruxo\", Ronaldinho Gaúcho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que jogador brasileiro fez fama no Barcelona antes de ir para o PSG e para o Al-Hilal?",
+      "options": [
+        "Neymar",
+        "Vinícius Júnior",
+        "Kaká",
+        "Rivaldo"
+      ],
+      "answer": 0,
+      "fact": "Ele começou a carreira profissional no Santos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que esporte existem as posições pivô, ala e armador?",
+      "options": [
+        "Basquete",
+        "Vôlei",
+        "Futebol",
+        "Rúgbi"
+      ],
+      "answer": 0,
+      "fact": "O armador organiza as jogadas, e o pivô joga mais perto da cesta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o último brasileiro a ganhar a Bola de Ouro, em 2007?",
+      "options": [
+        "Kaká",
+        "Ronaldinho Gaúcho",
+        "Neymar",
+        "Rivaldo"
+      ],
+      "answer": 0,
+      "fact": "Antes dele, Ronaldo, Rivaldo e Ronaldinho também foram premiados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que países sediaram juntos a Copa do Mundo de 2026?",
+      "options": [
+        "Estados Unidos, Canadá e México",
+        "Estados Unidos e Canadá",
+        "México e Colômbia",
+        "Canadá, México e Cuba"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira Copa com 48 seleções."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem foi o artilheiro da Copa de 2002, conquistada pelo Brasil?",
+      "options": [
+        "Ronaldo",
+        "Rivaldo",
+        "Ronaldinho Gaúcho",
+        "Romário"
+      ],
+      "answer": 0,
+      "fact": "Ele marcou 8 gols, dois deles na final contra a Alemanha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o disco de borracha usado no hóquei no gelo?",
+      "options": [
+        "Puck",
+        "Bola",
+        "Peteca",
+        "Malha"
+      ],
+      "answer": 0,
+      "fact": "Antes dos jogos, o puck é congelado para quicar menos no gelo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que prova da natação reúne os quatro estilos?",
+      "options": [
+        "Medley",
+        "Revezamento livre",
+        "Maratona aquática",
+        "Nado sincronizado"
+      ],
+      "answer": 0,
+      "fact": "No medley individual, a ordem é borboleta, costas, peito e livre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem é o maior artilheiro da história da seleção brasileira masculina?",
+      "options": [
+        "Neymar",
+        "Pelé",
+        "Ronaldo",
+        "Romário"
+      ],
+      "answer": 0,
+      "fact": "Ele passou Pelé em 2023, segundo a contagem oficial da CBF."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chamava a taça que o Brasil ganhou em definitivo com o tri, em 1970?",
+      "options": [
+        "Jules Rimet",
+        "Taça FIFA",
+        "Copa Roca",
+        "Taça Libertadores"
+      ],
+      "answer": 0,
+      "fact": "Ela foi roubada da sede da CBF em 1983 e nunca mais apareceu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na NBA, com quantas faltas pessoais o jogador é eliminado do jogo?",
+      "options": [
+        "6",
+        "5",
+        "4",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Nos jogos da FIBA, como nas Olimpíadas, bastam 5 faltas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas substituições cada time pode fazer num jogo oficial de futebol hoje?",
+      "options": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "A regra das cinco trocas surgiu na pandemia, em 2020, e depois virou permanente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como é chamado o clássico entre Real Madrid e Barcelona?",
+      "options": [
+        "El Clásico",
+        "Superclássico",
+        "Derby della Madonnina",
+        "Der Klassiker"
+      ],
+      "answer": 0,
+      "fact": "Na Argentina, o Superclássico é Boca Juniors contra River Plate."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que país sediou a Copa do Mundo de 2010?",
+      "options": [
+        "África do Sul",
+        "Alemanha",
+        "Japão",
+        "Brasil"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira Copa disputada no continente africano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que seleção venceu o Brasil por 7 a 1 na semifinal da Copa de 2014?",
+      "options": [
+        "Alemanha",
+        "Holanda",
+        "Argentina",
+        "França"
+      ],
+      "answer": 0,
+      "fact": "O jogo foi no Mineirão, em Belo Horizonte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que goleiro foi titular do Brasil na conquista do penta, em 2002?",
+      "options": [
+        "Marcos",
+        "Dida",
+        "Taffarel",
+        "Rogério Ceni"
+      ],
+      "answer": 0,
+      "fact": "Ele era ídolo do Palmeiras, onde jogou a carreira inteira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quem era o técnico do Brasil na conquista do penta, em 2002?",
+      "options": [
+        "Luiz Felipe Scolari",
+        "Carlos Alberto Parreira",
+        "Zagallo",
+        "Tite"
+      ],
+      "answer": 0,
+      "fact": "O \"Felipão\" voltou a comandar a seleção na Copa de 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que time brasileiro venceu o Chelsea na final do Mundial de Clubes de 2012?",
+      "options": [
+        "Corinthians",
+        "São Paulo",
+        "Internacional",
+        "Santos"
+      ],
+      "answer": 0,
+      "fact": "O gol do título foi do peruano Paolo Guerrero."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que seleção tem mais títulos da Copa América?",
+      "options": [
+        "Argentina",
+        "Brasil",
+        "Uruguai",
+        "Chile"
+      ],
+      "answer": 0,
+      "fact": "O Uruguai vem logo atrás, com 15 títulos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que tenista brasileira chegou à semifinal de Roland Garros em 2023?",
+      "options": [
+        "Beatriz Haddad Maia",
+        "Maria Esther Bueno",
+        "Laura Pigossi",
+        "Teliana Pereira"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira brasileira numa semifinal de Grand Slam na Era Aberta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que torneio de Grand Slam é disputado em Nova York?",
+      "options": [
+        "US Open",
+        "Australian Open",
+        "Roland Garros",
+        "Wimbledon"
+      ],
+      "answer": 0,
+      "fact": "É o último Grand Slam da temporada, jogado no fim de agosto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No tênis, quantos games, no mínimo, é preciso vencer para ganhar um set?",
+      "options": [
+        "6",
+        "4",
+        "5",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Se empatar em 6 a 6, costuma-se jogar um tie-break."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que piloto holandês ganhou quatro títulos seguidos da Fórmula 1, de 2021 a 2024?",
+      "options": [
+        "Max Verstappen",
+        "Lewis Hamilton",
+        "Charles Leclerc",
+        "Lando Norris"
+      ],
+      "answer": 0,
+      "fact": "Ele estreou na Fórmula 1 com apenas 17 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte Daiane dos Santos ficou famosa pelo \"duplo twist carpado\"?",
+      "options": [
+        "Ginástica artística",
+        "Ginástica rítmica",
+        "Saltos ornamentais",
+        "Trampolim"
+      ],
+      "answer": 0,
+      "fact": "Ela foi campeã mundial no solo em 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que judoca brasileira ganhou o ouro nos Jogos do Rio 2016?",
+      "options": [
+        "Rafaela Silva",
+        "Mayra Aguiar",
+        "Sarah Menezes",
+        "Ketleyn Quadros"
+      ],
+      "answer": 0,
+      "fact": "Ela cresceu na Cidade de Deus, no Rio de Janeiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Brasil sediou a Copa do Mundo pela primeira vez?",
+      "options": [
+        "1950",
+        "1938",
+        "1962",
+        "1970"
+      ],
+      "answer": 0,
+      "fact": "A derrota na final para o Uruguai ficou conhecida como \"Maracanaço\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o campeonato inglês de futebol?",
+      "options": [
+        "Premier League",
+        "La Liga",
+        "Bundesliga",
+        "Serie A"
+      ],
+      "answer": 0,
+      "fact": "La Liga é a espanhola, a Bundesliga, a alemã, e a Serie A, a italiana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que famosa corrida de 24 horas é disputada na França?",
+      "options": [
+        "24 Horas de Le Mans",
+        "Rally Dakar",
+        "Indy 500",
+        "Paris-Roubaix"
+      ],
+      "answer": 0,
+      "fact": "Os pilotos se revezam no mesmo carro durante um dia inteiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma piscina semiolímpica?",
+      "options": [
+        "25",
+        "20",
+        "33",
+        "40"
+      ],
+      "answer": 0,
+      "fact": "A piscina olímpica tem o dobro: 50 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que clube Lionel Messi foi revelado e virou ídolo?",
+      "options": [
+        "Barcelona",
+        "Real Madrid",
+        "PSG",
+        "Boca Juniors"
+      ],
+      "answer": 0,
+      "fact": "Ele chegou ao clube aos 13 anos e ficou até 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que esporte Robson Caetano ganhou medalhas olímpicas?",
+      "options": [
+        "Atletismo",
+        "Natação",
+        "Judô",
+        "Ciclismo"
+      ],
+      "answer": 0,
+      "fact": "Ele foi bronze nos 200 m em Seul 1988 e no revezamento 4 × 100 m em Atlanta 1996."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que país surgiu o caratê?",
+      "options": [
+        "Japão",
+        "China",
+        "Coreia do Sul",
+        "Tailândia"
+      ],
+      "answer": 0,
+      "fact": "Ele nasceu em Okinawa, ilha que só passou a ser japonesa no século 19."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De que país é o tenista Carlos Alcaraz?",
+      "options": [
+        "Espanha",
+        "Itália",
+        "Argentina",
+        "Portugal"
+      ],
+      "answer": 0,
+      "fact": "Ele chegou ao número 1 do mundo com apenas 19 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo dura a prorrogação num jogo de futebol?",
+      "options": [
+        "30 minutos",
+        "15 minutos",
+        "20 minutos",
+        "45 minutos"
+      ],
+      "answer": 0,
+      "fact": "São dois tempos de 15 minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que lutador brasileiro do UFC tem o apelido de \"Poatan\"?",
+      "options": [
+        "Alex Pereira",
+        "Anderson Silva",
+        "Charles do Bronx",
+        "José Aldo"
+      ],
+      "answer": 0,
+      "fact": "Ele foi campeão do UFC em duas categorias de peso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem era o técnico do Brasil na conquista do tetra, em 1994?",
+      "options": [
+        "Carlos Alberto Parreira",
+        "Luiz Felipe Scolari",
+        "Telê Santana",
+        "Zagallo"
+      ],
+      "answer": 0,
+      "fact": "Zagallo era o coordenador técnico daquela seleção."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a largura oficial de um gol de futebol, entre as traves?",
+      "options": [
+        "7,32 m",
+        "5 m",
+        "6 m",
+        "8,5 m"
+      ],
+      "answer": 0,
+      "fact": "A altura do gol é de 2,44 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que clube brasileiro foi o primeiro a vencer a Libertadores, em 1962?",
+      "options": [
+        "Santos",
+        "Palmeiras",
+        "Cruzeiro",
+        "São Paulo"
+      ],
+      "answer": 0,
+      "fact": "O time de Pelé ganhou de novo no ano seguinte, em 1963."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que clube italiano tem o apelido de \"Velha Senhora\"?",
+      "options": [
+        "Juventus",
+        "Milan",
+        "Inter de Milão",
+        "Roma"
+      ],
+      "answer": 0,
+      "fact": "O clube é de Turim e veste camisas listradas de preto e branco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No golfe, como se chama acertar o buraco com dois golpes abaixo do par?",
+      "options": [
+        "Eagle",
+        "Birdie",
+        "Bogey",
+        "Albatross"
+      ],
+      "answer": 0,
+      "fact": "Um golpe abaixo do par é um birdie."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção venceu a Copa do Mundo feminina de 2023?",
+      "options": [
+        "Espanha",
+        "Inglaterra",
+        "Estados Unidos",
+        "Suécia"
+      ],
+      "answer": 0,
+      "fact": "A final foi em Sydney, na Austrália, contra a Inglaterra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas medalhas de ouro o Brasil ganhou nos Jogos de Paris 2024?",
+      "options": [
+        "3",
+        "1",
+        "5",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Os ouros vieram com Rebeca Andrade, Beatriz Souza e a dupla Ana Patrícia e Duda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que versão do futebol americano, sem contato, entra nos Jogos de Los Angeles 2028?",
+      "options": [
+        "Flag football",
+        "Arena football",
+        "Futebol canadense",
+        "Touch rugby"
+      ],
+      "answer": 0,
+      "fact": "No flag, em vez de derrubar o adversário, o defensor arranca uma fita da cintura dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que time inglês tem o apelido de \"Red Devils\"?",
+      "options": [
+        "Manchester United",
+        "Liverpool",
+        "Arsenal",
+        "Manchester City"
+      ],
+      "answer": 0,
+      "fact": "O escocês Alex Ferguson treinou o clube por 26 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção venceu a primeira Copa América, em 1916?",
+      "options": [
+        "Uruguai",
+        "Argentina",
+        "Brasil",
+        "Chile"
+      ],
+      "answer": 0,
+      "fact": "O torneio nasceu como Campeonato Sul-Americano de Seleções."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que italiano perdeu o pênalti decisivo na final da Copa de 1994, contra o Brasil?",
+      "options": [
+        "Roberto Baggio",
+        "Franco Baresi",
+        "Paolo Maldini",
+        "Daniele Massaro"
+      ],
+      "answer": 0,
+      "fact": "Baresi e Massaro também erraram suas cobranças naquela decisão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que jogador marcou o gol de mão conhecido como \"a mão de Deus\", em 1986?",
+      "options": [
+        "Diego Maradona",
+        "Lionel Messi",
+        "Mario Kempes",
+        "Gabriel Batistuta"
+      ],
+      "answer": 0,
+      "fact": "No mesmo jogo, contra a Inglaterra, ele fez o \"gol do século\", driblando meio time."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o único goleiro a ganhar a Bola de Ouro?",
+      "options": [
+        "Lev Yashin",
+        "Gianluigi Buffon",
+        "Manuel Neuer",
+        "Dino Zoff"
+      ],
+      "answer": 0,
+      "fact": "O soviético, apelidado de \"Aranha Negra\", ganhou o prêmio em 1963."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Pelé marcou o seu milésimo gol?",
+      "options": [
+        "1969",
+        "1958",
+        "1962",
+        "1974"
+      ],
+      "answer": 0,
+      "fact": "Foi de pênalti, contra o Vasco, em 19 de novembro de 1969."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Copas do Mundo Pelé ganhou como jogador?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "É o único jogador com três títulos mundiais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que clube ganhou a primeira Copa do Brasil, em 1989?",
+      "options": [
+        "Grêmio",
+        "Flamengo",
+        "Cruzeiro",
+        "Palmeiras"
+      ],
+      "answer": 0,
+      "fact": "Na final, o time gaúcho venceu o Sport."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos de Grand Slam em simples Serena Williams ganhou?",
+      "options": [
+        "23",
+        "18",
+        "20",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "É o recorde de títulos na Era Aberta, iniciada em 1968."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o percurso aproximado do Tour de France, em três semanas de prova?",
+      "options": [
+        "Cerca de 3.500 km",
+        "Cerca de 800 km",
+        "Cerca de 1.500 km",
+        "Cerca de 8.000 km"
+      ],
+      "answer": 0,
+      "fact": "O líder da classificação geral veste a famosa camisa amarela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que cidade fica a sede do Comitê Olímpico Internacional?",
+      "options": [
+        "Lausanne",
+        "Genebra",
+        "Paris",
+        "Atenas"
+      ],
+      "answer": 0,
+      "fact": "A cidade suíça também abriga o Museu Olímpico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a seleção masculina de vôlei ganhou o primeiro ouro olímpico do Brasil na modalidade?",
+      "options": [
+        "1992",
+        "1984",
+        "2004",
+        "2016"
+      ],
+      "answer": 0,
+      "fact": "O técnico do time, em Barcelona, era José Roberto Guimarães."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos pontos vale um jogo perfeito no boliche?",
+      "options": [
+        "300",
+        "100",
+        "200",
+        "250"
+      ],
+      "answer": 0,
+      "fact": "É preciso fazer 12 strikes seguidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos segundos um time de basquete tem para arremessar a cada posse de bola?",
+      "options": [
+        "24",
+        "30",
+        "20",
+        "45"
+      ],
+      "answer": 0,
+      "fact": "Na NBA, o relógio de posse de bola foi criado em 1954."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No vôlei, até quantos pontos vai o quinto set, o tie-break?",
+      "options": [
+        "15",
+        "10",
+        "21",
+        "25"
+      ],
+      "answer": 0,
+      "fact": "É preciso vencer com pelo menos 2 pontos de vantagem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas corridas de Fórmula 1 Ayrton Senna venceu?",
+      "options": [
+        "41",
+        "25",
+        "51",
+        "65"
+      ],
+      "answer": 0,
+      "fact": "Ele também fez 65 pole positions."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem foi o primeiro campeão mundial de Fórmula 1, em 1950?",
+      "options": [
+        "Giuseppe Farina",
+        "Juan Manuel Fangio",
+        "Alberto Ascari",
+        "Stirling Moss"
+      ],
+      "answer": 0,
+      "fact": "O argentino Fangio ganhou cinco títulos nos anos 1950."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que lutador brasileiro, campeão do Pride e do UFC, tem o apelido de \"Minotauro\"?",
+      "options": [
+        "Rodrigo Nogueira",
+        "Wanderlei Silva",
+        "Vitor Belfort",
+        "Maurício Shogun"
+      ],
+      "answer": 0,
+      "fact": "O irmão gêmeo dele, Rogério, o \"Minotouro\", também foi lutador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem ganhou a primeira medalha olímpica do skate brasileiro, em Tóquio 2020?",
+      "options": [
+        "Kelvin Hoefler",
+        "Pedro Barros",
+        "Rayssa Leal",
+        "Ítalo Ferreira"
+      ],
+      "answer": 0,
+      "fact": "A prata dele foi também a primeira medalha do Brasil naqueles Jogos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a seleção feminina de vôlei ganhou o primeiro ouro olímpico do Brasil?",
+      "options": [
+        "2008",
+        "1996",
+        "2000",
+        "2012"
+      ],
+      "answer": 0,
+      "fact": "Ela repetiu o ouro em Londres, em 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem era o técnico do Brasil na conquista do tri, em 1970?",
+      "options": [
+        "Zagallo",
+        "Telê Santana",
+        "Vicente Feola",
+        "Aymoré Moreira"
+      ],
+      "answer": 0,
+      "fact": "Ele também foi campeão como jogador, em 1958 e 1962."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que estádio foi a final da Copa do Mundo de 2014?",
+      "options": [
+        "Maracanã",
+        "Mineirão",
+        "Arena Corinthians",
+        "Mané Garrincha"
+      ],
+      "answer": 0,
+      "fact": "A Alemanha venceu a Argentina por 1 a 0, na prorrogação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogadores cada time tem em campo no futebol de areia (beach soccer)?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "A seleção brasileira é a maior campeã mundial da modalidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que seleção foi a primeira africana a chegar a uma semifinal de Copa do Mundo, em 2022?",
+      "options": [
+        "Marrocos",
+        "Senegal",
+        "Camarões",
+        "Gana"
+      ],
+      "answer": 0,
+      "fact": "No caminho, eliminou Espanha e Portugal."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a circunferência oficial de uma bola de futebol de campo?",
+      "options": [
+        "Entre 68 e 70 cm",
+        "Entre 50 e 52 cm",
+        "Entre 58 e 60 cm",
+        "Entre 75 e 77 cm",
+        "Entre 80 e 82 cm",
+        "Entre 90 e 92 cm"
+      ],
+      "answer": 0,
+      "fact": "O peso oficial fica entre 410 e 450 gramas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto pesa a taça da Copa do Mundo da FIFA?",
+      "options": [
+        "Cerca de 6,1 kg",
+        "Cerca de 1,5 kg",
+        "Cerca de 3 kg",
+        "Cerca de 10 kg",
+        "Cerca de 18 kg",
+        "Cerca de 25 kg"
+      ],
+      "answer": 0,
+      "fact": "Ela é feita de ouro 18 quilates e tem 36,8 cm de altura."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o recorde mundial do salto em altura masculino?",
+      "options": [
+        "2,45 m",
+        "2,10 m",
+        "2,30 m",
+        "2,60 m",
+        "2,80 m",
+        "3,00 m"
+      ],
+      "answer": 0,
+      "fact": "O cubano Javier Sotomayor bateu o recorde em 1993, e ninguém o superou desde então."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a velocidade do saque mais rápido já medido no tênis profissional?",
+      "options": [
+        "Cerca de 263 km/h",
+        "Cerca de 180 km/h",
+        "Cerca de 210 km/h",
+        "Cerca de 300 km/h",
+        "Cerca de 340 km/h",
+        "Cerca de 400 km/h"
+      ],
+      "answer": 0,
+      "fact": "O saque foi do australiano Sam Groth, em 2012."
     }
   ]
 }
