@@ -18,6 +18,7 @@ def fresh_rooms(monkeypatch):
     monkeypatch.setattr(game, "LEVEL_SECONDS", 0.05)
     monkeypatch.setattr(game, "INTRO_SECONDS", 0.05)
     monkeypatch.setattr(game, "BET_SECONDS", 1.0)
+    monkeypatch.setattr(game, "LATE_SECONDS", 0.05)
     monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 0.05)
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 0.05)
     monkeypatch.setattr(rooms, "ANSWER_SECONDS", 1.0)

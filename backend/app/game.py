@@ -49,6 +49,9 @@ START_SECONDS = 5.0
 LEVEL_SECONDS = 3.0  # apresentação rápida quando a dificuldade muda
 INTRO_SECONDS = 5.0
 BET_SECONDS = 12.0
+# O relógio do jogador começa quando o estado chega (atrasado pela rede) e o clique ainda
+# precisa voltar: sem essa folga, quem clica no último instante fica sem resposta.
+LATE_SECONDS = 1.0
 PREPARATION_PHASES = ("starting", "level", "intro", "betting")
 RESULTS_SECONDS_PER_CHAR = 0.055
 MIN_RESULTS_SECONDS = 7.0
@@ -251,16 +254,16 @@ class Game:
         self._enter("answering", now, self.answer_seconds)
 
     def answer(self, player_id: str, option: int, now: float) -> None:
-        if self.phase != "answering" or now > self.phase_ends_at:
+        if self.phase != "answering" or now > self.phase_ends_at + LATE_SECONDS:
             raise GameError("Agora não dá para responder.")
         if player_id in self.answers:
             raise GameError("Você já respondeu.")
         if not 0 <= option < len(self.question.options):
             raise GameError("Alternativa inválida.")
-        self.answers[player_id] = Answer(option, now)
+        self.answers[player_id] = Answer(option, min(now, self.phase_ends_at))
 
     def bet(self, player: Scorable, amount: int, now: float) -> None:
-        if self.phase != "betting" or now > self.phase_ends_at:
+        if self.phase != "betting" or now > self.phase_ends_at + LATE_SECONDS:
             raise GameError("Agora não dá para apostar.")
         if player.id in self.bets:
             raise GameError("Você já apostou.")

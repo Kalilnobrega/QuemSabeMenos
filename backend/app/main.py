@@ -103,7 +103,7 @@ async def run_game(room: Room) -> None:
             await broadcast(room)
             if game.phase == "betting":
                 with suppress(TimeoutError):
-                    await asyncio.wait_for(done.wait(), game.phase_ends_at - time.monotonic())
+                    await asyncio.wait_for(done.wait(), game.phase_ends_at + rules.LATE_SECONDS - time.monotonic())
                 done.clear()
                 if not alive():
                     return
@@ -123,7 +123,7 @@ async def run_game(room: Room) -> None:
             await broadcast(room)
             if not game.everyone_answered(room.connected_ids()):
                 with suppress(TimeoutError):
-                    await asyncio.wait_for(done.wait(), game.answer_seconds)
+                    await asyncio.wait_for(done.wait(), game.phase_ends_at + rules.LATE_SECONDS - time.monotonic())
             if not alive():
                 return
 

@@ -9,6 +9,7 @@ from app.game import (
     MIN_RESULTS_SECONDS,
     MIN_READING_SECONDS,
     BET_SECONDS,
+    LATE_SECONDS,
     Game,
     GameError,
     Question,
@@ -253,7 +254,17 @@ def test_answer_after_deadline_is_rejected():
     game.start_round(now=0)
     game.open_answers(now=1)
     with pytest.raises(GameError):
-        game.answer("ana", 0, now=11.5)
+        game.answer("ana", 0, now=11 + LATE_SECONDS + 0.1)
+
+
+def test_last_instant_clicks_still_count_despite_the_network():
+    game = Game(questions=[question("q1")], answer_seconds=10)
+    game.start_round(now=0)
+    game.open_answers(now=1)
+    game.answer("ana", 0, now=11 + LATE_SECONDS / 2)  # clicou com 0 s na tela, chegou atrasado
+    ana = P("ana", 0)
+    game.close_round([ana], now=11 + LATE_SECONDS)
+    assert game.results[0].correct and game.results[0].option == 0  # vale como resposta no fim do tempo
 
 
 def test_results_last_longer_for_longer_facts():
@@ -317,7 +328,7 @@ def test_bets_pay_on_right_answers_and_cost_on_wrong_or_missing_ones():
     assert game.everyone_bet([ana, bia, caio, dani])  # dani não tem QI para apostar
     assert game.view(now=2).bets_placed == ["ana", "bia", "caio"]
     with pytest.raises(GameError):
-        game.bet(dani, 0, now=BET_SECONDS + 1)  # fora da fase
+        game.bet(dani, 0, now=BET_SECONDS + LATE_SECONDS + 1)  # fora da fase
 
     game.begin_reading(now=3)
     game.open_answers(now=4)
