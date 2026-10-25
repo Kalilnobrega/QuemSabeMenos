@@ -16,9 +16,11 @@ from app.events import (
     OkAck,
     Pong,
     RejoinRoomRequest,
+    ArmPowerUpRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     UpdateSettingsRequest,
+    UsePowerUpRequest,
 )
 from app import game as rules
 from app.rooms import Player, Room, RoomError, RoomManager
@@ -29,7 +31,8 @@ RECONNECT_GRACE_SECONDS = float(os.getenv("RECONNECT_GRACE_SECONDS", "30"))
 
 sio = socketio.AsyncServer(async_mode="asgi", cors_allowed_origins=CORS_ORIGINS)
 rooms = RoomManager()
-# Sinaliza que todos os conectados já responderam (ou apostaram), para encerrar a fase antes do tempo.
+# Sinaliza que todos os conectados já responderam (ou apostaram, ou pularam a revelação),
+# para encerrar a fase antes do tempo.
 round_done: dict[str, asyncio.Event] = {}
 
 api = FastAPI(title="Quem Sabe Menos?")
@@ -41,18 +44,23 @@ async def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
+
 def error(message: str) -> dict:
     return ErrorAck(error=message).model_dump()
 
 
 async def broadcast(room: Room) -> None:
-    await sio.emit("room_state", room.view().model_dump(), to=room.code)
+    """Cada jogador recebe o próprio estado: as habilidades de cada um são secretas."""
+    now = time.monotonic()
+    for player in room.players:
+        if player.sid:
+            await sio.emit("room_state", room.view(now, player.id).model_dump(), to=player.sid)
 
 
 async def joined(sid: str, room: Room, player: Player) -> dict:
     await sio.enter_room(sid, room.code)
     await broadcast(room)
-    return JoinedAck(player_id=player.id, token=player.token, room=room.view()).model_dump()
+    return JoinedAck(player_id=player.id, token=player.token, room=room.view(viewer=player.id)).model_dump()
 
 
 def check_round_done(room: Room) -> None:
@@ -60,8 +68,10 @@ def check_round_done(room: Room) -> None:
     if not game:
         return
     connected = [p for p in room.players if p.connected]
-    if (game.phase == "answering" and game.everyone_answered(room.connected_ids())) or (
-        game.phase == "betting" and game.everyone_bet(connected)
+    if (
+        (game.phase == "answering" and game.everyone_answered(room.connected_ids()))
+        or (game.phase == "betting" and game.everyone_bet(connected))
+        or (game.phase == "results" and game.everyone_ready(room.connected_ids()))
     ):
         if event := round_done.get(room.code):
             event.set()
@@ -121,15 +131,21 @@ async def run_game(room: Room) -> None:
 
             game.open_answers(time.monotonic())
             await broadcast(room)
-            if not game.everyone_answered(room.connected_ids()):
+            # Cada um tem o seu prazo (Tempo extra, Acelerador): espera até o último de quem falta.
+            while (close_at := game.answers_close_at(room.connected_ids())) and close_at > time.monotonic():
                 with suppress(TimeoutError):
-                    await asyncio.wait_for(done.wait(), game.phase_ends_at + rules.LATE_SECONDS - time.monotonic())
+                    await asyncio.wait_for(done.wait(), close_at - time.monotonic())
+                done.clear()
+                if not alive():
+                    return
             if not alive():
                 return
 
+            done.clear()
             game.close_round(room.players, time.monotonic())
             await broadcast(room)
-            await asyncio.sleep(game.phase_ends_at - time.monotonic())
+            with suppress(TimeoutError):
+                await asyncio.wait_for(done.wait(), game.phase_ends_at - time.monotonic())
             if not alive():
                 return
             if not game.has_next_round:
@@ -201,7 +217,7 @@ async def update_settings(sid: str, data: dict) -> dict:
     try:
         request = UpdateSettingsRequest.model_validate(data)
         room = rooms.update_settings(
-            sid, request.rounds, request.themes, request.answer_seconds, request.speed_grace_seconds
+            sid, request.rounds, request.themes, request.answer_seconds, request.speed_grace_seconds, request.mode, request.powerup_max
         )
     except ValidationError:
         return error("Dados inválidos.")
@@ -242,6 +258,43 @@ async def submit_bet(sid: str, data: dict) -> dict:
         room = rooms.bet(sid, request.amount, time.monotonic())
     except ValidationError:
         return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    check_round_done(room)
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def arm_powerup(sid: str, data: dict) -> dict:
+    try:
+        request = ArmPowerUpRequest.model_validate(data)
+        room = rooms.arm_powerup(sid, request.kind, request.target)
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def use_powerup(sid: str, data: dict) -> dict:
+    try:
+        request = UsePowerUpRequest.model_validate(data)
+        room = rooms.use_powerup(sid, request.kind)
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def skip_results(sid: str) -> dict:
+    try:
+        room = rooms.ready(sid)
     except RoomError as e:
         return error(str(e))
     check_round_done(room)

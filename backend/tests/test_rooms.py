@@ -178,3 +178,20 @@ def test_host_sets_answer_time_and_full_iq_time(manager):
     assert room.game.answer_seconds == 20
     assert room.game.speed_fraction(5) == 1.0
     assert room.game.speed_fraction(12.5) == 0.5
+
+
+def test_host_picks_the_mode_and_only_powers_deals_powerups(manager):
+    room, _ = manager.create("sid-ana", Profile(nickname="Ana", avatar="gato"))
+    manager.join("sid-bia", room.code, Profile(nickname="Bia", avatar="sapo"))
+    assert room.view().settings.mode == "classic"
+    manager.start("sid-ana")
+    assert room.game.powerups == {} and not room.game.powers
+    room.game.finish(0)
+    manager.play_again("sid-ana")
+    with pytest.raises(RoomError):
+        manager.update_settings("sid-ana", powerup_max=4)
+    manager.update_settings("sid-ana", mode="powers", powerup_max=3)
+    assert room.view().settings.powerup_max == 3
+    manager.start("sid-ana")
+    assert room.game.powers and room.game.powerup_max == 3
+    assert all(len(held) == 1 for held in room.game.powerups.values())

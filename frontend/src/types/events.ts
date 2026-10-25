@@ -9,6 +9,30 @@ export interface Events {
   [k: string]: unknown;
 }
 /**
+ * Na revelação: a habilidade vale na próxima pergunta. `target` só nas que miram alguém.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "ArmPowerUpRequest".
+ */
+export interface ArmPowerUpRequest {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier";
+  target?: string | null;
+}
+/**
  * Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
  * de erros (negativo). Uma sequência repetida na mesma partida vale a metade.
  *
@@ -78,6 +102,51 @@ export interface GameView {
   bet_max_percent: number;
   bet_odds: number;
   bets_placed: string[];
+  powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+  )[];
+  powerup_max: number;
+  starting_powerup:
+    | (
+        | "fifty_fifty"
+        | "shield"
+        | "double"
+        | "peek"
+        | "extra_time"
+        | "second_chance"
+        | "reverse"
+        | "scratch"
+        | "steal"
+        | "scramble"
+        | "accelerator"
+        | "mirror"
+        | "silence"
+        | "magnifier"
+      )
+    | null;
+  can_arm: boolean;
+  armed: PowerUpUse | null;
+  active: PowerUpUse[];
+  hidden_options: number[];
+  first_wrong: number | null;
+  peek: number[] | null;
+  speed_grace_ms: number;
+  lasting: LastingPowerUp[];
+  powers_round: boolean;
+  ready: string[];
   correct_option: number | null;
   fact: string | null;
   results: RoundResult[];
@@ -94,6 +163,55 @@ export interface QuestionView {
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "PowerUpUse".
+ */
+export interface PowerUpUse {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier";
+  by: string;
+  target: string | null;
+  reflected_by: string | null;
+}
+/**
+ * Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "LastingPowerUp".
+ */
+export interface LastingPowerUp {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier";
+  rounds_left: number;
+  total: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "RoundResult".
  */
 export interface RoundResult {
@@ -104,6 +222,50 @@ export interface RoundResult {
   bonuses: Bonus[];
   bet: number | null;
   bet_delta: number;
+  shielded: number;
+  stolen: number;
+  robbed: number;
+  doubled: boolean;
+  first_option: number | null;
+  expired: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+  )[];
+  gained: PowerUpGain | null;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "PowerUpGain".
+ */
+export interface PowerUpGain {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier";
+  reason: "start" | "streak" | "comeback";
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -163,6 +325,10 @@ export interface RoomState {
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
+  mode: "classic" | "powers";
+  mode_options: ("classic" | "powers")[];
+  powerup_max: number;
+  powerup_max_options: number[];
   rounds: number;
   answer_seconds: number;
   speed_grace_seconds: number;
@@ -244,8 +410,33 @@ export interface SubmitBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
+  mode?: ("classic" | "powers") | null;
+  powerup_max?: number | null;
   rounds?: number | null;
   answer_seconds?: number | null;
   speed_grace_seconds?: number | null;
   themes?: string[] | null;
+}
+/**
+ * Durante a pergunta (50/50 e Espiar): vale na hora.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "UsePowerUpRequest".
+ */
+export interface UsePowerUpRequest {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier";
 }

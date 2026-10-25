@@ -64,8 +64,10 @@ def test_points_follow_the_rules():
 
 def test_split_by_difficulty():
     assert split_by_difficulty(15) == {"easy": 5, "medium": 5, "hard": 5}
-    assert split_by_difficulty(10) == {"easy": 4, "medium": 3, "hard": 3}
-    assert split_by_difficulty(5) == {"easy": 2, "medium": 2, "hard": 1}
+    assert split_by_difficulty(10) == {"easy": 3, "medium": 3, "hard": 4}
+    assert split_by_difficulty(20) == {"easy": 6, "medium": 7, "hard": 7}
+    assert split_by_difficulty(35) == {"easy": 11, "medium": 12, "hard": 12}
+    assert split_by_difficulty(25) == {"easy": 8, "medium": 8, "hard": 9}
 
 
 def test_bank_is_valid_and_has_every_difficulty():
@@ -349,3 +351,350 @@ def test_other_rounds_have_no_bet():
     assert game.results[0].bet is None
     game.start_round(now=0)  # round 1 = aposta
     assert game.phase == "betting"
+
+
+def reveal(game: Game, players: list[P], picks: dict[str, int | None]) -> None:
+    """Abre a próxima rodada pelo caminho normal (ativando as habilidades armadas) e revela."""
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    for pid, option in picks.items():
+        if option is not None:
+            game.answer(pid, option, now=1)
+    game.close_round(players, now=20)
+
+
+def test_everyone_starts_with_one_random_powerup():
+    game = Game(powers=True, questions=[question("q")], answer_seconds=10, rng=random.Random(1))
+    game.deal_powerups(["ana", "bia"])
+    for pid in ("ana", "bia"):
+        view = game.view(now=0, viewer=pid)
+        assert len(view.powerups) == 1 and view.starting_powerup == view.powerups[0]
+    assert game.view(now=0).powerups == []  # ninguém vê as habilidades dos outros
+
+
+def test_powerups_are_armed_on_the_reveal_and_count_on_the_next_question():
+    game = Game(powers=True, questions=[question("e0"), question("e1")], answer_seconds=10)
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": ["shield", "steal"], "bia": []}
+    with pytest.raises(GameError, match="Agora não"):
+        game.arm("ana", "shield", None, ["ana", "bia"])  # ainda não é a revelação
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    assert game.can_arm
+    with pytest.raises(GameError, match="não tem"):
+        game.arm("bia", "shield", None, ["ana", "bia"])
+    with pytest.raises(GameError, match="Escolha em quem"):
+        game.arm("ana", "steal", "ana", ["ana", "bia"])
+    game.arm("ana", "steal", "bia", ["ana", "bia"])
+    with pytest.raises(GameError, match="já armou"):
+        game.arm("ana", "shield", None, ["ana", "bia"])
+    assert game.view(now=0, viewer="ana").powerups == ["shield"]
+    assert game.view(now=0, viewer="ana").armed.target == "bia"
+    assert game.view(now=0, viewer="bia").armed is None
+
+    reveal(game, [ana, bia], {"ana": 0, "bia": 1})  # bia erra a fácil: -15, ana leva os 15
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["ana"].stolen, ana.score) == (15, 67)  # + 2 de gabaritar as fáceis
+    assert (by_id["bia"].delta, bia.score) == (-15, 35)
+    assert not game.can_arm  # acabou a partida
+
+
+def test_steal_takes_half_of_a_right_answer_from_the_target():
+    game = Game(powers=True, questions=[question("m0", "medium"), question("m1", "medium")], answer_seconds=10)
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": ["steal"], "bia": []}
+    reveal(game, [ana, bia], {"ana": 1, "bia": 1})  # os dois erram a média: -10
+    game.arm("ana", "steal", "bia", ["ana", "bia"])
+    game.start_round(now=0)
+    assert game.view(now=0, viewer="bia").active == []  # o alvo só descobre na revelação
+    assert [u.kind for u in game.view(now=0, viewer="ana").active] == ["steal"]
+    game.open_answers(now=0)
+    game.answer("ana", 1, now=1)
+    game.answer("bia", 0, now=1)  # bia acerta na carência: +11, ana leva 5
+    game.close_round([ana, bia], now=20)
+    assert [u.kind for u in game.view(now=20, viewer="bia").active] == ["steal"]
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["bia"].delta, by_id["bia"].robbed, bia.score) == (11, 5, 46)
+    assert (by_id["ana"].stolen, ana.score) == (5, 35)  # errou: -10, +5 roubados
+
+
+def test_shield_holds_the_penalty_and_blocks_a_steal():
+    game = Game(powers=True, questions=[question("e0"), question("e1")], answer_seconds=10)
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": ["steal"], "bia": ["shield"]}
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    game.arm("ana", "steal", "bia", ["ana", "bia"])
+    game.arm("bia", "shield", None, ["ana", "bia"])
+    reveal(game, [ana, bia], {"ana": 0, "bia": None})
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["bia"].delta, by_id["bia"].shielded, bia.score) == (0, 10, 50)
+    assert (by_id["ana"].stolen, ana.score) == (0, 52)  # só o bônus das fáceis
+
+
+def test_fifty_fifty_is_used_during_the_question_and_only_for_who_used_it():
+    game = Game(powers=True, questions=[question("e0"), question("e1", answer=3)], answer_seconds=10)
+    ana, bia = P("ana"), P("bia")
+    game.powerups = {"ana": ["fifty_fifty"]}
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    with pytest.raises(GameError, match="na hora da pergunta"):
+        game.arm("ana", "fifty_fifty", None, ["ana", "bia"])
+    game.start_round(now=0)
+    game.use_now("ana", "fifty_fifty")  # ainda lendo: já vale
+    hidden = game.view(now=0, viewer="ana").hidden_options
+    assert len(hidden) == 2 and 3 not in hidden and game.powerups["ana"] == []
+    assert game.view(now=0, viewer="bia").hidden_options == []
+    assert [u.kind for u in game.view(now=0, viewer="bia").active] == ["fifty_fifty"]  # todo mundo vê o anúncio
+    game.open_answers(now=0)
+    with pytest.raises(GameError, match="inválida"):
+        game.answer("ana", hidden[0], now=1)
+    game.answer("ana", 3, now=1)
+    with pytest.raises(GameError, match="não tem"):
+        game.use_now("ana", "fifty_fifty")
+
+def test_no_powerups_before_the_bet_or_the_final():
+    qs = [question("h0", "hard"), question("h1", "hard")]
+    qs.append(Question(id="x", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f"))
+    game = Game(powers=True, questions=qs, answer_seconds=10)
+    ana = P("ana", 100)
+    game.powerups = {"ana": ["shield"]}
+    play(game, [ana], {"ana": 0})
+    assert game.bet_round == 1 and not game.can_arm
+    play(game, [ana], {"ana": 0})
+    assert not game.can_arm  # a próxima é a final
+
+
+def test_three_right_in_a_row_earns_a_powerup_up_to_two():
+    game = Game(powers=True, questions=[question(f"e{i}") for i in range(7)], answer_seconds=10)
+    ana = P("ana")
+    game.powerups = {"ana": []}
+    gains = []
+    for _ in range(7):
+        play(game, [ana], {"ana": 0})
+        gains.append(game.results[0].gained)
+    assert [g is not None for g in gains] == [False, False, True, False, False, True, False]
+    assert gains[2].reason == "streak" and len(game.powerups["ana"]) == 2  # cheio: o 3º não vem
+
+
+def test_far_behind_last_place_earns_a_powerup_every_three_rounds():
+    game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10)
+    ana, bia, caio = P("ana", 100), P("bia", 80), P("caio", 0)
+    game.powerups = {"ana": [], "bia": [], "caio": []}
+    for _ in range(3):
+        play(game, [ana, bia, caio], {"ana": 1, "bia": 1, "caio": 1})  # todos erram
+    caio_gain = next(r.gained for r in game.results if r.player_id == "caio")
+    assert caio_gain is not None and caio_gain.reason == "comeback"
+    assert all(r.gained is None for r in game.results if r.player_id != "caio")
+
+
+def test_trailing_needs_a_big_gap_to_the_top_two():
+    from app.powerups import trailing
+
+    assert trailing([P("a", 100), P("b", 90), P("c", 50)]) == {"c"}
+    assert trailing([P("a", 100), P("b", 60), P("c", 40)]) == set()  # perto do 2º
+    assert trailing([P("a", 100), P("b", 40)]) == {"b"}  # com 2, compara com o 1º
+
+
+def test_everyone_ready_skips_the_reveal():
+    game = Game(powers=True, questions=[question("e0"), question("e1")], answer_seconds=10)
+    with pytest.raises(GameError):
+        game.mark_ready("ana")
+    play(game, [P("ana"), P("bia")], {"ana": 0, "bia": 0})
+    game.mark_ready("ana")
+    assert not game.everyone_ready(["ana", "bia"])
+    game.mark_ready("bia")
+    assert game.everyone_ready(["ana", "bia"])
+    game.start_round(now=0)
+    assert game.ready == set()
+
+
+def test_classic_mode_has_no_powerups():
+    game = Game(questions=[question(f"e{i}") for i in range(4)], answer_seconds=10)
+    ana = P("ana")
+    for _ in range(3):
+        play(game, [ana], {"ana": 0})
+        assert game.results[0].gained is None
+    assert not game.can_arm and game.powerups == {}
+
+
+def test_the_host_can_change_how_many_powerups_fit():
+    game = Game(powers=True, powerup_max=3, questions=[question(f"e{i}") for i in range(9)], answer_seconds=10)
+    ana = P("ana")
+    game.powerups = {"ana": []}
+    for _ in range(9):
+        play(game, [ana], {"ana": 0})
+    assert len(game.powerups["ana"]) == 3
+    assert game.view(now=0, viewer="ana").powerup_max == 3
+
+
+def armed_game(n: int, difficulty: str = "medium", answer: int = 0) -> tuple[Game, P, P]:
+    """Partida com poderes de `n` perguntas; a 1ª já foi revelada e dá para armar."""
+    game = Game(powers=True, questions=[question(f"q{i}", difficulty, answer) for i in range(n)], answer_seconds=10)
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": [], "bia": []}
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    return game, ana, bia
+
+
+def arm(game: Game, pid: str, kind: str, target: str | None = None) -> None:
+    game.powerups[pid].append(kind)
+    game.arm(pid, kind, target, ["ana", "bia"])
+
+
+def test_double_doubles_right_and_wrong_answers():
+    game, ana, bia = armed_game(2)
+    arm(game, "ana", "double")
+    arm(game, "bia", "double")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 1})  # média: +11 na carência, -10 errando
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["ana"].delta, by_id["ana"].doubled) == (22, True)
+    assert by_id["bia"].delta == -20
+
+
+def test_second_chance_lets_you_retry_for_half():
+    game, ana, bia = armed_game(3)
+    arm(game, "ana", "second_chance")
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    game.answer("ana", 1, now=1)  # errou: ainda não acabou
+    assert game.view(now=1, viewer="ana").first_wrong == 1
+    assert not game.everyone_answered(["ana"]) and "ana" in game.view(now=1, viewer="bia").answered
+    with pytest.raises(GameError, match="inválida"):
+        game.answer("ana", 1, now=1.5)
+    game.answer("ana", 0, now=2)
+    game.close_round([ana, bia], now=20)
+    result = game.results[0]
+    assert (result.correct, result.delta, result.first_option) == (True, 5, 1)  # 11 → metade
+
+    arm(game, "ana", "second_chance")
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    game.answer("ana", 2, now=1)  # errou e não tentou de novo: fica com o erro
+    game.close_round([ana, bia], now=20)
+    assert (game.results[0].option, game.results[0].delta) == (2, -10)
+
+
+def test_peek_shows_what_the_others_picked():
+    game, ana, bia = armed_game(2)
+    game.powerups["ana"].append("peek")
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    game.answer("bia", 3, now=1)
+    assert game.view(now=1, viewer="ana").peek is None
+    game.use_now("ana", "peek")
+    assert game.view(now=1, viewer="ana").peek == [0, 0, 0, 1]
+    assert game.view(now=1, viewer="bia").peek is None
+    game.answer("ana", 0, now=2)
+    with pytest.raises(GameError, match="já respondeu"):
+        game.powerups["ana"].append("fifty_fifty")
+        game.use_now("ana", "fifty_fifty")
+
+def test_extra_time_gives_more_time_for_three_common_questions():
+    game, ana, bia = armed_game(6)
+    arm(game, "ana", "extra_time")
+    for left in (3, 2, 1):
+        game.start_round(now=0)
+        game.open_answers(now=0)
+        assert game.answer_window("ana") == 15 and game.answer_window("bia") == 10
+        assert game.grace_window("ana") == 5
+        assert [(x.kind, x.rounds_left) for x in game.view(now=0, viewer="ana").lasting] == [("extra_time", left)]
+        assert game.phase_ends_at == 15
+        with pytest.raises(GameError, match="Agora não"):
+            game.answer("bia", 0, now=10 + LATE_SECONDS + 0.1)  # o prazo da Bia é o normal
+        game.answer("ana", 0, now=14)
+        assert game.answers_close_at(["ana", "bia"]) == 10 + LATE_SECONDS
+        game.close_round([ana, bia], now=20)
+    game.start_round(now=0)
+    assert game.answer_window("ana") == 10  # acabou
+
+
+def test_accelerator_halves_the_time_and_removes_full_iq():
+    game, ana, bia = armed_game(2)
+    arm(game, "ana", "accelerator", "bia")
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    assert game.answer_window("bia") == 5 and game.grace_window("bia") == 0
+    assert game.view(now=0, viewer="bia").phase_ends_in_ms == 5000
+    assert game.view(now=0, viewer="ana").phase_ends_in_ms == 10000
+    game.answer("bia", 0, now=2.5)
+    game.close_round([ana, bia], now=20)
+    assert {r.player_id: r.delta for r in game.results}["bia"] == 8  # metade do tempo: 5 + 6 × 0,5
+
+
+def test_silence_hides_who_answered():
+    game, ana, bia = armed_game(2)
+    arm(game, "ana", "silence", "bia")
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    game.answer("ana", 0, now=1)
+    assert game.view(now=1, viewer="bia").answered == []
+    assert game.view(now=1, viewer="ana").answered == ["ana"]
+
+
+def test_reverse_sends_sabotage_back_once():
+    game, ana, bia = armed_game(2)
+    arm(game, "ana", "scramble", "bia")
+    arm(game, "bia", "reverse")
+    game.start_round(now=0)
+    scramble = next(u for u in game.active if u.kind == "scramble")
+    assert (scramble.by, scramble.target, scramble.reflected_by) == ("ana", "ana", "bia")
+
+
+def test_reversed_steal_robs_the_thief():
+    game, ana, bia = armed_game(2)
+    arm(game, "ana", "steal", "bia")
+    arm(game, "bia", "reverse")
+    reveal(game, [ana, bia], {"ana": 1, "bia": 0})  # ana erra: -10, e quem rouba agora é a bia
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["bia"].stolen, by_id["ana"].delta) == (10, -10)
+
+
+def test_shield_lasts_two_questions_and_breaks_if_unused():
+    game, ana, bia = armed_game(8)
+    arm(game, "ana", "shield")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # acertou: o escudo continua
+    assert game.results[0].expired == []
+    game.start_round(now=0)
+    assert [(x.kind, x.rounds_left) for x in game.view(now=0, viewer="ana").lasting] == [("shield", 1)]
+    game.round -= 1
+    reveal(game, [ana, bia], {"ana": 1, "bia": 0})  # errou: o escudo segura e acaba
+    assert game.results[0].shielded == 10 and game.results[0].expired == []
+    reveal(game, [ana, bia], {"ana": 1, "bia": 0})
+    assert game.results[0].delta == -10
+
+    arm(game, "ana", "shield")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # duas sem errar: quebrou
+    assert game.results[0].expired == ["shield"] and game.lasting["ana"] == {}
+
+
+def test_second_chance_lasts_until_the_first_mistake():
+    game, ana, bia = armed_game(4)
+    arm(game, "ana", "second_chance")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # acertou de primeira: continua
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    game.answer("ana", 1, now=1)
+    assert game.view(now=1, viewer="ana").first_wrong == 1  # ainda valia
+    game.answer("ana", 0, now=2)
+    game.close_round([ana, bia], now=20)
+    assert game.results[0].expired == [] and "second_chance" not in game.lasting["ana"]
+
+
+def test_reverse_lasts_two_questions_and_is_spent_when_it_bounces():
+    game, ana, bia = armed_game(5)
+    arm(game, "bia", "reverse")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})  # ninguém atacou: continua
+    arm(game, "ana", "mirror", "bia")
+    game.start_round(now=0)
+    mirror = next(u for u in game.active if u.kind == "mirror")
+    assert (mirror.target, mirror.reflected_by) == ("ana", "bia")
+    assert "reverse" not in game.lasting["bia"]
+
+
+def test_magnifier_is_a_sabotage_that_the_reverse_sends_back():
+    game, ana, bia = armed_game(2)
+    arm(game, "ana", "magnifier", "bia")
+    assert game.armed["ana"].target == "bia"
+    arm(game, "bia", "reverse")
+    game.start_round(now=0)
+    lens = next(u for u in game.active if u.kind == "magnifier")
+    assert (lens.target, lens.reflected_by) == ("ana", "bia")

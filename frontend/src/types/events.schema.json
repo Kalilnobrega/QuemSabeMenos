@@ -1,5 +1,45 @@
 {
   "$defs": {
+    "ArmPowerUpRequest": {
+      "description": "Na revelação: a habilidade vale na próxima pergunta. `target` só nas que miram alguém.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "fifty_fifty",
+            "shield",
+            "double",
+            "peek",
+            "extra_time",
+            "second_chance",
+            "reverse",
+            "scratch",
+            "steal",
+            "scramble",
+            "accelerator",
+            "mirror",
+            "silence",
+            "magnifier"
+          ],
+          "type": "string"
+        },
+        "target": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "title": "ArmPowerUpRequest",
+      "type": "object"
+    },
     "Bonus": {
       "description": "Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências\nde erros (negativo). Uma sequência repetida na mesma partida vale a metade.",
       "properties": {
@@ -168,6 +208,123 @@
           },
           "type": "array"
         },
+        "powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powerup_max": {
+          "type": "integer"
+        },
+        "starting_powerup": {
+          "anyOf": [
+            {
+              "enum": [
+                "fifty_fifty",
+                "shield",
+                "double",
+                "peek",
+                "extra_time",
+                "second_chance",
+                "reverse",
+                "scratch",
+                "steal",
+                "scramble",
+                "accelerator",
+                "mirror",
+                "silence",
+                "magnifier"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "can_arm": {
+          "type": "boolean"
+        },
+        "armed": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpUse"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "active": {
+          "items": {
+            "$ref": "#/$defs/PowerUpUse"
+          },
+          "type": "array"
+        },
+        "hidden_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "first_wrong": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "peek": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "speed_grace_ms": {
+          "type": "integer"
+        },
+        "lasting": {
+          "items": {
+            "$ref": "#/$defs/LastingPowerUp"
+          },
+          "type": "array"
+        },
+        "powers_round": {
+          "type": "boolean"
+        },
+        "ready": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "correct_option": {
           "anyOf": [
             {
@@ -210,6 +367,19 @@
         "bet_max_percent",
         "bet_odds",
         "bets_placed",
+        "powerups",
+        "powerup_max",
+        "starting_powerup",
+        "can_arm",
+        "armed",
+        "active",
+        "hidden_options",
+        "first_wrong",
+        "peek",
+        "speed_grace_ms",
+        "lasting",
+        "powers_round",
+        "ready",
         "correct_option",
         "fact",
         "results"
@@ -282,6 +452,43 @@
         "room"
       ],
       "title": "JoinedAck",
+      "type": "object"
+    },
+    "LastingPowerUp": {
+      "description": "Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).",
+      "properties": {
+        "kind": {
+          "enum": [
+            "fifty_fifty",
+            "shield",
+            "double",
+            "peek",
+            "extra_time",
+            "second_chance",
+            "reverse",
+            "scratch",
+            "steal",
+            "scramble",
+            "accelerator",
+            "mirror",
+            "silence",
+            "magnifier"
+          ],
+          "type": "string"
+        },
+        "rounds_left": {
+          "type": "integer"
+        },
+        "total": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind",
+        "rounds_left",
+        "total"
+      ],
+      "title": "LastingPowerUp",
       "type": "object"
     },
     "OkAck": {
@@ -364,6 +571,97 @@
       "title": "Pong",
       "type": "object"
     },
+    "PowerUpGain": {
+      "properties": {
+        "kind": {
+          "enum": [
+            "fifty_fifty",
+            "shield",
+            "double",
+            "peek",
+            "extra_time",
+            "second_chance",
+            "reverse",
+            "scratch",
+            "steal",
+            "scramble",
+            "accelerator",
+            "mirror",
+            "silence",
+            "magnifier"
+          ],
+          "type": "string"
+        },
+        "reason": {
+          "enum": [
+            "start",
+            "streak",
+            "comeback"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "reason"
+      ],
+      "title": "PowerUpGain",
+      "type": "object"
+    },
+    "PowerUpUse": {
+      "properties": {
+        "kind": {
+          "enum": [
+            "fifty_fifty",
+            "shield",
+            "double",
+            "peek",
+            "extra_time",
+            "second_chance",
+            "reverse",
+            "scratch",
+            "steal",
+            "scramble",
+            "accelerator",
+            "mirror",
+            "silence",
+            "magnifier"
+          ],
+          "type": "string"
+        },
+        "by": {
+          "type": "string"
+        },
+        "target": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reflected_by": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "by",
+        "target",
+        "reflected_by"
+      ],
+      "title": "PowerUpUse",
+      "type": "object"
+    },
     "QuestionView": {
       "properties": {
         "text": {
@@ -415,6 +713,32 @@
     },
     "RoomSettings": {
       "properties": {
+        "mode": {
+          "enum": [
+            "classic",
+            "powers"
+          ],
+          "type": "string"
+        },
+        "mode_options": {
+          "items": {
+            "enum": [
+              "classic",
+              "powers"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powerup_max": {
+          "type": "integer"
+        },
+        "powerup_max_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
         "rounds": {
           "type": "integer"
         },
@@ -456,6 +780,10 @@
         }
       },
       "required": [
+        "mode",
+        "mode_options",
+        "powerup_max",
+        "powerup_max_options",
         "rounds",
         "answer_seconds",
         "speed_grace_seconds",
@@ -562,6 +890,60 @@
         },
         "bet_delta": {
           "type": "integer"
+        },
+        "shielded": {
+          "type": "integer"
+        },
+        "stolen": {
+          "type": "integer"
+        },
+        "robbed": {
+          "type": "integer"
+        },
+        "doubled": {
+          "type": "boolean"
+        },
+        "first_option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expired": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "gained": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpGain"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -571,7 +953,14 @@
         "delta",
         "bonuses",
         "bet",
-        "bet_delta"
+        "bet_delta",
+        "shielded",
+        "stolen",
+        "robbed",
+        "doubled",
+        "first_option",
+        "expired",
+        "gained"
       ],
       "title": "RoundResult",
       "type": "object"
@@ -604,6 +993,32 @@
     "UpdateSettingsRequest": {
       "description": "Só os campos enviados mudam.",
       "properties": {
+        "mode": {
+          "anyOf": [
+            {
+              "enum": [
+                "classic",
+                "powers"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "powerup_max": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
         "rounds": {
           "anyOf": [
             {
@@ -653,6 +1068,35 @@
         }
       },
       "title": "UpdateSettingsRequest",
+      "type": "object"
+    },
+    "UsePowerUpRequest": {
+      "description": "Durante a pergunta (50/50 e Espiar): vale na hora.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "fifty_fifty",
+            "shield",
+            "double",
+            "peek",
+            "extra_time",
+            "second_chance",
+            "reverse",
+            "scratch",
+            "steal",
+            "scramble",
+            "accelerator",
+            "mirror",
+            "silence",
+            "magnifier"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "title": "UsePowerUpRequest",
       "type": "object"
     }
   },

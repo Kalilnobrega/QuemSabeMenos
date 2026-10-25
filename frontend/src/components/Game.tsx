@@ -2,10 +2,12 @@ import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 're
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
+import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import type { Bonus, GameView, PlayerView, RoomState, RoundResult } from '../types/events'
+import type { Bonus, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
+import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -96,11 +98,14 @@ interface Props {
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
   onBet: (amount: number) => Promise<string | null>
+  onArm: (kind: PowerUpUse['kind'], target: string | null) => Promise<string | null>
+  onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
+  onSkip: () => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
-export function Game({ snapshot, playerId, onAnswer, onBet, onPlayAgain, onLeave }: Props) {
+export function Game({ snapshot, playerId, onAnswer, onBet, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
@@ -118,7 +123,7 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onPlayAgain, onLeave
     return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
   }
   // key: cada rodada começa com a escolha local zerada.
-  return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} />
+  return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
 }
 
 const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
@@ -238,6 +243,15 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
           </li>
         ))}
       </ul>
+      {game.starting_powerup && (
+        <p
+          className={`intro-step flex items-center gap-2 rounded-xl px-4 py-2 font-semibold ${POWERUP_INFO[game.starting_powerup].tone}`}
+          style={{ animationDelay: '1.2s' }}
+        >
+          <PowerUpIcon kind={game.starting_powerup} className="size-6" />
+          Sua habilidade: {POWERUP_INFO[game.starting_powerup].name}
+        </p>
+      )}
       <div className="flex h-20 items-center" aria-live="polite">
         {count <= 3 && count > 0 && (
           <span key={count} className="intro-count font-display text-7xl text-chalk">
@@ -554,9 +568,12 @@ interface RoundProps {
   game: GameView
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
+  onArm: Props['onArm']
+  onUse: Props['onUse']
+  onSkip: Props['onSkip']
 }
 
-function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
+function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: RoundProps) {
   const { room, receivedAt } = snapshot
   const [choice, setChoice] = useState<number | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -568,7 +585,7 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
 
   // Na resposta, a barra fica cheia e dourada durante a carência (pontos máximos)
   // e depois esvazia até o fim do tempo, junto com os pontos.
-  const graceMs = room.settings.speed_grace_seconds * 1000
+  const graceMs = game.speed_grace_ms
   const inGrace = game.phase === 'answering' && game.phase_duration_ms - remaining < graceMs
   const barFill =
     game.phase === 'answering'
@@ -579,15 +596,23 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
 
   const question = game.question!
   const typing = game.phase === 'reading'
-  const text = typing ? question.text.slice(0, Math.ceil(question.text.length * progress)) : question.text
-  const answered = choice !== null || (playerId !== null && game.answered.includes(playerId))
+  // Poderes jogados em você (só até a revelação).
+  const hits = (kind: PowerUpUse['kind']) => game.phase !== 'results' && game.active.some((use) => use.kind === kind && use.target === playerId)
+  const silenced = hits('silence')
+  const fullText = hits('scramble') ? scrambleWords(question.text, game.round) : question.text
+  const text = typing ? fullText.slice(0, Math.ceil(fullText.length * progress)) : fullText
+  const mirrored = hits('mirror') ? '-scale-x-100' : ''
+  // Segunda chance: a primeira escolha errada não encerra a sua resposta.
+  const retry = game.first_wrong
+  const answered = retry !== null ? choice !== null && choice !== retry : choice !== null || (playerId !== null && game.answered.includes(playerId))
   const canAnswer = game.phase === 'answering' && !answered
   const showResults = game.phase === 'results'
   const myResult = game.results.find((r) => r.player_id === playerId)
   const connectedCount = room.players.filter((p) => p.connected).length
   const difficulty = DIFFICULTY[question.difficulty]
   const secondsLeft = Math.ceil(remaining / 1000)
-  const urgent = game.phase === 'answering' && remaining < 3000
+  const urgent = game.phase === 'answering' && remaining < 3000 && !silenced
+  const scratched = hits('scratch')
 
   // Tec-tec enquanto o texto aparece, a cada três letras.
   useEffect(() => {
@@ -621,7 +646,7 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
   }, [showResults, myResult])
 
   const pick = async (option: number) => {
-    if (!canAnswer) return
+    if (!canAnswer || game.hidden_options.includes(option) || option === retry) return
     playSound('select')
     setChoice(option)
     const failure = await onAnswer(option)
@@ -638,7 +663,9 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
       if (chosen) return 'reveal-shake btn-wrong is-pressed text-white'
       return 'btn-dark [&>span:not(.voters)]:opacity-40'
     }
+    if (index === retry) return 'btn-wrong is-pressed text-white opacity-60'
     if (chosen) return 'btn-dark is-pressed outline-2 outline-brand'
+    if (game.hidden_options.includes(index)) return 'btn-dark opacity-20 line-through'
     if (!canAnswer) return 'btn-dark opacity-50'
     return 'btn-dark'
   }
@@ -656,7 +683,10 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
         </span>
       </header>
 
-      <div className="flex h-8 items-center gap-3">
+      {!showResults && <ActivePowerUps game={game} players={room.players} playerId={playerId} />}
+      {!showResults && !answered && <InstantPowerUps game={game} playerId={playerId} onUse={onUse} />}
+
+      <div className={`flex h-8 items-center gap-3 ${silenced ? 'invisible' : ''}`}>
         <div className="h-2 flex-1 overflow-hidden rounded-full bg-panel">
           {game.phase !== 'reading' && (
             <div
@@ -681,50 +711,71 @@ function Round({ snapshot, game, playerId, onAnswer }: RoundProps) {
         </span>
       </div>
 
-      {/* Altura reservada para até 3 linhas: o texto digitando não empurra as alternativas. */}
-      <h1 className="round-question min-h-[6.25rem] text-[1.4rem] leading-snug font-bold">
-        {text}
-        {typing && <span className="ml-0.5 inline-block w-[0.5ch] animate-pulse text-brand">|</span>}
-      </h1>
+      <Magnifier active={hits('magnifier')}>
+        {/* Altura reservada para até 3 linhas: o texto digitando não empurra as alternativas. */}
+        <ScratchCard active={scratched}>
+          <h1 className={`round-question min-h-[6.25rem] text-[1.4rem] leading-snug font-bold ${mirrored}`}>
+            {text}
+            {typing && <span className="ml-0.5 inline-block w-[0.5ch] animate-pulse text-brand">|</span>}
+          </h1>
+        </ScratchCard>
 
-      <div className="grid auto-rows-fr grid-cols-2 gap-3">
-        {question.options.map((option, index) => (
-          <button
-            key={index}
-            onClick={() => pick(index)}
-            disabled={!canAnswer}
-            style={{ animationDelay: `${0.12 + index * 0.06}s` }}
-            className={`round-option btn-3d btn-sm relative flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
-          >
-            <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
-            <span className="min-w-0 [overflow-wrap:anywhere]">{option}</span>
-            {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
-          </button>
-        ))}
-      </div>
+        <div className="grid auto-rows-fr grid-cols-2 gap-3">
+          {question.options.map((option, index) => (
+            <ScratchCard key={index} active={scratched && !game.hidden_options.includes(index)} className="flex">
+              <button
+                onClick={() => pick(index)}
+                disabled={!canAnswer || game.hidden_options.includes(index) || index === retry}
+                style={{ animationDelay: `${0.12 + index * 0.06}s` }}
+                className={`round-option btn-3d btn-sm relative flex min-h-14 w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
+              >
+                <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
+                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{option}</span>
+                {game.peek && !showResults && <PeekBadge count={game.peek[index]} />}
+                {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
+              </button>
+            </ScratchCard>
+          ))}
+        </div>
+      </Magnifier>
 
       {error && <p className="text-center text-red-300">{error}</p>}
 
       {showResults ? (
-        <RoundSummary room={room} game={game} playerId={playerId} />
+        <RoundSummary room={room} game={game} playerId={playerId} onArm={onArm} onSkip={onSkip} />
       ) : (
         <p className="min-h-7 text-center font-hand font-medium text-lg text-steel">
           {typing
             ? 'Leia com atenção…'
-            : answered
-              ? `Resposta enviada! Esperando a galera (${game.answered.length}/${connectedCount})`
-              : `${game.answered.length}/${connectedCount} já responderam`}
+            : retry !== null && !answered
+              ? 'Errou! Segunda chance: tente de novo (vale metade).'
+              : silenced
+                ? answered
+                  ? 'Resposta enviada! Agora é esperar…'
+                  : 'Silêncio… quanto tempo será que falta?'
+                : answered
+                  ? `Resposta enviada! Esperando a galera (${game.answered.length}/${connectedCount})`
+                  : `${game.answered.length}/${connectedCount} já responderam`}
         </p>
       )}
     </section>
   )
 }
 
-function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameView; playerId: string | null }) {
+interface SummaryProps {
+  room: RoomState
+  game: GameView
+  playerId: string | null
+  onArm: Props['onArm']
+  onSkip: Props['onSkip']
+}
+
+function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
-  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta]))
+  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed]))
   const bets = game.results.filter((r) => r.bet)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
+  const powerupLines = powerupEvents(room, game, playerId)
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
   const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy' }
@@ -759,6 +810,23 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
   return (
     <div className="flex flex-col gap-3">
       {headline}
+      <PowerUpBar powers={room.settings.mode === 'powers'} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
+      {powerupLines.length > 0 && (
+        <ul className="flex flex-col gap-1.5" aria-label="Habilidades">
+          {powerupLines.map(({ key, kind, player, text, delta, me }, index) => (
+            <li
+              key={key}
+              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${POWERUP_INFO[kind].tone} ${me ? 'ring-1 ring-brand/60' : ''}`}
+              style={{ animationDelay: `${0.4 + index * 0.12}s` }}
+            >
+              {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+              <PowerUpIcon kind={kind} className="size-5 shrink-0" />
+              <span className="min-w-0 flex-1 truncate">{text}</span>
+              {delta !== null && <span className="font-display text-lg">{formatDelta(delta)}</span>}
+            </li>
+          ))}
+        </ul>
+      )}
       {bets.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Apostas">
           {bets.map((result, index) => {
@@ -824,6 +892,55 @@ function RoundSummary({ room, game, playerId }: { room: RoomState; game: GameVie
   )
 }
 
+/** Linhas da revelação: escudos que seguraram, roubos e habilidades ganhas. */
+function powerupEvents(room: RoomState, game: GameView, playerId: string | null) {
+  const who = (id: string | null) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean }[] = []
+  for (const result of game.results) {
+    const player = room.players.find((p) => p.id === result.player_id)
+    const me = result.player_id === playerId
+    for (const kind of result.expired) {
+      lines.push({ key: `${result.player_id}-${kind}-expired`, kind, player, text: `${who(result.player_id)}: ${POWERUP_INFO[kind].name} quebrou sem ser usado.`, delta: null, me })
+    }
+    if (result.doubled) {
+      lines.push({ key: `${result.player_id}-double`, kind: 'double', player, text: `${who(result.player_id)}: Dobro!`, delta: result.delta, me })
+    }
+    if (result.first_option !== null) {
+      const text = result.correct ? 'acertou na segunda chance (metade)!' : 'errou de novo na segunda chance.'
+      lines.push({ key: `${result.player_id}-second`, kind: 'second_chance', player, text: `${who(result.player_id)} ${text}`, delta: null, me })
+    }
+    if (result.shielded) {
+      lines.push({ key: `${result.player_id}-shield`, kind: 'shield', player, text: `${who(result.player_id)}: o Escudo segurou ${result.shielded} de QI!`, delta: null, me })
+    }
+    const steal = game.active.find((use) => use.kind === 'steal' && use.by === result.player_id)
+    if (steal) {
+      const target = who(steal.target)
+      if (steal.reflected_by) {
+        lines.push({
+          key: `${result.player_id}-reverse`,
+          kind: 'reverse',
+          player,
+          text: `${who(result.player_id)} rebateu o Roubo de ${target === 'Você' ? 'você' : target} com o Reverso!`,
+          delta: null,
+          me: me || steal.target === playerId,
+        })
+      }
+      lines.push({
+        key: `${result.player_id}-steal`,
+        kind: 'steal',
+        player,
+        text: result.stolen ? `${who(result.player_id)} roubou de ${target === 'Você' ? 'você' : target}!` : `${who(result.player_id)} não roubou nada de ${target === 'Você' ? 'você' : target}.`,
+        delta: result.stolen ? (steal.target === playerId ? -result.stolen : result.stolen) : null, // do ponto de vista de quem lê
+        me: me || steal.target === playerId,
+      })
+    }
+    if (result.gained) {
+      lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me })
+    }
+  }
+  return lines
+}
+
 const BONUS_STYLE: Record<Bonus['kind'], string> = {
   perfect_easy: 'bg-brand/15 text-brand',
   streak: 'bg-orange-500/15 text-orange-200',
@@ -860,6 +977,17 @@ function StreakChip({ streak }: { streak: number }) {
     >
       {hot ? <FlameIcon className="size-3.5" /> : <SnowflakeIcon className="size-3.5" />}
       {Math.abs(streak)}
+    </span>
+  )
+}
+
+/** Espiar: quantos outros já marcaram a alternativa. */
+function PeekBadge({ count }: { count: number }) {
+  if (count === 0) return null
+  return (
+    <span className="absolute -top-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-teal-300 px-1.5 text-xs font-bold text-ink" title={`${count} escolheram`}>
+      <PowerUpIcon kind="peek" className="size-3.5" />
+      {count}
     </span>
   )
 }

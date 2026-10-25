@@ -15,11 +15,19 @@ Avatar = Literal[
 ]
 
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
+# Habilidades (ver powerups.py): as primeiras valem para quem usa; as do fim miram outro jogador.
+PowerUp = Literal[
+    "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier",
+]
+GameMode = Literal["classic", "powers"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers")
 
 NICKNAME_MAX_LENGTH = 16
 ROUND_OPTIONS = (10, 15, 20, 25, 30, 35)
 ANSWER_OPTIONS = (10, 15, 20, 25, 30)  # segundos para responder
 GRACE_OPTIONS = (0, 2, 3, 5)  # segundos de QI cheio
+POWERUP_MAX_OPTIONS = (1, 2, 3)  # habilidades guardadas ao mesmo tempo, no modo com poderes
 
 
 class Pong(BaseModel):
@@ -49,6 +57,8 @@ class RejoinRoomRequest(BaseModel):
 class UpdateSettingsRequest(BaseModel):
     """Só os campos enviados mudam."""
 
+    mode: GameMode | None = None
+    powerup_max: int | None = None
     rounds: int | None = None
     answer_seconds: float | None = None
     speed_grace_seconds: float | None = None
@@ -61,6 +71,19 @@ class SubmitAnswerRequest(BaseModel):
 
 class SubmitBetRequest(BaseModel):
     amount: int = Field(ge=0)
+
+
+class ArmPowerUpRequest(BaseModel):
+    """Na revelação: a habilidade vale na próxima pergunta. `target` só nas que miram alguém."""
+
+    kind: PowerUp
+    target: str | None = None
+
+
+class UsePowerUpRequest(BaseModel):
+    """Durante a pergunta (50/50 e Espiar): vale na hora."""
+
+    kind: PowerUp
 
 
 # --- Servidor → cliente -------------------------------------------------------
@@ -76,6 +99,10 @@ class PlayerView(BaseModel):
 
 
 class RoomSettings(BaseModel):
+    mode: GameMode
+    mode_options: list[GameMode]
+    powerup_max: int  # habilidades guardadas ao mesmo tempo (só no modo com poderes)
+    powerup_max_options: list[int]
     rounds: int
     answer_seconds: float
     speed_grace_seconds: float  # respostas até aqui valem o máximo
@@ -103,14 +130,41 @@ class Bonus(BaseModel):
     repeat: bool  # já tinha feito essa sequência nesta partida
 
 
+class PowerUpUse(BaseModel):
+    kind: PowerUp
+    by: str  # id de quem usou (no roubo rebatido, quem rebateu e agora rouba)
+    target: str | None  # id do alvo; None nas que valem para quem usou
+    reflected_by: str | None  # quem devolveu com o Reverso (o alvo original)
+
+
+class LastingPowerUp(BaseModel):
+    """Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso)."""
+
+    kind: PowerUp
+    rounds_left: int  # contando a pergunta atual
+    total: int
+
+
+class PowerUpGain(BaseModel):
+    kind: PowerUp
+    reason: Literal["start", "streak", "comeback"]  # sorteio inicial, acertos seguidos ou lanterna
+
+
 class RoundResult(BaseModel):
     player_id: str
     option: int | None  # None = não respondeu
     correct: bool
-    delta: int  # pontos da resposta, sem os bônus e sem a aposta
+    delta: int  # pontos da resposta, sem os bônus e sem a aposta (0 se o escudo segurou)
     bonuses: list[Bonus]
     bet: int | None  # None fora da rodada da aposta; 0 = não apostou
     bet_delta: int  # +bet × (bet_odds - 1) (para baixo) se acertou, -bet se errou ou não respondeu
+    shielded: int  # QI que o escudo impediu de perder
+    stolen: int  # QI ganho roubando de alguém
+    robbed: int  # QI do acerto que um ladrão levou (errando, o alvo perde só o normal)
+    doubled: bool  # o delta já vem dobrado
+    first_option: int | None  # Segunda chance: a primeira escolha, que estava errada
+    expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
+    gained: PowerUpGain | None
 
 
 class GameView(BaseModel):
@@ -134,6 +188,19 @@ class GameView(BaseModel):
     bet_max_percent: int  # aposta máxima, em % do QI (arredondada para baixo)
     bet_odds: float  # quanto a aposta paga se acertar (odd decimal: 1.5 = apostou 100, lucra 50)
     bets_placed: list[str]  # ids de quem já apostou; os valores só aparecem em results
+    powerups: list[PowerUp]  # as suas habilidades guardadas
+    powerup_max: int
+    starting_powerup: PowerUp | None  # a sua habilidade sorteada no início
+    can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)
+    armed: PowerUpUse | None  # a sua habilidade armada para a próxima pergunta
+    active: list[PowerUpUse]  # habilidades valendo nesta pergunta (o roubo só aparece para os outros na revelação)
+    hidden_options: list[int]  # alternativas que o seu 50/50 tirou
+    first_wrong: int | None  # Segunda chance: a sua primeira escolha, errada; dá para tentar de novo
+    peek: list[int] | None  # Espiar: quantos outros escolheram cada alternativa até agora
+    speed_grace_ms: int  # o seu tempo de QI cheio nesta pergunta (Tempo extra aumenta, Acelerador zera)
+    lasting: list[LastingPowerUp]  # as suas habilidades que valem por mais de uma pergunta, nesta
+    powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
+    ready: list[str]  # ids de quem já quer pular a revelação
     correct_option: int | None  # só aparece em results
     fact: str | None  # curiosidade sobre a resposta, também só em results
     results: list[RoundResult]
@@ -183,6 +250,8 @@ EVENT_MODELS: list[type[BaseModel]] = [
     UpdateSettingsRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
+    ArmPowerUpRequest,
+    UsePowerUpRequest,
     RoomState,
     JoinedAck,
     OkAck,

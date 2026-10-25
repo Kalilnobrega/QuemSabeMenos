@@ -10,7 +10,20 @@ import uuid
 from dataclasses import dataclass, field
 from typing import Literal
 
-from app.events import ANSWER_OPTIONS, GRACE_OPTIONS, ROUND_OPTIONS, Avatar, PlayerView, Profile, RoomSettings, RoomState
+from app.events import (
+    ANSWER_OPTIONS,
+    GRACE_OPTIONS,
+    MODE_OPTIONS,
+    POWERUP_MAX_OPTIONS,
+    ROUND_OPTIONS,
+    Avatar,
+    GameMode,
+    PlayerView,
+    PowerUp,
+    Profile,
+    RoomSettings,
+    RoomState,
+)
 from app.game import (
     SPEED_GRACE_SECONDS,
     STARTING_IQ,
@@ -21,12 +34,13 @@ from app.game import (
     pick_questions,
     point_scale,
 )
+from app.powerups import MAX_HELD
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
 MAX_PLAYERS = 12
 MIN_PLAYERS = 2
-DEFAULT_ROUNDS = 20
+DEFAULT_ROUNDS = 25
 ANSWER_SECONDS = 15.0
 
 
@@ -69,6 +83,8 @@ class Room:
     host_id: str
     players: list[Player]  # em ordem de chegada
     status: Literal["lobby", "playing"] = "lobby"
+    mode: GameMode = "classic"
+    powerup_max: int = MAX_HELD
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
     speed_grace_seconds: float = SPEED_GRACE_SECONDS
@@ -84,7 +100,8 @@ class Room:
     def connected_ids(self) -> list[str]:
         return [p.id for p in self.players if p.connected]
 
-    def view(self, now: float | None = None) -> RoomState:
+    def view(self, now: float | None = None, viewer: str | None = None) -> RoomState:
+        """`viewer`: o jogador que vai receber, para mostrar só as habilidades dele."""
         now = time.monotonic() if now is None else now
         return RoomState(
             code=self.code,
@@ -93,6 +110,10 @@ class Room:
             max_players=MAX_PLAYERS,
             min_players=MIN_PLAYERS,
             settings=RoomSettings(
+                mode=self.mode,
+                mode_options=list(MODE_OPTIONS),
+                powerup_max=self.powerup_max,
+                powerup_max_options=list(POWERUP_MAX_OPTIONS),
                 rounds=self.rounds,
                 answer_seconds=self.answer_seconds,
                 speed_grace_seconds=self.speed_grace_seconds,
@@ -103,7 +124,7 @@ class Room:
                 theme_options=self.theme_options,
             ),
             players=[p.view() for p in self.players],
-            game=self.game.view(now) if self.game else None,
+            game=self.game.view(now, viewer) if self.game else None,
         )
 
 
@@ -211,6 +232,8 @@ class RoomManager:
         themes: list[str] | None = None,
         answer_seconds: float | None = None,
         speed_grace_seconds: float | None = None,
+        mode: GameMode | None = None,
+        powerup_max: int | None = None,
     ) -> Room:
         room = self._host_room(sid, "mudar as configurações")
         if room.status != "lobby":
@@ -219,6 +242,8 @@ class RoomManager:
             raise RoomError("Número de perguntas inválido.")
         if answer_seconds is not None and answer_seconds not in ANSWER_OPTIONS:
             raise RoomError("Tempo de resposta inválido.")
+        if powerup_max is not None and powerup_max not in POWERUP_MAX_OPTIONS:
+            raise RoomError("Limite de habilidades inválido.")
         if speed_grace_seconds is not None and speed_grace_seconds not in GRACE_OPTIONS:
             raise RoomError("Tempo de QI cheio inválido.")
         if themes is not None:
@@ -226,6 +251,10 @@ class RoomManager:
                 raise RoomError("Escolha pelo menos um tema.")
             if not set(themes) <= set(self.theme_options):
                 raise RoomError("Tema inválido.")
+        if mode is not None:
+            room.mode = mode
+        if powerup_max is not None:
+            room.powerup_max = powerup_max
         if rounds is not None:
             room.rounds = rounds
         if answer_seconds is not None:
@@ -255,7 +284,12 @@ class RoomManager:
             answer_seconds=room.answer_seconds,
             point_scale=point_scale(room.rounds),
             speed_grace_seconds=room.speed_grace_seconds,
+            rng=self.rng,
+            powers=room.mode == "powers",
+            powerup_max=room.powerup_max,
         )
+        if room.game.powers:
+            room.game.deal_powerups([p.id for p in room.players])
         room.game.start_round(time.monotonic() if now is None else now)
         room.status = "playing"
         return room
@@ -281,6 +315,37 @@ class RoomManager:
         except GameError as e:
             raise RoomError(str(e)) from e
         return room
+
+    def arm_powerup(self, sid: str, kind: PowerUp, target: str | None) -> Room:
+        room, player = self._playing(sid)
+        try:
+            room.game.arm(player.id, kind, target, [p.id for p in room.players])
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
+
+    def use_powerup(self, sid: str, kind: PowerUp) -> Room:
+        room, player = self._playing(sid)
+        try:
+            room.game.use_now(player.id, kind)
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
+
+    def ready(self, sid: str) -> Room:
+        """Pular a revelação: acaba antes quando todos os conectados tocam."""
+        room, player = self._playing(sid)
+        try:
+            room.game.mark_ready(player.id)
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
+
+    def _playing(self, sid: str) -> tuple[Room, Player]:
+        found = self.session(sid)
+        if not found or not found[0].game:
+            raise RoomError("Não tem partida rolando.")
+        return found
 
     def play_again(self, sid: str) -> Room:
         """Volta a sala para o lobby depois do fim da partida."""

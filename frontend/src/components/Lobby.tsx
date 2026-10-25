@@ -3,7 +3,12 @@ import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import type { RoomState, UpdateSettingsRequest } from '../types/events'
+import type { RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
+
+const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
+  classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
+  powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
+}
 
 interface Props {
   room: RoomState
@@ -58,11 +63,13 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
 
   const { themes, theme_options: themeOptions } = room.settings
   const allThemes = themes.length === themeOptions.length
+  const powers = room.settings.mode === 'powers'
   const summary = [
-    `${room.settings.rounds} perguntas`,
-    `${room.settings.answer_seconds} s para responder`,
-    room.settings.speed_grace_seconds ? `${room.settings.speed_grace_seconds} s de QI cheio` : 'sem QI cheio',
-    allThemes ? 'todos os temas' : themes.length <= 3 ? themes.join(', ') : `${themes.length} temas`,
+    { label: 'Perguntas', value: String(room.settings.rounds) },
+    { label: 'Resposta', value: `${room.settings.answer_seconds}s` },
+    { label: 'QI cheio', value: room.settings.speed_grace_seconds ? `${room.settings.speed_grace_seconds}s` : 'Não' },
+    ...(powers ? [{ label: 'Poderes', value: `até ${room.settings.powerup_max}` }] : []),
+    { label: 'Temas', value: allThemes ? 'Todos' : themes.length <= 2 ? themes.join(', ') : `${themes.length} temas` },
   ]
 
   return (
@@ -104,13 +111,24 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
 
       <div className="flex flex-col gap-3">
         <h2 className="font-display text-2xl tracking-wide">Partida</h2>
-        <ul className="flex flex-wrap gap-2">
-          {summary.map((item) => (
-            <li key={item} className="rounded-full bg-panel px-3 py-1 text-sm font-semibold text-steel">
-              {item}
-            </li>
+        <div className="flex flex-col items-center gap-0.5 rounded-xl bg-panel px-4 py-3 text-center">
+          <span className="font-display text-xl tracking-wide text-brand">{MODES[room.settings.mode].name}</span>
+          <span className="text-sm text-steel">{MODES[room.settings.mode].hint}</span>
+        </div>
+        <dl className="grid grid-cols-6 gap-2">
+          {summary.map((item, index) => (
+            <div
+              key={item.label}
+              // 3 por linha; na de baixo, os que sobram dividem a largura.
+              className={`flex flex-col items-center justify-center rounded-xl bg-panel px-2 py-2 text-center ${
+                index < 3 ? 'col-span-2' : summary.length === 4 ? 'col-span-6' : 'col-span-3'
+              }`}
+            >
+              <dt className="text-xs font-semibold tracking-wide text-steel uppercase">{item.label}</dt>
+              <dd className="font-display text-lg leading-tight text-chalk">{item.value}</dd>
+            </div>
           ))}
-        </ul>
+        </dl>
         {isHost && (
           <button
             onClick={() => setSettingsOpen(true)}
@@ -204,6 +222,36 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
         <h2 id="settings-title" className="text-center font-display text-3xl tracking-wide text-brand">
           Configurações
         </h2>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-display text-xl tracking-wide">Modo</h3>
+          <div className="grid grid-cols-2 gap-2">
+            {settings.mode_options.map((mode) => (
+              <button
+                key={mode}
+                onClick={() => update({ mode })}
+                aria-pressed={settings.mode === mode}
+                className={`btn-3d btn-sm flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
+                  settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                }`}
+              >
+                <span className="font-semibold">{MODES[mode].name}</span>
+                <span className="text-xs leading-snug opacity-80">{MODES[mode].hint}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {settings.mode === 'powers' && (
+          <OptionRow
+            title="Limite de poderes"
+            hint="Quantas habilidades cada um pode guardar ao mesmo tempo"
+            options={settings.powerup_max_options}
+            value={settings.powerup_max}
+            label={(n) => String(n)}
+            onPick={(powerup_max) => update({ powerup_max })}
+          />
+        )}
 
         <OptionRow
           title="Perguntas"

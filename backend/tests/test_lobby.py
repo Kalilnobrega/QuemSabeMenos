@@ -4,6 +4,7 @@ import pytest
 import socketio
 
 from app import game, main, rooms
+from app.powerups import INSTANT, TARGETED
 from app.rooms import RoomManager
 
 
@@ -12,7 +13,8 @@ def fresh_rooms(monkeypatch):
     monkeypatch.setattr(main, "rooms", RoomManager())
     monkeypatch.setattr(main, "RECONNECT_GRACE_SECONDS", 0.2)
     # Partidas rápidas nos testes.
-    monkeypatch.setattr(game, "MIN_READING_SECONDS", 0.05)
+    # A leitura precisa de folga: o teste vê "reading" e tenta responder antes de liberar.
+    monkeypatch.setattr(game, "MIN_READING_SECONDS", 0.25)
     monkeypatch.setattr(game, "TYPING_SECONDS_PER_CHAR", 0)
     monkeypatch.setattr(game, "START_SECONDS", 0.05)
     monkeypatch.setattr(game, "LEVEL_SECONDS", 0.05)
@@ -167,7 +169,7 @@ async def test_full_game(connect):
         )
         if state["game"]["phase"] == "betting":
             assert state["game"]["question"] is None and state["game"]["theme"]
-            assert round_number == state["game"]["bet_round"] == 9  # 10 rodadas: 4/3/3, a 2ª difícil
+            assert round_number == state["game"]["bet_round"] == 9  # 10 rodadas: 3/3/4, a 3ª difícil
             bia_score = next(p["score"] for p in state["players"] if p["id"] == joined["player_id"])
             assert not (await ana.call("submit_bet", {"amount": 10_000}))["ok"]
             assert (await ana.call("submit_bet", {"amount": 0}))["ok"]
@@ -216,4 +218,38 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0}  # partida de 10: vale o dobro
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
+
+
+async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connect, monkeypatch):
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
+    ana, bia, created, joined = await setup_room(connect)
+    assert not (await ana.call("update_settings", {"mode": "turbo"}))["ok"]
+    await ana.call("update_settings", {"rounds": 10, "mode": "powers"})
+    await ana.call("start_game")
+    start = await bia.wait_for(lambda s: s["game"] is not None)
+    assert len(start["game"]["powerups"]) == 1  # só a dela
+
+    await ana.wait_for(lambda s: s["game"]["phase"] == "answering")
+    await ana.call("submit_answer", {"option": 0})
+    await bia.call("submit_answer", {"option": 0})
+    await ana.wait_for(lambda s: s["game"]["phase"] == "results")
+    kind = ana.state["game"]["powerups"][0]
+    if kind in INSTANT:  # essas são usadas na hora da pergunta: troca por uma de armar
+        kind = "mirror"
+        main.rooms.rooms[start["code"]].game.powerups[created["player_id"]] = [kind]
+    target = joined["player_id"] if kind in TARGETED else None
+    assert (await ana.call("arm_powerup", {"kind": kind, "target": target}))["ok"]
+    assert ana.state["game"]["armed"]["kind"] == kind
+    assert bia.state["game"]["armed"] is None
+
+    assert (await ana.call("skip_results"))["ok"]
+    assert (await bia.call("skip_results"))["ok"]
+    # Todos pularam: a próxima pergunta abre bem antes dos 5 s, já com a habilidade valendo.
+    state = await ana.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
+    assert state["game"]["active"] == [{"kind": kind, "by": created["player_id"], "target": target, "reflected_by": None}]
+    # O roubo é surpresa: o alvo só fica sabendo na revelação.
+    hidden = await bia.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
+    assert hidden["game"]["active"] == ([] if kind == "steal" else state["game"]["active"])
+
