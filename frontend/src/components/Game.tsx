@@ -458,24 +458,37 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
   )
 }
 
-/** Tela de preparação antes da pergunta final: chama, "Impossível!" e contagem regressiva. */
+/** Tela de preparação antes da pergunta final: chama, o carimbo "Impossível!", o placar e a contagem. */
 function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
-  const game = snapshot.room.game!
+  const { room } = snapshot
+  const game = room.game!
   const now = useNow(true)
   const remaining = Math.max(0, snapshot.receivedAt + game.phase_ends_in_ms - now)
   const count = Math.ceil(remaining / 1000)
-  useSoundsOnMount([['impossible', 0]])
+  const standings = [...room.players].sort((a, b) => b.score - a.score || a.answer_ms - b.answer_ms)
+  useSoundsOnMount([
+    ['impossible', 0],
+    ['slam', 520], // a batida cai junto com o carimbo encostando na tela
+  ])
   useCountdownSounds(count)
 
   return (
-    <section className="final-intro relative isolate flex min-h-[72dvh] w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-3xl px-4 text-center">
+    <section className="final-intro stamp-shake relative isolate flex min-h-[72dvh] w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-3xl px-4 text-center">
       <div className="final-intro-glow absolute inset-0 -z-10" aria-hidden="true" />
       <Flame />
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-orange-200 uppercase">Pergunta final</p>
-      <h1 className="intro-slam font-display text-6xl text-orange-300 [text-shadow:0_4px_0_#7c2d12]">Impossível!</h1>
+      <h1 className="intro-slam stamp font-display text-6xl text-orange-300">Impossível!</h1>
       <p className="intro-step intro-step-late max-w-xs font-hand text-lg font-medium text-chalk">
-        Vale 35 de QI, e errar não tira pontos.
+        Vale 35 de QI, e errar não tira pontos. Tudo pode virar.
       </p>
+      <ol className="flex max-w-xs flex-wrap justify-center gap-3" aria-label="Placar antes da final">
+        {standings.map((player, index) => (
+          <li key={player.id} className="avatar-pop flex flex-col items-center gap-0.5" style={{ animationDelay: `${1.1 + index * 0.08}s` }}>
+            <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-11" />
+            <span className="font-display text-sm text-orange-100 tabular-nums">{formatScore(player.score)}</span>
+          </li>
+        ))}
+      </ol>
       <div className="flex h-20 items-center" aria-live="polite">
         {count <= 3 && count > 0 && (
           <span key={count} className="intro-count font-display text-7xl text-chalk">

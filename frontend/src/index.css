@@ -72,8 +72,26 @@ body {
   30% { opacity: 1; transform: scale(1); }
   to { opacity: 0.2; transform: scale(0.9); }
 }
+/* Carimbo de borracha: moldura dupla, inclinado, com a tela tremendo quando encosta. */
+.stamp {
+  padding: 0.05em 0.3em 0.1em;
+  border: 5px solid currentColor;
+  border-radius: 0.6rem;
+  box-shadow: inset 0 0 0 3px rgb(11 15 26 / 0.85), inset 0 0 0 6px currentColor, 0 4px 0 #7c2d12;
+  text-shadow: 0 3px 0 #7c2d12;
+  background: rgb(124 45 18 / 0.25);
+}
+.stamp-shake {
+  animation: stamp-shake 0.35s ease-out 0.72s;
+}
+@keyframes stamp-shake {
+  0%, 100% { transform: none; }
+  20% { transform: translate(-6px, 4px); }
+  45% { transform: translate(5px, -3px); }
+  70% { transform: translate(-3px, 2px); }
+}
 @media (prefers-reduced-motion: reduce) {
-  .final-intro-glow, .intro-flame, .intro-step, .intro-step-late, .intro-slam, .intro-count, .avatar-pop, .level-land { animation: none; }
+  .final-intro-glow, .intro-flame, .intro-step, .intro-step-late, .intro-slam, .intro-count, .avatar-pop, .level-land, .stamp-shake { animation: none; }
 }
 
 /* Partida: entrada da rodada, cronômetro, revelação, pódio */
