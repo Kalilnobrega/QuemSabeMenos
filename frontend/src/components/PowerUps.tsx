@@ -513,7 +513,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
   }
 
   const skip = async () => {
-    playSound('select')
+    playSound('skip')
     setSkipped(true)
     const failure = await onSkip()
     if (failure) setSkipped(false)

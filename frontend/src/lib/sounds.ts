@@ -31,6 +31,7 @@ export const SOUND_ENABLED = {
   flashbang: true,
   podiumWinner: true,
   podiumLoser: true,
+  skip: true,
   powerArm: true,
   powerHit: true,
   shield: true,
@@ -76,6 +77,7 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
   podiumWinner: { group: 'Pódio', name: 'Fanfarra de vitória', moment: 'O pódio aparece, com o vencedor' },
   podiumLoser: { group: 'Pódio', name: 'Trombone triste (uá-uá-uá)', moment: 'Logo depois, para quem sabe menos' },
+  skip: { group: 'Revelação', name: 'Pulinho para a frente', moment: 'Você toca em Pular' },
   powerArm: { group: 'Habilidades', name: 'Trava e acorde', moment: 'Você arma ou usa uma habilidade' },
   powerHit: { group: 'Habilidades', name: 'Ops (dois tons caindo)', moment: 'Uma sabotagem começa a valer em você' },
   shield: { group: 'Habilidades', name: 'Batida de metal (gravado)', moment: 'O Escudo segura um erro seu' },
@@ -337,7 +339,13 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   podiumLoser: () => {
     ;[293.66, 277.18, 261.63].forEach((f, i) => tone(f, { at: i * 0.45, dur: 0.4, type: 'sawtooth', gain: 0.14, lowpass: 900 }))
     tone(246.94, { at: 1.35, dur: 1.2, type: 'sawtooth', gain: 0.14, lowpass: 900, vibrato: 6 })
-  },  // Trava metálica e um acorde curto.
+  },  // Pulinho para a frente: um sopro rápido e dois degraus subindo.
+  skip: () => {
+    noise({ dur: 0.18, freq: 700, to: 3200, q: 1.4, gain: 0.12 })
+    tone(520, { dur: 0.07, to: 780, type: 'triangle', gain: 0.13 })
+    tone(780, { at: 0.07, dur: 0.11, to: 1170, type: 'triangle', gain: 0.11 })
+  },
+  // Trava metálica e um acorde curto.
   powerArm: () => {
     noise({ dur: 0.03, filter: 'highpass', freq: 3000, gain: 0.3 })
     tone(1800, { dur: 0.05, type: 'square', gain: 0.04 })

@@ -843,15 +843,13 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
     }
   }, [urgent, answered, secondsLeft])
 
+  // Depende só do veredito: cada atualização da sala (Pular, habilidade armada) recria o resultado.
+  const verdict = showResults && myResult ? (myResult.option === null ? 'noAnswer' : myResult.correct ? 'correct' : 'wrong') : null
   useEffect(() => {
-    if (!showResults || !myResult) return
-    if (myResult.option === null) {
-      playSound('noAnswer')
-      return
-    }
-    vibrate(myResult.correct ? 40 : [70, 50, 70])
-    playSound(myResult.correct ? 'correct' : 'wrong')
-  }, [showResults, myResult])
+    if (!verdict) return
+    if (verdict !== 'noAnswer') vibrate(verdict === 'correct' ? 40 : [70, 50, 70])
+    playSound(verdict)
+  }, [verdict])
 
   const pick = async (option: number) => {
     if (!canAnswer || game.hidden_options.includes(option) || option === retry) return
