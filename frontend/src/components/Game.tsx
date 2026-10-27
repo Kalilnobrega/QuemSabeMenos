@@ -851,7 +851,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
       </header>
 
       {blinded && <div className="flashbang-flash" aria-hidden="true" />}
-      {!showResults && !blinded && <ActivePowerUps game={game} players={room.players} playerId={playerId} />}
+      {/* Na Flashbang o aviso fica invisível sem sair do lugar: tirar da página deixava um rastro do contorno. */}
+      {!showResults && <ActivePowerUps game={game} players={room.players} playerId={playerId} concealed={blinded} />}
       {!showResults && !answered && !silenced && <InstantPowerUps game={game} playerId={playerId} onUse={onUse} />}
 
       <div className={`flex h-8 items-center gap-3 ${silenced ? 'invisible' : ''}`}>

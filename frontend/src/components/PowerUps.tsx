@@ -374,7 +374,7 @@ function clearedFraction(canvas: HTMLCanvasElement) {
 }
 
 /** O que está valendo nesta pergunta: quem jogou o quê em quem. As que tocam você aparecem primeiro. */
-export function ActivePowerUps({ game, players, playerId }: { game: GameView; players: PlayerView[]; playerId: string | null }) {
+export function ActivePowerUps({ game, players, playerId, concealed = false }: { game: GameView; players: PlayerView[]; playerId: string | null; concealed?: boolean }) {
   const name = (id: string | null) => (id === playerId ? 'você' : (players.find((p) => p.id === id)?.nickname ?? '?'))
   const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
   // A lendária pega todo mundo: sempre é com você.
@@ -429,7 +429,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
   }
 
   return (
-    <ul className="flex flex-col gap-1.5" aria-label="Habilidades valendo">
+    <ul className={`flex flex-col gap-1.5 ${concealed ? 'invisible' : ''}`} aria-label="Habilidades valendo">
       {uses.map((use, index) => (
         <li
           key={`${use.by}-${use.kind}-${use.target}-${use.legendary}`}
