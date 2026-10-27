@@ -6,22 +6,52 @@ perde vida. Quando sobram 2, vira X1: morte súbita, com menos tempo a cada perg
 sozinho. Nas Alternativas, se o X1 passa de 10 perguntas, só vêm impossíveis, e nelas os dois
 acertando ganha o mais rápido.
 Sem QI: a colocação é a ordem de eliminação (mesma rodada desempata pelo tempo total de resposta).
+
+Com poderes: os do clássico que não dependem de QI, armados na revelação para a próxima pergunta
+(50/50 e Espiar na hora). Escudo segura uma vida, Roubo vira Roubo de vida, Alternativa falsa dá
+um Escudo a quem jogou. Cada um ganha um no começo e outro a cada 3 acertos seguidos. Quem caiu vira
+fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos e, às vezes, a Ressurreição.
+No X1 não tem poder.
 """
 
 import random
 from dataclasses import dataclass, field
-from typing import Literal, Protocol
+from typing import Callable, Literal, Protocol
 
+from app import powerups as pw
 from app.duel import TRUE_FALSE_OPTIONS
-from app.events import Survivor, SurvivalKind, SurvivalPick, SurvivalView
+from app.events import (
+    Gift,
+    LastingPowerUp,
+    PowerUp,
+    PowerUpGain,
+    PowerUpUse,
+    Survivor,
+    SurvivalKind,
+    SurvivalPick,
+    SurvivalView,
+)
 from app.game import reading_seconds
 
 START_SECONDS = 5.0
 LEVEL_SECONDS = 3.0
 RESULTS_SECONDS = 6.0
+POWERS_RESULTS_SECONDS = 12.0  # dá tempo de escolher poder e alvo; todos pulando, acaba antes
 DUEL_INTRO_SECONDS = 3.0
 DUEL_RESULTS_SECONDS = 3.0
 LATE_SECONDS = 1.0  # tolerância de rede para respostas no limite
+
+# Poderes do modo. No V ou F, 50/50 e Alternativa falsa entregariam a resposta.
+POWERS: tuple[PowerUp, ...] = (
+    "fifty_fifty", "peek", "shield", "extra_time", "second_chance", "reverse", "theme", "backpack",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "silence", "decoy", "flashbang",
+)
+TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty", "decoy"})
+LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2, "reverse": 3}
+GHOST_EVERY = 3  # perguntas entre um presente e outro para quem caiu
+GHOST_SABOTAGES: tuple[PowerUp, ...] = ("scramble", "accelerator", "mirror", "magnifier", "flashbang")
+GHOST_RESURRECTION_CHANCE = 0.08
+DECOY_SHIELD_ROUNDS = 1  # Escudo para quem jogou a Alternativa falsa em quem caiu nela
 
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
 Phase = Literal[
@@ -84,12 +114,21 @@ class Contender:
 
 
 @dataclass
+class Decoy:
+    texts: list[str]
+    order: list[int]  # posição na tela → índice em opções reais + falsas
+    payees: list[str]  # quem jogou e ganha o Escudo se o alvo cair
+
+
+@dataclass
 class Survival:
     kind: SurvivalKind
     contenders: list[Contender]
     pool: list[Asked]  # perguntas dos temas escolhidos, de todos os níveis
     used: set[str]  # ids já sorteados nesta sala, para "jogar de novo" trazer perguntas novas
     rng: random.Random
+    powers: bool = False
+    powerup_max: int = pw.MAX_HELD
     phase: Phase = "starting"
     phase_started_at: float = 0
     phase_ends_at: float = 0
@@ -101,13 +140,47 @@ class Survival:
     picks: list[SurvivalPick] = field(default_factory=list)
     spared: bool = False  # todos os vivos erraram: ninguém perdeu vida
     winner: str | None = None
+    ready: set[str] = field(default_factory=set)
+    # Poderes (ver powerups.py para o que cada um faz no clássico).
+    held: dict[str, list[PowerUp]] = field(default_factory=dict)
+    mythics: dict[str, list[PowerUp]] = field(default_factory=dict)
+    starting: dict[str, PowerUp] = field(default_factory=dict)
+    extra_slots: dict[str, int] = field(default_factory=dict)
+    armed: dict[str, PowerUpUse] = field(default_factory=dict)
+    active: list[PowerUpUse] = field(default_factory=list)
+    lasting: dict[str, dict[PowerUp, int]] = field(default_factory=dict)  # perguntas que faltam, contando a atual
+    lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
+    silences: list[tuple[PowerUpUse, int]] = field(default_factory=list)
+    hidden_options: dict[str, list[int]] = field(default_factory=dict)
+    first_wrong: dict[str, tuple[int, float]] = field(default_factory=dict)
+    decoys: dict[str, Decoy | None] = field(default_factory=dict)
+    theme_choices: list[str] = field(default_factory=list)
+    next_theme: str | None = None
+    runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo ao próximo poder
+    revived: list[str] = field(default_factory=list)  # ressuscitados nesta revelação
+    gifts: list[Gift] = field(default_factory=list)  # poderes ganhos nesta revelação
 
     @classmethod
     def create(
-        cls, kind: SurvivalKind, player_ids: list[str], pool: list[Asked], used: set[str], rng: random.Random, now: float
+        cls,
+        kind: SurvivalKind,
+        player_ids: list[str],
+        pool: list[Asked],
+        used: set[str],
+        rng: random.Random,
+        now: float,
+        powers: bool = False,
+        powerup_max: int = pw.MAX_HELD,
     ) -> "Survival":
         lives = RULES[kind].lives
-        game = cls(kind=kind, contenders=[Contender(pid, lives) for pid in player_ids], pool=pool, used=used, rng=rng)
+        game = cls(
+            kind=kind, contenders=[Contender(pid, lives) for pid in player_ids], pool=pool, used=used, rng=rng,
+            powers=powers, powerup_max=powerup_max,
+        )
+        if powers:
+            for pid in player_ids:
+                game.starting[pid] = game.rng.choice(game.power_kinds())
+                game.held[pid] = [game.starting[pid]]
         game._enter("starting", now, START_SECONDS)
         return game
 
@@ -132,11 +205,23 @@ class Survival:
     def everyone_answered(self, connected: list[str]) -> bool:
         return all(pid in self.answers for pid in self.answering_ids() if pid in connected)
 
+    def everyone_ready(self, connected: list[str]) -> bool:
+        return self.phase == "results" and all(pid in self.ready for pid in connected)
+
     def answer_seconds(self) -> float:
         r = self.rules
         if self.in_duel():
             return max(r.duel_min_seconds, r.duel_first_seconds - r.duel_step_seconds * (self.duel_round - 1))
         return r.answer_seconds
+
+    def answer_window(self, player_id: str) -> float:
+        """Segundos que o jogador tem: Tempo extra soma, Acelerador corta."""
+        seconds = self.answer_seconds()
+        if self._affects("extra_time", player_id):
+            seconds += pw.EXTRA_SECONDS
+        if self._affects("accelerator", player_id):
+            seconds *= pw.ACCELERATOR_FACTOR
+        return seconds
 
     def difficulty(self, round_: int | None = None) -> Difficulty:
         """O nível da rodada (a atual, se não disser): segue `levels` e depois só difíceis."""
@@ -150,9 +235,29 @@ class Survival:
         return "hard"
 
     def deadline(self) -> float:
-        """Quando o servidor fecha a fase: nas respostas, com a tolerância de rede."""
-        late = LATE_SECONDS if self.phase in ("answering", "duel_answering") else 0
-        return self.phase_ends_at + late
+        """Quando o servidor fecha a fase: nas respostas, o prazo mais longo, com a tolerância de rede."""
+        if self.phase in ("answering", "duel_answering"):
+            longest = max([self.answer_seconds(), *(self.answer_window(pid) for pid in self.answering_ids())])
+            return self.phase_started_at + longest + LATE_SECONDS
+        return self.phase_ends_at
+
+    def power_kinds(self) -> list[PowerUp]:
+        return [k for k in POWERS if not (self.kind == "true_false" and k in TRUE_FALSE_BLOCKED)]
+
+    def powers_round(self) -> bool:
+        return self.powers and not self.in_duel() and self.phase not in ("starting", "finished")
+
+    def can_arm(self) -> bool:
+        """Na revelação, se a próxima pergunta não é do X1."""
+        return self.powers and self.phase == "results" and len(self.alive_ids()) > 2
+
+    def capacity(self, player_id: str) -> int:
+        return self.powerup_max + self.extra_slots.get(player_id, 0)
+
+    def silence_left(self, player_id: str) -> int:
+        if not self.powers_round():
+            return 0
+        return max((left for use, left in self.silences if use.target == player_id), default=0)
 
     # --- ações ------------------------------------------------------------
 
@@ -163,11 +268,90 @@ class Survival:
             raise SurvivalError("Você está fora desta rodada.")
         if player_id in self.answers:
             raise SurvivalError("Você já respondeu.")
-        if option not in range(len(self.question.options)):
-            raise SurvivalError("Resposta inválida.")
-        if now > self.phase_ends_at + LATE_SECONDS:
+        deadline = self.phase_started_at + self.answer_window(player_id)
+        if now > deadline + LATE_SECONDS:
             raise SurvivalError("O tempo acabou.")
-        self.answers[player_id] = (option, now)
+        decoy = self._decoy_for(player_id)
+        real = len(self.question.options)
+        if option not in range(real + (len(decoy.texts) if decoy else 0)):
+            raise SurvivalError("Resposta inválida.")
+        if decoy:
+            option = decoy.order[option]
+        tried = self.first_wrong.get(player_id)
+        if option in self.hidden_options.get(player_id, []) or (tried and tried[0] == option):
+            raise SurvivalError("Resposta inválida.")
+        at = min(now, deadline)
+        if option != self.question.answer and not tried and self._affects("second_chance", player_id):
+            self.first_wrong[player_id] = (option, at)
+            self.lasting[player_id].pop("second_chance", None)
+            return
+        self.answers[player_id] = (option, at)
+
+    def mark_ready(self, player_id: str) -> None:
+        if self.phase != "results":
+            raise SurvivalError("Agora não dá para pular.")
+        self.ready.add(player_id)
+
+    def arm(self, player_id: str, kind: PowerUp, target: str | None, theme: str | None = None) -> None:
+        if not self.powers or self.phase != "results":
+            raise SurvivalError("Agora não dá para usar habilidade.")
+        if self.silence_left(player_id):
+            raise SurvivalError("Silenciado: sem habilidades por enquanto.")
+        me = self.contender(player_id)
+        if kind == "resurrection":
+            return self._resurrect(player_id)
+        held = self.held.get(player_id, [])
+        if kind not in held:
+            raise SurvivalError("Você não tem essa habilidade.")
+        if kind == "backpack":
+            return self._open_backpack(player_id)
+        if not self.can_arm():
+            raise SurvivalError("No X1 não tem habilidade.")
+        if player_id in self.armed:
+            raise SurvivalError("Você já armou uma habilidade para a próxima pergunta.")
+        if kind in pw.INSTANT:
+            raise SurvivalError("Essa se usa na hora da pergunta.")
+        if not me.alive and kind not in pw.TARGETED:
+            raise SurvivalError("Fantasma só joga sabotagem nos vivos.")
+        if kind in pw.TARGETED:
+            alive = self.alive_ids()
+            if target is None or target == player_id or target not in alive:
+                raise SurvivalError("Escolha em quem usar (só em quem está vivo).")
+        else:
+            target = None
+        if kind == "theme":
+            if theme not in self.theme_choices:
+                raise SurvivalError("Escolha um dos temas.")
+            if self.next_theme:
+                raise SurvivalError("Alguém já escolheu o tema da próxima pergunta.")
+            self.next_theme = theme
+        else:
+            theme = None
+        held.remove(kind)
+        self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None, theme=theme)
+
+    def use_now(self, player_id: str, kind: PowerUp) -> None:
+        """50/50 e Espiar: durante a pergunta, valem na hora."""
+        if self.phase not in ("reading", "answering") or not self.powers_round():
+            raise SurvivalError("Agora não dá para usar habilidade.")
+        if kind not in pw.INSTANT:
+            raise SurvivalError("Essa se arma na revelação.")
+        if player_id not in self.alive_ids():
+            raise SurvivalError("Você está fora.")
+        if self.silence_left(player_id):
+            raise SurvivalError("Silenciado: sem habilidades por enquanto.")
+        held = self.held.get(player_id, [])
+        if kind not in held:
+            raise SurvivalError("Você não tem essa habilidade.")
+        if player_id in self.answers:
+            raise SurvivalError("Você já respondeu.")
+        if self._affects(kind, player_id):
+            raise SurvivalError("Já está valendo.")
+        held.remove(kind)
+        self.active.append(PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None))
+        if kind == "fifty_fifty":
+            q = self.question
+            self.hidden_options[player_id] = pw.fifty_fifty(len(q.options), q.answer, self.rng)
 
     def drop(self, player_id: str) -> None:
         """Quem sai da sala está fora na hora."""
@@ -198,6 +382,7 @@ class Survival:
     def _finish(self, now: float, winner: str | None) -> None:
         self.winner = winner
         self.duelists = []
+        self.active = []
         self._enter("finished", now, 0)
 
     def _next_question(self, now: float) -> None:
@@ -207,15 +392,23 @@ class Survival:
         if self.in_duel() and len(self.duelists) < 2:
             return self._finish(now, self.duelists[0] if self.duelists else None)
         self.round += 1
+        self.ready = set()
+        self.revived = []
+        self.gifts = []
         if len(alive) == 2 and not self.in_duel():
             self.duelists = alive
             self.duel_round = 1
+            self.armed = {}
+            self.active = []
             self.question = self._draw(self.difficulty())
             self._enter("duel_intro", now, DUEL_INTRO_SECONDS)
             return
         if self.in_duel():
             self.duel_round += 1
-        self.question = self._draw(self.difficulty())
+        else:
+            self._start_powers()
+        self.question = self._draw(self.difficulty(), self.next_theme)
+        self.next_theme = None
         if not self.in_duel() and self.round > 1 and self.difficulty() != self.difficulty(self.round - 1):
             self._enter("level", now, LEVEL_SECONDS)
         else:
@@ -233,15 +426,28 @@ class Survival:
         self._enter("duel_answering" if self.in_duel() else "answering", now, self.answer_seconds())
 
     def _close(self, now: float) -> None:
-        window_ms = round(self.answer_seconds() * 1000)
+        real = len(self.question.options)
         for pid in self.answering_ids():
             c = self.contender(pid)
-            option, at = self.answers.get(pid, (None, None))
+            window_ms = round(self.answer_window(pid) * 1000)
+            first = self.first_wrong.get(pid)
+            option, at = self.answers.get(pid) or first or (None, None)
             elapsed = min(window_ms, round((at - self.phase_started_at) * 1000)) if at is not None else None
             correct = option is not None and option == self.question.answer
             c.answer_ms += window_ms if elapsed is None else elapsed
             c.correct += correct
-            self.picks.append(SurvivalPick(player_id=pid, option=option, correct=correct, elapsed_ms=elapsed, lost_life=False))
+            decoy = self._decoy_for(pid)
+            self.picks.append(
+                SurvivalPick(
+                    player_id=pid,
+                    option=option,
+                    correct=correct,
+                    elapsed_ms=elapsed,
+                    lost_life=False,
+                    first_option=first[0] if first and (option, at) != first else None,
+                    decoy=decoy.texts[option - real] if decoy and option is not None and option >= real else None,
+                )
+            )
         wrong = [p for p in self.picks if not p.correct]
         if self.in_duel():
             self._close_duel(wrong)
@@ -251,11 +457,22 @@ class Survival:
         if not self.spared:
             for pick in wrong:
                 c = self.contender(pick.player_id)
+                if self._affects("shield", pick.player_id):
+                    pick.shielded = True
+                    self.lasting[pick.player_id].pop("shield", None)
+                    continue
                 pick.lost_life = True
                 c.lives -= 1
-                if c.lives <= 0:
-                    c.out_round = self.round
-        self._enter("results", now, RESULTS_SECONDS)
+        if self.powers:
+            self._settle_powers()
+        for pick in self.picks:
+            c = self.contender(pick.player_id)
+            if c.lives <= 0 and c.alive:
+                c.out_round = self.round
+        if self.powers:
+            self._gains()
+            self.theme_choices = self._draw_theme_choices()
+        self._enter("results", now, POWERS_RESULTS_SECONDS if self.powers else RESULTS_SECONDS)
 
     def _close_duel(self, wrong: list[SurvivalPick]) -> None:
         """Morte súbita: perde quem errou sozinho; se os dois erram ou acertam, segue.
@@ -276,10 +493,12 @@ class Survival:
             c.out_round = self.round
             self.duelists.remove(c.id)
 
-    def _draw(self, difficulty: str) -> Asked:
-        """Sorteia uma pergunta do nível que ainda não saiu; se acabaram, libera as do nível de novo.
-        As alternativas das perguntas do banco vêm embaralhadas."""
+    def _draw(self, difficulty: str, theme: str | None = None) -> Asked:
+        """Sorteia uma pergunta do nível (e do tema, com o poder Tema) que ainda não saiu; se
+        acabaram, libera as do nível de novo. As alternativas das perguntas do banco vêm embaralhadas."""
         level = [q for q in self.pool if q.difficulty == difficulty] or [q for q in self.pool if q.difficulty == "hard"] or self.pool
+        if theme:
+            level = [q for q in level if q.theme == theme] or level
         fresh = [q for q in level if q.id not in self.used]
         if not fresh:
             self.used -= {q.id for q in level}
@@ -292,6 +511,128 @@ class Survival:
         self.rng.shuffle(order)
         return question.model_copy(update={"options": [question.options[i] for i in order], "answer": order.index(question.answer)})
 
+    # --- poderes ----------------------------------------------------------
+
+    def _start_powers(self) -> None:
+        """Começo de uma pergunta comum: o que foi armado passa a valer (o Reverso devolve)."""
+        self.silences = [(use, left - 1) for use, left in self.silences if left > 1]
+        self.hidden_options = {}
+        self.first_wrong = {}
+        self.decoys = {}
+        self.theme_choices = []
+        armed = list(self.armed.values())
+        self.armed = {}
+        for use in armed:
+            if use.kind in LASTING:
+                self.lasting.setdefault(use.by, {})[use.kind] = LASTING[use.kind]
+                self.lasting_total.setdefault(use.by, {})[use.kind] = LASTING[use.kind]
+        reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
+        self.active = pw.reflect(armed, reversers)
+        for use in self.active:
+            if use.reflected_by:
+                self.lasting[use.reflected_by].pop("reverse", None)
+            if use.kind == "silence":
+                self.silences.append((use, pw.SILENCE_ROUNDS))
+
+    def _affects(self, kind: PowerUp, player_id: str) -> bool:
+        if not self.powers_round():
+            return False
+        if kind == "silence":
+            return self.silence_left(player_id) > 0
+        if kind in LASTING:
+            return self.lasting.get(player_id, {}).get(kind, 0) > 0
+        return any((use.target or use.by) == player_id for use in self.active if use.kind == kind)
+
+    def _decoy_for(self, player_id: str) -> Decoy | None:
+        if player_id not in self.decoys:
+            payees = [use.reflected_by or use.by for use in self.active if use.kind == "decoy" and use.target == player_id]
+            self.decoys[player_id] = self._make_decoy(payees) if payees and self.powers_round() else None
+        return self.decoys[player_id]
+
+    def _make_decoy(self, payees: list[str]) -> Decoy | None:
+        q = self.question
+        similar = [o for other in self.pool if other.theme == q.theme and other.text != q.text for o in other.options]
+        self.rng.shuffle(similar)
+        texts = pw.decoys(q.options[q.answer], q.options, similar[:48], self.rng)
+        if not texts:
+            return None
+        order = list(range(len(q.options) + len(texts)))
+        self.rng.shuffle(order)
+        return Decoy(texts=texts, order=order, payees=payees)
+
+    def _settle_powers(self) -> None:
+        """Depois das vidas: Roubo de vida, Escudo de quem pegou alguém na falsa, e o desgaste
+        das que duram mais de uma pergunta."""
+        by_id = {p.player_id: p for p in self.picks}
+        for use in self.active:
+            if use.kind == "steal" and (victim := by_id.get(use.target)) and victim.lost_life:
+                thief = self.contender(use.by)
+                if thief and thief.alive and thief.lives > 0:
+                    thief.lives = min(self.rules.lives, thief.lives + 1)
+                    victim.stolen_by = use.by
+        for pick in self.picks:
+            decoy = self.decoys.get(pick.player_id)
+            if pick.decoy and decoy:
+                for payee in decoy.payees:
+                    self.lasting.setdefault(payee, {})["shield"] = DECOY_SHIELD_ROUNDS + 1
+                    self.lasting_total.setdefault(payee, {})["shield"] = DECOY_SHIELD_ROUNDS
+        for kinds in self.lasting.values():
+            for kind in list(kinds):
+                kinds[kind] -= 1
+                if kinds[kind] <= 0:
+                    del kinds[kind]
+
+    def _gains(self) -> None:
+        """Um poder a cada 3 acertos seguidos; quem caiu ganha uma sabotagem a cada 3 perguntas."""
+        for pick in self.picks:
+            pid = pick.player_id
+            if not pick.correct or pick.first_option is not None:
+                self.runs[pid] = 0
+                continue
+            self.runs[pid] = self.runs.get(pid, 0) + 1
+            if self.runs[pid] >= pw.STREAK_FOR_POWERUP:
+                self.runs[pid] = 0
+                self._give(pid, self.rng.choice(self.power_kinds()), "streak")
+        if self.round % GHOST_EVERY:
+            return
+        for c in self.contenders:
+            if c.alive or c.out_round == self.round:
+                continue
+            mythic = self.rng.random() < GHOST_RESURRECTION_CHANCE and "resurrection" not in self.mythics.get(c.id, [])
+            kind = "resurrection" if mythic else self.rng.choice(GHOST_SABOTAGES)
+            self._give(c.id, kind, "ghost", mythic=mythic)
+
+    def _give(self, player_id: str, kind: PowerUp, reason: str, mythic: bool = False) -> None:
+        """Com as mãos cheias, não ganha nada (o mítico não ocupa vaga)."""
+        hand = self.mythics.setdefault(player_id, []) if mythic else self.held.setdefault(player_id, [])
+        if not mythic and len(hand) >= self.capacity(player_id):
+            return
+        hand.append(kind)
+        self.gifts.append(Gift(player_id=player_id, gain=PowerUpGain(kind=kind, reason=reason, mythic=mythic)))
+
+    def _open_backpack(self, player_id: str) -> None:
+        if self.extra_slots.get(player_id, 0) >= pw.BACKPACK_MAX_EXTRA:
+            raise SurvivalError("Sua Mochila já está no tamanho máximo.")
+        held = self.held[player_id]
+        held.remove("backpack")
+        self.extra_slots[player_id] = self.extra_slots.get(player_id, 0) + 1
+        held.append(self.rng.choice([k for k in self.power_kinds() if k != "backpack"]))
+
+    def _resurrect(self, player_id: str) -> None:
+        c = self.contender(player_id)
+        if "resurrection" not in self.mythics.get(player_id, []):
+            raise SurvivalError("Você não tem essa habilidade.")
+        if c.alive or self.in_duel() or len(self.alive_ids()) < 2:
+            raise SurvivalError("A Ressurreição é para quem caiu, antes do X1.")
+        self.mythics[player_id].remove("resurrection")
+        c.out_round = None
+        c.lives = 1
+        self.revived.append(player_id)
+
+    def _draw_theme_choices(self) -> list[str]:
+        themes = sorted({q.theme for q in self.pool})
+        return sorted(self.rng.sample(themes, min(pw.THEME_CHOICES, len(themes))))
+
     # --- ranking e visão --------------------------------------------------
 
     def places(self) -> dict[str, int]:
@@ -302,17 +643,45 @@ class Survival:
 
         return {c.id: i + 1 for i, c in enumerate(sorted(self.contenders, key=key))}
 
+    def _screen(self, viewer: str | None) -> tuple[list[str], Callable[[int | None], int | None]]:
+        """Alternativas na ordem da tela de quem vê (com as falsas, se for o alvo)."""
+        q = self.question
+        real = len(q.options)
+        decoy = self.decoys.get(viewer) if viewer else None
+        if not decoy:
+            return q.options, lambda i: i if i is not None and i < real else None
+        everything = [*q.options, *decoy.texts]
+        return [everything[i] for i in decoy.order], lambda i: decoy.order.index(i) if i is not None else None
+
     def view(self, now: float, viewer: str | None, player_ids: list[str]) -> SurvivalView:
         revealed = self.phase in ("results", "duel_results")
         showing = self.phase in ("reading", "duel_reading", "answering", "duel_answering", "results", "duel_results")
         places = self.places() if self.phase == "finished" else {}
         q = self.question if showing else None
         counts = dict(self.rules.levels)
+        silenced = self.silence_left(viewer) if viewer else 0
+        hidden = revealed and silenced > 0  # silenciado não vê a revelação
+        if q and viewer and self.phase in ("reading", "answering"):
+            self._decoy_for(viewer)
+        options, screen = self._screen(viewer) if q else ([], lambda i: i)
+        ends_at = self.phase_ends_at
+        if self.phase == "answering" and viewer in self.answering_ids():
+            ends_at = self.phase_started_at + self.answer_window(viewer)
+        asking = self.phase in ("reading", "answering")
+        peek = None
+        if asking and viewer and self._affects("peek", viewer):
+            real = len(q.options)
+            tally = [0] * real
+            for pid, (option, _) in {**self.answers, **self.first_wrong}.items():
+                if pid != viewer and option < real:
+                    tally[option] += 1
+            peek = [tally[i] if i < real else 0 for i in self._underlying_order(viewer)]
+        mine = self.first_wrong.get(viewer) if viewer else None
         return SurvivalView(
             kind=self.kind,
             phase=self.phase,
-            phase_duration_ms=round((self.phase_ends_at - self.phase_started_at) * 1000),
-            phase_ends_in_ms=max(0, round((self.phase_ends_at - now) * 1000)),
+            phase_duration_ms=round((ends_at - self.phase_started_at) * 1000),
+            phase_ends_in_ms=max(0, round((ends_at - now) * 1000)),
             round=self.round,
             duel_round=self.duel_round,
             easy_count=counts.get("easy", 0),
@@ -321,19 +690,77 @@ class Survival:
             difficulty=self.difficulty() if self.round else self.rules.levels[0][0],
             text=q.text if q else None,
             theme=q.theme if q else None,
-            options=q.options if q else list(TRUE_FALSE_OPTIONS if self.kind == "true_false" else []),
-            answered=[pid for pid in self.answers if pid in player_ids],
-            my_answer=self.answers[viewer][0] if viewer in self.answers else None,
-            picks=self.picks if revealed else [],
-            correct_option=q.answer if q and revealed else None,
-            fact=q.fact if q and revealed else None,
-            spared=self.spared,
+            options=options if q else list(TRUE_FALSE_OPTIONS if self.kind == "true_false" else []),
+            answered=[] if silenced else [pid for pid in {*self.answers, *self.first_wrong} if pid in player_ids],
+            my_answer=screen(self.answers[viewer][0]) if viewer in self.answers else None,
+            picks=[] if hidden or not revealed else [self._pick_view(p, viewer, screen) for p in self.picks],
+            correct_option=screen(q.answer) if q and revealed and not hidden else None,
+            fact=q.fact if q and revealed and not hidden else None,
+            spared=self.spared and not hidden,
             duelists=list(self.duelists),
             next_seconds=self.answer_seconds() if self.in_duel() else None,
             winner=self.winner,
             survivors=[
-                Survivor(player_id=c.id, lives=c.lives, out_round=c.out_round, correct=c.correct, answer_ms=c.answer_ms, place=places.get(c.id))
+                Survivor(
+                    player_id=c.id,
+                    lives=-1 if silenced and c.id != viewer else c.lives,
+                    out_round=c.out_round,
+                    correct=c.correct,
+                    answer_ms=c.answer_ms,
+                    place=places.get(c.id),
+                )
                 for c in self.contenders
                 if c.id in player_ids
             ],
+            powers=self.powers,
+            powerups=list(self.held.get(viewer, [])) if viewer else [],
+            legendary_powerups=[],
+            mythic_powerups=list(self.mythics.get(viewer, [])) if viewer else [],
+            powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
+            starting_powerup=self.starting.get(viewer) if viewer else None,
+            can_arm=self.can_arm() and not silenced,
+            armed=self.armed.get(viewer) if viewer else None,
+            active=[] if hidden else self._visible_uses(viewer, revealed),
+            lasting=self._lasting_view(viewer) if viewer and not revealed else [],
+            hidden_options=[screen(i) for i in self.hidden_options.get(viewer, [])] if viewer else [],
+            first_wrong=screen(mine[0]) if mine else None,
+            peek=peek,
+            flashbang=bool(viewer) and asking and self._affects("flashbang", viewer),
+            silenced_rounds=silenced,
+            theme_choices=self.theme_choices,
+            powers_round=self.powers_round(),
+            ready=sorted(self.ready),
+            revived=list(self.revived),
+            gifts=self.gifts if revealed and not hidden else [],
         )
+
+    def _underlying_order(self, viewer: str) -> list[int]:
+        decoy = self.decoys.get(viewer)
+        return decoy.order if decoy else list(range(len(self.question.options)))
+
+    def _pick_view(self, pick: SurvivalPick, viewer: str | None, screen: Callable[[int | None], int | None]) -> SurvivalPick:
+        """Escolhas na ordem da tela de quem vê; a falsa em que outro caiu não tem lugar nela."""
+        real = len(self.question.options)
+        own = pick.player_id == viewer
+
+        def place(option: int | None) -> int | None:
+            return None if option is None or (not own and option >= real) else screen(option)
+
+        return pick.model_copy(update={"option": place(pick.option), "first_option": place(pick.first_option)})
+
+    def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
+        lasting = [
+            LastingPowerUp(kind=kind, rounds_left=left, total=self.lasting_total[viewer][kind])
+            for kind, left in self.lasting.get(viewer, {}).items()
+            if self._affects(kind, viewer)
+        ]
+        if silence_left := self.silence_left(viewer):
+            lasting.append(LastingPowerUp(kind="silence", rounds_left=silence_left, total=pw.SILENCE_ROUNDS))
+        return lasting
+
+    def _visible_uses(self, viewer: str | None, revealed: bool) -> list[PowerUpUse]:
+        """O Roubo de vida é surpresa até a revelação; o Reverso armado só o dono vê."""
+        if not self.powers_round() and not revealed:
+            return []
+        uses = [use for use in self.active if use.kind != "reverse" or use.by == viewer]
+        return uses if revealed else [use for use in uses if use.kind != "steal" or use.by == viewer]

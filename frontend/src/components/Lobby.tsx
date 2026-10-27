@@ -75,6 +75,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
       ? [
           { label: 'Perguntas', value: SURVIVAL_KINDS[room.settings.survival_kind].name },
           { label: 'Vidas', value: String(SURVIVAL_KINDS[room.settings.survival_kind].lives) },
+          { label: 'Poderes', value: room.settings.survival_powers ? `até ${room.settings.powerup_max}` : 'Não' },
           { label: 'Temas', value: themesLabel },
         ]
       : [
@@ -278,7 +279,18 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         )}
 
-        {settings.mode === 'powers' && (
+        {settings.mode === 'last_standing' && (
+          <OptionRow
+            title="Poderes"
+            hint="Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador"
+            options={[0, 1]}
+            value={settings.survival_powers ? 1 : 0}
+            label={(n) => (n ? 'Com' : 'Sem')}
+            onPick={(n) => update({ survival_powers: n === 1 })}
+          />
+        )}
+
+        {(settings.mode === 'powers' || (settings.mode === 'last_standing' && settings.survival_powers)) && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantas habilidades cada um pode guardar ao mesmo tempo"

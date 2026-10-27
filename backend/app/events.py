@@ -62,6 +62,7 @@ class UpdateSettingsRequest(BaseModel):
 
     mode: GameMode | None = None
     survival_kind: SurvivalKind | None = None
+    survival_powers: bool | None = None
     powerup_max: int | None = None
     rounds: int | None = None
     answer_seconds: float | None = None
@@ -115,6 +116,7 @@ class RoomSettings(BaseModel):
     mode_options: list[GameMode]
     survival_kind: SurvivalKind
     survival_kind_options: list[SurvivalKind]
+    survival_powers: bool
     powerup_max: int
     powerup_max_options: list[int]
     rounds: int
@@ -163,7 +165,7 @@ class LastingPowerUp(BaseModel):
 
 class PowerUpGain(BaseModel):
     kind: PowerUp
-    reason: Literal["start", "streak", "comeback"]  # sorteio inicial, acertos seguidos ou lanterna
+    reason: Literal["start", "streak", "comeback", "ghost"]  # sorteio inicial, acertos seguidos, lanterna ou fantasma
     legendary: bool = False
     mythic: bool = False
 
@@ -294,11 +296,20 @@ class SurvivalPick(BaseModel):
     correct: bool
     elapsed_ms: int | None
     lost_life: bool
+    first_option: int | None = None  # Segunda chance: a primeira escolha, errada
+    decoy: str | None = None  # Alternativa falsa em que caiu
+    shielded: bool = False  # o Escudo segurou a vida
+    stolen_by: str | None = None  # Roubo de vida: quem ficou com a vida perdida
+
+
+class Gift(BaseModel):
+    player_id: str
+    gain: PowerUpGain
 
 
 class Survivor(BaseModel):
     player_id: str
-    lives: int
+    lives: int  # -1 para quem está silenciado (não vê as vidas dos outros)
     out_round: int | None  # rodada em que caiu; None = ainda vivo
     correct: int
     answer_ms: int  # tempo total de resposta; desempata quem caiu na mesma rodada
@@ -337,6 +348,27 @@ class SurvivalView(BaseModel):
     next_seconds: float | None  # X1: tempo para responder a frase atual
     winner: str | None
     survivors: list[Survivor]
+    # Com poderes: os mesmos campos do GameView, para o front usar os mesmos componentes.
+    powers: bool
+    powerups: list[PowerUp]
+    legendary_powerups: list[PowerUp]  # sempre vazio: não tem lendário neste modo
+    mythic_powerups: list[PowerUp]  # a Ressurreição dos fantasmas
+    powerup_max: int
+    starting_powerup: PowerUp | None
+    can_arm: bool
+    armed: PowerUpUse | None
+    active: list[PowerUpUse]
+    lasting: list[LastingPowerUp]
+    hidden_options: list[int]
+    first_wrong: int | None
+    peek: list[int] | None
+    flashbang: bool
+    silenced_rounds: int
+    theme_choices: list[str]
+    powers_round: bool
+    ready: list[str]
+    revived: list[str]  # quem ressuscitou nesta revelação
+    gifts: list[Gift]  # poderes ganhos nesta revelação
 
 
 class RoomState(BaseModel):

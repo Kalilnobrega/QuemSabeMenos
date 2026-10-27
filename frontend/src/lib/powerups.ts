@@ -1,6 +1,12 @@
-import type { PowerUpGain, PowerUpUse } from '../types/events'
+import type { GameView, PowerUpGain, PowerUpUse } from '../types/events'
 
 export type Kind = PowerUpUse['kind']
+
+/** O que os componentes de poder leem da partida: o GameView e o SurvivalView têm esses campos. */
+export type PowerView = Pick<
+  GameView,
+  'powerups' | 'legendary_powerups' | 'mythic_powerups' | 'armed' | 'active' | 'lasting' | 'can_arm' | 'theme_choices' | 'ready' | 'powers_round'
+>
 
 export const INSTANT: Kind[] = ['fifty_fifty', 'peek']
 
@@ -33,6 +39,20 @@ const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
   start: 'sorteio',
   streak: '3 acertos seguidos',
   comeback: 'ajuda para o lanterna',
+  ghost: 'presente de fantasma',
+}
+
+/** No Último de pé não tem QI: os poderes mexem com vidas. */
+export const SURVIVAL_HINTS: Partial<Record<Kind, string>> = {
+  shield: 'Vale por até 2 perguntas: no primeiro erro, não perde a vida.',
+  extra_time: '+5s para responder nas próximas 3 perguntas.',
+  second_chance: 'Vale nas próximas 2 perguntas, uma vez: errou, tenta de novo.',
+  reverse: 'Secreto, vale por até 3 perguntas: o primeiro poder jogado em você volta para quem jogou.',
+  steal: 'Se o alvo perder uma vida na próxima, ela fica com você (até o máximo de vidas).',
+  accelerator: 'O alvo tem um terço do tempo para responder.',
+  decoy: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha um Escudo para a pergunta seguinte.',
+  silence: 'Por 2 perguntas o alvo não vê o tempo, as vidas dos outros nem a revelação, e não usa habilidades.',
+  resurrection: 'Mítico, só para fantasma. Na revelação, você volta para o jogo com 1 vida.',
 }
 
 export function gainLabel(gain: PowerUpGain) {

@@ -466,7 +466,7 @@ def test_no_powerups_before_the_bet_or_the_final():
 
 
 def test_three_right_in_a_row_earns_a_powerup_up_to_two():
-    game = Game(powers=True, questions=[question(f"e{i}") for i in range(7)], answer_seconds=10)
+    game = Game(powers=True, questions=[question(f"e{i}") for i in range(7)], answer_seconds=10, rng=random.Random(1))
     ana = P("ana")
     game.powerups = {"ana": []}
     gains = []

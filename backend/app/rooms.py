@@ -89,6 +89,7 @@ class Room:
     status: Literal["lobby", "playing"] = "lobby"
     mode: GameMode = "classic"
     survival_kind: SurvivalKind = "true_false"
+    survival_powers: bool = False
     powerup_max: int = MAX_HELD
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
@@ -120,6 +121,7 @@ class Room:
                 mode_options=list(MODE_OPTIONS),
                 survival_kind=self.survival_kind,
                 survival_kind_options=list(SURVIVAL_KIND_OPTIONS),
+                survival_powers=self.survival_powers,
                 powerup_max=self.powerup_max,
                 powerup_max_options=list(POWERUP_MAX_OPTIONS),
                 rounds=self.rounds,
@@ -258,6 +260,7 @@ class RoomManager:
         mode: GameMode | None = None,
         powerup_max: int | None = None,
         survival_kind: SurvivalKind | None = None,
+        survival_powers: bool | None = None,
     ) -> Room:
         room = self._host_room(sid, "mudar as configurações")
         if room.status != "lobby":
@@ -279,6 +282,8 @@ class RoomManager:
             room.mode = mode
         if survival_kind is not None:
             room.survival_kind = survival_kind
+        if survival_powers is not None:
+            room.survival_powers = survival_powers
         if powerup_max is not None:
             room.powerup_max = powerup_max
         if rounds is not None:
@@ -308,7 +313,10 @@ class RoomManager:
         room.status = "playing"
         if room.mode == "last_standing":
             pool = statements if room.survival_kind == "true_false" else bank
-            room.survival = Survival.create(room.survival_kind, [p.id for p in room.players], pool, room.used_questions, self.rng, now)
+            room.survival = Survival.create(
+                room.survival_kind, [p.id for p in room.players], pool, room.used_questions, self.rng, now,
+                powers=room.survival_powers, powerup_max=room.powerup_max,
+            )
             return room
         questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
         room.used_questions |= {q.id for q in questions}
@@ -365,6 +373,8 @@ class RoomManager:
         self, sid: str, kind: PowerUp, target: str | None, legendary: bool = False, theme: str | None = None
     ) -> Room:
         room, player = self._playing(sid)
+        if room.survival:
+            return self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
         try:
             if kind == "resurrection":
                 room.game.resurrect(player, room.players)
@@ -378,6 +388,8 @@ class RoomManager:
 
     def duel_bet(self, sid: str, choice: str, now: float) -> Room:
         room, player = self._playing(sid)
+        if not room.game:
+            raise RoomError("Não tem X1 com aposta rolando.")
         try:
             room.game.duel_bet(player.id, choice, now)
         except GameError as e:
@@ -386,6 +398,8 @@ class RoomManager:
 
     def use_powerup(self, sid: str, kind: PowerUp) -> Room:
         room, player = self._playing(sid)
+        if room.survival:
+            return self._on_survival(room, lambda s: s.use_now(player.id, kind))
         try:
             room.game.use_now(player.id, kind)
         except GameError as e:
@@ -395,6 +409,8 @@ class RoomManager:
     def ready(self, sid: str) -> Room:
         """Pular a revelação: acaba antes quando todos os conectados tocam."""
         room, player = self._playing(sid)
+        if room.survival:
+            return self._on_survival(room, lambda s: s.mark_ready(player.id))
         try:
             room.game.mark_ready(player.id)
         except GameError as e:
@@ -403,9 +419,16 @@ class RoomManager:
 
     def _playing(self, sid: str) -> tuple[Room, Player]:
         found = self.session(sid)
-        if not found or not found[0].game:
+        if not found or not (found[0].game or found[0].survival):
             raise RoomError("Não tem partida rolando.")
         return found
+
+    def _on_survival(self, room: Room, action) -> Room:
+        try:
+            action(room.survival)
+        except SurvivalError as e:
+            raise RoomError(str(e)) from e
+        return room
 
     def play_again(self, sid: str) -> Room:
         room = self._host_room(sid, "recomeçar")

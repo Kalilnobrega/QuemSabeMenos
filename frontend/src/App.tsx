@@ -63,7 +63,7 @@ export default function App() {
 
   let content
   if (snapshot && room?.survival) {
-    content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onPlayAgain={playAgain} onLeave={leaveRoom} />
+    content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.game) {
     content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onDuelBet={duelBet} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (room) {

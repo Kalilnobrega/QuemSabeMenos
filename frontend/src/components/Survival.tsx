@@ -5,10 +5,11 @@ import { AVATAR_URLS } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import type { PlayerView, SurvivalView, Survivor } from '../types/events'
-import { Confetti } from './Game'
+import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
+import type { PlayerView, PowerUpUse, SurvivalView, Survivor } from '../types/events'
+import { Confetti, PeekBadge } from './Game'
 import { LeaveButton } from './LeaveButton'
-import { PowerUpIcon } from './PowerUps'
+import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 const DIFFICULTY_CHIP: Record<string, string> = {
@@ -22,12 +23,15 @@ interface Props {
   snapshot: Snapshot
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
+  onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
+  onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
+  onSkip: () => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
 /** Último de pé: Verdadeiro ou Falso com vidas; quando sobram dois, X1 com o tempo caindo. */
-export function Survival({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Props) {
+export function Survival({ snapshot, playerId, onAnswer, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
   const survival = snapshot.room.survival!
   switch (survival.phase) {
     case 'starting':
@@ -40,7 +44,7 @@ export function Survival({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }:
       return <SurvivalPodium snapshot={snapshot} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
     default:
       // key: cada frase começa com a escolha local zerada.
-      return <Statement key={survival.round} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} />
+      return <Statement key={survival.round} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
   }
 }
 
@@ -98,6 +102,15 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
         </li>
         <li>Sobraram dois? X1 até alguém errar!</li>
       </ul>
+      {survival.starting_powerup && (
+        <p
+          className={`intro-step flex items-center gap-2 rounded-xl px-4 py-2 font-semibold ${POWERUP_INFO[survival.starting_powerup].tone}`}
+          style={{ animationDelay: '1.2s' }}
+        >
+          <PowerUpIcon kind={survival.starting_powerup} className="size-6" />
+          Sua habilidade: {POWERUP_INFO[survival.starting_powerup].name}
+        </p>
+      )}
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {room.players.map((player, index) => (
           <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
@@ -171,7 +184,7 @@ function DuelIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
   )
 }
 
-function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playerId: string | null; onAnswer: Props['onAnswer'] }) {
+function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { snapshot: Snapshot; playerId: string | null } & Pick<Props, 'onAnswer' | 'onArm' | 'onUse' | 'onSkip'>) {
   const { room } = snapshot
   const survival = room.survival!
   const duel = survival.duelists.length > 0
@@ -179,30 +192,60 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
   const noun = choices ? 'Pergunta' : 'Frase'
   const reading = survival.phase === 'reading' || survival.phase === 'duel_reading'
   const open = survival.phase === 'answering' || survival.phase === 'duel_answering'
+  const revealed = survival.phase === 'results' || survival.phase === 'duel_results'
   const remaining = useRemaining(snapshot, open)
   const [choice, setChoice] = useState<number | null>(survival.my_answer)
   const [error, setError] = useState<string | null>(null)
   const me = survival.survivors.find((s) => s.player_id === playerId)
   const answering = duel ? survival.duelists.includes(playerId ?? '') : !!me && me.out_round === null
-  const canAnswer = open && answering && choice === null
+  const retry = survival.first_wrong
+  const answered = retry !== null ? choice !== null && choice !== retry : choice !== null
+  const canAnswer = open && answering && !answered
+  const silenced = survival.silenced_rounds > 0
   const myPick = survival.picks.find((p) => p.player_id === playerId)
   const player = (id: string) => room.players.find((p) => p.id === id)
+  const name = (id: string | null | undefined) => (id === playerId ? 'você' : (player(id ?? '')?.nickname ?? '?'))
+
+  const hits = (kind: PowerUpUse['kind']) => !revealed && survival.active.some((use) => use.kind === kind && use.target === playerId)
+  const blinded = survival.flashbang && open && survival.phase_duration_ms - remaining >= FLASHBANG_MS
+  const scrambled = hits('scramble')
+  const mirrored = hits('mirror') ? '-scale-x-100' : ''
+  const scratched = hits('scratch') && !blinded
+  const sabotaged = survival.active.some((use) => use.kind !== 'steal' && TARGETED.has(use.kind) && use.target === playerId)
+  const text = scrambled ? scrambleWords(survival.text ?? '', survival.round) : survival.text
 
   useEffect(() => {
     if (open) playSound('answersOpen')
   }, [open])
+  useEffect(() => {
+    if (sabotaged && !revealed) playSound('powerHit')
+    // Só quando a pergunta aparece.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  useEffect(() => {
+    if (!blinded) return
+    playSound('flashbang')
+    vibrate([250, 80, 350])
+  }, [blinded])
   const myOutcome = myPick ? (myPick.correct ? 'correct' : myPick.option === null ? 'noAnswer' : 'wrong') : null
   useEffect(() => {
     if (!myOutcome) return
     playSound(myOutcome)
     if (myOutcome !== 'correct') vibrate(200)
   }, [myOutcome])
+  useEffect(() => {
+    if (survival.revived.length) playSound('resurrection')
+  }, [survival.revived.length])
 
   const pick = async (option: number) => {
-    if (!canAnswer) return
+    if (!canAnswer || survival.hidden_options.includes(option) || option === retry) return
     playSound('select')
     setChoice(option)
-    setError(await onAnswer(option))
+    const failure = await onAnswer(option)
+    if (failure) {
+      setChoice(null)
+      setError(failure)
+    }
   }
   const picksOn = (index: number) => survival.picks.filter((k) => k.option === index).map((k) => player(k.player_id))
 
@@ -210,13 +253,36 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
   if (reading) {
     status = 'Leia com calma…'
   } else if (open) {
-    status = answering ? (choice === null ? (duel ? 'Errou sozinho, perdeu!' : 'Errar ou não responder tira uma vida.') : 'Resposta enviada!') : duel ? 'Torça pelo seu lado!' : 'Você está fora. Assiste aí!'
+    if (!answering) status = duel ? 'Torça pelo seu lado!' : survival.powers ? 'Você é fantasma: assiste e sabota quem está vivo.' : 'Você está fora. Assiste aí!'
+    else if (blinded && !answered) status = 'Flashbang! Agora é chutar pela letra.'
+    else if (retry !== null && !answered) status = 'Errou! Segunda chance: tente de novo.'
+    else if (answered) status = 'Resposta enviada!'
+    else status = silenced ? 'Silêncio… quanto tempo será que falta?' : duel ? 'Errou sozinho, perdeu!' : 'Errar ou não responder tira uma vida.'
+  } else if (silenced && survival.phase === 'results') {
+    status = 'Silenciado: a revelação é surpresa.'
   } else if (survival.spared) {
     status = 'Todo mundo errou: ninguém perde vida!'
   } else if (myPick) {
     const out = me?.out_round !== null
-    status = myPick.correct ? <span className="text-emerald-300">Acertou!</span> : <span className="text-red-300">{out ? 'Você caiu!' : 'Perdeu uma vida!'}</span>
+    status = myPick.correct ? (
+      <span className="text-emerald-300">Acertou!</span>
+    ) : myPick.shielded ? (
+      <span className="text-sky-300">O Escudo segurou sua vida!</span>
+    ) : (
+      <span className="text-red-300">
+        {out ? 'Você caiu!' : 'Perdeu uma vida!'}
+        {myPick.stolen_by && ` E ${name(myPick.stolen_by)} ficou com ela.`}
+      </span>
+    )
   }
+
+  const notes = [
+    ...survival.revived.map((id) => `${cap(name(id))} ressuscitou com 1 vida!`),
+    ...survival.picks.filter((p) => p.stolen_by && p.player_id !== playerId).map((p) => `${cap(name(p.stolen_by))} roubou uma vida de ${name(p.player_id)}!`),
+    ...survival.picks.filter((p) => p.shielded && p.player_id !== playerId).map((p) => `O Escudo segurou a vida de ${name(p.player_id)}.`),
+    ...survival.picks.filter((p) => p.decoy).map((p) => `${cap(name(p.player_id))} caiu na Alternativa falsa "${p.decoy}"!`),
+    ...survival.gifts.map((g) => `${cap(name(g.player_id))} ${gainLabel(g.gain)}`),
+  ]
 
   return (
     <section className="flex w-full flex-col gap-5">
@@ -239,7 +305,11 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
 
       {duel ? <DuelCards snapshot={snapshot} playerId={playerId} /> : <SurvivorStrip snapshot={snapshot} playerId={playerId} />}
 
-      <div className="h-2 overflow-hidden rounded-full bg-panel">
+      {blinded && <div className="flashbang-flash" aria-hidden="true" />}
+      {survival.powers && !revealed && <ActivePowerUps game={survival} players={room.players} playerId={playerId} concealed={blinded} survival />}
+      {survival.powers && !revealed && answering && !answered && !silenced && <InstantPowerUps game={survival} playerId={playerId} onUse={onUse} />}
+
+      <div className={`h-2 overflow-hidden rounded-full bg-panel ${silenced ? 'invisible' : ''}`}>
         {open && (
           <div
             className={`h-full rounded-full ${remaining < 3000 ? 'bg-red-400' : 'bg-brand'}`}
@@ -247,49 +317,90 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
           />
         )}
       </div>
-      <h1 className={`text-[1.4rem] leading-snug font-bold ${choices ? '' : 'text-center'}`}>{survival.text}</h1>
-      <div className={`grid grid-cols-2 gap-3 ${choices ? 'auto-rows-fr' : ''}`}>
-        {survival.options.map((option, index) => {
-          const reveal = survival.correct_option !== null
-          const state = reveal
-            ? index === survival.correct_option
-              ? 'reveal-pop btn-correct text-white'
-              : picksOn(index).length
-                ? 'btn-wrong is-pressed text-white'
-                : 'btn-dark opacity-40'
-            : choice === index
-              ? 'btn-dark is-pressed outline-2 outline-brand'
-              : canAnswer
-                ? 'btn-dark'
-                : 'btn-dark opacity-60'
-          return (
-            <button
-              key={index}
-              onClick={() => void pick(index)}
-              disabled={!canAnswer}
-              className={`btn-3d relative flex items-center rounded-2xl ${
-                choices ? 'btn-sm min-h-14 gap-2 px-3 py-2 text-left text-base leading-tight font-semibold' : 'min-h-24 justify-center px-3 font-display text-2xl tracking-wide'
-              } ${state}`}
-            >
-              {choices && <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>}
-              <span className={choices ? 'min-w-0 [overflow-wrap:anywhere]' : ''}>{option}</span>
-              {reveal && (
-                <span className="absolute -top-2 -right-1.5 flex -space-x-2">
-                  {picksOn(index)
-                    .slice(0, 5)
-                    .map((p) => p && <img key={p.id} src={AVATAR_URLS[p.avatar]} alt={p.nickname} className="size-6" />)}
-                </span>
-              )}
-            </button>
-          )
-        })}
-      </div>
+      <Magnifier active={hits('magnifier') && !blinded}>
+        <ScratchCard active={scratched}>
+          <h1 className={`text-[1.4rem] leading-snug font-bold ${choices ? '' : 'text-center'} ${mirrored}`}>{blinded ? '' : text}</h1>
+        </ScratchCard>
+        <div className={`grid grid-cols-2 gap-3 ${choices ? 'auto-rows-fr' : ''}`}>
+          {survival.options.map((option, index) => {
+            const hidden = survival.hidden_options.includes(index)
+            const state =
+              survival.correct_option !== null
+                ? index === survival.correct_option
+                  ? 'reveal-pop btn-correct text-white'
+                  : picksOn(index).length
+                    ? 'btn-wrong is-pressed text-white'
+                    : 'btn-dark opacity-40'
+                : index === retry
+                  ? 'btn-wrong is-pressed text-white opacity-60'
+                  : choice === index
+                    ? 'btn-dark is-pressed outline-2 outline-brand'
+                    : hidden
+                      ? 'btn-dark opacity-20 line-through'
+                      : canAnswer
+                        ? 'btn-dark'
+                        : 'btn-dark opacity-60'
+            return (
+              <ScratchCard key={index} active={scratched && !hidden} className="flex">
+                <button
+                  onClick={() => void pick(index)}
+                  disabled={!canAnswer || hidden || index === retry}
+                  className={`btn-3d relative flex w-full items-center rounded-2xl ${
+                    choices ? 'btn-sm min-h-14 gap-2 px-3 py-2 text-left text-base leading-tight font-semibold' : 'min-h-24 justify-center px-3 font-display text-2xl tracking-wide'
+                  } ${state}`}
+                >
+                  {choices && <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>}
+                  <span className={`${choices ? 'min-w-0 [overflow-wrap:anywhere]' : ''} ${mirrored}`}>
+                    {blinded ? '' : scrambled ? scrambleWords(option, survival.round * 7 + index + 1) : option}
+                  </span>
+                  {survival.peek && !revealed && <PeekBadge count={survival.peek[index]} />}
+                  {survival.correct_option !== null && (
+                    <span className="absolute -top-2 -right-1.5 flex -space-x-2">
+                      {picksOn(index)
+                        .slice(0, 5)
+                        .map((p) => p && <img key={p.id} src={AVATAR_URLS[p.avatar]} alt={p.nickname} className="size-6" />)}
+                    </span>
+                  )}
+                </button>
+              </ScratchCard>
+            )
+          })}
+        </div>
+      </Magnifier>
       <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">{status}</p>
       {survival.fact && <p className="rounded-xl bg-panel px-4 py-3 text-center text-chalk">{survival.fact}</p>}
+      {notes.length > 0 && (
+        <ul className="flex flex-col gap-1.5 text-sm font-semibold">
+          {notes.map((note) => (
+            <li key={note} className="rounded-xl bg-panel px-3 py-1.5 text-chalk">
+              {note}
+            </li>
+          ))}
+        </ul>
+      )}
+      {survival.powers && survival.phase === 'results' && (
+        <PowerUpBar
+          powers
+          game={survival}
+          players={room.players}
+          playerId={playerId}
+          targetIds={survival.survivors.filter((s) => s.out_round === null).map((s) => s.player_id)}
+          hints={SURVIVAL_HINTS}
+          lockedNote="No X1 não tem habilidade."
+          emptyNote={me?.out_round !== null ? 'Fantasma: a cada 3 perguntas chega uma sabotagem para jogar nos vivos.' : undefined}
+          onArm={onArm}
+          onSkip={onSkip}
+        />
+      )}
       {error && <p className="text-center text-red-300">{error}</p>}
     </section>
   )
 }
+
+const FLASHBANG_MS = 4000
+const TARGETED = new Set(Object.entries(POWERUP_INFO).filter(([, info]) => info.targeted).map(([kind]) => kind))
+const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
+
 
 /** Todos os jogadores com as vidas; quem acabou de perder uma treme, quem caiu fica apagado. */
 function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: string | null }) {
@@ -311,7 +422,13 @@ function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: s
               {answered && !pick && <span className="absolute -right-1 -bottom-1 size-3.5 rounded-full border-2 border-ink bg-brand" aria-label="Respondeu" />}
             </span>
             <span className="w-full truncate text-center text-xs font-semibold">{s.player_id === playerId ? 'Você' : p.nickname}</span>
-            {out ? <span className="text-xs font-semibold text-red-300">{pick?.lost_life ? 'Caiu!' : 'Fora'}</span> : <Hearts lives={s.lives} max={survival.max_lives} className="size-3.5" />}
+            {out ? (
+              <span className="text-xs font-semibold text-red-300">{pick?.lost_life ? 'Caiu!' : 'Fora'}</span>
+            ) : s.lives < 0 ? (
+              <span className="text-xs font-semibold text-steel">???</span>
+            ) : (
+              <Hearts lives={s.lives} max={survival.max_lives} className="size-3.5" />
+            )}
           </li>
         )
       })}
@@ -355,9 +472,9 @@ function DuelCards({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
   )
 }
 
-function outLabel(s: Survivor, winner: string | null) {
-  if (s.player_id === winner) return 'Último de pé!'
-  return s.out_round === null ? 'Ficou de pé' : `Caiu na frase ${s.out_round}`
+function outLabel(s: Survivor, survival: SurvivalView) {
+  if (s.player_id === survival.winner) return 'Último de pé!'
+  return s.out_round === null ? 'Ficou de pé' : `Caiu na ${survival.kind === 'choices' ? 'pergunta' : 'frase'} ${s.out_round}`
 }
 
 function SurvivalPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Snapshot; playerId: string | null; onPlayAgain: Props['onPlayAgain']; onLeave: () => void }) {
@@ -390,7 +507,7 @@ function SurvivalPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="truncate font-semibold">{p.nickname}</span>
                 <span className="text-xs text-steel">
-                  {outLabel(s, survival.winner)} · {s.correct} acertos
+                  {outLabel(s, survival)} · {s.correct} {s.correct === 1 ? 'acerto' : 'acertos'}
                 </span>
               </span>
             </li>

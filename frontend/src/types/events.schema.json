@@ -770,6 +770,22 @@
       "title": "GameView",
       "type": "object"
     },
+    "Gift": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "gain": {
+          "$ref": "#/$defs/PowerUpGain"
+        }
+      },
+      "required": [
+        "player_id",
+        "gain"
+      ],
+      "title": "Gift",
+      "type": "object"
+    },
     "JoinRoomRequest": {
       "properties": {
         "nickname": {
@@ -995,7 +1011,8 @@
           "enum": [
             "start",
             "streak",
-            "comeback"
+            "comeback",
+            "ghost"
           ],
           "type": "string"
         },
@@ -1200,6 +1217,9 @@
           },
           "type": "array"
         },
+        "survival_powers": {
+          "type": "boolean"
+        },
         "powerup_max": {
           "type": "integer"
         },
@@ -1254,6 +1274,7 @@
         "mode_options",
         "survival_kind",
         "survival_kind_options",
+        "survival_powers",
         "powerup_max",
         "powerup_max_options",
         "rounds",
@@ -1558,6 +1579,43 @@
         },
         "lost_life": {
           "type": "boolean"
+        },
+        "first_option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "decoy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "shielded": {
+          "default": false,
+          "type": "boolean"
+        },
+        "stolen_by": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -1727,6 +1785,223 @@
             "$ref": "#/$defs/Survivor"
           },
           "type": "array"
+        },
+        "powers": {
+          "type": "boolean"
+        },
+        "powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "legendary_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "mythic_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powerup_max": {
+          "type": "integer"
+        },
+        "starting_powerup": {
+          "anyOf": [
+            {
+              "enum": [
+                "fifty_fifty",
+                "shield",
+                "double",
+                "peek",
+                "extra_time",
+                "second_chance",
+                "reverse",
+                "backpack",
+                "theme",
+                "investment",
+                "scratch",
+                "steal",
+                "scramble",
+                "accelerator",
+                "mirror",
+                "silence",
+                "magnifier",
+                "toll",
+                "decoy",
+                "flashbang",
+                "resurrection",
+                "duel"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "can_arm": {
+          "type": "boolean"
+        },
+        "armed": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpUse"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "active": {
+          "items": {
+            "$ref": "#/$defs/PowerUpUse"
+          },
+          "type": "array"
+        },
+        "lasting": {
+          "items": {
+            "$ref": "#/$defs/LastingPowerUp"
+          },
+          "type": "array"
+        },
+        "hidden_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "first_wrong": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "peek": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "flashbang": {
+          "type": "boolean"
+        },
+        "silenced_rounds": {
+          "type": "integer"
+        },
+        "theme_choices": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powers_round": {
+          "type": "boolean"
+        },
+        "ready": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "revived": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "gifts": {
+          "items": {
+            "$ref": "#/$defs/Gift"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -1752,7 +2027,27 @@
         "duelists",
         "next_seconds",
         "winner",
-        "survivors"
+        "survivors",
+        "powers",
+        "powerups",
+        "legendary_powerups",
+        "mythic_powerups",
+        "powerup_max",
+        "starting_powerup",
+        "can_arm",
+        "armed",
+        "active",
+        "lasting",
+        "hidden_options",
+        "first_wrong",
+        "peek",
+        "flashbang",
+        "silenced_rounds",
+        "theme_choices",
+        "powers_round",
+        "ready",
+        "revived",
+        "gifts"
       ],
       "title": "SurvivalView",
       "type": "object"
@@ -1830,6 +2125,17 @@
                 "choices"
               ],
               "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "survival_powers": {
+          "anyOf": [
+            {
+              "type": "boolean"
             },
             {
               "type": "null"

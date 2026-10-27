@@ -93,7 +93,9 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 
 def check_round_done(room: Room) -> None:
     if room.survival:
-        if room.survival.phase in ("answering", "duel_answering") and room.survival.everyone_answered(room.connected_ids()):
+        survival, connected = room.survival, room.connected_ids()
+        answering = survival.phase in ("answering", "duel_answering") and survival.everyone_answered(connected)
+        if answering or survival.everyone_ready(connected):
             if event := round_done.get(room.code):
                 event.set()
         return
@@ -333,7 +335,7 @@ async def update_settings(sid: str, data: dict) -> dict:
         request = UpdateSettingsRequest.model_validate(data)
         room = rooms.update_settings(
             sid, request.rounds, request.themes, request.answer_seconds, request.speed_grace_seconds, request.mode, request.powerup_max,
-            request.survival_kind,
+            request.survival_kind, request.survival_powers,
         )
     except ValidationError:
         return error("Dados inválidos.")

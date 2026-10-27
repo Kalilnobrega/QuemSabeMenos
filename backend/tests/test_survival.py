@@ -215,3 +215,141 @@ def test_choices_duel_turns_impossible_and_speed_decides_it():
     game.advance(3)
     game.advance(3)
     assert game.winner == "p1"
+
+
+def powers_game(players: int = 4, kind: str = "choices") -> Survival:
+    pool = questions() if kind == "choices" else statements()
+    game = Survival.create(kind, [f"p{i}" for i in range(players)], pool, set(), random.Random(5), now=0, powers=True, powerup_max=3)
+    for pid in game.held:
+        game.held[pid] = []
+    return game
+
+
+def to_results(game: Survival, right: list[str]) -> None:
+    """Joga até a revelação da próxima pergunta."""
+    if game.phase in ("starting", "results"):
+        game.advance(0)
+    while game.phase in ("level", "reading"):
+        game.advance(0)
+    for pid in game.answering_ids():
+        game.answer(pid, game.question.answer if pid in right else (game.question.answer + 1) % len(game.question.options), 0)
+    game.advance(0)
+
+
+def test_powers_deal_one_power_without_the_true_false_spoilers():
+    game = Survival.create("true_false", [f"p{i}" for i in range(30)], statements(), set(), random.Random(1), 0, powers=True)
+    dealt = {kinds[0] for kinds in game.held.values()}
+    assert len(game.held["p0"]) == 1
+    assert not dealt & {"fifty_fifty", "decoy"}
+
+
+def test_shield_holds_a_life_once():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2"])
+    game.held["p3"] = ["shield"]
+    game.arm("p3", "shield", None)
+    to_results(game, right=["p0", "p1", "p2"])
+    pick = next(p for p in game.picks if p.player_id == "p3")
+    assert pick.shielded and not pick.lost_life
+    assert game.contender("p3").lives == 2  # perdeu só a primeira
+
+
+def test_steal_takes_the_life_the_target_loses():
+    game = powers_game()
+    to_results(game, right=["p1", "p2", "p3"])  # p0 fica com 2
+    game.held["p0"] = ["steal"]
+    game.arm("p0", "steal", "p1")
+    to_results(game, right=["p0", "p2", "p3"])
+    assert game.contender("p1").lives == 2
+    assert game.contender("p0").lives == 3
+    assert next(p for p in game.picks if p.player_id == "p1").stolen_by == "p0"
+
+
+def test_reverse_sends_the_sabotage_back():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p1"] = ["reverse"]
+    game.arm("p1", "reverse", None)
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["accelerator"]
+    game.arm("p0", "accelerator", "p1")
+    game.advance(0)
+    use = next(u for u in game.active if u.kind == "accelerator")
+    assert use.target == "p0" and use.reflected_by == "p1"
+
+
+def test_three_right_in_a_row_gives_a_power():
+    game = powers_game()
+    for _ in range(3):
+        to_results(game, right=["p0", "p1", "p2"])
+    assert len(game.held["p0"]) == 1
+    assert any(g.player_id == "p0" and g.gain.reason == "streak" for g in game.gifts)
+
+
+def test_ghosts_get_sabotages_and_only_hit_the_living():
+    game = powers_game(players=5)
+    for _ in range(3):
+        to_results(game, right=["p0", "p1", "p2", "p3"])  # p4 cai na 3
+    assert not game.contender("p4").alive
+    for _ in range(3):
+        to_results(game, right=["p0", "p1", "p2", "p3"])
+    assert game.held["p4"] and game.held["p4"][0] in ("scramble", "accelerator", "mirror", "magnifier", "flashbang")
+    kind = game.held["p4"][0]
+    with pytest.raises(SurvivalError):
+        game.arm("p4", kind, "p4")
+    game.arm("p4", kind, "p0")
+    game.advance(0)
+    assert any(u.kind == kind and u.target == "p0" for u in game.active)
+
+
+def test_resurrection_brings_a_ghost_back_with_one_life():
+    game = powers_game(players=4)
+    for _ in range(3):
+        to_results(game, right=["p0", "p1", "p2"])
+    game.mythics["p3"] = ["resurrection"]
+    game.arm("p3", "resurrection", None)
+    assert game.contender("p3").alive and game.contender("p3").lives == 1
+    assert game.revived == ["p3"]
+
+
+def test_no_powers_once_the_duel_starts():
+    game = powers_game(players=3)
+    for _ in range(3):
+        to_results(game, right=["p0", "p1"])  # p2 cai na 3: vem o X1
+    game.held["p0"] = ["shield"]
+    assert not game.can_arm()
+    with pytest.raises(SurvivalError):
+        game.arm("p0", "shield", None)
+
+
+def test_decoy_adds_options_only_for_the_target_and_shields_the_thrower():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["decoy"]
+    game.arm("p0", "decoy", "p1")
+    game.advance(0)
+    view = game.view(0, "p1", [c.id for c in game.contenders])
+    assert len(view.options) == 6
+    assert len(game.view(0, "p2", [c.id for c in game.contenders]).options) == 4
+    fake = next(i for i, text in enumerate(view.options) if text not in game.question.options)
+    game.advance(0)  # libera as respostas
+    game.answer("p1", fake, 0)
+    for pid in ("p0", "p2", "p3"):
+        game.answer(pid, game.question.answer, 0)
+    game.advance(0)
+    assert next(p for p in game.picks if p.player_id == "p1").decoy
+    assert game.lasting["p0"]["shield"] == 1
+
+
+def test_silenced_player_does_not_see_lives_or_the_reveal():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["silence"]
+    game.arm("p0", "silence", "p1")
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    view = game.view(0, "p1", [c.id for c in game.contenders])
+    assert view.correct_option is None and view.picks == []
+    assert {s.lives for s in view.survivors if s.player_id != "p1"} == {-1}
+    with pytest.raises(SurvivalError):
+        game.held["p1"] = ["shield"]
+        game.arm("p1", "shield", None)

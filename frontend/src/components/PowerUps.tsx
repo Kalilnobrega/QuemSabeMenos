@@ -1,8 +1,8 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import { INSTANT, LEGENDARY_DECOY_HINT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, LEGENDARY_TOLL_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
-import type { GameView, PlayerView, PowerUpUse } from '../types/events'
+import { INSTANT, LEGENDARY_DECOY_HINT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, LEGENDARY_TOLL_HINT, POWERUP_INFO, type Kind, type PowerView } from '../lib/powerups'
+import type { PlayerView, PowerUpUse } from '../types/events'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
 
@@ -374,7 +374,19 @@ function clearedFraction(canvas: HTMLCanvasElement) {
 }
 
 /** O que está valendo nesta pergunta: quem jogou o quê em quem. As que tocam você aparecem primeiro. */
-export function ActivePowerUps({ game, players, playerId, concealed = false }: { game: GameView; players: PlayerView[]; playerId: string | null; concealed?: boolean }) {
+export function ActivePowerUps({
+  game,
+  players,
+  playerId,
+  concealed = false,
+  survival = false,
+}: {
+  game: PowerView
+  players: PlayerView[]
+  playerId: string | null
+  concealed?: boolean
+  survival?: boolean // Último de pé: fala de vidas, não de QI
+}) {
   const name = (id: string | null) => (id === playerId ? 'você' : (players.find((p) => p.id === id)?.nickname ?? '?'))
   const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
   // A lendária pega todo mundo: sempre é com você.
@@ -407,10 +419,14 @@ export function ActivePowerUps({ game, players, playerId, concealed = false }: {
         second_chance: 'Segunda chance nesta e na próxima: errou, tenta de novo.',
         reverse: 'Seu Reverso está pronto (só você sabe): o primeiro poder em você volta.',
         investment: 'Investimento valendo: cada acerto seguido rende mais. Não erre!',
+        ...(survival && {
+          shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira vida.',
+          extra_time: 'Tempo extra: +5s nesta e nas próximas 2.',
+        }),
       }
       return by === 'você' ? self[use.kind]! : `${by} usou ${info.name}.`
     }
-    if (use.kind === 'steal') return `Você está de olho no QI de ${target}!`
+    if (use.kind === 'steal') return survival ? `Se ${target} perder uma vida, ela é sua!` : `Você está de olho no QI de ${target}!`
     if (use.target === playerId) {
       const hit: Partial<Record<Kind, string>> = {
         scratch: 'jogou Raspadinha em você! Raspe para ver.',
@@ -422,6 +438,10 @@ export function ActivePowerUps({ game, players, playerId, concealed = false }: {
         decoy: 'jogou Alternativa falsa em você: duas dessas são mentira!',
         flashbang: 'jogou Flashbang em você: leia rápido, ela estoura em 4 segundos!',
         silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem habilidades.',
+        ...(survival && {
+          accelerator: 'jogou Acelerador em você: um terço do tempo!',
+          silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, vidas dos outros, revelação nem habilidades.',
+        }),
       }
       return `${cap(by)} ${hit[use.kind]}`
     }
@@ -455,7 +475,7 @@ export function ActivePowerUps({ game, players, playerId, concealed = false }: {
 }
 
 /** Ícones das habilidades que se usam durante a pergunta (50/50 e Espiar): tocou, vale na hora. */
-export function InstantPowerUps({ game, playerId, onUse }: { game: GameView; playerId: string | null; onUse: (kind: Kind) => Promise<string | null> }) {
+export function InstantPowerUps({ game, playerId, onUse }: { game: PowerView; playerId: string | null; onUse: (kind: Kind) => Promise<string | null> }) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const kinds = [...new Set(game.powerups.filter((kind) => INSTANT.includes(kind)))]
@@ -490,21 +510,26 @@ export function InstantPowerUps({ game, playerId, onUse }: { game: GameView; pla
 
 interface BarProps {
   powers: boolean // no clássico a barra é só o botão de pular
-  game: GameView
+  game: PowerView
   players: PlayerView[]
   playerId: string | null
+  targetIds?: string[] // quem pode ser alvo; sem isso, todos os outros
+  hints?: Partial<Record<Kind, string>> // explicações que trocam as do POWERUP_INFO
+  lockedNote?: string // por que não dá para armar agora
+  emptyNote?: string // sem nenhuma habilidade na mão
   onArm: (kind: Kind, target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onSkip: () => Promise<string | null>
 }
 
-export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: BarProps) {
+export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, lockedNote, emptyNote, onArm, onSkip }: BarProps) {
   const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean; mythic?: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [skipped, setSkipped] = useState(false)
   const connected = players.filter((p) => p.connected)
   const readyCount = connected.filter((p) => game.ready.includes(p.id)).length
   const isReady = skipped || (playerId !== null && game.ready.includes(playerId))
-  const targets = players.filter((p) => p.id !== playerId)
+  const targets = players.filter((p) => p.id !== playerId && (!targetIds || targetIds.includes(p.id)))
+  const hint = (kind: Kind) => hints?.[kind] ?? POWERUP_INFO[kind].hint
 
   const arm = async (kind: Kind, target: string | null, legendary = false, theme: string | null = null) => {
     playSound(kind === 'backpack' ? 'backpack' : kind === 'theme' ? 'theme' : 'powerArm')
@@ -543,7 +568,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         <p className="flex items-center gap-2 text-sm">
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
-            <span className="font-bold text-purple-300">{info.name} MÍTICO:</span> {info.hint}
+            <span className="font-bold text-purple-300">{info.name} MÍTICO:</span> {hint(selected.kind)}
           </span>
         </p>
         {selected.kind === 'duel' && (
@@ -603,7 +628,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         <p className="flex items-center gap-2 text-sm">
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
-            <span className="font-bold">{info.name}:</span> {info.hint}
+            <span className="font-bold">{info.name}:</span> {hint(selected.kind)}
           </span>
         </p>
         {selected.kind === 'theme' ? (
@@ -651,7 +676,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
       </div>
     )
   } else if (game.powerups.length === 0 && game.legendary_powerups.length === 0 && game.mythic_powerups.length === 0) {
-    body = <p className="text-sm text-steel">Sem habilidades. Acerte 3 seguidas para ganhar uma.</p>
+    body = <p className="text-sm text-steel">{emptyNote ?? 'Sem habilidades. Acerte 3 seguidas para ganhar uma.'}</p>
   } else {
     body = (
       <div className="flex flex-col gap-1.5">
@@ -661,7 +686,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
               // 50/50 e Espiar se usam pelo ícone na tela da pergunta, não aqui.
               <span
                 key={`${kind}-${index}`}
-                title={POWERUP_INFO[kind].hint}
+                title={hint(kind)}
                 className="flex items-center gap-1.5 rounded-xl bg-[#232b3f]/60 px-3 py-1.5 font-semibold text-steel"
               >
                 <PowerUpIcon kind={kind} className="size-6" />
@@ -719,7 +744,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
             </button>
           ))}
         </div>
-        <p className="text-xs text-steel">{game.can_arm ? 'Toque para usar na próxima pergunta.' : 'Habilidades não valem na aposta nem na final.'}</p>
+        <p className="text-xs text-steel">{game.can_arm ? 'Toque para usar na próxima pergunta.' : (lockedNote ?? 'Habilidades não valem na aposta nem na final.')}</p>
       </div>
     )
   }

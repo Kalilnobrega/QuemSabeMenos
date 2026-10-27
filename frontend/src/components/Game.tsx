@@ -1302,7 +1302,7 @@ function StreakChip({ streak }: { streak: number }) {
   )
 }
 
-function PeekBadge({ count }: { count: number }) {
+export function PeekBadge({ count }: { count: number }) {
   if (count === 0) return null
   return (
     <span className="absolute -top-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-teal-300 px-1.5 text-xs font-bold text-ink" title={`${count} escolheram`}>

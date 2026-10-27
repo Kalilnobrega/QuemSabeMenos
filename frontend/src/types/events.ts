@@ -460,9 +460,17 @@ export interface PowerUpGain {
     | "flashbang"
     | "resurrection"
     | "duel";
-  reason: "start" | "streak" | "comeback";
+  reason: "start" | "streak" | "comeback" | "ghost";
   legendary?: boolean;
   mythic?: boolean;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "Gift".
+ */
+export interface Gift {
+  player_id: string;
+  gain: PowerUpGain;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -527,6 +535,7 @@ export interface RoomSettings {
   mode_options: ("classic" | "powers" | "last_standing")[];
   survival_kind: "true_false" | "choices";
   survival_kind_options: ("true_false" | "choices")[];
+  survival_powers: boolean;
   powerup_max: number;
   powerup_max_options: number[];
   rounds: number;
@@ -610,6 +619,120 @@ export interface SurvivalView {
   next_seconds: number | null;
   winner: string | null;
   survivors: Survivor[];
+  powers: boolean;
+  powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+  )[];
+  legendary_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+  )[];
+  mythic_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+  )[];
+  powerup_max: number;
+  starting_powerup:
+    | (
+        | "fifty_fifty"
+        | "shield"
+        | "double"
+        | "peek"
+        | "extra_time"
+        | "second_chance"
+        | "reverse"
+        | "backpack"
+        | "theme"
+        | "investment"
+        | "scratch"
+        | "steal"
+        | "scramble"
+        | "accelerator"
+        | "mirror"
+        | "silence"
+        | "magnifier"
+        | "toll"
+        | "decoy"
+        | "flashbang"
+        | "resurrection"
+        | "duel"
+      )
+    | null;
+  can_arm: boolean;
+  armed: PowerUpUse | null;
+  active: PowerUpUse[];
+  lasting: LastingPowerUp[];
+  hidden_options: number[];
+  first_wrong: number | null;
+  peek: number[] | null;
+  flashbang: boolean;
+  silenced_rounds: number;
+  theme_choices: string[];
+  powers_round: boolean;
+  ready: string[];
+  revived: string[];
+  gifts: Gift[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -621,6 +744,10 @@ export interface SurvivalPick {
   correct: boolean;
   elapsed_ms: number | null;
   lost_life: boolean;
+  first_option?: number | null;
+  decoy?: string | null;
+  shielded?: boolean;
+  stolen_by?: string | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -688,6 +815,7 @@ export interface SubmitDuelBetRequest {
 export interface UpdateSettingsRequest {
   mode?: ("classic" | "powers" | "last_standing") | null;
   survival_kind?: ("true_false" | "choices") | null;
+  survival_powers?: boolean | null;
   powerup_max?: number | null;
   rounds?: number | null;
   answer_seconds?: number | null;

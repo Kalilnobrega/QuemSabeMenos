@@ -233,3 +233,23 @@ def test_last_standing_with_choices_uses_the_question_bank(manager):
     view = room.view(5).survival
     assert view.kind == "choices" and view.phase == "reading"
     assert len(view.options) == 4 and view.survivors[0].lives == 3
+
+
+def test_last_standing_with_powers_routes_arming_and_skipping(manager):
+    room, ana = manager.create("sid-ana", profile("Ana"))
+    manager.join("sid-bia", room.code, profile("Bia"))
+    manager.join("sid-caio", room.code, profile("Caio"))
+    manager.update_settings("sid-ana", mode="last_standing", survival_kind="choices", survival_powers=True)
+    manager.start("sid-ana", now=0)
+    game = room.survival
+    assert game.powers and all(len(h) == 1 for h in game.held.values())
+    game.advance(0)
+    game.advance(0)
+    game.advance(0)  # sem respostas: todos erram, ninguém perde vida
+    assert game.phase == "results"
+    game.held[ana.id] = ["shield"]
+    manager.arm_powerup("sid-ana", "shield", None)
+    assert game.armed[ana.id].kind == "shield"
+    for sid in ("sid-ana", "sid-bia", "sid-caio"):
+        manager.ready(sid)
+    assert game.everyone_ready(room.connected_ids())
