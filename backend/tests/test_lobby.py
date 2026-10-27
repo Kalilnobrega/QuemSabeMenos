@@ -230,7 +230,7 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "tolled": 0, "toll_received": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "tolled": 0, "toll_received": 0, "decoy": None, "tricked": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
 
 
 async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connect, monkeypatch):

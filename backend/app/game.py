@@ -6,9 +6,10 @@ Lógica pura: quem chama passa o relógio (`now`) e o main.py cuida das esperas.
 import json
 import math
 import random
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Literal, Protocol
+from typing import Callable, Literal, Protocol
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -215,6 +216,17 @@ class Streak:
 
 
 @dataclass
+class Decoy:
+    """Alternativas falsas de um jogador nesta pergunta. Por dentro, as falsas são os índices
+    depois das verdadeiras; `order` diz em que posição da tela cada uma aparece."""
+
+    texts: list[str]
+    order: list[int]  # posição na tela → índice por dentro
+    payees: list[tuple[str, int]]  # quem ganha QI se ele cair, e quanto
+    mirrors: list[int]  # Espiar: cada falsa copia a contagem de uma alternativa errada
+
+
+@dataclass
 class Answer:
     option: int
     at: float
@@ -254,6 +266,7 @@ class Game:
     extra_slots: dict[str, int] = field(default_factory=dict)  # vagas a mais da Mochila
     investments: dict[str, int] = field(default_factory=dict)  # acertos seguidos de cada Investimento
     tolls: dict[str, list[tuple[str, list[int]]]] = field(default_factory=dict)  # alvo -> (quem recebe, preços)
+    decoys: dict[str, Decoy | None] = field(default_factory=dict)
     # Tema: perguntas que ainda dá para pôr no lugar da próxima, e os temas sorteados nesta revelação.
     bank: list[Question] = field(default_factory=list)
     used: set[str] = field(default_factory=set)
@@ -425,6 +438,7 @@ class Game:
         self.first_wrong = {}
         self.hidden_options = {}
         self.tolls = {}
+        self.decoys = {}
         self.theme_choices = []
         armed = list(self.armed.values())
         self.armed = {}
@@ -489,6 +503,40 @@ class Game:
     def is_silenced(self, player_id: str) -> bool:
         return self.silence_left(player_id) > 0
 
+    def _decoy_for(self, player_id: str) -> Decoy | None:
+        """Alternativas falsas no jogador nesta pergunta, sorteadas na primeira vez que alguém olha."""
+        if player_id not in self.decoys:
+            payees = [
+                (use.reflected_by or use.by, powerups.LEGENDARY_DECOY_BONUS if use.legendary else powerups.DECOY_BONUS)
+                for use in self._uses("decoy")
+                if (use.by != player_id if use.legendary else use.target == player_id)
+            ]
+            self.decoys[player_id] = self._make_decoy(payees) if payees and self._counts_for_powers() else None
+        return self.decoys[player_id]
+
+    def _make_decoy(self, payees: list[tuple[str, int]]) -> Decoy | None:
+        q = self.question
+        texts = powerups.decoys(q.options[q.answer], q.options, self._similar_options(q), self.rng)
+        if not texts:
+            return None
+        order = list(range(len(q.options) + len(texts)))
+        self.rng.shuffle(order)
+        wrong = [i for i in range(len(q.options)) if i != q.answer]
+        return Decoy(texts=texts, order=order, payees=payees, mirrors=[self.rng.choice(wrong) for _ in texts])
+
+    def _similar_options(self, q: Question) -> list[str]:
+        """Alternativas de perguntas do mesmo tema, das mais parecidas com `q` para as menos:
+        começar igual ("Que ator…") e ter palavras em comum contam."""
+
+        def words(text: str) -> set[str]:
+            return {w for w in re.findall(r"\w+", text.lower()) if len(w) >= 4}
+
+        head, mine = q.text.lower().split()[:2], words(q.text)
+        others = [o for o in self.bank if o.theme == q.theme and o.text != q.text]
+        self.rng.shuffle(others)
+        others.sort(key=lambda o: -(3 * (o.text.lower().split()[:2] == head) + len(mine & words(o.text))))
+        return [option for other in others[:12] for option in other.options]
+
     def _tolls_on(self, player_id: str) -> list[tuple[str, list[int]]]:
         """Pedágios no jogador nesta pergunta: quem recebe e o preço de cada alternativa.
         Sorteados na primeira vez que alguém olha, para ficarem iguais até o fim da rodada."""
@@ -533,9 +581,13 @@ class Game:
         if player_id in self.answers:
             raise GameError("Você já respondeu.")
         tried = self.first_wrong.get(player_id)
+        decoy = self._decoy_for(player_id)
+        if not 0 <= option < len(self.question.options) + (len(decoy.texts) if decoy else 0):
+            raise GameError("Alternativa inválida.")
+        if decoy:
+            option = decoy.order[option]
         if (
-            not 0 <= option < len(self.question.options)
-            or option in self.hidden_options.get(player_id, [])
+            option in self.hidden_options.get(player_id, [])
             or (tried and tried.option == option)
         ):
             raise GameError("Alternativa inválida.")
@@ -615,6 +667,8 @@ class Game:
                     robbed=0,
                     tolled=0,
                     toll_received=0,
+                    decoy=None,
+                    tricked=0,
                     doubled=doubled,
                     first_option=first.option if first and answer is not first else None,
                     expired=[],
@@ -624,9 +678,17 @@ class Game:
         by_id = {r.player_id: r for r in self.results}
         if self._counts_for_powers():
             self._pay_investments(by_id)
+        real = len(self.question.options)
+        for result in self.results:
+            decoy = self._decoy_for(result.player_id)
+            if decoy and result.option is not None and result.option >= real:
+                result.decoy = decoy.texts[result.option - real]
+                for payee, bonus in decoy.payees:
+                    if payee in by_id:
+                        by_id[payee].tricked += bonus
         for result in self.results:
             for payee, prices in self._tolls_on(result.player_id):
-                price = min(prices) if result.option is None else prices[result.option]
+                price = min(prices) if result.option is None or result.option >= real else prices[result.option]
                 result.tolled += price
                 if payee in by_id:
                     by_id[payee].toll_received += price
@@ -654,6 +716,7 @@ class Game:
                 - result.robbed
                 + result.toll_received
                 - result.tolled
+                + result.tricked
             )
         top = max((p.score for p in players), default=0)
         self.leaders = {p.id for p in players if p.score == top}
@@ -768,6 +831,9 @@ class Game:
         # Silenciado não vê a revelação: nem a resposta certa, nem os resultados, nem a curiosidade.
         hidden = silence_left > 0 and show_answer
         peeking = bool(viewer) and self.phase == "answering" and self._affects("peek", viewer)
+        decoy = self._decoy_for(viewer) if viewer and self.phase not in (*PREPARATION_PHASES, "finished") else None
+        options, screen = self._screen(decoy)
+        mine = self.first_wrong.get(viewer) if viewer else None
         return GameView(
             round=self.round + 1,
             total_rounds=len(self.questions),
@@ -778,7 +844,7 @@ class Game:
             theme=q.theme,
             question=None
             if self.phase in PREPARATION_PHASES
-            else QuestionView(text=q.text, options=q.options, theme=q.theme, difficulty=q.difficulty),
+            else QuestionView(text=q.text, options=options, theme=q.theme, difficulty=q.difficulty),
             answered=[] if silence_left else [*self.answers, *self.first_wrong.keys() - self.answers.keys()],
             bet_round=None if self.bet_round is None else self.bet_round + 1,
             bet_percents=list(BET_PERCENTS),
@@ -792,20 +858,43 @@ class Game:
             can_arm=self.can_arm and not silence_left,
             armed=self.armed.get(viewer) if viewer else None,
             active=[] if hidden else self._visible_uses(viewer, show_answer),
-            hidden_options=self.hidden_options.get(viewer, []) if viewer else [],
-            first_wrong=self.first_wrong[viewer].option if viewer in self.first_wrong else None,
-            peek=self._peek(viewer) if peeking else None,
+            hidden_options=[screen(i) for i in self.hidden_options.get(viewer, [])] if viewer else [],
+            first_wrong=screen(mine.option) if mine else None,
+            peek=self._peek(viewer, decoy) if peeking else None,
             speed_grace_ms=round((self.grace_window(viewer) if viewer else self.speed_grace_seconds) * 1000),
             lasting=self._lasting_view(viewer) if viewer and not show_answer else [],
             silenced_rounds=silence_left,
-            tolls=self._toll_view(viewer) if viewer and self.phase in ("reading", "answering") else None,
+            tolls=self._toll_view(viewer, decoy) if viewer and self.phase in ("reading", "answering") else None,
+            flashbang=bool(viewer) and self.phase in ("reading", "answering") and self._affects("flashbang", viewer),
             theme_choices=self.theme_choices,
             powers_round=self._counts_for_powers(),
             ready=sorted(self.ready),
-            correct_option=q.answer if show_answer and not hidden else None,
+            correct_option=screen(q.answer) if show_answer and not hidden else None,
             fact=q.fact if show_answer and not hidden else None,
-            results=[] if hidden else self.results,
+            results=[] if hidden else [self._result_view(r, viewer, screen) for r in self.results],
         )
+
+    def _screen(self, decoy: Decoy | None) -> tuple[list[str], Callable[[int | None], int | None]]:
+        """Alternativas na ordem da tela de quem vê, e como achar a posição de cada uma.
+        Sem Alternativa falsa é a ordem normal; as falsas de outro jogador não aparecem."""
+        q = self.question
+        real = len(q.options)
+        if not decoy:
+            return q.options, lambda i: i if i is not None and i < real else None
+        everything = [*q.options, *decoy.texts]
+        return [everything[i] for i in decoy.order], lambda i: decoy.order.index(i) if i is not None else None
+
+    def _result_view(
+        self, result: RoundResult, viewer: str | None, screen: Callable[[int | None], int | None]
+    ) -> RoundResult:
+        """Escolhas na ordem da tela de quem vê; a falsa em que outro caiu não tem lugar nela."""
+        real = len(self.question.options)
+        own = result.player_id == viewer
+
+        def place(option: int | None) -> int | None:
+            return None if option is None or (not own and option >= real) else screen(option)
+
+        return result.model_copy(update={"option": place(result.option), "first_option": place(result.first_option)})
 
     def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
         lasting = [
@@ -820,19 +909,27 @@ class Game:
             lasting.append(LastingPowerUp(kind="silence", rounds_left=silence_left, total=powerups.SILENCE_ROUNDS))
         return lasting
 
-    def _toll_view(self, viewer: str) -> list[int] | None:
+    def _toll_view(self, viewer: str, decoy: Decoy | None) -> list[int] | None:
         tolls = self._tolls_on(viewer) if self._counts_for_powers() else []
         if not tolls:
             return None
-        return [sum(prices[i] for _, prices in tolls) for i in range(len(self.question.options))]
+        prices = [sum(p[i] for _, p in tolls) for i in range(len(self.question.options))]
+        if decoy:
+            # Responder uma falsa custa o menor pedágio, como não responder.
+            prices += [min(prices)] * len(decoy.texts)
+            prices = [prices[i] for i in decoy.order]
+        return prices
 
-    def _peek(self, viewer: str) -> list[int]:
-        """Primeira escolha de cada um dos outros, por alternativa."""
-        counts = [0] * len(self.question.options)
+    def _peek(self, viewer: str, decoy: Decoy | None) -> list[int]:
+        """Primeira escolha de cada um dos outros, por alternativa. As falsas copiam uma errada."""
+        real = len(self.question.options)
+        counts = [0] * real
         for pid, answer in {**self.answers, **self.first_wrong}.items():
-            if pid != viewer:
+            if pid != viewer and answer.option < real:
                 counts[answer.option] += 1
-        return counts
+        if not decoy:
+            return counts
+        return [counts[i] if i < real else counts[decoy.mirrors[i - real]] for i in decoy.order]
 
     def _visible_uses(self, viewer: str | None, show_answer: bool) -> list[PowerUpUse]:
         """O roubo é surpresa: durante a pergunta só quem roubou sabe; o alvo descobre na revelação.

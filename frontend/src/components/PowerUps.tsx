@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import { INSTANT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, LEGENDARY_TOLL_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
+import { INSTANT, LEGENDARY_DECOY_HINT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, LEGENDARY_TOLL_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
 import type { GameView, PlayerView, PowerUpUse } from '../types/events'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
@@ -157,6 +157,24 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path d="M10 9 8.5 12.5M14 9l-1.5 3.5M18 9l-1.5 3.5" stroke="#F43F5E" strokeWidth="1.6" />
         <circle cx="16" cy="18" r="3.5" fill="#FBBF24" {...ICON_STROKE} />
         <path d="M16 16.5v3" stroke="#12141B" strokeWidth="1.4" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'decoy') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2" y="4" width="20" height="16" rx="3" fill="#C084FC" {...ICON_STROKE} />
+        <path d="M5.5 10h9M5.5 14h6" stroke="#F8FAFC" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="18" cy="13" r="3.2" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M16.6 11.6 19.4 14.4M19.4 11.6l-2.8 2.8" stroke="#EF4444" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'flashbang') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="m12 1.5 2 5 5-2-2 5 5.5 2.5-5.5 2.5 2 5-5-2-2 5-2-5-5 2 2-5L1.5 12 7 9.5l-2-5 5 2 2-5Z" fill="#FEF08A" {...ICON_STROKE} />
+        <circle cx="12" cy="12" r="3.5" fill="#F8FAFC" {...ICON_STROKE} />
       </svg>
     )
   }
@@ -383,6 +401,8 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
         mirror: 'jogou Espelho em você!',
         magnifier: 'jogou Lupa em você! Arraste a lupa pelo cabo para ler.',
         toll: 'jogou Pedágio em você: cada resposta tem um preço!',
+        decoy: 'jogou Alternativa falsa em você: duas dessas são mentira!',
+        flashbang: 'jogou Flashbang em você: leia rápido, ela estoura em 4 segundos!',
         silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem habilidades.',
       }
       return `${cap(by)} ${hit[use.kind]}`
@@ -506,7 +526,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
             <span className="font-bold text-brand">{info.name} LENDÁRIO:</span>{' '}
-            {selected.kind === 'steal' ? LEGENDARY_STEAL_HINT : selected.kind === 'toll' ? LEGENDARY_TOLL_HINT : `${info.hint} ${LEGENDARY_HINT}`}
+            {selected.kind === 'steal' ? LEGENDARY_STEAL_HINT : selected.kind === 'toll' ? LEGENDARY_TOLL_HINT : selected.kind === 'decoy' ? LEGENDARY_DECOY_HINT : `${info.hint} ${LEGENDARY_HINT}`}
           </span>
         </p>
         <div className="flex gap-2">

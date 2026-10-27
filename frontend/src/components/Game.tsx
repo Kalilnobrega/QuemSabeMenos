@@ -607,7 +607,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   const difficulty = DIFFICULTY[question.difficulty]
   const secondsLeft = Math.ceil(remaining / 1000)
   const urgent = game.phase === 'answering' && remaining < 3000 && !silenced
-  const scratched = hits('scratch')
+  const blinded = game.flashbang && game.phase === 'answering' && game.phase_duration_ms - remaining >= FLASHBANG_MS
+  const scratched = hits('scratch') && !blinded
 
   useEffect(() => {
     if (typing && text.length > 0 && text.length % 3 === 0) playSound('typing')
@@ -616,6 +617,12 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   useEffect(() => {
     if (game.phase === 'answering') playSound('answersOpen')
   }, [game.phase])
+
+  useEffect(() => {
+    if (!blinded) return
+    playSound('flashbang')
+    vibrate([250, 80, 350])
+  }, [blinded])
 
   // Vibra e faz tique-taque a cada um dos 3 últimos segundos, só para quem ainda não respondeu.
   useEffect(() => {
@@ -679,7 +686,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
         </span>
       </header>
 
-      {!showResults && <ActivePowerUps game={game} players={room.players} playerId={playerId} />}
+      {blinded && <div className="flashbang-flash" aria-hidden="true" />}
+      {!showResults && !blinded && <ActivePowerUps game={game} players={room.players} playerId={playerId} />}
       {!showResults && !answered && !silenced && <InstantPowerUps game={game} playerId={playerId} onUse={onUse} />}
 
       <div className={`flex h-8 items-center gap-3 ${silenced ? 'invisible' : ''}`}>
@@ -707,11 +715,11 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
         </span>
       </div>
 
-      <Magnifier active={hits('magnifier')}>
+      <Magnifier active={hits('magnifier') && !blinded}>
         {/* Altura reservada para até 3 linhas: o texto digitando não empurra as alternativas. */}
         <ScratchCard active={scratched}>
           <h1 className={`round-question min-h-[6.25rem] text-[1.4rem] leading-snug font-bold ${mirrored}`}>
-            {text}
+            {blinded ? '' : text}
             {typing && <span className="ml-0.5 inline-block w-[0.5ch] animate-pulse text-brand">|</span>}
           </h1>
         </ScratchCard>
@@ -726,7 +734,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
                 className={`round-option btn-3d btn-sm relative flex min-h-14 w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
               >
                 <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
-                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
+                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
                 {game.peek && !showResults && <PeekBadge count={game.peek[index]} />}
                 {game.tolls && !showResults && <TollBadge price={game.tolls[index]} />}
                 {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
@@ -746,7 +754,9 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
         <p className="min-h-7 text-center font-hand font-medium text-lg text-steel">
           {typing
             ? 'Leia com atenção…'
-            : retry !== null && !answered
+            : blinded && !answered
+              ? 'Flashbang! Agora é chutar pela letra.'
+              : retry !== null && !answered
               ? 'Errou! Segunda chance: tente de novo (vale metade).'
               : silenced
                 ? answered
@@ -783,7 +793,7 @@ interface SummaryProps {
 
 function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
-  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled]))
+  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked]))
   const bets = game.results.filter((r) => r.bet)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
   const powerupLines = powerupEvents(room, game, playerId)
@@ -956,6 +966,12 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
         me: me || steal.target === playerId,
       })
     }
+    if (result.decoy) {
+      lines.push({ key: `${result.player_id}-decoy`, kind: 'decoy', player, text: `${who(result.player_id)} caiu na Alternativa falsa: "${result.decoy}"!`, delta: null, me })
+    }
+    if (result.tricked) {
+      lines.push({ key: `${result.player_id}-tricked`, kind: 'decoy', player, text: `${who(result.player_id)} ganhou ${result.tricked} com a Alternativa falsa!`, delta: me ? result.tricked : null, me })
+    }
     if (result.tolled) {
       lines.push({ key: `${result.player_id}-tolled`, kind: 'toll', player, text: `${who(result.player_id)} pagou ${result.tolled} de Pedágio.`, delta: me ? -result.tolled : null, me })
     }
@@ -1031,6 +1047,7 @@ function TollBadge({ price }: { price: number }) {
 }
 
 const MAX_VOTERS = 4
+const FLASHBANG_MS = 4000
 
 function Voters({ players }: { players: PlayerView[] }) {
   if (players.length === 0) return null

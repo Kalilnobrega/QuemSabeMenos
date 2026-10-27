@@ -33,7 +33,9 @@ export interface ArmPowerUpRequest {
     | "mirror"
     | "silence"
     | "magnifier"
-    | "toll";
+    | "toll"
+    | "decoy"
+    | "flashbang";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -127,6 +129,8 @@ export interface GameView {
     | "silence"
     | "magnifier"
     | "toll"
+    | "decoy"
+    | "flashbang"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -147,6 +151,8 @@ export interface GameView {
     | "silence"
     | "magnifier"
     | "toll"
+    | "decoy"
+    | "flashbang"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -169,6 +175,8 @@ export interface GameView {
         | "silence"
         | "magnifier"
         | "toll"
+        | "decoy"
+        | "flashbang"
       )
     | null;
   can_arm: boolean;
@@ -181,6 +189,7 @@ export interface GameView {
   lasting: LastingPowerUp[];
   silenced_rounds: number;
   tolls: number[] | null;
+  flashbang: boolean;
   theme_choices: string[];
   powers_round: boolean;
   ready: string[];
@@ -221,7 +230,9 @@ export interface PowerUpUse {
     | "mirror"
     | "silence"
     | "magnifier"
-    | "toll";
+    | "toll"
+    | "decoy"
+    | "flashbang";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -253,7 +264,9 @@ export interface LastingPowerUp {
     | "mirror"
     | "silence"
     | "magnifier"
-    | "toll";
+    | "toll"
+    | "decoy"
+    | "flashbang";
   rounds_left: number;
   total: number;
 }
@@ -275,6 +288,8 @@ export interface RoundResult {
   robbed: number;
   tolled: number;
   toll_received: number;
+  decoy: string | null;
+  tricked: number;
   doubled: boolean;
   first_option: number | null;
   expired: (
@@ -296,6 +311,8 @@ export interface RoundResult {
     | "silence"
     | "magnifier"
     | "toll"
+    | "decoy"
+    | "flashbang"
   )[];
   gained: PowerUpGain | null;
 }
@@ -322,7 +339,9 @@ export interface PowerUpGain {
     | "mirror"
     | "silence"
     | "magnifier"
-    | "toll";
+    | "toll"
+    | "decoy"
+    | "flashbang";
   reason: "start" | "streak" | "comeback";
   legendary?: boolean;
 }
@@ -501,5 +520,7 @@ export interface UsePowerUpRequest {
     | "mirror"
     | "silence"
     | "magnifier"
-    | "toll";
+    | "toll"
+    | "decoy"
+    | "flashbang";
 }

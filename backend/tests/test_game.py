@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 import pytest
 
+from app import powerups
 from app.events import PowerUpGain
 from app.game import (
     MAX_READING_SECONDS,
@@ -985,3 +986,54 @@ def test_investment_starts_only_after_the_easy_questions_and_is_never_dealt():
     game = Game(powers=True, questions=[question("q")], answer_seconds=10, rng=random.Random(3))
     game.deal_powerups([f"p{i}" for i in range(300)])
     assert "investment" not in game.starting_powerups.values()
+
+
+def test_decoys_are_nearby_numbers_or_options_from_similar_questions():
+    rng = random.Random(1)
+    years = powerups.decoys("1878", ["1878", "1888", "1868", "1898"], [], rng)
+    assert len(years) == 2 and all(1858 <= int(y) <= 1898 and y not in ("1878", "1888", "1868", "1898") for y in years)
+    names = powerups.decoys("Aconcágua", ["Aconcágua", "Huascarán", "Chimborazo", "Pico da Neblina"], ["Ojos del Salado", "Everest", "Huascarán"], rng)
+    assert sorted(names) == ["Everest", "Ojos del Salado"]
+
+
+def test_decoy_shows_six_options_only_to_the_target_and_pays_who_cast_it():
+    game, ana, bia = armed_game(3)
+    arm(game, "ana", "decoy", "bia")
+    game.start_round(now=0)
+    seen = game.view(now=0, viewer="bia").question.options
+    assert len(seen) == 6 and len(game.view(now=0, viewer="ana").question.options) == 4
+    fake = next(i for i, text in enumerate(seen) if text not in game.question.options)
+    game.open_answers(now=0)
+    game.answer("ana", 0, now=1)
+    game.answer("bia", fake, now=1)
+    game.close_round([ana, bia], now=20)
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["bia"].decoy == seen[fake] and not by_id["bia"].correct
+    assert by_id["ana"].tricked == powerups.DECOY_BONUS
+    assert {r.player_id: r.option for r in game.view(now=20, viewer="bia").results}["bia"] == fake
+    assert {r.player_id: r.option for r in game.view(now=20, viewer="ana").results}["bia"] is None
+
+
+def test_fifty_fifty_never_removes_a_decoy():
+    game, ana, bia = armed_game(3)
+    arm(game, "ana", "decoy", "bia")
+    game.powerups["bia"].append("fifty_fifty")
+    game.start_round(now=0)
+    game.use_now("bia", "fifty_fifty")
+    view = game.view(now=0, viewer="bia")
+    assert all(view.question.options[i] in game.question.options for i in view.hidden_options)
+
+
+def test_flashbang_hits_only_the_target_and_legendary_hits_everyone_else():
+    game, ana, bia = armed_game(3)
+    arm(game, "ana", "flashbang", "bia")
+    game.start_round(now=0)
+    assert game.view(now=0, viewer="bia").flashbang and not game.view(now=0, viewer="ana").flashbang
+    game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10)
+    ana, bia, caio = P("ana", 50), P("bia", 50), P("caio", 50)
+    game.powerups = {"ana": [], "bia": [], "caio": []}
+    game.legendaries = {"ana": ["flashbang"]}
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 0})
+    game.arm("ana", "flashbang", None, ["ana", "bia", "caio"], legendary=True)
+    game.start_round(now=0)
+    assert [game.view(now=0, viewer=p).flashbang for p in ("ana", "bia", "caio")] == [False, True, True]

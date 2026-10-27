@@ -18,7 +18,7 @@ Difficulty = Literal["easy", "medium", "hard", "impossible"]
 PowerUp = Literal[
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
     "backpack", "theme", "investment",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
 ]
 GameMode = Literal["classic", "powers"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers")
@@ -169,6 +169,8 @@ class RoundResult(BaseModel):
     robbed: int
     tolled: int  # QI pago de Pedágio
     toll_received: int  # QI recebido de Pedágio de outros
+    decoy: str | None  # Alternativa falsa em que o jogador caiu
+    tricked: int  # QI ganho com quem caiu na sua Alternativa falsa
     doubled: bool  # o delta já vem com o Dobro
     first_option: int | None  # Segunda chance: a primeira escolha, que estava errada
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
@@ -210,6 +212,7 @@ class GameView(BaseModel):
     lasting: list[LastingPowerUp]
     silenced_rounds: int  # Silêncio em você: perguntas que faltam, contando a atual; 0 = livre
     tolls: list[int] | None  # Pedágio em você: quanto custa responder cada alternativa
+    flashbang: bool  # Flashbang em você: alguns segundos depois de liberar as respostas, só as letras aparecem
     theme_choices: list[str]  # Tema: os temas que dá para escolher para a próxima pergunta
     powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
     ready: list[str]

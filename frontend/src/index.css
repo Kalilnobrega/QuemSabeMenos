@@ -192,3 +192,28 @@ body {
   .settings-sheet, .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble, .legendary-pulse { animation: none; }
   .confetti { display: none; }
 }
+
+.flashbang-flash {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  background: #fff;
+  animation: flashbang 1.8s ease-out forwards;
+}
+
+@keyframes flashbang {
+  0%,
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flashbang-flash {
+    animation-duration: 0.4s;
+  }
+}

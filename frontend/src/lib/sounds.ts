@@ -28,6 +28,7 @@ export const SOUND_ENABLED = {
   streakIce: false, // fora por enquanto
   perfectEasy: true,
   rankingSwish: true,
+  flashbang: true,
   podiumWinner: true,
   podiumLoser: true,
 }
@@ -57,6 +58,7 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   streakFire: { group: 'Revelação', name: 'Fwoosh de fogo', moment: 'Alguém faz uma sequência de acertos' },
   streakIce: { group: 'Revelação', name: 'Gelo rachando', moment: 'Alguém faz uma sequência de erros' },
   perfectEasy: { group: 'Revelação', name: 'Brilho de estrela', moment: 'Alguém gabarita as fáceis' },
+  flashbang: { group: 'Pergunta', name: 'Estouro e zumbido', moment: 'A Flashbang estoura em você' },
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
   podiumWinner: { group: 'Pódio', name: 'Fanfarra de vitória', moment: 'O pódio aparece, com o vencedor' },
   podiumLoser: { group: 'Pódio', name: 'Trombone triste (uá-uá-uá)', moment: 'Logo depois, para quem sabe menos' },
@@ -255,6 +257,11 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   },
   perfectEasy: () => {
     ;[1568, 2093, 2637, 3136].forEach((f, i) => tone(f, { at: i * 0.06, dur: 0.25, gain: 0.07 }))
+  },
+  flashbang: () => {
+    noise({ dur: 0.45, filter: 'lowpass', freq: 3000, to: 400, gain: 0.7 })
+    tone(90, { dur: 0.35, to: 35, gain: 0.7 })
+    tone(3800, { at: 0.2, dur: 2.8, gain: 0.035 })
   },
   rankingSwish: () => noise({ dur: 0.35, freq: 2500, to: 600, q: 1.5, gain: 0.12 }),
   podiumWinner: () => {

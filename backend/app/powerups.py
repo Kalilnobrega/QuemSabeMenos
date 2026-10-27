@@ -9,6 +9,7 @@ partida podem vir como ataque lendário: vale em todos os outros jogadores e o R
 """
 
 import random
+import re
 from typing import Protocol
 
 from app.events import PowerUp, PowerUpUse
@@ -16,10 +17,10 @@ from app.events import PowerUp, PowerUpUse
 POWERUPS: tuple[PowerUp, ...] = (
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
     "backpack", "theme", "investment",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
 )
 TARGETED: frozenset[PowerUp] = frozenset(
-    {"scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll"}
+    {"scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang"}
 )
 NOT_DEALT: frozenset[PowerUp] = frozenset({"investment"})  # nunca vem no sorteio inicial
 INSTANT: frozenset[PowerUp] = frozenset({"fifty_fifty", "peek"})
@@ -51,6 +52,11 @@ TOLL_PRICES = (3, 8)
 LEGENDARY_TOLL_PRICES = (2, 4)
 BACKPACK_MAX_EXTRA = 2  # vagas a mais que a Mochila pode dar na partida
 THEME_CHOICES = 4
+# Alternativa falsa: o alvo vê alternativas inventadas a mais; quem cair dá QI a quem jogou.
+DECOY_COUNT = 2
+DECOY_BONUS = 10
+LEGENDARY_DECOY_BONUS = 5
+FLASHBANG_SECONDS = 4.0  # depois de liberar as respostas
 # Investimento: bônus a cada acerto seguido; acaba no primeiro erro ou depois do último.
 INVESTMENT_BONUS = (2, 4, 6, 8, 10)
 
@@ -64,6 +70,35 @@ def fifty_fifty(options: int, answer: int, rng: random.Random) -> list[int]:
     """Alternativas erradas que o 50/50 tira, em ordem."""
     wrong = [i for i in range(options) if i != answer]
     return sorted(rng.sample(wrong, FIFTY_FIFTY_REMOVES))
+
+
+def decoys(answer: str, existing: list[str], similar: list[str], rng: random.Random) -> list[str]:
+    """Alternativas falsas para uma pergunta. Número vira um número próximo (ano, um ano perto);
+    texto vem de `similar`, alternativas de perguntas parecidas, das mais parecidas para as menos,
+    preferindo as que têm o mesmo jeito da certa (tamanho, maiúscula, algarismos)."""
+    taken = {option.strip().lower() for option in existing}
+    number = re.fullmatch(r"(\d{1,3}(?:\.\d{3})+|\d{1,5})(\D*)", answer.strip())
+    if number:
+        value, suffix = int(number[1].replace(".", "")), number[2]
+        spread = 20 if 1000 <= value <= 2100 else max(2, round(value * 0.3))
+        dotted = "." in number[1]
+        candidates = [
+            f"{n:,}".replace(",", ".") + suffix if dotted else f"{n}{suffix}"
+            for n in range(max(0, value - spread), value + spread + 1)
+            if n != value
+        ]
+        fresh = [c for c in dict.fromkeys(candidates) if c.lower() not in taken]
+        return rng.sample(fresh, min(DECOY_COUNT, len(fresh)))
+
+    def shape(text: str) -> tuple[int, bool, bool]:
+        return min(len(text.split()), 4), text[:1].isupper(), any(ch.isdigit() for ch in text)
+
+    fresh = [c for c in dict.fromkeys(similar) if c.strip().lower() not in taken]
+    alike = [c for c in fresh if shape(c) == shape(answer)]
+    pool = (alike + [c for c in fresh if c not in alike])[: DECOY_COUNT * 3]
+    rng.shuffle(pool)
+    pool.sort(key=lambda c: c not in alike)
+    return pool[:DECOY_COUNT]
 
 
 def reflect(uses: list[PowerUpUse], reversers: set[str]) -> list[PowerUpUse]:

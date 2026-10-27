@@ -22,6 +22,8 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   mirror: { name: 'Espelho', hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.', targeted: true, tone: 'bg-cyan-400/15 text-cyan-200' },
   magnifier: { name: 'Lupa', hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.', targeted: true, tone: 'bg-yellow-200/15 text-yellow-100' },
   toll: { name: 'Pedágio', hint: 'Cada alternativa do alvo ganha um preço de 3 a 8 de QI, e responder paga para você. Sem responder, paga o menor.', targeted: true, tone: 'bg-rose-400/15 text-rose-200' },
+  decoy: { name: 'Alternativa falsa', hint: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha 10 de QI.', targeted: true, tone: 'bg-purple-400/15 text-purple-200' },
+  flashbang: { name: 'Flashbang', hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.', targeted: true, tone: 'bg-yellow-100/15 text-yellow-50' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
@@ -39,6 +41,8 @@ export function gainLabel(gain: PowerUpGain) {
 export const LEGENDARY_HINT = 'Lendário: vale em todos os outros jogadores de uma vez, e o Reverso não segura.'
 export const LEGENDARY_TOLL_HINT =
   'Na próxima, todos os outros pagam pedágio para você, com preços de 2 a 4 por alternativa. O Reverso não segura.'
+export const LEGENDARY_DECOY_HINT =
+  'Na próxima, todos os outros veem 2 alternativas inventadas a mais, e você ganha 5 por quem cair. O Reverso não segura.'
 export const LEGENDARY_STEAL_HINT =
   'Na próxima, você leva um Roubo e meio dividido entre todos os outros, e quem estiver em 1º paga a parte maior. O Reverso não segura.'
 
