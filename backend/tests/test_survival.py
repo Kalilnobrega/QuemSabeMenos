@@ -3,16 +3,14 @@ import random
 import pytest
 
 from app.duel import DuelQuestion
-from app.survival import (
-    ANSWER_SECONDS,
-    DUEL_FIRST_SECONDS,
-    DUEL_MIN_SECONDS,
-    DUEL_STEP_SECONDS,
-    LIVES,
-    MEDIUM_COUNT,
-    Survival,
-    SurvivalError,
-)
+from app.game import Question
+from app.survival import RULES, Survival, SurvivalError
+
+TF = RULES["true_false"]
+LIVES = TF.lives
+ANSWER_SECONDS = TF.answer_seconds
+MEDIUM_COUNT = dict(TF.levels)["medium"]
+DUEL_FIRST_SECONDS, DUEL_STEP_SECONDS, DUEL_MIN_SECONDS = TF.duel_first_seconds, TF.duel_step_seconds, TF.duel_min_seconds
 
 
 def statements(count: int = 30) -> list[DuelQuestion]:
@@ -32,15 +30,31 @@ def statements(count: int = 30) -> list[DuelQuestion]:
     ]
 
 
+def questions(count: int = 30) -> list[Question]:
+    return [
+        Question(
+            id=f"q-{level}-{i}",
+            theme="Games",
+            difficulty=level,
+            text=f"Pergunta {level} {i}",
+            options=[f"Certa {i}", "B", "C", "D"] + (["E", "F"] if level == "impossible" else []),
+            answer=0,
+            fact="Curiosidade.",
+        )
+        for level in ("easy", "medium", "hard", "impossible")
+        for i in range(count)
+    ]
+
+
 def new_game(players: int) -> Survival:
-    game = Survival.create([f"p{i}" for i in range(players)], statements(), set(), random.Random(1), now=0)
+    game = Survival.create("true_false", [f"p{i}" for i in range(players)], statements(), set(), random.Random(1), now=0)
     game.advance(now=5)
     return game
 
 
 def play(game: Survival, right: list[str], now: float = 0) -> None:
     """Quem está em `right` acerta; o resto dos que respondem erra."""
-    if game.phase in ("level", "duel_intro"):
+    while game.phase in ("level", "duel_intro", "reading", "duel_reading"):
         game.advance(now)
     for pid in game.answering_ids():
         game.answer(pid, game.question.answer if pid in right else 1 - game.question.answer, now)
@@ -139,7 +153,7 @@ def test_eliminated_players_cannot_answer():
 
 def test_statements_do_not_repeat_until_the_level_runs_out():
     used: set[str] = set()
-    game = Survival.create(["a", "b", "c"], statements(count=3), used, random.Random(2), now=0)
+    game = Survival.create("true_false", ["a", "b", "c"], statements(count=3), used, random.Random(2), now=0)
     game.advance(0)
     seen = [game.question.id]
     for _ in range(2):
@@ -148,3 +162,56 @@ def test_statements_do_not_repeat_until_the_level_runs_out():
     assert len(set(seen)) == 3
     play(game, right=["a", "b", "c"])
     assert game.question.difficulty == "medium"  # acabaram as médias: libera de novo
+
+
+def new_choices_game(players: int) -> Survival:
+    game = Survival.create("choices", [f"p{i}" for i in range(players)], questions(), set(), random.Random(3), now=0)
+    game.advance(now=5)
+    return game
+
+
+def test_choices_start_with_three_lives_and_easy_questions_after_reading():
+    game = new_choices_game(3)
+    assert game.phase == "reading"
+    assert all(c.lives == 3 for c in game.contenders)
+    assert game.question.difficulty == "easy"
+    with pytest.raises(SurvivalError):
+        game.answer("p0", 0, 5)
+    game.advance(6)
+    assert game.phase == "answering"
+    assert game.answer_seconds() == RULES["choices"].answer_seconds
+
+
+def test_choices_shuffle_options_and_keep_the_answer():
+    game = new_choices_game(3)
+    q = game.question
+    assert q.options[q.answer].startswith("Certa")
+    assert sorted(q.options) == sorted(next(o for o in questions() if o.id == q.id).options)
+
+
+def test_choices_go_easy_then_medium_then_hard():
+    game = new_choices_game(4)
+    levels = []
+    for _ in range(17):
+        while game.phase in ("level", "reading"):
+            game.advance(0)
+        levels.append(game.question.difficulty)
+        play(game, right=game.alive_ids())
+    assert levels == ["easy"] * 5 + ["medium"] * 10 + ["hard"] * 2
+
+
+def test_choices_duel_turns_impossible_and_speed_decides_it():
+    game = new_choices_game(2)
+    rules = RULES["choices"]
+    for _ in range(rules.duel_impossible_after):
+        play(game, right=["p0", "p1"])
+    while game.phase in ("duel_reading",):
+        game.advance(0)
+    assert game.question.difficulty == "impossible"
+    assert len(game.question.options) == 6
+    assert game.answer_seconds() == rules.duel_min_seconds
+    game.answer("p1", game.question.answer, 1)
+    game.answer("p0", game.question.answer, 2)
+    game.advance(3)
+    game.advance(3)
+    assert game.winner == "p1"

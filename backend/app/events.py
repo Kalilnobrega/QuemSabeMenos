@@ -23,6 +23,8 @@ PowerUp = Literal[
 ]
 GameMode = Literal["classic", "powers", "last_standing"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "last_standing")
+SurvivalKind = Literal["true_false", "choices"]  # Último de pé: Verdadeiro ou Falso ou Alternativas
+SURVIVAL_KIND_OPTIONS: tuple[SurvivalKind, ...] = ("true_false", "choices")
 
 NICKNAME_MAX_LENGTH = 16
 ROUND_OPTIONS = (10, 15, 20, 25, 30, 35)
@@ -59,6 +61,7 @@ class UpdateSettingsRequest(BaseModel):
     """Só os campos enviados mudam."""
 
     mode: GameMode | None = None
+    survival_kind: SurvivalKind | None = None
     powerup_max: int | None = None
     rounds: int | None = None
     answer_seconds: float | None = None
@@ -110,6 +113,8 @@ class PlayerView(BaseModel):
 class RoomSettings(BaseModel):
     mode: GameMode
     mode_options: list[GameMode]
+    survival_kind: SurvivalKind
+    survival_kind_options: list[SurvivalKind]
     powerup_max: int
     powerup_max_options: list[int]
     rounds: int
@@ -301,18 +306,24 @@ class Survivor(BaseModel):
 
 
 class SurvivalView(BaseModel):
-    """Último de pé. Fases: starting → (answering → results) por frase, com level antes da 1ª
-    difícil; quando sobram 2: duel_intro → (duel_answering → duel_results) até um errar sozinho
-    → finished. A frase vai junto com as respostas (sem fase de leitura)."""
+    """Último de pé. Fases: starting → (reading → answering → results) por pergunta, com level
+    quando o nível muda; quando sobram 2: duel_intro → (duel_reading → duel_answering →
+    duel_results) até um perder → finished. No V ou F não tem leitura: a frase vai junto com as
+    respostas."""
 
-    phase: Literal["starting", "level", "answering", "results", "duel_intro", "duel_answering", "duel_results", "finished"]
+    kind: SurvivalKind
+    phase: Literal[
+        "starting", "level", "reading", "answering", "results",
+        "duel_intro", "duel_reading", "duel_answering", "duel_results", "finished",
+    ]
     phase_duration_ms: int
     phase_ends_in_ms: int
     round: int  # frase atual, começa em 1
     duel_round: int  # frase do X1, começa em 1; 0 antes do X1
+    easy_count: int  # quantas fáceis no começo
     medium_count: int  # quantas médias antes das difíceis
     max_lives: int
-    difficulty: Literal["medium", "hard"]
+    difficulty: Difficulty
     text: str | None
     theme: str | None
     options: list[str]

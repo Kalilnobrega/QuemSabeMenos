@@ -525,6 +525,8 @@ export interface RoomState {
 export interface RoomSettings {
   mode: "classic" | "powers" | "last_standing";
   mode_options: ("classic" | "powers" | "last_standing")[];
+  survival_kind: "true_false" | "choices";
+  survival_kind_options: ("true_false" | "choices")[];
   powerup_max: number;
   powerup_max_options: number[];
   rounds: number;
@@ -566,22 +568,35 @@ export interface PlayerView {
   streak: number;
 }
 /**
- * Último de pé. Fases: starting → (answering → results) por frase, com level antes da 1ª
- * difícil; quando sobram 2: duel_intro → (duel_answering → duel_results) até um errar sozinho
- * → finished. A frase vai junto com as respostas (sem fase de leitura).
+ * Último de pé. Fases: starting → (reading → answering → results) por pergunta, com level
+ * quando o nível muda; quando sobram 2: duel_intro → (duel_reading → duel_answering →
+ * duel_results) até um perder → finished. No V ou F não tem leitura: a frase vai junto com as
+ * respostas.
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "SurvivalView".
  */
 export interface SurvivalView {
-  phase: "starting" | "level" | "answering" | "results" | "duel_intro" | "duel_answering" | "duel_results" | "finished";
+  kind: "true_false" | "choices";
+  phase:
+    | "starting"
+    | "level"
+    | "reading"
+    | "answering"
+    | "results"
+    | "duel_intro"
+    | "duel_reading"
+    | "duel_answering"
+    | "duel_results"
+    | "finished";
   phase_duration_ms: number;
   phase_ends_in_ms: number;
   round: number;
   duel_round: number;
+  easy_count: number;
   medium_count: number;
   max_lives: number;
-  difficulty: "medium" | "hard";
+  difficulty: "easy" | "medium" | "hard" | "impossible";
   text: string | null;
   theme: string | null;
   options: string[];
@@ -672,6 +687,7 @@ export interface SubmitDuelBetRequest {
  */
 export interface UpdateSettingsRequest {
   mode?: ("classic" | "powers" | "last_standing") | null;
+  survival_kind?: ("true_false" | "choices") | null;
   powerup_max?: number | null;
   rounds?: number | null;
   answer_seconds?: number | null;

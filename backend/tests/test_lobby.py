@@ -1,4 +1,5 @@
 import asyncio
+import dataclasses
 import json
 
 import httpx
@@ -324,7 +325,7 @@ async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
 
     for name in ("START_SECONDS", "LEVEL_SECONDS", "RESULTS_SECONDS", "DUEL_INTRO_SECONDS", "DUEL_RESULTS_SECONDS", "LATE_SECONDS"):
         monkeypatch.setattr(survival, name, 0.05)
-    monkeypatch.setattr(survival, "ANSWER_SECONDS", 0.5)
+    monkeypatch.setitem(survival.RULES, "true_false", dataclasses.replace(survival.RULES["true_false"], answer_seconds=0.5))
     ana, bia, caio = await connect(), await connect(), await connect()
     created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
     code = created["room"]["code"]

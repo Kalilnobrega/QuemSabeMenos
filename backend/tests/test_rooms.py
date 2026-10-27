@@ -221,3 +221,15 @@ def test_last_standing_runs_without_the_classic_game(manager):
     manager.leave("sid-caio")
     assert room.survival.contender(room.players[0].id).alive
     assert len(room.survival.alive_ids()) == 2
+
+
+def test_last_standing_with_choices_uses_the_question_bank(manager):
+    room, _ = manager.create("sid-ana", profile("Ana"))
+    manager.join("sid-bia", room.code, profile("Bia"))
+    manager.join("sid-caio", room.code, profile("Caio"))
+    manager.update_settings("sid-ana", mode="last_standing", survival_kind="choices")
+    manager.start("sid-ana", now=0)
+    room.survival.advance(5)
+    view = room.view(5).survival
+    assert view.kind == "choices" and view.phase == "reading"
+    assert len(view.options) == 4 and view.survivors[0].lives == 3

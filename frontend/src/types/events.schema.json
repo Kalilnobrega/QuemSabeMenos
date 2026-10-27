@@ -1183,6 +1183,23 @@
           },
           "type": "array"
         },
+        "survival_kind": {
+          "enum": [
+            "true_false",
+            "choices"
+          ],
+          "type": "string"
+        },
+        "survival_kind_options": {
+          "items": {
+            "enum": [
+              "true_false",
+              "choices"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
         "powerup_max": {
           "type": "integer"
         },
@@ -1235,6 +1252,8 @@
       "required": [
         "mode",
         "mode_options",
+        "survival_kind",
+        "survival_kind_options",
         "powerup_max",
         "powerup_max_options",
         "rounds",
@@ -1552,15 +1571,24 @@
       "type": "object"
     },
     "SurvivalView": {
-      "description": "Último de pé. Fases: starting → (answering → results) por frase, com level antes da 1ª\ndifícil; quando sobram 2: duel_intro → (duel_answering → duel_results) até um errar sozinho\n→ finished. A frase vai junto com as respostas (sem fase de leitura).",
+      "description": "Último de pé. Fases: starting → (reading → answering → results) por pergunta, com level\nquando o nível muda; quando sobram 2: duel_intro → (duel_reading → duel_answering →\nduel_results) até um perder → finished. No V ou F não tem leitura: a frase vai junto com as\nrespostas.",
       "properties": {
+        "kind": {
+          "enum": [
+            "true_false",
+            "choices"
+          ],
+          "type": "string"
+        },
         "phase": {
           "enum": [
             "starting",
             "level",
+            "reading",
             "answering",
             "results",
             "duel_intro",
+            "duel_reading",
             "duel_answering",
             "duel_results",
             "finished"
@@ -1579,6 +1607,9 @@
         "duel_round": {
           "type": "integer"
         },
+        "easy_count": {
+          "type": "integer"
+        },
         "medium_count": {
           "type": "integer"
         },
@@ -1587,8 +1618,10 @@
         },
         "difficulty": {
           "enum": [
+            "easy",
             "medium",
-            "hard"
+            "hard",
+            "impossible"
           ],
           "type": "string"
         },
@@ -1697,11 +1730,13 @@
         }
       },
       "required": [
+        "kind",
         "phase",
         "phase_duration_ms",
         "phase_ends_in_ms",
         "round",
         "duel_round",
+        "easy_count",
         "medium_count",
         "max_lives",
         "difficulty",
@@ -1778,6 +1813,21 @@
                 "classic",
                 "powers",
                 "last_standing"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "survival_kind": {
+          "anyOf": [
+            {
+              "enum": [
+                "true_false",
+                "choices"
               ],
               "type": "string"
             },

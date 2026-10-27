@@ -14,6 +14,7 @@ from app.events import (
     ANSWER_OPTIONS,
     GRACE_OPTIONS,
     MODE_OPTIONS,
+    SURVIVAL_KIND_OPTIONS,
     POWERUP_MAX_OPTIONS,
     ROUND_OPTIONS,
     Avatar,
@@ -23,6 +24,7 @@ from app.events import (
     Profile,
     RoomSettings,
     RoomState,
+    SurvivalKind,
 )
 from app.duel import DuelQuestion, load_statements
 from app.game import (
@@ -86,6 +88,7 @@ class Room:
     players: list[Player]  # em ordem de chegada
     status: Literal["lobby", "playing"] = "lobby"
     mode: GameMode = "classic"
+    survival_kind: SurvivalKind = "true_false"
     powerup_max: int = MAX_HELD
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
@@ -115,6 +118,8 @@ class Room:
             settings=RoomSettings(
                 mode=self.mode,
                 mode_options=list(MODE_OPTIONS),
+                survival_kind=self.survival_kind,
+                survival_kind_options=list(SURVIVAL_KIND_OPTIONS),
                 powerup_max=self.powerup_max,
                 powerup_max_options=list(POWERUP_MAX_OPTIONS),
                 rounds=self.rounds,
@@ -252,6 +257,7 @@ class RoomManager:
         speed_grace_seconds: float | None = None,
         mode: GameMode | None = None,
         powerup_max: int | None = None,
+        survival_kind: SurvivalKind | None = None,
     ) -> Room:
         room = self._host_room(sid, "mudar as configurações")
         if room.status != "lobby":
@@ -271,6 +277,8 @@ class RoomManager:
                 raise RoomError("Tema inválido.")
         if mode is not None:
             room.mode = mode
+        if survival_kind is not None:
+            room.survival_kind = survival_kind
         if powerup_max is not None:
             room.powerup_max = powerup_max
         if rounds is not None:
@@ -296,11 +304,12 @@ class RoomManager:
             player.streak = 0
         now = time.monotonic() if now is None else now
         statements = [s for s in self.statements if s.theme in room.themes]
+        bank = [q for q in self.bank if q.theme in room.themes]
         room.status = "playing"
         if room.mode == "last_standing":
-            room.survival = Survival.create([p.id for p in room.players], statements, room.used_questions, self.rng, now)
+            pool = statements if room.survival_kind == "true_false" else bank
+            room.survival = Survival.create(room.survival_kind, [p.id for p in room.players], pool, room.used_questions, self.rng, now)
             return room
-        bank = [q for q in self.bank if q.theme in room.themes]
         questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
         room.used_questions |= {q.id for q in questions}
         room.game = Game(

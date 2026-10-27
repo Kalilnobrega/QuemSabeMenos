@@ -5,10 +5,18 @@ import { AVATAR_URLS } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import type { PlayerView, Survivor } from '../types/events'
+import type { PlayerView, SurvivalView, Survivor } from '../types/events'
 import { Confetti } from './Game'
 import { LeaveButton } from './LeaveButton'
 import { PowerUpIcon } from './PowerUps'
+
+const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
+const DIFFICULTY_CHIP: Record<string, string> = {
+  easy: 'bg-emerald-500/15 text-emerald-300',
+  medium: 'bg-brand/15 text-brand',
+  hard: 'bg-red-500/15 text-red-300',
+  impossible: 'bg-orange-500/20 text-orange-300',
+}
 
 interface Props {
   snapshot: Snapshot
@@ -25,7 +33,7 @@ export function Survival({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }:
     case 'starting':
       return <SurvivalStart snapshot={snapshot} />
     case 'level':
-      return <HardLevel />
+      return <LevelScreen difficulty={survival.difficulty} kind={survival.kind} />
     case 'duel_intro':
       return <DuelIntro snapshot={snapshot} playerId={playerId} />
     case 'finished':
@@ -82,9 +90,12 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
       <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Prepare-se!</h1>
       <ul className="intro-step flex flex-col gap-1 font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
         <li className="flex items-center justify-center gap-2">
-          Verdadeiro ou falso · <Hearts lives={survival.max_lives} max={survival.max_lives} /> {survival.max_lives} vidas
+          {survival.kind === 'true_false' ? 'Verdadeiro ou falso' : 'Alternativas'} · <Hearts lives={survival.max_lives} max={survival.max_lives} /> {survival.max_lives} vidas
         </li>
-        <li>{survival.medium_count} médias, depois só difíceis</li>
+        <li>
+          {survival.easy_count > 0 && `${survival.easy_count} fáceis, `}
+          {survival.medium_count} médias, depois só difíceis
+        </li>
         <li>Sobraram dois? X1 até alguém errar!</li>
       </ul>
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
@@ -105,14 +116,23 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
   )
 }
 
-function HardLevel() {
+const LEVELS: Record<string, { title: string; className: string }> = {
+  easy: { title: 'Fácil', className: 'text-emerald-300 [text-shadow:0_4px_0_#065f46]' },
+  medium: { title: 'Média', className: 'text-brand [text-shadow:0_4px_0_#7a5a00]' },
+  hard: { title: 'Difícil', className: 'text-red-300 [text-shadow:0_4px_0_#7f1d1d]' },
+  impossible: { title: 'Impossível', className: 'text-orange-300 [text-shadow:0_4px_0_#7c2d12]' },
+}
+
+function LevelScreen({ difficulty, kind }: { difficulty: string; kind: SurvivalView['kind'] }) {
   useSoundsOnMount([['levelUp', 450]])
+  const level = LEVELS[difficulty] ?? LEVELS.hard
+  const what = kind === 'true_false' ? 'frases' : 'perguntas'
   return (
     <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
-      <h1 className="intro-slam font-display text-6xl text-red-300 [text-shadow:0_4px_0_#7f1d1d]">Difícil</h1>
+      <h1 className={`intro-slam font-display text-6xl ${level.className}`}>{level.title}</h1>
       <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.7s' }}>
-        Acabou a moleza: agora só frases difíceis.
+        {difficulty === 'hard' ? `Acabou a moleza: agora só ${what} difíceis.` : `Agora as ${what} apertam.`}
       </p>
     </section>
   )
@@ -155,6 +175,9 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
   const { room } = snapshot
   const survival = room.survival!
   const duel = survival.duelists.length > 0
+  const choices = survival.kind === 'choices'
+  const noun = choices ? 'Pergunta' : 'Frase'
+  const reading = survival.phase === 'reading' || survival.phase === 'duel_reading'
   const open = survival.phase === 'answering' || survival.phase === 'duel_answering'
   const remaining = useRemaining(snapshot, open)
   const [choice, setChoice] = useState<number | null>(survival.my_answer)
@@ -184,7 +207,9 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
   const picksOn = (index: number) => survival.picks.filter((k) => k.option === index).map((k) => player(k.player_id))
 
   let status: ReactNode = ''
-  if (open) {
+  if (reading) {
+    status = 'Leia com calma…'
+  } else if (open) {
     status = answering ? (choice === null ? (duel ? 'Errou sozinho, perdeu!' : 'Errar ou não responder tira uma vida.') : 'Resposta enviada!') : duel ? 'Torça pelo seu lado!' : 'Você está fora. Assiste aí!'
   } else if (survival.spared) {
     status = 'Todo mundo errou: ninguém perde vida!'
@@ -200,15 +225,13 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
           <>
             <p className="font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">X1!</p>
             <p className="text-sm font-semibold text-steel">
-              Frase {survival.duel_round} · {String(survival.next_seconds).replace('.', ',')}s para responder
+              {noun} {survival.duel_round} · {String(survival.next_seconds).replace('.', ',')}s para responder
             </p>
           </>
         ) : (
           <p className="flex items-center gap-2 text-sm font-semibold text-steel">
-            Frase {survival.round}
-            <span className={`rounded-full px-2 py-0.5 ${survival.difficulty === 'hard' ? 'bg-red-500/15 text-red-300' : 'bg-brand/15 text-brand'}`}>
-              {survival.difficulty === 'hard' ? 'Difícil' : 'Média'}
-            </span>
+            {noun} {survival.round}
+            <span className={`rounded-full px-2 py-0.5 ${DIFFICULTY_CHIP[survival.difficulty]}`}>{LEVELS[survival.difficulty].title}</span>
             {survival.theme}
           </p>
         )}
@@ -224,8 +247,8 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
           />
         )}
       </div>
-      <h1 className="text-center text-[1.4rem] leading-snug font-bold">{survival.text}</h1>
-      <div className="grid grid-cols-2 gap-3">
+      <h1 className={`text-[1.4rem] leading-snug font-bold ${choices ? '' : 'text-center'}`}>{survival.text}</h1>
+      <div className={`grid grid-cols-2 gap-3 ${choices ? 'auto-rows-fr' : ''}`}>
         {survival.options.map((option, index) => {
           const reveal = survival.correct_option !== null
           const state = reveal
@@ -244,9 +267,12 @@ function Statement({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playe
               key={index}
               onClick={() => void pick(index)}
               disabled={!canAnswer}
-              className={`btn-3d relative flex min-h-24 items-center justify-center rounded-2xl px-3 font-display text-2xl tracking-wide ${state}`}
+              className={`btn-3d relative flex items-center rounded-2xl ${
+                choices ? 'btn-sm min-h-14 gap-2 px-3 py-2 text-left text-base leading-tight font-semibold' : 'min-h-24 justify-center px-3 font-display text-2xl tracking-wide'
+              } ${state}`}
             >
-              {option}
+              {choices && <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>}
+              <span className={choices ? 'min-w-0 [overflow-wrap:anywhere]' : ''}>{option}</span>
               {reveal && (
                 <span className="absolute -top-2 -right-1.5 flex -space-x-2">
                   {picksOn(index)

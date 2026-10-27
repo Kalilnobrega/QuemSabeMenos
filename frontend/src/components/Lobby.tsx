@@ -8,7 +8,12 @@ import type { RoomSettings, RoomState, UpdateSettingsRequest } from '../types/ev
 const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
   powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
-  last_standing: { name: 'Último de pé', hint: 'Verdadeiro ou falso com 2 vidas. Sobraram dois, é X1.' },
+  last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
+}
+
+const SURVIVAL_KINDS: Record<RoomSettings['survival_kind'], { name: string; hint: string; lives: number }> = {
+  true_false: { name: 'V ou F', hint: '2 vidas · médias, depois difíceis', lives: 2 },
+  choices: { name: 'Alternativas', hint: '3 vidas · fáceis, médias, depois difíceis', lives: 3 },
 }
 
 interface Props {
@@ -68,8 +73,8 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
   const summary =
     room.settings.mode === 'last_standing'
       ? [
-          { label: 'Frases', value: 'V ou F' },
-          { label: 'Vidas', value: '2' },
+          { label: 'Perguntas', value: SURVIVAL_KINDS[room.settings.survival_kind].name },
+          { label: 'Vidas', value: String(SURVIVAL_KINDS[room.settings.survival_kind].lives) },
           { label: 'Temas', value: themesLabel },
         ]
       : [
@@ -251,6 +256,27 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
             ))}
           </div>
         </div>
+
+        {settings.mode === 'last_standing' && (
+          <div className="flex flex-col gap-2">
+            <h3 className="font-display text-xl tracking-wide">Perguntas</h3>
+            <div className="grid grid-cols-2 gap-2">
+              {settings.survival_kind_options.map((kind) => (
+                <button
+                  key={kind}
+                  onClick={() => update({ survival_kind: kind })}
+                  aria-pressed={settings.survival_kind === kind}
+                  className={`btn-3d btn-sm flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
+                    settings.survival_kind === kind ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                  }`}
+                >
+                  <span className="font-semibold">{SURVIVAL_KINDS[kind].name}</span>
+                  <span className="text-xs leading-snug opacity-80">{SURVIVAL_KINDS[kind].hint}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {settings.mode === 'powers' && (
           <OptionRow
