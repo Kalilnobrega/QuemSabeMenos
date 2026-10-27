@@ -92,6 +92,11 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 
 
 def check_round_done(room: Room) -> None:
+    if room.hot_potato:
+        # Cada resposta muda a fase na hora: acorda o laço para mandar o estado e o prazo novo.
+        if event := round_done.get(room.code):
+            event.set()
+        return
     if room.survival:
         survival, connected = room.survival, room.connected_ids()
         answering = survival.phase in ("answering", "duel_answering") and survival.everyone_answered(connected)
@@ -261,6 +266,29 @@ async def run_survival(room: Room) -> None:
             del round_done[room.code]
 
 
+async def run_hot_potato(room: Room) -> None:
+    """Conduz a Batata quente: espera o prazo da fase (no asking, o pavio) ou uma resposta."""
+    potato = room.hot_potato
+    done = round_done[room.code] = asyncio.Event()
+
+    def alive() -> bool:
+        return rooms.rooms.get(room.code) is room and room.hot_potato is potato
+
+    try:
+        while alive():
+            done.clear()
+            await broadcast(room)
+            if potato.phase == "finished":
+                return
+            with suppress(TimeoutError):
+                await asyncio.wait_for(done.wait(), max(0.0, potato.deadline() - time.monotonic()))
+            if alive() and time.monotonic() >= potato.deadline():
+                potato.advance(time.monotonic())
+    finally:
+        if round_done.get(room.code) is done:
+            del round_done[room.code]
+
+
 @sio.event
 async def submit_duel_bet(sid: str, data: dict) -> dict:
     try:
@@ -351,7 +379,8 @@ async def start_game(sid: str) -> dict:
         room = rooms.start(sid)
     except RoomError as e:
         return error(str(e))
-    sio.start_background_task(run_survival if room.survival else run_game, room)
+    runner = run_hot_potato if room.hot_potato else run_survival if room.survival else run_game
+    sio.start_background_task(runner, room)
     return OkAck().model_dump()
 
 

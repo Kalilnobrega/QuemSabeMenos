@@ -786,6 +786,238 @@
       "title": "Gift",
       "type": "object"
     },
+    "HotPotatoPlayer": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "out_round": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correct": {
+          "type": "integer"
+        },
+        "wrong": {
+          "type": "integer"
+        },
+        "place": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "player_id",
+        "out_round",
+        "correct",
+        "wrong",
+        "place"
+      ],
+      "title": "HotPotatoPlayer",
+      "type": "object"
+    },
+    "HotPotatoTurn": {
+      "description": "A última resposta de quem está com a batata.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "option": {
+          "type": "integer"
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "correct_option": {
+          "type": "integer"
+        },
+        "elapsed_ms": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "option",
+        "correct",
+        "correct_option",
+        "elapsed_ms"
+      ],
+      "title": "HotPotatoTurn",
+      "type": "object"
+    },
+    "HotPotatoView": {
+      "description": "Batata quente. Fases: starting → asking (quem está com a batata responde) → passing\n(acertou, a batata voa para o próximo) ou wrong (errou, outra pergunta) → … → exploded (o pavio\nacabou ou foram 3 erros seguidos) → asking da rodada seguinte … → finished.",
+      "properties": {
+        "phase": {
+          "enum": [
+            "starting",
+            "asking",
+            "passing",
+            "wrong",
+            "exploded",
+            "finished"
+          ],
+          "type": "string"
+        },
+        "phase_duration_ms": {
+          "type": "integer"
+        },
+        "phase_ends_in_ms": {
+          "type": "integer"
+        },
+        "round": {
+          "type": "integer"
+        },
+        "holder": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "heat": {
+          "type": "number"
+        },
+        "burning": {
+          "type": "boolean"
+        },
+        "burn_per_second": {
+          "type": "number"
+        },
+        "wrong_streak": {
+          "type": "integer"
+        },
+        "max_wrong_streak": {
+          "type": "integer"
+        },
+        "penalty_seconds": {
+          "type": "number"
+        },
+        "fuse_range": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "difficulty": {
+          "anyOf": [
+            {
+              "enum": [
+                "easy",
+                "medium",
+                "hard",
+                "impossible"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "turn": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HotPotatoTurn"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exploded": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "winner": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "players": {
+          "items": {
+            "$ref": "#/$defs/HotPotatoPlayer"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "phase",
+        "phase_duration_ms",
+        "phase_ends_in_ms",
+        "round",
+        "holder",
+        "heat",
+        "burning",
+        "burn_per_second",
+        "wrong_streak",
+        "max_wrong_streak",
+        "penalty_seconds",
+        "fuse_range",
+        "text",
+        "theme",
+        "difficulty",
+        "options",
+        "turn",
+        "exploded",
+        "winner",
+        "players"
+      ],
+      "title": "HotPotatoView",
+      "type": "object"
+    },
     "JoinRoomRequest": {
       "properties": {
         "nickname": {
@@ -1185,7 +1417,8 @@
           "enum": [
             "classic",
             "powers",
-            "last_standing"
+            "last_standing",
+            "hot_potato"
           ],
           "type": "string"
         },
@@ -1194,7 +1427,8 @@
             "enum": [
               "classic",
               "powers",
-              "last_standing"
+              "last_standing",
+              "hot_potato"
             ],
             "type": "string"
           },
@@ -1339,6 +1573,16 @@
               "type": "null"
             }
           ]
+        },
+        "hot_potato": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HotPotatoView"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -1350,7 +1594,8 @@
         "settings",
         "players",
         "game",
-        "survival"
+        "survival",
+        "hot_potato"
       ],
       "title": "RoomState",
       "type": "object"
@@ -2107,7 +2352,8 @@
               "enum": [
                 "classic",
                 "powers",
-                "last_standing"
+                "last_standing",
+                "hot_potato"
               ],
               "type": "string"
             },

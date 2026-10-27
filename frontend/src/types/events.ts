@@ -474,6 +474,60 @@ export interface Gift {
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "HotPotatoPlayer".
+ */
+export interface HotPotatoPlayer {
+  player_id: string;
+  out_round: number | null;
+  correct: number;
+  wrong: number;
+  place: number | null;
+}
+/**
+ * A última resposta de quem está com a batata.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "HotPotatoTurn".
+ */
+export interface HotPotatoTurn {
+  player_id: string;
+  option: number;
+  correct: boolean;
+  correct_option: number;
+  elapsed_ms: number;
+}
+/**
+ * Batata quente. Fases: starting → asking (quem está com a batata responde) → passing
+ * (acertou, a batata voa para o próximo) ou wrong (errou, outra pergunta) → … → exploded (o pavio
+ * acabou ou foram 3 erros seguidos) → asking da rodada seguinte … → finished.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "HotPotatoView".
+ */
+export interface HotPotatoView {
+  phase: "starting" | "asking" | "passing" | "wrong" | "exploded" | "finished";
+  phase_duration_ms: number;
+  phase_ends_in_ms: number;
+  round: number;
+  holder: string | null;
+  heat: number;
+  burning: boolean;
+  burn_per_second: number;
+  wrong_streak: number;
+  max_wrong_streak: number;
+  penalty_seconds: number;
+  fuse_range: number[];
+  text: string | null;
+  theme: string | null;
+  difficulty: ("easy" | "medium" | "hard" | "impossible") | null;
+  options: string[];
+  turn: HotPotatoTurn | null;
+  exploded: string | null;
+  winner: string | null;
+  players: HotPotatoPlayer[];
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "JoinRoomRequest".
  */
 export interface JoinRoomRequest {
@@ -525,14 +579,15 @@ export interface RoomState {
   players: PlayerView[];
   game: GameView | null;
   survival: SurvivalView | null;
+  hot_potato: HotPotatoView | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
-  mode: "classic" | "powers" | "last_standing";
-  mode_options: ("classic" | "powers" | "last_standing")[];
+  mode: "classic" | "powers" | "last_standing" | "hot_potato";
+  mode_options: ("classic" | "powers" | "last_standing" | "hot_potato")[];
   survival_kind: "true_false" | "choices";
   survival_kind_options: ("true_false" | "choices")[];
   survival_powers: boolean;
@@ -813,7 +868,7 @@ export interface SubmitDuelBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  mode?: ("classic" | "powers" | "last_standing") | null;
+  mode?: ("classic" | "powers" | "last_standing" | "hot_potato") | null;
   survival_kind?: ("true_false" | "choices") | null;
   survival_powers?: boolean | null;
   powerup_max?: number | null;

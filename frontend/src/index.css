@@ -319,3 +319,34 @@ body {
   .res-rays, .res-rise, .res-halo, .res-wing-left, .res-wing-right, .res-title, .res-sub { animation: none; }
   .res-spark { display: none; }
 }
+
+/* Batata quente: treme mais rápido conforme o pavio queima (--shake vem do componente) */
+.potato {
+  transition: left 0.55s cubic-bezier(0.3, 1.4, 0.5, 1), top 0.55s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+.potato-shake {
+  animation: potato-shake var(--shake, 0.6s) ease-in-out infinite;
+}
+.potato-spark {
+  animation: potato-spark 0.18s steps(2) infinite alternate;
+}
+.potato-boom {
+  animation: potato-boom 0.6s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+@keyframes potato-shake {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  25% { transform: translate(-3px, 1px) rotate(-8deg); }
+  75% { transform: translate(3px, -1px) rotate(8deg); }
+}
+@keyframes potato-spark {
+  from { transform: scale(0.8); opacity: 0.7; }
+  to { transform: scale(1.25); opacity: 1; }
+}
+@keyframes potato-boom {
+  from { transform: scale(0.3); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .potato { transition: none; }
+  .potato-shake, .potato-spark, .potato-boom { animation: none; }
+}

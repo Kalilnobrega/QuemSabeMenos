@@ -21,8 +21,8 @@ PowerUp = Literal[
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
 ]
-GameMode = Literal["classic", "powers", "last_standing"]
-MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "last_standing")
+GameMode = Literal["classic", "powers", "last_standing", "hot_potato"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "last_standing", "hot_potato")
 SurvivalKind = Literal["true_false", "choices"]  # Último de pé: Verdadeiro ou Falso ou Alternativas
 SURVIVAL_KIND_OPTIONS: tuple[SurvivalKind, ...] = ("true_false", "choices")
 
@@ -371,6 +371,51 @@ class SurvivalView(BaseModel):
     gifts: list[Gift]  # poderes ganhos nesta revelação
 
 
+class HotPotatoTurn(BaseModel):
+    """A última resposta de quem está com a batata."""
+
+    player_id: str
+    option: int
+    correct: bool
+    correct_option: int
+    elapsed_ms: int
+
+
+class HotPotatoPlayer(BaseModel):
+    player_id: str
+    out_round: int | None  # rodada em que a batata explodiu na mão; None = na roda
+    correct: int
+    wrong: int
+    place: int | None  # só no fim
+
+
+class HotPotatoView(BaseModel):
+    """Batata quente. Fases: starting → asking (quem está com a batata responde) → passing
+    (acertou, a batata voa para o próximo) ou wrong (errou, outra pergunta) → … → exploded (o pavio
+    acabou ou foram 3 erros seguidos) → asking da rodada seguinte … → finished."""
+
+    phase: Literal["starting", "asking", "passing", "wrong", "exploded", "finished"]
+    phase_duration_ms: int
+    phase_ends_in_ms: int  # no asking, é o pavio: o front não deve mostrar
+    round: int
+    holder: str | None
+    heat: float  # 0 a 1: quanto do pavio já queimou no envio
+    burning: bool  # o pavio está queimando agora (para durante o passe e o erro)
+    burn_per_second: float  # quanto o heat sobe por segundo enquanto queima
+    wrong_streak: int
+    max_wrong_streak: int
+    penalty_seconds: float
+    fuse_range: list[float]
+    text: str | None
+    theme: str | None
+    difficulty: Difficulty | None
+    options: list[str]
+    turn: HotPotatoTurn | None
+    exploded: str | None
+    winner: str | None
+    players: list[HotPotatoPlayer]
+
+
 class RoomState(BaseModel):
     """Enviado no evento `room_state` sempre que a sala muda."""
 
@@ -383,6 +428,7 @@ class RoomState(BaseModel):
     players: list[PlayerView]
     game: GameView | None
     survival: SurvivalView | None
+    hot_potato: HotPotatoView | None
 
 
 class Ack(BaseModel):

@@ -9,6 +9,7 @@ const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
   powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
   last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
+  hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
 }
 
 const SURVIVAL_KINDS: Record<RoomSettings['survival_kind'], { name: string; hint: string; lives: number }> = {
@@ -71,7 +72,13 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
   const powers = room.settings.mode === 'powers'
   const themesLabel = allThemes ? 'Todos' : themes.length <= 2 ? themes.join(', ') : `${themes.length} temas`
   const summary =
-    room.settings.mode === 'last_standing'
+    room.settings.mode === 'hot_potato'
+      ? [
+          { label: 'Pavio', value: '40–60s' },
+          { label: 'Erro', value: '−10s' },
+          { label: 'Temas', value: themesLabel },
+        ]
+      : room.settings.mode === 'last_standing'
       ? [
           { label: 'Perguntas', value: SURVIVAL_KINDS[room.settings.survival_kind].name },
           { label: 'Vidas', value: String(SURVIVAL_KINDS[room.settings.survival_kind].lives) },
@@ -301,7 +308,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           />
         )}
 
-        {settings.mode !== 'last_standing' && (
+        {settings.mode !== 'last_standing' && settings.mode !== 'hot_potato' && (
           <>
             <OptionRow
               title="Perguntas"

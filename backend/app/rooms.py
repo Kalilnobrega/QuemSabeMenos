@@ -38,6 +38,7 @@ from app.game import (
     point_scale,
 )
 from app.powerups import MAX_HELD
+from app.hot_potato import HotPotato, HotPotatoError
 from app.survival import Survival, SurvivalError
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
@@ -98,6 +99,7 @@ class Room:
     themes: list[str] = field(default_factory=list)  # escolhidos pelo anfitrião; começam todos
     game: Game | None = None
     survival: Survival | None = None  # o modo Último de pé, no lugar de `game`
+    hot_potato: HotPotato | None = None  # o modo Batata quente, no lugar de `game`
     # Perguntas já sorteadas nesta sala, para "jogar de novo" trazer perguntas novas.
     used_questions: set[str] = field(default_factory=set)
 
@@ -136,6 +138,7 @@ class Room:
             players=[self._player_view(p, viewer) for p in self.players],
             game=self.game.view(now, viewer) if self.game else None,
             survival=self.survival.view(now, viewer, [p.id for p in self.players]) if self.survival else None,
+            hot_potato=self.hot_potato.view(now, [p.id for p in self.players]) if self.hot_potato else None,
         )
 
 
@@ -311,6 +314,9 @@ class RoomManager:
         statements = [s for s in self.statements if s.theme in room.themes]
         bank = [q for q in self.bank if q.theme in room.themes]
         room.status = "playing"
+        if room.mode == "hot_potato":
+            room.hot_potato = HotPotato.create([p.id for p in room.players], bank, room.used_questions, self.rng, now)
+            return room
         if room.mode == "last_standing":
             pool = statements if room.survival_kind == "true_false" else bank
             room.survival = Survival.create(
@@ -339,6 +345,13 @@ class RoomManager:
 
     def answer(self, sid: str, option: int, now: float) -> Room:
         found = self.session(sid)
+        if found and found[0].hot_potato:
+            room, player = found
+            try:
+                room.hot_potato.answer(player.id, option, now)
+            except HotPotatoError as e:
+                raise RoomError(str(e)) from e
+            return room
         if found and found[0].survival:
             room, player = found
             try:
@@ -432,11 +445,12 @@ class RoomManager:
 
     def play_again(self, sid: str) -> Room:
         room = self._host_room(sid, "recomeçar")
-        current = room.game or room.survival
+        current = room.game or room.survival or room.hot_potato
         if not current or current.phase != "finished":
             raise RoomError("A partida ainda não terminou.")
         room.game = None
         room.survival = None
+        room.hot_potato = None
         room.status = "lobby"
         for player in room.players:
             player.score = STARTING_IQ
@@ -463,6 +477,8 @@ class RoomManager:
         room.players.remove(player)
         if room.survival:
             room.survival.drop(player.id)
+        if room.hot_potato:
+            room.hot_potato.drop(player.id, time.monotonic())
         if not room.players:
             del self.rooms[room.code]
             return None

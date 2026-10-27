@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Game } from './components/Game'
+import { HotPotato } from './components/HotPotato'
 import { Lobby } from './components/Lobby'
 import { Survival } from './components/Survival'
 import { Logo } from './components/Logo'
@@ -62,7 +63,9 @@ export default function App() {
   }
 
   let content
-  if (snapshot && room?.survival) {
+  if (snapshot && room?.hot_potato) {
+    content = <HotPotato snapshot={snapshot} playerId={playerId} onAnswer={answer} onPlayAgain={playAgain} onLeave={leaveRoom} />
+  } else if (snapshot && room?.survival) {
     content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.game) {
     content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onDuelBet={duelBet} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
@@ -113,7 +116,7 @@ export default function App() {
     // Na partida o conteúdo fica alinhado ao topo: centralizado, qualquer mudança de altura empurraria a tela.
     <main
       className={`mx-auto flex min-h-dvh max-w-md flex-col items-center gap-8 px-4 ${
-        room?.game || room?.survival ? 'justify-start pt-6 pb-10' : 'justify-center py-10'
+        room?.game || room?.survival || room?.hot_potato ? 'justify-start pt-6 pb-10' : 'justify-center py-10'
       }`}
     >
       {content}

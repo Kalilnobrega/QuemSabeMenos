@@ -348,3 +348,31 @@ async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
     state = await caio.wait_for(lambda s: sv(s).get("phase") == "finished")
     assert sv(state)["winner"] == created["player_id"]
     assert [s["place"] for s in sv(state)["survivors"]][0] == 1
+
+
+async def test_hot_potato_passes_and_explodes(connect, monkeypatch):
+    from app import hot_potato
+
+    monkeypatch.setattr(hot_potato, "START_SECONDS", 0.05)
+    monkeypatch.setattr(hot_potato, "PASS_SECONDS", 0.05)
+    monkeypatch.setattr(hot_potato, "FUSE_SECONDS", (0.6, 0.6))
+    ana, bia = await connect(), await connect()
+    created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
+    code = created["room"]["code"]
+    joined = await bia.call("join_room", {"code": code, "nickname": "Bia", "avatar": "sapo"})
+    await ana.call("update_settings", {"mode": "hot_potato"})
+    assert (await ana.call("start_game"))["ok"]
+    game = main.rooms.rooms[code].hot_potato
+
+    def hp(state: dict) -> dict:
+        return state["hot_potato"] or {}
+
+    state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking")
+    first = hp(state)["holder"]
+    client = ana if first == created["player_id"] else bia
+    assert (await client.call("submit_answer", {"option": game.question.answer}))["ok"]
+    state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking" and hp(s)["holder"] != first)
+    second = hp(state)["holder"]
+    assert second in (created["player_id"], joined["player_id"])
+    state = await ana.wait_for(lambda s: hp(s).get("phase") == "exploded")
+    assert hp(state)["exploded"] == second

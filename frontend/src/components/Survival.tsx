@@ -536,7 +536,7 @@ function SurvivalPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot
   )
 }
 
-function Spotlight({ title, icon, player, line, tone, winner = false }: { title: string; icon: string; player: PlayerView; line: string; tone: string; winner?: boolean }) {
+export function Spotlight({ title, icon, player, line, tone, winner = false }: { title: string; icon: string; player: PlayerView; line: string; tone: string; winner?: boolean }) {
   return (
     <div className="podium-card relative flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center">
       {winner && <Confetti />}
