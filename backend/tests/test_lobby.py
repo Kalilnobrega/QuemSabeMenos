@@ -294,6 +294,7 @@ async def test_duel_stops_the_match_and_then_it_goes_on(connect, monkeypatch):
 
     monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(x1, "INTRO_SECONDS", 0.05)
     monkeypatch.setattr(x1, "FIRST_SECONDS", 0.6)
     monkeypatch.setattr(x1, "STEP_SECONDS", 0.0)
     monkeypatch.setattr(x1, "RESULTS_SECONDS", 0.02)

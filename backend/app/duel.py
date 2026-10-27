@@ -14,6 +14,7 @@ from typing import Literal, Protocol
 
 STATEMENTS_DIR = Path(__file__).parent / "true_false"
 
+INTRO_SECONDS = 3.0  # a animação de entrada; com plateia, a aposta vem depois dela
 BET_SECONDS = 8.0
 FIRST_SECONDS = 8.0
 STEP_SECONDS = 0.5  # cada pergunta tem meio segundo a menos que a anterior

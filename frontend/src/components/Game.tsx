@@ -105,7 +105,7 @@ interface Props {
 export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
   if (game.duel) {
-    return <DuelScreen snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onDuelBet={onDuelBet} />
+    return <DuelScreen key={`${game.duel.challenger}-${game.duel.rival}`} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onDuelBet={onDuelBet} />
   }
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
@@ -126,6 +126,7 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
   return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
 }
 
+const DUEL_INTRO_MS = 2800
 const DUEL_KIND: Record<string, string> = { true_false: 'Verdadeiro ou falso', hard: 'Difícil', impossible: 'Impossível' }
 
 /** X1: a partida para e todo mundo assiste. A plateia aposta, os dois respondem, e no fim o acerto de contas. */
@@ -139,7 +140,20 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
   const fighters = [duel.challenger, duel.rival].map((id) => room.players.find((p) => p.id === id))
   const name = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
   const fighting = playerId === duel.challenger || playerId === duel.rival
-  useSoundsOnMount([['impossible', 0]])
+  const [intro, setIntro] = useState<'on' | 'leaving' | 'off'>(() => (reducedMotion() ? 'off' : 'on'))
+  useSoundsOnMount([['impossible', 0], ['levelHop', 450], ['slam', 800]])
+  useEffect(() => {
+    if (intro === 'off') return
+    vibrate([0, 950, 120])
+    const leave = setTimeout(() => setIntro('leaving'), DUEL_INTRO_MS - 350)
+    const done = setTimeout(() => setIntro('off'), DUEL_INTRO_MS)
+    return () => {
+      clearTimeout(leave)
+      clearTimeout(done)
+    }
+    // Só uma vez, quando o duelo aparece.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   useEffect(() => {
     if (game.phase === 'duel_answering') playSound('answersOpen')
@@ -194,10 +208,32 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
     body = <DuelQuestionView key={duel.question_number} snapshot={snapshot} playerId={playerId} remaining={remaining} onAnswer={async (option) => setError(await onAnswer(option))} />
   }
 
+  if (intro !== 'off') {
+    return (
+      <div className={`duel-intro ${intro === 'leaving' ? 'duel-out' : ''}`} aria-label="X1!">
+        <div className="relative flex items-center justify-center">
+          <span className="duel-burst" />
+          <PowerUpIcon kind="duel" className="duel-clash relative size-28" />
+        </div>
+        <p className="intro-slam font-display text-7xl text-brand [text-shadow:0_5px_0_#7a5a00] [animation-delay:1.1s]">X1!</p>
+        <div className="flex w-full max-w-sm items-center justify-between px-6">
+          {fighters.map((p, i) =>
+            p ? (
+              <div key={p.id} className={`flex flex-col items-center gap-1 ${i === 0 ? 'duel-in-left' : 'duel-in-right'}`}>
+                <img src={AVATAR_URLS[p.avatar]} alt="" className="size-20" />
+                <span className="max-w-32 truncate font-display text-2xl tracking-wide text-chalk">{p.id === playerId ? 'Você' : p.nickname}</span>
+              </div>
+            ) : null,
+          )}
+        </div>
+      </div>
+    )
+  }
+
   return (
     <section className="flex w-full flex-col gap-5">
       <header className="flex flex-col items-center gap-1 text-center">
-        <p className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">X1!</p>
+        <p className="font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">X1!</p>
         {duel.question_number > 0 && (
           <p className="text-sm font-semibold text-steel">
             Pergunta {duel.question_number}/{duel.total_questions} · {DUEL_KIND[duel.kind ?? ''] ?? ''}

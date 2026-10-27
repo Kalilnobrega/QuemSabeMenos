@@ -212,3 +212,40 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .flashbang-flash { animation-duration: 0.4s; }
 }
+
+/* Entrada do X1: os dois chegam voando, as espadas se chocam com um clarão e a tela treme. */
+.duel-intro { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem; background: radial-gradient(circle at 50% 45%, #3b1466 0%, #0b0f1a 70%); animation: duel-shake 0.35s 0.95s; }
+.duel-in-left { animation: duel-in-left 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.15) 0.1s both; }
+.duel-in-right { animation: duel-in-right 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.15) 0.1s both; }
+.duel-clash { animation: duel-clash 0.5s cubic-bezier(0.3, 1.6, 0.5, 1) 0.6s both; }
+.duel-burst { position: absolute; width: 7rem; height: 7rem; border-radius: 50%; background: #fff; pointer-events: none; animation: duel-burst 0.6s ease-out 0.95s both; }
+.duel-out { animation: duel-out 0.35s ease-in both; }
+@keyframes duel-in-left {
+  from { transform: translateX(-110vw) rotate(-15deg); }
+  to { transform: none; }
+}
+@keyframes duel-in-right {
+  from { transform: translateX(110vw) rotate(15deg); }
+  to { transform: none; }
+}
+@keyframes duel-clash {
+  from { transform: scale(0) rotate(-200deg); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+@keyframes duel-burst {
+  from { transform: scale(0.2); opacity: 0.95; }
+  to { transform: scale(5); opacity: 0; }
+}
+@keyframes duel-shake {
+  0%, 100% { transform: none; }
+  25% { transform: translate(-7px, 3px); }
+  50% { transform: translate(6px, -4px); }
+  75% { transform: translate(-3px, 2px); }
+}
+@keyframes duel-out {
+  to { opacity: 0; transform: scale(1.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .duel-intro, .duel-in-left, .duel-in-right, .duel-clash, .duel-out { animation: none; }
+  .duel-burst { display: none; }
+}

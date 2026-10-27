@@ -825,7 +825,7 @@ class Game:
             questions += picked
         bettors = [pid for pid in player_ids if pid not in (challenger, rival) and scores.get(pid, 0) >= x1.BET]
         self.duel = x1.Duel(challenger=challenger, rival=rival, questions=questions, bettors=bettors)
-        self._enter("duel_betting", now, x1.BET_SECONDS if bettors else 0)
+        self._enter("duel_betting", now, x1.INTRO_SECONDS + (x1.BET_SECONDS if bettors else 0))
         return True
 
     def duel_bet(self, player_id: str, choice: str, now: float) -> None:
