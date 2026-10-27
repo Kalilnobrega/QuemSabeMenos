@@ -429,11 +429,13 @@ async def arm_powerup(sid: str, data: dict) -> dict:
 async def use_powerup(sid: str, data: dict) -> dict:
     try:
         request = UsePowerUpRequest.model_validate(data)
-        room = rooms.use_powerup(sid, request.kind)
+        room = rooms.use_powerup(sid, request.kind, time.monotonic())
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
         return error(str(e))
+    if room.hot_potato:
+        check_round_done(room)  # o poder pode mudar o pavio ou passar a batata
     await broadcast(room)
     return OkAck().model_dump()
 

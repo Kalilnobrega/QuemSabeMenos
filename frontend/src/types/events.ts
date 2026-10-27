@@ -37,7 +37,9 @@ export interface ArmPowerUpRequest {
     | "decoy"
     | "flashbang"
     | "resurrection"
-    | "duel";
+    | "duel"
+    | "cold_water"
+    | "free_pass";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -199,6 +201,8 @@ export interface GameView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -223,6 +227,8 @@ export interface GameView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -247,6 +253,8 @@ export interface GameView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -276,6 +284,8 @@ export interface GameView {
         | "flashbang"
         | "resurrection"
         | "duel"
+        | "cold_water"
+        | "free_pass"
       )
     | null;
   can_arm: boolean;
@@ -344,7 +354,9 @@ export interface PowerUpUse {
     | "decoy"
     | "flashbang"
     | "resurrection"
-    | "duel";
+    | "duel"
+    | "cold_water"
+    | "free_pass";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -380,7 +392,9 @@ export interface LastingPowerUp {
     | "decoy"
     | "flashbang"
     | "resurrection"
-    | "duel";
+    | "duel"
+    | "cold_water"
+    | "free_pass";
   rounds_left: number;
   total: number;
 }
@@ -429,6 +443,8 @@ export interface RoundResult {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   gained: PowerUpGain | null;
 }
@@ -459,7 +475,9 @@ export interface PowerUpGain {
     | "decoy"
     | "flashbang"
     | "resurrection"
-    | "duel";
+    | "duel"
+    | "cold_water"
+    | "free_pass";
   reason: "start" | "streak" | "comeback" | "ghost";
   legendary?: boolean;
   mythic?: boolean;
@@ -491,10 +509,12 @@ export interface HotPotatoPlayer {
  */
 export interface HotPotatoTurn {
   player_id: string;
-  option: number;
+  option: number | null;
   correct: boolean;
   correct_option: number;
   elapsed_ms: number;
+  free_pass?: boolean;
+  shielded?: boolean;
 }
 /**
  * Batata quente. Fases: starting → asking (quem está com a batata responde) → passing
@@ -525,6 +545,96 @@ export interface HotPotatoView {
   exploded: string | null;
   winner: string | null;
   players: HotPotatoPlayer[];
+  direction: 1 | -1;
+  powers: boolean;
+  powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "cold_water"
+    | "free_pass"
+  )[];
+  mythic_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "cold_water"
+    | "free_pass"
+  )[];
+  powerup_max: number;
+  starting_powerup:
+    | (
+        | "fifty_fifty"
+        | "shield"
+        | "double"
+        | "peek"
+        | "extra_time"
+        | "second_chance"
+        | "reverse"
+        | "backpack"
+        | "theme"
+        | "investment"
+        | "scratch"
+        | "steal"
+        | "scramble"
+        | "accelerator"
+        | "mirror"
+        | "silence"
+        | "magnifier"
+        | "toll"
+        | "decoy"
+        | "flashbang"
+        | "resurrection"
+        | "duel"
+        | "cold_water"
+        | "free_pass"
+      )
+    | null;
+  uses: PowerUpUse[];
+  hidden_options: number[];
+  first_wrong: number | null;
+  shielded: string[];
+  flashbang: boolean;
+  gifts: Gift[];
+  revived: string[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -698,6 +808,8 @@ export interface SurvivalView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -722,6 +834,8 @@ export interface SurvivalView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -746,6 +860,8 @@ export interface SurvivalView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "cold_water"
+    | "free_pass"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -772,6 +888,8 @@ export interface SurvivalView {
         | "flashbang"
         | "resurrection"
         | "duel"
+        | "cold_water"
+        | "free_pass"
       )
     | null;
   can_arm: boolean;
@@ -906,5 +1024,7 @@ export interface UsePowerUpRequest {
     | "decoy"
     | "flashbang"
     | "resurrection"
-    | "duel";
+    | "duel"
+    | "cold_water"
+    | "free_pass";
 }

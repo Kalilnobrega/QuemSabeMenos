@@ -76,6 +76,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
       ? [
           { label: 'Pavio', value: '40–60s' },
           { label: 'Erro', value: '−10s' },
+          { label: 'Poderes', value: room.settings.survival_powers ? `até ${room.settings.powerup_max}` : 'Não' },
           { label: 'Temas', value: themesLabel },
         ]
       : room.settings.mode === 'last_standing'
@@ -286,10 +287,14 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         )}
 
-        {settings.mode === 'last_standing' && (
+        {(settings.mode === 'last_standing' || settings.mode === 'hot_potato') && (
           <OptionRow
             title="Poderes"
-            hint="Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador"
+            hint={
+              settings.mode === 'hot_potato'
+                ? 'Ajudas para quem está com a batata, sabotagens para quem assiste'
+                : 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador'
+            }
             options={[0, 1]}
             value={settings.survival_powers ? 1 : 0}
             label={(n) => (n ? 'Com' : 'Sem')}
@@ -297,7 +302,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           />
         )}
 
-        {(settings.mode === 'powers' || (settings.mode === 'last_standing' && settings.survival_powers)) && (
+        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato') && settings.survival_powers)) && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantas habilidades cada um pode guardar ao mesmo tempo"

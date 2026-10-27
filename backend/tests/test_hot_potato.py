@@ -147,3 +147,143 @@ def test_view_hides_the_fuse_but_shows_the_heat():
     view = game.view(game.phase_started_at + game.fuse_total / 2, [p.id for p in game.players])
     assert view.heat == pytest.approx(0.5, abs=0.01)
     assert view.burning and view.options and view.holder == game.holder
+
+
+# --- com poderes ----------------------------------------------------------
+
+def powered(players: int = 3) -> HotPotato:
+    game = HotPotato.create([f"p{i}" for i in range(players)], questions(), set(), random.Random(1), now=0, powers=True)
+    game.advance(START_SECONDS)
+    return game
+
+
+def give(game: HotPotato, player_id: str, kind) -> None:
+    game.held[player_id] = [kind]
+
+
+def watcher(game: HotPotato) -> str:
+    return next(pid for pid in game.alive_ids() if pid != game.holder)
+
+
+def test_everyone_starts_with_one_power():
+    game = powered()
+    assert all(len(game.held[p.id]) == 1 for p in game.players)
+    assert game.view(0, [p.id for p in game.players], "p0").starting_powerup == game.held["p0"][0]
+
+
+def test_without_powers_nothing_is_dealt_and_using_fails():
+    game = new_game()
+    assert not game.held
+    with pytest.raises(HotPotatoError):
+        game.use(game.holder, "shield", game.phase_started_at)
+
+
+def test_helps_only_with_the_potato_and_sabotages_only_on_whoever_has_it():
+    game = powered()
+    other, t0 = watcher(game), game.phase_started_at
+    give(game, other, "shield")
+    with pytest.raises(HotPotatoError):
+        game.use(other, "shield", t0)
+    give(game, game.holder, "accelerator")
+    with pytest.raises(HotPotatoError):
+        game.use(game.holder, "accelerator", t0)
+    give(game, other, "accelerator")
+    game.use(other, "accelerator", t0)
+    assert game.uses[0].target == game.holder
+
+
+def test_shield_holds_the_next_wrong():
+    game = powered()
+    holder, t0 = game.holder, game.phase_started_at
+    give(game, holder, "shield")
+    game.use(holder, "shield", t0)
+    fuse = game.fuse_left
+    game.answer(holder, wrong(game), t0)
+    assert game.phase == "wrong" and game.turn.shielded
+    assert game.wrong_streak == 0 and game.fuse_left == pytest.approx(fuse)
+    assert holder not in game.shields
+
+
+def test_second_chance_lets_you_try_again_without_penalty():
+    game = powered()
+    holder, t0 = game.holder, game.phase_started_at
+    give(game, holder, "second_chance")
+    game.use(holder, "second_chance", t0)
+    first = wrong(game)
+    game.answer(holder, first, t0 + 1)
+    assert game.phase == "asking" and game.first_wrong == first and game.wrong_streak == 0
+    with pytest.raises(HotPotatoError):
+        game.answer(holder, first, t0 + 2)
+    game.answer(holder, (first + 1) % 4 if (first + 1) % 4 != right(game) else (first + 2) % 4, t0 + 2)
+    assert game.phase == "wrong" and game.wrong_streak == 1
+
+
+def test_cold_water_adds_ten_seconds_and_accelerator_burns_twice_as_fast():
+    game = powered()
+    holder, t0, total = game.holder, game.phase_started_at, game.fuse_total
+    give(game, holder, "cold_water")
+    game.use(holder, "cold_water", t0 + 5)
+    assert game.fuse_at(t0 + 5) == pytest.approx(total + 5)
+    other = watcher(game)
+    give(game, other, "accelerator")
+    game.use(other, "accelerator", t0 + 5)
+    assert game.fuse_at(t0 + 7) == pytest.approx(total + 5 - 4)
+    assert game.deadline() == pytest.approx(t0 + 5 + (total + 5) / 2)
+
+
+def test_reverse_flips_the_circle_and_free_pass_skips_the_question():
+    game = powered(players=4)
+    holder, t0 = game.holder, game.phase_started_at
+    ids = [p.id for p in game.players]
+    give(game, holder, "reverse")
+    game.use(holder, "reverse", t0)
+    give(game, holder, "free_pass")
+    game.use(holder, "free_pass", t0 + 1)
+    assert game.phase == "passing" and game.turn.free_pass and game.player(holder).correct == 0
+    game.advance(t0 + 1 + PASS_SECONDS)
+    assert game.holder == ids[(ids.index(holder) - 1) % 4]
+
+
+def test_flashbang_blinds_only_the_holder():
+    game = powered()
+    other = watcher(game)
+    give(game, other, "flashbang")
+    game.use(other, "flashbang", game.phase_started_at)
+    ids = [p.id for p in game.players]
+    assert game.view(0, ids, game.holder).flashbang
+    assert not game.view(0, ids, other).flashbang
+
+
+def test_one_sabotage_per_watcher_per_question():
+    game = powered(players=3)
+    other = watcher(game)
+    game.held[other] = ["mirror", "scramble"]
+    game.use(other, "mirror", game.phase_started_at)
+    with pytest.raises(HotPotatoError):
+        game.use(other, "scramble", game.phase_started_at)
+
+
+def test_three_right_in_a_row_earns_a_power():
+    game = powered(players=2)
+    holder = game.holder
+    game.held[holder] = []
+    for _ in range(3):
+        while game.holder != holder:
+            game.answer(game.holder, right(game), game.phase_started_at)
+            game.advance(game.phase_ends_at)
+        game.answer(holder, right(game), game.phase_started_at)
+        game.advance(game.phase_ends_at)
+    assert len(game.held[holder]) == 1
+
+
+def test_ghosts_get_a_sabotage_when_someone_explodes_and_can_resurrect():
+    game = powered(players=4)
+    first = game.holder
+    game.advance(game.deadline())  # o primeiro explode: ainda não tem fantasma antes dele
+    game.held[first] = []
+    game.advance(game.phase_ends_at)
+    game.advance(game.deadline())  # o segundo explode: o primeiro ganha uma sabotagem
+    assert len(game.held[first]) == 1 or game.mythics.get(first)
+    game.mythics[first] = ["resurrection"]
+    game.use(first, "resurrection", game.phase_started_at)
+    assert game.player(first).alive and first in game.revived

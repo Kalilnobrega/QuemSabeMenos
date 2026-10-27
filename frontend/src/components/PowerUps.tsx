@@ -196,6 +196,23 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'cold_water') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M12 2.5C8 8 5.5 11.5 5.5 15a6.5 6.5 0 0 0 13 0c0-3.5-2.5-7-6.5-12.5Z" fill="#7DD3FC" {...ICON_STROKE} />
+        <path d="M9 15.5a3 3 0 0 0 3 3" fill="none" stroke="#F8FAFC" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'free_pass') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2" y="6" width="20" height="12" rx="2.5" fill="#6EE7B7" {...ICON_STROKE} />
+        <path d="M7 12h8.5M13 9l3 3-3 3" fill="none" stroke="#12141B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M19 8.5v7" stroke="#12141B" strokeWidth="1.4" strokeDasharray="1.6 1.6" />
+      </svg>
+    )
+  }
   if (kind === 'scratch') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

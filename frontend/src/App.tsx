@@ -64,7 +64,7 @@ export default function App() {
 
   let content
   if (snapshot && room?.hot_potato) {
-    content = <HotPotato snapshot={snapshot} playerId={playerId} onAnswer={answer} onPlayAgain={playAgain} onLeave={leaveRoom} />
+    content = <HotPotato snapshot={snapshot} playerId={playerId} onAnswer={answer} onUse={usePowerUp} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.survival) {
     content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.game) {

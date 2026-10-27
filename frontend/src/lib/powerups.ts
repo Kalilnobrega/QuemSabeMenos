@@ -32,6 +32,8 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   duel: { name: 'X1', hint: 'Mítico: você chama alguém para um duelo quando a revelação acabar. Até 10 perguntas, cada vez mais rápidas; errou sozinho, perdeu. Quem perde paga 40% do QI a quem ganha, e a plateia aposta.', targeted: true, tone: 'bg-purple-500/15 text-purple-200' },
   decoy: { name: 'Alternativa falsa', hint: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha 10 de QI.', targeted: true, tone: 'bg-purple-400/15 text-purple-200' },
   flashbang: { name: 'Flashbang', hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.', targeted: true, tone: 'bg-yellow-100/15 text-yellow-50' },
+  cold_water: { name: 'Água fria', hint: 'Só na Batata quente: o pavio ganha +10s.', targeted: false, tone: 'bg-sky-300/15 text-sky-100' },
+  free_pass: { name: 'Passe livre', hint: 'Só na Batata quente: passa a batata sem responder.', targeted: false, tone: 'bg-emerald-400/15 text-emerald-200' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
@@ -59,6 +61,20 @@ export const SURVIVAL_HINTS: Partial<Record<Kind, string>> = {
 export const TRUE_FALSE_HINTS: Partial<Record<Kind, string>> = {
   ...SURVIVAL_HINTS,
   second_chance: 'Vale só na próxima pergunta: errou, tenta de novo.',
+}
+
+/** Batata quente: ajudas valem na hora para quem está com a batata; sabotagens, em quem está com ela. */
+export const POTATO_HINTS: Partial<Record<Kind, string>> = {
+  fifty_fifty: 'Tira duas alternativas erradas desta pergunta.',
+  shield: 'Seu próximo erro não tira pavio nem conta como erro seguido.',
+  second_chance: 'Se errar esta, tenta de novo sem perder pavio.',
+  reverse: 'A batata passa a girar no sentido contrário da roda.',
+  accelerator: 'O pavio de quem está com a batata queima 2x mais rápido nesta pergunta.',
+  scramble: 'A pergunta de quem está com a batata vem com as letras embaralhadas.',
+  mirror: 'A pergunta de quem está com a batata aparece espelhada.',
+  magnifier: 'A pergunta de quem está com a batata fica borrada: só dá para ler com a lupa.',
+  flashbang: 'Quem está com a batata fica cego: só vê as letras das alternativas nesta pergunta.',
+  resurrection: 'Mítico, só para fantasma: você volta para a roda.',
 }
 
 export function gainLabel(gain: PowerUpGain) {

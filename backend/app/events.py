@@ -20,6 +20,7 @@ PowerUp = Literal[
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
+    "cold_water", "free_pass",  # só na Batata quente
 ]
 GameMode = Literal["classic", "powers", "last_standing", "hot_potato"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "last_standing", "hot_potato")
@@ -375,10 +376,12 @@ class HotPotatoTurn(BaseModel):
     """A última resposta de quem está com a batata."""
 
     player_id: str
-    option: int
+    option: int | None  # None = Passe livre
     correct: bool
     correct_option: int
     elapsed_ms: int
+    free_pass: bool = False  # passou sem responder
+    shielded: bool = False  # errou, mas o Escudo segurou o pavio e a sequência de erros
 
 
 class HotPotatoPlayer(BaseModel):
@@ -414,6 +417,21 @@ class HotPotatoView(BaseModel):
     exploded: str | None
     winner: str | None
     players: list[HotPotatoPlayer]
+    direction: Literal[1, -1]  # 1 = sentido da roda; -1 = invertido
+    # Com poderes. Ajudas: só quem está com a batata usa, na hora. Sabotagens: quem assiste joga em
+    # quem está com a batata, valendo na pergunta atual.
+    powers: bool
+    powerups: list[PowerUp]
+    mythic_powerups: list[PowerUp]  # a Ressurreição dos fantasmas
+    powerup_max: int
+    starting_powerup: PowerUp | None
+    uses: list[PowerUpUse]  # poderes usados na pergunta atual
+    hidden_options: list[int]  # 50/50 (de quem está com a batata; todos veem)
+    first_wrong: int | None  # Segunda chance: a primeira escolha, errada
+    shielded: list[str]  # quem está com o Escudo armado
+    flashbang: bool  # Flashbang em você: só as letras das alternativas até a próxima pergunta
+    gifts: list[Gift]  # poderes ganhos agora (no acerto ou na explosão)
+    revived: list[str]  # quem ressuscitou desde a última pergunta
 
 
 class RoomState(BaseModel):

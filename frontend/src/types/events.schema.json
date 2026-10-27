@@ -26,7 +26,9 @@
             "decoy",
             "flashbang",
             "resurrection",
-            "duel"
+            "duel",
+            "cold_water",
+            "free_pass"
           ],
           "type": "string"
         },
@@ -483,7 +485,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -513,7 +517,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -543,7 +549,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -599,7 +607,9 @@
                 "decoy",
                 "flashbang",
                 "resurrection",
-                "duel"
+                "duel",
+                "cold_water",
+                "free_pass"
               ],
               "type": "string"
             },
@@ -835,7 +845,14 @@
           "type": "string"
         },
         "option": {
-          "type": "integer"
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "correct": {
           "type": "boolean"
@@ -845,6 +862,14 @@
         },
         "elapsed_ms": {
           "type": "integer"
+        },
+        "free_pass": {
+          "default": false,
+          "type": "boolean"
+        },
+        "shielded": {
+          "default": false,
+          "type": "boolean"
         }
       },
       "required": [
@@ -991,6 +1016,162 @@
             "$ref": "#/$defs/HotPotatoPlayer"
           },
           "type": "array"
+        },
+        "direction": {
+          "enum": [
+            1,
+            -1
+          ],
+          "type": "integer"
+        },
+        "powers": {
+          "type": "boolean"
+        },
+        "powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "cold_water",
+              "free_pass"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "mythic_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "cold_water",
+              "free_pass"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powerup_max": {
+          "type": "integer"
+        },
+        "starting_powerup": {
+          "anyOf": [
+            {
+              "enum": [
+                "fifty_fifty",
+                "shield",
+                "double",
+                "peek",
+                "extra_time",
+                "second_chance",
+                "reverse",
+                "backpack",
+                "theme",
+                "investment",
+                "scratch",
+                "steal",
+                "scramble",
+                "accelerator",
+                "mirror",
+                "silence",
+                "magnifier",
+                "toll",
+                "decoy",
+                "flashbang",
+                "resurrection",
+                "duel",
+                "cold_water",
+                "free_pass"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uses": {
+          "items": {
+            "$ref": "#/$defs/PowerUpUse"
+          },
+          "type": "array"
+        },
+        "hidden_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "first_wrong": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shielded": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "flashbang": {
+          "type": "boolean"
+        },
+        "gifts": {
+          "items": {
+            "$ref": "#/$defs/Gift"
+          },
+          "type": "array"
+        },
+        "revived": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -1013,7 +1194,20 @@
         "turn",
         "exploded",
         "winner",
-        "players"
+        "players",
+        "direction",
+        "powers",
+        "powerups",
+        "mythic_powerups",
+        "powerup_max",
+        "starting_powerup",
+        "uses",
+        "hidden_options",
+        "first_wrong",
+        "shielded",
+        "flashbang",
+        "gifts",
+        "revived"
       ],
       "title": "HotPotatoView",
       "type": "object"
@@ -1111,7 +1305,9 @@
             "decoy",
             "flashbang",
             "resurrection",
-            "duel"
+            "duel",
+            "cold_water",
+            "free_pass"
           ],
           "type": "string"
         },
@@ -1235,7 +1431,9 @@
             "decoy",
             "flashbang",
             "resurrection",
-            "duel"
+            "duel",
+            "cold_water",
+            "free_pass"
           ],
           "type": "string"
         },
@@ -1289,7 +1487,9 @@
             "decoy",
             "flashbang",
             "resurrection",
-            "duel"
+            "duel",
+            "cold_water",
+            "free_pass"
           ],
           "type": "string"
         },
@@ -1715,7 +1915,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -2058,7 +2260,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -2088,7 +2292,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -2118,7 +2324,9 @@
               "decoy",
               "flashbang",
               "resurrection",
-              "duel"
+              "duel",
+              "cold_water",
+              "free_pass"
             ],
             "type": "string"
           },
@@ -2152,7 +2360,9 @@
                 "decoy",
                 "flashbang",
                 "resurrection",
-                "duel"
+                "duel",
+                "cold_water",
+                "free_pass"
               ],
               "type": "string"
             },
@@ -2477,7 +2687,9 @@
             "decoy",
             "flashbang",
             "resurrection",
-            "duel"
+            "duel",
+            "cold_water",
+            "free_pass"
           ],
           "type": "string"
         }

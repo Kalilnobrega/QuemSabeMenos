@@ -1,30 +1,34 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import { useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { POTATO_HINTS, POWERUP_INFO, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import type { HotPotatoView, PlayerView } from '../types/events'
+import type { HotPotatoView, PlayerView, PowerUpUse } from '../types/events'
 import { LeaveButton } from './LeaveButton'
+import { Magnifier, PowerUpIcon } from './PowerUps'
 import { Spotlight } from './Survival'
 
 const LETTERS = ['A', 'B', 'C', 'D']
+const HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass']
 
 interface Props {
   snapshot: Snapshot
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
+  onUse: (kind: Kind) => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
 /** Batata quente: quem está com a batata responde; acertou, passa; o pavio é segredo. */
-export function HotPotato({ snapshot, playerId, onAnswer, onPlayAgain, onLeave }: Props) {
+export function HotPotato({ snapshot, playerId, onAnswer, onUse, onPlayAgain, onLeave }: Props) {
   const potato = snapshot.room.hot_potato!
   if (potato.phase === 'starting') return <PotatoStart snapshot={snapshot} />
   if (potato.phase === 'finished') return <PotatoPodium snapshot={snapshot} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
-  return <PotatoRound snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} />
+  return <PotatoRound snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onUse={onUse} />
 }
 
 function PotatoIcon({ heat = 0, className }: { heat?: number; className?: string }) {
@@ -75,6 +79,12 @@ function PotatoStart({ snapshot }: { snapshot: Snapshot }) {
           O pavio é segredo: dura de {low} a {high}s.
         </li>
       </ul>
+      {potato.starting_powerup && (
+        <p className="intro-step flex items-center gap-2 rounded-xl bg-panel px-3 py-2 font-semibold" style={{ animationDelay: '0.7s' }}>
+          <PowerUpIcon kind={potato.starting_powerup} className="size-6" />
+          Seu poder: {POWERUP_INFO[potato.starting_powerup].name}
+        </p>
+      )}
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {room.players.map((player, index) => (
           <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
@@ -101,7 +111,7 @@ function useHeat(snapshot: Snapshot) {
   return Math.min(1, potato.heat + potato.burn_per_second * elapsed)
 }
 
-function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; playerId: string | null; onAnswer: Props['onAnswer'] }) {
+function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapshot; playerId: string | null; onAnswer: Props['onAnswer']; onUse: Props['onUse'] }) {
   const { room } = snapshot
   const potato = room.hot_potato!
   const heat = useHeat(snapshot)
@@ -110,9 +120,28 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
   const name = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
   const mine = potato.holder === playerId
   const questionKey = `${potato.round}-${potato.text}`
-  const picked = choice?.key === questionKey ? choice.option : null
+  const retry = potato.first_wrong
+  const picked = choice?.key === questionKey && choice.option !== retry ? choice.option : null
   const canAnswer = potato.phase === 'asking' && mine && picked === null
   const turn = potato.turn
+
+  // Sabotagens só aparecem para quem está com a batata; quem assiste lê a pergunta limpa.
+  const hits = (kind: Kind) => mine && potato.phase === 'asking' && potato.uses.some((u) => u.kind === kind && u.target === playerId)
+  const blinded = potato.flashbang && potato.phase === 'asking'
+  const mirrored = hits('mirror') ? '-scale-x-100' : ''
+  const scrambled = hits('scramble')
+  const hitCount = potato.uses.filter((u) => u.target === playerId).length
+  useEffect(() => {
+    if (hitCount) playSound('powerHit')
+  }, [hitCount])
+  useEffect(() => {
+    if (!blinded) return
+    playSound('flashbang')
+    vibrate([250, 80, 350])
+  }, [blinded])
+  useEffect(() => {
+    if (potato.revived.length) playSound('resurrection')
+  }, [potato.revived.length])
 
   useEffect(() => {
     if (potato.phase === 'asking' && mine) {
@@ -135,7 +164,7 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
   }, [sizzle])
 
   const pick = async (option: number) => {
-    if (!canAnswer) return
+    if (!canAnswer || potato.hidden_options.includes(option) || option === retry) return
     playSound('select')
     setChoice({ key: questionKey, option })
     const failure = await onAnswer(option)
@@ -151,8 +180,12 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
 
   let status
   if (potato.phase === 'exploded') status = <span className="text-red-300">{potato.exploded === playerId ? 'Explodiu na sua mão! Você está fora.' : `Explodiu na mão de ${name(potato.exploded)}!`}</span>
+  else if (potato.phase === 'passing' && turn?.free_pass) status = <span className="text-emerald-300">{turn.player_id === playerId ? 'Passe livre! Nem precisou responder.' : `${name(turn.player_id)} usou Passe livre!`}</span>
   else if (potato.phase === 'passing') status = <span className="text-emerald-300">{turn?.player_id === playerId ? 'Acertou! Passou a batata.' : `${name(turn?.player_id)} acertou e passou!`}</span>
+  else if (potato.phase === 'wrong' && turn?.shielded) status = <span className="text-sky-300">{turn.player_id === playerId ? 'Errou, mas o Escudo segurou!' : `${name(turn.player_id)} errou, mas o Escudo segurou!`}</span>
   else if (potato.phase === 'wrong') status = <span className="text-red-300">{turn?.player_id === playerId ? `Errou! O pavio perdeu ${potato.penalty_seconds}s.` : `${name(turn?.player_id)} errou! −${potato.penalty_seconds}s de pavio.`}</span>
+  else if (mine && blinded) status = 'Flashbang! Agora é chutar pela letra.'
+  else if (mine && retry !== null) status = 'Errou! Segunda chance: tente de novo.'
   else status = mine ? 'Rápido! Acerta e passa!' : `Vez de ${name(potato.holder)}. Torça ou reze.`
 
   const showQuestion = potato.phase !== 'exploded' && potato.text
@@ -160,10 +193,13 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
     <section className="flex w-full flex-col gap-4">
       <header className="flex items-center justify-between text-sm font-semibold text-steel">
         <span>Rodada {potato.round}</span>
-        <span>{alive.length} na roda</span>
+        <span>
+          {potato.direction === -1 && <span className="mr-2 text-red-300" title="Roda invertida">⟲ invertida</span>}
+          {alive.length} na roda
+        </span>
       </header>
 
-      <Ring players={room.players} alive={alive.map((p) => p.player_id)} holder={potato.phase === 'exploded' ? potato.exploded : potato.holder} heat={heat} exploded={potato.phase === 'exploded'} playerId={playerId} />
+      <Ring players={room.players} alive={alive.map((p) => p.player_id)} holder={potato.phase === 'exploded' ? potato.exploded : potato.holder} heat={heat} exploded={potato.phase === 'exploded'} shielded={potato.shielded} playerId={playerId} />
 
       <div className="flex items-center justify-center gap-1.5" aria-label={`${potato.wrong_streak} de ${potato.max_wrong_streak} erros seguidos`}>
         {Array.from({ length: potato.max_wrong_streak }, (_, i) => (
@@ -175,14 +211,20 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
 
       <p className="min-h-7 text-center font-hand text-xl font-medium">{status}</p>
 
+      {potato.uses.length > 0 && <PotatoUses uses={potato.uses} name={name} playerId={playerId} />}
+      {blinded && <div className="flashbang-flash" aria-hidden="true" />}
+
       {showQuestion && (
-        <>
-          <h1 className="text-[1.3rem] leading-snug font-bold">{potato.text}</h1>
+        <Magnifier active={hits('magnifier') && !blinded}>
+          <h1 className={`text-[1.3rem] leading-snug font-bold ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(potato.text ?? '', potato.round) : potato.text}</h1>
           {/* key: cada pergunta nova monta os botões do zero, sem herdar a cor da anterior. */}
           <div key={questionKey} className="grid auto-rows-fr grid-cols-2 gap-3">
             {potato.options.map((option, index) => {
               const shown = turn && potato.phase !== 'asking'
-              const state = shown
+              const gone = potato.hidden_options.includes(index) || index === retry
+              const state = gone && !shown
+                ? `btn-dark opacity-25 ${index === retry ? 'line-through' : ''}`
+                : shown
                 ? index === turn.correct_option
                   ? 'btn-correct text-white'
                   : index === turn.option
@@ -197,17 +239,19 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
                 <button
                   key={index}
                   onClick={() => void pick(index)}
-                  disabled={!canAnswer}
+                  disabled={!canAnswer || gone}
                   className={`btn-3d btn-sm flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${state}`}
                 >
                   <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
-                  <span className="min-w-0 [overflow-wrap:anywhere]">{option}</span>
+                  <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(option, potato.round * 7 + index + 1) : option}</span>
                 </button>
               )
             })}
           </div>
-        </>
+        </Magnifier>
       )}
+
+      {potato.powers && <PotatoPowers potato={potato} playerId={playerId} onUse={onUse} />}
 
       {out.length > 0 && (
         <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-steel">
@@ -223,8 +267,142 @@ function PotatoRound({ snapshot, playerId, onAnswer }: { snapshot: Snapshot; pla
   )
 }
 
+/** O que foi usado nesta pergunta: quem jogou o quê em quem. */
+function PotatoUses({ uses, name, playerId }: { uses: PowerUpUse[]; name: (id: string | null | undefined) => string; playerId: string | null }) {
+  const line = (use: PowerUpUse) => {
+    const info = POWERUP_INFO[use.kind]
+    const by = name(use.by)
+    if (use.target === playerId) return `${by} jogou ${info.name} em você!`
+    if (use.target) return `${by} jogou ${info.name} em ${name(use.target)}!`
+    const extra: Partial<Record<Kind, string>> = {
+      cold_water: ': +10s de pavio',
+      fifty_fifty: ': duas erradas saíram',
+      shield: ': o próximo erro não conta',
+      second_chance: ': errou, tenta de novo',
+      reverse: ': a roda inverteu',
+    }
+    return `${by} usou ${info.name}${extra[use.kind] ?? ''}!`
+  }
+  return (
+    <ul className="flex flex-col gap-1" aria-label="Poderes nesta pergunta">
+      {uses.map((use) => (
+        <li key={`${use.by}-${use.kind}`} className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1 text-sm font-semibold ${POWERUP_INFO[use.kind].tone}`}>
+          <PowerUpIcon kind={use.kind} className="size-5 shrink-0" />
+          <span className="min-w-0">{line(use)}</span>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+/** Os poderes na mão: ajudas com a batata na mão, sabotagens em quem está com ela; vale na hora. */
+function PotatoPowers({ potato, playerId, onUse }: { potato: HotPotatoView; playerId: string | null; onUse: Props['onUse'] }) {
+  const [error, setError] = useState<string | null>(null)
+  const [busy, setBusy] = useState(false)
+  const [gift, setGift] = useState<string | null>(null)
+  const timer = useRef<number | undefined>(undefined)
+  const me = potato.players.find((p) => p.player_id === playerId)
+  const ghost = !!me && me.out_round !== null
+  const mine = potato.holder === playerId
+  const asking = potato.phase === 'asking'
+  const threw = potato.uses.some((u) => u.by === playerId && !HELPS.includes(u.kind))
+  const myGifts = potato.gifts.filter((g) => g.player_id === playerId)
+  const giftKey = myGifts.map((g) => g.gain.kind).join(',')
+
+  useEffect(() => {
+    if (!giftKey) return
+    playSound('powerArm')
+    setGift(myGifts.map((g) => `Você ${gainLabel(g.gain)}`).join(' '))
+    window.clearTimeout(timer.current)
+    timer.current = window.setTimeout(() => setGift(null), 3500)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [giftKey, potato.round])
+  useEffect(() => () => window.clearTimeout(timer.current), [])
+
+  const usable = (kind: Kind) => {
+    if (busy || !asking || potato.uses.some((u) => u.kind === kind)) return false
+    if (HELPS.includes(kind)) return mine && !(kind === 'shield' && potato.shielded.includes(playerId ?? '')) && !(kind === 'second_chance' && potato.first_wrong !== null)
+    return !mine && !threw
+  }
+  const use = async (kind: Kind) => {
+    playSound(kind === 'resurrection' ? 'resurrection' : 'powerArm')
+    setBusy(true)
+    setError(await onUse(kind))
+    setBusy(false)
+  }
+
+  const hand = potato.powerups
+  const note = ghost
+    ? 'Fantasma: sabote quem está com a batata. Cada explosão te dá uma sabotagem.'
+    : mine
+      ? 'Ajudas valem na hora. 3 acertos seguidos dão mais um poder.'
+      : 'Sabotagens pegam quem está com a batata, nesta pergunta.'
+  return (
+    <div className="flex flex-col gap-1.5 rounded-xl bg-panel px-3 py-2.5">
+      {gift && <p className="avatar-pop text-sm font-semibold text-brand">{gift}</p>}
+      {hand.length === 0 && potato.mythic_powerups.length === 0 ? (
+        <p className="text-sm text-steel">{ghost ? 'Sem sabotagens. Espere a próxima explosão.' : 'Sem poderes. Acerte 3 seguidas para ganhar um.'}</p>
+      ) : (
+        <div className="flex flex-wrap gap-2">
+          {potato.mythic_powerups.map((kind, index) => (
+            <button
+              key={`mythic-${kind}-${index}`}
+              onClick={() => void use(kind)}
+              disabled={busy || !ghost}
+              title={POTATO_HINTS[kind] ?? POWERUP_INFO[kind].hint}
+              className="btn-3d btn-sm mythic mythic-pulse flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold"
+            >
+              <PowerUpIcon kind={kind} className="size-6" />
+              <span className="flex flex-col text-left leading-tight">
+                {POWERUP_INFO[kind].name}
+                <span className="text-[0.65rem] font-bold tracking-wide uppercase">Voltar para a roda</span>
+              </span>
+            </button>
+          ))}
+          {hand.map((kind, index) => {
+            const ok = usable(kind)
+            return (
+              <button
+                key={`${kind}-${index}`}
+                onClick={() => void use(kind)}
+                disabled={!ok}
+                title={POTATO_HINTS[kind] ?? POWERUP_INFO[kind].hint}
+                className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${ok ? '' : 'opacity-40'}`}
+              >
+                <PowerUpIcon kind={kind} className="size-6" />
+                <span className="flex flex-col text-left leading-tight">
+                  {POWERUP_INFO[kind].name}
+                  <span className="text-[0.65rem] font-normal text-steel">{HELPS.includes(kind) ? 'ajuda' : 'sabotagem'}</span>
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      )}
+      <p className="text-xs text-steel">{note}</p>
+      {error && <p className="text-sm text-red-300">{error}</p>}
+    </div>
+  )
+}
+
 /** A roda: os vivos em círculo e a batata voando até quem está com ela. */
-function Ring({ players, alive, holder, heat, exploded, playerId }: { players: PlayerView[]; alive: string[]; holder: string | null; heat: number; exploded: boolean; playerId: string | null }) {
+function Ring({
+  players,
+  alive,
+  holder,
+  heat,
+  exploded,
+  shielded,
+  playerId,
+}: {
+  players: PlayerView[]
+  alive: string[]
+  holder: string | null
+  heat: number
+  exploded: boolean
+  shielded: string[]
+  playerId: string | null
+}) {
   const seats = players.filter((p) => alive.includes(p.id) || p.id === holder)
   const spot = (i: number) => {
     const angle = (i / seats.length) * 2 * Math.PI - Math.PI / 2
@@ -240,7 +418,10 @@ function Ring({ players, alive, holder, heat, exploded, playerId }: { players: P
         const { left, top } = spot(i)
         return (
           <div key={p.id} className="absolute flex w-16 -translate-x-1/2 -translate-y-1/2 flex-col items-center" style={{ left: `${left}%`, top: `${top}%` }}>
-            <img src={AVATAR_URLS[p.avatar]} alt="" className={`size-12 ${p.id === holder ? 'drop-shadow-[0_0_10px_rgba(255,120,0,0.9)]' : ''}`} />
+            <span className="relative">
+              <img src={AVATAR_URLS[p.avatar]} alt="" className={`size-12 ${p.id === holder ? 'drop-shadow-[0_0_10px_rgba(255,120,0,0.9)]' : ''}`} />
+              {shielded.includes(p.id) && <PowerUpIcon kind="shield" className="absolute -right-1 -bottom-1 size-5" />}
+            </span>
             <span className={`w-full truncate text-center text-xs font-semibold ${p.id === holder ? 'text-brand' : ''}`}>{p.id === playerId ? 'Você' : p.nickname}</span>
           </div>
         )

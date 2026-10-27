@@ -90,7 +90,7 @@ class Room:
     status: Literal["lobby", "playing"] = "lobby"
     mode: GameMode = "classic"
     survival_kind: SurvivalKind = "true_false"
-    survival_powers: bool = False
+    survival_powers: bool = False  # Último de pé e Batata quente com poderes
     powerup_max: int = MAX_HELD
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
@@ -138,7 +138,7 @@ class Room:
             players=[self._player_view(p, viewer) for p in self.players],
             game=self.game.view(now, viewer) if self.game else None,
             survival=self.survival.view(now, viewer, [p.id for p in self.players]) if self.survival else None,
-            hot_potato=self.hot_potato.view(now, [p.id for p in self.players]) if self.hot_potato else None,
+            hot_potato=self.hot_potato.view(now, [p.id for p in self.players], viewer) if self.hot_potato else None,
         )
 
 
@@ -315,7 +315,10 @@ class RoomManager:
         bank = [q for q in self.bank if q.theme in room.themes]
         room.status = "playing"
         if room.mode == "hot_potato":
-            room.hot_potato = HotPotato.create([p.id for p in room.players], bank, room.used_questions, self.rng, now)
+            room.hot_potato = HotPotato.create(
+                [p.id for p in room.players], bank, room.used_questions, self.rng, now,
+                powers=room.survival_powers, powerup_max=room.powerup_max,
+            )
             return room
         if room.mode == "last_standing":
             pool = statements if room.survival_kind == "true_false" else bank
@@ -386,6 +389,8 @@ class RoomManager:
         self, sid: str, kind: PowerUp, target: str | None, legendary: bool = False, theme: str | None = None
     ) -> Room:
         room, player = self._playing(sid)
+        if room.hot_potato:
+            raise RoomError("Na Batata quente as habilidades valem na hora.")
         if room.survival:
             return self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
         try:
@@ -409,8 +414,14 @@ class RoomManager:
             raise RoomError(str(e)) from e
         return room
 
-    def use_powerup(self, sid: str, kind: PowerUp) -> Room:
+    def use_powerup(self, sid: str, kind: PowerUp, now: float | None = None) -> Room:
         room, player = self._playing(sid)
+        if room.hot_potato:
+            try:
+                room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now)
+            except HotPotatoError as e:
+                raise RoomError(str(e)) from e
+            return room
         if room.survival:
             return self._on_survival(room, lambda s: s.use_now(player.id, kind))
         try:
@@ -422,6 +433,8 @@ class RoomManager:
     def ready(self, sid: str) -> Room:
         """Pular a revelação: acaba antes quando todos os conectados tocam."""
         room, player = self._playing(sid)
+        if room.hot_potato:
+            raise RoomError("Não tem revelação para pular.")
         if room.survival:
             return self._on_survival(room, lambda s: s.mark_ready(player.id))
         try:
@@ -432,7 +445,7 @@ class RoomManager:
 
     def _playing(self, sid: str) -> tuple[Room, Player]:
         found = self.session(sid)
-        if not found or not (found[0].game or found[0].survival):
+        if not found or not (found[0].game or found[0].survival or found[0].hot_potato):
             raise RoomError("Não tem partida rolando.")
         return found
 
