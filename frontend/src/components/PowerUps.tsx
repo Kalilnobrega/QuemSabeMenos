@@ -163,9 +163,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'duel') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M3 3h4l10 10-2 2L5 5V3Z" fill="#E9D5FF" {...ICON_STROKE} />
-        <path d="M21 3h-4L7 13l2 2L19 5V3Z" fill="#C084FC" {...ICON_STROKE} />
-        <path d="m5 15 4 4M15 19l4-4M4.5 19.5l2-2M19.5 19.5l-2-2" {...ICON_STROKE} strokeWidth={2.2} />
+        <path d="M3 3 6.5 4 16 13.5 13.5 16 4 6.5Z" fill="#E9D5FF" {...ICON_STROKE} />
+        <path d="M21 3 17.5 4 8 13.5 10.5 16 20 6.5Z" fill="#C084FC" {...ICON_STROKE} />
+        <path d="m13 18 5-5M11 18l-5-5M16.5 16.5l3 3M7.5 16.5l-3 3" {...ICON_STROKE} strokeWidth={2.2} />
       </svg>
     )
   }
