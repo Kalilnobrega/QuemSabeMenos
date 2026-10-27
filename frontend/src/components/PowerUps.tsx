@@ -528,12 +528,12 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
     body = game.armed.legendary ? (
       <p className="legendary flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
-        {info.name} LENDÁRIO armado em todo mundo para a próxima!
+        Na próxima: {info.name} LENDÁRIO em todo mundo!
       </p>
     ) : (
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
-        {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `${info.name} armado${target ? ` em ${target.nickname}` : ''} para a próxima!`}
+        {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `Na próxima: ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
       </p>
     )
   } else if (selected?.mythic) {
