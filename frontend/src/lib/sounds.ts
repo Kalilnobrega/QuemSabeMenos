@@ -29,6 +29,7 @@ export const SOUND_ENABLED = {
   perfectEasy: true,
   rankingSwish: true,
   flashbang: true,
+  potatoBoom: true,
   podiumWinner: true,
   podiumLoser: true,
   skip: true,
@@ -74,6 +75,7 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   streakIce: { group: 'Revelação', name: 'Gelo rachando', moment: 'Alguém faz uma sequência de erros' },
   perfectEasy: { group: 'Revelação', name: 'Brilho de estrela', moment: 'Alguém gabarita as fáceis' },
   flashbang: { group: 'Pergunta', name: 'Estouro e zumbido', moment: 'A Flashbang estoura em você' },
+  potatoBoom: { group: 'Batata quente', name: 'Chiado, BUM e cacos caindo', moment: 'A batata explode na mão de alguém' },
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
   podiumWinner: { group: 'Pódio', name: 'Fanfarra de vitória', moment: 'O pódio aparece, com o vencedor' },
   podiumLoser: { group: 'Pódio', name: 'Trombone triste (uá-uá-uá)', moment: 'Logo depois, para quem sabe menos' },
@@ -320,6 +322,16 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
     noise({ dur: 0.45, filter: 'lowpass', freq: 3000, to: 400, gain: 0.7 })
     tone(90, { dur: 0.35, to: 35, gain: 0.7 })
     tone(3800, { at: 0.2, dur: 2.8, gain: 0.035 })
+  },
+  potatoBoom: () => {
+    // Pavio chiando no fim, o estouro grave que vai abafando e os pedaços caindo depois.
+    noise({ dur: 0.18, filter: 'highpass', freq: 4000, to: 7000, gain: 0.08 })
+    noise({ at: 0.16, dur: 1.4, filter: 'lowpass', freq: 2400, to: 90, gain: 0.85 })
+    tone(110, { at: 0.16, dur: 0.6, to: 28, gain: 0.8 })
+    tone(55, { at: 0.18, dur: 0.9, to: 22, type: 'triangle', gain: 0.5 })
+    ;[0.42, 0.5, 0.61, 0.69, 0.83, 0.97, 1.12].forEach((at, i) =>
+      noise({ at, dur: 0.03, freq: 1800 + (i % 3) * 900, q: 4, gain: 0.14 - i * 0.012 }),
+    )
   },
   rankingSwish: () => noise({ dur: 0.35, freq: 2500, to: 600, q: 1.5, gain: 0.12 }),
   podiumWinner: () => {

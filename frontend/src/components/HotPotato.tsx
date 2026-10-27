@@ -153,7 +153,7 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
     if (potato.phase === 'passing') playSound(turn?.player_id === playerId ? 'correct' : 'skip')
     if (potato.phase === 'wrong') playSound('wrong')
     if (potato.phase === 'exploded') {
-      playSound('flashbang')
+      playSound('potatoBoom')
       vibrate([300, 80, 400])
     }
   }, [potato.phase, turn?.player_id, playerId])
