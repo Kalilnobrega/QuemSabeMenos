@@ -793,7 +793,10 @@ interface SummaryProps {
 
 function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
-  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked]))
+  const deltas: Record<string, number> = Object.fromEntries(
+    game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked]),
+  )
+  for (const revival of game.revivals) deltas[revival.player_id] = (deltas[revival.player_id] ?? 0) + revival.after - revival.before
   const bets = game.results.filter((r) => r.bet)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
   const powerupLines = powerupEvents(room, game, playerId)
@@ -834,10 +837,10 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
       <PowerUpBar powers={room.settings.mode === 'powers'} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
       {powerupLines.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Habilidades">
-          {powerupLines.map(({ key, kind, player, text, delta, me, legendary }, index) => (
+          {powerupLines.map(({ key, kind, player, text, delta, me, legendary, mythic }, index) => (
             <li
               key={key}
-              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${legendary ? 'legendary' : POWERUP_INFO[kind].tone} ${me && !legendary ? 'ring-1 ring-brand/60' : ''}`}
+              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${legendary ? 'legendary' : mythic ? 'mythic' : POWERUP_INFO[kind].tone} ${me && !legendary && !mythic ? 'ring-1 ring-brand/60' : ''}`}
               style={{ animationDelay: `${0.4 + index * 0.12}s` }}
             >
               {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
@@ -916,7 +919,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
 /** Linhas da revelação: escudos que seguraram, roubos e habilidades ganhas. */
 function powerupEvents(room: RoomState, game: GameView, playerId: string | null) {
   const who = (id: string | null) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
-  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean; legendary?: boolean }[] = []
+  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean; legendary?: boolean; mythic?: boolean }[] = []
   const mine = game.results.find((r) => r.player_id === playerId)
   for (const result of game.results) {
     const player = room.players.find((p) => p.id === result.player_id)
@@ -979,8 +982,20 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       lines.push({ key: `${result.player_id}-toll`, kind: 'toll', player, text: `${who(result.player_id)} recebeu ${result.toll_received} de Pedágio!`, delta: me ? result.toll_received : null, me })
     }
     if (result.gained) {
-      lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary })
+      lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary, mythic: result.gained.mythic })
     }
+  }
+  for (const revival of game.revivals) {
+    const me = revival.player_id === playerId
+    lines.push({
+      key: `${revival.player_id}-revival`,
+      kind: 'resurrection',
+      player: room.players.find((p) => p.id === revival.player_id),
+      text: `${who(revival.player_id)} usou a Ressurreição: de ${formatScore(revival.before)} para ${formatScore(revival.after)} de QI!`,
+      delta: me ? revival.after - revival.before : null,
+      me,
+      mythic: true,
+    })
   }
   return lines
 }

@@ -515,7 +515,7 @@ def test_gains_can_be_legendary_attacks_more_often_for_the_far_behind_last():
         play(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 1})
     gains = {r.player_id: r.gained for r in game.results}
     assert gains["ana"] == PowerUpGain(kind="accelerator", reason="streak", legendary=True)
-    assert gains["caio"] == PowerUpGain(kind="accelerator", reason="comeback", legendary=True)
+    assert gains["caio"] == PowerUpGain(kind="resurrection", reason="comeback", mythic=True)  # o mítico vem antes
     assert game.legendaries["ana"] == ["accelerator"] and game.powerups["ana"] == []
     assert game.view(now=0, viewer="ana").legendary_powerups == ["accelerator"]
 
@@ -1037,3 +1037,31 @@ def test_flashbang_hits_only_the_target_and_legendary_hits_everyone_else():
     game.arm("ana", "flashbang", None, ["ana", "bia", "caio"], legendary=True)
     game.start_round(now=0)
     assert [game.view(now=0, viewer=p).flashbang for p in ("ana", "bia", "caio")] == [False, True, True]
+
+
+def test_resurrection_jumps_the_last_right_behind_the_one_ahead():
+    game, ana, bia = armed_game(4)
+    caio = P("caio", 10)
+    ana.score, bia.score = 100, 60
+    game.mythics = {"caio": ["resurrection"]}
+    game.resurrect(caio, [ana, bia, caio])
+    assert caio.score == 59 and game.view(now=20, viewer="ana").revivals[0].after == 59
+    game.mythics = {"bia": ["resurrection"]}
+    with pytest.raises(GameError, match="último"):
+        game.resurrect(bia, [ana, bia, caio])
+
+
+def test_resurrection_with_two_players_lands_ten_behind_the_leader():
+    game, ana, bia = armed_game(4)
+    ana.score, bia.score = 100, 20
+    game.mythics = {"bia": ["resurrection"]}
+    game.resurrect(bia, [ana, bia])
+    assert bia.score == 90
+
+
+def test_resurrection_breaks_when_the_player_leaves_last_place():
+    game, ana, bia = armed_game(4)
+    ana.score, bia.score = 40, 30
+    game.mythics = {"bia": ["resurrection"]}
+    reveal(game, [ana, bia], {"ana": 1, "bia": 0})  # ana erra (-10), bia acerta: bia passa
+    assert game.mythics["bia"] == [] and "resurrection" in game.results[1].expired

@@ -22,6 +22,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   mirror: { name: 'Espelho', hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.', targeted: true, tone: 'bg-cyan-400/15 text-cyan-200' },
   magnifier: { name: 'Lupa', hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.', targeted: true, tone: 'bg-yellow-200/15 text-yellow-100' },
   toll: { name: 'Pedágio', hint: 'Cada alternativa do alvo ganha um preço de 3 a 8 de QI, e responder paga para você. Sem responder, paga o menor.', targeted: true, tone: 'bg-rose-400/15 text-rose-200' },
+  resurrection: { name: 'Ressurreição', hint: 'Mítico, só para o lanterna. Na revelação, você pula para 1 de QI atrás de quem está na sua frente (10 atrás do 1º, com 2 jogadores). Se sair do último antes de usar, quebra.', targeted: false, tone: 'bg-purple-500/15 text-purple-200' },
   decoy: { name: 'Alternativa falsa', hint: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha 10 de QI.', targeted: true, tone: 'bg-purple-400/15 text-purple-200' },
   flashbang: { name: 'Flashbang', hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.', targeted: true, tone: 'bg-yellow-100/15 text-yellow-50' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
@@ -34,7 +35,8 @@ const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
 }
 
 export function gainLabel(gain: PowerUpGain) {
-  const name = gain.legendary ? `${POWERUP_INFO[gain.kind].name} LENDÁRIO` : POWERUP_INFO[gain.kind].name
+  const info = POWERUP_INFO[gain.kind]
+  const name = gain.mythic ? `${info.name} MÍTICO` : gain.legendary ? `${info.name} LENDÁRIO` : info.name
   return `ganhou ${name} (${GAIN_REASON[gain.reason]})!`
 }
 

@@ -160,6 +160,15 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'resurrection') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M12 21C7 17.5 3 14 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4.5-4 8-9 11.5Z" fill="#C084FC" {...ICON_STROKE} />
+        <path d="M2 6.5 4.5 8M22 6.5 19.5 8M12 1.5V4" stroke="#F0ABFC" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M12 9.5v6M9 12.5h6" stroke="#F8FAFC" strokeWidth="2.2" strokeLinecap="round" />
+      </svg>
+    )
+  }
   if (kind === 'decoy') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -480,7 +489,7 @@ interface BarProps {
 }
 
 export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: BarProps) {
-  const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean } | null>(null)
+  const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean; mythic?: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [skipped, setSkipped] = useState(false)
   const connected = players.filter((p) => p.connected)
@@ -517,6 +526,26 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
         {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `${info.name} armado${target ? ` em ${target.nickname}` : ''} para a próxima!`}
       </p>
+    )
+  } else if (selected?.mythic) {
+    const info = POWERUP_INFO[selected.kind]
+    body = (
+      <div className="flex flex-col gap-2">
+        <p className="flex items-center gap-2 text-sm">
+          <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
+          <span>
+            <span className="font-bold text-purple-300">{info.name} MÍTICO:</span> {info.hint}
+          </span>
+        </p>
+        <div className="flex gap-2">
+          <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg">
+            Usar agora
+          </button>
+          <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
+            Cancelar
+          </button>
+        </div>
+      </div>
     )
   } else if (selected?.legendary) {
     const info = POWERUP_INFO[selected.kind]
@@ -593,7 +622,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         </div>
       </div>
     )
-  } else if (game.powerups.length === 0 && game.legendary_powerups.length === 0) {
+  } else if (game.powerups.length === 0 && game.legendary_powerups.length === 0 && game.mythic_powerups.length === 0) {
     body = <p className="text-sm text-steel">Sem habilidades. Acerte 3 seguidas para ganhar uma.</p>
   } else {
     body = (
@@ -628,6 +657,22 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
               </button>
             ),
           )}
+          {game.mythic_powerups.map((kind, index) => (
+            <button
+              key={`mythic-${kind}-${index}`}
+              onClick={() => {
+                playSound('select')
+                setSelected({ kind, legendary: false, mythic: true })
+              }}
+              className="btn-3d btn-sm mythic mythic-pulse flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold"
+            >
+              <PowerUpIcon kind={kind} className="size-6" />
+              <span className="flex flex-col text-left leading-tight">
+                {POWERUP_INFO[kind].name}
+                <span className="text-[0.65rem] font-bold tracking-wide uppercase">Mítico</span>
+              </span>
+            </button>
+          ))}
           {game.legendary_powerups.map((kind, index) => (
             <button
               key={`legendary-${kind}-${index}`}

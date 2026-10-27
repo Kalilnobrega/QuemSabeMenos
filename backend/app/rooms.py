@@ -331,7 +331,10 @@ class RoomManager:
     ) -> Room:
         room, player = self._playing(sid)
         try:
-            room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
+            if kind == "resurrection":
+                room.game.resurrect(player, room.players)
+            else:
+                room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
         except GameError as e:
             raise RoomError(str(e)) from e
         return room

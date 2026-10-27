@@ -24,7 +24,8 @@
             "magnifier",
             "toll",
             "decoy",
-            "flashbang"
+            "flashbang",
+            "resurrection"
           ],
           "type": "string"
         },
@@ -252,7 +253,8 @@
               "magnifier",
               "toll",
               "decoy",
-              "flashbang"
+              "flashbang",
+              "resurrection"
             ],
             "type": "string"
           },
@@ -280,9 +282,45 @@
               "magnifier",
               "toll",
               "decoy",
-              "flashbang"
+              "flashbang",
+              "resurrection"
             ],
             "type": "string"
+          },
+          "type": "array"
+        },
+        "mythic_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "revivals": {
+          "items": {
+            "$ref": "#/$defs/Revival"
           },
           "type": "array"
         },
@@ -312,7 +350,8 @@
                 "magnifier",
                 "toll",
                 "decoy",
-                "flashbang"
+                "flashbang",
+                "resurrection"
               ],
               "type": "string"
             },
@@ -456,6 +495,8 @@
         "bets_placed",
         "powerups",
         "legendary_powerups",
+        "mythic_powerups",
+        "revivals",
         "powerup_max",
         "starting_powerup",
         "can_arm",
@@ -570,7 +611,8 @@
             "magnifier",
             "toll",
             "decoy",
-            "flashbang"
+            "flashbang",
+            "resurrection"
           ],
           "type": "string"
         },
@@ -692,7 +734,8 @@
             "magnifier",
             "toll",
             "decoy",
-            "flashbang"
+            "flashbang",
+            "resurrection"
           ],
           "type": "string"
         },
@@ -705,6 +748,10 @@
           "type": "string"
         },
         "legendary": {
+          "default": false,
+          "type": "boolean"
+        },
+        "mythic": {
           "default": false,
           "type": "boolean"
         }
@@ -739,7 +786,8 @@
             "magnifier",
             "toll",
             "decoy",
-            "flashbang"
+            "flashbang",
+            "resurrection"
           ],
           "type": "string"
         },
@@ -838,6 +886,27 @@
         "token"
       ],
       "title": "RejoinRoomRequest",
+      "type": "object"
+    },
+    "Revival": {
+      "description": "Ressurreição usada nesta revelação: o QI de antes e o de depois.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "before": {
+          "type": "integer"
+        },
+        "after": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "before",
+        "after"
+      ],
+      "title": "Revival",
       "type": "object"
     },
     "RoomSettings": {
@@ -1093,7 +1162,8 @@
               "magnifier",
               "toll",
               "decoy",
-              "flashbang"
+              "flashbang",
+              "resurrection"
             ],
             "type": "string"
           },
@@ -1263,7 +1333,8 @@
             "magnifier",
             "toll",
             "decoy",
-            "flashbang"
+            "flashbang",
+            "resurrection"
           ],
           "type": "string"
         }

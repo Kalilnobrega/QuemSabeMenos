@@ -19,6 +19,7 @@ PowerUp = Literal[
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
+    "resurrection",
 ]
 GameMode = Literal["classic", "powers"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers")
@@ -153,6 +154,15 @@ class PowerUpGain(BaseModel):
     kind: PowerUp
     reason: Literal["start", "streak", "comeback"]  # sorteio inicial, acertos seguidos ou lanterna
     legendary: bool = False
+    mythic: bool = False
+
+
+class Revival(BaseModel):
+    """Ressurreição usada nesta revelação: o QI de antes e o de depois."""
+
+    player_id: str
+    before: int
+    after: int
 
 
 class RoundResult(BaseModel):
@@ -200,6 +210,8 @@ class GameView(BaseModel):
     bets_placed: list[str]  # ids de quem já apostou; os valores só aparecem em results
     powerups: list[PowerUp]
     legendary_powerups: list[PowerUp]  # os seus ataques lendários guardados (contam no máximo)
+    mythic_powerups: list[PowerUp]  # os seus poderes míticos guardados (contam no máximo)
+    revivals: list[Revival]
     powerup_max: int
     starting_powerup: PowerUp | None
     can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)

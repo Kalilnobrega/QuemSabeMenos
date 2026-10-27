@@ -35,7 +35,8 @@ export interface ArmPowerUpRequest {
     | "magnifier"
     | "toll"
     | "decoy"
-    | "flashbang";
+    | "flashbang"
+    | "resurrection";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -131,6 +132,7 @@ export interface GameView {
     | "toll"
     | "decoy"
     | "flashbang"
+    | "resurrection"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -153,7 +155,32 @@ export interface GameView {
     | "toll"
     | "decoy"
     | "flashbang"
+    | "resurrection"
   )[];
+  mythic_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+  )[];
+  revivals: Revival[];
   powerup_max: number;
   starting_powerup:
     | (
@@ -177,6 +204,7 @@ export interface GameView {
         | "toll"
         | "decoy"
         | "flashbang"
+        | "resurrection"
       )
     | null;
   can_arm: boolean;
@@ -208,6 +236,17 @@ export interface QuestionView {
   difficulty: "easy" | "medium" | "hard" | "impossible";
 }
 /**
+ * Ressurreição usada nesta revelação: o QI de antes e o de depois.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "Revival".
+ */
+export interface Revival {
+  player_id: string;
+  before: number;
+  after: number;
+}
+/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "PowerUpUse".
  */
@@ -232,7 +271,8 @@ export interface PowerUpUse {
     | "magnifier"
     | "toll"
     | "decoy"
-    | "flashbang";
+    | "flashbang"
+    | "resurrection";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -266,7 +306,8 @@ export interface LastingPowerUp {
     | "magnifier"
     | "toll"
     | "decoy"
-    | "flashbang";
+    | "flashbang"
+    | "resurrection";
   rounds_left: number;
   total: number;
 }
@@ -313,6 +354,7 @@ export interface RoundResult {
     | "toll"
     | "decoy"
     | "flashbang"
+    | "resurrection"
   )[];
   gained: PowerUpGain | null;
 }
@@ -341,9 +383,11 @@ export interface PowerUpGain {
     | "magnifier"
     | "toll"
     | "decoy"
-    | "flashbang";
+    | "flashbang"
+    | "resurrection";
   reason: "start" | "streak" | "comeback";
   legendary?: boolean;
+  mythic?: boolean;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -522,5 +566,6 @@ export interface UsePowerUpRequest {
     | "magnifier"
     | "toll"
     | "decoy"
-    | "flashbang";
+    | "flashbang"
+    | "resurrection";
 }

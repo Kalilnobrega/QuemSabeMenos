@@ -23,6 +23,7 @@ from app.events import (
     PowerUpGain,
     PowerUpUse,
     QuestionView,
+    Revival,
     RoundResult,
 )
 
@@ -252,6 +253,8 @@ class Game:
     # Habilidades (ver powerups.py): guardadas, armadas para a próxima pergunta e valendo nesta.
     powerups: dict[str, list[PowerUp]] = field(default_factory=dict)
     legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)
+    mythics: dict[str, list[PowerUp]] = field(default_factory=dict)
+    revivals: list[Revival] = field(default_factory=list)
     starting_powerups: dict[str, PowerUp] = field(default_factory=dict)
     armed: dict[str, PowerUpUse] = field(default_factory=dict)
     active: list[PowerUpUse] = field(default_factory=list)
@@ -439,6 +442,7 @@ class Game:
         self.hidden_options = {}
         self.tolls = {}
         self.decoys = {}
+        self.revivals = []
         self.theme_choices = []
         armed = list(self.armed.values())
         self.armed = {}
@@ -720,12 +724,44 @@ class Game:
             )
         top = max((p.score for p in players), default=0)
         self.leaders = {p.id for p in players if p.score == top}
+        self._break_resurrections(players)
         if self._counts_for_powers():
             self._wear_lasting()
         if self.powers and difficulty != FINAL_DIFFICULTY:
             self._powerup_gains(players)
         self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, results_seconds(self.question.fact))
+
+    def _break_resurrections(self, players: list[Scorable]) -> None:
+        """A Ressurreição de quem saiu do último quebra."""
+        bottom = min((p.score for p in players), default=0)
+        by_id = {r.player_id: r for r in self.results}
+        for player in players:
+            held = self.mythics.get(player.id, [])
+            if "resurrection" in held and player.score > bottom:
+                held.remove("resurrection")
+                if player.id in by_id:
+                    by_id[player.id].expired.append("resurrection")
+
+    def resurrect(self, player: Scorable, players: list[Scorable]) -> None:
+        """Ressurreição: na revelação, o último pula para logo atrás de quem está na frente dele."""
+        if not self.powers or self.phase != "results" or not self.has_next_round:
+            raise GameError("Agora não dá para usar habilidade.")
+        if self.is_silenced(player.id):
+            raise GameError("Silenciado: sem habilidades por enquanto.")
+        held = self.mythics.get(player.id, [])
+        if "resurrection" not in held:
+            raise GameError("Você não tem essa habilidade.")
+        others = [p.score for p in players if p.id != player.id]
+        if any(score < player.score for score in others):
+            raise GameError("A Ressurreição só funciona em último.")
+        ahead = [score for score in others if score > player.score]
+        gap = powerups.RESURRECTION_GAP_TWO_PLAYERS if len(players) == 2 else powerups.RESURRECTION_GAP
+        if not ahead or min(ahead) - gap <= player.score:
+            raise GameError("Você já está colado em quem está na frente.")
+        held.remove("resurrection")
+        self.revivals.append(Revival(player_id=player.id, before=player.score, after=min(ahead) - gap))
+        player.score = min(ahead) - gap
 
     def _pay_investments(self, by_id: dict[str, RoundResult]) -> None:
         for pid, hits in list(self.investments.items()):
@@ -772,17 +808,26 @@ class Game:
                 continue
             held = self.powerups.setdefault(player.id, [])
             legendaries = self.legendaries.setdefault(player.id, [])
-            if len(held) + len(legendaries) >= self.capacity(player.id):
+            mythics = self.mythics.setdefault(player.id, [])
+            if len(held) + len(legendaries) + len(mythics) >= self.capacity(player.id):
                 continue  # com as mãos cheias, a sequência continua valendo para depois
-            chance = powerups.LEGENDARY_TRAILING_CHANCE if player.id in behind else powerups.LEGENDARY_CHANCE
-            legendary = self.rng.random() < chance
-            if legendary:
+            roll, edge, mythic = self.rng.random(), 0.0, None
+            for kind, (normal, trailing) in powerups.MYTHIC_CHANCES.items():
+                edge += trailing if player.id in behind else normal
+                if roll < edge:
+                    mythic = kind
+                    break
+            edge += powerups.LEGENDARY_TRAILING_CHANCE if player.id in behind else powerups.LEGENDARY_CHANCE
+            if mythic:
+                kind = mythic
+                mythics.append(kind)
+            elif roll < edge:
                 kind = self.rng.choice(sorted(powerups.TARGETED))
                 legendaries.append(kind)
             else:
                 kind = self.rng.choice(powerups.POWERUPS)
                 held.append(kind)
-            result.gained = PowerUpGain(kind=kind, reason=reason, legendary=legendary)
+            result.gained = PowerUpGain(kind=kind, reason=reason, legendary=not mythic and roll < edge, mythic=mythic is not None)
             if reason == "streak":
                 self.right_runs[player.id] = 0
             else:
@@ -853,6 +898,8 @@ class Game:
             bets_placed=list(self.bets),
             powerups=list(self.powerups.get(viewer, [])) if viewer else [],
             legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
+            mythic_powerups=list(self.mythics.get(viewer, [])) if viewer else [],
+            revivals=self.revivals,
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
             can_arm=self.can_arm and not silence_left,
