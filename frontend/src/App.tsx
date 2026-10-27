@@ -29,7 +29,6 @@ function UsersIcon() {
 }
 
 function KeyIcon() {
-  // Chave clássica na diagonal: argola com furo, haste e dois dentes.
   return (
     <svg viewBox="2.5 2.5 19 19" className="size-6" fill="currentColor" aria-hidden="true">
       <g transform="rotate(45 12 12)">

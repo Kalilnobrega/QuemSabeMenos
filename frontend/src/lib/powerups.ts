@@ -2,7 +2,6 @@ import type { PowerUpGain, PowerUpUse } from '../types/events'
 
 export type Kind = PowerUpUse['kind']
 
-/** Usadas durante a pergunta, pelos ícones; as outras se armam na revelação. */
 export const INSTANT: Kind[] = ['fifty_fifty', 'peek']
 
 export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: boolean; tone: string }> = {

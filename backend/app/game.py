@@ -27,53 +27,42 @@ from app.events import (
 
 QUESTIONS_DIR = Path(__file__).parent / "questions"
 
-# A partida vai das fáceis às difíceis e termina com uma pergunta impossível.
 DIFFICULTIES: tuple[Difficulty, ...] = ("easy", "medium", "hard")
 FINAL_DIFFICULTY: Difficulty = "impossible"
 OPTION_COUNT = {"easy": 4, "medium": 4, "hard": 4, "impossible": 6}
-# Pontuação calibrada em partidas de verdade de 20 perguntas: com os bônus e antes da pergunta
-# final, um jogador ruim termina perto de 55, um médio perto de 110 e um bom perto de 160-190.
 STARTING_IQ = 50
 REFERENCE_ROUNDS = 20
-# Acerto rende do mínimo (respondeu no último instante) ao máximo (na hora).
+# (mínimo, máximo): o máximo é para quem responde na carência.
 CORRECT_POINTS = {"easy": (0, 0), "medium": (5, 11), "hard": (13, 22), "impossible": (35, 35)}
 WRONG_PENALTY = {"easy": -15, "medium": -10, "hard": -5, "impossible": 0}
-# Bônus. Acertar todas as fáceis rende 1 por fácil
-# (sem escala: partida longa tem mais fáceis, mas é mais difícil gabaritar). Sequências de
-# acertos contam só médias e difíceis; de erros, qualquer nível (não responder é erro).
-# A pergunta final não entra em nenhuma. Repetir uma sequência na mesma partida vale a metade
-# (arredondada para longe do zero).
+# Gabaritar as fáceis rende 1 por fácil, sem escala. Sequências de acertos contam só médias e
+# difíceis; de erros, qualquer nível. Repetir uma sequência na mesma partida vale a metade.
 PERFECT_EASY_BONUS = 1
 STREAK_BONUS = {3: 3, 5: 10, 10: 20}
 WRONG_STREAK_PENALTY = {3: -5, 5: -10}
-# Quem responde nos primeiros segundos leva o máximo; depois o valor cai até o mínimo.
 SPEED_GRACE_SECONDS = 3.0
 NO_ANSWER_PENALTY = -10
 
-# Velocidade do efeito de digitação; o tempo de resposta só começa depois.
+# Efeito de digitação; o tempo de resposta só começa depois.
 TYPING_SECONDS_PER_CHAR = 0.035
 MIN_READING_SECONDS = 1.5
 MAX_READING_SECONDS = 6.0
-# Telas de preparação: antes da 1ª pergunta e antes da final (o tempo só começa depois).
 START_SECONDS = 5.0
-LEVEL_SECONDS = 3.0  # apresentação rápida quando a dificuldade muda
+LEVEL_SECONDS = 3.0
 INTRO_SECONDS = 5.0
 BET_SECONDS = 12.0
 # O relógio do jogador começa quando o estado chega (atrasado pela rede) e o clique ainda
 # precisa voltar: sem essa folga, quem clica no último instante fica sem resposta.
 LATE_SECONDS = 1.0
 PREPARATION_PHASES = ("starting", "level", "intro", "betting")
-# O resultado fica na tela o suficiente para ler a curiosidade e armar uma habilidade;
-# se todo mundo tocar em "Pular", acaba antes.
+# A revelação dura o suficiente para ler a curiosidade; acaba antes se todos pularem.
 RESULTS_SECONDS_PER_CHAR = 0.055
 MIN_RESULTS_SECONDS = 10.0
 MAX_RESULTS_SECONDS = 15.0
-# Aposta: uma vez por partida, antes da pergunta do meio das difíceis. Cada um aposta até
-# metade do QI que tem (atalhos em porcentagem ou um valor digitado); acertou, ganha o valor;
-# errou ou não respondeu, perde. Quem não aposta a tempo fica com 0.
+# Aposta: uma por partida, antes da pergunta do meio das difíceis; quem não aposta fica com 0.
 BET_PERCENTS = (25, 50, 75, 100)
-BET_MAX_PERCENT = 100  # com odd 1,5 dá para apostar tudo
-BET_ODDS = 1.5  # odd decimal: apostou 100 e acertou, recebe 150 (lucro 50); errou, perde os 100
+BET_MAX_PERCENT = 100
+BET_ODDS = 1.5  # apostou 100 e acertou: lucra 50; errou ou não respondeu: perde os 100
 
 
 Phase = Literal["starting", "level", "intro", "betting", "reading", "answering", "results", "finished"]
@@ -107,7 +96,7 @@ class Question(BaseModel):
     text: str
     options: list[str]
     answer: int = Field(ge=0)
-    fact: str = Field(min_length=1)  # curiosidade ou explicação, mostrada depois da resposta
+    fact: str = Field(min_length=1)
 
     @model_validator(mode="after")
     def check_options(self) -> "Question":
@@ -235,7 +224,7 @@ class Answer:
 class Game:
     questions: list[Question]
     answer_seconds: float
-    point_scale: float = 1.0  # ver point_scale()
+    point_scale: float = 1.0
     speed_grace_seconds: float = SPEED_GRACE_SECONDS
     round: int = -1  # índice da pergunta atual; -1 antes de começar
     phase: Phase = "reading"
@@ -244,13 +233,13 @@ class Game:
     answers: dict[str, Answer] = field(default_factory=dict)
     results: list[RoundResult] = field(default_factory=list)
     streaks: dict[str, Streak] = field(default_factory=dict)
-    bets: dict[str, int] = field(default_factory=dict)  # só na rodada da aposta
+    bets: dict[str, int] = field(default_factory=dict)
     rng: random.Random = field(default_factory=random.Random)
     powers: bool = False
     powerup_max: int = powerups.MAX_HELD
     # Habilidades (ver powerups.py): guardadas, armadas para a próxima pergunta e valendo nesta.
     powerups: dict[str, list[PowerUp]] = field(default_factory=dict)
-    legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)  # ataques lendários guardados
+    legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)
     starting_powerups: dict[str, PowerUp] = field(default_factory=dict)
     armed: dict[str, PowerUpUse] = field(default_factory=dict)
     active: list[PowerUpUse] = field(default_factory=list)
@@ -258,12 +247,12 @@ class Game:
     first_wrong: dict[str, Answer] = field(default_factory=dict)  # Segunda chance: 1ª tentativa errada
     # Habilidades que duram mais de uma pergunta: perguntas comuns restantes de cada uma, por jogador.
     lasting: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
-    lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)  # com quantas começou
+    lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
     leaders: set[str] = field(default_factory=set)  # em 1º depois da última rodada (o empate conta)
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
-    ready: set[str] = field(default_factory=set)  # quem quer pular a revelação
+    ready: set[str] = field(default_factory=set)
 
     def __post_init__(self) -> None:
         self.bet_round = bet_round(self.questions)
@@ -402,7 +391,6 @@ class Game:
         )
 
     def _counts_for_powers(self) -> bool:
-        """Pergunta comum, em que as habilidades valem (nem a aposta nem a final)."""
         return self.powers and not self.is_bet_round and self.question.difficulty != FINAL_DIFFICULTY
 
     def _extra_time_ids(self) -> list[str]:

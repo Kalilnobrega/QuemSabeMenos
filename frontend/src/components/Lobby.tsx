@@ -29,7 +29,6 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
 
   const isHost = room.host_id === playerId
 
-  // "Pop" quando alguém entra ou sai da sala.
   const playerCount = useRef(room.players.length)
   useEffect(() => {
     const count = room.players.length
@@ -170,7 +169,6 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
   )
 }
 
-/** Três controles deslizantes, cada um com o botão numa altura diferente. */
 function SettingsIcon() {
   return (
     <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">

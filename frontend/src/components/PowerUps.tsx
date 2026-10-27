@@ -46,7 +46,6 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     )
   }
   if (kind === 'reverse') {
-    // A carta de inverter do Uno: carta vermelha, oval branco e duas setas girando.
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="4" y="1.5" width="16" height="21" rx="2.5" fill="#EF4444" {...ICON_STROKE} />
@@ -418,7 +417,6 @@ interface BarProps {
   onSkip: () => Promise<string | null>
 }
 
-/** Na revelação: as suas habilidades (armar para a próxima pergunta) e o botão de pular. */
 export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: BarProps) {
   const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)

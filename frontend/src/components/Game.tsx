@@ -11,7 +11,6 @@ import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, Sc
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
-/** Lâmpada da curiosidade (no lugar do emoji): amarela, com contorno escuro e brilho. */
 function BulbIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 28 28" className={className} aria-hidden="true">
@@ -32,7 +31,6 @@ function BulbIcon({ className }: { className?: string }) {
   )
 }
 
-/** Floco de gelo das sequências de erros: o contrário do foguinho. */
 function SnowflakeIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" strokeLinecap="round" aria-hidden="true">
@@ -47,7 +45,6 @@ function SnowflakeIcon({ className }: { className?: string }) {
   )
 }
 
-/** Estrela de quem gabaritou as fáceis. */
 function StarIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -62,7 +59,6 @@ function StarIcon({ className }: { className?: string }) {
   )
 }
 
-/** Foguinho da marca (no lugar do emoji), simples para ficar nítido em tamanho pequeno. */
 function FlameIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 28" className={className} aria-hidden="true">
@@ -161,7 +157,6 @@ function LevelIntro({ game }: { game: GameView }) {
     ['levelUp', 1050],
   ])
 
-  // O destaque colorido nasce em cima do nível anterior e pula, em arco, até o novo.
   useLayoutEffect(() => {
     const track = trackRef.current
     const marker = markerRef.current
@@ -292,7 +287,6 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
   )
 }
 
-/** Quanto o jogador pode apostar: até a porcentagem máxima do QI, arredondada para baixo. */
 function maxBet(score: number, game: GameView) {
   return Math.max(0, Math.floor((score * game.bet_max_percent) / 100))
 }
@@ -305,7 +299,7 @@ function formatOdds(odds: number) {
   return odds.toLocaleString('pt-BR')
 }
 
-/** Aposta antes da pergunta do meio das difíceis: só o tema aparece, e cada um arrisca até metade do QI. */
+/** Aposta antes da pergunta do meio das difíceis: só o tema e o nível aparecem. */
 function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: string | null; onBet: (amount: number) => Promise<string | null> }) {
   const { room, receivedAt } = snapshot
   const game = room.game!
@@ -499,7 +493,7 @@ function formatScore(score: number) {
   return score < 0 ? `−${-score}` : `${score}`
 }
 
-/** Vibra o celular, quando o navegador permite (no iPhone é ignorado). */
+/** No iPhone é ignorado. */
 function vibrate(pattern: number | number[]) {
   navigator.vibrate?.(pattern)
 }
@@ -523,7 +517,6 @@ function useCountdownSounds(count: number) {
 
 const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
 
-/** Curva que começa devagar, acelera no meio e desacelera no final. */
 const easeInOutCubic = (k: number) => (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2)
 
 /** Número que sobe (ou desce) contando de `from` até `to`, depois de `delay` ms. */
@@ -596,7 +589,6 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
 
   const question = game.question!
   const typing = game.phase === 'reading'
-  // Poderes jogados em você (só até a revelação).
   const hits = (kind: PowerUpUse['kind']) =>
     game.phase !== 'results' && game.active.some((use) => use.kind === kind && (use.legendary ? use.by !== playerId : use.target === playerId))
   const silenced = hits('silence')
@@ -616,7 +608,6 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   const urgent = game.phase === 'answering' && remaining < 3000 && !silenced
   const scratched = hits('scratch')
 
-  // Tec-tec enquanto o texto aparece, a cada três letras.
   useEffect(() => {
     if (typing && text.length > 0 && text.length % 3 === 0) playSound('typing')
   }, [typing, text.length])
@@ -636,7 +627,6 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
     }
   }, [urgent, answered, secondsLeft])
 
-  // Som e vibração diferentes para acerto, erro e falta de resposta, quando a resposta é revelada.
   useEffect(() => {
     if (!showResults || !myResult) return
     if (myResult.option === null) {
@@ -997,7 +987,6 @@ function StreakChip({ streak }: { streak: number }) {
   )
 }
 
-/** Espiar: quantos outros já marcaram a alternativa. */
 function PeekBadge({ count }: { count: number }) {
   if (count === 0) return null
   return (
@@ -1010,7 +999,6 @@ function PeekBadge({ count }: { count: number }) {
 
 const MAX_VOTERS = 4
 
-/** Avatares de quem marcou a alternativa, empilhados no canto e entrando depois da revelação. */
 function Voters({ players }: { players: PlayerView[] }) {
   if (players.length === 0) return null
   const shown = players.slice(0, players.length > MAX_VOTERS ? MAX_VOTERS - 1 : MAX_VOTERS)
@@ -1038,7 +1026,6 @@ function Voters({ players }: { players: PlayerView[] }) {
   )
 }
 
-/** Letra que o jogador marcou: verde se acertou, vermelha se errou, traço se não respondeu. */
 function PickBadge({ result }: { result: RoundResult }) {
   const tone = result.option === null ? 'bg-[#232b3f] text-steel' : result.correct ? 'bg-emerald-600 text-white' : 'bg-red-500 text-white'
   return (
@@ -1151,7 +1138,6 @@ function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Cada etapa revelada toca o seu som (3º e 2º com o carimbo, 1º com a fanfarra, o último com o trombone).
   const revealed = (place: number) => stage >= 4 - place
   useEffect(() => {
     const sounds: Record<number, SoundId | undefined> = { 1: 'slam', 2: 'slam', 3: 'podiumWinner', 4: worst ? 'podiumLoser' : undefined }

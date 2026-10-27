@@ -88,7 +88,7 @@ class Room:
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
     speed_grace_seconds: float = SPEED_GRACE_SECONDS
-    theme_options: list[str] = field(default_factory=list)  # temas do banco
+    theme_options: list[str] = field(default_factory=list)
     themes: list[str] = field(default_factory=list)  # escolhidos pelo anfitrião; começam todos
     game: Game | None = None
     # Perguntas já sorteadas nesta sala, para "jogar de novo" trazer perguntas novas.
@@ -262,7 +262,7 @@ class RoomManager:
         if speed_grace_seconds is not None:
             room.speed_grace_seconds = speed_grace_seconds
         if themes is not None:
-            room.themes = [t for t in self.theme_options if t in themes]  # na ordem da lista
+            room.themes = [t for t in self.theme_options if t in themes]
         return room
 
     def start(self, sid: str, now: float | None = None) -> Room:
@@ -348,7 +348,6 @@ class RoomManager:
         return found
 
     def play_again(self, sid: str) -> Room:
-        """Volta a sala para o lobby depois do fim da partida."""
         room = self._host_room(sid, "recomeçar")
         if not room.game or room.game.phase != "finished":
             raise RoomError("A partida ainda não terminou.")

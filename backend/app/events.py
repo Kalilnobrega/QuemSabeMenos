@@ -15,7 +15,6 @@ Avatar = Literal[
 ]
 
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
-# Habilidades (ver powerups.py): as primeiras valem para quem usa; as do fim miram outro jogador.
 PowerUp = Literal[
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier",
@@ -27,7 +26,7 @@ NICKNAME_MAX_LENGTH = 16
 ROUND_OPTIONS = (10, 15, 20, 25, 30, 35)
 ANSWER_OPTIONS = (10, 15, 20, 25, 30)  # segundos para responder
 GRACE_OPTIONS = (0, 2, 3, 5)  # segundos de QI cheio
-POWERUP_MAX_OPTIONS = (1, 2, 3)  # habilidades guardadas ao mesmo tempo, no modo com poderes
+POWERUP_MAX_OPTIONS = (1, 2, 3)
 
 
 class Pong(BaseModel):
@@ -94,7 +93,7 @@ class PlayerView(BaseModel):
     nickname: str
     avatar: Avatar
     connected: bool
-    score: int  # QI na partida
+    score: int
     answer_ms: int  # tempo total de resposta; desempata quem tem o mesmo QI
     streak: int  # > 0: acertos seguidos em médias/difíceis; < 0: erros seguidos
 
@@ -102,7 +101,7 @@ class PlayerView(BaseModel):
 class RoomSettings(BaseModel):
     mode: GameMode
     mode_options: list[GameMode]
-    powerup_max: int  # habilidades guardadas ao mesmo tempo (só no modo com poderes)
+    powerup_max: int
     powerup_max_options: list[int]
     rounds: int
     answer_seconds: float
@@ -110,7 +109,7 @@ class RoomSettings(BaseModel):
     round_options: list[int]
     answer_options: list[int]
     grace_options: list[int]
-    themes: list[str]  # temas sorteados na partida (pelo menos um)
+    themes: list[str]
     theme_options: list[str]
 
 
@@ -128,7 +127,7 @@ class Bonus(BaseModel):
     kind: Literal["perfect_easy", "streak", "wrong_streak"]
     count: int  # quantas fáceis ou o tamanho da sequência
     delta: int
-    repeat: bool  # já tinha feito essa sequência nesta partida
+    repeat: bool
 
 
 class PowerUpUse(BaseModel):
@@ -162,10 +161,10 @@ class RoundResult(BaseModel):
     bonuses: list[Bonus]
     bet: int | None  # None fora da rodada da aposta; 0 = não apostou
     bet_delta: int  # +bet × (bet_odds - 1) (para baixo) se acertou, -bet se errou ou não respondeu
-    shielded: int  # QI que o escudo impediu de perder
-    stolen: int  # QI ganho roubando de alguém
-    robbed: int  # QI do acerto que um ladrão levou (errando, o alvo perde só o normal)
-    doubled: bool  # o delta já vem dobrado
+    shielded: int
+    stolen: int
+    robbed: int
+    doubled: bool  # o delta já vem com o Dobro
     first_option: int | None  # Segunda chance: a primeira escolha, que estava errada
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
     gained: PowerUpGain | None
@@ -184,30 +183,30 @@ class GameView(BaseModel):
     phase_duration_ms: int
     phase_ends_in_ms: int  # relativo ao envio, para não depender do relógio do celular
     difficulty: Difficulty  # da pergunta da rodada (enviada também nas telas de preparação)
-    theme: str  # idem
+    theme: str
     question: QuestionView | None  # None em starting, level e intro
-    answered: list[str]  # ids de quem já respondeu nesta rodada
+    answered: list[str]
     bet_round: int | None  # rodada com aposta (começa em 1)
     bet_percents: list[int]  # atalhos de aposta, em % do QI
     bet_max_percent: int  # aposta máxima, em % do QI (arredondada para baixo)
-    bet_odds: float  # quanto a aposta paga se acertar (odd decimal: 1.5 = apostou 100, lucra 50)
+    bet_odds: float
     bets_placed: list[str]  # ids de quem já apostou; os valores só aparecem em results
-    powerups: list[PowerUp]  # as suas habilidades guardadas
+    powerups: list[PowerUp]
     legendary_powerups: list[PowerUp]  # os seus ataques lendários guardados (contam no máximo)
     powerup_max: int
-    starting_powerup: PowerUp | None  # a sua habilidade sorteada no início
+    starting_powerup: PowerUp | None
     can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)
-    armed: PowerUpUse | None  # a sua habilidade armada para a próxima pergunta
+    armed: PowerUpUse | None
     active: list[PowerUpUse]  # habilidades valendo nesta pergunta (o roubo só aparece para os outros na revelação)
-    hidden_options: list[int]  # alternativas que o seu 50/50 tirou
+    hidden_options: list[int]
     first_wrong: int | None  # Segunda chance: a sua primeira escolha, errada; dá para tentar de novo
     peek: list[int] | None  # Espiar: quantos outros escolheram cada alternativa até agora
     speed_grace_ms: int  # o seu tempo de QI cheio nesta pergunta (Tempo extra aumenta, Acelerador zera)
-    lasting: list[LastingPowerUp]  # as suas habilidades que valem por mais de uma pergunta, nesta
+    lasting: list[LastingPowerUp]
     powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
-    ready: list[str]  # ids de quem já quer pular a revelação
+    ready: list[str]
     correct_option: int | None  # só aparece em results
-    fact: str | None  # curiosidade sobre a resposta, também só em results
+    fact: str | None
     results: list[RoundResult]
 
 

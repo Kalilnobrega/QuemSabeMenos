@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { isMuted, playSound, setMuted } from '../lib/sounds'
 
-/** Botão fixo no canto da tela para ligar e desligar os sons; a escolha fica salva no aparelho. */
 export function SoundToggle() {
   const [muted, setMutedState] = useState(isMuted)
 

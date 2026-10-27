@@ -16,7 +16,6 @@ def fresh_rooms(monkeypatch, tmp_path):
     monkeypatch.setattr(main, "rooms", RoomManager())
     monkeypatch.setattr(main, "history", MatchHistory(tmp_path / "matches.db"))
     monkeypatch.setattr(main, "RECONNECT_GRACE_SECONDS", 0.2)
-    # Partidas rápidas nos testes.
     # A leitura precisa de folga: o teste vê "reading" e tenta responder antes de liberar.
     monkeypatch.setattr(game, "MIN_READING_SECONDS", 0.25)
     monkeypatch.setattr(game, "TYPING_SECONDS_PER_CHAR", 0)

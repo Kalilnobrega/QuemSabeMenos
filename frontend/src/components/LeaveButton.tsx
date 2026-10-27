@@ -1,4 +1,3 @@
-/** Botão secundário de sair da sala: pequeno, com ícone de porta, fica avermelhado ao tocar. */
 export function LeaveButton({ onLeave }: { onLeave: () => void }) {
   return (
     <button
