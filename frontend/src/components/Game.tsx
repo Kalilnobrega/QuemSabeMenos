@@ -141,7 +141,7 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
   const name = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
   const fighting = playerId === duel.challenger || playerId === duel.rival
   const [intro, setIntro] = useState<'on' | 'leaving' | 'off'>(() => (reducedMotion() ? 'off' : 'on'))
-  useSoundsOnMount([['impossible', 0], ['levelHop', 450], ['slam', 800]])
+  useSoundsOnMount([['impossible', 0], ['duelIntro', 850], ['duelFight', 1650]])
   useEffect(() => {
     if (intro === 'off') return
     vibrate([0, 950, 120])
@@ -156,12 +156,12 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
   }, [])
 
   useEffect(() => {
-    if (game.phase === 'duel_answering') playSound('answersOpen')
-    if (game.phase === 'duel_end') playSound(duel.winner === playerId ? 'podiumWinner' : duel.loser === playerId ? 'podiumLoser' : 'rankingSwish')
-  }, [game.phase, duel.question_number, duel.winner, duel.loser, playerId])
+    if (game.phase === 'duel_answering') playSound(duel.kind === 'impossible' ? 'duelLastQuestion' : 'answersOpen')
+    if (game.phase === 'duel_end') playSound(duel.winner === playerId ? 'duelWin' : duel.loser === playerId ? 'duelLose' : 'duelWatch')
+  }, [game.phase, duel.question_number, duel.kind, duel.winner, duel.loser, playerId])
 
   const bet = async (choice: string) => {
-    playSound('select')
+    playSound('duelBet')
     setError(await onDuelBet(choice))
   }
 
@@ -818,6 +818,14 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
     if (game.phase === 'answering') playSound('answersOpen')
   }, [game.phase])
 
+  // Uma sabotagem em você toca o "ops" quando a pergunta abre (o Roubo é surpresa: não toca).
+  const sabotaged = game.active.some((use) => use.kind !== 'steal' && TARGETED_KINDS.has(use.kind) && (use.legendary ? use.by !== playerId : use.target === playerId))
+  useEffect(() => {
+    if (sabotaged && !showResults) playSound('powerHit')
+    // Só quando a pergunta aparece.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   useEffect(() => {
     if (!blinded) return
     playSound('flashbang')
@@ -1003,9 +1011,12 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   const powerupLines = powerupEvents(room, game, playerId)
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
-  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy', investment: 'levelUp' }
+  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy', investment: 'investment' }
   const kinds = [...new Set(highlights.map((h) => h.bonus.kind))]
-  useSoundsOnMount(kinds.map((kind) => [bonusSounds[kind], 400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120]))
+  useSoundsOnMount([
+    ...kinds.map((kind): [SoundId, number] => [bonusSounds[kind], 400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120]),
+    ...(mine?.shielded ? [['shield', 250] as [SoundId, number]] : []),
+  ])
   useEffect(() => {
     if (mine && mine.delta !== 0) playSound('countUp', mine.delta)
     // Só quando o resumo aparece.
@@ -1274,6 +1285,7 @@ function TollBadge({ price }: { price: number }) {
 }
 
 const MAX_VOTERS = 4
+const TARGETED_KINDS = new Set(Object.entries(POWERUP_INFO).filter(([, info]) => info.targeted).map(([kind]) => kind))
 const FLASHBANG_MS = 4000
 
 function Voters({ players }: { players: PlayerView[] }) {

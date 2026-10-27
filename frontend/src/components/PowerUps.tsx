@@ -471,7 +471,7 @@ export function InstantPowerUps({ game, playerId, onUse }: { game: GameView; pla
           key={kind}
           disabled={busy || inUse(kind)}
           onClick={async () => {
-            playSound('select')
+            playSound('powerArm')
             setBusy(true)
             setError(await onUse(kind))
             setBusy(false)
@@ -507,7 +507,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
   const targets = players.filter((p) => p.id !== playerId)
 
   const arm = async (kind: Kind, target: string | null, legendary = false, theme: string | null = null) => {
-    playSound('levelUp')
+    playSound(kind === 'backpack' ? 'backpack' : kind === 'theme' ? 'theme' : 'powerArm')
     setSelected(null)
     setError(await onArm(kind, target, legendary, theme))
   }

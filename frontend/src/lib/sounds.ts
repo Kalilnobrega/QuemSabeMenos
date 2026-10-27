@@ -31,6 +31,20 @@ export const SOUND_ENABLED = {
   flashbang: true,
   podiumWinner: true,
   podiumLoser: true,
+  powerArm: true,
+  powerHit: true,
+  shield: true,
+  theme: true,
+  investment: true,
+  backpack: true,
+  resurrection: true,
+  duelIntro: true,
+  duelFight: true,
+  duelLastQuestion: true,
+  duelBet: true,
+  duelWin: true,
+  duelLose: true,
+  duelWatch: true,
 }
 
 export type SoundId = keyof typeof SOUND_ENABLED
@@ -62,6 +76,52 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
   podiumWinner: { group: 'Pódio', name: 'Fanfarra de vitória', moment: 'O pódio aparece, com o vencedor' },
   podiumLoser: { group: 'Pódio', name: 'Trombone triste (uá-uá-uá)', moment: 'Logo depois, para quem sabe menos' },
+  powerArm: { group: 'Habilidades', name: 'Trava e acorde', moment: 'Você arma ou usa uma habilidade' },
+  powerHit: { group: 'Habilidades', name: 'Ops (dois tons caindo)', moment: 'Uma sabotagem começa a valer em você' },
+  shield: { group: 'Habilidades', name: 'Batida de metal (gravado)', moment: 'O Escudo segura um erro seu' },
+  theme: { group: 'Habilidades', name: 'Baralho abrindo (gravado)', moment: 'Você escolhe o tema' },
+  investment: { group: 'Habilidades', name: 'Moedas na mão (gravado)', moment: 'Bônus do Investimento' },
+  backpack: { group: 'Habilidades', name: 'Zíper (gravado)', moment: 'Você abre a Mochila' },
+  resurrection: { group: 'Habilidades', name: 'Coral de anjos (gravado)', moment: 'Alguém usa a Ressurreição' },
+  duelIntro: { group: 'X1', name: 'Choque de espadas (gravado)', moment: 'Entrada do X1' },
+  duelFight: { group: 'X1', name: '"Fight!" (gravado)', moment: 'O duelo começa' },
+  duelLastQuestion: { group: 'X1', name: '"Final round" (gravado)', moment: 'Última pergunta do X1' },
+  duelBet: { group: 'X1', name: 'Fichas (gravado)', moment: 'Você aposta no X1' },
+  duelWin: { group: 'X1', name: '"You win!" (gravado)', moment: 'Você vence o X1' },
+  duelLose: { group: 'X1', name: '"Game over" (gravado)', moment: 'Você perde o X1' },
+  duelWatch: { group: 'X1', name: '"Winner" (gravado)', moment: 'Fim do X1, para quem assistiu' },
+}
+
+// Sons gravados (Kenney e OpenGameArt em CC0; o coral é do Pixabay, que não pede crédito). Já vêm no
+// mesmo volume dos sintetizados e tocam pelo mesmo volume geral.
+const FILE_URLS = import.meta.glob<string>('../assets/sounds/*.m4a', { eager: true, query: '?url', import: 'default' })
+const fileUrl = (id: string) => FILE_URLS[`../assets/sounds/${id}.m4a`]
+const buffers = new Map<string, Promise<AudioBuffer | null>>()
+
+function load(id: string) {
+  let buffer = buffers.get(id)
+  if (!buffer) {
+    const { c } = audio()
+    buffer = fetch(fileUrl(id))
+      .then((r) => r.arrayBuffer())
+      .then((data) => c.decodeAudioData(data))
+      .catch(() => null)
+    buffers.set(id, buffer)
+  }
+  return buffer
+}
+
+/** Toca um som gravado; o primeiro de cada um pode atrasar um pouco enquanto carrega. */
+function file(id: string, at = 0) {
+  const started = audio().c.currentTime
+  void load(id).then((buffer) => {
+    if (!buffer) return
+    const { c, out } = audio()
+    const src = c.createBufferSource()
+    src.buffer = buffer
+    src.connect(out)
+    src.start(Math.max(c.currentTime, started + at))
+  })
 }
 
 const VOLUME = 0.5
@@ -202,11 +262,7 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   levelUp: () => {
     ;[NOTE.C5, NOTE.E5, NOTE.G5, NOTE.C6].forEach((f, i) => tone(f, { at: i * 0.08, dur: 0.3, type: 'triangle', gain: 0.15 }))
   },
-  impossible: () => {
-    noise({ dur: 0.9, filter: 'lowpass', freq: 200, to: 1400, gain: 0.3 })
-    noise({ at: 0.2, dur: 2, filter: 'lowpass', freq: 120, gain: 0.25 })
-    ;[0.5, 0.9, 1.3].forEach((at, i) => tone(i === 2 ? 70 : 100, { at, dur: i === 2 ? 0.8 : 0.35, to: 40, gain: 0.5 }))
-  },
+  impossible: () => file('impossible'),
   typing: () => noise({ dur: 0.025, filter: 'highpass', freq: 3500, gain: 0.04 }),
   // As respostas destravam: o "tchk" de uma trava abrindo e um "uup" subindo, de "pode responder!".
   answersOpen: () => {
@@ -281,7 +337,30 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   podiumLoser: () => {
     ;[293.66, 277.18, 261.63].forEach((f, i) => tone(f, { at: i * 0.45, dur: 0.4, type: 'sawtooth', gain: 0.14, lowpass: 900 }))
     tone(246.94, { at: 1.35, dur: 1.2, type: 'sawtooth', gain: 0.14, lowpass: 900, vibrato: 6 })
+  },  // Trava metálica e um acorde curto.
+  powerArm: () => {
+    noise({ dur: 0.03, filter: 'highpass', freq: 3000, gain: 0.3 })
+    tone(1800, { dur: 0.05, type: 'square', gain: 0.04 })
+    ;[523, 659, 784].forEach((f) => tone(f, { at: 0.06, dur: 0.35, type: 'triangle', gain: 0.08 }))
   },
+  // "Ops": dois tons caindo.
+  powerHit: () => {
+    tone(660, { dur: 0.16, type: 'triangle', gain: 0.15 })
+    tone(440, { at: 0.18, dur: 0.3, to: 380, type: 'triangle', gain: 0.15 })
+  },
+  shield: () => file('shield'),
+  theme: () => file('theme'),
+  investment: () => file('investment'),
+  backpack: () => file('backpack'),
+  resurrection: () => file('resurrection'),
+  duelIntro: () => file('duelIntro'),
+  duelFight: () => file('duelFight'),
+  duelLastQuestion: () => file('duelLastQuestion'),
+  duelBet: () => file('duelBet'),
+  duelWin: () => file('duelWin'),
+  duelLose: () => file('duelLose'),
+  duelWatch: () => file('duelWatch'),
+
 }
 
 export function isMuted() {
@@ -320,5 +399,13 @@ export function previewSound(id: SoundId, arg?: number) {
 
 // Celulares só liberam o áudio depois de um toque na tela.
 if (typeof window !== 'undefined') {
-  window.addEventListener('pointerdown', () => !mutedNow && audio(), { once: true })
+  window.addEventListener(
+    'pointerdown',
+    () => {
+      if (mutedNow) return
+      audio()
+      for (const url of Object.keys(FILE_URLS)) void load(url.replace(/^.*\/|\.m4a$/g, ''))
+    },
+    { once: true },
+  )
 }
