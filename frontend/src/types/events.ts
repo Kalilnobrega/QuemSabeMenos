@@ -23,15 +23,20 @@ export interface ArmPowerUpRequest {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
     | "accelerator"
     | "mirror"
     | "silence"
-    | "magnifier";
+    | "magnifier"
+    | "toll";
   target?: string | null;
   legendary?: boolean;
+  theme?: string | null;
 }
 /**
  * Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
@@ -41,7 +46,7 @@ export interface ArmPowerUpRequest {
  * via the `definition` "Bonus".
  */
 export interface Bonus {
-  kind: "perfect_easy" | "streak" | "wrong_streak";
+  kind: "perfect_easy" | "streak" | "wrong_streak" | "investment";
   count: number;
   delta: number;
   repeat: boolean;
@@ -111,6 +116,9 @@ export interface GameView {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
@@ -118,6 +126,7 @@ export interface GameView {
     | "mirror"
     | "silence"
     | "magnifier"
+    | "toll"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -127,6 +136,9 @@ export interface GameView {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
@@ -134,6 +146,7 @@ export interface GameView {
     | "mirror"
     | "silence"
     | "magnifier"
+    | "toll"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -145,6 +158,9 @@ export interface GameView {
         | "extra_time"
         | "second_chance"
         | "reverse"
+        | "backpack"
+        | "theme"
+        | "investment"
         | "scratch"
         | "steal"
         | "scramble"
@@ -152,6 +168,7 @@ export interface GameView {
         | "mirror"
         | "silence"
         | "magnifier"
+        | "toll"
       )
     | null;
   can_arm: boolean;
@@ -163,6 +180,8 @@ export interface GameView {
   speed_grace_ms: number;
   lasting: LastingPowerUp[];
   silenced_rounds: number;
+  tolls: number[] | null;
+  theme_choices: string[];
   powers_round: boolean;
   ready: string[];
   correct_option: number | null;
@@ -192,17 +211,22 @@ export interface PowerUpUse {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
     | "accelerator"
     | "mirror"
     | "silence"
-    | "magnifier";
+    | "magnifier"
+    | "toll";
   by: string;
   target: string | null;
   reflected_by: string | null;
   legendary?: boolean;
+  theme?: string | null;
 }
 /**
  * Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
@@ -219,13 +243,17 @@ export interface LastingPowerUp {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
     | "accelerator"
     | "mirror"
     | "silence"
-    | "magnifier";
+    | "magnifier"
+    | "toll";
   rounds_left: number;
   total: number;
 }
@@ -245,6 +273,8 @@ export interface RoundResult {
   shielded: number;
   stolen: number;
   robbed: number;
+  tolled: number;
+  toll_received: number;
   doubled: boolean;
   first_option: number | null;
   expired: (
@@ -255,6 +285,9 @@ export interface RoundResult {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
@@ -262,6 +295,7 @@ export interface RoundResult {
     | "mirror"
     | "silence"
     | "magnifier"
+    | "toll"
   )[];
   gained: PowerUpGain | null;
 }
@@ -278,13 +312,17 @@ export interface PowerUpGain {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
     | "accelerator"
     | "mirror"
     | "silence"
-    | "magnifier";
+    | "magnifier"
+    | "toll";
   reason: "start" | "streak" | "comeback";
   legendary?: boolean;
 }
@@ -453,11 +491,15 @@ export interface UsePowerUpRequest {
     | "extra_time"
     | "second_chance"
     | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
     | "scratch"
     | "steal"
     | "scramble"
     | "accelerator"
     | "mirror"
     | "silence"
-    | "magnifier";
+    | "magnifier"
+    | "toll";
 }

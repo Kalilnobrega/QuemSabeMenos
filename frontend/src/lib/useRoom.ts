@@ -102,7 +102,8 @@ export function useRoom() {
   const answer = useCallback((option: number) => request('submit_answer', { option }), [])
   const bet = useCallback((amount: number) => request('submit_bet', { amount }), [])
   const armPowerUp = useCallback(
-    (kind: ArmPowerUpRequest['kind'], target: string | null, legendary = false) => request('arm_powerup', { kind, target, legendary }),
+    (kind: ArmPowerUpRequest['kind'], target: string | null, legendary = false, theme: string | null = null) =>
+      request('arm_powerup', { kind, target, legendary, theme }),
     [],
   )
   const usePowerUp = useCallback((kind: ArmPowerUpRequest['kind']) => request('use_powerup', { kind }), [])

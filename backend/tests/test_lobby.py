@@ -230,7 +230,7 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "tolled": 0, "toll_received": 0, "doubled": False, "first_option": None, "expired": [], "gained": None}  # partida de 10: vale o dobro
 
 
 async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connect, monkeypatch):
@@ -248,7 +248,7 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     await bia.call("submit_answer", {"option": 0})
     await ana.wait_for(lambda s: s["game"]["phase"] == "results")
     kind = ana.state["game"]["powerups"][0]
-    if kind in INSTANT:  # essas são usadas na hora da pergunta: troca por uma de armar
+    if kind in INSTANT or kind in ("backpack", "theme", "investment"):  # troca por uma de armar simples
         kind = "mirror"
         main.rooms.rooms[start["code"]].game.powerups[created["player_id"]] = [kind]
     target = joined["player_id"] if kind in TARGETED else None
@@ -260,7 +260,7 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     assert (await bia.call("skip_results"))["ok"]
     # Todos pularam: a próxima pergunta abre bem antes dos 5 s, já com a habilidade valendo.
     state = await ana.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
-    assert state["game"]["active"] == [{"kind": kind, "by": created["player_id"], "target": target, "reflected_by": None, "legendary": False}]
+    assert state["game"]["active"] == [{"kind": kind, "by": created["player_id"], "target": target, "reflected_by": None, "legendary": False, "theme": None}]
     # O roubo é surpresa (o alvo só fica sabendo na revelação) e o Reverso armado é segredo.
     hidden = await bia.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
     assert hidden["game"]["active"] == ([] if kind in ("steal", "reverse") else state["game"]["active"])

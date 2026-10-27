@@ -893,3 +893,95 @@ def test_magnifier_is_a_sabotage_that_the_reverse_sends_back():
     game.start_round(now=0)
     lens = next(u for u in game.active if u.kind == "magnifier")
     assert (lens.target, lens.reflected_by) == ("ana", "bia")
+
+
+def test_toll_charges_the_price_of_the_chosen_option_to_the_attacker():
+    game, ana, bia = armed_game(3)
+    arm(game, "ana", "toll", "bia")
+    game.start_round(now=0)
+    prices = game.view(now=0, viewer="bia").tolls
+    assert len(prices) == 4 and all(3 <= p <= 8 for p in prices)
+    assert game.view(now=0, viewer="ana").tolls is None
+    game.open_answers(now=0)
+    game.answer("bia", 1, now=1)
+    game.close_round([ana, bia], now=20)
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["bia"].tolled == prices[1] and by_id["ana"].toll_received == prices[1]
+
+
+def test_toll_without_an_answer_costs_the_cheapest_price():
+    game, ana, bia = armed_game(3)
+    arm(game, "ana", "toll", "bia")
+    game.start_round(now=0)
+    prices = game.view(now=0, viewer="bia").tolls
+    game.open_answers(now=0)
+    game.close_round([ana, bia], now=20)
+    assert {r.player_id: r.tolled for r in game.results}["bia"] == min(prices)
+
+
+def test_legendary_toll_is_cheaper_and_everyone_pays():
+    game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10)
+    ana, bia, caio = P("ana", 50), P("bia", 50), P("caio", 50)
+    game.powerups = {"ana": [], "bia": [], "caio": []}
+    game.legendaries = {"ana": ["toll"]}
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 0})
+    game.arm("ana", "toll", None, ["ana", "bia", "caio"], legendary=True)
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 0})
+    by_id = {r.player_id: r for r in game.results}
+    assert 2 <= by_id["bia"].tolled <= 4 and 2 <= by_id["caio"].tolled <= 4
+    assert by_id["ana"].toll_received == by_id["bia"].tolled + by_id["caio"].tolled
+
+
+def test_backpack_adds_a_slot_and_a_powerup_right_away():
+    game, ana, bia = armed_game(3)
+    game.powerups["ana"] = ["backpack", "backpack", "backpack"]
+    game.arm("ana", "backpack", None, ["ana", "bia"])
+    assert game.capacity("ana") == game.powerup_max + 1 and len(game.powerups["ana"]) == 3
+    assert game.armed == {}  # não ocupa a vez de armar
+    game.arm("ana", "backpack", None, ["ana", "bia"])
+    game.powerups["ana"].append("backpack")
+    with pytest.raises(GameError, match="tamanho máximo"):
+        game.arm("ana", "backpack", None, ["ana", "bia"])
+
+
+def themed(qid: str, theme: str, difficulty: str = "medium") -> Question:
+    return question(qid, difficulty).model_copy(update={"theme": theme})
+
+
+def test_theme_swaps_the_next_question_and_only_the_first_choice_counts():
+    bank = [themed(f"{t}{i}", t) for t in "ABCDE" for i in range(2)]
+    questions = [themed("e0", "A", "easy"), themed("A0", "A"), themed("A1", "A")]
+    game = Game(powers=True, questions=questions, answer_seconds=10, bank=bank, used={"e0", "A0", "A1"})
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": ["theme"], "bia": ["theme"]}
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    choices = game.view(now=20, viewer="ana").theme_choices
+    assert len(choices) == 4
+    pick = next(t for t in choices if t != "A")
+    game.arm("ana", "theme", None, ["ana", "bia"], theme=pick)
+    assert game.questions[1].theme == pick
+    with pytest.raises(GameError, match="já escolheu"):
+        game.arm("bia", "theme", None, ["ana", "bia"], theme=pick)
+    assert game.powerups["bia"] == ["theme"]
+    game.start_round(now=0)
+    assert [(u.kind, u.theme) for u in game.active] == [("theme", pick)]
+
+
+def test_investment_pays_growing_bonuses_until_the_first_mistake():
+    game, ana, bia = armed_game(6)
+    arm(game, "ana", "investment")
+    paid = []
+    for pick in (0, 0, 0, 1, 0):
+        reveal(game, [ana, bia], {"ana": pick, "bia": 0})
+        paid.append([b.delta for b in game.results[0].bonuses if b.kind == "investment"])
+    assert paid == [[2], [4], [6], [], []]
+    assert "ana" not in game.investments
+
+
+def test_investment_starts_only_after_the_easy_questions_and_is_never_dealt():
+    game, _, _ = armed_game(3, "easy")
+    with pytest.raises(GameError, match="médias"):
+        arm(game, "ana", "investment")
+    game = Game(powers=True, questions=[question("q")], answer_seconds=10, rng=random.Random(3))
+    game.deal_powerups([f"p{i}" for i in range(300)])
+    assert "investment" not in game.starting_powerups.values()

@@ -12,13 +12,17 @@
             "extra_time",
             "second_chance",
             "reverse",
+            "backpack",
+            "theme",
+            "investment",
             "scratch",
             "steal",
             "scramble",
             "accelerator",
             "mirror",
             "silence",
-            "magnifier"
+            "magnifier",
+            "toll"
           ],
           "type": "string"
         },
@@ -36,6 +40,17 @@
         "legendary": {
           "default": false,
           "type": "boolean"
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -51,7 +66,8 @@
           "enum": [
             "perfect_easy",
             "streak",
-            "wrong_streak"
+            "wrong_streak",
+            "investment"
           ],
           "type": "string"
         },
@@ -222,13 +238,17 @@
               "extra_time",
               "second_chance",
               "reverse",
+              "backpack",
+              "theme",
+              "investment",
               "scratch",
               "steal",
               "scramble",
               "accelerator",
               "mirror",
               "silence",
-              "magnifier"
+              "magnifier",
+              "toll"
             ],
             "type": "string"
           },
@@ -244,13 +264,17 @@
               "extra_time",
               "second_chance",
               "reverse",
+              "backpack",
+              "theme",
+              "investment",
               "scratch",
               "steal",
               "scramble",
               "accelerator",
               "mirror",
               "silence",
-              "magnifier"
+              "magnifier",
+              "toll"
             ],
             "type": "string"
           },
@@ -270,13 +294,17 @@
                 "extra_time",
                 "second_chance",
                 "reverse",
+                "backpack",
+                "theme",
+                "investment",
                 "scratch",
                 "steal",
                 "scramble",
                 "accelerator",
                 "mirror",
                 "silence",
-                "magnifier"
+                "magnifier",
+                "toll"
               ],
               "type": "string"
             },
@@ -345,6 +373,25 @@
         "silenced_rounds": {
           "type": "integer"
         },
+        "tolls": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "theme_choices": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "powers_round": {
           "type": "boolean"
         },
@@ -409,6 +456,8 @@
         "speed_grace_ms",
         "lasting",
         "silenced_rounds",
+        "tolls",
+        "theme_choices",
         "powers_round",
         "ready",
         "correct_option",
@@ -497,13 +546,17 @@
             "extra_time",
             "second_chance",
             "reverse",
+            "backpack",
+            "theme",
+            "investment",
             "scratch",
             "steal",
             "scramble",
             "accelerator",
             "mirror",
             "silence",
-            "magnifier"
+            "magnifier",
+            "toll"
           ],
           "type": "string"
         },
@@ -613,13 +666,17 @@
             "extra_time",
             "second_chance",
             "reverse",
+            "backpack",
+            "theme",
+            "investment",
             "scratch",
             "steal",
             "scramble",
             "accelerator",
             "mirror",
             "silence",
-            "magnifier"
+            "magnifier",
+            "toll"
           ],
           "type": "string"
         },
@@ -654,13 +711,17 @@
             "extra_time",
             "second_chance",
             "reverse",
+            "backpack",
+            "theme",
+            "investment",
             "scratch",
             "steal",
             "scramble",
             "accelerator",
             "mirror",
             "silence",
-            "magnifier"
+            "magnifier",
+            "toll"
           ],
           "type": "string"
         },
@@ -690,6 +751,17 @@
         "legendary": {
           "default": false,
           "type": "boolean"
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -949,6 +1021,12 @@
         "robbed": {
           "type": "integer"
         },
+        "tolled": {
+          "type": "integer"
+        },
+        "toll_received": {
+          "type": "integer"
+        },
         "doubled": {
           "type": "boolean"
         },
@@ -972,13 +1050,17 @@
               "extra_time",
               "second_chance",
               "reverse",
+              "backpack",
+              "theme",
+              "investment",
               "scratch",
               "steal",
               "scramble",
               "accelerator",
               "mirror",
               "silence",
-              "magnifier"
+              "magnifier",
+              "toll"
             ],
             "type": "string"
           },
@@ -1007,6 +1089,8 @@
         "shielded",
         "stolen",
         "robbed",
+        "tolled",
+        "toll_received",
         "doubled",
         "first_option",
         "expired",
@@ -1132,13 +1216,17 @@
             "extra_time",
             "second_chance",
             "reverse",
+            "backpack",
+            "theme",
+            "investment",
             "scratch",
             "steal",
             "scramble",
             "accelerator",
             "mirror",
             "silence",
-            "magnifier"
+            "magnifier",
+            "toll"
           ],
           "type": "string"
         }

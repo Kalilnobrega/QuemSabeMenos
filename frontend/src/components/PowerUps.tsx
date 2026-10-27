@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import { INSTANT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
+import { INSTANT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, LEGENDARY_TOLL_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
 import type { GameView, PlayerView, PowerUpUse } from '../types/events'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
@@ -118,6 +118,45 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z" fill="#7DD3FC" stroke="#12141B" strokeWidth="1.8" strokeLinejoin="round" />
         <path d="M12 5.5v13M7.5 9.5h9" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" opacity=".8" />
+      </svg>
+    )
+  }
+  if (kind === 'backpack') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M9 5V4a3 3 0 0 1 6 0v1" fill="none" {...ICON_STROKE} />
+        <rect x="4" y="5" width="16" height="17" rx="4" fill="#D97706" {...ICON_STROKE} />
+        <rect x="7.5" y="13" width="9" height="6" rx="1.5" fill="#FBBF24" {...ICON_STROKE} />
+        <path d="M12 8.5v3M10.5 10h3" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'theme') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2" y="6" width="11" height="15" rx="2" fill="#C7D2FE" {...ICON_STROKE} transform="rotate(-12 7.5 13.5)" />
+        <rect x="10" y="3" width="11" height="15" rx="2" fill="#818CF8" {...ICON_STROKE} transform="rotate(10 15.5 10.5)" />
+        <path d="m15.6 7.2 1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3 1-2.1Z" fill="#F8FAFC" transform="rotate(10 15.5 10.5)" />
+      </svg>
+    )
+  }
+  if (kind === 'investment') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="#4ADE80" {...ICON_STROKE} />
+        <path d="M6 16.5 10 12l3 2.5 5-6" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
+        <path d="M14.5 8.5H18V12" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
+      </svg>
+    )
+  }
+  if (kind === 'toll') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M4 22V5.5a1.5 1.5 0 0 1 3 0V22" fill="#FDA4AF" {...ICON_STROKE} />
+        <path d="M7 9h14v3.5H7Z" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M10 9 8.5 12.5M14 9l-1.5 3.5M18 9l-1.5 3.5" stroke="#F43F5E" strokeWidth="1.6" />
+        <circle cx="16" cy="18" r="3.5" fill="#FBBF24" {...ICON_STROKE} />
+        <path d="M16 16.5v3" stroke="#12141B" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     )
   }
@@ -321,6 +360,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
       return `${cap(name(use.reflected_by))} devolveu ${info.name} com o Reverso: agora é ${by === 'você' ? 'em você' : `em ${by}`}!`
     }
     if (use.reflected_by) return `Você rebateu o Roubo de ${target} com o Reverso!`
+    if (use.kind === 'theme') return by === 'você' ? `Você escolheu o tema: ${use.theme}!` : `${cap(by)} escolheu o tema: ${use.theme}!`
     if (!info.targeted) {
       const self: Partial<Record<Kind, string>> = {
         fifty_fifty: '50/50: duas erradas saíram.',
@@ -330,6 +370,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
         extra_time: 'Tempo extra: +5s e QI cheio o tempo todo nesta e nas próximas 2.',
         second_chance: 'Segunda chance nesta e na próxima: errou, tenta de novo.',
         reverse: 'Seu Reverso está pronto (só você sabe): o primeiro poder em você volta.',
+        investment: 'Investimento valendo: cada acerto seguido rende mais. Não erre!',
       }
       return by === 'você' ? self[use.kind]! : `${by} usou ${info.name}.`
     }
@@ -341,6 +382,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
         accelerator: 'jogou Acelerador em você: um terço do tempo e sem QI cheio!',
         mirror: 'jogou Espelho em você!',
         magnifier: 'jogou Lupa em você! Arraste a lupa pelo cabo para ler.',
+        toll: 'jogou Pedágio em você: cada resposta tem um preço!',
         silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem habilidades.',
       }
       return `${cap(by)} ${hit[use.kind]}`
@@ -413,7 +455,7 @@ interface BarProps {
   game: GameView
   players: PlayerView[]
   playerId: string | null
-  onArm: (kind: Kind, target: string | null, legendary?: boolean) => Promise<string | null>
+  onArm: (kind: Kind, target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onSkip: () => Promise<string | null>
 }
 
@@ -426,10 +468,10 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
   const isReady = skipped || (playerId !== null && game.ready.includes(playerId))
   const targets = players.filter((p) => p.id !== playerId)
 
-  const arm = async (kind: Kind, target: string | null, legendary = false) => {
+  const arm = async (kind: Kind, target: string | null, legendary = false, theme: string | null = null) => {
     playSound('levelUp')
     setSelected(null)
-    setError(await onArm(kind, target, legendary))
+    setError(await onArm(kind, target, legendary, theme))
   }
 
   const skip = async () => {
@@ -453,7 +495,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
     ) : (
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
-        {info.name} armado{target ? ` em ${target.nickname}` : ''} para a próxima!
+        {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `${info.name} armado${target ? ` em ${target.nickname}` : ''} para a próxima!`}
       </p>
     )
   } else if (selected?.legendary) {
@@ -464,7 +506,7 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
             <span className="font-bold text-brand">{info.name} LENDÁRIO:</span>{' '}
-            {selected.kind === 'steal' ? LEGENDARY_STEAL_HINT : `${info.hint} ${LEGENDARY_HINT}`}
+            {selected.kind === 'steal' ? LEGENDARY_STEAL_HINT : selected.kind === 'toll' ? LEGENDARY_TOLL_HINT : `${info.hint} ${LEGENDARY_HINT}`}
           </span>
         </p>
         <div className="flex gap-2">
@@ -487,7 +529,22 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
             <span className="font-bold">{info.name}:</span> {info.hint}
           </span>
         </p>
-        {info.targeted ? (
+        {selected.kind === 'theme' ? (
+          <>
+            <p className="text-sm font-semibold text-steel">Qual tema?</p>
+            <div className="flex flex-wrap gap-2">
+              {game.theme_choices.map((theme) => (
+                <button
+                  key={theme}
+                  onClick={() => void arm(selected.kind, null, false, theme)}
+                  className="btn-3d btn-sm btn-dark rounded-xl px-3 py-1.5 text-sm font-semibold"
+                >
+                  {theme}
+                </button>
+              ))}
+            </div>
+          </>
+        ) : info.targeted ? (
           <>
             <p className="text-sm font-semibold text-steel">Em quem?</p>
             <div className="flex flex-wrap gap-2">
@@ -505,9 +562,9 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
           </>
         ) : null}
         <div className="flex gap-2">
-          {!info.targeted && (
+          {!info.targeted && selected.kind !== 'theme' && (
             <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
-              Usar na próxima
+              {selected.kind === 'backpack' ? 'Abrir agora' : 'Usar na próxima'}
             </button>
           )}
           <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
@@ -543,8 +600,8 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
                   playSound('select')
                   setSelected({ kind, legendary: false })
                 }}
-                disabled={!game.can_arm}
-                className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm ? '' : 'opacity-50'}`}
+                disabled={!game.can_arm && kind !== 'backpack'}
+                className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm || kind === 'backpack' ? '' : 'opacity-50'}`}
               >
                 <PowerUpIcon kind={kind} className="size-6" />
                 {POWERUP_INFO[kind].name}

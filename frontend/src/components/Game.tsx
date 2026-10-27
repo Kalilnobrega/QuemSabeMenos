@@ -94,7 +94,7 @@ interface Props {
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
   onBet: (amount: number) => Promise<string | null>
-  onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean) => Promise<string | null>
+  onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
@@ -728,6 +728,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
                 <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
                 <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
                 {game.peek && !showResults && <PeekBadge count={game.peek[index]} />}
+                {game.tolls && !showResults && <TollBadge price={game.tolls[index]} />}
                 {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
               </button>
             </ScratchCard>
@@ -782,13 +783,13 @@ interface SummaryProps {
 
 function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
-  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed]))
+  const deltas = Object.fromEntries(game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled]))
   const bets = game.results.filter((r) => r.bet)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
   const powerupLines = powerupEvents(room, game, playerId)
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
-  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy' }
+  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy', investment: 'levelUp' }
   const kinds = [...new Set(highlights.map((h) => h.bonus.kind))]
   useSoundsOnMount(kinds.map((kind) => [bonusSounds[kind], 400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120]))
   useEffect(() => {
@@ -955,6 +956,12 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
         me: me || steal.target === playerId,
       })
     }
+    if (result.tolled) {
+      lines.push({ key: `${result.player_id}-tolled`, kind: 'toll', player, text: `${who(result.player_id)} pagou ${result.tolled} de Pedágio.`, delta: me ? -result.tolled : null, me })
+    }
+    if (result.toll_received) {
+      lines.push({ key: `${result.player_id}-toll`, kind: 'toll', player, text: `${who(result.player_id)} recebeu ${result.toll_received} de Pedágio!`, delta: me ? result.toll_received : null, me })
+    }
     if (result.gained) {
       lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary })
     }
@@ -966,10 +973,12 @@ const BONUS_STYLE: Record<Bonus['kind'], string> = {
   perfect_easy: 'bg-brand/15 text-brand',
   streak: 'bg-orange-500/15 text-orange-200',
   wrong_streak: 'bg-sky-400/10 text-sky-200',
+  investment: 'bg-green-500/15 text-green-200',
 }
 
 function bonusLabel(bonus: Bonus) {
   if (bonus.kind === 'perfect_easy') return 'gabaritou as fáceis!'
+  if (bonus.kind === 'investment') return bonus.count === 5 ? 'Investimento completo!' : `Investimento, ${bonus.count}º acerto!`
   const again = bonus.repeat ? ' de novo' : ''
   if (bonus.kind === 'streak') return `${bonus.count} acertos seguidos${again}!`
   return `${bonus.count} erros seguidos${again}!`
@@ -982,6 +991,7 @@ function bonusTotal(result: RoundResult) {
 function BonusIcon({ kind, className }: { kind: Bonus['kind']; className?: string }) {
   if (kind === 'perfect_easy') return <StarIcon className={className} />
   if (kind === 'streak') return <FlameIcon className={className} />
+  if (kind === 'investment') return <PowerUpIcon kind="investment" className={className} />
   return <SnowflakeIcon className={className} />
 }
 
@@ -1008,6 +1018,14 @@ function PeekBadge({ count }: { count: number }) {
     <span className="absolute -top-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-teal-300 px-1.5 text-xs font-bold text-ink" title={`${count} escolheram`}>
       <PowerUpIcon kind="peek" className="size-3.5" />
       {count}
+    </span>
+  )
+}
+
+function TollBadge({ price }: { price: number }) {
+  return (
+    <span className="absolute -bottom-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-rose-300 px-1.5 text-xs font-bold text-ink" title={`Responder esta custa ${price} de QI`}>
+      <PowerUpIcon kind="toll" className="size-3.5" />−{price}
     </span>
   )
 }

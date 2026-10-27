@@ -17,7 +17,8 @@ Avatar = Literal[
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
 PowerUp = Literal[
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier",
+    "backpack", "theme", "investment",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll",
 ]
 GameMode = Literal["classic", "powers"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers")
@@ -78,6 +79,7 @@ class ArmPowerUpRequest(BaseModel):
     kind: PowerUp
     target: str | None = None
     legendary: bool = False  # a versão lendária de um ataque: vale em todos os outros, sem alvo
+    theme: str | None = None  # Tema: um dos temas sorteados em `theme_choices`
 
 
 class UsePowerUpRequest(BaseModel):
@@ -124,8 +126,8 @@ class Bonus(BaseModel):
     """Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
     de erros (negativo). Uma sequência repetida na mesma partida vale a metade."""
 
-    kind: Literal["perfect_easy", "streak", "wrong_streak"]
-    count: int  # quantas fáceis ou o tamanho da sequência
+    kind: Literal["perfect_easy", "streak", "wrong_streak", "investment"]
+    count: int  # quantas fáceis, o tamanho da sequência ou o acerto do Investimento
     delta: int
     repeat: bool
 
@@ -136,6 +138,7 @@ class PowerUpUse(BaseModel):
     target: str | None  # id do alvo; None nas que valem para quem usou
     reflected_by: str | None  # quem devolveu com o Reverso (o alvo original)
     legendary: bool = False  # ataque lendário: pega todos menos quem jogou (target None)
+    theme: str | None = None  # Tema: o tema escolhido para a pergunta
 
 
 class LastingPowerUp(BaseModel):
@@ -164,6 +167,8 @@ class RoundResult(BaseModel):
     shielded: int
     stolen: int
     robbed: int
+    tolled: int  # QI pago de Pedágio
+    toll_received: int  # QI recebido de Pedágio de outros
     doubled: bool  # o delta já vem com o Dobro
     first_option: int | None  # Segunda chance: a primeira escolha, que estava errada
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
@@ -204,6 +209,8 @@ class GameView(BaseModel):
     speed_grace_ms: int  # o seu tempo de QI cheio nesta pergunta (Tempo extra aumenta, Acelerador zera)
     lasting: list[LastingPowerUp]
     silenced_rounds: int  # Silêncio em você: perguntas que faltam, contando a atual; 0 = livre
+    tolls: list[int] | None  # Pedágio em você: quanto custa responder cada alternativa
+    theme_choices: list[str]  # Tema: os temas que dá para escolher para a próxima pergunta
     powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
     ready: list[str]
     correct_option: int | None  # só aparece em results

@@ -251,6 +251,13 @@ class Game:
     used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
     # Silêncios valendo e quantas perguntas comuns faltam em cada um, contando a atual.
     silences: list[tuple[PowerUpUse, int]] = field(default_factory=list)
+    extra_slots: dict[str, int] = field(default_factory=dict)  # vagas a mais da Mochila
+    investments: dict[str, int] = field(default_factory=dict)  # acertos seguidos de cada Investimento
+    tolls: dict[str, list[tuple[str, list[int]]]] = field(default_factory=dict)  # alvo -> (quem recebe, preços)
+    # Tema: perguntas que ainda dá para pôr no lugar da próxima, e os temas sorteados nesta revelação.
+    bank: list[Question] = field(default_factory=list)
+    used: set[str] = field(default_factory=set)
+    theme_choices: list[str] = field(default_factory=list)
     leaders: set[str] = field(default_factory=set)  # em 1º depois da última rodada (o empate conta)
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
@@ -279,15 +286,28 @@ class Game:
         upcoming = self.round + 1
         return upcoming != self.bet_round and self.questions[upcoming].difficulty != FINAL_DIFFICULTY
 
+    def capacity(self, player_id: str) -> int:
+        return self.powerup_max + self.extra_slots.get(player_id, 0)
+
     def deal_powerups(self, player_ids: list[str]) -> None:
+        dealt = [kind for kind in powerups.POWERUPS if kind not in powerups.NOT_DEALT]
         for pid in player_ids:
-            kind = self.rng.choice(powerups.POWERUPS)
+            kind = self.rng.choice(dealt)
             self.powerups[pid] = [kind]
             self.starting_powerups[pid] = kind
 
     def arm(
-        self, player_id: str, kind: PowerUp, target: str | None, player_ids: list[str], legendary: bool = False
+        self,
+        player_id: str,
+        kind: PowerUp,
+        target: str | None,
+        player_ids: list[str],
+        legendary: bool = False,
+        theme: str | None = None,
     ) -> None:
+        if kind == "backpack" and not legendary:
+            self._open_backpack(player_id)
+            return
         if not self.can_arm:
             raise GameError("Agora não dá para usar habilidade.")
         if self.is_silenced(player_id):
@@ -311,8 +331,58 @@ class Game:
                 raise GameError("Escolha em quem usar.")
         else:
             target = None
+        if kind == "investment":
+            if self.questions[self.round + 1].difficulty == "easy":
+                raise GameError("O Investimento só vale a partir das médias.")
+            if player_id in self.investments:
+                raise GameError("Seu Investimento ainda está valendo.")
+        if kind == "theme":
+            if theme not in self.theme_choices:
+                raise GameError("Escolha um dos temas.")
+            if any(use.kind == "theme" for use in self.armed.values()):
+                raise GameError("Alguém já escolheu o tema da próxima pergunta.")
+            self._swap_next_question(theme)
+        else:
+            theme = None
         held.remove(kind)
-        self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None)
+        self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None, theme=theme)
+
+    def _open_backpack(self, player_id: str) -> None:
+        """Mochila: vale na hora, sem ocupar a vez de armar. Uma vaga a mais e um poder comum."""
+        if not self.powers or self.phase != "results":
+            raise GameError("Agora não dá para usar habilidade.")
+        if self.is_silenced(player_id):
+            raise GameError("Silenciado: sem habilidades por enquanto.")
+        held = self.powerups.get(player_id, [])
+        if "backpack" not in held:
+            raise GameError("Você não tem essa habilidade.")
+        if self.extra_slots.get(player_id, 0) >= powerups.BACKPACK_MAX_EXTRA:
+            raise GameError("Sua Mochila já está no tamanho máximo.")
+        held.remove("backpack")
+        self.extra_slots[player_id] = self.extra_slots.get(player_id, 0) + 1
+        held.append(self.rng.choice([kind for kind in powerups.POWERUPS if kind != "backpack"]))
+
+    def _swap_next_question(self, theme: str) -> None:
+        upcoming = self.round + 1
+        current = self.questions[upcoming]
+        if current.theme == theme:
+            return
+        pool = [q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used]
+        if not pool:
+            raise GameError("Acabaram as perguntas desse tema.")
+        question = self.rng.choice(pool)
+        self.used.add(question.id)
+        self.questions[upcoming] = _shuffle_options(question, self.rng)
+
+    def _draw_theme_choices(self) -> list[str]:
+        if not self.powers or not self.has_next_round:
+            return []
+        upcoming = self.questions[self.round + 1]
+        themes = sorted(
+            {q.theme for q in self.bank if q.difficulty == upcoming.difficulty and q.id not in self.used}
+            | {upcoming.theme}
+        )
+        return sorted(self.rng.sample(themes, min(powerups.THEME_CHOICES, len(themes))))
 
     def use_now(self, player_id: str, kind: PowerUp) -> None:
         """50/50 e Espiar: usados durante a pergunta, valem na hora."""
@@ -354,9 +424,13 @@ class Game:
         self.ready = set()
         self.first_wrong = {}
         self.hidden_options = {}
+        self.tolls = {}
+        self.theme_choices = []
         armed = list(self.armed.values())
         self.armed = {}
         for use in armed:
+            if use.kind == "investment":
+                self.investments[use.by] = 0
             if use.kind in powerups.LASTING:
                 rounds = powerups.LASTING[use.kind]
                 if use.kind == "reverse" and use.by in self.leaders:
@@ -414,6 +488,19 @@ class Game:
 
     def is_silenced(self, player_id: str) -> bool:
         return self.silence_left(player_id) > 0
+
+    def _tolls_on(self, player_id: str) -> list[tuple[str, list[int]]]:
+        """Pedágios no jogador nesta pergunta: quem recebe e o preço de cada alternativa.
+        Sorteados na primeira vez que alguém olha, para ficarem iguais até o fim da rodada."""
+        if player_id not in self.tolls:
+            tolls = []
+            for use in self._uses("toll"):
+                if use.by != player_id if use.legendary else use.target == player_id:
+                    low, high = powerups.LEGENDARY_TOLL_PRICES if use.legendary else powerups.TOLL_PRICES
+                    prices = [self.rng.randint(low, high) for _ in self.question.options]
+                    tolls.append((use.reflected_by or use.by, prices))
+            self.tolls[player_id] = tolls
+        return self.tolls[player_id]
 
     def _counts_for_powers(self) -> bool:
         return self.powers and not self.is_bet_round and self.question.difficulty != FINAL_DIFFICULTY
@@ -526,6 +613,8 @@ class Game:
                     shielded=shielded,
                     stolen=0,
                     robbed=0,
+                    tolled=0,
+                    toll_received=0,
                     doubled=doubled,
                     first_option=first.option if first and answer is not first else None,
                     expired=[],
@@ -533,6 +622,14 @@ class Game:
                 )
             )
         by_id = {r.player_id: r for r in self.results}
+        if self._counts_for_powers():
+            self._pay_investments(by_id)
+        for result in self.results:
+            for payee, prices in self._tolls_on(result.player_id):
+                price = min(prices) if result.option is None else prices[result.option]
+                result.tolled += price
+                if payee in by_id:
+                    by_id[payee].toll_received += price
         score_before = {p.id: p.score for p in players}
         for use in self.active:
             thief = by_id.get(use.by)
@@ -550,7 +647,13 @@ class Game:
                 target.robbed += share
         for player, result in zip(players, self.results):
             player.score += (
-                result.delta + sum(b.delta for b in result.bonuses) + result.bet_delta + result.stolen - result.robbed
+                result.delta
+                + sum(b.delta for b in result.bonuses)
+                + result.bet_delta
+                + result.stolen
+                - result.robbed
+                + result.toll_received
+                - result.tolled
             )
         top = max((p.score for p in players), default=0)
         self.leaders = {p.id for p in players if p.score == top}
@@ -558,7 +661,24 @@ class Game:
             self._wear_lasting()
         if self.powers and difficulty != FINAL_DIFFICULTY:
             self._powerup_gains(players)
+        self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, results_seconds(self.question.fact))
+
+    def _pay_investments(self, by_id: dict[str, RoundResult]) -> None:
+        for pid, hits in list(self.investments.items()):
+            result = by_id.get(pid)
+            if not result:
+                continue
+            if not result.correct:
+                del self.investments[pid]
+                continue
+            hits += 1
+            bonus = powerups.INVESTMENT_BONUS[hits - 1]
+            result.bonuses.append(Bonus(kind="investment", count=hits, delta=bonus, repeat=False))
+            if hits == len(powerups.INVESTMENT_BONUS):
+                del self.investments[pid]
+            else:
+                self.investments[pid] = hits
 
     def _wear_lasting(self) -> None:
         """Fim de uma pergunta comum: o Escudo que segurou um erro acaba, e todas as que duram
@@ -589,7 +709,7 @@ class Game:
                 continue
             held = self.powerups.setdefault(player.id, [])
             legendaries = self.legendaries.setdefault(player.id, [])
-            if len(held) + len(legendaries) >= self.powerup_max:
+            if len(held) + len(legendaries) >= self.capacity(player.id):
                 continue  # com as mãos cheias, a sequência continua valendo para depois
             chance = powerups.LEGENDARY_TRAILING_CHANCE if player.id in behind else powerups.LEGENDARY_CHANCE
             legendary = self.rng.random() < chance
@@ -667,7 +787,7 @@ class Game:
             bets_placed=list(self.bets),
             powerups=list(self.powerups.get(viewer, [])) if viewer else [],
             legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
-            powerup_max=self.powerup_max,
+            powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
             can_arm=self.can_arm and not silence_left,
             armed=self.armed.get(viewer) if viewer else None,
@@ -678,6 +798,8 @@ class Game:
             speed_grace_ms=round((self.grace_window(viewer) if viewer else self.speed_grace_seconds) * 1000),
             lasting=self._lasting_view(viewer) if viewer and not show_answer else [],
             silenced_rounds=silence_left,
+            tolls=self._toll_view(viewer) if viewer and self.phase in ("reading", "answering") else None,
+            theme_choices=self.theme_choices,
             powers_round=self._counts_for_powers(),
             ready=sorted(self.ready),
             correct_option=q.answer if show_answer and not hidden else None,
@@ -691,9 +813,18 @@ class Game:
             for kind, left in self.lasting.get(viewer, {}).items()
             if self._affects(kind, viewer)
         ]
+        if viewer in self.investments:
+            total = len(powerups.INVESTMENT_BONUS)
+            lasting.append(LastingPowerUp(kind="investment", rounds_left=total - self.investments[viewer], total=total))
         if silence_left := self.silence_left(viewer):
             lasting.append(LastingPowerUp(kind="silence", rounds_left=silence_left, total=powerups.SILENCE_ROUNDS))
         return lasting
+
+    def _toll_view(self, viewer: str) -> list[int] | None:
+        tolls = self._tolls_on(viewer) if self._counts_for_powers() else []
+        if not tolls:
+            return None
+        return [sum(prices[i] for _, prices in tolls) for i in range(len(self.question.options))]
 
     def _peek(self, viewer: str) -> list[int]:
         """Primeira escolha de cada um dos outros, por alternativa."""

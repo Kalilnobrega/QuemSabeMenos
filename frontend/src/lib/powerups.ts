@@ -12,12 +12,16 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   extra_time: { name: 'Tempo extra', hint: '+5s para responder e QI cheio o tempo todo nas próximas 3 perguntas.', targeted: false, tone: 'bg-lime-400/15 text-lime-200' },
   second_chance: { name: 'Segunda chance', hint: 'Vale nas próximas 2 perguntas: errou, tenta de novo valendo metade.', targeted: false, tone: 'bg-pink-400/15 text-pink-200' },
   reverse: { name: 'Reverso', hint: 'Secreto, vale por até 3 perguntas (2 se você estiver em 1º): o primeiro poder jogado em você volta para quem jogou.', targeted: false, tone: 'bg-red-500/15 text-red-200' },
+  backpack: { name: 'Mochila', hint: 'Vale na hora: +1 vaga de habilidade e +1 habilidade sorteada (até +2 vagas na partida).', targeted: false, tone: 'bg-amber-700/25 text-amber-200' },
+  theme: { name: 'Tema', hint: 'Você escolhe o tema da próxima pergunta, entre 4 sorteados. Vale para todo mundo.', targeted: false, tone: 'bg-indigo-400/15 text-indigo-200' },
+  investment: { name: 'Investimento', hint: 'Cada acerto seguido rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro erro. Só a partir das médias.', targeted: false, tone: 'bg-green-500/15 text-green-200' },
   scratch: { name: 'Raspadinha', hint: 'A próxima pergunta do alvo vem coberta: tem que raspar para ver.', targeted: true, tone: 'bg-zinc-300/15 text-zinc-200' },
   steal: { name: 'Roubo', hint: 'Na próxima, você tira 10 de QI do alvo e, se ele acertar, mais metade do que ganhar.', targeted: true, tone: 'bg-emerald-500/15 text-emerald-200' },
   scramble: { name: 'Embaralhar', hint: 'A pergunta e as alternativas do alvo vêm com as letras embaralhadas dentro das palavras.', targeted: true, tone: 'bg-fuchsia-400/15 text-fuchsia-200' },
   accelerator: { name: 'Acelerador', hint: 'O alvo tem um terço do tempo para responder e fica sem QI cheio.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
   mirror: { name: 'Espelho', hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.', targeted: true, tone: 'bg-cyan-400/15 text-cyan-200' },
   magnifier: { name: 'Lupa', hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.', targeted: true, tone: 'bg-yellow-200/15 text-yellow-100' },
+  toll: { name: 'Pedágio', hint: 'Cada alternativa do alvo ganha um preço de 3 a 8 de QI, e responder paga para você. Sem responder, paga o menor.', targeted: true, tone: 'bg-rose-400/15 text-rose-200' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
@@ -33,6 +37,8 @@ export function gainLabel(gain: PowerUpGain) {
 }
 
 export const LEGENDARY_HINT = 'Lendário: vale em todos os outros jogadores de uma vez, e o Reverso não segura.'
+export const LEGENDARY_TOLL_HINT =
+  'Na próxima, todos os outros pagam pedágio para você, com preços de 2 a 4 por alternativa. O Reverso não segura.'
 export const LEGENDARY_STEAL_HINT =
   'Na próxima, você leva um Roubo e meio dividido entre todos os outros, e quem estiver em 1º paga a parte maior. O Reverso não segura.'
 

@@ -15,11 +15,13 @@ from app.events import PowerUp, PowerUpUse
 
 POWERUPS: tuple[PowerUp, ...] = (
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier",
+    "backpack", "theme", "investment",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll",
 )
 TARGETED: frozenset[PowerUp] = frozenset(
-    {"scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier"}
+    {"scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll"}
 )
+NOT_DEALT: frozenset[PowerUp] = frozenset({"investment"})  # nunca vem no sorteio inicial
 INSTANT: frozenset[PowerUp] = frozenset({"fifty_fifty", "peek"})
 # Perguntas comuns que cada uma dura; Escudo e Reverso acabam antes, quando são usados.
 LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2, "reverse": 3}
@@ -32,7 +34,7 @@ STREAK_FOR_POWERUP = 3
 COMEBACK_ROUNDS = 3
 # QI atrás do 2º colocado (do 1º, com 2 jogadores) para o último contar como lanterna.
 COMEBACK_GAP = 20
-LEGENDARY_CHANCE = 0.05
+LEGENDARY_CHANCE = 0.06
 LEGENDARY_TRAILING_CHANCE = 0.20
 LEGENDARY_STEAL_POOL = 1.5
 LEGENDARY_STEAL_TOP_WEIGHT = 2
@@ -44,6 +46,13 @@ DOUBLE_HARD_LOSS_FACTOR = 3
 SECOND_CHANCE_SHARE = 0.5
 EXTRA_SECONDS = 5.0  # e QI cheio o tempo todo
 ACCELERATOR_FACTOR = 1 / 3  # e o QI cheio vai a zero (no Silêncio também)
+# Pedágio: cada alternativa do alvo tem um preço sorteado; quem não responde paga o menor.
+TOLL_PRICES = (3, 8)
+LEGENDARY_TOLL_PRICES = (2, 4)
+BACKPACK_MAX_EXTRA = 2  # vagas a mais que a Mochila pode dar na partida
+THEME_CHOICES = 4
+# Investimento: bônus a cada acerto seguido; acaba no primeiro erro ou depois do último.
+INVESTMENT_BONUS = (2, 4, 6, 8, 10)
 
 
 class Ranked(Protocol):

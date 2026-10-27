@@ -295,6 +295,8 @@ class RoomManager:
             rng=self.rng,
             powers=room.mode == "powers",
             powerup_max=room.powerup_max,
+            bank=bank,
+            used=room.used_questions,
         )
         if room.game.powers:
             room.game.deal_powerups([p.id for p in room.players])
@@ -324,10 +326,12 @@ class RoomManager:
             raise RoomError(str(e)) from e
         return room
 
-    def arm_powerup(self, sid: str, kind: PowerUp, target: str | None, legendary: bool = False) -> Room:
+    def arm_powerup(
+        self, sid: str, kind: PowerUp, target: str | None, legendary: bool = False, theme: str | None = None
+    ) -> Room:
         room, player = self._playing(sid)
         try:
-            room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary)
+            room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
         except GameError as e:
             raise RoomError(str(e)) from e
         return room

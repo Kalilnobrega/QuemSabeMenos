@@ -307,7 +307,7 @@ async def submit_bet(sid: str, data: dict) -> dict:
 async def arm_powerup(sid: str, data: dict) -> dict:
     try:
         request = ArmPowerUpRequest.model_validate(data)
-        room = rooms.arm_powerup(sid, request.kind, request.target, request.legendary)
+        room = rooms.arm_powerup(sid, request.kind, request.target, request.legendary, request.theme)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
