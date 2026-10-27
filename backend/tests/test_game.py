@@ -552,7 +552,22 @@ def test_legendary_attack_hits_everyone_else_and_ignores_the_reverse():
     assert game.lasting["bia"]["reverse"] == 3  # não segurou: continua guardado
 
 
-def test_legendary_steal_takes_five_plus_half_from_each():
+def test_legendary_steal_splits_one_and_a_half_steals_with_more_from_the_leader():
+    game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10)
+    ana, bia, caio, davi = P("ana", 50), P("bia", 50), P("caio", 50), P("davi", 50)
+    game.powerups = {"ana": [], "bia": [], "caio": [], "davi": []}
+    game.legendaries = {"ana": ["steal"]}
+    everyone = ["ana", "bia", "caio", "davi"]
+    reveal(game, [ana, bia, caio, davi], {"ana": 0, "bia": 0, "caio": 1, "davi": 1})  # bia fica em 1º
+    game.arm("ana", "steal", None, everyone, legendary=True)
+    # bia acerta +11 (parte de 10 + 5), caio e davi erram (10 cada): pote = 1,5 × 35/3 = 17,5
+    reveal(game, [ana, bia, caio, davi], {"ana": 1, "bia": 0, "caio": 1, "davi": 1})
+    by_id = {r.player_id: r for r in game.results}
+    assert (by_id["bia"].robbed, by_id["caio"].robbed, by_id["davi"].robbed) == (9, 4, 4)  # bia pesa 2
+    assert by_id["ana"].stolen == 17
+
+
+def test_legendary_steal_skips_a_shield_that_held_an_error():
     game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10)
     ana, bia, caio = P("ana", 50), P("bia", 50), P("caio", 50)
     game.powerups = {"ana": [], "bia": [], "caio": ["shield"]}
@@ -562,8 +577,9 @@ def test_legendary_steal_takes_five_plus_half_from_each():
     game.arm("caio", "shield", None, ["ana", "bia", "caio"])
     reveal(game, [ana, bia, caio], {"ana": 1, "bia": 0, "caio": 1})  # bia acerta +11; caio erra com escudo
     by_id = {r.player_id: r for r in game.results}
-    assert by_id["bia"].robbed == 5 + 5 and by_id["caio"].robbed == 0
-    assert by_id["ana"].stolen == 10
+    # pote = 1,5 × (15 + 10) / 2 = 18,75, empatados em 1º: metade para cada; a do caio se perde
+    assert by_id["bia"].robbed == 9 and by_id["caio"].robbed == 0
+    assert by_id["ana"].stolen == 9
 
 
 def test_everyone_ready_skips_the_reveal():
@@ -620,6 +636,16 @@ def test_double_doubles_right_and_wrong_answers():
     by_id = {r.player_id: r for r in game.results}
     assert (by_id["ana"].delta, by_id["ana"].doubled) == (22, True)
     assert by_id["bia"].delta == -20
+
+
+def test_double_triples_a_wrong_hard_answer():
+    game, ana, bia = armed_game(5, "hard")
+    arm(game, "ana", "double")
+    arm(game, "bia", "double")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 1})  # difícil: +22 na carência, -5 errando
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["ana"].delta == 44
+    assert by_id["bia"].delta == -15
 
 
 def test_second_chance_lets_you_retry_for_half():

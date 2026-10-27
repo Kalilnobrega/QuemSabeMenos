@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import { INSTANT, LEGENDARY_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
+import { INSTANT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, POWERUP_INFO, type Kind } from '../lib/powerups'
 import type { GameView, PlayerView, PowerUpUse } from '../types/events'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
@@ -326,7 +326,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
       const self: Partial<Record<Kind, string>> = {
         fifty_fifty: '50/50: duas erradas saíram.',
         shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira QI.',
-        double: 'Dobro: esta vale o dobro, para o bem e para o mal.',
+        double: 'Dobro: esta vale o dobro, para o bem e para o mal (na difícil, o erro tira o triplo).',
         peek: 'Espiar: veja nas alternativas o que a galera escolheu.',
         extra_time: 'Tempo extra: +5s e QI cheio o tempo todo nesta e nas próximas 2.',
         second_chance: 'Segunda chance nesta e na próxima: errou, tenta de novo.',
@@ -465,7 +465,8 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
         <p className="flex items-center gap-2 text-sm">
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
-            <span className="font-bold text-brand">{info.name} LENDÁRIO:</span> {info.hint} {LEGENDARY_HINT}
+            <span className="font-bold text-brand">{info.name} LENDÁRIO:</span>{' '}
+            {selected.kind === 'steal' ? LEGENDARY_STEAL_HINT : `${info.hint} ${LEGENDARY_HINT}`}
           </span>
         </p>
         <div className="flex gap-2">

@@ -8,7 +8,7 @@ export const INSTANT: Kind[] = ['fifty_fifty', 'peek']
 export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: boolean; tone: string }> = {
   fifty_fifty: { name: '50/50', hint: 'Use na hora da pergunta, pelo ícone: tira duas erradas.', targeted: false, tone: 'bg-violet-500/15 text-violet-200' },
   shield: { name: 'Escudo', hint: 'Vale por até 2 perguntas: no primeiro erro, não perde QI. Se não errar, quebra.', targeted: false, tone: 'bg-sky-400/15 text-sky-200' },
-  double: { name: 'Dobro', hint: 'A próxima resposta vale o dobro: o acerto e o erro.', targeted: false, tone: 'bg-amber-400/15 text-amber-200' },
+  double: { name: 'Dobro', hint: 'A próxima resposta vale o dobro: o acerto e o erro. Na difícil, o erro tira o triplo.', targeted: false, tone: 'bg-amber-400/15 text-amber-200' },
   peek: { name: 'Espiar', hint: 'Use na hora da pergunta, pelo ícone: mostra quantos escolheram cada alternativa.', targeted: false, tone: 'bg-teal-400/15 text-teal-200' },
   extra_time: { name: 'Tempo extra', hint: '+5s para responder e QI cheio o tempo todo nas próximas 3 perguntas.', targeted: false, tone: 'bg-lime-400/15 text-lime-200' },
   second_chance: { name: 'Segunda chance', hint: 'Vale nas próximas 2 perguntas: errou, tenta de novo valendo metade.', targeted: false, tone: 'bg-pink-400/15 text-pink-200' },
@@ -34,6 +34,8 @@ export function gainLabel(gain: PowerUpGain) {
 }
 
 export const LEGENDARY_HINT = 'Lendário: vale em todos os outros jogadores de uma vez, e o Reverso não segura.'
+export const LEGENDARY_STEAL_HINT =
+  'Na próxima, você leva um Roubo e meio dividido entre todos os outros, e quem estiver em 1º paga a parte maior. O Reverso não segura.'
 
 /** Embaralhar: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */
 export function scrambleWords(text: string, seed: number) {

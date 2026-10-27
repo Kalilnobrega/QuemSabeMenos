@@ -79,6 +79,23 @@ BET_ODDS = 1.5  # odd decimal: apostou 100 e acertou, recebe 150 (lucro 50); err
 Phase = Literal["starting", "level", "intro", "betting", "reading", "answering", "results", "finished"]
 
 
+def steal_share(target: RoundResult) -> int:
+    """Roubo normal: 10 fixos e, se o alvo acertou, mais metade do que ele ganhou."""
+    return powerups.STEAL_FIXED + max(0, int(target.delta * powerups.STEAL_GAIN_SHARE))
+
+
+def legendary_steal_shares(targets: list[RoundResult], score_before: dict[str, int]) -> list[tuple[RoundResult, int]]:
+    """Roubo lendário: 1,5 Roubo normal (pela média das vítimas) repartido entre elas; quem estava
+    em 1º antes da pergunta (empate conta) pesa mais. Assim o ladrão não ganha mais em sala grande."""
+    if not targets:
+        return []
+    pool = powerups.LEGENDARY_STEAL_POOL * sum(steal_share(t) for t in targets) / len(targets)
+    top = max(score_before.get(t.player_id, 0) for t in targets)
+    weights = [powerups.LEGENDARY_STEAL_TOP_WEIGHT if score_before.get(t.player_id, 0) == top else 1 for t in targets]
+    total = sum(weights)
+    return [(t, round(pool * w / total)) for t, w in zip(targets, weights)]
+
+
 class GameError(Exception):
     """Erro esperado, com mensagem pronta para mostrar ao jogador."""
 
@@ -478,7 +495,8 @@ class Game:
                     delta = int(delta * powerups.SECOND_CHANCE_SHARE)
             doubled = self._affects("double", player.id)
             if doubled:
-                delta *= powerups.DOUBLE_FACTOR
+                hard_loss = delta < 0 and difficulty == "hard"
+                delta *= powerups.DOUBLE_HARD_LOSS_FACTOR if hard_loss else powerups.DOUBLE_FACTOR
             shielded = -delta if delta < 0 and self._affects("shield", player.id) else 0
             bet = self.bets.get(player.id, 0) if self.is_bet_round else None
             player.answer_ms += round(max(0.0, elapsed) * 1000)
@@ -502,18 +520,19 @@ class Game:
                 )
             )
         by_id = {r.player_id: r for r in self.results}
+        score_before = {p.id: p.score for p in players}
         for use in self.active:
             thief = by_id.get(use.by)
             if use.kind != "steal" or not thief:
                 continue
             if use.legendary:
-                targets, fixed = [r for r in self.results if r is not thief], powerups.LEGENDARY_STEAL_FIXED
+                shares = legendary_steal_shares([r for r in self.results if r is not thief], score_before)
             else:
-                targets, fixed = [by_id[use.target]] if use.target in by_id else [], powerups.STEAL_FIXED
-            for target in targets:
+                target = by_id.get(use.target)
+                shares = [(target, steal_share(target))] if target else []
+            for target, share in shares:
                 if target.shielded:
                     continue
-                share = fixed + max(0, int(target.delta * powerups.STEAL_GAIN_SHARE))
                 thief.stolen += share
                 target.robbed += share
         for player, result in zip(players, self.results):

@@ -51,13 +51,17 @@ COMEBACK_ROUNDS = 3
 COMEBACK_GAP = 20
 LEGENDARY_CHANCE = 0.05
 LEGENDARY_TRAILING_CHANCE = 0.20
-LEGENDARY_STEAL_FIXED = 5  # o Roubo lendário tira menos de cada um
+# Roubo lendário: junta 1,5 Roubo normal (fixo + metade do acerto médio das vítimas) e reparte
+# entre as vítimas, com peso maior para quem está em 1º; o total não cresce com a sala.
+LEGENDARY_STEAL_POOL = 1.5
+LEGENDARY_STEAL_TOP_WEIGHT = 2
 FIFTY_FIFTY_REMOVES = 2
 # Roubo: o ladrão leva 10 fixos e, se o alvo acertar, mais metade do que ele ganhar; tudo sai do
 # alvo. O Escudo que segura o erro do alvo bloqueia o roubo.
 STEAL_FIXED = 10
 STEAL_GAIN_SHARE = 0.5
 DOUBLE_FACTOR = 2
+DOUBLE_HARD_LOSS_FACTOR = 3  # na difícil o acerto já vale muito: o erro pesa o triplo
 SECOND_CHANCE_SHARE = 0.5
 EXTRA_SECONDS = 5.0  # e QI cheio o tempo todo
 ACCELERATOR_FACTOR = 1 / 3  # e o QI cheio vai a zero (no Silêncio também)
