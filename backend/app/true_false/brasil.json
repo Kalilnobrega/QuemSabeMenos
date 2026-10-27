@@ -1,0 +1,125 @@
+{
+  "theme": "Brasil",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "O Brasil tem 26 estados e um Distrito Federal.",
+      "answer": true,
+      "fact": "O estado mais novo é o Tocantins, criado em 1988 com a parte norte de Goiás."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Antes de Brasília, a capital do Brasil era Salvador.",
+      "answer": false,
+      "fact": "Antes de Brasília a capital era o Rio de Janeiro, de 1763 a 1960. Salvador foi a primeira capital, até 1763."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Independência do Brasil foi proclamada às margens do riacho Ipiranga.",
+      "answer": true,
+      "fact": "Dom Pedro proclamou a Independência em 7 de setembro de 1822, onde hoje fica a cidade de São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A República foi proclamada por Dom Pedro II.",
+      "answer": false,
+      "fact": "A República foi proclamada pelo marechal Deodoro da Fonseca em 15 de novembro de 1889. Dom Pedro II foi deposto e exilado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "São Paulo é a cidade mais populosa do Brasil.",
+      "answer": true,
+      "fact": "A cidade de São Paulo tem mais de 11 milhões de habitantes, e a região metropolitana passa de 20 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Rio Amazonas nasce em território brasileiro.",
+      "answer": false,
+      "fact": "O Amazonas nasce nos Andes peruanos e só entra no Brasil depois de percorrer milhares de quilômetros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A bandeira do Brasil tem 27 estrelas.",
+      "answer": true,
+      "fact": "Cada estrela representa um estado ou o Distrito Federal. A última atualização foi em 1992."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O lema da bandeira do Brasil é \"Ordem e Paz\".",
+      "answer": false,
+      "fact": "O lema é \"Ordem e Progresso\", inspirado no positivismo do filósofo francês Auguste Comte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Fernando de Noronha pertence ao estado de Pernambuco.",
+      "answer": true,
+      "fact": "O arquipélago é um distrito estadual de Pernambuco, apesar de ficar mais perto do Rio Grande do Norte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Santos Dumont nasceu no Rio de Janeiro.",
+      "answer": false,
+      "fact": "Santos Dumont nasceu em 1873 em Palmira, Minas Gerais. A cidade hoje se chama Santos Dumont."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Lei Áurea, que aboliu a escravidão, foi assinada em 1888.",
+      "answer": true,
+      "fact": "A Princesa Isabel assinou a lei em 13 de maio de 1888. O Brasil foi o último país das Américas a abolir a escravidão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Brasília foi inaugurada em 1970.",
+      "answer": false,
+      "fact": "Brasília foi inaugurada em 21 de abril de 1960, no governo de Juscelino Kubitschek."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil faz fronteira com todos os países da América do Sul, menos Chile e Equador.",
+      "answer": true,
+      "fact": "São dez países vizinhos, além da Guiana Francesa, que é território da França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ponto mais alto do Brasil é o Pico da Bandeira.",
+      "answer": false,
+      "fact": "O mais alto é o Pico da Neblina, no Amazonas, com quase 3.000 m. O Pico da Bandeira fica na divisa de Minas e Espírito Santo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A CLT, Consolidação das Leis do Trabalho, foi criada no governo de Getúlio Vargas.",
+      "answer": true,
+      "fact": "A CLT foi assinada em 1943 e juntou num só texto as leis trabalhistas da época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Acre foi comprado da Argentina.",
+      "answer": false,
+      "fact": "O Acre foi comprado da Bolívia pelo Tratado de Petrópolis, de 1903, que incluiu dinheiro e a construção de uma ferrovia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Manaus fica na margem do Rio Negro.",
+      "answer": true,
+      "fact": "Perto de Manaus, o Rio Negro se encontra com o Solimões no Encontro das Águas, onde os dois correm lado a lado sem se misturar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Tiradentes era médico.",
+      "answer": false,
+      "fact": "Tiradentes era alferes, um posto militar, e ganhou o apelido porque também trabalhava como dentista. Foi executado em 1792."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dom Pedro I também foi rei de Portugal.",
+      "answer": true,
+      "fact": "Em 1826 ele virou Dom Pedro IV de Portugal, mas abdicou poucos dias depois em favor da filha, Maria II."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Bahia é o estado brasileiro com maior área.",
+      "answer": false,
+      "fact": "O maior estado é o Amazonas, com cerca de 1,56 milhão de km². A Bahia é o quinto."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "theme": "Conhecimentos gerais",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Um ano bissexto tem 366 dias.",
+      "answer": true,
+      "fact": "O dia a mais é 29 de fevereiro. Anos terminados em 00 só são bissextos se forem divisíveis por 400, como 2000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O arco-íris tem cinco cores.",
+      "answer": false,
+      "fact": "Tradicionalmente o arco-íris tem sete cores: vermelho, laranja, amarelo, verde, azul, anil e violeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Parte das igrejas ortodoxas comemora o Natal em 7 de janeiro.",
+      "answer": true,
+      "fact": "Essas igrejas seguem o calendário juliano, que hoje está 13 dias atrás do calendário que usamos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Estátua da Liberdade foi um presente da Inglaterra aos Estados Unidos.",
+      "answer": false,
+      "fact": "A estátua foi um presente da França, inaugurada em Nova York em 1886. A estrutura interna é de Gustave Eiffel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O alfabeto da língua portuguesa tem 26 letras.",
+      "answer": true,
+      "fact": "K, W e Y voltaram oficialmente ao alfabeto com o Acordo Ortográfico de 1990."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No Brasil, o dia mais longo do ano é em junho.",
+      "answer": false,
+      "fact": "No Hemisfério Sul, o dia mais longo é no solstício de dezembro. Em junho acontece o dia mais curto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Grande Muralha da China não pode ser vista a olho nu da Lua.",
+      "answer": true,
+      "fact": "É um mito: a muralha é comprida, mas estreita demais para ser vista de tão longe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um quilo de algodão pesa menos que um quilo de ferro.",
+      "answer": false,
+      "fact": "Os dois pesam exatamente um quilo. O algodão só ocupa muito mais espaço."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No Brasil, o número de emergência do SAMU é 192.",
+      "answer": true,
+      "fact": "O 190 é da Polícia Militar e o 193 é dos Bombeiros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O símbolo @ se chama cerquilha.",
+      "answer": false,
+      "fact": "O @ é a arroba. A cerquilha é o símbolo #, também chamado de jogo da velha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Cristo Redentor é uma das sete maravilhas do mundo moderno.",
+      "answer": true,
+      "fact": "As sete maravilhas modernas foram eleitas numa votação mundial anunciada em 2007, em Lisboa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Big Ben é o nome da torre do relógio do Parlamento, em Londres.",
+      "answer": false,
+      "fact": "Big Ben é o nome do sino. A torre se chama Elizabeth Tower desde 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A ONU foi fundada em 1945.",
+      "answer": true,
+      "fact": "A ONU foi criada logo depois da Segunda Guerra Mundial, com 51 países. Hoje tem 193."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A cerimônia do Oscar acontece em Nova York.",
+      "answer": false,
+      "fact": "O Oscar é entregue em Los Angeles, no Dolby Theatre, em Hollywood."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os primeiros Jogos Olímpicos da era moderna foram em Atenas, em 1896.",
+      "answer": true,
+      "fact": "Os Jogos foram recriados pelo francês Pierre de Coubertin. Em 1896, só homens competiram."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Todos os Prêmios Nobel são entregues na Suíça.",
+      "answer": false,
+      "fact": "Os prêmios são entregues em Estocolmo, na Suécia, e o da Paz em Oslo, na Noruega."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em código Morse, SOS é três pontos, três traços e três pontos.",
+      "answer": true,
+      "fact": "O SOS foi escolhido por ser fácil de transmitir e reconhecer, e não é a sigla de nenhuma frase."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O inglês é a língua com mais falantes nativos no mundo.",
+      "answer": false,
+      "fact": "O mandarim tem mais falantes nativos. O inglês só lidera quando se somam os que falam como segunda língua."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Na escala Richter, cada ponto a mais é um tremor com amplitude cerca de 10 vezes maior.",
+      "answer": true,
+      "fact": "Em energia liberada, cada ponto a mais equivale a cerca de 32 vezes mais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Bíblia tem o mesmo número de livros em todas as igrejas cristãs.",
+      "answer": false,
+      "fact": "A Bíblia protestante tem 66 livros, a católica tem 73, e algumas ortodoxas têm ainda mais."
+    }
+  ]
+}

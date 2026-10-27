@@ -1,0 +1,125 @@
+{
+  "theme": "Comida e bebida",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "O guaraná é uma fruta nativa da Amazônia.",
+      "answer": true,
+      "fact": "Os povos Sateré-Mawé já cultivavam o guaraná muito antes dos refrigerantes. A semente tem bastante cafeína."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Para a botânica, o tomate é um legume.",
+      "answer": false,
+      "fact": "Para a botânica o tomate é um fruto, porque se forma da flor e tem sementes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O feijão-preto é o ingrediente principal da feijoada tradicional.",
+      "answer": true,
+      "fact": "A feijoada clássica junta feijão-preto com carnes de porco salgadas e defumadas, e vem com arroz, couve e farofa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O vinho é feito da fermentação da cevada.",
+      "answer": false,
+      "fact": "O vinho é feito da uva. A cevada é a base da cerveja."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No Pará, o açaí é muito comido salgado, com peixe frito e farinha.",
+      "answer": true,
+      "fact": "No Pará o açaí é comida do dia a dia, sem açúcar. A versão doce com granola ficou famosa no resto do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O queijo parmesão é originário da França.",
+      "answer": false,
+      "fact": "O parmesão vem da Itália, da região de Parma e Reggio Emilia, onde se chama Parmigiano-Reggiano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O café chegou ao Brasil no século XVIII.",
+      "answer": true,
+      "fact": "As primeiras mudas chegaram ao Pará em 1727, trazidas da Guiana Francesa por Francisco de Melo Palheta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O brigadeiro foi criado em Portugal.",
+      "answer": false,
+      "fact": "O brigadeiro surgiu no Brasil nos anos 1940, numa campanha do brigadeiro Eduardo Gomes à Presidência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O pão de queijo leva polvilho em vez de farinha de trigo.",
+      "answer": true,
+      "fact": "O polvilho vem da mandioca, e por isso o pão de queijo não tem glúten."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A parte carnuda do caju é o fruto da planta.",
+      "answer": false,
+      "fact": "O fruto do caju é a castanha. A parte carnuda é o pedúnculo, chamado de pseudofruto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O wasabi da maioria dos restaurantes é feito de raiz-forte com corante.",
+      "answer": true,
+      "fact": "O wasabi verdadeiro é uma raiz cara e difícil de cultivar, então quase sempre é trocado por raiz-forte tingida de verde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qualquer espumante francês pode se chamar champanhe.",
+      "answer": false,
+      "fact": "Só o espumante da região de Champagne, feito pelas regras de lá, pode usar esse nome."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O tucupi é extraído da mandioca-brava.",
+      "answer": true,
+      "fact": "O caldo amarelo é fervido por horas para eliminar o ácido cianídrico, que é venenoso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A pimenta-do-reino é nativa das Américas.",
+      "answer": false,
+      "fact": "A pimenta-do-reino é nativa da Índia. Ela foi um dos motivos das Grandes Navegações."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ketchup já foi vendido como remédio nos Estados Unidos.",
+      "answer": true,
+      "fact": "Nos anos 1830, o tomate foi anunciado como cura para indigestão, e chegaram a vender pílulas de ketchup."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A cachaça e o rum são feitos da mesma parte da cana: o melaço.",
+      "answer": false,
+      "fact": "A cachaça é feita do caldo fresco da cana. O rum, na maioria das vezes, é feito do melaço."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A moqueca capixaba não leva azeite de dendê.",
+      "answer": true,
+      "fact": "A capixaba usa urucum e azeite de oliva, feita na panela de barro. Dendê e leite de coco são da moqueca baiana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O tiramisu leva queijo ricota.",
+      "answer": false,
+      "fact": "O tiramisu leva mascarpone, um queijo cremoso italiano, com café e biscoito champanhe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A baunilha vem de uma orquídea.",
+      "answer": true,
+      "fact": "A baunilha é a vagem de orquídeas do gênero Vanilla. Cada flor precisa ser polinizada, muitas vezes à mão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O vinho do Porto é produzido na Espanha.",
+      "answer": false,
+      "fact": "O vinho do Porto vem do Vale do Douro, em Portugal, e leva o nome da cidade de onde era exportado."
+    }
+  ]
+}

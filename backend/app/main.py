@@ -22,6 +22,7 @@ from app.events import (
     ArmPowerUpRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
+    SubmitDuelBetRequest,
     UpdateSettingsRequest,
     UsePowerUpRequest,
 )
@@ -99,6 +100,8 @@ def check_round_done(room: Room) -> None:
         (game.phase == "answering" and game.everyone_answered(room.connected_ids()))
         or (game.phase == "betting" and game.everyone_bet(connected))
         or (game.phase == "results" and game.everyone_ready(room.connected_ids()))
+        or (game.phase == "duel_betting" and game.everyone_bet_on_duel(room.connected_ids()))
+        or (game.phase == "duel_answering" and game.duel.everyone_answered())
     ):
         if event := round_done.get(room.code):
             event.set()
@@ -188,12 +191,57 @@ async def run_game(room: Room) -> None:
                 game.finish(time.monotonic())
                 await broadcast(room)
                 return
+            await run_duels(room, done, alive)
+            if not alive():
+                return
             game.start_round(time.monotonic())
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
         if match_id:
             record(history.finish, match_id, room, "finished" if game.phase == "finished" else "abandoned", time.time())
+
+
+async def run_duels(room: Room, done: asyncio.Event, alive) -> None:
+    """X1 chamados na revelação, um depois do outro: aposta da plateia, perguntas, acerto de contas."""
+    game = room.game
+
+    async def wait_phase() -> None:
+        done.clear()
+        with suppress(TimeoutError):
+            await asyncio.wait_for(done.wait(), max(0.0, game.phase_ends_at + rules.LATE_SECONDS - time.monotonic()))
+        done.clear()
+
+    while alive() and game.start_duel([p.id for p in room.players], {p.id: p.score for p in room.players}, time.monotonic()):
+        await broadcast(room)
+        await wait_phase()
+        while alive() and game.open_duel_question(time.monotonic()):
+            await broadcast(room)
+            await wait_phase()
+            if not alive():
+                return
+            game.close_duel_question(time.monotonic())
+            await broadcast(room)
+            await asyncio.sleep(max(0.0, game.phase_ends_at - time.monotonic()))
+        if not alive():
+            return
+        game.finish_duel(room.players, time.monotonic())
+        await broadcast(room)
+        await asyncio.sleep(max(0.0, game.phase_ends_at - time.monotonic()))
+
+
+@sio.event
+async def submit_duel_bet(sid: str, data: dict) -> dict:
+    try:
+        request = SubmitDuelBetRequest.model_validate(data)
+        room = rooms.duel_bet(sid, request.choice, time.monotonic())
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    check_round_done(room)
+    await broadcast(room)
+    return OkAck().model_dump()
 
 
 @sio.event

@@ -13,10 +13,14 @@ from typing import Callable, Literal, Protocol
 
 from pydantic import BaseModel, Field, model_validator
 
+from app import duel as x1
 from app import powerups
 from app.events import (
     Bonus,
     Difficulty,
+    DuelChallenge,
+    DuelPick,
+    DuelView,
     GameView,
     LastingPowerUp,
     PowerUp,
@@ -67,7 +71,11 @@ BET_MAX_PERCENT = 100
 BET_ODDS = 1.5  # apostou 100 e acertou: lucra 50; errou ou não respondeu: perde os 100
 
 
-Phase = Literal["starting", "level", "intro", "betting", "reading", "answering", "results", "finished"]
+Phase = Literal[
+    "starting", "level", "intro", "betting", "reading", "answering", "results", "finished",
+    "duel_betting", "duel_answering", "duel_results", "duel_end",
+]
+DUEL_PHASES = ("duel_betting", "duel_answering", "duel_results", "duel_end")
 
 
 def steal_share(target: RoundResult) -> int:
@@ -160,6 +168,18 @@ def _shuffle_options(question: Question, rng: random.Random) -> Question:
         update={"options": [question.options[i] for i in order], "answer": order.index(question.answer)}
     )
 
+
+def _duel_question(question: Question, kind: x1.Kind) -> x1.DuelQuestion:
+    shuffled = _shuffle_options(question, random.Random(question.id))
+    return x1.DuelQuestion(
+        id=question.id,
+        theme=question.theme,
+        kind=kind,
+        text=question.text,
+        options=shuffled.options,
+        answer=shuffled.answer,
+        fact=question.fact,
+    )
 
 def reading_seconds(text: str) -> float:
     return min(MAX_READING_SECONDS, max(MIN_READING_SECONDS, len(text) * TYPING_SECONDS_PER_CHAR))
@@ -274,6 +294,10 @@ class Game:
     bank: list[Question] = field(default_factory=list)
     used: set[str] = field(default_factory=set)
     theme_choices: list[str] = field(default_factory=list)
+    # X1: frases de Verdadeiro ou Falso, os duelos chamados nesta revelação e o que está rolando.
+    statements: list[x1.DuelQuestion] = field(default_factory=list)
+    duel_queue: list[tuple[str, str]] = field(default_factory=list)
+    duel: x1.Duel | None = None
     leaders: set[str] = field(default_factory=set)  # em 1º depois da última rodada (o empate conta)
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
@@ -763,6 +787,127 @@ class Game:
         self.revivals.append(Revival(player_id=player.id, before=player.score, after=min(ahead) - gap))
         player.score = min(ahead) - gap
 
+    def challenge(self, player_id: str, rival: str | None, player_ids: list[str]) -> None:
+        """X1: chamado na revelação; o duelo começa quando ela acaba, antes da próxima pergunta."""
+        if not self.powers or self.phase != "results" or not self.has_next_round:
+            raise GameError("Agora não dá para usar habilidade.")
+        if self.is_silenced(player_id):
+            raise GameError("Silenciado: sem habilidades por enquanto.")
+        held = self.mythics.get(player_id, [])
+        if "duel" not in held:
+            raise GameError("Você não tem essa habilidade.")
+        if rival is None or rival == player_id or rival not in player_ids:
+            raise GameError("Escolha quem vai para o X1.")
+        held.remove("duel")
+        self.duel_queue.append((player_id, rival))
+
+    def start_duel(self, player_ids: list[str], scores: dict[str, int], now: float) -> bool:
+        """Tira o próximo X1 da fila e abre a aposta da plateia. False se não tem mais nenhum."""
+        while self.duel_queue:
+            challenger, rival = self.duel_queue.pop(0)
+            if challenger in player_ids and rival in player_ids:
+                break
+        else:
+            self.duel = None
+            return False
+        questions = []
+        for kind, count in x1.LAYOUT:
+            if kind == "true_false":
+                pool = [s for s in self.statements if s.id not in self.used]
+            else:
+                pool = [
+                    _duel_question(q, kind)
+                    for q in self.bank
+                    if q.difficulty == kind and q.id not in self.used and q.id not in {o.id for o in self.questions}
+                ]
+            picked = self.rng.sample(pool, min(count, len(pool)))
+            self.used.update(q.id for q in picked)
+            questions += picked
+        bettors = [pid for pid in player_ids if pid not in (challenger, rival) and scores.get(pid, 0) >= x1.BET]
+        self.duel = x1.Duel(challenger=challenger, rival=rival, questions=questions, bettors=bettors)
+        self._enter("duel_betting", now, x1.BET_SECONDS if bettors else 0)
+        return True
+
+    def duel_bet(self, player_id: str, choice: str, now: float) -> None:
+        duel = self.duel
+        if not duel or self.phase != "duel_betting" or now > self.phase_ends_at + LATE_SECONDS:
+            raise GameError("Agora não dá para apostar.")
+        if player_id not in duel.bettors:
+            raise GameError("Você não pode apostar neste X1.")
+        if player_id in duel.bets:
+            raise GameError("Você já apostou.")
+        if choice not in duel.fighters:
+            raise GameError("Aposte em um dos dois.")
+        duel.bets[player_id] = choice
+
+    def everyone_bet_on_duel(self, connected_ids: list[str]) -> bool:
+        return bool(self.duel) and all(pid in self.duel.bets for pid in self.duel.bettors if pid in connected_ids)
+
+    def open_duel_question(self, now: float) -> bool:
+        duel = self.duel
+        if not duel or not duel.has_next():
+            return False
+        if duel.index < 0:
+            duel.fill_bets(self.rng)
+        duel.open_next(now)
+        self._enter("duel_answering", now, duel.seconds())
+        return True
+
+    def duel_answer(self, player_id: str, option: int, now: float) -> None:
+        duel = self.duel
+        if not duel or self.phase != "duel_answering" or now > duel.deadline() + LATE_SECONDS:
+            raise GameError("Agora não dá para responder.")
+        if player_id not in duel.fighters:
+            raise GameError("Só os dois do X1 respondem.")
+        if player_id in duel.answers:
+            raise GameError("Você já respondeu.")
+        if not 0 <= option < len(duel.question.options):
+            raise GameError("Alternativa inválida.")
+        duel.answers[player_id] = (option, min(now, duel.deadline()))
+
+    def close_duel_question(self, now: float) -> None:
+        self.duel.close()
+        self._enter("duel_results", now, x1.RESULTS_SECONDS)
+
+    def finish_duel(self, players: list[Scorable], now: float) -> None:
+        duel = self.duel
+        if duel.winner is None:
+            # Sem perguntas para duelar (banco vazio): decide o tempo, que é zero para os dois.
+            duel.loser, duel.winner = duel.rival, duel.challenger
+        duel.settle(players)
+        self._enter("duel_end", now, x1.END_SECONDS)
+
+    def _duel_view(self, viewer: str | None) -> DuelView | None:
+        duel = self.duel
+        if not duel or self.phase not in DUEL_PHASES:
+            return None
+        asked = duel.index >= 0
+        question = duel.question if asked else None
+        closed = self.phase in ("duel_results", "duel_end") and asked
+        return DuelView(
+            challenger=duel.challenger,
+            rival=duel.rival,
+            question_number=duel.index + 1,
+            total_questions=len(duel.questions),
+            kind=question.kind if question else None,
+            text=question.text if question else None,
+            options=question.options if question else [],
+            theme=question.theme if question else None,
+            answered=[pid for pid in duel.fighters if pid in duel.answers],
+            picks=[DuelPick(**vars(pick)) for pick in duel.picks] if closed else [],
+            correct_option=question.answer if closed else None,
+            fact=question.fact if closed else None,
+            total_ms=dict(duel.total_ms),
+            can_bet=self.phase == "duel_betting" and viewer in duel.bettors and viewer not in duel.bets,
+            my_bet=duel.bets.get(viewer) if viewer else None,
+            bets=dict(duel.bets) if self.phase == "duel_end" else {},
+            winner=duel.winner if self.phase == "duel_end" else None,
+            loser=duel.loser if self.phase == "duel_end" else None,
+            paid=duel.paid,
+            from_bets=duel.from_bets,
+            favorite_bonus=duel.favorite_bonus,
+        )
+
     def _pay_investments(self, by_id: dict[str, RoundResult]) -> None:
         for pid, hits in list(self.investments.items()):
             result = by_id.get(pid)
@@ -876,7 +1021,9 @@ class Game:
         # Silenciado não vê a revelação: nem a resposta certa, nem os resultados, nem a curiosidade.
         hidden = silence_left > 0 and show_answer
         peeking = bool(viewer) and self.phase == "answering" and self._affects("peek", viewer)
-        decoy = self._decoy_for(viewer) if viewer and self.phase not in (*PREPARATION_PHASES, "finished") else None
+        decoy = (
+            self._decoy_for(viewer) if viewer and self.phase not in (*PREPARATION_PHASES, *DUEL_PHASES, "finished") else None
+        )
         options, screen = self._screen(decoy)
         mine = self.first_wrong.get(viewer) if viewer else None
         return GameView(
@@ -888,7 +1035,7 @@ class Game:
             difficulty=q.difficulty,
             theme=q.theme,
             question=None
-            if self.phase in PREPARATION_PHASES
+            if self.phase in (*PREPARATION_PHASES, *DUEL_PHASES)
             else QuestionView(text=q.text, options=options, theme=q.theme, difficulty=q.difficulty),
             answered=[] if silence_left else [*self.answers, *self.first_wrong.keys() - self.answers.keys()],
             bet_round=None if self.bet_round is None else self.bet_round + 1,
@@ -900,6 +1047,8 @@ class Game:
             legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
             mythic_powerups=list(self.mythics.get(viewer, [])) if viewer else [],
             revivals=self.revivals,
+            duels=[DuelChallenge(challenger=c, rival=r) for c, r in self.duel_queue],
+            duel=self._duel_view(viewer),
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
             can_arm=self.can_arm and not silence_left,

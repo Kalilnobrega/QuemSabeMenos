@@ -1,0 +1,125 @@
+{
+  "theme": "Matemática e lógica",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Todo número primo maior que 2 é ímpar.",
+      "answer": true,
+      "fact": "O 2 é o único primo par, porque todo outro número par é divisível por 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A soma dos ângulos internos de um triângulo é 360°.",
+      "answer": false,
+      "fact": "A soma é 180°. 360° é a soma dos ângulos internos de um quadrilátero."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Zero é um número par.",
+      "answer": true,
+      "fact": "Zero é par porque é divisível por 2: 0 ÷ 2 = 0, sem resto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 1 é primo.",
+      "answer": false,
+      "fact": "Um número primo tem exatamente dois divisores. O 1 só tem um, ele mesmo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A raiz quadrada de 144 é 12.",
+      "answer": true,
+      "fact": "144 é 12 × 12 e também é chamado de grosa, uma dúzia de dúzias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um quadrado de lado 4 tem área 16 e perímetro 20.",
+      "answer": false,
+      "fact": "O perímetro é 4 + 4 + 4 + 4 = 16. Por coincidência, área e perímetro são iguais nesse quadrado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em algarismos romanos, MMXXVI é 2026.",
+      "answer": true,
+      "fact": "M vale 1.000, X vale 10, V vale 5 e I vale 1: 1.000 + 1.000 + 10 + 10 + 5 + 1."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dividir por 0,5 é o mesmo que dividir por 2.",
+      "answer": false,
+      "fact": "Dividir por 0,5 é o mesmo que multiplicar por 2: 10 ÷ 0,5 = 20."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um dia tem 1.440 minutos.",
+      "answer": true,
+      "fact": "São 24 horas × 60 minutos, ou 86.400 segundos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se um preço sobe 50% e depois cai 50%, volta ao valor original.",
+      "answer": false,
+      "fact": "Fica mais barato: 100 sobe para 150, e 50% de desconto em 150 dá 75."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Existem infinitos números primos.",
+      "answer": true,
+      "fact": "Euclides provou isso por volta de 300 a.C., numa das demonstrações mais famosas da matemática."
+    },
+    {
+      "difficulty": "hard",
+      "text": "0,999… com noves infinitos é menor que 1.",
+      "answer": false,
+      "fact": "0,999… é exatamente igual a 1. Por exemplo: 1/3 = 0,333…, e 3 × 1/3 = 0,999… = 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Num grupo de 23 pessoas, a chance de duas fazerem aniversário no mesmo dia passa de 50%.",
+      "answer": true,
+      "fact": "É o paradoxo do aniversário: com 23 pessoas a chance é de cerca de 50,7%, e com 70 passa de 99,9%."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O número π é igual a 22/7.",
+      "answer": false,
+      "fact": "22/7 é só uma aproximação. π é irracional: tem infinitas casas decimais sem repetição."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A sequência de Fibonacci começa 1, 1, 2, 3, 5, 8.",
+      "answer": true,
+      "fact": "Cada termo é a soma dos dois anteriores, e a razão entre eles se aproxima do número de ouro, 1,618…"
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um ano tem exatamente 52 semanas.",
+      "answer": false,
+      "fact": "Um ano tem 52 semanas e 1 dia, ou 2 nos anos bissextos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "2 elevado a 10 é 1.024.",
+      "answer": true,
+      "fact": "É por isso que um kilobyte já foi definido como 1.024 bytes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um cubo tem 8 arestas.",
+      "answer": false,
+      "fact": "Um cubo tem 12 arestas, 8 vértices e 6 faces."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A soma de todos os números de 1 a 100 é 5.050.",
+      "answer": true,
+      "fact": "Conta-se que Gauss descobriu isso criança: somou 1 + 100, 2 + 99… e achou 50 pares de 101."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No problema de Monty Hall, trocar de porta não muda a chance de ganhar.",
+      "answer": false,
+      "fact": "Trocar de porta dobra a chance: quem troca ganha 2/3 das vezes, e quem fica ganha 1/3."
+    }
+  ]
+}

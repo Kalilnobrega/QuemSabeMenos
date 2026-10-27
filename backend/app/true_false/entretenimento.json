@@ -1,0 +1,125 @@
+{
+  "theme": "Entretenimento",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Titanic ganhou o Oscar de melhor filme.",
+      "answer": true,
+      "fact": "Titanic ganhou 11 Oscars em 1998, recorde que divide com Ben-Hur e O Senhor dos Anéis: O Retorno do Rei."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Harry Potter estuda na escola de magia Beauxbatons.",
+      "answer": false,
+      "fact": "Harry estuda em Hogwarts. Beauxbatons é a escola francesa que aparece em O Cálice de Fogo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os Beatles eram de Liverpool.",
+      "answer": true,
+      "fact": "Os quatro integrantes nasceram em Liverpool, na Inglaterra, onde a banda começou tocando no Cavern Club."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Rei Leão se passa na Índia.",
+      "answer": false,
+      "fact": "O Rei Leão se passa na savana africana, e vários nomes vêm do suaíli: Simba quer dizer leão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Xou da Xuxa era exibido na TV Globo.",
+      "answer": true,
+      "fact": "O programa ficou no ar de 1986 a 1992 e lançou músicas como Ilariê."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A série Friends se passa em Los Angeles.",
+      "answer": false,
+      "fact": "Friends se passa em Nova York, e a maior parte das cenas acontece no café Central Perk."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Darth Vader é o pai de Luke Skywalker.",
+      "answer": true,
+      "fact": "A revelação está em O Império Contra-Ataca, de 1980, e foi guardada em segredo até do elenco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Jackson lançou o álbum Thriller nos anos 1990.",
+      "answer": false,
+      "fact": "Thriller é de 1982 e é considerado o álbum mais vendido da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Chaves é uma série mexicana.",
+      "answer": true,
+      "fact": "Chaves foi criado por Roberto Gómez Bolaños, que também fazia o personagem, e estreou em 1971."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Shrek é um personagem da Pixar.",
+      "answer": false,
+      "fact": "Shrek é da DreamWorks. O primeiro filme, de 2001, ganhou o primeiro Oscar de melhor animação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Toy Story foi o primeiro longa-metragem feito todo em computação gráfica.",
+      "answer": true,
+      "fact": "Toy Story é de 1995. A Pixar levou cerca de quatro anos para terminar o filme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Cidade de Deus foi o primeiro filme brasileiro indicado ao Oscar de melhor filme.",
+      "answer": false,
+      "fact": "Cidade de Deus foi indicado em quatro categorias, mas não em melhor filme. O primeiro foi Ainda Estou Aqui, em 2025."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A série Breaking Bad se passa em Albuquerque, no Novo México.",
+      "answer": true,
+      "fact": "A cidade virou ponto turístico: a casa de Walter White recebia tantos fãs que os donos colocaram uma cerca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Senhor dos Anéis foi escrito por C. S. Lewis.",
+      "answer": false,
+      "fact": "O Senhor dos Anéis é de J. R. R. Tolkien. C. S. Lewis, amigo dele, escreveu As Crônicas de Nárnia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Tom Jobim é um dos compositores de Garota de Ipanema.",
+      "answer": true,
+      "fact": "Garota de Ipanema é de Tom Jobim e Vinicius de Moraes, de 1962. É uma das músicas mais gravadas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro filme de James Bond foi 007 Contra Goldfinger.",
+      "answer": false,
+      "fact": "O primeiro foi 007 Contra o Satânico Dr. No, de 1962, com Sean Connery."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Elvis Presley nunca fez shows fora da América do Norte.",
+      "answer": true,
+      "fact": "Fora dos Estados Unidos, Elvis só se apresentou no Canadá, em 1957."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Turma da Mônica foi criada por Ziraldo.",
+      "answer": false,
+      "fact": "A Turma da Mônica é de Mauricio de Sousa. Ziraldo criou o Menino Maluquinho e a Turma do Pererê."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Pica-Pau foi criado por Walter Lantz.",
+      "answer": true,
+      "fact": "O Pica-Pau estreou em 1940. A risada característica foi feita no começo por Mel Blanc."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A banda Legião Urbana surgiu em São Paulo.",
+      "answer": false,
+      "fact": "A Legião Urbana surgiu em Brasília, em 1982, assim como Capital Inicial e Plebe Rude."
+    }
+  ]
+}

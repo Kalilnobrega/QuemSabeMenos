@@ -25,7 +25,8 @@
             "toll",
             "decoy",
             "flashbang",
-            "resurrection"
+            "resurrection",
+            "duel"
           ],
           "type": "string"
         },
@@ -129,6 +130,229 @@
       "title": "CreateRoomRequest",
       "type": "object"
     },
+    "DuelChallenge": {
+      "properties": {
+        "challenger": {
+          "type": "string"
+        },
+        "rival": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "challenger",
+        "rival"
+      ],
+      "title": "DuelChallenge",
+      "type": "object"
+    },
+    "DuelPick": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "elapsed_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "player_id",
+        "option",
+        "correct",
+        "elapsed_ms"
+      ],
+      "title": "DuelPick",
+      "type": "object"
+    },
+    "DuelView": {
+      "description": "X1 em andamento. Fases: duel_betting (a plateia aposta) → duel_answering → duel_results,\npergunta a pergunta, até alguém perder → duel_end (o acerto de contas).",
+      "properties": {
+        "challenger": {
+          "type": "string"
+        },
+        "rival": {
+          "type": "string"
+        },
+        "question_number": {
+          "type": "integer"
+        },
+        "total_questions": {
+          "type": "integer"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "enum": [
+                "true_false",
+                "hard",
+                "impossible"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "answered": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "picks": {
+          "items": {
+            "$ref": "#/$defs/DuelPick"
+          },
+          "type": "array"
+        },
+        "correct_option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "total_ms": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "type": "object"
+        },
+        "can_bet": {
+          "type": "boolean"
+        },
+        "my_bet": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bets": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "winner": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "loser": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "paid": {
+          "type": "integer"
+        },
+        "from_bets": {
+          "type": "integer"
+        },
+        "favorite_bonus": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "challenger",
+        "rival",
+        "question_number",
+        "total_questions",
+        "kind",
+        "text",
+        "options",
+        "theme",
+        "answered",
+        "picks",
+        "correct_option",
+        "fact",
+        "total_ms",
+        "can_bet",
+        "my_bet",
+        "bets",
+        "winner",
+        "loser",
+        "paid",
+        "from_bets",
+        "favorite_bonus"
+      ],
+      "title": "DuelView",
+      "type": "object"
+    },
     "ErrorAck": {
       "properties": {
         "ok": {
@@ -165,7 +389,11 @@
             "reading",
             "answering",
             "results",
-            "finished"
+            "finished",
+            "duel_betting",
+            "duel_answering",
+            "duel_results",
+            "duel_end"
           ],
           "type": "string"
         },
@@ -254,7 +482,8 @@
               "toll",
               "decoy",
               "flashbang",
-              "resurrection"
+              "resurrection",
+              "duel"
             ],
             "type": "string"
           },
@@ -283,7 +512,8 @@
               "toll",
               "decoy",
               "flashbang",
-              "resurrection"
+              "resurrection",
+              "duel"
             ],
             "type": "string"
           },
@@ -312,7 +542,8 @@
               "toll",
               "decoy",
               "flashbang",
-              "resurrection"
+              "resurrection",
+              "duel"
             ],
             "type": "string"
           },
@@ -323,6 +554,22 @@
             "$ref": "#/$defs/Revival"
           },
           "type": "array"
+        },
+        "duels": {
+          "items": {
+            "$ref": "#/$defs/DuelChallenge"
+          },
+          "type": "array"
+        },
+        "duel": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DuelView"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "powerup_max": {
           "type": "integer"
@@ -351,7 +598,8 @@
                 "toll",
                 "decoy",
                 "flashbang",
-                "resurrection"
+                "resurrection",
+                "duel"
               ],
               "type": "string"
             },
@@ -497,6 +745,8 @@
         "legendary_powerups",
         "mythic_powerups",
         "revivals",
+        "duels",
+        "duel",
         "powerup_max",
         "starting_powerup",
         "can_arm",
@@ -612,7 +862,8 @@
             "toll",
             "decoy",
             "flashbang",
-            "resurrection"
+            "resurrection",
+            "duel"
           ],
           "type": "string"
         },
@@ -735,7 +986,8 @@
             "toll",
             "decoy",
             "flashbang",
-            "resurrection"
+            "resurrection",
+            "duel"
           ],
           "type": "string"
         },
@@ -787,7 +1039,8 @@
             "toll",
             "decoy",
             "flashbang",
-            "resurrection"
+            "resurrection",
+            "duel"
           ],
           "type": "string"
         },
@@ -1163,7 +1416,8 @@
               "toll",
               "decoy",
               "flashbang",
-              "resurrection"
+              "resurrection",
+              "duel"
             ],
             "type": "string"
           },
@@ -1227,6 +1481,19 @@
         "amount"
       ],
       "title": "SubmitBetRequest",
+      "type": "object"
+    },
+    "SubmitDuelBetRequest": {
+      "description": "X1: o id do duelista em quem a plateia aposta.",
+      "properties": {
+        "choice": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "choice"
+      ],
+      "title": "SubmitDuelBetRequest",
       "type": "object"
     },
     "UpdateSettingsRequest": {
@@ -1334,7 +1601,8 @@
             "toll",
             "decoy",
             "flashbang",
-            "resurrection"
+            "resurrection",
+            "duel"
           ],
           "type": "string"
         }

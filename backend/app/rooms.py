@@ -24,6 +24,7 @@ from app.events import (
     RoomSettings,
     RoomState,
 )
+from app.duel import DuelQuestion, load_statements
 from app.game import (
     SPEED_GRACE_SECONDS,
     STARTING_IQ,
@@ -148,8 +149,14 @@ def normalize_nickname(nickname: str) -> str:
 
 
 class RoomManager:
-    def __init__(self, bank: list[Question] | None = None, rng: random.Random | None = None) -> None:
+    def __init__(
+        self,
+        bank: list[Question] | None = None,
+        rng: random.Random | None = None,
+        statements: list[DuelQuestion] | None = None,
+    ) -> None:
         self.bank = load_bank() if bank is None else bank
+        self.statements = load_statements() if statements is None else statements
         self.theme_options = sorted({q.theme for q in self.bank})
         self.rng = rng or random.Random()
         self.rooms: dict[str, Room] = {}
@@ -297,6 +304,7 @@ class RoomManager:
             powerup_max=room.powerup_max,
             bank=bank,
             used=room.used_questions,
+            statements=[s for s in self.statements if s.theme in room.themes],
         )
         if room.game.powers:
             room.game.deal_powerups([p.id for p in room.players])
@@ -310,7 +318,10 @@ class RoomManager:
             raise RoomError("Não tem partida rolando.")
         room, player = found
         try:
-            room.game.answer(player.id, option, now)
+            if room.game.phase == "duel_answering":
+                room.game.duel_answer(player.id, option, now)
+            else:
+                room.game.answer(player.id, option, now)
         except GameError as e:
             raise RoomError(str(e)) from e
         return room
@@ -333,8 +344,18 @@ class RoomManager:
         try:
             if kind == "resurrection":
                 room.game.resurrect(player, room.players)
+            elif kind == "duel":
+                room.game.challenge(player.id, target, [p.id for p in room.players])
             else:
                 room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
+
+    def duel_bet(self, sid: str, choice: str, now: float) -> Room:
+        room, player = self._playing(sid)
+        try:
+            room.game.duel_bet(player.id, choice, now)
         except GameError as e:
             raise RoomError(str(e)) from e
         return room

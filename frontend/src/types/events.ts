@@ -36,7 +36,8 @@ export interface ArmPowerUpRequest {
     | "toll"
     | "decoy"
     | "flashbang"
-    | "resurrection";
+    | "resurrection"
+    | "duel";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -80,6 +81,58 @@ export interface CreateRoomRequest {
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "DuelChallenge".
+ */
+export interface DuelChallenge {
+  challenger: string;
+  rival: string;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "DuelPick".
+ */
+export interface DuelPick {
+  player_id: string;
+  option: number | null;
+  correct: boolean;
+  elapsed_ms: number | null;
+}
+/**
+ * X1 em andamento. Fases: duel_betting (a plateia aposta) → duel_answering → duel_results,
+ * pergunta a pergunta, até alguém perder → duel_end (o acerto de contas).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "DuelView".
+ */
+export interface DuelView {
+  challenger: string;
+  rival: string;
+  question_number: number;
+  total_questions: number;
+  kind: ("true_false" | "hard" | "impossible") | null;
+  text: string | null;
+  options: string[];
+  theme: string | null;
+  answered: string[];
+  picks: DuelPick[];
+  correct_option: number | null;
+  fact: string | null;
+  total_ms: {
+    [k: string]: number;
+  };
+  can_bet: boolean;
+  my_bet: string | null;
+  bets: {
+    [k: string]: string;
+  };
+  winner: string | null;
+  loser: string | null;
+  paid: number;
+  from_bets: number;
+  favorite_bonus: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "ErrorAck".
  */
 export interface ErrorAck {
@@ -99,7 +152,19 @@ export interface ErrorAck {
 export interface GameView {
   round: number;
   total_rounds: number;
-  phase: "starting" | "level" | "intro" | "betting" | "reading" | "answering" | "results" | "finished";
+  phase:
+    | "starting"
+    | "level"
+    | "intro"
+    | "betting"
+    | "reading"
+    | "answering"
+    | "results"
+    | "finished"
+    | "duel_betting"
+    | "duel_answering"
+    | "duel_results"
+    | "duel_end";
   phase_duration_ms: number;
   phase_ends_in_ms: number;
   difficulty: "easy" | "medium" | "hard" | "impossible";
@@ -133,6 +198,7 @@ export interface GameView {
     | "decoy"
     | "flashbang"
     | "resurrection"
+    | "duel"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -156,6 +222,7 @@ export interface GameView {
     | "decoy"
     | "flashbang"
     | "resurrection"
+    | "duel"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -179,8 +246,11 @@ export interface GameView {
     | "decoy"
     | "flashbang"
     | "resurrection"
+    | "duel"
   )[];
   revivals: Revival[];
+  duels: DuelChallenge[];
+  duel: DuelView | null;
   powerup_max: number;
   starting_powerup:
     | (
@@ -205,6 +275,7 @@ export interface GameView {
         | "decoy"
         | "flashbang"
         | "resurrection"
+        | "duel"
       )
     | null;
   can_arm: boolean;
@@ -272,7 +343,8 @@ export interface PowerUpUse {
     | "toll"
     | "decoy"
     | "flashbang"
-    | "resurrection";
+    | "resurrection"
+    | "duel";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -307,7 +379,8 @@ export interface LastingPowerUp {
     | "toll"
     | "decoy"
     | "flashbang"
-    | "resurrection";
+    | "resurrection"
+    | "duel";
   rounds_left: number;
   total: number;
 }
@@ -355,6 +428,7 @@ export interface RoundResult {
     | "decoy"
     | "flashbang"
     | "resurrection"
+    | "duel"
   )[];
   gained: PowerUpGain | null;
 }
@@ -384,7 +458,8 @@ export interface PowerUpGain {
     | "toll"
     | "decoy"
     | "flashbang"
-    | "resurrection";
+    | "resurrection"
+    | "duel";
   reason: "start" | "streak" | "comeback";
   legendary?: boolean;
   mythic?: boolean;
@@ -526,6 +601,15 @@ export interface SubmitBetRequest {
   amount: number;
 }
 /**
+ * X1: o id do duelista em quem a plateia aposta.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "SubmitDuelBetRequest".
+ */
+export interface SubmitDuelBetRequest {
+  choice: string;
+}
+/**
  * Só os campos enviados mudam.
  *
  * This interface was referenced by `Events`'s JSON-Schema
@@ -567,5 +651,6 @@ export interface UsePowerUpRequest {
     | "toll"
     | "decoy"
     | "flashbang"
-    | "resurrection";
+    | "resurrection"
+    | "duel";
 }

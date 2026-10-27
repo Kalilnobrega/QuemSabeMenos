@@ -287,3 +287,32 @@ async def test_history_download_needs_the_token(server_url, monkeypatch):
         assert (await client.get("/history.db", headers={"Authorization": "Bearer errado"})).status_code == 404
         response = await client.get("/history.db", headers={"Authorization": "Bearer segredo"})
     assert response.status_code == 200 and response.content.startswith(b"SQLite format 3")
+
+
+async def test_duel_stops_the_match_and_then_it_goes_on(connect, monkeypatch):
+    from app import duel as x1
+
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(x1, "FIRST_SECONDS", 0.6)
+    monkeypatch.setattr(x1, "STEP_SECONDS", 0.0)
+    monkeypatch.setattr(x1, "RESULTS_SECONDS", 0.02)
+    monkeypatch.setattr(x1, "END_SECONDS", 0.05)
+    ana, bia, created, joined = await setup_room(connect)
+    await ana.call("update_settings", {"rounds": 10, "mode": "powers"})
+    await ana.call("start_game")
+    await ana.wait_for(lambda s: s["game"] is not None and s["game"]["phase"] == "answering")
+    await ana.call("submit_answer", {"option": 0})
+    await bia.call("submit_answer", {"option": 0})
+    await ana.wait_for(lambda s: s["game"]["phase"] == "results")
+    main.rooms.rooms[created["room"]["code"]].game.mythics[created["player_id"]] = ["duel"]
+    assert (await ana.call("arm_powerup", {"kind": "duel", "target": joined["player_id"]}))["ok"]
+    assert (await bia.wait_for(lambda s: s["game"]["duels"] != []))["game"]["duels"][0]["rival"] == joined["player_id"]
+    await ana.call("skip_results")
+    await bia.call("skip_results")
+    state = await ana.wait_for(lambda s: s["game"]["phase"] == "duel_answering")
+    assert state["game"]["duel"]["question_number"] == 1 and state["game"]["duel"]["kind"] == "true_false"
+    # Ninguém responde: os dois "erram" todas, e no fim o tempo empata e decide.
+    end = await ana.wait_for(lambda s: s["game"]["phase"] == "duel_end", timeout=10)
+    assert end["game"]["duel"]["winner"] in (created["player_id"], joined["player_id"])
+    await ana.wait_for(lambda s: s["game"]["round"] == 2 and s["game"]["phase"] in ("reading", "answering"), timeout=3)

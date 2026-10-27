@@ -1,0 +1,125 @@
+{
+  "theme": "Artes",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "A Noite Estrelada foi pintada por Vincent van Gogh.",
+      "answer": true,
+      "fact": "Van Gogh pintou o quadro em 1889, enquanto estava internado num hospital psiquiátrico em Saint-Rémy-de-Provence, na França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A escultura O Pensador é de Michelangelo.",
+      "answer": false,
+      "fact": "O Pensador é de Auguste Rodin, escultor francês. Ela nasceu como parte de uma obra maior, A Porta do Inferno."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tarsila do Amaral pintou o Abaporu.",
+      "answer": true,
+      "fact": "Tarsila pintou o Abaporu em 1928 como presente para Oswald de Andrade. O quadro inspirou o Movimento Antropofágico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Mona Lisa está exposta no Museu do Prado, em Madri.",
+      "answer": false,
+      "fact": "A Mona Lisa fica no Museu do Louvre, em Paris, atrás de um vidro à prova de balas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A música do balé O Lago dos Cisnes é de Tchaikovsky.",
+      "answer": true,
+      "fact": "O Lago dos Cisnes estreou em 1877, em Moscou, e no começo não fez sucesso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dom Casmurro foi escrito por José de Alencar.",
+      "answer": false,
+      "fact": "Dom Casmurro é de Machado de Assis, publicado em 1899. Até hoje se discute se Capitu traiu Bentinho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Romeu e Julieta é uma tragédia de William Shakespeare.",
+      "answer": true,
+      "fact": "Shakespeare escreveu Romeu e Julieta por volta de 1595. A história se passa em Verona, na Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Beethoven compôs a ópera A Flauta Mágica.",
+      "answer": false,
+      "fact": "A Flauta Mágica é de Mozart e estreou em Viena em 1791, poucos meses antes da morte dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os Lusíadas foi escrito por Luís de Camões.",
+      "answer": true,
+      "fact": "Publicado em 1572, Os Lusíadas é uma epopeia que conta a viagem de Vasco da Gama às Índias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Cristo Redentor foi projetado por Oscar Niemeyer.",
+      "answer": false,
+      "fact": "O projeto é do engenheiro Heitor da Silva Costa, e o rosto foi esculpido pelo romeno Gheorghe Leonida. O Cristo foi inaugurado em 1931."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Grito, de Edvard Munch, existe em uma única versão.",
+      "answer": false,
+      "fact": "Munch fez várias versões de O Grito: pinturas, pastéis e uma litografia. Duas delas já foram roubadas e recuperadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Salvador Dalí pintou A Persistência da Memória, o quadro dos relógios derretidos.",
+      "answer": true,
+      "fact": "O quadro é de 1931 e é pequeno, cerca de 24 × 33 cm. Fica no MoMA, em Nova York."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Moça com Brinco de Pérola foi pintada por Johannes Vermeer.",
+      "answer": true,
+      "fact": "Vermeer pintou o quadro por volta de 1665. Ele fica no museu Mauritshuis, em Haia, na Holanda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os painéis Guerra e Paz, de Portinari, ficam no Palácio do Planalto.",
+      "answer": false,
+      "fact": "Guerra e Paz foi um presente do Brasil à ONU e fica na sede da organização, em Nova York, desde 1957."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Aleijadinho esculpiu os profetas do Santuário de Bom Jesus de Matosinhos, em Congonhas.",
+      "answer": true,
+      "fact": "São doze profetas esculpidos em pedra-sabão entre 1800 e 1805, quando Aleijadinho já sofria com a doença que lhe deu o apelido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Claude Monet pintou O Nascimento de Vênus.",
+      "answer": false,
+      "fact": "O Nascimento de Vênus é de Sandro Botticelli, pintado por volta de 1485. Fica na Galeria Uffizi, em Florença."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Frida Kahlo foi casada com o muralista Diego Rivera.",
+      "answer": true,
+      "fact": "Frida e Diego se casaram em 1929, se divorciaram e se casaram de novo em 1940."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O teto da Capela Sistina foi pintado por Rafael.",
+      "answer": false,
+      "fact": "O teto é obra de Michelangelo, que o pintou entre 1508 e 1512, quase sempre em pé, olhando para cima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Semana de Arte Moderna de 1922 aconteceu no Theatro Municipal de São Paulo.",
+      "answer": true,
+      "fact": "A Semana teve três noites de festival em fevereiro de 1922, com vaias e aplausos do público."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Picasso pintou Guernica para retratar um bombardeio da Primeira Guerra Mundial.",
+      "answer": false,
+      "fact": "Guernica retrata o bombardeio da cidade basca em 1937, durante a Guerra Civil Espanhola."
+    }
+  ]
+}

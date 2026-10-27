@@ -160,6 +160,15 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'duel') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M3 3h4l10 10-2 2L5 5V3Z" fill="#E9D5FF" {...ICON_STROKE} />
+        <path d="M21 3h-4L7 13l2 2L19 5V3Z" fill="#C084FC" {...ICON_STROKE} />
+        <path d="m5 15 4 4M15 19l4-4M4.5 19.5l2-2M19.5 19.5l-2-2" {...ICON_STROKE} strokeWidth={2.2} />
+      </svg>
+    )
+  }
   if (kind === 'resurrection') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -537,10 +546,29 @@ export function PowerUpBar({ powers, game, players, playerId, onArm, onSkip }: B
             <span className="font-bold text-purple-300">{info.name} MÍTICO:</span> {info.hint}
           </span>
         </p>
+        {selected.kind === 'duel' && (
+          <>
+            <p className="text-sm font-semibold text-steel">Quem vai para o X1?</p>
+            <div className="flex flex-wrap gap-2">
+              {targets.map((p) => (
+                <button
+                  key={p.id}
+                  onClick={() => void arm(selected.kind, p.id)}
+                  className="btn-3d btn-sm mythic flex items-center gap-1.5 rounded-xl py-1 pr-3 pl-1 text-sm font-semibold"
+                >
+                  <img src={AVATAR_URLS[p.avatar]} alt="" className="size-7" />
+                  <span className="max-w-24 truncate">{p.nickname}</span>
+                </button>
+              ))}
+            </div>
+          </>
+        )}
         <div className="flex gap-2">
-          <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg">
-            Usar agora
-          </button>
+          {selected.kind !== 'duel' && (
+            <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg">
+              Usar agora
+            </button>
+          )}
           <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
             Cancelar
           </button>

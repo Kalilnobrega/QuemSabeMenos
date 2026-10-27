@@ -1,0 +1,125 @@
+{
+  "theme": "Geografia",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "O Rio Nilo atravessa o Egito.",
+      "answer": true,
+      "fact": "O Nilo corre para o norte e deságua no Mar Mediterrâneo. Quase toda a população do Egito vive perto dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Austrália fica no Hemisfério Norte.",
+      "answer": false,
+      "fact": "A Austrália fica no Hemisfério Sul, e por isso o Natal lá cai no verão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Monte Everest fica na cordilheira do Himalaia.",
+      "answer": true,
+      "fact": "O Everest fica na fronteira entre o Nepal e a China e tem cerca de 8.849 m."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capital da Austrália é Sydney.",
+      "answer": false,
+      "fact": "A capital é Camberra, construída para encerrar a disputa entre Sydney e Melbourne."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Rússia é o maior país do mundo em área.",
+      "answer": true,
+      "fact": "A Rússia tem mais de 17 milhões de km² e 11 fusos horários."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Deserto do Saara fica na Ásia.",
+      "answer": false,
+      "fact": "O Saara fica no norte da África e é o maior deserto quente do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Japão é formado por milhares de ilhas.",
+      "answer": true,
+      "fact": "O Japão tem mais de 14 mil ilhas, mas quase todo mundo vive nas quatro maiores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Canadá é o país mais populoso da América do Norte.",
+      "answer": false,
+      "fact": "O mais populoso é os Estados Unidos. O Canadá é maior em área, mas tem cerca de 40 milhões de habitantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Oceano Pacífico é o maior do planeta.",
+      "answer": true,
+      "fact": "O Pacífico cobre cerca de um terço da superfície da Terra, mais do que todos os continentes juntos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capital da Turquia é Istambul.",
+      "answer": false,
+      "fact": "A capital é Ancara. Istambul é a maior cidade e fica entre a Europa e a Ásia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Bolívia tem duas capitais: Sucre e La Paz.",
+      "answer": true,
+      "fact": "Sucre é a capital constitucional, e La Paz é a sede do governo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Rio Amazonas deságua no Oceano Pacífico.",
+      "answer": false,
+      "fact": "O Amazonas deságua no Oceano Atlântico, entre o Pará e o Amapá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Lago Titicaca fica na fronteira entre Peru e Bolívia.",
+      "answer": true,
+      "fact": "A cerca de 3.800 m de altitude, é o lago navegável mais alto do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Groenlândia é um país independente.",
+      "answer": false,
+      "fact": "A Groenlândia é um território autônomo do Reino da Dinamarca. É a maior ilha do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Vaticano é o menor país do mundo.",
+      "answer": true,
+      "fact": "O Vaticano tem menos de meio quilômetro quadrado e fica dentro de Roma."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ponto mais baixo da superfície terrestre é o Vale da Morte, nos Estados Unidos.",
+      "answer": false,
+      "fact": "O mais baixo são as margens do Mar Morto, a mais de 400 m abaixo do nível do mar. O Vale da Morte é o mais baixo da América do Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Indonésia é o país com mais muçulmanos do mundo.",
+      "answer": true,
+      "fact": "A Indonésia tem mais de 230 milhões de muçulmanos e é formada por mais de 17 mil ilhas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Rio Danúbio passa por Paris.",
+      "answer": false,
+      "fact": "Paris é cortada pelo Sena. O Danúbio passa por capitais como Viena, Bratislava, Budapeste e Belgrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Cazaquistão é o maior país do mundo sem saída para o mar.",
+      "answer": true,
+      "fact": "O Cazaquistão tem cerca de 2,7 milhões de km² e é banhado só pelo Mar Cáspio, que é um lago."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Nova Zelândia fica na Ásia.",
+      "answer": false,
+      "fact": "A Nova Zelândia fica na Oceania, a cerca de 2.000 km a sudeste da Austrália."
+    }
+  ]
+}

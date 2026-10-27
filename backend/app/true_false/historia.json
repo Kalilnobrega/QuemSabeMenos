@@ -1,0 +1,125 @@
+{
+  "theme": "História",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Cristóvão Colombo chegou à América em 1492.",
+      "answer": true,
+      "fact": "Colombo chegou às Bahamas achando que estava nas Índias, por isso os povos nativos foram chamados de índios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Napoleão Bonaparte era italiano.",
+      "answer": false,
+      "fact": "Napoleão nasceu na Córsega em 1769, um ano depois de a ilha passar a ser francesa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Muro de Berlim caiu em 1989.",
+      "answer": true,
+      "fact": "O muro caiu em 9 de novembro de 1989, e a Alemanha foi reunificada no ano seguinte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Primeira Guerra Mundial começou em 1939.",
+      "answer": false,
+      "fact": "A Primeira Guerra começou em 1914. Em 1939 começou a Segunda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os antigos egípcios mumificavam seus mortos.",
+      "answer": true,
+      "fact": "O processo levava cerca de 70 dias, e os órgãos eram guardados em vasos chamados canopos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Júlio César foi o primeiro imperador romano.",
+      "answer": false,
+      "fact": "O primeiro imperador foi Augusto, sobrinho-neto de César, em 27 a.C. César foi ditador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Titanic afundou na viagem inaugural.",
+      "answer": true,
+      "fact": "O Titanic bateu num iceberg na noite de 14 de abril de 1912 e afundou em menos de três horas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Pedro Álvares Cabral chegou ao Brasil em 1600.",
+      "answer": false,
+      "fact": "A esquadra de Cabral chegou em abril de 1500, no litoral do sul da Bahia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Revolução Francesa começou em 1789.",
+      "answer": true,
+      "fact": "O símbolo do começo é a Queda da Bastilha, em 14 de julho de 1789, hoje feriado nacional na França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Neil Armstrong pisou na Lua em 1979.",
+      "answer": false,
+      "fact": "Armstrong pisou na Lua em 20 de julho de 1969, na missão Apollo 11."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Cleópatra viveu mais perto da chegada do homem à Lua do que da construção da Grande Pirâmide.",
+      "answer": true,
+      "fact": "A Grande Pirâmide é de cerca de 2560 a.C. Cleópatra morreu em 30 a.C., uns 2.500 anos depois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os vikings usavam capacetes com chifres em combate.",
+      "answer": false,
+      "fact": "Os chifres são uma invenção do século XIX, popularizada pelos figurinos das óperas de Wagner."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Guerra dos Cem Anos durou mais de cem anos.",
+      "answer": true,
+      "fact": "A guerra entre Inglaterra e França durou 116 anos, de 1337 a 1453, com longas pausas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Inconfidência Mineira aconteceu depois da Independência do Brasil.",
+      "answer": false,
+      "fact": "A Inconfidência foi em 1789, mais de 30 anos antes da Independência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Gandhi nunca recebeu o Prêmio Nobel da Paz.",
+      "answer": true,
+      "fact": "Gandhi foi indicado cinco vezes. O comitê do Nobel já admitiu que foi uma grande omissão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hitler nasceu na Alemanha.",
+      "answer": false,
+      "fact": "Hitler nasceu na Áustria, em Braunau am Inn, em 1889."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Guerra do Paraguai foi o maior conflito entre países da história da América do Sul.",
+      "answer": true,
+      "fact": "A guerra durou de 1864 a 1870 e opôs o Paraguai a Brasil, Argentina e Uruguai."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Revolução Russa de 1917 derrubou o czar Alexandre III.",
+      "answer": false,
+      "fact": "O czar derrubado foi Nicolau II, o último dos Romanov."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Império Romano do Oriente durou até 1453.",
+      "answer": true,
+      "fact": "O império acabou com a tomada de Constantinopla pelos otomanos, que rebatizaram a cidade de Istambul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "George Washington assinou a Declaração de Independência dos Estados Unidos.",
+      "answer": false,
+      "fact": "Washington não assinou: em 1776 ele estava no comando do exército. A declaração foi escrita principalmente por Thomas Jefferson."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "theme": "Games",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Mario e Luigi são irmãos.",
+      "answer": true,
+      "fact": "Luigi apareceu pela primeira vez em Mario Bros., de 1983, como o segundo jogador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Sonic é um personagem da Nintendo.",
+      "answer": false,
+      "fact": "Sonic é o mascote da Sega e foi criado em 1991 para competir com o Mario."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Minecraft é o jogo mais vendido da história.",
+      "answer": true,
+      "fact": "Minecraft já passou de 300 milhões de cópias vendidas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Pac-Man foi criado nos Estados Unidos.",
+      "answer": false,
+      "fact": "Pac-Man foi criado no Japão por Toru Iwatani, da Namco, em 1980."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em Pokémon, Pikachu é do tipo elétrico.",
+      "answer": true,
+      "fact": "O nome mistura pika, o som de uma faísca, e chu, o guincho de um rato, em japonês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O PlayStation é fabricado pela Microsoft.",
+      "answer": false,
+      "fact": "O PlayStation é da Sony. A Microsoft fabrica o Xbox."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tetris foi criado na União Soviética.",
+      "answer": true,
+      "fact": "Tetris foi criado em 1984 por Alexey Pajitnov, num computador de um centro de pesquisa em Moscou."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em The Legend of Zelda, Link é o nome da princesa.",
+      "answer": false,
+      "fact": "Link é o herói. Zelda é a princesa que dá nome à série."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Fortnite é um jogo da Epic Games.",
+      "answer": true,
+      "fact": "A Epic Games também criou a Unreal Engine, usada em muitos outros jogos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Grand Theft Auto é uma série da Ubisoft.",
+      "answer": false,
+      "fact": "GTA é da Rockstar Games. A Ubisoft faz séries como Assassin's Creed."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Game Boy foi lançado em 1989.",
+      "answer": true,
+      "fact": "O Game Boy vinha com Tetris em muitos países, e isso ajudou muito nas vendas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em The Last of Us, o apocalipse é causado por um vírus.",
+      "answer": false,
+      "fact": "Em The Last of Us, a infecção é causada por um fungo, o Cordyceps, que existe de verdade e ataca insetos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Kratos, de God of War, começou a série enfrentando deuses gregos.",
+      "answer": true,
+      "fact": "Depois da fase grega, a série foi para a mitologia nórdica, no jogo de 2018."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Mario apareceu pela primeira vez em Super Mario Bros.",
+      "answer": false,
+      "fact": "A estreia foi em Donkey Kong, de 1981, quando ele ainda se chamava Jumpman."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro jogo da série Pokémon saiu para o Game Boy.",
+      "answer": true,
+      "fact": "Pokémon Red e Green foram lançados no Japão em 1996."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Counter-Strike começou como um jogo original da Valve.",
+      "answer": false,
+      "fact": "Counter-Strike começou em 1999 como um mod de Half-Life feito por fãs. Depois a Valve comprou os direitos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em Among Us, o impostor pode usar as ventilações para se mover.",
+      "answer": true,
+      "fact": "Among Us é de 2018, mas só virou febre em 2020, durante a pandemia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Doom foi lançado em 1999.",
+      "answer": false,
+      "fact": "Doom é de 1993, da id Software, e ajudou a popularizar os jogos de tiro em primeira pessoa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Nintendo começou fabricando cartas de baralho.",
+      "answer": true,
+      "fact": "A Nintendo foi fundada em 1889, em Kyoto, fazendo cartas hanafuda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Street Fighter II foi o primeiro jogo da série Street Fighter.",
+      "answer": false,
+      "fact": "O primeiro Street Fighter é de 1987. O II, de 1991, é que virou fenômeno."
+    }
+  ]
+}

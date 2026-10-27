@@ -101,6 +101,7 @@ export function useRoom() {
   const playAgain = useCallback(() => request('play_again'), [])
   const answer = useCallback((option: number) => request('submit_answer', { option }), [])
   const bet = useCallback((amount: number) => request('submit_bet', { amount }), [])
+  const duelBet = useCallback((choice: string) => request('submit_duel_bet', { choice }), [])
   const armPowerUp = useCallback(
     (kind: ArmPowerUpRequest['kind'], target: string | null, legendary = false, theme: string | null = null) =>
       request('arm_powerup', { kind, target, legendary, theme }),
@@ -110,5 +111,5 @@ export function useRoom() {
   const skipResults = useCallback(() => request('skip_results'), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, armPowerUp, usePowerUp, skipResults, updateSettings }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings }
 }

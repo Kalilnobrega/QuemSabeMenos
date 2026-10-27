@@ -94,6 +94,7 @@ interface Props {
   playerId: string | null
   onAnswer: (option: number) => Promise<string | null>
   onBet: (amount: number) => Promise<string | null>
+  onDuelBet: (choice: string) => Promise<string | null>
   onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
@@ -101,8 +102,11 @@ interface Props {
   onLeave: () => void
 }
 
-export function Game({ snapshot, playerId, onAnswer, onBet, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
+export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
+  if (game.duel) {
+    return <DuelScreen snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onDuelBet={onDuelBet} />
+  }
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
   }
@@ -120,6 +124,166 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onArm, onUse, onSkip
   }
   // key: cada rodada começa com a escolha local zerada.
   return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
+}
+
+const DUEL_KIND: Record<string, string> = { true_false: 'Verdadeiro ou falso', hard: 'Difícil', impossible: 'Impossível' }
+
+/** X1: a partida para e todo mundo assiste. A plateia aposta, os dois respondem, e no fim o acerto de contas. */
+function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Snapshot; playerId: string | null; onAnswer: Props['onAnswer']; onDuelBet: Props['onDuelBet'] }) {
+  const { room, receivedAt } = snapshot
+  const game = room.game!
+  const duel = game.duel!
+  const [error, setError] = useState<string | null>(null)
+  const now = useNow(game.phase !== 'duel_end')
+  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const fighters = [duel.challenger, duel.rival].map((id) => room.players.find((p) => p.id === id))
+  const name = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const fighting = playerId === duel.challenger || playerId === duel.rival
+  useSoundsOnMount([['impossible', 0]])
+
+  useEffect(() => {
+    if (game.phase === 'duel_answering') playSound('answersOpen')
+    if (game.phase === 'duel_end') playSound(duel.winner === playerId ? 'podiumWinner' : duel.loser === playerId ? 'podiumLoser' : 'rankingSwish')
+  }, [game.phase, duel.question_number, duel.winner, duel.loser, playerId])
+
+  const bet = async (choice: string) => {
+    playSound('select')
+    setError(await onDuelBet(choice))
+  }
+
+  let body: ReactNode
+  if (game.phase === 'duel_betting') {
+    body = (
+      <div className="flex flex-col items-center gap-3 text-center">
+        <p className="font-display text-3xl tracking-wide text-brand">Façam suas apostas!</p>
+        {duel.can_bet ? (
+          <>
+            <p className="text-steel">5 de QI em quem ganha. Acertou, recebe 10. Em {Math.ceil(remaining / 1000)}s, sorteamos para quem não escolher.</p>
+            <div className="grid w-full grid-cols-2 gap-3">
+              {fighters.map((p) =>
+                p ? (
+                  <button key={p.id} onClick={() => void bet(p.id)} className="btn-3d btn-dark flex flex-col items-center gap-1 rounded-xl py-3 font-semibold">
+                    <img src={AVATAR_URLS[p.avatar]} alt="" className="size-12" />
+                    Apostar em {p.nickname}
+                  </button>
+                ) : null,
+              )}
+            </div>
+          </>
+        ) : (
+          <p className="font-hand text-lg font-medium text-chalk">
+            {duel.my_bet ? `Você apostou 5 de QI em ${name(duel.my_bet)}.` : fighting ? 'A plateia está apostando em quem ganha…' : 'Sem QI para apostar. Só assiste!'}
+          </p>
+        )}
+      </div>
+    )
+  } else if (game.phase === 'duel_end') {
+    const myBet = duel.bets[playerId ?? '']
+    body = (
+      <div className="flex flex-col items-center gap-2 text-center">
+        <p className="font-display text-4xl tracking-wide text-brand">{duel.winner === playerId ? 'Você venceu o X1!' : `${name(duel.winner)} venceu o X1!`}</p>
+        <ul className="flex w-full flex-col gap-1.5 font-semibold">
+          <li className="rounded-xl bg-red-500/15 px-3 py-1.5 text-red-200">{name(duel.loser)} pagou {duel.paid} de QI (40%)</li>
+          {duel.from_bets > 0 && <li className="rounded-xl bg-emerald-500/15 px-3 py-1.5 text-emerald-200">+{duel.from_bets} de quem apostou contra {name(duel.winner) === 'Você' ? 'você' : name(duel.winner)}</li>}
+          {duel.favorite_bonus > 0 && <li className="rounded-xl bg-brand/15 px-3 py-1.5 text-brand">+{duel.favorite_bonus} de bônus de favorito da torcida</li>}
+          {myBet && <li className={`rounded-xl px-3 py-1.5 ${myBet === duel.winner ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'}`}>Sua aposta em {name(myBet) === 'Você' ? 'você' : name(myBet)}: {myBet === duel.winner ? '+5' : '−5'}</li>}
+        </ul>
+      </div>
+    )
+  } else {
+    body = <DuelQuestionView key={duel.question_number} snapshot={snapshot} playerId={playerId} remaining={remaining} onAnswer={async (option) => setError(await onAnswer(option))} />
+  }
+
+  return (
+    <section className="flex w-full flex-col gap-5">
+      <header className="flex flex-col items-center gap-1 text-center">
+        <p className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">X1!</p>
+        {duel.question_number > 0 && (
+          <p className="text-sm font-semibold text-steel">
+            Pergunta {duel.question_number}/{duel.total_questions} · {DUEL_KIND[duel.kind ?? ''] ?? ''}
+          </p>
+        )}
+      </header>
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+        {fighters.map((p, i) => {
+          if (!p) return <span key={i} />
+          const pick = duel.picks.find((k) => k.player_id === p.id)
+          const card = (
+            <div key={p.id} className={`flex flex-col items-center gap-1 rounded-xl bg-panel px-2 py-3 ${duel.winner === p.id ? 'mythic' : ''}`}>
+              <img src={AVATAR_URLS[p.avatar]} alt="" className="size-14" />
+              <span className="max-w-full truncate font-semibold">{p.id === playerId ? 'Você' : p.nickname}</span>
+              <span className="h-5 text-sm font-semibold">
+                {pick ? (pick.correct ? <span className="text-emerald-300">Acertou</span> : <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>) : duel.answered.includes(p.id) ? <span className="text-steel">Respondeu</span> : ''}
+              </span>
+              <span className="text-xs text-steel tabular-nums">{((duel.total_ms[p.id] ?? 0) / 1000).toFixed(1).replace('.', ',')}s no total</span>
+            </div>
+          )
+          return i === 0 ? [card, <span key="vs" className="font-display text-3xl text-steel">vs</span>] : card
+        })}
+      </div>
+      {body}
+      {error && <p className="text-center text-red-300">{error}</p>}
+    </section>
+  )
+}
+
+function DuelQuestionView({ snapshot, playerId, remaining, onAnswer }: { snapshot: Snapshot; playerId: string | null; remaining: number; onAnswer: (option: number) => Promise<void> }) {
+  const game = snapshot.room.game!
+  const duel = game.duel!
+  const [choice, setChoice] = useState<number | null>(null)
+  const fighting = playerId === duel.challenger || playerId === duel.rival
+  const open = game.phase === 'duel_answering'
+  const canAnswer = open && fighting && choice === null && !duel.answered.includes(playerId ?? '')
+  const pick = async (option: number) => {
+    if (!canAnswer) return
+    playSound('select')
+    setChoice(option)
+    await onAnswer(option)
+  }
+  const picksOn = (index: number) => duel.picks.filter((k) => k.option === index).map((k) => snapshot.room.players.find((p) => p.id === k.player_id))
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="h-2 overflow-hidden rounded-full bg-panel">
+        {open && <div className={`h-full rounded-full ${remaining < 2000 ? 'bg-red-400' : 'bg-brand'}`} style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }} />}
+      </div>
+      <h1 className="text-[1.3rem] leading-snug font-bold">{duel.text}</h1>
+      <div className="grid auto-rows-fr grid-cols-2 gap-3">
+        {duel.options.map((option, index) => {
+          const reveal = duel.correct_option !== null
+          const state = reveal
+            ? index === duel.correct_option
+              ? 'reveal-pop btn-correct text-white'
+              : picksOn(index).length
+                ? 'btn-wrong is-pressed text-white'
+                : 'btn-dark opacity-40'
+            : choice === index
+              ? 'btn-dark is-pressed outline-2 outline-brand'
+              : canAnswer
+                ? 'btn-dark'
+                : 'btn-dark opacity-60'
+          return (
+            <button
+              key={index}
+              onClick={() => void pick(index)}
+              disabled={!canAnswer}
+              className={`btn-3d btn-sm relative flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left font-semibold ${state}`}
+            >
+              {duel.kind !== 'true_false' && <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>}
+              <span className={`min-w-0 [overflow-wrap:anywhere] ${duel.kind === 'true_false' ? 'w-full text-center text-lg' : ''}`}>{option}</span>
+              {reveal && (
+                <span className="absolute -top-2 -right-1.5 flex -space-x-2">
+                  {picksOn(index).map((p) => p && <img key={p.id} src={AVATAR_URLS[p.avatar]} alt={p.nickname} className="size-6" />)}
+                </span>
+              )}
+            </button>
+          )
+        })}
+      </div>
+      <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">
+        {open ? (fighting ? (choice === null ? 'Erre sozinho e perdeu!' : 'Resposta enviada!') : 'Torça pelo seu lado!') : ''}
+      </p>
+    </div>
+  )
 }
 
 const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
@@ -984,6 +1148,17 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
     if (result.gained) {
       lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary, mythic: result.gained.mythic })
     }
+  }
+  for (const { challenger, rival } of game.duels) {
+    lines.push({
+      key: `${challenger}-${rival}-duel`,
+      kind: 'duel',
+      player: room.players.find((p) => p.id === challenger),
+      text: `${who(challenger)} chamou ${rival === playerId ? 'você' : who(rival)} pro X1! Começa quando a revelação acabar.`,
+      delta: null,
+      me: challenger === playerId || rival === playerId,
+      mythic: true,
+    })
   }
   for (const revival of game.revivals) {
     const me = revival.player_id === playerId

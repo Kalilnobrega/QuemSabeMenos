@@ -19,7 +19,7 @@ PowerUp = Literal[
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
-    "resurrection",
+    "resurrection", "duel",
 ]
 GameMode = Literal["classic", "powers"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers")
@@ -81,6 +81,12 @@ class ArmPowerUpRequest(BaseModel):
     target: str | None = None
     legendary: bool = False  # a versão lendária de um ataque: vale em todos os outros, sem alvo
     theme: str | None = None  # Tema: um dos temas sorteados em `theme_choices`
+
+
+class SubmitDuelBetRequest(BaseModel):
+    """X1: o id do duelista em quem a plateia aposta."""
+
+    choice: str
 
 
 class UsePowerUpRequest(BaseModel):
@@ -187,6 +193,45 @@ class RoundResult(BaseModel):
     gained: PowerUpGain | None
 
 
+class DuelPick(BaseModel):
+    player_id: str
+    option: int | None  # None = não respondeu
+    correct: bool
+    elapsed_ms: int | None
+
+
+class DuelView(BaseModel):
+    """X1 em andamento. Fases: duel_betting (a plateia aposta) → duel_answering → duel_results,
+    pergunta a pergunta, até alguém perder → duel_end (o acerto de contas)."""
+
+    challenger: str
+    rival: str
+    question_number: int  # começa em 1; 0 durante a aposta
+    total_questions: int
+    kind: Literal["true_false", "hard", "impossible"] | None
+    text: str | None
+    options: list[str]
+    theme: str | None
+    answered: list[str]  # quem dos dois já respondeu
+    picks: list[DuelPick]  # o que os dois marcaram, só depois de fechar a pergunta
+    correct_option: int | None
+    fact: str | None
+    total_ms: dict[str, int]  # tempo somado de cada um, que desempata no fim
+    can_bet: bool  # quem vê pode apostar agora
+    my_bet: str | None
+    bets: dict[str, str]  # quem apostou em quem, só no fim
+    winner: str | None
+    loser: str | None
+    paid: int  # QI que quem perdeu pagou a quem ganhou
+    from_bets: int  # o que quem ganhou levou de quem apostou contra ele
+    favorite_bonus: int
+
+
+class DuelChallenge(BaseModel):
+    challenger: str
+    rival: str
+
+
 class GameView(BaseModel):
     """Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
     answering → results. Telas de preparação, em que a pergunta não é enviada: starting
@@ -196,7 +241,10 @@ class GameView(BaseModel):
 
     round: int  # começa em 1
     total_rounds: int
-    phase: Literal["starting", "level", "intro", "betting", "reading", "answering", "results", "finished"]
+    phase: Literal[
+        "starting", "level", "intro", "betting", "reading", "answering", "results", "finished",
+        "duel_betting", "duel_answering", "duel_results", "duel_end",
+    ]
     phase_duration_ms: int
     phase_ends_in_ms: int  # relativo ao envio, para não depender do relógio do celular
     difficulty: Difficulty  # da pergunta da rodada (enviada também nas telas de preparação)
@@ -212,6 +260,8 @@ class GameView(BaseModel):
     legendary_powerups: list[PowerUp]  # os seus ataques lendários guardados (contam no máximo)
     mythic_powerups: list[PowerUp]  # os seus poderes míticos guardados (contam no máximo)
     revivals: list[Revival]
+    duels: list[DuelChallenge]  # X1 chamados nesta revelação, na ordem em que vão acontecer
+    duel: DuelView | None
     powerup_max: int
     starting_powerup: PowerUp | None
     can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)
@@ -277,6 +327,7 @@ EVENT_MODELS: list[type[BaseModel]] = [
     UpdateSettingsRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
+    SubmitDuelBetRequest,
     ArmPowerUpRequest,
     UsePowerUpRequest,
     RoomState,

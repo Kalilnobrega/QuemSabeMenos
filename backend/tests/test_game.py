@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 import pytest
 
+from app import duel as x1
 from app import powerups
 from app.events import PowerUpGain
 from app.game import (
@@ -507,33 +508,42 @@ class LuckyRng(random.Random):
         return seq[0]
 
 
+class Roll(LuckyRng):
+    """Sorteio de raridade fixo em `roll`; o resto como o LuckyRng."""
+
+    def __init__(self, roll: float) -> None:
+        super().__init__()
+        self.roll = roll
+
+    def random(self) -> float:
+        return self.roll
+
+
 def test_gains_can_be_legendary_attacks_more_often_for_the_far_behind_last():
-    game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=LuckyRng())
+    game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=Roll(0.05))
     ana, bia, caio = P("ana", 100), P("bia", 80), P("caio", 0)
     game.powerups = {"ana": [], "bia": [], "caio": []}
     for _ in range(3):
         play(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 1})
     gains = {r.player_id: r.gained for r in game.results}
     assert gains["ana"] == PowerUpGain(kind="accelerator", reason="streak", legendary=True)
-    assert gains["caio"] == PowerUpGain(kind="resurrection", reason="comeback", mythic=True)  # o mítico vem antes
+    assert gains["caio"] == PowerUpGain(kind="resurrection", reason="comeback", mythic=True)
     assert game.legendaries["ana"] == ["accelerator"] and game.powerups["ana"] == []
     assert game.view(now=0, viewer="ana").legendary_powerups == ["accelerator"]
 
-    class Unlucky(LuckyRng):
-        def __init__(self, roll: float) -> None:
-            super().__init__()
-            self.roll = roll
-
-        def random(self) -> float:
-            return self.roll
-
-    for roll, behind, legendary in ((0.1, False, False), (0.1, True, True), (0.04, False, True)):
-        game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=Unlucky(roll))
+    # Lanterna: Ressurreição até 6%, X1 até 14%, lendária até 34%. Os outros: X1 até 2%, lendária até 8%.
+    for roll, behind, kind in (
+        (0.01, False, "duel"), (0.04, False, "legendary"), (0.1, False, None),
+        (0.03, True, "resurrection"), (0.1, True, "duel"), (0.2, True, "legendary"), (0.4, True, None),
+    ):
+        game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=Roll(roll))
         ana, bia = P("ana", 0 if behind else 100), P("bia", 100 if behind else 0)
         game.powerups = {"ana": [], "bia": []}
         for _ in range(3):
             play(game, [ana, bia], {"ana": 0, "bia": 1})
-        assert game.results[0].gained.legendary is legendary
+        gained = game.results[0].gained
+        got = gained.kind if gained.mythic else "legendary" if gained.legendary else None
+        assert got == kind, (roll, behind)
 
 
 def test_legendary_attack_hits_everyone_else_and_ignores_the_reverse():
@@ -1065,3 +1075,74 @@ def test_resurrection_breaks_when_the_player_leaves_last_place():
     game.mythics = {"bia": ["resurrection"]}
     reveal(game, [ana, bia], {"ana": 1, "bia": 0})  # ana erra (-10), bia acerta: bia passa
     assert game.mythics["bia"] == [] and "resurrection" in game.results[1].expired
+
+
+def duel_game() -> tuple[Game, dict[str, P]]:
+    """Partida com banco para o X1 (difíceis, impossíveis e frases), e a 1ª pergunta revelada."""
+    bank = [question(f"h{i}", "hard") for i in range(8)] + [
+        Question(id=f"i{i}", theme="Teste", difficulty="impossible", text="?", options=list("ABCDEF"), answer=0, fact="!")
+        for i in range(2)
+    ]
+    statements = [
+        x1.DuelQuestion(id=f"vf{i}", theme="Teste", kind="true_false", text="Frase", options=["Verdadeiro", "Falso"], answer=0, fact="!")
+        for i in range(6)
+    ]
+    game = Game(
+        powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10, bank=bank, statements=statements
+    )
+    players = {pid: P(pid, score) for pid, score in (("ana", 50), ("bia", 80), ("caio", 50), ("davi", 50), ("edu", 50), ("fabi", 3))}
+    game.powerups = {pid: [] for pid in players}
+    reveal(game, list(players.values()), {pid: 0 for pid in players})
+    for p in players.values():
+        p.score = {"ana": 50, "bia": 80, "caio": 50, "davi": 50, "edu": 50, "fabi": 3}[p.id]
+    game.mythics = {"ana": ["duel"]}
+    game.challenge("ana", "bia", list(players))
+    return game, players
+
+
+def test_duel_runs_four_true_false_five_hard_and_one_impossible():
+    game, players = duel_game()
+    assert game.view(now=20, viewer="caio").duels[0].rival == "bia"
+    assert game.start_duel(list(players), {p.id: p.score for p in players.values()}, now=0)
+    assert [q.kind for q in game.duel.questions] == ["true_false"] * 4 + ["hard"] * 5 + ["impossible"]
+    assert game.duel.bettors == ["caio", "davi", "edu"]  # os duelistas e quem tem menos de 5 não apostam
+    assert game.view(now=0, viewer="caio").duel.can_bet and not game.view(now=0, viewer="ana").duel.can_bet
+
+
+def test_duel_payout_with_the_crowd_bets():
+    game, players = duel_game()
+    game.start_duel(list(players), {p.id: p.score for p in players.values()}, now=0)
+    game.duel_bet("caio", "ana", now=1)
+    game.duel_bet("davi", "ana", now=1)
+    game.duel_bet("edu", "bia", now=1)
+    assert game.everyone_bet_on_duel(list(players))
+    assert game.open_duel_question(now=10) and game.phase == "duel_answering"
+    game.duel_answer("ana", 0, now=11)
+    game.duel_answer("bia", 0, now=12)
+    game.close_duel_question(now=12)
+    assert game.duel.winner is None  # os dois acertaram: segue
+    assert game.open_duel_question(now=20)
+    assert game.duel.seconds() == x1.FIRST_SECONDS - x1.STEP_SECONDS
+    game.duel_answer("ana", 0, now=21)
+    game.duel_answer("bia", 1, now=21)
+    game.close_duel_question(now=21)
+    assert game.duel.winner == "ana" and not game.open_duel_question(now=30)
+    game.finish_duel(list(players.values()), now=30)
+    scores = {pid: p.score for pid, p in players.items()}
+    assert scores["ana"] == 50 + 32 + 5 + 5 and scores["bia"] == 80 - 32
+    assert (scores["caio"], scores["davi"], scores["edu"]) == (55, 55, 45)
+    end = game.view(now=30, viewer="caio").duel
+    assert (end.winner, end.paid, end.from_bets, end.favorite_bonus) == ("ana", 32, 5, 5)
+
+
+def test_duel_goes_on_when_both_miss_and_the_clock_breaks_a_tie_at_the_end():
+    game, players = duel_game()
+    game.start_duel(list(players), {p.id: p.score for p in players.values()}, now=0)
+    t = 0
+    while game.open_duel_question(now=t):
+        game.duel_answer("ana", 1, now=t + 1)  # erra sempre, rápido
+        game.duel_answer("bia", 1, now=t + 2)  # erra sempre, devagar
+        game.close_duel_question(now=t + 2)
+        t += 10
+    assert game.duel.index == 9 and game.duel.winner == "ana"
+    assert set(game.duel.bets) == {"caio", "davi", "edu"}  # quem não apostou teve a aposta sorteada

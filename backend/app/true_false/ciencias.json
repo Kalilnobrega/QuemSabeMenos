@@ -1,0 +1,125 @@
+{
+  "theme": "Ciências",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "O coração humano tem quatro cavidades.",
+      "answer": true,
+      "fact": "São dois átrios e dois ventrículos. O coração bate cerca de 100 mil vezes por dia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Lua tem luz própria.",
+      "answer": false,
+      "fact": "A Lua só reflete a luz do Sol. As fases mudam conforme a parte iluminada que vemos da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Ao nível do mar, a água ferve a 100 °C.",
+      "answer": true,
+      "fact": "Em lugares altos a pressão é menor e a água ferve antes: em La Paz, ferve perto de 88 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O diamante é feito de silício.",
+      "answer": false,
+      "fact": "O diamante é carbono puro, o mesmo elemento do grafite do lápis. Muda só a organização dos átomos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os morcegos são mamíferos.",
+      "answer": true,
+      "fact": "Os morcegos são os únicos mamíferos capazes de voar de verdade, batendo as asas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A baleia é um peixe.",
+      "answer": false,
+      "fact": "A baleia é um mamífero: respira por pulmões, tem sangue quente e amamenta os filhotes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Marte tem duas luas.",
+      "answer": true,
+      "fact": "As luas de Marte se chamam Fobos e Deimos, que significam medo e terror em grego."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O osso mais longo do corpo humano é o úmero.",
+      "answer": false,
+      "fact": "O mais longo é o fêmur, o osso da coxa. O úmero é o osso do braço."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na fotossíntese, as plantas liberam oxigênio.",
+      "answer": true,
+      "fact": "As plantas usam luz, água e gás carbônico para produzir açúcar, e o oxigênio sai como sobra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O som se propaga no vácuo.",
+      "answer": false,
+      "fact": "O som precisa de um meio, como ar ou água, para se propagar. Por isso, no espaço não há som."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O símbolo químico do ouro é Au.",
+      "answer": true,
+      "fact": "Au vem de aurum, nome do ouro em latim. Todo o ouro já extraído caberia num cubo de uns 22 m de lado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O gás mais abundante no ar é o oxigênio.",
+      "answer": false,
+      "fact": "O mais abundante é o nitrogênio, com cerca de 78% do ar. O oxigênio fica perto de 21%."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Vênus é o planeta mais quente do Sistema Solar.",
+      "answer": true,
+      "fact": "Vênus é mais quente que Mercúrio por causa do efeito estufa da atmosfera densa: cerca de 465 °C."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A luz do Sol leva cerca de 8 segundos para chegar à Terra.",
+      "answer": false,
+      "fact": "A luz do Sol leva cerca de 8 minutos e 20 segundos para chegar até nós."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O DNA tem a forma de uma dupla hélice.",
+      "answer": true,
+      "fact": "A estrutura foi descrita em 1953 por Watson e Crick, com base nas imagens de raio X de Rosalind Franklin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O polvo tem um único coração.",
+      "answer": false,
+      "fact": "O polvo tem três corações e sangue azul, por causa de uma proteína com cobre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um adulto tem 206 ossos.",
+      "answer": true,
+      "fact": "Os bebês nascem com cerca de 300 ossos, e vários se fundem durante o crescimento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A unidade de medida da força é o joule.",
+      "answer": false,
+      "fact": "A força é medida em newtons. O joule mede energia e trabalho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O mercúrio é um metal líquido em temperatura ambiente.",
+      "answer": true,
+      "fact": "O mercúrio derrete a cerca de −39 °C. Era muito usado em termômetros antigos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Plutão ainda é considerado o nono planeta do Sistema Solar.",
+      "answer": false,
+      "fact": "Desde 2006, Plutão é classificado como planeta-anão pela União Astronômica Internacional."
+    }
+  ]
+}

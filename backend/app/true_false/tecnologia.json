@@ -1,0 +1,125 @@
+{
+  "theme": "Tecnologia",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "O HTML é usado para criar páginas da web.",
+      "answer": true,
+      "fact": "HTML quer dizer HyperText Markup Language. A primeira página da web foi publicada em 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Windows foi criado pela Apple.",
+      "answer": false,
+      "fact": "O Windows é da Microsoft. A primeira versão saiu em 1985."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um byte tem 8 bits.",
+      "answer": true,
+      "fact": "Com 8 bits dá para formar 256 combinações diferentes, de 0 a 255."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Android é um sistema operacional da Apple.",
+      "answer": false,
+      "fact": "O Android é do Google, que comprou a empresa Android em 2005. O sistema da Apple é o iOS."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O WhatsApp foi comprado pelo Facebook.",
+      "answer": true,
+      "fact": "O Facebook comprou o WhatsApp em 2014 por cerca de 19 bilhões de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Wi-Fi transmite dados por cabos de fibra óptica.",
+      "answer": false,
+      "fact": "O Wi-Fi usa ondas de rádio. A fibra óptica chega até o roteador, e dali o sinal vai pelo ar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Steve Jobs foi um dos fundadores da Apple.",
+      "answer": true,
+      "fact": "A Apple foi fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne, que vendeu sua parte poucos dias depois."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O primeiro iPhone foi lançado em 2010.",
+      "answer": false,
+      "fact": "O primeiro iPhone foi apresentado em janeiro de 2007 por Steve Jobs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Google começou como um projeto de estudantes da Universidade Stanford.",
+      "answer": true,
+      "fact": "Larry Page e Sergey Brin criaram o Google em 1998. O primeiro nome do projeto era BackRub."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A memória RAM guarda os arquivos mesmo com o computador desligado.",
+      "answer": false,
+      "fact": "A RAM é volátil: perde tudo sem energia. Os arquivos ficam guardados no SSD ou no HD."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro bug de computador registrado foi uma mariposa de verdade.",
+      "answer": true,
+      "fact": "Em 1947, a equipe de Grace Hopper achou uma mariposa presa no computador Mark II e colou o inseto no caderno de registros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Linux foi criado por Bill Gates.",
+      "answer": false,
+      "fact": "O Linux foi criado em 1991 pelo finlandês Linus Torvalds, que ainda era estudante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A linguagem Python tem esse nome por causa do grupo Monty Python.",
+      "answer": true,
+      "fact": "O criador, Guido van Rossum, era fã do grupo de comédia britânico. A cobra só veio depois, no logotipo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O QR Code foi inventado nos Estados Unidos.",
+      "answer": false,
+      "fact": "O QR Code foi inventado no Japão em 1994, pela Denso Wave, para rastrear peças na indústria de carros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro e-mail foi enviado em 1971.",
+      "answer": true,
+      "fact": "Ray Tomlinson enviou o primeiro e-mail pela ARPANET e escolheu o @ para separar o usuário do computador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um terabyte equivale a 100 gigabytes.",
+      "answer": false,
+      "fact": "Um terabyte são 1.000 gigabytes, ou 1.024 se contado na base binária."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Bluetooth tem esse nome por causa de um rei viking.",
+      "answer": true,
+      "fact": "O nome homenageia Harald Dente-Azul, rei que uniu tribos da Dinamarca e da Noruega, assim como a tecnologia une aparelhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A primeira mensagem SMS foi enviada em 2001.",
+      "answer": false,
+      "fact": "O primeiro SMS foi enviado em 1992 e dizia \"Merry Christmas\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ENIAC, um dos primeiros computadores, ocupava uma sala inteira.",
+      "answer": true,
+      "fact": "O ENIAC ficou pronto em 1946, pesava cerca de 30 toneladas e tinha quase 18 mil válvulas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Positivo, fabricante de computadores, é uma empresa coreana.",
+      "answer": false,
+      "fact": "A Positivo é brasileira, de Curitiba, e já foi uma das maiores fabricantes de computadores do país."
+    }
+  ]
+}

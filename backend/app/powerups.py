@@ -38,7 +38,7 @@ COMEBACK_GAP = 20
 LEGENDARY_CHANCE = 0.06
 LEGENDARY_TRAILING_CHANCE = 0.20
 # Míticos: (chance para quem não é lanterna, chance para o lanterna), sorteados antes dos lendários.
-MYTHIC_CHANCES: dict[PowerUp, tuple[float, float]] = {"resurrection": (0.0, 0.06)}
+MYTHIC_CHANCES: dict[PowerUp, tuple[float, float]] = {"resurrection": (0.0, 0.06), "duel": (0.02, 0.08)}
 # Ressurreição: o último pula para logo atrás do penúltimo (com 2 jogadores, 10 atrás do 1º).
 RESURRECTION_GAP = 1
 RESURRECTION_GAP_TWO_PLAYERS = 10

@@ -1,0 +1,125 @@
+{
+  "theme": "Esportes",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Uma partida oficial de futebol tem dois tempos de 45 minutos.",
+      "answer": true,
+      "fact": "Além dos 90 minutos, o árbitro dá acréscimos para compensar o tempo parado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil foi campeão da Copa do Mundo de 1950, no Maracanã.",
+      "answer": false,
+      "fact": "O Uruguai venceu o Brasil por 2 a 1 na partida decisiva, e o jogo ficou conhecido como Maracanazo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No vôlei, cada time tem seis jogadores em quadra.",
+      "answer": true,
+      "fact": "O vôlei foi inventado em 1895 nos Estados Unidos por William Morgan."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O basquete foi inventado no Canadá.",
+      "answer": false,
+      "fact": "O basquete foi inventado em 1891 nos Estados Unidos, em Springfield. O inventor, James Naismith, é que era canadense."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Ayrton Senna foi três vezes campeão mundial de Fórmula 1.",
+      "answer": true,
+      "fact": "Senna foi campeão em 1988, 1990 e 1991, todos pela McLaren."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma maratona tem 21 km.",
+      "answer": false,
+      "fact": "A maratona tem 42,195 km. Os 21 km são a meia maratona."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Pelé ganhou três Copas do Mundo como jogador.",
+      "answer": true,
+      "fact": "Pelé foi campeão em 1958, 1962 e 1970. Ninguém mais ganhou três Copas como jogador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O torneio de Wimbledon é jogado em quadra de saibro.",
+      "answer": false,
+      "fact": "Wimbledon é jogado na grama. O Grand Slam de saibro é Roland Garros, em Paris."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os anéis olímpicos são cinco.",
+      "answer": true,
+      "fact": "Os anéis representam a união dos continentes. Foram criados por Pierre de Coubertin em 1913."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Jordan jogou a carreira inteira pelo Chicago Bulls.",
+      "answer": false,
+      "fact": "Jordan também jogou pelo Washington Wizards, de 2001 a 2003, antes de se aposentar de vez."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O recorde mundial dos 100 m rasos é de Usain Bolt, com 9,58 s.",
+      "answer": true,
+      "fact": "Bolt fez o recorde no Mundial de Berlim, em 2009, com uma velocidade média de quase 38 km/h."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil nunca ganhou ouro olímpico no futebol masculino.",
+      "answer": false,
+      "fact": "O Brasil ganhou o ouro no futebol masculino em 2016, no Rio, e em 2020, em Tóquio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No golfe, birdie é terminar um buraco com uma tacada a menos que o par.",
+      "answer": true,
+      "fact": "Duas tacadas a menos é eagle e três a menos é albatross."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Rebeca Andrade foi campeã olímpica no salto e na trave.",
+      "answer": false,
+      "fact": "Rebeca ganhou o ouro no salto em Tóquio 2020 e no solo em Paris 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O judô já deu medalha de ouro olímpica ao Brasil.",
+      "answer": true,
+      "fact": "O primeiro ouro foi de Aurélio Miguel, em 1988. Depois vieram Rogério Sampaio, Sarah Menezes, Rafaela Silva e Beatriz Souza."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No xadrez, o bispo anda em linha reta.",
+      "answer": false,
+      "fact": "O bispo anda na diagonal. Quem anda em linha reta é a torre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No rúgbi union, cada time tem 15 jogadores.",
+      "answer": true,
+      "fact": "Existe também o rúgbi de sete, que é a versão disputada nos Jogos Olímpicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Flamengo foi o primeiro campeão do Mundial de Clubes da FIFA, em 2000.",
+      "answer": false,
+      "fact": "O primeiro campeão foi o Corinthians, que venceu o Vasco nos pênaltis no Maracanã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Guga Kuerten chegou a número 1 do ranking mundial de tênis.",
+      "answer": true,
+      "fact": "Guga terminou o ano 2000 como número 1, depois de vencer o Masters de Lisboa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No basquete, toda cesta de fora do garrafão vale 3 pontos.",
+      "answer": false,
+      "fact": "Só vale 3 pontos o arremesso de trás da linha dos três pontos. Entre o garrafão e essa linha, vale 2."
+    }
+  ]
+}
