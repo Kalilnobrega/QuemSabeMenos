@@ -4,6 +4,7 @@ import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
+import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import type { Snapshot } from '../lib/useRoom'
 import type { Bonus, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
@@ -688,47 +689,9 @@ function Flame() {
   )
 }
 
-/** Re-renderiza a cada quadro enquanto `active`, para o texto digitando e o cronômetro. */
-function useNow(active: boolean) {
-  const [now, setNow] = useState(() => performance.now())
-  useEffect(() => {
-    if (!active) return
-    let frame = requestAnimationFrame(function tick() {
-      setNow(performance.now())
-      frame = requestAnimationFrame(tick)
-    })
-    return () => cancelAnimationFrame(frame)
-  }, [active])
-  return now
-}
-
 function formatScore(score: number) {
   return score < 0 ? `−${-score}` : `${score}`
 }
-
-/** No iPhone é ignorado. */
-function vibrate(pattern: number | number[]) {
-  navigator.vibrate?.(pattern)
-}
-
-/** Agenda sons para quando o componente aparece, em milissegundos; cancela se ele sair antes. */
-function useSoundsOnMount(sounds: [SoundId, number][]) {
-  const planned = useRef(sounds)
-  useEffect(() => {
-    const timers = planned.current.map(([id, ms]) => setTimeout(() => playSound(id), ms))
-    return () => timers.forEach(clearTimeout)
-  }, [])
-}
-
-/** "Tic" no 3 e no 2 e "gong" no 1 das contagens regressivas. */
-function useCountdownSounds(count: number) {
-  useEffect(() => {
-    if (count === 3 || count === 2) playSound('countTick')
-    else if (count === 1) playSound('countGo')
-  }, [count])
-}
-
-const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
 
 const easeInOutCubic = (k: number) => (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2)
 
@@ -1575,7 +1538,7 @@ function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
 const CONFETTI_COLORS = ['#FFC107', '#F8FAFC', '#34D399', '#F87171', '#60A5FA', '#FB923C']
 
 /** Confete caindo sobre o cartão do vencedor. Posições fixas por índice (sem aleatório a cada render). */
-function Confetti() {
+export function Confetti() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl" aria-hidden="true">
       {Array.from({ length: 28 }, (_, i) => (

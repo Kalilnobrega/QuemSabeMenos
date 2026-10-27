@@ -92,6 +92,11 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 
 
 def check_round_done(room: Room) -> None:
+    if room.survival:
+        if room.survival.phase in ("answering", "duel_answering") and room.survival.everyone_answered(room.connected_ids()):
+            if event := round_done.get(room.code):
+                event.set()
+        return
     game = room.game
     if not game:
         return
@@ -230,6 +235,30 @@ async def run_duels(room: Room, done: asyncio.Event, alive) -> None:
         await asyncio.sleep(max(0.0, game.phase_ends_at - time.monotonic()))
 
 
+async def run_survival(room: Room) -> None:
+    """Conduz o Último de pé: cada fase dura o seu tempo; as respostas acabam antes se todos responderem."""
+    survival = room.survival
+    done = round_done[room.code] = asyncio.Event()
+
+    def alive() -> bool:
+        return rooms.rooms.get(room.code) is room and room.survival is survival
+
+    try:
+        while alive():
+            done.clear()
+            await broadcast(room)
+            if survival.phase == "finished":
+                return
+            with suppress(TimeoutError):
+                await asyncio.wait_for(done.wait(), max(0.0, survival.deadline() - time.monotonic()))
+            if not alive():
+                return
+            survival.advance(time.monotonic())
+    finally:
+        if round_done.get(room.code) is done:
+            del round_done[room.code]
+
+
 @sio.event
 async def submit_duel_bet(sid: str, data: dict) -> dict:
     try:
@@ -319,7 +348,7 @@ async def start_game(sid: str) -> dict:
         room = rooms.start(sid)
     except RoomError as e:
         return error(str(e))
-    sio.start_background_task(run_game, room)
+    sio.start_background_task(run_survival if room.survival else run_game, room)
     return OkAck().model_dump()
 
 

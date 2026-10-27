@@ -21,8 +21,8 @@ PowerUp = Literal[
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
 ]
-GameMode = Literal["classic", "powers"]
-MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers")
+GameMode = Literal["classic", "powers", "last_standing"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "last_standing")
 
 NICKNAME_MAX_LENGTH = 16
 ROUND_OPTIONS = (10, 15, 20, 25, 30, 35)
@@ -283,6 +283,51 @@ class GameView(BaseModel):
     results: list[RoundResult]
 
 
+class SurvivalPick(BaseModel):
+    player_id: str
+    option: int | None  # None = não respondeu
+    correct: bool
+    elapsed_ms: int | None
+    lost_life: bool
+
+
+class Survivor(BaseModel):
+    player_id: str
+    lives: int
+    out_round: int | None  # rodada em que caiu; None = ainda vivo
+    correct: int
+    answer_ms: int  # tempo total de resposta; desempata quem caiu na mesma rodada
+    place: int | None  # só no fim
+
+
+class SurvivalView(BaseModel):
+    """Último de pé. Fases: starting → (answering → results) por frase, com level antes da 1ª
+    difícil; quando sobram 2: duel_intro → (duel_answering → duel_results) até um errar sozinho
+    → finished. A frase vai junto com as respostas (sem fase de leitura)."""
+
+    phase: Literal["starting", "level", "answering", "results", "duel_intro", "duel_answering", "duel_results", "finished"]
+    phase_duration_ms: int
+    phase_ends_in_ms: int
+    round: int  # frase atual, começa em 1
+    duel_round: int  # frase do X1, começa em 1; 0 antes do X1
+    medium_count: int  # quantas médias antes das difíceis
+    max_lives: int
+    difficulty: Literal["medium", "hard"]
+    text: str | None
+    theme: str | None
+    options: list[str]
+    answered: list[str]
+    my_answer: int | None
+    picks: list[SurvivalPick]  # só na revelação
+    correct_option: int | None
+    fact: str | None
+    spared: bool  # todos os vivos erraram: ninguém perdeu vida
+    duelists: list[str]  # os dois do X1; vazio antes
+    next_seconds: float | None  # X1: tempo para responder a frase atual
+    winner: str | None
+    survivors: list[Survivor]
+
+
 class RoomState(BaseModel):
     """Enviado no evento `room_state` sempre que a sala muda."""
 
@@ -294,6 +339,7 @@ class RoomState(BaseModel):
     settings: RoomSettings
     players: list[PlayerView]
     game: GameView | None
+    survival: SurvivalView | None
 
 
 class Ack(BaseModel):

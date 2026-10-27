@@ -1167,7 +1167,8 @@
         "mode": {
           "enum": [
             "classic",
-            "powers"
+            "powers",
+            "last_standing"
           ],
           "type": "string"
         },
@@ -1175,7 +1176,8 @@
           "items": {
             "enum": [
               "classic",
-              "powers"
+              "powers",
+              "last_standing"
             ],
             "type": "string"
           },
@@ -1287,6 +1289,16 @@
               "type": "null"
             }
           ]
+        },
+        "survival": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SurvivalView"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -1297,7 +1309,8 @@
         "min_players",
         "settings",
         "players",
-        "game"
+        "game",
+        "survival"
       ],
       "title": "RoomState",
       "type": "object"
@@ -1496,6 +1509,265 @@
       "title": "SubmitDuelBetRequest",
       "type": "object"
     },
+    "SurvivalPick": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correct": {
+          "type": "boolean"
+        },
+        "elapsed_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lost_life": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "player_id",
+        "option",
+        "correct",
+        "elapsed_ms",
+        "lost_life"
+      ],
+      "title": "SurvivalPick",
+      "type": "object"
+    },
+    "SurvivalView": {
+      "description": "Último de pé. Fases: starting → (answering → results) por frase, com level antes da 1ª\ndifícil; quando sobram 2: duel_intro → (duel_answering → duel_results) até um errar sozinho\n→ finished. A frase vai junto com as respostas (sem fase de leitura).",
+      "properties": {
+        "phase": {
+          "enum": [
+            "starting",
+            "level",
+            "answering",
+            "results",
+            "duel_intro",
+            "duel_answering",
+            "duel_results",
+            "finished"
+          ],
+          "type": "string"
+        },
+        "phase_duration_ms": {
+          "type": "integer"
+        },
+        "phase_ends_in_ms": {
+          "type": "integer"
+        },
+        "round": {
+          "type": "integer"
+        },
+        "duel_round": {
+          "type": "integer"
+        },
+        "medium_count": {
+          "type": "integer"
+        },
+        "max_lives": {
+          "type": "integer"
+        },
+        "difficulty": {
+          "enum": [
+            "medium",
+            "hard"
+          ],
+          "type": "string"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "answered": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "my_answer": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "picks": {
+          "items": {
+            "$ref": "#/$defs/SurvivalPick"
+          },
+          "type": "array"
+        },
+        "correct_option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "spared": {
+          "type": "boolean"
+        },
+        "duelists": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "next_seconds": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "winner": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "survivors": {
+          "items": {
+            "$ref": "#/$defs/Survivor"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "phase",
+        "phase_duration_ms",
+        "phase_ends_in_ms",
+        "round",
+        "duel_round",
+        "medium_count",
+        "max_lives",
+        "difficulty",
+        "text",
+        "theme",
+        "options",
+        "answered",
+        "my_answer",
+        "picks",
+        "correct_option",
+        "fact",
+        "spared",
+        "duelists",
+        "next_seconds",
+        "winner",
+        "survivors"
+      ],
+      "title": "SurvivalView",
+      "type": "object"
+    },
+    "Survivor": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "lives": {
+          "type": "integer"
+        },
+        "out_round": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correct": {
+          "type": "integer"
+        },
+        "answer_ms": {
+          "type": "integer"
+        },
+        "place": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "player_id",
+        "lives",
+        "out_round",
+        "correct",
+        "answer_ms",
+        "place"
+      ],
+      "title": "Survivor",
+      "type": "object"
+    },
     "UpdateSettingsRequest": {
       "description": "Só os campos enviados mudam.",
       "properties": {
@@ -1504,7 +1776,8 @@
             {
               "enum": [
                 "classic",
-                "powers"
+                "powers",
+                "last_standing"
               ],
               "type": "string"
             },

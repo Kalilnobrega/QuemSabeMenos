@@ -317,3 +317,33 @@ async def test_duel_stops_the_match_and_then_it_goes_on(connect, monkeypatch):
     end = await ana.wait_for(lambda s: s["game"]["phase"] == "duel_end", timeout=10)
     assert end["game"]["duel"]["winner"] in (created["player_id"], joined["player_id"])
     await ana.wait_for(lambda s: s["game"]["round"] == 2 and s["game"]["phase"] in ("reading", "answering"), timeout=3)
+
+
+async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
+    from app import survival
+
+    for name in ("START_SECONDS", "LEVEL_SECONDS", "RESULTS_SECONDS", "DUEL_INTRO_SECONDS", "DUEL_RESULTS_SECONDS", "LATE_SECONDS"):
+        monkeypatch.setattr(survival, name, 0.05)
+    monkeypatch.setattr(survival, "ANSWER_SECONDS", 0.5)
+    ana, bia, caio = await connect(), await connect(), await connect()
+    created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
+    code = created["room"]["code"]
+    await bia.call("join_room", {"code": code, "nickname": "Bia", "avatar": "sapo"})
+    await caio.call("join_room", {"code": code, "nickname": "Caio", "avatar": "urso"})
+    await ana.call("update_settings", {"mode": "last_standing"})
+    assert (await ana.call("start_game"))["ok"]
+    game = main.rooms.rooms[code].survival
+
+    def sv(state: dict) -> dict:
+        return state["survival"] or {}
+
+    # Ana acerta e Bia erra; Caio não responde, mas a frase só fecha no tempo.
+    for round_ in (1, 2):
+        await ana.wait_for(lambda s: sv(s).get("round") == round_ and sv(s)["phase"] == "answering")
+        assert (await ana.call("submit_answer", {"option": game.question.answer}))["ok"]
+        assert (await bia.call("submit_answer", {"option": 1 - game.question.answer}))["ok"]
+        state = await ana.wait_for(lambda s: sv(s).get("phase") not in (None, "answering"), timeout=12)
+        assert sv(state)["correct_option"] == game.question.answer or sv(state)["phase"] == "finished"
+    state = await caio.wait_for(lambda s: sv(s).get("phase") == "finished")
+    assert sv(state)["winner"] == created["player_id"]
+    assert [s["place"] for s in sv(state)["survivors"]][0] == 1

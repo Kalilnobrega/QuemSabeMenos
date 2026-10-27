@@ -516,14 +516,15 @@ export interface RoomState {
   settings: RoomSettings;
   players: PlayerView[];
   game: GameView | null;
+  survival: SurvivalView | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
-  mode: "classic" | "powers";
-  mode_options: ("classic" | "powers")[];
+  mode: "classic" | "powers" | "last_standing";
+  mode_options: ("classic" | "powers" | "last_standing")[];
   powerup_max: number;
   powerup_max_options: number[];
   rounds: number;
@@ -563,6 +564,60 @@ export interface PlayerView {
   score: number;
   answer_ms: number;
   streak: number;
+}
+/**
+ * Último de pé. Fases: starting → (answering → results) por frase, com level antes da 1ª
+ * difícil; quando sobram 2: duel_intro → (duel_answering → duel_results) até um errar sozinho
+ * → finished. A frase vai junto com as respostas (sem fase de leitura).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "SurvivalView".
+ */
+export interface SurvivalView {
+  phase: "starting" | "level" | "answering" | "results" | "duel_intro" | "duel_answering" | "duel_results" | "finished";
+  phase_duration_ms: number;
+  phase_ends_in_ms: number;
+  round: number;
+  duel_round: number;
+  medium_count: number;
+  max_lives: number;
+  difficulty: "medium" | "hard";
+  text: string | null;
+  theme: string | null;
+  options: string[];
+  answered: string[];
+  my_answer: number | null;
+  picks: SurvivalPick[];
+  correct_option: number | null;
+  fact: string | null;
+  spared: boolean;
+  duelists: string[];
+  next_seconds: number | null;
+  winner: string | null;
+  survivors: Survivor[];
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "SurvivalPick".
+ */
+export interface SurvivalPick {
+  player_id: string;
+  option: number | null;
+  correct: boolean;
+  elapsed_ms: number | null;
+  lost_life: boolean;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "Survivor".
+ */
+export interface Survivor {
+  player_id: string;
+  lives: number;
+  out_round: number | null;
+  correct: number;
+  answer_ms: number;
+  place: number | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -616,7 +671,7 @@ export interface SubmitDuelBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  mode?: ("classic" | "powers") | null;
+  mode?: ("classic" | "powers" | "last_standing") | null;
   powerup_max?: number | null;
   rounds?: number | null;
   answer_seconds?: number | null;

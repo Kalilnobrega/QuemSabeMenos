@@ -43,6 +43,7 @@ class DuelQuestion:
     options: list[str]
     answer: int
     fact: str
+    difficulty: str | None = None  # das frases de V ou F: medium ou hard
 
 
 @dataclass
@@ -155,6 +156,7 @@ def load_statements(directory: Path = STATEMENTS_DIR) -> list[DuelQuestion]:
                     options=list(TRUE_FALSE_OPTIONS),
                     answer=0 if raw["answer"] else 1,
                     fact=raw["fact"],
+                    difficulty=raw["difficulty"],
                 )
             )
     return statements

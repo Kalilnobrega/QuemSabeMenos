@@ -205,3 +205,19 @@ def test_silenced_player_does_not_see_the_scoreboard(manager):
     room.game.silences = [(PowerUpUse(kind="silence", by=ana.id, target=bia.id, reflected_by=None), 2)]
     assert [p.score for p in room.view(viewer=bia.id).players] == [0, 0]
     assert [p.score for p in room.view(viewer=ana.id).players] == [ana.score, bia.score]
+
+
+def test_last_standing_runs_without_the_classic_game(manager):
+    room, _ = manager.create("sid-ana", profile("Ana"))
+    manager.join("sid-bia", room.code, profile("Bia"))
+    manager.join("sid-caio", room.code, profile("Caio"))
+    manager.update_settings("sid-ana", mode="last_standing")
+    manager.start("sid-ana", now=0)
+    assert room.game is None and room.survival.phase == "starting"
+    room.survival.advance(5)
+    manager.answer("sid-bia", 0, 6)
+    view = room.view(6, room.players[1].id).survival
+    assert view.text and view.my_answer == 0 and len(view.survivors) == 3
+    manager.leave("sid-caio")
+    assert room.survival.contender(room.players[0].id).alive
+    assert len(room.survival.alive_ids()) == 2

@@ -36,6 +36,7 @@ from app.game import (
     point_scale,
 )
 from app.powerups import MAX_HELD
+from app.survival import Survival, SurvivalError
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
@@ -92,6 +93,7 @@ class Room:
     theme_options: list[str] = field(default_factory=list)
     themes: list[str] = field(default_factory=list)  # escolhidos pelo anfitrião; começam todos
     game: Game | None = None
+    survival: Survival | None = None  # o modo Último de pé, no lugar de `game`
     # Perguntas já sorteadas nesta sala, para "jogar de novo" trazer perguntas novas.
     used_questions: set[str] = field(default_factory=set)
 
@@ -126,6 +128,7 @@ class Room:
             ),
             players=[self._player_view(p, viewer) for p in self.players],
             game=self.game.view(now, viewer) if self.game else None,
+            survival=self.survival.view(now, viewer, [p.id for p in self.players]) if self.survival else None,
         )
 
 
@@ -287,13 +290,19 @@ class RoomManager:
             raise RoomError("A partida já começou.")
         if len(room.players) < MIN_PLAYERS:
             raise RoomError(f"Precisa de pelo menos {MIN_PLAYERS} jogadores.")
-        bank = [q for q in self.bank if q.theme in room.themes]
-        questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
-        room.used_questions |= {q.id for q in questions}
         for player in room.players:
             player.score = STARTING_IQ
             player.answer_ms = 0
             player.streak = 0
+        now = time.monotonic() if now is None else now
+        statements = [s for s in self.statements if s.theme in room.themes]
+        room.status = "playing"
+        if room.mode == "last_standing":
+            room.survival = Survival.create([p.id for p in room.players], statements, room.used_questions, self.rng, now)
+            return room
+        bank = [q for q in self.bank if q.theme in room.themes]
+        questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
+        room.used_questions |= {q.id for q in questions}
         room.game = Game(
             questions=questions,
             answer_seconds=room.answer_seconds,
@@ -304,16 +313,22 @@ class RoomManager:
             powerup_max=room.powerup_max,
             bank=bank,
             used=room.used_questions,
-            statements=[s for s in self.statements if s.theme in room.themes],
+            statements=statements,
         )
         if room.game.powers:
             room.game.deal_powerups([p.id for p in room.players])
-        room.game.start_round(time.monotonic() if now is None else now)
-        room.status = "playing"
+        room.game.start_round(now)
         return room
 
     def answer(self, sid: str, option: int, now: float) -> Room:
         found = self.session(sid)
+        if found and found[0].survival:
+            room, player = found
+            try:
+                room.survival.answer(player.id, option, now)
+            except SurvivalError as e:
+                raise RoomError(str(e)) from e
+            return room
         if not found or not found[0].game:
             raise RoomError("Não tem partida rolando.")
         room, player = found
@@ -385,9 +400,11 @@ class RoomManager:
 
     def play_again(self, sid: str) -> Room:
         room = self._host_room(sid, "recomeçar")
-        if not room.game or room.game.phase != "finished":
+        current = room.game or room.survival
+        if not current or current.phase != "finished":
             raise RoomError("A partida ainda não terminou.")
         room.game = None
+        room.survival = None
         room.status = "lobby"
         for player in room.players:
             player.score = STARTING_IQ
@@ -412,6 +429,8 @@ class RoomManager:
 
     def _remove(self, room: Room, player: Player) -> Room | None:
         room.players.remove(player)
+        if room.survival:
+            room.survival.drop(player.id)
         if not room.players:
             del self.rooms[room.code]
             return None

@@ -8,6 +8,7 @@ import type { RoomSettings, RoomState, UpdateSettingsRequest } from '../types/ev
 const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
   powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
+  last_standing: { name: 'Último de pé', hint: 'Verdadeiro ou falso com 2 vidas. Sobraram dois, é X1.' },
 }
 
 interface Props {
@@ -63,13 +64,21 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
   const { themes, theme_options: themeOptions } = room.settings
   const allThemes = themes.length === themeOptions.length
   const powers = room.settings.mode === 'powers'
-  const summary = [
-    { label: 'Perguntas', value: String(room.settings.rounds) },
-    { label: 'Resposta', value: `${room.settings.answer_seconds}s` },
-    { label: 'QI cheio', value: room.settings.speed_grace_seconds ? `${room.settings.speed_grace_seconds}s` : 'Não' },
-    ...(powers ? [{ label: 'Poderes', value: `até ${room.settings.powerup_max}` }] : []),
-    { label: 'Temas', value: allThemes ? 'Todos' : themes.length <= 2 ? themes.join(', ') : `${themes.length} temas` },
-  ]
+  const themesLabel = allThemes ? 'Todos' : themes.length <= 2 ? themes.join(', ') : `${themes.length} temas`
+  const summary =
+    room.settings.mode === 'last_standing'
+      ? [
+          { label: 'Frases', value: 'V ou F' },
+          { label: 'Vidas', value: '2' },
+          { label: 'Temas', value: themesLabel },
+        ]
+      : [
+          { label: 'Perguntas', value: String(room.settings.rounds) },
+          { label: 'Resposta', value: `${room.settings.answer_seconds}s` },
+          { label: 'QI cheio', value: room.settings.speed_grace_seconds ? `${room.settings.speed_grace_seconds}s` : 'Não' },
+          ...(powers ? [{ label: 'Poderes', value: `até ${room.settings.powerup_max}` }] : []),
+          { label: 'Temas', value: themesLabel },
+        ]
 
   return (
     <section className="flex w-full flex-col gap-6">
@@ -224,12 +233,15 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
         <div className="flex flex-col gap-2">
           <h3 className="font-display text-xl tracking-wide">Modo</h3>
           <div className="grid grid-cols-2 gap-2">
-            {settings.mode_options.map((mode) => (
+            {settings.mode_options.map((mode, index) => (
               <button
                 key={mode}
                 onClick={() => update({ mode })}
                 aria-pressed={settings.mode === mode}
+                // Número ímpar de modos: o último ocupa a linha inteira.
                 className={`btn-3d btn-sm flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
+                  index === settings.mode_options.length - 1 && index % 2 === 0 ? 'col-span-2' : ''
+                } ${
                   settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
                 }`}
               >
@@ -251,30 +263,34 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           />
         )}
 
-        <OptionRow
-          title="Perguntas"
-          hint="Mais a impossível no final"
-          options={settings.round_options}
-          value={settings.rounds}
-          label={(n) => String(n)}
-          onPick={(rounds) => update({ rounds })}
-        />
-        <OptionRow
-          title="Tempo de resposta"
-          hint="Segundos para escolher a alternativa"
-          options={settings.answer_options}
-          value={settings.answer_seconds}
-          label={(n) => `${n}s`}
-          onPick={(answer_seconds) => update({ answer_seconds })}
-        />
-        <OptionRow
-          title="Tempo de QI cheio"
-          hint="Quem acerta dentro desse tempo leva o máximo de QI"
-          options={settings.grace_options}
-          value={settings.speed_grace_seconds}
-          label={(n) => (n ? `${n}s` : 'Não')}
-          onPick={(speed_grace_seconds) => update({ speed_grace_seconds })}
-        />
+        {settings.mode !== 'last_standing' && (
+          <>
+            <OptionRow
+              title="Perguntas"
+              hint="Mais a impossível no final"
+              options={settings.round_options}
+              value={settings.rounds}
+              label={(n) => String(n)}
+              onPick={(rounds) => update({ rounds })}
+            />
+            <OptionRow
+              title="Tempo de resposta"
+              hint="Segundos para escolher a alternativa"
+              options={settings.answer_options}
+              value={settings.answer_seconds}
+              label={(n) => `${n}s`}
+              onPick={(answer_seconds) => update({ answer_seconds })}
+            />
+            <OptionRow
+              title="Tempo de QI cheio"
+              hint="Quem acerta dentro desse tempo leva o máximo de QI"
+              options={settings.grace_options}
+              value={settings.speed_grace_seconds}
+              label={(n) => (n ? `${n}s` : 'Não')}
+              onPick={(speed_grace_seconds) => update({ speed_grace_seconds })}
+            />
+          </>
+        )}
 
         <div className="flex flex-col gap-2">
           <h3 className="flex items-baseline justify-between font-display text-xl tracking-wide">
