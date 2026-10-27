@@ -203,6 +203,7 @@ class GameView(BaseModel):
     peek: list[int] | None  # Espiar: quantos outros escolheram cada alternativa até agora
     speed_grace_ms: int  # o seu tempo de QI cheio nesta pergunta (Tempo extra aumenta, Acelerador zera)
     lasting: list[LastingPowerUp]
+    silenced_rounds: int  # Silêncio em você: perguntas que faltam, contando a atual; 0 = livre
     powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
     ready: list[str]
     correct_option: int | None  # só aparece em results

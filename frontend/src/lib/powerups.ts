@@ -18,7 +18,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   accelerator: { name: 'Acelerador', hint: 'O alvo tem um terço do tempo para responder e fica sem QI cheio.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
   mirror: { name: 'Espelho', hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.', targeted: true, tone: 'bg-cyan-400/15 text-cyan-200' },
   magnifier: { name: 'Lupa', hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.', targeted: true, tone: 'bg-yellow-200/15 text-yellow-100' },
-  silence: { name: 'Silêncio', hint: 'O alvo não vê o tempo nem quantos já responderam, e fica sem QI cheio.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
+  silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
 const GAIN_REASON: Record<PowerUpGain['reason'], string> = {

@@ -591,7 +591,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   const typing = game.phase === 'reading'
   const hits = (kind: PowerUpUse['kind']) =>
     game.phase !== 'results' && game.active.some((use) => use.kind === kind && (use.legendary ? use.by !== playerId : use.target === playerId))
-  const silenced = hits('silence')
+  const silenced = game.silenced_rounds > 0
   const scrambled = hits('scramble')
   const fullText = scrambled ? scrambleWords(question.text, game.round) : question.text
   const text = typing ? fullText.slice(0, Math.ceil(fullText.length * progress)) : fullText
@@ -600,7 +600,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   const retry = game.first_wrong
   const answered = retry !== null ? choice !== null && choice !== retry : choice !== null || (playerId !== null && game.answered.includes(playerId))
   const canAnswer = game.phase === 'answering' && !answered
-  const showResults = game.phase === 'results'
+  const showResults = game.phase === 'results' && !silenced
+  const hiddenReveal = game.phase === 'results' && silenced
   const myResult = game.results.find((r) => r.player_id === playerId)
   const connectedCount = room.players.filter((p) => p.connected).length
   const difficulty = DIFFICULTY[question.difficulty]
@@ -679,7 +680,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
       </header>
 
       {!showResults && <ActivePowerUps game={game} players={room.players} playerId={playerId} />}
-      {!showResults && !answered && <InstantPowerUps game={game} playerId={playerId} onUse={onUse} />}
+      {!showResults && !answered && !silenced && <InstantPowerUps game={game} playerId={playerId} onUse={onUse} />}
 
       <div className={`flex h-8 items-center gap-3 ${silenced ? 'invisible' : ''}`}>
         <div className="h-2 flex-1 overflow-hidden rounded-full bg-panel">
@@ -738,6 +739,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
 
       {showResults ? (
         <RoundSummary room={room} game={game} playerId={playerId} onArm={onArm} onSkip={onSkip} />
+      ) : hiddenReveal ? (
+        <SilencedReveal roundsLeft={game.silenced_rounds} />
       ) : (
         <p className="min-h-7 text-center font-hand font-medium text-lg text-steel">
           {typing
@@ -754,6 +757,18 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
         </p>
       )}
     </section>
+  )
+}
+
+/** No lugar da revelação, para quem está silenciado: sem resposta certa, sem placar e sem habilidades. */
+function SilencedReveal({ roundsLeft }: { roundsLeft: number }) {
+  return (
+    <div className="flex flex-col items-center gap-2 rounded-xl bg-panel px-4 py-5 text-center">
+      <PowerUpIcon kind="silence" className="size-10" />
+      <p className="font-display text-3xl tracking-wide text-chalk">Silenciado!</p>
+      <p className="text-steel">Nada de resposta, placar ou habilidades por enquanto.</p>
+      <p className="font-hand text-lg font-medium text-steel">{roundsLeft > 1 ? 'Ainda falta mais uma pergunta em silêncio.' : 'Na próxima você volta a ver tudo.'}</p>
+    </div>
   )
 }
 

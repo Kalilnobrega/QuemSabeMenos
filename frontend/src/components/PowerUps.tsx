@@ -306,7 +306,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
   const mine = (use: PowerUpUse) => use.legendary || use.by === playerId || use.target === playerId || use.reflected_by === playerId
   const uses = [...game.active].sort((a, b) => Number(mine(b)) - Number(mine(a)))
   // As que duram mais de uma pergunta: o anúncio de quem usou só aparece na primeira.
-  const later = game.lasting.filter((l) => !game.active.some((u) => u.kind === l.kind && u.by === playerId))
+  const later = game.lasting.filter((l) => !game.active.some((u) => u.kind === l.kind && mine(u)))
   if (uses.length === 0 && later.length === 0) return null
 
   const line = (use: PowerUpUse) => {
@@ -341,7 +341,7 @@ export function ActivePowerUps({ game, players, playerId }: { game: GameView; pl
         accelerator: 'jogou Acelerador em você: um terço do tempo e sem QI cheio!',
         mirror: 'jogou Espelho em você!',
         magnifier: 'jogou Lupa em você! Arraste a lupa pelo cabo para ler.',
-        silence: 'jogou Silêncio em você: sem relógio, sem saber quem respondeu e sem QI cheio.',
+        silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem habilidades.',
       }
       return `${cap(by)} ${hit[use.kind]}`
     }

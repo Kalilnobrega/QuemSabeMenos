@@ -342,6 +342,9 @@
           },
           "type": "array"
         },
+        "silenced_rounds": {
+          "type": "integer"
+        },
         "powers_round": {
           "type": "boolean"
         },
@@ -405,6 +408,7 @@
         "peek",
         "speed_grace_ms",
         "lasting",
+        "silenced_rounds",
         "powers_round",
         "ready",
         "correct_option",

@@ -733,6 +733,72 @@ def test_silence_hides_who_answered_and_removes_full_iq():
     assert deltas["ana"] > deltas["bia"]
 
 
+def test_silence_lasts_two_questions_and_hides_the_reveal():
+    game, ana, bia = armed_game(4)
+    arm(game, "ana", "silence", "bia")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 1})
+    seen = game.view(now=20, viewer="bia")
+    assert (seen.silenced_rounds, seen.results, seen.correct_option, seen.fact, seen.can_arm) == (2, [], None, None, False)
+    assert game.view(now=20, viewer="ana").results != []
+    with pytest.raises(GameError, match="Silenciado"):
+        arm(game, "bia", "double")
+    game.mark_ready("ana")
+    assert game.everyone_ready(["ana", "bia"])  # quem está silenciado não segura o Pular
+
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    assert game.view(now=20, viewer="bia").silenced_rounds == 1
+    assert [(l.kind, l.rounds_left) for l in game._lasting_view("bia")] == [("silence", 1)]
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    seen = game.view(now=20, viewer="bia")
+    assert seen.silenced_rounds == 0 and seen.results != []
+
+
+def test_silence_blocks_instant_powerups_and_restarts_instead_of_stacking():
+    game, ana, bia = armed_game(5)
+    arm(game, "ana", "silence", "bia")
+    game.powerups["bia"].append("fifty_fifty")
+    game.start_round(now=0)
+    with pytest.raises(GameError, match="Silenciado"):
+        game.use_now("bia", "fifty_fifty")
+    game.open_answers(now=0)
+    game.close_round([ana, bia], now=20)
+    arm(game, "ana", "silence", "bia")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    assert game.silence_left("bia") == 2
+
+
+def test_silence_pauses_for_the_bet_and_comes_back_after():
+    qs = [question("m0", "medium"), question("m1", "medium"), *(question(f"h{i}", "hard") for i in range(2, 5))]
+    game = Game(powers=True, questions=qs, answer_seconds=10)
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": [], "bia": []}
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    arm(game, "ana", "silence", "bia")
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    game.start_round(now=0)
+    assert game.phase == "betting" and not game.is_silenced("bia")
+    game.bet(bia, 10, now=1)
+    game.begin_reading(now=2)
+    game.open_answers(now=2)
+    game.close_round([ana, bia], now=20)
+    assert game.view(now=20, viewer="bia").results != []
+    reveal(game, [ana, bia], {"ana": 0, "bia": 0})
+    assert game.view(now=20, viewer="bia").silenced_rounds == 1
+    assert game.view(now=20, viewer="bia").results == []
+
+
+def test_legendary_silence_hits_everyone_but_the_caster():
+    game = Game(powers=True, questions=[question(f"m{i}", "medium") for i in range(4)], answer_seconds=10)
+    ana, bia, caio = P("ana", 50), P("bia", 50), P("caio", 50)
+    game.powerups = {"ana": [], "bia": [], "caio": []}
+    game.legendaries = {"ana": ["silence"]}
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 0})
+    game.arm("ana", "silence", None, ["ana", "bia", "caio"], legendary=True)
+    reveal(game, [ana, bia, caio], {"ana": 0, "bia": 0, "caio": 0})
+    assert (game.silence_left("ana"), game.silence_left("bia"), game.silence_left("caio")) == (0, 2, 2)
+
+
 def test_reverse_sends_sabotage_back_once():
     game, ana, bia = armed_game(2)
     arm(game, "ana", "scramble", "bia")

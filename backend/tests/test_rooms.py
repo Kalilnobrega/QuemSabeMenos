@@ -3,7 +3,7 @@ from typing import get_args
 
 import pytest
 
-from app.events import Avatar, Profile
+from app.events import Avatar, PowerUpUse, Profile
 from app.rooms import CODE_ALPHABET, CODE_LENGTH, MAX_PLAYERS, RoomError, RoomManager
 
 
@@ -195,3 +195,13 @@ def test_host_picks_the_mode_and_only_powers_deals_powerups(manager):
     manager.start("sid-ana")
     assert room.game.powers and room.game.powerup_max == 3
     assert all(len(held) == 1 for held in room.game.powerups.values())
+
+
+def test_silenced_player_does_not_see_the_scoreboard(manager):
+    room, ana = manager.create("sid-ana", profile("Ana"))
+    _, bia = manager.join("sid-bia", room.code, profile("Bia", "sapo"))
+    manager.update_settings("sid-ana", mode="powers")
+    manager.start("sid-ana")
+    room.game.silences = [(PowerUpUse(kind="silence", by=ana.id, target=bia.id, reflected_by=None), 2)]
+    assert [p.score for p in room.view(viewer=bia.id).players] == [0, 0]
+    assert [p.score for p in room.view(viewer=ana.id).players] == [ana.score, bia.score]

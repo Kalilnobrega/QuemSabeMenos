@@ -162,6 +162,7 @@ export interface GameView {
   peek: number[] | null;
   speed_grace_ms: number;
   lasting: LastingPowerUp[];
+  silenced_rounds: number;
   powers_round: boolean;
   ready: string[];
   correct_option: number | null;

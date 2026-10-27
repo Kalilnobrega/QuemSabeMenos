@@ -249,6 +249,8 @@ class Game:
     lasting: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
+    # Silêncios valendo e quantas perguntas comuns faltam em cada um, contando a atual.
+    silences: list[tuple[PowerUpUse, int]] = field(default_factory=list)
     leaders: set[str] = field(default_factory=set)  # em 1º depois da última rodada (o empate conta)
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
@@ -288,6 +290,8 @@ class Game:
     ) -> None:
         if not self.can_arm:
             raise GameError("Agora não dá para usar habilidade.")
+        if self.is_silenced(player_id):
+            raise GameError("Silenciado: sem habilidades por enquanto.")
         if player_id in self.armed:
             raise GameError("Você já armou uma habilidade para a próxima pergunta.")
         if legendary:
@@ -316,6 +320,8 @@ class Game:
             raise GameError("Agora não dá para usar habilidade.")
         if kind not in powerups.INSTANT:
             raise GameError("Essa se arma na revelação.")
+        if self.is_silenced(player_id):
+            raise GameError("Silenciado: sem habilidades por enquanto.")
         held = self.powerups.get(player_id, [])
         if kind not in held:
             raise GameError("Você não tem essa habilidade.")
@@ -335,9 +341,12 @@ class Game:
         self.ready.add(player_id)
 
     def everyone_ready(self, player_ids: list[str]) -> bool:
-        return all(pid in self.ready for pid in player_ids)
+        """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
+        return all(pid in self.ready or self.is_silenced(pid) for pid in player_ids)
 
     def start_round(self, now: float) -> None:
+        if self.round >= 0 and self._counts_for_powers():
+            self.silences = [(use, left - 1) for use, left in self.silences if left > 1]
         self.round += 1
         self.answers = {}
         self.results = []
@@ -360,6 +369,8 @@ class Game:
         for use in self.active:
             if use.reflected_by:
                 self.lasting[use.reflected_by].pop("reverse", None)
+            if use.kind == "silence":
+                self.silences.append((use, powerups.SILENCE_ROUNDS))
         if self.round == 0:
             self._enter("starting", now, START_SECONDS)
         elif self.question.difficulty == FINAL_DIFFICULTY:
@@ -384,11 +395,25 @@ class Game:
 
     def _affects(self, kind: PowerUp, player_id: str) -> bool:
         """A habilidade vale para o jogador nesta pergunta (como alvo, ou para si nas que não miram)."""
+        if kind == "silence":
+            return self.is_silenced(player_id)
         if kind in powerups.LASTING:
             return self._counts_for_powers() and self.lasting.get(player_id, {}).get(kind, 0) > 0
         return any(
             use.by != player_id if use.legendary else (use.target or use.by) == player_id for use in self._uses(kind)
         )
+
+    def silence_left(self, player_id: str) -> int:
+        """Perguntas comuns de Silêncio que faltam para o jogador, contando a atual (e a revelação dela).
+        Na aposta ele fica livre e volta a ficar silenciado depois. Um Silêncio novo em quem já está
+        silenciado recomeça a contagem, não soma."""
+        if not self._counts_for_powers():
+            return 0
+        hits = (left for use, left in self.silences if (use.by != player_id if use.legendary else use.target == player_id))
+        return max(hits, default=0)
+
+    def is_silenced(self, player_id: str) -> bool:
+        return self.silence_left(player_id) > 0
 
     def _counts_for_powers(self) -> bool:
         return self.powers and not self.is_bet_round and self.question.difficulty != FINAL_DIFFICULTY
@@ -619,7 +644,9 @@ class Game:
         ends_at = self.phase_ends_at
         if self.phase == "answering" and viewer:
             ends_at = self.deadline(viewer)  # Tempo extra e Acelerador mudam o prazo de cada um
-        silenced = bool(viewer) and not show_answer and self._affects("silence", viewer)
+        silence_left = self.silence_left(viewer) if viewer else 0
+        # Silenciado não vê a revelação: nem a resposta certa, nem os resultados, nem a curiosidade.
+        hidden = silence_left > 0 and show_answer
         peeking = bool(viewer) and self.phase == "answering" and self._affects("peek", viewer)
         return GameView(
             round=self.round + 1,
@@ -632,7 +659,7 @@ class Game:
             question=None
             if self.phase in PREPARATION_PHASES
             else QuestionView(text=q.text, options=q.options, theme=q.theme, difficulty=q.difficulty),
-            answered=[] if silenced else [*self.answers, *self.first_wrong.keys() - self.answers.keys()],
+            answered=[] if silence_left else [*self.answers, *self.first_wrong.keys() - self.answers.keys()],
             bet_round=None if self.bet_round is None else self.bet_round + 1,
             bet_percents=list(BET_PERCENTS),
             bet_max_percent=BET_MAX_PERCENT,
@@ -642,27 +669,31 @@ class Game:
             legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
             powerup_max=self.powerup_max,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
-            can_arm=self.can_arm,
+            can_arm=self.can_arm and not silence_left,
             armed=self.armed.get(viewer) if viewer else None,
-            active=self._visible_uses(viewer, show_answer),
+            active=[] if hidden else self._visible_uses(viewer, show_answer),
             hidden_options=self.hidden_options.get(viewer, []) if viewer else [],
             first_wrong=self.first_wrong[viewer].option if viewer in self.first_wrong else None,
             peek=self._peek(viewer) if peeking else None,
             speed_grace_ms=round((self.grace_window(viewer) if viewer else self.speed_grace_seconds) * 1000),
             lasting=self._lasting_view(viewer) if viewer and not show_answer else [],
+            silenced_rounds=silence_left,
             powers_round=self._counts_for_powers(),
             ready=sorted(self.ready),
-            correct_option=q.answer if show_answer else None,
-            fact=q.fact if show_answer else None,
-            results=self.results,
+            correct_option=q.answer if show_answer and not hidden else None,
+            fact=q.fact if show_answer and not hidden else None,
+            results=[] if hidden else self.results,
         )
 
     def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
-        return [
+        lasting = [
             LastingPowerUp(kind=kind, rounds_left=left, total=self.lasting_total[viewer][kind])
             for kind, left in self.lasting.get(viewer, {}).items()
             if self._affects(kind, viewer)
         ]
+        if silence_left := self.silence_left(viewer):
+            lasting.append(LastingPowerUp(kind="silence", rounds_left=silence_left, total=powerups.SILENCE_ROUNDS))
+        return lasting
 
     def _peek(self, viewer: str) -> list[int]:
         """Primeira escolha de cada um dos outros, por alternativa."""

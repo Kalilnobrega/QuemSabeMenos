@@ -24,6 +24,8 @@ INSTANT: frozenset[PowerUp] = frozenset({"fifty_fifty", "peek"})
 # Perguntas comuns que cada uma dura; Escudo e Reverso acabam antes, quando são usados.
 LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2, "reverse": 3}
 REVERSE_LEADER_ROUNDS = 2  # o Reverso de quem está em 1º ao armar dura menos
+# Silêncio: por 2 perguntas comuns o alvo não vê tempo, placar nem revelação e não usa habilidades.
+SILENCE_ROUNDS = 2
 BREAKABLE: frozenset[PowerUp] = frozenset({"shield", "second_chance", "reverse"})
 MAX_HELD = 2
 STREAK_FOR_POWERUP = 3

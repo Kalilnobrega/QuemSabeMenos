@@ -123,9 +123,17 @@ class Room:
                 themes=self.themes,
                 theme_options=self.theme_options,
             ),
-            players=[p.view() for p in self.players],
+            players=[self._player_view(p, viewer) for p in self.players],
             game=self.game.view(now, viewer) if self.game else None,
         )
+
+
+    def _player_view(self, player: Player, viewer: str | None) -> PlayerView:
+        """Silenciado não vê o placar, nem o próprio."""
+        view = player.view()
+        if self.game and viewer and self.game.is_silenced(viewer):
+            return view.model_copy(update={"score": 0, "streak": 0, "answer_ms": 0})
+        return view
 
 
 def normalize_code(code: str) -> str:
