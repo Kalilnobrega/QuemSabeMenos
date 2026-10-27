@@ -55,6 +55,12 @@ export const SURVIVAL_HINTS: Partial<Record<Kind, string>> = {
   resurrection: 'Mítico, só para fantasma. Na revelação, você volta para o jogo com 1 vida.',
 }
 
+/** No V ou F a Segunda chance vale só na próxima: com 2 opções, tentar de novo é acerto garantido. */
+export const TRUE_FALSE_HINTS: Partial<Record<Kind, string>> = {
+  ...SURVIVAL_HINTS,
+  second_chance: 'Vale só na próxima pergunta: errou, tenta de novo.',
+}
+
 export function gainLabel(gain: PowerUpGain) {
   const info = POWERUP_INFO[gain.kind]
   const name = gain.mythic ? `${info.name} MÍTICO` : gain.legendary ? `${info.name} LENDÁRIO` : info.name

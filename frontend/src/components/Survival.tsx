@@ -5,7 +5,7 @@ import { AVATAR_URLS } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
+import { POWERUP_INFO, SURVIVAL_HINTS, TRUE_FALSE_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
 import type { PlayerView, PowerUpUse, SurvivalView, Survivor } from '../types/events'
 import { Confetti, PeekBadge } from './Game'
 import { LeaveButton } from './LeaveButton'
@@ -306,7 +306,16 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
       {duel ? <DuelCards snapshot={snapshot} playerId={playerId} /> : <SurvivorStrip snapshot={snapshot} playerId={playerId} />}
 
       {blinded && <div className="flashbang-flash" aria-hidden="true" />}
-      {survival.powers && !revealed && <ActivePowerUps game={survival} players={room.players} playerId={playerId} concealed={blinded} survival />}
+      {survival.powers && !revealed && (
+        <ActivePowerUps
+          game={survival}
+          players={room.players}
+          playerId={playerId}
+          concealed={blinded}
+          survival
+          lines={choices ? undefined : { second_chance: 'Segunda chance nesta pergunta: errou, tenta de novo.' }}
+        />
+      )}
       {survival.powers && !revealed && answering && !answered && !silenced && <InstantPowerUps game={survival} playerId={playerId} onUse={onUse} />}
 
       <div className={`h-2 overflow-hidden rounded-full bg-panel ${silenced ? 'invisible' : ''}`}>
@@ -385,7 +394,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
           players={room.players}
           playerId={playerId}
           targetIds={survival.survivors.filter((s) => s.out_round === null).map((s) => s.player_id)}
-          hints={SURVIVAL_HINTS}
+          hints={choices ? SURVIVAL_HINTS : TRUE_FALSE_HINTS}
           lockedNote="No X1 não tem habilidade."
           emptyNote={me?.out_round !== null ? 'Fantasma: a cada 3 perguntas chega uma sabotagem para jogar nos vivos.' : undefined}
           onArm={onArm}

@@ -380,12 +380,14 @@ export function ActivePowerUps({
   playerId,
   concealed = false,
   survival = false,
+  lines,
 }: {
   game: PowerView
   players: PlayerView[]
   playerId: string | null
   concealed?: boolean
   survival?: boolean // Último de pé: fala de vidas, não de QI
+  lines?: Partial<Record<Kind, string>> // trocam o aviso de quem usou o poder em si mesmo
 }) {
   const name = (id: string | null) => (id === playerId ? 'você' : (players.find((p) => p.id === id)?.nickname ?? '?'))
   const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
@@ -423,6 +425,7 @@ export function ActivePowerUps({
           shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira vida.',
           extra_time: 'Tempo extra: +5s nesta e nas próximas 2.',
         }),
+        ...lines,
       }
       return by === 'você' ? self[use.kind]! : `${by} usou ${info.name}.`
     }

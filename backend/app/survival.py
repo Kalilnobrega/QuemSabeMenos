@@ -48,6 +48,7 @@ POWERS: tuple[PowerUp, ...] = (
 )
 TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty", "decoy"})
 LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2, "reverse": 3}
+TRUE_FALSE_SECOND_CHANCE_ROUNDS = 1  # com 2 opções a segunda tentativa é acerto garantido
 GHOST_EVERY = 3  # perguntas entre um presente e outro para quem caiu
 GHOST_SABOTAGES: tuple[PowerUp, ...] = ("scramble", "accelerator", "mirror", "magnifier", "flashbang")
 GHOST_RESURRECTION_CHANCE = 0.08
@@ -524,8 +525,11 @@ class Survival:
         self.armed = {}
         for use in armed:
             if use.kind in LASTING:
-                self.lasting.setdefault(use.by, {})[use.kind] = LASTING[use.kind]
-                self.lasting_total.setdefault(use.by, {})[use.kind] = LASTING[use.kind]
+                rounds = LASTING[use.kind]
+                if use.kind == "second_chance" and self.kind == "true_false":
+                    rounds = TRUE_FALSE_SECOND_CHANCE_ROUNDS
+                self.lasting.setdefault(use.by, {})[use.kind] = rounds
+                self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
         reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
         self.active = pw.reflect(armed, reversers)
         for use in self.active:

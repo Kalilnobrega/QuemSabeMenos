@@ -353,3 +353,13 @@ def test_silenced_player_does_not_see_lives_or_the_reveal():
     with pytest.raises(SurvivalError):
         game.held["p1"] = ["shield"]
         game.arm("p1", "shield", None)
+
+
+def test_second_chance_lasts_one_question_in_true_false_and_two_in_choices():
+    for kind, rounds in (("true_false", 1), ("choices", 2)):
+        game = powers_game(kind=kind)
+        to_results(game, right=["p0", "p1", "p2", "p3"])
+        game.held["p0"] = ["second_chance"]
+        game.arm("p0", "second_chance", None)
+        game.advance(0)
+        assert game.lasting["p0"]["second_chance"] == rounds
