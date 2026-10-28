@@ -263,6 +263,62 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'medkit') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2.5" y="6" width="19" height="14" rx="3" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M9 6V4h6v2" fill="none" {...ICON_STROKE} />
+        <path d="M12 9.5v7M8.5 13h7" stroke="#EF4444" strokeWidth="2.6" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'hide') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <circle cx="8" cy="14" r="5.5" fill="#22C55E" {...ICON_STROKE} />
+        <circle cx="16" cy="13" r="6" fill="#16A34A" {...ICON_STROKE} />
+        <circle cx="12" cy="8.5" r="5" fill="#4ADE80" {...ICON_STROKE} />
+        <circle cx="10.5" cy="13" r="1" fill="#12141B" />
+        <circle cx="13.5" cy="13" r="1" fill="#12141B" />
+      </svg>
+    )
+  }
+  if (kind === 'curse') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M12 2.5c5 0 8.5 3.5 8.5 8 0 3-1.7 5-3.5 6v3.5h-10V16.5C5.2 15.5 3.5 13.5 3.5 10.5c0-4.5 3.5-8 8.5-8Z" fill="#A78BFA" {...ICON_STROKE} />
+        <circle cx="8.7" cy="11" r="2" fill="#12141B" />
+        <circle cx="15.3" cy="11" r="2" fill="#12141B" />
+        <path d="M10 20v-2M14 20v-2" stroke="#12141B" strokeWidth="1.4" />
+      </svg>
+    )
+  }
+  if (kind === 'blood_pact') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M8 3c2.5 3.5 4 6 4 8a4 4 0 0 1-8 0c0-2 1.5-4.5 4-8Z" fill="#EF4444" {...ICON_STROKE} />
+        <path d="M16 9c2.5 3.5 4 6 4 8a4 4 0 0 1-8 0c0-2 1.5-4.5 4-8Z" fill="#B91C1C" {...ICON_STROKE} />
+        <path d="M9.5 14.5 14 16" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'dagger') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M13.5 3 21 10.5 11 18l-5-5Z" fill="#E2E8F0" {...ICON_STROKE} />
+        <path d="m6 13 5 5-2 2-5-5Z" fill="#C084FC" {...ICON_STROKE} />
+        <path d="m5.5 18.5-3 3" stroke="#7C3AED" strokeWidth="2.6" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'blessing') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <ellipse cx="12" cy="5" rx="6.5" ry="2.2" fill="none" stroke="#FDE047" strokeWidth="2" />
+        <path d="M12 9.5 13.8 14l4.7.3-3.6 3 1.2 4.6L12 19.4l-4.1 2.5 1.2-4.6-3.6-3 4.7-.3Z" fill="#FDE68A" {...ICON_STROKE} />
+      </svg>
+    )
+  }
   if (kind === 'scratch') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -488,6 +544,7 @@ export function ActivePowerUps({
         second_chance: 'Segunda chance nesta e na próxima: errou, tenta de novo.',
         reverse: 'Seu Reverso está pronto (só você sabe): o primeiro poder em você volta.',
         investment: 'Investimento valendo: cada acerto seguido rende mais. Não erre!',
+        hide: 'Esconderijo: você pula esta pergunta sem perder vida.',
         ...(survival && {
           shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira vida.',
           extra_time: 'Tempo extra: +5s nesta e nas próximas 2.',
@@ -505,6 +562,8 @@ export function ActivePowerUps({
         mirror: 'jogou Espelho em você!',
         magnifier: 'jogou Lupa em você! Arraste a lupa pelo cabo para ler.',
         toll: 'jogou Pedágio em você: cada resposta tem um preço!',
+        curse: 'jogou Maldição em você: se errar, perde 2 vidas!',
+        blood_pact: 'fez um Pacto de sangue com você: se perder vida, você perde também!',
         decoy: 'jogou Alternativa falsa em você: duas dessas são mentira!',
         flashbang: 'jogou Flashbang em você: leia rápido, ela estoura em 4 segundos!',
         silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem habilidades.',
@@ -641,9 +700,9 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
             <span className="font-bold text-purple-300">{info.name} MÍTICO:</span> {hint(selected.kind)}
           </span>
         </p>
-        {selected.kind === 'duel' && (
+        {(selected.kind === 'duel' || selected.kind === 'dagger') && (
           <>
-            <p className="text-sm font-semibold text-steel">Quem vai para o X1?</p>
+            <p className="text-sm font-semibold text-steel">{selected.kind === 'duel' ? 'Quem vai para o X1?' : 'Em quem cravar a Adaga?'}</p>
             <div className="flex flex-wrap gap-2">
               {targets.map((p) => (
                 <button
@@ -659,7 +718,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
           </>
         )}
         <div className="flex gap-2">
-          {selected.kind !== 'duel' && (
+          {selected.kind !== 'duel' && selected.kind !== 'dagger' && (
             <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg">
               Usar agora
             </button>
@@ -736,7 +795,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         <div className="flex gap-2">
           {!info.targeted && selected.kind !== 'theme' && (
             <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
-              {selected.kind === 'backpack' ? 'Abrir agora' : 'Usar na próxima'}
+              {selected.kind === 'backpack' ? 'Abrir agora' : selected.kind === 'medkit' ? 'Usar agora' : 'Usar na próxima'}
             </button>
           )}
           <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">

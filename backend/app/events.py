@@ -22,6 +22,7 @@ PowerUp = Literal[
     "resurrection", "duel",
     "cold_water", "free_pass",  # só na Batata quente
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
+    "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
 ]
 GameMode = Literal["classic", "teams", "last_standing", "hot_potato"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "teams", "last_standing", "hot_potato")
@@ -328,6 +329,17 @@ class SurvivalPick(BaseModel):
     decoy: str | None = None  # Alternativa falsa em que caiu
     shielded: bool = False  # o Escudo segurou a vida
     stolen_by: str | None = None  # Roubo de vida: quem ficou com a vida perdida
+    hidden: bool = False  # Esconderijo: pulou a pergunta
+    cursed: bool = False  # Maldição: o erro tirou 2 vidas
+    pact_from: str | None = None  # Pacto de sangue: perdeu uma vida junto com essa pessoa
+
+
+class Stab(BaseModel):
+    """Adaga: quem usou, em quem, e se eliminou (aí quem usou ganha a Bênção)."""
+
+    by: str
+    target: str
+    eliminated: bool
 
 
 class Gift(BaseModel):
@@ -396,6 +408,9 @@ class SurvivalView(BaseModel):
     powers_round: bool
     ready: list[str]
     revived: list[str]  # quem ressuscitou nesta revelação
+    stabs: list[Stab]  # Adagas usadas nesta revelação
+    hiding: bool  # Esconderijo: você pula esta pergunta
+    blessing: int | None  # Bênção: a alternativa certa, só para você
     gifts: list[Gift]  # poderes ganhos nesta revelação
 
 

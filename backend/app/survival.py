@@ -30,6 +30,7 @@ from app.events import (
     SurvivalKind,
     SurvivalPick,
     SurvivalView,
+    Stab,
 )
 from app.game import reading_seconds
 
@@ -43,9 +44,14 @@ LATE_SECONDS = 1.0  # tolerância de rede para respostas no limite
 
 # Poderes do modo. No V ou F, 50/50 e Alternativa falsa entregariam a resposta.
 POWERS: tuple[PowerUp, ...] = (
-    "fifty_fifty", "peek", "shield", "extra_time", "second_chance", "reverse", "theme", "backpack",
+    "fifty_fifty", "peek", "shield", "extra_time", "second_chance", "reverse", "theme", "backpack", "medkit", "hide",
     "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "silence", "decoy", "flashbang",
+    "curse", "blood_pact",
 )
+# Ataques que só existem aqui: o Reverso também devolve, mas eles não entram no sorteio de lendários do clássico.
+TARGETED: frozenset[PowerUp] = pw.TARGETED | {"curse", "blood_pact"}
+CURSE_LIVES = 2  # Maldição: errando, o alvo perde 2 vidas
+DAGGER_CHANCE = 0.04  # Adaga (mítico): chance a cada poder ganho por acertos seguidos
 TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty", "decoy"})
 LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2, "reverse": 3}
 TRUE_FALSE_SECOND_CHANCE_ROUNDS = 1  # com 2 opções a segunda tentativa é acerto garantido
@@ -159,6 +165,9 @@ class Survival:
     next_theme: str | None = None
     runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo ao próximo poder
     revived: list[str] = field(default_factory=list)  # ressuscitados nesta revelação
+    stabs: list[Stab] = field(default_factory=list)  # Adagas usadas nesta revelação
+    blessed: set[str] = field(default_factory=set)  # quem ganhou a Bênção para a próxima pergunta
+    blessing: set[str] = field(default_factory=set)  # quem vê a resposta certa nesta pergunta
     gifts: list[Gift] = field(default_factory=list)  # poderes ganhos nesta revelação
 
     @classmethod
@@ -204,7 +213,10 @@ class Survival:
         return list(self.duelists) if self.in_duel() else self.alive_ids()
 
     def everyone_answered(self, connected: list[str]) -> bool:
-        return all(pid in self.answers for pid in self.answering_ids() if pid in connected)
+        return all(pid in self.answers or self._hiding(pid) for pid in self.answering_ids() if pid in connected)
+
+    def _hiding(self, player_id: str) -> bool:
+        return not self.in_duel() and self._affects("hide", player_id)
 
     def everyone_ready(self, connected: list[str]) -> bool:
         return self.phase == "results" and all(pid in self.ready for pid in connected)
@@ -269,6 +281,8 @@ class Survival:
             raise SurvivalError("Você está fora desta rodada.")
         if player_id in self.answers:
             raise SurvivalError("Você já respondeu.")
+        if self._hiding(player_id):
+            raise SurvivalError("Você está escondido nesta pergunta.")
         deadline = self.phase_started_at + self.answer_window(player_id)
         if now > deadline + LATE_SECONDS:
             raise SurvivalError("O tempo acabou.")
@@ -301,20 +315,24 @@ class Survival:
         me = self.contender(player_id)
         if kind == "resurrection":
             return self._resurrect(player_id)
+        if kind == "dagger":
+            return self._stab(player_id, target)
         held = self.held.get(player_id, [])
         if kind not in held:
             raise SurvivalError("Você não tem essa habilidade.")
         if kind == "backpack":
             return self._open_backpack(player_id)
+        if kind == "medkit":
+            return self._heal(player_id)
         if not self.can_arm():
             raise SurvivalError("No X1 não tem habilidade.")
         if player_id in self.armed:
             raise SurvivalError("Você já armou uma habilidade para a próxima pergunta.")
         if kind in pw.INSTANT:
             raise SurvivalError("Essa se usa na hora da pergunta.")
-        if not me.alive and kind not in pw.TARGETED:
+        if not me.alive and kind not in TARGETED:
             raise SurvivalError("Fantasma só joga sabotagem nos vivos.")
-        if kind in pw.TARGETED:
+        if kind in TARGETED:
             alive = self.alive_ids()
             if target is None or target == player_id or target not in alive:
                 raise SurvivalError("Escolha em quem usar (só em quem está vivo).")
@@ -395,12 +413,14 @@ class Survival:
         self.round += 1
         self.ready = set()
         self.revived = []
+        self.stabs = []
         self.gifts = []
         if len(alive) == 2 and not self.in_duel():
             self.duelists = alive
             self.duel_round = 1
             self.armed = {}
             self.active = []
+            self.blessed, self.blessing = set(), set()  # no X1 não tem poder
             self.question = self._draw(self.difficulty())
             self._enter("duel_intro", now, DUEL_INTRO_SECONDS)
             return
@@ -430,6 +450,9 @@ class Survival:
         real = len(self.question.options)
         for pid in self.answering_ids():
             c = self.contender(pid)
+            if self._hiding(pid):
+                self.picks.append(SurvivalPick(player_id=pid, option=None, correct=False, elapsed_ms=None, lost_life=False, hidden=True))
+                continue
             window_ms = round(self.answer_window(pid) * 1000)
             first = self.first_wrong.get(pid)
             option, at = self.answers.get(pid) or first or (None, None)
@@ -449,21 +472,24 @@ class Survival:
                     decoy=decoy.texts[option - real] if decoy and option is not None and option >= real else None,
                 )
             )
-        wrong = [p for p in self.picks if not p.correct]
+        counted = [p for p in self.picks if not p.hidden]
+        wrong = [p for p in counted if not p.correct]
         if self.in_duel():
             self._close_duel(wrong)
             self._enter("duel_results", now, DUEL_RESULTS_SECONDS)
             return
-        self.spared = len(wrong) == len(self.picks) and len(self.picks) > 0
+        self.spared = len(wrong) == len(counted) and len(counted) > 0
         if not self.spared:
             for pick in wrong:
                 c = self.contender(pick.player_id)
-                if self._affects("shield", pick.player_id):
-                    pick.shielded = True
-                    self.lasting[pick.player_id].pop("shield", None)
+                if self._shielded(pick):
                     continue
                 pick.lost_life = True
                 c.lives -= 1
+                if self._affects("curse", pick.player_id):
+                    pick.cursed = True
+                    c.lives -= CURSE_LIVES - 1
+            self._blood_pacts()
         if self.powers:
             self._settle_powers()
         for pick in self.picks:
@@ -474,6 +500,29 @@ class Survival:
             self._gains()
             self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, POWERS_RESULTS_SECONDS if self.powers else RESULTS_SECONDS)
+
+    def _shielded(self, pick: SurvivalPick) -> bool:
+        """O Escudo segura a vida (e a Maldição junto)."""
+        if not self._affects("shield", pick.player_id):
+            return False
+        pick.shielded = True
+        self.lasting[pick.player_id].pop("shield", None)
+        return True
+
+    def _blood_pacts(self) -> None:
+        """Pacto de sangue: quem jogou perdeu vida, o alvo perde uma também."""
+        by_id = {p.player_id: p for p in self.picks}
+        for use in self.active:
+            source, victim = by_id.get(use.by), by_id.get(use.target)
+            target = self.contender(use.target)
+            if use.kind != "blood_pact" or not source or not source.lost_life or not target or not target.alive:
+                continue
+            if victim and self._shielded(victim):
+                continue
+            target.lives -= 1
+            if victim:
+                victim.pact_from = use.by
+                victim.lost_life = True
 
     def _close_duel(self, wrong: list[SurvivalPick]) -> None:
         """Morte súbita: perde quem errou sozinho; se os dois erram ou acertam, segue.
@@ -531,12 +580,22 @@ class Survival:
                 self.lasting.setdefault(use.by, {})[use.kind] = rounds
                 self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
         reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
-        self.active = pw.reflect(armed, reversers)
+        self.active = [self._reflect_own(use, reversers) for use in pw.reflect(armed, reversers)]
+        self.blessing, self.blessed = self.blessed, set()
         for use in self.active:
             if use.reflected_by:
                 self.lasting[use.reflected_by].pop("reverse", None)
             if use.kind == "silence":
                 self.silences.append((use, pw.SILENCE_ROUNDS))
+
+    def _reflect_own(self, use: PowerUpUse, reversers: set[str]) -> PowerUpUse:
+        """O Reverso com os ataques daqui: a Maldição volta para quem jogou, e o Pacto passa a amarrar
+        quem jogou ao alvo (se o alvo perder vida, quem jogou perde também)."""
+        if use.kind not in ("curse", "blood_pact") or use.target not in reversers:
+            return use
+        if use.kind == "curse":
+            return PowerUpUse(kind="curse", by=use.by, target=use.by, reflected_by=use.target)
+        return PowerUpUse(kind="blood_pact", by=use.target, target=use.by, reflected_by=use.target)
 
     def _affects(self, kind: PowerUp, player_id: str) -> bool:
         if not self.powers_round():
@@ -590,13 +649,18 @@ class Survival:
         """Um poder a cada 3 acertos seguidos; quem caiu ganha uma sabotagem a cada 3 perguntas."""
         for pick in self.picks:
             pid = pick.player_id
+            if pick.hidden:
+                continue  # escondido: a sequência nem anda nem quebra
             if not pick.correct or pick.first_option is not None:
                 self.runs[pid] = 0
                 continue
             self.runs[pid] = self.runs.get(pid, 0) + 1
             if self.runs[pid] >= pw.STREAK_FOR_POWERUP:
                 self.runs[pid] = 0
-                self._give(pid, self.rng.choice(self.power_kinds()), "streak")
+                if self.rng.random() < DAGGER_CHANCE and "dagger" not in self.mythics.get(pid, []):
+                    self._give(pid, "dagger", "streak", mythic=True)
+                else:
+                    self._give(pid, self.rng.choice(self.power_kinds()), "streak")
         if self.round % GHOST_EVERY:
             return
         for c in self.contenders:
@@ -621,6 +685,35 @@ class Survival:
         held.remove("backpack")
         self.extra_slots[player_id] = self.extra_slots.get(player_id, 0) + 1
         held.append(self.rng.choice([k for k in self.power_kinds() if k != "backpack"]))
+
+    def _heal(self, player_id: str) -> None:
+        c = self.contender(player_id)
+        if not c.alive:
+            raise SurvivalError("Kit médico é para quem está vivo.")
+        if c.lives >= self.rules.lives:
+            raise SurvivalError("Você já está com todas as vidas.")
+        self.held[player_id].remove("medkit")
+        c.lives += 1
+
+    def _stab(self, player_id: str, target_id: str | None) -> None:
+        """Adaga: tira 1 vida do alvo na hora. Se eliminar, quem usou ganha a Bênção na próxima."""
+        me, target = self.contender(player_id), self.contender(target_id or "")
+        if "dagger" not in self.mythics.get(player_id, []):
+            raise SurvivalError("Você não tem essa habilidade.")
+        if not me.alive:
+            raise SurvivalError("A Adaga é para quem está vivo.")
+        if not self.can_arm():
+            raise SurvivalError("No X1 não tem habilidade.")
+        if not target or target is me or not target.alive:
+            raise SurvivalError("Escolha em quem usar (só em quem está vivo).")
+        self.mythics[player_id].remove("dagger")
+        target.lives -= 1
+        eliminated = target.lives <= 0
+        if eliminated:
+            target.lives = 0
+            target.out_round = self.round
+            self.blessed.add(player_id)
+        self.stabs.append(Stab(by=player_id, target=target.id, eliminated=eliminated))
 
     def _resurrect(self, player_id: str) -> None:
         c = self.contender(player_id)
@@ -735,6 +828,9 @@ class Survival:
             powers_round=self.powers_round(),
             ready=sorted(self.ready),
             revived=list(self.revived),
+            stabs=list(self.stabs),
+            hiding=bool(viewer) and asking and self._hiding(viewer),
+            blessing=screen(q.answer) if q and asking and viewer in self.blessing and not self.in_duel() else None,
             gifts=self.gifts if revealed and not hidden else [],
         )
 

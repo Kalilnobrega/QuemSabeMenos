@@ -364,3 +364,93 @@ def test_second_chance_lasts_one_question_in_true_false_and_two_in_choices():
         game.arm("p0", "second_chance", None)
         game.advance(0)
         assert game.lasting["p0"]["second_chance"] == rounds
+
+
+# --- poderes só do Último de pé -------------------------------------------
+
+def test_medkit_heals_a_life_up_to_the_max():
+    game = powers_game()
+    to_results(game, right=["p1", "p2", "p3"])
+    game.held["p0"] = ["medkit", "medkit"]
+    game.arm("p0", "medkit", None)
+    assert game.contender("p0").lives == 3
+    with pytest.raises(SurvivalError, match="todas as vidas"):
+        game.arm("p0", "medkit", None)
+
+
+def test_hiding_skips_the_question_without_losing_a_life():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p3"] = ["hide"]
+    game.arm("p3", "hide", None)
+    game.advance(0)
+    while game.phase == "reading":
+        game.advance(0)
+    with pytest.raises(SurvivalError, match="escondido"):
+        game.answer("p3", 0, 0)
+    for pid in ("p0", "p1", "p2"):
+        game.answer(pid, (game.question.answer + 1) % 4, 0)
+    assert game.everyone_answered(["p0", "p1", "p2", "p3"])
+    game.advance(0)
+    assert game.spared  # todos os que responderam erraram
+    pick = next(p for p in game.picks if p.player_id == "p3")
+    assert pick.hidden and not pick.lost_life and game.contender("p3").lives == 3
+
+
+def test_curse_makes_a_mistake_cost_two_lives():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["curse"]
+    game.arm("p0", "curse", "p1")
+    to_results(game, right=["p0", "p2", "p3"])
+    pick = next(p for p in game.picks if p.player_id == "p1")
+    assert pick.cursed and game.contender("p1").lives == 1
+
+
+def test_blood_pact_takes_the_target_down_with_you():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["blood_pact"]
+    game.arm("p0", "blood_pact", "p1")
+    to_results(game, right=["p1", "p2", "p3"])  # p0 erra, p1 acerta
+    pick = next(p for p in game.picks if p.player_id == "p1")
+    assert pick.pact_from == "p0" and game.contender("p1").lives == 2
+
+
+def test_reverse_sends_the_curse_back():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p1"] = ["reverse"]
+    game.arm("p1", "reverse", None)
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["curse"]
+    game.arm("p0", "curse", "p1")
+    to_results(game, right=["p1", "p2", "p3"])
+    assert next(p for p in game.picks if p.player_id == "p0").cursed
+
+
+def test_dagger_takes_a_life_and_a_kill_gives_the_blessing():
+    game = powers_game(players=4)
+    to_results(game, right=["p0", "p2", "p3"])
+    to_results(game, right=["p0", "p2", "p3"])  # p1 com 1 vida
+    game.mythics["p0"] = ["dagger", "dagger"]
+    game.arm("p0", "dagger", "p2")
+    assert game.contender("p2").lives == 2 and not game.blessed
+    game.arm("p0", "dagger", "p1")
+    assert not game.contender("p1").alive and game.stabs[-1].eliminated
+    game.advance(0)
+    while game.phase == "reading":
+        game.advance(0)
+    view = game.view(0, "p0", ["p0", "p1", "p2", "p3"])
+    assert view.blessing == game.question.answer
+    assert game.view(0, "p2", ["p0", "p1", "p2", "p3"]).blessing is None
+
+
+def test_dagger_needs_more_than_two_alive():
+    game = powers_game(players=3)
+    to_results(game, right=["p0", "p1"])
+    game.mythics["p0"] = ["dagger"]
+    for _ in range(2):
+        to_results(game, right=["p0", "p1"])
+    with pytest.raises(SurvivalError):
+        game.arm("p0", "dagger", "p1")

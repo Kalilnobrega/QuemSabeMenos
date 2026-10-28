@@ -33,7 +33,13 @@
             "infiltrator",
             "gag",
             "iron_captain",
-            "tax"
+            "tax",
+            "medkit",
+            "hide",
+            "curse",
+            "blood_pact",
+            "dagger",
+            "blessing"
           ],
           "type": "string"
         },
@@ -521,7 +527,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -558,7 +570,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -595,7 +613,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -658,7 +682,13 @@
                 "infiltrator",
                 "gag",
                 "iron_captain",
-                "tax"
+                "tax",
+                "medkit",
+                "hide",
+                "curse",
+                "blood_pact",
+                "dagger",
+                "blessing"
               ],
               "type": "string"
             },
@@ -1107,7 +1137,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -1144,7 +1180,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -1185,7 +1227,13 @@
                 "infiltrator",
                 "gag",
                 "iron_captain",
-                "tax"
+                "tax",
+                "medkit",
+                "hide",
+                "curse",
+                "blood_pact",
+                "dagger",
+                "blessing"
               ],
               "type": "string"
             },
@@ -1376,7 +1424,13 @@
             "infiltrator",
             "gag",
             "iron_captain",
-            "tax"
+            "tax",
+            "medkit",
+            "hide",
+            "curse",
+            "blood_pact",
+            "dagger",
+            "blessing"
           ],
           "type": "string"
         },
@@ -1507,7 +1561,13 @@
             "infiltrator",
             "gag",
             "iron_captain",
-            "tax"
+            "tax",
+            "medkit",
+            "hide",
+            "curse",
+            "blood_pact",
+            "dagger",
+            "blessing"
           ],
           "type": "string"
         },
@@ -1568,7 +1628,13 @@
             "infiltrator",
             "gag",
             "iron_captain",
-            "tax"
+            "tax",
+            "medkit",
+            "hide",
+            "curse",
+            "blood_pact",
+            "dagger",
+            "blessing"
           ],
           "type": "string"
         },
@@ -2049,7 +2115,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -2105,6 +2177,27 @@
         "team"
       ],
       "title": "SetTeamRequest",
+      "type": "object"
+    },
+    "Stab": {
+      "description": "Adaga: quem usou, em quem, e se eliminou (aí quem usou ganha a Bênção).",
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "eliminated": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "by",
+        "target",
+        "eliminated"
+      ],
+      "title": "Stab",
       "type": "object"
     },
     "SubmitAnswerRequest": {
@@ -2214,6 +2307,25 @@
           "type": "boolean"
         },
         "stolen_by": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "hidden": {
+          "default": false,
+          "type": "boolean"
+        },
+        "cursed": {
+          "default": false,
+          "type": "boolean"
+        },
+        "pact_from": {
           "anyOf": [
             {
               "type": "string"
@@ -2427,7 +2539,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -2464,7 +2582,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -2501,7 +2625,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -2542,7 +2672,13 @@
                 "infiltrator",
                 "gag",
                 "iron_captain",
-                "tax"
+                "tax",
+                "medkit",
+                "hide",
+                "curse",
+                "blood_pact",
+                "dagger",
+                "blessing"
               ],
               "type": "string"
             },
@@ -2632,6 +2768,25 @@
           },
           "type": "array"
         },
+        "stabs": {
+          "items": {
+            "$ref": "#/$defs/Stab"
+          },
+          "type": "array"
+        },
+        "hiding": {
+          "type": "boolean"
+        },
+        "blessing": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
         "gifts": {
           "items": {
             "$ref": "#/$defs/Gift"
@@ -2682,6 +2837,9 @@
         "powers_round",
         "ready",
         "revived",
+        "stabs",
+        "hiding",
+        "blessing",
         "gifts"
       ],
       "title": "SurvivalView",
@@ -2968,7 +3126,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -3119,7 +3283,13 @@
             "infiltrator",
             "gag",
             "iron_captain",
-            "tax"
+            "tax",
+            "medkit",
+            "hide",
+            "curse",
+            "blood_pact",
+            "dagger",
+            "blessing"
           ],
           "type": "string"
         },
@@ -3297,7 +3467,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -3334,7 +3510,13 @@
               "infiltrator",
               "gag",
               "iron_captain",
-              "tax"
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
             ],
             "type": "string"
           },
@@ -3661,7 +3843,13 @@
             "infiltrator",
             "gag",
             "iron_captain",
-            "tax"
+            "tax",
+            "medkit",
+            "hide",
+            "curse",
+            "blood_pact",
+            "dagger",
+            "blessing"
           ],
           "type": "string"
         },

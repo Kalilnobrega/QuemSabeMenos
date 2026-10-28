@@ -200,7 +200,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
   const answering = duel ? survival.duelists.includes(playerId ?? '') : !!me && me.out_round === null
   const retry = survival.first_wrong
   const answered = retry !== null ? choice !== null && choice !== retry : choice !== null
-  const canAnswer = open && answering && !answered
+  const canAnswer = open && answering && !answered && !survival.hiding
   const silenced = survival.silenced_rounds > 0
   const myPick = survival.picks.find((p) => p.player_id === playerId)
   const player = (id: string) => room.players.find((p) => p.id === id)
@@ -236,6 +236,9 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
   useEffect(() => {
     if (survival.revived.length) playSound('resurrection')
   }, [survival.revived.length])
+  useEffect(() => {
+    if (survival.stabs.length) playSound('powerHit')
+  }, [survival.stabs.length])
 
   const pick = async (option: number) => {
     if (!canAnswer || survival.hidden_options.includes(option) || option === retry) return
@@ -254,6 +257,8 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
     status = 'Leia com calma…'
   } else if (open) {
     if (!answering) status = duel ? 'Torça pelo seu lado!' : survival.powers ? 'Você é fantasma: assiste e sabota quem está vivo.' : 'Você está fora. Assiste aí!'
+    else if (survival.hiding) status = 'Esconderijo: você pula esta pergunta sem perder vida.'
+    else if (survival.blessing !== null && !answered) status = <span className="text-yellow-200">Bênção: a certa está brilhando!</span>
     else if (blinded && !answered) status = 'Flashbang! Agora é chutar pela letra.'
     else if (retry !== null && !answered) status = 'Errou! Segunda chance: tente de novo.'
     else if (answered) status = 'Resposta enviada!'
@@ -264,13 +269,15 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
     status = 'Todo mundo errou: ninguém perde vida!'
   } else if (myPick) {
     const out = me?.out_round !== null
-    status = myPick.correct ? (
+    status = myPick.hidden ? (
+      <span className="text-emerald-300">Você ficou escondido nesta.</span>
+    ) : myPick.correct && !myPick.pact_from ? (
       <span className="text-emerald-300">Acertou!</span>
     ) : myPick.shielded ? (
       <span className="text-sky-300">O Escudo segurou sua vida!</span>
     ) : (
       <span className="text-red-300">
-        {out ? 'Você caiu!' : 'Perdeu uma vida!'}
+        {out ? 'Você caiu!' : myPick.cursed ? 'Maldição: perdeu 2 vidas!' : myPick.pact_from && myPick.correct ? 'Acertou, mas o Pacto de sangue cobrou uma vida!' : 'Perdeu uma vida!'}
         {myPick.stolen_by && ` E ${name(myPick.stolen_by)} ficou com ela.`}
       </span>
     )
@@ -278,6 +285,14 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
 
   const notes = [
     ...survival.revived.map((id) => `${cap(name(id))} ressuscitou com 1 vida!`),
+    ...survival.stabs.map((s) =>
+      s.eliminated
+        ? `${cap(name(s.by))} cravou a Adaga em ${name(s.target)} e eliminou! ${s.by === playerId ? 'Você ganhou' : 'Ganhou'} a Bênção na próxima.`
+        : `${cap(name(s.by))} cravou a Adaga em ${name(s.target)}: −1 vida!`,
+    ),
+    ...survival.picks.filter((p) => p.cursed && p.player_id !== playerId).map((p) => `Maldição: ${name(p.player_id)} perdeu 2 vidas!`),
+    ...survival.picks.filter((p) => p.pact_from && p.player_id !== playerId).map((p) => `Pacto de sangue: ${name(p.player_id)} perdeu uma vida junto com ${name(p.pact_from)}.`),
+    ...survival.picks.filter((p) => p.hidden && p.player_id !== playerId).map((p) => `${cap(name(p.player_id))} ficou escondido.`),
     ...survival.picks.filter((p) => p.stolen_by && p.player_id !== playerId).map((p) => `${cap(name(p.stolen_by))} roubou uma vida de ${name(p.player_id)}!`),
     ...survival.picks.filter((p) => p.shielded && p.player_id !== playerId).map((p) => `O Escudo segurou a vida de ${name(p.player_id)}.`),
     ...survival.picks.filter((p) => p.decoy).map((p) => `${cap(name(p.player_id))} caiu na Alternativa falsa "${p.decoy}"!`),
@@ -344,6 +359,8 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
                   ? 'btn-wrong is-pressed text-white opacity-60'
                   : choice === index
                     ? 'btn-dark is-pressed outline-2 outline-brand'
+                    : survival.blessing === index && !blinded
+                      ? 'btn-dark outline-2 outline-yellow-300 shadow-[0_0_18px_rgba(253,224,71,0.6)]'
                     : hidden
                       ? 'btn-dark opacity-20 line-through'
                       : canAnswer

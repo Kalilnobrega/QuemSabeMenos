@@ -44,7 +44,13 @@ export interface ArmPowerUpRequest {
     | "infiltrator"
     | "gag"
     | "iron_captain"
-    | "tax";
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -223,6 +229,12 @@ export interface GameView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -254,6 +266,12 @@ export interface GameView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -285,6 +303,12 @@ export interface GameView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -321,6 +345,12 @@ export interface GameView {
         | "gag"
         | "iron_captain"
         | "tax"
+        | "medkit"
+        | "hide"
+        | "curse"
+        | "blood_pact"
+        | "dagger"
+        | "blessing"
       )
     | null;
   can_arm: boolean;
@@ -396,7 +426,13 @@ export interface PowerUpUse {
     | "infiltrator"
     | "gag"
     | "iron_captain"
-    | "tax";
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -439,7 +475,13 @@ export interface LastingPowerUp {
     | "infiltrator"
     | "gag"
     | "iron_captain"
-    | "tax";
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
   rounds_left: number;
   total: number;
 }
@@ -495,6 +537,12 @@ export interface RoundResult {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   gained: PowerUpGain | null;
 }
@@ -532,7 +580,13 @@ export interface PowerUpGain {
     | "infiltrator"
     | "gag"
     | "iron_captain"
-    | "tax";
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
   reason: "start" | "streak" | "comeback" | "ghost";
   legendary?: boolean;
   mythic?: boolean;
@@ -632,6 +686,12 @@ export interface HotPotatoView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -663,6 +723,12 @@ export interface HotPotatoView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -696,6 +762,12 @@ export interface HotPotatoView {
         | "gag"
         | "iron_captain"
         | "tax"
+        | "medkit"
+        | "hide"
+        | "curse"
+        | "blood_pact"
+        | "dagger"
+        | "blessing"
       )
     | null;
   uses: PowerUpUse[];
@@ -893,6 +965,12 @@ export interface SurvivalView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -924,6 +1002,12 @@ export interface SurvivalView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -955,6 +1039,12 @@ export interface SurvivalView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -988,6 +1078,12 @@ export interface SurvivalView {
         | "gag"
         | "iron_captain"
         | "tax"
+        | "medkit"
+        | "hide"
+        | "curse"
+        | "blood_pact"
+        | "dagger"
+        | "blessing"
       )
     | null;
   can_arm: boolean;
@@ -1003,6 +1099,9 @@ export interface SurvivalView {
   powers_round: boolean;
   ready: string[];
   revived: string[];
+  stabs: Stab[];
+  hiding: boolean;
+  blessing: number | null;
   gifts: Gift[];
 }
 /**
@@ -1019,6 +1118,9 @@ export interface SurvivalPick {
   decoy?: string | null;
   shielded?: boolean;
   stolen_by?: string | null;
+  hidden?: boolean;
+  cursed?: boolean;
+  pact_from?: string | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -1031,6 +1133,17 @@ export interface Survivor {
   correct: number;
   answer_ms: number;
   place: number | null;
+}
+/**
+ * Adaga: quem usou, em quem, e se eliminou (aí quem usou ganha a Bênção).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "Stab".
+ */
+export interface Stab {
+  by: string;
+  target: string;
+  eliminated: boolean;
 }
 /**
  * Times: o time responde junto, por votos, e tem um QI só. Fases: starting → (level) →
@@ -1118,6 +1231,12 @@ export interface TeamMatchView {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   silenced: boolean;
   peeking: number | null;
@@ -1178,6 +1297,12 @@ export interface TeamSide {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1209,6 +1334,12 @@ export interface TeamSide {
     | "gag"
     | "iron_captain"
     | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
   )[];
   powerup_max: number;
   armed: TeamPowerUse | null;
@@ -1274,7 +1405,13 @@ export interface TeamPowerUse {
     | "infiltrator"
     | "gag"
     | "iron_captain"
-    | "tax";
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
   by: string;
   by_team: number;
   target_team?: number | null;
@@ -1405,6 +1542,12 @@ export interface UsePowerUpRequest {
     | "infiltrator"
     | "gag"
     | "iron_captain"
-    | "tax";
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
   target_team?: number | null;
 }

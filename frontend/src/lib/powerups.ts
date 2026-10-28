@@ -39,6 +39,12 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   gag: { name: 'Mordaça', hint: 'Só nos Times: um jogador do time alvo não vota na próxima.', targeted: true, tone: 'bg-stone-400/15 text-stone-200' },
   iron_captain: { name: 'Capitão de ferro', hint: 'Só nos Times: só o capitão vota. Acertou, +8; errou, −10.', targeted: false, tone: 'bg-zinc-400/15 text-zinc-100' },
   tax: { name: 'Imposto', hint: 'Mítico, só para o time em último: o 1º paga 15% do QI dele para o seu time.', targeted: false, tone: 'bg-purple-500/15 text-purple-200' },
+  medkit: { name: 'Kit médico', hint: 'Só no Último de pé: recupera 1 vida na hora, sem passar do máximo.', targeted: false, tone: 'bg-red-400/15 text-red-100' },
+  hide: { name: 'Esconderijo', hint: 'Só no Último de pé: você pula a próxima pergunta. Não responde e não perde vida.', targeted: false, tone: 'bg-emerald-700/25 text-emerald-200' },
+  curse: { name: 'Maldição', hint: 'Só no Último de pé: se o alvo errar a próxima, perde 2 vidas.', targeted: true, tone: 'bg-violet-700/25 text-violet-200' },
+  blood_pact: { name: 'Pacto de sangue', hint: 'Só no Último de pé: se você perder vida na próxima, o alvo perde uma também.', targeted: true, tone: 'bg-red-700/25 text-red-200' },
+  dagger: { name: 'Adaga', hint: 'Mítico, só no Último de pé: tira 1 vida do alvo na hora (com 1 vida, ele cai). Se eliminar, você ganha a Bênção.', targeted: true, tone: 'bg-purple-500/15 text-purple-200' },
+  blessing: { name: 'Bênção', hint: 'Prêmio da Adaga: na próxima pergunta, você vê qual é a certa.', targeted: false, tone: 'bg-yellow-300/15 text-yellow-100' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
