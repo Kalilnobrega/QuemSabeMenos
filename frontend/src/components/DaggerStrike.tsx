@@ -54,14 +54,12 @@ export function DaggerStrike({ stab, players, playerId, onDone }: { stab: Stab; 
                 <i key={i} style={{ ['--a' as string]: `${i * 51}deg` }} />
               ))}
             </span>
-            <span className="dagger-heart" aria-hidden="true">
-              <svg viewBox="0 0 24 22" className="dagger-heart-left size-7">
-                <path d="M12 21 3.5 12.5A5 5 0 0 1 12 5.2V21Z" fill="#EF4444" stroke="#12141B" strokeWidth="1.4" />
-              </svg>
-              <svg viewBox="0 0 24 22" className="dagger-heart-right size-7">
-                <path d="M12 21 20.5 12.5A5 5 0 0 0 12 5.2V21Z" fill="#EF4444" stroke="#12141B" strokeWidth="1.4" />
-              </svg>
-            </span>
+            {/* Inteiro até a Adaga cravar; aí racha em duas metades que caem. */}
+            <svg viewBox="0 0 24 22" className="dagger-heart size-8" aria-hidden="true">
+              <path className="dagger-heart-whole" d="M12 21 3.5 12.5A5 5 0 0 1 12 5.2 5 5 0 0 1 20.5 12.5Z" fill="#EF4444" stroke="#12141B" strokeWidth="1.4" strokeLinejoin="round" />
+              <path className="dagger-heart-left" d="M12 21 3.5 12.5A5 5 0 0 1 12 5.2L10.6 9.4 12.8 12.6 11 16.2Z" fill="#EF4444" stroke="#12141B" strokeWidth="1.4" strokeLinejoin="round" />
+              <path className="dagger-heart-right" d="M12 21 20.5 12.5A5 5 0 0 0 12 5.2L10.6 9.4 12.8 12.6 11 16.2Z" fill="#EF4444" stroke="#12141B" strokeWidth="1.4" strokeLinejoin="round" />
+            </svg>
           </div>
           <span className="max-w-28 truncate font-display text-xl text-chalk">{name(target)}</span>
         </div>
