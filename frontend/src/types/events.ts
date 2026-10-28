@@ -545,6 +545,7 @@ export interface RoundResult {
     | "blessing"
   )[];
   gained: PowerUpGain | null;
+  bet_gained?: PowerUpGain | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -587,7 +588,7 @@ export interface PowerUpGain {
     | "blood_pact"
     | "dagger"
     | "blessing";
-  reason: "start" | "streak" | "comeback" | "ghost";
+  reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination";
   legendary?: boolean;
   mythic?: boolean;
 }

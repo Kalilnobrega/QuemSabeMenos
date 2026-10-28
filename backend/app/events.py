@@ -194,7 +194,8 @@ class LastingPowerUp(BaseModel):
 
 class PowerUpGain(BaseModel):
     kind: PowerUp
-    reason: Literal["start", "streak", "comeback", "ghost"]  # sorteio inicial, acertos seguidos, lanterna ou fantasma
+    # sorteio inicial, acertos seguidos, lanterna, fantasma, aposta certeira ou alguém caiu
+    reason: Literal["start", "streak", "comeback", "ghost", "bet", "elimination"]
     legendary: bool = False
     mythic: bool = False
 
@@ -227,6 +228,7 @@ class RoundResult(BaseModel):
     first_option: int | None  # Segunda chance: a primeira escolha, que estava errada
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
     gained: PowerUpGain | None
+    bet_gained: PowerUpGain | None = None  # prêmio da aposta certeira (25% do QI ou mais)
 
 
 class DuelPick(BaseModel):

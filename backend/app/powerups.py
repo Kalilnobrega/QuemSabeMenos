@@ -42,6 +42,10 @@ MYTHIC_CHANCES: dict[PowerUp, tuple[float, float]] = {"resurrection": (0.0, 0.06
 # Ressurreição: o último pula para logo atrás do penúltimo (com 2 jogadores, 10 atrás do 1º).
 RESURRECTION_GAP = 1
 RESURRECTION_GAP_TWO_PLAYERS = 10
+# Aposta certeira de pelo menos 25% do QI: um poder, com mais chance de lendário e mítico.
+BET_PRIZE_PERCENT = 25
+BET_PRIZE_LEGENDARY_CHANCE = 0.15
+BET_PRIZE_MYTHIC_CHANCE = 0.05
 LEGENDARY_STEAL_POOL = 1.5
 LEGENDARY_STEAL_TOP_WEIGHT = 2
 FIFTY_FIFTY_REMOVES = 2

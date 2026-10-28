@@ -753,6 +753,8 @@ class Game:
             self._wear_lasting()
         if self.powers and difficulty != FINAL_DIFFICULTY:
             self._powerup_gains(players)
+            if self.is_bet_round:
+                self._bet_prizes(players, score_before)
         self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, results_seconds(self.question.fact))
 
@@ -938,6 +940,32 @@ class Game:
                     del kinds[kind]
                     if kind in powerups.BREAKABLE and kind not in self.used_lasting.get(pid, set()) and result:
                         result.expired.append(kind)
+
+    def _bet_prizes(self, players: list[Scorable], score_before: dict[str, int]) -> None:
+        """Apostou pelo menos 25% do QI e acertou: ganha um poder, com mais chance de lendário e mítico."""
+        behind = powerups.trailing(players)
+        for player, result in zip(players, self.results):
+            if not result.bet or not result.correct or result.bet * 100 < powerups.BET_PRIZE_PERCENT * score_before[player.id]:
+                continue
+            held = self.powerups.setdefault(player.id, [])
+            legendaries = self.legendaries.setdefault(player.id, [])
+            mythics = self.mythics.setdefault(player.id, [])
+            if len(held) + len(legendaries) + len(mythics) >= self.capacity(player.id):
+                continue
+            roll = self.rng.random()
+            mythic = roll < powerups.BET_PRIZE_MYTHIC_CHANCE
+            legendary = not mythic and roll < powerups.BET_PRIZE_MYTHIC_CHANCE + powerups.BET_PRIZE_LEGENDARY_CHANCE
+            if mythic:
+                # A Ressurreição só serve para quem está em último.
+                kind = self.rng.choice(["duel", "resurrection"] if player.id in behind else ["duel"])
+                mythics.append(kind)
+            elif legendary:
+                kind = self.rng.choice(sorted(powerups.TARGETED))
+                legendaries.append(kind)
+            else:
+                kind = self.rng.choice(powerups.POWERUPS)
+                held.append(kind)
+            result.bet_gained = PowerUpGain(kind=kind, reason="bet", legendary=legendary, mythic=mythic)
 
     def _powerup_gains(self, players: list[Scorable]) -> None:
         """Habilidades ganhas por acertos seguidos ou por estar muito atrás (depois do placar)."""

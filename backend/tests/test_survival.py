@@ -282,7 +282,7 @@ def test_reverse_sends_the_sabotage_back():
 def test_three_right_in_a_row_gives_a_power():
     game = powers_game()
     for _ in range(3):
-        to_results(game, right=["p0", "p1", "p2"])
+        to_results(game, right=["p0", "p1", "p2", "p3"])  # ninguém cai: só a sequência dá poder
     assert len(game.held["p0"]) + len(game.mythics.get("p0", [])) == 1  # às vezes vem a Adaga
     assert any(g.player_id == "p0" and g.gain.reason == "streak" for g in game.gifts)
 
@@ -423,3 +423,24 @@ def test_dagger_needs_more_than_two_alive():
         to_results(game, right=["p0", "p1"])
     with pytest.raises(SurvivalError):
         game.arm("p0", "dagger", "p1")
+
+
+def test_with_one_life_two_right_in_a_row_give_a_power():
+    game = powers_game()
+    for _ in range(2):
+        to_results(game, right=["p0", "p1", "p2"])  # p3 fica com 1 vida
+    game.held["p3"] = []
+    for _ in range(2):
+        to_results(game, right=["p0", "p1", "p2", "p3"])
+    assert len(game.held["p3"]) + len(game.mythics.get("p3", [])) == 1
+
+
+def test_everyone_alive_gets_a_power_when_someone_falls_but_not_before_the_x1():
+    game = powers_game(players=4)
+    for _ in range(3):
+        to_results(game, right=["p0", "p1", "p2"])  # p3 cai com 3 vivos
+    falls = [g for g in game.gifts if g.gain.reason == "elimination"]
+    assert sorted(g.player_id for g in falls) == ["p0", "p1", "p2"]
+    for _ in range(3):
+        to_results(game, right=["p0", "p1"])  # p2 cai e sobram 2: é X1, sem poder
+    assert not [g for g in game.gifts if g.gain.reason == "elimination"]

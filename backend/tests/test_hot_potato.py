@@ -287,3 +287,17 @@ def test_ghosts_get_a_sabotage_when_someone_explodes_and_can_resurrect():
     game.mythics[first] = ["resurrection"]
     game.use(first, "resurrection", game.phase_started_at)
     assert game.player(first).alive and first in game.revived
+
+
+def test_each_explosion_but_the_last_gives_the_living_a_power():
+    game = powered(players=3)
+    for p in game.players:
+        game.held[p.id] = []
+    game.advance(game.deadline())  # explode com 2 vivos sobrando
+    alive = game.alive_ids()
+    assert all(len(game.held[pid]) == 1 for pid in alive)
+    assert all(g.gain.reason == "elimination" for g in game.gifts if g.player_id in alive)
+    game.advance(game.phase_ends_at)
+    game.advance(game.deadline())  # a última explosão acaba a partida: sem poder
+    assert game.phase == "exploded" and len(game.alive_ids()) == 1
+    assert not any(g.gain.reason == "elimination" for g in game.gifts)

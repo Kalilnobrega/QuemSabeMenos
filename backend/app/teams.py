@@ -647,6 +647,20 @@ class TeamMatch:
             else:
                 team.last_runs = 0
 
+    def _bet_prize(self, team: Team) -> None:
+        """Aposta certeira de pelo menos 25% do QI do time: um poder, com mais chance de mítico."""
+        if len(team.held) + len(team.mythics) >= team.capacity(self.powerup_max):
+            return
+        if self.rng.random() < pw.BET_PRIZE_MYTHIC_CHANCE:
+            # O Imposto só serve para o time em último.
+            last = team.score == min(t.score for t in self.teams)
+            kind = self.rng.choice(["duel", "tax"] if last else ["duel"])
+            team.mythics.append(kind)
+        else:
+            kind = self.rng.choice(POWERS)
+            team.held.append(kind)
+        team.gained = PowerUpGain(kind=kind, reason="bet", mythic=kind in MYTHIC_CHANCES)
+
     def _wear(self) -> None:
         for team in self.teams:
             if team.shielded:
@@ -850,6 +864,8 @@ class TeamMatch:
                 self.stats[team.representative].represented_right += bool(team.correct)
             if team.bet:
                 team.bet_delta = bet_win(team.bet) if team.correct else -team.bet
+                if self.powers and team.correct and team.bet * 100 >= pw.BET_PRIZE_PERCENT * team.score:
+                    self._bet_prize(team)
         else:
             self._captain_and_harmony(team, connected)
 

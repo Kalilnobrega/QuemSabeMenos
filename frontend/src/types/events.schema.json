@@ -1576,7 +1576,9 @@
             "start",
             "streak",
             "comeback",
-            "ghost"
+            "ghost",
+            "bet",
+            "elimination"
           ],
           "type": "string"
         },
@@ -2136,6 +2138,17 @@
               "type": "null"
             }
           ]
+        },
+        "bet_gained": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpGain"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [

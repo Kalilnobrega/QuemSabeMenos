@@ -399,3 +399,24 @@ def test_team_x1_with_representatives_and_bets():
     assert team(match, 0).duel_delta > 0 and team(match, 1).duel_delta < 0
     match.advance(match.phase_ends_at, everyone)
     assert match.phase in ("reading", "level")
+
+
+def test_a_right_team_bet_of_a_quarter_of_the_iq_earns_a_power():
+    questions = [question("e", "easy"), question("h1", "hard"), question("h2", "hard"), question("f", "impossible")]
+    match = powered(questions)
+    while not match.solo:
+        open_question(match)
+        match.advance(match.phase_ends_at, ALL)
+        match.advance(match.phase_ends_at, ALL)
+    for t in match.teams:
+        t.held, t.score = [], 100
+    match.advance(match.phase_ends_at, ALL)  # escolha do representante (sorteio)
+    a, b = team(match, 0), team(match, 1)
+    match.place_bet(a.representative, 25, match.phase_started_at)
+    match.place_bet(b.representative, 10, match.phase_started_at)
+    t0 = open_question(match)
+    match.vote(a.representative, 0, t0, ALL)
+    match.vote(b.representative, 0, t0, ALL)
+    match.advance(match.deadline(), ALL)
+    assert a.gained and a.gained.reason == "bet"
+    assert b.gained is None  # só 10%

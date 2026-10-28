@@ -109,7 +109,8 @@ const GUIDES: Record<Mode, Guide> = {
     powersIntro: [
       'Com poderes (o anfitrião liga no lobby): cada um começa com um poder sorteado e ganha outro a cada 3 acertos seguidos. Quem está em último e bem atrás por 3 rodadas também ganha um.',
       'Na revelação, você escolhe um poder para a próxima pergunta (e o alvo, se for ataque). O 50/50 e o Espiar se usam na hora da pergunta, pelo ícone.',
-      'O anfitrião define quantos poderes cada um guarda (de 1 a 3). Com a mão cheia, não ganha mais.',
+      'Na aposta: quem apostar pelo menos 25% do QI e acertar ganha um poder, com mais chance de vir lendário (15%) ou mítico (5%).',
+      'O anfitrião define quantos poderes cada um guarda (de 1 a 3; o padrão é 3). Com a mão cheia, não ganha mais.',
       'Poderes não valem na aposta nem na pergunta final.',
       'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como um ataque LENDÁRIO (20% para quem está em último e bem atrás). O lendário vale em todos os outros jogadores de uma vez, sem escolher alvo, e o Reverso não segura. Ele ocupa uma vaga na mão como os outros. O poder sorteado no começo nunca é lendário.',
     ],
@@ -154,7 +155,8 @@ const GUIDES: Record<Mode, Guide> = {
       },
     ],
     powersIntro: [
-      'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos.',
+      'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos. Com 1 vida só, basta acertar 2 seguidas.',
+      'Cada vez que alguém cai, todos os vivos ganham um poder (menos quando sobram 2, porque aí começa o X1).',
       'Na revelação, você escolhe um poder para a próxima pergunta; o 50/50 e o Espiar se usam na hora.',
       'Quem caiu vira fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos, e às vezes a Ressurreição.',
       'No V ou F não vem 50/50 (com 2 opções, entregaria a resposta).',
@@ -193,6 +195,7 @@ const GUIDES: Record<Mode, Guide> = {
       'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos.',
       'Tudo vale na hora. Ajudas, só quem está com a batata usa. Sabotagens, quem está assistindo joga em quem está com a batata, valendo na pergunta atual (uma por pessoa por pergunta).',
       'Aqui não tem lendários.',
+      'A cada explosão (menos a última), quem continua vivo ganha um poder.',
       'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição.',
     ],
     powers: [
@@ -256,6 +259,7 @@ const GUIDES: Record<Mode, Guide> = {
       'Com poderes (o anfitrião liga no lobby): a mão é do time, com até 3 poderes. O time começa com um e ganha outro a cada 3 acertos seguidos; o time muito atrás por 3 rodadas também ganha um.',
       'Quem escolhe é o capitão da próxima pergunta, na revelação; o resto do time dá palpite. Sem capitão (Motim), qualquer um do time escolhe.',
       'O 50/50 e o Espiar o capitão usa durante a pergunta.',
+      'Na aposta: se o representante apostar pelo menos 25% do QI do time e acertar, o time ganha um poder (5% de chance de vir mítico).',
       'Um poder por time por pergunta. Ataques miram um time adversário. Nada vale na aposta nem na final.',
       'Aqui não tem lendários: os ataques sempre miram um time só.',
     ],

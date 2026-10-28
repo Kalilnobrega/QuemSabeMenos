@@ -9,7 +9,7 @@ começa com o próximo da roda e um pavio novo, até sobrar um.
 Com poderes: cada um começa com um e ganha outro a cada 3 acertos seguidos. As ajudas só quem está
 com a batata usa, na hora; as sabotagens quem assiste joga em quem está com a batata, valendo na
 pergunta atual. Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro (às
-vezes, a Ressurreição, que traz de volta para a roda).
+vezes, a Ressurreição, que traz de volta para a roda), e quem continua vivo ganha um poder.
 """
 
 import random
@@ -339,11 +339,15 @@ class HotPotato:
             self._give(player_id, self.rng.choice(HELPS + SABOTAGES), "streak")
 
     def _haunt(self) -> None:
-        """A cada explosão, os fantasmas de antes ganham uma sabotagem (às vezes, a Ressurreição)."""
+        """A cada explosão (menos a última), quem está vivo ganha um poder e os fantasmas de antes
+        ganham uma sabotagem (às vezes, a Ressurreição)."""
         if len(self.alive_ids()) <= 1:
             return
         for p in self.players:
-            if p.alive or p.id == self.exploded:
+            if p.alive:
+                self._give(p.id, self.rng.choice(HELPS + SABOTAGES), "elimination")
+                continue
+            if p.id == self.exploded:
                 continue
             mythic = self.rng.random() < RESURRECTION_CHANCE and "resurrection" not in self.mythics.get(p.id, [])
             self._give(p.id, "resurrection" if mythic else self.rng.choice(SABOTAGES), "ghost", mythic=mythic)

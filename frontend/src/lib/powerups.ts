@@ -53,6 +53,8 @@ const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
   streak: '3 acertos seguidos',
   comeback: 'ajuda para o lanterna',
   ghost: 'presente de fantasma',
+  bet: 'aposta certeira',
+  elimination: 'alguém caiu',
 }
 
 /** No Último de pé não tem QI: os poderes mexem com vidas. */

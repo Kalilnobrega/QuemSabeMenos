@@ -40,7 +40,6 @@ from app.game import (
     pick_questions,
     point_scale,
 )
-from app.powerups import MAX_HELD
 from app.hot_potato import HotPotato, HotPotatoError
 from app.survival import Survival, SurvivalError
 from app.teams import TeamMatch, TeamMatchError
@@ -50,6 +49,7 @@ CODE_LENGTH = 5
 MAX_PLAYERS = 12
 MIN_PLAYERS = 2
 MIN_TEAM_SIZE = 2
+DEFAULT_POWERUP_MAX = 3  # o anfitrião escolhe de 1 a 3
 DEFAULT_ROUNDS = 25
 ANSWER_SECONDS = 15.0
 
@@ -99,7 +99,7 @@ class Room:
     team_count: int = 2
     team_pick: TeamPick = "host"
     teams: dict[str, int] = field(default_factory=dict)  # montados pelo anfitrião
-    powerup_max: int = MAX_HELD
+    powerup_max: int = DEFAULT_POWERUP_MAX
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
     speed_grace_seconds: float = SPEED_GRACE_SECONDS

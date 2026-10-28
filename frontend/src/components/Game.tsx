@@ -1272,6 +1272,10 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
     if (result.gained) {
       lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary, mythic: result.gained.mythic })
     }
+    if (result.bet_gained) {
+      const gain = result.bet_gained
+      lines.push({ key: `${result.player_id}-bet-gain`, kind: gain.kind, player, text: `${who(result.player_id)} ${gainLabel(gain)}`, delta: null, me, legendary: gain.legendary, mythic: gain.mythic })
+    }
   }
   for (const { challenger, rival } of game.duels) {
     lines.push({

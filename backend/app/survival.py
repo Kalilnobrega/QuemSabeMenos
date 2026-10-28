@@ -52,6 +52,7 @@ POWERS: tuple[PowerUp, ...] = (
 TARGETED: frozenset[PowerUp] = pw.TARGETED | {"curse", "blood_pact"}
 CURSE_LIVES = 2  # Maldição: errando, o alvo perde 2 vidas
 DAGGER_CHANCE = 0.04  # Adaga (mítico): chance a cada poder ganho por acertos seguidos
+LAST_LIFE_STREAK = 2  # com 1 vida, um poder a cada 2 acertos seguidos (em vez de 3)
 TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty"})
 LASTING: dict[PowerUp, int] = {"shield": 2, "reverse": 3}
 GHOST_EVERY = 3  # perguntas entre um presente e outro para quem caiu
@@ -580,7 +581,11 @@ class Survival:
                     del kinds[kind]
 
     def _gains(self) -> None:
-        """Um poder a cada 3 acertos seguidos; quem caiu ganha uma sabotagem a cada 3 perguntas."""
+        """Um poder a cada 3 acertos seguidos (2, com 1 vida); a cada um que cai, um para cada vivo;
+        quem caiu ganha uma sabotagem a cada 3 perguntas."""
+        for c in self.contenders:
+            if c.out_round == self.round:
+                self._reward_survivors()
         for pick in self.picks:
             pid = pick.player_id
             if pick.hidden:
@@ -589,7 +594,8 @@ class Survival:
                 self.runs[pid] = 0
                 continue
             self.runs[pid] = self.runs.get(pid, 0) + 1
-            if self.runs[pid] >= pw.STREAK_FOR_POWERUP:
+            needed = LAST_LIFE_STREAK if self.contender(pid).lives == 1 else pw.STREAK_FOR_POWERUP
+            if self.contender(pid).alive and self.runs[pid] >= needed:
                 self.runs[pid] = 0
                 if self.rng.random() < DAGGER_CHANCE and "dagger" not in self.mythics.get(pid, []):
                     self._give(pid, "dagger", "streak", mythic=True)
@@ -603,6 +609,14 @@ class Survival:
             mythic = self.rng.random() < GHOST_RESURRECTION_CHANCE and "resurrection" not in self.mythics.get(c.id, [])
             kind = "resurrection" if mythic else self.rng.choice(GHOST_SABOTAGES)
             self._give(c.id, kind, "ghost", mythic=mythic)
+
+    def _reward_survivors(self) -> None:
+        """Alguém caiu: cada vivo ganha um poder (com 2 vivos já é X1, e no X1 não tem poder)."""
+        alive = self.alive_ids()
+        if len(alive) < 3:
+            return
+        for pid in alive:
+            self._give(pid, self.rng.choice(self.power_kinds()), "elimination")
 
     def _give(self, player_id: str, kind: PowerUp, reason: str, mythic: bool = False) -> None:
         """Com as mãos cheias, não ganha nada (o mítico não ocupa vaga)."""
@@ -647,6 +661,7 @@ class Survival:
             target.lives = 0
             target.out_round = self.round
             self.blessed.add(player_id)
+            self._reward_survivors()
         self.stabs.append(Stab(by=player_id, target=target.id, eliminated=eliminated))
 
     def _resurrect(self, player_id: str) -> None:

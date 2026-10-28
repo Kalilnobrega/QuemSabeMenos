@@ -1147,3 +1147,26 @@ def test_duel_goes_on_when_both_miss_and_the_clock_breaks_a_tie_at_the_end():
     assert game.duel.index == 9 and game.duel.winner == "ana"
     assert set(game.duel.bets) == {"caio", "davi", "edu"}  # quem não apostou teve a aposta sorteada
 
+
+
+def test_a_right_bet_of_a_quarter_of_the_iq_earns_a_power():
+    game = Game(powers=True, questions=[question("h", "hard", answer=0)], answer_seconds=10, rng=random.Random(3))
+    ana, bia, caio = P("ana", 100), P("bia", 100), P("caio", 100)
+    game.powerups = {"ana": [], "bia": [], "caio": []}
+    game.bet_round = 0
+    game.round = -1
+    game.round += 1
+    game.phase = "betting"
+    game.phase_ends_at = 100
+    game.bet(ana, 25, now=0)
+    game.bet(bia, 24, now=0)
+    game.bet(caio, 50, now=0)
+    game.open_answers(now=0)
+    game.answer("ana", 0, now=1)
+    game.answer("bia", 0, now=1)
+    game.answer("caio", 1, now=1)
+    game.close_round([ana, bia, caio], now=20)
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["ana"].bet_gained and by_id["ana"].bet_gained.reason == "bet"
+    assert by_id["bia"].bet_gained is None  # menos de 25%
+    assert by_id["caio"].bet_gained is None  # errou
