@@ -307,6 +307,26 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         </div>
 
+        <OptionRow
+          title="Poderes"
+          hint={POWERS_HINT[settings.mode]}
+          options={[0, 1]}
+          value={settings.powers ? 1 : 0}
+          label={(n) => (n ? 'Com' : 'Sem')}
+          onPick={(n) => update({ powers: n === 1 })}
+        />
+
+        {settings.mode !== 'teams' && settings.powers && (
+          <OptionRow
+            title="Limite de poderes"
+            hint="Quantas habilidades cada um pode guardar ao mesmo tempo"
+            options={settings.powerup_max_options}
+            value={settings.powerup_max}
+            label={(n) => String(n)}
+            onPick={(powerup_max) => update({ powerup_max })}
+          />
+        )}
+
         {settings.mode === 'last_standing' && (
           <div className="flex flex-col gap-2">
             <h3 className="font-display text-xl tracking-wide">Perguntas</h3>
@@ -347,26 +367,6 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
               onPick={(n) => update({ team_pick: n ? 'host' : 'random' })}
             />
           </>
-        )}
-
-        <OptionRow
-          title="Poderes"
-          hint={POWERS_HINT[settings.mode]}
-          options={[0, 1]}
-          value={settings.powers ? 1 : 0}
-          label={(n) => (n ? 'Com' : 'Sem')}
-          onPick={(n) => update({ powers: n === 1 })}
-        />
-
-        {settings.mode !== 'teams' && settings.powers && (
-          <OptionRow
-            title="Limite de poderes"
-            hint="Quantas habilidades cada um pode guardar ao mesmo tempo"
-            options={settings.powerup_max_options}
-            value={settings.powerup_max}
-            label={(n) => String(n)}
-            onPick={(powerup_max) => update({ powerup_max })}
-          />
         )}
 
         {settings.mode !== 'last_standing' && settings.mode !== 'hot_potato' && (
