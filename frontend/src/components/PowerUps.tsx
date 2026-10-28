@@ -305,9 +305,17 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'dagger') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M13.5 3 21 10.5 11 18l-5-5Z" fill="#E2E8F0" {...ICON_STROKE} />
-        <path d="m6 13 5 5-2 2-5-5Z" fill="#C084FC" {...ICON_STROKE} />
-        <path d="m5.5 18.5-3 3" stroke="#7C3AED" strokeWidth="2.6" strokeLinecap="round" />
+        {/* Lâmina afiada com sulco, a ponta suja de sangue e uma gota caindo. */}
+        <path d="M11 7.1 16.8 14.2 20.5 20.5 14.2 16.8 7.1 11Z" fill="#E2E8F0" stroke="#12141B" strokeWidth="1.1" strokeLinejoin="round" />
+        <path d="M9.4 9.4 15.8 15.8" stroke="#94A3B8" strokeWidth="0.9" strokeLinecap="round" />
+        <path d="M16.8 14.2 20.5 20.5 14.2 16.8Q14.9 16.3 15.2 17Q15.4 18.1 15.9 17.8Q16.2 16.9 15.9 16.3Q16.7 16 16.3 15.4Q17 15.1 16.8 14.2Z" fill="#DC2626" />
+        <path d="M17.6 16.6 18.8 18.6" stroke="#FCA5A5" strokeWidth="0.5" strokeLinecap="round" />
+        <path d="M20.5 21.3Q21.8 22.9 20.5 23.7Q19.2 22.9 20.5 21.3Z" fill="#DC2626" stroke="#12141B" strokeWidth="0.6" />
+        <path d="M5 12.6 12.6 5" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
+        <path d="M5 12.6 12.6 5" stroke="#C084FC" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M7.8 7.8 4.1 4.1" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
+        <path d="M7.8 7.8 4.1 4.1" stroke="#7C3AED" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="3.1" cy="3.1" r="1.7" fill="#C084FC" stroke="#12141B" strokeWidth="1.1" />
       </svg>
     )
   }
