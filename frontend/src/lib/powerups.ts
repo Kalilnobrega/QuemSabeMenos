@@ -43,7 +43,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   infiltrator: { name: 'Infiltrado', hint: 'Só nos Times: alguém do seu time vota também no time alvo, valendo 2 votos.', targeted: true, tone: 'bg-slate-300/15 text-slate-100' },
   gag: { name: 'Mordaça', hint: 'Só nos Times: um jogador do time alvo não vota na próxima.', targeted: true, tone: 'bg-stone-400/15 text-stone-200' },
   iron_captain: { name: 'Capitão de ferro', hint: 'Só nos Times: só o capitão vota. Acertou, +8; errou, −10.', targeted: false, tone: 'bg-zinc-400/15 text-zinc-100' },
-  tax: { name: 'Imposto', hint: 'Mítico, só para o time em último: o 1º paga 15% do QI dele para o seu time.', targeted: false, tone: 'bg-purple-500/15 text-purple-200' },
+  tax: { name: 'Imposto', hint: 'Mítico, só para o time em último: o 1º paga 25% do QI dele para o seu time.', targeted: false, tone: 'bg-purple-500/15 text-purple-200' },
   medkit: { name: 'Kit médico', hint: 'Só no Último de pé: recupera 1 vida na hora, sem passar do máximo.', targeted: false, tone: 'bg-red-400/15 text-red-100' },
   hide: { name: 'Esconderijo', hint: 'Só no Último de pé: você pula a próxima pergunta. Não responde e não perde vida.', targeted: false, tone: 'bg-emerald-700/25 text-emerald-200' },
   curse: { name: 'Maldição', hint: 'Só no Último de pé: se o alvo errar a próxima, perde 2 vidas.', targeted: true, tone: 'bg-violet-700/25 text-violet-200' },

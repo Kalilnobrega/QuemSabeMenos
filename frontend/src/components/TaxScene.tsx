@@ -50,7 +50,7 @@ export function TaxScene({ payer, receiver, amount, myTeam, onDone }: { payer: T
         </div>
       </div>
       <p className="tax-caption max-w-xs text-center font-semibold text-chalk">
-        O 1º lugar paga 15% do QI ao último: {amount} de QI do {teamName(payer.id)} para o {teamName(receiver.id)}.
+        O 1º lugar paga 25% do QI ao último: {amount} de QI do {teamName(payer.id)} para o {teamName(receiver.id)}.
       </p>
     </div>
   )

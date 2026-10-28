@@ -11,7 +11,7 @@ Na aposta e na final, cada time escolhe um representante, que aposta (na aposta)
 Com poderes, a mão é do time e quem usa é o capitão: na revelação, o capitão da próxima pergunta
 escolhe um poder para ela (50/50 e Espiar se usam durante a pergunta). Os ataques miram um time
 adversário. Sem capitão (Motim), qualquer um do time escolhe. Míticos: X1 entre times (cada time
-manda um representante e os outros times apostam) e Imposto (o 1º paga 15% ao último).
+manda um representante e os outros times apostam) e Imposto (o 1º paga 25% ao último).
 """
 
 import random
@@ -83,7 +83,7 @@ INFILTRATOR_VOTES = 2
 IRON_RIGHT = 8
 IRON_WRONG = -10
 DECOY_PER_PLAYER = 5  # por jogador do time alvo que votar numa alternativa falsa
-TAX_SHARE = 0.15
+TAX_SHARE = 0.25
 # Míticos: (chance normal, chance do time lanterna), sorteados em cada poder ganho.
 MYTHIC_CHANCES: dict[PowerUp, tuple[float, float]] = {"duel": (0.02, 0.08), "tax": (0.0, 0.06)}
 
