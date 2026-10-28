@@ -99,15 +99,15 @@ export function useRoom() {
 
   const start = useCallback(() => request('start_game'), [])
   const playAgain = useCallback(() => request('play_again'), [])
-  const answer = useCallback((option: number) => request('submit_answer', { option }), [])
+  const answer = useCallback((option: number, team: number | null = null) => request('submit_answer', { option, team }), [])
   const bet = useCallback((amount: number) => request('submit_bet', { amount }), [])
   const duelBet = useCallback((choice: string) => request('submit_duel_bet', { choice }), [])
   const armPowerUp = useCallback(
-    (kind: ArmPowerUpRequest['kind'], target: string | null, legendary = false, theme: string | null = null) =>
-      request('arm_powerup', { kind, target, legendary, theme }),
+    (kind: ArmPowerUpRequest['kind'], target: string | null, legendary = false, theme: string | null = null, targetTeam: number | null = null) =>
+      request('arm_powerup', { kind, target, legendary, theme, target_team: targetTeam }),
     [],
   )
-  const usePowerUp = useCallback((kind: ArmPowerUpRequest['kind']) => request('use_powerup', { kind }), [])
+  const usePowerUp = useCallback((kind: ArmPowerUpRequest['kind'], targetTeam: number | null = null) => request('use_powerup', { kind, target_team: targetTeam }), [])
   const skipResults = useCallback(() => request('skip_results'), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
   const chooseRepresentative = useCallback((choice: string) => request('choose_representative', { choice }), [])

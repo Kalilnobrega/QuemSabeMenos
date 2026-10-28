@@ -66,7 +66,19 @@ export default function App() {
   let content
   if (snapshot && room?.team_match) {
     content = (
-      <Teams snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onChoose={chooseRepresentative} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
+      <Teams
+        snapshot={snapshot}
+        playerId={playerId}
+        onAnswer={answer}
+        onBet={bet}
+        onChoose={chooseRepresentative}
+        onArm={armPowerUp}
+        onUse={usePowerUp}
+        onDuelBet={duelBet}
+        onSkip={skipResults}
+        onPlayAgain={playAgain}
+        onLeave={leaveRoom}
+      />
     )
   } else if (snapshot && room?.hot_potato) {
     content = <HotPotato snapshot={snapshot} playerId={playerId} onAnswer={answer} onUse={usePowerUp} onPlayAgain={playAgain} onLeave={leaveRoom} />

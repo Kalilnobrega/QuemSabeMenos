@@ -213,6 +213,64 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'mutiny') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M5 9 7 4l3 3 2-4 2 4 3-3 2 5Z" fill="#FDA4AF" {...ICON_STROKE} />
+        <path d="M5 9h14v3H5Z" fill="#FB7185" {...ICON_STROKE} />
+        <path d="M4 21 20 13" stroke="#12141B" strokeWidth="2.6" strokeLinecap="round" />
+        <path d="M4 21 20 13" stroke="#F43F5E" strokeWidth="1.4" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'infiltrator') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M3 10c2-5 16-5 18 0l-2 1H5Z" fill="#CBD5E1" {...ICON_STROKE} />
+        <path d="M5 11h14c0 6-3 10-7 10s-7-4-7-10Z" fill="#94A3B8" {...ICON_STROKE} />
+        <path d="M6 14h12v3H6Z" fill="#12141B" />
+        <circle cx="9" cy="15.5" r="1" fill="#F8FAFC" />
+        <circle cx="15" cy="15.5" r="1" fill="#F8FAFC" />
+      </svg>
+    )
+  }
+  if (kind === 'gag') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <circle cx="12" cy="12" r="9" fill="#FCD34D" {...ICON_STROKE} />
+        <circle cx="9" cy="9.5" r="1.2" fill="#12141B" />
+        <circle cx="15" cy="9.5" r="1.2" fill="#12141B" />
+        <path d="M3.5 13.5h17v3.5h-17Z" fill="#A8A29E" {...ICON_STROKE} />
+        <path d="M8 13.5v3.5M12 13.5v3.5M16 13.5v3.5" stroke="#12141B" strokeWidth="1.2" />
+      </svg>
+    )
+  }
+  if (kind === 'echo') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <circle cx="7" cy="12" r="3.5" fill="#A5B4FC" {...ICON_STROKE} />
+        <path d="M12 7.5a6 6 0 0 1 0 9M15.5 5a9.5 9.5 0 0 1 0 14M19 3a12.5 12.5 0 0 1 0 18" fill="none" stroke="#818CF8" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'iron_captain') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M4 18 3 7l5 4 4-7 4 7 5-4-1 11Z" fill="#D4D4D8" {...ICON_STROKE} />
+        <path d="M4 18h16v3H4Z" fill="#71717A" {...ICON_STROKE} />
+        <circle cx="12" cy="13.5" r="1.6" fill="#12141B" />
+      </svg>
+    )
+  }
+  if (kind === 'tax') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M6 2.5h9l3.5 3.5v15.5H6Z" fill="#E9D5FF" {...ICON_STROKE} />
+        <path d="M9 8h6M9 11h6" stroke="#7C3AED" strokeWidth="1.6" strokeLinecap="round" />
+        <text x="12.2" y="19" textAnchor="middle" fontSize="7" fontWeight="900" fill="#7C3AED">%</text>
+      </svg>
+    )
+  }
   if (kind === 'scratch') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

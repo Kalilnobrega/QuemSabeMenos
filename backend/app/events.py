@@ -21,6 +21,7 @@ PowerUp = Literal[
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
     "cold_water", "free_pass",  # só na Batata quente
+    "mutiny", "infiltrator", "gag", "echo", "iron_captain", "tax",  # só nos Times
 ]
 GameMode = Literal["classic", "powers", "last_standing", "hot_potato", "teams"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "teams", "last_standing", "hot_potato")
@@ -91,6 +92,7 @@ class ChooseRepresentativeRequest(BaseModel):
 
 class SubmitAnswerRequest(BaseModel):
     option: int
+    team: int | None = None  # Times: o Infiltrado votando no time adversário
 
 
 class SubmitBetRequest(BaseModel):
@@ -104,6 +106,7 @@ class ArmPowerUpRequest(BaseModel):
     target: str | None = None
     legendary: bool = False  # a versão lendária de um ataque: vale em todos os outros, sem alvo
     theme: str | None = None  # Tema: um dos temas sorteados em `theme_choices`
+    target_team: int | None = None  # Times: o time alvo
 
 
 class SubmitDuelBetRequest(BaseModel):
@@ -116,6 +119,7 @@ class UsePowerUpRequest(BaseModel):
     """Durante a pergunta (50/50 e Espiar): vale na hora."""
 
     kind: PowerUp
+    target_team: int | None = None  # Times: o time que o Espiar olha
 
 
 # --- Servidor → cliente -------------------------------------------------------
@@ -135,7 +139,7 @@ class RoomSettings(BaseModel):
     mode_options: list[GameMode]
     survival_kind: SurvivalKind
     survival_kind_options: list[SurvivalKind]
-    survival_powers: bool  # Último de pé e Batata quente com poderes
+    survival_powers: bool  # Último de pé, Batata quente e Times com poderes
     team_count: int
     team_count_options: list[int]
     team_pick: TeamPick
@@ -459,7 +463,17 @@ class HotPotatoView(BaseModel):
 
 class TeamVote(BaseModel):
     player_id: str
-    option: int
+    option: int | None  # na ordem da tela de quem vê; None = uma alternativa falsa que só o outro time viu
+    infiltrator: bool = False  # voto do Infiltrado do outro time (vale 2)
+
+
+class TeamPowerUse(BaseModel):
+    kind: PowerUp
+    by: str  # quem usou (o capitão)
+    by_team: int
+    target_team: int | None = None
+    target_player: str | None = None  # Mordaça: quem fica sem votar; Infiltrado: quem se infiltra
+    theme: str | None = None
 
 
 class TeamSide(BaseModel):
@@ -477,12 +491,34 @@ class TeamSide(BaseModel):
     choices: dict[str, str]  # escolha do representante: quem votou em quem (só no seu time)
     bet: int | None  # aposta do representante; a dos outros só na revelação
     harmony: int  # perguntas seguidas com todo mundo votando na certa, rumo ao bônus de Sintonia
+    next_captain: str | None  # na revelação: o capitão da próxima, que escolhe o poder
+    mutiny_left: int  # Motim: perguntas sem capitão que faltam
+    iron: bool  # Capitão de ferro: só o capitão vota
+    echo_of: int | None  # Eco: a resposta do time é a desse outro time
+    # Poderes do time (só do seu).
+    powerups: list[PowerUp]
+    mythic_powerups: list[PowerUp]
+    powerup_max: int
+    armed: TeamPowerUse | None
+    lasting: list[LastingPowerUp]
     # Só na revelação:
     correct: bool | None
+    decoy_pick: bool  # a resposta do time foi uma alternativa falsa
     delta: int  # pontos da pergunta (acerto, erro, ou sem resposta)
     captain_delta: int
     harmony_delta: int
     bet_delta: int
+    shielded: int  # o que o Escudo segurou
+    doubled: bool
+    second_chance: bool  # acertou na segunda tentativa (vale metade)
+    stolen: int  # Roubo: o que este time levou
+    robbed: int  # Roubo: o que tiraram deste time
+    tolled: int  # Pedágio pago
+    toll_received: int
+    tricked: int  # Alternativa falsa: o que este time ganhou com quem caiu
+    tax: int  # Imposto: + quem recebeu, − quem pagou
+    duel_delta: int
+    gained: PowerUpGain | None
 
 
 class TeamPlayerStat(BaseModel):
@@ -501,7 +537,10 @@ class TeamMatchView(BaseModel):
     reading → answering → results por pergunta; na aposta e na final, antes vem choosing (o time
     escolhe o representante) e, na aposta, betting. Depois da última: finished."""
 
-    phase: Literal["starting", "level", "choosing", "betting", "intro", "reading", "answering", "results", "finished"]
+    phase: Literal[
+        "starting", "level", "choosing", "betting", "intro", "reading", "answering", "results", "finished",
+        "duel_choosing", "duel_betting", "duel_answering", "duel_results", "duel_end",
+    ]
     phase_duration_ms: int
     phase_ends_in_ms: int
     round: int  # começa em 1
@@ -523,6 +562,23 @@ class TeamMatchView(BaseModel):
     my_team: int | None
     stats: list[TeamPlayerStat]
     ready: list[str]
+    # Poderes (a mão de cada time fica no TeamSide dele).
+    powers: bool
+    can_arm: bool  # você pode escolher o poder do seu time agora
+    can_use: bool  # você pode usar 50/50 ou Espiar agora
+    uses: list[TeamPowerUse]  # poderes valendo nesta pergunta que você pode ver
+    theme_choices: list[str]
+    hidden_options: list[int]  # 50/50 do seu time
+    first_wrong: int | None  # Segunda chance: a primeira resposta errada do seu time
+    tolls: list[int] | None  # Pedágio no seu time: preço de cada alternativa
+    gagged: bool  # Mordaça em você
+    infiltrating: int | None  # você é o Infiltrado neste time
+    infiltrate_question: QuestionView | None  # a pergunta como o time infiltrado vê
+    effects: list[PowerUp]  # sabotagens visuais no seu time (Embaralhar, Espelho, Lupa, Raspadinha, Flashbang)
+    silenced: bool  # Silêncio no seu time: você não vê o voto dos colegas
+    peeking: int | None  # Espiar: o time cujos votos você está vendo
+    duel: DuelView | None
+    duel_teams: list[int]  # os dois times do X1
 
 
 class RoomState(BaseModel):

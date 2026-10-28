@@ -39,10 +39,17 @@ export interface ArmPowerUpRequest {
     | "resurrection"
     | "duel"
     | "cold_water"
-    | "free_pass";
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
+  target_team?: number | null;
 }
 /**
  * Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
@@ -212,6 +219,12 @@ export interface GameView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -238,6 +251,12 @@ export interface GameView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -264,6 +283,12 @@ export interface GameView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -295,6 +320,12 @@ export interface GameView {
         | "duel"
         | "cold_water"
         | "free_pass"
+        | "mutiny"
+        | "infiltrator"
+        | "gag"
+        | "echo"
+        | "iron_captain"
+        | "tax"
       )
     | null;
   can_arm: boolean;
@@ -365,7 +396,13 @@ export interface PowerUpUse {
     | "resurrection"
     | "duel"
     | "cold_water"
-    | "free_pass";
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -403,7 +440,13 @@ export interface LastingPowerUp {
     | "resurrection"
     | "duel"
     | "cold_water"
-    | "free_pass";
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax";
   rounds_left: number;
   total: number;
 }
@@ -454,6 +497,12 @@ export interface RoundResult {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   gained: PowerUpGain | null;
 }
@@ -486,7 +535,13 @@ export interface PowerUpGain {
     | "resurrection"
     | "duel"
     | "cold_water"
-    | "free_pass";
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax";
   reason: "start" | "streak" | "comeback" | "ghost";
   legendary?: boolean;
   mythic?: boolean;
@@ -581,6 +636,12 @@ export interface HotPotatoView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -607,6 +668,12 @@ export interface HotPotatoView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -635,6 +702,12 @@ export interface HotPotatoView {
         | "duel"
         | "cold_water"
         | "free_pass"
+        | "mutiny"
+        | "infiltrator"
+        | "gag"
+        | "echo"
+        | "iron_captain"
+        | "tax"
       )
     | null;
   uses: PowerUpUse[];
@@ -827,6 +900,12 @@ export interface SurvivalView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -853,6 +932,12 @@ export interface SurvivalView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -879,6 +964,12 @@ export interface SurvivalView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -907,6 +998,12 @@ export interface SurvivalView {
         | "duel"
         | "cold_water"
         | "free_pass"
+        | "mutiny"
+        | "infiltrator"
+        | "gag"
+        | "echo"
+        | "iron_captain"
+        | "tax"
       )
     | null;
   can_arm: boolean;
@@ -960,7 +1057,21 @@ export interface Survivor {
  * via the `definition` "TeamMatchView".
  */
 export interface TeamMatchView {
-  phase: "starting" | "level" | "choosing" | "betting" | "intro" | "reading" | "answering" | "results" | "finished";
+  phase:
+    | "starting"
+    | "level"
+    | "choosing"
+    | "betting"
+    | "intro"
+    | "reading"
+    | "answering"
+    | "results"
+    | "finished"
+    | "duel_choosing"
+    | "duel_betting"
+    | "duel_answering"
+    | "duel_results"
+    | "duel_end";
   phase_duration_ms: number;
   phase_ends_in_ms: number;
   round: number;
@@ -982,6 +1093,53 @@ export interface TeamMatchView {
   my_team: number | null;
   stats: TeamPlayerStat[];
   ready: string[];
+  powers: boolean;
+  can_arm: boolean;
+  can_use: boolean;
+  uses: TeamPowerUse[];
+  theme_choices: string[];
+  hidden_options: number[];
+  first_wrong: number | null;
+  tolls: number[] | null;
+  gagged: boolean;
+  infiltrating: number | null;
+  infiltrate_question: QuestionView | null;
+  effects: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "cold_water"
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
+  )[];
+  silenced: boolean;
+  peeking: number | null;
+  duel: DuelView | null;
+  duel_teams: number[];
 }
 /**
  * Um time na partida. Os votos dos outros times só aparecem na revelação; antes, só quem já votou.
@@ -1004,11 +1162,94 @@ export interface TeamSide {
   };
   bet: number | null;
   harmony: number;
+  next_captain: string | null;
+  mutiny_left: number;
+  iron: boolean;
+  echo_of: number | null;
+  powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "cold_water"
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
+  )[];
+  mythic_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "cold_water"
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax"
+  )[];
+  powerup_max: number;
+  armed: TeamPowerUse | null;
+  lasting: LastingPowerUp[];
   correct: boolean | null;
+  decoy_pick: boolean;
   delta: number;
   captain_delta: number;
   harmony_delta: number;
   bet_delta: number;
+  shielded: number;
+  doubled: boolean;
+  second_chance: boolean;
+  stolen: number;
+  robbed: number;
+  tolled: number;
+  toll_received: number;
+  tricked: number;
+  tax: number;
+  duel_delta: number;
+  gained: PowerUpGain | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -1016,7 +1257,50 @@ export interface TeamSide {
  */
 export interface TeamVote {
   player_id: string;
-  option: number;
+  option: number | null;
+  infiltrator?: boolean;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "TeamPowerUse".
+ */
+export interface TeamPowerUse {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "cold_water"
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax";
+  by: string;
+  by_team: number;
+  target_team?: number | null;
+  target_player?: string | null;
+  theme?: string | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -1070,6 +1354,7 @@ export interface SetTeamRequest {
  */
 export interface SubmitAnswerRequest {
   option: number;
+  team?: number | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -1136,5 +1421,12 @@ export interface UsePowerUpRequest {
     | "resurrection"
     | "duel"
     | "cold_water"
-    | "free_pass";
+    | "free_pass"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "echo"
+    | "iron_captain"
+    | "tax";
+  target_team?: number | null;
 }

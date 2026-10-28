@@ -6,7 +6,7 @@ import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import type { Snapshot } from '../lib/useRoom'
-import type { Bonus, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
+import type { Bonus, DuelView, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
@@ -106,7 +106,16 @@ interface Props {
 export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
   if (game.duel) {
-    return <DuelScreen key={`${game.duel.challenger}-${game.duel.rival}`} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onDuelBet={onDuelBet} />
+    return (
+      <DuelScreen
+        key={`${game.duel.challenger}-${game.duel.rival}`}
+        snapshot={snapshot}
+        stage={{ duel: game.duel, phase: game.phase, phase_ends_in_ms: game.phase_ends_in_ms, phase_duration_ms: game.phase_duration_ms }}
+        playerId={playerId}
+        onAnswer={onAnswer}
+        onDuelBet={onDuelBet}
+      />
+    )
   }
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
@@ -130,16 +139,34 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
 const DUEL_INTRO_MS = 2800
 const DUEL_KIND: Record<string, string> = { true_false: 'Verdadeiro ou falso', hard: 'Difícil', impossible: 'Impossível' }
 
+/** O X1 em andamento e o relógio da fase: vem do clássico ou dos Times. */
+export interface DuelStage {
+  duel: DuelView
+  phase: string
+  phase_ends_in_ms: number
+  phase_duration_ms: number
+}
+
+interface DuelScreenProps {
+  snapshot: Snapshot
+  stage: DuelStage
+  playerId: string | null
+  onAnswer: Props['onAnswer']
+  onDuelBet: Props['onDuelBet']
+  side?: (id: string) => string // Times: de que time é cada duelista
+}
+
 /** X1: a partida para e todo mundo assiste. A plateia aposta, os dois respondem, e no fim o acerto de contas. */
-function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Snapshot; playerId: string | null; onAnswer: Props['onAnswer']; onDuelBet: Props['onDuelBet'] }) {
+export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, side }: DuelScreenProps) {
   const { room, receivedAt } = snapshot
-  const game = room.game!
-  const duel = game.duel!
+  const game = stage
+  const duel = stage.duel
   const [error, setError] = useState<string | null>(null)
   const now = useNow(game.phase !== 'duel_end')
   const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
   const fighters = [duel.challenger, duel.rival].map((id) => room.players.find((p) => p.id === id))
-  const name = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const nick = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const name = (id: string | null | undefined) => (side && id ? `${nick(id)} (${side(id)})` : nick(id))
   const fighting = playerId === duel.challenger || playerId === duel.rival
   const [intro, setIntro] = useState<'on' | 'leaving' | 'off'>(() => (reducedMotion() ? 'off' : 'on'))
   useSoundsOnMount([['impossible', 0], ['duelIntro', 850], ['duelFight', 1650]])
@@ -206,7 +233,7 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
       </div>
     )
   } else {
-    body = <DuelQuestionView key={duel.question_number} snapshot={snapshot} playerId={playerId} remaining={remaining} onAnswer={async (option) => setError(await onAnswer(option))} />
+    body = <DuelQuestionView key={duel.question_number} snapshot={snapshot} stage={stage} playerId={playerId} remaining={remaining} onAnswer={async (option) => setError(await onAnswer(option))} />
   }
 
   if (intro !== 'off') {
@@ -249,6 +276,7 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
             <div key={p.id} className={`flex flex-col items-center gap-1 rounded-xl bg-panel px-2 py-3 ${duel.winner === p.id ? 'mythic' : ''}`}>
               <img src={AVATAR_URLS[p.avatar]} alt="" className="size-14" />
               <span className="max-w-full truncate font-semibold">{p.id === playerId ? 'Você' : p.nickname}</span>
+              {side && <span className="max-w-full truncate text-xs text-steel">{side(p.id)}</span>}
               <span className="h-5 text-sm font-semibold">
                 {pick ? (pick.correct ? <span className="text-emerald-300">Acertou</span> : <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>) : duel.answered.includes(p.id) ? <span className="text-steel">Respondeu</span> : ''}
               </span>
@@ -264,9 +292,21 @@ function DuelScreen({ snapshot, playerId, onAnswer, onDuelBet }: { snapshot: Sna
   )
 }
 
-function DuelQuestionView({ snapshot, playerId, remaining, onAnswer }: { snapshot: Snapshot; playerId: string | null; remaining: number; onAnswer: (option: number) => Promise<void> }) {
-  const game = snapshot.room.game!
-  const duel = game.duel!
+function DuelQuestionView({
+  snapshot,
+  stage,
+  playerId,
+  remaining,
+  onAnswer,
+}: {
+  snapshot: Snapshot
+  stage: DuelStage
+  playerId: string | null
+  remaining: number
+  onAnswer: (option: number) => Promise<void>
+}) {
+  const game = stage
+  const duel = stage.duel
   const [choice, setChoice] = useState<number | null>(null)
   const fighting = playerId === duel.challenger || playerId === duel.rival
   const open = game.phase === 'duel_answering'

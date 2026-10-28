@@ -446,7 +446,7 @@ async def start_game(sid: str) -> dict:
 async def submit_answer(sid: str, data: dict) -> dict:
     try:
         request = SubmitAnswerRequest.model_validate(data)
-        room = rooms.answer(sid, request.option, time.monotonic())
+        room = rooms.answer(sid, request.option, time.monotonic(), request.team)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
@@ -474,7 +474,7 @@ async def submit_bet(sid: str, data: dict) -> dict:
 async def arm_powerup(sid: str, data: dict) -> dict:
     try:
         request = ArmPowerUpRequest.model_validate(data)
-        room = rooms.arm_powerup(sid, request.kind, request.target, request.legendary, request.theme)
+        room = rooms.arm_powerup(sid, request.kind, request.target, request.legendary, request.theme, request.target_team)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
@@ -487,13 +487,13 @@ async def arm_powerup(sid: str, data: dict) -> dict:
 async def use_powerup(sid: str, data: dict) -> dict:
     try:
         request = UsePowerUpRequest.model_validate(data)
-        room = rooms.use_powerup(sid, request.kind, time.monotonic())
+        room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
         return error(str(e))
-    if room.hot_potato:
-        check_round_done(room)  # o poder pode mudar o pavio ou passar a batata
+    if room.hot_potato or room.team_match:
+        check_round_done(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
     await broadcast(room)
     return OkAck().model_dump()
 

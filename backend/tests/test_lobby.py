@@ -435,7 +435,7 @@ async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatc
     assert (await by_id[ids[2]].call("submit_answer", {"option": answer}))["ok"]
     # O colega vê o voto na hora; o outro time só vê que alguém votou.
     state = await host.wait_for(lambda s: tm(s)["teams"][0]["votes"])
-    assert tm(state)["teams"][0]["votes"] == [{"player_id": ids[2], "option": answer}]
+    assert tm(state)["teams"][0]["votes"] == [{"player_id": ids[2], "option": answer, "infiltrator": False}]
     rival = await clients[1].wait_for(lambda s: tm(s)["teams"][0]["voted"])
     assert tm(rival)["teams"][0]["votes"] == []
     for pid in (ids[0], ids[1], ids[3]):

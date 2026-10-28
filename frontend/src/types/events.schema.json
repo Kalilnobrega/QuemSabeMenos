@@ -28,7 +28,13 @@
             "resurrection",
             "duel",
             "cold_water",
-            "free_pass"
+            "free_pass",
+            "mutiny",
+            "infiltrator",
+            "gag",
+            "echo",
+            "iron_captain",
+            "tax"
           ],
           "type": "string"
         },
@@ -51,6 +57,17 @@
           "anyOf": [
             {
               "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "target_team": {
+          "anyOf": [
+            {
+              "type": "integer"
             },
             {
               "type": "null"
@@ -500,7 +517,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -532,7 +555,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -564,7 +593,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -622,7 +657,13 @@
                 "resurrection",
                 "duel",
                 "cold_water",
-                "free_pass"
+                "free_pass",
+                "mutiny",
+                "infiltrator",
+                "gag",
+                "echo",
+                "iron_captain",
+                "tax"
               ],
               "type": "string"
             },
@@ -1066,7 +1107,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -1098,7 +1145,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -1134,7 +1187,13 @@
                 "resurrection",
                 "duel",
                 "cold_water",
-                "free_pass"
+                "free_pass",
+                "mutiny",
+                "infiltrator",
+                "gag",
+                "echo",
+                "iron_captain",
+                "tax"
               ],
               "type": "string"
             },
@@ -1320,7 +1379,13 @@
             "resurrection",
             "duel",
             "cold_water",
-            "free_pass"
+            "free_pass",
+            "mutiny",
+            "infiltrator",
+            "gag",
+            "echo",
+            "iron_captain",
+            "tax"
           ],
           "type": "string"
         },
@@ -1446,7 +1511,13 @@
             "resurrection",
             "duel",
             "cold_water",
-            "free_pass"
+            "free_pass",
+            "mutiny",
+            "infiltrator",
+            "gag",
+            "echo",
+            "iron_captain",
+            "tax"
           ],
           "type": "string"
         },
@@ -1502,7 +1573,13 @@
             "resurrection",
             "duel",
             "cold_water",
-            "free_pass"
+            "free_pass",
+            "mutiny",
+            "infiltrator",
+            "gag",
+            "echo",
+            "iron_captain",
+            "tax"
           ],
           "type": "string"
         },
@@ -1980,7 +2057,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -2042,6 +2125,17 @@
       "properties": {
         "option": {
           "type": "integer"
+        },
+        "team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -2342,7 +2436,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -2374,7 +2474,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -2406,7 +2512,13 @@
               "resurrection",
               "duel",
               "cold_water",
-              "free_pass"
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
             ],
             "type": "string"
           },
@@ -2442,7 +2554,13 @@
                 "resurrection",
                 "duel",
                 "cold_water",
-                "free_pass"
+                "free_pass",
+                "mutiny",
+                "infiltrator",
+                "gag",
+                "echo",
+                "iron_captain",
+                "tax"
               ],
               "type": "string"
             },
@@ -2646,7 +2764,12 @@
             "reading",
             "answering",
             "results",
-            "finished"
+            "finished",
+            "duel_choosing",
+            "duel_betting",
+            "duel_answering",
+            "duel_results",
+            "duel_end"
           ],
           "type": "string"
         },
@@ -2758,6 +2881,146 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "powers": {
+          "type": "boolean"
+        },
+        "can_arm": {
+          "type": "boolean"
+        },
+        "can_use": {
+          "type": "boolean"
+        },
+        "uses": {
+          "items": {
+            "$ref": "#/$defs/TeamPowerUse"
+          },
+          "type": "array"
+        },
+        "theme_choices": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "hidden_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "first_wrong": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tolls": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "gagged": {
+          "type": "boolean"
+        },
+        "infiltrating": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "infiltrate_question": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QuestionView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "effects": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "cold_water",
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "silenced": {
+          "type": "boolean"
+        },
+        "peeking": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "duel": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DuelView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "duel_teams": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -2782,7 +3045,23 @@
         "teams",
         "my_team",
         "stats",
-        "ready"
+        "ready",
+        "powers",
+        "can_arm",
+        "can_use",
+        "uses",
+        "theme_choices",
+        "hidden_options",
+        "first_wrong",
+        "tolls",
+        "gagged",
+        "infiltrating",
+        "infiltrate_question",
+        "effects",
+        "silenced",
+        "peeking",
+        "duel",
+        "duel_teams"
       ],
       "title": "TeamMatchView",
       "type": "object"
@@ -2825,6 +3104,91 @@
         "represented_right"
       ],
       "title": "TeamPlayerStat",
+      "type": "object"
+    },
+    "TeamPowerUse": {
+      "properties": {
+        "kind": {
+          "enum": [
+            "fifty_fifty",
+            "shield",
+            "double",
+            "peek",
+            "extra_time",
+            "second_chance",
+            "reverse",
+            "backpack",
+            "theme",
+            "investment",
+            "scratch",
+            "steal",
+            "scramble",
+            "accelerator",
+            "mirror",
+            "silence",
+            "magnifier",
+            "toll",
+            "decoy",
+            "flashbang",
+            "resurrection",
+            "duel",
+            "cold_water",
+            "free_pass",
+            "mutiny",
+            "infiltrator",
+            "gag",
+            "echo",
+            "iron_captain",
+            "tax"
+          ],
+          "type": "string"
+        },
+        "by": {
+          "type": "string"
+        },
+        "by_team": {
+          "type": "integer"
+        },
+        "target_team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "target_player": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "kind",
+        "by",
+        "by_team"
+      ],
+      "title": "TeamPowerUse",
       "type": "object"
     },
     "TeamSide": {
@@ -2906,6 +3270,127 @@
         "harmony": {
           "type": "integer"
         },
+        "next_captain": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "mutiny_left": {
+          "type": "integer"
+        },
+        "iron": {
+          "type": "boolean"
+        },
+        "echo_of": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "cold_water",
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "mythic_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "cold_water",
+              "free_pass",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "echo",
+              "iron_captain",
+              "tax"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powerup_max": {
+          "type": "integer"
+        },
+        "armed": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TeamPowerUse"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lasting": {
+          "items": {
+            "$ref": "#/$defs/LastingPowerUp"
+          },
+          "type": "array"
+        },
         "correct": {
           "anyOf": [
             {
@@ -2915,6 +3400,9 @@
               "type": "null"
             }
           ]
+        },
+        "decoy_pick": {
+          "type": "boolean"
         },
         "delta": {
           "type": "integer"
@@ -2927,6 +3415,46 @@
         },
         "bet_delta": {
           "type": "integer"
+        },
+        "shielded": {
+          "type": "integer"
+        },
+        "doubled": {
+          "type": "boolean"
+        },
+        "second_chance": {
+          "type": "boolean"
+        },
+        "stolen": {
+          "type": "integer"
+        },
+        "robbed": {
+          "type": "integer"
+        },
+        "tolled": {
+          "type": "integer"
+        },
+        "toll_received": {
+          "type": "integer"
+        },
+        "tricked": {
+          "type": "integer"
+        },
+        "tax": {
+          "type": "integer"
+        },
+        "duel_delta": {
+          "type": "integer"
+        },
+        "gained": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpGain"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -2942,11 +3470,32 @@
         "choices",
         "bet",
         "harmony",
+        "next_captain",
+        "mutiny_left",
+        "iron",
+        "echo_of",
+        "powerups",
+        "mythic_powerups",
+        "powerup_max",
+        "armed",
+        "lasting",
         "correct",
+        "decoy_pick",
         "delta",
         "captain_delta",
         "harmony_delta",
-        "bet_delta"
+        "bet_delta",
+        "shielded",
+        "doubled",
+        "second_chance",
+        "stolen",
+        "robbed",
+        "tolled",
+        "toll_received",
+        "tricked",
+        "tax",
+        "duel_delta",
+        "gained"
       ],
       "title": "TeamSide",
       "type": "object"
@@ -2957,7 +3506,18 @@
           "type": "string"
         },
         "option": {
-          "type": "integer"
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "infiltrator": {
+          "default": false,
+          "type": "boolean"
         }
       },
       "required": [
@@ -3130,9 +3690,26 @@
             "resurrection",
             "duel",
             "cold_water",
-            "free_pass"
+            "free_pass",
+            "mutiny",
+            "infiltrator",
+            "gag",
+            "echo",
+            "iron_captain",
+            "tax"
           ],
           "type": "string"
+        },
+        "target_team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [

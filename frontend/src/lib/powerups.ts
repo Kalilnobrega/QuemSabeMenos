@@ -34,6 +34,12 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   flashbang: { name: 'Flashbang', hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.', targeted: true, tone: 'bg-yellow-100/15 text-yellow-50' },
   cold_water: { name: 'Água fria', hint: 'Só na Batata quente: o pavio ganha +10s.', targeted: false, tone: 'bg-sky-300/15 text-sky-100' },
   free_pass: { name: 'Passe livre', hint: 'Só na Batata quente: passa a batata sem responder.', targeted: false, tone: 'bg-emerald-400/15 text-emerald-200' },
+  mutiny: { name: 'Motim', hint: 'Só nos Times: o time alvo fica sem capitão por 3 perguntas.', targeted: true, tone: 'bg-rose-500/15 text-rose-200' },
+  infiltrator: { name: 'Infiltrado', hint: 'Só nos Times: alguém do seu time vota também no time alvo, valendo 2 votos.', targeted: true, tone: 'bg-slate-300/15 text-slate-100' },
+  gag: { name: 'Mordaça', hint: 'Só nos Times: um jogador do time alvo não vota na próxima.', targeted: true, tone: 'bg-stone-400/15 text-stone-200' },
+  echo: { name: 'Eco', hint: 'Só nos Times: a resposta do seu time vai ser a mesma de um time que você escolher.', targeted: false, tone: 'bg-indigo-400/15 text-indigo-200' },
+  iron_captain: { name: 'Capitão de ferro', hint: 'Só nos Times: só o capitão vota. Acertou, +8; errou, −10.', targeted: false, tone: 'bg-zinc-400/15 text-zinc-100' },
+  tax: { name: 'Imposto', hint: 'Mítico, só para o time em último: o 1º paga 15% do QI dele para o seu time.', targeted: false, tone: 'bg-purple-500/15 text-purple-200' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
@@ -75,6 +81,29 @@ export const POTATO_HINTS: Partial<Record<Kind, string>> = {
   magnifier: 'A pergunta de quem está com a batata fica borrada: só dá para ler com a lupa.',
   flashbang: 'Quem está com a batata fica cego: só vê as letras das alternativas nesta pergunta.',
   resurrection: 'Mítico, só para fantasma: você volta para a roda.',
+}
+
+/** Times: os poderes valem para o time inteiro e os ataques miram um time adversário. */
+export const TEAM_HINTS: Partial<Record<Kind, string>> = {
+  fifty_fifty: 'O capitão usa na hora da pergunta: tira duas erradas para o time.',
+  shield: 'Vale por até 2 perguntas: no primeiro erro, o time não perde QI.',
+  double: 'A próxima vale o dobro para o time: o acerto e o erro (na difícil, o erro tira o triplo).',
+  peek: 'O capitão usa na hora da pergunta: o time vê ao vivo os votos de um time adversário.',
+  extra_time: '+5s e QI cheio o tempo todo para o time nas próximas 3 perguntas.',
+  second_chance: 'Vale nas próximas 2 perguntas, uma vez: o time errou, vota de novo valendo metade.',
+  theme: 'Você escolhe o tema da próxima pergunta, entre 4 sorteados. Vale para todos os times.',
+  backpack: 'Vale na hora: +1 vaga e +1 poder sorteado para o time (até +2 vagas na partida).',
+  scratch: 'A próxima pergunta do time alvo vem coberta: tem que raspar para ver.',
+  steal: 'Na próxima, você tira 10 de QI do time alvo e, se ele acertar, mais metade do que ganhar.',
+  scramble: 'A pergunta do time alvo vem com as letras embaralhadas.',
+  accelerator: 'O time alvo tem um terço do tempo e fica sem QI cheio.',
+  mirror: 'A pergunta do time alvo aparece espelhada.',
+  magnifier: 'A pergunta do time alvo fica borrada: só dá para ler com a lupa.',
+  toll: 'Cada alternativa do time alvo ganha um preço de 3 a 8, e a resposta do time paga para o seu.',
+  decoy: 'O time alvo vê 2 alternativas inventadas a mais. Cada um que votar numa delas dá 5 ao seu time.',
+  flashbang: '4 segundos depois de liberar as respostas, o time alvo só vê as letras.',
+  silence: 'O time alvo vota às cegas: ninguém vê o voto dos colegas.',
+  duel: 'Mítico: X1 contra um time. Cada time manda um representante; quem perde paga 40% do QI, e os outros times apostam.',
 }
 
 export function gainLabel(gain: PowerUpGain) {
