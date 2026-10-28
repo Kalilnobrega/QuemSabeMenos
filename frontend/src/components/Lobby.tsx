@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
+import { InfoButton, ModeGuide } from './ModeGuide'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
@@ -36,6 +37,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
   const [notice, setNotice] = useState<string | null>(null)
   const [starting, setStarting] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
+  const [guideOpen, setGuideOpen] = useState(false)
 
   const isHost = room.host_id === playerId
 
@@ -153,9 +155,12 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
 
       <div className="flex flex-col gap-3">
         <h2 className="font-display text-2xl tracking-wide">Partida</h2>
-        <div className="flex flex-col items-center gap-0.5 rounded-xl bg-panel px-4 py-3 text-center">
+        <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
           <span className="font-display text-xl tracking-wide text-brand">{MODES[room.settings.mode].name}</span>
           <span className="text-sm text-steel">{MODES[room.settings.mode].hint}</span>
+          <span className="absolute top-2.5 right-2.5 text-steel">
+            <InfoButton onClick={() => setGuideOpen(true)} label={`Como funciona o ${MODES[room.settings.mode].name}`} />
+          </span>
         </div>
         <dl className="grid grid-cols-6 gap-2">
           {summary.map((item, index) => (
@@ -205,6 +210,8 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
 
       <LeaveButton onLeave={onLeave} />
 
+      {guideOpen && <ModeGuide mode={room.settings.mode} onClose={() => setGuideOpen(false)} />}
+
       {isHost && settingsOpen && (
         <SettingsSheet room={room} onUpdate={onUpdateSettings} onClose={() => setSettingsOpen(false)} />
       )}
@@ -232,15 +239,17 @@ interface SettingsSheetProps {
 /** Painel do anfitrião com as configurações da partida; cada toque já vale para a sala toda. */
 function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
   const [notice, setNotice] = useState<string | null>(null)
+  const [guide, setGuide] = useState<RoomSettings['mode'] | null>(null)
   const { settings } = room
   const { themes, theme_options: themeOptions } = settings
   const allThemes = themes.length === themeOptions.length
 
   useEffect(() => {
+    if (guide) return
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [onClose])
+  }, [onClose, guide])
 
   const update = async (patch: UpdateSettingsRequest) => setNotice(await onUpdate(patch))
   const toggleTheme = (theme: string) => {
@@ -252,6 +261,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
   }
 
   return (
+    <>
     <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/70 sm:items-center" onClick={onClose}>
       <div
         role="dialog"
@@ -268,20 +278,22 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           <h3 className="font-display text-xl tracking-wide">Modo</h3>
           <div className="grid grid-cols-2 gap-2">
             {settings.mode_options.map((mode, index) => (
-              <button
-                key={mode}
-                onClick={() => update({ mode })}
-                aria-pressed={settings.mode === mode}
-                // Número ímpar de modos: o último ocupa a linha inteira.
-                className={`btn-3d btn-sm flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
-                  index === settings.mode_options.length - 1 && index % 2 === 0 ? 'col-span-2' : ''
-                } ${
-                  settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
-                }`}
-              >
-                <span className="font-semibold">{MODES[mode].name}</span>
-                <span className="text-xs leading-snug opacity-80">{MODES[mode].hint}</span>
-              </button>
+              // Número ímpar de modos: o último ocupa a linha inteira.
+              <div key={mode} className={`relative ${index === settings.mode_options.length - 1 && index % 2 === 0 ? 'col-span-2' : ''}`}>
+                <button
+                  onClick={() => update({ mode })}
+                  aria-pressed={settings.mode === mode}
+                  className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg py-2 pr-9 pl-3 text-left ${
+                    settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                  }`}
+                >
+                  <span className="font-semibold">{MODES[mode].name}</span>
+                  <span className="text-xs leading-snug opacity-80">{MODES[mode].hint}</span>
+                </button>
+                <span className={`absolute top-1.5 right-1.5 ${settings.mode === mode ? 'text-ink' : 'text-steel'}`}>
+                  <InfoButton onClick={() => setGuide(mode)} label={`Como funciona o ${MODES[mode].name}`} />
+                </span>
+              </div>
             ))}
           </div>
         </div>
@@ -420,6 +432,9 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
         </button>
       </div>
     </div>
+    {/* Fora do painel, para o toque no fundo do guia não fechar as configurações também. */}
+    {guide && <ModeGuide mode={guide} onClose={() => setGuide(null)} />}
+    </>
   )
 }
 
