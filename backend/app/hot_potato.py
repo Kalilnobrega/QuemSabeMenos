@@ -44,9 +44,10 @@ DOUBLE_BOMB_RIGHTS = 2  # Bomba dupla: acertos seguidos para conseguir passar
 RESURRECTION_CHANCE = 0.08
 DOUBLE_POTATO_CHANCE = 0.04  # Batata dupla: chance a cada poder ganho por acertos seguidos
 DOUBLE_POTATO_MIN_ALIVE = 3
+DOUBLE_POTATO_INTRO_SECONDS = 3.6  # a cena da dourada caindo; o pavio dela só começa depois
 
 Phase = Literal["starting", "playing", "exploded", "finished"]
-State = Literal["asking", "passing", "wrong", "again"]
+State = Literal["arriving", "asking", "passing", "wrong", "again"]
 
 
 class HotPotatoError(Exception):
@@ -483,7 +484,7 @@ class HotPotato:
         holder = self._farthest(self.main.holder, me.id)
         golden = self._new_potato(1, holder, GOLDEN_FUSE_SECONDS, golden=True, excluded=me.id)
         self.potatoes.append(golden)
-        self._ask(golden, now)
+        self._set_state(golden, "arriving", now, DOUBLE_POTATO_INTRO_SECONDS)
 
     def _count_run(self, player_id: str) -> None:
         if not self.powers:

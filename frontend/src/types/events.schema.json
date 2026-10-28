@@ -1471,7 +1471,7 @@
       "type": "object"
     },
     "PotatoView": {
-      "description": "Uma batata na roda. Estados: asking (quem está com ela responde) → passing (acertou, ela voa\npara o próximo), wrong (errou, outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma).",
+      "description": "Uma batata na roda. Estados: arriving (a Batata dupla caindo na roda; o pavio ainda não queima)\n→ asking (quem está com ela responde) → passing (acertou, ela voa para o próximo), wrong (errou,\noutra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma).",
       "properties": {
         "id": {
           "type": "integer"
@@ -1501,6 +1501,7 @@
         },
         "state": {
           "enum": [
+            "arriving",
             "asking",
             "passing",
             "wrong",

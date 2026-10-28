@@ -6,7 +6,7 @@ import { useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/ef
 import { POTATO_HINTS, POWERUP_INFO, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import type { HotPotatoView, PotatoView, PowerUpUse } from '../types/events'
+import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
 import { LeaveButton } from './LeaveButton'
 import { Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { ResurrectionScene } from './ResurrectionScene'
@@ -164,6 +164,7 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
   return (
     <section className="flex w-full flex-col gap-4">
       {scared && <ScareScene />}
+      {golden?.state === 'arriving' && <DoublePotatoScene potato={golden} players={room.players} playerId={playerId} />}
       <ResurrectionScene
         revived={game.revived.map((id) => ({ key: `${game.round}:${id}`, playerId: id, line: (who) => `${who} voltou para a roda!` }))}
         players={room.players}
@@ -372,6 +373,45 @@ function QuestionPanel({
         </Magnifier>
       )}
       {error && <p className="text-center text-red-300">{error}</p>}
+    </div>
+  )
+}
+
+/** Batata dupla: a dourada cai girando, para num close em câmera lenta e despenca em quem vai
+ *  começar com ela. A cena dura o tempo da chegada que o servidor dá (o pavio dela ainda não queima). */
+function DoublePotatoScene({ potato, players, playerId }: { potato: PotatoView; players: PlayerView[]; playerId: string | null }) {
+  const holder = players.find((p) => p.id === potato.holder)
+  const thrower = players.find((p) => p.id === potato.excluded)
+  const who = (p: PlayerView | undefined) => (p?.id === playerId ? 'você' : (p?.nickname ?? 'alguém'))
+  useSoundsOnMount([
+    ['perfectEasy', 0],
+    ['impossible', 700],
+    ['slam', 2350],
+  ])
+  useEffect(() => {
+    const timer = setTimeout(() => vibrate(potato.holder === playerId ? [150, 60, 250] : 60), 2350)
+    return () => clearTimeout(timer)
+  }, [potato.holder, playerId])
+  return (
+    <div className="dp-scene" role="status" aria-label={`Batata dupla com ${who(holder)}`}>
+      <div className="dp-rays" aria-hidden="true" />
+      <div className="dp-fall" aria-hidden="true">
+        <span className="dp-glow" />
+        <PotatoIcon golden className="dp-spin size-28" />
+      </div>
+      <div className="dp-target">
+        <div className="dp-target-bounce">
+          <span className="dp-burst" aria-hidden="true" />
+          {holder && <img src={AVATAR_URLS[holder.avatar]} alt="" className="dp-avatar size-24" />}
+          <span className="font-display text-xl text-chalk">{holder?.id === playerId ? 'Você' : holder?.nickname}</span>
+        </div>
+      </div>
+      <div className="dp-bottom">
+        <p className="dp-title font-display text-6xl text-yellow-300 [text-shadow:0_5px_0_#854d0e]">BATATA DUPLA!</p>
+        <p className="dp-sub text-center font-semibold text-yellow-100">
+          {thrower?.id === playerId ? 'Você jogou: ela nunca vai para você.' : `${thrower?.nickname ?? 'Alguém'} jogou: ela nunca vai para quem jogou.`}
+        </p>
+      </div>
     </div>
   )
 }

@@ -827,8 +827,9 @@ export interface HotPotatoView {
   revived: string[];
 }
 /**
- * Uma batata na roda. Estados: asking (quem está com ela responde) → passing (acertou, ela voa
- * para o próximo), wrong (errou, outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma).
+ * Uma batata na roda. Estados: arriving (a Batata dupla caindo na roda; o pavio ainda não queima)
+ * → asking (quem está com ela responde) → passing (acertou, ela voa para o próximo), wrong (errou,
+ * outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma).
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "PotatoView".
@@ -838,7 +839,7 @@ export interface PotatoView {
   golden: boolean;
   excluded: string | null;
   holder: string | null;
-  state: "asking" | "passing" | "wrong" | "again";
+  state: "arriving" | "asking" | "passing" | "wrong" | "again";
   state_duration_ms: number;
   state_ends_in_ms: number;
   heat: number;

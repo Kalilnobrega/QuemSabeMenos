@@ -370,6 +370,9 @@ def test_double_potato_adds_a_golden_potato_far_away_that_skips_whoever_threw_it
     game.mythics[thrower] = ["double_potato"]
     game.use(thrower, "double_potato", potato.state_started_at)
     golden = game.golden
+    assert golden.state == "arriving" and golden.question is None  # a cena: o pavio ainda não queima
+    game.advance(golden.state_ends_at)
+    assert golden.state == "asking"
     assert golden and golden.holder != thrower and golden.excluded == thrower
     assert GOLDEN_FUSE_SECONDS[0] <= golden.fuse_total <= GOLDEN_FUSE_SECONDS[1]
     here, there = ids.index(potato.holder), ids.index(golden.holder)
@@ -390,6 +393,7 @@ def test_holding_both_potatoes_answers_one_question_for_each():
     game.mythics[thrower] = ["double_potato"]
     game.use(thrower, "double_potato", 0)
     golden = game.golden
+    game.advance(golden.state_ends_at)
     golden.holder = potato.holder  # as duas com a mesma pessoa
     holder = potato.holder
     with pytest.raises(HotPotatoError, match="as duas"):
@@ -408,6 +412,7 @@ def test_golden_potato_explodes_on_its_own_and_disappears():
     t0 = potato.state_started_at
     game.use(thrower, "double_potato", t0)
     golden = game.golden
+    game.advance(golden.state_ends_at)
     golden.fuse_left = 1  # a dourada vai explodir antes
     victim = golden.holder
     game.advance(game.deadline())

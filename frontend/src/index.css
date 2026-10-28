@@ -413,3 +413,37 @@ body {
   .scare-scene { animation: none; }
   .scare-joke { animation: none; }
 }
+
+/* Batata dupla: a dourada cai girando, para num close em câmera lenta (escala grande, giro quase
+   parado) e despenca em quem vai começar com ela; aí bate o BATATA DUPLA! O estilo base é o fim. */
+.dp-scene { position: fixed; inset: 0; z-index: 55; overflow: hidden; pointer-events: none; background: radial-gradient(ellipse at 50% 36%, rgba(110, 82, 8, 0.92), rgba(24, 18, 6, 0.96) 42%, rgba(11, 15, 26, 0.98) 80%); animation: dagger-fade 0.25s ease-out both; }
+.dp-bottom { position: absolute; left: 0; right: 0; top: 74%; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding-inline: 1rem; }
+.dp-rays { position: absolute; inset: -30%; background: repeating-conic-gradient(from 0deg at 50% 45%, rgba(253, 224, 71, 0.16) 0deg 6deg, transparent 6deg 15deg); animation: res-rays 6s linear both; }
+.dp-fall { position: absolute; left: 50%; top: 52%; transform: translate(-50%, -50%) scale(0.75); animation: dp-fall 2.35s both; }
+.dp-glow { position: absolute; inset: -40%; border-radius: 50%; background: radial-gradient(circle, rgba(254, 240, 138, 0.85), rgba(250, 204, 21, 0.25) 45%, transparent 70%); animation: dp-glow 0.9s ease-in-out infinite alternate; }
+.dp-spin { position: relative; animation: dp-spin 2.35s both; }
+.dp-target { position: absolute; left: 50%; top: 60%; transform: translate(-50%, -50%); }
+.dp-target-bounce { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; animation: dp-land 0.45s ease-out 2.3s both; }
+.dp-burst { position: absolute; left: 50%; top: 40%; width: 7rem; height: 7rem; margin: -3.5rem 0 0 -3.5rem; border-radius: 50%; background: radial-gradient(circle, rgba(254, 240, 138, 0.95), transparent 65%); opacity: 0; animation: dp-burst 0.7s ease-out 2.3s both; }
+.dp-avatar { filter: drop-shadow(0 0 14px rgba(250, 204, 21, 0.9)); }
+.dp-title { animation: intro-slam 0.55s cubic-bezier(0.2, 1.6, 0.4, 1) 2.4s both; }
+.dp-sub { animation: dagger-rise 0.4s ease-out 2.8s both; }
+@keyframes dp-fall {
+  /* De cima até o close (desacelerando), segura no close em câmera lenta, e despenca no jogador. */
+  0% { top: -12%; transform: translate(-50%, -50%) scale(0.6); animation-timing-function: cubic-bezier(0.2, 0.7, 0.3, 1); }
+  38% { top: 34%; transform: translate(-50%, -50%) scale(2.3); animation-timing-function: linear; }
+  72% { top: 36%; transform: translate(-50%, -50%) scale(2.45); animation-timing-function: cubic-bezier(0.6, 0, 0.9, 0.5); }
+  100% { top: 52%; transform: translate(-50%, -50%) scale(0.75); }
+}
+@keyframes dp-spin {
+  0% { transform: rotate(-260deg); animation-timing-function: cubic-bezier(0.2, 0.7, 0.3, 1); }
+  38% { transform: rotate(-30deg); animation-timing-function: linear; }
+  72% { transform: rotate(0deg); animation-timing-function: ease-in; }
+  100% { transform: rotate(180deg); }
+}
+@keyframes dp-glow { from { transform: scale(0.9); opacity: 0.7; } to { transform: scale(1.15); opacity: 1; } }
+@keyframes dp-land { 0% { transform: translateY(0); } 35% { transform: translateY(10px) scaleY(0.9); } 100% { transform: none; } }
+@keyframes dp-burst { 0% { opacity: 0; transform: scale(0.3); } 30% { opacity: 1; } 100% { opacity: 0; transform: scale(1.6); } }
+@media (prefers-reduced-motion: reduce) {
+  .dp-scene, .dp-rays, .dp-fall, .dp-glow, .dp-spin, .dp-target-bounce, .dp-burst, .dp-title, .dp-sub { animation: none; }
+}

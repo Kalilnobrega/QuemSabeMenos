@@ -436,14 +436,15 @@ class HotPotatoPlayer(BaseModel):
 
 
 class PotatoView(BaseModel):
-    """Uma batata na roda. Estados: asking (quem está com ela responde) → passing (acertou, ela voa
-    para o próximo), wrong (errou, outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma)."""
+    """Uma batata na roda. Estados: arriving (a Batata dupla caindo na roda; o pavio ainda não queima)
+    → asking (quem está com ela responde) → passing (acertou, ela voa para o próximo), wrong (errou,
+    outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma)."""
 
     id: int
     golden: bool  # a Batata dupla (mítico): pavio próprio, nunca vai para quem a jogou
     excluded: str | None  # quem jogou a Batata dupla
     holder: str | None
-    state: Literal["asking", "passing", "wrong", "again"]
+    state: Literal["arriving", "asking", "passing", "wrong", "again"]
     state_duration_ms: int
     state_ends_in_ms: int  # no asking, é o pavio: o front não deve mostrar
     heat: float  # 0 a 1: quanto do pavio já queimou no envio
