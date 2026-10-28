@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
@@ -6,7 +6,8 @@ import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } 
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
-import type { PlayerView, PowerUpUse, SurvivalView, Survivor } from '../types/events'
+import type { PlayerView, PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
+import { DaggerStrike } from './DaggerStrike'
 import { Confetti, PeekBadge } from './Game'
 import { LeaveButton } from './LeaveButton'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
@@ -235,9 +236,15 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
   useEffect(() => {
     if (survival.revived.length) playSound('resurrection')
   }, [survival.revived.length])
+  // Cada Adaga nova vira uma cena; quem entra no meio da revelação não revê as de antes.
+  const seenStabs = useRef(survival.stabs.length)
+  const [strikes, setStrikes] = useState<{ id: number; stab: Stab }[]>([])
   useEffect(() => {
-    if (survival.stabs.length) playSound('powerHit')
-  }, [survival.stabs.length])
+    const seen = seenStabs.current
+    if (survival.stabs.length <= seen) return
+    seenStabs.current = survival.stabs.length
+    setStrikes((queue) => [...queue, ...survival.stabs.slice(seen).map((stab, i) => ({ id: seen + i, stab }))])
+  }, [survival.stabs])
 
   const pick = async (option: number) => {
     if (!canAnswer || survival.hidden_options.includes(option)) return
@@ -298,6 +305,9 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
 
   return (
     <section className="flex w-full flex-col gap-5">
+      {strikes[0] && (
+        <DaggerStrike key={strikes[0].id} stab={strikes[0].stab} players={room.players} playerId={playerId} onDone={() => setStrikes((queue) => queue.slice(1))} />
+      )}
       <header className="flex flex-col items-center gap-1 text-center">
         {duel ? (
           <>

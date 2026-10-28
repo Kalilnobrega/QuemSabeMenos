@@ -30,6 +30,8 @@ export const SOUND_ENABLED = {
   rankingSwish: true,
   flashbang: true,
   potatoBoom: true,
+  daggerThrow: true,
+  daggerHit: true,
   podiumWinner: true,
   podiumLoser: true,
   skip: true,
@@ -75,6 +77,8 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   streakIce: { group: 'Revelação', name: 'Gelo rachando', moment: 'Alguém faz uma sequência de erros' },
   perfectEasy: { group: 'Revelação', name: 'Brilho de estrela', moment: 'Alguém gabarita as fáceis' },
   flashbang: { group: 'Pergunta', name: 'Estouro e zumbido', moment: 'A Flashbang estoura em você' },
+  daggerThrow: { group: 'Habilidades', name: 'Assobio de lâmina girando', moment: 'A Adaga é arremessada' },
+  daggerHit: { group: 'Habilidades', name: 'Batida seca e corte', moment: 'A Adaga crava no alvo' },
   potatoBoom: { group: 'Batata quente', name: 'Chiado, BUM, cacos caindo e zumbido', moment: 'A batata explode na mão de alguém' },
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
   podiumWinner: { group: 'Pódio', name: 'Fanfarra de vitória', moment: 'O pódio aparece, com o vencedor' },
@@ -322,6 +326,15 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
     noise({ dur: 0.45, filter: 'lowpass', freq: 3000, to: 400, gain: 0.7 })
     tone(90, { dur: 0.35, to: 35, gain: 0.7 })
     tone(3800, { at: 0.2, dur: 2.8, gain: 0.035 })
+  },
+  daggerThrow: () => {
+    // A lâmina girando no ar: três assobios rápidos subindo.
+    ;[0, 0.14, 0.28].forEach((at, i) => noise({ at, dur: 0.14, freq: 1800 + i * 600, to: 5200 + i * 600, q: 6, gain: 0.12 }))
+  },
+  daggerHit: () => {
+    noise({ dur: 0.08, filter: 'highpass', freq: 3000, gain: 0.35 })
+    tone(140, { dur: 0.22, to: 55, gain: 0.6 })
+    noise({ at: 0.03, dur: 0.25, filter: 'lowpass', freq: 900, to: 200, gain: 0.35 })
   },
   potatoBoom: () => {
     // Pavio chiando no fim, o estouro grave que vai abafando, os pedaços caindo e o zumbido da
