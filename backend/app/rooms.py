@@ -97,7 +97,7 @@ class Room:
     survival_kind: SurvivalKind = "true_false"
     survival_powers: bool = False  # Último de pé e Batata quente com poderes
     team_count: int = 2
-    team_pick: TeamPick = "random"
+    team_pick: TeamPick = "host"
     teams: dict[str, int] = field(default_factory=dict)  # montados pelo anfitrião
     powerup_max: int = MAX_HELD
     rounds: int = DEFAULT_ROUNDS

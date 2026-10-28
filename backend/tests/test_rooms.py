@@ -259,7 +259,8 @@ def test_teams_need_two_players_each_and_random_teams_are_even(manager):
     room, _ = manager.create("sid-0", profile("P0"))
     for i in range(1, 5):
         manager.join(f"sid-{i}", room.code, profile(f"P{i}"))
-    manager.update_settings("sid-0", mode="teams", team_count=3)
+    assert room.view().settings.team_pick == "host"  # o padrão é o anfitrião montar
+    manager.update_settings("sid-0", mode="teams", team_count=3, team_pick="random")
     with pytest.raises(RoomError, match="6 jogadores"):
         manager.start("sid-0")
     manager.update_settings("sid-0", team_count=2)
