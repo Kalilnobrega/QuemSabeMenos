@@ -80,8 +80,8 @@ const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
   decoy: LEGENDARY_DECOY_HINT,
   flashbang: '4 segundos depois de liberar as respostas, todos os outros só veem as letras.',
 }
-const SURVIVAL_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'extra_time', 'second_chance', 'reverse', 'theme', 'backpack', 'medkit', 'hide']
-const SURVIVAL_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'decoy', 'flashbang', 'curse', 'blood_pact']
+const SURVIVAL_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'reverse', 'theme', 'backpack', 'medkit', 'hide']
+const SURVIVAL_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'flashbang', 'curse', 'blood_pact']
 const POTATO_HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass']
 const POTATO_SABOTAGES: Kind[] = ['accelerator', 'scramble', 'mirror', 'magnifier', 'flashbang']
 const TEAM_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'theme', 'backpack', 'iron_captain']
@@ -157,7 +157,7 @@ const GUIDES: Record<Mode, Guide> = {
       'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos.',
       'Na revelação, você escolhe um poder para a próxima pergunta; o 50/50 e o Espiar se usam na hora.',
       'Quem caiu vira fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos, e às vezes a Ressurreição.',
-      'No V ou F não vêm 50/50 nem Alternativa falsa, e a Segunda chance vale só para a próxima pergunta.',
+      'No V ou F não vem 50/50 (com 2 opções, entregaria a resposta).',
       'No X1 não tem poder.',
       'Aqui não tem lendários: os ataques sempre miram uma pessoa só.',
       'Míticos: a Adaga às vezes vem no lugar de um poder ganho por acertos seguidos (4%). A Ressurreição é só dos fantasmas (8% em cada presente de fantasma). A Bênção não se ganha: é o prêmio de eliminar alguém com a Adaga.',

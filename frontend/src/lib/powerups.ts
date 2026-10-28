@@ -58,21 +58,13 @@ const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
 /** No Último de pé não tem QI: os poderes mexem com vidas. */
 export const SURVIVAL_HINTS: Partial<Record<Kind, string>> = {
   shield: 'Vale por até 2 perguntas: no primeiro erro, não perde a vida.',
-  extra_time: '+5s para responder nas próximas 3 perguntas.',
-  second_chance: 'Vale nas próximas 2 perguntas, uma vez: errou, tenta de novo.',
   reverse: 'Secreto, vale por até 3 perguntas: o primeiro poder jogado em você volta para quem jogou.',
   steal: 'Se o alvo perder uma vida na próxima, ela fica com você (até o máximo de vidas).',
   accelerator: 'O alvo tem um terço do tempo para responder.',
-  decoy: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha um Escudo para a pergunta seguinte.',
   silence: 'Por 2 perguntas o alvo não vê o tempo, as vidas dos outros nem a revelação, e não usa habilidades.',
   resurrection: 'Mítico, só para fantasma. Na revelação, você volta para o jogo com 1 vida.',
 }
 
-/** No V ou F a Segunda chance vale só na próxima: com 2 opções, tentar de novo é acerto garantido. */
-export const TRUE_FALSE_HINTS: Partial<Record<Kind, string>> = {
-  ...SURVIVAL_HINTS,
-  second_chance: 'Vale só na próxima pergunta: errou, tenta de novo.',
-}
 
 /** Batata quente: ajudas valem na hora para quem está com a batata; sabotagens, em quem está com ela. */
 export const POTATO_HINTS: Partial<Record<Kind, string>> = {

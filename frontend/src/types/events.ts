@@ -1091,7 +1091,6 @@ export interface SurvivalView {
   active: PowerUpUse[];
   lasting: LastingPowerUp[];
   hidden_options: number[];
-  first_wrong: number | null;
   peek: number[] | null;
   flashbang: boolean;
   silenced_rounds: number;
@@ -1114,8 +1113,6 @@ export interface SurvivalPick {
   correct: boolean;
   elapsed_ms: number | null;
   lost_life: boolean;
-  first_option?: number | null;
-  decoy?: string | null;
   shielded?: boolean;
   stolen_by?: string | null;
   hidden?: boolean;

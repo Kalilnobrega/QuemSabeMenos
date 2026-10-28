@@ -2280,28 +2280,6 @@
         "lost_life": {
           "type": "boolean"
         },
-        "first_option": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "decoy": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
         "shielded": {
           "default": false,
           "type": "boolean"
@@ -2718,16 +2696,6 @@
           },
           "type": "array"
         },
-        "first_wrong": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "peek": {
           "anyOf": [
             {
@@ -2829,7 +2797,6 @@
         "active",
         "lasting",
         "hidden_options",
-        "first_wrong",
         "peek",
         "flashbang",
         "silenced_rounds",

@@ -8,15 +8,15 @@ acertando ganha o mais rápido.
 Sem QI: a colocação é a ordem de eliminação (mesma rodada desempata pelo tempo total de resposta).
 
 Com poderes: os do clássico que não dependem de QI, armados na revelação para a próxima pergunta
-(50/50 e Espiar na hora). Escudo segura uma vida, Roubo vira Roubo de vida, Alternativa falsa dá
-um Escudo a quem jogou. Cada um ganha um no começo e outro a cada 3 acertos seguidos. Quem caiu vira
+(50/50 e Espiar na hora). Escudo segura uma vida e Roubo vira Roubo de vida; Tempo extra, Segunda
+chance e Alternativa falsa não entram. Cada um ganha um no começo e outro a cada 3 acertos seguidos. Quem caiu vira
 fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos e, às vezes, a Ressurreição.
 No X1 não tem poder.
 """
 
 import random
 from dataclasses import dataclass, field
-from typing import Callable, Literal, Protocol
+from typing import Literal, Protocol
 
 from app import powerups as pw
 from app.duel import TRUE_FALSE_OPTIONS
@@ -44,21 +44,19 @@ LATE_SECONDS = 1.0  # tolerância de rede para respostas no limite
 
 # Poderes do modo. No V ou F, 50/50 e Alternativa falsa entregariam a resposta.
 POWERS: tuple[PowerUp, ...] = (
-    "fifty_fifty", "peek", "shield", "extra_time", "second_chance", "reverse", "theme", "backpack", "medkit", "hide",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "silence", "decoy", "flashbang",
+    "fifty_fifty", "peek", "shield", "reverse", "theme", "backpack", "medkit", "hide",
+    "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "silence", "flashbang",
     "curse", "blood_pact",
 )
 # Ataques que só existem aqui: o Reverso também devolve, mas eles não entram no sorteio de lendários do clássico.
 TARGETED: frozenset[PowerUp] = pw.TARGETED | {"curse", "blood_pact"}
 CURSE_LIVES = 2  # Maldição: errando, o alvo perde 2 vidas
 DAGGER_CHANCE = 0.04  # Adaga (mítico): chance a cada poder ganho por acertos seguidos
-TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty", "decoy"})
-LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2, "reverse": 3}
-TRUE_FALSE_SECOND_CHANCE_ROUNDS = 1  # com 2 opções a segunda tentativa é acerto garantido
+TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty"})
+LASTING: dict[PowerUp, int] = {"shield": 2, "reverse": 3}
 GHOST_EVERY = 3  # perguntas entre um presente e outro para quem caiu
 GHOST_SABOTAGES: tuple[PowerUp, ...] = ("scramble", "accelerator", "mirror", "magnifier", "flashbang")
 GHOST_RESURRECTION_CHANCE = 0.08
-DECOY_SHIELD_ROUNDS = 1  # Escudo para quem jogou a Alternativa falsa em quem caiu nela
 
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
 Phase = Literal[
@@ -121,13 +119,6 @@ class Contender:
 
 
 @dataclass
-class Decoy:
-    texts: list[str]
-    order: list[int]  # posição na tela → índice em opções reais + falsas
-    payees: list[str]  # quem jogou e ganha o Escudo se o alvo cair
-
-
-@dataclass
 class Survival:
     kind: SurvivalKind
     contenders: list[Contender]
@@ -159,8 +150,6 @@ class Survival:
     lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     silences: list[tuple[PowerUpUse, int]] = field(default_factory=list)
     hidden_options: dict[str, list[int]] = field(default_factory=dict)
-    first_wrong: dict[str, tuple[int, float]] = field(default_factory=dict)
-    decoys: dict[str, Decoy | None] = field(default_factory=dict)
     theme_choices: list[str] = field(default_factory=list)
     next_theme: str | None = None
     runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo ao próximo poder
@@ -228,10 +217,8 @@ class Survival:
         return r.answer_seconds
 
     def answer_window(self, player_id: str) -> float:
-        """Segundos que o jogador tem: Tempo extra soma, Acelerador corta."""
+        """Segundos que o jogador tem: o Acelerador corta."""
         seconds = self.answer_seconds()
-        if self._affects("extra_time", player_id):
-            seconds += pw.EXTRA_SECONDS
         if self._affects("accelerator", player_id):
             seconds *= pw.ACCELERATOR_FACTOR
         return seconds
@@ -286,21 +273,9 @@ class Survival:
         deadline = self.phase_started_at + self.answer_window(player_id)
         if now > deadline + LATE_SECONDS:
             raise SurvivalError("O tempo acabou.")
-        decoy = self._decoy_for(player_id)
-        real = len(self.question.options)
-        if option not in range(real + (len(decoy.texts) if decoy else 0)):
+        if option not in range(len(self.question.options)) or option in self.hidden_options.get(player_id, []):
             raise SurvivalError("Resposta inválida.")
-        if decoy:
-            option = decoy.order[option]
-        tried = self.first_wrong.get(player_id)
-        if option in self.hidden_options.get(player_id, []) or (tried and tried[0] == option):
-            raise SurvivalError("Resposta inválida.")
-        at = min(now, deadline)
-        if option != self.question.answer and not tried and self._affects("second_chance", player_id):
-            self.first_wrong[player_id] = (option, at)
-            self.lasting[player_id].pop("second_chance", None)
-            return
-        self.answers[player_id] = (option, at)
+        self.answers[player_id] = (option, min(now, deadline))
 
     def mark_ready(self, player_id: str) -> None:
         if self.phase != "results":
@@ -447,31 +422,18 @@ class Survival:
         self._enter("duel_answering" if self.in_duel() else "answering", now, self.answer_seconds())
 
     def _close(self, now: float) -> None:
-        real = len(self.question.options)
         for pid in self.answering_ids():
             c = self.contender(pid)
             if self._hiding(pid):
                 self.picks.append(SurvivalPick(player_id=pid, option=None, correct=False, elapsed_ms=None, lost_life=False, hidden=True))
                 continue
             window_ms = round(self.answer_window(pid) * 1000)
-            first = self.first_wrong.get(pid)
-            option, at = self.answers.get(pid) or first or (None, None)
+            option, at = self.answers.get(pid, (None, None))
             elapsed = min(window_ms, round((at - self.phase_started_at) * 1000)) if at is not None else None
             correct = option is not None and option == self.question.answer
             c.answer_ms += window_ms if elapsed is None else elapsed
             c.correct += correct
-            decoy = self._decoy_for(pid)
-            self.picks.append(
-                SurvivalPick(
-                    player_id=pid,
-                    option=option,
-                    correct=correct,
-                    elapsed_ms=elapsed,
-                    lost_life=False,
-                    first_option=first[0] if first and (option, at) != first else None,
-                    decoy=decoy.texts[option - real] if decoy and option is not None and option >= real else None,
-                )
-            )
+            self.picks.append(SurvivalPick(player_id=pid, option=option, correct=correct, elapsed_ms=elapsed, lost_life=False))
         counted = [p for p in self.picks if not p.hidden]
         wrong = [p for p in counted if not p.correct]
         if self.in_duel():
@@ -567,16 +529,12 @@ class Survival:
         """Começo de uma pergunta comum: o que foi armado passa a valer (o Reverso devolve)."""
         self.silences = [(use, left - 1) for use, left in self.silences if left > 1]
         self.hidden_options = {}
-        self.first_wrong = {}
-        self.decoys = {}
         self.theme_choices = []
         armed = list(self.armed.values())
         self.armed = {}
         for use in armed:
             if use.kind in LASTING:
                 rounds = LASTING[use.kind]
-                if use.kind == "second_chance" and self.kind == "true_false":
-                    rounds = TRUE_FALSE_SECOND_CHANCE_ROUNDS
                 self.lasting.setdefault(use.by, {})[use.kind] = rounds
                 self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
         reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
@@ -606,26 +564,8 @@ class Survival:
             return self.lasting.get(player_id, {}).get(kind, 0) > 0
         return any((use.target or use.by) == player_id for use in self.active if use.kind == kind)
 
-    def _decoy_for(self, player_id: str) -> Decoy | None:
-        if player_id not in self.decoys:
-            payees = [use.reflected_by or use.by for use in self.active if use.kind == "decoy" and use.target == player_id]
-            self.decoys[player_id] = self._make_decoy(payees) if payees and self.powers_round() else None
-        return self.decoys[player_id]
-
-    def _make_decoy(self, payees: list[str]) -> Decoy | None:
-        q = self.question
-        similar = [o for other in self.pool if other.theme == q.theme and other.text != q.text for o in other.options]
-        self.rng.shuffle(similar)
-        texts = pw.decoys(q.options[q.answer], q.options, similar[:48], self.rng)
-        if not texts:
-            return None
-        order = list(range(len(q.options) + len(texts)))
-        self.rng.shuffle(order)
-        return Decoy(texts=texts, order=order, payees=payees)
-
     def _settle_powers(self) -> None:
-        """Depois das vidas: Roubo de vida, Escudo de quem pegou alguém na falsa, e o desgaste
-        das que duram mais de uma pergunta."""
+        """Depois das vidas: Roubo de vida e o desgaste das que duram mais de uma pergunta."""
         by_id = {p.player_id: p for p in self.picks}
         for use in self.active:
             if use.kind == "steal" and (victim := by_id.get(use.target)) and victim.lost_life:
@@ -633,12 +573,6 @@ class Survival:
                 if thief and thief.alive and thief.lives > 0:
                     thief.lives = min(self.rules.lives, thief.lives + 1)
                     victim.stolen_by = use.by
-        for pick in self.picks:
-            decoy = self.decoys.get(pick.player_id)
-            if pick.decoy and decoy:
-                for payee in decoy.payees:
-                    self.lasting.setdefault(payee, {})["shield"] = DECOY_SHIELD_ROUNDS + 1
-                    self.lasting_total.setdefault(payee, {})["shield"] = DECOY_SHIELD_ROUNDS
         for kinds in self.lasting.values():
             for kind in list(kinds):
                 kinds[kind] -= 1
@@ -651,7 +585,7 @@ class Survival:
             pid = pick.player_id
             if pick.hidden:
                 continue  # escondido: a sequência nem anda nem quebra
-            if not pick.correct or pick.first_option is not None:
+            if not pick.correct:
                 self.runs[pid] = 0
                 continue
             self.runs[pid] = self.runs.get(pid, 0) + 1
@@ -740,16 +674,6 @@ class Survival:
 
         return {c.id: i + 1 for i, c in enumerate(sorted(self.contenders, key=key))}
 
-    def _screen(self, viewer: str | None) -> tuple[list[str], Callable[[int | None], int | None]]:
-        """Alternativas na ordem da tela de quem vê (com as falsas, se for o alvo)."""
-        q = self.question
-        real = len(q.options)
-        decoy = self.decoys.get(viewer) if viewer else None
-        if not decoy:
-            return q.options, lambda i: i if i is not None and i < real else None
-        everything = [*q.options, *decoy.texts]
-        return [everything[i] for i in decoy.order], lambda i: decoy.order.index(i) if i is not None else None
-
     def view(self, now: float, viewer: str | None, player_ids: list[str]) -> SurvivalView:
         revealed = self.phase in ("results", "duel_results")
         showing = self.phase in ("reading", "duel_reading", "answering", "duel_answering", "results", "duel_results")
@@ -758,22 +682,16 @@ class Survival:
         counts = dict(self.rules.levels)
         silenced = self.silence_left(viewer) if viewer else 0
         hidden = revealed and silenced > 0  # silenciado não vê a revelação
-        if q and viewer and self.phase in ("reading", "answering"):
-            self._decoy_for(viewer)
-        options, screen = self._screen(viewer) if q else ([], lambda i: i)
         ends_at = self.phase_ends_at
         if self.phase == "answering" and viewer in self.answering_ids():
             ends_at = self.phase_started_at + self.answer_window(viewer)
         asking = self.phase in ("reading", "answering")
         peek = None
         if asking and viewer and self._affects("peek", viewer):
-            real = len(q.options)
-            tally = [0] * real
-            for pid, (option, _) in {**self.answers, **self.first_wrong}.items():
-                if pid != viewer and option < real:
-                    tally[option] += 1
-            peek = [tally[i] if i < real else 0 for i in self._underlying_order(viewer)]
-        mine = self.first_wrong.get(viewer) if viewer else None
+            peek = [0] * len(q.options)
+            for pid, (option, _) in self.answers.items():
+                if pid != viewer:
+                    peek[option] += 1
         return SurvivalView(
             kind=self.kind,
             phase=self.phase,
@@ -787,11 +705,11 @@ class Survival:
             difficulty=self.difficulty() if self.round else self.rules.levels[0][0],
             text=q.text if q else None,
             theme=q.theme if q else None,
-            options=options if q else list(TRUE_FALSE_OPTIONS if self.kind == "true_false" else []),
-            answered=[] if silenced else [pid for pid in {*self.answers, *self.first_wrong} if pid in player_ids],
-            my_answer=screen(self.answers[viewer][0]) if viewer in self.answers else None,
-            picks=[] if hidden or not revealed else [self._pick_view(p, viewer, screen) for p in self.picks],
-            correct_option=screen(q.answer) if q and revealed and not hidden else None,
+            options=q.options if q else list(TRUE_FALSE_OPTIONS if self.kind == "true_false" else []),
+            answered=[] if silenced else [pid for pid in self.answers if pid in player_ids],
+            my_answer=self.answers[viewer][0] if viewer in self.answers else None,
+            picks=[] if hidden or not revealed else list(self.picks),
+            correct_option=q.answer if q and revealed and not hidden else None,
             fact=q.fact if q and revealed and not hidden else None,
             spared=self.spared and not hidden,
             duelists=list(self.duelists),
@@ -819,8 +737,7 @@ class Survival:
             armed=self.armed.get(viewer) if viewer else None,
             active=[] if hidden else self._visible_uses(viewer, revealed),
             lasting=self._lasting_view(viewer) if viewer and not revealed else [],
-            hidden_options=[screen(i) for i in self.hidden_options.get(viewer, [])] if viewer else [],
-            first_wrong=screen(mine[0]) if mine else None,
+            hidden_options=list(self.hidden_options.get(viewer, [])) if viewer else [],
             peek=peek,
             flashbang=bool(viewer) and asking and self._affects("flashbang", viewer),
             silenced_rounds=silenced,
@@ -830,23 +747,9 @@ class Survival:
             revived=list(self.revived),
             stabs=list(self.stabs),
             hiding=bool(viewer) and asking and self._hiding(viewer),
-            blessing=screen(q.answer) if q and asking and viewer in self.blessing and not self.in_duel() else None,
+            blessing=q.answer if q and asking and viewer in self.blessing and not self.in_duel() else None,
             gifts=self.gifts if revealed and not hidden else [],
         )
-
-    def _underlying_order(self, viewer: str) -> list[int]:
-        decoy = self.decoys.get(viewer)
-        return decoy.order if decoy else list(range(len(self.question.options)))
-
-    def _pick_view(self, pick: SurvivalPick, viewer: str | None, screen: Callable[[int | None], int | None]) -> SurvivalPick:
-        """Escolhas na ordem da tela de quem vê; a falsa em que outro caiu não tem lugar nela."""
-        real = len(self.question.options)
-        own = pick.player_id == viewer
-
-        def place(option: int | None) -> int | None:
-            return None if option is None or (not own and option >= real) else screen(option)
-
-        return pick.model_copy(update={"option": place(pick.option), "first_option": place(pick.first_option)})
 
     def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
         lasting = [

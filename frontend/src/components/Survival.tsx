@@ -5,7 +5,7 @@ import { AVATAR_URLS } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import { POWERUP_INFO, SURVIVAL_HINTS, TRUE_FALSE_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
+import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
 import type { PlayerView, PowerUpUse, SurvivalView, Survivor } from '../types/events'
 import { Confetti, PeekBadge } from './Game'
 import { LeaveButton } from './LeaveButton'
@@ -198,8 +198,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
   const [error, setError] = useState<string | null>(null)
   const me = survival.survivors.find((s) => s.player_id === playerId)
   const answering = duel ? survival.duelists.includes(playerId ?? '') : !!me && me.out_round === null
-  const retry = survival.first_wrong
-  const answered = retry !== null ? choice !== null && choice !== retry : choice !== null
+  const answered = choice !== null
   const canAnswer = open && answering && !answered && !survival.hiding
   const silenced = survival.silenced_rounds > 0
   const myPick = survival.picks.find((p) => p.player_id === playerId)
@@ -241,7 +240,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
   }, [survival.stabs.length])
 
   const pick = async (option: number) => {
-    if (!canAnswer || survival.hidden_options.includes(option) || option === retry) return
+    if (!canAnswer || survival.hidden_options.includes(option)) return
     playSound('select')
     setChoice(option)
     const failure = await onAnswer(option)
@@ -260,7 +259,6 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
     else if (survival.hiding) status = 'Esconderijo: você pula esta pergunta sem perder vida.'
     else if (survival.blessing !== null && !answered) status = <span className="text-yellow-200">Bênção: a certa está brilhando!</span>
     else if (blinded && !answered) status = 'Flashbang! Agora é chutar pela letra.'
-    else if (retry !== null && !answered) status = 'Errou! Segunda chance: tente de novo.'
     else if (answered) status = 'Resposta enviada!'
     else status = silenced ? 'Silêncio… quanto tempo será que falta?' : duel ? 'Errou sozinho, perdeu!' : 'Errar ou não responder tira uma vida.'
   } else if (silenced && survival.phase === 'results') {
@@ -295,7 +293,6 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
     ...survival.picks.filter((p) => p.hidden && p.player_id !== playerId).map((p) => `${cap(name(p.player_id))} ficou escondido.`),
     ...survival.picks.filter((p) => p.stolen_by && p.player_id !== playerId).map((p) => `${cap(name(p.stolen_by))} roubou uma vida de ${name(p.player_id)}!`),
     ...survival.picks.filter((p) => p.shielded && p.player_id !== playerId).map((p) => `O Escudo segurou a vida de ${name(p.player_id)}.`),
-    ...survival.picks.filter((p) => p.decoy).map((p) => `${cap(name(p.player_id))} caiu na Alternativa falsa "${p.decoy}"!`),
     ...survival.gifts.map((g) => `${cap(name(g.player_id))} ${gainLabel(g.gain)}`),
   ]
 
@@ -328,7 +325,6 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
           playerId={playerId}
           concealed={blinded}
           survival
-          lines={choices ? undefined : { second_chance: 'Segunda chance nesta pergunta: errou, tenta de novo.' }}
         />
       )}
       {survival.powers && !revealed && answering && !answered && !silenced && <InstantPowerUps game={survival} playerId={playerId} onUse={onUse} />}
@@ -355,9 +351,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
                   : picksOn(index).length
                     ? 'btn-wrong is-pressed text-white'
                     : 'btn-dark opacity-40'
-                : index === retry
-                  ? 'btn-wrong is-pressed text-white opacity-60'
-                  : choice === index
+                : choice === index
                     ? 'btn-dark is-pressed outline-2 outline-brand'
                     : survival.blessing === index && !blinded
                       ? 'btn-dark outline-2 outline-yellow-300 shadow-[0_0_18px_rgba(253,224,71,0.6)]'
@@ -370,7 +364,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
               <ScratchCard key={index} active={scratched && !hidden} className="flex">
                 <button
                   onClick={() => void pick(index)}
-                  disabled={!canAnswer || hidden || index === retry}
+                  disabled={!canAnswer || hidden}
                   className={`btn-3d relative flex w-full items-center rounded-2xl ${
                     choices ? 'btn-sm min-h-14 gap-2 px-3 py-2 text-left text-base leading-tight font-semibold' : 'min-h-24 justify-center px-3 font-display text-2xl tracking-wide'
                   } ${state}`}
@@ -411,7 +405,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
           players={room.players}
           playerId={playerId}
           targetIds={survival.survivors.filter((s) => s.out_round === null).map((s) => s.player_id)}
-          hints={choices ? SURVIVAL_HINTS : TRUE_FALSE_HINTS}
+          hints={SURVIVAL_HINTS}
           lockedNote="No X1 não tem habilidade."
           emptyNote={me?.out_round !== null ? 'Fantasma: a cada 3 perguntas chega uma sabotagem para jogar nos vivos.' : undefined}
           onArm={onArm}

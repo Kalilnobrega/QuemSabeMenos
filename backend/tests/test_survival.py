@@ -241,7 +241,7 @@ def test_powers_deal_one_power_without_the_true_false_spoilers():
     game = Survival.create("true_false", [f"p{i}" for i in range(30)], statements(), set(), random.Random(1), 0, powers=True)
     dealt = {kinds[0] for kinds in game.held.values()}
     assert len(game.held["p0"]) == 1
-    assert not dealt & {"fifty_fifty", "decoy"}
+    assert not dealt & {"fifty_fifty", "extra_time", "second_chance", "decoy"}
 
 
 def test_shield_holds_a_life_once():
@@ -283,7 +283,7 @@ def test_three_right_in_a_row_gives_a_power():
     game = powers_game()
     for _ in range(3):
         to_results(game, right=["p0", "p1", "p2"])
-    assert len(game.held["p0"]) == 1
+    assert len(game.held["p0"]) + len(game.mythics.get("p0", [])) == 1  # às vezes vem a Adaga
     assert any(g.player_id == "p0" and g.gain.reason == "streak" for g in game.gifts)
 
 
@@ -323,25 +323,6 @@ def test_no_powers_once_the_duel_starts():
         game.arm("p0", "shield", None)
 
 
-def test_decoy_adds_options_only_for_the_target_and_shields_the_thrower():
-    game = powers_game()
-    to_results(game, right=["p0", "p1", "p2", "p3"])
-    game.held["p0"] = ["decoy"]
-    game.arm("p0", "decoy", "p1")
-    game.advance(0)
-    view = game.view(0, "p1", [c.id for c in game.contenders])
-    assert len(view.options) == 6
-    assert len(game.view(0, "p2", [c.id for c in game.contenders]).options) == 4
-    fake = next(i for i, text in enumerate(view.options) if text not in game.question.options)
-    game.advance(0)  # libera as respostas
-    game.answer("p1", fake, 0)
-    for pid in ("p0", "p2", "p3"):
-        game.answer(pid, game.question.answer, 0)
-    game.advance(0)
-    assert next(p for p in game.picks if p.player_id == "p1").decoy
-    assert game.lasting["p0"]["shield"] == 1
-
-
 def test_silenced_player_does_not_see_lives_or_the_reveal():
     game = powers_game()
     to_results(game, right=["p0", "p1", "p2", "p3"])
@@ -355,18 +336,6 @@ def test_silenced_player_does_not_see_lives_or_the_reveal():
         game.held["p1"] = ["shield"]
         game.arm("p1", "shield", None)
 
-
-def test_second_chance_lasts_one_question_in_true_false_and_two_in_choices():
-    for kind, rounds in (("true_false", 1), ("choices", 2)):
-        game = powers_game(kind=kind)
-        to_results(game, right=["p0", "p1", "p2", "p3"])
-        game.held["p0"] = ["second_chance"]
-        game.arm("p0", "second_chance", None)
-        game.advance(0)
-        assert game.lasting["p0"]["second_chance"] == rounds
-
-
-# --- poderes só do Último de pé -------------------------------------------
 
 def test_medkit_heals_a_life_up_to_the_max():
     game = powers_game()

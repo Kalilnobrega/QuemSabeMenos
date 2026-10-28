@@ -325,8 +325,6 @@ class SurvivalPick(BaseModel):
     correct: bool
     elapsed_ms: int | None
     lost_life: bool
-    first_option: int | None = None  # Segunda chance: a primeira escolha, errada
-    decoy: str | None = None  # Alternativa falsa em que caiu
     shielded: bool = False  # o Escudo segurou a vida
     stolen_by: str | None = None  # Roubo de vida: quem ficou com a vida perdida
     hidden: bool = False  # Esconderijo: pulou a pergunta
@@ -400,7 +398,6 @@ class SurvivalView(BaseModel):
     active: list[PowerUpUse]
     lasting: list[LastingPowerUp]
     hidden_options: list[int]
-    first_wrong: int | None
     peek: list[int] | None
     flashbang: bool
     silenced_rounds: int
