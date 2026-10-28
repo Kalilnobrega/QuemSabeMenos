@@ -43,6 +43,7 @@ from app.game import (
 from app.powerups import MAX_HELD
 from app.hot_potato import HotPotato, HotPotatoError
 from app.survival import Survival, SurvivalError
+from app.teams import TeamMatch, TeamMatchError
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
@@ -107,6 +108,7 @@ class Room:
     game: Game | None = None
     survival: Survival | None = None  # o modo Último de pé, no lugar de `game`
     hot_potato: HotPotato | None = None  # o modo Batata quente, no lugar de `game`
+    team_match: TeamMatch | None = None  # o modo Times, no lugar de `game`
     # Perguntas já sorteadas nesta sala, para "jogar de novo" trazer perguntas novas.
     used_questions: set[str] = field(default_factory=set)
 
@@ -159,9 +161,10 @@ class Room:
                 theme_options=self.theme_options,
             ),
             players=[self._player_view(p, viewer) for p in self.players],
-            game=self.game.view(now, viewer, self.players) if self.game else None,
+            game=self.game.view(now, viewer) if self.game else None,
             survival=self.survival.view(now, viewer, [p.id for p in self.players]) if self.survival else None,
             hot_potato=self.hot_potato.view(now, [p.id for p in self.players], viewer) if self.hot_potato else None,
+            team_match=self.team_match.view(now, viewer) if self.team_match else None,
         )
 
 
@@ -363,7 +366,7 @@ class RoomManager:
             raise RoomError("A partida já começou.")
         if len(room.players) < MIN_PLAYERS:
             raise RoomError(f"Precisa de pelo menos {MIN_PLAYERS} jogadores.")
-        teams = self._deal_teams(room) if room.mode == "teams" else {}
+        assignment = self._deal_teams(room) if room.mode == "teams" else {}
         for player in room.players:
             player.score = STARTING_IQ
             player.answer_ms = 0
@@ -372,6 +375,14 @@ class RoomManager:
         statements = [s for s in self.statements if s.theme in room.themes]
         bank = [q for q in self.bank if q.theme in room.themes]
         room.status = "playing"
+        if room.mode == "teams":
+            questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
+            room.used_questions |= {q.id for q in questions}
+            room.team_match = TeamMatch.create(
+                assignment, questions, room.answer_seconds, now, point_scale=point_scale(room.rounds),
+                speed_grace_seconds=room.speed_grace_seconds, rng=self.rng,
+            )
+            return room
         if room.mode == "hot_potato":
             room.hot_potato = HotPotato.create(
                 [p.id for p in room.players], bank, room.used_questions, self.rng, now,
@@ -393,12 +404,11 @@ class RoomManager:
             point_scale=point_scale(room.rounds),
             speed_grace_seconds=room.speed_grace_seconds,
             rng=self.rng,
-            powers=room.mode == "powers" or (room.mode == "teams" and room.survival_powers),
+            powers=room.mode == "powers",
             powerup_max=room.powerup_max,
             bank=bank,
             used=room.used_questions,
             statements=statements,
-            teams=teams,
         )
         if room.game.powers:
             room.game.deal_powerups([p.id for p in room.players])
@@ -407,6 +417,9 @@ class RoomManager:
 
     def answer(self, sid: str, option: int, now: float) -> Room:
         found = self.session(sid)
+        if found and found[0].team_match:
+            room, player = found
+            return self._on_teams(room, lambda m: m.vote(player.id, option, now, room.connected_ids()))
         if found and found[0].hot_potato:
             room, player = found
             try:
@@ -435,6 +448,9 @@ class RoomManager:
 
     def bet(self, sid: str, amount: int, now: float) -> Room:
         found = self.session(sid)
+        if found and found[0].team_match:
+            room, player = found
+            return self._on_teams(room, lambda m: m.place_bet(player.id, amount, now))
         if not found or not found[0].game:
             raise RoomError("Não tem partida rolando.")
         room, player = found
@@ -448,6 +464,8 @@ class RoomManager:
         self, sid: str, kind: PowerUp, target: str | None, legendary: bool = False, theme: str | None = None
     ) -> Room:
         room, player = self._playing(sid)
+        if room.team_match:
+            raise RoomError("Os Times jogam sem habilidades.")
         if room.hot_potato:
             raise RoomError("Na Batata quente as habilidades valem na hora.")
         if room.survival:
@@ -475,6 +493,8 @@ class RoomManager:
 
     def use_powerup(self, sid: str, kind: PowerUp, now: float | None = None) -> Room:
         room, player = self._playing(sid)
+        if room.team_match:
+            raise RoomError("Os Times jogam sem habilidades.")
         if room.hot_potato:
             try:
                 room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now)
@@ -489,9 +509,17 @@ class RoomManager:
             raise RoomError(str(e)) from e
         return room
 
+    def choose_representative(self, sid: str, choice: str) -> Room:
+        room, player = self._playing(sid)
+        if not room.team_match:
+            raise RoomError("Não tem partida de times rolando.")
+        return self._on_teams(room, lambda m: m.choose(player.id, choice))
+
     def ready(self, sid: str) -> Room:
         """Pular a revelação: acaba antes quando todos os conectados tocam."""
         room, player = self._playing(sid)
+        if room.team_match:
+            return self._on_teams(room, lambda m: m.mark_ready(player.id))
         if room.hot_potato:
             raise RoomError("Não tem revelação para pular.")
         if room.survival:
@@ -504,9 +532,16 @@ class RoomManager:
 
     def _playing(self, sid: str) -> tuple[Room, Player]:
         found = self.session(sid)
-        if not found or not (found[0].game or found[0].survival or found[0].hot_potato):
+        if not found or not (found[0].game or found[0].survival or found[0].hot_potato or found[0].team_match):
             raise RoomError("Não tem partida rolando.")
         return found
+
+    def _on_teams(self, room: Room, action) -> Room:
+        try:
+            action(room.team_match)
+        except TeamMatchError as e:
+            raise RoomError(str(e)) from e
+        return room
 
     def _on_survival(self, room: Room, action) -> Room:
         try:
@@ -517,12 +552,13 @@ class RoomManager:
 
     def play_again(self, sid: str) -> Room:
         room = self._host_room(sid, "recomeçar")
-        current = room.game or room.survival or room.hot_potato
+        current = room.game or room.survival or room.hot_potato or room.team_match
         if not current or current.phase != "finished":
             raise RoomError("A partida ainda não terminou.")
         room.game = None
         room.survival = None
         room.hot_potato = None
+        room.team_match = None
         room.status = "lobby"
         for player in room.players:
             player.score = STARTING_IQ
@@ -551,6 +587,8 @@ class RoomManager:
             room.survival.drop(player.id)
         if room.hot_potato:
             room.hot_potato.drop(player.id, time.monotonic())
+        if room.team_match:
+            room.team_match.drop(player.id)
         if not room.players:
             del self.rooms[room.code]
             return None

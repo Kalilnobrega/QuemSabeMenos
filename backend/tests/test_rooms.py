@@ -264,16 +264,16 @@ def test_teams_need_two_players_each_and_random_teams_are_even(manager):
         manager.start("sid-0")
     manager.update_settings("sid-0", team_count=2)
     manager.start("sid-0")
-    sizes = sorted(list(room.game.teams.values()).count(t) for t in (0, 1))
-    assert sizes == [2, 3] and not room.game.powers
-    assert len(room.view().game.teams) == 2
+    sizes = sorted(len(t.members) for t in room.team_match.teams)
+    assert sizes == [2, 3] and room.game is None
+    assert len(room.view().team_match.teams) == 2
 
 
 def test_host_builds_the_teams(manager):
     room, _ = manager.create("sid-0", profile("P0"))
     for i in range(1, 4):
         manager.join(f"sid-{i}", room.code, profile(f"P{i}"))
-    manager.update_settings("sid-0", mode="teams", team_pick="host", survival_powers=True)
+    manager.update_settings("sid-0", mode="teams", team_pick="host")
     ids = [p.id for p in room.players]
     assert sorted(room.view().settings.teams.values()) == [0, 0, 1, 1]  # quem chega vai para o menor
     for pid in ids:
@@ -285,4 +285,4 @@ def test_host_builds_the_teams(manager):
     manager.set_team("sid-0", ids[2], 1)
     manager.set_team("sid-0", ids[3], 1)
     manager.start("sid-0")
-    assert room.game.teams == {ids[0]: 0, ids[1]: 0, ids[2]: 1, ids[3]: 1} and room.game.powers
+    assert [t.members for t in room.team_match.teams] == [[ids[0], ids[1]], [ids[2], ids[3]]]

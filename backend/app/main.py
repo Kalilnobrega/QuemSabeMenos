@@ -21,6 +21,7 @@ from app.events import (
     RejoinRoomRequest,
     ArmPowerUpRequest,
     SetTeamRequest,
+    ChooseRepresentativeRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     SubmitDuelBetRequest,
@@ -93,6 +94,10 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 
 
 def check_round_done(room: Room) -> None:
+    if room.team_match:
+        if room.team_match.can_advance(room.connected_ids()) and (event := round_done.get(room.code)):
+            event.set()
+        return
     if room.hot_potato:
         # Cada resposta muda a fase na hora: acorda o laço para mandar o estado e o prazo novo.
         if event := round_done.get(room.code):
@@ -267,6 +272,31 @@ async def run_survival(room: Room) -> None:
             del round_done[room.code]
 
 
+async def run_team_match(room: Room) -> None:
+    """Conduz os Times: cada fase dura o seu tempo, e acaba antes quando todo mundo já fez a sua parte."""
+    match = room.team_match
+    done = round_done[room.code] = asyncio.Event()
+
+    def alive() -> bool:
+        return rooms.rooms.get(room.code) is room and room.team_match is match
+
+    try:
+        while alive():
+            done.clear()
+            await broadcast(room)
+            if match.phase == "finished":
+                return
+            if not match.can_advance(room.connected_ids()):
+                with suppress(TimeoutError):
+                    await asyncio.wait_for(done.wait(), max(0.0, match.deadline() - time.monotonic()))
+            if not alive():
+                return
+            match.advance(time.monotonic(), room.connected_ids())
+    finally:
+        if round_done.get(room.code) is done:
+            del round_done[room.code]
+
+
 async def run_hot_potato(room: Room) -> None:
     """Conduz a Batata quente: espera o prazo da fase (no asking, o pavio) ou uma resposta."""
     potato = room.hot_potato
@@ -388,12 +418,26 @@ async def set_team(sid: str, data: dict) -> dict:
 
 
 @sio.event
+async def choose_representative(sid: str, data: dict) -> dict:
+    try:
+        request = ChooseRepresentativeRequest.model_validate(data)
+        room = rooms.choose_representative(sid, request.choice)
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    check_round_done(room)
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
 async def start_game(sid: str) -> dict:
     try:
         room = rooms.start(sid)
     except RoomError as e:
         return error(str(e))
-    runner = run_hot_potato if room.hot_potato else run_survival if room.survival else run_game
+    runner = run_team_match if room.team_match else run_hot_potato if room.hot_potato else run_survival if room.survival else run_game
     sio.start_background_task(runner, room)
     return OkAck().model_dump()
 

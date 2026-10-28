@@ -9,7 +9,7 @@ import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from 
 const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
   powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
-  teams: { name: 'Times', hint: 'Em grupo: vale a média do QI do time.' },
+  teams: { name: 'Times', hint: 'O time vota junto e tem um QI só.' },
   last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
   hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
 }
@@ -82,7 +82,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
           { label: 'Times', value: String(room.settings.team_count) },
           { label: 'Montagem', value: room.settings.team_pick === 'host' ? 'Anfitrião' : 'Sorteio' },
           { label: 'Perguntas', value: String(room.settings.rounds) },
-          { label: 'Poderes', value: room.settings.survival_powers ? `até ${room.settings.powerup_max}` : 'Não' },
+          { label: 'Resposta', value: `${room.settings.answer_seconds}s` },
           { label: 'Temas', value: themesLabel },
         ]
       : room.settings.mode === 'hot_potato'
@@ -328,15 +328,13 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </>
         )}
 
-        {(settings.mode === 'last_standing' || settings.mode === 'hot_potato' || settings.mode === 'teams') && (
+        {(settings.mode === 'last_standing' || settings.mode === 'hot_potato') && (
           <OptionRow
             title="Poderes"
             hint={
               settings.mode === 'hot_potato'
                 ? 'Ajudas para quem está com a batata, sabotagens para quem assiste'
-                : settings.mode === 'teams'
-                  ? 'Os do clássico com poderes; ataques só no time adversário'
-                  : 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador'
+                : 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador'
             }
             options={[0, 1]}
             value={settings.survival_powers ? 1 : 0}
@@ -345,7 +343,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           />
         )}
 
-        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato' || settings.mode === 'teams') && settings.survival_powers)) && (
+        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato') && settings.survival_powers)) && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantas habilidades cada um pode guardar ao mesmo tempo"

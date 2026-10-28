@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Game } from './components/Game'
 import { HotPotato } from './components/HotPotato'
+import { Teams } from './components/Teams'
 import { Lobby } from './components/Lobby'
 import { Survival } from './components/Survival'
 import { Logo } from './components/Logo'
@@ -48,7 +49,7 @@ function setUrl(path: string) {
 }
 
 export default function App() {
-  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings, setTeam } = useRoom()
+  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings, setTeam, chooseRepresentative } = useRoom()
   const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
 
@@ -63,7 +64,11 @@ export default function App() {
   }
 
   let content
-  if (snapshot && room?.hot_potato) {
+  if (snapshot && room?.team_match) {
+    content = (
+      <Teams snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onChoose={chooseRepresentative} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
+    )
+  } else if (snapshot && room?.hot_potato) {
     content = <HotPotato snapshot={snapshot} playerId={playerId} onAnswer={answer} onUse={usePowerUp} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.survival) {
     content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />

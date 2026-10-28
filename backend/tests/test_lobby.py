@@ -404,7 +404,13 @@ async def test_hot_potato_with_powers_uses_them_on_the_spot(connect, monkeypatch
     assert hp(state)["holder"] != first
 
 
-async def test_teams_by_the_host_play_with_a_team_scoreboard(connect):
+async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatch):
+    from app import teams
+
+    monkeypatch.setattr(teams, "START_SECONDS", 0.05)
+    monkeypatch.setattr(teams, "reading_seconds", lambda text: 0.05)
+    monkeypatch.setattr(teams, "results_seconds", lambda fact: 0.05)
+    monkeypatch.setattr(teams, "LEVEL_SECONDS", 0.05)
     clients = [await connect() for _ in range(4)]
     created = await clients[0].call("create_room", {"nickname": "Ana", "avatar": "gato"})
     code = created["room"]["code"]
@@ -416,8 +422,23 @@ async def test_teams_by_the_host_play_with_a_team_scoreboard(connect):
     assert not (await clients[1].call("set_team", {"player_id": ids[0], "team": 1}))["ok"]
     for pid, team in zip(ids, (0, 1, 0, 1)):
         assert (await host.call("set_team", {"player_id": pid, "team": team}))["ok"]
-    state = await host.wait_for(lambda s: s["settings"]["teams"].get(ids[3]) == 1)
-    assert state["settings"]["teams"] == dict(zip(ids, (0, 1, 0, 1)))
     assert (await host.call("start_game"))["ok"]
-    state = await host.wait_for(lambda s: s["game"] is not None)
-    assert [t["members"] for t in state["game"]["teams"]] == [[ids[0], ids[2]], [ids[1], ids[3]]]
+    match = main.rooms.rooms[code].team_match
+    by_id = dict(zip(ids, clients))
+
+    def tm(state: dict) -> dict:
+        return state["team_match"] or {}
+
+    state = await host.wait_for(lambda s: tm(s).get("phase") == "answering")
+    assert [t["members"] for t in tm(state)["teams"]] == [[ids[0], ids[2]], [ids[1], ids[3]]]
+    answer = match.question.answer
+    assert (await by_id[ids[2]].call("submit_answer", {"option": answer}))["ok"]
+    # O colega vê o voto na hora; o outro time só vê que alguém votou.
+    state = await host.wait_for(lambda s: tm(s)["teams"][0]["votes"])
+    assert tm(state)["teams"][0]["votes"] == [{"player_id": ids[2], "option": answer}]
+    rival = await clients[1].wait_for(lambda s: tm(s)["teams"][0]["voted"])
+    assert tm(rival)["teams"][0]["votes"] == []
+    for pid in (ids[0], ids[1], ids[3]):
+        assert (await by_id[pid].call("submit_answer", {"option": answer}))["ok"]
+    state = await host.wait_for(lambda s: tm(s).get("phase") == "results")
+    assert all(t["correct"] and t["captain_delta"] == 3 for t in tm(state)["teams"])

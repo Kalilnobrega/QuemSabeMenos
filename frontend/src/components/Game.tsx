@@ -4,7 +4,6 @@ import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
 import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
-import { TEAMS, teamName } from '../lib/teams'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import type { Snapshot } from '../lib/useRoom'
 import type { Bonus, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
@@ -110,7 +109,7 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
     return <DuelScreen key={`${game.duel.challenger}-${game.duel.rival}`} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onDuelBet={onDuelBet} />
   }
   if (game.phase === 'starting') {
-    return <GameStart snapshot={snapshot} playerId={playerId} />
+    return <GameStart snapshot={snapshot} />
   }
   if (game.phase === 'level') {
     return <LevelIntro game={game} />
@@ -122,11 +121,7 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
     return <Betting snapshot={snapshot} playerId={playerId} onBet={onBet} />
   }
   if (game.phase === 'finished') {
-    return snapshot.room.game!.teams.length ? (
-      <TeamPodium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
-    ) : (
-      <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
-    )
+    return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
   }
   // key: cada rodada começa com a escolha local zerada.
   return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
@@ -417,7 +412,7 @@ function LevelIntro({ game }: { game: GameView }) {
 }
 
 /** Contagem antes da 1ª pergunta: "Prepare-se!", a escalação dos jogadores e uma dica. */
-function GameStart({ snapshot, playerId }: { snapshot: Snapshot; playerId: string | null }) {
+function GameStart({ snapshot }: { snapshot: Snapshot }) {
   const { room, receivedAt } = snapshot
   const game = room.game!
   const now = useNow(true)
@@ -428,7 +423,6 @@ function GameStart({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
     ['slam', 520], // a batida cai aos 0,15 s do som, quando o título encosta na tela
   ])
   useCountdownSounds(count)
-  const myTeam = game.teams.find((t) => t.members.includes(playerId ?? ''))
 
   return (
     <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
@@ -445,17 +439,6 @@ function GameStart({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
           </li>
         ))}
       </ul>
-      {myTeam && (
-        <div className={`intro-step flex flex-col items-center gap-1.5 rounded-xl px-4 py-2 ${TEAMS[myTeam.id].bg}`} style={{ animationDelay: '1s' }}>
-          <span className={`font-display text-xl tracking-wide ${TEAMS[myTeam.id].text}`}>Você está no {teamName(myTeam.id)}</span>
-          <span className="flex gap-1.5">
-            {myTeam.members.map((id) => {
-              const player = room.players.find((p) => p.id === id)
-              return player ? <img key={id} src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-9" /> : null
-            })}
-          </span>
-        </div>
-      )}
       {game.starting_powerup && (
         <p
           className={`intro-step flex items-center gap-2 rounded-xl px-4 py-2 font-semibold ${POWERUP_INFO[game.starting_powerup].tone}`}
@@ -1060,25 +1043,14 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   )
   for (const revival of game.revivals) deltas[revival.player_id] = (deltas[revival.player_id] ?? 0) + revival.after - revival.before
   const bets = game.results.filter((r) => r.bet)
-  // O bônus de time vira uma linha por time, não uma por jogador.
-  const highlights = game.results.flatMap((r) => r.bonuses.filter((b) => !b.kind.startsWith('team')).map((bonus) => ({ result: r, bonus })))
-  const teamBonuses = game.teams.filter((t) => t.round_bonus)
+  const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
   const powerupLines = powerupEvents(room, game, playerId)
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
-  const bonusSounds: Record<Bonus['kind'], SoundId> = {
-    streak: 'streakFire',
-    wrong_streak: 'streakIce',
-    perfect_easy: 'perfectEasy',
-    investment: 'investment',
-    team_right: 'perfectEasy',
-    team_wrong: 'streakIce',
-  }
+  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy', investment: 'investment' }
   const kinds = [...new Set(highlights.map((h) => h.bonus.kind))]
-  const teamKinds = [...new Set(teamBonuses.map((t): Bonus['kind'] => (t.round_bonus > 0 ? 'team_right' : 'team_wrong')))]
   useSoundsOnMount([
     ...kinds.map((kind): [SoundId, number] => [bonusSounds[kind], 400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120]),
-    ...teamKinds.map((kind, i): [SoundId, number] => [bonusSounds[kind], 300 + i * 150]),
     ...(mine?.shielded ? [['shield', 250] as [SoundId, number]] : []),
   ])
   useEffect(() => {
@@ -1110,34 +1082,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   return (
     <div className="flex flex-col gap-3">
       {headline}
-      <PowerUpBar
-        powers={room.settings.mode === 'powers' || (room.settings.mode === 'teams' && room.settings.survival_powers)}
-        game={game}
-        players={room.players}
-        playerId={playerId}
-        targetIds={rivalIds(game, playerId)}
-        onArm={onArm}
-        onSkip={onSkip}
-      />
-      {teamBonuses.length > 0 && (
-        <ul className="flex flex-col gap-1.5" aria-label="Bônus de time">
-          {teamBonuses.map((team, index) => (
-            <li
-              key={team.id}
-              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${BONUS_STYLE[team.round_bonus > 0 ? 'team_right' : 'team_wrong']} ${
-                team.members.includes(playerId ?? '') ? 'ring-1 ring-brand/60' : ''
-              }`}
-              style={{ animationDelay: `${0.3 + index * 0.12}s` }}
-            >
-              <TeamDot team={team.id} />
-              <span className="min-w-0 flex-1 truncate">
-                {teamName(team.id)}: {team.round_bonus > 0 ? 'todo mundo acertou!' : 'todo mundo errou!'}
-              </span>
-              <span className="font-display text-lg">{formatDelta(team.round_bonus)} cada</span>
-            </li>
-          ))}
-        </ul>
-      )}
+      <PowerUpBar powers={room.settings.mode === 'powers'} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
       {powerupLines.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Habilidades">
           {powerupLines.map(({ key, kind, player, text, delta, me, legendary, mythic }, index) => (
@@ -1209,11 +1154,9 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
           <p className="mt-1 leading-relaxed">{game.fact}</p>
         </div>
       )}
-      {game.teams.length > 0 && <TeamBoard teams={game.teams} players={room.players} playerId={playerId} deltas={deltas} />}
       <Ranking
         players={room.players}
         playerId={playerId}
-        teams={game.teams}
         deltas={deltas}
         picks={Object.fromEntries(game.results.map((r) => [r.player_id, r]))}
       />
@@ -1321,14 +1264,10 @@ const BONUS_STYLE: Record<Bonus['kind'], string> = {
   streak: 'bg-orange-500/15 text-orange-200',
   wrong_streak: 'bg-sky-400/10 text-sky-200',
   investment: 'bg-green-500/15 text-green-200',
-  team_right: 'bg-emerald-500/15 text-emerald-200',
-  team_wrong: 'bg-red-500/15 text-red-200',
 }
 
 function bonusLabel(bonus: Bonus) {
   if (bonus.kind === 'perfect_easy') return 'gabaritou as fáceis!'
-  if (bonus.kind === 'team_right') return 'o time todo acertou!'
-  if (bonus.kind === 'team_wrong') return 'o time todo errou!'
   if (bonus.kind === 'investment') return bonus.count === 5 ? 'Investimento completo!' : `Investimento, ${bonus.count}º acerto!`
   const again = bonus.repeat ? ' de novo' : ''
   if (bonus.kind === 'streak') return `${bonus.count} acertos seguidos${again}!`
@@ -1426,11 +1365,9 @@ interface RankingProps {
   playerId: string | null
   deltas?: Record<string, number>
   picks?: Record<string, RoundResult>
-  teams?: GameView['teams']
 }
 
-function Ranking({ players, playerId, deltas, picks, teams }: RankingProps) {
-  const teamOf = (id: string) => teams?.find((t) => t.members.includes(id))?.id
+function Ranking({ players, playerId, deltas, picks }: RankingProps) {
   const sorted = [...players].sort(byRanking)
   const listRef = useRef<HTMLOListElement>(null)
 
@@ -1471,7 +1408,6 @@ function Ranking({ players, playerId, deltas, picks, teams }: RankingProps) {
         >
           <span className="w-5 text-center font-display text-lg text-steel">{index + 1}</span>
           <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
-          {teamOf(player.id) !== undefined && <TeamDot team={teamOf(player.id)!} />}
           <span className="min-w-0 truncate font-semibold">{player.nickname}</span>
           {picks?.[player.id] && <PickBadge result={picks[player.id]} />}
           <span className="flex-1" />
@@ -1490,136 +1426,6 @@ function Ranking({ players, playerId, deltas, picks, teams }: RankingProps) {
         </li>
       ))}
     </ol>
-  )
-}
-
-/** Times: quem pode levar ataque (os do outro time); sem times, todos os outros. */
-function rivalIds(game: GameView, playerId: string | null) {
-  const mine = game.teams.find((t) => t.members.includes(playerId ?? ''))
-  return mine ? game.teams.filter((t) => t.id !== mine.id).flatMap((t) => t.members) : undefined
-}
-
-function TeamDot({ team }: { team: number }) {
-  return <span className="size-3 shrink-0 rounded-full" style={{ background: TEAMS[team].color }} title={teamName(team)} aria-label={teamName(team)} />
-}
-
-function teamsByScore(teams: GameView['teams']) {
-  return [...teams].sort((a, b) => b.score - a.score || a.id - b.id)
-}
-
-/** Placar dos times: a média do QI de cada um, com o quanto mudou nesta rodada. */
-function TeamBoard({ teams, players, playerId, deltas }: { teams: GameView['teams']; players: PlayerView[]; playerId: string | null; deltas?: Record<string, number> }) {
-  const before = (team: GameView['teams'][number]) => {
-    const members = players.filter((p) => team.members.includes(p.id))
-    return members.length ? Math.round(members.reduce((sum, p) => sum + p.score - (deltas?.[p.id] ?? 0), 0) / members.length) : 0
-  }
-  return (
-    <ol className="flex flex-col gap-1.5" aria-label="Placar dos times">
-      {teamsByScore(teams).map((team, index) => (
-        <li
-          key={team.id}
-          className={`flex items-center gap-3 rounded-xl px-3 py-2 ${TEAMS[team.id].bg} ${team.members.includes(playerId ?? '') ? `ring-1 ${TEAMS[team.id].ring}` : ''}`}
-        >
-          <span className="w-5 text-center font-display text-lg text-steel">{index + 1}</span>
-          <span className={`font-display text-xl tracking-wide ${TEAMS[team.id].text}`}>{teamName(team.id)}</span>
-          <span className="flex -space-x-2">
-            {team.members.map((id) => {
-              const player = players.find((p) => p.id === id)
-              return player ? <img key={id} src={AVATAR_URLS[player.avatar]} alt="" className="size-6" /> : null
-            })}
-          </span>
-          <span className="flex-1" />
-          <span className="text-right font-display text-xl tracking-wide text-brand">
-            {deltas ? <CountUp from={before(team)} to={team.score} format={formatScore} delay={700} /> : formatScore(team.score)}
-          </span>
-        </li>
-      ))}
-    </ol>
-  )
-}
-
-/** Fim de jogo nos Times: o time campeão e, de cada time, o craque e quem sabe menos. */
-function TeamPodium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
-  const [notice, setNotice] = useState<string | null>(null)
-  const game = room.game!
-  const ranked = teamsByScore(game.teams)
-  const champion = ranked[0]
-  const tie = ranked.length > 1 && ranked[1].score === champion.score
-  const isHost = room.host_id === playerId
-  const won = champion.members.includes(playerId ?? '')
-  useSoundsOnMount([
-    ['podiumWinner', 300],
-    ['podiumLoser', 3200],
-  ])
-  const members = (team: GameView['teams'][number]) => room.players.filter((p) => team.members.includes(p.id)).sort(byRanking)
-
-  return (
-    <section className="flex w-full flex-col gap-6">
-      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
-      <div className={`podium-card relative flex flex-col items-center gap-2 rounded-2xl p-4 text-center ${TEAMS[champion.id].bg}`}>
-        <Confetti />
-        <img src={coroa} alt="" className="icon-bounce size-12" />
-        <span className={`font-display text-3xl tracking-wide ${TEAMS[champion.id].text}`}>
-          {tie ? 'Empate no topo!' : `${teamName(champion.id)} venceu!`}
-        </span>
-        <span className="flex gap-1.5">
-          {members(champion).map((p) => (
-            <img key={p.id} src={AVATAR_URLS[p.avatar]} alt={p.nickname} title={p.nickname} className="size-12" />
-          ))}
-        </span>
-        <span className="font-display text-2xl text-brand">{formatScore(champion.score)} QI de média</span>
-        {won && !tie && <span className="font-hand text-lg font-medium">Você está no time campeão!</span>}
-      </div>
-
-      <ol className="flex flex-col gap-3">
-        {ranked.map((team, index) => {
-          const list = members(team)
-          const best = list[0]
-          const worst = list.length > 1 ? list[list.length - 1] : null
-          return (
-            <li key={team.id} className={`flex flex-col gap-2 rounded-xl p-3 ${TEAMS[team.id].bg}`}>
-              <span className="flex items-baseline justify-between">
-                <span className={`font-display text-xl tracking-wide ${TEAMS[team.id].text}`}>
-                  {index + 1}º · {teamName(team.id)}
-                </span>
-                <span className="font-display text-xl text-brand">{formatScore(team.score)} QI</span>
-              </span>
-              {best && (
-                <span className="flex items-center gap-2 text-sm">
-                  <img src={coroa} alt="" className="size-5" />
-                  <img src={AVATAR_URLS[best.avatar]} alt="" className="size-7" />
-                  <span className="min-w-0 flex-1 truncate">
-                    <span className="font-semibold">Craque:</span> {best.id === playerId ? 'Você' : best.nickname}
-                  </span>
-                  <span className="font-display text-brand">{formatScore(best.score)}</span>
-                </span>
-              )}
-              {worst && (
-                <span className="flex items-center gap-2 text-sm">
-                  <img src={haha} alt="" className="size-5" />
-                  <img src={AVATAR_URLS[worst.avatar]} alt="" className="size-7" />
-                  <span className="min-w-0 flex-1 truncate">
-                    <span className="font-semibold">Quem sabe menos:</span> {worst.id === playerId ? 'Você' : worst.nickname}
-                  </span>
-                  <span className="font-display text-brand">{formatScore(worst.score)}</span>
-                </span>
-              )}
-            </li>
-          )
-        })}
-      </ol>
-
-      <Ranking players={room.players} playerId={playerId} teams={game.teams} />
-      {notice && <p className="text-center text-steel">{notice}</p>}
-      {isHost ? (
-        <button onClick={async () => setNotice(await onPlayAgain())} className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink">
-          Jogar de novo
-        </button>
-      ) : (
-        <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião decidir se tem revanche…</p>
-      )}
-      <LeaveButton onLeave={onLeave} />
-    </section>
   )
 }
 

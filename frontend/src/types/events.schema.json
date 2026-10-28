@@ -73,9 +73,7 @@
             "perfect_easy",
             "streak",
             "wrong_streak",
-            "investment",
-            "team_right",
-            "team_wrong"
+            "investment"
           ],
           "type": "string"
         },
@@ -96,6 +94,19 @@
         "repeat"
       ],
       "title": "Bonus",
+      "type": "object"
+    },
+    "ChooseRepresentativeRequest": {
+      "description": "Times: em quem do seu time você vota para ir sozinho na aposta ou na final.",
+      "properties": {
+        "choice": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "choice"
+      ],
+      "title": "ChooseRepresentativeRequest",
       "type": "object"
     },
     "CreateRoomRequest": {
@@ -581,12 +592,6 @@
             }
           ]
         },
-        "teams": {
-          "items": {
-            "$ref": "#/$defs/TeamView"
-          },
-          "type": "array"
-        },
         "powerup_max": {
           "type": "integer"
         },
@@ -765,7 +770,6 @@
         "revivals",
         "duels",
         "duel",
-        "teams",
         "powerup_max",
         "starting_powerup",
         "can_arm",
@@ -1831,6 +1835,16 @@
               "type": "null"
             }
           ]
+        },
+        "team_match": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TeamMatchView"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -1843,7 +1857,8 @@
         "players",
         "game",
         "survival",
-        "hot_potato"
+        "hot_potato",
+        "team_match"
       ],
       "title": "RoomState",
       "type": "object"
@@ -2618,7 +2633,202 @@
       "title": "Survivor",
       "type": "object"
     },
-    "TeamView": {
+    "TeamMatchView": {
+      "description": "Times: o time responde junto, por votos, e tem um QI só. Fases: starting → (level) →\nreading → answering → results por pergunta; na aposta e na final, antes vem choosing (o time\nescolhe o representante) e, na aposta, betting. Depois da última: finished.",
+      "properties": {
+        "phase": {
+          "enum": [
+            "starting",
+            "level",
+            "choosing",
+            "betting",
+            "intro",
+            "reading",
+            "answering",
+            "results",
+            "finished"
+          ],
+          "type": "string"
+        },
+        "phase_duration_ms": {
+          "type": "integer"
+        },
+        "phase_ends_in_ms": {
+          "type": "integer"
+        },
+        "round": {
+          "type": "integer"
+        },
+        "total_rounds": {
+          "type": "integer"
+        },
+        "solo": {
+          "type": "boolean"
+        },
+        "bet_round": {
+          "type": "boolean"
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard",
+            "impossible"
+          ],
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "question": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QuestionView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correct_option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bet_percents": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "bet_max_percent": {
+          "type": "integer"
+        },
+        "bet_odds": {
+          "type": "number"
+        },
+        "captain_bonus": {
+          "type": "integer"
+        },
+        "harmony_streak": {
+          "type": "integer"
+        },
+        "harmony_bonus": {
+          "type": "integer"
+        },
+        "teams": {
+          "items": {
+            "$ref": "#/$defs/TeamSide"
+          },
+          "type": "array"
+        },
+        "my_team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stats": {
+          "items": {
+            "$ref": "#/$defs/TeamPlayerStat"
+          },
+          "type": "array"
+        },
+        "ready": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "phase",
+        "phase_duration_ms",
+        "phase_ends_in_ms",
+        "round",
+        "total_rounds",
+        "solo",
+        "bet_round",
+        "difficulty",
+        "theme",
+        "question",
+        "correct_option",
+        "fact",
+        "bet_percents",
+        "bet_max_percent",
+        "bet_odds",
+        "captain_bonus",
+        "harmony_streak",
+        "harmony_bonus",
+        "teams",
+        "my_team",
+        "stats",
+        "ready"
+      ],
+      "title": "TeamMatchView",
+      "type": "object"
+    },
+    "TeamPlayerStat": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "team": {
+          "type": "integer"
+        },
+        "votes": {
+          "type": "integer"
+        },
+        "right": {
+          "type": "integer"
+        },
+        "captain_right": {
+          "type": "integer"
+        },
+        "captain_rounds": {
+          "type": "integer"
+        },
+        "represented": {
+          "type": "integer"
+        },
+        "represented_right": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "team",
+        "votes",
+        "right",
+        "captain_right",
+        "captain_rounds",
+        "represented",
+        "represented_right"
+      ],
+      "title": "TeamPlayerStat",
+      "type": "object"
+    },
+    "TeamSide": {
+      "description": "Um time na partida. Os votos dos outros times só aparecem na revelação; antes, só quem já votou.",
       "properties": {
         "id": {
           "type": "integer"
@@ -2632,7 +2842,90 @@
         "score": {
           "type": "integer"
         },
-        "round_bonus": {
+        "captain": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "representative": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "votes": {
+          "items": {
+            "$ref": "#/$defs/TeamVote"
+          },
+          "type": "array"
+        },
+        "voted": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "locked": {
+          "type": "boolean"
+        },
+        "option": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "choices": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "bet": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "harmony": {
+          "type": "integer"
+        },
+        "correct": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "delta": {
+          "type": "integer"
+        },
+        "captain_delta": {
+          "type": "integer"
+        },
+        "harmony_delta": {
+          "type": "integer"
+        },
+        "bet_delta": {
           "type": "integer"
         }
       },
@@ -2640,9 +2933,38 @@
         "id",
         "members",
         "score",
-        "round_bonus"
+        "captain",
+        "representative",
+        "votes",
+        "voted",
+        "locked",
+        "option",
+        "choices",
+        "bet",
+        "harmony",
+        "correct",
+        "delta",
+        "captain_delta",
+        "harmony_delta",
+        "bet_delta"
       ],
-      "title": "TeamView",
+      "title": "TeamSide",
+      "type": "object"
+    },
+    "TeamVote": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "option": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "option"
+      ],
+      "title": "TeamVote",
       "type": "object"
     },
     "UpdateSettingsRequest": {

@@ -52,10 +52,19 @@ export interface ArmPowerUpRequest {
  * via the `definition` "Bonus".
  */
 export interface Bonus {
-  kind: "perfect_easy" | "streak" | "wrong_streak" | "investment" | "team_right" | "team_wrong";
+  kind: "perfect_easy" | "streak" | "wrong_streak" | "investment";
   count: number;
   delta: number;
   repeat: boolean;
+}
+/**
+ * Times: em quem do seu time você vota para ir sozinho na aposta ou na final.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "ChooseRepresentativeRequest".
+ */
+export interface ChooseRepresentativeRequest {
+  choice: string;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -259,7 +268,6 @@ export interface GameView {
   revivals: Revival[];
   duels: DuelChallenge[];
   duel: DuelView | null;
-  teams: TeamView[];
   powerup_max: number;
   starting_powerup:
     | (
@@ -327,16 +335,6 @@ export interface Revival {
   player_id: string;
   before: number;
   after: number;
-}
-/**
- * This interface was referenced by `Events`'s JSON-Schema
- * via the `definition` "TeamView".
- */
-export interface TeamView {
-  id: number;
-  members: string[];
-  score: number;
-  round_bonus: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -701,6 +699,7 @@ export interface RoomState {
   game: GameView | null;
   survival: SurvivalView | null;
   hot_potato: HotPotatoView | null;
+  team_match: TeamMatchView | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -951,6 +950,87 @@ export interface Survivor {
   correct: number;
   answer_ms: number;
   place: number | null;
+}
+/**
+ * Times: o time responde junto, por votos, e tem um QI só. Fases: starting → (level) →
+ * reading → answering → results por pergunta; na aposta e na final, antes vem choosing (o time
+ * escolhe o representante) e, na aposta, betting. Depois da última: finished.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "TeamMatchView".
+ */
+export interface TeamMatchView {
+  phase: "starting" | "level" | "choosing" | "betting" | "intro" | "reading" | "answering" | "results" | "finished";
+  phase_duration_ms: number;
+  phase_ends_in_ms: number;
+  round: number;
+  total_rounds: number;
+  solo: boolean;
+  bet_round: boolean;
+  difficulty: "easy" | "medium" | "hard" | "impossible";
+  theme: string;
+  question: QuestionView | null;
+  correct_option: number | null;
+  fact: string | null;
+  bet_percents: number[];
+  bet_max_percent: number;
+  bet_odds: number;
+  captain_bonus: number;
+  harmony_streak: number;
+  harmony_bonus: number;
+  teams: TeamSide[];
+  my_team: number | null;
+  stats: TeamPlayerStat[];
+  ready: string[];
+}
+/**
+ * Um time na partida. Os votos dos outros times só aparecem na revelação; antes, só quem já votou.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "TeamSide".
+ */
+export interface TeamSide {
+  id: number;
+  members: string[];
+  score: number;
+  captain: string | null;
+  representative: string | null;
+  votes: TeamVote[];
+  voted: string[];
+  locked: boolean;
+  option: number | null;
+  choices: {
+    [k: string]: string;
+  };
+  bet: number | null;
+  harmony: number;
+  correct: boolean | null;
+  delta: number;
+  captain_delta: number;
+  harmony_delta: number;
+  bet_delta: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "TeamVote".
+ */
+export interface TeamVote {
+  player_id: string;
+  option: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "TeamPlayerStat".
+ */
+export interface TeamPlayerStat {
+  player_id: string;
+  team: number;
+  votes: number;
+  right: number;
+  captain_right: number;
+  captain_rounds: number;
+  represented: number;
+  represented_right: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema

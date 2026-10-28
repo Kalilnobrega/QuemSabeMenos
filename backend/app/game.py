@@ -29,7 +29,6 @@ from app.events import (
     QuestionView,
     Revival,
     RoundResult,
-    TeamView,
 )
 
 QUESTIONS_DIR = Path(__file__).parent / "questions"
@@ -70,10 +69,6 @@ MAX_RESULTS_SECONDS = 15.0
 BET_PERCENTS = (25, 50, 75, 100)
 BET_MAX_PERCENT = 100
 BET_ODDS = 1.5  # apostou 100 e acertou: lucra 50; errou ou não respondeu: perde os 100
-# Times: o time todo acertando dá +5 a cada um; todo mundo errando (ou sem responder) tira 5.
-# Conta quem está conectado; não vale na pergunta final.
-TEAM_RIGHT_BONUS = 5
-TEAM_WRONG_PENALTY = -5
 
 
 Phase = Literal[
@@ -307,8 +302,6 @@ class Game:
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
     ready: set[str] = field(default_factory=set)
-    teams: dict[str, int] = field(default_factory=dict)  # Times: id do jogador -> time; vazio fora dele
-    team_bonus: dict[int, int] = field(default_factory=dict)  # bônus de cada time nesta revelação
 
     def __post_init__(self) -> None:
         self.bet_round = bet_round(self.questions)
@@ -332,10 +325,6 @@ class Game:
             return False
         upcoming = self.round + 1
         return upcoming != self.bet_round and self.questions[upcoming].difficulty != FINAL_DIFFICULTY
-
-    def rivals(self, a: str, b: str) -> bool:
-        """`b` pode levar um ataque de `a`: outro jogador e, nos Times, de outro time."""
-        return a != b and (not self.teams or self.teams.get(a) != self.teams.get(b))
 
     def capacity(self, player_id: str) -> int:
         return self.powerup_max + self.extra_slots.get(player_id, 0)
@@ -380,8 +369,6 @@ class Game:
         if kind in powerups.TARGETED:
             if target is None or target == player_id or target not in player_ids:
                 raise GameError("Escolha em quem usar.")
-            if not self.rivals(player_id, target):
-                raise GameError("Só dá para usar no time adversário.")
         else:
             target = None
         if kind == "investment":
@@ -529,7 +516,7 @@ class Game:
         if kind in powerups.LASTING:
             return self._counts_for_powers() and self.lasting.get(player_id, {}).get(kind, 0) > 0
         return any(
-            self.rivals(use.by, player_id) if use.legendary else (use.target or use.by) == player_id for use in self._uses(kind)
+            use.by != player_id if use.legendary else (use.target or use.by) == player_id for use in self._uses(kind)
         )
 
     def silence_left(self, player_id: str) -> int:
@@ -538,7 +525,7 @@ class Game:
         silenciado recomeça a contagem, não soma."""
         if not self._counts_for_powers():
             return 0
-        hits = (left for use, left in self.silences if (self.rivals(use.by, player_id) if use.legendary else use.target == player_id))
+        hits = (left for use, left in self.silences if (use.by != player_id if use.legendary else use.target == player_id))
         return max(hits, default=0)
 
     def is_silenced(self, player_id: str) -> bool:
@@ -550,7 +537,7 @@ class Game:
             payees = [
                 (use.reflected_by or use.by, powerups.LEGENDARY_DECOY_BONUS if use.legendary else powerups.DECOY_BONUS)
                 for use in self._uses("decoy")
-                if (self.rivals(use.by, player_id) if use.legendary else use.target == player_id)
+                if (use.by != player_id if use.legendary else use.target == player_id)
             ]
             self.decoys[player_id] = self._make_decoy(payees) if payees and self._counts_for_powers() else None
         return self.decoys[player_id]
@@ -584,7 +571,7 @@ class Game:
         if player_id not in self.tolls:
             tolls = []
             for use in self._uses("toll"):
-                if self.rivals(use.by, player_id) if use.legendary else use.target == player_id:
+                if use.by != player_id if use.legendary else use.target == player_id:
                     low, high = powerups.LEGENDARY_TOLL_PRICES if use.legendary else powerups.TOLL_PRICES
                     prices = [self.rng.randint(low, high) for _ in self.question.options]
                     tolls.append((use.reflected_by or use.by, prices))
@@ -717,7 +704,6 @@ class Game:
                 )
             )
         by_id = {r.player_id: r for r in self.results}
-        self._team_bonuses(players, by_id, difficulty)
         if self._counts_for_powers():
             self._pay_investments(by_id)
         real = len(self.question.options)
@@ -740,7 +726,7 @@ class Game:
             if use.kind != "steal" or not thief:
                 continue
             if use.legendary:
-                shares = legendary_steal_shares([r for r in self.results if self.rivals(use.by, r.player_id)], score_before)
+                shares = legendary_steal_shares([r for r in self.results if r is not thief], score_before)
             else:
                 target = by_id.get(use.target)
                 shares = [(target, steal_share(target))] if target else []
@@ -769,35 +755,6 @@ class Game:
             self._powerup_gains(players)
         self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, results_seconds(self.question.fact))
-
-    def _team_bonuses(self, players: list[Scorable], by_id: dict[str, RoundResult], difficulty: Difficulty) -> None:
-        self.team_bonus = {}
-        if not self.teams or difficulty == FINAL_DIFFICULTY:
-            return
-        for team in sorted(set(self.teams.values())):
-            present = [p.id for p in players if self.teams.get(p.id) == team and getattr(p, "connected", True)]
-            results = [by_id[pid] for pid in present if pid in by_id]
-            if len(results) < 2:
-                continue
-            if all(r.correct for r in results):
-                kind, value = "team_right", TEAM_RIGHT_BONUS
-            elif not any(r.correct for r in results):
-                kind, value = "team_wrong", TEAM_WRONG_PENALTY
-            else:
-                continue
-            self.team_bonus[team] = value
-            for r in results:
-                r.bonuses.append(Bonus(kind=kind, count=len(results), delta=value, repeat=False))
-
-    def team_views(self, players: list[Scorable]) -> list[TeamView]:
-        if not self.teams:
-            return []
-        views = []
-        for team in sorted(set(self.teams.values())):
-            members = [p for p in players if self.teams.get(p.id) == team]
-            score = round(sum(p.score for p in members) / len(members)) if members else 0
-            views.append(TeamView(id=team, members=[p.id for p in members], score=score, round_bonus=self.team_bonus.get(team, 0)))
-        return views
 
     def _break_resurrections(self, players: list[Scorable]) -> None:
         """A Ressurreição de quem saiu do último quebra."""
@@ -841,8 +798,6 @@ class Game:
             raise GameError("Você não tem essa habilidade.")
         if rival is None or rival == player_id or rival not in player_ids:
             raise GameError("Escolha quem vai para o X1.")
-        if not self.rivals(player_id, rival):
-            raise GameError("O X1 é contra alguém do time adversário.")
         held.remove("duel")
         self.duel_queue.append((player_id, rival))
 
@@ -1055,7 +1010,7 @@ class Game:
     def finish(self, now: float) -> None:
         self._enter("finished", now, 0)
 
-    def view(self, now: float, viewer: str | None = None, players: list[Scorable] | None = None) -> GameView:
+    def view(self, now: float, viewer: str | None = None) -> GameView:
         """`viewer`: de quem são as habilidades e as alternativas tiradas que aparecem."""
         q = self.question
         show_answer = self.phase in ("results", "finished")
@@ -1094,7 +1049,6 @@ class Game:
             revivals=self.revivals,
             duels=[DuelChallenge(challenger=c, rival=r) for c, r in self.duel_queue],
             duel=self._duel_view(viewer),
-            teams=self.team_views(players or []),
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
             can_arm=self.can_arm and not silence_left,

@@ -83,6 +83,12 @@ class SetTeamRequest(BaseModel):
     team: int
 
 
+class ChooseRepresentativeRequest(BaseModel):
+    """Times: em quem do seu time você vota para ir sozinho na aposta ou na final."""
+
+    choice: str
+
+
 class SubmitAnswerRequest(BaseModel):
     option: int
 
@@ -129,7 +135,7 @@ class RoomSettings(BaseModel):
     mode_options: list[GameMode]
     survival_kind: SurvivalKind
     survival_kind_options: list[SurvivalKind]
-    survival_powers: bool  # Último de pé, Batata quente e Times com poderes
+    survival_powers: bool  # Último de pé e Batata quente com poderes
     team_count: int
     team_count_options: list[int]
     team_pick: TeamPick
@@ -158,7 +164,7 @@ class Bonus(BaseModel):
     """Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
     de erros (negativo). Uma sequência repetida na mesma partida vale a metade."""
 
-    kind: Literal["perfect_easy", "streak", "wrong_streak", "investment", "team_right", "team_wrong"]
+    kind: Literal["perfect_easy", "streak", "wrong_streak", "investment"]
     count: int  # quantas fáceis, o tamanho da sequência ou o acerto do Investimento
     delta: int
     repeat: bool
@@ -257,13 +263,6 @@ class DuelChallenge(BaseModel):
     rival: str
 
 
-class TeamView(BaseModel):
-    id: int  # 0 a 3: a cor do time
-    members: list[str]
-    score: int  # a média do QI de quem está no time
-    round_bonus: int  # nesta revelação: + quando o time todo acertou, − quando todo mundo errou
-
-
 class GameView(BaseModel):
     """Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
     answering → results. Telas de preparação, em que a pergunta não é enviada: starting
@@ -294,7 +293,6 @@ class GameView(BaseModel):
     revivals: list[Revival]
     duels: list[DuelChallenge]  # X1 chamados nesta revelação, na ordem em que vão acontecer
     duel: DuelView | None
-    teams: list[TeamView]  # vazio fora do modo Times
     powerup_max: int
     starting_powerup: PowerUp | None
     can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)
@@ -459,6 +457,74 @@ class HotPotatoView(BaseModel):
     revived: list[str]  # quem ressuscitou desde a última pergunta
 
 
+class TeamVote(BaseModel):
+    player_id: str
+    option: int
+
+
+class TeamSide(BaseModel):
+    """Um time na partida. Os votos dos outros times só aparecem na revelação; antes, só quem já votou."""
+
+    id: int  # 0 a 3: nome e cor do time
+    members: list[str]
+    score: int  # o QI do time
+    captain: str | None  # capitão desta pergunta (o voto vale 2); None nas de representante
+    representative: str | None  # quem responde sozinho na aposta e na final
+    votes: list[TeamVote]
+    voted: list[str]
+    locked: bool  # o time já respondeu (todos votaram, ou o representante respondeu)
+    option: int | None  # a resposta do time: a sua assim que trava; a dos outros na revelação
+    choices: dict[str, str]  # escolha do representante: quem votou em quem (só no seu time)
+    bet: int | None  # aposta do representante; a dos outros só na revelação
+    harmony: int  # perguntas seguidas com todo mundo votando na certa, rumo ao bônus de Sintonia
+    # Só na revelação:
+    correct: bool | None
+    delta: int  # pontos da pergunta (acerto, erro, ou sem resposta)
+    captain_delta: int
+    harmony_delta: int
+    bet_delta: int
+
+
+class TeamPlayerStat(BaseModel):
+    player_id: str
+    team: int
+    votes: int  # perguntas em que votou
+    right: int  # votos na certa
+    captain_right: int
+    captain_rounds: int
+    represented: int  # vezes que foi representante
+    represented_right: int
+
+
+class TeamMatchView(BaseModel):
+    """Times: o time responde junto, por votos, e tem um QI só. Fases: starting → (level) →
+    reading → answering → results por pergunta; na aposta e na final, antes vem choosing (o time
+    escolhe o representante) e, na aposta, betting. Depois da última: finished."""
+
+    phase: Literal["starting", "level", "choosing", "betting", "intro", "reading", "answering", "results", "finished"]
+    phase_duration_ms: int
+    phase_ends_in_ms: int
+    round: int  # começa em 1
+    total_rounds: int
+    solo: bool  # pergunta de representante (aposta ou final)
+    bet_round: bool
+    difficulty: Difficulty
+    theme: str
+    question: QuestionView | None
+    correct_option: int | None
+    fact: str | None
+    bet_percents: list[int]
+    bet_max_percent: int
+    bet_odds: float
+    captain_bonus: int
+    harmony_streak: int
+    harmony_bonus: int
+    teams: list[TeamSide]
+    my_team: int | None
+    stats: list[TeamPlayerStat]
+    ready: list[str]
+
+
 class RoomState(BaseModel):
     """Enviado no evento `room_state` sempre que a sala muda."""
 
@@ -472,6 +538,7 @@ class RoomState(BaseModel):
     game: GameView | None
     survival: SurvivalView | None
     hot_potato: HotPotatoView | None
+    team_match: TeamMatchView | None
 
 
 class Ack(BaseModel):
@@ -504,6 +571,7 @@ EVENT_MODELS: list[type[BaseModel]] = [
     RejoinRoomRequest,
     UpdateSettingsRequest,
     SetTeamRequest,
+    ChooseRepresentativeRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     SubmitDuelBetRequest,
