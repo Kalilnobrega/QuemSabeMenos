@@ -319,8 +319,8 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
             />
             <OptionRow
               title="Montagem"
-              hint="Sorteio no começo, ou o anfitrião monta tocando nos jogadores"
-              options={[0, 1]}
+              hint="O anfitrião monta tocando nos jogadores, ou sorteio no começo"
+              options={[1, 0]}
               value={settings.team_pick === 'host' ? 1 : 0}
               label={(n) => (n ? 'Anfitrião' : 'Sorteio')}
               onPick={(n) => update({ team_pick: n ? 'host' : 'random' })}
