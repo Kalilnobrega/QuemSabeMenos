@@ -1,5 +1,14 @@
 import { useEffect, type ReactNode } from 'react'
-import { POTATO_HINTS, POWERUP_INFO, SURVIVAL_HINTS, TEAM_HINTS, type Kind } from '../lib/powerups'
+import {
+  LEGENDARY_DECOY_HINT,
+  LEGENDARY_STEAL_HINT,
+  LEGENDARY_TOLL_HINT,
+  POTATO_HINTS,
+  POWERUP_INFO,
+  SURVIVAL_HINTS,
+  TEAM_HINTS,
+  type Kind,
+} from '../lib/powerups'
 import type { RoomSettings } from '../types/events'
 import { PowerUpIcon } from './PowerUps'
 
@@ -15,6 +24,7 @@ interface PowerGroup {
   kinds: Kind[]
   hints?: Partial<Record<Kind, string>>
   mythic?: boolean
+  legendary?: boolean
 }
 
 interface Guide {
@@ -55,47 +65,23 @@ const CLASSIC_EXTRAS: Section[] = [
   },
 ]
 
-const CLASSIC_POWERS: Kind[] = [
-  'fifty_fifty',
-  'peek',
-  'shield',
-  'double',
-  'extra_time',
-  'second_chance',
-  'reverse',
-  'backpack',
-  'theme',
-  'investment',
-  'scratch',
-  'steal',
-  'scramble',
-  'accelerator',
-  'mirror',
-  'magnifier',
-  'silence',
-  'toll',
-  'decoy',
-  'flashbang',
-]
-const SURVIVAL_POWERS: Kind[] = [
-  'fifty_fifty',
-  'peek',
-  'shield',
-  'extra_time',
-  'second_chance',
-  'reverse',
-  'theme',
-  'backpack',
-  'scratch',
-  'steal',
-  'scramble',
-  'accelerator',
-  'mirror',
-  'magnifier',
-  'silence',
-  'decoy',
-  'flashbang',
-]
+const CLASSIC_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'reverse', 'backpack', 'theme', 'investment']
+const CLASSIC_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'toll', 'decoy', 'flashbang']
+// As versões lendárias dos ataques: valem em todos os outros de uma vez.
+const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
+  scratch: 'A próxima pergunta de todos os outros vem coberta: todo mundo tem que raspar.',
+  steal: LEGENDARY_STEAL_HINT,
+  scramble: 'A próxima pergunta de todos os outros vem com as letras embaralhadas.',
+  accelerator: 'Todos os outros têm um terço do tempo e ficam sem QI cheio.',
+  mirror: 'A próxima pergunta de todos os outros aparece espelhada.',
+  magnifier: 'A próxima pergunta de todos os outros fica borrada: só dá para ler com a lupa.',
+  silence: 'Por 2 perguntas, todos os outros ficam sem tempo, placar, revelação e habilidades.',
+  toll: LEGENDARY_TOLL_HINT,
+  decoy: LEGENDARY_DECOY_HINT,
+  flashbang: '4 segundos depois de liberar as respostas, todos os outros só veem as letras.',
+}
+const SURVIVAL_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'extra_time', 'second_chance', 'reverse', 'theme', 'backpack']
+const SURVIVAL_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'decoy', 'flashbang']
 const POTATO_HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass']
 const POTATO_SABOTAGES: Kind[] = ['accelerator', 'scramble', 'mirror', 'magnifier', 'flashbang']
 const TEAM_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'theme', 'backpack', 'iron_captain']
@@ -130,10 +116,12 @@ const GUIDES: Record<Mode, Guide> = {
       'Na revelação, você escolhe um poder para a próxima pergunta (e o alvo, se for ataque). O 50/50 e o Espiar se usam na hora da pergunta, pelo ícone.',
       'O anfitrião define quantos poderes cada um guarda (de 1 a 3). Com a mão cheia, não ganha mais.',
       'Poderes não valem na aposta nem na pergunta final.',
-      'Às vezes um ataque vem LENDÁRIO: vale em todos os outros de uma vez, e o Reverso não segura.',
+      'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como um ataque LENDÁRIO (20% para quem está em último e bem atrás). O lendário vale em todos os outros jogadores de uma vez, sem escolher alvo, e o Reverso não segura. Ele ocupa uma vaga na mão como os outros. O poder sorteado no começo nunca é lendário.',
     ],
     powers: [
-      { title: 'Poderes', kinds: CLASSIC_POWERS },
+      { title: 'Ajudas (para você)', kinds: CLASSIC_HELPS },
+      { title: 'Ataques (em quem você escolher)', kinds: CLASSIC_ATTACKS },
+      { title: 'Lendários (os ataques, em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
       {
         title: 'Míticos (raros, mais para quem está em último)',
         kinds: ['resurrection', 'duel'],
@@ -176,9 +164,11 @@ const GUIDES: Record<Mode, Guide> = {
       'Quem caiu vira fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos, e às vezes a Ressurreição.',
       'No V ou F não vêm 50/50 nem Alternativa falsa, e a Segunda chance vale só para a próxima pergunta.',
       'No X1 não tem poder.',
+      'Aqui não tem lendários: os ataques sempre miram uma pessoa só.',
     ],
     powers: [
-      { title: 'Poderes', kinds: SURVIVAL_POWERS, hints: SURVIVAL_HINTS },
+      { title: 'Ajudas (para você)', kinds: SURVIVAL_HELPS, hints: SURVIVAL_HINTS },
+      { title: 'Ataques (em quem está vivo)', kinds: SURVIVAL_ATTACKS, hints: SURVIVAL_HINTS },
       {
         title: 'Mítico dos fantasmas',
         kinds: ['resurrection'],
@@ -206,6 +196,7 @@ const GUIDES: Record<Mode, Guide> = {
     powersIntro: [
       'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos.',
       'Tudo vale na hora. Ajudas, só quem está com a batata usa. Sabotagens, quem está assistindo joga em quem está com a batata, valendo na pergunta atual (uma por pessoa por pergunta).',
+      'Aqui não tem lendários.',
       'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição.',
     ],
     powers: [
@@ -270,6 +261,7 @@ const GUIDES: Record<Mode, Guide> = {
       'Quem escolhe é o capitão da próxima pergunta, na revelação; o resto do time dá palpite. Sem capitão (Motim), qualquer um do time escolhe.',
       'O 50/50 e o Espiar o capitão usa durante a pergunta.',
       'Um poder por time por pergunta. Ataques miram um time adversário. Nada vale na aposta nem na final.',
+      'Aqui não tem lendários: os ataques sempre miram um time só.',
     ],
     powers: [
       { title: 'Ajudas para o seu time', kinds: TEAM_HELPS, hints: TEAM_HINTS },
@@ -357,10 +349,13 @@ export function ModeGuide({ mode, onClose }: { mode: Mode; onClose: () => void }
             <h4 className={`font-semibold ${group.mythic ? 'text-purple-300' : 'text-brand'}`}>{group.title}</h4>
             <ul className="flex flex-col gap-2">
               {group.kinds.map((kind) => (
-                <li key={kind} className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${POWERUP_INFO[kind].tone}`}>
+                <li key={kind} className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : POWERUP_INFO[kind].tone}`}>
                   <PowerUpIcon kind={kind} className="mt-0.5 size-6 shrink-0" />
                   <span className="text-sm leading-snug">
-                    <span className="font-bold">{POWERUP_INFO[kind].name}:</span> {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
+                    <span className="font-bold">
+                      {POWERUP_INFO[kind].name}
+                      {group.legendary && ' LENDÁRIO'}:
+                    </span> {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
                   </span>
                 </li>
               ))}
