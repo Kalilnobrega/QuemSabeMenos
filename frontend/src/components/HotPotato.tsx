@@ -9,6 +9,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PotatoView, PowerUpUse } from '../types/events'
 import { LeaveButton } from './LeaveButton'
 import { Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
+import { ResurrectionScene } from './ResurrectionScene'
 import { Spotlight } from './Survival'
 
 const LETTERS = ['A', 'B', 'C', 'D']
@@ -133,9 +134,6 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
     playSound('potatoBoom')
     vibrate([300, 80, 400])
   }, [exploded])
-  useEffect(() => {
-    if (game.revived.length) playSound('resurrection')
-  }, [game.revived.length])
 
   // Susto: a batata "explode" na tela de quem está com ela. É de mentira.
   const scares = game.potatoes.flatMap((p) => (p.holder === playerId ? p.uses.filter((u) => u.kind === 'scare').map((u) => `${p.id}-${p.text}-${u.by}`) : []))
@@ -166,6 +164,11 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
   return (
     <section className="flex w-full flex-col gap-4">
       {scared && <ScareScene />}
+      <ResurrectionScene
+        revived={game.revived.map((id) => ({ key: `${game.round}:${id}`, playerId: id, line: (who) => `${who} voltou para a roda!` }))}
+        players={room.players}
+        playerId={playerId}
+      />
       <header className="flex items-center justify-between text-sm font-semibold text-steel">
         <span>Rodada {game.round}</span>
         <span>

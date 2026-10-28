@@ -8,6 +8,7 @@ import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
 import type { PlayerView, PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
 import { DaggerStrike } from './DaggerStrike'
+import { ResurrectionScene } from './ResurrectionScene'
 import { Confetti, PeekBadge } from './Game'
 import { LeaveButton } from './LeaveButton'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
@@ -233,9 +234,6 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
     playSound(myOutcome)
     if (myOutcome !== 'correct') vibrate(200)
   }, [myOutcome])
-  useEffect(() => {
-    if (survival.revived.length) playSound('resurrection')
-  }, [survival.revived.length])
   // Cada Adaga nova vira uma cena; quem entra no meio da revelação não revê as de antes.
   const seenStabs = useRef(survival.stabs.length)
   const [strikes, setStrikes] = useState<{ id: number; stab: Stab }[]>([])
@@ -305,6 +303,11 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
 
   return (
     <section className="flex w-full flex-col gap-5">
+      <ResurrectionScene
+        revived={survival.revived.map((id) => ({ key: `${survival.round}:${id}`, playerId: id, line: (who) => `${who} voltou dos mortos com 1 vida!` }))}
+        players={room.players}
+        playerId={playerId}
+      />
       {strikes[0] && (
         <DaggerStrike key={strikes[0].id} stab={strikes[0].stab} players={room.players} playerId={playerId} onDone={() => setStrikes((queue) => queue.slice(1))} />
       )}
