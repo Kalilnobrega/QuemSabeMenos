@@ -276,7 +276,7 @@ body {
 .res-halo { position: absolute; top: -1.1rem; width: 4.5rem; height: 1.2rem; border-radius: 50%; border: 4px solid #ffd666; box-shadow: 0 0 16px rgba(255, 214, 102, 0.9), inset 0 0 8px rgba(255, 214, 102, 0.8); animation: res-halo 1.6s ease-in-out 0.6s infinite alternate; }
 .res-wing { position: absolute; width: 5.5rem; top: 0.6rem; filter: drop-shadow(0 0 10px rgba(255, 236, 170, 0.8)); }
 .res-wing-left { right: 85%; transform-origin: 100% 60%; animation: res-flap-left 0.5s ease-in-out 0.4s infinite alternate; }
-.res-wing-right { left: 85%; transform: scaleX(-1); transform-origin: 0% 60%; animation: res-flap-right 0.5s ease-in-out 0.4s infinite alternate; }
+.res-wing-right { left: 85%; transform-origin: 0% 60%; animation: res-flap-right 0.5s ease-in-out 0.4s infinite alternate; }
 .res-title { animation: intro-slam 0.6s cubic-bezier(0.2, 1.6, 0.4, 1) 0.9s both; }
 .res-sub { animation: res-up 0.5s ease-out 1.3s both; }
 .res-spark { position: absolute; bottom: -10px; border-radius: 50%; background: #fff4c2; box-shadow: 0 0 8px 2px rgba(255, 214, 102, 0.9); animation: res-spark 2.4s ease-out both; }
@@ -303,8 +303,8 @@ body {
   to { transform: rotate(-14deg); }
 }
 @keyframes res-flap-right {
-  from { transform: scaleX(-1) rotate(8deg); }
-  to { transform: scaleX(-1) rotate(-14deg); }
+  from { transform: rotate(-8deg); }
+  to { transform: rotate(14deg); }
 }
 @keyframes res-up {
   from { transform: translateY(10px); opacity: 0; }

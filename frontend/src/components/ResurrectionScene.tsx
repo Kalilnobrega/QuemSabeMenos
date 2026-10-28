@@ -52,7 +52,7 @@ export function ResurrectionScene({ revived, players, playerId }: { revived: Rev
         <div className="relative flex items-center">
           <Wing className="res-wing res-wing-left" />
           {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="res-avatar relative size-28" />}
-          <Wing className="res-wing res-wing-right" />
+          <Wing className="res-wing res-wing-right" flip />
         </div>
       </div>
       <p className="res-title font-display text-6xl text-amber-100 [text-shadow:0_0_24px_rgba(255,214,102,0.9)]">Ressurreição!</p>
@@ -61,17 +61,21 @@ export function ResurrectionScene({ revived, players, playerId }: { revived: Rev
   )
 }
 
-function Wing({ className }: { className?: string }) {
+/** A asa esquerda; `flip` desenha a direita espelhada no próprio desenho, para a batida da animação
+ *  (só rotação) sair simétrica nas duas. */
+function Wing({ className, flip = false }: { className?: string; flip?: boolean }) {
   return (
     <svg viewBox="0 0 60 48" className={className} aria-hidden="true">
-      <path
-        d="M58 30C46 12 30 3 4 2c8 6 12 10 14 14-6-1-11-1-16 1 8 3 13 6 16 10-5 0-9 1-13 4 9 2 16 5 22 9 12 6 24 3 31-10Z"
-        fill="#FFFBEB"
-        stroke="#F2C14E"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path d="M50 30C40 22 30 17 18 16M46 34c-9-4-18-6-28-6" fill="none" stroke="#F2C14E" strokeWidth="1.6" strokeLinecap="round" />
+      <g transform={flip ? 'matrix(-1 0 0 1 60 0)' : undefined}>
+        <path
+          d="M58 30C46 12 30 3 4 2c8 6 12 10 14 14-6-1-11-1-16 1 8 3 13 6 16 10-5 0-9 1-13 4 9 2 16 5 22 9 12 6 24 3 31-10Z"
+          fill="#FFFBEB"
+          stroke="#F2C14E"
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        <path d="M50 30C40 22 30 17 18 16M46 34c-9-4-18-6-28-6" fill="none" stroke="#F2C14E" strokeWidth="1.6" strokeLinecap="round" />
+      </g>
     </svg>
   )
 }
