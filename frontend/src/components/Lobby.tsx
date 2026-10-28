@@ -7,9 +7,9 @@ import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
 
-const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
+const MODES: Record<RoomSettings['mode'], { name: string; short?: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
-  powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
+  powers: { name: 'Clássico com poderes', short: 'Com poderes', hint: 'Poderes que podem te ajudar ou atrapalhar a galera.' },
   teams: { name: 'Times', hint: 'O time vota junto e tem um QI só.' },
   last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
   hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
@@ -283,11 +283,13 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
                 <button
                   onClick={() => update({ mode })}
                   aria-pressed={settings.mode === mode}
-                  className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg py-2 pr-7 pl-3 text-left ${
+                  className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
                     settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
                   }`}
                 >
-                  <span className="font-semibold">{MODES[mode].name}</span>
+                  {/* Só o nome abre espaço para o i; a explicação usa a largura toda. Ao lado do
+                      Clássico, "Com poderes" basta e cabe numa linha. */}
+                  <span className="pr-5 font-semibold">{MODES[mode].short ?? MODES[mode].name}</span>
                   <span className="text-xs leading-snug opacity-80">{MODES[mode].hint}</span>
                 </button>
                 <span className={`absolute top-1.5 right-1.5 ${settings.mode === mode ? 'text-ink' : 'text-steel'}`}>
