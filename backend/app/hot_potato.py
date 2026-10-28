@@ -36,7 +36,6 @@ DIFFICULTIES = ("easy", "medium")
 
 HELPS: tuple[PowerUp, ...] = ("fifty_fifty", "shield", "second_chance", "cold_water", "reverse", "free_pass", "thermometer")
 SABOTAGES: tuple[PowerUp, ...] = ("accelerator", "scramble", "mirror", "magnifier", "flashbang", "scratch", "short_fuse", "double_bomb")
-GHOST_SABOTAGES: tuple[PowerUp, ...] = SABOTAGES + ("scare",)  # o Susto é só dos fantasmas
 COLD_WATER_SECONDS = 10.0
 SHORT_FUSE_SECONDS = 10.0
 ACCELERATOR_RATE = 2.0  # o pavio queima 2x mais rápido até a próxima pergunta
@@ -509,7 +508,7 @@ class HotPotato:
             if p.id == self.exploded:
                 continue
             mythic = self.rng.random() < RESURRECTION_CHANCE and "resurrection" not in self.mythics.get(p.id, [])
-            self._give(p.id, "resurrection" if mythic else self.rng.choice(GHOST_SABOTAGES), "ghost", mythic=mythic)
+            self._give(p.id, "resurrection" if mythic else self.rng.choice(SABOTAGES), "ghost", mythic=mythic)
 
     def _give(self, player_id: str, kind: PowerUp, reason: str, mythic: bool = False) -> None:
         """Com as mãos cheias, não ganha nada (o mítico não ocupa vaga)."""

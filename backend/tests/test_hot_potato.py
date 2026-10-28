@@ -350,18 +350,6 @@ def test_thermometer_shows_the_fuse_only_to_the_holder_until_it_passes():
     assert not potato.thermometer
 
 
-def test_scare_is_only_for_ghosts_and_does_nothing_to_the_fuse():
-    game = powered(players=4)
-    ghost = game.main.holder
-    game.advance(game.deadline())
-    game.advance(game.phase_ends_at)
-    potato = game.main
-    fuse = potato.fuse_left
-    give(game, ghost, "scare")
-    game.use(ghost, "scare", potato.state_started_at)
-    assert potato.uses[-1].kind == "scare" and potato.fuse_left == fuse and game.phase == "playing"
-
-
 def test_double_potato_adds_a_golden_potato_far_away_that_skips_whoever_threw_it():
     game = powered(players=5)
     potato = game.main

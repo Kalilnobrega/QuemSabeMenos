@@ -348,16 +348,6 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
-  if (kind === 'scare') {
-    return (
-      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M5 21V10a7 7 0 0 1 14 0v11l-2.3-1.8L14.3 21 12 19.2 9.7 21l-2.4-1.8Z" fill="#F1F5F9" {...ICON_STROKE} />
-        <ellipse cx="9.3" cy="10.5" rx="1.4" ry="1.9" fill="#12141B" />
-        <ellipse cx="14.7" cy="10.5" rx="1.4" ry="1.9" fill="#12141B" />
-        <ellipse cx="12" cy="15" rx="1.6" ry="2" fill="#12141B" />
-      </svg>
-    )
-  }
   if (kind === 'thermometer') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

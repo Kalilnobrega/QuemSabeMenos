@@ -404,14 +404,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .dagger-scene, .dagger-fly, .dagger-shake, .dagger-blood i, .dagger-heart path, .dagger-fall, .dagger-flash, .dagger-sacrificed, .dagger-caption, .dagger-halo, .dagger-blessing { animation: none; }
 }
-
-/* Susto: a batata "explode" só na tela de quem está com ela, e logo aparece que foi brincadeira. */
-.scare-scene { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; pointer-events: none; background: rgba(124, 45, 18, 0.88); animation: scare-flash 2.2s ease-out both; }
-.scare-joke { animation: dagger-rise 0.4s ease-out 1.1s both; }
-@keyframes scare-flash { 0% { opacity: 0; } 8% { opacity: 1; } 80% { opacity: 1; } 100% { opacity: 0; } }
-@media (prefers-reduced-motion: reduce) {
-  .scare-scene { animation: none; }
-  .scare-joke { animation: none; }
 }
 
 /* Batata dupla: a dourada cai girando, para num close em câmera lenta (escala grande, giro quase

@@ -15,7 +15,6 @@ import { Spotlight } from './Survival'
 const LETTERS = ['A', 'B', 'C', 'D']
 const HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass', 'thermometer']
 const MIN_ALIVE_FOR_DOUBLE = 3
-const SCARE_MS = 2200
 
 interface Props {
   snapshot: Snapshot
@@ -135,20 +134,6 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
     vibrate([300, 80, 400])
   }, [exploded])
 
-  // Susto: a batata "explode" na tela de quem está com ela. É de mentira.
-  const scares = game.potatoes.flatMap((p) => (p.holder === playerId ? p.uses.filter((u) => u.kind === 'scare').map((u) => `${p.id}-${p.text}-${u.by}`) : []))
-  const latestScare = scares.at(-1) ?? null
-  // Quem entra no meio de um susto não leva o susto de novo.
-  const [doneScare, setDoneScare] = useState(latestScare)
-  const scared = latestScare !== null && latestScare !== doneScare
-  useEffect(() => {
-    if (!scared) return
-    playSound('potatoBoom')
-    vibrate([300, 80, 400])
-    const timer = setTimeout(() => setDoneScare(latestScare), SCARE_MS)
-    return () => clearTimeout(timer)
-  }, [scared, latestScare])
-
   const alive = game.players.filter((p) => p.out_round === null)
   // Quem acabou de explodir ainda aparece na roda, com o BUM.
   const out = game.players.filter((p) => p.out_round !== null && !(exploded && p.player_id === game.exploded))
@@ -163,7 +148,6 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
 
   return (
     <section className="flex w-full flex-col gap-4">
-      {scared && <ScareScene />}
       {golden?.state === 'arriving' && <DoublePotatoScene potato={golden} players={room.players} playerId={playerId} />}
       <ResurrectionScene
         revived={game.revived.map((id) => ({ key: `${game.round}:${id}`, playerId: id, line: (who) => `${who} voltou para a roda!` }))}
@@ -249,7 +233,7 @@ function QuestionPanel({
   const scrambled = hits('scramble')
   // A Raspadinha chega no meio da pergunta: a chave remonta a cobertura na hora.
   const scratched = hits('scratch') && !blinded
-  const hitCount = potato.uses.filter((u) => u.target === playerId && u.kind !== 'scare').length
+  const hitCount = potato.uses.filter((u) => u.target === playerId).length
   useEffect(() => {
     if (hitCount) playSound('powerHit')
   }, [hitCount])
@@ -379,7 +363,7 @@ function QuestionPanel({
 
 /** Batata dupla: a dourada cai girando, para num close em câmera lenta e despenca em quem vai
  *  começar com ela. A cena dura o tempo da chegada que o servidor dá (o pavio dela ainda não queima). */
-function DoublePotatoScene({ potato, players, playerId }: { potato: PotatoView; players: PlayerView[]; playerId: string | null }) {
+export function DoublePotatoScene({ potato, players, playerId }: { potato: PotatoView; players: PlayerView[]; playerId: string | null }) {
   const holder = players.find((p) => p.id === potato.holder)
   const thrower = players.find((p) => p.id === potato.excluded)
   const who = (p: PlayerView | undefined) => (p?.id === playerId ? 'você' : (p?.nickname ?? 'alguém'))
@@ -416,22 +400,11 @@ function DoublePotatoScene({ potato, players, playerId }: { potato: PotatoView; 
   )
 }
 
-/** Susto: a explosão de mentira na tela de quem está com a batata. */
-function ScareScene() {
-  return (
-    <div className="scare-scene" role="alert">
-      <span className="potato-boom font-display text-8xl text-orange-400 [text-shadow:0_6px_0_#7c2d12]">BUM!</span>
-      <p className="scare-joke font-display text-3xl text-chalk">Brincadeira! Foi só um susto.</p>
-    </div>
-  )
-}
-
 /** O que foi usado nesta pergunta: quem jogou o quê em quem. */
 function PotatoUses({ uses, name, playerId }: { uses: PowerUpUse[]; name: (id: string | null | undefined) => string; playerId: string | null }) {
   const line = (use: PowerUpUse) => {
     const info = POWERUP_INFO[use.kind]
     const by = name(use.by)
-    if (use.kind === 'scare') return use.target === playerId ? `${by} te deu um susto!` : `${by} deu um susto em ${name(use.target)}!`
     if (use.target === playerId) return `${by} jogou ${info.name} em você!`
     if (use.target) return `${by} jogou ${info.name} em ${name(use.target)}!`
     const extra: Partial<Record<Kind, string>> = {

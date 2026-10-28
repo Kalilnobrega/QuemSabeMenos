@@ -20,7 +20,7 @@ PowerUp = Literal[
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
-    "cold_water", "free_pass", "short_fuse", "double_bomb", "scare", "thermometer", "double_potato",  # só na Batata quente
+    "cold_water", "free_pass", "short_fuse", "double_bomb", "thermometer", "double_potato",  # só na Batata quente
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
     "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
 ]

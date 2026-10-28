@@ -196,7 +196,7 @@ const GUIDES: Record<Mode, Guide> = {
       'Tudo vale na hora. Ajudas, só quem está com a batata usa. Sabotagens, quem está assistindo joga em quem está com a batata, valendo na pergunta atual (uma por pessoa por pergunta).',
       'Aqui não tem lendários.',
       'A cada explosão (menos a última), quem continua vivo ganha um poder.',
-      'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição. O Susto é só dos fantasmas.',
+      'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição.',
       'Batata dupla (mítico, 4% dos poderes ganhos por acertos seguidos): entra uma batata dourada na roda, com pavio próprio de 30 a 45s. Ela começa com quem está mais longe da principal, nunca vai para quem a jogou e dura até explodir. Quem estiver com as duas responde uma pergunta para cada. Precisa de pelo menos 3 na roda.',
     ],
     powers: [
@@ -208,11 +208,6 @@ const GUIDES: Record<Mode, Guide> = {
       {
         title: 'Sabotagens (em quem está com a batata)',
         kinds: POTATO_SABOTAGES,
-        hints: POTATO_HINTS,
-      },
-      {
-        title: 'Só dos fantasmas',
-        kinds: ['scare'],
         hints: POTATO_HINTS,
       },
       {
