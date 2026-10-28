@@ -62,13 +62,14 @@ def play(game: Survival, right: list[str], now: float = 0) -> None:
     game.advance(now)  # próxima
 
 
-def test_two_wrong_answers_eliminate():
+def test_losing_every_life_eliminates():
     game = new_game(3)
     assert game.phase == "answering" and game.question.difficulty == "medium"
     play(game, right=["p0", "p1"])
     assert game.contender("p2").lives == LIVES - 1
-    play(game, right=["p0", "p1"])
-    assert game.contender("p2").out_round == 2
+    for _ in range(LIVES - 1):
+        play(game, right=["p0", "p1"])
+    assert game.contender("p2").out_round == LIVES
     assert game.answering_ids() == ["p0", "p1"]
     assert game.phase == "duel_intro"
 
@@ -122,10 +123,10 @@ def test_duel_time_drops_every_statement_and_a_lonely_mistake_loses():
 
 def test_places_follow_elimination_order():
     game = new_game(4)
-    play(game, right=["p0", "p1", "p2"])
-    play(game, right=["p0", "p1", "p2"])  # p3 cai na 2
-    play(game, right=["p0", "p1"])
-    play(game, right=["p0", "p1"])  # p2 cai na 4 → X1
+    for _ in range(LIVES):
+        play(game, right=["p0", "p1", "p2"])  # p3 cai primeiro
+    for _ in range(LIVES):
+        play(game, right=["p0", "p1"])  # depois p2 → X1
     assert game.phase == "duel_intro"
     play(game, right=["p0"])
     assert game.winner == "p0"

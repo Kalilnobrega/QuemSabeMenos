@@ -138,7 +138,7 @@ const GUIDES: Record<Mode, Guide> = {
       },
       {
         title: 'V ou F',
-        items: ['2 vidas. Frases de Verdadeiro ou Falso: 10 médias e depois só difíceis. 10 segundos para cada uma.'],
+        items: ['3 vidas. Frases de Verdadeiro ou Falso: 10 médias e depois só difíceis. 10 segundos para cada uma.'],
       },
       {
         title: 'Alternativas',

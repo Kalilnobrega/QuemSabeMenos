@@ -1,6 +1,6 @@
 """Último de pé: battle royale com vidas. Errar ou não responder tira uma vida; sem vidas, está fora.
 
-Duas versões (`Rules`): Verdadeiro ou Falso (2 vidas, 10 médias e depois difíceis) e Alternativas
+Duas versões (`Rules`): Verdadeiro ou Falso (3 vidas, 10 médias e depois difíceis) e Alternativas
 (3 vidas, 5 fáceis, 10 médias e depois difíceis). Se todos os vivos erram a mesma pergunta, ninguém
 perde vida. Quando sobram 2, vira X1: morte súbita, com menos tempo a cada pergunta, até um errar
 sozinho. Nas Alternativas, se o X1 passa de 10 perguntas, só vêm impossíveis, e nelas os dois
@@ -75,7 +75,7 @@ class Rules:
 
 RULES: dict[SurvivalKind, Rules] = {
     "true_false": Rules(
-        lives=2, levels=(("medium", 10),), answer_seconds=10.0, reading=False,
+        lives=3, levels=(("medium", 10),), answer_seconds=10.0, reading=False,
         duel_first_seconds=8.0, duel_step_seconds=0.5, duel_min_seconds=3.0, duel_impossible_after=None,
     ),
     "choices": Rules(

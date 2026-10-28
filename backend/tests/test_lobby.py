@@ -341,7 +341,7 @@ async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
         return state["survival"] or {}
 
     # Ana acerta e Bia erra; Caio não responde, mas a frase só fecha no tempo.
-    for round_ in (1, 2):
+    for round_ in range(1, survival.RULES["true_false"].lives + 1):
         await ana.wait_for(lambda s: sv(s).get("round") == round_ and sv(s)["phase"] == "answering")
         assert (await ana.call("submit_answer", {"option": game.question.answer}))["ok"]
         assert (await bia.call("submit_answer", {"option": 1 - game.question.answer}))["ok"]

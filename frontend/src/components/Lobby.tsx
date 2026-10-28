@@ -22,7 +22,7 @@ const POWERS_HINT: Record<RoomSettings['mode'], string> = {
 }
 
 const SURVIVAL_KINDS: Record<RoomSettings['survival_kind'], { name: string; hint: string; lives: number }> = {
-  true_false: { name: 'V ou F', hint: '2 vidas · médias, depois difíceis', lives: 2 },
+  true_false: { name: 'V ou F', hint: '3 vidas · médias, depois difíceis', lives: 3 },
   choices: { name: 'Alternativas', hint: '3 vidas · fáceis, médias, depois difíceis', lives: 3 },
 }
 
