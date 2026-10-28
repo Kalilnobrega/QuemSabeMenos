@@ -239,10 +239,12 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
     ana, bia, created, joined = await setup_room(connect)
     assert not (await ana.call("update_settings", {"mode": "turbo"}))["ok"]
-    await ana.call("update_settings", {"rounds": 10, "mode": "powers"})
+    await ana.call("update_settings", {"rounds": 10, "powers": True})
     await ana.call("start_game")
     start = await bia.wait_for(lambda s: s["game"] is not None)
     assert len(start["game"]["powerups"]) == 1  # só a dela
+    # O clássico com poderes segue gravado como "powers" no histórico.
+    assert main.history.db.execute("SELECT mode FROM matches").fetchall() == [("powers",)]
 
     await ana.wait_for(lambda s: s["game"]["phase"] == "answering")
     await ana.call("submit_answer", {"option": 0})
@@ -301,7 +303,7 @@ async def test_duel_stops_the_match_and_then_it_goes_on(connect, monkeypatch):
     monkeypatch.setattr(x1, "RESULTS_SECONDS", 0.02)
     monkeypatch.setattr(x1, "END_SECONDS", 0.05)
     ana, bia, created, joined = await setup_room(connect)
-    await ana.call("update_settings", {"rounds": 10, "mode": "powers"})
+    await ana.call("update_settings", {"rounds": 10, "powers": True})
     await ana.call("start_game")
     await ana.wait_for(lambda s: s["game"] is not None and s["game"]["phase"] == "answering")
     await ana.call("submit_answer", {"option": 0})
@@ -387,7 +389,7 @@ async def test_hot_potato_with_powers_uses_them_on_the_spot(connect, monkeypatch
     created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
     code = created["room"]["code"]
     await bia.call("join_room", {"code": code, "nickname": "Bia", "avatar": "sapo"})
-    await ana.call("update_settings", {"mode": "hot_potato", "survival_powers": True})
+    await ana.call("update_settings", {"mode": "hot_potato", "powers": True})
     assert (await ana.call("start_game"))["ok"]
     game = main.rooms.rooms[code].hot_potato
 

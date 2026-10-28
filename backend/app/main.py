@@ -394,7 +394,7 @@ async def update_settings(sid: str, data: dict) -> dict:
         request = UpdateSettingsRequest.model_validate(data)
         room = rooms.update_settings(
             sid, request.rounds, request.themes, request.answer_seconds, request.speed_grace_seconds, request.mode, request.powerup_max,
-            request.survival_kind, request.survival_powers, request.team_count, request.team_pick,
+            request.survival_kind, request.powers, request.team_count, request.team_pick,
         )
     except ValidationError:
         return error("Dados inválidos.")

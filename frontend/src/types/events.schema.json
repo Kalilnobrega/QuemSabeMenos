@@ -1695,10 +1695,9 @@
         "mode": {
           "enum": [
             "classic",
-            "powers",
+            "teams",
             "last_standing",
-            "hot_potato",
-            "teams"
+            "hot_potato"
           ],
           "type": "string"
         },
@@ -1706,10 +1705,9 @@
           "items": {
             "enum": [
               "classic",
-              "powers",
+              "teams",
               "last_standing",
-              "hot_potato",
-              "teams"
+              "hot_potato"
             ],
             "type": "string"
           },
@@ -1732,7 +1730,7 @@
           },
           "type": "array"
         },
-        "survival_powers": {
+        "powers": {
           "type": "boolean"
         },
         "team_count": {
@@ -1821,7 +1819,7 @@
         "mode_options",
         "survival_kind",
         "survival_kind_options",
-        "survival_powers",
+        "powers",
         "team_count",
         "team_count_options",
         "team_pick",
@@ -3504,10 +3502,9 @@
             {
               "enum": [
                 "classic",
-                "powers",
+                "teams",
                 "last_standing",
-                "hot_potato",
-                "teams"
+                "hot_potato"
               ],
               "type": "string"
             },
@@ -3532,7 +3529,7 @@
           ],
           "default": null
         },
-        "survival_powers": {
+        "powers": {
           "anyOf": [
             {
               "type": "boolean"

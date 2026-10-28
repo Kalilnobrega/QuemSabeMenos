@@ -767,11 +767,11 @@ export interface RoomState {
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
-  mode: "classic" | "powers" | "last_standing" | "hot_potato" | "teams";
-  mode_options: ("classic" | "powers" | "last_standing" | "hot_potato" | "teams")[];
+  mode: "classic" | "teams" | "last_standing" | "hot_potato";
+  mode_options: ("classic" | "teams" | "last_standing" | "hot_potato")[];
   survival_kind: "true_false" | "choices";
   survival_kind_options: ("true_false" | "choices")[];
-  survival_powers: boolean;
+  powers: boolean;
   team_count: number;
   team_count_options: number[];
   team_pick: "random" | "host";
@@ -1358,9 +1358,9 @@ export interface SubmitDuelBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  mode?: ("classic" | "powers" | "last_standing" | "hot_potato" | "teams") | null;
+  mode?: ("classic" | "teams" | "last_standing" | "hot_potato") | null;
   survival_kind?: ("true_false" | "choices") | null;
-  survival_powers?: boolean | null;
+  powers?: boolean | null;
   team_count?: number | null;
   team_pick?: ("random" | "host") | null;
   powerup_max?: number | null;

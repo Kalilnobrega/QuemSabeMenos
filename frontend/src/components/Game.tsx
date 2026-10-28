@@ -1122,7 +1122,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   return (
     <div className="flex flex-col gap-3">
       {headline}
-      <PowerUpBar powers={room.settings.mode === 'powers'} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
+      <PowerUpBar powers={room.settings.powers} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
       {powerupLines.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Habilidades">
           {powerupLines.map(({ key, kind, player, text, delta, me, legendary, mythic }, index) => (

@@ -23,8 +23,8 @@ PowerUp = Literal[
     "cold_water", "free_pass",  # só na Batata quente
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
 ]
-GameMode = Literal["classic", "powers", "last_standing", "hot_potato", "teams"]
-MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "teams", "last_standing", "hot_potato")
+GameMode = Literal["classic", "teams", "last_standing", "hot_potato"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "teams", "last_standing", "hot_potato")
 TeamPick = Literal["random", "host"]  # Times: sorteados no começo ou montados pelo anfitrião
 TEAM_PICK_OPTIONS: tuple[TeamPick, ...] = ("random", "host")
 TEAM_COUNT_OPTIONS = (2, 3, 4)
@@ -67,7 +67,7 @@ class UpdateSettingsRequest(BaseModel):
 
     mode: GameMode | None = None
     survival_kind: SurvivalKind | None = None
-    survival_powers: bool | None = None
+    powers: bool | None = None
     team_count: int | None = None
     team_pick: TeamPick | None = None
     powerup_max: int | None = None
@@ -139,7 +139,7 @@ class RoomSettings(BaseModel):
     mode_options: list[GameMode]
     survival_kind: SurvivalKind
     survival_kind_options: list[SurvivalKind]
-    survival_powers: bool  # Último de pé, Batata quente e Times com poderes
+    powers: bool  # a partida tem poderes (em qualquer modo)
     team_count: int
     team_count_options: list[int]
     team_pick: TeamPick

@@ -92,7 +92,8 @@ class MatchHistory:
                     match_id,
                     room.code,
                     now,
-                    room.mode,
+                    # O clássico com poderes era um modo à parte: segue gravado como "powers".
+                    "powers" if room.mode == "classic" and room.powers else room.mode,
                     room.rounds,
                     room.answer_seconds,
                     room.speed_grace_seconds,

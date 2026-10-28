@@ -104,15 +104,10 @@ const TEAM_ATTACKS: Kind[] = [
 const GUIDES: Record<Mode, Guide> = {
   classic: {
     name: 'Clássico',
-    summary: 'Só as perguntas: quem sabe mais, ganha. Sem poderes.',
-    sections: [CLASSIC_SCORING, ...CLASSIC_EXTRAS],
-  },
-  powers: {
-    name: 'Clássico com poderes',
-    summary: 'O clássico, com poderes que ajudam você ou atrapalham os outros.',
+    summary: 'Todo mundo responde junto: quem sabe mais, ganha. Dá para jogar com ou sem poderes.',
     sections: [CLASSIC_SCORING, ...CLASSIC_EXTRAS],
     powersIntro: [
-      'Cada um começa com um poder sorteado e ganha outro a cada 3 acertos seguidos. Quem está em último e bem atrás por 3 rodadas também ganha um.',
+      'Com poderes (o anfitrião liga no lobby): cada um começa com um poder sorteado e ganha outro a cada 3 acertos seguidos. Quem está em último e bem atrás por 3 rodadas também ganha um.',
       'Na revelação, você escolhe um poder para a próxima pergunta (e o alvo, se for ataque). O 50/50 e o Espiar se usam na hora da pergunta, pelo ícone.',
       'O anfitrião define quantos poderes cada um guarda (de 1 a 3). Com a mão cheia, não ganha mais.',
       'Poderes não valem na aposta nem na pergunta final.',

@@ -95,7 +95,7 @@ class Room:
     status: Literal["lobby", "playing"] = "lobby"
     mode: GameMode = "classic"
     survival_kind: SurvivalKind = "true_false"
-    survival_powers: bool = False  # Último de pé, Batata quente e Times com poderes
+    powers: bool = False  # a partida tem poderes (em qualquer modo)
     team_count: int = 2
     team_pick: TeamPick = "host"
     teams: dict[str, int] = field(default_factory=dict)  # montados pelo anfitrião
@@ -143,7 +143,7 @@ class Room:
                 mode_options=list(MODE_OPTIONS),
                 survival_kind=self.survival_kind,
                 survival_kind_options=list(SURVIVAL_KIND_OPTIONS),
-                survival_powers=self.survival_powers,
+                powers=self.powers,
                 team_count=self.team_count,
                 team_count_options=list(TEAM_COUNT_OPTIONS),
                 team_pick=self.team_pick,
@@ -289,7 +289,7 @@ class RoomManager:
         mode: GameMode | None = None,
         powerup_max: int | None = None,
         survival_kind: SurvivalKind | None = None,
-        survival_powers: bool | None = None,
+        powers: bool | None = None,
         team_count: int | None = None,
         team_pick: TeamPick | None = None,
     ) -> Room:
@@ -315,8 +315,8 @@ class RoomManager:
             room.mode = mode
         if survival_kind is not None:
             room.survival_kind = survival_kind
-        if survival_powers is not None:
-            room.survival_powers = survival_powers
+        if powers is not None:
+            room.powers = powers
         if team_count is not None:
             room.team_count = team_count
         if team_pick is not None:
@@ -381,21 +381,21 @@ class RoomManager:
             room.team_match = TeamMatch.create(
                 assignment, questions, room.answer_seconds, now, point_scale=point_scale(room.rounds),
                 speed_grace_seconds=room.speed_grace_seconds, rng=self.rng,
-                powers=room.survival_powers, bank=bank, statements=statements,
+                powers=room.powers, bank=bank, statements=statements,
                 used=room.used_questions,
             )
             return room
         if room.mode == "hot_potato":
             room.hot_potato = HotPotato.create(
                 [p.id for p in room.players], bank, room.used_questions, self.rng, now,
-                powers=room.survival_powers, powerup_max=room.powerup_max,
+                powers=room.powers, powerup_max=room.powerup_max,
             )
             return room
         if room.mode == "last_standing":
             pool = statements if room.survival_kind == "true_false" else bank
             room.survival = Survival.create(
                 room.survival_kind, [p.id for p in room.players], pool, room.used_questions, self.rng, now,
-                powers=room.survival_powers, powerup_max=room.powerup_max,
+                powers=room.powers, powerup_max=room.powerup_max,
             )
             return room
         questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
@@ -406,7 +406,7 @@ class RoomManager:
             point_scale=point_scale(room.rounds),
             speed_grace_seconds=room.speed_grace_seconds,
             rng=self.rng,
-            powers=room.mode == "powers",
+            powers=room.powers,
             powerup_max=room.powerup_max,
             bank=bank,
             used=room.used_questions,

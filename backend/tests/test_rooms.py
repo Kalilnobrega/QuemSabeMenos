@@ -190,7 +190,7 @@ def test_host_picks_the_mode_and_only_powers_deals_powerups(manager):
     manager.play_again("sid-ana")
     with pytest.raises(RoomError):
         manager.update_settings("sid-ana", powerup_max=4)
-    manager.update_settings("sid-ana", mode="powers", powerup_max=3)
+    manager.update_settings("sid-ana", powers=True, powerup_max=3)
     assert room.view().settings.powerup_max == 3
     manager.start("sid-ana")
     assert room.game.powers and room.game.powerup_max == 3
@@ -200,7 +200,7 @@ def test_host_picks_the_mode_and_only_powers_deals_powerups(manager):
 def test_silenced_player_does_not_see_the_scoreboard(manager):
     room, ana = manager.create("sid-ana", profile("Ana"))
     _, bia = manager.join("sid-bia", room.code, profile("Bia", "sapo"))
-    manager.update_settings("sid-ana", mode="powers")
+    manager.update_settings("sid-ana", powers=True)
     manager.start("sid-ana")
     room.game.silences = [(PowerUpUse(kind="silence", by=ana.id, target=bia.id, reflected_by=None), 2)]
     assert [p.score for p in room.view(viewer=bia.id).players] == [0, 0]
@@ -239,7 +239,7 @@ def test_last_standing_with_powers_routes_arming_and_skipping(manager):
     room, ana = manager.create("sid-ana", profile("Ana"))
     manager.join("sid-bia", room.code, profile("Bia"))
     manager.join("sid-caio", room.code, profile("Caio"))
-    manager.update_settings("sid-ana", mode="last_standing", survival_kind="choices", survival_powers=True)
+    manager.update_settings("sid-ana", mode="last_standing", survival_kind="choices", powers=True)
     manager.start("sid-ana", now=0)
     game = room.survival
     assert game.powers and all(len(h) == 1 for h in game.held.values())
