@@ -298,7 +298,7 @@ export function InfoButton({ onClick, label }: { onClick: () => void; label: str
       }}
       aria-label={label}
       title={label}
-      className="flex size-7 shrink-0 items-center justify-center rounded-full border border-current font-serif text-sm font-bold italic opacity-80 hover:opacity-100"
+      className="flex size-5 shrink-0 items-center justify-center rounded-full border border-current font-serif text-xs font-bold italic opacity-80 hover:opacity-100"
     >
       i
     </button>

@@ -158,7 +158,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
           <span className="font-display text-xl tracking-wide text-brand">{MODES[room.settings.mode].name}</span>
           <span className="text-sm text-steel">{MODES[room.settings.mode].hint}</span>
-          <span className="absolute top-2.5 right-2.5 text-steel">
+          <span className="absolute top-2 right-2 text-steel">
             <InfoButton onClick={() => setGuideOpen(true)} label={`Como funciona o ${MODES[room.settings.mode].name}`} />
           </span>
         </div>
@@ -283,7 +283,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
                 <button
                   onClick={() => update({ mode })}
                   aria-pressed={settings.mode === mode}
-                  className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg py-2 pr-9 pl-3 text-left ${
+                  className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg py-2 pr-7 pl-3 text-left ${
                     settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
                   }`}
                 >
