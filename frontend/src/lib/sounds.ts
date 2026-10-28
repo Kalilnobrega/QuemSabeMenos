@@ -32,6 +32,7 @@ export const SOUND_ENABLED = {
   potatoBoom: true,
   daggerThrow: true,
   daggerHit: true,
+  taxRegister: true,
   podiumWinner: true,
   podiumLoser: true,
   skip: true,
@@ -78,6 +79,7 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   perfectEasy: { group: 'Revelação', name: 'Brilho de estrela', moment: 'Alguém gabarita as fáceis' },
   flashbang: { group: 'Pergunta', name: 'Estouro e zumbido', moment: 'A Flashbang estoura em você' },
   daggerThrow: { group: 'Habilidades', name: 'Assobio de lâmina girando', moment: 'A Adaga é arremessada' },
+  taxRegister: { group: 'Habilidades', name: 'Caixa registradora (ka-ching!)', moment: 'O Imposto termina de passar o QI' },
   daggerHit: { group: 'Habilidades', name: 'Batida seca e corte', moment: 'A Adaga crava no alvo' },
   potatoBoom: { group: 'Batata quente', name: 'Chiado, BUM, cacos caindo e zumbido', moment: 'A batata explode na mão de alguém' },
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
@@ -330,6 +332,13 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   daggerThrow: () => {
     // A lâmina girando no ar: três assobios rápidos subindo.
     ;[0, 0.14, 0.28].forEach((at, i) => noise({ at, dur: 0.14, freq: 1800 + i * 600, to: 5200 + i * 600, q: 6, gain: 0.12 }))
+  },
+  taxRegister: () => {
+    // Ka-ching: a gaveta batendo e o sino.
+    noise({ dur: 0.05, filter: 'highpass', freq: 2500, gain: 0.3 })
+    noise({ at: 0.06, dur: 0.08, filter: 'lowpass', freq: 1200, gain: 0.25 })
+    tone(1568, { at: 0.12, dur: 0.5, gain: 0.12 })
+    tone(2093, { at: 0.2, dur: 0.6, gain: 0.1 })
   },
   daggerHit: () => {
     noise({ dur: 0.08, filter: 'highpass', freq: 3000, gain: 0.35 })

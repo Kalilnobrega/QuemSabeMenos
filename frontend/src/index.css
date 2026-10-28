@@ -447,3 +447,22 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .dp-scene, .dp-rays, .dp-fall, .dp-glow, .dp-spin, .dp-target-bounce, .dp-burst, .dp-title, .dp-sub { animation: none; }
 }
+
+/* Imposto: o carimbo bate torto, as moedas voam em arco do placar de quem paga até o de quem recebe. */
+.tax-scene { position: fixed; inset: 0; z-index: 55; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; padding-inline: 1rem; pointer-events: none; background: rgba(5, 6, 10, 0.88); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); animation: dagger-fade 0.2s ease-out both; }
+.tax-stamp { padding: 0.25rem 1rem; border: 6px solid currentColor; border-radius: 0.75rem; transform: rotate(-8deg); text-shadow: 0 4px 0 #450a0a; animation: tax-stamp 0.45s cubic-bezier(0.2, 1.6, 0.4, 1) 0.2s both; }
+.tax-coins { position: absolute; left: 50%; top: 45%; }
+.tax-coin { position: absolute; width: 1.6rem; height: 1.6rem; margin: -0.8rem 0 0 -0.8rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid #12141b; background: #fbbf24; color: #78350f; font-weight: 900; font-size: 0.85rem; opacity: 0; animation: tax-coin 0.75s ease-in-out both; }
+.tax-card[data-side='right'] { animation: tax-bump 0.3s ease-out 2.2s both; }
+.tax-caption { animation: dagger-rise 0.4s ease-out 0.7s both; }
+@keyframes tax-stamp { from { opacity: 0; transform: scale(2.8) rotate(-18deg); } to { opacity: 1; transform: scale(1) rotate(-8deg); } }
+@keyframes tax-coin {
+  0% { opacity: 1; transform: translate(-6.5rem, 0) scale(0.7); }
+  50% { opacity: 1; transform: translate(0, var(--lift)) scale(1.1) rotate(180deg); }
+  100% { opacity: 0; transform: translate(6.5rem, 0) scale(0.7) rotate(360deg); }
+}
+@keyframes tax-bump { 50% { transform: scale(1.08); } }
+@media (prefers-reduced-motion: reduce) {
+  .tax-scene, .tax-stamp, .tax-card, .tax-caption { animation: none; }
+  .tax-coin { display: none; }
+}

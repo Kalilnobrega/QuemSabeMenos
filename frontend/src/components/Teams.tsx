@@ -11,6 +11,7 @@ import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide 
 import { Confetti, DuelScreen } from './Game'
 import { LeaveButton } from './LeaveButton'
 import { Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
+import { TaxScene } from './TaxScene'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 const DIFFICULTY: Record<string, { label: string; className: string }> = {
@@ -304,6 +305,11 @@ function TeamRound({
   const [skipped, setSkipped] = useState(false)
   const mine = myTeam(match)
   const reading = match.phase === 'reading'
+  // Imposto: uma cena por cobrança; quem entra no meio da revelação não revê a de antes.
+  const payer = match.teams.find((t) => t.tax < 0)
+  const receiver = match.teams.find((t) => t.tax > 0)
+  const taxKey = payer && receiver ? `${payer.id}-${receiver.id}-${receiver.tax}` : null
+  const [doneTax, setDoneTax] = useState(taxKey)
   const answering = match.phase === 'answering'
   const revealed = match.phase === 'results'
   const myVote = mine?.votes.find((v) => v.player_id === playerId && !v.infiltrator)?.option ?? null
@@ -417,6 +423,9 @@ function TeamRound({
   return (
     <section className="flex w-full flex-col gap-4">
       {blinded && <div className="flashbang-flash" aria-hidden="true" />}
+      {payer && receiver && taxKey !== doneTax && (
+        <TaxScene key={taxKey} payer={payer} receiver={receiver} amount={receiver.tax} myTeam={match.my_team} onDone={() => setDoneTax(taxKey)} />
+      )}
       <header className="flex items-center justify-between text-sm font-semibold text-steel">
         <span>
           Pergunta {match.round}/{match.total_rounds}
