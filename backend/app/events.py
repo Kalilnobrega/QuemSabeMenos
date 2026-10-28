@@ -21,7 +21,7 @@ PowerUp = Literal[
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
     "cold_water", "free_pass",  # só na Batata quente
-    "mutiny", "infiltrator", "gag", "echo", "iron_captain", "tax",  # só nos Times
+    "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
 ]
 GameMode = Literal["classic", "powers", "last_standing", "hot_potato", "teams"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "teams", "last_standing", "hot_potato")
@@ -494,7 +494,6 @@ class TeamSide(BaseModel):
     next_captain: str | None  # na revelação: o capitão da próxima, que escolhe o poder
     mutiny_left: int  # Motim: perguntas sem capitão que faltam
     iron: bool  # Capitão de ferro: só o capitão vota
-    echo_of: int | None  # Eco: a resposta do time é a desse outro time
     # Poderes do time (só do seu).
     powerups: list[PowerUp]
     mythic_powerups: list[PowerUp]

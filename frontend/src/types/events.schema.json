@@ -32,7 +32,6 @@
             "mutiny",
             "infiltrator",
             "gag",
-            "echo",
             "iron_captain",
             "tax"
           ],
@@ -521,7 +520,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -559,7 +557,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -597,7 +594,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -661,7 +657,6 @@
                 "mutiny",
                 "infiltrator",
                 "gag",
-                "echo",
                 "iron_captain",
                 "tax"
               ],
@@ -1111,7 +1106,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -1149,7 +1143,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -1191,7 +1184,6 @@
                 "mutiny",
                 "infiltrator",
                 "gag",
-                "echo",
                 "iron_captain",
                 "tax"
               ],
@@ -1383,7 +1375,6 @@
             "mutiny",
             "infiltrator",
             "gag",
-            "echo",
             "iron_captain",
             "tax"
           ],
@@ -1515,7 +1506,6 @@
             "mutiny",
             "infiltrator",
             "gag",
-            "echo",
             "iron_captain",
             "tax"
           ],
@@ -1577,7 +1567,6 @@
             "mutiny",
             "infiltrator",
             "gag",
-            "echo",
             "iron_captain",
             "tax"
           ],
@@ -2061,7 +2050,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -2440,7 +2428,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -2478,7 +2465,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -2516,7 +2502,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -2558,7 +2543,6 @@
                 "mutiny",
                 "infiltrator",
                 "gag",
-                "echo",
                 "iron_captain",
                 "tax"
               ],
@@ -2985,7 +2969,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -3137,7 +3120,6 @@
             "mutiny",
             "infiltrator",
             "gag",
-            "echo",
             "iron_captain",
             "tax"
           ],
@@ -3286,16 +3268,6 @@
         "iron": {
           "type": "boolean"
         },
-        "echo_of": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "powerups": {
           "items": {
             "enum": [
@@ -3326,7 +3298,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -3364,7 +3335,6 @@
               "mutiny",
               "infiltrator",
               "gag",
-              "echo",
               "iron_captain",
               "tax"
             ],
@@ -3473,7 +3443,6 @@
         "next_captain",
         "mutiny_left",
         "iron",
-        "echo_of",
         "powerups",
         "mythic_powerups",
         "powerup_max",
@@ -3694,7 +3663,6 @@
             "mutiny",
             "infiltrator",
             "gag",
-            "echo",
             "iron_captain",
             "tax"
           ],

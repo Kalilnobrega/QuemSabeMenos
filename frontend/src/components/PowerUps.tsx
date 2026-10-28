@@ -245,14 +245,6 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
-  if (kind === 'echo') {
-    return (
-      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <circle cx="7" cy="12" r="3.5" fill="#A5B4FC" {...ICON_STROKE} />
-        <path d="M12 7.5a6 6 0 0 1 0 9M15.5 5a9.5 9.5 0 0 1 0 14M19 3a12.5 12.5 0 0 1 0 18" fill="none" stroke="#818CF8" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    )
-  }
   if (kind === 'iron_captain') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

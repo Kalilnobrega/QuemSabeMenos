@@ -216,7 +216,7 @@ def next_question(match: TeamMatch) -> float:
 
 def test_each_team_starts_with_one_power_and_only_the_next_captain_arms():
     match = powered()
-    assert all(len(t.held) == 1 for t in match.teams)
+    assert all(len(t.held) == 1 for t in match.teams) and match.powerup_max == 3
     to_results(match)
     a = team(match, 0)
     assert a.next_captain == "a2"
@@ -265,20 +265,6 @@ def test_gag_takes_the_vote_away():
         match.vote("b2", 0, t0, ALL)
     match.vote("b1", 0, t0, ALL)
     assert team(match, 1).locked_at is not None  # quem tem mordaça não segura o time
-
-
-def test_echo_copies_the_other_team_answer():
-    match = powered()
-    to_results(match)
-    arm(match, 0, "echo", target_team=1)
-    t0 = next_question(match)
-    with pytest.raises(TeamMatchError, match="Eco"):
-        match.vote("a1", 0, t0, ALL)
-    match.vote("b1", 3, t0 + 1, ALL)
-    match.vote("b2", 3, t0 + 1, ALL)
-    match.advance(match.deadline(), ALL)
-    assert match.phase == "results"
-    assert team(match, 0).option == 3 and team(match, 0).captain_delta == 0
 
 
 def test_iron_captain_votes_alone_for_eight_or_minus_ten():

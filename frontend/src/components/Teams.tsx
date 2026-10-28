@@ -308,7 +308,7 @@ function TeamRound({
   const revealed = match.phase === 'results'
   const myVote = mine?.votes.find((v) => v.player_id === playerId && !v.infiltrator)?.option ?? null
   const iron = !!mine?.iron && mine.captain !== playerId
-  const canVote = answering && !!mine && !mine.locked && mine.echo_of === null && !match.gagged && !iron && (!match.solo || mine.representative === playerId)
+  const canVote = answering && !!mine && !mine.locked && !match.gagged && !iron && (!match.solo || mine.representative === playerId)
   const captain = !match.solo && mine?.captain === playerId
   const difficulty = DIFFICULTY[question.difficulty]
   const progress = match.phase_duration_ms > 0 ? remaining / match.phase_duration_ms : 0
@@ -351,7 +351,6 @@ function TeamRound({
   else if (revealed) status = null
   else if (!mine) status = 'Você está assistindo.'
   else if (match.solo) status = mine.representative === playerId ? 'É com você! Responda pelo time.' : `${playerOf(room.players, mine.representative)?.nickname ?? 'O representante'} responde pelo time. Torça!`
-  else if (mine.echo_of !== null) status = `Eco: a resposta do seu time vai ser a do ${teamName(mine.echo_of)}.`
   else if (mine.locked) status = 'Seu time respondeu!'
   else if (match.gagged) status = 'Mordaça: você não vota nesta.'
   else if (blinded) status = 'Flashbang! Agora é chutar pela letra.'
@@ -494,7 +493,6 @@ function TeamUses({ uses, match, players, playerId }: { uses: TeamPowerUse[]; ma
     const the = use.target_team == null ? null : use.target_team === match.my_team ? 'o seu time' : `o ${teamName(use.target_team)}`
     if (use.kind === 'gag') return `${by} pôs Mordaça em ${nick(use.target_player)} (${use.target_team === match.my_team ? 'seu time' : teamName(use.target_team ?? 0)})`
     if (use.kind === 'infiltrator') return `${by} infiltrou ${nick(use.target_player)} ${at}`
-    if (use.kind === 'echo') return `${by} usou Eco: copia ${the}`
     if (use.kind === 'peek') return `${by} está espiando ${the}`
     if (use.kind === 'theme') return `${by} escolheu o tema: ${use.theme}`
     return at ? `${by} jogou ${info.name} ${at}` : `${by} usou ${info.name}`
@@ -613,7 +611,7 @@ function TeamPowerBar({ match, players, playerId, onArm }: { match: TeamMatchVie
   const others = match.teams.filter((t) => t.id !== mine.id)
   const nextCaptain = playerOf(players, mine.next_captain)
   const hint = (kind: Kind) => TEAM_HINTS[kind] ?? POWERUP_INFO[kind].hint
-  const needsTeam = (kind: Kind) => POWERUP_INFO[kind].targeted || kind === 'echo' || kind === 'duel'
+  const needsTeam = (kind: Kind) => POWERUP_INFO[kind].targeted || kind === 'duel'
   const arm = async (kind: Kind, team: number | null = null, target: string | null = null, theme: string | null = null) => {
     playSound(kind === 'backpack' ? 'backpack' : kind === 'theme' ? 'theme' : 'powerArm')
     setSelected(null)

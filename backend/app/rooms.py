@@ -381,7 +381,7 @@ class RoomManager:
             room.team_match = TeamMatch.create(
                 assignment, questions, room.answer_seconds, now, point_scale=point_scale(room.rounds),
                 speed_grace_seconds=room.speed_grace_seconds, rng=self.rng,
-                powers=room.survival_powers, powerup_max=room.powerup_max, bank=bank, statements=statements,
+                powers=room.survival_powers, bank=bank, statements=statements,
                 used=room.used_questions,
             )
             return room

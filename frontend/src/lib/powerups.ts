@@ -37,7 +37,6 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   mutiny: { name: 'Motim', hint: 'Só nos Times: o time alvo fica sem capitão por 3 perguntas.', targeted: true, tone: 'bg-rose-500/15 text-rose-200' },
   infiltrator: { name: 'Infiltrado', hint: 'Só nos Times: alguém do seu time vota também no time alvo, valendo 2 votos.', targeted: true, tone: 'bg-slate-300/15 text-slate-100' },
   gag: { name: 'Mordaça', hint: 'Só nos Times: um jogador do time alvo não vota na próxima.', targeted: true, tone: 'bg-stone-400/15 text-stone-200' },
-  echo: { name: 'Eco', hint: 'Só nos Times: a resposta do seu time vai ser a mesma de um time que você escolher.', targeted: false, tone: 'bg-indigo-400/15 text-indigo-200' },
   iron_captain: { name: 'Capitão de ferro', hint: 'Só nos Times: só o capitão vota. Acertou, +8; errou, −10.', targeted: false, tone: 'bg-zinc-400/15 text-zinc-100' },
   tax: { name: 'Imposto', hint: 'Mítico, só para o time em último: o 1º paga 15% do QI dele para o seu time.', targeted: false, tone: 'bg-purple-500/15 text-purple-200' },
   silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },

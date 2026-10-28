@@ -82,7 +82,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
           { label: 'Times', value: String(room.settings.team_count) },
           { label: 'Montagem', value: room.settings.team_pick === 'host' ? 'Anfitrião' : 'Sorteio' },
           { label: 'Perguntas', value: String(room.settings.rounds) },
-          { label: 'Poderes', value: room.settings.survival_powers ? `até ${room.settings.powerup_max}` : 'Não' },
+          { label: 'Poderes', value: room.settings.survival_powers ? 'até 3' : 'Não' },
           { label: 'Temas', value: themesLabel },
         ]
       : room.settings.mode === 'hot_potato'
@@ -335,7 +335,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
               settings.mode === 'hot_potato'
                 ? 'Ajudas para quem está com a batata, sabotagens para quem assiste'
                 : settings.mode === 'teams'
-                  ? 'O time tem uma mão só, o capitão usa, e os ataques miram outro time'
+                  ? 'O time guarda até 3, o capitão usa, e os ataques miram outro time'
                   : 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador'
             }
             options={[0, 1]}
@@ -345,7 +345,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           />
         )}
 
-        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato' || settings.mode === 'teams') && settings.survival_powers)) && (
+        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato') && settings.survival_powers)) && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantas habilidades cada um pode guardar ao mesmo tempo"

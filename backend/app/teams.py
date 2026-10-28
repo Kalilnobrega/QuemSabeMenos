@@ -67,17 +67,18 @@ HARMONY_BONUS = 10
 POWERS: tuple[PowerUp, ...] = (
     "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "theme", "backpack",
     "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "toll", "decoy", "flashbang", "silence",
-    "mutiny", "infiltrator", "gag", "echo", "iron_captain",
+    "mutiny", "infiltrator", "gag", "iron_captain",
 )
 ATTACKS: frozenset[PowerUp] = frozenset(
     {"scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "toll", "decoy", "flashbang", "silence",
      "mutiny", "infiltrator", "gag"}
 )
-NEEDS_TEAM: frozenset[PowerUp] = ATTACKS | {"echo", "peek", "duel"}
+NEEDS_TEAM: frozenset[PowerUp] = ATTACKS | {"peek", "duel"}
 VISUAL: frozenset[PowerUp] = frozenset({"scratch", "scramble", "mirror", "magnifier", "flashbang"})
 INSTANT: frozenset[PowerUp] = frozenset({"fifty_fifty", "peek"})
 LASTING: dict[PowerUp, int] = {"extra_time": 3, "shield": 2, "second_chance": 2}
 MUTINY_ROUNDS = 3
+POWERUP_MAX = 3  # a mão do time é maior que a de um jogador, e não muda no lobby
 INFILTRATOR_VOTES = 2
 IRON_RIGHT = 8
 IRON_WRONG = -10
@@ -134,7 +135,6 @@ class Team:
     retried: bool = False
     decoy: Decoy | None = None
     tolls: list[tuple[int, list[int]]] = field(default_factory=list)  # (quem recebe, preço por alternativa real)
-    echo_of: int | None = None
     iron: bool = False
     gagged: set[str] = field(default_factory=set)
     silenced: bool = False
@@ -197,7 +197,7 @@ class TeamMatch:
     speed_grace_seconds: float = SPEED_GRACE_SECONDS
     rng: random.Random = field(default_factory=random.Random)
     powers: bool = False
-    powerup_max: int = pw.MAX_HELD
+    powerup_max: int = POWERUP_MAX
     bank: list[Question] = field(default_factory=list)  # para o Tema e o X1
     statements: list[x1.DuelQuestion] = field(default_factory=list)
     used: set[str] = field(default_factory=set)
@@ -225,7 +225,7 @@ class TeamMatch:
         speed_grace_seconds: float = SPEED_GRACE_SECONDS,
         rng: random.Random | None = None,
         powers: bool = False,
-        powerup_max: int = pw.MAX_HELD,
+        powerup_max: int = POWERUP_MAX,
         bank: list[Question] | None = None,
         statements: list[x1.DuelQuestion] | None = None,
         used: set[str] | None = None,
@@ -283,7 +283,7 @@ class TeamMatch:
 
     def deadline(self) -> float:
         if self.phase == "answering":
-            pending = [self.team_deadline(t) for t in self.teams if t.locked_at is None and t.echo_of is None]
+            pending = [self.team_deadline(t) for t in self.teams if t.locked_at is None]
             return (min(pending) if pending else self.phase_started_at) + LATE_SECONDS
         if self.phase == "duel_answering" and self.duel:
             return self.duel.deadline() + LATE_SECONDS
@@ -307,9 +307,6 @@ class TeamMatch:
         return False
 
     def _done(self, team: Team, connected: list[str]) -> bool:
-        if team.echo_of is not None:
-            source = self.team(team.echo_of)
-            return not source or source.locked_at is not None or not self._present(source, connected)
         return team.locked_at is not None or not self._present(team, connected)
 
     def _present(self, team: Team, connected: list[str]) -> list[str]:
@@ -359,8 +356,6 @@ class TeamMatch:
         if team.locked_at is not None:
             raise TeamMatchError("Esse time já respondeu." if infiltrating else "Seu time já respondeu.")
         if not infiltrating:
-            if team.echo_of is not None:
-                raise TeamMatchError("Eco: a resposta do seu time vai ser a do outro time.")
             if player_id in team.gagged:
                 raise TeamMatchError("Mordaça: você não vota nesta.")
             if self.solo and player_id != team.representative:
@@ -595,8 +590,6 @@ class TeamMatch:
                 target.silenced = True
             elif use.kind == "gag" and target:
                 target.gagged.add(use.target_player)
-            elif use.kind == "echo":
-                mine.echo_of = use.target_team
             elif use.kind == "iron_captain":
                 mine.iron = True
             elif use.kind == "double":
@@ -688,7 +681,7 @@ class TeamMatch:
             self._enter("answering", now, max(self.window(t) for t in self.teams))
         elif self.phase == "answering":
             for team in self.teams:
-                if team.locked_at is None and team.echo_of is None and now >= self.team_deadline(team):
+                if team.locked_at is None and now >= self.team_deadline(team):
                     self._lock(team, self.team_deadline(team))
             if all(self._done(t, connected) or now >= self.phase_ends_at for t in self.teams):
                 self._close(now, connected)
@@ -728,7 +721,7 @@ class TeamMatch:
             team.tricked = team.tax = team.duel_delta = 0
             team.doubled = team.iron = team.silenced = team.retried = False
             team.hidden, team.tolls, team.effects, team.gagged = [], [], [], set()
-            team.first_option = team.echo_of = team.peeking = team.decoy = team.gained = None
+            team.first_option = team.peeking = team.decoy = team.gained = None
         self.active = []
         previous = self.questions[self.round - 1].difficulty if self.round else None
         if previous and self.question.difficulty != previous and self.question.difficulty != FINAL_DIFFICULTY:
@@ -746,7 +739,7 @@ class TeamMatch:
         if self.powers:
             self._activate()
         for team in self.teams:
-            if team.mutiny_left or team.captain in team.gagged or team.echo_of is not None:
+            if team.mutiny_left or team.captain in team.gagged:
                 team.captain = None
             if team.iron and not team.captain:
                 team.iron = False
@@ -813,15 +806,10 @@ class TeamMatch:
     def _close(self, now: float, connected: list[str]) -> None:
         q = self.question
         for team in self.teams:
-            if team.locked_at is None and team.echo_of is None:
+            if team.locked_at is None:
                 self._lock(team, self.team_deadline(team))
                 if team.locked_at is None:  # a Segunda chance apareceu no fim do tempo
                     team.locked_at, team.option = self.team_deadline(team), None
-        for team in self.teams:
-            if team.echo_of is not None:
-                source = self.team(team.echo_of)
-                team.option = source.option if source else None
-                team.locked_at = source.locked_at if source and source.locked_at is not None else self.team_deadline(team)
         for team in self.teams:
             self._score(team, connected)
         if not self.solo and self.powers:
@@ -862,7 +850,7 @@ class TeamMatch:
                 self.stats[team.representative].represented_right += bool(team.correct)
             if team.bet:
                 team.bet_delta = bet_win(team.bet) if team.correct else -team.bet
-        elif team.echo_of is None:
+        else:
             self._captain_and_harmony(team, connected)
 
     def _captain_and_harmony(self, team: Team, connected: list[str]) -> None:
@@ -1144,7 +1132,6 @@ class TeamMatch:
             next_captain=team.next_captain if self.phase == "results" else None,
             mutiny_left=team.mutiny_left,
             iron=team.iron,
-            echo_of=team.echo_of,
             powerups=list(team.held) if own else [],
             mythic_powerups=list(team.mythics) if own else [],
             powerup_max=team.capacity(self.powerup_max),

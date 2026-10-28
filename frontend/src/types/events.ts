@@ -43,7 +43,6 @@ export interface ArmPowerUpRequest {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax";
   target?: string | null;
@@ -222,7 +221,6 @@ export interface GameView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -254,7 +252,6 @@ export interface GameView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -286,7 +283,6 @@ export interface GameView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -323,7 +319,6 @@ export interface GameView {
         | "mutiny"
         | "infiltrator"
         | "gag"
-        | "echo"
         | "iron_captain"
         | "tax"
       )
@@ -400,7 +395,6 @@ export interface PowerUpUse {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax";
   by: string;
@@ -444,7 +438,6 @@ export interface LastingPowerUp {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax";
   rounds_left: number;
@@ -500,7 +493,6 @@ export interface RoundResult {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -539,7 +531,6 @@ export interface PowerUpGain {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax";
   reason: "start" | "streak" | "comeback" | "ghost";
@@ -639,7 +630,6 @@ export interface HotPotatoView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -671,7 +661,6 @@ export interface HotPotatoView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -705,7 +694,6 @@ export interface HotPotatoView {
         | "mutiny"
         | "infiltrator"
         | "gag"
-        | "echo"
         | "iron_captain"
         | "tax"
       )
@@ -903,7 +891,6 @@ export interface SurvivalView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -935,7 +922,6 @@ export interface SurvivalView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -967,7 +953,6 @@ export interface SurvivalView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -1001,7 +986,6 @@ export interface SurvivalView {
         | "mutiny"
         | "infiltrator"
         | "gag"
-        | "echo"
         | "iron_captain"
         | "tax"
       )
@@ -1132,7 +1116,6 @@ export interface TeamMatchView {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -1165,7 +1148,6 @@ export interface TeamSide {
   next_captain: string | null;
   mutiny_left: number;
   iron: boolean;
-  echo_of: number | null;
   powerups: (
     | "fifty_fifty"
     | "shield"
@@ -1194,7 +1176,6 @@ export interface TeamSide {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -1226,7 +1207,6 @@ export interface TeamSide {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax"
   )[];
@@ -1293,7 +1273,6 @@ export interface TeamPowerUse {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax";
   by: string;
@@ -1425,7 +1404,6 @@ export interface UsePowerUpRequest {
     | "mutiny"
     | "infiltrator"
     | "gag"
-    | "echo"
     | "iron_captain"
     | "tax";
   target_team?: number | null;
