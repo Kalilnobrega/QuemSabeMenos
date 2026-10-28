@@ -17,6 +17,8 @@ from app.events import (
     SURVIVAL_KIND_OPTIONS,
     POWERUP_MAX_OPTIONS,
     ROUND_OPTIONS,
+    TEAM_COUNT_OPTIONS,
+    TEAM_PICK_OPTIONS,
     Avatar,
     GameMode,
     PlayerView,
@@ -25,6 +27,7 @@ from app.events import (
     RoomSettings,
     RoomState,
     SurvivalKind,
+    TeamPick,
 )
 from app.duel import DuelQuestion, load_statements
 from app.game import (
@@ -45,6 +48,7 @@ CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
 MAX_PLAYERS = 12
 MIN_PLAYERS = 2
+MIN_TEAM_SIZE = 2
 DEFAULT_ROUNDS = 25
 ANSWER_SECONDS = 15.0
 
@@ -91,6 +95,9 @@ class Room:
     mode: GameMode = "classic"
     survival_kind: SurvivalKind = "true_false"
     survival_powers: bool = False  # Último de pé e Batata quente com poderes
+    team_count: int = 2
+    team_pick: TeamPick = "random"
+    teams: dict[str, int] = field(default_factory=dict)  # montados pelo anfitrião
     powerup_max: int = MAX_HELD
     rounds: int = DEFAULT_ROUNDS
     answer_seconds: float = ANSWER_SECONDS
@@ -109,6 +116,17 @@ class Room:
     def connected_ids(self) -> list[str]:
         return [p.id for p in self.players if p.connected]
 
+    def lobby_teams(self) -> dict[str, int]:
+        """Times do anfitrião em dia com a sala: quem chegou entra no time com menos gente, e quem
+        estava num time que deixou de existir é redistribuído."""
+        teams = {p.id: t for p in self.players if (t := self.teams.get(p.id)) is not None and t < self.team_count}
+        for p in self.players:
+            if p.id not in teams:
+                sizes = [sum(1 for t in teams.values() if t == team) for team in range(self.team_count)]
+                teams[p.id] = sizes.index(min(sizes))
+        self.teams = teams
+        return teams
+
     def view(self, now: float | None = None, viewer: str | None = None) -> RoomState:
         """`viewer`: o jogador que vai receber, para mostrar só as habilidades dele."""
         now = time.monotonic() if now is None else now
@@ -124,6 +142,11 @@ class Room:
                 survival_kind=self.survival_kind,
                 survival_kind_options=list(SURVIVAL_KIND_OPTIONS),
                 survival_powers=self.survival_powers,
+                team_count=self.team_count,
+                team_count_options=list(TEAM_COUNT_OPTIONS),
+                team_pick=self.team_pick,
+                team_pick_options=list(TEAM_PICK_OPTIONS),
+                teams=self.lobby_teams() if self.mode == "teams" and self.team_pick == "host" else {},
                 powerup_max=self.powerup_max,
                 powerup_max_options=list(POWERUP_MAX_OPTIONS),
                 rounds=self.rounds,
@@ -136,7 +159,7 @@ class Room:
                 theme_options=self.theme_options,
             ),
             players=[self._player_view(p, viewer) for p in self.players],
-            game=self.game.view(now, viewer) if self.game else None,
+            game=self.game.view(now, viewer, self.players) if self.game else None,
             survival=self.survival.view(now, viewer, [p.id for p in self.players]) if self.survival else None,
             hot_potato=self.hot_potato.view(now, [p.id for p in self.players], viewer) if self.hot_potato else None,
         )
@@ -264,6 +287,8 @@ class RoomManager:
         powerup_max: int | None = None,
         survival_kind: SurvivalKind | None = None,
         survival_powers: bool | None = None,
+        team_count: int | None = None,
+        team_pick: TeamPick | None = None,
     ) -> Room:
         room = self._host_room(sid, "mudar as configurações")
         if room.status != "lobby":
@@ -274,6 +299,8 @@ class RoomManager:
             raise RoomError("Tempo de resposta inválido.")
         if powerup_max is not None and powerup_max not in POWERUP_MAX_OPTIONS:
             raise RoomError("Limite de habilidades inválido.")
+        if team_count is not None and team_count not in TEAM_COUNT_OPTIONS:
+            raise RoomError("Número de times inválido.")
         if speed_grace_seconds is not None and speed_grace_seconds not in GRACE_OPTIONS:
             raise RoomError("Tempo de QI cheio inválido.")
         if themes is not None:
@@ -287,6 +314,10 @@ class RoomManager:
             room.survival_kind = survival_kind
         if survival_powers is not None:
             room.survival_powers = survival_powers
+        if team_count is not None:
+            room.team_count = team_count
+        if team_pick is not None:
+            room.team_pick = team_pick
         if powerup_max is not None:
             room.powerup_max = powerup_max
         if rounds is not None:
@@ -299,6 +330,32 @@ class RoomManager:
             room.themes = [t for t in self.theme_options if t in themes]
         return room
 
+    def set_team(self, sid: str, player_id: str, team: int) -> Room:
+        room = self._host_room(sid, "montar os times")
+        if room.status != "lobby":
+            raise RoomError("A partida já começou.")
+        if room.mode != "teams" or room.team_pick != "host":
+            raise RoomError("Os times são sorteados.")
+        if not room.player(player_id):
+            raise RoomError("Jogador não encontrado.")
+        if team not in range(room.team_count):
+            raise RoomError("Time inválido.")
+        room.lobby_teams()[player_id] = team
+        return room
+
+    def _deal_teams(self, room: Room) -> dict[str, int]:
+        """Os times da partida, cada um com pelo menos 2 jogadores."""
+        if len(room.players) < room.team_count * MIN_TEAM_SIZE:
+            raise RoomError(f"{room.team_count} times precisam de pelo menos {room.team_count * MIN_TEAM_SIZE} jogadores.")
+        if room.team_pick == "host":
+            teams = dict(room.lobby_teams())
+            if any(list(teams.values()).count(t) < MIN_TEAM_SIZE for t in range(room.team_count)):
+                raise RoomError(f"Cada time precisa de pelo menos {MIN_TEAM_SIZE} jogadores.")
+            return teams
+        ids = [p.id for p in room.players]
+        self.rng.shuffle(ids)
+        return {pid: i % room.team_count for i, pid in enumerate(ids)}
+
     def start(self, sid: str, now: float | None = None) -> Room:
         """Cria a partida já na primeira rodada; o main.py conduz as seguintes."""
         room = self._host_room(sid, "começar a partida")
@@ -306,6 +363,7 @@ class RoomManager:
             raise RoomError("A partida já começou.")
         if len(room.players) < MIN_PLAYERS:
             raise RoomError(f"Precisa de pelo menos {MIN_PLAYERS} jogadores.")
+        teams = self._deal_teams(room) if room.mode == "teams" else {}
         for player in room.players:
             player.score = STARTING_IQ
             player.answer_ms = 0
@@ -335,11 +393,12 @@ class RoomManager:
             point_scale=point_scale(room.rounds),
             speed_grace_seconds=room.speed_grace_seconds,
             rng=self.rng,
-            powers=room.mode == "powers",
+            powers=room.mode == "powers" or (room.mode == "teams" and room.survival_powers),
             powerup_max=room.powerup_max,
             bank=bank,
             used=room.used_questions,
             statements=statements,
+            teams=teams,
         )
         if room.game.powers:
             room.game.deal_powerups([p.id for p in room.players])

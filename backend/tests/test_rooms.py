@@ -253,3 +253,36 @@ def test_last_standing_with_powers_routes_arming_and_skipping(manager):
     for sid in ("sid-ana", "sid-bia", "sid-caio"):
         manager.ready(sid)
     assert game.everyone_ready(room.connected_ids())
+
+
+def test_teams_need_two_players_each_and_random_teams_are_even(manager):
+    room, _ = manager.create("sid-0", profile("P0"))
+    for i in range(1, 5):
+        manager.join(f"sid-{i}", room.code, profile(f"P{i}"))
+    manager.update_settings("sid-0", mode="teams", team_count=3)
+    with pytest.raises(RoomError, match="6 jogadores"):
+        manager.start("sid-0")
+    manager.update_settings("sid-0", team_count=2)
+    manager.start("sid-0")
+    sizes = sorted(list(room.game.teams.values()).count(t) for t in (0, 1))
+    assert sizes == [2, 3] and not room.game.powers
+    assert len(room.view().game.teams) == 2
+
+
+def test_host_builds_the_teams(manager):
+    room, _ = manager.create("sid-0", profile("P0"))
+    for i in range(1, 4):
+        manager.join(f"sid-{i}", room.code, profile(f"P{i}"))
+    manager.update_settings("sid-0", mode="teams", team_pick="host", survival_powers=True)
+    ids = [p.id for p in room.players]
+    assert sorted(room.view().settings.teams.values()) == [0, 0, 1, 1]  # quem chega vai para o menor
+    for pid in ids:
+        manager.set_team("sid-0", pid, 0)
+    with pytest.raises(RoomError, match="pelo menos 2"):
+        manager.start("sid-0")
+    with pytest.raises(RoomError):
+        manager.set_team("sid-1", ids[0], 1)  # só o anfitrião
+    manager.set_team("sid-0", ids[2], 1)
+    manager.set_team("sid-0", ids[3], 1)
+    manager.start("sid-0")
+    assert room.game.teams == {ids[0]: 0, ids[1]: 0, ids[2]: 1, ids[3]: 1} and room.game.powers

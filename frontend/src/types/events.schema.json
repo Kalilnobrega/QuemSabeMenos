@@ -73,7 +73,9 @@
             "perfect_easy",
             "streak",
             "wrong_streak",
-            "investment"
+            "investment",
+            "team_right",
+            "team_wrong"
           ],
           "type": "string"
         },
@@ -579,6 +581,12 @@
             }
           ]
         },
+        "teams": {
+          "items": {
+            "$ref": "#/$defs/TeamView"
+          },
+          "type": "array"
+        },
         "powerup_max": {
           "type": "integer"
         },
@@ -757,6 +765,7 @@
         "revivals",
         "duels",
         "duel",
+        "teams",
         "powerup_max",
         "starting_powerup",
         "can_arm",
@@ -1618,7 +1627,8 @@
             "classic",
             "powers",
             "last_standing",
-            "hot_potato"
+            "hot_potato",
+            "teams"
           ],
           "type": "string"
         },
@@ -1628,7 +1638,8 @@
               "classic",
               "powers",
               "last_standing",
-              "hot_potato"
+              "hot_potato",
+              "teams"
             ],
             "type": "string"
           },
@@ -1653,6 +1664,38 @@
         },
         "survival_powers": {
           "type": "boolean"
+        },
+        "team_count": {
+          "type": "integer"
+        },
+        "team_count_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "team_pick": {
+          "enum": [
+            "random",
+            "host"
+          ],
+          "type": "string"
+        },
+        "team_pick_options": {
+          "items": {
+            "enum": [
+              "random",
+              "host"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "teams": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "type": "object"
         },
         "powerup_max": {
           "type": "integer"
@@ -1709,6 +1752,11 @@
         "survival_kind",
         "survival_kind_options",
         "survival_powers",
+        "team_count",
+        "team_count_options",
+        "team_pick",
+        "team_pick_options",
+        "teams",
         "powerup_max",
         "powerup_max_options",
         "rounds",
@@ -1956,6 +2004,23 @@
         "gained"
       ],
       "title": "RoundResult",
+      "type": "object"
+    },
+    "SetTeamRequest": {
+      "description": "Times montados pelo anfitrião: põe um jogador num time (0 a team_count - 1).",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "team": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "player_id",
+        "team"
+      ],
+      "title": "SetTeamRequest",
       "type": "object"
     },
     "SubmitAnswerRequest": {
@@ -2553,6 +2618,33 @@
       "title": "Survivor",
       "type": "object"
     },
+    "TeamView": {
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "members": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "score": {
+          "type": "integer"
+        },
+        "round_bonus": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "members",
+        "score",
+        "round_bonus"
+      ],
+      "title": "TeamView",
+      "type": "object"
+    },
     "UpdateSettingsRequest": {
       "description": "Só os campos enviados mudam.",
       "properties": {
@@ -2563,7 +2655,8 @@
                 "classic",
                 "powers",
                 "last_standing",
-                "hot_potato"
+                "hot_potato",
+                "teams"
               ],
               "type": "string"
             },
@@ -2592,6 +2685,32 @@
           "anyOf": [
             {
               "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "team_count": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "team_pick": {
+          "anyOf": [
+            {
+              "enum": [
+                "random",
+                "host"
+              ],
+              "type": "string"
             },
             {
               "type": "null"

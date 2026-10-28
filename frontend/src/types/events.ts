@@ -52,7 +52,7 @@ export interface ArmPowerUpRequest {
  * via the `definition` "Bonus".
  */
 export interface Bonus {
-  kind: "perfect_easy" | "streak" | "wrong_streak" | "investment";
+  kind: "perfect_easy" | "streak" | "wrong_streak" | "investment" | "team_right" | "team_wrong";
   count: number;
   delta: number;
   repeat: boolean;
@@ -259,6 +259,7 @@ export interface GameView {
   revivals: Revival[];
   duels: DuelChallenge[];
   duel: DuelView | null;
+  teams: TeamView[];
   powerup_max: number;
   starting_powerup:
     | (
@@ -326,6 +327,16 @@ export interface Revival {
   player_id: string;
   before: number;
   after: number;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "TeamView".
+ */
+export interface TeamView {
+  id: number;
+  members: string[];
+  score: number;
+  round_bonus: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -696,11 +707,18 @@ export interface RoomState {
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
-  mode: "classic" | "powers" | "last_standing" | "hot_potato";
-  mode_options: ("classic" | "powers" | "last_standing" | "hot_potato")[];
+  mode: "classic" | "powers" | "last_standing" | "hot_potato" | "teams";
+  mode_options: ("classic" | "powers" | "last_standing" | "hot_potato" | "teams")[];
   survival_kind: "true_false" | "choices";
   survival_kind_options: ("true_false" | "choices")[];
   survival_powers: boolean;
+  team_count: number;
+  team_count_options: number[];
+  team_pick: "random" | "host";
+  team_pick_options: ("random" | "host")[];
+  teams: {
+    [k: string]: number;
+  };
   powerup_max: number;
   powerup_max_options: number[];
   rounds: number;
@@ -957,6 +975,16 @@ export interface RejoinRoomRequest {
   token: string;
 }
 /**
+ * Times montados pelo anfitrião: põe um jogador num time (0 a team_count - 1).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "SetTeamRequest".
+ */
+export interface SetTeamRequest {
+  player_id: string;
+  team: number;
+}
+/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "SubmitAnswerRequest".
  */
@@ -986,9 +1014,11 @@ export interface SubmitDuelBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  mode?: ("classic" | "powers" | "last_standing" | "hot_potato") | null;
+  mode?: ("classic" | "powers" | "last_standing" | "hot_potato" | "teams") | null;
   survival_kind?: ("true_false" | "choices") | null;
   survival_powers?: boolean | null;
+  team_count?: number | null;
+  team_pick?: ("random" | "host") | null;
   powerup_max?: number | null;
   rounds?: number | null;
   answer_seconds?: number | null;

@@ -96,7 +96,7 @@ class MatchHistory:
                     room.rounds,
                     room.answer_seconds,
                     room.speed_grace_seconds,
-                    room.powerup_max if room.mode == "powers" else None,
+                    room.powerup_max if room.game and room.game.powers else None,
                     json.dumps(room.themes, ensure_ascii=False),
                     _standings(room),
                 ),

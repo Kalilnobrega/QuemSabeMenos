@@ -402,3 +402,22 @@ async def test_hot_potato_with_powers_uses_them_on_the_spot(connect, monkeypatch
     assert (await client.call("use_powerup", {"kind": "free_pass"}))["ok"]
     state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking" and hp(s)["holder"] != first)
     assert hp(state)["holder"] != first
+
+
+async def test_teams_by_the_host_play_with_a_team_scoreboard(connect):
+    clients = [await connect() for _ in range(4)]
+    created = await clients[0].call("create_room", {"nickname": "Ana", "avatar": "gato"})
+    code = created["room"]["code"]
+    ids = [created["player_id"]]
+    for i, client in enumerate(clients[1:]):
+        ids.append((await client.call("join_room", {"code": code, "nickname": f"P{i}", "avatar": "sapo"}))["player_id"])
+    host = clients[0]
+    assert (await host.call("update_settings", {"mode": "teams", "team_pick": "host"}))["ok"]
+    assert not (await clients[1].call("set_team", {"player_id": ids[0], "team": 1}))["ok"]
+    for pid, team in zip(ids, (0, 1, 0, 1)):
+        assert (await host.call("set_team", {"player_id": pid, "team": team}))["ok"]
+    state = await host.wait_for(lambda s: s["settings"]["teams"].get(ids[3]) == 1)
+    assert state["settings"]["teams"] == dict(zip(ids, (0, 1, 0, 1)))
+    assert (await host.call("start_game"))["ok"]
+    state = await host.wait_for(lambda s: s["game"] is not None)
+    assert [t["members"] for t in state["game"]["teams"]] == [[ids[0], ids[2]], [ids[1], ids[3]]]

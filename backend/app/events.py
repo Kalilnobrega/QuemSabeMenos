@@ -22,8 +22,11 @@ PowerUp = Literal[
     "resurrection", "duel",
     "cold_water", "free_pass",  # só na Batata quente
 ]
-GameMode = Literal["classic", "powers", "last_standing", "hot_potato"]
-MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "last_standing", "hot_potato")
+GameMode = Literal["classic", "powers", "last_standing", "hot_potato", "teams"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "powers", "teams", "last_standing", "hot_potato")
+TeamPick = Literal["random", "host"]  # Times: sorteados no começo ou montados pelo anfitrião
+TEAM_PICK_OPTIONS: tuple[TeamPick, ...] = ("random", "host")
+TEAM_COUNT_OPTIONS = (2, 3, 4)
 SurvivalKind = Literal["true_false", "choices"]  # Último de pé: Verdadeiro ou Falso ou Alternativas
 SURVIVAL_KIND_OPTIONS: tuple[SurvivalKind, ...] = ("true_false", "choices")
 
@@ -64,11 +67,20 @@ class UpdateSettingsRequest(BaseModel):
     mode: GameMode | None = None
     survival_kind: SurvivalKind | None = None
     survival_powers: bool | None = None
+    team_count: int | None = None
+    team_pick: TeamPick | None = None
     powerup_max: int | None = None
     rounds: int | None = None
     answer_seconds: float | None = None
     speed_grace_seconds: float | None = None
     themes: list[str] | None = None
+
+
+class SetTeamRequest(BaseModel):
+    """Times montados pelo anfitrião: põe um jogador num time (0 a team_count - 1)."""
+
+    player_id: str
+    team: int
 
 
 class SubmitAnswerRequest(BaseModel):
@@ -117,7 +129,12 @@ class RoomSettings(BaseModel):
     mode_options: list[GameMode]
     survival_kind: SurvivalKind
     survival_kind_options: list[SurvivalKind]
-    survival_powers: bool
+    survival_powers: bool  # Último de pé, Batata quente e Times com poderes
+    team_count: int
+    team_count_options: list[int]
+    team_pick: TeamPick
+    team_pick_options: list[TeamPick]
+    teams: dict[str, int]  # montados pelo anfitrião: id do jogador -> time; vazio no sorteio
     powerup_max: int
     powerup_max_options: list[int]
     rounds: int
@@ -141,7 +158,7 @@ class Bonus(BaseModel):
     """Bônus da partida: gabaritar as fáceis, sequências de acertos (positivo) e sequências
     de erros (negativo). Uma sequência repetida na mesma partida vale a metade."""
 
-    kind: Literal["perfect_easy", "streak", "wrong_streak", "investment"]
+    kind: Literal["perfect_easy", "streak", "wrong_streak", "investment", "team_right", "team_wrong"]
     count: int  # quantas fáceis, o tamanho da sequência ou o acerto do Investimento
     delta: int
     repeat: bool
@@ -240,6 +257,13 @@ class DuelChallenge(BaseModel):
     rival: str
 
 
+class TeamView(BaseModel):
+    id: int  # 0 a 3: a cor do time
+    members: list[str]
+    score: int  # a média do QI de quem está no time
+    round_bonus: int  # nesta revelação: + quando o time todo acertou, − quando todo mundo errou
+
+
 class GameView(BaseModel):
     """Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
     answering → results. Telas de preparação, em que a pergunta não é enviada: starting
@@ -270,6 +294,7 @@ class GameView(BaseModel):
     revivals: list[Revival]
     duels: list[DuelChallenge]  # X1 chamados nesta revelação, na ordem em que vão acontecer
     duel: DuelView | None
+    teams: list[TeamView]  # vazio fora do modo Times
     powerup_max: int
     starting_powerup: PowerUp | None
     can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)
@@ -478,6 +503,7 @@ EVENT_MODELS: list[type[BaseModel]] = [
     JoinRoomRequest,
     RejoinRoomRequest,
     UpdateSettingsRequest,
+    SetTeamRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     SubmitDuelBetRequest,

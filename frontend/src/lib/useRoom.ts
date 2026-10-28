@@ -110,6 +110,7 @@ export function useRoom() {
   const usePowerUp = useCallback((kind: ArmPowerUpRequest['kind']) => request('use_powerup', { kind }), [])
   const skipResults = useCallback(() => request('skip_results'), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
+  const setTeam = useCallback((player_id: string, team: number) => request('set_team', { player_id, team }), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings, setTeam }
 }

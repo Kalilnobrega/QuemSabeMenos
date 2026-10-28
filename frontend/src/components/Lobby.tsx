@@ -3,11 +3,13 @@ import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import type { RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
+import { TEAMS, teamName } from '../lib/teams'
+import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
 
 const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Só as perguntas: quem sabe mais, ganha.' },
   powers: { name: 'Clássico com poderes', hint: 'Com poderes que podem te ajudar ou atrapalhar a galera.' },
+  teams: { name: 'Times', hint: 'Em grupo: vale a média do QI do time.' },
   last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
   hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
 }
@@ -23,13 +25,14 @@ interface Props {
   onLeave: () => void
   onStart: () => Promise<string | null>
   onUpdateSettings: (patch: UpdateSettingsRequest) => Promise<string | null>
+  onSetTeam: (playerId: string, team: number) => Promise<string | null>
 }
 
 function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
 
-export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Props) {
+export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSetTeam }: Props) {
   const [notice, setNotice] = useState<string | null>(null)
   const [starting, setStarting] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
@@ -43,7 +46,9 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
     else if (count < playerCount.current) playSound('leave')
     playerCount.current = count
   }, [room.players.length])
-  const enoughPlayers = room.players.length >= room.min_players
+  const teamsMode = room.settings.mode === 'teams'
+  const minPlayers = teamsMode ? Math.max(room.min_players, room.settings.team_count * 2) : room.min_players
+  const enoughPlayers = room.players.length >= minPlayers
 
   const invite = async () => {
     const url = inviteUrl(room.code)
@@ -72,7 +77,15 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
   const powers = room.settings.mode === 'powers'
   const themesLabel = allThemes ? 'Todos' : themes.length <= 2 ? themes.join(', ') : `${themes.length} temas`
   const summary =
-    room.settings.mode === 'hot_potato'
+    teamsMode
+      ? [
+          { label: 'Times', value: String(room.settings.team_count) },
+          { label: 'Montagem', value: room.settings.team_pick === 'host' ? 'Anfitrião' : 'Sorteio' },
+          { label: 'Perguntas', value: String(room.settings.rounds) },
+          { label: 'Poderes', value: room.settings.survival_powers ? `até ${room.settings.powerup_max}` : 'Não' },
+          { label: 'Temas', value: themesLabel },
+        ]
+      : room.settings.mode === 'hot_potato'
       ? [
           { label: 'Pavio', value: '40–60s' },
           { label: 'Erro', value: '−10s' },
@@ -111,6 +124,9 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
             {room.players.length}/{room.max_players}
           </span>
         </h2>
+        {teamsMode && room.settings.team_pick === 'host' ? (
+          <TeamBuilder room={room} playerId={playerId} isHost={isHost} onSetTeam={onSetTeam} onNotice={setNotice} />
+        ) : (
         <ul className="flex flex-col gap-2">
           {room.players.map((player) => (
             <li
@@ -129,6 +145,10 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
             </li>
           ))}
         </ul>
+        )}
+        {teamsMode && room.settings.team_pick === 'random' && (
+          <p className="text-center font-hand font-medium text-steel">Os times são sorteados quando a partida começar.</p>
+        )}
       </div>
 
       <div className="flex flex-col gap-3">
@@ -175,7 +195,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings }: Pr
           </button>
           {!enoughPlayers && (
             <p className="text-center font-hand font-medium text-base text-steel">
-              Precisa de pelo menos {room.min_players} jogadores. Chama a galera!
+              {teamsMode ? `${room.settings.team_count} times precisam de pelo menos ${minPlayers} jogadores.` : `Precisa de pelo menos ${minPlayers} jogadores.`} Chama a galera!
             </p>
           )}
         </div>
@@ -287,13 +307,36 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         )}
 
-        {(settings.mode === 'last_standing' || settings.mode === 'hot_potato') && (
+        {settings.mode === 'teams' && (
+          <>
+            <OptionRow
+              title="Times"
+              hint="Cada time precisa de pelo menos 2 jogadores"
+              options={settings.team_count_options}
+              value={settings.team_count}
+              label={(n) => String(n)}
+              onPick={(team_count) => update({ team_count })}
+            />
+            <OptionRow
+              title="Montagem"
+              hint="Sorteio no começo, ou o anfitrião monta tocando nos jogadores"
+              options={[0, 1]}
+              value={settings.team_pick === 'host' ? 1 : 0}
+              label={(n) => (n ? 'Anfitrião' : 'Sorteio')}
+              onPick={(n) => update({ team_pick: n ? 'host' : 'random' })}
+            />
+          </>
+        )}
+
+        {(settings.mode === 'last_standing' || settings.mode === 'hot_potato' || settings.mode === 'teams') && (
           <OptionRow
             title="Poderes"
             hint={
               settings.mode === 'hot_potato'
                 ? 'Ajudas para quem está com a batata, sabotagens para quem assiste'
-                : 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador'
+                : settings.mode === 'teams'
+                  ? 'Os do clássico com poderes; ataques só no time adversário'
+                  : 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador'
             }
             options={[0, 1]}
             value={settings.survival_powers ? 1 : 0}
@@ -302,7 +345,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           />
         )}
 
-        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato') && settings.survival_powers)) && (
+        {(settings.mode === 'powers' || ((settings.mode === 'last_standing' || settings.mode === 'hot_potato' || settings.mode === 'teams') && settings.survival_powers)) && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantas habilidades cada um pode guardar ao mesmo tempo"
@@ -387,6 +430,60 @@ interface OptionRowProps {
   value: number
   label: (option: number) => string
   onPick: (option: number) => void
+}
+
+/** Times montados pelo anfitrião: os jogadores por time; o anfitrião toca num jogador para mudar de time. */
+function TeamBuilder({
+  room,
+  playerId,
+  isHost,
+  onSetTeam,
+  onNotice,
+}: {
+  room: RoomState
+  playerId: string | null
+  isHost: boolean
+  onSetTeam: Props['onSetTeam']
+  onNotice: (notice: string | null) => void
+}) {
+  const { team_count: count, teams } = room.settings
+  const move = async (player: PlayerView) => {
+    playSound('select')
+    onNotice(await onSetTeam(player.id, ((teams[player.id] ?? 0) + 1) % count))
+  }
+  return (
+    <div className="flex flex-col gap-3">
+      {Array.from({ length: count }, (_, team) => {
+        const members = room.players.filter((p) => teams[p.id] === team)
+        return (
+          <div key={team} className={`flex flex-col gap-1.5 rounded-xl p-2 ${TEAMS[team].bg}`}>
+            <h3 className={`flex items-baseline justify-between px-1 font-display text-lg tracking-wide ${TEAMS[team].text}`}>
+              {teamName(team)}
+              <span className="font-sans text-sm">{members.length}</span>
+            </h3>
+            {members.length === 0 && <p className="px-1 text-sm text-steel">Ninguém ainda.</p>}
+            {members.map((player) => (
+              <button
+                key={player.id}
+                onClick={() => void move(player)}
+                disabled={!isHost}
+                className={`flex items-center gap-3 rounded-lg bg-panel px-3 py-1.5 text-left ${isHost ? 'btn-3d btn-sm btn-dark' : ''} ${player.connected ? '' : 'opacity-50'}`}
+              >
+                <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
+                <span className="flex-1 truncate font-semibold">
+                  {player.nickname}
+                  {player.id === playerId && <span className="ml-2 text-sm font-normal text-steel">(você)</span>}
+                </span>
+                {player.id === room.host_id && <img src={coroa} alt="Anfitrião" title="Anfitrião" className="size-6" />}
+                {isHost && <span className="text-xs text-steel">trocar ›</span>}
+              </button>
+            ))}
+          </div>
+        )
+      })}
+      {isHost && <p className="text-center text-sm text-steel">Toque num jogador para passar para o próximo time.</p>}
+    </div>
+  )
 }
 
 function OptionRow({ title, hint, options, value, label, onPick }: OptionRowProps) {
