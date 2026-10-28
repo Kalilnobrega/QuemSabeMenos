@@ -40,6 +40,11 @@ export interface ArmPowerUpRequest {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -224,6 +229,11 @@ export interface GameView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -261,6 +271,11 @@ export interface GameView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -298,6 +313,11 @@ export interface GameView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -340,6 +360,11 @@ export interface GameView {
         | "duel"
         | "cold_water"
         | "free_pass"
+        | "short_fuse"
+        | "double_bomb"
+        | "scare"
+        | "thermometer"
+        | "double_potato"
         | "mutiny"
         | "infiltrator"
         | "gag"
@@ -422,6 +447,11 @@ export interface PowerUpUse {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -471,6 +501,11 @@ export interface LastingPowerUp {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -532,6 +567,11 @@ export interface RoundResult {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -577,6 +617,11 @@ export interface PowerUpGain {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -627,32 +672,23 @@ export interface HotPotatoTurn {
   shielded?: boolean;
 }
 /**
- * Batata quente. Fases: starting → asking (quem está com a batata responde) → passing
- * (acertou, a batata voa para o próximo) ou wrong (errou, outra pergunta) → … → exploded (o pavio
- * acabou ou foram 3 erros seguidos) → asking da rodada seguinte … → finished.
+ * Batata quente. Fases: starting → playing (as batatas rodando) → exploded (o pavio de uma
+ * acabou ou foram 3 erros seguidos; tudo para) → playing … → finished.
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "HotPotatoView".
  */
 export interface HotPotatoView {
-  phase: "starting" | "asking" | "passing" | "wrong" | "exploded" | "finished";
+  phase: "starting" | "playing" | "exploded" | "finished";
   phase_duration_ms: number;
   phase_ends_in_ms: number;
   round: number;
-  holder: string | null;
-  heat: number;
-  burning: boolean;
-  burn_per_second: number;
-  wrong_streak: number;
+  potatoes: PotatoView[];
   max_wrong_streak: number;
   penalty_seconds: number;
   fuse_range: number[];
-  text: string | null;
-  theme: string | null;
-  difficulty: ("easy" | "medium" | "hard" | "impossible") | null;
-  options: string[];
-  turn: HotPotatoTurn | null;
   exploded: string | null;
+  exploded_golden: boolean;
   winner: string | null;
   players: HotPotatoPlayer[];
   direction: 1 | -1;
@@ -682,6 +718,11 @@ export interface HotPotatoView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -719,6 +760,11 @@ export interface HotPotatoView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -758,6 +804,11 @@ export interface HotPotatoView {
         | "duel"
         | "cold_water"
         | "free_pass"
+        | "short_fuse"
+        | "double_bomb"
+        | "scare"
+        | "thermometer"
+        | "double_potato"
         | "mutiny"
         | "infiltrator"
         | "gag"
@@ -771,13 +822,40 @@ export interface HotPotatoView {
         | "blessing"
       )
     | null;
+  shielded: string[];
+  gifts: Gift[];
+  revived: string[];
+}
+/**
+ * Uma batata na roda. Estados: asking (quem está com ela responde) → passing (acertou, ela voa
+ * para o próximo), wrong (errou, outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "PotatoView".
+ */
+export interface PotatoView {
+  id: number;
+  golden: boolean;
+  excluded: string | null;
+  holder: string | null;
+  state: "asking" | "passing" | "wrong" | "again";
+  state_duration_ms: number;
+  state_ends_in_ms: number;
+  heat: number;
+  burning: boolean;
+  burn_per_second: number;
+  fuse_ms: number | null;
+  wrong_streak: number;
+  need_right: number;
+  text: string | null;
+  theme: string | null;
+  difficulty: ("easy" | "medium" | "hard" | "impossible") | null;
+  options: string[];
+  turn: HotPotatoTurn | null;
   uses: PowerUpUse[];
   hidden_options: number[];
   first_wrong: number | null;
-  shielded: string[];
   flashbang: boolean;
-  gifts: Gift[];
-  revived: string[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -961,6 +1039,11 @@ export interface SurvivalView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -998,6 +1081,11 @@ export interface SurvivalView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1035,6 +1123,11 @@ export interface SurvivalView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1074,6 +1167,11 @@ export interface SurvivalView {
         | "duel"
         | "cold_water"
         | "free_pass"
+        | "short_fuse"
+        | "double_bomb"
+        | "scare"
+        | "thermometer"
+        | "double_potato"
         | "mutiny"
         | "infiltrator"
         | "gag"
@@ -1224,6 +1322,11 @@ export interface TeamMatchView {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1290,6 +1393,11 @@ export interface TeamSide {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1327,6 +1435,11 @@ export interface TeamSide {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1399,6 +1512,11 @@ export interface TeamPowerUse {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1469,6 +1587,7 @@ export interface SetTeamRequest {
 export interface SubmitAnswerRequest {
   option: number;
   team?: number | null;
+  potato?: number | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -1536,6 +1655,11 @@ export interface UsePowerUpRequest {
     | "duel"
     | "cold_water"
     | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "scare"
+    | "thermometer"
+    | "double_potato"
     | "mutiny"
     | "infiltrator"
     | "gag"
@@ -1548,4 +1672,5 @@ export interface UsePowerUpRequest {
     | "dagger"
     | "blessing";
   target_team?: number | null;
+  potato?: number | null;
 }

@@ -82,8 +82,8 @@ const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
 }
 const SURVIVAL_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'reverse', 'theme', 'backpack', 'medkit', 'hide']
 const SURVIVAL_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'flashbang', 'curse', 'blood_pact']
-const POTATO_HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass']
-const POTATO_SABOTAGES: Kind[] = ['accelerator', 'scramble', 'mirror', 'magnifier', 'flashbang']
+const POTATO_HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass', 'thermometer']
+const POTATO_SABOTAGES: Kind[] = ['accelerator', 'scramble', 'mirror', 'magnifier', 'flashbang', 'scratch', 'short_fuse', 'double_bomb']
 const TEAM_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'theme', 'backpack', 'iron_captain']
 const TEAM_ATTACKS: Kind[] = [
   'scratch',
@@ -196,7 +196,8 @@ const GUIDES: Record<Mode, Guide> = {
       'Tudo vale na hora. Ajudas, só quem está com a batata usa. Sabotagens, quem está assistindo joga em quem está com a batata, valendo na pergunta atual (uma por pessoa por pergunta).',
       'Aqui não tem lendários.',
       'A cada explosão (menos a última), quem continua vivo ganha um poder.',
-      'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição.',
+      'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição. O Susto é só dos fantasmas.',
+      'Batata dupla (mítico, 4% dos poderes ganhos por acertos seguidos): entra uma batata dourada na roda, com pavio próprio de 30 a 45s. Ela começa com quem está mais longe da principal, nunca vai para quem a jogou e dura até explodir. Quem estiver com as duas responde uma pergunta para cada. Precisa de pelo menos 3 na roda.',
     ],
     powers: [
       {
@@ -210,8 +211,13 @@ const GUIDES: Record<Mode, Guide> = {
         hints: POTATO_HINTS,
       },
       {
-        title: 'Mítico dos fantasmas',
-        kinds: ['resurrection'],
+        title: 'Só dos fantasmas',
+        kinds: ['scare'],
+        hints: POTATO_HINTS,
+      },
+      {
+        title: 'Míticos',
+        kinds: ['double_potato', 'resurrection'],
         hints: POTATO_HINTS,
         mythic: true,
       },

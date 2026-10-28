@@ -20,7 +20,7 @@ PowerUp = Literal[
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
-    "cold_water", "free_pass",  # só na Batata quente
+    "cold_water", "free_pass", "short_fuse", "double_bomb", "scare", "thermometer", "double_potato",  # só na Batata quente
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
     "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
 ]
@@ -94,6 +94,7 @@ class ChooseRepresentativeRequest(BaseModel):
 class SubmitAnswerRequest(BaseModel):
     option: int
     team: int | None = None  # Times: o Infiltrado votando no time adversário
+    potato: int | None = None  # Batata quente: qual batata (com a Batata dupla, dá para estar com as duas)
 
 
 class SubmitBetRequest(BaseModel):
@@ -121,6 +122,7 @@ class UsePowerUpRequest(BaseModel):
 
     kind: PowerUp
     target_team: int | None = None  # Times: o time que o Espiar olha
+    potato: int | None = None  # Batata quente: em qual batata (com a Batata dupla)
 
 
 # --- Servidor → cliente -------------------------------------------------------
@@ -433,29 +435,48 @@ class HotPotatoPlayer(BaseModel):
     place: int | None  # só no fim
 
 
-class HotPotatoView(BaseModel):
-    """Batata quente. Fases: starting → asking (quem está com a batata responde) → passing
-    (acertou, a batata voa para o próximo) ou wrong (errou, outra pergunta) → … → exploded (o pavio
-    acabou ou foram 3 erros seguidos) → asking da rodada seguinte … → finished."""
+class PotatoView(BaseModel):
+    """Uma batata na roda. Estados: asking (quem está com ela responde) → passing (acertou, ela voa
+    para o próximo), wrong (errou, outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma)."""
 
-    phase: Literal["starting", "asking", "passing", "wrong", "exploded", "finished"]
-    phase_duration_ms: int
-    phase_ends_in_ms: int  # no asking, é o pavio: o front não deve mostrar
-    round: int
+    id: int
+    golden: bool  # a Batata dupla (mítico): pavio próprio, nunca vai para quem a jogou
+    excluded: str | None  # quem jogou a Batata dupla
     holder: str | None
+    state: Literal["asking", "passing", "wrong", "again"]
+    state_duration_ms: int
+    state_ends_in_ms: int  # no asking, é o pavio: o front não deve mostrar
     heat: float  # 0 a 1: quanto do pavio já queimou no envio
-    burning: bool  # o pavio está queimando agora (para durante o passe e o erro)
+    burning: bool  # o pavio está queimando agora (para no passe, no erro e na explosão)
     burn_per_second: float  # quanto o heat sobe por segundo enquanto queima
+    fuse_ms: int | None  # Termômetro: o pavio que falta, só para quem está com ela
     wrong_streak: int
-    max_wrong_streak: int
-    penalty_seconds: float
-    fuse_range: list[float]
+    need_right: int  # acertos que faltam para passar (2 com a Bomba dupla)
     text: str | None
     theme: str | None
     difficulty: Difficulty | None
     options: list[str]
     turn: HotPotatoTurn | None
+    uses: list[PowerUpUse]  # poderes usados nesta pergunta
+    hidden_options: list[int]  # 50/50 (todos veem)
+    first_wrong: int | None  # Segunda chance: a primeira escolha, errada
+    flashbang: bool  # Flashbang em você: só as letras das alternativas até a próxima pergunta
+
+
+class HotPotatoView(BaseModel):
+    """Batata quente. Fases: starting → playing (as batatas rodando) → exploded (o pavio de uma
+    acabou ou foram 3 erros seguidos; tudo para) → playing … → finished."""
+
+    phase: Literal["starting", "playing", "exploded", "finished"]
+    phase_duration_ms: int
+    phase_ends_in_ms: int  # só no starting e no exploded
+    round: int
+    potatoes: list[PotatoView]  # a principal primeiro; com a Batata dupla, a dourada também
+    max_wrong_streak: int
+    penalty_seconds: float
+    fuse_range: list[float]
     exploded: str | None
+    exploded_golden: bool  # quem explodiu foi a dourada
     winner: str | None
     players: list[HotPotatoPlayer]
     direction: Literal[1, -1]  # 1 = sentido da roda; -1 = invertido
@@ -463,14 +484,10 @@ class HotPotatoView(BaseModel):
     # quem está com a batata, valendo na pergunta atual.
     powers: bool
     powerups: list[PowerUp]
-    mythic_powerups: list[PowerUp]  # a Ressurreição dos fantasmas
+    mythic_powerups: list[PowerUp]  # Batata dupla e a Ressurreição dos fantasmas
     powerup_max: int
     starting_powerup: PowerUp | None
-    uses: list[PowerUpUse]  # poderes usados na pergunta atual
-    hidden_options: list[int]  # 50/50 (de quem está com a batata; todos veem)
-    first_wrong: int | None  # Segunda chance: a primeira escolha, errada
     shielded: list[str]  # quem está com o Escudo armado
-    flashbang: bool  # Flashbang em você: só as letras das alternativas até a próxima pergunta
     gifts: list[Gift]  # poderes ganhos agora (no acerto ou na explosão)
     revived: list[str]  # quem ressuscitou desde a última pergunta
 

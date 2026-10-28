@@ -63,6 +63,8 @@ export default function App() {
     setScreen({ name: 'home' })
   }
 
+  // Não é hook (só o nome começa com "use"): o apelido deixa chamar dentro de um callback.
+  const spendPowerUp = usePowerUp
   let content
   if (snapshot && room?.team_match) {
     content = (
@@ -81,7 +83,16 @@ export default function App() {
       />
     )
   } else if (snapshot && room?.hot_potato) {
-    content = <HotPotato snapshot={snapshot} playerId={playerId} onAnswer={answer} onUse={usePowerUp} onPlayAgain={playAgain} onLeave={leaveRoom} />
+    content = (
+      <HotPotato
+        snapshot={snapshot}
+        playerId={playerId}
+        onAnswer={(option, potato) => answer(option, null, potato)}
+        onUse={(kind, potato) => spendPowerUp(kind, null, potato)}
+        onPlayAgain={playAgain}
+        onLeave={leaveRoom}
+      />
+    )
   } else if (snapshot && room?.survival) {
     content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.game) {

@@ -446,7 +446,7 @@ async def start_game(sid: str) -> dict:
 async def submit_answer(sid: str, data: dict) -> dict:
     try:
         request = SubmitAnswerRequest.model_validate(data)
-        room = rooms.answer(sid, request.option, time.monotonic(), request.team)
+        room = rooms.answer(sid, request.option, time.monotonic(), request.team, request.potato)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
@@ -487,7 +487,7 @@ async def arm_powerup(sid: str, data: dict) -> dict:
 async def use_powerup(sid: str, data: dict) -> dict:
     try:
         request = UsePowerUpRequest.model_validate(data)
-        room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team)
+        room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team, request.potato)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:

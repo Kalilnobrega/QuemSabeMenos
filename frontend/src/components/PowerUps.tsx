@@ -327,6 +327,58 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'short_fuse') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" />
+        <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="#E5E7EB" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M13 3.5c2.8 2.3 5 5 5 8a5 5 0 0 1-10 0c0-2 1-3.6 2.3-4.8.2 1.6 1 2.4 1.9 2.6-.2-2.2.2-4 .8-5.8Z" fill="#F97316" {...ICON_STROKE} />
+        <path d="M13 9.5c1.2 1.1 2.1 2.2 2.1 3.4a2.1 2.1 0 0 1-4.2 0c0-1.2.9-2.3 2.1-3.4Z" fill="#FDE047" />
+      </svg>
+    )
+  }
+  if (kind === 'double_bomb') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <circle cx="8.5" cy="14.5" r="5.5" fill="#334155" {...ICON_STROKE} />
+        <circle cx="15.5" cy="14.5" r="5.5" fill="#475569" {...ICON_STROKE} />
+        <path d="M15.5 9V6.5c0-1.5 1.5-2.5 3-2" fill="none" stroke="#12141B" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="19" cy="4" r="1.6" fill="#FB923C" />
+        <text x="15.5" y="17.3" textAnchor="middle" fontSize="7" fontWeight="900" fill="#F8FAFC">2</text>
+      </svg>
+    )
+  }
+  if (kind === 'scare') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M5 21V10a7 7 0 0 1 14 0v11l-2.3-1.8L14.3 21 12 19.2 9.7 21l-2.4-1.8Z" fill="#F1F5F9" {...ICON_STROKE} />
+        <ellipse cx="9.3" cy="10.5" rx="1.4" ry="1.9" fill="#12141B" />
+        <ellipse cx="14.7" cy="10.5" rx="1.4" ry="1.9" fill="#12141B" />
+        <ellipse cx="12" cy="15" rx="1.6" ry="2" fill="#12141B" />
+      </svg>
+    )
+  }
+  if (kind === 'thermometer') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M10 4a2 2 0 0 1 4 0v10.3a4 4 0 1 1-4 0Z" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M12 7.5v8" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="12" cy="17.7" r="2.4" fill="#EF4444" />
+        <path d="M15.5 6.5h2M15.5 9.5h2M15.5 12.5h2" stroke="#12141B" strokeWidth="1.3" strokeLinecap="round" />
+      </svg>
+    )
+  }
+  if (kind === 'double_potato') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <ellipse cx="9" cy="14" rx="6.2" ry="5" fill="#A3753B" transform="rotate(-18 9 14)" {...ICON_STROKE} />
+        <ellipse cx="15.5" cy="11" rx="6.2" ry="5" fill="#FACC15" transform="rotate(-18 15.5 11)" {...ICON_STROKE} />
+        <path d="M12.5 9.3c1-1.2 2.3-1.8 3.6-1.8" fill="none" stroke="#FEF9C3" strokeWidth="1.3" strokeLinecap="round" />
+        <path d="M19 6.5l1.5-2.2" stroke="#12141B" strokeWidth="1.6" strokeLinecap="round" />
+        <circle cx="20.8" cy="3.8" r="1.4" fill="#FB923C" />
+      </svg>
+    )
+  }
   if (kind === 'scratch') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

@@ -33,6 +33,11 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   decoy: { name: 'Alternativa falsa', hint: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha 10 de QI.', targeted: true, tone: 'bg-purple-400/15 text-purple-200' },
   flashbang: { name: 'Flashbang', hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.', targeted: true, tone: 'bg-yellow-100/15 text-yellow-50' },
   cold_water: { name: 'Água fria', hint: 'Só na Batata quente: o pavio ganha +10s.', targeted: false, tone: 'bg-sky-300/15 text-sky-100' },
+  short_fuse: { name: 'Pavio curto', hint: 'Só na Batata quente: queima 10s do pavio de quem está com a batata, na hora.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
+  double_bomb: { name: 'Bomba dupla', hint: 'Só na Batata quente: quem está com a batata precisa acertar 2 seguidas para passar.', targeted: true, tone: 'bg-orange-700/25 text-orange-200' },
+  scare: { name: 'Susto', hint: 'Só para fantasma, na Batata quente: a batata "explode" na tela de quem está com ela. É de mentira.', targeted: true, tone: 'bg-slate-400/15 text-slate-100' },
+  thermometer: { name: 'Termômetro', hint: 'Só na Batata quente: você vê quanto falta do pavio enquanto a batata estiver com você.', targeted: false, tone: 'bg-sky-400/15 text-sky-100' },
+  double_potato: { name: 'Batata dupla', hint: 'Mítico, só na Batata quente: entra uma batata dourada na roda, com pavio próprio. Ela nunca vai para você.', targeted: false, tone: 'bg-yellow-300/15 text-yellow-100' },
   free_pass: { name: 'Passe livre', hint: 'Só na Batata quente: passa a batata sem responder.', targeted: false, tone: 'bg-emerald-400/15 text-emerald-200' },
   mutiny: { name: 'Motim', hint: 'Só nos Times: o time alvo fica sem capitão por 3 perguntas.', targeted: true, tone: 'bg-rose-500/15 text-rose-200' },
   infiltrator: { name: 'Infiltrado', hint: 'Só nos Times: alguém do seu time vota também no time alvo, valendo 2 votos.', targeted: true, tone: 'bg-slate-300/15 text-slate-100' },
@@ -79,6 +84,7 @@ export const POTATO_HINTS: Partial<Record<Kind, string>> = {
   mirror: 'A pergunta de quem está com a batata aparece espelhada.',
   magnifier: 'A pergunta de quem está com a batata fica borrada: só dá para ler com a lupa.',
   flashbang: 'Quem está com a batata fica cego: só vê as letras das alternativas nesta pergunta.',
+  scratch: 'A pergunta de quem está com a batata vem coberta: tem que raspar para ler.',
   resurrection: 'Mítico, só para fantasma: você volta para a roda.',
 }
 

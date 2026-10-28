@@ -29,6 +29,11 @@
             "duel",
             "cold_water",
             "free_pass",
+            "short_fuse",
+            "double_bomb",
+            "scare",
+            "thermometer",
+            "double_potato",
             "mutiny",
             "infiltrator",
             "gag",
@@ -523,6 +528,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -566,6 +576,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -609,6 +624,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -678,6 +698,11 @@
                 "duel",
                 "cold_water",
                 "free_pass",
+                "short_fuse",
+                "double_bomb",
+                "scare",
+                "thermometer",
+                "double_potato",
                 "mutiny",
                 "infiltrator",
                 "gag",
@@ -962,14 +987,12 @@
       "type": "object"
     },
     "HotPotatoView": {
-      "description": "Batata quente. Fases: starting → asking (quem está com a batata responde) → passing\n(acertou, a batata voa para o próximo) ou wrong (errou, outra pergunta) → … → exploded (o pavio\nacabou ou foram 3 erros seguidos) → asking da rodada seguinte … → finished.",
+      "description": "Batata quente. Fases: starting → playing (as batatas rodando) → exploded (o pavio de uma\nacabou ou foram 3 erros seguidos; tudo para) → playing … → finished.",
       "properties": {
         "phase": {
           "enum": [
             "starting",
-            "asking",
-            "passing",
-            "wrong",
+            "playing",
             "exploded",
             "finished"
           ],
@@ -984,27 +1007,11 @@
         "round": {
           "type": "integer"
         },
-        "holder": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "heat": {
-          "type": "number"
-        },
-        "burning": {
-          "type": "boolean"
-        },
-        "burn_per_second": {
-          "type": "number"
-        },
-        "wrong_streak": {
-          "type": "integer"
+        "potatoes": {
+          "items": {
+            "$ref": "#/$defs/PotatoView"
+          },
+          "type": "array"
         },
         "max_wrong_streak": {
           "type": "integer"
@@ -1018,58 +1025,6 @@
           },
           "type": "array"
         },
-        "text": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "theme": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "difficulty": {
-          "anyOf": [
-            {
-              "enum": [
-                "easy",
-                "medium",
-                "hard",
-                "impossible"
-              ],
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "options": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "turn": {
-          "anyOf": [
-            {
-              "$ref": "#/$defs/HotPotatoTurn"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "exploded": {
           "anyOf": [
             {
@@ -1079,6 +1034,9 @@
               "type": "null"
             }
           ]
+        },
+        "exploded_golden": {
+          "type": "boolean"
         },
         "winner": {
           "anyOf": [
@@ -1133,6 +1091,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -1176,6 +1139,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -1223,6 +1191,11 @@
                 "duel",
                 "cold_water",
                 "free_pass",
+                "short_fuse",
+                "double_bomb",
+                "scare",
+                "thermometer",
+                "double_potato",
                 "mutiny",
                 "infiltrator",
                 "gag",
@@ -1242,36 +1215,11 @@
             }
           ]
         },
-        "uses": {
-          "items": {
-            "$ref": "#/$defs/PowerUpUse"
-          },
-          "type": "array"
-        },
-        "hidden_options": {
-          "items": {
-            "type": "integer"
-          },
-          "type": "array"
-        },
-        "first_wrong": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "shielded": {
           "items": {
             "type": "string"
           },
           "type": "array"
-        },
-        "flashbang": {
-          "type": "boolean"
         },
         "gifts": {
           "items": {
@@ -1291,20 +1239,12 @@
         "phase_duration_ms",
         "phase_ends_in_ms",
         "round",
-        "holder",
-        "heat",
-        "burning",
-        "burn_per_second",
-        "wrong_streak",
+        "potatoes",
         "max_wrong_streak",
         "penalty_seconds",
         "fuse_range",
-        "text",
-        "theme",
-        "difficulty",
-        "options",
-        "turn",
         "exploded",
+        "exploded_golden",
         "winner",
         "players",
         "direction",
@@ -1313,11 +1253,7 @@
         "mythic_powerups",
         "powerup_max",
         "starting_powerup",
-        "uses",
-        "hidden_options",
-        "first_wrong",
         "shielded",
-        "flashbang",
         "gifts",
         "revived"
       ],
@@ -1420,6 +1356,11 @@
             "duel",
             "cold_water",
             "free_pass",
+            "short_fuse",
+            "double_bomb",
+            "scare",
+            "thermometer",
+            "double_potato",
             "mutiny",
             "infiltrator",
             "gag",
@@ -1529,6 +1470,180 @@
       "title": "Pong",
       "type": "object"
     },
+    "PotatoView": {
+      "description": "Uma batata na roda. Estados: asking (quem está com ela responde) → passing (acertou, ela voa\npara o próximo), wrong (errou, outra pergunta) ou again (acertou, mas a Bomba dupla pede mais uma).",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "golden": {
+          "type": "boolean"
+        },
+        "excluded": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "holder": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state": {
+          "enum": [
+            "asking",
+            "passing",
+            "wrong",
+            "again"
+          ],
+          "type": "string"
+        },
+        "state_duration_ms": {
+          "type": "integer"
+        },
+        "state_ends_in_ms": {
+          "type": "integer"
+        },
+        "heat": {
+          "type": "number"
+        },
+        "burning": {
+          "type": "boolean"
+        },
+        "burn_per_second": {
+          "type": "number"
+        },
+        "fuse_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "wrong_streak": {
+          "type": "integer"
+        },
+        "need_right": {
+          "type": "integer"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "difficulty": {
+          "anyOf": [
+            {
+              "enum": [
+                "easy",
+                "medium",
+                "hard",
+                "impossible"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "options": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "turn": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HotPotatoTurn"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uses": {
+          "items": {
+            "$ref": "#/$defs/PowerUpUse"
+          },
+          "type": "array"
+        },
+        "hidden_options": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "first_wrong": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "flashbang": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "golden",
+        "excluded",
+        "holder",
+        "state",
+        "state_duration_ms",
+        "state_ends_in_ms",
+        "heat",
+        "burning",
+        "burn_per_second",
+        "fuse_ms",
+        "wrong_streak",
+        "need_right",
+        "text",
+        "theme",
+        "difficulty",
+        "options",
+        "turn",
+        "uses",
+        "hidden_options",
+        "first_wrong",
+        "flashbang"
+      ],
+      "title": "PotatoView",
+      "type": "object"
+    },
     "PowerUpGain": {
       "properties": {
         "kind": {
@@ -1557,6 +1672,11 @@
             "duel",
             "cold_water",
             "free_pass",
+            "short_fuse",
+            "double_bomb",
+            "scare",
+            "thermometer",
+            "double_potato",
             "mutiny",
             "infiltrator",
             "gag",
@@ -1626,6 +1746,11 @@
             "duel",
             "cold_water",
             "free_pass",
+            "short_fuse",
+            "double_bomb",
+            "scare",
+            "thermometer",
+            "double_potato",
             "mutiny",
             "infiltrator",
             "gag",
@@ -2113,6 +2238,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -2219,6 +2349,17 @@
           "type": "integer"
         },
         "team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "potato": {
           "anyOf": [
             {
               "type": "integer"
@@ -2526,6 +2667,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -2569,6 +2715,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -2612,6 +2763,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -2659,6 +2815,11 @@
                 "duel",
                 "cold_water",
                 "free_pass",
+                "short_fuse",
+                "double_bomb",
+                "scare",
+                "thermometer",
+                "double_potato",
                 "mutiny",
                 "infiltrator",
                 "gag",
@@ -3102,6 +3263,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -3259,6 +3425,11 @@
             "duel",
             "cold_water",
             "free_pass",
+            "short_fuse",
+            "double_bomb",
+            "scare",
+            "thermometer",
+            "double_potato",
             "mutiny",
             "infiltrator",
             "gag",
@@ -3443,6 +3614,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -3486,6 +3662,11 @@
               "duel",
               "cold_water",
               "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "scare",
+              "thermometer",
+              "double_potato",
               "mutiny",
               "infiltrator",
               "gag",
@@ -3819,6 +4000,11 @@
             "duel",
             "cold_water",
             "free_pass",
+            "short_fuse",
+            "double_bomb",
+            "scare",
+            "thermometer",
+            "double_potato",
             "mutiny",
             "infiltrator",
             "gag",
@@ -3834,6 +4020,17 @@
           "type": "string"
         },
         "target_team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "potato": {
           "anyOf": [
             {
               "type": "integer"

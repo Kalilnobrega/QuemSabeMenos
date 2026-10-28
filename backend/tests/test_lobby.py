@@ -369,12 +369,15 @@ async def test_hot_potato_passes_and_explodes(connect, monkeypatch):
     def hp(state: dict) -> dict:
         return state["hot_potato"] or {}
 
-    state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking")
-    first = hp(state)["holder"]
+    def potato(state: dict) -> dict:
+        return (hp(state).get("potatoes") or [{}])[0]
+
+    state = await ana.wait_for(lambda s: potato(s).get("state") == "asking")
+    first = potato(state)["holder"]
     client = ana if first == created["player_id"] else bia
-    assert (await client.call("submit_answer", {"option": game.question.answer}))["ok"]
-    state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking" and hp(s)["holder"] != first)
-    second = hp(state)["holder"]
+    assert (await client.call("submit_answer", {"option": game.main.question.answer}))["ok"]
+    state = await ana.wait_for(lambda s: potato(s).get("state") == "asking" and potato(s)["holder"] != first)
+    second = potato(state)["holder"]
     assert second in (created["player_id"], joined["player_id"])
     state = await ana.wait_for(lambda s: hp(s).get("phase") == "exploded")
     assert hp(state)["exploded"] == second
@@ -396,14 +399,17 @@ async def test_hot_potato_with_powers_uses_them_on_the_spot(connect, monkeypatch
     def hp(state: dict) -> dict:
         return state["hot_potato"] or {}
 
-    state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking")
+    def potato(state: dict) -> dict:
+        return (hp(state).get("potatoes") or [{}])[0]
+
+    state = await ana.wait_for(lambda s: potato(s).get("state") == "asking")
     assert hp(state)["powers"] and len(hp(state)["powerups"]) == 1
-    first = hp(state)["holder"]
+    first = potato(state)["holder"]
     client = ana if first == created["player_id"] else bia
     game.held[first] = ["free_pass"]
     assert (await client.call("use_powerup", {"kind": "free_pass"}))["ok"]
-    state = await ana.wait_for(lambda s: hp(s).get("phase") == "asking" and hp(s)["holder"] != first)
-    assert hp(state)["holder"] != first
+    state = await ana.wait_for(lambda s: potato(s).get("state") == "asking" and potato(s)["holder"] != first)
+    assert potato(state)["holder"] != first
 
 
 async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatch):

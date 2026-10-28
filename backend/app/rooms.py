@@ -417,7 +417,7 @@ class RoomManager:
         room.game.start_round(now)
         return room
 
-    def answer(self, sid: str, option: int, now: float, team: int | None = None) -> Room:
+    def answer(self, sid: str, option: int, now: float, team: int | None = None, potato: int | None = None) -> Room:
         found = self.session(sid)
         if found and found[0].team_match:
             room, player = found
@@ -425,7 +425,7 @@ class RoomManager:
         if found and found[0].hot_potato:
             room, player = found
             try:
-                room.hot_potato.answer(player.id, option, now)
+                room.hot_potato.answer(player.id, option, now, potato)
             except HotPotatoError as e:
                 raise RoomError(str(e)) from e
             return room
@@ -501,13 +501,15 @@ class RoomManager:
             raise RoomError(str(e)) from e
         return room
 
-    def use_powerup(self, sid: str, kind: PowerUp, now: float | None = None, target_team: int | None = None) -> Room:
+    def use_powerup(
+        self, sid: str, kind: PowerUp, now: float | None = None, target_team: int | None = None, potato: int | None = None
+    ) -> Room:
         room, player = self._playing(sid)
         if room.team_match:
             return self._on_teams(room, lambda m: m.use_now(player.id, kind, target_team))
         if room.hot_potato:
             try:
-                room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now)
+                room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now, potato)
             except HotPotatoError as e:
                 raise RoomError(str(e)) from e
             return room
