@@ -31,6 +31,7 @@
             "free_pass",
             "short_fuse",
             "double_bomb",
+            "ghost_hint",
             "thermometer",
             "double_potato",
             "mutiny",
@@ -529,6 +530,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -576,6 +578,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -623,6 +626,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -696,6 +700,7 @@
                 "free_pass",
                 "short_fuse",
                 "double_bomb",
+                "ghost_hint",
                 "thermometer",
                 "double_potato",
                 "mutiny",
@@ -1088,6 +1093,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -1135,6 +1141,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -1186,6 +1193,7 @@
                 "free_pass",
                 "short_fuse",
                 "double_bomb",
+                "ghost_hint",
                 "thermometer",
                 "double_potato",
                 "mutiny",
@@ -1350,6 +1358,7 @@
             "free_pass",
             "short_fuse",
             "double_bomb",
+            "ghost_hint",
             "thermometer",
             "double_potato",
             "mutiny",
@@ -1607,6 +1616,16 @@
         },
         "flashbang": {
           "type": "boolean"
+        },
+        "ghost_hint": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -1631,7 +1650,8 @@
         "uses",
         "hidden_options",
         "first_wrong",
-        "flashbang"
+        "flashbang",
+        "ghost_hint"
       ],
       "title": "PotatoView",
       "type": "object"
@@ -1666,6 +1686,7 @@
             "free_pass",
             "short_fuse",
             "double_bomb",
+            "ghost_hint",
             "thermometer",
             "double_potato",
             "mutiny",
@@ -1739,6 +1760,7 @@
             "free_pass",
             "short_fuse",
             "double_bomb",
+            "ghost_hint",
             "thermometer",
             "double_potato",
             "mutiny",
@@ -2230,6 +2252,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -2658,6 +2681,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -2705,6 +2729,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -2752,6 +2777,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -2803,6 +2829,7 @@
                 "free_pass",
                 "short_fuse",
                 "double_bomb",
+                "ghost_hint",
                 "thermometer",
                 "double_potato",
                 "mutiny",
@@ -3250,6 +3277,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -3411,6 +3439,7 @@
             "free_pass",
             "short_fuse",
             "double_bomb",
+            "ghost_hint",
             "thermometer",
             "double_potato",
             "mutiny",
@@ -3599,6 +3628,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -3646,6 +3676,7 @@
               "free_pass",
               "short_fuse",
               "double_bomb",
+              "ghost_hint",
               "thermometer",
               "double_potato",
               "mutiny",
@@ -3983,6 +4014,7 @@
             "free_pass",
             "short_fuse",
             "double_bomb",
+            "ghost_hint",
             "thermometer",
             "double_potato",
             "mutiny",
@@ -4011,6 +4043,17 @@
           "default": null
         },
         "potato": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "option": {
           "anyOf": [
             {
               "type": "integer"

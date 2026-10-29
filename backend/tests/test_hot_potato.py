@@ -418,3 +418,25 @@ def test_double_potato_needs_three_alive():
     game.mythics[other] = ["double_potato"]
     with pytest.raises(HotPotatoError, match="pelo menos 3"):
         game.use(other, "double_potato", 0)
+
+
+def test_ghost_hint_marks_an_option_for_everyone_and_is_only_for_ghosts():
+    game = powered(players=4)
+    ghost = game.main.holder
+    game.advance(game.deadline())
+    game.advance(game.phase_ends_at)
+    potato = game.main
+    alive_watcher = watcher(game)
+    give(game, alive_watcher, "ghost_hint")
+    with pytest.raises(HotPotatoError, match="só para fantasma"):
+        game.use(alive_watcher, "ghost_hint", potato.state_started_at, option=1)
+    give(game, ghost, "ghost_hint")
+    with pytest.raises(HotPotatoError, match="alternativa"):
+        game.use(ghost, "ghost_hint", potato.state_started_at)
+    game.use(ghost, "ghost_hint", potato.state_started_at, option=2)
+    ids = [p.id for p in game.players]
+    assert game.view(0, ids, potato.holder).potatoes[0].ghost_hint == 2
+    assert game.view(0, ids, alive_watcher).potatoes[0].ghost_hint == 2
+    game.answer(potato.holder, right(potato), potato.state_started_at)
+    game.advance(potato.state_ends_at)
+    assert potato.ghost_hint is None  # vale só na pergunta em que foi dado

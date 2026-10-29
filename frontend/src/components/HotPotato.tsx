@@ -20,7 +20,7 @@ interface Props {
   snapshot: Snapshot
   playerId: string | null
   onAnswer: (option: number, potato: number) => Promise<string | null>
-  onUse: (kind: Kind, potato?: number | null) => Promise<string | null>
+  onUse: (kind: Kind, potato?: number | null, option?: number | null) => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
@@ -345,8 +345,13 @@ function QuestionPanel({
                     key={index}
                     onClick={() => void pick(index)}
                     disabled={!canAnswer || gone}
-                    className={`btn-3d btn-sm flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${state}`}
+                    className={`btn-3d btn-sm relative flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${state}`}
                   >
+                    {potato.ghost_hint === index && !reveal && (
+                      <span className="absolute -top-2.5 right-1 flex items-center gap-1 rounded-full bg-indigo-500 px-1.5 py-0.5 text-[0.65rem] font-bold text-white">
+                        <PowerUpIcon kind="ghost_hint" className="size-4" />o fantasma acha que é esta
+                      </span>
+                    )}
                     <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
                     <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
                   </button>
@@ -405,6 +410,7 @@ function PotatoUses({ uses, name, playerId }: { uses: PowerUpUse[]; name: (id: s
   const line = (use: PowerUpUse) => {
     const info = POWERUP_INFO[use.kind]
     const by = name(use.by)
+    if (use.kind === 'ghost_hint') return `${by} deu um Palpite do além: confia?`
     if (use.target === playerId) return `${by} jogou ${info.name} em você!`
     if (use.target) return `${by} jogou ${info.name} em ${name(use.target)}!`
     const extra: Partial<Record<Kind, string>> = {
@@ -436,6 +442,7 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
   const [busy, setBusy] = useState(false)
   const [gift, setGift] = useState<string | null>(null)
   const [choosing, setChoosing] = useState<{ kind: Kind; potatoes: PotatoView[] } | null>(null)
+  const [hinting, setHinting] = useState<PotatoView | null>(null)
   const timer = useRef<number | undefined>(undefined)
   const me = game.players.find((p) => p.player_id === playerId)
   const ghost = !!me && me.out_round !== null
@@ -456,7 +463,7 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
 
   // As batatas em que cada poder pode valer agora.
   const targets = (kind: Kind) => {
-    if (busy || !playing) return []
+    if (busy || !playing || (kind === 'ghost_hint' && !ghost)) return []
     const open = game.potatoes.filter((p) => p.state === 'asking' && !p.uses.some((u) => u.kind === kind))
     if (HELPS.includes(kind)) {
       return open.filter(
@@ -469,17 +476,20 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
     }
     return open.filter((p) => p.holder !== playerId && !p.uses.some((u) => u.by === playerId && !HELPS.includes(u.kind)))
   }
-  const fire = async (kind: Kind, potato: number | null = null) => {
+  const fire = async (kind: Kind, potato: number | null = null, option: number | null = null) => {
     playSound(kind === 'resurrection' ? 'resurrection' : 'powerArm')
     setChoosing(null)
+    setHinting(null)
     setBusy(true)
-    setError(await onUse(kind, potato))
+    setError(await onUse(kind, potato, option))
     setBusy(false)
   }
+  // O Palpite do além pede a batata (se tiver duas) e depois a alternativa.
+  const pickPotato = (kind: Kind, potato: PotatoView) => (kind === 'ghost_hint' ? setHinting(potato) : void fire(kind, potato.id))
   const tap = (kind: Kind) => {
     const options = targets(kind)
     if (options.length > 1) return setChoosing({ kind, potatoes: options })
-    void fire(kind, options[0]?.id ?? null)
+    if (options[0]) pickPotato(kind, options[0])
   }
   const mythicReady = (kind: Kind) => {
     if (busy || !playing) return false
@@ -497,7 +507,27 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
   return (
     <div className="flex flex-col gap-1.5 rounded-xl bg-panel px-3 py-2.5">
       {gift && <p className="avatar-pop text-sm font-semibold text-brand">{gift}</p>}
-      {choosing ? (
+      {hinting ? (
+        <div className="flex flex-col gap-2">
+          <p className="flex items-center gap-2 text-sm font-semibold">
+            <PowerUpIcon kind="ghost_hint" className="size-6" />
+            Palpite do além: qual alternativa você vai marcar? Pode ser a certa… ou não.
+          </p>
+          <div className="grid grid-cols-2 gap-2">
+            {hinting.options.map((option, index) =>
+              hinting.hidden_options.includes(index) ? null : (
+                <button key={index} onClick={() => void fire('ghost_hint', hinting.id, index)} className="btn-3d btn-sm btn-dark rounded-xl px-2 py-1.5 text-left text-sm font-semibold">
+                  <span className="mr-1 font-display text-brand">{LETTERS[index]}</span>
+                  {option}
+                </button>
+              ),
+            )}
+          </div>
+          <button onClick={() => setHinting(null)} className="btn-3d btn-sm btn-dark self-start rounded-xl px-3 py-1.5 font-semibold text-steel">
+            Cancelar
+          </button>
+        </div>
+      ) : choosing ? (
         <div className="flex flex-col gap-2">
           <p className="flex items-center gap-2 text-sm font-semibold">
             <PowerUpIcon kind={choosing.kind} className="size-6" />
@@ -507,7 +537,10 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
             {choosing.potatoes.map((p) => (
               <button
                 key={p.id}
-                onClick={() => void fire(choosing.kind, p.id)}
+                onClick={() => {
+                  setChoosing(null)
+                  pickPotato(choosing.kind, p)
+                }}
                 className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${p.golden ? 'text-yellow-200' : ''}`}
               >
                 <PotatoIcon golden={p.golden} className="size-6" />

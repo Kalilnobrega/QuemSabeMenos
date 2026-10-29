@@ -487,7 +487,7 @@ async def arm_powerup(sid: str, data: dict) -> dict:
 async def use_powerup(sid: str, data: dict) -> dict:
     try:
         request = UsePowerUpRequest.model_validate(data)
-        room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team, request.potato)
+        room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team, request.potato, request.option)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:

@@ -502,14 +502,20 @@ class RoomManager:
         return room
 
     def use_powerup(
-        self, sid: str, kind: PowerUp, now: float | None = None, target_team: int | None = None, potato: int | None = None
+        self,
+        sid: str,
+        kind: PowerUp,
+        now: float | None = None,
+        target_team: int | None = None,
+        potato: int | None = None,
+        option: int | None = None,
     ) -> Room:
         room, player = self._playing(sid)
         if room.team_match:
             return self._on_teams(room, lambda m: m.use_now(player.id, kind, target_team))
         if room.hot_potato:
             try:
-                room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now, potato)
+                room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now, potato, option)
             except HotPotatoError as e:
                 raise RoomError(str(e)) from e
             return room

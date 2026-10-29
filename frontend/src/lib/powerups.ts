@@ -35,6 +35,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   cold_water: { name: 'Água fria', hint: 'Só na Batata quente: o pavio ganha +10s.', targeted: false, tone: 'bg-sky-300/15 text-sky-100' },
   short_fuse: { name: 'Pavio curto', hint: 'Só na Batata quente: queima 10s do pavio de quem está com a batata, na hora.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
   double_bomb: { name: 'Bomba dupla', hint: 'Só na Batata quente: quem está com a batata precisa acertar 2 seguidas para passar.', targeted: true, tone: 'bg-orange-700/25 text-orange-200' },
+  ghost_hint: { name: 'Palpite do além', hint: 'Só para fantasma, na Batata quente: você marca uma alternativa e todo mundo vê "o fantasma acha que é esta". Pode ser verdade… ou não.', targeted: true, tone: 'bg-indigo-400/15 text-indigo-100' },
   thermometer: { name: 'Termômetro', hint: 'Só na Batata quente: você vê quanto falta do pavio enquanto a batata estiver com você.', targeted: false, tone: 'bg-sky-400/15 text-sky-100' },
   double_potato: { name: 'Batata dupla', hint: 'Mítico, só na Batata quente: entra uma batata dourada na roda, com pavio próprio. Ela nunca vai para você.', targeted: false, tone: 'bg-yellow-300/15 text-yellow-100' },
   free_pass: { name: 'Passe livre', hint: 'Só na Batata quente: passa a batata sem responder.', targeted: false, tone: 'bg-emerald-400/15 text-emerald-200' },

@@ -111,8 +111,8 @@ export function useRoom() {
     [],
   )
   const usePowerUp = useCallback(
-    (kind: ArmPowerUpRequest['kind'], targetTeam: number | null = null, potato: number | null = null) =>
-      request('use_powerup', { kind, target_team: targetTeam, potato }),
+    (kind: ArmPowerUpRequest['kind'], targetTeam: number | null = null, potato: number | null = null, option: number | null = null) =>
+      request('use_powerup', { kind, target_team: targetTeam, potato, option }),
     [],
   )
   const skipResults = useCallback(() => request('skip_results'), [])

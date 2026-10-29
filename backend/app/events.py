@@ -20,7 +20,7 @@ PowerUp = Literal[
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
-    "cold_water", "free_pass", "short_fuse", "double_bomb", "thermometer", "double_potato",  # só na Batata quente
+    "cold_water", "free_pass", "short_fuse", "double_bomb", "ghost_hint", "thermometer", "double_potato",  # só na Batata quente
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
     "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
 ]
@@ -123,6 +123,7 @@ class UsePowerUpRequest(BaseModel):
     kind: PowerUp
     target_team: int | None = None  # Times: o time que o Espiar olha
     potato: int | None = None  # Batata quente: em qual batata (com a Batata dupla)
+    option: int | None = None  # Batata quente: a alternativa do Palpite do além
 
 
 # --- Servidor → cliente -------------------------------------------------------
@@ -462,6 +463,7 @@ class PotatoView(BaseModel):
     hidden_options: list[int]  # 50/50 (todos veem)
     first_wrong: int | None  # Segunda chance: a primeira escolha, errada
     flashbang: bool  # Flashbang em você: só as letras das alternativas até a próxima pergunta
+    ghost_hint: int | None  # Palpite do além: a alternativa que um fantasma marcou (todos veem)
 
 
 class HotPotatoView(BaseModel):

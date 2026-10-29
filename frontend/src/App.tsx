@@ -88,7 +88,7 @@ export default function App() {
         snapshot={snapshot}
         playerId={playerId}
         onAnswer={(option, potato) => answer(option, null, potato)}
-        onUse={(kind, potato) => spendPowerUp(kind, null, potato)}
+        onUse={(kind, potato, option) => spendPowerUp(kind, null, potato, option)}
         onPlayAgain={playAgain}
         onLeave={leaveRoom}
       />

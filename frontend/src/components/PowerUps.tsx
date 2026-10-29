@@ -348,6 +348,17 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'ghost_hint') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M3 21V11a6 6 0 0 1 12 0v10l-2-1.5L11 21l-2-1.5L7 21l-2-1.5Z" fill="#E0E7FF" {...ICON_STROKE} />
+        <circle cx="7" cy="11" r="1.2" fill="#12141B" />
+        <circle cx="11" cy="11" r="1.2" fill="#12141B" />
+        <path d="M14 3.5h7a1.5 1.5 0 0 1 1.5 1.5v4A1.5 1.5 0 0 1 21 10.5h-3.5L15 13v-2.5h-1A1.5 1.5 0 0 1 12.5 9V5A1.5 1.5 0 0 1 14 3.5Z" fill="#A5B4FC" {...ICON_STROKE} />
+        <text x="17.5" y="9.3" textAnchor="middle" fontSize="5.5" fontWeight="900" fill="#12141B">?</text>
+      </svg>
+    )
+  }
   if (kind === 'thermometer') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

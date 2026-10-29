@@ -36,6 +36,7 @@ DIFFICULTIES = ("easy", "medium")
 
 HELPS: tuple[PowerUp, ...] = ("fifty_fifty", "shield", "second_chance", "cold_water", "reverse", "free_pass", "thermometer")
 SABOTAGES: tuple[PowerUp, ...] = ("accelerator", "scramble", "mirror", "magnifier", "flashbang", "scratch", "short_fuse", "double_bomb")
+GHOST_SABOTAGES: tuple[PowerUp, ...] = SABOTAGES + ("ghost_hint",)  # o Palpite do além é só dos fantasmas
 COLD_WATER_SECONDS = 10.0
 SHORT_FUSE_SECONDS = 10.0
 ACCELERATOR_RATE = 2.0  # o pavio queima 2x mais rápido até a próxima pergunta
@@ -88,6 +89,7 @@ class Potato:
     hidden_options: list[int] = field(default_factory=list)
     first_wrong: int | None = None
     second_chance: bool = False  # vale na pergunta atual
+    ghost_hint: int | None = None  # Palpite do além: a alternativa que um fantasma marcou
 
 
 @dataclass
@@ -224,7 +226,7 @@ class HotPotato:
             return self._explode(potato, now)
         self._set_state(potato, "wrong", now, WRONG_SECONDS)
 
-    def use(self, player_id: str, kind: PowerUp, now: float, potato_id: int | None = None) -> None:
+    def use(self, player_id: str, kind: PowerUp, now: float, potato_id: int | None = None, option: int | None = None) -> None:
         """Ajuda em si mesmo (com a batata na mão) ou sabotagem em quem está com a batata."""
         if not self.powers or self.phase in ("starting", "finished"):
             raise HotPotatoError("Agora não dá para usar habilidade.")
@@ -257,6 +259,12 @@ class HotPotato:
             raise HotPotatoError("O Termômetro já está valendo.")
         if kind not in HELPS and any(u.by == player_id and u.kind not in HELPS for u in potato.uses):
             raise HotPotatoError("Uma sabotagem por pergunta.")
+        if kind == "ghost_hint":
+            if me.alive:
+                raise HotPotatoError("O Palpite do além é só para fantasma.")
+            if option not in range(len(potato.question.options)) or option in potato.hidden_options:
+                raise HotPotatoError("Escolha uma alternativa.")
+            potato.ghost_hint = option
         self.held[player_id].remove(kind)
         potato.uses.append(PowerUpUse(kind=kind, by=player_id, target=None if kind in HELPS else potato.holder, reflected_by=None))
         self._apply(potato, kind, now)
@@ -323,6 +331,7 @@ class HotPotato:
         potato.hidden_options = []
         potato.first_wrong = None
         potato.second_chance = False
+        potato.ghost_hint = None
         potato.burn_from, potato.burn_rate = now, 1.0
         self.gifts = []
         self.revived = []
@@ -508,7 +517,7 @@ class HotPotato:
             if p.id == self.exploded:
                 continue
             mythic = self.rng.random() < RESURRECTION_CHANCE and "resurrection" not in self.mythics.get(p.id, [])
-            self._give(p.id, "resurrection" if mythic else self.rng.choice(SABOTAGES), "ghost", mythic=mythic)
+            self._give(p.id, "resurrection" if mythic else self.rng.choice(GHOST_SABOTAGES), "ghost", mythic=mythic)
 
     def _give(self, player_id: str, kind: PowerUp, reason: str, mythic: bool = False) -> None:
         """Com as mãos cheias, não ganha nada (o mítico não ocupa vaga)."""
@@ -598,4 +607,5 @@ class HotPotato:
             hidden_options=list(potato.hidden_options) if q else [],
             first_wrong=potato.first_wrong if q else None,
             flashbang=bool(q) and mine and any(u.kind == "flashbang" for u in potato.uses),
+            ghost_hint=potato.ghost_hint if q else None,
         )
