@@ -404,7 +404,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .dagger-scene, .dagger-fly, .dagger-shake, .dagger-blood i, .dagger-heart path, .dagger-fall, .dagger-flash, .dagger-sacrificed, .dagger-caption, .dagger-halo, .dagger-blessing { animation: none; }
 }
-}
 
 /* Batata dupla: a dourada cai girando, para num close em câmera lenta (escala grande, giro quase
    parado) e despenca em quem vai começar com ela; aí bate o BATATA DUPLA! O estilo base é o fim. */
