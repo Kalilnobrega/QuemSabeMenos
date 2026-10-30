@@ -195,30 +195,50 @@ body {
   0%, 100% { transform: rotate(4deg) scale(1); }
   50% { transform: rotate(18deg) scale(1.1); }
 }
-/* Ataque lendário: dourado nos avisos; na barra de habilidades também pulsa (legendary-pulse). */
+/* Ataque lendário: roxo nos avisos; na barra de habilidades também pulsa (legendary-pulse). */
 .legendary {
-  background-image: linear-gradient(135deg, #3b2a05, #6b4700 50%, #3b2a05);
-  color: #ffe082;
-  box-shadow: 0 0 0 2px #ffc107, 0 0 10px rgba(255, 193, 7, 0.5);
+  background-image: linear-gradient(135deg, #2a0f4a, #5b1f8f 50%, #2a0f4a);
+  color: #f0d9ff;
+  box-shadow: 0 0 0 2px #c084fc, 0 0 10px rgba(192, 132, 252, 0.5);
 }
 .legendary-pulse { animation: legendary-glow 1.4s ease-in-out infinite alternate; }
 @keyframes legendary-glow {
-  from { box-shadow: 0 0 0 2px #ffc107, 0 0 6px rgba(255, 193, 7, 0.35); }
-  to { box-shadow: 0 0 0 2px #ffe082, 0 0 18px rgba(255, 193, 7, 0.8); }
+  from { box-shadow: 0 0 0 2px #c084fc, 0 0 6px rgba(192, 132, 252, 0.35); }
+  to { box-shadow: 0 0 0 2px #f0abfc, 0 0 18px rgba(240, 171, 252, 0.8); }
 }
-/* Poder mítico: roxo com brilho que gira de cor, mais raro que o lendário. */
+/* Poder mítico: dourado com borda de arco-íris correndo e um reflexo passando, acima do lendário. */
 .mythic {
-  background-image: linear-gradient(135deg, #2a0f4a, #5b1f8f 50%, #2a0f4a);
-  color: #f0d9ff;
-  box-shadow: 0 0 0 2px #c084fc, 0 0 12px rgba(192, 132, 252, 0.6);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(110deg, transparent 35%, rgba(255, 248, 214, 0.35) 50%, transparent 65%) padding-box,
+    linear-gradient(135deg, #3b2a05, #7a5200 50%, #3b2a05) padding-box,
+    linear-gradient(90deg, #ffd54f, #ff8a65, #f06292, #ba68c8, #4fc3f7, #81c784, #ffd54f) border-box;
+  background-size: 250% 100%, 100% 100%, 300% 100%;
+  background-position: 120% 0, 0 0, 0 0;
+  color: #fff3c4;
+  box-shadow: 0 0 12px rgba(255, 193, 7, 0.55);
+  animation: mythic-flow 3s linear infinite;
 }
-.mythic-pulse { animation: mythic-glow 1.2s ease-in-out infinite alternate; }
+@keyframes mythic-flow {
+  to { background-position: -120% 0, 0 0, 300% 0; }
+}
+.mythic-pulse { animation: mythic-flow 3s linear infinite, mythic-glow 1.2s ease-in-out infinite alternate; }
+/* Título das seções de míticos: texto dourado com o mesmo arco-íris correndo. */
+.mythic-title {
+  background: linear-gradient(90deg, #ffd54f, #fff3c4 20%, #ffd54f 40%, #ff8a65, #f06292, #ffd54f 80%, #fff3c4) 0 0 / 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 6px rgba(255, 193, 7, 0.45));
+  animation: mythic-title-flow 4s ease-in-out infinite alternate;
+}
+@keyframes mythic-title-flow { to { background-position: 100% 0; } }
 @keyframes mythic-glow {
-  from { box-shadow: 0 0 0 2px #c084fc, 0 0 8px rgba(192, 132, 252, 0.4); }
-  to { box-shadow: 0 0 0 2px #f0abfc, 0 0 22px rgba(240, 171, 252, 0.9); }
+  from { box-shadow: 0 0 8px rgba(255, 193, 7, 0.4); }
+  to { box-shadow: 0 0 24px rgba(255, 213, 79, 0.95), 0 0 40px rgba(240, 98, 146, 0.35); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .settings-sheet, .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble, .legendary-pulse, .mythic-pulse { animation: none; }
+  .settings-sheet, .round-chip, .round-question, .round-option, .timer-urgent, .reveal-pop, .reveal-shake, .podium-card, .confetti, .icon-bounce, .icon-wobble, .legendary-pulse, .mythic, .mythic-pulse, .mythic-title { animation: none; }
   .confetti { display: none; }
 }
 
@@ -232,7 +252,7 @@ body {
 }
 
 /* Entrada do X1: os dois chegam voando, as espadas se chocam com um clarão e a tela treme. */
-.duel-intro { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem; background: radial-gradient(circle at 50% 45%, #3b1466 0%, #0b0f1a 70%); animation: duel-shake 0.35s 0.95s; }
+.duel-intro { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.25rem; background: radial-gradient(circle at 50% 45%, #5a3d06 0%, #0b0f1a 70%); animation: duel-shake 0.35s 0.95s; }
 .duel-in-left { animation: duel-in-left 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.15) 0.1s both; }
 .duel-in-right { animation: duel-in-right 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.15) 0.1s both; }
 .duel-clash { animation: duel-clash 0.5s cubic-bezier(0.3, 1.6, 0.5, 1) 0.6s both; }

@@ -163,8 +163,8 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'duel') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M3 3 6.5 4 16 13.5 13.5 16 4 6.5Z" fill="#E9D5FF" {...ICON_STROKE} />
-        <path d="M21 3 17.5 4 8 13.5 10.5 16 20 6.5Z" fill="#C084FC" {...ICON_STROKE} />
+        <path d="M3 3 6.5 4 16 13.5 13.5 16 4 6.5Z" fill="#FEF3C7" {...ICON_STROKE} />
+        <path d="M21 3 17.5 4 8 13.5 10.5 16 20 6.5Z" fill="#FBBF24" {...ICON_STROKE} />
         <path d="m13 18 5-5M11 18l-5-5M16.5 16.5l3 3M7.5 16.5l-3 3" {...ICON_STROKE} strokeWidth={2.2} />
       </svg>
     )
@@ -172,8 +172,8 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'resurrection') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M12 21C7 17.5 3 14 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4.5-4 8-9 11.5Z" fill="#C084FC" {...ICON_STROKE} />
-        <path d="M2 6.5 4.5 8M22 6.5 19.5 8M12 1.5V4" stroke="#F0ABFC" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M12 21C7 17.5 3 14 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4.5-4 8-9 11.5Z" fill="#FBBF24" {...ICON_STROKE} />
+        <path d="M2 6.5 4.5 8M22 6.5 19.5 8M12 1.5V4" stroke="#FDE68A" strokeWidth="1.8" strokeLinecap="round" />
         <path d="M12 9.5v6M9 12.5h6" stroke="#F8FAFC" strokeWidth="2.2" strokeLinecap="round" />
       </svg>
     )
@@ -257,9 +257,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'tax') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M6 2.5h9l3.5 3.5v15.5H6Z" fill="#E9D5FF" {...ICON_STROKE} />
-        <path d="M9 8h6M9 11h6" stroke="#7C3AED" strokeWidth="1.6" strokeLinecap="round" />
-        <text x="12.2" y="19" textAnchor="middle" fontSize="7" fontWeight="900" fill="#7C3AED">%</text>
+        <path d="M6 2.5h9l3.5 3.5v15.5H6Z" fill="#FEF3C7" {...ICON_STROKE} />
+        <path d="M9 8h6M9 11h6" stroke="#B45309" strokeWidth="1.6" strokeLinecap="round" />
+        <text x="12.2" y="19" textAnchor="middle" fontSize="7" fontWeight="900" fill="#B45309">%</text>
       </svg>
     )
   }
@@ -312,10 +312,10 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path d="M17.6 16.6 18.8 18.6" stroke="#FCA5A5" strokeWidth="0.5" strokeLinecap="round" />
         <path d="M20.5 21.3Q21.8 22.9 20.5 23.7Q19.2 22.9 20.5 21.3Z" fill="#DC2626" stroke="#12141B" strokeWidth="0.6" />
         <path d="M5 12.6 12.6 5" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
-        <path d="M5 12.6 12.6 5" stroke="#C084FC" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M5 12.6 12.6 5" stroke="#FBBF24" strokeWidth="1.8" strokeLinecap="round" />
         <path d="M7.8 7.8 4.1 4.1" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
-        <path d="M7.8 7.8 4.1 4.1" stroke="#7C3AED" strokeWidth="1.8" strokeLinecap="round" />
-        <circle cx="3.1" cy="3.1" r="1.7" fill="#C084FC" stroke="#12141B" strokeWidth="1.1" />
+        <path d="M7.8 7.8 4.1 4.1" stroke="#B45309" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="3.1" cy="3.1" r="1.7" fill="#FBBF24" stroke="#12141B" strokeWidth="1.1" />
       </svg>
     )
   }
@@ -758,7 +758,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         <p className="flex items-center gap-2 text-sm">
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
-            <span className="font-bold text-purple-300">{info.name} MÍTICO:</span> {hint(selected.kind)}
+            <span className="font-bold text-amber-200">{info.name} MÍTICO:</span> {hint(selected.kind)}
           </span>
         </p>
         {(selected.kind === 'duel' || selected.kind === 'dagger') && (

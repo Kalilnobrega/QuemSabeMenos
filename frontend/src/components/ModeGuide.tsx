@@ -352,15 +352,16 @@ export function ModeGuide({ mode, onClose }: { mode: Mode; onClose: () => void }
 
         {guide.powers?.map((group) => (
           <section key={group.title} className="flex flex-col gap-2">
-            <h4 className={`font-semibold ${group.mythic ? 'text-purple-300' : 'text-brand'}`}>{group.title}</h4>
+            <h4 className={group.mythic ? 'mythic-title font-display text-lg tracking-wide' : 'font-semibold text-brand'}>{group.title}</h4>
             <ul className="flex flex-col gap-2">
               {group.kinds.map((kind) => (
-                <li key={kind} className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : POWERUP_INFO[kind].tone}`}>
-                  <PowerUpIcon kind={kind} className="mt-0.5 size-6 shrink-0" />
+                <li key={kind} className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : group.mythic ? 'mythic items-center py-2.5' : POWERUP_INFO[kind].tone}`}>
+                  <PowerUpIcon kind={kind} className={group.mythic ? 'size-10 shrink-0 drop-shadow-[0_0_6px_rgba(255,213,79,0.7)]' : 'mt-0.5 size-6 shrink-0'} />
                   <span className="text-sm leading-snug">
                     <span className="font-bold">
                       {POWERUP_INFO[kind].name}
-                      {group.legendary && ' LENDÁRIO'}:
+                      {group.legendary && ' LENDÁRIO'}
+                      {group.mythic && ' MÍTICO'}:
                     </span> {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
                   </span>
                 </li>
