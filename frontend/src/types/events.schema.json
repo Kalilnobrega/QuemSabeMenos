@@ -414,6 +414,236 @@
       "title": "ErrorAck",
       "type": "object"
     },
+    "EstimateGuess": {
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "error_percent": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exact": {
+          "type": "boolean"
+        },
+        "delta": {
+          "type": "integer"
+        },
+        "elapsed_ms": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "player_id",
+        "value",
+        "error_percent",
+        "exact",
+        "delta",
+        "elapsed_ms"
+      ],
+      "title": "EstimateGuess",
+      "type": "object"
+    },
+    "EstimateScoring": {
+      "description": "Pontos da pergunta atual (mudam com o nível e o tamanho da partida): max_points perto de 0% de\nerro, caindo em linha reta até 0 em break_even_percent; daí em diante, perda até max_loss em\nmax_loss_percent (sem passar disso). Cravar soma exact_bonus.",
+      "properties": {
+        "max_points": {
+          "type": "integer"
+        },
+        "exact_bonus": {
+          "type": "integer"
+        },
+        "break_even_percent": {
+          "type": "number"
+        },
+        "max_loss": {
+          "type": "integer"
+        },
+        "max_loss_percent": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "max_points",
+        "exact_bonus",
+        "break_even_percent",
+        "max_loss",
+        "max_loss_percent"
+      ],
+      "title": "EstimateScoring",
+      "type": "object"
+    },
+    "EstimateView": {
+      "description": "Chutômetro. Fases: starting → (answering → results) por pergunta, com level quando o nível\nmuda (fáceis → médias → difíceis, como no clássico) → finished. Sem tempo de leitura.",
+      "properties": {
+        "phase": {
+          "enum": [
+            "starting",
+            "level",
+            "answering",
+            "results",
+            "finished"
+          ],
+          "type": "string"
+        },
+        "phase_duration_ms": {
+          "type": "integer"
+        },
+        "phase_ends_in_ms": {
+          "type": "integer"
+        },
+        "round": {
+          "type": "integer"
+        },
+        "total_rounds": {
+          "type": "integer"
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard",
+            "impossible"
+          ],
+          "type": "string"
+        },
+        "text": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "answered": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "my_guess": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "answer": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reference": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fact": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "guesses": {
+          "items": {
+            "$ref": "#/$defs/EstimateGuess"
+          },
+          "type": "array"
+        },
+        "scoring": {
+          "$ref": "#/$defs/EstimateScoring"
+        },
+        "ready": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "phase",
+        "phase_duration_ms",
+        "phase_ends_in_ms",
+        "round",
+        "total_rounds",
+        "theme",
+        "difficulty",
+        "text",
+        "unit",
+        "answered",
+        "my_guess",
+        "answer",
+        "reference",
+        "fact",
+        "guesses",
+        "scoring",
+        "ready"
+      ],
+      "title": "EstimateView",
+      "type": "object"
+    },
     "GameView": {
       "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Telas de preparação, em que a pergunta não é enviada: starting\n(antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o\ntema à mostra) e intro (antes da final).\nDepois da última rodada: finished. No Especialista, cada bloco começa com theme_pick.",
       "properties": {
@@ -1948,7 +2178,8 @@
             "specialist",
             "teams",
             "last_standing",
-            "hot_potato"
+            "hot_potato",
+            "estimate"
           ],
           "type": "string"
         },
@@ -1959,7 +2190,8 @@
               "specialist",
               "teams",
               "last_standing",
-              "hot_potato"
+              "hot_potato",
+              "estimate"
             ],
             "type": "string"
           },
@@ -2161,6 +2393,17 @@
               "type": "null"
             }
           ]
+        },
+        "estimate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EstimateView"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -3920,7 +4163,8 @@
                 "specialist",
                 "teams",
                 "last_standing",
-                "hot_potato"
+                "hot_potato",
+                "estimate"
               ],
               "type": "string"
             },

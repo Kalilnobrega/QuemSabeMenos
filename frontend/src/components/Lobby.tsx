@@ -13,7 +13,12 @@ const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   teams: { name: 'Times', hint: 'O time vota junto e tem um QI só.' },
   last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
   hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
+  estimate: { name: 'Chutômetro', hint: 'A resposta é um número: quem chutar mais perto ganha QI.' },
 }
+
+// O Chutômetro vai até 20 perguntas: com mais, fica com o maior tamanho dele (como no servidor).
+const ESTIMATE_ROUNDS = [10, 15, 20]
+const estimateRounds = (rounds: number) => ESTIMATE_ROUNDS.filter((n) => n <= rounds).at(-1) ?? ESTIMATE_ROUNDS[0]
 
 const POWERS_HINT: Record<RoomSettings['mode'], string> = {
   classic: 'Ajudas para você e sabotagens nos outros, ganhas acertando em sequência',
@@ -21,6 +26,7 @@ const POWERS_HINT: Record<RoomSettings['mode'], string> = {
   teams: 'O time guarda até 3, o capitão usa, e as sabotagens miram outro time',
   last_standing: 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador',
   hot_potato: 'Ajudas para quem está com a batata, sabotagens para quem assiste',
+  estimate: 'Sem poderes por enquanto',
 }
 
 const SURVIVAL_KINDS: Record<RoomSettings['survival_kind'], { name: string; hint: string; lives: number }> = {
@@ -99,6 +105,13 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
           { label: 'Pavio', value: '40–60s' },
           { label: 'Erro', value: '−10s' },
           { label: 'Poderes', value: room.settings.powers ? `até ${room.settings.powerup_max}` : 'Não' },
+          { label: 'Temas', value: themesLabel },
+        ]
+      : room.settings.mode === 'estimate'
+      ? [
+          { label: 'Perguntas', value: String(estimateRounds(room.settings.rounds)) },
+          { label: 'Chute', value: '20s' },
+          { label: 'Poderes', value: 'Não' },
           { label: 'Temas', value: themesLabel },
         ]
       : room.settings.mode === 'last_standing'
@@ -309,16 +322,16 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         </div>
 
-        <OptionRow
+        {settings.mode !== 'estimate' && <OptionRow
           title="Poderes"
           hint={POWERS_HINT[settings.mode]}
           options={[0, 1]}
           value={settings.powers ? 1 : 0}
           label={(n) => (n ? 'Com' : 'Sem')}
           onPick={(n) => update({ powers: n === 1 })}
-        />
+        />}
 
-        {settings.mode !== 'teams' && settings.powers && (
+        {settings.mode !== 'teams' && settings.mode !== 'estimate' && settings.powers && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantos poderes cada um pode guardar ao mesmo tempo"
@@ -371,7 +384,18 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </>
         )}
 
-        {settings.mode !== 'last_standing' && settings.mode !== 'hot_potato' && (
+        {settings.mode === 'estimate' && (
+          <OptionRow
+            title="Perguntas"
+            hint="20 segundos para cada chute"
+            options={ESTIMATE_ROUNDS}
+            value={estimateRounds(settings.rounds)}
+            label={(n) => String(n)}
+            onPick={(rounds) => update({ rounds })}
+          />
+        )}
+
+        {settings.mode !== 'last_standing' && settings.mode !== 'hot_potato' && settings.mode !== 'estimate' && (
           <>
             <OptionRow
               title="Perguntas"

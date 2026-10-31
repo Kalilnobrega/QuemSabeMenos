@@ -1,0 +1,215 @@
+{
+  "theme": "Tecnologia",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o primeiro iPhone foi lançado?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "Steve Jobs apresentou o aparelho como 'um iPod, um telefone e um comunicador de internet'."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos bytes tem um kilobyte, na conta binária?",
+      "answer": 1024,
+      "unit": "bytes",
+      "fact": "No Sistema Internacional, um kilobyte tem 1.000 bytes; o de 1.024 se chama kibibyte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Google foi fundado?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Larry Page e Sergey Brin começaram o projeto quando eram estudantes em Stanford."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Facebook foi criado?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "No começo, só alunos de Harvard podiam entrar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi enviado o primeiro e-mail?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "Ray Tomlinson escolheu o @ para separar o usuário do computador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual era o limite original de caracteres de um tuíte?",
+      "answer": 140,
+      "unit": "caracteres",
+      "fact": "O limite vinha do SMS, que tinha 160 caracteres; subiu para 280 em 2017."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Apple foi fundada?",
+      "answer": 1976,
+      "scale": 50,
+      "fact": "Steve Jobs e Steve Wozniak montaram o Apple I numa garagem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Microsoft foi fundada?",
+      "answer": 1975,
+      "scale": 50,
+      "fact": "Bill Gates e Paul Allen fundaram a empresa em Albuquerque, nos EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos usuários ativos por mês o Facebook tinha em 2024?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "É a rede social mais usada do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Windows XP?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "O suporte oficial acabou em 2014, mas ele seguiu em uso por anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o WhatsApp foi criado?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "O Facebook comprou o aplicativo em 2014 por 19 bilhões de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tem um endereço IPv4?",
+      "answer": 32,
+      "unit": "bits",
+      "fact": "Isso dá cerca de 4,3 bilhões de endereços, que acabaram; por isso surgiu o IPv6."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Tim Berners-Lee propôs a World Wide Web?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "Ele trabalhava no CERN, na Suíça, e queria compartilhar documentos entre cientistas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos transistores tinha o Intel 4004, o primeiro microprocessador comercial?",
+      "answer": 2300,
+      "unit": "transistores",
+      "fact": "Os chips de hoje têm dezenas de bilhões de transistores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o YouTube foi lançado?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "O primeiro vídeo, Me at the zoo, tem 19 segundos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto pesava o ENIAC, um dos primeiros computadores?",
+      "answer": 27,
+      "unit": "toneladas",
+      "fact": "Ele ocupava uma sala inteira e tinha cerca de 18 mil válvulas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano, aproximadamente, Gutenberg criou a prensa de tipos móveis?",
+      "answer": 1440,
+      "scale": 100,
+      "fact": "O livro mais famoso dele é a Bíblia de Gutenberg, de cerca de 1455."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a internet comercial chegou ao Brasil?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Antes disso, a rede era restrita a universidades e centros de pesquisa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o ChatGPT foi lançado?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "Ele chegou a 100 milhões de usuários em cerca de dois meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos megabytes cabiam no primeiro disco rígido da IBM, de 1956?",
+      "answer": 3.75,
+      "unit": "MB",
+      "fact": "O IBM 350 pesava cerca de uma tonelada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos caracteres tem a tabela ASCII original?",
+      "answer": 128,
+      "unit": "caracteres",
+      "fact": "Ela usa 7 bits; as versões estendidas chegaram a 256."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano chegou ao mercado o primeiro celular com Android?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi o HTC Dream, também chamado T-Mobile G1."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Orkut foi lançado?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "O Brasil virou o país com mais usuários da rede; ela fechou em 2014."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos megabytes cabiam num disquete de 3,5 polegadas?",
+      "answer": 1.44,
+      "unit": "MB",
+      "fact": "O ícone de salvar de muitos programas ainda é um disquete."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Amazon foi fundada?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Jeff Bezos começou vendendo livros pela internet, numa garagem em Seattle."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o primeiro celular comercial, o Motorola DynaTAC?",
+      "answer": 1983,
+      "scale": 50,
+      "fact": "A bateria durava cerca de 30 minutos de conversa e levava 10 horas para carregar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto pesava o celular Motorola DynaTAC 8000X?",
+      "answer": 790,
+      "unit": "gramas",
+      "fact": "Ele era chamado de 'tijolão' e custava cerca de 4 mil dólares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Instagram foi lançado?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "No começo, só dava para postar fotos quadradas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi minerado o primeiro bloco do Bitcoin?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "O bloco gênese foi criado por Satoshi Nakamoto, cuja identidade segue desconhecida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Tesla foi fundada?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Elon Musk entrou como investidor em 2004 e virou CEO em 2008."
+    }
+  ]
+}

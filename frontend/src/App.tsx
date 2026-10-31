@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Estimate } from './components/Estimate'
 import { Game } from './components/Game'
 import { HotPotato } from './components/HotPotato'
 import { Teams } from './components/Teams'
@@ -49,7 +50,7 @@ function setUrl(path: string) {
 }
 
 export default function App() {
-  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, updateSettings, setTeam, chooseRepresentative } = useRoom()
+  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, guess, updateSettings, setTeam, chooseRepresentative } = useRoom()
   const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
 
@@ -66,7 +67,9 @@ export default function App() {
   // Não é hook (só o nome começa com "use"): o apelido deixa chamar dentro de um callback.
   const spendPowerUp = usePowerUp
   let content
-  if (snapshot && room?.team_match) {
+  if (snapshot && room?.estimate) {
+    content = <Estimate snapshot={snapshot} playerId={playerId} onGuess={guess} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
+  } else if (snapshot && room?.team_match) {
     content = (
       <Teams
         snapshot={snapshot}

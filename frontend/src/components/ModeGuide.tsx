@@ -260,6 +260,34 @@ const GUIDES: Record<Mode, Guide> = {
       },
     ],
   },
+  estimate: {
+    name: 'Chutômetro',
+    summary: 'Toda resposta é um número. Ninguém precisa saber o valor exato: quem chutar mais perto ganha QI.',
+    sections: [
+      {
+        title: 'Como funciona',
+        items: [
+          'Todo mundo vê a mesma pergunta e tem 20 segundos para digitar um chute. Dá para usar vírgula (3,14) e o botão − para números negativos.',
+          'Na revelação, a régua mostra a resposta no meio, a zona verde em que o chute ainda ganha QI e o avatar de cada um no próprio chute.',
+          'A partida tem 10, 15 ou 20 perguntas e sobe de nível como no Clássico: primeiro as fáceis, depois as médias e por fim as difíceis. Não tem aposta, pergunta final nem poderes.',
+        ],
+      },
+      {
+        title: 'Pontuação',
+        items: [
+          'Todo mundo começa com 50 de QI. O erro é medido em % da resposta, e os pontos dependem de quão perto você chegou.',
+          'Quanto mais perto, mais QI: o ganho cai aos poucos até zerar e, depois disso, vira perda. Cravar o número exato (Chute certeiro) dá um bônus.',
+          'Fáceis são obrigação: até +10, cravando +15. Zera com 20% de erro e pode perder até −20.',
+          'Médias: até +20, cravando +30. Zera com 30% de erro e pode perder até −15.',
+          'Difíceis valem o risco: até +30, cravando +45. Zera com 40% de erro e perde no máximo −10.',
+          'A perda máxima chega quando o erro é o triplo do ponto em que zera (60%, 90% e 120%). Sem chutar, perde o máximo do nível.',
+          'Partidas menores valem mais por pergunta, como no Clássico: numa de 10, tudo vale o dobro.',
+          'Nos anos, o erro conta em relação a 50 anos: errar por 2 anos já é 4%. Assim, numa média, chutar 1820 para 1822 vale +17, mas 1800 vale −4.',
+          'Empate no QI final: fica na frente quem chutou mais rápido no total.',
+        ],
+      },
+    ],
+  },
   teams: {
     name: 'Times',
     summary: 'O time vota junto e tem um QI só.',

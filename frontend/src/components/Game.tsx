@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 're
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { AVATAR_URLS } from '../lib/avatars'
+import { formatDelta, formatScore } from '../lib/format'
 import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
@@ -30,6 +31,19 @@ function BulbIcon({ className }: { className?: string }) {
       <rect x="10.8" y="21.2" width="6.4" height="4.3" rx="1.4" fill="#9CA3AF" stroke="#12141B" strokeWidth="1.6" />
       <path d="M11.2 23.3h5.6" stroke="#12141B" strokeWidth="1.2" />
     </svg>
+  )
+}
+
+/** A curiosidade da revelação: "Você sabia?" com a lâmpada (também no Chutômetro). */
+export function FactCard({ fact }: { fact: string }) {
+  return (
+    <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
+      <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
+        <BulbIcon className="size-5" />
+        Você sabia?
+      </p>
+      <p className="mt-1 leading-relaxed">{fact}</p>
+    </div>
   )
 }
 
@@ -126,7 +140,7 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
     return <GameStart snapshot={snapshot} />
   }
   if (game.phase === 'level') {
-    return <LevelIntro game={game} />
+    return <LevelIntro difficulty={game.difficulty} />
   }
   if (game.phase === 'intro') {
     return <FinalIntro snapshot={snapshot} />
@@ -368,6 +382,12 @@ function DuelQuestionView({
   )
 }
 
+/** O selo do nível da pergunta, como no cabeçalho do clássico. */
+export function DifficultyChip({ difficulty }: { difficulty: string }) {
+  const info = DIFFICULTY[difficulty]
+  return <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${info.className}`}>{info.label}</span>
+}
+
 const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
   { key: 'easy', label: 'Fácil' },
   { key: 'medium', label: 'Média' },
@@ -393,9 +413,10 @@ const LEVEL_INTRO: Record<string, { title: string; color: string; marker: string
 }
 
 /** Apresentação rápida quando a dificuldade muda: a trilha de níveis e o nome do novo nível. */
-function LevelIntro({ game }: { game: GameView }) {
-  const info = LEVEL_INTRO[game.difficulty] ?? LEVEL_INTRO.medium
-  const current = LEVEL_TRACK.findIndex((level) => level.key === game.difficulty)
+/** Troca de nível: o destaque pula na trilha e o nome do nível bate na tela (também no Chutômetro). */
+export function LevelIntro({ difficulty }: { difficulty: string }) {
+  const info = LEVEL_INTRO[difficulty] ?? LEVEL_INTRO.medium
+  const current = LEVEL_TRACK.findIndex((level) => level.key === difficulty)
   const trackRef = useRef<HTMLOListElement>(null)
   const markerRef = useRef<HTMLSpanElement>(null)
   useSoundsOnMount([
@@ -805,9 +826,6 @@ function Flame() {
   )
 }
 
-function formatScore(score: number) {
-  return score < 0 ? `−${-score}` : `${score}`
-}
 
 const easeInOutCubic = (k: number) => (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2)
 
@@ -844,9 +862,6 @@ function byRanking(a: PlayerView, b: PlayerView) {
   return b.score - a.score || a.answer_ms - b.answer_ms
 }
 
-function formatDelta(delta: number) {
-  return delta > 0 ? `+${delta}` : formatScore(delta)
-}
 
 interface RoundProps {
   snapshot: Snapshot
@@ -1231,15 +1246,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
           })}
         </ul>
       )}
-      {game.fact && (
-        <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
-          <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
-            <BulbIcon className="size-5" />
-            Você sabia?
-          </p>
-          <p className="mt-1 leading-relaxed">{game.fact}</p>
-        </div>
-      )}
+      {game.fact && <FactCard fact={game.fact} />}
       <Ranking
         players={room.players}
         playerId={playerId}
@@ -1457,7 +1464,7 @@ interface RankingProps {
   picks?: Record<string, RoundResult>
 }
 
-function Ranking({ players, playerId, deltas, picks }: RankingProps) {
+export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
   const sorted = [...players].sort(byRanking)
   const listRef = useRef<HTMLOListElement>(null)
 
@@ -1536,7 +1543,7 @@ const PODIUM_PLACES = [
 ]
 
 /** Fim de jogo em etapas: o pódio enche do 3º para o 1º, depois aparece quem sabe menos. */
-function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
+export function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
   const [notice, setNotice] = useState<string | null>(null)
   const sorted = [...room.players].sort(byRanking)
   const worst = sorted.length > 1 ? sorted[sorted.length - 1] : null

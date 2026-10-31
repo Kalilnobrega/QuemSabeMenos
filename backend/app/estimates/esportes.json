@@ -1,0 +1,215 @@
+{
+  "theme": "Esportes",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilômetros tem uma maratona?",
+      "answer": 42.195,
+      "unit": "km",
+      "fact": "A distância exata foi fixada pela Olimpíada de Londres, em 1908."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ganhou a primeira Copa do Mundo?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "Foi na Suécia, com Pelé ainda com 17 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Pelé marcou na carreira, segundo o Guinness?",
+      "answer": 1279,
+      "unit": "gols",
+      "fact": "O Guinness conta 1.279 gols em 1.363 jogos, incluindo amistosos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o recorde mundial dos 100 metros rasos, de Usain Bolt?",
+      "answer": 9.58,
+      "unit": "segundos",
+      "fact": "Ele bateu o recorde em Berlim, em 2009."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas medalhas de ouro olímpicas Michael Phelps ganhou?",
+      "answer": 23,
+      "unit": "ouros",
+      "fact": "Contando todas as cores, ele tem 28 medalhas olímpicas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Rio de Janeiro sediou as Olimpíadas?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Foram os primeiros Jogos Olímpicos na América do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altura fica o aro da cesta de basquete?",
+      "answer": 305,
+      "unit": "cm",
+      "fact": "São 10 pés: a altura foi definida por James Naismith, que inventou o esporte em 1891."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma piscina olímpica?",
+      "answer": 50,
+      "unit": "metros",
+      "fact": "Ela tem pelo menos 25 metros de largura e 10 raias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos tem o tempo regulamentar de um jogo da NBA?",
+      "answer": 48,
+      "unit": "minutos",
+      "fact": "São quatro quartos de 12 minutos; no basquete FIBA, os quartos são de 10."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas corridas de Fórmula 1 Ayrton Senna venceu?",
+      "answer": 41,
+      "unit": "vitórias",
+      "fact": "Ele foi tricampeão mundial, em 1988, 1990 e 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu a primeira Copa do Mundo?",
+      "answer": 1930,
+      "scale": 50,
+      "fact": "Foi no Uruguai, que também ficou com o título."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma volta na pista de atletismo?",
+      "answer": 400,
+      "unit": "metros",
+      "fact": "Na raia 1, a mais de dentro; as raias de fora são mais longas, por isso a largada é escalonada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos minutos durou a maratona recorde de Kelvin Kiptum, em 2023?",
+      "answer": 120.6,
+      "unit": "minutos",
+      "fact": "Ele correu em 2h00min35s em Chicago."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos títulos de Grand Slam Roger Federer ganhou?",
+      "answer": 20,
+      "unit": "títulos",
+      "fact": "Oito deles foram em Wimbledon, um recorde masculino."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Guga ganhou Roland Garros pela primeira vez?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Ele era o 66º do ranking e ganhou de novo em 2000 e 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto pesa, em média, uma bola oficial de futebol?",
+      "answer": 430,
+      "unit": "gramas",
+      "fact": "Pelas regras, ela tem de 410 a 450 gramas no início do jogo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos buracos tem um campo de golfe completo?",
+      "answer": 18,
+      "unit": "buracos",
+      "fact": "O número vem do campo de St Andrews, na Escócia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o recorde mundial do salto em altura masculino?",
+      "answer": 2.45,
+      "unit": "metros",
+      "fact": "O cubano Javier Sotomayor tem o recorde desde 1993."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano aconteceram os primeiros Jogos Olímpicos da era moderna?",
+      "answer": 1896,
+      "scale": 50,
+      "fact": "Foram em Atenas, por iniciativa do barão Pierre de Coubertin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gols Marta marcou em Copas do Mundo?",
+      "answer": 17,
+      "unit": "gols",
+      "fact": "Ela é a maior artilheira da história das Copas, entre homens e mulheres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros tem, em média, o Tour de France?",
+      "answer": 3500,
+      "unit": "km",
+      "fact": "São 21 etapas em cerca de três semanas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a pontuação máxima numa única tacada contínua no snooker?",
+      "answer": 147,
+      "unit": "pontos",
+      "fact": "A 'máxima' sai encaçapando as 15 vermelhas, cada uma com a preta, e depois todas as cores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Ayrton Senna morreu?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "O acidente foi no GP de San Marino, em Ímola, em 1º de maio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade do saque mais rápido já medido no tênis?",
+      "answer": 263,
+      "unit": "km/h",
+      "fact": "O australiano Sam Groth sacou a 263 km/h em 2012."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a prova de natação mais longa em piscina nas Olimpíadas?",
+      "answer": 1500,
+      "unit": "metros",
+      "fact": "A maratona aquática, de 10 km, é disputada em águas abertas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas medalhas o Brasil ganhou nas Olimpíadas de Paris 2024?",
+      "answer": 20,
+      "unit": "medalhas",
+      "fact": "Foram 3 ouros, 7 pratas e 10 bronzes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos tem um set de vôlei, fora o tie-break?",
+      "answer": 25,
+      "unit": "pontos",
+      "fact": "O tie-break vai até 15, e é preciso abrir 2 pontos de vantagem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a altura da rede de vôlei masculino?",
+      "answer": 2.43,
+      "unit": "metros",
+      "fact": "No feminino, a rede fica a 2,24 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Flamengo ganhou o Mundial de Clubes pela primeira vez?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Ganhou do Liverpool por 3 a 0, em Tóquio, com Zico em campo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade máxima de Usain Bolt no recorde dos 100 metros?",
+      "answer": 44.7,
+      "unit": "km/h",
+      "fact": "Ele atingiu o pico entre os 60 e 80 metros da prova."
+    }
+  ]
+}

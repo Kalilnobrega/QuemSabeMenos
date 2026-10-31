@@ -1,0 +1,215 @@
+{
+  "theme": "Brasil",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ficou independente de Portugal?",
+      "answer": 1822,
+      "scale": 50,
+      "fact": "Dom Pedro declarou a independência em 7 de setembro, às margens do Ipiranga."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi proclamada a República no Brasil?",
+      "answer": 1889,
+      "scale": 50,
+      "fact": "Foi em 15 de novembro, liderada pelo marechal Deodoro da Fonseca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Brasília foi inaugurada?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "A capital foi construída em menos de quatro anos, no governo de Juscelino Kubitschek."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem o Brasil, sem contar o Distrito Federal?",
+      "answer": 26,
+      "unit": "estados",
+      "fact": "Com o Distrito Federal, são 27 unidades da federação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi assinada a Lei Áurea?",
+      "answer": 1888,
+      "scale": 50,
+      "fact": "A princesa Isabel assinou a lei em 13 de maio; o Brasil foi o último país das Américas a abolir a escravidão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos habitantes o Brasil tinha no Censo de 2022?",
+      "answer": 203,
+      "unit": "milhões",
+      "fact": "O Censo contou 203,1 milhões de pessoas, menos do que as projeções esperavam."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros de litoral tem o Brasil?",
+      "answer": 7367,
+      "unit": "km",
+      "fact": "Contando as reentrâncias de baías e ilhas, o número passa de 9 mil km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Com quantos países o Brasil faz fronteira?",
+      "answer": 10,
+      "unit": "países",
+      "fact": "Só Chile e Equador, na América do Sul, não fazem fronteira com o Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a altura do Pico da Neblina, o ponto mais alto do Brasil?",
+      "answer": 2995,
+      "unit": "metros",
+      "fact": "Ele fica no Amazonas, na fronteira com a Venezuela, numa terra indígena Yanomami."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a esquadra de Cabral chegou ao Brasil?",
+      "answer": 1500,
+      "scale": 50,
+      "fact": "Os portugueses desembarcaram em 22 de abril, no sul da Bahia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o Pão de Açúcar?",
+      "answer": 396,
+      "unit": "metros",
+      "fact": "O bondinho, inaugurado em 1912, foi o primeiro teleférico do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de São Paulo?",
+      "answer": 1554,
+      "scale": 50,
+      "fact": "Os jesuítas fundaram o colégio de São Paulo de Piratininga em 25 de janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade do Rio de Janeiro?",
+      "answer": 1565,
+      "scale": 50,
+      "fact": "Estácio de Sá fundou a cidade em 1º de março, durante a luta contra os franceses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a área do Brasil?",
+      "answer": 8.51,
+      "unit": "milhões de km²",
+      "fact": "O Brasil é o 5º maior país do mundo, atrás de Rússia, Canadá, China e Estados Unidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi promulgada a Constituição atual do Brasil?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Ulysses Guimarães a chamou de Constituição Cidadã."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o real entrou em circulação?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "As notas e moedas do real começaram a circular em 1º de julho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos municípios tem o Brasil?",
+      "answer": 5570,
+      "unit": "municípios",
+      "fact": "São 5.568 municípios, mais o Distrito Federal e o distrito de Fernando de Noronha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a capital do Brasil passou de Salvador para o Rio de Janeiro?",
+      "answer": 1763,
+      "scale": 50,
+      "fact": "A mudança acompanhou a importância do ouro de Minas, escoado pelo porto do Rio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Santos Dumont voou com o 14-Bis em Paris?",
+      "answer": 1906,
+      "scale": 50,
+      "fact": "O voo de 23 de outubro foi o primeiro de um avião que decolou por meios próprios, diante de testemunhas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Petrobras foi criada?",
+      "answer": 1953,
+      "scale": 50,
+      "fact": "Foi criada por Getúlio Vargas, depois da campanha 'O petróleo é nosso'."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos durou a ditadura militar no Brasil?",
+      "answer": 21,
+      "unit": "anos",
+      "fact": "Durou de 1964 a 1985, quando Tancredo Neves foi eleito pelo Colégio Eleitoral."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Getúlio Vargas morreu?",
+      "answer": 1954,
+      "scale": 50,
+      "fact": "Ele deixou uma carta-testamento com a frase 'Saio da vida para entrar na História'."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Maracanã foi inaugurado?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Ele foi construído para a Copa de 1950, que terminou com o Maracanazo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem a Ponte Rio-Niterói?",
+      "answer": 13.3,
+      "unit": "km",
+      "fact": "Inaugurada em 1974, ela tem trechos a 72 metros de altura para os navios passarem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Dom Pedro II foi coroado imperador?",
+      "answer": 1841,
+      "scale": 50,
+      "fact": "Ele tinha só 15 anos; o Golpe da Maioridade antecipou a coroação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a usina de Itaipu começou a gerar energia?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "Itaipu é binacional, do Brasil e do Paraguai, e já foi a maior hidrelétrica do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas línguas indígenas o Censo de 2010 registrou no Brasil?",
+      "answer": 274,
+      "unit": "línguas",
+      "fact": "O mesmo censo contou 305 etnias indígenas no país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano as mulheres conquistaram o direito de votar no Brasil?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "O voto feminino veio com o Código Eleitoral de 1932, no governo Vargas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Salvador, a primeira capital do Brasil?",
+      "answer": 1549,
+      "scale": 50,
+      "fact": "Tomé de Sousa, o primeiro governador-geral, fundou a cidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano terminou a Guerra do Paraguai?",
+      "answer": 1870,
+      "scale": 50,
+      "fact": "Foi o maior conflito armado da América do Sul; o Paraguai perdeu grande parte da população."
+    }
+  ]
+}

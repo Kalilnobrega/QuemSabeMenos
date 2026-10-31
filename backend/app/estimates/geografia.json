@@ -1,0 +1,215 @@
+{
+  "theme": "Geografia",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual a altura do Monte Everest?",
+      "answer": 8849,
+      "unit": "metros",
+      "fact": "A medição oficial, de 2020, foi feita em conjunto por China e Nepal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países há na África?",
+      "answer": 54,
+      "unit": "países",
+      "fact": "É o continente com mais países reconhecidos pela ONU."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilômetros tem o Rio Nilo?",
+      "answer": 6650,
+      "unit": "km",
+      "fact": "Ele disputa com o Amazonas o título de rio mais longo do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países independentes há na América do Sul?",
+      "answer": 12,
+      "unit": "países",
+      "fact": "A Guiana Francesa não entra: ela é um território da França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a profundidade da Fossa das Marianas, o ponto mais fundo do oceano?",
+      "answer": 10994,
+      "unit": "metros",
+      "fact": "Se o Everest fosse colocado lá dentro, o topo ainda ficaria a 2 km da superfície."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a área da Rússia?",
+      "answer": 17.1,
+      "unit": "milhões de km²",
+      "fact": "A Rússia é quase o dobro do Brasil e cobre 11 fusos horários."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados têm os Estados Unidos?",
+      "answer": 50,
+      "unit": "estados",
+      "fact": "O Havaí, em 1959, foi o último a entrar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que altitude fica o Lago Titicaca?",
+      "answer": 3812,
+      "unit": "metros",
+      "fact": "É o lago navegável mais alto do mundo, entre o Peru e a Bolívia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos habitantes tem a China?",
+      "answer": 1.41,
+      "unit": "bilhões",
+      "fact": "A Índia passou a China em 2023 como o país mais populoso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros tem a Muralha da China, somando todos os trechos?",
+      "answer": 21196,
+      "unit": "km",
+      "fact": "A medição de 2012 somou todas as muralhas construídas ao longo de vários séculos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do Aconcágua, o ponto mais alto das Américas?",
+      "answer": 6961,
+      "unit": "metros",
+      "fact": "Ele fica na Argentina, perto da fronteira com o Chile."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Com quantos países a Rússia faz fronteira por terra?",
+      "answer": 14,
+      "unit": "países",
+      "fact": "Ela divide com a China o recorde de mais vizinhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a área do Vaticano?",
+      "answer": 0.44,
+      "unit": "km²",
+      "fact": "É o menor país do mundo; caberia mais de 100 vezes no Parque do Ibirapuera."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a temperatura mais baixa já registrada na Terra?",
+      "answer": -89.2,
+      "unit": "°C",
+      "fact": "Foi na estação russa de Vostok, na Antártica, em 1983."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ilhas tem a Indonésia?",
+      "answer": 17000,
+      "unit": "ilhas",
+      "fact": "Só umas 6 mil são habitadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude fica a cidade de La Paz, na Bolívia?",
+      "answer": 3640,
+      "unit": "metros",
+      "fact": "Lá a água ferve a cerca de 88 °C."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a área do Deserto do Saara?",
+      "answer": 9.2,
+      "unit": "milhões de km²",
+      "fact": "O Saara é maior que o Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países há na Europa?",
+      "answer": 44,
+      "unit": "países",
+      "fact": "O número muda conforme a conta: Rússia e Turquia, por exemplo, ficam em dois continentes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros tem o Canal do Panamá?",
+      "answer": 82,
+      "unit": "km",
+      "fact": "Um navio leva de 8 a 10 horas para atravessar o canal."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura da Garganta do Diabo, nas Cataratas do Iguaçu?",
+      "answer": 80,
+      "unit": "metros",
+      "fact": "As cataratas têm cerca de 275 quedas, na fronteira do Brasil com a Argentina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros abaixo do nível do mar fica o Mar Morto?",
+      "answer": 430,
+      "unit": "metros",
+      "fact": "É o ponto mais baixo em terra firme, e o nível baixa cerca de 1 metro por ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a região metropolitana de Tóquio?",
+      "answer": 37,
+      "unit": "milhões",
+      "fact": "É a maior aglomeração urbana do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a distância em linha reta entre o Rio de Janeiro e Lisboa?",
+      "answer": 7700,
+      "unit": "km",
+      "fact": "As caravelas de Cabral levaram cerca de 44 dias para cruzar o Atlântico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a área da Groenlândia?",
+      "answer": 2.17,
+      "unit": "milhões de km²",
+      "fact": "Nos mapas comuns ela parece do tamanho da África, que é 14 vezes maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Islândia?",
+      "answer": 390,
+      "unit": "mil",
+      "fact": "É menos do que a população de muitas cidades médias brasileiras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do Kilimanjaro?",
+      "answer": 5895,
+      "unit": "metros",
+      "fact": "É a montanha mais alta da África e um vulcão adormecido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a profundidade máxima do Lago Baikal?",
+      "answer": 1642,
+      "unit": "metros",
+      "fact": "É o lago mais fundo do mundo e guarda cerca de 20% da água doce líquida da superfície."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos países há na Ásia?",
+      "answer": 48,
+      "unit": "países",
+      "fact": "É o maior continente em área e em população."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos graus o eixo da Terra é inclinado?",
+      "answer": 23.4,
+      "unit": "graus",
+      "fact": "É essa inclinação que causa as estações do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o comprimento da linha do Equador?",
+      "answer": 40075,
+      "unit": "km",
+      "fact": "A 80 km/h, sem parar, a volta levaria cerca de três semanas."
+    }
+  ]
+}

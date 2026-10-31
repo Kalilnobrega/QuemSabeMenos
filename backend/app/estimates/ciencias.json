@@ -1,0 +1,213 @@
+{
+  "theme": "Ciências",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Qual a velocidade da luz no vácuo?",
+      "answer": 299792,
+      "unit": "km/s",
+      "fact": "Em um segundo, a luz daria mais de sete voltas na Terra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos tem o corpo humano adulto?",
+      "answer": 206,
+      "unit": "ossos",
+      "fact": "Um bebê nasce com cerca de 300; vários se fundem durante o crescimento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que temperatura a água ferve ao nível do mar, em Fahrenheit?",
+      "answer": 212,
+      "unit": "°F",
+      "fact": "Na escala Fahrenheit, a água congela a 32 °F."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos elementos tem a tabela periódica hoje?",
+      "answer": 118,
+      "unit": "elementos",
+      "fact": "Os quatro últimos foram nomeados em 2016, entre eles o oganessônio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a distância média da Terra até a Lua?",
+      "answer": 384400,
+      "unit": "km",
+      "fact": "A Lua se afasta da Terra cerca de 3,8 cm por ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dentes tem um adulto, contando os sisos?",
+      "answer": 32,
+      "unit": "dentes",
+      "fact": "As crianças têm 20 dentes de leite."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o número atômico do ouro?",
+      "answer": 79,
+      "fact": "O símbolo Au vem de aurum, ouro em latim."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a temperatura da superfície do Sol?",
+      "answer": 5500,
+      "unit": "°C",
+      "fact": "O núcleo do Sol passa de 15 milhões de graus Celsius."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cromossomos tem uma célula humana comum?",
+      "answer": 46,
+      "unit": "cromossomos",
+      "fact": "São 23 pares: um conjunto vem da mãe e outro do pai."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos a luz do Sol leva para chegar à Terra?",
+      "answer": 8.3,
+      "unit": "minutos",
+      "fact": "São cerca de 8 minutos e 20 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura do zero absoluto, em Celsius?",
+      "answer": -273.15,
+      "unit": "°C",
+      "fact": "É o ponto em que as partículas teriam a menor energia possível; nada chega exatamente lá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Darwin publicou A Origem das Espécies?",
+      "answer": 1859,
+      "scale": 50,
+      "fact": "A primeira tiragem, de 1.250 exemplares, esgotou no primeiro dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o diâmetro da Terra?",
+      "answer": 12742,
+      "unit": "km",
+      "fact": "A Terra é um pouco achatada: o diâmetro nos polos é cerca de 43 km menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "Neil Armstrong e Buzz Aldrin pousaram com a Apollo 11 em 20 de julho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a idade estimada do universo?",
+      "answer": 13.8,
+      "unit": "bilhões de anos",
+      "fact": "A estimativa vem da radiação cósmica de fundo, o 'eco' do Big Bang."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a velocidade do som no ar, a 20 °C?",
+      "answer": 343,
+      "unit": "m/s",
+      "fact": "Na água, o som anda mais de quatro vezes mais rápido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a velocidade máxima de um guepardo?",
+      "answer": 110,
+      "unit": "km/h",
+      "fact": "Ele acelera de 0 a 100 km/h em cerca de 3 segundos, mas só aguenta poucos segundos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Isaac Newton publicou os Principia?",
+      "answer": 1687,
+      "scale": 50,
+      "fact": "No livro estão as três leis do movimento e a lei da gravitação universal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a aceleração da gravidade na superfície da Terra?",
+      "answer": 9.8,
+      "unit": "m/s²",
+      "fact": "Na Lua, a gravidade é cerca de seis vezes menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o pH da água pura?",
+      "answer": 7,
+      "fact": "Abaixo de 7 é ácido, acima é básico; o suco gástrico tem pH perto de 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura pode ter uma girafa macho adulta?",
+      "answer": 5.5,
+      "unit": "metros",
+      "fact": "Mesmo com o pescoço enorme, a girafa tem 7 vértebras cervicais, como nós."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Marie Curie ganhou o primeiro Prêmio Nobel?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "Ela ganhou de novo em 1911 e foi a primeira pessoa com dois Nobel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Terras cabem, lado a lado, no diâmetro do Sol?",
+      "answer": 109,
+      "unit": "Terras",
+      "fact": "Em volume, caberiam cerca de 1,3 milhão de Terras dentro do Sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura normal do corpo humano?",
+      "answer": 36.5,
+      "unit": "°C",
+      "fact": "A temperatura varia ao longo do dia e costuma ser mais baixa de madrugada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos ossos tem o crânio humano adulto?",
+      "answer": 22,
+      "unit": "ossos",
+      "fact": "São 8 ossos do neurocrânio e 14 da face."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a distância média da Terra até o Sol?",
+      "answer": 150,
+      "unit": "milhões de km",
+      "fact": "Essa distância é a unidade astronômica, usada para medir o sistema solar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Alexander Fleming descobriu a penicilina?",
+      "answer": 1928,
+      "scale": 50,
+      "fact": "Ele notou que um fungo tinha matado as bactérias de uma placa esquecida no laboratório."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade da Terra na órbita em volta do Sol?",
+      "answer": 30,
+      "unit": "km/s",
+      "fact": "São mais de 100 mil km/h, e mesmo assim não sentimos nada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Einstein publicou a Teoria da Relatividade Restrita?",
+      "answer": 1905,
+      "scale": 50,
+      "fact": "No mesmo ano, chamado de 'ano milagroso', ele publicou outros três artigos revolucionários."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A quantos anos-luz fica Proxima Centauri, a estrela mais próxima do Sol?",
+      "answer": 4.24,
+      "unit": "anos-luz",
+      "fact": "Com as sondas mais rápidas de hoje, a viagem levaria milhares de anos."
+    }
+  ]
+}

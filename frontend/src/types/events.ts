@@ -169,6 +169,59 @@ export interface ErrorAck {
   error: string;
 }
 /**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateGuess".
+ */
+export interface EstimateGuess {
+  player_id: string;
+  value: number | null;
+  error_percent: number | null;
+  exact: boolean;
+  delta: number;
+  elapsed_ms: number | null;
+}
+/**
+ * Pontos da pergunta atual (mudam com o nível e o tamanho da partida): max_points perto de 0% de
+ * erro, caindo em linha reta até 0 em break_even_percent; daí em diante, perda até max_loss em
+ * max_loss_percent (sem passar disso). Cravar soma exact_bonus.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateScoring".
+ */
+export interface EstimateScoring {
+  max_points: number;
+  exact_bonus: number;
+  break_even_percent: number;
+  max_loss: number;
+  max_loss_percent: number;
+}
+/**
+ * Chutômetro. Fases: starting → (answering → results) por pergunta, com level quando o nível
+ * muda (fáceis → médias → difíceis, como no clássico) → finished. Sem tempo de leitura.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateView".
+ */
+export interface EstimateView {
+  phase: "starting" | "level" | "answering" | "results" | "finished";
+  phase_duration_ms: number;
+  phase_ends_in_ms: number;
+  round: number;
+  total_rounds: number;
+  theme: string | null;
+  difficulty: "easy" | "medium" | "hard" | "impossible";
+  text: string | null;
+  unit: string | null;
+  answered: string[];
+  my_guess: number | null;
+  answer: number | null;
+  reference: number | null;
+  fact: string | null;
+  guesses: EstimateGuess[];
+  scoring: EstimateScoring;
+  ready: string[];
+}
+/**
  * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
  * answering → results. Telas de preparação, em que a pergunta não é enviada: starting
  * (antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o
@@ -932,14 +985,15 @@ export interface RoomState {
   survival: SurvivalView | null;
   hot_potato: HotPotatoView | null;
   team_match: TeamMatchView | null;
+  estimate?: EstimateView | null;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
-  mode: "classic" | "specialist" | "teams" | "last_standing" | "hot_potato";
-  mode_options: ("classic" | "specialist" | "teams" | "last_standing" | "hot_potato")[];
+  mode: "classic" | "specialist" | "teams" | "last_standing" | "hot_potato" | "estimate";
+  mode_options: ("classic" | "specialist" | "teams" | "last_standing" | "hot_potato" | "estimate")[];
   survival_kind: "true_false" | "choices";
   survival_kind_options: ("true_false" | "choices")[];
   powers: boolean;
@@ -1640,7 +1694,7 @@ export interface SubmitDuelBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  mode?: ("classic" | "specialist" | "teams" | "last_standing" | "hot_potato") | null;
+  mode?: ("classic" | "specialist" | "teams" | "last_standing" | "hot_potato" | "estimate") | null;
   survival_kind?: ("true_false" | "choices") | null;
   powers?: boolean | null;
   team_count?: number | null;

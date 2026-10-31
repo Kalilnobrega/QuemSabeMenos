@@ -1,0 +1,215 @@
+{
+  "theme": "Games",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o primeiro Super Mario Bros.?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "O jogo vinha junto com o Nintendo Entertainment System em muitos pacotes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o primeiro PlayStation foi lançado no Japão?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "O console nasceu de uma parceria desfeita entre Sony e Nintendo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos Pokémon havia na primeira geração?",
+      "answer": 151,
+      "unit": "Pokémon",
+      "fact": "O 151º é o Mew, que nem estava nos planos e entrou escondido no código."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançada a versão completa de Minecraft?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Antes disso, o jogo já fazia sucesso em versões de teste desde 2009."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias Minecraft vendeu até 2023?",
+      "answer": 300,
+      "unit": "milhões",
+      "fact": "É o jogo mais vendido da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o jogo Pong?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "Foi o primeiro sucesso comercial dos videogames, da Atari."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o primeiro The Legend of Zelda?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "Foi um dos primeiros jogos de console a salvar o progresso numa bateria no cartucho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Tetris foi criado?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "Alexey Pajitnov criou o jogo num computador da Academia de Ciências da União Soviética."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Nintendo Switch foi lançado?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Ele é ao mesmo tempo console de mesa e portátil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas unidades do PlayStation 2 foram vendidas?",
+      "answer": 160,
+      "unit": "milhões",
+      "fact": "É o console mais vendido da história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado GTA V?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "Ele arrecadou 1 bilhão de dólares em três dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Pac-Man?",
+      "answer": 1980,
+      "scale": 50,
+      "fact": "O nome original no Japão era Puck-Man."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Mega Drive foi lançado no Brasil?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "A Tectoy lançou o console aqui e fabricou versões por décadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Fortnite Battle Royale?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O modo gratuito saiu poucos meses depois do Fortnite original."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos Pokémon existem até a nona geração?",
+      "answer": 1025,
+      "unit": "Pokémon",
+      "fact": "A nona geração veio com Pokémon Scarlet e Violet, em 2022."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano surgiu o primeiro Counter-Strike?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Ele começou como um mod gratuito de Half-Life."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Game Boy foi lançado?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "Tetris vinha junto e ajudou a vender milhões de aparelhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas unidades do Game Boy, somando o Game Boy Color, foram vendidas?",
+      "answer": 119,
+      "unit": "milhões",
+      "fact": "As pilhas duravam cerca de 30 horas, muito mais que as dos rivais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o primeiro jogo de futebol da série FIFA?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Foi o FIFA International Soccer, que ainda não tinha jogadores reais com nome."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado Sonic the Hedgehog?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Ele foi criado para ser o mascote da Sega contra o Mario."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado League of Legends?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "O Mundial de LoL virou um dos maiores eventos de esports do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o primeiro Xbox?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Foi a estreia da Microsoft em consoles, com Halo como grande sucesso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias GTA V vendeu até 2024?",
+      "answer": 200,
+      "unit": "milhões",
+      "fact": "Ele foi lançado em três gerações de consoles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Free Fire?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O jogo virou febre no Brasil por rodar bem em celulares mais simples."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Atari 2600?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "Ele popularizou os cartuchos com jogos trocáveis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado Street Fighter II?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Ele popularizou os jogos de luta e os combos nos fliperamas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o fliperama Donkey Kong?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Foi a estreia do Mario, que ainda se chamava Jumpman."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas unidades do Nintendo DS foram vendidas?",
+      "answer": 154,
+      "unit": "milhões",
+      "fact": "É o portátil mais vendido da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o primeiro Resident Evil?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "O jogo popularizou o termo survival horror."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado Among Us?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "O jogo só estourou em 2020, durante a pandemia."
+    }
+  ]
+}

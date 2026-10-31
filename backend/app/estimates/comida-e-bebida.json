@@ -1,0 +1,215 @@
+{
+  "theme": "Comida e bebida",
+  "questions": [
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Coca-Cola foi criada?",
+      "answer": 1886,
+      "scale": 50,
+      "fact": "O farmacêutico John Pemberton vendia a bebida como tônico numa farmácia de Atlanta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas calorias tem um grama de gordura?",
+      "answer": 9,
+      "unit": "kcal",
+      "fact": "Proteína e carboidrato têm cerca de 4 kcal por grama."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que temperatura é assada uma pizza napolitana tradicional?",
+      "answer": 450,
+      "unit": "°C",
+      "fact": "No forno a lenha, ela fica pronta em 60 a 90 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros de leite são necessários para fazer 1 kg de queijo?",
+      "answer": 10,
+      "unit": "litros",
+      "fact": "Queijos duros, como o parmesão, pedem ainda mais leite por quilo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o primeiro McDonald's abriu no Brasil?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "A primeira loja foi em Copacabana, no Rio de Janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que porcentagem da melancia é água?",
+      "answer": 92,
+      "unit": "%",
+      "fact": "O nome em inglês, watermelon, já diz: melão de água."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos miligramas de cafeína tem um café expresso?",
+      "answer": 63,
+      "unit": "mg",
+      "fact": "Uma xícara de café coado costuma ter mais cafeína que um expresso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano teria surgido a pizza Margherita?",
+      "answer": 1889,
+      "scale": 50,
+      "fact": "Segundo a história, ela foi criada em Nápoles em homenagem à rainha Margherita, com as cores da Itália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos tipos de queijo a França teria, na frase famosa de Charles de Gaulle?",
+      "answer": 246,
+      "unit": "queijos",
+      "fact": "Ele perguntou como governar um país que tem 246 variedades de queijo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o teor alcoólico mínimo da cachaça, pela lei brasileira?",
+      "answer": 38,
+      "unit": "%",
+      "fact": "A cachaça vai de 38% a 48%; acima disso, vira aguardente de cana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas calorias tem uma colher de sopa de açúcar?",
+      "answer": 48,
+      "unit": "kcal",
+      "fact": "Uma colher de sopa rasa tem cerca de 12 gramas de açúcar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Guaraná Antarctica foi lançado?",
+      "answer": 1921,
+      "scale": 50,
+      "fact": "A receita é feita com extrato do fruto do guaraná, nativo da Amazônia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros de seiva de bordo são necessários para 1 litro de xarope?",
+      "answer": 40,
+      "unit": "litros",
+      "fact": "A seiva é fervida por horas até virar xarope; o Canadá produz a maior parte do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que temperatura a água ferve no topo do Everest?",
+      "answer": 70,
+      "unit": "°C",
+      "fact": "Com menos pressão do ar, a água ferve mais cedo, e cozinhar fica mais difícil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas sementes tem, em média, um morango?",
+      "answer": 200,
+      "unit": "sementes",
+      "fact": "Os pontinhos de fora são os frutos de verdade; a parte vermelha é o receptáculo da flor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de SHU tem, em média, a pimenta Carolina Reaper?",
+      "answer": 1.6,
+      "unit": "milhões de SHU",
+      "fact": "Uma pimenta jalapeño tem de 2.500 a 8.000 SHU."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Nutella foi lançada?",
+      "answer": 1964,
+      "scale": 50,
+      "fact": "Ela nasceu de uma pasta de avelã criada na Itália do pós-guerra, quando o cacau era caro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros de água são usados, em média, para produzir 1 kg de carne bovina?",
+      "answer": 15400,
+      "unit": "litros",
+      "fact": "A maior parte é a água usada para cultivar a comida do gado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Momofuku Ando inventou o macarrão instantâneo?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "O primeiro foi o Chicken Ramen; o copo de isopor veio em 1971."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas camadas tem uma massa folhada clássica?",
+      "answer": 729,
+      "unit": "camadas",
+      "fact": "Seis dobras em três: 3 elevado a 6 dá 729 camadas de massa e manteiga."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que porcentagem da polpa do abacate é gordura?",
+      "answer": 15,
+      "unit": "%",
+      "fact": "É sobretudo gordura monoinsaturada, a mesma do azeite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura no centro de um bife ao ponto?",
+      "answer": 60,
+      "unit": "°C",
+      "fact": "Mal passado fica perto de 52 °C; bem passado, acima de 70 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto pesa uma roda de queijo Parmigiano Reggiano?",
+      "answer": 40,
+      "unit": "kg",
+      "fact": "Cada roda leva cerca de 550 litros de leite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Por quantos meses, no mínimo, o Parmigiano Reggiano precisa maturar?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Os mais apreciados maturam por 24 a 36 meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a cervejaria Heineken foi fundada?",
+      "answer": 1864,
+      "scale": 50,
+      "fact": "Gerard Adriaan Heineken comprou uma cervejaria em Amsterdã aos 22 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros tem um barril de chope padrão no Brasil?",
+      "answer": 50,
+      "unit": "litros",
+      "fact": "Também existem barris de 30 litros, comuns em festas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Big Mac começou a ser vendido?",
+      "answer": 1967,
+      "scale": 50,
+      "fact": "Foi criado por um franqueado de Pittsburgh e chegou a todo o país em 1968."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas calorias tem uma lata de 350 ml de Coca-Cola?",
+      "answer": 149,
+      "unit": "kcal",
+      "fact": "Quase tudo vem dos cerca de 37 gramas de açúcar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos uma galinha poedeira bota por ano?",
+      "answer": 300,
+      "unit": "ovos",
+      "fact": "As galinhas selvagens, ancestrais das de granja, botavam cerca de 12 por ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas variedades de batata existem no Peru?",
+      "answer": 4000,
+      "unit": "variedades",
+      "fact": "A batata foi domesticada nos Andes há cerca de 8 mil anos."
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "theme": "Entretenimento",
+  "questions": [
+    {
+      "difficulty": "medium",
+      "text": "Em que ano estreou o primeiro filme de Star Wars?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "O filme quase não foi feito: os estúdios achavam que ficção científica não dava bilheteria."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos episódios tem a série Friends?",
+      "answer": 236,
+      "unit": "episódios",
+      "fact": "Foram 10 temporadas, de 1994 a 2004."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o filme Titanic foi lançado?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Foi o primeiro filme a passar de 1 bilhão de dólares de bilheteria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Oscars o filme Titanic ganhou?",
+      "answer": 11,
+      "unit": "Oscars",
+      "fact": "Ele divide o recorde com Ben-Hur e O Senhor dos Anéis: O Retorno do Rei."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano os Beatles se separaram?",
+      "answer": 1970,
+      "scale": 50,
+      "fact": "Paul McCartney anunciou a saída em abril de 1970."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Os Simpsons estrearam como série própria?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "Antes disso, a família aparecia em curtas no programa de Tracey Ullman, desde 1987."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos minutos dura o filme Titanic?",
+      "answer": 194,
+      "unit": "minutos",
+      "fact": "São 3 horas e 14 minutos; o naufrágio na tela dura quase o mesmo tempo que o real."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano estreou o primeiro Toy Story?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Foi o primeiro longa-metragem feito inteiro por computador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos episódios tem Breaking Bad?",
+      "answer": 62,
+      "unit": "episódios",
+      "fact": "A série teve 5 temporadas, de 2008 a 2013."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Michael Jackson lançou o álbum Thriller?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "É considerado o álbum mais vendido da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Com quantos anos Elvis Presley morreu?",
+      "answer": 42,
+      "unit": "anos",
+      "fact": "Elvis morreu em 1977, em Graceland, sua casa em Memphis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o primeiro Rock in Rio?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "Queen, AC/DC e Iron Maiden tocaram na primeira edição, na Cidade do Rock."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos episódios teve Game of Thrones?",
+      "answer": 73,
+      "unit": "episódios",
+      "fact": "Foram 8 temporadas, de 2011 a 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Chaves estreou na TV brasileira?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "O SBT exibiu o seriado mexicano por décadas, até 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano estreou o primeiro filme do Homem de Ferro?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi o primeiro filme do Universo Cinematográfico Marvel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano estreou o Jornal Nacional?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "Foi o primeiro telejornal transmitido ao vivo para várias regiões do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o filme Avatar, de 2009, arrecadou nas bilheterias?",
+      "answer": 2.92,
+      "unit": "bilhões de dólares",
+      "fact": "Com os relançamentos, ele é a maior bilheteria da história do cinema."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas músicas os Beatles gravaram oficialmente?",
+      "answer": 213,
+      "unit": "músicas",
+      "fact": "Lennon e McCartney assinaram a grande maioria delas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano estreou o primeiro Shrek?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Shrek ganhou o primeiro Oscar de melhor animação da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos dura Bohemian Rhapsody, do Queen?",
+      "answer": 354,
+      "unit": "segundos",
+      "fact": "São 5 minutos e 54 segundos, sem refrão, em partes de balada, ópera e rock."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a primeira edição do Big Brother Brasil?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "O primeiro campeão foi Kléber Bambam."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Leonardo DiCaprio ganhou o Oscar de melhor ator?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Ele ganhou por O Regresso, depois de cinco indicações sem vitória."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano estreou a animação O Rei Leão?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "A trilha de Elton John e Hans Zimmer ganhou dois Oscars."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Netflix foi fundada?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Ela começou alugando DVDs pelo correio; o streaming veio em 2007."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias o álbum Thriller vendeu, segundo as estimativas?",
+      "answer": 70,
+      "unit": "milhões",
+      "fact": "Sete das nove faixas do álbum viraram singles de sucesso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o filme Cidade de Deus?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "O filme recebeu quatro indicações ao Oscar, incluindo melhor diretor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos minutos dura Vingadores: Ultimato?",
+      "answer": 181,
+      "unit": "minutos",
+      "fact": "Ele tirou de Avatar o posto de maior bilheteria por um tempo, em 2019."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano estreou o filme Tropa de Elite?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "O filme vazou na internet antes da estreia e virou fenômeno em cópias piratas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Roberto Carlos lançou a música Detalhes?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "A música está no álbum Roberto Carlos de 1971, um dos mais vendidos dele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano estreou a série Stranger Things?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "A série se passa nos anos 80 e é cheia de referências a filmes da época."
+    }
+  ]
+}

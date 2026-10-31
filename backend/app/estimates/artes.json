@@ -1,0 +1,215 @@
+{
+  "theme": "Artes",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Leonardo da Vinci começou a pintar a Mona Lisa?",
+      "answer": 1503,
+      "scale": 50,
+      "fact": "Ele começou por volta de 1503 e continuou retocando o quadro por mais de dez anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas sinfonias completas Beethoven compôs?",
+      "answer": 9,
+      "unit": "sinfonias",
+      "fact": "A Nona, de 1824, tem a Ode à Alegria e foi composta quando ele já estava praticamente surdo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas teclas tem um piano padrão?",
+      "answer": 88,
+      "unit": "teclas",
+      "fact": "São 52 brancas e 36 pretas, cobrindo pouco mais de sete oitavas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a Semana de Arte Moderna, em São Paulo?",
+      "answer": 1922,
+      "scale": 50,
+      "fact": "Foi em fevereiro de 1922, no Theatro Municipal, no centenário da Independência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Van Gogh pintou A Noite Estrelada?",
+      "answer": 1889,
+      "scale": 50,
+      "fact": "Ele pintou a vista da janela do hospital psiquiátrico de Saint-Rémy, na França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Com quantos anos Mozart morreu?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "Mozart morreu em 1791, deixando o Réquiem inacabado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de altura tem a estátua do Cristo Redentor, sem o pedestal?",
+      "answer": 30,
+      "unit": "metros",
+      "fact": "A estátua tem 30 metros e o pedestal mais 8; os braços abertos medem 28 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Michelangelo terminou de pintar o teto da Capela Sistina?",
+      "answer": 1512,
+      "scale": 50,
+      "fact": "Foram cerca de quatro anos de trabalho, de 1508 a 1512."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Tarsila do Amaral pintou o Abaporu?",
+      "answer": 1928,
+      "scale": 50,
+      "fact": "O quadro foi presente para Oswald de Andrade e inspirou o Movimento Antropofágico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas peças de teatro são atribuídas a Shakespeare?",
+      "answer": 37,
+      "unit": "peças",
+      "fact": "A conta tradicional é 37; com colaborações, alguns estudiosos chegam a 39."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Picasso pintou Guernica?",
+      "answer": 1937,
+      "scale": 50,
+      "fact": "O painel retrata o bombardeio da cidade basca de Guernica na Guerra Civil Espanhola."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de altura tem a Torre Eiffel, contando as antenas?",
+      "answer": 330,
+      "unit": "metros",
+      "fact": "Com a antena instalada em 2022, ela chegou a 330 metros; sem antenas, são cerca de 300."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Dom Casmurro, de Machado de Assis, foi publicado?",
+      "answer": 1899,
+      "scale": 50,
+      "fact": "Até hoje se discute se Capitu traiu Bentinho; o livro nunca responde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Louvre abriu as portas como museu?",
+      "answer": 1793,
+      "scale": 50,
+      "fact": "Antes de museu, o Louvre foi fortaleza e palácio dos reis da França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano começou a construção da Sagrada Família, em Barcelona?",
+      "answer": 1882,
+      "scale": 50,
+      "fact": "Gaudí assumiu a obra em 1883 e trabalhou nela até morrer, em 1926."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas notas diferentes tem a escala cromática ocidental, sem repetir a oitava?",
+      "answer": 12,
+      "unit": "notas",
+      "fact": "São as 7 notas naturais mais 5 sustenidos ou bemóis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Machado de Assis?",
+      "answer": 1839,
+      "scale": 50,
+      "fact": "Ele nasceu no Morro do Livramento, no Rio, e fundou a Academia Brasileira de Letras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Os Lusíadas, de Camões, foi publicado?",
+      "answer": 1572,
+      "scale": 50,
+      "fact": "O poema tem 10 cantos e conta a viagem de Vasco da Gama às Índias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano estreou a ópera O Guarani, de Carlos Gomes?",
+      "answer": 1870,
+      "scale": 50,
+      "fact": "A estreia foi no Teatro alla Scala, em Milão; a abertura virou a vinheta da Voz do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos versos tem um soneto?",
+      "answer": 14,
+      "unit": "versos",
+      "fact": "São dois quartetos e dois tercetos, forma popularizada por Petrarca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Edvard Munch pintou a primeira versão de O Grito?",
+      "answer": 1893,
+      "scale": 50,
+      "fact": "Munch fez várias versões, em pintura e em gravura, entre 1893 e 1910."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o Davi de Michelangelo, sem o pedestal?",
+      "answer": 5.17,
+      "unit": "metros",
+      "fact": "A estátua foi esculpida num único bloco de mármore, entre 1501 e 1504."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Leonardo da Vinci morreu?",
+      "answer": 1519,
+      "scale": 50,
+      "fact": "Ele morreu na França, onde vivia a convite do rei Francisco I."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu Oscar Niemeyer?",
+      "answer": 1907,
+      "scale": 50,
+      "fact": "Niemeyer projetou os principais prédios de Brasília e trabalhou até depois dos 100 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos Oscar Niemeyer morreu?",
+      "answer": 104,
+      "unit": "anos",
+      "fact": "Ele morreu em 2012, dez dias antes de completar 105 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Beethoven?",
+      "answer": 1770,
+      "scale": 50,
+      "fact": "Beethoven nasceu em Bonn, na Alemanha, e foi aluno de Haydn em Viena."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Drummond publicou o poema No meio do caminho?",
+      "answer": 1928,
+      "scale": 50,
+      "fact": "Saiu na Revista de Antropofagia e foi chamado de 'besteira' por muitos críticos da época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Theatro Municipal do Rio de Janeiro?",
+      "answer": 1909,
+      "scale": 50,
+      "fact": "A fachada foi inspirada na Ópera de Paris."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros mede a Estátua da Liberdade, do pé à ponta da tocha?",
+      "answer": 46,
+      "unit": "metros",
+      "fact": "Com o pedestal, o monumento chega a 93 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Monet pintou Impressão, nascer do sol?",
+      "answer": 1872,
+      "scale": 50,
+      "fact": "Um crítico usou o nome do quadro para zombar do grupo, e o termo Impressionismo pegou."
+    }
+  ]
+}

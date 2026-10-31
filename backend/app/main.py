@@ -23,6 +23,7 @@ from app.events import (
     SetTeamRequest,
     ChooseRepresentativeRequest,
     ChooseThemeRequest,
+    SubmitGuessRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     SubmitDuelBetRequest,
@@ -95,6 +96,14 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 
 
 def check_round_done(room: Room) -> None:
+    if room.estimate:
+        estimate, connected = room.estimate, room.connected_ids()
+        if (estimate.phase == "answering" and estimate.everyone_answered(connected)) or (
+            estimate.phase == "results" and estimate.everyone_ready(connected)
+        ):
+            if event := round_done.get(room.code):
+                event.set()
+        return
     if room.team_match:
         if room.team_match.can_advance(room.connected_ids()) and (event := round_done.get(room.code)):
             event.set()
@@ -283,6 +292,31 @@ async def run_survival(room: Room) -> None:
             del round_done[room.code]
 
 
+async def run_estimate(room: Room) -> None:
+    """Conduz o Chutômetro: cada fase dura o seu tempo; acaba antes se todos chutaram ou pularam."""
+    estimate = room.estimate
+    done = round_done[room.code] = asyncio.Event()
+
+    def alive() -> bool:
+        return rooms.rooms.get(room.code) is room and room.estimate is estimate
+
+    try:
+        while alive():
+            done.clear()
+            await broadcast(room)
+            if estimate.phase == "finished":
+                return
+            check_round_done(room)  # quem saiu não segura a fase
+            with suppress(TimeoutError):
+                await asyncio.wait_for(done.wait(), max(0.0, estimate.deadline() - time.monotonic()))
+            if not alive():
+                return
+            estimate.advance(time.monotonic(), room.players)
+    finally:
+        if round_done.get(room.code) is done:
+            del round_done[room.code]
+
+
 async def run_team_match(room: Room) -> None:
     """Conduz os Times: cada fase dura o seu tempo, e acaba antes quando todo mundo já fez a sua parte."""
     match = room.team_match
@@ -448,7 +482,7 @@ async def start_game(sid: str) -> dict:
         room = rooms.start(sid)
     except RoomError as e:
         return error(str(e))
-    runner = run_team_match if room.team_match else run_hot_potato if room.hot_potato else run_survival if room.survival else run_game
+    runner = run_estimate if room.estimate else run_team_match if room.team_match else run_hot_potato if room.hot_potato else run_survival if room.survival else run_game
     sio.start_background_task(runner, room)
     return OkAck().model_dump()
 
@@ -505,6 +539,20 @@ async def use_powerup(sid: str, data: dict) -> dict:
         return error(str(e))
     if room.hot_potato or room.team_match:
         check_round_done(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def submit_guess(sid: str, data: dict) -> dict:
+    try:
+        request = SubmitGuessRequest.model_validate(data)
+        room = rooms.guess(sid, request.value, time.monotonic())
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    check_round_done(room)
     await broadcast(room)
     return OkAck().model_dump()
 

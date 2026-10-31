@@ -467,3 +467,25 @@ async def test_specialist_picker_chooses_the_block_theme(connect):
     assert started["game"]["block_theme"] == theme
     reading = await ana.wait_for(lambda s: s["game"]["phase"] == "reading", timeout=8)
     assert reading["game"]["question"]["theme"] == theme
+
+
+async def test_estimate_match_from_guess_to_podium(connect, monkeypatch):
+    from app import estimate
+
+    monkeypatch.setattr(estimate, "START_SECONDS", 0.05)
+    monkeypatch.setattr(estimate, "RESULTS_SECONDS", 5.0)
+    ana, bia, created, joined = await setup_room(connect)
+    assert (await ana.call("update_settings", {"mode": "estimate", "rounds": 10}))["ok"]
+    assert (await ana.call("start_game"))["ok"]
+    state = await ana.wait_for(lambda s: s["estimate"] and s["estimate"]["phase"] == "answering")
+    assert state["estimate"]["total_rounds"] == 10 and state["estimate"]["answer"] is None
+    assert not (await ana.call("submit_guess", {"value": "muito"}))["ok"]
+    assert (await ana.call("submit_guess", {"value": 1234.5}))["ok"]
+    assert (await bia.call("submit_guess", {"value": 1}))["ok"]
+    results = await bia.wait_for(lambda s: s["estimate"]["phase"] == "results", timeout=2)  # todos chutaram
+    assert results["estimate"]["answer"] is not None and len(results["estimate"]["guesses"]) == 2
+    await ana.call("skip_results")
+    await bia.call("skip_results")
+    await ana.wait_for(lambda s: s["estimate"]["round"] == 2, timeout=2)  # todos pularam
+    await ana.call("leave_room")
+    await bia.call("leave_room")

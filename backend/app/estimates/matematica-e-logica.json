@@ -1,0 +1,200 @@
+{
+  "theme": "Matemática e lógica",
+  "questions": [
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 17 × 23?",
+      "answer": 391,
+      "fact": "Um truque: 17 × 23 = 20² − 3² = 400 − 9."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a raiz quadrada de 2025?",
+      "answer": 45,
+      "fact": "2025 foi o primeiro ano quadrado perfeito desde 1936."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 2 elevado a 10?",
+      "answer": 1024,
+      "fact": "É por isso que um kilobyte, em computação, tem 1.024 bytes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos números primos há entre 1 e 100?",
+      "answer": 25,
+      "unit": "primos",
+      "fact": "O 2 é o único primo par."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma dos números de 1 a 100?",
+      "answer": 5050,
+      "fact": "Diz a lenda que Gauss resolveu isso de cabeça, ainda criança, somando 1+100, 2+99..."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos graus dá a soma dos ângulos internos de um hexágono?",
+      "answer": 720,
+      "unit": "graus",
+      "fact": "A fórmula é (lados − 2) × 180."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 15% de 840?",
+      "answer": 126,
+      "fact": "10% é 84 e 5% é a metade disso, 42."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 7 fatorial (7!)?",
+      "answer": 5040,
+      "fact": "É o número de jeitos de enfileirar 7 pessoas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas diagonais tem um decágono?",
+      "answer": 35,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos tem um dia?",
+      "answer": 86400,
+      "unit": "segundos",
+      "fact": "24 × 60 × 60."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 999 × 9?",
+      "answer": 8991,
+      "fact": "É o mesmo que 9.000 − 9."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a raiz cúbica de 1728?",
+      "answer": 12,
+      "fact": "12 × 12 × 12 = 1.728, também chamado de grosa de grosas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anagramas tem a palavra AMOR?",
+      "answer": 24,
+      "unit": "anagramas",
+      "fact": "São 4 letras diferentes: 4! = 24."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas arestas tem um cubo?",
+      "answer": 12,
+      "unit": "arestas",
+      "fact": "Um cubo tem 6 faces, 12 arestas e 8 vértices."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o valor do número de Euler (e), com duas casas decimais?",
+      "answer": 2.72,
+      "fact": "Ele aparece em juros compostos, crescimento de populações e muito mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 1/8 em porcentagem?",
+      "answer": 12.5,
+      "unit": "%",
+      "fact": "1/4 é 25%; metade disso é 12,5%."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 20?",
+      "answer": 1048576,
+      "fact": "É pouco mais de um milhão: um 'mega' em computação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 6 números existem na Mega-Sena?",
+      "answer": 50.06,
+      "unit": "milhões",
+      "fact": "Com uma aposta simples, a chance de ganhar é de 1 em 50.063.860."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 13 ao quadrado?",
+      "answer": 169,
+      "fact": "Os quadrados de 11 a 19 aparecem em muita conta de cabeça."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos lados tem um icoságono?",
+      "answer": 20,
+      "unit": "lados",
+      "fact": "O prefixo icosa vem do grego e quer dizer vinte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o próximo número: 1, 1, 2, 3, 5, 8, 13, 21, ...?",
+      "answer": 34,
+      "fact": "É a sequência de Fibonacci: cada número é a soma dos dois anteriores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se 10 pessoas se cumprimentam uma vez cada, quantos apertos de mão acontecem?",
+      "answer": 45,
+      "unit": "apertos",
+      "fact": "É 10 × 9 ÷ 2: cada aperto envolve duas pessoas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 16?",
+      "answer": 65536,
+      "fact": "É o número de cores de muitas telas antigas de 16 bits."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos graus tem cada ângulo interno de um pentágono regular?",
+      "answer": 108,
+      "unit": "graus",
+      "fact": "A soma dá 540 graus, dividida pelos 5 ângulos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a raiz quadrada de 2, com duas casas decimais?",
+      "answer": 1.41,
+      "fact": "Foi um dos primeiros números provados irracionais, pelos gregos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 25% de 25% de 1600?",
+      "answer": 100,
+      "fact": "25% de 25% é 1/16; 1600 ÷ 16 = 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos números de três algarismos existem?",
+      "answer": 900,
+      "unit": "números",
+      "fact": "Vão do 100 ao 999."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quadrados, de todos os tamanhos, há num tabuleiro de xadrez?",
+      "answer": 204,
+      "unit": "quadrados",
+      "fact": "É 1² + 2² + ... + 8²: 64 pequenos, 49 de 2×2, e assim por diante."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Um carro anda 300 km em 2 horas e meia. Qual a velocidade média?",
+      "answer": 120,
+      "unit": "km/h",
+      "fact": "300 ÷ 2,5 = 120."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos tem uma semana?",
+      "answer": 10080,
+      "unit": "minutos",
+      "fact": "7 × 24 × 60."
+    }
+  ]
+}

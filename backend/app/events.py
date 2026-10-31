@@ -25,8 +25,8 @@ PowerUp = Literal[
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
     "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
 ]
-GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato"]
-MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato")
+GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato", "estimate"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato", "estimate")
 TeamPick = Literal["random", "host"]  # Times: sorteados no começo ou montados pelo anfitrião
 TEAM_PICK_OPTIONS: tuple[TeamPick, ...] = ("random", "host")
 TEAM_COUNT_OPTIONS = (2, 3, 4)
@@ -110,6 +110,12 @@ class ArmPowerUpRequest(BaseModel):
     legendary: bool = False  # a versão lendária de uma sabotagem: vale em todos os outros, sem alvo
     theme: str | None = None  # Tema: um dos temas sorteados em `theme_choices`
     target_team: int | None = None  # Times: o time alvo
+
+
+class SubmitGuessRequest(BaseModel):
+    """Chutômetro: o número chutado."""
+
+    value: float = Field(allow_inf_nan=False)
 
 
 class ChooseThemeRequest(BaseModel):
@@ -628,6 +634,50 @@ class TeamMatchView(BaseModel):
     duel_teams: list[int]  # os dois times do X1
 
 
+class EstimateGuess(BaseModel):
+    player_id: str
+    value: float | None  # None = não chutou
+    error_percent: float | None  # erro em % da resposta (ou da escala da pergunta)
+    exact: bool  # Chute certeiro
+    delta: int
+    elapsed_ms: int | None
+
+
+class EstimateScoring(BaseModel):
+    """Pontos da pergunta atual (mudam com o nível e o tamanho da partida): max_points perto de 0% de
+    erro, caindo em linha reta até 0 em break_even_percent; daí em diante, perda até max_loss em
+    max_loss_percent (sem passar disso). Cravar soma exact_bonus."""
+
+    max_points: int
+    exact_bonus: int
+    break_even_percent: float
+    max_loss: int
+    max_loss_percent: float
+
+
+class EstimateView(BaseModel):
+    """Chutômetro. Fases: starting → (answering → results) por pergunta, com level quando o nível
+    muda (fáceis → médias → difíceis, como no clássico) → finished. Sem tempo de leitura."""
+
+    phase: Literal["starting", "level", "answering", "results", "finished"]
+    phase_duration_ms: int
+    phase_ends_in_ms: int
+    round: int  # começa em 1
+    total_rounds: int
+    theme: str | None
+    difficulty: Difficulty  # da pergunta atual (na abertura, da primeira)
+    text: str | None  # None em starting e level
+    unit: str | None  # aparece do lado do campo ("km", "anos")
+    answered: list[str]
+    my_guess: float | None
+    answer: float | None  # só na revelação
+    reference: float | None  # só na revelação: o valor que vale 100% de erro (a escala da pergunta)
+    fact: str | None
+    guesses: list[EstimateGuess]  # só na revelação, do mais perto para o mais longe
+    scoring: EstimateScoring
+    ready: list[str]
+
+
 class RoomState(BaseModel):
     """Enviado no evento `room_state` sempre que a sala muda."""
 
@@ -642,6 +692,7 @@ class RoomState(BaseModel):
     survival: SurvivalView | None
     hot_potato: HotPotatoView | None
     team_match: TeamMatchView | None
+    estimate: EstimateView | None = None
 
 
 class Ack(BaseModel):

@@ -40,6 +40,7 @@ from app.game import (
     pick_questions,
     point_scale,
 )
+from app.estimate import ROUND_OPTIONS as ESTIMATE_ROUNDS, Estimate, EstimateError, EstimateQuestion, load_estimates
 from app.hot_potato import HotPotato, HotPotatoError
 from app.survival import Survival, SurvivalError
 from app.teams import TeamMatch, TeamMatchError
@@ -109,6 +110,7 @@ class Room:
     survival: Survival | None = None  # o modo Último de pé, no lugar de `game`
     hot_potato: HotPotato | None = None  # o modo Batata quente, no lugar de `game`
     team_match: TeamMatch | None = None  # o modo Times, no lugar de `game`
+    estimate: Estimate | None = None  # o modo Chutômetro, no lugar de `game`
     # Perguntas já sorteadas nesta sala, para "jogar de novo" trazer perguntas novas.
     used_questions: set[str] = field(default_factory=set)
 
@@ -168,6 +170,7 @@ class Room:
             survival=self.survival.view(now, viewer, [p.id for p in self.players]) if self.survival else None,
             hot_potato=self.hot_potato.view(now, [p.id for p in self.players], viewer) if self.hot_potato else None,
             team_match=self.team_match.view(now, viewer) if self.team_match else None,
+            estimate=self.estimate.view(now, viewer) if self.estimate else None,
         )
 
 
@@ -196,9 +199,11 @@ class RoomManager:
         bank: list[Question] | None = None,
         rng: random.Random | None = None,
         statements: list[DuelQuestion] | None = None,
+        estimates: list[EstimateQuestion] | None = None,
     ) -> None:
         self.bank = load_bank() if bank is None else bank
         self.statements = load_statements() if statements is None else statements
+        self.estimates = load_estimates() if estimates is None else estimates
         self.theme_options = sorted({q.theme for q in self.bank})
         self.rng = rng or random.Random()
         self.rooms: dict[str, Room] = {}
@@ -388,6 +393,12 @@ class RoomManager:
                 used=room.used_questions,
             )
             return room
+        if room.mode == "estimate":
+            # Até 20 perguntas: com mais, o anfitrião fica com o maior tamanho do Chutômetro.
+            rounds = max([n for n in ESTIMATE_ROUNDS if n <= room.rounds] or [ESTIMATE_ROUNDS[0]])
+            pool = [q for q in self.estimates if q.theme in room.themes]
+            room.estimate = Estimate.create(pool, rounds, room.used_questions, self.rng, now)
+            return room
         if room.mode == "hot_potato":
             room.hot_potato = HotPotato.create(
                 [p.id for p in room.players], bank, room.used_questions, self.rng, now,
@@ -537,6 +548,17 @@ class RoomManager:
             raise RoomError("Não tem partida de times rolando.")
         return self._on_teams(room, lambda m: m.choose(player.id, choice))
 
+    def guess(self, sid: str, value: float, now: float) -> Room:
+        """Chutômetro: o número chutado."""
+        room, player = self._playing(sid)
+        if not room.estimate:
+            raise RoomError("Esse modo não tem chute.")
+        try:
+            room.estimate.guess(player.id, value, now)
+        except EstimateError as e:
+            raise RoomError(str(e)) from e
+        return room
+
     def choose_theme(self, sid: str, theme: str) -> Room:
         """Especialista: quem foi sorteado escolhe o tema do bloco."""
         room, player = self._playing(sid)
@@ -557,6 +579,12 @@ class RoomManager:
             raise RoomError("Não tem revelação para pular.")
         if room.survival:
             return self._on_survival(room, lambda s: s.mark_ready(player.id))
+        if room.estimate:
+            try:
+                room.estimate.mark_ready(player.id)
+            except EstimateError as e:
+                raise RoomError(str(e)) from e
+            return room
         try:
             room.game.mark_ready(player.id)
         except GameError as e:
@@ -565,7 +593,7 @@ class RoomManager:
 
     def _playing(self, sid: str) -> tuple[Room, Player]:
         found = self.session(sid)
-        if not found or not (found[0].game or found[0].survival or found[0].hot_potato or found[0].team_match):
+        if not found or not (found[0].game or found[0].survival or found[0].hot_potato or found[0].team_match or found[0].estimate):
             raise RoomError("Não tem partida rolando.")
         return found
 
@@ -585,13 +613,14 @@ class RoomManager:
 
     def play_again(self, sid: str) -> Room:
         room = self._host_room(sid, "recomeçar")
-        current = room.game or room.survival or room.hot_potato or room.team_match
+        current = room.game or room.survival or room.hot_potato or room.team_match or room.estimate
         if not current or current.phase != "finished":
             raise RoomError("A partida ainda não terminou.")
         room.game = None
         room.survival = None
         room.hot_potato = None
         room.team_match = None
+        room.estimate = None
         room.status = "lobby"
         for player in room.players:
             player.score = STARTING_IQ

@@ -1,0 +1,218 @@
+{
+  "theme": "História",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Em que ano começou a Primeira Guerra Mundial?",
+      "answer": 1914,
+      "scale": 50,
+      "fact": "O estopim foi o assassinato do arquiduque Francisco Ferdinando, em Sarajevo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano terminou a Segunda Guerra Mundial?",
+      "answer": 1945,
+      "scale": 50,
+      "fact": "A guerra acabou na Europa em maio e no Pacífico em setembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano caiu o Muro de Berlim?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "O muro caiu em 9 de novembro, depois de 28 anos dividindo a cidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano começou a Revolução Francesa?",
+      "answer": 1789,
+      "scale": 50,
+      "fact": "A Queda da Bastilha, em 14 de julho, virou a data nacional da França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Colombo chegou à América?",
+      "answer": 1492,
+      "scale": 50,
+      "fact": "Ele desembarcou numa ilha das Bahamas achando que tinha chegado às Índias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano caiu Constantinopla?",
+      "answer": 1453,
+      "scale": 50,
+      "fact": "A conquista pelos otomanos marca, para muitos historiadores, o fim da Idade Média."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano os Estados Unidos declararam a independência?",
+      "answer": 1776,
+      "scale": 50,
+      "fact": "A declaração foi aprovada em 4 de julho, em Filadélfia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano antes de Cristo Júlio César foi assassinado?",
+      "answer": 44,
+      "unit": "a.C.",
+      "scale": 50,
+      "fact": "Foi nos Idos de Março, 15 de março, no Senado de Roma."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos durou a Guerra dos Cem Anos?",
+      "answer": 116,
+      "unit": "anos",
+      "fact": "Ela foi de 1337 a 1453, com longas tréguas no meio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Titanic afundou?",
+      "answer": 1912,
+      "scale": 50,
+      "fact": "Ele bateu num iceberg na viagem inaugural, de Southampton a Nova York."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas estavam a bordo do Titanic?",
+      "answer": 2224,
+      "unit": "pessoas",
+      "fact": "Mais de 1.500 morreram; faltavam botes salva-vidas para todos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano caiu o Império Romano do Ocidente?",
+      "answer": 476,
+      "scale": 200,
+      "fact": "O último imperador, Rômulo Augusto, foi deposto por Odoacro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a Revolução Russa?",
+      "answer": 1917,
+      "scale": 50,
+      "fact": "Os bolcheviques, liderados por Lenin, tomaram o poder em outubro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu o ataque a Pearl Harbor?",
+      "answer": 1941,
+      "scale": 50,
+      "fact": "O ataque japonês levou os Estados Unidos a entrar na Segunda Guerra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Nelson Mandela passou preso?",
+      "answer": 27,
+      "unit": "anos",
+      "fact": "Ele saiu em 1990 e foi eleito presidente da África do Sul em 1994."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Gandhi foi assassinado?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Foi poucos meses depois da independência da Índia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a União Soviética deixou de existir?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Ela se dividiu em 15 países independentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Napoleão foi derrotado em Waterloo?",
+      "answer": 1815,
+      "scale": 50,
+      "fact": "Depois da derrota, ele foi exilado na ilha de Santa Helena, onde morreu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Martin Luther King fez o discurso 'Eu tenho um sonho'?",
+      "answer": 1963,
+      "scale": 50,
+      "fact": "O discurso foi em Washington, para mais de 250 mil pessoas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos durou o reinado de Elizabeth II?",
+      "answer": 70,
+      "unit": "anos",
+      "fact": "Ela reinou de 1952 a 2022, o reinado mais longo da história britânica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano antes de Cristo a Grande Pirâmide de Gizé ficou pronta?",
+      "answer": 2560,
+      "unit": "a.C.",
+      "scale": 500,
+      "fact": "Ela foi a construção mais alta feita pelo homem por quase 4 mil anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Lutero publicou as 95 teses?",
+      "answer": 1517,
+      "scale": 50,
+      "fact": "O protesto contra a venda de indulgências deu início à Reforma Protestante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi assinada a Magna Carta, na Inglaterra?",
+      "answer": 1215,
+      "scale": 100,
+      "fact": "Ela limitou o poder do rei João Sem-Terra e inspirou constituições modernas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu o acidente nuclear de Chernobyl?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "A cidade vizinha, Pripyat, foi evacuada e está abandonada até hoje."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Revolução Cubana chegou ao poder?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "Fidel Castro entrou em Havana em janeiro de 1959."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos durou a Guerra do Vietnã?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "Ela foi de 1955 a 1975, com a queda de Saigon."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano antes de Cristo Cleópatra morreu?",
+      "answer": 30,
+      "unit": "a.C.",
+      "scale": 50,
+      "fact": "Com a morte dela, o Egito virou uma província romana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Peste Negra chegou à Europa?",
+      "answer": 1347,
+      "scale": 100,
+      "fact": "A epidemia matou entre um terço e metade da população europeia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Muro de Berlim foi construído?",
+      "answer": 1961,
+      "scale": 50,
+      "fact": "A Alemanha Oriental ergueu o muro da noite para o dia, em 13 de agosto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Nelson Mandela foi eleito presidente da África do Sul?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Foi a primeira eleição em que toda a população negra pôde votar."
+    }
+  ]
+}

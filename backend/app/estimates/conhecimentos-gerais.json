@@ -1,0 +1,214 @@
+{
+  "theme": "Conhecimentos gerais",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem um ano bissexto?",
+      "answer": 366,
+      "unit": "dias",
+      "fact": "O dia extra, 29 de fevereiro, aparece a cada quatro anos, com algumas exceções."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos tem uma hora?",
+      "answer": 3600,
+      "unit": "segundos",
+      "fact": "A divisão por 60 vem dos babilônios, que contavam em base 60."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países são membros da ONU?",
+      "answer": 193,
+      "unit": "países",
+      "fact": "O Sudão do Sul, de 2011, foi o último a entrar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas casas tem um tabuleiro de xadrez?",
+      "answer": 64,
+      "unit": "casas",
+      "fact": "São 8 por 8, alternando claras e escuras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cartas tem um baralho comum, sem os curingas?",
+      "answer": 52,
+      "unit": "cartas",
+      "fact": "São 4 naipes com 13 cartas cada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos tem um dia?",
+      "answer": 1440,
+      "unit": "minutos",
+      "fact": "São 24 horas de 60 minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto da língua portuguesa?",
+      "answer": 26,
+      "unit": "letras",
+      "fact": "K, W e Y voltaram oficialmente com o Acordo Ortográfico de 2009."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas semanas completas tem um ano?",
+      "answer": 52,
+      "unit": "semanas",
+      "fact": "Sobra um dia, ou dois no ano bissexto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos dura o mandato de um senador no Brasil?",
+      "answer": 8,
+      "unit": "anos",
+      "fact": "Deputados têm mandato de 4 anos; o Senado renova 1/3 e 2/3 das vagas alternadamente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas peças tem um jogo de dominó comum?",
+      "answer": 28,
+      "unit": "peças",
+      "fact": "As peças vão do duplo zero ao duplo seis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos fusos horários tem a Rússia?",
+      "answer": 11,
+      "unit": "fusos",
+      "fact": "Quando é meio-dia em Moscou, já é noite em Kamtchatka."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos centímetros tem uma polegada?",
+      "answer": 2.54,
+      "unit": "cm",
+      "fact": "Uma TV de 50 polegadas tem 127 cm na diagonal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem uma milha terrestre?",
+      "answer": 1609,
+      "unit": "metros",
+      "fact": "A milha náutica, usada no mar e no ar, tem 1.852 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de ouro?",
+      "answer": 50,
+      "unit": "anos",
+      "fact": "As bodas de prata são aos 25 e as de diamante, aos 60."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números das faces de um dado comum?",
+      "answer": 21,
+      "fact": "Num dado, as faces opostas sempre somam 7."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros tem um galão americano?",
+      "answer": 3.79,
+      "unit": "litros",
+      "fact": "O galão imperial, britânico, é maior: 4,55 litros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas estrelas tem a bandeira dos Estados Unidos?",
+      "answer": 50,
+      "unit": "estrelas",
+      "fact": "Uma para cada estado; as 13 listras lembram as 13 colônias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas estrelas tem a bandeira do Brasil?",
+      "answer": 27,
+      "unit": "estrelas",
+      "fact": "Cada uma representa um estado ou o Distrito Federal, como estava o céu do Rio em 15/11/1889."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilates tem o ouro puro?",
+      "answer": 24,
+      "unit": "quilates",
+      "fact": "O ouro 18 quilates tem 75% de ouro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas tem uma semana?",
+      "answer": 168,
+      "unit": "horas",
+      "fact": "São 7 dias de 24 horas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas teclas pretas tem um piano padrão?",
+      "answer": 36,
+      "unit": "teclas",
+      "fact": "São 36 pretas e 52 brancas, 88 no total."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem um CPF?",
+      "answer": 11,
+      "unit": "dígitos",
+      "fact": "Os dois últimos são dígitos verificadores, calculados a partir dos outros nove."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes o coração bate em um dia, em média?",
+      "answer": 100000,
+      "unit": "vezes",
+      "fact": "Ao longo de uma vida, são cerca de 2,5 bilhões de batidas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas vivem no mundo?",
+      "answer": 8.1,
+      "unit": "bilhões",
+      "fact": "A população mundial passou de 8 bilhões em novembro de 2022, segundo a ONU."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos andares tem o Burj Khalifa?",
+      "answer": 163,
+      "unit": "andares",
+      "fact": "Com 828 metros, ele é o prédio mais alto do mundo desde 2010."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano as notas e moedas de euro começaram a circular?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "O euro já existia desde 1999, mas só em transações eletrônicas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas línguas são faladas no mundo?",
+      "answer": 7000,
+      "unit": "línguas",
+      "fact": "Cerca de 40% delas correm risco de desaparecer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos de reinado celebra um jubileu de diamante?",
+      "answer": 60,
+      "unit": "anos",
+      "fact": "Elizabeth II foi a única monarca britânica a chegar ao jubileu de platina, de 70 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos graus Celsius são 100 graus Fahrenheit?",
+      "answer": 37.8,
+      "unit": "°C",
+      "fact": "A escala Fahrenheit usava a temperatura do corpo humano como um dos pontos de referência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Com quantos anos morreu Jeanne Calment, a pessoa mais velha já registrada?",
+      "answer": 122,
+      "unit": "anos",
+      "fact": "A francesa viveu de 1875 a 1997 e conheceu Van Gogh quando era jovem."
+    }
+  ]
+}
