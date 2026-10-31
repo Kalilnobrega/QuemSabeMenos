@@ -40,10 +40,10 @@ def test_bank_has_30_numeric_questions_per_theme():
 def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_30_percent():
     q = question("q", 200)
     points = lambda guess: guess_points(error_percent(q, guess), "medium")  # noqa: E731
-    assert points(200) == 30  # cravou: 20 + 10 de bônus
-    assert points(201) == 20  # 0,5%: sem o bônus
-    assert points(210) == 17  # 5%
-    assert points(212) == 16 and points(228) == 11  # 6% ganha mais que 14%
+    assert points(200) == 24  # cravou: 16 + 8 de bônus
+    assert points(201) == 16  # 0,5%: sem o bônus
+    assert points(210) == 13  # 5%
+    assert points(212) == 13 and points(228) == 9  # 6% ganha mais que 14%
     assert points(260) == 0  # 30%: nem ganha nem perde
     assert points(290) == -4  # 45%
     assert points(320) == -8  # 60%
@@ -52,25 +52,25 @@ def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_30_per
 
 
 def test_easy_is_an_obligation_and_hard_is_worth_the_risk():
-    assert [guess_points(e, "easy") for e in (0, 10, 20, 50, 60, None)] == [15, 5, 0, -15, -20, -20]
-    assert [guess_points(e, "hard") for e in (0, 10, 40, 50, 120, None)] == [45, 23, 0, -1, -10, -10]
+    assert [guess_points(e, "easy") for e in (0, 10, 20, 50, 60, None)] == [12, 4, 0, -15, -20, -20]
+    assert [guess_points(e, "hard") for e in (0, 10, 35, 50, 105, None)] == [36, 17, 0, -2, -10, -10]
 
 
 def test_shorter_matches_are_worth_more_per_question():
-    assert guess_points(0, "hard", scale=2) == 90  # 10 perguntas: o dobro
+    assert guess_points(0, "hard", scale=2) == 72  # 10 perguntas: o dobro
     assert guess_points(None, "easy", scale=2) == -40
 
 
 def test_years_use_the_question_scale():
     q = question("ano", 1822, scale=50)
     assert error_percent(q, 1820) == 4  # 2 anos de 50 = 4%, não 0,1%
-    assert guess_points(error_percent(q, 1820), "medium") == 17
+    assert guess_points(error_percent(q, 1820), "medium") == 14
     assert guess_points(error_percent(q, 1700), "medium") == -15
 
 
 def test_negative_answers_measure_distance_from_the_absolute_value():
     q = question("frio", -273.15)
-    assert guess_points(error_percent(q, -270), "medium") == 19  # 1,15%
+    assert guess_points(error_percent(q, -270), "medium") == 15  # 1,15%
 
 
 def test_match_flow_scores_and_sorts_by_distance():
@@ -100,7 +100,7 @@ def test_match_flow_scores_and_sorts_by_distance():
     assert [g.player_id for g in view.guesses] == ["bia", "ana", "caio"]
     assert view.guesses[0].exact and view.guesses[2].value is None
     # Fácil numa partida de 3 (vale 20/3 por pergunta): 40% de erro, cravou, sem chute.
-    assert (ana.score, bia.score, caio.score) == (50 - 67, 50 + 100, 50 - 133)
+    assert (ana.score, bia.score, caio.score) == (50 - 67, 50 + 80, 50 - 133)
     assert caio.answer_ms == ANSWER_SECONDS * 1000
 
     game.mark_ready("ana")
