@@ -10,6 +10,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { Bonus, DuelView, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
 import { LeaveButton } from './LeaveButton'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
+import { AnsweredAvatar, AnsweredRow } from './Answered'
 import { ResurrectionScene } from './ResurrectionScene'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -293,11 +294,11 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           const pick = duel.picks.find((k) => k.player_id === p.id)
           const card = (
             <div key={p.id} className={`flex flex-col items-center gap-1 rounded-xl bg-panel px-2 py-3 ${duel.winner === p.id ? 'mythic' : ''}`}>
-              <img src={AVATAR_URLS[p.avatar]} alt="" className="size-14" />
+              <AnsweredAvatar player={p} done={!pick && duel.answered.includes(p.id)} waiting={!pick && stage.phase === 'duel_answering'} className="size-14" />
               <span className="max-w-full truncate font-semibold">{p.id === playerId ? 'Você' : p.nickname}</span>
               {side && <span className="max-w-full truncate text-xs text-steel">{side(p.id)}</span>}
               <span className="h-5 text-sm font-semibold">
-                {pick ? (pick.correct ? <span className="text-emerald-300">Acertou</span> : <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>) : duel.answered.includes(p.id) ? <span className="text-steel">Respondeu</span> : ''}
+                {pick ? (pick.correct ? <span className="text-emerald-300">Acertou</span> : <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>) : ''}
               </span>
               <span className="text-xs text-steel tabular-nums">{((duel.total_ms[p.id] ?? 0) / 1000).toFixed(1).replace('.', ',')}s no total</span>
             </div>
@@ -910,7 +911,6 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
   const showResults = game.phase === 'results' && !silenced
   const hiddenReveal = game.phase === 'results' && silenced
   const myResult = game.results.find((r) => r.player_id === playerId)
-  const connectedCount = room.players.filter((p) => p.connected).length
   const difficulty = DIFFICULTY[question.difficulty]
   const secondsLeft = Math.ceil(remaining / 1000)
   const urgent = game.phase === 'answering' && remaining < 3000 && !silenced
@@ -1070,21 +1070,25 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
       ) : hiddenReveal ? (
         <SilencedReveal roundsLeft={game.silenced_rounds} />
       ) : (
-        <p className="min-h-7 text-center font-hand font-medium text-lg text-steel">
-          {typing
-            ? 'Leia com atenção…'
-            : blinded && !answered
-              ? 'Flashbang! Agora é chutar pela letra.'
-              : retry !== null && !answered
-              ? 'Errou! Segunda chance: tente de novo (vale metade).'
-              : silenced
-                ? answered
-                  ? 'Resposta enviada! Agora é esperar…'
-                  : 'Silêncio… quanto tempo será que falta?'
-                : answered
-                  ? `Resposta enviada! Esperando a galera (${game.answered.length}/${connectedCount})`
-                  : `${game.answered.length}/${connectedCount} já responderam`}
-        </p>
+        <>
+          <p className="min-h-7 text-center font-hand font-medium text-lg text-steel">
+            {typing
+              ? 'Leia com atenção…'
+              : blinded && !answered
+                ? 'Flashbang! Agora é chutar pela letra.'
+                : retry !== null && !answered
+                ? 'Errou! Segunda chance: tente de novo (vale metade).'
+                : silenced
+                  ? answered
+                    ? 'Resposta enviada! Agora é esperar…'
+                    : 'Silêncio… quanto tempo será que falta?'
+                  : answered
+                    ? 'Resposta enviada! Esperando a galera…'
+                    : ''}
+          </p>
+          {/* Silenciado não vê quem já respondeu (o servidor nem manda). */}
+          {!silenced && <AnsweredRow players={room.players} answered={game.answered} />}
+        </>
       )}
     </section>
   )

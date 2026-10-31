@@ -5,6 +5,7 @@ import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView } from '../types/events'
 import { formatDelta } from '../lib/format'
+import { AnsweredRow } from './Answered'
 import { DifficultyChip, FactCard, LevelIntro, Podium, Ranking } from './Game'
 import { LeaveButton } from './LeaveButton'
 
@@ -162,7 +163,7 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
         <div className="flex flex-col items-center gap-3">
           <p className="text-steel">Seu chute</p>
           <p className="font-display text-5xl text-brand">{withUnit(estimate.my_guess!, estimate.unit)}</p>
-          <Waiting players={room.players} answered={estimate.answered} />
+          <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />
         </div>
       ) : (
         <form
@@ -206,28 +207,12 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
             Chutar!
           </button>
           {error && <p className="text-center text-sm text-red-300">{error}</p>}
-          <Waiting players={room.players} answered={estimate.answered} />
+          <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />
         </form>
       )}
 
       <LeaveButton onLeave={onLeave} />
     </section>
-  )
-}
-
-function Waiting({ players, answered }: { players: PlayerView[]; answered: string[] }) {
-  return (
-    <ul className="flex flex-wrap justify-center gap-1.5" aria-label="Quem já chutou">
-      {players.map((player) => (
-        <li key={player.id} title={player.nickname}>
-          <img
-            src={AVATAR_URLS[player.avatar]}
-            alt={player.nickname}
-            className={`size-9 transition-opacity ${answered.includes(player.id) ? '' : 'opacity-30 grayscale'}`}
-          />
-        </li>
-      ))}
-    </ul>
   )
 }
 

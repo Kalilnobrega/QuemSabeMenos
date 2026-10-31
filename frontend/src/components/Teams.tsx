@@ -10,6 +10,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide } from '../types/events'
 import { Confetti, DuelScreen } from './Game'
 import { LeaveButton } from './LeaveButton'
+import { AnsweredAvatar } from './Answered'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { TaxScene } from './TaxScene'
 
@@ -755,7 +756,7 @@ function TeamPowerBar({ match, players, playerId, onArm }: { match: TeamMatchVie
   )
 }
 
-/** Situação de cada time na pergunta: capitão (ou representante) e quantos já votaram. */
+/** Situação de cada time na pergunta: quem já votou (o capitão com a coroa) ou o representante. */
 function TeamStrip({ match, players, playerId }: { match: TeamMatchView; players: PlayerView[]; playerId: string | null }) {
   return (
     <ul className="flex flex-wrap justify-center gap-2">
@@ -765,13 +766,17 @@ function TeamStrip({ match, players, playerId }: { match: TeamMatchView; players
         return (
           <li key={team.id} className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-sm font-semibold ${TEAMS[team.id].bg} ${mine ? `ring-1 ${TEAMS[team.id].ring}` : ''}`}>
             <span className={TEAMS[team.id].text}>{TEAMS[team.id].name}</span>
-            {leader && (
-              <span className="relative">
-                <img src={AVATAR_URLS[leader.avatar]} alt="" title={leader.id === playerId ? 'Você' : leader.nickname} className="size-6" />
-                {!match.solo && <img src={coroa} alt="" className="absolute -top-2 -right-1.5 size-3.5" />}
+            {(match.solo ? (leader ? [leader] : []) : team.members.map((id) => playerOf(players, id)).filter((p): p is PlayerView => !!p)).map((member) => (
+              <span key={member.id} className="relative" title={member.id === playerId ? 'Você' : member.nickname}>
+                <AnsweredAvatar
+                  player={member}
+                  done={match.solo ? team.locked : team.voted.includes(member.id)}
+                  waiting={!team.locked}
+                  className="size-6"
+                />
+                {!match.solo && member.id === team.captain && <img src={coroa} alt="Capitão" className="absolute -top-2 -left-1 size-3.5" />}
               </span>
-            )}
-            <span className="text-steel">{team.locked ? '✓' : match.solo ? '…' : `${team.voted.length}/${team.members.length}`}</span>
+            ))}
             {!match.solo && team.harmony > 0 && (
               <span className="text-xs text-emerald-300" title="Sintonia">
                 {'♪'.repeat(team.harmony)}

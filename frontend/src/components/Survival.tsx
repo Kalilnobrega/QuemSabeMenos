@@ -7,6 +7,7 @@ import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
 import type { PlayerView, PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
+import { AnsweredAvatar } from './Answered'
 import { DaggerStrike } from './DaggerStrike'
 import { ResurrectionScene } from './ResurrectionScene'
 import { Confetti, PeekBadge } from './Game'
@@ -450,10 +451,7 @@ function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: s
         const answered = survival.answered.includes(s.player_id)
         return (
           <li key={s.player_id} className={`flex w-16 flex-col items-center gap-0.5 ${out && !pick ? 'opacity-35 grayscale' : ''} ${pick?.lost_life ? 'reveal-shake' : ''}`}>
-            <span className="relative">
-              <img src={AVATAR_URLS[p.avatar]} alt="" className="size-11" />
-              {answered && !pick && <span className="absolute -right-1 -bottom-1 size-3.5 rounded-full border-2 border-ink bg-brand" aria-label="Respondeu" />}
-            </span>
+            <AnsweredAvatar player={p} done={answered && !pick} waiting={!out && !pick && survival.phase === 'answering'} className="size-11" />
             <span className="w-full truncate text-center text-xs font-semibold">{s.player_id === playerId ? 'Você' : p.nickname}</span>
             {out ? (
               <span className="text-xs font-semibold text-red-300">{pick?.lost_life ? 'Caiu!' : 'Fora'}</span>
@@ -478,7 +476,7 @@ function DuelCards({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
     const pick = survival.picks.find((k) => k.player_id === id)
     return (
       <div key={id} className="flex flex-col items-center gap-1 rounded-xl bg-panel px-2 py-3">
-        <img src={AVATAR_URLS[p.avatar]} alt="" className="size-14" />
+        <AnsweredAvatar player={p} done={!pick && survival.answered.includes(id)} waiting={!pick && survival.phase === 'duel_answering'} className="size-14" />
         <span className="max-w-full truncate font-semibold">{id === playerId ? 'Você' : p.nickname}</span>
         <span className="h-5 text-sm font-semibold">
           {pick ? (
@@ -487,8 +485,6 @@ function DuelCards({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
             ) : (
               <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>
             )
-          ) : survival.answered.includes(id) ? (
-            <span className="text-steel">Respondeu</span>
           ) : (
             ''
           )}
