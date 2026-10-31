@@ -81,7 +81,7 @@ def error(message: str) -> dict:
 
 
 async def broadcast(room: Room) -> None:
-    """Cada jogador recebe o próprio estado: as habilidades de cada um são secretas."""
+    """Cada jogador recebe o próprio estado: os poderes de cada um são secretos."""
     now = time.monotonic()
     for player in room.players:
         if player.sid:

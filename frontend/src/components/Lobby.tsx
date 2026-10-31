@@ -16,9 +16,9 @@ const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
 }
 
 const POWERS_HINT: Record<RoomSettings['mode'], string> = {
-  classic: 'Ajudas para você e ataques nos outros, ganhos acertando em sequência',
+  classic: 'Ajudas para você e sabotagens nos outros, ganhas acertando em sequência',
   specialist: 'Os do Clássico, com o Golpe no lugar do Tema',
-  teams: 'O time guarda até 3, o capitão usa, e os ataques miram outro time',
+  teams: 'O time guarda até 3, o capitão usa, e as sabotagens miram outro time',
   last_standing: 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador',
   hot_potato: 'Ajudas para quem está com a batata, sabotagens para quem assiste',
 }
@@ -321,7 +321,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
         {settings.mode !== 'teams' && settings.powers && (
           <OptionRow
             title="Limite de poderes"
-            hint="Quantas habilidades cada um pode guardar ao mesmo tempo"
+            hint="Quantos poderes cada um pode guardar ao mesmo tempo"
             options={settings.powerup_max_options}
             value={settings.powerup_max}
             label={(n) => String(n)}

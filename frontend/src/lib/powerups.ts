@@ -18,7 +18,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   extra_time: { name: 'Tempo extra', hint: '+5s para responder e QI cheio o tempo todo nas próximas 3 perguntas.', targeted: false, tone: 'bg-lime-400/15 text-lime-200' },
   second_chance: { name: 'Segunda chance', hint: 'Vale nas próximas 2 perguntas: errou, tenta de novo valendo metade.', targeted: false, tone: 'bg-pink-400/15 text-pink-200' },
   reverse: { name: 'Reverso', hint: 'Secreto, vale por até 3 perguntas (2 se você estiver em 1º): o primeiro poder jogado em você volta para quem jogou.', targeted: false, tone: 'bg-red-500/15 text-red-200' },
-  backpack: { name: 'Mochila', hint: 'Vale na hora: +1 vaga de habilidade e +1 habilidade sorteada (até +2 vagas na partida).', targeted: false, tone: 'bg-amber-700/25 text-amber-200' },
+  backpack: { name: 'Mochila', hint: 'Vale na hora: +1 vaga de poder e +1 poder sorteado (até +2 vagas na partida).', targeted: false, tone: 'bg-amber-700/25 text-amber-200' },
   coup: { name: 'Golpe', hint: 'Só no Especialista: você toma o tema de quem escolheu. Do resto do bloco em diante, os +25% nos acertos são seus, e ele perde o bônus. Um Golpe por bloco.', targeted: false, tone: 'bg-orange-400/15 text-orange-200' },
   theme: { name: 'Tema', hint: 'Você escolhe o tema da próxima pergunta, entre 4 sorteados. Vale para todo mundo.', targeted: false, tone: 'bg-indigo-400/15 text-indigo-200' },
   investment: { name: 'Investimento', hint: 'Cada acerto seguido rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro erro. Só a partir das médias.', targeted: false, tone: 'bg-green-500/15 text-green-200' },
@@ -51,7 +51,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   blood_pact: { name: 'Pacto de sangue', hint: 'Só no Último de pé: se você perder vida na próxima, o alvo perde uma também.', targeted: true, tone: 'bg-red-700/25 text-red-200' },
   dagger: { name: 'Adaga', hint: 'Mítico, só no Último de pé: tira 1 vida do alvo na hora (com 1 vida, ele cai). Se eliminar, você ganha a Bênção.', targeted: true, tone: 'bg-amber-300/15 text-amber-100' },
   blessing: { name: 'Bênção', hint: 'Prêmio da Adaga: na próxima pergunta, você vê qual é a certa.', targeted: false, tone: 'bg-yellow-300/15 text-yellow-100' },
-  silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa habilidades.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
+  silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa poderes.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
 }
 
 const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
@@ -69,7 +69,7 @@ export const SURVIVAL_HINTS: Partial<Record<Kind, string>> = {
   reverse: 'Secreto, vale por até 3 perguntas: o primeiro poder jogado em você volta para quem jogou.',
   steal: 'Se o alvo perder uma vida na próxima, ela fica com você (até o máximo de vidas).',
   accelerator: 'O alvo tem um terço do tempo para responder.',
-  silence: 'Por 2 perguntas o alvo não vê o tempo, as vidas dos outros nem a revelação, e não usa habilidades.',
+  silence: 'Por 2 perguntas o alvo não vê o tempo, as vidas dos outros nem a revelação, e não usa poderes.',
   resurrection: 'Mítico, só para fantasma. Na revelação, você volta para o jogo com 1 vida.',
 }
 
@@ -89,7 +89,7 @@ export const POTATO_HINTS: Partial<Record<Kind, string>> = {
   resurrection: 'Mítico, só para fantasma: você volta para a roda.',
 }
 
-/** Times: os poderes valem para o time inteiro e os ataques miram um time adversário. */
+/** Times: os poderes valem para o time inteiro e as sabotagens miram um time adversário. */
 export const TEAM_HINTS: Partial<Record<Kind, string>> = {
   fifty_fifty: 'O capitão usa na hora da pergunta: tira duas erradas para o time.',
   shield: 'Vale por até 2 perguntas: no primeiro erro, o time não perde QI.',
@@ -111,6 +111,17 @@ export const TEAM_HINTS: Partial<Record<Kind, string>> = {
   silence: 'O time alvo vota às cegas: ninguém vê o voto dos colegas.',
   duel: 'Mítico: X1 contra um time. Cada time manda um representante; quem perde paga 40% do QI, e os outros times apostam.',
 }
+
+/** Os dois tipos de poder: ajuda vale para quem usa (ou o time); sabotagem atrapalha um alvo. */
+export type Category = 'help' | 'sabotage'
+// Não têm alvo para escolher, mas atrapalham alguém: o Imposto cobra o 1º e a Batata dupla vai para os outros.
+const SABOTAGES_WITHOUT_TARGET: Kind[] = ['tax', 'double_potato']
+
+export function powerCategory(kind: Kind): Category {
+  return POWERUP_INFO[kind].targeted || SABOTAGES_WITHOUT_TARGET.includes(kind) ? 'sabotage' : 'help'
+}
+
+export const CATEGORY_LABEL: Record<Category, string> = { help: 'Ajuda', sabotage: 'Sabotagem' }
 
 export function gainLabel(gain: PowerUpGain) {
   const info = POWERUP_INFO[gain.kind]

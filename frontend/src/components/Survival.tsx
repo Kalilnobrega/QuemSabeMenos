@@ -110,7 +110,7 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
           style={{ animationDelay: '1.2s' }}
         >
           <PowerUpIcon kind={survival.starting_powerup} className="size-6" />
-          Sua habilidade: {POWERUP_INFO[survival.starting_powerup].name}
+          Seu poder: {POWERUP_INFO[survival.starting_powerup].name}
         </p>
       )}
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
@@ -419,7 +419,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
           playerId={playerId}
           targetIds={survival.survivors.filter((s) => s.out_round === null).map((s) => s.player_id)}
           hints={SURVIVAL_HINTS}
-          lockedNote="No X1 não tem habilidade."
+          lockedNote="No X1 não tem poder."
           emptyNote={me?.out_round !== null ? 'Fantasma: a cada 3 perguntas chega uma sabotagem para jogar nos vivos.' : undefined}
           onArm={onArm}
           onSkip={onSkip}

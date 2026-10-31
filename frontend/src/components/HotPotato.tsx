@@ -8,7 +8,7 @@ import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
 import { LeaveButton } from './LeaveButton'
-import { Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
+import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { ResurrectionScene } from './ResurrectionScene'
 import { Spotlight } from './Survival'
 
@@ -584,7 +584,7 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
                 <PowerUpIcon kind={kind} className="size-6" />
                 <span className="flex flex-col text-left leading-tight">
                   {POWERUP_INFO[kind].name}
-                  <span className="text-[0.65rem] font-normal text-steel">{HELPS.includes(kind) ? 'ajuda' : 'sabotagem'}</span>
+                  <CategoryTag kind={kind} />
                 </span>
               </button>
             )

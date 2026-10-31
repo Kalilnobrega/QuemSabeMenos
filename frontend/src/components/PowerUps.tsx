@@ -1,10 +1,37 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
 import { AVATAR_URLS } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
-import { INSTANT, LEGENDARY_DECOY_HINT, LEGENDARY_HINT, LEGENDARY_STEAL_HINT, LEGENDARY_TOLL_HINT, POWERUP_INFO, type Kind, type PowerView } from '../lib/powerups'
+import {
+  CATEGORY_LABEL,
+  INSTANT,
+  LEGENDARY_DECOY_HINT,
+  LEGENDARY_HINT,
+  LEGENDARY_STEAL_HINT,
+  LEGENDARY_TOLL_HINT,
+  POWERUP_INFO,
+  powerCategory,
+  type Kind,
+  type PowerView,
+} from '../lib/powerups'
 import type { PlayerView, PowerUpUse } from '../types/events'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
+
+/** A etiqueta embaixo do nome: Ajuda (verde) ou Sabotagem (vermelha), com um complemento opcional. */
+export function CategoryTag({ kind, note }: { kind: Kind; note?: string }) {
+  const category = powerCategory(kind)
+  return (
+    <span className="text-[0.65rem] font-semibold tracking-wide uppercase">
+      <span className={category === 'help' ? 'text-emerald-300' : 'text-red-300'}>{CATEGORY_LABEL[category]}</span>
+      {note && <span className="font-normal text-steel normal-case"> · {note}</span>}
+    </span>
+  )
+}
+
+/** Mítico e lendário, na cor do botão. O mítico é só "Mítico"; o lendário é sempre uma sabotagem. */
+function RarityTag({ rarity }: { rarity: 'mythic' | 'legendary' }) {
+  return <span className="text-[0.65rem] font-bold tracking-wide uppercase">{rarity === 'mythic' ? 'Mítico' : 'Sabotagem lendária'}</span>
+}
 
 export function PowerUpIcon({ kind, className }: { kind: Kind; className?: string }) {
   if (kind === 'double') {
@@ -640,10 +667,10 @@ export function ActivePowerUps({
         blood_pact: 'fez um Pacto de sangue com você: se perder vida, você perde também!',
         decoy: 'jogou Alternativa falsa em você: duas dessas são mentira!',
         flashbang: 'jogou Flashbang em você: leia rápido, ela estoura em 4 segundos!',
-        silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem habilidades.',
+        silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem poderes.',
         ...(survival && {
           accelerator: 'jogou Acelerador em você: um terço do tempo!',
-          silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, vidas dos outros, revelação nem habilidades.',
+          silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, vidas dos outros, revelação nem poderes.',
         }),
       }
       return `${cap(by)} ${hit[use.kind]}`
@@ -652,7 +679,7 @@ export function ActivePowerUps({
   }
 
   return (
-    <ul className={`flex flex-col gap-1.5 ${concealed ? 'invisible' : ''}`} aria-label="Habilidades valendo">
+    <ul className={`flex flex-col gap-1.5 ${concealed ? 'invisible' : ''}`} aria-label="Poderes valendo">
       {uses.map((use, index) => (
         <li
           key={`${use.by}-${use.kind}-${use.target}-${use.legendary}`}
@@ -677,7 +704,7 @@ export function ActivePowerUps({
   )
 }
 
-/** Ícones das habilidades que se usam durante a pergunta (50/50 e Espiar): tocou, vale na hora. */
+/** Ícones dos poderes que se usam durante a pergunta (50/50 e Espiar): tocou, vale na hora. */
 export function InstantPowerUps({ game, playerId, onUse }: { game: PowerView; playerId: string | null; onUse: (kind: Kind) => Promise<string | null> }) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
@@ -719,7 +746,7 @@ interface BarProps {
   targetIds?: string[] // quem pode ser alvo; sem isso, todos os outros
   hints?: Partial<Record<Kind, string>> // explicações que trocam as do POWERUP_INFO
   lockedNote?: string // por que não dá para armar agora
-  emptyNote?: string // sem nenhuma habilidade na mão
+  emptyNote?: string // sem nenhum poder na mão
   onArm: (kind: Kind, target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onSkip: () => Promise<string | null>
 }
@@ -879,7 +906,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
       </div>
     )
   } else if (game.powerups.length === 0 && game.legendary_powerups.length === 0 && game.mythic_powerups.length === 0) {
-    body = <p className="text-sm text-steel">{emptyNote ?? 'Sem habilidades. Acerte 3 seguidas para ganhar uma.'}</p>
+    body = <p className="text-sm text-steel">{emptyNote ?? 'Sem poderes. Acerte 3 seguidas para ganhar um.'}</p>
   } else {
     body = (
       <div className="flex flex-col gap-1.5">
@@ -895,7 +922,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
                 <PowerUpIcon kind={kind} className="size-6" />
                 <span className="flex flex-col leading-tight">
                   {POWERUP_INFO[kind].name}
-                  <span className="text-[0.65rem] font-normal">usar na pergunta</span>
+                  <CategoryTag kind={kind} note="usar na pergunta" />
                 </span>
               </span>
             ) : (
@@ -909,7 +936,10 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
                 className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm || kind === 'backpack' ? '' : 'opacity-50'}`}
               >
                 <PowerUpIcon kind={kind} className="size-6" />
-                {POWERUP_INFO[kind].name}
+                <span className="flex flex-col text-left leading-tight">
+                  {POWERUP_INFO[kind].name}
+                  <CategoryTag kind={kind} />
+                </span>
               </button>
             ),
           )}
@@ -925,7 +955,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
               <PowerUpIcon kind={kind} className="size-6" />
               <span className="flex flex-col text-left leading-tight">
                 {POWERUP_INFO[kind].name}
-                <span className="text-[0.65rem] font-bold tracking-wide uppercase">Mítico</span>
+                <RarityTag rarity="mythic" />
               </span>
             </button>
           ))}
@@ -942,12 +972,12 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
               <PowerUpIcon kind={kind} className="size-6" />
               <span className="flex flex-col text-left leading-tight">
                 {POWERUP_INFO[kind].name}
-                <span className="text-[0.65rem] font-bold tracking-wide uppercase">Lendário</span>
+                <RarityTag rarity="legendary" />
               </span>
             </button>
           ))}
         </div>
-        <p className="text-xs text-steel">{game.can_arm ? 'Toque para usar na próxima pergunta.' : (lockedNote ?? 'Habilidades não valem na aposta nem na final.')}</p>
+        <p className="text-xs text-steel">{game.can_arm ? 'Toque para usar na próxima pergunta.' : (lockedNote ?? 'Poderes não valem na aposta nem na final.')}</p>
       </div>
     )
   }

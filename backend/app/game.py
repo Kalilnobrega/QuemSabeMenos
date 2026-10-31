@@ -277,7 +277,7 @@ class Game:
     rng: random.Random = field(default_factory=random.Random)
     powers: bool = False
     powerup_max: int = powerups.MAX_HELD
-    # Habilidades (ver powerups.py): guardadas, armadas para a próxima pergunta e valendo nesta.
+    # Poderes (ver powerups.py): guardados, armados para a próxima pergunta e valendo nesta.
     powerups: dict[str, list[PowerUp]] = field(default_factory=dict)
     legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)
     mythics: dict[str, list[PowerUp]] = field(default_factory=dict)
@@ -287,7 +287,7 @@ class Game:
     active: list[PowerUpUse] = field(default_factory=list)
     hidden_options: dict[str, list[int]] = field(default_factory=dict)  # tiradas pelo 50/50
     first_wrong: dict[str, Answer] = field(default_factory=dict)  # Segunda chance: 1ª tentativa errada
-    # Habilidades que duram mais de uma pergunta: perguntas comuns restantes de cada uma, por jogador.
+    # Poderes que duram mais de uma pergunta: perguntas comuns restantes de cada um, por jogador.
     lasting: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
@@ -369,21 +369,21 @@ class Game:
             self._open_backpack(player_id)
             return
         if not self.can_arm:
-            raise GameError("Agora não dá para usar habilidade.")
+            raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem habilidades por enquanto.")
+            raise GameError("Silenciado: sem poderes por enquanto.")
         if player_id in self.armed:
-            raise GameError("Você já armou uma habilidade para a próxima pergunta.")
+            raise GameError("Você já armou um poder para a próxima pergunta.")
         if legendary:
             held = self.legendaries.get(player_id, [])
             if kind not in held:
-                raise GameError("Você não tem essa habilidade.")
+                raise GameError("Você não tem esse poder.")
             held.remove(kind)
             self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None, legendary=True)
             return
         held = self.powerups.get(player_id, [])
         if kind not in held:
-            raise GameError("Você não tem essa habilidade.")
+            raise GameError("Você não tem esse poder.")
         if kind in powerups.INSTANT:
             raise GameError("Essa se usa na hora da pergunta.")
         if kind in powerups.TARGETED:
@@ -424,12 +424,12 @@ class Game:
     def _open_backpack(self, player_id: str) -> None:
         """Mochila: vale na hora, sem ocupar a vez de armar. Uma vaga a mais e um poder comum."""
         if not self.powers or self.phase != "results":
-            raise GameError("Agora não dá para usar habilidade.")
+            raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem habilidades por enquanto.")
+            raise GameError("Silenciado: sem poderes por enquanto.")
         held = self.powerups.get(player_id, [])
         if "backpack" not in held:
-            raise GameError("Você não tem essa habilidade.")
+            raise GameError("Você não tem esse poder.")
         if self.extra_slots.get(player_id, 0) >= powerups.BACKPACK_MAX_EXTRA:
             raise GameError("Sua Mochila já está no tamanho máximo.")
         held.remove("backpack")
@@ -461,14 +461,14 @@ class Game:
     def use_now(self, player_id: str, kind: PowerUp) -> None:
         """50/50 e Espiar: usados durante a pergunta, valem na hora."""
         if self.phase not in ("reading", "answering") or not self._counts_for_powers():
-            raise GameError("Agora não dá para usar habilidade.")
+            raise GameError("Agora não dá para usar poder.")
         if kind not in powerups.INSTANT:
             raise GameError("Essa se arma na revelação.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem habilidades por enquanto.")
+            raise GameError("Silenciado: sem poderes por enquanto.")
         held = self.powerups.get(player_id, [])
         if kind not in held:
-            raise GameError("Você não tem essa habilidade.")
+            raise GameError("Você não tem esse poder.")
         if player_id in self.answers:
             raise GameError("Você já respondeu.")
         if self._affects(kind, player_id):
@@ -613,7 +613,7 @@ class Game:
         return [use for use in self.active if use.kind == kind]
 
     def _affects(self, kind: PowerUp, player_id: str) -> bool:
-        """A habilidade vale para o jogador nesta pergunta (como alvo, ou para si nas que não miram)."""
+        """O poder vale para o jogador nesta pergunta (como alvo, ou para si nas que não miram)."""
         if kind == "silence":
             return self.is_silenced(player_id)
         if kind in powerups.LASTING:
@@ -882,12 +882,12 @@ class Game:
     def resurrect(self, player: Scorable, players: list[Scorable]) -> None:
         """Ressurreição: na revelação, o último pula para logo atrás de quem está na frente dele."""
         if not self.powers or self.phase != "results" or not self.has_next_round:
-            raise GameError("Agora não dá para usar habilidade.")
+            raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player.id):
-            raise GameError("Silenciado: sem habilidades por enquanto.")
+            raise GameError("Silenciado: sem poderes por enquanto.")
         held = self.mythics.get(player.id, [])
         if "resurrection" not in held:
-            raise GameError("Você não tem essa habilidade.")
+            raise GameError("Você não tem esse poder.")
         others = [p.score for p in players if p.id != player.id]
         if any(score < player.score for score in others):
             raise GameError("A Ressurreição só funciona em último.")
@@ -902,12 +902,12 @@ class Game:
     def challenge(self, player_id: str, rival: str | None, player_ids: list[str]) -> None:
         """X1: chamado na revelação; o duelo começa quando ela acaba, antes da próxima pergunta."""
         if not self.powers or self.phase != "results" or not self.has_next_round:
-            raise GameError("Agora não dá para usar habilidade.")
+            raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem habilidades por enquanto.")
+            raise GameError("Silenciado: sem poderes por enquanto.")
         held = self.mythics.get(player_id, [])
         if "duel" not in held:
-            raise GameError("Você não tem essa habilidade.")
+            raise GameError("Você não tem esse poder.")
         if rival is None or rival == player_id or rival not in player_ids:
             raise GameError("Escolha quem vai para o X1.")
         held.remove("duel")
@@ -1078,7 +1078,7 @@ class Game:
             result.bet_gained = PowerUpGain(kind=kind, reason="bet", legendary=legendary, mythic=mythic)
 
     def _powerup_gains(self, players: list[Scorable]) -> None:
-        """Habilidades ganhas por acertos seguidos ou por estar muito atrás (depois do placar)."""
+        """Poderes ganhos por acertos seguidos ou por estar muito atrás (depois do placar)."""
         behind = powerups.trailing(players)
         for player, result in zip(players, self.results):
             right = self.right_runs[player.id] = self.right_runs.get(player.id, 0) + 1 if result.correct else 0
@@ -1149,7 +1149,7 @@ class Game:
         self._enter("finished", now, 0)
 
     def view(self, now: float, viewer: str | None = None) -> GameView:
-        """`viewer`: de quem são as habilidades e as alternativas tiradas que aparecem."""
+        """`viewer`: de quem são os poderes e as alternativas tiradas que aparecem."""
         q = self.question
         show_answer = self.phase in ("results", "finished")
         ends_at = self.phase_ends_at

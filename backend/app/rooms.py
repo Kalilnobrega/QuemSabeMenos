@@ -133,7 +133,7 @@ class Room:
         return teams
 
     def view(self, now: float | None = None, viewer: str | None = None) -> RoomState:
-        """`viewer`: o jogador que vai receber, para mostrar só as habilidades dele."""
+        """`viewer`: o jogador que vai receber, para mostrar só os poderes dele."""
         now = time.monotonic() if now is None else now
         return RoomState(
             code=self.code,
@@ -304,7 +304,7 @@ class RoomManager:
         if answer_seconds is not None and answer_seconds not in ANSWER_OPTIONS:
             raise RoomError("Tempo de resposta inválido.")
         if powerup_max is not None and powerup_max not in POWERUP_MAX_OPTIONS:
-            raise RoomError("Limite de habilidades inválido.")
+            raise RoomError("Limite de poderes inválido.")
         if team_count is not None and team_count not in TEAM_COUNT_OPTIONS:
             raise RoomError("Número de times inválido.")
         if speed_grace_seconds is not None and speed_grace_seconds not in GRACE_OPTIONS:
@@ -479,7 +479,7 @@ class RoomManager:
         if room.team_match:
             return self._on_teams(room, lambda m: m.arm(player.id, kind, target_team, target, theme))
         if room.hot_potato:
-            raise RoomError("Na Batata quente as habilidades valem na hora.")
+            raise RoomError("Na Batata quente os poderes valem na hora.")
         if room.survival:
             return self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
         try:

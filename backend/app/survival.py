@@ -48,7 +48,7 @@ POWERS: tuple[PowerUp, ...] = (
     "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "silence", "flashbang",
     "curse", "blood_pact",
 )
-# Ataques que só existem aqui: o Reverso também devolve, mas eles não entram no sorteio de lendários do clássico.
+# Sabotagens que só existem aqui: o Reverso também devolve, mas eles não entram no sorteio de lendários do clássico.
 TARGETED: frozenset[PowerUp] = pw.TARGETED | {"curse", "blood_pact"}
 CURSE_LIVES = 2  # Maldição: errando, o alvo perde 2 vidas
 DAGGER_CHANCE = 0.04  # Adaga (mítico): chance a cada poder ganho por acertos seguidos
@@ -285,9 +285,9 @@ class Survival:
 
     def arm(self, player_id: str, kind: PowerUp, target: str | None, theme: str | None = None) -> None:
         if not self.powers or self.phase != "results":
-            raise SurvivalError("Agora não dá para usar habilidade.")
+            raise SurvivalError("Agora não dá para usar poder.")
         if self.silence_left(player_id):
-            raise SurvivalError("Silenciado: sem habilidades por enquanto.")
+            raise SurvivalError("Silenciado: sem poderes por enquanto.")
         me = self.contender(player_id)
         if kind == "resurrection":
             return self._resurrect(player_id)
@@ -295,15 +295,15 @@ class Survival:
             return self._stab(player_id, target)
         held = self.held.get(player_id, [])
         if kind not in held:
-            raise SurvivalError("Você não tem essa habilidade.")
+            raise SurvivalError("Você não tem esse poder.")
         if kind == "backpack":
             return self._open_backpack(player_id)
         if kind == "medkit":
             return self._heal(player_id)
         if not self.can_arm():
-            raise SurvivalError("No X1 não tem habilidade.")
+            raise SurvivalError("No X1 não tem poder.")
         if player_id in self.armed:
-            raise SurvivalError("Você já armou uma habilidade para a próxima pergunta.")
+            raise SurvivalError("Você já armou um poder para a próxima pergunta.")
         if kind in pw.INSTANT:
             raise SurvivalError("Essa se usa na hora da pergunta.")
         if not me.alive and kind not in TARGETED:
@@ -328,16 +328,16 @@ class Survival:
     def use_now(self, player_id: str, kind: PowerUp) -> None:
         """50/50 e Espiar: durante a pergunta, valem na hora."""
         if self.phase not in ("reading", "answering") or not self.powers_round():
-            raise SurvivalError("Agora não dá para usar habilidade.")
+            raise SurvivalError("Agora não dá para usar poder.")
         if kind not in pw.INSTANT:
             raise SurvivalError("Essa se arma na revelação.")
         if player_id not in self.alive_ids():
             raise SurvivalError("Você está fora.")
         if self.silence_left(player_id):
-            raise SurvivalError("Silenciado: sem habilidades por enquanto.")
+            raise SurvivalError("Silenciado: sem poderes por enquanto.")
         held = self.held.get(player_id, [])
         if kind not in held:
-            raise SurvivalError("Você não tem essa habilidade.")
+            raise SurvivalError("Você não tem esse poder.")
         if player_id in self.answers:
             raise SurvivalError("Você já respondeu.")
         if self._affects(kind, player_id):
@@ -548,7 +548,7 @@ class Survival:
                 self.silences.append((use, pw.SILENCE_ROUNDS))
 
     def _reflect_own(self, use: PowerUpUse, reversers: set[str]) -> PowerUpUse:
-        """O Reverso com os ataques daqui: a Maldição volta para quem jogou, e o Pacto passa a amarrar
+        """O Reverso com as sabotagens daqui: a Maldição volta para quem jogou, e o Pacto passa a amarrar
         quem jogou ao alvo (se o alvo perder vida, quem jogou perde também)."""
         if use.kind not in ("curse", "blood_pact") or use.target not in reversers:
             return use
@@ -647,11 +647,11 @@ class Survival:
         """Adaga: tira 1 vida do alvo na hora. Se eliminar, quem usou ganha a Bênção na próxima."""
         me, target = self.contender(player_id), self.contender(target_id or "")
         if "dagger" not in self.mythics.get(player_id, []):
-            raise SurvivalError("Você não tem essa habilidade.")
+            raise SurvivalError("Você não tem esse poder.")
         if not me.alive:
             raise SurvivalError("A Adaga é para quem está vivo.")
         if not self.can_arm():
-            raise SurvivalError("No X1 não tem habilidade.")
+            raise SurvivalError("No X1 não tem poder.")
         if not target or target is me or not target.alive:
             raise SurvivalError("Escolha em quem usar (só em quem está vivo).")
         self.mythics[player_id].remove("dagger")
@@ -667,7 +667,7 @@ class Survival:
     def _resurrect(self, player_id: str) -> None:
         c = self.contender(player_id)
         if "resurrection" not in self.mythics.get(player_id, []):
-            raise SurvivalError("Você não tem essa habilidade.")
+            raise SurvivalError("Você não tem esse poder.")
         if c.alive or self.in_duel() or len(self.alive_ids()) < 2:
             raise SurvivalError("A Ressurreição é para quem caiu, antes do X1.")
         self.mythics[player_id].remove("resurrection")

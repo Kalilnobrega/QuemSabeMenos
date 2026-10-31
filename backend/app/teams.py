@@ -9,7 +9,7 @@ ou sem votar: −3. Todo mundo votando na certa 3 perguntas seguidas: +10 de Sin
 Na aposta e na final, cada time escolhe um representante, que aposta (na aposta) e responde sozinho.
 
 Com poderes, a mão é do time e quem usa é o capitão: na revelação, o capitão da próxima pergunta
-escolhe um poder para ela (50/50 e Espiar se usam durante a pergunta). Os ataques miram um time
+escolhe um poder para ela (50/50 e Espiar se usam durante a pergunta). As sabotagens miram um time
 adversário. Sem capitão (Motim), qualquer um do time escolhe. Míticos: X1 entre times (cada time
 manda um representante e os outros times apostam) e Imposto (o 1º paga 25% ao último).
 """
@@ -453,11 +453,11 @@ class TeamMatch:
         """Na revelação: o capitão da próxima escolhe o poder do time (míticos e Mochila valem na hora)."""
         team = self.team_of(player_id)
         if not self.powers or not team or self.phase != "results":
-            raise TeamMatchError("Agora não dá para usar habilidade.")
+            raise TeamMatchError("Agora não dá para usar poder.")
         if kind in ("duel", "tax"):
             return self._use_mythic(team, player_id, kind, target_team)
         if kind not in team.held:
-            raise TeamMatchError("Seu time não tem essa habilidade.")
+            raise TeamMatchError("Seu time não tem esse poder.")
         if not self.can_arm(player_id):
             raise TeamMatchError("Quem escolhe o poder é o capitão da próxima pergunta.")
         if kind == "backpack":
@@ -499,11 +499,11 @@ class TeamMatch:
         """50/50 e Espiar: o capitão usa durante a pergunta."""
         team = self.team_of(player_id)
         if not team or not self.can_use(player_id):
-            raise TeamMatchError("Agora não dá para usar habilidade.")
+            raise TeamMatchError("Agora não dá para usar poder.")
         if kind not in INSTANT:
             raise TeamMatchError("Essa se escolhe na revelação.")
         if kind not in team.held:
-            raise TeamMatchError("Seu time não tem essa habilidade.")
+            raise TeamMatchError("Seu time não tem esse poder.")
         if any(u.kind == kind and u.by_team == team.id for u in self.active):
             raise TeamMatchError("Já está valendo.")
         if kind == "peek":
@@ -524,7 +524,7 @@ class TeamMatch:
 
     def _use_mythic(self, team: Team, player_id: str, kind: PowerUp, target_team: int | None) -> None:
         if kind not in team.mythics:
-            raise TeamMatchError("Seu time não tem essa habilidade.")
+            raise TeamMatchError("Seu time não tem esse poder.")
         if self.round + 1 >= len(self.questions):
             raise TeamMatchError("A partida está acabando.")
         if team.next_captain not in (None, player_id):

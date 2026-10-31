@@ -9,7 +9,7 @@ export interface Events {
   [k: string]: unknown;
 }
 /**
- * Na revelação: a habilidade vale na próxima pergunta. `target` só nas que miram alguém.
+ * Na revelação: o poder vale na próxima pergunta. `target` só nas que miram alguém.
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "ArmPowerUpRequest".
@@ -481,7 +481,7 @@ export interface PowerUpUse {
   theme?: string | null;
 }
 /**
- * Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
+ * Poder que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "LastingPowerUp".

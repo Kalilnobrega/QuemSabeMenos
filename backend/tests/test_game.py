@@ -357,7 +357,7 @@ def test_other_rounds_have_no_bet():
 
 
 def reveal(game: Game, players: list[P], picks: dict[str, int | None]) -> None:
-    """Abre a próxima rodada pelo caminho normal (ativando as habilidades armadas) e revela."""
+    """Abre a próxima rodada pelo caminho normal (ativando os poderes armados) e revela."""
     game.start_round(now=0)
     game.open_answers(now=0)
     for pid, option in picks.items():
@@ -372,7 +372,7 @@ def test_everyone_starts_with_one_random_powerup():
     for pid in ("ana", "bia"):
         view = game.view(now=0, viewer=pid)
         assert len(view.powerups) == 1 and view.starting_powerup == view.powerups[0]
-    assert game.view(now=0).powerups == []  # ninguém vê as habilidades dos outros
+    assert game.view(now=0).powerups == []  # ninguém vê os poderes dos outros
 
 
 def test_powerups_are_armed_on_the_reveal_and_count_on_the_next_question():

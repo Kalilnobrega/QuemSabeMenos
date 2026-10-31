@@ -68,7 +68,7 @@ const CLASSIC_EXTRAS: Section[] = [
 const CLASSIC_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'reverse', 'backpack', 'theme', 'investment']
 const SPECIALIST_HELPS = CLASSIC_HELPS.map((kind) => (kind === 'theme' ? 'coup' : kind))
 const CLASSIC_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'toll', 'decoy', 'flashbang']
-// As versões lendárias dos ataques: valem em todos os outros de uma vez.
+// As versões lendárias das sabotagens: valem em todos os outros de uma vez.
 const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
   scratch: 'A próxima pergunta de todos os outros vem coberta: todo mundo tem que raspar.',
   steal: LEGENDARY_STEAL_HINT,
@@ -76,7 +76,7 @@ const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
   accelerator: 'Todos os outros têm um terço do tempo e ficam sem QI cheio.',
   mirror: 'A próxima pergunta de todos os outros aparece espelhada.',
   magnifier: 'A próxima pergunta de todos os outros fica borrada: só dá para ler com a lupa.',
-  silence: 'Por 2 perguntas, todos os outros ficam sem tempo, placar, revelação e habilidades.',
+  silence: 'Por 2 perguntas, todos os outros ficam sem tempo, placar, revelação e poderes.',
   toll: LEGENDARY_TOLL_HINT,
   decoy: LEGENDARY_DECOY_HINT,
   flashbang: '4 segundos depois de liberar as respostas, todos os outros só veem as letras.',
@@ -109,18 +109,19 @@ const GUIDES: Record<Mode, Guide> = {
     sections: [CLASSIC_SCORING, ...CLASSIC_EXTRAS],
     powersIntro: [
       'Com poderes (o anfitrião liga no lobby): cada um começa com um poder sorteado e ganha outro a cada 3 acertos seguidos. Quem está em último e bem atrás por 3 rodadas também ganha um.',
-      'Na revelação, você escolhe um poder para a próxima pergunta (e o alvo, se for ataque). O 50/50 e o Espiar se usam na hora da pergunta, pelo ícone.',
+      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar. Lendário e mítico são raridades: aparecem menos e são mais fortes. Os míticos vêm mais para quem está em último.',
+      'Na revelação, você escolhe um poder para a próxima pergunta (e o alvo, se for sabotagem). O 50/50 e o Espiar se usam na hora da pergunta, pelo ícone.',
       'Na aposta: quem apostar pelo menos 25% do QI e acertar ganha um poder, com mais chance de vir lendário (15%) ou mítico (5%).',
       'O anfitrião define quantos poderes cada um guarda (de 1 a 3; o padrão é 3). Com a mão cheia, não ganha mais.',
       'Poderes não valem na aposta nem na pergunta final.',
-      'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como um ataque LENDÁRIO (20% para quem está em último e bem atrás). O lendário vale em todos os outros jogadores de uma vez, sem escolher alvo, e o Reverso não segura. Ele ocupa uma vaga na mão como os outros. O poder sorteado no começo nunca é lendário.',
+      'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como uma sabotagem LENDÁRIA (20% para quem está em último e bem atrás). A lendária vale em todos os outros jogadores de uma vez, sem escolher alvo, e o Reverso não segura. Ele ocupa uma vaga na mão como os outros. O poder sorteado no começo nunca é lendário.',
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: CLASSIC_HELPS },
-      { title: 'Ataques (em quem você escolher)', kinds: CLASSIC_ATTACKS },
-      { title: 'Lendários (os ataques, em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
+      { title: 'Sabotagens (em quem você escolher)', kinds: CLASSIC_ATTACKS },
+      { title: 'Sabotagens lendárias (em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
       {
-        title: 'Míticos (raros, mais para quem está em último)',
+        title: 'Míticos',
         kinds: ['resurrection', 'duel'],
         mythic: true,
       },
@@ -143,6 +144,7 @@ const GUIDES: Record<Mode, Guide> = {
       ...CLASSIC_EXTRAS,
     ],
     powersIntro: [
+      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar. Lendário e mítico são raridades: aparecem menos e são mais fortes. Os míticos vêm mais para quem está em último.',
       'Os mesmos poderes do Clássico, com as mesmas regras. No lugar do Tema entra o Golpe: você toma o tema de quem escolheu e fica com os +25% até o fim do bloco.',
       'O Golpe se arma na revelação, como os outros. Só vale um por bloco, e não dá para usar quando a próxima pergunta já é de outro bloco.',
       'Na aposta: quem apostar pelo menos 25% do QI e acertar ganha um poder, com mais chance de vir lendário (15%) ou mítico (5%).',
@@ -150,10 +152,10 @@ const GUIDES: Record<Mode, Guide> = {
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: SPECIALIST_HELPS },
-      { title: 'Ataques (em quem você escolher)', kinds: CLASSIC_ATTACKS },
-      { title: 'Lendários (os ataques, em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
+      { title: 'Sabotagens (em quem você escolher)', kinds: CLASSIC_ATTACKS },
+      { title: 'Sabotagens lendárias (em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
       {
-        title: 'Míticos (raros, mais para quem está em último)',
+        title: 'Míticos',
         kinds: ['resurrection', 'duel'],
         mythic: true,
       },
@@ -190,17 +192,18 @@ const GUIDES: Record<Mode, Guide> = {
     ],
     powersIntro: [
       'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos. Com 1 vida só, basta acertar 2 seguidas.',
+      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar. Mítico é raridade: aparece menos e é mais forte.',
       'Cada vez que alguém cai, todos os vivos ganham um poder (menos quando sobram 2, porque aí começa o X1).',
       'Na revelação, você escolhe um poder para a próxima pergunta; o 50/50 e o Espiar se usam na hora.',
       'Quem caiu vira fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos, e às vezes a Ressurreição.',
       'No V ou F não vem 50/50 (com 2 opções, entregaria a resposta).',
       'No X1 não tem poder.',
-      'Aqui não tem lendários: os ataques sempre miram uma pessoa só.',
+      'Aqui não tem lendários: as sabotagens sempre miram uma pessoa só.',
       'Míticos: a Adaga às vezes vem no lugar de um poder ganho por acertos seguidos (4%). A Ressurreição é só dos fantasmas (8% em cada presente de fantasma). A Bênção não se ganha: é o prêmio de eliminar alguém com a Adaga.',
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: SURVIVAL_HELPS, hints: SURVIVAL_HINTS },
-      { title: 'Ataques (em quem está vivo)', kinds: SURVIVAL_ATTACKS, hints: SURVIVAL_HINTS },
+      { title: 'Sabotagens (em quem está vivo)', kinds: SURVIVAL_ATTACKS, hints: SURVIVAL_HINTS },
       {
         title: 'Míticos',
         kinds: ['dagger', 'blessing', 'resurrection'],
@@ -297,21 +300,22 @@ const GUIDES: Record<Mode, Guide> = {
     ],
     powersIntro: [
       'Com poderes (o anfitrião liga no lobby): a mão é do time, com até 3 poderes. O time começa com um e ganha outro a cada 3 acertos seguidos; o time muito atrás por 3 rodadas também ganha um.',
+      'Os poderes são de dois tipos: Ajuda, que vale para o seu time, e Sabotagem, que vocês jogam num time adversário. Mítico é raridade: aparece menos e é mais forte, e vem mais para o time em último.',
       'Quem escolhe é o capitão da próxima pergunta, na revelação; o resto do time dá palpite. Sem capitão (Motim), qualquer um do time escolhe.',
       'O 50/50 e o Espiar o capitão usa durante a pergunta.',
       'Na aposta: se o representante apostar pelo menos 25% do QI do time e acertar, o time ganha um poder (5% de chance de vir mítico).',
-      'Um poder por time por pergunta. Ataques miram um time adversário. Nada vale na aposta nem na final.',
-      'Aqui não tem lendários: os ataques sempre miram um time só.',
+      'Um poder por time por pergunta. Sabotagens miram um time adversário. Nada vale na aposta nem na final.',
+      'Aqui não tem lendários: as sabotagens sempre miram um time só.',
     ],
     powers: [
-      { title: 'Ajudas para o seu time', kinds: TEAM_HELPS, hints: TEAM_HINTS },
+      { title: 'Ajudas (para o seu time)', kinds: TEAM_HELPS, hints: TEAM_HINTS },
       {
-        title: 'Ataques num time adversário',
+        title: 'Sabotagens (num time adversário)',
         kinds: TEAM_ATTACKS,
         hints: TEAM_HINTS,
       },
       {
-        title: 'Míticos (raros, mais para o time em último)',
+        title: 'Míticos',
         kinds: ['duel', 'tax'],
         hints: TEAM_HINTS,
         mythic: true,

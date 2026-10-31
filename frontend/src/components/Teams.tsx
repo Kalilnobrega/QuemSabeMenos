@@ -10,7 +10,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide } from '../types/events'
 import { Confetti, DuelScreen } from './Game'
 import { LeaveButton } from './LeaveButton'
-import { Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
+import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { TaxScene } from './TaxScene'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -491,7 +491,7 @@ function TeamRound({
   )
 }
 
-/** Quem usou o quê nesta pergunta (o seu time e os ataques no seu time; na revelação, todos). */
+/** Quem usou o quê nesta pergunta (o seu time e as sabotagens no seu time; na revelação, todos). */
 function TeamUses({ uses, match, players, playerId }: { uses: TeamPowerUse[]; match: TeamMatchView; players: PlayerView[]; playerId: string | null }) {
   const nick = (id: string | null | undefined) => (id === playerId ? 'você' : (playerOf(players, id)?.nickname ?? '?'))
   const line = (use: TeamPowerUse) => {
@@ -728,7 +728,7 @@ function TeamPowerBar({ match, players, playerId, onArm }: { match: TeamMatchVie
                 <PowerUpIcon kind={kind} className="size-6" />
                 <span className="flex flex-col text-left leading-tight">
                   {POWERUP_INFO[kind].name}
-                  {instant && <span className="text-[0.65rem] font-normal">capitão usa na pergunta</span>}
+                  <CategoryTag kind={kind} note={instant ? 'capitão usa na pergunta' : undefined} />
                 </span>
               </button>
             )

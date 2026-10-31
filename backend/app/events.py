@@ -103,11 +103,11 @@ class SubmitBetRequest(BaseModel):
 
 
 class ArmPowerUpRequest(BaseModel):
-    """Na revelação: a habilidade vale na próxima pergunta. `target` só nas que miram alguém."""
+    """Na revelação: o poder vale na próxima pergunta. `target` só nas que miram alguém."""
 
     kind: PowerUp
     target: str | None = None
-    legendary: bool = False  # a versão lendária de um ataque: vale em todos os outros, sem alvo
+    legendary: bool = False  # a versão lendária de uma sabotagem: vale em todos os outros, sem alvo
     theme: str | None = None  # Tema: um dos temas sorteados em `theme_choices`
     target_team: int | None = None  # Times: o time alvo
 
@@ -190,12 +190,12 @@ class PowerUpUse(BaseModel):
     by: str  # id de quem usou (no roubo rebatido, quem rebateu e agora rouba)
     target: str | None  # id do alvo; None nas que valem para quem usou
     reflected_by: str | None  # quem devolveu com o Reverso (o alvo original)
-    legendary: bool = False  # ataque lendário: pega todos menos quem jogou (target None)
+    legendary: bool = False  # sabotagem lendária: pega todos menos quem jogou (target None)
     theme: str | None = None  # Tema: o tema escolhido para a pergunta; Golpe: o tema tomado
 
 
 class LastingPowerUp(BaseModel):
-    """Habilidade que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso)."""
+    """Poder que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso)."""
 
     kind: PowerUp
     rounds_left: int  # contando a pergunta atual
@@ -307,16 +307,16 @@ class GameView(BaseModel):
     bet_odds: float
     bets_placed: list[str]  # ids de quem já apostou; os valores só aparecem em results
     powerups: list[PowerUp]
-    legendary_powerups: list[PowerUp]  # os seus ataques lendários guardados (contam no máximo)
+    legendary_powerups: list[PowerUp]  # as suas sabotagens lendárias guardadas (contam no máximo)
     mythic_powerups: list[PowerUp]  # os seus poderes míticos guardados (contam no máximo)
     revivals: list[Revival]
     duels: list[DuelChallenge]  # X1 chamados nesta revelação, na ordem em que vão acontecer
     duel: DuelView | None
     powerup_max: int
     starting_powerup: PowerUp | None
-    can_arm: bool  # dá para armar habilidade agora (revelação antes de uma pergunta comum)
+    can_arm: bool  # dá para armar poder agora (revelação antes de uma pergunta comum)
     armed: PowerUpUse | None
-    active: list[PowerUpUse]  # habilidades valendo nesta pergunta (o roubo só aparece para os outros na revelação)
+    active: list[PowerUpUse]  # poderes valendo nesta pergunta (o roubo só aparece para os outros na revelação)
     hidden_options: list[int]
     first_wrong: int | None  # Segunda chance: a sua primeira escolha, errada; dá para tentar de novo
     peek: list[int] | None  # Espiar: quantos outros escolheram cada alternativa até agora
@@ -331,7 +331,7 @@ class GameView(BaseModel):
     theme_picker: str | None = None
     theme_options: list[str] = []
     block_theme: str | None = None
-    powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
+    powers_round: bool  # os poderes valem nesta pergunta (nem a aposta nem a final)
     ready: list[str]
     correct_option: int | None  # só aparece em results
     fact: str | None

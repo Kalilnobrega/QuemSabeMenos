@@ -561,7 +561,7 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
           style={{ animationDelay: '1.2s' }}
         >
           <PowerUpIcon kind={game.starting_powerup} className="size-6" />
-          Sua habilidade: {POWERUP_INFO[game.starting_powerup].name}
+          Seu poder: {POWERUP_INFO[game.starting_powerup].name}
         </p>
       )}
       <div className="flex h-20 items-center" aria-live="polite">
@@ -935,7 +935,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
     }
   }, [urgent, answered, secondsLeft])
 
-  // Depende só do veredito: cada atualização da sala (Pular, habilidade armada) recria o resultado.
+  // Depende só do veredito: cada atualização da sala (Pular, poder armado) recria o resultado.
   const verdict = showResults && myResult ? (myResult.option === null ? 'noAnswer' : myResult.correct ? 'correct' : 'wrong') : null
   useEffect(() => {
     if (!verdict) return
@@ -1085,13 +1085,13 @@ function ResurrectionOverlay({ revivals, players, playerId }: { revivals: GameVi
   return <ResurrectionScene revived={revived} players={players} playerId={playerId} />
 }
 
-/** No lugar da revelação, para quem está silenciado: sem resposta certa, sem placar e sem habilidades. */
+/** No lugar da revelação, para quem está silenciado: sem resposta certa, sem placar e sem poderes. */
 function SilencedReveal({ roundsLeft }: { roundsLeft: number }) {
   return (
     <div className="flex flex-col items-center gap-2 rounded-xl bg-panel px-4 py-5 text-center">
       <PowerUpIcon kind="silence" className="size-10" />
       <p className="font-display text-3xl tracking-wide text-chalk">Silenciado!</p>
-      <p className="text-steel">Nada de resposta, placar ou habilidades por enquanto.</p>
+      <p className="text-steel">Nada de resposta, placar ou poderes por enquanto.</p>
       <p className="font-hand text-lg font-medium text-steel">{roundsLeft > 1 ? 'Ainda falta mais uma pergunta em silêncio.' : 'Na próxima você volta a ver tudo.'}</p>
     </div>
   )
@@ -1154,7 +1154,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
       {headline}
       <PowerUpBar powers={room.settings.powers} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
       {powerupLines.length > 0 && (
-        <ul className="flex flex-col gap-1.5" aria-label="Habilidades">
+        <ul className="flex flex-col gap-1.5" aria-label="Poderes">
           {powerupLines.map(({ key, kind, player, text, delta, me, legendary, mythic }, index) => (
             <li
               key={key}
@@ -1250,7 +1250,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   )
 }
 
-/** Linhas da revelação: escudos que seguraram, roubos e habilidades ganhas. */
+/** Linhas da revelação: escudos que seguraram, roubos e poderes ganhos. */
 function powerupEvents(room: RoomState, game: GameView, playerId: string | null) {
   const who = (id: string | null) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
   const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean; legendary?: boolean; mythic?: boolean }[] = []

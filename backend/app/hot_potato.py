@@ -229,7 +229,7 @@ class HotPotato:
     def use(self, player_id: str, kind: PowerUp, now: float, potato_id: int | None = None, option: int | None = None) -> None:
         """Ajuda em si mesmo (com a batata na mão) ou sabotagem em quem está com a batata."""
         if not self.powers or self.phase in ("starting", "finished"):
-            raise HotPotatoError("Agora não dá para usar habilidade.")
+            raise HotPotatoError("Agora não dá para usar poder.")
         me = self.player(player_id)
         if not me:
             raise HotPotatoError("Você não está na partida.")
@@ -238,7 +238,7 @@ class HotPotato:
         if kind == "double_potato":
             return self._double(me, now)
         if kind not in self.held.get(player_id, []):
-            raise HotPotatoError("Você não tem essa habilidade.")
+            raise HotPotatoError("Você não tem esse poder.")
         if self.phase != "playing":
             raise HotPotatoError("Espere a próxima pergunta.")
         if kind in HELPS:
@@ -481,7 +481,7 @@ class HotPotato:
     def _double(self, me: Holder, now: float) -> None:
         """Batata dupla: entra a dourada, com quem está mais longe da principal na roda."""
         if "double_potato" not in self.mythics.get(me.id, []):
-            raise HotPotatoError("Você não tem essa habilidade.")
+            raise HotPotatoError("Você não tem esse poder.")
         if self.phase != "playing" or not me.alive:
             raise HotPotatoError("Agora não dá para usar a Batata dupla.")
         if self.golden:
@@ -529,7 +529,7 @@ class HotPotato:
 
     def _resurrect(self, me: Holder) -> None:
         if "resurrection" not in self.mythics.get(me.id, []):
-            raise HotPotatoError("Você não tem essa habilidade.")
+            raise HotPotatoError("Você não tem esse poder.")
         if me.alive:
             raise HotPotatoError("A Ressurreição é para quem explodiu.")
         self.mythics[me.id].remove("resurrection")

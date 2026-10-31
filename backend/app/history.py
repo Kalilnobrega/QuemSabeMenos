@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS rounds (
     closed_at REAL NOT NULL,
     ended_at REAL,  -- fim da revelação
     skipped INTEGER,  -- a revelação acabou antes porque todos pularam
-    powerups TEXT NOT NULL,  -- habilidades valendo: tipo, quem usou, alvo, quem devolveu
+    powerups TEXT NOT NULL,  -- poderes valendo: tipo, quem usou, alvo, quem devolveu
     PRIMARY KEY (match_id, round)
 );
 CREATE TABLE IF NOT EXISTS answers (

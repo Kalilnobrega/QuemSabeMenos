@@ -2,7 +2,7 @@
 
 Antes do duelo a plateia aposta 5 de QI em quem vai ganhar. Depois vêm até 10 perguntas
 (4 de Verdadeiro ou Falso, 5 difíceis e 1 impossível), com cada vez menos tempo e sem
-habilidades. Perde quem errar uma que o outro acertou; se os dois erram, segue. Se chegar ao
+poderes. Perde quem errar uma que o outro acertou; se os dois erram, segue. Se chegar ao
 fim, ganha quem somou menos tempo de resposta. Quem perde paga 40% do próprio QI a quem ganha.
 """
 
