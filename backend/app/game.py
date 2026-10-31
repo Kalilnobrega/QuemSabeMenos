@@ -60,7 +60,7 @@ BET_SECONDS = 12.0
 # O relógio do jogador começa quando o estado chega (atrasado pela rede) e o clique ainda
 # precisa voltar: sem essa folga, quem clica no último instante fica sem resposta.
 LATE_SECONDS = 1.0
-PREPARATION_PHASES = ("starting", "level", "intro", "betting")
+PREPARATION_PHASES = ("starting", "level", "intro", "betting", "theme_pick")
 # A revelação dura o suficiente para ler a curiosidade; acaba antes se todos pularem.
 RESULTS_SECONDS_PER_CHAR = 0.055
 MIN_RESULTS_SECONDS = 10.0
@@ -69,10 +69,17 @@ MAX_RESULTS_SECONDS = 15.0
 BET_PERCENTS = (25, 50, 75, 100)
 BET_MAX_PERCENT = 100
 BET_ODDS = 1.5  # apostou 100 e acertou: lucra 50; errou ou não respondeu: perde os 100
+# Especialista: a cada bloco de perguntas alguém escolhe o tema (o último tem mais chance) e
+# ganha um bônus em cada acerto do bloco.
+SPECIALIST_BLOCK = 5
+SPECIALIST_THEME_OPTIONS = 4
+THEME_PICK_SECONDS = 12.0
+SPECIALIST_BONUS = 0.25
+LAST_PLACE_WEIGHT = 3  # peso no sorteio de quem escolhe para quem está em último (o empate conta)
 
 
 Phase = Literal[
-    "starting", "level", "intro", "betting", "reading", "answering", "results", "finished",
+    "starting", "level", "intro", "betting", "theme_pick", "reading", "answering", "results", "finished",
     "duel_betting", "duel_answering", "duel_results", "duel_end",
 ]
 DUEL_PHASES = ("duel_betting", "duel_answering", "duel_results", "duel_end")
@@ -302,6 +309,12 @@ class Game:
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
     ready: set[str] = field(default_factory=set)
+    # Especialista: quem escolhe o tema do bloco atual, as opções sorteadas e o tema escolhido.
+    specialist: bool = False
+    theme_picker: str | None = None
+    theme_options: list[str] = field(default_factory=list)
+    block_theme: str | None = None
+    coup_block: int | None = None  # bloco em que já deram o Golpe
 
     def __post_init__(self) -> None:
         self.bet_round = bet_round(self.questions)
@@ -326,11 +339,18 @@ class Game:
         upcoming = self.round + 1
         return upcoming != self.bet_round and self.questions[upcoming].difficulty != FINAL_DIFFICULTY
 
+    @property
+    def dealable(self) -> list[PowerUp]:
+        """Poderes que dá para ganhar. No Especialista o tema já é escolhido: o Golpe entra no lugar do Tema."""
+        if not self.specialist:
+            return list(powerups.POWERUPS)
+        return ["coup" if kind == "theme" else kind for kind in powerups.POWERUPS]
+
     def capacity(self, player_id: str) -> int:
         return self.powerup_max + self.extra_slots.get(player_id, 0)
 
     def deal_powerups(self, player_ids: list[str]) -> None:
-        dealt = [kind for kind in powerups.POWERUPS if kind not in powerups.NOT_DEALT]
+        dealt = [kind for kind in self.dealable if kind not in powerups.NOT_DEALT]
         for pid in player_ids:
             kind = self.rng.choice(dealt)
             self.powerups[pid] = [kind]
@@ -376,16 +396,30 @@ class Game:
                 raise GameError("O Investimento só vale a partir das médias.")
             if player_id in self.investments:
                 raise GameError("Seu Investimento ainda está valendo.")
-        if kind == "theme":
+        if kind == "coup":
+            self._check_coup(player_id)
+            target, theme = self.theme_picker, self.block_theme
+        elif kind == "theme":
             if theme not in self.theme_choices:
                 raise GameError("Escolha um dos temas.")
             if any(use.kind == "theme" for use in self.armed.values()):
                 raise GameError("Alguém já escolheu o tema da próxima pergunta.")
             self._swap_next_question(theme)
-        else:
+        elif kind != "coup":
             theme = None
         held.remove(kind)
         self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None, theme=theme)
+
+    def _check_coup(self, player_id: str) -> None:
+        """Golpe: só no mesmo bloco, contra o dono do tema, uma vez por bloco."""
+        if not self.specialist or not self.block_theme:
+            raise GameError("Não tem tema para tomar.")
+        if self.theme_picker == player_id:
+            raise GameError("O tema já é seu.")
+        if (self.round + 1) % SPECIALIST_BLOCK == 0:
+            raise GameError("O bloco acaba agora: guarde o Golpe para o próximo.")
+        if self.coup_block == self.round // SPECIALIST_BLOCK or any(use.kind == "coup" for use in self.armed.values()):
+            raise GameError("Já deram um Golpe neste bloco.")
 
     def _open_backpack(self, player_id: str) -> None:
         """Mochila: vale na hora, sem ocupar a vez de armar. Uma vaga a mais e um poder comum."""
@@ -400,7 +434,7 @@ class Game:
             raise GameError("Sua Mochila já está no tamanho máximo.")
         held.remove("backpack")
         self.extra_slots[player_id] = self.extra_slots.get(player_id, 0) + 1
-        held.append(self.rng.choice([kind for kind in powerups.POWERUPS if kind != "backpack"]))
+        held.append(self.rng.choice([kind for kind in self.dealable if kind != "backpack"]))
 
     def _swap_next_question(self, theme: str) -> None:
         upcoming = self.round + 1
@@ -415,7 +449,7 @@ class Game:
         self.questions[upcoming] = _shuffle_options(question, self.rng)
 
     def _draw_theme_choices(self) -> list[str]:
-        if not self.powers or not self.has_next_round:
+        if not self.powers or self.specialist or not self.has_next_round:
             return []
         upcoming = self.questions[self.round + 1]
         themes = sorted(
@@ -454,7 +488,8 @@ class Game:
         """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
         return all(pid in self.ready or self.is_silenced(pid) for pid in player_ids)
 
-    def start_round(self, now: float) -> None:
+    def start_round(self, now: float, scores: dict[str, int] | None = None) -> None:
+        """`scores`: QI de quem está conectado, para sortear quem escolhe o tema no Especialista."""
         if self.round >= 0 and self._counts_for_powers():
             self.silences = [(use, left - 1) for use, left in self.silences if left > 1]
         self.round += 1
@@ -473,6 +508,9 @@ class Game:
         for use in armed:
             if use.kind == "investment":
                 self.investments[use.by] = 0
+            if use.kind == "coup":
+                self.theme_picker = use.by
+                self.coup_block = self.round // SPECIALIST_BLOCK
             if use.kind in powerups.LASTING:
                 rounds = powerups.LASTING[use.kind]
                 if use.kind == "reverse" and use.by in self.leaders:
@@ -487,6 +525,14 @@ class Game:
                 self.lasting[use.reflected_by].pop("reverse", None)
             if use.kind == "silence":
                 self.silences.append((use, powerups.SILENCE_ROUNDS))
+        if self.specialist and self.round % SPECIALIST_BLOCK == 0:
+            self.theme_picker, self.block_theme, self.theme_options = None, None, []
+            if self.question.difficulty != FINAL_DIFFICULTY:
+                self._open_theme_pick(scores or {}, now)
+                return
+        self._enter_round(now)
+
+    def _enter_round(self, now: float) -> None:
         if self.round == 0:
             self._enter("starting", now, START_SECONDS)
         elif self.question.difficulty == FINAL_DIFFICULTY:
@@ -497,6 +543,63 @@ class Game:
             self._enter("betting", now, BET_SECONDS)
         else:
             self.begin_reading(now)
+
+    def _block(self) -> range:
+        """Perguntas do bloco atual do Especialista (sem a final)."""
+        end = min(self.round + SPECIALIST_BLOCK, len(self.questions))
+        return range(self.round, end) if self.round < end else range(0)
+
+    def _open_theme_pick(self, scores: dict[str, int], now: float) -> None:
+        if scores:
+            bottom = min(scores.values())
+            ids = list(scores)
+            weights = [LAST_PLACE_WEIGHT if scores[pid] == bottom else 1 for pid in ids]
+            self.theme_picker = self.rng.choices(ids, weights)[0]
+        needed: dict[Difficulty, int] = {}
+        for i in self._block():
+            if self.questions[i].difficulty != FINAL_DIFFICULTY:
+                needed[self.questions[i].difficulty] = needed.get(self.questions[i].difficulty, 0) + 1
+        themes = sorted({q.theme for q in self.bank})
+
+        def enough(theme: str) -> bool:
+            return all(
+                sum(1 for q in self.bank if q.theme == theme and q.difficulty == d and q.id not in self.used) >= n
+                for d, n in needed.items()
+            )
+
+        fresh = [t for t in themes if enough(t)] or themes
+        self.theme_options = sorted(self.rng.sample(fresh, min(SPECIALIST_THEME_OPTIONS, len(fresh))))
+        self._enter("theme_pick", now, THEME_PICK_SECONDS)
+
+    def choose_theme(self, player_id: str, theme: str) -> None:
+        if self.phase != "theme_pick":
+            raise GameError("Agora não dá para escolher o tema.")
+        if player_id != self.theme_picker:
+            raise GameError("Quem escolhe o tema é outra pessoa.")
+        if self.block_theme:
+            raise GameError("O tema já foi escolhido.")
+        if theme not in self.theme_options:
+            raise GameError("Escolha um dos temas.")
+        self.block_theme = theme
+
+    def close_theme_pick(self, now: float) -> None:
+        """Troca as perguntas do bloco pelas do tema escolhido (ou sorteado, se ninguém escolheu)."""
+        if not self.block_theme:
+            self.block_theme = self.rng.choice(self.theme_options) if self.theme_options else self.question.theme
+        for i in self._block():
+            current = self.questions[i]
+            if current.difficulty == FINAL_DIFFICULTY or current.theme == self.block_theme:
+                continue
+            pool = [
+                q for q in self.bank
+                if q.theme == self.block_theme and q.difficulty == current.difficulty and q.id not in self.used
+            ] or [q for q in self.bank if q.theme == self.block_theme and q.difficulty == current.difficulty]
+            if not pool:
+                continue
+            question = self.rng.choice(pool)
+            self.used.add(question.id)
+            self.questions[i] = _shuffle_options(question, self.rng)
+        self._enter_round(now)
 
     def begin_reading(self, now: float) -> None:
         self._enter("reading", now, reading_seconds(self.question.text))
@@ -678,6 +781,11 @@ class Game:
                 hard_loss = delta < 0 and difficulty == "hard"
                 delta *= powerups.DOUBLE_HARD_LOSS_FACTOR if hard_loss else powerups.DOUBLE_FACTOR
             shielded = -delta if delta < 0 and self._affects("shield", player.id) else 0
+            expert = (
+                round(delta * SPECIALIST_BONUS)
+                if correct and delta > 0 and player.id == self.theme_picker and difficulty != FINAL_DIFFICULTY
+                else 0
+            )
             bet = self.bets.get(player.id, 0) if self.is_bet_round else None
             player.answer_ms += round(max(0.0, elapsed) * 1000)
             self.results.append(
@@ -701,6 +809,7 @@ class Game:
                     first_option=first.option if first and answer is not first else None,
                     expired=[],
                     gained=None,
+                    specialist_bonus=expert,
                 )
             )
         by_id = {r.player_id: r for r in self.results}
@@ -745,6 +854,7 @@ class Game:
                 + result.toll_received
                 - result.tolled
                 + result.tricked
+                + result.specialist_bonus
             )
         top = max((p.score for p in players), default=0)
         self.leaders = {p.id for p in players if p.score == top}
@@ -963,7 +1073,7 @@ class Game:
                 kind = self.rng.choice(sorted(powerups.TARGETED))
                 legendaries.append(kind)
             else:
-                kind = self.rng.choice(powerups.POWERUPS)
+                kind = self.rng.choice(self.dealable)
                 held.append(kind)
             result.bet_gained = PowerUpGain(kind=kind, reason="bet", legendary=legendary, mythic=mythic)
 
@@ -998,7 +1108,7 @@ class Game:
                 kind = self.rng.choice(sorted(powerups.TARGETED))
                 legendaries.append(kind)
             else:
-                kind = self.rng.choice(powerups.POWERUPS)
+                kind = self.rng.choice(self.dealable)
                 held.append(kind)
             result.gained = PowerUpGain(kind=kind, reason=reason, legendary=not mythic and roll < edge, mythic=mythic is not None)
             if reason == "streak":
@@ -1091,6 +1201,10 @@ class Game:
             tolls=self._toll_view(viewer, decoy) if viewer and self.phase in ("reading", "answering") else None,
             flashbang=bool(viewer) and self.phase in ("reading", "answering") and self._affects("flashbang", viewer),
             theme_choices=self.theme_choices,
+            specialist=self.specialist,
+            theme_picker=self.theme_picker,
+            theme_options=self.theme_options,
+            block_theme=self.block_theme,
             powers_round=self._counts_for_powers(),
             ready=sorted(self.ready),
             correct_option=screen(q.answer) if show_answer and not hidden else None,

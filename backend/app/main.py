@@ -22,6 +22,7 @@ from app.events import (
     ArmPowerUpRequest,
     SetTeamRequest,
     ChooseRepresentativeRequest,
+    ChooseThemeRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     SubmitDuelBetRequest,
@@ -115,7 +116,8 @@ def check_round_done(room: Room) -> None:
         return
     connected = [p for p in room.players if p.connected]
     if (
-        (game.phase == "answering" and game.everyone_answered(room.connected_ids()))
+        (game.phase == "theme_pick" and (game.block_theme or game.theme_picker not in room.connected_ids()))
+        or (game.phase == "answering" and game.everyone_answered(room.connected_ids()))
         or (game.phase == "betting" and game.everyone_bet(connected))
         or (game.phase == "results" and game.everyone_ready(room.connected_ids()))
         or (game.phase == "duel_betting" and game.everyone_bet_on_duel(room.connected_ids()))
@@ -157,6 +159,15 @@ async def run_game(room: Room) -> None:
     try:
         while alive():
             done.clear()
+            if game.phase == "theme_pick":
+                await broadcast(room)
+                check_round_done(room)  # quem escolhe pode já ter saído
+                with suppress(TimeoutError):
+                    await asyncio.wait_for(done.wait(), game.phase_ends_at + rules.LATE_SECONDS - time.monotonic())
+                done.clear()
+                if not alive():
+                    return
+                game.close_theme_pick(time.monotonic())
             if game.phase == "betting" and game.everyone_bet([p for p in room.players if p.connected]):
                 game.begin_reading(time.monotonic())  # ninguém tem QI para apostar: nem mostra a aposta
             await broadcast(room)
@@ -212,7 +223,7 @@ async def run_game(room: Room) -> None:
             await run_duels(room, done, alive)
             if not alive():
                 return
-            game.start_round(time.monotonic())
+            game.start_round(time.monotonic(), room.connected_scores())
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
@@ -494,6 +505,20 @@ async def use_powerup(sid: str, data: dict) -> dict:
         return error(str(e))
     if room.hot_potato or room.team_match:
         check_round_done(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def choose_theme(sid: str, data: dict) -> dict:
+    try:
+        request = ChooseThemeRequest.model_validate(data)
+        room = rooms.choose_theme(sid, request.theme)
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    check_round_done(room)
     await broadcast(room)
     return OkAck().model_dump()
 

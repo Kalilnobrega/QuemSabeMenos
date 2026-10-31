@@ -1170,3 +1170,125 @@ def test_a_right_bet_of_a_quarter_of_the_iq_earns_a_power():
     assert by_id["ana"].bet_gained and by_id["ana"].bet_gained.reason == "bet"
     assert by_id["bia"].bet_gained is None  # menos de 25%
     assert by_id["caio"].bet_gained is None  # errou
+
+
+def themed(qid: str, theme: str, difficulty: str = "medium") -> Question:
+    return question(qid, difficulty).model_copy(update={"theme": theme})
+
+
+def specialist_game(rounds: int = 10) -> Game:
+    themes = ["Artes", "Brasil", "Ciências", "Esportes", "Games"]
+    bank = [themed(f"{t}-{i}", t) for t in themes for i in range(rounds)]
+    return Game(
+        questions=[themed(f"mix-{i}", themes[i % 5]) for i in range(rounds)],
+        answer_seconds=10, bank=bank, specialist=True, rng=random.Random(1),
+    )
+
+
+def test_specialist_opens_each_block_with_a_theme_pick():
+    game = specialist_game()
+    game.start_round(now=0, scores={"ana": 50, "bia": 50})
+    view = game.view(now=0, viewer="ana")
+    assert view.phase == "theme_pick" and view.question is None
+    assert game.theme_picker in ("ana", "bia")
+    assert len(view.theme_options) == 4
+    other = "bia" if game.theme_picker == "ana" else "ana"
+    with pytest.raises(GameError, match="outra pessoa"):
+        game.choose_theme(other, game.theme_options[0])
+    with pytest.raises(GameError, match="um dos temas"):
+        game.choose_theme(game.theme_picker, "Futebol")
+    theme = game.theme_options[1]
+    game.choose_theme(game.theme_picker, theme)
+    game.close_theme_pick(now=3)
+    assert game.phase == "starting"
+    assert all(game.questions[i].theme == theme for i in range(5))
+    assert len({q.id for q in game.questions[:5]}) == 5
+    for _ in range(4):
+        game.start_round(now=10, scores={"ana": 50, "bia": 50})
+        assert game.phase == "reading" and game.block_theme == theme
+    game.start_round(now=20, scores={"ana": 50, "bia": 40})
+    assert game.phase == "theme_pick" and game.block_theme is None
+
+
+def test_specialist_draws_a_random_theme_when_nobody_picks():
+    game = specialist_game()
+    game.start_round(now=0, scores={"ana": 50})
+    game.close_theme_pick(now=12)
+    assert game.block_theme in game.theme_options
+    assert all(q.theme == game.block_theme for q in game.questions[:5])
+
+
+def test_specialist_picker_is_more_likely_the_last_place():
+    picks = {"ana": 0, "bia": 0, "caio": 0}
+    for seed in range(600):
+        game = specialist_game()
+        game.rng = random.Random(seed)
+        game.start_round(now=0, scores={"ana": 80, "bia": 60, "caio": 20})
+        picks[game.theme_picker] += 1
+    assert picks["caio"] > 250 and picks["ana"] > 60 and picks["bia"] > 60  # 3/5 para o último
+
+
+def test_specialist_picker_gets_a_quarter_more_on_right_answers():
+    game = specialist_game()
+    game.start_round(now=0, scores={"ana": 0, "bia": 0})
+    picker = game.theme_picker
+    other = "bia" if picker == "ana" else "ana"
+    game.close_theme_pick(now=0)
+    game.begin_reading(now=0)
+    game.open_answers(now=0)
+    right = game.question.answer  # as alternativas do bloco vêm embaralhadas
+    game.answer(picker, right, now=1)
+    game.answer(other, right, now=1)
+    players = [P("ana"), P("bia")]
+    game.close_round(players, now=20)
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id[picker].delta == 11 and by_id[picker].specialist_bonus == 3
+    assert by_id[other].specialist_bonus == 0
+    assert {p.id: p.score for p in players} == {picker: 14, other: 11}
+
+
+def test_specialist_never_deals_the_theme_power():
+    game = specialist_game()
+    game.powers = True
+    assert "theme" not in game.dealable and "coup" in game.dealable
+    assert "coup" not in Game(questions=[question("q1")], answer_seconds=10).dealable
+    for seed in range(50):
+        game.rng = random.Random(seed)
+        game.deal_powerups(["ana", "bia", "caio"])
+        assert "theme" not in [k for held in game.powerups.values() for k in held]
+
+
+def test_coup_takes_the_theme_bonus_for_the_rest_of_the_block():
+    game = specialist_game(rounds=15)
+    game.powers = True
+    game.start_round(now=0, scores={"ana": 50, "bia": 50, "caio": 50})
+    game.theme_picker = "ana"
+    game.close_theme_pick(now=0)
+    game.begin_reading(now=0)
+    game.open_answers(now=0)
+    game.close_round([P("ana"), P("bia"), P("caio")], now=20)
+    game.powerups = {"ana": ["coup"], "bia": ["coup"], "caio": ["coup"]}
+    with pytest.raises(GameError, match="já é seu"):
+        game.arm("ana", "coup", None, ["ana", "bia", "caio"])
+    game.arm("bia", "coup", None, ["ana", "bia", "caio"])
+    assert game.armed["bia"].target == "ana" and game.armed["bia"].theme == game.block_theme
+    with pytest.raises(GameError, match="Já deram"):
+        game.arm("caio", "coup", None, ["ana", "bia", "caio"])
+    game.start_round(now=30, scores={"ana": 50, "bia": 50, "caio": 50})
+    assert game.theme_picker == "bia"
+    game.open_answers(now=30)
+    game.answer("ana", game.question.answer, now=31)
+    game.answer("bia", game.question.answer, now=31)
+    players = [P("ana"), P("bia"), P("caio")]
+    game.close_round(players, now=50)
+    bonus = {r.player_id: r.specialist_bonus for r in game.results}
+    assert bonus["bia"] > 0 and bonus["ana"] == 0
+    with pytest.raises(GameError, match="Já deram"):
+        game.arm("caio", "coup", None, ["ana", "bia", "caio"])
+    for _ in range(3):  # até a 5ª pergunta, a última do bloco
+        game.start_round(now=60, scores={})
+        game.open_answers(now=60)
+        game.close_round(players, now=80)
+    game.coup_block = None  # mesmo sem Golpe no bloco, não dá para usar na última pergunta dele
+    with pytest.raises(GameError, match="acaba agora"):
+        game.arm("caio", "coup", None, ["ana", "bia", "caio"])  # a próxima já é de outro bloco

@@ -9,6 +9,7 @@ import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from 
 
 const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
   classic: { name: 'Clássico', hint: 'Todo mundo responde junto: quem sabe mais, ganha.' },
+  specialist: { name: 'Especialista', hint: 'Um tema a cada 5 perguntas: quem escolhe ganha +25%.' },
   teams: { name: 'Times', hint: 'O time vota junto e tem um QI só.' },
   last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
   hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
@@ -16,6 +17,7 @@ const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
 
 const POWERS_HINT: Record<RoomSettings['mode'], string> = {
   classic: 'Ajudas para você e ataques nos outros, ganhos acertando em sequência',
+  specialist: 'Os do Clássico, com o Golpe no lugar do Tema',
   teams: 'O time guarda até 3, o capitão usa, e os ataques miram outro time',
   last_standing: 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador',
   hot_potato: 'Ajudas para quem está com a batata, sabotagens para quem assiste',
@@ -163,7 +165,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
           <span className="font-display text-xl tracking-wide text-brand">
             {MODES[room.settings.mode].name}
-            {room.settings.mode === 'classic' && room.settings.powers && ' com poderes'}
+            {(room.settings.mode === 'classic' || room.settings.mode === 'specialist') && room.settings.powers && ' com poderes'}
           </span>
           <span className="text-sm text-steel">{MODES[room.settings.mode].hint}</span>
           <span className="absolute top-2 right-2 text-steel">

@@ -116,9 +116,10 @@ export function useRoom() {
     [],
   )
   const skipResults = useCallback(() => request('skip_results'), [])
+  const chooseTheme = useCallback((theme: string) => request('choose_theme', { theme }), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
   const chooseRepresentative = useCallback((choice: string) => request('choose_representative', { choice }), [])
   const setTeam = useCallback((player_id: string, team: number) => request('set_team', { player_id, team }), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings, setTeam, chooseRepresentative }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, updateSettings, setTeam, chooseRepresentative }
 }

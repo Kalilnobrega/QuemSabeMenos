@@ -66,6 +66,7 @@ const CLASSIC_EXTRAS: Section[] = [
 ]
 
 const CLASSIC_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'reverse', 'backpack', 'theme', 'investment']
+const SPECIALIST_HELPS = CLASSIC_HELPS.map((kind) => (kind === 'theme' ? 'coup' : kind))
 const CLASSIC_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'toll', 'decoy', 'flashbang']
 // As versões lendárias dos ataques: valem em todos os outros de uma vez.
 const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
@@ -116,6 +117,39 @@ const GUIDES: Record<Mode, Guide> = {
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: CLASSIC_HELPS },
+      { title: 'Ataques (em quem você escolher)', kinds: CLASSIC_ATTACKS },
+      { title: 'Lendários (os ataques, em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
+      {
+        title: 'Míticos (raros, mais para quem está em último)',
+        kinds: ['resurrection', 'duel'],
+        mythic: true,
+      },
+    ],
+  },
+  specialist: {
+    name: 'Especialista',
+    summary: 'Igual ao Clássico, mas as perguntas vêm em blocos de 5 com um tema só, e alguém escolhe o tema de cada bloco.',
+    sections: [
+      {
+        title: 'Escolha do tema',
+        items: [
+          'Antes de cada bloco de 5 perguntas, o jogo sorteia quem escolhe o tema. Quem está em último tem 3 vezes mais chance de ser sorteado (no começo, com todo mundo empatado, a chance é igual).',
+          'Quem foi sorteado escolhe entre 4 temas em 12 segundos. Se não escolher, o tema é sorteado.',
+          'Quem escolheu ganha +25% de QI em cada acerto do bloco. Como acertar uma fácil vale 0, nas fáceis o bônus também é 0.',
+          'A dificuldade segue o Clássico (fáceis, médias, difíceis), e a pergunta final impossível tem tema livre.',
+        ],
+      },
+      CLASSIC_SCORING,
+      ...CLASSIC_EXTRAS,
+    ],
+    powersIntro: [
+      'Os mesmos poderes do Clássico, com as mesmas regras. No lugar do Tema entra o Golpe: você toma o tema de quem escolheu e fica com os +25% até o fim do bloco.',
+      'O Golpe se arma na revelação, como os outros. Só vale um por bloco, e não dá para usar quando a próxima pergunta já é de outro bloco.',
+      'Na aposta: quem apostar pelo menos 25% do QI e acertar ganha um poder, com mais chance de vir lendário (15%) ou mítico (5%).',
+      'Poderes não valem na aposta nem na pergunta final.',
+    ],
+    powers: [
+      { title: 'Ajudas (para você)', kinds: SPECIALIST_HELPS },
       { title: 'Ataques (em quem você escolher)', kinds: CLASSIC_ATTACKS },
       { title: 'Lendários (os ataques, em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
       {

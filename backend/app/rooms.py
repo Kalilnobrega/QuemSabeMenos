@@ -118,6 +118,9 @@ class Room:
     def connected_ids(self) -> list[str]:
         return [p.id for p in self.players if p.connected]
 
+    def connected_scores(self) -> dict[str, int]:
+        return {p.id: p.score for p in self.players if p.connected}
+
     def lobby_teams(self) -> dict[str, int]:
         """Times do anfitrião em dia com a sala: quem chegou entra no time com menos gente, e quem
         estava num time que deixou de existir é redistribuído."""
@@ -411,10 +414,11 @@ class RoomManager:
             bank=bank,
             used=room.used_questions,
             statements=statements,
+            specialist=room.mode == "specialist",
         )
         if room.game.powers:
             room.game.deal_powerups([p.id for p in room.players])
-        room.game.start_round(now)
+        room.game.start_round(now, room.connected_scores())
         return room
 
     def answer(self, sid: str, option: int, now: float, team: int | None = None, potato: int | None = None) -> Room:
@@ -532,6 +536,17 @@ class RoomManager:
         if not room.team_match:
             raise RoomError("Não tem partida de times rolando.")
         return self._on_teams(room, lambda m: m.choose(player.id, choice))
+
+    def choose_theme(self, sid: str, theme: str) -> Room:
+        """Especialista: quem foi sorteado escolhe o tema do bloco."""
+        room, player = self._playing(sid)
+        if not room.game:
+            raise RoomError("Esse modo não tem escolha de tema.")
+        try:
+            room.game.choose_theme(player.id, theme)
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
 
     def ready(self, sid: str) -> Room:
         """Pular a revelação: acaba antes quando todos os conectados tocam."""

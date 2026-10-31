@@ -100,11 +100,12 @@ interface Props {
   onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
+  onChooseTheme: (theme: string) => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
-export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
+export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onUse, onSkip, onChooseTheme, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
   if (game.duel) {
     return (
@@ -117,6 +118,9 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
         onDuelBet={onDuelBet}
       />
     )
+  }
+  if (game.phase === 'theme_pick') {
+    return <ThemePick key={game.round} snapshot={snapshot} playerId={playerId} onChoose={onChooseTheme} />
   }
   if (game.phase === 'starting') {
     return <GameStart snapshot={snapshot} />
@@ -448,6 +452,77 @@ function LevelIntro({ game }: { game: GameView }) {
       <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.7s' }}>
         {info.line}
       </p>
+    </section>
+  )
+}
+
+const SPECIALIST_BLOCK = 5
+
+/** Especialista: antes de cada bloco, o sorteado escolhe o tema; os outros assistem. */
+function ThemePick({ snapshot, playerId, onChoose }: { snapshot: Snapshot; playerId: string | null; onChoose: Props['onChooseTheme'] }) {
+  const { room, receivedAt } = snapshot
+  const game = room.game!
+  const now = useNow(!game.block_theme)
+  const [error, setError] = useState<string | null>(null)
+  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const picker = room.players.find((p) => p.id === game.theme_picker)
+  const mine = game.theme_picker === playerId
+  const blocks = Math.ceil(room.settings.rounds / SPECIALIST_BLOCK)
+  const block = Math.floor((game.round - 1) / SPECIALIST_BLOCK) + 1
+  useSoundsOnMount([['levelHop', 0]])
+  useEffect(() => {
+    if (game.block_theme) playSound('theme')
+  }, [game.block_theme])
+
+  const choose = async (theme: string) => {
+    playSound('select')
+    setError(await onChoose(theme))
+  }
+
+  return (
+    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
+      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">
+        Bloco {block} de {blocks}
+      </p>
+      {picker && (
+        <div className="avatar-pop flex flex-col items-center gap-1">
+          <img src={AVATAR_URLS[picker.avatar]} alt="" className="size-20" />
+          <span className="font-semibold text-chalk">{mine ? 'Você' : picker.nickname}</span>
+        </div>
+      )}
+      <h1 className="intro-slam font-display text-5xl text-brand [text-shadow:0_4px_0_#7a5a00]">
+        {game.block_theme ? game.block_theme : mine ? 'Escolha o tema!' : 'Escolhendo o tema…'}
+      </h1>
+      <p className="intro-step max-w-xs font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.4s' }}>
+        {mine
+          ? 'Você ganha +25% de QI em cada acerto deste bloco.'
+          : `${picker?.nickname ?? 'Quem escolhe'} ganha +25% de QI em cada acerto deste bloco.`}
+      </p>
+      <ul className="grid w-full max-w-sm grid-cols-2 gap-2">
+        {(game.theme_options ?? []).map((theme, index) => {
+          const chosen = game.block_theme === theme
+          return (
+            <li key={theme} className="avatar-pop" style={{ animationDelay: `${0.5 + index * 0.08}s` }}>
+              <button
+                onClick={() => void choose(theme)}
+                disabled={!mine || !!game.block_theme}
+                className={`btn-3d w-full rounded-xl px-3 py-3 font-semibold ${
+                  chosen ? 'btn-brand is-pressed text-ink' : game.block_theme ? 'btn-dark opacity-40' : mine ? 'btn-dark text-chalk' : 'btn-dark text-steel'
+                }`}
+              >
+                {theme}
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+      {error && <p className="text-sm text-red-300">{error}</p>}
+      {!game.block_theme && (
+        <div className="h-2 w-full max-w-sm overflow-hidden rounded-full bg-panel">
+          <div className="h-full rounded-full bg-brand" style={{ width: `${Math.min(1, remaining / game.phase_duration_ms) * 100}%` }} />
+        </div>
+      )}
+      {!game.block_theme && !mine && <p className="text-sm text-steel">Se ninguém escolher, o tema é sorteado.</p>}
     </section>
   )
 }
@@ -902,8 +977,12 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
         </span>
         {/* Uma linha só: tema longo corta com reticências, o selo de dificuldade nunca encolhe. */}
         <span className="flex min-w-0 items-center gap-1.5">
-          <span className="min-w-0 truncate rounded-full bg-panel px-2.5 py-1 text-steel" title={question.theme}>
+          <span
+            className={`min-w-0 truncate rounded-full px-2.5 py-1 ${game.block_theme && game.theme_picker === playerId ? 'bg-brand/20 font-semibold text-brand' : 'bg-panel text-steel'}`}
+            title={game.block_theme && game.theme_picker === playerId ? `${question.theme}: você ganha +25% nos acertos` : question.theme}
+          >
             {question.theme}
+            {game.block_theme && game.theme_picker === playerId && ' +25%'}
           </span>
           <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${difficulty.className}`}>{difficulty.label}</span>
         </span>
@@ -1029,10 +1108,11 @@ interface SummaryProps {
 function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
   const deltas: Record<string, number> = Object.fromEntries(
-    game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked]),
+    game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked + (r.specialist_bonus ?? 0)]),
   )
   for (const revival of game.revivals) deltas[revival.player_id] = (deltas[revival.player_id] ?? 0) + revival.after - revival.before
   const bets = game.results.filter((r) => r.bet)
+  const experts = game.results.filter((r) => r.specialist_bonus)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
   const powerupLines = powerupEvents(room, game, playerId)
 
@@ -1089,6 +1169,22 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
           ))}
         </ul>
       )}
+      {experts.map((result) => {
+        const player = room.players.find((p) => p.id === result.player_id)
+        return (
+          <p
+            key={result.player_id}
+            className={`avatar-pop flex items-center gap-2 rounded-xl bg-brand/15 px-3 py-1.5 font-semibold text-brand ${result.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
+            style={{ animationDelay: '0.4s' }}
+          >
+            {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+            <span className="min-w-0 flex-1 truncate">
+              {result.player_id === playerId ? 'Você' : player?.nickname} mandou bem no próprio tema!
+            </span>
+            <span className="font-display text-lg">{formatDelta(result.specialist_bonus ?? 0)}</span>
+          </p>
+        )
+      })}
       {bets.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Apostas">
           {bets.map((result, index) => {

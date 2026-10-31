@@ -49,7 +49,7 @@ function setUrl(path: string) {
 }
 
 export default function App() {
-  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, updateSettings, setTeam, chooseRepresentative } = useRoom()
+  const { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, updateSettings, setTeam, chooseRepresentative } = useRoom()
   const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
 
@@ -96,7 +96,7 @@ export default function App() {
   } else if (snapshot && room?.survival) {
     content = <Survival snapshot={snapshot} playerId={playerId} onAnswer={answer} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (snapshot && room?.game) {
-    content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onDuelBet={duelBet} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onPlayAgain={playAgain} onLeave={leaveRoom} />
+    content = <Game snapshot={snapshot} playerId={playerId} onAnswer={answer} onBet={bet} onDuelBet={duelBet} onArm={armPowerUp} onUse={usePowerUp} onSkip={skipResults} onChooseTheme={chooseTheme} onPlayAgain={playAgain} onLeave={leaveRoom} />
   } else if (room) {
     content = <Lobby room={room} playerId={playerId} onLeave={leaveRoom} onStart={start} onUpdateSettings={updateSettings} onSetTeam={setTeam} />
   } else if (rejoining) {

@@ -231,7 +231,7 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "tolled": 0, "toll_received": 0, "decoy": None, "tricked": 0, "doubled": False, "first_option": None, "expired": [], "gained": None, "bet_gained": None}  # partida de 10: vale o dobro
+    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "tolled": 0, "toll_received": 0, "decoy": None, "tricked": 0, "doubled": False, "first_option": None, "expired": [], "gained": None, "bet_gained": None, "specialist_bonus": 0}  # partida de 10: vale o dobro
 
 
 async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connect, monkeypatch):
@@ -450,3 +450,20 @@ async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatc
         assert (await by_id[pid].call("submit_answer", {"option": answer}))["ok"]
     state = await host.wait_for(lambda s: tm(s).get("phase") == "results")
     assert all(t["correct"] and t["captain_delta"] == 3 for t in tm(state)["teams"])
+
+
+async def test_specialist_picker_chooses_the_block_theme(connect):
+    ana, bia, created, joined = await setup_room(connect)
+    assert (await ana.call("update_settings", {"mode": "specialist", "rounds": 10}))["ok"]
+    await ana.call("start_game")
+    pick = await bia.wait_for(lambda s: s["game"] and s["game"]["phase"] == "theme_pick")
+    game_view = pick["game"]
+    assert game_view["specialist"] and len(game_view["theme_options"]) == 4
+    picker, other = (ana, bia) if game_view["theme_picker"] == created["player_id"] else (bia, ana)
+    theme = game_view["theme_options"][2]
+    assert not (await other.call("choose_theme", {"theme": theme}))["ok"]
+    assert (await picker.call("choose_theme", {"theme": theme}))["ok"]
+    started = await ana.wait_for(lambda s: s["game"]["phase"] == "starting", timeout=3)
+    assert started["game"]["block_theme"] == theme
+    reading = await ana.wait_for(lambda s: s["game"]["phase"] == "reading", timeout=8)
+    assert reading["game"]["question"]["theme"] == theme

@@ -38,6 +38,7 @@ export interface ArmPowerUpRequest {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -172,7 +173,7 @@ export interface ErrorAck {
  * answering → results. Telas de preparação, em que a pergunta não é enviada: starting
  * (antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o
  * tema à mostra) e intro (antes da final).
- * Depois da última rodada: finished.
+ * Depois da última rodada: finished. No Especialista, cada bloco começa com theme_pick.
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "GameView".
@@ -185,6 +186,7 @@ export interface GameView {
     | "level"
     | "intro"
     | "betting"
+    | "theme_pick"
     | "reading"
     | "answering"
     | "results"
@@ -227,6 +229,7 @@ export interface GameView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -269,6 +272,7 @@ export interface GameView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -311,6 +315,7 @@ export interface GameView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -358,6 +363,7 @@ export interface GameView {
         | "flashbang"
         | "resurrection"
         | "duel"
+        | "coup"
         | "cold_water"
         | "free_pass"
         | "short_fuse"
@@ -390,6 +396,10 @@ export interface GameView {
   tolls: number[] | null;
   flashbang: boolean;
   theme_choices: string[];
+  specialist?: boolean;
+  theme_picker?: string | null;
+  theme_options?: string[];
+  block_theme?: string | null;
   powers_round: boolean;
   ready: string[];
   correct_option: number | null;
@@ -445,6 +455,7 @@ export interface PowerUpUse {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -499,6 +510,7 @@ export interface LastingPowerUp {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -565,6 +577,7 @@ export interface RoundResult {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -586,6 +599,7 @@ export interface RoundResult {
   )[];
   gained: PowerUpGain | null;
   bet_gained?: PowerUpGain | null;
+  specialist_bonus?: number;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -615,6 +629,7 @@ export interface PowerUpGain {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -716,6 +731,7 @@ export interface HotPotatoView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -758,6 +774,7 @@ export interface HotPotatoView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -802,6 +819,7 @@ export interface HotPotatoView {
         | "flashbang"
         | "resurrection"
         | "duel"
+        | "coup"
         | "cold_water"
         | "free_pass"
         | "short_fuse"
@@ -920,8 +938,8 @@ export interface RoomState {
  * via the `definition` "RoomSettings".
  */
 export interface RoomSettings {
-  mode: "classic" | "teams" | "last_standing" | "hot_potato";
-  mode_options: ("classic" | "teams" | "last_standing" | "hot_potato")[];
+  mode: "classic" | "specialist" | "teams" | "last_standing" | "hot_potato";
+  mode_options: ("classic" | "specialist" | "teams" | "last_standing" | "hot_potato")[];
   survival_kind: "true_false" | "choices";
   survival_kind_options: ("true_false" | "choices")[];
   powers: boolean;
@@ -1039,6 +1057,7 @@ export interface SurvivalView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1081,6 +1100,7 @@ export interface SurvivalView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1123,6 +1143,7 @@ export interface SurvivalView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1167,6 +1188,7 @@ export interface SurvivalView {
         | "flashbang"
         | "resurrection"
         | "duel"
+        | "coup"
         | "cold_water"
         | "free_pass"
         | "short_fuse"
@@ -1322,6 +1344,7 @@ export interface TeamMatchView {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1393,6 +1416,7 @@ export interface TeamSide {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1435,6 +1459,7 @@ export interface TeamSide {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1512,6 +1537,7 @@ export interface TeamPowerUse {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"
@@ -1614,7 +1640,7 @@ export interface SubmitDuelBetRequest {
  * via the `definition` "UpdateSettingsRequest".
  */
 export interface UpdateSettingsRequest {
-  mode?: ("classic" | "teams" | "last_standing" | "hot_potato") | null;
+  mode?: ("classic" | "specialist" | "teams" | "last_standing" | "hot_potato") | null;
   survival_kind?: ("true_false" | "choices") | null;
   powers?: boolean | null;
   team_count?: number | null;
@@ -1655,6 +1681,7 @@ export interface UsePowerUpRequest {
     | "flashbang"
     | "resurrection"
     | "duel"
+    | "coup"
     | "cold_water"
     | "free_pass"
     | "short_fuse"

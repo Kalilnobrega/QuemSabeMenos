@@ -131,6 +131,18 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'coup') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        {/* A coroa do dono do tema, derrubada e puxada para o lado. */}
+        <path d="M4 16.5 3 7.5l4.5 3.5L11 5l3.5 6L19 7.5l-1 9Z" fill="#FBBF24" {...ICON_STROKE} transform="rotate(-16 11 12)" />
+        <path d="M4.6 19.4h12.6" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" transform="rotate(-16 11 12)" />
+        <path d="M4.6 19.4h12.6" stroke="#F59E0B" strokeWidth="1.6" strokeLinecap="round" transform="rotate(-16 11 12)" />
+        <path d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4" fill="none" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4" fill="none" stroke="#FB923C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    )
+  }
   if (kind === 'theme') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -595,6 +607,7 @@ export function ActivePowerUps({
     }
     if (use.reflected_by) return `Você rebateu o Roubo de ${target} com o Reverso!`
     if (use.kind === 'theme') return by === 'você' ? `Você escolheu o tema: ${use.theme}!` : `${cap(by)} escolheu o tema: ${use.theme}!`
+    if (use.kind === 'coup') return `Golpe! ${cap(by)} tomou ${use.theme} de ${target}: os +25% agora são ${by === 'você' ? 'seus' : `de ${by}`}!`
     if (!info.targeted) {
       const self: Partial<Record<Kind, string>> = {
         fifty_fifty: '50/50: duas erradas saíram.',

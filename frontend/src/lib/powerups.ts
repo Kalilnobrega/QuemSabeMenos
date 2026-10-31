@@ -19,6 +19,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
   second_chance: { name: 'Segunda chance', hint: 'Vale nas próximas 2 perguntas: errou, tenta de novo valendo metade.', targeted: false, tone: 'bg-pink-400/15 text-pink-200' },
   reverse: { name: 'Reverso', hint: 'Secreto, vale por até 3 perguntas (2 se você estiver em 1º): o primeiro poder jogado em você volta para quem jogou.', targeted: false, tone: 'bg-red-500/15 text-red-200' },
   backpack: { name: 'Mochila', hint: 'Vale na hora: +1 vaga de habilidade e +1 habilidade sorteada (até +2 vagas na partida).', targeted: false, tone: 'bg-amber-700/25 text-amber-200' },
+  coup: { name: 'Golpe', hint: 'Só no Especialista: você toma o tema de quem escolheu. Do resto do bloco em diante, os +25% nos acertos são seus, e ele perde o bônus. Um Golpe por bloco.', targeted: false, tone: 'bg-orange-400/15 text-orange-200' },
   theme: { name: 'Tema', hint: 'Você escolhe o tema da próxima pergunta, entre 4 sorteados. Vale para todo mundo.', targeted: false, tone: 'bg-indigo-400/15 text-indigo-200' },
   investment: { name: 'Investimento', hint: 'Cada acerto seguido rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro erro. Só a partir das médias.', targeted: false, tone: 'bg-green-500/15 text-green-200' },
   scratch: { name: 'Raspadinha', hint: 'A próxima pergunta do alvo vem coberta: tem que raspar para ver.', targeted: true, tone: 'bg-zinc-300/15 text-zinc-200' },

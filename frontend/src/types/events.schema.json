@@ -27,6 +27,7 @@
             "flashbang",
             "resurrection",
             "duel",
+            "coup",
             "cold_water",
             "free_pass",
             "short_fuse",
@@ -414,7 +415,7 @@
       "type": "object"
     },
     "GameView": {
-      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Telas de preparação, em que a pergunta não é enviada: starting\n(antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o\ntema à mostra) e intro (antes da final).\nDepois da última rodada: finished.",
+      "description": "Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →\nanswering → results. Telas de preparação, em que a pergunta não é enviada: starting\n(antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o\ntema à mostra) e intro (antes da final).\nDepois da última rodada: finished. No Especialista, cada bloco começa com theme_pick.",
       "properties": {
         "round": {
           "type": "integer"
@@ -428,6 +429,7 @@
             "level",
             "intro",
             "betting",
+            "theme_pick",
             "reading",
             "answering",
             "results",
@@ -526,6 +528,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -574,6 +577,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -622,6 +626,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -696,6 +701,7 @@
                 "flashbang",
                 "resurrection",
                 "duel",
+                "coup",
                 "cold_water",
                 "free_pass",
                 "short_fuse",
@@ -803,6 +809,39 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "specialist": {
+          "default": false,
+          "type": "boolean"
+        },
+        "theme_picker": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "theme_options": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "block_theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         },
         "powers_round": {
           "type": "boolean"
@@ -1089,6 +1128,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -1137,6 +1177,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -1189,6 +1230,7 @@
                 "flashbang",
                 "resurrection",
                 "duel",
+                "coup",
                 "cold_water",
                 "free_pass",
                 "short_fuse",
@@ -1354,6 +1396,7 @@
             "flashbang",
             "resurrection",
             "duel",
+            "coup",
             "cold_water",
             "free_pass",
             "short_fuse",
@@ -1682,6 +1725,7 @@
             "flashbang",
             "resurrection",
             "duel",
+            "coup",
             "cold_water",
             "free_pass",
             "short_fuse",
@@ -1756,6 +1800,7 @@
             "flashbang",
             "resurrection",
             "duel",
+            "coup",
             "cold_water",
             "free_pass",
             "short_fuse",
@@ -1900,6 +1945,7 @@
         "mode": {
           "enum": [
             "classic",
+            "specialist",
             "teams",
             "last_standing",
             "hot_potato"
@@ -1910,6 +1956,7 @@
           "items": {
             "enum": [
               "classic",
+              "specialist",
               "teams",
               "last_standing",
               "hot_potato"
@@ -2248,6 +2295,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -2291,6 +2339,10 @@
             }
           ],
           "default": null
+        },
+        "specialist_bonus": {
+          "default": 0,
+          "type": "integer"
         }
       },
       "required": [
@@ -2677,6 +2729,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -2725,6 +2778,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -2773,6 +2827,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -2825,6 +2880,7 @@
                 "flashbang",
                 "resurrection",
                 "duel",
+                "coup",
                 "cold_water",
                 "free_pass",
                 "short_fuse",
@@ -3273,6 +3329,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -3435,6 +3492,7 @@
             "flashbang",
             "resurrection",
             "duel",
+            "coup",
             "cold_water",
             "free_pass",
             "short_fuse",
@@ -3624,6 +3682,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -3672,6 +3731,7 @@
               "flashbang",
               "resurrection",
               "duel",
+              "coup",
               "cold_water",
               "free_pass",
               "short_fuse",
@@ -3857,6 +3917,7 @@
             {
               "enum": [
                 "classic",
+                "specialist",
                 "teams",
                 "last_standing",
                 "hot_potato"
@@ -4010,6 +4071,7 @@
             "flashbang",
             "resurrection",
             "duel",
+            "coup",
             "cold_water",
             "free_pass",
             "short_fuse",

@@ -20,12 +20,13 @@ PowerUp = Literal[
     "backpack", "theme", "investment",
     "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
     "resurrection", "duel",
+    "coup",  # só no Especialista
     "cold_water", "free_pass", "short_fuse", "double_bomb", "ghost_hint", "thermometer", "double_potato",  # só na Batata quente
     "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
     "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
 ]
-GameMode = Literal["classic", "teams", "last_standing", "hot_potato"]
-MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "teams", "last_standing", "hot_potato")
+GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato"]
+MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato")
 TeamPick = Literal["random", "host"]  # Times: sorteados no começo ou montados pelo anfitrião
 TEAM_PICK_OPTIONS: tuple[TeamPick, ...] = ("random", "host")
 TEAM_COUNT_OPTIONS = (2, 3, 4)
@@ -111,6 +112,12 @@ class ArmPowerUpRequest(BaseModel):
     target_team: int | None = None  # Times: o time alvo
 
 
+class ChooseThemeRequest(BaseModel):
+    """Especialista: quem foi sorteado escolhe o tema do bloco entre `theme_options`."""
+
+    theme: str
+
+
 class SubmitDuelBetRequest(BaseModel):
     """X1: o id do duelista em quem a plateia aposta."""
 
@@ -184,7 +191,7 @@ class PowerUpUse(BaseModel):
     target: str | None  # id do alvo; None nas que valem para quem usou
     reflected_by: str | None  # quem devolveu com o Reverso (o alvo original)
     legendary: bool = False  # ataque lendário: pega todos menos quem jogou (target None)
-    theme: str | None = None  # Tema: o tema escolhido para a pergunta
+    theme: str | None = None  # Tema: o tema escolhido para a pergunta; Golpe: o tema tomado
 
 
 class LastingPowerUp(BaseModel):
@@ -232,6 +239,7 @@ class RoundResult(BaseModel):
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
     gained: PowerUpGain | None
     bet_gained: PowerUpGain | None = None  # prêmio da aposta certeira (25% do QI ou mais)
+    specialist_bonus: int = 0  # Especialista: +25% do acerto para quem escolheu o tema do bloco
 
 
 class DuelPick(BaseModel):
@@ -278,12 +286,13 @@ class GameView(BaseModel):
     answering → results. Telas de preparação, em que a pergunta não é enviada: starting
     (antes da 1ª pergunta), level (quando a dificuldade muda), betting (aposta, só com o
     tema à mostra) e intro (antes da final).
-    Depois da última rodada: finished."""
+    Depois da última rodada: finished. No Especialista, cada bloco começa com theme_pick.
+    """
 
     round: int  # começa em 1
     total_rounds: int
     phase: Literal[
-        "starting", "level", "intro", "betting", "reading", "answering", "results", "finished",
+        "starting", "level", "intro", "betting", "theme_pick", "reading", "answering", "results", "finished",
         "duel_betting", "duel_answering", "duel_results", "duel_end",
     ]
     phase_duration_ms: int
@@ -317,6 +326,11 @@ class GameView(BaseModel):
     tolls: list[int] | None  # Pedágio em você: quanto custa responder cada alternativa
     flashbang: bool  # Flashbang em você: alguns segundos depois de liberar as respostas, só as letras aparecem
     theme_choices: list[str]  # Tema: os temas que dá para escolher para a próxima pergunta
+    # Especialista: quem escolhe (ou escolheu) o tema do bloco, as opções e o tema escolhido.
+    specialist: bool = False
+    theme_picker: str | None = None
+    theme_options: list[str] = []
+    block_theme: str | None = None
     powers_round: bool  # as habilidades valem nesta pergunta (nem a aposta nem a final)
     ready: list[str]
     correct_option: int | None  # só aparece em results
