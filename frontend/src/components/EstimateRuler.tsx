@@ -27,9 +27,12 @@ export function EstimateRuler({ estimate, players, playerId }: { estimate: Estim
   const reference = estimate.reference ?? (Math.abs(answer) || 1)
   const { break_even_percent: breakEven, max_loss_percent: maxLossAt } = estimate.scoring
   const placed = estimate.guesses.filter((g) => g.value !== null)
-  // A régua vai até onde a perda chega ao máximo, ou até o chute mais longe se for antes.
+  // A régua mostra sempre um bom trecho além da faixa verde (quase o dobro dela), para dar para ver
+  // onde começa a perder mesmo com todo mundo perto; cresce até o chute mais longe, no máximo até
+  // onde a perda chega ao máximo.
+  const gainReach = (reference * breakEven) / 100
   const farthest = Math.max(0, ...placed.map((g) => Math.abs(g.value! - answer)))
-  const half = Math.min(Math.max(farthest, (reference * breakEven) / 100), (reference * maxLossAt) / 100)
+  const half = Math.min(Math.max(farthest * 1.1, gainReach * 1.8), (reference * maxLossAt) / 100)
   const pos = (value: number) => 50 + (Math.max(-half, Math.min(half, value - answer)) / half) * 44
   const { major, minor } = ticks(answer - half, answer + half)
   const minorCount = Math.max(1, Math.round((2 * half) / minor))
