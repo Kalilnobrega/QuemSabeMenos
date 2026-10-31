@@ -1043,6 +1043,7 @@ export interface PlayerView {
   score: number;
   answer_ms: number;
   streak: number;
+  avatar_variant?: number;
 }
 /**
  * Último de pé. Fases: starting → (reading → answering → results) por pergunta, com level

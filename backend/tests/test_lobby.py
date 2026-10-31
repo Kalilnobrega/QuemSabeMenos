@@ -489,3 +489,17 @@ async def test_estimate_match_from_guess_to_podium(connect, monkeypatch):
     await ana.wait_for(lambda s: s["estimate"]["round"] == 2, timeout=2)  # todos pularam
     await ana.call("leave_room")
     await bia.call("leave_room")
+
+
+async def test_players_change_avatar_in_the_lobby_and_repeats_get_a_variant(connect):
+    ana, bia, created, joined = await setup_room(connect)  # Ana é gato, Bia é sapo
+    assert not (await bia.call("update_avatar", {"avatar": "dragão"}))["ok"]
+    assert (await bia.call("update_avatar", {"avatar": "gato"}))["ok"]
+    state = await ana.wait_for(lambda s: all(p["avatar"] == "gato" for p in s["players"]))
+    variants = {p["nickname"]: p["avatar_variant"] for p in state["players"]}
+    assert variants == {"Ana": 0, "Bia": 1}  # quem chegou primeiro fica com a cor de sempre
+    assert (await ana.call("update_avatar", {"avatar": "urso"}))["ok"]
+    state = await bia.wait_for(lambda s: any(p["avatar"] == "urso" for p in s["players"]))
+    assert all(p["avatar_variant"] == 0 for p in state["players"])  # sem repetido, sem variante
+    await ana.call("start_game")
+    assert not (await bia.call("update_avatar", {"avatar": "sapo"}))["ok"]  # só no lobby

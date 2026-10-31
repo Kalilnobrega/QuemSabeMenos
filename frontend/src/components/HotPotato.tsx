@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { POTATO_HINTS, POWERUP_INFO, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
@@ -92,7 +92,7 @@ function PotatoStart({ snapshot }: { snapshot: Snapshot }) {
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {room.players.map((player, index) => (
           <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-12" />
+            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
           </li>
         ))}
       </ul>
@@ -188,7 +188,7 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
           Fora:
           {out.map((p) => {
             const player = room.players.find((x) => x.id === p.player_id)
-            return player ? <img key={p.player_id} src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-7 opacity-40 grayscale" /> : null
+            return player ? <img key={p.player_id} src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-7 opacity-40 grayscale" /> : null
           })}
         </div>
       )}
@@ -391,7 +391,7 @@ export function DoublePotatoScene({ potato, players, playerId }: { potato: Potat
       <div className="dp-target">
         <div className="dp-target-bounce">
           <span className="dp-burst" aria-hidden="true" />
-          {holder && <img src={AVATAR_URLS[holder.avatar]} alt="" className="dp-avatar size-24" />}
+          {holder && <img src={avatarUrl(holder)} alt="" className="dp-avatar size-24" />}
           <span className="font-display text-xl text-chalk">{holder?.id === playerId ? 'Você' : holder?.nickname}</span>
         </div>
       </div>
@@ -619,7 +619,7 @@ function Ring({ snapshot, alive, playerId }: { snapshot: Snapshot; alive: string
         return (
           <div key={p.id} className="absolute flex w-16 -translate-x-1/2 -translate-y-1/2 flex-col items-center" style={{ left: `${left}%`, top: `${top}%` }}>
             <span className="relative">
-              <img src={AVATAR_URLS[p.avatar]} alt="" className={`size-12 ${holding ? 'drop-shadow-[0_0_10px_rgba(255,120,0,0.9)]' : ''}`} />
+              <img src={avatarUrl(p)} alt="" className={`size-12 ${holding ? 'drop-shadow-[0_0_10px_rgba(255,120,0,0.9)]' : ''}`} />
               {game.shielded.includes(p.id) && <PowerUpIcon kind="shield" className="absolute -right-1 -bottom-1 size-5" />}
             </span>
             <span className={`w-full truncate text-center text-xs font-semibold ${holding ? 'text-brand' : ''}`}>{p.id === playerId ? 'Você' : p.nickname}</span>
@@ -681,7 +681,7 @@ function PotatoPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: 
           return (
             <li key={p.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${p.player_id === playerId ? 'outline-2 outline-brand' : ''}`}>
               <span className="w-8 text-center font-display text-2xl text-steel">{p.place}º</span>
-              <img src={AVATAR_URLS[player.avatar]} alt="" className="size-10" />
+              <img src={avatarUrl(player)} alt="" className="size-10" />
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="truncate font-semibold">{player.nickname}</span>
                 <span className="text-xs text-steel">

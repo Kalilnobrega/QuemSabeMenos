@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
@@ -117,7 +117,7 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {room.players.map((player, index) => (
           <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-12" />
+            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
           </li>
         ))}
       </ul>
@@ -174,7 +174,7 @@ function DuelIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
         {fighters.map((p, i) =>
           p ? (
             <div key={p.id} className={`flex flex-col items-center gap-1 ${i === 0 ? 'duel-in-left' : 'duel-in-right'}`}>
-              <img src={AVATAR_URLS[p.avatar]} alt="" className="size-20" />
+              <img src={avatarUrl(p)} alt="" className="size-20" />
               <span className="max-w-32 truncate font-display text-2xl tracking-wide text-chalk">{p.id === playerId ? 'Você' : p.nickname}</span>
             </div>
           ) : null,
@@ -392,7 +392,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
                     <span className="absolute -top-2 -right-1.5 flex -space-x-2">
                       {picksOn(index)
                         .slice(0, 5)
-                        .map((p) => p && <img key={p.id} src={AVATAR_URLS[p.avatar]} alt={p.nickname} className="size-6" />)}
+                        .map((p) => p && <img key={p.id} src={avatarUrl(p)} alt={p.nickname} className="size-6" />)}
                     </span>
                   )}
                 </button>
@@ -532,7 +532,7 @@ function SurvivalPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot
           return (
             <li key={s.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${s.player_id === playerId ? 'outline-2 outline-brand' : ''}`}>
               <span className="w-8 text-center font-display text-2xl text-steel">{s.place}º</span>
-              <img src={AVATAR_URLS[p.avatar]} alt="" className="size-10" />
+              <img src={avatarUrl(p)} alt="" className="size-10" />
               <span className="flex min-w-0 flex-1 flex-col">
                 <span className="truncate font-semibold">{p.nickname}</span>
                 <span className="text-xs text-steel">
@@ -562,7 +562,7 @@ export function Spotlight({ title, icon, player, line, tone, winner = false }: {
       {winner && <Confetti />}
       <span className={`font-display text-lg tracking-wide ${tone}`}>{title}</span>
       <div className="relative">
-        <img src={AVATAR_URLS[player.avatar]} alt="" className="size-20" />
+        <img src={avatarUrl(player)} alt="" className="size-20" />
         <img src={icon} alt="" className={`absolute -top-4 -right-6 size-11 ${winner ? 'icon-bounce' : 'icon-wobble'}`} />
       </div>
       <span className="w-full truncate text-lg font-bold">{player.nickname}</span>

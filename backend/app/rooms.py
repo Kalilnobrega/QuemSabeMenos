@@ -175,8 +175,9 @@ class Room:
 
 
     def _player_view(self, player: Player, viewer: str | None) -> PlayerView:
-        """Silenciado não vê o placar, nem o próprio."""
-        view = player.view()
+        """Silenciado não vê o placar, nem o próprio. Bicho repetido ganha uma variante pela ordem de chegada."""
+        earlier = self.players[: self.players.index(player)]
+        view = player.view().model_copy(update={"avatar_variant": sum(1 for p in earlier if p.avatar == player.avatar)})
         if self.game and viewer and self.game.is_silenced(viewer):
             return view.model_copy(update={"score": 0, "streak": 0, "answer_ms": 0})
         return view
@@ -339,6 +340,17 @@ class RoomManager:
             room.speed_grace_seconds = speed_grace_seconds
         if themes is not None:
             room.themes = [t for t in self.theme_options if t in themes]
+        return room
+
+    def update_avatar(self, sid: str, avatar: Avatar) -> Room:
+        """Trocar de bicho no lobby (bicho repetido pode: ele ganha outra cor)."""
+        found = self.session(sid)
+        if not found:
+            raise RoomError("Você não está em nenhuma sala.")
+        room, player = found
+        if room.status != "lobby":
+            raise RoomError("A partida já começou.")
+        player.avatar = avatar
         return room
 
     def set_team(self, sid: str, player_id: str, team: int) -> Room:

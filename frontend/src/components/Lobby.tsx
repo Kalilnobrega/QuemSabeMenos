@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { InfoButton, ModeGuide } from './ModeGuide'
-import { AVATAR_URLS } from '../lib/avatars'
+import { AVATAR_NAMES, AVATARS, avatarUrl, type Avatar } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
@@ -41,14 +41,17 @@ interface Props {
   onStart: () => Promise<string | null>
   onUpdateSettings: (patch: UpdateSettingsRequest) => Promise<string | null>
   onSetTeam: (playerId: string, team: number) => Promise<string | null>
+  onUpdateAvatar: (avatar: Avatar) => Promise<string | null>
 }
 
 function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
 
-export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSetTeam }: Props) {
+export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSetTeam, onUpdateAvatar }: Props) {
   const [notice, setNotice] = useState<string | null>(null)
+  const [avatarOpen, setAvatarOpen] = useState(false)
+  const me = room.players.find((p) => p.id === playerId)
   const [starting, setStarting] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [guideOpen, setGuideOpen] = useState(false)
@@ -147,7 +150,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
           </span>
         </h2>
         {teamsMode && room.settings.team_pick === 'host' ? (
-          <TeamBuilder room={room} playerId={playerId} isHost={isHost} onSetTeam={onSetTeam} onNotice={setNotice} />
+          <TeamBuilder room={room} playerId={playerId} isHost={isHost} onSetTeam={onSetTeam} onNotice={setNotice} onEditAvatar={() => setAvatarOpen(true)} />
         ) : (
         <ul className="flex flex-col gap-2">
           {room.players.map((player) => (
@@ -155,7 +158,11 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
               key={player.id}
               className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${player.connected ? '' : 'opacity-50'}`}
             >
-              <img src={AVATAR_URLS[player.avatar]} alt="" className="size-12" />
+              {player.id === playerId ? (
+                <MyAvatar player={player} className="size-12" onClick={() => setAvatarOpen(true)} />
+              ) : (
+                <img src={avatarUrl(player)} alt="" className="size-12" />
+              )}
               <span className="flex-1 truncate text-lg font-semibold">
                 {player.nickname}
                 {player.id === playerId && <span className="ml-2 text-sm font-normal text-steel">(você)</span>}
@@ -238,6 +245,9 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
       {isHost && settingsOpen && (
         <SettingsSheet room={room} onUpdate={onUpdateSettings} onClose={() => setSettingsOpen(false)} />
       )}
+      {avatarOpen && me && (
+        <AvatarSheet room={room} me={me} onPick={onUpdateAvatar} onClose={() => setAvatarOpen(false)} />
+      )}
     </section>
   )
 }
@@ -260,6 +270,106 @@ interface SettingsSheetProps {
 }
 
 /** Painel do anfitrião com as configurações da partida; cada toque já vale para a sala toda. */
+/** O seu avatar no lobby, com o lápis: tocou, abre a troca de bicho. É um span porque a linha dos
+ * times já é um botão (mover de time). */
+function MyAvatar({ player, className, onClick }: { player: PlayerView; className: string; onClick: () => void }) {
+  return (
+    <span
+      role="button"
+      tabIndex={0}
+      aria-label="Trocar meu bicho"
+      title="Trocar meu bicho"
+      onClick={(e) => {
+        e.stopPropagation()
+        onClick()
+      }}
+      onKeyDown={(e) => {
+        if (e.key !== 'Enter' && e.key !== ' ') return
+        e.preventDefault()
+        e.stopPropagation()
+        onClick()
+      }}
+      className="relative inline-flex shrink-0 cursor-pointer rounded-full transition hover:scale-105"
+    >
+      <img src={avatarUrl(player)} alt="" className={className} />
+      <span className="absolute -right-1 -bottom-1 flex size-5 items-center justify-center rounded-full border-2 border-ink bg-brand">
+        <svg viewBox="0 0 16 16" className="size-3" aria-hidden="true">
+          <path d="M10.5 2.5 13.5 5.5 6 13H3v-3Z" fill="#12141B" />
+          <path d="m9.2 3.8 3 3" stroke="#FFC107" strokeWidth="1.2" />
+        </svg>
+      </span>
+    </span>
+  )
+}
+
+/** Trocar de bicho no lobby. Bicho que alguém já usa pode: você fica com uma cor de fundo diferente. */
+function AvatarSheet({ room, me, onPick, onClose }: { room: RoomState; me: PlayerView; onPick: Props['onUpdateAvatar']; onClose: () => void }) {
+  const [notice, setNotice] = useState<string | null>(null)
+  const earlier = room.players.slice(0, room.players.findIndex((p) => p.id === me.id))
+  const others = room.players.filter((p) => p.id !== me.id)
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+
+  const pick = async (avatar: Avatar) => {
+    playSound('select')
+    const error = await onPick(avatar)
+    if (error) setNotice(error)
+    else onClose()
+  }
+
+  return (
+    <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/70 sm:items-center" onClick={onClose}>
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="avatar-title"
+        onClick={(e) => e.stopPropagation()}
+        className="settings-sheet flex max-h-[90dvh] w-full max-w-md flex-col gap-4 overflow-y-auto rounded-t-3xl border border-white/10 bg-ink p-5 pb-8 sm:rounded-3xl"
+      >
+        <h2 id="avatar-title" className="text-center font-display text-3xl tracking-wide text-brand">
+          Escolha seu bicho
+        </h2>
+        <p className="text-center text-sm text-steel">Pode repetir o de alguém: o seu ganha outra cor de fundo.</p>
+        <div className="grid grid-cols-4 gap-3">
+          {AVATARS.map((avatar) => {
+            const selected = me.avatar === avatar
+            // A cor que você teria com esse bicho: conta quem chegou antes e já usa ele.
+            const preview = selected ? me : { avatar, avatar_variant: earlier.filter((p) => p.avatar === avatar).length }
+            const users = others.filter((p) => p.avatar === avatar)
+            return (
+              <button
+                key={avatar}
+                onClick={() => (selected ? onClose() : void pick(avatar))}
+                aria-label={AVATAR_NAMES[avatar]}
+                aria-pressed={selected}
+                className={`relative rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-80 hover:opacity-100'}`}
+              >
+                <img src={avatarUrl(preview)} alt="" className="w-full" />
+                {users.length > 0 && (
+                  <span
+                    className="absolute -right-1 -bottom-1 flex items-center rounded-full border-2 border-ink bg-panel px-1.5 text-xs font-bold text-chalk"
+                    title={`Em uso: ${users.map((p) => p.nickname).join(', ')}`}
+                  >
+                    {users.length === 1 ? users[0].nickname.slice(0, 6) : `${users.length}×`}
+                  </span>
+                )}
+              </button>
+            )
+          })}
+        </div>
+        {notice && <p className="text-center text-sm text-red-300">{notice}</p>}
+        <button onClick={onClose} className="btn-3d btn-dark rounded-xl py-3 font-semibold text-steel">
+          Fechar
+        </button>
+      </div>
+    </div>
+  )
+}
+
 function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
   const [notice, setNotice] = useState<string | null>(null)
   const [guide, setGuide] = useState<RoomSettings['mode'] | null>(null)
@@ -481,12 +591,14 @@ function TeamBuilder({
   isHost,
   onSetTeam,
   onNotice,
+  onEditAvatar,
 }: {
   room: RoomState
   playerId: string | null
   isHost: boolean
   onSetTeam: Props['onSetTeam']
   onNotice: (notice: string | null) => void
+  onEditAvatar: () => void
 }) {
   const { team_count: count, teams } = room.settings
   const move = async (player: PlayerView) => {
@@ -511,7 +623,11 @@ function TeamBuilder({
                 disabled={!isHost}
                 className={`flex items-center gap-3 rounded-lg bg-panel px-3 py-1.5 text-left ${isHost ? 'btn-3d btn-sm btn-dark' : ''} ${player.connected ? '' : 'opacity-50'}`}
               >
-                <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
+                {player.id === playerId ? (
+                  <MyAvatar player={player} className="size-9" onClick={onEditAvatar} />
+                ) : (
+                  <img src={avatarUrl(player)} alt="" className="size-9" />
+                )}
                 <span className="flex-1 truncate font-semibold">
                   {player.nickname}
                   {player.id === playerId && <span className="ml-2 text-sm font-normal text-steel">(você)</span>}

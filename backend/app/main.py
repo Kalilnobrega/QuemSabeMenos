@@ -21,6 +21,7 @@ from app.events import (
     RejoinRoomRequest,
     ArmPowerUpRequest,
     SetTeamRequest,
+    UpdateAvatarRequest,
     ChooseRepresentativeRequest,
     ChooseThemeRequest,
     SubmitGuessRequest,
@@ -441,6 +442,19 @@ async def update_settings(sid: str, data: dict) -> dict:
             sid, request.rounds, request.themes, request.answer_seconds, request.speed_grace_seconds, request.mode, request.powerup_max,
             request.survival_kind, request.powers, request.team_count, request.team_pick,
         )
+    except ValidationError:
+        return error("Dados inválidos.")
+    except RoomError as e:
+        return error(str(e))
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
+async def update_avatar(sid: str, data: dict) -> dict:
+    try:
+        request = UpdateAvatarRequest.model_validate(data)
+        room = rooms.update_avatar(sid, request.avatar)
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:

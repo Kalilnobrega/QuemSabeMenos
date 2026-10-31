@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
 import type { PlayerView } from '../types/events'
 
@@ -51,7 +51,7 @@ export function ResurrectionScene({ revived, players, playerId }: { revived: Rev
         <span className="res-halo" aria-hidden="true" />
         <div className="relative flex items-center">
           <Wing className="res-wing res-wing-left" />
-          {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="res-avatar relative size-28" />}
+          {player && <img src={avatarUrl(player)} alt="" className="res-avatar relative size-28" />}
           <Wing className="res-wing res-wing-right" flip />
         </div>
       </div>

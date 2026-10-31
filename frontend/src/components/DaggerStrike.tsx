@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { PlayerView, Stab } from '../types/events'
@@ -39,7 +39,7 @@ export function DaggerStrike({ stab, players, playerId, onDone }: { stab: Stab; 
       <div className="relative flex w-full max-w-sm items-end justify-between px-6">
         <div className="flex flex-col items-center gap-1">
           <div className="relative">
-            {by && <img src={AVATAR_URLS[by.avatar]} alt="" className="size-20" />}
+            {by && <img src={avatarUrl(by)} alt="" className="size-20" />}
             {stab.eliminated && <span className="dagger-halo" aria-hidden="true" />}
           </div>
           <span className="max-w-28 truncate font-display text-xl text-chalk">{name(by)}</span>
@@ -48,7 +48,7 @@ export function DaggerStrike({ stab, players, playerId, onDone }: { stab: Stab; 
 
         <div className="flex flex-col items-center gap-1">
           <div className={`relative ${stab.eliminated ? 'dagger-fall' : ''}`}>
-            {target && <img src={AVATAR_URLS[target.avatar]} alt="" className="dagger-shake size-24" />}
+            {target && <img src={avatarUrl(target)} alt="" className="dagger-shake size-24" />}
             <span className="dagger-blood" aria-hidden="true">
               {Array.from({ length: 7 }, (_, i) => (
                 <i key={i} style={{ ['--a' as string]: `${i * 51}deg` }} />

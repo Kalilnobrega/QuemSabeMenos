@@ -1,4 +1,4 @@
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { formatEstimate } from '../lib/format'
 import type { EstimateView, PlayerView } from '../types/events'
 
@@ -98,7 +98,7 @@ export function EstimateRuler({ estimate, players, playerId }: { estimate: Estim
             </span>
             {player && (
               <img
-                src={AVATAR_URLS[player.avatar]}
+                src={avatarUrl(player)}
                 alt=""
                 className={`mt-1 size-8 ${guess.player_id === playerId ? 'rounded-full ring-2 ring-brand' : ''}`}
               />

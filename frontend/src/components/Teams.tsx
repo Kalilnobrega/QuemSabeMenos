@@ -1,7 +1,7 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { POWERUP_INFO, TEAM_HINTS, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
@@ -84,7 +84,7 @@ function Avatars({ ids, players, size = 'size-9' }: { ids: string[]; players: Pl
     <span className="flex flex-wrap justify-center gap-1">
       {ids.map((id) => {
         const player = playerOf(players, id)
-        return player ? <img key={id} src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className={size} /> : null
+        return player ? <img key={id} src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className={size} /> : null
       })}
     </span>
   )
@@ -190,7 +190,7 @@ function Choosing({ snapshot, playerId, onChoose }: { snapshot: Snapshot; player
                 }}
                 className={`btn-3d btn-sm flex items-center gap-3 rounded-xl px-3 py-2 text-left ${picked ? 'btn-brand is-pressed text-ink' : 'btn-dark'}`}
               >
-                <img src={AVATAR_URLS[player.avatar]} alt="" className="size-10" />
+                <img src={avatarUrl(player)} alt="" className="size-10" />
                 <span className="flex-1 truncate font-semibold">{id === playerId ? 'Eu vou!' : player.nickname}</span>
                 <span className="font-display text-xl">{votes > 0 ? `${votes} ${votes === 1 ? 'voto' : 'votos'}` : ''}</span>
               </button>
@@ -259,7 +259,7 @@ function RepresentativeList({ match, players, playerId }: { match: TeamMatchView
           <li key={team.id} className={`flex items-center gap-2 rounded-xl px-3 py-2 ${TEAMS[team.id].bg}`}>
             <span className={`font-display text-lg ${TEAMS[team.id].text}`}>{teamName(team.id)}</span>
             <span className="flex-1" />
-            {rep && <img src={AVATAR_URLS[rep.avatar]} alt="" className="size-8" />}
+            {rep && <img src={avatarUrl(rep)} alt="" className="size-8" />}
             <span className="font-semibold">{rep ? (rep.id === playerId ? 'Você' : rep.nickname) : '—'}</span>
           </li>
         )
@@ -407,7 +407,7 @@ function TeamRound({
                   const player = playerOf(room.players, v.player_id)
                   return player ? (
                     <span key={v.player_id} className="relative">
-                      <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={v.infiltrator ? `${player.nickname} (infiltrado)` : player.nickname} className={`size-7 ${v.infiltrator ? 'grayscale' : ''}`} />
+                      <img src={avatarUrl(player)} alt={player.nickname} title={v.infiltrator ? `${player.nickname} (infiltrado)` : player.nickname} className={`size-7 ${v.infiltrator ? 'grayscale' : ''}`} />
                       {v.player_id === mine?.captain && !match.solo && <img src={coroa} alt="Capitão" className="absolute -top-2 -right-1 size-4" />}
                       {v.infiltrator && <PowerUpIcon kind="infiltrator" className="absolute -top-2 -right-1 size-4" />}
                     </span>
@@ -531,7 +531,7 @@ function PeekPanel({ match, players }: { match: TeamMatchView; players: PlayerVi
         const player = playerOf(players, v.player_id)
         return (
           <span key={v.player_id} className="flex items-center gap-1">
-            {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-5" />}
+            {player && <img src={avatarUrl(player)} alt="" className="size-5" />}
             <span className="font-display">{v.option === null ? '?' : LETTERS[v.option]}</span>
           </span>
         )
@@ -667,7 +667,7 @@ function TeamPowerBar({ match, players, playerId, onArm }: { match: TeamMatchVie
         const player = playerOf(players, id)
         return player ? (
           <button key={id} onClick={() => void arm(kind, team ?? null, id)} className="btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl py-1 pr-3 pl-1 text-sm font-semibold">
-            <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />
+            <img src={avatarUrl(player)} alt="" className="size-7" />
             {id === playerId ? 'Eu' : player.nickname}
           </button>
         ) : null
@@ -860,7 +860,7 @@ function TeamBoard({ match, players }: { match: TeamMatchView; players: PlayerVi
           <span className="flex -space-x-2">
             {team.members.map((id) => {
               const player = playerOf(players, id)
-              return player ? <img key={id} src={AVATAR_URLS[player.avatar]} alt="" className="size-6" /> : null
+              return player ? <img key={id} src={avatarUrl(player)} alt="" className="size-6" /> : null
             })}
           </span>
           <span className="flex-1" />
@@ -915,7 +915,7 @@ function TeamPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Sn
             return (
               <span className="flex items-center gap-2 text-sm">
                 <img src={icon} alt="" className="size-5" />
-                <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />
+                <img src={avatarUrl(player)} alt="" className="size-7" />
                 <span className="min-w-0 flex-1 truncate">
                   <span className="font-semibold">{label}:</span> {player.id === playerId ? 'Você' : player.nickname}
                 </span>

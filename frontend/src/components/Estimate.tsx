@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { useCountdownSounds, useNow, useSoundsOnMount } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
@@ -72,7 +72,7 @@ function EstimateStart({ snapshot }: { snapshot: Snapshot }) {
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {snapshot.room.players.map((player, index) => (
           <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-12" />
+            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
           </li>
         ))}
       </ul>
@@ -243,7 +243,7 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
               } ${guess.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
-              {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+              {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
               <span className="flex min-w-0 flex-1 flex-col leading-tight">
                 <span className="truncate">
                   {guess.player_id === playerId ? 'Você' : player?.nickname}

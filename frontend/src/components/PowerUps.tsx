@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState, type PointerEvent, type ReactNode } from 'react'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
 import {
   CATEGORY_LABEL,
@@ -811,7 +811,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
                   onClick={() => void arm(selected.kind, p.id)}
                   className="btn-3d btn-sm mythic flex items-center gap-1.5 rounded-xl py-1 pr-3 pl-1 text-sm font-semibold"
                 >
-                  <img src={AVATAR_URLS[p.avatar]} alt="" className="size-7" />
+                  <img src={avatarUrl(p)} alt="" className="size-7" />
                   <span className="max-w-24 truncate">{p.nickname}</span>
                 </button>
               ))}
@@ -886,7 +886,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
                   onClick={() => void arm(selected.kind, p.id)}
                   className="btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl py-1 pr-3 pl-1 text-sm font-semibold"
                 >
-                  <img src={AVATAR_URLS[p.avatar]} alt="" className="size-7" />
+                  <img src={avatarUrl(p)} alt="" className="size-7" />
                   <span className="max-w-24 truncate">{p.nickname}</span>
                 </button>
               ))}

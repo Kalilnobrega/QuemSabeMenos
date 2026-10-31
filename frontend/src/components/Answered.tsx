@@ -1,4 +1,4 @@
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import type { PlayerView } from '../types/events'
 
 /** O ✓ amarelo no canto do avatar de quem já respondeu. Igual em todos os modos. */
@@ -31,7 +31,7 @@ export function AnsweredAvatar({
   return (
     // A chave muda quando a pessoa responde: o avatar remonta e a animação de pulo toca.
     <span key={String(done)} className={`relative inline-flex ${done ? 'avatar-pop' : ''}`} title={player.nickname}>
-      <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} className={`${className} transition ${waiting && !done ? 'opacity-30 grayscale' : ''}`} />
+      <img src={avatarUrl(player)} alt={player.nickname} className={`${className} transition ${waiting && !done ? 'opacity-30 grayscale' : ''}`} />
       {done && <AnsweredCheck />}
     </span>
   )

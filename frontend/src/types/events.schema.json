@@ -1717,6 +1717,10 @@
         },
         "streak": {
           "type": "integer"
+        },
+        "avatar_variant": {
+          "default": 0,
+          "type": "integer"
         }
       },
       "required": [

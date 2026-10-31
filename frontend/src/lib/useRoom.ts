@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { ArmPowerUpRequest, ErrorAck, JoinedAck, OkAck, RoomState, UpdateSettingsRequest } from '../types/events'
 import { socket } from './socket'
-import { loadSession, saveProfile, saveSession, type Profile } from './storage'
+import { loadProfile, loadSession, saveProfile, saveSession, type Profile } from './storage'
 
 const ACK_TIMEOUT_MS = 5000
 
@@ -120,7 +120,13 @@ export function useRoom() {
   const guess = useCallback((value: number) => request('submit_guess', { value }), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
   const chooseRepresentative = useCallback((choice: string) => request('choose_representative', { choice }), [])
+  const updateAvatar = useCallback(async (avatar: Profile['avatar']) => {
+    const error = await request('update_avatar', { avatar })
+    const saved = loadProfile()
+    if (!error && saved) saveProfile({ ...saved, avatar }) // a próxima sala já abre com o bicho novo
+    return error
+  }, [])
   const setTeam = useCallback((player_id: string, team: number) => request('set_team', { player_id, team }), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, guess, updateSettings, setTeam, chooseRepresentative }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, guess, updateSettings, updateAvatar, setTeam, chooseRepresentative }
 }

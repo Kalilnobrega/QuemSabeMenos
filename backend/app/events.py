@@ -79,6 +79,12 @@ class UpdateSettingsRequest(BaseModel):
     themes: list[str] | None = None
 
 
+class UpdateAvatarRequest(BaseModel):
+    """No lobby: trocar de bicho."""
+
+    avatar: Avatar
+
+
 class SetTeamRequest(BaseModel):
     """Times montados pelo anfitrião: põe um jogador num time (0 a team_count - 1)."""
 
@@ -149,6 +155,8 @@ class PlayerView(BaseModel):
     score: int
     answer_ms: int  # tempo total de resposta; desempata quem tem o mesmo QI
     streak: int  # > 0: acertos seguidos em médias/difíceis; < 0: erros seguidos
+    # Bicho repetido na sala: 0 para o primeiro a escolher, 1, 2... para os outros (cada um tem uma cor de fundo).
+    avatar_variant: int = 0
 
 
 class RoomSettings(BaseModel):

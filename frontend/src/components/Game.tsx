@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
-import { AVATAR_URLS } from '../lib/avatars'
+import { avatarUrl } from '../lib/avatars'
 import { formatDelta, formatScore } from '../lib/format'
 import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
@@ -225,7 +225,7 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
               {fighters.map((p) =>
                 p ? (
                   <button key={p.id} onClick={() => void bet(p.id)} className="btn-3d btn-dark flex flex-col items-center gap-1 rounded-xl py-3 font-semibold">
-                    <img src={AVATAR_URLS[p.avatar]} alt="" className="size-12" />
+                    <img src={avatarUrl(p)} alt="" className="size-12" />
                     Apostar em {p.nickname}
                   </button>
                 ) : null,
@@ -268,7 +268,7 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           {fighters.map((p, i) =>
             p ? (
               <div key={p.id} className={`flex flex-col items-center gap-1 ${i === 0 ? 'duel-in-left' : 'duel-in-right'}`}>
-                <img src={AVATAR_URLS[p.avatar]} alt="" className="size-20" />
+                <img src={avatarUrl(p)} alt="" className="size-20" />
                 <span className="max-w-32 truncate font-display text-2xl tracking-wide text-chalk">{p.id === playerId ? 'Você' : p.nickname}</span>
               </div>
             ) : null,
@@ -369,7 +369,7 @@ function DuelQuestionView({
               <span className={`min-w-0 [overflow-wrap:anywhere] ${duel.kind === 'true_false' ? 'w-full text-center text-lg' : ''}`}>{option}</span>
               {reveal && (
                 <span className="absolute -top-2 -right-1.5 flex -space-x-2">
-                  {picksOn(index).map((p) => p && <img key={p.id} src={AVATAR_URLS[p.avatar]} alt={p.nickname} className="size-6" />)}
+                  {picksOn(index).map((p) => p && <img key={p.id} src={avatarUrl(p)} alt={p.nickname} className="size-6" />)}
                 </span>
               )}
             </button>
@@ -508,7 +508,7 @@ function ThemePick({ snapshot, playerId, onChoose }: { snapshot: Snapshot; playe
       </p>
       {picker && (
         <div className="avatar-pop flex flex-col items-center gap-1">
-          <img src={AVATAR_URLS[picker.avatar]} alt="" className="size-20" />
+          <img src={avatarUrl(picker)} alt="" className="size-20" />
           <span className="font-semibold text-chalk">{mine ? 'Você' : picker.nickname}</span>
         </div>
       )}
@@ -573,7 +573,7 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
       <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
         {room.players.map((player, index) => (
           <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-12" />
+            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
           </li>
         ))}
       </ul>
@@ -623,7 +623,7 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
       <ol className="flex max-w-xs flex-wrap justify-center gap-3" aria-label="Placar antes da final">
         {standings.map((player, index) => (
           <li key={player.id} className="avatar-pop flex flex-col items-center gap-0.5" style={{ animationDelay: `${1.1 + index * 0.08}s` }}>
-            <img src={AVATAR_URLS[player.avatar]} alt={player.nickname} title={player.nickname} className="size-11" />
+            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-11" />
             <span className="font-display text-sm text-orange-100 tabular-nums">{formatScore(player.score)}</span>
           </li>
         ))}
@@ -1180,7 +1180,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
               className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${legendary ? 'legendary' : mythic ? 'mythic' : POWERUP_INFO[kind].tone} ${me && !legendary && !mythic ? 'ring-1 ring-brand/60' : ''}`}
               style={{ animationDelay: `${0.4 + index * 0.12}s` }}
             >
-              {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+              {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
               <PowerUpIcon kind={kind} className="size-5 shrink-0" />
               <span className="min-w-0 flex-1 truncate">{text}</span>
               {delta !== null && <span className="font-display text-lg">{formatDelta(delta)}</span>}
@@ -1196,7 +1196,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
             className={`avatar-pop flex items-center gap-2 rounded-xl bg-brand/15 px-3 py-1.5 font-semibold text-brand ${result.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
             style={{ animationDelay: '0.4s' }}
           >
-            {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+            {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
             <span className="min-w-0 flex-1 truncate">
               {result.player_id === playerId ? 'Você' : player?.nickname} mandou bem no próprio tema!
             </span>
@@ -1216,7 +1216,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
                 } ${result.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
                 style={{ animationDelay: `${0.4 + index * 0.12}s` }}
               >
-                {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+                {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
                 <span className="min-w-0 flex-1 truncate">
                   {result.player_id === playerId ? 'Você' : player?.nickname} apostou {result.bet}
                   {result.bet === maxBet(player ? player.score - deltas[result.player_id] : 0, game) && ' (tudo que podia!)'}
@@ -1239,7 +1239,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
                 }`}
                 style={{ animationDelay: `${0.4 + index * 0.12}s` }}
               >
-                {player && <img src={AVATAR_URLS[player.avatar]} alt="" className="size-7" />}
+                {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
                 <BonusIcon kind={bonus.kind} className="size-5 shrink-0" />
                 <span className="min-w-0 flex-1 truncate">
                   {result.player_id === playerId ? 'Você' : player?.nickname}: {bonusLabel(bonus)}
@@ -1434,7 +1434,7 @@ function Voters({ players }: { players: PlayerView[] }) {
       {shown.map((player, index) => (
         <img
           key={player.id}
-          src={AVATAR_URLS[player.avatar]}
+          src={avatarUrl(player)}
           alt={player.nickname}
           className="avatar-pop -ml-2.5 size-7 rounded-full border-2 border-ink first:ml-0"
           style={{ animationDelay: `${0.5 + index * 0.08}s` }}
@@ -1508,7 +1508,7 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
           }`}
         >
           <span className="w-5 text-center font-display text-lg text-steel">{index + 1}</span>
-          <img src={AVATAR_URLS[player.avatar]} alt="" className="size-9" />
+          <img src={avatarUrl(player)} alt="" className="size-9" />
           <span className="min-w-0 truncate font-semibold">{player.nickname}</span>
           {picks?.[player.id] && <PickBadge result={picks[player.id]} />}
           <span className="flex-1" />
@@ -1590,7 +1590,7 @@ export function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
                 {shown ? (
                   <div key="shown" className="podium-card relative flex w-full flex-col items-center gap-1">
                     <div className="relative">
-                      <img src={AVATAR_URLS[player.avatar]} alt="" className={place === 1 ? 'size-20' : 'size-16'} />
+                      <img src={avatarUrl(player)} alt="" className={place === 1 ? 'size-20' : 'size-16'} />
                       {place === 1 && <img src={coroa} alt="" className="icon-bounce absolute -top-5 -right-5 size-10" />}
                     </div>
                     <span className="w-full truncate font-bold">{player.nickname}</span>
@@ -1665,7 +1665,7 @@ function Highlight({ title, icon, player, tone, winner = false }: { title: strin
       {winner && <Confetti />}
       <span className={`font-display text-lg tracking-wide ${tone}`}>{title}</span>
       <div className="relative">
-        <img src={AVATAR_URLS[player.avatar]} alt="" className="size-20" />
+        <img src={avatarUrl(player)} alt="" className="size-20" />
         <img src={icon} alt="" className={`absolute -top-4 -right-6 size-11 ${winner ? 'icon-bounce' : 'icon-wobble'}`} />
       </div>
       <span className="w-full truncate text-lg font-bold">{player.nickname}</span>
