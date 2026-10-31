@@ -477,3 +477,22 @@ body {
   .tax-scene, .tax-stamp, .tax-card, .tax-caption { animation: none; }
   .tax-coin { display: none; }
 }
+
+/* Chutômetro: a régua abre do centro, os números aparecem, o pino da resposta cai e os chutes
+   caem um por um (do mais longe para o mais perto); quem cravou brilha. */
+.ruler-open { transform-origin: center; animation: ruler-open 0.45s cubic-bezier(0.2, 0.9, 0.3, 1) both; }
+.ruler-label { animation: ruler-label 0.3s ease-out both; }
+.pin-drop { animation: pin-drop 0.4s cubic-bezier(0.3, 1.5, 0.5, 1) both; }
+.guess-drop { animation: guess-drop 0.45s cubic-bezier(0.3, 1.4, 0.5, 1) both; }
+.guess-exact { animation: guess-exact 0.9s ease-in-out infinite alternate; }
+@keyframes ruler-open { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes ruler-label { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pin-drop { from { opacity: 0; transform: translateY(-48px); } to { opacity: 1; transform: none; } }
+@keyframes guess-drop { from { opacity: 0; transform: translateY(-56px) scale(0.8); } to { opacity: 1; transform: none; } }
+@keyframes guess-exact {
+  from { box-shadow: 0 0 0 2px #ffc107, 0 0 6px rgba(255, 193, 7, 0.4); }
+  to { box-shadow: 0 0 0 2px #fff3c4, 0 0 18px rgba(255, 193, 7, 0.95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ruler-open, .ruler-label, .pin-drop, .guess-drop, .guess-exact { animation: none; }
+}

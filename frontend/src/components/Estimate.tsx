@@ -4,8 +4,9 @@ import { useCountdownSounds, useNow, useSoundsOnMount } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView } from '../types/events'
-import { formatDelta } from '../lib/format'
+import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
+import { EstimateRuler } from './EstimateRuler'
 import { DifficultyChip, FactCard, LevelIntro, Podium, Ranking } from './Game'
 import { LeaveButton } from './LeaveButton'
 
@@ -47,14 +48,8 @@ function parseGuess(raw: string): number | null {
   return Number.isFinite(value) ? value : null
 }
 
-/** Anos e números sem unidade ficam sem ponto de milhar ("1822", não "1.822"). */
-function formatNumber(value: number, unit: string | null | undefined) {
-  const grouped = !!unit && unit !== 'a.C.'
-  return new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3, useGrouping: grouped }).format(value)
-}
-
 function withUnit(value: number, unit: string | null | undefined) {
-  return unit ? `${formatNumber(value, unit)} ${unit}` : formatNumber(value, unit)
+  return unit ? `${formatEstimate(value, unit)} ${unit}` : formatEstimate(value, unit)
 }
 
 function EstimateStart({ snapshot }: { snapshot: Snapshot }) {
@@ -235,7 +230,7 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
         <p className="reveal-pop font-display text-5xl text-emerald-300">{withUnit(estimate.answer!, estimate.unit)}</p>
       </div>
 
-      <Ruler estimate={estimate} players={players} playerId={playerId} />
+      <EstimateRuler estimate={estimate} players={players} playerId={playerId} />
 
       <ul className="flex flex-col gap-1.5" aria-label="Chutes">
         {estimate.guesses.map((guess, index) => {
@@ -277,53 +272,6 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
       >
         {skipped ? `Esperando (${estimate.ready.length}/${players.filter((p) => p.connected).length})` : 'Pular'}
       </button>
-    </div>
-  )
-}
-
-/** A régua: a resposta no meio, a zona em que o chute ganha QI e cada avatar no próprio chute. */
-function Ruler({ estimate, players, playerId }: { estimate: EstimateView; players: PlayerView[]; playerId: string | null }) {
-  const answer = estimate.answer!
-  const reference = estimate.reference ?? (Math.abs(answer) || 1)
-  const placed = estimate.guesses.filter((g) => g.value !== null)
-  const { break_even_percent: breakEven, max_loss_percent: maxLoss } = estimate.scoring
-  // A régua vai até onde a perda chega ao máximo; quem chutou mais longe fica na ponta, com seta.
-  const farthest = Math.max(0, ...placed.map((g) => Math.abs(g.value! - answer)))
-  const half = Math.min(Math.max(farthest, (reference * breakEven) / 100), (reference * maxLoss) / 100)
-  const position = (value: number) => 50 + (Math.max(-half, Math.min(half, value - answer)) / half) * 46
-  // Largura (em % da régua) da zona em que o chute ainda ganha QI.
-  const gain = Math.min(92, ((reference * breakEven) / 100 / half) * 92)
-  const sorted = [...placed].sort((a, b) => a.value! - b.value!)
-
-  return (
-    <div className="relative h-28 w-full" aria-hidden="true">
-      {/* Fora da zona verde o chute perde QI; quanto mais vermelho, mais perde. */}
-      <div className="absolute inset-x-[4%] top-16 h-3 rounded-full bg-gradient-to-r from-red-500/50 via-panel to-red-500/50" />
-      <div
-        className="absolute top-16 h-3 rounded-full"
-        style={{
-          left: `${50 - gain / 2}%`,
-          width: `${gain}%`,
-          background: 'linear-gradient(90deg, transparent, rgba(52, 211, 153, 0.75), transparent)',
-        }}
-      />
-      <div className="absolute top-12 h-11 w-1 -translate-x-1/2 rounded-full bg-emerald-300" style={{ left: '50%' }} />
-      {sorted.map((guess, index) => {
-        const player = players.find((p) => p.id === guess.player_id)
-        const off = Math.abs(guess.value! - answer) > half
-        return (
-          <div
-            key={guess.player_id}
-            className="avatar-pop absolute flex -translate-x-1/2 flex-col items-center"
-            style={{ left: `${position(guess.value!)}%`, top: index % 2 ? '1.6rem' : '0', animationDelay: `${0.2 + index * 0.08}s` }}
-          >
-            {player && (
-              <img src={AVATAR_URLS[player.avatar]} alt="" className={`size-8 ${guess.player_id === playerId ? 'rounded-full ring-2 ring-brand' : ''}`} />
-            )}
-            {off && <span className="text-xs font-bold text-red-300">{guess.value! < answer ? '◀' : '▶'}</span>}
-          </div>
-        )
-      })}
     </div>
   )
 }
