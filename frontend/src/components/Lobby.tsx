@@ -70,6 +70,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
   const enoughPlayers = room.players.length >= minPlayers
 
   const invite = async () => {
+    playSound('clickSoft')
     const url = inviteUrl(room.code)
     try {
       if (navigator.share) {
@@ -86,6 +87,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
   }
 
   const start = async () => {
+    playSound('click')
     setStarting(true)
     setNotice(await onStart())
     setStarting(false)
@@ -208,7 +210,10 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         </dl>
         {isHost && (
           <button
-            onClick={() => setSettingsOpen(true)}
+            onClick={() => {
+              playSound('clickSoft')
+              setSettingsOpen(true)
+            }}
             className="btn-3d btn-sm btn-dark flex items-center justify-center gap-2 rounded-xl py-3 font-semibold text-chalk"
           >
             <SettingsIcon />
@@ -384,7 +389,10 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
     return () => window.removeEventListener('keydown', onKey)
   }, [onClose, guide])
 
-  const update = async (patch: UpdateSettingsRequest) => setNotice(await onUpdate(patch))
+  const update = async (patch: UpdateSettingsRequest) => {
+    playSound('clickSoft')
+    setNotice(await onUpdate(patch))
+  }
   const toggleTheme = (theme: string) => {
     if (themes.includes(theme) && themes.length === 1) {
       setNotice('Escolha pelo menos um tema.')
@@ -564,7 +572,13 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
 
         {notice && <p className="text-center text-steel">{notice}</p>}
 
-        <button onClick={onClose} className="btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink">
+        <button
+          onClick={() => {
+            playSound('clickSoft')
+            onClose()
+          }}
+          className="btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink"
+        >
           Pronto
         </button>
       </div>

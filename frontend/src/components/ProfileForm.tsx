@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { AVATAR_NAMES, AVATAR_URLS, AVATARS, randomAvatar } from '../lib/avatars'
+import { playSound } from '../lib/sounds'
 import { loadProfile, type Profile } from '../lib/storage'
 
 const CODE_LENGTH = 5
@@ -25,6 +26,7 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
   const submit = async (event: FormEvent) => {
     event.preventDefault()
     if (!ready || sending) return
+    playSound('click')
     setSending(true)
     setError(await onSubmit({ ...profile, nickname }, code))
     setSending(false)
@@ -75,7 +77,10 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
               <button
                 key={avatar}
                 type="button"
-                onClick={() => setProfile({ ...profile, avatar })}
+                onClick={() => {
+                  playSound('select')
+                  setProfile({ ...profile, avatar })
+                }}
                 aria-label={AVATAR_NAMES[avatar]}
                 aria-pressed={selected}
                 className={`rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-70 hover:opacity-100'}`}

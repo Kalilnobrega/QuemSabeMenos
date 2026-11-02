@@ -7,6 +7,7 @@ import { Lobby } from './components/Lobby'
 import { Survival } from './components/Survival'
 import { Logo } from './components/Logo'
 import { ProfileForm } from './components/ProfileForm'
+import { playSound } from './lib/sounds'
 import { SoundToggle } from './components/SoundToggle'
 import { loadSession, saveSession } from './lib/storage'
 import { useRoom } from './lib/useRoom'
@@ -110,7 +111,10 @@ export default function App() {
         <Logo className="w-full max-w-sm" />
         <div className="flex w-full flex-col gap-3">
           <button
-            onClick={() => setScreen({ name: 'create' })}
+            onClick={() => {
+              playSound('click')
+              setScreen({ name: 'create' })
+            }}
             className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
           >
             <span className="flex items-center justify-center gap-3">
@@ -119,7 +123,10 @@ export default function App() {
             </span>
           </button>
           <button
-            onClick={() => setScreen({ name: 'join', code: '' })}
+            onClick={() => {
+              playSound('click')
+              setScreen({ name: 'join', code: '' })
+            }}
             className="btn-3d btn-dark rounded-xl py-4 font-display text-2xl tracking-wide"
           >
             <span className="flex items-center justify-center gap-3">
