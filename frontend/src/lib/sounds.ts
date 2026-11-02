@@ -296,7 +296,7 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   // Cada clique sai um pouco mais agudo ou grave e mais forte ou fraco, como uma tecla de verdade.
   click: () => {
     const p = vary(0.05)
-    const g = 0.75 * vary(0.12) // 25% mais baixo que o original
+    const g = 1.5 * vary(0.12) // o dobro de antes: estava baixo demais
     snap(0, 4200 * p, 0.3 * g, 5, 0.01)
     snap(0.008, 2600 * p, 0.18 * g, 4, 0.014)
     knock(0.006, 520 * p, 0.05 * g, 0.03)
@@ -305,7 +305,7 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   // Microswitch de mouse: tic seco ao apertar e o tac de volta (também varia a cada clique).
   clickSoft: () => {
     const p = vary(0.05)
-    const g = vary(0.12)
+    const g = 1.8 * vary(0.12) // quase o dobro: estava baixo demais
     snap(0, 5200 * p, 0.26 * g, 6, 0.008)
     knock(0.001, 1900 * p, 0.05 * g, 0.02, 'triangle')
     snap(0.06 * vary(0.1), 4400 * p, 0.14 * g, 6, 0.007)
