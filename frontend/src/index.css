@@ -96,6 +96,28 @@ body {
 @keyframes intro-fade-up {
   from { opacity: 0; transform: translateY(12px); }
 }
+/* Banners da revelação: cada um bate na tela como um carimbo, um depois do outro. */
+.banner-stamp {
+  animation: banner-stamp 0.42s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+@keyframes banner-stamp {
+  from { opacity: 0; transform: scale(1.5) rotate(-3deg); }
+  60% { opacity: 1; transform: scale(0.97) rotate(0.6deg); }
+  to { opacity: 1; transform: none; }
+}
+/* Sabotagem que te atinge: o carimbo e depois uma tremidinha. */
+.banner-hit {
+  animation: banner-stamp 0.42s cubic-bezier(0.2, 1.6, 0.4, 1) both, banner-shake 0.4s ease-in-out;
+}
+@keyframes banner-shake {
+  25% { translate: -4px 0; }
+  50% { translate: 4px 0; }
+  75% { translate: -2px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner-stamp,
+  .banner-hit { animation: none; }
+}
 @keyframes intro-slam {
   from { opacity: 0; transform: scale(2.6) rotate(-6deg); }
   to { opacity: 1; transform: scale(1) rotate(-3deg); }

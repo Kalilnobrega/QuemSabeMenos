@@ -123,6 +123,14 @@ export function powerCategory(kind: Kind): Category {
 
 export const CATEGORY_LABEL: Record<Category, string> = { help: 'Ajuda', sabotage: 'Sabotagem' }
 
+/** O poder ganho em duas partes, para os banners da revelação: "Ganhou Escudo" e o motivo. */
+export function gainParts(gain: PowerUpGain) {
+  const info = POWERUP_INFO[gain.kind]
+  const name = gain.mythic ? `${info.name} mítico` : gain.legendary ? `${info.name} lendário` : info.name
+  const reason = GAIN_REASON[gain.reason]
+  return { title: `Ganhou ${name}`, detail: reason.charAt(0).toUpperCase() + reason.slice(1) }
+}
+
 export function gainLabel(gain: PowerUpGain) {
   const info = POWERUP_INFO[gain.kind]
   const name = gain.mythic ? `${info.name} MÍTICO` : gain.legendary ? `${info.name} LENDÁRIO` : info.name

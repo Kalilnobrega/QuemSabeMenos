@@ -3,13 +3,13 @@ import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
+import { POWERUP_INFO, SURVIVAL_HINTS, gainParts, scrambleWords, type Kind } from '../lib/powerups'
 import type { PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
 import { AnsweredAvatar } from './Answered'
 import { DaggerStrike } from './DaggerStrike'
 import { ResurrectionScene } from './ResurrectionScene'
 import { PeekBadge } from './Game'
-import { LevelIntro, PlayerPodium, StartScreen } from './Screens'
+import { BannerList, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -249,19 +249,62 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onDisarm, onUse, onSki
     )
   }
 
-  const notes = [
-    ...survival.revived.map((id) => `${cap(name(id))} ressuscitou com 1 vida!`),
-    ...survival.stabs.map((s) =>
-      s.eliminated
-        ? `${cap(name(s.by))} cravou a Adaga em ${name(s.target)} e eliminou! ${s.by === playerId ? 'Você ganhou' : 'Ganhou'} a Bênção na próxima.`
-        : `${cap(name(s.by))} cravou a Adaga em ${name(s.target)}: −1 vida!`,
-    ),
-    ...survival.picks.filter((p) => p.cursed && p.player_id !== playerId).map((p) => `Maldição: ${name(p.player_id)} perdeu 2 vidas!`),
-    ...survival.picks.filter((p) => p.pact_from && p.player_id !== playerId).map((p) => `Pacto de sangue: ${name(p.player_id)} perdeu uma vida junto com ${name(p.pact_from)}.`),
-    ...survival.picks.filter((p) => p.hidden && p.player_id !== playerId).map((p) => `${cap(name(p.player_id))} ficou escondido.`),
-    ...survival.picks.filter((p) => p.stolen_by && p.player_id !== playerId).map((p) => `${cap(name(p.stolen_by))} roubou uma vida de ${name(p.player_id)}!`),
-    ...survival.picks.filter((p) => p.shielded && p.player_id !== playerId).map((p) => `O Escudo segurou a vida de ${name(p.player_id)}.`),
-    ...survival.gifts.map((g) => `${cap(name(g.player_id))} ${gainLabel(g.gain)}`),
+  // Acontecimentos da revelação, no mesmo banner dos outros modos.
+  const icon = (kind: Kind) => <PowerUpIcon kind={kind} className="size-full" />
+  const tone = (kind: Kind) => POWERUP_INFO[kind].tone
+  const notes: BannerItem[] = [
+    ...survival.revived.map((id) => ({ key: `revived-${id}`, player: player(id), icon: icon('resurrection'), who: cap(name(id)), title: 'Ressuscitou', detail: 'Voltou com 1 vida', tone: 'mythic', me: id === playerId })),
+    ...survival.stabs.map((s) => ({
+      key: `stab-${s.by}-${s.target}`,
+      player: player(s.by),
+      icon: icon('dagger'),
+      who: cap(name(s.by)),
+      title: `Cravou a Adaga em ${name(s.target)}`,
+      detail: s.eliminated ? `Eliminou e ${s.by === playerId ? 'você ganhou' : 'ganhou'} a Bênção na próxima` : 'Tirou 1 vida',
+      tone: 'mythic',
+      me: s.by === playerId || s.target === playerId,
+    })),
+    ...survival.picks
+      .filter((p) => p.cursed && p.player_id !== playerId)
+      .map((p) => ({ key: `curse-${p.player_id}`, player: player(p.player_id), icon: icon('curse'), who: cap(name(p.player_id)), title: 'Perdeu 2 vidas', detail: 'Maldição', tone: tone('curse') })),
+    ...survival.picks
+      .filter((p) => p.pact_from && p.player_id !== playerId)
+      .map((p) => ({
+        key: `pact-${p.player_id}`,
+        player: player(p.player_id),
+        icon: icon('blood_pact'),
+        who: cap(name(p.player_id)),
+        title: 'Perdeu uma vida junto',
+        detail: `Pacto de sangue com ${name(p.pact_from)}`,
+        tone: tone('blood_pact'),
+      })),
+    ...survival.picks
+      .filter((p) => p.hidden && p.player_id !== playerId)
+      .map((p) => ({ key: `hide-${p.player_id}`, player: player(p.player_id), icon: icon('hide'), who: cap(name(p.player_id)), title: 'Ficou escondido', detail: 'Pulou esta sem perder vida', tone: tone('hide') })),
+    ...survival.picks
+      .filter((p) => p.stolen_by && p.player_id !== playerId)
+      .map((p) => ({
+        key: `steal-${p.player_id}`,
+        player: player(p.stolen_by ?? ''),
+        icon: icon('steal'),
+        who: cap(name(p.stolen_by)),
+        title: `Roubou uma vida de ${name(p.player_id)}`,
+        detail: 'Roubo de vida',
+        tone: tone('steal'),
+        me: p.stolen_by === playerId,
+      })),
+    ...survival.picks
+      .filter((p) => p.shielded && p.player_id !== playerId)
+      .map((p) => ({ key: `shield-${p.player_id}`, player: player(p.player_id), icon: icon('shield'), who: cap(name(p.player_id)), title: 'O Escudo segurou', detail: 'Não perdeu vida', tone: tone('shield') })),
+    ...survival.gifts.map((g) => ({
+      key: `gift-${g.player_id}-${g.gain.kind}`,
+      player: player(g.player_id),
+      icon: icon(g.gain.kind),
+      who: cap(name(g.player_id)),
+      ...gainParts(g.gain),
+      tone: g.gain.mythic ? 'mythic' : g.gain.legendary ? 'legendary' : tone(g.gain.kind),
+      me: g.player_id === playerId,
+    })),
   ]
 
   return (
@@ -365,15 +408,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onDisarm, onUse, onSki
       </Magnifier>
       <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">{status}</p>
       {survival.fact && <p className="rounded-xl bg-panel px-4 py-3 text-center text-chalk">{survival.fact}</p>}
-      {notes.length > 0 && (
-        <ul className="flex flex-col gap-1.5 text-sm font-semibold">
-          {notes.map((note) => (
-            <li key={note} className="rounded-xl bg-panel px-3 py-1.5 text-chalk">
-              {note}
-            </li>
-          ))}
-        </ul>
-      )}
+      <BannerList items={notes} label="Acontecimentos da rodada" />
       {survival.phase === 'results' && (
         <PowerUpBar
           powers={survival.powers}

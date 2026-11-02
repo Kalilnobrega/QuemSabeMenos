@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { formatDelta, formatScore } from '../lib/format'
-import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
+import { POWERUP_INFO, gainParts, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import { reducedMotion, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import type { Snapshot } from '../lib/useRoom'
@@ -9,7 +9,7 @@ import type { Bonus, DuelView, GameView, PlayerView, PowerUpUse, RoomState, Roun
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 import { AnsweredAvatar, AnsweredRow } from './Answered'
 import { ResurrectionScene } from './ResurrectionScene'
-import { ImpossibleIntro, LevelIntro, PlayerPodium, StartScreen } from './Screens'
+import { BannerList, ImpossibleIntro, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -996,6 +996,58 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
   const experts = game.results.filter((r) => r.specialist_bonus)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
   const powerupLines = powerupEvents(room, game, playerId)
+  const name = (id: string) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const playerOf = (id: string) => room.players.find((p) => p.id === id)
+  // Todos os acontecimentos da rodada no mesmo banner: poderes, bônus do Especialista, apostas e sequências.
+  const banners: BannerItem[] = [
+    ...powerupLines.map(({ key, kind, player, who, title, detail, delta, me, legendary, mythic }) => ({
+      key,
+      player,
+      who,
+      title,
+      detail,
+      delta,
+      me,
+      icon: <PowerUpIcon kind={kind} className="size-full" />,
+      tone: legendary ? 'legendary' : mythic ? 'mythic' : POWERUP_INFO[kind].tone,
+    })),
+    ...experts.map((result) => ({
+      key: `${result.player_id}-expert`,
+      player: playerOf(result.player_id),
+      who: name(result.player_id),
+      title: 'Mandou bem no próprio tema!',
+      detail: 'Bônus do Especialista',
+      delta: result.specialist_bonus ?? 0,
+      me: result.player_id === playerId,
+      icon: <StarIcon className="size-full" />,
+      tone: 'bg-brand/15 text-brand',
+    })),
+    ...bets.map((result) => {
+      const player = playerOf(result.player_id)
+      const all = result.bet === maxBet(player ? player.score - deltas[result.player_id] : 0, game)
+      return {
+        key: `${result.player_id}-bet`,
+        player,
+        who: name(result.player_id),
+        title: `Apostou ${result.bet}${all ? ', tudo que podia!' : ''}`,
+        detail: result.bet_delta > 0 ? 'Acertou a aposta' : 'Errou a aposta',
+        delta: result.bet_delta,
+        me: result.player_id === playerId,
+        icon: <BonusIcon kind="investment" className="size-full" />,
+        tone: result.bet_delta > 0 ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200',
+      }
+    }),
+    ...highlights.map(({ result, bonus }) => ({
+      key: `${result.player_id}-${bonus.kind}-${bonus.count}`,
+      player: playerOf(result.player_id),
+      who: name(result.player_id),
+      ...bonusParts(bonus),
+      delta: bonus.delta,
+      me: result.player_id === playerId,
+      icon: <BonusIcon kind={bonus.kind} className="size-full" />,
+      tone: BONUS_STYLE[bonus.kind],
+    })),
+  ]
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
   const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy', investment: 'investment' }
@@ -1034,84 +1086,7 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
     <div className="flex flex-col gap-3">
       {headline}
       <PowerUpBar powers={room.settings.powers} game={game} players={room.players} playerId={playerId} onArm={onArm} onDisarm={onDisarm} onSkip={onSkip} />
-      {powerupLines.length > 0 && (
-        <ul className="flex flex-col gap-1.5" aria-label="Poderes">
-          {powerupLines.map(({ key, kind, player, text, delta, me, legendary, mythic }, index) => (
-            <li
-              key={key}
-              className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${legendary ? 'legendary' : mythic ? 'mythic' : POWERUP_INFO[kind].tone} ${me && !legendary && !mythic ? 'ring-1 ring-brand/60' : ''}`}
-              style={{ animationDelay: `${0.4 + index * 0.12}s` }}
-            >
-              {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
-              <PowerUpIcon kind={kind} className="size-5 shrink-0" />
-              <span className="min-w-0 flex-1 truncate">{text}</span>
-              {delta !== null && <span className="font-display text-lg">{formatDelta(delta)}</span>}
-            </li>
-          ))}
-        </ul>
-      )}
-      {experts.map((result) => {
-        const player = room.players.find((p) => p.id === result.player_id)
-        return (
-          <p
-            key={result.player_id}
-            className={`avatar-pop flex items-center gap-2 rounded-xl bg-brand/15 px-3 py-1.5 font-semibold text-brand ${result.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
-            style={{ animationDelay: '0.4s' }}
-          >
-            {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
-            <span className="min-w-0 flex-1 truncate">
-              {result.player_id === playerId ? 'Você' : player?.nickname} mandou bem no próprio tema!
-            </span>
-            <span className="font-display text-lg">{formatDelta(result.specialist_bonus ?? 0)}</span>
-          </p>
-        )
-      })}
-      {bets.length > 0 && (
-        <ul className="flex flex-col gap-1.5" aria-label="Apostas">
-          {bets.map((result, index) => {
-            const player = room.players.find((p) => p.id === result.player_id)
-            return (
-              <li
-                key={result.player_id}
-                className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${
-                  result.bet_delta > 0 ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'
-                } ${result.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
-                style={{ animationDelay: `${0.4 + index * 0.12}s` }}
-              >
-                {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
-                <span className="min-w-0 flex-1 truncate">
-                  {result.player_id === playerId ? 'Você' : player?.nickname} apostou {result.bet}
-                  {result.bet === maxBet(player ? player.score - deltas[result.player_id] : 0, game) && ' (tudo que podia!)'}
-                </span>
-                <span className="font-display text-lg">{formatDelta(result.bet_delta)}</span>
-              </li>
-            )
-          })}
-        </ul>
-      )}
-      {highlights.length > 0 && (
-        <ul className="flex flex-col gap-1.5">
-          {highlights.map(({ result, bonus }, index) => {
-            const player = room.players.find((p) => p.id === result.player_id)
-            return (
-              <li
-                key={`${result.player_id}-${bonus.kind}-${bonus.count}`}
-                className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${BONUS_STYLE[bonus.kind]} ${
-                  result.player_id === playerId ? 'ring-1 ring-brand/60' : ''
-                }`}
-                style={{ animationDelay: `${0.4 + index * 0.12}s` }}
-              >
-                {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
-                <BonusIcon kind={bonus.kind} className="size-5 shrink-0" />
-                <span className="min-w-0 flex-1 truncate">
-                  {result.player_id === playerId ? 'Você' : player?.nickname}: {bonusLabel(bonus)}
-                </span>
-                <span className="font-display text-lg">{formatDelta(bonus.delta)}</span>
-              </li>
-            )
-          })}
-        </ul>
-      )}
+      <BannerList items={banners} label="Acontecimentos da rodada" />
       {game.fact && <FactCard fact={game.fact} />}
       <Ranking
         players={room.players}
@@ -1123,77 +1098,84 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
   )
 }
 
-/** Linhas da revelação: escudos que seguraram, roubos e poderes ganhos. */
+/** Banners da revelação de poderes: escudos que seguraram, roubos, poderes ganhos e usados. */
 function powerupEvents(room: RoomState, game: GameView, playerId: string | null) {
   const who = (id: string | null) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
-  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; text: string; delta: number | null; me: boolean; legendary?: boolean; mythic?: boolean }[] = []
+  const whom = (id: string | null) => (id === playerId ? 'você' : who(id))
+  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; who: string; title: string; detail: string; delta: number | null; me: boolean; legendary?: boolean; mythic?: boolean }[] = []
   const mine = game.results.find((r) => r.player_id === playerId)
   for (const result of game.results) {
     const player = room.players.find((p) => p.id === result.player_id)
     const me = result.player_id === playerId
+    const base = { player, who: who(result.player_id), me }
     for (const kind of result.expired) {
-      lines.push({ key: `${result.player_id}-${kind}-expired`, kind, player, text: `${who(result.player_id)}: ${POWERUP_INFO[kind].name} quebrou sem ser usado.`, delta: null, me })
+      lines.push({ ...base, key: `${result.player_id}-${kind}-expired`, kind, title: `${POWERUP_INFO[kind].name} quebrou`, detail: 'Acabou sem ser usado', delta: null })
     }
     if (result.doubled) {
-      lines.push({ key: `${result.player_id}-double`, kind: 'double', player, text: `${who(result.player_id)}: Dobro!`, delta: result.delta, me })
+      lines.push({ ...base, key: `${result.player_id}-double`, kind: 'double', title: 'Dobro!', detail: result.correct ? 'O acerto valeu o dobro' : 'O erro valeu o dobro', delta: result.delta })
     }
     if (result.first_option !== null) {
-      const text = result.correct ? 'acertou na segunda chance (metade)!' : 'errou de novo na segunda chance.'
-      lines.push({ key: `${result.player_id}-second`, kind: 'second_chance', player, text: `${who(result.player_id)} ${text}`, delta: null, me })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-second`,
+        kind: 'second_chance',
+        title: result.correct ? 'Acertou na segunda chance' : 'Errou de novo',
+        detail: result.correct ? 'Segunda chance: vale metade' : 'A segunda chance não salvou',
+        delta: null,
+      })
     }
     if (result.shielded) {
-      lines.push({ key: `${result.player_id}-shield`, kind: 'shield', player, text: `${who(result.player_id)}: o Escudo segurou ${result.shielded} de QI!`, delta: null, me })
+      lines.push({ ...base, key: `${result.player_id}-shield`, kind: 'shield', title: 'O Escudo segurou', detail: `Salvou ${result.shielded} de QI`, delta: null })
     }
     const steal = game.active.find((use) => use.kind === 'steal' && use.by === result.player_id)
     if (steal?.legendary) {
       lines.push({
+        ...base,
         key: `${result.player_id}-steal`,
         kind: 'steal',
-        player,
-        text: result.stolen ? `${who(result.player_id)} roubou de todo mundo com o Roubo lendário!` : `${who(result.player_id)} não roubou nada com o Roubo lendário.`,
+        title: 'Roubo lendário',
+        detail: result.stolen ? 'Roubou de todo mundo' : 'Não roubou nada',
         delta: result.stolen ? (me ? result.stolen : -(mine?.robbed ?? 0)) : null, // do ponto de vista de quem lê
         me: true,
         legendary: true,
       })
     } else if (steal) {
-      const target = who(steal.target)
       if (steal.reflected_by) {
         lines.push({
+          ...base,
           key: `${result.player_id}-reverse`,
           kind: 'reverse',
-          player,
-          text: `${who(result.player_id)} rebateu o Roubo de ${target === 'Você' ? 'você' : target} com o Reverso!`,
+          title: 'Rebateu o Roubo',
+          detail: `Reverso no Roubo de ${whom(steal.target)}`,
           delta: null,
           me: me || steal.target === playerId,
         })
       }
       lines.push({
+        ...base,
         key: `${result.player_id}-steal`,
         kind: 'steal',
-        player,
-        text: result.stolen ? `${who(result.player_id)} roubou de ${target === 'Você' ? 'você' : target}!` : `${who(result.player_id)} não roubou nada de ${target === 'Você' ? 'você' : target}.`,
+        title: result.stolen ? `Roubou ${whom(steal.target)}` : `Roubo em ${whom(steal.target)} falhou`,
+        detail: result.stolen ? `Levou ${result.stolen} de QI` : 'Não tinha o que levar',
         delta: result.stolen ? (steal.target === playerId ? -result.stolen : result.stolen) : null, // do ponto de vista de quem lê
         me: me || steal.target === playerId,
       })
     }
     if (result.decoy) {
-      lines.push({ key: `${result.player_id}-decoy`, kind: 'decoy', player, text: `${who(result.player_id)} caiu na Alternativa falsa: "${result.decoy}"!`, delta: null, me })
+      lines.push({ ...base, key: `${result.player_id}-decoy`, kind: 'decoy', title: 'Caiu na Alternativa falsa', detail: `"${result.decoy}"`, delta: null })
     }
     if (result.tricked) {
-      lines.push({ key: `${result.player_id}-tricked`, kind: 'decoy', player, text: `${who(result.player_id)} ganhou ${result.tricked} com a Alternativa falsa!`, delta: me ? result.tricked : null, me })
+      lines.push({ ...base, key: `${result.player_id}-tricked`, kind: 'decoy', title: 'Enganou com a Alternativa falsa', detail: `Ganhou ${result.tricked} de QI`, delta: me ? result.tricked : null })
     }
     if (result.tolled) {
-      lines.push({ key: `${result.player_id}-tolled`, kind: 'toll', player, text: `${who(result.player_id)} pagou ${result.tolled} de Pedágio.`, delta: me ? -result.tolled : null, me })
+      lines.push({ ...base, key: `${result.player_id}-tolled`, kind: 'toll', title: 'Pagou Pedágio', detail: `${result.tolled} de QI`, delta: me ? -result.tolled : null })
     }
     if (result.toll_received) {
-      lines.push({ key: `${result.player_id}-toll`, kind: 'toll', player, text: `${who(result.player_id)} recebeu ${result.toll_received} de Pedágio!`, delta: me ? result.toll_received : null, me })
+      lines.push({ ...base, key: `${result.player_id}-toll`, kind: 'toll', title: 'Recebeu Pedágio', detail: `${result.toll_received} de QI`, delta: me ? result.toll_received : null })
     }
-    if (result.gained) {
-      lines.push({ key: `${result.player_id}-gain`, kind: result.gained.kind, player, text: `${who(result.player_id)} ${gainLabel(result.gained)}`, delta: null, me, legendary: result.gained.legendary, mythic: result.gained.mythic })
-    }
-    if (result.bet_gained) {
-      const gain = result.bet_gained
-      lines.push({ key: `${result.player_id}-bet-gain`, kind: gain.kind, player, text: `${who(result.player_id)} ${gainLabel(gain)}`, delta: null, me, legendary: gain.legendary, mythic: gain.mythic })
+    for (const [suffix, gain] of [['gain', result.gained], ['bet-gain', result.bet_gained]] as const) {
+      if (!gain) continue
+      lines.push({ ...base, key: `${result.player_id}-${suffix}`, kind: gain.kind, ...gainParts(gain), delta: null, legendary: gain.legendary, mythic: gain.mythic })
     }
   }
   for (const { challenger, rival } of game.duels) {
@@ -1201,7 +1183,9 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       key: `${challenger}-${rival}-duel`,
       kind: 'duel',
       player: room.players.find((p) => p.id === challenger),
-      text: `${who(challenger)} chamou ${rival === playerId ? 'você' : who(rival)} pro X1! Começa quando a revelação acabar.`,
+      who: who(challenger),
+      title: `Chamou ${whom(rival)} pro X1!`,
+      detail: 'Começa quando a revelação acabar',
       delta: null,
       me: challenger === playerId || rival === playerId,
       mythic: true,
@@ -1213,7 +1197,9 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       key: `${revival.player_id}-revival`,
       kind: 'resurrection',
       player: room.players.find((p) => p.id === revival.player_id),
-      text: `${who(revival.player_id)} usou a Ressurreição: de ${formatScore(revival.before)} para ${formatScore(revival.after)} de QI!`,
+      who: who(revival.player_id),
+      title: 'Usou a Ressurreição',
+      detail: `De ${formatScore(revival.before)} para ${formatScore(revival.after)} de QI`,
       delta: me ? revival.after - revival.before : null,
       me,
       mythic: true,
@@ -1229,12 +1215,15 @@ const BONUS_STYLE: Record<Bonus['kind'], string> = {
   investment: 'bg-green-500/15 text-green-200',
 }
 
-function bonusLabel(bonus: Bonus) {
-  if (bonus.kind === 'perfect_easy') return 'gabaritou as fáceis!'
-  if (bonus.kind === 'investment') return bonus.count === 5 ? 'Investimento completo!' : `Investimento, ${bonus.count}º acerto!`
+/** O bônus em duas partes, para os banners da revelação. */
+function bonusParts(bonus: Bonus) {
   const again = bonus.repeat ? ' de novo' : ''
-  if (bonus.kind === 'streak') return `${bonus.count} acertos seguidos${again}!`
-  return `${bonus.count} erros seguidos${again}!`
+  if (bonus.kind === 'perfect_easy') return { title: 'Gabaritou as fáceis!', detail: 'Acertou todas as fáceis' }
+  if (bonus.kind === 'investment') {
+    return bonus.count === 5 ? { title: 'Investimento completo!', detail: '5 acertos com o Investimento' } : { title: `Investimento, ${bonus.count}º acerto`, detail: 'O bônus cresce a cada acerto' }
+  }
+  if (bonus.kind === 'streak') return { title: `${bonus.count} acertos seguidos${again}!`, detail: 'Sequência quente' }
+  return { title: `${bonus.count} erros seguidos${again}!`, detail: 'Sequência gelada' }
 }
 
 function bonusTotal(result: RoundResult) {

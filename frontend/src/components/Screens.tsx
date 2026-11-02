@@ -452,3 +452,54 @@ export function SkipButton({ ready, players, playerId, onSkip, endsInMs, duratio
     document.body,
   )
 }
+
+/** Um acontecimento ou aviso: o bicho e o ícone lado a lado, "Quem · o que houve" em negrito, o motivo
+ * embaixo e o ponto à direita. Igual na revelação e na pergunta, em todos os modos. */
+export interface BannerItem {
+  key: string
+  player?: PlayerView
+  icon: ReactNode
+  /** Quem fez (aparece antes do título, separado por "·"). */
+  who?: string
+  title: string
+  detail?: string
+  delta?: number | null
+  /** Classes de cor do fundo e do texto. */
+  tone: string
+  /** Envolve quem está vendo: ganha o contorno amarelo. */
+  me?: boolean
+  /** Uma sabotagem que te atinge: contorno vermelho e uma tremidinha depois do carimbo. */
+  hit?: boolean
+}
+
+/** Os banners entram um de cada vez, batendo na tela como um carimbo. */
+export function BannerList({ items, startDelay = 0.4, step = 0.28, label }: { items: BannerItem[]; startDelay?: number; step?: number; label?: string }) {
+  if (items.length === 0) return null
+  return (
+    <ul className="flex flex-col gap-1.5" aria-label={label}>
+      {items.map((item, index) => (
+        <li
+          key={item.key}
+          className={`${item.hit ? 'banner-hit' : 'banner-stamp'} flex items-center gap-2 rounded-xl px-3 py-1.5 ${item.tone} ${
+            item.hit ? 'ring-2 ring-red-400/70' : item.me ? 'ring-1 ring-brand/60' : ''
+          }`}
+          // Na sabotagem, a tremidinha vem logo depois do carimbo.
+          style={{ animationDelay: item.hit ? `${startDelay + index * step}s, ${startDelay + index * step + 0.45}s` : `${startDelay + index * step}s` }}
+        >
+          {item.player && <img src={avatarUrl(item.player)} alt="" className="size-8 shrink-0" />}
+          <span className="size-5 shrink-0" aria-hidden="true">
+            {item.icon}
+          </span>
+          <span className="flex min-w-0 flex-1 flex-col leading-tight">
+            <span className="font-bold break-words">
+              {item.who ? `${item.who} · ` : ''}
+              {item.title}
+            </span>
+            {item.detail && <span className="text-xs font-semibold break-words opacity-75">{item.detail}</span>}
+          </span>
+          {item.delta != null && item.delta !== 0 && <span className="shrink-0 font-display text-lg">{item.delta > 0 ? `+${item.delta}` : `−${Math.abs(item.delta)}`}</span>}
+        </li>
+      ))}
+    </ul>
+  )
+}
