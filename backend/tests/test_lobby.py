@@ -72,6 +72,21 @@ async def connect(server_url):
             await client.sio.disconnect()
 
 
+def history_events(kind: str | None = None) -> list[dict]:
+    rows = main.history.db.execute("SELECT kind, data FROM events ORDER BY seq").fetchall()
+    return [json.loads(data) for k, data in rows if kind is None or k == kind]
+
+
+async def match_closed(status: str = "finished") -> list[dict]:
+    """Espera o histórico fechar a partida e devolve a classificação gravada."""
+    async def poll():
+        while not (row := main.history.db.execute("SELECT status, players FROM matches").fetchone()) or row[0] != status:
+            await asyncio.sleep(0.02)
+        return json.loads(row[1])
+
+    return await asyncio.wait_for(poll(), 2)
+
+
 def nicknames(state: dict) -> list[str]:
     return [p["nickname"] for p in state["players"]]
 
@@ -351,6 +366,15 @@ async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
     assert sv(state)["winner"] == created["player_id"]
     assert [s["place"] for s in sv(state)["survivors"]][0] == 1
 
+    standings = await match_closed()
+    assert standings[0]["nickname"] == "Ana" and standings[0]["out_round"] is None
+    assert main.history.db.execute("SELECT mode FROM matches").fetchone() == ("last_standing",)
+    assert history_events("settings") == [{"powers": False, "survival_kind": "true_false"}]
+    questions = history_events("question")
+    assert questions and questions[0]["round"] == 1 and questions[0]["question_id"]
+    first = {p["player_id"]: p for p in questions[0]["picks"]}
+    assert first[created["player_id"]]["correct"] and first[created["player_id"]]["option"] is not None
+
 
 async def test_hot_potato_passes_and_explodes(connect, monkeypatch):
     from app import hot_potato
@@ -358,6 +382,7 @@ async def test_hot_potato_passes_and_explodes(connect, monkeypatch):
     monkeypatch.setattr(hot_potato, "START_SECONDS", 0.05)
     monkeypatch.setattr(hot_potato, "PASS_SECONDS", 0.05)
     monkeypatch.setattr(hot_potato, "FUSE_SECONDS", (0.6, 0.6))
+    monkeypatch.setattr(hot_potato, "EXPLODED_SECONDS", 0.05)
     ana, bia = await connect(), await connect()
     created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
     code = created["room"]["code"]
@@ -381,6 +406,13 @@ async def test_hot_potato_passes_and_explodes(connect, monkeypatch):
     assert second in (created["player_id"], joined["player_id"])
     state = await ana.wait_for(lambda s: hp(s).get("phase") == "exploded")
     assert hp(state)["exploded"] == second
+
+    # Com dois, a explosão encerra a partida: o histórico guarda a resposta, a explosão e o pódio.
+    standings = await match_closed()
+    assert standings[0]["id"] == first and standings[1]["id"] == second
+    answers = history_events("answer")
+    assert answers[0]["turn"]["player_id"] == first and answers[0]["turn"]["correct"] and answers[0]["question_id"]
+    assert [e["player_id"] for e in history_events("explosion")] == [second]
 
 
 async def test_hot_potato_with_powers_uses_them_on_the_spot(connect, monkeypatch):
@@ -410,6 +442,9 @@ async def test_hot_potato_with_powers_uses_them_on_the_spot(connect, monkeypatch
     assert (await client.call("use_powerup", {"kind": "free_pass"}))["ok"]
     state = await ana.wait_for(lambda s: potato(s).get("state") == "asking" and potato(s)["holder"] != first)
     assert potato(state)["holder"] != first
+    await asyncio.sleep(0.05)
+    assert history_events("power")[0] == {"kind": "free_pass", "by": first, "target": None, "potato": 0, "round": 1}
+    assert history_events("answer")[0]["turn"]["free_pass"]
 
 
 async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatch):
@@ -451,6 +486,15 @@ async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatc
     state = await host.wait_for(lambda s: tm(s).get("phase") == "results")
     assert all(t["correct"] and t["captain_delta"] == 3 for t in tm(state)["teams"])
 
+    assert history_events("settings")[0]["teams"] == [[ids[0], ids[2]], [ids[1], ids[3]]]
+    (question,) = history_events("question")
+    assert question["round"] == 1 and question["answer"] == answer
+    assert question["teams"][0]["votes"] == {ids[2]: answer, ids[0]: answer} and question["teams"][0]["correct"]
+    for client in clients:
+        await client.call("leave_room")
+    standings = await match_closed("abandoned")
+    assert sorted(len(t["players"]) for t in standings) == [2, 2]
+
 
 async def test_specialist_picker_chooses_the_block_theme(connect):
     ana, bia, created, joined = await setup_room(connect)
@@ -489,6 +533,12 @@ async def test_estimate_match_from_guess_to_podium(connect, monkeypatch):
     await ana.wait_for(lambda s: s["estimate"]["round"] == 2, timeout=2)  # todos pularam
     await ana.call("leave_room")
     await bia.call("leave_room")
+
+    standings = await match_closed("abandoned")
+    assert {p["nickname"] for p in standings} == {"Ana", "Bia"}
+    assert main.history.db.execute("SELECT mode, powerup_max FROM matches").fetchone() == ("estimate", None)
+    (question,) = history_events("question")
+    assert question["round"] == 1 and sorted(g["value"] for g in question["guesses"]) == [1, 1234.5]
 
 
 async def test_players_change_avatar_in_the_lobby_and_repeats_get_a_variant(connect):

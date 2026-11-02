@@ -117,6 +117,8 @@ class HotPotato:
     runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo ao próximo poder
     gifts: list[Gift] = field(default_factory=list)
     revived: list[str] = field(default_factory=list)
+    # Para o histórico: o que aconteceu desde a última leitura (respostas, explosões, poderes).
+    log: list[tuple[str, dict]] = field(default_factory=list)
 
     @classmethod
     def create(
@@ -204,6 +206,7 @@ class HotPotato:
             player_id=player_id, option=option, correct=correct, correct_option=potato.question.answer,
             elapsed_ms=round((now - potato.state_started_at) * 1000),
         )
+        self._log_turn(potato)
         if correct:
             holder.correct += 1
             potato.wrong_streak = 0
@@ -234,9 +237,13 @@ class HotPotato:
         if not me:
             raise HotPotatoError("Você não está na partida.")
         if kind == "resurrection":
-            return self._resurrect(me)
+            self._resurrect(me)
+            self.log.append(("power", {"kind": kind, "by": player_id, "target": None, "potato": None, "round": self.round}))
+            return
         if kind == "double_potato":
-            return self._double(me, now)
+            self._double(me, now)
+            self.log.append(("power", {"kind": kind, "by": player_id, "target": None, "potato": None, "round": self.round}))
+            return
         if kind not in self.held.get(player_id, []):
             raise HotPotatoError("Você não tem esse poder.")
         if self.phase != "playing":
@@ -268,6 +275,7 @@ class HotPotato:
         self.held[player_id].remove(kind)
         potato.uses.append(PowerUpUse(kind=kind, by=player_id, target=None if kind in HELPS else potato.holder, reflected_by=None))
         self._apply(potato, kind, now)
+        self.log.append(("power", {"kind": kind, "by": player_id, "target": potato.uses[-1].target, "potato": potato.id, "round": self.round}))
 
     def drop(self, player_id: str, now: float) -> None:
         """Quem sai da sala está fora; se estava com uma batata, ela vai para o próximo."""
@@ -345,6 +353,15 @@ class HotPotato:
         potato.bomb = False
         potato.thermometer = False
 
+    def _log_turn(self, potato: Potato) -> None:
+        """Guarda a resposta para o histórico. A jogada vai por referência: se o Escudo segurar o erro
+        logo depois, o histórico já leva isso."""
+        q = potato.question
+        self.log.append(("answer", {
+            "question_id": q.id, "theme": q.theme, "difficulty": q.difficulty, "round": self.round,
+            "potato": potato.id, "golden": potato.golden, "turn": potato.turn,
+        }))
+
     def _explode(self, potato: Potato, now: float) -> None:
         for other in self.potatoes:
             if other is not potato and other.state == "asking":
@@ -353,6 +370,10 @@ class HotPotato:
         self.exploded = potato.holder
         self.exploded_potato = potato
         self.player(potato.holder).out_round = self.round
+        self.log.append(("explosion", {
+            "player_id": potato.holder, "potato": potato.id, "golden": potato.golden, "round": self.round,
+            "fuse_total": round(potato.fuse_total, 1), "wrong_streak": potato.wrong_streak,
+        }))
         self.gifts = []
         self._enter("exploded", now, EXPLODED_SECONDS)
         if self.powers:
@@ -465,6 +486,7 @@ class HotPotato:
                 player_id=potato.holder, option=None, correct=True, correct_option=potato.question.answer,
                 elapsed_ms=round((now - potato.state_started_at) * 1000), free_pass=True,
             )
+            self._log_turn(potato)
             self._set_state(potato, "passing", now, PASS_SECONDS)
         elif kind == "accelerator":
             self._burn(potato, now)

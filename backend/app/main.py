@@ -32,6 +32,7 @@ from app.events import (
     UsePowerUpRequest,
 )
 from app import game as rules
+from app import history as modes
 from app.history import MatchHistory
 from app.rooms import Player, Room, RoomError, RoomManager
 
@@ -145,6 +146,8 @@ async def leave_current_room(sid: str) -> None:
     if room := rooms.leave(sid):
         check_round_done(room)
         await broadcast(room)
+    elif event := round_done.get(found[0].code):
+        event.set()  # a sala esvaziou: acorda a partida para ela encerrar (e fechar o histórico) já
 
 
 async def expire_later(code: str, player_id: str, disconnect_seq: int) -> None:
@@ -162,6 +165,7 @@ async def run_game(room: Room) -> None:
     game = room.game
     done = round_done[room.code] = asyncio.Event()
     match_id = record(history.start, room, time.time())
+    roster = modes.roster(room)
 
     def alive() -> bool:
         return rooms.rooms.get(room.code) is room and room.game is game
@@ -238,7 +242,8 @@ async def run_game(room: Room) -> None:
         if round_done.get(room.code) is done:
             del round_done[room.code]
         if match_id:
-            record(history.finish, match_id, room, "finished" if game.phase == "finished" else "abandoned", time.time())
+            status = "finished" if game.phase == "finished" else "abandoned"
+            record(history.finish, match_id, room, status, time.time(), modes.score_standings(roster.values()))
 
 
 async def run_duels(room: Room, done: asyncio.Event, alive) -> None:
@@ -273,6 +278,8 @@ async def run_survival(room: Room) -> None:
     """Conduz o Último de pé: cada fase dura o seu tempo; as respostas acabam antes se todos responderem."""
     survival = room.survival
     done = round_done[room.code] = asyncio.Event()
+    match_id = record(history.start, room, time.time())
+    roster = modes.roster(room)
 
     def alive() -> bool:
         return rooms.rooms.get(room.code) is room and room.survival is survival
@@ -288,15 +295,22 @@ async def run_survival(room: Room) -> None:
             if not alive():
                 return
             survival.advance(time.monotonic())
+            if match_id and survival.phase in ("results", "duel_results"):
+                record(history.event, match_id, "question", modes.survival_question(survival, room), time.time())
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
+        if match_id:
+            status = "finished" if survival.phase == "finished" else "abandoned"
+            record(history.finish, match_id, room, status, time.time(), modes.survival_standings(survival, roster))
 
 
 async def run_estimate(room: Room) -> None:
     """Conduz o Chutômetro: cada fase dura o seu tempo; acaba antes se todos chutaram ou pularam."""
     estimate = room.estimate
     done = round_done[room.code] = asyncio.Event()
+    match_id = record(history.start, room, time.time())
+    roster = modes.roster(room)
 
     def alive() -> bool:
         return rooms.rooms.get(room.code) is room and room.estimate is estimate
@@ -313,15 +327,22 @@ async def run_estimate(room: Room) -> None:
             if not alive():
                 return
             estimate.advance(time.monotonic(), room.players)
+            if match_id and estimate.phase == "results":
+                record(history.event, match_id, "question", modes.estimate_question(estimate), time.time())
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
+        if match_id:
+            status = "finished" if estimate.phase == "finished" else "abandoned"
+            record(history.finish, match_id, room, status, time.time(), modes.score_standings(roster.values()))
 
 
 async def run_team_match(room: Room) -> None:
     """Conduz os Times: cada fase dura o seu tempo, e acaba antes quando todo mundo já fez a sua parte."""
     match = room.team_match
     done = round_done[room.code] = asyncio.Event()
+    match_id = record(history.start, room, time.time())
+    roster, lineup = modes.roster(room), modes.team_lineup(match)
 
     def alive() -> bool:
         return rooms.rooms.get(room.code) is room and room.team_match is match
@@ -337,16 +358,33 @@ async def run_team_match(room: Room) -> None:
                     await asyncio.wait_for(done.wait(), max(0.0, match.deadline() - time.monotonic()))
             if not alive():
                 return
+            before = match.phase
             match.advance(time.monotonic(), room.connected_ids())
+            if match_id and match.phase != before:
+                if match.phase == "results":
+                    record(history.event, match_id, "question", modes.team_question(match), time.time())
+                elif match.phase == "duel_end":
+                    record(history.event, match_id, "duel", modes.team_duel(match), time.time())
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
+        if match_id:
+            status = "finished" if match.phase == "finished" else "abandoned"
+            record(history.finish, match_id, room, status, time.time(), modes.team_standings(match, roster, lineup))
 
 
 async def run_hot_potato(room: Room) -> None:
     """Conduz a Batata quente: espera o prazo da fase (no asking, o pavio) ou uma resposta."""
     potato = room.hot_potato
     done = round_done[room.code] = asyncio.Event()
+    match_id = record(history.start, room, time.time())
+    roster = modes.roster(room)
+
+    def save_events() -> None:
+        events = modes.hot_potato_events(potato)
+        if match_id:
+            for kind, data in events:
+                record(history.event, match_id, kind, data, time.time())
 
     def alive() -> bool:
         return rooms.rooms.get(room.code) is room and room.hot_potato is potato
@@ -354,6 +392,7 @@ async def run_hot_potato(room: Room) -> None:
     try:
         while alive():
             done.clear()
+            save_events()
             await broadcast(room)
             if potato.phase == "finished":
                 return
@@ -364,6 +403,10 @@ async def run_hot_potato(room: Room) -> None:
     finally:
         if round_done.get(room.code) is done:
             del round_done[room.code]
+        save_events()
+        if match_id:
+            status = "finished" if potato.phase == "finished" else "abandoned"
+            record(history.finish, match_id, room, status, time.time(), modes.hot_potato_standings(potato, roster))
 
 
 @sio.event
