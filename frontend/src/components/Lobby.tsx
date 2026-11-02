@@ -185,7 +185,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
           <span className="font-display text-xl tracking-wide text-brand">
             {MODES[room.settings.mode].name}
-            {(room.settings.mode === 'classic' || room.settings.mode === 'specialist') && room.settings.powers && ' com poderes'}
+            {room.settings.mode !== 'estimate' && room.settings.powers && ' com poderes'}
           </span>
           <span className="text-sm text-steel">{MODES[room.settings.mode].hint}</span>
           <span className="absolute top-2 right-2 text-steel">
