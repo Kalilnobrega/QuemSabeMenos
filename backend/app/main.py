@@ -587,6 +587,16 @@ async def arm_powerup(sid: str, data: dict) -> dict:
 
 
 @sio.event
+async def disarm_powerup(sid: str) -> dict:
+    try:
+        room = rooms.disarm_powerup(sid)
+    except RoomError as e:
+        return error(str(e))
+    await broadcast(room)
+    return OkAck().model_dump()
+
+
+@sio.event
 async def use_powerup(sid: str, data: dict) -> dict:
     try:
         request = UsePowerUpRequest.model_validate(data)

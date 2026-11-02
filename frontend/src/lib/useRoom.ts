@@ -116,6 +116,7 @@ export function useRoom() {
     [],
   )
   const skipResults = useCallback(() => request('skip_results'), [])
+  const disarmPowerUp = useCallback(() => request('disarm_powerup'), [])
   const chooseTheme = useCallback((theme: string) => request('choose_theme', { theme }), [])
   const guess = useCallback((value: number) => request('submit_guess', { value }), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
@@ -128,5 +129,5 @@ export function useRoom() {
   }, [])
   const setTeam = useCallback((player_id: string, team: number) => request('set_team', { player_id, team }), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, usePowerUp, skipResults, chooseTheme, guess, updateSettings, updateAvatar, setTeam, chooseRepresentative }
+  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, disarmPowerUp, usePowerUp, skipResults, chooseTheme, guess, updateSettings, updateAvatar, setTeam, chooseRepresentative }
 }

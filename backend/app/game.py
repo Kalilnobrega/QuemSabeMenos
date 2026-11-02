@@ -414,6 +414,18 @@ class Game:
         held.remove(kind)
         self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None, theme=theme)
 
+    def disarm(self, player_id: str) -> None:
+        """Trocar: o poder armado volta para a mão (do jeito que era, lendário ou não), e a pessoa
+        deixa de estar pronta. O Tema não volta, porque a próxima pergunta já foi trocada."""
+        use = self.armed.get(player_id)
+        if not use or not self.can_arm:
+            raise GameError("Não tem poder para trocar agora.")
+        if use.kind == "theme":
+            raise GameError("O tema da próxima já foi trocado: não dá para voltar.")
+        del self.armed[player_id]
+        (self.legendaries if use.legendary else self.powerups).setdefault(player_id, []).append(use.kind)
+        self.ready.discard(player_id)
+
     def _check_coup(self, player_id: str) -> None:
         """Golpe: só no mesmo bloco, contra o dono do tema, uma vez por bloco."""
         if not self.specialist or not self.block_theme:

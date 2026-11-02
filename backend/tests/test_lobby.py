@@ -276,6 +276,13 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     assert bia.state["game"]["armed"] is None
     # Quem arma o poder já conta como pronto: a Ana não precisa tocar em Pular.
     assert ana.state["game"]["ready"] == [created["player_id"]]
+    # Trocar devolve o poder para a mão e tira o pronto; armar de novo volta a valer.
+    assert (await ana.call("disarm_powerup"))["ok"]
+    state = await ana.wait_for(lambda s: s["game"]["armed"] is None)
+    assert kind in state["game"]["powerups"] and state["game"]["ready"] == []
+    assert not (await bia.call("disarm_powerup"))["ok"]  # a Bia não armou nada
+    assert (await ana.call("arm_powerup", {"kind": kind, "target": target}))["ok"]
+    await ana.wait_for(lambda s: s["game"]["armed"] is not None)
 
     assert (await bia.call("skip_results"))["ok"]
     # Todos pularam: a próxima pergunta abre bem antes dos 5 s, já com o poder valendo.

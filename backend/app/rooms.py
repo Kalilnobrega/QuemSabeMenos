@@ -523,6 +523,19 @@ class RoomManager:
                 engine.ready.add(player.id)
         return room
 
+    def disarm_powerup(self, sid: str) -> Room:
+        """Trocar o poder escolhido na revelação (Clássico, Especialista e Último de pé)."""
+        room, player = self._playing(sid)
+        if room.survival:
+            return self._on_survival(room, lambda s: s.disarm(player.id))
+        if not room.game:
+            raise RoomError("Aqui não dá para trocar o poder.")
+        try:
+            room.game.disarm(player.id)
+        except GameError as e:
+            raise RoomError(str(e)) from e
+        return room
+
     def duel_bet(self, sid: str, choice: str, now: float) -> Room:
         room, player = self._playing(sid)
         if room.team_match:

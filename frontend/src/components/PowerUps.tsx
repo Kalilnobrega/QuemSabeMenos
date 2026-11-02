@@ -750,9 +750,10 @@ interface BarProps {
   emptyNote?: string // sem nenhum poder na mão
   onArm: (kind: Kind, target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onSkip: () => Promise<string | null>
+  onDisarm?: () => Promise<string | null> // Trocar: devolve o poder armado para a mão
 }
 
-export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, lockedNote, emptyNote, onArm, onSkip }: BarProps) {
+export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, lockedNote, emptyNote, onArm, onSkip, onDisarm }: BarProps) {
   const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean; mythic?: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const targets = players.filter((p) => p.id !== playerId && (!targetIds || targetIds.includes(p.id)))
@@ -793,7 +794,24 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `Na próxima: ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
       </p>
     )
-    body = armedLine
+    // O Tema não volta: a próxima pergunta já foi trocada.
+    const canSwap = onDisarm && game.armed.kind !== 'theme' && game.can_arm
+    body = (
+      <div className="flex items-center gap-2">
+        <div className="min-w-0 flex-1">{armedLine}</div>
+        {canSwap && (
+          <button
+            onClick={async () => {
+              playSound('select')
+              setError(await onDisarm())
+            }}
+            className="btn-3d btn-sm btn-dark shrink-0 rounded-xl px-3 py-1.5 text-sm font-semibold text-steel"
+          >
+            Trocar
+          </button>
+        )}
+      </div>
+    )
   } else if (selected?.mythic) {
     const info = POWERUP_INFO[selected.kind]
     body = (

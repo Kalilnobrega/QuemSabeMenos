@@ -27,12 +27,13 @@ interface Props {
   onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
+  onDisarm: () => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
 /** Último de pé: Verdadeiro ou Falso com vidas; quando sobram dois, X1 com o tempo caindo. */
-export function Survival({ snapshot, playerId, onAnswer, onArm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
+export function Survival({ snapshot, playerId, onAnswer, onArm, onDisarm, onUse, onSkip, onPlayAgain, onLeave }: Props) {
   const survival = snapshot.room.survival!
   switch (survival.phase) {
     case 'starting':
@@ -45,7 +46,7 @@ export function Survival({ snapshot, playerId, onAnswer, onArm, onUse, onSkip, o
       return <SurvivalPodium snapshot={snapshot} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
     default:
       // key: cada frase começa com a escolha local zerada.
-      return <Statement key={survival.round} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
+      return <Statement key={survival.round} snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onDisarm={onDisarm} onUse={onUse} onSkip={onSkip} />
   }
 }
 
@@ -148,7 +149,7 @@ function DuelIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
   )
 }
 
-function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { snapshot: Snapshot; playerId: string | null } & Pick<Props, 'onAnswer' | 'onArm' | 'onUse' | 'onSkip'>) {
+function Statement({ snapshot, playerId, onAnswer, onArm, onDisarm, onUse, onSkip }: { snapshot: Snapshot; playerId: string | null } & Pick<Props, 'onAnswer' | 'onArm' | 'onDisarm' | 'onUse' | 'onSkip'>) {
   const { room } = snapshot
   const survival = room.survival!
   const duel = survival.duelists.length > 0
@@ -385,6 +386,7 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
           emptyNote={me?.out_round !== null ? 'Fantasma: a cada 3 perguntas chega uma sabotagem para jogar nos vivos.' : undefined}
           onArm={onArm}
           onSkip={onSkip}
+          onDisarm={onDisarm}
         />
       )}
       {error && <p className="text-center text-red-300">{error}</p>}

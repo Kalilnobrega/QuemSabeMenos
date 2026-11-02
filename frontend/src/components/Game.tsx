@@ -113,12 +113,13 @@ interface Props {
   onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
+  onDisarm: () => Promise<string | null>
   onChooseTheme: (theme: string) => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
 
-export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onUse, onSkip, onChooseTheme, onPlayAgain, onLeave }: Props) {
+export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onDisarm, onUse, onSkip, onChooseTheme, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.game!
   if (game.duel) {
     return (
@@ -151,7 +152,7 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
     return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
   }
   // key: cada rodada começa com a escolha local zerada.
-  return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onUse={onUse} onSkip={onSkip} />
+  return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onDisarm={onDisarm} onUse={onUse} onSkip={onSkip} />
 }
 
 const DUEL_INTRO_MS = 2800
@@ -731,9 +732,10 @@ interface RoundProps {
   onArm: Props['onArm']
   onUse: Props['onUse']
   onSkip: Props['onSkip']
+  onDisarm: Props['onDisarm']
 }
 
-function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: RoundProps) {
+function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onSkip }: RoundProps) {
   const { room, receivedAt } = snapshot
   const [choice, setChoice] = useState<number | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -925,7 +927,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onUse, onSkip }: Rou
       {error && <p className="text-center text-red-300">{error}</p>}
 
       {showResults ? (
-        <RoundSummary room={room} game={game} playerId={playerId} onArm={onArm} onSkip={onSkip} />
+        <RoundSummary room={room} game={game} playerId={playerId} onArm={onArm} onDisarm={onDisarm} onSkip={onSkip} />
       ) : hiddenReveal ? (
         <SilencedReveal roundsLeft={game.silenced_rounds} />
       ) : (
@@ -981,9 +983,10 @@ interface SummaryProps {
   playerId: string | null
   onArm: Props['onArm']
   onSkip: Props['onSkip']
+  onDisarm: Props['onDisarm']
 }
 
-function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
+function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
   const deltas: Record<string, number> = Object.fromEntries(
     game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked + (r.specialist_bonus ?? 0)]),
@@ -1030,7 +1033,7 @@ function RoundSummary({ room, game, playerId, onArm, onSkip }: SummaryProps) {
   return (
     <div className="flex flex-col gap-3">
       {headline}
-      <PowerUpBar powers={room.settings.powers} game={game} players={room.players} playerId={playerId} onArm={onArm} onSkip={onSkip} />
+      <PowerUpBar powers={room.settings.powers} game={game} players={room.players} playerId={playerId} onArm={onArm} onDisarm={onDisarm} onSkip={onSkip} />
       {powerupLines.length > 0 && (
         <ul className="flex flex-col gap-1.5" aria-label="Poderes">
           {powerupLines.map(({ key, kind, player, text, delta, me, legendary, mythic }, index) => (

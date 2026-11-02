@@ -328,6 +328,17 @@ class Survival:
         held.remove(kind)
         self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None, theme=theme)
 
+    def disarm(self, player_id: str) -> None:
+        """Trocar: o poder armado volta para a mão e a pessoa deixa de estar pronta."""
+        use = self.armed.get(player_id)
+        if not use or self.phase != "results":
+            raise SurvivalError("Não tem poder para trocar agora.")
+        if use.kind == "theme":
+            raise SurvivalError("O tema da próxima já foi escolhido: não dá para voltar.")
+        del self.armed[player_id]
+        self.held.setdefault(player_id, []).append(use.kind)
+        self.ready.discard(player_id)
+
     def use_now(self, player_id: str, kind: PowerUp) -> None:
         """50/50 e Espiar: durante a pergunta, valem na hora."""
         if self.phase not in ("reading", "answering") or not self.powers_round():
