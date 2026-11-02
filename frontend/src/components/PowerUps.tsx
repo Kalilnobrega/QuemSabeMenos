@@ -764,13 +764,25 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
     setError(await onArm(kind, target, legendary, theme))
   }
 
+  const skipButton = (
+    <SkipButton ready={game.ready} players={players} playerId={playerId} onSkip={onSkip} endsInMs={game.phase_ends_in_ms} durationMs={game.phase_duration_ms} />
+  )
+  // Sem poderes na partida, o painel some: só fica o Próxima no pé da tela.
+  if (!powers) return skipButton
+
+  const held = game.powerups.length + game.legendary_powerups.length + game.mythic_powerups.length
+  const header = (
+    <div className="flex items-baseline justify-between gap-2">
+      <span className="font-display text-lg tracking-wide">Seus poderes</span>
+      <SlotPips used={held} max={game.powerup_max} />
+    </div>
+  )
+
   let body
-  if (!powers) {
-    body = <p className="text-sm text-steel">Todo mundo leu? Pulem juntos para a próxima.</p>
-  } else if (game.armed) {
+  if (game.armed) {
     const info = POWERUP_INFO[game.armed.kind]
     const target = players.find((p) => p.id === game.armed?.target)
-    body = game.armed.legendary ? (
+    const armedLine = game.armed.legendary ? (
       <p className="legendary flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
         Na próxima: {info.name} LENDÁRIO em todo mundo!
@@ -781,6 +793,7 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `Na próxima: ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
       </p>
     )
+    body = armedLine
   } else if (selected?.mythic) {
     const info = POWERUP_INFO[selected.kind]
     body = (
@@ -895,97 +908,188 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         </div>
       </div>
     )
-  } else if (game.powerups.length === 0 && game.legendary_powerups.length === 0 && game.mythic_powerups.length === 0) {
-    body = <p className="text-sm text-steel">{emptyNote ?? 'Sem poderes. Acerte 3 seguidas para ganhar um.'}</p>
+  } else if (held === 0 && emptyNote) {
+    body = <p className="text-sm text-steel">{emptyNote}</p>
   } else {
+    const free = Math.max(0, game.powerup_max - held)
+    const run = game.power_run ?? 0
+    const goal = game.power_run_goal ?? 3
+    const missing = Math.max(1, goal - run)
     body = (
-      <div className="flex flex-col gap-1.5">
-        <div className="flex flex-wrap gap-2">
-          {game.powerups.map((kind, index) =>
-            INSTANT.includes(kind) ? (
-              // 50/50 e Espiar se usam pelo ícone na tela da pergunta, não aqui.
-              <span
-                key={`${kind}-${index}`}
-                title={hint(kind)}
-                className="flex items-center gap-1.5 rounded-xl bg-[#232b3f]/60 px-3 py-1.5 font-semibold text-steel"
-              >
-                <PowerUpIcon kind={kind} className="size-6" />
-                <span className="flex flex-col leading-tight">
-                  {POWERUP_INFO[kind].name}
-                  <CategoryTag kind={kind} note="usar na pergunta" />
-                </span>
-              </span>
-            ) : (
-              <button
-                key={`${kind}-${index}`}
-                onClick={() => {
-                  playSound('select')
-                  setSelected({ kind, legendary: false })
-                }}
-                disabled={!game.can_arm && kind !== 'backpack'}
-                className={`btn-3d btn-sm btn-dark flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm || kind === 'backpack' ? '' : 'opacity-50'}`}
-              >
-                <PowerUpIcon kind={kind} className="size-6" />
-                <span className="flex flex-col text-left leading-tight">
-                  {POWERUP_INFO[kind].name}
-                  <CategoryTag kind={kind} />
-                </span>
-              </button>
-            ),
-          )}
+      <div className="flex flex-col gap-2">
+        {/* Até 3 vagas, uma fileira fixa; com a Mochila (mais vagas), as cartas viram um slide para arrastar. */}
+        <div
+          className={game.powerup_max > 3 ? 'power-slides' : 'grid grid-cols-3 gap-2'}
+          // No fim do slide, tira o esmaecido da beirada para a última carta aparecer inteira.
+          onScroll={(e) => {
+            const el = e.currentTarget
+            el.classList.toggle('at-end', el.scrollLeft + el.clientWidth >= el.scrollWidth - 4)
+          }}
+        >
           {game.mythic_powerups.map((kind, index) => (
-            <button
+            <PowerCard
               key={`mythic-${kind}-${index}`}
+              kind={kind}
+              className="mythic mythic-pulse"
+              tag={<RarityTag rarity="mythic" />}
               onClick={() => {
                 playSound('select')
                 setSelected({ kind, legendary: false, mythic: true })
               }}
-              className="btn-3d btn-sm mythic mythic-pulse flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold"
-            >
-              <PowerUpIcon kind={kind} className="size-6" />
-              <span className="flex flex-col text-left leading-tight">
-                {POWERUP_INFO[kind].name}
-                <RarityTag rarity="mythic" />
-              </span>
-            </button>
+            />
           ))}
           {game.legendary_powerups.map((kind, index) => (
-            <button
+            <PowerCard
               key={`legendary-${kind}-${index}`}
+              kind={kind}
+              className="legendary legendary-pulse"
+              tag={<span className="text-[0.6rem] font-bold tracking-wide uppercase">Lendário</span>}
+              disabled={!game.can_arm}
               onClick={() => {
                 playSound('select')
                 setSelected({ kind, legendary: true })
               }}
-              disabled={!game.can_arm}
-              className={`btn-3d btn-sm legendary legendary-pulse flex items-center gap-1.5 rounded-xl px-3 py-1.5 font-semibold ${game.can_arm ? '' : 'opacity-50'}`}
+            />
+          ))}
+          {game.powerups.map((kind, index) =>
+            INSTANT.includes(kind) ? (
+              // 50/50 e Espiar se usam pelo ícone na tela da pergunta, não aqui.
+              <PowerCard key={`${kind}-${index}`} kind={kind} title={hint(kind)} tag={<CategoryTag kind={kind} note="na pergunta" />} instant />
+            ) : (
+              <PowerCard
+                key={`${kind}-${index}`}
+                kind={kind}
+                className="btn-dark"
+                tag={<CategoryTag kind={kind} />}
+                disabled={!game.can_arm && kind !== 'backpack'}
+                onClick={() => {
+                  playSound('select')
+                  setSelected({ kind, legendary: false })
+                }}
+              />
+            ),
+          )}
+          {Array.from({ length: free }, (_, index) => (
+            <div
+              key={`free-${index}`}
+              className="flex min-h-24 flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-[#3b4664] px-1 py-2 text-center text-xs font-semibold text-steel"
             >
-              <PowerUpIcon kind={kind} className="size-6" />
-              <span className="flex flex-col text-left leading-tight">
-                {POWERUP_INFO[kind].name}
-                <RarityTag rarity="legendary" />
-              </span>
-            </button>
+              {index === 0 ? (
+                <>
+                  <RunRing run={Math.min(run, goal)} goal={goal} />
+                  <span className="leading-tight">
+                    Falta {missing} {missing === 1 ? 'acerto' : 'acertos'}
+                  </span>
+                </>
+              ) : (
+                'Vaga livre'
+              )}
+            </div>
           ))}
         </div>
-        <p className="text-xs text-steel">{game.can_arm ? 'Toque para usar na próxima pergunta.' : (lockedNote ?? 'Poderes não valem na aposta nem na final.')}</p>
+        <p className="text-xs text-steel">
+          {game.powerup_max > 3 && 'Arraste para o lado para ver todas. '}
+          {held === 0
+            ? `Acerte ${goal} seguidas para ganhar um poder.`
+            : game.can_arm
+              ? 'Toque numa carta para usar na próxima pergunta.'
+              : (lockedNote ?? 'Poderes não valem na aposta nem na final.')}
+        </p>
       </div>
     )
   }
 
   return (
     <div className="flex flex-col gap-2.5 rounded-xl bg-panel px-3 py-2.5">
+      {header}
       <div className="min-w-0">
         {body}
         {error && <p className="mt-1 text-sm text-red-300">{error}</p>}
       </div>
-      <SkipButton
-        ready={game.ready}
-        players={players}
-        playerId={playerId}
-        onSkip={onSkip}
-        endsInMs={game.phase_ends_in_ms}
-        durationMs={game.phase_duration_ms}
-      />
+      {skipButton}
     </div>
+  )
+}
+
+/** As vagas da mão: cheias em amarelo. A Mochila aumenta o total. */
+function SlotPips({ used, max }: { used: number; max: number }) {
+  return (
+    <span className="flex items-center gap-1 text-xs font-semibold text-steel" aria-label={`${used} de ${max} vagas ocupadas`}>
+      {Array.from({ length: max }, (_, i) => (
+        <span key={i} className={`size-2.5 rounded-[3px] ${i < used ? 'bg-brand' : 'bg-[#3b4664]'}`} />
+      ))}
+      <span className="ml-0.5 tabular-nums">
+        {used}/{max}
+      </span>
+    </span>
+  )
+}
+
+/** O progresso da sequência de acertos rumo ao próximo poder, na primeira vaga livre. */
+function RunRing({ run, goal }: { run: number; goal: number }) {
+  const r = 15
+  const length = 2 * Math.PI * r
+  return (
+    <svg viewBox="0 0 40 40" className="size-9" aria-hidden="true">
+      <circle cx="20" cy="20" r={r} fill="none" stroke="#3b4664" strokeWidth="5" />
+      {run > 0 && (
+        <circle
+          cx="20"
+          cy="20"
+          r={r}
+          fill="none"
+          stroke="#FFC107"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeDasharray={`${(length * run) / goal} ${length}`}
+          transform="rotate(-90 20 20)"
+        />
+      )}
+      <text x="20" y="24.5" textAnchor="middle" fontSize="12" fontWeight="800" fill="#8b93a3">
+        {run}/{goal}
+      </text>
+    </svg>
+  )
+}
+
+/** Um poder na mão, como carta: ícone grande, o nome em até duas linhas e a etiqueta embaixo. */
+function PowerCard({
+  kind,
+  tag,
+  className = '',
+  disabled = false,
+  instant = false,
+  title,
+  onClick,
+}: {
+  kind: Kind
+  tag: ReactNode
+  className?: string
+  disabled?: boolean
+  instant?: boolean
+  title?: string
+  onClick?: () => void
+}) {
+  const content = (
+    <>
+      <PowerUpIcon kind={kind} className="size-9 shrink-0" />
+      <span lang="pt-BR" className="line-clamp-2 text-sm leading-tight font-semibold break-words hyphens-auto">
+        {POWERUP_INFO[kind].name}
+      </span>
+      <span className="leading-none">{tag}</span>
+    </>
+  )
+  const shape = 'flex min-h-24 min-w-0 flex-col items-center justify-start gap-1 rounded-xl px-1 pt-2.5 pb-2 text-center'
+  if (instant) {
+    return (
+      <div title={title} className={`${shape} bg-[#232b3f]/60 text-steel`}>
+        {content}
+      </div>
+    )
+  }
+  return (
+    <button onClick={onClick} disabled={disabled} className={`btn-3d btn-sm ${shape} ${className} ${disabled ? 'opacity-50' : ''}`}>
+      {content}
+    </button>
   )
 }

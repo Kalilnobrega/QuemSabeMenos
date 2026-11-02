@@ -250,6 +250,11 @@ class Survival:
         """Na revelação, se a próxima pergunta não é do X1."""
         return self.powers and self.phase == "results" and len(self.alive_ids()) > 2
 
+    def _run_goal(self, player_id: str | None) -> int:
+        """Acertos seguidos para ganhar um poder: com uma vida só, menos."""
+        c = self.contender(player_id) if player_id else None
+        return LAST_LIFE_STREAK if c and c.lives == 1 else pw.STREAK_FOR_POWERUP
+
     def capacity(self, player_id: str) -> int:
         return self.powerup_max + self.extra_slots.get(player_id, 0)
 
@@ -745,6 +750,8 @@ class Survival:
             legendary_powerups=[],
             mythic_powerups=list(self.mythics.get(viewer, [])) if viewer else [],
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
+            power_run=self.runs.get(viewer, 0) if viewer else 0,
+            power_run_goal=self._run_goal(viewer),
             starting_powerup=self.starting.get(viewer) if viewer else None,
             can_arm=self.can_arm() and not silenced,
             armed=self.armed.get(viewer) if viewer else None,

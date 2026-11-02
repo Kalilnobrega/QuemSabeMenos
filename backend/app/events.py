@@ -327,6 +327,9 @@ class GameView(BaseModel):
     duels: list[DuelChallenge]  # X1 chamados nesta revelação, na ordem em que vão acontecer
     duel: DuelView | None
     powerup_max: int
+    # Acertos seguidos rumo ao próximo poder e quantos precisa (para o progresso nas vagas vazias).
+    power_run: int = 0
+    power_run_goal: int = 3
     starting_powerup: PowerUp | None
     can_arm: bool  # dá para armar poder agora (revelação antes de uma pergunta comum)
     armed: PowerUpUse | None
@@ -425,6 +428,9 @@ class SurvivalView(BaseModel):
     legendary_powerups: list[PowerUp]  # sempre vazio: não tem lendário neste modo
     mythic_powerups: list[PowerUp]  # a Ressurreição dos fantasmas
     powerup_max: int
+    # Acertos seguidos rumo ao próximo poder e quantos precisa (para o progresso nas vagas vazias).
+    power_run: int = 0
+    power_run_goal: int = 3
     starting_powerup: PowerUp | None
     can_arm: bool
     armed: PowerUpUse | None

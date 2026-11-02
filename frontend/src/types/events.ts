@@ -392,6 +392,8 @@ export interface GameView {
   duels: DuelChallenge[];
   duel: DuelView | null;
   powerup_max: number;
+  power_run?: number;
+  power_run_goal?: number;
   starting_powerup:
     | (
         | "fifty_fifty"
@@ -1219,6 +1221,8 @@ export interface SurvivalView {
     | "blessing"
   )[];
   powerup_max: number;
+  power_run?: number;
+  power_run_goal?: number;
   starting_powerup:
     | (
         | "fifty_fifty"

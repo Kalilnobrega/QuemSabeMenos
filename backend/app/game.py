@@ -1192,6 +1192,8 @@ class Game:
             duels=[DuelChallenge(challenger=c, rival=r) for c, r in self.duel_queue],
             duel=self._duel_view(viewer),
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
+            power_run=min(self.right_runs.get(viewer, 0), powerups.STREAK_FOR_POWERUP) if viewer else 0,
+            power_run_goal=powerups.STREAK_FOR_POWERUP,
             starting_powerup=self.starting_powerups.get(viewer) if viewer else None,
             can_arm=self.can_arm and not silence_left,
             armed=self.armed.get(viewer) if viewer else None,

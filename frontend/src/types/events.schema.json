@@ -905,6 +905,14 @@
         "powerup_max": {
           "type": "integer"
         },
+        "power_run": {
+          "default": 0,
+          "type": "integer"
+        },
+        "power_run_goal": {
+          "default": 3,
+          "type": "integer"
+        },
         "starting_powerup": {
           "anyOf": [
             {
@@ -3099,6 +3107,14 @@
           "type": "array"
         },
         "powerup_max": {
+          "type": "integer"
+        },
+        "power_run": {
+          "default": 0,
+          "type": "integer"
+        },
+        "power_run_goal": {
+          "default": 3,
           "type": "integer"
         },
         "starting_powerup": {

@@ -44,6 +44,30 @@ body {
 .level-land {
   animation: level-land 0.01s 1.05s both;
 }
+/* Cartas de poder com mais de 3 vagas (Mochila): um slide que se arrasta para o lado. As cartas
+   têm a largura de um pouco menos de um terço, para a quarta aparecer pela beirada e chamar o arrasto. */
+.power-slides {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding-bottom: 6px; /* espaço para a sombra 3D das cartas */
+  margin-bottom: -6px;
+  mask-image: linear-gradient(to right, #000 85%, transparent);
+}
+.power-slides::-webkit-scrollbar {
+  display: none;
+}
+.power-slides > * {
+  flex: 0 0 calc((100% - 1rem) / 3.3);
+  scroll-snap-align: start;
+}
+.power-slides.at-end {
+  mask-image: none;
+}
+
 /* O Pular: a barra do tempo da revelação esvazia por trás do botão. */
 .skip-drain {
   animation-name: skip-drain;
