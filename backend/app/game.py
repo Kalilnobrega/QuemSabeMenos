@@ -61,10 +61,13 @@ BET_SECONDS = 12.0
 # precisa voltar: sem essa folga, quem clica no último instante fica sem resposta.
 LATE_SECONDS = 1.0
 PREPARATION_PHASES = ("starting", "level", "intro", "betting", "theme_pick")
-# A revelação dura o suficiente para ler a curiosidade; acaba antes se todos pularem.
+# A revelação dura o suficiente para ler a curiosidade (8 a 12s); com poderes, 4s a mais para
+# escolher poder e alvo. Vale para todos os modos com revelação, e acaba antes se todos pularem.
+RESULTS_SECONDS_BASE = 5.0
 RESULTS_SECONDS_PER_CHAR = 0.055
-MIN_RESULTS_SECONDS = 10.0
-MAX_RESULTS_SECONDS = 15.0
+MIN_RESULTS_SECONDS = 8.0
+MAX_RESULTS_SECONDS = 12.0
+POWERS_RESULTS_EXTRA_SECONDS = 4.0
 # Aposta: uma por partida, antes da pergunta do meio das difíceis; quem não aposta fica com 0.
 BET_PERCENTS = (25, 50, 75, 100)
 BET_MAX_PERCENT = 100
@@ -192,8 +195,9 @@ def reading_seconds(text: str) -> float:
     return min(MAX_READING_SECONDS, max(MIN_READING_SECONDS, len(text) * TYPING_SECONDS_PER_CHAR))
 
 
-def results_seconds(fact: str) -> float:
-    return min(MAX_RESULTS_SECONDS, max(MIN_RESULTS_SECONDS, 7 + len(fact) * RESULTS_SECONDS_PER_CHAR))
+def results_seconds(fact: str, powers: bool = False) -> float:
+    reading = min(MAX_RESULTS_SECONDS, max(MIN_RESULTS_SECONDS, RESULTS_SECONDS_BASE + len(fact) * RESULTS_SECONDS_PER_CHAR))
+    return reading + (POWERS_RESULTS_EXTRA_SECONDS if powers else 0)
 
 
 def max_bet(score: int) -> int:
@@ -866,7 +870,7 @@ class Game:
             if self.is_bet_round:
                 self._bet_prizes(players, score_before)
         self.theme_choices = self._draw_theme_choices()
-        self._enter("results", now, results_seconds(self.question.fact))
+        self._enter("results", now, results_seconds(self.question.fact, self.powers))
 
     def _break_resurrections(self, players: list[Scorable]) -> None:
         """A Ressurreição de quem saiu do último quebra."""

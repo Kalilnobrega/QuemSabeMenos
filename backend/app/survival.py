@@ -32,12 +32,10 @@ from app.events import (
     SurvivalView,
     Stab,
 )
-from app.game import reading_seconds
+from app.game import reading_seconds, results_seconds
 
 START_SECONDS = 5.0
 LEVEL_SECONDS = 3.0
-RESULTS_SECONDS = 6.0
-POWERS_RESULTS_SECONDS = 12.0  # dá tempo de escolher poder e alvo; todos pulando, acaba antes
 DUEL_INTRO_SECONDS = 3.0
 DUEL_RESULTS_SECONDS = 3.0
 LATE_SECONDS = 1.0  # tolerância de rede para respostas no limite
@@ -462,7 +460,7 @@ class Survival:
         if self.powers:
             self._gains()
             self.theme_choices = self._draw_theme_choices()
-        self._enter("results", now, POWERS_RESULTS_SECONDS if self.powers else RESULTS_SECONDS)
+        self._enter("results", now, results_seconds(self.question.fact, self.powers))
 
     def _shielded(self, pick: SurvivalPick) -> bool:
         """O Escudo segura a vida (e a Maldição junto)."""

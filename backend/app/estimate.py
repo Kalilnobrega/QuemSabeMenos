@@ -17,14 +17,13 @@ from typing import Literal, Protocol
 from pydantic import BaseModel, Field
 
 from app.events import EstimateGuess, EstimateScoring, EstimateView
-from app.game import point_scale as scale_for, split_by_difficulty
+from app.game import point_scale as scale_for, results_seconds, split_by_difficulty
 
 ESTIMATES_DIR = Path(__file__).parent / "estimates"
 ROUND_OPTIONS = (10, 15, 20)
 START_SECONDS = 5.0
 LEVEL_SECONDS = 3.0  # a tela de "Próximo nível", como no clássico
 ANSWER_SECONDS = 20.0
-RESULTS_SECONDS = 10.0
 LATE_SECONDS = 1.0  # tolerância de rede para chutes no limite
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
 
@@ -212,7 +211,7 @@ class Estimate:
             )
         # Do mais perto para o mais longe; quem não chutou fica no fim.
         self.results.sort(key=lambda r: (r.error_percent is None, r.error_percent or 0, r.elapsed_ms or 0))
-        self._enter("results", now, RESULTS_SECONDS)
+        self._enter("results", now, results_seconds(q.fact))
 
     def deadline(self) -> float:
         return self.phase_ends_at + (LATE_SECONDS if self.phase == "answering" else 0)

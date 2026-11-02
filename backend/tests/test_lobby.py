@@ -27,6 +27,7 @@ def fresh_rooms(monkeypatch, tmp_path):
     monkeypatch.setattr(game, "LATE_SECONDS", 0.05)
     monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 0.05)
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 0.05)
+    monkeypatch.setattr(game, "POWERS_RESULTS_EXTRA_SECONDS", 0)
     monkeypatch.setattr(rooms, "ANSWER_SECONDS", 1.0)
 
 
@@ -340,7 +341,7 @@ async def test_duel_stops_the_match_and_then_it_goes_on(connect, monkeypatch):
 async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
     from app import survival
 
-    for name in ("START_SECONDS", "LEVEL_SECONDS", "RESULTS_SECONDS", "DUEL_INTRO_SECONDS", "DUEL_RESULTS_SECONDS", "LATE_SECONDS"):
+    for name in ("START_SECONDS", "LEVEL_SECONDS", "DUEL_INTRO_SECONDS", "DUEL_RESULTS_SECONDS", "LATE_SECONDS"):
         monkeypatch.setattr(survival, name, 0.05)
     monkeypatch.setitem(survival.RULES, "true_false", dataclasses.replace(survival.RULES["true_false"], answer_seconds=0.5))
     ana, bia, caio = await connect(), await connect(), await connect()
@@ -452,7 +453,7 @@ async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatc
 
     monkeypatch.setattr(teams, "START_SECONDS", 0.05)
     monkeypatch.setattr(teams, "reading_seconds", lambda text: 0.05)
-    monkeypatch.setattr(teams, "results_seconds", lambda fact: 0.05)
+    monkeypatch.setattr(teams, "results_seconds", lambda fact, powers=False: 0.05)
     monkeypatch.setattr(teams, "LEVEL_SECONDS", 0.05)
     clients = [await connect() for _ in range(4)]
     created = await clients[0].call("create_room", {"nickname": "Ana", "avatar": "gato"})
@@ -517,7 +518,8 @@ async def test_estimate_match_from_guess_to_podium(connect, monkeypatch):
     from app import estimate
 
     monkeypatch.setattr(estimate, "START_SECONDS", 0.05)
-    monkeypatch.setattr(estimate, "RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
     ana, bia, created, joined = await setup_room(connect)
     assert (await ana.call("update_settings", {"mode": "estimate", "rounds": 10}))["ok"]
     assert (await ana.call("start_game"))["ok"]

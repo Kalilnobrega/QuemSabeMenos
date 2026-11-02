@@ -276,6 +276,10 @@ def test_results_last_longer_for_longer_facts():
     assert results_seconds("Curta.") == MIN_RESULTS_SECONDS
     assert results_seconds("x" * 1000) == MAX_RESULTS_SECONDS
     assert MIN_RESULTS_SECONDS < results_seconds("x" * 100) < MAX_RESULTS_SECONDS
+    # Com poderes, 4s a mais em qualquer tamanho: 8–12s viram 12–16s.
+    assert (MIN_RESULTS_SECONDS, MAX_RESULTS_SECONDS) == (8, 12)
+    assert results_seconds("Curta.", powers=True) == 12
+    assert results_seconds("x" * 1000, powers=True) == 16
 
 
 def test_view_hides_answer_until_results():

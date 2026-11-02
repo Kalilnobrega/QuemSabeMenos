@@ -838,7 +838,7 @@ class TeamMatch:
             self._wear()
         self._plan_next_captains(connected)
         self.theme_choices = self._draw_theme_choices()
-        self._enter("results", now, results_seconds(q.fact) + (4 if self.powers else 0))
+        self._enter("results", now, results_seconds(q.fact, self.powers))
 
     def _score(self, team: Team, connected: list[str]) -> None:
         q = self.question
