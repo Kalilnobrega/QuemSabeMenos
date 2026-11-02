@@ -7,7 +7,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { ResurrectionScene } from './ResurrectionScene'
-import { PlayerPodium, StartScreen } from './Screens'
+import { BannerList, EffectChips, PlayerPodium, StartScreen, type BannerItem, type ChipItem } from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D']
 const HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass', 'thermometer']
@@ -148,7 +148,7 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
       {status && <p className="min-h-7 text-center font-hand text-xl font-medium">{status}</p>}
 
       {shown.map((potato) => (
-        <QuestionPanel key={potato.id} potato={potato} game={game} receivedAt={snapshot.receivedAt} playerId={playerId} name={name} labeled={game.potatoes.length > 1} onAnswer={onAnswer} />
+        <QuestionPanel key={potato.id} potato={potato} game={game} receivedAt={snapshot.receivedAt} playerId={playerId} name={name} players={snapshot.room.players} labeled={game.potatoes.length > 1} onAnswer={onAnswer} />
       ))}
 
       {game.powers && <PotatoPowers game={game} playerId={playerId} onUse={onUse} />}
@@ -173,6 +173,7 @@ function QuestionPanel({
   receivedAt,
   playerId,
   name,
+  players,
   labeled,
   onAnswer,
 }: {
@@ -181,6 +182,7 @@ function QuestionPanel({
   receivedAt: number
   playerId: string | null
   name: (id: string | null | undefined) => string
+  players: PlayerView[]
   labeled: boolean
   onAnswer: Props['onAnswer']
 }) {
@@ -283,7 +285,7 @@ function QuestionPanel({
         )}
       </div>
       {status && <p className="min-h-7 text-center font-hand text-xl font-medium">{status}</p>}
-      {potato.uses.length > 0 && <PotatoUses uses={potato.uses} name={name} playerId={playerId} />}
+      {potato.uses.length > 0 && <PotatoUses uses={potato.uses} name={name} playerId={playerId} players={players} />}
       {blinded && <div className="flashbang-flash" aria-hidden="true" />}
       {potato.text && (
         <Magnifier active={hits('magnifier') && !blinded}>
@@ -376,7 +378,8 @@ export function DoublePotatoScene({ potato, players, playerId }: { potato: Potat
 }
 
 /** O que foi usado nesta pergunta: quem jogou o quê em quem. */
-function PotatoUses({ uses, name, playerId }: { uses: PowerUpUse[]; name: (id: string | null | undefined) => string; playerId: string | null }) {
+function PotatoUses({ uses, name, playerId, players }: { uses: PowerUpUse[]; name: (id: string | null | undefined) => string; playerId: string | null; players: PlayerView[] }) {
+  const playerOf = (id: string | null | undefined) => players.find((p) => p.id === id)
   const line = (use: PowerUpUse) => {
     const info = POWERUP_INFO[use.kind]
     const by = name(use.by)
@@ -393,15 +396,34 @@ function PotatoUses({ uses, name, playerId }: { uses: PowerUpUse[]; name: (id: s
     }
     return `${by} usou ${info.name}${extra[use.kind] ?? ''}!`
   }
+  // Sabotagem em você vira banner (carimbo e tremidinha); o resto, etiquetas numa linha.
+  const hits = (use: PowerUpUse) => use.target === playerId && use.by !== playerId
+  const banners: BannerItem[] = uses.filter(hits).map((use) => ({
+    key: `${use.by}-${use.kind}`,
+    player: playerOf(use.by),
+    icon: <PowerUpIcon kind={use.kind} className="size-full" />,
+    who: name(use.by),
+    title: `Jogou ${POWERUP_INFO[use.kind].name} em você`,
+    detail: POTATO_HINTS[use.kind] ?? POWERUP_INFO[use.kind].hint,
+    tone: POWERUP_INFO[use.kind].tone,
+    hit: true,
+  }))
+  const chips: ChipItem[] = uses
+    .filter((use) => !hits(use))
+    .map((use) => ({
+      key: `${use.by}-${use.kind}`,
+      player: use.by === playerId ? undefined : playerOf(use.by),
+      icon: <PowerUpIcon kind={use.kind} className="size-full" />,
+      label: use.kind === 'ghost_hint' ? 'Palpite do além' : use.target ? `${POWERUP_INFO[use.kind].name} em ${name(use.target)}` : POWERUP_INFO[use.kind].name,
+      tone: POWERUP_INFO[use.kind].tone,
+      tip: line(use),
+      me: use.by === playerId,
+    }))
   return (
-    <ul className="flex flex-col gap-1" aria-label="Poderes nesta pergunta">
-      {uses.map((use) => (
-        <li key={`${use.by}-${use.kind}`} className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1 text-sm font-semibold ${POWERUP_INFO[use.kind].tone}`}>
-          <PowerUpIcon kind={use.kind} className="size-5 shrink-0" />
-          <span className="min-w-0">{line(use)}</span>
-        </li>
-      ))}
-    </ul>
+    <div className="flex flex-col gap-1.5">
+      <BannerList items={banners} startDelay={0} label="Poderes em você" />
+      <EffectChips items={chips} startDelay={banners.length * 0.28} />
+    </div>
   )
 }
 

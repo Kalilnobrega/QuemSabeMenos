@@ -9,7 +9,7 @@ import { TEAMS, teamName } from '../lib/teams'
 import type { Snapshot } from '../lib/useRoom'
 import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide } from '../types/events'
 import { Confetti, DuelScreen } from './Game'
-import { EndScreen, ImpossibleIntro, LevelIntro, SkipButton, StartScreen } from './Screens'
+import { BannerList, EffectChips, EndScreen, ImpossibleIntro, LevelIntro, SkipButton, StartScreen, type BannerItem, type ChipItem } from './Screens'
 import { AnsweredAvatar } from './Answered'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { TaxScene } from './TaxScene'
@@ -462,15 +462,40 @@ function TeamUses({ uses, match, players, playerId }: { uses: TeamPowerUse[]; ma
     if (use.kind === 'theme') return `${by} escolheu o tema: ${use.theme}`
     return at ? `${by} jogou ${info.name} ${at}` : `${by} usou ${info.name}`
   }
+  // O que atinge o seu time vira banner (carimbo e tremidinha); o resto, etiquetas numa linha.
+  const hits = (use: TeamPowerUse) => match.my_team != null && use.target_team === match.my_team && use.by_team !== match.my_team
+  const banners: BannerItem[] = uses.filter(hits).map((use, i) => {
+    const info = POWERUP_INFO[use.kind]
+    return {
+      key: `${use.kind}-${use.by_team}-${i}`,
+      icon: <PowerUpIcon kind={use.kind} className="size-full" />,
+      who: teamName(use.by_team),
+      title: use.kind === 'gag' ? `Pôs Mordaça em ${nick(use.target_player)}` : `Jogou ${info.name} no seu time`,
+      detail: TEAM_HINTS[use.kind] ?? info.hint,
+      tone: info.tone,
+      hit: true,
+    }
+  })
+  const chips: ChipItem[] = uses
+    .filter((use) => !hits(use))
+    .map((use, i) => {
+      const info = POWERUP_INFO[use.kind]
+      const ours = use.by_team === match.my_team
+      const where = use.target_team == null ? '' : use.target_team === match.my_team ? ' no seu time' : ` no ${teamName(use.target_team)}`
+      return {
+        key: `${use.kind}-${use.by_team}-${i}`,
+        icon: <PowerUpIcon kind={use.kind} className="size-full" />,
+        label: use.kind === 'theme' ? `Tema: ${use.theme}` : `${ours ? '' : `${teamName(use.by_team)}: `}${info.name}${where}`,
+        tone: info.tone,
+        tip: line(use),
+        me: ours,
+      }
+    })
   return (
-    <ul className="flex flex-col gap-1" aria-label="Poderes nesta pergunta">
-      {uses.map((use, i) => (
-        <li key={`${use.kind}-${use.by_team}-${i}`} className={`flex items-center gap-2 rounded-xl px-3 py-1 text-sm font-semibold ${POWERUP_INFO[use.kind].tone}`}>
-          <PowerUpIcon kind={use.kind} className="size-5 shrink-0" />
-          <span className="min-w-0">{line(use)}</span>
-        </li>
-      ))}
-    </ul>
+    <div className="flex flex-col gap-1.5">
+      <BannerList items={banners} startDelay={0} label="Poderes no seu time" />
+      <EffectChips items={chips} startDelay={banners.length * 0.28} />
+    </div>
   )
 }
 

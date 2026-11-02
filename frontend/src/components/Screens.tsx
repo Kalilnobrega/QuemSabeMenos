@@ -503,3 +503,54 @@ export function BannerList({ items, startDelay = 0.4, step = 0.28, label }: { it
     </ul>
   )
 }
+
+/** Um poder valendo, em etiqueta: ícone, nome e, nos que duram, bolinhas das perguntas que faltam. */
+export interface ChipItem {
+  key: string
+  player?: PlayerView
+  icon: ReactNode
+  label: string
+  tone: string
+  /** A explicação completa, que aparece ao tocar. */
+  tip: string
+  me?: boolean
+  /** Perguntas que faltam (contando esta) de quantas o poder dura. */
+  pips?: { left: number; total: number }
+}
+
+/** Os poderes valendo numa linha só (quebra se não couber). Tocar numa etiqueta mostra a explicação. */
+export function EffectChips({ items, startDelay = 0, step = 0.18, concealed = false }: { items: ChipItem[]; startDelay?: number; step?: number; concealed?: boolean }) {
+  const [open, setOpen] = useState<string | null>(null)
+  if (items.length === 0) return null
+  const tip = items.find((item) => item.key === open)?.tip
+  return (
+    <div className={`flex flex-col gap-1.5 ${concealed ? 'invisible' : ''}`}>
+      <ul className="flex flex-wrap gap-1.5" aria-label="Poderes valendo">
+        {items.map((item, index) => (
+          <li key={item.key} className="banner-stamp" style={{ animationDelay: `${startDelay + index * step}s` }}>
+            <button
+              onClick={() => setOpen((current) => (current === item.key ? null : item.key))}
+              aria-expanded={open === item.key}
+              title={item.tip}
+              className={`flex items-center gap-1.5 rounded-full py-0.5 pr-2.5 pl-1 text-sm font-bold ${item.tone} ${item.me ? 'ring-1 ring-brand/60' : 'opacity-80'}`}
+            >
+              {item.player ? <img src={avatarUrl(item.player)} alt="" className="size-5" /> : null}
+              <span className="size-4 shrink-0" aria-hidden="true">
+                {item.icon}
+              </span>
+              {item.label}
+              {item.pips && (
+                <span className="flex gap-0.5" aria-label={`faltam ${item.pips.left} de ${item.pips.total}`}>
+                  {Array.from({ length: item.pips.total }, (_, i) => (
+                    <span key={i} className={`size-1.5 rounded-full bg-current ${i < item.pips!.left ? '' : 'opacity-30'}`} />
+                  ))}
+                </span>
+              )}
+            </button>
+          </li>
+        ))}
+      </ul>
+      {tip && <p className="rounded-lg bg-panel px-3 py-1.5 text-sm text-chalk">{tip}</p>}
+    </div>
+  )
+}

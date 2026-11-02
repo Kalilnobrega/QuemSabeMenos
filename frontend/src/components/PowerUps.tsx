@@ -14,7 +14,7 @@ import {
   type PowerView,
 } from '../lib/powerups'
 import type { PlayerView, PowerUpUse } from '../types/events'
-import { SkipButton } from './Screens'
+import { BannerList, EffectChips, SkipButton, type BannerItem, type ChipItem } from './Screens'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
 
@@ -679,29 +679,83 @@ export function ActivePowerUps({
     return `${cap(by)} jogou ${info.name} em ${target}!`
   }
 
+  // O que te atinge vira banner (com carimbo e tremidinha); o resto, etiquetas numa linha.
+  const playerOf = (id: string | null) => players.find((p) => p.id === id)
+  const hits = (use: PowerUpUse) =>
+    use.kind !== 'steal' &&
+    (use.reflected_by ? use.by === playerId && use.reflected_by !== playerId : use.by !== playerId && (use.legendary || use.target === playerId))
+  const hitDetail: Partial<Record<Kind, string>> = {
+    scratch: 'Raspe para ver a pergunta',
+    scramble: 'As palavras estão embaralhadas',
+    accelerator: survival ? 'Um terço do tempo' : 'Um terço do tempo e sem QI cheio',
+    mirror: 'As alternativas estão espelhadas',
+    magnifier: 'Arraste a lupa pelo cabo para ler',
+    toll: 'Cada resposta tem um preço',
+    curse: 'Se errar, perde 2 vidas',
+    blood_pact: 'Se quem jogou perder vida, você perde junto',
+    decoy: 'Duas alternativas são mentira',
+    flashbang: 'Leia rápido: estoura em 4 segundos',
+    silence: 'Por 2 perguntas, sem relógio, placar nem revelação',
+  }
+  const banners: BannerItem[] = uses.filter(hits).map((use) => {
+    const info = POWERUP_INFO[use.kind]
+    const attacker = use.reflected_by ?? use.by
+    return {
+      key: `${use.by}-${use.kind}-${use.target}-${use.legendary}`,
+      player: playerOf(attacker),
+      icon: <PowerUpIcon kind={use.kind} className="size-full" />,
+      who: cap(name(attacker)),
+      title: use.reflected_by ? `Devolveu ${info.name} com o Reverso` : use.legendary ? `${info.name} lendário em todo mundo` : `Jogou ${info.name} em você`,
+      detail: hitDetail[use.kind] ?? line(use),
+      tone: use.legendary ? 'legendary' : POWERUP_INFO[use.kind].tone,
+      hit: true,
+    }
+  })
+  const lastingOf = (kind: Kind) => game.lasting.find((l) => l.kind === kind)
+  const chips: ChipItem[] = [
+    ...uses
+      .filter((use) => !hits(use))
+      .map((use) => {
+        const info = POWERUP_INFO[use.kind]
+        const own = use.by === playerId
+        const lasting = own ? lastingOf(use.kind) : undefined
+        const label =
+          use.kind === 'theme'
+            ? `Tema: ${use.theme}`
+            : use.kind === 'coup'
+              ? `Golpe: ${use.theme}`
+              : use.legendary
+                ? `${info.name} lendário`
+                : use.target
+                  ? `${info.name} em ${name(use.target)}`
+                  : info.name
+        return {
+          key: `${use.by}-${use.kind}-${use.target}-${use.legendary}`,
+          player: own ? undefined : playerOf(use.by),
+          icon: <PowerUpIcon kind={use.kind} className="size-full" />,
+          label,
+          tone: use.legendary ? 'legendary' : info.tone,
+          tip: line(use),
+          me: mine(use),
+          pips: lasting ? { left: lasting.rounds_left, total: lasting.total } : undefined,
+        }
+      }),
+    ...later.map((l) => ({
+      key: `later-${l.kind}`,
+      icon: <PowerUpIcon kind={l.kind} className="size-full" />,
+      label: POWERUP_INFO[l.kind].name,
+      tone: POWERUP_INFO[l.kind].tone,
+      tip: `${POWERUP_INFO[l.kind].name} ainda valendo (${l.total - l.rounds_left + 1} de ${l.total})${l.rounds_left === 1 && l.kind !== 'extra_time' ? ': esta é a última pergunta.' : '.'}`,
+      me: true,
+      pips: { left: l.rounds_left, total: l.total },
+    })),
+  ]
+
   return (
-    <ul className={`flex flex-col gap-1.5 ${concealed ? 'invisible' : ''}`} aria-label="Poderes valendo">
-      {uses.map((use, index) => (
-        <li
-          key={`${use.by}-${use.kind}-${use.target}-${use.legendary}`}
-          className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm font-semibold ${
-            use.legendary ? 'legendary' : `${POWERUP_INFO[use.kind].tone} ${mine(use) ? 'ring-1 ring-brand/60' : 'opacity-70'}`
-          }`}
-          style={{ animationDelay: `${index * 0.1}s` }}
-        >
-          <PowerUpIcon kind={use.kind} className="size-5 shrink-0" />
-          <span className="min-w-0">{line(use)}</span>
-        </li>
-      ))}
-      {later.map((l) => (
-        <li key={l.kind} className={`flex items-center gap-2 rounded-xl px-3 py-1.5 text-sm font-semibold ring-1 ring-brand/60 ${POWERUP_INFO[l.kind].tone}`}>
-          <PowerUpIcon kind={l.kind} className="size-5 shrink-0" />
-          <span className="min-w-0">
-            {POWERUP_INFO[l.kind].name} ainda valendo ({l.total - l.rounds_left + 1} de {l.total}){l.rounds_left === 1 && l.kind !== 'extra_time' ? ': esta é a última pergunta.' : '.'}
-          </span>
-        </li>
-      ))}
-    </ul>
+    <div className={`flex flex-col gap-1.5 ${concealed ? 'invisible' : ''}`}>
+      <BannerList items={banners} startDelay={0} label="Poderes em você" />
+      <EffectChips items={chips} startDelay={banners.length * 0.28} />
+    </div>
   )
 }
 
