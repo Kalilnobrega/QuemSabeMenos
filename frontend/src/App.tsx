@@ -158,7 +158,8 @@ export default function App() {
       }`}
     >
       {content}
-      <SoundToggle />
+      {/* Só na tela inicial e no lobby: na partida, o pé da tela fica para o Próxima. */}
+      {!(room?.game || room?.survival || room?.hot_potato || room?.team_match || room?.estimate) && <SoundToggle />}
       {!connected && (
         <p className="flex items-center gap-2 font-hand font-medium text-base text-steel">
           <span className="relative flex size-2.5" aria-hidden="true">
