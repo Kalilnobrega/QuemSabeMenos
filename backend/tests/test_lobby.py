@@ -274,8 +274,9 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     assert (await ana.call("arm_powerup", {"kind": kind, "target": target}))["ok"]
     assert ana.state["game"]["armed"]["kind"] == kind
     assert bia.state["game"]["armed"] is None
+    # Quem arma o poder já conta como pronto: a Ana não precisa tocar em Pular.
+    assert ana.state["game"]["ready"] == [created["player_id"]]
 
-    assert (await ana.call("skip_results"))["ok"]
     assert (await bia.call("skip_results"))["ok"]
     # Todos pularam: a próxima pergunta abre bem antes dos 5 s, já com o poder valendo.
     state = await ana.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)

@@ -581,6 +581,7 @@ async def arm_powerup(sid: str, data: dict) -> dict:
         return error("Dados inválidos.")
     except RoomError as e:
         return error(str(e))
+    check_round_done(room)  # quem arma já conta como pronto: pode ter sido o último
     await broadcast(room)
     return OkAck().model_dump()
 

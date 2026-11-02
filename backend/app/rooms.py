@@ -500,20 +500,27 @@ class RoomManager:
     ) -> Room:
         room, player = self._playing(sid)
         if room.team_match:
-            return self._on_teams(room, lambda m: m.arm(player.id, kind, target_team, target, theme))
-        if room.hot_potato:
+            self._on_teams(room, lambda m: m.arm(player.id, kind, target_team, target, theme))
+        elif room.hot_potato:
             raise RoomError("Na Batata quente os poderes valem na hora.")
-        if room.survival:
-            return self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
-        try:
-            if kind == "resurrection":
-                room.game.resurrect(player, room.players)
-            elif kind == "duel":
-                room.game.challenge(player.id, target, [p.id for p in room.players])
-            else:
-                room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        elif room.survival:
+            self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
+        else:
+            try:
+                if kind == "resurrection":
+                    room.game.resurrect(player, room.players)
+                elif kind == "duel":
+                    room.game.challenge(player.id, target, [p.id for p in room.players])
+                else:
+                    room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
+            except GameError as e:
+                raise RoomError(str(e)) from e
+        # Escolheu o poder na revelação: já conta como pronto para a próxima, sem tocar em Pular.
+        # A Mochila não conta, porque ela dá outro poder para escolher em seguida.
+        if kind != "backpack":
+            engine = room.team_match or room.survival or room.game
+            if engine.phase == "results":
+                engine.ready.add(player.id)
         return room
 
     def duel_bet(self, sid: str, choice: str, now: float) -> Room:
