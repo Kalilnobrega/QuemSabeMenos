@@ -1,17 +1,15 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import coroa from '../assets/brand/coroa.svg'
-import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
-import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { reducedMotion, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainLabel, scrambleWords } from '../lib/powerups'
-import type { PlayerView, PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
+import type { PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
 import { AnsweredAvatar } from './Answered'
 import { DaggerStrike } from './DaggerStrike'
 import { ResurrectionScene } from './ResurrectionScene'
-import { Confetti, PeekBadge } from './Game'
-import { LeaveButton } from './LeaveButton'
+import { PeekBadge } from './Game'
+import { LevelIntro, PlayerPodium, StartScreen } from './Screens'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -40,7 +38,7 @@ export function Survival({ snapshot, playerId, onAnswer, onArm, onUse, onSkip, o
     case 'starting':
       return <SurvivalStart snapshot={snapshot} />
     case 'level':
-      return <LevelScreen difficulty={survival.difficulty} kind={survival.kind} />
+      return <LevelIntro difficulty={survival.difficulty} line={levelLine(survival)} />
     case 'duel_intro':
       return <DuelIntro snapshot={snapshot} playerId={playerId} />
     case 'finished':
@@ -84,51 +82,24 @@ function useRemaining(snapshot: Snapshot, active = true) {
 function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
   const { room } = snapshot
   const survival = room.survival!
-  const count = Math.ceil(useRemaining(snapshot) / 1000)
-  useSoundsOnMount([
-    ['start', 0],
-    ['slam', 520],
-  ])
-  useCountdownSounds(count)
-
   return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Último de pé</p>
-      <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Prepare-se!</h1>
-      <ul className="intro-step flex flex-col gap-1 font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
-        <li className="flex items-center justify-center gap-2">
+    <StartScreen
+      room={room}
+      receivedAt={snapshot.receivedAt}
+      endsInMs={survival.phase_ends_in_ms}
+      eyebrow="Último de pé"
+      rules={[
+        <>
           {survival.kind === 'true_false' ? 'Verdadeiro ou falso' : 'Alternativas'} · <Hearts lives={survival.max_lives} max={survival.max_lives} /> {survival.max_lives} vidas
-        </li>
-        <li>
+        </>,
+        <>
           {survival.easy_count > 0 && `${survival.easy_count} fáceis, `}
           {survival.medium_count} médias, depois só difíceis
-        </li>
-        <li>Sobraram dois? X1 até alguém errar!</li>
-      </ul>
-      {survival.starting_powerup && (
-        <p
-          className={`intro-step flex items-center gap-2 rounded-xl px-4 py-2 font-semibold ${POWERUP_INFO[survival.starting_powerup].tone}`}
-          style={{ animationDelay: '1.2s' }}
-        >
-          <PowerUpIcon kind={survival.starting_powerup} className="size-6" />
-          Seu poder: {POWERUP_INFO[survival.starting_powerup].name}
-        </p>
-      )}
-      <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
-        {room.players.map((player, index) => (
-          <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
-          </li>
-        ))}
-      </ul>
-      <div className="flex h-20 items-center" aria-live="polite">
-        {count <= 3 && count > 0 && (
-          <span key={count} className="intro-count font-display text-7xl text-chalk">
-            {count}
-          </span>
-        )}
-      </div>
-    </section>
+        </>,
+        'Sobraram dois? X1 até alguém errar!',
+      ]}
+      power={survival.starting_powerup ? { kind: survival.starting_powerup } : null}
+    />
   )
 }
 
@@ -139,19 +110,9 @@ const LEVELS: Record<string, { title: string; className: string }> = {
   impossible: { title: 'Impossível', className: 'text-orange-300 [text-shadow:0_4px_0_#7c2d12]' },
 }
 
-function LevelScreen({ difficulty, kind }: { difficulty: string; kind: SurvivalView['kind'] }) {
-  useSoundsOnMount([['levelUp', 450]])
-  const level = LEVELS[difficulty] ?? LEVELS.hard
-  const what = kind === 'true_false' ? 'frases' : 'perguntas'
-  return (
-    <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
-      <h1 className={`intro-slam font-display text-6xl ${level.className}`}>{level.title}</h1>
-      <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.7s' }}>
-        {difficulty === 'hard' ? `Acabou a moleza: agora só ${what} difíceis.` : `Agora as ${what} apertam.`}
-      </p>
-    </section>
-  )
+function levelLine(survival: SurvivalView) {
+  const what = survival.kind === 'true_false' ? 'frases' : 'perguntas'
+  return survival.difficulty === 'hard' ? `Acabou a moleza: agora só ${what} difíceis.` : `Agora as ${what} apertam.`
 }
 
 function DuelIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: string | null }) {
@@ -412,9 +373,9 @@ function Statement({ snapshot, playerId, onAnswer, onArm, onUse, onSkip }: { sna
           ))}
         </ul>
       )}
-      {survival.powers && survival.phase === 'results' && (
+      {survival.phase === 'results' && (
         <PowerUpBar
-          powers
+          powers={survival.powers}
           game={survival}
           players={room.players}
           playerId={playerId}
@@ -509,64 +470,41 @@ function outLabel(s: Survivor, survival: SurvivalView) {
 function SurvivalPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Snapshot; playerId: string | null; onPlayAgain: Props['onPlayAgain']; onLeave: () => void }) {
   const { room } = snapshot
   const survival = room.survival!
-  const [notice, setNotice] = useState<string | null>(null)
   const ranked = [...survival.survivors].sort((a, b) => (a.place ?? 99) - (b.place ?? 99))
   const playerOf = (s: Survivor) => room.players.find((p) => p.id === s.player_id)
-  const winner = ranked[0] ? playerOf(ranked[0]) : undefined
-  const last = ranked.length > 1 ? playerOf(ranked[ranked.length - 1]) : undefined
-  const isHost = room.host_id === playerId
-  useSoundsOnMount([
-    ['podiumWinner', 300],
-    ['podiumLoser', 3200],
-  ])
-
+  const entries = ranked.flatMap((s) => {
+    const player = playerOf(s)
+    return player ? [{ player, caption: s.player_id === survival.winner ? 'Venceu!' : outLabel(s, survival) }] : []
+  })
   return (
-    <section className="flex w-full flex-col gap-6">
-      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
-      {winner && <Spotlight title="Último de pé" icon={coroa} player={winner} line={survival.winner === playerId ? 'Você venceu!' : 'Venceu!'} tone="text-brand" winner />}
-      {last && <Spotlight title="Quem sabe menos" icon={haha} player={last} line="Primeiro a cair" tone="text-red-300" />}
-      <ol className="flex flex-col gap-2">
-        {ranked.map((s) => {
-          const p = playerOf(s)
-          if (!p) return null
-          return (
-            <li key={s.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${s.player_id === playerId ? 'outline-2 outline-brand' : ''}`}>
-              <span className="w-8 text-center font-display text-2xl text-steel">{s.place}º</span>
-              <img src={avatarUrl(p)} alt="" className="size-10" />
-              <span className="flex min-w-0 flex-1 flex-col">
-                <span className="truncate font-semibold">{p.nickname}</span>
-                <span className="text-xs text-steel">
-                  {outLabel(s, survival)} · {s.correct} {s.correct === 1 ? 'acerto' : 'acertos'}
+    <PlayerPodium
+      room={room}
+      playerId={playerId}
+      onPlayAgain={onPlayAgain}
+      onLeave={onLeave}
+      ranked={entries}
+      worstLine="Primeiro a cair"
+      list={
+        <ol className="flex flex-col gap-2">
+          {ranked.map((s) => {
+            const p = playerOf(s)
+            if (!p) return null
+            return (
+              <li key={s.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${s.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}>
+                <span className="w-5 text-center font-display text-lg text-steel">{s.place}</span>
+                <img src={avatarUrl(p)} alt="" className="size-9" />
+                <span className="flex min-w-0 flex-1 flex-col">
+                  <span className="truncate font-semibold">{p.nickname}</span>
+                  <span className="text-xs text-steel">
+                    {outLabel(s, survival)} · {s.correct} {s.correct === 1 ? 'acerto' : 'acertos'}
+                  </span>
                 </span>
-              </span>
-            </li>
-          )
-        })}
-      </ol>
-      {notice && <p className="text-center text-steel">{notice}</p>}
-      {isHost ? (
-        <button onClick={async () => setNotice(await onPlayAgain())} className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink">
-          Jogar de novo
-        </button>
-      ) : (
-        <p className="text-center font-hand text-lg font-medium text-steel">Esperando o anfitrião decidir se tem revanche…</p>
-      )}
-      <LeaveButton onLeave={onLeave} />
-    </section>
+              </li>
+            )
+          })}
+        </ol>
+      }
+    />
   )
 }
 
-export function Spotlight({ title, icon, player, line, tone, winner = false }: { title: string; icon: string; player: PlayerView; line: string; tone: string; winner?: boolean }) {
-  return (
-    <div className="podium-card relative flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center">
-      {winner && <Confetti />}
-      <span className={`font-display text-lg tracking-wide ${tone}`}>{title}</span>
-      <div className="relative">
-        <img src={avatarUrl(player)} alt="" className="size-20" />
-        <img src={icon} alt="" className={`absolute -top-4 -right-6 size-11 ${winner ? 'icon-bounce' : 'icon-wobble'}`} />
-      </div>
-      <span className="w-full truncate text-lg font-bold">{player.nickname}</span>
-      <span className="font-hand text-lg font-medium text-chalk">{line}</span>
-    </div>
-  )
-}

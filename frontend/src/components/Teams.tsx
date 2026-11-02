@@ -2,14 +2,14 @@ import { useEffect, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
-import { useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { POWERUP_INFO, TEAM_HINTS, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { Snapshot } from '../lib/useRoom'
 import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide } from '../types/events'
 import { Confetti, DuelScreen } from './Game'
-import { LeaveButton } from './LeaveButton'
+import { EndScreen, ImpossibleIntro, LevelIntro, SkipButton, StartScreen } from './Screens'
 import { AnsweredAvatar } from './Answered'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { TaxScene } from './TaxScene'
@@ -54,7 +54,7 @@ export function Teams({ snapshot, playerId, onAnswer, onBet, onChoose, onArm, on
     )
   }
   if (match.phase === 'starting') return <TeamStart snapshot={snapshot} playerId={playerId} />
-  if (match.phase === 'level') return <LevelScreen match={match} />
+  if (match.phase === 'level') return <LevelIntro difficulty={match.difficulty} />
   if (match.phase === 'choosing' || match.phase === 'duel_choosing') return <Choosing snapshot={snapshot} playerId={playerId} onChoose={onChoose} />
   if (match.phase === 'betting') return <TeamBetting snapshot={snapshot} playerId={playerId} onBet={onBet} />
   if (match.phase === 'intro') return <FinalIntro snapshot={snapshot} playerId={playerId} />
@@ -93,61 +93,33 @@ function Avatars({ ids, players, size = 'size-9' }: { ids: string[]; players: Pl
 function TeamStart({ snapshot, playerId }: { snapshot: Snapshot; playerId: string | null }) {
   const { room } = snapshot
   const match = room.team_match!
-  const count = Math.ceil(useRemaining(snapshot) / 1000)
   const mine = myTeam(match)
-  useSoundsOnMount([
-    ['start', 0],
-    ['slam', 520],
-  ])
-  useCountdownSounds(count)
   return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Prepare-se!</h1>
-      {mine && (
-        <div className={`intro-step flex flex-col items-center gap-2 rounded-xl px-5 py-3 ${TEAMS[mine.id].bg}`} style={{ animationDelay: '0.5s' }}>
-          <span className={`font-display text-2xl tracking-wide ${TEAMS[mine.id].text}`}>Você está no {teamName(mine.id)}</span>
-          <Avatars ids={mine.members} players={room.players} size="size-11" />
-          {match.powers && mine.powerups[0] && (
-            <span className="flex items-center gap-1.5 font-semibold">
-              <PowerUpIcon kind={mine.powerups[0]} className="size-6" />
-              Poder do time: {POWERUP_INFO[mine.powerups[0]].name}
-            </span>
-          )}
-        </div>
-      )}
-      <ul className="intro-step flex flex-col gap-1 font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.8s' }}>
-        <li>O time vota junto: vale a mais votada.</li>
-        <li>
-          O capitão da vez vale 2 votos: acertou, +{match.captain_bonus}; errou, −{match.captain_bonus}.
-        </li>
-        <li>
-          Todo mundo na certa {match.harmony_streak} vezes seguidas: +{match.harmony_bonus}.
-        </li>
-        <li className="text-steel">Na aposta e na final, vai um representante.</li>
-      </ul>
-      <div className="flex h-20 items-center" aria-live="polite">
-        {count <= 3 && count > 0 && (
-          <span key={count} className="intro-count font-display text-7xl text-chalk">
-            {count}
-          </span>
-        )}
-      </div>
-      {!mine && playerId && <p className="text-steel">Você está assistindo.</p>}
-    </section>
+    <StartScreen
+      room={room}
+      receivedAt={snapshot.receivedAt}
+      endsInMs={match.phase_ends_in_ms}
+      eyebrow="Times"
+      rules={[
+        'O time vota junto: vale a mais votada.',
+        `O capitão da vez vale 2 votos: acertou, +${match.captain_bonus}; errou, −${match.captain_bonus}.`,
+        `Todo mundo na certa ${match.harmony_streak} vezes seguidas: +${match.harmony_bonus}.`,
+        <span key="rep" className="text-steel">Na aposta e na final, vai um representante.</span>,
+      ]}
+      players={
+        mine ? (
+          <div className={`intro-step flex flex-col items-center gap-2 rounded-xl px-5 py-3 ${TEAMS[mine.id].bg}`} style={{ animationDelay: '0.8s' }}>
+            <span className={`font-display text-2xl tracking-wide ${TEAMS[mine.id].text}`}>Você está no {teamName(mine.id)}</span>
+            <Avatars ids={mine.members} players={room.players} size="size-11" />
+          </div>
+        ) : null
+      }
+      power={match.powers && mine?.powerups[0] ? { kind: mine.powerups[0], label: 'Poder do time' } : null}
+      footer={!mine && playerId && <p className="text-steel">Você está assistindo.</p>}
+    />
   )
 }
 
-const LEVEL_NAMES: Record<string, string> = { easy: 'Fáceis', medium: 'Médias', hard: 'Difíceis', impossible: 'Impossível' }
-
-function LevelScreen({ match }: { match: TeamMatchView }) {
-  useSoundsOnMount([['levelUp', 200]])
-  return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-3 text-center">
-      <p className="text-sm font-semibold tracking-[0.3em] text-steel uppercase">Agora vêm as</p>
-      <h1 className={`intro-slam rounded-2xl px-6 py-2 font-display text-6xl ${DIFFICULTY[match.difficulty].className}`}>{LEVEL_NAMES[match.difficulty]}</h1>
-    </section>
-  )
-}
 
 function Countdown({ snapshot }: { snapshot: Snapshot }) {
   const seconds = Math.ceil(useRemaining(snapshot) / 1000)
@@ -271,13 +243,10 @@ function RepresentativeList({ match, players, playerId }: { match: TeamMatchView
 function FinalIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: string | null }) {
   const { room } = snapshot
   const match = room.team_match!
-  useSoundsOnMount([['impossible', 0]])
   return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <h1 className="intro-slam font-display text-6xl text-red-400">Impossível!</h1>
-      <p className="font-hand text-lg font-medium">Cada time joga com o seu representante. Os outros só torcem.</p>
+    <ImpossibleIntro receivedAt={snapshot.receivedAt} endsInMs={match.phase_ends_in_ms} line="Cada time joga com o seu representante. Os outros só torcem.">
       <RepresentativeList match={match} players={room.players} playerId={playerId} />
-    </section>
+    </ImpossibleIntro>
   )
 }
 
@@ -303,7 +272,6 @@ function TeamRound({
   const question = match.question!
   const remaining = useRemaining(snapshot)
   const [error, setError] = useState<string | null>(null)
-  const [skipped, setSkipped] = useState(false)
   const mine = myTeam(match)
   const reading = match.phase === 'reading'
   // Imposto: uma cena por cobrança; quem entra no meio da revelação não revê a de antes.
@@ -472,20 +440,7 @@ function TeamRound({
             </div>
           )}
           <TeamBoard match={match} players={room.players} />
-          <button
-            onClick={async () => {
-              playSound('skip')
-              setSkipped(true)
-              if (await onSkip()) setSkipped(false)
-            }}
-            disabled={skipped || (playerId !== null && match.ready.includes(playerId))}
-            className="btn-3d btn-sm btn-dark rounded-xl py-2 font-semibold disabled:opacity-60"
-          >
-            {skipped ? 'Pronto' : 'Pular'}{' '}
-            <span className="text-sm text-steel">
-              {match.ready.length}/{room.players.filter((p) => p.connected).length}
-            </span>
-          </button>
+          <SkipButton ready={match.ready} players={room.players} playerId={playerId} onSkip={onSkip} className="py-2" />
         </>
       )}
     </section>
@@ -879,11 +834,9 @@ function accuracy(stat: TeamPlayerStat) {
 function TeamPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Snapshot; playerId: string | null; onPlayAgain: Props['onPlayAgain']; onLeave: () => void }) {
   const { room } = snapshot
   const match = room.team_match!
-  const [notice, setNotice] = useState<string | null>(null)
   const order = ranked(match.teams)
   const champion = order[0]
   const tie = order.length > 1 && order[1].score === champion.score
-  const isHost = room.host_id === playerId
   useSoundsOnMount([
     ['podiumWinner', 300],
     ['podiumLoser', 3200],
@@ -892,8 +845,7 @@ function TeamPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Sn
     match.stats.filter((s) => s.team === team.id).sort((a, b) => accuracy(b) - accuracy(a) || b.right - a.right)
 
   return (
-    <section className="flex w-full flex-col gap-6">
-      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
+    <EndScreen room={room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave}>
       {champion && (
         <div className={`podium-card relative flex flex-col items-center gap-2 rounded-2xl p-4 text-center ${TEAMS[champion.id].bg}`}>
           <Confetti />
@@ -939,15 +891,6 @@ function TeamPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Sn
           )
         })}
       </ol>
-      {notice && <p className="text-center text-steel">{notice}</p>}
-      {isHost ? (
-        <button onClick={async () => setNotice(await onPlayAgain())} className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink">
-          Jogar de novo
-        </button>
-      ) : (
-        <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião decidir se tem revanche…</p>
-      )}
-      <LeaveButton onLeave={onLeave} />
-    </section>
+    </EndScreen>
   )
 }

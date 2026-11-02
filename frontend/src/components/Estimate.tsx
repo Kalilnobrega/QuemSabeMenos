@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
-import { useCountdownSounds, useNow, useSoundsOnMount } from '../lib/effects'
+import { useNow } from '../lib/effects'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
 import { EstimateRuler } from './EstimateRuler'
-import { DifficultyChip, FactCard, LevelIntro, Podium, Ranking } from './Game'
+import { DifficultyChip, FactCard, Podium, Ranking } from './Game'
+import { LevelIntro, SkipButton, StartScreen } from './Screens'
 import { LeaveButton } from './LeaveButton'
 
 interface Props {
@@ -17,6 +18,11 @@ interface Props {
   onSkip: () => Promise<string | null>
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
+}
+
+const ESTIMATE_LEVEL_LINES: Record<string, string> = {
+  medium: 'Agora chegar perto vale mais QI.',
+  hard: 'Vale muito QI, e chutar longe tira menos pontos.',
 }
 
 /** Chutômetro: a resposta é um número; quanto mais perto, mais QI. */
@@ -29,7 +35,7 @@ export function Estimate({ snapshot, playerId, onGuess, onSkip, onPlayAgain, onL
     return <EstimateStart snapshot={snapshot} />
   }
   if (estimate.phase === 'level') {
-    return <LevelIntro difficulty={estimate.difficulty} />
+    return <LevelIntro difficulty={estimate.difficulty} line={ESTIMATE_LEVEL_LINES[estimate.difficulty]} />
   }
   // key: cada pergunta começa com o campo vazio.
   return <EstimateRound key={estimate.round} snapshot={snapshot} playerId={playerId} onGuess={onGuess} onSkip={onSkip} onLeave={onLeave} />
@@ -54,36 +60,14 @@ function withUnit(value: number, unit: string | null | undefined) {
 
 function EstimateStart({ snapshot }: { snapshot: Snapshot }) {
   const estimate = snapshot.room.estimate!
-  const now = useNow(true)
-  const count = Math.ceil(Math.max(0, snapshot.receivedAt + estimate.phase_ends_in_ms - now) / 1000)
-  useSoundsOnMount([
-    ['start', 0],
-    ['slam', 520],
-  ])
-  useCountdownSounds(count)
-
   return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Chutômetro</p>
-      <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Prepare-se!</h1>
-      <p className="intro-step max-w-xs font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
-        {estimate.total_rounds} perguntas de número. Chegou perto, ganha QI; chutou pra lua, perde.
-      </p>
-      <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
-        {snapshot.room.players.map((player, index) => (
-          <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
-          </li>
-        ))}
-      </ul>
-      <div className="flex h-20 items-center" aria-live="polite">
-        {count <= 3 && count > 0 && (
-          <span key={count} className="intro-count font-display text-7xl text-chalk">
-            {count}
-          </span>
-        )}
-      </div>
-    </section>
+    <StartScreen
+      room={snapshot.room}
+      receivedAt={snapshot.receivedAt}
+      endsInMs={estimate.phase_ends_in_ms}
+      eyebrow="Chutômetro"
+      rules={[`${estimate.total_rounds} perguntas de número.`, 'Chegou perto, ganha QI; chutou pra lua, perde.']}
+    />
   )
 }
 
@@ -219,7 +203,6 @@ function guessLabel(guess: EstimateGuess, maxLoss: number) {
 }
 
 function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateView; players: PlayerView[]; playerId: string | null; onSkip: Props['onSkip'] }) {
-  const [skipped, setSkipped] = useState(false)
   const byId = (id: string) => players.find((p) => p.id === id)
   const deltas = Object.fromEntries(estimate.guesses.map((g) => [g.player_id, g.delta]))
 
@@ -261,17 +244,7 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
 
       <Ranking players={players} playerId={playerId} deltas={deltas} />
 
-      <button
-        onClick={async () => {
-          setSkipped(true)
-          playSound('skip')
-          await onSkip()
-        }}
-        disabled={skipped}
-        className={`btn-3d btn-sm self-center rounded-xl px-5 py-2 font-semibold ${skipped ? 'btn-dark is-pressed text-steel' : 'btn-dark text-chalk'}`}
-      >
-        {skipped ? `Esperando (${estimate.ready.length}/${players.filter((p) => p.connected).length})` : 'Pular'}
-      </button>
+      <SkipButton ready={estimate.ready} players={players} playerId={playerId} onSkip={onSkip} className="self-center px-5" />
     </div>
   )
 }

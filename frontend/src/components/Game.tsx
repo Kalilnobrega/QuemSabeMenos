@@ -1,17 +1,15 @@
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
-import coroa from '../assets/brand/coroa.svg'
-import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
 import { formatDelta, formatScore } from '../lib/format'
 import { POWERUP_INFO, gainLabel, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
-import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { reducedMotion, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import type { Snapshot } from '../lib/useRoom'
 import type { Bonus, DuelView, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
-import { LeaveButton } from './LeaveButton'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 import { AnsweredAvatar, AnsweredRow } from './Answered'
 import { ResurrectionScene } from './ResurrectionScene'
+import { ImpossibleIntro, LevelIntro, PlayerPodium, StartScreen } from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -76,7 +74,7 @@ function StarIcon({ className }: { className?: string }) {
   )
 }
 
-function FlameIcon({ className }: { className?: string }) {
+export function FlameIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 28" className={className} aria-hidden="true">
       <path
@@ -389,94 +387,6 @@ export function DifficultyChip({ difficulty }: { difficulty: string }) {
   return <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${info.className}`}>{info.label}</span>
 }
 
-const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
-  { key: 'easy', label: 'Fácil' },
-  { key: 'medium', label: 'Média' },
-  { key: 'hard', label: 'Difícil' },
-  { key: 'impossible', label: <FlameIcon className="size-3.5" /> },
-]
-
-const LEVEL_INTRO: Record<string, { title: string; color: string; marker: string; shadow: string; line: string }> = {
-  medium: {
-    title: 'Média',
-    color: 'text-brand',
-    marker: 'bg-brand',
-    shadow: '#7a5a00',
-    line: 'Agora as perguntas valem mais QI.',
-  },
-  hard: {
-    title: 'Difícil',
-    color: 'text-red-300',
-    marker: 'bg-red-400',
-    shadow: '#7f1d1d',
-    line: 'Valem muito QI, e errar quase não tira pontos.',
-  },
-}
-
-/** Apresentação rápida quando a dificuldade muda: a trilha de níveis e o nome do novo nível. */
-/** Troca de nível: o destaque pula na trilha e o nome do nível bate na tela (também no Chutômetro). */
-export function LevelIntro({ difficulty }: { difficulty: string }) {
-  const info = LEVEL_INTRO[difficulty] ?? LEVEL_INTRO.medium
-  const current = LEVEL_TRACK.findIndex((level) => level.key === difficulty)
-  const trackRef = useRef<HTMLOListElement>(null)
-  const markerRef = useRef<HTMLSpanElement>(null)
-  useSoundsOnMount([
-    ['levelHop', 450],
-    ['levelUp', 1050],
-  ])
-
-  useLayoutEffect(() => {
-    const track = trackRef.current
-    const marker = markerRef.current
-    if (!track || !marker) return
-    const items = [...track.querySelectorAll('li')] as HTMLElement[]
-    const target = items[current]
-    const from = items[current - 1]
-    Object.assign(marker.style, {
-      left: `${target.offsetLeft}px`,
-      top: `${target.offsetTop}px`,
-      width: `${target.offsetWidth}px`,
-      height: `${target.offsetHeight}px`,
-    })
-    if (!from || reducedMotion()) return
-    const dx = from.offsetLeft - target.offsetLeft
-    const scale = from.offsetWidth / target.offsetWidth
-    marker.animate(
-      [
-        { transform: `translateX(${dx}px) scaleX(${scale})` },
-        { transform: `translateX(${dx / 2}px) translateY(-16px) scale(1.15)`, offset: 0.5 },
-        { transform: 'translateY(2px) scale(1.05, 0.9)', offset: 0.85 },
-        { transform: 'none' },
-      ],
-      { duration: 650, delay: 450, easing: 'ease-in-out', fill: 'backwards' },
-    )
-  }, [current])
-
-  return (
-    <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
-      <ol ref={trackRef} className="intro-step relative flex items-center gap-1.5" aria-label="Níveis da partida">
-        <span ref={markerRef} className={`absolute rounded-full ${info.marker}`} style={{ transformOrigin: 'left center' }} aria-hidden="true" />
-        {LEVEL_TRACK.map((level, index) => (
-          <li
-            key={level.key}
-            className={`relative rounded-full px-3 py-1 text-xs font-semibold ${
-              index === current ? 'level-land text-ink' : index < current ? 'bg-panel text-steel line-through' : 'bg-panel text-steel'
-            }`}
-          >
-            {level.label}
-          </li>
-        ))}
-      </ol>
-      <h1 className={`intro-slam font-display text-6xl ${info.color}`} style={{ textShadow: `0 4px 0 ${info.shadow}` }}>
-        {info.title}
-      </h1>
-      <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.7s' }}>
-        {info.line}
-      </p>
-    </section>
-  )
-}
 
 const SPECIALIST_BLOCK = 5
 
@@ -553,47 +463,19 @@ function ThemePick({ snapshot, playerId, onChoose }: { snapshot: Snapshot; playe
 function GameStart({ snapshot }: { snapshot: Snapshot }) {
   const { room, receivedAt } = snapshot
   const game = room.game!
-  const now = useNow(true)
-  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
-  const count = Math.ceil(remaining / 1000)
-  useSoundsOnMount([
-    ['start', 0],
-    ['slam', 520], // a batida cai aos 0,15 s do som, quando o título encosta na tela
-  ])
-  useCountdownSounds(count)
-
   return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">A partida vai começar</p>
-      <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Prepare-se!</h1>
-      <p className="intro-step font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
-        {room.settings.rounds} perguntas{game.total_rounds > room.settings.rounds && ' + a final impossível'} ·{' '}
-        {room.settings.answer_seconds} segundos cada
-      </p>
-      <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
-        {room.players.map((player, index) => (
-          <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
-          </li>
-        ))}
-      </ul>
-      {game.starting_powerup && (
-        <p
-          className={`intro-step flex items-center gap-2 rounded-xl px-4 py-2 font-semibold ${POWERUP_INFO[game.starting_powerup].tone}`}
-          style={{ animationDelay: '1.2s' }}
-        >
-          <PowerUpIcon kind={game.starting_powerup} className="size-6" />
-          Seu poder: {POWERUP_INFO[game.starting_powerup].name}
-        </p>
-      )}
-      <div className="flex h-20 items-center" aria-live="polite">
-        {count <= 3 && count > 0 && (
-          <span key={count} className="intro-count font-display text-7xl text-chalk">
-            {count}
-          </span>
-        )}
-      </div>
-    </section>
+    <StartScreen
+      room={room}
+      receivedAt={receivedAt}
+      endsInMs={game.phase_ends_in_ms}
+      eyebrow="A partida vai começar"
+      rules={[
+        <>
+          {room.settings.rounds} perguntas{game.total_rounds > room.settings.rounds && ' + a final impossível'} · {room.settings.answer_seconds} segundos cada
+        </>,
+      ]}
+      power={game.starting_powerup ? { kind: game.starting_powerup } : null}
+    />
   )
 }
 
@@ -601,25 +483,9 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
 function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
   const { room } = snapshot
   const game = room.game!
-  const now = useNow(true)
-  const remaining = Math.max(0, snapshot.receivedAt + game.phase_ends_in_ms - now)
-  const count = Math.ceil(remaining / 1000)
-  const standings = [...room.players].sort((a, b) => b.score - a.score || a.answer_ms - b.answer_ms)
-  useSoundsOnMount([
-    ['impossible', 0],
-    ['slam', 520], // a batida cai junto com o carimbo encostando na tela
-  ])
-  useCountdownSounds(count)
-
+  const standings = [...room.players].sort(byRanking)
   return (
-    <section className="final-intro stamp-shake relative isolate flex min-h-[72dvh] w-full flex-col items-center justify-center gap-3 overflow-hidden rounded-3xl px-4 text-center">
-      <div className="final-intro-glow absolute inset-0 -z-10" aria-hidden="true" />
-      <Flame />
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-orange-200 uppercase">Pergunta final</p>
-      <h1 className="intro-slam stamp font-display text-6xl text-orange-300">Impossível!</h1>
-      <p className="intro-step intro-step-late max-w-xs font-hand text-lg font-medium text-chalk">
-        Vale 35 de QI, e errar não tira pontos. Tudo pode virar.
-      </p>
+    <ImpossibleIntro receivedAt={snapshot.receivedAt} endsInMs={game.phase_ends_in_ms} line="Vale 35 de QI, e errar não tira pontos. Tudo pode virar.">
       <ol className="flex max-w-xs flex-wrap justify-center gap-3" aria-label="Placar antes da final">
         {standings.map((player, index) => (
           <li key={player.id} className="avatar-pop flex flex-col items-center gap-0.5" style={{ animationDelay: `${1.1 + index * 0.08}s` }}>
@@ -628,14 +494,7 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
           </li>
         ))}
       </ol>
-      <div className="flex h-20 items-center" aria-live="polite">
-        {count <= 3 && count > 0 && (
-          <span key={count} className="intro-count font-display text-7xl text-chalk">
-            {count}
-          </span>
-        )}
-      </div>
-    </section>
+    </ImpossibleIntro>
   )
 }
 
@@ -802,7 +661,7 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
   )
 }
 
-function Flame() {
+export function Flame() {
   return (
     <svg viewBox="0 0 100 104" className="intro-flame h-36 w-36" aria-hidden="true">
       <defs>
@@ -1537,102 +1396,19 @@ interface PodiumProps {
   onLeave: () => void
 }
 
-// Momentos da revelação do pódio, em ms: 3º, 2º, 1º (com fanfarra e confete), o último e, por fim, o resto da tela.
-const PODIUM_STEPS = [900, 2300, 3800, 6300, 8000]
-
-const PODIUM_PLACES = [
-  { place: 1, label: '1º', step: 'h-24 bg-brand text-ink', order: 'order-2' },
-  { place: 2, label: '2º', step: 'h-16 bg-slate-300 text-ink', order: 'order-1' },
-  { place: 3, label: '3º', step: 'h-10 bg-amber-700 text-chalk', order: 'order-3' },
-]
-
-/** Fim de jogo em etapas: o pódio enche do 3º para o 1º, depois aparece quem sabe menos. */
 export function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
-  const [notice, setNotice] = useState<string | null>(null)
-  const sorted = [...room.players].sort(byRanking)
-  const worst = sorted.length > 1 ? sorted[sorted.length - 1] : null
-  const isHost = room.host_id === playerId
-  const places = PODIUM_PLACES.filter((p) => p.place <= sorted.length)
-
-  // Quantas etapas já foram reveladas (0 = pódio vazio; PODIUM_STEPS.length = tudo).
-  const [stage, setStage] = useState(() => (reducedMotion() ? PODIUM_STEPS.length : 0))
-  useEffect(() => {
-    if (stage >= PODIUM_STEPS.length) return
-    const timers = PODIUM_STEPS.map((ms, i) => setTimeout(() => setStage((s) => Math.max(s, i + 1)), ms))
-    return () => timers.forEach(clearTimeout)
-    // Agenda uma vez, quando o pódio aparece.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  const revealed = (place: number) => stage >= 4 - place
-  useEffect(() => {
-    const sounds: Record<number, SoundId | undefined> = { 1: 'slam', 2: 'slam', 3: 'podiumWinner', 4: worst ? 'podiumLoser' : undefined }
-    const sound = sounds[stage]
-    if (sound && !(stage === 1 && sorted.length < 3)) playSound(sound)
-    // Só quando a etapa muda.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [stage])
-
-  const done = stage >= PODIUM_STEPS.length
-
+  const ranked = [...room.players].sort(byRanking).map((player) => ({ player, caption: `${formatScore(player.score)} QI` }))
+  const worst = ranked[ranked.length - 1]
   return (
-    <section className="flex w-full flex-col gap-6">
-      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
-
-      <div className="relative flex items-end justify-center gap-2" aria-label="Pódio">
-        {stage >= 3 && <Confetti />}
-        {places.map(({ place, label, step, order }) => {
-          const player = sorted[place - 1]
-          const shown = revealed(place)
-          return (
-            <div key={place} className={`flex w-1/3 max-w-36 flex-col items-center gap-1.5 ${order}`}>
-              <div className="relative flex min-h-36 w-full flex-col items-center justify-end gap-1 text-center">
-                {shown ? (
-                  <div key="shown" className="podium-card relative flex w-full flex-col items-center gap-1">
-                    <div className="relative">
-                      <img src={avatarUrl(player)} alt="" className={place === 1 ? 'size-20' : 'size-16'} />
-                      {place === 1 && <img src={coroa} alt="" className="icon-bounce absolute -top-5 -right-5 size-10" />}
-                    </div>
-                    <span className="w-full truncate font-bold">{player.nickname}</span>
-                    <span className="font-display text-xl text-brand">{formatScore(player.score)} QI</span>
-                  </div>
-                ) : (
-                  <span className="font-display text-5xl text-steel/40">?</span>
-                )}
-              </div>
-              <div className={`flex w-full items-start justify-center rounded-t-xl pt-1 font-display text-2xl ${step}`}>{label}</div>
-            </div>
-          )
-        })}
-      </div>
-
-      {worst && stage >= 4 && <Highlight title="Quem sabe menos" icon={haha} player={worst} tone="text-red-300" />}
-
-      {done ? (
-        <>
-          <Ranking players={room.players} playerId={playerId} />
-
-          {notice && <p className="text-center text-steel">{notice}</p>}
-
-          {isHost ? (
-            <button
-              onClick={async () => setNotice(await onPlayAgain())}
-              className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
-            >
-              Jogar de novo
-            </button>
-          ) : (
-            <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião decidir se tem revanche…</p>
-          )}
-
-          <LeaveButton onLeave={onLeave} />
-        </>
-      ) : (
-        <button onClick={() => setStage(PODIUM_STEPS.length)} className="mx-auto font-semibold text-steel underline-offset-4 hover:underline">
-          Pular
-        </button>
-      )}
-    </section>
+    <PlayerPodium
+      room={room}
+      playerId={playerId}
+      onPlayAgain={onPlayAgain}
+      onLeave={onLeave}
+      ranked={ranked}
+      worstLine={worst && <span className="font-display text-2xl text-brand">{worst.caption}</span>}
+      list={<Ranking players={room.players} playerId={playerId} />}
+    />
   )
 }
 
@@ -1659,17 +1435,3 @@ export function Confetti() {
   )
 }
 
-function Highlight({ title, icon, player, tone, winner = false }: { title: string; icon: string; player: PlayerView; tone: string; winner?: boolean }) {
-  return (
-    <div className="podium-card relative flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center">
-      {winner && <Confetti />}
-      <span className={`font-display text-lg tracking-wide ${tone}`}>{title}</span>
-      <div className="relative">
-        <img src={avatarUrl(player)} alt="" className="size-20" />
-        <img src={icon} alt="" className={`absolute -top-4 -right-6 size-11 ${winner ? 'icon-bounce' : 'icon-wobble'}`} />
-      </div>
-      <span className="w-full truncate text-lg font-bold">{player.nickname}</span>
-      <span className="font-display text-2xl text-brand">{formatScore(player.score)} QI</span>
-    </div>
-  )
-}

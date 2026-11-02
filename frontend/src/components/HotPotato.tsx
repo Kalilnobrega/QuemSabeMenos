@@ -1,16 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
-import coroa from '../assets/brand/coroa.svg'
-import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
-import { useCountdownSounds, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { POTATO_HINTS, POWERUP_INFO, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
-import { LeaveButton } from './LeaveButton'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { ResurrectionScene } from './ResurrectionScene'
-import { Spotlight } from './Survival'
+import { PlayerPodium, StartScreen } from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D']
 const HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass', 'thermometer']
@@ -56,54 +53,27 @@ function PotatoIcon({ heat = 0, golden = false, className }: { heat?: number; go
   )
 }
 
-function useRemaining(snapshot: Snapshot) {
-  const now = useNow(true)
-  return Math.max(0, snapshot.receivedAt + snapshot.room.hot_potato!.phase_ends_in_ms - now)
-}
-
 function PotatoStart({ snapshot }: { snapshot: Snapshot }) {
   const { room } = snapshot
   const game = room.hot_potato!
-  const count = Math.ceil(useRemaining(snapshot) / 1000)
-  useSoundsOnMount([
-    ['start', 0],
-    ['slam', 520],
-  ])
-  useCountdownSounds(count)
   const [low, high] = game.fuse_range
   return (
-    <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <PotatoIcon className="potato-shake size-20" />
-      <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Batata quente!</h1>
-      <ul className="intro-step flex flex-col gap-1 font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
-        <li>Acertou, a batata passa para o próximo.</li>
-        <li>Errou, o pavio perde {game.penalty_seconds}s.</li>
-        <li>{game.max_wrong_streak} erros seguidos: explode na hora!</li>
-        <li className="text-steel">
+    <StartScreen
+      room={room}
+      receivedAt={snapshot.receivedAt}
+      endsInMs={game.phase_ends_in_ms}
+      icon={<PotatoIcon className="potato-shake size-20" />}
+      eyebrow="Batata quente"
+      rules={[
+        'Acertou, a batata passa para o próximo.',
+        `Errou, o pavio perde ${game.penalty_seconds}s.`,
+        `${game.max_wrong_streak} erros seguidos: explode na hora!`,
+        <span key="fuse" className="text-steel">
           O pavio é segredo: dura de {low} a {high}s.
-        </li>
-      </ul>
-      {game.starting_powerup && (
-        <p className="intro-step flex items-center gap-2 rounded-xl bg-panel px-3 py-2 font-semibold" style={{ animationDelay: '0.7s' }}>
-          <PowerUpIcon kind={game.starting_powerup} className="size-6" />
-          Seu poder: {POWERUP_INFO[game.starting_powerup].name}
-        </p>
-      )}
-      <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
-        {room.players.map((player, index) => (
-          <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
-            <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
-          </li>
-        ))}
-      </ul>
-      <div className="flex h-20 items-center" aria-live="polite">
-        {count <= 3 && count > 0 && (
-          <span key={count} className="intro-count font-display text-7xl text-chalk">
-            {count}
-          </span>
-        )}
-      </div>
-    </section>
+        </span>,
+      ]}
+      power={game.starting_powerup ? { kind: game.starting_powerup } : null}
+    />
   )
 }
 
@@ -659,49 +629,41 @@ function FlyingPotato({ potato, receivedAt, spot, paired }: { potato: PotatoView
 function PotatoPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Snapshot; playerId: string | null; onPlayAgain: Props['onPlayAgain']; onLeave: () => void }) {
   const { room } = snapshot
   const game: HotPotatoView = room.hot_potato!
-  const [notice, setNotice] = useState<string | null>(null)
   const ranked = [...game.players].sort((a, b) => (a.place ?? 99) - (b.place ?? 99))
   const playerOf = (id: string) => room.players.find((p) => p.id === id)
-  const winner = ranked[0] && playerOf(ranked[0].player_id)
-  const first = ranked.length > 1 ? playerOf(ranked[ranked.length - 1].player_id) : undefined
-  const isHost = room.host_id === playerId
-  useSoundsOnMount([
-    ['podiumWinner', 300],
-    ['podiumLoser', 3200],
-  ])
+  const entries = ranked.flatMap((p) => {
+    const player = playerOf(p.player_id)
+    return player ? [{ player, caption: p.player_id === game.winner ? 'Sobreviveu!' : `Queimou na rodada ${p.out_round}` }] : []
+  })
   return (
-    <section className="flex w-full flex-col gap-6">
-      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
-      {winner && <Spotlight title="Mão fria" icon={coroa} player={winner} line={game.winner === playerId ? 'Você sobreviveu!' : 'Sobreviveu à batata!'} tone="text-brand" winner />}
-      {first && <Spotlight title="Quem sabe menos" icon={haha} player={first} line="Primeiro a queimar" tone="text-red-300" />}
-      <ol className="flex flex-col gap-2">
-        {ranked.map((p) => {
-          const player = playerOf(p.player_id)
-          if (!player) return null
-          return (
-            <li key={p.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${p.player_id === playerId ? 'outline-2 outline-brand' : ''}`}>
-              <span className="w-8 text-center font-display text-2xl text-steel">{p.place}º</span>
-              <img src={avatarUrl(player)} alt="" className="size-10" />
-              <span className="flex min-w-0 flex-1 flex-col">
-                <span className="truncate font-semibold">{player.nickname}</span>
-                <span className="text-xs text-steel">
-                  {p.player_id === game.winner ? 'Sobreviveu' : `Queimou na rodada ${p.out_round}`} · {p.correct} {p.correct === 1 ? 'passe' : 'passes'}, {p.wrong}{' '}
-                  {p.wrong === 1 ? 'erro' : 'erros'}
+    <PlayerPodium
+      room={room}
+      playerId={playerId}
+      onPlayAgain={onPlayAgain}
+      onLeave={onLeave}
+      ranked={entries}
+      worstLine="Primeiro a queimar"
+      list={
+        <ol className="flex flex-col gap-2">
+          {ranked.map((p) => {
+            const player = playerOf(p.player_id)
+            if (!player) return null
+            return (
+              <li key={p.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${p.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}>
+                <span className="w-5 text-center font-display text-lg text-steel">{p.place}</span>
+                <img src={avatarUrl(player)} alt="" className="size-9" />
+                <span className="flex min-w-0 flex-1 flex-col">
+                  <span className="truncate font-semibold">{player.nickname}</span>
+                  <span className="text-xs text-steel">
+                    {p.player_id === game.winner ? 'Sobreviveu' : `Queimou na rodada ${p.out_round}`} · {p.correct} {p.correct === 1 ? 'passe' : 'passes'}, {p.wrong}{' '}
+                    {p.wrong === 1 ? 'erro' : 'erros'}
+                  </span>
                 </span>
-              </span>
-            </li>
-          )
-        })}
-      </ol>
-      {notice && <p className="text-center text-steel">{notice}</p>}
-      {isHost ? (
-        <button onClick={async () => setNotice(await onPlayAgain())} className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink">
-          Jogar de novo
-        </button>
-      ) : (
-        <p className="text-center font-hand text-lg font-medium text-steel">Esperando o anfitrião decidir se tem revanche…</p>
-      )}
-      <LeaveButton onLeave={onLeave} />
-    </section>
+              </li>
+            )
+          })}
+        </ol>
+      }
+    />
   )
 }
