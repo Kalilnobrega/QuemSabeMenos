@@ -6,6 +6,8 @@
  */
 
 export const SOUND_ENABLED = {
+  click: true,
+  clickSoft: true,
   join: true,
   leave: true,
   start: true,
@@ -56,6 +58,8 @@ export type SoundId = keyof typeof SOUND_ENABLED
 
 /** Onde e quando cada som toca (mostrado também na página de escolha dos sons). */
 export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: string }> = {
+  click: { group: 'Lobby', name: 'Tecla de teclado mecânico (clicky)', moment: 'Você aperta um botão principal na tela inicial ou no lobby' },
+  clickSoft: { group: 'Lobby', name: 'Clique de mouse', moment: 'Você aperta Convidar ou Configurações no lobby' },
   join: { group: 'Lobby', name: 'Pop subindo', moment: 'Alguém entra na sala' },
   leave: { group: 'Lobby', name: 'Pop descendo', moment: 'Alguém sai da sala' },
   start: { group: 'Transições', name: 'Whoosh de arrancada', moment: 'A partida começa (tela "Prepare-se!")' },
@@ -246,6 +250,14 @@ function easedTicks(n: number) {
 
 const NOTE = { C5: 523.25, E5: 659.25, G5: 783.99, C6: 1046.5, G4: 392 }
 
+/** Estalo de botão físico: um transiente curtíssimo de ruído filtrado. */
+const snap = (at: number, freq: number, gain: number, q: number, dur: number) => noise({ at, dur, freq, q, gain })
+/** Corpo do botão ressoando por baixo do estalo. */
+const knock = (at: number, freq: number, gain: number, dur: number, type: OscillatorType = 'sine') =>
+  tone(freq, { at, dur, gain, type, to: freq * 0.85, attack: 0.002 })
+/** Fator aleatório em torno de 1 (±amount), para um som repetido não soar sempre igual. */
+const vary = (amount: number) => 1 + (Math.random() * 2 - 1) * amount
+
 const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   join: () => {
     tone(520, { dur: 0.09, to: 880, gain: 0.25 })
@@ -279,6 +291,24 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
     noise({ dur: 0.03, freq: 2200, q: 3, gain: 0.25 })
     noise({ at: 0.05, dur: 0.03, freq: 1600, q: 3, gain: 0.2 })
     tone(420, { at: 0.08, dur: 0.16, to: 840, gain: 0.16 })
+  },
+  // Tecla de teclado mecânico (switch azul): clique agudo ao afundar e um estalinho ao soltar.
+  // Cada clique sai um pouco mais agudo ou grave e mais forte ou fraco, como uma tecla de verdade.
+  click: () => {
+    const p = vary(0.05)
+    const g = 0.75 * vary(0.12) // 25% mais baixo que o original
+    snap(0, 4200 * p, 0.3 * g, 5, 0.01)
+    snap(0.008, 2600 * p, 0.18 * g, 4, 0.014)
+    knock(0.006, 520 * p, 0.05 * g, 0.03)
+    snap(0.085 * vary(0.1), 3400 * p, 0.1 * g, 4, 0.01)
+  },
+  // Microswitch de mouse: tic seco ao apertar e o tac de volta (também varia a cada clique).
+  clickSoft: () => {
+    const p = vary(0.05)
+    const g = vary(0.12)
+    snap(0, 5200 * p, 0.26 * g, 6, 0.008)
+    knock(0.001, 1900 * p, 0.05 * g, 0.02, 'triangle')
+    snap(0.06 * vary(0.1), 4400 * p, 0.14 * g, 6, 0.007)
   },
   // "Blip" de bolha, mais macio que um clique seco.
   select: () => tone(600, { dur: 0.08, to: 950, gain: 0.22 }),
