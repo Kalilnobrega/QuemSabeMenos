@@ -4,6 +4,7 @@
  * da abertura, a linha embaixo de cada um no pódio), e a animação e os sons ficam iguais em todos.
  */
 import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
@@ -379,29 +380,75 @@ interface SkipButtonProps {
   players: PlayerView[]
   playerId: string | null
   onSkip: () => Promise<string | null>
+  /** Quanto falta e quanto dura a revelação, para a barra esvaziar até ela acabar sozinha. */
+  endsInMs: number
+  durationMs: number
   className?: string
 }
 
-/** O Pular da revelação, igual em todos os modos: quando todos os conectados tocam, a próxima vem. */
-export function SkipButton({ ready, players, playerId, onSkip, className = '' }: SkipButtonProps) {
+/** O Pular da revelação, igual em todos os modos: um botão largo "Próxima" com o tempo esvaziando
+ * por trás e, do lado direito, os bichos de quem já está pronto (os outros ficam apagados).
+ * Fica flutuando no pé da tela, e quando todos os conectados tocam, a próxima vem. */
+export function SkipButton({ ready, players, playerId, onSkip, endsInMs, durationMs, className = '' }: SkipButtonProps) {
   const [skipped, setSkipped] = useState(false)
+  // A barra é calculada uma vez, quando a revelação aparece: daí em diante o CSS esvazia sozinho.
+  const [bar] = useState(() => ({ from: durationMs > 0 ? Math.min(1, endsInMs / durationMs) : 0, ms: Math.max(0, endsInMs) }))
   const connected = players.filter((p) => p.connected)
-  const readyCount = connected.filter((p) => ready.includes(p.id)).length
+  const missing = connected.filter((p) => !ready.includes(p.id)).length
   const isReady = skipped || (playerId !== null && ready.includes(playerId))
-  return (
-    <button
-      onClick={async () => {
-        playSound('skip')
-        setSkipped(true)
-        if (await onSkip()) setSkipped(false)
-      }}
-      disabled={isReady}
-      className={`btn-3d btn-sm shrink-0 rounded-xl px-3 py-1.5 text-sm font-semibold ${isReady ? 'btn-dark is-pressed text-steel' : 'btn-dark text-chalk'} ${className}`}
-    >
-      {isReady ? 'Pronto' : 'Pular'}
-      <span className="block text-xs text-steel">
-        {readyCount}/{connected.length}
-      </span>
-    </button>
+  const label = isReady ? (missing > 0 ? `Pronto! Faltam ${missing}` : 'Pronto!') : 'Próxima ▸'
+  // A barra do tempo é o amarelo do jogo recortado da direita para a esquerda até a revelação acabar.
+  // O recorte vale para o botão e para a "sombra" 3D embaixo dele: as duas ficam amarelas juntas.
+  const drain = { clipPath: `inset(0 ${100 - bar.from * 100}% 0 0)`, animationDuration: `${bar.ms}ms` }
+  const button = (
+    <div className="pointer-events-auto relative pb-1 shadow-lg shadow-ink">
+      {/* A sombra 3D: a escura por baixo e a amarela (a borda do botão amarelo do jogo) recortada por cima. */}
+      <span className="absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#3b4664]" aria-hidden="true" />
+      <span className="skip-drain absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#b07f00]" style={drain} aria-hidden="true" />
+      <button
+        onClick={async () => {
+          playSound('skip')
+          setSkipped(true)
+          if (await onSkip()) setSkipped(false)
+        }}
+        disabled={isReady}
+        aria-label={isReady ? `Pronto. Faltam ${missing}` : 'Próxima'}
+        className={`relative flex w-full items-center gap-2 overflow-hidden rounded-xl bg-[#232b3f] py-2.5 pr-2 pl-4 transition-transform duration-75 ease-out active:translate-y-[3px] focus-visible:outline-2 focus-visible:outline-chalk ${
+          isReady ? 'translate-y-[3px]' : ''
+        } ${className}`}
+      >
+        <span className={`relative flex-1 text-left font-display text-lg tracking-wide ${isReady ? 'text-steel' : 'text-chalk'}`}>{label}</span>
+        <span className="skip-drain absolute inset-0 flex items-center bg-brand pl-4" style={drain} aria-hidden="true">
+          <span className="font-display text-lg tracking-wide text-ink">{label}</span>
+        </span>
+        <span className="relative z-10 flex shrink-0 -space-x-1.5" aria-hidden="true">
+          {connected.map((p) => (
+            <img
+              key={p.id}
+              src={avatarUrl(p)}
+              alt=""
+              title={p.nickname}
+              className={`size-7 rounded-full transition ${ready.includes(p.id) || (p.id === playerId && isReady) ? '' : 'opacity-30 grayscale'}`}
+            />
+          ))}
+        </span>
+      </button>
+    </div>
+  )
+  // Flutua no pé da tela, por cima da rolagem: o espaço no fim da página deixa o ranking aparecer
+  // inteiro por cima dele. (Na partida não tem o botão de som no canto, então ele usa a largura toda.)
+  // Vai direto no <body>: assim nenhum pai com animação (transform) prende o "fixed", e o espaço
+  // extra fica no fim da página, não no meio do painel de poderes.
+  return createPortal(
+    <>
+      <div className="h-20" aria-hidden="true" />
+      <div
+        className="pointer-events-none fixed inset-x-0 bottom-0 z-10 bg-linear-to-t from-ink via-ink/80 to-transparent pt-6"
+        style={{ paddingBottom: 'calc(env(safe-area-inset-bottom, 0px) + 1rem)' }}
+      >
+        <div className="mx-auto max-w-md px-4">{button}</div>
+      </div>
+    </>,
+    document.body,
   )
 }

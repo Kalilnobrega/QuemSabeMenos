@@ -14,6 +14,7 @@ import {
   type PowerView,
 } from '../lib/powerups'
 import type { PlayerView, PowerUpUse } from '../types/events'
+import { SkipButton } from './Screens'
 
 const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
 
@@ -754,10 +755,6 @@ interface BarProps {
 export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, lockedNote, emptyNote, onArm, onSkip }: BarProps) {
   const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean; mythic?: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const [skipped, setSkipped] = useState(false)
-  const connected = players.filter((p) => p.connected)
-  const readyCount = connected.filter((p) => game.ready.includes(p.id)).length
-  const isReady = skipped || (playerId !== null && game.ready.includes(playerId))
   const targets = players.filter((p) => p.id !== playerId && (!targetIds || targetIds.includes(p.id)))
   const hint = (kind: Kind) => hints?.[kind] ?? POWERUP_INFO[kind].hint
 
@@ -765,13 +762,6 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
     playSound(kind === 'backpack' ? 'backpack' : kind === 'theme' ? 'theme' : 'powerArm')
     setSelected(null)
     setError(await onArm(kind, target, legendary, theme))
-  }
-
-  const skip = async () => {
-    playSound('skip')
-    setSkipped(true)
-    const failure = await onSkip()
-    if (failure) setSkipped(false)
   }
 
   let body
@@ -983,21 +973,19 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
   }
 
   return (
-    <div className="flex items-start gap-3 rounded-xl bg-panel px-3 py-2.5">
-      <div className="min-w-0 flex-1">
+    <div className="flex flex-col gap-2.5 rounded-xl bg-panel px-3 py-2.5">
+      <div className="min-w-0">
         {body}
         {error && <p className="mt-1 text-sm text-red-300">{error}</p>}
       </div>
-      <button
-        onClick={() => void skip()}
-        disabled={isReady}
-        className={`btn-3d btn-sm shrink-0 rounded-xl px-3 py-1.5 text-sm font-semibold ${isReady ? 'btn-dark is-pressed text-steel' : 'btn-dark text-chalk'}`}
-      >
-        {isReady ? 'Pronto' : 'Pular'}
-        <span className="block text-xs text-steel">
-          {readyCount}/{connected.length}
-        </span>
-      </button>
+      <SkipButton
+        ready={game.ready}
+        players={players}
+        playerId={playerId}
+        onSkip={onSkip}
+        endsInMs={game.phase_ends_in_ms}
+        durationMs={game.phase_duration_ms}
+      />
     </div>
   )
 }

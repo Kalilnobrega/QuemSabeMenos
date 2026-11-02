@@ -440,7 +440,7 @@ function TeamRound({
             </div>
           )}
           <TeamBoard match={match} players={room.players} />
-          <SkipButton ready={match.ready} players={room.players} playerId={playerId} onSkip={onSkip} className="py-2" />
+          <SkipButton ready={match.ready} players={room.players} playerId={playerId} onSkip={onSkip} endsInMs={match.phase_ends_in_ms} durationMs={match.phase_duration_ms} />
         </>
       )}
     </section>

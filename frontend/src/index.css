@@ -44,6 +44,18 @@ body {
 .level-land {
   animation: level-land 0.01s 1.05s both;
 }
+/* O Pular: a barra do tempo da revelação esvazia por trás do botão. */
+.skip-drain {
+  animation-name: skip-drain;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes skip-drain {
+  to { clip-path: inset(0 100% 0 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skip-drain { animation: none; }
+}
 @keyframes level-land {
   from { color: #6b7280; }
 }

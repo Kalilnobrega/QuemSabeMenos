@@ -244,7 +244,7 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
 
       <Ranking players={players} playerId={playerId} deltas={deltas} />
 
-      <SkipButton ready={estimate.ready} players={players} playerId={playerId} onSkip={onSkip} className="self-center px-5" />
+      <SkipButton ready={estimate.ready} players={players} playerId={playerId} onSkip={onSkip} endsInMs={estimate.phase_ends_in_ms} durationMs={estimate.phase_duration_ms} />
     </div>
   )
 }

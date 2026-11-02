@@ -5,7 +5,7 @@ export type Kind = PowerUpUse['kind']
 /** O que os componentes de poder leem da partida: o GameView e o SurvivalView têm esses campos. */
 export type PowerView = Pick<
   GameView,
-  'powerups' | 'legendary_powerups' | 'mythic_powerups' | 'armed' | 'active' | 'lasting' | 'can_arm' | 'theme_choices' | 'ready' | 'powers_round'
+  'powerups' | 'legendary_powerups' | 'mythic_powerups' | 'armed' | 'active' | 'lasting' | 'can_arm' | 'theme_choices' | 'ready' | 'powers_round' | 'phase_ends_in_ms' | 'phase_duration_ms'
 >
 
 export const INSTANT: Kind[] = ['fifty_fifty', 'peek']
