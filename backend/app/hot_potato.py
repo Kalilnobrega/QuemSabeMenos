@@ -21,6 +21,7 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from app import powerups as pw
+from app.engine import RoomError
 from app.events import Gift, HotPotatoPlayer, HotPotatoTurn, HotPotatoView, PotatoView, PowerUp, PowerUpGain, PowerUpUse
 from app.game import Question
 
@@ -67,7 +68,7 @@ Phase = Literal["starting", "playing", "exploded", "finished"]
 State = Literal["arriving", "asking", "passing", "wrong", "again"]
 
 
-class HotPotatoError(Exception):
+class HotPotatoError(RoomError):
     pass
 
 

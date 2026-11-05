@@ -11,8 +11,9 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from app.duel import DuelQuestion, load_statements
+from app.engine import RoomError
 from app.estimate import ROUND_OPTIONS as ESTIMATE_ROUNDS
-from app.estimate import Estimate, EstimateError, EstimateQuestion, load_estimates
+from app.estimate import Estimate, EstimateQuestion, load_estimates
 from app.events import (
     ANSWER_OPTIONS,
     GRACE_OPTIONS,
@@ -36,15 +37,14 @@ from app.game import (
     SPEED_GRACE_SECONDS,
     STARTING_IQ,
     Game,
-    GameError,
     Question,
     load_bank,
     pick_questions,
     point_scale,
 )
-from app.hot_potato import HotPotato, HotPotatoError
-from app.survival import Survival, SurvivalError
-from app.teams import TeamMatch, TeamMatchError
+from app.hot_potato import HotPotato
+from app.survival import Survival
+from app.teams import TeamMatch
 
 CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ"  # sem I e O, que confundem com 1 e 0
 CODE_LENGTH = 5
@@ -54,10 +54,6 @@ MIN_TEAM_SIZE = 2
 DEFAULT_POWERUP_MAX = 3  # o anfitrião escolhe de 1 a 3
 DEFAULT_ROUNDS = 25
 ANSWER_SECONDS = 15.0
-
-
-class RoomError(Exception):
-    """Erro esperado, com mensagem pronta para mostrar ao jogador."""
 
 
 @dataclass
@@ -471,28 +467,19 @@ class RoomManager:
             return self._on_teams(room, lambda m: m.vote(player.id, option, now, room.connected_ids(), team))
         if found and found[0].hot_potato:
             room, player = found
-            try:
-                room.hot_potato.answer(player.id, option, now, potato)
-            except HotPotatoError as e:
-                raise RoomError(str(e)) from e
+            room.hot_potato.answer(player.id, option, now, potato)
             return room
         if found and found[0].survival:
             room, player = found
-            try:
-                room.survival.answer(player.id, option, now)
-            except SurvivalError as e:
-                raise RoomError(str(e)) from e
+            room.survival.answer(player.id, option, now)
             return room
         if not found or not found[0].game:
             raise RoomError("Não tem partida rolando.")
         room, player = found
-        try:
-            if room.game.phase == "duel_answering":
-                room.game.duel_answer(player.id, option, now)
-            else:
-                room.game.answer(player.id, option, now)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        if room.game.phase == "duel_answering":
+            room.game.duel_answer(player.id, option, now)
+        else:
+            room.game.answer(player.id, option, now)
         return room
 
     def bet(self, sid: str, amount: int, now: float) -> Room:
@@ -503,10 +490,7 @@ class RoomManager:
         if not found or not found[0].game:
             raise RoomError("Não tem partida rolando.")
         room, player = found
-        try:
-            room.game.bet(player, amount, now)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        room.game.bet(player, amount, now)
         return room
 
     def arm_powerup(
@@ -526,15 +510,12 @@ class RoomManager:
         elif room.survival:
             self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
         else:
-            try:
-                if kind == "resurrection":
-                    room.game.resurrect(player, room.players)
-                elif kind == "duel":
-                    room.game.challenge(player.id, target, [p.id for p in room.players])
-                else:
-                    room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
-            except GameError as e:
-                raise RoomError(str(e)) from e
+            if kind == "resurrection":
+                room.game.resurrect(player, room.players)
+            elif kind == "duel":
+                room.game.challenge(player.id, target, [p.id for p in room.players])
+            else:
+                room.game.arm(player.id, kind, target, [p.id for p in room.players], legendary, theme)
         # Escolheu o poder na revelação: já conta como pronto para a próxima, sem tocar em Pular.
         # A Mochila não conta, porque ela dá outro poder para escolher em seguida.
         if kind != "backpack":
@@ -550,10 +531,7 @@ class RoomManager:
             return self._on_survival(room, lambda s: s.disarm(player.id))
         if not room.game:
             raise RoomError("Aqui não dá para trocar o poder.")
-        try:
-            room.game.disarm(player.id)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        room.game.disarm(player.id)
         return room
 
     def duel_bet(self, sid: str, choice: str, now: float) -> Room:
@@ -562,10 +540,7 @@ class RoomManager:
             return self._on_teams(room, lambda m: m.duel_bet(player.id, choice, now))
         if not room.game:
             raise RoomError("Não tem X1 com aposta rolando.")
-        try:
-            room.game.duel_bet(player.id, choice, now)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        room.game.duel_bet(player.id, choice, now)
         return room
 
     def use_powerup(
@@ -581,17 +556,11 @@ class RoomManager:
         if room.team_match:
             return self._on_teams(room, lambda m: m.use_now(player.id, kind, target_team))
         if room.hot_potato:
-            try:
-                room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now, potato, option)
-            except HotPotatoError as e:
-                raise RoomError(str(e)) from e
+            room.hot_potato.use(player.id, kind, time.monotonic() if now is None else now, potato, option)
             return room
         if room.survival:
             return self._on_survival(room, lambda s: s.use_now(player.id, kind))
-        try:
-            room.game.use_now(player.id, kind)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        room.game.use_now(player.id, kind)
         return room
 
     def choose_representative(self, sid: str, choice: str) -> Room:
@@ -605,10 +574,7 @@ class RoomManager:
         room, player = self._playing(sid)
         if not room.estimate:
             raise RoomError("Esse modo não tem chute.")
-        try:
-            room.estimate.guess(player.id, value, now)
-        except EstimateError as e:
-            raise RoomError(str(e)) from e
+        room.estimate.guess(player.id, value, now)
         return room
 
     def choose_theme(self, sid: str, theme: str) -> Room:
@@ -616,10 +582,7 @@ class RoomManager:
         room, player = self._playing(sid)
         if not room.game:
             raise RoomError("Esse modo não tem escolha de tema.")
-        try:
-            room.game.choose_theme(player.id, theme)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        room.game.choose_theme(player.id, theme)
         return room
 
     def ready(self, sid: str) -> Room:
@@ -632,15 +595,9 @@ class RoomManager:
         if room.survival:
             return self._on_survival(room, lambda s: s.mark_ready(player.id))
         if room.estimate:
-            try:
-                room.estimate.mark_ready(player.id)
-            except EstimateError as e:
-                raise RoomError(str(e)) from e
+            room.estimate.mark_ready(player.id)
             return room
-        try:
-            room.game.mark_ready(player.id)
-        except GameError as e:
-            raise RoomError(str(e)) from e
+        room.game.mark_ready(player.id)
         return room
 
     def _playing(self, sid: str) -> tuple[Room, Player]:
@@ -652,17 +609,11 @@ class RoomManager:
         return found
 
     def _on_teams(self, room: Room, action) -> Room:
-        try:
-            action(room.team_match)
-        except TeamMatchError as e:
-            raise RoomError(str(e)) from e
+        action(room.team_match)
         return room
 
     def _on_survival(self, room: Room, action) -> Room:
-        try:
-            action(room.survival)
-        except SurvivalError as e:
-            raise RoomError(str(e)) from e
+        action(room.survival)
         return room
 
     def play_again(self, sid: str) -> Room:

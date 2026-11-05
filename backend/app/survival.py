@@ -20,6 +20,7 @@ from typing import Literal, Protocol
 
 from app import powerups as pw
 from app.duel import TRUE_FALSE_OPTIONS
+from app.engine import RoomError
 from app.events import (
     Gift,
     LastingPowerUp,
@@ -123,7 +124,7 @@ RULES: dict[SurvivalKind, Rules] = {
 }
 
 
-class SurvivalError(Exception):
+class SurvivalError(RoomError):
     pass
 
 

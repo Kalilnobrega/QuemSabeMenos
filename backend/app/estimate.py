@@ -16,6 +16,7 @@ from typing import Literal, Protocol
 
 from pydantic import BaseModel, Field
 
+from app.engine import RoomError
 from app.events import EstimateGuess, EstimateScoring, EstimateView
 from app.game import point_scale as scale_for
 from app.game import results_seconds, split_by_difficulty
@@ -55,7 +56,7 @@ SCORING: dict[str, Scoring] = {
 Phase = Literal["starting", "level", "answering", "results", "finished"]
 
 
-class EstimateError(Exception):
+class EstimateError(RoomError):
     """Erro esperado, com mensagem pronta para mostrar ao jogador."""
 
 

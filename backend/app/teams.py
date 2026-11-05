@@ -20,6 +20,7 @@ from typing import Literal
 
 from app import duel as x1
 from app import powerups as pw
+from app.engine import RoomError
 from app.events import (
     DuelPick,
     DuelView,
@@ -136,7 +137,7 @@ Phase = Literal[
 ]
 
 
-class TeamMatchError(Exception):
+class TeamMatchError(RoomError):
     pass
 
 

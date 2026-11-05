@@ -4,12 +4,13 @@ import os
 import secrets
 import time
 from contextlib import suppress
+from functools import wraps
 from pathlib import Path
 
 import socketio
 from fastapi import FastAPI, Header, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import ValidationError
+from pydantic import BaseModel, ValidationError
 
 from app import game as rules
 from app import history as modes
@@ -409,18 +410,41 @@ async def run_hot_potato(room: Room) -> None:
             record(history.finish, match_id, room, status, time.time(), modes.hot_potato_standings(potato, roster))
 
 
-@sio.event
-async def submit_duel_bet(sid: str, data: dict) -> dict:
-    try:
-        request = SubmitDuelBetRequest.model_validate(data)
-        room = rooms.duel_bet(sid, request.choice, time.monotonic())
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
+INVALID_DATA = "Dados inválidos."
+INVALID_PROFILE = "Apelido ou avatar inválido."
+
+
+def action(model: type[BaseModel] | None = None, invalid: str = INVALID_DATA):
+    """Handler de um pedido do jogador: valida os dados e transforma erros esperados em resposta."""
+
+    def decorate(handler):
+        @wraps(handler)
+        async def run(sid: str, *args) -> dict:
+            try:
+                if model is None:
+                    return await handler(sid, *args)
+                try:
+                    request = model.model_validate(*args)
+                except ValidationError:
+                    return error(invalid)
+                return await handler(sid, request)
+            except RoomError as e:
+                return error(str(e))
+
+        return run
+
+    return decorate
+
+
+async def publish(room: Room) -> dict:
     await broadcast(room)
     return OkAck().model_dump()
+
+
+async def publish_move(room: Room) -> dict:
+    """Depois de uma jogada, que pode ter sido a última que a fase esperava."""
+    check_round_done(room)
+    return await publish(room)
 
 
 @sio.event
@@ -429,43 +453,28 @@ async def ping_server(sid: str) -> dict:
 
 
 @sio.event
-async def create_room(sid: str, data: dict) -> dict:
-    try:
-        request = CreateRoomRequest.model_validate(data)
-        await leave_current_room(sid)
-        room, player = rooms.create(sid, request)
-    except ValidationError:
-        return error("Apelido ou avatar inválido.")
-    except RoomError as e:
-        return error(str(e))
+@action(CreateRoomRequest, invalid=INVALID_PROFILE)
+async def create_room(sid: str, request: CreateRoomRequest) -> dict:
+    await leave_current_room(sid)
+    room, player = rooms.create(sid, request)
     return await joined(sid, room, player)
 
 
 @sio.event
-async def join_room(sid: str, data: dict) -> dict:
-    try:
-        request = JoinRoomRequest.model_validate(data)
-        await leave_current_room(sid)
-        room, player = rooms.join(sid, request.code, request)
-    except ValidationError:
-        return error("Apelido ou avatar inválido.")
-    except RoomError as e:
-        return error(str(e))
+@action(JoinRoomRequest, invalid=INVALID_PROFILE)
+async def join_room(sid: str, request: JoinRoomRequest) -> dict:
+    await leave_current_room(sid)
+    room, player = rooms.join(sid, request.code, request)
     return await joined(sid, room, player)
 
 
 @sio.event
-async def rejoin_room(sid: str, data: dict) -> dict:
-    try:
-        request = RejoinRoomRequest.model_validate(data)
-        current = rooms.session(sid)
-        if current and current[1].token != request.token:
-            await leave_current_room(sid)
-        room, player, old_sid = rooms.rejoin(sid, request.code, request.token)
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
+@action(RejoinRoomRequest)
+async def rejoin_room(sid: str, request: RejoinRoomRequest) -> dict:
+    current = rooms.session(sid)
+    if current and current[1].token != request.token:
+        await leave_current_room(sid)
+    room, player, old_sid = rooms.rejoin(sid, request.code, request.token)
     if old_sid:
         await sio.leave_room(old_sid, room.code)
     return await joined(sid, room, player)
@@ -478,76 +487,46 @@ async def leave_room(sid: str) -> dict:
 
 
 @sio.event
-async def update_settings(sid: str, data: dict) -> dict:
-    try:
-        request = UpdateSettingsRequest.model_validate(data)
-        room = rooms.update_settings(
-            sid,
-            request.rounds,
-            request.themes,
-            request.answer_seconds,
-            request.speed_grace_seconds,
-            request.mode,
-            request.powerup_max,
-            request.survival_kind,
-            request.powers,
-            request.team_count,
-            request.team_pick,
-        )
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(UpdateSettingsRequest)
+async def update_settings(sid: str, request: UpdateSettingsRequest) -> dict:
+    room = rooms.update_settings(
+        sid,
+        request.rounds,
+        request.themes,
+        request.answer_seconds,
+        request.speed_grace_seconds,
+        request.mode,
+        request.powerup_max,
+        request.survival_kind,
+        request.powers,
+        request.team_count,
+        request.team_pick,
+    )
+    return await publish(room)
 
 
 @sio.event
-async def update_avatar(sid: str, data: dict) -> dict:
-    try:
-        request = UpdateAvatarRequest.model_validate(data)
-        room = rooms.update_avatar(sid, request.avatar)
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(UpdateAvatarRequest)
+async def update_avatar(sid: str, request: UpdateAvatarRequest) -> dict:
+    return await publish(rooms.update_avatar(sid, request.avatar))
 
 
 @sio.event
-async def set_team(sid: str, data: dict) -> dict:
-    try:
-        request = SetTeamRequest.model_validate(data)
-        room = rooms.set_team(sid, request.player_id, request.team)
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(SetTeamRequest)
+async def set_team(sid: str, request: SetTeamRequest) -> dict:
+    return await publish(rooms.set_team(sid, request.player_id, request.team))
 
 
 @sio.event
-async def choose_representative(sid: str, data: dict) -> dict:
-    try:
-        request = ChooseRepresentativeRequest.model_validate(data)
-        room = rooms.choose_representative(sid, request.choice)
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(ChooseRepresentativeRequest)
+async def choose_representative(sid: str, request: ChooseRepresentativeRequest) -> dict:
+    return await publish_move(rooms.choose_representative(sid, request.choice))
 
 
 @sio.event
+@action()
 async def start_game(sid: str) -> dict:
-    try:
-        room = rooms.start(sid)
-    except RoomError as e:
-        return error(str(e))
+    room = rooms.start(sid)
     runner = (
         run_estimate
         if room.estimate
@@ -564,123 +543,69 @@ async def start_game(sid: str) -> dict:
 
 
 @sio.event
-async def submit_answer(sid: str, data: dict) -> dict:
-    try:
-        request = SubmitAnswerRequest.model_validate(data)
-        room = rooms.answer(sid, request.option, time.monotonic(), request.team, request.potato)
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(SubmitAnswerRequest)
+async def submit_answer(sid: str, request: SubmitAnswerRequest) -> dict:
+    return await publish_move(rooms.answer(sid, request.option, time.monotonic(), request.team, request.potato))
 
 
 @sio.event
-async def submit_bet(sid: str, data: dict) -> dict:
-    try:
-        request = SubmitBetRequest.model_validate(data)
-        room = rooms.bet(sid, request.amount, time.monotonic())
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(SubmitBetRequest)
+async def submit_bet(sid: str, request: SubmitBetRequest) -> dict:
+    return await publish_move(rooms.bet(sid, request.amount, time.monotonic()))
 
 
 @sio.event
-async def arm_powerup(sid: str, data: dict) -> dict:
-    try:
-        request = ArmPowerUpRequest.model_validate(data)
-        room = rooms.arm_powerup(
-            sid, request.kind, request.target, request.legendary, request.theme, request.target_team
-        )
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)  # quem arma já conta como pronto: pode ter sido o último
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(SubmitDuelBetRequest)
+async def submit_duel_bet(sid: str, request: SubmitDuelBetRequest) -> dict:
+    return await publish_move(rooms.duel_bet(sid, request.choice, time.monotonic()))
 
 
 @sio.event
+@action(ArmPowerUpRequest)
+async def arm_powerup(sid: str, request: ArmPowerUpRequest) -> dict:
+    # Quem arma já conta como pronto: pode ter sido o último.
+    return await publish_move(
+        rooms.arm_powerup(sid, request.kind, request.target, request.legendary, request.theme, request.target_team)
+    )
+
+
+@sio.event
+@action()
 async def disarm_powerup(sid: str) -> dict:
-    try:
-        room = rooms.disarm_powerup(sid)
-    except RoomError as e:
-        return error(str(e))
-    await broadcast(room)
-    return OkAck().model_dump()
+    return await publish(rooms.disarm_powerup(sid))
 
 
 @sio.event
-async def use_powerup(sid: str, data: dict) -> dict:
-    try:
-        request = UsePowerUpRequest.model_validate(data)
-        room = rooms.use_powerup(
-            sid, request.kind, time.monotonic(), request.target_team, request.potato, request.option
-        )
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
+@action(UsePowerUpRequest)
+async def use_powerup(sid: str, request: UsePowerUpRequest) -> dict:
+    room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team, request.potato, request.option)
     if room.hot_potato or room.team_match:
-        check_round_done(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
-    await broadcast(room)
-    return OkAck().model_dump()
+        return await publish_move(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
+    return await publish(room)
 
 
 @sio.event
-async def submit_guess(sid: str, data: dict) -> dict:
-    try:
-        request = SubmitGuessRequest.model_validate(data)
-        room = rooms.guess(sid, request.value, time.monotonic())
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(SubmitGuessRequest)
+async def submit_guess(sid: str, request: SubmitGuessRequest) -> dict:
+    return await publish_move(rooms.guess(sid, request.value, time.monotonic()))
 
 
 @sio.event
-async def choose_theme(sid: str, data: dict) -> dict:
-    try:
-        request = ChooseThemeRequest.model_validate(data)
-        room = rooms.choose_theme(sid, request.theme)
-    except ValidationError:
-        return error("Dados inválidos.")
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
-    await broadcast(room)
-    return OkAck().model_dump()
+@action(ChooseThemeRequest)
+async def choose_theme(sid: str, request: ChooseThemeRequest) -> dict:
+    return await publish_move(rooms.choose_theme(sid, request.theme))
 
 
 @sio.event
+@action()
 async def skip_results(sid: str) -> dict:
-    try:
-        room = rooms.ready(sid)
-    except RoomError as e:
-        return error(str(e))
-    check_round_done(room)
-    await broadcast(room)
-    return OkAck().model_dump()
+    return await publish_move(rooms.ready(sid))
 
 
 @sio.event
+@action()
 async def play_again(sid: str) -> dict:
-    try:
-        room = rooms.play_again(sid)
-    except RoomError as e:
-        return error(str(e))
-    await broadcast(room)
-    return OkAck().model_dump()
+    return await publish(rooms.play_again(sid))
 
 
 @sio.event

@@ -16,6 +16,7 @@ from pydantic import BaseModel, Field, model_validator
 
 from app import duel as x1
 from app import powerups
+from app.engine import RoomError
 from app.events import (
     Bonus,
     Difficulty,
@@ -117,7 +118,7 @@ def legendary_steal_shares(targets: list[RoundResult], score_before: dict[str, i
     return [(t, round(pool * w / total)) for t, w in zip(targets, weights)]
 
 
-class GameError(Exception):
+class GameError(RoomError):
     """Erro esperado, com mensagem pronta para mostrar ao jogador."""
 
 
