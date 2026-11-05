@@ -22,6 +22,22 @@ npm install
 npm run dev
 ```
 
+## Qualidade do código
+
+O CI (`.github/workflows/ci.yml`) roda estes comandos em cada push na `main` e em cada pull request:
+
+```bash
+# em backend/
+.venv/bin/ruff format .     # formata (--check só confere)
+.venv/bin/ruff check .      # lint (--fix corrige o que der)
+.venv/bin/pytest
+
+# em frontend/
+npm run format              # formata (npm run format:check só confere)
+npm run lint
+npm run build
+```
+
 ## Tipos compartilhados
 
 Os eventos do Socket.IO são definidos como modelos Pydantic em `backend/app/events.py`.

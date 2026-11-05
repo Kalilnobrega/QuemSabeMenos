@@ -1,0 +1,10 @@
+target-version = "py312"
+line-length = 120
+
+[lint]
+# As regras padrão do Ruff mais a ordem dos imports.
+extend-select = ["I"]
+
+[lint.per-file-ignores]
+# Os testes passam lambdas para `wait_for` dentro de loops, mas elas rodam na mesma iteração.
+"tests/*" = ["B023"]

@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "preview": "vite preview",
     "types": "../backend/.venv/bin/python ../backend/scripts/export_schema.py && json2ts --unreachableDefinitions --no-additionalProperties -i src/types/events.schema.json -o src/types/events.ts"
   },
@@ -24,6 +26,7 @@
     "@vitejs/plugin-react": "^6.1.2",
     "json-schema-to-typescript": "^16.0.0",
     "oxlint": "^1.88.0",
+    "prettier": "3.9.10",
     "typescript": "~6.0.3",
     "vite": "^8.3.4"
   }
