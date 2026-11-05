@@ -12,6 +12,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal, Protocol
 
+from app.events import DuelPick, DuelView
+
 STATEMENTS_DIR = Path(__file__).parent / "true_false"
 
 INTRO_SECONDS = 3.0  # a animação de entrada; com plateia, a aposta vem depois dela
@@ -139,6 +141,36 @@ class Duel:
         for pid, choice in self.bets.items():
             if bettor := by_id.get(pid):
                 bettor.score += BET if choice == self.winner else -BET
+
+    def view(self, phase: str, viewer: str | None) -> DuelView:
+        """A tela do X1: as respostas só aparecem no fim de cada pergunta, e o resultado no fim de tudo."""
+        asked = self.index >= 0
+        question = self.question if asked else None
+        closed = phase in ("duel_results", "duel_end") and asked
+        finished = phase == "duel_end"
+        return DuelView(
+            challenger=self.challenger,
+            rival=self.rival,
+            question_number=self.index + 1,
+            total_questions=len(self.questions),
+            kind=question.kind if question else None,
+            text=question.text if question else None,
+            options=question.options if question else [],
+            theme=question.theme if question else None,
+            answered=[pid for pid in self.fighters if pid in self.answers],
+            picks=[DuelPick(**vars(pick)) for pick in self.picks] if closed else [],
+            correct_option=question.answer if closed else None,
+            fact=question.fact if closed else None,
+            total_ms=dict(self.total_ms),
+            can_bet=phase == "duel_betting" and viewer in self.bettors and viewer not in self.bets,
+            my_bet=self.bets.get(viewer) if viewer else None,
+            bets=dict(self.bets) if finished else {},
+            winner=self.winner if finished else None,
+            loser=self.loser if finished else None,
+            paid=self.paid,
+            from_bets=self.from_bets,
+            favorite_bonus=self.favorite_bonus,
+        )
 
 
 def load_statements(directory: Path = STATEMENTS_DIR) -> list[DuelQuestion]:

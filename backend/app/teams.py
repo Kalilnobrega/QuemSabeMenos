@@ -22,7 +22,6 @@ from app import duel as x1
 from app import powerups as pw
 from app.engine import RoomError
 from app.events import (
-    DuelPick,
     DuelView,
     LastingPowerUp,
     PowerUp,
@@ -46,8 +45,8 @@ from app.game import (
     START_SECONDS,
     STARTING_IQ,
     Question,
+    QuestionDeck,
     _duel_question,
-    _shuffle_options,
     bet_round,
     bet_win,
     max_bet,
@@ -233,7 +232,9 @@ class _Side:
 
 
 @dataclass
-class TeamMatch:
+class TeamMatch(QuestionDeck):
+    rule_error = TeamMatchError
+
     teams: list[Team]
     questions: list[Question]
     answer_seconds: float
@@ -298,10 +299,6 @@ class TeamMatch:
         return match
 
     # --- consultas --------------------------------------------------------
-
-    @property
-    def question(self) -> Question:
-        return self.questions[self.round]
 
     def is_solo(self, index: int) -> bool:
         return index == self.bet_index or self.questions[index].difficulty == FINAL_DIFFICULTY
@@ -464,11 +461,6 @@ class TeamMatch:
             raise TeamMatchError("Aposte em um dos dois.")
         duel.bets[player_id] = choice
 
-    def mark_ready(self, player_id: str) -> None:
-        if self.phase != "results":
-            raise TeamMatchError("Agora não dá para pular.")
-        self.ready.add(player_id)
-
     def drop(self, player_id: str) -> None:
         """Quem sai da sala deixa o time (o QI do time fica)."""
         team = self.team_of(player_id)
@@ -612,20 +604,6 @@ class TeamMatch:
         team.held.remove("backpack")
         team.extra_slots += 1
         team.held.append(self.rng.choice([k for k in POWERS if k != "backpack"]))
-
-    def _swap_next_question(self, theme: str) -> None:
-        upcoming = self.round + 1
-        current = self.questions[upcoming]
-        if current.theme == theme:
-            return
-        pool = [
-            q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used
-        ]
-        if not pool:
-            raise TeamMatchError("Acabaram as perguntas desse tema.")
-        question = self.rng.choice(pool)
-        self.used.add(question.id)
-        self.questions[upcoming] = _shuffle_options(question, self.rng)
 
     def _draw_theme_choices(self) -> list[str]:
         upcoming = self.round + 1
@@ -778,11 +756,6 @@ class TeamMatch:
             if self.duel_queue:
                 return self._start_duel(now, connected)
             self._next_question(now, connected)
-
-    def _enter(self, phase: Phase, now: float, seconds: float) -> None:
-        self.phase = phase
-        self.phase_started_at = now
-        self.phase_ends_at = now + seconds
 
     def _next_question(self, now: float, connected: list[str]) -> None:
         if self.round + 1 >= len(self.questions):
@@ -1080,32 +1053,7 @@ class TeamMatch:
         duel = self.duel
         if not duel or not self.phase.startswith("duel_") or self.phase == "duel_choosing":
             return None
-        asked = duel.index >= 0
-        question = duel.question if asked else None
-        closed = self.phase in ("duel_results", "duel_end") and asked
-        return DuelView(
-            challenger=duel.challenger,
-            rival=duel.rival,
-            question_number=duel.index + 1,
-            total_questions=len(duel.questions),
-            kind=question.kind if question else None,
-            text=question.text if question else None,
-            options=question.options if question else [],
-            theme=question.theme if question else None,
-            answered=[pid for pid in duel.fighters if pid in duel.answers],
-            picks=[DuelPick(**vars(pick)) for pick in duel.picks] if closed else [],
-            correct_option=question.answer if closed else None,
-            fact=question.fact if closed else None,
-            total_ms=dict(duel.total_ms),
-            can_bet=self.phase == "duel_betting" and viewer in duel.bettors and viewer not in duel.bets,
-            my_bet=duel.bets.get(viewer) if viewer else None,
-            bets=dict(duel.bets) if self.phase == "duel_end" else {},
-            winner=duel.winner if self.phase == "duel_end" else None,
-            loser=duel.loser if self.phase == "duel_end" else None,
-            paid=duel.paid,
-            from_bets=duel.from_bets,
-            favorite_bonus=duel.favorite_bonus,
-        )
+        return duel.view(self.phase, viewer)
 
     # --- visão ------------------------------------------------------------
 

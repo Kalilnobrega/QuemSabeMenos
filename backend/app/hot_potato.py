@@ -21,11 +21,10 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from app import powerups as pw
-from app.engine import RoomError
+from app.engine import Phased, RoomError
 from app.events import Gift, HotPotatoPlayer, HotPotatoTurn, HotPotatoView, PotatoView, PowerUp, PowerUpGain, PowerUpUse
-from app.game import Question
+from app.game import START_SECONDS, Question
 
-START_SECONDS = 5.0
 FUSE_SECONDS = (40.0, 60.0)
 GOLDEN_FUSE_SECONDS = (30.0, 45.0)  # a Batata dupla queima um pouco mais rápido
 WRONG_PENALTY_SECONDS = 10.0
@@ -111,7 +110,7 @@ class Potato:
 
 
 @dataclass
-class HotPotato:
+class HotPotato(Phased):
     players: list[Holder]  # a ordem da roda
     pool: list[Question]
     used: set[str]
@@ -360,11 +359,6 @@ class HotPotato:
                 self._ask(potato, now)
 
     # --- transições -------------------------------------------------------
-
-    def _enter(self, phase: Phase, now: float, seconds: float) -> None:
-        self.phase = phase
-        self.phase_started_at = now
-        self.phase_ends_at = now + seconds
 
     def _set_state(self, potato: Potato, state: State, now: float, seconds: float) -> None:
         potato.state = state

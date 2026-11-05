@@ -16,17 +16,14 @@ from typing import Literal, Protocol
 
 from pydantic import BaseModel, Field
 
-from app.engine import RoomError
+from app.engine import Revealed, RoomError
 from app.events import EstimateGuess, EstimateScoring, EstimateView
+from app.game import LATE_SECONDS, LEVEL_SECONDS, START_SECONDS, results_seconds, split_by_difficulty
 from app.game import point_scale as scale_for
-from app.game import results_seconds, split_by_difficulty
 
 ESTIMATES_DIR = Path(__file__).parent / "estimates"
 ROUND_OPTIONS = (10, 15, 20)
-START_SECONDS = 5.0
-LEVEL_SECONDS = 3.0  # a tela de "Próximo nível", como no clássico
 ANSWER_SECONDS = 20.0
-LATE_SECONDS = 1.0  # tolerância de rede para chutes no limite
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
 
 
@@ -118,7 +115,9 @@ class Scorable(Protocol):
 
 
 @dataclass
-class Estimate:
+class Estimate(Revealed):
+    rule_error = EstimateError
+
     questions: list[EstimateQuestion]
     point_scale: float = 1.0  # 20/N, como no clássico
     phase: Phase = "starting"
@@ -161,11 +160,6 @@ class Estimate:
 
     def everyone_answered(self, connected: list[str]) -> bool:
         return all(pid in self.guesses for pid in connected)
-
-    def mark_ready(self, player_id: str) -> None:
-        if self.phase != "results":
-            raise EstimateError("Agora não dá para pular.")
-        self.ready.add(player_id)
 
     def everyone_ready(self, connected: list[str]) -> bool:
         return all(pid in self.ready for pid in connected)
@@ -251,8 +245,3 @@ class Estimate:
             max_loss=_round(rules.max_loss * self.point_scale),
             max_loss_percent=rules.max_loss_at,
         )
-
-    def _enter(self, phase: Phase, now: float, seconds: float) -> None:
-        self.phase = phase
-        self.phase_started_at = now
-        self.phase_ends_at = now + seconds

@@ -20,7 +20,7 @@ from typing import Literal, Protocol
 
 from app import powerups as pw
 from app.duel import TRUE_FALSE_OPTIONS
-from app.engine import RoomError
+from app.engine import Revealed, RoomError
 from app.events import (
     Gift,
     LastingPowerUp,
@@ -33,13 +33,10 @@ from app.events import (
     SurvivalView,
     Survivor,
 )
-from app.game import reading_seconds, results_seconds
+from app.game import LATE_SECONDS, LEVEL_SECONDS, START_SECONDS, reading_seconds, results_seconds
 
-START_SECONDS = 5.0
-LEVEL_SECONDS = 3.0
 DUEL_INTRO_SECONDS = 3.0
 DUEL_RESULTS_SECONDS = 3.0
-LATE_SECONDS = 1.0  # tolerância de rede para respostas no limite
 
 # Poderes do modo. No V ou F, 50/50 e Alternativa falsa entregariam a resposta.
 POWERS: tuple[PowerUp, ...] = (
@@ -154,7 +151,9 @@ class Contender:
 
 
 @dataclass
-class Survival:
+class Survival(Revealed):
+    rule_error = SurvivalError
+
     kind: SurvivalKind
     contenders: list[Contender]
     pool: list[Asked]  # perguntas dos temas escolhidos, de todos os níveis
@@ -322,11 +321,6 @@ class Survival:
             raise SurvivalError("Resposta inválida.")
         self.answers[player_id] = (option, min(now, deadline))
 
-    def mark_ready(self, player_id: str) -> None:
-        if self.phase != "results":
-            raise SurvivalError("Agora não dá para pular.")
-        self.ready.add(player_id)
-
     def arm(self, player_id: str, kind: PowerUp, target: str | None, theme: str | None = None) -> None:
         if not self.powers or self.phase != "results":
             raise SurvivalError("Agora não dá para usar poder.")
@@ -423,11 +417,6 @@ class Survival:
             self._open(now)
 
     # --- transições -------------------------------------------------------
-
-    def _enter(self, phase: Phase, now: float, seconds: float) -> None:
-        self.phase = phase
-        self.phase_started_at = now
-        self.phase_ends_at = now + seconds
 
     def _finish(self, now: float, winner: str | None) -> None:
         self.winner = winner

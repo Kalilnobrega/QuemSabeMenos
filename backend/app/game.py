@@ -16,12 +16,11 @@ from pydantic import BaseModel, Field, model_validator
 
 from app import duel as x1
 from app import powerups
-from app.engine import RoomError
+from app.engine import Revealed, RoomError
 from app.events import (
     Bonus,
     Difficulty,
     DuelChallenge,
-    DuelPick,
     DuelView,
     GameView,
     LastingPowerUp,
@@ -280,8 +279,32 @@ class Answer:
     at: float
 
 
+class QuestionDeck(Revealed):
+    """Partida com a lista de perguntas sorteada no começo, e o banco para trocar a próxima."""
+
+    @property
+    def question(self) -> Question:
+        return self.questions[self.round]
+
+    def _swap_next_question(self, theme: str) -> None:
+        upcoming = self.round + 1
+        current = self.questions[upcoming]
+        if current.theme == theme:
+            return
+        pool = [
+            q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used
+        ]
+        if not pool:
+            raise self.rule_error("Acabaram as perguntas desse tema.")
+        question = self.rng.choice(pool)
+        self.used.add(question.id)
+        self.questions[upcoming] = _shuffle_options(question, self.rng)
+
+
 @dataclass
-class Game:
+class Game(QuestionDeck):
+    rule_error = GameError
+
     questions: list[Question]
     answer_seconds: float
     point_scale: float = 1.0
@@ -342,10 +365,6 @@ class Game:
     @property
     def is_bet_round(self) -> bool:
         return self.round == self.bet_round
-
-    @property
-    def question(self) -> Question:
-        return self.questions[self.round]
 
     @property
     def has_next_round(self) -> bool:
@@ -468,20 +487,6 @@ class Game:
         self.extra_slots[player_id] = self.extra_slots.get(player_id, 0) + 1
         held.append(self.rng.choice([kind for kind in self.dealable if kind != "backpack"]))
 
-    def _swap_next_question(self, theme: str) -> None:
-        upcoming = self.round + 1
-        current = self.questions[upcoming]
-        if current.theme == theme:
-            return
-        pool = [
-            q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used
-        ]
-        if not pool:
-            raise GameError("Acabaram as perguntas desse tema.")
-        question = self.rng.choice(pool)
-        self.used.add(question.id)
-        self.questions[upcoming] = _shuffle_options(question, self.rng)
-
     def _draw_theme_choices(self) -> list[str]:
         if not self.powers or self.specialist or not self.has_next_round:
             return []
@@ -512,11 +517,6 @@ class Game:
         if kind == "fifty_fifty":
             q = self.question
             self.hidden_options[player_id] = powerups.fifty_fifty(len(q.options), q.answer, self.rng)
-
-    def mark_ready(self, player_id: str) -> None:
-        if self.phase != "results":
-            raise GameError("Agora não dá para pular.")
-        self.ready.add(player_id)
 
     def everyone_ready(self, player_ids: list[str]) -> bool:
         """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
@@ -1027,32 +1027,7 @@ class Game:
         duel = self.duel
         if not duel or self.phase not in DUEL_PHASES:
             return None
-        asked = duel.index >= 0
-        question = duel.question if asked else None
-        closed = self.phase in ("duel_results", "duel_end") and asked
-        return DuelView(
-            challenger=duel.challenger,
-            rival=duel.rival,
-            question_number=duel.index + 1,
-            total_questions=len(duel.questions),
-            kind=question.kind if question else None,
-            text=question.text if question else None,
-            options=question.options if question else [],
-            theme=question.theme if question else None,
-            answered=[pid for pid in duel.fighters if pid in duel.answers],
-            picks=[DuelPick(**vars(pick)) for pick in duel.picks] if closed else [],
-            correct_option=question.answer if closed else None,
-            fact=question.fact if closed else None,
-            total_ms=dict(duel.total_ms),
-            can_bet=self.phase == "duel_betting" and viewer in duel.bettors and viewer not in duel.bets,
-            my_bet=duel.bets.get(viewer) if viewer else None,
-            bets=dict(duel.bets) if self.phase == "duel_end" else {},
-            winner=duel.winner if self.phase == "duel_end" else None,
-            loser=duel.loser if self.phase == "duel_end" else None,
-            paid=duel.paid,
-            from_bets=duel.from_bets,
-            favorite_bonus=duel.favorite_bonus,
-        )
+        return duel.view(self.phase, viewer)
 
     def _pay_investments(self, by_id: dict[str, RoundResult]) -> None:
         for pid, hits in list(self.investments.items()):
@@ -1320,8 +1295,3 @@ class Game:
         if show_answer:
             return uses
         return [use for use in uses if use.kind != "steal" or use.by == viewer]
-
-    def _enter(self, phase: Phase, now: float, seconds: float):
-        self.phase = phase
-        self.phase_started_at = now
-        self.phase_ends_at = now + seconds
