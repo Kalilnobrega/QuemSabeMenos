@@ -11,6 +11,7 @@ import {
 } from '../lib/powerups'
 import type { RoomSettings } from '../types/events'
 import { PowerUpIcon } from './PowerUps'
+import { Sheet } from './Sheet'
 
 type Mode = RoomSettings['mode']
 
@@ -452,85 +453,75 @@ export function ModeGuide({ mode, onClose }: { mode: Mode; onClose: () => void }
   }, [onClose])
 
   return (
-    <div className="fixed inset-0 z-40 flex items-end justify-center bg-ink/70 sm:items-center" onClick={onClose}>
-      <div
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="guide-title"
-        onClick={(e) => e.stopPropagation()}
-        className="settings-sheet flex max-h-[90dvh] w-full max-w-md flex-col gap-5 overflow-y-auto rounded-t-3xl border border-white/10 bg-ink p-5 pb-8 sm:rounded-3xl"
+    <Sheet labelledBy="guide-title" onClose={onClose} stacked>
+      <header className="flex flex-col items-center gap-1 text-center">
+        <h2 id="guide-title" className="font-display text-3xl tracking-wide text-brand">
+          {guide.name}
+        </h2>
+        <p className="text-steel">{guide.summary}</p>
+      </header>
+
+      {guide.sections.map((section) => (
+        <section key={section.title} className="flex flex-col gap-2">
+          <h3 className="font-display text-xl tracking-wide">{section.title}</h3>
+          <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm leading-relaxed">
+            {section.items.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
+
+      {guide.powersIntro && (
+        <section className="flex flex-col gap-2">
+          <h3 className="font-display text-xl tracking-wide">Poderes</h3>
+          <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm leading-relaxed">
+            {guide.powersIntro.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {guide.powers?.map((group) => (
+        <section key={group.title} className="flex flex-col gap-2">
+          <h4 className={group.mythic ? 'mythic-title font-display text-lg tracking-wide' : 'font-semibold text-brand'}>
+            {group.title}
+          </h4>
+          <ul className="flex flex-col gap-2">
+            {group.kinds.map((kind) => (
+              <li
+                key={kind}
+                className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : group.mythic ? 'mythic items-center py-2.5' : POWERUP_INFO[kind].tone}`}
+              >
+                <PowerUpIcon
+                  kind={kind}
+                  className={
+                    group.mythic
+                      ? 'size-10 shrink-0 drop-shadow-[0_0_6px_rgba(255,213,79,0.7)]'
+                      : 'mt-0.5 size-6 shrink-0'
+                  }
+                />
+                <span className="text-sm leading-snug">
+                  <span className="font-bold">
+                    {POWERUP_INFO[kind].name}
+                    {group.legendary && ' LENDÁRIO'}
+                    {group.mythic && ' MÍTICO'}:
+                  </span>{' '}
+                  {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+
+      <button
+        onClick={onClose}
+        className="btn-3d btn-brand rounded-xl py-3 font-display text-xl tracking-wide text-ink"
       >
-        <header className="flex flex-col items-center gap-1 text-center">
-          <h2 id="guide-title" className="font-display text-3xl tracking-wide text-brand">
-            {guide.name}
-          </h2>
-          <p className="text-steel">{guide.summary}</p>
-        </header>
-
-        {guide.sections.map((section) => (
-          <section key={section.title} className="flex flex-col gap-2">
-            <h3 className="font-display text-xl tracking-wide">{section.title}</h3>
-            <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm leading-relaxed">
-              {section.items.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </section>
-        ))}
-
-        {guide.powersIntro && (
-          <section className="flex flex-col gap-2">
-            <h3 className="font-display text-xl tracking-wide">Poderes</h3>
-            <ul className="flex list-disc flex-col gap-1.5 pl-5 text-sm leading-relaxed">
-              {guide.powersIntro.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        {guide.powers?.map((group) => (
-          <section key={group.title} className="flex flex-col gap-2">
-            <h4
-              className={group.mythic ? 'mythic-title font-display text-lg tracking-wide' : 'font-semibold text-brand'}
-            >
-              {group.title}
-            </h4>
-            <ul className="flex flex-col gap-2">
-              {group.kinds.map((kind) => (
-                <li
-                  key={kind}
-                  className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : group.mythic ? 'mythic items-center py-2.5' : POWERUP_INFO[kind].tone}`}
-                >
-                  <PowerUpIcon
-                    kind={kind}
-                    className={
-                      group.mythic
-                        ? 'size-10 shrink-0 drop-shadow-[0_0_6px_rgba(255,213,79,0.7)]'
-                        : 'mt-0.5 size-6 shrink-0'
-                    }
-                  />
-                  <span className="text-sm leading-snug">
-                    <span className="font-bold">
-                      {POWERUP_INFO[kind].name}
-                      {group.legendary && ' LENDÁRIO'}
-                      {group.mythic && ' MÍTICO'}:
-                    </span>{' '}
-                    {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-
-        <button
-          onClick={onClose}
-          className="btn-3d btn-brand rounded-xl py-3 font-display text-xl tracking-wide text-ink"
-        >
-          Entendi
-        </button>
-      </div>
-    </div>
+        Entendi
+      </button>
+    </Sheet>
   )
 }

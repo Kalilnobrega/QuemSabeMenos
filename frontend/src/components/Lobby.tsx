@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { InfoButton, ModeGuide } from './ModeGuide'
+import { Sheet } from './Sheet'
 import { AVATAR_NAMES, AVATARS, avatarUrl, type Avatar } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
@@ -363,53 +364,43 @@ function AvatarSheet({
   }
 
   return (
-    <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/70 sm:items-center" onClick={onClose}>
-      <div
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="avatar-title"
-        onClick={(e) => e.stopPropagation()}
-        className="settings-sheet flex max-h-[90dvh] w-full max-w-md flex-col gap-4 overflow-y-auto rounded-t-3xl border border-white/10 bg-ink p-5 pb-8 sm:rounded-3xl"
-      >
-        <h2 id="avatar-title" className="text-center font-display text-3xl tracking-wide text-brand">
-          Escolha seu bicho
-        </h2>
-        <p className="text-center text-sm text-steel">Pode repetir o de alguém: o seu ganha outra cor de fundo.</p>
-        <div className="grid grid-cols-4 gap-3">
-          {AVATARS.map((avatar) => {
-            const selected = me.avatar === avatar
-            // A cor que você teria com esse bicho: conta quem chegou antes e já usa ele.
-            const preview = selected
-              ? me
-              : { avatar, avatar_variant: earlier.filter((p) => p.avatar === avatar).length }
-            const users = others.filter((p) => p.avatar === avatar)
-            return (
-              <button
-                key={avatar}
-                onClick={() => (selected ? onClose() : void pick(avatar))}
-                aria-label={AVATAR_NAMES[avatar]}
-                aria-pressed={selected}
-                className={`relative rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-80 hover:opacity-100'}`}
-              >
-                <img src={avatarUrl(preview)} alt="" className="w-full" />
-                {users.length > 0 && (
-                  <span
-                    className="absolute -right-1 -bottom-1 flex items-center rounded-full border-2 border-ink bg-panel px-1.5 text-xs font-bold text-chalk"
-                    title={`Em uso: ${users.map((p) => p.nickname).join(', ')}`}
-                  >
-                    {users.length === 1 ? users[0].nickname.slice(0, 6) : `${users.length}×`}
-                  </span>
-                )}
-              </button>
-            )
-          })}
-        </div>
-        {notice && <p className="text-center text-sm text-red-300">{notice}</p>}
-        <button onClick={onClose} className="btn-3d btn-dark rounded-xl py-3 font-semibold text-steel">
-          Fechar
-        </button>
+    <Sheet labelledBy="avatar-title" onClose={onClose}>
+      <h2 id="avatar-title" className="text-center font-display text-3xl tracking-wide text-brand">
+        Escolha seu bicho
+      </h2>
+      <p className="text-center text-sm text-steel">Pode repetir o de alguém: o seu ganha outra cor de fundo.</p>
+      <div className="grid grid-cols-4 gap-3">
+        {AVATARS.map((avatar) => {
+          const selected = me.avatar === avatar
+          // A cor que você teria com esse bicho: conta quem chegou antes e já usa ele.
+          const preview = selected ? me : { avatar, avatar_variant: earlier.filter((p) => p.avatar === avatar).length }
+          const users = others.filter((p) => p.avatar === avatar)
+          return (
+            <button
+              key={avatar}
+              onClick={() => (selected ? onClose() : void pick(avatar))}
+              aria-label={AVATAR_NAMES[avatar]}
+              aria-pressed={selected}
+              className={`relative rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-80 hover:opacity-100'}`}
+            >
+              <img src={avatarUrl(preview)} alt="" className="w-full" />
+              {users.length > 0 && (
+                <span
+                  className="absolute -right-1 -bottom-1 flex items-center rounded-full border-2 border-ink bg-panel px-1.5 text-xs font-bold text-chalk"
+                  title={`Em uso: ${users.map((p) => p.nickname).join(', ')}`}
+                >
+                  {users.length === 1 ? users[0].nickname.slice(0, 6) : `${users.length}×`}
+                </span>
+              )}
+            </button>
+          )
+        })}
       </div>
-    </div>
+      {notice && <p className="text-center text-sm text-red-300">{notice}</p>}
+      <button onClick={onClose} className="btn-3d btn-dark rounded-xl py-3 font-semibold text-steel">
+        Fechar
+      </button>
+    </Sheet>
   )
 }
 
@@ -441,196 +432,188 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
 
   return (
     <>
-      <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/70 sm:items-center" onClick={onClose}>
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="settings-title"
-          onClick={(e) => e.stopPropagation()}
-          className="settings-sheet flex max-h-[90dvh] w-full max-w-md flex-col gap-5 overflow-y-auto rounded-t-3xl border border-white/10 bg-ink p-5 pb-8 sm:rounded-3xl"
-        >
-          <h2 id="settings-title" className="text-center font-display text-3xl tracking-wide text-brand">
-            Configurações
-          </h2>
+      <Sheet labelledBy="settings-title" onClose={onClose}>
+        <h2 id="settings-title" className="text-center font-display text-3xl tracking-wide text-brand">
+          Configurações
+        </h2>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-display text-xl tracking-wide">Modo</h3>
-            <div className="grid grid-cols-2 gap-2">
-              {settings.mode_options.map((mode, index) => (
-                // Número ímpar de modos: o último ocupa a linha inteira.
-                <div
-                  key={mode}
-                  className={`relative ${index === settings.mode_options.length - 1 && index % 2 === 0 ? 'col-span-2' : ''}`}
+        <div className="flex flex-col gap-2">
+          <h3 className="font-display text-xl tracking-wide">Modo</h3>
+          <div className="grid grid-cols-2 gap-2">
+            {settings.mode_options.map((mode, index) => (
+              // Número ímpar de modos: o último ocupa a linha inteira.
+              <div
+                key={mode}
+                className={`relative ${index === settings.mode_options.length - 1 && index % 2 === 0 ? 'col-span-2' : ''}`}
+              >
+                <button
+                  onClick={() => update({ mode })}
+                  aria-pressed={settings.mode === mode}
+                  className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
+                    settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                  }`}
                 >
-                  <button
-                    onClick={() => update({ mode })}
-                    aria-pressed={settings.mode === mode}
-                    className={`btn-3d btn-sm flex h-full w-full flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
-                      settings.mode === mode ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
-                    }`}
-                  >
-                    {/* Só o nome abre espaço para o i; a explicação usa a largura toda. */}
-                    <span className="pr-5 font-semibold">{MODES[mode].name}</span>
-                    <span className="text-xs leading-snug opacity-80">{MODES[mode].hint}</span>
-                  </button>
-                  <span className={`absolute top-1.5 right-1.5 ${settings.mode === mode ? 'text-ink' : 'text-steel'}`}>
-                    <InfoButton onClick={() => setGuide(mode)} label={`Como funciona o ${MODES[mode].name}`} />
-                  </span>
-                </div>
+                  {/* Só o nome abre espaço para o i; a explicação usa a largura toda. */}
+                  <span className="pr-5 font-semibold">{MODES[mode].name}</span>
+                  <span className="text-xs leading-snug opacity-80">{MODES[mode].hint}</span>
+                </button>
+                <span className={`absolute top-1.5 right-1.5 ${settings.mode === mode ? 'text-ink' : 'text-steel'}`}>
+                  <InfoButton onClick={() => setGuide(mode)} label={`Como funciona o ${MODES[mode].name}`} />
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {settings.mode !== 'estimate' && (
+          <OptionRow
+            title="Poderes"
+            hint={POWERS_HINT[settings.mode]}
+            options={[0, 1]}
+            value={settings.powers ? 1 : 0}
+            label={(n) => (n ? 'Com' : 'Sem')}
+            onPick={(n) => update({ powers: n === 1 })}
+          />
+        )}
+
+        {settings.mode !== 'teams' && settings.mode !== 'estimate' && settings.powers && (
+          <OptionRow
+            title="Limite de poderes"
+            hint="Quantos poderes cada um pode guardar ao mesmo tempo"
+            options={settings.powerup_max_options}
+            value={settings.powerup_max}
+            label={(n) => String(n)}
+            onPick={(powerup_max) => update({ powerup_max })}
+          />
+        )}
+
+        {settings.mode === 'last_standing' && (
+          <div className="flex flex-col gap-2">
+            <h3 className="font-display text-xl tracking-wide">Perguntas</h3>
+            <div className="grid grid-cols-2 gap-2">
+              {settings.survival_kind_options.map((kind) => (
+                <button
+                  key={kind}
+                  onClick={() => update({ survival_kind: kind })}
+                  aria-pressed={settings.survival_kind === kind}
+                  className={`btn-3d btn-sm flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
+                    settings.survival_kind === kind
+                      ? 'btn-brand is-pressed text-ink'
+                      : 'btn-dark text-steel hover:text-chalk'
+                  }`}
+                >
+                  <span className="font-semibold">{SURVIVAL_KINDS[kind].name}</span>
+                  <span className="text-xs leading-snug opacity-80">{SURVIVAL_KINDS[kind].hint}</span>
+                </button>
               ))}
             </div>
           </div>
+        )}
 
-          {settings.mode !== 'estimate' && (
+        {settings.mode === 'teams' && (
+          <>
             <OptionRow
-              title="Poderes"
-              hint={POWERS_HINT[settings.mode]}
-              options={[0, 1]}
-              value={settings.powers ? 1 : 0}
-              label={(n) => (n ? 'Com' : 'Sem')}
-              onPick={(n) => update({ powers: n === 1 })}
-            />
-          )}
-
-          {settings.mode !== 'teams' && settings.mode !== 'estimate' && settings.powers && (
-            <OptionRow
-              title="Limite de poderes"
-              hint="Quantos poderes cada um pode guardar ao mesmo tempo"
-              options={settings.powerup_max_options}
-              value={settings.powerup_max}
+              title="Times"
+              hint="Cada time precisa de pelo menos 2 jogadores"
+              options={settings.team_count_options}
+              value={settings.team_count}
               label={(n) => String(n)}
-              onPick={(powerup_max) => update({ powerup_max })}
+              onPick={(team_count) => update({ team_count })}
             />
-          )}
+            <OptionRow
+              title="Montagem"
+              hint="O anfitrião monta tocando nos jogadores, ou sorteio no começo"
+              options={[1, 0]}
+              value={settings.team_pick === 'host' ? 1 : 0}
+              label={(n) => (n ? 'Anfitrião' : 'Sorteio')}
+              onPick={(n) => update({ team_pick: n ? 'host' : 'random' })}
+            />
+          </>
+        )}
 
-          {settings.mode === 'last_standing' && (
-            <div className="flex flex-col gap-2">
-              <h3 className="font-display text-xl tracking-wide">Perguntas</h3>
-              <div className="grid grid-cols-2 gap-2">
-                {settings.survival_kind_options.map((kind) => (
-                  <button
-                    key={kind}
-                    onClick={() => update({ survival_kind: kind })}
-                    aria-pressed={settings.survival_kind === kind}
-                    className={`btn-3d btn-sm flex flex-col gap-0.5 rounded-lg px-3 py-2 text-left ${
-                      settings.survival_kind === kind
-                        ? 'btn-brand is-pressed text-ink'
-                        : 'btn-dark text-steel hover:text-chalk'
-                    }`}
-                  >
-                    <span className="font-semibold">{SURVIVAL_KINDS[kind].name}</span>
-                    <span className="text-xs leading-snug opacity-80">{SURVIVAL_KINDS[kind].hint}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
+        {settings.mode === 'estimate' && (
+          <OptionRow
+            title="Perguntas"
+            hint="20 segundos para cada chute"
+            options={ESTIMATE_ROUNDS}
+            value={estimateRounds(settings.rounds)}
+            label={(n) => String(n)}
+            onPick={(rounds) => update({ rounds })}
+          />
+        )}
 
-          {settings.mode === 'teams' && (
-            <>
-              <OptionRow
-                title="Times"
-                hint="Cada time precisa de pelo menos 2 jogadores"
-                options={settings.team_count_options}
-                value={settings.team_count}
-                label={(n) => String(n)}
-                onPick={(team_count) => update({ team_count })}
-              />
-              <OptionRow
-                title="Montagem"
-                hint="O anfitrião monta tocando nos jogadores, ou sorteio no começo"
-                options={[1, 0]}
-                value={settings.team_pick === 'host' ? 1 : 0}
-                label={(n) => (n ? 'Anfitrião' : 'Sorteio')}
-                onPick={(n) => update({ team_pick: n ? 'host' : 'random' })}
-              />
-            </>
-          )}
-
-          {settings.mode === 'estimate' && (
+        {settings.mode !== 'last_standing' && settings.mode !== 'hot_potato' && settings.mode !== 'estimate' && (
+          <>
             <OptionRow
               title="Perguntas"
-              hint="20 segundos para cada chute"
-              options={ESTIMATE_ROUNDS}
-              value={estimateRounds(settings.rounds)}
+              hint="Mais a impossível no final"
+              options={settings.round_options}
+              value={settings.rounds}
               label={(n) => String(n)}
               onPick={(rounds) => update({ rounds })}
             />
-          )}
+            <OptionRow
+              title="Tempo de resposta"
+              hint="Segundos para escolher a alternativa"
+              options={settings.answer_options}
+              value={settings.answer_seconds}
+              label={(n) => `${n}s`}
+              onPick={(answer_seconds) => update({ answer_seconds })}
+            />
+            <OptionRow
+              title="Tempo de QI cheio"
+              hint="Quem acerta dentro desse tempo leva o máximo de QI"
+              options={settings.grace_options}
+              value={settings.speed_grace_seconds}
+              label={(n) => (n ? `${n}s` : 'Não')}
+              onPick={(speed_grace_seconds) => update({ speed_grace_seconds })}
+            />
+          </>
+        )}
 
-          {settings.mode !== 'last_standing' && settings.mode !== 'hot_potato' && settings.mode !== 'estimate' && (
-            <>
-              <OptionRow
-                title="Perguntas"
-                hint="Mais a impossível no final"
-                options={settings.round_options}
-                value={settings.rounds}
-                label={(n) => String(n)}
-                onPick={(rounds) => update({ rounds })}
-              />
-              <OptionRow
-                title="Tempo de resposta"
-                hint="Segundos para escolher a alternativa"
-                options={settings.answer_options}
-                value={settings.answer_seconds}
-                label={(n) => `${n}s`}
-                onPick={(answer_seconds) => update({ answer_seconds })}
-              />
-              <OptionRow
-                title="Tempo de QI cheio"
-                hint="Quem acerta dentro desse tempo leva o máximo de QI"
-                options={settings.grace_options}
-                value={settings.speed_grace_seconds}
-                label={(n) => (n ? `${n}s` : 'Não')}
-                onPick={(speed_grace_seconds) => update({ speed_grace_seconds })}
-              />
-            </>
-          )}
-
-          <div className="flex flex-col gap-2">
-            <h3 className="flex items-baseline justify-between font-display text-xl tracking-wide">
-              Temas
-              {!allThemes && (
+        <div className="flex flex-col gap-2">
+          <h3 className="flex items-baseline justify-between font-display text-xl tracking-wide">
+            Temas
+            {!allThemes && (
+              <button
+                onClick={() => update({ themes: themeOptions })}
+                className="font-sans text-sm font-semibold text-brand"
+              >
+                Marcar todos
+              </button>
+            )}
+          </h3>
+          <div className="grid grid-cols-2 gap-2">
+            {themeOptions.map((theme) => {
+              const selected = themes.includes(theme)
+              return (
                 <button
-                  onClick={() => update({ themes: themeOptions })}
-                  className="font-sans text-sm font-semibold text-brand"
+                  key={theme}
+                  onClick={() => toggleTheme(theme)}
+                  aria-pressed={selected}
+                  className={`btn-3d btn-sm rounded-lg px-3 py-2 text-left font-semibold ${
+                    selected ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
+                  }`}
                 >
-                  Marcar todos
+                  {theme}
                 </button>
-              )}
-            </h3>
-            <div className="grid grid-cols-2 gap-2">
-              {themeOptions.map((theme) => {
-                const selected = themes.includes(theme)
-                return (
-                  <button
-                    key={theme}
-                    onClick={() => toggleTheme(theme)}
-                    aria-pressed={selected}
-                    className={`btn-3d btn-sm rounded-lg px-3 py-2 text-left font-semibold ${
-                      selected ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel hover:text-chalk'
-                    }`}
-                  >
-                    {theme}
-                  </button>
-                )
-              })}
-            </div>
+              )
+            })}
           </div>
-
-          {notice && <p className="text-center text-steel">{notice}</p>}
-
-          <button
-            onClick={() => {
-              playSound('clickSoft')
-              onClose()
-            }}
-            className="btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink"
-          >
-            Pronto
-          </button>
         </div>
-      </div>
+
+        {notice && <p className="text-center text-steel">{notice}</p>}
+
+        <button
+          onClick={() => {
+            playSound('clickSoft')
+            onClose()
+          }}
+          className="btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink"
+        >
+          Pronto
+        </button>
+      </Sheet>
       {/* Fora do painel, para o toque no fundo do guia não fechar as configurações também. */}
       {guide && <ModeGuide mode={guide} onClose={() => setGuide(null)} />}
     </>
