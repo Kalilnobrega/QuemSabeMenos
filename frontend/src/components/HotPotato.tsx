@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
-import { useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { useFlashbang, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { POTATO_HINTS, POWERUP_INFO, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
@@ -267,7 +267,7 @@ function QuestionPanel({
 
   // Sabotagens só aparecem para quem está com a batata; quem assiste lê a pergunta limpa.
   const hits = (kind: Kind) => mine && asking && potato.uses.some((u) => u.kind === kind && u.target === playerId)
-  const blinded = potato.flashbang && asking
+  const blinded = useFlashbang(potato.flashbang && asking)
   const mirrored = hits('mirror') ? '-scale-x-100' : ''
   const scrambled = hits('scramble')
   // A Raspadinha chega no meio da pergunta: a chave remonta a cobertura na hora.
@@ -276,11 +276,6 @@ function QuestionPanel({
   useEffect(() => {
     if (hitCount) playSound('powerHit')
   }, [hitCount])
-  useEffect(() => {
-    if (!blinded) return
-    playSound('flashbang')
-    vibrate([250, 80, 350])
-  }, [blinded])
   useEffect(() => {
     if (asking && mine) {
       playSound('answersOpen')

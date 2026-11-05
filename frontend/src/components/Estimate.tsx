@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
-import { useNow } from '../lib/effects'
+import { useRemaining, useUrgentTick } from '../lib/effects'
+import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
 import { EstimateRuler } from './EstimateRuler'
-import { DifficultyChip, FactCard, Podium, Ranking } from './Game'
+import { FactCard, Podium, Ranking } from './Game'
 import { LevelIntro, SkipButton, StartScreen } from './Screens'
 import { LeaveButton } from './LeaveButton'
 
@@ -91,14 +92,14 @@ interface RoundProps {
 function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundProps) {
   const { room, receivedAt } = snapshot
   const estimate = room.estimate!
-  const now = useNow(estimate.phase === 'answering' || estimate.phase === 'results')
   const [draft, setDraft] = useState('')
   const [negative, setNegative] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const remaining = Math.max(0, receivedAt + estimate.phase_ends_in_ms - now)
   const answering = estimate.phase === 'answering'
   const results = estimate.phase === 'results'
+  const remaining = useRemaining(receivedAt, estimate.phase_ends_in_ms, answering || results)
   const guessed = estimate.my_guess !== null && estimate.my_guess !== undefined
+  useUrgentTick(remaining, answering && !guessed)
   const mine = estimate.guesses.find((g) => g.player_id === playerId)
 
   useEffect(() => {
@@ -134,14 +135,16 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
       </header>
 
       {/* Na resposta, o tempo para chutar; na revelação, quanto falta para a próxima pergunta. */}
-      <div className="h-2 overflow-hidden rounded-full bg-panel">
-        {(answering || results) && (
-          <div
-            className={`h-full rounded-full ${results ? 'bg-steel/60' : remaining < 5000 ? 'bg-red-400' : 'bg-amber-200'}`}
-            style={{ width: `${Math.min(1, remaining / Math.max(1, estimate.phase_duration_ms)) * 100}%` }}
-          />
-        )}
-      </div>
+      {/* O alerta vem antes porque aqui ainda é preciso digitar o chute. */}
+      {answering ? (
+        <PhaseTimer remaining={remaining} duration={estimate.phase_duration_ms} urgentMs={5000} />
+      ) : (
+        <TimerBar
+          fill={results ? remaining / Math.max(1, estimate.phase_duration_ms) : null}
+          tone="muted"
+          seconds={null}
+        />
+      )}
 
       <h2 className="text-center font-display text-3xl leading-tight tracking-wide">{estimate.text}</h2>
 

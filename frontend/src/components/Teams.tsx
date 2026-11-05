@@ -2,7 +2,8 @@ import { useEffect, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
-import { useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
+import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { POWERUP_INFO, TEAM_HINTS, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
@@ -25,12 +26,6 @@ import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { TaxScene } from './TaxScene'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
-const DIFFICULTY: Record<string, { label: string; className: string }> = {
-  easy: { label: 'Fácil', className: 'bg-emerald-500/15 text-emerald-300' },
-  medium: { label: 'Média', className: 'bg-brand/15 text-brand' },
-  hard: { label: 'Difícil', className: 'bg-red-500/15 text-red-300' },
-  impossible: { label: 'Impossível', className: 'bg-orange-500/20 text-orange-300' },
-}
 
 interface Props {
   snapshot: Snapshot
@@ -107,11 +102,6 @@ export function Teams({
   )
 }
 
-function useRemaining(snapshot: Snapshot) {
-  const now = useNow(true)
-  return Math.max(0, snapshot.receivedAt + snapshot.room.team_match!.phase_ends_in_ms - now)
-}
-
 function formatDelta(delta: number) {
   return delta > 0 ? `+${delta}` : delta < 0 ? `−${Math.abs(delta)}` : '0'
 }
@@ -175,7 +165,7 @@ function TeamStart({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
 }
 
 function Countdown({ snapshot }: { snapshot: Snapshot }) {
-  const seconds = Math.ceil(useRemaining(snapshot) / 1000)
+  const seconds = Math.ceil(useRemaining(snapshot.receivedAt, snapshot.room.team_match!.phase_ends_in_ms) / 1000)
   return <span className="font-display text-3xl text-chalk">{seconds}s</span>
 }
 
@@ -336,8 +326,6 @@ function FinalIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: stri
   )
 }
 
-const FLASHBANG_MS = 4000
-
 function TeamRound({
   snapshot,
   playerId,
@@ -356,7 +344,7 @@ function TeamRound({
   const { room } = snapshot
   const match = room.team_match!
   const question = match.question!
-  const remaining = useRemaining(snapshot)
+  const remaining = useRemaining(snapshot.receivedAt, match.phase_ends_in_ms)
   const [error, setError] = useState<string | null>(null)
   const mine = myTeam(match)
   const reading = match.phase === 'reading'
@@ -371,11 +359,10 @@ function TeamRound({
   const iron = !!mine?.iron && mine.captain !== playerId
   const canVote =
     answering && !!mine && !mine.locked && !match.gagged && !iron && (!match.solo || mine.representative === playerId)
+  useUrgentTick(remaining, canVote && myVote === null)
   const captain = !match.solo && mine?.captain === playerId
-  const difficulty = DIFFICULTY[question.difficulty]
-  const progress = match.phase_duration_ms > 0 ? remaining / match.phase_duration_ms : 0
   const effect = (kind: Kind) => match.effects.includes(kind)
-  const blinded = effect('flashbang') && answering && match.phase_duration_ms - remaining >= FLASHBANG_MS
+  const blinded = useFlashbang(effect('flashbang') && answering, match.phase_duration_ms - remaining)
   const mirrored = effect('mirror') ? '-scale-x-100' : ''
   const scrambled = effect('scramble')
   const text = scrambled ? scrambleWords(question.text, match.round) : question.text
@@ -390,11 +377,6 @@ function TeamRound({
     // Só quando a pergunta aparece.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  useEffect(() => {
-    if (!blinded) return
-    playSound('flashbang')
-    vibrate([250, 80, 350])
-  }, [blinded])
   useEffect(() => {
     if (!revealed || !mine) return
     playSound(mine.correct ? 'correct' : mine.option === null ? 'noAnswer' : 'wrong')
@@ -515,16 +497,13 @@ function TeamRound({
         </span>
         <span className="flex items-center gap-2">
           <span>{question.theme}</span>
-          <span className={`rounded-full px-2.5 py-0.5 ${difficulty.className}`}>{difficulty.label}</span>
+          <DifficultyChip difficulty={question.difficulty} />
         </span>
       </header>
-      {!revealed && (
-        <div className="h-2 overflow-hidden rounded-full bg-panel">
-          <div
-            className={`h-full rounded-full ${answering ? 'bg-brand' : 'bg-steel/40'}`}
-            style={{ width: `${(answering ? progress : 1 - progress) * 100}%` }}
-          />
-        </div>
+      {answering ? (
+        <PhaseTimer remaining={remaining} duration={match.phase_duration_ms} />
+      ) : (
+        !revealed && <TimerBar fill={null} seconds={null} />
       )}
 
       <TeamStrip match={match} players={room.players} playerId={playerId} />

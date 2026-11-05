@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { avatarUrl } from '../lib/avatars'
-import { reducedMotion, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { reducedMotion, useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
+import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainParts, scrambleWords, type Kind } from '../lib/powerups'
@@ -13,12 +14,6 @@ import { BannerList, LevelIntro, PlayerPodium, StartScreen, type BannerItem } fr
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
-const DIFFICULTY_CHIP: Record<string, string> = {
-  easy: 'bg-emerald-500/15 text-emerald-300',
-  medium: 'bg-brand/15 text-brand',
-  hard: 'bg-red-500/15 text-red-300',
-  impossible: 'bg-orange-500/20 text-orange-300',
-}
 
 interface Props {
   snapshot: Snapshot
@@ -103,11 +98,6 @@ function Hearts({ lives, max, className = 'size-4' }: { lives: number; max: numb
   )
 }
 
-function useRemaining(snapshot: Snapshot, active = true) {
-  const now = useNow(active)
-  return Math.max(0, snapshot.receivedAt + snapshot.room.survival!.phase_ends_in_ms - now)
-}
-
 function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
   const { room } = snapshot
   const survival = room.survival!
@@ -131,13 +121,6 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
       power={survival.starting_powerup ? { kind: survival.starting_powerup } : null}
     />
   )
-}
-
-const LEVELS: Record<string, { title: string; className: string }> = {
-  easy: { title: 'Fácil', className: 'text-emerald-300 [text-shadow:0_4px_0_#065f46]' },
-  medium: { title: 'Média', className: 'text-brand [text-shadow:0_4px_0_#7a5a00]' },
-  hard: { title: 'Difícil', className: 'text-red-300 [text-shadow:0_4px_0_#7f1d1d]' },
-  impossible: { title: 'Impossível', className: 'text-orange-300 [text-shadow:0_4px_0_#7c2d12]' },
 }
 
 function levelLine(survival: SurvivalView) {
@@ -205,7 +188,7 @@ function Statement({
   const reading = survival.phase === 'reading' || survival.phase === 'duel_reading'
   const open = survival.phase === 'answering' || survival.phase === 'duel_answering'
   const revealed = survival.phase === 'results' || survival.phase === 'duel_results'
-  const remaining = useRemaining(snapshot, open)
+  const remaining = useRemaining(snapshot.receivedAt, survival.phase_ends_in_ms, open)
   const [choice, setChoice] = useState<number | null>(survival.my_answer)
   const [error, setError] = useState<string | null>(null)
   const me = survival.survivors.find((s) => s.player_id === playerId)
@@ -213,13 +196,14 @@ function Statement({
   const answered = choice !== null
   const canAnswer = open && answering && !answered && !survival.hiding
   const silenced = survival.silenced_rounds > 0
+  useUrgentTick(remaining, canAnswer && !silenced)
   const myPick = survival.picks.find((p) => p.player_id === playerId)
   const player = (id: string) => room.players.find((p) => p.id === id)
   const name = (id: string | null | undefined) => (id === playerId ? 'você' : (player(id ?? '')?.nickname ?? '?'))
 
   const hits = (kind: PowerUpUse['kind']) =>
     !revealed && survival.active.some((use) => use.kind === kind && use.target === playerId)
-  const blinded = survival.flashbang && open && survival.phase_duration_ms - remaining >= FLASHBANG_MS
+  const blinded = useFlashbang(survival.flashbang && open, survival.phase_duration_ms - remaining)
   const scrambled = hits('scramble')
   const mirrored = hits('mirror') ? '-scale-x-100' : ''
   const scratched = hits('scratch') && !blinded
@@ -236,11 +220,6 @@ function Statement({
     // Só quando a pergunta aparece.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  useEffect(() => {
-    if (!blinded) return
-    playSound('flashbang')
-    vibrate([250, 80, 350])
-  }, [blinded])
   const myOutcome = myPick ? (myPick.correct ? 'correct' : myPick.option === null ? 'noAnswer' : 'wrong') : null
   useEffect(() => {
     if (!myOutcome) return
@@ -440,9 +419,7 @@ function Statement({
         ) : (
           <p className="flex items-center gap-2 text-sm font-semibold text-steel">
             {noun} {survival.round}
-            <span className={`rounded-full px-2 py-0.5 ${DIFFICULTY_CHIP[survival.difficulty]}`}>
-              {LEVELS[survival.difficulty].title}
-            </span>
+            <DifficultyChip difficulty={survival.difficulty} />
             {survival.theme}
           </p>
         )}
@@ -462,14 +439,15 @@ function Statement({
         <InstantPowerUps game={survival} playerId={playerId} onUse={onUse} />
       )}
 
-      <div className={`h-2 overflow-hidden rounded-full bg-panel ${silenced ? 'invisible' : ''}`}>
-        {open && (
-          <div
-            className={`h-full rounded-full ${remaining < 3000 ? 'bg-red-400' : 'bg-brand'}`}
-            style={{ width: `${Math.min(1, remaining / Math.max(1, survival.phase_duration_ms)) * 100}%` }}
-          />
-        )}
-      </div>
+      {open ? (
+        <PhaseTimer
+          remaining={remaining}
+          duration={survival.phase_duration_ms}
+          className={silenced ? 'invisible' : ''}
+        />
+      ) : (
+        <TimerBar fill={null} seconds={null} className={silenced ? 'invisible' : ''} />
+      )}
       <Magnifier active={hits('magnifier') && !blinded}>
         <ScratchCard active={scratched}>
           <h1 className={`text-[1.4rem] leading-snug font-bold ${choices ? '' : 'text-center'} ${mirrored}`}>
@@ -551,7 +529,6 @@ function Statement({
   )
 }
 
-const FLASHBANG_MS = 4000
 const TARGETED = new Set(
   Object.entries(POWERUP_INFO)
     .filter(([, info]) => info.targeted)

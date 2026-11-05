@@ -8,18 +8,18 @@ import { createPortal } from 'react-dom'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
-import { reducedMotion, useCountdownSounds, useNow, useSoundsOnMount } from '../lib/effects'
+import { reducedMotion, useCountdownSounds, useRemaining, useSoundsOnMount } from '../lib/effects'
 import { POWERUP_INFO, type Kind } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import type { PlayerView, RoomState } from '../types/events'
-import { Confetti, Flame, FlameIcon } from './Game'
+import { Confetti, Flame } from './Game'
+import { FlameIcon } from './RoundUI'
 import { LeaveButton } from './LeaveButton'
 import { PowerUpIcon } from './PowerUps'
 
 /** Segundos que faltam para a fase acabar, contando do momento em que o estado chegou. */
 function useCount(receivedAt: number, endsInMs: number) {
-  const now = useNow(true)
-  return Math.ceil(Math.max(0, receivedAt + endsInMs - now) / 1000)
+  return Math.ceil(useRemaining(receivedAt, endsInMs) / 1000)
 }
 
 function Countdown({ count }: { count: number }) {

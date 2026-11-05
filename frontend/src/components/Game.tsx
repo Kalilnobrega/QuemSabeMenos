@@ -3,7 +3,8 @@ import { avatarUrl } from '../lib/avatars'
 import { formatDelta, formatScore } from '../lib/format'
 import { POWERUP_INFO, gainParts, scrambleWords } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
-import { reducedMotion, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
+import { reducedMotion, useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
+import { DifficultyChip, FlameIcon, PhaseTimer, TimerBar } from './RoundUI'
 import type { Snapshot } from '../lib/useRoom'
 import type { Bonus, DuelView, GameView, PlayerView, PowerUpUse, RoomState, RoundResult } from '../types/events'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
@@ -72,39 +73,6 @@ function StarIcon({ className }: { className?: string }) {
       />
     </svg>
   )
-}
-
-export function FlameIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 28" className={className} aria-hidden="true">
-      <path
-        d="M12 1.5c3 5.5 8.5 8.5 8.5 15A8.5 8.5 0 0 1 3.5 16.5c0-4 2.4-6 3.4-8.5 1.3 2.8 2.6 3.4 3.2 3.4C9.6 7.5 10.4 4.5 12 1.5Z"
-        fill="#F97316"
-        stroke="#12141B"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M12 12.5c2 3 4.4 4.3 4.4 7.3a4.4 4.4 0 0 1-8.8 0c0-1.8 1-2.8 1.6-4 .7 1.4 1.3 1.7 1.7 1.7-.4-1.9 0-3.4 1.1-5Z"
-        fill="#FFC107"
-      />
-    </svg>
-  )
-}
-
-const DIFFICULTY: Record<string, { label: ReactNode; className: string }> = {
-  easy: { label: 'Fácil', className: 'bg-emerald-500/15 text-emerald-300' },
-  medium: { label: 'Média', className: 'bg-brand/15 text-brand' },
-  hard: { label: 'Difícil', className: 'bg-red-500/15 text-red-300' },
-  impossible: {
-    label: (
-      <span className="flex items-center gap-1">
-        <FlameIcon className="size-4" />
-        Impossível
-      </span>
-    ),
-    className: 'bg-orange-500/20 text-orange-300',
-  },
 }
 
 interface Props {
@@ -223,8 +191,7 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
   const game = stage
   const duel = stage.duel
   const [error, setError] = useState<string | null>(null)
-  const now = useNow(game.phase !== 'duel_end')
-  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const remaining = useRemaining(receivedAt, game.phase_ends_in_ms, game.phase !== 'duel_end')
   const fighters = [duel.challenger, duel.rival].map((id) => room.players.find((p) => p.id === id))
   const nick = (id: string | null | undefined) =>
     id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?')
@@ -448,6 +415,7 @@ function DuelQuestionView({
   const fighting = playerId === duel.challenger || playerId === duel.rival
   const open = game.phase === 'duel_answering'
   const canAnswer = open && fighting && choice === null && !duel.answered.includes(playerId ?? '')
+  useUrgentTick(remaining, canAnswer, { urgentMs: 2000 })
   const pick = async (option: number) => {
     if (!canAnswer) return
     playSound('select')
@@ -458,14 +426,12 @@ function DuelQuestionView({
     duel.picks.filter((k) => k.option === index).map((k) => snapshot.room.players.find((p) => p.id === k.player_id))
   return (
     <div className="flex flex-col gap-4">
-      <div className="h-2 overflow-hidden rounded-full bg-panel">
-        {open && (
-          <div
-            className={`h-full rounded-full ${remaining < 2000 ? 'bg-red-400' : 'bg-brand'}`}
-            style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }}
-          />
-        )}
-      </div>
+      {/* As perguntas do X1 encurtam a cada rodada: o alerta vem mais tarde que nas outras. */}
+      {open ? (
+        <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} urgentMs={2000} />
+      ) : (
+        <TimerBar fill={null} seconds={null} />
+      )}
       <h1 className="text-[1.3rem] leading-snug font-bold">{duel.text}</h1>
       <div className="grid auto-rows-fr grid-cols-2 gap-3">
         {duel.options.map((option, index) => {
@@ -520,16 +486,6 @@ function DuelQuestionView({
   )
 }
 
-/** O selo do nível da pergunta, como no cabeçalho do clássico. */
-export function DifficultyChip({ difficulty }: { difficulty: string }) {
-  const info = DIFFICULTY[difficulty]
-  return (
-    <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${info.className}`}>
-      {info.label}
-    </span>
-  )
-}
-
 const SPECIALIST_BLOCK = 5
 
 /** Especialista: antes de cada bloco, o sorteado escolhe o tema; os outros assistem. */
@@ -544,9 +500,8 @@ function ThemePick({
 }) {
   const { room, receivedAt } = snapshot
   const game = room.game!
-  const now = useNow(!game.block_theme)
   const [error, setError] = useState<string | null>(null)
-  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const remaining = useRemaining(receivedAt, game.phase_ends_in_ms, !game.block_theme)
   const picker = room.players.find((p) => p.id === game.theme_picker)
   const mine = game.theme_picker === playerId
   const blocks = Math.ceil(room.settings.rounds / SPECIALIST_BLOCK)
@@ -606,12 +561,7 @@ function ThemePick({
       </ul>
       {error && <p className="text-sm text-red-300">{error}</p>}
       {!game.block_theme && (
-        <div className="h-2 w-full max-w-sm overflow-hidden rounded-full bg-panel">
-          <div
-            className="h-full rounded-full bg-brand"
-            style={{ width: `${Math.min(1, remaining / game.phase_duration_ms) * 100}%` }}
-          />
-        </div>
+        <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} className="w-full max-w-sm" />
       )}
       {!game.block_theme && !mine && <p className="text-sm text-steel">Se ninguém escolher, o tema é sorteado.</p>}
     </section>
@@ -697,23 +647,14 @@ function Betting({
   /** Atalho escolhido ('pass' ou a porcentagem); a aposta só vai ao confirmar no ✓. */
   const [shortcut, setShortcut] = useState<'pass' | number | null>(null)
   const [error, setError] = useState<string | null>(null)
-  const now = useNow(true)
-  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
-  const secondsLeft = Math.ceil(remaining / 1000)
-  const urgent = remaining < 3000
+  const remaining = useRemaining(receivedAt, game.phase_ends_in_ms)
   const done = placed !== null || (playerId !== null && game.bets_placed.includes(playerId))
   const connected = room.players.filter((p) => p.connected)
   const waitingFor = connected.filter((p) => maxBet(p.score, game) > 0)
   const betCount = waitingFor.filter((p) => game.bets_placed.includes(p.id)).length
   useSoundsOnMount([['levelUp', 0]])
 
-  useEffect(() => {
-    if (!urgent || done || limit === 0) return
-    if (secondsLeft > 0) {
-      vibrate(25)
-      playSound('urgentTick', secondsLeft)
-    }
-  }, [urgent, done, limit, secondsLeft])
+  useUrgentTick(remaining, !done && limit > 0, { timeUp: false })
 
   const place = async (amount: number) => {
     if (done) return
@@ -751,11 +692,7 @@ function Betting({
           <span className="rounded-full bg-panel px-4 py-1.5 text-lg font-bold whitespace-nowrap text-chalk">
             {game.theme}
           </span>
-          <span
-            className={`rounded-full px-4 py-1.5 text-lg font-semibold whitespace-nowrap ${DIFFICULTY[game.difficulty].className}`}
-          >
-            {DIFFICULTY[game.difficulty].label}
-          </span>
+          <DifficultyChip difficulty={game.difficulty} large />
         </span>
       </div>
 
@@ -834,20 +771,7 @@ function Betting({
         {error && <p className="text-red-300">{error}</p>}
       </div>
 
-      <div className="flex w-full items-center gap-3">
-        <div className="h-2 flex-1 overflow-hidden rounded-full bg-panel">
-          <div
-            className={`h-full rounded-full ${urgent ? 'bg-red-400' : 'bg-amber-200'}`}
-            style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }}
-          />
-        </div>
-        <span
-          key={urgent ? secondsLeft : 'calm'}
-          className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-red-400' : ''}`}
-        >
-          {secondsLeft}
-        </span>
-      </div>
+      <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} className="w-full" />
       <p className="font-hand text-lg font-medium text-steel">
         {betCount}/{waitingFor.length} já apostaram
       </p>
@@ -932,8 +856,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
   const [error, setError] = useState<string | null>(null)
 
   const timed = game.phase !== 'finished'
-  const now = useNow(timed)
-  const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
+  const remaining = useRemaining(receivedAt, game.phase_ends_in_ms, timed)
   const progress = game.phase_duration_ms > 0 ? 1 - remaining / game.phase_duration_ms : 1
 
   // Na resposta, a barra fica cheia e dourada durante a carência (pontos máximos)
@@ -967,10 +890,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
   const showResults = game.phase === 'results' && !silenced
   const hiddenReveal = game.phase === 'results' && silenced
   const myResult = game.results.find((r) => r.player_id === playerId)
-  const difficulty = DIFFICULTY[question.difficulty]
-  const secondsLeft = Math.ceil(remaining / 1000)
-  const urgent = game.phase === 'answering' && remaining < 3000 && !silenced
-  const blinded = game.flashbang && game.phase === 'answering' && game.phase_duration_ms - remaining >= FLASHBANG_MS
+  const blinded = useFlashbang(game.flashbang && game.phase === 'answering', game.phase_duration_ms - remaining)
   const scratched = hits('scratch') && !blinded
 
   useEffect(() => {
@@ -994,22 +914,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  useEffect(() => {
-    if (!blinded) return
-    playSound('flashbang')
-    vibrate([250, 80, 350])
-  }, [blinded])
-
-  // Vibra e faz tique-taque a cada um dos 3 últimos segundos, só para quem ainda não respondeu.
-  useEffect(() => {
-    if (!urgent || answered) return
-    if (secondsLeft > 0) {
-      vibrate(25)
-      playSound('urgentTick', secondsLeft)
-    } else {
-      playSound('timeUp')
-    }
-  }, [urgent, answered, secondsLeft])
+  useUrgentTick(remaining, game.phase === 'answering' && !silenced && !answered)
 
   // Depende só do veredito: cada atualização da sala (Pular, poder armado) recria o resultado.
   const verdict =
@@ -1065,11 +970,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
             {question.theme}
             {game.block_theme && game.theme_picker === playerId && ' +25%'}
           </span>
-          <span
-            className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${difficulty.className}`}
-          >
-            {difficulty.label}
-          </span>
+          <DifficultyChip difficulty={question.difficulty} />
         </span>
       </header>
 
@@ -1079,30 +980,14 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
       {!showResults && <ActivePowerUps game={game} players={room.players} playerId={playerId} concealed={blinded} />}
       {!showResults && !answered && !silenced && <InstantPowerUps game={game} playerId={playerId} onUse={onUse} />}
 
-      <div className={`flex h-8 items-center gap-3 ${silenced ? 'invisible' : ''}`}>
-        <div className="h-2 flex-1 overflow-hidden rounded-full bg-panel">
-          {game.phase !== 'reading' && (
-            <div
-              className={`h-full rounded-full ${
-                showResults
-                  ? 'bg-steel/60'
-                  : inGrace
-                    ? 'bg-brand shadow-[0_0_12px_rgba(255,193,7,0.8)]'
-                    : remaining < 3000
-                      ? 'bg-red-400'
-                      : 'bg-amber-200'
-              }`}
-              style={{ width: `${Math.min(1, Math.max(0, barFill)) * 100}%` }}
-            />
-          )}
-        </div>
-        <span
-          key={urgent ? secondsLeft : 'calm'}
-          className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-red-400' : ''}`}
-        >
-          {game.phase === 'answering' ? secondsLeft : ''}
-        </span>
-      </div>
+      <TimerBar
+        fill={game.phase === 'reading' ? null : barFill}
+        tone={
+          showResults ? 'muted' : game.phase === 'answering' && remaining < 3000 ? 'urgent' : inGrace ? 'grace' : 'calm'
+        }
+        seconds={game.phase === 'answering' ? Math.ceil(remaining / 1000) : null}
+        className={silenced ? 'invisible' : ''}
+      />
 
       <Magnifier active={hits('magnifier') && !blinded}>
         {/* Altura reservada para até 3 linhas: o texto digitando não empurra as alternativas. */}
@@ -1613,7 +1498,6 @@ const TARGETED_KINDS = new Set(
     .filter(([, info]) => info.targeted)
     .map(([kind]) => kind),
 )
-const FLASHBANG_MS = 4000
 
 function Voters({ players }: { players: PlayerView[] }) {
   if (players.length === 0) return null
