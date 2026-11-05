@@ -20,6 +20,8 @@ export const SOUND_ENABLED = {
   typing: true,
   answersOpen: true,
   select: true,
+  keypadPress: true,
+  keypadErase: true,
   urgentTick: true,
   timeUp: true,
   correct: true,
@@ -88,6 +90,8 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   typing: { group: 'Pergunta', name: 'Tec-tec de máquina de escrever', moment: 'Enquanto o texto da pergunta aparece' },
   answersOpen: { group: 'Pergunta', name: 'Trava abrindo (tchk-uup)', moment: 'As alternativas são liberadas' },
   select: { group: 'Pergunta', name: 'Blip de bolha', moment: 'Você toca numa alternativa' },
+  keypadPress: { group: 'Pergunta', name: 'Caneta polida', moment: 'Você digita no teclado do Chutômetro' },
+  keypadErase: { group: 'Pergunta', name: 'Caneta polida, mais grave', moment: 'Você apaga no teclado do Chutômetro' },
   urgentTick: {
     group: 'Pergunta',
     name: 'Tique-taque acelerando',
@@ -341,6 +345,24 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   },
   // "Blip" de bolha, mais macio que um clique seco.
   select: () => tone(600, { dur: 0.08, to: 950, gain: 0.22 }),
+  // Caneta retrátil: o clique e o claque, com o metal vibrando em cada um. arg: quantos toques (3 no "000").
+  keypadPress: (times = 1) => {
+    for (let i = 0; i < times; i++) {
+      const at = i * 0.055
+      const p = vary(0.015)
+      snap(at, 3400 * p, 0.48, 10, 0.009)
+      knock(at + 0.001, 900 * p, 0.07, 0.02, 'triangle')
+      tone(3000 * p, { at: at + 0.001, dur: 0.035, gain: 0.03, attack: 0.001 })
+      snap(at + 0.05, 2550 * p, 0.3, 10, 0.009)
+      tone(2250 * p, { at: at + 0.051, dur: 0.03, gain: 0.018, attack: 0.001 })
+    }
+  },
+  // A mesma caneta, mais grave.
+  keypadErase: () => {
+    snap(0, 2100, 0.48, 10, 0.011)
+    knock(0.001, 600, 0.08, 0.025, 'triangle')
+    snap(0.055, 1650, 0.28, 10, 0.011)
+  },
   // arg: segundos que faltam (3, 2 ou 1); o tique-taque acelera perto do fim.
   urgentTick: (secondsLeft = 3) => {
     const ticks = secondsLeft >= 3 ? 1 : secondsLeft === 2 ? 2 : 4

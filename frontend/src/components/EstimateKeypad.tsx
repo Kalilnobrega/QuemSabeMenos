@@ -1,5 +1,6 @@
 import { useEffect, type ReactNode } from 'react'
 import { draftValue, erase, formatDraft, toggleSign, typeComma, typeDigits } from '../lib/guessDraft'
+import { playSound } from '../lib/sounds'
 
 interface Props {
   draft: string
@@ -31,6 +32,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
       }
       if (next === null) return
       event.preventDefault()
+      playSound(event.key === 'Backspace' || event.key === 'Delete' ? 'keypadErase' : 'keypadPress')
       onChange(next)
     }
     window.addEventListener('keydown', onKeyDown)
@@ -42,6 +44,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
       key={value}
       disabled={disabled}
       onPress={() => {
+        playSound('keypadPress', value.length)
         onChange(typeDigits(draft, value))
       }}
     >
@@ -71,6 +74,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
           disabled={disabled}
           label="Vírgula"
           onPress={() => {
+            playSound('keypadPress')
             onChange(typeComma(draft))
           }}
         >
@@ -83,6 +87,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
           label="Número negativo"
           pressed={draft.startsWith('-')}
           onPress={() => {
+            playSound('keypadPress')
             onChange(toggleSign(draft))
           }}
         >
@@ -93,6 +98,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
           label="Apagar"
           wide
           onPress={() => {
+            playSound('keypadErase')
             onChange(erase(draft))
           }}
         >
