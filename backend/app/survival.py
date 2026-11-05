@@ -42,9 +42,24 @@ LATE_SECONDS = 1.0  # tolerância de rede para respostas no limite
 
 # Poderes do modo. No V ou F, 50/50 e Alternativa falsa entregariam a resposta.
 POWERS: tuple[PowerUp, ...] = (
-    "fifty_fifty", "peek", "shield", "reverse", "theme", "backpack", "medkit", "hide",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "silence", "flashbang",
-    "curse", "blood_pact",
+    "fifty_fifty",
+    "peek",
+    "shield",
+    "reverse",
+    "theme",
+    "backpack",
+    "medkit",
+    "hide",
+    "scratch",
+    "steal",
+    "scramble",
+    "accelerator",
+    "mirror",
+    "magnifier",
+    "silence",
+    "flashbang",
+    "curse",
+    "blood_pact",
 )
 # Sabotagens que só existem aqui: o Reverso também devolve, mas eles não entram no sorteio de lendários do clássico.
 TARGETED: frozenset[PowerUp] = pw.TARGETED | {"curse", "blood_pact"}
@@ -59,8 +74,16 @@ GHOST_RESURRECTION_CHANCE = 0.08
 
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
 Phase = Literal[
-    "starting", "level", "reading", "answering", "results",
-    "duel_intro", "duel_reading", "duel_answering", "duel_results", "finished",
+    "starting",
+    "level",
+    "reading",
+    "answering",
+    "results",
+    "duel_intro",
+    "duel_reading",
+    "duel_answering",
+    "duel_results",
+    "finished",
 ]
 
 
@@ -78,12 +101,24 @@ class Rules:
 
 RULES: dict[SurvivalKind, Rules] = {
     "true_false": Rules(
-        lives=3, levels=(("medium", 10),), answer_seconds=10.0, reading=False,
-        duel_first_seconds=8.0, duel_step_seconds=0.5, duel_min_seconds=3.0, duel_impossible_after=None,
+        lives=3,
+        levels=(("medium", 10),),
+        answer_seconds=10.0,
+        reading=False,
+        duel_first_seconds=8.0,
+        duel_step_seconds=0.5,
+        duel_min_seconds=3.0,
+        duel_impossible_after=None,
     ),
     "choices": Rules(
-        lives=3, levels=(("easy", 5), ("medium", 10)), answer_seconds=15.0, reading=True,
-        duel_first_seconds=12.0, duel_step_seconds=1.0, duel_min_seconds=5.0, duel_impossible_after=10,
+        lives=3,
+        levels=(("easy", 5), ("medium", 10)),
+        answer_seconds=15.0,
+        reading=True,
+        duel_first_seconds=12.0,
+        duel_step_seconds=1.0,
+        duel_min_seconds=5.0,
+        duel_impossible_after=10,
     ),
 }
 
@@ -172,8 +207,13 @@ class Survival:
     ) -> "Survival":
         lives = RULES[kind].lives
         game = cls(
-            kind=kind, contenders=[Contender(pid, lives) for pid in player_ids], pool=pool, used=used, rng=rng,
-            powers=powers, powerup_max=powerup_max,
+            kind=kind,
+            contenders=[Contender(pid, lives) for pid in player_ids],
+            pool=pool,
+            used=used,
+            rng=rng,
+            powers=powers,
+            powerup_max=powerup_max,
         )
         if powers:
             for pid in player_ids:
@@ -440,7 +480,11 @@ class Survival:
         for pid in self.answering_ids():
             c = self.contender(pid)
             if self._hiding(pid):
-                self.picks.append(SurvivalPick(player_id=pid, option=None, correct=False, elapsed_ms=None, lost_life=False, hidden=True))
+                self.picks.append(
+                    SurvivalPick(
+                        player_id=pid, option=None, correct=False, elapsed_ms=None, lost_life=False, hidden=True
+                    )
+                )
                 continue
             window_ms = round(self.answer_window(pid) * 1000)
             option, at = self.answers.get(pid, (None, None))
@@ -448,7 +492,9 @@ class Survival:
             correct = option is not None and option == self.question.answer
             c.answer_ms += window_ms if elapsed is None else elapsed
             c.correct += correct
-            self.picks.append(SurvivalPick(player_id=pid, option=option, correct=correct, elapsed_ms=elapsed, lost_life=False))
+            self.picks.append(
+                SurvivalPick(player_id=pid, option=option, correct=correct, elapsed_ms=elapsed, lost_life=False)
+            )
         counted = [p for p in self.picks if not p.hidden]
         wrong = [p for p in counted if not p.correct]
         if self.in_duel():
@@ -523,7 +569,11 @@ class Survival:
     def _draw(self, difficulty: str, theme: str | None = None) -> Asked:
         """Sorteia uma pergunta do nível (e do tema, com o poder Tema) que ainda não saiu; se
         acabaram, libera as do nível de novo. As alternativas das perguntas do banco vêm embaralhadas."""
-        level = [q for q in self.pool if q.difficulty == difficulty] or [q for q in self.pool if q.difficulty == "hard"] or self.pool
+        level = (
+            [q for q in self.pool if q.difficulty == difficulty]
+            or [q for q in self.pool if q.difficulty == "hard"]
+            or self.pool
+        )
         if theme:
             level = [q for q in level if q.theme == theme] or level
         fresh = [q for q in level if q.id not in self.used]
@@ -536,7 +586,9 @@ class Survival:
             return question
         order = list(range(len(question.options)))
         self.rng.shuffle(order)
-        return question.model_copy(update={"options": [question.options[i] for i in order], "answer": order.index(question.answer)})
+        return question.model_copy(
+            update={"options": [question.options[i] for i in order], "answer": order.index(question.answer)}
+        )
 
     # --- poderes ----------------------------------------------------------
 

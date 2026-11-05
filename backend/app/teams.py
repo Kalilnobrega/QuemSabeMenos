@@ -64,13 +64,45 @@ HARMONY_BONUS = 10
 
 # Poderes dos Times.
 POWERS: tuple[PowerUp, ...] = (
-    "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "theme", "backpack",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "toll", "decoy", "flashbang", "silence",
-    "mutiny", "infiltrator", "gag", "iron_captain",
+    "fifty_fifty",
+    "shield",
+    "double",
+    "peek",
+    "extra_time",
+    "second_chance",
+    "theme",
+    "backpack",
+    "scratch",
+    "steal",
+    "scramble",
+    "accelerator",
+    "mirror",
+    "magnifier",
+    "toll",
+    "decoy",
+    "flashbang",
+    "silence",
+    "mutiny",
+    "infiltrator",
+    "gag",
+    "iron_captain",
 )
 ATTACKS: frozenset[PowerUp] = frozenset(
-    {"scratch", "steal", "scramble", "accelerator", "mirror", "magnifier", "toll", "decoy", "flashbang", "silence",
-     "mutiny", "infiltrator", "gag"}
+    {
+        "scratch",
+        "steal",
+        "scramble",
+        "accelerator",
+        "mirror",
+        "magnifier",
+        "toll",
+        "decoy",
+        "flashbang",
+        "silence",
+        "mutiny",
+        "infiltrator",
+        "gag",
+    }
 )
 NEEDS_TEAM: frozenset[PowerUp] = ATTACKS | {"peek", "duel"}
 VISUAL: frozenset[PowerUp] = frozenset({"scratch", "scramble", "mirror", "magnifier", "flashbang"})
@@ -87,8 +119,20 @@ TAX_SHARE = 0.25
 MYTHIC_CHANCES: dict[PowerUp, tuple[float, float]] = {"duel": (0.02, 0.08), "tax": (0.0, 0.06)}
 
 Phase = Literal[
-    "starting", "level", "choosing", "betting", "intro", "reading", "answering", "results", "finished",
-    "duel_choosing", "duel_betting", "duel_answering", "duel_results", "duel_end",
+    "starting",
+    "level",
+    "choosing",
+    "betting",
+    "intro",
+    "reading",
+    "answering",
+    "results",
+    "finished",
+    "duel_choosing",
+    "duel_betting",
+    "duel_answering",
+    "duel_results",
+    "duel_end",
 ]
 
 
@@ -232,10 +276,18 @@ class TeamMatch:
         ids = sorted(set(assignment.values()))
         teams = [Team(id=t, members=[pid for pid, team in assignment.items() if team == t]) for t in ids]
         match = cls(
-            teams=teams, questions=questions, answer_seconds=answer_seconds, point_scale=point_scale,
-            speed_grace_seconds=speed_grace_seconds, rng=rng or random.Random(), powers=powers,
-            powerup_max=powerup_max, bank=bank or [], statements=statements or [],
-            used=used if used is not None else set(), stats={pid: Stat() for pid in assignment},
+            teams=teams,
+            questions=questions,
+            answer_seconds=answer_seconds,
+            point_scale=point_scale,
+            speed_grace_seconds=speed_grace_seconds,
+            rng=rng or random.Random(),
+            powers=powers,
+            powerup_max=powerup_max,
+            bank=bank or [],
+            statements=statements or [],
+            used=used if used is not None else set(),
+            stats={pid: Stat() for pid in assignment},
         )
         match.bet_index = bet_round(questions)
         if powers:
@@ -375,7 +427,9 @@ class TeamMatch:
             self._lock(team, at)
 
     def _infiltrates(self, player_id: str, team: Team) -> bool:
-        return any(u.kind == "infiltrator" and u.target_team == team.id and u.target_player == player_id for u in self.active)
+        return any(
+            u.kind == "infiltrator" and u.target_team == team.id and u.target_player == player_id for u in self.active
+        )
 
     def choose(self, player_id: str, choice: str) -> None:
         if self.phase not in ("choosing", "duel_choosing"):
@@ -491,7 +545,12 @@ class TeamMatch:
             theme = None
         team.held.remove(kind)
         team.armed = TeamPowerUse(
-            kind=kind, by=player_id, by_team=team.id, target_team=target_team, target_player=target_player, theme=theme,
+            kind=kind,
+            by=player_id,
+            by_team=team.id,
+            target_team=target_team,
+            target_player=target_player,
+            theme=theme,
         )
 
     def use_now(self, player_id: str, kind: PowerUp, target_team: int | None = None) -> None:
@@ -558,7 +617,9 @@ class TeamMatch:
         current = self.questions[upcoming]
         if current.theme == theme:
             return
-        pool = [q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used]
+        pool = [
+            q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used
+        ]
         if not pool:
             raise TeamMatchError("Acabaram as perguntas desse tema.")
         question = self.rng.choice(pool)
@@ -570,7 +631,10 @@ class TeamMatch:
         if not self.powers or upcoming >= len(self.questions) or self.is_solo(upcoming):
             return []
         level = self.questions[upcoming].difficulty
-        themes = sorted({q.theme for q in self.bank if q.difficulty == level and q.id not in self.used} | {self.questions[upcoming].theme})
+        themes = sorted(
+            {q.theme for q in self.bank if q.difficulty == level and q.id not in self.used}
+            | {self.questions[upcoming].theme}
+        )
         return sorted(self.rng.sample(themes, min(pw.THEME_CHOICES, len(themes))))
 
     def _activate(self) -> None:
@@ -785,7 +849,12 @@ class TeamMatch:
 
     def _lock(self, team: Team, at: float) -> None:
         option = self._tally(team)
-        retry = option is not None and option != self.question.answer and self._lasts(team, "second_chance") and not team.retried
+        retry = (
+            option is not None
+            and option != self.question.answer
+            and self._lasts(team, "second_chance")
+            and not team.retried
+        )
         if retry:
             # Segunda chance: o time errou e vota de novo, sem a alternativa que escolheu.
             team.retried = True
@@ -829,8 +898,15 @@ class TeamMatch:
             self._settle_attacks()
         for team in self.teams:
             team.score += (
-                team.delta + team.captain_delta + team.harmony_delta + team.bet_delta
-                + team.stolen - team.robbed + team.toll_received - team.tolled + team.tricked
+                team.delta
+                + team.captain_delta
+                + team.harmony_delta
+                + team.bet_delta
+                + team.stolen
+                - team.robbed
+                + team.toll_received
+                - team.tolled
+                + team.tricked
             )
         if not self.solo and self.powers:
             self._gains()
@@ -953,12 +1029,18 @@ class TeamMatch:
                 pool = [s for s in self.statements if s.id not in self.used]
             else:
                 taken = {q.id for q in self.questions}
-                pool = [_duel_question(q, kind) for q in self.bank if q.difficulty == kind and q.id not in self.used and q.id not in taken]
+                pool = [
+                    _duel_question(q, kind)
+                    for q in self.bank
+                    if q.difficulty == kind and q.id not in self.used and q.id not in taken
+                ]
             picked = self.rng.sample(pool, min(count, len(pool)))
             self.used.update(q.id for q in picked)
             questions += picked
         bettors = [
-            pid for t in self.teams if t.id not in self.duel_teams and t.score >= x1.BET
+            pid
+            for t in self.teams
+            if t.id not in self.duel_teams and t.score >= x1.BET
             for pid in self._present(t, connected)
         ]
         self.duel = x1.Duel(challenger=a.representative, rival=b.representative, questions=questions, bettors=bettors)
@@ -971,7 +1053,10 @@ class TeamMatch:
             return self._enter("duel_answering", now, duel.seconds())
         if duel.winner is None:
             duel.loser, duel.winner = duel.rival, duel.challenger
-        sides = [_Side(duel.challenger, self.team(self.duel_teams[0])), _Side(duel.rival, self.team(self.duel_teams[1]))]
+        sides = [
+            _Side(duel.challenger, self.team(self.duel_teams[0])),
+            _Side(duel.rival, self.team(self.duel_teams[1])),
+        ]
         sides += [_Side(pid, self.team_of(pid)) for pid in duel.bets if self.team_of(pid)]
         for team in self.teams:
             team.duel_delta = 0
@@ -1029,9 +1114,11 @@ class TeamMatch:
         revealed = self.phase == "results"
         q = self.question if asked else None
         mine = self.team_of(viewer) if viewer else None
-        infiltrated = next(
-            (t for t in self.teams if viewer and self._infiltrates(viewer, t)), None
-        ) if self.phase in ("reading", "answering") else None
+        infiltrated = (
+            next((t for t in self.teams if viewer and self._infiltrates(viewer, t)), None)
+            if self.phase in ("reading", "answering")
+            else None
+        )
         ends_at = self.phase_ends_at
         if self.phase == "answering" and mine:
             ends_at = self.team_deadline(mine)
@@ -1048,7 +1135,9 @@ class TeamMatch:
             difficulty=q.difficulty if q else self.questions[0].difficulty,
             theme=q.theme if q else "",
             question=self._question_view(mine) if q and showing else None,
-            correct_option=self._to_screen(mine, q.answer) if mine and q and revealed else (q.answer if q and revealed else None),
+            correct_option=self._to_screen(mine, q.answer)
+            if mine and q and revealed
+            else (q.answer if q and revealed else None),
             fact=q.fact if q and revealed else None,
             bet_percents=list(BET_PERCENTS),
             bet_max_percent=BET_MAX_PERCENT,
@@ -1125,7 +1214,10 @@ class TeamMatch:
                 if silenced and pid != viewer:
                     continue  # Silêncio: cada um só vê o próprio voto
                 votes.append(TeamVote(player_id=pid, option=screen(option)))
-            votes += [TeamVote(player_id=pid, option=screen(option), infiltrator=True) for pid, (option, _) in team.infiltrators.items()]
+            votes += [
+                TeamVote(player_id=pid, option=screen(option), infiltrator=True)
+                for pid, (option, _) in team.infiltrators.items()
+            ]
         lasting = [
             LastingPowerUp(kind=kind, rounds_left=left, total=team.lasting_total.get(kind, left))
             for kind, left in team.lasting.items()

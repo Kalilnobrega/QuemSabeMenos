@@ -9,7 +9,14 @@ export function AnsweredCheck({ className = '' }: { className?: string }) {
       aria-label="Respondeu"
     >
       <svg viewBox="0 0 12 12" className="size-2.5" aria-hidden="true">
-        <path d="m2.5 6.2 2.2 2.3 4.8-5" fill="none" stroke="#12141B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="m2.5 6.2 2.2 2.3 4.8-5"
+          fill="none"
+          stroke="#12141B"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     </span>
   )
@@ -31,14 +38,26 @@ export function AnsweredAvatar({
   return (
     // A chave muda quando a pessoa responde: o avatar remonta e a animação de pulo toca.
     <span key={String(done)} className={`relative inline-flex ${done ? 'avatar-pop' : ''}`} title={player.nickname}>
-      <img src={avatarUrl(player)} alt={player.nickname} className={`${className} transition ${waiting && !done ? 'opacity-30 grayscale' : ''}`} />
+      <img
+        src={avatarUrl(player)}
+        alt={player.nickname}
+        className={`${className} transition ${waiting && !done ? 'opacity-30 grayscale' : ''}`}
+      />
       {done && <AnsweredCheck />}
     </span>
   )
 }
 
 /** Quem já respondeu a pergunta: os avatares de quem está conectado e o contador. */
-export function AnsweredRow({ players, answered, label = 'responderam' }: { players: PlayerView[]; answered: string[]; label?: string }) {
+export function AnsweredRow({
+  players,
+  answered,
+  label = 'responderam',
+}: {
+  players: PlayerView[]
+  answered: string[]
+  label?: string
+}) {
   const present = players.filter((p) => p.connected)
   const count = present.filter((p) => answered.includes(p.id)).length
   return (

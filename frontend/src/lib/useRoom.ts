@@ -100,19 +100,29 @@ export function useRoom() {
   const start = useCallback(() => request('start_game'), [])
   const playAgain = useCallback(() => request('play_again'), [])
   const answer = useCallback(
-    (option: number, team: number | null = null, potato: number | null = null) => request('submit_answer', { option, team, potato }),
+    (option: number, team: number | null = null, potato: number | null = null) =>
+      request('submit_answer', { option, team, potato }),
     [],
   )
   const bet = useCallback((amount: number) => request('submit_bet', { amount }), [])
   const duelBet = useCallback((choice: string) => request('submit_duel_bet', { choice }), [])
   const armPowerUp = useCallback(
-    (kind: ArmPowerUpRequest['kind'], target: string | null, legendary = false, theme: string | null = null, targetTeam: number | null = null) =>
-      request('arm_powerup', { kind, target, legendary, theme, target_team: targetTeam }),
+    (
+      kind: ArmPowerUpRequest['kind'],
+      target: string | null,
+      legendary = false,
+      theme: string | null = null,
+      targetTeam: number | null = null,
+    ) => request('arm_powerup', { kind, target, legendary, theme, target_team: targetTeam }),
     [],
   )
   const usePowerUp = useCallback(
-    (kind: ArmPowerUpRequest['kind'], targetTeam: number | null = null, potato: number | null = null, option: number | null = null) =>
-      request('use_powerup', { kind, target_team: targetTeam, potato, option }),
+    (
+      kind: ArmPowerUpRequest['kind'],
+      targetTeam: number | null = null,
+      potato: number | null = null,
+      option: number | null = null,
+    ) => request('use_powerup', { kind, target_team: targetTeam, potato, option }),
     [],
   )
   const skipResults = useCallback(() => request('skip_results'), [])
@@ -129,5 +139,28 @@ export function useRoom() {
   }, [])
   const setTeam = useCallback((player_id: string, team: number) => request('set_team', { player_id, team }), [])
 
-  return { connected, rejoining, snapshot, playerId, create, join, leave, start, playAgain, answer, bet, duelBet, armPowerUp, disarmPowerUp, usePowerUp, skipResults, chooseTheme, guess, updateSettings, updateAvatar, setTeam, chooseRepresentative }
+  return {
+    connected,
+    rejoining,
+    snapshot,
+    playerId,
+    create,
+    join,
+    leave,
+    start,
+    playAgain,
+    answer,
+    bet,
+    duelBet,
+    armPowerUp,
+    disarmPowerUp,
+    usePowerUp,
+    skipResults,
+    chooseTheme,
+    guess,
+    updateSettings,
+    updateAvatar,
+    setTeam,
+    chooseRepresentative,
+  }
 }

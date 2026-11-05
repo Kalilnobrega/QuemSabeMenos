@@ -38,7 +38,16 @@ export function Estimate({ snapshot, playerId, onGuess, onSkip, onPlayAgain, onL
     return <LevelIntro difficulty={estimate.difficulty} line={ESTIMATE_LEVEL_LINES[estimate.difficulty]} />
   }
   // key: cada pergunta começa com o campo vazio.
-  return <EstimateRound key={estimate.round} snapshot={snapshot} playerId={playerId} onGuess={onGuess} onSkip={onSkip} onLeave={onLeave} />
+  return (
+    <EstimateRound
+      key={estimate.round}
+      snapshot={snapshot}
+      playerId={playerId}
+      onGuess={onGuess}
+      onSkip={onSkip}
+      onLeave={onLeave}
+    />
+  )
 }
 
 /** "1.500", "1500", "3,14" e "-89,2" viram número; o resto é inválido. */
@@ -202,7 +211,17 @@ function guessLabel(guess: EstimateGuess, maxLoss: number) {
   return `Errou por ${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 }).format(guess.error_percent ?? 0)}%`
 }
 
-function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateView; players: PlayerView[]; playerId: string | null; onSkip: Props['onSkip'] }) {
+function Reveal({
+  estimate,
+  players,
+  playerId,
+  onSkip,
+}: {
+  estimate: EstimateView
+  players: PlayerView[]
+  playerId: string | null
+  onSkip: Props['onSkip']
+}) {
   const byId = (id: string) => players.find((p) => p.id === id)
   const deltas = Object.fromEntries(estimate.guesses.map((g) => [g.player_id, g.delta]))
 
@@ -222,7 +241,11 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
             <li
               key={guess.player_id}
               className={`avatar-pop flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold ${
-                guess.exact ? 'bg-brand/20 text-brand' : guess.delta > 0 ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'
+                guess.exact
+                  ? 'bg-brand/20 text-brand'
+                  : guess.delta > 0
+                    ? 'bg-emerald-500/15 text-emerald-200'
+                    : 'bg-red-500/15 text-red-200'
               } ${guess.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
@@ -244,7 +267,14 @@ function Reveal({ estimate, players, playerId, onSkip }: { estimate: EstimateVie
 
       <Ranking players={players} playerId={playerId} deltas={deltas} />
 
-      <SkipButton ready={estimate.ready} players={players} playerId={playerId} onSkip={onSkip} endsInMs={estimate.phase_ends_in_ms} durationMs={estimate.phase_duration_ms} />
+      <SkipButton
+        ready={estimate.ready}
+        players={players}
+        playerId={playerId}
+        onSkip={onSkip}
+        endsInMs={estimate.phase_ends_in_ms}
+        durationMs={estimate.phase_duration_ms}
+      />
     </div>
   )
 }

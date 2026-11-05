@@ -100,9 +100,10 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 def check_round_done(room: Room) -> None:
     if room.estimate:
         estimate, connected = room.estimate, room.connected_ids()
-        if ((estimate.phase == "answering" and estimate.everyone_answered(connected)) or (
-            estimate.phase == "results" and estimate.everyone_ready(connected)
-        )) and (event := round_done.get(room.code)):
+        if (
+            (estimate.phase == "answering" and estimate.everyone_answered(connected))
+            or (estimate.phase == "results" and estimate.everyone_ready(connected))
+        ) and (event := round_done.get(room.code)):
             event.set()
         return
     if room.team_match:
@@ -253,7 +254,9 @@ async def run_duels(room: Room, done: asyncio.Event, alive) -> None:
             await asyncio.wait_for(done.wait(), max(0.0, game.phase_ends_at + rules.LATE_SECONDS - time.monotonic()))
         done.clear()
 
-    while alive() and game.start_duel([p.id for p in room.players], {p.id: p.score for p in room.players}, time.monotonic()):
+    while alive() and game.start_duel(
+        [p.id for p in room.players], {p.id: p.score for p in room.players}, time.monotonic()
+    ):
         await broadcast(room)
         await wait_phase()
         while alive() and game.open_duel_question(time.monotonic()):
@@ -479,8 +482,17 @@ async def update_settings(sid: str, data: dict) -> dict:
     try:
         request = UpdateSettingsRequest.model_validate(data)
         room = rooms.update_settings(
-            sid, request.rounds, request.themes, request.answer_seconds, request.speed_grace_seconds, request.mode, request.powerup_max,
-            request.survival_kind, request.powers, request.team_count, request.team_pick,
+            sid,
+            request.rounds,
+            request.themes,
+            request.answer_seconds,
+            request.speed_grace_seconds,
+            request.mode,
+            request.powerup_max,
+            request.survival_kind,
+            request.powers,
+            request.team_count,
+            request.team_pick,
         )
     except ValidationError:
         return error("Dados inválidos.")
@@ -536,7 +548,17 @@ async def start_game(sid: str) -> dict:
         room = rooms.start(sid)
     except RoomError as e:
         return error(str(e))
-    runner = run_estimate if room.estimate else run_team_match if room.team_match else run_hot_potato if room.hot_potato else run_survival if room.survival else run_game
+    runner = (
+        run_estimate
+        if room.estimate
+        else run_team_match
+        if room.team_match
+        else run_hot_potato
+        if room.hot_potato
+        else run_survival
+        if room.survival
+        else run_game
+    )
     sio.start_background_task(runner, room)
     return OkAck().model_dump()
 
@@ -573,7 +595,9 @@ async def submit_bet(sid: str, data: dict) -> dict:
 async def arm_powerup(sid: str, data: dict) -> dict:
     try:
         request = ArmPowerUpRequest.model_validate(data)
-        room = rooms.arm_powerup(sid, request.kind, request.target, request.legendary, request.theme, request.target_team)
+        room = rooms.arm_powerup(
+            sid, request.kind, request.target, request.legendary, request.theme, request.target_team
+        )
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:
@@ -597,7 +621,9 @@ async def disarm_powerup(sid: str) -> dict:
 async def use_powerup(sid: str, data: dict) -> dict:
     try:
         request = UsePowerUpRequest.model_validate(data)
-        room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team, request.potato, request.option)
+        room = rooms.use_powerup(
+            sid, request.kind, time.monotonic(), request.target_team, request.potato, request.option
+        )
     except ValidationError:
         return error("Dados inválidos.")
     except RoomError as e:

@@ -35,9 +35,23 @@ export function randomAvatar(): Avatar {
 
 // Bicho repetido na sala: o disco de fundo muda de cor (o primeiro fica com o amarelo de sempre).
 const raw = import.meta.glob<string>('../assets/avatars/*.svg', { eager: true, query: '?raw', import: 'default' })
-const SVGS = Object.fromEntries(Object.entries(raw).map(([path, svg]) => [path.split('/').pop()!.replace('.svg', ''), svg])) as Record<Avatar, string>
+const SVGS = Object.fromEntries(
+  Object.entries(raw).map(([path, svg]) => [path.split('/').pop()!.replace('.svg', ''), svg]),
+) as Record<Avatar, string>
 const DISC = 'r="61" fill="#FFC107"'
-export const VARIANT_COLORS = ['#60A5FA', '#F472B6', '#4ADE80', '#C084FC', '#FB923C', '#2DD4BF', '#F87171', '#A3E635', '#E5E7EB', '#38BDF8', '#FDA4AF']
+export const VARIANT_COLORS = [
+  '#60A5FA',
+  '#F472B6',
+  '#4ADE80',
+  '#C084FC',
+  '#FB923C',
+  '#2DD4BF',
+  '#F87171',
+  '#A3E635',
+  '#E5E7EB',
+  '#38BDF8',
+  '#FDA4AF',
+]
 const variantUrls = new Map<string, string>()
 
 /** A imagem do bicho de um jogador, já com a cor de fundo da variante quando ele repete o bicho de alguém. */

@@ -16,7 +16,12 @@ import {
 import type { PlayerView, PowerUpUse } from '../types/events'
 import { BannerList, EffectChips, SkipButton, type BannerItem, type ChipItem } from './Screens'
 
-const ICON_STROKE = { stroke: '#12141B', strokeWidth: 1.8, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const }
+const ICON_STROKE = {
+  stroke: '#12141B',
+  strokeWidth: 1.8,
+  strokeLinejoin: 'round' as const,
+  strokeLinecap: 'round' as const,
+}
 
 /** A etiqueta embaixo do nome: Ajuda (verde) ou Sabotagem (vermelha), com um complemento opcional. */
 export function CategoryTag({ kind, note }: { kind: Kind; note?: string }) {
@@ -31,7 +36,11 @@ export function CategoryTag({ kind, note }: { kind: Kind; note?: string }) {
 
 /** Mítico e lendário, na cor do botão. O mítico é só "Mítico"; o lendário é sempre uma sabotagem. */
 function RarityTag({ rarity }: { rarity: 'mythic' | 'legendary' }) {
-  return <span className="text-[0.65rem] font-bold tracking-wide uppercase">{rarity === 'mythic' ? 'Mítico' : 'Sabotagem lendária'}</span>
+  return (
+    <span className="text-[0.65rem] font-bold tracking-wide uppercase">
+      {rarity === 'mythic' ? 'Mítico' : 'Sabotagem lendária'}
+    </span>
+  )
 }
 
 export function PowerUpIcon({ kind, className }: { kind: Kind; className?: string }) {
@@ -39,7 +48,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="2.5" y="4" width="19" height="16" rx="4" fill="#FBBF24" {...ICON_STROKE} />
-        <text x="12" y="16.3" textAnchor="middle" fontSize="10" fontWeight="900" fill="#12141B">×2</text>
+        <text x="12" y="16.3" textAnchor="middle" fontSize="10" fontWeight="900" fill="#12141B">
+          ×2
+        </text>
       </svg>
     )
   }
@@ -69,7 +80,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" fill="none" stroke="#12141B" strokeWidth="5" strokeLinecap="round" />
         <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" fill="none" stroke="#F9A8D4" strokeWidth="2.6" strokeLinecap="round" />
         <path d="M18.5 2.5v5h-5" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
-        <text x="12" y="15.6" textAnchor="middle" fontSize="9" fontWeight="900" fill="#F8FAFC">2</text>
+        <text x="12" y="15.6" textAnchor="middle" fontSize="9" fontWeight="900" fill="#F8FAFC">
+          2
+        </text>
       </svg>
     )
   }
@@ -88,10 +101,48 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'scramble') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <rect x="1.5" y="3" width="10" height="10" rx="2" fill="#F0ABFC" {...ICON_STROKE} transform="rotate(-10 6.5 8)" />
-        <rect x="12.5" y="10" width="10" height="10" rx="2" fill="#F0ABFC" {...ICON_STROKE} transform="rotate(12 17.5 15)" />
-        <text x="6.5" y="11.3" textAnchor="middle" fontSize="8" fontWeight="900" fill="#12141B" transform="rotate(-10 6.5 8)">a</text>
-        <text x="17.5" y="18.3" textAnchor="middle" fontSize="8" fontWeight="900" fill="#12141B" transform="rotate(12 17.5 15)">Z</text>
+        <rect
+          x="1.5"
+          y="3"
+          width="10"
+          height="10"
+          rx="2"
+          fill="#F0ABFC"
+          {...ICON_STROKE}
+          transform="rotate(-10 6.5 8)"
+        />
+        <rect
+          x="12.5"
+          y="10"
+          width="10"
+          height="10"
+          rx="2"
+          fill="#F0ABFC"
+          {...ICON_STROKE}
+          transform="rotate(12 17.5 15)"
+        />
+        <text
+          x="6.5"
+          y="11.3"
+          textAnchor="middle"
+          fontSize="8"
+          fontWeight="900"
+          fill="#12141B"
+          transform="rotate(-10 6.5 8)"
+        >
+          a
+        </text>
+        <text
+          x="17.5"
+          y="18.3"
+          textAnchor="middle"
+          fontSize="8"
+          fontWeight="900"
+          fill="#12141B"
+          transform="rotate(12 17.5 15)"
+        >
+          Z
+        </text>
       </svg>
     )
   }
@@ -136,15 +187,25 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <circle cx="12" cy="12" r="10" fill="#A78BFA" stroke="#12141B" strokeWidth="1.8" />
         <path d="M6 18 18 6" stroke="#12141B" strokeWidth="1.8" />
-        <text x="8.2" y="11" textAnchor="middle" fontSize="7" fontWeight="900" fill="#12141B">50</text>
-        <text x="15.8" y="18.6" textAnchor="middle" fontSize="7" fontWeight="900" fill="#12141B">50</text>
+        <text x="8.2" y="11" textAnchor="middle" fontSize="7" fontWeight="900" fill="#12141B">
+          50
+        </text>
+        <text x="15.8" y="18.6" textAnchor="middle" fontSize="7" fontWeight="900" fill="#12141B">
+          50
+        </text>
       </svg>
     )
   }
   if (kind === 'shield') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z" fill="#7DD3FC" stroke="#12141B" strokeWidth="1.8" strokeLinejoin="round" />
+        <path
+          d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z"
+          fill="#7DD3FC"
+          stroke="#12141B"
+          strokeWidth="1.8"
+          strokeLinejoin="round"
+        />
         <path d="M12 5.5v13M7.5 9.5h9" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" opacity=".8" />
       </svg>
     )
@@ -163,20 +224,73 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         {/* A coroa do dono do tema, derrubada e puxada para o lado. */}
-        <path d="M4 16.5 3 7.5l4.5 3.5L11 5l3.5 6L19 7.5l-1 9Z" fill="#FBBF24" {...ICON_STROKE} transform="rotate(-16 11 12)" />
-        <path d="M4.6 19.4h12.6" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" transform="rotate(-16 11 12)" />
-        <path d="M4.6 19.4h12.6" stroke="#F59E0B" strokeWidth="1.6" strokeLinecap="round" transform="rotate(-16 11 12)" />
-        <path d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4" fill="none" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4" fill="none" stroke="#FB923C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M4 16.5 3 7.5l4.5 3.5L11 5l3.5 6L19 7.5l-1 9Z"
+          fill="#FBBF24"
+          {...ICON_STROKE}
+          transform="rotate(-16 11 12)"
+        />
+        <path
+          d="M4.6 19.4h12.6"
+          stroke="#12141B"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          transform="rotate(-16 11 12)"
+        />
+        <path
+          d="M4.6 19.4h12.6"
+          stroke="#F59E0B"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          transform="rotate(-16 11 12)"
+        />
+        <path
+          d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4"
+          fill="none"
+          stroke="#12141B"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4"
+          fill="none"
+          stroke="#FB923C"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     )
   }
   if (kind === 'theme') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <rect x="2" y="6" width="11" height="15" rx="2" fill="#C7D2FE" {...ICON_STROKE} transform="rotate(-12 7.5 13.5)" />
-        <rect x="10" y="3" width="11" height="15" rx="2" fill="#818CF8" {...ICON_STROKE} transform="rotate(10 15.5 10.5)" />
-        <path d="m15.6 7.2 1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3 1-2.1Z" fill="#F8FAFC" transform="rotate(10 15.5 10.5)" />
+        <rect
+          x="2"
+          y="6"
+          width="11"
+          height="15"
+          rx="2"
+          fill="#C7D2FE"
+          {...ICON_STROKE}
+          transform="rotate(-12 7.5 13.5)"
+        />
+        <rect
+          x="10"
+          y="3"
+          width="11"
+          height="15"
+          rx="2"
+          fill="#818CF8"
+          {...ICON_STROKE}
+          transform="rotate(10 15.5 10.5)"
+        />
+        <path
+          d="m15.6 7.2 1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3 1-2.1Z"
+          fill="#F8FAFC"
+          transform="rotate(10 15.5 10.5)"
+        />
       </svg>
     )
   }
@@ -212,7 +326,11 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'resurrection') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M12 21C7 17.5 3 14 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4.5-4 8-9 11.5Z" fill="#FBBF24" {...ICON_STROKE} />
+        <path
+          d="M12 21C7 17.5 3 14 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4.5-4 8-9 11.5Z"
+          fill="#FBBF24"
+          {...ICON_STROKE}
+        />
         <path d="M2 6.5 4.5 8M22 6.5 19.5 8M12 1.5V4" stroke="#FDE68A" strokeWidth="1.8" strokeLinecap="round" />
         <path d="M12 9.5v6M9 12.5h6" stroke="#F8FAFC" strokeWidth="2.2" strokeLinecap="round" />
       </svg>
@@ -231,7 +349,11 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'flashbang') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="m12 1.5 2 5 5-2-2 5 5.5 2.5-5.5 2.5 2 5-5-2-2 5-2-5-5 2 2-5L1.5 12 7 9.5l-2-5 5 2 2-5Z" fill="#FEF08A" {...ICON_STROKE} />
+        <path
+          d="m12 1.5 2 5 5-2-2 5 5.5 2.5-5.5 2.5 2 5-5-2-2 5-2-5-5 2 2-5L1.5 12 7 9.5l-2-5 5 2 2-5Z"
+          fill="#FEF08A"
+          {...ICON_STROKE}
+        />
         <circle cx="12" cy="12" r="3.5" fill="#F8FAFC" {...ICON_STROKE} />
       </svg>
     )
@@ -239,7 +361,11 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'cold_water') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M12 2.5C8 8 5.5 11.5 5.5 15a6.5 6.5 0 0 0 13 0c0-3.5-2.5-7-6.5-12.5Z" fill="#7DD3FC" {...ICON_STROKE} />
+        <path
+          d="M12 2.5C8 8 5.5 11.5 5.5 15a6.5 6.5 0 0 0 13 0c0-3.5-2.5-7-6.5-12.5Z"
+          fill="#7DD3FC"
+          {...ICON_STROKE}
+        />
         <path d="M9 15.5a3 3 0 0 0 3 3" fill="none" stroke="#F8FAFC" strokeWidth="1.8" strokeLinecap="round" />
       </svg>
     )
@@ -248,7 +374,14 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="2" y="6" width="20" height="12" rx="2.5" fill="#6EE7B7" {...ICON_STROKE} />
-        <path d="M7 12h8.5M13 9l3 3-3 3" fill="none" stroke="#12141B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M7 12h8.5M13 9l3 3-3 3"
+          fill="none"
+          stroke="#12141B"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <path d="M19 8.5v7" stroke="#12141B" strokeWidth="1.4" strokeDasharray="1.6 1.6" />
       </svg>
     )
@@ -299,7 +432,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M6 2.5h9l3.5 3.5v15.5H6Z" fill="#FEF3C7" {...ICON_STROKE} />
         <path d="M9 8h6M9 11h6" stroke="#B45309" strokeWidth="1.6" strokeLinecap="round" />
-        <text x="12.2" y="19" textAnchor="middle" fontSize="7" fontWeight="900" fill="#B45309">%</text>
+        <text x="12.2" y="19" textAnchor="middle" fontSize="7" fontWeight="900" fill="#B45309">
+          %
+        </text>
       </svg>
     )
   }
@@ -326,7 +461,11 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'curse') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M12 2.5c5 0 8.5 3.5 8.5 8 0 3-1.7 5-3.5 6v3.5h-10V16.5C5.2 15.5 3.5 13.5 3.5 10.5c0-4.5 3.5-8 8.5-8Z" fill="#A78BFA" {...ICON_STROKE} />
+        <path
+          d="M12 2.5c5 0 8.5 3.5 8.5 8 0 3-1.7 5-3.5 6v3.5h-10V16.5C5.2 15.5 3.5 13.5 3.5 10.5c0-4.5 3.5-8 8.5-8Z"
+          fill="#A78BFA"
+          {...ICON_STROKE}
+        />
         <circle cx="8.7" cy="11" r="2" fill="#12141B" />
         <circle cx="15.3" cy="11" r="2" fill="#12141B" />
         <path d="M10 20v-2M14 20v-2" stroke="#12141B" strokeWidth="1.4" />
@@ -346,11 +485,25 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         {/* Lâmina afiada com sulco, a ponta suja de sangue e uma gota caindo. */}
-        <path d="M11 7.1 16.8 14.2 20.5 20.5 14.2 16.8 7.1 11Z" fill="#E2E8F0" stroke="#12141B" strokeWidth="1.1" strokeLinejoin="round" />
+        <path
+          d="M11 7.1 16.8 14.2 20.5 20.5 14.2 16.8 7.1 11Z"
+          fill="#E2E8F0"
+          stroke="#12141B"
+          strokeWidth="1.1"
+          strokeLinejoin="round"
+        />
         <path d="M9.4 9.4 15.8 15.8" stroke="#94A3B8" strokeWidth="0.9" strokeLinecap="round" />
-        <path d="M16.8 14.2 20.5 20.5 14.2 16.8Q14.9 16.3 15.2 17Q15.4 18.1 15.9 17.8Q16.2 16.9 15.9 16.3Q16.7 16 16.3 15.4Q17 15.1 16.8 14.2Z" fill="#DC2626" />
+        <path
+          d="M16.8 14.2 20.5 20.5 14.2 16.8Q14.9 16.3 15.2 17Q15.4 18.1 15.9 17.8Q16.2 16.9 15.9 16.3Q16.7 16 16.3 15.4Q17 15.1 16.8 14.2Z"
+          fill="#DC2626"
+        />
         <path d="M17.6 16.6 18.8 18.6" stroke="#FCA5A5" strokeWidth="0.5" strokeLinecap="round" />
-        <path d="M20.5 21.3Q21.8 22.9 20.5 23.7Q19.2 22.9 20.5 21.3Z" fill="#DC2626" stroke="#12141B" strokeWidth="0.6" />
+        <path
+          d="M20.5 21.3Q21.8 22.9 20.5 23.7Q19.2 22.9 20.5 21.3Z"
+          fill="#DC2626"
+          stroke="#12141B"
+          strokeWidth="0.6"
+        />
         <path d="M5 12.6 12.6 5" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
         <path d="M5 12.6 12.6 5" stroke="#FBBF24" strokeWidth="1.8" strokeLinecap="round" />
         <path d="M7.8 7.8 4.1 4.1" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
@@ -363,7 +516,11 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <ellipse cx="12" cy="5" rx="6.5" ry="2.2" fill="none" stroke="#FDE047" strokeWidth="2" />
-        <path d="M12 9.5 13.8 14l4.7.3-3.6 3 1.2 4.6L12 19.4l-4.1 2.5 1.2-4.6-3.6-3 4.7-.3Z" fill="#FDE68A" {...ICON_STROKE} />
+        <path
+          d="M12 9.5 13.8 14l4.7.3-3.6 3 1.2 4.6L12 19.4l-4.1 2.5 1.2-4.6-3.6-3 4.7-.3Z"
+          fill="#FDE68A"
+          {...ICON_STROKE}
+        />
       </svg>
     )
   }
@@ -372,7 +529,11 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" />
         <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="#E5E7EB" strokeWidth="1.6" strokeLinecap="round" />
-        <path d="M13 3.5c2.8 2.3 5 5 5 8a5 5 0 0 1-10 0c0-2 1-3.6 2.3-4.8.2 1.6 1 2.4 1.9 2.6-.2-2.2.2-4 .8-5.8Z" fill="#F97316" {...ICON_STROKE} />
+        <path
+          d="M13 3.5c2.8 2.3 5 5 5 8a5 5 0 0 1-10 0c0-2 1-3.6 2.3-4.8.2 1.6 1 2.4 1.9 2.6-.2-2.2.2-4 .8-5.8Z"
+          fill="#F97316"
+          {...ICON_STROKE}
+        />
         <path d="M13 9.5c1.2 1.1 2.1 2.2 2.1 3.4a2.1 2.1 0 0 1-4.2 0c0-1.2.9-2.3 2.1-3.4Z" fill="#FDE047" />
       </svg>
     )
@@ -384,7 +545,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <circle cx="15.5" cy="14.5" r="5.5" fill="#475569" {...ICON_STROKE} />
         <path d="M15.5 9V6.5c0-1.5 1.5-2.5 3-2" fill="none" stroke="#12141B" strokeWidth="1.8" strokeLinecap="round" />
         <circle cx="19" cy="4" r="1.6" fill="#FB923C" />
-        <text x="15.5" y="17.3" textAnchor="middle" fontSize="7" fontWeight="900" fill="#F8FAFC">2</text>
+        <text x="15.5" y="17.3" textAnchor="middle" fontSize="7" fontWeight="900" fill="#F8FAFC">
+          2
+        </text>
       </svg>
     )
   }
@@ -394,8 +557,14 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path d="M3 21V11a6 6 0 0 1 12 0v10l-2-1.5L11 21l-2-1.5L7 21l-2-1.5Z" fill="#E0E7FF" {...ICON_STROKE} />
         <circle cx="7" cy="11" r="1.2" fill="#12141B" />
         <circle cx="11" cy="11" r="1.2" fill="#12141B" />
-        <path d="M14 3.5h7a1.5 1.5 0 0 1 1.5 1.5v4A1.5 1.5 0 0 1 21 10.5h-3.5L15 13v-2.5h-1A1.5 1.5 0 0 1 12.5 9V5A1.5 1.5 0 0 1 14 3.5Z" fill="#A5B4FC" {...ICON_STROKE} />
-        <text x="17.5" y="9.3" textAnchor="middle" fontSize="5.5" fontWeight="900" fill="#12141B">?</text>
+        <path
+          d="M14 3.5h7a1.5 1.5 0 0 1 1.5 1.5v4A1.5 1.5 0 0 1 21 10.5h-3.5L15 13v-2.5h-1A1.5 1.5 0 0 1 12.5 9V5A1.5 1.5 0 0 1 14 3.5Z"
+          fill="#A5B4FC"
+          {...ICON_STROKE}
+        />
+        <text x="17.5" y="9.3" textAnchor="middle" fontSize="5.5" fontWeight="900" fill="#12141B">
+          ?
+        </text>
       </svg>
     )
   }
@@ -414,7 +583,13 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <ellipse cx="9" cy="14" rx="6.2" ry="5" fill="#A3753B" transform="rotate(-18 9 14)" {...ICON_STROKE} />
         <ellipse cx="15.5" cy="11" rx="6.2" ry="5" fill="#FACC15" transform="rotate(-18 15.5 11)" {...ICON_STROKE} />
-        <path d="M12.5 9.3c1-1.2 2.3-1.8 3.6-1.8" fill="none" stroke="#FEF9C3" strokeWidth="1.3" strokeLinecap="round" />
+        <path
+          d="M12.5 9.3c1-1.2 2.3-1.8 3.6-1.8"
+          fill="none"
+          stroke="#FEF9C3"
+          strokeWidth="1.3"
+          strokeLinecap="round"
+        />
         <path d="M19 6.5l1.5-2.2" stroke="#12141B" strokeWidth="1.6" strokeLinecap="round" />
         <circle cx="20.8" cy="3.8" r="1.4" fill="#FB923C" />
       </svg>
@@ -424,16 +599,30 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="#D4D4D8" stroke="#12141B" strokeWidth="1.8" />
-        <path d="M6 15c2-3 3 1 5-2s3 1 5-2 2 0 2 0" fill="none" stroke="#FFC107" strokeWidth="2.4" strokeLinecap="round" />
+        <path
+          d="M6 15c2-3 3 1 5-2s3 1 5-2 2 0 2 0"
+          fill="none"
+          stroke="#FFC107"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+        />
         <circle cx="18" cy="8.5" r="1.3" fill="#12141B" />
       </svg>
     )
   }
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <path d="M8 5.5h8l-1.5 2.5c3.5 2 5.5 5 5.5 8.5 0 3-2.5 5-8 5s-8-2-8-5c0-3.5 2-6.5 5.5-8.5L8 5.5Z" fill="#34D399" stroke="#12141B" strokeWidth="1.8" strokeLinejoin="round" />
+      <path
+        d="M8 5.5h8l-1.5 2.5c3.5 2 5.5 5 5.5 8.5 0 3-2.5 5-8 5s-8-2-8-5c0-3.5 2-6.5 5.5-8.5L8 5.5Z"
+        fill="#34D399"
+        stroke="#12141B"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
       <path d="M7.5 3.5h9" stroke="#12141B" strokeWidth="1.8" strokeLinecap="round" />
-      <text x="12" y="18" textAnchor="middle" fontSize="8" fontWeight="900" fill="#12141B">$</text>
+      <text x="12" y="18" textAnchor="middle" fontSize="8" fontWeight="900" fill="#12141B">
+        $
+      </text>
     </svg>
   )
 }
@@ -442,7 +631,15 @@ const SCRATCH_RADIUS = 12
 const SCRATCH_REVEAL = 0.9 // fração raspada que tira a cobertura
 
 /** Cobertura prateada da raspadinha: some quando o jogador raspa a maior parte (e trava os toques até lá). */
-export function ScratchCard({ active, className = '', children }: { active: boolean; className?: string; children: ReactNode }) {
+export function ScratchCard({
+  active,
+  className = '',
+  children,
+}: {
+  active: boolean
+  className?: string
+  children: ReactNode
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const last = useRef<{ x: number; y: number } | null>(null)
   const moves = useRef(0)
@@ -552,7 +749,12 @@ export function Magnifier({ active, children }: { active: boolean; children: Rea
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 z-20"
-            style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)', maskImage: hole, WebkitMaskImage: hole }}
+            style={{
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              maskImage: hole,
+              WebkitMaskImage: hole,
+            }}
           />
           <div
             aria-hidden="true"
@@ -565,7 +767,12 @@ export function Magnifier({ active, children }: { active: boolean; children: Rea
             aria-label="Arraste a lupa"
             aria-valuenow={Math.round(lens.y)}
             className="absolute z-30 flex h-16 w-11 cursor-grab touch-none items-start justify-center active:cursor-grabbing"
-            style={{ left: lens.x + LENS * 0.3, top: lens.y + LENS * 0.3, transform: 'rotate(-45deg)', transformOrigin: 'top center' }}
+            style={{
+              left: lens.x + LENS * 0.3,
+              top: lens.y + LENS * 0.3,
+              transform: 'rotate(-45deg)',
+              transformOrigin: 'top center',
+            }}
             onPointerDown={(e) => {
               e.currentTarget.setPointerCapture(e.pointerId)
               const rect = boxRef.current!.getBoundingClientRect()
@@ -616,7 +823,8 @@ export function ActivePowerUps({
   const name = (id: string | null) => (id === playerId ? 'você' : (players.find((p) => p.id === id)?.nickname ?? '?'))
   const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
   // A lendária pega todo mundo: sempre é com você.
-  const mine = (use: PowerUpUse) => use.legendary || use.by === playerId || use.target === playerId || use.reflected_by === playerId
+  const mine = (use: PowerUpUse) =>
+    use.legendary || use.by === playerId || use.target === playerId || use.reflected_by === playerId
   const uses = [...game.active].sort((a, b) => Number(mine(b)) - Number(mine(a)))
   // As que duram mais de uma pergunta: o anúncio de quem usou só aparece na primeira.
   const later = game.lasting.filter((l) => !game.active.some((u) => u.kind === l.kind && mine(u)))
@@ -628,14 +836,18 @@ export function ActivePowerUps({
     const info = POWERUP_INFO[use.kind]
     if (use.legendary) {
       if (use.kind === 'steal') return 'Roubo LENDÁRIO: você está de olho no QI de todo mundo!'
-      return by === 'você' ? `Você jogou ${info.name} LENDÁRIO em todo mundo!` : `${cap(by)} jogou ${info.name} LENDÁRIO em todo mundo, inclusive em você!`
+      return by === 'você'
+        ? `Você jogou ${info.name} LENDÁRIO em todo mundo!`
+        : `${cap(by)} jogou ${info.name} LENDÁRIO em todo mundo, inclusive em você!`
     }
     if (use.reflected_by && use.kind !== 'steal') {
       return `${cap(name(use.reflected_by))} devolveu ${info.name} com o Reverso: agora é ${by === 'você' ? 'em você' : `em ${by}`}!`
     }
     if (use.reflected_by) return `Você rebateu o Roubo de ${target} com o Reverso!`
-    if (use.kind === 'theme') return by === 'você' ? `Você escolheu o tema: ${use.theme}!` : `${cap(by)} escolheu o tema: ${use.theme}!`
-    if (use.kind === 'coup') return `Golpe! ${cap(by)} tomou ${use.theme} de ${target}: os +25% agora são ${by === 'você' ? 'seus' : `de ${by}`}!`
+    if (use.kind === 'theme')
+      return by === 'você' ? `Você escolheu o tema: ${use.theme}!` : `${cap(by)} escolheu o tema: ${use.theme}!`
+    if (use.kind === 'coup')
+      return `Golpe! ${cap(by)} tomou ${use.theme} de ${target}: os +25% agora são ${by === 'você' ? 'seus' : `de ${by}`}!`
     if (!info.targeted) {
       const self: Partial<Record<Kind, string>> = {
         fifty_fifty: '50/50: duas erradas saíram.',
@@ -655,7 +867,8 @@ export function ActivePowerUps({
       }
       return by === 'você' ? self[use.kind]! : `${by} usou ${info.name}.`
     }
-    if (use.kind === 'steal') return survival ? `Se ${target} perder uma vida, ela é sua!` : `Você está de olho no QI de ${target}!`
+    if (use.kind === 'steal')
+      return survival ? `Se ${target} perder uma vida, ela é sua!` : `Você está de olho no QI de ${target}!`
     if (use.target === playerId) {
       const hit: Partial<Record<Kind, string>> = {
         scratch: 'jogou Raspadinha em você! Raspe para ver.',
@@ -683,7 +896,9 @@ export function ActivePowerUps({
   const playerOf = (id: string | null) => players.find((p) => p.id === id)
   const hits = (use: PowerUpUse) =>
     use.kind !== 'steal' &&
-    (use.reflected_by ? use.by === playerId && use.reflected_by !== playerId : use.by !== playerId && (use.legendary || use.target === playerId))
+    (use.reflected_by
+      ? use.by === playerId && use.reflected_by !== playerId
+      : use.by !== playerId && (use.legendary || use.target === playerId))
   const hitDetail: Partial<Record<Kind, string>> = {
     scratch: 'Raspe para ver a pergunta',
     scramble: 'As palavras estão embaralhadas',
@@ -705,7 +920,11 @@ export function ActivePowerUps({
       player: playerOf(attacker),
       icon: <PowerUpIcon kind={use.kind} className="size-full" />,
       who: cap(name(attacker)),
-      title: use.reflected_by ? `Devolveu ${info.name} com o Reverso` : use.legendary ? `${info.name} lendário em todo mundo` : `Jogou ${info.name} em você`,
+      title: use.reflected_by
+        ? `Devolveu ${info.name} com o Reverso`
+        : use.legendary
+          ? `${info.name} lendário em todo mundo`
+          : `Jogou ${info.name} em você`,
       detail: hitDetail[use.kind] ?? line(use),
       tone: use.legendary ? 'legendary' : POWERUP_INFO[use.kind].tone,
       hit: true,
@@ -760,7 +979,15 @@ export function ActivePowerUps({
 }
 
 /** Ícones dos poderes que se usam durante a pergunta (50/50 e Espiar): tocou, vale na hora. */
-export function InstantPowerUps({ game, playerId, onUse }: { game: PowerView; playerId: string | null; onUse: (kind: Kind) => Promise<string | null> }) {
+export function InstantPowerUps({
+  game,
+  playerId,
+  onUse,
+}: {
+  game: PowerView
+  playerId: string | null
+  onUse: (kind: Kind) => Promise<string | null>
+}) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const kinds = [...new Set(game.powerups.filter((kind) => INSTANT.includes(kind)))]
@@ -807,7 +1034,19 @@ interface BarProps {
   onDisarm?: () => Promise<string | null> // Trocar: devolve o poder armado para a mão
 }
 
-export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, lockedNote, emptyNote, onArm, onSkip, onDisarm }: BarProps) {
+export function PowerUpBar({
+  powers,
+  game,
+  players,
+  playerId,
+  targetIds,
+  hints,
+  lockedNote,
+  emptyNote,
+  onArm,
+  onSkip,
+  onDisarm,
+}: BarProps) {
   const [selected, setSelected] = useState<{ kind: Kind; legendary: boolean; mythic?: boolean } | null>(null)
   const [error, setError] = useState<string | null>(null)
   const targets = players.filter((p) => p.id !== playerId && (!targetIds || targetIds.includes(p.id)))
@@ -820,7 +1059,14 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
   }
 
   const skipButton = (
-    <SkipButton ready={game.ready} players={players} playerId={playerId} onSkip={onSkip} endsInMs={game.phase_ends_in_ms} durationMs={game.phase_duration_ms} />
+    <SkipButton
+      ready={game.ready}
+      players={players}
+      playerId={playerId}
+      onSkip={onSkip}
+      endsInMs={game.phase_ends_in_ms}
+      durationMs={game.phase_duration_ms}
+    />
   )
   // Sem poderes na partida, o painel some: só fica o Próxima no pé da tela.
   if (!powers) return skipButton
@@ -845,7 +1091,9 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
     ) : (
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
-        {game.armed.theme ? `Tema da próxima: ${game.armed.theme}!` : `Na próxima: ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
+        {game.armed.theme
+          ? `Tema da próxima: ${game.armed.theme}!`
+          : `Na próxima: ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
       </p>
     )
     // O Tema não volta: a próxima pergunta já foi trocada.
@@ -878,7 +1126,9 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         </p>
         {(selected.kind === 'duel' || selected.kind === 'dagger') && (
           <>
-            <p className="text-sm font-semibold text-steel">{selected.kind === 'duel' ? 'Quem vai para o X1?' : 'Em quem cravar a Adaga?'}</p>
+            <p className="text-sm font-semibold text-steel">
+              {selected.kind === 'duel' ? 'Quem vai para o X1?' : 'Em quem cravar a Adaga?'}
+            </p>
             <div className="flex flex-wrap gap-2">
               {targets.map((p) => (
                 <button
@@ -895,11 +1145,17 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         )}
         <div className="flex gap-2">
           {selected.kind !== 'duel' && selected.kind !== 'dagger' && (
-            <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg">
+            <button
+              onClick={() => void arm(selected.kind, null)}
+              className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg"
+            >
               Usar agora
             </button>
           )}
-          <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
+          <button
+            onClick={() => setSelected(null)}
+            className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel"
+          >
             Cancelar
           </button>
         </div>
@@ -913,14 +1169,26 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
           <PowerUpIcon kind={selected.kind} className="size-6 shrink-0" />
           <span>
             <span className="font-bold text-brand">{info.name} LENDÁRIO:</span>{' '}
-            {selected.kind === 'steal' ? LEGENDARY_STEAL_HINT : selected.kind === 'toll' ? LEGENDARY_TOLL_HINT : selected.kind === 'decoy' ? LEGENDARY_DECOY_HINT : `${info.hint} ${LEGENDARY_HINT}`}
+            {selected.kind === 'steal'
+              ? LEGENDARY_STEAL_HINT
+              : selected.kind === 'toll'
+                ? LEGENDARY_TOLL_HINT
+                : selected.kind === 'decoy'
+                  ? LEGENDARY_DECOY_HINT
+                  : `${info.hint} ${LEGENDARY_HINT}`}
           </span>
         </p>
         <div className="flex gap-2">
-          <button onClick={() => void arm(selected.kind, null, true)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
+          <button
+            onClick={() => void arm(selected.kind, null, true)}
+            className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink"
+          >
             Jogar em todo mundo
           </button>
-          <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
+          <button
+            onClick={() => setSelected(null)}
+            className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel"
+          >
             Cancelar
           </button>
         </div>
@@ -970,11 +1238,21 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
         ) : null}
         <div className="flex gap-2">
           {!info.targeted && selected.kind !== 'theme' && (
-            <button onClick={() => void arm(selected.kind, null)} className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink">
-              {selected.kind === 'backpack' ? 'Abrir agora' : selected.kind === 'medkit' ? 'Usar agora' : 'Usar na próxima'}
+            <button
+              onClick={() => void arm(selected.kind, null)}
+              className="btn-3d btn-sm btn-brand flex-1 rounded-xl py-2 font-display text-lg text-ink"
+            >
+              {selected.kind === 'backpack'
+                ? 'Abrir agora'
+                : selected.kind === 'medkit'
+                  ? 'Usar agora'
+                  : 'Usar na próxima'}
             </button>
           )}
-          <button onClick={() => setSelected(null)} className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel">
+          <button
+            onClick={() => setSelected(null)}
+            className="btn-3d btn-sm btn-dark rounded-xl px-4 py-2 font-semibold text-steel"
+          >
             Cancelar
           </button>
         </div>
@@ -1026,7 +1304,13 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
           {game.powerups.map((kind, index) =>
             INSTANT.includes(kind) ? (
               // 50/50 e Espiar se usam pelo ícone na tela da pergunta, não aqui.
-              <PowerCard key={`${kind}-${index}`} kind={kind} title={hint(kind)} tag={<CategoryTag kind={kind} note="na pergunta" />} instant />
+              <PowerCard
+                key={`${kind}-${index}`}
+                kind={kind}
+                title={hint(kind)}
+                tag={<CategoryTag kind={kind} note="na pergunta" />}
+                instant
+              />
             ) : (
               <PowerCard
                 key={`${kind}-${index}`}
@@ -1086,7 +1370,10 @@ export function PowerUpBar({ powers, game, players, playerId, targetIds, hints, 
 /** As vagas da mão: cheias em amarelo. A Mochila aumenta o total. */
 function SlotPips({ used, max }: { used: number; max: number }) {
   return (
-    <span className="flex items-center gap-1 text-xs font-semibold text-steel" aria-label={`${used} de ${max} vagas ocupadas`}>
+    <span
+      className="flex items-center gap-1 text-xs font-semibold text-steel"
+      aria-label={`${used} de ${max} vagas ocupadas`}
+    >
       {Array.from({ length: max }, (_, i) => (
         <span key={i} className={`size-2.5 rounded-[3px] ${i < used ? 'bg-brand' : 'bg-[#3b4664]'}`} />
       ))}
@@ -1151,7 +1438,8 @@ function PowerCard({
       <span className="leading-none">{tag}</span>
     </>
   )
-  const shape = 'flex min-h-24 min-w-0 flex-col items-center justify-start gap-1 rounded-xl px-1 pt-2.5 pb-2 text-center'
+  const shape =
+    'flex min-h-24 min-w-0 flex-col items-center justify-start gap-1 rounded-xl px-1 pt-2.5 pb-2 text-center'
   if (instant) {
     return (
       <div title={title} className={`${shape} bg-[#232b3f]/60 text-steel`}>
@@ -1160,7 +1448,11 @@ function PowerCard({
     )
   }
   return (
-    <button onClick={onClick} disabled={disabled} className={`btn-3d btn-sm ${shape} ${className} ${disabled ? 'opacity-50' : ''}`}>
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={`btn-3d btn-sm ${shape} ${className} ${disabled ? 'opacity-50' : ''}`}
+    >
       {content}
     </button>
   )

@@ -240,9 +240,7 @@ def test_level_change_gets_a_short_presentation():
 
 
 def test_final_question_starts_with_an_intro_without_the_question():
-    final = Question(
-        id="f", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f"
-    )
+    final = Question(id="f", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f")
     game = Game(questions=[question("q1"), final], answer_seconds=10)
     game.round = 0  # pula a contagem de abertura
     game.start_round(now=0)
@@ -457,9 +455,12 @@ def test_fifty_fifty_is_used_during_the_question_and_only_for_who_used_it():
     with pytest.raises(GameError, match="não tem"):
         game.use_now("ana", "fifty_fifty")
 
+
 def test_no_powerups_before_the_bet_or_the_final():
     qs = [question("h0", "hard"), question("h1", "hard")]
-    qs.append(Question(id="x", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f"))
+    qs.append(
+        Question(id="x", theme="T", difficulty="impossible", text="?", options=list("abcdef"), answer=0, fact="f")
+    )
     game = Game(powers=True, questions=qs, answer_seconds=10)
     ana = P("ana", 100)
     game.powerups = {"ana": ["shield"]}
@@ -537,8 +538,13 @@ def test_gains_can_be_legendary_attacks_more_often_for_the_far_behind_last():
 
     # Lanterna: Ressurreição até 6%, X1 até 14%, lendária até 34%. Os outros: X1 até 2%, lendária até 8%.
     for roll, behind, kind in (
-        (0.01, False, "duel"), (0.04, False, "legendary"), (0.1, False, None),
-        (0.03, True, "resurrection"), (0.1, True, "duel"), (0.2, True, "legendary"), (0.4, True, None),
+        (0.01, False, "duel"),
+        (0.04, False, "legendary"),
+        (0.1, False, None),
+        (0.03, True, "resurrection"),
+        (0.1, True, "duel"),
+        (0.2, True, "legendary"),
+        (0.4, True, None),
     ):
         game = Game(powers=True, questions=[question(f"e{i}") for i in range(4)], answer_seconds=10, rng=Roll(roll))
         ana, bia = P("ana", 0 if behind else 100), P("bia", 100 if behind else 0)
@@ -620,7 +626,13 @@ def test_classic_mode_has_no_powerups():
 
 
 def test_the_host_can_change_how_many_powerups_fit():
-    game = Game(powers=True, powerup_max=3, questions=[question(f"e{i}") for i in range(9)], answer_seconds=10, rng=random.Random(1))
+    game = Game(
+        powers=True,
+        powerup_max=3,
+        questions=[question(f"e{i}") for i in range(9)],
+        answer_seconds=10,
+        rng=random.Random(1),
+    )
     ana = P("ana")
     game.powerups = {"ana": []}
     for _ in range(9):
@@ -701,6 +713,7 @@ def test_peek_shows_what_the_others_picked():
         game.powerups["ana"].append("fifty_fifty")
         game.use_now("ana", "fifty_fifty")
 
+
 def test_extra_time_gives_more_time_and_full_iq_for_three_common_questions():
     game, ana, bia = armed_game(6)
     arm(game, "ana", "extra_time")
@@ -753,7 +766,13 @@ def test_silence_lasts_two_questions_and_hides_the_reveal():
     arm(game, "ana", "silence", "bia")
     reveal(game, [ana, bia], {"ana": 0, "bia": 1})
     seen = game.view(now=20, viewer="bia")
-    assert (seen.silenced_rounds, seen.results, seen.correct_option, seen.fact, seen.can_arm) == (2, [], None, None, False)
+    assert (seen.silenced_rounds, seen.results, seen.correct_option, seen.fact, seen.can_arm) == (
+        2,
+        [],
+        None,
+        None,
+        False,
+    )
     assert game.view(now=20, viewer="ana").results != []
     with pytest.raises(GameError, match="Silenciado"):
         arm(game, "bia", "double")
@@ -1006,7 +1025,12 @@ def test_decoys_are_nearby_numbers_or_options_from_similar_questions():
     rng = random.Random(1)
     years = powerups.decoys("1878", ["1878", "1888", "1868", "1898"], [], rng)
     assert len(years) == 2 and all(1858 <= int(y) <= 1898 and y not in ("1878", "1888", "1868", "1898") for y in years)
-    names = powerups.decoys("Aconcágua", ["Aconcágua", "Huascarán", "Chimborazo", "Pico da Neblina"], ["Ojos del Salado", "Everest", "Huascarán"], rng)
+    names = powerups.decoys(
+        "Aconcágua",
+        ["Aconcágua", "Huascarán", "Chimborazo", "Pico da Neblina"],
+        ["Ojos del Salado", "Everest", "Huascarán"],
+        rng,
+    )
     assert sorted(names) == ["Everest", "Ojos del Salado"]
 
 
@@ -1084,17 +1108,34 @@ def test_resurrection_breaks_when_the_player_leaves_last_place():
 def duel_game() -> tuple[Game, dict[str, P]]:
     """Partida com banco para o X1 (difíceis, impossíveis e frases), e a 1ª pergunta revelada."""
     bank = [question(f"h{i}", "hard") for i in range(8)] + [
-        Question(id=f"i{i}", theme="Teste", difficulty="impossible", text="?", options=list("ABCDEF"), answer=0, fact="!")
+        Question(
+            id=f"i{i}", theme="Teste", difficulty="impossible", text="?", options=list("ABCDEF"), answer=0, fact="!"
+        )
         for i in range(2)
     ]
     statements = [
-        x1.DuelQuestion(id=f"vf{i}", theme="Teste", kind="true_false", text="Frase", options=["Verdadeiro", "Falso"], answer=0, fact="!")
+        x1.DuelQuestion(
+            id=f"vf{i}",
+            theme="Teste",
+            kind="true_false",
+            text="Frase",
+            options=["Verdadeiro", "Falso"],
+            answer=0,
+            fact="!",
+        )
         for i in range(6)
     ]
     game = Game(
-        powers=True, questions=[question(f"m{i}", "medium") for i in range(3)], answer_seconds=10, bank=bank, statements=statements
+        powers=True,
+        questions=[question(f"m{i}", "medium") for i in range(3)],
+        answer_seconds=10,
+        bank=bank,
+        statements=statements,
     )
-    players = {pid: P(pid, score) for pid, score in (("ana", 50), ("bia", 80), ("caio", 50), ("davi", 50), ("edu", 50), ("fabi", 3))}
+    players = {
+        pid: P(pid, score)
+        for pid, score in (("ana", 50), ("bia", 80), ("caio", 50), ("davi", 50), ("edu", 50), ("fabi", 3))
+    }
     game.powerups = {pid: [] for pid in players}
     reveal(game, list(players.values()), {pid: 0 for pid in players})
     for p in players.values():
@@ -1152,7 +1193,6 @@ def test_duel_goes_on_when_both_miss_and_the_clock_breaks_a_tie_at_the_end():
     assert set(game.duel.bets) == {"caio", "davi", "edu"}  # quem não apostou teve a aposta sorteada
 
 
-
 def test_a_right_bet_of_a_quarter_of_the_iq_earns_a_power():
     game = Game(powers=True, questions=[question("h", "hard", answer=0)], answer_seconds=10, rng=random.Random(3))
     ana, bia, caio = P("ana", 100), P("bia", 100), P("caio", 100)
@@ -1181,7 +1221,10 @@ def specialist_game(rounds: int = 10) -> Game:
     bank = [themed(f"{t}-{i}", t) for t in themes for i in range(rounds)]
     return Game(
         questions=[themed(f"mix-{i}", themes[i % 5]) for i in range(rounds)],
-        answer_seconds=10, bank=bank, specialist=True, rng=random.Random(1),
+        answer_seconds=10,
+        bank=bank,
+        specialist=True,
+        rng=random.Random(1),
     )
 
 

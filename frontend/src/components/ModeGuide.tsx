@@ -65,9 +65,31 @@ const CLASSIC_EXTRAS: Section[] = [
   },
 ]
 
-const CLASSIC_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'reverse', 'backpack', 'theme', 'investment']
+const CLASSIC_HELPS: Kind[] = [
+  'fifty_fifty',
+  'peek',
+  'shield',
+  'double',
+  'extra_time',
+  'second_chance',
+  'reverse',
+  'backpack',
+  'theme',
+  'investment',
+]
 const SPECIALIST_HELPS = CLASSIC_HELPS.map((kind) => (kind === 'theme' ? 'coup' : kind))
-const CLASSIC_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'toll', 'decoy', 'flashbang']
+const CLASSIC_ATTACKS: Kind[] = [
+  'scratch',
+  'steal',
+  'scramble',
+  'accelerator',
+  'mirror',
+  'magnifier',
+  'silence',
+  'toll',
+  'decoy',
+  'flashbang',
+]
 // As versões lendárias das sabotagens: valem em todos os outros de uma vez.
 const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
   scratch: 'A próxima pergunta de todos os outros vem coberta: todo mundo tem que raspar.',
@@ -82,10 +104,48 @@ const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
   flashbang: '4 segundos depois de liberar as respostas, todos os outros só veem as letras.',
 }
 const SURVIVAL_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'reverse', 'theme', 'backpack', 'medkit', 'hide']
-const SURVIVAL_ATTACKS: Kind[] = ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'magnifier', 'silence', 'flashbang', 'curse', 'blood_pact']
-const POTATO_HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass', 'thermometer']
-const POTATO_SABOTAGES: Kind[] = ['accelerator', 'scramble', 'mirror', 'magnifier', 'flashbang', 'scratch', 'short_fuse', 'double_bomb']
-const TEAM_HELPS: Kind[] = ['fifty_fifty', 'peek', 'shield', 'double', 'extra_time', 'second_chance', 'theme', 'backpack', 'iron_captain']
+const SURVIVAL_ATTACKS: Kind[] = [
+  'scratch',
+  'steal',
+  'scramble',
+  'accelerator',
+  'mirror',
+  'magnifier',
+  'silence',
+  'flashbang',
+  'curse',
+  'blood_pact',
+]
+const POTATO_HELPS: Kind[] = [
+  'fifty_fifty',
+  'shield',
+  'second_chance',
+  'cold_water',
+  'reverse',
+  'free_pass',
+  'thermometer',
+]
+const POTATO_SABOTAGES: Kind[] = [
+  'accelerator',
+  'scramble',
+  'mirror',
+  'magnifier',
+  'flashbang',
+  'scratch',
+  'short_fuse',
+  'double_bomb',
+]
+const TEAM_HELPS: Kind[] = [
+  'fifty_fifty',
+  'peek',
+  'shield',
+  'double',
+  'extra_time',
+  'second_chance',
+  'theme',
+  'backpack',
+  'iron_captain',
+]
 const TEAM_ATTACKS: Kind[] = [
   'scratch',
   'steal',
@@ -119,7 +179,12 @@ const GUIDES: Record<Mode, Guide> = {
     powers: [
       { title: 'Ajudas (para você)', kinds: CLASSIC_HELPS },
       { title: 'Sabotagens (em quem você escolher)', kinds: CLASSIC_ATTACKS },
-      { title: 'Sabotagens lendárias (em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
+      {
+        title: 'Sabotagens lendárias (em todo mundo)',
+        kinds: CLASSIC_ATTACKS,
+        hints: LEGENDARY_HINTS,
+        legendary: true,
+      },
       {
         title: 'Míticos',
         kinds: ['resurrection', 'duel'],
@@ -129,7 +194,8 @@ const GUIDES: Record<Mode, Guide> = {
   },
   specialist: {
     name: 'Especialista',
-    summary: 'Igual ao Clássico, mas as perguntas vêm em blocos de 5 com um tema só, e alguém escolhe o tema de cada bloco.',
+    summary:
+      'Igual ao Clássico, mas as perguntas vêm em blocos de 5 com um tema só, e alguém escolhe o tema de cada bloco.',
     sections: [
       {
         title: 'Escolha do tema',
@@ -153,7 +219,12 @@ const GUIDES: Record<Mode, Guide> = {
     powers: [
       { title: 'Ajudas (para você)', kinds: SPECIALIST_HELPS },
       { title: 'Sabotagens (em quem você escolher)', kinds: CLASSIC_ATTACKS },
-      { title: 'Sabotagens lendárias (em todo mundo)', kinds: CLASSIC_ATTACKS, hints: LEGENDARY_HINTS, legendary: true },
+      {
+        title: 'Sabotagens lendárias (em todo mundo)',
+        kinds: CLASSIC_ATTACKS,
+        hints: LEGENDARY_HINTS,
+        legendary: true,
+      },
       {
         title: 'Míticos',
         kinds: ['resurrection', 'duel'],
@@ -179,7 +250,9 @@ const GUIDES: Record<Mode, Guide> = {
       },
       {
         title: 'Alternativas',
-        items: ['3 vidas. 5 fáceis, 10 médias e depois só difíceis, com 4 alternativas. 15 segundos, depois de ler a pergunta.'],
+        items: [
+          '3 vidas. 5 fáceis, 10 médias e depois só difíceis, com 4 alternativas. 15 segundos, depois de ler a pergunta.',
+        ],
       },
       {
         title: 'X1 final',
@@ -418,17 +491,32 @@ export function ModeGuide({ mode, onClose }: { mode: Mode; onClose: () => void }
 
         {guide.powers?.map((group) => (
           <section key={group.title} className="flex flex-col gap-2">
-            <h4 className={group.mythic ? 'mythic-title font-display text-lg tracking-wide' : 'font-semibold text-brand'}>{group.title}</h4>
+            <h4
+              className={group.mythic ? 'mythic-title font-display text-lg tracking-wide' : 'font-semibold text-brand'}
+            >
+              {group.title}
+            </h4>
             <ul className="flex flex-col gap-2">
               {group.kinds.map((kind) => (
-                <li key={kind} className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : group.mythic ? 'mythic items-center py-2.5' : POWERUP_INFO[kind].tone}`}>
-                  <PowerUpIcon kind={kind} className={group.mythic ? 'size-10 shrink-0 drop-shadow-[0_0_6px_rgba(255,213,79,0.7)]' : 'mt-0.5 size-6 shrink-0'} />
+                <li
+                  key={kind}
+                  className={`flex items-start gap-2.5 rounded-xl px-3 py-2 ${group.legendary ? 'legendary' : group.mythic ? 'mythic items-center py-2.5' : POWERUP_INFO[kind].tone}`}
+                >
+                  <PowerUpIcon
+                    kind={kind}
+                    className={
+                      group.mythic
+                        ? 'size-10 shrink-0 drop-shadow-[0_0_6px_rgba(255,213,79,0.7)]'
+                        : 'mt-0.5 size-6 shrink-0'
+                    }
+                  />
                   <span className="text-sm leading-snug">
                     <span className="font-bold">
                       {POWERUP_INFO[kind].name}
                       {group.legendary && ' LENDÁRIO'}
                       {group.mythic && ' MÍTICO'}:
-                    </span> {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
+                    </span>{' '}
+                    {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
                   </span>
                 </li>
               ))}
@@ -436,7 +524,10 @@ export function ModeGuide({ mode, onClose }: { mode: Mode; onClose: () => void }
           </section>
         ))}
 
-        <button onClick={onClose} className="btn-3d btn-brand rounded-xl py-3 font-display text-xl tracking-wide text-ink">
+        <button
+          onClick={onClose}
+          className="btn-3d btn-brand rounded-xl py-3 font-display text-xl tracking-wide text-ink"
+        >
           Entendi
         </button>
       </div>

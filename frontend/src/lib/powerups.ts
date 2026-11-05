@@ -5,53 +5,272 @@ export type Kind = PowerUpUse['kind']
 /** O que os componentes de poder leem da partida: o GameView e o SurvivalView têm esses campos. */
 export type PowerView = Pick<
   GameView,
-  'powerups' | 'legendary_powerups' | 'mythic_powerups' | 'armed' | 'active' | 'lasting' | 'can_arm' | 'theme_choices' | 'ready' | 'powers_round' | 'phase_ends_in_ms' | 'phase_duration_ms' | 'powerup_max' | 'power_run' | 'power_run_goal'
+  | 'powerups'
+  | 'legendary_powerups'
+  | 'mythic_powerups'
+  | 'armed'
+  | 'active'
+  | 'lasting'
+  | 'can_arm'
+  | 'theme_choices'
+  | 'ready'
+  | 'powers_round'
+  | 'phase_ends_in_ms'
+  | 'phase_duration_ms'
+  | 'powerup_max'
+  | 'power_run'
+  | 'power_run_goal'
 >
 
 export const INSTANT: Kind[] = ['fifty_fifty', 'peek']
 
 export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: boolean; tone: string }> = {
-  fifty_fifty: { name: '50/50', hint: 'Use na hora da pergunta, pelo ícone: tira duas erradas.', targeted: false, tone: 'bg-violet-500/15 text-violet-200' },
-  shield: { name: 'Escudo', hint: 'Vale por até 2 perguntas: no primeiro erro, não perde QI. Se não errar, quebra.', targeted: false, tone: 'bg-sky-400/15 text-sky-200' },
-  double: { name: 'Dobro', hint: 'A próxima resposta vale o dobro: o acerto e o erro. Na difícil, o erro tira o triplo.', targeted: false, tone: 'bg-amber-400/15 text-amber-200' },
-  peek: { name: 'Espiar', hint: 'Use na hora da pergunta, pelo ícone: mostra quantos escolheram cada alternativa.', targeted: false, tone: 'bg-teal-400/15 text-teal-200' },
-  extra_time: { name: 'Tempo extra', hint: '+5s para responder e QI cheio o tempo todo nas próximas 3 perguntas.', targeted: false, tone: 'bg-lime-400/15 text-lime-200' },
-  second_chance: { name: 'Segunda chance', hint: 'Vale nas próximas 2 perguntas: errou, tenta de novo valendo metade.', targeted: false, tone: 'bg-pink-400/15 text-pink-200' },
-  reverse: { name: 'Reverso', hint: 'Secreto, vale por até 3 perguntas (2 se você estiver em 1º): o primeiro poder jogado em você volta para quem jogou.', targeted: false, tone: 'bg-red-500/15 text-red-200' },
-  backpack: { name: 'Mochila', hint: 'Vale na hora: +1 vaga de poder e +1 poder sorteado (até +2 vagas na partida).', targeted: false, tone: 'bg-amber-700/25 text-amber-200' },
-  coup: { name: 'Golpe', hint: 'Só no Especialista: você toma o tema de quem escolheu. Do resto do bloco em diante, os +25% nos acertos são seus, e ele perde o bônus. Um Golpe por bloco.', targeted: false, tone: 'bg-orange-400/15 text-orange-200' },
-  theme: { name: 'Tema', hint: 'Você escolhe o tema da próxima pergunta, entre 4 sorteados. Vale para todo mundo.', targeted: false, tone: 'bg-indigo-400/15 text-indigo-200' },
-  investment: { name: 'Investimento', hint: 'Cada acerto seguido rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro erro. Só a partir das médias.', targeted: false, tone: 'bg-green-500/15 text-green-200' },
-  scratch: { name: 'Raspadinha', hint: 'A próxima pergunta do alvo vem coberta: tem que raspar para ver.', targeted: true, tone: 'bg-zinc-300/15 text-zinc-200' },
-  steal: { name: 'Roubo', hint: 'Na próxima, você tira 10 de QI do alvo e, se ele acertar, mais metade do que ganhar.', targeted: true, tone: 'bg-emerald-500/15 text-emerald-200' },
-  scramble: { name: 'Embaralhar', hint: 'A pergunta e as alternativas do alvo vêm com as letras embaralhadas dentro das palavras.', targeted: true, tone: 'bg-fuchsia-400/15 text-fuchsia-200' },
-  accelerator: { name: 'Acelerador', hint: 'O alvo tem um terço do tempo para responder e fica sem QI cheio.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
-  mirror: { name: 'Espelho', hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.', targeted: true, tone: 'bg-cyan-400/15 text-cyan-200' },
-  magnifier: { name: 'Lupa', hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.', targeted: true, tone: 'bg-yellow-200/15 text-yellow-100' },
-  toll: { name: 'Pedágio', hint: 'Cada alternativa do alvo ganha um preço de 3 a 8 de QI, e responder paga para você. Sem responder, paga o menor.', targeted: true, tone: 'bg-rose-400/15 text-rose-200' },
-  resurrection: { name: 'Ressurreição', hint: 'Mítico, só para o lanterna. Na revelação, você pula para 1 de QI atrás de quem está na sua frente (10 atrás do 1º, com 2 jogadores). Se sair do último antes de usar, quebra.', targeted: false, tone: 'bg-amber-300/15 text-amber-100' },
-  duel: { name: 'X1', hint: 'Mítico: você chama alguém para um duelo quando a revelação acabar. Até 10 perguntas, cada vez mais rápidas; errou sozinho, perdeu. Quem perde paga 40% do QI a quem ganha, e a plateia aposta.', targeted: true, tone: 'bg-amber-300/15 text-amber-100' },
-  decoy: { name: 'Alternativa falsa', hint: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha 10 de QI.', targeted: true, tone: 'bg-purple-400/15 text-purple-200' },
-  flashbang: { name: 'Flashbang', hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.', targeted: true, tone: 'bg-yellow-100/15 text-yellow-50' },
-  cold_water: { name: 'Água fria', hint: 'Só na Batata quente: o pavio ganha +10s.', targeted: false, tone: 'bg-sky-300/15 text-sky-100' },
-  short_fuse: { name: 'Pavio curto', hint: 'Só na Batata quente: queima 10s do pavio de quem está com a batata, na hora.', targeted: true, tone: 'bg-orange-500/15 text-orange-200' },
-  double_bomb: { name: 'Bomba dupla', hint: 'Só na Batata quente: quem está com a batata precisa acertar 2 seguidas para passar.', targeted: true, tone: 'bg-orange-700/25 text-orange-200' },
-  ghost_hint: { name: 'Palpite do além', hint: 'Só para fantasma, na Batata quente: você marca uma alternativa e todo mundo vê "o fantasma acha que é esta". Pode ser verdade… ou não.', targeted: true, tone: 'bg-indigo-400/15 text-indigo-100' },
-  thermometer: { name: 'Termômetro', hint: 'Só na Batata quente: você vê quanto falta do pavio enquanto a batata estiver com você.', targeted: false, tone: 'bg-sky-400/15 text-sky-100' },
-  double_potato: { name: 'Batata dupla', hint: 'Mítico, só na Batata quente: entra uma batata dourada na roda, com pavio próprio. Ela nunca vai para você.', targeted: false, tone: 'bg-yellow-300/15 text-yellow-100' },
-  free_pass: { name: 'Passe livre', hint: 'Só na Batata quente: passa a batata sem responder.', targeted: false, tone: 'bg-emerald-400/15 text-emerald-200' },
-  mutiny: { name: 'Motim', hint: 'Só nos Times: o time alvo fica sem capitão por 3 perguntas.', targeted: true, tone: 'bg-rose-500/15 text-rose-200' },
-  infiltrator: { name: 'Infiltrado', hint: 'Só nos Times: alguém do seu time vota também no time alvo, valendo 2 votos.', targeted: true, tone: 'bg-slate-300/15 text-slate-100' },
-  gag: { name: 'Mordaça', hint: 'Só nos Times: um jogador do time alvo não vota na próxima.', targeted: true, tone: 'bg-stone-400/15 text-stone-200' },
-  iron_captain: { name: 'Capitão de ferro', hint: 'Só nos Times: só o capitão vota. Acertou, +8; errou, −10.', targeted: false, tone: 'bg-zinc-400/15 text-zinc-100' },
-  tax: { name: 'Imposto', hint: 'Mítico, só para o time em último: o 1º paga 25% do QI dele para o seu time.', targeted: false, tone: 'bg-amber-300/15 text-amber-100' },
-  medkit: { name: 'Kit médico', hint: 'Só no Último de pé: recupera 1 vida na hora, sem passar do máximo.', targeted: false, tone: 'bg-red-400/15 text-red-100' },
-  hide: { name: 'Esconderijo', hint: 'Só no Último de pé: você pula a próxima pergunta. Não responde e não perde vida.', targeted: false, tone: 'bg-emerald-700/25 text-emerald-200' },
-  curse: { name: 'Maldição', hint: 'Só no Último de pé: se o alvo errar a próxima, perde 2 vidas.', targeted: true, tone: 'bg-violet-700/25 text-violet-200' },
-  blood_pact: { name: 'Pacto de sangue', hint: 'Só no Último de pé: se você perder vida na próxima, o alvo perde uma também.', targeted: true, tone: 'bg-red-700/25 text-red-200' },
-  dagger: { name: 'Adaga', hint: 'Mítico, só no Último de pé: tira 1 vida do alvo na hora (com 1 vida, ele cai). Se eliminar, você ganha a Bênção.', targeted: true, tone: 'bg-amber-300/15 text-amber-100' },
-  blessing: { name: 'Bênção', hint: 'Prêmio da Adaga: na próxima pergunta, você vê qual é a certa.', targeted: false, tone: 'bg-yellow-300/15 text-yellow-100' },
-  silence: { name: 'Silêncio', hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa poderes.', targeted: true, tone: 'bg-slate-400/15 text-slate-200' },
+  fifty_fifty: {
+    name: '50/50',
+    hint: 'Use na hora da pergunta, pelo ícone: tira duas erradas.',
+    targeted: false,
+    tone: 'bg-violet-500/15 text-violet-200',
+  },
+  shield: {
+    name: 'Escudo',
+    hint: 'Vale por até 2 perguntas: no primeiro erro, não perde QI. Se não errar, quebra.',
+    targeted: false,
+    tone: 'bg-sky-400/15 text-sky-200',
+  },
+  double: {
+    name: 'Dobro',
+    hint: 'A próxima resposta vale o dobro: o acerto e o erro. Na difícil, o erro tira o triplo.',
+    targeted: false,
+    tone: 'bg-amber-400/15 text-amber-200',
+  },
+  peek: {
+    name: 'Espiar',
+    hint: 'Use na hora da pergunta, pelo ícone: mostra quantos escolheram cada alternativa.',
+    targeted: false,
+    tone: 'bg-teal-400/15 text-teal-200',
+  },
+  extra_time: {
+    name: 'Tempo extra',
+    hint: '+5s para responder e QI cheio o tempo todo nas próximas 3 perguntas.',
+    targeted: false,
+    tone: 'bg-lime-400/15 text-lime-200',
+  },
+  second_chance: {
+    name: 'Segunda chance',
+    hint: 'Vale nas próximas 2 perguntas: errou, tenta de novo valendo metade.',
+    targeted: false,
+    tone: 'bg-pink-400/15 text-pink-200',
+  },
+  reverse: {
+    name: 'Reverso',
+    hint: 'Secreto, vale por até 3 perguntas (2 se você estiver em 1º): o primeiro poder jogado em você volta para quem jogou.',
+    targeted: false,
+    tone: 'bg-red-500/15 text-red-200',
+  },
+  backpack: {
+    name: 'Mochila',
+    hint: 'Vale na hora: +1 vaga de poder e +1 poder sorteado (até +2 vagas na partida).',
+    targeted: false,
+    tone: 'bg-amber-700/25 text-amber-200',
+  },
+  coup: {
+    name: 'Golpe',
+    hint: 'Só no Especialista: você toma o tema de quem escolheu. Do resto do bloco em diante, os +25% nos acertos são seus, e ele perde o bônus. Um Golpe por bloco.',
+    targeted: false,
+    tone: 'bg-orange-400/15 text-orange-200',
+  },
+  theme: {
+    name: 'Tema',
+    hint: 'Você escolhe o tema da próxima pergunta, entre 4 sorteados. Vale para todo mundo.',
+    targeted: false,
+    tone: 'bg-indigo-400/15 text-indigo-200',
+  },
+  investment: {
+    name: 'Investimento',
+    hint: 'Cada acerto seguido rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro erro. Só a partir das médias.',
+    targeted: false,
+    tone: 'bg-green-500/15 text-green-200',
+  },
+  scratch: {
+    name: 'Raspadinha',
+    hint: 'A próxima pergunta do alvo vem coberta: tem que raspar para ver.',
+    targeted: true,
+    tone: 'bg-zinc-300/15 text-zinc-200',
+  },
+  steal: {
+    name: 'Roubo',
+    hint: 'Na próxima, você tira 10 de QI do alvo e, se ele acertar, mais metade do que ganhar.',
+    targeted: true,
+    tone: 'bg-emerald-500/15 text-emerald-200',
+  },
+  scramble: {
+    name: 'Embaralhar',
+    hint: 'A pergunta e as alternativas do alvo vêm com as letras embaralhadas dentro das palavras.',
+    targeted: true,
+    tone: 'bg-fuchsia-400/15 text-fuchsia-200',
+  },
+  accelerator: {
+    name: 'Acelerador',
+    hint: 'O alvo tem um terço do tempo para responder e fica sem QI cheio.',
+    targeted: true,
+    tone: 'bg-orange-500/15 text-orange-200',
+  },
+  mirror: {
+    name: 'Espelho',
+    hint: 'A pergunta e as alternativas do alvo aparecem espelhadas.',
+    targeted: true,
+    tone: 'bg-cyan-400/15 text-cyan-200',
+  },
+  magnifier: {
+    name: 'Lupa',
+    hint: 'A pergunta e as alternativas do alvo ficam borradas: só dá para ler com uma lupa.',
+    targeted: true,
+    tone: 'bg-yellow-200/15 text-yellow-100',
+  },
+  toll: {
+    name: 'Pedágio',
+    hint: 'Cada alternativa do alvo ganha um preço de 3 a 8 de QI, e responder paga para você. Sem responder, paga o menor.',
+    targeted: true,
+    tone: 'bg-rose-400/15 text-rose-200',
+  },
+  resurrection: {
+    name: 'Ressurreição',
+    hint: 'Mítico, só para o lanterna. Na revelação, você pula para 1 de QI atrás de quem está na sua frente (10 atrás do 1º, com 2 jogadores). Se sair do último antes de usar, quebra.',
+    targeted: false,
+    tone: 'bg-amber-300/15 text-amber-100',
+  },
+  duel: {
+    name: 'X1',
+    hint: 'Mítico: você chama alguém para um duelo quando a revelação acabar. Até 10 perguntas, cada vez mais rápidas; errou sozinho, perdeu. Quem perde paga 40% do QI a quem ganha, e a plateia aposta.',
+    targeted: true,
+    tone: 'bg-amber-300/15 text-amber-100',
+  },
+  decoy: {
+    name: 'Alternativa falsa',
+    hint: 'O alvo vê 2 alternativas inventadas a mais. Se cair numa, você ganha 10 de QI.',
+    targeted: true,
+    tone: 'bg-purple-400/15 text-purple-200',
+  },
+  flashbang: {
+    name: 'Flashbang',
+    hint: '4 segundos depois de liberar as respostas, o alvo fica cego: só vê as letras das alternativas até o fim da pergunta.',
+    targeted: true,
+    tone: 'bg-yellow-100/15 text-yellow-50',
+  },
+  cold_water: {
+    name: 'Água fria',
+    hint: 'Só na Batata quente: o pavio ganha +10s.',
+    targeted: false,
+    tone: 'bg-sky-300/15 text-sky-100',
+  },
+  short_fuse: {
+    name: 'Pavio curto',
+    hint: 'Só na Batata quente: queima 10s do pavio de quem está com a batata, na hora.',
+    targeted: true,
+    tone: 'bg-orange-500/15 text-orange-200',
+  },
+  double_bomb: {
+    name: 'Bomba dupla',
+    hint: 'Só na Batata quente: quem está com a batata precisa acertar 2 seguidas para passar.',
+    targeted: true,
+    tone: 'bg-orange-700/25 text-orange-200',
+  },
+  ghost_hint: {
+    name: 'Palpite do além',
+    hint: 'Só para fantasma, na Batata quente: você marca uma alternativa e todo mundo vê "o fantasma acha que é esta". Pode ser verdade… ou não.',
+    targeted: true,
+    tone: 'bg-indigo-400/15 text-indigo-100',
+  },
+  thermometer: {
+    name: 'Termômetro',
+    hint: 'Só na Batata quente: você vê quanto falta do pavio enquanto a batata estiver com você.',
+    targeted: false,
+    tone: 'bg-sky-400/15 text-sky-100',
+  },
+  double_potato: {
+    name: 'Batata dupla',
+    hint: 'Mítico, só na Batata quente: entra uma batata dourada na roda, com pavio próprio. Ela nunca vai para você.',
+    targeted: false,
+    tone: 'bg-yellow-300/15 text-yellow-100',
+  },
+  free_pass: {
+    name: 'Passe livre',
+    hint: 'Só na Batata quente: passa a batata sem responder.',
+    targeted: false,
+    tone: 'bg-emerald-400/15 text-emerald-200',
+  },
+  mutiny: {
+    name: 'Motim',
+    hint: 'Só nos Times: o time alvo fica sem capitão por 3 perguntas.',
+    targeted: true,
+    tone: 'bg-rose-500/15 text-rose-200',
+  },
+  infiltrator: {
+    name: 'Infiltrado',
+    hint: 'Só nos Times: alguém do seu time vota também no time alvo, valendo 2 votos.',
+    targeted: true,
+    tone: 'bg-slate-300/15 text-slate-100',
+  },
+  gag: {
+    name: 'Mordaça',
+    hint: 'Só nos Times: um jogador do time alvo não vota na próxima.',
+    targeted: true,
+    tone: 'bg-stone-400/15 text-stone-200',
+  },
+  iron_captain: {
+    name: 'Capitão de ferro',
+    hint: 'Só nos Times: só o capitão vota. Acertou, +8; errou, −10.',
+    targeted: false,
+    tone: 'bg-zinc-400/15 text-zinc-100',
+  },
+  tax: {
+    name: 'Imposto',
+    hint: 'Mítico, só para o time em último: o 1º paga 25% do QI dele para o seu time.',
+    targeted: false,
+    tone: 'bg-amber-300/15 text-amber-100',
+  },
+  medkit: {
+    name: 'Kit médico',
+    hint: 'Só no Último de pé: recupera 1 vida na hora, sem passar do máximo.',
+    targeted: false,
+    tone: 'bg-red-400/15 text-red-100',
+  },
+  hide: {
+    name: 'Esconderijo',
+    hint: 'Só no Último de pé: você pula a próxima pergunta. Não responde e não perde vida.',
+    targeted: false,
+    tone: 'bg-emerald-700/25 text-emerald-200',
+  },
+  curse: {
+    name: 'Maldição',
+    hint: 'Só no Último de pé: se o alvo errar a próxima, perde 2 vidas.',
+    targeted: true,
+    tone: 'bg-violet-700/25 text-violet-200',
+  },
+  blood_pact: {
+    name: 'Pacto de sangue',
+    hint: 'Só no Último de pé: se você perder vida na próxima, o alvo perde uma também.',
+    targeted: true,
+    tone: 'bg-red-700/25 text-red-200',
+  },
+  dagger: {
+    name: 'Adaga',
+    hint: 'Mítico, só no Último de pé: tira 1 vida do alvo na hora (com 1 vida, ele cai). Se eliminar, você ganha a Bênção.',
+    targeted: true,
+    tone: 'bg-amber-300/15 text-amber-100',
+  },
+  blessing: {
+    name: 'Bênção',
+    hint: 'Prêmio da Adaga: na próxima pergunta, você vê qual é a certa.',
+    targeted: false,
+    tone: 'bg-yellow-300/15 text-yellow-100',
+  },
+  silence: {
+    name: 'Silêncio',
+    hint: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação (nem se acertou), fica sem QI cheio e não usa poderes.',
+    targeted: true,
+    tone: 'bg-slate-400/15 text-slate-200',
+  },
 }
 
 const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
@@ -72,7 +291,6 @@ export const SURVIVAL_HINTS: Partial<Record<Kind, string>> = {
   silence: 'Por 2 perguntas o alvo não vê o tempo, as vidas dos outros nem a revelação, e não usa poderes.',
   resurrection: 'Mítico, só para fantasma. Na revelação, você volta para o jogo com 1 vida.',
 }
-
 
 /** Batata quente: ajudas valem na hora para quem está com a batata; sabotagens, em quem está com ela. */
 export const POTATO_HINTS: Partial<Record<Kind, string>> = {

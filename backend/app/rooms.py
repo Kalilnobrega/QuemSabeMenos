@@ -174,7 +174,6 @@ class Room:
             estimate=self.estimate.view(now, viewer) if self.estimate else None,
         )
 
-
     def _player_view(self, player: Player, viewer: str | None) -> PlayerView:
         """Silenciado não vê o placar, nem o próprio. Bicho repetido ganha uma variante pela ordem de chegada."""
         earlier = self.players[: self.players.index(player)]
@@ -370,7 +369,9 @@ class RoomManager:
     def _deal_teams(self, room: Room) -> dict[str, int]:
         """Os times da partida, cada um com pelo menos 2 jogadores."""
         if len(room.players) < room.team_count * MIN_TEAM_SIZE:
-            raise RoomError(f"{room.team_count} times precisam de pelo menos {room.team_count * MIN_TEAM_SIZE} jogadores.")
+            raise RoomError(
+                f"{room.team_count} times precisam de pelo menos {room.team_count * MIN_TEAM_SIZE} jogadores."
+            )
         if room.team_pick == "host":
             teams = dict(room.lobby_teams())
             if any(list(teams.values()).count(t) < MIN_TEAM_SIZE for t in range(room.team_count)):
@@ -400,9 +401,16 @@ class RoomManager:
             questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
             room.used_questions |= {q.id for q in questions}
             room.team_match = TeamMatch.create(
-                assignment, questions, room.answer_seconds, now, point_scale=point_scale(room.rounds),
-                speed_grace_seconds=room.speed_grace_seconds, rng=self.rng,
-                powers=room.powers, bank=bank, statements=statements,
+                assignment,
+                questions,
+                room.answer_seconds,
+                now,
+                point_scale=point_scale(room.rounds),
+                speed_grace_seconds=room.speed_grace_seconds,
+                rng=self.rng,
+                powers=room.powers,
+                bank=bank,
+                statements=statements,
                 used=room.used_questions,
             )
             return room
@@ -414,15 +422,26 @@ class RoomManager:
             return room
         if room.mode == "hot_potato":
             room.hot_potato = HotPotato.create(
-                [p.id for p in room.players], bank, room.used_questions, self.rng, now,
-                powers=room.powers, powerup_max=room.powerup_max,
+                [p.id for p in room.players],
+                bank,
+                room.used_questions,
+                self.rng,
+                now,
+                powers=room.powers,
+                powerup_max=room.powerup_max,
             )
             return room
         if room.mode == "last_standing":
             pool = statements if room.survival_kind == "true_false" else bank
             room.survival = Survival.create(
-                room.survival_kind, [p.id for p in room.players], pool, room.used_questions, self.rng, now,
-                powers=room.powers, powerup_max=room.powerup_max,
+                room.survival_kind,
+                [p.id for p in room.players],
+                pool,
+                room.used_questions,
+                self.rng,
+                now,
+                powers=room.powers,
+                powerup_max=room.powerup_max,
             )
             return room
         questions = pick_questions(bank, room.rounds, room.used_questions, self.rng)
@@ -626,7 +645,9 @@ class RoomManager:
 
     def _playing(self, sid: str) -> tuple[Room, Player]:
         found = self.session(sid)
-        if not found or not (found[0].game or found[0].survival or found[0].hot_potato or found[0].team_match or found[0].estimate):
+        if not found or not (
+            found[0].game or found[0].survival or found[0].hot_potato or found[0].team_match or found[0].estimate
+        ):
             raise RoomError("Não tem partida rolando.")
         return found
 

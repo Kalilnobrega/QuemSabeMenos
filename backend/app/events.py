@@ -10,20 +10,67 @@ from pydantic import BaseModel, ConfigDict, Field
 
 # Os ids batem com os arquivos em frontend/src/assets/avatars/<id>.svg.
 Avatar = Literal[
-    "burro", "cachorro", "coelho", "coruja", "galinha", "gato", "leao", "macaco",
-    "ovelha", "panda", "pinguim", "porco", "raposa", "sapo", "urso", "vaca",
+    "burro",
+    "cachorro",
+    "coelho",
+    "coruja",
+    "galinha",
+    "gato",
+    "leao",
+    "macaco",
+    "ovelha",
+    "panda",
+    "pinguim",
+    "porco",
+    "raposa",
+    "sapo",
+    "urso",
+    "vaca",
 ]
 
 Difficulty = Literal["easy", "medium", "hard", "impossible"]
 PowerUp = Literal[
-    "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
-    "backpack", "theme", "investment",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
-    "resurrection", "duel",
+    "fifty_fifty",
+    "shield",
+    "double",
+    "peek",
+    "extra_time",
+    "second_chance",
+    "reverse",
+    "backpack",
+    "theme",
+    "investment",
+    "scratch",
+    "steal",
+    "scramble",
+    "accelerator",
+    "mirror",
+    "silence",
+    "magnifier",
+    "toll",
+    "decoy",
+    "flashbang",
+    "resurrection",
+    "duel",
     "coup",  # só no Especialista
-    "cold_water", "free_pass", "short_fuse", "double_bomb", "ghost_hint", "thermometer", "double_potato",  # só na Batata quente
-    "mutiny", "infiltrator", "gag", "iron_captain", "tax",  # só nos Times
-    "medkit", "hide", "curse", "blood_pact", "dagger", "blessing",  # só no Último de pé
+    "cold_water",
+    "free_pass",
+    "short_fuse",
+    "double_bomb",
+    "ghost_hint",
+    "thermometer",
+    "double_potato",  # só na Batata quente
+    "mutiny",
+    "infiltrator",
+    "gag",
+    "iron_captain",
+    "tax",  # só nos Times
+    "medkit",
+    "hide",
+    "curse",
+    "blood_pact",
+    "dagger",
+    "blessing",  # só no Último de pé
 ]
 GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato", "estimate"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato", "estimate")
@@ -45,6 +92,7 @@ class Pong(BaseModel):
 
 
 # --- Cliente → servidor -------------------------------------------------------
+
 
 class Profile(BaseModel):
     nickname: str = Field(min_length=1, max_length=NICKNAME_MAX_LENGTH)
@@ -146,6 +194,7 @@ class UsePowerUpRequest(BaseModel):
 
 
 # --- Servidor → cliente -------------------------------------------------------
+
 
 class PlayerView(BaseModel):
     id: str
@@ -306,8 +355,19 @@ class GameView(BaseModel):
     round: int  # começa em 1
     total_rounds: int
     phase: Literal[
-        "starting", "level", "intro", "betting", "theme_pick", "reading", "answering", "results", "finished",
-        "duel_betting", "duel_answering", "duel_results", "duel_end",
+        "starting",
+        "level",
+        "intro",
+        "betting",
+        "theme_pick",
+        "reading",
+        "answering",
+        "results",
+        "finished",
+        "duel_betting",
+        "duel_answering",
+        "duel_results",
+        "duel_end",
     ]
     phase_duration_ms: int
     phase_ends_in_ms: int  # relativo ao envio, para não depender do relógio do celular
@@ -398,8 +458,16 @@ class SurvivalView(BaseModel):
 
     kind: SurvivalKind
     phase: Literal[
-        "starting", "level", "reading", "answering", "results",
-        "duel_intro", "duel_reading", "duel_answering", "duel_results", "finished",
+        "starting",
+        "level",
+        "reading",
+        "answering",
+        "results",
+        "duel_intro",
+        "duel_reading",
+        "duel_answering",
+        "duel_results",
+        "finished",
     ]
     phase_duration_ms: int
     phase_ends_in_ms: int
@@ -605,8 +673,20 @@ class TeamMatchView(BaseModel):
     escolhe o representante) e, na aposta, betting. Depois da última: finished."""
 
     phase: Literal[
-        "starting", "level", "choosing", "betting", "intro", "reading", "answering", "results", "finished",
-        "duel_choosing", "duel_betting", "duel_answering", "duel_results", "duel_end",
+        "starting",
+        "level",
+        "choosing",
+        "betting",
+        "intro",
+        "reading",
+        "answering",
+        "results",
+        "finished",
+        "duel_choosing",
+        "duel_betting",
+        "duel_answering",
+        "duel_results",
+        "duel_end",
     ]
     phase_duration_ms: int
     phase_ends_in_ms: int

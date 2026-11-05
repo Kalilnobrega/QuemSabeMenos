@@ -35,10 +35,17 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
   return (
     <form onSubmit={submit} className="flex w-full flex-col gap-6">
       <header className="flex items-center gap-3">
-        <button type="button" onClick={onBack} aria-label="Voltar" className="rounded-lg px-2 py-1 text-2xl text-steel hover:text-chalk">
+        <button
+          type="button"
+          onClick={onBack}
+          aria-label="Voltar"
+          className="rounded-lg px-2 py-1 text-2xl text-steel hover:text-chalk"
+        >
           ←
         </button>
-        <h1 className="font-display text-4xl tracking-wide text-brand">{mode === 'create' ? 'Criar sala' : 'Entrar na sala'}</h1>
+        <h1 className="font-display text-4xl tracking-wide text-brand">
+          {mode === 'create' ? 'Criar sala' : 'Entrar na sala'}
+        </h1>
       </header>
 
       {mode === 'join' && (
@@ -46,7 +53,14 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
           <span className="text-sm font-semibold text-steel">Código da sala</span>
           <input
             value={code}
-            onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z]/g, '').slice(0, CODE_LENGTH))}
+            onChange={(e) =>
+              setCode(
+                e.target.value
+                  .toUpperCase()
+                  .replace(/[^A-Z]/g, '')
+                  .slice(0, CODE_LENGTH),
+              )
+            }
             placeholder="ABCDE"
             autoCapitalize="characters"
             autoComplete="off"

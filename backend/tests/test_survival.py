@@ -10,7 +10,11 @@ TF = RULES["true_false"]
 LIVES = TF.lives
 ANSWER_SECONDS = TF.answer_seconds
 MEDIUM_COUNT = dict(TF.levels)["medium"]
-DUEL_FIRST_SECONDS, DUEL_STEP_SECONDS, DUEL_MIN_SECONDS = TF.duel_first_seconds, TF.duel_step_seconds, TF.duel_min_seconds
+DUEL_FIRST_SECONDS, DUEL_STEP_SECONDS, DUEL_MIN_SECONDS = (
+    TF.duel_first_seconds,
+    TF.duel_step_seconds,
+    TF.duel_min_seconds,
+)
 
 
 def statements(count: int = 30) -> list[DuelQuestion]:
@@ -47,7 +51,9 @@ def questions(count: int = 30) -> list[Question]:
 
 
 def new_game(players: int) -> Survival:
-    game = Survival.create("true_false", [f"p{i}" for i in range(players)], statements(), set(), random.Random(1), now=0)
+    game = Survival.create(
+        "true_false", [f"p{i}" for i in range(players)], statements(), set(), random.Random(1), now=0
+    )
     game.advance(now=5)
     return game
 
@@ -220,7 +226,9 @@ def test_choices_duel_turns_impossible_and_speed_decides_it():
 
 def powers_game(players: int = 4, kind: str = "choices") -> Survival:
     pool = questions() if kind == "choices" else statements()
-    game = Survival.create(kind, [f"p{i}" for i in range(players)], pool, set(), random.Random(5), now=0, powers=True, powerup_max=3)
+    game = Survival.create(
+        kind, [f"p{i}" for i in range(players)], pool, set(), random.Random(5), now=0, powers=True, powerup_max=3
+    )
     for pid in game.held:
         game.held[pid] = []
     return game
@@ -233,12 +241,16 @@ def to_results(game: Survival, right: list[str]) -> None:
     while game.phase in ("level", "reading"):
         game.advance(0)
     for pid in game.answering_ids():
-        game.answer(pid, game.question.answer if pid in right else (game.question.answer + 1) % len(game.question.options), 0)
+        game.answer(
+            pid, game.question.answer if pid in right else (game.question.answer + 1) % len(game.question.options), 0
+        )
     game.advance(0)
 
 
 def test_powers_deal_one_power_without_the_true_false_spoilers():
-    game = Survival.create("true_false", [f"p{i}" for i in range(30)], statements(), set(), random.Random(1), 0, powers=True)
+    game = Survival.create(
+        "true_false", [f"p{i}" for i in range(30)], statements(), set(), random.Random(1), 0, powers=True
+    )
     dealt = {kinds[0] for kinds in game.held.values()}
     assert len(game.held["p0"]) == 1
     assert not dealt & {"fifty_fifty", "extra_time", "second_chance", "decoy"}

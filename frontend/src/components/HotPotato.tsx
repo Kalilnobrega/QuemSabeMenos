@@ -26,13 +26,22 @@ interface Props {
 export function HotPotato({ snapshot, playerId, onAnswer, onUse, onPlayAgain, onLeave }: Props) {
   const game = snapshot.room.hot_potato!
   if (game.phase === 'starting') return <PotatoStart snapshot={snapshot} />
-  if (game.phase === 'finished') return <PotatoPodium snapshot={snapshot} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
+  if (game.phase === 'finished')
+    return <PotatoPodium snapshot={snapshot} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
   return <PotatoRound snapshot={snapshot} playerId={playerId} onAnswer={onAnswer} onUse={onUse} />
 }
 
 function PotatoIcon({ heat = 0, golden = false, className }: { heat?: number; golden?: boolean; className?: string }) {
   // Esquenta do marrom (ou do dourado, na Batata dupla) para o vermelho conforme o pavio queima.
-  const body = golden ? (heat > 0.6 ? '#EAB308' : '#FACC15') : heat > 0.75 ? '#B45309' : heat > 0.45 ? '#A16207' : '#A3753B'
+  const body = golden
+    ? heat > 0.6
+      ? '#EAB308'
+      : '#FACC15'
+    : heat > 0.75
+      ? '#B45309'
+      : heat > 0.45
+        ? '#A16207'
+        : '#A3753B'
   const spots = golden ? '#A16207' : '#5B3A16'
   return (
     <svg viewBox="0 0 64 64" className={className} aria-hidden="true">
@@ -42,13 +51,32 @@ function PotatoIcon({ heat = 0, golden = false, className }: { heat?: number; go
         <circle cx="52" cy="8" r="5" fill="#FFC107" />
         <circle cx="52" cy="8" r="2.5" fill="#FFF3C4" />
       </g>
-      <ellipse cx="30" cy="38" rx="22" ry="18" fill={body} stroke="#12141B" strokeWidth="3" transform="rotate(-18 30 38)" />
+      <ellipse
+        cx="30"
+        cy="38"
+        rx="22"
+        ry="18"
+        fill={body}
+        stroke="#12141B"
+        strokeWidth="3"
+        transform="rotate(-18 30 38)"
+      />
       <circle cx="22" cy="34" r="2" fill={spots} />
       <circle cx="35" cy="44" r="2.2" fill={spots} />
       <circle cx="38" cy="31" r="1.6" fill={spots} />
       <circle cx="25" cy="46" r="1.5" fill={spots} />
       {golden && <path d="M17 30c3-4 7-6 11-6" fill="none" stroke="#FEF9C3" strokeWidth="2.5" strokeLinecap="round" />}
-      {heat > 0.6 && <ellipse cx="30" cy="38" rx="22" ry="18" fill="#EF4444" opacity={(heat - 0.6) * 1.2} transform="rotate(-18 30 38)" />}
+      {heat > 0.6 && (
+        <ellipse
+          cx="30"
+          cy="38"
+          rx="22"
+          ry="18"
+          fill="#EF4444"
+          opacity={(heat - 0.6) * 1.2}
+          transform="rotate(-18 30 38)"
+        />
+      )}
     </svg>
   )
 }
@@ -88,10 +116,21 @@ function potatoName(potato: PotatoView) {
   return potato.golden ? 'Batata dourada' : 'Batata'
 }
 
-function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapshot; playerId: string | null; onAnswer: Props['onAnswer']; onUse: Props['onUse'] }) {
+function PotatoRound({
+  snapshot,
+  playerId,
+  onAnswer,
+  onUse,
+}: {
+  snapshot: Snapshot
+  playerId: string | null
+  onAnswer: Props['onAnswer']
+  onUse: Props['onUse']
+}) {
   const { room } = snapshot
   const game = room.hot_potato!
-  const name = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const name = (id: string | null | undefined) =>
+    id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?')
   const exploded = game.phase === 'exploded'
   const mine = game.potatoes.filter((p) => p.holder === playerId)
   // Quem está com batata vê a(s) sua(s) pergunta(s); quem assiste vê a da principal.
@@ -111,7 +150,13 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
   let status
   if (exploded) {
     const what = game.exploded_golden ? 'A Batata dourada explodiu' : 'Explodiu'
-    status = <span className="text-red-300">{game.exploded === playerId ? `${what} na sua mão! Você está fora.` : `${what} na mão de ${name(game.exploded)}!`}</span>
+    status = (
+      <span className="text-red-300">
+        {game.exploded === playerId
+          ? `${what} na sua mão! Você está fora.`
+          : `${what} na mão de ${name(game.exploded)}!`}
+      </span>
+    )
   } else if (!mine.length) {
     status = `Vez de ${name(game.potatoes[0]?.holder)}. Torça ou reze.`
   }
@@ -120,7 +165,11 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
     <section className="flex w-full flex-col gap-4">
       {golden?.state === 'arriving' && <DoublePotatoScene potato={golden} players={room.players} playerId={playerId} />}
       <ResurrectionScene
-        revived={game.revived.map((id) => ({ key: `${game.round}:${id}`, playerId: id, line: (who) => `${who} voltou para a roda!` }))}
+        revived={game.revived.map((id) => ({
+          key: `${game.round}:${id}`,
+          playerId: id,
+          line: (who) => `${who} voltou para a roda!`,
+        }))}
         players={room.players}
         playerId={playerId}
       />
@@ -148,7 +197,17 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
       {status && <p className="min-h-7 text-center font-hand text-xl font-medium">{status}</p>}
 
       {shown.map((potato) => (
-        <QuestionPanel key={potato.id} potato={potato} game={game} receivedAt={snapshot.receivedAt} playerId={playerId} name={name} players={snapshot.room.players} labeled={game.potatoes.length > 1} onAnswer={onAnswer} />
+        <QuestionPanel
+          key={potato.id}
+          potato={potato}
+          game={game}
+          receivedAt={snapshot.receivedAt}
+          playerId={playerId}
+          name={name}
+          players={snapshot.room.players}
+          labeled={game.potatoes.length > 1}
+          onAnswer={onAnswer}
+        />
       ))}
 
       {game.powers && <PotatoPowers game={game} playerId={playerId} onUse={onUse} />}
@@ -158,7 +217,15 @@ function PotatoRound({ snapshot, playerId, onAnswer, onUse }: { snapshot: Snapsh
           Fora:
           {out.map((p) => {
             const player = room.players.find((x) => x.id === p.player_id)
-            return player ? <img key={p.player_id} src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-7 opacity-40 grayscale" /> : null
+            return player ? (
+              <img
+                key={p.player_id}
+                src={avatarUrl(player)}
+                alt={player.nickname}
+                title={player.nickname}
+                className="size-7 opacity-40 grayscale"
+              />
+            ) : null
           })}
         </div>
       )}
@@ -243,30 +310,74 @@ function QuestionPanel({
   }
 
   let status
-  if (potato.state === 'passing' && turn?.free_pass) status = <span className="text-emerald-300">{turn.player_id === playerId ? 'Passe livre! Nem precisou responder.' : `${name(turn.player_id)} usou Passe livre!`}</span>
-  else if (potato.state === 'passing') status = <span className="text-emerald-300">{turn?.player_id === playerId ? 'Acertou! Passou a batata.' : `${name(turn?.player_id)} acertou e passou!`}</span>
-  else if (potato.state === 'again') status = <span className="text-emerald-300">{turn?.player_id === playerId ? 'Acertou! Bomba dupla: mais uma para passar.' : `${name(turn?.player_id)} acertou, mas a Bomba dupla pede mais uma!`}</span>
-  else if (potato.state === 'wrong' && turn?.shielded) status = <span className="text-sky-300">{turn.player_id === playerId ? 'Errou, mas o Escudo segurou!' : `${name(turn.player_id)} errou, mas o Escudo segurou!`}</span>
-  else if (potato.state === 'wrong') status = <span className="text-red-300">{turn?.player_id === playerId ? `Errou! O pavio perdeu ${game.penalty_seconds}s.` : `${name(turn?.player_id)} errou! −${game.penalty_seconds}s de pavio.`}</span>
+  if (potato.state === 'passing' && turn?.free_pass)
+    status = (
+      <span className="text-emerald-300">
+        {turn.player_id === playerId
+          ? 'Passe livre! Nem precisou responder.'
+          : `${name(turn.player_id)} usou Passe livre!`}
+      </span>
+    )
+  else if (potato.state === 'passing')
+    status = (
+      <span className="text-emerald-300">
+        {turn?.player_id === playerId ? 'Acertou! Passou a batata.' : `${name(turn?.player_id)} acertou e passou!`}
+      </span>
+    )
+  else if (potato.state === 'again')
+    status = (
+      <span className="text-emerald-300">
+        {turn?.player_id === playerId
+          ? 'Acertou! Bomba dupla: mais uma para passar.'
+          : `${name(turn?.player_id)} acertou, mas a Bomba dupla pede mais uma!`}
+      </span>
+    )
+  else if (potato.state === 'wrong' && turn?.shielded)
+    status = (
+      <span className="text-sky-300">
+        {turn.player_id === playerId
+          ? 'Errou, mas o Escudo segurou!'
+          : `${name(turn.player_id)} errou, mas o Escudo segurou!`}
+      </span>
+    )
+  else if (potato.state === 'wrong')
+    status = (
+      <span className="text-red-300">
+        {turn?.player_id === playerId
+          ? `Errou! O pavio perdeu ${game.penalty_seconds}s.`
+          : `${name(turn?.player_id)} errou! −${game.penalty_seconds}s de pavio.`}
+      </span>
+    )
   else if (mine && blinded) status = 'Flashbang! Agora é chutar pela letra.'
   else if (mine && retry !== null) status = 'Errou! Segunda chance: tente de novo.'
   else if (mine) status = 'Rápido! Acerta e passa!'
 
-  const fuseLeft = potato.fuse_ms === null ? null : Math.max(0, potato.fuse_ms - (potato.burning ? now - receivedAt : 0))
+  const fuseLeft =
+    potato.fuse_ms === null ? null : Math.max(0, potato.fuse_ms - (potato.burning ? now - receivedAt : 0))
 
   return (
-    <div className={`flex flex-col gap-3 ${labeled ? `rounded-2xl p-3 ${potato.golden ? 'bg-yellow-300/10 ring-1 ring-yellow-300/40' : 'bg-panel/60'}` : ''}`}>
+    <div
+      className={`flex flex-col gap-3 ${labeled ? `rounded-2xl p-3 ${potato.golden ? 'bg-yellow-300/10 ring-1 ring-yellow-300/40' : 'bg-panel/60'}` : ''}`}
+    >
       {labeled && (
-        <p className={`flex items-center gap-2 font-display text-lg ${potato.golden ? 'text-yellow-200' : 'text-brand'}`}>
+        <p
+          className={`flex items-center gap-2 font-display text-lg ${potato.golden ? 'text-yellow-200' : 'text-brand'}`}
+        >
           <PotatoIcon heat={heat} golden={potato.golden} className="size-7" />
           {potatoName(potato)}
           {!mine && <span className="font-sans text-sm text-steel">com {name(potato.holder)}</span>}
         </p>
       )}
       <div className="flex items-center justify-center gap-3">
-        <span className="flex items-center gap-1.5" aria-label={`${potato.wrong_streak} de ${game.max_wrong_streak} erros seguidos`}>
+        <span
+          className="flex items-center gap-1.5"
+          aria-label={`${potato.wrong_streak} de ${game.max_wrong_streak} erros seguidos`}
+        >
           {Array.from({ length: game.max_wrong_streak }, (_, i) => (
-            <span key={i} className={`flex size-6 items-center justify-center rounded-full font-display text-sm ${i < potato.wrong_streak ? 'bg-red-500 text-white' : 'bg-panel text-steel'}`}>
+            <span
+              key={i}
+              className={`flex size-6 items-center justify-center rounded-full font-display text-sm ${i < potato.wrong_streak ? 'bg-red-500 text-white' : 'bg-panel text-steel'}`}
+            >
               ✕
             </span>
           ))}
@@ -278,7 +389,10 @@ function QuestionPanel({
           </span>
         )}
         {fuseLeft !== null && (
-          <span className="flex items-center gap-1 rounded-full bg-sky-400/20 px-2 py-0.5 font-display text-lg text-sky-100" title="Termômetro: o pavio que falta">
+          <span
+            className="flex items-center gap-1 rounded-full bg-sky-400/20 px-2 py-0.5 font-display text-lg text-sky-100"
+            title="Termômetro: o pavio que falta"
+          >
             <PowerUpIcon kind="thermometer" className="size-5" />
             {(fuseLeft / 1000).toFixed(1).replace('.', ',')}s
           </span>
@@ -290,7 +404,9 @@ function QuestionPanel({
       {potato.text && (
         <Magnifier active={hits('magnifier') && !blinded}>
           <ScratchCard key={`${questionKey}-${scratched}`} active={scratched}>
-            <h1 className={`text-[1.3rem] leading-snug font-bold ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(potato.text, game.round) : potato.text}</h1>
+            <h1 className={`text-[1.3rem] leading-snug font-bold ${mirrored}`}>
+              {blinded ? '' : scrambled ? scrambleWords(potato.text, game.round) : potato.text}
+            </h1>
           </ScratchCard>
           {/* key: cada pergunta nova monta os botões do zero, sem herdar a cor da anterior. */}
           <ScratchCard key={`${questionKey}-${scratched}-options`} active={scratched}>
@@ -325,7 +441,9 @@ function QuestionPanel({
                       </span>
                     )}
                     <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
-                    <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
+                    <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>
+                      {blinded ? '' : scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}
+                    </span>
                   </button>
                 )
               })}
@@ -340,7 +458,15 @@ function QuestionPanel({
 
 /** Batata dupla: a dourada cai girando, para num close em câmera lenta e despenca em quem vai
  *  começar com ela. A cena dura o tempo da chegada que o servidor dá (o pavio dela ainda não queima). */
-export function DoublePotatoScene({ potato, players, playerId }: { potato: PotatoView; players: PlayerView[]; playerId: string | null }) {
+export function DoublePotatoScene({
+  potato,
+  players,
+  playerId,
+}: {
+  potato: PotatoView
+  players: PlayerView[]
+  playerId: string | null
+}) {
   const holder = players.find((p) => p.id === potato.holder)
   const thrower = players.find((p) => p.id === potato.excluded)
   const who = (p: PlayerView | undefined) => (p?.id === playerId ? 'você' : (p?.nickname ?? 'alguém'))
@@ -370,7 +496,9 @@ export function DoublePotatoScene({ potato, players, playerId }: { potato: Potat
       <div className="dp-bottom">
         <p className="dp-title font-display text-6xl text-yellow-300 [text-shadow:0_5px_0_#854d0e]">BATATA DUPLA!</p>
         <p className="dp-sub text-center font-semibold text-yellow-100">
-          {thrower?.id === playerId ? 'Você jogou: ela nunca vai para você.' : `${thrower?.nickname ?? 'Alguém'} jogou: ela nunca vai para quem jogou.`}
+          {thrower?.id === playerId
+            ? 'Você jogou: ela nunca vai para você.'
+            : `${thrower?.nickname ?? 'Alguém'} jogou: ela nunca vai para quem jogou.`}
         </p>
       </div>
     </div>
@@ -378,7 +506,17 @@ export function DoublePotatoScene({ potato, players, playerId }: { potato: Potat
 }
 
 /** O que foi usado nesta pergunta: quem jogou o quê em quem. */
-function PotatoUses({ uses, name, playerId, players }: { uses: PowerUpUse[]; name: (id: string | null | undefined) => string; playerId: string | null; players: PlayerView[] }) {
+function PotatoUses({
+  uses,
+  name,
+  playerId,
+  players,
+}: {
+  uses: PowerUpUse[]
+  name: (id: string | null | undefined) => string
+  playerId: string | null
+  players: PlayerView[]
+}) {
   const playerOf = (id: string | null | undefined) => players.find((p) => p.id === id)
   const line = (use: PowerUpUse) => {
     const info = POWERUP_INFO[use.kind]
@@ -414,7 +552,12 @@ function PotatoUses({ uses, name, playerId, players }: { uses: PowerUpUse[]; nam
       key: `${use.by}-${use.kind}`,
       player: use.by === playerId ? undefined : playerOf(use.by),
       icon: <PowerUpIcon kind={use.kind} className="size-full" />,
-      label: use.kind === 'ghost_hint' ? 'Palpite do além' : use.target ? `${POWERUP_INFO[use.kind].name} em ${name(use.target)}` : POWERUP_INFO[use.kind].name,
+      label:
+        use.kind === 'ghost_hint'
+          ? 'Palpite do além'
+          : use.target
+            ? `${POWERUP_INFO[use.kind].name} em ${name(use.target)}`
+            : POWERUP_INFO[use.kind].name,
       tone: POWERUP_INFO[use.kind].tone,
       tip: line(use),
       me: use.by === playerId,
@@ -429,7 +572,15 @@ function PotatoUses({ uses, name, playerId, players }: { uses: PowerUpUse[]; nam
 
 /** Os poderes na mão: ajudas com a batata na mão, sabotagens em quem está com ela; vale na hora.
  *  Com duas batatas na roda, escolhe-se em qual. */
-function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId: string | null; onUse: Props['onUse'] }) {
+function PotatoPowers({
+  game,
+  playerId,
+  onUse,
+}: {
+  game: HotPotatoView
+  playerId: string | null
+  onUse: Props['onUse']
+}) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [gift, setGift] = useState<string | null>(null)
@@ -466,7 +617,9 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
           !(kind === 'thermometer' && p.fuse_ms !== null),
       )
     }
-    return open.filter((p) => p.holder !== playerId && !p.uses.some((u) => u.by === playerId && !HELPS.includes(u.kind)))
+    return open.filter(
+      (p) => p.holder !== playerId && !p.uses.some((u) => u.by === playerId && !HELPS.includes(u.kind)),
+    )
   }
   const fire = async (kind: Kind, potato: number | null = null, option: number | null = null) => {
     playSound(kind === 'resurrection' ? 'resurrection' : 'powerArm')
@@ -477,7 +630,8 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
     setBusy(false)
   }
   // O Palpite do além pede a batata (se tiver duas) e depois a alternativa.
-  const pickPotato = (kind: Kind, potato: PotatoView) => (kind === 'ghost_hint' ? setHinting(potato) : void fire(kind, potato.id))
+  const pickPotato = (kind: Kind, potato: PotatoView) =>
+    kind === 'ghost_hint' ? setHinting(potato) : void fire(kind, potato.id)
   const tap = (kind: Kind) => {
     const options = targets(kind)
     if (options.length > 1) return setChoosing({ kind, potatoes: options })
@@ -508,14 +662,21 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
           <div className="grid grid-cols-2 gap-2">
             {hinting.options.map((option, index) =>
               hinting.hidden_options.includes(index) ? null : (
-                <button key={index} onClick={() => void fire('ghost_hint', hinting.id, index)} className="btn-3d btn-sm btn-dark rounded-xl px-2 py-1.5 text-left text-sm font-semibold">
+                <button
+                  key={index}
+                  onClick={() => void fire('ghost_hint', hinting.id, index)}
+                  className="btn-3d btn-sm btn-dark rounded-xl px-2 py-1.5 text-left text-sm font-semibold"
+                >
                   <span className="mr-1 font-display text-brand">{LETTERS[index]}</span>
                   {option}
                 </button>
               ),
             )}
           </div>
-          <button onClick={() => setHinting(null)} className="btn-3d btn-sm btn-dark self-start rounded-xl px-3 py-1.5 font-semibold text-steel">
+          <button
+            onClick={() => setHinting(null)}
+            className="btn-3d btn-sm btn-dark self-start rounded-xl px-3 py-1.5 font-semibold text-steel"
+          >
             Cancelar
           </button>
         </div>
@@ -539,13 +700,18 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
                 {potatoName(p)}
               </button>
             ))}
-            <button onClick={() => setChoosing(null)} className="btn-3d btn-sm btn-dark rounded-xl px-3 py-1.5 font-semibold text-steel">
+            <button
+              onClick={() => setChoosing(null)}
+              className="btn-3d btn-sm btn-dark rounded-xl px-3 py-1.5 font-semibold text-steel"
+            >
               Cancelar
             </button>
           </div>
         </div>
       ) : hand.length === 0 && game.mythic_powerups.length === 0 ? (
-        <p className="text-sm text-steel">{ghost ? 'Sem sabotagens. Espere a próxima explosão.' : 'Sem poderes. Acerte 3 seguidas para ganhar um.'}</p>
+        <p className="text-sm text-steel">
+          {ghost ? 'Sem sabotagens. Espere a próxima explosão.' : 'Sem poderes. Acerte 3 seguidas para ganhar um.'}
+        </p>
       ) : (
         <div className="flex flex-wrap gap-2">
           {game.mythic_powerups.map((kind, index) => (
@@ -559,7 +725,9 @@ function PotatoPowers({ game, playerId, onUse }: { game: HotPotatoView; playerId
               <PowerUpIcon kind={kind} className="size-6" />
               <span className="flex flex-col text-left leading-tight">
                 {POWERUP_INFO[kind].name}
-                <span className="text-[0.65rem] font-bold tracking-wide uppercase">{kind === 'resurrection' ? 'Voltar para a roda' : 'Colocar na roda'}</span>
+                <span className="text-[0.65rem] font-bold tracking-wide uppercase">
+                  {kind === 'resurrection' ? 'Voltar para a roda' : 'Colocar na roda'}
+                </span>
               </span>
             </button>
           ))}
@@ -609,12 +777,24 @@ function Ring({ snapshot, alive, playerId }: { snapshot: Snapshot; alive: string
         const { left, top } = spot(p.id)
         const holding = holders.includes(p.id)
         return (
-          <div key={p.id} className="absolute flex w-16 -translate-x-1/2 -translate-y-1/2 flex-col items-center" style={{ left: `${left}%`, top: `${top}%` }}>
+          <div
+            key={p.id}
+            className="absolute flex w-16 -translate-x-1/2 -translate-y-1/2 flex-col items-center"
+            style={{ left: `${left}%`, top: `${top}%` }}
+          >
             <span className="relative">
-              <img src={avatarUrl(p)} alt="" className={`size-12 ${holding ? 'drop-shadow-[0_0_10px_rgba(255,120,0,0.9)]' : ''}`} />
-              {game.shielded.includes(p.id) && <PowerUpIcon kind="shield" className="absolute -right-1 -bottom-1 size-5" />}
+              <img
+                src={avatarUrl(p)}
+                alt=""
+                className={`size-12 ${holding ? 'drop-shadow-[0_0_10px_rgba(255,120,0,0.9)]' : ''}`}
+              />
+              {game.shielded.includes(p.id) && (
+                <PowerUpIcon kind="shield" className="absolute -right-1 -bottom-1 size-5" />
+              )}
             </span>
-            <span className={`w-full truncate text-center text-xs font-semibold ${holding ? 'text-brand' : ''}`}>{p.id === playerId ? 'Você' : p.nickname}</span>
+            <span className={`w-full truncate text-center text-xs font-semibold ${holding ? 'text-brand' : ''}`}>
+              {p.id === playerId ? 'Você' : p.nickname}
+            </span>
           </div>
         )
       })}
@@ -627,35 +807,66 @@ function Ring({ snapshot, alive, playerId }: { snapshot: Snapshot; alive: string
         </span>
       )}
       {game.potatoes
-        .filter((p) => !(exploded && p.holder === game.exploded && (p.golden === game.exploded_golden)))
+        .filter((p) => !(exploded && p.holder === game.exploded && p.golden === game.exploded_golden))
         .map((potato) => (
-          <FlyingPotato key={potato.id} potato={potato} receivedAt={receivedAt} spot={spot(potato.holder)} paired={game.potatoes.filter((p) => p.holder === potato.holder).length > 1} />
+          <FlyingPotato
+            key={potato.id}
+            potato={potato}
+            receivedAt={receivedAt}
+            spot={spot(potato.holder)}
+            paired={game.potatoes.filter((p) => p.holder === potato.holder).length > 1}
+          />
         ))}
     </div>
   )
 }
 
-function FlyingPotato({ potato, receivedAt, spot, paired }: { potato: PotatoView; receivedAt: number; spot: { left: number; top: number }; paired: boolean }) {
+function FlyingPotato({
+  potato,
+  receivedAt,
+  spot,
+  paired,
+}: {
+  potato: PotatoView
+  receivedAt: number
+  spot: { left: number; top: number }
+  paired: boolean
+}) {
   const heat = useHeat(potato, receivedAt)
   // Treme de 0,6s por balanço (frio) até 0,07s (quase explodindo).
   const shake = `${Math.max(0.07, 0.6 - heat * 0.55).toFixed(2)}s`
   // Com as duas na mesma mão, a dourada fica um pouco para o lado.
   const shift = paired ? (potato.golden ? 7 : -7) : 0
   return (
-    <div className="potato absolute -translate-x-1/2 -translate-y-full" style={{ left: `${spot.left + shift}%`, top: `${spot.top - 6}%`, ['--shake' as string]: shake }}>
+    <div
+      className="potato absolute -translate-x-1/2 -translate-y-full"
+      style={{ left: `${spot.left + shift}%`, top: `${spot.top - 6}%`, ['--shake' as string]: shake }}
+    >
       <PotatoIcon heat={heat} golden={potato.golden} className="potato-shake size-12" />
     </div>
   )
 }
 
-function PotatoPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: Snapshot; playerId: string | null; onPlayAgain: Props['onPlayAgain']; onLeave: () => void }) {
+function PotatoPodium({
+  snapshot,
+  playerId,
+  onPlayAgain,
+  onLeave,
+}: {
+  snapshot: Snapshot
+  playerId: string | null
+  onPlayAgain: Props['onPlayAgain']
+  onLeave: () => void
+}) {
   const { room } = snapshot
   const game: HotPotatoView = room.hot_potato!
   const ranked = [...game.players].sort((a, b) => (a.place ?? 99) - (b.place ?? 99))
   const playerOf = (id: string) => room.players.find((p) => p.id === id)
   const entries = ranked.flatMap((p) => {
     const player = playerOf(p.player_id)
-    return player ? [{ player, caption: p.player_id === game.winner ? 'Sobreviveu!' : `Queimou na rodada ${p.out_round}` }] : []
+    return player
+      ? [{ player, caption: p.player_id === game.winner ? 'Sobreviveu!' : `Queimou na rodada ${p.out_round}` }]
+      : []
   })
   return (
     <PlayerPodium
@@ -671,14 +882,17 @@ function PotatoPodium({ snapshot, playerId, onPlayAgain, onLeave }: { snapshot: 
             const player = playerOf(p.player_id)
             if (!player) return null
             return (
-              <li key={p.player_id} className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${p.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}>
+              <li
+                key={p.player_id}
+                className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${p.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
+              >
                 <span className="w-5 text-center font-display text-lg text-steel">{p.place}</span>
                 <img src={avatarUrl(player)} alt="" className="size-9" />
                 <span className="flex min-w-0 flex-1 flex-col">
                   <span className="truncate font-semibold">{player.nickname}</span>
                   <span className="text-xs text-steel">
-                    {p.player_id === game.winner ? 'Sobreviveu' : `Queimou na rodada ${p.out_round}`} · {p.correct} {p.correct === 1 ? 'passe' : 'passes'}, {p.wrong}{' '}
-                    {p.wrong === 1 ? 'erro' : 'erros'}
+                    {p.player_id === game.winner ? 'Sobreviveu' : `Queimou na rodada ${p.out_round}`} · {p.correct}{' '}
+                    {p.correct === 1 ? 'passe' : 'passes'}, {p.wrong} {p.wrong === 1 ? 'erro' : 'erros'}
                   </span>
                 </span>
               </li>

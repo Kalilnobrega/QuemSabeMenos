@@ -15,9 +15,26 @@ from typing import Protocol
 from app.events import PowerUp, PowerUpUse
 
 POWERUPS: tuple[PowerUp, ...] = (
-    "fifty_fifty", "shield", "double", "peek", "extra_time", "second_chance", "reverse",
-    "backpack", "theme", "investment",
-    "scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang",
+    "fifty_fifty",
+    "shield",
+    "double",
+    "peek",
+    "extra_time",
+    "second_chance",
+    "reverse",
+    "backpack",
+    "theme",
+    "investment",
+    "scratch",
+    "steal",
+    "scramble",
+    "accelerator",
+    "mirror",
+    "silence",
+    "magnifier",
+    "toll",
+    "decoy",
+    "flashbang",
 )
 TARGETED: frozenset[PowerUp] = frozenset(
     {"scratch", "steal", "scramble", "accelerator", "mirror", "silence", "magnifier", "toll", "decoy", "flashbang"}

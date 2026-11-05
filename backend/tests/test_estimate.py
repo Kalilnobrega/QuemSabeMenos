@@ -115,7 +115,9 @@ def test_match_flow_scores_and_sorts_by_distance():
 
 
 def test_late_guesses_are_rejected():
-    game = Estimate.create([question("q", 10, difficulty="hard")], 1, set(), random.Random(1), now=0)  # 1 pergunta: a difícil
+    game = Estimate.create(
+        [question("q", 10, difficulty="hard")], 1, set(), random.Random(1), now=0
+    )  # 1 pergunta: a difícil
     game.advance(6, [])
     with pytest.raises(EstimateError, match="tempo acabou"):
         game.guess("ana", 10, now=6 + ANSWER_SECONDS + 2)

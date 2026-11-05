@@ -24,7 +24,11 @@ ALL = list(PLAYERS)
 def new_match(questions: list[Question] | None = None) -> TeamMatch:
     questions = questions or [question(f"q{i}") for i in range(6)]
     match = TeamMatch.create(
-        {"a1": 0, "a2": 0, "a3": 0, "b1": 1, "b2": 1}, questions, answer_seconds=10, now=0, rng=random.Random(1),
+        {"a1": 0, "a2": 0, "a3": 0, "b1": 1, "b2": 1},
+        questions,
+        answer_seconds=10,
+        now=0,
+        rng=random.Random(1),
     )
     match.advance(0, ALL)  # starting → reading
     return match
@@ -175,7 +179,15 @@ from app.teams import DECOY_PER_PLAYER, IRON_RIGHT, IRON_WRONG, MUTINY_ROUNDS, T
 
 def bank() -> list[Question]:
     return [
-        Question(id=f"{d}{i}", theme=t, difficulty=d, text=f"{t} {d} {i}?", options=[f"Certa {i}", f"Errada {i}", f"Outra {i}", f"Mais {i}"], answer=0, fact="Fato.")
+        Question(
+            id=f"{d}{i}",
+            theme=t,
+            difficulty=d,
+            text=f"{t} {d} {i}?",
+            options=[f"Certa {i}", f"Errada {i}", f"Outra {i}", f"Mais {i}"],
+            answer=0,
+            fact="Fato.",
+        )
         for t in ("Teste", "Games")
         for d in ("medium", "hard")
         for i in range(20)
@@ -185,9 +197,23 @@ def bank() -> list[Question]:
 def powered(questions: list[Question] | None = None) -> TeamMatch:
     questions = questions or [question(f"q{i}") for i in range(8)]
     match = TeamMatch.create(
-        {"a1": 0, "a2": 0, "a3": 0, "b1": 1, "b2": 1}, questions, answer_seconds=10, now=0, rng=random.Random(2),
-        powers=True, bank=bank(), statements=[
-            x1.DuelQuestion(id=f"vf{i}", theme="Teste", kind="true_false", text="V?", options=["Verdadeiro", "Falso"], answer=0, fact="F.")
+        {"a1": 0, "a2": 0, "a3": 0, "b1": 1, "b2": 1},
+        questions,
+        answer_seconds=10,
+        now=0,
+        rng=random.Random(2),
+        powers=True,
+        bank=bank(),
+        statements=[
+            x1.DuelQuestion(
+                id=f"vf{i}",
+                theme="Teste",
+                kind="true_false",
+                text="V?",
+                options=["Verdadeiro", "Falso"],
+                answer=0,
+                fact="F.",
+            )
             for i in range(6)
         ],
     )
@@ -367,9 +393,19 @@ def test_silence_hides_teammates_votes():
 
 def test_team_x1_with_representatives_and_bets():
     match = TeamMatch.create(
-        {"a1": 0, "a2": 0, "b1": 1, "b2": 1, "c1": 2, "c2": 2}, [question(f"q{i}") for i in range(5)],
-        answer_seconds=10, now=0, rng=random.Random(3), powers=True, bank=bank(),
-        statements=[x1.DuelQuestion(id=f"vf{i}", theme="T", kind="true_false", text="V?", options=["V", "F"], answer=0, fact="F.") for i in range(6)],
+        {"a1": 0, "a2": 0, "b1": 1, "b2": 1, "c1": 2, "c2": 2},
+        [question(f"q{i}") for i in range(5)],
+        answer_seconds=10,
+        now=0,
+        rng=random.Random(3),
+        powers=True,
+        bank=bank(),
+        statements=[
+            x1.DuelQuestion(
+                id=f"vf{i}", theme="T", kind="true_false", text="V?", options=["V", "F"], answer=0, fact="F."
+            )
+            for i in range(6)
+        ],
     )
     everyone = ["a1", "a2", "b1", "b2", "c1", "c2"]
     match.advance(0, everyone)
@@ -393,7 +429,14 @@ def test_team_x1_with_representatives_and_bets():
     while match.phase in ("duel_answering", "duel_results"):
         if match.phase == "duel_answering":
             match.vote("a2", match.duel.question.answer, match.phase_started_at, everyone)
-            match.vote(match.duel.rival, 1 - match.duel.question.answer if len(match.duel.question.options) == 2 else (match.duel.question.answer + 1) % 4, match.phase_started_at, everyone)
+            match.vote(
+                match.duel.rival,
+                1 - match.duel.question.answer
+                if len(match.duel.question.options) == 2
+                else (match.duel.question.answer + 1) % 4,
+                match.phase_started_at,
+                everyone,
+            )
         match.advance(match.phase_ends_at, everyone)
     assert match.phase == "duel_end" and match.duel.winner == "a2"
     assert team(match, 0).duel_delta > 0 and team(match, 1).duel_delta < 0

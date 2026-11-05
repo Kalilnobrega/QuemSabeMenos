@@ -84,7 +84,10 @@ export function FlameIcon({ className }: { className?: string }) {
         strokeWidth="2"
         strokeLinejoin="round"
       />
-      <path d="M12 12.5c2 3 4.4 4.3 4.4 7.3a4.4 4.4 0 0 1-8.8 0c0-1.8 1-2.8 1.6-4 .7 1.4 1.3 1.7 1.7 1.7-.4-1.9 0-3.4 1.1-5Z" fill="#FFC107" />
+      <path
+        d="M12 12.5c2 3 4.4 4.3 4.4 7.3a4.4 4.4 0 0 1-8.8 0c0-1.8 1-2.8 1.6-4 .7 1.4 1.3 1.7 1.7 1.7-.4-1.9 0-3.4 1.1-5Z"
+        fill="#FFC107"
+      />
     </svg>
   )
 }
@@ -110,7 +113,12 @@ interface Props {
   onAnswer: (option: number) => Promise<string | null>
   onBet: (amount: number) => Promise<string | null>
   onDuelBet: (choice: string) => Promise<string | null>
-  onArm: (kind: PowerUpUse['kind'], target: string | null, legendary?: boolean, theme?: string | null) => Promise<string | null>
+  onArm: (
+    kind: PowerUpUse['kind'],
+    target: string | null,
+    legendary?: boolean,
+    theme?: string | null,
+  ) => Promise<string | null>
   onUse: (kind: PowerUpUse['kind']) => Promise<string | null>
   onSkip: () => Promise<string | null>
   onDisarm: () => Promise<string | null>
@@ -119,14 +127,32 @@ interface Props {
   onLeave: () => void
 }
 
-export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, onDisarm, onUse, onSkip, onChooseTheme, onPlayAgain, onLeave }: Props) {
+export function Game({
+  snapshot,
+  playerId,
+  onAnswer,
+  onBet,
+  onDuelBet,
+  onArm,
+  onDisarm,
+  onUse,
+  onSkip,
+  onChooseTheme,
+  onPlayAgain,
+  onLeave,
+}: Props) {
   const game = snapshot.room.game!
   if (game.duel) {
     return (
       <DuelScreen
         key={`${game.duel.challenger}-${game.duel.rival}`}
         snapshot={snapshot}
-        stage={{ duel: game.duel, phase: game.phase, phase_ends_in_ms: game.phase_ends_in_ms, phase_duration_ms: game.phase_duration_ms }}
+        stage={{
+          duel: game.duel,
+          phase: game.phase,
+          phase_ends_in_ms: game.phase_ends_in_ms,
+          phase_duration_ms: game.phase_duration_ms,
+        }}
         playerId={playerId}
         onAnswer={onAnswer}
         onDuelBet={onDuelBet}
@@ -152,11 +178,27 @@ export function Game({ snapshot, playerId, onAnswer, onBet, onDuelBet, onArm, on
     return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
   }
   // key: cada rodada começa com a escolha local zerada.
-  return <Round key={game.round} snapshot={snapshot} game={game} playerId={playerId} onAnswer={onAnswer} onArm={onArm} onDisarm={onDisarm} onUse={onUse} onSkip={onSkip} />
+  return (
+    <Round
+      key={game.round}
+      snapshot={snapshot}
+      game={game}
+      playerId={playerId}
+      onAnswer={onAnswer}
+      onArm={onArm}
+      onDisarm={onDisarm}
+      onUse={onUse}
+      onSkip={onSkip}
+    />
+  )
 }
 
 const DUEL_INTRO_MS = 2800
-const DUEL_KIND: Record<string, string> = { true_false: 'Verdadeiro ou falso', hard: 'Difícil', impossible: 'Impossível' }
+const DUEL_KIND: Record<string, string> = {
+  true_false: 'Verdadeiro ou falso',
+  hard: 'Difícil',
+  impossible: 'Impossível',
+}
 
 /** O X1 em andamento e o relógio da fase: vem do clássico ou dos Times. */
 export interface DuelStage {
@@ -184,11 +226,16 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
   const now = useNow(game.phase !== 'duel_end')
   const remaining = Math.max(0, receivedAt + game.phase_ends_in_ms - now)
   const fighters = [duel.challenger, duel.rival].map((id) => room.players.find((p) => p.id === id))
-  const nick = (id: string | null | undefined) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const nick = (id: string | null | undefined) =>
+    id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?')
   const name = (id: string | null | undefined) => (side && id ? `${nick(id)} (${side(id)})` : nick(id))
   const fighting = playerId === duel.challenger || playerId === duel.rival
   const [intro, setIntro] = useState<'on' | 'leaving' | 'off'>(() => (reducedMotion() ? 'off' : 'on'))
-  useSoundsOnMount([['impossible', 0], ['duelIntro', 850], ['duelFight', 1650]])
+  useSoundsOnMount([
+    ['impossible', 0],
+    ['duelIntro', 850],
+    ['duelFight', 1650],
+  ])
   useEffect(() => {
     if (intro === 'off') return
     vibrate([0, 950, 120])
@@ -204,7 +251,8 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
 
   useEffect(() => {
     if (game.phase === 'duel_answering') playSound(duel.kind === 'impossible' ? 'duelLastQuestion' : 'answersOpen')
-    if (game.phase === 'duel_end') playSound(duel.winner === playerId ? 'duelWin' : duel.loser === playerId ? 'duelLose' : 'duelWatch')
+    if (game.phase === 'duel_end')
+      playSound(duel.winner === playerId ? 'duelWin' : duel.loser === playerId ? 'duelLose' : 'duelWatch')
   }, [game.phase, duel.question_number, duel.kind, duel.winner, duel.loser, playerId])
 
   const bet = async (choice: string) => {
@@ -219,11 +267,18 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
         <p className="font-display text-3xl tracking-wide text-brand">Façam suas apostas!</p>
         {duel.can_bet ? (
           <>
-            <p className="text-steel">5 de QI em quem ganha. Acertou, recebe 10. Em {Math.ceil(remaining / 1000)}s, sorteamos para quem não escolher.</p>
+            <p className="text-steel">
+              5 de QI em quem ganha. Acertou, recebe 10. Em {Math.ceil(remaining / 1000)}s, sorteamos para quem não
+              escolher.
+            </p>
             <div className="grid w-full grid-cols-2 gap-3">
               {fighters.map((p) =>
                 p ? (
-                  <button key={p.id} onClick={() => void bet(p.id)} className="btn-3d btn-dark flex flex-col items-center gap-1 rounded-xl py-3 font-semibold">
+                  <button
+                    key={p.id}
+                    onClick={() => void bet(p.id)}
+                    className="btn-3d btn-dark flex flex-col items-center gap-1 rounded-xl py-3 font-semibold"
+                  >
                     <img src={avatarUrl(p)} alt="" className="size-12" />
                     Apostar em {p.nickname}
                   </button>
@@ -233,7 +288,11 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           </>
         ) : (
           <p className="font-hand text-lg font-medium text-chalk">
-            {duel.my_bet ? `Você apostou 5 de QI em ${name(duel.my_bet)}.` : fighting ? 'A plateia está apostando em quem ganha…' : 'Sem QI para apostar. Só assiste!'}
+            {duel.my_bet
+              ? `Você apostou 5 de QI em ${name(duel.my_bet)}.`
+              : fighting
+                ? 'A plateia está apostando em quem ganha…'
+                : 'Sem QI para apostar. Só assiste!'}
           </p>
         )}
       </div>
@@ -242,17 +301,44 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
     const myBet = duel.bets[playerId ?? '']
     body = (
       <div className="flex flex-col items-center gap-2 text-center">
-        <p className="font-display text-4xl tracking-wide text-brand">{duel.winner === playerId ? 'Você venceu o X1!' : `${name(duel.winner)} venceu o X1!`}</p>
+        <p className="font-display text-4xl tracking-wide text-brand">
+          {duel.winner === playerId ? 'Você venceu o X1!' : `${name(duel.winner)} venceu o X1!`}
+        </p>
         <ul className="flex w-full flex-col gap-1.5 font-semibold">
-          <li className="rounded-xl bg-red-500/15 px-3 py-1.5 text-red-200">{name(duel.loser)} pagou {duel.paid} de QI (40%)</li>
-          {duel.from_bets > 0 && <li className="rounded-xl bg-emerald-500/15 px-3 py-1.5 text-emerald-200">+{duel.from_bets} de quem apostou contra {name(duel.winner) === 'Você' ? 'você' : name(duel.winner)}</li>}
-          {duel.favorite_bonus > 0 && <li className="rounded-xl bg-brand/15 px-3 py-1.5 text-brand">+{duel.favorite_bonus} de bônus de favorito da torcida</li>}
-          {myBet && <li className={`rounded-xl px-3 py-1.5 ${myBet === duel.winner ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'}`}>Sua aposta em {name(myBet) === 'Você' ? 'você' : name(myBet)}: {myBet === duel.winner ? '+5' : '−5'}</li>}
+          <li className="rounded-xl bg-red-500/15 px-3 py-1.5 text-red-200">
+            {name(duel.loser)} pagou {duel.paid} de QI (40%)
+          </li>
+          {duel.from_bets > 0 && (
+            <li className="rounded-xl bg-emerald-500/15 px-3 py-1.5 text-emerald-200">
+              +{duel.from_bets} de quem apostou contra {name(duel.winner) === 'Você' ? 'você' : name(duel.winner)}
+            </li>
+          )}
+          {duel.favorite_bonus > 0 && (
+            <li className="rounded-xl bg-brand/15 px-3 py-1.5 text-brand">
+              +{duel.favorite_bonus} de bônus de favorito da torcida
+            </li>
+          )}
+          {myBet && (
+            <li
+              className={`rounded-xl px-3 py-1.5 ${myBet === duel.winner ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'}`}
+            >
+              Sua aposta em {name(myBet) === 'Você' ? 'você' : name(myBet)}: {myBet === duel.winner ? '+5' : '−5'}
+            </li>
+          )}
         </ul>
       </div>
     )
   } else {
-    body = <DuelQuestionView key={duel.question_number} snapshot={snapshot} stage={stage} playerId={playerId} remaining={remaining} onAnswer={async (option) => setError(await onAnswer(option))} />
+    body = (
+      <DuelQuestionView
+        key={duel.question_number}
+        snapshot={snapshot}
+        stage={stage}
+        playerId={playerId}
+        remaining={remaining}
+        onAnswer={async (option) => setError(await onAnswer(option))}
+      />
+    )
   }
 
   if (intro !== 'off') {
@@ -262,13 +348,20 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           <span className="duel-burst" />
           <PowerUpIcon kind="duel" className="duel-clash relative size-28" />
         </div>
-        <p className="intro-slam font-display text-7xl text-brand [text-shadow:0_5px_0_#7a5a00] [animation-delay:1.1s]">X1!</p>
+        <p className="intro-slam font-display text-7xl text-brand [text-shadow:0_5px_0_#7a5a00] [animation-delay:1.1s]">
+          X1!
+        </p>
         <div className="flex w-full max-w-sm items-center justify-between px-6">
           {fighters.map((p, i) =>
             p ? (
-              <div key={p.id} className={`flex flex-col items-center gap-1 ${i === 0 ? 'duel-in-left' : 'duel-in-right'}`}>
+              <div
+                key={p.id}
+                className={`flex flex-col items-center gap-1 ${i === 0 ? 'duel-in-left' : 'duel-in-right'}`}
+              >
                 <img src={avatarUrl(p)} alt="" className="size-20" />
-                <span className="max-w-32 truncate font-display text-2xl tracking-wide text-chalk">{p.id === playerId ? 'Você' : p.nickname}</span>
+                <span className="max-w-32 truncate font-display text-2xl tracking-wide text-chalk">
+                  {p.id === playerId ? 'Você' : p.nickname}
+                </span>
               </div>
             ) : null,
           )}
@@ -292,17 +385,42 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           if (!p) return <span key={i} />
           const pick = duel.picks.find((k) => k.player_id === p.id)
           const card = (
-            <div key={p.id} className={`flex flex-col items-center gap-1 rounded-xl bg-panel px-2 py-3 ${duel.winner === p.id ? 'mythic' : ''}`}>
-              <AnsweredAvatar player={p} done={!pick && duel.answered.includes(p.id)} waiting={!pick && stage.phase === 'duel_answering'} className="size-14" />
+            <div
+              key={p.id}
+              className={`flex flex-col items-center gap-1 rounded-xl bg-panel px-2 py-3 ${duel.winner === p.id ? 'mythic' : ''}`}
+            >
+              <AnsweredAvatar
+                player={p}
+                done={!pick && duel.answered.includes(p.id)}
+                waiting={!pick && stage.phase === 'duel_answering'}
+                className="size-14"
+              />
               <span className="max-w-full truncate font-semibold">{p.id === playerId ? 'Você' : p.nickname}</span>
               {side && <span className="max-w-full truncate text-xs text-steel">{side(p.id)}</span>}
               <span className="h-5 text-sm font-semibold">
-                {pick ? (pick.correct ? <span className="text-emerald-300">Acertou</span> : <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>) : ''}
+                {pick ? (
+                  pick.correct ? (
+                    <span className="text-emerald-300">Acertou</span>
+                  ) : (
+                    <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>
+                  )
+                ) : (
+                  ''
+                )}
               </span>
-              <span className="text-xs text-steel tabular-nums">{((duel.total_ms[p.id] ?? 0) / 1000).toFixed(1).replace('.', ',')}s no total</span>
+              <span className="text-xs text-steel tabular-nums">
+                {((duel.total_ms[p.id] ?? 0) / 1000).toFixed(1).replace('.', ',')}s no total
+              </span>
             </div>
           )
-          return i === 0 ? [card, <span key="vs" className="font-display text-3xl text-steel">vs</span>] : card
+          return i === 0
+            ? [
+                card,
+                <span key="vs" className="font-display text-3xl text-steel">
+                  vs
+                </span>,
+              ]
+            : card
         })}
       </div>
       {body}
@@ -336,11 +454,17 @@ function DuelQuestionView({
     setChoice(option)
     await onAnswer(option)
   }
-  const picksOn = (index: number) => duel.picks.filter((k) => k.option === index).map((k) => snapshot.room.players.find((p) => p.id === k.player_id))
+  const picksOn = (index: number) =>
+    duel.picks.filter((k) => k.option === index).map((k) => snapshot.room.players.find((p) => p.id === k.player_id))
   return (
     <div className="flex flex-col gap-4">
       <div className="h-2 overflow-hidden rounded-full bg-panel">
-        {open && <div className={`h-full rounded-full ${remaining < 2000 ? 'bg-red-400' : 'bg-brand'}`} style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }} />}
+        {open && (
+          <div
+            className={`h-full rounded-full ${remaining < 2000 ? 'bg-red-400' : 'bg-brand'}`}
+            style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }}
+          />
+        )}
       </div>
       <h1 className="text-[1.3rem] leading-snug font-bold">{duel.text}</h1>
       <div className="grid auto-rows-fr grid-cols-2 gap-3">
@@ -364,11 +488,19 @@ function DuelQuestionView({
               disabled={!canAnswer}
               className={`btn-3d btn-sm relative flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left font-semibold ${state}`}
             >
-              {duel.kind !== 'true_false' && <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>}
-              <span className={`min-w-0 [overflow-wrap:anywhere] ${duel.kind === 'true_false' ? 'w-full text-center text-lg' : ''}`}>{option}</span>
+              {duel.kind !== 'true_false' && (
+                <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
+              )}
+              <span
+                className={`min-w-0 [overflow-wrap:anywhere] ${duel.kind === 'true_false' ? 'w-full text-center text-lg' : ''}`}
+              >
+                {option}
+              </span>
               {reveal && (
                 <span className="absolute -top-2 -right-1.5 flex -space-x-2">
-                  {picksOn(index).map((p) => p && <img key={p.id} src={avatarUrl(p)} alt={p.nickname} className="size-6" />)}
+                  {picksOn(index).map(
+                    (p) => p && <img key={p.id} src={avatarUrl(p)} alt={p.nickname} className="size-6" />,
+                  )}
                 </span>
               )}
             </button>
@@ -376,7 +508,13 @@ function DuelQuestionView({
         })}
       </div>
       <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">
-        {open ? (fighting ? (choice === null ? 'Erre sozinho e perdeu!' : 'Resposta enviada!') : 'Torça pelo seu lado!') : ''}
+        {open
+          ? fighting
+            ? choice === null
+              ? 'Erre sozinho e perdeu!'
+              : 'Resposta enviada!'
+            : 'Torça pelo seu lado!'
+          : ''}
       </p>
     </div>
   )
@@ -385,14 +523,25 @@ function DuelQuestionView({
 /** O selo do nível da pergunta, como no cabeçalho do clássico. */
 export function DifficultyChip({ difficulty }: { difficulty: string }) {
   const info = DIFFICULTY[difficulty]
-  return <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${info.className}`}>{info.label}</span>
+  return (
+    <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${info.className}`}>
+      {info.label}
+    </span>
+  )
 }
-
 
 const SPECIALIST_BLOCK = 5
 
 /** Especialista: antes de cada bloco, o sorteado escolhe o tema; os outros assistem. */
-function ThemePick({ snapshot, playerId, onChoose }: { snapshot: Snapshot; playerId: string | null; onChoose: Props['onChooseTheme'] }) {
+function ThemePick({
+  snapshot,
+  playerId,
+  onChoose,
+}: {
+  snapshot: Snapshot
+  playerId: string | null
+  onChoose: Props['onChooseTheme']
+}) {
   const { room, receivedAt } = snapshot
   const game = room.game!
   const now = useNow(!game.block_theme)
@@ -440,7 +589,13 @@ function ThemePick({ snapshot, playerId, onChoose }: { snapshot: Snapshot; playe
                 onClick={() => void choose(theme)}
                 disabled={!mine || !!game.block_theme}
                 className={`btn-3d w-full rounded-xl px-3 py-3 font-semibold ${
-                  chosen ? 'btn-brand is-pressed text-ink' : game.block_theme ? 'btn-dark opacity-40' : mine ? 'btn-dark text-chalk' : 'btn-dark text-steel'
+                  chosen
+                    ? 'btn-brand is-pressed text-ink'
+                    : game.block_theme
+                      ? 'btn-dark opacity-40'
+                      : mine
+                        ? 'btn-dark text-chalk'
+                        : 'btn-dark text-steel'
                 }`}
               >
                 {theme}
@@ -452,7 +607,10 @@ function ThemePick({ snapshot, playerId, onChoose }: { snapshot: Snapshot; playe
       {error && <p className="text-sm text-red-300">{error}</p>}
       {!game.block_theme && (
         <div className="h-2 w-full max-w-sm overflow-hidden rounded-full bg-panel">
-          <div className="h-full rounded-full bg-brand" style={{ width: `${Math.min(1, remaining / game.phase_duration_ms) * 100}%` }} />
+          <div
+            className="h-full rounded-full bg-brand"
+            style={{ width: `${Math.min(1, remaining / game.phase_duration_ms) * 100}%` }}
+          />
         </div>
       )}
       {!game.block_theme && !mine && <p className="text-sm text-steel">Se ninguém escolher, o tema é sorteado.</p>}
@@ -472,7 +630,8 @@ function GameStart({ snapshot }: { snapshot: Snapshot }) {
       eyebrow="A partida vai começar"
       rules={[
         <>
-          {room.settings.rounds} perguntas{game.total_rounds > room.settings.rounds && ' + a final impossível'} · {room.settings.answer_seconds} segundos cada
+          {room.settings.rounds} perguntas{game.total_rounds > room.settings.rounds && ' + a final impossível'} ·{' '}
+          {room.settings.answer_seconds} segundos cada
         </>,
       ]}
       power={game.starting_powerup ? { kind: game.starting_powerup } : null}
@@ -486,10 +645,18 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
   const game = room.game!
   const standings = [...room.players].sort(byRanking)
   return (
-    <ImpossibleIntro receivedAt={snapshot.receivedAt} endsInMs={game.phase_ends_in_ms} line="Vale 35 de QI, e errar não tira pontos. Tudo pode virar.">
+    <ImpossibleIntro
+      receivedAt={snapshot.receivedAt}
+      endsInMs={game.phase_ends_in_ms}
+      line="Vale 35 de QI, e errar não tira pontos. Tudo pode virar."
+    >
       <ol className="flex max-w-xs flex-wrap justify-center gap-3" aria-label="Placar antes da final">
         {standings.map((player, index) => (
-          <li key={player.id} className="avatar-pop flex flex-col items-center gap-0.5" style={{ animationDelay: `${1.1 + index * 0.08}s` }}>
+          <li
+            key={player.id}
+            className="avatar-pop flex flex-col items-center gap-0.5"
+            style={{ animationDelay: `${1.1 + index * 0.08}s` }}
+          >
             <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-11" />
             <span className="font-display text-sm text-orange-100 tabular-nums">{formatScore(player.score)}</span>
           </li>
@@ -512,7 +679,15 @@ function formatOdds(odds: number) {
 }
 
 /** Aposta antes da pergunta do meio das difíceis: só o tema e o nível aparecem. */
-function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: string | null; onBet: (amount: number) => Promise<string | null> }) {
+function Betting({
+  snapshot,
+  playerId,
+  onBet,
+}: {
+  snapshot: Snapshot
+  playerId: string | null
+  onBet: (amount: number) => Promise<string | null>
+}) {
   const { room, receivedAt } = snapshot
   const game = room.game!
   const me = room.players.find((p) => p.id === playerId)
@@ -561,17 +736,24 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
 
   const typedAmount = typed === '' ? null : Number(typed)
   const typedValid = typedAmount !== null && Number.isInteger(typedAmount) && typedAmount >= 0 && typedAmount <= limit
-  const selectedClass = (key: 'pass' | number, outline: string) => (shortcut === key ? `is-pressed outline-2 ${outline}` : '')
+  const selectedClass = (key: 'pass' | number, outline: string) =>
+    shortcut === key ? `is-pressed outline-2 ${outline}` : ''
 
   return (
     <section className="flex min-h-[72dvh] w-full flex-col items-center justify-center gap-5 text-center">
-      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Antes da próxima pergunta</p>
+      <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">
+        Antes da próxima pergunta
+      </p>
       <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">Aposta!</h1>
       <div className="intro-step flex flex-col items-center gap-2" style={{ animationDelay: '0.5s' }}>
         <span className="text-sm font-semibold text-steel">Tema da pergunta</span>
         <span className="flex flex-wrap justify-center gap-2">
-          <span className="rounded-full bg-panel px-4 py-1.5 text-lg font-bold whitespace-nowrap text-chalk">{game.theme}</span>
-          <span className={`rounded-full px-4 py-1.5 text-lg font-semibold whitespace-nowrap ${DIFFICULTY[game.difficulty].className}`}>
+          <span className="rounded-full bg-panel px-4 py-1.5 text-lg font-bold whitespace-nowrap text-chalk">
+            {game.theme}
+          </span>
+          <span
+            className={`rounded-full px-4 py-1.5 text-lg font-semibold whitespace-nowrap ${DIFFICULTY[game.difficulty].className}`}
+          >
             {DIFFICULTY[game.difficulty].label}
           </span>
         </span>
@@ -582,13 +764,18 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
           <p className="font-hand text-lg font-medium text-chalk">Sem QI para apostar. Só torce!</p>
         ) : done ? (
           <p className="font-hand text-lg font-medium text-chalk">
-            {placed === 0 ? 'Você passou.' : placed !== null ? `Você apostou ${placed} de QI! Acertou, ganha ${betWin(placed, game)}; errou, perde ${placed}.` : 'Aposta feita!'}
+            {placed === 0
+              ? 'Você passou.'
+              : placed !== null
+                ? `Você apostou ${placed} de QI! Acertou, ganha ${betWin(placed, game)}; errou, perde ${placed}.`
+                : 'Aposta feita!'}
           </p>
         ) : (
           <>
             <p className="font-hand text-lg font-medium text-chalk">
-              Você tem {formatScore(me?.score ?? 0)} de QI e pode apostar até <span className="text-brand">{limit}</span>.
-              Odd {formatOdds(game.bet_odds)}: acertou, ganha {Math.round((game.bet_odds - 1) * 100)}% do apostado; errou, perde tudo que apostou.
+              Você tem {formatScore(me?.score ?? 0)} de QI e pode apostar até{' '}
+              <span className="text-brand">{limit}</span>. Odd {formatOdds(game.bet_odds)}: acertou, ganha{' '}
+              {Math.round((game.bet_odds - 1) * 100)}% do apostado; errou, perde tudo que apostou.
             </p>
             <div className="grid grid-cols-5 gap-1.5 sm:gap-2">
               <button
@@ -608,8 +795,7 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
                       percent === game.bet_max_percent ? 'btn-brand text-ink' : 'btn-dark text-chalk'
                     } ${selectedClass(percent, percent === game.bet_max_percent ? 'outline-chalk' : 'outline-brand')}`}
                   >
-                    {percent}%
-                    <span className="font-sans text-xs font-semibold opacity-80">{amount}</span>
+                    {percent}%<span className="font-sans text-xs font-semibold opacity-80">{amount}</span>
                     <span className="font-sans text-xs font-semibold opacity-80">+{betWin(amount, game)}</span>
                   </button>
                 )
@@ -634,7 +820,11 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
                 className="min-w-0 flex-1 rounded-xl bg-panel px-4 py-3 text-lg placeholder:text-steel focus:outline-2 focus:outline-brand"
               />
               {typedValid && (
-                <button type="submit" aria-label={`Confirmar aposta de ${typedAmount}`} className="btn-3d btn-sm btn-brand rounded-xl px-5 font-display text-2xl text-ink">
+                <button
+                  type="submit"
+                  aria-label={`Confirmar aposta de ${typedAmount}`}
+                  className="btn-3d btn-sm btn-brand rounded-xl px-5 font-display text-2xl text-ink"
+                >
                   ✓
                 </button>
               )}
@@ -651,7 +841,10 @@ function Betting({ snapshot, playerId, onBet }: { snapshot: Snapshot; playerId: 
             style={{ width: `${Math.min(1, remaining / Math.max(1, game.phase_duration_ms)) * 100}%` }}
           />
         </div>
-        <span key={urgent ? secondsLeft : 'calm'} className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-red-400' : ''}`}>
+        <span
+          key={urgent ? secondsLeft : 'calm'}
+          className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-red-400' : ''}`}
+        >
           {secondsLeft}
         </span>
       </div>
@@ -686,7 +879,6 @@ export function Flame() {
     </svg>
   )
 }
-
 
 const easeInOutCubic = (k: number) => (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2)
 
@@ -723,7 +915,6 @@ function byRanking(a: PlayerView, b: PlayerView) {
   return b.score - a.score || a.answer_ms - b.answer_ms
 }
 
-
 interface RoundProps {
   snapshot: Snapshot
   game: GameView
@@ -759,7 +950,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
   const question = game.question!
   const typing = game.phase === 'reading'
   const hits = (kind: PowerUpUse['kind']) =>
-    game.phase !== 'results' && game.active.some((use) => use.kind === kind && (use.legendary ? use.by !== playerId : use.target === playerId))
+    game.phase !== 'results' &&
+    game.active.some((use) => use.kind === kind && (use.legendary ? use.by !== playerId : use.target === playerId))
   const silenced = game.silenced_rounds > 0
   const scrambled = hits('scramble')
   const fullText = scrambled ? scrambleWords(question.text, game.round) : question.text
@@ -767,7 +959,10 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
   const mirrored = hits('mirror') ? '-scale-x-100' : ''
   // Segunda chance: a primeira escolha errada não encerra a sua resposta.
   const retry = game.first_wrong
-  const answered = retry !== null ? choice !== null && choice !== retry : choice !== null || (playerId !== null && game.answered.includes(playerId))
+  const answered =
+    retry !== null
+      ? choice !== null && choice !== retry
+      : choice !== null || (playerId !== null && game.answered.includes(playerId))
   const canAnswer = game.phase === 'answering' && !answered
   const showResults = game.phase === 'results' && !silenced
   const hiddenReveal = game.phase === 'results' && silenced
@@ -787,7 +982,12 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
   }, [game.phase])
 
   // Uma sabotagem em você toca o "ops" quando a pergunta abre (o Roubo é surpresa: não toca).
-  const sabotaged = game.active.some((use) => use.kind !== 'steal' && TARGETED_KINDS.has(use.kind) && (use.legendary ? use.by !== playerId : use.target === playerId))
+  const sabotaged = game.active.some(
+    (use) =>
+      use.kind !== 'steal' &&
+      TARGETED_KINDS.has(use.kind) &&
+      (use.legendary ? use.by !== playerId : use.target === playerId),
+  )
   useEffect(() => {
     if (sabotaged && !showResults) playSound('powerHit')
     // Só quando a pergunta aparece.
@@ -812,7 +1012,8 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
   }, [urgent, answered, secondsLeft])
 
   // Depende só do veredito: cada atualização da sala (Pular, poder armado) recria o resultado.
-  const verdict = showResults && myResult ? (myResult.option === null ? 'noAnswer' : myResult.correct ? 'correct' : 'wrong') : null
+  const verdict =
+    showResults && myResult ? (myResult.option === null ? 'noAnswer' : myResult.correct ? 'correct' : 'wrong') : null
   useEffect(() => {
     if (!verdict) return
     if (verdict !== 'noAnswer') vibrate(verdict === 'correct' ? 40 : [70, 50, 70])
@@ -855,12 +1056,20 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
         <span className="flex min-w-0 items-center gap-1.5">
           <span
             className={`min-w-0 truncate rounded-full px-2.5 py-1 ${game.block_theme && game.theme_picker === playerId ? 'bg-brand/20 font-semibold text-brand' : 'bg-panel text-steel'}`}
-            title={game.block_theme && game.theme_picker === playerId ? `${question.theme}: você ganha +25% nos acertos` : question.theme}
+            title={
+              game.block_theme && game.theme_picker === playerId
+                ? `${question.theme}: você ganha +25% nos acertos`
+                : question.theme
+            }
           >
             {question.theme}
             {game.block_theme && game.theme_picker === playerId && ' +25%'}
           </span>
-          <span className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${difficulty.className}`}>{difficulty.label}</span>
+          <span
+            className={`round-chip shrink-0 rounded-full px-2.5 py-1 font-semibold whitespace-nowrap ${difficulty.className}`}
+          >
+            {difficulty.label}
+          </span>
         </span>
       </header>
 
@@ -914,10 +1123,18 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
                 className={`round-option btn-3d btn-sm relative flex min-h-14 w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
               >
                 <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>
-                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>{blinded ? '' : scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}</span>
+                <span className={`min-w-0 [overflow-wrap:anywhere] ${mirrored}`}>
+                  {blinded ? '' : scrambled ? scrambleWords(option, game.round * 7 + index + 1) : option}
+                </span>
                 {game.peek && !showResults && <PeekBadge count={game.peek[index]} />}
                 {game.tolls && !showResults && <TollBadge price={game.tolls[index]} />}
-                {showResults && <Voters players={room.players.filter((p) => game.results.some((r) => r.player_id === p.id && r.option === index))} />}
+                {showResults && (
+                  <Voters
+                    players={room.players.filter((p) =>
+                      game.results.some((r) => r.player_id === p.id && r.option === index),
+                    )}
+                  />
+                )}
               </button>
             </ScratchCard>
           ))}
@@ -938,14 +1155,14 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
               : blinded && !answered
                 ? 'Flashbang! Agora é chutar pela letra.'
                 : retry !== null && !answered
-                ? 'Errou! Segunda chance: tente de novo (vale metade).'
-                : silenced
-                  ? answered
-                    ? 'Resposta enviada! Agora é esperar…'
-                    : 'Silêncio… quanto tempo será que falta?'
-                  : answered
-                    ? 'Resposta enviada! Esperando a galera…'
-                    : ''}
+                  ? 'Errou! Segunda chance: tente de novo (vale metade).'
+                  : silenced
+                    ? answered
+                      ? 'Resposta enviada! Agora é esperar…'
+                      : 'Silêncio… quanto tempo será que falta?'
+                    : answered
+                      ? 'Resposta enviada! Esperando a galera…'
+                      : ''}
           </p>
           {/* Silenciado não vê quem já respondeu (o servidor nem manda). */}
           {!silenced && <AnsweredRow players={room.players} answered={game.answered} />}
@@ -956,7 +1173,15 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
 }
 
 /** Ressurreição no clássico: a cena mostra o QI de antes e o de depois. */
-function ResurrectionOverlay({ revivals, players, playerId }: { revivals: GameView['revivals']; players: PlayerView[]; playerId: string | null }) {
+function ResurrectionOverlay({
+  revivals,
+  players,
+  playerId,
+}: {
+  revivals: GameView['revivals']
+  players: PlayerView[]
+  playerId: string | null
+}) {
   const revived = revivals.map((r) => ({
     key: `${r.player_id}:${r.after}`,
     playerId: r.player_id,
@@ -972,7 +1197,9 @@ function SilencedReveal({ roundsLeft }: { roundsLeft: number }) {
       <PowerUpIcon kind="silence" className="size-10" />
       <p className="font-display text-3xl tracking-wide text-chalk">Silenciado!</p>
       <p className="text-steel">Nada de resposta, placar ou poderes por enquanto.</p>
-      <p className="font-hand text-lg font-medium text-steel">{roundsLeft > 1 ? 'Ainda falta mais uma pergunta em silêncio.' : 'Na próxima você volta a ver tudo.'}</p>
+      <p className="font-hand text-lg font-medium text-steel">
+        {roundsLeft > 1 ? 'Ainda falta mais uma pergunta em silêncio.' : 'Na próxima você volta a ver tudo.'}
+      </p>
     </div>
   )
 }
@@ -989,9 +1216,21 @@ interface SummaryProps {
 function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: SummaryProps) {
   const mine = game.results.find((r) => r.player_id === playerId)
   const deltas: Record<string, number> = Object.fromEntries(
-    game.results.map((r) => [r.player_id, r.delta + bonusTotal(r) + r.bet_delta + r.stolen - r.robbed + r.toll_received - r.tolled + r.tricked + (r.specialist_bonus ?? 0)]),
+    game.results.map((r) => [
+      r.player_id,
+      r.delta +
+        bonusTotal(r) +
+        r.bet_delta +
+        r.stolen -
+        r.robbed +
+        r.toll_received -
+        r.tolled +
+        r.tricked +
+        (r.specialist_bonus ?? 0),
+    ]),
   )
-  for (const revival of game.revivals) deltas[revival.player_id] = (deltas[revival.player_id] ?? 0) + revival.after - revival.before
+  for (const revival of game.revivals)
+    deltas[revival.player_id] = (deltas[revival.player_id] ?? 0) + revival.after - revival.before
   const bets = game.results.filter((r) => r.bet)
   const experts = game.results.filter((r) => r.specialist_bonus)
   const highlights = game.results.flatMap((r) => r.bonuses.map((bonus) => ({ result: r, bonus })))
@@ -1050,10 +1289,18 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
   ]
 
   // O "trrr" acompanha o seu QI contando; cada tipo de bônus da rodada toca uma vez, junto com a faixa.
-  const bonusSounds: Record<Bonus['kind'], SoundId> = { streak: 'streakFire', wrong_streak: 'streakIce', perfect_easy: 'perfectEasy', investment: 'investment' }
+  const bonusSounds: Record<Bonus['kind'], SoundId> = {
+    streak: 'streakFire',
+    wrong_streak: 'streakIce',
+    perfect_easy: 'perfectEasy',
+    investment: 'investment',
+  }
   const kinds = [...new Set(highlights.map((h) => h.bonus.kind))]
   useSoundsOnMount([
-    ...kinds.map((kind): [SoundId, number] => [bonusSounds[kind], 400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120]),
+    ...kinds.map((kind): [SoundId, number] => [
+      bonusSounds[kind],
+      400 + highlights.findIndex((h) => h.bonus.kind === kind) * 120,
+    ]),
     ...(mine?.shielded ? [['shield', 250] as [SoundId, number]] : []),
   ])
   useEffect(() => {
@@ -1085,7 +1332,15 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
   return (
     <div className="flex flex-col gap-3">
       {headline}
-      <PowerUpBar powers={room.settings.powers} game={game} players={room.players} playerId={playerId} onArm={onArm} onDisarm={onDisarm} onSkip={onSkip} />
+      <PowerUpBar
+        powers={room.settings.powers}
+        game={game}
+        players={room.players}
+        playerId={playerId}
+        onArm={onArm}
+        onDisarm={onDisarm}
+        onSkip={onSkip}
+      />
       <BannerList items={banners} label="Acontecimentos da rodada" />
       {game.fact && <FactCard fact={game.fact} />}
       <Ranking
@@ -1100,19 +1355,45 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
 
 /** Banners da revelação de poderes: escudos que seguraram, roubos, poderes ganhos e usados. */
 function powerupEvents(room: RoomState, game: GameView, playerId: string | null) {
-  const who = (id: string | null) => (id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?'))
+  const who = (id: string | null) =>
+    id === playerId ? 'Você' : (room.players.find((p) => p.id === id)?.nickname ?? '?')
   const whom = (id: string | null) => (id === playerId ? 'você' : who(id))
-  const lines: { key: string; kind: PowerUpUse['kind']; player?: PlayerView; who: string; title: string; detail: string; delta: number | null; me: boolean; legendary?: boolean; mythic?: boolean }[] = []
+  const lines: {
+    key: string
+    kind: PowerUpUse['kind']
+    player?: PlayerView
+    who: string
+    title: string
+    detail: string
+    delta: number | null
+    me: boolean
+    legendary?: boolean
+    mythic?: boolean
+  }[] = []
   const mine = game.results.find((r) => r.player_id === playerId)
   for (const result of game.results) {
     const player = room.players.find((p) => p.id === result.player_id)
     const me = result.player_id === playerId
     const base = { player, who: who(result.player_id), me }
     for (const kind of result.expired) {
-      lines.push({ ...base, key: `${result.player_id}-${kind}-expired`, kind, title: `${POWERUP_INFO[kind].name} quebrou`, detail: 'Acabou sem ser usado', delta: null })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-${kind}-expired`,
+        kind,
+        title: `${POWERUP_INFO[kind].name} quebrou`,
+        detail: 'Acabou sem ser usado',
+        delta: null,
+      })
     }
     if (result.doubled) {
-      lines.push({ ...base, key: `${result.player_id}-double`, kind: 'double', title: 'Dobro!', detail: result.correct ? 'O acerto valeu o dobro' : 'O erro valeu o dobro', delta: result.delta })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-double`,
+        kind: 'double',
+        title: 'Dobro!',
+        detail: result.correct ? 'O acerto valeu o dobro' : 'O erro valeu o dobro',
+        delta: result.delta,
+      })
     }
     if (result.first_option !== null) {
       lines.push({
@@ -1125,7 +1406,14 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       })
     }
     if (result.shielded) {
-      lines.push({ ...base, key: `${result.player_id}-shield`, kind: 'shield', title: 'O Escudo segurou', detail: `Salvou ${result.shielded} de QI`, delta: null })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-shield`,
+        kind: 'shield',
+        title: 'O Escudo segurou',
+        detail: `Salvou ${result.shielded} de QI`,
+        delta: null,
+      })
     }
     const steal = game.active.find((use) => use.kind === 'steal' && use.by === result.player_id)
     if (steal?.legendary) {
@@ -1162,20 +1450,59 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
       })
     }
     if (result.decoy) {
-      lines.push({ ...base, key: `${result.player_id}-decoy`, kind: 'decoy', title: 'Caiu na Alternativa falsa', detail: `"${result.decoy}"`, delta: null })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-decoy`,
+        kind: 'decoy',
+        title: 'Caiu na Alternativa falsa',
+        detail: `"${result.decoy}"`,
+        delta: null,
+      })
     }
     if (result.tricked) {
-      lines.push({ ...base, key: `${result.player_id}-tricked`, kind: 'decoy', title: 'Enganou com a Alternativa falsa', detail: `Ganhou ${result.tricked} de QI`, delta: me ? result.tricked : null })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-tricked`,
+        kind: 'decoy',
+        title: 'Enganou com a Alternativa falsa',
+        detail: `Ganhou ${result.tricked} de QI`,
+        delta: me ? result.tricked : null,
+      })
     }
     if (result.tolled) {
-      lines.push({ ...base, key: `${result.player_id}-tolled`, kind: 'toll', title: 'Pagou Pedágio', detail: `${result.tolled} de QI`, delta: me ? -result.tolled : null })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-tolled`,
+        kind: 'toll',
+        title: 'Pagou Pedágio',
+        detail: `${result.tolled} de QI`,
+        delta: me ? -result.tolled : null,
+      })
     }
     if (result.toll_received) {
-      lines.push({ ...base, key: `${result.player_id}-toll`, kind: 'toll', title: 'Recebeu Pedágio', detail: `${result.toll_received} de QI`, delta: me ? result.toll_received : null })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-toll`,
+        kind: 'toll',
+        title: 'Recebeu Pedágio',
+        detail: `${result.toll_received} de QI`,
+        delta: me ? result.toll_received : null,
+      })
     }
-    for (const [suffix, gain] of [['gain', result.gained], ['bet-gain', result.bet_gained]] as const) {
+    for (const [suffix, gain] of [
+      ['gain', result.gained],
+      ['bet-gain', result.bet_gained],
+    ] as const) {
       if (!gain) continue
-      lines.push({ ...base, key: `${result.player_id}-${suffix}`, kind: gain.kind, ...gainParts(gain), delta: null, legendary: gain.legendary, mythic: gain.mythic })
+      lines.push({
+        ...base,
+        key: `${result.player_id}-${suffix}`,
+        kind: gain.kind,
+        ...gainParts(gain),
+        delta: null,
+        legendary: gain.legendary,
+        mythic: gain.mythic,
+      })
     }
   }
   for (const { challenger, rival } of game.duels) {
@@ -1220,7 +1547,9 @@ function bonusParts(bonus: Bonus) {
   const again = bonus.repeat ? ' de novo' : ''
   if (bonus.kind === 'perfect_easy') return { title: 'Gabaritou as fáceis!', detail: 'Acertou todas as fáceis' }
   if (bonus.kind === 'investment') {
-    return bonus.count === 5 ? { title: 'Investimento completo!', detail: '5 acertos com o Investimento' } : { title: `Investimento, ${bonus.count}º acerto`, detail: 'O bônus cresce a cada acerto' }
+    return bonus.count === 5
+      ? { title: 'Investimento completo!', detail: '5 acertos com o Investimento' }
+      : { title: `Investimento, ${bonus.count}º acerto`, detail: 'O bônus cresce a cada acerto' }
   }
   if (bonus.kind === 'streak') return { title: `${bonus.count} acertos seguidos${again}!`, detail: 'Sequência quente' }
   return { title: `${bonus.count} erros seguidos${again}!`, detail: 'Sequência gelada' }
@@ -1257,7 +1586,10 @@ function StreakChip({ streak }: { streak: number }) {
 export function PeekBadge({ count }: { count: number }) {
   if (count === 0) return null
   return (
-    <span className="absolute -top-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-teal-300 px-1.5 text-xs font-bold text-ink" title={`${count} escolheram`}>
+    <span
+      className="absolute -top-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-teal-300 px-1.5 text-xs font-bold text-ink"
+      title={`${count} escolheram`}
+    >
       <PowerUpIcon kind="peek" className="size-3.5" />
       {count}
     </span>
@@ -1266,14 +1598,21 @@ export function PeekBadge({ count }: { count: number }) {
 
 function TollBadge({ price }: { price: number }) {
   return (
-    <span className="absolute -bottom-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-rose-300 px-1.5 text-xs font-bold text-ink" title={`Responder esta custa ${price} de QI`}>
+    <span
+      className="absolute -bottom-2 -right-1.5 flex items-center gap-0.5 rounded-full bg-rose-300 px-1.5 text-xs font-bold text-ink"
+      title={`Responder esta custa ${price} de QI`}
+    >
       <PowerUpIcon kind="toll" className="size-3.5" />−{price}
     </span>
   )
 }
 
 const MAX_VOTERS = 4
-const TARGETED_KINDS = new Set(Object.entries(POWERUP_INFO).filter(([, info]) => info.targeted).map(([kind]) => kind))
+const TARGETED_KINDS = new Set(
+  Object.entries(POWERUP_INFO)
+    .filter(([, info]) => info.targeted)
+    .map(([kind]) => kind),
+)
 const FLASHBANG_MS = 4000
 
 function Voters({ players }: { players: PlayerView[] }) {
@@ -1304,7 +1643,12 @@ function Voters({ players }: { players: PlayerView[] }) {
 }
 
 function PickBadge({ result }: { result: RoundResult }) {
-  const tone = result.option === null ? 'bg-[#232b3f] text-steel' : result.correct ? 'bg-emerald-600 text-white' : 'bg-red-500 text-white'
+  const tone =
+    result.option === null
+      ? 'bg-[#232b3f] text-steel'
+      : result.correct
+        ? 'bg-emerald-600 text-white'
+        : 'bg-red-500 text-white'
   return (
     <span className={`flex size-7 shrink-0 items-center justify-center rounded-lg font-display text-base ${tone}`}>
       {result.option === null ? '—' : LETTERS[result.option]}
@@ -1333,7 +1677,8 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
       .map((p) => p.id)
     const items = [...list.children] as HTMLElement[]
     const step = items.length > 1 ? items[1].offsetTop - items[0].offsetTop : 0
-    if (items.some((el, index) => before.indexOf(el.dataset.id!) !== index)) setTimeout(() => playSound('rankingSwish'), 350)
+    if (items.some((el, index) => before.indexOf(el.dataset.id!) !== index))
+      setTimeout(() => playSound('rankingSwish'), 350)
     items.forEach((el, index) => {
       const shift = (before.indexOf(el.dataset.id!) - index) * step
       if (!shift) return
@@ -1364,7 +1709,9 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
           {picks?.[player.id] && <PickBadge result={picks[player.id]} />}
           <span className="flex-1" />
           {deltas && player.id in deltas && (
-            <span className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : deltas[player.id] < 0 ? 'text-red-300' : 'text-steel'}`}>
+            <span
+              className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : deltas[player.id] < 0 ? 'text-red-300' : 'text-steel'}`}
+            >
               {formatDelta(deltas[player.id])}
             </span>
           )}
@@ -1389,7 +1736,9 @@ interface PodiumProps {
 }
 
 export function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
-  const ranked = [...room.players].sort(byRanking).map((player) => ({ player, caption: `${formatScore(player.score)} QI` }))
+  const ranked = [...room.players]
+    .sort(byRanking)
+    .map((player) => ({ player, caption: `${formatScore(player.score)} QI` }))
   const worst = ranked[ranked.length - 1]
   return (
     <PlayerPodium
@@ -1426,4 +1775,3 @@ export function Confetti() {
     </div>
   )
 }
-

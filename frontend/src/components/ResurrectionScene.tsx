@@ -4,7 +4,11 @@ import { playSound } from '../lib/sounds'
 import type { PlayerView } from '../types/events'
 
 const RESURRECTION_MS = 3600
-const SPARKS = [8, 22, 35, 50, 63, 77, 90].map((left, i) => ({ left, delay: 0.3 + (i % 4) * 0.35, size: 4 + (i % 3) * 2 }))
+const SPARKS = [8, 22, 35, 50, 63, 77, 90].map((left, i) => ({
+  left,
+  delay: 0.3 + (i % 4) * 0.35,
+  size: 4 + (i % 3) * 2,
+}))
 
 export interface Revived {
   key: string // uma cena por chave: a mesma ressurreição não toca duas vezes
@@ -14,7 +18,15 @@ export interface Revived {
 
 /** Ressurreição: luz descendo do céu, o avatar subindo com auréola e asas, e o coral. Uma por vez,
  *  na ordem em que chegaram. */
-export function ResurrectionScene({ revived, players, playerId }: { revived: Revived[]; players: PlayerView[]; playerId: string | null }) {
+export function ResurrectionScene({
+  revived,
+  players,
+  playerId,
+}: {
+  revived: Revived[]
+  players: PlayerView[]
+  playerId: string | null
+}) {
   // A fila é guardada aqui: a cena vai até o fim mesmo se a partida já tiver limpado a lista.
   const seen = useRef(new Set<string>())
   const [queue, setQueue] = useState<Revived[]>([])
@@ -45,7 +57,12 @@ export function ResurrectionScene({ revived, players, playerId }: { revived: Rev
     <div className="res-overlay" role="status" aria-label="Ressurreição">
       <div className="res-rays" aria-hidden="true" />
       {SPARKS.map((s, i) => (
-        <span key={i} className="res-spark" style={{ left: `${s.left}%`, width: s.size, height: s.size, animationDelay: `${s.delay}s` }} aria-hidden="true" />
+        <span
+          key={i}
+          className="res-spark"
+          style={{ left: `${s.left}%`, width: s.size, height: s.size, animationDelay: `${s.delay}s` }}
+          aria-hidden="true"
+        />
       ))}
       <div className="res-rise relative flex flex-col items-center">
         <span className="res-halo" aria-hidden="true" />
@@ -55,7 +72,9 @@ export function ResurrectionScene({ revived, players, playerId }: { revived: Rev
           <Wing className="res-wing res-wing-right" flip />
         </div>
       </div>
-      <p className="res-title font-display text-6xl text-amber-100 [text-shadow:0_0_24px_rgba(255,214,102,0.9)]">Ressurreição!</p>
+      <p className="res-title font-display text-6xl text-amber-100 [text-shadow:0_0_24px_rgba(255,214,102,0.9)]">
+        Ressurreição!
+      </p>
       <p className="res-sub max-w-xs text-center text-lg font-semibold text-amber-50">{current.line(who)}</p>
     </div>
   )
@@ -74,7 +93,13 @@ function Wing({ className, flip = false }: { className?: string; flip?: boolean 
           strokeWidth="2"
           strokeLinejoin="round"
         />
-        <path d="M50 30C40 22 30 17 18 16M46 34c-9-4-18-6-28-6" fill="none" stroke="#F2C14E" strokeWidth="1.6" strokeLinecap="round" />
+        <path
+          d="M50 30C40 22 30 17 18 16M46 34c-9-4-18-6-28-6"
+          fill="none"
+          stroke="#F2C14E"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+        />
       </g>
     </svg>
   )

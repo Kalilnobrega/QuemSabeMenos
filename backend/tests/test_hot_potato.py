@@ -35,7 +35,9 @@ def questions(count: int = 40) -> list[Question]:
 
 
 def new_game(players: int = 3, powers: bool = False) -> HotPotato:
-    game = HotPotato.create([f"p{i}" for i in range(players)], questions(), set(), random.Random(1), now=0, powers=powers)
+    game = HotPotato.create(
+        [f"p{i}" for i in range(players)], questions(), set(), random.Random(1), now=0, powers=powers
+    )
     game.advance(START_SECONDS)
     return game
 
@@ -161,6 +163,7 @@ def test_view_hides_the_fuse_but_shows_the_heat():
 
 
 # --- com poderes ----------------------------------------------------------
+
 
 def test_everyone_starts_with_one_power():
     game = powered()
@@ -299,6 +302,7 @@ def test_each_explosion_but_the_last_gives_the_living_a_power():
 
 
 # --- poderes só da Batata quente -----------------------------------------
+
 
 def test_short_fuse_burns_ten_seconds_on_the_spot():
     game = powered()

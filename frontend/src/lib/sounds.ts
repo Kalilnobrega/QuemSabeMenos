@@ -58,21 +58,41 @@ export type SoundId = keyof typeof SOUND_ENABLED
 
 /** Onde e quando cada som toca (mostrado também na página de escolha dos sons). */
 export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: string }> = {
-  click: { group: 'Lobby', name: 'Tecla de teclado mecânico (clicky)', moment: 'Você aperta um botão principal na tela inicial ou no lobby' },
+  click: {
+    group: 'Lobby',
+    name: 'Tecla de teclado mecânico (clicky)',
+    moment: 'Você aperta um botão principal na tela inicial ou no lobby',
+  },
   clickSoft: { group: 'Lobby', name: 'Clique de mouse', moment: 'Você aperta Convidar ou Configurações no lobby' },
   join: { group: 'Lobby', name: 'Pop subindo', moment: 'Alguém entra na sala' },
   leave: { group: 'Lobby', name: 'Pop descendo', moment: 'Alguém sai da sala' },
   start: { group: 'Transições', name: 'Whoosh de arrancada', moment: 'A partida começa (tela "Prepare-se!")' },
   slam: { group: 'Transições', name: 'Carimbo (fiu… TUM!)', moment: 'O título "Prepare-se!" bate na tela' },
-  countTick: { group: 'Transições', name: 'Tic da contagem', moment: 'Contagem 3 e 2, na abertura e antes da impossível' },
-  countGo: { group: 'Transições', name: 'Bipe de largada (piii!)', moment: 'Contagem chega no 1, como o último sinal de uma largada' },
-  levelHop: { group: 'Transições', name: 'Fiu do pulo e tum do pouso', moment: 'O destaque pula de um nível para o outro na trilha' },
+  countTick: {
+    group: 'Transições',
+    name: 'Tic da contagem',
+    moment: 'Contagem 3 e 2, na abertura e antes da impossível',
+  },
+  countGo: {
+    group: 'Transições',
+    name: 'Bipe de largada (piii!)',
+    moment: 'Contagem chega no 1, como o último sinal de uma largada',
+  },
+  levelHop: {
+    group: 'Transições',
+    name: 'Fiu do pulo e tum do pouso',
+    moment: 'O destaque pula de um nível para o outro na trilha',
+  },
   levelUp: { group: 'Transições', name: 'Acorde subindo', moment: 'O nome do novo nível aparece (Média, Difícil)' },
   impossible: { group: 'Transições', name: 'Chama e tambor grave', moment: 'Tela da pergunta impossível' },
   typing: { group: 'Pergunta', name: 'Tec-tec de máquina de escrever', moment: 'Enquanto o texto da pergunta aparece' },
   answersOpen: { group: 'Pergunta', name: 'Trava abrindo (tchk-uup)', moment: 'As alternativas são liberadas' },
   select: { group: 'Pergunta', name: 'Blip de bolha', moment: 'Você toca numa alternativa' },
-  urgentTick: { group: 'Pergunta', name: 'Tique-taque acelerando', moment: 'Últimos 3 segundos, se você ainda não respondeu' },
+  urgentTick: {
+    group: 'Pergunta',
+    name: 'Tique-taque acelerando',
+    moment: 'Últimos 3 segundos, se você ainda não respondeu',
+  },
   timeUp: { group: 'Pergunta', name: 'Despertador de tempo esgotado', moment: 'O tempo acaba e você não respondeu' },
   correct: { group: 'Revelação', name: 'Plim de moedinha', moment: 'Você acertou' },
   wrong: { group: 'Revelação', name: 'Fon-fon de buzina boba', moment: 'Você errou' },
@@ -85,7 +105,11 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   daggerThrow: { group: 'Poderes', name: 'Assobio de lâmina girando', moment: 'A Adaga é arremessada' },
   taxRegister: { group: 'Poderes', name: 'Caixa registradora (ka-ching!)', moment: 'O Imposto termina de passar o QI' },
   daggerHit: { group: 'Poderes', name: 'Batida seca e corte', moment: 'A Adaga crava no alvo' },
-  potatoBoom: { group: 'Batata quente', name: 'Chiado, BUM, cacos caindo e zumbido', moment: 'A batata explode na mão de alguém' },
+  potatoBoom: {
+    group: 'Batata quente',
+    name: 'Chiado, BUM, cacos caindo e zumbido',
+    moment: 'A batata explode na mão de alguém',
+  },
   rankingSwish: { group: 'Revelação', name: 'Swish', moment: 'As posições do ranking mudam' },
   podiumWinner: { group: 'Pódio', name: 'Fanfarra de vitória', moment: 'O pódio aparece, com o vencedor' },
   podiumLoser: { group: 'Pódio', name: 'Trombone triste (uá-uá-uá)', moment: 'Logo depois, para quem sabe menos' },
@@ -167,7 +191,10 @@ interface ToneOptions {
   vibrato?: number
 }
 
-function tone(freq: number, { at = 0, dur = 0.15, type = 'sine', gain = 0.3, to, attack = 0.005, lowpass, vibrato }: ToneOptions = {}) {
+function tone(
+  freq: number,
+  { at = 0, dur = 0.15, type = 'sine', gain = 0.3, to, attack = 0.005, lowpass, vibrato }: ToneOptions = {},
+) {
   const { c, out } = audio()
   const t = c.currentTime + at
   const osc = c.createOscillator()
@@ -282,7 +309,9 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
     tone(700, { at: 0.3, dur: 0.06, type: 'triangle', gain: 0.08 })
   },
   levelUp: () => {
-    ;[NOTE.C5, NOTE.E5, NOTE.G5, NOTE.C6].forEach((f, i) => tone(f, { at: i * 0.08, dur: 0.3, type: 'triangle', gain: 0.15 }))
+    ;[NOTE.C5, NOTE.E5, NOTE.G5, NOTE.C6].forEach((f, i) =>
+      tone(f, { at: i * 0.08, dur: 0.3, type: 'triangle', gain: 0.15 }),
+    )
   },
   impossible: () => file('impossible'),
   typing: () => noise({ dur: 0.025, filter: 'highpass', freq: 3500, gain: 0.04 }),
@@ -343,7 +372,9 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   streakFire: () => {
     tone(90, { dur: 0.35, to: 160, gain: 0.35 })
     noise({ dur: 0.9, freq: 600, to: 2200, q: 0.6, gain: 0.22 })
-    ;[0.15, 0.27, 0.34, 0.5, 0.62, 0.78].forEach((at) => noise({ at, dur: 0.02, filter: 'highpass', freq: 3000, gain: 0.18 }))
+    ;[0.15, 0.27, 0.34, 0.5, 0.62, 0.78].forEach((at) =>
+      noise({ at, dur: 0.02, filter: 'highpass', freq: 3000, gain: 0.18 }),
+    )
   },
   // Congelando: estalo de gelo e um brilho de cristal descendo, bem gelado.
   streakIce: () => {
@@ -361,7 +392,9 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   },
   daggerThrow: () => {
     // A lâmina girando no ar: três assobios rápidos subindo.
-    ;[0, 0.14, 0.28].forEach((at, i) => noise({ at, dur: 0.14, freq: 1800 + i * 600, to: 5200 + i * 600, q: 6, gain: 0.12 }))
+    ;[0, 0.14, 0.28].forEach((at, i) =>
+      noise({ at, dur: 0.14, freq: 1800 + i * 600, to: 5200 + i * 600, q: 6, gain: 0.12 }),
+    )
   },
   taxRegister: () => {
     // Ka-ching: a gaveta batendo e o sino.
@@ -403,9 +436,11 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
     }
   },
   podiumLoser: () => {
-    ;[293.66, 277.18, 261.63].forEach((f, i) => tone(f, { at: i * 0.45, dur: 0.4, type: 'sawtooth', gain: 0.14, lowpass: 900 }))
+    ;[293.66, 277.18, 261.63].forEach((f, i) =>
+      tone(f, { at: i * 0.45, dur: 0.4, type: 'sawtooth', gain: 0.14, lowpass: 900 }),
+    )
     tone(246.94, { at: 1.35, dur: 1.2, type: 'sawtooth', gain: 0.14, lowpass: 900, vibrato: 6 })
-  },  // Pulinho para a frente: um sopro rápido e dois degraus subindo.
+  }, // Pulinho para a frente: um sopro rápido e dois degraus subindo.
   skip: () => {
     noise({ dur: 0.18, freq: 700, to: 3200, q: 1.4, gain: 0.12 })
     tone(520, { dur: 0.07, to: 780, type: 'triangle', gain: 0.13 })
@@ -434,7 +469,6 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   duelWin: () => file('duelWin'),
   duelLose: () => file('duelLose'),
   duelWatch: () => file('duelWatch'),
-
 }
 
 export function isMuted() {

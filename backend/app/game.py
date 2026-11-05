@@ -83,8 +83,19 @@ LAST_PLACE_WEIGHT = 3  # peso no sorteio de quem escolhe para quem está em últ
 
 
 Phase = Literal[
-    "starting", "level", "intro", "betting", "theme_pick", "reading", "answering", "results", "finished",
-    "duel_betting", "duel_answering", "duel_results", "duel_end",
+    "starting",
+    "level",
+    "intro",
+    "betting",
+    "theme_pick",
+    "reading",
+    "answering",
+    "results",
+    "finished",
+    "duel_betting",
+    "duel_answering",
+    "duel_results",
+    "duel_end",
 ]
 DUEL_PHASES = ("duel_betting", "duel_answering", "duel_results", "duel_end")
 
@@ -192,12 +203,15 @@ def _duel_question(question: Question, kind: x1.Kind) -> x1.DuelQuestion:
         fact=question.fact,
     )
 
+
 def reading_seconds(text: str) -> float:
     return min(MAX_READING_SECONDS, max(MIN_READING_SECONDS, len(text) * TYPING_SECONDS_PER_CHAR))
 
 
 def results_seconds(fact: str, powers: bool = False) -> float:
-    reading = min(MAX_RESULTS_SECONDS, max(MIN_RESULTS_SECONDS, RESULTS_SECONDS_BASE + len(fact) * RESULTS_SECONDS_PER_CHAR))
+    reading = min(
+        MAX_RESULTS_SECONDS, max(MIN_RESULTS_SECONDS, RESULTS_SECONDS_BASE + len(fact) * RESULTS_SECONDS_PER_CHAR)
+    )
     return reading + (POWERS_RESULTS_EXTRA_SECONDS if powers else 0)
 
 
@@ -458,7 +472,9 @@ class Game:
         current = self.questions[upcoming]
         if current.theme == theme:
             return
-        pool = [q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used]
+        pool = [
+            q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used
+        ]
         if not pool:
             raise GameError("Acabaram as perguntas desse tema.")
         question = self.rng.choice(pool)
@@ -608,7 +624,8 @@ class Game:
             if current.difficulty == FINAL_DIFFICULTY or current.theme == self.block_theme:
                 continue
             pool = [
-                q for q in self.bank
+                q
+                for q in self.bank
                 if q.theme == self.block_theme and q.difficulty == current.difficulty and q.id not in self.used
             ] or [q for q in self.bank if q.theme == self.block_theme and q.difficulty == current.difficulty]
             if not pool:
@@ -645,7 +662,9 @@ class Game:
         silenciado recomeça a contagem, não soma."""
         if not self._counts_for_powers():
             return 0
-        hits = (left for use, left in self.silences if (use.by != player_id if use.legendary else use.target == player_id))
+        hits = (
+            left for use, left in self.silences if (use.by != player_id if use.legendary else use.target == player_id)
+        )
         return max(hits, default=0)
 
     def is_silenced(self, player_id: str) -> bool:
@@ -734,10 +753,7 @@ class Game:
             raise GameError("Alternativa inválida.")
         if decoy:
             option = decoy.order[option]
-        if (
-            option in self.hidden_options.get(player_id, [])
-            or (tried and tried.option == option)
-        ):
+        if option in self.hidden_options.get(player_id, []) or (tried and tried.option == option):
             raise GameError("Alternativa inválida.")
         answer = Answer(option, min(now, self.deadline(player_id)))
         if option != self.question.answer and not tried and self._affects("second_chance", player_id):
@@ -1072,7 +1088,11 @@ class Game:
         """Apostou pelo menos 25% do QI e acertou: ganha um poder, com mais chance de lendário e mítico."""
         behind = powerups.trailing(players)
         for player, result in zip(players, self.results):
-            if not result.bet or not result.correct or result.bet * 100 < powerups.BET_PRIZE_PERCENT * score_before[player.id]:
+            if (
+                not result.bet
+                or not result.correct
+                or result.bet * 100 < powerups.BET_PRIZE_PERCENT * score_before[player.id]
+            ):
                 continue
             held = self.powerups.setdefault(player.id, [])
             legendaries = self.legendaries.setdefault(player.id, [])
@@ -1127,7 +1147,9 @@ class Game:
             else:
                 kind = self.rng.choice(self.dealable)
                 held.append(kind)
-            result.gained = PowerUpGain(kind=kind, reason=reason, legendary=not mythic and roll < edge, mythic=mythic is not None)
+            result.gained = PowerUpGain(
+                kind=kind, reason=reason, legendary=not mythic and roll < edge, mythic=mythic is not None
+            )
             if reason == "streak":
                 self.right_runs[player.id] = 0
             else:
@@ -1177,7 +1199,9 @@ class Game:
         hidden = silence_left > 0 and show_answer
         peeking = bool(viewer) and self.phase == "answering" and self._affects("peek", viewer)
         decoy = (
-            self._decoy_for(viewer) if viewer and self.phase not in (*PREPARATION_PHASES, *DUEL_PHASES, "finished") else None
+            self._decoy_for(viewer)
+            if viewer and self.phase not in (*PREPARATION_PHASES, *DUEL_PHASES, "finished")
+            else None
         )
         options, screen = self._screen(decoy)
         mine = self.first_wrong.get(viewer) if viewer else None

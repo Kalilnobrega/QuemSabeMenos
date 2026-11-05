@@ -80,8 +80,11 @@ def history_events(kind: str | None = None) -> list[dict]:
 
 async def match_closed(status: str = "finished") -> list[dict]:
     """Espera o histórico fechar a partida e devolve a classificação gravada."""
+
     async def poll():
-        while not (row := main.history.db.execute("SELECT status, players FROM matches").fetchone()) or row[0] != status:
+        while (
+            not (row := main.history.db.execute("SELECT status, players FROM matches").fetchone()) or row[0] != status
+        ):
             await asyncio.sleep(0.02)
         return json.loads(row[1])
 
@@ -183,9 +186,11 @@ async def test_full_game(connect):
 
     for round_number in range(1, 12):  # 10 rodadas + a final impossível
         state = await ana.wait_for(
-            lambda s: s["game"]
-            and s["game"]["round"] == round_number
-            and s["game"]["phase"] not in ("starting", "level", "intro")
+            lambda s: (
+                s["game"]
+                and s["game"]["round"] == round_number
+                and s["game"]["phase"] not in ("starting", "level", "intro")
+            )
         )
         if state["game"]["phase"] == "betting":
             assert state["game"]["question"] is None and state["game"]["theme"]
@@ -196,9 +201,7 @@ async def test_full_game(connect):
             if bia_score > 0:  # sem QI a Bia não aposta, e a aposta da Ana já fecha a fase
                 assert (await bia.call("submit_bet", {"amount": bia_score // 2}))["ok"]
             # Todos apostaram: a pergunta aparece antes do tempo (1 s).
-            state = await ana.wait_for(
-                lambda s: s["game"]["phase"] in ("reading", "answering"), timeout=0.8
-            )
+            state = await ana.wait_for(lambda s: s["game"]["phase"] in ("reading", "answering"), timeout=0.8)
         assert state["game"]["question"]["text"]
         assert state["game"]["correct_option"] is None
 
@@ -223,11 +226,15 @@ async def test_full_game(connect):
     await asyncio.sleep(0.05)  # o histórico fecha a partida logo depois de transmitir o fim
 
     db = main.history.db
-    (status, mode, players), = db.execute("SELECT status, mode, players FROM matches").fetchall()
+    ((status, mode, players),) = db.execute("SELECT status, mode, players FROM matches").fetchall()
     assert (status, mode) == ("finished", "classic")
-    assert [p["nickname"] for p in json.loads(players)] == [p["nickname"] for p in sorted(final["players"], key=lambda p: (-p["score"], p["answer_ms"]))]
+    assert [p["nickname"] for p in json.loads(players)] == [
+        p["nickname"] for p in sorted(final["players"], key=lambda p: (-p["score"], p["answer_ms"]))
+    ]
     assert db.execute("SELECT count(*), sum(bet_round), sum(skipped) FROM rounds").fetchone() == (11, 1, 0)
-    rows = db.execute("SELECT nickname, option, correct, elapsed_ms FROM answers WHERE round = 1 ORDER BY nickname").fetchall()
+    rows = db.execute(
+        "SELECT nickname, option, correct, elapsed_ms FROM answers WHERE round = 1 ORDER BY nickname"
+    ).fetchall()
     assert [(n, o) for n, o, _, _ in rows] == [("Ana", 0), ("Bia", 1)] and all(ms is not None for *_, ms in rows)
     assert all(p["answer_ms"] > 0 for p in final["players"])
 
@@ -247,7 +254,29 @@ async def test_round_ends_when_time_runs_out(connect):
 
     results = await bia.wait_for(lambda s: s["game"]["phase"] == "results", timeout=2)
     bia_result = next(r for r in results["game"]["results"] if r["player_id"] != created["player_id"])
-    assert bia_result == {"player_id": bia_result["player_id"], "option": None, "correct": False, "elapsed_ms": None, "delta": -20, "bonuses": [], "bet": None, "bet_delta": 0, "shielded": 0, "stolen": 0, "robbed": 0, "tolled": 0, "toll_received": 0, "decoy": None, "tricked": 0, "doubled": False, "first_option": None, "expired": [], "gained": None, "bet_gained": None, "specialist_bonus": 0}  # partida de 10: vale o dobro
+    assert bia_result == {
+        "player_id": bia_result["player_id"],
+        "option": None,
+        "correct": False,
+        "elapsed_ms": None,
+        "delta": -20,
+        "bonuses": [],
+        "bet": None,
+        "bet_delta": 0,
+        "shielded": 0,
+        "stolen": 0,
+        "robbed": 0,
+        "tolled": 0,
+        "toll_received": 0,
+        "decoy": None,
+        "tricked": 0,
+        "doubled": False,
+        "first_option": None,
+        "expired": [],
+        "gained": None,
+        "bet_gained": None,
+        "specialist_bonus": 0,
+    }  # partida de 10: vale o dobro
 
 
 async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connect, monkeypatch):
@@ -287,7 +316,16 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
     assert (await bia.call("skip_results"))["ok"]
     # Todos pularam: a próxima pergunta abre bem antes dos 5 s, já com o poder valendo.
     state = await ana.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
-    assert state["game"]["active"] == [{"kind": kind, "by": created["player_id"], "target": target, "reflected_by": None, "legendary": False, "theme": None}]
+    assert state["game"]["active"] == [
+        {
+            "kind": kind,
+            "by": created["player_id"],
+            "target": target,
+            "reflected_by": None,
+            "legendary": False,
+            "theme": None,
+        }
+    ]
     # O roubo é surpresa (o alvo só fica sabendo na revelação) e o Reverso armado é segredo.
     hidden = await bia.wait_for(lambda s: s["game"]["round"] == 2, timeout=1)
     assert hidden["game"]["active"] == ([] if kind in ("steal", "reverse") else state["game"]["active"])
@@ -351,7 +389,9 @@ async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
 
     for name in ("START_SECONDS", "LEVEL_SECONDS", "DUEL_INTRO_SECONDS", "DUEL_RESULTS_SECONDS", "LATE_SECONDS"):
         monkeypatch.setattr(survival, name, 0.05)
-    monkeypatch.setitem(survival.RULES, "true_false", dataclasses.replace(survival.RULES["true_false"], answer_seconds=0.5))
+    monkeypatch.setitem(
+        survival.RULES, "true_false", dataclasses.replace(survival.RULES["true_false"], answer_seconds=0.5)
+    )
     ana, bia, caio = await connect(), await connect(), await connect()
     created = await ana.call("create_room", {"nickname": "Ana", "avatar": "gato"})
     code = created["room"]["code"]

@@ -65,7 +65,18 @@ interface StartScreenProps {
 }
 
 /** "Prepare-se!": o título bate na tela, as regras sobem, os avatares pulam e a contagem fecha. */
-export function StartScreen({ room, receivedAt, endsInMs, eyebrow, title = 'Prepare-se!', icon, rules, power, players, footer }: StartScreenProps) {
+export function StartScreen({
+  room,
+  receivedAt,
+  endsInMs,
+  eyebrow,
+  title = 'Prepare-se!',
+  icon,
+  rules,
+  power,
+  players,
+  footer,
+}: StartScreenProps) {
   const count = useCount(receivedAt, endsInMs)
   useSoundsOnMount([
     ['start', 0],
@@ -78,7 +89,10 @@ export function StartScreen({ room, receivedAt, endsInMs, eyebrow, title = 'Prep
       {icon}
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">{eyebrow}</p>
       <h1 className="intro-slam font-display text-6xl text-brand [text-shadow:0_4px_0_#7a5a00]">{title}</h1>
-      <ul className="intro-step flex max-w-xs flex-col gap-1 font-hand text-lg font-medium text-chalk" style={{ animationDelay: '0.6s' }}>
+      <ul
+        className="intro-step flex max-w-xs flex-col gap-1 font-hand text-lg font-medium text-chalk"
+        style={{ animationDelay: '0.6s' }}
+      >
         {rules.map((rule, index) => (
           <li key={index} className="flex flex-wrap items-center justify-center gap-x-2">
             {rule}
@@ -182,12 +196,21 @@ export function LevelIntro({ difficulty, line }: { difficulty: string; line?: Re
     <section className="flex min-h-[60dvh] w-full flex-col items-center justify-center gap-5 text-center">
       <p className="intro-step text-sm font-semibold tracking-[0.3em] text-steel uppercase">Próximo nível</p>
       <ol ref={trackRef} className="intro-step relative flex items-center gap-1.5" aria-label="Níveis da partida">
-        <span ref={markerRef} className={`absolute rounded-full ${info.marker}`} style={{ transformOrigin: 'left center' }} aria-hidden="true" />
+        <span
+          ref={markerRef}
+          className={`absolute rounded-full ${info.marker}`}
+          style={{ transformOrigin: 'left center' }}
+          aria-hidden="true"
+        />
         {LEVEL_TRACK.map((level, index) => (
           <li
             key={level.key}
             className={`relative rounded-full px-3 py-1 text-xs font-semibold ${
-              index === current ? 'level-land text-ink' : index < current ? 'bg-panel text-steel line-through' : 'bg-panel text-steel'
+              index === current
+                ? 'level-land text-ink'
+                : index < current
+                  ? 'bg-panel text-steel line-through'
+                  : 'bg-panel text-steel'
             }`}
           >
             {level.label}
@@ -205,7 +228,17 @@ export function LevelIntro({ difficulty, line }: { difficulty: string; line?: Re
 }
 
 /** A entrada da pergunta impossível: chama, carimbo e o que está em jogo. */
-export function ImpossibleIntro({ receivedAt, endsInMs, line, children }: { receivedAt: number; endsInMs: number; line: ReactNode; children?: ReactNode }) {
+export function ImpossibleIntro({
+  receivedAt,
+  endsInMs,
+  line,
+  children,
+}: {
+  receivedAt: number
+  endsInMs: number
+  line: ReactNode
+  children?: ReactNode
+}) {
   const count = useCount(receivedAt, endsInMs)
   useSoundsOnMount([
     ['impossible', 0],
@@ -238,7 +271,15 @@ interface EndScreenProps {
 }
 
 /** A moldura do fim de jogo: título, o pódio do modo e os botões de revanche e sair. */
-export function EndScreen({ room, playerId, onPlayAgain, onLeave, done = true, onSkipIntro, children }: EndScreenProps) {
+export function EndScreen({
+  room,
+  playerId,
+  onPlayAgain,
+  onLeave,
+  done = true,
+  onSkipIntro,
+  children,
+}: EndScreenProps) {
   const [notice, setNotice] = useState<string | null>(null)
   const isHost = room.host_id === playerId
   return (
@@ -259,7 +300,9 @@ export function EndScreen({ room, playerId, onPlayAgain, onLeave, done = true, o
               Jogar de novo
             </button>
           ) : (
-            <p className="text-center font-hand text-lg font-medium text-steel">Esperando o anfitrião decidir se tem revanche…</p>
+            <p className="text-center font-hand text-lg font-medium text-steel">
+              Esperando o anfitrião decidir se tem revanche…
+            </p>
           )}
           <LeaveButton onLeave={onLeave} />
         </>
@@ -313,7 +356,12 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
 
   const revealed = (place: number) => stage >= 4 - place
   useEffect(() => {
-    const sounds: Record<number, SoundId | undefined> = { 1: 'slam', 2: 'slam', 3: 'podiumWinner', 4: worst ? 'podiumLoser' : undefined }
+    const sounds: Record<number, SoundId | undefined> = {
+      1: 'slam',
+      2: 'slam',
+      3: 'podiumWinner',
+      4: worst ? 'podiumLoser' : undefined,
+    }
     const sound = sounds[stage]
     if (sound && !(stage === 1 && ranked.length < 3)) playSound(sound)
     // Só quando a etapa muda.
@@ -323,7 +371,14 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
   const done = stage >= PODIUM_STEPS.length
 
   return (
-    <EndScreen room={room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} done={done} onSkipIntro={() => setStage(PODIUM_STEPS.length)}>
+    <EndScreen
+      room={room}
+      playerId={playerId}
+      onPlayAgain={onPlayAgain}
+      onLeave={onLeave}
+      done={done}
+      onSkipIntro={() => setStage(PODIUM_STEPS.length)}
+    >
       <div className="relative flex items-end justify-center gap-2" aria-label="Pódio">
         {stage >= 3 && <Confetti />}
         {places.map(({ place, label, step, order }) => {
@@ -336,7 +391,9 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
                   <div key="shown" className="podium-card relative flex w-full flex-col items-center gap-1">
                     <div className="relative">
                       <img src={avatarUrl(entry.player)} alt="" className={place === 1 ? 'size-20' : 'size-16'} />
-                      {place === 1 && <img src={coroa} alt="" className="icon-bounce absolute -top-5 -right-5 size-10" />}
+                      {place === 1 && (
+                        <img src={coroa} alt="" className="icon-bounce absolute -top-5 -right-5 size-10" />
+                      )}
                     </div>
                     <span className="w-full truncate font-bold">{entry.player.nickname}</span>
                     <span className="font-display text-xl text-brand">{entry.caption}</span>
@@ -345,13 +402,17 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
                   <span className="font-display text-5xl text-steel/40">?</span>
                 )}
               </div>
-              <div className={`flex w-full items-start justify-center rounded-t-xl pt-1 font-display text-2xl ${step}`}>{label}</div>
+              <div className={`flex w-full items-start justify-center rounded-t-xl pt-1 font-display text-2xl ${step}`}>
+                {label}
+              </div>
             </div>
           )
         })}
       </div>
 
-      {worst && stage >= 4 && <Spotlight title="Quem sabe menos" icon={haha} player={worst.player} line={worstLine} tone="text-red-300" />}
+      {worst && stage >= 4 && (
+        <Spotlight title="Quem sabe menos" icon={haha} player={worst.player} line={worstLine} tone="text-red-300" />
+      )}
 
       {done && list}
     </EndScreen>
@@ -359,14 +420,32 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
 }
 
 /** Um jogador em destaque, com o ícone do lado do avatar e uma linha embaixo. */
-export function Spotlight({ title, icon, player, line, tone, winner = false }: { title: string; icon: string; player: PlayerView; line: ReactNode; tone: string; winner?: boolean }) {
+export function Spotlight({
+  title,
+  icon,
+  player,
+  line,
+  tone,
+  winner = false,
+}: {
+  title: string
+  icon: string
+  player: PlayerView
+  line: ReactNode
+  tone: string
+  winner?: boolean
+}) {
   return (
     <div className="podium-card relative flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center">
       {winner && <Confetti />}
       <span className={`font-display text-lg tracking-wide ${tone}`}>{title}</span>
       <div className="relative">
         <img src={avatarUrl(player)} alt="" className="size-20" />
-        <img src={icon} alt="" className={`absolute -top-4 -right-6 size-11 ${winner ? 'icon-bounce' : 'icon-wobble'}`} />
+        <img
+          src={icon}
+          alt=""
+          className={`absolute -top-4 -right-6 size-11 ${winner ? 'icon-bounce' : 'icon-wobble'}`}
+        />
       </div>
       <span className="w-full truncate text-lg font-bold">{player.nickname}</span>
       <span className="font-hand text-lg font-medium text-chalk">{line}</span>
@@ -389,10 +468,21 @@ interface SkipButtonProps {
 /** O Pular da revelação, igual em todos os modos: um botão largo "Próxima" com o tempo esvaziando
  * por trás e, do lado direito, os bichos de quem já está pronto (os outros ficam apagados).
  * Fica flutuando no pé da tela, e quando todos os conectados tocam, a próxima vem. */
-export function SkipButton({ ready, players, playerId, onSkip, endsInMs, durationMs, className = '' }: SkipButtonProps) {
+export function SkipButton({
+  ready,
+  players,
+  playerId,
+  onSkip,
+  endsInMs,
+  durationMs,
+  className = '',
+}: SkipButtonProps) {
   const [skipped, setSkipped] = useState(false)
   // A barra é calculada uma vez, quando a revelação aparece: daí em diante o CSS esvazia sozinho.
-  const [bar] = useState(() => ({ from: durationMs > 0 ? Math.min(1, endsInMs / durationMs) : 0, ms: Math.max(0, endsInMs) }))
+  const [bar] = useState(() => ({
+    from: durationMs > 0 ? Math.min(1, endsInMs / durationMs) : 0,
+    ms: Math.max(0, endsInMs),
+  }))
   const connected = players.filter((p) => p.connected)
   const missing = connected.filter((p) => !ready.includes(p.id)).length
   const isReady = skipped || (playerId !== null && ready.includes(playerId))
@@ -404,7 +494,11 @@ export function SkipButton({ ready, players, playerId, onSkip, endsInMs, duratio
     <div className="pointer-events-auto relative pb-1 shadow-lg shadow-ink">
       {/* A sombra 3D: a escura por baixo e a amarela (a borda do botão amarelo do jogo) recortada por cima. */}
       <span className="absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#3b4664]" aria-hidden="true" />
-      <span className="skip-drain absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#b07f00]" style={drain} aria-hidden="true" />
+      <span
+        className="skip-drain absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#b07f00]"
+        style={drain}
+        aria-hidden="true"
+      />
       <button
         onClick={async () => {
           playSound('skip')
@@ -417,7 +511,11 @@ export function SkipButton({ ready, players, playerId, onSkip, endsInMs, duratio
           isReady ? 'translate-y-[3px]' : ''
         } ${className}`}
       >
-        <span className={`relative flex-1 text-left font-display text-lg tracking-wide ${isReady ? 'text-steel' : 'text-chalk'}`}>{label}</span>
+        <span
+          className={`relative flex-1 text-left font-display text-lg tracking-wide ${isReady ? 'text-steel' : 'text-chalk'}`}
+        >
+          {label}
+        </span>
         <span className="skip-drain absolute inset-0 flex items-center bg-brand pl-4" style={drain} aria-hidden="true">
           <span className="font-display text-lg tracking-wide text-ink">{label}</span>
         </span>
@@ -473,7 +571,17 @@ export interface BannerItem {
 }
 
 /** Os banners entram um de cada vez, batendo na tela como um carimbo. */
-export function BannerList({ items, startDelay = 0.4, step = 0.28, label }: { items: BannerItem[]; startDelay?: number; step?: number; label?: string }) {
+export function BannerList({
+  items,
+  startDelay = 0.4,
+  step = 0.28,
+  label,
+}: {
+  items: BannerItem[]
+  startDelay?: number
+  step?: number
+  label?: string
+}) {
   if (items.length === 0) return null
   return (
     <ul className="flex flex-col gap-1.5" aria-label={label}>
@@ -484,7 +592,11 @@ export function BannerList({ items, startDelay = 0.4, step = 0.28, label }: { it
             item.hit ? 'ring-2 ring-red-400/70' : item.me ? 'ring-1 ring-brand/60' : ''
           }`}
           // Na sabotagem, a tremidinha vem logo depois do carimbo.
-          style={{ animationDelay: item.hit ? `${startDelay + index * step}s, ${startDelay + index * step + 0.45}s` : `${startDelay + index * step}s` }}
+          style={{
+            animationDelay: item.hit
+              ? `${startDelay + index * step}s, ${startDelay + index * step + 0.45}s`
+              : `${startDelay + index * step}s`,
+          }}
         >
           {item.player && <img src={avatarUrl(item.player)} alt="" className="size-8 shrink-0" />}
           <span className="size-5 shrink-0" aria-hidden="true">
@@ -497,7 +609,11 @@ export function BannerList({ items, startDelay = 0.4, step = 0.28, label }: { it
             </span>
             {item.detail && <span className="text-xs font-semibold break-words opacity-75">{item.detail}</span>}
           </span>
-          {item.delta != null && item.delta !== 0 && <span className="shrink-0 font-display text-lg">{item.delta > 0 ? `+${item.delta}` : `−${Math.abs(item.delta)}`}</span>}
+          {item.delta != null && item.delta !== 0 && (
+            <span className="shrink-0 font-display text-lg">
+              {item.delta > 0 ? `+${item.delta}` : `−${Math.abs(item.delta)}`}
+            </span>
+          )}
         </li>
       ))}
     </ul>
@@ -519,7 +635,17 @@ export interface ChipItem {
 }
 
 /** Os poderes valendo numa linha só (quebra se não couber). Tocar numa etiqueta mostra a explicação. */
-export function EffectChips({ items, startDelay = 0, step = 0.18, concealed = false }: { items: ChipItem[]; startDelay?: number; step?: number; concealed?: boolean }) {
+export function EffectChips({
+  items,
+  startDelay = 0,
+  step = 0.18,
+  concealed = false,
+}: {
+  items: ChipItem[]
+  startDelay?: number
+  step?: number
+  concealed?: boolean
+}) {
   const [open, setOpen] = useState<string | null>(null)
   if (items.length === 0) return null
   const tip = items.find((item) => item.key === open)?.tip
@@ -542,7 +668,10 @@ export function EffectChips({ items, startDelay = 0, step = 0.18, concealed = fa
               {item.pips && (
                 <span className="flex gap-0.5" aria-label={`faltam ${item.pips.left} de ${item.pips.total}`}>
                   {Array.from({ length: item.pips.total }, (_, i) => (
-                    <span key={i} className={`size-1.5 rounded-full bg-current ${i < item.pips!.left ? '' : 'opacity-30'}`} />
+                    <span
+                      key={i}
+                      className={`size-1.5 rounded-full bg-current ${i < item.pips!.left ? '' : 'opacity-30'}`}
+                    />
                   ))}
                 </span>
               )}

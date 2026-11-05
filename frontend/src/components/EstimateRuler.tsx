@@ -21,7 +21,15 @@ const GUESS_GAP_MS = 280 // entre um chute e o próximo
  * régua é onde o chute ainda ganha QI, e cada um aparece num balão com o número que chutou.
  * Animação: a régua abre, o pino cai e os chutes caem do mais longe para o mais perto.
  */
-export function EstimateRuler({ estimate, players, playerId }: { estimate: EstimateView; players: PlayerView[]; playerId: string | null }) {
+export function EstimateRuler({
+  estimate,
+  players,
+  playerId,
+}: {
+  estimate: EstimateView
+  players: PlayerView[]
+  playerId: string | null
+}) {
   const answer = estimate.answer!
   const unit = estimate.unit
   const reference = estimate.reference ?? (Math.abs(answer) || 1)
@@ -76,7 +84,9 @@ export function EstimateRuler({ estimate, players, playerId }: { estimate: Estim
         className="pin-drop absolute top-[6.2rem] z-20 flex -translate-x-1/2 flex-col items-center"
         style={{ left: '50%', animationDelay: `${RULER_MS}ms` }}
       >
-        <span className="rounded-md bg-emerald-400 px-2 font-display text-ink shadow">{formatEstimate(answer, unit)}</span>
+        <span className="rounded-md bg-emerald-400 px-2 font-display text-ink shadow">
+          {formatEstimate(answer, unit)}
+        </span>
         <span className="h-5 w-1 rounded-b-full bg-emerald-400" />
       </div>
 
