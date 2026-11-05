@@ -7,6 +7,8 @@ import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
+import { draftValue } from '../lib/guessDraft'
+import { EstimateKeypad } from './EstimateKeypad'
 import { EstimateRuler } from './EstimateRuler'
 import { FactCard, Podium, Ranking } from './Game'
 import { LevelIntro, SkipButton, StartScreen } from './Screens'
@@ -20,6 +22,10 @@ interface Props {
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
 }
+
+// A opção de poderes da sala pode vir ligada de outro modo. Ligar isto quando o Chutômetro tiver poderes:
+// com eles, só o teclado da tela digita.
+const ESTIMATE_HAS_POWERS = false
 
 const ESTIMATE_LEVEL_LINES: Record<string, string> = {
   medium: 'Agora chegar perto vale mais QI.',
@@ -51,19 +57,6 @@ export function Estimate({ snapshot, playerId, onGuess, onSkip, onPlayAgain, onL
   )
 }
 
-/** "1.500", "1500", "3,14" e "-89,2" viram número; o resto é inválido. */
-function parseGuess(raw: string): number | null {
-  let text = raw.trim().replace(/\s/g, '').replace('−', '-')
-  if (!/^-?[\d.,]+$/.test(text)) return null
-  if (text.includes(',')) {
-    text = text.replace(/\./g, '').replace(',', '.')
-  } else if (/^-?\d{1,3}(\.\d{3})+$/.test(text)) {
-    text = text.replace(/\./g, '') // ponto de milhar, como em 1.500
-  }
-  const value = Number(text)
-  return Number.isFinite(value) ? value : null
-}
-
 function withUnit(value: number, unit: string | null | undefined) {
   return unit ? `${formatEstimate(value, unit)} ${unit}` : formatEstimate(value, unit)
 }
@@ -93,7 +86,6 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
   const { room, receivedAt } = snapshot
   const estimate = room.estimate!
   const [draft, setDraft] = useState('')
-  const [negative, setNegative] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const answering = estimate.phase === 'answering'
   const results = estimate.phase === 'results'
@@ -113,13 +105,10 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
   }, [results])
 
   const submit = async () => {
-    const parsed = parseGuess(draft)
-    if (parsed === null) {
-      setError('Digite só o número, como 1500 ou 3,14.')
-      return
-    }
+    const value = draftValue(draft)
+    if (value === null) return
     playSound('select')
-    setError(await onGuess(negative ? -Math.abs(parsed) : parsed))
+    setError(await onGuess(value))
   }
 
   return (
@@ -146,7 +135,12 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
         />
       )}
 
-      <h2 className="text-center font-display text-3xl leading-tight tracking-wide">{estimate.text}</h2>
+      {/* Menor enquanto o teclado está na tela, para o botão de chutar caber no celular. */}
+      <h2
+        className={`text-center font-display leading-tight tracking-wide ${results || guessed ? 'text-3xl' : 'text-2xl'}`}
+      >
+        {estimate.text}
+      </h2>
 
       {results ? (
         <Reveal estimate={estimate} players={room.players} playerId={playerId} onSkip={onSkip} />
@@ -157,49 +151,18 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
           <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />
         </div>
       ) : (
-        <form
-          className="flex flex-col gap-3"
-          onSubmit={(e) => {
-            e.preventDefault()
-            void submit()
-          }}
-        >
-          <div className="flex items-stretch gap-2">
-            <button
-              type="button"
-              onClick={() => setNegative((n) => !n)}
-              disabled={!answering}
-              aria-pressed={negative}
-              aria-label="Número negativo"
-              className={`btn-3d btn-sm w-12 shrink-0 rounded-xl font-display text-2xl ${negative ? 'btn-brand is-pressed text-ink' : 'btn-dark text-steel'}`}
-            >
-              −
-            </button>
-            <label className="flex min-w-0 flex-1 items-center gap-2 rounded-xl bg-panel px-4 focus-within:outline-2 focus-within:outline-brand">
-              <input
-                value={draft}
-                onChange={(e) => setDraft(e.target.value)}
-                inputMode="decimal"
-                autoComplete="off"
-                enterKeyHint="send"
-                placeholder="Seu chute"
-                disabled={!answering}
-                aria-label="Seu chute"
-                className="min-w-0 flex-1 bg-transparent py-3 font-display text-3xl text-chalk outline-none placeholder:text-steel/60"
-              />
-              {estimate.unit && <span className="shrink-0 font-display text-2xl text-steel">{estimate.unit}</span>}
-            </label>
-          </div>
-          <button
-            type="submit"
-            disabled={!answering || !draft.trim()}
-            className={`btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink ${answering && draft.trim() ? '' : 'opacity-50'}`}
-          >
-            Chutar!
-          </button>
+        <div className="flex flex-col gap-3">
+          <EstimateKeypad
+            draft={draft}
+            unit={estimate.unit}
+            disabled={!answering}
+            physicalKeys={!(ESTIMATE_HAS_POWERS && room.settings.powers)}
+            onChange={setDraft}
+            onSubmit={() => void submit()}
+          />
           {error && <p className="text-center text-sm text-danger">{error}</p>}
           <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />
-        </form>
+        </div>
       )}
 
       <LeaveButton onLeave={onLeave} />

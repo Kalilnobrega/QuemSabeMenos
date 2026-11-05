@@ -341,7 +341,7 @@ const GUIDES: Record<Mode, Guide> = {
       {
         title: 'Como funciona',
         items: [
-          'Todo mundo vê a mesma pergunta e tem 20 segundos para digitar um chute. Dá para usar vírgula (3,14) e o botão − para números negativos.',
+          'Todo mundo vê a mesma pergunta e tem 20 segundos para digitar um chute no teclado do jogo, que tem vírgula (3,14), a tecla 000 para números grandes e − para os negativos. No computador, o teclado físico também funciona.',
           'Na revelação, a régua mostra a resposta no meio, a zona verde em que o chute ainda ganha QI e o avatar de cada um no próprio chute.',
           'A partida tem 10, 15 ou 20 perguntas e sobe de nível como no Clássico: primeiro as fáceis, depois as médias e por fim as difíceis. Não tem aposta, pergunta final nem poderes.',
         ],
