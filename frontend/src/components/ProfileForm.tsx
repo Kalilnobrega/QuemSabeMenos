@@ -106,7 +106,7 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
         </div>
       </fieldset>
 
-      {error && <p className="rounded-xl bg-red-500/15 px-4 py-3 text-center text-red-300">{error}</p>}
+      {error && <p className="rounded-xl bg-danger-strong/15 px-4 py-3 text-center text-danger">{error}</p>}
 
       <button
         type="submit"

@@ -17,7 +17,7 @@ import type { PlayerView, PowerUpUse } from '../types/events'
 import { BannerList, EffectChips, SkipButton, type BannerItem, type ChipItem } from './Screens'
 
 const ICON_STROKE = {
-  stroke: '#12141B',
+  stroke: 'var(--color-ink)',
   strokeWidth: 1.8,
   strokeLinejoin: 'round' as const,
   strokeLinecap: 'round' as const,
@@ -27,8 +27,8 @@ const ICON_STROKE = {
 export function CategoryTag({ kind, note }: { kind: Kind; note?: string }) {
   const category = powerCategory(kind)
   return (
-    <span className="text-[0.65rem] font-semibold tracking-wide uppercase">
-      <span className={category === 'help' ? 'text-emerald-300' : 'text-red-300'}>{CATEGORY_LABEL[category]}</span>
+    <span className="text-tag font-semibold tracking-wide uppercase">
+      <span className={category === 'help' ? 'text-success' : 'text-danger'}>{CATEGORY_LABEL[category]}</span>
       {note && <span className="font-normal text-steel normal-case"> · {note}</span>}
     </span>
   )
@@ -37,7 +37,7 @@ export function CategoryTag({ kind, note }: { kind: Kind; note?: string }) {
 /** Mítico e lendário, na cor do botão. O mítico é só "Mítico"; o lendário é sempre uma sabotagem. */
 function RarityTag({ rarity }: { rarity: 'mythic' | 'legendary' }) {
   return (
-    <span className="text-[0.65rem] font-bold tracking-wide uppercase">
+    <span className="text-tag font-bold tracking-wide uppercase">
       {rarity === 'mythic' ? 'Mítico' : 'Sabotagem lendária'}
     </span>
   )
@@ -48,7 +48,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="2.5" y="4" width="19" height="16" rx="4" fill="#FBBF24" {...ICON_STROKE} />
-        <text x="12" y="16.3" textAnchor="middle" fontSize="10" fontWeight="900" fill="#12141B">
+        <text x="12" y="16.3" textAnchor="middle" fontSize="10" fontWeight="900" fill="var(--color-ink)">
           ×2
         </text>
       </svg>
@@ -58,8 +58,8 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12Z" fill="#5EEAD4" {...ICON_STROKE} />
-        <circle cx="12" cy="12" r="3.6" fill="#12141B" />
-        <circle cx="13.2" cy="10.8" r="1.1" fill="#F8FAFC" />
+        <circle cx="12" cy="12" r="3.6" fill="var(--color-ink)" />
+        <circle cx="13.2" cy="10.8" r="1.1" fill="var(--color-chalk)" />
       </svg>
     )
   }
@@ -69,7 +69,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <circle cx="11" cy="13" r="8.5" fill="#BEF264" {...ICON_STROKE} />
         <path d="M11 8v5l3 2" fill="none" {...ICON_STROKE} />
         <path d="M9 2.5h4" {...ICON_STROKE} />
-        <circle cx="19.5" cy="5.5" r="3.5" fill="#12141B" />
+        <circle cx="19.5" cy="5.5" r="3.5" fill="var(--color-ink)" />
         <path d="M19.5 3.8v3.4M17.8 5.5h3.4" stroke="#BEF264" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     )
@@ -77,10 +77,16 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'second_chance') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" fill="none" stroke="#12141B" strokeWidth="5" strokeLinecap="round" />
+        <path
+          d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"
+          fill="none"
+          stroke="var(--color-ink)"
+          strokeWidth="5"
+          strokeLinecap="round"
+        />
         <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3" fill="none" stroke="#F9A8D4" strokeWidth="2.6" strokeLinecap="round" />
         <path d="M18.5 2.5v5h-5" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
-        <text x="12" y="15.6" textAnchor="middle" fontSize="9" fontWeight="900" fill="#F8FAFC">
+        <text x="12" y="15.6" textAnchor="middle" fontSize="9" fontWeight="900" fill="var(--color-chalk)">
           2
         </text>
       </svg>
@@ -90,7 +96,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="4" y="1.5" width="16" height="21" rx="2.5" fill="#EF4444" {...ICON_STROKE} />
-        <ellipse cx="12" cy="12" rx="5.5" ry="8" transform="rotate(30 12 12)" fill="#F8FAFC" />
+        <ellipse cx="12" cy="12" rx="5.5" ry="8" transform="rotate(30 12 12)" fill="var(--color-chalk)" />
         <g fill="none" stroke="#EF4444" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
           <path d="M8.2 14.2 12.4 8.4M9.6 8.2l2.9.1.1 2.9" />
           <path d="M15.8 9.8 11.6 15.6M14.4 15.8l-2.9-.1-.1-2.9" />
@@ -127,7 +133,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           textAnchor="middle"
           fontSize="8"
           fontWeight="900"
-          fill="#12141B"
+          fill="var(--color-ink)"
           transform="rotate(-10 6.5 8)"
         >
           a
@@ -138,7 +144,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           textAnchor="middle"
           fontSize="8"
           fontWeight="900"
-          fill="#12141B"
+          fill="var(--color-ink)"
           transform="rotate(12 17.5 15)"
         >
           Z
@@ -157,7 +163,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <ellipse cx="12" cy="10" rx="7" ry="8.5" fill="#67E8F9" {...ICON_STROKE} />
-        <path d="M8.5 6.5 11 4M8 10l5-5" stroke="#F8FAFC" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M8.5 6.5 11 4M8 10l5-5" stroke="var(--color-chalk)" strokeWidth="1.5" strokeLinecap="round" />
         <path d="M12 18.5v4M8.5 22.5h7" {...ICON_STROKE} />
       </svg>
     )
@@ -165,10 +171,10 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'magnifier') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="m14.5 14.5 7 7" stroke="#12141B" strokeWidth="5" strokeLinecap="round" />
+        <path d="m14.5 14.5 7 7" stroke="var(--color-ink)" strokeWidth="5" strokeLinecap="round" />
         <path d="m14.5 14.5 7 7" stroke="#A16207" strokeWidth="2.8" strokeLinecap="round" />
         <circle cx="9.5" cy="9.5" r="7.5" fill="#FEF9C3" {...ICON_STROKE} strokeWidth={2.2} />
-        <path d="M6 8a4 4 0 0 1 3-3" fill="none" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M6 8a4 4 0 0 1 3-3" fill="none" stroke="var(--color-chalk)" strokeWidth="1.6" strokeLinecap="round" />
       </svg>
     )
   }
@@ -177,7 +183,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <circle cx="12" cy="12" r="9.5" fill="#CBD5E1" {...ICON_STROKE} />
         <path d="M12 7v5l3 2" fill="none" {...ICON_STROKE} />
-        <path d="m4.5 4.5 15 15" stroke="#12141B" strokeWidth="4" strokeLinecap="round" />
+        <path d="m4.5 4.5 15 15" stroke="var(--color-ink)" strokeWidth="4" strokeLinecap="round" />
         <path d="m4.5 4.5 15 15" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" />
       </svg>
     )
@@ -185,12 +191,12 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'fifty_fifty') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <circle cx="12" cy="12" r="10" fill="#A78BFA" stroke="#12141B" strokeWidth="1.8" />
-        <path d="M6 18 18 6" stroke="#12141B" strokeWidth="1.8" />
-        <text x="8.2" y="11" textAnchor="middle" fontSize="7" fontWeight="900" fill="#12141B">
+        <circle cx="12" cy="12" r="10" fill="#A78BFA" stroke="var(--color-ink)" strokeWidth="1.8" />
+        <path d="M6 18 18 6" stroke="var(--color-ink)" strokeWidth="1.8" />
+        <text x="8.2" y="11" textAnchor="middle" fontSize="7" fontWeight="900" fill="var(--color-ink)">
           50
         </text>
-        <text x="15.8" y="18.6" textAnchor="middle" fontSize="7" fontWeight="900" fill="#12141B">
+        <text x="15.8" y="18.6" textAnchor="middle" fontSize="7" fontWeight="900" fill="var(--color-ink)">
           50
         </text>
       </svg>
@@ -202,11 +208,17 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path
           d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z"
           fill="#7DD3FC"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="1.8"
           strokeLinejoin="round"
         />
-        <path d="M12 5.5v13M7.5 9.5h9" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" opacity=".8" />
+        <path
+          d="M12 5.5v13M7.5 9.5h9"
+          stroke="var(--color-chalk)"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          opacity=".8"
+        />
       </svg>
     )
   }
@@ -216,7 +228,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path d="M9 5V4a3 3 0 0 1 6 0v1" fill="none" {...ICON_STROKE} />
         <rect x="4" y="5" width="16" height="17" rx="4" fill="#D97706" {...ICON_STROKE} />
         <rect x="7.5" y="13" width="9" height="6" rx="1.5" fill="#FBBF24" {...ICON_STROKE} />
-        <path d="M12 8.5v3M10.5 10h3" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M12 8.5v3M10.5 10h3" stroke="var(--color-chalk)" strokeWidth="1.6" strokeLinecap="round" />
       </svg>
     )
   }
@@ -232,7 +244,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         />
         <path
           d="M4.6 19.4h12.6"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="3.2"
           strokeLinecap="round"
           transform="rotate(-16 11 12)"
@@ -247,7 +259,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path
           d="M15.5 21.5h6m0 0-2.4-2.4m2.4 2.4-2.4 2.4"
           fill="none"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="3.2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -288,7 +300,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         />
         <path
           d="m15.6 7.2 1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3 1-2.1Z"
-          fill="#F8FAFC"
+          fill="var(--color-chalk)"
           transform="rotate(10 15.5 10.5)"
         />
       </svg>
@@ -307,10 +319,10 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M4 22V5.5a1.5 1.5 0 0 1 3 0V22" fill="#FDA4AF" {...ICON_STROKE} />
-        <path d="M7 9h14v3.5H7Z" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M7 9h14v3.5H7Z" fill="var(--color-chalk)" {...ICON_STROKE} />
         <path d="M10 9 8.5 12.5M14 9l-1.5 3.5M18 9l-1.5 3.5" stroke="#F43F5E" strokeWidth="1.6" />
         <circle cx="16" cy="18" r="3.5" fill="#FBBF24" {...ICON_STROKE} />
-        <path d="M16 16.5v3" stroke="#12141B" strokeWidth="1.4" strokeLinecap="round" />
+        <path d="M16 16.5v3" stroke="var(--color-ink)" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     )
   }
@@ -332,7 +344,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           {...ICON_STROKE}
         />
         <path d="M2 6.5 4.5 8M22 6.5 19.5 8M12 1.5V4" stroke="#FDE68A" strokeWidth="1.8" strokeLinecap="round" />
-        <path d="M12 9.5v6M9 12.5h6" stroke="#F8FAFC" strokeWidth="2.2" strokeLinecap="round" />
+        <path d="M12 9.5v6M9 12.5h6" stroke="var(--color-chalk)" strokeWidth="2.2" strokeLinecap="round" />
       </svg>
     )
   }
@@ -340,8 +352,8 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <rect x="2" y="4" width="20" height="16" rx="3" fill="#C084FC" {...ICON_STROKE} />
-        <path d="M5.5 10h9M5.5 14h6" stroke="#F8FAFC" strokeWidth="1.8" strokeLinecap="round" />
-        <circle cx="18" cy="13" r="3.2" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M5.5 10h9M5.5 14h6" stroke="var(--color-chalk)" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="18" cy="13" r="3.2" fill="var(--color-chalk)" {...ICON_STROKE} />
         <path d="M16.6 11.6 19.4 14.4M19.4 11.6l-2.8 2.8" stroke="#EF4444" strokeWidth="1.5" strokeLinecap="round" />
       </svg>
     )
@@ -354,7 +366,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           fill="#FEF08A"
           {...ICON_STROKE}
         />
-        <circle cx="12" cy="12" r="3.5" fill="#F8FAFC" {...ICON_STROKE} />
+        <circle cx="12" cy="12" r="3.5" fill="var(--color-chalk)" {...ICON_STROKE} />
       </svg>
     )
   }
@@ -366,7 +378,13 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           fill="#7DD3FC"
           {...ICON_STROKE}
         />
-        <path d="M9 15.5a3 3 0 0 0 3 3" fill="none" stroke="#F8FAFC" strokeWidth="1.8" strokeLinecap="round" />
+        <path
+          d="M9 15.5a3 3 0 0 0 3 3"
+          fill="none"
+          stroke="var(--color-chalk)"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
       </svg>
     )
   }
@@ -377,12 +395,12 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path
           d="M7 12h8.5M13 9l3 3-3 3"
           fill="none"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        <path d="M19 8.5v7" stroke="#12141B" strokeWidth="1.4" strokeDasharray="1.6 1.6" />
+        <path d="M19 8.5v7" stroke="var(--color-ink)" strokeWidth="1.4" strokeDasharray="1.6 1.6" />
       </svg>
     )
   }
@@ -391,7 +409,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M5 9 7 4l3 3 2-4 2 4 3-3 2 5Z" fill="#FDA4AF" {...ICON_STROKE} />
         <path d="M5 9h14v3H5Z" fill="#FB7185" {...ICON_STROKE} />
-        <path d="M4 21 20 13" stroke="#12141B" strokeWidth="2.6" strokeLinecap="round" />
+        <path d="M4 21 20 13" stroke="var(--color-ink)" strokeWidth="2.6" strokeLinecap="round" />
         <path d="M4 21 20 13" stroke="#F43F5E" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     )
@@ -401,9 +419,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M3 10c2-5 16-5 18 0l-2 1H5Z" fill="#CBD5E1" {...ICON_STROKE} />
         <path d="M5 11h14c0 6-3 10-7 10s-7-4-7-10Z" fill="#94A3B8" {...ICON_STROKE} />
-        <path d="M6 14h12v3H6Z" fill="#12141B" />
-        <circle cx="9" cy="15.5" r="1" fill="#F8FAFC" />
-        <circle cx="15" cy="15.5" r="1" fill="#F8FAFC" />
+        <path d="M6 14h12v3H6Z" fill="var(--color-ink)" />
+        <circle cx="9" cy="15.5" r="1" fill="var(--color-chalk)" />
+        <circle cx="15" cy="15.5" r="1" fill="var(--color-chalk)" />
       </svg>
     )
   }
@@ -411,10 +429,10 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <circle cx="12" cy="12" r="9" fill="#FCD34D" {...ICON_STROKE} />
-        <circle cx="9" cy="9.5" r="1.2" fill="#12141B" />
-        <circle cx="15" cy="9.5" r="1.2" fill="#12141B" />
+        <circle cx="9" cy="9.5" r="1.2" fill="var(--color-ink)" />
+        <circle cx="15" cy="9.5" r="1.2" fill="var(--color-ink)" />
         <path d="M3.5 13.5h17v3.5h-17Z" fill="#A8A29E" {...ICON_STROKE} />
-        <path d="M8 13.5v3.5M12 13.5v3.5M16 13.5v3.5" stroke="#12141B" strokeWidth="1.2" />
+        <path d="M8 13.5v3.5M12 13.5v3.5M16 13.5v3.5" stroke="var(--color-ink)" strokeWidth="1.2" />
       </svg>
     )
   }
@@ -423,7 +441,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M4 18 3 7l5 4 4-7 4 7 5-4-1 11Z" fill="#D4D4D8" {...ICON_STROKE} />
         <path d="M4 18h16v3H4Z" fill="#71717A" {...ICON_STROKE} />
-        <circle cx="12" cy="13.5" r="1.6" fill="#12141B" />
+        <circle cx="12" cy="13.5" r="1.6" fill="var(--color-ink)" />
       </svg>
     )
   }
@@ -441,7 +459,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'medkit') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <rect x="2.5" y="6" width="19" height="14" rx="3" fill="#F8FAFC" {...ICON_STROKE} />
+        <rect x="2.5" y="6" width="19" height="14" rx="3" fill="var(--color-chalk)" {...ICON_STROKE} />
         <path d="M9 6V4h6v2" fill="none" {...ICON_STROKE} />
         <path d="M12 9.5v7M8.5 13h7" stroke="#EF4444" strokeWidth="2.6" strokeLinecap="round" />
       </svg>
@@ -453,8 +471,8 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <circle cx="8" cy="14" r="5.5" fill="#22C55E" {...ICON_STROKE} />
         <circle cx="16" cy="13" r="6" fill="#16A34A" {...ICON_STROKE} />
         <circle cx="12" cy="8.5" r="5" fill="#4ADE80" {...ICON_STROKE} />
-        <circle cx="10.5" cy="13" r="1" fill="#12141B" />
-        <circle cx="13.5" cy="13" r="1" fill="#12141B" />
+        <circle cx="10.5" cy="13" r="1" fill="var(--color-ink)" />
+        <circle cx="13.5" cy="13" r="1" fill="var(--color-ink)" />
       </svg>
     )
   }
@@ -466,9 +484,9 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           fill="#A78BFA"
           {...ICON_STROKE}
         />
-        <circle cx="8.7" cy="11" r="2" fill="#12141B" />
-        <circle cx="15.3" cy="11" r="2" fill="#12141B" />
-        <path d="M10 20v-2M14 20v-2" stroke="#12141B" strokeWidth="1.4" />
+        <circle cx="8.7" cy="11" r="2" fill="var(--color-ink)" />
+        <circle cx="15.3" cy="11" r="2" fill="var(--color-ink)" />
+        <path d="M10 20v-2M14 20v-2" stroke="var(--color-ink)" strokeWidth="1.4" />
       </svg>
     )
   }
@@ -477,7 +495,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M8 3c2.5 3.5 4 6 4 8a4 4 0 0 1-8 0c0-2 1.5-4.5 4-8Z" fill="#EF4444" {...ICON_STROKE} />
         <path d="M16 9c2.5 3.5 4 6 4 8a4 4 0 0 1-8 0c0-2 1.5-4.5 4-8Z" fill="#B91C1C" {...ICON_STROKE} />
-        <path d="M9.5 14.5 14 16" stroke="#F8FAFC" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M9.5 14.5 14 16" stroke="var(--color-chalk)" strokeWidth="1.6" strokeLinecap="round" />
       </svg>
     )
   }
@@ -488,7 +506,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path
           d="M11 7.1 16.8 14.2 20.5 20.5 14.2 16.8 7.1 11Z"
           fill="#E2E8F0"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="1.1"
           strokeLinejoin="round"
         />
@@ -501,14 +519,14 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <path
           d="M20.5 21.3Q21.8 22.9 20.5 23.7Q19.2 22.9 20.5 21.3Z"
           fill="#DC2626"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="0.6"
         />
-        <path d="M5 12.6 12.6 5" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
+        <path d="M5 12.6 12.6 5" stroke="var(--color-ink)" strokeWidth="3.4" strokeLinecap="round" />
         <path d="M5 12.6 12.6 5" stroke="#FBBF24" strokeWidth="1.8" strokeLinecap="round" />
-        <path d="M7.8 7.8 4.1 4.1" stroke="#12141B" strokeWidth="3.4" strokeLinecap="round" />
+        <path d="M7.8 7.8 4.1 4.1" stroke="var(--color-ink)" strokeWidth="3.4" strokeLinecap="round" />
         <path d="M7.8 7.8 4.1 4.1" stroke="#B45309" strokeWidth="1.8" strokeLinecap="round" />
-        <circle cx="3.1" cy="3.1" r="1.7" fill="#FBBF24" stroke="#12141B" strokeWidth="1.1" />
+        <circle cx="3.1" cy="3.1" r="1.7" fill="#FBBF24" stroke="var(--color-ink)" strokeWidth="1.1" />
       </svg>
     )
   }
@@ -527,7 +545,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'short_fuse') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="#12141B" strokeWidth="3.2" strokeLinecap="round" />
+        <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="var(--color-ink)" strokeWidth="3.2" strokeLinecap="round" />
         <path d="M4 20c3-1 5-3 6-6" fill="none" stroke="#E5E7EB" strokeWidth="1.6" strokeLinecap="round" />
         <path
           d="M13 3.5c2.8 2.3 5 5 5 8a5 5 0 0 1-10 0c0-2 1-3.6 2.3-4.8.2 1.6 1 2.4 1.9 2.6-.2-2.2.2-4 .8-5.8Z"
@@ -543,9 +561,15 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <circle cx="8.5" cy="14.5" r="5.5" fill="#334155" {...ICON_STROKE} />
         <circle cx="15.5" cy="14.5" r="5.5" fill="#475569" {...ICON_STROKE} />
-        <path d="M15.5 9V6.5c0-1.5 1.5-2.5 3-2" fill="none" stroke="#12141B" strokeWidth="1.8" strokeLinecap="round" />
+        <path
+          d="M15.5 9V6.5c0-1.5 1.5-2.5 3-2"
+          fill="none"
+          stroke="var(--color-ink)"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+        />
         <circle cx="19" cy="4" r="1.6" fill="#FB923C" />
-        <text x="15.5" y="17.3" textAnchor="middle" fontSize="7" fontWeight="900" fill="#F8FAFC">
+        <text x="15.5" y="17.3" textAnchor="middle" fontSize="7" fontWeight="900" fill="var(--color-chalk)">
           2
         </text>
       </svg>
@@ -555,14 +579,14 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
         <path d="M3 21V11a6 6 0 0 1 12 0v10l-2-1.5L11 21l-2-1.5L7 21l-2-1.5Z" fill="#E0E7FF" {...ICON_STROKE} />
-        <circle cx="7" cy="11" r="1.2" fill="#12141B" />
-        <circle cx="11" cy="11" r="1.2" fill="#12141B" />
+        <circle cx="7" cy="11" r="1.2" fill="var(--color-ink)" />
+        <circle cx="11" cy="11" r="1.2" fill="var(--color-ink)" />
         <path
           d="M14 3.5h7a1.5 1.5 0 0 1 1.5 1.5v4A1.5 1.5 0 0 1 21 10.5h-3.5L15 13v-2.5h-1A1.5 1.5 0 0 1 12.5 9V5A1.5 1.5 0 0 1 14 3.5Z"
           fill="#A5B4FC"
           {...ICON_STROKE}
         />
-        <text x="17.5" y="9.3" textAnchor="middle" fontSize="5.5" fontWeight="900" fill="#12141B">
+        <text x="17.5" y="9.3" textAnchor="middle" fontSize="5.5" fontWeight="900" fill="var(--color-ink)">
           ?
         </text>
       </svg>
@@ -571,10 +595,15 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'thermometer') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <path d="M10 4a2 2 0 0 1 4 0v10.3a4 4 0 1 1-4 0Z" fill="#F8FAFC" {...ICON_STROKE} />
+        <path d="M10 4a2 2 0 0 1 4 0v10.3a4 4 0 1 1-4 0Z" fill="var(--color-chalk)" {...ICON_STROKE} />
         <path d="M12 7.5v8" stroke="#EF4444" strokeWidth="2" strokeLinecap="round" />
         <circle cx="12" cy="17.7" r="2.4" fill="#EF4444" />
-        <path d="M15.5 6.5h2M15.5 9.5h2M15.5 12.5h2" stroke="#12141B" strokeWidth="1.3" strokeLinecap="round" />
+        <path
+          d="M15.5 6.5h2M15.5 9.5h2M15.5 12.5h2"
+          stroke="var(--color-ink)"
+          strokeWidth="1.3"
+          strokeLinecap="round"
+        />
       </svg>
     )
   }
@@ -590,7 +619,7 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
           strokeWidth="1.3"
           strokeLinecap="round"
         />
-        <path d="M19 6.5l1.5-2.2" stroke="#12141B" strokeWidth="1.6" strokeLinecap="round" />
+        <path d="M19 6.5l1.5-2.2" stroke="var(--color-ink)" strokeWidth="1.6" strokeLinecap="round" />
         <circle cx="20.8" cy="3.8" r="1.4" fill="#FB923C" />
       </svg>
     )
@@ -598,15 +627,24 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
   if (kind === 'scratch') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-        <rect x="2.5" y="5" width="19" height="14" rx="2.5" fill="#D4D4D8" stroke="#12141B" strokeWidth="1.8" />
+        <rect
+          x="2.5"
+          y="5"
+          width="19"
+          height="14"
+          rx="2.5"
+          fill="#D4D4D8"
+          stroke="var(--color-ink)"
+          strokeWidth="1.8"
+        />
         <path
           d="M6 15c2-3 3 1 5-2s3 1 5-2 2 0 2 0"
           fill="none"
-          stroke="#FFC107"
+          stroke="var(--color-brand)"
           strokeWidth="2.4"
           strokeLinecap="round"
         />
-        <circle cx="18" cy="8.5" r="1.3" fill="#12141B" />
+        <circle cx="18" cy="8.5" r="1.3" fill="var(--color-ink)" />
       </svg>
     )
   }
@@ -615,12 +653,12 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       <path
         d="M8 5.5h8l-1.5 2.5c3.5 2 5.5 5 5.5 8.5 0 3-2.5 5-8 5s-8-2-8-5c0-3.5 2-6.5 5.5-8.5L8 5.5Z"
         fill="#34D399"
-        stroke="#12141B"
+        stroke="var(--color-ink)"
         strokeWidth="1.8"
         strokeLinejoin="round"
       />
-      <path d="M7.5 3.5h9" stroke="#12141B" strokeWidth="1.8" strokeLinecap="round" />
-      <text x="12" y="18" textAnchor="middle" fontSize="8" fontWeight="900" fill="#12141B">
+      <path d="M7.5 3.5h9" stroke="var(--color-ink)" strokeWidth="1.8" strokeLinecap="round" />
+      <text x="12" y="18" textAnchor="middle" fontSize="8" fontWeight="900" fill="var(--color-ink)">
         $
       </text>
     </svg>
@@ -663,7 +701,7 @@ export function ScratchCard({
     gradient.addColorStop(1, '#A1A1AA')
     ctx.fillStyle = gradient
     ctx.fillRect(0, 0, width, height)
-    ctx.fillStyle = 'rgba(18, 20, 27, 0.35)'
+    ctx.fillStyle = 'rgba(11, 15, 26, 0.35)'
     ctx.font = '18px "Lilita One", system-ui, sans-serif'
     ctx.textAlign = 'center'
     ctx.textBaseline = 'middle'
@@ -758,7 +796,7 @@ export function Magnifier({ active, children }: { active: boolean; children: Rea
           />
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute z-30 rounded-full border-[5px] border-[#12141B] shadow-[inset_0_0_0_3px_#FEF08A,0_6px_18px_rgba(0,0,0,0.5)]"
+            className="pointer-events-none absolute z-30 rounded-full border-[5px] border-ink shadow-[inset_0_0_0_3px_#FEF08A,0_6px_18px_rgba(0,0,0,0.5)]"
             style={{ width: LENS, height: LENS, left: lens.x - LENS / 2, top: lens.y - LENS / 2 }}
           />
           {/* Cabo: a única parte que se arrasta. */}
@@ -782,7 +820,7 @@ export function Magnifier({ active, children }: { active: boolean; children: Rea
             onPointerUp={() => (grab.current = null)}
             onPointerCancel={() => (grab.current = null)}
           >
-            <span className="h-14 w-4 rounded-full border-[3px] border-[#12141B] bg-[#A16207]" />
+            <span className="h-14 w-4 rounded-full border-[3px] border-ink bg-[#A16207]" />
           </div>
         </>
       )}
@@ -997,7 +1035,7 @@ export function InstantPowerUps({
 
   return (
     <div className="flex items-center justify-end gap-2">
-      {error && <span className="mr-auto text-sm text-red-300">{error}</span>}
+      {error && <span className="mr-auto text-sm text-danger">{error}</span>}
       {kinds.map((kind) => (
         <button
           key={kind}
@@ -1293,7 +1331,7 @@ export function PowerUpBar({
               key={`legendary-${kind}-${index}`}
               kind={kind}
               className="legendary legendary-pulse"
-              tag={<span className="text-[0.6rem] font-bold tracking-wide uppercase">Lendário</span>}
+              tag={<span className="text-tag font-bold tracking-wide uppercase">Lendário</span>}
               disabled={!game.can_arm}
               onClick={() => {
                 playSound('select')
@@ -1328,7 +1366,7 @@ export function PowerUpBar({
           {Array.from({ length: free }, (_, index) => (
             <div
               key={`free-${index}`}
-              className="flex min-h-24 flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-[#3b4664] px-1 py-2 text-center text-xs font-semibold text-steel"
+              className="flex min-h-24 flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-raised-edge px-1 py-2 text-center text-xs font-semibold text-steel"
             >
               {index === 0 ? (
                 <>
@@ -1360,7 +1398,7 @@ export function PowerUpBar({
       {header}
       <div className="min-w-0">
         {body}
-        {error && <p className="mt-1 text-sm text-red-300">{error}</p>}
+        {error && <p className="mt-1 text-sm text-danger">{error}</p>}
       </div>
       {skipButton}
     </div>
@@ -1375,7 +1413,7 @@ function SlotPips({ used, max }: { used: number; max: number }) {
       aria-label={`${used} de ${max} vagas ocupadas`}
     >
       {Array.from({ length: max }, (_, i) => (
-        <span key={i} className={`size-2.5 rounded-[3px] ${i < used ? 'bg-brand' : 'bg-[#3b4664]'}`} />
+        <span key={i} className={`size-2.5 rounded-[3px] ${i < used ? 'bg-brand' : 'bg-raised-edge'}`} />
       ))}
       <span className="ml-0.5 tabular-nums">
         {used}/{max}
@@ -1397,7 +1435,7 @@ function RunRing({ run, goal }: { run: number; goal: number }) {
           cy="20"
           r={r}
           fill="none"
-          stroke="#FFC107"
+          stroke="var(--color-brand)"
           strokeWidth="5"
           strokeLinecap="round"
           strokeDasharray={`${(length * run) / goal} ${length}`}
@@ -1442,7 +1480,7 @@ function PowerCard({
     'flex min-h-24 min-w-0 flex-col items-center justify-start gap-1 rounded-xl px-1 pt-2.5 pb-2 text-center'
   if (instant) {
     return (
-      <div title={title} className={`${shape} bg-[#232b3f]/60 text-steel`}>
+      <div title={title} className={`${shape} bg-raised/60 text-steel`}>
         {content}
       </div>
     )

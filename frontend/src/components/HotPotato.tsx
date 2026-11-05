@@ -45,10 +45,10 @@ function PotatoIcon({ heat = 0, golden = false, className }: { heat?: number; go
   const spots = golden ? '#A16207' : '#5B3A16'
   return (
     <svg viewBox="0 0 64 64" className={className} aria-hidden="true">
-      <path d="M38 14c4-6 9-8 13-6" fill="none" stroke="#12141B" strokeWidth="4" strokeLinecap="round" />
+      <path d="M38 14c4-6 9-8 13-6" fill="none" stroke="var(--color-ink)" strokeWidth="4" strokeLinecap="round" />
       <path d="M38 14c4-6 9-8 13-6" fill="none" stroke="#E5E7EB" strokeWidth="2" strokeLinecap="round" />
       <g className="potato-spark" style={{ transformOrigin: '52px 8px' }}>
-        <circle cx="52" cy="8" r="5" fill="#FFC107" />
+        <circle cx="52" cy="8" r="5" fill="var(--color-brand)" />
         <circle cx="52" cy="8" r="2.5" fill="#FFF3C4" />
       </g>
       <ellipse
@@ -57,7 +57,7 @@ function PotatoIcon({ heat = 0, golden = false, className }: { heat?: number; go
         rx="22"
         ry="18"
         fill={body}
-        stroke="#12141B"
+        stroke="var(--color-ink)"
         strokeWidth="3"
         transform="rotate(-18 30 38)"
       />
@@ -151,7 +151,7 @@ function PotatoRound({
   if (exploded) {
     const what = game.exploded_golden ? 'A Batata dourada explodiu' : 'Explodiu'
     status = (
-      <span className="text-red-300">
+      <span className="text-danger">
         {game.exploded === playerId
           ? `${what} na sua mão! Você está fora.`
           : `${what} na mão de ${name(game.exploded)}!`}
@@ -177,7 +177,7 @@ function PotatoRound({
         <span>Rodada {game.round}</span>
         <span>
           {game.direction === -1 && (
-            <span className="mr-2 text-red-300" title="Roda invertida">
+            <span className="mr-2 text-danger" title="Roda invertida">
               ⟲ invertida
             </span>
           )}
@@ -307,7 +307,7 @@ function QuestionPanel({
   let status
   if (potato.state === 'passing' && turn?.free_pass)
     status = (
-      <span className="text-emerald-300">
+      <span className="text-success">
         {turn.player_id === playerId
           ? 'Passe livre! Nem precisou responder.'
           : `${name(turn.player_id)} usou Passe livre!`}
@@ -315,13 +315,13 @@ function QuestionPanel({
     )
   else if (potato.state === 'passing')
     status = (
-      <span className="text-emerald-300">
+      <span className="text-success">
         {turn?.player_id === playerId ? 'Acertou! Passou a batata.' : `${name(turn?.player_id)} acertou e passou!`}
       </span>
     )
   else if (potato.state === 'again')
     status = (
-      <span className="text-emerald-300">
+      <span className="text-success">
         {turn?.player_id === playerId
           ? 'Acertou! Bomba dupla: mais uma para passar.'
           : `${name(turn?.player_id)} acertou, mas a Bomba dupla pede mais uma!`}
@@ -337,7 +337,7 @@ function QuestionPanel({
     )
   else if (potato.state === 'wrong')
     status = (
-      <span className="text-red-300">
+      <span className="text-danger">
         {turn?.player_id === playerId
           ? `Errou! O pavio perdeu ${game.penalty_seconds}s.`
           : `${name(turn?.player_id)} errou! −${game.penalty_seconds}s de pavio.`}
@@ -371,7 +371,7 @@ function QuestionPanel({
           {Array.from({ length: game.max_wrong_streak }, (_, i) => (
             <span
               key={i}
-              className={`flex size-6 items-center justify-center rounded-full font-display text-sm ${i < potato.wrong_streak ? 'bg-red-500 text-white' : 'bg-panel text-steel'}`}
+              className={`flex size-6 items-center justify-center rounded-full font-display text-sm ${i < potato.wrong_streak ? 'bg-danger-strong text-white' : 'bg-panel text-steel'}`}
             >
               ✕
             </span>
@@ -399,7 +399,7 @@ function QuestionPanel({
       {potato.text && (
         <Magnifier active={hits('magnifier') && !blinded}>
           <ScratchCard key={`${questionKey}-${scratched}`} active={scratched}>
-            <h1 className={`text-[1.3rem] leading-snug font-bold ${mirrored}`}>
+            <h1 className={`text-question leading-snug font-bold ${mirrored}`}>
               {blinded ? '' : scrambled ? scrambleWords(potato.text, game.round) : potato.text}
             </h1>
           </ScratchCard>
@@ -431,7 +431,7 @@ function QuestionPanel({
                     className={`btn-3d btn-sm relative flex min-h-14 items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${state}`}
                   >
                     {potato.ghost_hint === index && !reveal && (
-                      <span className="absolute -top-2.5 right-1 flex items-center gap-1 rounded-full bg-indigo-500 px-1.5 py-0.5 text-[0.65rem] font-bold text-white">
+                      <span className="absolute -top-2.5 right-1 flex items-center gap-1 rounded-full bg-indigo-500 px-1.5 py-0.5 text-tag font-bold text-white">
                         <PowerUpIcon kind="ghost_hint" className="size-4" />o fantasma acha que é esta
                       </span>
                     )}
@@ -446,7 +446,7 @@ function QuestionPanel({
           </ScratchCard>
         </Magnifier>
       )}
-      {error && <p className="text-center text-red-300">{error}</p>}
+      {error && <p className="text-center text-danger">{error}</p>}
     </div>
   )
 }
@@ -720,7 +720,7 @@ function PotatoPowers({
               <PowerUpIcon kind={kind} className="size-6" />
               <span className="flex flex-col text-left leading-tight">
                 {POWERUP_INFO[kind].name}
-                <span className="text-[0.65rem] font-bold tracking-wide uppercase">
+                <span className="text-tag font-bold tracking-wide uppercase">
                   {kind === 'resurrection' ? 'Voltar para a roda' : 'Colocar na roda'}
                 </span>
               </span>
@@ -747,7 +747,7 @@ function PotatoPowers({
         </div>
       )}
       <p className="text-xs text-steel">{note}</p>
-      {error && <p className="text-sm text-red-300">{error}</p>}
+      {error && <p className="text-sm text-danger">{error}</p>}
     </div>
   )
 }

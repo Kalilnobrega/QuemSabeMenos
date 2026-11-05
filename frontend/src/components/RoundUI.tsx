@@ -6,13 +6,13 @@ export function FlameIcon({ className }: { className?: string }) {
       <path
         d="M12 1.5c3 5.5 8.5 8.5 8.5 15A8.5 8.5 0 0 1 3.5 16.5c0-4 2.4-6 3.4-8.5 1.3 2.8 2.6 3.4 3.2 3.4C9.6 7.5 10.4 4.5 12 1.5Z"
         fill="#F97316"
-        stroke="#12141B"
+        stroke="var(--color-ink)"
         strokeWidth="2"
         strokeLinejoin="round"
       />
       <path
         d="M12 12.5c2 3 4.4 4.3 4.4 7.3a4.4 4.4 0 0 1-8.8 0c0-1.8 1-2.8 1.6-4 .7 1.4 1.3 1.7 1.7 1.7-.4-1.9 0-3.4 1.1-5Z"
-        fill="#FFC107"
+        fill="var(--color-brand)"
       />
     </svg>
   )
@@ -43,7 +43,7 @@ export function DifficultyChip({ difficulty, large = false }: { difficulty: stri
 const TIMER_TONE = {
   calm: 'bg-amber-200',
   grace: 'bg-brand shadow-[0_0_12px_rgba(255,193,7,0.8)]', // o dourado é só da carência, com pontos máximos
-  urgent: 'bg-red-400',
+  urgent: 'bg-danger-strong',
   muted: 'bg-steel/60', // a revelação: só mostra quanto falta para a próxima
 }
 
@@ -71,7 +71,7 @@ export function TimerBar({ fill, tone = 'calm', seconds, className = '' }: Timer
       {seconds !== undefined && (
         <span
           key={urgent ? seconds : 'calm'}
-          className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-red-400' : ''}`}
+          className={`w-8 text-right font-display text-2xl tabular-nums ${urgent ? 'timer-urgent text-danger-strong' : ''}`}
         >
           {seconds}
         </span>

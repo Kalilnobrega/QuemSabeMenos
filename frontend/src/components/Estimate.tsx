@@ -197,7 +197,7 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onLeave }: RoundPr
           >
             Chutar!
           </button>
-          {error && <p className="text-center text-sm text-red-300">{error}</p>}
+          {error && <p className="text-center text-sm text-danger">{error}</p>}
           <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />
         </form>
       )}
@@ -232,7 +232,7 @@ function Reveal({
     <div className="flex flex-col gap-4">
       <div className="flex flex-col items-center gap-1">
         <p className="text-sm font-semibold tracking-[0.3em] text-steel uppercase">Resposta</p>
-        <p className="reveal-pop font-display text-5xl text-emerald-300">{withUnit(estimate.answer!, estimate.unit)}</p>
+        <p className="reveal-pop font-display text-5xl text-success">{withUnit(estimate.answer!, estimate.unit)}</p>
       </div>
 
       <EstimateRuler estimate={estimate} players={players} playerId={playerId} />
@@ -247,8 +247,8 @@ function Reveal({
                 guess.exact
                   ? 'bg-brand/20 text-brand'
                   : guess.delta > 0
-                    ? 'bg-emerald-500/15 text-emerald-200'
-                    : 'bg-red-500/15 text-red-200'
+                    ? 'bg-success-strong/15 text-success'
+                    : 'bg-danger-strong/15 text-danger'
               } ${guess.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >

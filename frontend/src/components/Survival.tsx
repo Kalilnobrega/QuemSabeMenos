@@ -77,7 +77,7 @@ function HeartIcon({ full, className }: { full: boolean; className?: string }) {
       <path
         d="M12 20.5 3.2 12A5.4 5.4 0 0 1 12 4.6 5.4 5.4 0 0 1 20.8 12Z"
         fill={full ? '#F87171' : 'none'}
-        stroke={full ? '#12141B' : '#6B7280'}
+        stroke={full ? 'var(--color-ink)' : 'var(--color-steel)'}
         strokeWidth="2"
         strokeLinejoin="round"
       />
@@ -276,13 +276,13 @@ function Statement({
   } else if (myPick) {
     const out = me?.out_round !== null
     status = myPick.hidden ? (
-      <span className="text-emerald-300">Você ficou escondido nesta.</span>
+      <span className="text-success">Você ficou escondido nesta.</span>
     ) : myPick.correct && !myPick.pact_from ? (
-      <span className="text-emerald-300">Acertou!</span>
+      <span className="text-success">Acertou!</span>
     ) : myPick.shielded ? (
       <span className="text-sky-300">O Escudo segurou sua vida!</span>
     ) : (
-      <span className="text-red-300">
+      <span className="text-danger">
         {out
           ? 'Você caiu!'
           : myPick.cursed
@@ -450,7 +450,7 @@ function Statement({
       )}
       <Magnifier active={hits('magnifier') && !blinded}>
         <ScratchCard active={scratched}>
-          <h1 className={`text-[1.4rem] leading-snug font-bold ${choices ? '' : 'text-center'} ${mirrored}`}>
+          <h1 className={`text-question leading-snug font-bold ${choices ? '' : 'text-center'} ${mirrored}`}>
             {blinded ? '' : text}
           </h1>
         </ScratchCard>
@@ -524,7 +524,7 @@ function Statement({
           onDisarm={onDisarm}
         />
       )}
-      {error && <p className="text-center text-red-300">{error}</p>}
+      {error && <p className="text-center text-danger">{error}</p>}
     </section>
   )
 }
@@ -566,7 +566,7 @@ function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: s
               {s.player_id === playerId ? 'Você' : p.nickname}
             </span>
             {out ? (
-              <span className="text-xs font-semibold text-red-300">{pick?.lost_life ? 'Caiu!' : 'Fora'}</span>
+              <span className="text-xs font-semibold text-danger">{pick?.lost_life ? 'Caiu!' : 'Fora'}</span>
             ) : s.lives < 0 ? (
               <span className="text-xs font-semibold text-steel">???</span>
             ) : (
@@ -598,9 +598,9 @@ function DuelCards({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
         <span className="h-5 text-sm font-semibold">
           {pick ? (
             pick.correct ? (
-              <span className="text-emerald-300">Acertou</span>
+              <span className="text-success">Acertou</span>
             ) : (
-              <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>
+              <span className="text-danger">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>
             )
           ) : (
             ''

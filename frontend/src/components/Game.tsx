@@ -17,19 +17,28 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 function BulbIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 28 28" className={className} aria-hidden="true">
-      <g stroke="#FFC107" strokeWidth="2" strokeLinecap="round">
+      <g stroke="var(--color-brand)" strokeWidth="2" strokeLinecap="round">
         <path d="M14 1.5v2.5M4.5 5.5l1.8 1.8M23.5 5.5l-1.8 1.8M1.5 14h2.5M24 14h2.5" />
       </g>
       <path
         d="M14 6.5a7 7 0 0 0-4.2 12.6c.8.6 1.2 1.3 1.2 2.1h6c0-.8.4-1.5 1.2-2.1A7 7 0 0 0 14 6.5Z"
-        fill="#FFC107"
-        stroke="#12141B"
+        fill="var(--color-brand)"
+        stroke="var(--color-ink)"
         strokeWidth="1.8"
         strokeLinejoin="round"
       />
       <path d="M11.5 12a3 3 0 0 1 2.5-2" fill="none" stroke="#FFF3C4" strokeWidth="1.6" strokeLinecap="round" />
-      <rect x="10.8" y="21.2" width="6.4" height="4.3" rx="1.4" fill="#9CA3AF" stroke="#12141B" strokeWidth="1.6" />
-      <path d="M11.2 23.3h5.6" stroke="#12141B" strokeWidth="1.2" />
+      <rect
+        x="10.8"
+        y="21.2"
+        width="6.4"
+        height="4.3"
+        rx="1.4"
+        fill="#9CA3AF"
+        stroke="var(--color-ink)"
+        strokeWidth="1.6"
+      />
+      <path d="M11.2 23.3h5.6" stroke="var(--color-ink)" strokeWidth="1.2" />
     </svg>
   )
 }
@@ -50,7 +59,7 @@ export function FactCard({ fact }: { fact: string }) {
 function SnowflakeIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" strokeLinecap="round" aria-hidden="true">
-      <g stroke="#12141B" strokeWidth="5">
+      <g stroke="var(--color-ink)" strokeWidth="5">
         <path d="M12 2.5v19M3.8 7.2l16.4 9.6M3.8 16.8l16.4-9.6" />
       </g>
       <g stroke="#7DD3FC" strokeWidth="2.6">
@@ -66,8 +75,8 @@ function StarIcon({ className }: { className?: string }) {
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
       <path
         d="m12 2.8 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.6l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8L12 2.8Z"
-        fill="#FFC107"
-        stroke="#12141B"
+        fill="var(--color-brand)"
+        stroke="var(--color-ink)"
         strokeWidth="1.8"
         strokeLinejoin="round"
       />
@@ -272,11 +281,11 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           {duel.winner === playerId ? 'Você venceu o X1!' : `${name(duel.winner)} venceu o X1!`}
         </p>
         <ul className="flex w-full flex-col gap-1.5 font-semibold">
-          <li className="rounded-xl bg-red-500/15 px-3 py-1.5 text-red-200">
+          <li className="rounded-xl bg-danger-strong/15 px-3 py-1.5 text-danger">
             {name(duel.loser)} pagou {duel.paid} de QI (40%)
           </li>
           {duel.from_bets > 0 && (
-            <li className="rounded-xl bg-emerald-500/15 px-3 py-1.5 text-emerald-200">
+            <li className="rounded-xl bg-success-strong/15 px-3 py-1.5 text-success">
               +{duel.from_bets} de quem apostou contra {name(duel.winner) === 'Você' ? 'você' : name(duel.winner)}
             </li>
           )}
@@ -287,7 +296,7 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
           )}
           {myBet && (
             <li
-              className={`rounded-xl px-3 py-1.5 ${myBet === duel.winner ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200'}`}
+              className={`rounded-xl px-3 py-1.5 ${myBet === duel.winner ? 'bg-success-strong/15 text-success' : 'bg-danger-strong/15 text-danger'}`}
             >
               Sua aposta em {name(myBet) === 'Você' ? 'você' : name(myBet)}: {myBet === duel.winner ? '+5' : '−5'}
             </li>
@@ -367,9 +376,9 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
               <span className="h-5 text-sm font-semibold">
                 {pick ? (
                   pick.correct ? (
-                    <span className="text-emerald-300">Acertou</span>
+                    <span className="text-success">Acertou</span>
                   ) : (
-                    <span className="text-red-300">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>
+                    <span className="text-danger">{pick.option === null ? 'Não respondeu' : 'Errou'}</span>
                   )
                 ) : (
                   ''
@@ -391,7 +400,7 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
         })}
       </div>
       {body}
-      {error && <p className="text-center text-red-300">{error}</p>}
+      {error && <p className="text-center text-danger">{error}</p>}
     </section>
   )
 }
@@ -432,7 +441,7 @@ function DuelQuestionView({
       ) : (
         <TimerBar fill={null} seconds={null} />
       )}
-      <h1 className="text-[1.3rem] leading-snug font-bold">{duel.text}</h1>
+      <h1 className="text-question leading-snug font-bold">{duel.text}</h1>
       <div className="grid auto-rows-fr grid-cols-2 gap-3">
         {duel.options.map((option, index) => {
           const reveal = duel.correct_option !== null
@@ -559,7 +568,7 @@ function ThemePick({
           )
         })}
       </ul>
-      {error && <p className="text-sm text-red-300">{error}</p>}
+      {error && <p className="text-sm text-danger">{error}</p>}
       {!game.block_theme && (
         <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} className="w-full max-w-sm" />
       )}
@@ -768,7 +777,7 @@ function Betting({
             </form>
           </>
         )}
-        {error && <p className="text-red-300">{error}</p>}
+        {error && <p className="text-danger">{error}</p>}
       </div>
 
       <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} className="w-full" />
@@ -791,13 +800,13 @@ export function Flame() {
       <path
         d="M50 4 C62 26 84 40 84 66 C84 86 68 100 50 100 C32 100 16 86 16 66 C16 50 26 42 30 30 C36 44 42 46 44 46 C40 30 44 16 50 4 Z"
         fill="url(#flame-outer)"
-        stroke="#12141B"
+        stroke="var(--color-ink)"
         strokeWidth="4"
         strokeLinejoin="round"
       />
       <path
         d="M50 44 C58 58 68 64 68 78 C68 90 60 98 50 98 C40 98 32 90 32 78 C32 70 38 66 40 60 C44 68 47 70 48 70 C46 62 46 52 50 44 Z"
-        fill="#FFC107"
+        fill="var(--color-brand)"
       />
       <path d="M50 70 C55 78 58 82 58 88 C58 94 54 97 50 97 C46 97 42 94 42 88 C42 82 46 78 50 70 Z" fill="#FFF3C4" />
     </svg>
@@ -992,7 +1001,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
       <Magnifier active={hits('magnifier') && !blinded}>
         {/* Altura reservada para até 3 linhas: o texto digitando não empurra as alternativas. */}
         <ScratchCard active={scratched}>
-          <h1 className={`round-question min-h-[6.25rem] text-[1.4rem] leading-snug font-bold ${mirrored}`}>
+          <h1 className={`round-question min-h-[6.25rem] text-question leading-snug font-bold ${mirrored}`}>
             {blinded ? '' : text}
             {typing && <span className="ml-0.5 inline-block w-[0.5ch] animate-pulse text-brand">|</span>}
           </h1>
@@ -1026,7 +1035,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
         </div>
       </Magnifier>
 
-      {error && <p className="text-center text-red-300">{error}</p>}
+      {error && <p className="text-center text-danger">{error}</p>}
 
       {showResults ? (
         <RoundSummary room={room} game={game} playerId={playerId} onArm={onArm} onDisarm={onDisarm} onSkip={onSkip} />
@@ -1158,7 +1167,7 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
         delta: result.bet_delta,
         me: result.player_id === playerId,
         icon: <BonusIcon kind="investment" className="size-full" />,
-        tone: result.bet_delta > 0 ? 'bg-emerald-500/15 text-emerald-200' : 'bg-red-500/15 text-red-200',
+        tone: result.bet_delta > 0 ? 'bg-success-strong/15 text-success' : 'bg-danger-strong/15 text-danger',
       }
     }),
     ...highlights.map(({ result, bonus }) => ({
@@ -1200,7 +1209,7 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
     const verdict = mine.option === null ? 'Não respondeu!' : mine.correct ? 'Acertou!' : 'Errou!'
     headline = (
       <p className="text-center font-display text-3xl tracking-wide">
-        <span className={mine.correct ? 'text-emerald-300' : 'text-red-300'}>{verdict}</span>{' '}
+        <span className={mine.correct ? 'text-success' : 'text-danger'}>{verdict}</span>{' '}
         <span className="text-chalk">
           {mine.correct && mine.delta === 0 ? (
             'Não fez mais que a obrigação.'
@@ -1424,7 +1433,7 @@ const BONUS_STYLE: Record<Bonus['kind'], string> = {
   perfect_easy: 'bg-brand/15 text-brand',
   streak: 'bg-orange-500/15 text-orange-200',
   wrong_streak: 'bg-sky-400/10 text-sky-200',
-  investment: 'bg-green-500/15 text-green-200',
+  investment: 'bg-success-strong/15 text-success',
 }
 
 /** O bônus em duas partes, para os banners da revelação. */
@@ -1529,10 +1538,10 @@ function Voters({ players }: { players: PlayerView[] }) {
 function PickBadge({ result }: { result: RoundResult }) {
   const tone =
     result.option === null
-      ? 'bg-[#232b3f] text-steel'
+      ? 'bg-raised text-steel'
       : result.correct
-        ? 'bg-emerald-600 text-white'
-        : 'bg-red-500 text-white'
+        ? 'bg-success-strong text-white'
+        : 'bg-danger-strong text-white'
   return (
     <span className={`flex size-7 shrink-0 items-center justify-center rounded-lg font-display text-base ${tone}`}>
       {result.option === null ? '—' : LETTERS[result.option]}
@@ -1594,7 +1603,7 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
           <span className="flex-1" />
           {deltas && player.id in deltas && (
             <span
-              className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-emerald-300' : deltas[player.id] < 0 ? 'text-red-300' : 'text-steel'}`}
+              className={`text-sm font-semibold ${deltas[player.id] > 0 ? 'text-success' : deltas[player.id] < 0 ? 'text-danger' : 'text-steel'}`}
             >
               {formatDelta(deltas[player.id])}
             </span>

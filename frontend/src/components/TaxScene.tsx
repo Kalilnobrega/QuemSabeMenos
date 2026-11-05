@@ -52,7 +52,7 @@ export function TaxScene({
         {teamName(team.id)}
       </span>
       <span className="font-display text-3xl text-brand tabular-nums">{score}</span>
-      <span className={`font-display text-lg ${side === 'left' ? 'text-red-300' : 'text-emerald-300'}`}>{delta}</span>
+      <span className={`font-display text-lg ${side === 'left' ? 'text-danger' : 'text-success'}`}>{delta}</span>
     </div>
   )
 

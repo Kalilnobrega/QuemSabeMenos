@@ -226,7 +226,7 @@ function Choosing({
         <p className="text-steel">Os times estão escolhendo…</p>
       )}
       <p className="text-sm text-steel">Empate ou ninguém votando: sorteio.</p>
-      {error && <p className="text-red-300">{error}</p>}
+      {error && <p className="text-danger">{error}</p>}
     </section>
   )
 }
@@ -281,7 +281,7 @@ function TeamBetting({
       {mine && !isRep && mine.bet === null && (
         <p className="text-steel">{rep?.nickname ?? 'O representante'} está decidindo quanto apostar…</p>
       )}
-      {error && <p className="text-red-300">{error}</p>}
+      {error && <p className="text-danger">{error}</p>}
     </section>
   )
 }
@@ -512,7 +512,7 @@ function TeamRound({
 
       <Magnifier active={effect('magnifier') && !blinded && !revealed}>
         <ScratchCard active={effect('scratch') && !blinded && !revealed}>
-          <h1 className={`text-[1.35rem] leading-snug font-bold ${mirrored}`}>{blinded ? '' : text}</h1>
+          <h1 className={`text-question leading-snug font-bold ${mirrored}`}>{blinded ? '' : text}</h1>
         </ScratchCard>
         {options}
       </Magnifier>
@@ -522,7 +522,7 @@ function TeamRound({
       {match.infiltrating !== null && match.infiltrate_question && (
         <InfiltratorPanel match={match} onAnswer={onAnswer} />
       )}
-      {error && <p className="text-center text-red-300">{error}</p>}
+      {error && <p className="text-center text-danger">{error}</p>}
 
       {revealed && (
         <>
@@ -688,7 +688,7 @@ function InstantTeamPowers({ match, onUse }: { match: TeamMatchView; onUse: Prop
               {POWERUP_INFO[kind].name}
             </button>
           ))}
-      {error && <span className="w-full text-center text-sm text-red-300">{error}</span>}
+      {error && <span className="w-full text-center text-sm text-danger">{error}</span>}
     </div>
   )
 }
@@ -723,7 +723,7 @@ function InfiltratorPanel({ match, onAnswer }: { match: TeamMatchView; onAnswer:
           </button>
         ))}
       </div>
-      {error && <p className="text-sm text-red-300">{error}</p>}
+      {error && <p className="text-sm text-danger">{error}</p>}
     </div>
   )
 }
@@ -872,7 +872,7 @@ function TeamPowerBar({
               <PowerUpIcon kind={kind} className="size-6" />
               <span className="flex flex-col text-left leading-tight">
                 {POWERUP_INFO[kind].name}
-                <span className="text-[0.65rem] font-bold tracking-wide uppercase">Mítico</span>
+                <span className="text-tag font-bold tracking-wide uppercase">Mítico</span>
               </span>
             </button>
           ))}
@@ -911,7 +911,7 @@ function TeamPowerBar({
         Poderes do time ({mine.powerups.length + mine.mythic_powerups.length}/{mine.powerup_max})
       </p>
       {body}
-      {error && <p className="mt-1 text-sm text-red-300">{error}</p>}
+      {error && <p className="mt-1 text-sm text-danger">{error}</p>}
     </div>
   )
 }
@@ -956,7 +956,7 @@ function TeamStrip({
               </span>
             ))}
             {!match.solo && team.harmony > 0 && (
-              <span className="text-xs text-emerald-300" title="Sintonia">
+              <span className="text-xs text-success" title="Sintonia">
                 {'♪'.repeat(team.harmony)}
               </span>
             )}
@@ -1003,13 +1003,13 @@ function TeamResults({
             <span className="flex items-center gap-2">
               <span className={`font-display text-lg ${TEAMS[team.id].text}`}>{teamName(team.id)}</span>
               <span
-                className={`rounded-md px-1.5 font-display ${team.correct ? 'bg-emerald-500 text-white' : team.option === null ? 'bg-panel text-steel' : 'bg-red-500 text-white'}`}
+                className={`rounded-md px-1.5 font-display ${team.correct ? 'bg-success-strong text-white' : team.option === null ? 'bg-panel text-steel' : 'bg-danger-strong text-white'}`}
               >
                 {LETTER(team.option)}
               </span>
               <span className="flex-1" />
               <span
-                className={`font-display text-xl ${total > 0 ? 'text-emerald-300' : total < 0 ? 'text-red-300' : 'text-steel'}`}
+                className={`font-display text-xl ${total > 0 ? 'text-success' : total < 0 ? 'text-danger' : 'text-steel'}`}
               >
                 {formatDelta(total)}
               </span>
@@ -1023,17 +1023,17 @@ function TeamResults({
                   Capitão {name(captain)} {formatDelta(team.captain_delta)}
                 </span>
               )}
-              {team.harmony_delta > 0 && <span className="text-emerald-300">Sintonia! +{team.harmony_delta}</span>}
+              {team.harmony_delta > 0 && <span className="text-success">Sintonia! +{team.harmony_delta}</span>}
               {match.solo && rep && <span>Foi {name(rep)}</span>}
               {team.doubled && <span>Dobro</span>}
               {team.second_chance && <span>Segunda chance (metade)</span>}
               {team.shielded > 0 && <span className="text-sky-300">Escudo segurou {team.shielded}</span>}
               {team.decoy_pick && <span className="text-purple-300">Caiu na falsa</span>}
-              {team.stolen > 0 && <span className="text-emerald-300">Roubou {team.stolen}</span>}
-              {team.robbed > 0 && <span className="text-red-300">Roubado −{team.robbed}</span>}
-              {team.toll_received > 0 && <span className="text-emerald-300">Pedágio +{team.toll_received}</span>}
-              {team.tolled > 0 && <span className="text-red-300">Pedágio −{team.tolled}</span>}
-              {team.tricked > 0 && <span className="text-emerald-300">Falsa +{team.tricked}</span>}
+              {team.stolen > 0 && <span className="text-success">Roubou {team.stolen}</span>}
+              {team.robbed > 0 && <span className="text-danger">Roubado −{team.robbed}</span>}
+              {team.toll_received > 0 && <span className="text-success">Pedágio +{team.toll_received}</span>}
+              {team.tolled > 0 && <span className="text-danger">Pedágio −{team.tolled}</span>}
+              {team.tricked > 0 && <span className="text-success">Falsa +{team.tricked}</span>}
               {team.tax !== 0 && <span>Imposto {formatDelta(team.tax)}</span>}
               {team.gained && <span className="text-brand">Time {gainLabel(team.gained)}</span>}
               {team.bet ? (

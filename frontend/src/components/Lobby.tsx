@@ -323,8 +323,8 @@ function MyAvatar({ player, className, onClick }: { player: PlayerView; classNam
       <img src={avatarUrl(player)} alt="" className={className} />
       <span className="absolute -right-1 -bottom-1 flex size-5 items-center justify-center rounded-full border-2 border-ink bg-brand">
         <svg viewBox="0 0 16 16" className="size-3" aria-hidden="true">
-          <path d="M10.5 2.5 13.5 5.5 6 13H3v-3Z" fill="#12141B" />
-          <path d="m9.2 3.8 3 3" stroke="#FFC107" strokeWidth="1.2" />
+          <path d="M10.5 2.5 13.5 5.5 6 13H3v-3Z" fill="var(--color-ink)" />
+          <path d="m9.2 3.8 3 3" stroke="var(--color-brand)" strokeWidth="1.2" />
         </svg>
       </span>
     </span>
@@ -396,7 +396,7 @@ function AvatarSheet({
           )
         })}
       </div>
-      {notice && <p className="text-center text-sm text-red-300">{notice}</p>}
+      {notice && <p className="text-center text-sm text-danger">{notice}</p>}
       <button onClick={onClose} className="btn-3d btn-dark rounded-xl py-3 font-semibold text-steel">
         Fechar
       </button>

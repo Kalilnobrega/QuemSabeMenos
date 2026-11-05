@@ -2,7 +2,7 @@ export function LeaveButton({ onLeave }: { onLeave: () => void }) {
   return (
     <button
       onClick={onLeave}
-      className="btn-3d btn-sm btn-dark mx-auto flex items-center gap-2 rounded-full px-5 py-2 font-semibold text-steel hover:text-red-300"
+      className="btn-3d btn-sm btn-dark mx-auto flex items-center gap-2 rounded-full px-5 py-2 font-semibold text-steel hover:text-danger"
     >
       <svg
         viewBox="0 0 24 24"

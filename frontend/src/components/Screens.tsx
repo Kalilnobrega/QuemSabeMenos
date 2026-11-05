@@ -125,7 +125,7 @@ const LEVEL_TRACK: { key: string; label: ReactNode }[] = [
 const LEVEL_INTRO: Record<string, { title: string; color: string; marker: string; shadow: string; line: string }> = {
   easy: {
     title: 'Fácil',
-    color: 'text-emerald-300',
+    color: 'text-success',
     marker: 'bg-emerald-400',
     shadow: '#065f46',
     line: 'Para esquentar.',
@@ -139,7 +139,7 @@ const LEVEL_INTRO: Record<string, { title: string; color: string; marker: string
   },
   hard: {
     title: 'Difícil',
-    color: 'text-red-300',
+    color: 'text-danger',
     marker: 'bg-red-400',
     shadow: '#7f1d1d',
     line: 'Valem muito QI, e errar quase não tira pontos.',
@@ -411,7 +411,7 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
       </div>
 
       {worst && stage >= 4 && (
-        <Spotlight title="Quem sabe menos" icon={haha} player={worst.player} line={worstLine} tone="text-red-300" />
+        <Spotlight title="Quem sabe menos" icon={haha} player={worst.player} line={worstLine} tone="text-danger" />
       )}
 
       {done && list}
@@ -493,9 +493,9 @@ export function SkipButton({
   const button = (
     <div className="pointer-events-auto relative pb-1 shadow-lg shadow-ink">
       {/* A sombra 3D: a escura por baixo e a amarela (a borda do botão amarelo do jogo) recortada por cima. */}
-      <span className="absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#3b4664]" aria-hidden="true" />
+      <span className="absolute inset-x-0 top-1 bottom-0 rounded-xl bg-raised-edge" aria-hidden="true" />
       <span
-        className="skip-drain absolute inset-x-0 top-1 bottom-0 rounded-xl bg-[#b07f00]"
+        className="skip-drain absolute inset-x-0 top-1 bottom-0 rounded-xl bg-brand-edge"
         style={drain}
         aria-hidden="true"
       />
@@ -507,7 +507,7 @@ export function SkipButton({
         }}
         disabled={isReady}
         aria-label={isReady ? `Pronto. Faltam ${missing}` : 'Próxima'}
-        className={`relative flex w-full items-center gap-2 overflow-hidden rounded-xl bg-[#232b3f] py-2.5 pr-2 pl-4 transition-transform duration-75 ease-out active:translate-y-[3px] focus-visible:outline-2 focus-visible:outline-chalk ${
+        className={`relative flex w-full items-center gap-2 overflow-hidden rounded-xl bg-raised py-2.5 pr-2 pl-4 transition-transform duration-75 ease-out active:translate-y-[3px] focus-visible:outline-2 focus-visible:outline-chalk ${
           isReady ? 'translate-y-[3px]' : ''
         } ${className}`}
       >
@@ -589,7 +589,7 @@ export function BannerList({
         <li
           key={item.key}
           className={`${item.hit ? 'banner-hit' : 'banner-stamp'} flex items-center gap-2 rounded-xl px-3 py-1.5 ${item.tone} ${
-            item.hit ? 'ring-2 ring-red-400/70' : item.me ? 'ring-1 ring-brand/60' : ''
+            item.hit ? 'ring-2 ring-danger-strong/70' : item.me ? 'ring-1 ring-brand/60' : ''
           }`}
           // Na sabotagem, a tremidinha vem logo depois do carimbo.
           style={{

@@ -12,7 +12,7 @@ export function AnsweredCheck({ className = '' }: { className?: string }) {
         <path
           d="m2.5 6.2 2.2 2.3 4.8-5"
           fill="none"
-          stroke="#12141B"
+          stroke="var(--color-ink)"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

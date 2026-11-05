@@ -74,7 +74,7 @@ export function DaggerStrike({
                 className="dagger-heart-whole"
                 d="M12 21 3.5 12.5A5 5 0 0 1 12 5.2 5 5 0 0 1 20.5 12.5Z"
                 fill="#EF4444"
-                stroke="#12141B"
+                stroke="var(--color-ink)"
                 strokeWidth="1.4"
                 strokeLinejoin="round"
               />
@@ -82,7 +82,7 @@ export function DaggerStrike({
                 className="dagger-heart-left"
                 d="M12 21 3.5 12.5A5 5 0 0 1 12 5.2L10.6 9.4 12.8 12.6 11 16.2Z"
                 fill="#EF4444"
-                stroke="#12141B"
+                stroke="var(--color-ink)"
                 strokeWidth="1.4"
                 strokeLinejoin="round"
               />
@@ -90,7 +90,7 @@ export function DaggerStrike({
                 className="dagger-heart-right"
                 d="M12 21 20.5 12.5A5 5 0 0 0 12 5.2L10.6 9.4 12.8 12.6 11 16.2Z"
                 fill="#EF4444"
-                stroke="#12141B"
+                stroke="var(--color-ink)"
                 strokeWidth="1.4"
                 strokeLinejoin="round"
               />
@@ -106,7 +106,7 @@ export function DaggerStrike({
           SACRIFICADO!
         </p>
       ) : (
-        <p className="dagger-caption font-display text-3xl text-red-300">−1 vida!</p>
+        <p className="dagger-caption font-display text-3xl text-danger">−1 vida!</p>
       )}
     </div>
   )

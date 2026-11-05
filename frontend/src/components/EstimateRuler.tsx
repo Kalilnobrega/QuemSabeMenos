@@ -56,7 +56,7 @@ export function EstimateRuler({
       {/* A régua amarela: risquinhos no alto, números embaixo e a faixa verde no pé. */}
       <div className="ruler-open absolute inset-x-[5%] top-28 h-12" style={{ animationDuration: `${RULER_MS}ms` }}>
         <div
-          className="absolute inset-0 rounded-md border-2 border-[#b07f00] bg-brand shadow-[0_3px_0_#7a5a00]"
+          className="absolute inset-0 rounded-md border-2 border-brand-edge bg-brand shadow-[0_3px_0_#7a5a00]"
           style={{
             backgroundImage: `repeating-linear-gradient(90deg, rgba(18,20,27,.7) 0 1.5px, transparent 1.5px calc(100% / ${minorCount}))`,
             backgroundSize: '88% 32%',
@@ -65,7 +65,7 @@ export function EstimateRuler({
           }}
         />
         <span
-          className="absolute bottom-0.5 h-1.5 rounded-full bg-emerald-600"
+          className="absolute bottom-0.5 h-1.5 rounded-full bg-success-strong"
           style={{ left: `${((gainLeft - 5) / 90) * 100}%`, width: `${((gainRight - gainLeft) / 90) * 100}%` }}
         />
       </div>
@@ -84,10 +84,8 @@ export function EstimateRuler({
         className="pin-drop absolute top-[6.2rem] z-20 flex -translate-x-1/2 flex-col items-center"
         style={{ left: '50%', animationDelay: `${RULER_MS}ms` }}
       >
-        <span className="rounded-md bg-emerald-400 px-2 font-display text-ink shadow">
-          {formatEstimate(answer, unit)}
-        </span>
-        <span className="h-5 w-1 rounded-b-full bg-emerald-400" />
+        <span className="rounded-md bg-success px-2 font-display text-ink shadow">{formatEstimate(answer, unit)}</span>
+        <span className="h-5 w-1 rounded-b-full bg-success" />
       </div>
 
       {byValue.map((guess, index) => {
@@ -101,13 +99,13 @@ export function EstimateRuler({
             style={{ left: `${pos(guess.value!)}%`, top: index % 2 ? '2.7rem' : '0', animationDelay: `${delay}ms` }}
           >
             <span
-              className={`relative rounded-full bg-[#2a3247] px-2 py-0.5 font-display text-sm leading-tight text-brand shadow ${guess.exact ? 'guess-exact' : ''}`}
+              className={`relative rounded-full bg-raised px-2 py-0.5 font-display text-sm leading-tight text-brand shadow ${guess.exact ? 'guess-exact' : ''}`}
               style={guess.exact ? { animationDelay: `${delay + 400}ms` } : undefined}
             >
               {off && guess.value! < answer && '◀ '}
               {formatEstimate(guess.value!, unit)}
               {off && guess.value! > answer && ' ▶'}
-              <span className="absolute -bottom-1 left-1/2 size-2 -translate-x-1/2 rotate-45 bg-[#2a3247]" />
+              <span className="absolute -bottom-1 left-1/2 size-2 -translate-x-1/2 rotate-45 bg-raised" />
             </span>
             {player && (
               <img

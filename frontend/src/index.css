@@ -1,15 +1,32 @@
 @import 'tailwindcss';
 
 @theme {
+  /* A paleta oficial, de docs/identidade-visual.png. */
   --color-brand: #ffc107;
   --color-ink: #0b0f1a;
-  --color-panel: #151b2b;
   --color-steel: #6b7280;
   --color-chalk: #f8fafc;
+
+  /* Superfícies: do fundo para a frente. `-edge` é a borda 3D embaixo de botões e cartas. */
+  --color-panel: #151b2b;
+  --color-raised: #232b3f;
+  --color-raised-edge: #3b4664;
+  --color-brand-edge: #b07f00;
+
+  /* Certo e errado. Sem sufixo: texto e detalhes sobre o escuro; `-strong`: superfícies e alertas. */
+  --color-success: oklch(84.5% 0.143 164.978);
+  --color-success-strong: #059669;
+  --color-success-edge: #065f46;
+  --color-danger: oklch(80.8% 0.114 19.571);
+  --color-danger-strong: #ef4444;
+  --color-danger-edge: #991b1b;
 
   --font-display: 'Lilita One', system-ui, sans-serif;
   --font-hand: 'Baloo 2', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, sans-serif;
+
+  --text-question: 1.35rem; /* o enunciado das perguntas */
+  --text-tag: 0.65rem; /* as etiquetas em caixa alta */
 }
 
 body {
@@ -86,7 +103,7 @@ body {
 }
 @keyframes level-land {
   from {
-    color: #6b7280;
+    color: var(--color-steel);
   }
 }
 .avatar-pop {
@@ -232,7 +249,7 @@ body {
    Usa a propriedade translate (não transform) para não brigar com as animações de entrada. */
 .btn-3d {
   --btn-depth: 6px;
-  box-shadow: 0 var(--btn-depth) 0 var(--btn-base, #3b4664);
+  box-shadow: 0 var(--btn-depth) 0 var(--btn-base, var(--color-raised-edge));
   transition:
     translate 80ms ease-out,
     box-shadow 80ms ease-out,
@@ -248,27 +265,27 @@ body {
 .btn-3d:not(:disabled):active,
 .btn-3d.is-pressed {
   translate: 0 calc(var(--btn-depth) - 1px);
-  box-shadow: 0 1px 0 var(--btn-base, #3b4664);
+  box-shadow: 0 1px 0 var(--btn-base, var(--color-raised-edge));
 }
 .btn-brand {
   background-color: var(--color-brand);
-  --btn-base: #b07f00;
+  --btn-base: var(--color-brand-edge);
 }
 .btn-dark {
-  background-color: #232b3f;
-  --btn-base: #3b4664;
+  background-color: var(--color-raised);
+  --btn-base: var(--color-raised-edge);
 }
 .btn-light {
   background-color: var(--color-chalk);
   --btn-base: #9ca3af;
 }
 .btn-correct {
-  background-color: #059669;
-  --btn-base: #065f46;
+  background-color: var(--color-success-strong);
+  --btn-base: var(--color-success-edge);
 }
 .btn-wrong {
-  background-color: #ef4444;
-  --btn-base: #991b1b;
+  background-color: var(--color-danger-strong);
+  --btn-base: var(--color-danger-edge);
 }
 
 /* Entrada da rodada: cabeçalho e cronômetro ficam parados; o selo de dificuldade dá um pop,
@@ -522,7 +539,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.25rem;
-  background: radial-gradient(circle at 50% 45%, #5a3d06 0%, #0b0f1a 70%);
+  background: radial-gradient(circle at 50% 45%, #5a3d06 0%, var(--color-ink) 70%);
   animation: duel-shake 0.35s 0.95s;
 }
 .duel-in-left {
@@ -1289,7 +1306,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 2px solid #12141b;
+  border: 2px solid var(--color-ink);
   background: #fbbf24;
   color: #78350f;
   font-weight: 900;
@@ -1401,7 +1418,7 @@ body {
 @keyframes guess-exact {
   from {
     box-shadow:
-      0 0 0 2px #ffc107,
+      0 0 0 2px var(--color-brand),
       0 0 6px rgba(255, 193, 7, 0.4);
   }
   to {
