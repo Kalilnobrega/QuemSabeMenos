@@ -96,11 +96,7 @@ body {
     clip-path: inset(0 100% 0 0);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .skip-drain {
-    animation: none;
-  }
-}
+
 @keyframes level-land {
   from {
     color: var(--color-steel);
@@ -164,12 +160,7 @@ body {
     translate: -2px 0;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .banner-stamp,
-  .banner-hit {
-    animation: none;
-  }
-}
+
 @keyframes intro-slam {
   from {
     opacity: 0;
@@ -228,19 +219,6 @@ body {
   }
   70% {
     transform: translate(-3px, 2px);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .final-intro-glow,
-  .intro-flame,
-  .intro-step,
-  .intro-step-late,
-  .intro-slam,
-  .intro-count,
-  .avatar-pop,
-  .level-land,
-  .stamp-shake {
-    animation: none;
   }
 }
 
@@ -483,28 +461,6 @@ body {
       0 0 40px rgba(240, 98, 146, 0.35);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .settings-sheet,
-  .round-chip,
-  .round-question,
-  .round-option,
-  .timer-urgent,
-  .reveal-pop,
-  .reveal-shake,
-  .podium-card,
-  .confetti,
-  .icon-bounce,
-  .icon-wobble,
-  .legendary-pulse,
-  .mythic,
-  .mythic-pulse,
-  .mythic-title {
-    animation: none;
-  }
-  .confetti {
-    display: none;
-  }
-}
 
 .flashbang-flash {
   position: fixed;
@@ -521,11 +477,6 @@ body {
   }
   to {
     opacity: 0;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .flashbang-flash {
-    animation-duration: 0.4s;
   }
 }
 
@@ -618,18 +569,6 @@ body {
   to {
     opacity: 0;
     transform: scale(1.08);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .duel-intro,
-  .duel-in-left,
-  .duel-in-right,
-  .duel-clash,
-  .duel-out {
-    animation: none;
-  }
-  .duel-burst {
-    display: none;
   }
 }
 
@@ -795,20 +734,6 @@ body {
     opacity: 0;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .res-rays,
-  .res-rise,
-  .res-halo,
-  .res-wing-left,
-  .res-wing-right,
-  .res-title,
-  .res-sub {
-    animation: none;
-  }
-  .res-spark {
-    display: none;
-  }
-}
 
 /* Batata quente: treme mais rápido conforme o pavio queima (--shake vem do componente) */
 .potato {
@@ -855,16 +780,6 @@ body {
   to {
     transform: scale(1);
     opacity: 1;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .potato {
-    transition: none;
-  }
-  .potato-shake,
-  .potato-spark,
-  .potato-boom {
-    animation: none;
   }
 }
 
@@ -1075,21 +990,6 @@ body {
     transform: translateY(0.75rem);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .dagger-scene,
-  .dagger-fly,
-  .dagger-shake,
-  .dagger-blood i,
-  .dagger-heart path,
-  .dagger-fall,
-  .dagger-flash,
-  .dagger-sacrificed,
-  .dagger-caption,
-  .dagger-halo,
-  .dagger-blessing {
-    animation: none;
-  }
-}
 
 /* Batata dupla: a dourada cai girando, para num close em câmera lenta (escala grande, giro quase
    parado) e despenca em quem vai começar com ela; aí bate o BATATA DUPLA! O estilo base é o fim. */
@@ -1253,19 +1153,6 @@ body {
     transform: scale(1.6);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .dp-scene,
-  .dp-rays,
-  .dp-fall,
-  .dp-glow,
-  .dp-spin,
-  .dp-target-bounce,
-  .dp-burst,
-  .dp-title,
-  .dp-sub {
-    animation: none;
-  }
-}
 
 /* Imposto: o carimbo bate torto, as moedas voam em arco do placar de quem paga até o de quem recebe. */
 .tax-scene {
@@ -1349,17 +1236,6 @@ body {
     transform: scale(1.08);
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .tax-scene,
-  .tax-stamp,
-  .tax-card,
-  .tax-caption {
-    animation: none;
-  }
-  .tax-coin {
-    display: none;
-  }
-}
 
 /* Chutômetro: a régua abre do centro, os números aparecem, o pino da resposta cai e os chutes
    caem um por um (do mais longe para o mais perto); quem cravou brilha. */
@@ -1427,12 +1303,30 @@ body {
       0 0 18px rgba(255, 193, 7, 0.95);
   }
 }
+
+/* Movimento reduzido: vale para toda animação e transição, inclusive as que vierem depois.
+   Aqui só entram as exceções: o que não faz sentido parado e o que depende da animação para aparecer. */
 @media (prefers-reduced-motion: reduce) {
-  .ruler-open,
-  .ruler-label,
-  .pin-drop,
-  .guess-drop,
-  .guess-exact {
-    animation: none;
+  *,
+  ::before,
+  ::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  /* O clarão da Flashbang faz parte da regra do poder: fica, só que mais curto. */
+  .flashbang-flash {
+    animation: flashbang 0.4s ease-out forwards !important;
+  }
+  /* A Adaga: sem a animação os corações sumiriam. Fica o coração partido, parado. */
+  .dagger-heart-left,
+  .dagger-heart-right {
+    opacity: 1;
+  }
+  /* Partículas não têm sentido paradas. */
+  .confetti,
+  .duel-burst,
+  .res-spark,
+  .tax-coin {
+    display: none;
   }
 }
