@@ -7,9 +7,10 @@ import json
 import math
 import random
 import re
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Callable, Literal, Protocol
+from typing import Literal, Protocol
 
 from pydantic import BaseModel, Field, model_validator
 

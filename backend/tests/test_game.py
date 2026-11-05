@@ -7,12 +7,12 @@ from app import duel as x1
 from app import powerups
 from app.events import PowerUpGain
 from app.game import (
-    MAX_READING_SECONDS,
-    MAX_RESULTS_SECONDS,
-    MIN_RESULTS_SECONDS,
-    MIN_READING_SECONDS,
     BET_SECONDS,
     LATE_SECONDS,
+    MAX_READING_SECONDS,
+    MAX_RESULTS_SECONDS,
+    MIN_READING_SECONDS,
+    MIN_RESULTS_SECONDS,
     Game,
     GameError,
     Question,
@@ -687,7 +687,7 @@ def test_second_chance_lets_you_retry_for_half():
 
 
 def test_peek_shows_what_the_others_picked():
-    game, ana, bia = armed_game(2)
+    game, _ana, _bia = armed_game(2)
     game.powerups["ana"].append("peek")
     game.start_round(now=0)
     game.open_answers(now=0)
@@ -815,7 +815,7 @@ def test_legendary_silence_hits_everyone_but_the_caster():
 
 
 def test_reverse_sends_sabotage_back_once():
-    game, ana, bia = armed_game(2)
+    game, _ana, _bia = armed_game(2)
     arm(game, "ana", "scramble", "bia")
     arm(game, "bia", "reverse")
     game.start_round(now=0)
@@ -901,7 +901,7 @@ def test_reverse_lasts_until_it_bounces():
 
 
 def test_magnifier_is_a_sabotage_that_the_reverse_sends_back():
-    game, ana, bia = armed_game(2)
+    game, _ana, _bia = armed_game(2)
     arm(game, "ana", "magnifier", "bia")
     assert game.armed["ana"].target == "bia"
     arm(game, "bia", "reverse")
@@ -948,7 +948,7 @@ def test_legendary_toll_is_cheaper_and_everyone_pays():
 
 
 def test_backpack_adds_a_slot_and_a_powerup_right_away():
-    game, ana, bia = armed_game(3)
+    game, _ana, _bia = armed_game(3)
     game.powerups["ana"] = ["backpack", "backpack", "backpack"]
     game.arm("ana", "backpack", None, ["ana", "bia"])
     assert game.capacity("ana") == game.powerup_max + 1 and len(game.powerups["ana"]) == 3
@@ -1029,7 +1029,7 @@ def test_decoy_shows_six_options_only_to_the_target_and_pays_who_cast_it():
 
 
 def test_fifty_fifty_never_removes_a_decoy():
-    game, ana, bia = armed_game(3)
+    game, _ana, _bia = armed_game(3)
     arm(game, "ana", "decoy", "bia")
     game.powerups["bia"].append("fifty_fifty")
     game.start_round(now=0)
@@ -1174,10 +1174,6 @@ def test_a_right_bet_of_a_quarter_of_the_iq_earns_a_power():
     assert by_id["ana"].bet_gained and by_id["ana"].bet_gained.reason == "bet"
     assert by_id["bia"].bet_gained is None  # menos de 25%
     assert by_id["caio"].bet_gained is None  # errou
-
-
-def themed(qid: str, theme: str, difficulty: str = "medium") -> Question:
-    return question(qid, difficulty).model_copy(update={"theme": theme})
 
 
 def specialist_game(rounds: int = 10) -> Game:

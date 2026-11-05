@@ -39,7 +39,7 @@ def test_bank_has_30_numeric_questions_per_theme():
 
 def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_30_percent():
     q = question("q", 200)
-    points = lambda guess: guess_points(error_percent(q, guess), "medium")  # noqa: E731
+    points = lambda guess: guess_points(error_percent(q, guess), "medium")
     assert points(200) == 24  # cravou: 16 + 8 de bônus
     assert points(201) == 16  # 0,5%: sem o bônus
     assert points(210) == 13  # 5%

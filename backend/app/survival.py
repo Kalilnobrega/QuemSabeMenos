@@ -26,11 +26,11 @@ from app.events import (
     PowerUp,
     PowerUpGain,
     PowerUpUse,
-    Survivor,
+    Stab,
     SurvivalKind,
     SurvivalPick,
     SurvivalView,
-    Stab,
+    Survivor,
 )
 from app.game import reading_seconds, results_seconds
 

@@ -294,7 +294,7 @@ async def test_powerups_are_private_and_everyone_skipping_ends_the_reveal(connec
 
 
 async def test_abandoned_match_is_kept_in_history(connect):
-    ana, bia, created, _ = await setup_room(connect)
+    ana, bia, _created, _ = await setup_room(connect)
     await ana.call("start_game")
     await ana.wait_for(lambda s: s["game"] and s["game"]["phase"] == "answering")
     await ana.call("leave_room")
@@ -373,7 +373,7 @@ async def test_last_standing_plays_to_a_winner(connect, monkeypatch):
         assert sv(state)["correct_option"] == game.question.answer or sv(state)["phase"] == "finished"
     state = await caio.wait_for(lambda s: sv(s).get("phase") == "finished")
     assert sv(state)["winner"] == created["player_id"]
-    assert [s["place"] for s in sv(state)["survivors"]][0] == 1
+    assert next(s["place"] for s in sv(state)["survivors"]) == 1
 
     standings = await match_closed()
     assert standings[0]["nickname"] == "Ana" and standings[0]["out_round"] is None
@@ -506,7 +506,7 @@ async def test_teams_vote_together_and_choose_who_goes_alone(connect, monkeypatc
 
 
 async def test_specialist_picker_chooses_the_block_theme(connect):
-    ana, bia, created, joined = await setup_room(connect)
+    ana, bia, created, _joined = await setup_room(connect)
     assert (await ana.call("update_settings", {"mode": "specialist", "rounds": 10}))["ok"]
     await ana.call("start_game")
     pick = await bia.wait_for(lambda s: s["game"] and s["game"]["phase"] == "theme_pick")
@@ -528,7 +528,7 @@ async def test_estimate_match_from_guess_to_podium(connect, monkeypatch):
     monkeypatch.setattr(estimate, "START_SECONDS", 0.05)
     monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
     monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
-    ana, bia, created, joined = await setup_room(connect)
+    ana, bia, _created, _joined = await setup_room(connect)
     assert (await ana.call("update_settings", {"mode": "estimate", "rounds": 10}))["ok"]
     assert (await ana.call("start_game"))["ok"]
     state = await ana.wait_for(lambda s: s["estimate"] and s["estimate"]["phase"] == "answering")
@@ -552,7 +552,7 @@ async def test_estimate_match_from_guess_to_podium(connect, monkeypatch):
 
 
 async def test_players_change_avatar_in_the_lobby_and_repeats_get_a_variant(connect):
-    ana, bia, created, joined = await setup_room(connect)  # Ana é gato, Bia é sapo
+    ana, bia, _created, _joined = await setup_room(connect)  # Ana é gato, Bia é sapo
     assert not (await bia.call("update_avatar", {"avatar": "dragão"}))["ok"]
     assert (await bia.call("update_avatar", {"avatar": "gato"}))["ok"]
     state = await ana.wait_for(lambda s: all(p["avatar"] == "gato" for p in s["players"]))

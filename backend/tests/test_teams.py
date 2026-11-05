@@ -169,8 +169,8 @@ def test_others_see_only_who_voted_until_the_reveal():
 
 # --- com poderes ----------------------------------------------------------
 
-from app import duel as x1  # noqa: E402
-from app.teams import DECOY_PER_PLAYER, IRON_RIGHT, IRON_WRONG, MUTINY_ROUNDS, TAX_SHARE  # noqa: E402
+from app import duel as x1
+from app.teams import DECOY_PER_PLAYER, IRON_RIGHT, IRON_WRONG, MUTINY_ROUNDS, TAX_SHARE
 
 
 def bank() -> list[Question]:

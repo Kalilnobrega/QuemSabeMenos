@@ -17,7 +17,8 @@ from typing import Literal, Protocol
 from pydantic import BaseModel, Field
 
 from app.events import EstimateGuess, EstimateScoring, EstimateView
-from app.game import point_scale as scale_for, results_seconds, split_by_difficulty
+from app.game import point_scale as scale_for
+from app.game import results_seconds, split_by_difficulty
 
 ESTIMATES_DIR = Path(__file__).parent / "estimates"
 ROUND_OPTIONS = (10, 15, 20)

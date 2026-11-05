@@ -11,7 +11,12 @@ from fastapi import FastAPI, Header, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import ValidationError
 
+from app import game as rules
+from app import history as modes
 from app.events import (
+    ArmPowerUpRequest,
+    ChooseRepresentativeRequest,
+    ChooseThemeRequest,
     CreateRoomRequest,
     ErrorAck,
     JoinedAck,
@@ -19,20 +24,15 @@ from app.events import (
     OkAck,
     Pong,
     RejoinRoomRequest,
-    ArmPowerUpRequest,
     SetTeamRequest,
-    UpdateAvatarRequest,
-    ChooseRepresentativeRequest,
-    ChooseThemeRequest,
-    SubmitGuessRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
     SubmitDuelBetRequest,
+    SubmitGuessRequest,
+    UpdateAvatarRequest,
     UpdateSettingsRequest,
     UsePowerUpRequest,
 )
-from app import game as rules
-from app import history as modes
 from app.history import MatchHistory
 from app.rooms import Player, Room, RoomError, RoomManager
 
@@ -100,11 +100,10 @@ async def joined(sid: str, room: Room, player: Player) -> dict:
 def check_round_done(room: Room) -> None:
     if room.estimate:
         estimate, connected = room.estimate, room.connected_ids()
-        if (estimate.phase == "answering" and estimate.everyone_answered(connected)) or (
+        if ((estimate.phase == "answering" and estimate.everyone_answered(connected)) or (
             estimate.phase == "results" and estimate.everyone_ready(connected)
-        ):
-            if event := round_done.get(room.code):
-                event.set()
+        )) and (event := round_done.get(room.code)):
+            event.set()
         return
     if room.team_match:
         if room.team_match.can_advance(room.connected_ids()) and (event := round_done.get(room.code)):
@@ -118,9 +117,8 @@ def check_round_done(room: Room) -> None:
     if room.survival:
         survival, connected = room.survival, room.connected_ids()
         answering = survival.phase in ("answering", "duel_answering") and survival.everyone_answered(connected)
-        if answering or survival.everyone_ready(connected):
-            if event := round_done.get(room.code):
-                event.set()
+        if (answering or survival.everyone_ready(connected)) and (event := round_done.get(room.code)):
+            event.set()
         return
     game = room.game
     if not game:
@@ -133,9 +131,8 @@ def check_round_done(room: Room) -> None:
         or (game.phase == "results" and game.everyone_ready(room.connected_ids()))
         or (game.phase == "duel_betting" and game.everyone_bet_on_duel(room.connected_ids()))
         or (game.phase == "duel_answering" and game.duel.everyone_answered())
-    ):
-        if event := round_done.get(room.code):
-            event.set()
+    ) and (event := round_done.get(room.code)):
+        event.set()
 
 
 async def leave_current_room(sid: str) -> None:

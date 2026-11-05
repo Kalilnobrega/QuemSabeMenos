@@ -6,9 +6,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from pydantic.json_schema import models_json_schema  # noqa: E402
+from pydantic.json_schema import models_json_schema
 
-from app.events import EVENT_MODELS  # noqa: E402
+from app.events import EVENT_MODELS
 
 OUTPUT = Path(__file__).resolve().parents[2] / "frontend" / "src" / "types" / "events.schema.json"
 

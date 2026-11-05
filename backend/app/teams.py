@@ -21,7 +21,6 @@ from typing import Literal
 from app import duel as x1
 from app import powerups as pw
 from app.events import (
-    Difficulty,
     DuelPick,
     DuelView,
     LastingPowerUp,
