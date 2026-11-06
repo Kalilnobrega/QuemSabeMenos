@@ -7,15 +7,19 @@ from app import powerups
 from app.estimate import (
     ANSWER_SECONDS,
     LEGENDARY,
+    MATH_SECONDS,
     POWERS,
     Estimate,
     EstimateError,
     EstimateQuestion,
     answer_digits,
+    apply_math,
+    draw_math,
     draw_range,
     error_percent,
     guess_points,
     load_estimates,
+    math_path,
 )
 
 
@@ -678,7 +682,7 @@ class Lucky(random.Random):
     """Sorteio que sempre cai na menor chance: todo poder ganho vem lendário."""
 
     def random(self) -> float:
-        return 0.0
+        return 0.05  # acima do mítico (2%), abaixo do lendário
 
 
 def test_legendary_sabotage_reaches_everyone_but_who_used_it():
@@ -839,3 +843,203 @@ def test_full_hands_lose_the_exact_power():
     game.held["a"] = ["shield"]
     ask(game, [a], a=100)
     assert result(game, "a").gained is None and game.held["a"] == ["shield"]
+
+
+# --- mítico: Matemática --------------------------------------------------------------
+
+
+def give_math(game: Estimate, target: str = "b", ids: tuple[str, ...] = ("a", "b")) -> None:
+    game.mythics.setdefault("a", []).append("math")
+    game.arm("a", "math", target, list(ids), None)
+
+
+def test_math_always_has_a_path_into_the_gain_zone_for_every_question():
+    for q in load_estimates():
+        for seed in range(5):
+            puzzle = draw_math(q.answer, random.Random(seed))
+            assert len(puzzle.keys) == 9
+            assert all(1 <= key.uses <= 3 for key in puzzle.keys)
+            keys = {(key.op, key.value): key.uses for key in puzzle.keys}
+            value = puzzle.start
+            for step in math_path(puzzle.start, q.answer):
+                assert keys[(step.op, step.value)] > 0, q.id
+                keys[(step.op, step.value)] -= 1
+                value = apply_math(value, step)
+            assert guess_points(error_percent(q, value), q.difficulty) > 0, (q.id, value)
+
+
+def test_math_keys_are_not_repeated_and_never_divide_by_zero():
+    for seed in range(100):
+        puzzle = draw_math(-273.15, random.Random(seed))
+        pairs = [(key.op, key.value) for key in puzzle.keys]
+        assert len(set(pairs)) == 9
+        assert all(key.value != 0 for key in puzzle.keys)
+
+
+def test_math_reaches_only_the_target_only_while_guessing_and_lasts_one_question():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give_math(game)
+    assert game.mythics["a"] == []
+    game.advance(game.phase_ends_at, [a, b])
+    at = game.phase_started_at
+    assert game.view(at, "b").math is not None and game.view(at, "a").math is None
+    game.guess("a", 100, at + 1)
+    game.guess("b", 100, at + 1)
+    game.advance(at + 2, [a, b])
+    assert game.view(at + 2, "b").math is None
+    game.advance(game.phase_ends_at, [a, b])
+    assert game.view(game.phase_started_at, "b").math is None
+
+
+def test_reverse_does_not_stop_math():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give(game, "b", "reverse")
+    ask(game, [a, b], a=110, b=110)
+    give_math(game)
+    game.advance(game.phase_ends_at, [a, b])
+    use = next(u for u in game.active if u.kind == "math")
+    assert use.target == "b" and use.reflected_by is None
+    assert game.view(game.phase_started_at, "b").math is not None
+
+
+def test_math_needs_a_target_and_goes_back_to_the_mythics_when_disarmed():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    game.held["a"] = ["math"]  # na mão comum não vale
+    with pytest.raises(EstimateError):
+        game.arm("a", "math", "b", ["a", "b"], None)
+    game.held["a"] = []
+    game.mythics["a"] = ["math"]
+    with pytest.raises(EstimateError):
+        game.arm("a", "math", None, ["a", "b"], None)
+    game.arm("a", "math", "b", ["a", "b"], None)
+    game.disarm("a")
+    assert game.mythics["a"] == ["math"] and game.held["a"] == []
+    assert game.view(game.phase_started_at, "a").mythic_powerups == ["math"]
+
+
+def test_gained_power_can_come_mythic_and_math_is_never_common_or_legendary():
+    assert "math" not in POWERS and "math" not in LEGENDARY
+
+    class Lucky(random.Random):
+        def random(self) -> float:
+            return 0.0
+
+    a = P("a")
+    game = powered()
+    game.rng = Lucky(1)
+    for _ in range(3):
+        ask(game, [a], a=115)
+    gained = result(game, "a").gained
+    assert gained.mythic and not gained.legendary and gained.kind == "math" and game.mythics["a"] == ["math"]
+
+
+def test_mythics_take_up_space_in_the_hand():
+    a = P("a")
+    game = powered()
+    game.powerup_max = 1
+    game.mythics["a"] = ["math"]
+    for _ in range(3):
+        ask(game, [a], a=115)
+    assert result(game, "a").gained is None
+
+
+def math_round(game: Estimate, players: list[P]) -> float:
+    """Abre uma pergunta com Matemática em b e devolve quando ela começou."""
+    ask(game, players, **{p.id: 110 for p in players})
+    give_math(game, ids=tuple(p.id for p in players))
+    game.advance(game.phase_ends_at, players)
+    return game.phase_started_at
+
+
+def test_math_target_has_more_time_and_the_others_keep_theirs():
+    a, b = P("a"), P("b")
+    game = powered()
+    at = math_round(game, [a, b])
+    assert game.phase_ends_at == at + MATH_SECONDS
+    assert game.view(at, "b").phase_ends_in_ms == round(MATH_SECONDS * 1000)
+    assert game.view(at, "a").phase_ends_in_ms == round(ANSWER_SECONDS * 1000)
+    with pytest.raises(EstimateError):
+        game.guess("a", 100, at + ANSWER_SECONDS + 5)
+    game.guess("b", 100, at + ANSWER_SECONDS + 5)
+
+
+def test_who_guessed_or_ran_out_of_time_watches_the_target():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    at = math_round(game, [a, b, c])
+    assert game.view(at, "a").math_watch == [] and game.view(at, "c").math_watch == []
+    game.guess("a", 100, at + 1)
+    watching = game.view(at + 1, "a").math_watch
+    assert [w.player_id for w in watching] == ["b"]
+    assert game.view(at + 1, "c").math_watch == [] and game.view(at + 1, "b").math_watch == []
+    late = at + ANSWER_SECONDS + 2
+    assert game.view(late, "c").time_up and [w.player_id for w in game.view(late, "c").math_watch] == ["b"]
+    assert game.view(late, "c").phase_ends_in_ms == round((MATH_SECONDS - ANSWER_SECONDS - 2) * 1000)
+    assert not game.view(late, "b").time_up
+    game.guess("b", 100, late)
+    assert game.view(late, "a").math_watch == []  # o alvo já chutou: não tem mais o que assistir
+
+
+def test_math_steps_are_replayed_undone_and_seen_live():
+    a, b = P("a"), P("b")
+    game = powered()
+    at = math_round(game, [a, b])
+    keys = game.math_puzzles["b"].keys
+    start = game.math_puzzles["b"].start
+    plus = next(i for i, key in enumerate(keys) if key.op in ("add", "mul"))
+    game.math_steps("b", [plus])
+    moved = game.view(at + 1, "b").math
+    assert moved.steps == [plus] and moved.value == apply_math(start, keys[plus])
+    game.guess("a", 100, at + 1)
+    assert game.view(at + 1, "a").math_watch[0].math.value == moved.value
+    game.math_steps("b", [])  # Voltar
+    assert game.view(at + 1, "b").math.value == start
+
+
+def test_math_steps_reject_what_the_keypad_does_not_allow():
+    a, b = P("a"), P("b")
+    game = powered()
+    math_round(game, [a, b])
+    keys = game.math_puzzles["b"].keys
+    with pytest.raises(EstimateError):
+        game.math_steps("b", [99])
+    with pytest.raises(EstimateError):
+        game.math_steps("b", [0] * (keys[0].uses + 1))
+    with pytest.raises(EstimateError):
+        game.math_steps("a", [0])  # não é o alvo
+
+
+def test_when_time_runs_out_the_visor_counts_as_the_guess():
+    a, b = P("a"), P("b")
+    game = powered()
+    at = math_round(game, [a, b])
+    game.math_puzzles["b"] = game.math_puzzles["b"].model_copy(update={"value": 100})
+    game.guess("a", 170, at + 1)
+    game.advance(at + MATH_SECONDS + 2, [a, b])
+    assert result(game, "b").value == 100 and result(game, "b").exact
+    assert result(game, "b").elapsed_ms == round(MATH_SECONDS * 1000)
+
+
+def test_who_ran_out_of_time_does_not_hold_the_question():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    at = math_round(game, [a, b, c])
+    game.guess("a", 100, at + 1)
+    assert not game.everyone_answered(["a", "b", "c"], at + 2)
+    game.guess("b", 100, at + ANSWER_SECONDS + 5)
+    assert not game.everyone_answered(["a", "b", "c"], at + 2)  # c ainda tinha tempo
+    assert game.everyone_answered(["a", "b", "c"], at + ANSWER_SECONDS + 5)  # c ficou sem tempo
+
+
+def test_without_math_nobody_gets_extra_time():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    game.advance(game.phase_ends_at, [a, b])
+    assert game.others_time_up_at() is None and game.phase_ends_at == game.phase_started_at + ANSWER_SECONDS

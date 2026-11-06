@@ -595,6 +595,14 @@ class RoomManager:
         room.estimate.guess(player.id, value, now)
         return room
 
+    def math_steps(self, sid: str, steps: list[int]) -> Room:
+        """Chutômetro: as contas do alvo da Matemática."""
+        room, player = self._playing(sid)
+        if not room.estimate:
+            raise RoomError("Esse modo não tem contas.")
+        room.estimate.math_steps(player.id, steps)
+        return room
+
     def choose_theme(self, sid: str, theme: str) -> Room:
         """Especialista: quem foi sorteado escolhe o tema do bloco."""
         room, player = self._playing(sid)

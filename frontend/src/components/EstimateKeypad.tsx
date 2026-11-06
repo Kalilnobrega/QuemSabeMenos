@@ -4,6 +4,8 @@ import { reducedMotion, vibrate } from '../lib/effects'
 import { draftValue, erase, formatDraft, toggleSign, typeComma, typeDigits } from '../lib/guessDraft'
 import { seededShuffle } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
+import { avatarUrl } from '../lib/avatars'
+import type { EstimateMath, MathKey, PlayerView } from '../types/events'
 import { ScratchCard } from './PowerUps'
 
 // O teclado é bem maior que a pergunta: raspado como ela, tomaria os 20 segundos inteiros.
@@ -407,5 +409,175 @@ function Crack({ flip }: { flip: boolean }) {
       />
       <path d={lines} className="key-crack-line" pathLength={100} stroke="var(--color-ink)" strokeWidth={2.4} />
     </svg>
+  )
+}
+
+const MATH_OP_SYMBOL = { add: '+', sub: '−', mul: '×', div: '÷' }
+const MATH_MAX = 1e12 // acima disso o visor não cabe
+
+function mathLabel({ op, value }: MathKey) {
+  if (op === 'square') return 'x²'
+  if (op === 'sqrt') return '√'
+  return `${MATH_OP_SYMBOL[op]}${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 }).format(value ?? 0)}`
+}
+
+/** A conta de uma tecla, com 3 casas no máximo; null quando ela não dá nesse número. */
+function applyMath(current: number, { op, value }: MathKey) {
+  const operand = value ?? 0
+  const results = {
+    add: current + operand,
+    sub: current - operand,
+    mul: current * operand,
+    div: current / operand,
+    square: current ** 2,
+    sqrt: Math.sqrt(current),
+  }
+  const result = Math.round(results[op] * 1000) / 1000
+  return Number.isFinite(result) && Math.abs(result) <= MATH_MAX ? result : null
+}
+
+/**
+ * Matemática: 9 teclas de conta no lugar do teclado, cada uma com poucos usos, e o visor começa num
+ * número sorteado. Voltar desfaz o último passo e devolve o uso. Cada conta vai para o servidor: quem já
+ * chutou assiste, e se o tempo acabar vale o que está no visor.
+ */
+export function MathKeypad({
+  puzzle,
+  unit,
+  covered,
+  shorted,
+  onSteps,
+  onSubmit,
+}: {
+  puzzle: EstimateMath
+  unit: string | null | undefined
+  covered: boolean
+  shorted: boolean
+  onSteps: (steps: number[]) => void
+  onSubmit: (value: number) => void
+}) {
+  // Começa do que o servidor guardou, para não perder as contas ao reconectar.
+  const [steps, setSteps] = useState(puzzle.steps ?? [])
+  const value = steps.reduce((current, index) => applyMath(current, puzzle.keys[index]) ?? current, puzzle.start)
+  const change = (next: number[]) => {
+    setSteps(next)
+    onSteps(next)
+  }
+
+  return (
+    <div className="flex flex-col gap-2.5">
+      <output
+        aria-label="Seu chute"
+        className="flex min-h-14 flex-wrap items-center justify-center gap-x-2 rounded-xl bg-panel px-4 py-2 text-center"
+      >
+        <span className="font-display text-4xl text-chalk">
+          {new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 }).format(value)}
+        </span>
+        {unit && <span className="text-sm font-semibold text-steel">{unit}</span>}
+      </output>
+
+      <ScratchCard
+        active={covered}
+        className={covered ? 'pb-1' : ''}
+        radius={KEYPAD_SCRATCH_RADIUS}
+        revealAt={KEYPAD_SCRATCH_REVEAL}
+      >
+        <div className="grid grid-cols-3 gap-2">
+          {puzzle.keys.map((key, index) => {
+            const left = key.uses - steps.filter((step) => step === index).length
+            const useless = left === 0 || applyMath(value, key) === null
+            return (
+              <button
+                key={`${key.op}-${key.value}`}
+                type="button"
+                disabled={useless || shorted}
+                onMouseDown={(event) => event.preventDefault()}
+                onClick={() => {
+                  playSound('keypadPress')
+                  change([...steps, index])
+                }}
+                aria-label={`${mathLabel(key)}, ${left} ${left === 1 ? 'uso' : 'usos'}`}
+                className={`btn-3d btn-sm btn-dark relative h-11 touch-manipulation rounded-xl font-display text-xl text-chalk select-none ${useless ? 'opacity-40' : ''} ${shorted ? 'key-short opacity-25' : ''}`}
+              >
+                {mathLabel(key)}
+                <span className="absolute top-0.5 right-1.5 font-sans text-xs font-semibold text-brand">{left}</span>
+              </button>
+            )
+          })}
+          <button
+            type="button"
+            disabled={steps.length === 0 || shorted}
+            onMouseDown={(event) => event.preventDefault()}
+            onClick={() => {
+              playSound('keypadErase')
+              change(steps.slice(0, -1))
+            }}
+            className={`btn-3d btn-sm btn-dark col-span-3 h-11 touch-manipulation rounded-xl font-display text-xl text-chalk select-none ${steps.length === 0 ? 'opacity-40' : ''} ${shorted ? 'key-short opacity-25' : ''}`}
+          >
+            ⟲ Voltar
+          </button>
+        </div>
+      </ScratchCard>
+
+      {shorted && (
+        <p className="text-center text-sm font-semibold text-danger" role="status">
+          Curto-circuito! Só dá para chutar o que está no visor.
+        </p>
+      )}
+
+      <button
+        type="button"
+        onMouseDown={(event) => event.preventDefault()}
+        onClick={() => onSubmit(value)}
+        className="btn-3d btn-brand touch-manipulation rounded-xl py-2.5 font-display text-2xl tracking-wide text-ink"
+      >
+        Chutar!
+      </button>
+    </div>
+  )
+}
+
+/** Para quem já chutou ou ficou sem tempo: as contas do alvo da Matemática, ao vivo. */
+export function MathWatchPanel({
+  math,
+  unit,
+  player,
+}: {
+  math: EstimateMath
+  unit: string | null | undefined
+  player: PlayerView | undefined
+}) {
+  const steps = math.steps ?? []
+  return (
+    <div className="flex w-full flex-col gap-2 rounded-xl bg-panel p-3">
+      <p className="flex items-center justify-center gap-2 text-sm font-semibold text-steel">
+        {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
+        {player?.nickname ?? 'Alguém'} está fazendo contas
+      </p>
+      <p className="text-center font-display text-4xl text-chalk" aria-live="polite">
+        {new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 }).format(math.value)}
+        {unit && <span className="ml-2 font-sans text-sm font-semibold text-steel">{unit}</span>}
+      </p>
+      <p className="min-h-5 text-center text-sm break-words text-steel">
+        {steps.length > 0 &&
+          `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 }).format(math.start)} ${steps
+            .map((index) => mathLabel(math.keys[index]))
+            .join(' ')}`}
+      </p>
+      <ul className="grid grid-cols-3 gap-1.5" aria-label="Teclas do alvo">
+        {math.keys.map((key, index) => {
+          const left = key.uses - steps.filter((step) => step === index).length
+          return (
+            <li
+              key={`${key.op}-${key.value}`}
+              className={`relative rounded-lg bg-raised py-1 text-center font-display text-chalk ${left === 0 ? 'opacity-40' : ''}`}
+            >
+              {mathLabel(key)}
+              <span className="absolute top-0 right-1 font-sans text-xs font-semibold text-brand">{left}</span>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }

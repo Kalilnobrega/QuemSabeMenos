@@ -70,6 +70,7 @@ export default function App() {
     skipResults,
     chooseTheme,
     guess,
+    mathSteps,
     updateSettings,
     updateAvatar,
     setTeam,
@@ -97,6 +98,7 @@ export default function App() {
         snapshot={snapshot}
         playerId={playerId}
         onGuess={guess}
+        onMathSteps={mathSteps}
         onSkip={skipResults}
         onArm={armPowerUp}
         onDisarm={disarmPowerUp}

@@ -128,6 +128,7 @@ export function useRoom() {
   const skipResults = useCallback(() => request('skip_results'), [])
   const disarmPowerUp = useCallback(() => request('disarm_powerup'), [])
   const chooseTheme = useCallback((theme: string) => request('choose_theme', { theme }), [])
+  const mathSteps = useCallback((steps: number[]) => request('math_steps', { steps }), [])
   const guess = useCallback((value: number) => request('submit_guess', { value }), [])
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
   const chooseRepresentative = useCallback((choice: string) => request('choose_representative', { choice }), [])
@@ -158,6 +159,7 @@ export function useRoom() {
     skipResults,
     chooseTheme,
     guess,
+    mathSteps,
     updateSettings,
     updateAvatar,
     setTeam,

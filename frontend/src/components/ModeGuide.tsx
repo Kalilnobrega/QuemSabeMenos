@@ -395,7 +395,7 @@ const GUIDES: Record<Mode, Guide> = {
       'Na revelação, você escolhe um poder para a próxima pergunta; o Espiar, a Faixa e o Sniper se usam na hora.',
       'Com poderes, o teclado físico do computador fica bloqueado: todo mundo digita pelo teclado da tela.',
       'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como uma sabotagem LENDÁRIA (20% para quem está em último muito atrás). Ela vale em todos os outros de uma vez, e o Reverso não segura.',
-      'Aqui não tem míticos.',
+      'Mítico: um poder ganho durante a partida tem 2% de chance de vir como a Matemática (8% para quem está em último muito atrás).',
     ],
     powers: [
       {
@@ -438,6 +438,11 @@ const GUIDES: Record<Mode, Guide> = {
         kinds: ESTIMATE_LEGENDARIES,
         hints: ESTIMATE_LEGENDARY_HINTS,
         legendary: true,
+      },
+      {
+        title: 'Mítico',
+        kinds: ['math'],
+        mythic: true,
       },
     ],
   },

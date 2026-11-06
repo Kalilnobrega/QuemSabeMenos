@@ -23,6 +23,13 @@ const ICON_STROKE = {
   strokeLinecap: 'round' as const,
 }
 
+/** Os míticos que miram alguém, com a pergunta de quem vai ser o alvo. */
+const MYTHIC_TARGET_PROMPT: Partial<Record<Kind, string>> = {
+  duel: 'Quem vai para o X1?',
+  dagger: 'Em quem cravar a Adaga?',
+  math: 'Quem vai fazer as contas?',
+}
+
 /** A etiqueta embaixo do nome: Ajuda (verde) ou Sabotagem (vermelha), com um complemento opcional. */
 export function CategoryTag({ kind, note }: { kind: Kind; note?: string }) {
   const category = powerCategory(kind)
@@ -461,6 +468,14 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
         <text x="12" y="16.2" textAnchor="middle" fontSize="9" fontWeight="900" fill="var(--color-ink)">
           7
         </text>
+      </svg>
+    )
+  }
+  if (kind === 'math') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="#FCD34D" {...ICON_STROKE} />
+        <path d="M6 8.5h5M8.5 6v5M13.5 8.5h5M6.5 15l4 4m0-4-4 4M13.5 15.5h5M13.5 18.5h5" fill="none" {...ICON_STROKE} />
       </svg>
     )
   }
@@ -1297,11 +1312,9 @@ export function PowerUpBar({
             <span className="font-bold text-amber-200">{info.name} MÍTICO:</span> {hint(selected.kind)}
           </span>
         </p>
-        {(selected.kind === 'duel' || selected.kind === 'dagger') && (
+        {MYTHIC_TARGET_PROMPT[selected.kind] && (
           <>
-            <p className="text-sm font-semibold text-steel">
-              {selected.kind === 'duel' ? 'Quem vai para o X1?' : 'Em quem cravar a Adaga?'}
-            </p>
+            <p className="text-sm font-semibold text-steel">{MYTHIC_TARGET_PROMPT[selected.kind]}</p>
             <div className="flex flex-wrap gap-2">
               {targets.map((p) => (
                 <button
@@ -1317,7 +1330,7 @@ export function PowerUpBar({
           </>
         )}
         <div className="flex gap-2">
-          {selected.kind !== 'duel' && selected.kind !== 'dagger' && (
+          {!MYTHIC_TARGET_PROMPT[selected.kind] && (
             <button
               onClick={() => void arm(selected.kind, null)}
               className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg"

@@ -28,11 +28,14 @@ from app import powerups as pw
 from app.engine import Revealed, RoomError
 from app.events import (
     EstimateGuess,
+    EstimateMath,
     EstimatePeek,
     EstimateRange,
     EstimateScoring,
     EstimateView,
     LastingPowerUp,
+    MathKey,
+    MathWatch,
     PowerUp,
     PowerUpGain,
     PowerUpUse,
@@ -51,6 +54,7 @@ from app.game import point_scale as scale_for
 ESTIMATES_DIR = Path(__file__).parent / "estimates"
 ROUND_OPTIONS = (10, 15, 20)
 ANSWER_SECONDS = 20.0
+MATH_SECONDS = 30.0  # o alvo da Matemática tem mais tempo, e os outros assistem às contas
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
 # Sem 50/50, Alternativa falsa e Pedágio, que dependem de alternativas, e sem Tempo extra: a velocidade não dá QI.
 # Investimento, Embaralhar, Lupa, Acelerador e Flashbang também ficaram de fora, por escolha de jogo.
@@ -79,7 +83,14 @@ POWERS: tuple[PowerUp, ...] = (
     "short_circuit",
     "double_click",
 )
+# Mítico: só chega por sorteio, nunca como poder comum nem lendário, e o Reverso não segura.
+MATH_CHANCE = (0.02, 0.08)  # (para quem não é lanterna, para o lanterna)
+MATH_KEYS = 9
+MATH_MAX_VALUE = 1e12  # acima disso o visor não cabe
+MATH_MAX_USES = 3
+MATH_MULTIPLIERS = (2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 50, 100, 1000)
 TARGETED: frozenset[PowerUp] = pw.TARGETED | {
+    "math",
     "broken_keys",
     "shuffled_keys",
     "perfectionist",
@@ -170,6 +181,77 @@ def answer_digits(answer: float) -> list[str]:
     return sorted(set(written) - {"."})
 
 
+def apply_math(value: float, key: MathKey) -> float:
+    """A conta de uma tecla, como o navegador faz: 3 casas no máximo."""
+    match key.op:
+        case "add":
+            result = value + key.value
+        case "sub":
+            result = value - key.value
+        case "mul":
+            result = value * key.value
+        case "div":
+            result = value / key.value
+        case "square":
+            result = value**2
+        case "sqrt":
+            result = math.sqrt(value)
+    return round(result, 3)
+
+
+def _two_digits(value: float) -> float:
+    """Dois algarismos significativos, para a tecla ficar legível."""
+    return float(f"{value:.2g}")
+
+
+def math_path(start: float, answer: float) -> list[MathKey]:
+    """Um caminho de contas do número inicial até perto da resposta: multiplica ou divide até a mesma
+    escala e acerta o resto somando ou subtraindo. Quem achar outro caminho também vale."""
+    path: list[MathKey] = []
+    value = start
+    size = abs(answer)
+    while size and (abs(value) * 2 <= size or abs(value) >= size * 2):
+        growing = abs(value) * 2 <= size
+        room = size / abs(value) if growing else abs(value) / size
+        factor = max(n for n in MATH_MULTIPLIERS if n <= room)
+        step = MathKey(op="mul" if growing else "div", value=factor, uses=1)
+        path.append(step)
+        value = apply_math(value, step)
+    rest = _two_digits(abs(answer - value))
+    if rest:
+        path.append(MathKey(op="add" if answer > value else "sub", value=rest, uses=1))
+    return path
+
+
+def _math_decoy(size: float, rng: random.Random) -> MathKey:
+    """Uma tecla de despiste, na escala da resposta ou menor: as contas certas não saltam aos olhos."""
+    kind = rng.choice(("add", "sub", "mul", "div", "square", "sqrt"))
+    if kind in ("square", "sqrt"):
+        return MathKey(op=kind, value=None, uses=1)
+    if kind in ("mul", "div"):
+        return MathKey(op=kind, value=rng.choice(MATH_MULTIPLIERS), uses=1)
+    largest = max(0, math.floor(math.log10(size))) if size else 0
+    return MathKey(op=kind, value=rng.randint(1, 9) * 10 ** rng.randint(0, largest), uses=1)
+
+
+def draw_math(answer: float, rng: random.Random) -> EstimateMath:
+    """O número inicial e as teclas, embaralhadas: o caminho e os despistes, com 1 a 3 usos cada."""
+    start = rng.randint(2, 40)
+    uses: dict[tuple[str, float | None], int] = {}
+    for key in math_path(start, answer):
+        uses[(key.op, key.value)] = uses.get((key.op, key.value), 0) + 1
+    while len(uses) < MATH_KEYS:
+        decoy = _math_decoy(abs(answer), rng)
+        uses.setdefault((decoy.op, decoy.value), 0)
+    keys = [
+        # O caminho pode usar a mesma tecla mais de uma vez: ela nunca tem menos usos do que ele precisa.
+        MathKey(op=op, value=value, uses=max(needed, rng.randint(1, MATH_MAX_USES)))
+        for (op, value), needed in uses.items()
+    ]
+    rng.shuffle(keys)
+    return EstimateMath(start=start, keys=keys, value=start)
+
+
 def draw_range(question: EstimateQuestion, rng: random.Random) -> EstimateRange:
     """Tão larga quanto a zona de ganho, com pontas redondas e a resposta sempre fora do meio."""
     width = error_base(question) * SCORING[question.difficulty].break_even * 2 / 100
@@ -232,6 +314,8 @@ class Estimate(Revealed):
     used: set[str] = field(default_factory=set)
     held: dict[str, list[PowerUp]] = field(default_factory=dict)
     legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)
+    mythics: dict[str, list[PowerUp]] = field(default_factory=dict)
+    math_puzzles: dict[str, EstimateMath] = field(default_factory=dict)  # Matemática: de quem foi atingido
     starting: dict[str, PowerUp] = field(default_factory=dict)
     extra_slots: dict[str, int] = field(default_factory=dict)
     armed: dict[str, PowerUpUse] = field(default_factory=dict)
@@ -292,7 +376,7 @@ class Estimate(Revealed):
             raise EstimateError("Agora não dá para chutar.")
         if player_id in self.guesses:
             raise EstimateError("Você já chutou.")
-        limit = self.phase_started_at + ANSWER_SECONDS
+        limit = self.phase_started_at + self.answer_window(player_id)
         if now > limit + LATE_SECONDS:
             raise EstimateError("O tempo acabou.")
         guessed = (value, min(now, limit))
@@ -304,8 +388,46 @@ class Estimate(Revealed):
             return
         self.guesses[player_id] = guessed
 
-    def everyone_answered(self, connected: list[str]) -> bool:
-        return all(pid in self.guesses for pid in connected)
+    def answer_window(self, player_id: str) -> float:
+        """Segundos que o jogador tem para chutar: o alvo da Matemática tem mais."""
+        return MATH_SECONDS if player_id in self.math_puzzles else ANSWER_SECONDS
+
+    def time_is_up(self, player_id: str, now: float) -> bool:
+        """Sem tempo, mas a pergunta continua: só acontece com um alvo da Matemática fazendo contas."""
+        return (
+            self.phase == "answering"
+            and player_id not in self.guesses
+            and now > self.phase_started_at + self.answer_window(player_id) + LATE_SECONDS
+        )
+
+    def others_time_up_at(self) -> float | None:
+        """Quando acaba o tempo de quem não é alvo, se a pergunta segue depois disso para esperar um alvo."""
+        if self.phase != "answering" or not self.math_puzzles:
+            return None
+        return self.phase_started_at + ANSWER_SECONDS + LATE_SECONDS
+
+    def math_steps(self, player_id: str, steps: list[int]) -> None:
+        """Matemática: refaz as contas no servidor, para quem assiste e para valer se o tempo acabar."""
+        puzzle = self.math_puzzles.get(player_id)
+        if self.phase != "answering" or not puzzle or player_id in self.guesses:
+            raise EstimateError("Agora não dá para fazer contas.")
+        value = puzzle.start
+        for index in steps:
+            if not 0 <= index < len(puzzle.keys):
+                raise EstimateError("Essa tecla não existe.")
+            key = puzzle.keys[index]
+            if steps.count(index) > key.uses:
+                raise EstimateError("Essa tecla já acabou.")
+            if key.op == "sqrt" and value < 0:
+                raise EstimateError("Não dá para tirar a raiz desse número.")
+            value = apply_math(value, key)
+            if abs(value) > MATH_MAX_VALUE:
+                raise EstimateError("Esse número não cabe no visor.")
+        self.math_puzzles[player_id] = puzzle.model_copy(update={"steps": steps, "value": value})
+
+    def everyone_answered(self, connected: list[str], now: float | None = None) -> bool:
+        """Quem ficou sem tempo não segura a pergunta."""
+        return all(pid in self.guesses or (now is not None and self.time_is_up(pid, now)) for pid in connected)
 
     def everyone_ready(self, connected: list[str]) -> bool:
         """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
@@ -378,7 +500,7 @@ class Estimate(Revealed):
             held.remove(kind)
             self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None, legendary=True)
             return
-        held = self.held.get(player_id, [])
+        held = self.mythics.get(player_id, []) if kind == "math" else self.held.get(player_id, [])
         if kind not in held:
             raise EstimateError("Você não tem esse poder.")
         if kind in INSTANT:
@@ -407,7 +529,8 @@ class Estimate(Revealed):
         if use.kind == "theme":
             raise EstimateError("O tema da próxima já foi trocado: não dá para voltar.")
         del self.armed[player_id]
-        (self.legendaries if use.legendary else self.held).setdefault(player_id, []).append(use.kind)
+        hands = self.mythics if use.kind == "math" else self.legendaries if use.legendary else self.held
+        hands.setdefault(player_id, []).append(use.kind)
         self.ready.discard(player_id)
 
     def use_now(self, player_id: str, kind: PowerUp) -> None:
@@ -484,12 +607,14 @@ class Estimate(Revealed):
                 self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
                 self.used_lasting.get(use.by, set()).discard(use.kind)
         reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
-        self.active = pw.reflect(armed, reversers, TARGETED)
+        self.active = pw.reflect(armed, reversers, TARGETED - {"math"})
         for use in self.active:
             if use.reflected_by:
                 self.lasting[use.reflected_by].pop("reverse", None)
             if use.kind == "silence":
                 self.silences.append((use, pw.SILENCE_ROUNDS))
+            if use.kind == "math":
+                self.math_puzzles[use.target] = draw_math(self.question.answer, self.rng)
 
     def _settle_steals(self, players: list[Scorable]) -> None:
         """Depois dos pontos de cada chute: o Roubo depende do resultado, e o lendário, do placar antes dele."""
@@ -527,6 +652,9 @@ class Estimate(Revealed):
         guesses = {}
         for player in players:
             guessed = self.guesses.get(player.id) or self.first_guesses.get(player.id)
+            puzzle = self.math_puzzles.get(player.id)
+            if not guessed and puzzle:  # o tempo acabou: vale o que está no visor
+                guessed = (puzzle.value, self.phase_started_at + MATH_SECONDS)
             if guessed:
                 guesses[player.id] = guessed
         originals: dict[str, float] = {}
@@ -581,13 +709,23 @@ class Estimate(Revealed):
                 continue
             held = self.held.setdefault(player.id, [])
             legendaries = self.legendaries.setdefault(player.id, [])
-            if len(held) + len(legendaries) >= self.capacity(player.id):
+            mythics = self.mythics.setdefault(player.id, [])
+            if len(held) + len(legendaries) + len(mythics) >= self.capacity(player.id):
                 continue  # com as mãos cheias, a sequência continua valendo para depois
-            chance = pw.LEGENDARY_TRAILING_CHANCE if player.id in behind else pw.LEGENDARY_CHANCE
-            legendary = self.rng.random() < chance
-            kind = self.rng.choice(LEGENDARY if legendary else POWERS)
-            (legendaries if legendary else held).append(kind)
-            by_id[player.id].gained = PowerUpGain(kind=kind, reason=reason, legendary=legendary)
+            trailing = player.id in behind
+            roll = self.rng.random()
+            mythic_edge = MATH_CHANCE[1 if trailing else 0]
+            mythic = roll < mythic_edge
+            legendary = not mythic and roll < mythic_edge + (
+                pw.LEGENDARY_TRAILING_CHANCE if trailing else pw.LEGENDARY_CHANCE
+            )
+            if mythic:
+                kind = "math"
+                mythics.append(kind)
+            else:
+                kind = self.rng.choice(LEGENDARY if legendary else POWERS)
+                (legendaries if legendary else held).append(kind)
+            by_id[player.id].gained = PowerUpGain(kind=kind, reason=reason, legendary=legendary, mythic=mythic)
             if reason == "streak":
                 self.right_runs[player.id] = 0
             elif reason == "comeback":
@@ -596,7 +734,7 @@ class Estimate(Revealed):
     def advance(self, now: float, players: list[Scorable]) -> None:
         """Passa para a próxima fase. O main.py chama quando o tempo acaba (ou todos fizeram a sua parte)."""
         if self.phase == "level":
-            self._enter("answering", now, ANSWER_SECONDS)
+            self._enter("answering", now, self._longest_window())
         elif self.phase == "answering":
             self._close(now, players)
         elif self.phase in ("starting", "results"):
@@ -607,6 +745,7 @@ class Estimate(Revealed):
             self.guesses = {}
             self.first_guesses = {}
             self.ranges = {}
+            self.math_puzzles = {}
             self.results = []
             self.ready = set()
             if self.powers:
@@ -614,7 +753,10 @@ class Estimate(Revealed):
             if self.round > 0 and self.question.difficulty != self.questions[self.round - 1].difficulty:
                 self._enter("level", now, LEVEL_SECONDS)
             else:
-                self._enter("answering", now, ANSWER_SECONDS)
+                self._enter("answering", now, self._longest_window())
+
+    def _longest_window(self) -> float:
+        return MATH_SECONDS if self.math_puzzles else ANSWER_SECONDS
 
     def _close(self, now: float, players: list[Scorable]) -> None:
         q = self.question
@@ -697,6 +839,9 @@ class Estimate(Revealed):
         answering = self.phase == "answering"
         retrying = answering and first is not None and mine is None
         ends_at = self.phase_ends_at
+        time_up = bool(viewer) and self.time_is_up(viewer, now)
+        if answering and viewer and viewer not in self.guesses and not time_up:
+            ends_at = self.phase_started_at + self.answer_window(viewer)  # o seu prazo, não o do alvo
         peeking = answering and bool(viewer) and self._affects("peek", viewer)
         return EstimateView(
             phase=self.phase,
@@ -721,7 +866,7 @@ class Estimate(Revealed):
             powers=self.powers,
             powerups=list(self.held.get(viewer, [])) if viewer else [],
             legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
-            mythic_powerups=[],
+            mythic_powerups=list(self.mythics.get(viewer, [])) if viewer else [],
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
             power_run=self.right_runs.get(viewer, 0) if viewer else 0,
             power_run_goal=pw.STREAK_FOR_POWERUP,
@@ -737,10 +882,23 @@ class Estimate(Revealed):
             ),
             range_hint=self.ranges.get(viewer) if answering and viewer else None,
             hot_digits=answer_digits(q.answer) if answering and viewer and self._affects("hot_keys", viewer) else None,
+            math=self.math_puzzles.get(viewer) if answering and viewer else None,
+            math_watch=self._math_watch(viewer, now) if answering and viewer and not silenced else [],
+            time_up=time_up,
             silenced_rounds=silenced,
             theme_choices=self.theme_choices,
             powers_round=self.powers_round,
         )
+
+    def _math_watch(self, viewer: str, now: float) -> list[MathWatch]:
+        """Quem já chutou ou ficou sem tempo assiste a quem ainda faz contas."""
+        if viewer not in self.guesses and not self.time_is_up(viewer, now):
+            return []
+        return [
+            MathWatch(player_id=pid, math=puzzle)
+            for pid, puzzle in self.math_puzzles.items()
+            if pid != viewer and pid not in self.guesses
+        ]
 
     def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
         lasting = [

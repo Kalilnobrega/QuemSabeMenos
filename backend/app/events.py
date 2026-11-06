@@ -82,7 +82,8 @@ PowerUp = Literal[
     "swap",
     "runaway_keys",
     "short_circuit",
-    "double_click",  # só no Chutômetro
+    "double_click",
+    "math",  # só no Chutômetro
 ]
 GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato", "estimate"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato", "estimate")
@@ -176,6 +177,12 @@ class ArmPowerUpRequest(BaseModel):
     legendary: bool = False  # a versão lendária de uma sabotagem: vale em todos os outros, sem alvo
     theme: str | None = None  # Tema: um dos temas sorteados em `theme_choices`
     target_team: int | None = None  # Times: o time alvo
+
+
+class MathStepsRequest(BaseModel):
+    """Matemática: as contas feitas até agora, para quem assiste e para valer se o tempo acabar."""
+
+    steps: list[int]
 
 
 class SubmitGuessRequest(BaseModel):
@@ -770,6 +777,30 @@ class EstimatePeek(BaseModel):
     value: float
 
 
+class MathKey(BaseModel):
+    """Matemática: uma tecla de operação, com quantas vezes dá para usar. Ao quadrado e raiz não têm valor."""
+
+    op: Literal["add", "sub", "mul", "div", "square", "sqrt"]
+    value: float | None
+    uses: int
+
+
+class EstimateMath(BaseModel):
+    """Matemática: o número que começa no visor, as teclas que substituem o teclado e as contas até agora."""
+
+    start: float
+    keys: list[MathKey]
+    steps: list[int] = []  # posição de cada tecla usada, na ordem
+    value: float  # o que está no visor
+
+
+class MathWatch(BaseModel):
+    """Matemática: as contas de um alvo, para quem já não pode mais chutar assistir."""
+
+    player_id: str
+    math: EstimateMath
+
+
 class EstimateRange(BaseModel):
     """Faixa: um intervalo que contém a resposta, sem ela no meio."""
 
@@ -827,6 +858,9 @@ class EstimateView(BaseModel):
     peek: list[EstimatePeek] | None  # Espiar: os chutes dos outros
     range_hint: EstimateRange | None  # Faixa: só para quem usou, enquanto chuta
     hot_digits: list[str] | None  # Tecla quente: os algarismos da resposta, só para quem usou, enquanto chuta
+    math: EstimateMath | None  # Matemática: só para o alvo, enquanto chuta
+    math_watch: list[MathWatch]  # Matemática: quem ainda faz contas, para quem já chutou ou ficou sem tempo
+    time_up: bool  # o seu tempo acabou, mas a pergunta continua porque um alvo da Matemática tem mais
     silenced_rounds: int
     theme_choices: list[str]
     powers_round: bool

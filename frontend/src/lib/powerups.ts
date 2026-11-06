@@ -333,6 +333,12 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
     targeted: true,
     tone: 'bg-fuchsia-400/15 text-fuchsia-200',
   },
+  math: {
+    name: 'Matemática',
+    hint: 'O teclado do alvo vira 9 teclas de conta, como +3, ×4 e ÷6, com 1 a 3 usos cada, e o visor começa num número sorteado. Ele tem 30 segundos para fazer contas até a resposta, e quem já chutou assiste ao vivo. O Reverso não segura.',
+    targeted: true,
+    tone: 'bg-amber-300/15 text-amber-100',
+  },
   short_circuit: {
     name: 'Curto-circuito',
     hint: 'Na próxima pergunta, em algum momento entre 5 e 12 segundos, o teclado do alvo queima. Só dá para chutar o que já estiver no visor.',

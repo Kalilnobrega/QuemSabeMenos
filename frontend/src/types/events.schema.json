@@ -57,7 +57,8 @@
             "swap",
             "runaway_keys",
             "short_circuit",
-            "double_click"
+            "double_click",
+            "math"
           ],
           "type": "string"
         },
@@ -564,7 +565,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -599,6 +601,37 @@
         "gained"
       ],
       "title": "EstimateGuess",
+      "type": "object"
+    },
+    "EstimateMath": {
+      "description": "Matemática: o número que começa no visor, as teclas que substituem o teclado e as contas até agora.",
+      "properties": {
+        "start": {
+          "type": "number"
+        },
+        "keys": {
+          "items": {
+            "$ref": "#/$defs/MathKey"
+          },
+          "type": "array"
+        },
+        "steps": {
+          "default": [],
+          "items": {
+            "type": "integer"
+          },
+          "type": "array"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "start",
+        "keys",
+        "value"
+      ],
+      "title": "EstimateMath",
       "type": "object"
     },
     "EstimatePeek": {
@@ -871,7 +904,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -932,7 +966,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -993,7 +1028,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -1064,7 +1100,8 @@
                 "swap",
                 "runaway_keys",
                 "short_circuit",
-                "double_click"
+                "double_click",
+                "math"
               ],
               "type": "string"
             },
@@ -1134,6 +1171,25 @@
             }
           ]
         },
+        "math": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EstimateMath"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "math_watch": {
+          "items": {
+            "$ref": "#/$defs/MathWatch"
+          },
+          "type": "array"
+        },
+        "time_up": {
+          "type": "boolean"
+        },
         "silenced_rounds": {
           "type": "integer"
         },
@@ -1182,6 +1238,9 @@
         "peek",
         "range_hint",
         "hot_digits",
+        "math",
+        "math_watch",
+        "time_up",
         "silenced_rounds",
         "theme_choices",
         "powers_round"
@@ -1333,7 +1392,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -1394,7 +1454,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -1455,7 +1516,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -1550,7 +1612,8 @@
                 "swap",
                 "runaway_keys",
                 "short_circuit",
-                "double_click"
+                "double_click",
+                "math"
               ],
               "type": "string"
             },
@@ -1989,7 +2052,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -2050,7 +2114,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -2115,7 +2180,8 @@
                 "swap",
                 "runaway_keys",
                 "short_circuit",
-                "double_click"
+                "double_click",
+                "math"
               ],
               "type": "string"
             },
@@ -2293,7 +2359,8 @@
             "swap",
             "runaway_keys",
             "short_circuit",
-            "double_click"
+            "double_click",
+            "math"
           ],
           "type": "string"
         },
@@ -2310,6 +2377,59 @@
         "total"
       ],
       "title": "LastingPowerUp",
+      "type": "object"
+    },
+    "MathKey": {
+      "description": "Matemática: uma tecla de operação, com quantas vezes dá para usar. Ao quadrado e raiz não têm valor.",
+      "properties": {
+        "op": {
+          "enum": [
+            "add",
+            "sub",
+            "mul",
+            "div",
+            "square",
+            "sqrt"
+          ],
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "uses": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "op",
+        "value",
+        "uses"
+      ],
+      "title": "MathKey",
+      "type": "object"
+    },
+    "MathWatch": {
+      "description": "Matemática: as contas de um alvo, para quem já não pode mais chutar assistir.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "math": {
+          "$ref": "#/$defs/EstimateMath"
+        }
+      },
+      "required": [
+        "player_id",
+        "math"
+      ],
+      "title": "MathWatch",
       "type": "object"
     },
     "OkAck": {
@@ -2638,7 +2758,8 @@
             "swap",
             "runaway_keys",
             "short_circuit",
-            "double_click"
+            "double_click",
+            "math"
           ],
           "type": "string"
         },
@@ -2726,7 +2847,8 @@
             "swap",
             "runaway_keys",
             "short_circuit",
-            "double_click"
+            "double_click",
+            "math"
           ],
           "type": "string"
         },
@@ -3246,7 +3368,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -3692,7 +3815,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -3753,7 +3877,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -3814,7 +3939,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -3887,7 +4013,8 @@
                 "swap",
                 "runaway_keys",
                 "short_circuit",
-                "double_click"
+                "double_click",
+                "math"
               ],
               "type": "string"
             },
@@ -4348,7 +4475,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -4523,7 +4651,8 @@
             "swap",
             "runaway_keys",
             "short_circuit",
-            "double_click"
+            "double_click",
+            "math"
           ],
           "type": "string"
         },
@@ -4725,7 +4854,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -4786,7 +4916,8 @@
               "swap",
               "runaway_keys",
               "short_circuit",
-              "double_click"
+              "double_click",
+              "math"
             ],
             "type": "string"
           },
@@ -5139,7 +5270,8 @@
             "swap",
             "runaway_keys",
             "short_circuit",
-            "double_click"
+            "double_click",
+            "math"
           ],
           "type": "string"
         },

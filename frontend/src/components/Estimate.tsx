@@ -9,7 +9,7 @@ import type { EstimateGuess, EstimateView, PlayerView, PowerUpUse } from '../typ
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
 import { DIGIT_KEYS, draftValue } from '../lib/guessDraft'
-import { EstimateKeypad } from './EstimateKeypad'
+import { EstimateKeypad, MathKeypad, MathWatchPanel } from './EstimateKeypad'
 import { EstimateRuler } from './EstimateRuler'
 import { CountUp, FactCard, Podium, Ranking } from './Game'
 import { ActivePowerUps, InstantPowerUps, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
@@ -20,6 +20,7 @@ interface Props {
   snapshot: Snapshot
   playerId: string | null
   onGuess: (value: number) => Promise<string | null>
+  onMathSteps: (steps: number[]) => Promise<string | null>
   onSkip: () => Promise<string | null>
   onArm: (
     kind: PowerUpUse['kind'],
@@ -48,6 +49,7 @@ const HIT_LINES: Partial<Record<Kind, string>> = {
   scratch: 'jogou Raspadinha em você! Raspe a pergunta e o teclado.',
   short_circuit: 'jogou Curto-circuito em você: seu teclado vai queimar. Chute logo!',
   double_click: 'jogou Duplo clique em você: 3 teclas digitam duas vezes. Olhe o visor!',
+  math: 'jogou Matemática em você: você tem 30 segundos para fazer as contas!',
   broken_keys: 'jogou Tecla quebrada em você: 3 teclas vão rachar quando você tocar!',
   shuffled_keys: 'jogou Teclado mentiroso em você: as teclas trocaram de lugar!',
   perfectionist: 'jogou Perfeccionista em você: não dá para apagar!',
@@ -60,6 +62,7 @@ const HIT_DETAILS: Partial<Record<Kind, string>> = {
   scratch: 'Raspe a pergunta e o teclado',
   short_circuit: 'Seu teclado vai queimar. Chute logo!',
   double_click: '3 teclas digitam duas vezes. Olhe o visor!',
+  math: 'Você tem 30 segundos para chegar na resposta, e a galera assiste',
   broken_keys: '3 teclas vão rachar quando você tocar',
   shuffled_keys: 'As teclas trocaram de lugar',
   perfectionist: 'Não dá para apagar: capriche',
@@ -74,7 +77,18 @@ const ESTIMATE_LEVEL_LINES: Record<string, string> = {
 }
 
 /** Chutômetro: a resposta é um número; quanto mais perto, mais QI. */
-export function Estimate({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, onUse, onPlayAgain, onLeave }: Props) {
+export function Estimate({
+  snapshot,
+  playerId,
+  onGuess,
+  onMathSteps,
+  onSkip,
+  onArm,
+  onDisarm,
+  onUse,
+  onPlayAgain,
+  onLeave,
+}: Props) {
   const estimate = snapshot.room.estimate!
   if (estimate.phase === 'finished') {
     return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
@@ -92,6 +106,7 @@ export function Estimate({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm,
       snapshot={snapshot}
       playerId={playerId}
       onGuess={onGuess}
+      onMathSteps={onMathSteps}
       onSkip={onSkip}
       onArm={onArm}
       onDisarm={onDisarm}
@@ -123,6 +138,7 @@ interface RoundProps {
   snapshot: Snapshot
   playerId: string | null
   onGuess: Props['onGuess']
+  onMathSteps: Props['onMathSteps']
   onSkip: Props['onSkip']
   onArm: Props['onArm']
   onDisarm: Props['onDisarm']
@@ -130,7 +146,17 @@ interface RoundProps {
   onLeave: Props['onLeave']
 }
 
-function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, onUse, onLeave }: RoundProps) {
+function EstimateRound({
+  snapshot,
+  playerId,
+  onGuess,
+  onMathSteps,
+  onSkip,
+  onArm,
+  onDisarm,
+  onUse,
+  onLeave,
+}: RoundProps) {
   const { room, receivedAt } = snapshot
   const estimate = room.estimate!
   const [draft, setDraft] = useState('')
@@ -140,7 +166,7 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
   const remaining = useRemaining(receivedAt, estimate.phase_ends_in_ms, answering || results)
   const guessed = estimate.my_guess !== null && estimate.my_guess !== undefined
   const silenced = estimate.silenced_rounds > 0
-  useUrgentTick(remaining, answering && !guessed && !silenced)
+  useUrgentTick(remaining, answering && !guessed && !estimate.time_up && !silenced)
   const mine = estimate.guesses.find((g) => g.player_id === playerId)
   // A sabotagem lendária não tem alvo: pega todos menos quem jogou.
   const hitsMe = (use: PowerUpUse) => (use.legendary ? use.by !== playerId : use.target === playerId)
@@ -179,11 +205,13 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [results])
 
-  const submit = async () => {
-    const value = draftValue(draft)
-    if (value === null) return
+  const send = async (value: number) => {
     playSound('select')
     setError(await onGuess(value))
+  }
+  const submit = () => {
+    const value = draftValue(draft)
+    if (value !== null) void send(value)
   }
 
   return (
@@ -247,10 +275,24 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
           onArm={onArm}
           onDisarm={onDisarm}
         />
-      ) : guessed ? (
+      ) : guessed || estimate.time_up ? (
         <div className="flex flex-col items-center gap-3">
-          <p className="text-steel">Seu chute</p>
-          <p className="font-display text-5xl text-brand">{withUnit(estimate.my_guess!, estimate.unit)}</p>
+          {guessed ? (
+            <>
+              <p className="text-steel">Seu chute</p>
+              <p className="font-display text-5xl text-brand">{withUnit(estimate.my_guess!, estimate.unit)}</p>
+            </>
+          ) : (
+            <p className="font-display text-2xl text-danger">Seu tempo acabou!</p>
+          )}
+          {estimate.math_watch.map(({ player_id, math }) => (
+            <MathWatchPanel
+              key={player_id}
+              math={math}
+              unit={estimate.unit}
+              player={room.players.find((p) => p.id === player_id)}
+            />
+          ))}
           {!silenced && <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />}
         </div>
       ) : (
@@ -270,25 +312,36 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
             </p>
           )}
           {estimate.peek && <PeekList peek={estimate.peek} players={room.players} unit={estimate.unit} />}
-          <EstimateKeypad
-            draft={draft}
-            unit={estimate.unit}
-            disabled={!answering}
-            physicalKeys={!estimate.powers}
-            compact={estimate.powers}
-            hotDigits={estimate.hot_digits ?? []}
-            brokenKeys={hits('broken_keys') ? seededShuffle(DIGIT_KEYS, estimate.round).slice(0, BROKEN_KEYS) : []}
-            doubleKeys={
-              hits('double_click') ? seededShuffle(DIGIT_KEYS, estimate.round + 50).slice(0, DOUBLE_KEYS) : []
-            }
-            shuffleSeed={hits('shuffled_keys') ? estimate.round : null}
-            noErase={hits('perfectionist')}
-            covered={hits('scratch')}
-            shorted={shorted}
-            runaway={hits('runaway_keys')}
-            onChange={setDraft}
-            onSubmit={() => void submit()}
-          />
+          {estimate.math ? (
+            <MathKeypad
+              puzzle={estimate.math}
+              unit={estimate.unit}
+              covered={hits('scratch')}
+              shorted={shorted}
+              onSteps={(steps) => void onMathSteps(steps)}
+              onSubmit={(value) => void send(value)}
+            />
+          ) : (
+            <EstimateKeypad
+              draft={draft}
+              unit={estimate.unit}
+              disabled={!answering}
+              physicalKeys={!estimate.powers}
+              compact={estimate.powers}
+              hotDigits={estimate.hot_digits ?? []}
+              brokenKeys={hits('broken_keys') ? seededShuffle(DIGIT_KEYS, estimate.round).slice(0, BROKEN_KEYS) : []}
+              doubleKeys={
+                hits('double_click') ? seededShuffle(DIGIT_KEYS, estimate.round + 50).slice(0, DOUBLE_KEYS) : []
+              }
+              shuffleSeed={hits('shuffled_keys') ? estimate.round : null}
+              noErase={hits('perfectionist')}
+              covered={hits('scratch')}
+              shorted={shorted}
+              runaway={hits('runaway_keys')}
+              onChange={setDraft}
+              onSubmit={submit}
+            />
+          )}
           {error && <p className="text-center text-sm text-danger">{error}</p>}
           {!silenced && <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />}
         </div>
@@ -351,7 +404,14 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
   for (const guess of estimate.guesses) {
     const id = guess.player_id
     const base = { player: players.find((p) => p.id === id), who: who(id), me: id === playerId }
-    const note = (key: string, kind: Kind, title: string, detail: string, delta: number | null = null) =>
+    const note = (
+      key: string,
+      kind: Kind,
+      title: string,
+      detail: string,
+      delta: number | null = null,
+      tone = POWERUP_INFO[kind].tone,
+    ) =>
       notes.push({
         ...base,
         key: `${id}-${key}`,
@@ -359,7 +419,7 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
         title,
         detail,
         delta,
-        tone: POWERUP_INFO[kind].tone,
+        tone,
       })
     for (const kind of guess.expired) {
       note(`${kind}-expired`, kind, `${POWERUP_INFO[kind].name} quebrou`, 'Acabou sem ser usado')
@@ -404,7 +464,11 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
         guess.stolen ? (use.target === playerId ? -guess.stolen : guess.stolen) : null,
       )
     }
-    if (guess.gained) note('gain', guess.gained.kind, gainParts(guess.gained).title, gainParts(guess.gained).detail)
+    if (guess.gained) {
+      const { kind, mythic, legendary } = guess.gained
+      const { title, detail } = gainParts(guess.gained)
+      note('gain', kind, title, detail, null, mythic ? 'mythic' : legendary ? 'legendary' : undefined)
+    }
   }
   return notes
 }

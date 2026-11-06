@@ -68,7 +68,8 @@ export interface ArmPowerUpRequest {
     | "swap"
     | "runaway_keys"
     | "short_circuit"
-    | "double_click";
+    | "double_click"
+    | "math";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -252,6 +253,7 @@ export interface EstimateGuess {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   gained: PowerUpGain | null;
 }
@@ -313,10 +315,34 @@ export interface PowerUpGain {
     | "swap"
     | "runaway_keys"
     | "short_circuit"
-    | "double_click";
+    | "double_click"
+    | "math";
   reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination" | "exact";
   legendary?: boolean;
   mythic?: boolean;
+}
+/**
+ * Matemática: o número que começa no visor, as teclas que substituem o teclado e as contas até agora.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateMath".
+ */
+export interface EstimateMath {
+  start: number;
+  keys: MathKey[];
+  steps?: number[];
+  value: number;
+}
+/**
+ * Matemática: uma tecla de operação, com quantas vezes dá para usar. Ao quadrado e raiz não têm valor.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "MathKey".
+ */
+export interface MathKey {
+  op: "add" | "sub" | "mul" | "div" | "square" | "sqrt";
+  value: number | null;
+  uses: number;
 }
 /**
  * Espiar: o chute de outro jogador, ao vivo.
@@ -435,6 +461,7 @@ export interface EstimateView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -490,6 +517,7 @@ export interface EstimateView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -545,6 +573,7 @@ export interface EstimateView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   powerup_max: number;
   power_run: number;
@@ -604,6 +633,7 @@ export interface EstimateView {
         | "runaway_keys"
         | "short_circuit"
         | "double_click"
+        | "math"
       )
     | null;
   can_arm: boolean;
@@ -613,6 +643,9 @@ export interface EstimateView {
   peek: EstimatePeek[] | null;
   range_hint: EstimateRange | null;
   hot_digits: string[] | null;
+  math: EstimateMath | null;
+  math_watch: MathWatch[];
+  time_up: boolean;
   silenced_rounds: number;
   theme_choices: string[];
   powers_round: boolean;
@@ -675,7 +708,8 @@ export interface PowerUpUse {
     | "swap"
     | "runaway_keys"
     | "short_circuit"
-    | "double_click";
+    | "double_click"
+    | "math";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -742,9 +776,20 @@ export interface LastingPowerUp {
     | "swap"
     | "runaway_keys"
     | "short_circuit"
-    | "double_click";
+    | "double_click"
+    | "math";
   rounds_left: number;
   total: number;
+}
+/**
+ * Matemática: as contas de um alvo, para quem já não pode mais chutar assistir.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "MathWatch".
+ */
+export interface MathWatch {
+  player_id: string;
+  math: EstimateMath;
 }
 /**
  * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
@@ -838,6 +883,7 @@ export interface GameView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -893,6 +939,7 @@ export interface GameView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -948,6 +995,7 @@ export interface GameView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -1010,6 +1058,7 @@ export interface GameView {
         | "runaway_keys"
         | "short_circuit"
         | "double_click"
+        | "math"
       )
     | null;
   can_arm: boolean;
@@ -1131,6 +1180,7 @@ export interface RoundResult {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   gained: PowerUpGain | null;
   bet_gained?: PowerUpGain | null;
@@ -1246,6 +1296,7 @@ export interface HotPotatoView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1301,6 +1352,7 @@ export interface HotPotatoView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -1358,6 +1410,7 @@ export interface HotPotatoView {
         | "runaway_keys"
         | "short_circuit"
         | "double_click"
+        | "math"
       )
     | null;
   shielded: string[];
@@ -1610,6 +1663,7 @@ export interface SurvivalView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -1665,6 +1719,7 @@ export interface SurvivalView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1720,6 +1775,7 @@ export interface SurvivalView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   powerup_max: number;
   power_run?: number;
@@ -1779,6 +1835,7 @@ export interface SurvivalView {
         | "runaway_keys"
         | "short_circuit"
         | "double_click"
+        | "math"
       )
     | null;
   can_arm: boolean;
@@ -1947,6 +2004,7 @@ export interface TeamMatchView {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   silenced: boolean;
   peeking: number | null;
@@ -2031,6 +2089,7 @@ export interface TeamSide {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -2086,6 +2145,7 @@ export interface TeamSide {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
+    | "math"
   )[];
   powerup_max: number;
   armed: TeamPowerUse | null;
@@ -2175,7 +2235,8 @@ export interface TeamPowerUse {
     | "swap"
     | "runaway_keys"
     | "short_circuit"
-    | "double_click";
+    | "double_click"
+    | "math";
   by: string;
   by_team: number;
   target_team?: number | null;
@@ -2331,7 +2392,8 @@ export interface UsePowerUpRequest {
     | "swap"
     | "runaway_keys"
     | "short_circuit"
-    | "double_click";
+    | "double_click"
+    | "math";
   target_team?: number | null;
   potato?: number | null;
   option?: number | null;

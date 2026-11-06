@@ -22,6 +22,7 @@ from app.events import (
     ErrorAck,
     JoinedAck,
     JoinRoomRequest,
+    MathStepsRequest,
     OkAck,
     Pong,
     RejoinRoomRequest,
@@ -102,7 +103,7 @@ def check_round_done(room: Room) -> None:
     if room.estimate:
         estimate, connected = room.estimate, room.connected_ids()
         if (
-            (estimate.phase == "answering" and estimate.everyone_answered(connected))
+            (estimate.phase == "answering" and estimate.everyone_answered(connected, time.monotonic()))
             or (estimate.phase == "results" and estimate.everyone_ready(connected))
         ) and (event := round_done.get(room.code)):
             event.set()
@@ -323,6 +324,14 @@ async def run_estimate(room: Room) -> None:
             if estimate.phase == "finished":
                 return
             check_round_done(room)  # quem saiu não segura a fase
+            # Com um alvo da Matemática, a pergunta segue depois do tempo dos outros: eles passam a assistir.
+            others_up = estimate.others_time_up_at()
+            if others_up and time.monotonic() < others_up:
+                with suppress(TimeoutError):
+                    await asyncio.wait_for(done.wait(), others_up - time.monotonic())
+                if alive() and not done.is_set():
+                    check_round_done(room)
+                    await broadcast(room)
             with suppress(TimeoutError):
                 await asyncio.wait_for(done.wait(), max(0.0, estimate.deadline() - time.monotonic()))
             if not alive():
@@ -582,6 +591,12 @@ async def use_powerup(sid: str, request: UsePowerUpRequest) -> dict:
     if room.hot_potato or room.team_match:
         return await publish_move(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
     return await publish(room)
+
+
+@sio.event
+@action(MathStepsRequest)
+async def math_steps(sid: str, request: MathStepsRequest) -> dict:
+    return await publish(rooms.math_steps(sid, request.steps))
 
 
 @sio.event

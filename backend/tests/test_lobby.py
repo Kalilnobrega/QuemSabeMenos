@@ -633,3 +633,37 @@ async def test_estimate_with_powers_arms_and_spends_through_the_room(connect, mo
     await bia.call("leave_room")
     await match_closed("abandoned")
     assert main.history.db.execute("SELECT powerup_max FROM matches").fetchone()[0] is not None
+
+
+async def test_math_target_sends_steps_and_who_guessed_watches_through_the_room(connect, monkeypatch):
+    from app import estimate
+
+    monkeypatch.setattr(estimate, "START_SECONDS", 0.05)
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(estimate, "POWERS", ("shield",))
+    ana, bia, _created, _joined = await setup_room(connect)
+    assert (await ana.call("update_settings", {"mode": "estimate", "rounds": 10, "powers": True}))["ok"]
+    assert (await ana.call("start_game"))["ok"]
+    await ana.wait_for(lambda s: s["estimate"] and s["estimate"]["phase"] == "answering")
+    assert (await ana.call("submit_guess", {"value": 1}))["ok"]
+    assert (await bia.call("submit_guess", {"value": 1}))["ok"]
+    await ana.wait_for(lambda s: s["estimate"]["phase"] == "results", timeout=2)
+    room = next(iter(main.rooms.rooms.values()))
+    ana_id = next(p.id for p in room.players if p.nickname == "Ana")
+    bia_id = next(p.id for p in room.players if p.id != ana_id)
+    room.estimate.mythics[ana_id] = ["math"]
+    assert (await ana.call("arm_powerup", {"kind": "math", "target": bia_id}))["ok"]
+    assert (await bia.call("skip_results"))["ok"]
+    state = await bia.wait_for(lambda s: s["estimate"]["math"], timeout=2)
+    assert len(state["estimate"]["math"]["keys"]) == 9
+    assert (await ana.call("submit_guess", {"value": 1}))["ok"]
+    assert (await bia.call("math_steps", {"steps": [0]}))["ok"]
+    watching = await ana.wait_for(
+        lambda s: s["estimate"]["math_watch"] and s["estimate"]["math_watch"][0]["math"]["steps"], timeout=2
+    )
+    assert watching["estimate"]["math_watch"][0]["player_id"] == bia_id
+    assert not (await ana.call("math_steps", {"steps": [0]}))["ok"]  # só o alvo faz contas
+    await ana.call("leave_room")
+    await bia.call("leave_room")
+    await match_closed("abandoned")
