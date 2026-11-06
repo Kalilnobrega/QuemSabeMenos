@@ -3,6 +3,9 @@
 const MAX_WHOLE_DIGITS = 12
 const MAX_DECIMALS = 3 // o banco não tem resposta com mais casas
 
+/** As teclas de número do teclado, na ordem da tela. */
+export const DIGIT_KEYS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '000'] as const
+
 /** Acrescenta um algarismo, ou "000" de uma vez. O que passa do limite fica de fora. */
 export function typeDigits(draft: string, digits: string) {
   let next = draft

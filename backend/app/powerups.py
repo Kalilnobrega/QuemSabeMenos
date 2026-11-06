@@ -127,12 +127,12 @@ def decoys(answer: str, existing: list[str], similar: list[str], rng: random.Ran
     return pool[:DECOY_COUNT]
 
 
-def reflect(uses: list[PowerUpUse], reversers: set[str]) -> list[PowerUpUse]:
+def reflect(uses: list[PowerUpUse], reversers: set[str], targeted: frozenset[PowerUp] = TARGETED) -> list[PowerUpUse]:
     """Aplica o Reverso: a sabotagem volta para quem jogou (uma volta só, sem pingue-pongue).
     No roubo, quem rebateu passa a roubar quem tentou roubar. A lendária (sem alvo) não volta."""
     result = []
     for use in uses:
-        if use.kind in TARGETED and use.target in reversers:
+        if use.kind in targeted and use.target in reversers:
             if use.kind == "steal":
                 use = PowerUpUse(kind="steal", by=use.target, target=use.by, reflected_by=use.target)
             else:

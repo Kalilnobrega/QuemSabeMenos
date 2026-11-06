@@ -9,6 +9,9 @@ Não tem tempo de leitura: a pergunta já abre para chutar, e os 20 segundos já
 Com poderes: os comuns do clássico que fazem sentido com número (ver `POWERS`), armados na revelação
 para a próxima pergunta (Espiar na hora). "Acertar" é ganhar QI com o chute. Espiar mostra os chutes
 dos outros, e a Segunda chance diz se a resposta é mais alta ou mais baixa antes do novo chute.
+
+Poderes só deste modo: Faixa (na hora), Margem larga, Tecla quente e Empurrão valem aqui. Tecla
+quebrada, Teclado mentiroso e Perfeccionista só existem como sabotagem armada: o teclado é do navegador.
 """
 
 import json
@@ -25,6 +28,7 @@ from app.engine import Revealed, RoomError
 from app.events import (
     EstimateGuess,
     EstimatePeek,
+    EstimateRange,
     EstimateScoring,
     EstimateView,
     LastingPowerUp,
@@ -57,7 +61,19 @@ POWERS: tuple[PowerUp, ...] = (
     "silence",
     "magnifier",
     "flashbang",
+    "range",
+    "wide_margin",
+    "hot_keys",
+    "broken_keys",
+    "shuffled_keys",
+    "perfectionist",
+    "nudge",
 )
+TARGETED: frozenset[PowerUp] = pw.TARGETED | {"broken_keys", "shuffled_keys", "perfectionist", "nudge"}
+INSTANT: frozenset[PowerUp] = pw.INSTANT | {"range"}
+WIDE_MARGIN_FACTOR = 2  # a zona de ganho (e a de perda) fica desse tamanho
+NUDGE_SHARE = 0.2  # o Empurrão anda essa fração da base do erro, para um lado sorteado
+RANGE_OFF_CENTER = (0.15, 0.4)  # a Faixa tem a resposta a essa fração de uma das pontas
 
 
 @dataclass(frozen=True)
@@ -116,9 +132,33 @@ def load_estimates(directory: Path = ESTIMATES_DIR) -> list[EstimateQuestion]:
     return bank
 
 
+def error_base(question: EstimateQuestion) -> float:
+    """O valor que vale 100% de erro."""
+    return question.scale or abs(question.answer) or 1
+
+
 def error_percent(question: EstimateQuestion, value: float) -> float:
-    reference = question.scale or abs(question.answer) or 1
-    return abs(value - question.answer) / reference * 100
+    return abs(value - question.answer) / error_base(question) * 100
+
+
+def answer_digits(answer: float) -> list[str]:
+    """Os algarismos diferentes da resposta, como ela aparece escrita: 1500 tem 0, 1 e 5."""
+    written = f"{abs(answer):.3f}".rstrip("0").rstrip(".")
+    return sorted(set(written) - {"."})
+
+
+def draw_range(question: EstimateQuestion, rng: random.Random) -> EstimateRange:
+    """Tão larga quanto a zona de ganho, com pontas redondas e a resposta sempre fora do meio."""
+    width = error_base(question) * SCORING[question.difficulty].break_even * 2 / 100
+    below = rng.uniform(*RANGE_OFF_CENTER) * width
+    if rng.random() < 0.5:
+        below = width - below
+    step = 10 ** math.floor(math.log10(width / 4))
+    low = math.floor((question.answer - below) / step) * step
+    high = math.ceil((question.answer - below + width) / step) * step
+    if question.answer >= 0:
+        low = max(0, low)
+    return EstimateRange(low=round(low, 6), high=round(high, 6))
 
 
 def guess_points(error: float | None, difficulty: str = "medium", scale: float = 1.0) -> int:
@@ -181,6 +221,7 @@ class Estimate(Revealed):
     last_runs: dict[str, int] = field(default_factory=dict)
     leaders: set[str] = field(default_factory=set)  # o Reverso de quem está em 1º dura menos
     theme_choices: list[str] = field(default_factory=list)
+    ranges: dict[str, EstimateRange] = field(default_factory=dict)  # Faixa: de quem usou nesta pergunta
 
     @classmethod
     def create(
@@ -234,7 +275,7 @@ class Estimate(Revealed):
             raise EstimateError("O tempo acabou.")
         guessed = (value, min(now, limit))
         q = self.question
-        lost = guess_points(error_percent(q, value), q.difficulty, self.point_scale) <= 0
+        lost = guess_points(self._scored_error(player_id, error_percent(q, value)), q.difficulty, self.point_scale) <= 0
         if lost and player_id not in self.first_guesses and self._affects("second_chance", player_id):
             self.first_guesses[player_id] = guessed
             self.used_lasting.setdefault(player_id, set()).add("second_chance")
@@ -298,9 +339,9 @@ class Estimate(Revealed):
         held = self.held.get(player_id, [])
         if kind not in held:
             raise EstimateError("Você não tem esse poder.")
-        if kind in pw.INSTANT:
+        if kind in INSTANT:
             raise EstimateError("Essa se usa na hora da pergunta.")
-        if kind in pw.TARGETED:
+        if kind in TARGETED:
             if target is None or target == player_id or target not in player_ids:
                 raise EstimateError("Escolha em quem usar.")
         else:
@@ -333,10 +374,10 @@ class Estimate(Revealed):
         self.ready.discard(player_id)
 
     def use_now(self, player_id: str, kind: PowerUp) -> None:
-        """Espiar: durante a pergunta, vale na hora."""
+        """Espiar e Faixa: durante a pergunta, valem na hora."""
         if self.phase != "answering" or not self.powers:
             raise EstimateError("Agora não dá para usar poder.")
-        if kind not in pw.INSTANT:
+        if kind not in INSTANT:
             raise EstimateError("Essa se arma na revelação.")
         if self.is_silenced(player_id):
             raise EstimateError("Silenciado: sem poderes por enquanto.")
@@ -348,6 +389,8 @@ class Estimate(Revealed):
         if self._affects(kind, player_id):
             raise EstimateError("Já está valendo.")
         held.remove(kind)
+        if kind == "range":
+            self.ranges[player_id] = draw_range(self.question, self.rng)
         self.active.append(PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None))
 
     def _open_backpack(self, player_id: str) -> None:
@@ -406,7 +449,7 @@ class Estimate(Revealed):
                 self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
                 self.used_lasting.get(use.by, set()).discard(use.kind)
         reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
-        self.active = pw.reflect(armed, reversers)
+        self.active = pw.reflect(armed, reversers, TARGETED)
         for use in self.active:
             if use.reflected_by:
                 self.lasting[use.reflected_by].pop("reverse", None)
@@ -436,6 +479,18 @@ class Estimate(Revealed):
             share = pw.STEAL_FIXED + max(0, int(target.delta * pw.STEAL_GAIN_SHARE))
             thief.stolen += share
             target.robbed += share
+
+    def _scored_error(self, player_id: str, error: float) -> float:
+        """O erro que vale para os pontos: a Margem larga dobra as zonas, o que é o mesmo que cortar o erro."""
+        return error / WIDE_MARGIN_FACTOR if self._affects("wide_margin", player_id) else error
+
+    def _nudge(self, player_id: str) -> float:
+        """Quanto os Empurrões em cima do jogador mexem no chute."""
+        return sum(
+            self.rng.choice((-1, 1)) * error_base(self.question) * NUDGE_SHARE
+            for use in self.active
+            if use.kind == "nudge" and use.target == player_id
+        )
 
     def _wear_lasting(self) -> None:
         """O Escudo que segurou acaba, e todas as que duram gastam uma pergunta. As que chegam ao fim sem uso quebram."""
@@ -488,6 +543,7 @@ class Estimate(Revealed):
             self.round += 1
             self.guesses = {}
             self.first_guesses = {}
+            self.ranges = {}
             self.results = []
             self.ready = set()
             if self.powers:
@@ -505,11 +561,16 @@ class Estimate(Revealed):
             first = self.first_guesses.get(player.id)
             retried = player.id in self.guesses
             guessed = self.guesses.get(player.id) or first
+            nudged_from = None
+            if guessed and (shift := self._nudge(player.id)):
+                nudged_from = guessed[0]
+                guessed = (round(guessed[0] + shift, 3), guessed[1])
             if guessed is None:
                 error, elapsed = None, self.answer_window(player.id)
             else:
                 error, elapsed = error_percent(q, guessed[0]), max(0.0, guessed[1] - self.phase_started_at)
-            delta = guess_points(error, q.difficulty, self.point_scale)
+            scored = None if error is None else self._scored_error(player.id, error)
+            delta = guess_points(scored, q.difficulty, self.point_scale)
             if delta > 0:
                 earned.add(player.id)
                 if first and retried:
@@ -534,6 +595,7 @@ class Estimate(Revealed):
                     investment=0,
                     doubled=doubled,
                     first_value=first[0] if first and retried else None,
+                    nudged_from=nudged_from,
                     expired=[],
                     gained=None,
                 )
@@ -584,10 +646,10 @@ class Estimate(Revealed):
             first_guess=first[0] if retrying else None,
             retry_hint=("higher" if q.answer > first[0] else "lower") if retrying else None,
             answer=q.answer if reveal else None,
-            reference=(q.scale or abs(q.answer) or 1) if reveal else None,
+            reference=error_base(q) if reveal else None,
             fact=q.fact if reveal else None,
             guesses=self.results if reveal else [],
-            scoring=self._scoring_view(q.difficulty if q else self.questions[0].difficulty),
+            scoring=self._scoring_view(q.difficulty if q else self.questions[0].difficulty, viewer),
             ready=sorted(self.ready),
             powers=self.powers,
             powerups=list(self.held.get(viewer, [])) if viewer else [],
@@ -606,6 +668,8 @@ class Estimate(Revealed):
                 if peeking
                 else None
             ),
+            range_hint=self.ranges.get(viewer) if answering and viewer else None,
+            hot_digits=answer_digits(q.answer) if answering and viewer and self._affects("hot_keys", viewer) else None,
             flashbang=answering and bool(viewer) and self._affects("flashbang", viewer),
             silenced_rounds=silenced,
             theme_choices=self.theme_choices,
@@ -626,18 +690,22 @@ class Estimate(Revealed):
         return lasting
 
     def _visible_uses(self, viewer: str | None) -> list[PowerUpUse]:
-        """O Roubo é surpresa até a revelação, e o Reverso armado só o dono vê."""
+        """Roubo e Empurrão são surpresa até a revelação, e o Reverso armado só o dono vê."""
         if not self.powers_round:
             return []
         uses = [use for use in self.active if use.kind != "reverse" or use.by == viewer]
-        return uses if self.phase == "results" else [use for use in uses if use.kind != "steal" or use.by == viewer]
+        if self.phase == "results":
+            return uses
+        return [use for use in uses if use.kind not in ("steal", "nudge") or use.by == viewer]
 
-    def _scoring_view(self, difficulty: str) -> EstimateScoring:
+    def _scoring_view(self, difficulty: str, viewer: str | None) -> EstimateScoring:
+        """Com a Margem larga, a régua de quem usou mostra as zonas maiores."""
         rules = SCORING[difficulty]
+        widen = WIDE_MARGIN_FACTOR if viewer and self._affects("wide_margin", viewer) else 1
         return EstimateScoring(
             max_points=_round(rules.max_points * self.point_scale),
             exact_bonus=_round(rules.exact_bonus * self.point_scale),
-            break_even_percent=rules.break_even,
+            break_even_percent=rules.break_even * widen,
             max_loss=_round(rules.max_loss * self.point_scale),
-            max_loss_percent=rules.max_loss_at,
+            max_loss_percent=rules.max_loss_at * widen,
         )

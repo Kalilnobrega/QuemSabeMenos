@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { useFlashbang, useRemaining, useUrgentTick, vibrate } from '../lib/effects'
-import { ESTIMATE_HINTS, POWERUP_INFO, gainParts, scrambleWords, type Kind } from '../lib/powerups'
+import { ESTIMATE_HINTS, POWERUP_INFO, gainParts, scrambleWords, seededShuffle, type Kind } from '../lib/powerups'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView, PowerUpUse } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
-import { draftValue } from '../lib/guessDraft'
+import { DIGIT_KEYS, draftValue } from '../lib/guessDraft'
 import { EstimateKeypad } from './EstimateKeypad'
 import { EstimateRuler } from './EstimateRuler'
 import { CountUp, FactCard, Podium, Ranking } from './Game'
@@ -38,15 +38,27 @@ const SELF_LINES: Partial<Record<Kind, string>> = {
   peek: 'Espiar: veja os chutes dos outros ao vivo.',
   second_chance: 'Segunda chance nesta e na próxima: se o chute perder QI, você tenta de novo.',
   investment: 'Investimento valendo: cada chute seguido que ganha QI rende mais!',
+  range: 'Faixa: a resposta está no intervalo acima do teclado.',
+  wide_margin: 'Margem larga: nesta pergunta, sua zona de ganho é o dobro.',
+  hot_keys: 'Tecla quente: as teclas acesas são algarismos da resposta.',
 }
+const BROKEN_KEYS = 3
 const HIT_LINES: Partial<Record<Kind, string>> = {
   accelerator: 'jogou Acelerador em você: um terço do tempo!',
   flashbang: 'jogou Flashbang em você: leia rápido, a pergunta some em 4 segundos!',
+  broken_keys: 'jogou Tecla quebrada em você: 3 teclas vão rachar quando você tocar!',
+  shuffled_keys: 'jogou Teclado mentiroso em você: as teclas trocaram de lugar!',
+  perfectionist: 'jogou Perfeccionista em você: não dá para apagar!',
+  nudge: 'jogou Empurrão em você: seu chute andou na régua!',
 }
 const HIT_DETAILS: Partial<Record<Kind, string>> = {
   accelerator: 'Um terço do tempo',
   mirror: 'A pergunta está espelhada',
   flashbang: 'Leia rápido: a pergunta some em 4 segundos',
+  broken_keys: '3 teclas vão rachar quando você tocar',
+  shuffled_keys: 'As teclas trocaram de lugar',
+  perfectionist: 'Não dá para apagar: capriche',
+  nudge: 'Seu chute andou na régua',
 }
 
 const ESTIMATE_LEVEL_LINES: Record<string, string> = {
@@ -238,6 +250,13 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
               Chute de novo, valendo metade!
             </p>
           )}
+          {estimate.range_hint && (
+            <p className="rounded-xl bg-panel px-3 py-2 text-center text-sm text-chalk">
+              A resposta está entre{' '}
+              <strong className="text-brand">{formatEstimate(estimate.range_hint.low, estimate.unit)}</strong> e{' '}
+              <strong className="text-brand">{withUnit(estimate.range_hint.high, estimate.unit)}</strong>.
+            </p>
+          )}
           {estimate.peek && <PeekList peek={estimate.peek} players={room.players} unit={estimate.unit} />}
           <EstimateKeypad
             draft={draft}
@@ -245,6 +264,10 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
             disabled={!answering}
             physicalKeys={!estimate.powers}
             compact={estimate.powers}
+            hotDigits={estimate.hot_digits ?? []}
+            brokenKeys={hits('broken_keys') ? seededShuffle(DIGIT_KEYS, estimate.round).slice(0, BROKEN_KEYS) : []}
+            shuffleSeed={hits('shuffled_keys') ? estimate.round : null}
+            noErase={hits('perfectionist')}
             onChange={setDraft}
             onSubmit={() => void submit()}
           />
@@ -333,6 +356,12 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
         guess.delta > 0 ? 'Salvou na segunda chance' : 'A segunda chance não salvou',
         `O primeiro chute foi ${withUnit(guess.first_value, estimate.unit)}`,
       )
+    }
+    if (guess.nudged_from !== null) {
+      note('nudge', 'nudge', 'Levou um Empurrão', `O chute era ${withUnit(guess.nudged_from, estimate.unit)}`)
+    }
+    if (estimate.active.some((use) => use.kind === 'wide_margin' && use.by === id)) {
+      note('wide', 'wide_margin', 'Margem larga', 'A zona de ganho dobrou')
     }
     if (guess.shielded) note('shield', 'shield', 'O Escudo segurou', `Salvou ${guess.shielded} de QI`)
     if (guess.investment) note('investment', 'investment', 'Investimento', 'Bônus do chute', guess.investment)

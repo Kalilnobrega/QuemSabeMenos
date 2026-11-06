@@ -3,11 +3,15 @@ from dataclasses import dataclass
 
 import pytest
 
+from app import powerups
 from app.estimate import (
     ANSWER_SECONDS,
+    POWERS,
     Estimate,
     EstimateError,
     EstimateQuestion,
+    answer_digits,
+    draw_range,
     error_percent,
     guess_points,
     load_estimates,
@@ -462,3 +466,131 @@ def test_full_hands_get_nothing_and_the_last_question_gives_nothing():
     ask(game, [a], a=115)
     assert result(game, "a").gained is None
     assert not game.can_arm and game.theme_choices == []
+
+
+# --- poderes só do Chutômetro -----------------------------------------------------
+
+
+def test_range_contains_the_answer_off_center_and_only_its_owner_sees_it():
+    for answer, scale, difficulty in (
+        (100, None, "medium"),
+        (1500, 50, "hard"),
+        (-273.15, None, "easy"),
+        (3.14, None, "easy"),
+    ):
+        for seed in range(50):
+            q = question("q", answer, scale, difficulty)
+            drawn = draw_range(q, random.Random(seed))
+            assert drawn.low < answer < drawn.high
+            assert answer != (drawn.low + drawn.high) / 2
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    game.advance(game.phase_ends_at, [a, b])
+    game.held["a"] = ["range"]
+    game.use_now("a", "range")
+    at = game.phase_started_at + 1
+    assert game.view(at, "a").range_hint is not None and game.view(at, "b").range_hint is None
+    with pytest.raises(EstimateError):  # uma por pergunta, e a mão ficou vazia
+        game.use_now("a", "range")
+    game.advance(game.phase_started_at + 2, [a, b])
+    assert game.view(game.phase_started_at + 2, "a").range_hint is None  # na revelação, some
+    game.advance(game.phase_ends_at, [a, b])
+    assert not game.ranges
+
+
+def test_range_is_not_armed_in_the_reveal():
+    a = P("a")
+    game = powered()
+    ask(game, [a], a=100)
+    game.held["a"] = ["range"]
+    with pytest.raises(EstimateError):
+        game.arm("a", "range", None, ["a"], None)
+
+
+def test_wide_margin_doubles_the_zones_for_who_used_it():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "wide_margin")
+    ask(game, [a, b], a=145, b=145)  # 45% de erro: passa dos 30% das médias, mas não dos 60% da Margem
+    assert result(game, "a").delta > 0 and result(game, "b").delta < 0
+    assert result(game, "a").error_percent == result(game, "b").error_percent == 45
+    at = game.phase_started_at
+    assert game.view(at, "a").scoring.break_even_percent == 60
+    assert game.view(at, "b").scoring.break_even_percent == 30
+    game.advance(game.phase_ends_at, [a, b])
+    assert game.view(game.phase_started_at, "a").scoring.break_even_percent == 30  # só vale uma pergunta
+
+
+def test_wide_margin_avoids_spending_the_second_chance():
+    a = P("a")
+    game = powered()
+    ask(game, [a], a=100)
+    give(game, "a", "wide_margin", ids=("a",))
+    game.lasting["a"] = {"second_chance": 2}
+    game.advance(game.phase_ends_at, [a])
+    game.guess("a", 145, game.phase_started_at + 1)
+    assert "a" in game.guesses and "a" not in game.first_guesses
+
+
+def test_hot_keys_shows_the_answer_digits_only_to_who_used_it():
+    assert answer_digits(1500) == ["0", "1", "5"]
+    assert answer_digits(-273.15) == ["1", "2", "3", "5", "7"]
+    assert answer_digits(0.5) == ["0", "5"]
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "hot_keys")
+    game.advance(game.phase_ends_at, [a, b])
+    at = game.phase_started_at
+    assert game.view(at, "a").hot_digits == ["0", "1"] and game.view(at, "b").hot_digits is None
+    game.advance(at + 1, [a, b])
+    assert game.view(at + 1, "a").hot_digits is None
+
+
+def test_nudge_moves_the_guess_by_a_fifth_and_stays_hidden_until_the_reveal():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "nudge", "b")
+    game.advance(game.phase_ends_at, [a, b])
+    at = game.phase_started_at
+    assert not any(u.kind == "nudge" for u in game.view(at, "b").active)
+    assert any(u.kind == "nudge" for u in game.view(at, "a").active)
+    game.guess("b", 100, at + 1)
+    assert game.view(at + 1, "b").my_guess == 100  # o alvo só descobre na régua
+    game.advance(at + 2, [a, b])
+    moved = result(game, "b")
+    assert moved.nudged_from == 100 and moved.value in (80, 120) and moved.error_percent == 20 and not moved.exact
+    assert any(u.kind == "nudge" for u in game.view(at + 2, "b").active)
+
+
+def test_no_guess_means_nothing_to_nudge():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "nudge", "b")
+    ask(game, [a, b], a=100)
+    assert result(game, "b").value is None and result(game, "b").nudged_from is None
+
+
+@pytest.mark.parametrize("kind", ["broken_keys", "shuffled_keys", "perfectionist", "nudge"])
+def test_keypad_sabotages_need_a_target_and_the_reverse_sends_them_back(kind):
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    game.held["a"] = [kind]
+    with pytest.raises(EstimateError):
+        game.arm("a", kind, None, ["a", "b"], None)
+    give(game, "b", "reverse")
+    game.arm("a", kind, "b", ["a", "b"], None)
+    game.advance(game.phase_ends_at, [a, b])
+    use = next(u for u in game.active if u.kind == kind)
+    assert use.target == "a" and use.reflected_by == "b"
+
+
+def test_new_powers_stay_out_of_the_other_modes():
+    new = {"range", "wide_margin", "hot_keys", "broken_keys", "shuffled_keys", "perfectionist", "nudge"}
+    assert new <= set(POWERS)
+    assert not new & (set(powerups.POWERUPS) | powerups.TARGETED | powerups.INSTANT)

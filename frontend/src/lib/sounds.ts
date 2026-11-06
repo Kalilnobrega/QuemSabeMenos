@@ -22,6 +22,8 @@ export const SOUND_ENABLED = {
   select: true,
   keypadPress: true,
   keypadErase: true,
+  keyCrack: true,
+  keyDead: true,
   urgentTick: true,
   timeUp: true,
   correct: true,
@@ -92,6 +94,8 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   select: { group: 'Pergunta', name: 'Blip de bolha', moment: 'Você toca numa alternativa' },
   keypadPress: { group: 'Pergunta', name: 'Caneta polida', moment: 'Você digita no teclado do Chutômetro' },
   keypadErase: { group: 'Pergunta', name: 'Caneta polida, mais grave', moment: 'Você apaga no teclado do Chutômetro' },
+  keyCrack: { group: 'Poderes', name: 'Rachadura correndo', moment: 'Uma tecla racha na Tecla quebrada' },
+  keyDead: { group: 'Poderes', name: 'Chacoalhar', moment: 'Você toca numa tecla já rachada' },
   urgentTick: {
     group: 'Pergunta',
     name: 'Tique-taque acelerando',
@@ -283,6 +287,14 @@ const NOTE = { C5: 523.25, E5: 659.25, G5: 783.99, C6: 1046.5, G4: 392 }
 
 /** Estalo de botão físico: um transiente curtíssimo de ruído filtrado. */
 const snap = (at: number, freq: number, gain: number, q: number, dur: number) => noise({ at, dur, freq, q, gain })
+
+/** Estalos em fila, com tempo, altura e força sorteados: coisa se partindo. */
+function crackle(count: number, span: number, low: number, high: number, gain: number) {
+  for (let i = 0; i < count; i++) {
+    const at = (i / count) * span * (0.8 + Math.random() * 0.4)
+    snap(at, low + Math.random() * (high - low), gain * (0.5 + Math.random() * 0.5), 5, 0.008)
+  }
+}
 /** Corpo do botão ressoando por baixo do estalo. */
 const knock = (at: number, freq: number, gain: number, dur: number, type: OscillatorType = 'sine') =>
   tone(freq, { at, dur, gain, type, to: freq * 0.85, attack: 0.002 })
@@ -363,6 +375,13 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
     knock(0.001, 600, 0.08, 0.025, 'triangle')
     snap(0.055, 1650, 0.28, 10, 0.011)
   },
+  // Tecla quebrada: os estalos acompanham a linha que corre pela tecla.
+  keyCrack: () => {
+    crackle(12, 0.2, 1400, 5200, 0.42)
+    tone(540, { dur: 0.03, type: 'triangle', gain: 0.1, to: 324, attack: 0.001 })
+  },
+  // Os pedaços batendo dentro da tecla já rachada.
+  keyDead: () => crackle(3, 0.07, 1600, 3200, 0.3),
   // arg: segundos que faltam (3, 2 ou 1); o tique-taque acelera perto do fim.
   urgentTick: (secondsLeft = 3) => {
     const ticks = secondsLeft >= 3 ? 1 : secondsLeft === 2 ? 2 : 4

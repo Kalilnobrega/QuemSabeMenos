@@ -71,6 +71,13 @@ PowerUp = Literal[
     "blood_pact",
     "dagger",
     "blessing",  # só no Último de pé
+    "range",
+    "wide_margin",
+    "hot_keys",
+    "broken_keys",
+    "shuffled_keys",
+    "perfectionist",
+    "nudge",  # só no Chutômetro
 ]
 GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato", "estimate"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato", "estimate")
@@ -741,6 +748,7 @@ class EstimateGuess(BaseModel):
     investment: int
     doubled: bool
     first_value: float | None  # Segunda chance: o primeiro chute, que perdia QI
+    nudged_from: float | None  # Empurrão: o que o jogador digitou; `value` é onde o chute foi parar
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
     gained: PowerUpGain | None
 
@@ -755,6 +763,13 @@ class EstimatePeek(BaseModel):
 
     player_id: str
     value: float
+
+
+class EstimateRange(BaseModel):
+    """Faixa: um intervalo que contém a resposta, sem ela no meio."""
+
+    low: float
+    high: float
 
 
 class EstimateScoring(BaseModel):
@@ -805,6 +820,8 @@ class EstimateView(BaseModel):
     active: list[PowerUpUse]
     lasting: list[LastingPowerUp]
     peek: list[EstimatePeek] | None  # Espiar: os chutes dos outros
+    range_hint: EstimateRange | None  # Faixa: só para quem usou, enquanto chuta
+    hot_digits: list[str] | None  # Tecla quente: os algarismos da resposta, só para quem usou, enquanto chuta
     flashbang: bool
     silenced_rounds: int
     theme_choices: list[str]

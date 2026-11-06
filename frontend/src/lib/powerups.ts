@@ -22,7 +22,7 @@ export type PowerView = Pick<
   | 'power_run_goal'
 >
 
-export const INSTANT: Kind[] = ['fifty_fifty', 'peek']
+export const INSTANT: Kind[] = ['fifty_fifty', 'peek', 'range']
 
 export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: boolean; tone: string }> = {
   fifty_fifty: {
@@ -271,6 +271,48 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
     targeted: true,
     tone: 'bg-slate-400/15 text-slate-200',
   },
+  range: {
+    name: 'Faixa',
+    hint: 'Use na hora da pergunta, pelo ícone: mostra um intervalo que contém a resposta, sem ela no meio.',
+    targeted: false,
+    tone: 'bg-emerald-400/15 text-emerald-200',
+  },
+  wide_margin: {
+    name: 'Margem larga',
+    hint: 'Na próxima pergunta, sua zona de ganho fica com o dobro do tamanho.',
+    targeted: false,
+    tone: 'bg-lime-400/15 text-lime-200',
+  },
+  hot_keys: {
+    name: 'Tecla quente',
+    hint: 'Na próxima pergunta, acendem as teclas dos algarismos da resposta, sem dizer a ordem nem quantas vezes aparecem.',
+    targeted: false,
+    tone: 'bg-orange-400/15 text-orange-200',
+  },
+  broken_keys: {
+    name: 'Tecla quebrada',
+    hint: 'Na próxima pergunta, 3 teclas de número do alvo racham no primeiro toque: o toque não digita e a tecla para de funcionar.',
+    targeted: true,
+    tone: 'bg-stone-400/15 text-stone-200',
+  },
+  shuffled_keys: {
+    name: 'Teclado mentiroso',
+    hint: 'Na próxima pergunta, todas as teclas do alvo trocam de lugar.',
+    targeted: true,
+    tone: 'bg-purple-400/15 text-purple-200',
+  },
+  perfectionist: {
+    name: 'Perfeccionista',
+    hint: 'Na próxima pergunta, o alvo não pode errar: a tecla de apagar fica bloqueada.',
+    targeted: true,
+    tone: 'bg-rose-400/15 text-rose-200',
+  },
+  nudge: {
+    name: 'Empurrão',
+    hint: 'Surpresa: na próxima pergunta, o chute do alvo anda 20% para um lado sorteado, e ele só descobre na régua. Pode até ajudar!',
+    targeted: true,
+    tone: 'bg-sky-400/15 text-sky-200',
+  },
 }
 
 const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
@@ -381,13 +423,28 @@ export const LEGENDARY_DECOY_HINT =
 export const LEGENDARY_STEAL_HINT =
   'Na próxima, você leva um Roubo e meio dividido entre todos os outros, e quem estiver em 1º paga a parte maior. O Reverso não segura.'
 
-/** Embaralhar: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */
-export function scrambleWords(text: string, seed: number) {
+/** Sorteio que dá sempre o mesmo resultado para a mesma semente, inclusive depois de reconectar. */
+function seededRandom(seed: number) {
   let state = seed * 9301 + 49297
-  const random = () => {
+  return () => {
     state = (state * 9301 + 49297) % 233280
     return state / 233280
   }
+}
+
+export function seededShuffle<T>(items: readonly T[], seed: number) {
+  const random = seededRandom(seed)
+  const shuffled = [...items]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1))
+    ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
+
+/** Embaralhar: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */
+export function scrambleWords(text: string, seed: number) {
+  const random = seededRandom(seed)
   return text.replace(/\p{L}{4,}/gu, (word) => {
     const middle = [...word.slice(1, -1)]
     for (let i = middle.length - 1; i > 0; i--) {

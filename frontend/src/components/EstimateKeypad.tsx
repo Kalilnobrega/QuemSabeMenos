@@ -1,5 +1,7 @@
-import { useEffect, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
+import { vibrate } from '../lib/effects'
 import { draftValue, erase, formatDraft, toggleSign, typeComma, typeDigits } from '../lib/guessDraft'
+import { seededShuffle } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 
 interface Props {
@@ -8,13 +10,30 @@ interface Props {
   disabled: boolean
   physicalKeys: boolean
   compact: boolean // com poderes, os avisos ocupam parte da tela
+  hotDigits: string[] // Tecla quente: os algarismos que acendem
+  brokenKeys: readonly string[] // Tecla quebrada: parecem normais e racham no primeiro toque
+  shuffleSeed: number | null // Teclado mentiroso: com semente, as teclas trocam de lugar
+  noErase: boolean // Perfeccionista: apagar não funciona
   onChange: (draft: string) => void
   onSubmit: () => void
 }
 
 /** O teclado do Chutômetro: o mesmo em qualquer aparelho. Com `physicalKeys`, as teclas do computador também digitam. */
-export function EstimateKeypad({ draft, unit, disabled, physicalKeys, compact, onChange, onSubmit }: Props) {
+export function EstimateKeypad({
+  draft,
+  unit,
+  disabled,
+  physicalKeys,
+  compact,
+  hotDigits,
+  brokenKeys,
+  shuffleSeed,
+  noErase,
+  onChange,
+  onSubmit,
+}: Props) {
   const ready = !disabled && draftValue(draft) !== null
+  const [cracked, setCracked] = useState<string[]>([])
 
   useEffect(() => {
     if (disabled || !physicalKeys) return
@@ -45,7 +64,15 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, compact, o
       key={value}
       disabled={disabled}
       compact={compact}
+      hot={hotDigits.includes(value[0])}
+      cracked={cracked.includes(value)}
       onPress={() => {
+        if (brokenKeys.includes(value)) {
+          setCracked([...cracked, value])
+          playSound('keyCrack')
+          vibrate(80)
+          return
+        }
         playSound('keypadPress', value.length)
         onChange(typeDigits(draft, value))
       }}
@@ -53,6 +80,51 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, compact, o
       {value}
     </Key>
   )
+
+  const keys = [
+    ...['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(digit),
+    <Key
+      key="comma"
+      disabled={disabled}
+      compact={compact}
+      label="Vírgula"
+      onPress={() => {
+        playSound('keypadPress')
+        onChange(typeComma(draft))
+      }}
+    >
+      ,
+    </Key>,
+    digit('0'),
+    digit('000'),
+    <Key
+      key="sign"
+      disabled={disabled}
+      compact={compact}
+      label="Número negativo"
+      pressed={draft.startsWith('-')}
+      onPress={() => {
+        playSound('keypadPress')
+        onChange(toggleSign(draft))
+      }}
+    >
+      −
+    </Key>,
+    <Key
+      key="erase"
+      disabled={disabled}
+      compact={compact}
+      label={noErase ? 'Apagar bloqueado' : 'Apagar'}
+      wide
+      locked={noErase}
+      onPress={() => {
+        playSound('keypadErase')
+        onChange(erase(draft))
+      }}
+    >
+      ⌫
+    </Key>,
+  ]
 
   return (
     <div className="flex flex-col gap-2.5">
@@ -70,45 +142,9 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, compact, o
         {unit && <span className="text-sm font-semibold text-steel">{unit}</span>}
       </output>
 
-      <div className="grid grid-cols-3 gap-2">
-        {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(digit)}
-        <Key
-          disabled={disabled}
-          compact={compact}
-          label="Vírgula"
-          onPress={() => {
-            playSound('keypadPress')
-            onChange(typeComma(draft))
-          }}
-        >
-          ,
-        </Key>
-        {digit('0')}
-        {digit('000')}
-        <Key
-          disabled={disabled}
-          compact={compact}
-          label="Número negativo"
-          pressed={draft.startsWith('-')}
-          onPress={() => {
-            playSound('keypadPress')
-            onChange(toggleSign(draft))
-          }}
-        >
-          −
-        </Key>
-        <Key
-          disabled={disabled}
-          compact={compact}
-          label="Apagar"
-          wide
-          onPress={() => {
-            playSound('keypadErase')
-            onChange(erase(draft))
-          }}
-        >
-          ⌫
-        </Key>
+      {/* dense: a tecla larga pode cair no fim da linha, e o buraco é preenchido pela próxima. */}
+      <div className="grid grid-flow-row-dense grid-cols-3 gap-2">
+        {shuffleSeed === null ? keys : seededShuffle(keys, shuffleSeed)}
       </div>
 
       <button
@@ -131,6 +167,9 @@ function Key({
   label,
   pressed,
   wide,
+  hot,
+  cracked,
+  locked,
   onPress,
 }: {
   children: ReactNode
@@ -139,20 +178,60 @@ function Key({
   label?: string
   pressed?: boolean
   wide?: boolean
+  hot?: boolean
+  cracked?: boolean // Tecla quebrada: já rachou, não digita mais
+  locked?: boolean // Perfeccionista: bloqueada desde o início
   onPress: () => void
 }) {
+  const dead = cracked || locked
+  const tone = pressed ? 'btn-brand is-pressed text-ink' : hot ? 'btn-brand text-ink' : 'btn-dark text-chalk'
   return (
     <button
       type="button"
       disabled={disabled}
-      aria-label={label}
+      aria-label={cracked ? `${children} quebrada` : label}
       aria-pressed={pressed}
       // O foco fica fora da tecla, para o Enter chutar em vez de repetir o último toque.
       onMouseDown={(event) => event.preventDefault()}
-      onClick={onPress}
-      className={`btn-3d btn-sm ${compact ? 'h-10' : 'h-11'} touch-manipulation rounded-xl font-display text-2xl select-none ${wide ? 'col-span-2' : ''} ${pressed ? 'btn-brand is-pressed text-ink' : 'btn-dark text-chalk'}`}
+      onClick={
+        dead
+          ? () => {
+              playSound(cracked ? 'keyDead' : 'keypadErase')
+              vibrate(40)
+            }
+          : onPress
+      }
+      className={`btn-3d btn-sm ${compact ? 'h-10' : 'h-11'} touch-manipulation rounded-xl font-display text-2xl select-none ${wide ? 'col-span-2' : ''} ${tone} ${cracked ? 'key-crack relative overflow-hidden' : ''} ${locked ? 'line-through opacity-40' : ''}`}
     >
-      {children}
+      <span className={cracked ? 'opacity-50' : ''}>{children}</span>
+      {cracked && <Crack flip={String(children).length % 2 === 0 || Number(children) % 2 === 0} />}
     </button>
+  )
+}
+
+/** A rachadura por cima da tecla: uma linha quebrada de cima a baixo, com dois galhos e um brilho na borda. */
+function Crack({ flip }: { flip: boolean }) {
+  const lines = 'M62 -2 54 11 66 18 49 29 57 46M54 11 37 7M66 18 84 24 92 17M49 29 32 34'
+  return (
+    <svg
+      viewBox="0 0 110 44"
+      preserveAspectRatio="xMidYMid slice"
+      className={`pointer-events-none absolute inset-0 size-full ${flip ? '-scale-x-100' : ''}`}
+      fill="none"
+      strokeLinejoin="round"
+      strokeLinecap="round"
+      aria-hidden="true"
+    >
+      <path
+        d={lines}
+        className="key-crack-line"
+        pathLength={100}
+        stroke="var(--color-chalk)"
+        strokeOpacity={0.4}
+        strokeWidth={3.6}
+        transform="translate(0.9 0.9)"
+      />
+      <path d={lines} className="key-crack-line" pathLength={100} stroke="var(--color-ink)" strokeWidth={2.4} />
+    </svg>
   )
 }

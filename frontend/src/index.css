@@ -1304,6 +1304,35 @@ body {
   }
 }
 
+/* Tecla quebrada: a tecla treme e a rachadura corre por ela. Parada, a rachadura aparece inteira. */
+.key-crack {
+  animation: key-crack 0.3s ease-in-out;
+}
+@keyframes key-crack {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateX(3px) rotate(1.5deg);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+.key-crack-line {
+  stroke-dasharray: 100;
+  animation: key-crack-line 0.18s ease-out;
+}
+@keyframes key-crack-line {
+  from {
+    stroke-dashoffset: 100;
+  }
+}
+
 /* Movimento reduzido: vale para toda animação e transição, inclusive as que vierem depois.
    Aqui só entram as exceções: o que não faz sentido parado e o que depende da animação para aparecer. */
 @media (prefers-reduced-motion: reduce) {

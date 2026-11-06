@@ -358,6 +358,78 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'range') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2" y="8" width="20" height="8" rx="2" fill="#FBBF24" {...ICON_STROKE} />
+        <rect x="7" y="8" width="10" height="8" fill="#34D399" {...ICON_STROKE} />
+        <path d="M7 4v16M17 4v16" fill="none" {...ICON_STROKE} strokeWidth={2.4} />
+      </svg>
+    )
+  }
+  if (kind === 'wide_margin') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="6" y="6.5" width="12" height="11" rx="2.5" fill="#A3E635" {...ICON_STROKE} />
+        <path
+          d="M1.5 12h21M5 8.5 1.5 12 5 15.5M19 8.5l3.5 3.5-3.5 3.5"
+          fill="none"
+          {...ICON_STROKE}
+          strokeWidth={2.2}
+        />
+      </svg>
+    )
+  }
+  if (kind === 'hot_keys') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2.5" y="8.5" width="19" height="13" rx="3.5" fill="var(--color-chalk)" {...ICON_STROKE} />
+        <path
+          d="M12 1.5c.6 2.6 4.5 4.8 4.5 9.2a4.5 4.5 0 0 1-9 0c0-1.9.9-3 1.9-4 .2 1.2.8 1.8 1.4 2 .4-2.3 0-4.6 1.2-7.2Z"
+          fill="#FB923C"
+          {...ICON_STROKE}
+        />
+        <text x="12" y="19.6" textAnchor="middle" fontSize="7" fontWeight="900" fill="var(--color-ink)">
+          7
+        </text>
+      </svg>
+    )
+  }
+  if (kind === 'broken_keys') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="4" fill="#A8A29E" {...ICON_STROKE} />
+        <path d="m13.5 2.5-3 6 4 3-4.5 4 2 5.5" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
+      </svg>
+    )
+  }
+  if (kind === 'shuffled_keys') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="1.5" y="1.5" width="10" height="10" rx="2.5" fill="#C084FC" {...ICON_STROKE} />
+        <rect x="12.5" y="12.5" width="10" height="10" rx="2.5" fill="var(--color-chalk)" {...ICON_STROKE} />
+        <path d="M14.5 3.5h3.5a2.5 2.5 0 0 1 2.5 2.5v3.5m-2.2-2 2.2 2.2 2.2-2.2" fill="none" {...ICON_STROKE} />
+        <path d="M9.5 20.5H6A2.5 2.5 0 0 1 3.5 18v-3.5m2.2 2-2.2-2.2-2.2 2.2" fill="none" {...ICON_STROKE} />
+      </svg>
+    )
+  }
+  if (kind === 'perfectionist') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path d="M8 4.5h12.5a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8L1.5 12 8 4.5Z" fill="#FDA4AF" {...ICON_STROKE} />
+        <path d="m11 9 6 6m0-6-6 6" fill="none" {...ICON_STROKE} strokeWidth={2.4} />
+      </svg>
+    )
+  }
+  if (kind === 'nudge') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="1.5" y="15.5" width="21" height="6" rx="1.5" fill="#FBBF24" {...ICON_STROKE} />
+        <circle cx="6.5" cy="8" r="3.5" fill="#7DD3FC" {...ICON_STROKE} />
+        <path d="M11.5 8h9.5m-3.5-3.5L21 8l-3.5 3.5" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
+      </svg>
+    )
+  }
   if (kind === 'flashbang') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">

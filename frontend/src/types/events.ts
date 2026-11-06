@@ -56,7 +56,14 @@ export interface ArmPowerUpRequest {
     | "curse"
     | "blood_pact"
     | "dagger"
-    | "blessing";
+    | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -185,6 +192,7 @@ export interface EstimateGuess {
   investment: number;
   doubled: boolean;
   first_value: number | null;
+  nudged_from: number | null;
   expired: (
     | "fifty_fifty"
     | "shield"
@@ -227,6 +235,13 @@ export interface EstimateGuess {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   gained: PowerUpGain | null;
 }
@@ -276,7 +291,14 @@ export interface PowerUpGain {
     | "curse"
     | "blood_pact"
     | "dagger"
-    | "blessing";
+    | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge";
   reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination";
   legendary?: boolean;
   mythic?: boolean;
@@ -290,6 +312,16 @@ export interface PowerUpGain {
 export interface EstimatePeek {
   player_id: string;
   value: number;
+}
+/**
+ * Faixa: um intervalo que contém a resposta, sem ela no meio.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateRange".
+ */
+export interface EstimateRange {
+  low: number;
+  high: number;
 }
 /**
  * Pontos da pergunta atual (mudam com o nível e o tamanho da partida): max_points perto de 0% de
@@ -376,6 +408,13 @@ export interface EstimateView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -419,6 +458,13 @@ export interface EstimateView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -462,6 +508,13 @@ export interface EstimateView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   powerup_max: number;
   power_run: number;
@@ -509,6 +562,13 @@ export interface EstimateView {
         | "blood_pact"
         | "dagger"
         | "blessing"
+        | "range"
+        | "wide_margin"
+        | "hot_keys"
+        | "broken_keys"
+        | "shuffled_keys"
+        | "perfectionist"
+        | "nudge"
       )
     | null;
   can_arm: boolean;
@@ -516,6 +576,8 @@ export interface EstimateView {
   active: PowerUpUse[];
   lasting: LastingPowerUp[];
   peek: EstimatePeek[] | null;
+  range_hint: EstimateRange | null;
+  hot_digits: string[] | null;
   flashbang: boolean;
   silenced_rounds: number;
   theme_choices: string[];
@@ -567,7 +629,14 @@ export interface PowerUpUse {
     | "curse"
     | "blood_pact"
     | "dagger"
-    | "blessing";
+    | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -622,7 +691,14 @@ export interface LastingPowerUp {
     | "curse"
     | "blood_pact"
     | "dagger"
-    | "blessing";
+    | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge";
   rounds_left: number;
   total: number;
 }
@@ -706,6 +782,13 @@ export interface GameView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -749,6 +832,13 @@ export interface GameView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -792,6 +882,13 @@ export interface GameView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -842,6 +939,13 @@ export interface GameView {
         | "blood_pact"
         | "dagger"
         | "blessing"
+        | "range"
+        | "wide_margin"
+        | "hot_keys"
+        | "broken_keys"
+        | "shuffled_keys"
+        | "perfectionist"
+        | "nudge"
       )
     | null;
   can_arm: boolean;
@@ -951,6 +1055,13 @@ export interface RoundResult {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   gained: PowerUpGain | null;
   bet_gained?: PowerUpGain | null;
@@ -1054,6 +1165,13 @@ export interface HotPotatoView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1097,6 +1215,13 @@ export interface HotPotatoView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -1142,6 +1267,13 @@ export interface HotPotatoView {
         | "blood_pact"
         | "dagger"
         | "blessing"
+        | "range"
+        | "wide_margin"
+        | "hot_keys"
+        | "broken_keys"
+        | "shuffled_keys"
+        | "perfectionist"
+        | "nudge"
       )
     | null;
   shielded: string[];
@@ -1382,6 +1514,13 @@ export interface SurvivalView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -1425,6 +1564,13 @@ export interface SurvivalView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1468,6 +1614,13 @@ export interface SurvivalView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   powerup_max: number;
   power_run?: number;
@@ -1515,6 +1668,13 @@ export interface SurvivalView {
         | "blood_pact"
         | "dagger"
         | "blessing"
+        | "range"
+        | "wide_margin"
+        | "hot_keys"
+        | "broken_keys"
+        | "shuffled_keys"
+        | "perfectionist"
+        | "nudge"
       )
     | null;
   can_arm: boolean;
@@ -1671,6 +1831,13 @@ export interface TeamMatchView {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   silenced: boolean;
   peeking: number | null;
@@ -1743,6 +1910,13 @@ export interface TeamSide {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1786,6 +1960,13 @@ export interface TeamSide {
     | "blood_pact"
     | "dagger"
     | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge"
   )[];
   powerup_max: number;
   armed: TeamPowerUse | null;
@@ -1863,7 +2044,14 @@ export interface TeamPowerUse {
     | "curse"
     | "blood_pact"
     | "dagger"
-    | "blessing";
+    | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge";
   by: string;
   by_team: number;
   target_team?: number | null;
@@ -2007,7 +2195,14 @@ export interface UsePowerUpRequest {
     | "curse"
     | "blood_pact"
     | "dagger"
-    | "blessing";
+    | "blessing"
+    | "range"
+    | "wide_margin"
+    | "hot_keys"
+    | "broken_keys"
+    | "shuffled_keys"
+    | "perfectionist"
+    | "nudge";
   target_team?: number | null;
   potato?: number | null;
   option?: number | null;

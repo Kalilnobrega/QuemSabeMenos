@@ -45,7 +45,14 @@
             "curse",
             "blood_pact",
             "dagger",
-            "blessing"
+            "blessing",
+            "range",
+            "wide_margin",
+            "hot_keys",
+            "broken_keys",
+            "shuffled_keys",
+            "perfectionist",
+            "nudge"
           ],
           "type": "string"
         },
@@ -480,6 +487,16 @@
             }
           ]
         },
+        "nudged_from": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
         "expired": {
           "items": {
             "enum": [
@@ -523,7 +540,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -553,6 +577,7 @@
         "investment",
         "doubled",
         "first_value",
+        "nudged_from",
         "expired",
         "gained"
       ],
@@ -574,6 +599,23 @@
         "value"
       ],
       "title": "EstimatePeek",
+      "type": "object"
+    },
+    "EstimateRange": {
+      "description": "Faixa: um intervalo que contém a resposta, sem ela no meio.",
+      "properties": {
+        "low": {
+          "type": "number"
+        },
+        "high": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "low",
+        "high"
+      ],
+      "title": "EstimateRange",
       "type": "object"
     },
     "EstimateScoring": {
@@ -800,7 +842,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -849,7 +898,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -898,7 +954,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -957,7 +1020,14 @@
                 "curse",
                 "blood_pact",
                 "dagger",
-                "blessing"
+                "blessing",
+                "range",
+                "wide_margin",
+                "hot_keys",
+                "broken_keys",
+                "shuffled_keys",
+                "perfectionist",
+                "nudge"
               ],
               "type": "string"
             },
@@ -996,6 +1066,29 @@
             {
               "items": {
                 "$ref": "#/$defs/EstimatePeek"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "range_hint": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EstimateRange"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hot_digits": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
               },
               "type": "array"
             },
@@ -1053,6 +1146,8 @@
         "active",
         "lasting",
         "peek",
+        "range_hint",
+        "hot_digits",
         "flashbang",
         "silenced_rounds",
         "theme_choices",
@@ -1193,7 +1288,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -1242,7 +1344,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -1291,7 +1400,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -1374,7 +1490,14 @@
                 "curse",
                 "blood_pact",
                 "dagger",
-                "blessing"
+                "blessing",
+                "range",
+                "wide_margin",
+                "hot_keys",
+                "broken_keys",
+                "shuffled_keys",
+                "perfectionist",
+                "nudge"
               ],
               "type": "string"
             },
@@ -1801,7 +1924,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -1850,7 +1980,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -1903,7 +2040,14 @@
                 "curse",
                 "blood_pact",
                 "dagger",
-                "blessing"
+                "blessing",
+                "range",
+                "wide_margin",
+                "hot_keys",
+                "broken_keys",
+                "shuffled_keys",
+                "perfectionist",
+                "nudge"
               ],
               "type": "string"
             },
@@ -2069,7 +2213,14 @@
             "curse",
             "blood_pact",
             "dagger",
-            "blessing"
+            "blessing",
+            "range",
+            "wide_margin",
+            "hot_keys",
+            "broken_keys",
+            "shuffled_keys",
+            "perfectionist",
+            "nudge"
           ],
           "type": "string"
         },
@@ -2402,7 +2553,14 @@
             "curse",
             "blood_pact",
             "dagger",
-            "blessing"
+            "blessing",
+            "range",
+            "wide_margin",
+            "hot_keys",
+            "broken_keys",
+            "shuffled_keys",
+            "perfectionist",
+            "nudge"
           ],
           "type": "string"
         },
@@ -2477,7 +2635,14 @@
             "curse",
             "blood_pact",
             "dagger",
-            "blessing"
+            "blessing",
+            "range",
+            "wide_margin",
+            "hot_keys",
+            "broken_keys",
+            "shuffled_keys",
+            "perfectionist",
+            "nudge"
           ],
           "type": "string"
         },
@@ -2985,7 +3150,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -3419,7 +3591,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -3468,7 +3647,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -3517,7 +3703,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -3578,7 +3771,14 @@
                 "curse",
                 "blood_pact",
                 "dagger",
-                "blessing"
+                "blessing",
+                "range",
+                "wide_margin",
+                "hot_keys",
+                "broken_keys",
+                "shuffled_keys",
+                "perfectionist",
+                "nudge"
               ],
               "type": "string"
             },
@@ -4027,7 +4227,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -4190,7 +4397,14 @@
             "curse",
             "blood_pact",
             "dagger",
-            "blessing"
+            "blessing",
+            "range",
+            "wide_margin",
+            "hot_keys",
+            "broken_keys",
+            "shuffled_keys",
+            "perfectionist",
+            "nudge"
           ],
           "type": "string"
         },
@@ -4380,7 +4594,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -4429,7 +4650,14 @@
               "curse",
               "blood_pact",
               "dagger",
-              "blessing"
+              "blessing",
+              "range",
+              "wide_margin",
+              "hot_keys",
+              "broken_keys",
+              "shuffled_keys",
+              "perfectionist",
+              "nudge"
             ],
             "type": "string"
           },
@@ -4770,7 +4998,14 @@
             "curse",
             "blood_pact",
             "dagger",
-            "blessing"
+            "blessing",
+            "range",
+            "wide_margin",
+            "hot_keys",
+            "broken_keys",
+            "shuffled_keys",
+            "perfectionist",
+            "nudge"
           ],
           "type": "string"
         },
