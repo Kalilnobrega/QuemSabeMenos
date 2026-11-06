@@ -15,6 +15,7 @@ import { CountUp, FactCard, Podium, Ranking } from './Game'
 import { ActivePowerUps, InstantPowerUps, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 import { BannerList, LevelIntro, StartScreen, type BannerItem } from './Screens'
 import { LeaveButton } from './LeaveButton'
+import { LastWordResultScene, LastWordScene, MathScene } from './MythicScenes'
 
 interface Props {
   snapshot: Snapshot
@@ -46,6 +47,7 @@ const SELF_LINES: Partial<Record<Kind, string>> = {
   last_word: 'Palavra final: você chuta por último. É tudo ou nada!',
 }
 const BROKEN_KEYS = 3
+const MATH_SCENE_WINDOW_MS = 1500
 const DOUBLE_KEYS = 3
 const HIT_LINES: Partial<Record<Kind, string>> = {
   scratch: 'jogou Raspadinha em você! Raspe a pergunta e o teclado.',
@@ -175,6 +177,18 @@ function EstimateRound({
   const lastWord = estimate.last_word
   const speaking = lastWord?.player_id === playerId
   const lastWordOpen = !!lastWord?.open
+  // Cenas dos míticos: cada uma toca uma vez por pergunta (o componente recomeça a cada pergunta).
+  const [scenesDone, setScenesDone] = useState<string[]>([])
+  const sceneDone = (scene: string) => () => setScenesDone((done) => [...done, scene])
+  const mathUse = answering ? estimate.active.find((use) => use.kind === 'math') : undefined
+  // Quem volta para a sala com a pergunta já andando não vê a cena de novo.
+  const mathJustStarted = estimate.phase_duration_ms - remaining < MATH_SCENE_WINDOW_MS
+  const speakerResult = results
+    ? estimate.guesses.find(
+        (g) => g.last_word && estimate.active.some((use) => use.kind === 'last_word' && use.by === g.player_id),
+      )
+    : undefined
+  const playerById = (id: string | null | undefined) => room.players.find((p) => p.id === id)
   useUrgentTick(remaining, answering && !guessed && !estimate.time_up && !silenced && (!speaking || lastWordOpen))
   const mine = estimate.guesses.find((g) => g.player_id === playerId)
   // A sabotagem lendária não tem alvo: pega todos menos quem jogou.
@@ -376,6 +390,21 @@ function EstimateRound({
           {error && <p className="text-center text-sm text-danger">{error}</p>}
           {!silenced && <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />}
         </div>
+      )}
+
+      {mathUse && mathJustStarted && !scenesDone.includes('math') && (
+        <MathScene target={playerById(mathUse.target)} isMe={mathUse.target === playerId} onDone={sceneDone('math')} />
+      )}
+      {lastWord && lastWordOpen && !scenesDone.includes('last-word') && (
+        <LastWordScene speaker={playerById(lastWord.player_id)} isMe={speaking} onDone={sceneDone('last-word')} />
+      )}
+      {speakerResult && !scenesDone.includes('last-word-result') && (
+        <LastWordResultScene
+          speaker={playerById(speakerResult.player_id)}
+          isMe={speakerResult.player_id === playerId}
+          amount={speakerResult.last_word}
+          onDone={sceneDone('last-word-result')}
+        />
       )}
 
       <LeaveButton onLeave={onLeave} />
