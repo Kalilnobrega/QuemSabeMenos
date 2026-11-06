@@ -1653,9 +1653,11 @@ interface PodiumProps {
   playerId: string | null
   onPlayAgain: () => Promise<string | null>
   onLeave: () => void
+  /** Aparece entre o pódio e a classificação, quando as etapas do pódio acabam. */
+  extra?: ReactNode
 }
 
-export function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
+export function Podium({ room, playerId, onPlayAgain, onLeave, extra }: PodiumProps) {
   const ranked = [...room.players]
     .sort(byRanking)
     .map((player) => ({ player, caption: `${formatScore(player.score)} QI` }))
@@ -1668,7 +1670,12 @@ export function Podium({ room, playerId, onPlayAgain, onLeave }: PodiumProps) {
       onLeave={onLeave}
       ranked={ranked}
       worstLine={worst && <span className="font-display text-2xl text-brand">{worst.caption}</span>}
-      list={<Ranking players={room.players} playerId={playerId} />}
+      list={
+        <>
+          {extra}
+          <Ranking players={room.players} playerId={playerId} />
+        </>
+      }
     />
   )
 }

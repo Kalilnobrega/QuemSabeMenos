@@ -184,6 +184,22 @@ export interface ErrorAck {
   error: string;
 }
 /**
+ * Um prêmio do fim da partida. `amount` depende do prêmio: % de erro (absurd, sharp), segundos (quick),
+ * QI (fall, thief), vezes (exact, villain, punching_bag) ou a posição final (comeback).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateAward".
+ */
+export interface EstimateAward {
+  kind: "absurd" | "sharp" | "exact" | "quick" | "comeback" | "fall" | "villain" | "punching_bag" | "thief";
+  player_id: string;
+  amount: number;
+  guess?: number | null;
+  answer?: number | null;
+  unit?: string | null;
+  from_place?: number | null;
+}
+/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "EstimateGuess".
  */
@@ -679,6 +695,7 @@ export interface EstimateView {
   silenced_rounds: number;
   theme_choices: string[];
   powers_round: boolean;
+  awards: EstimateAward[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema

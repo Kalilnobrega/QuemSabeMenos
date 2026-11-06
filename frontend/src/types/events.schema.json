@@ -429,6 +429,82 @@
       "title": "ErrorAck",
       "type": "object"
     },
+    "EstimateAward": {
+      "description": "Um prêmio do fim da partida. `amount` depende do prêmio: % de erro (absurd, sharp), segundos (quick),\nQI (fall, thief), vezes (exact, villain, punching_bag) ou a posição final (comeback).",
+      "properties": {
+        "kind": {
+          "enum": [
+            "absurd",
+            "sharp",
+            "exact",
+            "quick",
+            "comeback",
+            "fall",
+            "villain",
+            "punching_bag",
+            "thief"
+          ],
+          "type": "string"
+        },
+        "player_id": {
+          "type": "string"
+        },
+        "amount": {
+          "type": "number"
+        },
+        "guess": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "answer": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "from_place": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "kind",
+        "player_id",
+        "amount"
+      ],
+      "title": "EstimateAward",
+      "type": "object"
+    },
     "EstimateGuess": {
       "properties": {
         "player_id": {
@@ -1247,6 +1323,12 @@
         },
         "powers_round": {
           "type": "boolean"
+        },
+        "awards": {
+          "items": {
+            "$ref": "#/$defs/EstimateAward"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -1289,7 +1371,8 @@
         "time_up",
         "silenced_rounds",
         "theme_choices",
-        "powers_round"
+        "powers_round",
+        "awards"
       ],
       "title": "EstimateView",
       "type": "object"

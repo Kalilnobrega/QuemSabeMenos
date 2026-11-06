@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
-import { useRemaining, useUrgentTick, vibrate } from '../lib/effects'
+import { reducedMotion, useRemaining, useUrgentTick, vibrate } from '../lib/effects'
 import { ESTIMATE_HINTS, POWERUP_INFO, gainParts, seededShuffle, shortCircuitMs, type Kind } from '../lib/powerups'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
-import type { EstimateGuess, EstimateView, PlayerView, PowerUpUse } from '../types/events'
+import type { EstimateAward, EstimateGuess, EstimateView, PlayerView, PowerUpUse } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
 import { DIGIT_KEYS, draftValue, formatDraft } from '../lib/guessDraft'
@@ -96,7 +96,15 @@ export function Estimate({
 }: Props) {
   const estimate = snapshot.room.estimate!
   if (estimate.phase === 'finished') {
-    return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
+    return (
+      <Podium
+        room={snapshot.room}
+        playerId={playerId}
+        onPlayAgain={onPlayAgain}
+        onLeave={onLeave}
+        extra={<Awards awards={estimate.awards} players={snapshot.room.players} playerId={playerId} />}
+      />
+    )
   }
   if (estimate.phase === 'starting') {
     return <EstimateStart snapshot={snapshot} />
@@ -124,6 +132,135 @@ export function Estimate({
 
 function withUnit(value: number, unit: string | null | undefined) {
   return unit ? `${formatEstimate(value, unit)} ${unit}` : formatEstimate(value, unit)
+}
+
+const times = (count: number) => (count === 1 ? '1 vez' : `${count} vezes`)
+
+// Dourado para os elogios, vermelho para as zoeiras e roxo para o que envolve sabotagem.
+const AWARD_BOM = 'border-brand/60 text-brand'
+const AWARD_ZOEIRA = 'border-danger/60 text-danger'
+const AWARD_SABOTAGEM = 'border-purple-400/60 text-purple-300'
+
+const AWARDS: Record<EstimateAward['kind'], { title: string; tone: string; detail: (award: EstimateAward) => string }> =
+  {
+    absurd: {
+      title: 'Chute mais absurdo',
+      tone: AWARD_ZOEIRA,
+      detail: ({ guess, answer, unit }) => `Chutou ${withUnit(guess ?? 0, unit)}. Eram ${withUnit(answer ?? 0, unit)}.`,
+    },
+    sharp: {
+      title: 'Olho clínico',
+      tone: AWARD_BOM,
+      detail: ({ amount }) =>
+        amount < 1 ? 'Errou menos de 1% em média.' : `Errou só ${Math.round(amount)}% em média.`,
+    },
+    exact: {
+      title: 'Cravou!',
+      tone: AWARD_BOM,
+      detail: ({ amount }) => `Acertou o número exato ${times(amount)}.`,
+    },
+    quick: {
+      title: 'Dedo nervoso',
+      tone: AWARD_ZOEIRA,
+      detail: ({ amount }) => {
+        const seconds = Math.max(1, Math.round(amount))
+        return `Chutava em ${seconds === 1 ? '1 segundo' : `${seconds} segundos`}. Nem leu.`
+      },
+    },
+    comeback: {
+      title: 'Volta por cima',
+      tone: AWARD_BOM,
+      detail: ({ amount, from_place }) => `Era o ${from_place}º e terminou em ${amount}º.`,
+    },
+    fall: {
+      title: 'Maior tombo',
+      tone: AWARD_ZOEIRA,
+      detail: ({ amount }) => `Perdeu ${amount} de QI de uma vez.`,
+    },
+    villain: {
+      title: 'Vilão da sala',
+      tone: AWARD_SABOTAGEM,
+      detail: ({ amount }) => `Sabotou os outros ${times(amount)}.`,
+    },
+    punching_bag: {
+      title: 'Saco de pancada',
+      tone: AWARD_SABOTAGEM,
+      detail: ({ amount }) => `Foi sabotado ${times(amount)}.`,
+    },
+    thief: {
+      title: 'Mão leve',
+      tone: AWARD_SABOTAGEM,
+      detail: ({ amount }) => `Levou ${amount} de QI dos outros.`,
+    },
+  }
+
+const AWARD_FIRST_MS = 700
+const AWARD_STEP_MS = 1500
+
+/** Depois do pódio: os prêmios começam escondidos e viram um de cada vez, com a batida do pódio. */
+function Awards({
+  awards,
+  players,
+  playerId,
+}: {
+  awards: EstimateAward[]
+  players: PlayerView[]
+  playerId: string | null
+}) {
+  const [shown, setShown] = useState(() => (reducedMotion() ? awards.length : 0))
+  const section = useRef<HTMLElement>(null)
+  // No celular o pódio ocupa a tela toda: sem isso, os prêmios virariam fora da vista.
+  useEffect(() => {
+    section.current?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' })
+  }, [])
+  useEffect(() => {
+    if (shown >= awards.length) return
+    const timer = setTimeout(
+      () => {
+        playSound('slam')
+        setShown((count) => count + 1)
+      },
+      shown === 0 ? AWARD_FIRST_MS : AWARD_STEP_MS,
+    )
+    return () => clearTimeout(timer)
+  }, [shown, awards.length])
+  if (awards.length === 0) return null
+  return (
+    <section ref={section} className="flex flex-col gap-2.5" aria-label="Prêmios da partida">
+      <h2 className="text-center font-display text-3xl tracking-wide text-brand">Prêmios da partida</h2>
+      <ol className="flex flex-col gap-2.5">
+        {awards.map((award, index) => {
+          const { title, tone, detail } = AWARDS[award.kind]
+          const player = players.find((p) => p.id === award.player_id)
+          const me = award.player_id === playerId
+          if (index >= shown) {
+            return (
+              <li
+                key={award.kind}
+                className="flex min-h-24 items-center justify-center rounded-2xl border-2 border-steel/15 bg-panel font-display text-5xl text-steel/40"
+                aria-hidden="true"
+              >
+                ?
+              </li>
+            )
+          }
+          return (
+            <li
+              key={award.kind}
+              className={`podium-card flex min-h-24 items-center gap-3 rounded-2xl border-2 bg-panel px-3 py-2 ${tone} ${me ? 'ring-2 ring-brand/70' : ''}`}
+            >
+              {player && <img src={avatarUrl(player)} alt="" className="size-16 shrink-0" />}
+              <span className="flex min-w-0 flex-1 flex-col">
+                <span className="font-display text-2xl leading-tight tracking-wide">{title}</span>
+                <span className="truncate text-sm font-bold text-steel">{me ? 'Você' : player?.nickname}</span>
+                <span className="font-semibold leading-snug text-chalk">{detail(award)}</span>
+              </span>
+            </li>
+          )
+        })}
+      </ol>
+    </section>
+  )
 }
 
 function EstimateStart({ snapshot }: { snapshot: Snapshot }) {

@@ -26,7 +26,9 @@ from pydantic import BaseModel, Field
 
 from app import powerups as pw
 from app.engine import Revealed, RoomError
+from app.estimate_awards import AwardTally
 from app.events import (
+    EstimateAward,
     EstimateGuess,
     EstimateLastWord,
     EstimateMath,
@@ -297,6 +299,11 @@ class Scorable(Protocol):
     answer_ms: int
 
 
+def _ranked_ids(players: list[Scorable]) -> list[str]:
+    """Na mesma ordem do pódio: mais QI e, no empate, quem respondeu mais rápido."""
+    return [p.id for p in sorted(players, key=lambda p: (-p.score, p.answer_ms))]
+
+
 @dataclass
 class Estimate(Revealed):
     rule_error = EstimateError
@@ -337,6 +344,8 @@ class Estimate(Revealed):
     leaders: set[str] = field(default_factory=set)  # o Reverso de quem está em 1º dura menos
     theme_choices: list[str] = field(default_factory=list)
     ranges: dict[str, EstimateRange] = field(default_factory=dict)  # Faixa: de quem usou nesta pergunta
+    tally: AwardTally = field(default_factory=AwardTally)
+    awards: list[EstimateAward] = field(default_factory=list)  # sorteados quando a partida acaba
 
     @classmethod
     def create(
@@ -831,6 +840,7 @@ class Estimate(Revealed):
             self._close(now, players)
         elif self.phase in ("starting", "results"):
             if self.round + 1 >= len(self.questions):
+                self.awards = self.tally.draw(_ranked_ids(players), self.rng)
                 self._enter("finished", now, 0)
                 return
             self.round += 1
@@ -851,6 +861,18 @@ class Estimate(Revealed):
 
     def _longest_window(self) -> float:
         return MATH_SECONDS if self.math_puzzles else ANSWER_SECONDS
+
+    def _sabotages(self, player_ids: list[str]) -> tuple[list[str], list[str]]:
+        """Quem jogou e quem levou cada sabotagem desta pergunta. A lendária conta uma vez para quem jogou
+        e uma para cada atingido; a devolvida pelo Reverso segue contando para quem jogou, e pega nele."""
+        thrown: list[str] = []
+        received: list[str] = []
+        for use in self.active:
+            if use.kind not in TARGETED:
+                continue
+            thrown.append(use.target if use.kind == "steal" and use.reflected_by else use.by)
+            received += [pid for pid in player_ids if self._hit_by(use, pid)]
+        return thrown, received
 
     def _boosted_gain(self, player_id: str, points: int) -> int:
         """Segunda chance e Sniper só mexem no ganho."""
@@ -924,6 +946,10 @@ class Estimate(Revealed):
         by_id = {g.player_id: g for g in self.results}
         for player in players:
             player.score += by_id[player.id].total
+        thrown, received = self._sabotages([p.id for p in players]) if self.powers else ([], [])
+        self.tally.add_round(self.results, q.answer, q.unit, thrown, received)
+        if self.round + 1 == len(self.questions) // 2:
+            self.tally.half_places = {pid: i for i, pid in enumerate(_ranked_ids(players), start=1)}
         if self.powers:
             top = max((p.score for p in players), default=0)
             self.leaders = {p.id for p in players if p.score == top}
@@ -994,6 +1020,7 @@ class Estimate(Revealed):
             silenced_rounds=silenced,
             theme_choices=self.theme_choices,
             powers_round=self.powers_round,
+            awards=self.awards if self.phase == "finished" else [],
         )
 
     def _last_word_view(self) -> EstimateLastWord:

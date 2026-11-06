@@ -781,6 +781,19 @@ class EstimateGuess(BaseModel):
         return self.delta + self.stolen - self.robbed + self.last_word
 
 
+class EstimateAward(BaseModel):
+    """Um prêmio do fim da partida. `amount` depende do prêmio: % de erro (absurd, sharp), segundos (quick),
+    QI (fall, thief), vezes (exact, villain, punching_bag) ou a posição final (comeback)."""
+
+    kind: Literal["absurd", "sharp", "exact", "quick", "comeback", "fall", "villain", "punching_bag", "thief"]
+    player_id: str
+    amount: float
+    guess: float | None = None  # absurd: o chute
+    answer: float | None = None  # absurd: a resposta
+    unit: str | None = None  # absurd: a unidade da pergunta
+    from_place: int | None = None  # comeback: a posição na metade da partida
+
+
 class MathKey(BaseModel):
     """Matemática: uma tecla de operação, com quantas vezes dá para usar. Ao quadrado e raiz não têm valor."""
 
@@ -885,6 +898,7 @@ class EstimateView(BaseModel):
     silenced_rounds: int
     theme_choices: list[str]
     powers_round: bool
+    awards: list[EstimateAward]  # só no fim da partida
 
 
 class RoomState(BaseModel):

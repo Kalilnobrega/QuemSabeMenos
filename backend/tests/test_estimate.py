@@ -1,4 +1,5 @@
 import random
+from collections import Counter
 from dataclasses import dataclass
 
 import pytest
@@ -23,6 +24,7 @@ from app.estimate import (
     load_estimates,
     math_path,
 )
+from app.estimate_awards import AwardTally
 from app.events import PowerUpUse
 
 
@@ -215,6 +217,121 @@ def test_double_does_not_double_the_exact_bonus(difficulty, points):
     give(game, "a", "double", ids=("a",))
     ask(game, [a], a=100)
     assert result(game, "a").delta == points and result(game, "a").doubled
+
+
+def awards_of(game: Estimate) -> dict[str, tuple[str, float]]:
+    return {award.kind: (award.player_id, award.amount) for award in game.view(game.phase_ends_at, "a").awards}
+
+
+def play_all(game: Estimate, players: list[P], **guesses: float) -> None:
+    """Joga o que falta da partida e chega ao fim."""
+    while game.round + 1 < len(game.questions):
+        ask(game, players, **guesses)
+    game.advance(game.phase_ends_at, players)
+    assert game.phase == "finished"
+
+
+def test_awards_only_come_at_the_end():
+    a, b = P("a"), P("b")
+    game = powered(rounds=4)
+    ask(game, [a, b], a=100, b=900)
+    assert game.view(game.phase_started_at, "a").awards == []
+    play_all(game, [a, b], a=100, b=900)
+    assert game.view(game.phase_ends_at, "a").awards
+
+
+def test_each_player_takes_one_award_at_most_and_it_is_true():
+    for seed in range(40):
+        a, b = P("a"), P("b")
+        game = powered(rounds=4)
+        game.rng = random.Random(seed)
+        play_all(game, [a, b], a=100, b=900)
+        awards = game.view(game.phase_ends_at, "a").awards
+        winners = [award.player_id for award in awards]
+        assert len(winners) == len(set(winners))
+        for award in awards:
+            if award.kind in ("absurd", "fall"):
+                assert award.player_id == "b"
+            elif award.kind != "quick":  # os dois chutaram no mesmo tempo: esse empate pode ir para qualquer um
+                assert award.player_id == "a"
+
+
+def test_absurd_award_shows_the_guess_and_the_answer():
+    a = P("a")
+    game = powered(rounds=2)
+    ask(game, [a], a=900)
+    ask(game, [a], a=100)
+    tally = game.tally
+    assert tally.worst["a"].value == 900 and tally.worst["a"].answer == 100
+    assert tally.exact["a"] == 1
+
+
+def test_a_guess_that_was_not_yours_does_not_count_for_awards():
+    a, b = P("a"), P("b")
+    game = powered(rounds=2)
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "swap", "b")
+    ask(game, [a, b], a=900, b=100)
+    assert result(game, "a").swapped_from == 900
+    assert game.tally.exact["a"] == 1  # só a primeira: a segunda veio da troca
+    assert "a" in game.tally.worst and game.tally.worst["a"].error == 0
+
+
+def test_comeback_compares_the_middle_of_the_match_with_the_end():
+    tally = AwardTally(questions=4, half_places={"a": 3, "b": 1, "c": 2})
+    awards = tally.draw(["a", "b", "c"], random.Random(1))
+    assert [(x.kind, x.player_id, x.amount, x.from_place) for x in awards] == [("comeback", "a", 1, 3)]
+    assert AwardTally(questions=4, half_places={"a": 2, "b": 1}).draw(["a", "b"], random.Random(1)) == []
+
+
+def test_an_award_stays_out_when_who_earned_it_already_has_another():
+    tally = AwardTally(questions=2, stolen=Counter({"a": 5, "b": 2}), exact=Counter({"a": 1}))
+    awards = tally.draw(["a", "b"], random.Random(1))
+    assert len(awards) == 1 and awards[0].player_id == "a"
+
+
+def test_awards_ignore_who_left_and_never_pass_the_limit():
+    tally = AwardTally(
+        questions=2,
+        errors={p: [5.0, 5.0] for p in "abcdefg"},
+        seconds={"b": [2.0, 2.0]},
+        exact=Counter({"c": 1}),
+        stolen=Counter({"d": 5}),
+        thrown=Counter({"e": 3}),
+        received=Counter({"f": 3}),
+        falls={"g": 20, "gone": 90},
+    )
+    awards = tally.draw(list("abcdefg"), random.Random(1))
+    assert len(awards) == 3
+    assert all(award.player_id != "gone" for award in awards)
+
+
+def test_sabotages_count_for_who_threw_and_who_was_hit():
+    a, b, c = P("a"), P("b"), P("c")
+    ids = ("a", "b", "c")
+    game = powered()
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    give(game, "a", "mirror", "b", ids)
+    give(game, "c", "mirror", "b", ids)
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    assert game.tally.thrown == Counter({"a": 1, "c": 1})
+    assert game.tally.received == Counter({"b": 2})
+    game.legendaries.setdefault("a", []).append("mirror")
+    game.arm("a", "mirror", None, list(ids), None, legendary=True)
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    assert game.tally.thrown == Counter({"a": 2, "c": 1})
+    assert game.tally.received == Counter({"b": 3, "c": 1})
+
+
+def test_a_reflected_sabotage_still_counts_for_who_threw_it():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "b", "reverse")
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "mirror", "b")
+    ask(game, [a, b], a=100, b=100)
+    assert game.tally.thrown == Counter({"a": 1}) and game.tally.received == Counter({"a": 1})
 
 
 def test_shield_holds_one_loss_and_then_ends():
