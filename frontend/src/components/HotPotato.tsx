@@ -578,7 +578,7 @@ function PotatoPowers({
 }) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
-  const [gift, setGift] = useState<string | null>(null)
+  const [gift, setGift] = useState<{ text: string; mythic: boolean } | null>(null)
   const [choosing, setChoosing] = useState<{ kind: Kind; potatoes: PotatoView[] } | null>(null)
   const [hinting, setHinting] = useState<PotatoView | null>(null)
   const timer = useRef<number | undefined>(undefined)
@@ -592,7 +592,10 @@ function PotatoPowers({
   useEffect(() => {
     if (!giftKey) return
     playSound('powerArm')
-    setGift(myGifts.map((g) => `Você ${gainLabel(g.gain)}`).join(' '))
+    setGift({
+      text: myGifts.map((g) => `Você ${gainLabel(g.gain)}`).join(' '),
+      mythic: myGifts.some((g) => g.gain.mythic),
+    })
     window.clearTimeout(timer.current)
     timer.current = window.setTimeout(() => setGift(null), 3500)
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -647,7 +650,11 @@ function PotatoPowers({
       : 'Sabotagens pegam quem está com a batata, nesta pergunta.'
   return (
     <div className="flex flex-col gap-1.5 rounded-xl bg-panel px-3 py-2.5">
-      {gift && <p className="avatar-pop text-sm font-semibold text-brand">{gift}</p>}
+      {gift && (
+        <p className={`avatar-pop text-sm font-semibold ${gift.mythic ? 'mythic rounded-xl px-3 py-1' : 'text-brand'}`}>
+          {gift.text}
+        </p>
+      )}
       {hinting ? (
         <div className="flex flex-col gap-2">
           <p className="flex items-center gap-2 text-sm font-semibold">

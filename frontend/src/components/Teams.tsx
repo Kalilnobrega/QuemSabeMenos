@@ -1030,7 +1030,11 @@ function TeamResults({
               {team.tolled > 0 && <span className="text-danger">Pedágio −{team.tolled}</span>}
               {team.tricked > 0 && <span className="text-success">Falsa +{team.tricked}</span>}
               {team.tax !== 0 && <span>Imposto {formatDelta(team.tax)}</span>}
-              {team.gained && <span className="text-brand">Time {gainLabel(team.gained)}</span>}
+              {team.gained && (
+                <span className={team.gained.mythic ? 'mythic rounded-md px-1.5' : 'text-brand'}>
+                  Time {gainLabel(team.gained)}
+                </span>
+              )}
               {team.bet ? (
                 <span>
                   Aposta {team.bet}: {formatDelta(team.bet_delta)}
