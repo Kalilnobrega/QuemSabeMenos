@@ -100,12 +100,19 @@ Phase = Literal[
 DUEL_PHASES = ("duel_betting", "duel_answering", "duel_results", "duel_end")
 
 
-def steal_share(target: RoundResult) -> int:
+class StealTarget(Protocol):
+    """O que o Roubo lê do resultado de um jogador; o Chutômetro usa as mesmas contas."""
+
+    player_id: str
+    delta: int
+
+
+def steal_share(target: StealTarget) -> int:
     """Roubo normal: 10 fixos e, se o alvo acertou, mais metade do que ele ganhou."""
     return powerups.STEAL_FIXED + max(0, int(target.delta * powerups.STEAL_GAIN_SHARE))
 
 
-def legendary_steal_shares(targets: list[RoundResult], score_before: dict[str, int]) -> list[tuple[RoundResult, int]]:
+def legendary_steal_shares[T: StealTarget](targets: list[T], score_before: dict[str, int]) -> list[tuple[T, int]]:
     """Roubo lendário: 1,5 Roubo normal (pela média das vítimas) repartido entre elas; quem estava
     em 1º antes da pergunta (empate conta) pesa mais. Assim o ladrão não ganha mais em sala grande."""
     if not targets:

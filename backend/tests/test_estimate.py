@@ -6,6 +6,7 @@ import pytest
 from app import powerups
 from app.estimate import (
     ANSWER_SECONDS,
+    LEGENDARY,
     POWERS,
     Estimate,
     EstimateError,
@@ -168,12 +169,12 @@ def test_without_powers_nothing_changes():
     assert a.score == 50 + result(game, "a").delta
 
 
-def test_everyone_starts_with_one_power_but_never_investment():
+def test_everyone_starts_with_one_power():
     for seed in range(40):
         game = Estimate.create(
             [question(f"q{i}", 100) for i in range(10)], 10, set(), random.Random(seed), 0, ["a", "b"], powers=True
         )
-        assert all(len(game.held[pid]) == 1 and game.held[pid][0] != "investment" for pid in ("a", "b"))
+        assert all(len(game.held[pid]) == 1 for pid in ("a", "b"))
         assert game.view(0, "a").starting_powerup == game.held["a"][0]
 
 
@@ -245,27 +246,6 @@ def test_shield_blocks_steal():
     assert result(game, "a").stolen == 0 and result(game, "b").robbed == 0
 
 
-def test_investment_pays_while_guesses_earn_and_ends_on_a_loss():
-    a = P("a")
-    game = powered()
-    ask(game, [a], a=100)
-    give(game, "a", "investment", ids=("a",))
-    ask(game, [a], a=115)
-    assert result(game, "a").investment == 2
-    ask(game, [a], a=115)
-    assert result(game, "a").investment == 4
-    ask(game, [a], a=170)
-    assert result(game, "a").investment == 0 and "a" not in game.investments
-
-
-def test_investment_needs_medium_or_harder_next():
-    game = powered(difficulty="easy")
-    ask(game, [P("a")], a=100)
-    game.held["a"] = ["investment"]
-    with pytest.raises(EstimateError):
-        game.arm("a", "investment", None, ["a"], None)
-
-
 def test_second_chance_tells_the_side_and_the_new_guess_is_worth_half():
     a = P("a")
     game = powered()
@@ -293,20 +273,6 @@ def test_second_chance_keeps_a_winning_guess_and_the_first_loss_if_nobody_retrie
     assert result(game, "a").delta == 8 and result(game, "a").first_value is None
     ask(game, [a], a=30)  # 70% de erro: perde, sem tentar de novo fica com ele
     assert result(game, "a").delta == -10 and result(game, "a").value == 30
-
-
-def test_accelerator_cuts_only_the_target_window():
-    a, b = P("a"), P("b")
-    game = powered()
-    ask(game, [a, b], a=100, b=100)
-    give(game, "a", "accelerator", "b")
-    game.advance(game.phase_ends_at, [a, b])
-    at = game.phase_started_at
-    assert game.view(at, "b").phase_ends_in_ms == round(ANSWER_SECONDS / 3 * 1000)
-    assert game.view(at, "a").phase_ends_in_ms == round(ANSWER_SECONDS * 1000)
-    with pytest.raises(EstimateError):
-        game.guess("b", 100, at + 8)
-    game.guess("a", 100, at + 8)
 
 
 def test_reverse_sends_the_sabotage_back_once():
@@ -347,7 +313,7 @@ def test_theme_swaps_the_next_question_and_cannot_be_undone():
 def test_disarm_returns_the_power_to_the_hand():
     a = P("a")
     game = powered()
-    ask(game, [a], a=100)
+    ask(game, [a], a=110)
     give(game, "a", "shield", ids=("a",))
     game.ready.add("a")
     game.disarm("a")
@@ -410,18 +376,6 @@ def test_peek_is_not_armed_in_the_reveal():
     game.held["a"] = ["peek"]
     with pytest.raises(EstimateError):
         game.arm("a", "peek", None, ["a"], None)
-
-
-def test_flashbang_only_reaches_the_target_while_guessing():
-    a, b = P("a"), P("b")
-    game = powered()
-    ask(game, [a, b], a=100, b=100)
-    give(game, "a", "flashbang", "b")
-    game.advance(game.phase_ends_at, [a, b])
-    at = game.phase_started_at
-    assert game.view(at, "b").flashbang and not game.view(at, "a").flashbang
-    game.advance(at + 1, [a, b])
-    assert not game.view(game.phase_started_at, "b").flashbang
 
 
 def test_three_earning_guesses_in_a_row_give_a_power():
@@ -549,7 +503,7 @@ def test_hot_keys_shows_the_answer_digits_only_to_who_used_it():
     assert game.view(at + 1, "a").hot_digits is None
 
 
-def test_nudge_moves_the_guess_by_a_fifth_and_stays_hidden_until_the_reveal():
+def test_nudge_moves_the_guess_by_10_to_30_percent_and_stays_hidden_until_the_reveal():
     a, b = P("a"), P("b")
     game = powered()
     ask(game, [a, b], a=100, b=100)
@@ -562,7 +516,7 @@ def test_nudge_moves_the_guess_by_a_fifth_and_stays_hidden_until_the_reveal():
     assert game.view(at + 1, "b").my_guess == 100  # o alvo só descobre na régua
     game.advance(at + 2, [a, b])
     moved = result(game, "b")
-    assert moved.nudged_from == 100 and moved.value in (80, 120) and moved.error_percent == 20 and not moved.exact
+    assert moved.nudged_from == 100 and 10 <= moved.error_percent <= 30 and not moved.exact
     assert any(u.kind == "nudge" for u in game.view(at + 2, "b").active)
 
 
@@ -575,7 +529,10 @@ def test_no_guess_means_nothing_to_nudge():
     assert result(game, "b").value is None and result(game, "b").nudged_from is None
 
 
-@pytest.mark.parametrize("kind", ["broken_keys", "shuffled_keys", "perfectionist", "nudge"])
+@pytest.mark.parametrize(
+    "kind",
+    ["broken_keys", "shuffled_keys", "perfectionist", "nudge", "swap", "runaway_keys", "short_circuit", "double_click"],
+)
 def test_keypad_sabotages_need_a_target_and_the_reverse_sends_them_back(kind):
     a, b = P("a"), P("b")
     game = powered()
@@ -591,6 +548,294 @@ def test_keypad_sabotages_need_a_target_and_the_reverse_sends_them_back(kind):
 
 
 def test_new_powers_stay_out_of_the_other_modes():
-    new = {"range", "wide_margin", "hot_keys", "broken_keys", "shuffled_keys", "perfectionist", "nudge"}
+    new = {
+        "range",
+        "wide_margin",
+        "hot_keys",
+        "broken_keys",
+        "shuffled_keys",
+        "perfectionist",
+        "nudge",
+        "sniper",
+        "swap",
+        "runaway_keys",
+        "short_circuit",
+        "double_click",
+    }
     assert new <= set(POWERS)
     assert not new & (set(powerups.POWERUPS) | powerups.TARGETED | powerups.INSTANT)
+
+
+def test_powers_taken_out_of_this_mode_stay_out():
+    assert not {"investment", "scramble", "magnifier", "accelerator", "flashbang"} & set(POWERS)
+
+
+def test_nudge_stays_between_10_and_30_percent_on_both_sides():
+    shifts = []
+    for seed in range(200):
+        a, b = P("a"), P("b")
+        game = powered()
+        game.rng = random.Random(seed)
+        ask(game, [a, b], a=100, b=100)
+        give(game, "a", "nudge", "b")
+        ask(game, [a, b], a=100, b=100)
+        shifts.append(result(game, "b").value - 100)
+    assert all(10 <= abs(shift) <= 30 for shift in shifts)
+    assert min(shifts) < 0 < max(shifts)
+    assert len({abs(shift) for shift in shifts}) > 5
+
+
+def snipe(game: Estimate, players: list[P], pid: str) -> float:
+    """Abre a próxima pergunta e usa o Sniper na hora."""
+    game.advance(game.phase_ends_at, players)
+    game.held[pid] = ["sniper"]
+    game.use_now(pid, "sniper")
+    return game.phase_started_at + 1
+
+
+def test_sniper_halves_the_zone_and_doubles_the_gain_during_the_question():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    at = snipe(game, [a, b], "a")
+    assert game.view(at, "a").scoring.break_even_percent == 15
+    assert game.view(at, "a").scoring.max_points == 32
+    assert game.view(at, "b").scoring.break_even_percent == 30
+    game.guess("a", 105, at)  # 5% de erro: na zona de 15% vale 11 de 16, em dobro
+    game.guess("b", 105, at)
+    game.advance(at + 1, [a, b])
+    assert result(game, "a").delta == 22 and result(game, "b").delta == 13
+
+
+def test_sniper_turns_a_near_miss_into_a_loss():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    at = snipe(game, [a, b], "a")
+    game.guess("a", 120, at)  # 20%: ganha sem o Sniper, perde com ele
+    game.guess("b", 120, at)
+    game.advance(at + 1, [a, b])
+    assert result(game, "a").delta < 0 < result(game, "b").delta
+
+
+def test_sniper_is_not_armed_in_the_reveal():
+    a = P("a")
+    game = powered()
+    ask(game, [a], a=100)
+    game.held["a"] = ["sniper"]
+    with pytest.raises(EstimateError):
+        game.arm("a", "sniper", None, ["a"], None)
+
+
+def test_swap_trades_the_guesses_in_the_reveal_and_stays_hidden_until_then():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "swap", "b")
+    game.advance(game.phase_ends_at, [a, b])
+    at = game.phase_started_at
+    assert not any(u.kind == "swap" for u in game.view(at, "b").active)
+    game.guess("a", 170, at + 1)
+    game.guess("b", 100, at + 3)
+    assert game.view(at + 3, "b").my_guess == 100
+    game.advance(at + 4, [a, b])
+    assert result(game, "a").value == 100 and result(game, "a").swapped_from == 170 and result(game, "a").exact
+    assert result(game, "b").value == 170 and result(game, "b").swapped_from == 100 and result(game, "b").delta < 0
+    assert result(game, "a").elapsed_ms == 1000 and result(game, "b").elapsed_ms == 3000  # o tempo é de cada um
+
+
+def test_swap_needs_both_guesses():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "swap", "b")
+    ask(game, [a, b], b=100)
+    assert result(game, "a").value is None and result(game, "b").value == 100
+    assert result(game, "b").swapped_from is None
+
+
+def test_reverse_cancels_the_swap():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "b", "reverse")
+    ask(game, [a, b], a=100, b=100)
+    give(game, "a", "swap", "b")
+    ask(game, [a, b], a=170, b=100)
+    assert result(game, "a").value == 170 and result(game, "b").value == 100
+    assert result(game, "a").swapped_from is None
+
+
+# --- lendários -------------------------------------------------------------------
+
+
+def give_legendary(game: Estimate, pid: str, kind: str, ids: tuple[str, ...] = ("a", "b", "c")) -> None:
+    game.legendaries.setdefault(pid, []).append(kind)
+    game.arm(pid, kind, None, list(ids), None, legendary=True)
+
+
+class Lucky(random.Random):
+    """Sorteio que sempre cai na menor chance: todo poder ganho vem lendário."""
+
+    def random(self) -> float:
+        return 0.0
+
+
+def test_legendary_sabotage_reaches_everyone_but_who_used_it():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    give_legendary(game, "a", "shuffled_keys")
+    assert game.view(game.phase_started_at, "a").armed.legendary
+    game.advance(game.phase_ends_at, [a, b, c])
+    use = next(u for u in game.active if u.kind == "shuffled_keys")
+    assert use.legendary and use.target is None
+    assert game._affects("shuffled_keys", "b") and game._affects("shuffled_keys", "c")
+    assert not game._affects("shuffled_keys", "a")
+
+
+def test_reverse_does_not_stop_a_legendary():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    give(game, "b", "reverse")
+    ask(game, [a, b], a=100, b=100)
+    give_legendary(game, "a", "mirror", ("a", "b"))
+    game.advance(game.phase_ends_at, [a, b])
+    assert game._affects("mirror", "b") and not game._affects("mirror", "a")
+    assert next(u for u in game.active if u.kind == "mirror").reflected_by is None
+
+
+def test_legendary_silence_mutes_everyone_else():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    give_legendary(game, "a", "silence")
+    game.advance(game.phase_ends_at, [a, b, c])
+    assert game.is_silenced("b") and game.is_silenced("c") and not game.is_silenced("a")
+
+
+def test_legendary_nudge_moves_all_the_other_guesses():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    give_legendary(game, "a", "nudge")
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    assert result(game, "a").nudged_from is None and result(game, "a").value == 100
+    assert result(game, "b").nudged_from == 100 and result(game, "c").nudged_from == 100
+
+
+def test_legendary_steal_shares_one_and_a_half_steals_and_the_leader_pays_more():
+    a, b, c = P("a"), P("b", score=80), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=170, b=170, c=170)
+    give_legendary(game, "a", "steal")
+    ask(game, [a, b, c], a=170, b=170, c=170)
+    assert result(game, "b").robbed == 10 and result(game, "c").robbed == 5
+    assert result(game, "a").stolen == 15
+
+
+def test_shield_holds_its_part_of_a_legendary_steal():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=100, b=100, c=100)
+    give_legendary(game, "a", "steal")
+    game.lasting["b"] = {"shield": 2}
+    ask(game, [a, b, c], a=170, b=170, c=170)
+    assert result(game, "b").shielded and result(game, "b").robbed == 0
+    assert result(game, "c").robbed > 0 and result(game, "a").stolen == result(game, "c").robbed
+
+
+def test_legendary_goes_back_to_its_place_when_disarmed_and_needs_to_be_held():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=100, b=100)
+    with pytest.raises(EstimateError):
+        game.arm("a", "mirror", None, ["a", "b"], None, legendary=True)
+    give_legendary(game, "a", "mirror", ("a", "b"))
+    assert game.legendaries["a"] == []
+    game.disarm("a")
+    assert game.legendaries["a"] == ["mirror"] and "mirror" not in game.held.get("a", [])
+    assert game.view(game.phase_started_at, "a").legendary_powerups == ["mirror"]
+
+
+def test_gained_powers_can_come_legendary_but_never_the_swap():
+    assert "swap" not in LEGENDARY and LEGENDARY
+    assert all(kind in POWERS for kind in LEGENDARY)
+    a = P("a")
+    game = powered()
+    game.rng = Lucky(1)
+    for _ in range(3):
+        ask(game, [a], a=115)
+    gained = result(game, "a").gained
+    assert gained.legendary and gained.kind in LEGENDARY and game.legendaries["a"] == [gained.kind]
+
+
+def test_legendaries_take_up_space_in_the_hand():
+    a = P("a")
+    game = powered()
+    game.powerup_max = 1
+    game.legendaries["a"] = ["mirror"]
+    for _ in range(3):
+        ask(game, [a], a=115)
+    assert result(game, "a").gained is None
+
+
+# --- como se ganha poder -----------------------------------------------------------
+
+
+def test_any_guess_that_earns_iq_counts_for_the_streak():
+    a = P("a")
+    game = powered(rounds=10)
+    for _ in range(2):
+        ask(game, [a], a=125)  # 25%: ganha QI nas médias
+    assert game.right_runs["a"] == 2 and result(game, "a").gained is None
+    ask(game, [a], a=125)
+    assert result(game, "a").gained is not None and result(game, "a").gained.reason == "streak"
+    assert game.right_runs["a"] == 0
+
+
+@pytest.mark.parametrize("difficulty", ["medium", "hard"])
+def test_an_exact_guess_gives_a_power_on_medium_and_hard(difficulty):
+    a = P("a")
+    game = powered(difficulty=difficulty)
+    ask(game, [a], a=100)
+    gained = result(game, "a").gained
+    assert gained is not None and gained.reason == "exact"
+    assert game.right_runs["a"] == 1  # a cravada também soma na sequência
+
+
+def test_an_exact_guess_gives_nothing_on_easy():
+    a = P("a")
+    game = powered(difficulty="easy")
+    ask(game, [a], a=100)
+    assert result(game, "a").gained is None
+
+
+def test_exact_and_streak_together_give_one_power_and_the_streak_waits():
+    a = P("a")
+    game = powered()
+    ask(game, [a], a=110)
+    ask(game, [a], a=110)
+    ask(game, [a], a=100)
+    assert result(game, "a").gained.reason == "exact" and game.right_runs["a"] == 3
+    ask(game, [a], a=110)
+    assert result(game, "a").gained.reason == "streak" and game.right_runs["a"] == 0
+
+
+def test_wide_margin_helps_the_streak():
+    a = P("a")
+    game = powered()
+    ask(game, [a], a=110)
+    give(game, "a", "wide_margin", ids=("a",))
+    ask(game, [a], a=145)  # 45%: perderia sem a Margem larga
+    assert result(game, "a").delta > 0 and game.right_runs["a"] == 2
+
+
+def test_full_hands_lose_the_exact_power():
+    a = P("a")
+    game = powered()
+    game.powerup_max = 1
+    game.held["a"] = ["shield"]
+    ask(game, [a], a=100)
+    assert result(game, "a").gained is None and game.held["a"] == ["shield"]

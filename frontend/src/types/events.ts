@@ -63,7 +63,12 @@ export interface ArmPowerUpRequest {
     | "broken_keys"
     | "shuffled_keys"
     | "perfectionist"
-    | "nudge";
+    | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -189,10 +194,10 @@ export interface EstimateGuess {
   shielded: number;
   stolen: number;
   robbed: number;
-  investment: number;
   doubled: boolean;
   first_value: number | null;
   nudged_from: number | null;
+  swapped_from: number | null;
   expired: (
     | "fifty_fifty"
     | "shield"
@@ -242,6 +247,11 @@ export interface EstimateGuess {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   gained: PowerUpGain | null;
 }
@@ -298,8 +308,13 @@ export interface PowerUpGain {
     | "broken_keys"
     | "shuffled_keys"
     | "perfectionist"
-    | "nudge";
-  reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination";
+    | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click";
+  reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination" | "exact";
   legendary?: boolean;
   mythic?: boolean;
 }
@@ -415,6 +430,11 @@ export interface EstimateView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -465,6 +485,11 @@ export interface EstimateView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -515,6 +540,11 @@ export interface EstimateView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   powerup_max: number;
   power_run: number;
@@ -569,6 +599,11 @@ export interface EstimateView {
         | "shuffled_keys"
         | "perfectionist"
         | "nudge"
+        | "sniper"
+        | "swap"
+        | "runaway_keys"
+        | "short_circuit"
+        | "double_click"
       )
     | null;
   can_arm: boolean;
@@ -578,7 +613,6 @@ export interface EstimateView {
   peek: EstimatePeek[] | null;
   range_hint: EstimateRange | null;
   hot_digits: string[] | null;
-  flashbang: boolean;
   silenced_rounds: number;
   theme_choices: string[];
   powers_round: boolean;
@@ -636,7 +670,12 @@ export interface PowerUpUse {
     | "broken_keys"
     | "shuffled_keys"
     | "perfectionist"
-    | "nudge";
+    | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -698,7 +737,12 @@ export interface LastingPowerUp {
     | "broken_keys"
     | "shuffled_keys"
     | "perfectionist"
-    | "nudge";
+    | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click";
   rounds_left: number;
   total: number;
 }
@@ -789,6 +833,11 @@ export interface GameView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -839,6 +888,11 @@ export interface GameView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -889,6 +943,11 @@ export interface GameView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -946,6 +1005,11 @@ export interface GameView {
         | "shuffled_keys"
         | "perfectionist"
         | "nudge"
+        | "sniper"
+        | "swap"
+        | "runaway_keys"
+        | "short_circuit"
+        | "double_click"
       )
     | null;
   can_arm: boolean;
@@ -1062,6 +1126,11 @@ export interface RoundResult {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   gained: PowerUpGain | null;
   bet_gained?: PowerUpGain | null;
@@ -1172,6 +1241,11 @@ export interface HotPotatoView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1222,6 +1296,11 @@ export interface HotPotatoView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -1274,6 +1353,11 @@ export interface HotPotatoView {
         | "shuffled_keys"
         | "perfectionist"
         | "nudge"
+        | "sniper"
+        | "swap"
+        | "runaway_keys"
+        | "short_circuit"
+        | "double_click"
       )
     | null;
   shielded: string[];
@@ -1521,6 +1605,11 @@ export interface SurvivalView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -1571,6 +1660,11 @@ export interface SurvivalView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1621,6 +1715,11 @@ export interface SurvivalView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   powerup_max: number;
   power_run?: number;
@@ -1675,6 +1774,11 @@ export interface SurvivalView {
         | "shuffled_keys"
         | "perfectionist"
         | "nudge"
+        | "sniper"
+        | "swap"
+        | "runaway_keys"
+        | "short_circuit"
+        | "double_click"
       )
     | null;
   can_arm: boolean;
@@ -1838,6 +1942,11 @@ export interface TeamMatchView {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   silenced: boolean;
   peeking: number | null;
@@ -1917,6 +2026,11 @@ export interface TeamSide {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1967,6 +2081,11 @@ export interface TeamSide {
     | "shuffled_keys"
     | "perfectionist"
     | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click"
   )[];
   powerup_max: number;
   armed: TeamPowerUse | null;
@@ -2051,7 +2170,12 @@ export interface TeamPowerUse {
     | "broken_keys"
     | "shuffled_keys"
     | "perfectionist"
-    | "nudge";
+    | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click";
   by: string;
   by_team: number;
   target_team?: number | null;
@@ -2202,7 +2326,12 @@ export interface UsePowerUpRequest {
     | "broken_keys"
     | "shuffled_keys"
     | "perfectionist"
-    | "nudge";
+    | "nudge"
+    | "sniper"
+    | "swap"
+    | "runaway_keys"
+    | "short_circuit"
+    | "double_click";
   target_team?: number | null;
   potato?: number | null;
   option?: number | null;

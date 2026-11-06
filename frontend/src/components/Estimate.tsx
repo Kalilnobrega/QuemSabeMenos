@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
-import { useFlashbang, useRemaining, useUrgentTick, vibrate } from '../lib/effects'
-import { ESTIMATE_HINTS, POWERUP_INFO, gainParts, scrambleWords, seededShuffle, type Kind } from '../lib/powerups'
+import { useRemaining, useUrgentTick, vibrate } from '../lib/effects'
+import { ESTIMATE_HINTS, POWERUP_INFO, gainParts, seededShuffle, shortCircuitMs, type Kind } from '../lib/powerups'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
@@ -12,7 +12,7 @@ import { DIGIT_KEYS, draftValue } from '../lib/guessDraft'
 import { EstimateKeypad } from './EstimateKeypad'
 import { EstimateRuler } from './EstimateRuler'
 import { CountUp, FactCard, Podium, Ranking } from './Game'
-import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
+import { ActivePowerUps, InstantPowerUps, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 import { BannerList, LevelIntro, StartScreen, type BannerItem } from './Screens'
 import { LeaveButton } from './LeaveButton'
 
@@ -37,28 +37,35 @@ const SELF_LINES: Partial<Record<Kind, string>> = {
   shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro chute que perderia QI não tira nada.',
   peek: 'Espiar: veja os chutes dos outros ao vivo.',
   second_chance: 'Segunda chance nesta e na próxima: se o chute perder QI, você tenta de novo.',
-  investment: 'Investimento valendo: cada chute seguido que ganha QI rende mais!',
   range: 'Faixa: a resposta está no intervalo acima do teclado.',
   wide_margin: 'Margem larga: nesta pergunta, sua zona de ganho é o dobro.',
   hot_keys: 'Tecla quente: as teclas acesas são algarismos da resposta.',
+  sniper: 'Sniper: zona de ganho pela metade e ganho em dobro. Mire bem!',
 }
 const BROKEN_KEYS = 3
+const DOUBLE_KEYS = 3
 const HIT_LINES: Partial<Record<Kind, string>> = {
-  accelerator: 'jogou Acelerador em você: um terço do tempo!',
-  flashbang: 'jogou Flashbang em você: leia rápido, a pergunta some em 4 segundos!',
+  scratch: 'jogou Raspadinha em você! Raspe a pergunta e o teclado.',
+  short_circuit: 'jogou Curto-circuito em você: seu teclado vai queimar. Chute logo!',
+  double_click: 'jogou Duplo clique em você: 3 teclas digitam duas vezes. Olhe o visor!',
   broken_keys: 'jogou Tecla quebrada em você: 3 teclas vão rachar quando você tocar!',
   shuffled_keys: 'jogou Teclado mentiroso em você: as teclas trocaram de lugar!',
   perfectionist: 'jogou Perfeccionista em você: não dá para apagar!',
   nudge: 'jogou Empurrão em você: seu chute andou na régua!',
+  swap: 'jogou Troca-troca em você: os chutes trocaram de lugar!',
+  runaway_keys: 'jogou Teclas fugitivas em você: pegue as teclas e arraste cada uma para o espaço dela!',
 }
 const HIT_DETAILS: Partial<Record<Kind, string>> = {
-  accelerator: 'Um terço do tempo',
   mirror: 'A pergunta está espelhada',
-  flashbang: 'Leia rápido: a pergunta some em 4 segundos',
+  scratch: 'Raspe a pergunta e o teclado',
+  short_circuit: 'Seu teclado vai queimar. Chute logo!',
+  double_click: '3 teclas digitam duas vezes. Olhe o visor!',
   broken_keys: '3 teclas vão rachar quando você tocar',
   shuffled_keys: 'As teclas trocaram de lugar',
   perfectionist: 'Não dá para apagar: capriche',
   nudge: 'Seu chute andou na régua',
+  swap: 'Os chutes trocaram de lugar',
+  runaway_keys: 'Pegue as teclas e arraste cada uma para o espaço dela',
 }
 
 const ESTIMATE_LEVEL_LINES: Record<string, string> = {
@@ -135,14 +142,23 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
   const silenced = estimate.silenced_rounds > 0
   useUrgentTick(remaining, answering && !guessed && !silenced)
   const mine = estimate.guesses.find((g) => g.player_id === playerId)
-  const hits = (kind: Kind) => !results && estimate.active.some((use) => use.kind === kind && use.target === playerId)
-  const blinded = useFlashbang(estimate.flashbang && answering, estimate.phase_duration_ms - remaining)
-  const sabotaged = estimate.active.some((use) => POWERUP_INFO[use.kind].targeted && use.target === playerId)
-  const text = hits('scramble') ? scrambleWords(estimate.text ?? '', estimate.round) : estimate.text
+  // A sabotagem lendária não tem alvo: pega todos menos quem jogou.
+  const hitsMe = (use: PowerUpUse) => (use.legendary ? use.by !== playerId : use.target === playerId)
+  const hits = (kind: Kind) => !results && estimate.active.some((use) => use.kind === kind && hitsMe(use))
+  const shorted =
+    answering && hits('short_circuit') && estimate.phase_duration_ms - remaining >= shortCircuitMs(estimate.round)
+  const sabotaged = estimate.active.some((use) => POWERUP_INFO[use.kind].targeted && hitsMe(use))
 
   useEffect(() => {
     if (answering) playSound('answersOpen')
   }, [answering])
+  useEffect(() => {
+    if (!shorted || guessed) return
+    playSound('keyShort')
+    vibrate([80, 40, 120])
+    // Só quando o teclado queima.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shorted])
   useEffect(() => {
     if (sabotaged && answering) playSound('powerHit')
     // Só quando a pergunta aparece.
@@ -182,13 +198,11 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
         </span>
       </header>
 
-      {blinded && <div className="flashbang-flash" aria-hidden="true" />}
       {estimate.powers && (
         <ActivePowerUps
           game={estimate}
           players={room.players}
           playerId={playerId}
-          concealed={blinded}
           lines={SELF_LINES}
           hitLines={HIT_LINES}
           hitDetails={HIT_DETAILS}
@@ -216,15 +230,13 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
       )}
 
       {/* Menor enquanto o teclado está na tela, para o botão de chutar caber no celular. */}
-      <Magnifier active={hits('magnifier') && !blinded}>
-        <ScratchCard active={hits('scratch') && !blinded}>
-          <h2
-            className={`text-center font-display leading-tight tracking-wide ${results || guessed ? 'text-3xl' : 'text-2xl'} ${hits('mirror') ? '-scale-x-100' : ''} ${blinded ? 'invisible' : ''}`}
-          >
-            {text}
-          </h2>
-        </ScratchCard>
-      </Magnifier>
+      <ScratchCard active={hits('scratch')}>
+        <h2
+          className={`text-center font-display leading-tight tracking-wide ${results || guessed ? 'text-3xl' : 'text-2xl'} ${hits('mirror') ? '-scale-x-100' : ''}`}
+        >
+          {estimate.text}
+        </h2>
+      </ScratchCard>
 
       {results ? (
         <Reveal
@@ -266,8 +278,14 @@ function EstimateRound({ snapshot, playerId, onGuess, onSkip, onArm, onDisarm, o
             compact={estimate.powers}
             hotDigits={estimate.hot_digits ?? []}
             brokenKeys={hits('broken_keys') ? seededShuffle(DIGIT_KEYS, estimate.round).slice(0, BROKEN_KEYS) : []}
+            doubleKeys={
+              hits('double_click') ? seededShuffle(DIGIT_KEYS, estimate.round + 50).slice(0, DOUBLE_KEYS) : []
+            }
             shuffleSeed={hits('shuffled_keys') ? estimate.round : null}
             noErase={hits('perfectionist')}
+            covered={hits('scratch')}
+            shorted={shorted}
+            runaway={hits('runaway_keys')}
             onChange={setDraft}
             onSubmit={() => void submit()}
           />
@@ -324,7 +342,7 @@ function guessVerdict(guess: EstimateGuess) {
 }
 
 /** Quanto o QI mudou nesta pergunta, com os poderes. */
-const guessTotal = (guess: EstimateGuess) => guess.delta + guess.investment + guess.stolen - guess.robbed
+const guessTotal = (guess: EstimateGuess) => guess.delta + guess.stolen - guess.robbed
 
 /** O que os poderes fizeram na revelação. */
 function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: string | null): BannerItem[] {
@@ -360,13 +378,22 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
     if (guess.nudged_from !== null) {
       note('nudge', 'nudge', 'Levou um Empurrão', `O chute era ${withUnit(guess.nudged_from, estimate.unit)}`)
     }
+    if (guess.swapped_from !== null) {
+      note('swap', 'swap', 'Troca-troca', `O chute era ${withUnit(guess.swapped_from, estimate.unit)}`)
+    }
+    if (estimate.active.some((use) => use.kind === 'sniper' && use.by === id)) {
+      note('sniper', 'sniper', 'Sniper', guess.delta > 0 ? 'O ganho valeu o dobro' : 'Fora da zona menor', guess.delta)
+    }
     if (estimate.active.some((use) => use.kind === 'wide_margin' && use.by === id)) {
       note('wide', 'wide_margin', 'Margem larga', 'A zona de ganho dobrou')
     }
     if (guess.shielded) note('shield', 'shield', 'O Escudo segurou', `Salvou ${guess.shielded} de QI`)
-    if (guess.investment) note('investment', 'investment', 'Investimento', 'Bônus do chute', guess.investment)
     for (const use of estimate.active) {
       if (use.kind !== 'steal' || use.by !== id) continue
+      if (use.legendary) {
+        note('steal', 'steal', 'Roubo lendário', `Levou ${guess.stolen} de QI dos outros`, guess.stolen)
+        continue
+      }
       const target = use.target ? who(use.target) : '?'
       const whom = target === 'Você' ? 'você' : target
       note(

@@ -10,8 +10,9 @@ Com poderes: os comuns do clássico que fazem sentido com número (ver `POWERS`)
 para a próxima pergunta (Espiar na hora). "Acertar" é ganhar QI com o chute. Espiar mostra os chutes
 dos outros, e a Segunda chance diz se a resposta é mais alta ou mais baixa antes do novo chute.
 
-Poderes só deste modo: Faixa (na hora), Margem larga, Tecla quente e Empurrão valem aqui. Tecla
-quebrada, Teclado mentiroso e Perfeccionista só existem como sabotagem armada: o teclado é do navegador.
+Poderes só deste modo: Faixa e Sniper (na hora), Margem larga, Tecla quente, Empurrão e Troca-troca
+valem aqui. Tecla quebrada, Teclado mentiroso, Perfeccionista, Teclas fugitivas, Curto-circuito e Duplo
+clique só existem como sabotagem armada: o teclado é do navegador.
 """
 
 import json
@@ -36,7 +37,15 @@ from app.events import (
     PowerUpGain,
     PowerUpUse,
 )
-from app.game import LATE_SECONDS, LEVEL_SECONDS, START_SECONDS, results_seconds, split_by_difficulty
+from app.game import (
+    LATE_SECONDS,
+    LEVEL_SECONDS,
+    START_SECONDS,
+    legendary_steal_shares,
+    results_seconds,
+    split_by_difficulty,
+    steal_share,
+)
 from app.game import point_scale as scale_for
 
 ESTIMATES_DIR = Path(__file__).parent / "estimates"
@@ -44,6 +53,7 @@ ROUND_OPTIONS = (10, 15, 20)
 ANSWER_SECONDS = 20.0
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
 # Sem 50/50, Alternativa falsa e Pedágio, que dependem de alternativas, e sem Tempo extra: a velocidade não dá QI.
+# Investimento, Embaralhar, Lupa, Acelerador e Flashbang também ficaram de fora, por escolha de jogo.
 POWERS: tuple[PowerUp, ...] = (
     "shield",
     "double",
@@ -52,15 +62,10 @@ POWERS: tuple[PowerUp, ...] = (
     "reverse",
     "backpack",
     "theme",
-    "investment",
     "scratch",
     "steal",
-    "scramble",
-    "accelerator",
     "mirror",
     "silence",
-    "magnifier",
-    "flashbang",
     "range",
     "wide_margin",
     "hot_keys",
@@ -68,11 +73,29 @@ POWERS: tuple[PowerUp, ...] = (
     "shuffled_keys",
     "perfectionist",
     "nudge",
+    "sniper",
+    "swap",
+    "runaway_keys",
+    "short_circuit",
+    "double_click",
 )
-TARGETED: frozenset[PowerUp] = pw.TARGETED | {"broken_keys", "shuffled_keys", "perfectionist", "nudge"}
-INSTANT: frozenset[PowerUp] = pw.INSTANT | {"range"}
+TARGETED: frozenset[PowerUp] = pw.TARGETED | {
+    "broken_keys",
+    "shuffled_keys",
+    "perfectionist",
+    "nudge",
+    "swap",
+    "runaway_keys",
+    "short_circuit",
+    "double_click",
+}
+INSTANT: frozenset[PowerUp] = pw.INSTANT | {"range", "sniper"}
+# As sabotagens em versão lendária, menos a Troca-troca, que só existe entre duas pessoas.
+LEGENDARY: tuple[PowerUp, ...] = tuple(kind for kind in POWERS if kind in TARGETED and kind != "swap")
+SNIPER_FACTOR = 2  # a zona de ganho fica desse tanto menor, e o ganho desse tanto maior
+EXACT_POWER_LEVELS = ("medium", "hard")  # cravar nesses níveis dá um poder
 WIDE_MARGIN_FACTOR = 2  # a zona de ganho (e a de perda) fica desse tamanho
-NUDGE_SHARE = 0.2  # o Empurrão anda essa fração da base do erro, para um lado sorteado
+NUDGE_SHARE = (0.1, 0.3)  # o Empurrão anda uma fração sorteada da base do erro, para um lado sorteado
 RANGE_OFF_CENTER = (0.15, 0.4)  # a Faixa tem a resposta a essa fração de uma das pontas
 
 
@@ -208,6 +231,7 @@ class Estimate(Revealed):
     bank: list[EstimateQuestion] = field(default_factory=list)  # para o Tema trocar a próxima pergunta
     used: set[str] = field(default_factory=set)
     held: dict[str, list[PowerUp]] = field(default_factory=dict)
+    legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)
     starting: dict[str, PowerUp] = field(default_factory=dict)
     extra_slots: dict[str, int] = field(default_factory=dict)
     armed: dict[str, PowerUpUse] = field(default_factory=dict)
@@ -216,7 +240,6 @@ class Estimate(Revealed):
     lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
     used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
     silences: list[tuple[PowerUpUse, int]] = field(default_factory=list)
-    investments: dict[str, int] = field(default_factory=dict)  # acertos de cada Investimento em andamento
     right_runs: dict[str, int] = field(default_factory=dict)
     last_runs: dict[str, int] = field(default_factory=dict)
     leaders: set[str] = field(default_factory=set)  # o Reverso de quem está em 1º dura menos
@@ -254,9 +277,8 @@ class Estimate(Revealed):
         )
         used |= {q.id for q in game.questions}
         if powers:
-            dealt = [kind for kind in POWERS if kind not in pw.NOT_DEALT]
             for pid in player_ids or []:
-                game.starting[pid] = rng.choice(dealt)
+                game.starting[pid] = rng.choice(POWERS)
                 game.held[pid] = [game.starting[pid]]
         game._enter("starting", now, START_SECONDS)
         return game
@@ -270,7 +292,7 @@ class Estimate(Revealed):
             raise EstimateError("Agora não dá para chutar.")
         if player_id in self.guesses:
             raise EstimateError("Você já chutou.")
-        limit = self.phase_started_at + self.answer_window(player_id)
+        limit = self.phase_started_at + ANSWER_SECONDS
         if now > limit + LATE_SECONDS:
             raise EstimateError("O tempo acabou.")
         guessed = (value, min(now, limit))
@@ -288,10 +310,6 @@ class Estimate(Revealed):
     def everyone_ready(self, connected: list[str]) -> bool:
         """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
         return all(pid in self.ready or self.is_silenced(pid) for pid in connected)
-
-    def answer_window(self, player_id: str) -> float:
-        """Segundos que o jogador tem para chutar: o Acelerador corta."""
-        return ANSWER_SECONDS * (pw.ACCELERATOR_FACTOR if self._affects("accelerator", player_id) else 1)
 
     # --- poderes ----------------------------------------------------------
 
@@ -313,7 +331,7 @@ class Estimate(Revealed):
     def silence_left(self, player_id: str) -> int:
         if not self.powers_round:
             return 0
-        return max((left for use, left in self.silences if use.target == player_id), default=0)
+        return max((left for use, left in self.silences if self._hit_by(use, player_id)), default=0)
 
     def is_silenced(self, player_id: str) -> bool:
         return self.silence_left(player_id) > 0
@@ -325,10 +343,27 @@ class Estimate(Revealed):
             return self.is_silenced(player_id)
         if kind in pw.LASTING:
             return self.lasting.get(player_id, {}).get(kind, 0) > 0
-        return any(use.kind == kind and (use.target or use.by) == player_id for use in self.active)
+        return any(
+            use.kind == kind
+            and (self._hit_by(use, player_id) if use.legendary else (use.target or use.by) == player_id)
+            for use in self.active
+        )
 
-    def arm(self, player_id: str, kind: PowerUp, target: str | None, player_ids: list[str], theme: str | None) -> None:
-        if kind == "backpack":
+    @staticmethod
+    def _hit_by(use: PowerUpUse, player_id: str) -> bool:
+        """A sabotagem lendária não tem alvo: pega todos menos quem jogou."""
+        return use.by != player_id if use.legendary else use.target == player_id
+
+    def arm(
+        self,
+        player_id: str,
+        kind: PowerUp,
+        target: str | None,
+        player_ids: list[str],
+        theme: str | None,
+        legendary: bool = False,
+    ) -> None:
+        if kind == "backpack" and not legendary:
             return self._open_backpack(player_id)
         if not self.can_arm:
             raise EstimateError("Agora não dá para usar poder.")
@@ -336,6 +371,13 @@ class Estimate(Revealed):
             raise EstimateError("Silenciado: sem poderes por enquanto.")
         if player_id in self.armed:
             raise EstimateError("Você já armou um poder para a próxima pergunta.")
+        if legendary:
+            held = self.legendaries.get(player_id, [])
+            if kind not in held:
+                raise EstimateError("Você não tem esse poder.")
+            held.remove(kind)
+            self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None, legendary=True)
+            return
         held = self.held.get(player_id, [])
         if kind not in held:
             raise EstimateError("Você não tem esse poder.")
@@ -346,11 +388,6 @@ class Estimate(Revealed):
                 raise EstimateError("Escolha em quem usar.")
         else:
             target = None
-        if kind == "investment":
-            if self.questions[self.round + 1].difficulty == "easy":
-                raise EstimateError("O Investimento só vale a partir das médias.")
-            if player_id in self.investments:
-                raise EstimateError("Seu Investimento ainda está valendo.")
         if kind == "theme":
             if theme not in self.theme_choices:
                 raise EstimateError("Escolha um dos temas.")
@@ -370,11 +407,11 @@ class Estimate(Revealed):
         if use.kind == "theme":
             raise EstimateError("O tema da próxima já foi trocado: não dá para voltar.")
         del self.armed[player_id]
-        self.held.setdefault(player_id, []).append(use.kind)
+        (self.legendaries if use.legendary else self.held).setdefault(player_id, []).append(use.kind)
         self.ready.discard(player_id)
 
     def use_now(self, player_id: str, kind: PowerUp) -> None:
-        """Espiar e Faixa: durante a pergunta, valem na hora."""
+        """Espiar, Faixa e Sniper: durante a pergunta, valem na hora."""
         if self.phase != "answering" or not self.powers:
             raise EstimateError("Agora não dá para usar poder.")
         if kind not in INSTANT:
@@ -439,8 +476,6 @@ class Estimate(Revealed):
         armed = list(self.armed.values())
         self.armed = {}
         for use in armed:
-            if use.kind == "investment":
-                self.investments[use.by] = 0
             if use.kind in pw.LASTING:
                 rounds = pw.LASTING[use.kind]
                 if use.kind == "reverse" and use.by in self.leaders:
@@ -456,40 +491,61 @@ class Estimate(Revealed):
             if use.kind == "silence":
                 self.silences.append((use, pw.SILENCE_ROUNDS))
 
-    def _settle_powers(self, players: list[Scorable], earned: set[str]) -> None:
-        """Depois dos pontos de cada chute: Investimento e Roubo, que dependem do resultado."""
+    def _settle_steals(self, players: list[Scorable]) -> None:
+        """Depois dos pontos de cada chute: o Roubo depende do resultado, e o lendário, do placar antes dele."""
+        score_before = {p.id: p.score for p in players}
         by_id = {g.player_id: g for g in self.results}
-        for pid, hits in list(self.investments.items()):
-            result = by_id.get(pid)
-            if not result:
-                continue
-            if pid not in earned:
-                del self.investments[pid]
-                continue
-            hits += 1
-            result.investment = pw.INVESTMENT_BONUS[hits - 1]
-            if hits == len(pw.INVESTMENT_BONUS):
-                del self.investments[pid]
-            else:
-                self.investments[pid] = hits
         for use in self.active:
-            thief, target = by_id.get(use.by), by_id.get(use.target)
-            if use.kind != "steal" or not thief or not target or target.shielded:
+            thief = by_id.get(use.by)
+            if use.kind != "steal" or not thief:
                 continue
-            share = pw.STEAL_FIXED + max(0, int(target.delta * pw.STEAL_GAIN_SHARE))
-            thief.stolen += share
-            target.robbed += share
+            if use.legendary:
+                shares = legendary_steal_shares([g for g in self.results if g is not thief], score_before)
+            else:
+                target = by_id.get(use.target)
+                shares = [(target, steal_share(target))] if target else []
+            for target, share in shares:
+                if target.shielded:
+                    continue
+                thief.stolen += share
+                target.robbed += share
 
     def _scored_error(self, player_id: str, error: float) -> float:
-        """O erro que vale para os pontos: a Margem larga dobra as zonas, o que é o mesmo que cortar o erro."""
-        return error / WIDE_MARGIN_FACTOR if self._affects("wide_margin", player_id) else error
+        """O erro que vale para os pontos: mudar o tamanho das zonas é o mesmo que mudar o erro."""
+        return error * self._zone_shrink(player_id)
+
+    def _zone_shrink(self, player_id: str | None) -> float:
+        """Margem larga e Sniper mexem nas zonas de quem usou, e juntos se cancelam."""
+        if player_id is None:
+            return 1
+        wide = 1 / WIDE_MARGIN_FACTOR if self._affects("wide_margin", player_id) else 1
+        return wide * (SNIPER_FACTOR if self._affects("sniper", player_id) else 1)
+
+    def _swap_guesses(self, players: list[Scorable]) -> tuple[dict[str, tuple[float, float]], dict[str, float]]:
+        """Os chutes que valem, com a Troca-troca: só o número troca, e só se os dois chutaram.
+        Devolvida pelo Reverso, ela fica sem efeito. Também diz o chute original de quem trocou."""
+        guesses = {}
+        for player in players:
+            guessed = self.guesses.get(player.id) or self.first_guesses.get(player.id)
+            if guessed:
+                guesses[player.id] = guessed
+        originals: dict[str, float] = {}
+        for use in self.active:
+            mine, theirs = guesses.get(use.by), guesses.get(use.target)
+            if use.kind != "swap" or use.by == use.target or not mine or not theirs:
+                continue
+            originals.setdefault(use.by, mine[0])
+            originals.setdefault(use.target, theirs[0])
+            guesses[use.by], guesses[use.target] = (theirs[0], mine[1]), (mine[0], theirs[1])
+        return guesses, originals
 
     def _nudge(self, player_id: str) -> float:
         """Quanto os Empurrões em cima do jogador mexem no chute."""
         return sum(
-            self.rng.choice((-1, 1)) * error_base(self.question) * NUDGE_SHARE
+            # Dois algarismos significativos: o chute não vira um número cheio de casas na régua.
+            float(f"{self.rng.choice((-1, 1)) * error_base(self.question) * self.rng.uniform(*NUDGE_SHARE):.2g}")
             for use in self.active
-            if use.kind == "nudge" and use.target == player_id
+            if use.kind == "nudge" and self._hit_by(use, player_id)
         )
 
     def _wear_lasting(self) -> None:
@@ -506,28 +562,35 @@ class Estimate(Revealed):
                     if kind in pw.BREAKABLE and kind not in self.used_lasting.get(pid, set()) and result:
                         result.expired.append(kind)
 
-    def _gains(self, players: list[Scorable], earned: set[str]) -> None:
-        """Um poder a cada 3 chutes seguidos que ganham QI, ou a cada 3 rodadas muito atrás."""
+    def _gains(self, players: list[Scorable], earned: set[str], exact_guesses: set[str]) -> None:
+        """Um poder por cravada nas médias e difíceis, a cada 3 chutes seguidos que ganham QI, ou a cada
+        3 rodadas muito atrás. No máximo um por pergunta: a sequência que sobrar vale na próxima."""
+        exact_pays = self.question.difficulty in EXACT_POWER_LEVELS
         behind = pw.trailing(players)
         by_id = {g.player_id: g for g in self.results}
         for player in players:
             right = self.right_runs[player.id] = self.right_runs.get(player.id, 0) + 1 if player.id in earned else 0
             last = self.last_runs[player.id] = self.last_runs.get(player.id, 0) + 1 if player.id in behind else 0
-            if right >= pw.STREAK_FOR_POWERUP:
+            if exact_pays and player.id in exact_guesses:
+                reason = "exact"
+            elif right >= pw.STREAK_FOR_POWERUP:
                 reason = "streak"
             elif last >= pw.COMEBACK_ROUNDS:
                 reason = "comeback"
             else:
                 continue
             held = self.held.setdefault(player.id, [])
-            if len(held) >= self.capacity(player.id):
+            legendaries = self.legendaries.setdefault(player.id, [])
+            if len(held) + len(legendaries) >= self.capacity(player.id):
                 continue  # com as mãos cheias, a sequência continua valendo para depois
-            kind = self.rng.choice(POWERS)
-            held.append(kind)
-            by_id[player.id].gained = PowerUpGain(kind=kind, reason=reason)
+            chance = pw.LEGENDARY_TRAILING_CHANCE if player.id in behind else pw.LEGENDARY_CHANCE
+            legendary = self.rng.random() < chance
+            kind = self.rng.choice(LEGENDARY if legendary else POWERS)
+            (legendaries if legendary else held).append(kind)
+            by_id[player.id].gained = PowerUpGain(kind=kind, reason=reason, legendary=legendary)
             if reason == "streak":
                 self.right_runs[player.id] = 0
-            else:
+            elif reason == "comeback":
                 self.last_runs[player.id] = 0
 
     def advance(self, now: float, players: list[Scorable]) -> None:
@@ -557,24 +620,30 @@ class Estimate(Revealed):
         q = self.question
         self.results = []
         earned = set()  # quem ganhou QI com o chute, antes de Escudo e Roubo: é o "acerto" dos poderes
+        exact_guesses = set()
+        final_guesses, originals = self._swap_guesses(players)
         for player in players:
             first = self.first_guesses.get(player.id)
             retried = player.id in self.guesses
-            guessed = self.guesses.get(player.id) or first
+            guessed = final_guesses.get(player.id)
             nudged_from = None
             if guessed and (shift := self._nudge(player.id)):
                 nudged_from = guessed[0]
                 guessed = (round(guessed[0] + shift, 3), guessed[1])
             if guessed is None:
-                error, elapsed = None, self.answer_window(player.id)
+                error, elapsed = None, ANSWER_SECONDS
             else:
                 error, elapsed = error_percent(q, guessed[0]), max(0.0, guessed[1] - self.phase_started_at)
             scored = None if error is None else self._scored_error(player.id, error)
             delta = guess_points(scored, q.difficulty, self.point_scale)
+            if error == 0:
+                exact_guesses.add(player.id)
             if delta > 0:
                 earned.add(player.id)
                 if first and retried:
                     delta = int(delta * pw.SECOND_CHANCE_SHARE)
+                if self._affects("sniper", player.id):
+                    delta *= SNIPER_FACTOR
             doubled = self._affects("double", player.id)
             if doubled:
                 hard_loss = delta < 0 and q.difficulty == "hard"
@@ -592,16 +661,16 @@ class Estimate(Revealed):
                     shielded=shielded,
                     stolen=0,
                     robbed=0,
-                    investment=0,
                     doubled=doubled,
                     first_value=first[0] if first and retried else None,
                     nudged_from=nudged_from,
+                    swapped_from=originals.get(player.id),
                     expired=[],
                     gained=None,
                 )
             )
         if self.powers:
-            self._settle_powers(players, earned)
+            self._settle_steals(players)
         by_id = {g.player_id: g for g in self.results}
         for player in players:
             player.score += by_id[player.id].total
@@ -610,7 +679,7 @@ class Estimate(Revealed):
             self.leaders = {p.id for p in players if p.score == top}
             self._wear_lasting()
             if self.has_next_round:
-                self._gains(players, earned)
+                self._gains(players, earned, exact_guesses)
             self.theme_choices = self._draw_theme_choices()
         # Do mais perto para o mais longe; quem não chutou fica no fim.
         self.results.sort(key=lambda r: (r.error_percent is None, r.error_percent or 0, r.elapsed_ms or 0))
@@ -628,8 +697,6 @@ class Estimate(Revealed):
         answering = self.phase == "answering"
         retrying = answering and first is not None and mine is None
         ends_at = self.phase_ends_at
-        if answering and viewer:
-            ends_at = self.phase_started_at + self.answer_window(viewer)
         peeking = answering and bool(viewer) and self._affects("peek", viewer)
         return EstimateView(
             phase=self.phase,
@@ -653,7 +720,7 @@ class Estimate(Revealed):
             ready=sorted(self.ready),
             powers=self.powers,
             powerups=list(self.held.get(viewer, [])) if viewer else [],
-            legendary_powerups=[],
+            legendary_powerups=list(self.legendaries.get(viewer, [])) if viewer else [],
             mythic_powerups=[],
             powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
             power_run=self.right_runs.get(viewer, 0) if viewer else 0,
@@ -670,7 +737,6 @@ class Estimate(Revealed):
             ),
             range_hint=self.ranges.get(viewer) if answering and viewer else None,
             hot_digits=answer_digits(q.answer) if answering and viewer and self._affects("hot_keys", viewer) else None,
-            flashbang=answering and bool(viewer) and self._affects("flashbang", viewer),
             silenced_rounds=silenced,
             theme_choices=self.theme_choices,
             powers_round=self.powers_round,
@@ -682,29 +748,27 @@ class Estimate(Revealed):
             for kind, left in self.lasting.get(viewer, {}).items()
             if self._affects(kind, viewer)
         ]
-        if viewer in self.investments:
-            total = len(pw.INVESTMENT_BONUS)
-            lasting.append(LastingPowerUp(kind="investment", rounds_left=total - self.investments[viewer], total=total))
         if silence_left := self.silence_left(viewer):
             lasting.append(LastingPowerUp(kind="silence", rounds_left=silence_left, total=pw.SILENCE_ROUNDS))
         return lasting
 
     def _visible_uses(self, viewer: str | None) -> list[PowerUpUse]:
-        """Roubo e Empurrão são surpresa até a revelação, e o Reverso armado só o dono vê."""
+        """Roubo, Empurrão e Troca-troca são surpresa até a revelação, e o Reverso armado só o dono vê."""
         if not self.powers_round:
             return []
         uses = [use for use in self.active if use.kind != "reverse" or use.by == viewer]
         if self.phase == "results":
             return uses
-        return [use for use in uses if use.kind not in ("steal", "nudge") or use.by == viewer]
+        return [use for use in uses if use.kind not in ("steal", "nudge", "swap") or use.by == viewer]
 
     def _scoring_view(self, difficulty: str, viewer: str | None) -> EstimateScoring:
-        """Com a Margem larga, a régua de quem usou mostra as zonas maiores."""
+        """Com Margem larga ou Sniper, a régua de quem usou mostra as zonas desse jogador."""
         rules = SCORING[difficulty]
-        widen = WIDE_MARGIN_FACTOR if viewer and self._affects("wide_margin", viewer) else 1
+        widen = 1 / self._zone_shrink(viewer)
+        gain = SNIPER_FACTOR if viewer and self._affects("sniper", viewer) else 1
         return EstimateScoring(
-            max_points=_round(rules.max_points * self.point_scale),
-            exact_bonus=_round(rules.exact_bonus * self.point_scale),
+            max_points=_round(rules.max_points * self.point_scale * gain),
+            exact_bonus=_round(rules.exact_bonus * self.point_scale * gain),
             break_even_percent=rules.break_even * widen,
             max_loss=_round(rules.max_loss * self.point_scale),
             max_loss_percent=rules.max_loss_at * widen,

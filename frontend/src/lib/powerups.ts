@@ -2,6 +2,8 @@ import type { GameView, PowerUpGain, PowerUpUse } from '../types/events'
 
 export type Kind = PowerUpUse['kind']
 
+const SHORT_CIRCUIT_MS = [5000, 12000]
+
 /** O que os componentes de poder leem da partida: o GameView e o SurvivalView têm esses campos. */
 export type PowerView = Pick<
   GameView,
@@ -22,7 +24,7 @@ export type PowerView = Pick<
   | 'power_run_goal'
 >
 
-export const INSTANT: Kind[] = ['fifty_fifty', 'peek', 'range']
+export const INSTANT: Kind[] = ['fifty_fifty', 'peek', 'range', 'sniper']
 
 export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: boolean; tone: string }> = {
   fifty_fifty: {
@@ -307,9 +309,39 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
     targeted: true,
     tone: 'bg-rose-400/15 text-rose-200',
   },
+  sniper: {
+    name: 'Sniper',
+    hint: 'Use na hora da pergunta, pelo ícone: sua zona de ganho cai pela metade, e o ganho dobra. Fora da zona, você perde QI.',
+    targeted: false,
+    tone: 'bg-red-400/15 text-red-200',
+  },
+  swap: {
+    name: 'Troca-troca',
+    hint: 'Surpresa: na próxima pergunta, seu chute e o do alvo trocam de lugar na revelação, se os dois chutarem. Chute mal e o azar é dele!',
+    targeted: true,
+    tone: 'bg-teal-400/15 text-teal-200',
+  },
+  runaway_keys: {
+    name: 'Teclas fugitivas',
+    hint: 'Na próxima pergunta, as teclas do alvo saem voando pela tela: ele precisa pegar cada uma e arrastar até o espaço dela para poder usar.',
+    targeted: true,
+    tone: 'bg-indigo-400/15 text-indigo-200',
+  },
+  double_click: {
+    name: 'Duplo clique',
+    hint: 'Na próxima pergunta, 3 teclas de número do alvo digitam duas vezes, e ele não sabe quais são.',
+    targeted: true,
+    tone: 'bg-fuchsia-400/15 text-fuchsia-200',
+  },
+  short_circuit: {
+    name: 'Curto-circuito',
+    hint: 'Na próxima pergunta, em algum momento entre 5 e 12 segundos, o teclado do alvo queima. Só dá para chutar o que já estiver no visor.',
+    targeted: true,
+    tone: 'bg-yellow-400/15 text-yellow-100',
+  },
   nudge: {
     name: 'Empurrão',
-    hint: 'Surpresa: na próxima pergunta, o chute do alvo anda 20% para um lado sorteado, e ele só descobre na régua. Pode até ajudar!',
+    hint: 'Surpresa: na próxima pergunta, o chute do alvo anda de 10% a 30% para um lado sorteado, e ele só descobre na régua. Pode até ajudar!',
     targeted: true,
     tone: 'bg-sky-400/15 text-sky-200',
   },
@@ -318,6 +350,7 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
 const GAIN_REASON: Record<PowerUpGain['reason'], string> = {
   start: 'sorteio',
   streak: '3 acertos seguidos',
+  exact: 'chute certeiro',
   comeback: 'ajuda para o lanterna',
   ghost: 'presente de fantasma',
   bet: 'aposta certeira',
@@ -356,15 +389,10 @@ export const ESTIMATE_HINTS: Partial<Record<Kind, string>> = {
   peek: 'Use na hora da pergunta, pelo ícone: veja os chutes dos outros ao vivo.',
   second_chance:
     'Vale nas próximas 2 perguntas: se o chute perder QI, você descobre se a resposta é mais alta ou mais baixa e chuta de novo, valendo metade.',
-  investment:
-    'Cada chute seguido que ganha QI rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro que não ganhar. Só a partir das médias.',
   steal: 'Na próxima, você tira 10 de QI do alvo e, se ele ganhar QI, mais metade do que ganhar.',
-  scramble: 'A próxima pergunta do alvo vem com as letras embaralhadas dentro das palavras.',
-  accelerator: 'O alvo tem um terço do tempo para chutar.',
   mirror: 'A próxima pergunta do alvo aparece espelhada.',
-  magnifier: 'A próxima pergunta do alvo vem borrada: só dá para ler com a lupa.',
   silence: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação, e não usa poderes.',
-  flashbang: 'Depois de 4 segundos, a pergunta do alvo some até o fim da rodada. O teclado continua funcionando.',
+  scratch: 'A próxima pergunta e o teclado do alvo vêm cobertos: tem que raspar os dois.',
 }
 
 /** Times: os poderes valem para o time inteiro e as sabotagens miram um time adversário. */
@@ -440,6 +468,12 @@ export function seededShuffle<T>(items: readonly T[], seed: number) {
     ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
   }
   return shuffled
+}
+
+/** Curto-circuito: quando o teclado queima, igual para a mesma pergunta mesmo depois de reconectar. */
+export function shortCircuitMs(seed: number) {
+  const [low, high] = SHORT_CIRCUIT_MS
+  return low + seededRandom(seed)() * (high - low)
 }
 
 /** Embaralhar: embaralha o miolo de cada palavra (primeira e última letra no lugar), sempre igual para a mesma semente. */

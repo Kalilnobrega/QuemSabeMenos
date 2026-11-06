@@ -1333,6 +1333,23 @@ body {
   }
 }
 
+/* Curto-circuito: as teclas piscam e apagam. Paradas, já ficam apagadas. */
+.key-short {
+  animation: key-short 0.6s linear;
+}
+@keyframes key-short {
+  0%,
+  30%,
+  60% {
+    opacity: 1;
+  }
+  15%,
+  45%,
+  80% {
+    opacity: 0.15;
+  }
+}
+
 /* Movimento reduzido: vale para toda animação e transição, inclusive as que vierem depois.
    Aqui só entram as exceções: o que não faz sentido parado e o que depende da animação para aparecer. */
 @media (prefers-reduced-motion: reduce) {

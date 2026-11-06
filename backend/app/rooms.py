@@ -520,7 +520,7 @@ class RoomManager:
         elif room.survival:
             self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
         elif room.estimate:
-            room.estimate.arm(player.id, kind, target, [p.id for p in room.players], theme)
+            room.estimate.arm(player.id, kind, target, [p.id for p in room.players], theme, legendary)
         else:
             if kind == "resurrection":
                 room.game.resurrect(player, room.players)

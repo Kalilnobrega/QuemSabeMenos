@@ -77,7 +77,12 @@ PowerUp = Literal[
     "broken_keys",
     "shuffled_keys",
     "perfectionist",
-    "nudge",  # só no Chutômetro
+    "nudge",
+    "sniper",
+    "swap",
+    "runaway_keys",
+    "short_circuit",
+    "double_click",  # só no Chutômetro
 ]
 GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato", "estimate"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato", "estimate")
@@ -274,8 +279,8 @@ class LastingPowerUp(BaseModel):
 
 class PowerUpGain(BaseModel):
     kind: PowerUp
-    # sorteio inicial, acertos seguidos, lanterna, fantasma, aposta certeira ou alguém caiu
-    reason: Literal["start", "streak", "comeback", "ghost", "bet", "elimination"]
+    # sorteio inicial, acertos seguidos, lanterna, fantasma, aposta certeira, alguém caiu ou chute cravado
+    reason: Literal["start", "streak", "comeback", "ghost", "bet", "elimination", "exact"]
     legendary: bool = False
     mythic: bool = False
 
@@ -745,17 +750,17 @@ class EstimateGuess(BaseModel):
     shielded: int
     stolen: int
     robbed: int
-    investment: int
     doubled: bool
     first_value: float | None  # Segunda chance: o primeiro chute, que perdia QI
-    nudged_from: float | None  # Empurrão: o que o jogador digitou; `value` é onde o chute foi parar
+    nudged_from: float | None  # Empurrão: o chute antes de andar; `value` é onde ele foi parar
+    swapped_from: float | None  # Troca-troca: o chute do próprio jogador, antes da troca
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
     gained: PowerUpGain | None
 
     @property
     def total(self) -> int:
         """Quanto o QI muda nesta pergunta."""
-        return self.delta + self.investment + self.stolen - self.robbed
+        return self.delta + self.stolen - self.robbed
 
 
 class EstimatePeek(BaseModel):
@@ -822,7 +827,6 @@ class EstimateView(BaseModel):
     peek: list[EstimatePeek] | None  # Espiar: os chutes dos outros
     range_hint: EstimateRange | None  # Faixa: só para quem usou, enquanto chuta
     hot_digits: list[str] | None  # Tecla quente: os algarismos da resposta, só para quem usou, enquanto chuta
-    flashbang: bool
     silenced_rounds: int
     theme_choices: list[str]
     powers_round: bool

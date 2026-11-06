@@ -52,7 +52,12 @@
             "broken_keys",
             "shuffled_keys",
             "perfectionist",
-            "nudge"
+            "nudge",
+            "sniper",
+            "swap",
+            "runaway_keys",
+            "short_circuit",
+            "double_click"
           ],
           "type": "string"
         },
@@ -471,9 +476,6 @@
         "robbed": {
           "type": "integer"
         },
-        "investment": {
-          "type": "integer"
-        },
         "doubled": {
           "type": "boolean"
         },
@@ -488,6 +490,16 @@
           ]
         },
         "nudged_from": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "swapped_from": {
           "anyOf": [
             {
               "type": "number"
@@ -547,7 +559,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -574,10 +591,10 @@
         "shielded",
         "stolen",
         "robbed",
-        "investment",
         "doubled",
         "first_value",
         "nudged_from",
+        "swapped_from",
         "expired",
         "gained"
       ],
@@ -849,7 +866,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -905,7 +927,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -961,7 +988,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -1027,7 +1059,12 @@
                 "broken_keys",
                 "shuffled_keys",
                 "perfectionist",
-                "nudge"
+                "nudge",
+                "sniper",
+                "swap",
+                "runaway_keys",
+                "short_circuit",
+                "double_click"
               ],
               "type": "string"
             },
@@ -1097,9 +1134,6 @@
             }
           ]
         },
-        "flashbang": {
-          "type": "boolean"
-        },
         "silenced_rounds": {
           "type": "integer"
         },
@@ -1148,7 +1182,6 @@
         "peek",
         "range_hint",
         "hot_digits",
-        "flashbang",
         "silenced_rounds",
         "theme_choices",
         "powers_round"
@@ -1295,7 +1328,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -1351,7 +1389,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -1407,7 +1450,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -1497,7 +1545,12 @@
                 "broken_keys",
                 "shuffled_keys",
                 "perfectionist",
-                "nudge"
+                "nudge",
+                "sniper",
+                "swap",
+                "runaway_keys",
+                "short_circuit",
+                "double_click"
               ],
               "type": "string"
             },
@@ -1931,7 +1984,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -1987,7 +2045,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -2047,7 +2110,12 @@
                 "broken_keys",
                 "shuffled_keys",
                 "perfectionist",
-                "nudge"
+                "nudge",
+                "sniper",
+                "swap",
+                "runaway_keys",
+                "short_circuit",
+                "double_click"
               ],
               "type": "string"
             },
@@ -2220,7 +2288,12 @@
             "broken_keys",
             "shuffled_keys",
             "perfectionist",
-            "nudge"
+            "nudge",
+            "sniper",
+            "swap",
+            "runaway_keys",
+            "short_circuit",
+            "double_click"
           ],
           "type": "string"
         },
@@ -2560,7 +2633,12 @@
             "broken_keys",
             "shuffled_keys",
             "perfectionist",
-            "nudge"
+            "nudge",
+            "sniper",
+            "swap",
+            "runaway_keys",
+            "short_circuit",
+            "double_click"
           ],
           "type": "string"
         },
@@ -2571,7 +2649,8 @@
             "comeback",
             "ghost",
             "bet",
-            "elimination"
+            "elimination",
+            "exact"
           ],
           "type": "string"
         },
@@ -2642,7 +2721,12 @@
             "broken_keys",
             "shuffled_keys",
             "perfectionist",
-            "nudge"
+            "nudge",
+            "sniper",
+            "swap",
+            "runaway_keys",
+            "short_circuit",
+            "double_click"
           ],
           "type": "string"
         },
@@ -3157,7 +3241,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -3598,7 +3687,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -3654,7 +3748,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -3710,7 +3809,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -3778,7 +3882,12 @@
                 "broken_keys",
                 "shuffled_keys",
                 "perfectionist",
-                "nudge"
+                "nudge",
+                "sniper",
+                "swap",
+                "runaway_keys",
+                "short_circuit",
+                "double_click"
               ],
               "type": "string"
             },
@@ -4234,7 +4343,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -4404,7 +4518,12 @@
             "broken_keys",
             "shuffled_keys",
             "perfectionist",
-            "nudge"
+            "nudge",
+            "sniper",
+            "swap",
+            "runaway_keys",
+            "short_circuit",
+            "double_click"
           ],
           "type": "string"
         },
@@ -4601,7 +4720,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -4657,7 +4781,12 @@
               "broken_keys",
               "shuffled_keys",
               "perfectionist",
-              "nudge"
+              "nudge",
+              "sniper",
+              "swap",
+              "runaway_keys",
+              "short_circuit",
+              "double_click"
             ],
             "type": "string"
           },
@@ -5005,7 +5134,12 @@
             "broken_keys",
             "shuffled_keys",
             "perfectionist",
-            "nudge"
+            "nudge",
+            "sniper",
+            "swap",
+            "runaway_keys",
+            "short_circuit",
+            "double_click"
           ],
           "type": "string"
         },

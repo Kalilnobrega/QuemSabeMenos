@@ -1,8 +1,16 @@
-import { useEffect, useState, type ReactNode } from 'react'
-import { vibrate } from '../lib/effects'
+import { useEffect, useRef, useState, type PointerEvent, type ReactElement, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
+import { reducedMotion, vibrate } from '../lib/effects'
 import { draftValue, erase, formatDraft, toggleSign, typeComma, typeDigits } from '../lib/guessDraft'
 import { seededShuffle } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
+import { ScratchCard } from './PowerUps'
+
+// O teclado é bem maior que a pergunta: raspado como ela, tomaria os 20 segundos inteiros.
+const KEYPAD_SCRATCH_RADIUS = 22
+const KEYPAD_SCRATCH_REVEAL = 0.75
+const RUNAWAY_SPEED = [50, 110] // px por segundo: dá para pegar, mas não fica parada
+const RUNAWAY_DROP_MARGIN = 14 // px de folga em volta do espaço, para soltar com o dedo
 
 interface Props {
   draft: string
@@ -12,8 +20,12 @@ interface Props {
   compact: boolean // com poderes, os avisos ocupam parte da tela
   hotDigits: string[] // Tecla quente: os algarismos que acendem
   brokenKeys: readonly string[] // Tecla quebrada: parecem normais e racham no primeiro toque
+  doubleKeys: readonly string[] // Duplo clique: parecem normais e digitam duas vezes
   shuffleSeed: number | null // Teclado mentiroso: com semente, as teclas trocam de lugar
   noErase: boolean // Perfeccionista: apagar não funciona
+  covered: boolean // Raspadinha: as teclas só funcionam depois de raspadas
+  shorted: boolean // Curto-circuito: as teclas morrem, e o Chutar ainda envia o que está no visor
+  runaway: boolean // Teclas fugitivas: só funcionam depois de postas de volta no lugar
   onChange: (draft: string) => void
   onSubmit: () => void
 }
@@ -27,13 +39,19 @@ export function EstimateKeypad({
   compact,
   hotDigits,
   brokenKeys,
+  doubleKeys,
   shuffleSeed,
   noErase,
+  covered,
+  shorted,
+  runaway,
   onChange,
   onSubmit,
 }: Props) {
   const ready = !disabled && draftValue(draft) !== null
   const [cracked, setCracked] = useState<string[]>([])
+  const [caught, setCaught] = useState<string[]>([])
+  const slots = useRef(new Map<string, HTMLElement>())
 
   useEffect(() => {
     if (disabled || !physicalKeys) return
@@ -64,6 +82,7 @@ export function EstimateKeypad({
       key={value}
       disabled={disabled}
       compact={compact}
+      shorted={shorted}
       hot={hotDigits.includes(value[0])}
       cracked={cracked.includes(value)}
       onPress={() => {
@@ -73,20 +92,22 @@ export function EstimateKeypad({
           vibrate(80)
           return
         }
-        playSound('keypadPress', value.length)
-        onChange(typeDigits(draft, value))
+        const typed = doubleKeys.includes(value) ? value + value : value
+        playSound('keypadPress', typed.length)
+        onChange(typeDigits(draft, typed))
       }}
     >
       {value}
     </Key>
   )
 
-  const keys = [
+  const keys: ReactElement<KeyProps>[] = [
     ...['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(digit),
     <Key
       key="comma"
       disabled={disabled}
       compact={compact}
+      shorted={shorted}
       label="Vírgula"
       onPress={() => {
         playSound('keypadPress')
@@ -101,6 +122,7 @@ export function EstimateKeypad({
       key="sign"
       disabled={disabled}
       compact={compact}
+      shorted={shorted}
       label="Número negativo"
       pressed={draft.startsWith('-')}
       onPress={() => {
@@ -114,6 +136,7 @@ export function EstimateKeypad({
       key="erase"
       disabled={disabled}
       compact={compact}
+      shorted={shorted}
       label={noErase ? 'Apagar bloqueado' : 'Apagar'}
       wide
       locked={noErase}
@@ -143,9 +166,62 @@ export function EstimateKeypad({
       </output>
 
       {/* dense: a tecla larga pode cair no fim da linha, e o buraco é preenchido pela próxima. */}
-      <div className="grid grid-flow-row-dense grid-cols-3 gap-2">
-        {shuffleSeed === null ? keys : seededShuffle(keys, shuffleSeed)}
-      </div>
+      <ScratchCard
+        active={covered}
+        className={covered ? 'pb-1' : ''}
+        radius={KEYPAD_SCRATCH_RADIUS}
+        revealAt={KEYPAD_SCRATCH_REVEAL}
+      >
+        <div className="grid grid-flow-row-dense grid-cols-3 gap-2">
+          {(shuffleSeed === null ? keys : seededShuffle(keys, shuffleSeed)).map((element) => {
+            const id = String(element.key)
+            if (!runaway || caught.includes(id)) return element
+            const { children, wide } = element.props
+            return (
+              <div
+                key={id}
+                ref={(slot) => {
+                  if (slot) slots.current.set(id, slot)
+                  else slots.current.delete(id)
+                }}
+                className={`flex ${compact ? 'h-10' : 'h-11'} items-center justify-center rounded-xl border-2 border-dashed border-raised-edge font-display text-2xl text-steel select-none ${wide ? 'col-span-2' : ''}`}
+              >
+                {children}
+              </div>
+            )
+          })}
+        </div>
+      </ScratchCard>
+
+      {shorted && (
+        <p className="text-center text-sm font-semibold text-danger" role="status">
+          {draftValue(draft) === null
+            ? 'Curto-circuito! O teclado queimou antes do seu chute.'
+            : 'Curto-circuito! Só dá para chutar o que está no visor.'}
+        </p>
+      )}
+
+      {runaway &&
+        !shorted &&
+        keys
+          .filter((element) => !caught.includes(String(element.key)))
+          .map((element) => {
+            const id = String(element.key)
+            return (
+              <RunawayKey
+                key={id}
+                label={element.props.label ?? String(element.props.children)}
+                hot={element.props.hot}
+                slot={() => slots.current.get(id)}
+                onCatch={() => {
+                  playSound('keypadPress')
+                  setCaught((list) => [...list, id])
+                }}
+              >
+                {element.props.children}
+              </RunawayKey>
+            )
+          })}
 
       <button
         type="button"
@@ -160,21 +236,117 @@ export function EstimateKeypad({
   )
 }
 
-function Key({
+/**
+ * Teclas fugitivas: a tecla sai do espaço dela e fica batendo nas bordas da tela. Segurar para ela,
+ * e soltar em cima do espaço dela a devolve ao teclado; soltar em outro lugar a faz fugir de novo.
+ */
+function RunawayKey({
   children,
-  disabled,
-  compact,
   label,
-  pressed,
-  wide,
   hot,
-  cracked,
-  locked,
-  onPress,
+  slot,
+  onCatch,
 }: {
+  children: ReactNode
+  label: string
+  hot?: boolean
+  slot: () => HTMLElement | undefined
+  onCatch: () => void
+}) {
+  const ref = useRef<HTMLButtonElement>(null)
+  const held = useRef<{ dx: number; dy: number } | null>(null)
+  const motion = useRef({ x: 0, y: 0, vx: 0, vy: 0 })
+
+  const launch = () => {
+    const [low, high] = RUNAWAY_SPEED
+    const speed = reducedMotion() ? 0 : low + Math.random() * (high - low)
+    const angle = Math.random() * Math.PI * 2
+    motion.current.vx = Math.cos(angle) * speed
+    motion.current.vy = Math.sin(angle) * speed
+  }
+  const place = () => {
+    if (ref.current) ref.current.style.transform = `translate(${motion.current.x}px, ${motion.current.y}px)`
+  }
+
+  useEffect(() => {
+    const element = ref.current
+    const home = slot()?.getBoundingClientRect()
+    if (!element || !home) return
+    element.style.width = `${home.width}px`
+    element.style.height = `${home.height}px`
+    motion.current.x = home.left
+    motion.current.y = home.top
+    launch()
+    place()
+    let frame = 0
+    let last = performance.now()
+    const step = (now: number) => {
+      const seconds = Math.min(0.05, (now - last) / 1000)
+      last = now
+      if (!held.current) {
+        const m = motion.current
+        const maxX = window.innerWidth - home.width
+        const maxY = window.innerHeight - home.height
+        m.x += m.vx * seconds
+        m.y += m.vy * seconds
+        if (m.x < 0 || m.x > maxX) m.vx = m.x < 0 ? Math.abs(m.vx) : -Math.abs(m.vx)
+        if (m.y < 0 || m.y > maxY) m.vy = m.y < 0 ? Math.abs(m.vy) : -Math.abs(m.vy)
+        place()
+      }
+      frame = requestAnimationFrame(step)
+    }
+    frame = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(frame)
+    // Só uma vez: a tecla continua voando quando o rascunho do chute muda.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const grab = (event: PointerEvent<HTMLButtonElement>) => {
+    event.currentTarget.setPointerCapture(event.pointerId)
+    held.current = { dx: event.clientX - motion.current.x, dy: event.clientY - motion.current.y }
+  }
+  const drag = (event: PointerEvent<HTMLButtonElement>) => {
+    if (!held.current) return
+    motion.current.x = event.clientX - held.current.dx
+    motion.current.y = event.clientY - held.current.dy
+    place()
+  }
+  const drop = (event: PointerEvent<HTMLButtonElement>) => {
+    if (!held.current) return
+    held.current = null
+    const home = slot()?.getBoundingClientRect()
+    const onHome =
+      home &&
+      event.clientX >= home.left - RUNAWAY_DROP_MARGIN &&
+      event.clientX <= home.right + RUNAWAY_DROP_MARGIN &&
+      event.clientY >= home.top - RUNAWAY_DROP_MARGIN &&
+      event.clientY <= home.bottom + RUNAWAY_DROP_MARGIN
+    if (onHome) onCatch()
+    else launch()
+  }
+
+  return createPortal(
+    <button
+      ref={ref}
+      type="button"
+      aria-label={`Pegar a tecla ${label}`}
+      onPointerDown={grab}
+      onPointerMove={drag}
+      onPointerUp={drop}
+      onPointerCancel={drop}
+      className={`btn-3d btn-sm fixed top-0 left-0 z-40 cursor-grab touch-none rounded-xl font-display text-2xl select-none ${hot ? 'btn-brand text-ink' : 'btn-dark text-chalk'}`}
+    >
+      {children}
+    </button>,
+    document.body,
+  )
+}
+
+interface KeyProps {
   children: ReactNode
   disabled: boolean
   compact: boolean
+  shorted: boolean
   label?: string
   pressed?: boolean
   wide?: boolean
@@ -182,13 +354,15 @@ function Key({
   cracked?: boolean // Tecla quebrada: já rachou, não digita mais
   locked?: boolean // Perfeccionista: bloqueada desde o início
   onPress: () => void
-}) {
+}
+
+function Key({ children, disabled, compact, shorted, label, pressed, wide, hot, cracked, locked, onPress }: KeyProps) {
   const dead = cracked || locked
   const tone = pressed ? 'btn-brand is-pressed text-ink' : hot ? 'btn-brand text-ink' : 'btn-dark text-chalk'
   return (
     <button
       type="button"
-      disabled={disabled}
+      disabled={disabled || shorted}
       aria-label={cracked ? `${children} quebrada` : label}
       aria-pressed={pressed}
       // O foco fica fora da tecla, para o Enter chutar em vez de repetir o último toque.
@@ -201,7 +375,7 @@ function Key({
             }
           : onPress
       }
-      className={`btn-3d btn-sm ${compact ? 'h-10' : 'h-11'} touch-manipulation rounded-xl font-display text-2xl select-none ${wide ? 'col-span-2' : ''} ${tone} ${cracked ? 'key-crack relative overflow-hidden' : ''} ${locked ? 'line-through opacity-40' : ''}`}
+      className={`btn-3d btn-sm ${compact ? 'h-10' : 'h-11'} touch-manipulation rounded-xl font-display text-2xl select-none ${wide ? 'col-span-2' : ''} ${tone} ${cracked ? 'key-crack relative overflow-hidden' : ''} ${locked ? 'line-through opacity-40' : ''} ${shorted ? 'key-short opacity-25' : ''}`}
     >
       <span className={cracked ? 'opacity-50' : ''}>{children}</span>
       {cracked && <Crack flip={String(children).length % 2 === 0 || Number(children) % 2 === 0} />}

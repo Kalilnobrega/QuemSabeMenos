@@ -430,6 +430,59 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'sniper') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <circle cx="12" cy="12" r="8" fill="var(--color-chalk)" {...ICON_STROKE} />
+        <circle cx="12" cy="12" r="3" fill="#EF4444" {...ICON_STROKE} />
+        <path d="M12 1.5V7M12 17v5.5M1.5 12H7M17 12h5.5" fill="none" {...ICON_STROKE} strokeWidth={2.2} />
+      </svg>
+    )
+  }
+  if (kind === 'swap') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <circle cx="5.5" cy="12" r="3.5" fill="#FBBF24" {...ICON_STROKE} />
+        <circle cx="18.5" cy="12" r="3.5" fill="#2DD4BF" {...ICON_STROKE} />
+        <path d="M6 6.5C8.5 3 15.5 3 18 6.5m0-3.2v3.2h-3.2" fill="none" {...ICON_STROKE} strokeWidth={2} />
+        <path d="M18 17.5c-2.5 3.5-9.5 3.5-12 0m0 3.2v-3.2h3.2" fill="none" {...ICON_STROKE} strokeWidth={2} />
+      </svg>
+    )
+  }
+  if (kind === 'runaway_keys') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path
+          d="M6.5 9C4 5.5 2 5 1 5.5c0 3 1.5 5.5 5 6.5ZM17.5 9C20 5.5 22 5 23 5.5c0 3-1.5 5.5-5 6.5Z"
+          fill="#A5B4FC"
+          {...ICON_STROKE}
+        />
+        <rect x="6" y="6" width="12" height="13" rx="3" fill="var(--color-chalk)" {...ICON_STROKE} />
+        <text x="12" y="16.2" textAnchor="middle" fontSize="9" fontWeight="900" fill="var(--color-ink)">
+          7
+        </text>
+      </svg>
+    )
+  }
+  if (kind === 'double_click') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="7.5" y="2" width="14" height="14" rx="3" fill="#F0ABFC" {...ICON_STROKE} />
+        <rect x="2.5" y="8" width="14" height="14" rx="3" fill="var(--color-chalk)" {...ICON_STROKE} />
+        <text x="9.5" y="18.8" textAnchor="middle" fontSize="10" fontWeight="900" fill="var(--color-ink)">
+          2
+        </text>
+      </svg>
+    )
+  }
+  if (kind === 'short_circuit') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="2.5" y="4.5" width="19" height="15" rx="3.5" fill="var(--color-raised-edge)" {...ICON_STROKE} />
+        <path d="M13.5 1.5 7 13h4.5l-1 9.5L17.5 10.5H13l.5-9Z" fill="#FDE047" {...ICON_STROKE} />
+      </svg>
+    )
+  }
   if (kind === 'flashbang') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -744,10 +797,14 @@ const SCRATCH_REVEAL = 0.9 // fração raspada que tira a cobertura
 export function ScratchCard({
   active,
   className = '',
+  radius = SCRATCH_RADIUS,
+  revealAt = SCRATCH_REVEAL,
   children,
 }: {
   active: boolean
   className?: string
+  radius?: number // áreas grandes raspam com um traço mais largo
+  revealAt?: number
   children: ReactNode
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -795,13 +852,13 @@ export function ScratchCard({
     const ctx = canvas.getContext('2d')!
     ctx.globalCompositeOperation = 'destination-out'
     ctx.lineCap = 'round'
-    ctx.lineWidth = SCRATCH_RADIUS * 2
+    ctx.lineWidth = radius * 2
     ctx.beginPath()
     ctx.moveTo(last.current?.x ?? point.x, last.current?.y ?? point.y)
     ctx.lineTo(point.x, point.y)
     ctx.stroke()
     last.current = point
-    if (++moves.current % 6 === 0 && clearedFraction(canvas) >= SCRATCH_REVEAL) {
+    if (++moves.current % 6 === 0 && clearedFraction(canvas) >= revealAt) {
       playSound('select')
       setRevealed(true)
     }
@@ -1291,7 +1348,7 @@ export function PowerUpBar({
                 ? LEGENDARY_TOLL_HINT
                 : selected.kind === 'decoy'
                   ? LEGENDARY_DECOY_HINT
-                  : `${info.hint} ${LEGENDARY_HINT}`}
+                  : `${hint(selected.kind)} ${LEGENDARY_HINT}`}
           </span>
         </p>
         <div className="flex gap-2">

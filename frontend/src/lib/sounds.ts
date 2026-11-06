@@ -24,6 +24,7 @@ export const SOUND_ENABLED = {
   keypadErase: true,
   keyCrack: true,
   keyDead: true,
+  keyShort: true,
   urgentTick: true,
   timeUp: true,
   correct: true,
@@ -96,6 +97,7 @@ export const SOUND_INFO: Record<SoundId, { name: string; moment: string; group: 
   keypadErase: { group: 'Pergunta', name: 'Caneta polida, mais grave', moment: 'Você apaga no teclado do Chutômetro' },
   keyCrack: { group: 'Poderes', name: 'Rachadura correndo', moment: 'Uma tecla racha na Tecla quebrada' },
   keyDead: { group: 'Poderes', name: 'Chacoalhar', moment: 'Você toca numa tecla já rachada' },
+  keyShort: { group: 'Poderes', name: 'Zumbido com faíscas', moment: 'Seu teclado queima no Curto-circuito' },
   urgentTick: {
     group: 'Pergunta',
     name: 'Tique-taque acelerando',
@@ -382,6 +384,12 @@ const SYNTHS: Record<SoundId, (arg?: number) => void> = {
   },
   // Os pedaços batendo dentro da tecla já rachada.
   keyDead: () => crackle(3, 0.07, 1600, 3200, 0.3),
+  // Curto-circuito: um zumbido elétrico rápido, cheio de faíscas.
+  keyShort: () => {
+    tone(120, { dur: 0.2, type: 'square', gain: 0.07, lowpass: 1800 })
+    tone(182, { at: 0.02, dur: 0.16, type: 'sawtooth', gain: 0.05, lowpass: 2400 })
+    crackle(9, 0.2, 3000, 7000, 0.22)
+  },
   // arg: segundos que faltam (3, 2 ou 1); o tique-taque acelera perto do fim.
   urgentTick: (secondsLeft = 3) => {
     const ticks = secondsLeft >= 3 ? 1 : secondsLeft === 2 ? 2 : 4
