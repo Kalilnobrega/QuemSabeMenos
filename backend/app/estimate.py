@@ -852,6 +852,16 @@ class Estimate(Revealed):
     def _longest_window(self) -> float:
         return MATH_SECONDS if self.math_puzzles else ANSWER_SECONDS
 
+    def _boosted_gain(self, player_id: str, points: int) -> int:
+        """Segunda chance e Sniper só mexem no ganho."""
+        if points <= 0:
+            return points
+        if self.first_guesses.get(player_id) and player_id in self.guesses:
+            points = int(points * pw.SECOND_CHANCE_SHARE)
+        if self._affects("sniper", player_id):
+            points *= SNIPER_FACTOR
+        return points
+
     def _close(self, now: float, players: list[Scorable]) -> None:
         q = self.question
         self.results = []
@@ -875,15 +885,13 @@ class Estimate(Revealed):
             delta = guess_points(scored, q.difficulty, self.point_scale)
             if error == 0 and not copy:
                 exact_guesses.add(player.id)
-            if delta > 0:
-                if not copy:  # o acerto foi de outro: não vale para a sequência
-                    earned.add(player.id)
-                if first and retried:
-                    delta = int(delta * pw.SECOND_CHANCE_SHARE)
-                if self._affects("sniper", player.id):
-                    delta *= SNIPER_FACTOR
+            if delta > 0 and not copy:  # o acerto foi de outro: não vale para a sequência
+                earned.add(player.id)
+            delta = self._boosted_gain(player.id, delta)
             doubled = self._affects("double", player.id)
-            if doubled:
+            if doubled and error == 0:  # o bônus de cravar conta uma vez só
+                delta += self._boosted_gain(player.id, _round(SCORING[q.difficulty].max_points * self.point_scale))
+            elif doubled:
                 hard_loss = delta < 0 and q.difficulty == "hard"
                 delta *= pw.DOUBLE_HARD_LOSS_FACTOR if hard_loss else pw.DOUBLE_FACTOR
             shielded = -delta if delta < 0 and self._affects("shield", player.id) else 0

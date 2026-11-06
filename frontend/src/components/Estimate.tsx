@@ -505,7 +505,12 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
       note(`${kind}-expired`, kind, `${POWERUP_INFO[kind].name} quebrou`, 'Acabou sem ser usado')
     }
     if (guess.doubled) {
-      note('double', 'double', 'Dobro!', guess.delta > 0 ? 'O ganho valeu o dobro' : 'A perda pesou mais', guess.delta)
+      const outcome = guess.exact
+        ? 'O ganho dobrou, mas o bônus de cravar não'
+        : guess.delta > 0
+          ? 'O ganho valeu o dobro'
+          : 'A perda pesou mais'
+      note('double', 'double', 'Dobro!', outcome, guess.delta)
     }
     if (guess.first_value !== null) {
       note(

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { useFlashbang, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
-import { POTATO_HINTS, POWERUP_INFO, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
+import { POTATO_HINTS, POWERUP_INFO, gainParts, gainTone, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
@@ -578,7 +578,7 @@ function PotatoPowers({
 }) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
-  const [gift, setGift] = useState<{ text: string; mythic: boolean } | null>(null)
+  const [gifts, setGifts] = useState<BannerItem[]>([])
   const [choosing, setChoosing] = useState<{ kind: Kind; potatoes: PotatoView[] } | null>(null)
   const [hinting, setHinting] = useState<PotatoView | null>(null)
   const timer = useRef<number | undefined>(undefined)
@@ -592,12 +592,18 @@ function PotatoPowers({
   useEffect(() => {
     if (!giftKey) return
     playSound('powerArm')
-    setGift({
-      text: myGifts.map((g) => `Você ${gainLabel(g.gain)}`).join(' '),
-      mythic: myGifts.some((g) => g.gain.mythic),
-    })
+    setGifts(
+      myGifts.map(({ gain }, i) => ({
+        key: `${game.round}-${gain.kind}-${i}`,
+        icon: <PowerUpIcon kind={gain.kind} className="size-full" />,
+        who: 'Você',
+        ...gainParts(gain),
+        tone: gainTone(gain),
+        me: true,
+      })),
+    )
     window.clearTimeout(timer.current)
-    timer.current = window.setTimeout(() => setGift(null), 3500)
+    timer.current = window.setTimeout(() => setGifts([]), 3500)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [giftKey, game.round])
   useEffect(() => () => window.clearTimeout(timer.current), [])
@@ -650,11 +656,7 @@ function PotatoPowers({
       : 'Sabotagens pegam quem está com a batata, nesta pergunta.'
   return (
     <div className="flex flex-col gap-1.5 rounded-xl bg-panel px-3 py-2.5">
-      {gift && (
-        <p className={`avatar-pop text-sm font-semibold ${gift.mythic ? 'mythic rounded-xl px-3 py-1' : 'text-brand'}`}>
-          {gift.text}
-        </p>
-      )}
+      <BannerList items={gifts} startDelay={0} label="Poderes que você ganhou" />
       {hinting ? (
         <div className="flex flex-col gap-2">
           <p className="flex items-center gap-2 text-sm font-semibold">

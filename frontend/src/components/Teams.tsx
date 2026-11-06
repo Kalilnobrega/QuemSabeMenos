@@ -4,7 +4,7 @@ import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
 import { useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
-import { POWERUP_INFO, TEAM_HINTS, gainLabel, scrambleWords, type Kind } from '../lib/powerups'
+import { POWERUP_INFO, TEAM_HINTS, gainParts, gainTone, scrambleWords, type Kind } from '../lib/powerups'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { Snapshot } from '../lib/useRoom'
@@ -973,78 +973,90 @@ function TeamResults({
   players: PlayerView[]
   playerId: string | null
 }) {
+  const gains: BannerItem[] = match.teams.flatMap((team) =>
+    team.gained
+      ? [
+          {
+            key: `${team.id}-gain`,
+            icon: <PowerUpIcon kind={team.gained.kind} className="size-full" />,
+            who: team.id === match.my_team ? 'Seu time' : teamName(team.id),
+            ...gainParts(team.gained),
+            tone: gainTone(team.gained),
+            me: team.id === match.my_team,
+          },
+        ]
+      : [],
+  )
   return (
-    <ul className="flex flex-col gap-2">
-      {match.teams.map((team, index) => {
-        const total =
-          team.delta +
-          team.captain_delta +
-          team.harmony_delta +
-          team.bet_delta +
-          team.stolen -
-          team.robbed +
-          team.toll_received -
-          team.tolled +
-          team.tricked
-        const captain = playerOf(players, team.captain)
-        const rep = playerOf(players, team.representative)
-        const name = (p: PlayerView | undefined) => (p?.id === playerId ? 'você' : (p?.nickname ?? '?'))
-        return (
-          <li
-            key={team.id}
-            className={`avatar-pop flex flex-col gap-1 rounded-xl px-3 py-2 ${TEAMS[team.id].bg} ${team.id === match.my_team ? `ring-1 ${TEAMS[team.id].ring}` : ''}`}
-            style={{ animationDelay: `${index * 0.12}s` }}
-          >
-            <span className="flex items-center gap-2">
-              <span className={`font-display text-lg ${TEAMS[team.id].text}`}>{teamName(team.id)}</span>
-              <span
-                className={`rounded-md px-1.5 font-display ${team.correct ? 'bg-success-strong text-white' : team.option === null ? 'bg-panel text-steel' : 'bg-danger-strong text-white'}`}
-              >
-                {LETTER(team.option)}
+    <div className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-2">
+        {match.teams.map((team, index) => {
+          const total =
+            team.delta +
+            team.captain_delta +
+            team.harmony_delta +
+            team.bet_delta +
+            team.stolen -
+            team.robbed +
+            team.toll_received -
+            team.tolled +
+            team.tricked
+          const captain = playerOf(players, team.captain)
+          const rep = playerOf(players, team.representative)
+          const name = (p: PlayerView | undefined) => (p?.id === playerId ? 'você' : (p?.nickname ?? '?'))
+          return (
+            <li
+              key={team.id}
+              className={`avatar-pop flex flex-col gap-1 rounded-xl px-3 py-2 ${TEAMS[team.id].bg} ${team.id === match.my_team ? `ring-1 ${TEAMS[team.id].ring}` : ''}`}
+              style={{ animationDelay: `${index * 0.12}s` }}
+            >
+              <span className="flex items-center gap-2">
+                <span className={`font-display text-lg ${TEAMS[team.id].text}`}>{teamName(team.id)}</span>
+                <span
+                  className={`rounded-md px-1.5 font-display ${team.correct ? 'bg-success-strong text-white' : team.option === null ? 'bg-panel text-steel' : 'bg-danger-strong text-white'}`}
+                >
+                  {LETTER(team.option)}
+                </span>
+                <span className="flex-1" />
+                <span
+                  className={`font-display text-xl ${total > 0 ? 'text-success' : total < 0 ? 'text-danger' : 'text-steel'}`}
+                >
+                  {formatDelta(total)}
+                </span>
               </span>
-              <span className="flex-1" />
-              <span
-                className={`font-display text-xl ${total > 0 ? 'text-success' : total < 0 ? 'text-danger' : 'text-steel'}`}
-              >
-                {formatDelta(total)}
-              </span>
-            </span>
-            <span className="flex flex-wrap gap-x-3 text-sm text-steel">
-              <span>
-                {team.option === null ? 'Sem resposta' : team.correct ? 'Acertou' : 'Errou'} {formatDelta(team.delta)}
-              </span>
-              {team.captain_delta !== 0 && (
+              <span className="flex flex-wrap gap-x-3 text-sm text-steel">
                 <span>
-                  Capitão {name(captain)} {formatDelta(team.captain_delta)}
+                  {team.option === null ? 'Sem resposta' : team.correct ? 'Acertou' : 'Errou'} {formatDelta(team.delta)}
                 </span>
-              )}
-              {team.harmony_delta > 0 && <span className="text-success">Sintonia! +{team.harmony_delta}</span>}
-              {match.solo && rep && <span>Foi {name(rep)}</span>}
-              {team.doubled && <span>Dobro</span>}
-              {team.second_chance && <span>Segunda chance (metade)</span>}
-              {team.shielded > 0 && <span className="text-sky-300">Escudo segurou {team.shielded}</span>}
-              {team.decoy_pick && <span className="text-purple-300">Caiu na falsa</span>}
-              {team.stolen > 0 && <span className="text-success">Roubou {team.stolen}</span>}
-              {team.robbed > 0 && <span className="text-danger">Roubado −{team.robbed}</span>}
-              {team.toll_received > 0 && <span className="text-success">Pedágio +{team.toll_received}</span>}
-              {team.tolled > 0 && <span className="text-danger">Pedágio −{team.tolled}</span>}
-              {team.tricked > 0 && <span className="text-success">Falsa +{team.tricked}</span>}
-              {team.tax !== 0 && <span>Imposto {formatDelta(team.tax)}</span>}
-              {team.gained && (
-                <span className={team.gained.mythic ? 'mythic rounded-md px-1.5' : 'text-brand'}>
-                  Time {gainLabel(team.gained)}
-                </span>
-              )}
-              {team.bet ? (
-                <span>
-                  Aposta {team.bet}: {formatDelta(team.bet_delta)}
-                </span>
-              ) : null}
-            </span>
-          </li>
-        )
-      })}
-    </ul>
+                {team.captain_delta !== 0 && (
+                  <span>
+                    Capitão {name(captain)} {formatDelta(team.captain_delta)}
+                  </span>
+                )}
+                {team.harmony_delta > 0 && <span className="text-success">Sintonia! +{team.harmony_delta}</span>}
+                {match.solo && rep && <span>Foi {name(rep)}</span>}
+                {team.doubled && <span>Dobro</span>}
+                {team.second_chance && <span>Segunda chance (metade)</span>}
+                {team.shielded > 0 && <span className="text-sky-300">Escudo segurou {team.shielded}</span>}
+                {team.decoy_pick && <span className="text-purple-300">Caiu na falsa</span>}
+                {team.stolen > 0 && <span className="text-success">Roubou {team.stolen}</span>}
+                {team.robbed > 0 && <span className="text-danger">Roubado −{team.robbed}</span>}
+                {team.toll_received > 0 && <span className="text-success">Pedágio +{team.toll_received}</span>}
+                {team.tolled > 0 && <span className="text-danger">Pedágio −{team.tolled}</span>}
+                {team.tricked > 0 && <span className="text-success">Falsa +{team.tricked}</span>}
+                {team.tax !== 0 && <span>Imposto {formatDelta(team.tax)}</span>}
+                {team.bet ? (
+                  <span>
+                    Aposta {team.bet}: {formatDelta(team.bet_delta)}
+                  </span>
+                ) : null}
+              </span>
+            </li>
+          )
+        })}
+      </ul>
+      <BannerList items={gains} label="Poderes que os times ganharam" />
+    </div>
   )
 }
 

@@ -403,7 +403,8 @@ export const POTATO_HINTS: Partial<Record<Kind, string>> = {
 /** Chutômetro: não tem alternativas, e "acertar" é ganhar QI com o chute. */
 export const ESTIMATE_HINTS: Partial<Record<Kind, string>> = {
   shield: 'Vale por até 2 perguntas: no primeiro chute que perderia QI, não perde. Se não precisar, quebra.',
-  double: 'A próxima vale o dobro, para o bem e para o mal (na difícil, a perda é o triplo).',
+  double:
+    'A próxima vale o dobro, para o bem e para o mal (na difícil, a perda é o triplo). O bônus de cravar não dobra.',
   second_chance:
     'Vale nas próximas 2 perguntas: se o chute perder QI, você descobre se a resposta é mais alta ou mais baixa e chuta de novo, valendo metade.',
   steal: 'Na próxima, você tira 10 de QI do alvo e, se ele ganhar QI, mais metade do que ganhar.',
@@ -454,10 +455,9 @@ export function gainParts(gain: PowerUpGain) {
   return { title: `Ganhou ${name}`, detail: reason.charAt(0).toUpperCase() + reason.slice(1) }
 }
 
-export function gainLabel(gain: PowerUpGain) {
-  const info = POWERUP_INFO[gain.kind]
-  const name = gain.mythic ? `${info.name} MÍTICO` : gain.legendary ? `${info.name} LENDÁRIO` : info.name
-  return `ganhou ${name} (${GAIN_REASON[gain.reason]})!`
+/** A cor do banner: a raridade manda sobre a cor do poder. */
+export function gainTone(gain: PowerUpGain) {
+  return gain.mythic ? 'mythic' : gain.legendary ? 'legendary' : POWERUP_INFO[gain.kind].tone
 }
 
 export const LEGENDARY_HINT = 'Lendário: vale em todos os outros jogadores de uma vez, e o Reverso não segura.'

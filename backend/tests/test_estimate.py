@@ -207,6 +207,16 @@ def test_double_triples_the_loss_on_hard_questions():
     assert result(game, "a").delta == -30
 
 
+@pytest.mark.parametrize(("difficulty", "points"), [("easy", 20), ("medium", 40), ("hard", 60)])
+def test_double_does_not_double_the_exact_bonus(difficulty, points):
+    a = P("a")
+    game = powered(difficulty=difficulty)
+    ask(game, [a], a=100)
+    give(game, "a", "double", ids=("a",))
+    ask(game, [a], a=100)
+    assert result(game, "a").delta == points and result(game, "a").doubled
+
+
 def test_shield_holds_one_loss_and_then_ends():
     a, b = P("a"), P("b")
     game = powered()
