@@ -8,7 +8,7 @@ function ticks(from: number, to: number, wanted = 5) {
   const power = 10 ** Math.floor(Math.log10(raw))
   const step = [1, 2, 5, 10].map((m) => m * power).find((m) => m >= raw) ?? raw
   const major: number[] = []
-  for (let v = Math.ceil(from / step) * step; v <= to; v += step) major.push(Math.round(v * 1e6) / 1e6)
+  for (let v = Math.ceil(from / step) * step; v <= to; v += step) major.push(Math.round(v * 1e6) / 1e6 + 0) // + 0: sem "-0" na marcação
   return { major, minor: step / 5 }
 }
 
