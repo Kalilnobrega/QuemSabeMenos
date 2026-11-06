@@ -29,6 +29,60 @@
   --text-tag: 0.65rem; /* as etiquetas em caixa alta */
 }
 
+/* O ritmo do jogo (o Elástico, escolhido na página de demonstração): tudo chega com um pouco de mola.
+   As cenas especiais (X1, Adaga, Ressurreição…) têm o tempo próprio, de propósito. */
+:root {
+  --dur-press: 50ms;
+  --dur-release: 240ms;
+  --dur-pick: 260ms;
+  --dur-exit: 120ms;
+  --dur-enter: 320ms;
+  --stagger: 45ms;
+  --ease-settle: cubic-bezier(0.2, 0, 0, 1);
+  --ease-spring: cubic-bezier(0.3, 1.45, 0.5, 1);
+  --ease-bounce: cubic-bezier(0.3, 1.9, 0.5, 1);
+}
+
+/* A troca de tela: a antiga sai rápido e a nova entra com mola. O fundo fica parado, e os toques passam
+   direto para a tela nova, porque durante a pergunta o tempo vale ponto. */
+.screen-changing main {
+  view-transition-name: screen;
+}
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-group(root),
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-old(root) {
+  display: none;
+}
+::view-transition-group(screen) {
+  animation: none;
+}
+::view-transition-image-pair(screen) {
+  isolation: auto;
+}
+::view-transition-old(screen) {
+  animation: screen-out var(--dur-exit) ease-in both;
+}
+::view-transition-new(screen) {
+  animation: screen-in var(--dur-enter) var(--ease-spring) both;
+}
+@keyframes screen-out {
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+@keyframes screen-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+}
+
 body {
   @apply bg-ink text-chalk font-sans antialiased;
   /* Rabiscos discretos (?, X, coroa) da identidade visual. */
@@ -228,10 +282,13 @@ body {
 .btn-3d {
   --btn-depth: 6px;
   box-shadow: 0 var(--btn-depth) 0 var(--btn-base, var(--color-raised-edge));
+  /* Ao soltar, o botão volta com mola; ao apertar, a regra de :active encurta o tempo. */
   transition:
-    translate 80ms ease-out,
-    box-shadow 80ms ease-out,
-    background-color 150ms,
+    translate var(--dur-release) var(--ease-bounce),
+    box-shadow var(--dur-release) var(--ease-bounce),
+    background-color var(--dur-pick) var(--ease-settle),
+    opacity var(--dur-pick) var(--ease-settle),
+    outline-color var(--dur-pick) var(--ease-settle),
     filter 150ms;
 }
 .btn-sm {
@@ -244,6 +301,8 @@ body {
 .btn-3d.is-pressed {
   translate: 0 calc(var(--btn-depth) - 1px);
   box-shadow: 0 1px 0 var(--btn-base, var(--color-raised-edge));
+  transition-duration: var(--dur-press), var(--dur-press), var(--dur-pick), var(--dur-pick), var(--dur-pick), 150ms;
+  transition-timing-function: ease-out, ease-out, var(--ease-settle), var(--ease-settle), var(--ease-settle), ease;
 }
 .btn-brand {
   background-color: var(--color-brand);
@@ -269,25 +328,25 @@ body {
 /* Entrada da rodada: cabeçalho e cronômetro ficam parados; o selo de dificuldade dá um pop,
    a pergunta sobe de leve e as alternativas vêm em cascata. */
 .round-chip {
-  animation: chip-pop 0.5s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+  animation: chip-pop var(--dur-enter) var(--ease-bounce) both;
 }
 .round-question {
-  animation: rise 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation: rise var(--dur-enter) var(--ease-spring) both;
 }
 .round-option {
-  animation: rise 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation: rise var(--dur-enter) var(--ease-spring) both;
 }
 .timer-urgent {
   animation: timer-pulse 1s ease-out;
 }
 .reveal-pop {
-  animation: reveal-pop 0.5s cubic-bezier(0.2, 1.6, 0.4, 1);
+  animation: reveal-pop 420ms var(--ease-bounce);
 }
 .reveal-shake {
   animation: reveal-shake 0.5s ease-in-out;
 }
 .settings-sheet {
-  animation: sheet-up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation: sheet-up var(--dur-enter) var(--ease-spring) both;
 }
 @keyframes sheet-up {
   from {
@@ -296,7 +355,7 @@ body {
   }
 }
 .podium-card {
-  animation: card-enter 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation: card-enter 420ms var(--ease-spring) both;
 }
 .confetti {
   position: absolute;
@@ -315,8 +374,8 @@ body {
 /* Começa em 25% de opacidade (não 0): se a animação não rodar, o conteúdo continua legível. */
 @keyframes rise {
   from {
-    opacity: 0.25;
-    transform: translateY(14px);
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
   }
 }
 @keyframes chip-pop {

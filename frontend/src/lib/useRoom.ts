@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import type { ArmPowerUpRequest, ErrorAck, JoinedAck, OkAck, RoomState, UpdateSettingsRequest } from '../types/events'
+import { changeScreen, screenKey } from './screenTransition'
 import { socket } from './socket'
 import { loadProfile, loadSession, saveProfile, saveSession, type Profile } from './storage'
 
@@ -33,8 +34,14 @@ export function useRoom() {
   const [playerId, setPlayerId] = useState<string | null>(null)
   const [rejoining, setRejoining] = useState(() => loadSession() !== null)
 
+  const latest = useRef<Snapshot | null>(null)
+
   const setRoom = useCallback((room: RoomState | null) => {
-    setSnapshot(room ? { room, receivedAt: performance.now() } : null)
+    const changed = screenKey(room) !== screenKey(latest.current?.room ?? null)
+    latest.current = room ? { room, receivedAt: performance.now() } : null
+    // A troca só acontece no quadro seguinte: até lá pode chegar outro estado, e vale sempre o último.
+    if (changed) changeScreen(() => setSnapshot(latest.current))
+    else setSnapshot(latest.current)
   }, [])
 
   const enter = useCallback(

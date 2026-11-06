@@ -1049,7 +1049,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
               <button
                 onClick={() => pick(index)}
                 disabled={!canAnswer || game.hidden_options.includes(index) || index === retry}
-                style={{ animationDelay: `${0.12 + index * 0.06}s` }}
+                style={{ animationDelay: `calc(80ms + ${index} * var(--stagger))` }}
                 className={`round-option btn-3d btn-sm relative flex min-h-14 w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-base leading-tight font-semibold ${optionClass(index)}`}
               >
                 <span className="shrink-0 font-display text-xl text-brand">{LETTERS[index]}</span>

@@ -10,6 +10,7 @@ import { ProfileForm } from './components/ProfileForm'
 import { playSound } from './lib/sounds'
 import { SoundToggle } from './components/SoundToggle'
 import { loadSession, saveSession } from './lib/storage'
+import { changeScreen } from './lib/screenTransition'
 import { useRoom } from './lib/useRoom'
 
 type Screen = { name: 'home' } | { name: 'create' } | { name: 'join'; code: string }
@@ -79,6 +80,7 @@ export default function App() {
   } = useRoom()
   const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
+  const go = (next: Screen) => changeScreen(() => setScreen(next))
 
   useEffect(() => {
     if (room) setUrl(`/sala/${room.code}`)
@@ -189,7 +191,7 @@ export default function App() {
           <button
             onClick={() => {
               playSound('click')
-              setScreen({ name: 'create' })
+              go({ name: 'create' })
             }}
             className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
           >
@@ -201,7 +203,7 @@ export default function App() {
           <button
             onClick={() => {
               playSound('click')
-              setScreen({ name: 'join', code: '' })
+              go({ name: 'join', code: '' })
             }}
             className="btn-3d btn-dark rounded-xl py-4 font-display text-2xl tracking-wide"
           >
@@ -220,7 +222,7 @@ export default function App() {
         mode={screen.name}
         initialCode={screen.name === 'join' ? screen.code : undefined}
         disabled={!connected}
-        onBack={() => setScreen({ name: 'home' })}
+        onBack={() => go({ name: 'home' })}
         onSubmit={(profile, code) => (screen.name === 'create' ? create(profile) : join(code, profile))}
       />
     )
