@@ -308,6 +308,37 @@ class Revival(BaseModel):
     after: int
 
 
+class MatchAward(BaseModel):
+    """Um prêmio do fim da partida: de um jogador ou de um time. `amount` depende do prêmio: uma contagem,
+    um recorde, QI, % de erro, segundos ou, em comeback, a posição final."""
+
+    kind: Literal[
+        # Em mais de um modo.
+        "comeback", "fall", "villain", "punching_bag", "thief", "quick_answer", "hot", "cold",
+        # Chutômetro.
+        "absurd", "sharp", "exact", "quick_guess", "gain_streak", "loss_streak", "way_off",
+        # Clássico e Especialista.
+        "rash", "last_second", "bettor", "bet_bust", "duel_king", "decoy_fall", "theme_owner", "theme_flop",
+        # Último de pé.
+        "by_a_thread", "first_fall", "free_fall", "hider", "assassin", "stabbed", "life_thief", "cursed", "pact",
+        # Batata quente.
+        "first_blast", "close_call", "lap_potato", "butterfingers", "quick_pass", "choked", "free_pass",
+        "shield_saved", "ghost",
+        # Times.
+        "captain_gold", "captain_pirate", "unheard", "contrarian", "with_the_crowd", "rep_gold", "no_vote",
+        "quick_vote", "gagged", "infiltrator", "team_harmony", "team_thief", "team_bag",
+    ]  # fmt: skip
+    amount: float
+    player_id: str | None = None
+    team: int | None = None
+    total: int | None = None  # de quantas (4 de 5)
+    theme: str | None = None  # theme_owner, theme_flop
+    guess: float | None = None  # absurd: o chute
+    answer: float | None = None  # absurd: a resposta
+    unit: str | None = None  # absurd: a unidade da pergunta
+    from_place: int | None = None  # comeback: a posição na metade da partida
+
+
 class RoundResult(BaseModel):
     player_id: str
     option: int | None  # None = não respondeu
@@ -440,6 +471,7 @@ class GameView(BaseModel):
     correct_option: int | None  # só aparece em results
     fact: str | None
     results: list[RoundResult]
+    awards: list[MatchAward]  # só no fim da partida
 
 
 class SurvivalPick(BaseModel):
@@ -543,6 +575,7 @@ class SurvivalView(BaseModel):
     hiding: bool  # Esconderijo: você pula esta pergunta
     blessing: int | None  # Bênção: a alternativa certa, só para você
     gifts: list[Gift]  # poderes ganhos nesta revelação
+    awards: list[MatchAward]  # só no fim da partida
 
 
 class HotPotatoTurn(BaseModel):
@@ -622,6 +655,7 @@ class HotPotatoView(BaseModel):
     shielded: list[str]  # quem está com o Escudo armado
     gifts: list[Gift]  # poderes ganhos agora (no acerto ou na explosão)
     revived: list[str]  # quem ressuscitou desde a última pergunta
+    awards: list[MatchAward]  # só no fim da partida
 
 
 class TeamVote(BaseModel):
@@ -753,6 +787,7 @@ class TeamMatchView(BaseModel):
     peeking: int | None  # Espiar: o time cujos votos você está vendo
     duel: DuelView | None
     duel_teams: list[int]  # os dois times do X1
+    awards: list[MatchAward]  # só no fim da partida
 
 
 class EstimateGuess(BaseModel):
@@ -779,19 +814,6 @@ class EstimateGuess(BaseModel):
     def total(self) -> int:
         """Quanto o QI muda nesta pergunta."""
         return self.delta + self.stolen - self.robbed + self.last_word
-
-
-class EstimateAward(BaseModel):
-    """Um prêmio do fim da partida. `amount` depende do prêmio: % de erro (absurd, sharp), segundos (quick),
-    QI (fall, thief), vezes (exact, villain, punching_bag) ou a posição final (comeback)."""
-
-    kind: Literal["absurd", "sharp", "exact", "quick", "comeback", "fall", "villain", "punching_bag", "thief"]
-    player_id: str
-    amount: float
-    guess: float | None = None  # absurd: o chute
-    answer: float | None = None  # absurd: a resposta
-    unit: str | None = None  # absurd: a unidade da pergunta
-    from_place: int | None = None  # comeback: a posição na metade da partida
 
 
 class MathKey(BaseModel):
@@ -898,7 +920,7 @@ class EstimateView(BaseModel):
     silenced_rounds: int
     theme_choices: list[str]
     powers_round: bool
-    awards: list[EstimateAward]  # só no fim da partida
+    awards: list[MatchAward]  # só no fim da partida
 
 
 class RoomState(BaseModel):

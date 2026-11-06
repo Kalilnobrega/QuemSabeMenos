@@ -10,6 +10,7 @@ import type { Bonus, DuelView, GameView, PlayerView, PowerUpUse, RoomState, Roun
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 import { AnsweredAvatar, AnsweredRow } from './Answered'
 import { ResurrectionScene } from './ResurrectionScene'
+import { MatchAwards } from './MatchAwards'
 import { BannerList, ImpossibleIntro, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -179,7 +180,15 @@ export function Game({
     return <Betting snapshot={snapshot} playerId={playerId} onBet={onBet} />
   }
   if (game.phase === 'finished') {
-    return <Podium room={snapshot.room} playerId={playerId} onPlayAgain={onPlayAgain} onLeave={onLeave} />
+    return (
+      <Podium
+        room={snapshot.room}
+        playerId={playerId}
+        onPlayAgain={onPlayAgain}
+        onLeave={onLeave}
+        extra={<MatchAwards awards={game.awards} players={snapshot.room.players} playerId={playerId} />}
+      />
+    )
   }
   // key: cada rodada começa com a escolha local zerada.
   return (
@@ -1670,12 +1679,8 @@ export function Podium({ room, playerId, onPlayAgain, onLeave, extra }: PodiumPr
       onLeave={onLeave}
       ranked={ranked}
       worstLine={worst && <span className="font-display text-2xl text-brand">{worst.caption}</span>}
-      list={
-        <>
-          {extra}
-          <Ranking players={room.players} playerId={playerId} />
-        </>
-      }
+      extra={extra}
+      list={<Ranking players={room.players} playerId={playerId} />}
     />
   )
 }

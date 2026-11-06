@@ -444,3 +444,55 @@ def test_ghost_hint_marks_an_option_for_everyone_and_is_only_for_ghosts():
     game.answer(potato.holder, right(potato), potato.state_started_at)
     game.advance(potato.state_ends_at)
     assert potato.ghost_hint is None  # vale só na pergunta em que foi dado
+
+
+def test_potato_awards_come_from_the_match():
+    game = new_game(3)
+    now = START_SECONDS
+    potato = game.main
+    first = potato.holder
+    now += 3
+    game.answer(first, right(potato), now)
+    assert game.tally.peaks["hot"][first] == 1
+    assert game.tally.counts["lap_potato"][first] == 3
+    assert game.tally.samples["pass_seconds"][first] == [3]
+    game.advance(now + PASS_SECONDS)
+    second = potato.holder
+    for _ in range(MAX_WRONG_STREAK):
+        now += WRONG_SECONDS + 1
+        game.answer(second, wrong(game.main), now)
+        if game.phase == "exploded":
+            break
+        game.advance(now + WRONG_SECONDS)
+    assert game.tally.peaks["choked"][second] == MAX_WRONG_STREAK
+    assert game.first_blast == second
+
+
+def test_potato_timeout_counts_the_time_in_the_hand():
+    game = new_game(3)
+    potato = game.main
+    holder = potato.holder
+    game.advance(game.potato_deadline(potato))
+    assert game.first_blast == holder
+    assert game.tally.counts["lap_potato"][holder] >= 15
+    assert game.view(game.phase_ends_at, ["p0", "p1", "p2"], "p0").awards == []
+
+
+def test_potato_sabotage_and_ghost_are_counted():
+    game = powered()
+    potato = game.main
+    other = watcher(game)
+    give(game, other, "short_fuse")
+    game.use(other, "short_fuse", START_SECONDS + 1)
+    assert game.tally.counts["thrown"][other] == 1
+    assert game.tally.counts["received"][potato.holder] == 1
+    assert game.tally.counts["ghost"][other] == 0
+
+
+def test_potato_awards_show_at_the_end():
+    game = new_game(2)
+    while game.phase != "finished":
+        game.advance(game.deadline())
+    assert game.first_blast is not None
+    view = game.view(game.phase_ends_at, ["p0", "p1"], "p0")
+    assert all(a.kind != "first_blast" for a in view.awards)  # um contra um: quem explode é só quem perdeu

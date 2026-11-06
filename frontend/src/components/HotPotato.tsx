@@ -7,6 +7,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { ResurrectionScene } from './ResurrectionScene'
+import { MatchAwards } from './MatchAwards'
 import { BannerList, EffectChips, PlayerPodium, StartScreen, type BannerItem, type ChipItem } from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D']
@@ -880,6 +881,7 @@ function PotatoPodium({
       onLeave={onLeave}
       ranked={entries}
       worstLine="Primeiro a queimar"
+      extra={<MatchAwards awards={game.awards} players={room.players} playerId={playerId} />}
       list={
         <ol className="flex flex-col gap-2">
           {ranked.map((p) => {

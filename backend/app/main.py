@@ -232,7 +232,7 @@ async def run_game(room: Room) -> None:
             if not alive():
                 return
             if not game.has_next_round:
-                game.finish(time.monotonic())
+                game.finish(time.monotonic(), room.players)
                 await broadcast(room)
                 return
             await run_duels(room, done, alive)

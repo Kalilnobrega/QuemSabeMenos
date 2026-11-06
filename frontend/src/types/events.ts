@@ -184,22 +184,6 @@ export interface ErrorAck {
   error: string;
 }
 /**
- * Um prêmio do fim da partida. `amount` depende do prêmio: % de erro (absurd, sharp), segundos (quick),
- * QI (fall, thief), vezes (exact, villain, punching_bag) ou a posição final (comeback).
- *
- * This interface was referenced by `Events`'s JSON-Schema
- * via the `definition` "EstimateAward".
- */
-export interface EstimateAward {
-  kind: "absurd" | "sharp" | "exact" | "quick" | "comeback" | "fall" | "villain" | "punching_bag" | "thief";
-  player_id: string;
-  amount: number;
-  guess?: number | null;
-  answer?: number | null;
-  unit?: string | null;
-  from_place?: number | null;
-}
-/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "EstimateGuess".
  */
@@ -695,7 +679,7 @@ export interface EstimateView {
   silenced_rounds: number;
   theme_choices: string[];
   powers_round: boolean;
-  awards: EstimateAward[];
+  awards: MatchAward[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -841,6 +825,79 @@ export interface LastingPowerUp {
 export interface MathWatch {
   player_id: string;
   math: EstimateMath;
+}
+/**
+ * Um prêmio do fim da partida: de um jogador ou de um time. `amount` depende do prêmio: uma contagem,
+ * um recorde, QI, % de erro, segundos ou, em comeback, a posição final.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "MatchAward".
+ */
+export interface MatchAward {
+  kind:
+    | "comeback"
+    | "fall"
+    | "villain"
+    | "punching_bag"
+    | "thief"
+    | "quick_answer"
+    | "hot"
+    | "cold"
+    | "absurd"
+    | "sharp"
+    | "exact"
+    | "quick_guess"
+    | "gain_streak"
+    | "loss_streak"
+    | "way_off"
+    | "rash"
+    | "last_second"
+    | "bettor"
+    | "bet_bust"
+    | "duel_king"
+    | "decoy_fall"
+    | "theme_owner"
+    | "theme_flop"
+    | "by_a_thread"
+    | "first_fall"
+    | "free_fall"
+    | "hider"
+    | "assassin"
+    | "stabbed"
+    | "life_thief"
+    | "cursed"
+    | "pact"
+    | "first_blast"
+    | "close_call"
+    | "lap_potato"
+    | "butterfingers"
+    | "quick_pass"
+    | "choked"
+    | "free_pass"
+    | "shield_saved"
+    | "ghost"
+    | "captain_gold"
+    | "captain_pirate"
+    | "unheard"
+    | "contrarian"
+    | "with_the_crowd"
+    | "rep_gold"
+    | "no_vote"
+    | "quick_vote"
+    | "gagged"
+    | "infiltrator"
+    | "team_harmony"
+    | "team_thief"
+    | "team_bag";
+  amount: number;
+  player_id?: string | null;
+  team?: number | null;
+  total?: number | null;
+  theme?: string | null;
+  guess?: number | null;
+  answer?: number | null;
+  unit?: string | null;
+  from_place?: number | null;
 }
 /**
  * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
@@ -1141,6 +1198,7 @@ export interface GameView {
   correct_option: number | null;
   fact: string | null;
   results: RoundResult[];
+  awards: MatchAward[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -1483,6 +1541,7 @@ export interface HotPotatoView {
   shielded: string[];
   gifts: Gift[];
   revived: string[];
+  awards: MatchAward[];
 }
 /**
  * Uma batata na roda. Estados: arriving (a Batata dupla caindo na roda; o pavio ainda não queima)
@@ -1929,6 +1988,7 @@ export interface SurvivalView {
   hiding: boolean;
   blessing: number | null;
   gifts: Gift[];
+  awards: MatchAward[];
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
@@ -2087,6 +2147,7 @@ export interface TeamMatchView {
   peeking: number | null;
   duel: DuelView | null;
   duel_teams: number[];
+  awards: MatchAward[];
 }
 /**
  * Um time na partida. Os votos dos outros times só aparecem na revelação; antes, só quem já votou.

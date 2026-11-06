@@ -5,7 +5,7 @@ import pytest
 
 from app import duel as x1
 from app import powerups
-from app.events import PowerUpGain
+from app.events import PowerUpGain, RoundResult
 from app.game import (
     BET_SECONDS,
     LATE_SECONDS,
@@ -1335,3 +1335,59 @@ def test_coup_takes_the_theme_bonus_for_the_rest_of_the_block():
     game.coup_block = None  # mesmo sem Golpe no bloco, não dá para usar na última pergunta dele
     with pytest.raises(GameError, match="acaba agora"):
         game.arm("caio", "coup", None, ["ana", "bia", "caio"])  # a próxima já é de outro bloco
+
+
+def test_classic_awards_come_from_the_match():
+    questions = [question(f"q{i}", "medium") for i in range(6)]
+    game = Game(powers=True, questions=questions, answer_seconds=10, rng=random.Random(1))
+    ana, bia = P("ana", 50), P("bia", 50)
+    game.powerups = {"ana": [], "bia": []}
+    for _ in range(6):
+        reveal(game, [ana, bia], {"ana": 0, "bia": 1})
+    assert game.tally.peaks["hot"]["ana"] == 6
+    assert game.tally.peaks["cold"]["bia"] == 6
+    assert game.tally.counts["rash"]["bia"] == 6
+    assert game.view(0, "ana").awards == []
+    game.finish(0, [ana, bia])
+    awards = game.view(0, "ana").awards
+    assert awards and all(a.player_id == ("ana" if a.kind == "hot" else a.player_id) for a in awards)
+    assert len({a.player_id for a in awards}) == len(awards)
+
+
+def test_classic_counts_answers_at_the_last_second():
+    game = Game(powers=False, questions=[question("q", "medium")], answer_seconds=10, rng=random.Random(1))
+    ana = P("ana", 50)
+    game.start_round(now=0)
+    game.open_answers(now=0)
+    game.answer("ana", 0, now=9)
+    game.close_round([ana], now=20)
+    assert game.tally.counts["last_second"]["ana"] == 1
+
+
+def test_a_win_in_the_duel_counts_for_the_award():
+    game, players = duel_game()
+    game.mythics["ana"] = ["duel"]
+    game.challenge("ana", "bia", list(players))
+    assert game.start_duel(list(players), {pid: p.score for pid, p in players.items()}, now=0)
+    game.finish_duel(list(players.values()), now=1)
+    assert game.tally.counts["duel_king"][game.duel.winner] == 1
+
+
+def test_specialist_awards_count_who_picked_the_theme():
+    game = specialist_game()
+    ana = P("ana", 50)
+    game.theme_picker, game.block_theme = "ana", "Artes"
+    game.round = 0
+    for _ in range(4):
+        game.results = [
+            RoundResult(
+                player_id="ana", option=0, correct=True, elapsed_ms=4000, delta=5, bonuses=[], bet=None, bet_delta=0,
+                shielded=0, stolen=0, robbed=0, tolled=0, toll_received=0, decoy=None, tricked=0, doubled=False,
+                first_option=None, expired=[], gained=None,
+            )
+        ]  # fmt: skip
+        game._record_awards([ana])
+    contest = game._theme_contest("theme_owner", wrong=False)
+    award = contest.make("ana", contest.scores["ana"])
+    assert (award.amount, award.total, award.theme) == (4, 4, "Artes")
+    assert game._theme_contest("theme_flop", wrong=True).scores == {}

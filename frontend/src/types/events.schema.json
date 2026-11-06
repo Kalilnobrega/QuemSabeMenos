@@ -429,82 +429,6 @@
       "title": "ErrorAck",
       "type": "object"
     },
-    "EstimateAward": {
-      "description": "Um prêmio do fim da partida. `amount` depende do prêmio: % de erro (absurd, sharp), segundos (quick),\nQI (fall, thief), vezes (exact, villain, punching_bag) ou a posição final (comeback).",
-      "properties": {
-        "kind": {
-          "enum": [
-            "absurd",
-            "sharp",
-            "exact",
-            "quick",
-            "comeback",
-            "fall",
-            "villain",
-            "punching_bag",
-            "thief"
-          ],
-          "type": "string"
-        },
-        "player_id": {
-          "type": "string"
-        },
-        "amount": {
-          "type": "number"
-        },
-        "guess": {
-          "anyOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "answer": {
-          "anyOf": [
-            {
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "unit": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        },
-        "from_place": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null
-        }
-      },
-      "required": [
-        "kind",
-        "player_id",
-        "amount"
-      ],
-      "title": "EstimateAward",
-      "type": "object"
-    },
     "EstimateGuess": {
       "properties": {
         "player_id": {
@@ -1326,7 +1250,7 @@
         },
         "awards": {
           "items": {
-            "$ref": "#/$defs/EstimateAward"
+            "$ref": "#/$defs/MatchAward"
           },
           "type": "array"
         }
@@ -1908,6 +1832,12 @@
             "$ref": "#/$defs/RoundResult"
           },
           "type": "array"
+        },
+        "awards": {
+          "items": {
+            "$ref": "#/$defs/MatchAward"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -1949,7 +1879,8 @@
         "ready",
         "correct_option",
         "fact",
-        "results"
+        "results",
+        "awards"
       ],
       "title": "GameView",
       "type": "object"
@@ -2350,6 +2281,12 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "awards": {
+          "items": {
+            "$ref": "#/$defs/MatchAward"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -2373,7 +2310,8 @@
         "starting_powerup",
         "shielded",
         "gifts",
-        "revived"
+        "revived",
+        "awards"
       ],
       "title": "HotPotatoView",
       "type": "object"
@@ -2548,6 +2486,167 @@
         "total"
       ],
       "title": "LastingPowerUp",
+      "type": "object"
+    },
+    "MatchAward": {
+      "description": "Um prêmio do fim da partida: de um jogador ou de um time. `amount` depende do prêmio: uma contagem,\num recorde, QI, % de erro, segundos ou, em comeback, a posição final.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "comeback",
+            "fall",
+            "villain",
+            "punching_bag",
+            "thief",
+            "quick_answer",
+            "hot",
+            "cold",
+            "absurd",
+            "sharp",
+            "exact",
+            "quick_guess",
+            "gain_streak",
+            "loss_streak",
+            "way_off",
+            "rash",
+            "last_second",
+            "bettor",
+            "bet_bust",
+            "duel_king",
+            "decoy_fall",
+            "theme_owner",
+            "theme_flop",
+            "by_a_thread",
+            "first_fall",
+            "free_fall",
+            "hider",
+            "assassin",
+            "stabbed",
+            "life_thief",
+            "cursed",
+            "pact",
+            "first_blast",
+            "close_call",
+            "lap_potato",
+            "butterfingers",
+            "quick_pass",
+            "choked",
+            "free_pass",
+            "shield_saved",
+            "ghost",
+            "captain_gold",
+            "captain_pirate",
+            "unheard",
+            "contrarian",
+            "with_the_crowd",
+            "rep_gold",
+            "no_vote",
+            "quick_vote",
+            "gagged",
+            "infiltrator",
+            "team_harmony",
+            "team_thief",
+            "team_bag"
+          ],
+          "type": "string"
+        },
+        "amount": {
+          "type": "number"
+        },
+        "player_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "team": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "total": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "guess": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "answer": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "from_place": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "kind",
+        "amount"
+      ],
+      "title": "MatchAward",
       "type": "object"
     },
     "MathKey": {
@@ -4303,6 +4402,12 @@
             "$ref": "#/$defs/Gift"
           },
           "type": "array"
+        },
+        "awards": {
+          "items": {
+            "$ref": "#/$defs/MatchAward"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -4350,7 +4455,8 @@
         "stabs",
         "hiding",
         "blessing",
-        "gifts"
+        "gifts",
+        "awards"
       ],
       "title": "SurvivalView",
       "type": "object"
@@ -4697,6 +4803,12 @@
             "type": "integer"
           },
           "type": "array"
+        },
+        "awards": {
+          "items": {
+            "$ref": "#/$defs/MatchAward"
+          },
+          "type": "array"
         }
       },
       "required": [
@@ -4737,7 +4849,8 @@
         "silenced",
         "peeking",
         "duel",
-        "duel_teams"
+        "duel_teams",
+        "awards"
       ],
       "title": "TeamMatchView",
       "type": "object"

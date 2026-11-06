@@ -2,6 +2,7 @@ import random
 
 import pytest
 
+from app.awards import team_key
 from app.game import Question
 from app.teams import (
     CAPTAIN_BONUS,
@@ -463,3 +464,53 @@ def test_a_right_team_bet_of_a_quarter_of_the_iq_earns_a_power():
     match.advance(match.deadline(), ALL)
     assert a.gained and a.gained.reason == "bet"
     assert b.gained is None  # só 10%
+
+
+def test_team_awards_count_votes():
+    match = new_match()
+    answer = match.question.answer
+    other = (answer + 1) % 4
+    to_results(match, {"a1": answer, "a2": other, "a3": other, "b1": answer, "b2": answer})
+    assert match.tally.counts["with_the_crowd"]["b1"] == 1
+    assert match.tally.samples["vote_seconds"]["a1"] == [1]
+    if team(match, 0).correct:
+        assert match.tally.counts["contrarian"]["a2"] == 1
+    else:
+        assert match.tally.counts["unheard"]["a1"] == 1
+    assert match.tally.peaks["team_harmony"][team_key(1)] == 1
+
+
+def test_who_did_not_vote_is_counted():
+    match = new_match()
+    answer = match.question.answer
+    to_results(match, {"a1": answer, "b1": answer, "b2": answer})
+    assert match.tally.counts["no_vote"]["a2"] == 1 and match.tally.counts["no_vote"]["a3"] == 1
+    assert match.tally.counts["no_vote"]["b1"] == 0
+
+
+def test_team_awards_appear_when_the_match_ends():
+    match = new_match()
+    assert match.view(0, "a1").awards == []
+    while match.phase != "finished":
+        if match.phase == "answering":
+            for t in match.teams:
+                for pid in t.members:
+                    if match.solo and pid != t.representative:
+                        continue
+                    if t.locked_at is None:
+                        match.vote(pid, match.question.answer, match.phase_started_at + 1, ALL)
+        match.advance(match.deadline(), ALL)
+    awards = match.view(0, "a1").awards
+    assert awards and len(awards) <= 3
+    assert all((a.team is None) != (a.player_id is None) for a in awards)
+
+
+def test_captain_award_needs_most_of_the_rounds_right():
+    match = new_match()
+    match.stats["a1"].captain_rounds, match.stats["a1"].captain_right = 5, 4
+    match.stats["a2"].captain_rounds, match.stats["a2"].captain_right = 5, 1
+    contests = {c.kind: c for c in match._award_contests()}
+    assert contests["captain_gold"].scores == {"a1": 4}
+    assert contests["captain_pirate"].scores == {"a2": 4}
+    made = contests["captain_gold"].make("a1", 4)
+    assert (made.amount, made.total) == (4, 5)

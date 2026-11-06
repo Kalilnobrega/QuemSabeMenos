@@ -25,10 +25,9 @@ from typing import Literal, Protocol
 from pydantic import BaseModel, Field
 
 from app import powerups as pw
+from app.awards import MIN_COLD_RUN, MIN_FALL, MIN_HOT_RUN, Contest, Tally, award, draw_awards, ranked_ids, sabotages
 from app.engine import Revealed, RoomError
-from app.estimate_awards import AwardTally
 from app.events import (
-    EstimateAward,
     EstimateGuess,
     EstimateLastWord,
     EstimateMath,
@@ -37,6 +36,7 @@ from app.events import (
     EstimateView,
     LastingPowerUp,
     LastWordGuess,
+    MatchAward,
     MathKey,
     MathWatch,
     PowerUp,
@@ -112,6 +112,10 @@ INSTANT: frozenset[PowerUp] = pw.INSTANT | {"range", "sniper", "last_word"}
 LEGENDARY: tuple[PowerUp, ...] = tuple(kind for kind in POWERS if kind in TARGETED and kind != "swap")
 SNIPER_FACTOR = 2  # a zona de ganho fica desse tanto menor, e o ganho desse tanto maior
 EXACT_POWER_LEVELS = ("medium", "hard")  # cravar nesses níveis dá um poder
+WAY_OFF_ERROR = 1000.0  # errou por mais de 10 vezes a resposta
+MIN_ABSURD_ERROR = 50.0  # abaixo disso o chute não tem nada de absurdo
+MAX_SHARP_ERROR = 30.0  # acima disso o "errou só" vira ironia sem querer
+MAX_QUICK_GUESS_SECONDS = 8.0  # digitar um número leva mais tempo que tocar numa alternativa
 WIDE_MARGIN_FACTOR = 2  # a zona de ganho (e a de perda) fica desse tamanho
 NUDGE_SHARE = (0.1, 0.3)  # o Empurrão anda uma fração sorteada da base do erro, para um lado sorteado
 RANGE_OFF_CENTER = (0.15, 0.4)  # a Faixa tem a resposta a essa fração de uma das pontas
@@ -299,11 +303,6 @@ class Scorable(Protocol):
     answer_ms: int
 
 
-def _ranked_ids(players: list[Scorable]) -> list[str]:
-    """Na mesma ordem do pódio: mais QI e, no empate, quem respondeu mais rápido."""
-    return [p.id for p in sorted(players, key=lambda p: (-p.score, p.answer_ms))]
-
-
 @dataclass
 class Estimate(Revealed):
     rule_error = EstimateError
@@ -344,8 +343,9 @@ class Estimate(Revealed):
     leaders: set[str] = field(default_factory=set)  # o Reverso de quem está em 1º dura menos
     theme_choices: list[str] = field(default_factory=list)
     ranges: dict[str, EstimateRange] = field(default_factory=dict)  # Faixa: de quem usou nesta pergunta
-    tally: AwardTally = field(default_factory=AwardTally)
-    awards: list[EstimateAward] = field(default_factory=list)  # sorteados quando a partida acaba
+    tally: Tally = field(default_factory=Tally)
+    worst_guesses: dict[str, tuple[float, float, str | None]] = field(default_factory=dict)  # chute, resposta, unidade
+    awards: list[MatchAward] = field(default_factory=list)  # sorteados quando a partida acaba
 
     @classmethod
     def create(
@@ -840,7 +840,7 @@ class Estimate(Revealed):
             self._close(now, players)
         elif self.phase in ("starting", "results"):
             if self.round + 1 >= len(self.questions):
-                self.awards = self.tally.draw(_ranked_ids(players), self.rng)
+                self.awards = draw_awards(self._award_contests(players), [p.id for p in players], self.rng)
                 self._enter("finished", now, 0)
                 return
             self.round += 1
@@ -862,17 +862,55 @@ class Estimate(Revealed):
     def _longest_window(self) -> float:
         return MATH_SECONDS if self.math_puzzles else ANSWER_SECONDS
 
-    def _sabotages(self, player_ids: list[str]) -> tuple[list[str], list[str]]:
-        """Quem jogou e quem levou cada sabotagem desta pergunta. A lendária conta uma vez para quem jogou
-        e uma para cada atingido; a devolvida pelo Reverso segue contando para quem jogou, e pega nele."""
-        thrown: list[str] = []
-        received: list[str] = []
-        for use in self.active:
-            if use.kind not in TARGETED:
+    def _record_awards(self, players: list[Scorable]) -> None:
+        q, tally = self.question, self.tally
+        for guess in self.results:
+            pid = guess.player_id
+            tally.run("gain_streak", pid, guess.total > 0)
+            tally.run("loss_streak", pid, guess.total < 0)
+            tally.add("thief", pid, guess.stolen)
+            if guess.total < 0:
+                tally.peak("fall", pid, -guess.total)
+            if guess.value is None or guess.error_percent is None:
                 continue
-            thrown.append(use.target if use.kind == "steal" and use.reflected_by else use.by)
-            received += [pid for pid in player_ids if self._hit_by(use, pid)]
-        return thrown, received
+            if guess.nudged_from is not None or guess.swapped_from is not None or guess.copied_from is not None:
+                continue  # o chute que valeu não foi o da pessoa: não dá para culpar nem elogiar
+            tally.sample("errors", pid, guess.error_percent)
+            if guess.elapsed_ms is not None:
+                tally.sample("seconds", pid, guess.elapsed_ms / 1000)
+            if guess.exact:
+                tally.add("exact", pid)
+            # Com escala (anos, por exemplo), o erro não é medido em cima da resposta: "10 vezes" não valeria.
+            if guess.error_percent > WAY_OFF_ERROR and error_base(q) == abs(q.answer):
+                tally.add("way_off", pid)
+            if tally.peak("absurd", pid, guess.error_percent):
+                self.worst_guesses[pid] = (guess.value, q.answer, q.unit)
+        if self.powers:
+            tally.add_sabotages(*sabotages(self.active, TARGETED, [p.id for p in players]))
+        if self.round + 1 == len(self.questions) // 2:
+            tally.half_places = {pid: i for i, pid in enumerate(ranked_ids(players), start=1)}
+
+    def _award_contests(self, players: list[Scorable]) -> list[Contest]:
+        tally = self.tally
+        half = math.ceil(len(self.questions) / 2)
+
+        def absurd(pid: str, error: float) -> MatchAward:
+            value, answer, unit = self.worst_guesses[pid]
+            return award("absurd", pid, error, guess=value, answer=answer, unit=unit)
+
+        return [
+            Contest("absurd", tally.peaked("absurd", minimum=MIN_ABSURD_ERROR).scores, make=absurd),
+            tally.mean("sharp", "errors", MAX_SHARP_ERROR, half),
+            tally.counted("exact"),
+            tally.counted("way_off"),
+            tally.mean("quick_guess", "seconds", MAX_QUICK_GUESS_SECONDS, half),
+            tally.comeback(ranked_ids(players)),
+            tally.peaked("fall", minimum=MIN_FALL),
+            tally.peaked("gain_streak", minimum=MIN_HOT_RUN),
+            tally.peaked("loss_streak", minimum=MIN_COLD_RUN),
+            tally.counted("thief"),
+            *tally.sabotage_contests(),
+        ]
 
     def _boosted_gain(self, player_id: str, points: int) -> int:
         """Segunda chance e Sniper só mexem no ganho."""
@@ -946,10 +984,7 @@ class Estimate(Revealed):
         by_id = {g.player_id: g for g in self.results}
         for player in players:
             player.score += by_id[player.id].total
-        thrown, received = self._sabotages([p.id for p in players]) if self.powers else ([], [])
-        self.tally.add_round(self.results, q.answer, q.unit, thrown, received)
-        if self.round + 1 == len(self.questions) // 2:
-            self.tally.half_places = {pid: i for i, pid in enumerate(_ranked_ids(players), start=1)}
+        self._record_awards(players)
         if self.powers:
             top = max((p.score for p in players), default=0)
             self.leaders = {p.id for p in players if p.score == top}

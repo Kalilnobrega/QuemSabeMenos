@@ -16,6 +16,20 @@ from pydantic import BaseModel, Field, model_validator
 
 from app import duel as x1
 from app import powerups
+from app.awards import (
+    MAX_QUICK_SECONDS,
+    MIN_COLD_RUN,
+    MIN_FALL,
+    MIN_HOT_RUN,
+    MIN_THEME_QUESTIONS,
+    THEME_SHARE,
+    Contest,
+    Tally,
+    award,
+    draw_awards,
+    ranked_ids,
+    sabotages,
+)
 from app.engine import Revealed, RoomError
 from app.events import (
     Bonus,
@@ -24,6 +38,7 @@ from app.events import (
     DuelView,
     GameView,
     LastingPowerUp,
+    MatchAward,
     PowerUp,
     PowerUpGain,
     PowerUpUse,
@@ -36,6 +51,8 @@ QUESTIONS_DIR = Path(__file__).parent / "questions"
 
 DIFFICULTIES: tuple[Difficulty, ...] = ("easy", "medium", "hard")
 FINAL_DIFFICULTY: Difficulty = "impossible"
+RASH_SECONDS = 3.0  # errar antes disso é "errou correndo"
+LAST_SECOND_MARGIN = 2.0  # responder faltando menos que isso é "quase sem tempo"
 OPTION_COUNT = {"easy": 4, "medium": 4, "hard": 4, "impossible": 6}
 STARTING_IQ = 50
 REFERENCE_ROUNDS = 20
@@ -254,6 +271,21 @@ def points(difficulty: Difficulty, correct: bool | None, remaining_fraction: flo
     return round((low + (high - low) * max(0.0, min(1.0, remaining_fraction))) * scale)
 
 
+def _round_total(result: RoundResult) -> int:
+    """Quanto o QI muda nesta pergunta."""
+    return (
+        result.delta
+        + sum(b.delta for b in result.bonuses)
+        + result.bet_delta
+        + result.stolen
+        - result.robbed
+        + result.toll_received
+        - result.tolled
+        + result.tricked
+        + result.specialist_bonus
+    )
+
+
 class Scorable(Protocol):
     id: str
     score: int
@@ -355,6 +387,10 @@ class Game(QuestionDeck):
     statements: list[x1.DuelQuestion] = field(default_factory=list)
     duel_queue: list[tuple[str, str]] = field(default_factory=list)
     duel: x1.Duel | None = None
+    # Prêmios do fim da partida.
+    tally: Tally = field(default_factory=Tally)
+    picked_themes: dict[str, dict[str, tuple[int, int]]] = field(default_factory=dict)  # acertos e perguntas
+    awards: list[MatchAward] = field(default_factory=list)
     leaders: set[str] = field(default_factory=set)  # em 1º depois da última rodada (o empate conta)
     right_runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo à próxima
     last_runs: dict[str, int] = field(default_factory=dict)  # rodadas seguidas em último, longe
@@ -886,17 +922,8 @@ class Game(QuestionDeck):
                 thief.stolen += share
                 target.robbed += share
         for player, result in zip(players, self.results):
-            player.score += (
-                result.delta
-                + sum(b.delta for b in result.bonuses)
-                + result.bet_delta
-                + result.stolen
-                - result.robbed
-                + result.toll_received
-                - result.tolled
-                + result.tricked
-                + result.specialist_bonus
-            )
+            player.score += _round_total(result)
+        self._record_awards(players)
         top = max((p.score for p in players), default=0)
         self.leaders = {p.id for p in players if p.score == top}
         self._break_resurrections(players)
@@ -908,6 +935,74 @@ class Game(QuestionDeck):
                 self._bet_prizes(players, score_before)
         self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, results_seconds(self.question.fact, self.powers))
+
+    def _record_awards(self, players: list[Scorable]) -> None:
+        tally, q = self.tally, self.question
+        for result in self.results:
+            pid = result.player_id
+            total = _round_total(result)
+            tally.run("hot", pid, result.correct)
+            tally.run("cold", pid, not result.correct)
+            if total < 0:
+                tally.peak("fall", pid, -total)
+            tally.add("thief", pid, result.stolen)
+            if result.decoy:
+                tally.add("decoy_fall", pid)
+            if result.bet_delta > 0:
+                tally.peak("bettor", pid, result.bet_delta)
+            elif result.bet_delta < 0:
+                tally.peak("bet_bust", pid, -result.bet_delta)
+            if result.elapsed_ms is not None:
+                seconds = result.elapsed_ms / 1000
+                tally.sample("seconds", pid, seconds)
+                if not result.correct and seconds < RASH_SECONDS:
+                    tally.add("rash", pid)
+                if seconds >= self.answer_window(pid) - LAST_SECOND_MARGIN:
+                    tally.add("last_second", pid)
+            if self.specialist and pid == self.theme_picker and q.difficulty != FINAL_DIFFICULTY:
+                right, asked = self.picked_themes.setdefault(pid, {}).get(self.block_theme or q.theme, (0, 0))
+                self.picked_themes[pid][self.block_theme or q.theme] = (right + result.correct, asked + 1)
+        if self._counts_for_powers():
+            tally.add_sabotages(*sabotages(self.active, powerups.TARGETED, [p.id for p in players]))
+        if self.round + 1 == len(self.questions) // 2:
+            tally.half_places = {pid: i for i, pid in enumerate(ranked_ids(players), start=1)}
+
+    def _theme_contest(self, kind: str, wrong: bool) -> Contest:
+        """Especialista: o tema em que quem escolheu mais acertou (ou mais errou)."""
+        best: dict[str, tuple[float, str, int, int]] = {}
+        for pid, themes in self.picked_themes.items():
+            for theme, (right, asked) in themes.items():
+                hits = asked - right if wrong else right
+                if asked >= MIN_THEME_QUESTIONS and hits / asked >= THEME_SHARE:
+                    share = hits / asked
+                    if pid not in best or share > best[pid][0]:
+                        best[pid] = (share, theme, hits, asked)
+        return Contest(
+            kind,
+            {pid: entry[0] for pid, entry in best.items()},
+            make=lambda pid, _: award(kind, pid, best[pid][2], total=best[pid][3], theme=best[pid][1]),
+        )
+
+    def _award_contests(self, players: list[Scorable]) -> list[Contest]:
+        tally = self.tally
+        contests = [
+            tally.peaked("hot", minimum=MIN_HOT_RUN),
+            tally.peaked("cold", minimum=MIN_COLD_RUN),
+            tally.mean("quick_answer", "seconds", MAX_QUICK_SECONDS, math.ceil(len(self.questions) / 2)),
+            tally.counted("rash", minimum=2),
+            tally.counted("last_second", minimum=2),
+            tally.comeback(ranked_ids(players)),
+            tally.peaked("fall", minimum=MIN_FALL),
+            tally.peaked("bettor"),
+            tally.peaked("bet_bust"),
+            tally.counted("duel_king"),
+            tally.counted("thief"),
+            tally.counted("decoy_fall"),
+            *tally.sabotage_contests(),
+        ]
+        if self.specialist:
+            contests += [self._theme_contest("theme_owner", False), self._theme_contest("theme_flop", True)]
+        return contests
 
     def _break_resurrections(self, players: list[Scorable]) -> None:
         """A Ressurreição de quem saiu do último quebra."""
@@ -1028,6 +1123,7 @@ class Game(QuestionDeck):
             # Sem perguntas para duelar (banco vazio): decide o tempo, que é zero para os dois.
             duel.loser, duel.winner = duel.rival, duel.challenger
         duel.settle(players)
+        self.tally.add("duel_king", duel.winner)
         self._enter("duel_end", now, x1.END_SECONDS)
 
     def _duel_view(self, viewer: str | None) -> DuelView | None:
@@ -1167,7 +1263,9 @@ class Game(QuestionDeck):
         player.streak = streak.right or -streak.wrong
         return bonuses
 
-    def finish(self, now: float) -> None:
+    def finish(self, now: float, players: list[Scorable] | None = None) -> None:
+        players = players or []
+        self.awards = draw_awards(self._award_contests(players), [p.id for p in players], self.rng)
         self._enter("finished", now, 0)
 
     def view(self, now: float, viewer: str | None = None) -> GameView:
@@ -1189,6 +1287,7 @@ class Game(QuestionDeck):
         options, screen = self._screen(decoy)
         mine = self.first_wrong.get(viewer) if viewer else None
         return GameView(
+            awards=self.awards if self.phase == "finished" else [],
             round=self.round + 1,
             total_rounds=len(self.questions),
             phase=self.phase,

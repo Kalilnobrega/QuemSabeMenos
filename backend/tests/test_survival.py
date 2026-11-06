@@ -456,3 +456,49 @@ def test_everyone_alive_gets_a_power_when_someone_falls_but_not_before_the_x1():
     for _ in range(3):
         to_results(game, right=["p0", "p1"])  # p2 cai e sobram 2: é X1, sem poder
     assert not [g for g in game.gifts if g.gain.reason == "elimination"]
+
+
+def test_survival_awards_come_from_the_match():
+    game = new_game(3)
+    play(game, right=["p0", "p1"])
+    play(game, right=["p0", "p1"])
+    assert game.tally.peaks["hot"]["p0"] == 2
+    while game.phase != "finished":
+        play(game, right=["p0"])
+    assert game.tally.peaks["hot"]["p0"] >= 4
+    awards = game.view(0, "p0", ["p0", "p1", "p2"]).awards
+    assert awards and len({a.player_id for a in awards}) == len(awards)
+    assert (
+        "first_fall" not in {a.kind for a in awards}
+        or next(a for a in awards if a.kind == "first_fall").player_id == "p2"
+    )
+
+
+def test_survival_awards_only_show_at_the_end():
+    game = new_game(3)
+    play(game, right=["p0", "p1"])
+    assert game.view(0, "p0", ["p0", "p1", "p2"]).awards == []
+
+
+def test_dagger_counts_for_both_sides():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.mythics["p0"] = ["dagger"]
+    game.arm("p0", "dagger", "p2")
+    assert game.tally.counts["stabbed"]["p2"] == 1
+    assert game.tally.counts["assassin"]["p0"] == 0
+
+
+def test_hiding_counts_and_does_not_break_the_streak():
+    game = powers_game()
+    to_results(game, right=["p0", "p1", "p2", "p3"])
+    game.held["p0"] = ["hide"]
+    game.arm("p0", "hide", None)
+    game.advance(0)
+    while game.phase in ("level", "reading"):
+        game.advance(0)
+    for pid in ("p1", "p2", "p3"):
+        game.answer(pid, game.question.answer, 0)
+    game.advance(0)
+    assert game.tally.counts["hider"]["p0"] == 1
+    assert game.tally.peaks["hot"]["p0"] == 1

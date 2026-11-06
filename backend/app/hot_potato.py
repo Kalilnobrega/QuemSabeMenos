@@ -21,8 +21,19 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from app import powerups as pw
+from app.awards import MIN_HOT_RUN, Contest, Tally, draw_awards
 from app.engine import Phased, RoomError
-from app.events import Gift, HotPotatoPlayer, HotPotatoTurn, HotPotatoView, PotatoView, PowerUp, PowerUpGain, PowerUpUse
+from app.events import (
+    Gift,
+    HotPotatoPlayer,
+    HotPotatoTurn,
+    HotPotatoView,
+    MatchAward,
+    PotatoView,
+    PowerUp,
+    PowerUpGain,
+    PowerUpUse,
+)
 from app.game import START_SECONDS, Question
 
 FUSE_SECONDS = (40.0, 60.0)
@@ -61,6 +72,12 @@ DOUBLE_BOMB_RIGHTS = 2  # Bomba dupla: acertos seguidos para conseguir passar
 RESURRECTION_CHANCE = 0.08
 DOUBLE_POTATO_CHANCE = 0.04  # Batata dupla: chance a cada poder ganho por acertos seguidos
 DOUBLE_POTATO_MIN_ALIVE = 3
+MIN_FIRST_BLAST_PLAYERS = 3
+MIN_CLOSE_CALL_PERCENT = 80
+MIN_LAP_SECONDS = 15
+MIN_BUTTERFINGERS = 3
+MAX_QUICK_PASS_SECONDS = 4.0
+MIN_QUICK_PASSES = 3
 DOUBLE_POTATO_INTRO_SECONDS = 3.6  # a cena da dourada caindo; o pavio dela só começa depois
 
 Phase = Literal["starting", "playing", "exploded", "finished"]
@@ -136,6 +153,10 @@ class HotPotato(Phased):
     revived: list[str] = field(default_factory=list)
     # Para o histórico: o que aconteceu desde a última leitura (respostas, explosões, poderes).
     log: list[tuple[str, dict]] = field(default_factory=list)
+    # Para os prêmios do fim da partida.
+    tally: Tally = field(default_factory=Tally)
+    first_blast: str | None = None
+    awards: list[MatchAward] = field(default_factory=list)
 
     @classmethod
     def create(
@@ -219,6 +240,7 @@ class HotPotato(Phased):
         ):
             raise HotPotatoError("Alternativa inválida.")
         if now >= self.potato_deadline(potato):
+            self._record_timeout(potato, now)
             return self._explode(potato, now)
         holder = self.player(player_id)
         self._burn(potato, now)
@@ -235,7 +257,14 @@ class HotPotato(Phased):
             elapsed_ms=round((now - potato.state_started_at) * 1000),
         )
         self._log_turn(potato)
+        self.tally.add("lap_potato", player_id, potato.turn.elapsed_ms / 1000)
+        self.tally.run("hot", player_id, correct)
+        self.tally.run("choked", player_id, not correct)
         if correct:
+            self.tally.sample("pass_seconds", player_id, potato.turn.elapsed_ms / 1000)
+            if potato.need_right <= 1:
+                burned = 1 - potato.fuse_left / potato.fuse_total
+                self.tally.peak("close_call", player_id, round(burned * 100))
             holder.correct += 1
             potato.wrong_streak = 0
             self._count_run(player_id)
@@ -250,6 +279,7 @@ class HotPotato(Phased):
         if player_id in self.shields:
             self.shields.discard(player_id)
             potato.turn.shielded = True
+            self.tally.add("shield_saved", player_id)
             return self._set_state(potato, "wrong", now, WRONG_SECONDS)
         potato.wrong_streak += 1
         potato.fuse_left -= WRONG_PENALTY_SECONDS
@@ -310,6 +340,10 @@ class HotPotato(Phased):
         potato.uses.append(
             PowerUpUse(kind=kind, by=player_id, target=None if kind in HELPS else potato.holder, reflected_by=None)
         )
+        if kind not in HELPS and kind != "ghost_hint":
+            self.tally.add_sabotages([player_id], [potato.holder])
+            if not me.alive:
+                self.tally.add("ghost", player_id)
         self._apply(potato, kind, now)
         self.log.append(
             (
@@ -351,6 +385,7 @@ class HotPotato(Phased):
         elif self.phase == "playing" and self.potatoes:
             potato = min(self.potatoes, key=self.potato_deadline)
             if potato.state == "asking":
+                self._record_timeout(potato, now)
                 self._explode(potato, now)
             elif potato.state == "passing":
                 self._hand_on(potato, potato.holder)
@@ -423,6 +458,7 @@ class HotPotato(Phased):
         potato.fuse_left = 0
         self.exploded = potato.holder
         self.exploded_potato = potato
+        self.first_blast = self.first_blast or potato.holder
         self.player(potato.holder).out_round = self.round
         self.log.append(
             (
@@ -466,7 +502,30 @@ class HotPotato(Phased):
         alive = self.alive_ids()
         self.winner = alive[0] if alive else None
         self.potatoes = []
+        self.awards = draw_awards(self._award_contests(), [p.id for p in self.players], self.rng)
         self._enter("finished", now, 0)
+
+    def _record_timeout(self, potato: Potato, now: float) -> None:
+        """O pavio acabou sem resposta: o tempo que ficou na mão conta do mesmo jeito."""
+        self.tally.add("lap_potato", potato.holder, now - potato.state_started_at)
+
+    def _award_contests(self) -> list[Contest]:
+        tally = self.tally
+        # Um contra um: quem explode é só quem perdeu, e a frase não diria nada.
+        blast = {self.first_blast: 1} if self.first_blast and len(self.players) >= MIN_FIRST_BLAST_PLAYERS else {}
+        return [
+            Contest("first_blast", blast),
+            tally.peaked("close_call", minimum=MIN_CLOSE_CALL_PERCENT),
+            tally.counted("lap_potato", minimum=MIN_LAP_SECONDS),
+            Contest("butterfingers", {p.id: p.wrong for p in self.players if p.wrong >= MIN_BUTTERFINGERS}),
+            tally.peaked("hot", minimum=MIN_HOT_RUN),
+            tally.mean("quick_pass", "pass_seconds", MAX_QUICK_PASS_SECONDS, MIN_QUICK_PASSES),
+            tally.peaked("choked", minimum=2),
+            tally.counted("free_pass"),
+            tally.counted("shield_saved"),
+            tally.counted("ghost"),
+            *tally.sabotage_contests(),
+        ]
 
     def _next_after(self, player_id: str, excluded: str | None) -> str:
         """O próximo vivo da roda depois de `player_id` (que pode já estar fora), no sentido atual,
@@ -556,6 +615,8 @@ class HotPotato(Phased):
                 free_pass=True,
             )
             self._log_turn(potato)
+            self.tally.add("free_pass", potato.holder)
+            self.tally.add("lap_potato", potato.holder, potato.turn.elapsed_ms / 1000)
             self._set_state(potato, "passing", now, PASS_SECONDS)
         elif kind == "accelerator":
             self._burn(potato, now)
@@ -642,6 +703,7 @@ class HotPotato(Phased):
         timed = self.phase in ("starting", "exploded")
         exploded = self.exploded_potato if self.phase == "exploded" else None
         return HotPotatoView(
+            awards=self.awards if self.phase == "finished" else [],
             phase=self.phase,
             phase_duration_ms=round((self.phase_ends_at - self.phase_started_at) * 1000) if timed else 0,
             phase_ends_in_ms=max(0, round((self.phase_ends_at - now) * 1000)) if timed else 0,

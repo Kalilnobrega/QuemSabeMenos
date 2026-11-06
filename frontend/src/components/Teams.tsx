@@ -22,6 +22,7 @@ import {
   type ChipItem,
 } from './Screens'
 import { AnsweredAvatar } from './Answered'
+import { MatchAwards } from './MatchAwards'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { TaxScene } from './TaxScene'
 
@@ -1093,6 +1094,8 @@ function accuracy(stat: TeamPlayerStat) {
   return stat.votes ? stat.right / stat.votes : 0
 }
 
+const AWARDS_DELAY_MS = 3500 // o cartão do campeão e o som do pódio vêm primeiro
+
 function TeamPodium({
   snapshot,
   playerId,
@@ -1134,6 +1137,21 @@ function TeamPodium({
           )}
         </div>
       )}
+      <MatchAwards
+        awards={match.awards}
+        players={room.players}
+        playerId={playerId}
+        startDelayMs={AWARDS_DELAY_MS}
+        teamOf={(id) => ({
+          face: (
+            <span className={`flex size-16 shrink-0 items-center justify-center rounded-full ${TEAMS[id].bg}`}>
+              <img src={coroa} alt="" className="size-9" />
+            </span>
+          ),
+          name: teamName(id),
+          mine: id === match.my_team,
+        })}
+      />
       <ol className="flex flex-col gap-3">
         {order.map((team, index) => {
           const stats = statsOf(team)

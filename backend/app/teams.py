@@ -14,16 +14,19 @@ adversário. Sem capitão (Motim), qualquer um do time escolhe. Míticos: X1 ent
 manda um representante e os outros times apostam) e Imposto (o 1º paga 25% ao último).
 """
 
+import math
 import random
 from dataclasses import dataclass, field
 from typing import Literal
 
 from app import duel as x1
 from app import powerups as pw
+from app.awards import MAX_QUICK_SECONDS, Contest, Tally, award, draw_awards, team_key
 from app.engine import RoomError
 from app.events import (
     DuelView,
     LastingPowerUp,
+    MatchAward,
     PowerUp,
     PowerUpGain,
     QuestionView,
@@ -87,6 +90,10 @@ POWERS: tuple[PowerUp, ...] = (
     "gag",
     "iron_captain",
 )
+MIN_HARMONY_MEMBERS = 2
+MIN_HARMONY_RUN = 3
+MIN_CAPTAIN_ROUNDS = 2
+AWARD_SHARE = 0.6
 ATTACKS: frozenset[PowerUp] = frozenset(
     {
         "scratch",
@@ -252,6 +259,8 @@ class TeamMatch(QuestionDeck):
     round: int = -1  # índice da pergunta atual
     bet_index: int | None = None  # índice da pergunta com aposta
     stats: dict[str, Stat] = field(default_factory=dict)
+    tally: Tally = field(default_factory=Tally)  # para os prêmios do fim da partida
+    awards: list[MatchAward] = field(default_factory=list)
     ready: set[str] = field(default_factory=set)
     active: list[TeamPowerUse] = field(default_factory=list)  # poderes valendo nesta pergunta
     theme_choices: list[str] = field(default_factory=list)
@@ -624,6 +633,10 @@ class TeamMatch(QuestionDeck):
         self.active = uses
         for use in uses:
             mine, target = self.team(use.by_team), self.team(use.target_team)
+            if target and use.kind in ATTACKS:
+                self.tally.add("team_bag", team_key(target.id))
+            if use.kind == "gag" and use.target_player:
+                self.tally.add("gagged", use.target_player)
             if use.kind in LASTING:
                 mine.lasting[use.kind] = mine.lasting_total[use.kind] = LASTING[use.kind]
             elif use.kind == "mutiny" and target:
@@ -759,6 +772,7 @@ class TeamMatch(QuestionDeck):
 
     def _next_question(self, now: float, connected: list[str]) -> None:
         if self.round + 1 >= len(self.questions):
+            self.awards = draw_awards(self._award_contests(), self._award_keys(), self.rng)
             return self._enter("finished", now, 0)
         self.round += 1
         self.ready = set()
@@ -908,6 +922,7 @@ class TeamMatch(QuestionDeck):
             if pid in self.stats:
                 self.stats[pid].votes += 1
                 self.stats[pid].right += option == q.answer
+        self._record_votes(team, connected)
         if self.solo:
             if team.representative and team.representative in self.stats:
                 self.stats[team.representative].represented_right += bool(team.correct)
@@ -934,7 +949,10 @@ class TeamMatch(QuestionDeck):
         if team.iron:
             return  # só o capitão votou: a Sintonia não anda nem quebra
         voters = [pid for pid in self._present(team, connected) if pid not in team.gagged]
-        if voters and all(pid in team.votes and team.votes[pid][0] == answer for pid in voters):
+        together = bool(voters) and all(pid in team.votes and team.votes[pid][0] == answer for pid in voters)
+        if len(team.members) >= MIN_HARMONY_MEMBERS:
+            self.tally.run("team_harmony", team_key(team.id), together)
+        if together:
             team.harmony += 1
             if team.harmony >= HARMONY_STREAK:
                 team.harmony = 0
@@ -963,6 +981,58 @@ class TeamMatch(QuestionDeck):
             share = pw.STEAL_FIXED + (round(target.delta * pw.STEAL_GAIN_SHARE) if target.delta > 0 else 0)
             thief.stolen += share
             target.robbed += share
+            self.tally.add("team_thief", team_key(thief.id), share)
+
+    def _record_votes(self, team: Team, connected: list[str]) -> None:
+        tally, answer = self.tally, self.question.answer
+        for pid, (option, at) in team.votes.items():
+            tally.sample("vote_seconds", pid, max(0.0, at - self.phase_started_at))
+            if option == answer and not team.correct:
+                tally.add("unheard", pid)
+            if len(team.votes) >= 2 and team.option is not None:
+                tally.add("with_the_crowd" if option == team.option else "contrarian", pid)
+        for pid in team.infiltrators:
+            tally.add("infiltrator", pid)
+        if not self.solo and not team.iron:
+            for pid in self._present(team, connected):
+                if pid not in team.votes and pid not in team.gagged:
+                    tally.add("no_vote", pid)
+
+    def _award_keys(self) -> list[str]:
+        return [*self.stats, *(team_key(team.id) for team in self.teams)]
+
+    def _share_contest(self, kind: str, tally: dict[str, tuple[int, int]]) -> Contest:
+        """Quem mais acertou (ou errou) naquele papel, em pelo menos `AWARD_SHARE` das vezes."""
+        good = {pid: pair for pid, pair in tally.items() if pair[0] >= 1 and pair[0] / pair[1] >= AWARD_SHARE}
+        return Contest(
+            kind,
+            {pid: hits for pid, (hits, _) in good.items()},
+            make=lambda pid, hits: award(kind, pid, hits, total=good[pid][1]),
+        )
+
+    def _award_contests(self) -> list[Contest]:
+        tally, stats = self.tally, self.stats
+        captains = {pid: s for pid, s in stats.items() if s.captain_rounds >= MIN_CAPTAIN_ROUNDS}
+        return [
+            self._share_contest("captain_gold", {p: (s.captain_right, s.captain_rounds) for p, s in captains.items()}),
+            self._share_contest(
+                "captain_pirate",
+                {p: (s.captain_rounds - s.captain_right, s.captain_rounds) for p, s in captains.items()},
+            ),
+            self._share_contest(
+                "rep_gold", {p: (s.represented_right, s.represented) for p, s in stats.items() if s.represented}
+            ),
+            tally.counted("unheard", minimum=2),
+            tally.counted("contrarian", minimum=3),
+            tally.counted("with_the_crowd", minimum=5),
+            tally.counted("no_vote", minimum=2),
+            tally.mean("quick_vote", "vote_seconds", MAX_QUICK_SECONDS, math.ceil(len(self.questions) / 2)),
+            tally.counted("gagged"),
+            tally.counted("infiltrator"),
+            tally.peaked("team_harmony", minimum=MIN_HARMONY_RUN),
+            tally.counted("team_thief"),
+            tally.counted("team_bag", minimum=2),
+        ]
 
     def _plan_next_captains(self, connected: list[str]) -> None:
         """Já na revelação se sabe quem é o capitão da próxima: é ele quem escolhe o poder."""
@@ -1074,6 +1144,7 @@ class TeamMatch(QuestionDeck):
         if self.phase == "duel_answering" and self.duel:
             ends_at = self.duel.deadline()
         return TeamMatchView(
+            awards=self.awards if self.phase == "finished" else [],
             phase=self.phase,
             phase_duration_ms=round((ends_at - self.phase_started_at) * 1000),
             phase_ends_in_ms=max(0, round((ends_at - now) * 1000)),

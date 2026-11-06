@@ -24,7 +24,6 @@ from app.estimate import (
     load_estimates,
     math_path,
 )
-from app.estimate_awards import AwardTally
 from app.events import PowerUpUse
 
 
@@ -250,9 +249,9 @@ def test_each_player_takes_one_award_at_most_and_it_is_true():
         winners = [award.player_id for award in awards]
         assert len(winners) == len(set(winners))
         for award in awards:
-            if award.kind in ("absurd", "fall"):
+            if award.kind in ("absurd", "fall", "loss_streak"):
                 assert award.player_id == "b"
-            elif award.kind != "quick":  # os dois chutaram no mesmo tempo: esse empate pode ir para qualquer um
+            elif award.kind != "quick_guess":  # os dois chutaram no mesmo tempo: esse empate pode ir para qualquer um
                 assert award.player_id == "a"
 
 
@@ -261,9 +260,10 @@ def test_absurd_award_shows_the_guess_and_the_answer():
     game = powered(rounds=2)
     ask(game, [a], a=900)
     ask(game, [a], a=100)
-    tally = game.tally
-    assert tally.worst["a"].value == 900 and tally.worst["a"].answer == 100
-    assert tally.exact["a"] == 1
+    assert game.worst_guesses["a"] == (900, 100, None)
+    absurd = game._award_contests([a])[0]
+    award = absurd.make("a", absurd.scores["a"])
+    assert (award.kind, award.guess, award.answer) == ("absurd", 900, 100)
 
 
 def test_a_guess_that_was_not_yours_does_not_count_for_awards():
@@ -273,37 +273,34 @@ def test_a_guess_that_was_not_yours_does_not_count_for_awards():
     give(game, "a", "swap", "b")
     ask(game, [a, b], a=900, b=100)
     assert result(game, "a").swapped_from == 900
-    assert game.tally.exact["a"] == 1  # só a primeira: a segunda veio da troca
-    assert "a" in game.tally.worst and game.tally.worst["a"].error == 0
+    assert game.tally.counts["exact"]["a"] == 1  # só a primeira: a segunda veio da troca
+    assert game.tally.peaks["absurd"]["a"] == 0
 
 
-def test_comeback_compares_the_middle_of_the_match_with_the_end():
-    tally = AwardTally(questions=4, half_places={"a": 3, "b": 1, "c": 2})
-    awards = tally.draw(["a", "b", "c"], random.Random(1))
-    assert [(x.kind, x.player_id, x.amount, x.from_place) for x in awards] == [("comeback", "a", 1, 3)]
-    assert AwardTally(questions=4, half_places={"a": 2, "b": 1}).draw(["a", "b"], random.Random(1)) == []
+def test_way_off_counts_errors_of_more_than_ten_times_the_answer():
+    a = P("a")
+    game = powered(rounds=3)
+    for value in (1200, 900, 1000):  # a resposta é 100: só o primeiro erra por mais de 1000%
+        ask(game, [a], a=value)
+    assert game.tally.counts["way_off"]["a"] == 1
 
 
-def test_an_award_stays_out_when_who_earned_it_already_has_another():
-    tally = AwardTally(questions=2, stolen=Counter({"a": 5, "b": 2}), exact=Counter({"a": 1}))
-    awards = tally.draw(["a", "b"], random.Random(1))
-    assert len(awards) == 1 and awards[0].player_id == "a"
+def test_way_off_ignores_questions_with_a_scale():
+    a = P("a")
+    game = powered(rounds=1)
+    game.questions = [question("q", 100, scale=10)]
+    ask(game, [a], a=1000)
+    assert result(game, "a").error_percent > 1000
+    assert game.tally.counts["way_off"]["a"] == 0
 
 
-def test_awards_ignore_who_left_and_never_pass_the_limit():
-    tally = AwardTally(
-        questions=2,
-        errors={p: [5.0, 5.0] for p in "abcdefg"},
-        seconds={"b": [2.0, 2.0]},
-        exact=Counter({"c": 1}),
-        stolen=Counter({"d": 5}),
-        thrown=Counter({"e": 3}),
-        received=Counter({"f": 3}),
-        falls={"g": 20, "gone": 90},
-    )
-    awards = tally.draw(list("abcdefg"), random.Random(1))
-    assert len(awards) == 3
-    assert all(award.player_id != "gone" for award in awards)
+def test_streaks_count_gains_and_losses_in_a_row():
+    a = P("a")
+    game = powered(rounds=4)
+    for value in (100, 115, 170, 170):
+        ask(game, [a], a=value)
+    assert game.tally.peaks["gain_streak"]["a"] == 2
+    assert game.tally.peaks["loss_streak"]["a"] == 2
 
 
 def test_sabotages_count_for_who_threw_and_who_was_hit():
@@ -314,13 +311,13 @@ def test_sabotages_count_for_who_threw_and_who_was_hit():
     give(game, "a", "mirror", "b", ids)
     give(game, "c", "mirror", "b", ids)
     ask(game, [a, b, c], a=100, b=100, c=100)
-    assert game.tally.thrown == Counter({"a": 1, "c": 1})
-    assert game.tally.received == Counter({"b": 2})
+    assert game.tally.counts["thrown"] == Counter({"a": 1, "c": 1})
+    assert game.tally.counts["received"] == Counter({"b": 2})
     game.legendaries.setdefault("a", []).append("mirror")
     game.arm("a", "mirror", None, list(ids), None, legendary=True)
     ask(game, [a, b, c], a=100, b=100, c=100)
-    assert game.tally.thrown == Counter({"a": 2, "c": 1})
-    assert game.tally.received == Counter({"b": 3, "c": 1})
+    assert game.tally.counts["thrown"] == Counter({"a": 2, "c": 1})
+    assert game.tally.counts["received"] == Counter({"b": 3, "c": 1})
 
 
 def test_a_reflected_sabotage_still_counts_for_who_threw_it():
@@ -331,7 +328,8 @@ def test_a_reflected_sabotage_still_counts_for_who_threw_it():
     ask(game, [a, b], a=100, b=100)
     give(game, "a", "mirror", "b")
     ask(game, [a, b], a=100, b=100)
-    assert game.tally.thrown == Counter({"a": 1}) and game.tally.received == Counter({"a": 1})
+    assert game.tally.counts["thrown"] == Counter({"a": 1})
+    assert game.tally.counts["received"] == Counter({"a": 1})
 
 
 def test_shield_holds_one_loss_and_then_ends():

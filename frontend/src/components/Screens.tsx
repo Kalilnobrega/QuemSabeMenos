@@ -336,11 +336,22 @@ interface PlayerPodiumProps extends Omit<EndScreenProps, 'children' | 'done' | '
   /** O que aparece no destaque de quem sabe menos (o último da lista). */
   worstLine: ReactNode
   /** A classificação completa, mostrada quando o pódio termina. */
+  /** Aparece entre o pódio e a classificação, quando as etapas do pódio acabam. */
+  extra?: ReactNode
   list: ReactNode
 }
 
 /** Fim de jogo em etapas: o pódio enche do 3º para o 1º, depois aparece quem sabe menos. */
-export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, worstLine, list }: PlayerPodiumProps) {
+export function PlayerPodium({
+  room,
+  playerId,
+  onPlayAgain,
+  onLeave,
+  ranked,
+  worstLine,
+  extra,
+  list,
+}: PlayerPodiumProps) {
   const worst = ranked.length > 1 ? ranked[ranked.length - 1] : null
   const places = PODIUM_PLACES.filter((p) => p.place <= ranked.length)
 
@@ -414,6 +425,7 @@ export function PlayerPodium({ room, playerId, onPlayAgain, onLeave, ranked, wor
         <Spotlight title="Quem sabe menos" icon={haha} player={worst.player} line={worstLine} tone="text-danger" />
       )}
 
+      {done && extra}
       {done && list}
     </EndScreen>
   )

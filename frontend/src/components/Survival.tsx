@@ -10,6 +10,7 @@ import { AnsweredAvatar } from './Answered'
 import { DaggerStrike } from './DaggerStrike'
 import { ResurrectionScene } from './ResurrectionScene'
 import { FactCard, PeekBadge } from './Game'
+import { MatchAwards } from './MatchAwards'
 import { BannerList, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
@@ -655,6 +656,7 @@ function SurvivalPodium({
       onLeave={onLeave}
       ranked={entries}
       worstLine="Primeiro a cair"
+      extra={<MatchAwards awards={survival.awards} players={room.players} playerId={playerId} />}
       list={
         <ol className="flex flex-col gap-2">
           {ranked.map((s) => {

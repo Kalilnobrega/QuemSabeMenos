@@ -19,11 +19,13 @@ from dataclasses import dataclass, field
 from typing import Literal, Protocol
 
 from app import powerups as pw
+from app.awards import MAX_QUICK_SECONDS, MIN_HOT_RUN, Contest, Tally, draw_awards, sabotages
 from app.duel import TRUE_FALSE_OPTIONS
 from app.engine import Revealed, RoomError
 from app.events import (
     Gift,
     LastingPowerUp,
+    MatchAward,
     PowerUp,
     PowerUpGain,
     PowerUpUse,
@@ -67,6 +69,9 @@ LAST_LIFE_STREAK = 2  # com 1 vida, um poder a cada 2 acertos seguidos (em vez d
 TRUE_FALSE_BLOCKED: frozenset[PowerUp] = frozenset({"fifty_fifty"})
 LASTING: dict[PowerUp, int] = {"shield": 2, "reverse": 3}
 GHOST_EVERY = 3  # perguntas entre um presente e outro para quem caiu
+MIN_THREAD_RUN = 3
+MIN_FIRST_FALL_PLAYERS = 3
+MIN_QUICK_ANSWERS = 3
 GHOST_SABOTAGES: tuple[PowerUp, ...] = ("scramble", "accelerator", "mirror", "magnifier", "flashbang")
 GHOST_RESURRECTION_CHANCE = 0.08
 
@@ -189,6 +194,8 @@ class Survival(Revealed):
     runs: dict[str, int] = field(default_factory=dict)  # acertos seguidos rumo ao próximo poder
     revived: list[str] = field(default_factory=list)  # ressuscitados nesta revelação
     stabs: list[Stab] = field(default_factory=list)  # Adagas usadas nesta revelação
+    tally: Tally = field(default_factory=Tally)  # para os prêmios do fim da partida
+    awards: list[MatchAward] = field(default_factory=list)
     blessed: set[str] = field(default_factory=set)  # quem ganhou a Bênção para a próxima pergunta
     blessing: set[str] = field(default_factory=set)  # quem vê a resposta certa nesta pergunta
     gifts: list[Gift] = field(default_factory=list)  # poderes ganhos nesta revelação
@@ -422,6 +429,7 @@ class Survival(Revealed):
         self.winner = winner
         self.duelists = []
         self.active = []
+        self.awards = draw_awards(self._award_contests(), [c.id for c in self.contenders], self.rng)
         self._enter("finished", now, 0)
 
     def _next_question(self, now: float) -> None:
@@ -485,6 +493,8 @@ class Survival(Revealed):
             self.picks.append(
                 SurvivalPick(player_id=pid, option=option, correct=correct, elapsed_ms=elapsed, lost_life=False)
             )
+        self._record_picks()
+        lives_before = {c.id: c.lives for c in self.contenders}
         counted = [p for p in self.picks if not p.hidden]
         wrong = [p for p in counted if not p.correct]
         if self.in_duel():
@@ -509,10 +519,59 @@ class Survival(Revealed):
             c = self.contender(pick.player_id)
             if c.lives <= 0 and c.alive:
                 c.out_round = self.round
+        self._record_losses(lives_before)
         if self.powers:
             self._gains()
             self.theme_choices = self._draw_theme_choices()
         self._enter("results", now, results_seconds(self.question.fact, self.powers))
+
+    def _record_picks(self) -> None:
+        for pick in self.picks:
+            pid = pick.player_id
+            if pick.hidden:
+                self.tally.add("hider", pid)
+                continue
+            self.tally.run("hot", pid, pick.correct)
+            self.tally.run("by_a_thread", pid, pick.correct and self.contender(pid).lives == 1)
+            if pick.elapsed_ms is not None:
+                self.tally.sample("seconds", pid, pick.elapsed_ms / 1000)
+
+    def _record_losses(self, lives_before: dict[str, int]) -> None:
+        """Depois das vidas de uma pergunta comum. No X1 a queda é a regra, então não conta aqui."""
+        for pick in self.picks:
+            pid = pick.player_id
+            if pick.cursed:
+                self.tally.add("cursed", pid, CURSE_LIVES)
+            if pick.pact_from:
+                self.tally.add("pact", pid)
+            if pick.stolen_by:
+                self.tally.add("life_thief", pick.stolen_by)
+            self.tally.peak("free_fall", pid, lives_before[pid] - self.contender(pid).lives)
+        if self.powers:
+            ids = [c.id for c in self.contenders]
+            self.tally.add_sabotages(*sabotages(self.active, TARGETED, ids))
+
+    def _award_contests(self) -> list[Contest]:
+        tally = self.tally
+        fallen = [c for c in self.contenders if c.out_round is not None]
+        first_round = min((c.out_round for c in fallen), default=None)
+        first = [c.id for c in fallen if c.out_round == first_round]
+        # Empatou na primeira queda, ou é só um contra um: a frase não diria nada.
+        first_fall = {first[0]: 1} if len(first) == 1 and len(self.contenders) >= MIN_FIRST_FALL_PLAYERS else {}
+        return [
+            tally.peaked("by_a_thread", minimum=MIN_THREAD_RUN),
+            Contest("first_fall", first_fall),
+            tally.peaked("hot", minimum=MIN_HOT_RUN),
+            tally.mean("quick_answer", "seconds", MAX_QUICK_SECONDS, MIN_QUICK_ANSWERS),
+            tally.peaked("free_fall", minimum=2),
+            tally.counted("hider"),
+            tally.counted("assassin"),
+            tally.counted("stabbed"),
+            tally.counted("life_thief"),
+            tally.counted("cursed"),
+            tally.counted("pact"),
+            *tally.sabotage_contests(),
+        ]
 
     def _shielded(self, pick: SurvivalPick) -> bool:
         """O Escudo segura a vida (e a Maldição junto)."""
@@ -719,6 +778,9 @@ class Survival(Revealed):
             self.blessed.add(player_id)
             self._reward_survivors()
         self.stabs.append(Stab(by=player_id, target=target.id, eliminated=eliminated))
+        self.tally.add("stabbed", target.id)
+        if eliminated:
+            self.tally.add("assassin", player_id)
 
     def _resurrect(self, player_id: str) -> None:
         c = self.contender(player_id)
@@ -764,6 +826,7 @@ class Survival(Revealed):
                 if pid != viewer:
                     peek[option] += 1
         return SurvivalView(
+            awards=self.awards if self.phase == "finished" else [],
             kind=self.kind,
             phase=self.phase,
             phase_duration_ms=round((ends_at - self.phase_started_at) * 1000),
