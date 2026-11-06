@@ -120,6 +120,462 @@
       "text": "A Bíblia tem o mesmo número de livros em todas as igrejas cristãs.",
       "answer": false,
       "fact": "A Bíblia protestante tem 66 livros, a católica tem 73, e algumas ortodoxas têm ainda mais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Torre de Pisa é inclinada.",
+      "answer": true,
+      "fact": "O solo mole cedeu durante a própria construção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um elefante é mais leve que um cavalo.",
+      "answer": false,
+      "fact": "Um elefante pesa várias toneladas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O chiclete leva sete anos para sair do estômago.",
+      "answer": false,
+      "fact": "Ele é eliminado em poucos dias, como outros alimentos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O zíper foi inventado antes do velcro.",
+      "answer": true,
+      "fact": "O velcro só surgiu nos anos 1940."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O velcro foi inventado pela NASA.",
+      "answer": false,
+      "fact": "Foi um engenheiro suíço, inspirado em sementes que grudavam no cachorro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O lápis não tem chumbo.",
+      "answer": true,
+      "fact": "O miolo dele é de grafite e argila."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O nome \"grafite\" vem do chumbo.",
+      "answer": false,
+      "fact": "Ele vem do grego \"graphein\", que quer dizer escrever."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O relógio de sol não funciona à noite.",
+      "answer": true,
+      "fact": "Sem a luz, a sombra não aparece."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O sinal vermelho no semáforo indica \"siga\".",
+      "answer": false,
+      "fact": "O vermelho indica \"pare\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O semáforo foi inventado antes do carro se popularizar.",
+      "answer": true,
+      "fact": "O primeiro foi instalado em Londres, em 1868."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Dia do Trabalho no Brasil é em 1º de junho.",
+      "answer": false,
+      "fact": "Ele é comemorado em 1º de maio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Dia do Trabalhador é comemorado em 1º de maio.",
+      "answer": true,
+      "fact": "A data lembra greves em Chicago, em 1886."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Dia das Mães, no Brasil, é em dezembro.",
+      "answer": false,
+      "fact": "Ele é no segundo domingo de maio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Dia dos Namorados no Brasil é em 12 de junho.",
+      "answer": true,
+      "fact": "A data é a véspera do dia de Santo Antônio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Dia dos Namorados no Brasil é em 14 de fevereiro.",
+      "answer": false,
+      "fact": "Essa data é a de muitos outros países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 13 é considerado azarado em muitos lugares.",
+      "answer": true,
+      "fact": "Muitos prédios pulam esse andar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O trevo de quatro folhas é visto como sinal de azar.",
+      "answer": false,
+      "fact": "Ele é visto como sinal de boa sorte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Passar debaixo de uma escada é visto como azar.",
+      "answer": true,
+      "fact": "Uma das origens é o medo de que algo caia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Gato preto é sinal de sorte na tradição brasileira.",
+      "answer": false,
+      "fact": "Aqui, a superstição diz que ele traz azar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Bater na madeira serve para afastar o azar, segundo a superstição.",
+      "answer": true,
+      "fact": "O gesto é conhecido em muitos países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na Itália, o número do azar é o 13, e não o 17.",
+      "answer": false,
+      "fact": "Lá, o número mais temido é o 17."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No Japão, o número 4 é visto como azarado.",
+      "answer": true,
+      "fact": "A pronúncia dele lembra a palavra \"morte\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Na China, o 8 é visto como número azarado.",
+      "answer": false,
+      "fact": "Ele é visto como número da sorte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os Jogos Olímpicos de Pequim começaram em 8/8/2008, às 20h08.",
+      "answer": true,
+      "fact": "O número 8 é sinônimo de sorte na China."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Oscar é um prêmio de literatura.",
+      "answer": false,
+      "fact": "Ele é um prêmio de cinema."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Nobel da Paz é entregue na Noruega.",
+      "answer": true,
+      "fact": "Os outros são entregues na Suécia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Nobel de Matemática é o mais antigo de todos.",
+      "answer": false,
+      "fact": "Não existe Nobel de Matemática."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma maratona tem mais de 42 quilômetros.",
+      "answer": true,
+      "fact": "A distância oficial é de 42,195 km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um quilômetro é mais longo que uma milha terrestre.",
+      "answer": false,
+      "fact": "A milha terrestre tem cerca de 1,6 km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O ouro não enferruja.",
+      "answer": true,
+      "fact": "Ele é um dos metais menos reativos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O diamante é feito de ferro.",
+      "answer": false,
+      "fact": "Ele é carbono puro em forma cristalina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O grafite e o diamante são feitos do mesmo elemento.",
+      "answer": true,
+      "fact": "Os dois são formas de carbono."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um dia em Marte é igual a um ano na Terra.",
+      "answer": false,
+      "fact": "Um dia de Marte tem pouco mais de 24 horas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sal de cozinha é feito de açúcar.",
+      "answer": false,
+      "fact": "Ele é cloreto de sódio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O prédio mais alto do mundo tem mais de 800 metros.",
+      "answer": true,
+      "fact": "O Burj Khalifa tem 828 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O papel higiênico foi inventado no século XX.",
+      "answer": false,
+      "fact": "Os chineses já usavam papel com essa função séculos antes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O garfo demorou séculos para ser aceito na Europa.",
+      "answer": true,
+      "fact": "Muitos o viam como luxo exagerado e até pecado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sanduíche recebeu o nome de um padeiro francês.",
+      "answer": false,
+      "fact": "O nome vem do Conde de Sandwich, um nobre inglês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A palavra \"saudade\" é muito citada como difícil de traduzir.",
+      "answer": true,
+      "fact": "Ela é vista como um símbolo da língua portuguesa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Esperanto é a língua oficial da ONU.",
+      "answer": false,
+      "fact": "Ele foi criado em 1887 e não é oficial na ONU."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Esperanto foi criado por um oftalmologista polonês.",
+      "answer": true,
+      "fact": "L. L. Zamenhof queria uma língua sem fronteiras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O calendário gregoriano foi criado por Júlio César.",
+      "answer": false,
+      "fact": "O papa Gregório XIII o criou em 1582."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Países pularam dias na adoção do calendário gregoriano.",
+      "answer": true,
+      "fact": "Em 1582, em alguns países, o dia 4 de outubro foi seguido do dia 15."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A guilhotina foi criada para execuções em massa na Idade Média.",
+      "answer": false,
+      "fact": "Ela ficou famosa na Revolução Francesa, no fim do século XVIII."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O código de barras foi usado pela primeira vez em um chiclete.",
+      "answer": true,
+      "fact": "O pacote foi escaneado em Ohio, em 1974."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A primeira patente do telefone foi registrada em 1950.",
+      "answer": false,
+      "fact": "Alexander Graham Bell a registrou em 1876."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Thomas Edison criou o fonógrafo.",
+      "answer": true,
+      "fact": "Ele o apresentou em 1877."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Edison inventou a corrente alternada.",
+      "answer": false,
+      "fact": "Ele defendia a contínua, e Tesla a alternada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Dia Mundial do Livro é em 23 de abril.",
+      "answer": true,
+      "fact": "A data é ligada à morte de Cervantes e de Shakespeare."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Sherlock Holmes foi uma pessoa real.",
+      "answer": false,
+      "fact": "Ele é um personagem de Arthur Conan Doyle."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A frase \"Elementar, meu caro Watson\" não aparece nos livros de Conan Doyle.",
+      "answer": true,
+      "fact": "Ela foi popularizada depois, em outras obras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Napoleão era bem mais baixo que a média dos franceses.",
+      "answer": false,
+      "fact": "A altura dele estava na média da época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os vikings não usavam capacete com chifres, segundo a arqueologia.",
+      "answer": true,
+      "fact": "A imagem veio de figurinos do século XIX."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Grande Muralha é vista facilmente da Lua a olho nu.",
+      "answer": false,
+      "fact": "A estrutura é estreita demais para isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um \"ano-luz\" é uma medida de distância.",
+      "answer": true,
+      "fact": "Equivale a cerca de 9,46 trilhões de quilômetros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Empire State é atingido por raios muitas vezes por ano.",
+      "answer": true,
+      "fact": "A média é de cerca de 25."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os touros ficam furiosos com a cor vermelha.",
+      "answer": false,
+      "fact": "Eles reagem ao movimento da capa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "As notas de dólar são feitas principalmente de algodão.",
+      "answer": true,
+      "fact": "A mistura também leva um pouco de linho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Humanos usam apenas 10% do cérebro.",
+      "answer": false,
+      "fact": "Exames mostram uso de praticamente todo o órgão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A unha e o cabelo são feitos de queratina.",
+      "answer": true,
+      "fact": "Os chifres de alguns animais também são."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Morcegos são completamente cegos.",
+      "answer": false,
+      "fact": "Todas as espécies enxergam em algum grau."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Mona Lisa já foi roubada do Louvre.",
+      "answer": true,
+      "fact": "Foi em 1911, e ela voltou em 1913."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O número de ossos é igual em bebês e adultos.",
+      "answer": false,
+      "fact": "Bebês têm mais, pois muitos se fundem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um relógio analógico anda no sentido anti-horário.",
+      "answer": false,
+      "fact": "O sentido vem do relógio de sol no Hemisfério Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A água ferve a uma temperatura menor em lugares muito altos.",
+      "answer": true,
+      "fact": "No Everest, ela ferve perto de 70 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O telefone de emergência da polícia no Brasil é o 190.",
+      "answer": true,
+      "fact": "O dos bombeiros é o 193 e o do Samu é o 192."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número do Samu, no Brasil, é o 100.",
+      "answer": false,
+      "fact": "O número do Samu é o 192."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O termo \"OK\" surgiu como brincadeira em jornais americanos.",
+      "answer": true,
+      "fact": "Ele apareceu em 1839 como abreviação de \"oll korrect\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A palavra \"tchau\" vem do francês.",
+      "answer": false,
+      "fact": "Ela vem do italiano \"ciao\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "As notas de real têm animais em cada valor.",
+      "answer": true,
+      "fact": "A arara está na de 10 reais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A nota de 20 reais traz o rosto de um presidente.",
+      "answer": false,
+      "fact": "Ela traz o mico-leão-dourado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A primavera no Brasil começa em setembro.",
+      "answer": true,
+      "fact": "No Hemisfério Sul, as estações são invertidas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No Brasil, o inverno começa em dezembro.",
+      "answer": false,
+      "fact": "Ele começa em junho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A medalha olímpica de ouro é feita totalmente de ouro.",
+      "answer": false,
+      "fact": "Ela é quase toda de prata, com banho de ouro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Coroa Imperial britânica tem mais de 2.800 diamantes.",
+      "answer": true,
+      "fact": "Ela também tem safiras e rubis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A meta de 10 mil passos veio de uma pesquisa médica dos anos 1990.",
+      "answer": false,
+      "fact": "Ela nasceu de um pedômetro japonês nos anos 1960."
     }
   ]
 }

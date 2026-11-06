@@ -120,6 +120,462 @@
       "text": "A banda Legião Urbana surgiu em São Paulo.",
       "answer": false,
       "fact": "A Legião Urbana surgiu em Brasília, em 1982, assim como Capital Inicial e Plebe Rude."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tom Hanks ganhou dois Oscars seguidos.",
+      "answer": true,
+      "fact": "Foi por \"Filadélfia\" e \"Forrest Gump\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Leonardo DiCaprio ganhou seu primeiro Oscar por \"Titanic\".",
+      "answer": false,
+      "fact": "Ele ganhou por \"O Regresso\", em 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Heath Ledger ganhou o Oscar depois de morrer.",
+      "answer": true,
+      "fact": "Foi pelo papel de Coringa em \"Batman: O Cavaleiro das Trevas\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Robert Downey Jr. interpretou o Capitão América.",
+      "answer": false,
+      "fact": "Ele interpretou o Homem de Ferro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Chris Evans interpretou o Capitão América.",
+      "answer": true,
+      "fact": "Ele já tinha sido o Tocha Humana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Thanos é um vilão da DC Comics.",
+      "answer": false,
+      "fact": "Thanos é da Marvel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Superman nasceu em Krypton.",
+      "answer": true,
+      "fact": "Os pais dele o enviaram à Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Batman nasceu em Krypton.",
+      "answer": false,
+      "fact": "O Batman é Bruce Wayne, um humano de Gotham."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Wakanda é o país do Pantera Negra.",
+      "answer": true,
+      "fact": "É um país fictício da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Stan Lee ajudou a criar o Homem-Aranha.",
+      "answer": true,
+      "fact": "Steve Ditko também é cocriador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Yoda é um personagem de \"Star Trek\".",
+      "answer": false,
+      "fact": "Ele é de \"Star Wars\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Han Solo é o pai de Luke Skywalker.",
+      "answer": false,
+      "fact": "O pai é Darth Vader."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Frodo é o portador do Um Anel.",
+      "answer": true,
+      "fact": "Sam o ajuda até o fim."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Hogwarts é uma escola de magia.",
+      "answer": true,
+      "fact": "Ela fica na Escócia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Harry Potter é da casa Sonserina.",
+      "answer": false,
+      "fact": "Ele é da Grifinória."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Hermione Granger é filha de pais trouxas.",
+      "answer": true,
+      "fact": "Os pais dela são dentistas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dumbledore é um personagem de \"O Senhor dos Anéis\".",
+      "answer": false,
+      "fact": "Ele é de \"Harry Potter\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Shrek é um ogro.",
+      "answer": true,
+      "fact": "O primeiro filme é de 2001."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Simba é um tigre.",
+      "answer": false,
+      "fact": "Simba é um leão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Elsa tem poderes de gelo.",
+      "answer": true,
+      "fact": "Ela é rainha de Arendelle."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Ariel é uma princesa do Egito.",
+      "answer": false,
+      "fact": "Ela é uma sereia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Nemo é um peixe-palhaço.",
+      "answer": true,
+      "fact": "O filme é de 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Woody é um astronauta.",
+      "answer": false,
+      "fact": "Woody é um cowboy, e Buzz é o astronauta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Mickey Mouse estreou em 1928.",
+      "answer": true,
+      "fact": "O desenho se chama \"Steamboat Willie\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Bob Esponja mora em uma lata.",
+      "answer": false,
+      "fact": "Ele mora em um abacaxi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Homer Simpson trabalha em uma usina nuclear.",
+      "answer": true,
+      "fact": "O chefe dele é o Sr. Burns."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os Simpsons moram em Nova York.",
+      "answer": false,
+      "fact": "Eles moram em Springfield."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Friends se passa em Nova York.",
+      "answer": true,
+      "fact": "Os amigos se encontram no café Central Perk."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Breaking Bad é sobre um advogado.",
+      "answer": false,
+      "fact": "É sobre um professor de química que fabrica drogas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Stranger Things se passa nos anos 1980.",
+      "answer": true,
+      "fact": "A cidade fictícia se chama Hawkins."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Round 6 é uma série japonesa.",
+      "answer": false,
+      "fact": "É uma série sul-coreana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "La Casa de Papel é uma série espanhola.",
+      "answer": true,
+      "fact": "A Netflix a tornou mundial."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Parasita\" é um filme japonês.",
+      "answer": false,
+      "fact": "É um filme sul-coreano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Parasita\" foi o primeiro filme não falado em inglês a vencer o Oscar de Melhor Filme.",
+      "answer": true,
+      "fact": "A premiação foi em 2020."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Titanic\" ganhou 15 Oscars.",
+      "answer": false,
+      "fact": "Ganhou 11, o recorde empatado com outros dois filmes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"O Rei Leão\" tem cenas inspiradas em Hamlet.",
+      "answer": true,
+      "fact": "A história tem um tio que mata o rei, pai do herói."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Cidadão Kane\" foi um grande sucesso de bilheteria em 1941.",
+      "answer": false,
+      "fact": "Foi um fracasso, e só depois virou clássico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Rosebud\" é o nome do trenó de Charles Foster Kane.",
+      "answer": true,
+      "fact": "Essa é a última palavra dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hitchcock ganhou o Oscar de Melhor Direção cinco vezes.",
+      "answer": false,
+      "fact": "Ele nunca ganhou um Oscar de direção competitivo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A cena do chuveiro de \"Psicose\" usou calda de chocolate como sangue.",
+      "answer": true,
+      "fact": "O filme é em preto e branco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"O Mágico de Oz\" foi filmado todo em preto e branco.",
+      "answer": false,
+      "fact": "A parte em Oz é colorida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "James Cameron dirigiu \"Titanic\" e \"Avatar\".",
+      "answer": true,
+      "fact": "Os dois foram os filmes mais lucrativos de suas épocas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Steven Spielberg dirigiu \"Star Wars\".",
+      "answer": false,
+      "fact": "Foi George Lucas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "George Lucas e Spielberg criaram Indiana Jones juntos.",
+      "answer": true,
+      "fact": "Harrison Ford foi escolhido para o papel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Marlon Brando aceitou com alegria o Oscar por \"O Poderoso Chefão\".",
+      "answer": false,
+      "fact": "Ele recusou o prêmio, em protesto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Al Pacino quase foi rejeitado pelo estúdio para \"O Poderoso Chefão\".",
+      "answer": true,
+      "fact": "Coppola insistiu nele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Tom Hanks interpretou Rambo.",
+      "answer": false,
+      "fact": "Foi Sylvester Stallone."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Stallone escreveu o roteiro de \"Rocky\".",
+      "answer": true,
+      "fact": "Ele só vendeu com a condição de ser o protagonista."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Rocky Balboa é de Chicago.",
+      "answer": false,
+      "fact": "Ele é da Filadélfia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Keanu Reeves nasceu no Líbano.",
+      "answer": true,
+      "fact": "Ele cresceu em Toronto, no Canadá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Julia Roberts ganhou o Oscar por \"Uma Linda Mulher\".",
+      "answer": false,
+      "fact": "Ela ganhou por \"Erin Brockovich\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Meryl Streep tem mais de 20 indicações ao Oscar.",
+      "answer": true,
+      "fact": "É a recordista entre atores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Audrey Hepburn nunca ganhou um Oscar.",
+      "answer": false,
+      "fact": "Ela ganhou por \"A Princesa e o Plebeu\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Grace Kelly virou princesa de Mônaco.",
+      "answer": true,
+      "fact": "Ela abandonou o cinema depois de se casar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Marilyn Monroe é a atriz de \"Bonequinha de Luxo\".",
+      "answer": false,
+      "fact": "Foi Audrey Hepburn."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Fernanda Torres é filha de Fernanda Montenegro.",
+      "answer": true,
+      "fact": "As duas têm ligação com o Oscar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Wagner Moura interpretou Pablo Escobar em um filme americano de 2002.",
+      "answer": false,
+      "fact": "Ele fez esse papel na série \"Narcos\", de 2015."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Wagner Moura interpretou o Capitão Nascimento.",
+      "answer": true,
+      "fact": "O filme é \"Tropa de Elite\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Cidade de Deus\" se passa em São Paulo.",
+      "answer": false,
+      "fact": "Ele se passa no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Central do Brasil\" foi dirigido por Walter Salles.",
+      "answer": true,
+      "fact": "Ele também dirigiu \"Ainda Estou Aqui\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Bacurau\" é um filme argentino.",
+      "answer": false,
+      "fact": "É um filme brasileiro, de Kleber Mendonça Filho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Seu Madruga é o dono da vila do Chaves.",
+      "answer": false,
+      "fact": "O dono é o Senhor Barriga."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Silvio Santos foi o dono do SBT.",
+      "answer": true,
+      "fact": "Ele morreu em 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Xuxa foi a primeira apresentadora do \"Jornal Nacional\".",
+      "answer": false,
+      "fact": "Ela ficou famosa em programas infantis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Cid Moreira foi o primeiro apresentador do \"Jornal Nacional\".",
+      "answer": true,
+      "fact": "Ele apresentou por 27 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Mulher-Maravilha é uma personagem da Marvel.",
+      "answer": false,
+      "fact": "Ela pertence à DC Comics."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Darth Vader se chamava Anakin Skywalker antes de ir para o lado sombrio.",
+      "answer": true,
+      "fact": "Ele foi um cavaleiro Jedi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Gandalf é um hobbit do Condado.",
+      "answer": false,
+      "fact": "Ele é um mago, bem mais velho que os hobbits."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Roberto Gómez Bolaños criou e interpretou o Chaves.",
+      "answer": true,
+      "fact": "O apelido dele era Chespirito."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Rodrigo Santoro interpretou Xerxes em \"300\".",
+      "answer": true,
+      "fact": "O filme é de 2006."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Leonardo DiCaprio protagonizou \"Forrest Gump\".",
+      "answer": false,
+      "fact": "Quem fez o papel foi Tom Hanks."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Frodo é o protagonista de \"Harry Potter\".",
+      "answer": false,
+      "fact": "Ele é o protagonista de \"O Senhor dos Anéis\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Stan Lee participou de muitos filmes da Marvel em pequenas pontas.",
+      "answer": true,
+      "fact": "Ele apareceu até depois de sua morte, em 2018."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro \"Star Wars\" estreou em 1990.",
+      "answer": false,
+      "fact": "Ele estreou em 1977."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Fernanda Torres ganhou um Globo de Ouro por \"Ainda Estou Aqui\".",
+      "answer": true,
+      "fact": "A atriz é filha de Fernanda Montenegro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Cidade de Deus\" foi dirigido por Walter Salles.",
+      "answer": false,
+      "fact": "Foi dirigido por Fernando Meirelles e Kátia Lund."
     }
   ]
 }

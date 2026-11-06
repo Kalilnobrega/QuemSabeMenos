@@ -120,6 +120,462 @@
       "text": "No basquete, toda cesta de fora do garrafão vale 3 pontos.",
       "answer": false,
       "fact": "Só vale 3 pontos o arremesso de trás da linha dos três pontos. Entre o garrafão e essa linha, vale 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil ganhou a Copa do Mundo de 1970.",
+      "answer": true,
+      "fact": "Ela foi disputada no México."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil ganhou a Copa do Mundo de 2014.",
+      "answer": false,
+      "fact": "A Alemanha foi a campeã."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Maradona é brasileiro.",
+      "answer": false,
+      "fact": "Ele é argentino."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Messi ganhou a Copa de 2022.",
+      "answer": true,
+      "fact": "A final foi contra a França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Cristiano Ronaldo já ganhou uma Copa do Mundo.",
+      "answer": false,
+      "fact": "Ele nunca venceu a Copa, mas ganhou a Eurocopa de 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Neymar passou Pelé em gols pela Seleção, nos dados da FIFA.",
+      "answer": true,
+      "fact": "Foi em 2023, contra a Bolívia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Zico ganhou uma Copa do Mundo como jogador.",
+      "answer": false,
+      "fact": "Ele nunca foi campeão mundial pela Seleção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Maracanã fica no Rio de Janeiro.",
+      "answer": true,
+      "fact": "Ele foi inaugurado em 1950."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Morumbi fica em Belo Horizonte.",
+      "answer": false,
+      "fact": "Ele fica em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Jordan jogou no Chicago Bulls.",
+      "answer": true,
+      "fact": "Ele ganhou seis títulos lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Jordan jogou no Los Angeles Lakers.",
+      "answer": false,
+      "fact": "Ele jogou no Bulls e no Washington Wizards."
+    },
+    {
+      "difficulty": "medium",
+      "text": "LeBron James é o maior pontuador da história da NBA.",
+      "answer": true,
+      "fact": "Ele passou Kareem em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Stephen Curry é um jogador de futebol americano.",
+      "answer": false,
+      "fact": "Ele joga basquete no Golden State."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tom Brady ganhou sete Super Bowls.",
+      "answer": true,
+      "fact": "Seis pelo New England Patriots e um pelo Tampa Bay."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um gol de futebol vale três pontos.",
+      "answer": false,
+      "fact": "Uma vitória vale três pontos, e o gol é só um."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um time de basquete tem 11 jogadores em quadra.",
+      "answer": false,
+      "fact": "Cada time tem cinco jogadores em quadra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma maratona tem cerca de 42 km.",
+      "answer": true,
+      "fact": "O número exato é 42,195 km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma maratona tem 100 km.",
+      "answer": false,
+      "fact": "Ela tem 42,195 km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O judô foi criado no Japão.",
+      "answer": true,
+      "fact": "O criador foi Jigoro Kano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O caratê foi criado no Brasil.",
+      "answer": false,
+      "fact": "Ele veio de Okinawa, no Japão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capoeira é Patrimônio da Humanidade.",
+      "answer": true,
+      "fact": "O título é de 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O surfe nunca foi um esporte olímpico.",
+      "answer": false,
+      "fact": "Ele estreou em Tóquio, em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O skate estreou nas Olimpíadas de Tóquio.",
+      "answer": true,
+      "fact": "Rayssa Leal ganhou a prata lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Rayssa Leal é uma nadadora.",
+      "answer": false,
+      "fact": "Ela é uma skatista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Usain Bolt é o recordista mundial dos 100 metros.",
+      "answer": true,
+      "fact": "A marca é de 9,58 segundos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Usain Bolt nasceu nos Estados Unidos.",
+      "answer": false,
+      "fact": "Ele nasceu na Jamaica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Phelps é o maior medalhista olímpico da história.",
+      "answer": true,
+      "fact": "Ele tem 28 medalhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Ayrton Senna foi tricampeão de Fórmula 1.",
+      "answer": true,
+      "fact": "Ele conquistou os títulos pela McLaren."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Ayrton Senna morreu no Brasil.",
+      "answer": false,
+      "fact": "Ele morreu em Ímola, na Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Nelson Piquet foi tricampeão de Fórmula 1.",
+      "answer": true,
+      "fact": "O último título veio em 1987."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Emerson Fittipaldi nunca foi campeão da Fórmula 1.",
+      "answer": false,
+      "fact": "Ele foi campeão duas vezes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Ferrari é uma equipe italiana.",
+      "answer": true,
+      "fact": "Ela está na Fórmula 1 desde 1950."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Jules Rimet foi roubada no Brasil em 1983.",
+      "answer": true,
+      "fact": "Ela nunca foi recuperada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Pelé tinha 17 anos na Copa de 1958.",
+      "answer": true,
+      "fact": "Ele fez dois gols na final contra a Suécia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Garrincha jogou a vida inteira no Santos.",
+      "answer": false,
+      "fact": "Ele foi ídolo do Botafogo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Rogério Ceni foi goleiro e marcou mais de 100 gols.",
+      "answer": true,
+      "fact": "Ele é o maior goleiro artilheiro da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Lev Yashin era um goleiro brasileiro.",
+      "answer": false,
+      "fact": "Ele era soviético e ganhou a Bola de Ouro em 1963."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O gol olímpico é feito direto de escanteio.",
+      "answer": true,
+      "fact": "O nome surgiu em 1924, em um jogo contra os campeões olímpicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Copa de 2026 terá 48 seleções.",
+      "answer": true,
+      "fact": "Ela será nos EUA, no México e no Canadá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A primeira Copa do Mundo foi disputada na Itália.",
+      "answer": false,
+      "fact": "Foi no Uruguai, em 1930."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Uruguai foi a primeira seleção campeã do mundo.",
+      "answer": true,
+      "fact": "O título veio em casa, em 1930."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Alemanha é a maior campeã da Copa do Mundo.",
+      "answer": false,
+      "fact": "O Brasil é o maior campeão, com cinco títulos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Real Madrid é o maior campeão da Champions League.",
+      "answer": true,
+      "fact": "O clube tem mais de 15 títulos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Barcelona é o maior campeão da Champions League.",
+      "answer": false,
+      "fact": "O Real Madrid tem o recorde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Independiente é o maior campeão da Libertadores.",
+      "answer": true,
+      "fact": "O time argentino tem sete títulos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Palmeiras é o único brasileiro a vencer a Libertadores.",
+      "answer": false,
+      "fact": "Vários outros também venceram."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Marta é a maior artilheira das Copas do Mundo, entre homens e mulheres.",
+      "answer": true,
+      "fact": "Ela marcou 17 gols."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Formiga nunca jogou uma Copa do Mundo.",
+      "answer": false,
+      "fact": "Ela disputou sete."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hortência foi uma estrela do basquete brasileiro.",
+      "answer": true,
+      "fact": "Ela foi campeã mundial em 1994."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Oscar Schmidt jogou por muitos anos na NBA.",
+      "answer": false,
+      "fact": "Ele nunca jogou lá, para poder defender a Seleção."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O futebol americano teve Tom Brady como estrela.",
+      "answer": true,
+      "fact": "Ele se aposentou em 2023."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Super Bowl é a final da NBA.",
+      "answer": false,
+      "fact": "Ele é a final da NFL."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Serena Williams venceu 23 Grand Slams em simples.",
+      "answer": true,
+      "fact": "É o recorde da Era Aberta entre mulheres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Nadal ganhou Roland Garros 14 vezes.",
+      "answer": true,
+      "fact": "Nenhum outro tenista chegou perto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Guga venceu Wimbledon três vezes.",
+      "answer": false,
+      "fact": "Ele venceu Roland Garros três vezes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Tour de France existe desde 1903.",
+      "answer": true,
+      "fact": "Foi criado por um jornal francês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Lance Armstrong manteve seus sete títulos do Tour.",
+      "answer": false,
+      "fact": "Ele perdeu todos por doping, em 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Ben Johnson perdeu o ouro em Seul por doping.",
+      "answer": true,
+      "fact": "Carl Lewis ficou com a medalha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Olimpíada de 2016 foi em São Paulo.",
+      "answer": false,
+      "fact": "Ela foi no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Mike Tyson mordeu a orelha de Evander Holyfield.",
+      "answer": true,
+      "fact": "O caso aconteceu em 1997."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Muhammad Ali nasceu com esse nome.",
+      "answer": false,
+      "fact": "O nome dele era Cassius Clay."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Anderson Silva foi campeão do UFC.",
+      "answer": true,
+      "fact": "Ele foi um dos maiores lutadores da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Royce Gracie venceu o primeiro evento do UFC.",
+      "answer": true,
+      "fact": "O ano foi 1993."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Pelé jogou nas Copas de 1958, 1962, 1966 e 1970.",
+      "answer": true,
+      "fact": "Foram quatro Copas, e ele venceu três."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O vôlei é jogado com sete atletas em quadra por time.",
+      "answer": false,
+      "fact": "São seis atletas em quadra por time."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Phelps é um velocista olímpico de atletismo.",
+      "answer": false,
+      "fact": "Ele é nadador, com 28 medalhas olímpicas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil ganhou a Copa de 1958 em solo inglês.",
+      "answer": false,
+      "fact": "A final foi na Suécia, contra os donos da casa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um hat-trick é quando um jogador faz dois gols em uma partida.",
+      "answer": false,
+      "fact": "O termo indica três gols de um mesmo jogador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Roger Federer nasceu na Espanha.",
+      "answer": false,
+      "fact": "Ele nasceu na Suíça, em Basileia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil é o único país a ter disputado todas as Copas do Mundo.",
+      "answer": true,
+      "fact": "A presença vem desde 1930."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Michael Phelps foi campeão olímpico no atletismo.",
+      "answer": false,
+      "fact": "Ele conquistou suas medalhas na natação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O vôlei foi criado nos Estados Unidos.",
+      "answer": true,
+      "fact": "William Morgan o inventou em 1895."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O surfe nunca foi modalidade olímpica.",
+      "answer": false,
+      "fact": "Ele estreou nos Jogos de Tóquio, em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Fórmula 1 surgiu nos anos 1980.",
+      "answer": false,
+      "fact": "A primeira temporada oficial foi em 1950."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A regra do impedimento existe desde o século XIX.",
+      "answer": true,
+      "fact": "Ela já aparecia nas primeiras regras inglesas, de 1863."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em uma partida de tênis, um \"ás\" é um erro de quem saca.",
+      "answer": false,
+      "fact": "O ás é o saque em que o adversário nem encosta na bola."
     }
   ]
 }

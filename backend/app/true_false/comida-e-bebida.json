@@ -120,6 +120,462 @@
       "text": "O vinho do Porto é produzido na Espanha.",
       "answer": false,
       "fact": "O vinho do Porto vem do Vale do Douro, em Portugal, e leva o nome da cidade de onde era exportado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O tomate é uma fruta, botanicamente falando.",
+      "answer": true,
+      "fact": "Nos EUA, a Justiça o classificou como verdura em 1893."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O amendoim cresce em árvores.",
+      "answer": false,
+      "fact": "Ele cresce debaixo da terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O amendoim é uma leguminosa.",
+      "answer": true,
+      "fact": "Ele é parente do feijão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A banana nasce de uma árvore com tronco de madeira.",
+      "answer": false,
+      "fact": "A bananeira é uma erva gigante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O morango não é uma baga, botanicamente.",
+      "answer": true,
+      "fact": "As sementes ficam do lado de fora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A abóbora é um legume, botanicamente.",
+      "answer": false,
+      "fact": "Botanicamente, ela é um fruto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A pimenta arde por causa da capsaicina.",
+      "answer": true,
+      "fact": "A substância \"engana\" os sensores de calor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Beber água alivia bem o ardor da pimenta.",
+      "answer": false,
+      "fact": "Leite funciona melhor, porque a capsaicina se dissolve em gordura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O leite alivia o ardor da pimenta.",
+      "answer": true,
+      "fact": "A caseína e a gordura do leite ajudam."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A cachaça é feita de milho.",
+      "answer": false,
+      "fact": "Ela é feita de cana-de-açúcar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O saquê é feito de arroz.",
+      "answer": true,
+      "fact": "A bebida é tradicional no Japão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A cerveja é feita principalmente com malte de cevada.",
+      "answer": true,
+      "fact": "Ela também leva lúpulo e levedura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A tequila é feita de uva.",
+      "answer": false,
+      "fact": "Ela é feita de agave azul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A vodca pode ser feita de batata.",
+      "answer": true,
+      "fact": "Muitas marcas usam cereais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O chocolate branco leva muita massa de cacau.",
+      "answer": false,
+      "fact": "Ele leva manteiga de cacau, mas sem a massa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O café é o fruto de um arbusto.",
+      "answer": true,
+      "fact": "Os grãos são as sementes do fruto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil é o maior produtor de vinho do mundo.",
+      "answer": false,
+      "fact": "Itália, França e Espanha lideram essa produção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil é o maior produtor de café do mundo.",
+      "answer": true,
+      "fact": "Ele produz cerca de um terço do total mundial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil é o maior produtor mundial de arroz.",
+      "answer": false,
+      "fact": "China e Índia lideram essa produção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil é o maior produtor de cana-de-açúcar do mundo.",
+      "answer": true,
+      "fact": "O estado de São Paulo é o líder."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O sushi tem origem na Itália.",
+      "answer": false,
+      "fact": "Ele tem origem na Ásia, e foi refinado no Japão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O ketchup já foi vendido como remédio nos EUA.",
+      "answer": true,
+      "fact": "Isso aconteceu no século XIX."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Hambúrguer é originalmente feito de porco.",
+      "answer": false,
+      "fact": "A carne tradicional é bovina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O carbonara tradicional não leva creme de leite.",
+      "answer": true,
+      "fact": "A cremosidade vem do ovo e do queijo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A pizza havaiana foi inventada no Havaí.",
+      "answer": false,
+      "fact": "Ela foi criada por um grego, no Canadá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A pizza havaiana foi inventada no Canadá.",
+      "answer": true,
+      "fact": "O autor foi Sam Panopoulos, em 1962."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O croissant surgiu na França.",
+      "answer": false,
+      "fact": "Ele veio de um pão austríaco, o kipferl."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O biscoito da sorte foi criado nos EUA.",
+      "answer": true,
+      "fact": "Ele tem raízes em um biscoito japonês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O biscoito da sorte é um doce tradicional da China.",
+      "answer": false,
+      "fact": "Ele quase não é conhecido por lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A batata é originária da América do Sul.",
+      "answer": true,
+      "fact": "Ela só chegou à Europa no século XVI."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O tomate é originário da Itália.",
+      "answer": false,
+      "fact": "Ele é originário das Américas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O milho é originário das Américas.",
+      "answer": true,
+      "fact": "Ele foi domesticado no México há milhares de anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O cacau é originário da África.",
+      "answer": false,
+      "fact": "Ele é originário das Américas, embora hoje a África seja a maior produtora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O abacaxi é originário da América do Sul.",
+      "answer": true,
+      "fact": "Os europeus o trataram como um símbolo de riqueza."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A língua tem regiões separadas para cada sabor.",
+      "answer": false,
+      "fact": "Todas as áreas sentem todos os sabores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O umami é reconhecido como o quinto sabor básico.",
+      "answer": true,
+      "fact": "O japonês Kikunae Ikeda o identificou em 1908."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O mel estraga em poucos meses.",
+      "answer": false,
+      "fact": "Ele pode durar milhares de anos, se ficar bem fechado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Foi encontrado mel ainda comestível em tumbas egípcias.",
+      "answer": true,
+      "fact": "Ele tem pouca água e é bem ácido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sal comum tem cor rosa natural.",
+      "answer": false,
+      "fact": "Só o do Himalaia é rosa, por causa do ferro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sal rosa do Himalaia vem de uma mina no Paquistão.",
+      "answer": true,
+      "fact": "A mina de Khewra é uma das maiores do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O wasabi usado em todos os restaurantes é de wasabi puro.",
+      "answer": false,
+      "fact": "Quase sempre é raiz-forte com corante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Coca-Cola já teve cocaína na fórmula.",
+      "answer": true,
+      "fact": "Ela foi removida no início do século XX."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Coca-Cola sempre foi azul no início.",
+      "answer": false,
+      "fact": "A bebida sempre foi escura."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Fanta foi criada na Alemanha nazista.",
+      "answer": true,
+      "fact": "A filial não conseguia mais o xarope da Coca-Cola."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A New Coke fez um enorme sucesso.",
+      "answer": false,
+      "fact": "Ela foi um fracasso, e voltou a fórmula antiga em 79 dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O lobo-guará come muita lobeira.",
+      "answer": true,
+      "fact": "Essa fruta ajuda a combater vermes no animal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O kiwi é uma fruta originária da Nova Zelândia.",
+      "answer": false,
+      "fact": "Ele veio da China, e o nome foi dado depois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O kiwi é originário da China.",
+      "answer": true,
+      "fact": "Os neozelandeses mudaram o nome por causa da exportação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Marco Polo trouxe o macarrão à Itália.",
+      "answer": false,
+      "fact": "Os italianos já comiam massa antes das viagens dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Lei da Pureza da cerveja é de 1516.",
+      "answer": true,
+      "fact": "Ela vale na Baviera, na Alemanha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dom Pérignon inventou o champanhe sem dúvida.",
+      "answer": false,
+      "fact": "Ele aperfeiçoou a técnica, mas não a criou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A pasteurização recebeu o nome de Louis Pasteur.",
+      "answer": true,
+      "fact": "Ele a desenvolveu para proteger o vinho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sal escurece as maçãs cortadas.",
+      "answer": false,
+      "fact": "Elas escurecem ao entrar em contato com o oxigênio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O açafrão é a especiaria mais cara do mundo.",
+      "answer": true,
+      "fact": "São necessárias milhares de flores para cada 100 gramas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A baunilha vem de uma árvore de caule grosso.",
+      "answer": false,
+      "fact": "Ela vem de uma orquídea trepadeira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A pimenta-do-reino é uma pimenta do tipo Capsicum.",
+      "answer": false,
+      "fact": "Ela é de outra família de plantas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O bolo de rolo é patrimônio imaterial de Pernambuco.",
+      "answer": true,
+      "fact": "O título foi dado em 2007."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O brigadeiro nasceu em Portugal.",
+      "answer": false,
+      "fact": "Ele nasceu no Brasil, nos anos 1940."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O nome brigadeiro homenageia um candidato à presidência.",
+      "answer": true,
+      "fact": "O brigadeiro Eduardo Gomes concorreu em 1945."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A caipirinha foi criada em Minas Gerais, com vodca.",
+      "answer": false,
+      "fact": "Ela é paulista, feita com cachaça."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A bebida caipirinha é reconhecida por lei como brasileira.",
+      "answer": true,
+      "fact": "Um decreto de 2003 define a receita."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O queijo minas é feito tradicionalmente de leite de cabra.",
+      "answer": false,
+      "fact": "Ele é feito de leite de vaca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O queijo Canastra é feito no estado de Minas Gerais.",
+      "answer": true,
+      "fact": "Ele é um dos mais premiados do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O tucupi vem do milho.",
+      "answer": false,
+      "fact": "Ele vem da mandioca-brava."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O tucupi é venenoso antes de ser cozido.",
+      "answer": true,
+      "fact": "A mandioca-brava tem ácido cianídrico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Feijoada é um prato de origem japonesa.",
+      "answer": false,
+      "fact": "Ela tem raízes em cozidos europeus e foi adaptada no Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A jabuticaba nasce grudada no tronco da árvore.",
+      "answer": true,
+      "fact": "Ela é típica da Mata Atlântica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O vinho do Porto é produzido em Roma.",
+      "answer": false,
+      "fact": "Ele é produzido no Vale do Douro, em Portugal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A dieta de um lutador de sumô pode ter 20 mil calorias por dia.",
+      "answer": true,
+      "fact": "Eles comem um cozido chamado chankonabe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O tomate é um fruto, segundo a botânica.",
+      "answer": true,
+      "fact": "Na cozinha, ele é tratado como legume."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A batata-doce é uma variedade da batata comum.",
+      "answer": false,
+      "fact": "As duas pertencem a famílias diferentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A cachaça é feita de cana-de-açúcar.",
+      "answer": true,
+      "fact": "O destilado é exclusivo do Brasil por lei."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O sushi sempre leva peixe cru.",
+      "answer": false,
+      "fact": "A palavra indica o arroz temperado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Coca-Cola foi criada como bebida alcoólica no Brasil.",
+      "answer": false,
+      "fact": "Ela foi criada em 1886, em Atlanta, nos EUA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A mandioca é tóxica se for consumida crua em certas variedades.",
+      "answer": true,
+      "fact": "Ela contém compostos que liberam cianeto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sal já foi usado como forma de pagamento.",
+      "answer": true,
+      "fact": "Soldados romanos recebiam parte do soldo em sal, segundo a tradição."
     }
   ]
 }

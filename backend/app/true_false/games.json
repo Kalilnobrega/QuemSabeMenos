@@ -120,6 +120,462 @@
       "text": "Street Fighter II foi o primeiro jogo da série Street Fighter.",
       "answer": false,
       "fact": "O primeiro Street Fighter é de 1987. O II, de 1991, é que virou fenômeno."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Minecraft foi criado pela Nintendo.",
+      "answer": false,
+      "fact": "Foi criado por Markus Persson, da Mojang."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Mario é um encanador.",
+      "answer": true,
+      "fact": "No início, em Donkey Kong, ele era carpinteiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Luigi é o irmão mais velho do Mario.",
+      "answer": false,
+      "fact": "Eles são gêmeos, e Mario nasceu primeiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O nome original de Mario era Jumpman.",
+      "answer": true,
+      "fact": "Ele apareceu assim em Donkey Kong, em 1981."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Sonic é um esquilo.",
+      "answer": false,
+      "fact": "Ele é um ouriço azul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Sonic é o mascote da Sega.",
+      "answer": true,
+      "fact": "Ele foi criado em 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tails é um coelho.",
+      "answer": false,
+      "fact": "Ele é uma raposa de duas caudas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Charizard é um Pokémon do tipo água.",
+      "answer": false,
+      "fact": "Ele é de fogo e voador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Link é o herói de The Legend of Zelda.",
+      "answer": true,
+      "fact": "Muita gente acha que ele se chama Zelda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Zelda é o protagonista masculino da série.",
+      "answer": false,
+      "fact": "Zelda é a princesa da série."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O PlayStation 2 é o console mais vendido da história.",
+      "answer": true,
+      "fact": "Vendeu cerca de 160 milhões de unidades."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Xbox foi criado pela Sony.",
+      "answer": false,
+      "fact": "Ele foi criado pela Microsoft."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Mega Drive foi muito popular no Brasil.",
+      "answer": true,
+      "fact": "A Tectoy o vendeu por décadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Nintendo Switch não pode ser usado como portátil.",
+      "answer": false,
+      "fact": "Ele funciona na TV e também como portátil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Pong foi um dos primeiros grandes sucessos dos videogames.",
+      "answer": true,
+      "fact": "A Atari o lançou em 1972."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Atari foi criado nos anos 2000.",
+      "answer": false,
+      "fact": "A empresa foi fundada em 1972."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Fortnite é um jogo de battle royale.",
+      "answer": true,
+      "fact": "Ele tem também um modo de construção."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Fortnite foi criado pela Valve.",
+      "answer": false,
+      "fact": "Ele foi criado pela Epic Games."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Counter-Strike começou como um mod.",
+      "answer": true,
+      "fact": "Ele nasceu a partir de Half-Life, em 1999."
+    },
+    {
+      "difficulty": "medium",
+      "text": "League of Legends é da Blizzard.",
+      "answer": false,
+      "fact": "Ele é da Riot Games."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Among Us só virou febre em 2020, dois anos depois de sair.",
+      "answer": true,
+      "fact": "Ele ficou conhecido na pandemia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "God of War se passa só no futuro.",
+      "answer": false,
+      "fact": "A série usa as mitologias grega e nórdica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "GTA V se passa em uma versão de Los Angeles.",
+      "answer": true,
+      "fact": "A cidade fictícia é chamada de Los Santos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Red Dead Redemption se passa em Marte.",
+      "answer": false,
+      "fact": "Ele se passa no Velho Oeste americano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "The Last of Us virou uma série da HBO.",
+      "answer": true,
+      "fact": "Pedro Pascal foi o protagonista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Skyrim é um jogo de corrida.",
+      "answer": false,
+      "fact": "Ele é um RPG de mundo aberto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Lara Croft é a heroína de Tomb Raider.",
+      "answer": true,
+      "fact": "Angelina Jolie a interpretou no cinema."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Kratos é o herói de Zelda.",
+      "answer": false,
+      "fact": "Ele é o herói de God of War."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Ryu e Ken são de Street Fighter.",
+      "answer": true,
+      "fact": "O Hadouken é o golpe mais famoso deles."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Scorpion é um personagem de Street Fighter.",
+      "answer": false,
+      "fact": "Ele é um personagem de Mortal Kombat."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Scorpion grita \"Get over here!\".",
+      "answer": true,
+      "fact": "Ele puxa os adversários com uma lança."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Nintendo foi criada em 1985.",
+      "answer": false,
+      "fact": "Ela foi criada em 1889, como fábrica de baralhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Nintendo já vendeu macarrão instantâneo.",
+      "answer": true,
+      "fact": "Ela tentou vários ramos nos anos 1960."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro PlayStation foi um projeto só da Sony, sem relação com outras empresas.",
+      "answer": false,
+      "fact": "Ele nasceu de uma parceria que falhou com a Nintendo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O PlayStation nasceu de uma parceria que falhou com a Nintendo.",
+      "answer": true,
+      "fact": "A Nintendo trocou a Sony pela Philips."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Steve Jobs nunca trabalhou com jogos.",
+      "answer": false,
+      "fact": "Ele trabalhou na Atari e fez Breakout com Wozniak."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Pelé tem um jogo com o nome dele para o Atari.",
+      "answer": true,
+      "fact": "O jogo saiu em 1981, como \"Pelé's Soccer\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O jogo do E.T. para Atari foi um grande sucesso.",
+      "answer": false,
+      "fact": "Foi um enorme fracasso e virou um símbolo do crash de 1983."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Cartuchos do E.T. foram desenterrados em 2014.",
+      "answer": true,
+      "fact": "Foi no deserto do Novo México."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O crash dos videogames aconteceu em 1995.",
+      "answer": false,
+      "fact": "O crash aconteceu em 1983, nos EUA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Mario apareceu antes em Donkey Kong.",
+      "answer": true,
+      "fact": "Foi em 1981, antes do próprio jogo dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Super Mario Bros. saiu para o Super Nintendo.",
+      "answer": false,
+      "fact": "Ele saiu para o NES, em 1985."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Samus, de Metroid, é uma mulher.",
+      "answer": true,
+      "fact": "A revelação só vinha ao final do primeiro jogo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em Metal Gear, Solid Snake é um pirata do século XVII.",
+      "answer": false,
+      "fact": "Ele é um soldado de operações especiais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hideo Kojima fez Death Stranding depois de sair da Konami.",
+      "answer": true,
+      "fact": "O jogo teve Norman Reedus e Mads Mikkelsen."
+    },
+    {
+      "difficulty": "hard",
+      "text": "George R. R. Martin escreveu Dark Souls.",
+      "answer": false,
+      "fact": "Ele colaborou com Elden Ring."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Keanu Reeves atua em Cyberpunk 2077.",
+      "answer": true,
+      "fact": "Ele é Johnny Silverhand."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Keanu Reeves faz a voz de Sonic no filme de 2020.",
+      "answer": false,
+      "fact": "Ele faz o Shadow, em 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Jim Carrey interpretou o Doutor Robotnik.",
+      "answer": true,
+      "fact": "Foi em filmes de 2020 a 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O filme \"Super Mario Bros.\" de 1993 foi um sucesso.",
+      "answer": false,
+      "fact": "Foi um grande fracasso, e os atores o criticaram muito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil tem times fortes em Counter-Strike.",
+      "answer": true,
+      "fact": "SK Gaming ganhou Majors em 2016."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Faker joga Counter-Strike.",
+      "answer": false,
+      "fact": "Ele é o maior nome de League of Legends."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Tencent é dona da Riot Games.",
+      "answer": true,
+      "fact": "A empresa é da China."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Microsoft é dona da Nintendo.",
+      "answer": false,
+      "fact": "A Nintendo é uma empresa japonesa independente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Microsoft comprou a Mojang, de Minecraft.",
+      "answer": true,
+      "fact": "Pagou 2,5 bilhões de dólares em 2014."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Sony comprou a Activision Blizzard em 2023.",
+      "answer": false,
+      "fact": "Quem comprou foi a Microsoft."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Flappy Bird foi retirado do ar pelo criador.",
+      "answer": true,
+      "fact": "Ele disse que o jogo era viciante demais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Candy Crush foi criado pela Rovio.",
+      "answer": false,
+      "fact": "Ele foi criado pela King, e a Rovio fez Angry Birds."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Pokémon é a franquia mais lucrativa do entretenimento.",
+      "answer": true,
+      "fact": "Boa parte vem de produtos licenciados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Virtual Boy foi o maior sucesso da Nintendo.",
+      "answer": false,
+      "fact": "Ele foi um dos maiores fracassos dela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Doom pode rodar até em um teste de gravidez.",
+      "answer": true,
+      "fact": "Entusiastas adoram testar o jogo em tudo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O famoso \"Konami Code\" foi criado pela Nintendo.",
+      "answer": false,
+      "fact": "Ele foi criado por um programador da Konami."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O código Konami começou em Gradius.",
+      "answer": true,
+      "fact": "O programador Kazuhisa Hashimoto o criou para facilitar testes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Master System continuou à venda no Brasil por décadas.",
+      "answer": true,
+      "fact": "Foi uma raridade entre os consoles antigos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Baldur's Gate 3 ganhou o prêmio de jogo do ano em 2023.",
+      "answer": true,
+      "fact": "A Larian Studios é da Bélgica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O jogo Minecraft usa mundos feitos de blocos.",
+      "answer": true,
+      "fact": "Ele foi lançado oficialmente em 2011."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Mario e Sonic nunca apareceram juntos em um jogo.",
+      "answer": false,
+      "fact": "Eles se encontraram em jogos das Olimpíadas e em Super Smash Bros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Mario e Sonic já competiram em jogos das Olimpíadas.",
+      "answer": true,
+      "fact": "A primeira edição foi lançada em 2007."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Game Boy tinha tela colorida desde o lançamento, em 1989.",
+      "answer": false,
+      "fact": "A tela original tinha tons de verde."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Yoshi é um dinossauro.",
+      "answer": true,
+      "fact": "Ele apareceu em \"Super Mario World\", de 1990."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Bowser é o herói da série Mario.",
+      "answer": false,
+      "fact": "Ele é o principal vilão da série."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Kratos nasceu na mitologia grega dos jogos.",
+      "answer": true,
+      "fact": "A série foi lançada em 2005."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Lara Croft estreou nos videogames antes dos filmes.",
+      "answer": true,
+      "fact": "O primeiro filme saiu em 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Hollow Knight\" foi feito por um grande estúdio japonês.",
+      "answer": false,
+      "fact": "Ele foi feito pela pequena Team Cherry, da Austrália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Magnavox Odyssey saiu antes do Atari 2600.",
+      "answer": true,
+      "fact": "Ele foi lançado em 1972, e o Atari, em 1977."
+    },
+    {
+      "difficulty": "hard",
+      "text": "\"Elden Ring\" foi feito pela Capcom.",
+      "answer": false,
+      "fact": "Ele foi feito pela FromSoftware."
     }
   ]
 }

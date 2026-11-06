@@ -1,0 +1,569 @@
+{
+  "theme": "Animais e natureza",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "Os morcegos são mamíferos.",
+      "answer": true,
+      "fact": "Os morcegos são os únicos mamíferos capazes de voar de verdade, batendo as asas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A baleia é um peixe.",
+      "answer": false,
+      "fact": "A baleia é um mamífero: respira por pulmões, tem sangue quente e amamenta os filhotes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O polvo tem um único coração.",
+      "answer": false,
+      "fact": "O polvo tem três corações e sangue azul, por causa de uma proteína com cobre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os morcegos são os únicos mamíferos que voam de verdade.",
+      "answer": true,
+      "fact": "O esquilo-voador apenas plana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Todas as cobras são venenosas.",
+      "answer": false,
+      "fact": "Há cerca de 4 mil espécies, e só cerca de 600 são venenosas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O ornitorrinco é um mamífero que bota ovos.",
+      "answer": true,
+      "fact": "Ele também tem bico e esporão venenoso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A aranha é um inseto.",
+      "answer": false,
+      "fact": "A aranha é um aracnídeo, com oito patas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os golfinhos respiram por pulmões.",
+      "answer": true,
+      "fact": "Eles sobem à superfície para buscar ar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os tubarões são mamíferos.",
+      "answer": false,
+      "fact": "Tubarões são peixes cartilaginosos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O camaleão consegue mover cada olho separadamente.",
+      "answer": true,
+      "fact": "Ele pode olhar para duas direções diferentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "As corujas só conseguem enxergar de dia.",
+      "answer": false,
+      "fact": "Elas têm ótima visão noturna."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O pinguim é uma ave.",
+      "answer": true,
+      "fact": "Ele tem penas e bota ovos, mas não voa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os pinguins vivem no Ártico.",
+      "answer": false,
+      "fact": "Eles vivem quase todos no Hemisfério Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os ursos-polares vivem no Hemisfério Norte.",
+      "answer": true,
+      "fact": "Eles não encontram pinguins na natureza."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A corcova do camelo guarda água.",
+      "answer": false,
+      "fact": "Ela guarda gordura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O beija-flor consegue voar para trás.",
+      "answer": true,
+      "fact": "Ele é a única ave com essa capacidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A avestruz enterra a cabeça na areia quando sente medo.",
+      "answer": false,
+      "fact": "Isso é um mito, ela se abaixa para vigiar ovos ou se esconder."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O leão vive em grupos chamados bandos.",
+      "answer": true,
+      "fact": "É o único felino realmente social."
+    },
+    {
+      "difficulty": "medium",
+      "text": "As baleias são peixes.",
+      "answer": false,
+      "fact": "As baleias são mamíferos e amamentam os filhotes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O sapo começa a vida como um girino.",
+      "answer": true,
+      "fact": "Ele passa por uma metamorfose até ficar adulto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "As borboletas nascem já com asas.",
+      "answer": false,
+      "fact": "Elas passam primeiro pela fase de lagarta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "As abelhas operárias são fêmeas.",
+      "answer": true,
+      "fact": "Os machos são os zangões, que não têm ferrão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os ratos preferem queijo a qualquer alimento.",
+      "answer": false,
+      "fact": "Essa ideia é mais dos desenhos, e eles preferem grãos e doces."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O cavalo-marinho macho gesta os filhotes.",
+      "answer": true,
+      "fact": "A fêmea deposita os ovos na bolsa dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O elefante é o animal mais alto do mundo.",
+      "answer": false,
+      "fact": "A girafa é o animal mais alto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A onça-pintada é o maior felino das Américas.",
+      "answer": true,
+      "fact": "Ela vive do sul dos EUA até a Argentina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O tigre vive na África.",
+      "answer": false,
+      "fact": "Os tigres selvagens vivem só na Ásia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O canguru vive na Oceania.",
+      "answer": true,
+      "fact": "Ele é símbolo da Austrália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O urso-panda é carnívoro por hábito alimentar.",
+      "answer": false,
+      "fact": "Mesmo com sistema digestivo de carnívoro, ele come bambu quase o tempo todo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A preguiça desce das árvores para fazer as necessidades.",
+      "answer": true,
+      "fact": "Isso acontece cerca de uma vez por semana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Todo camaleão muda de cor só para se esconder.",
+      "answer": false,
+      "fact": "A cor muda sobretudo para se comunicar e regular a temperatura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Pantanal é a maior planície alagada do mundo.",
+      "answer": true,
+      "fact": "Ele fica no Brasil, na Bolívia e no Paraguai."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Caatinga fica no Sul do Brasil.",
+      "answer": false,
+      "fact": "A Caatinga fica no Nordeste e no norte de Minas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Caatinga é o único bioma exclusivamente brasileiro.",
+      "answer": true,
+      "fact": "Sua fauna e flora se adaptaram à seca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Amazônia fica em apenas um país.",
+      "answer": false,
+      "fact": "Ela se estende por nove países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O rio Amazonas é o mais volumoso do mundo.",
+      "answer": true,
+      "fact": "Ele sozinho despeja cerca de 20% da água doce que chega aos oceanos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Everest é a montanha mais alta do Brasil.",
+      "answer": false,
+      "fact": "O ponto mais alto do Brasil é o Pico da Neblina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os corais são animais.",
+      "answer": true,
+      "fact": "Eles são pequenos pólipos que formam colônias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os cogumelos são plantas.",
+      "answer": false,
+      "fact": "Os cogumelos são fungos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A maior parte da água doce da Terra está em forma de gelo.",
+      "answer": true,
+      "fact": "Cerca de 69% da água doce está em geleiras e no gelo polar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um raio nunca cai duas vezes no mesmo lugar.",
+      "answer": false,
+      "fact": "O Empire State Building leva cerca de 20 raios por ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Antártida é considerada um deserto.",
+      "answer": true,
+      "fact": "Chove e neva muito pouco por lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Saara é o maior deserto do mundo.",
+      "answer": false,
+      "fact": "O maior é a Antártida, e o Saara é o maior deserto quente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O vulcão Vesúvio destruiu Pompeia.",
+      "answer": true,
+      "fact": "A erupção foi no ano 79."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os dinossauros e os humanos viveram na mesma época.",
+      "answer": false,
+      "fact": "Os dinossauros não aviários sumiram 66 milhões de anos antes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O polvo tem o sangue azul.",
+      "answer": true,
+      "fact": "O cobre da hemocianina dá essa cor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O falcão-peregrino é a ave mais rápida apenas na horizontal.",
+      "answer": false,
+      "fact": "Ele é mais rápido em mergulho, chegando a cerca de 390 km/h."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O coala tem impressões digitais parecidas com as dos humanos.",
+      "answer": true,
+      "fact": "São tão parecidas que já confundiram peritos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A língua da baleia-azul pesa menos que um boi.",
+      "answer": false,
+      "fact": "Ela pode pesar mais de 2 toneladas, como um elefante pequeno."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os tubarões existem há mais tempo que as árvores.",
+      "answer": true,
+      "fact": "Tubarões têm mais de 400 milhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O tubarão-da-groenlândia vive no máximo 50 anos.",
+      "answer": false,
+      "fact": "Ele pode viver cerca de 400 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os vombates fazem cocô em forma de cubo.",
+      "answer": true,
+      "fact": "Isso ajuda a marcar território sem que role."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A pele do urso-polar é branca.",
+      "answer": false,
+      "fact": "A pele é preta, e o pelo é transparente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os flamingos nascem cinzentos.",
+      "answer": true,
+      "fact": "A cor rosa aparece com os pigmentos do que eles comem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A pantera-negra é uma espécie própria.",
+      "answer": false,
+      "fact": "Ela é uma onça ou um leopardo com excesso de melanina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A água-viva Turritopsis dohrnii pode rejuvenescer.",
+      "answer": true,
+      "fact": "Ela pode voltar ao estágio de pólipo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Polvos têm apenas um coração.",
+      "answer": false,
+      "fact": "Eles têm três corações."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um tardígrado pode sobreviver no vácuo do espaço.",
+      "answer": true,
+      "fact": "Em 2007, eles foram levados à órbita em um experimento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Girafas têm mais vértebras no pescoço do que os humanos.",
+      "answer": false,
+      "fact": "As duas espécies têm sete."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O bico do tucano ajuda a regular a temperatura do corpo.",
+      "answer": true,
+      "fact": "Ele pode liberar até 60% do calor corporal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O gato enxerga na escuridão total.",
+      "answer": false,
+      "fact": "Ele precisa de um pouco de luz, mas precisa de bem menos que nós."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O canto dos machos das baleias-jubarte muda com o tempo.",
+      "answer": true,
+      "fact": "As canções se espalham pelos grupos como modas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O dodô era uma ave do Brasil.",
+      "answer": false,
+      "fact": "Ele vivia nas ilhas Maurício."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os emus derrotaram soldados australianos em 1932.",
+      "answer": true,
+      "fact": "A \"Guerra dos Emus\" terminou sem controlar as aves."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A bexiga natatória é comum em todos os tubarões.",
+      "answer": false,
+      "fact": "Tubarões não têm esse órgão e usam o fígado para boiar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O elefante é um dos poucos animais que se reconhecem no espelho.",
+      "answer": true,
+      "fact": "O teste foi feito por cientistas em 2006."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O megalodon ainda vive em alto-mar.",
+      "answer": false,
+      "fact": "Ele foi extinto há cerca de 3,6 milhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "As aves descendem dos dinossauros.",
+      "answer": true,
+      "fact": "Elas são consideradas dinossauros terópodes vivos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Tiranossauro rex viveu no Jurássico.",
+      "answer": false,
+      "fact": "Ele viveu no Cretáceo, há cerca de 68 milhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O bambu é uma espécie de grama.",
+      "answer": true,
+      "fact": "Ele pertence à mesma família do trigo e do arroz."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A vitória-régia é uma planta do deserto.",
+      "answer": false,
+      "fact": "Ela é uma planta aquática da Amazônia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ginkgo sobreviveu perto do local da bomba de Hiroshima.",
+      "answer": true,
+      "fact": "Alguns continuam vivos na cidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A sequoia é a maior flor do mundo.",
+      "answer": false,
+      "fact": "A sequoia é uma árvore, e a rafflesia é a maior flor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A castanheira-do-pará depende de abelhas e cotias para se reproduzir.",
+      "answer": true,
+      "fact": "As cotias enterram as sementes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A fotossíntese ocorre na raiz das plantas.",
+      "answer": false,
+      "fact": "Ela acontece principalmente nas folhas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em 1883, a explosão do Krakatoa foi ouvida a milhares de quilômetros.",
+      "answer": true,
+      "fact": "O estrondo foi ouvido a cerca de 4.800 km de distância."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O maior terremoto registrado aconteceu no Japão.",
+      "answer": false,
+      "fact": "Foi em Valdivia, no Chile, em 1960."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O lago Baikal contém cerca de um quinto da água doce líquida da superfície do planeta.",
+      "answer": true,
+      "fact": "Ele fica na Rússia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Mar Morto fica acima do nível do mar.",
+      "answer": false,
+      "fact": "Ele fica cerca de 430 metros abaixo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O monte Mauna Kea supera o Everest se contado da base no fundo do mar.",
+      "answer": true,
+      "fact": "Ele tem mais de 10 mil metros no total."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A escala Fujita classifica tornados.",
+      "answer": true,
+      "fact": "Ela leva o nome do meteorologista Tetsuya Fujita."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A camada de ozônio protege a Terra contra terremotos.",
+      "answer": false,
+      "fact": "Ela filtra parte da radiação ultravioleta do Sol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O buraco na camada de ozônio começou a se recuperar após o Protocolo de Montreal.",
+      "answer": true,
+      "fact": "A ONU estima a recuperação até meados deste século."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O animal com a mordida mais forte conhecida é um crocodilo.",
+      "answer": true,
+      "fact": "O crocodilo-de-água-salgada supera qualquer outro animal medido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os elefantes têm medo real de ratos, como mostram os desenhos.",
+      "answer": false,
+      "fact": "Não há nenhuma evidência de que tenham esse medo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os cães conseguem cheirar mudanças no açúcar do sangue das pessoas.",
+      "answer": true,
+      "fact": "Alguns são treinados para alertar diabéticos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O canguru macho não tem bolsa.",
+      "answer": true,
+      "fact": "Só as fêmeas carregam os filhotes na bolsa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O tatu é um tipo de réptil.",
+      "answer": false,
+      "fact": "Ele é um mamífero com carapaça."
+    },
+    {
+      "difficulty": "medium",
+      "text": "As baleias respiram por brânquias.",
+      "answer": false,
+      "fact": "Elas são mamíferos e têm pulmões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O mico-leão-dourado vive na Mata Atlântica.",
+      "answer": true,
+      "fact": "A espécie quase foi extinta nos anos 1970."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os polvos têm três corações.",
+      "answer": true,
+      "fact": "Dois deles levam sangue às brânquias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "As hienas-malhadas só comem restos deixados por outros animais.",
+      "answer": false,
+      "fact": "Na verdade, elas caçam boa parte do alimento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O macho do cavalo-marinho carrega os filhotes.",
+      "answer": true,
+      "fact": "A fêmea deposita os ovos em uma bolsa dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O camaleão muda de cor apenas para se esconder.",
+      "answer": false,
+      "fact": "A mudança também serve para comunicação e controle de temperatura."
+    }
+  ]
+}

@@ -120,6 +120,462 @@
       "text": "George Washington assinou a Declaração de Independência dos Estados Unidos.",
       "answer": false,
       "fact": "Washington não assinou: em 1776 ele estava no comando do exército. A declaração foi escrita principalmente por Thomas Jefferson."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Revolução Russa aconteceu em 1789.",
+      "answer": false,
+      "fact": "A Revolução Russa foi em 1917."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Napoleão nasceu na ilha da Córsega.",
+      "answer": true,
+      "fact": "A ilha tinha virado francesa um ano antes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Napoleão morreu em Paris.",
+      "answer": false,
+      "fact": "Ele morreu exilado na ilha de Santa Helena."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dom Pedro I proclamou a independência do Brasil.",
+      "answer": true,
+      "fact": "Foi em 7 de setembro de 1822."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dom Pedro II proclamou a independência do Brasil.",
+      "answer": false,
+      "fact": "Quem proclamou foi seu pai, Dom Pedro I."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil foi o último país das Américas a abolir a escravidão.",
+      "answer": true,
+      "fact": "A Lei Áurea é de 1888."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Lei Áurea foi assinada por Dom Pedro I.",
+      "answer": false,
+      "fact": "Ela foi assinada pela Princesa Isabel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Salvador foi a primeira capital do Brasil.",
+      "answer": true,
+      "fact": "Ela foi capital até 1763."
+    },
+    {
+      "difficulty": "medium",
+      "text": "São Paulo foi a primeira capital do Brasil.",
+      "answer": false,
+      "fact": "A primeira capital foi Salvador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Brasília foi inaugurada em 1960.",
+      "answer": true,
+      "fact": "Juscelino Kubitschek foi seu grande idealizador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Getúlio Vargas construiu Brasília.",
+      "answer": false,
+      "fact": "Quem construiu foi Juscelino Kubitschek."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Getúlio Vargas criou a CLT.",
+      "answer": true,
+      "fact": "Ela foi assinada em 1943."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A ditadura militar brasileira começou em 1934.",
+      "answer": false,
+      "fact": "Ela começou em 1964."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tiradentes foi enforcado no Rio de Janeiro.",
+      "answer": true,
+      "fact": "A execução foi em 21 de abril de 1792."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tiradentes foi o primeiro presidente do Brasil.",
+      "answer": false,
+      "fact": "O primeiro presidente foi Deodoro da Fonseca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Segunda Guerra Mundial terminou em 1945.",
+      "answer": true,
+      "fact": "A rendição do Japão aconteceu em setembro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Adolf Hitler nasceu na Áustria.",
+      "answer": true,
+      "fact": "Ele nasceu em Braunau am Inn."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Winston Churchill foi primeiro-ministro do Reino Unido.",
+      "answer": true,
+      "fact": "Ele liderou o país durante a Segunda Guerra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Stalin foi líder da Alemanha.",
+      "answer": false,
+      "fact": "Ele foi líder da União Soviética."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Guerra Fria terminou em 1945.",
+      "answer": false,
+      "fact": "Ela começou depois da Segunda Guerra e terminou em 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "John Kennedy foi assassinado em Dallas.",
+      "answer": true,
+      "fact": "Foi em novembro de 1963."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Abraham Lincoln foi o primeiro presidente dos EUA.",
+      "answer": false,
+      "fact": "O primeiro foi George Washington."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os vikings chegaram à América antes de Colombo.",
+      "answer": true,
+      "fact": "Leif Erikson chegou lá por volta do ano 1000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Cristóvão Colombo era português.",
+      "answer": false,
+      "fact": "Ele nasceu em Gênova, onde hoje é a Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Vasco da Gama chegou à Índia por mar em 1498.",
+      "answer": true,
+      "fact": "Ele contornou a África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Pedro Álvares Cabral chegou ao Brasil em 1492.",
+      "answer": false,
+      "fact": "Ele chegou em 1500."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os astecas viviam onde hoje é o México.",
+      "answer": true,
+      "fact": "Sua capital ficava em um lago."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os incas viviam onde hoje é o México.",
+      "answer": false,
+      "fact": "Os incas viviam nos Andes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Coliseu fica em Atenas.",
+      "answer": false,
+      "fact": "O Coliseu fica em Roma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os romanos construíram aquedutos.",
+      "answer": true,
+      "fact": "Alguns ainda funcionam até hoje."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Nero foi imperador quando Roma pegou fogo em 64.",
+      "answer": true,
+      "fact": "Ele culpou os cristãos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Calígula foi o último imperador de Roma.",
+      "answer": false,
+      "fact": "O último do Ocidente foi Rômulo Augusto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Átila era o líder dos hunos.",
+      "answer": true,
+      "fact": "Ele ameaçou Roma no século V."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os vikings usavam capacetes com chifres nas batalhas.",
+      "answer": false,
+      "fact": "Não há evidências disso, e a imagem veio de uma ópera do século XIX."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Grande Pirâmide de Gizé foi a estrutura mais alta do mundo por quase 4 mil anos.",
+      "answer": true,
+      "fact": "Ela só foi superada no século XIV."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Escravizados construíram as pirâmides, segundo a arqueologia atual.",
+      "answer": false,
+      "fact": "Evidências mostram que trabalhadores pagos fizeram boa parte da obra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Cleópatra viveu mais perto da chegada à Lua que da construção das pirâmides.",
+      "answer": true,
+      "fact": "Ela viveu cerca de 2.500 anos depois da construção da Grande Pirâmide."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Cleópatra era de origem egípcia.",
+      "answer": false,
+      "fact": "Ela era de origem grega, da dinastia ptolomaica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Maria Antonieta nasceu na Áustria.",
+      "answer": true,
+      "fact": "Ela foi guilhotinada em 1793."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Maria Antonieta realmente disse \"Que comam brioches\".",
+      "answer": false,
+      "fact": "Não há registros de que ela tenha dito isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Napoleão era de estatura normal para a época.",
+      "answer": true,
+      "fact": "A fama de baixinho veio de propaganda britânica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Einstein foi um péssimo aluno em matemática.",
+      "answer": false,
+      "fact": "Ele sempre foi muito bom em matemática."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Titanic afundou em sua viagem de estreia.",
+      "answer": true,
+      "fact": "Foi em abril de 1912."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Titanic afundou no Oceano Pacífico.",
+      "answer": false,
+      "fact": "Ele afundou no Atlântico Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil foi o único país sul-americano a mandar tropas à Segunda Guerra.",
+      "answer": true,
+      "fact": "Foi a Força Expedicionária Brasileira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os pracinhas lutaram na França.",
+      "answer": false,
+      "fact": "Eles lutaram na Itália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Plano Real foi lançado no governo de Itamar Franco.",
+      "answer": true,
+      "fact": "FHC era o ministro da Fazenda quando o projeto começou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O AI-5 foi decretado durante o governo de Getúlio Vargas.",
+      "answer": false,
+      "fact": "Ele foi decretado em 1968, com Costa e Silva."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Tancredo Neves morreu antes de tomar posse.",
+      "answer": true,
+      "fact": "José Sarney, o vice, assumiu no lugar dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dilma Rousseff foi a primeira mulher a governar a América do Sul.",
+      "answer": false,
+      "fact": "Isabelita Perón governou a Argentina antes, nos anos 1970."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Quilombo dos Palmares ficava em Alagoas.",
+      "answer": true,
+      "fact": "Na época, a região fazia parte de Pernambuco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Canudos era um quilombo no Rio Grande do Sul.",
+      "answer": false,
+      "fact": "Canudos ficava no sertão da Bahia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Revolução Farroupilha durou dez anos.",
+      "answer": true,
+      "fact": "Ela aconteceu entre 1835 e 1845."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Anita Garibaldi nasceu na Itália.",
+      "answer": false,
+      "fact": "Ela nasceu em Santa Catarina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Maria Quitéria se vestiu de homem para lutar pela independência.",
+      "answer": true,
+      "fact": "Ela foi condecorada por Dom Pedro I."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dom Pedro I morreu em Portugal.",
+      "answer": true,
+      "fact": "Ele voltou para lá depois da abdicação, em 1831."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dom Pedro II morreu no Rio de Janeiro.",
+      "answer": false,
+      "fact": "Ele morreu em Paris, em 1891."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Guerra do Paraguai durou seis anos.",
+      "answer": true,
+      "fact": "Foi de 1864 a 1870."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro voo dos irmãos Wright foi em Paris.",
+      "answer": false,
+      "fact": "Eles voaram nos EUA, em 1903."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O inventor Bartolomeu de Gusmão, brasileiro, fez voar um balão em Lisboa em 1709.",
+      "answer": true,
+      "fact": "Ele mostrou o invento ao rei de Portugal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Guerra do Golfo aconteceu nos anos 1950.",
+      "answer": false,
+      "fact": "Ela aconteceu em 1990 e 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Júlio César foi assassinado em 44 a.C.",
+      "answer": true,
+      "fact": "Bruto e Cássio lideraram a conspiração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Lei Áurea libertou os escravizados em 1850.",
+      "answer": false,
+      "fact": "Ela é de 1888, e a lei de 1850 proibiu o tráfico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Proclamação da República no Brasil aconteceu em 1889.",
+      "answer": true,
+      "fact": "O imperador Dom Pedro II partiu para a Europa com a família."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Império Romano do Ocidente caiu em 1453.",
+      "answer": false,
+      "fact": "Ele caiu em 476, e o Oriente caiu em 1453."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Constantinopla caiu em 1453.",
+      "answer": true,
+      "fact": "A cidade hoje se chama Istambul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Santos Dumont voou com o 14-Bis em Paris, em 1906.",
+      "answer": true,
+      "fact": "Ele não patenteou seus inventos, para deixar livre o uso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Muro de Berlim foi construído pelos Estados Unidos.",
+      "answer": false,
+      "fact": "Ele foi construído pela Alemanha Oriental, em 1961."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro presidente eleito de forma direta depois da ditadura foi Fernando Collor.",
+      "answer": true,
+      "fact": "A eleição aconteceu em 1989."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Maria Antonieta foi guilhotinada.",
+      "answer": true,
+      "fact": "Ela morreu em outubro de 1793."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dom Pedro II foi o último imperador do Brasil.",
+      "answer": true,
+      "fact": "Ele foi para o exílio em 1889."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Guerra Fria teve batalhas diretas entre EUA e URSS.",
+      "answer": false,
+      "fact": "As superpotências se enfrentaram por conflitos indiretos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Muro de Berlim dividiu a cidade por 28 anos.",
+      "answer": true,
+      "fact": "Ele foi construído em 1961."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Getúlio Vargas foi presidente por uma única vez.",
+      "answer": false,
+      "fact": "Ele governou de 1930 a 1945 e de 1951 a 1954."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Revolução de 1930 pôs fim à República Velha.",
+      "answer": true,
+      "fact": "Ela levou Getúlio Vargas ao poder."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Inquisição foi criada no século XX.",
+      "answer": false,
+      "fact": "Ela surgiu na Idade Média."
     }
   ]
 }

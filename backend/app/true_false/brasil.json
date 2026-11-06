@@ -120,6 +120,468 @@
       "text": "A Bahia é o estado brasileiro com maior área.",
       "answer": false,
       "fact": "O maior estado é o Amazonas, com cerca de 1,56 milhão de km². A Bahia é o quinto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil faz fronteira com dez países.",
+      "answer": true,
+      "fact": "Só Chile e Equador não são vizinhos dele na América do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O voto é facultativo aos 16 anos.",
+      "answer": true,
+      "fact": "Ele passa a ser obrigatório aos 18."
+    },
+    {
+      "difficulty": "medium",
+      "text": "No Brasil, o voto é facultativo para todos os adultos.",
+      "answer": false,
+      "fact": "Ele é obrigatório entre 18 e 70 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Senado tem três senadores por estado.",
+      "answer": true,
+      "fact": "Ao todo, são 81 senadores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Cada estado brasileiro tem o mesmo número de deputados federais.",
+      "answer": false,
+      "fact": "São Paulo tem 70, e os menores têm 8."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O presidente do Brasil pode ser reeleito uma vez seguida.",
+      "answer": true,
+      "fact": "A regra existe desde 1997."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Brasília é um estado.",
+      "answer": false,
+      "fact": "Ela fica no Distrito Federal."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O real é a moeda brasileira desde 1994.",
+      "answer": true,
+      "fact": "Antes dele veio o cruzeiro real."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O cruzeiro é a moeda brasileira atual.",
+      "answer": false,
+      "fact": "A moeda atual é o real."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O carnaval do Rio tem desfiles no Sambódromo.",
+      "answer": true,
+      "fact": "Ele foi inaugurado em 1984."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Sambódromo do Rio foi projetado por Santos Dumont.",
+      "answer": false,
+      "fact": "Ele foi projetado por Oscar Niemeyer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Oscar Niemeyer projetou o Congresso Nacional.",
+      "answer": true,
+      "fact": "O prédio tem duas cúpulas, uma côncava e outra convexa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Burle Marx foi o presidente que construiu Brasília.",
+      "answer": false,
+      "fact": "Ele foi um paisagista, e JK foi o presidente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Tom Jobim é um dos autores de \"Garota de Ipanema\".",
+      "answer": true,
+      "fact": "A letra é de Vinicius de Moraes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Chico Buarque escreveu \"Garota de Ipanema\".",
+      "answer": false,
+      "fact": "Os autores são Tom Jobim e Vinicius de Moraes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Machado de Assis escreveu \"Dom Casmurro\".",
+      "answer": true,
+      "fact": "Até hoje se discute se Capitu traiu Bentinho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Jorge Amado escreveu \"Dom Casmurro\".",
+      "answer": false,
+      "fact": "Ele escreveu \"Capitães da Areia\" e \"Gabriela\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Monteiro Lobato criou a Emília.",
+      "answer": true,
+      "fact": "O Sítio do Picapau Amarelo é um clássico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Maurício de Sousa criou a Emília.",
+      "answer": false,
+      "fact": "Ele criou a Turma da Mônica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A feijoada leva feijão-preto.",
+      "answer": true,
+      "fact": "No Sul, às vezes se usa feijão-carioca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O pão de queijo é feito com farinha de trigo.",
+      "answer": false,
+      "fact": "Ele é feito com polvilho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O açaí é típico da região Norte.",
+      "answer": true,
+      "fact": "Na região, ele é consumido com peixe e farinha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O acarajé é típico do Rio Grande do Sul.",
+      "answer": false,
+      "fact": "Ele é típico da Bahia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O chimarrão é típico do Sul do Brasil.",
+      "answer": true,
+      "fact": "Ele é feito com erva-mate."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O tereré é uma bebida quente.",
+      "answer": false,
+      "fact": "Ele é servido gelado, típico do Centro-Oeste."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Saci-Pererê tem uma perna só.",
+      "answer": true,
+      "fact": "Ele usa também um gorro vermelho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Curupira tem os pés virados para a frente.",
+      "answer": false,
+      "fact": "Os pés dele são virados para trás."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Iara é a sereia do folclore brasileiro.",
+      "answer": true,
+      "fact": "Ela encanta homens nos rios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Boto vira mulher à noite, na lenda amazônica.",
+      "answer": false,
+      "fact": "Ele vira um rapaz de chapéu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Festa do Peão acontece em Barretos.",
+      "answer": true,
+      "fact": "O evento é um dos maiores rodeios do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Festival de Parintins acontece no Paraná.",
+      "answer": false,
+      "fact": "Ele acontece no Amazonas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Sergipe é o menor estado do Brasil em área.",
+      "answer": true,
+      "fact": "Ele tem cerca de 21 mil km²."
+    },
+    {
+      "difficulty": "medium",
+      "text": "São Paulo é o maior estado do Brasil em área.",
+      "answer": false,
+      "fact": "O maior é o Amazonas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Roraima é o estado menos populoso do Brasil.",
+      "answer": true,
+      "fact": "Ele tem pouco mais de 600 mil moradores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Ouro Preto foi a primeira capital do Brasil.",
+      "answer": false,
+      "fact": "Ela foi capital de Minas Gerais, e a primeira do Brasil foi Salvador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Ouro Preto foi a primeira cidade brasileira tombada pela Unesco.",
+      "answer": true,
+      "fact": "O título é de 1980."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Niterói já foi a capital do Brasil.",
+      "answer": false,
+      "fact": "Ela foi capital do estado do Rio, e não do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Teresina é a única capital do Nordeste fora do litoral.",
+      "answer": true,
+      "fact": "Ela fica no Piauí."
+    },
+    {
+      "difficulty": "hard",
+      "text": "São Luís foi fundada pelos holandeses.",
+      "answer": false,
+      "fact": "Ela foi fundada pelos franceses, em 1612."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Macapá é cortada pela linha do Equador.",
+      "answer": true,
+      "fact": "A cidade tem um monumento chamado Marco Zero."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Curitiba é a capital de Santa Catarina.",
+      "answer": false,
+      "fact": "Curitiba é a capital do Paraná."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Pantanal é considerado Patrimônio Natural Mundial.",
+      "answer": true,
+      "fact": "A Unesco reconheceu parte dele em 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Cristo Redentor foi construído em Salvador.",
+      "answer": false,
+      "fact": "Ele foi construído no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Cristo Protetor, de Encantado, é mais alto que o Cristo Redentor.",
+      "answer": true,
+      "fact": "Ele tem 43,5 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O rio São Francisco deságua no oceano Pacífico.",
+      "answer": false,
+      "fact": "Ele deságua no Atlântico, entre Alagoas e Sergipe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Fernando Henrique Cardoso foi ministro antes de ser presidente.",
+      "answer": true,
+      "fact": "Ele cuidou da Fazenda e das Relações Exteriores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Lula nasceu em São Paulo.",
+      "answer": false,
+      "fact": "Ele nasceu em Pernambuco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dilma Rousseff foi a primeira mulher presidente do Brasil.",
+      "answer": true,
+      "fact": "Ela assumiu em 2011."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dom Pedro I é pai de Dom João VI.",
+      "answer": false,
+      "fact": "É o contrário, Dom João VI é pai de Dom Pedro I."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dom Pedro II é enterrado em Paris.",
+      "answer": false,
+      "fact": "Ele foi enterrado em Petrópolis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Princesa Isabel é filha de Dom Pedro II.",
+      "answer": true,
+      "fact": "Ela assinou a Lei Áurea."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Marquesa de Santos era esposa de Dom Pedro II.",
+      "answer": false,
+      "fact": "Ela foi amante de Dom Pedro I."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Santos Dumont morreu no Guarujá.",
+      "answer": true,
+      "fact": "Ele tirou a própria vida, em 1932."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro voo do 14-Bis foi no Rio de Janeiro.",
+      "answer": false,
+      "fact": "Foi em Paris, em 1906."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Pelé nasceu em Três Corações.",
+      "answer": true,
+      "fact": "A cidade fica em Minas Gerais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Garrincha nasceu em São Paulo.",
+      "answer": false,
+      "fact": "Ele nasceu em Pau Grande, no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil é pentacampeão mundial de futebol.",
+      "answer": true,
+      "fact": "O último título foi em 2002."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Copa do Mundo de 2014 foi vencida pelo Brasil.",
+      "answer": false,
+      "fact": "A Alemanha foi a campeã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil foi anfitrião da Copa de 1950.",
+      "answer": true,
+      "fact": "O Uruguai foi o campeão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Ayrton Senna foi campeão de Fórmula 1 seis vezes.",
+      "answer": false,
+      "fact": "Ele foi campeão três vezes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Rebeca Andrade é a maior medalhista olímpica do Brasil.",
+      "answer": true,
+      "fact": "Ela superou Robert Scheidt e Torben Grael."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil nunca recebeu uma Olimpíada.",
+      "answer": false,
+      "fact": "O Rio foi sede em 2016."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O filme Ainda Estou Aqui ganhou o Oscar de Melhor Filme Internacional.",
+      "answer": true,
+      "fact": "Foi a primeira vitória do Brasil na categoria."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Fernanda Montenegro ganhou o Oscar por Central do Brasil.",
+      "answer": false,
+      "fact": "Ela foi indicada, mas perdeu para Gwyneth Paltrow."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Carmen Miranda nasceu em Portugal.",
+      "answer": true,
+      "fact": "Ela veio ainda bebê para o Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Clarice Lispector nasceu no Rio Grande do Sul.",
+      "answer": false,
+      "fact": "Ela nasceu na atual Ucrânia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Masp fica na Avenida Paulista.",
+      "answer": true,
+      "fact": "Ele foi projetado por Lina Bo Bardi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Rocinha é a maior favela do Brasil.",
+      "answer": true,
+      "fact": "Foi o que o Censo de 2022 indicou."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Amazonas é o maior estado do Brasil em área.",
+      "answer": true,
+      "fact": "Ele cobre quase um quinto do território do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Salvador é a capital de Pernambuco.",
+      "answer": false,
+      "fact": "Salvador é a capital da Bahia, e Recife é a de Pernambuco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil já teve a capital em Salvador.",
+      "answer": true,
+      "fact": "Em 1763, ela foi para o Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Acre sempre fez parte do território brasileiro.",
+      "answer": false,
+      "fact": "Ele foi incorporado em 1903, pelo Tratado de Petrópolis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Guerra de Canudos ocorreu na Bahia.",
+      "answer": true,
+      "fact": "O conflito terminou em 1897."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Inconfidência Mineira foi em Salvador.",
+      "answer": false,
+      "fact": "Ela se concentrou em Vila Rica, atual Ouro Preto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O dia de Tiradentes lembra uma execução ocorrida no Rio de Janeiro.",
+      "answer": true,
+      "fact": "Ele foi enforcado em 1792."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Pantanal fica em Mato Grosso e Mato Grosso do Sul.",
+      "answer": true,
+      "fact": "Ele é a maior planície alagável do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Festa do Peão de Barretos acontece em São Paulo.",
+      "answer": true,
+      "fact": "O evento é um dos maiores rodeios da América Latina."
     }
   ]
 }

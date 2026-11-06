@@ -120,6 +120,462 @@
       "text": "A Positivo, fabricante de computadores, é uma empresa coreana.",
       "answer": false,
       "fact": "A Positivo é brasileira, de Curitiba, e já foi uma das maiores fabricantes de computadores do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O ChatGPT foi criado pela OpenAI.",
+      "answer": true,
+      "fact": "Ele foi lançado em novembro de 2022."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Excel é um programa de edição de vídeo.",
+      "answer": false,
+      "fact": "Ele é um programa de planilhas da Microsoft."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Pix só funciona em horário comercial.",
+      "answer": false,
+      "fact": "Ele funciona todos os dias, a qualquer hora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um gigabyte é maior que um megabyte.",
+      "answer": true,
+      "fact": "Um gigabyte tem cerca de mil megabytes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um kilobyte é maior que um gigabyte.",
+      "answer": false,
+      "fact": "O kilobyte é bem menor, cerca de um milhão de vezes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O iPhone usa o sistema iOS.",
+      "answer": true,
+      "fact": "O sistema é exclusivo da Apple."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Os celulares Samsung usam iOS.",
+      "answer": false,
+      "fact": "A maioria deles usa Android."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Tesla fabrica carros elétricos.",
+      "answer": true,
+      "fact": "A empresa também vende baterias e painéis solares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A SpaceX é uma fabricante de refrigerantes.",
+      "answer": false,
+      "fact": "Ela lança foguetes e satélites."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Twitter passou a se chamar X.",
+      "answer": true,
+      "fact": "A mudança veio em 2023, depois da compra por Elon Musk."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Elon Musk fundou o Twitter.",
+      "answer": false,
+      "fact": "Ele comprou a empresa em 2022 por 44 bilhões de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Orkut foi muito popular no Brasil.",
+      "answer": true,
+      "fact": "Ele foi desativado em 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O MSN Messenger ainda é o aplicativo mais usado do mundo.",
+      "answer": false,
+      "fact": "Ele foi encerrado em 2013 na maior parte do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O disquete virou o ícone de salvar em muitos programas.",
+      "answer": true,
+      "fact": "Muitos jovens nunca viram um de verdade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O CD guarda mais dados que um Blu-ray.",
+      "answer": false,
+      "fact": "Um Blu-ray guarda dezenas de vezes mais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O GPS usa satélites para localizar um aparelho.",
+      "answer": true,
+      "fact": "O sistema foi criado pelos EUA para uso militar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O GPS só funciona com internet.",
+      "answer": false,
+      "fact": "O sinal vem dos satélites, sem precisar de dados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um pixel é um ponto de uma imagem digital.",
+      "answer": true,
+      "fact": "O nome vem de \"picture element\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma tela 4K tem menos pixels que uma Full HD.",
+      "answer": false,
+      "fact": "Ela tem quatro vezes mais pixels."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Spam é o nome das mensagens indesejadas.",
+      "answer": true,
+      "fact": "O nome veio de um quadro do Monty Python sobre carne enlatada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um vírus de computador é um organismo vivo.",
+      "answer": false,
+      "fact": "Ele é um programa feito para se espalhar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Linux tem um pinguim como mascote.",
+      "answer": true,
+      "fact": "O nome dele é Tux."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Amazon começou vendendo carros.",
+      "answer": false,
+      "fact": "Ela começou como uma livraria on-line."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Netflix começou alugando DVDs pelo correio.",
+      "answer": true,
+      "fact": "O streaming só veio em 2007."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Spotify foi criado no Brasil.",
+      "answer": false,
+      "fact": "Ele foi criado na Suécia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O TikTok é de uma empresa chinesa.",
+      "answer": true,
+      "fact": "A empresa dona é a ByteDance."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Telegram é do Google.",
+      "answer": false,
+      "fact": "Ele foi criado pelos irmãos Durov, nascidos na Rússia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O nome Google vem de \"googol\", um número enorme.",
+      "answer": true,
+      "fact": "Um googol é o número 1 seguido de 100 zeros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O nome Apple veio de um computador muito grande.",
+      "answer": false,
+      "fact": "Steve Jobs disse que gostava da fruta e achou o nome simpático."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O emoji nasceu no Japão.",
+      "answer": true,
+      "fact": "Shigetaka Kurita desenhou 176 deles em 1999."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O primeiro celular tinha tela sensível ao toque.",
+      "answer": false,
+      "fact": "O primeiro, de 1973, só tinha teclas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Wi-Fi usa ondas de rádio.",
+      "answer": true,
+      "fact": "As faixas mais comuns são de 2,4 e 5 GHz."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Nokia já fabricou papel e pneus.",
+      "answer": true,
+      "fact": "A empresa finlandesa nasceu em 1865 como fábrica de papel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Samsung começou fabricando computadores.",
+      "answer": false,
+      "fact": "Ela começou em 1938 vendendo alimentos secos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Samsung começou vendendo alimentos secos.",
+      "answer": true,
+      "fact": "Só depois entrou em eletrônicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Tim Berners-Lee ficou bilionário com a patente da web.",
+      "answer": false,
+      "fact": "Ele não patenteou a web e a deixou aberta a todos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A primeira foto enviada na web foi de uma banda de mulheres do CERN.",
+      "answer": true,
+      "fact": "O grupo se chamava Les Horribles Cernettes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro site da história saiu do ar para sempre.",
+      "answer": false,
+      "fact": "O CERN recolocou o site no ar em 2013."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Ronald Wayne vendeu sua parte da Apple por 800 dólares.",
+      "answer": true,
+      "fact": "Ele saiu da empresa poucos dias depois de ajudar a fundá-la."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Apple nasceu em um grande escritório em Nova York.",
+      "answer": false,
+      "fact": "Ela nasceu na Califórnia, na garagem da casa dos Jobs."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O nome \"robô\" vem de uma palavra tcheca ligada a trabalho forçado.",
+      "answer": true,
+      "fact": "A palavra surgiu em uma peça de Karel Čapek, de 1920."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Isaac Asimov inventou a primeira CPU.",
+      "answer": false,
+      "fact": "Ele foi um escritor que criou as Três Leis da Robótica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Intel lançou o primeiro microprocessador comercial em 1971.",
+      "answer": true,
+      "fact": "Ele se chamava 4004."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Y2K derrubou todos os aviões do mundo.",
+      "answer": false,
+      "fact": "O problema foi em boa parte corrigido antes da virada de 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um computador pode ter problema em 2038 por causa da contagem de segundos.",
+      "answer": true,
+      "fact": "Sistemas de 32 bits contam o tempo desde 1970 e estouram nesse ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O problema do ano 2038 só afeta celulares da Apple.",
+      "answer": false,
+      "fact": "Ele afeta sistemas antigos de 32 bits em geral."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Bitcoin tem um limite de 21 milhões de moedas.",
+      "answer": true,
+      "fact": "Essa regra está no próprio código."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Satoshi Nakamoto foi identificado oficialmente em 2010.",
+      "answer": false,
+      "fact": "A verdadeira identidade dele segue desconhecida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Alguém pagou 10 mil bitcoins por duas pizzas em 2010.",
+      "answer": true,
+      "fact": "O dia 22 de maio virou o \"Bitcoin Pizza Day\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A primeira rede 5G comercial do mundo foi lançada em 2005.",
+      "answer": false,
+      "fact": "As primeiras redes surgiram em 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Coreia do Sul foi um dos primeiros países com 5G comercial.",
+      "answer": true,
+      "fact": "A rede abriu em abril de 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O protocolo IPv4 tem endereços suficientes para sempre.",
+      "answer": false,
+      "fact": "Os 4,3 bilhões de endereços já se esgotaram."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Código Morse ainda é usado por alguns radioamadores.",
+      "answer": true,
+      "fact": "Ele foi criado nos anos 1830."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Grace Hopper foi uma atriz de Hollywood.",
+      "answer": false,
+      "fact": "Ela foi uma cientista da computação e almirante da Marinha dos EUA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hedy Lamarr, atriz de Hollywood, ajudou a criar uma tecnologia base do Wi-Fi.",
+      "answer": true,
+      "fact": "Ela patenteou um sistema de salto de frequência em 1942."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Alan Turing trabalhou na NASA nos anos 1970.",
+      "answer": false,
+      "fact": "Ele morreu em 1954, antes da criação da agência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Alan Turing ajudou a quebrar o código nazista Enigma.",
+      "answer": true,
+      "fact": "O trabalho dele ficou em segredo por décadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Xerox nunca desenvolveu computadores.",
+      "answer": false,
+      "fact": "Ela criou no Parc o Alto, com janelas e mouse."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Linus Torvalds também criou o Git.",
+      "answer": true,
+      "fact": "Ele o fez em 2005, para cuidar do código do Linux."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Python foi criado por Bjarne Stroustrup.",
+      "answer": false,
+      "fact": "Foi criado por Guido van Rossum, e Stroustrup fez o C++."
+    },
+    {
+      "difficulty": "hard",
+      "text": "JavaScript foi escrito em cerca de 10 dias, na primeira versão.",
+      "answer": true,
+      "fact": "Brendan Eich o criou na Netscape em 1995."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Java e JavaScript são a mesma linguagem.",
+      "answer": false,
+      "fact": "São linguagens bem diferentes, apesar do nome."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O YouTube foi comprado em 2006.",
+      "answer": true,
+      "fact": "A compradora foi o Google, por 1,65 bilhão de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Instagram surgiu como um aplicativo de carros.",
+      "answer": false,
+      "fact": "Ele nasceu como um aplicativo de fotos, em 2010."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Pix permite transferências em poucos segundos.",
+      "answer": true,
+      "fact": "Em poucos anos, ele superou o cartão em número de transações."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um computador quântico usa qubits.",
+      "answer": true,
+      "fact": "Um qubit pode estar em superposição de estados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um computador quântico é só um computador comum bem rápido.",
+      "answer": false,
+      "fact": "Ele usa outro princípio físico e serve melhor a certos problemas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro mouse era feito de madeira.",
+      "answer": true,
+      "fact": "Douglas Engelbart o apresentou em 1968."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A primeira câmera digital foi criada pela Apple.",
+      "answer": false,
+      "fact": "Um engenheiro da Kodak a criou em 1975."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Excel é um programa de planilhas.",
+      "answer": true,
+      "fact": "A primeira versão saiu para o Mac, em 1985."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Photoshop é um programa da Microsoft.",
+      "answer": false,
+      "fact": "Ele é da Adobe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O atalho Ctrl + Z desfaz a última ação.",
+      "answer": true,
+      "fact": "O atalho funciona em quase todos os programas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um pendrive precisa de internet para guardar arquivos.",
+      "answer": false,
+      "fact": "Ele guarda os dados em memória própria."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro iPhone tinha loja de aplicativos desde o lançamento.",
+      "answer": false,
+      "fact": "A App Store só chegou em 2008."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro iPhone não copiava e colava texto.",
+      "answer": true,
+      "fact": "O recurso só veio em 2009."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O sistema hexadecimal usa somente números de 0 a 9.",
+      "answer": false,
+      "fact": "Ele usa também as letras de A a F."
     }
   ]
 }

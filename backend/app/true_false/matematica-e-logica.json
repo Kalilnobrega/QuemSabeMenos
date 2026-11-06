@@ -120,6 +120,462 @@
       "text": "No problema de Monty Hall, trocar de porta não muda a chance de ganhar.",
       "answer": false,
       "fact": "Trocar de porta dobra a chance: quem troca ganha 2/3 das vezes, e quem fica ganha 1/3."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 2 é primo.",
+      "answer": true,
+      "fact": "É o único número primo par."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A soma dos ângulos internos de um triângulo é 180 graus.",
+      "answer": true,
+      "fact": "Isso vale na geometria plana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um quadrado tem cinco lados.",
+      "answer": false,
+      "fact": "Ele tem quatro lados iguais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Todo quadrado é um retângulo.",
+      "answer": true,
+      "fact": "Ele tem quatro ângulos retos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qualquer número multiplicado por 0 dá 0.",
+      "answer": true,
+      "fact": "Por isso, o zero é chamado de elemento absorvente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dividir por zero dá zero.",
+      "answer": false,
+      "fact": "A divisão por zero não está definida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A raiz quadrada de 100 é 50.",
+      "answer": false,
+      "fact": "A raiz é 10, porque 10 × 10 é igual a 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Metade de 50% é 25%.",
+      "answer": true,
+      "fact": "A metade de meio é um quarto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dez por cento de 200 são 40.",
+      "answer": false,
+      "fact": "Dez por cento de 200 são 20."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um terço é maior que um quarto.",
+      "answer": true,
+      "fact": "Quanto menos partes, maior é cada uma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um quinto é maior que um terço.",
+      "answer": false,
+      "fact": "Quanto mais partes, menor é cada uma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 100 é um quadrado perfeito.",
+      "answer": true,
+      "fact": "Ele é igual a 10 × 10."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 50 é um quadrado perfeito.",
+      "answer": false,
+      "fact": "Não existe número inteiro que multiplicado por ele mesmo dê 50."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dois negativos multiplicados dão um positivo.",
+      "answer": true,
+      "fact": "Por exemplo, −3 × −4 é igual a 12."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A soma de dois números negativos dá sempre positivo.",
+      "answer": false,
+      "fact": "Ela dá sempre um número negativo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um triângulo pode ter um ângulo reto.",
+      "answer": true,
+      "fact": "Ele é chamado de triângulo retângulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um triângulo pode ter dois ângulos retos.",
+      "answer": false,
+      "fact": "A soma de 180 graus não deixa isso acontecer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 7 é primo.",
+      "answer": true,
+      "fact": "Ele só pode ser dividido por 1 e por ele mesmo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 9 é primo.",
+      "answer": false,
+      "fact": "Ele é igual a 3 × 3."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número romano X vale 10.",
+      "answer": true,
+      "fact": "Os romanos não tinham um símbolo para o zero."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número romano V vale 50.",
+      "answer": false,
+      "fact": "O V vale 5, e o L vale 50."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Todo ano múltiplo de 100 é bissexto.",
+      "answer": false,
+      "fact": "Só os múltiplos de 400, como 2000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um cubo tem seis faces.",
+      "answer": true,
+      "fact": "Ele tem também 12 arestas e 8 vértices."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma esfera tem seis faces.",
+      "answer": false,
+      "fact": "Uma esfera não tem faces planas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O diâmetro é o dobro do raio.",
+      "answer": true,
+      "fact": "Ele passa pelo centro do círculo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dois mais dois vezes dois dá seis.",
+      "answer": true,
+      "fact": "A multiplicação vem antes da soma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dois mais dois vezes dois dá oito.",
+      "answer": false,
+      "fact": "Primeiro multiplicamos, e o resultado é seis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um número par somado a outro par dá par.",
+      "answer": true,
+      "fact": "Por isso 4 + 6 dá 10."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um número ímpar somado a outro ímpar dá ímpar.",
+      "answer": false,
+      "fact": "A soma de dois ímpares é sempre par."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O número 13 é primo.",
+      "answer": true,
+      "fact": "Muitos prédios pulam esse andar, por superstição."
+    },
+    {
+      "difficulty": "hard",
+      "text": "0,999... é igual a 1.",
+      "answer": true,
+      "fact": "A prova é simples, pois um terço vezes três é igual a 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "0,999... é um pouco menor do que 1.",
+      "answer": false,
+      "fact": "Os dois números são exatamente iguais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os números primos acabam depois de um certo valor.",
+      "answer": false,
+      "fact": "Euclides provou que existem infinitos deles."
+    },
+    {
+      "difficulty": "hard",
+      "text": "π é um número irracional.",
+      "answer": true,
+      "fact": "Johann Lambert provou isso em 1761."
+    },
+    {
+      "difficulty": "hard",
+      "text": "π é exatamente igual a 22/7.",
+      "answer": false,
+      "fact": "Essa é só uma aproximação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "São necessárias pelo menos 183 pessoas para ter 50% de chance de dois aniversários iguais.",
+      "answer": false,
+      "fact": "Bastam 23 pessoas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Trocar de porta aumenta a chance de ganhar, no problema de Monty Hall.",
+      "answer": true,
+      "fact": "A chance sobe de 1/3 para 2/3."
+    },
+    {
+      "difficulty": "hard",
+      "text": "No problema de Monty Hall, a troca não muda a chance.",
+      "answer": false,
+      "fact": "Mudar de porta dobra a chance de ganhar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A sequência de Fibonacci se aproxima da razão áurea.",
+      "answer": true,
+      "fact": "A divisão entre termos seguidos tende a 1,618."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Pitágoras inventou o zero.",
+      "answer": false,
+      "fact": "O conceito veio da Índia, e Brahmagupta o estudou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os algarismos que usamos vieram da Índia e passaram pelos árabes.",
+      "answer": true,
+      "fact": "Por isso são chamados de indo-arábicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os romanos usavam o zero nos números deles.",
+      "answer": false,
+      "fact": "O sistema romano não tinha zero."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O número 1729 é conhecido como número de Hardy-Ramanujan.",
+      "answer": true,
+      "fact": "Ele é a menor soma de dois cubos de duas formas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Último Teorema de Fermat continua sem prova.",
+      "answer": false,
+      "fact": "Andrew Wiles o provou em 1994."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Conjectura de Goldbach ainda não foi provada.",
+      "answer": true,
+      "fact": "Ela diz que todo par maior que 2 é soma de dois primos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Hipótese de Riemann foi provada em 2015.",
+      "answer": false,
+      "fact": "Ela segue sem prova e vale 1 milhão de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Perelman recusou a Medalha Fields.",
+      "answer": true,
+      "fact": "Ele também recusou o prêmio de 1 milhão de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Medalha Fields é dada todo ano.",
+      "answer": false,
+      "fact": "Ela é dada a cada quatro anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Artur Avila é brasileiro e ganhou a Medalha Fields.",
+      "answer": true,
+      "fact": "Ele estudou no Impa, no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Maryam Mirzakhani era italiana.",
+      "answer": false,
+      "fact": "Ela era iraniana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Existem apenas cinco sólidos de Platão.",
+      "answer": true,
+      "fact": "Eles são tetraedro, cubo, octaedro, dodecaedro e icosaedro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Existem exatamente dez sólidos de Platão.",
+      "answer": false,
+      "fact": "São apenas cinco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A fita de Möbius tem um só lado.",
+      "answer": true,
+      "fact": "Ela é feita com uma tira e uma meia-volta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A garrafa de Klein tem um interior muito claro e separado.",
+      "answer": false,
+      "fact": "Ela não tem um dentro e um fora bem definidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um círculo tem infinitos eixos de simetria.",
+      "answer": true,
+      "fact": "Todo diâmetro é um eixo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um triângulo escaleno tem três lados iguais.",
+      "answer": false,
+      "fact": "Ele tem todos os lados diferentes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A soma de 1 a 100 é 5.050.",
+      "answer": true,
+      "fact": "Gauss teria feito essa conta ainda na escola."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dez fatorial é igual a 100.",
+      "answer": false,
+      "fact": "Dez fatorial é igual a 3.628.800."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Zero fatorial é igual a 1.",
+      "answer": true,
+      "fact": "A definição faz as fórmulas funcionarem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Dois elevado a zero é igual a zero.",
+      "answer": false,
+      "fact": "Ele é igual a 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um número elevado a 1 é igual a ele mesmo.",
+      "answer": true,
+      "fact": "Não há nenhuma multiplicação nesse caso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Todo número primo é ímpar.",
+      "answer": false,
+      "fact": "O 2 é primo e par."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O número 91 não é primo.",
+      "answer": true,
+      "fact": "Ele é igual a 7 × 13."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A soma de dois números pares é sempre par.",
+      "answer": true,
+      "fact": "Por exemplo, 8 + 14 dá 22."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um hexágono tem oito lados.",
+      "answer": false,
+      "fact": "Ele tem seis lados, e o octógono tem oito."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um por cento de mil é dez.",
+      "answer": true,
+      "fact": "Basta dividir mil por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um quarto de hora tem 25 minutos.",
+      "answer": false,
+      "fact": "Ele tem 15 minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um metro cúbico tem mil litros.",
+      "answer": true,
+      "fact": "É um cubo com 1 metro de aresta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A soma dos algarismos de um múltiplo de 9 também é múltiplo de 9.",
+      "answer": true,
+      "fact": "Esse é o critério de divisibilidade por 9."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Todo número par é divisível por 2.",
+      "answer": true,
+      "fact": "Essa é a própria definição de número par."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um triângulo pode ter quatro lados.",
+      "answer": false,
+      "fact": "Por definição, ele tem três lados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A soma de um número e seu oposto dá zero.",
+      "answer": true,
+      "fact": "Por exemplo, 5 + (−5) é igual a 0."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um metro cúbico é igual a 100 litros.",
+      "answer": false,
+      "fact": "Ele é igual a 1.000 litros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O produto de dois números ímpares é sempre par.",
+      "answer": false,
+      "fact": "O resultado é sempre ímpar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um número é múltiplo de 3 se a soma de seus algarismos for múltipla de 3.",
+      "answer": true,
+      "fact": "Esse é um critério clássico de divisibilidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Existem exatamente dez números primos menores que 100.",
+      "answer": false,
+      "fact": "Existem 25 primos menores que 100."
     }
   ]
 }

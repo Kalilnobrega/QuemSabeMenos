@@ -120,6 +120,462 @@
       "text": "A Nova Zelândia fica na Ásia.",
       "answer": false,
       "fact": "A Nova Zelândia fica na Oceania, a cerca de 2.000 km a sudeste da Austrália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A África é o continente com mais países.",
+      "answer": true,
+      "fact": "Ela tem 54 países reconhecidos pela ONU."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Oceania é o maior continente do mundo.",
+      "answer": false,
+      "fact": "O maior é a Ásia, e a Oceania é o menor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Rússia fica em dois continentes.",
+      "answer": true,
+      "fact": "Boa parte da população mora no lado europeu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Canadá é o maior país do mundo.",
+      "answer": false,
+      "fact": "É o segundo. O maior é a Rússia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Brasil é o maior país da América do Sul.",
+      "answer": true,
+      "fact": "Ele ocupa quase metade do continente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Itália faz fronteira com a Espanha.",
+      "answer": false,
+      "fact": "A França fica entre os dois países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capital da Austrália é Canberra.",
+      "answer": true,
+      "fact": "Muita gente acha que é Sydney."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capital do Canadá é Toronto.",
+      "answer": false,
+      "fact": "A capital é Ottawa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capital dos Estados Unidos é Washington.",
+      "answer": true,
+      "fact": "A cidade foi planejada para ser a capital."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Montevidéu é a capital do Uruguai.",
+      "answer": true,
+      "fact": "A cidade fica às margens do Rio da Prata."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Egito fica na América do Sul.",
+      "answer": false,
+      "fact": "O Egito fica principalmente na África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Equador é cortado pela linha que leva o seu nome.",
+      "answer": true,
+      "fact": "Daí vem o nome do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Chile faz fronteira com o Brasil.",
+      "answer": false,
+      "fact": "O Chile e o Equador são os únicos da América do Sul sem fronteira com o Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Paraguai não tem saída para o mar.",
+      "answer": true,
+      "fact": "A Bolívia também não."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Argentina não tem saída para o mar.",
+      "answer": false,
+      "fact": "A Argentina tem uma grande costa no Atlântico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Portugal só faz fronteira terrestre com a Espanha.",
+      "answer": true,
+      "fact": "Portugal fica na Península Ibérica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Antártida é um país.",
+      "answer": false,
+      "fact": "A Antártida é um continente regulado por um tratado internacional."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Groenlândia pertence ao Reino da Dinamarca.",
+      "answer": true,
+      "fact": "Ela tem governo próprio em boa parte dos assuntos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Everest fica nos Andes.",
+      "answer": false,
+      "fact": "O Everest fica no Himalaia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Monte Fuji fica no Japão.",
+      "answer": true,
+      "fact": "Ele é um vulcão e símbolo do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O rio Nilo atravessa a França.",
+      "answer": false,
+      "fact": "O Nilo corta a África e deságua no Mediterrâneo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O rio Sena atravessa Paris.",
+      "answer": true,
+      "fact": "Ele foi palco de provas na Olimpíada de 2024."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Londres é cortada pelo rio Danúbio.",
+      "answer": false,
+      "fact": "Londres é cortada pelo rio Tâmisa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Budapeste fica às margens do Danúbio.",
+      "answer": true,
+      "fact": "O rio separa as antigas Buda e Peste."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Sergipe é o maior estado do Brasil.",
+      "answer": false,
+      "fact": "Ele é o menor, e o Amazonas é o maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Minas Gerais é o estado com mais municípios do Brasil.",
+      "answer": true,
+      "fact": "São 853 municípios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Brasília fica na região Sudeste.",
+      "answer": false,
+      "fact": "Ela fica na região Centro-Oeste."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Salvador nunca foi a capital do Brasil.",
+      "answer": false,
+      "fact": "Ela foi a primeira capital, de 1549 a 1763."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Palmas é a capital do Tocantins.",
+      "answer": true,
+      "fact": "Ela foi planejada e criada em 1989."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Tocantins fica na região Sul.",
+      "answer": false,
+      "fact": "O Tocantins fica na região Norte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em Macapá, a linha do Equador passa pelo meio de um estádio.",
+      "answer": true,
+      "fact": "O estádio se chama Zerão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Fortaleza é a capital do Rio Grande do Norte.",
+      "answer": false,
+      "fact": "A capital do Rio Grande do Norte é Natal."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Boa Vista fica no Hemisfério Norte.",
+      "answer": true,
+      "fact": "É a única capital brasileira totalmente acima do Equador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Bolívia tem saída para o Oceano Pacífico.",
+      "answer": false,
+      "fact": "Ela perdeu a saída para o mar na Guerra do Pacífico, em 1883."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A África do Sul tem três capitais.",
+      "answer": true,
+      "fact": "São Pretória, Cidade do Cabo e Bloemfontein."
+    },
+    {
+      "difficulty": "hard",
+      "text": "San Marino fica totalmente cercado pela Itália.",
+      "answer": true,
+      "fact": "É uma das repúblicas mais antigas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Suíça faz parte da União Europeia.",
+      "answer": false,
+      "fact": "Ela nunca entrou no bloco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Noruega não faz parte da União Europeia.",
+      "answer": true,
+      "fact": "O país rejeitou a entrada em dois plebiscitos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Turquia fica toda na Ásia.",
+      "answer": false,
+      "fact": "Uma pequena parte fica na Europa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Indonésia é o maior país muçulmano em população.",
+      "answer": true,
+      "fact": "Ela tem mais de 230 milhões de muçulmanos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Vaticano é maior que Mônaco.",
+      "answer": false,
+      "fact": "Mônaco tem mais de 2 km², e o Vaticano, menos de 0,5 km²."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Mar Morto é, na verdade, um lago.",
+      "answer": true,
+      "fact": "Ele não tem ligação com o oceano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ponto mais alto do Brasil fica no Amazonas.",
+      "answer": true,
+      "fact": "O Pico da Neblina fica na fronteira com a Venezuela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ponto extremo norte do Brasil é Oiapoque.",
+      "answer": false,
+      "fact": "É o Monte Caburaí, em Roraima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O ponto extremo leste do Brasil fica na Paraíba.",
+      "answer": true,
+      "fact": "É a Ponta do Seixas, em João Pessoa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Curitiba fica no litoral do Paraná.",
+      "answer": false,
+      "fact": "Curitiba fica no planalto, a cerca de 900 metros de altitude."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil tem território nos dois hemisférios Norte e Sul.",
+      "answer": true,
+      "fact": "O Equador corta o Pará, Amapá, Amazonas e Roraima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Trópico de Capricórnio passa por Salvador.",
+      "answer": false,
+      "fact": "Ele passa, por exemplo, pelo estado de São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O arquipélago de Abrolhos fica no Rio Grande do Sul.",
+      "answer": false,
+      "fact": "Ele fica na Bahia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A cidade de Bonito fica em Mato Grosso do Sul.",
+      "answer": true,
+      "fact": "É conhecida por rios muito transparentes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Foz do Iguaçu é vizinha da Bolívia.",
+      "answer": false,
+      "fact": "Ela é vizinha da Argentina e do Paraguai."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Ilha de Marajó fica na foz do rio Amazonas.",
+      "answer": true,
+      "fact": "Ela é maior que muitos países europeus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Rio Tietê corre em direção ao mar.",
+      "answer": false,
+      "fact": "Ele corre para o interior de São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A China usa só um fuso horário oficial.",
+      "answer": true,
+      "fact": "Em certas regiões, o Sol nasce muito tarde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Reino Unido tem 11 fusos horários em seu território principal.",
+      "answer": false,
+      "fact": "É a Rússia que tem 11 fusos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Austrália é uma ilha no Oceano Atlântico.",
+      "answer": false,
+      "fact": "Ela fica entre os oceanos Índico e Pacífico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Baku é uma capital abaixo do nível do mar.",
+      "answer": true,
+      "fact": "Ela fica a cerca de 28 metros abaixo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "La Paz é a capital mais baixa do mundo.",
+      "answer": false,
+      "fact": "Ela é a sede de governo mais alta do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O rio Congo corta a linha do Equador duas vezes.",
+      "answer": true,
+      "fact": "É um dos poucos rios a fazer isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O rio Amazonas nasce no Brasil.",
+      "answer": false,
+      "fact": "Ele nasce no Peru, na Cordilheira dos Andes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Península Ibérica reúne Portugal e Espanha.",
+      "answer": true,
+      "fact": "Os Pirineus a separam do resto da Europa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Canal da Mancha separa Portugal da Espanha.",
+      "answer": false,
+      "fact": "Ele separa o Reino Unido da França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Estreito de Gibraltar liga o Atlântico ao Mediterrâneo.",
+      "answer": true,
+      "fact": "Ele tem cerca de 14 km no ponto mais estreito."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Rio de Janeiro foi a capital do Brasil até 1960.",
+      "answer": true,
+      "fact": "Naquele ano, a capital passou para Brasília."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Rondônia fica na região Nordeste.",
+      "answer": false,
+      "fact": "Rondônia fica na região Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A França tem mais fusos horários que a Rússia, contando os territórios ultramarinos.",
+      "answer": true,
+      "fact": "Ao todo, a França tem 12 fusos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hong Kong é um país independente.",
+      "answer": false,
+      "fact": "Ela é uma região administrativa especial da China."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Lesoto fica inteiramente dentro da África do Sul.",
+      "answer": true,
+      "fact": "É um dos três países cercados por um único vizinho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Iêmen faz fronteira com o Egito.",
+      "answer": false,
+      "fact": "O Iêmen fica no sul da Península Arábica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A capital da Austrália é Camberra.",
+      "answer": true,
+      "fact": "Sydney e Melbourne são maiores, mas não são a capital."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Rio Nilo corre pela América do Sul.",
+      "answer": false,
+      "fact": "Ele corre pela África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Rússia fica na Europa e na Ásia.",
+      "answer": true,
+      "fact": "Os Montes Urais marcam a divisão tradicional."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Canadá faz fronteira com o México.",
+      "answer": false,
+      "fact": "Os Estados Unidos ficam entre os dois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Lesoto é totalmente cercado pela África do Sul.",
+      "answer": true,
+      "fact": "É um dos três países cercados por um só vizinho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Mar Cáspio é um rio.",
+      "answer": false,
+      "fact": "Ele é o maior corpo de água interior do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Istambul fica em dois continentes.",
+      "answer": true,
+      "fact": "O Bósforo divide a cidade."
     }
   ]
 }

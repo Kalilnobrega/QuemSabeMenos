@@ -1,0 +1,563 @@
+{
+  "theme": "Dinheiro e negócios",
+  "statements": [
+    {
+      "difficulty": "medium",
+      "text": "A nota de 200 reais traz o lobo-guará.",
+      "answer": true,
+      "fact": "A nota foi lançada em setembro de 2020, em plena pandemia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O real foi lançado em 1986.",
+      "answer": false,
+      "fact": "O real é de 1994. Em 1986 foi lançado o cruzado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Pix foi criado pelo Banco Central do Brasil.",
+      "answer": true,
+      "fact": "O sistema entrou em funcionamento em novembro de 2020."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Nike é uma empresa alemã.",
+      "answer": false,
+      "fact": "A Nike é americana. As alemãs são Adidas e Puma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Adidas e a Puma foram fundadas por dois irmãos.",
+      "answer": true,
+      "fact": "Adolf e Rudolf Dassler brigaram e dividiram a cidade onde viviam."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Toyota começou fabricando bicicletas.",
+      "answer": false,
+      "fact": "Ela começou com teares, máquinas de tecer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Nintendo nasceu fabricando baralhos.",
+      "answer": true,
+      "fact": "A empresa fazia cartas de hanafuda em 1889."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Facebook foi fundado em uma garagem de Seattle.",
+      "answer": false,
+      "fact": "Ele nasceu em um dormitório de Harvard, em 2004."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Amazon começou vendendo apenas livros.",
+      "answer": true,
+      "fact": "Jeff Bezos abriu a loja virtual em 1995."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Coca-Cola foi inventada por um padeiro.",
+      "answer": false,
+      "fact": "Foi criada pelo farmacêutico John Pemberton, em 1886."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Havaianas foi inspirada em uma sandália japonesa.",
+      "answer": true,
+      "fact": "O solado imita arroz, em homenagem ao modelo zori."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Natura é uma marca francesa.",
+      "answer": false,
+      "fact": "A Natura foi fundada em São Paulo, em 1969."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Embraer é uma fabricante de aviões brasileira.",
+      "answer": true,
+      "fact": "A sede fica em São José dos Campos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Petrobras foi criada no governo de Juscelino Kubitschek.",
+      "answer": false,
+      "fact": "Ela foi criada por Getúlio Vargas em 1953."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O touro representa o mercado em alta na bolsa de valores.",
+      "answer": true,
+      "fact": "O touro ataca de baixo para cima, e o urso, de cima para baixo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O urso representa o mercado em alta na bolsa de valores.",
+      "answer": false,
+      "fact": "O urso é o símbolo da queda, e o touro, da alta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O salário mínimo no Brasil foi criado no governo Vargas.",
+      "answer": true,
+      "fact": "A primeira tabela saiu em 1940."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A CLT foi criada em 1988.",
+      "answer": false,
+      "fact": "A CLT é de 1943. Em 1988 veio a Constituição."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O trabalhador com carteira assinada recebe 13º salário no Brasil.",
+      "answer": true,
+      "fact": "O benefício foi criado por lei em 1962."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O IPVA é um imposto cobrado sobre casas.",
+      "answer": false,
+      "fact": "O IPVA é sobre veículos, e o IPTU, sobre imóveis urbanos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em 2022, Elon Musk comprou o Twitter.",
+      "answer": true,
+      "fact": "O negócio custou 44 bilhões de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Instagram pertence ao Google.",
+      "answer": false,
+      "fact": "Ele é da Meta, que o comprou em 2012."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O YouTube pertence ao Google.",
+      "answer": true,
+      "fact": "A compra foi feita em 2006."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A marca Lego é sueca.",
+      "answer": false,
+      "fact": "A Lego é dinamarquesa, e a IKEA é que é sueca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A IKEA é uma empresa de origem sueca.",
+      "answer": true,
+      "fact": "Ela foi fundada em 1943 por Ingvar Kamprad."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Zara é uma marca italiana.",
+      "answer": false,
+      "fact": "A Zara é espanhola, do grupo Inditex."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Starbucks nasceu em Seattle.",
+      "answer": true,
+      "fact": "A primeira loja fica perto do Pike Place Market."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Burger King criou o Big Mac.",
+      "answer": false,
+      "fact": "O Big Mac é do McDonald's."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Tio Patinhas é um personagem da Disney.",
+      "answer": true,
+      "fact": "Ele foi criado em 1947 por Carl Barks."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Ferrari é uma marca alemã.",
+      "answer": false,
+      "fact": "A Ferrari é italiana, de Maranello."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Volkswagen é a fabricante original do Fusca.",
+      "answer": true,
+      "fact": "O nome significa \"carro do povo\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Tesla foi fundada por Elon Musk sozinho.",
+      "answer": false,
+      "fact": "Martin Eberhard e Marc Tarpenning fundaram a empresa em 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O bitcoin foi criado por alguém sob o nome de Satoshi Nakamoto.",
+      "answer": true,
+      "fact": "A identidade real dessa pessoa nunca foi confirmada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Reino Unido adotou o euro em 2002.",
+      "answer": false,
+      "fact": "O Reino Unido manteve a libra esterlina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Suíça usa o franco como moeda.",
+      "answer": true,
+      "fact": "O franco suíço é visto como uma moeda segura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O iene é a moeda da China.",
+      "answer": false,
+      "fact": "O iene é do Japão, e o yuan, da China."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A Bolsa de Valores de Nova York fica em Wall Street.",
+      "answer": true,
+      "fact": "O prédio é um dos símbolos do capitalismo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A B3 fica em Brasília.",
+      "answer": false,
+      "fact": "A B3 fica no centro de São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A primeira rede de pizzas Pizza Hut surgiu nos EUA.",
+      "answer": true,
+      "fact": "Ela foi fundada em 1958, no Kansas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Dividendo é um imposto cobrado do acionista.",
+      "answer": false,
+      "fact": "Dividendo é a parte do lucro paga ao acionista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma ação é uma pequena parte de uma empresa.",
+      "answer": true,
+      "fact": "Ter uma ação faz da pessoa sócia da empresa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Inflação é quando os preços caem de forma geral.",
+      "answer": false,
+      "fact": "Isso se chama deflação. Inflação é a alta geral dos preços."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O PIB mede a riqueza produzida em um país.",
+      "answer": true,
+      "fact": "A sigla significa Produto Interno Bruto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O preço do barril de petróleo WTI já ficou negativo.",
+      "answer": true,
+      "fact": "Em 20 de abril de 2020, o barril fechou em 37,63 dólares negativos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A maior queda do Dow Jones em um único dia aconteceu em 1929.",
+      "answer": false,
+      "fact": "A maior foi em 19 de outubro de 1987, com queda de 22,6%."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Isaac Newton perdeu dinheiro em uma bolha financeira.",
+      "answer": true,
+      "fact": "Foi a bolha da Companhia dos Mares do Sul, em 1720."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um bulbo de tulipa já custou mais do que uma casa em Amsterdã.",
+      "answer": true,
+      "fact": "Foi durante a \"Tulipomania\", no século XVII."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Barings Bank quebrou por causa de um incêndio.",
+      "answer": false,
+      "fact": "Quebrou em 1995, por causa do operador Nick Leeson."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Hermès começou fabricando selas e arreios.",
+      "answer": true,
+      "fact": "Fundada em 1837, a marca ainda usa uma carruagem no logo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Lamborghini começou fabricando motos.",
+      "answer": false,
+      "fact": "Ela começou com tratores agrícolas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Peugeot já fabricou moedores de café.",
+      "answer": true,
+      "fact": "A empresa existe desde 1810."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Nokia começou fabricando rádios.",
+      "answer": false,
+      "fact": "A Nokia nasceu como fábrica de celulose, em 1865."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Samsung começou vendendo peixe seco e macarrão.",
+      "answer": true,
+      "fact": "A empresa foi fundada em 1938, em Daegu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Ronald Wayne vendeu sua parte da Apple por 1 milhão de dólares.",
+      "answer": false,
+      "fact": "Ele vendeu seus 10% por apenas 800 dólares em 1976."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Microsoft investiu na Apple em 1997.",
+      "answer": true,
+      "fact": "O investimento de 150 milhões ajudou a Apple a sobreviver."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Blockbuster comprou a Netflix em 2000.",
+      "answer": false,
+      "fact": "A oferta da Netflix por 50 milhões foi recusada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Kodak inventou a câmera digital.",
+      "answer": true,
+      "fact": "Um engenheiro da empresa criou o protótipo em 1975."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O guia de restaurantes Michelin foi criado por uma fábrica de pneus.",
+      "answer": true,
+      "fact": "O objetivo era fazer as pessoas viajarem mais de carro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Guia Michelin dá até cinco estrelas.",
+      "answer": false,
+      "fact": "O máximo são três estrelas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O cartão de crédito Diners Club surgiu de um jantar sem dinheiro.",
+      "answer": true,
+      "fact": "A história conta que Frank McNamara esqueceu a carteira, em 1949."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Silvio Santos foi camelô no Rio de Janeiro.",
+      "answer": true,
+      "fact": "Ele começou vendendo na rua ainda adolescente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Banco do Brasil foi fundado em 1964.",
+      "answer": false,
+      "fact": "Foi em 1808. Em 1964 veio o Banco Central."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Caixa foi criada por dom Pedro II.",
+      "answer": true,
+      "fact": "Foi em 1861, com o nome de Caixa Econômica da Corte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Plano Collor congelou apenas os salários de funcionários públicos.",
+      "answer": false,
+      "fact": "O plano bloqueou as contas bancárias e as poupanças em 1990."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Brasil já teve inflação acima de 2.000% em um ano.",
+      "answer": true,
+      "fact": "Em 1993, a inflação chegou a cerca de 2.477%."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Suécia usa o euro como moeda.",
+      "answer": false,
+      "fact": "A Suécia rejeitou o euro em 2003 e mantém a coroa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Os EUA pararam de fabricar a moeda de 1 centavo.",
+      "answer": true,
+      "fact": "A produção acabou em 2025 porque cada moeda custava mais do que valia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A nota de 500 euros continua sendo emitida.",
+      "answer": false,
+      "fact": "O Banco Central Europeu parou de emiti-la em 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Zimbábue já emitiu uma nota de 100 trilhões de dólares.",
+      "answer": true,
+      "fact": "A hiperinflação destruiu a moeda em 2008 e 2009."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Alemanha de 1923 teve uma deflação severa.",
+      "answer": false,
+      "fact": "O país sofreu uma das piores hiperinflações da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O primeiro caixa eletrônico do mundo foi instalado em Londres.",
+      "answer": true,
+      "fact": "Foi em 1967, em uma agência do Barclays."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Warren Buffett comprou sua primeira ação aos 30 anos.",
+      "answer": false,
+      "fact": "Ele tinha apenas 11 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Warren Buffett considerou a compra da Berkshire Hathaway um erro.",
+      "answer": true,
+      "fact": "A empresa era uma têxtil em declínio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Virgin de Richard Branson começou vendendo discos por correio.",
+      "answer": true,
+      "fact": "O negócio começou em 1970, em Londres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O McDonald's foi fundado por Ray Kroc.",
+      "answer": false,
+      "fact": "Foi fundado pelos irmãos Richard e Maurice McDonald."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O dono do KFC, Harland Sanders, ficou famoso depois dos 60 anos.",
+      "answer": true,
+      "fact": "O negócio começou quando ele tinha 62 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Ferrari fabricava tratores antes dos carros esportivos.",
+      "answer": false,
+      "fact": "Quem fez isso foi a Lamborghini."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A companhia aérea Azul foi fundada pelo criador da JetBlue.",
+      "answer": true,
+      "fact": "David Neeleman nasceu em São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Nubank é um banco de origem argentina.",
+      "answer": false,
+      "fact": "O Nubank é brasileiro, fundado em São Paulo em 2013."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Mercado Livre foi fundado na Argentina.",
+      "answer": true,
+      "fact": "Marcos Galperin criou a empresa em 1999."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Vaticano cunha as próprias moedas de euro.",
+      "answer": true,
+      "fact": "Elas são muito disputadas por colecionadores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Equador tem o peso como moeda.",
+      "answer": false,
+      "fact": "O país usa o dólar americano desde 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Steve Jobs foi o único fundador da Apple.",
+      "answer": false,
+      "fact": "Foram três fundadores, com Steve Wozniak e Ronald Wayne."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Jack Ma foi professor de inglês antes de criar a Alibaba.",
+      "answer": true,
+      "fact": "Ele foi recusado em dezenas de empregos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O WhatsApp foi comprado pela Microsoft.",
+      "answer": false,
+      "fact": "Foi comprado pelo Facebook em 2014, por 19 bilhões de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Mansa Musa, do Mali, derrubou o preço do ouro no Cairo.",
+      "answer": true,
+      "fact": "Ele distribuiu tanto ouro em 1324 que abalou a economia local."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O dólar é a principal moeda de reserva do mundo.",
+      "answer": true,
+      "fact": "Bancos centrais guardam grande parte das reservas em dólar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O Banco Central imprime as notas de real em sua própria sede.",
+      "answer": false,
+      "fact": "A Casa da Moeda é a responsável pela impressão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O FGTS é depositado pelo empregador.",
+      "answer": true,
+      "fact": "O valor é de 8% do salário, em geral."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Juros compostos incidem apenas sobre o valor inicial.",
+      "answer": false,
+      "fact": "Eles incidem também sobre os juros já acumulados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Selic é definida pelo Ministério da Fazenda.",
+      "answer": false,
+      "fact": "Ela é definida pelo Copom, do Banco Central."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A Ambev nasceu da união entre Brahma e Antarctica.",
+      "answer": true,
+      "fact": "A fusão foi anunciada em 1999."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O Plano Real foi lançado em 2002.",
+      "answer": false,
+      "fact": "A moeda real entrou em circulação em julho de 1994."
+    }
+  ]
+}
