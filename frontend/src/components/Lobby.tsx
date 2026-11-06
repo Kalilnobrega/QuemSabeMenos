@@ -27,7 +27,7 @@ const POWERS_HINT: Record<RoomSettings['mode'], string> = {
   teams: 'O time guarda até 3, o capitão usa, e as sabotagens miram outro time',
   last_standing: 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador',
   hot_potato: 'Ajudas para quem está com a batata, sabotagens para quem assiste',
-  estimate: 'Sem poderes por enquanto',
+  estimate: 'Ajudas e sabotagens ganhas chutando perto. Com poderes, só o teclado da tela funciona',
 }
 
 const SURVIVAL_KINDS: Record<RoomSettings['survival_kind'], { name: string; hint: string; lives: number }> = {
@@ -116,7 +116,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         ? [
             { label: 'Perguntas', value: String(estimateRounds(room.settings.rounds)) },
             { label: 'Chute', value: '20s' },
-            { label: 'Poderes', value: 'Não' },
+            { label: 'Poderes', value: room.settings.powers ? `até ${room.settings.powerup_max}` : 'Não' },
             { label: 'Temas', value: themesLabel },
           ]
         : room.settings.mode === 'last_standing'
@@ -197,7 +197,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
           <span className="font-display text-xl tracking-wide text-brand">
             {MODES[room.settings.mode].name}
-            {room.settings.mode !== 'estimate' && room.settings.powers && ' com poderes'}
+            {room.settings.powers && ' com poderes'}
           </span>
           <span className="text-sm text-steel">{MODES[room.settings.mode].hint}</span>
           <span className="absolute top-2 right-2 text-steel">
@@ -465,18 +465,16 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         </div>
 
-        {settings.mode !== 'estimate' && (
-          <OptionRow
-            title="Poderes"
-            hint={POWERS_HINT[settings.mode]}
-            options={[0, 1]}
-            value={settings.powers ? 1 : 0}
-            label={(n) => (n ? 'Com' : 'Sem')}
-            onPick={(n) => update({ powers: n === 1 })}
-          />
-        )}
+        <OptionRow
+          title="Poderes"
+          hint={POWERS_HINT[settings.mode]}
+          options={[0, 1]}
+          value={settings.powers ? 1 : 0}
+          label={(n) => (n ? 'Com' : 'Sem')}
+          onPick={(n) => update({ powers: n === 1 })}
+        />
 
-        {settings.mode !== 'teams' && settings.mode !== 'estimate' && settings.powers && (
+        {settings.mode !== 'teams' && settings.powers && (
           <OptionRow
             title="Limite de poderes"
             hint="Quantos poderes cada um pode guardar ao mesmo tempo"

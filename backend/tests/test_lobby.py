@@ -603,3 +603,33 @@ async def test_players_change_avatar_in_the_lobby_and_repeats_get_a_variant(conn
     assert all(p["avatar_variant"] == 0 for p in state["players"])  # sem repetido, sem variante
     await ana.call("start_game")
     assert not (await bia.call("update_avatar", {"avatar": "sapo"}))["ok"]  # só no lobby
+
+
+async def test_estimate_with_powers_arms_and_spends_through_the_room(connect, monkeypatch):
+    from app import estimate
+
+    monkeypatch.setattr(estimate, "START_SECONDS", 0.05)
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(estimate, "POWERS", ("shield",))
+    ana, bia, _created, _joined = await setup_room(connect)
+    assert (await ana.call("update_settings", {"mode": "estimate", "rounds": 10, "powers": True}))["ok"]
+    assert (await ana.call("start_game"))["ok"]
+    state = await ana.wait_for(lambda s: s["estimate"] and s["estimate"]["phase"] == "answering")
+    assert state["estimate"]["powers"] and state["estimate"]["powerups"] == ["shield"]
+    assert (await ana.call("submit_guess", {"value": 1}))["ok"]
+    assert (await bia.call("submit_guess", {"value": 1}))["ok"]
+    await ana.wait_for(lambda s: s["estimate"]["phase"] == "results", timeout=2)
+    assert (await ana.call("arm_powerup", {"kind": "shield"}))["ok"]
+    armed = await ana.wait_for(lambda s: s["estimate"]["armed"], timeout=2)
+    assert armed["estimate"]["powerups"] == []
+    assert (await ana.call("disarm_powerup"))["ok"]
+    back = await ana.wait_for(lambda s: not s["estimate"]["armed"], timeout=2)
+    assert back["estimate"]["powerups"] == ["shield"]
+    assert (await ana.call("arm_powerup", {"kind": "shield"}))["ok"]
+    assert (await bia.call("skip_results"))["ok"]
+    await ana.wait_for(lambda s: s["estimate"]["round"] == 2, timeout=2)  # quem armou já conta como pronto
+    await ana.call("leave_room")
+    await bia.call("leave_room")
+    await match_closed("abandoned")
+    assert main.history.db.execute("SELECT powerup_max FROM matches").fetchone()[0] is not None

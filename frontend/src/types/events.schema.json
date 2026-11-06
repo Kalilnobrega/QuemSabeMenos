@@ -454,6 +454,90 @@
               "type": "null"
             }
           ]
+        },
+        "shielded": {
+          "type": "integer"
+        },
+        "stolen": {
+          "type": "integer"
+        },
+        "robbed": {
+          "type": "integer"
+        },
+        "investment": {
+          "type": "integer"
+        },
+        "doubled": {
+          "type": "boolean"
+        },
+        "first_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expired": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "coup",
+              "cold_water",
+              "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "ghost_hint",
+              "thermometer",
+              "double_potato",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "iron_captain",
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "gained": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpGain"
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "required": [
@@ -462,9 +546,34 @@
         "error_percent",
         "exact",
         "delta",
-        "elapsed_ms"
+        "elapsed_ms",
+        "shielded",
+        "stolen",
+        "robbed",
+        "investment",
+        "doubled",
+        "first_value",
+        "expired",
+        "gained"
       ],
       "title": "EstimateGuess",
+      "type": "object"
+    },
+    "EstimatePeek": {
+      "description": "Espiar: o chute de outro jogador, ao vivo.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "player_id",
+        "value"
+      ],
+      "title": "EstimatePeek",
       "type": "object"
     },
     "EstimateScoring": {
@@ -576,6 +685,30 @@
             }
           ]
         },
+        "first_guess": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "retry_hint": {
+          "anyOf": [
+            {
+              "enum": [
+                "higher",
+                "lower"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
         "answer": {
           "anyOf": [
             {
@@ -620,6 +753,271 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "powers": {
+          "type": "boolean"
+        },
+        "powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "coup",
+              "cold_water",
+              "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "ghost_hint",
+              "thermometer",
+              "double_potato",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "iron_captain",
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "legendary_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "coup",
+              "cold_water",
+              "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "ghost_hint",
+              "thermometer",
+              "double_potato",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "iron_captain",
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "mythic_powerups": {
+          "items": {
+            "enum": [
+              "fifty_fifty",
+              "shield",
+              "double",
+              "peek",
+              "extra_time",
+              "second_chance",
+              "reverse",
+              "backpack",
+              "theme",
+              "investment",
+              "scratch",
+              "steal",
+              "scramble",
+              "accelerator",
+              "mirror",
+              "silence",
+              "magnifier",
+              "toll",
+              "decoy",
+              "flashbang",
+              "resurrection",
+              "duel",
+              "coup",
+              "cold_water",
+              "free_pass",
+              "short_fuse",
+              "double_bomb",
+              "ghost_hint",
+              "thermometer",
+              "double_potato",
+              "mutiny",
+              "infiltrator",
+              "gag",
+              "iron_captain",
+              "tax",
+              "medkit",
+              "hide",
+              "curse",
+              "blood_pact",
+              "dagger",
+              "blessing"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powerup_max": {
+          "type": "integer"
+        },
+        "power_run": {
+          "type": "integer"
+        },
+        "power_run_goal": {
+          "type": "integer"
+        },
+        "starting_powerup": {
+          "anyOf": [
+            {
+              "enum": [
+                "fifty_fifty",
+                "shield",
+                "double",
+                "peek",
+                "extra_time",
+                "second_chance",
+                "reverse",
+                "backpack",
+                "theme",
+                "investment",
+                "scratch",
+                "steal",
+                "scramble",
+                "accelerator",
+                "mirror",
+                "silence",
+                "magnifier",
+                "toll",
+                "decoy",
+                "flashbang",
+                "resurrection",
+                "duel",
+                "coup",
+                "cold_water",
+                "free_pass",
+                "short_fuse",
+                "double_bomb",
+                "ghost_hint",
+                "thermometer",
+                "double_potato",
+                "mutiny",
+                "infiltrator",
+                "gag",
+                "iron_captain",
+                "tax",
+                "medkit",
+                "hide",
+                "curse",
+                "blood_pact",
+                "dagger",
+                "blessing"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "can_arm": {
+          "type": "boolean"
+        },
+        "armed": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PowerUpUse"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "active": {
+          "items": {
+            "$ref": "#/$defs/PowerUpUse"
+          },
+          "type": "array"
+        },
+        "lasting": {
+          "items": {
+            "$ref": "#/$defs/LastingPowerUp"
+          },
+          "type": "array"
+        },
+        "peek": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/EstimatePeek"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "flashbang": {
+          "type": "boolean"
+        },
+        "silenced_rounds": {
+          "type": "integer"
+        },
+        "theme_choices": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "powers_round": {
+          "type": "boolean"
         }
       },
       "required": [
@@ -634,12 +1032,31 @@
         "unit",
         "answered",
         "my_guess",
+        "first_guess",
+        "retry_hint",
         "answer",
         "reference",
         "fact",
         "guesses",
         "scoring",
-        "ready"
+        "ready",
+        "powers",
+        "powerups",
+        "legendary_powerups",
+        "mythic_powerups",
+        "powerup_max",
+        "power_run",
+        "power_run_goal",
+        "starting_powerup",
+        "can_arm",
+        "armed",
+        "active",
+        "lasting",
+        "peek",
+        "flashbang",
+        "silenced_rounds",
+        "theme_choices",
+        "powers_round"
       ],
       "title": "EstimateView",
       "type": "object"

@@ -307,6 +307,24 @@ export const POTATO_HINTS: Partial<Record<Kind, string>> = {
   resurrection: 'Mítico, só para fantasma: você volta para a roda.',
 }
 
+/** Chutômetro: não tem alternativas, e "acertar" é ganhar QI com o chute. */
+export const ESTIMATE_HINTS: Partial<Record<Kind, string>> = {
+  shield: 'Vale por até 2 perguntas: no primeiro chute que perderia QI, não perde. Se não precisar, quebra.',
+  double: 'A próxima vale o dobro, para o bem e para o mal (na difícil, a perda é o triplo).',
+  peek: 'Use na hora da pergunta, pelo ícone: veja os chutes dos outros ao vivo.',
+  second_chance:
+    'Vale nas próximas 2 perguntas: se o chute perder QI, você descobre se a resposta é mais alta ou mais baixa e chuta de novo, valendo metade.',
+  investment:
+    'Cada chute seguido que ganha QI rende +2, +4, +6, +8 e +10 de bônus. Acaba no primeiro que não ganhar. Só a partir das médias.',
+  steal: 'Na próxima, você tira 10 de QI do alvo e, se ele ganhar QI, mais metade do que ganhar.',
+  scramble: 'A próxima pergunta do alvo vem com as letras embaralhadas dentro das palavras.',
+  accelerator: 'O alvo tem um terço do tempo para chutar.',
+  mirror: 'A próxima pergunta do alvo aparece espelhada.',
+  magnifier: 'A próxima pergunta do alvo vem borrada: só dá para ler com a lupa.',
+  silence: 'Por 2 perguntas o alvo não vê o tempo, o placar nem a revelação, e não usa poderes.',
+  flashbang: 'Depois de 4 segundos, a pergunta do alvo some até o fim da rodada. O teclado continua funcionando.',
+}
+
 /** Times: os poderes valem para o time inteiro e as sabotagens miram um time adversário. */
 export const TEAM_HINTS: Partial<Record<Kind, string>> = {
   fifty_fifty: 'O capitão usa na hora da pergunta: tira duas erradas para o time.',

@@ -7,12 +7,13 @@ interface Props {
   unit: string | null | undefined
   disabled: boolean
   physicalKeys: boolean
+  compact: boolean // com poderes, os avisos ocupam parte da tela
   onChange: (draft: string) => void
   onSubmit: () => void
 }
 
 /** O teclado do Chutômetro: o mesmo em qualquer aparelho. Com `physicalKeys`, as teclas do computador também digitam. */
-export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, onSubmit }: Props) {
+export function EstimateKeypad({ draft, unit, disabled, physicalKeys, compact, onChange, onSubmit }: Props) {
   const ready = !disabled && draftValue(draft) !== null
 
   useEffect(() => {
@@ -43,6 +44,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
     <Key
       key={value}
       disabled={disabled}
+      compact={compact}
       onPress={() => {
         playSound('keypadPress', value.length)
         onChange(typeDigits(draft, value))
@@ -72,6 +74,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
         {['1', '2', '3', '4', '5', '6', '7', '8', '9'].map(digit)}
         <Key
           disabled={disabled}
+          compact={compact}
           label="Vírgula"
           onPress={() => {
             playSound('keypadPress')
@@ -84,6 +87,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
         {digit('000')}
         <Key
           disabled={disabled}
+          compact={compact}
           label="Número negativo"
           pressed={draft.startsWith('-')}
           onPress={() => {
@@ -95,6 +99,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
         </Key>
         <Key
           disabled={disabled}
+          compact={compact}
           label="Apagar"
           wide
           onPress={() => {
@@ -122,6 +127,7 @@ export function EstimateKeypad({ draft, unit, disabled, physicalKeys, onChange, 
 function Key({
   children,
   disabled,
+  compact,
   label,
   pressed,
   wide,
@@ -129,6 +135,7 @@ function Key({
 }: {
   children: ReactNode
   disabled: boolean
+  compact: boolean
   label?: string
   pressed?: boolean
   wide?: boolean
@@ -143,7 +150,7 @@ function Key({
       // O foco fica fora da tecla, para o Enter chutar em vez de repetir o último toque.
       onMouseDown={(event) => event.preventDefault()}
       onClick={onPress}
-      className={`btn-3d btn-sm h-11 touch-manipulation rounded-xl font-display text-2xl select-none ${wide ? 'col-span-2' : ''} ${pressed ? 'btn-brand is-pressed text-ink' : 'btn-dark text-chalk'}`}
+      className={`btn-3d btn-sm ${compact ? 'h-10' : 'h-11'} touch-manipulation rounded-xl font-display text-2xl select-none ${wide ? 'col-span-2' : ''} ${pressed ? 'btn-brand is-pressed text-ink' : 'btn-dark text-chalk'}`}
     >
       {children}
     </button>

@@ -2,9 +2,13 @@
 
 O erro é medido em % da resposta (ou da `scale` da pergunta, para anos e números pequenos, em que
 a porcentagem da resposta não faz sentido). Os níveis seguem o clássico: fáceis, médias e difíceis,
-na mesma divisão. Sem aposta, final impossível nem poderes.
+na mesma divisão. Sem aposta nem final impossível.
 Fases: starting → (answering → results) por pergunta, com level quando o nível muda → finished.
 Não tem tempo de leitura: a pergunta já abre para chutar, e os 20 segundos já incluem ler.
+
+Com poderes: os comuns do clássico que fazem sentido com número (ver `POWERS`), armados na revelação
+para a próxima pergunta (Espiar na hora). "Acertar" é ganhar QI com o chute. Espiar mostra os chutes
+dos outros, e a Segunda chance diz se a resposta é mais alta ou mais baixa antes do novo chute.
 """
 
 import json
@@ -16,8 +20,18 @@ from typing import Literal, Protocol
 
 from pydantic import BaseModel, Field
 
+from app import powerups as pw
 from app.engine import Revealed, RoomError
-from app.events import EstimateGuess, EstimateScoring, EstimateView
+from app.events import (
+    EstimateGuess,
+    EstimatePeek,
+    EstimateScoring,
+    EstimateView,
+    LastingPowerUp,
+    PowerUp,
+    PowerUpGain,
+    PowerUpUse,
+)
 from app.game import LATE_SECONDS, LEVEL_SECONDS, START_SECONDS, results_seconds, split_by_difficulty
 from app.game import point_scale as scale_for
 
@@ -25,6 +39,25 @@ ESTIMATES_DIR = Path(__file__).parent / "estimates"
 ROUND_OPTIONS = (10, 15, 20)
 ANSWER_SECONDS = 20.0
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
+# Sem 50/50, Alternativa falsa e Pedágio, que dependem de alternativas, e sem Tempo extra: a velocidade não dá QI.
+POWERS: tuple[PowerUp, ...] = (
+    "shield",
+    "double",
+    "peek",
+    "second_chance",
+    "reverse",
+    "backpack",
+    "theme",
+    "investment",
+    "scratch",
+    "steal",
+    "scramble",
+    "accelerator",
+    "mirror",
+    "silence",
+    "magnifier",
+    "flashbang",
+)
 
 
 @dataclass(frozen=True)
@@ -127,10 +160,39 @@ class Estimate(Revealed):
     guesses: dict[str, tuple[float, float]] = field(default_factory=dict)  # chute e quando
     results: list[EstimateGuess] = field(default_factory=list)
     ready: set[str] = field(default_factory=set)
+    first_guesses: dict[str, tuple[float, float]] = field(default_factory=dict)  # Segunda chance: o chute que errou
+    # Poderes (ver powerups.py para o que cada um faz no clássico).
+    powers: bool = False
+    powerup_max: int = pw.MAX_HELD
+    rng: random.Random = field(default_factory=random.Random)
+    bank: list[EstimateQuestion] = field(default_factory=list)  # para o Tema trocar a próxima pergunta
+    used: set[str] = field(default_factory=set)
+    held: dict[str, list[PowerUp]] = field(default_factory=dict)
+    starting: dict[str, PowerUp] = field(default_factory=dict)
+    extra_slots: dict[str, int] = field(default_factory=dict)
+    armed: dict[str, PowerUpUse] = field(default_factory=dict)
+    active: list[PowerUpUse] = field(default_factory=list)
+    lasting: dict[str, dict[PowerUp, int]] = field(default_factory=dict)  # perguntas que faltam, contando a atual
+    lasting_total: dict[str, dict[PowerUp, int]] = field(default_factory=dict)
+    used_lasting: dict[str, set[PowerUp]] = field(default_factory=dict)  # as que já valeram: não quebram
+    silences: list[tuple[PowerUpUse, int]] = field(default_factory=list)
+    investments: dict[str, int] = field(default_factory=dict)  # acertos de cada Investimento em andamento
+    right_runs: dict[str, int] = field(default_factory=dict)
+    last_runs: dict[str, int] = field(default_factory=dict)
+    leaders: set[str] = field(default_factory=set)  # o Reverso de quem está em 1º dura menos
+    theme_choices: list[str] = field(default_factory=list)
 
     @classmethod
     def create(
-        cls, pool: list[EstimateQuestion], rounds: int, used: set[str], rng: random.Random, now: float
+        cls,
+        pool: list[EstimateQuestion],
+        rounds: int,
+        used: set[str],
+        rng: random.Random,
+        now: float,
+        player_ids: list[str] | None = None,
+        powers: bool = False,
+        powerup_max: int = pw.MAX_HELD,
     ) -> "Estimate":
         """Sorteia as perguntas das fáceis às difíceis, como no clássico, preferindo as que a sala ainda não viu."""
         questions = []
@@ -140,8 +202,21 @@ class Estimate(Revealed):
             rng.shuffle(fresh)
             rng.shuffle(stale)
             questions += (fresh + stale)[:count]
-        game = cls(questions=questions, point_scale=scale_for(rounds))
+        game = cls(
+            questions=questions,
+            point_scale=scale_for(rounds),
+            powers=powers,
+            powerup_max=powerup_max,
+            rng=rng,
+            bank=pool,
+            used=used,
+        )
         used |= {q.id for q in game.questions}
+        if powers:
+            dealt = [kind for kind in POWERS if kind not in pw.NOT_DEALT]
+            for pid in player_ids or []:
+                game.starting[pid] = rng.choice(dealt)
+                game.held[pid] = [game.starting[pid]]
         game._enter("starting", now, START_SECONDS)
         return game
 
@@ -154,15 +229,251 @@ class Estimate(Revealed):
             raise EstimateError("Agora não dá para chutar.")
         if player_id in self.guesses:
             raise EstimateError("Você já chutou.")
-        if now > self.phase_ends_at + LATE_SECONDS:
+        limit = self.phase_started_at + self.answer_window(player_id)
+        if now > limit + LATE_SECONDS:
             raise EstimateError("O tempo acabou.")
-        self.guesses[player_id] = (value, now)
+        guessed = (value, min(now, limit))
+        q = self.question
+        lost = guess_points(error_percent(q, value), q.difficulty, self.point_scale) <= 0
+        if lost and player_id not in self.first_guesses and self._affects("second_chance", player_id):
+            self.first_guesses[player_id] = guessed
+            self.used_lasting.setdefault(player_id, set()).add("second_chance")
+            return
+        self.guesses[player_id] = guessed
 
     def everyone_answered(self, connected: list[str]) -> bool:
         return all(pid in self.guesses for pid in connected)
 
     def everyone_ready(self, connected: list[str]) -> bool:
-        return all(pid in self.ready for pid in connected)
+        """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
+        return all(pid in self.ready or self.is_silenced(pid) for pid in connected)
+
+    def answer_window(self, player_id: str) -> float:
+        """Segundos que o jogador tem para chutar: o Acelerador corta."""
+        return ANSWER_SECONDS * (pw.ACCELERATOR_FACTOR if self._affects("accelerator", player_id) else 1)
+
+    # --- poderes ----------------------------------------------------------
+
+    @property
+    def powers_round(self) -> bool:
+        return self.powers and self.phase not in ("starting", "finished")
+
+    @property
+    def has_next_round(self) -> bool:
+        return self.round + 1 < len(self.questions)
+
+    @property
+    def can_arm(self) -> bool:
+        return self.powers and self.phase == "results" and self.has_next_round
+
+    def capacity(self, player_id: str) -> int:
+        return self.powerup_max + self.extra_slots.get(player_id, 0)
+
+    def silence_left(self, player_id: str) -> int:
+        if not self.powers_round:
+            return 0
+        return max((left for use, left in self.silences if use.target == player_id), default=0)
+
+    def is_silenced(self, player_id: str) -> bool:
+        return self.silence_left(player_id) > 0
+
+    def _affects(self, kind: PowerUp, player_id: str) -> bool:
+        if not self.powers_round:
+            return False
+        if kind == "silence":
+            return self.is_silenced(player_id)
+        if kind in pw.LASTING:
+            return self.lasting.get(player_id, {}).get(kind, 0) > 0
+        return any(use.kind == kind and (use.target or use.by) == player_id for use in self.active)
+
+    def arm(self, player_id: str, kind: PowerUp, target: str | None, player_ids: list[str], theme: str | None) -> None:
+        if kind == "backpack":
+            return self._open_backpack(player_id)
+        if not self.can_arm:
+            raise EstimateError("Agora não dá para usar poder.")
+        if self.is_silenced(player_id):
+            raise EstimateError("Silenciado: sem poderes por enquanto.")
+        if player_id in self.armed:
+            raise EstimateError("Você já armou um poder para a próxima pergunta.")
+        held = self.held.get(player_id, [])
+        if kind not in held:
+            raise EstimateError("Você não tem esse poder.")
+        if kind in pw.INSTANT:
+            raise EstimateError("Essa se usa na hora da pergunta.")
+        if kind in pw.TARGETED:
+            if target is None or target == player_id or target not in player_ids:
+                raise EstimateError("Escolha em quem usar.")
+        else:
+            target = None
+        if kind == "investment":
+            if self.questions[self.round + 1].difficulty == "easy":
+                raise EstimateError("O Investimento só vale a partir das médias.")
+            if player_id in self.investments:
+                raise EstimateError("Seu Investimento ainda está valendo.")
+        if kind == "theme":
+            if theme not in self.theme_choices:
+                raise EstimateError("Escolha um dos temas.")
+            if any(use.kind == "theme" for use in self.armed.values()):
+                raise EstimateError("Alguém já escolheu o tema da próxima pergunta.")
+            self._swap_next_question(theme)
+        else:
+            theme = None
+        held.remove(kind)
+        self.armed[player_id] = PowerUpUse(kind=kind, by=player_id, target=target, reflected_by=None, theme=theme)
+
+    def disarm(self, player_id: str) -> None:
+        """Trocar: o poder armado volta para a mão. O Tema não volta, porque a próxima já foi trocada."""
+        use = self.armed.get(player_id)
+        if not use or not self.can_arm:
+            raise EstimateError("Não tem poder para trocar agora.")
+        if use.kind == "theme":
+            raise EstimateError("O tema da próxima já foi trocado: não dá para voltar.")
+        del self.armed[player_id]
+        self.held.setdefault(player_id, []).append(use.kind)
+        self.ready.discard(player_id)
+
+    def use_now(self, player_id: str, kind: PowerUp) -> None:
+        """Espiar: durante a pergunta, vale na hora."""
+        if self.phase != "answering" or not self.powers:
+            raise EstimateError("Agora não dá para usar poder.")
+        if kind not in pw.INSTANT:
+            raise EstimateError("Essa se arma na revelação.")
+        if self.is_silenced(player_id):
+            raise EstimateError("Silenciado: sem poderes por enquanto.")
+        held = self.held.get(player_id, [])
+        if kind not in held:
+            raise EstimateError("Você não tem esse poder.")
+        if player_id in self.guesses:
+            raise EstimateError("Você já chutou.")
+        if self._affects(kind, player_id):
+            raise EstimateError("Já está valendo.")
+        held.remove(kind)
+        self.active.append(PowerUpUse(kind=kind, by=player_id, target=None, reflected_by=None))
+
+    def _open_backpack(self, player_id: str) -> None:
+        """Mochila: vale na hora, sem ocupar a vez de armar. Uma vaga a mais e um poder comum."""
+        if not self.powers or self.phase != "results":
+            raise EstimateError("Agora não dá para usar poder.")
+        if self.is_silenced(player_id):
+            raise EstimateError("Silenciado: sem poderes por enquanto.")
+        held = self.held.get(player_id, [])
+        if "backpack" not in held:
+            raise EstimateError("Você não tem esse poder.")
+        if self.extra_slots.get(player_id, 0) >= pw.BACKPACK_MAX_EXTRA:
+            raise EstimateError("Sua Mochila já está no tamanho máximo.")
+        held.remove("backpack")
+        self.extra_slots[player_id] = self.extra_slots.get(player_id, 0) + 1
+        held.append(self.rng.choice([kind for kind in POWERS if kind != "backpack"]))
+
+    def _swap_next_question(self, theme: str) -> None:
+        upcoming = self.round + 1
+        current = self.questions[upcoming]
+        if current.theme == theme:
+            return
+        pool = [
+            q for q in self.bank if q.theme == theme and q.difficulty == current.difficulty and q.id not in self.used
+        ]
+        if not pool:
+            raise EstimateError("Acabaram as perguntas desse tema.")
+        question = self.rng.choice(pool)
+        self.used.add(question.id)
+        self.questions[upcoming] = question
+
+    def _draw_theme_choices(self) -> list[str]:
+        if not self.powers or not self.has_next_round:
+            return []
+        upcoming = self.questions[self.round + 1]
+        themes = sorted(
+            {q.theme for q in self.bank if q.difficulty == upcoming.difficulty and q.id not in self.used}
+            | {upcoming.theme}
+        )
+        return sorted(self.rng.sample(themes, min(pw.THEME_CHOICES, len(themes))))
+
+    def _start_powers(self) -> None:
+        """Começo de uma pergunta: o que foi armado passa a valer (o Reverso devolve)."""
+        self.silences = [(use, left - 1) for use, left in self.silences if left > 1]
+        self.theme_choices = []
+        armed = list(self.armed.values())
+        self.armed = {}
+        for use in armed:
+            if use.kind == "investment":
+                self.investments[use.by] = 0
+            if use.kind in pw.LASTING:
+                rounds = pw.LASTING[use.kind]
+                if use.kind == "reverse" and use.by in self.leaders:
+                    rounds = pw.REVERSE_LEADER_ROUNDS
+                self.lasting.setdefault(use.by, {})[use.kind] = rounds
+                self.lasting_total.setdefault(use.by, {})[use.kind] = rounds
+                self.used_lasting.get(use.by, set()).discard(use.kind)
+        reversers = {pid for pid in self.lasting if self._affects("reverse", pid)}
+        self.active = pw.reflect(armed, reversers)
+        for use in self.active:
+            if use.reflected_by:
+                self.lasting[use.reflected_by].pop("reverse", None)
+            if use.kind == "silence":
+                self.silences.append((use, pw.SILENCE_ROUNDS))
+
+    def _settle_powers(self, players: list[Scorable], earned: set[str]) -> None:
+        """Depois dos pontos de cada chute: Investimento e Roubo, que dependem do resultado."""
+        by_id = {g.player_id: g for g in self.results}
+        for pid, hits in list(self.investments.items()):
+            result = by_id.get(pid)
+            if not result:
+                continue
+            if pid not in earned:
+                del self.investments[pid]
+                continue
+            hits += 1
+            result.investment = pw.INVESTMENT_BONUS[hits - 1]
+            if hits == len(pw.INVESTMENT_BONUS):
+                del self.investments[pid]
+            else:
+                self.investments[pid] = hits
+        for use in self.active:
+            thief, target = by_id.get(use.by), by_id.get(use.target)
+            if use.kind != "steal" or not thief or not target or target.shielded:
+                continue
+            share = pw.STEAL_FIXED + max(0, int(target.delta * pw.STEAL_GAIN_SHARE))
+            thief.stolen += share
+            target.robbed += share
+
+    def _wear_lasting(self) -> None:
+        """O Escudo que segurou acaba, e todas as que duram gastam uma pergunta. As que chegam ao fim sem uso quebram."""
+        by_id = {g.player_id: g for g in self.results}
+        for pid, kinds in self.lasting.items():
+            result = by_id.get(pid)
+            if result and result.shielded:
+                kinds.pop("shield", None)
+            for kind in list(kinds):
+                kinds[kind] -= 1
+                if kinds[kind] <= 0:
+                    del kinds[kind]
+                    if kind in pw.BREAKABLE and kind not in self.used_lasting.get(pid, set()) and result:
+                        result.expired.append(kind)
+
+    def _gains(self, players: list[Scorable], earned: set[str]) -> None:
+        """Um poder a cada 3 chutes seguidos que ganham QI, ou a cada 3 rodadas muito atrás."""
+        behind = pw.trailing(players)
+        by_id = {g.player_id: g for g in self.results}
+        for player in players:
+            right = self.right_runs[player.id] = self.right_runs.get(player.id, 0) + 1 if player.id in earned else 0
+            last = self.last_runs[player.id] = self.last_runs.get(player.id, 0) + 1 if player.id in behind else 0
+            if right >= pw.STREAK_FOR_POWERUP:
+                reason = "streak"
+            elif last >= pw.COMEBACK_ROUNDS:
+                reason = "comeback"
+            else:
+                continue
+            held = self.held.setdefault(player.id, [])
+            if len(held) >= self.capacity(player.id):
+                continue  # com as mãos cheias, a sequência continua valendo para depois
+            kind = self.rng.choice(POWERS)
+            held.append(kind)
+            by_id[player.id].gained = PowerUpGain(kind=kind, reason=reason)
+            if reason == "streak":
+                self.right_runs[player.id] = 0
+            else:
+                self.last_runs[player.id] = 0
 
     def advance(self, now: float, players: list[Scorable]) -> None:
         """Passa para a próxima fase. O main.py chama quando o tempo acaba (ou todos fizeram a sua parte)."""
@@ -176,8 +487,11 @@ class Estimate(Revealed):
                 return
             self.round += 1
             self.guesses = {}
+            self.first_guesses = {}
             self.results = []
             self.ready = set()
+            if self.powers:
+                self._start_powers()
             if self.round > 0 and self.question.difficulty != self.questions[self.round - 1].difficulty:
                 self._enter("level", now, LEVEL_SECONDS)
             else:
@@ -186,14 +500,25 @@ class Estimate(Revealed):
     def _close(self, now: float, players: list[Scorable]) -> None:
         q = self.question
         self.results = []
+        earned = set()  # quem ganhou QI com o chute, antes de Escudo e Roubo: é o "acerto" dos poderes
         for player in players:
-            guessed = self.guesses.get(player.id)
+            first = self.first_guesses.get(player.id)
+            retried = player.id in self.guesses
+            guessed = self.guesses.get(player.id) or first
             if guessed is None:
-                error, elapsed = None, ANSWER_SECONDS
+                error, elapsed = None, self.answer_window(player.id)
             else:
                 error, elapsed = error_percent(q, guessed[0]), max(0.0, guessed[1] - self.phase_started_at)
             delta = guess_points(error, q.difficulty, self.point_scale)
-            player.score += delta
+            if delta > 0:
+                earned.add(player.id)
+                if first and retried:
+                    delta = int(delta * pw.SECOND_CHANCE_SHARE)
+            doubled = self._affects("double", player.id)
+            if doubled:
+                hard_loss = delta < 0 and q.difficulty == "hard"
+                delta *= pw.DOUBLE_HARD_LOSS_FACTOR if hard_loss else pw.DOUBLE_FACTOR
+            shielded = -delta if delta < 0 and self._affects("shield", player.id) else 0
             player.answer_ms += round(elapsed * 1000)
             self.results.append(
                 EstimateGuess(
@@ -201,40 +526,111 @@ class Estimate(Revealed):
                     value=guessed[0] if guessed else None,
                     error_percent=None if error is None else round(error, 1),
                     exact=error == 0,
-                    delta=delta,
+                    delta=delta + shielded,
                     elapsed_ms=round(elapsed * 1000) if guessed else None,
+                    shielded=shielded,
+                    stolen=0,
+                    robbed=0,
+                    investment=0,
+                    doubled=doubled,
+                    first_value=first[0] if first and retried else None,
+                    expired=[],
+                    gained=None,
                 )
             )
+        if self.powers:
+            self._settle_powers(players, earned)
+        by_id = {g.player_id: g for g in self.results}
+        for player in players:
+            player.score += by_id[player.id].total
+        if self.powers:
+            top = max((p.score for p in players), default=0)
+            self.leaders = {p.id for p in players if p.score == top}
+            self._wear_lasting()
+            if self.has_next_round:
+                self._gains(players, earned)
+            self.theme_choices = self._draw_theme_choices()
         # Do mais perto para o mais longe; quem não chutou fica no fim.
         self.results.sort(key=lambda r: (r.error_percent is None, r.error_percent or 0, r.elapsed_ms or 0))
-        self._enter("results", now, results_seconds(q.fact))
+        self._enter("results", now, results_seconds(q.fact, self.powers))
 
     def deadline(self) -> float:
         return self.phase_ends_at + (LATE_SECONDS if self.phase == "answering" else 0)
 
     def view(self, now: float, viewer: str | None = None) -> EstimateView:
         q = self.question if self.round >= 0 else None
-        reveal = self.phase in ("results", "finished") and q is not None
+        silenced = self.silence_left(viewer) if viewer else 0
+        reveal = self.phase in ("results", "finished") and q is not None and not silenced
         mine = self.guesses.get(viewer) if viewer else None
+        first = self.first_guesses.get(viewer) if viewer else None
+        answering = self.phase == "answering"
+        retrying = answering and first is not None and mine is None
+        ends_at = self.phase_ends_at
+        if answering and viewer:
+            ends_at = self.phase_started_at + self.answer_window(viewer)
+        peeking = answering and bool(viewer) and self._affects("peek", viewer)
         return EstimateView(
             phase=self.phase,
-            phase_duration_ms=round((self.phase_ends_at - self.phase_started_at) * 1000),
-            phase_ends_in_ms=max(0, round((self.phase_ends_at - now) * 1000)),
+            phase_duration_ms=round((ends_at - self.phase_started_at) * 1000),
+            phase_ends_in_ms=max(0, round((ends_at - now) * 1000)),
             round=self.round + 1,
             total_rounds=len(self.questions),
             theme=q.theme if q else None,
             difficulty=q.difficulty if q else self.questions[0].difficulty,
             text=q.text if q and self.phase not in ("starting", "level") else None,
             unit=q.unit if q else None,
-            answered=list(self.guesses),
+            answered=[] if silenced else list(self.guesses),
             my_guess=mine[0] if mine else None,
+            first_guess=first[0] if retrying else None,
+            retry_hint=("higher" if q.answer > first[0] else "lower") if retrying else None,
             answer=q.answer if reveal else None,
             reference=(q.scale or abs(q.answer) or 1) if reveal else None,
             fact=q.fact if reveal else None,
             guesses=self.results if reveal else [],
             scoring=self._scoring_view(q.difficulty if q else self.questions[0].difficulty),
             ready=sorted(self.ready),
+            powers=self.powers,
+            powerups=list(self.held.get(viewer, [])) if viewer else [],
+            legendary_powerups=[],
+            mythic_powerups=[],
+            powerup_max=self.capacity(viewer) if viewer else self.powerup_max,
+            power_run=self.right_runs.get(viewer, 0) if viewer else 0,
+            power_run_goal=pw.STREAK_FOR_POWERUP,
+            starting_powerup=self.starting.get(viewer) if viewer else None,
+            can_arm=self.can_arm and not silenced,
+            armed=self.armed.get(viewer) if viewer else None,
+            active=[] if silenced and self.phase == "results" else self._visible_uses(viewer),
+            lasting=self._lasting_view(viewer) if viewer and self.phase != "results" else [],
+            peek=(
+                [EstimatePeek(player_id=pid, value=value) for pid, (value, _) in self.guesses.items() if pid != viewer]
+                if peeking
+                else None
+            ),
+            flashbang=answering and bool(viewer) and self._affects("flashbang", viewer),
+            silenced_rounds=silenced,
+            theme_choices=self.theme_choices,
+            powers_round=self.powers_round,
         )
+
+    def _lasting_view(self, viewer: str) -> list[LastingPowerUp]:
+        lasting = [
+            LastingPowerUp(kind=kind, rounds_left=left, total=self.lasting_total[viewer][kind])
+            for kind, left in self.lasting.get(viewer, {}).items()
+            if self._affects(kind, viewer)
+        ]
+        if viewer in self.investments:
+            total = len(pw.INVESTMENT_BONUS)
+            lasting.append(LastingPowerUp(kind="investment", rounds_left=total - self.investments[viewer], total=total))
+        if silence_left := self.silence_left(viewer):
+            lasting.append(LastingPowerUp(kind="silence", rounds_left=silence_left, total=pw.SILENCE_ROUNDS))
+        return lasting
+
+    def _visible_uses(self, viewer: str | None) -> list[PowerUpUse]:
+        """O Roubo é surpresa até a revelação, e o Reverso armado só o dono vê."""
+        if not self.powers_round:
+            return []
+        uses = [use for use in self.active if use.kind != "reverse" or use.by == viewer]
+        return uses if self.phase == "results" else [use for use in uses if use.kind != "steal" or use.by == viewer]
 
     def _scoring_view(self, difficulty: str) -> EstimateScoring:
         rules = SCORING[difficulty]

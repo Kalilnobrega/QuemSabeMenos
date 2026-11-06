@@ -110,7 +110,7 @@ class MatchHistory:
                     room.rounds,
                     room.answer_seconds,
                     room.speed_grace_seconds,
-                    room.powerup_max if room.powers and room.mode != "estimate" else None,
+                    room.powerup_max if room.powers else None,
                     json.dumps(room.themes, ensure_ascii=False),
                     _standings(room),
                 ),
@@ -213,7 +213,7 @@ def score_standings(players) -> list[dict]:
 
 
 def _settings(room: "Room") -> dict:
-    settings: dict = {"powers": room.powers and room.mode != "estimate"}
+    settings: dict = {"powers": room.powers}
     if room.mode == "last_standing":
         settings["survival_kind"] = room.survival_kind
     if room.mode == "teams" and room.team_match:
@@ -395,4 +395,5 @@ def estimate_question(e) -> dict:
         "unit": q.unit,
         "scale": q.scale,
         "guesses": [g.model_dump() for g in e.results],
+        "uses": [use.model_dump() for use in e.active],
     }

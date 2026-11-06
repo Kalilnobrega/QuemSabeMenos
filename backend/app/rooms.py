@@ -174,7 +174,8 @@ class Room:
         """Silenciado não vê o placar, nem o próprio. Bicho repetido ganha uma variante pela ordem de chegada."""
         earlier = self.players[: self.players.index(player)]
         view = player.view().model_copy(update={"avatar_variant": sum(1 for p in earlier if p.avatar == player.avatar)})
-        if self.game and viewer and self.game.is_silenced(viewer):
+        engine = self.game or self.estimate
+        if engine and viewer and engine.is_silenced(viewer):
             return view.model_copy(update={"score": 0, "streak": 0, "answer_ms": 0})
         return view
 
@@ -414,7 +415,16 @@ class RoomManager:
             # Até 20 perguntas: com mais, o anfitrião fica com o maior tamanho do Chutômetro.
             rounds = max([n for n in ESTIMATE_ROUNDS if n <= room.rounds] or [ESTIMATE_ROUNDS[0]])
             pool = [q for q in self.estimates if q.theme in room.themes]
-            room.estimate = Estimate.create(pool, rounds, room.used_questions, self.rng, now)
+            room.estimate = Estimate.create(
+                pool,
+                rounds,
+                room.used_questions,
+                self.rng,
+                now,
+                [p.id for p in room.players],
+                room.powers,
+                room.powerup_max,
+            )
             return room
         if room.mode == "hot_potato":
             room.hot_potato = HotPotato.create(
@@ -509,6 +519,8 @@ class RoomManager:
             raise RoomError("Na Batata quente os poderes valem na hora.")
         elif room.survival:
             self._on_survival(room, lambda s: s.arm(player.id, kind, target, theme))
+        elif room.estimate:
+            room.estimate.arm(player.id, kind, target, [p.id for p in room.players], theme)
         else:
             if kind == "resurrection":
                 room.game.resurrect(player, room.players)
@@ -519,14 +531,17 @@ class RoomManager:
         # Escolheu o poder na revelação: já conta como pronto para a próxima, sem tocar em Pular.
         # A Mochila não conta, porque ela dá outro poder para escolher em seguida.
         if kind != "backpack":
-            engine = room.team_match or room.survival or room.game
+            engine = room.team_match or room.survival or room.estimate or room.game
             if engine.phase == "results":
                 engine.ready.add(player.id)
         return room
 
     def disarm_powerup(self, sid: str) -> Room:
-        """Trocar o poder escolhido na revelação (Clássico, Especialista e Último de pé)."""
+        """Trocar o poder escolhido na revelação (todos os modos, menos Times e Batata quente)."""
         room, player = self._playing(sid)
+        if room.estimate:
+            room.estimate.disarm(player.id)
+            return room
         if room.survival:
             return self._on_survival(room, lambda s: s.disarm(player.id))
         if not room.game:
@@ -560,6 +575,9 @@ class RoomManager:
             return room
         if room.survival:
             return self._on_survival(room, lambda s: s.use_now(player.id, kind))
+        if room.estimate:
+            room.estimate.use_now(player.id, kind)
+            return room
         room.game.use_now(player.id, kind)
         return room
 

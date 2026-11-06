@@ -733,8 +733,28 @@ class EstimateGuess(BaseModel):
     value: float | None  # None = não chutou
     error_percent: float | None  # erro em % da resposta (ou da escala da pergunta)
     exact: bool  # Chute certeiro
-    delta: int
+    delta: int  # pontos do chute, já com Segunda chance e Dobro (0 se o Escudo segurou)
     elapsed_ms: int | None
+    shielded: int
+    stolen: int
+    robbed: int
+    investment: int
+    doubled: bool
+    first_value: float | None  # Segunda chance: o primeiro chute, que perdia QI
+    expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
+    gained: PowerUpGain | None
+
+    @property
+    def total(self) -> int:
+        """Quanto o QI muda nesta pergunta."""
+        return self.delta + self.investment + self.stolen - self.robbed
+
+
+class EstimatePeek(BaseModel):
+    """Espiar: o chute de outro jogador, ao vivo."""
+
+    player_id: str
+    value: float
 
 
 class EstimateScoring(BaseModel):
@@ -764,12 +784,31 @@ class EstimateView(BaseModel):
     unit: str | None  # aparece do lado do campo ("km", "anos")
     answered: list[str]
     my_guess: float | None
+    first_guess: float | None  # Segunda chance: o chute que perdia QI, enquanto falta chutar de novo
+    retry_hint: Literal["higher", "lower"] | None  # Segunda chance: de que lado está a resposta
     answer: float | None  # só na revelação
     reference: float | None  # só na revelação: o valor que vale 100% de erro (a escala da pergunta)
     fact: str | None
     guesses: list[EstimateGuess]  # só na revelação, do mais perto para o mais longe
     scoring: EstimateScoring
     ready: list[str]
+    powers: bool
+    powerups: list[PowerUp]
+    legendary_powerups: list[PowerUp]
+    mythic_powerups: list[PowerUp]
+    powerup_max: int
+    power_run: int
+    power_run_goal: int
+    starting_powerup: PowerUp | None
+    can_arm: bool
+    armed: PowerUpUse | None
+    active: list[PowerUpUse]
+    lasting: list[LastingPowerUp]
+    peek: list[EstimatePeek] | None  # Espiar: os chutes dos outros
+    flashbang: bool
+    silenced_rounds: int
+    theme_choices: list[str]
+    powers_round: bool
 
 
 class RoomState(BaseModel):

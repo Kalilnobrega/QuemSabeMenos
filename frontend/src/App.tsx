@@ -98,6 +98,9 @@ export default function App() {
         playerId={playerId}
         onGuess={guess}
         onSkip={skipResults}
+        onArm={armPowerUp}
+        onDisarm={disarmPowerUp}
+        onUse={usePowerUp}
         onPlayAgain={playAgain}
         onLeave={leaveRoom}
       />

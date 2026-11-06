@@ -1,5 +1,6 @@
 import { useEffect, type ReactNode } from 'react'
 import {
+  ESTIMATE_HINTS,
   LEGENDARY_DECOY_HINT,
   LEGENDARY_STEAL_HINT,
   LEGENDARY_TOLL_HINT,
@@ -341,9 +342,9 @@ const GUIDES: Record<Mode, Guide> = {
       {
         title: 'Como funciona',
         items: [
-          'Todo mundo vê a mesma pergunta e tem 20 segundos para digitar um chute no teclado do jogo, que tem vírgula (3,14), a tecla 000 para números grandes e − para os negativos. No computador, o teclado físico também funciona.',
+          'Todo mundo vê a mesma pergunta e tem 20 segundos para digitar um chute no teclado do jogo, que tem vírgula (3,14), a tecla 000 para números grandes e − para os negativos. No computador, o teclado físico também funciona, menos nas partidas com poderes.',
           'Na revelação, a régua mostra a resposta no meio, a zona verde em que o chute ainda ganha QI e o avatar de cada um no próprio chute.',
-          'A partida tem 10, 15 ou 20 perguntas e sobe de nível como no Clássico: primeiro as fáceis, depois as médias e por fim as difíceis. Não tem aposta, pergunta final nem poderes.',
+          'A partida tem 10, 15 ou 20 perguntas e sobe de nível como no Clássico: primeiro as fáceis, depois as médias e por fim as difíceis. Não tem aposta nem pergunta final.',
         ],
       },
       {
@@ -359,6 +360,25 @@ const GUIDES: Record<Mode, Guide> = {
           'Nos anos, o erro conta em relação a 50 anos: errar por 2 anos já é 4%. Assim, numa média, chutar 1820 para 1822 vale +14, mas 1800 vale −4.',
           'Empate no QI final: fica na frente quem chutou mais rápido no total.',
         ],
+      },
+    ],
+    powersIntro: [
+      'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 chutes seguidos que ganham QI. O lanterna muito atrás também ganha, a cada 3 rodadas.',
+      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar.',
+      'Na revelação, você escolhe um poder para a próxima pergunta; o Espiar se usa na hora.',
+      'Com poderes, o teclado físico do computador fica bloqueado: todo mundo digita pelo teclado da tela.',
+      'Aqui não tem lendários nem míticos: as sabotagens sempre miram uma pessoa só.',
+    ],
+    powers: [
+      {
+        title: 'Ajudas (para você)',
+        kinds: ['shield', 'double', 'peek', 'second_chance', 'reverse', 'backpack', 'theme', 'investment'],
+        hints: ESTIMATE_HINTS,
+      },
+      {
+        title: 'Sabotagens (em quem você escolher)',
+        kinds: ['scratch', 'steal', 'scramble', 'accelerator', 'mirror', 'silence', 'magnifier', 'flashbang'],
+        hints: ESTIMATE_HINTS,
       },
     ],
   },

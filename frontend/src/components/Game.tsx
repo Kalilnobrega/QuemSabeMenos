@@ -816,7 +816,7 @@ export function Flame() {
 const easeInOutCubic = (k: number) => (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2)
 
 /** Número que sobe (ou desce) contando de `from` até `to`, depois de `delay` ms. */
-function CountUp({
+export function CountUp({
   from,
   to,
   format = String,

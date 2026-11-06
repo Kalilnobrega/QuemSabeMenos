@@ -850,6 +850,8 @@ export function ActivePowerUps({
   concealed = false,
   survival = false,
   lines,
+  hitLines,
+  hitDetails,
 }: {
   game: PowerView
   players: PlayerView[]
@@ -857,6 +859,8 @@ export function ActivePowerUps({
   concealed?: boolean
   survival?: boolean // Último de pé: fala de vidas, não de QI
   lines?: Partial<Record<Kind, string>> // trocam o aviso de quem usou o poder em si mesmo
+  hitLines?: Partial<Record<Kind, string>> // trocam o aviso de quem foi atingido
+  hitDetails?: Partial<Record<Kind, string>> // trocam o detalhe no banner de quem foi atingido
 }) {
   const name = (id: string | null) => (id === playerId ? 'você' : (players.find((p) => p.id === id)?.nickname ?? '?'))
   const cap = (text: string) => text[0].toUpperCase() + text.slice(1)
@@ -924,6 +928,7 @@ export function ActivePowerUps({
           accelerator: 'jogou Acelerador em você: um terço do tempo!',
           silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, vidas dos outros, revelação nem poderes.',
         }),
+        ...hitLines,
       }
       return `${cap(by)} ${hit[use.kind]}`
     }
@@ -949,6 +954,7 @@ export function ActivePowerUps({
     decoy: 'Duas alternativas são mentira',
     flashbang: 'Leia rápido: estoura em 4 segundos',
     silence: 'Por 2 perguntas, sem relógio, placar nem revelação',
+    ...hitDetails,
   }
   const banners: BannerItem[] = uses.filter(hits).map((use) => {
     const info = POWERUP_INFO[use.kind]

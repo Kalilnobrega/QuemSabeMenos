@@ -179,6 +179,117 @@ export interface EstimateGuess {
   exact: boolean;
   delta: number;
   elapsed_ms: number | null;
+  shielded: number;
+  stolen: number;
+  robbed: number;
+  investment: number;
+  doubled: boolean;
+  first_value: number | null;
+  expired: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
+  )[];
+  gained: PowerUpGain | null;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "PowerUpGain".
+ */
+export interface PowerUpGain {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
+  reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination";
+  legendary?: boolean;
+  mythic?: boolean;
+}
+/**
+ * Espiar: o chute de outro jogador, ao vivo.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimatePeek".
+ */
+export interface EstimatePeek {
+  player_id: string;
+  value: number;
 }
 /**
  * Pontos da pergunta atual (mudam com o nível e o tamanho da partida): max_points perto de 0% de
@@ -214,12 +325,306 @@ export interface EstimateView {
   unit: string | null;
   answered: string[];
   my_guess: number | null;
+  first_guess: number | null;
+  retry_hint: ("higher" | "lower") | null;
   answer: number | null;
   reference: number | null;
   fact: string | null;
   guesses: EstimateGuess[];
   scoring: EstimateScoring;
   ready: string[];
+  powers: boolean;
+  powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
+  )[];
+  legendary_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
+  )[];
+  mythic_powerups: (
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing"
+  )[];
+  powerup_max: number;
+  power_run: number;
+  power_run_goal: number;
+  starting_powerup:
+    | (
+        | "fifty_fifty"
+        | "shield"
+        | "double"
+        | "peek"
+        | "extra_time"
+        | "second_chance"
+        | "reverse"
+        | "backpack"
+        | "theme"
+        | "investment"
+        | "scratch"
+        | "steal"
+        | "scramble"
+        | "accelerator"
+        | "mirror"
+        | "silence"
+        | "magnifier"
+        | "toll"
+        | "decoy"
+        | "flashbang"
+        | "resurrection"
+        | "duel"
+        | "coup"
+        | "cold_water"
+        | "free_pass"
+        | "short_fuse"
+        | "double_bomb"
+        | "ghost_hint"
+        | "thermometer"
+        | "double_potato"
+        | "mutiny"
+        | "infiltrator"
+        | "gag"
+        | "iron_captain"
+        | "tax"
+        | "medkit"
+        | "hide"
+        | "curse"
+        | "blood_pact"
+        | "dagger"
+        | "blessing"
+      )
+    | null;
+  can_arm: boolean;
+  armed: PowerUpUse | null;
+  active: PowerUpUse[];
+  lasting: LastingPowerUp[];
+  peek: EstimatePeek[] | null;
+  flashbang: boolean;
+  silenced_rounds: number;
+  theme_choices: string[];
+  powers_round: boolean;
+}
+/**
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "PowerUpUse".
+ */
+export interface PowerUpUse {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
+  by: string;
+  target: string | null;
+  reflected_by: string | null;
+  legendary?: boolean;
+  theme?: string | null;
+}
+/**
+ * Poder que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "LastingPowerUp".
+ */
+export interface LastingPowerUp {
+  kind:
+    | "fifty_fifty"
+    | "shield"
+    | "double"
+    | "peek"
+    | "extra_time"
+    | "second_chance"
+    | "reverse"
+    | "backpack"
+    | "theme"
+    | "investment"
+    | "scratch"
+    | "steal"
+    | "scramble"
+    | "accelerator"
+    | "mirror"
+    | "silence"
+    | "magnifier"
+    | "toll"
+    | "decoy"
+    | "flashbang"
+    | "resurrection"
+    | "duel"
+    | "coup"
+    | "cold_water"
+    | "free_pass"
+    | "short_fuse"
+    | "double_bomb"
+    | "ghost_hint"
+    | "thermometer"
+    | "double_potato"
+    | "mutiny"
+    | "infiltrator"
+    | "gag"
+    | "iron_captain"
+    | "tax"
+    | "medkit"
+    | "hide"
+    | "curse"
+    | "blood_pact"
+    | "dagger"
+    | "blessing";
+  rounds_left: number;
+  total: number;
 }
 /**
  * Fases de cada rodada: reading (texto aparecendo, respostas bloqueadas) →
@@ -484,111 +889,6 @@ export interface Revival {
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
- * via the `definition` "PowerUpUse".
- */
-export interface PowerUpUse {
-  kind:
-    | "fifty_fifty"
-    | "shield"
-    | "double"
-    | "peek"
-    | "extra_time"
-    | "second_chance"
-    | "reverse"
-    | "backpack"
-    | "theme"
-    | "investment"
-    | "scratch"
-    | "steal"
-    | "scramble"
-    | "accelerator"
-    | "mirror"
-    | "silence"
-    | "magnifier"
-    | "toll"
-    | "decoy"
-    | "flashbang"
-    | "resurrection"
-    | "duel"
-    | "coup"
-    | "cold_water"
-    | "free_pass"
-    | "short_fuse"
-    | "double_bomb"
-    | "ghost_hint"
-    | "thermometer"
-    | "double_potato"
-    | "mutiny"
-    | "infiltrator"
-    | "gag"
-    | "iron_captain"
-    | "tax"
-    | "medkit"
-    | "hide"
-    | "curse"
-    | "blood_pact"
-    | "dagger"
-    | "blessing";
-  by: string;
-  target: string | null;
-  reflected_by: string | null;
-  legendary?: boolean;
-  theme?: string | null;
-}
-/**
- * Poder que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).
- *
- * This interface was referenced by `Events`'s JSON-Schema
- * via the `definition` "LastingPowerUp".
- */
-export interface LastingPowerUp {
-  kind:
-    | "fifty_fifty"
-    | "shield"
-    | "double"
-    | "peek"
-    | "extra_time"
-    | "second_chance"
-    | "reverse"
-    | "backpack"
-    | "theme"
-    | "investment"
-    | "scratch"
-    | "steal"
-    | "scramble"
-    | "accelerator"
-    | "mirror"
-    | "silence"
-    | "magnifier"
-    | "toll"
-    | "decoy"
-    | "flashbang"
-    | "resurrection"
-    | "duel"
-    | "coup"
-    | "cold_water"
-    | "free_pass"
-    | "short_fuse"
-    | "double_bomb"
-    | "ghost_hint"
-    | "thermometer"
-    | "double_potato"
-    | "mutiny"
-    | "infiltrator"
-    | "gag"
-    | "iron_captain"
-    | "tax"
-    | "medkit"
-    | "hide"
-    | "curse"
-    | "blood_pact"
-    | "dagger"
-    | "blessing";
-  rounds_left: number;
-  total: number;
-}
-/**
- * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "RoundResult".
  */
 export interface RoundResult {
@@ -655,57 +955,6 @@ export interface RoundResult {
   gained: PowerUpGain | null;
   bet_gained?: PowerUpGain | null;
   specialist_bonus?: number;
-}
-/**
- * This interface was referenced by `Events`'s JSON-Schema
- * via the `definition` "PowerUpGain".
- */
-export interface PowerUpGain {
-  kind:
-    | "fifty_fifty"
-    | "shield"
-    | "double"
-    | "peek"
-    | "extra_time"
-    | "second_chance"
-    | "reverse"
-    | "backpack"
-    | "theme"
-    | "investment"
-    | "scratch"
-    | "steal"
-    | "scramble"
-    | "accelerator"
-    | "mirror"
-    | "silence"
-    | "magnifier"
-    | "toll"
-    | "decoy"
-    | "flashbang"
-    | "resurrection"
-    | "duel"
-    | "coup"
-    | "cold_water"
-    | "free_pass"
-    | "short_fuse"
-    | "double_bomb"
-    | "ghost_hint"
-    | "thermometer"
-    | "double_potato"
-    | "mutiny"
-    | "infiltrator"
-    | "gag"
-    | "iron_captain"
-    | "tax"
-    | "medkit"
-    | "hide"
-    | "curse"
-    | "blood_pact"
-    | "dagger"
-    | "blessing";
-  reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination";
-  legendary?: boolean;
-  mythic?: boolean;
 }
 /**
  * This interface was referenced by `Events`'s JSON-Schema
