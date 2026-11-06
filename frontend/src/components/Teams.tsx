@@ -1,19 +1,21 @@
-import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
 import { useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { POWERUP_INFO, TEAM_HINTS, gainParts, gainTone, scrambleWords, type Kind } from '../lib/powerups'
+import { motionMs, useRankSlide } from '../lib/listMotion'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { Snapshot } from '../lib/useRoom'
 import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide } from '../types/events'
-import { Confetti, DuelScreen, FactCard } from './Game'
+import { Confetti, CountUp, DuelScreen, FactCard } from './Game'
 import {
   BannerList,
   EffectChips,
   EndScreen,
+  FinalList,
   ImpossibleIntro,
   LevelIntro,
   SkipButton,
@@ -992,16 +994,7 @@ function TeamResults({
     <div className="flex flex-col gap-2">
       <ul className="flex flex-col gap-2">
         {match.teams.map((team, index) => {
-          const total =
-            team.delta +
-            team.captain_delta +
-            team.harmony_delta +
-            team.bet_delta +
-            team.stolen -
-            team.robbed +
-            team.toll_received -
-            team.tolled +
-            team.tricked
+          const total = roundTotal(team)
           const captain = playerOf(players, team.captain)
           const rep = playerOf(players, team.representative)
           const name = (p: PlayerView | undefined) => (p?.id === playerId ? 'você' : (p?.nickname ?? '?'))
@@ -1022,7 +1015,7 @@ function TeamResults({
                 <span
                   className={`font-display text-xl ${total > 0 ? 'text-success' : total < 0 ? 'text-danger' : 'text-steel'}`}
                 >
-                  {formatDelta(total)}
+                  <CountUp from={0} to={total} format={formatDelta} />
                 </span>
               </span>
               <span className="flex flex-wrap gap-x-3 text-sm text-steel">
@@ -1065,12 +1058,35 @@ function ranked(teams: TeamSide[]) {
   return [...teams].sort((a, b) => b.score - a.score || a.id - b.id)
 }
 
-function TeamBoard({ match, players }: { match: TeamMatchView; players: PlayerView[] }) {
+/** Quanto o time ganhou ou perdeu na revelação (a mesma soma do servidor). */
+function roundTotal(team: TeamSide) {
   return (
-    <ol className="flex flex-col gap-1.5" aria-label="Placar dos times">
+    team.delta +
+    team.captain_delta +
+    team.harmony_delta +
+    team.bet_delta +
+    team.stolen -
+    team.robbed +
+    team.toll_received -
+    team.tolled +
+    team.tricked
+  )
+}
+
+function TeamBoard({ match, players }: { match: TeamMatchView; players: PlayerView[] }) {
+  const listRef = useRef<HTMLOListElement>(null)
+  useRankSlide(
+    listRef,
+    ranked(match.teams.map((team) => ({ ...team, score: team.score - roundTotal(team) }))).map((team) =>
+      String(team.id),
+    ),
+  )
+  return (
+    <ol ref={listRef} className="flex flex-col gap-1.5" aria-label="Placar dos times">
       {ranked(match.teams).map((team, index) => (
         <li
           key={team.id}
+          data-flip={team.id}
           className={`flex items-center gap-3 rounded-xl px-3 py-2 ${TEAMS[team.id].bg} ${team.id === match.my_team ? `ring-1 ${TEAMS[team.id].ring}` : ''}`}
         >
           <span className="w-5 text-center font-display text-lg text-steel">{index + 1}</span>
@@ -1082,7 +1098,14 @@ function TeamBoard({ match, players }: { match: TeamMatchView; players: PlayerVi
             })}
           </span>
           <span className="flex-1" />
-          <span className="font-display text-xl tracking-wide text-brand">{team.score} QI</span>
+          <span className="font-display text-xl tracking-wide text-brand tabular-nums">
+            <CountUp
+              from={team.score - roundTotal(team)}
+              to={team.score}
+              format={(score) => `${score} QI`}
+              delay={motionMs('--delay-rank-count')}
+            />
+          </span>
         </li>
       ))}
     </ol>
@@ -1152,7 +1175,7 @@ function TeamPodium({
           mine: id === match.my_team,
         })}
       />
-      <ol className="flex flex-col gap-3">
+      <FinalList className="gap-3">
         {order.map((team, index) => {
           const stats = statsOf(team)
           const best = stats[0]
@@ -1174,7 +1197,7 @@ function TeamPodium({
             )
           }
           return (
-            <li key={team.id} className={`flex flex-col gap-2 rounded-xl p-3 ${TEAMS[team.id].bg}`}>
+            <li key={team.id} data-flip={team.id} className={`flex flex-col gap-2 rounded-xl p-3 ${TEAMS[team.id].bg}`}>
               <span className="flex items-baseline justify-between">
                 <span className={`font-display text-xl tracking-wide ${TEAMS[team.id].text}`}>
                   {index + 1}º · {teamName(team.id)}
@@ -1186,7 +1209,7 @@ function TeamPodium({
             </li>
           )
         })}
-      </ol>
+      </FinalList>
     </EndScreen>
   )
 }

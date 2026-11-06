@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 're
 import { avatarUrl } from '../lib/avatars'
 import { formatDelta, formatScore } from '../lib/format'
 import { POWERUP_INFO, gainParts, scrambleWords } from '../lib/powerups'
+import { motionMs, useListMotion, useRankSlide } from '../lib/listMotion'
 import { playSound, type SoundId } from '../lib/sounds'
 import { reducedMotion, useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
 import { DifficultyChip, FlameIcon, PhaseTimer, TimerBar } from './RoundUI'
@@ -856,8 +857,8 @@ export function CountUp({
   from,
   to,
   format = String,
-  duration = 1800,
-  delay = 400,
+  duration = motionMs('--dur-count'),
+  delay = motionMs('--delay-count'),
 }: {
   from: number
   to: number
@@ -1594,40 +1595,24 @@ interface RankingProps {
 
 export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
   const sorted = [...players].sort(byRanking)
-  const listRef = useRef<HTMLOListElement>(null)
-
-  // Com os pontos da rodada, começa na ordem de antes e desliza cada um para a posição nova.
-  useLayoutEffect(() => {
-    const list = listRef.current
-    if (!deltas || !list || reducedMotion()) return
-    const before = [...players]
-      .map((p) => ({ ...p, score: p.score - (deltas[p.id] ?? 0) }))
-      .sort(byRanking)
-      .map((p) => p.id)
-    const items = [...list.children] as HTMLElement[]
-    const step = items.length > 1 ? items[1].offsetTop - items[0].offsetTop : 0
-    if (items.some((el, index) => before.indexOf(el.dataset.id!) !== index))
-      setTimeout(() => playSound('rankingSwish'), 350)
-    items.forEach((el, index) => {
-      const shift = (before.indexOf(el.dataset.id!) - index) * step
-      if (!shift) return
-      el.animate([{ transform: `translateY(${shift}px)` }, { transform: 'translateY(0)' }], {
-        duration: 650,
-        delay: 350,
-        easing: 'cubic-bezier(.2,.8,.2,1)',
-        fill: 'backwards',
-      })
-    })
-    // Só na primeira exibição do ranking desta rodada.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  // Com os pontos da rodada, o movimento é o deslize. Na classificação final, a entrada em sequência.
+  const listRef = useListMotion<HTMLOListElement>({ watch: sorted.map((p) => p.id).join(), entrance: !deltas })
+  useRankSlide(
+    listRef,
+    deltas
+      ? [...players]
+          .map((p) => ({ ...p, score: p.score - (deltas[p.id] ?? 0) }))
+          .sort(byRanking)
+          .map((p) => p.id)
+      : null,
+  )
 
   return (
-    <ol ref={listRef} className="flex flex-col gap-2">
+    <ol ref={listRef} className="relative flex flex-col gap-2">
       {sorted.map((player, index) => (
         <li
           key={player.id}
-          data-id={player.id}
+          data-flip={player.id}
           className={`relative flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${player.connected ? '' : 'opacity-50'} ${
             player.id === playerId ? 'ring-1 ring-brand/60' : ''
           }`}
@@ -1644,9 +1629,14 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
               {formatDelta(deltas[player.id])}
             </span>
           )}
-          <span className="w-16 text-right font-display text-xl tracking-wide text-brand">
+          <span className="w-16 text-right font-display text-xl tracking-wide text-brand tabular-nums">
             {deltas && player.id in deltas ? (
-              <CountUp from={player.score - deltas[player.id]} to={player.score} format={formatScore} delay={700} />
+              <CountUp
+                from={player.score - deltas[player.id]}
+                to={player.score}
+                format={formatScore}
+                delay={motionMs('--delay-rank-count')}
+              />
             ) : (
               formatScore(player.score)
             )}
