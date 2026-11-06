@@ -394,7 +394,7 @@ class Estimate(Revealed):
         if player_id in self.guesses:
             raise EstimateError("Você já chutou.")
         if player_id == self.last_word_by and self.last_word_opened_at is None:
-            raise EstimateError("Espere os outros: a palavra final é sua.")
+            raise EstimateError("Espere os outros. A palavra final é sua.")
         limit = (
             self.phase_ends_at
             if player_id == self.last_word_by
@@ -538,7 +538,7 @@ class Estimate(Revealed):
         if not self.can_arm:
             raise EstimateError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise EstimateError("Silenciado: sem poderes por enquanto.")
+            raise EstimateError("Silenciado, sem poderes por enquanto.")
         if player_id in self.armed:
             raise EstimateError("Você já armou um poder para a próxima pergunta.")
         if legendary:
@@ -575,7 +575,7 @@ class Estimate(Revealed):
         if not use or not self.can_arm:
             raise EstimateError("Não tem poder para trocar agora.")
         if use.kind == "theme":
-            raise EstimateError("O tema da próxima já foi trocado: não dá para voltar.")
+            raise EstimateError("O tema da próxima já foi trocado, não dá para voltar.")
         del self.armed[player_id]
         hands = self.mythics if use.kind == "math" else self.legendaries if use.legendary else self.held
         hands.setdefault(player_id, []).append(use.kind)
@@ -588,7 +588,7 @@ class Estimate(Revealed):
         if kind not in INSTANT:
             raise EstimateError("Essa se arma na revelação.")
         if self.is_silenced(player_id):
-            raise EstimateError("Silenciado: sem poderes por enquanto.")
+            raise EstimateError("Silenciado, sem poderes por enquanto.")
         held = (self.mythics if kind in MYTHICS else self.held).get(player_id, [])
         if kind not in held:
             raise EstimateError("Você não tem esse poder.")
@@ -600,7 +600,7 @@ class Estimate(Revealed):
             if self.last_word_by:
                 raise EstimateError("Alguém já tem a palavra final desta pergunta.")
             if player_id in self.math_puzzles:
-                raise EstimateError("Com a Matemática não dá: faça as contas.")
+                raise EstimateError("Com a Matemática não dá. Faça as contas.")
             self.last_word_by = player_id
         held.remove(kind)
         if kind == "range":
@@ -612,7 +612,7 @@ class Estimate(Revealed):
         if not self.powers or self.phase != "results":
             raise EstimateError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise EstimateError("Silenciado: sem poderes por enquanto.")
+            raise EstimateError("Silenciado, sem poderes por enquanto.")
         held = self.held.get(player_id, [])
         if "backpack" not in held:
             raise EstimateError("Você não tem esse poder.")

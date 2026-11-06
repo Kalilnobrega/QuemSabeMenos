@@ -139,9 +139,9 @@ function TeamStart({ snapshot, playerId }: { snapshot: Snapshot; playerId: strin
       endsInMs={match.phase_ends_in_ms}
       eyebrow="Times"
       rules={[
-        'O time vota junto: vale a mais votada.',
-        `O capitão da vez vale 2 votos: acertou, +${match.captain_bonus}; errou, −${match.captain_bonus}.`,
-        `Todo mundo na certa ${match.harmony_streak} vezes seguidas: +${match.harmony_bonus}.`,
+        'O time vota junto, e vale a mais votada.',
+        `O capitão vale 2 votos. Acertou, +${match.captain_bonus}. Errou, −${match.captain_bonus}.`,
+        `Todo mundo certo ${match.harmony_streak} vezes seguidas dá +${match.harmony_bonus}.`,
         <span key="rep" className="text-steel">
           Na aposta e na final, vai um representante.
         </span>,
@@ -194,7 +194,7 @@ function Choosing({
       <h1 className="font-display text-4xl text-brand">{duel ? 'X1 entre times!' : 'Quem vai sozinho?'}</h1>
       <p className="font-hand text-lg font-medium">
         {duel
-          ? `${teamName(a)} desafiou o ${teamName(b)}. Escolham quem vai duelar: quem perder paga 40% do QI do time.`
+          ? `${teamName(a)} desafiou o ${teamName(b)}. Escolham quem vai duelar. Quem perder paga 40% do QI do time.`
           : `Escolham quem responde ${what} pelo time${match.bet_round ? ' e decide quanto apostar' : ''}.`}
       </p>
       {mine ? (
@@ -254,7 +254,7 @@ function TeamBetting({
       <Countdown snapshot={snapshot} />
       <h1 className="font-display text-4xl text-brand">Aposta!</h1>
       <p className="font-hand text-lg font-medium">
-        Tema: <span className="text-brand">{match.theme}</span> · acertou, o time ganha{' '}
+        Tema <span className="text-brand">{match.theme}</span> · acertou, o time ganha{' '}
         {Math.round((match.bet_odds - 1) * 100)}% do que apostou
       </p>
       <RepresentativeList match={match} players={room.players} playerId={playerId} />
@@ -402,15 +402,15 @@ function TeamRound({
         ? 'É com você! Responda pelo time.'
         : `${playerOf(room.players, mine.representative)?.nickname ?? 'O representante'} responde pelo time. Torça!`
   else if (mine.locked) status = 'Seu time respondeu!'
-  else if (match.gagged) status = 'Mordaça: você não vota nesta.'
+  else if (match.gagged) status = 'Você está de Mordaça e não vota nesta.'
   else if (blinded) status = 'Flashbang! Agora é chutar pela letra.'
-  else if (match.first_wrong !== null) status = 'Errou! Segunda chance: votem de novo.'
-  else if (iron) status = `Capitão de ferro: só ${name(mine.captain)} vota.`
-  else if (captain && mine.iron) status = 'Capitão de ferro: só você vota. Acertou, +8; errou, −10.'
-  else if (captain) status = `Você é o capitão: seu voto vale 2 (±${match.captain_bonus}).`
-  else if (mine.mutiny_left > 0) status = 'Motim: seu time está sem capitão.'
+  else if (match.first_wrong !== null) status = 'Errou! Votem de novo, valendo metade.'
+  else if (iron) status = `Capitão de ferro! Só ${name(mine.captain)} vota.`
+  else if (captain && mine.iron) status = 'Capitão de ferro! Só você vota. Acertou, +8. Errou, −10.'
+  else if (captain) status = `Você é o capitão. Seu voto vale 2 (±${match.captain_bonus}).`
+  else if (mine.mutiny_left > 0) status = 'Motim! Seu time está sem capitão.'
   else if (match.silenced)
-    status = myVote === null ? 'Silêncio: votem às cegas!' : 'Silêncio: ninguém vê o voto de ninguém.'
+    status = myVote === null ? 'Silêncio! Votem às cegas.' : 'Silêncio! Ninguém vê o voto de ninguém.'
   else status = myVote === null ? 'Vote! Dá para trocar até todo mundo votar.' : 'Esperando o resto do time…'
 
   const options = (
@@ -578,7 +578,7 @@ function TeamUses({
       return `${by} pôs Mordaça em ${nick(use.target_player)} (${use.target_team === match.my_team ? 'seu time' : teamName(use.target_team ?? 0)})`
     if (use.kind === 'infiltrator') return `${by} infiltrou ${nick(use.target_player)} ${at}`
     if (use.kind === 'peek') return `${by} está espiando ${the}`
-    if (use.kind === 'theme') return `${by} escolheu o tema: ${use.theme}`
+    if (use.kind === 'theme') return `${by} escolheu o tema ${use.theme}`
     return at ? `${by} jogou ${info.name} ${at}` : `${by} usou ${info.name}`
   }
   // O que atinge o seu time vira banner (carimbo e tremidinha); o resto, etiquetas numa linha.
@@ -612,7 +612,7 @@ function TeamUses({
         icon: <PowerUpIcon kind={use.kind} className="size-full" />,
         label:
           use.kind === 'theme'
-            ? `Tema: ${use.theme}`
+            ? `Tema ${use.theme}`
             : `${ours ? '' : `${teamName(use.by_team)}: `}${info.name}${where}`,
         tone: info.tone,
         tip: line(use),
@@ -700,7 +700,7 @@ function InfiltratorPanel({ match, onAnswer }: { match: TeamMatchView; onAnswer:
     <div className={`flex flex-col gap-2 rounded-xl p-3 ${TEAMS[target.id].bg}`}>
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind="infiltrator" className="size-6" />
-        Infiltrado no {teamName(target.id)}: seu voto vale 2 lá. Ajude ou atrapalhe!
+        Infiltrado no {teamName(target.id)}. Seu voto vale 2 lá. Ajude ou atrapalhe!
       </p>
       <div className="grid grid-cols-2 gap-2">
         {question.options.map((option, index) => (
@@ -767,8 +767,8 @@ function TeamPowerBar({
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind={mine.armed.kind} className="size-6 shrink-0" />
         {mine.armed.theme
-          ? `Tema da próxima: ${mine.armed.theme}!`
-          : `Na próxima: ${POWERUP_INFO[mine.armed.kind].name}${target}!`}
+          ? `Tema da próxima é ${mine.armed.theme}!`
+          : `Na próxima, ${POWERUP_INFO[mine.armed.kind].name}${target}!`}
       </p>
     )
   } else if (selected) {
@@ -1048,7 +1048,7 @@ function TeamResults({
                 {team.tax !== 0 && <span>Imposto {formatDelta(team.tax)}</span>}
                 {team.bet ? (
                   <span>
-                    Aposta {team.bet}: {formatDelta(team.bet_delta)}
+                    Aposta {team.bet}, {formatDelta(team.bet_delta)}
                   </span>
                 ) : null}
               </span>

@@ -96,9 +96,9 @@ function PotatoStart({ snapshot }: { snapshot: Snapshot }) {
       rules={[
         'Acertou, a batata passa para o próximo.',
         `Errou, o pavio perde ${game.penalty_seconds}s.`,
-        `${game.max_wrong_streak} erros seguidos: explode na hora!`,
+        `Com ${game.max_wrong_streak} erros seguidos, explode na hora!`,
         <span key="fuse" className="text-steel">
-          O pavio é segredo: dura de {low} a {high}s.
+          O pavio é segredo e dura de {low} a {high}s.
         </span>,
       ]}
       power={game.starting_powerup ? { kind: game.starting_powerup } : null}
@@ -215,7 +215,7 @@ function PotatoRound({
 
       {out.length > 0 && (
         <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-steel">
-          Fora:
+          Fora
           {out.map((p) => {
             const player = room.players.find((x) => x.id === p.player_id)
             return player ? (
@@ -324,7 +324,7 @@ function QuestionPanel({
     status = (
       <span className="text-success">
         {turn?.player_id === playerId
-          ? 'Acertou! Bomba dupla: mais uma para passar.'
+          ? 'Acertou! Bomba dupla, mais uma para passar.'
           : `${name(turn?.player_id)} acertou, mas a Bomba dupla pede mais uma!`}
       </span>
     )
@@ -345,7 +345,7 @@ function QuestionPanel({
       </span>
     )
   else if (mine && blinded) status = 'Flashbang! Agora é chutar pela letra.'
-  else if (mine && retry !== null) status = 'Errou! Segunda chance: tente de novo.'
+  else if (mine && retry !== null) status = 'Errou! Tente de novo.'
   else if (mine) status = 'Rápido! Acerta e passa!'
 
   const fuseLeft =
@@ -387,7 +387,7 @@ function QuestionPanel({
         {fuseLeft !== null && (
           <span
             className="flex items-center gap-1 rounded-full bg-sky-400/20 px-2 py-0.5 font-display text-lg text-sky-100"
-            title="Termômetro: o pavio que falta"
+            title="O pavio que falta"
           >
             <PowerUpIcon kind="thermometer" className="size-5" />
             {(fuseLeft / 1000).toFixed(1).replace('.', ',')}s
@@ -493,8 +493,8 @@ export function DoublePotatoScene({
         <p className="dp-title font-display text-6xl text-yellow-300 [text-shadow:0_5px_0_#854d0e]">BATATA DUPLA!</p>
         <p className="dp-sub text-center font-semibold text-yellow-100">
           {thrower?.id === playerId
-            ? 'Você jogou: ela nunca vai para você.'
-            : `${thrower?.nickname ?? 'Alguém'} jogou: ela nunca vai para quem jogou.`}
+            ? 'Você jogou, e ela nunca vai para você.'
+            : `${thrower?.nickname ?? 'Alguém'} jogou, e ela nunca vai para quem jogou.`}
         </p>
       </div>
     </div>
@@ -517,16 +517,16 @@ function PotatoUses({
   const line = (use: PowerUpUse) => {
     const info = POWERUP_INFO[use.kind]
     const by = name(use.by)
-    if (use.kind === 'ghost_hint') return `${by} deu um Palpite do além: confia?`
+    if (use.kind === 'ghost_hint') return `${by} deu um Palpite do além. Confia?`
     if (use.target === playerId) return `${by} jogou ${info.name} em você!`
     if (use.target) return `${by} jogou ${info.name} em ${name(use.target)}!`
     const extra: Partial<Record<Kind, string>> = {
-      cold_water: ': +10s de pavio',
-      fifty_fifty: ': duas erradas saíram',
-      shield: ': o próximo erro não conta',
-      second_chance: ': errou, tenta de novo',
-      reverse: ': a roda inverteu',
-      thermometer: ': está vendo o pavio',
+      cold_water: ' e ganhou 10s de pavio',
+      fifty_fifty: ' e tirou duas erradas',
+      shield: ' e o próximo erro não conta',
+      second_chance: ' e, se errar, tenta de novo',
+      reverse: ' e inverteu a roda',
+      thermometer: ' e está vendo o pavio',
     }
     return `${by} usou ${info.name}${extra[use.kind] ?? ''}!`
   }
@@ -651,7 +651,7 @@ function PotatoPowers({
   const hand = game.powerups
   const mineNow = game.potatoes.some((p) => p.holder === playerId)
   const note = ghost
-    ? 'Fantasma: sabote quem está com a batata. Cada explosão te dá uma sabotagem.'
+    ? 'Sabote quem está com a batata. Cada explosão te dá uma sabotagem.'
     : mineNow
       ? 'Ajudas valem na hora. 3 acertos seguidos dão mais um poder.'
       : 'Sabotagens pegam quem está com a batata, nesta pergunta.'
@@ -662,7 +662,7 @@ function PotatoPowers({
         <div className="flex flex-col gap-2">
           <p className="flex items-center gap-2 text-sm font-semibold">
             <PowerUpIcon kind="ghost_hint" className="size-6" />
-            Palpite do além: qual alternativa você vai marcar? Pode ser a certa… ou não.
+            Qual alternativa você vai marcar? Pode ser a certa… ou não.
           </p>
           <div className="grid grid-cols-2 gap-2">
             {hinting.options.map((option, index) =>

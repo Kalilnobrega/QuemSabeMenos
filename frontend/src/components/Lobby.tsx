@@ -9,12 +9,12 @@ import { TEAMS, teamName } from '../lib/teams'
 import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
 
 const MODES: Record<RoomSettings['mode'], { name: string; hint: string }> = {
-  classic: { name: 'Clássico', hint: 'Todo mundo responde junto: quem sabe mais, ganha.' },
-  specialist: { name: 'Especialista', hint: 'Um tema a cada 5 perguntas: quem escolhe ganha +25%.' },
+  classic: { name: 'Clássico', hint: 'Todo mundo responde junto, e quem sabe mais ganha.' },
+  specialist: { name: 'Especialista', hint: 'Alguém escolhe o tema e ganha +25% nos acertos.' },
   teams: { name: 'Times', hint: 'O time vota junto e tem um QI só.' },
-  last_standing: { name: 'Último de pé', hint: 'Errou, perde uma vida. Sobraram dois, é X1.' },
-  hot_potato: { name: 'Batata quente', hint: 'Um por vez: acertou, passa. Explodiu na mão, está fora.' },
-  estimate: { name: 'Chutômetro', hint: 'A resposta é um número: quem chutar mais perto ganha QI.' },
+  last_standing: { name: 'Último de pé', hint: 'Errou, perde vida. Sobraram dois, é X1.' },
+  hot_potato: { name: 'Batata quente', hint: 'Acertou, passa. Explodiu na mão, está fora.' },
+  estimate: { name: 'Chutômetro', hint: 'Quem chutar mais perto do número ganha QI.' },
 }
 
 // O Chutômetro vai até 20 perguntas: com mais, fica com o maior tamanho dele (como no servidor).
@@ -22,12 +22,12 @@ const ESTIMATE_ROUNDS = [10, 15, 20]
 const estimateRounds = (rounds: number) => ESTIMATE_ROUNDS.filter((n) => n <= rounds).at(-1) ?? ESTIMATE_ROUNDS[0]
 
 const POWERS_HINT: Record<RoomSettings['mode'], string> = {
-  classic: 'Ajudas para você e sabotagens nos outros, ganhas acertando em sequência',
+  classic: 'Ajudas e sabotagens que você ganha acertando em sequência',
   specialist: 'Os do Clássico, com o Golpe no lugar do Tema',
-  teams: 'O time guarda até 3, o capitão usa, e as sabotagens miram outro time',
-  last_standing: 'Escudo segura vida, Roubo leva vida, e quem cai vira fantasma sabotador',
-  hot_potato: 'Ajudas para quem está com a batata, sabotagens para quem assiste',
-  estimate: 'Ajudas e sabotagens ganhas chutando perto. Com poderes, só o teclado da tela funciona',
+  teams: 'O time guarda até 3, e o capitão usa',
+  last_standing: 'Ajudas e sabotagens, e quem cai vira fantasma sabotador',
+  hot_potato: 'Ajudas com a batata na mão, sabotagens para quem assiste',
+  estimate: 'Ajudas e sabotagens que você ganha chutando perto',
 }
 
 const SURVIVAL_KINDS: Record<RoomSettings['survival_kind'], { name: string; hint: string; lives: number }> = {
@@ -75,7 +75,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
     const url = inviteUrl(room.code)
     try {
       if (navigator.share) {
-        await navigator.share({ title: 'Quem Sabe Menos?', text: `Entra na minha sala: ${room.code}`, url })
+        await navigator.share({ title: 'Quem Sabe Menos?', text: `Entra na minha sala, código ${room.code}`, url })
         return
       }
       await navigator.clipboard.writeText(url)
@@ -387,7 +387,7 @@ function AvatarSheet({
               {users.length > 0 && (
                 <span
                   className="absolute -right-1 -bottom-1 flex items-center rounded-full border-2 border-ink bg-panel px-1.5 text-xs font-bold text-chalk"
-                  title={`Em uso: ${users.map((p) => p.nickname).join(', ')}`}
+                  title={`Em uso por ${users.map((p) => p.nickname).join(', ')}`}
                 >
                   {users.length === 1 ? users[0].nickname.slice(0, 6) : `${users.length}×`}
                 </span>
@@ -477,7 +477,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
         {settings.mode !== 'teams' && settings.powers && (
           <OptionRow
             title="Limite de poderes"
-            hint="Quantos poderes cada um pode guardar ao mesmo tempo"
+            hint="Quantos cada um pode guardar"
             options={settings.powerup_max_options}
             value={settings.powerup_max}
             label={(n) => String(n)}
@@ -520,7 +520,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
             />
             <OptionRow
               title="Montagem"
-              hint="O anfitrião monta tocando nos jogadores, ou sorteio no começo"
+              hint="Toque nos jogadores para montar, ou sorteie no começo"
               options={[1, 0]}
               value={settings.team_pick === 'host' ? 1 : 0}
               label={(n) => (n ? 'Anfitrião' : 'Sorteio')}
@@ -552,7 +552,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
             />
             <OptionRow
               title="Tempo de resposta"
-              hint="Segundos para escolher a alternativa"
+              hint="Tempo para escolher a alternativa"
               options={settings.answer_options}
               value={settings.answer_seconds}
               label={(n) => `${n}s`}
@@ -560,7 +560,7 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
             />
             <OptionRow
               title="Tempo de QI cheio"
-              hint="Quem acerta dentro desse tempo leva o máximo de QI"
+              hint="Acertar nesse tempo vale o máximo de QI"
               options={settings.grace_options}
               value={settings.speed_grace_seconds}
               label={(n) => (n ? `${n}s` : 'Não')}

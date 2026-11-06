@@ -332,7 +332,7 @@ class Survival(Revealed):
         if not self.powers or self.phase != "results":
             raise SurvivalError("Agora não dá para usar poder.")
         if self.silence_left(player_id):
-            raise SurvivalError("Silenciado: sem poderes por enquanto.")
+            raise SurvivalError("Silenciado, sem poderes por enquanto.")
         me = self.contender(player_id)
         if kind == "resurrection":
             return self._resurrect(player_id)
@@ -376,7 +376,7 @@ class Survival(Revealed):
         if not use or self.phase != "results":
             raise SurvivalError("Não tem poder para trocar agora.")
         if use.kind == "theme":
-            raise SurvivalError("O tema da próxima já foi escolhido: não dá para voltar.")
+            raise SurvivalError("O tema da próxima já foi escolhido, não dá para voltar.")
         del self.armed[player_id]
         self.held.setdefault(player_id, []).append(use.kind)
         self.ready.discard(player_id)
@@ -390,7 +390,7 @@ class Survival(Revealed):
         if player_id not in self.alive_ids():
             raise SurvivalError("Você está fora.")
         if self.silence_left(player_id):
-            raise SurvivalError("Silenciado: sem poderes por enquanto.")
+            raise SurvivalError("Silenciado, sem poderes por enquanto.")
         held = self.held.get(player_id, [])
         if kind not in held:
             raise SurvivalError("Você não tem esse poder.")

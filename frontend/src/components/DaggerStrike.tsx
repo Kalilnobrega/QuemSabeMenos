@@ -47,7 +47,7 @@ export function DaggerStrike({
     <div
       className="dagger-scene"
       role="status"
-      aria-label={`${name(by)} cravou a Adaga em ${name(target)}${stab.eliminated ? ': sacrificado!' : ''}`}
+      aria-label={`${name(by)} cravou a Adaga em ${name(target)}${stab.eliminated ? ', sacrificado!' : ''}`}
     >
       {stab.eliminated && <div className="dagger-flash" aria-hidden="true" />}
       <div className="relative flex w-full max-w-sm items-end justify-between px-6">

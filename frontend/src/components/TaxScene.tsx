@@ -60,7 +60,7 @@ export function TaxScene({
     <div
       className="tax-scene"
       role="status"
-      aria-label={`Imposto: ${teamName(payer.id)} pagou ${amount} de QI ao ${teamName(receiver.id)}`}
+      aria-label={`Imposto! ${teamName(payer.id)} pagou ${amount} de QI ao ${teamName(receiver.id)}`}
     >
       <p className="tax-stamp font-display text-7xl text-red-400">IMPOSTO!</p>
       <div className="relative flex w-full max-w-sm items-center justify-between px-4">
@@ -82,7 +82,7 @@ export function TaxScene({
         </div>
       </div>
       <p className="tax-caption max-w-xs text-center font-semibold text-chalk">
-        O 1º lugar paga 25% do QI ao último: {amount} de QI do {teamName(payer.id)} para o {teamName(receiver.id)}.
+        O 1º paga 25% do QI ao último. São {amount} de QI do {teamName(payer.id)} para o {teamName(receiver.id)}.
       </p>
     </div>
   )

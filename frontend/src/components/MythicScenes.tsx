@@ -53,7 +53,7 @@ export function MathScene({
   useScene(MATH_MS, 'slam', onDone)
   const line = isMe ? 'Faça as contas!' : `${target?.nickname ?? 'Alguém'} vai fazer as contas!`
   return (
-    <div className="mythic-scene math-scene" role="status" aria-label={`Matemática: ${line}`}>
+    <div className="mythic-scene math-scene" role="status" aria-label={`Matemática! ${line}`}>
       <div className="math-rain" aria-hidden="true">
         {SYMBOLS.map(({ symbol, left, delay, size, turn }, i) => (
           <span
@@ -136,7 +136,7 @@ function ResultStamp({
   const who = isMe ? 'Você' : (speaker?.nickname ?? 'Alguém')
   const line = won ? `${who} chegou mais perto que todos` : `${who} não chegou mais perto que todos`
   return (
-    <div className="mythic-scene" role="status" aria-label={`${won ? 'Tudo' : 'Nada'}: ${line}`}>
+    <div className="mythic-scene" role="status" aria-label={`${won ? 'Tudo' : 'Nada'}! ${line}`}>
       <Avatar player={speaker} className="math-avatar size-20" />
       <p className={`result-stamp font-display text-8xl ${won ? 'text-success' : 'text-danger'}`}>
         {won ? 'TUDO!' : 'NADA!'}

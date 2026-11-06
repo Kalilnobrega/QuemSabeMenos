@@ -38,42 +38,42 @@ interface Props {
 }
 
 const SELF_LINES: Partial<Record<Kind, string>> = {
-  shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro chute que perderia QI não tira nada.',
-  copy: 'Cópia: chute normalmente. Se alguém chegar mais perto, você fica com o chute dessa pessoa.',
-  second_chance: 'Segunda chance nesta e na próxima: se o chute perder QI, você tenta de novo.',
-  range: 'Faixa: a resposta está no intervalo acima do teclado.',
-  wide_margin: 'Margem larga: nesta pergunta, sua zona de ganho é o dobro.',
-  hot_keys: 'Tecla quente: as teclas acesas são algarismos da resposta.',
-  sniper: 'Sniper: zona de ganho pela metade e ganho em dobro. Mire bem!',
-  last_word: 'Palavra final: você chuta por último. É tudo ou nada!',
+  shield: 'Seu Escudo está ativo. O primeiro chute que perderia QI não tira nada.',
+  copy: 'Chute normalmente. Se alguém chegar mais perto, você copia o chute.',
+  second_chance: 'Se o chute perder QI, você tenta de novo. Vale nesta e na próxima.',
+  range: 'A resposta está no intervalo acima do teclado.',
+  wide_margin: 'Sua zona de ganho dobrou nesta pergunta.',
+  hot_keys: 'As teclas acesas são algarismos da resposta.',
+  sniper: 'Metade da zona e o dobro do ganho. Mire bem!',
+  last_word: 'Você chuta por último. É tudo ou nada!',
 }
 const BROKEN_KEYS = 3
 const MATH_SCENE_WINDOW_MS = 1500
 const DOUBLE_KEYS = 3
 const HIT_LINES: Partial<Record<Kind, string>> = {
   scratch: 'jogou Raspadinha em você! Raspe a pergunta e o teclado.',
-  short_circuit: 'jogou Curto-circuito em você: seu teclado vai queimar. Chute logo!',
-  double_click: 'jogou Duplo clique em você: 3 teclas digitam duas vezes. Olhe o visor!',
-  math: 'jogou Matemática em você: você tem 30 segundos para fazer as contas!',
-  broken_keys: 'jogou Tecla quebrada em você: 3 teclas vão rachar quando você tocar!',
-  shuffled_keys: 'jogou Teclado mentiroso em você: as teclas trocaram de lugar!',
-  perfectionist: 'jogou Perfeccionista em você: não dá para apagar!',
-  nudge: 'jogou Empurrão em você: seu chute andou na régua!',
-  swap: 'jogou Troca-troca em você: os chutes trocaram de lugar!',
-  runaway_keys: 'jogou Teclas fugitivas em você: pegue as teclas e arraste cada uma para o espaço dela!',
+  short_circuit: 'jogou Curto-circuito em você! Chute logo, o teclado vai queimar.',
+  double_click: 'jogou Duplo clique em você! Olhe o visor, 3 teclas digitam duas vezes.',
+  math: 'jogou Matemática em você! Faça as contas em 30 segundos.',
+  broken_keys: 'jogou Tecla quebrada em você! 3 teclas vão rachar no toque.',
+  shuffled_keys: 'jogou Teclado mentiroso em você! As teclas trocaram de lugar.',
+  perfectionist: 'jogou Perfeccionista em você! Não dá para apagar.',
+  nudge: 'jogou Empurrão em você! Seu chute andou na régua.',
+  swap: 'jogou Troca-troca em você! Os chutes trocaram de lugar.',
+  runaway_keys: 'jogou Teclas fugitivas em você! Arraste cada tecla para o lugar.',
 }
 const HIT_DETAILS: Partial<Record<Kind, string>> = {
   mirror: 'A pergunta está espelhada',
   scratch: 'Raspe a pergunta e o teclado',
   short_circuit: 'Seu teclado vai queimar. Chute logo!',
   double_click: '3 teclas digitam duas vezes. Olhe o visor!',
-  math: 'Você tem 30 segundos para chegar na resposta, e a galera assiste',
+  math: 'Chegue na resposta em 30 segundos',
   broken_keys: '3 teclas vão rachar quando você tocar',
   shuffled_keys: 'As teclas trocaram de lugar',
-  perfectionist: 'Não dá para apagar: capriche',
+  perfectionist: 'Não dá para apagar, capriche',
   nudge: 'Seu chute andou na régua',
   swap: 'Os chutes trocaram de lugar',
-  runaway_keys: 'Pegue as teclas e arraste cada uma para o espaço dela',
+  runaway_keys: 'Arraste cada tecla para o lugar',
 }
 
 const ESTIMATE_LEVEL_LINES: Record<string, string> = {
@@ -143,7 +143,7 @@ function EstimateStart({ snapshot }: { snapshot: Snapshot }) {
       receivedAt={snapshot.receivedAt}
       endsInMs={estimate.phase_ends_in_ms}
       eyebrow="Chutômetro"
-      rules={[`${estimate.total_rounds} perguntas de número.`, 'Chegou perto, ganha QI; chutou pra lua, perde.']}
+      rules={[`${estimate.total_rounds} perguntas de número.`, 'Chegou perto, ganha QI. Chutou pra lua, perde.']}
       power={estimate.starting_powerup ? { kind: estimate.starting_powerup } : null}
     />
   )
@@ -617,7 +617,7 @@ function Reveal({
       playerId={playerId}
       hints={ESTIMATE_HINTS}
       lockedNote={
-        estimate.silenced_rounds > 0 ? 'Silenciado: sem poderes por enquanto.' : 'Esta foi a última pergunta.'
+        estimate.silenced_rounds > 0 ? 'Silenciado, sem poderes por enquanto.' : 'Esta foi a última pergunta.'
       }
       onArm={onArm}
       onSkip={onSkip}
@@ -678,7 +678,7 @@ function Reveal({
               <span className="flex min-w-0 flex-1 flex-col leading-tight">
                 <span className="truncate">
                   {guess.player_id === playerId ? 'Você' : player?.nickname}
-                  {guess.value !== null && `: ${withUnit(guess.value, estimate.unit)}`}
+                  {guess.value !== null && ` chutou ${withUnit(guess.value, estimate.unit)}`}
                 </span>
                 <span className="text-xs font-normal opacity-80">{guessLabel(guess, estimate.scoring.max_loss)}</span>
               </span>

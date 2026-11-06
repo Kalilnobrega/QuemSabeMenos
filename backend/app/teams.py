@@ -415,11 +415,11 @@ class TeamMatch(QuestionDeck):
             raise TeamMatchError("Esse time já respondeu." if infiltrating else "Seu time já respondeu.")
         if not infiltrating:
             if player_id in team.gagged:
-                raise TeamMatchError("Mordaça: você não vota nesta.")
+                raise TeamMatchError("Você está de Mordaça e não vota nesta.")
             if self.solo and player_id != team.representative:
                 raise TeamMatchError("Quem responde esta é o representante do time.")
             if team.iron and player_id != team.captain:
-                raise TeamMatchError("Capitão de ferro: só o capitão vota.")
+                raise TeamMatchError("Capitão de ferro! Só o capitão vota.")
         if option not in range(self._options(team)):
             raise TeamMatchError("Alternativa inválida.")
         real = self._to_real(team, option)

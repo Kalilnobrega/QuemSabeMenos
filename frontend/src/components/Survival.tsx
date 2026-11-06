@@ -126,7 +126,7 @@ function SurvivalStart({ snapshot }: { snapshot: Snapshot }) {
 
 function levelLine(survival: SurvivalView) {
   const what = survival.kind === 'true_false' ? 'frases' : 'perguntas'
-  return survival.difficulty === 'hard' ? `Acabou a moleza: agora só ${what} difíceis.` : `Agora as ${what} apertam.`
+  return survival.difficulty === 'hard' ? `Acabou a moleza. Agora só ${what} difíceis.` : `Agora as ${what} apertam.`
 }
 
 function DuelIntro({ snapshot, playerId }: { snapshot: Snapshot; playerId: string | null }) {
@@ -259,9 +259,9 @@ function Statement({
       status = duel
         ? 'Torça pelo seu lado!'
         : survival.powers
-          ? 'Você é fantasma: assiste e sabota quem está vivo.'
+          ? 'Você é fantasma. Assista e sabote quem está vivo.'
           : 'Você está fora. Assiste aí!'
-    else if (survival.hiding) status = 'Esconderijo: você pula esta pergunta sem perder vida.'
+    else if (survival.hiding) status = 'Você pula esta pergunta sem perder vida.'
     else if (survival.blessing !== null && !answered)
       status = <span className="text-yellow-200">Bênção: a certa está brilhando!</span>
     else if (blinded && !answered) status = 'Flashbang! Agora é chutar pela letra.'
@@ -273,9 +273,9 @@ function Statement({
           ? 'Errou sozinho, perdeu!'
           : 'Errar ou não responder tira uma vida.'
   } else if (silenced && survival.phase === 'results') {
-    status = 'Silenciado: a revelação é surpresa.'
+    status = 'Silenciado, a revelação é surpresa.'
   } else if (survival.spared) {
-    status = 'Todo mundo errou: ninguém perde vida!'
+    status = 'Todo mundo errou, e ninguém perde vida!'
   } else if (myPick) {
     const out = me?.out_round !== null
     status = myPick.hidden ? (
@@ -289,7 +289,7 @@ function Statement({
         {out
           ? 'Você caiu!'
           : myPick.cursed
-            ? 'Maldição: perdeu 2 vidas!'
+            ? 'Maldição, perdeu 2 vidas!'
             : myPick.pact_from && myPick.correct
               ? 'Acertou, mas o Pacto de sangue cobrou uma vida!'
               : 'Perdeu uma vida!'}
@@ -517,9 +517,7 @@ function Statement({
           hints={SURVIVAL_HINTS}
           lockedNote="No X1 não tem poder."
           emptyNote={
-            me?.out_round !== null
-              ? 'Fantasma: a cada 3 perguntas chega uma sabotagem para jogar nos vivos.'
-              : undefined
+            me?.out_round !== null ? 'A cada 3 perguntas, chega uma sabotagem para jogar nos vivos.' : undefined
           }
           onArm={onArm}
           onSkip={onSkip}

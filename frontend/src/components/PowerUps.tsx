@@ -1043,33 +1043,33 @@ export function ActivePowerUps({
     const target = name(use.target)
     const info = POWERUP_INFO[use.kind]
     if (use.legendary) {
-      if (use.kind === 'steal') return 'Roubo LENDÁRIO: você está de olho no QI de todo mundo!'
+      if (use.kind === 'steal') return 'Roubo LENDÁRIO! Você está de olho no QI de todo mundo.'
       return by === 'você'
         ? `Você jogou ${info.name} LENDÁRIO em todo mundo!`
         : `${cap(by)} jogou ${info.name} LENDÁRIO em todo mundo, inclusive em você!`
     }
     if (use.reflected_by && use.kind !== 'steal') {
-      return `${cap(name(use.reflected_by))} devolveu ${info.name} com o Reverso: agora é ${by === 'você' ? 'em você' : `em ${by}`}!`
+      return `${cap(name(use.reflected_by))} devolveu ${info.name} com o Reverso, e agora é ${by === 'você' ? 'em você' : `em ${by}`}!`
     }
     if (use.reflected_by) return `Você rebateu o Roubo de ${target} com o Reverso!`
     if (use.kind === 'theme')
-      return by === 'você' ? `Você escolheu o tema: ${use.theme}!` : `${cap(by)} escolheu o tema: ${use.theme}!`
+      return by === 'você' ? `Você escolheu o tema ${use.theme}!` : `${cap(by)} escolheu o tema ${use.theme}!`
     if (use.kind === 'coup')
-      return `Golpe! ${cap(by)} tomou ${use.theme} de ${target}: os +25% agora são ${by === 'você' ? 'seus' : `de ${by}`}!`
+      return `Golpe! ${cap(by)} tomou ${use.theme} de ${target}, e os +25% agora são ${by === 'você' ? 'seus' : `de ${by}`}!`
     if (!info.targeted) {
       const self: Partial<Record<Kind, string>> = {
-        fifty_fifty: '50/50: duas erradas saíram.',
-        shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira QI.',
-        double: 'Dobro: esta vale o dobro, para o bem e para o mal (na difícil, o erro tira o triplo).',
-        peek: 'Espiar: veja nas alternativas o que a galera escolheu.',
-        extra_time: 'Tempo extra: +5s e QI cheio o tempo todo nesta e nas próximas 2.',
-        second_chance: 'Segunda chance nesta e na próxima: errou, tenta de novo.',
-        reverse: 'Seu Reverso está pronto (só você sabe): o primeiro poder em você volta.',
-        investment: 'Investimento valendo: cada acerto seguido rende mais. Não erre!',
-        hide: 'Esconderijo: você pula esta pergunta sem perder vida.',
+        fifty_fifty: 'Duas erradas saíram.',
+        shield: 'Seu Escudo está ativo. O primeiro erro não tira QI.',
+        double: 'Esta vale o dobro, no acerto e no erro. Na difícil, o erro tira o triplo.',
+        peek: 'Veja nas alternativas o que a galera escolheu.',
+        extra_time: '+5s e QI cheio o tempo todo, nesta e nas próximas 2.',
+        second_chance: 'Errou, tenta de novo. Vale nesta e na próxima.',
+        reverse: 'Seu Reverso está pronto, e só você sabe. O primeiro poder em você volta.',
+        investment: 'Cada acerto seguido rende mais. Não erre!',
+        hide: 'Você pula esta pergunta sem perder vida.',
         ...(survival && {
-          shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro erro não tira vida.',
-          extra_time: 'Tempo extra: +5s nesta e nas próximas 2.',
+          shield: 'Seu Escudo está ativo. O primeiro erro não tira vida.',
+          extra_time: '+5s nesta e nas próximas 2.',
         }),
         ...lines,
       }
@@ -1081,18 +1081,18 @@ export function ActivePowerUps({
       const hit: Partial<Record<Kind, string>> = {
         scratch: 'jogou Raspadinha em você! Raspe para ver.',
         scramble: 'jogou Embaralhar em você! Boa leitura.',
-        accelerator: 'jogou Acelerador em você: um terço do tempo e sem QI cheio!',
+        accelerator: 'jogou Acelerador em você! Um terço do tempo e sem QI cheio.',
         mirror: 'jogou Espelho em você!',
         magnifier: 'jogou Lupa em você! Arraste a lupa pelo cabo para ler.',
-        toll: 'jogou Pedágio em você: cada resposta tem um preço!',
-        curse: 'jogou Maldição em você: se errar, perde 2 vidas!',
-        blood_pact: 'fez um Pacto de sangue com você: se perder vida, você perde também!',
-        decoy: 'jogou Alternativa falsa em você: duas dessas são mentira!',
-        flashbang: 'jogou Flashbang em você: leia rápido, ela estoura em 4 segundos!',
-        silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, placar, revelação nem poderes.',
+        toll: 'jogou Pedágio em você! Cada resposta tem um preço.',
+        curse: 'jogou Maldição em você! Se errar, perde 2 vidas.',
+        blood_pact: 'fez um Pacto de sangue com você! Se perder vida, você perde também.',
+        decoy: 'jogou Alternativa falsa em você! Duas dessas são mentira.',
+        flashbang: 'jogou Flashbang em você! Leia rápido, estoura em 4 segundos.',
+        silence: 'jogou Silêncio em você! Por 2 perguntas, sem relógio, placar, revelação nem poderes.',
         ...(survival && {
-          accelerator: 'jogou Acelerador em você: um terço do tempo!',
-          silence: 'jogou Silêncio em você: por 2 perguntas, sem relógio, vidas dos outros, revelação nem poderes.',
+          accelerator: 'jogou Acelerador em você! Um terço do tempo.',
+          silence: 'jogou Silêncio em você! Por 2 perguntas, sem relógio, vidas dos outros, revelação nem poderes.',
         }),
         ...hitLines,
       }
@@ -1118,7 +1118,7 @@ export function ActivePowerUps({
     curse: 'Se errar, perde 2 vidas',
     blood_pact: 'Se quem jogou perder vida, você perde junto',
     decoy: 'Duas alternativas são mentira',
-    flashbang: 'Leia rápido: estoura em 4 segundos',
+    flashbang: 'Leia rápido, estoura em 4 segundos',
     silence: 'Por 2 perguntas, sem relógio, placar nem revelação',
     ...hitDetails,
   }
@@ -1150,9 +1150,9 @@ export function ActivePowerUps({
         const lasting = own ? lastingOf(use.kind) : undefined
         const label =
           use.kind === 'theme'
-            ? `Tema: ${use.theme}`
+            ? `Tema ${use.theme}`
             : use.kind === 'coup'
-              ? `Golpe: ${use.theme}`
+              ? `Golpe em ${use.theme}`
               : use.legendary
                 ? `${info.name} lendário`
                 : use.target
@@ -1174,7 +1174,7 @@ export function ActivePowerUps({
       icon: <PowerUpIcon kind={l.kind} className="size-full" />,
       label: POWERUP_INFO[l.kind].name,
       tone: POWERUP_INFO[l.kind].tone,
-      tip: `${POWERUP_INFO[l.kind].name} ainda valendo (${l.total - l.rounds_left + 1} de ${l.total})${l.rounds_left === 1 && l.kind !== 'extra_time' ? ': esta é a última pergunta.' : '.'}`,
+      tip: `${POWERUP_INFO[l.kind].name} ainda valendo (${l.total - l.rounds_left + 1} de ${l.total})${l.rounds_left === 1 && l.kind !== 'extra_time' ? '. Esta é a última pergunta.' : '.'}`,
       me: true,
       pips: { left: l.rounds_left, total: l.total },
     })),
@@ -1297,14 +1297,14 @@ export function PowerUpBar({
     const armedLine = game.armed.legendary ? (
       <p className="legendary flex items-center gap-2 rounded-xl px-3 py-1.5 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
-        Na próxima: {info.name} LENDÁRIO em todo mundo!
+        Na próxima, {info.name} LENDÁRIO em todo mundo!
       </p>
     ) : (
       <p className="flex items-center gap-2 font-semibold">
         <PowerUpIcon kind={game.armed.kind} className="size-6 shrink-0" />
         {game.armed.theme
-          ? `Tema da próxima: ${game.armed.theme}!`
-          : `Na próxima: ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
+          ? `Tema da próxima é ${game.armed.theme}!`
+          : `Na próxima, ${info.name}${target ? ` em ${target.nickname}` : ''}!`}
       </p>
     )
     // O Tema não volta: a próxima pergunta já foi trocada.

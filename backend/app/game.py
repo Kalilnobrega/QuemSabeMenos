@@ -453,7 +453,7 @@ class Game(QuestionDeck):
         if not self.can_arm:
             raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem poderes por enquanto.")
+            raise GameError("Silenciado, sem poderes por enquanto.")
         if player_id in self.armed:
             raise GameError("Você já armou um poder para a próxima pergunta.")
         if legendary:
@@ -499,7 +499,7 @@ class Game(QuestionDeck):
         if not use or not self.can_arm:
             raise GameError("Não tem poder para trocar agora.")
         if use.kind == "theme":
-            raise GameError("O tema da próxima já foi trocado: não dá para voltar.")
+            raise GameError("O tema da próxima já foi trocado, não dá para voltar.")
         del self.armed[player_id]
         (self.legendaries if use.legendary else self.powerups).setdefault(player_id, []).append(use.kind)
         self.ready.discard(player_id)
@@ -511,7 +511,7 @@ class Game(QuestionDeck):
         if self.theme_picker == player_id:
             raise GameError("O tema já é seu.")
         if (self.round + 1) % SPECIALIST_BLOCK == 0:
-            raise GameError("O bloco acaba agora: guarde o Golpe para o próximo.")
+            raise GameError("O bloco acaba agora. Guarde o Golpe para o próximo.")
         if self.coup_block == self.round // SPECIALIST_BLOCK or any(use.kind == "coup" for use in self.armed.values()):
             raise GameError("Já deram um Golpe neste bloco.")
 
@@ -520,7 +520,7 @@ class Game(QuestionDeck):
         if not self.powers or self.phase != "results":
             raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem poderes por enquanto.")
+            raise GameError("Silenciado, sem poderes por enquanto.")
         held = self.powerups.get(player_id, [])
         if "backpack" not in held:
             raise GameError("Você não tem esse poder.")
@@ -547,7 +547,7 @@ class Game(QuestionDeck):
         if kind not in powerups.INSTANT:
             raise GameError("Essa se arma na revelação.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem poderes por enquanto.")
+            raise GameError("Silenciado, sem poderes por enquanto.")
         held = self.powerups.get(player_id, [])
         if kind not in held:
             raise GameError("Você não tem esse poder.")
@@ -1020,7 +1020,7 @@ class Game(QuestionDeck):
         if not self.powers or self.phase != "results" or not self.has_next_round:
             raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player.id):
-            raise GameError("Silenciado: sem poderes por enquanto.")
+            raise GameError("Silenciado, sem poderes por enquanto.")
         held = self.mythics.get(player.id, [])
         if "resurrection" not in held:
             raise GameError("Você não tem esse poder.")
@@ -1040,7 +1040,7 @@ class Game(QuestionDeck):
         if not self.powers or self.phase != "results" or not self.has_next_round:
             raise GameError("Agora não dá para usar poder.")
         if self.is_silenced(player_id):
-            raise GameError("Silenciado: sem poderes por enquanto.")
+            raise GameError("Silenciado, sem poderes por enquanto.")
         held = self.mythics.get(player_id, [])
         if "duel" not in held:
             raise GameError("Você não tem esse poder.")

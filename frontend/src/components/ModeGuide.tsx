@@ -40,11 +40,14 @@ interface Guide {
 const CLASSIC_SCORING: Section = {
   title: 'Pontuação',
   items: [
-    'Todo mundo começa com 50 de QI e responde a mesma pergunta ao mesmo tempo.',
-    'As perguntas vão das fáceis às difíceis. Acertar fácil não dá nada (é obrigação); errar fácil tira 15.',
-    'Média: acerto dá de 5 a 11, erro tira 10. Difícil: acerto dá de 13 a 22, erro tira 5. Não responder tira 10.',
-    'Quanto mais rápido, mais QI: nos primeiros segundos (o QI cheio) vale o máximo, depois vai caindo até o fim do tempo.',
-    'Partidas curtas valem mais por pergunta e longas valem menos, para o QI final ficar parecido em qualquer tamanho.',
+    'Todo mundo começa com 50 de QI e responde a mesma pergunta.',
+    'As perguntas vão das fáceis às difíceis.',
+    'Fácil é obrigação. Acertar não dá nada e errar tira 15.',
+    'Na média, acertar dá de 5 a 11 e errar tira 10.',
+    'Na difícil, acertar dá de 13 a 22 e errar tira 5.',
+    'Não responder tira 10.',
+    'Quanto mais rápido, mais QI. O máximo vale nos primeiros segundos, o QI cheio, e depois vai caindo.',
+    'Partidas curtas valem mais por pergunta, para o QI final ficar parecido em qualquer tamanho.',
   ],
 }
 
@@ -52,17 +55,20 @@ const CLASSIC_EXTRAS: Section[] = [
   {
     title: 'Sequências',
     items: [
-      'Gabaritar as fáceis: +1 por fácil.',
-      'Acertos seguidos (médias e difíceis): 3 seguidos +3, 5 seguidos +10, 10 seguidos +20.',
-      'Erros seguidos: 3 seguidos −5, 5 seguidos −10. Repetir uma sequência na mesma partida vale a metade.',
+      'Gabaritar as fáceis dá +1 por fácil.',
+      'Nas médias e difíceis, 3 acertos seguidos dão +3, 5 dão +10 e 10 dão +20.',
+      '3 erros seguidos tiram 5, e 5 erros tiram 10.',
+      'Repetir uma sequência na mesma partida vale metade.',
     ],
   },
   {
     title: 'Aposta e final',
     items: [
-      'No meio das difíceis vem a aposta: antes de ver a pergunta, você aposta de 0 a 100% do seu QI. Acertou, ganha 50% do que apostou; errou ou não respondeu, perde o que apostou.',
-      'No fim vem a pergunta impossível, com 6 alternativas: acertar dá +35, errar não tira nada.',
-      'Ganha quem tiver mais QI; no empate, quem respondeu mais rápido no total. O último é o "quem sabe menos".',
+      'No meio das difíceis, você aposta de 0 a 100% do QI antes de ver a pergunta.',
+      'Acertou, ganha 50% do que apostou. Errou ou não respondeu, perde o que apostou.',
+      'No fim vem a pergunta impossível, com 6 alternativas. Acertar dá +35 e errar não tira nada.',
+      'Ganha quem tiver mais QI. No empate, quem respondeu mais rápido no total.',
+      'O último é o quem sabe menos.',
     ],
   },
 ]
@@ -106,27 +112,27 @@ const ESTIMATE_LEGENDARIES: Kind[] = [
   'double_click',
 ]
 const ESTIMATE_LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
-  scratch: 'A próxima pergunta e o teclado de todos os outros vêm cobertos: todo mundo tem que raspar.',
+  scratch: 'A próxima pergunta e o teclado de todos os outros vêm cobertos.',
   steal: LEGENDARY_STEAL_HINT,
-  mirror: 'A próxima pergunta de todos os outros aparece espelhada.',
+  mirror: 'A próxima pergunta de todos os outros fica espelhada.',
   silence: 'Por 2 perguntas, todos os outros ficam sem tempo, placar, revelação e poderes.',
   broken_keys: '3 teclas de número de todos os outros racham no primeiro toque.',
   shuffled_keys: 'As teclas de todos os outros trocam de lugar.',
   perfectionist: 'Ninguém mais pode apagar na próxima pergunta.',
   nudge: 'O chute de todos os outros anda de 10% a 30%, cada um para um lado sorteado.',
-  runaway_keys: 'As teclas de todos os outros saem voando pela tela.',
+  runaway_keys: 'As teclas de todos os outros voam pela tela.',
   short_circuit: 'O teclado de todos os outros queima entre 5 e 12 segundos.',
   double_click: '3 teclas de número de todos os outros digitam duas vezes.',
 }
 
 // As versões lendárias das sabotagens: valem em todos os outros de uma vez.
 const LEGENDARY_HINTS: Partial<Record<Kind, string>> = {
-  scratch: 'A próxima pergunta de todos os outros vem coberta: todo mundo tem que raspar.',
+  scratch: 'A próxima pergunta de todos os outros vem coberta.',
   steal: LEGENDARY_STEAL_HINT,
-  scramble: 'A próxima pergunta de todos os outros vem com as letras embaralhadas.',
+  scramble: 'As letras da próxima pergunta de todos os outros vêm embaralhadas.',
   accelerator: 'Todos os outros têm um terço do tempo e ficam sem QI cheio.',
-  mirror: 'A próxima pergunta de todos os outros aparece espelhada.',
-  magnifier: 'A próxima pergunta de todos os outros fica borrada: só dá para ler com a lupa.',
+  mirror: 'A próxima pergunta de todos os outros fica espelhada.',
+  magnifier: 'A próxima pergunta de todos os outros fica borrada. Só dá para ler com a lupa.',
   silence: 'Por 2 perguntas, todos os outros ficam sem tempo, placar, revelação e poderes.',
   toll: LEGENDARY_TOLL_HINT,
   decoy: LEGENDARY_DECOY_HINT,
@@ -191,19 +197,27 @@ const TEAM_ATTACKS: Kind[] = [
   'gag',
 ]
 
+const POWER_KINDS = 'Ajuda vale para você, e Sabotagem você joga em alguém.'
+const RARITIES = 'Lendário e mítico são raros e mais fortes. Míticos vêm mais para quem está em último.'
+const BET_POWER =
+  'Apostar pelo menos 25% do QI e acertar dá um poder, com mais chance de lendário (15%) ou mítico (5%).'
+
 const GUIDES: Record<Mode, Guide> = {
   classic: {
     name: 'Clássico',
-    summary: 'Todo mundo responde junto: quem sabe mais, ganha. Dá para jogar com ou sem poderes.',
+    summary: 'Todo mundo responde junto, e quem sabe mais ganha.',
     sections: [CLASSIC_SCORING, ...CLASSIC_EXTRAS],
     powersIntro: [
-      'Com poderes (o anfitrião liga no lobby): cada um começa com um poder sorteado e ganha outro a cada 3 acertos seguidos. Quem está em último e bem atrás por 3 rodadas também ganha um.',
-      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar. Lendário e mítico são raridades: aparecem menos e são mais fortes. Os míticos vêm mais para quem está em último.',
-      'Na revelação, você escolhe um poder para a próxima pergunta (e o alvo, se for sabotagem). O 50/50 e o Espiar se usam na hora da pergunta, pelo ícone.',
-      'Na aposta: quem apostar pelo menos 25% do QI e acertar ganha um poder, com mais chance de vir lendário (15%) ou mítico (5%).',
-      'O anfitrião define quantos poderes cada um guarda (de 1 a 3; o padrão é 3). Com a mão cheia, não ganha mais.',
-      'Poderes não valem na aposta nem na pergunta final.',
-      'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como uma sabotagem LENDÁRIA (20% para quem está em último e bem atrás). A lendária vale em todos os outros jogadores de uma vez, sem escolher alvo, e o Reverso não segura. Ele ocupa uma vaga na mão como os outros. O poder sorteado no começo nunca é lendário.',
+      'O anfitrião liga os poderes no lobby e define quantos cada um guarda, de 1 a 3.',
+      'Você começa com um poder e ganha outro a cada 3 acertos seguidos.',
+      'Quem está em último, bem atrás, ganha um a cada 3 rodadas.',
+      POWER_KINDS,
+      RARITIES,
+      'Na revelação, você escolhe um poder para a próxima pergunta. O 50/50 e o Espiar se usam durante a pergunta.',
+      BET_POWER,
+      'Poderes não valem na aposta nem na final.',
+      'Cada poder ganho tem 6% de chance de vir lendário, ou 20% para o último bem atrás. O primeiro poder nunca é lendário.',
+      'A sabotagem lendária pega todos os outros de uma vez, e o Reverso não segura.',
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: CLASSIC_HELPS },
@@ -223,27 +237,27 @@ const GUIDES: Record<Mode, Guide> = {
   },
   specialist: {
     name: 'Especialista',
-    summary:
-      'Igual ao Clássico, mas as perguntas vêm em blocos de 5 com um tema só, e alguém escolhe o tema de cada bloco.',
+    summary: 'Como o Clássico, mas alguém escolhe o tema de cada bloco de 5 perguntas.',
     sections: [
       {
         title: 'Escolha do tema',
         items: [
-          'Antes de cada bloco de 5 perguntas, o jogo sorteia quem escolhe o tema. Quem está em último tem 3 vezes mais chance de ser sorteado (no começo, com todo mundo empatado, a chance é igual).',
-          'Quem foi sorteado escolhe entre 4 temas em 12 segundos. Se não escolher, o tema é sorteado.',
-          'Quem escolheu ganha +25% de QI em cada acerto do bloco. Como acertar uma fácil vale 0, nas fáceis o bônus também é 0.',
-          'A dificuldade segue o Clássico (fáceis, médias, difíceis), e a pergunta final impossível tem tema livre.',
+          'Antes de cada bloco, o jogo sorteia quem escolhe o tema. Quem está em último tem 3 vezes mais chance.',
+          'Você escolhe entre 4 temas em 12 segundos. Se não escolher, o tema é sorteado.',
+          'Quem escolheu ganha +25% de QI em cada acerto do bloco. Nas fáceis, o acerto vale 0, então o bônus também.',
+          'A dificuldade segue o Clássico, e a final impossível tem tema livre.',
         ],
       },
       CLASSIC_SCORING,
       ...CLASSIC_EXTRAS,
     ],
     powersIntro: [
-      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar. Lendário e mítico são raridades: aparecem menos e são mais fortes. Os míticos vêm mais para quem está em último.',
-      'Os mesmos poderes do Clássico, com as mesmas regras. No lugar do Tema entra o Golpe: você toma o tema de quem escolheu e fica com os +25% até o fim do bloco.',
-      'O Golpe se arma na revelação, como os outros. Só vale um por bloco, e não dá para usar quando a próxima pergunta já é de outro bloco.',
-      'Na aposta: quem apostar pelo menos 25% do QI e acertar ganha um poder, com mais chance de vir lendário (15%) ou mítico (5%).',
-      'Poderes não valem na aposta nem na pergunta final.',
+      POWER_KINDS,
+      RARITIES,
+      'São os poderes do Clássico, com as mesmas regras. O Golpe entra no lugar do Tema.',
+      'O Golpe se arma na revelação. Só vale um por bloco, e não dá para usar se a próxima pergunta já for de outro bloco.',
+      BET_POWER,
+      'Poderes não valem na aposta nem na final.',
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: SPECIALIST_HELPS },
@@ -263,45 +277,46 @@ const GUIDES: Record<Mode, Guide> = {
   },
   last_standing: {
     name: 'Último de pé',
-    summary: 'Battle royale com vidas: errou, perde uma vida. Sem vidas, está fora.',
+    summary: 'Errou, perde uma vida. Sem vidas, está fora.',
     sections: [
       {
         title: 'Como funciona',
         items: [
-          'Todo mundo responde a mesma pergunta. Errar ou não responder tira uma vida; sem vidas, você vira fantasma e só assiste.',
-          'Se todos os vivos erram a mesma pergunta, ninguém perde vida.',
-          'Não tem QI: a colocação é a ordem em que cada um caiu (quem cai na mesma rodada desempata pelo tempo de resposta).',
+          'Todo mundo responde a mesma pergunta. Errar ou não responder tira uma vida.',
+          'Sem vidas, você vira fantasma e só assiste.',
+          'Se todos os vivos errarem a mesma pergunta, ninguém perde vida.',
+          'Não tem QI. A colocação é a ordem em que cada um caiu, e o tempo de resposta desempata.',
         ],
       },
       {
         title: 'V ou F',
-        items: ['3 vidas. Frases de Verdadeiro ou Falso: 10 médias e depois só difíceis. 10 segundos para cada uma.'],
+        items: ['3 vidas e frases de Verdadeiro ou Falso. São 10 médias e depois só difíceis, com 10 segundos cada.'],
       },
       {
         title: 'Alternativas',
-        items: [
-          '3 vidas. 5 fáceis, 10 médias e depois só difíceis, com 4 alternativas. 15 segundos, depois de ler a pergunta.',
-        ],
+        items: ['3 vidas e 4 alternativas. São 5 fáceis, 10 médias e depois só difíceis, com 15 segundos cada.'],
       },
       {
         title: 'X1 final',
         items: [
-          'Quando sobram 2, vira X1 de morte súbita: as vidas não contam mais, e perde quem errar sozinho.',
-          'O tempo cai a cada pergunta: no V ou F, de 8s até 3s; nas Alternativas, de 12s até 5s.',
-          'Nas Alternativas, depois de 10 perguntas do X1 só vêm impossíveis, e se os dois acertarem, ganha o mais rápido.',
+          'Quando sobram 2, as vidas deixam de contar. Perde quem errar sozinho.',
+          'O tempo cai a cada pergunta. No V ou F, de 8s até 3s. Nas Alternativas, de 12s até 5s.',
+          'Nas Alternativas, depois de 10 perguntas só vêm impossíveis. Se os dois acertarem, ganha o mais rápido.',
         ],
       },
     ],
     powersIntro: [
-      'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos. Com 1 vida só, basta acertar 2 seguidas.',
-      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar. Mítico é raridade: aparece menos e é mais forte.',
-      'Cada vez que alguém cai, todos os vivos ganham um poder (menos quando sobram 2, porque aí começa o X1).',
-      'Na revelação, você escolhe um poder para a próxima pergunta; o 50/50 e o Espiar se usam na hora.',
-      'Quem caiu vira fantasma: a cada 3 perguntas ganha uma sabotagem para jogar nos vivos, e às vezes a Ressurreição.',
-      'No V ou F não vem 50/50 (com 2 opções, entregaria a resposta).',
-      'No X1 não tem poder.',
-      'Aqui não tem lendários: as sabotagens sempre miram uma pessoa só.',
-      'Míticos: a Adaga às vezes vem no lugar de um poder ganho por acertos seguidos (4%). A Ressurreição é só dos fantasmas (8% em cada presente de fantasma). A Bênção não se ganha: é o prêmio de eliminar alguém com a Adaga.',
+      'O anfitrião liga os poderes no lobby.',
+      'Você começa com um e ganha outro a cada 3 acertos seguidos. Com 1 vida só, bastam 2.',
+      POWER_KINDS,
+      'Mítico é raro e mais forte.',
+      'Quando alguém cai, todos os vivos ganham um poder, menos quando sobram 2.',
+      'Na revelação, você escolhe um poder para a próxima pergunta. O 50/50 e o Espiar se usam durante a pergunta.',
+      'Fantasma ganha uma sabotagem a cada 3 perguntas e, às vezes, a Ressurreição.',
+      'No V ou F não tem 50/50, porque entregaria a resposta.',
+      'No X1 não tem poder, e aqui não existem lendários.',
+      'A Adaga às vezes vem no lugar de um poder por acertos seguidos (4%).',
+      'A Ressurreição só vem para fantasmas (8%). A Bênção é o prêmio de eliminar alguém com a Adaga.',
     ],
     powers: [
       { title: 'Ajudas (para você)', kinds: SURVIVAL_HELPS, hints: SURVIVAL_HINTS },
@@ -316,27 +331,31 @@ const GUIDES: Record<Mode, Guide> = {
   },
   hot_potato: {
     name: 'Batata quente',
-    summary: 'Um por vez: acertou, passa a batata. Explodiu na sua mão, está fora.',
+    summary: 'Acertou, passa a batata. Explodiu na sua mão, está fora.',
     sections: [
       {
         title: 'Como funciona',
         items: [
-          'A batata começa com alguém sorteado. Só quem está com ela responde; os outros assistem.',
-          'Perguntas fáceis e médias. Acertou, a batata passa para o próximo da roda.',
-          'Errou, o pavio perde 10 segundos e vem outra pergunta. 3 erros seguidos: explode na hora.',
-          'O pavio é secreto e dura de 40 a 60 segundos. Ele só queima enquanto alguém está respondendo (não queima enquanto a batata voa).',
-          'Quando a batata explode, quem está com ela sai, e a rodada seguinte começa com o próximo da roda e um pavio novo.',
-          'Ganha o último que sobrar ("Mão fria"); o primeiro a queimar é o "quem sabe menos".',
+          'A batata começa com alguém sorteado. Só quem está com ela responde.',
+          'As perguntas são fáceis e médias. Acertou, ela passa para o próximo.',
+          'Errou, o pavio perde 10 segundos e vem outra pergunta. Com 3 erros seguidos, explode na hora.',
+          'O pavio é secreto, dura de 40 a 60 segundos e só queima enquanto alguém responde.',
+          'Quando explode, quem está com a batata sai. O próximo da roda recomeça com um pavio novo.',
+          'O último que sobrar ganha. O primeiro a queimar é o quem sabe menos.',
         ],
       },
     ],
     powersIntro: [
-      'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 acertos seguidos.',
-      'Tudo vale na hora. Ajudas, só quem está com a batata usa. Sabotagens, quem está assistindo joga em quem está com a batata, valendo na pergunta atual (uma por pessoa por pergunta).',
-      'Aqui não tem lendários.',
-      'A cada explosão (menos a última), quem continua vivo ganha um poder.',
-      'Quem explodiu vira fantasma e ganha uma sabotagem a cada explosão de outro; às vezes vem a Ressurreição. O Palpite do além é só dos fantasmas.',
-      'Batata dupla (mítico, 4% dos poderes ganhos por acertos seguidos): entra uma batata dourada na roda, com pavio próprio de 30 a 45s. Ela começa com quem está mais longe da principal, nunca vai para quem a jogou e dura até explodir. Quem estiver com as duas responde uma pergunta para cada. Precisa de pelo menos 3 na roda.',
+      'O anfitrião liga os poderes no lobby.',
+      'Você começa com um e ganha outro a cada 3 acertos seguidos.',
+      'Tudo vale na hora. Ajudas são de quem está com a batata.',
+      'Quem assiste joga sabotagens em quem está com ela, uma por pergunta.',
+      'A cada explosão, menos a última, quem continua vivo ganha um poder.',
+      'Quem explodiu vira fantasma e ganha uma sabotagem a cada nova explosão. Às vezes vem a Ressurreição.',
+      'Aqui não existem lendários.',
+      'A Batata dupla vem em 4% dos poderes por acertos seguidos e precisa de pelo menos 3 na roda.',
+      'A batata dourada tem pavio próprio de 30 a 45s, começa com quem está mais longe da principal e dura até explodir.',
+      'Quem estiver com as duas responde uma pergunta para cada.',
     ],
     powers: [
       {
@@ -364,38 +383,45 @@ const GUIDES: Record<Mode, Guide> = {
   },
   estimate: {
     name: 'Chutômetro',
-    summary: 'Toda resposta é um número. Ninguém precisa saber o valor exato: quem chutar mais perto ganha QI.',
+    summary: 'A resposta é um número, e quem chutar mais perto ganha QI.',
     sections: [
       {
         title: 'Como funciona',
         items: [
-          'Todo mundo vê a mesma pergunta e tem 20 segundos para digitar um chute no teclado do jogo, que tem vírgula (3,14), a tecla 000 para números grandes e − para os negativos. No computador, o teclado físico também funciona, menos nas partidas com poderes.',
-          'Na revelação, a régua mostra a resposta no meio, a zona verde em que o chute ainda ganha QI e o avatar de cada um no próprio chute.',
-          'A partida tem 10, 15 ou 20 perguntas e sobe de nível como no Clássico: primeiro as fáceis, depois as médias e por fim as difíceis. Não tem aposta nem pergunta final.',
+          'Todo mundo vê a mesma pergunta e tem 20 segundos para chutar.',
+          'O teclado do jogo tem vírgula, 000 para números grandes e − para negativos.',
+          'No computador, o teclado físico também funciona, menos nas partidas com poderes.',
+          'Na revelação, a régua mostra a resposta no meio, a zona verde de ganho e o chute de cada um.',
+          'São 10, 15 ou 20 perguntas, das fáceis às difíceis. Não tem aposta nem final.',
         ],
       },
       {
         title: 'Pontuação',
         items: [
-          'Todo mundo começa com 50 de QI. O erro é medido em % da resposta, e os pontos dependem de quão perto você chegou.',
-          'Quanto mais perto, mais QI: o ganho cai aos poucos até zerar e, depois disso, vira perda. Cravar o número exato (Chute certeiro) dá um bônus.',
-          'Fáceis são obrigação: até +8, cravando +12. Zera com 20% de erro e pode perder até −20.',
-          'Médias: até +16, cravando +24. Zera com 30% de erro e pode perder até −15.',
-          'Difíceis valem o risco: até +24, cravando +36. Zera com 35% de erro e perde no máximo −10.',
-          'A perda máxima chega quando o erro é o triplo do ponto em que zera (60%, 90% e 105%). Sem chutar, perde o máximo do nível.',
-          'Partidas menores valem mais por pergunta, como no Clássico: numa de 10, tudo vale o dobro.',
-          'Nos anos, o erro conta em relação a 50 anos: errar por 2 anos já é 4%. Assim, numa média, chutar 1820 para 1822 vale +14, mas 1800 vale −4.',
-          'Empate no QI final: fica na frente quem chutou mais rápido no total.',
+          'Todo mundo começa com 50 de QI. O erro é medido em % da resposta.',
+          'Quanto mais perto, mais QI. O ganho cai até zerar e depois vira perda.',
+          'Cravar o número exato, o Chute certeiro, dá bônus.',
+          'Na fácil, ganha até +8, ou +12 cravando. Zera com 20% de erro e perde até 20.',
+          'Na média, ganha até +16, ou +24 cravando. Zera com 30% de erro e perde até 15.',
+          'Na difícil, ganha até +24, ou +36 cravando. Zera com 35% de erro e perde até 10.',
+          'A perda máxima vem no triplo do erro que zera, ou seja, 60%, 90% e 105%. Sem chute, perde o máximo.',
+          'Partidas menores valem mais por pergunta. Numa de 10, tudo vale o dobro.',
+          'Nos anos, o erro conta sobre 50 anos. Errar por 2 anos já é 4%.',
+          'Numa média, chutar 1820 para 1822 vale +14, e 1800 vale −4.',
+          'No empate, fica na frente quem chutou mais rápido no total.',
         ],
       },
     ],
     powersIntro: [
-      'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 chutes seguidos que ganham QI, e a cada chute certeiro nas médias e difíceis. O lanterna muito atrás também ganha, a cada 3 rodadas.',
-      'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar.',
-      'Na revelação, você escolhe um poder para a próxima pergunta; a Faixa e o Sniper se usam na hora.',
-      'Com poderes, o teclado físico do computador fica bloqueado: todo mundo digita pelo teclado da tela.',
-      'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como uma sabotagem LENDÁRIA (20% para quem está em último muito atrás). Ela vale em todos os outros de uma vez, e o Reverso não segura.',
-      'Míticos: um poder ganho durante a partida tem 2% de chance de vir mítico (8% para quem está em último muito atrás).',
+      'O anfitrião liga os poderes no lobby. Com eles, só o teclado da tela funciona.',
+      'Você começa com um e ganha outro a cada 3 chutes seguidos que ganham QI.',
+      'Cada chute certeiro nas médias e difíceis também dá um.',
+      'O lanterna muito atrás ganha um a cada 3 rodadas.',
+      POWER_KINDS,
+      'Na revelação, você escolhe um poder para a próxima pergunta. A Faixa, o Sniper e a Palavra final se usam durante a pergunta.',
+      'Cada poder ganho tem 6% de chance de vir lendário, ou 20% para o último muito atrás.',
+      'A sabotagem lendária pega todos os outros de uma vez, e o Reverso não segura.',
+      'Cada poder ganho tem 2% de chance de vir mítico, ou 8% para o último muito atrás.',
     ],
     powers: [
       {
@@ -453,45 +479,43 @@ const GUIDES: Record<Mode, Guide> = {
       {
         title: 'Montagem',
         items: [
-          'De 2 a 4 times (Burro, Asno, Jegue e Mula), com pelo menos 2 jogadores cada.',
-          'O anfitrião monta tocando nos jogadores no lobby, ou os times são sorteados quando a partida começa.',
+          'São de 2 a 4 times, Burro, Asno, Jegue e Mula, com pelo menos 2 jogadores cada.',
+          'O anfitrião monta no lobby, ou os times são sorteados no começo.',
         ],
       },
       {
         title: 'Votação',
         items: [
-          'Cada um vota numa alternativa e vê na hora o voto dos colegas. Os outros times só veem quantos já votaram.',
-          'Dá para trocar o voto até todo mundo do time votar; aí a resposta do time trava. Se o tempo acabar, vale a mais votada até ali.',
-          'A cada pergunta, um do time é o capitão (em rodízio): o voto dele vale 2 e desempata.',
-          'Capitão votou na certa: +3 para o time. Errou ou não votou: −3.',
-          'Sintonia: todo mundo do time votando na certa 3 perguntas seguidas dá +10.',
+          'Cada um vota e vê na hora o voto dos colegas. Os outros times só veem quantos já votaram.',
+          'Dá para trocar o voto até todo mundo votar. Se o tempo acabar, vale a mais votada.',
+          'A cada pergunta, alguém é o capitão. O voto dele vale 2 e desempata.',
+          'Capitão votou certo, o time ganha 3. Errou ou não votou, perde 3.',
+          'Todo mundo votando certo 3 vezes seguidas dá +10.',
         ],
       },
       {
         title: 'Pontuação',
-        items: [
-          'O time começa com 50 de QI e pontua como no clássico: fácil não dá nada e erro tira 15; média de 5 a 11 (erro −10); difícil de 13 a 22 (erro −5); sem resposta −10.',
-          'A velocidade conta até o time travar a resposta: quanto antes todo mundo votar, mais QI.',
-        ],
+        items: ['O time começa com 50 de QI e pontua como no Clássico.', 'Quanto antes todo mundo votar, mais QI.'],
       },
       {
         title: 'Aposta e final',
         items: [
-          'Na aposta e na pergunta final impossível, cada time escolhe em 10 segundos um representante (empate é sorteado).',
-          'Na aposta, o representante decide quanto do QI do time apostar e responde sozinho. Na final, também responde sozinho.',
-          'O resto do time só assiste e torce.',
-          'No fim: o time campeão e, de cada time, o craque e o quem sabe menos, pela quantidade de votos na certa.',
+          'Na aposta e na final, cada time escolhe um representante em 10 segundos. Empate é sorteado.',
+          'Ele responde sozinho e, na aposta, decide quanto do QI do time apostar.',
+          'No fim, aparecem o time campeão e o craque e o quem sabe menos de cada time.',
         ],
       },
     ],
     powersIntro: [
-      'Com poderes (o anfitrião liga no lobby): a mão é do time, com até 3 poderes. O time começa com um e ganha outro a cada 3 acertos seguidos; o time muito atrás por 3 rodadas também ganha um.',
-      'Os poderes são de dois tipos: Ajuda, que vale para o seu time, e Sabotagem, que vocês jogam num time adversário. Mítico é raridade: aparece menos e é mais forte, e vem mais para o time em último.',
-      'Quem escolhe é o capitão da próxima pergunta, na revelação; o resto do time dá palpite. Sem capitão (Motim), qualquer um do time escolhe.',
-      'O 50/50 e o Espiar o capitão usa durante a pergunta.',
-      'Na aposta: se o representante apostar pelo menos 25% do QI do time e acertar, o time ganha um poder (5% de chance de vir mítico).',
-      'Um poder por time por pergunta. Sabotagens miram um time adversário. Nada vale na aposta nem na final.',
-      'Aqui não tem lendários: as sabotagens sempre miram um time só.',
+      'O anfitrião liga os poderes no lobby. O time guarda até 3.',
+      'O time começa com um e ganha outro a cada 3 acertos seguidos. Muito atrás, ganha um a cada 3 rodadas.',
+      'Ajuda vale para o seu time, e Sabotagem vocês jogam num adversário.',
+      'Mítico é raro, mais forte e vem mais para o time em último.',
+      'Na revelação, o capitão da próxima pergunta escolhe, e o time dá palpite. Sem capitão, qualquer um escolhe.',
+      'O capitão usa o 50/50 e o Espiar durante a pergunta.',
+      'Se o representante apostar pelo menos 25% do QI e acertar, o time ganha um poder, com 5% de chance de ser mítico.',
+      'É um poder por time por pergunta. Nada vale na aposta nem na final.',
+      'Aqui não existem lendários.',
     ],
     powers: [
       { title: 'Ajudas (para o seu time)', kinds: TEAM_HELPS, hints: TEAM_HINTS },
@@ -586,13 +610,13 @@ export function ModeGuide({ mode, onClose }: { mode: Mode; onClose: () => void }
                       : 'mt-0.5 size-6 shrink-0'
                   }
                 />
-                <span className="text-sm leading-snug">
+                <span className="flex flex-col text-sm leading-snug">
                   <span className="font-bold">
                     {POWERUP_INFO[kind].name}
                     {group.legendary && ' LENDÁRIO'}
-                    {group.mythic && ' MÍTICO'}:
-                  </span>{' '}
-                  {(group.hints?.[kind] ?? POWERUP_INFO[kind].hint).replace(/^Só n[ao]s? [^:]+: /, '')}
+                    {group.mythic && ' MÍTICO'}
+                  </span>
+                  {group.hints?.[kind] ?? POWERUP_INFO[kind].hint}
                 </span>
               </li>
             ))}

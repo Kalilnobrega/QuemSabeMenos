@@ -574,14 +574,14 @@ class HotPotato(Phased):
         if not mine:
             raise HotPotatoError("A batata não está com você.")
         if len(mine) > 1:
-            raise HotPotatoError("Você está com as duas batatas: escolha uma.")
+            raise HotPotatoError("Você está com as duas batatas. Escolha uma.")
         return mine[0]
 
     def _target(self, player_id: str, potato_id: int | None) -> Potato:
         """A batata que a sabotagem mira (com duas na roda, quem joga escolhe)."""
         targets = [p for p in self.potatoes if potato_id is None or p.id == potato_id]
         if len(targets) > 1:
-            raise HotPotatoError("Tem duas batatas na roda: escolha em qual.")
+            raise HotPotatoError("Tem duas batatas na roda. Escolha em qual.")
         if not targets:
             raise HotPotatoError("Essa batata não está na roda.")
         if targets[0].holder == player_id:

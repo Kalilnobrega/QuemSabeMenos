@@ -749,7 +749,7 @@ function Betting({
             {placed === 0
               ? 'Você passou.'
               : placed !== null
-                ? `Você apostou ${placed} de QI! Acertou, ganha ${betWin(placed, game)}; errou, perde ${placed}.`
+                ? `Você apostou ${placed} de QI! Se acertar, ganha ${betWin(placed, game)}. Se errar, perde ${placed}.`
                 : 'Aposta feita!'}
           </p>
         ) : (
@@ -1008,7 +1008,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
             className={`min-w-0 truncate rounded-full px-2.5 py-1 ${game.block_theme && game.theme_picker === playerId ? 'bg-brand/20 font-semibold text-brand' : 'bg-panel text-steel'}`}
             title={
               game.block_theme && game.theme_picker === playerId
-                ? `${question.theme}: você ganha +25% nos acertos`
+                ? `${question.theme}, com +25% nos seus acertos`
                 : question.theme
             }
           >
@@ -1085,7 +1085,7 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
               : blinded && !answered
                 ? 'Flashbang! Agora é chutar pela letra.'
                 : retry !== null && !answered
-                  ? 'Errou! Segunda chance: tente de novo (vale metade).'
+                  ? 'Errou! Tente de novo, valendo metade.'
                   : silenced
                     ? answered
                       ? 'Resposta enviada! Agora é esperar…'
@@ -1115,7 +1115,7 @@ function ResurrectionOverlay({
   const revived = revivals.map((r) => ({
     key: `${r.player_id}:${r.after}`,
     playerId: r.player_id,
-    line: (who: string) => `${who} voltou dos mortos: ${formatScore(r.before)} → ${formatScore(r.after)} de QI`,
+    line: (who: string) => `${who} voltou dos mortos, de ${formatScore(r.before)} para ${formatScore(r.after)} de QI`,
   }))
   return <ResurrectionScene revived={revived} players={players} playerId={playerId} />
 }
@@ -1331,7 +1331,7 @@ function powerupEvents(room: RoomState, game: GameView, playerId: string | null)
         key: `${result.player_id}-second`,
         kind: 'second_chance',
         title: result.correct ? 'Acertou na segunda chance' : 'Errou de novo',
-        detail: result.correct ? 'Segunda chance: vale metade' : 'A segunda chance não salvou',
+        detail: result.correct ? 'Segunda chance, vale metade' : 'A segunda chance não salvou',
         delta: null,
       })
     }
