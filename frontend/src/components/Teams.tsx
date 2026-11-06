@@ -9,7 +9,7 @@ import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { Snapshot } from '../lib/useRoom'
 import type { PlayerView, TeamMatchView, TeamPlayerStat, TeamPowerUse, TeamSide } from '../types/events'
-import { Confetti, DuelScreen } from './Game'
+import { Confetti, DuelScreen, FactCard } from './Game'
 import {
   BannerList,
   EffectChips,
@@ -526,14 +526,9 @@ function TeamRound({
 
       {revealed && (
         <>
-          <TeamResults match={match} players={room.players} playerId={playerId} />
           {match.powers && <TeamPowerBar match={match} players={room.players} playerId={playerId} onArm={onArm} />}
-          {match.fact && (
-            <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
-              <p className="font-display text-lg tracking-wide text-brand">Você sabia?</p>
-              <p className="mt-1 leading-relaxed">{match.fact}</p>
-            </div>
-          )}
+          <TeamResults match={match} players={room.players} playerId={playerId} />
+          {match.fact && <FactCard fact={match.fact} />}
           <TeamBoard match={match} players={room.players} />
           <SkipButton
             ready={match.ready}

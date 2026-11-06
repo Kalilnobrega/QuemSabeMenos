@@ -9,7 +9,7 @@ import type { PowerUpUse, Stab, SurvivalView, Survivor } from '../types/events'
 import { AnsweredAvatar } from './Answered'
 import { DaggerStrike } from './DaggerStrike'
 import { ResurrectionScene } from './ResurrectionScene'
-import { PeekBadge } from './Game'
+import { FactCard, PeekBadge } from './Game'
 import { BannerList, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
@@ -188,6 +188,8 @@ function Statement({
   const reading = survival.phase === 'reading' || survival.phase === 'duel_reading'
   const open = survival.phase === 'answering' || survival.phase === 'duel_answering'
   const revealed = survival.phase === 'results' || survival.phase === 'duel_results'
+  // Na revelação, as vidas vão para o fim, no lugar do ranking do Clássico.
+  const inReveal = survival.phase === 'results'
   const remaining = useRemaining(snapshot.receivedAt, survival.phase_ends_in_ms, open)
   const [choice, setChoice] = useState<number | null>(survival.my_answer)
   const [error, setError] = useState<string | null>(null)
@@ -428,7 +430,7 @@ function Statement({
       {duel ? (
         <DuelCards snapshot={snapshot} playerId={playerId} />
       ) : (
-        <SurvivorStrip snapshot={snapshot} playerId={playerId} />
+        !inReveal && <SurvivorStrip snapshot={snapshot} playerId={playerId} />
       )}
 
       {blinded && <div className="flashbang-flash" aria-hidden="true" />}
@@ -503,8 +505,6 @@ function Statement({
         </div>
       </Magnifier>
       <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">{status}</p>
-      {survival.fact && <p className="rounded-xl bg-panel px-4 py-3 text-center text-chalk">{survival.fact}</p>}
-      <BannerList items={notes} label="Acontecimentos da rodada" />
       {survival.phase === 'results' && (
         <PowerUpBar
           powers={survival.powers}
@@ -524,6 +524,9 @@ function Statement({
           onDisarm={onDisarm}
         />
       )}
+      <BannerList items={notes} label="Acontecimentos da rodada" />
+      {survival.fact && <FactCard fact={survival.fact} />}
+      {inReveal && <SurvivorStrip snapshot={snapshot} playerId={playerId} />}
       {error && <p className="text-center text-danger">{error}</p>}
     </section>
   )
