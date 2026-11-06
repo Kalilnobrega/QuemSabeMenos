@@ -210,6 +210,2701 @@
       "answer": 44.7,
       "unit": "km/h",
       "fact": "Ele atingiu o pico entre os 60 e 80 metros da prova."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de futebol em campo, somando os dois lados?",
+      "answer": 22,
+      "unit": "jogadores",
+      "fact": "Cada time tem 11 titulares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem em quadra um jogo de basquete, somando os dois lados?",
+      "answer": 10,
+      "unit": "jogadores",
+      "fact": "Cada time tem 5 em quadra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores um time de vôlei tem em quadra?",
+      "answer": 6,
+      "unit": "jogadores",
+      "fact": "O líbero entra em lugar de outro jogador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de futsal, em quadra?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "Falcão é o maior nome do esporte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de handebol, em quadra?",
+      "answer": 7,
+      "unit": "jogadores",
+      "fact": "O goleiro é um deles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de beisebol, em campo?",
+      "answer": 9,
+      "unit": "jogadores",
+      "fact": "O arremessador é o mais famoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de futebol americano em campo?",
+      "answer": 11,
+      "unit": "jogadores",
+      "fact": "Há times diferentes para ataque e defesa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de rúgbi union, em campo?",
+      "answer": 15,
+      "unit": "jogadores",
+      "fact": "Os All Blacks fazem a dança Haka antes dos jogos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de polo aquático, em campo?",
+      "answer": 7,
+      "unit": "jogadores",
+      "fact": "O goleiro é o único a usar as duas mãos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem uma dupla de vôlei de praia?",
+      "answer": 2,
+      "unit": "jogadoras",
+      "fact": "Ela joga na areia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis olímpicos existem?",
+      "answer": 5,
+      "unit": "anéis",
+      "fact": "Pierre de Coubertin criou o símbolo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo o Brasil disputou até 2022?",
+      "answer": 22,
+      "unit": "Copas",
+      "fact": "É a única seleção presente em todas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De quantos em quantos anos acontece a Copa do Mundo?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "Na Segunda Guerra, ela foi suspensa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Pelé tinha ao morrer?",
+      "answer": 82,
+      "unit": "anos",
+      "fact": "Ele morreu em dezembro de 2022."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Ayrton Senna tinha ao morrer?",
+      "answer": 34,
+      "unit": "anos",
+      "fact": "Ele morreu em Ímola."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Maradona tinha ao morrer?",
+      "answer": 60,
+      "unit": "anos",
+      "fact": "Ele morreu em 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Garrincha tinha ao morrer?",
+      "answer": 49,
+      "unit": "anos",
+      "fact": "Ele sofria com o alcoolismo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Kobe Bryant tinha ao morrer?",
+      "answer": 41,
+      "unit": "anos",
+      "fact": "A filha dele também morreu no acidente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a camisa de Pelé na Seleção?",
+      "answer": 10,
+      "unit": "camisa",
+      "fact": "Em 1958, a camisa foi sorteada, e ele ficou com a 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a camisa de Michael Jordan nos Bulls?",
+      "answer": 23,
+      "unit": "camisa",
+      "fact": "Ela foi aposentada pelo clube."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a camisa de Cristiano Ronaldo em Portugal?",
+      "answer": 7,
+      "unit": "camisa",
+      "fact": "Ele adotou o apelido de CR7."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a camisa de Ronaldo Fenômeno na Copa de 2002?",
+      "answer": 9,
+      "unit": "camisa",
+      "fact": "Ele foi artilheiro daquela Copa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a camisa de Kobe Bryant, em sua segunda fase nos Lakers?",
+      "answer": 24,
+      "unit": "camisa",
+      "fact": "Antes, ele usou a 8."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas medalhas Rebeca Andrade tem em Olimpíadas?",
+      "answer": 6,
+      "unit": "medalhas",
+      "fact": "Ela é a maior medalhista olímpica do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de surfe tem Gabriel Medina?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Foram 2014, 2018 e 2021."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de surfe tem Kelly Slater?",
+      "answer": 11,
+      "unit": "títulos",
+      "fact": "Ele é o maior vencedor da história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos da NBA Michael Jordan ganhou?",
+      "answer": 6,
+      "unit": "títulos",
+      "fact": "Foram dois tricampeonatos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos da NBA LeBron James ganhou?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "Foi campeão por três times diferentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos da NBA Kobe Bryant ganhou?",
+      "answer": 5,
+      "unit": "títulos",
+      "fact": "Todos pelos Lakers."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos Super Bowls Tom Brady ganhou?",
+      "answer": 7,
+      "unit": "títulos",
+      "fact": "É mais que qualquer time da NFL."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de Fórmula 1 Michael Schumacher tem?",
+      "answer": 7,
+      "unit": "títulos",
+      "fact": "Foram dois com a Benetton e cinco com a Ferrari."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de Fórmula 1 Lewis Hamilton tem?",
+      "answer": 7,
+      "unit": "títulos",
+      "fact": "Ele empata com Schumacher."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Bolas de Ouro Messi ganhou?",
+      "answer": 8,
+      "unit": "prêmios",
+      "fact": "É o recordista."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Bolas de Ouro Cristiano Ronaldo ganhou?",
+      "answer": 5,
+      "unit": "prêmios",
+      "fact": "Ele é o segundo maior vencedor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos da Champions League o Real Madrid tem até 2024?",
+      "answer": 15,
+      "unit": "títulos",
+      "fact": "É o maior vencedor do torneio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Libertadores o Independiente ganhou?",
+      "answer": 7,
+      "unit": "títulos",
+      "fact": "É o maior campeão do torneio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas o Brasil ganhou fora da Europa?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "Só a de 1958 foi na Europa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Neymar foi para o Barcelona?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "Ele saiu do Santos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Neymar foi para o PSG?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Foi a maior transferência da história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Ronaldinho chegou ao Barcelona?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Ele ajudou o clube a voltar ao topo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa do Catar?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "Ela foi em novembro e dezembro, por causa do calor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da Alemanha?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "A anfitriã ficou em terceiro lugar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da África do Sul?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "Shakira cantou \"Waka Waka\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da França?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Ronaldo passou mal na final."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa dos EUA?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "O Brasil venceu a Itália nos pênaltis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da Itália?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "O Brasil caiu nas oitavas contra a Argentina."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa do México, com Maradona?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "Ele fez o gol de mão contra a Inglaterra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da Espanha?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "O Brasil de Zico e Sócrates caiu contra a Itália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a primeira Copa da Argentina?",
+      "answer": 1978,
+      "scale": 50,
+      "fact": "A ditadura argentina usou a competição."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da Inglaterra?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "A Jules Rimet foi roubada e achada por um cachorro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa da Suécia?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "Foi o primeiro título do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Michael Jordan se aposentou pela última vez?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Ele voltou duas vezes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi o último título de Ayrton Senna?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Ele foi tricampeão pela McLaren."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Felipe Massa quase ganhou o título?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "A diferença foi de um ponto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a primeira corrida de Fórmula 1?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Foi em Silverstone, na Inglaterra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi o primeiro GP do Brasil de Fórmula 1 valendo pontos?",
+      "answer": 1973,
+      "scale": 50,
+      "fact": "Emerson Fittipaldi venceu em Interlagos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a NBA?",
+      "answer": 1946,
+      "scale": 50,
+      "fact": "O nome original era BAA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o UFC?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Royce Gracie venceu o primeiro evento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Fórmula 1?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Giuseppe Farina foi o primeiro campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Libertadores?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "O Peñarol foi o primeiro campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Copa do Brasil?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "O Grêmio foi o primeiro campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Brasileirão, como Taça Brasil?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "O Bahia foi o primeiro campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Champions League, com esse nome?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Antes, ela se chamava Copa dos Campeões."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Copa América?",
+      "answer": 1916,
+      "scale": 50,
+      "fact": "É o torneio de seleções mais antigo do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Premier League?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Os clubes romperam com a antiga divisão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Campeonato Paulista?",
+      "answer": 1902,
+      "scale": 50,
+      "fact": "O primeiro artilheiro foi Charles Miller."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Super Bowl?",
+      "answer": 1967,
+      "scale": 50,
+      "fact": "O primeiro não encheu o estádio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foram criados os Jogos Paralímpicos?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "A primeira edição foi em Roma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foram criados os Jogos Olímpicos de Inverno?",
+      "answer": 1924,
+      "scale": 50,
+      "fact": "A primeira edição foi na França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foram os Jogos Pan-Americanos do Rio?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "O Brasil ficou em terceiro lugar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi disputada a primeira Corrida de São Silvestre?",
+      "answer": 1925,
+      "scale": 50,
+      "fact": "Ela sempre acontece no fim do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi disputada a primeira Tour de France?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "Foi organizada por um jornal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Charles Miller trouxe o futebol ao Brasil?",
+      "answer": 1894,
+      "scale": 50,
+      "fact": "Ele trouxe duas bolas e um livro de regras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem a prova mais curta do atletismo olímpico?",
+      "answer": 100,
+      "unit": "metros",
+      "fact": "Usain Bolt é o recordista."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma quadra de vôlei, em comprimento?",
+      "answer": 18,
+      "unit": "metros",
+      "fact": "A rede a divide ao meio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma quadra de basquete da NBA, em comprimento?",
+      "answer": 28.65,
+      "unit": "metros",
+      "fact": "A FIBA usa 28 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma quadra de tênis, em comprimento?",
+      "answer": 23.77,
+      "unit": "metros",
+      "fact": "As linhas são pintadas sobre grama, saibro ou piso duro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de largura tem o gol de futebol?",
+      "answer": 7.32,
+      "unit": "metros",
+      "fact": "A medida vem de jardas e pés."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de altura tem o gol de futebol?",
+      "answer": 2.44,
+      "unit": "metros",
+      "fact": "Ele tem 8 jardas por 8 pés."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem a marca do pênalti até o gol?",
+      "answer": 11,
+      "unit": "metros",
+      "fact": "O pênalti foi criado em 1891."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem a distância do arremesso livre do basquete até a tabela?",
+      "answer": 4.6,
+      "unit": "metros",
+      "fact": "Ele vale um ponto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem o tatame de judô, na área de luta?",
+      "answer": 8,
+      "unit": "metros",
+      "fact": "A área é quadrada, com lados de 8 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura da rede de tênis no centro, em cm?",
+      "answer": 91.4,
+      "unit": "cm",
+      "fact": "Ela é mais alta nas laterais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de uma bola de basquete, em gramas?",
+      "answer": 600,
+      "unit": "gramas",
+      "fact": "A bola feminina é menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de uma bola de tênis, em gramas?",
+      "answer": 58,
+      "unit": "gramas",
+      "fact": "Em Wimbledon, são usadas cerca de 55 mil bolas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de uma bola de vôlei, em gramas?",
+      "answer": 270,
+      "unit": "gramas",
+      "fact": "Ela chega a mais de 130 km/h no saque."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas bolas de tênis são usadas em Wimbledon, aproximadamente?",
+      "answer": 55000,
+      "unit": "bolas",
+      "fact": "Elas são trocadas de sete em sete games."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Messi ganhou sua primeira Copa do Mundo?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "A final contra a França foi nos pênaltis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a primeira Copa do Mundo feminina?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Os Estados Unidos ganharam a final na China."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi fundada a FIFA?",
+      "answer": 1904,
+      "scale": 50,
+      "fact": "Sete países europeus a criaram em Paris."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a CBF, com esse nome?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "Antes, ela se chamava CBD."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Pelé estreou pela Seleção?",
+      "answer": 1957,
+      "scale": 50,
+      "fact": "Ele tinha apenas 16 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Zico foi eleito o melhor da América?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Ele foi eleito três vezes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Ronaldo Fenômeno se aposentou?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Ele jogava no Corinthians."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Romário ganhou a Bola de Ouro da Copa?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Ele fez cinco gols no torneio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Kaká ganhou a Bola de Ouro?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "Ele jogava no Milan."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o gol de mão de Maradona?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "Ele o chamou de \"a mão de Deus\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Zidane deu uma cabeçada em Materazzi?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Foi a última partida da carreira dele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Cristiano Ronaldo foi para o Real Madrid?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "Foi a transferência mais cara daquela época."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Cristiano Ronaldo foi para o Al-Nassr?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele foi morar na Arábia Saudita."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Messi foi para o Inter Miami?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "A chegada dele fez a liga americana crescer muito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Neymar voltou ao Santos?",
+      "answer": 2025,
+      "scale": 50,
+      "fact": "Ele saiu da Arábia Saudita para isso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Rebeca Andrade ganhou o primeiro ouro olímpico?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Foi em Tóquio, no salto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Rayssa Leal ganhou a prata olímpica?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Ela tinha 13 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Ítalo Ferreira ganhou o ouro olímpico?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Ele começou a surfar em tampas de caixas de isopor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano César Cielo ganhou o ouro olímpico?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi nos 50 metros livre."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Maurren Maggi ganhou o ouro olímpico?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi no salto em distância."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Sarah Menezes ganhou o ouro olímpico?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "Foi a primeira mulher brasileira campeã no judô."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Thiago Braz ganhou o ouro olímpico?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Foi no salto com vara, no Rio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Rafaela Silva ganhou o ouro olímpico?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Ela nasceu na Cidade de Deus."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Vanderlei Cordeiro de Lima foi agarrado na Maratona?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Foi nas Olimpíadas de Atenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Joaquim Cruz ganhou o ouro olímpico?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "Foi nos 800 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Guga ganhou seu último Roland Garros?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Ele fez um coração no saibro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Guga foi número 1 do mundo?",
+      "answer": 2000,
+      "scale": 50,
+      "fact": "Ele fechou o ano no topo do ranking."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Popó foi campeão mundial?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Ele nasceu em Salvador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Anderson Silva venceu seu primeiro título no UFC?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Ele ficou invicto por vários anos no UFC."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Amanda Nunes venceu sua primeira luta contra Ronda Rousey?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Foi por nocaute em 48 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o surfe olímpico?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "A estreia foi em Tóquio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a primeira Fórmula E?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "Ela usa só carros elétricos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o PSG pagou ao Barcelona por Neymar, em milhões de euros?",
+      "answer": 222,
+      "unit": "milhões",
+      "fact": "É a maior transferência da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o PSG pagou ao Monaco por Mbappé, em milhões de euros?",
+      "answer": 180,
+      "unit": "milhões",
+      "fact": "É a segunda maior da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Barcelona pagou ao Liverpool por Coutinho, em milhões de euros?",
+      "answer": 135,
+      "unit": "milhões",
+      "fact": "Ele não rendeu o esperado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Real Madrid pagou ao Tottenham por Bale, em milhões de euros?",
+      "answer": 101,
+      "unit": "milhões",
+      "fact": "Foi a maior transferência daquela época."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Real Madrid pagou ao Manchester United por Cristiano Ronaldo, em milhões de euros?",
+      "answer": 94,
+      "unit": "milhões",
+      "fact": "Foi um recorde em 2009."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Real Madrid pagou ao Milan por Kaká, em milhões de euros?",
+      "answer": 67,
+      "unit": "milhões",
+      "fact": "Foi um recorde em 2009, por poucas semanas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Real Madrid pagou à Juventus por Zidane, em milhões de euros?",
+      "answer": 75,
+      "unit": "milhões",
+      "fact": "Foi um recorde em 2001."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Inter de Milão pagou ao Barcelona por Ronaldo, em milhões de dólares?",
+      "answer": 27,
+      "unit": "milhões",
+      "fact": "Foi um recorde em 1997."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Napoli pagou ao Barcelona por Maradona, em milhões de libras?",
+      "answer": 5,
+      "unit": "milhões",
+      "fact": "Foi um recorde em 1984."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto Cristiano Ronaldo ganha por ano no Al-Nassr, em milhões de dólares, aproximadamente?",
+      "answer": 200,
+      "unit": "milhões",
+      "fact": "É o maior salário do futebol."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto Messi recebeu no Inter Miami, em 2024, em milhões de dólares?",
+      "answer": 20,
+      "unit": "milhões",
+      "fact": "Ele também recebe com outros acordos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Por quanto Jordan vendeu os Charlotte Hornets, em bilhões de dólares?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "Ele tinha comprado o clube por cerca de 175 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor do Dallas Cowboys, em bilhões de dólares, em 2024?",
+      "answer": 10.1,
+      "unit": "bilhões",
+      "fact": "É o clube mais valioso do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Por quanto foi vendido um tênis de Michael Jordan em leilão, em 2023, em milhões de dólares?",
+      "answer": 2.2,
+      "unit": "milhões",
+      "fact": "Foi usado no jogo do último título dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Por quanto foi vendida a camisa de Maradona, do jogo da \"Mão de Deus\", em milhões de dólares?",
+      "answer": 9.3,
+      "unit": "milhões",
+      "fact": "Ela foi vendida em 2022."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custou um anúncio de 30 segundos no Super Bowl de 2024, em milhões de dólares?",
+      "answer": 7,
+      "unit": "milhões",
+      "fact": "O Super Bowl é o evento mais visto da TV dos EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos espectadores tem o Super Bowl na TV dos EUA, em milhões, em 2024?",
+      "answer": 123,
+      "unit": "milhões",
+      "fact": "Foi o maior público da história americana até então."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas viram a final da Copa de 2014 na TV, em bilhões, aproximadamente?",
+      "answer": 1,
+      "unit": "bilhão",
+      "fact": "A Alemanha ganhou da Argentina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas viram os Jogos de Tóquio no mundo, em bilhões, aproximadamente?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "Não havia público nos estádios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas estavam no Maracanã em 1950, oficialmente?",
+      "answer": 173850,
+      "unit": "pessoas",
+      "fact": "Ele foi o maior público de futebol da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade do Rungrado 1º de Maio, na Coreia do Norte, em lugares?",
+      "answer": 114000,
+      "unit": "lugares",
+      "fact": "É o maior estádio do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade do Camp Nou, após a reforma, em lugares?",
+      "answer": 105000,
+      "unit": "lugares",
+      "fact": "Ela foi aumentada com as obras iniciadas em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade do Estádio Azteca, em lugares, aproximadamente?",
+      "answer": 87000,
+      "unit": "lugares",
+      "fact": "Ele recebeu as finais de 1970 e 1986."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade de Wembley, em lugares?",
+      "answer": 90000,
+      "unit": "lugares",
+      "fact": "Ele é o maior do Reino Unido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade do Santiago Bernabéu, em lugares?",
+      "answer": 85000,
+      "unit": "lugares",
+      "fact": "A reforma colocou um teto retrátil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade do Mineirão, em lugares?",
+      "answer": 61846,
+      "unit": "lugares",
+      "fact": "Ele recebeu o 7 a 1."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade do Allianz Parque, em lugares?",
+      "answer": 43713,
+      "unit": "lugares",
+      "fact": "Ele é a casa do Palmeiras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a capacidade da Neo Química Arena, em lugares?",
+      "answer": 49205,
+      "unit": "lugares",
+      "fact": "Foi a casa da estreia da Copa de 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Cristiano Ronaldo marcou na carreira, até 2024?",
+      "answer": 900,
+      "unit": "gols",
+      "fact": "Ele chegou a essa marca em setembro de 2024."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Messi marcou pelo Barcelona?",
+      "answer": 672,
+      "unit": "gols",
+      "fact": "É o maior goleador de um só clube."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Messi marcou em 2012?",
+      "answer": 91,
+      "unit": "gols",
+      "fact": "Foi o maior número em um ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Romário disse ter marcado na carreira?",
+      "answer": 1000,
+      "unit": "gols",
+      "fact": "A conta inclui jogos de juniores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Neymar marcou pela seleção, até 2023?",
+      "answer": 79,
+      "unit": "gols",
+      "fact": "Ele passou Pelé naquele ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Pelé marcou pela seleção?",
+      "answer": 77,
+      "unit": "gols",
+      "fact": "A FIFA reconhece esse número."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Ronaldo fez em Copas do Mundo?",
+      "answer": 15,
+      "unit": "gols",
+      "fact": "Foi recorde até 2014."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Pelé fez em Copas do Mundo?",
+      "answer": 12,
+      "unit": "gols",
+      "fact": "Ele disputou quatro Copas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Messi fez em Copas do Mundo?",
+      "answer": 13,
+      "unit": "gols",
+      "fact": "Ele foi o melhor jogador em duas Copas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols a Hungria marcou na Copa de 1954?",
+      "answer": 27,
+      "unit": "gols",
+      "fact": "É o recorde até hoje, mas o time perdeu a final."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols a seleção da Austrália fez contra a Samoa Americana, em 2001?",
+      "answer": 31,
+      "unit": "gols",
+      "fact": "O atacante Archie Thompson fez 13 deles."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o saldo de gols do Brasil contra a Alemanha em 2014?",
+      "answer": -6,
+      "unit": "gols",
+      "fact": "Foi a pior derrota do Brasil em Copas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a temperatura durante o jogo de NFL \"Freezer Bowl\", em °C?",
+      "answer": -23,
+      "unit": "°C",
+      "fact": "Com o vento, a sensação chegou a -59 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a temperatura durante a final do Ice Bowl, de 1967, em °C?",
+      "answer": -26,
+      "unit": "°C",
+      "fact": "O apito do juiz grudou nos lábios dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura ideal de um rinque de hóquei, em °C?",
+      "answer": -5,
+      "unit": "°C",
+      "fact": "Assim, o gelo fica rápido e não quebra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde mundial de velocidade de um corredor de esqui, em km/h?",
+      "answer": 255,
+      "unit": "km/h",
+      "fact": "A prova é chamada de esqui de velocidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade máxima na Fórmula 1, em km/h, em corrida?",
+      "answer": 372,
+      "unit": "km/h",
+      "fact": "Foi Valtteri Bottas no México, em 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade máxima de um arremesso no beisebol, em km/h?",
+      "answer": 170,
+      "unit": "km/h",
+      "fact": "Aroldis Chapman tem o recorde."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade máxima de um chute de futebol, em km/h, aproximadamente?",
+      "answer": 210,
+      "unit": "km/h",
+      "fact": "Roberto Carlos e Ronny estão entre os mais fortes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade do chute mais famoso de Roberto Carlos, em km/h, aproximadamente?",
+      "answer": 137,
+      "unit": "km/h",
+      "fact": "O gol foi contra a França, em 1997."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade máxima de um saque no badminton, em km/h?",
+      "answer": 493,
+      "unit": "km/h",
+      "fact": "A peteca é mais rápida que qualquer outra bola."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade máxima de uma bola de golfe, em km/h?",
+      "answer": 349,
+      "unit": "km/h",
+      "fact": "Ela foi medida em 2013."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade média de um ciclista em Tour de France, em km/h?",
+      "answer": 40,
+      "unit": "km/h",
+      "fact": "A prova tem mais de 3 mil km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde de velocidade de um maratonista, em km/h?",
+      "answer": 21,
+      "unit": "km/h",
+      "fact": "Kelvin Kiptum fez a marca em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial da maratona masculina, em horas, em 2023, em minutos?",
+      "answer": 120.58,
+      "unit": "minutos",
+      "fact": "Kelvin Kiptum morreu em 2024, em um acidente de carro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial da maratona feminina, em minutos, em 2024?",
+      "answer": 129.93,
+      "unit": "minutos",
+      "fact": "Ruth Chepngetich fez em Chicago e depois foi punida por doping."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial dos 200 metros, em segundos?",
+      "answer": 19.19,
+      "unit": "segundos",
+      "fact": "Usain Bolt fez em 2009."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial feminino dos 100 metros, em segundos?",
+      "answer": 10.49,
+      "unit": "segundos",
+      "fact": "Florence Griffith-Joyner fez em 1988."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial dos 400 metros, em segundos?",
+      "answer": 43.03,
+      "unit": "segundos",
+      "fact": "Wayde van Niekerk fez no Rio, em 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial dos 50 metros livre na natação, em segundos?",
+      "answer": 20.91,
+      "unit": "segundos",
+      "fact": "César Cielo tem a marca desde 2009."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial do salto com vara masculino, em metros, em 2024?",
+      "answer": 6.25,
+      "unit": "metros",
+      "fact": "Armand Duplantis bate o recorde a cada poucos meses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial do salto em distância masculino, em metros?",
+      "answer": 8.95,
+      "unit": "metros",
+      "fact": "Mike Powell tem a marca desde 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial do lançamento de dardo masculino, em metros?",
+      "answer": 98.48,
+      "unit": "metros",
+      "fact": "Jan Železný tem a marca desde 1996."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o recorde mundial do arremesso de peso masculino, em metros?",
+      "answer": 23.56,
+      "unit": "metros",
+      "fact": "Ryan Crouser tem a marca desde 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos Oscar Schmidt fez em Olimpíadas?",
+      "answer": 1093,
+      "unit": "pontos",
+      "fact": "Ele é o maior pontuador da história olímpica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos LeBron James já fez, até 2025?",
+      "answer": 42000,
+      "unit": "pontos",
+      "fact": "Ele é o maior pontuador da história da NBA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos Kareem Abdul-Jabbar fez na NBA?",
+      "answer": 38387,
+      "unit": "pontos",
+      "fact": "O recorde dele durou 39 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos Wilt Chamberlain fez em um único jogo?",
+      "answer": 100,
+      "unit": "pontos",
+      "fact": "Foi em 1962, contra o New York Knicks."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos Kobe Bryant fez em um único jogo?",
+      "answer": 81,
+      "unit": "pontos",
+      "fact": "Foi em 2006, contra o Toronto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pontos Kobe Bryant fez em seu último jogo?",
+      "answer": 60,
+      "unit": "pontos",
+      "fact": "Foi em abril de 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos arremessos de três Stephen Curry acertou na carreira, até 2024?",
+      "answer": 3700,
+      "unit": "arremessos",
+      "fact": "Ele é o maior da história nesse fundamento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas temporadas LeBron James tem na NBA, até 2025?",
+      "answer": 22,
+      "unit": "temporadas",
+      "fact": "Ele joga com seu filho, Bronny."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Ouros Olímpicos Usain Bolt ganhou?",
+      "answer": 8,
+      "unit": "ouros",
+      "fact": "Um foi retirado por causa de doping de um companheiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas medalhas Michael Phelps ganhou?",
+      "answer": 28,
+      "unit": "medalhas",
+      "fact": "É o recordista de todos os tempos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas medalhas de ouro Mark Spitz ganhou em uma única Olimpíada?",
+      "answer": 7,
+      "unit": "ouros",
+      "fact": "Foi em Munique, em 1972."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas medalhas olímpicas o Brasil ganhou nas Olimpíadas do Rio?",
+      "answer": 19,
+      "unit": "medalhas",
+      "fact": "Sete foram de ouro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas medalhas de ouro o Brasil ganhou em Tóquio?",
+      "answer": 7,
+      "unit": "ouros",
+      "fact": "Foi o recorde do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem um Ironman, somando as três provas?",
+      "answer": 226,
+      "unit": "km",
+      "fact": "São 3,8 km de natação, 180 km de bicicleta e uma maratona."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km de bicicleta tem um Ironman?",
+      "answer": 180,
+      "unit": "km",
+      "fact": "O evento nasceu no Havaí, em 1978."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km de natação tem um Ironman?",
+      "answer": 3.8,
+      "unit": "km",
+      "fact": "É feita em mar aberto ou em lago."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem o triatlo olímpico, somando as três provas?",
+      "answer": 51.5,
+      "unit": "km",
+      "fact": "Tem 1,5 km de natação, 40 de bicicleta e 10 de corrida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem a Corrida de São Silvestre?",
+      "answer": 15,
+      "unit": "km",
+      "fact": "Ela sempre termina na Avenida Paulista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem uma volta em Interlagos?",
+      "answer": 4.3,
+      "unit": "km",
+      "fact": "A corrida tem 71 voltas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem uma volta em Mônaco?",
+      "answer": 3.3,
+      "unit": "km",
+      "fact": "É a pista mais lenta do calendário."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem uma volta em Spa-Francorchamps?",
+      "answer": 7,
+      "unit": "km",
+      "fact": "É a pista mais longa do calendário."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas voltas tem o GP do Brasil, em Interlagos?",
+      "answer": 71,
+      "unit": "voltas",
+      "fact": "Ele é um dos mais lembrados da temporada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas voltas tem o GP de Mônaco?",
+      "answer": 78,
+      "unit": "voltas",
+      "fact": "É o que tem mais voltas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km tem uma corrida de Fórmula 1, aproximadamente?",
+      "answer": 305,
+      "unit": "km",
+      "fact": "Mônaco é a única exceção, com 260 km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pneus são trocados em um pit stop?",
+      "answer": 4,
+      "unit": "pneus",
+      "fact": "O recorde é de cerca de 1,8 segundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde de tempo de um pit stop na Fórmula 1, em segundos?",
+      "answer": 1.8,
+      "unit": "segundo",
+      "fact": "A McLaren fez a marca em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas trabalham em um pit stop de Fórmula 1?",
+      "answer": 20,
+      "unit": "pessoas",
+      "fact": "Cada uma tem uma função específica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cavalos de potência tem um carro de Fórmula 1, aproximadamente?",
+      "answer": 1000,
+      "unit": "cavalos",
+      "fact": "Ele tem motor híbrido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto pesa um carro de Fórmula 1, no mínimo, em kg?",
+      "answer": 798,
+      "unit": "kg",
+      "fact": "O peso inclui o piloto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos kg um piloto de Fórmula 1 perde em uma corrida, aproximadamente?",
+      "answer": 3,
+      "unit": "kg",
+      "fact": "A temperatura dentro do carro pode chegar a 60 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas forças G um piloto de F1 sente em uma curva, no máximo, aproximadamente?",
+      "answer": 6,
+      "unit": "G",
+      "fact": "O pescoço dos pilotos é muito forte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Lewis Hamilton tem na F1, até 2024?",
+      "answer": 105,
+      "unit": "vitórias",
+      "fact": "É o recorde absoluto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Michael Schumacher tem na F1?",
+      "answer": 91,
+      "unit": "vitórias",
+      "fact": "Ele sofreu um acidente de esqui em 2013."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Ayrton Senna tem na F1?",
+      "answer": 41,
+      "unit": "vitórias",
+      "fact": "Ele correu 161 GPs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Nelson Piquet tem na F1?",
+      "answer": 23,
+      "unit": "vitórias",
+      "fact": "Ele foi três vezes campeão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Rubens Barrichello tem na F1?",
+      "answer": 11,
+      "unit": "vitórias",
+      "fact": "Ele correu em 322 GPs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Felipe Massa tem na F1?",
+      "answer": 11,
+      "unit": "vitórias",
+      "fact": "Ele sofreu um grave acidente em 2009."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vitórias Emerson Fittipaldi tem na F1?",
+      "answer": 14,
+      "unit": "vitórias",
+      "fact": "Ele foi campeão duas vezes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes Hélio Castroneves ganhou as 500 Milhas de Indianápolis?",
+      "answer": 4,
+      "unit": "vezes",
+      "fact": "O brasileiro ganhou também em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas temporadas Max Verstappen foi campeão seguidas, até 2024?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "Ele foi campeão de 2021 a 2024."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais de xadrez Magnus Carlsen ganhou?",
+      "answer": 5,
+      "unit": "títulos",
+      "fact": "Ele desistiu de defender o título em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde de pontuação no ranking de xadrez, de Magnus Carlsen?",
+      "answer": 2882,
+      "unit": "pontos",
+      "fact": "Ninguém nunca chegou tão alto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Kasparov perdeu para o computador Deep Blue?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Foi a primeira vez que um campeão mundial perdeu um torneio para um computador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Bobby Fischer venceu Spassky, na Guerra Fria?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "A partida aconteceu na Islândia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas casas tem o tabuleiro de go, em cruzamentos?",
+      "answer": 361,
+      "unit": "pontos",
+      "fact": "O AlphaGo derrotou Lee Sedol em 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Babe Ruth foi vendido aos Yankees?",
+      "answer": 1920,
+      "scale": 50,
+      "fact": "A \"Maldição do Bambino\" durou 86 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos durou a \"Maldição do Bambino\", no Boston Red Sox?",
+      "answer": 86,
+      "unit": "anos",
+      "fact": "Eles foram campeões em 2004."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos os Chicago Cubs ficaram sem título, até 2016?",
+      "answer": 108,
+      "unit": "anos",
+      "fact": "Foi a maior seca do esporte americano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas World Series os New York Yankees ganharam?",
+      "answer": 27,
+      "unit": "títulos",
+      "fact": "É o time mais vitorioso do beisebol."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos home runs Babe Ruth fez na carreira?",
+      "answer": 714,
+      "unit": "home runs",
+      "fact": "Ele também era um bom arremessador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos home runs Barry Bonds fez na carreira?",
+      "answer": 762,
+      "unit": "home runs",
+      "fact": "Ele é o recordista, mesmo com a suspeita de doping."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Stanley Cups o Montreal Canadiens ganhou?",
+      "answer": 24,
+      "unit": "títulos",
+      "fact": "É o maior campeão da NHL."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Wayne Gretzky fez na NHL?",
+      "answer": 894,
+      "unit": "gols",
+      "fact": "Ele foi chamado de \"The Great One\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Alexander Ovechkin fez na NHL, até 2025, ao passar Gretzky?",
+      "answer": 895,
+      "unit": "gols",
+      "fact": "Ele quebrou o recorde em abril de 2025."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a primeira Olimpíada da era moderna fora da Grécia?",
+      "answer": 1900,
+      "scale": 50,
+      "fact": "Foi em Paris, e durou mais de cinco meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Berlim?",
+      "answer": 1936,
+      "scale": 50,
+      "fact": "O regime nazista quis usar os jogos como propaganda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Munique?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "Atletas israelenses foram sequestrados e mortos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Moscou?",
+      "answer": 1980,
+      "scale": 50,
+      "fact": "Os EUA e dezenas de outros países boicotaram os jogos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Los Angeles, com o boicote soviético?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "A edição deu lucro e mudou o modelo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Seul?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Ben Johnson perdeu o ouro por doping."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Barcelona?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Um arqueiro acendeu a pira com uma flecha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Atlanta?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Uma bomba explodiu no Parque Centenário."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Pequim?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "A abertura teve 15 mil artistas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a primeira edição de Londres?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Foi ali que a maratona passou a ter 42,195 km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Brasil participou pela primeira vez de Olimpíadas?",
+      "answer": 1920,
+      "scale": 50,
+      "fact": "Foi em Antuérpia, com cinco medalhas em tiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Roma, em que Abebe Bikila correu descalço?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "Ele foi o primeiro africano negro a ganhar um ouro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Tóquio, a primeira no Japão?",
+      "answer": 1964,
+      "scale": 50,
+      "fact": "Foi um marco de reconstrução do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada do México, com Dick Fosbury?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "Ele inventou o salto de costas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a Olimpíada de Montreal, com a nota 10 de Nadia?",
+      "answer": 1976,
+      "scale": 50,
+      "fact": "A cidade levou 30 anos para pagar a dívida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Bob Beamon saltou 8,90 metros na distância?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "A altitude da Cidade do México ajudou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Roger Bannister correu a milha em menos de 4 minutos?",
+      "answer": 1954,
+      "scale": 50,
+      "fact": "Muita gente achava que seria impossível."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Eliud Kipchoge correu a maratona em menos de 2 horas?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "Foi em Viena, mas o tempo não vale como recorde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o tempo de Eliud Kipchoge na maratona de Viena, em minutos?",
+      "answer": 119.67,
+      "unit": "minutos",
+      "fact": "A marca é de 1:59:40."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o tempo de Roger Bannister na milha, em segundos?",
+      "answer": 239.4,
+      "unit": "segundos",
+      "fact": "Em 1954, ele treinava nos intervalos do curso de medicina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde mundial da milha, em segundos?",
+      "answer": 223.13,
+      "unit": "segundos",
+      "fact": "Hicham El Guerrouj tem a marca desde 1999."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do troféu Jules Rimet, em kg?",
+      "answer": 3.8,
+      "unit": "kg",
+      "fact": "Ele foi roubado em 1983 e derretido no Rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso da taça Stanley Cup, em kg?",
+      "answer": 15.5,
+      "unit": "kg",
+      "fact": "Os campeões têm os nomes gravados nela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Taça Jules Rimet foi roubada no Brasil?",
+      "answer": 1983,
+      "scale": 50,
+      "fact": "Ela foi derretida e nunca mais apareceu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Taça Jules Rimet foi roubada na Inglaterra?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "O cachorro Pickles a encontrou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos centímetros tem a Taça da Copa do Mundo atual?",
+      "answer": 36.8,
+      "unit": "cm",
+      "fact": "Ela é feita de ouro de 18 quilates."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg tem uma bola de boliche, no máximo?",
+      "answer": 7.26,
+      "unit": "kg",
+      "fact": "Ela pode ter até 16 libras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg tem o dardo masculino, em gramas?",
+      "answer": 800,
+      "unit": "gramas",
+      "fact": "O centro de gravidade foi mudado em 1986, por segurança."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg levantou Lasha Talakhadze, recordista do arremesso olímpico?",
+      "answer": 267,
+      "unit": "kg",
+      "fact": "Ele é da Geórgia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg pesa um lutador de sumô no topo, em média?",
+      "answer": 150,
+      "unit": "kg",
+      "fact": "A dieta deles tem até 20 mil calorias por dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km por dia percorre um ciclista do Tour de France, em média?",
+      "answer": 160,
+      "unit": "km",
+      "fact": "A prova dura três semanas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas calorias um ciclista consome por dia no Tour de France, aproximadamente?",
+      "answer": 6000,
+      "unit": "kcal",
+      "fact": "É cerca de três vezes o normal de uma pessoa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km por partida corre um jogador de futebol, em média?",
+      "answer": 11,
+      "unit": "km",
+      "fact": "Os meias correm mais que os outros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a onda mais alta surfada por uma mulher, em Nazaré?",
+      "answer": 22.4,
+      "unit": "metros",
+      "fact": "Maya Gabeira, brasileira, tem o recorde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros de profundidade tem o recorde de mergulho em apneia?",
+      "answer": 214,
+      "unit": "metros",
+      "fact": "Herbert Nitsch fez a marca em 2007."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos minutos dura o recorde de prender a respiração sem oxigênio prévio, em minutos?",
+      "answer": 11.6,
+      "unit": "minutos",
+      "fact": "O francês Stéphane Mifsud fez em 2009."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a queda do salto de Felix Baumgartner?",
+      "answer": 38969,
+      "unit": "metros",
+      "fact": "Ele quebrou a barreira do som."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de altura em um salto de esqui, em metros?",
+      "answer": 291,
+      "unit": "metros",
+      "fact": "Ryoyu Kobayashi fez a marca em 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas chegaram ao topo do Everest, aproximadamente?",
+      "answer": 12000,
+      "unit": "pessoas",
+      "fact": "Há fila no topo em dias de bom tempo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram no Everest, aproximadamente?",
+      "answer": 340,
+      "unit": "pessoas",
+      "fact": "Muitos corpos continuam lá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Hillary e Tenzing subiram ao Everest pela primeira vez?",
+      "answer": 1953,
+      "scale": 50,
+      "fact": "A rainha Elizabeth II soube da notícia no dia da coroação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Reinhold Messner subiu ao Everest sem oxigênio, junto com Peter Habeler?",
+      "answer": 1978,
+      "scale": 50,
+      "fact": "Foi uma das escaladas mais marcantes da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o brasileiro Waldemar Niclevicz subiu ao Everest?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Ele foi o primeiro do Brasil a chegar lá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes Kami Rita Sherpa subiu ao Everest, até 2025?",
+      "answer": 31,
+      "unit": "vezes",
+      "fact": "Ele é o recordista."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade do mais velho a subir o Everest?",
+      "answer": 80,
+      "unit": "anos",
+      "fact": "O japonês Yuichiro Miura fez isso em 2013."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade da mais jovem pessoa a subir o Everest?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "A indiana Malavath Poorna fez isso em 2014."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade da mais jovem medalhista olímpica individual da história recente, Sky Brown, em 2021?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "Ela ganhou o bronze no skate."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade de Oscar Swahn, o medalhista mais velho, em 1920?",
+      "answer": 72,
+      "unit": "anos",
+      "fact": "Ele ganhou a prata no tiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Marta tinha ao disputar sua última Copa, em 2023?",
+      "answer": 37,
+      "unit": "anos",
+      "fact": "Ela chorou ao se despedir do torneio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Formiga tinha ao se aposentar da seleção?",
+      "answer": 43,
+      "unit": "anos",
+      "fact": "Ela foi a uma última Olimpíada em Tóquio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Roger Milla tinha ao marcar gol na Copa de 1994?",
+      "answer": 42,
+      "unit": "anos",
+      "fact": "Ele é o mais velho a marcar em uma Copa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Dino Zoff tinha ao ser campeão da Copa de 1982?",
+      "answer": 40,
+      "unit": "anos",
+      "fact": "Ele era o goleiro e capitão da Itália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Essam El-Hadary tinha ao jogar a Copa de 2018?",
+      "answer": 45,
+      "unit": "anos",
+      "fact": "Ele é o mais velho a jogar uma Copa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em quantos países o futebol é jogado sob a FIFA?",
+      "answer": 211,
+      "unit": "países",
+      "fact": "Ela tem mais membros do que a ONU."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos torcedores tem o Flamengo, aproximadamente, em milhões?",
+      "answer": 45,
+      "unit": "milhões",
+      "fact": "É a maior torcida do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos torcedores tem o Corinthians, aproximadamente, em milhões?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "É a segunda maior torcida do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a arrecadação da FIFA no ciclo da Copa de 2022, em bilhões de dólares?",
+      "answer": 7.5,
+      "unit": "bilhões",
+      "fact": "A organização é muito criticada por escândalos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o prêmio da Argentina na Copa de 2022, em milhões de dólares?",
+      "answer": 42,
+      "unit": "milhões",
+      "fact": "O total foi de 440 milhões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o Catar gastou com a Copa de 2022, em bilhões de dólares, aproximadamente?",
+      "answer": 220,
+      "unit": "bilhões",
+      "fact": "Foi de longe a Copa mais cara da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o Brasil gastou na Copa de 2014, em bilhões de reais, aproximadamente?",
+      "answer": 25,
+      "unit": "bilhões",
+      "fact": "Os gastos causaram muitos protestos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custou a reforma do Maracanã para a Copa de 2014, em bilhões de reais?",
+      "answer": 1.2,
+      "unit": "bilhão",
+      "fact": "Hoje, o estádio é administrado por Flamengo e Fluminense."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custou o estádio Mané Garrincha, em bilhões de reais?",
+      "answer": 1.4,
+      "unit": "bilhão",
+      "fact": "Foi o estádio mais caro da Copa de 2014."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos a Seleção Brasileira ficou invicta em seu recorde?",
+      "answer": 35,
+      "unit": "jogos",
+      "fact": "Foi entre 1993 e 1996."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias dura o Tour de France, aproximadamente?",
+      "answer": 23,
+      "unit": "dias",
+      "fact": "São 21 etapas e dois dias de descanso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas edições do Tour de France Tadej Pogačar ganhou até 2025?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "O esloveno é o principal nome do ciclismo atual."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas edições do Tour de France Jacques Anquetil ganhou?",
+      "answer": 5,
+      "unit": "títulos",
+      "fact": "Ele foi o primeiro a chegar a essa marca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas etapas tem o Tour de France?",
+      "answer": 21,
+      "unit": "etapas",
+      "fact": "Termina tradicionalmente em Paris."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Bernardinho treinou a Seleção Brasileira masculina de vôlei?",
+      "answer": 16,
+      "unit": "anos",
+      "fact": "Foram dois ouros olímpicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos mundiais o vôlei masculino do Brasil tem?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Foram 2002, 2006 e 2010."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos ouros olímpicos o vôlei masculino do Brasil tem?",
+      "answer": 3,
+      "unit": "ouros",
+      "fact": "Foram 1992, 2004 e 2016."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos ouros olímpicos o vôlei feminino do Brasil tem?",
+      "answer": 2,
+      "unit": "ouros",
+      "fact": "Foram 2008 e 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o vôlei feminino brasileiro ganhou seu primeiro ouro olímpico?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi em Pequim, com Zé Roberto de técnico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o basquete brasileiro ganhou o Pan contra os EUA, em Indianápolis?",
+      "answer": 1987,
+      "scale": 50,
+      "fact": "Oscar fez 46 pontos na final."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos pontos Oscar fez na final do Pan de 1987?",
+      "answer": 46,
+      "unit": "pontos",
+      "fact": "Foi a primeira derrota dos EUA em casa nesse torneio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Hortência e Paula ganharam o Mundial de basquete?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Foi na Austrália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o futsal brasileiro ganhou seu último Mundial?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "O Brasil tem cinco títulos da FIFA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos mundiais de futsal da FIFA o Brasil tem?",
+      "answer": 5,
+      "unit": "títulos",
+      "fact": "Foram 1989, 1992, 1996, 2008 e 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gols Falcão, do futsal, fez na carreira, aproximadamente?",
+      "answer": 1000,
+      "unit": "gols",
+      "fact": "Ele foi quatro vezes o melhor do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes Falcão foi eleito o melhor do mundo no futsal?",
+      "answer": 4,
+      "unit": "vezes",
+      "fact": "Ele se aposentou em 2018."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Copas América o Brasil venceu?",
+      "answer": 9,
+      "unit": "títulos",
+      "fact": "A Argentina e o Uruguai têm mais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Copas América a Argentina venceu até 2024?",
+      "answer": 16,
+      "unit": "títulos",
+      "fact": "É a maior vencedora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Copas América o Uruguai venceu?",
+      "answer": 15,
+      "unit": "títulos",
+      "fact": "O país tem pouco mais de 3 milhões de habitantes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Copas das Confederações o Brasil venceu?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "Foram 1997, 2005, 2009 e 2013."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas medalhas de ouro em futebol masculino o Brasil tem?",
+      "answer": 2,
+      "unit": "ouros",
+      "fact": "Foram no Rio e em Tóquio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gols de falta Juninho Pernambucano fez na carreira, aproximadamente?",
+      "answer": 77,
+      "unit": "gols",
+      "fact": "Ele é um dos maiores cobradores de todos os tempos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gols Rogério Ceni fez como goleiro?",
+      "answer": 131,
+      "unit": "gols",
+      "fact": "É o maior artilheiro entre os goleiros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos Rogério Ceni fez pelo São Paulo?",
+      "answer": 1237,
+      "unit": "jogos",
+      "fact": "É um recorde em um único clube."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos Pelé fez pela Seleção?",
+      "answer": 92,
+      "unit": "jogos",
+      "fact": "Ele ganhou três Copas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos Cafu fez pela Seleção?",
+      "answer": 142,
+      "unit": "jogos",
+      "fact": "É o recordista entre os homens."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Sir Alex Ferguson treinou o Manchester United?",
+      "answer": 26,
+      "unit": "anos",
+      "fact": "Ele ganhou 13 títulos ingleses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos ingleses Sir Alex Ferguson ganhou?",
+      "answer": 13,
+      "unit": "títulos",
+      "fact": "Ele se aposentou em 2013."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos sem derrota o Arsenal teve em 2003 e 2004?",
+      "answer": 49,
+      "unit": "jogos",
+      "fact": "O time ficou conhecido como \"Os Invencíveis\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos o Nottingham Forest ficou sem perder, antes de Arsenal?",
+      "answer": 42,
+      "unit": "jogos",
+      "fact": "O técnico era Brian Clough."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Leicester City foi campeão inglês?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "O time era tido como quase rebaixado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares valiam as apostas contra o título do Leicester em 2016, por 1 dólar apostado?",
+      "answer": 5000,
+      "unit": "dólares",
+      "fact": "A chance era parecida com a de achar o Elvis vivo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Liverpool virou sobre o Milan em Istambul?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "Estava 3 a 0 para o Milan no intervalo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Manchester United virou no fim contra o Bayern, em Barcelona?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Dois gols nos acréscimos deram o título."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Barcelona fez a \"Remontada\" contra o PSG?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O jogo acabou em 6 a 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Grécia ganhou a Eurocopa?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Foi uma das maiores zebras do futebol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Dinamarca ganhou a Eurocopa, sem ter se classificado?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Eles entraram no lugar da Iugoslávia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Eurocopa teve sede em 11 países diferentes?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Ela foi adiada de 2020 pela pandemia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Estádio de Wembley novo?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "A obra custou cerca de 1 bilhão de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Morumbi, com a primeira fase?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "A obra ficou pronta só em 1970."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Vila Belmiro?",
+      "answer": 1916,
+      "scale": 50,
+      "fact": "Pelé fez muitos gols nesse estádio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado São Januário?",
+      "answer": 1927,
+      "scale": 50,
+      "fact": "Na época, foi o maior estádio da América do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Beira-Rio?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "Os próprios torcedores ajudaram a construir."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o La Bombonera?",
+      "answer": 1940,
+      "scale": 50,
+      "fact": "O formato é o de uma caixa de bombons."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Centenário de Montevidéu?",
+      "answer": 1930,
+      "scale": 50,
+      "fact": "Ele foi construído para a primeira Copa do Mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Azteca?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "Pelé e Maradona levantaram a taça nele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Sport Club Corinthians em Londres, que inspirou o nome paulista?",
+      "answer": 1882,
+      "scale": 50,
+      "fact": "Um time inglês visitou o Brasil em 1910."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos brasileiros o Santos tem?",
+      "answer": 8,
+      "unit": "títulos",
+      "fact": "Boa parte foi nos anos 1960."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos brasileiros o Corinthians tem?",
+      "answer": 7,
+      "unit": "títulos",
+      "fact": "O último foi em 2017."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos brasileiros o São Paulo tem?",
+      "answer": 6,
+      "unit": "títulos",
+      "fact": "Foram três seguidos, de 2006 a 2008."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos brasileiros o Vasco tem?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "O último foi em 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos brasileiros o Internacional tem?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Um deles foi invicto, em 1979."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o handebol feminino do Brasil foi campeão mundial?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "A final foi contra a Sérvia, em Belgrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas semanas Serena Williams ficou como número 1 da WTA?",
+      "answer": 319,
+      "unit": "semanas",
+      "fact": "Ela é uma das maiores atletas de todos os tempos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas semanas Novak Djokovic ficou como número 1 da ATP, até 2024?",
+      "answer": 428,
+      "unit": "semanas",
+      "fact": "É o recorde absoluto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos tem uma partida regular de futebol?",
+      "answer": 90,
+      "unit": "minutos",
+      "fact": "São dois tempos de 45 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos vale uma cesta de fora da linha no basquete?",
+      "answer": 3,
+      "unit": "pontos",
+      "fact": "A linha foi criada nos anos 1970."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos sets ganha um time de vôlei para vencer a partida?",
+      "answer": 3,
+      "unit": "sets",
+      "fact": "O jogo vai até o melhor de cinco sets."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos tem um set normal de vôlei?",
+      "answer": 25,
+      "unit": "pontos",
+      "fact": "O desempate vai até 15."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis tem a bandeira olímpica?",
+      "answer": 5,
+      "unit": "anéis",
+      "fact": "Pierre de Coubertin a criou em 1913."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De quantos em quantos anos acontecem as Olimpíadas de verão?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "Os Jogos de 2020 só aconteceram em 2021."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos gols o Brasil levou da Alemanha em 2014?",
+      "answer": 7,
+      "unit": "gols",
+      "fact": "O Brasil fez apenas um gol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais Ayrton Senna ganhou?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Ele foi campeão em 1988, 1990 e 1991."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Pelé marcou pela seleção brasileira, em partidas oficiais?",
+      "answer": 77,
+      "unit": "gols",
+      "fact": "Neymar passou esse número em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gols Ronaldo marcou em Copas do Mundo?",
+      "answer": 15,
+      "unit": "gols",
+      "fact": "Oito foram na Copa de 2002."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos títulos de Grand Slam tem Novak Djokovic, até 2024?",
+      "answer": 24,
+      "unit": "títulos",
+      "fact": "Ele lidera o ranking masculino."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma quadra oficial de futsal, de comprimento, em média?",
+      "answer": 40,
+      "unit": "metros",
+      "fact": "A medida exata varia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a força G de frenagem de um carro de Fórmula 1, aproximadamente?",
+      "answer": 6,
+      "unit": "G",
+      "fact": "O pescoço do piloto é muito treinado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a velocidade de um saque recorde no tênis masculino, em km/h?",
+      "answer": 263,
+      "unit": "km/h",
+      "fact": "Sam Groth fez o saque em 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a velocidade do chute mais forte registrado por um jogador, em km/h, aproximadamente?",
+      "answer": 211,
+      "unit": "km/h",
+      "fact": "Ronny Heberson, brasileiro, fez o chute em 2006."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da Copa do Mundo, o troféu, em centímetros?",
+      "answer": 36.8,
+      "unit": "cm",
+      "fact": "Ele pesa pouco mais de 6 quilos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto pesa a taça da Copa do Mundo, em quilos?",
+      "answer": 6.1,
+      "unit": "quilos",
+      "fact": "Ela é oca e feita de ouro de 18 quilates."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valeu o Mundial de 2022 para a Argentina, em milhões de dólares?",
+      "answer": 42,
+      "unit": "milhões",
+      "fact": "A Fifa bancou essa premiação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos o Brasil já fez em Copas do Mundo, até 2022?",
+      "answer": 114,
+      "unit": "jogos",
+      "fact": "Ele é o único presente em todas as edições."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior público em um jogo de futebol, em milhares de pessoas?",
+      "answer": 199,
+      "unit": "mil",
+      "fact": "Foi na final da Copa de 1950, segundo estimativas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros de altitude tem a cidade de La Paz, sede de jogos da Bolívia, aproximadamente?",
+      "answer": 3640,
+      "unit": "metros",
+      "fact": "Muitos adversários reclamam do ar rarefeito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem a prova de natação mais curta das Olimpíadas?",
+      "answer": 50,
+      "unit": "metros",
+      "fact": "Em piscina olímpica, ela não tem virada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos árbitros de campo há em um jogo de futebol, no início?",
+      "answer": 1,
+      "unit": "árbitro",
+      "fact": "Ele conta com dois bandeirinhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas bolas brancas há em um jogo de sinuca?",
+      "answer": 1,
+      "unit": "bola",
+      "fact": "Ela é a única que o jogador pode acertar direto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem a raia de natação olímpica?",
+      "answer": 50,
+      "unit": "metros",
+      "fact": "Em provas de curta distância, ela é usada só uma vez por volta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem a prova de ciclismo Tour de France, aproximadamente?",
+      "answer": 3500,
+      "unit": "km",
+      "fact": "Ela dura cerca de três semanas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem o triatlo Ironman, somando tudo?",
+      "answer": 226,
+      "unit": "km",
+      "fact": "São natação, ciclismo e corrida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros de natação tem o triatlo Ironman?",
+      "answer": 3.8,
+      "unit": "km",
+      "fact": "Depois vêm ciclismo e corrida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos buracos tem uma partida de golfe normal?",
+      "answer": 18,
+      "unit": "buracos",
+      "fact": "Saint Andrews, na Escócia, ajudou a definir o número."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pinos tem um jogo de boliche?",
+      "answer": 10,
+      "unit": "pinos",
+      "fact": "O strike derruba todos de uma vez."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas bolas tem um jogo de sinuca, com a branca?",
+      "answer": 22,
+      "unit": "bolas",
+      "fact": "Há 15 vermelhas e 6 coloridas, além da branca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem a prova de revezamento mais comum do atletismo, somando as quatro pernas?",
+      "answer": 400,
+      "unit": "metros",
+      "fact": "Cada atleta corre 100 metros."
     }
   ]
 }

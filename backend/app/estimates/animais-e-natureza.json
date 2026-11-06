@@ -1,0 +1,2906 @@
+{
+  "theme": "Animais e natureza",
+  "questions": [
+    {
+      "difficulty": "medium",
+      "text": "Qual a velocidade máxima de um guepardo?",
+      "answer": 110,
+      "unit": "km/h",
+      "fact": "Ele acelera de 0 a 100 km/h em cerca de 3 segundos, mas só aguenta poucos segundos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura pode ter uma girafa macho adulta?",
+      "answer": 5.5,
+      "unit": "metros",
+      "fact": "Mesmo com o pescoço enorme, a girafa tem 7 vértebras cervicais, como nós."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, um cachorro?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "Raças pequenas costumam viver mais que as grandes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, um gato doméstico?",
+      "answer": 15,
+      "unit": "anos",
+      "fact": "Gatos que ficam em casa vivem mais do que os de rua."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, um cavalo?",
+      "answer": 28,
+      "unit": "anos",
+      "fact": "Um cavalo inglês chamado Old Billy teria chegado a 62 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, um elefante-africano?",
+      "answer": 65,
+      "unit": "anos",
+      "fact": "As fêmeas costumam viver mais que os machos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos pode viver uma arara-azul?",
+      "answer": 50,
+      "unit": "anos",
+      "fact": "Muitos casais ficam juntos a vida toda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos pode viver uma tartaruga-gigante de Galápagos?",
+      "answer": 150,
+      "unit": "anos",
+      "fact": "Harriet viveu até 175 anos em um zoológico da Austrália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, um leão na natureza?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "Em cativeiro, pode chegar a 25 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, um coelho doméstico?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "O coelho mais velho registrado chegou a 18 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, uma vaca, sem ser abatida?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "Nas fazendas, costuma durar bem menos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem uma formiga?",
+      "answer": 6,
+      "unit": "patas",
+      "fact": "Todo inseto tem seis patas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem um escorpião?",
+      "answer": 8,
+      "unit": "patas",
+      "fact": "Os escorpiões são parentes das aranhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem um caranguejo?",
+      "answer": 10,
+      "unit": "patas",
+      "fact": "As duas patas da frente viram pinças."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos braços tem um polvo?",
+      "answer": 8,
+      "unit": "braços",
+      "fact": "Cada braço tem centenas de ventosas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos braços tem uma lula, contando os tentáculos?",
+      "answer": 10,
+      "unit": "braços",
+      "fact": "São oito braços e dois tentáculos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos olhos tem a maioria das aranhas?",
+      "answer": 8,
+      "unit": "olhos",
+      "fact": "Algumas espécies têm 6, e outras, menos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas asas tem uma mosca?",
+      "answer": 2,
+      "unit": "asas",
+      "fact": "As moscas têm só um par de asas, ao contrário de outros insetos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dedos tem a pata da frente de um cachorro, contando o dedo da unha?",
+      "answer": 5,
+      "unit": "dedos",
+      "fact": "As patas de trás costumam ter quatro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dedos tem a pata de uma avestruz?",
+      "answer": 2,
+      "unit": "dedos",
+      "fact": "É a única ave com só dois dedos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dedos tem a pata de um cavalo?",
+      "answer": 1,
+      "unit": "dedo",
+      "fact": "O casco é, na verdade, um dedo modificado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos chifres tem o rinoceronte-branco?",
+      "answer": 2,
+      "unit": "chifres",
+      "fact": "O chifre é feito de queratina, a mesma substância da unha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estômagos em câmaras tem a vaca?",
+      "answer": 4,
+      "unit": "câmaras",
+      "fact": "Por isso a digestão do capim é tão eficiente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses dura a gestação de uma vaca?",
+      "answer": 9,
+      "unit": "meses",
+      "fact": "É quase igual à gestação de um ser humano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses dura a gestação de uma elefanta?",
+      "answer": 22,
+      "unit": "meses",
+      "fact": "É a gestação mais longa entre os mamíferos terrestres."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses dura a gestação de uma égua?",
+      "answer": 11,
+      "unit": "meses",
+      "fact": "O potro fica de pé pouco tempo depois de nascer."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura a gestação de uma gata?",
+      "answer": 65,
+      "unit": "dias",
+      "fact": "Cada ninhada costuma ter de 3 a 5 filhotes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura a gestação de uma cadela?",
+      "answer": 63,
+      "unit": "dias",
+      "fact": "Isso dá cerca de 9 semanas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias a galinha choca o ovo?",
+      "answer": 21,
+      "unit": "dias",
+      "fact": "O pintinho quebra a casca com um \"dente\" no bico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos põe uma galinha poedeira por ano?",
+      "answer": 300,
+      "unit": "ovos",
+      "fact": "Elas põem quase um ovo por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos filhotes costuma ter uma baleia-azul por gestação?",
+      "answer": 1,
+      "unit": "filhote",
+      "fact": "A gestação dura cerca de um ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um gato costuma dormir?",
+      "answer": 15,
+      "unit": "horas",
+      "fact": "Eles caçam mais ao anoitecer e ao amanhecer."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um cachorro adulto costuma dormir?",
+      "answer": 12,
+      "unit": "horas",
+      "fact": "Os filhotes dormem ainda mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um coala costuma dormir?",
+      "answer": 20,
+      "unit": "horas",
+      "fact": "As folhas de eucalipto têm pouca energia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um leão costuma descansar?",
+      "answer": 20,
+      "unit": "horas",
+      "fact": "Os leões caçam principalmente de noite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um cavalo costuma dormir?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Ele tira cochilos de pé, com as pernas travadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um elefante-africano dorme na natureza, em média?",
+      "answer": 2,
+      "unit": "horas",
+      "fact": "Um estudo de 2017 mediu isso em elefantes selvagens."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a altura média de uma girafa adulta macho, em metros?",
+      "answer": 5.5,
+      "unit": "metros",
+      "fact": "Ela consegue enxergar a quilômetros de distância."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de um elefante-africano macho adulto, em toneladas?",
+      "answer": 6,
+      "unit": "toneladas",
+      "fact": "Ele come até 150 kg de plantas por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o comprimento de uma baleia-azul adulta, em metros?",
+      "answer": 30,
+      "unit": "metros",
+      "fact": "É mais longa do que uma quadra de vôlei e meia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas toneladas pesa a baleia-azul, aproximadamente?",
+      "answer": 150,
+      "unit": "toneladas",
+      "fact": "É o maior animal que já viveu."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem, em média, uma sucuri-verde adulta?",
+      "answer": 5,
+      "unit": "metros",
+      "fact": "As fêmeas são muito maiores que os machos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de um leão macho adulto, em kg?",
+      "answer": 190,
+      "unit": "kg",
+      "fact": "As leoas costumam pesar uns 130 kg."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de uma capivara adulta, em kg?",
+      "answer": 50,
+      "unit": "kg",
+      "fact": "É o maior roedor do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de um tamanduá-bandeira adulto, em kg?",
+      "answer": 35,
+      "unit": "kg",
+      "fact": "Ele não tem dentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de um gorila macho adulto, em kg?",
+      "answer": 180,
+      "unit": "kg",
+      "fact": "Sua força é cerca de 10 vezes a de um homem adulto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de uma onça-pintada adulta, em kg?",
+      "answer": 90,
+      "unit": "kg",
+      "fact": "No Pantanal, elas chegam a mais de 130 kg."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de um tigre-siberiano adulto, em kg?",
+      "answer": 250,
+      "unit": "kg",
+      "fact": "É o maior felino selvagem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o peso de um urso-polar macho adulto, em kg?",
+      "answer": 500,
+      "unit": "kg",
+      "fact": "Ele chega a sentir o cheiro de focas a dezenas de quilômetros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima de um leão, em km/h?",
+      "answer": 80,
+      "unit": "km/h",
+      "fact": "Ele cansa rápido, e por isso caça em grupo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima de um cavalo a galope, em km/h?",
+      "answer": 70,
+      "unit": "km/h",
+      "fact": "O recorde de um puro-sangue passa de 70 km/h."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima de um avestruz, em km/h?",
+      "answer": 70,
+      "unit": "km/h",
+      "fact": "É a ave mais rápida em terra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade de uma preguiça em uma árvore, em metros por minuto?",
+      "answer": 4,
+      "unit": "metros",
+      "fact": "Ela é o mamífero mais lento do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima de um golfinho, em km/h?",
+      "answer": 55,
+      "unit": "km/h",
+      "fact": "Eles costumam surfar nas ondas dos barcos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima de um tubarão-branco, em km/h?",
+      "answer": 40,
+      "unit": "km/h",
+      "fact": "Ele pode saltar para fora da água ao atacar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dentes tem um cachorro adulto?",
+      "answer": 42,
+      "unit": "dentes",
+      "fact": "Os filhotes têm 28 dentes de leite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dentes tem um gato adulto?",
+      "answer": 30,
+      "unit": "dentes",
+      "fact": "Os felinos não têm dentes para mastigar de verdade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos tem o pescoço de uma girafa?",
+      "answer": 7,
+      "unit": "ossos",
+      "fact": "É o mesmo número dos humanos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países tem a Amazônia?",
+      "answer": 9,
+      "unit": "países",
+      "fact": "O Brasil tem cerca de 60% da floresta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos biomas tem o Brasil?",
+      "answer": 6,
+      "unit": "biomas",
+      "fact": "Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual porcentagem do território do Brasil é ocupada pela Amazônia?",
+      "answer": 49,
+      "unit": "%",
+      "fact": "A área é quase do tamanho da Europa ocidental."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem aproximada da Mata Atlântica que ainda sobrevive?",
+      "answer": 12,
+      "unit": "%",
+      "fact": "Ela é um dos biomas mais biodiversos do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem da superfície da Terra coberta por oceanos?",
+      "answer": 71,
+      "unit": "%",
+      "fact": "A maior parte dos seres vivos está no mar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de água salgada no total da Terra?",
+      "answer": 97,
+      "unit": "%",
+      "fact": "Quase toda a água doce está em geleiras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de oxigênio no ar que respiramos?",
+      "answer": 21,
+      "unit": "%",
+      "fact": "O restante é sobretudo nitrogênio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas estações tem o ano?",
+      "answer": 4,
+      "unit": "estações",
+      "fact": "A inclinação da Terra é a causa delas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura a água do mar congela, em média, em °C?",
+      "answer": -2,
+      "unit": "°C",
+      "fact": "O sal faz com que a água do mar congele abaixo de zero."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual foi a menor temperatura já registrada na Antártida, em °C?",
+      "answer": -89.2,
+      "unit": "°C",
+      "fact": "Foi medida em 1983, na estação russa Vostok."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual foi a menor temperatura oficial já registrada no Brasil, em °C?",
+      "answer": -14,
+      "unit": "°C",
+      "fact": "Foi em 1952, em Caçador, Santa Catarina."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura do corpo de um pinguim-imperador no inverno, em °C?",
+      "answer": 38,
+      "unit": "°C",
+      "fact": "Os pinguins se revezam no meio do grupo para não sentir frio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura externa que um pinguim-imperador enfrenta no inverno, em °C?",
+      "answer": -40,
+      "unit": "°C",
+      "fact": "Eles formam grupos enormes para se aquecer."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a profundidade máxima que um pinguim-imperador pode mergulhar, em metros?",
+      "answer": 500,
+      "unit": "metros",
+      "fact": "Ele fica até cerca de 20 minutos sem respirar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a altitude do Mar Morto em relação ao nível do mar, em metros?",
+      "answer": -430,
+      "unit": "metros",
+      "fact": "É o ponto mais baixo em terra firme."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que altitude fica o fundo da Fossa das Marianas, em relação ao nível do mar?",
+      "answer": -10935,
+      "unit": "metros",
+      "fact": "É o ponto mais fundo dos oceanos, no Pacífico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude do Pico da Neblina em metros?",
+      "answer": 2995,
+      "unit": "metros",
+      "fact": "Ele é o ponto mais alto do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Everest em metros?",
+      "answer": 8849,
+      "unit": "metros",
+      "fact": "A montanha cresce alguns milímetros por ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o comprimento do rio Amazonas em km?",
+      "answer": 6992,
+      "unit": "km",
+      "fact": "Ele nasce no Peru."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho da Floresta Amazônica em milhões de km²?",
+      "answer": 5.5,
+      "unit": "milhões",
+      "fact": "Ela responde por metade das florestas tropicais do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vértebras tem o pescoço de um ser humano e de uma girafa?",
+      "answer": 7,
+      "unit": "vértebras",
+      "fact": "Quase todos os mamíferos têm esse número."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de pinguins existem, aproximadamente?",
+      "answer": 18,
+      "unit": "espécies",
+      "fact": "Todas vivem no Hemisfério Sul, quase sem exceção."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de tubarões existem, aproximadamente?",
+      "answer": 500,
+      "unit": "espécies",
+      "fact": "Os primeiros apareceram há mais de 400 milhões de anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de felinos existem, aproximadamente?",
+      "answer": 40,
+      "unit": "espécies",
+      "fact": "O gato doméstico é só um deles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de primatas existem, aproximadamente?",
+      "answer": 500,
+      "unit": "espécies",
+      "fact": "O Brasil tem a maior diversidade do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de ursos existem?",
+      "answer": 8,
+      "unit": "espécies",
+      "fact": "Vão do pequeno urso-malaio ao urso-polar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de elefantes existem?",
+      "answer": 3,
+      "unit": "espécies",
+      "fact": "Elefante-asiático, elefante-da-savana e elefante-da-floresta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de girafas existem, segundo estudo de 2021?",
+      "answer": 4,
+      "unit": "espécies",
+      "fact": "Antes acreditava-se que existia só uma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de zebras existem?",
+      "answer": 3,
+      "unit": "espécies",
+      "fact": "Zebra-das-planícies, zebra-de-grévy e zebra-das-montanhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas espécies de rinocerontes existem?",
+      "answer": 5,
+      "unit": "espécies",
+      "fact": "Duas na África e três na Ásia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de altura pode ter um pinheiro-do-paraná?",
+      "answer": 50,
+      "unit": "metros",
+      "fact": "A árvore pode viver mais de 500 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de altura pode ter a árvore mais alta do Brasil, um angelim-vermelho?",
+      "answer": 88,
+      "unit": "metros",
+      "fact": "Ela foi encontrada no Amapá em 2022."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de envergadura tem um condor-dos-andes, aproximadamente?",
+      "answer": 3,
+      "unit": "metros",
+      "fact": "É uma das maiores aves voadoras do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros de comprimento tem o menor beija-flor do mundo?",
+      "answer": 5,
+      "unit": "cm",
+      "fact": "Ele vive em Cuba e pesa menos que uma moeda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos uma fêmea de tartaruga-marinha põe por ninho, em média?",
+      "answer": 120,
+      "unit": "ovos",
+      "fact": "Eles ficam enterrados na areia por cerca de dois meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos põe, em um dia, uma rainha de abelhas em plena temporada?",
+      "answer": 2000,
+      "unit": "ovos",
+      "fact": "Isso é mais que o próprio peso da rainha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas abelhas pode ter uma colmeia em plena atividade?",
+      "answer": 60000,
+      "unit": "abelhas",
+      "fact": "A maioria é formada por operárias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas flores uma abelha visita para fazer uma colher de mel, aproximadamente?",
+      "answer": 2000,
+      "unit": "flores",
+      "fact": "Uma operária produz cerca de uma colherzinha de mel durante a vida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias vive uma abelha operária no verão, em média?",
+      "answer": 40,
+      "unit": "dias",
+      "fact": "No inverno, elas vivem mais tempo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros pode alcançar um cupinzeiro africano?",
+      "answer": 9,
+      "unit": "metros",
+      "fact": "Os maiores são verdadeiros arranha-céus de insetos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de vida tem a ave albatroz-de-laysan mais velha conhecida, chamada Wisdom?",
+      "answer": 70,
+      "unit": "anos",
+      "fact": "Ela já tinha filhotes após os 70 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos km uma baleia-jubarte percorre em sua migração anual, aproximadamente?",
+      "answer": 16000,
+      "unit": "km",
+      "fact": "Elas vão de áreas de alimentação até áreas quentes de reprodução."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos km voa uma andorinha-do-ártico por ano, aproximadamente?",
+      "answer": 70000,
+      "unit": "km",
+      "fact": "Ela vive mais dias de sol que qualquer outro animal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por minuto o coração de um elefante bate, em média?",
+      "answer": 30,
+      "unit": "batimentos",
+      "fact": "Animais grandes têm o coração mais lento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos batimentos cardíacos por minuto tem um beija-flor em voo, aproximadamente?",
+      "answer": 1200,
+      "unit": "batimentos",
+      "fact": "Ele chega a 20 batimentos por segundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas toneladas de krill uma baleia-azul come por dia?",
+      "answer": 4,
+      "unit": "toneladas",
+      "fact": "Ela filtra a água com placas chamadas barbatanas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilos de bambu um panda-gigante come por dia, aproximadamente?",
+      "answer": 12,
+      "unit": "kg",
+      "fact": "Sua dieta tem 99% de bambu, mesmo sendo um carnívoro por origem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilos um elefante come por dia, aproximadamente?",
+      "answer": 150,
+      "unit": "kg",
+      "fact": "Ele passa até 18 horas por dia comendo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilos de carne um leão pode comer em uma refeição, aproximadamente?",
+      "answer": 40,
+      "unit": "kg",
+      "fact": "Depois de comer tanto, ele pode descansar por dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cm tem a língua de uma girafa, aproximadamente?",
+      "answer": 50,
+      "unit": "cm",
+      "fact": "Ela é roxa e protege a boca dos espinhos da acácia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cm tem a língua de um tamanduá-bandeira, aproximadamente?",
+      "answer": 60,
+      "unit": "cm",
+      "fact": "Ela entra e sai da boca mais de 150 vezes por minuto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cupins um tamanduá-bandeira pode comer por dia?",
+      "answer": 30000,
+      "unit": "cupins",
+      "fact": "Ele não tem dentes, usando a língua para pegar os insetos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura máxima do salto de uma pulga, em cm?",
+      "answer": 33,
+      "unit": "cm",
+      "fact": "Isso equivale a mais de 100 vezes a altura dela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes a formiga carrega o próprio peso, aproximadamente?",
+      "answer": 50,
+      "unit": "vezes",
+      "fact": "A espécie cortadeira tem tanta força que parece caminhar com árvores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Projeto Tamar?",
+      "answer": 1980,
+      "scale": 50,
+      "fact": "O projeto protege cinco espécies de tartarugas-marinhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Parque Nacional de Yellowstone?",
+      "answer": 1872,
+      "scale": 50,
+      "fact": "É o primeiro parque nacional do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Parque Nacional do Iguaçu?",
+      "answer": 1939,
+      "scale": 50,
+      "fact": "Ele é Patrimônio da Humanidade desde 1986."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi inaugurado o Instituto Butantan?",
+      "answer": 1901,
+      "scale": 50,
+      "fact": "Vital Brazil criou por lá o soro antiofídico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o último tigre-de-java foi visto?",
+      "answer": 1976,
+      "scale": 50,
+      "fact": "Ele foi extinto na Indonésia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a ovelha Dolly nasceu?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Ela viveu seis anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Tubarão, de Spielberg, estreou nos cinemas?",
+      "answer": 1975,
+      "scale": 50,
+      "fact": "O filme aumentou muito o medo de tubarões no mundo todo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado o livro A Origem das Espécies?",
+      "answer": 1859,
+      "scale": 50,
+      "fact": "Darwin levou mais de 20 anos para publicar suas ideias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o chimpanzé Ham foi ao espaço?",
+      "answer": 1961,
+      "scale": 50,
+      "fact": "Ele voltou vivo e foi morar em um zoológico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o vulcão Krakatoa explodiu?",
+      "answer": 1883,
+      "scale": 50,
+      "fact": "A cinza alterou o clima do mundo por anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o vulcão Tambora explodiu?",
+      "answer": 1815,
+      "scale": 50,
+      "fact": "No ano seguinte, a Europa não teve verão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o vulcão Vesúvio destruiu Pompeia?",
+      "answer": 79,
+      "scale": 50,
+      "fact": "Plínio, o Jovem, escreveu relatos da tragédia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o vulcão Santa Helena explodiu, nos EUA?",
+      "answer": 1980,
+      "scale": 50,
+      "fact": "A explosão foi 500 vezes mais forte que a bomba de Hiroshima."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o terremoto de Lisboa destruiu a cidade?",
+      "answer": 1755,
+      "scale": 50,
+      "fact": "O desastre mudou a filosofia europeia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o terremoto do Haiti devastou o país?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "Morreram cerca de 200 mil pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano houve o maior tsunami recente no Japão?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Ele causou o acidente nuclear de Fukushima."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano houve o tsunami do Oceano Índico?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Cerca de 230 mil pessoas morreram em vários países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o furacão Katrina atingiu Nova Orleans?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "Foi um dos desastres mais caros da história dos EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a barragem de Fundão se rompeu em Mariana?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "A lama chegou até o oceano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Rio Grande do Sul viveu a sua maior enchente até hoje?",
+      "answer": 2024,
+      "scale": 50,
+      "fact": "Mais de 180 pessoas morreram, e Porto Alegre foi inundada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias, em média, um filhote de canguru leva para sair da bolsa, depois de nascer?",
+      "answer": 235,
+      "unit": "dias",
+      "fact": "Ao nascer, ele tem o tamanho de um feijão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas gramas pesa um canguru-vermelho ao nascer?",
+      "answer": 1,
+      "unit": "grama",
+      "fact": "Em adulto, ele pode passar de 90 kg."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos kg pode pesar o canguru-vermelho macho?",
+      "answer": 90,
+      "unit": "kg",
+      "fact": "É o maior marsupial do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do salto de um canguru-vermelho, em metros?",
+      "answer": 3,
+      "unit": "metros",
+      "fact": "A distância pode chegar a 8 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km/h um canguru-vermelho consegue alcançar?",
+      "answer": 70,
+      "unit": "km/h",
+      "fact": "Ele usa o rabo como um terceiro pé."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos kg pesa, em média, uma preguiça-comum adulta?",
+      "answer": 5,
+      "unit": "kg",
+      "fact": "Ela tem cerca de 40 cm de comprimento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas horas por dia uma preguiça dorme na natureza?",
+      "answer": 10,
+      "unit": "horas",
+      "fact": "Em cativeiro, costuma dormir bem mais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo uma preguiça consegue prender a respiração, em minutos?",
+      "answer": 40,
+      "unit": "minutos",
+      "fact": "Muitas são nadadoras surpreendentemente boas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo uma tartaruga-marinha consegue ficar debaixo d'água, em horas, dormindo?",
+      "answer": 7,
+      "unit": "horas",
+      "fact": "Elas reduzem o metabolismo para economizar oxigênio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo o crocodilo fica sem comer, se preciso, em meses?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Ele tem um metabolismo muito lento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo um camelo aguenta sem beber água, em semanas?",
+      "answer": 2,
+      "unit": "semanas",
+      "fact": "Depois, ele pode beber mais de 100 litros em minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de água um camelo bebe de uma vez?",
+      "answer": 130,
+      "unit": "litros",
+      "fact": "Ele repõe em minutos o que perdeu em dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de água um elefante bebe por dia, aproximadamente?",
+      "answer": 200,
+      "unit": "litros",
+      "fact": "Ele usa a tromba como mangueira."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gnus participam da grande migração, aproximadamente?",
+      "answer": 1500000,
+      "unit": "gnus",
+      "fact": "Eles enfrentam crocodilos ao cruzar o rio Mara."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos leões selvagens existem hoje na África, aproximadamente?",
+      "answer": 23000,
+      "unit": "leões",
+      "fact": "Eram mais de 200 mil há um século."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos tigres selvagens existem no mundo, aproximadamente?",
+      "answer": 5500,
+      "unit": "tigres",
+      "fact": "Mais tigres vivem hoje em cativeiro do que soltos na natureza."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos elefantes-africanos existem, aproximadamente?",
+      "answer": 415000,
+      "unit": "elefantes",
+      "fact": "A caça por marfim reduziu muito a população."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pandas-gigantes selvagens existem, aproximadamente?",
+      "answer": 1900,
+      "unit": "pandas",
+      "fact": "A China tirou o panda da lista de ameaçados em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos orangotangos vivem na natureza, aproximadamente?",
+      "answer": 120000,
+      "unit": "orangotangos",
+      "fact": "A palma de óleo é a maior ameaça a eles."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gorilas-das-montanhas vivem na natureza, aproximadamente?",
+      "answer": 1000,
+      "unit": "gorilas",
+      "fact": "Eles vivem em Ruanda, Uganda e Congo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos micos-leões-dourados vivem na natureza, aproximadamente?",
+      "answer": 4800,
+      "unit": "micos",
+      "fact": "Havia apenas cerca de 200 em 1970."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas ararinhas-azuis existem no mundo, aproximadamente?",
+      "answer": 200,
+      "unit": "ararinhas",
+      "fact": "Quase todas estão em cativeiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias uma borboleta-monarca vive, em uma geração comum?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "A geração que migra vive até oito meses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de teia uma aranha pode produzir em um dia, aproximadamente?",
+      "answer": 20,
+      "unit": "metros",
+      "fact": "Ela costuma comer a teia antiga para reaproveitar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de seda pode produzir um único casulo de bicho-da-seda?",
+      "answer": 1000,
+      "unit": "metros",
+      "fact": "A China guardou esse segredo por milhares de anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos milhões de espécies vivem na Terra, segundo uma das estimativas mais aceitas?",
+      "answer": 8.7,
+      "unit": "milhões",
+      "fact": "Mais de 80% ainda não foram descritas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de insetos já foram descritas, aproximadamente?",
+      "answer": 1000000,
+      "unit": "espécies",
+      "fact": "É o maior grupo de seres vivos do planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de peixes foram descritas, aproximadamente?",
+      "answer": 34000,
+      "unit": "espécies",
+      "fact": "É mais do que todos os outros vertebrados somados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de peixes vivem na bacia amazônica, aproximadamente?",
+      "answer": 2700,
+      "unit": "espécies",
+      "fact": "É a maior diversidade de água doce do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de anfíbios existem no Brasil, aproximadamente?",
+      "answer": 1200,
+      "unit": "espécies",
+      "fact": "O Brasil tem a maior variedade do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de plantas tem o Brasil, aproximadamente?",
+      "answer": 46000,
+      "unit": "espécies",
+      "fact": "É o país com mais espécies de plantas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de árvores há na Amazônia, aproximadamente?",
+      "answer": 16000,
+      "unit": "espécies",
+      "fact": "Só 227 são hiperdominantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas árvores há por habitante no mundo, aproximadamente?",
+      "answer": 400,
+      "unit": "árvores",
+      "fact": "No total, são cerca de 3 trilhões de árvores no planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de água uma árvore grande da Amazônia pode lançar no ar por dia?",
+      "answer": 1000,
+      "unit": "litros",
+      "fact": "Ela forma os chamados rios voadores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de toneladas de água a Amazônia lança no ar por dia?",
+      "answer": 20,
+      "unit": "bilhões",
+      "fact": "É mais que o rio Amazonas despeja no oceano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros cúbicos por segundo tem o rio Amazonas na foz, em média?",
+      "answer": 209000,
+      "unit": "m³/s",
+      "fact": "É mais que os seis maiores rios seguintes somados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de profundidade tem o lago Baikal?",
+      "answer": 1642,
+      "unit": "metros",
+      "fact": "É o lago mais profundo do planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Salto Angel, a cachoeira mais alta do mundo?",
+      "answer": 979,
+      "unit": "metros",
+      "fact": "A cachoeira fica no Parque Nacional Canaima, na Venezuela."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas quedas tem as Cataratas do Iguaçu, aproximadamente?",
+      "answer": 275,
+      "unit": "quedas",
+      "fact": "A mais famosa é a Garganta do Diabo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altura máxima das Cataratas do Iguaçu, em metros?",
+      "answer": 82,
+      "unit": "metros",
+      "fact": "Dá para se aproximar delas por uma passarela no Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altura das Cataratas do Niágara, em metros?",
+      "answer": 51,
+      "unit": "metros",
+      "fact": "Elas ficam entre os EUA e o Canadá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho aproximado do Pantanal em km²?",
+      "answer": 150000,
+      "unit": "km²",
+      "fact": "É do tamanho aproximado da Grécia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Saara, em milhões de km²?",
+      "answer": 9,
+      "unit": "milhões",
+      "fact": "Ele é quase do tamanho dos EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Antártida, em milhões de km²?",
+      "answer": 14,
+      "unit": "milhões",
+      "fact": "Ela é maior que a Europa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a espessura média do gelo da Antártida, em metros?",
+      "answer": 2160,
+      "unit": "metros",
+      "fact": "Se tudo derretesse, os mares subiriam cerca de 58 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto subiria o nível dos oceanos, em metros, se toda a Antártida derretesse?",
+      "answer": 58,
+      "unit": "metros",
+      "fact": "A Groenlândia acrescentaria mais 7 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o nível dos oceanos subiu desde 1900, em cm?",
+      "answer": 20,
+      "unit": "cm",
+      "fact": "A subida tem se acelerado nas últimas décadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o aumento da temperatura global desde a era pré-industrial, em °C, em 2024?",
+      "answer": 1.5,
+      "unit": "°C",
+      "fact": "2024 foi o primeiro ano acima dessa marca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a concentração de CO₂ na atmosfera, em ppm, em 2024?",
+      "answer": 424,
+      "unit": "ppm",
+      "fact": "Antes da Revolução Industrial, era de cerca de 280 ppm."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km por hora tem o vento em um furacão de categoria 5, no mínimo?",
+      "answer": 252,
+      "unit": "km/h",
+      "fact": "Em furacões assim, poucas construções resistem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km por hora tem o vento em um furacão de categoria 1, no mínimo?",
+      "answer": 119,
+      "unit": "km/h",
+      "fact": "O vento já é forte o suficiente para quebrar árvores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos raios caem no Brasil por ano, aproximadamente?",
+      "answer": 77000000,
+      "unit": "raios",
+      "fact": "Estima-se que é um dos países com mais raios no mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos raios caem no mundo por dia, aproximadamente?",
+      "answer": 4000000,
+      "unit": "raios",
+      "fact": "A cada segundo, são dezenas deles."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos graus Celsius tem o canal de um raio, aproximadamente?",
+      "answer": 30000,
+      "unit": "°C",
+      "fact": "É cerca de cinco vezes mais que a superfície do Sol."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos graus Celsius tem a lava, aproximadamente, ao sair do vulcão?",
+      "answer": 1100,
+      "unit": "°C",
+      "fact": "Dependendo da composição, pode ser mais fria ou mais quente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos a tartaruga Jonathan tinha em 2024?",
+      "answer": 192,
+      "unit": "anos",
+      "fact": "Ele é o animal terrestre vivo mais velho conhecido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um filhote de panda-gigante ao nascer?",
+      "answer": 15,
+      "unit": "cm",
+      "fact": "Ele é cerca de 900 vezes menor que a mãe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um filhote de panda-gigante ao nascer?",
+      "answer": 100,
+      "unit": "gramas",
+      "fact": "A mãe pesa mais de 100 kg."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos kg pesa um filhote de baleia-azul ao nascer?",
+      "answer": 2500,
+      "unit": "kg",
+      "fact": "Ele nasce com cerca de 7 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem um filhote de baleia-azul ao nascer?",
+      "answer": 7,
+      "unit": "metros",
+      "fact": "Ele mama cerca de 200 litros de leite por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos kg pesa um filhote de elefante-africano ao nascer?",
+      "answer": 100,
+      "unit": "kg",
+      "fact": "Em poucos minutos, ele já tenta ficar de pé."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cm de altura tem uma girafa recém-nascida, em metros?",
+      "answer": 1.8,
+      "unit": "metros",
+      "fact": "Ele nasce caindo de 2 metros, porque a mãe dá à luz em pé."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho da Caatinga, em km², aproximadamente?",
+      "answer": 850000,
+      "unit": "km²",
+      "fact": "É o único bioma exclusivamente brasileiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura máxima das dunas de Lençóis Maranhenses, em metros?",
+      "answer": 40,
+      "unit": "metros",
+      "fact": "A área do parque é de 155 mil hectares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países tem a Mata Atlântica?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "Brasil, Paraguai e Argentina."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pétalas tem, em geral, uma margarida?",
+      "answer": 34,
+      "unit": "pétalas",
+      "fact": "O número costuma ser da sequência de Fibonacci."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos pode viver uma oliveira, no máximo?",
+      "answer": 2000,
+      "unit": "anos",
+      "fact": "Algumas ainda dão frutos em Israel e na Grécia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que temperatura corporal um esquilo-do-ártico pode baixar, em °C?",
+      "answer": -2.9,
+      "unit": "°C",
+      "fact": "É o menor valor conhecido em um mamífero."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Lago Assal, o ponto mais baixo da África, em metros?",
+      "answer": -155,
+      "unit": "metros",
+      "fact": "Ele fica no Djibuti e é muito salgado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Vale da Morte, o ponto mais baixo da América do Norte, em metros?",
+      "answer": -86,
+      "unit": "metros",
+      "fact": "Foi lá que mediram 56,7 °C em 1913."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do mar da Galileia em relação ao nível do mar, em metros?",
+      "answer": -212,
+      "unit": "metros",
+      "fact": "É o lago de água doce mais baixo do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do mar Cáspio, em relação ao nível do mar, em metros?",
+      "answer": -28,
+      "unit": "metros",
+      "fact": "É o maior corpo d'água interior do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do fosso de Bentley, na Antártida, em metros?",
+      "answer": -2555,
+      "unit": "metros",
+      "fact": "É o ponto mais baixo não coberto por mar, debaixo do gelo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do fundo do mar onde vive o peixe-caracol filmado em 2022, em metros?",
+      "answer": -8336,
+      "unit": "metros",
+      "fact": "É o registro mais fundo de um peixe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude chegou uma baleia-bicuda-de-cuvier em seu recorde, em metros?",
+      "answer": -2992,
+      "unit": "metros",
+      "fact": "Ela tem o maior recorde de mergulho entre os mamíferos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude chega um cachalote em mergulhos comuns, em metros?",
+      "answer": -1000,
+      "unit": "metros",
+      "fact": "Ele pode ficar mais de 1 hora sem respirar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude chegou uma tartaruga-de-couro em seu recorde, em metros?",
+      "answer": -1280,
+      "unit": "metros",
+      "fact": "É o réptil que mergulha mais fundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a temperatura de Oymyakon, na Rússia, em 1933, em °C?",
+      "answer": -67.7,
+      "unit": "°C",
+      "fact": "É o lugar habitado mais frio do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média anual no Polo Sul, em °C?",
+      "answer": -49,
+      "unit": "°C",
+      "fact": "No inverno, pode chegar a -80 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média anual no Polo Norte, em °C?",
+      "answer": -18,
+      "unit": "°C",
+      "fact": "O Polo Norte é bem mais quente que o Polo Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a temperatura mais baixa já medida no Canadá, em °C?",
+      "answer": -63,
+      "unit": "°C",
+      "fact": "Foi medida em Snag, no Yukon, em 1947."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a temperatura mais baixa já medida nos EUA, em °C?",
+      "answer": -62.2,
+      "unit": "°C",
+      "fact": "Foi em 1971, em Prospect Creek, no Alasca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a menor temperatura medida na Groenlândia, em °C?",
+      "answer": -69.6,
+      "unit": "°C",
+      "fact": "Foi em 1991, em um ponto do manto de gelo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Até que temperatura o sapo-da-floresta sobrevive congelado, em °C?",
+      "answer": -6,
+      "unit": "°C",
+      "fact": "Ele fica com o coração parado até o degelo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Até que temperatura um peixe-gelo vive, com anticongelante no sangue, em °C?",
+      "answer": -2,
+      "unit": "°C",
+      "fact": "O sangue dele é transparente e não tem hemoglobina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude voa o ganso-indiano ao cruzar o Himalaia, em metros?",
+      "answer": 8000,
+      "unit": "metros",
+      "fact": "Ali o oxigênio é cerca de um terço do encontrado no nível do mar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude chegou o abutre-de-rüppell em colisão com um avião, em metros?",
+      "answer": 11300,
+      "unit": "metros",
+      "fact": "Foi em 1973, sobre a Costa do Marfim."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros um falcão-peregrino pode descer em um único segundo, em mergulho?",
+      "answer": 108,
+      "unit": "metros",
+      "fact": "Ele tem cones nas narinas que ajudam a respirar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mil km um andorinhão-preto voa em um ano, aproximadamente?",
+      "answer": 200,
+      "unit": "mil km",
+      "fact": "Ele raramente pousa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto tempo o albatroz-errante pode ficar sem pousar, em anos?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "Ele vai à terra só para acasalar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de teia uma aranha-de-darwin pode fazer em um rio, de uma margem à outra?",
+      "answer": 25,
+      "unit": "metros",
+      "fact": "É a maior teia conhecida, em Madagascar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos tem o Tubarão-da-groenlândia mais velho conhecido, segundo estudo de 2016?",
+      "answer": 392,
+      "unit": "anos",
+      "fact": "A idade foi medida no olho, por radiocarbono."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos, em média, pode viver a baleia-da-groenlândia, no máximo?",
+      "answer": 200,
+      "unit": "anos",
+      "fact": "É o mamífero mais longevo que se conhece."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos milhões de anos têm os tubarões como grupo, aproximadamente?",
+      "answer": 450,
+      "unit": "milhões",
+      "fact": "Eles são mais antigos que as árvores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos milhões de anos têm os crocodilos como grupo, aproximadamente?",
+      "answer": 95,
+      "unit": "milhões",
+      "fact": "Eles sobreviveram à extinção dos dinossauros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Há quantos milhões de anos as aves evoluíram, a partir de dinossauros?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "O Arqueópterix é um dos fósseis mais antigos conhecidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Há quantos milhões de anos os dinossauros foram extintos?",
+      "answer": 66,
+      "unit": "milhões",
+      "fact": "O impacto de um asteroide no México foi a principal causa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Há quantos anos os humanos e os chimpanzés tiveram um ancestral em comum, em milhões?",
+      "answer": 7,
+      "unit": "milhões",
+      "fact": "Os fósseis mais antigos dessa linhagem foram achados no Chade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos anos começou a domesticação dos cães, aproximadamente?",
+      "answer": 15000,
+      "unit": "anos",
+      "fact": "Eles foram os primeiros animais domesticados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos anos os gatos foram domesticados, aproximadamente?",
+      "answer": 10000,
+      "unit": "anos",
+      "fact": "Os primeiros foram atraídos pelos ratos que comiam os grãos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos anos os cavalos foram domesticados, aproximadamente?",
+      "answer": 5500,
+      "unit": "anos",
+      "fact": "As primeiras evidências vêm do Cazaquistão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos milhões de anos surgiram as primeiras plantas terrestres?",
+      "answer": 470,
+      "unit": "milhões",
+      "fact": "Elas se pareciam com musgos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos bilhões de anos surgiu a vida na Terra, aproximadamente?",
+      "answer": 3.8,
+      "unit": "bilhões",
+      "fact": "Os fósseis mais antigos são de micróbios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos anos começou a última era do gelo?",
+      "answer": 115000,
+      "unit": "anos",
+      "fact": "Ela acabou há cerca de 11.700 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Há quantos anos o último mamute viveu, aproximadamente?",
+      "answer": 4000,
+      "unit": "anos",
+      "fact": "Os últimos viviam na Ilha de Wrangel, no Ártico."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o tamanho da maior baleia-azul já medida, em metros?",
+      "answer": 33.6,
+      "unit": "metros",
+      "fact": "A medição foi feita em 1909 na Geórgia do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o peso do maior elefante conhecido, em toneladas?",
+      "answer": 10.4,
+      "unit": "toneladas",
+      "fact": "O animal foi caçado em Angola, em 1955."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o peso do coração de uma baleia-azul, em kg?",
+      "answer": 180,
+      "unit": "kg",
+      "fact": "Em 2014, um foi preservado e exposto no Canadá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o peso da língua de uma baleia-azul, em kg?",
+      "answer": 2700,
+      "unit": "kg",
+      "fact": "É mais ou menos o peso de um elefante pequeno."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o volume de água, em litros, que uma baleia-azul engole de uma vez?",
+      "answer": 100000,
+      "unit": "litros",
+      "fact": "Ela filtra o krill e devolve a água."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos decibéis pode alcançar o som de uma baleia-azul?",
+      "answer": 188,
+      "unit": "decibéis",
+      "fact": "O som dela pode ser ouvido a centenas de quilômetros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos decibéis faz o cachalote em seus cliques?",
+      "answer": 230,
+      "unit": "decibéis",
+      "fact": "É o som mais forte de todos os seres vivos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos decibéis tem o estalo de um camarão-pistola?",
+      "answer": 210,
+      "unit": "decibéis",
+      "fact": "A bolha chega a uma temperatura próxima da do Sol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos viveu o molusco Ming, de 1499 até ser morto?",
+      "answer": 507,
+      "unit": "anos",
+      "fact": "Foi o animal não colonial mais velho já conhecido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem uma esponja Monorhaphis chuni, segundo estimativas?",
+      "answer": 11000,
+      "unit": "anos",
+      "fact": "É um dos animais mais velhos conhecidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem o Pando, colônia de álamos dos EUA, segundo estimativa?",
+      "answer": 14000,
+      "unit": "anos",
+      "fact": "Algumas estimativas chegam a muito mais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas pesa o Pando, em sua maior estimativa?",
+      "answer": 6000,
+      "unit": "toneladas",
+      "fact": "Ele é considerado o organismo mais pesado do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos troncos tem o Pando, aproximadamente?",
+      "answer": 47000,
+      "unit": "troncos",
+      "fact": "Todos compartilham as mesmas raízes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da Hyperion, árvore mais alta do mundo, em metros?",
+      "answer": 115.9,
+      "unit": "metros",
+      "fact": "Ela foi descoberta em 2006, na Califórnia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o volume do General Sherman, em metros cúbicos?",
+      "answer": 1487,
+      "unit": "m³",
+      "fact": "Ele pesa cerca de 2 mil toneladas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade do General Sherman, aproximadamente?",
+      "answer": 2200,
+      "unit": "anos",
+      "fact": "Ele fica no Parque Nacional da Sequoia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do maior fungo do mundo, em toneladas, em Oregon?",
+      "answer": 35000,
+      "unit": "toneladas",
+      "fact": "Ele é maior que o Pando em área, mas sua idade é discutida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade do maior fungo do mundo, em anos?",
+      "answer": 2400,
+      "unit": "anos",
+      "fact": "Ele cresce pouco a cada ano sob a floresta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dentes tem o interior de um caracol-de-jardim, na \"língua\" chamada rádula?",
+      "answer": 14000,
+      "unit": "dentes",
+      "fact": "A rádula funciona como uma lixa para raspar as plantas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos olhos tem um molusco chamado quíton, em alguns casos?",
+      "answer": 1000,
+      "unit": "olhos",
+      "fact": "Os olhos são feitos de um mineral na própria concha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos olhos tem uma libélula, na soma dos olhos pequenos?",
+      "answer": 30000,
+      "unit": "olhos",
+      "fact": "Ela vê quase em 360 graus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ventosas tem um polvo-gigante, aproximadamente?",
+      "answer": 2240,
+      "unit": "ventosas",
+      "fact": "Cada ventosa consegue sentir o gosto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pernas tinha o piolho-de-cobra descrito em 2021?",
+      "answer": 1306,
+      "unit": "pernas",
+      "fact": "Ele foi achado em uma mina, a 60 metros de profundidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos genes tem um ser humano, aproximadamente?",
+      "answer": 20000,
+      "unit": "genes",
+      "fact": "Temos muito menos que muitas plantas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos genes tem o trigo, aproximadamente?",
+      "answer": 107000,
+      "unit": "genes",
+      "fact": "O trigo tem mais de cinco vezes mais genes que nós."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cromossomos tem um cachorro?",
+      "answer": 78,
+      "unit": "cromossomos",
+      "fact": "Os humanos têm 46."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cromossomos tem um gato?",
+      "answer": 38,
+      "unit": "cromossomos",
+      "fact": "Ele tem menos que um cão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cromossomos tem um chimpanzé?",
+      "answer": 48,
+      "unit": "cromossomos",
+      "fact": "Dois cromossomos deles se fundiram na linhagem humana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cromossomos tem uma samambaia da espécie Ophioglossum?",
+      "answer": 1260,
+      "unit": "cromossomos",
+      "fact": "É o maior número conhecido em um ser vivo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso de um cérebro de cachalote, em kg?",
+      "answer": 7.8,
+      "unit": "kg",
+      "fact": "Cinco vezes mais que o humano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso de um cérebro de elefante-africano, em kg?",
+      "answer": 5,
+      "unit": "kg",
+      "fact": "O cérebro dele é maior que o de qualquer outro animal terrestre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do cérebro de um humano adulto, em kg?",
+      "answer": 1.4,
+      "unit": "kg",
+      "fact": "Consome cerca de 20% da energia do corpo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos neurônios tem um polvo, aproximadamente?",
+      "answer": 500000000,
+      "unit": "neurônios",
+      "fact": "A maior parte fica nos braços."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos neurônios tem uma abelha, aproximadamente?",
+      "answer": 1000000,
+      "unit": "neurônios",
+      "fact": "Com tão pouco, ela reconhece até rostos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos neurônios tem uma formiga, aproximadamente?",
+      "answer": 250000,
+      "unit": "neurônios",
+      "fact": "A colônia inteira age como um grande cérebro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos neurônios tem um elefante-africano, aproximadamente?",
+      "answer": 257000000000,
+      "unit": "neurônios",
+      "fact": "É o triplo dos humanos, mas a maior parte fica no cerebelo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos uma baleia-jubarte pode viver?",
+      "answer": 80,
+      "unit": "anos",
+      "fact": "A caça comercial quase acabou com a espécie."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos põe uma galinha caipira por semana, aproximadamente?",
+      "answer": 4,
+      "unit": "ovos",
+      "fact": "A galinha de granja põe bem mais por causa da seleção e da luz."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive um papagaio-verdadeiro, em média?",
+      "answer": 60,
+      "unit": "anos",
+      "fact": "Muitos sobrevivem aos próprios donos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive um jacaré-do-pantanal, em média?",
+      "answer": 50,
+      "unit": "anos",
+      "fact": "A fêmea cuida dos filhotes por meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive, em média, uma anta?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "Ela é uma grande jardineira da floresta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos vive um lobo-guará na natureza, em média?",
+      "answer": 15,
+      "unit": "anos",
+      "fact": "Em cativeiro, pode viver mais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias o pinguim-imperador macho fica sem comer para chocar o ovo?",
+      "answer": 65,
+      "unit": "dias",
+      "fact": "A fêmea volta do mar só depois de meses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km os pinguins-imperadores andam até a colônia, aproximadamente?",
+      "answer": 120,
+      "unit": "km",
+      "fact": "A viagem é feita sobre gelo, e ficou famosa no filme A Marcha dos Pinguins."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o maior bambu conhecido?",
+      "answer": 40,
+      "unit": "metros",
+      "fact": "O bambu é tecnicamente uma grama."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cm um bambu pode crescer em 24 horas?",
+      "answer": 91,
+      "unit": "cm",
+      "fact": "Em algumas espécies, dá para acompanhar o crescimento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos uma castanheira-do-pará pode viver?",
+      "answer": 500,
+      "unit": "anos",
+      "fact": "Sua produção depende de uma abelha específica e de uma cotia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem a envergadura da borboleta maior do mundo, em cm?",
+      "answer": 28,
+      "unit": "cm",
+      "fact": "É a Rainha-Alexandra, de Papua-Nova Guiné."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km/h pode alcançar um peixe-vela?",
+      "answer": 110,
+      "unit": "km/h",
+      "fact": "Ele é considerado o peixe mais rápido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cm tem o menor peixe do mundo, em milímetros?",
+      "answer": 8,
+      "unit": "mm",
+      "fact": "É uma espécie da Indonésia, que vive em água ácida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias, em média, vive uma mosca-doméstica?",
+      "answer": 28,
+      "unit": "dias",
+      "fact": "Em poucos dias, ela já pode botar ovos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes por segundo uma mosca bate as asas, aproximadamente?",
+      "answer": 200,
+      "unit": "vezes",
+      "fact": "Algumas moscas menores chegam a mais de mil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes por segundo uma abelha bate as asas, aproximadamente?",
+      "answer": 230,
+      "unit": "vezes",
+      "fact": "A forma de voar dela confundiu os cientistas por décadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morrem por ano por picadas de cobra no mundo, aproximadamente?",
+      "answer": 120000,
+      "unit": "pessoas",
+      "fact": "Os números vêm principalmente da Índia e da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morrem por ano por doenças transmitidas por mosquitos, aproximadamente?",
+      "answer": 700000,
+      "unit": "pessoas",
+      "fact": "O mosquito é o animal que mais mata humanos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morrem por ano em ataques de tubarão, aproximadamente?",
+      "answer": 5,
+      "unit": "pessoas",
+      "fact": "Morrem mais pessoas por causa de vacas e cocos caindo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos tubarões são mortos por ano por humanos, aproximadamente?",
+      "answer": 100000000,
+      "unit": "tubarões",
+      "fact": "A pesca para fazer sopa de barbatana é uma das causas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas aves morrem por ano nos EUA por choques em janelas de vidro, em média?",
+      "answer": 1000000000,
+      "unit": "aves",
+      "fact": "É uma das maiores causas de mortes de aves."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas aves são mortas por gatos, por ano, nos EUA, segundo estimativa?",
+      "answer": 2400000000,
+      "unit": "aves",
+      "fact": "Gatos domésticos também caçam, mesmo bem alimentados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas galinhas vivem no mundo, aproximadamente?",
+      "answer": 33000000000,
+      "unit": "galinhas",
+      "fact": "Elas são as aves mais numerosas da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bois existem no mundo, aproximadamente?",
+      "answer": 1500000000,
+      "unit": "bois",
+      "fact": "A pecuária ocupa grande parte das terras agrícolas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a massa de seres humanos em relação a todos os mamíferos selvagens, em vezes?",
+      "answer": 10,
+      "unit": "vezes",
+      "fact": "Os mamíferos domésticos são ainda mais pesados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a porcentagem da biomassa total de mamíferos que corresponde aos selvagens?",
+      "answer": 4,
+      "unit": "%",
+      "fact": "Quase todo o resto são seres humanos e gado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a porcentagem da biomassa total da Terra composta por plantas?",
+      "answer": 82,
+      "unit": "%",
+      "fact": "As bactérias vêm depois, com cerca de 13%."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a porcentagem da biomassa total da Terra composta por animais?",
+      "answer": 0.4,
+      "unit": "%",
+      "fact": "Os humanos são uma parte pequena disso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas de insetos as aranhas comem por ano, em milhões?",
+      "answer": 800,
+      "unit": "milhões",
+      "fact": "É mais do que os seres humanos comem de carne e peixe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de toneladas de plástico entram nos oceanos por ano, aproximadamente?",
+      "answer": 11,
+      "unit": "milhões",
+      "fact": "Se nada mudar, o número pode quase triplicar até 2040."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o tamanho da Grande Mancha de Lixo do Pacífico, em milhões de km²?",
+      "answer": 1.6,
+      "unit": "milhão",
+      "fact": "É cerca de três vezes o tamanho da França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km² de floresta a Amazônia brasileira perdeu no pico de 2004?",
+      "answer": 27772,
+      "unit": "km²",
+      "fact": "Depois disso, a taxa caiu bastante até meados da década de 2010."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km² de floresta a Amazônia brasileira perdeu em 2023?",
+      "answer": 9001,
+      "unit": "km²",
+      "fact": "Em 2024, o número caiu para cerca de 6.300 km²."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos hectares o Pantanal perdeu com os incêndios de 2020, em milhões?",
+      "answer": 4,
+      "unit": "milhões",
+      "fact": "Foi quase um terço do bioma brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos animais morreram nos incêndios do Pantanal em 2020, em milhões?",
+      "answer": 17,
+      "unit": "milhões",
+      "fact": "A estimativa foi feita por um estudo publicado em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos animais foram afetados nos incêndios da Austrália em 2019-2020, em bilhões?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "Foi um dos maiores desastres da vida selvagem moderna."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos corais morreram na Grande Barreira entre 2016 e 2017, em %?",
+      "answer": 50,
+      "unit": "%",
+      "fact": "O calor da água é a principal causa dos branqueamentos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas espécies estão ameaçadas de extinção, segundo a IPBES, em milhões?",
+      "answer": 1,
+      "unit": "milhão",
+      "fact": "O relatório foi publicado em 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas espécies a IUCN classifica como ameaçadas, em 2024?",
+      "answer": 46000,
+      "unit": "espécies",
+      "fact": "A lista inclui cerca de 28% de tudo o que foi avaliado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a taxa de extinção atual, em comparação com a natural, em vezes?",
+      "answer": 1000,
+      "unit": "vezes",
+      "fact": "Muitos chamam isso de sexta extinção em massa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas extinções em massa aconteceram, segundo a ciência, antes do tempo atual?",
+      "answer": 5,
+      "unit": "extinções",
+      "fact": "A mais grave foi a do Permiano, há 252 milhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a porcentagem de espécies marinhas extintas no fim do Permiano?",
+      "answer": 96,
+      "unit": "%",
+      "fact": "É chamada de \"a Grande Morte\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a porcentagem de espécies extintas no fim do Cretáceo?",
+      "answer": 75,
+      "unit": "%",
+      "fact": "Isso inclui todos os dinossauros não aviários."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o diâmetro do asteroide que matou os dinossauros, em km?",
+      "answer": 10,
+      "unit": "km",
+      "fact": "A cratera tem mais de 180 km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o tamanho da cratera de Chicxulub, em km?",
+      "answer": 180,
+      "unit": "km",
+      "fact": "Ela fica no México, em Yucatán."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tinha o tsunami causado pelo asteroide de Chicxulub, em estimativa?",
+      "answer": 1500,
+      "unit": "metros",
+      "fact": "Foi talvez a maior onda da história da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o comprimento do Tiranossauro rex, em metros?",
+      "answer": 12,
+      "unit": "metros",
+      "fact": "Sue, o fóssil mais famoso, tem 12,3 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Por quanto foi vendido o fóssil de T. rex chamado Sue, em 1997, em dólares?",
+      "answer": 8360000,
+      "unit": "dólares",
+      "fact": "Foi comprado pelo Field Museum de Chicago."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Por quanto foi vendido o fóssil de T. rex chamado Stan, em 2020, em dólares?",
+      "answer": 31800000,
+      "unit": "dólares",
+      "fact": "Foi o fóssil mais caro da história até 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Por quanto foi vendido o fóssil de estegossauro Apex, em 2024, em dólares?",
+      "answer": 44600000,
+      "unit": "dólares",
+      "fact": "Foi o fóssil mais caro já vendido em leilão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do argentinossauro, em toneladas, segundo estimativas?",
+      "answer": 70,
+      "unit": "toneladas",
+      "fact": "É o maior animal terrestre já descoberto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o comprimento do argentinossauro, em metros, segundo estimativas?",
+      "answer": 35,
+      "unit": "metros",
+      "fact": "Ele tinha um pescoço enorme, bom para alcançar árvores altas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do megalodon, em toneladas, segundo estimativas?",
+      "answer": 50,
+      "unit": "toneladas",
+      "fact": "Seus dentes podem passar de 17 cm."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o comprimento do megalodon, em metros, segundo estimativas?",
+      "answer": 16,
+      "unit": "metros",
+      "fact": "Ele foi extinto há 3,6 milhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o comprimento do mosasauro, em metros, segundo estimativas?",
+      "answer": 15,
+      "unit": "metros",
+      "fact": "Ele aparece em uma cena famosa de Jurassic World."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a envergadura do Quetzalcoatlus, em metros, segundo estimativas?",
+      "answer": 11,
+      "unit": "metros",
+      "fact": "É como um pequeno avião."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o peso do pássaro-elefante, em kg, segundo estimativas?",
+      "answer": 650,
+      "unit": "kg",
+      "fact": "É a maior ave que já existiu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros tinha um ovo de pássaro-elefante, aproximadamente?",
+      "answer": 9,
+      "unit": "litros",
+      "fact": "Ele equivale a mais de 150 ovos de galinha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a altura da moa, ave extinta da Nova Zelândia, em metros?",
+      "answer": 3.6,
+      "unit": "metros",
+      "fact": "A espécie foi caçada até a extinção por volta do ano 1400."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg pesa o maior tubarão-branco já registrado, aproximadamente?",
+      "answer": 2000,
+      "unit": "kg",
+      "fact": "Ela foi apelidada de Deep Blue, e tem mais de 6 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura de um salto da Orca, em metros?",
+      "answer": 5,
+      "unit": "metros",
+      "fact": "Até uma baleia de várias toneladas se projeta inteira no ar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foram registrados os lobos reintroduzidos em Yellowstone, após anos de ausência?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "O impacto foi tão grande que mudou até o curso dos rios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi registrada a extinção oficial do rinoceronte-negro-ocidental?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "A caça pelos chifres destruiu a espécie."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi declarado extinto o golfinho Baiji, funcionalmente?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Uma expedição no rio Yangtzé não conseguiu achá-lo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi extinta a tartaruga Lonesome George, de Pinta?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "A tartaruga foi encontrada em 1971."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o último arau-gigante foi morto?",
+      "answer": 1844,
+      "scale": 50,
+      "fact": "Foi em uma ilha perto da Islândia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o último pombo-passageiro morreu?",
+      "answer": 1914,
+      "scale": 50,
+      "fact": "A espécie já teve bilhões de aves."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o último dodô foi visto, aproximadamente?",
+      "answer": 1662,
+      "scale": 50,
+      "fact": "Ele sumiu menos de um século depois da chegada dos humanos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o último quagga morreu?",
+      "answer": 1883,
+      "scale": 50,
+      "fact": "Foi no zoológico de Amsterdã, na Holanda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pontas costuma ter a estrela-do-mar-coroa-de-espinhos?",
+      "answer": 16,
+      "unit": "pontas",
+      "fact": "Ela é uma grande predadora de corais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias um filhote de águia-careca fica no ninho?",
+      "answer": 80,
+      "unit": "dias",
+      "fact": "O ninho pode pesar mais de uma tonelada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o peso máximo conhecido de um ninho de águia-careca, em toneladas?",
+      "answer": 2.7,
+      "unit": "toneladas",
+      "fact": "Foi encontrado na Flórida, em 1963."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a envergadura máxima de uma harpia, em metros?",
+      "answer": 2.2,
+      "unit": "metros",
+      "fact": "Ela é uma das aves mais fortes do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cm tem a garra de uma harpia, aproximadamente?",
+      "answer": 13,
+      "unit": "cm",
+      "fact": "É maior que a garra de um urso-pardo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade máxima do peixe-espada, em km/h?",
+      "answer": 100,
+      "unit": "km/h",
+      "fact": "Ele já foi visto perfurando barcos de madeira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos elefantes foram mortos por caçadores na África entre 2010 e 2012?",
+      "answer": 100000,
+      "unit": "elefantes",
+      "fact": "A demanda por marfim explodiu na época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a China proibiu o comércio legal de marfim?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "A proibição é vista como uma grande vitória contra a caça."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos rinocerontes-brancos-do-norte seguem vivos?",
+      "answer": 2,
+      "unit": "rinocerontes",
+      "fact": "São fêmeas, e os cientistas tentam salvar a espécie com embriões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos rinocerontes-de-java vivem hoje, aproximadamente?",
+      "answer": 75,
+      "unit": "rinocerontes",
+      "fact": "Todos ficam em um único parque na Indonésia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vaquitas vivem na natureza, aproximadamente, em 2024?",
+      "answer": 10,
+      "unit": "vaquitas",
+      "fact": "Elas são os cetáceos mais ameaçados do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos dura o ciclo de vida da cigarra periódica mais longa?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "O número primo pode ajudá-las a evitar predadores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de idade tinha Martha, a última pomba-passageira, ao morrer?",
+      "answer": 29,
+      "unit": "anos",
+      "fact": "O zoológico de Cincinnati construiu um memorial para ela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de idade tinha Toughie, a última rã-arborícola-de-franja-de-rabbs?",
+      "answer": 12,
+      "unit": "anos",
+      "fact": "Ele morreu em 2016, em um jardim botânico de Atlanta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Dian Fossey passou com gorilas em Ruanda?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Ela chegou lá em 1967 e foi morta em 1985."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Jane Goodall estudou chimpanzés em Gombe, aproximadamente?",
+      "answer": 60,
+      "unit": "anos",
+      "fact": "O trabalho começou em 1960."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias durou a viagem do HMS Beagle, aproximadamente?",
+      "answer": 1740,
+      "unit": "dias",
+      "fact": "A viagem foi de 1831 a 1836 e passou pelo Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias Darwin passou em Galápagos?",
+      "answer": 35,
+      "unit": "dias",
+      "fact": "A visita mudou a história da biologia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km³ de gelo a Antártida tem, em milhões?",
+      "answer": 26,
+      "unit": "milhões",
+      "fact": "É cerca de 90% de todo o gelo do planeta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ilhas Galápagos formam o arquipélago principal?",
+      "answer": 19,
+      "unit": "ilhas",
+      "fact": "Elas ficam a 1.000 km da costa do Equador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a Grande Muralha Verde planejada para cruzar a África?",
+      "answer": 8000,
+      "unit": "km",
+      "fact": "O projeto tenta frear o avanço do deserto do Saara."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a montanha mais alta em relação à base, o Mauna Kea?",
+      "answer": 10203,
+      "unit": "metros",
+      "fact": "Ele supera o Everest se contada a parte submersa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem o Monte Roraima?",
+      "answer": 2810,
+      "unit": "metros",
+      "fact": "Ele inspirou Up e o livro O Mundo Perdido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem o Dedo de Deus, em Teresópolis?",
+      "answer": 1692,
+      "unit": "metros",
+      "fact": "É um dos símbolos do montanhismo brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem o Pão de Açúcar, aproximadamente?",
+      "answer": 396,
+      "unit": "metros",
+      "fact": "A subida começou de bondinho em 1912."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem o rio São Francisco?",
+      "answer": 2830,
+      "unit": "km",
+      "fact": "Ele é chamado de \"Velho Chico\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem o rio Paraná?",
+      "answer": 4880,
+      "unit": "km",
+      "fact": "Ele é o segundo maior rio da América do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem o rio Mississippi-Missouri?",
+      "answer": 6275,
+      "unit": "km",
+      "fact": "É o maior sistema de rios da América do Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem o rio Yangtzé?",
+      "answer": 6300,
+      "unit": "km",
+      "fact": "É o maior rio da Ásia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países atravessa o rio Danúbio?",
+      "answer": 10,
+      "unit": "países",
+      "fact": "É o rio que mais atravessa países."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a profundidade do Cânion do Colorado, em metros?",
+      "answer": 1857,
+      "unit": "metros",
+      "fact": "Ele tem quase 450 km de comprimento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade das rochas mais antigas do Grand Canyon, em bilhões de anos?",
+      "answer": 1.8,
+      "unit": "bilhões",
+      "fact": "O cânion em si é muito mais jovem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade das rochas mais antigas da Terra, em bilhões de anos?",
+      "answer": 4,
+      "unit": "bilhões",
+      "fact": "Elas ficam no noroeste do Canadá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior número de filhotes conhecido em uma ninhada de porca?",
+      "answer": 37,
+      "unit": "filhotes",
+      "fact": "Foi um recorde mundial na Dinamarca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior número de filhotes conhecido em uma ninhada de cadela?",
+      "answer": 24,
+      "unit": "filhotes",
+      "fact": "Foi a mastim napolitana Tia, em 2004, na Inglaterra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que altitude vive a lhama, em metros, em média?",
+      "answer": 4000,
+      "unit": "metros",
+      "fact": "O sangue dela captura mais oxigênio que o de outros mamíferos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o comprimento da língua de uma baleia-azul, em metros?",
+      "answer": 3,
+      "unit": "metros",
+      "fact": "Ela pesa o mesmo que um elefante pequeno."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade de impacto de um pica-pau contra uma árvore, em km/h?",
+      "answer": 25,
+      "unit": "km/h",
+      "fact": "Ele bate cerca de 20 vezes por segundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas bicadas por segundo um pica-pau pode dar?",
+      "answer": 20,
+      "unit": "bicadas",
+      "fact": "A força do impacto é de até 1.000 g."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem um inseto adulto?",
+      "answer": 6,
+      "unit": "patas",
+      "fact": "As aranhas não são insetos, pois têm oito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas asas tem uma abelha?",
+      "answer": 4,
+      "unit": "asas",
+      "fact": "Elas se prendem em dois pares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas patas tem um caranguejo, contando as pinças?",
+      "answer": 10,
+      "unit": "patas",
+      "fact": "Por isso, ele é um decápode."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses dura a gestação de uma gata?",
+      "answer": 2,
+      "unit": "meses",
+      "fact": "A ninhada costuma ter de 3 a 5 filhotes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima de um guepardo, em km/h?",
+      "answer": 100,
+      "unit": "km/h",
+      "fact": "Ele só mantém essa corrida por poucos segundos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas pode pesar uma baleia-azul?",
+      "answer": 150,
+      "unit": "toneladas",
+      "fact": "É o maior animal que já existiu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros pode medir uma baleia-azul?",
+      "answer": 30,
+      "unit": "metros",
+      "fact": "Ela come principalmente krill."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto pesa o coração de uma baleia-azul, em quilos, aproximadamente?",
+      "answer": 180,
+      "unit": "quilos",
+      "fact": "Antes, se pensava que ele fosse bem maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Até que altitude em relação ao mar um cachalote mergulha, em metros, aproximadamente?",
+      "answer": -2000,
+      "unit": "metros",
+      "scale": 500,
+      "fact": "Ele busca lulas-gigantes nas profundezas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas aves existem no mundo, em bilhões, segundo um estudo de 2021?",
+      "answer": 50,
+      "unit": "bilhões",
+      "fact": "Isso dá cerca de seis aves por pessoa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas árvores existem na Terra, em trilhões, aproximadamente?",
+      "answer": 3,
+      "unit": "trilhões",
+      "fact": "A estimativa foi publicada em 2015."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas árvores existem na Amazônia, em bilhões, aproximadamente?",
+      "answer": 390,
+      "unit": "bilhões",
+      "fact": "Elas se dividem em cerca de 16 mil espécies."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas formigas existem na Terra, em quatrilhões, segundo um estudo de 2022?",
+      "answer": 20,
+      "unit": "quatrilhões",
+      "fact": "Elas somam mais massa que aves e mamíferos selvagens juntos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes por minuto o coração de um beija-flor bate, em pleno voo?",
+      "answer": 1200,
+      "unit": "batimentos",
+      "fact": "Em repouso, a frequência é bem menor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes por segundo um beija-flor bate as asas, nas espécies pequenas?",
+      "answer": 80,
+      "unit": "batidas",
+      "fact": "Por isso, as asas parecem borradas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos pode viver um tubarão-da-groenlândia, aproximadamente?",
+      "answer": 400,
+      "unit": "anos",
+      "fact": "A idade foi medida pelo olho de um exemplar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem o pinheiro Matusalém, nos EUA, aproximadamente?",
+      "answer": 4800,
+      "unit": "anos",
+      "fact": "O local exato é mantido em segredo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da maior árvore do mundo, em metros?",
+      "answer": 115,
+      "unit": "metros",
+      "fact": "A sequoia Hyperion fica na Califórnia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a velocidade de mergulho de um falcão-peregrino, em km/h?",
+      "answer": 390,
+      "unit": "km/h",
+      "fact": "Ele é o animal mais rápido do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros por ano uma andorinha-do-ártico percorre, aproximadamente?",
+      "answer": 70000,
+      "unit": "km",
+      "fact": "Em uma vida, ela pode voar o equivalente a três idas à Lua."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Até que altitude em relação ao mar já se filmou um peixe, em metros, aproximadamente?",
+      "answer": -8300,
+      "unit": "metros",
+      "scale": 2000,
+      "fact": "Um peixe-caracol foi filmado perto do Japão, em 2023."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que temperatura um tardígrado já suportou em laboratório, em °C, aproximadamente?",
+      "answer": -272,
+      "unit": "°C",
+      "scale": 30,
+      "fact": "Ele resiste em um estado chamado de criptobiose."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto pesa um elefante-africano macho grande, em toneladas?",
+      "answer": 6,
+      "unit": "toneladas",
+      "fact": "Ele é o maior animal terrestre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto pesa um ovo de avestruz, em quilos, aproximadamente?",
+      "answer": 1.4,
+      "unit": "quilo",
+      "fact": "Ele equivale a cerca de 24 ovos de galinha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas espécies de aves há no Brasil, aproximadamente?",
+      "answer": 1900,
+      "unit": "espécies",
+      "fact": "O país está entre os mais ricos do mundo em aves."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pernas tem uma centopeia de jardim comum, no mínimo?",
+      "answer": 30,
+      "unit": "pernas",
+      "fact": "Apesar do nome, nenhuma tem cem pernas exatas por regra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura uma borboleta-monarca em média, em meses?",
+      "answer": 8,
+      "unit": "meses",
+      "fact": "As gerações que migram vivem bem mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ovos uma tartaruga-marinha põe por ninho, aproximadamente?",
+      "answer": 100,
+      "unit": "ovos",
+      "fact": "Poucos filhotes chegam à vida adulta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos filhotes um panda-gigante tem por parto, em geral?",
+      "answer": 1,
+      "unit": "filhote",
+      "fact": "Às vezes nascem gêmeos, mas é raro criar os dois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto mede um beija-flor-abelha, o menor do mundo, em centímetros?",
+      "answer": 5,
+      "unit": "cm",
+      "fact": "Ele vive em Cuba."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um coala dorme, aproximadamente?",
+      "answer": 20,
+      "unit": "horas",
+      "fact": "As folhas de eucalipto dão pouca energia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas espécies de animais marinhos estão descritas, em milhares, aproximadamente?",
+      "answer": 240,
+      "unit": "mil",
+      "fact": "Os oceanos ainda guardam muitas desconhecidas."
+    }
+  ]
+}

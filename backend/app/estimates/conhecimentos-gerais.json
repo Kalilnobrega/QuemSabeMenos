@@ -209,6 +209,2715 @@
       "answer": 122,
       "unit": "anos",
       "fact": "A francesa viveu de 1875 a 1997 e conheceu Van Gogh quando era jovem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cordas tem um violão comum?",
+      "answer": 6,
+      "unit": "cordas",
+      "fact": "A afinação comum é mi, lá, ré, sol, si, mi."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cordas tem um violino?",
+      "answer": 4,
+      "unit": "cordas",
+      "fact": "Stradivari é o fabricante mais famoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cordas tem um cavaquinho?",
+      "answer": 4,
+      "unit": "cordas",
+      "fact": "Ele é muito usado no samba."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas notas musicais básicas existem?",
+      "answer": 7,
+      "unit": "notas",
+      "fact": "Elas vão do dó ao si."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o mês de agosto?",
+      "answer": 31,
+      "unit": "dias",
+      "fact": "O nome homenageia o imperador Augusto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o mês de junho?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "No Brasil, é época de festas juninas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o mês de janeiro?",
+      "answer": 31,
+      "unit": "dias",
+      "fact": "O nome vem do deus Jano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o mês de novembro?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "O nome vem de \"nove\", no antigo calendário."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias há entre o Natal e o Ano-Novo?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "A data também é conhecida como a semana mais lenta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de idade são necessários para tirar a CNH no Brasil?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Antes disso, a condução é proibida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de idade são necessários para votar no Brasil, no mínimo?",
+      "answer": 16,
+      "unit": "anos",
+      "fact": "Entre 16 e 18 anos, o voto é facultativo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de idade tem uma debutante?",
+      "answer": 15,
+      "unit": "anos",
+      "fact": "A festa é muito tradicional no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem a Quaresma?",
+      "answer": 40,
+      "unit": "dias",
+      "fact": "Ela vai da Quarta-Feira de Cinzas até a Páscoa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o ano novo chinês, com festa?",
+      "answer": 15,
+      "unit": "dias",
+      "fact": "Ele termina com o Festival das Lanternas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos signos tem o horóscopo chinês?",
+      "answer": 12,
+      "unit": "signos",
+      "fact": "Cada um representa um animal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura o mandato de um senador brasileiro?",
+      "answer": 8,
+      "unit": "anos",
+      "fact": "A eleição de renovação acontece a cada quatro anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem o arco-íris, segundo a tradição?",
+      "answer": 7,
+      "unit": "cores",
+      "fact": "Newton escolheu esse número."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem a bandeira da Alemanha?",
+      "answer": 3,
+      "unit": "cores",
+      "fact": "As cores são preto, vermelho e amarelo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis tem o símbolo olímpico?",
+      "answer": 5,
+      "unit": "anéis",
+      "fact": "Ele foi criado em 1913."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos tem uma estrela de Davi?",
+      "answer": 6,
+      "unit": "pontas",
+      "fact": "Ela está na bandeira de Israel."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas estrelas tem a bandeira da União Europeia?",
+      "answer": 12,
+      "unit": "estrelas",
+      "fact": "O número não muda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilos tem uma tonelada?",
+      "answer": 1000,
+      "unit": "quilos",
+      "fact": "A palavra vem de \"tonel\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos gramas tem uma onça, aproximadamente?",
+      "answer": 28,
+      "unit": "gramas",
+      "fact": "A onça-troy é usada para o ouro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um metro e meio?",
+      "answer": 150,
+      "unit": "cm",
+      "fact": "Um metro tem 100 centímetros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem a Torre Eiffel, aproximadamente?",
+      "answer": 330,
+      "unit": "metros",
+      "fact": "A altura muda um pouco com o calor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros tem a Grande Pirâmide de Gizé, hoje?",
+      "answer": 139,
+      "unit": "metros",
+      "fact": "Na origem, ela tinha cerca de 146."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o CPF?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "Hoje, ele é usado em quase toda a vida civil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu o Código de Defesa do Consumidor?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Ele trouxe várias proteções à população."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o CEP no Brasil?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "Ele tinha, a princípio, só cinco dígitos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Disney?",
+      "answer": 1923,
+      "scale": 50,
+      "fact": "Walt e Roy Disney a fundaram."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurada a Disneylândia?",
+      "answer": 1955,
+      "scale": 50,
+      "fact": "Ela fica na Califórnia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurado o Disney World?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "Ele fica na Flórida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurada a Torre Eiffel?",
+      "answer": 1889,
+      "scale": 50,
+      "fact": "Ela foi feita para uma exposição mundial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a primeira Olimpíada moderna?",
+      "answer": 1896,
+      "scale": 50,
+      "fact": "Foi em Atenas, na Grécia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Declaração Universal dos Direitos Humanos?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Eleanor Roosevelt ajudou a redigi-la."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi instituído o voto feminino no Brasil?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "Getúlio Vargas assinou o código eleitoral."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi instituído o voto feminino nos EUA?",
+      "answer": 1920,
+      "scale": 50,
+      "fact": "Foi aprovado por uma emenda à Constituição."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Nova Zelândia aprovou o voto feminino?",
+      "answer": 1893,
+      "scale": 50,
+      "fact": "Foi o primeiro país a fazer isso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Lei Maria da Penha?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Ela protege as mulheres contra a violência doméstica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Estatuto da Criança e do Adolescente?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Ele substituiu o antigo Código de Menores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Estatuto do Idoso?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "A sigla do idoso é de 60 anos ou mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a CLT, no Brasil?",
+      "answer": 1943,
+      "scale": 50,
+      "fact": "Getúlio Vargas a assinou."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Real, no Brasil?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Ele foi um marco no combate à inflação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventado o telefone?",
+      "answer": 1876,
+      "scale": 50,
+      "fact": "Alexander Graham Bell registrou a patente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventada a lâmpada elétrica prática?",
+      "answer": 1879,
+      "scale": 50,
+      "fact": "Thomas Edison fez milhares de testes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o avião 14-Bis voou?",
+      "answer": 1906,
+      "scale": 50,
+      "fact": "Santos Dumont voou em Paris."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi feito o primeiro voo dos irmãos Wright?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "O voo teve só 12 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventado o cinema, pelos irmãos Lumière?",
+      "answer": 1895,
+      "scale": 50,
+      "fact": "A primeira sessão pública foi em Paris."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi feita a primeira transmissão de TV no Brasil?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Assis Chateaubriand fundou a TV Tupi."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventada a pasta de dente em tubo?",
+      "answer": 1892,
+      "scale": 50,
+      "fact": "Antes, ela vinha em potes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventado o sutiã moderno, com patente?",
+      "answer": 1914,
+      "scale": 50,
+      "fact": "Mary Phelps Jacob o criou com dois lenços."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventada a caneta esferográfica?",
+      "answer": 1938,
+      "scale": 50,
+      "fact": "László Bíró a criou na Hungria."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventado o tênis All Star?",
+      "answer": 1917,
+      "scale": 50,
+      "fact": "Chuck Taylor ajudou a torná-lo famoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inventado o skate?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Surfistas o usavam em dias sem onda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançada a boneca Barbie?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "Ruth Handler a criou."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Mickey Mouse?",
+      "answer": 1928,
+      "scale": 50,
+      "fact": "O curta se chamava \"Steamboat Willie\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o primeiro James Bond no cinema?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "O filme é \"007 Contra o Satânico Dr. No\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o primeiro Harry Potter, em livro?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Muitas editoras recusaram o manuscrito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurado o metrô de Londres?",
+      "answer": 1863,
+      "scale": 50,
+      "fact": "É o mais antigo do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurado o metrô de São Paulo?",
+      "answer": 1974,
+      "scale": 50,
+      "fact": "A primeira linha é a Azul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o 11 de setembro?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Foi em Nova York e Washington."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o homem pisou na Lua?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "Foi com a Apollo 11."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a pandemia de covid-19 foi decretada?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "A OMS a declarou em março."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano morreu Marilyn Monroe?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "Ela tinha 36 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano morreu Einstein?",
+      "answer": 1955,
+      "scale": 50,
+      "fact": "O cérebro dele foi estudado depois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano morreu a princesa Diana?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Foi em um acidente de carro, em Paris."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu o Papa Francisco?",
+      "answer": 1936,
+      "scale": 50,
+      "fact": "Ele nasceu em Buenos Aires."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos papas tiveram o nome de João Paulo?",
+      "answer": 2,
+      "unit": "papas",
+      "fact": "O segundo foi muito popular no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formam o Mercosul, com membros plenos atuais, em 2024?",
+      "answer": 5,
+      "unit": "países",
+      "fact": "A Bolívia virou o quinto membro pleno nesse ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos andares tem o Empire State Building?",
+      "answer": 102,
+      "unit": "andares",
+      "fact": "Ele foi o mais alto do mundo por quase 40 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos andares tem a Estátua da Liberdade até a coroa, em degraus?",
+      "answer": 354,
+      "unit": "degraus",
+      "fact": "A subida é bem cansativa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas janelas tem a coroa da Estátua da Liberdade?",
+      "answer": 25,
+      "unit": "janelas",
+      "fact": "Elas representam joias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pontas tem a coroa da Estátua da Liberdade?",
+      "answer": 7,
+      "unit": "pontas",
+      "fact": "Elas representam os sete mares e continentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas sílabas tem a palavra \"paralelepípedo\"?",
+      "answer": 7,
+      "unit": "sílabas",
+      "fact": "É uma palavra famosa pela dificuldade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas letras tem a palavra \"paralelepípedo\"?",
+      "answer": 14,
+      "unit": "letras",
+      "fact": "As crianças adoram tentar soletrá-la."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas letras tem a palavra \"otorrinolaringologista\"?",
+      "answer": 22,
+      "unit": "letras",
+      "fact": "Ela nomeia o médico de ouvido, nariz e garganta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas letras tem a palavra \"anticonstitucionalissimamente\"?",
+      "answer": 29,
+      "unit": "letras",
+      "fact": "É uma das palavras mais longas da língua."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses dura uma gravidez, aproximadamente?",
+      "answer": 9,
+      "unit": "meses",
+      "fact": "Em semanas, são cerca de 40."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas semanas dura uma gravidez, aproximadamente?",
+      "answer": 40,
+      "unit": "semanas",
+      "fact": "Os bebês nascidos antes de 37 são chamados de prematuros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por noite um adulto deve dormir, no mínimo, segundo muitos médicos?",
+      "answer": 7,
+      "unit": "horas",
+      "fact": "A recomendação varia entre 7 e 9 horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros de água se recomenda beber por dia, em geral?",
+      "answer": 2,
+      "unit": "litros",
+      "fact": "A necessidade muda de pessoa para pessoa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por dia se recomenda escovar os dentes, em geral?",
+      "answer": 3,
+      "unit": "vezes",
+      "fact": "A recomendação é depois das refeições."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos tem a mão de uma pessoa?",
+      "answer": 27,
+      "unit": "ossos",
+      "fact": "Os dois lados juntos têm mais de um quarto de todos os ossos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pulmões tem uma pessoa?",
+      "answer": 2,
+      "unit": "pulmões",
+      "fact": "O direito é um pouco maior."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos rins tem uma pessoa, em geral?",
+      "answer": 2,
+      "unit": "rins",
+      "fact": "Dá para viver com um só."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vidas um gato tem, segundo o ditado brasileiro?",
+      "answer": 7,
+      "unit": "vidas",
+      "fact": "Em inglês, o ditado fala em nove."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vidas um gato tem, segundo o ditado americano?",
+      "answer": 9,
+      "unit": "vidas",
+      "fact": "Os gatos são muito ágeis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anões tem a Branca de Neve?",
+      "answer": 7,
+      "unit": "anões",
+      "fact": "A Disney deu nome a eles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos porquinhos tem o famoso conto infantil?",
+      "answer": 3,
+      "unit": "porquinhos",
+      "fact": "Só a casa de tijolos resiste ao lobo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos mosqueteiros há no livro de Alexandre Dumas, com D'Artagnan?",
+      "answer": 4,
+      "unit": "personagens",
+      "fact": "O título do livro fala só em três."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cabeças tem a Hidra de Lerna, em versões antigas do mito?",
+      "answer": 9,
+      "unit": "cabeças",
+      "fact": "Quando uma é cortada, nascem mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ladrões tem a história de Ali Babá?",
+      "answer": 40,
+      "unit": "ladrões",
+      "fact": "A história é das \"Mil e Uma Noites\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas noites há no título de um famoso livro árabe?",
+      "answer": 1001,
+      "unit": "noites",
+      "fact": "Ela conta histórias para adiar a morte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias Noé ficou sob o dilúvio, segundo a Bíblia?",
+      "answer": 40,
+      "unit": "dias",
+      "fact": "Depois, a água demorou a baixar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos mandamentos tem a Bíblia, na lista mais conhecida?",
+      "answer": 10,
+      "unit": "mandamentos",
+      "fact": "Eles foram dados a Moisés."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos apóstolos tem Jesus na Bíblia?",
+      "answer": 12,
+      "unit": "apóstolos",
+      "fact": "Judas foi o traidor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reis magos visitaram Jesus, segundo a tradição?",
+      "answer": 3,
+      "unit": "reis",
+      "fact": "A Bíblia não dá o número exato."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas renas puxam o trenó do Papai Noel, sem Rudolph?",
+      "answer": 8,
+      "unit": "renas",
+      "fact": "O grupo é citado em um poema de 1823."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas de prata Judas recebeu, segundo a Bíblia?",
+      "answer": 30,
+      "unit": "moedas",
+      "fact": "O relato está em Mateus."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pilares tem o Islã?",
+      "answer": 5,
+      "unit": "pilares",
+      "fact": "A fé, a oração, a caridade, o jejum e a peregrinação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por dia um muçulmano deve rezar?",
+      "answer": 5,
+      "unit": "vezes",
+      "fact": "Os fiéis se voltam na direção de Meca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura o Ramadã, aproximadamente?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "Os fiéis jejuam do nascer ao pôr do sol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas velas tem uma chanuquiá, o candelabro de Chanucá?",
+      "answer": 9,
+      "unit": "velas",
+      "fact": "A nona serve para acender as demais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos braços tem a menorá, o candelabro judaico tradicional?",
+      "answer": 7,
+      "unit": "braços",
+      "fact": "Ela é um dos símbolos mais antigos do judaísmo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores há em um time de basquete em quadra?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "James Naismith criou o jogo em 1891."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de diamante?",
+      "answer": 60,
+      "unit": "anos",
+      "fact": "Poucos casais chegam a esse ponto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de papel?",
+      "answer": 1,
+      "unit": "ano",
+      "fact": "O primeiro ano é visto como frágil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de porcelana?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "A lista varia um pouco por país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de pérola?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "A lista mistura materiais comuns e raros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de rubi?",
+      "answer": 40,
+      "unit": "anos",
+      "fact": "O rubi é uma pedra vermelha muito valiosa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de esmeralda?",
+      "answer": 55,
+      "unit": "anos",
+      "fact": "A pedra é conhecida pelo verde."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de platina?",
+      "answer": 70,
+      "unit": "anos",
+      "fact": "A rainha Elizabeth II chegou lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas falam inglês no mundo, em bilhões, aproximadamente?",
+      "answer": 1.5,
+      "unit": "bilhão",
+      "fact": "Muitos falam como segunda língua."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas falam mandarim no mundo, em bilhões, aproximadamente?",
+      "answer": 1.1,
+      "unit": "bilhão",
+      "fact": "Ele usa milhares de caracteres."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas falam português no mundo, em milhões, aproximadamente?",
+      "answer": 260,
+      "unit": "milhões",
+      "fact": "O Brasil tem a maior parte delas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas falam espanhol no mundo, em milhões, aproximadamente?",
+      "answer": 560,
+      "unit": "milhões",
+      "fact": "O México é o país com mais falantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas falam esperanto no mundo, em milhões, aproximadamente?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "Esse número é só uma estimativa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos caracteres chineses uma pessoa precisa saber para ler um jornal, aproximadamente?",
+      "answer": 3000,
+      "unit": "caracteres",
+      "fact": "Um dicionário tem dezenas de milhares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos caracteres tem o maior dicionário chinês, em milhares, aproximadamente?",
+      "answer": 85,
+      "unit": "mil",
+      "fact": "Boa parte deles quase não é usada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto havaiano?",
+      "answer": 13,
+      "unit": "letras",
+      "fact": "Ele é um dos menores do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto khmer, do Camboja?",
+      "answer": 74,
+      "unit": "letras",
+      "fact": "Ele é um dos maiores do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto grego?",
+      "answer": 24,
+      "unit": "letras",
+      "fact": "Ele começa com alfa e beta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto russo?",
+      "answer": 33,
+      "unit": "letras",
+      "fact": "Ele usa o cirílico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto hebraico?",
+      "answer": 22,
+      "unit": "letras",
+      "fact": "Ele é escrito da direita para a esquerda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto árabe?",
+      "answer": 28,
+      "unit": "letras",
+      "fact": "Ele também é escrito da direita para a esquerda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos livros foram impressos pela Bíblia, no total, em bilhões, aproximadamente?",
+      "answer": 5,
+      "unit": "bilhões",
+      "fact": "Ela é o livro mais vendido da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos livros foram vendidos da série Harry Potter, em milhões, aproximadamente?",
+      "answer": 600,
+      "unit": "milhões",
+      "fact": "A autora é J. K. Rowling."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos livros foram vendidos de \"O Senhor dos Anéis\", em milhões, aproximadamente?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "A obra saiu em três volumes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos livros foram vendidos de Agatha Christie, em bilhões, aproximadamente?",
+      "answer": 2,
+      "unit": "bilhões",
+      "fact": "Só a Bíblia e Shakespeare a superam."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos livros Paulo Coelho vendeu, em milhões, aproximadamente?",
+      "answer": 320,
+      "unit": "milhões",
+      "fact": "Ele é um dos autores brasileiros mais lidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos livros de \"O Alquimista\" foram vendidos, em milhões?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "A obra foi traduzida para mais de 80 línguas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos aviões voam ao mesmo tempo, em média, no mundo, em milhares?",
+      "answer": 10,
+      "unit": "mil",
+      "fact": "A maioria voa no Hemisfério Norte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos voos comerciais há no mundo por dia, em milhares, aproximadamente?",
+      "answer": 100,
+      "unit": "mil",
+      "fact": "A pandemia chegou a reduzir muito esse número."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos passageiros passam por ano no aeroporto de Atlanta, em milhões?",
+      "answer": 108,
+      "unit": "milhões",
+      "fact": "Ele é o mais movimentado do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos passageiros passam por ano em Guarulhos, em milhões, aproximadamente?",
+      "answer": 43,
+      "unit": "milhões",
+      "fact": "Ele é o mais movimentado do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos carros existem no mundo, em bilhões, aproximadamente?",
+      "answer": 1.5,
+      "unit": "bilhão",
+      "fact": "Os EUA e a China têm boa parte deles."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos carros são produzidos no mundo por ano, em milhões, aproximadamente?",
+      "answer": 90,
+      "unit": "milhões",
+      "fact": "A China é a maior produtora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos carros tem a frota do Brasil, em milhões, aproximadamente?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "São Paulo tem a maior parte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Fusca foram produzidas, em milhões?",
+      "answer": 21.5,
+      "unit": "milhões",
+      "fact": "O último saiu do México em 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Toyota Corolla foram vendidas, em milhões, aproximadamente?",
+      "answer": 50,
+      "unit": "milhões",
+      "fact": "Ele é o carro mais vendido da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Gol da Volkswagen foram produzidas, em milhões, aproximadamente?",
+      "answer": 8.5,
+      "unit": "milhões",
+      "fact": "Ele foi o carro mais vendido do Brasil por décadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Ford Modelo T foram produzidas, em milhões?",
+      "answer": 15,
+      "unit": "milhões",
+      "fact": "A linha de montagem reduziu os custos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas lojas tem a IKEA no mundo, aproximadamente?",
+      "answer": 480,
+      "unit": "lojas",
+      "fact": "A Suécia é o berço da marca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas lojas tem a Zara no mundo, aproximadamente?",
+      "answer": 2000,
+      "unit": "lojas",
+      "fact": "A empresa é da Espanha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos funcionários tem o Walmart no mundo, em milhões?",
+      "answer": 2.1,
+      "unit": "milhões",
+      "fact": "Ele é o maior empregador privado do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é o maior prêmio de loteria da história dos EUA, em bilhões de dólares?",
+      "answer": 2.04,
+      "unit": "bilhões",
+      "fact": "Foi em 2022, na Powerball."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendido o quadro mais caro da história, em milhões de dólares?",
+      "answer": 450,
+      "unit": "milhões",
+      "fact": "É o \"Salvator Mundi\", de Leonardo da Vinci."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendido o carro mais caro em leilão, em milhões de euros?",
+      "answer": 135,
+      "unit": "milhões",
+      "fact": "É um Mercedes-Benz 300 SLR, de 1955."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendida uma banana grudada na parede com fita, em milhões de dólares, em 2024?",
+      "answer": 6.2,
+      "unit": "milhões",
+      "fact": "A obra se chama \"Comediante\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendido o diamante rosa, em 2017, em milhões de dólares?",
+      "answer": 71,
+      "unit": "milhões",
+      "fact": "Ele se chama Estrela Rosa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilates tem o maior diamante bruto já achado?",
+      "answer": 3106,
+      "unit": "quilates",
+      "fact": "Ele se chama Cullinan."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gramas pesa um quilate?",
+      "answer": 0.2,
+      "unit": "grama",
+      "fact": "A palavra vem de uma semente usada como peso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos gramas pesa uma onça-troy de ouro, aproximadamente?",
+      "answer": 31.1,
+      "unit": "gramas",
+      "fact": "Ela é o padrão de preço do ouro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto pesa uma barra de ouro comum de banco central, em quilos, aproximadamente?",
+      "answer": 12.4,
+      "unit": "quilos",
+      "fact": "Ela vale centenas de milhares de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o lado do cubo que caberia todo o ouro extraído, em metros, aproximadamente?",
+      "answer": 22,
+      "unit": "metros",
+      "fact": "O ouro é muito denso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas notas de dólar circulam, em bilhões, aproximadamente?",
+      "answer": 55,
+      "unit": "bilhões",
+      "fact": "A nota de 100 tem a maior parte do valor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dura em média uma nota de 1 dólar, em anos, aproximadamente?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "As notas de 100 duram bem mais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custa imprimir uma nota de 100 dólares, em centavos, aproximadamente?",
+      "answer": 19,
+      "unit": "centavos",
+      "fact": "Ela tem muitos itens de segurança."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Prêmios Nobel recebeu a família Curie, somando todos?",
+      "answer": 5,
+      "unit": "prêmios",
+      "fact": "A filha e o genro também ganharam."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto vale um Prêmio Nobel, em milhões de coroas suecas, em 2024?",
+      "answer": 11,
+      "unit": "milhões",
+      "fact": "O valor sai da fortuna de Alfred Nobel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas estatuetas do Oscar \"Titanic\" ganhou?",
+      "answer": 11,
+      "unit": "estatuetas",
+      "fact": "Dois outros filmes têm o mesmo recorde."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto pesa uma estatueta do Oscar, em quilos?",
+      "answer": 3.8,
+      "unit": "quilos",
+      "fact": "Ela é banhada a ouro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto mede uma estatueta do Oscar, em centímetros?",
+      "answer": 34,
+      "unit": "cm",
+      "fact": "Ela é um cavaleiro sobre um rolo de filme."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do gelo seco, em °C?",
+      "answer": -78,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Ele é dióxido de carbono congelado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do nitrogênio usado em sorvetes de laboratório, em °C?",
+      "answer": -196,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Ele também é usado em tratamentos de pele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do zero absoluto, em °C, arredondada?",
+      "answer": -273,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Nenhum objeto consegue chegar exatamente a ele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média de um voo de cruzeiro do lado de fora do avião, em °C?",
+      "answer": -55,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "O ar fica bem rarefeito lá em cima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morrem por ano no mundo, em milhões, aproximadamente?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "As doenças do coração são a causa número um."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas nascem por ano no mundo, em milhões, aproximadamente?",
+      "answer": 130,
+      "unit": "milhões",
+      "fact": "A taxa vem caindo há décadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viveram na Terra até hoje, em bilhões, aproximadamente?",
+      "answer": 117,
+      "unit": "bilhões",
+      "fact": "É uma estimativa do Population Reference Bureau."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bebês nascem no mundo por segundo, aproximadamente?",
+      "answer": 4,
+      "unit": "bebês",
+      "fact": "A conta é uma média anual."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes o coração bate em uma vida de 80 anos, em bilhões, aproximadamente?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "São quase 100 mil batidas por dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros de sangue o coração bombeia por dia, aproximadamente?",
+      "answer": 7500,
+      "unit": "litros",
+      "fact": "Em uma vida, isso enche muitas piscinas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros de vasos sanguíneos há no corpo, aproximadamente?",
+      "answer": 100000,
+      "unit": "km",
+      "fact": "Essa medida dá mais de duas voltas ao redor da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas células tem o corpo humano, em trilhões, aproximadamente?",
+      "answer": 37,
+      "unit": "trilhões",
+      "fact": "Isso sem contar as bactérias que vivem nele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos fios de cabelo tem uma pessoa, em milhares, aproximadamente?",
+      "answer": 100,
+      "unit": "mil",
+      "fact": "Todo dia, caem dezenas deles."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes uma pessoa pisca por dia, em milhares, aproximadamente?",
+      "answer": 15,
+      "unit": "mil",
+      "fact": "Isso ajuda a manter os olhos úmidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos passos dá uma pessoa em uma vida, em milhões, aproximadamente?",
+      "answer": 200,
+      "unit": "milhões",
+      "fact": "Isso é bem mais do que uma volta ao mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos uma pessoa passa dormindo em uma vida de 75 anos, aproximadamente?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "É um terço da vida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o recorde de tempo sem dormir, em dias, em 1964?",
+      "answer": 11,
+      "unit": "dias",
+      "fact": "Randy Gardner foi quem bateu o recorde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o recorde de tempo prendendo a respiração, em minutos?",
+      "answer": 24,
+      "unit": "minutos",
+      "fact": "Um mergulhador croata usou oxigênio puro antes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de altura de um humano, em centímetros?",
+      "answer": 272,
+      "unit": "cm",
+      "fact": "Robert Wadlow morreu aos 22 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de idade de um humano, em anos?",
+      "answer": 122,
+      "unit": "anos",
+      "fact": "Jeanne Calment morava na França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de filhos de uma só mulher, segundo o Guinness?",
+      "answer": 69,
+      "unit": "filhos",
+      "fact": "Uma camponesa russa do século XVIII teria tido esse número."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de velocidade de um carro em terra, em km/h?",
+      "answer": 1228,
+      "unit": "km/h",
+      "fact": "O Thrust SSC quebrou a barreira do som."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de velocidade de um trem de passageiros, em km/h?",
+      "answer": 603,
+      "unit": "km/h",
+      "fact": "Um trem japonês de levitação magnética fez isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o recorde de velocidade de um trem comercial, em km/h?",
+      "answer": 431,
+      "unit": "km/h",
+      "fact": "O de Xangai usa levitação magnética."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a velocidade de cruzeiro de um avião comercial, em km/h?",
+      "answer": 900,
+      "unit": "km/h",
+      "fact": "Com vento de cauda, ela pode subir bastante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual era a velocidade de cruzeiro do Concorde, em km/h?",
+      "answer": 2180,
+      "unit": "km/h",
+      "fact": "Ele cruzava o Atlântico em cerca de 3 horas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Concorde fez seu último voo?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "O acidente de 2000 ajudou a selar o destino dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude de voo de um avião comercial, em metros, aproximadamente?",
+      "answer": 11000,
+      "unit": "metros",
+      "fact": "A esse nível, há menos turbulência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros de combustível gasta um Boeing 747 por segundo, aproximadamente?",
+      "answer": 4,
+      "unit": "litros",
+      "fact": "A autonomia é de mais de 13 mil km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros de combustível cabem em um Airbus A380, em milhares?",
+      "answer": 320,
+      "unit": "mil",
+      "fact": "É o maior avião de passageiros do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos passageiros cabem no Airbus A380, no máximo?",
+      "answer": 853,
+      "unit": "passageiros",
+      "fact": "A maioria das companhias usa menos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o voo comercial mais longo sem escalas, em horas, em 2024?",
+      "answer": 19,
+      "unit": "horas",
+      "fact": "Singapura–Nova York é um dos mais longos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas pesa um Boeing 747-8 na decolagem, no máximo?",
+      "answer": 448,
+      "unit": "toneladas",
+      "fact": "Ele tem quatro motores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas pesava o Titanic?",
+      "answer": 46000,
+      "unit": "toneladas",
+      "fact": "Ele foi o maior navio de sua época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude em que o Titanic se encontra, em metros?",
+      "answer": -3800,
+      "unit": "metros",
+      "scale": 300,
+      "fact": "Os destroços só foram achados em 1985."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foram achados os destroços do Titanic?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "Robert Ballard liderou a expedição."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos passageiros cabem no maior navio de cruzeiros, o Icon of the Seas, em milhares?",
+      "answer": 7.6,
+      "unit": "mil",
+      "fact": "Ele foi lançado em 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas pesa o Icon of the Seas, em milhares?",
+      "answer": 250,
+      "unit": "mil",
+      "fact": "É o maior navio de cruzeiros do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos contêineres cabem no maior navio cargueiro, em milhares?",
+      "answer": 24,
+      "unit": "mil",
+      "fact": "Eles rodam por rotas fixas no mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias Júlio Verne previu para uma volta ao mundo?",
+      "answer": 80,
+      "unit": "dias",
+      "fact": "O personagem principal é Phileas Fogg."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias a jornalista Nellie Bly levou para dar a volta ao mundo, em 1889?",
+      "answer": 72,
+      "unit": "dias",
+      "fact": "Ela bateu o personagem de Júlio Verne."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias Colombo levou na primeira viagem para a América, aproximadamente?",
+      "answer": 70,
+      "unit": "dias",
+      "fact": "Ele partiu da Espanha em agosto de 1492."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias a Apollo 11 levou para chegar à Lua?",
+      "answer": 4,
+      "unit": "dias",
+      "fact": "A viagem de volta levou um tempo parecido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos a Voyager 1 está no espaço, até 2024?",
+      "answer": 47,
+      "unit": "anos",
+      "fact": "Ela foi lançada em 1977."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas bilhões de km a Voyager 1 está da Terra, em 2024, aproximadamente?",
+      "answer": 24,
+      "unit": "bilhões",
+      "fact": "Ela é o objeto humano mais distante."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custou o Programa Apollo, em valores corrigidos, em bilhões de dólares, aproximadamente?",
+      "answer": 280,
+      "unit": "bilhões",
+      "fact": "Ele levou o homem à Lua seis vezes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custou a Estação Espacial Internacional, em bilhões de dólares, aproximadamente?",
+      "answer": 150,
+      "unit": "bilhões",
+      "fact": "Ela é o objeto mais caro já feito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custou a construção do Burj Khalifa, em bilhões de dólares, aproximadamente?",
+      "answer": 1.5,
+      "unit": "bilhão",
+      "fact": "Ele foi inaugurado em 2010."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custa uma Olimpíada, em bilhões de dólares, em média?",
+      "answer": 12,
+      "unit": "bilhões",
+      "fact": "Quase sempre passa do orçamento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto custa a campanha presidencial dos EUA, em bilhões de dólares, em 2024?",
+      "answer": 5.5,
+      "unit": "bilhões",
+      "fact": "Muito disso é em anúncios de TV e de internet."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos telespectadores viram o Super Bowl de 2024, em milhões?",
+      "answer": 123,
+      "unit": "milhões",
+      "fact": "Foi o maior público da TV americana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos telespectadores viram a chegada do homem à Lua, em milhões, aproximadamente?",
+      "answer": 650,
+      "unit": "milhões",
+      "fact": "Foi uma grande audiência para a época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos telespectadores viram a final da Copa de 2022, em bilhões, aproximadamente?",
+      "answer": 1.5,
+      "unit": "bilhão",
+      "fact": "Argentina e França jogaram uma final histórica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos telespectadores viram o funeral de Elizabeth II, em bilhões, segundo estimativas?",
+      "answer": 4,
+      "unit": "bilhões",
+      "fact": "Muitos especialistas duvidaram desse número."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale a marca da Coca-Cola, em bilhões de dólares, em 2023?",
+      "answer": 106,
+      "unit": "bilhões",
+      "fact": "Ela é vendida em quase todo o mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Coca-Colas são bebidas por dia no mundo, em bilhões?",
+      "answer": 1.9,
+      "unit": "bilhão",
+      "fact": "O dado é da própria empresa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas canetas BIC já foram vendidas, em bilhões, aproximadamente?",
+      "answer": 100,
+      "unit": "bilhões",
+      "fact": "Ela é uma das mais vendidas da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Barbies foram vendidas, em bilhões, aproximadamente?",
+      "answer": 1,
+      "unit": "bilhão",
+      "fact": "Ela já teve mais de 200 profissões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas profissões a Barbie já teve, aproximadamente?",
+      "answer": 200,
+      "unit": "profissões",
+      "fact": "Ela já foi até astronauta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas partidas de xadrez possíveis existem, em potência de 10, pelo número de Shannon?",
+      "answer": 120,
+      "unit": "expoente",
+      "fact": "O número é 10 elevado a 120."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes um papel precisa ser dobrado para chegar à Lua, em teoria?",
+      "answer": 42,
+      "unit": "dobras",
+      "fact": "É mais uma curiosidade matemática."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cores o olho humano consegue distinguir, em milhões, aproximadamente?",
+      "answer": 10,
+      "unit": "milhões",
+      "fact": "A estimativa muda bastante em cada estudo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cheiros o nariz humano consegue distinguir, em trilhões, segundo um estudo de 2014?",
+      "answer": 1,
+      "unit": "trilhão",
+      "fact": "O número foi bastante discutido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pares de costelas tem uma pessoa?",
+      "answer": 12,
+      "unit": "pares",
+      "fact": "Algumas pessoas nascem com um par a mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dedos tem as mãos e os pés de uma pessoa, somados?",
+      "answer": 20,
+      "unit": "dedos",
+      "fact": "A contagem pelos dedos ajudou a criar sistemas numéricos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos sentidos básicos tem o corpo, segundo a lista tradicional?",
+      "answer": 5,
+      "unit": "sentidos",
+      "fact": "Os cientistas já contam vários outros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura uma Copa do Mundo até a próxima?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "Só a guerra interrompeu esse ritmo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas tem um dia em Marte, arredondando?",
+      "answer": 25,
+      "unit": "horas",
+      "fact": "Ele tem 24 horas e 37 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centavos tem um dólar americano?",
+      "answer": 100,
+      "unit": "centavos",
+      "fact": "A moeda de 1 centavo traz o rosto de Lincoln."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centavos vale uma moeda de um quarto de dólar?",
+      "answer": 25,
+      "unit": "centavos",
+      "fact": "Nos EUA, ela é chamada de \"quarter\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto vale a nota mais alta do real, em reais?",
+      "answer": 200,
+      "unit": "reais",
+      "fact": "Ela traz o lobo-guará e foi lançada em 2020."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas notas de real em circulação existem, entre os valores atuais?",
+      "answer": 7,
+      "unit": "valores",
+      "fact": "Vão de 2 a 200 reais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas moedas de real em circulação existem, entre os valores?",
+      "answer": 6,
+      "unit": "valores",
+      "fact": "Vão de 1 centavo a 1 real."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto vale a nota mais alta do euro, em euros?",
+      "answer": 500,
+      "unit": "euros",
+      "fact": "Ela deixou de ser emitida em 2019."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto vale a nota mais alta do dólar em circulação, em dólares?",
+      "answer": 100,
+      "unit": "dólares",
+      "fact": "Benjamin Franklin aparece nela."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a maior nota em dólares já emitida, em dólares?",
+      "answer": 100000,
+      "unit": "dólares",
+      "fact": "Ela só foi usada entre bancos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a nota de 1 cruzeiro real foi trocada pelo real?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Cada real valia 2.750 cruzeiros reais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias a mais tem um ano do calendário solar do que o lunar islâmico, aproximadamente?",
+      "answer": 11,
+      "unit": "dias",
+      "fact": "Por isso, o Ramadã muda de data a cada ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias tem o mês mais curto do calendário lunar islâmico?",
+      "answer": 29,
+      "unit": "dias",
+      "fact": "Os meses têm 29 ou 30 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano estamos no calendário judaico, em 2024, aproximadamente?",
+      "answer": 5785,
+      "fact": "A contagem começa na criação do mundo, segundo a tradição."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano estamos no calendário islâmico, em 2024, aproximadamente?",
+      "answer": 1446,
+      "scale": 50,
+      "fact": "A contagem começa com a viagem de Maomé a Medina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano estamos no calendário budista, em 2024, aproximadamente?",
+      "answer": 2567,
+      "fact": "A contagem começa com a morte de Buda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi adotado o calendário gregoriano?",
+      "answer": 1582,
+      "scale": 50,
+      "fact": "O papa Gregório XIII retirou 10 dias do ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias foram retirados do ano na criação do calendário gregoriano?",
+      "answer": 10,
+      "unit": "dias",
+      "fact": "Em alguns países, foi em 1582."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a Rússia adotou o calendário gregoriano?",
+      "answer": 1918,
+      "scale": 50,
+      "fact": "Por isso, a Revolução de Outubro foi em novembro pelo novo calendário."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Reino Unido adotou o calendário gregoriano?",
+      "answer": 1752,
+      "scale": 50,
+      "fact": "Foram retirados 11 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias tinha o ano, no calendário romano mais antigo?",
+      "answer": 304,
+      "unit": "dias",
+      "fact": "O inverno não contava."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos meses tinha o ano no calendário romano mais antigo?",
+      "answer": 10,
+      "unit": "meses",
+      "fact": "É por isso que dezembro vem de \"dez\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos fusos horários existem no mundo, no padrão comum?",
+      "answer": 24,
+      "unit": "fusos",
+      "fact": "Alguns países usam diferenças de 30 minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos fusos horários oficiais tem os EUA, com todos os territórios?",
+      "answer": 11,
+      "unit": "fusos",
+      "fact": "Na parte continental, são quatro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos são somados em um segundo intercalar?",
+      "answer": 1,
+      "unit": "segundo",
+      "fact": "Ele é usado para ajustar os relógios atômicos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos intercalares foram somados desde 1972?",
+      "answer": 27,
+      "unit": "segundos",
+      "fact": "A prática deve acabar até 2035."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros corre a luz em um nanossegundo, aproximadamente?",
+      "answer": 0.3,
+      "unit": "metro",
+      "fact": "Isso dá cerca de 30 centímetros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas oscilações por segundo tem um relógio de quartzo?",
+      "answer": 32768,
+      "unit": "oscilações",
+      "fact": "O número é uma potência de 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes o ponteiro dos segundos dá a volta em um dia?",
+      "answer": 1440,
+      "unit": "voltas",
+      "fact": "É uma volta a cada minuto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes o ponteiro dos minutos dá a volta em um dia?",
+      "answer": 24,
+      "unit": "voltas",
+      "fact": "É uma volta a cada hora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes o ponteiro das horas dá a volta em um dia?",
+      "answer": 2,
+      "unit": "voltas",
+      "fact": "É uma volta a cada 12 horas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos um relógio atômico leva para atrasar 1 segundo, em milhões de anos, aproximadamente?",
+      "answer": 300,
+      "unit": "milhões",
+      "fact": "Os novos modelos ópticos são ainda mais precisos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Stonehenge tem, aproximadamente?",
+      "answer": 5000,
+      "unit": "anos",
+      "fact": "As pedras vieram de muito longe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos tem a Grande Pirâmide de Gizé, aproximadamente?",
+      "answer": 4500,
+      "unit": "anos",
+      "fact": "Ela foi a construção mais alta do mundo por muito tempo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos foi a Grande Pirâmide a construção mais alta do mundo, aproximadamente?",
+      "answer": 3800,
+      "unit": "anos",
+      "fact": "Depois, a Catedral de Lincoln a superou."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem a Grande Muralha da China, somando tudo, em milhares?",
+      "answer": 21,
+      "unit": "mil",
+      "fact": "Ela foi feita ao longo de séculos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção da Sagrada Família, até 2024?",
+      "answer": 142,
+      "unit": "anos",
+      "fact": "A obra começou em 1882."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção da Catedral de Colônia?",
+      "answer": 632,
+      "unit": "anos",
+      "fact": "Ela foi iniciada em 1248 e acabada em 1880."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção do Taj Mahal, aproximadamente?",
+      "answer": 22,
+      "unit": "anos",
+      "fact": "Foi um mausoléu para a esposa do imperador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção do Empire State?",
+      "answer": 1,
+      "unit": "ano",
+      "fact": "A obra durou só 410 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos rebites tem a Torre Eiffel, em milhões, aproximadamente?",
+      "answer": 2.5,
+      "unit": "milhões",
+      "fact": "Ela leva 60 toneladas de tinta a cada sete anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas pesa a Torre Eiffel?",
+      "answer": 10100,
+      "unit": "toneladas",
+      "fact": "Só a estrutura de ferro tem 7.300 toneladas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas pesa o Cristo Redentor?",
+      "answer": 635,
+      "unit": "toneladas",
+      "fact": "Ele é coberto por pedra-sabão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas pesa a Estátua da Liberdade?",
+      "answer": 225,
+      "unit": "toneladas",
+      "fact": "Ela chegou aos EUA em 214 caixas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem o maior prédio do Brasil, em Balneário Camboriú, aproximadamente?",
+      "answer": 290,
+      "unit": "metros",
+      "fact": "A cidade é conhecida pelos arranha-céus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude de Jericó, em metros?",
+      "answer": -258,
+      "unit": "metros",
+      "scale": 20,
+      "fact": "Ela é uma das cidades mais baixas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Mar Morto, em metros, aproximadamente?",
+      "answer": -430,
+      "unit": "metros",
+      "scale": 30,
+      "fact": "Ele é o ponto mais baixo em terra firme."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do fundo da Fossa das Marianas, em metros, aproximadamente?",
+      "answer": -10900,
+      "unit": "metros",
+      "fact": "Poucas pessoas já chegaram até lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Vale da Morte, nos EUA, em metros?",
+      "answer": -86,
+      "unit": "metros",
+      "scale": 20,
+      "fact": "Ele é o ponto mais baixo da América do Norte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos uma garrafa de plástico pode levar para se decompor, aproximadamente?",
+      "answer": 450,
+      "unit": "anos",
+      "fact": "Ainda assim, ela pode virar pedacinhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos uma lata de alumínio pode levar para se decompor, aproximadamente?",
+      "answer": 200,
+      "unit": "anos",
+      "fact": "O Brasil recicla quase todas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a taxa de reciclagem das latas de alumínio no Brasil, em porcentagem?",
+      "answer": 97,
+      "unit": "%",
+      "fact": "Ela é uma das maiores do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos um vidro pode levar para se decompor, aproximadamente?",
+      "answer": 4000,
+      "unit": "anos",
+      "fact": "Por isso, é muito melhor reciclá-lo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas de lixo o mundo produz por ano, em bilhões?",
+      "answer": 2,
+      "unit": "bilhões",
+      "fact": "A previsão é de aumento nas próximas décadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas de lixo o Brasil produz por ano, em milhões, aproximadamente?",
+      "answer": 80,
+      "unit": "milhões",
+      "fact": "Boa parte ainda vai para lixões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos a Terra tem, em bilhões de anos, aproximadamente?",
+      "answer": 4.5,
+      "unit": "bilhões",
+      "fact": "Os meteoritos ajudaram nessa estimativa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos o Universo tem, em bilhões de anos, aproximadamente?",
+      "answer": 13.8,
+      "unit": "bilhões",
+      "fact": "O dado vem do brilho do Big Bang."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos a humanidade existe, em milhares, aproximadamente?",
+      "answer": 300,
+      "unit": "mil",
+      "fact": "Os fósseis mais antigos estão no Marrocos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos faz que a escrita surgiu, aproximadamente?",
+      "answer": 5400,
+      "unit": "anos",
+      "fact": "Os sumérios criaram a escrita cuneiforme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos faz que a agricultura surgiu, aproximadamente?",
+      "answer": 12000,
+      "unit": "anos",
+      "fact": "Ela começou no Crescente Fértil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas línguas de sinais diferentes existem no mundo, aproximadamente?",
+      "answer": 300,
+      "unit": "línguas",
+      "fact": "Elas não são iguais de país para país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países têm a palavra \"Guiné\" no nome?",
+      "answer": 4,
+      "unit": "países",
+      "fact": "Guiné, Guiné-Bissau, Guiné Equatorial e Papua-Nova Guiné."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países não têm exército, aproximadamente?",
+      "answer": 22,
+      "unit": "países",
+      "fact": "A Costa Rica aboliu o seu em 1948."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países não têm saída para o mar, aproximadamente?",
+      "answer": 44,
+      "unit": "países",
+      "fact": "A Bolívia e o Paraguai estão na América do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países têm bandeira quadrada?",
+      "answer": 2,
+      "unit": "países",
+      "fact": "São a Suíça e o Vaticano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias o presidente mais breve dos EUA ficou no poder?",
+      "answer": 31,
+      "unit": "dias",
+      "fact": "William Henry Harrison ficou doente logo depois da posse."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Franklin Roosevelt presidiu os EUA, aproximadamente?",
+      "answer": 12,
+      "unit": "anos",
+      "fact": "Depois dele, surgiu o limite de dois mandatos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas votam em uma eleição geral na Índia, em milhões?",
+      "answer": 640,
+      "unit": "milhões",
+      "fact": "Foi o número de 2024, em semanas de votação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos eleitores tem o Brasil, em milhões, aproximadamente?",
+      "answer": 156,
+      "unit": "milhões",
+      "fact": "A urna eletrônica é usada desde 1996."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi usada pela primeira vez a urna eletrônica no Brasil?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Só em 2000 ela chegou a todas as cidades."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos parlamentares tem o Congresso brasileiro, somando as duas casas?",
+      "answer": 594,
+      "unit": "parlamentares",
+      "fact": "São 513 deputados e 81 senadores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem a idade de aposentadoria compulsória dos ministros do STF?",
+      "answer": 75,
+      "unit": "anos",
+      "fact": "O limite já foi de 70 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos artigos tem a Constituição Federal de 1988, no corpo principal?",
+      "answer": 250,
+      "unit": "artigos",
+      "fact": "Ela é uma das mais longas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas emendas tem a Constituição americana?",
+      "answer": 27,
+      "unit": "emendas",
+      "fact": "As dez primeiras são a Declaração de Direitos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos artigos tem a Declaração Universal dos Direitos Humanos?",
+      "answer": 30,
+      "unit": "artigos",
+      "fact": "Ela é o documento mais traduzido do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas línguas tem a Declaração Universal dos Direitos Humanos, em traduções?",
+      "answer": 500,
+      "unit": "línguas",
+      "fact": "Ela está no Guinness."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas estiveram na missa do papa em Copacabana, em 2013, em milhões?",
+      "answer": 3.7,
+      "unit": "milhões",
+      "fact": "Foi um dos maiores públicos da praia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viram o show de Rod Stewart em Copacabana, em 1994, em milhões?",
+      "answer": 3.5,
+      "unit": "milhões",
+      "fact": "O Guinness registrou o número."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viram o show de Madonna em Copacabana, em 2024, em milhões?",
+      "answer": 1.6,
+      "unit": "milhão",
+      "fact": "Foi o maior público da carreira dela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viram o show de Lady Gaga em Copacabana, em 2025, em milhões?",
+      "answer": 2.1,
+      "unit": "milhões",
+      "fact": "Foi o maior público da carreira dela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vão ao Réveillon de Copacabana, em milhões, aproximadamente?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "Os fogos duram cerca de 12 minutos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vão à Parada LGBT+ de São Paulo, em milhões, no recorde?",
+      "answer": 4,
+      "unit": "milhões",
+      "fact": "Ela é uma das maiores do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vão ao Carnaval do Rio, em milhões, no total?",
+      "answer": 8,
+      "unit": "milhões",
+      "fact": "O maior bloco é o Bola Preta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem o bloco Cordão da Bola Preta, desde 1918, até 2024?",
+      "answer": 106,
+      "unit": "anos",
+      "fact": "Ele é o mais antigo do Rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos tem a Portela no Carnaval do Rio?",
+      "answer": 22,
+      "unit": "títulos",
+      "fact": "Ela é a maior campeã da cidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos títulos tem a Mangueira no Carnaval do Rio?",
+      "answer": 20,
+      "unit": "títulos",
+      "fact": "As cores dela são verde e rosa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos minutos dura o desfile de uma escola do Grupo Especial do Rio, no máximo?",
+      "answer": 70,
+      "unit": "minutos",
+      "fact": "Passar do tempo tira pontos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Júlio César foi morto, com sinal de menos para antes de Cristo?",
+      "answer": -44,
+      "scale": 200,
+      "fact": "Ele foi atacado nos idos de março."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Cleópatra deixou este mundo, com sinal de menos para antes de Cristo?",
+      "answer": -30,
+      "scale": 200,
+      "fact": "Ela foi a última rainha do Egito."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Alexandre, o Grande, deixou este mundo, com sinal de menos para antes de Cristo?",
+      "answer": -323,
+      "scale": 200,
+      "fact": "Ele estava na Babilônia, com 32 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Sócrates foi condenado, com sinal de menos para antes de Cristo?",
+      "answer": -399,
+      "scale": 200,
+      "fact": "Ele tomou cicuta depois da sentença."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano aconteceram os primeiros Jogos de Olímpia, com sinal de menos para antes de Cristo?",
+      "answer": -776,
+      "scale": 200,
+      "fact": "Os gregos usavam essa data como referência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Roma foi fundada, segundo a lenda, com sinal de menos para antes de Cristo?",
+      "answer": -753,
+      "scale": 200,
+      "fact": "Rômulo e Remo são os gêmeos da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu Aristóteles, com sinal de menos para antes de Cristo?",
+      "answer": -384,
+      "scale": 200,
+      "fact": "Ele foi aluno de Platão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu Confúcio, com sinal de menos para antes de Cristo?",
+      "answer": -551,
+      "scale": 200,
+      "fact": "As ideias dele moldaram a China por séculos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma maratona, em números redondos de metros?",
+      "answer": 42195,
+      "unit": "metros",
+      "fact": "A distância veio da Olimpíada de Londres, em 1908."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem um campo de futebol oficial de comprimento, em média?",
+      "answer": 105,
+      "unit": "metros",
+      "fact": "A Fifa recomenda essa medida em jogos internacionais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma quadra de basquete oficial, de comprimento?",
+      "answer": 28,
+      "unit": "metros",
+      "fact": "Na NBA, ela é um pouco maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos centímetros tem o aro de basquete, em diâmetro?",
+      "answer": 45.7,
+      "unit": "cm",
+      "fact": "Duas bolas quase caberiam lado a lado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o aro de basquete?",
+      "answer": 3.05,
+      "unit": "metros",
+      "fact": "O número veio de uma galeria de 1891."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma trave de futebol de largura?",
+      "answer": 7.32,
+      "unit": "metros",
+      "fact": "A altura é de 2,44 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas moram na maior favela do Brasil, a Rocinha, em milhares, aproximadamente?",
+      "answer": 72,
+      "unit": "mil",
+      "fact": "O número varia conforme a fonte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura mais baixa já medida na Terra, em °C?",
+      "answer": -89.2,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Foi na estação russa de Vostok, em 1983."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura média de inverno na estação Vostok, na Antártida, em °C?",
+      "answer": -65,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Poucos lugares no mundo são tão frios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura mais baixa registrada no Hemisfério Norte, em °C?",
+      "answer": -67.8,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Foi na Sibéria, em Verkhoiansk."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura mais baixa já registrada no Canadá, em °C?",
+      "answer": -63,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Foi em Snag, no Yukon, em 1947."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura mais alta já registrada na Terra, em °C?",
+      "answer": 56.7,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "Foi no Vale da Morte, em 1913."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura mais alta já registrada no Brasil, em °C?",
+      "answer": 44.8,
+      "unit": "°C",
+      "scale": 3,
+      "fact": "Foi em Araçuaí, Minas Gerais, em 2023."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura da superfície do Sol, em °C, aproximadamente?",
+      "answer": 5500,
+      "unit": "°C",
+      "fact": "Em seu núcleo, são milhões de graus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura de um raio, em °C, aproximadamente?",
+      "answer": 30000,
+      "unit": "°C",
+      "fact": "Ele é mais quente que a superfície do Sol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura de um forno de pizza a lenha, em °C, aproximadamente?",
+      "answer": 450,
+      "unit": "°C",
+      "fact": "Lá, a pizza fica pronta em minutos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura do óleo de fritura, em °C, aproximadamente?",
+      "answer": 180,
+      "unit": "°C",
+      "fact": "Muito além disso, ele começa a queimar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos reais tem uma pessoa bilionária, em bilhões, no mínimo?",
+      "answer": 1,
+      "unit": "bilhão",
+      "fact": "Em dólares, são cerca de 3 mil pessoas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilionários em dólar existem no mundo, segundo a Forbes em 2024?",
+      "answer": 2781,
+      "unit": "bilionários",
+      "fact": "Os EUA têm o maior número."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilionários em dólar tem o Brasil, segundo a Forbes em 2024?",
+      "answer": 69,
+      "unit": "bilionários",
+      "fact": "O número varia bastante com o câmbio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a fortuna de Elon Musk no fim de 2024, em bilhões de dólares, aproximadamente?",
+      "answer": 400,
+      "unit": "bilhões",
+      "fact": "Ele foi o primeiro a chegar a esse patamar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas têm mais de 100 anos no mundo, em milhares, aproximadamente?",
+      "answer": 700,
+      "unit": "mil",
+      "fact": "O Japão é um dos países com mais centenários."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas têm mais de 100 anos no Brasil, em milhares, segundo o Censo de 2022?",
+      "answer": 38,
+      "unit": "mil",
+      "fact": "A maioria é de mulheres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gêmeos nascem a cada mil partos no mundo, aproximadamente?",
+      "answer": 12,
+      "unit": "partos",
+      "fact": "A taxa muda de acordo com o país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem a plataforma mais alta de salto ornamental olímpico?",
+      "answer": 10,
+      "unit": "metros",
+      "fact": "O atleta bate na água a quase 60 km/h."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos centímetros tem um disco de hóquei no gelo, em diâmetro?",
+      "answer": 7.62,
+      "unit": "cm",
+      "fact": "Ele é feito de borracha e vai a alta velocidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias dura a viagem do trem Transiberiano, de Moscou a Vladivostok?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "A ferrovia tem mais de 9 mil quilômetros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros tem a ferrovia Transiberiana, aproximadamente?",
+      "answer": 9289,
+      "unit": "km",
+      "fact": "É a mais longa ferrovia contínua do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem um campo de rúgbi, de comprimento entre as linhas de try?",
+      "answer": 100,
+      "unit": "metros",
+      "fact": "A área de meta fica além dessas linhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas notas de R$ 20 são necessárias para formar R$ 300?",
+      "answer": 15,
+      "unit": "notas",
+      "fact": "Basta dividir 300 por 20."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias há do Natal até o Dia de Reis?",
+      "answer": 12,
+      "unit": "dias",
+      "fact": "Muitos deixam a árvore montada até lá."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas de diferença há entre Brasília e Lisboa no verão europeu?",
+      "answer": 4,
+      "unit": "horas",
+      "fact": "No inverno europeu, são três."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas de diferença há entre Brasília e Tóquio?",
+      "answer": 12,
+      "unit": "horas",
+      "fact": "A diferença é exatamente meio dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quartos de hora há em uma hora?",
+      "answer": 4,
+      "unit": "quartos",
+      "fact": "Cada um tem 15 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pares de meias há em uma dúzia de meias?",
+      "answer": 6,
+      "unit": "pares",
+      "fact": "Cada par tem duas meias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas folhas tem um trevo comum?",
+      "answer": 3,
+      "unit": "folhas",
+      "fact": "O de quatro folhas é bem raro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pontas tem uma estrela-do-mar comum?",
+      "answer": 5,
+      "unit": "braços",
+      "fact": "Algumas espécies têm mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos lados tem um hexágono?",
+      "answer": 6,
+      "unit": "lados",
+      "fact": "As células das abelhas têm esse formato."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas rodas tem um carro comum?",
+      "answer": 4,
+      "unit": "rodas",
+      "fact": "O estepe é a quinta, de reserva."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam uma partida de dominó, no modelo clássico?",
+      "answer": 4,
+      "unit": "jogadores",
+      "fact": "As duplas ficam frente a frente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura em que o álcool comum congela, em °C?",
+      "answer": -114,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "Por isso, ele é usado em muitos termômetros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura de um freezer de hospital para vacinas, em °C?",
+      "answer": -70,
+      "unit": "°C",
+      "scale": 25,
+      "fact": "Algumas vacinas de RNA pedem esse frio extremo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a pressão normal de um adulto, em mmHg, na máxima?",
+      "answer": 120,
+      "unit": "mmHg",
+      "fact": "Ela é chamada de 12 por 8."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos batimentos por minuto tem um adulto em repouso, em média?",
+      "answer": 70,
+      "unit": "batimentos",
+      "fact": "Atletas podem ter menos de 50."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos passos por dia é a meta popular de saúde?",
+      "answer": 10000,
+      "unit": "passos",
+      "fact": "A ideia nasceu de um pedômetro japonês dos anos 1960."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas calorias uma pessoa adulta consome por dia, em média?",
+      "answer": 2000,
+      "unit": "calorias",
+      "fact": "O rótulo dos alimentos usa esse valor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias uma pessoa adulta pode viver sem comida, aproximadamente?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "A água é bem mais urgente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de ar uma pessoa respira por dia, aproximadamente?",
+      "answer": 11000,
+      "unit": "litros",
+      "fact": "Isso dá milhares de respirações."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas palavras tem o Dicionário Houaiss, aproximadamente?",
+      "answer": 228000,
+      "unit": "verbetes",
+      "fact": "O português tem um vocabulário enorme."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas palavras uma pessoa usa por dia, em média, em milhares?",
+      "answer": 16,
+      "unit": "mil",
+      "fact": "A diferença entre homens e mulheres é pequena."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países têm uma estrela na bandeira, aproximadamente?",
+      "answer": 60,
+      "unit": "países",
+      "fact": "É um dos símbolos mais usados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gramas de ouro há em uma medalha olímpica de ouro, aproximadamente?",
+      "answer": 6,
+      "unit": "gramas",
+      "fact": "Ela é quase toda de prata."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gramas pesa uma medalha olímpica de ouro, aproximadamente?",
+      "answer": 500,
+      "unit": "gramas",
+      "fact": "O ouro só cobre a medalha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos diamantes tem a Coroa Imperial britânica, aproximadamente?",
+      "answer": 2868,
+      "unit": "diamantes",
+      "fact": "Ela usa também safiras e rubis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilates tem o diamante Koh-i-Noor?",
+      "answer": 105.6,
+      "unit": "quilates",
+      "fact": "Ele está nas joias da coroa britânica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilates tem o diamante Hope?",
+      "answer": 45.5,
+      "unit": "quilates",
+      "fact": "Ele é azul e tem fama de amaldiçoado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilos de ouro tem a máscara de Tutancâmon, aproximadamente?",
+      "answer": 10,
+      "unit": "quilos",
+      "fact": "Ela está no Egito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos dura a meia-vida do carbono-14, aproximadamente?",
+      "answer": 5730,
+      "unit": "anos",
+      "fact": "Ela é usada para datar materiais antigos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias tem o calendário maia sagrado, o tzolkin?",
+      "answer": 260,
+      "unit": "dias",
+      "fact": "A previsão de 2012 também veio dos maias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos durou o ciclo longo maia que terminou em 2012, aproximadamente?",
+      "answer": 5125,
+      "unit": "anos",
+      "fact": "A data não previa o fim do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos a Torre de Pisa levou para ser concluída, aproximadamente?",
+      "answer": 199,
+      "unit": "anos",
+      "fact": "A inclinação começou ainda durante a obra."
     }
   ]
 }

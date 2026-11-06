@@ -114,10 +114,10 @@
     },
     {
       "difficulty": "medium",
-      "text": "Qual a velocidade máxima de um guepardo?",
-      "answer": 110,
-      "unit": "km/h",
-      "fact": "Ele acelera de 0 a 100 km/h em cerca de 3 segundos, mas só aguenta poucos segundos."
+      "text": "Em que ano o Brasil adotou o horário de verão pela primeira vez?",
+      "answer": 1931,
+      "scale": 50,
+      "fact": "Ele foi extinto em 2019."
     },
     {
       "difficulty": "hard",
@@ -141,10 +141,10 @@
     },
     {
       "difficulty": "medium",
-      "text": "Quantos metros de altura pode ter uma girafa macho adulta?",
-      "answer": 5.5,
-      "unit": "metros",
-      "fact": "Mesmo com o pescoço enorme, a girafa tem 7 vértebras cervicais, como nós."
+      "text": "Qual o peso do maior meteorito do mundo, o Hoba, em toneladas?",
+      "answer": 60,
+      "unit": "toneladas",
+      "fact": "Ele fica na Namíbia e nunca foi removido do local."
     },
     {
       "difficulty": "hard",
@@ -208,6 +208,2713 @@
       "answer": 4.24,
       "unit": "anos-luz",
       "fact": "Com as sondas mais rápidas de hoje, a viagem levaria milhares de anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos planetas tem o Sistema Solar?",
+      "answer": 8,
+      "unit": "planetas",
+      "fact": "Plutão perdeu o título em 2006."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas a Terra leva para girar em torno de si mesma?",
+      "answer": 24,
+      "unit": "horas",
+      "fact": "Na verdade, são 23 horas e 56 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias a Terra leva para dar a volta no Sol?",
+      "answer": 365,
+      "unit": "dias",
+      "fact": "Por isso existem anos bissextos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias, aproximadamente, a Lua leva para dar uma volta na Terra?",
+      "answer": 27,
+      "unit": "dias",
+      "fact": "Sempre vemos o mesmo lado da Lua."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos elementos químicos tem o sal de cozinha?",
+      "answer": 2,
+      "unit": "elementos",
+      "fact": "São o sódio e o cloro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos átomos tem uma molécula de água?",
+      "answer": 3,
+      "unit": "átomos",
+      "fact": "Dois de hidrogênio e um de oxigênio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pares de cromossomos tem uma pessoa?",
+      "answer": 23,
+      "unit": "pares",
+      "fact": "Um par define o sexo biológico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos, aproximadamente, tem um bebê ao nascer?",
+      "answer": 300,
+      "unit": "ossos",
+      "fact": "Com o crescimento, vários se fundem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos músculos, aproximadamente, tem o corpo humano?",
+      "answer": 600,
+      "unit": "músculos",
+      "fact": "Eles representam cerca de 40% do peso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura normal do corpo, em Fahrenheit?",
+      "answer": 98.6,
+      "unit": "°F",
+      "fact": "Essa medida foi definida no século XIX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A quantos graus a água congela em Celsius, ao nível do mar?",
+      "answer": 0,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "A escala foi criada em 1742."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A quantos graus a água congela em Fahrenheit?",
+      "answer": 32,
+      "unit": "°F",
+      "fact": "A escala Fahrenheit é usada nos EUA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A quantos Kelvin a água congela?",
+      "answer": 273.15,
+      "unit": "K",
+      "fact": "A escala Kelvin começa no zero absoluto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros de sangue, em média, tem um adulto?",
+      "answer": 5,
+      "unit": "litros",
+      "fact": "O sangue dá uma volta completa no corpo em cerca de 1 minuto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas câmaras tem o coração humano?",
+      "answer": 4,
+      "unit": "câmaras",
+      "fact": "Dois átrios e dois ventrículos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por minuto, em média, o coração de um adulto bate em repouso?",
+      "answer": 70,
+      "unit": "batimentos",
+      "fact": "Atletas podem ter valores abaixo de 40."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por minuto, em média, um adulto respira em repouso?",
+      "answer": 15,
+      "unit": "respirações",
+      "fact": "Isso dá mais de 20 mil respirações por dia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o número atômico do hidrogênio?",
+      "answer": 1,
+      "unit": "número",
+      "fact": "É o elemento mais simples da tabela periódica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o número atômico do hélio?",
+      "answer": 2,
+      "unit": "número",
+      "fact": "O nome vem de Hélio, o deus Sol grego."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o número atômico do carbono?",
+      "answer": 6,
+      "unit": "número",
+      "fact": "O carbono é a base da vida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o número atômico do oxigênio?",
+      "answer": 8,
+      "unit": "número",
+      "fact": "O oxigênio é o mais abundante na crosta terrestre."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Neil Armstrong pisou na Lua?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "A primeira pegada dele ainda está lá, porque na Lua não venta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Sputnik?",
+      "answer": 1957,
+      "scale": 50,
+      "fact": "Foi o primeiro satélite artificial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Yuri Gagarin foi ao espaço?",
+      "answer": 1961,
+      "scale": 50,
+      "fact": "O voo durou 108 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Thomas Edison patenteou a lâmpada?",
+      "answer": 1880,
+      "scale": 50,
+      "fact": "Ele testou milhares de materiais antes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Graham Bell patenteou o telefone?",
+      "answer": 1876,
+      "scale": 50,
+      "fact": "Dizem que ele chegou duas horas antes de um rival."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Roentgen descobriu os raios X?",
+      "answer": 1895,
+      "scale": 50,
+      "fact": "A primeira imagem foi da mão da esposa dele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a penicilina foi descoberta?",
+      "answer": 1928,
+      "scale": 50,
+      "fact": "Fleming esqueceu uma placa de cultura ao sair de férias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi publicada a teoria da relatividade geral?",
+      "answer": 1915,
+      "scale": 50,
+      "fact": "Foi confirmada por um eclipse no Ceará, em 1919."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi descoberta a estrutura do DNA?",
+      "answer": 1953,
+      "scale": 50,
+      "fact": "Watson e Crick publicaram o artigo na revista Nature."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o desastre de Chernobyl?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "A cidade de Pripyat foi abandonada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o desastre de Fukushima?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Foi causado por um tsunami, depois de um terremoto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o acidente com o Césio-137, em Goiânia?",
+      "answer": 1987,
+      "scale": 50,
+      "fact": "Foi o pior acidente radiológico do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a chegada do Perseverance a Marte?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Ele levou o pequeno helicóptero Ingenuity."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o telescópio Hubble?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Precisou de um conserto no espaço em 1993."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Plutão foi descoberto?",
+      "answer": 1930,
+      "scale": 50,
+      "fact": "Foi descoberto por Clyde Tombaugh."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o homem voltou à Lua pela última vez?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "Foi na missão Apollo 17."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a OMS declarou a pandemia de Covid-19?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "A declaração saiu em 11 de março."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Galileu viu as luas de Júpiter?",
+      "answer": 1610,
+      "scale": 50,
+      "fact": "Seu telescópio aumentava apenas 20 vezes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu Albert Einstein?",
+      "answer": 1879,
+      "scale": 50,
+      "fact": "Ele nasceu na Alemanha, em Ulm."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano morreu Stephen Hawking?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Foi no dia do Pi, em 14 de março."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu Isaac Newton?",
+      "answer": 1643,
+      "scale": 50,
+      "fact": "Era 25 de dezembro, no calendário antigo da época."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu Marie Curie?",
+      "answer": 1867,
+      "scale": 50,
+      "fact": "Ela nasceu em Varsóvia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos prêmios Nobel Marie Curie ganhou?",
+      "answer": 2,
+      "unit": "prêmios",
+      "fact": "Em física e em química."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos astronautas pisaram na Lua?",
+      "answer": 12,
+      "unit": "astronautas",
+      "fact": "Todos os doze são americanos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias durou a missão Apollo 11, aproximadamente?",
+      "answer": 8,
+      "unit": "dias",
+      "fact": "Armstrong e Aldrin ficaram 21 horas e meia na superfície."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas os astronautas da Apollo 11 ficaram na superfície da Lua?",
+      "answer": 21.5,
+      "unit": "horas",
+      "fact": "Foram cerca de 2 horas e meia fora do módulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos tripulantes tem, em geral, a Estação Espacial?",
+      "answer": 7,
+      "unit": "tripulantes",
+      "fact": "A estação recebe visitantes de vários países."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos km acima da Terra orbita a Estação Espacial, aproximadamente?",
+      "answer": 400,
+      "unit": "km",
+      "fact": "Ela é tão brilhante que dá para vê-la sem telescópio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade da Estação Espacial, aproximadamente, em km/h?",
+      "answer": 27600,
+      "unit": "km/h",
+      "fact": "Ela dá 16 voltas por dia na Terra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas luas tem a Terra?",
+      "answer": 1,
+      "unit": "lua",
+      "fact": "Ela se afasta 3,8 cm por ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas luas tem Mercúrio?",
+      "answer": 0,
+      "unit": "luas",
+      "scale": 10,
+      "fact": "O planeta é muito próximo do Sol para manter um satélite."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas luas tem Vênus?",
+      "answer": 0,
+      "unit": "luas",
+      "scale": 10,
+      "fact": "Pode ser que tenha tido uma no passado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas dura o dia em Júpiter, aproximadamente?",
+      "answer": 10,
+      "unit": "horas",
+      "fact": "É o planeta que gira mais rápido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Saturno leva para dar a volta no Sol?",
+      "answer": 29,
+      "unit": "anos",
+      "fact": "Galileu viu seus anéis, mas achou que eram orelhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Júpiter leva para dar a volta no Sol?",
+      "answer": 12,
+      "unit": "anos",
+      "fact": "Júpiter é o maior planeta do Sistema Solar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias Mercúrio leva para dar a volta no Sol?",
+      "answer": 88,
+      "unit": "dias",
+      "fact": "É o planeta mais rápido em sua órbita."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias Marte leva para dar a volta no Sol?",
+      "answer": 687,
+      "unit": "dias",
+      "fact": "Seu ano é quase o dobro do nosso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias Vênus leva para dar a volta no Sol?",
+      "answer": 225,
+      "unit": "dias",
+      "fact": "Ele tem a rotação mais lenta do Sistema Solar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos terrestres Netuno leva para dar a volta no Sol?",
+      "answer": 165,
+      "unit": "anos",
+      "fact": "Ele completou uma volta desde a descoberta só em 2011."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura média na Terra, em °C?",
+      "answer": 15,
+      "unit": "°C",
+      "fact": "Sem efeito estufa, seria cerca de -18 °C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura média em Marte, em °C?",
+      "answer": -63,
+      "unit": "°C",
+      "fact": "No verão, chega perto de 20 °C em alguns pontos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura média em Vênus, em °C?",
+      "answer": 464,
+      "unit": "°C",
+      "fact": "É quente o bastante para derreter chumbo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura de noite em Mercúrio, em °C?",
+      "answer": -180,
+      "unit": "°C",
+      "fact": "De dia, ela chega a 430 °C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura de dia em Mercúrio, em °C?",
+      "answer": 430,
+      "unit": "°C",
+      "fact": "Ele quase não tem atmosfera para reter o calor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura média em Netuno, em °C?",
+      "answer": -200,
+      "unit": "°C",
+      "fact": "Tem também os ventos mais rápidos do Sistema Solar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura na superfície da Lua de noite, em °C?",
+      "answer": -173,
+      "unit": "°C",
+      "fact": "De dia, passa de 120 °C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura na superfície da Lua de dia, em °C?",
+      "answer": 127,
+      "unit": "°C",
+      "fact": "Ela não tem atmosfera para reter o calor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura de uma chama de vela, em °C?",
+      "answer": 1400,
+      "unit": "°C",
+      "fact": "O ponto mais quente fica bem na parte azul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o papel entra em combustão, em Fahrenheit?",
+      "answer": 451,
+      "unit": "°F",
+      "fact": "Daí vem o nome do livro de Ray Bradbury."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o ferro derrete, em °C?",
+      "answer": 1538,
+      "unit": "°C",
+      "fact": "Ele é o metal mais usado pela humanidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o ouro derrete, em °C?",
+      "answer": 1064,
+      "unit": "°C",
+      "fact": "Ele tem baixa dureza, mas é muito estável."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o chumbo derrete, em °C?",
+      "answer": 327,
+      "unit": "°C",
+      "fact": "Esse é um dos metais mais fáceis de fundir."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o nitrogênio líquido ferve, em °C?",
+      "answer": -196,
+      "unit": "°C",
+      "fact": "Ele é muito usado na conservação de células."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o hélio líquido ferve, em °C?",
+      "answer": -269,
+      "unit": "°C",
+      "fact": "É o mais frio dos líquidos comuns em laboratório."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o mercúrio congela, em °C?",
+      "answer": -39,
+      "unit": "°C",
+      "fact": "Por isso, ele é líquido na temperatura ambiente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o álcool etílico congela, em °C?",
+      "answer": -114,
+      "unit": "°C",
+      "fact": "Por isso, é usado como anticongelante."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que temperatura o oxigênio se torna líquido, em °C?",
+      "answer": -183,
+      "unit": "°C",
+      "fact": "Ele tem uma cor azul-claro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o zero absoluto em Fahrenheit?",
+      "answer": -459.67,
+      "unit": "°F",
+      "fact": "É o ponto em que as partículas têm o mínimo de energia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o pH do vinagre, aproximadamente?",
+      "answer": 2.5,
+      "unit": "pH",
+      "fact": "Vinagre é uma solução diluída de ácido acético."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o pH do suco gástrico, aproximadamente?",
+      "answer": 1.5,
+      "unit": "pH",
+      "fact": "Ele é tão ácido que dissolve alguns metais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o pH da água sanitária, aproximadamente?",
+      "answer": 12,
+      "unit": "pH",
+      "fact": "Por isso ela é tão agressiva à pele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o pH do sangue humano, aproximadamente?",
+      "answer": 7.4,
+      "unit": "pH",
+      "fact": "Um pequeno desvio já é perigoso à saúde."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de nitrogênio na atmosfera?",
+      "answer": 78,
+      "unit": "%",
+      "fact": "O nitrogênio é pouco reativo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de argônio na atmosfera?",
+      "answer": 0.93,
+      "unit": "%",
+      "fact": "É o terceiro gás mais abundante do ar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de água no cérebro humano?",
+      "answer": 75,
+      "unit": "%",
+      "fact": "Pouca desidratação já pode prejudicar a atenção."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de oxigênio em massa no corpo humano?",
+      "answer": 65,
+      "unit": "%",
+      "fact": "Ele vem principalmente da água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de DNA em comum entre os humanos?",
+      "answer": 99.9,
+      "unit": "%",
+      "fact": "A diferença é pequena, mas nos torna únicos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a fração da energia total usada pelo cérebro, em %?",
+      "answer": 20,
+      "unit": "%",
+      "fact": "Ele pesa só 2% do corpo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem do corpo representada pelo peso do cérebro?",
+      "answer": 2,
+      "unit": "%",
+      "fact": "Ele usa muito mais energia do que parece."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o tempo máximo sem dormir já registrado, em dias?",
+      "answer": 11,
+      "unit": "dias",
+      "fact": "O americano Randy Gardner fez isso em 1964."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos, em média, uma pessoa dorme ao longo da vida?",
+      "answer": 26,
+      "unit": "anos",
+      "fact": "É cerca de um terço da vida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cm a unha da mão cresce por ano?",
+      "answer": 4,
+      "unit": "cm",
+      "fact": "A unha do pé cresce bem mais devagar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cm o cabelo cresce por mês?",
+      "answer": 1,
+      "unit": "cm",
+      "fact": "O cabelo mais longo do mundo tem quase 6 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Gregor Mendel publicou suas leis da herança?",
+      "answer": 1866,
+      "scale": 50,
+      "fact": "Mendel era monge e fez os testes com ervilhas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Oswaldo Cruz organizou a campanha contra a febre amarela?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "A vacinação foi uma das causas da Revolta da Vacina de 1904."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi realizada a primeira vacina, contra a varíola?",
+      "answer": 1796,
+      "scale": 50,
+      "fact": "Jenner usou material de pústulas de vacas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a varíola foi declarada erradicada pela OMS?",
+      "answer": 1980,
+      "scale": 50,
+      "fact": "Foi a primeira doença humana erradicada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi feito o primeiro transplante de coração no Brasil?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "Foi conduzido por Euryclides Zerbini, em São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi feito o primeiro transplante de coração do mundo?",
+      "answer": 1967,
+      "scale": 50,
+      "fact": "O paciente viveu 18 dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu o primeiro bebê de proveta?",
+      "answer": 1978,
+      "scale": 50,
+      "fact": "Louise Brown nasceu na Inglaterra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a ovelha Dolly foi anunciada ao mundo?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Ela nasceu no ano anterior, na Escócia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Bóson de Higgs foi confirmado?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "A descoberta foi feita pelo LHC."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançada a sonda Voyager 1?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "Ela continua transmitindo dados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a NASA?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "Antes, havia uma agência chamada NACA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Estação Espacial começou a ser montada?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Ela está em órbita desde então."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Galileu foi condenado pela Inquisição?",
+      "answer": 1633,
+      "scale": 50,
+      "fact": "Ele passou o resto da vida em prisão domiciliar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Terras cabem no volume do Sol, aproximadamente?",
+      "answer": 1300000,
+      "unit": "Terras",
+      "fact": "O Sol tem 99,8% da massa do Sistema Solar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por dia, em média, as pessoas piscam?",
+      "answer": 14400,
+      "unit": "piscadas",
+      "fact": "São cerca de 10 piscadas por minuto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura, em média, um ciclo solar?",
+      "answer": 11,
+      "unit": "anos",
+      "fact": "As manchas do Sol aumentam e diminuem nesse ritmo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos-luz tem de distância Sirius, aproximadamente?",
+      "answer": 8.6,
+      "unit": "anos-luz",
+      "fact": "É a estrela mais brilhante do céu noturno."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos-luz tem Andrômeda de distância, em milhões?",
+      "answer": 2.5,
+      "unit": "milhões",
+      "fact": "É o objeto mais distante visível a olho nu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade da luz em metros por segundo, valor exato?",
+      "answer": 299792458,
+      "unit": "m/s",
+      "fact": "Esse número é exato por definição desde 1983."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a distância da Terra até o Sol, em km?",
+      "answer": 149600000,
+      "unit": "km",
+      "fact": "É a chamada unidade astronômica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a distância média da Terra até Marte, em km?",
+      "answer": 225000000,
+      "unit": "km",
+      "fact": "Na melhor oportunidade, a viagem leva cerca de 7 meses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a distância média do Sol até Netuno, em km?",
+      "answer": 4500000000,
+      "unit": "km",
+      "fact": "A luz do Sol leva 4 horas para chegar até lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a distância da Voyager 1 até a Terra em 2024, em bilhões de km?",
+      "answer": 24.5,
+      "unit": "bilhões",
+      "fact": "É o objeto feito pelo homem mais distante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o diâmetro do Sol, em km?",
+      "answer": 1390000,
+      "unit": "km",
+      "fact": "Isso é cerca de 109 vezes o diâmetro da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o diâmetro da Lua, em km?",
+      "answer": 3474,
+      "unit": "km",
+      "fact": "É pouco mais de um quarto do diâmetro da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o diâmetro de Júpiter, em km?",
+      "answer": 139820,
+      "unit": "km",
+      "fact": "É o maior planeta do Sistema Solar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o diâmetro de Marte, em km?",
+      "answer": 6779,
+      "unit": "km",
+      "fact": "É cerca de metade do diâmetro da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o diâmetro de Mercúrio, em km?",
+      "answer": 4879,
+      "unit": "km",
+      "fact": "Ele é menor que Ganimedes, lua de Júpiter."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o diâmetro de Plutão, em km?",
+      "answer": 2377,
+      "unit": "km",
+      "fact": "É menor que a nossa Lua."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a massa do Sol, em relação à Terra, em vezes?",
+      "answer": 333000,
+      "unit": "vezes",
+      "fact": "Ele tem massa muito maior que a de todos os planetas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes a gravidade na Lua é menor que a da Terra, aproximadamente?",
+      "answer": 6,
+      "unit": "vezes",
+      "fact": "Armstrong podia saltar com facilidade mesmo com o traje pesado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vezes a gravidade de Júpiter é maior que a da Terra, aproximadamente?",
+      "answer": 2.5,
+      "unit": "vezes",
+      "fact": "Uma pessoa de 70 kg sentiria 177 kg."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a aceleração da gravidade na Lua, em m/s²?",
+      "answer": 1.62,
+      "unit": "m/s²",
+      "fact": "Dá para pular muito mais alto lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a aceleração da gravidade em Marte, em m/s²?",
+      "answer": 3.71,
+      "unit": "m/s²",
+      "fact": "Cerca de 38% da gravidade da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade de escape da Terra, em km/h?",
+      "answer": 40320,
+      "unit": "km/h",
+      "fact": "Foguetes precisam vencer essa velocidade para ir além da órbita."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade de escape do Sol, em km/s?",
+      "answer": 618,
+      "unit": "km/s",
+      "fact": "É mais de 50 vezes a da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade de rotação da Terra no Equador, em km/h?",
+      "answer": 1670,
+      "unit": "km/h",
+      "fact": "Em São Paulo, é um pouco menor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade da Terra ao redor do Sol, em km/h?",
+      "answer": 107000,
+      "unit": "km/h",
+      "fact": "Nós não percebemos, porque tudo se move junto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a idade da Terra, em bilhões de anos?",
+      "answer": 4.5,
+      "unit": "bilhões",
+      "fact": "Foi calculada a partir de meteoritos por Clair Patterson."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a idade do Sol, em bilhões de anos?",
+      "answer": 4.6,
+      "unit": "bilhões",
+      "fact": "Ele ainda vai durar uns 5 bilhões de anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a idade do Universo, em bilhões de anos?",
+      "answer": 13.8,
+      "unit": "bilhões",
+      "fact": "Foi calculada principalmente com a radiação cósmica de fundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de anos o Sol ainda tem de vida, aproximadamente?",
+      "answer": 5,
+      "unit": "bilhões",
+      "fact": "Depois ele vai virar gigante vermelha e anã branca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos elementos químicos há na tabela periódica?",
+      "answer": 118,
+      "unit": "elementos",
+      "fact": "O último, oganessônio, foi nomeado em 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos elementos químicos surgem naturalmente, aproximadamente?",
+      "answer": 94,
+      "unit": "elementos",
+      "fact": "Os outros foram criados em laboratório."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do urânio?",
+      "answer": 92,
+      "unit": "número",
+      "fact": "Ele foi descoberto em 1789 e nomeado por causa de Urano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do ferro?",
+      "answer": 26,
+      "unit": "número",
+      "fact": "O ferro é o principal metal do núcleo da Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico da prata?",
+      "answer": 47,
+      "unit": "número",
+      "fact": "A prata é o melhor condutor de eletricidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do cobre?",
+      "answer": 29,
+      "unit": "número",
+      "fact": "A Estátua da Liberdade é coberta dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do sódio?",
+      "answer": 11,
+      "unit": "número",
+      "fact": "O sódio reage violentamente com a água."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do mercúrio?",
+      "answer": 80,
+      "unit": "número",
+      "fact": "É o único metal líquido à temperatura ambiente, junto de poucos outros em dias quentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do chumbo?",
+      "answer": 82,
+      "unit": "número",
+      "fact": "Foi muito usado em tintas e encanamentos no passado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do polônio?",
+      "answer": 84,
+      "unit": "número",
+      "fact": "Marie Curie o nomeou em homenagem à Polônia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o número atômico do rádio?",
+      "answer": 88,
+      "unit": "número",
+      "fact": "Ele foi descoberto pelo casal Curie em 1898."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a massa de um próton, em relação à de um elétron, em vezes?",
+      "answer": 1836,
+      "unit": "vezes",
+      "fact": "Quase toda a massa do átomo vem do núcleo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos elétrons, no máximo, cabem na primeira camada de um átomo?",
+      "answer": 2,
+      "unit": "elétrons",
+      "fact": "Por isso o hélio é um gás nobre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos elétrons cabem na segunda camada de um átomo?",
+      "answer": 8,
+      "unit": "elétrons",
+      "fact": "É a chamada regra do octeto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos prótons tem o átomo de carbono-14?",
+      "answer": 6,
+      "unit": "prótons",
+      "fact": "O número 14 inclui 8 nêutrons."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos nêutrons tem o átomo de urânio-238?",
+      "answer": 146,
+      "unit": "nêutrons",
+      "fact": "Isso dá uma soma de 92 prótons e 146 nêutrons."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km mede o maior acelerador de partículas do mundo?",
+      "answer": 27,
+      "unit": "km",
+      "fact": "Ele fica no CERN, em Genebra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o tempo de queda de Felix Baumgartner do espaço, em segundos?",
+      "answer": 259,
+      "unit": "segundos",
+      "fact": "Ele saltou de 39 km de altura e quebrou a barreira do som."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do salto de Felix Baumgartner, em km?",
+      "answer": 39,
+      "unit": "km",
+      "fact": "Em 2014, Alan Eustace passou essa marca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a velocidade do som na água, em m/s?",
+      "answer": 1480,
+      "unit": "m/s",
+      "fact": "É mais de quatro vezes maior que no ar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a velocidade do som no aço, em m/s?",
+      "answer": 5100,
+      "unit": "m/s",
+      "fact": "Antigamente, as pessoas ouviam o trem encostando a orelha nos trilhos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a velocidade do som no ar, em km/h?",
+      "answer": 1235,
+      "unit": "km/h",
+      "fact": "Isso vale perto dos 20 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos decibéis faz um avião a jato decolando, a 30 metros?",
+      "answer": 140,
+      "unit": "decibéis",
+      "fact": "É bem acima do que os ouvidos suportam sem dor."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos decibéis faz um sussurro?",
+      "answer": 30,
+      "unit": "decibéis",
+      "fact": "A cada 10 dB, o som parece dobrar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos nanômetros tem o comprimento de onda da luz vermelha, aproximadamente?",
+      "answer": 700,
+      "unit": "nm",
+      "fact": "É a cor com menor frequência visível."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos nanômetros tem o comprimento de onda da luz violeta, aproximadamente?",
+      "answer": 400,
+      "unit": "nm",
+      "fact": "Abaixo disso já é ultravioleta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cores tradicionais tem o espectro de Newton?",
+      "answer": 7,
+      "unit": "cores",
+      "fact": "Ele adicionou o índigo por causa do número 7."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do corpo humano mais alto registrado, em metros?",
+      "answer": 2.72,
+      "unit": "metros",
+      "fact": "Foi o americano Robert Wadlow, morto em 1940."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o peso do cérebro de Einstein, em gramas?",
+      "answer": 1230,
+      "unit": "gramas",
+      "fact": "Era menor que a média, mas com algumas diferenças."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos neurônios tem o cérebro humano, aproximadamente?",
+      "answer": 86000000000,
+      "unit": "neurônios",
+      "fact": "Por décadas se falou em 100 bilhões, sem dados diretos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias vive um glóbulo vermelho?",
+      "answer": 120,
+      "unit": "dias",
+      "fact": "Depois é reciclado no baço."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de ar um adulto respira por dia, aproximadamente?",
+      "answer": 11000,
+      "unit": "litros",
+      "fact": "Boa parte é nitrogênio, que entra e sai sem ser usado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos litros de sangue o coração bombeia por minuto, em repouso?",
+      "answer": 5,
+      "unit": "litros",
+      "fact": "Em exercício, pode chegar a 30 litros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km de vasos sanguíneos tem um adulto, aproximadamente?",
+      "answer": 100000,
+      "unit": "km",
+      "fact": "Isso dá mais de duas voltas na Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem o DNA de uma única célula, se esticado?",
+      "answer": 2,
+      "unit": "metros",
+      "fact": "Ele fica compactado em um núcleo microscópico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos genes tem um ser humano, aproximadamente, segundo o Projeto Genoma?",
+      "answer": 20000,
+      "unit": "genes",
+      "fact": "Esperava-se mais de 100 mil no início da pesquisa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pares de bases tem o genoma humano, aproximadamente?",
+      "answer": 3200000000,
+      "unit": "pares",
+      "fact": "Se lêssemos uma por segundo, levaria mais de 100 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos ossos tem o pé humano?",
+      "answer": 26,
+      "unit": "ossos",
+      "fact": "Quase um quarto dos ossos do corpo está nos pés."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos ossos tem a coluna adulta, contando sacro e cóccix como um só?",
+      "answer": 26,
+      "unit": "ossos",
+      "fact": "Quando criança, são 33 vértebras separadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pares de nervos tem a medula espinhal?",
+      "answer": 31,
+      "unit": "pares",
+      "fact": "Eles são chamados de nervos espinhais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos pares de nervos cranianos tem o corpo?",
+      "answer": 12,
+      "unit": "pares",
+      "fact": "O nervo olfatório é o primeiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dentes de leite tem uma criança?",
+      "answer": 20,
+      "unit": "dentes",
+      "fact": "O primeiro costuma nascer por volta dos 6 meses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos fios de cabelo tem, em média, uma cabeça humana?",
+      "answer": 100000,
+      "unit": "fios",
+      "fact": "Os ruivos costumam ter menos fios."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos poros tem a pele humana, aproximadamente?",
+      "answer": 5000000,
+      "unit": "poros",
+      "fact": "Eles estão em quase todo o corpo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos m² tem a pele de um adulto, aproximadamente?",
+      "answer": 1.8,
+      "unit": "m²",
+      "fact": "Pesa cerca de 4 kg."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos kg pesa a pele de um adulto, aproximadamente?",
+      "answer": 4,
+      "unit": "kg",
+      "fact": "Ela é o maior órgão do corpo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos m² de superfície têm os pulmões de um adulto, aproximadamente?",
+      "answer": 70,
+      "unit": "m²",
+      "fact": "É a área de metade de uma quadra de tênis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos alvéolos têm os dois pulmões de um adulto, aproximadamente?",
+      "answer": 480000000,
+      "unit": "alvéolos",
+      "fact": "São os pequenos sacos onde há trocas de gases."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanta energia um ser humano adulto produz em repouso, em watts?",
+      "answer": 100,
+      "unit": "watts",
+      "fact": "É o mesmo que uma lâmpada antiga."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas calorias um adulto gasta por dia, em média?",
+      "answer": 2000,
+      "unit": "kcal",
+      "fact": "O cérebro consome cerca de 20% disso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 1 grama de gordura, aproximadamente?",
+      "answer": 9,
+      "unit": "kcal",
+      "fact": "Ela tem mais energia que os carboidratos e as proteínas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 1 grama de carboidrato, aproximadamente?",
+      "answer": 4,
+      "unit": "kcal",
+      "fact": "É o mesmo valor das proteínas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias uma pessoa aguenta sem água, em média?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "Pode variar muito, conforme o ambiente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias uma pessoa aguenta sem comida, em média?",
+      "answer": 60,
+      "unit": "dias",
+      "fact": "Gandhi jejuou 21 dias aos 74 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos um cérebro aguenta sem oxigênio antes de sofrer danos graves?",
+      "answer": 5,
+      "unit": "minutos",
+      "fact": "Por isso a massagem cardíaca é tão urgente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde de apneia voluntária com oxigênio, em minutos?",
+      "answer": 24,
+      "unit": "minutos",
+      "fact": "O croata Budimir Sobat fez isso em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que altitude o corpo humano começa a não se adaptar, em metros?",
+      "answer": 8000,
+      "unit": "metros",
+      "fact": "Por isso, ela é chamada de \"zona da morte\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morreram na gripe espanhola, aproximadamente, em milhões?",
+      "answer": 50,
+      "unit": "milhões",
+      "fact": "Foi uma das maiores pandemias da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morreram na Peste Negra, aproximadamente, em milhões?",
+      "answer": 75,
+      "unit": "milhões",
+      "fact": "Ela matou de um terço a metade da Europa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morreram por Covid-19 no mundo, segundo a OMS?",
+      "answer": 7000000,
+      "unit": "pessoas",
+      "fact": "Os números reais podem ser muito maiores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas morreram por Covid-19 no Brasil, aproximadamente?",
+      "answer": 700000,
+      "unit": "pessoas",
+      "fact": "Foi o segundo país com mais mortes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas doses de vacina de Covid foram aplicadas no mundo, em bilhões?",
+      "answer": 13.5,
+      "unit": "bilhões",
+      "fact": "Nunca antes houve uma vacinação tão rápida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Einstein tinha ao publicar a relatividade restrita?",
+      "answer": 26,
+      "unit": "anos",
+      "fact": "Ele trabalhava em um escritório de patentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Marie Curie viveu?",
+      "answer": 66,
+      "unit": "anos",
+      "fact": "Ela morreu por doença ligada à exposição à radiação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Isaac Newton viveu?",
+      "answer": 84,
+      "unit": "anos",
+      "fact": "Ele foi enterrado na Abadia de Westminster."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Charles Darwin tinha ao embarcar no Beagle?",
+      "answer": 22,
+      "unit": "anos",
+      "fact": "A viagem durou quase cinco anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Stephen Hawking viveu?",
+      "answer": 76,
+      "unit": "anos",
+      "fact": "Os médicos previram só dois anos de vida quando ele tinha 21."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas Terras caberiam em uma fila de um lado ao outro de Saturno, sem os anéis?",
+      "answer": 9,
+      "unit": "Terras",
+      "fact": "Com os anéis, a largura é bem maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km de largura têm os anéis de Saturno?",
+      "answer": 282000,
+      "unit": "km",
+      "fact": "A espessura deles é de poucas dezenas de metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade do vento mais rápido do Sistema Solar, em Netuno, em km/h?",
+      "answer": 2100,
+      "unit": "km/h",
+      "fact": "Ele passa da velocidade do som na Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a pressão atmosférica na superfície de Vênus, em vezes a da Terra?",
+      "answer": 92,
+      "unit": "vezes",
+      "fact": "É como estar a 900 metros de profundidade no mar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Grande Mancha Vermelha de Júpiter, em km?",
+      "answer": 16000,
+      "unit": "km",
+      "fact": "Ela está encolhendo, mas ainda é maior que a Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do Monte Olimpo, em Marte, em km?",
+      "answer": 22,
+      "unit": "km",
+      "fact": "É quase três vezes mais alto que o Everest."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o comprimento do Valles Marineris, em Marte, em km?",
+      "answer": 4000,
+      "unit": "km",
+      "fact": "Ele tem o comprimento dos EUA de costa a costa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas luas tem Júpiter, aproximadamente, em 2023?",
+      "answer": 95,
+      "unit": "luas",
+      "fact": "A lista continua crescendo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas luas tem Saturno, aproximadamente, em 2025?",
+      "answer": 274,
+      "unit": "luas",
+      "fact": "Em 2025, foram anunciadas outras 128."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas luas tem Urano?",
+      "answer": 29,
+      "unit": "luas",
+      "fact": "A 29ª foi achada em 2025 pelo telescópio James Webb."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas luas tem Netuno?",
+      "answer": 16,
+      "unit": "luas",
+      "fact": "Tritão é a maior delas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas luas tem Marte?",
+      "answer": 2,
+      "unit": "luas",
+      "fact": "Fobos e Deimos têm formato de batata."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cm a Lua se afasta da Terra por ano?",
+      "answer": 3.8,
+      "unit": "cm",
+      "fact": "Espelhos deixados pelas missões Apollo permitem medir isso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em quantos segundos a luz da Lua chega à Terra?",
+      "answer": 1.3,
+      "unit": "segundos",
+      "fact": "Por isso, a conversa com a Apollo tinha um pequeno atraso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em quantos minutos a luz do Sol chega a Júpiter?",
+      "answer": 43,
+      "unit": "minutos",
+      "fact": "Em Plutão, leva cerca de 5,5 horas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em quantas horas a luz do Sol chega a Plutão?",
+      "answer": 5.5,
+      "unit": "horas",
+      "fact": "Esse é o tempo médio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas estrelas dá para ver a olho nu, em uma noite escura?",
+      "answer": 3000,
+      "unit": "estrelas",
+      "fact": "Em todo o céu, são cerca de 6 mil estrelas visíveis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a magnitude aparente do Sol, em uma escala em que números baixos são mais brilhantes?",
+      "answer": -26.7,
+      "unit": "magnitude",
+      "fact": "Sirius, em comparação, tem -1,46."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a magnitude aparente da Lua cheia?",
+      "answer": -12.7,
+      "unit": "magnitude",
+      "fact": "Quanto menor o número, mais brilhante é o astro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a magnitude aparente de Sirius, a estrela mais brilhante do céu noturno?",
+      "answer": -1.46,
+      "unit": "magnitude",
+      "fact": "Ela é 25 vezes mais luminosa que o Sol."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a temperatura mais fria medida na Lua, em °C?",
+      "answer": -247,
+      "unit": "°C",
+      "fact": "Foi em crateras que nunca recebem luz solar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média do espaço profundo, em °C?",
+      "answer": -270,
+      "unit": "°C",
+      "fact": "Isso corresponde à radiação cósmica de fundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o tempo de vida de um nêutron livre, em minutos?",
+      "answer": 15,
+      "unit": "minutos",
+      "fact": "Ele vira um próton, um elétron e um antineutrino."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a meia-vida do carbono-14, em anos?",
+      "answer": 5730,
+      "unit": "anos",
+      "fact": "Isso permite datar coisas de até cerca de 50 mil anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a meia-vida do urânio-235, em milhões de anos?",
+      "answer": 704,
+      "unit": "milhões",
+      "fact": "Ele é o urânio usado em reatores e bombas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a meia-vida do plutônio-239, em anos?",
+      "answer": 24100,
+      "unit": "anos",
+      "fact": "Ele é fabricado em reatores nucleares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a meia-vida do césio-137, em anos?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "Foi o elemento do acidente de Goiânia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a meia-vida do iodo-131, em dias?",
+      "answer": 8,
+      "unit": "dias",
+      "fact": "Ele foi um dos principais em Chernobyl."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gramas de césio-137 causaram o acidente de Goiânia, aproximadamente?",
+      "answer": 19,
+      "unit": "gramas",
+      "fact": "O pó azul brilhante atraiu a atenção das pessoas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o elétron?",
+      "answer": 1897,
+      "scale": 50,
+      "fact": "Foi descoberto por J. J. Thomson."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o próton?",
+      "answer": 1919,
+      "scale": 50,
+      "fact": "Foi descoberto por Rutherford."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o nêutron?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "Foi descoberto por James Chadwick."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o pósitron?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "Foi descoberto por Carl Anderson."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o méson pi, com ajuda de César Lattes?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "A descoberta rendeu um Nobel a Cecil Powell, mas não ao brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o oxigênio?",
+      "answer": 1774,
+      "scale": 50,
+      "fact": "Joseph Priestley fez a descoberta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o hidrogênio?",
+      "answer": 1766,
+      "scale": 50,
+      "fact": "Henry Cavendish o chamou de \"ar inflamável\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o urânio?",
+      "answer": 1789,
+      "scale": 50,
+      "fact": "Foi descoberto por Martin Klaproth."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o rádio?",
+      "answer": 1898,
+      "scale": 50,
+      "fact": "O casal Curie processou toneladas de minério."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto Netuno?",
+      "answer": 1846,
+      "scale": 50,
+      "fact": "Foi previsto com cálculos antes mesmo de ser visto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto Urano?",
+      "answer": 1781,
+      "scale": 50,
+      "fact": "William Herschel quase o batizou de \"George\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o primeiro exoplaneta em torno de uma estrela comum?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Os suíços Mayor e Queloz ganharam o Nobel por isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foram detectadas pela primeira vez as ondas gravitacionais?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "O anúncio foi feito no ano seguinte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi detectado o neutrino?",
+      "answer": 1956,
+      "scale": 50,
+      "fact": "Pauli havia previsto a partícula em 1930."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a primeira tabela periódica?",
+      "answer": 1869,
+      "scale": 50,
+      "fact": "Mendeleev previu elementos que ainda não existiam."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Hubble mostrou a expansão do Universo?",
+      "answer": 1929,
+      "scale": 50,
+      "fact": "Einstein chamou sua constante de \"maior erro\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inventado o microscópio, aproximadamente?",
+      "answer": 1590,
+      "scale": 50,
+      "fact": "Holandeses fabricantes de óculos foram os primeiros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Anton van Leeuwenhoek viu bactérias pela primeira vez?",
+      "answer": 1676,
+      "scale": 50,
+      "fact": "Ele as chamava de \"animálculos\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inventada a pilha elétrica?",
+      "answer": 1800,
+      "scale": 50,
+      "fact": "Alessandro Volta a apresentou à Royal Society."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inventado o laser?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "Theodore Maiman construiu o primeiro, com um rubi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inventado o transistor?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "A invenção rendeu um Nobel de Física em 1956."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi feita a primeira cirurgia com anestesia geral com éter, em público?",
+      "answer": 1846,
+      "scale": 50,
+      "fact": "Foi em Boston, por William Morton."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a vacina contra a poliomielite?",
+      "answer": 1955,
+      "scale": 50,
+      "fact": "Jonas Salk não quis patentear a vacina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a vacina contra a raiva?",
+      "answer": 1885,
+      "scale": 50,
+      "fact": "Louis Pasteur testou-a em um menino chamado Joseph Meister."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a vacina contra a febre amarela?",
+      "answer": 1937,
+      "scale": 50,
+      "fact": "Max Theiler ganhou o Nobel por isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi isolada a insulina?",
+      "answer": 1921,
+      "scale": 50,
+      "fact": "Foi em Toronto, no Canadá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o primeiro antibiótico sintético, a sulfa?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "Gerhard Domagk ganhou o Nobel, mas os nazistas não o deixaram receber."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi feito o primeiro transplante de rim bem-sucedido?",
+      "answer": 1954,
+      "scale": 50,
+      "fact": "Os irmãos gêmeos Herrick participaram da cirurgia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Fiocruz?",
+      "answer": 1900,
+      "scale": 50,
+      "fact": "Era o antigo Instituto Soroterápico, no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Instituto Pasteur?",
+      "answer": 1887,
+      "scale": 50,
+      "fact": "Fica em Paris e descobriu o HIV em 1983."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi identificado o vírus HIV?",
+      "answer": 1983,
+      "scale": 50,
+      "fact": "Luc Montagnier e Françoise Barré-Sinoussi ganharam o Nobel."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o primeiro caso de aids foi registrado no Brasil?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "Havia pouca informação, e o preconceito era enorme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o SUS?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Foi com a Constituição Cidadã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Organização Mundial da Saúde?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "O 7 de abril é o Dia Mundial da Saúde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o CERN?",
+      "answer": 1954,
+      "scale": 50,
+      "fact": "É o maior laboratório de física de partículas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o LHC?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Depois de 9 dias, ele quebrou e parou por um ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a USP?",
+      "answer": 1934,
+      "scale": 50,
+      "fact": "Foi fundada em São Paulo, a partir de escolas já existentes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o CNPq?",
+      "answer": 1951,
+      "scale": 50,
+      "fact": "O almirante Álvaro Alberto foi seu fundador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Inpe?",
+      "answer": 1961,
+      "scale": 50,
+      "fact": "O instituto fica em São José dos Campos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi lançado o primeiro satélite brasileiro feito em casa, o SCD-1?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Ele foi lançado por um foguete americano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano ocorreu o acidente de Alcântara, com o foguete VLS-1?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "21 técnicos morreram."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram no acidente de Alcântara, em 2003?",
+      "answer": 21,
+      "unit": "pessoas",
+      "fact": "Foi a maior tragédia do programa espacial brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o tempo de ida e volta de um sinal de rádio até a Voyager 1, em horas?",
+      "answer": 46,
+      "unit": "horas",
+      "fact": "Mesmo na velocidade da luz, leva quase dois dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade da Voyager 1, em km/h?",
+      "answer": 61000,
+      "unit": "km/h",
+      "fact": "A sonda vai levar 40 mil anos para passar perto de outra estrela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade máxima da sonda Parker, em km/h?",
+      "answer": 690000,
+      "unit": "km/h",
+      "fact": "É o objeto mais rápido já feito pelo homem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do Curiosity, em kg?",
+      "answer": 899,
+      "unit": "kg",
+      "fact": "É o tamanho de um carro compacto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso do helicóptero Ingenuity, em kg?",
+      "answer": 1.8,
+      "unit": "kg",
+      "fact": "Ele fez 72 voos em Marte, muito além do previsto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos voos o Ingenuity fez em Marte?",
+      "answer": 72,
+      "unit": "voos",
+      "fact": "Foram previstos só cinco voos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos a sonda Opportunity trabalhou em Marte, em dias?",
+      "answer": 5352,
+      "unit": "dias",
+      "fact": "Foi planejada para durar 90 dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas tem a Estação Espacial Internacional?",
+      "answer": 420,
+      "unit": "toneladas",
+      "fact": "Ela é o maior objeto feito pelo homem em órbita."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o custo total da Estação Espacial, em bilhões de dólares?",
+      "answer": 150,
+      "unit": "bilhões",
+      "fact": "É o objeto mais caro já construído."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas tinha o foguete Saturno V, em seu lançamento?",
+      "answer": 2970,
+      "unit": "toneladas",
+      "fact": "O foguete tinha a altura de um prédio de 36 andares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a altura do foguete Saturno V, em metros?",
+      "answer": 111,
+      "unit": "metros",
+      "fact": "Ele continua sendo um dos foguetes mais poderosos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a altura do foguete Starship, em metros?",
+      "answer": 121,
+      "unit": "metros",
+      "fact": "Ele é o foguete mais alto e potente até hoje."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias Valeri Polyakov passou em órbita de uma só vez?",
+      "answer": 437,
+      "unit": "dias",
+      "fact": "Ele fez o recorde na estação Mir, em 1995."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias Frank Rubio passou em órbita em sua missão?",
+      "answer": 371,
+      "unit": "dias",
+      "fact": "É o recorde americano, estabelecido em 2023 por um defeito na nave."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas já foram ao espaço, aproximadamente?",
+      "answer": 700,
+      "unit": "pessoas",
+      "fact": "A maioria é dos EUA e da Rússia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países já tiveram astronautas no espaço, aproximadamente?",
+      "answer": 45,
+      "unit": "países",
+      "fact": "A Polônia, a Hungria e o Vietnã tiveram só uma pessoa, durante décadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o tamanho de um ano-luz, em bilhões de km?",
+      "answer": 9460,
+      "unit": "bilhões",
+      "fact": "É a distância que a luz percorre em um ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o diâmetro da Via Láctea, em anos-luz?",
+      "answer": 100000,
+      "unit": "anos-luz",
+      "fact": "O Sol fica a cerca de 26 mil anos-luz do centro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a distância do Sol até o centro da Via Láctea, em anos-luz?",
+      "answer": 26000,
+      "unit": "anos-luz",
+      "fact": "O Sistema Solar leva 225 milhões de anos para dar a volta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade dos fósseis mais antigos de seres vivos, em bilhões de anos?",
+      "answer": 3.5,
+      "unit": "bilhões",
+      "fact": "Eles são chamados de estromatólitos e estão na Austrália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude máxima que um avião comercial voa, em metros?",
+      "answer": 12500,
+      "unit": "metros",
+      "fact": "Essa altura ajuda a evitar o mau tempo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude do limite do espaço, segundo a linha de Kármán, em km?",
+      "answer": 100,
+      "unit": "km",
+      "fact": "Ela foi definida como a fronteira da atmosfera."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da troposfera, em média, em km?",
+      "answer": 12,
+      "unit": "km",
+      "fact": "É lá que acontecem as nuvens e a chuva."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura no topo da troposfera, em °C?",
+      "answer": -55,
+      "unit": "°C",
+      "fact": "Por isso, os aviões têm cabines aquecidas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que altitude fica a camada de ozônio, em km, em média?",
+      "answer": 25,
+      "unit": "km",
+      "fact": "Ela absorve a maior parte dos raios UV."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a temperatura em Vostok no recorde de 1983, em °C?",
+      "answer": -89.2,
+      "unit": "°C",
+      "fact": "Ela é a menor temperatura medida no solo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a pressão no fundo da Fossa das Marianas, em vezes a do nível do mar?",
+      "answer": 1000,
+      "unit": "vezes",
+      "fact": "Em 1960, Piccard e Walsh chegaram ao fundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas já desceram até o fundo da Fossa das Marianas, aproximadamente?",
+      "answer": 27,
+      "unit": "pessoas",
+      "fact": "Em 2012, o diretor James Cameron desceu sozinho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos tem o Cruzeiro do Sul, na bandeira do Brasil?",
+      "answer": 5,
+      "unit": "estrelas",
+      "fact": "A menor delas é a Intrometida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altura do meteoro de Tunguska quando explodiu, em km, aproximadamente?",
+      "answer": 8,
+      "unit": "km",
+      "fact": "A explosão de 1908 derrubou 80 milhões de árvores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas árvores o meteoro de Tunguska derrubou, em milhões?",
+      "answer": 80,
+      "unit": "milhões",
+      "fact": "Ele não deixou nenhuma cratera."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano caiu o meteoro de Tunguska?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Ele explodiu sobre a Sibéria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o meteoro de Chelyabinsk explodiu na Rússia?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "Mais de mil pessoas ficaram feridas, principalmente por vidros quebrados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km de diâmetro tem o asteroide Ceres, aproximadamente?",
+      "answer": 940,
+      "unit": "km",
+      "fact": "Ele é o maior objeto do cinturão de asteroides."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a sonda DART atingiu um asteroide de propósito?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "A missão mudou a órbita de Dimorphos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos-luz Sirius está da Terra, em km, em trilhões?",
+      "answer": 81,
+      "unit": "trilhões",
+      "fact": "Ela é uma das estrelas mais próximas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos kg pesa o maior meteorito brasileiro, o Bendegó?",
+      "answer": 5360,
+      "unit": "kg",
+      "fact": "Ele fica no Museu Nacional, e sobreviveu ao incêndio de 2018."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Museu Nacional, onde está o Bendegó, pegou fogo?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "O meteorito foi um dos poucos itens intactos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km de raio tem um buraco negro de uma massa solar, aproximadamente?",
+      "answer": 3,
+      "unit": "km",
+      "fact": "Essa medida é o raio de Schwarzschild."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a massa do buraco negro Sagitário A*, em milhões de sóis?",
+      "answer": 4,
+      "unit": "milhões",
+      "fact": "Ele fica no centro da Via Láctea."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a massa do buraco negro M87*, em bilhões de sóis?",
+      "answer": 6.5,
+      "unit": "bilhões",
+      "fact": "Ele foi o primeiro a ser fotografado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "A que distância da Terra fica o buraco negro M87*, em milhões de anos-luz?",
+      "answer": 55,
+      "unit": "milhões",
+      "fact": "A imagem foi feita por uma rede mundial de radiotelescópios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos, em média, leva um fóton a sair do centro do Sol?",
+      "answer": 100000,
+      "unit": "anos",
+      "fact": "Depois, leva só 8 minutos até chegar à Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a temperatura do núcleo do Sol, em °C?",
+      "answer": 15000000,
+      "unit": "°C",
+      "fact": "A pressão lá é enorme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura da coroa do Sol, em °C?",
+      "answer": 2000000,
+      "unit": "°C",
+      "fact": "Curiosamente, ela é muito mais quente que a superfície."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade do vento solar, em km/s?",
+      "answer": 400,
+      "unit": "km/s",
+      "fact": "Ela provoca as auroras na Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas de hidrogênio o Sol transforma por segundo, em milhões?",
+      "answer": 600,
+      "unit": "milhões",
+      "fact": "Isso produz toda a sua energia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas de massa o Sol perde por segundo, em milhões?",
+      "answer": 4,
+      "unit": "milhões",
+      "fact": "Mesmo assim, ele vai durar bilhões de anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a temperatura mais alta produzida em um reator de fusão, em milhões de °C?",
+      "answer": 160,
+      "unit": "milhões",
+      "fact": "O reator coreano KSTAR a sustentou por 20 segundos em 2020."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de °C são necessários para fundir hidrogênio em uma bomba?",
+      "answer": 100,
+      "unit": "milhões",
+      "fact": "Por isso, as bombas de hidrogênio começam com uma bomba atômica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a potência da bomba Tsar, em megatons?",
+      "answer": 50,
+      "unit": "megatons",
+      "fact": "Foi a maior explosão já feita pelo homem, em 1961."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a potência da bomba de Hiroshima, em quilotons?",
+      "answer": 15,
+      "unit": "quilotons",
+      "fact": "Foi lançada em 6 de agosto de 1945."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg de urânio tinha a bomba de Hiroshima?",
+      "answer": 64,
+      "unit": "kg",
+      "fact": "Menos de 1 kg chegou a passar por fissão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos kg de plutônio tinha a bomba de Nagasaki?",
+      "answer": 6.2,
+      "unit": "kg",
+      "fact": "Ela foi mais forte que a de Hiroshima."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a distância de segurança inicial de Chernobyl, em km, em torno da usina?",
+      "answer": 30,
+      "unit": "km",
+      "fact": "A zona de exclusão continua existindo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viviam em Pripyat antes do acidente?",
+      "answer": 49000,
+      "unit": "pessoas",
+      "fact": "Ela foi evacuada em poucos dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos mortos oficiais houve de imediato em Chernobyl?",
+      "answer": 31,
+      "unit": "mortos",
+      "fact": "A estimativa de longo prazo é muito discutida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a nota do terremoto do Chile de 1960?",
+      "answer": 9.5,
+      "unit": "magnitude",
+      "fact": "É o terremoto mais forte já registrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a nota do terremoto de Fukushima, em 2011?",
+      "answer": 9.1,
+      "unit": "magnitude",
+      "fact": "Foi o mais forte já registrado no Japão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a nota do terremoto no Oceano Índico, em 2004?",
+      "answer": 9.1,
+      "unit": "magnitude",
+      "fact": "Foi medido entre 9,1 e 9,3."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a nota do terremoto mais forte do Brasil, em 1955?",
+      "answer": 6.2,
+      "unit": "magnitude",
+      "fact": "Foi em Porto dos Gaúchos, no Mato Grosso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a altura do Tsunami de Lituya Bay, em 1958, em metros?",
+      "answer": 524,
+      "unit": "metros",
+      "fact": "Foi o maior já registrado, depois de um deslizamento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a velocidade máxima de um tsunami em mar aberto, em km/h?",
+      "answer": 800,
+      "unit": "km/h",
+      "fact": "É a velocidade de um avião comercial."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas Hiroshimas equivale a energia de um grande furacão por dia?",
+      "answer": 10000,
+      "unit": "Hiroshimas",
+      "fact": "A energia é tão grande que ninguém consegue impedi-lo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milissegundos dura um raio, em média?",
+      "answer": 200,
+      "unit": "milissegundos",
+      "fact": "Mesmo assim, ele carrega muita energia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a voltagem de um raio, em milhões de volts?",
+      "answer": 300,
+      "unit": "milhões",
+      "fact": "A corrente passa de 30 mil ampères."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem fevereiro em anos bissextos?",
+      "answer": 29,
+      "unit": "dias",
+      "fact": "O calendário gregoriano foi adotado em 1582."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a menor distância entre a Terra e Marte, em 2003, em km?",
+      "answer": 55800000,
+      "unit": "km",
+      "fact": "Foi a menor em quase 60 mil anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos meses dura uma viagem da Terra até Marte, em média?",
+      "answer": 7,
+      "unit": "meses",
+      "fact": "A janela de lançamento só abre a cada 26 meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude da órbita dos satélites geoestacionários, em km?",
+      "answer": 35786,
+      "unit": "km",
+      "fact": "Eles giram junto com a Terra e parecem parados no céu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos satélites ativos havia em órbita em 2024, aproximadamente?",
+      "answer": 10000,
+      "unit": "satélites",
+      "fact": "Boa parte é da rede Starlink."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos fragmentos de lixo espacial maiores que 10 cm há em órbita, aproximadamente?",
+      "answer": 36000,
+      "unit": "fragmentos",
+      "fact": "Eles viajam a mais de 27 mil km/h."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos satélites GPS são necessários para saber a posição, no mínimo?",
+      "answer": 4,
+      "unit": "satélites",
+      "fact": "Os relógios deles são corrigidos pela teoria da relatividade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos microssegundos por dia os relógios do GPS se adiantam pela relatividade?",
+      "answer": 38,
+      "unit": "microssegundos",
+      "fact": "Sem a correção, o erro seria de 10 km por dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a temperatura em que a água \"supercrítica\" passa a existir, em °C?",
+      "answer": 374,
+      "unit": "°C",
+      "fact": "Nesse estado, ela não é mais líquido nem gás."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a densidade do ósmio, em g/cm³?",
+      "answer": 22.59,
+      "unit": "g/cm³",
+      "fact": "É o elemento natural mais denso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a densidade do ouro, em g/cm³?",
+      "answer": 19.3,
+      "unit": "g/cm³",
+      "fact": "Uma barra padrão pesa cerca de 12,4 kg."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o preço por quilate do berkélio, em dólares por grama?",
+      "answer": 27000000,
+      "unit": "dólares",
+      "fact": "Ele é um dos elementos mais caros já produzidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o ponto de fusão do tungstênio, em °C?",
+      "answer": 3422,
+      "unit": "°C",
+      "fact": "Por isso, ele foi usado em filamentos de lâmpadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em quantos graus a água ferve, ao nível do mar, em °C?",
+      "answer": 100,
+      "unit": "°C",
+      "fact": "Em lugares altos, ela ferve antes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em quantos graus a água congela, ao nível do mar, em °C?",
+      "answer": 0,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "O sal pode baixar esse ponto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura normal do corpo humano, em °C, aproximadamente?",
+      "answer": 36.5,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "A febre começa perto de 37,8 °C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pares de cromossomos tem uma célula humana?",
+      "answer": 23,
+      "unit": "pares",
+      "fact": "As células sexuais têm a metade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros de sangue tem um adulto, aproximadamente?",
+      "answer": 5,
+      "unit": "litros",
+      "fact": "O valor varia com o peso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que porcentagem do corpo humano adulto é água, aproximadamente?",
+      "answer": 60,
+      "unit": "%",
+      "fact": "O valor varia com idade e sexo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média da superfície de Marte, em °C, aproximadamente?",
+      "answer": -60,
+      "unit": "°C",
+      "scale": 20,
+      "fact": "No verão do equador, ela pode passar de zero."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média da superfície de Vênus, em °C, aproximadamente?",
+      "answer": 465,
+      "unit": "°C",
+      "fact": "Ele é mais quente que Mercúrio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média de Plutão, em °C, aproximadamente?",
+      "answer": -230,
+      "unit": "°C",
+      "scale": 30,
+      "fact": "A sonda New Horizons o visitou em 2015."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura média da Lua à noite, em °C, aproximadamente?",
+      "answer": -173,
+      "unit": "°C",
+      "scale": 30,
+      "fact": "De dia, ela pode passar de 100 °C."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura de ebulição do nitrogênio líquido, em °C?",
+      "answer": -196,
+      "unit": "°C",
+      "scale": 30,
+      "fact": "Por isso ele é usado em criogenia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a distância entre a Terra e o Sol, em milhões de km, aproximadamente?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "Essa medida é chamada de unidade astronômica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a distância média entre a Terra e a Lua, em mil km, aproximadamente?",
+      "answer": 384,
+      "unit": "mil",
+      "fact": "A Lua se afasta quase 4 cm por ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a velocidade da luz, em km/s, aproximadamente?",
+      "answer": 300000,
+      "unit": "km/s",
+      "fact": "Nada com massa pode alcançá-la."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos a luz do Sol leva para chegar a Alfa Centauri, em anos?",
+      "answer": 4.3,
+      "unit": "anos",
+      "fact": "É o sistema estelar mais próximo do Sol."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o diâmetro da Terra no equador, em km, aproximadamente?",
+      "answer": 12756,
+      "unit": "km",
+      "fact": "O planeta é levemente achatado nos polos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a circunferência da Terra no equador, em km, aproximadamente?",
+      "answer": 40075,
+      "unit": "km",
+      "fact": "Eratóstenes calculou o valor no século III a.C."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos-luz tem o diâmetro da Via Láctea, em milhares, aproximadamente?",
+      "answer": 100,
+      "unit": "mil",
+      "fact": "Ela tem centenas de bilhões de estrelas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas estrelas tem a Via Láctea, em bilhões, aproximadamente?",
+      "answer": 200,
+      "unit": "bilhões",
+      "fact": "A estimativa vai até 400 bilhões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas galáxias tem o Universo observável, em bilhões, em estimativas comuns?",
+      "answer": 200,
+      "unit": "bilhões",
+      "fact": "Alguns estudos sugerem um número bem maior."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade do Sistema Solar, em bilhões de anos, aproximadamente?",
+      "answer": 4.6,
+      "unit": "bilhões",
+      "fact": "Ele nasceu de uma nuvem de gás e poeira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura do núcleo do Sol, em milhões de °C, aproximadamente?",
+      "answer": 15,
+      "unit": "milhões",
+      "fact": "Lá acontece a fusão nuclear."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura de fundo do Universo, em °C, aproximadamente?",
+      "answer": -270,
+      "unit": "°C",
+      "scale": 30,
+      "fact": "Ela é um resquício do Big Bang."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o ponto de fusão do mercúrio, em °C?",
+      "answer": -39,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "Por isso ele é líquido no ambiente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o ponto de ebulição do hélio, em °C, aproximadamente?",
+      "answer": -269,
+      "unit": "°C",
+      "scale": 30,
+      "fact": "Ele é o elemento mais difícil de condensar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros de DNA há em uma célula humana, aproximadamente?",
+      "answer": 2,
+      "unit": "metros",
+      "fact": "Ele fica muito bem dobrado no núcleo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos a luz do Sol leva para chegar à Terra, aproximadamente?",
+      "answer": 500,
+      "unit": "segundos",
+      "fact": "Isso dá cerca de 8 minutos e 20 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos tem a coluna vertebral de um adulto?",
+      "answer": 33,
+      "unit": "ossos",
+      "fact": "Parte deles se funde no sacro e no cóccix."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos o cérebro resiste sem oxigênio, em média, antes de lesões graves?",
+      "answer": 5,
+      "unit": "minutos",
+      "fact": "Por isso a reanimação precisa ser rápida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o comprimento do intestino delgado de um adulto, em metros, aproximadamente?",
+      "answer": 6,
+      "unit": "metros",
+      "fact": "O grosso tem cerca de 1,5 metro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas o estômago leva para esvaziar uma refeição comum, aproximadamente?",
+      "answer": 4,
+      "unit": "horas",
+      "fact": "As gorduras demoram mais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes o próton é mais pesado que o elétron?",
+      "answer": 1836,
+      "unit": "vezes",
+      "fact": "O próton é bem mais pesado."
     }
   ]
 }

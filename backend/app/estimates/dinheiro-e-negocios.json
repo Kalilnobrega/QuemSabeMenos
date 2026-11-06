@@ -1,0 +1,2918 @@
+{
+  "theme": "Dinheiro e negócios",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "text": "Quantos centavos tem um real?",
+      "answer": 100,
+      "unit": "centavos",
+      "fact": "Mesmo assim, algumas moedas de 1 centavo ainda aparecem por aí."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a maior nota de real em circulação, em reais?",
+      "answer": 200,
+      "unit": "reais",
+      "fact": "A nota de 200 foi lançada em setembro de 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a menor nota de real em circulação, em reais?",
+      "answer": 2,
+      "unit": "reais",
+      "fact": "A nota de 1 real deixou de ser fabricada em 2005."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas notas diferentes de real existem em circulação, contando as atuais?",
+      "answer": 7,
+      "unit": "notas",
+      "fact": "As de 2, 5, 10, 20, 50, 100 e 200 reais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Pix começou a funcionar?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "O lançamento geral foi em 16 de novembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o euro começou a circular em notas e moedas?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "Foram 12 países logo no início."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias de férias tem um trabalhador CLT por ano?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "E recebe um terço a mais do salário."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem do FGTS sobre o salário?",
+      "answer": 8,
+      "unit": "%",
+      "fact": "O depósito é feito pelo empregador todo mês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por semana é a jornada padrão da CLT?",
+      "answer": 44,
+      "unit": "horas",
+      "fact": "Até 1988, a jornada era de 48 horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Coca-Cola foi inventada?",
+      "answer": 1886,
+      "scale": 50,
+      "fact": "O farmacêutico John Pemberton a criou em Atlanta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o McDonald's chegou ao Brasil?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "A primeira loja abriu em Copacabana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o primeiro iPhone foi apresentado?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "Steve Jobs mostrou o aparelho em janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Nubank foi fundado?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "Depois o cartão roxo virou febre."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Banco do Brasil?",
+      "answer": 1808,
+      "scale": 50,
+      "fact": "Dom João VI o criou ao chegar com a corte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Caixa Econômica Federal foi fundada?",
+      "answer": 1861,
+      "scale": 50,
+      "fact": "Foi criada por dom Pedro II."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Havaianas foi lançada?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "O modelo foi inspirado na sandália japonesa zori."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Disney abriu seu primeiro parque?",
+      "answer": 1955,
+      "scale": 50,
+      "fact": "A Disneylândia abriu na Califórnia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Silvio Santos tinha quando morreu, em 2024?",
+      "answer": 93,
+      "unit": "anos",
+      "fact": "Ele era o dono do SBT e da Jequiti."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos números se marcam em uma aposta simples da Mega-Sena?",
+      "answer": 6,
+      "unit": "números",
+      "fact": "Com mais números, o preço sobe muito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos números tem o volante da Mega-Sena?",
+      "answer": 60,
+      "unit": "números",
+      "fact": "O jogo começou a funcionar em 1996."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos uma pessoa precisa ter para abrir uma empresa sozinha no Brasil?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Menores podem ser emancipados em alguns casos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses de licença-maternidade a CLT garante?",
+      "answer": 4,
+      "unit": "meses",
+      "fact": "Algumas empresas estendem esse prazo para 6 meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países usam o euro, aproximadamente?",
+      "answer": 21,
+      "unit": "países",
+      "fact": "A Bulgária foi o 21º país a adotar a moeda, em janeiro de 2026."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países fazem parte da União Europeia?",
+      "answer": 27,
+      "unit": "países",
+      "fact": "O Reino Unido saiu em 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formaram o G7?",
+      "answer": 7,
+      "unit": "países",
+      "fact": "EUA, Japão, Alemanha, Reino Unido, França, Itália e Canadá."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países fazem parte do Mercosul, contando a Bolívia?",
+      "answer": 5,
+      "unit": "países",
+      "fact": "Argentina, Brasil, Paraguai, Uruguai e Bolívia, como membros plenos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formaram o BRICS original?",
+      "answer": 5,
+      "unit": "países",
+      "fact": "África do Sul foi o último a entrar, em 2010."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis tem o logo da Audi?",
+      "answer": 4,
+      "unit": "anéis",
+      "fact": "Cada anel representa uma das quatro empresas fundadoras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas listras tem o logo da Adidas?",
+      "answer": 3,
+      "unit": "listras",
+      "fact": "Adi Dassler comprou o símbolo de uma marca finlandesa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos círculos tem o logo da Mastercard?",
+      "answer": 2,
+      "unit": "círculos",
+      "fact": "O vermelho e o amarelo representam a união."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas estrelas tem o logo da Subaru?",
+      "answer": 6,
+      "unit": "estrelas",
+      "fact": "Subaru é o nome japonês da constelação das Plêiades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pontas tem a estrela da Mercedes-Benz?",
+      "answer": 3,
+      "unit": "pontas",
+      "fact": "Elas representam terra, mar e ar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos milhões tem 1 bilhão?",
+      "answer": 1000,
+      "unit": "milhões",
+      "fact": "Um bilhão de segundos dura cerca de 32 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos bilhões tem 1 trilhão?",
+      "answer": 1000,
+      "unit": "bilhões",
+      "fact": "Um trilhão de segundos dura cerca de 32 mil anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos zeros tem 1 bilhão?",
+      "answer": 9,
+      "unit": "zeros",
+      "fact": "Em português de Portugal, bilião tem 12 zeros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos zeros tem 1 trilhão?",
+      "answer": 12,
+      "unit": "zeros",
+      "fact": "As maiores empresas do mundo valem trilhões de dólares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses tem um semestre?",
+      "answer": 6,
+      "unit": "meses",
+      "fact": "Muitos investidores recebem dividendos de seis em seis meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o valor, em reais, de um salário mínimo de 2024?",
+      "answer": 1412,
+      "unit": "reais",
+      "fact": "O valor passou a R$ 1.518 em 2025."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais custa fazer uma aposta simples da Mega-Sena, em 2025?",
+      "answer": 6,
+      "unit": "reais",
+      "fact": "O valor da aposta subiu de R$ 5 em 2025."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a alíquota máxima do Imposto de Renda de pessoa física no Brasil, em %?",
+      "answer": 27.5,
+      "unit": "%",
+      "fact": "Ela vale para quem recebe acima de um valor mensal da tabela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a multa do FGTS, em %, numa demissão sem justa causa?",
+      "answer": 40,
+      "unit": "%",
+      "fact": "A multa é paga pelo empregador ao trabalhador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a CLT foi criada?",
+      "answer": 1943,
+      "scale": 50,
+      "fact": "Getúlio Vargas a assinou em 1º de maio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o salário mínimo no Brasil?",
+      "answer": 1940,
+      "scale": 50,
+      "fact": "Os valores variavam entre as regiões."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o 13º salário no Brasil?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "Foi uma lei assinada por João Goulart."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a quebra da bolsa de Nova York?",
+      "answer": 1929,
+      "scale": 50,
+      "fact": "A crise levou à Grande Depressão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano quebrou o banco Lehman Brothers?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi em setembro, em uma das maiores crises recentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Bitcoin?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "A primeira transação ocorreu em janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Twitter virou X?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Elon Musk mudou o nome e aposentou o passarinho."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Meta deixou de se chamar Facebook como empresa?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "A empresa queria mostrar foco no metaverso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi fundada a Toyota?",
+      "answer": 1937,
+      "scale": 50,
+      "fact": "A empresa saiu de uma fábrica de teares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi fundada a Ferrari, como fabricante de carros?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "O primeiro carro foi o 125 S."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi fundada a Nike, com esse nome?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "Antes, era a Blue Ribbon Sports."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Adidas foi registrada?",
+      "answer": 1949,
+      "scale": 50,
+      "fact": "Adi Dassler formou a marca depois da briga com o irmão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Zara abriu sua primeira loja?",
+      "answer": 1975,
+      "scale": 50,
+      "fact": "A loja abriu em La Coruña, na Espanha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu a IKEA?",
+      "answer": 1943,
+      "scale": 50,
+      "fact": "Ingvar Kamprad tinha só 17 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu a Lego?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "Primeiro a empresa fazia brinquedos de madeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Barbie foi lançada?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "Ela apareceu numa feira de brinquedos, em Nova York."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Natura foi fundada?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "Luiz Seabra abriu uma pequena loja em São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano O Boticário foi fundado?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "Começou como uma farmácia em Curitiba."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Magazine Luiza?",
+      "answer": 1957,
+      "scale": 50,
+      "fact": "A primeira loja abriu em Franca, no interior de São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Embraer foi criada?",
+      "answer": 1969,
+      "scale": 50,
+      "fact": "Foi privatizada em 1994."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Vale foi privatizada?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "A antiga Vale do Rio Doce foi criada em 1942."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Ambev foi criada?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Veio da união de Brahma e Antarctica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Mega-Sena?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "O primeiro sorteio foi em março."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o iFood foi fundado?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Começou como um guia impresso de cardápios."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Uber começou a operar no Brasil?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "A estreia foi no Rio de Janeiro, antes da Copa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Spotify foi lançado?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Ele surgiu na Suécia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Airbnb foi fundado?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "O nome original era AirBed & Breakfast."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançada a primeira edição do Banco Imobiliário no Brasil?",
+      "answer": 1944,
+      "scale": 50,
+      "fact": "Foi feito pela Estrela, baseado no Monopoly."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o jogo Monopoly foi vendido pela Parker Brothers?",
+      "answer": 1935,
+      "scale": 50,
+      "fact": "Charles Darrow vendeu o jogo, baseado em um de Lizzie Magie."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Coca-Cola chegou ao Brasil?",
+      "answer": 1942,
+      "scale": 50,
+      "fact": "Chegou por Recife e Natal, junto com os soldados americanos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi fundada a Pepsi?",
+      "answer": 1898,
+      "scale": 50,
+      "fact": "Primeiro ela se chamava Brad's Drink."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Guaraná Antarctica?",
+      "answer": 1921,
+      "scale": 50,
+      "fact": "A fórmula é mantida em segredo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Casa da Moeda do Brasil?",
+      "answer": 1694,
+      "scale": 50,
+      "fact": "Ela surgiu em Salvador, para cunhar moedas de ouro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a União Europeia, pelo Tratado de Maastricht?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "O tratado entrou em vigor em novembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que nota de dólar está George Washington?",
+      "answer": 1,
+      "unit": "dólar",
+      "fact": "Ele foi o primeiro presidente dos EUA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que nota de dólar está Abraham Lincoln?",
+      "answer": 5,
+      "unit": "dólares",
+      "fact": "Lincoln também aparece na moedinha de 1 centavo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que nota de dólar está Benjamin Franklin?",
+      "answer": 100,
+      "unit": "dólares",
+      "fact": "Ele foi um dos pais fundadores dos EUA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que nota de dólar está Andrew Jackson?",
+      "answer": 20,
+      "unit": "dólares",
+      "fact": "Foi prometida uma troca por Harriet Tubman."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que nota de dólar está Ulysses Grant?",
+      "answer": 50,
+      "unit": "dólares",
+      "fact": "Grant foi general e presidente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que nota de dólar está Alexander Hamilton?",
+      "answer": 10,
+      "unit": "dólares",
+      "fact": "Hamilton criou o primeiro banco central dos EUA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número aparece no rótulo do ketchup Heinz?",
+      "answer": 57,
+      "unit": "variedades",
+      "fact": "O número foi escolhido por gosto do fundador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o número do modelo de jeans clássico da Levi's?",
+      "answer": 501,
+      "unit": "modelo",
+      "fact": "A linha foi criada em 1890."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número do perfume mais famoso da Chanel?",
+      "answer": 5,
+      "unit": "perfume",
+      "fact": "O Chanel Nº 5 foi lançado em 1921."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número na garrafa de cachaça mais vendida do Brasil, a \"uma boa ideia\"?",
+      "answer": 51,
+      "unit": "marca",
+      "fact": "Ela é uma das cachaças mais vendidas do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número do cartão de crédito na maioria dos cartões, em dígitos?",
+      "answer": 16,
+      "unit": "dígitos",
+      "fact": "Os primeiros dígitos identificam a bandeira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem um CNPJ?",
+      "answer": 14,
+      "unit": "dígitos",
+      "fact": "Em 2026 ele começou a admitir letras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem um CEP?",
+      "answer": 8,
+      "unit": "dígitos",
+      "fact": "O primeiro indica a região do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a idade mínima, em anos, para trabalhar como aprendiz no Brasil?",
+      "answer": 14,
+      "unit": "anos",
+      "fact": "Aos 16 anos o adolescente pode ter trabalho comum, com limites."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas parcelas tem o seguro-desemprego, no máximo?",
+      "answer": 5,
+      "unit": "parcelas",
+      "fact": "O número depende de quanto tempo a pessoa trabalhou."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o aviso prévio mínimo?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "A cada ano trabalhado, somam-se 3 dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem mínima paga a mais por hora extra?",
+      "answer": 50,
+      "unit": "%",
+      "fact": "Em domingos e feriados, ela é de 100%."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a porcentagem de gorjeta que os restaurantes costumam sugerir no Brasil?",
+      "answer": 10,
+      "unit": "%",
+      "fact": "A taxa é opcional, mesmo já vindo na conta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura normalmente um financiamento imobiliário, no máximo?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "A maior parte dos bancos brasileiros oferece até 420 meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses tem um prazo de 35 anos?",
+      "answer": 420,
+      "unit": "meses",
+      "fact": "A soma dos juros pode superar o valor do imóvel."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o prazo legal de arrependimento em compras on-line?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "É contado a partir do recebimento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Código de Defesa do Consumidor?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Entrou em vigor em março de 1991."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu o MEI?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "A categoria começou a valer em 2009."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de idade tinha Ingvar Kamprad quando fundou a IKEA?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "O dinheiro veio de um presente do pai por ir bem nos estudos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas reuniões o Copom faz por ano?",
+      "answer": 8,
+      "unit": "reuniões",
+      "fact": "As reuniões duram dois dias, e a decisão sai no segundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas empresas formam o índice Dow Jones?",
+      "answer": 30,
+      "unit": "empresas",
+      "fact": "Ele foi criado em 1896."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas empresas formam o índice S&P 500, em seu nome?",
+      "answer": 500,
+      "unit": "empresas",
+      "fact": "É o índice mais usado para medir a bolsa americana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas empresas formam o índice britânico FTSE?",
+      "answer": 100,
+      "unit": "empresas",
+      "fact": "O apelido dele é \"Footsie\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas empresas formam o índice francês CAC?",
+      "answer": 40,
+      "unit": "empresas",
+      "fact": "O índice começou em 1987."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas empresas formam o índice alemão DAX?",
+      "answer": 40,
+      "unit": "empresas",
+      "fact": "Até 2021 eram 30 empresas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas empresas formam o índice japonês Nikkei?",
+      "answer": 225,
+      "unit": "empresas",
+      "fact": "Ele existe desde 1950."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Warren Buffett tinha ao comprar sua primeira ação?",
+      "answer": 11,
+      "unit": "anos",
+      "fact": "Ele nasceu em 1930."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas lojas o McDonald's tem no mundo, aproximadamente?",
+      "answer": 40000,
+      "unit": "lojas",
+      "fact": "A rede está em mais de 100 países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos clientes o McDonald's atende por dia no mundo?",
+      "answer": 69000000,
+      "unit": "clientes",
+      "fact": "É mais gente que a população da França."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas doses de Coca-Cola são consumidas por dia no mundo?",
+      "answer": 1900000000,
+      "unit": "doses",
+      "fact": "A marca é vendida em mais de 200 países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos funcionários tem o Walmart no mundo, aproximadamente?",
+      "answer": 2100000,
+      "unit": "funcionários",
+      "fact": "É a maior empregadora privada do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Fuscas foram fabricados no mundo?",
+      "answer": 21500000,
+      "unit": "carros",
+      "fact": "A produção durou de 1938 a 2003."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Modelos T a Ford produziu?",
+      "answer": 15000000,
+      "unit": "carros",
+      "fact": "Por anos, todos saíam pretos, porque a tinta secava mais rápido."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas chances, 1 em quantas, há de ganhar a Mega-Sena com aposta simples?",
+      "answer": 50063860,
+      "fact": "É bem mais fácil ser atingido por um raio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas chances, 1 em quantas, há de ganhar a Lotofácil com aposta simples?",
+      "answer": 3268760,
+      "fact": "Por isso ela tem esse nome."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o prêmio da Mega da Virada de 2024, em milhões de reais?",
+      "answer": 635,
+      "unit": "milhões",
+      "fact": "O prêmio foi dividido entre oito apostas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o preço do barril de petróleo WTI, em dólares, em 20 de abril de 2020?",
+      "answer": -37.63,
+      "unit": "dólares",
+      "fact": "Pela primeira vez, o preço ficou negativo. Quem tinha contratos pagou para se livrar do petróleo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Dow Jones variou na Black Monday de 1987, em %?",
+      "answer": -22.6,
+      "unit": "%",
+      "fact": "Foi a maior queda de um único dia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o PIB do Brasil variou em 2020, em %?",
+      "answer": -3.3,
+      "unit": "%",
+      "fact": "A pandemia derrubou a economia mundial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o PIB do Brasil variou em 2015, em %?",
+      "answer": -3.5,
+      "unit": "%",
+      "fact": "O país enfrentou recessão em 2015 e 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o PIB do Brasil variou em 1990, em %?",
+      "answer": -4.3,
+      "unit": "%",
+      "fact": "Foi o ano do Plano Collor, com o confisco das poupanças."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o PIB do Brasil cresceu em 2010, em %?",
+      "answer": 7.5,
+      "unit": "%",
+      "fact": "Foi o maior crescimento desde 1986."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a inflação brasileira em 1993, em %?",
+      "answer": 2477,
+      "unit": "%",
+      "fact": "Os preços mudavam quase todo dia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a inflação de um único mês no Brasil, março de 1990, em %?",
+      "answer": 82.39,
+      "unit": "%",
+      "fact": "Foi a maior taxa mensal da história do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cruzeiros reais valia 1 real em 1994?",
+      "answer": 2750,
+      "unit": "cruzeiros reais",
+      "fact": "A URV serviu de ponte até a nova moeda."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual o valor do salário mínimo quando o real foi lançado, em reais?",
+      "answer": 64.79,
+      "unit": "reais",
+      "fact": "Era julho de 1994."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi a Selic mais alta da era do real, em 1999, em %?",
+      "answer": 45,
+      "unit": "%",
+      "fact": "A desvalorização do real levou a esse aumento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A que nível, em %, a Selic chegou em junho de 2025?",
+      "answer": 15,
+      "unit": "%",
+      "fact": "Foi o maior nível em quase 20 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o menor nível da Selic na história, em 2020 e 2021, em %?",
+      "answer": 2,
+      "unit": "%",
+      "fact": "O Banco Central a reduziu para reagir à pandemia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto Elon Musk pagou pelo Twitter, em bilhões de dólares?",
+      "answer": 44,
+      "unit": "bilhões",
+      "fact": "Ele tentou desistir do negócio, mas foi levado à Justiça."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Disney pagou pela Marvel, em bilhões de dólares?",
+      "answer": 4,
+      "unit": "bilhões",
+      "fact": "O primeiro Vingadores rendeu 1,5 bilhão sozinho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Disney pagou pela Lucasfilm, em dólares?",
+      "answer": 4050000000,
+      "unit": "dólares",
+      "fact": "A Disney recuperou o valor em poucos anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Disney pagou pela Pixar, em dólares?",
+      "answer": 7400000000,
+      "unit": "dólares",
+      "fact": "Com a compra, Jobs virou o maior acionista da Disney."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Disney pagou pela Fox, em bilhões de dólares?",
+      "answer": 71,
+      "unit": "bilhões",
+      "fact": "A compra, de 2019, trouxe X-Men e Avatar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Google pagou pelo YouTube, em dólares?",
+      "answer": 1650000000,
+      "unit": "dólares",
+      "fact": "O YouTube tinha só um ano e meio de vida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Microsoft pagou pelo LinkedIn, em dólares?",
+      "answer": 26200000000,
+      "unit": "dólares",
+      "fact": "A compra aconteceu em 2016."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Microsoft pagou pela Activision, em bilhões de dólares?",
+      "answer": 69,
+      "unit": "bilhões",
+      "fact": "Foi a maior compra da história dos games."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Amazon pagou pela rede Whole Foods, em dólares?",
+      "answer": 13700000000,
+      "unit": "dólares",
+      "fact": "A compra foi feita em 2017."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto a Amazon pagou pela MGM, em bilhões de dólares?",
+      "answer": 8.45,
+      "unit": "bilhões",
+      "fact": "A compra trouxe a franquia James Bond."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Por quantos dólares Ronald Wayne vendeu sua parte de 10% na Apple?",
+      "answer": 800,
+      "unit": "dólares",
+      "fact": "Ele saiu 12 dias depois de assinar o contrato."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custava um Apple I em 1976, em dólares?",
+      "answer": 666.66,
+      "unit": "dólares",
+      "fact": "O número veio do gosto de Wozniak por dígitos repetidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual era o preço do Modelo T em 1908, em dólares?",
+      "answer": 850,
+      "unit": "dólares",
+      "fact": "Em 1925 ele já custava só 260."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custou o quadro Salvator Mundi em 2017, em dólares?",
+      "answer": 450300000,
+      "unit": "dólares",
+      "fact": "Foi o maior preço já pago por uma obra em leilão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Louis Vuitton?",
+      "answer": 1854,
+      "scale": 50,
+      "fact": "Começou como fabricante de malas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Chanel?",
+      "answer": 1910,
+      "scale": 50,
+      "fact": "A primeira loja era de chapéus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Gucci?",
+      "answer": 1921,
+      "scale": 50,
+      "fact": "Guccio Gucci começou com malas, em Florença."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Dior?",
+      "answer": 1946,
+      "scale": 50,
+      "fact": "Christian Dior causou sensação com o \"New Look\" de 1947."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Prada?",
+      "answer": 1913,
+      "scale": 50,
+      "fact": "Foi criada pelos irmãos Prada, em Milão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Rolex?",
+      "answer": 1905,
+      "scale": 50,
+      "fact": "A sede era em Londres, antes de ir para a Suíça."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Tiffany & Co.?",
+      "answer": 1837,
+      "scale": 50,
+      "fact": "A joalheria começou como papelaria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Hermès?",
+      "answer": 1837,
+      "scale": 50,
+      "fact": "A marca fazia selas para cavalos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Levi's?",
+      "answer": 1853,
+      "scale": 50,
+      "fact": "Começou vendendo produtos a garimpeiros, na Califórnia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Ford?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "Henry Ford tinha 40 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Volkswagen?",
+      "answer": 1937,
+      "scale": 50,
+      "fact": "A marca foi criada para fabricar um \"carro do povo\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Honda?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Soichiro Honda começou em Hamamatsu."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Harley-Davidson?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "A primeira foi feita em um pequeno galpão em Milwaukee."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Lamborghini?",
+      "answer": 1963,
+      "scale": 50,
+      "fact": "Antes, Ferruccio fazia tratores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Porsche?",
+      "answer": 1931,
+      "scale": 50,
+      "fact": "Ferdinand Porsche também projetou o Fusca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Boeing?",
+      "answer": 1916,
+      "scale": 50,
+      "fact": "William Boeing era madeireiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a IBM, como CTR?",
+      "answer": 1911,
+      "scale": 50,
+      "fact": "O nome mudou em 1924."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Intel?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "Gordon Moore e Robert Noyce foram os criadores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Sony?",
+      "answer": 1946,
+      "scale": 50,
+      "fact": "A sede foi aberta em uma Tóquio em ruínas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Samsung?",
+      "answer": 1938,
+      "scale": 50,
+      "fact": "Começou vendendo macarrão e peixe seco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Kodak?",
+      "answer": 1888,
+      "scale": 50,
+      "fact": "George Eastman criou o lema \"aperte o botão que nós fazemos o resto\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Nestlé?",
+      "answer": 1866,
+      "scale": 50,
+      "fact": "Henri Nestlé criou uma farinha láctea para bebês."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Colgate?",
+      "answer": 1806,
+      "scale": 50,
+      "fact": "William Colgate vendia velas e sabão em Nova York."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Procter & Gamble?",
+      "answer": 1837,
+      "scale": 50,
+      "fact": "Os dois sócios eram cunhados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Johnson & Johnson?",
+      "answer": 1886,
+      "scale": 50,
+      "fact": "A empresa criou o band-aid em 1920."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Bayer?",
+      "answer": 1863,
+      "scale": 50,
+      "fact": "A empresa começou fazendo corantes na Alemanha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Pfizer?",
+      "answer": 1849,
+      "scale": 50,
+      "fact": "Era uma firma de produtos químicos no Brooklyn."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundado o Goldman Sachs?",
+      "answer": 1869,
+      "scale": 50,
+      "fact": "Marcus Goldman era um imigrante alemão que vendia títulos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Visa, como BankAmericard?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "O nome Visa só veio em 1976."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o primeiro Starbucks foi aberto?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "A loja fica ainda perto do Pike Place Market."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano a primeira loja Walmart foi aberta?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "Sam Walton abriu a loja em Rogers, no Arkansas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Burger King foi fundado?",
+      "answer": 1954,
+      "scale": 50,
+      "fact": "Começou em Miami, Flórida."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Subway foi fundado?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "O fundador tinha 17 anos e queria pagar a faculdade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundado o Itaú?",
+      "answer": 1945,
+      "scale": 50,
+      "fact": "Começou como Banco Central de Crédito, em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundado o Bradesco?",
+      "answer": 1943,
+      "scale": 50,
+      "fact": "Foi fundado em Marília, no interior paulista."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Gol?",
+      "answer": 2000,
+      "scale": 50,
+      "fact": "Os voos começaram em janeiro de 2001."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Azul?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "O nome foi escolhido em uma votação pública."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Varig?",
+      "answer": 1927,
+      "scale": 50,
+      "fact": "Foi a primeira companhia aérea do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Vale?",
+      "answer": 1942,
+      "scale": 50,
+      "fact": "Foi criada por Getúlio Vargas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a CSN?",
+      "answer": 1941,
+      "scale": 50,
+      "fact": "A usina de Volta Redonda começou a operar em 1946."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Gerdau?",
+      "answer": 1901,
+      "scale": 50,
+      "fact": "Começou como uma fábrica de pregos em Porto Alegre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a WEG?",
+      "answer": 1961,
+      "scale": 50,
+      "fact": "Foi em Jaraguá do Sul, Santa Catarina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Sadia?",
+      "answer": 1944,
+      "scale": 50,
+      "fact": "Foi em Concórdia, Santa Catarina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Alpargatas?",
+      "answer": 1907,
+      "scale": 50,
+      "fact": "A empresa foi criada por escoceses, em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Hering?",
+      "answer": 1880,
+      "scale": 50,
+      "fact": "Os irmãos alemães começaram em Blumenau."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Lojas Americanas?",
+      "answer": 1929,
+      "scale": 50,
+      "fact": "Quatro americanos abriram a primeira loja em Niterói."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Casas Bahia?",
+      "answer": 1957,
+      "scale": 50,
+      "fact": "Samuel Klein vendia de porta em porta, em São Caetano do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano abriu a primeira Pão de Açúcar?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Era uma doceria em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos dura uma patente de invenção no Brasil?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "Depois disso, qualquer um pode copiar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos milhões de dólares a Blockbuster recusou pagar pela Netflix em 2000?",
+      "answer": 50,
+      "unit": "milhões",
+      "fact": "Em 2010, a Blockbuster pediu falência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas Blockbusters ainda funcionam no mundo?",
+      "answer": 1,
+      "unit": "loja",
+      "fact": "Ela fica em Bend, no estado do Oregon."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o máximo de bitcoins que poderão existir, em milhões?",
+      "answer": 21,
+      "unit": "milhões",
+      "fact": "Cerca de 95% deles já foram minerados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bitcoins Laszlo Hanyecz pagou por duas pizzas em 2010?",
+      "answer": 10000,
+      "unit": "bitcoins",
+      "fact": "O dia 22 de maio virou o Dia da Pizza do Bitcoin."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bitcoins sumiram com a corretora Mt. Gox, aproximadamente?",
+      "answer": 850000,
+      "unit": "bitcoins",
+      "fact": "Parte foi recuperada anos depois."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Mark Zuckerberg tinha ao criar o Facebook?",
+      "answer": 19,
+      "unit": "anos",
+      "fact": "Ele deixou Harvard para tocar a empresa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Bill Gates tinha ao fundar a Microsoft?",
+      "answer": 19,
+      "unit": "anos",
+      "fact": "Ele também deixou Harvard."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Steve Jobs tinha quando morreu, em 2011?",
+      "answer": 56,
+      "unit": "anos",
+      "fact": "Ele enfrentava um câncer no pâncreas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Warren Buffett tinha ao deixar o comando da Berkshire, no fim de 2025?",
+      "answer": 95,
+      "unit": "anos",
+      "fact": "Greg Abel assumiu em seu lugar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos John D. Rockefeller viveu?",
+      "answer": 97,
+      "unit": "anos",
+      "fact": "Dizia querer chegar aos 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em quantas empresas a Standard Oil foi dividida, em 1911?",
+      "answer": 34,
+      "unit": "empresas",
+      "fact": "Delas vieram a ExxonMobil e a Chevron."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Harland Sanders tinha quando começou a franquear o KFC?",
+      "answer": 62,
+      "unit": "anos",
+      "fact": "O negócio começou com um cheque de 105 dólares da aposentadoria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dólares o designer do logo da Nike recebeu inicialmente?",
+      "answer": 35,
+      "unit": "dólares",
+      "fact": "Depois, a autora recebeu ações da empresa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias durou o bloqueio do Canal de Suez pelo Ever Given, em 2021?",
+      "answer": 6,
+      "unit": "dias",
+      "fact": "Cada dia custou bilhões ao comércio mundial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Nintendo lançou o Switch?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O console já vendeu mais de 150 milhões de unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi fundada a Pizza Hut?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "Dois irmãos abriram a loja em Wichita, no Kansas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Windows 95, pelo próprio nome?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "A Microsoft pagou aos Rolling Stones para usar \"Start Me Up\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil começou a usar o cruzeiro como moeda?",
+      "answer": 1942,
+      "scale": 50,
+      "fact": "Substituiu o mil-réis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Heineken foi fundada?",
+      "answer": 1864,
+      "scale": 50,
+      "fact": "Gerard Heineken tinha 22 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Guinness foi fundada?",
+      "answer": 1759,
+      "scale": 50,
+      "fact": "Arthur Guinness assinou um aluguel de 9 mil anos da cervejaria."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Brahma foi fundada?",
+      "answer": 1888,
+      "scale": 50,
+      "fact": "O suíço Joseph Villiger criou a cervejaria no Rio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Antarctica foi fundada?",
+      "answer": 1885,
+      "scale": 50,
+      "fact": "Ela começou como um frigorífico, em São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Google comprou o YouTube?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "O site era novo, e o negócio foi caro para a época."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o WhatsApp foi lançado?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "Seus criadores tinham sido recusados no Facebook."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o TikTok ganhou o mundo, com esse nome?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Saiu da união com o Musical.ly em 2018."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Shopee chegou ao Brasil?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "A empresa é de Singapura."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pessoas estavam na equipe do WhatsApp quando foi comprado, em 2014?",
+      "answer": 55,
+      "unit": "pessoas",
+      "fact": "Era uma empresa muito pequena, e custou 19 bilhões."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países têm uma loja da IKEA, aproximadamente?",
+      "answer": 60,
+      "unit": "países",
+      "fact": "O Brasil ainda não tem IKEA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o ano comercial?",
+      "answer": 360,
+      "unit": "dias",
+      "fact": "A conta facilita o cálculo dos juros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas o Pix está disponível por dia?",
+      "answer": 24,
+      "unit": "horas",
+      "fact": "Ele funciona em todos os dias do ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos dura um aluguel da cervejaria da Guinness, firmado em 1759?",
+      "answer": 9000,
+      "unit": "anos",
+      "fact": "O contrato foi comprado pela empresa mais tarde, e a fábrica ainda opera."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas lojas o Starbucks tem no mundo, aproximadamente?",
+      "answer": 40000,
+      "unit": "lojas",
+      "fact": "A rede tem cerca de 80 países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dólares o Costco cobra pelo cachorro-quente com refrigerante?",
+      "answer": 1.5,
+      "unit": "dólares",
+      "fact": "O preço não muda desde 1985."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos o preço do combo do Costco está congelado, considerando 2025?",
+      "answer": 40,
+      "unit": "anos",
+      "fact": "O fundador disse que mataria quem subisse o preço."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas marcas tem a Stellantis?",
+      "answer": 14,
+      "unit": "marcas",
+      "fact": "Entre elas, Jeep, Fiat, Peugeot e Chrysler."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas marcas de carro tem o grupo Volkswagen, aproximadamente?",
+      "answer": 10,
+      "unit": "marcas",
+      "fact": "Inclui Audi, Porsche, Bentley e Lamborghini."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos carros a Toyota vende por ano no mundo, aproximadamente?",
+      "answer": 10000000,
+      "unit": "carros",
+      "fact": "Ela é a maior montadora do mundo há anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos carros elétricos a Tesla entregou em 2023, aproximadamente?",
+      "answer": 1800000,
+      "unit": "carros",
+      "fact": "Em 2024 caiu um pouco, para cerca de 1,79 milhão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos iPhones a Apple vendeu por ano no pico de 2015, em milhões?",
+      "answer": 231,
+      "unit": "milhões",
+      "fact": "Depois disso, a empresa parou de divulgar o número."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altura do logo Hollywood, feito para vender imóveis em 1923, em metros?",
+      "answer": 14,
+      "unit": "metros",
+      "fact": "O letreiro dizia \"Hollywoodland\" e era propaganda de um loteamento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos andares tem a Antilia, a casa de Mukesh Ambani?",
+      "answer": 27,
+      "unit": "andares",
+      "fact": "Ela é uma das residências mais caras do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos durou a Companhia Holandesa das Índias Orientais?",
+      "answer": 197,
+      "unit": "anos",
+      "fact": "Foi de 1602 a 1799."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos durou o cargo de CEO de Steve Jobs na Apple após voltar em 1997?",
+      "answer": 14,
+      "unit": "anos",
+      "fact": "Ele saiu pouco antes de morrer, em agosto de 2011."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Jack Welch comandou a General Electric?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "O valor de mercado da empresa subiu muito nesse tempo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dólares a nota de maior valor já impressa pelo governo dos EUA valia?",
+      "answer": 100000,
+      "unit": "dólares",
+      "fact": "Era usada só entre os bancos do Fed, em 1934."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos trilhões de dólares tinha a nota de maior valor do Zimbábue?",
+      "answer": 100,
+      "unit": "trilhões",
+      "fact": "A nota foi lançada em 2009 e não comprava nem um ônibus."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o resultado da AIG em 2008, em bilhões de dólares?",
+      "answer": -99.3,
+      "unit": "bilhões",
+      "fact": "Foi um dos maiores prejuízos anuais já registrados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o resultado da Petrobras em 2015, em bilhões de reais?",
+      "answer": -34.8,
+      "unit": "bilhões",
+      "fact": "A queda do petróleo e os escândalos abalaram a empresa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o resultado da Vale em 2015, em bilhões de reais?",
+      "answer": -44.2,
+      "unit": "bilhões",
+      "fact": "O desastre de Mariana e a alta do dólar pesaram nas contas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto a Saudi Aramco arrecadou em sua abertura de capital de 2019, em bilhões de dólares?",
+      "answer": 29.4,
+      "unit": "bilhões",
+      "fact": "Foi a maior oferta de ações da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Nvidia chegou a 5 trilhões de dólares em valor?",
+      "answer": 2025,
+      "scale": 50,
+      "fact": "Foi a primeira empresa a chegar a essa marca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Apple chegou a 1 trilhão de dólares de valor?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Foi a primeira empresa americana a atingir essa marca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Kongo Gumi, uma das empresas mais antigas do mundo?",
+      "answer": 578,
+      "scale": 200,
+      "fact": "Ela construiu templos no Japão por mais de 1.400 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Stora, que fazia cobre e é uma das empresas mais antigas do mundo?",
+      "answer": 1288,
+      "scale": 100,
+      "fact": "A empresa virou a Stora Enso, de papel, na Finlândia e Suécia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Monte dei Paschi, banco mais antigo do mundo?",
+      "answer": 1472,
+      "scale": 100,
+      "fact": "Foi fundado em Siena, na Itália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Beretta, fabricante italiana de armas?",
+      "answer": 1526,
+      "scale": 100,
+      "fact": "É uma das empresas familiares mais antigas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Zildjian, fabricante de pratos de bateria?",
+      "answer": 1623,
+      "scale": 100,
+      "fact": "Ela nasceu em Constantinopla."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Lloyd's, seguradora de Londres?",
+      "answer": 1688,
+      "scale": 100,
+      "fact": "Começou em um café, onde marinheiros faziam seguros de navios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Twinings, marca de chá inglesa?",
+      "answer": 1706,
+      "scale": 100,
+      "fact": "O logo da empresa é o mais antigo em uso contínuo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Moët & Chandon?",
+      "answer": 1743,
+      "scale": 100,
+      "fact": "Napoleão era um dos clientes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Sotheby's, a casa de leilões?",
+      "answer": 1744,
+      "scale": 100,
+      "fact": "O primeiro leilão foi de livros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Christie's, a casa de leilões?",
+      "answer": 1766,
+      "scale": 100,
+      "fact": "James Christie começou em Londres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Cartier?",
+      "answer": 1847,
+      "scale": 50,
+      "fact": "A marca virou joalheria de reis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Peugeot?",
+      "answer": 1810,
+      "scale": 50,
+      "fact": "Era uma empresa da família, de moinhos de café."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a American Express?",
+      "answer": 1850,
+      "scale": 50,
+      "fact": "Começou como serviço de entrega de encomendas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Citibank?",
+      "answer": 1812,
+      "scale": 50,
+      "fact": "Começou como City Bank of New York."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Santander?",
+      "answer": 1857,
+      "scale": 50,
+      "fact": "Foi fundado no norte da Espanha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o JPMorgan como casa bancária?",
+      "answer": 1871,
+      "scale": 50,
+      "fact": "Mais tarde, em 2000, ele se uniria ao Chase."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o HSBC?",
+      "answer": 1865,
+      "scale": 50,
+      "fact": "Foi criado em Hong Kong por um escocês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Deutsche Bank?",
+      "answer": 1870,
+      "scale": 50,
+      "fact": "Foi fundado em Berlim."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Financial Times, em papel salmão?",
+      "answer": 1888,
+      "scale": 50,
+      "fact": "O papel rosado o faz ser fácil de reconhecer nas bancas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Wall Street Journal?",
+      "answer": 1889,
+      "scale": 50,
+      "fact": "Foi criado por Charles Dow e Edward Jones."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a revista Forbes?",
+      "answer": 1917,
+      "scale": 50,
+      "fact": "Foi criada pelo escocês B.C. Forbes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Bloomberg?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Michael Bloomberg saiu do Salomon com 10 milhões de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Mastercard, como Interbank?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "Ela surgiu de um grupo de bancos, para concorrer com a BankAmericard."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a PayPal?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Sob o nome inicial de Confinity."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Target?",
+      "answer": 1902,
+      "scale": 50,
+      "fact": "Começou como Dayton Dry Goods Company."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Domino's?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "Tom Monaghan comprou uma pizzaria com o irmão por 900 dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Renault?",
+      "answer": 1899,
+      "scale": 50,
+      "fact": "Foi criada pelos irmãos Renault na França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Fiat?",
+      "answer": 1899,
+      "scale": 50,
+      "fact": "Foi fundada em Turim."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a BMW?",
+      "answer": 1916,
+      "scale": 50,
+      "fact": "Começou fazendo motores de avião."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Mercedes-Benz?",
+      "answer": 1926,
+      "scale": 50,
+      "fact": "Veio da fusão entre Daimler e Benz."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a General Motors?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Foi fundada por William Durant."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Hyundai Motor?",
+      "answer": 1967,
+      "scale": 50,
+      "fact": "Foi criada pelo fundador do grupo, Chung Ju-yung."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Airbus?",
+      "answer": 1970,
+      "scale": 50,
+      "fact": "Foi um consórcio europeu criado para concorrer com a Boeing."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Puma?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Criada por Rudolf Dassler, que brigou com o irmão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Converse?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Marquis Converse fazia calçados de borracha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Azul Linhas Aéreas?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "David Neeleman também criou a JetBlue."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Banco Safra no Brasil?",
+      "answer": 1955,
+      "scale": 50,
+      "fact": "A família Safra saiu do Líbano e de Aleppo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Votorantim?",
+      "answer": 1918,
+      "scale": 50,
+      "fact": "O grupo começou como tecelagem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Grendene?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "Os irmãos Grendene fizeram embalagens de plástico para garrafões."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Renner, como rede de lojas?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "As raízes da empresa vêm de 1922."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Riachuelo?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "Foi fundada como \"A Riachuelo\", no Rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a Pernambucanas?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Ela é uma das mais antigas varejistas do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Ponto Frio foi fundado?",
+      "answer": 1946,
+      "scale": 50,
+      "fact": "Começou vendendo geladeiras, no Rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Carrefour foi fundada, na França?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "A primeira loja ficava em Annecy."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Walmart chegou ao Brasil?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Saiu em 2018, e a rede virou Grupo Big."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Ypê foi fundada?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Nasceu em Amparo, no interior paulista."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Rede Globo foi inaugurada?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "Foi criada por Roberto Marinho, no Rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Plano Cruzado?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "Foi durante o governo de José Sarney."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares foi o patrimônio de Bill Gates quando virou o mais rico do mundo pela 1ª vez, em 1995?",
+      "answer": 12.9,
+      "unit": "bilhões",
+      "fact": "Gates tinha 39 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilionários havia na primeira lista da Forbes, em 1987?",
+      "answer": 140,
+      "unit": "bilionários",
+      "fact": "Em 2025, foram mais de 3 mil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilionários havia na lista da Forbes de 2025?",
+      "answer": 3028,
+      "unit": "bilionários",
+      "fact": "Foi a primeira vez que passou de 3 mil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares custa cada ação Classe A da Berkshire Hathaway, aproximadamente, em 2024?",
+      "answer": 620000,
+      "unit": "dólares",
+      "fact": "Warren Buffett nunca dividiu a ação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a dívida pública dos EUA, em trilhões de dólares, ao fim de 2024?",
+      "answer": 36,
+      "unit": "trilhões",
+      "fact": "O valor era perto de 5 trilhões em 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o PIB dos EUA em 2023, em trilhões de dólares?",
+      "answer": 27.7,
+      "unit": "trilhões",
+      "fact": "É o maior PIB do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o PIB da China em 2023, em trilhões de dólares?",
+      "answer": 17.8,
+      "unit": "trilhões",
+      "fact": "Era menos de 1,2 trilhão no ano 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o PIB mundial em 2023, em trilhões de dólares?",
+      "answer": 105,
+      "unit": "trilhões",
+      "fact": "Os EUA têm cerca de um quarto do total."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o PIB do Brasil em 2023, em trilhões de reais?",
+      "answer": 10.9,
+      "unit": "trilhões",
+      "fact": "Foi o maior da história do país até então."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual a arrecadação federal brasileira de 2024, em trilhões de reais?",
+      "answer": 2.65,
+      "unit": "trilhões",
+      "fact": "Foi o maior valor registrado até aquele ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o patrimônio do fundo soberano da Noruega, em trilhões de dólares, em 2024?",
+      "answer": 1.7,
+      "unit": "trilhões",
+      "fact": "Equivale a cerca de 300 mil dólares por norueguês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares custava um barril de petróleo no pico de julho de 2008?",
+      "answer": 147,
+      "unit": "dólares",
+      "fact": "Depois da crise, caiu para menos de 40 dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o preço da onça de ouro em 2011, no pico de então, em dólares?",
+      "answer": 1900,
+      "unit": "dólares",
+      "fact": "Em 2025, o ouro passou de 4 mil dólares a onça."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos gramas tem uma onça troy de ouro?",
+      "answer": 31.1,
+      "unit": "gramas",
+      "fact": "A unidade tem esse nome por causa de Troyes, na França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares valia o bitcoin em seu pico até o fim de 2021?",
+      "answer": 69000,
+      "unit": "dólares",
+      "fact": "Em 2022, ele caiu para menos de 20 mil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares foi a perda do Barings com Nick Leeson?",
+      "answer": 1.3,
+      "unit": "bilhão",
+      "fact": "Ele escondeu os prejuízos em uma conta de erro, em Singapura."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares o trader Jérôme Kerviel fez o Société Générale perder?",
+      "answer": 7.2,
+      "unit": "bilhões",
+      "fact": "Foi em 2008, na França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares o Baleia de Londres fez o JPMorgan perder?",
+      "answer": 6.2,
+      "unit": "bilhões",
+      "fact": "Bruno Iksil foi o apelidado da operação de 2012."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de prisão Bernie Madoff recebeu?",
+      "answer": 150,
+      "unit": "anos",
+      "fact": "Ele morreu na prisão em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de prisão Sam Bankman-Fried recebeu?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "A FTX tinha desviado bilhões de clientes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos de prisão Elizabeth Holmes recebeu, aproximadamente?",
+      "answer": 11,
+      "unit": "anos",
+      "fact": "A startup Theranos prometia exames com poucas gotas de sangue."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares chegou a valer a WeWork em avaliação?",
+      "answer": 47,
+      "unit": "bilhões",
+      "fact": "Em 2023, ela pediu falência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares a Enron chegou a valer na bolsa, aproximadamente?",
+      "answer": 60,
+      "unit": "bilhões",
+      "fact": "Ela faliu em dezembro de 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto as ações da Americanas variaram no dia seguinte ao anúncio do rombo, em %?",
+      "answer": -77,
+      "unit": "%",
+      "fact": "Foi em 12 de janeiro de 2023."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o índice Nikkei variou de seu pico de 1989 até 2009, em %?",
+      "answer": -80,
+      "unit": "%",
+      "fact": "O Japão viveu décadas de estagnação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o índice Nasdaq variou de 2000 a 2002, em %?",
+      "answer": -78,
+      "unit": "%",
+      "fact": "Foi o estouro da bolha pontocom."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o Dow Jones variou de 1929 a 1932, em %?",
+      "answer": -89,
+      "unit": "%",
+      "fact": "A Grande Depressão apagou fortunas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o Ibovespa variou em 2008, em %?",
+      "answer": -41,
+      "unit": "%",
+      "fact": "O índice se recuperou no ano seguinte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o Ibovespa variou no dia do Joesley Day, em 18 de maio de 2017, em %?",
+      "answer": -8.8,
+      "unit": "%",
+      "fact": "O circuit breaker foi acionado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes o circuit breaker foi acionado na B3, em março de 2020?",
+      "answer": 6,
+      "unit": "vezes",
+      "fact": "Foi o pior mês da bolsa brasileira na pandemia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o peso argentino valia por dólar quando foi igualado em 1991, no plano de conversibilidade?",
+      "answer": 1,
+      "unit": "peso",
+      "fact": "Um peso igual a um dólar, até a crise de 2001."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto a inflação americana chegou a marcar, em seu pico em 2022, em %?",
+      "answer": 9.1,
+      "unit": "%",
+      "fact": "Foi o maior nível em 40 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos zeros o Zimbábue cortou de sua moeda em 2009?",
+      "answer": 12,
+      "unit": "zeros",
+      "fact": "Depois abandonou a moeda de vez."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos zeros a Venezuela cortou de sua moeda, entre 2008 e 2021, somados?",
+      "answer": 14,
+      "unit": "zeros",
+      "fact": "A hiperinflação destruiu o bolívar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países adotaram o bitcoin como moeda legal, ao longo da história, até 2024?",
+      "answer": 2,
+      "unit": "países",
+      "fact": "El Salvador e República Centro-Africana."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias de trabalho, em média, o brasileiro precisa para pagar impostos em um ano?",
+      "answer": 149,
+      "unit": "dias",
+      "fact": "O cálculo é do IBPT, que soma tributos diretos e indiretos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Fusca no Brasil, fabricado em São Bernardo do Campo?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "Virou o carro mais vendido do Brasil por décadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano abriu o primeiro shopping do Brasil, o Iguatemi de São Paulo?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "Ele fica na avenida Faria Lima."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais tinha de valor o primeiro salário mínimo do real, arredondado?",
+      "answer": 65,
+      "unit": "reais",
+      "fact": "Era julho de 1994 e o valor exato era R$ 64,79."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançada a nota de 200 reais?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "A pandemia aumentou a procura por dinheiro em papel."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Eletrobras foi privatizada?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "A venda aconteceu por oferta de ações na bolsa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Ray Kroc tinha quando entrou no McDonald's?",
+      "answer": 52,
+      "unit": "anos",
+      "fact": "Ele era vendedor de máquinas de milk-shake."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto Ray Kroc pagou aos irmãos McDonald pela marca, em dólares?",
+      "answer": 2700000,
+      "unit": "dólares",
+      "fact": "A compra foi feita em 1961."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dólares custava o primeiro hambúrguer dos irmãos McDonald, em centavos?",
+      "answer": 15,
+      "unit": "centavos",
+      "fact": "O preço baixo era parte da fórmula do Speedee Service."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos Coco Chanel tinha ao reabrir a marca, em 1954?",
+      "answer": 71,
+      "unit": "anos",
+      "fact": "Ela criou o famoso tailleur de tweed nessa volta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos milhões de dólares a primeira mensagem de Jack Dorsey no Twitter rendeu como NFT em 2021?",
+      "answer": 2.9,
+      "unit": "milhões",
+      "fact": "Em 2022, tentaram revender por 48 milhões e a melhor oferta foi de só 280 dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares a Microsoft pagou pelo Skype em 2011?",
+      "answer": 8.5,
+      "unit": "bilhões",
+      "fact": "O serviço foi desligado pela empresa em 2025."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares o Google pagou pela Motorola em 2012?",
+      "answer": 12.5,
+      "unit": "bilhões",
+      "fact": "Dois anos depois, vendeu a marca à Lenovo por 2,9 bilhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares a Lenovo pagou pela Motorola em 2014?",
+      "answer": 2.9,
+      "unit": "bilhões",
+      "fact": "O Google manteve a maior parte das patentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares a Kraft e a Heinz valiam ao se unirem em 2015, em negócio de 3G e Buffett?",
+      "answer": 46,
+      "unit": "bilhões",
+      "fact": "A união criou a quinta maior empresa de alimentos do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares a compra da Anheuser-Busch custou à InBev em 2008?",
+      "answer": 52,
+      "unit": "bilhões",
+      "fact": "A Budweiser deixou de ser controlada por americanos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares a AB InBev pagou pela SABMiller em 2016?",
+      "answer": 100,
+      "unit": "bilhões",
+      "fact": "Foi uma das maiores compras da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares a Vodafone pagou pela alemã Mannesmann em 2000?",
+      "answer": 183,
+      "unit": "bilhões",
+      "fact": "É a maior compra de empresa já feita."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares custou a união entre AOL e Time Warner em 2000?",
+      "answer": 165,
+      "unit": "bilhões",
+      "fact": "Em 2002, a empresa registrou um prejuízo enorme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o resultado da AOL Time Warner em 2002, em bilhões de dólares?",
+      "answer": -98.7,
+      "unit": "bilhões",
+      "fact": "Foi o maior prejuízo anual já registrado até então."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o valor da Meta variou em um único dia de fevereiro de 2022, em bilhões de dólares?",
+      "answer": -232,
+      "unit": "bilhões",
+      "fact": "Foi a maior perda de valor em um dia até então."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto o valor da Nvidia variou em um único dia de janeiro de 2025, em bilhões de dólares?",
+      "answer": -589,
+      "unit": "bilhões",
+      "fact": "O motivo foi o surgimento da chinesa DeepSeek."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o maior fundo de investimento em empresas de tecnologia, o Vision Fund, em bilhões de dólares?",
+      "answer": 100,
+      "unit": "bilhões",
+      "fact": "O SoftBank e o fundo saudita PIF foram os principais investidores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o resultado do Vision Fund, do SoftBank, no ano fiscal de 2022, em bilhões de dólares?",
+      "answer": -32,
+      "unit": "bilhões",
+      "fact": "O prejuízo veio da queda de valor das startups."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares a Petrobras pagou para encerrar a ação nos EUA, em 2018?",
+      "answer": 2.95,
+      "unit": "bilhões",
+      "fact": "Foi um acordo com investidores da empresa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares a Volkswagen gastou com o escândalo dos motores a diesel?",
+      "answer": 33,
+      "unit": "bilhões",
+      "fact": "O caso estourou em 2015 com testes fraudados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos carros foram afetados pelo Dieselgate, em milhões?",
+      "answer": 11,
+      "unit": "milhões",
+      "fact": "Os carros usavam um software para enganar os testes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos funcionários a Nokia chegou a ter, em seu pico, aproximadamente?",
+      "answer": 132000,
+      "unit": "funcionários",
+      "fact": "Hoje, a Nokia tem bem menos e cuida de redes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos funcionários a Kodak chegou a ter, em seu pico, nos EUA?",
+      "answer": 145000,
+      "unit": "funcionários",
+      "fact": "Em 2012 ela entrou em recuperação judicial."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes a Boeing 737 foi encomendada, aproximadamente?",
+      "answer": 16000,
+      "unit": "aviões",
+      "fact": "É o avião comercial mais vendido da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos A380 foram construídos, ao todo?",
+      "answer": 254,
+      "unit": "aviões",
+      "fact": "A Emirates foi a maior compradora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares custava um A380 no último preço de tabela, em milhões?",
+      "answer": 445,
+      "unit": "milhões",
+      "fact": "Poucas companhias compravam de verdade pelo preço de lista."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos contêineres leva o navio MSC Irina, um dos maiores do mundo?",
+      "answer": 24346,
+      "unit": "contêineres",
+      "fact": "Ele foi entregue em 2023."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem o navio Ever Given, de comprimento?",
+      "answer": 400,
+      "unit": "metros",
+      "fact": "É quase tão grande quanto o Empire State deitado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de beneficiários o INSS atende, aproximadamente, em 2024?",
+      "answer": 40,
+      "unit": "milhões",
+      "fact": "Os gastos com aposentadoria são o maior item do Orçamento."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de MEIs havia no Brasil em 2024, aproximadamente?",
+      "answer": 15,
+      "unit": "milhões",
+      "fact": "A maioria atua em comércio e serviços."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de CNPJs ativos havia no Brasil em 2024, aproximadamente?",
+      "answer": 21,
+      "unit": "milhões",
+      "fact": "O número incluía também os MEIs."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos milhões de usuários o Nubank tinha no Brasil, em fim de 2024?",
+      "answer": 101,
+      "unit": "milhões",
+      "fact": "Cerca de 60% dos adultos do país tinham conta nele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas transações o Pix fez em 2024, em bilhões?",
+      "answer": 63,
+      "unit": "bilhões",
+      "fact": "Foi mais que o cartão de crédito e o de débito somados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países tinha a rede McDonald's em seu auge, aproximadamente?",
+      "answer": 120,
+      "unit": "países",
+      "fact": "Hoje a rede está em cerca de 100 países."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas lojas o Subway tem no mundo, aproximadamente?",
+      "answer": 37000,
+      "unit": "lojas",
+      "fact": "Durante muitos anos ele teve mais lojas que o McDonald's."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas franquias tem o KFC no mundo, aproximadamente?",
+      "answer": 30000,
+      "unit": "lojas",
+      "fact": "A China é seu maior mercado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas lojas a rede Domino's tem no mundo, aproximadamente?",
+      "answer": 20000,
+      "unit": "lojas",
+      "fact": "É a maior rede de pizzas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas lojas a Cacau Show tinha, aproximadamente, em 2023?",
+      "answer": 4000,
+      "unit": "lojas",
+      "fact": "É uma das maiores redes de chocolate do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas lojas o Boticário tem, aproximadamente, em 2023?",
+      "answer": 4000,
+      "unit": "lojas",
+      "fact": "É a maior franquia do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas agências o Bradesco tinha em 2023, aproximadamente?",
+      "answer": 2500,
+      "unit": "agências",
+      "fact": "Os bancos fecham milhares de agências com o avanço dos aplicativos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cooperativas existem no Sicredi, aproximadamente?",
+      "answer": 100,
+      "unit": "cooperativas",
+      "fact": "O Sicredi nasceu em 1902, em Nova Petrópolis, no Rio Grande do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu a primeira cooperativa de crédito da América Latina, em Nova Petrópolis?",
+      "answer": 1902,
+      "scale": 50,
+      "fact": "A cooperativa é hoje parte do Sicredi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o limite de juros do rotativo sobre a dívida, em %, desde 2024?",
+      "answer": 100,
+      "unit": "%",
+      "fact": "Antes, a dívida podia mais que dobrar em poucos meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares por barril a Arábia Saudita precisa, aproximadamente, para equilibrar o orçamento, em 2024?",
+      "answer": 90,
+      "unit": "dólares",
+      "fact": "A estimativa é do FMI."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos barris de petróleo o mundo consome por dia, aproximadamente?",
+      "answer": 100000000,
+      "unit": "barris",
+      "fact": "Cada barril tem cerca de 159 litros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos litros tem um barril de petróleo?",
+      "answer": 159,
+      "unit": "litros",
+      "fact": "A medida vem de barris de peixe dos EUA do século XIX."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos dura, em média, uma empresa na lista S&P 500 hoje?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "Nos anos 1960, a média era de mais de 30 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cédulas de dólar são impressas por dia nos EUA, em milhões?",
+      "answer": 35,
+      "unit": "milhões",
+      "fact": "Nove em cada dez cédulas vão para repor as antigas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países usam oficialmente o dólar americano, além dos EUA?",
+      "answer": 7,
+      "unit": "países",
+      "fact": "A maioria é formada por pequenos territórios, como Equador e Panamá."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas de 50 centavos formam R$ 10?",
+      "answer": 20,
+      "unit": "moedas",
+      "fact": "Duas moedas formam um real."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais tem uma pessoa com 7 notas de R$ 50?",
+      "answer": 350,
+      "unit": "reais",
+      "fact": "Basta multiplicar 50 por 7."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 10% de um salário de R$ 3.000, em reais?",
+      "answer": 300,
+      "unit": "reais",
+      "fact": "Basta dividir por 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais recebe de troco quem paga R$ 50 em uma compra de R$ 37?",
+      "answer": 13,
+      "unit": "reais",
+      "fact": "Faltam 3 reais para 40 e mais 10 para 50."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centavos tem uma moeda de meio real?",
+      "answer": 50,
+      "unit": "centavos",
+      "fact": "Ela vale metade de 1 real."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas parcelas tem um salário de 13º, no pagamento comum?",
+      "answer": 2,
+      "unit": "parcelas",
+      "fact": "A primeira costuma vir até 30 de novembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por semana é a jornada máxima comum da CLT?",
+      "answer": 44,
+      "unit": "horas",
+      "fact": "Essa regra vale desde a Constituição de 1988."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas de 25 centavos formam R$ 5?",
+      "answer": 20,
+      "unit": "moedas",
+      "fact": "Quatro delas formam um real."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor de face da nota de maior valor do real, em reais?",
+      "answer": 200,
+      "unit": "reais",
+      "fact": "Ela foi lançada em 2020, com o lobo-guará."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto rendem R$ 1.000 em um ano, com 10% de juros simples, em reais?",
+      "answer": 100,
+      "unit": "reais",
+      "fact": "Juros simples incidem só sobre o valor inicial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto vale uma dívida de R$ 100 após 2 meses com 10% de juros compostos ao mês, em reais?",
+      "answer": 121,
+      "unit": "reais",
+      "fact": "No segundo mês, os juros incidem sobre R$ 110."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi o IPCA de 1993, em porcentagem, aproximadamente?",
+      "answer": 2477,
+      "unit": "%",
+      "scale": 500,
+      "fact": "Foi um dos piores anos da hiperinflação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi a inflação do Brasil em 1994, antes do real, em porcentagem, aproximadamente?",
+      "answer": 916,
+      "unit": "%",
+      "scale": 300,
+      "fact": "O Plano Real mudou esse cenário."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o resultado do PIB brasileiro em 2020, em porcentagem, aproximadamente?",
+      "answer": -3.3,
+      "unit": "%",
+      "scale": 2,
+      "fact": "Foi o ano da pandemia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o resultado do PIB brasileiro em 2015, em porcentagem, aproximadamente?",
+      "answer": -3.5,
+      "unit": "%",
+      "scale": 2,
+      "fact": "A economia viveu uma grande recessão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto variou o índice Dow Jones em 19 de outubro de 1987, em porcentagem?",
+      "answer": -22.6,
+      "unit": "%",
+      "scale": 10,
+      "fact": "O dia ficou conhecido como Segunda-Feira Negra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto variou o índice Ibovespa em 12 de março de 2020, em porcentagem?",
+      "answer": -14.8,
+      "unit": "%",
+      "scale": 8,
+      "fact": "A bolsa acionou o circuito de segurança naquele dia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dólares um barril de petróleo chegou a valer em abril de 2020, em contratos dos EUA?",
+      "answer": -37,
+      "unit": "dólares",
+      "scale": 30,
+      "fact": "Foi a primeira cotação abaixo de zero."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual era a taxa Selic no início de 2003, em porcentagem, aproximadamente?",
+      "answer": 25,
+      "unit": "%",
+      "scale": 8,
+      "fact": "Ela chegou a 26,5% naquele ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a inflação do Brasil em 1990, em porcentagem, aproximadamente?",
+      "answer": 1621,
+      "unit": "%",
+      "scale": 500,
+      "fact": "Foi o ano do Plano Collor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos zeros foram cortados do cruzeiro na troca por cruzeiro real, em 1993?",
+      "answer": 3,
+      "unit": "zeros",
+      "fact": "Foi uma das várias trocas de moeda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o PIB mundial, em trilhões de dólares, aproximadamente?",
+      "answer": 105,
+      "unit": "trilhões",
+      "fact": "Os EUA e a China somam boa parte dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o PIB do Brasil, em trilhões de dólares, aproximadamente?",
+      "answer": 2.2,
+      "unit": "trilhões",
+      "fact": "O país está entre as dez maiores economias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares a Exxon pagou pelo vazamento do Valdez, aproximadamente?",
+      "answer": 3.8,
+      "unit": "bilhões",
+      "fact": "O desastre ocorreu no Alasca, em 1989."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dólares valia uma ação da Enron pouco antes do colapso, no fim de 2001?",
+      "answer": 0.26,
+      "unit": "dólar",
+      "scale": 5,
+      "fact": "No ano anterior, passava de 90 dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bilhões de dólares o Lehman Brothers tinha em dívidas quando quebrou, aproximadamente?",
+      "answer": 600,
+      "unit": "bilhões",
+      "fact": "Foi a maior falência da história dos EUA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias a Bolsa de Nova York ficou fechada depois do 11 de setembro?",
+      "answer": 6,
+      "unit": "dias",
+      "fact": "As negociações voltaram em 17 de setembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais valem 3 notas de R$ 100?",
+      "answer": 300,
+      "unit": "reais",
+      "fact": "Cada nota de 100 traz a garoupa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais custam 5 ingressos de R$ 40?",
+      "answer": 200,
+      "unit": "reais",
+      "fact": "Em grupo, às vezes há desconto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses há em um trimestre fiscal?",
+      "answer": 3,
+      "unit": "meses",
+      "fact": "Empresas abertas divulgam resultados nesse ritmo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor de 1 milhão de reais em notas de R$ 100, em notas?",
+      "answer": 10000,
+      "unit": "notas",
+      "fact": "Elas cabem em uma mala grande."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos a Coca-Cola levou para abrir capital, desde 1886?",
+      "answer": 33,
+      "unit": "anos",
+      "fact": "A abertura de capital foi em 1919."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale em dólares um trilhão de centavos, em bilhões?",
+      "answer": 10,
+      "unit": "bilhões",
+      "fact": "Basta dividir por 100."
+    }
+  ]
+}

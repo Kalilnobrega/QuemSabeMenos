@@ -210,6 +210,2702 @@
       "answer": 1870,
       "scale": 50,
       "fact": "Foi o maior conflito armado da América do Sul; o Paraguai perdeu grande parte da população."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura o mandato de um presidente do Brasil?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "Ele pode ser reeleito uma vez."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura o mandato de um deputado federal?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "A Câmara tem 513 deputados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos deputados federais tem a Câmara?",
+      "answer": 513,
+      "unit": "deputados",
+      "fact": "São Paulo tem o maior número, com 70."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos senadores tem o Brasil?",
+      "answer": 81,
+      "unit": "senadores",
+      "fact": "São três por estado e três pelo DF."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos senadores tem cada estado?",
+      "answer": 3,
+      "unit": "senadores",
+      "fact": "Cada estado tem peso igual no Senado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ministros tem o Supremo Tribunal Federal?",
+      "answer": 11,
+      "unit": "ministros",
+      "fact": "Eles são indicados pelo presidente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos é permitido votar no Brasil?",
+      "answer": 16,
+      "unit": "anos",
+      "fact": "Dos 16 aos 18, o voto é facultativo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos o voto se torna obrigatório?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Ele deixa de ser obrigatório aos 70."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A partir de quantos anos o voto deixa de ser obrigatório?",
+      "answer": 70,
+      "unit": "anos",
+      "fact": "Mesmo assim, muitos idosos seguem votando."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem um número de celular com DDD no Brasil?",
+      "answer": 11,
+      "unit": "dígitos",
+      "fact": "O nono dígito foi adotado aos poucos, até 2016."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem o DDD do Brasil?",
+      "answer": 2,
+      "unit": "dígitos",
+      "fact": "São Paulo capital usa o 11."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o DDD de Brasília?",
+      "answer": 61,
+      "unit": "DDD",
+      "fact": "O número fica na região central do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o DDD do Rio de Janeiro?",
+      "answer": 21,
+      "unit": "DDD",
+      "fact": "A região metropolitana usa também o 24 em alguns pontos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o DDD de São Paulo capital?",
+      "answer": 11,
+      "unit": "DDD",
+      "fact": "O número virou gíria e nome de produto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual o código do Brasil para ligações internacionais?",
+      "answer": 55,
+      "unit": "código",
+      "fact": "Ele é usado também em contas de WhatsApp."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número da emergência do Corpo de Bombeiros?",
+      "answer": 193,
+      "unit": "número",
+      "fact": "O da polícia é 190."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número da polícia militar?",
+      "answer": 190,
+      "unit": "número",
+      "fact": "O da Polícia Civil é 197."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número da ambulância do SAMU?",
+      "answer": 192,
+      "unit": "número",
+      "fact": "O atendimento é gratuito."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu o Bolsa Família?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Ele juntou outros programas de benefício."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Enem?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "A partir de 2009 ele passou a dar vagas em universidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançada a Coca-Cola no Brasil?",
+      "answer": 1942,
+      "scale": 50,
+      "fact": "Ela chegou com os soldados americanos em Natal e Recife."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ganhou a segunda Copa do Mundo?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "Foi no Chile, com um show de Garrincha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ganhou a terceira Copa do Mundo?",
+      "answer": 1970,
+      "scale": 50,
+      "fact": "Foi no México, com uma seleção histórica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ganhou a quarta Copa do Mundo?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Foi nos EUA, nos pênaltis contra a Itália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ganhou a quinta Copa do Mundo?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "Foi na Coreia e no Japão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi o 7 a 1 entre Alemanha e Brasil?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "Foi no Mineirão, na semifinal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano nasceu Chico Buarque?",
+      "answer": 1944,
+      "scale": 50,
+      "fact": "Ele nasceu no Rio de Janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a estreia do Rock in Rio?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "Foram 10 dias, com mais de 1 milhão de pessoas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a estreia do Fantástico?",
+      "answer": 1973,
+      "scale": 50,
+      "fact": "Ele vai ao ar aos domingos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a estreia da TV Globo?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "A primeira emissora foi no Rio de Janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a estreia do SBT?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Silvio Santos ganhou a concessão no governo Figueiredo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o personagem Zé Carioca?",
+      "answer": 1942,
+      "scale": 50,
+      "fact": "Walt Disney viajou ao Brasil no ano anterior."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Maurício de Sousa criou a Mônica?",
+      "answer": 1963,
+      "scale": 50,
+      "fact": "Ela foi inspirada em uma filha dele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Fusca brasileiro?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "Virou o carro mais popular do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil adotou o horário de verão por último?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "O decreto de 2019 acabou com ele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a Copa do Mundo do Maracanaço?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "O Uruguai foi o campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil ganhou o primeiro ouro olímpico?",
+      "answer": 1920,
+      "scale": 50,
+      "fact": "Guilherme Paraense ganhou na prova de tiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foram as Olimpíadas do Rio?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "O Brasil teve seu recorde de medalhas até aquela edição."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a morte de Ayrton Senna?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Foi um grande luto no país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Pelé morreu?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "Ele tinha 82 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Silvio Santos morreu?",
+      "answer": 2024,
+      "scale": 50,
+      "fact": "Ele tinha 93 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Elis Regina morreu?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "Ela tinha apenas 36 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Cazuza morreu?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Ele tinha 32 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Renato Russo morreu?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Ele foi líder da Legião Urbana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Raul Seixas morreu?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "Ele tinha 44 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o acidente dos Mamonas Assassinas?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Eles estavam no auge da fama."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a tragédia da Boate Kiss?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "Foi em Santa Maria, no Rio Grande do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi a queda do avião da Chapecoense?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Foi na Colômbia, a caminho da final."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi o rompimento da barragem de Brumadinho?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "Morreram 272 pessoas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi o incêndio do Museu Nacional?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Quase todo o acervo foi perdido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foram os ataques às sedes dos três poderes, em Brasília?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Foi em 8 de janeiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Fernanda Montenegro foi indicada ao Oscar por Central do Brasil?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Ela perdeu para Gwyneth Paltrow."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o filme Ainda Estou Aqui ganhou o Oscar?",
+      "answer": 2025,
+      "scale": 50,
+      "fact": "Foi o primeiro Oscar do Brasil para um longa-metragem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo o Brasil venceu?",
+      "answer": 5,
+      "unit": "Copas",
+      "fact": "É o país com mais títulos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores a Seleção convoca para uma Copa, desde 2022?",
+      "answer": 26,
+      "unit": "jogadores",
+      "fact": "Antes, eram 23 jogadores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos Grand Slams Gustavo Kuerten ganhou?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Foram três vezes em Roland Garros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de Fórmula 1 tem Ayrton Senna?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Foram em 1988, 1990 e 1991."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de Fórmula 1 tem Nelson Piquet?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Ele foi campeão em 1981, 1983 e 1987."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos títulos mundiais de Fórmula 1 tem Emerson Fittipaldi?",
+      "answer": 2,
+      "unit": "títulos",
+      "fact": "Ele foi o primeiro brasileiro campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Faustão apresentou o Domingão, aproximadamente?",
+      "answer": 32,
+      "unit": "anos",
+      "fact": "Ele saiu da Globo em 2021."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Marília Mendonça tinha quando morreu?",
+      "answer": 26,
+      "unit": "anos",
+      "fact": "Ela morreu em um acidente de avião."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Tom Jobim tinha quando morreu?",
+      "answer": 67,
+      "unit": "anos",
+      "fact": "O aeroporto do Galeão leva o nome dele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Dona Ivone Lara viveu?",
+      "answer": 97,
+      "unit": "anos",
+      "fact": "Ela foi a primeira mulher a compor samba-enredo em escola do Rio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas capitais brasileiras têm linha de metrô, aproximadamente?",
+      "answer": 8,
+      "unit": "capitais",
+      "fact": "A maior é em São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos bairros tem a cidade do Rio de Janeiro, aproximadamente?",
+      "answer": 165,
+      "unit": "bairros",
+      "fact": "Copacabana é o mais famoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos km tem a praia do Cassino, a maior em linha reta do mundo?",
+      "answer": 254,
+      "unit": "km",
+      "fact": "Ela fica no Rio Grande do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos km tem a orla de Copacabana?",
+      "answer": 4,
+      "unit": "km",
+      "fact": "Os prédios ali têm vista para o Atlântico."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Dedo de Deus, em metros?",
+      "answer": 1692,
+      "unit": "metros",
+      "fact": "Fica em Teresópolis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura da Pedra da Gávea, em metros?",
+      "answer": 844,
+      "unit": "metros",
+      "fact": "É um dos maiores blocos de pedra à beira-mar do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Pico do Jaraguá, em metros?",
+      "answer": 1135,
+      "unit": "metros",
+      "fact": "É o ponto mais alto da cidade de São Paulo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Pico das Agulhas Negras, em metros?",
+      "answer": 2791,
+      "unit": "metros",
+      "fact": "Ele fica no Itatiaia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Pico da Bandeira, em metros?",
+      "answer": 2892,
+      "unit": "metros",
+      "fact": "É o terceiro ponto mais alto do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura da Ponte Estaiada, em São Paulo, em metros?",
+      "answer": 138,
+      "unit": "metros",
+      "fact": "Ela foi inaugurada em 2008."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Edifício Altino Arantes, o \"Banespão\", em metros?",
+      "answer": 161,
+      "unit": "metros",
+      "fact": "Foi inspirado no Empire State."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do prédio Martinelli, em metros?",
+      "answer": 105,
+      "unit": "metros",
+      "fact": "Foi o primeiro arranha-céu do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o prédio mais alto do Brasil, One Tower, em metros?",
+      "answer": 290,
+      "unit": "metros",
+      "fact": "Fica em Balneário Camboriú."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura média de Curitiba no ano, em °C?",
+      "answer": 17,
+      "unit": "°C",
+      "fact": "É a capital mais fria do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura média de Teresina no ano, em °C?",
+      "answer": 28,
+      "unit": "°C",
+      "fact": "É uma das capitais mais quentes do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Porto Alegre, em milhões, no Censo de 2022?",
+      "answer": 1.3,
+      "unit": "milhão",
+      "fact": "Ela sofreu uma enchente histórica em 2024."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Recife, em milhões, no Censo de 2022?",
+      "answer": 1.5,
+      "unit": "milhão",
+      "fact": "É a cidade mais densa do Nordeste."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Belém, em milhões, no Censo de 2022?",
+      "answer": 1.3,
+      "unit": "milhão",
+      "fact": "Ela sediou a COP30."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Goiânia, em milhões, no Censo de 2022?",
+      "answer": 1.4,
+      "unit": "milhão",
+      "fact": "Ela foi planejada nos anos 1930."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Florianópolis, em milhares, no Censo de 2022?",
+      "answer": 537,
+      "unit": "mil",
+      "fact": "Ela é uma das capitais com melhor qualidade de vida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Vitória, em milhares, no Censo de 2022?",
+      "answer": 322,
+      "unit": "mil",
+      "fact": "Fica em uma ilha, no Espírito Santo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Minas Gerais, em milhões, no Censo de 2022?",
+      "answer": 20.5,
+      "unit": "milhões",
+      "fact": "É o segundo estado mais populoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da Bahia, em milhões, no Censo de 2022?",
+      "answer": 14,
+      "unit": "milhões",
+      "fact": "É o estado mais populoso do Nordeste."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Roraima, em milhares, no Censo de 2022?",
+      "answer": 636,
+      "unit": "mil",
+      "fact": "É o estado com menos gente no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem de brasileiros que vivem na região Sudeste, em %?",
+      "answer": 42,
+      "unit": "%",
+      "fact": "Ela concentra também a maior parte do PIB."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem de brasileiros que vivem na região Nordeste, em %?",
+      "answer": 27,
+      "unit": "%",
+      "fact": "É a segunda região mais populosa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem de brasileiros que vivem na região Norte, em %?",
+      "answer": 8.5,
+      "unit": "%",
+      "fact": "É a maior região em área."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a idade mediana dos brasileiros, em anos, no Censo de 2022?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "Ela era de 29 anos em 2010."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos habitantes por domicílio há no Brasil, em média, no Censo de 2022?",
+      "answer": 2.79,
+      "unit": "pessoas",
+      "fact": "Em 2010, a média era de 3,31."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem de brasileiros pardos, no Censo de 2022, em %?",
+      "answer": 45.3,
+      "unit": "%",
+      "fact": "Foi a primeira vez que superaram os brancos desde 1991."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem de brasileiros brancos, no Censo de 2022, em %?",
+      "answer": 43.5,
+      "unit": "%",
+      "fact": "Era a maior parcela no censo anterior."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem de brasileiros pretos, no Censo de 2022, em %?",
+      "answer": 10.2,
+      "unit": "%",
+      "fact": "Em 2010, eram 7,6%."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos indígenas o Censo de 2022 contou no Brasil, aproximadamente?",
+      "answer": 1700000,
+      "unit": "pessoas",
+      "fact": "Mais da metade mora na Amazônia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos povos indígenas o Brasil tem, aproximadamente?",
+      "answer": 305,
+      "unit": "povos",
+      "fact": "Alguns ainda vivem isolados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilombolas o Censo de 2022 contou, aproximadamente?",
+      "answer": 1300000,
+      "unit": "pessoas",
+      "fact": "Foi a primeira vez que o Censo os contou."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura o ensino fundamental no Brasil?",
+      "answer": 9,
+      "unit": "anos",
+      "fact": "Ele antes tinha 8 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura o ensino médio no Brasil?",
+      "answer": 3,
+      "unit": "anos",
+      "fact": "A reforma de 2017 mudou a grade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos dura cada tempo de um jogo de futebol?",
+      "answer": 45,
+      "unit": "minutos",
+      "fact": "Em caso de empate em mata-mata, há prorrogação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas noites dura o Festival de Parintins?",
+      "answer": 3,
+      "unit": "noites",
+      "fact": "Os dois bois se revezam no Bumbódromo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura o Carnaval oficialmente, do sábado à terça?",
+      "answer": 4,
+      "unit": "dias",
+      "fact": "Em muitas cidades, ele é bem mais longo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tempo máximo de desfile de uma escola de samba do Rio, em minutos?",
+      "answer": 70,
+      "unit": "minutos",
+      "fact": "Passar do tempo tira pontos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cabeças de boi tem o Brasil, em milhões, aproximadamente?",
+      "answer": 238,
+      "unit": "milhões",
+      "fact": "É o maior rebanho comercial do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas de soja o Brasil produz por ano, em milhões, aproximadamente?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "É o maior produtor do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas sacas de café o Brasil produz por ano, em milhões, aproximadamente?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "O Brasil lidera a produção há mais de 150 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas de carne bovina o Brasil exporta por ano, em milhões?",
+      "answer": 3,
+      "unit": "milhões",
+      "fact": "A China é o maior comprador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas toneladas de frango o Brasil exporta por ano, em milhões?",
+      "answer": 5,
+      "unit": "milhões",
+      "fact": "É o maior exportador do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a porcentagem da eletricidade brasileira que vem de fontes renováveis?",
+      "answer": 85,
+      "unit": "%",
+      "fact": "É uma das maiores matrizes limpas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a porcentagem da energia elétrica do Brasil gerada por usinas hidrelétricas?",
+      "answer": 60,
+      "unit": "%",
+      "fact": "A dependência da chuva é um grande risco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a potência da usina de Itaipu, em megawatts?",
+      "answer": 14000,
+      "unit": "MW",
+      "fact": "Ela divide a produção com o Paraguai."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a potência da usina de Belo Monte, em megawatts?",
+      "answer": 11233,
+      "unit": "MW",
+      "fact": "Foi uma das obras mais polêmicas do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Rodovia dos Bandeirantes, em km?",
+      "answer": 175,
+      "unit": "km",
+      "fact": "É uma das melhores estradas do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Rodovia Presidente Dutra, em km?",
+      "answer": 402,
+      "unit": "km",
+      "fact": "Ela liga São Paulo ao Rio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do rio Tietê, em km?",
+      "answer": 1150,
+      "unit": "km",
+      "fact": "Ele corre em direção ao interior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do rio Paraíba do Sul, em km?",
+      "answer": 1137,
+      "unit": "km",
+      "fact": "Abastece boa parte do Rio de Janeiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do rio Tocantins, em km?",
+      "answer": 2416,
+      "unit": "km",
+      "fact": "Ele passa pelo Lago de Tucuruí."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da Ponte Hercílio Luz, em metros?",
+      "answer": 820,
+      "unit": "metros",
+      "fact": "É uma das maiores pontes pênseis do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Elevador Lacerda, em metros de altura?",
+      "answer": 72,
+      "unit": "metros",
+      "fact": "Ele liga as duas partes de Salvador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da Avenida Paulista, em km?",
+      "answer": 2.8,
+      "unit": "km",
+      "fact": "Ela é fechada para carros aos domingos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bairros tem São Paulo, em distritos oficiais?",
+      "answer": 96,
+      "unit": "distritos",
+      "fact": "Em cada subprefeitura há vários distritos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas favelas existem no Rio de Janeiro, aproximadamente?",
+      "answer": 1000,
+      "unit": "favelas",
+      "fact": "A Rocinha é a maior delas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas moram na Rocinha, aproximadamente, segundo o Censo de 2022?",
+      "answer": 72000,
+      "unit": "pessoas",
+      "fact": "É a maior favela do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas peças formam a cúpula do Teatro Amazonas?",
+      "answer": 36000,
+      "unit": "peças",
+      "fact": "As peças vieram da Europa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias durou a construção de Brasília, aproximadamente?",
+      "answer": 1000,
+      "unit": "dias",
+      "fact": "Foram 41 meses de obras."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos trabalhadores construíram Brasília, aproximadamente?",
+      "answer": 60000,
+      "unit": "trabalhadores",
+      "fact": "Eles ficaram conhecidos como candangos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem a Catedral de Brasília?",
+      "answer": 40,
+      "unit": "metros",
+      "fact": "As 16 colunas parecem mãos erguidas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas colunas tem a Catedral de Brasília?",
+      "answer": 16,
+      "unit": "colunas",
+      "fact": "A entrada é feita por um túnel escuro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas estátuas de profetas de Aleijadinho estão em Congonhas?",
+      "answer": 12,
+      "unit": "estátuas",
+      "fact": "Eles foram esculpidos na pedra-sabão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas ilhas a Baía de Todos os Santos tem, aproximadamente?",
+      "answer": 56,
+      "unit": "ilhas",
+      "fact": "A maior é Itaparica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas visitam Aparecida por ano, em milhões, aproximadamente?",
+      "answer": 13,
+      "unit": "milhões",
+      "fact": "É um dos maiores santuários marianos do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km mede a corda do Círio de Nazaré, em metros?",
+      "answer": 400,
+      "unit": "metros",
+      "fact": "Ela é considerada uma promessa em si."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas participam do Círio de Nazaré, em milhões, aproximadamente?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "É uma das maiores festas religiosas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas seguem o Galo da Madrugada, em milhões, aproximadamente?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "O bloco nasceu em 1978."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu o Galo da Madrugada?",
+      "answer": 1978,
+      "scale": 50,
+      "fact": "Foi em Recife, com cerca de 75 pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas participaram do bloco Galo da Madrugada na primeira saída?",
+      "answer": 75,
+      "unit": "pessoas",
+      "fact": "Hoje ele está no Guinness."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu a escola de samba Mangueira?",
+      "answer": 1928,
+      "scale": 50,
+      "fact": "Ela foi fundada com Cartola entre os criadores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu a escola de samba Portela?",
+      "answer": 1923,
+      "scale": 50,
+      "fact": "Paulo da Portela é um de seus fundadores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu a escola de samba Beija-Flor?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Ela é de Nilópolis."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Sambódromo do Rio?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "Foi construído em cerca de 110 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano surgiu o trio elétrico?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Dodô e Osmar o criaram em Salvador, em um velho Ford."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi composta \"Aquarela do Brasil\"?",
+      "answer": 1939,
+      "scale": 50,
+      "fact": "Ary Barroso a compôs em uma noite chuvosa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi composta \"Garota de Ipanema\"?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "Helô Pinheiro foi a musa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano João Gilberto lançou \"Chega de Saudade\"?",
+      "answer": 1958,
+      "scale": 50,
+      "fact": "Esse disco iniciou a bossa nova."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"Tropicália ou Panis et Circencis\"?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "Caetano e Gil foram exilados no ano seguinte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano Luiz Gonzaga lançou \"Asa Branca\"?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "A música virou um hino do Nordeste."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano nasceu Luiz Gonzaga?",
+      "answer": 1912,
+      "scale": 50,
+      "fact": "Ele nasceu em Exu, em Pernambuco."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano morreu Machado de Assis?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Ele foi velado na Academia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"Dom Casmurro\"?",
+      "answer": 1899,
+      "scale": 50,
+      "fact": "Até hoje se discute se Capitu traiu Bentinho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"Memórias Póstumas de Brás Cubas\"?",
+      "answer": 1881,
+      "scale": 50,
+      "fact": "A obra é narrada por um defunto."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"Os Sertões\"?",
+      "answer": 1902,
+      "scale": 50,
+      "fact": "Euclides da Cunha cobriu a Guerra de Canudos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"Vidas Secas\"?",
+      "answer": 1938,
+      "scale": 50,
+      "fact": "O livro mostra a dura vida de Fabiano e Sinhá Vitória."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"Capitães da Areia\"?",
+      "answer": 1937,
+      "scale": 50,
+      "fact": "Exemplares foram queimados em Salvador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"Iracema\"?",
+      "answer": 1865,
+      "scale": 50,
+      "fact": "José de Alencar era cearense."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi publicado \"O Alquimista\"?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Paulo Coelho vendeu mais de 65 milhões de exemplares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi inaugurado o MASP na Avenida Paulista?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "A rainha Elizabeth II esteve na inauguração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi inaugurado o Museu do Amanhã?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "O projeto é de Santiago Calatrava."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi inaugurado o Museu Imperial de Petrópolis?",
+      "answer": 1943,
+      "scale": 50,
+      "fact": "Ele guarda a coroa de Dom Pedro II."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Bienal de São Paulo?",
+      "answer": 1951,
+      "scale": 50,
+      "fact": "É uma das mais importantes do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Parque do Ibirapuera?",
+      "answer": 1954,
+      "scale": 50,
+      "fact": "Foi inaugurado no quarto centenário da cidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi inaugurado o Parque do Flamengo?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "O paisagismo é de Burle Marx."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi inaugurado o estádio do Morumbi?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "O estádio foi concluído 10 anos depois."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Pacaembu foi inaugurado?",
+      "answer": 1940,
+      "scale": 50,
+      "fact": "A abertura teve a presença de Getúlio Vargas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o Mineirão foi inaugurado?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "Ele é um dos estádios mais famosos do país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Corinthians?",
+      "answer": 1910,
+      "scale": 50,
+      "fact": "O clube foi fundado por operários no Bom Retiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Flamengo?",
+      "answer": 1895,
+      "scale": 50,
+      "fact": "Ele nasceu como clube de remo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Palmeiras?",
+      "answer": 1914,
+      "scale": 50,
+      "fact": "Foi fundado como Palestra Itália."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o São Paulo FC?",
+      "answer": 1930,
+      "scale": 50,
+      "fact": "O clube refundou-se em 1935."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Santos FC?",
+      "answer": 1912,
+      "scale": 50,
+      "fact": "Foi fundado por três desportistas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Vasco da Gama?",
+      "answer": 1898,
+      "scale": 50,
+      "fact": "Foi um dos primeiros grandes clubes a aceitar jogadores negros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Fluminense?",
+      "answer": 1902,
+      "scale": 50,
+      "fact": "Ele foi fundado por Oscar Cox."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Botafogo?",
+      "answer": 1904,
+      "scale": 50,
+      "fact": "O remo veio antes, em 1894."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Grêmio?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "Foi fundado em Porto Alegre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Internacional?",
+      "answer": 1909,
+      "scale": 50,
+      "fact": "Foi criado para aceitar todas as pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Cruzeiro?",
+      "answer": 1921,
+      "scale": 50,
+      "fact": "Nasceu como Palestra Itália de Belo Horizonte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Atlético Mineiro?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Foi fundado por estudantes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados têm a palavra \"Rio\" no nome?",
+      "answer": 3,
+      "unit": "estados",
+      "fact": "Rio de Janeiro, Rio Grande do Sul e Rio Grande do Norte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados têm \"Mato Grosso\" no nome?",
+      "answer": 2,
+      "unit": "estados",
+      "fact": "Eles se separaram em 1977."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem a bandeira do Brasil?",
+      "answer": 4,
+      "unit": "cores",
+      "fact": "Verde, amarelo, azul e branco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas palavras tem o lema da bandeira do Brasil?",
+      "answer": 3,
+      "unit": "palavras",
+      "fact": "O lema é \"Ordem e Progresso\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas regiões tem o Brasil?",
+      "answer": 5,
+      "unit": "regiões",
+      "fact": "A divisão atual é de 1970."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fusos horários tem o Brasil, contando as ilhas?",
+      "answer": 4,
+      "unit": "fusos",
+      "fact": "A maior parte do país segue o horário de Brasília."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países de língua portuguesa tem na África?",
+      "answer": 5,
+      "unit": "países",
+      "fact": "Angola, Moçambique, Cabo Verde, Guiné-Bissau e São Tomé e Príncipe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas capitais brasileiras ficam em ilhas, aproximadamente?",
+      "answer": 3,
+      "unit": "capitais",
+      "fact": "São Luís, Vitória e Florianópolis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados fazem fronteira com o Mato Grosso do Sul?",
+      "answer": 5,
+      "unit": "estados",
+      "fact": "Ele também faz fronteira com Paraguai e Bolívia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Dom Pedro I reinou no Brasil, depois da Independência?",
+      "answer": 9,
+      "unit": "anos",
+      "fact": "Ele abdicou em 1831."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos Tiradentes tinha ao ser enforcado?",
+      "answer": 45,
+      "unit": "anos",
+      "fact": "Ele nasceu em 1746."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos filhos Dom Pedro II teve?",
+      "answer": 4,
+      "unit": "filhos",
+      "fact": "Só duas meninas chegaram à idade adulta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o nível mínimo do rio Negro em Manaus em 2024, em metros?",
+      "answer": 12.11,
+      "unit": "metros",
+      "fact": "Foi o menor valor em mais de 120 anos de registros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o nível máximo do rio Negro em Manaus, em 2021, em metros?",
+      "answer": 30.02,
+      "unit": "metros",
+      "fact": "A cheia foi a maior já registrada até então."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o nível do Guaíba na enchente de 2024, em metros?",
+      "answer": 5.35,
+      "unit": "metros",
+      "fact": "Ela passou do recorde de 1941."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual foi o nível do Guaíba na enchente de 1941, em metros?",
+      "answer": 4.76,
+      "unit": "metros",
+      "fact": "Depois dela, a cidade construiu o Muro da Mauá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos a enchente gaúcha de 2024 deixou, aproximadamente?",
+      "answer": 183,
+      "unit": "mortos",
+      "fact": "Foram mais de 2 milhões de pessoas afetadas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o rompimento da barragem de Mariana deixou?",
+      "answer": 19,
+      "unit": "mortos",
+      "fact": "A lama percorreu mais de 600 km até o mar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o rompimento da barragem de Brumadinho deixou?",
+      "answer": 272,
+      "unit": "mortos",
+      "fact": "A empresa Vale foi a responsável pela barragem."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o incêndio da Boate Kiss deixou?",
+      "answer": 242,
+      "unit": "mortos",
+      "fact": "Foi uma das maiores tragédias do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o acidente da Chapecoense deixou?",
+      "answer": 71,
+      "unit": "mortos",
+      "fact": "Havia jogadores, jornalistas e dirigentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o voo 3054 da TAM deixou, em 2007?",
+      "answer": 199,
+      "unit": "mortos",
+      "fact": "Foi em Congonhas, em São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o voo 1907 da Gol deixou, em 2006?",
+      "answer": 154,
+      "unit": "mortos",
+      "fact": "Ele bateu em um jato menor sobre a Amazônia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mortos o Massacre do Carandiru deixou?",
+      "answer": 111,
+      "unit": "mortos",
+      "fact": "Foi na Casa de Detenção de São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas vítimas o acidente com o Césio-137, em Goiânia, deixou de imediato?",
+      "answer": 4,
+      "unit": "mortos",
+      "fact": "Foi o pior acidente radiológico fora de usinas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Corcovado em relação ao mar?",
+      "answer": 710,
+      "unit": "metros",
+      "fact": "Ele tem uma estrada e um trem até o topo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a maior profundidade do Rio Amazonas, em metros, aproximadamente?",
+      "answer": 100,
+      "unit": "metros",
+      "fact": "A profundidade média é de cerca de 50 metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a largura do rio Amazonas na época de seca, em km, aproximadamente?",
+      "answer": 11,
+      "unit": "km",
+      "fact": "Na cheia, em alguns trechos, chega a 50 km."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem a queda da Cachoeira da Fumaça, na Chapada Diamantina?",
+      "answer": 340,
+      "unit": "metros",
+      "fact": "Sua água vira névoa e sobe com o vento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros tem a queda da Cachoeira do Tabuleiro, em Minas Gerais?",
+      "answer": 273,
+      "unit": "metros",
+      "fact": "É a mais alta do estado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas lagoas azuis têm os Lençóis Maranhenses, aproximadamente, na cheia?",
+      "answer": 1000,
+      "unit": "lagoas",
+      "fact": "A água da chuva forma as lagoas entre as dunas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a área dos Lençóis Maranhenses, em km²?",
+      "answer": 1550,
+      "unit": "km²",
+      "fact": "O parque é Patrimônio Mundial desde 2024."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km² tem o Pantanal, aproximadamente, em todo o Brasil?",
+      "answer": 150000,
+      "unit": "km²",
+      "fact": "Em 2020, o fogo destruiu cerca de um quarto do bioma."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km² tem o Cerrado, em milhões, aproximadamente?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "É a savana mais biodiversa do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a porcentagem da Amazônia que já foi desmatada, aproximadamente?",
+      "answer": 20,
+      "unit": "%",
+      "fact": "Cientistas falam em ponto de não retorno entre 20% e 25%."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Parque Indígena do Xingu, em km²?",
+      "answer": 26400,
+      "unit": "km²",
+      "fact": "Ele reúne 16 povos diferentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos km² tem a Terra Indígena Yanomami?",
+      "answer": 96650,
+      "unit": "km²",
+      "fact": "É a maior terra indígena do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos Yanomami vivem no Brasil, aproximadamente?",
+      "answer": 27000,
+      "unit": "pessoas",
+      "fact": "A crise de garimpo ilegal recebeu ajuda federal em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos candidatos fizeram o Enem de 2024, aproximadamente, em milhões?",
+      "answer": 4.3,
+      "unit": "milhões",
+      "fact": "É um dos maiores exames do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas universidades federais o Brasil tem, aproximadamente?",
+      "answer": 69,
+      "unit": "universidades",
+      "fact": "Elas oferecem cursos gratuitos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas viajam por dia no metrô de São Paulo, em milhões?",
+      "answer": 3.7,
+      "unit": "milhões",
+      "fact": "O metrô de São Paulo é um dos mais lotados do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a extensão do metrô de São Paulo, em km, aproximadamente?",
+      "answer": 104,
+      "unit": "km",
+      "fact": "O metrô de Xangai tem mais de 800 km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram na tragédia do Bateau Mouche, em 1988?",
+      "answer": 55,
+      "unit": "mortos",
+      "fact": "O barco virou no réveillon do Rio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura máxima já registrada em São Paulo, em °C?",
+      "answer": 37.8,
+      "unit": "°C",
+      "fact": "Foi em 2014, e o verão foi muito seco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viveram em Canudos no auge, aproximadamente?",
+      "answer": 25000,
+      "unit": "pessoas",
+      "fact": "Ela chegou a ser a segunda maior cidade da Bahia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos soldados republicanos lutaram em Canudos, aproximadamente?",
+      "answer": 12000,
+      "unit": "soldados",
+      "fact": "Foram necessárias quatro expedições militares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas expedições militares foram enviadas a Canudos?",
+      "answer": 4,
+      "unit": "expedições",
+      "fact": "A última destruiu completamente o arraial."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi o público da final da Copa do Mundo de 2014, no Maracanã?",
+      "answer": 74738,
+      "unit": "pessoas",
+      "fact": "A Alemanha venceu por 1 a 0."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capacidade atual do Maracanã?",
+      "answer": 78838,
+      "unit": "pessoas",
+      "fact": "Antes, ele chegou a receber quase 200 mil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capacidade atual do Morumbi?",
+      "answer": 66795,
+      "unit": "pessoas",
+      "fact": "Ele é o maior estádio particular do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capacidade do Sambódromo do Rio de Janeiro?",
+      "answer": 72500,
+      "unit": "pessoas",
+      "fact": "Oscar Niemeyer fez o projeto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior público já registrado em um show, no Brasil, em Copacabana?",
+      "answer": 1600000,
+      "unit": "pessoas",
+      "fact": "Madonna reuniu esse público em 2024."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas Lady Gaga reuniu em Copacabana, em 2025, aproximadamente?",
+      "answer": 2100000,
+      "unit": "pessoas",
+      "fact": "Foi o maior show de sua carreira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas Rod Stewart reuniu em Copacabana, em 1994, aproximadamente?",
+      "answer": 3500000,
+      "unit": "pessoas",
+      "fact": "Os números foram muito discutidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas visitaram o Rock in Rio de 1985, aproximadamente?",
+      "answer": 1380000,
+      "unit": "pessoas",
+      "fact": "Foram 10 dias, na Barra da Tijuca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o peso de uma coroa imperial de Dom Pedro II, em kg?",
+      "answer": 1.95,
+      "unit": "kg",
+      "fact": "Ela tem 639 diamantes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos diamantes tem a coroa de Dom Pedro II?",
+      "answer": 639,
+      "unit": "diamantes",
+      "fact": "Ela está no Museu Imperial de Petrópolis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas toneladas de ouro saíram do Brasil no século XVIII, aproximadamente?",
+      "answer": 1000,
+      "unit": "toneladas",
+      "fact": "O ouro pagou boa parte do Palácio de Mafra, em Portugal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o estado de Rondônia?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "O nome homenageia o Marechal Rondon."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o estado de Roraima?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Antes era um território federal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o estado do Amapá?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Antes, também era um território federal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Ministério da Educação?",
+      "answer": 1930,
+      "scale": 50,
+      "fact": "Foi logo depois da chegada de Getúlio Vargas ao poder."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Banco Nacional de Desenvolvimento, o BNDES?",
+      "answer": 1952,
+      "scale": 50,
+      "fact": "Ele nasceu como BNDE, sem o S."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Eletrobras?",
+      "answer": 1962,
+      "scale": 50,
+      "fact": "Ela foi privatizada em 2022."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Embratel?",
+      "answer": 1965,
+      "scale": 50,
+      "fact": "Ela foi privatizada em 1998."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a TV Tupi?",
+      "answer": 1950,
+      "scale": 50,
+      "fact": "Foi a primeira emissora de TV do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Rádio Sociedade do Rio de Janeiro?",
+      "answer": 1923,
+      "scale": 50,
+      "fact": "Roquette-Pinto é considerado o pai do rádio brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a primeira transmissão de rádio no Brasil?",
+      "answer": 1922,
+      "scale": 50,
+      "fact": "Foi no centenário da Independência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi o primeiro voo comercial da Varig?",
+      "answer": 1927,
+      "scale": 50,
+      "fact": "Era um voo entre Porto Alegre e Rio Grande."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Ruy Barbosa?",
+      "answer": 1849,
+      "scale": 50,
+      "fact": "Ele nasceu em Salvador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Rodovia Transamazônica?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "Muitos trechos ainda não têm asfalto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Rodovia Belém-Brasília?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "Ela foi obra de JK."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Rodovia Dutra?",
+      "answer": 1951,
+      "scale": 50,
+      "fact": "Ela liga as duas maiores cidades do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Rodovia dos Imigrantes?",
+      "answer": 1976,
+      "scale": 50,
+      "fact": "Ela liga São Paulo a Santos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o primeiro shopping em São Paulo, o Iguatemi?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "É o mais antigo do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o aeroporto de Guarulhos?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "Ele é o maior do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o aeroporto de Congonhas?",
+      "answer": 1936,
+      "scale": 50,
+      "fact": "Ele fica dentro da cidade de São Paulo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o aeroporto Santos Dumont?",
+      "answer": 1936,
+      "scale": 50,
+      "fact": "Ele foi o primeiro aeroporto civil do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Galeão como aeroporto internacional?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "O nome oficial homenageia Tom Jobim."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a primeira Reserva Extrativista do Brasil?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "A Chico Mendes fica no Acre."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Chico Mendes foi morto?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Ele foi assassinado em Xapuri."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Parque Nacional da Amazônia?",
+      "answer": 1974,
+      "scale": 50,
+      "fact": "Ele fica no Pará."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Parque Nacional de Fernando de Noronha?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Boa parte do arquipélago é protegida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi descoberto o pré-sal?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "O campo de Tupi foi o primeiro achado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Brasil chegou à autossuficiência do petróleo, segundo o governo?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Lula sujou a mão de óleo em uma plataforma."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Brasil foi tirado do Mapa da Fome da ONU?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "O país voltou ao mapa alguns anos depois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi aprovada a lei de cotas nas universidades federais?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "Ela reservou 50% das vagas para alunos de escola pública."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi a morte de Marielle Franco?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Ela era vereadora do Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Brasil adotou o feriado nacional do Dia da Consciência Negra?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Foi sancionado por Lula, no fim do ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi legalizado o casamento gay no Brasil?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "A decisão foi do Conselho Nacional de Justiça."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi aprovado o divórcio no Brasil?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "A Lei do Divórcio foi uma grande batalha política."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi aprovado o Estatuto da Criança e do Adolescente?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Foi criado depois da Constituição de 1988."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi aprovado o Código de Trânsito atual?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Ele tornou obrigatório o uso do cinto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Mercosul, com o Tratado de Assunção?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Quatro países o criaram."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Bolsa Escola?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Foi o precursor do Bolsa Família."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Fome Zero?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Foi a principal marca inicial do governo Lula."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos, no mínimo, a pessoa deve ter para ser presidente do Brasil?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "A Constituição define a idade mínima."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos, no mínimo, a pessoa deve ter para ser vereador?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "É a menor idade para ocupar um cargo eletivo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos, no mínimo, para tirar a CNH de carro?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Antes disso, só com autorização judicial em casos especiais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos candidatos a presidente concorreram em 1989?",
+      "answer": 22,
+      "unit": "candidatos",
+      "fact": "Foi a primeira eleição direta depois da ditadura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos votos Lula teve no segundo turno de 2022, em milhões?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "Foi a maior votação de um presidente do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos votos Jair Bolsonaro teve no segundo turno de 2022, em milhões?",
+      "answer": 58,
+      "unit": "milhões",
+      "fact": "A diferença foi a menor desde a redemocratização."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas votaram em Collor no segundo turno de 1989, em milhões?",
+      "answer": 35,
+      "unit": "milhões",
+      "fact": "Ele venceu Lula na primeira eleição direta pós-ditadura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a idade mínima para ser senador?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "A idade mínima para governador é 30 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a idade mínima para ser governador?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "Ela é menor que a exigida para presidente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas urnas eletrônicas o Brasil usou em 2022, aproximadamente?",
+      "answer": 577000,
+      "unit": "urnas",
+      "fact": "Elas são transportadas até por barco e avião."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos o Brasil levou para ter a primeira mulher presidente, desde 1889?",
+      "answer": 122,
+      "unit": "anos",
+      "fact": "Dilma assumiu em 2011."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o voto feminino foi tornado obrigatório?",
+      "answer": 1946,
+      "scale": 50,
+      "fact": "Até então, ele era facultativo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano analfabetos ganharam o direito ao voto no Brasil?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "Eles ficaram quase 100 anos sem votar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o voto dos jovens de 16 anos foi aprovado?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "A Constituição fez essa mudança."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o voto secreto foi criado no Brasil?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "O Código Eleitoral criou também a Justiça Eleitoral."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Justiça Eleitoral?",
+      "answer": 1932,
+      "scale": 50,
+      "fact": "Ela surgiu em resposta às fraudes da República Velha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos ministros tem o Tribunal Superior Eleitoral?",
+      "answer": 7,
+      "unit": "ministros",
+      "fact": "Três deles vêm do STF."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos meses Jânio Quadros governou antes de renunciar?",
+      "answer": 7,
+      "unit": "meses",
+      "fact": "Ele tinha sido eleito com a maior votação até então."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos JK governou?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "Na época, o mandato era de cinco anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos João Figueiredo governou?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "Foi o mandato mais longo da ditadura."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos José Sarney governou?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "Ele assumiu após a morte de Tancredo Neves."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Dutra governou?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "Durante o governo dele, os cassinos foram proibidos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano os cassinos foram proibidos no Brasil?",
+      "answer": 1946,
+      "scale": 50,
+      "fact": "Ao todo, cerca de 70 cassinos fecharam as portas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos cassinos fecharam com a proibição de 1946?",
+      "answer": 71,
+      "unit": "cassinos",
+      "fact": "O da Urca, no Rio, era o mais famoso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Hidrelétrica de Paulo Afonso, a primeira grande do Nordeste?",
+      "answer": 1955,
+      "scale": 50,
+      "fact": "Fica na Bahia, no rio São Francisco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Hidrelétrica de Tucuruí?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "Ela inundou uma enorme área na Amazônia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Hidrelétrica de Belo Monte?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Fica no rio Xingu."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano começaram as obras da Transposição do São Francisco?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "Ela leva água para o semiárido do Nordeste."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a Transposição do São Francisco, somando os eixos?",
+      "answer": 477,
+      "unit": "km",
+      "fact": "A obra atinge quatro estados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Luiz Inácio Lula da Silva?",
+      "answer": 1945,
+      "scale": 50,
+      "fact": "Ele nasceu em Caetés, no estado de Pernambuco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Fernando Henrique Cardoso?",
+      "answer": 1931,
+      "scale": 50,
+      "fact": "Ele nasceu no Rio de Janeiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Dilma Rousseff?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "O pai dela era búlgaro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Juscelino Kubitschek?",
+      "answer": 1902,
+      "scale": 50,
+      "fact": "Ele era médico antes da política."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Getúlio Vargas?",
+      "answer": 1882,
+      "scale": 50,
+      "fact": "Ele foi presidente por 19 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Santos Dumont?",
+      "answer": 1873,
+      "scale": 50,
+      "fact": "Ele nasceu em Palmira, hoje Santos Dumont, em Minas Gerais."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Tom Jobim?",
+      "answer": 1927,
+      "scale": 50,
+      "fact": "Ele morreu em Nova York, em 1994."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Vinicius de Moraes?",
+      "answer": 1913,
+      "scale": 50,
+      "fact": "Ele se casou nove vezes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Cartola?",
+      "answer": 1908,
+      "scale": 50,
+      "fact": "Ele só gravou seu primeiro disco aos 66 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Pixinguinha?",
+      "answer": 1897,
+      "scale": 50,
+      "fact": "Ele tocou com a Orquestra dos Oito Batutas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Noel Rosa?",
+      "answer": 1910,
+      "scale": 50,
+      "fact": "Ele morreu aos 26 anos, de tuberculose."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Carmen Miranda?",
+      "answer": 1909,
+      "scale": 50,
+      "fact": "Ela nasceu em Portugal."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Clarice Lispector?",
+      "answer": 1920,
+      "scale": 50,
+      "fact": "Ela nasceu na atual Ucrânia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Jorge Amado?",
+      "answer": 1912,
+      "scale": 50,
+      "fact": "Ele escreveu Gabriela, Cravo e Canela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Paulo Freire?",
+      "answer": 1921,
+      "scale": 50,
+      "fact": "Ele nasceu em Recife."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Zumbi dos Palmares, segundo estimativa?",
+      "answer": 1655,
+      "scale": 50,
+      "fact": "Ele foi criado por um padre e voltou ao quilombo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Maria Bonita?",
+      "answer": 1911,
+      "scale": 50,
+      "fact": "Ela morreu em 1938, em Sergipe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Lampião?",
+      "answer": 1898,
+      "scale": 50,
+      "fact": "Ele foi um dos cangaceiros mais famosos do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Dom Pedro II foi coroado imperador, com 15 anos?",
+      "answer": 1841,
+      "scale": 50,
+      "fact": "O corpo diplomático chamou a coroação de uma grande festa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Ponte Hercílio Luz?",
+      "answer": 1926,
+      "scale": 50,
+      "fact": "Ela ficou fechada por muitos anos, até 2019."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Estação da Luz, em São Paulo?",
+      "answer": 1901,
+      "scale": 50,
+      "fact": "Ela foi feita com peças trazidas da Inglaterra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Mercado Ver-o-Peso, em Belém?",
+      "answer": 1625,
+      "scale": 50,
+      "fact": "É um dos mercados mais antigos do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Mercado Municipal de São Paulo?",
+      "answer": 1933,
+      "scale": 50,
+      "fact": "O sanduíche de mortadela é famoso lá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi feita a primeira edição do Festival de Cinema de Gramado?",
+      "answer": 1973,
+      "scale": 50,
+      "fact": "Ele é o maior festival de cinema do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Nova Friburgo, com colonos suíços?",
+      "answer": 1818,
+      "scale": 50,
+      "fact": "Ela é uma das colônias mais antigas não portuguesas do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Holambra, com imigrantes holandeses?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "A cidade é famosa pelas flores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Pomerode, com alemães?",
+      "answer": 1861,
+      "scale": 50,
+      "fact": "É a cidade mais alemã do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Americana, com imigrantes dos EUA?",
+      "answer": 1875,
+      "scale": 50,
+      "fact": "Muitos eram sulistas que fugiram da Guerra Civil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Santos?",
+      "answer": 1546,
+      "scale": 50,
+      "fact": "O porto é um dos maiores da América Latina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Olinda?",
+      "answer": 1537,
+      "scale": 50,
+      "fact": "Ela foi a capital de Pernambuco até o domínio holandês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de São Vicente?",
+      "answer": 1532,
+      "scale": 50,
+      "fact": "Foi a primeira vila do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Vitória?",
+      "answer": 1551,
+      "scale": 50,
+      "fact": "Ela fica em uma ilha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de João Pessoa?",
+      "answer": 1585,
+      "scale": 50,
+      "fact": "É a terceira capital mais antiga do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Natal?",
+      "answer": 1599,
+      "scale": 50,
+      "fact": "Ela foi fundada no dia de Natal, em um forte."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Cuiabá?",
+      "answer": 1719,
+      "scale": 50,
+      "fact": "Ela nasceu com a descoberta de ouro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Ouro Preto?",
+      "answer": 1711,
+      "scale": 50,
+      "fact": "Ela se chamava Vila Rica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Florianópolis?",
+      "answer": 1673,
+      "scale": 50,
+      "fact": "Antes, se chamava Nossa Senhora do Desterro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Campo Grande?",
+      "answer": 1872,
+      "scale": 50,
+      "fact": "Ela fica em Mato Grosso do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Londrina?",
+      "answer": 1934,
+      "scale": 50,
+      "fact": "Os ingleses compraram as terras da região."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Maringá?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "Ela foi planejada e tem muitas árvores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Boa Vista?",
+      "answer": 1890,
+      "scale": 50,
+      "fact": "Ela foi planejada em formato de leque."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Macapá?",
+      "answer": 1758,
+      "scale": 50,
+      "fact": "Ela tem a Fortaleza de São José."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Rio Branco?",
+      "answer": 1882,
+      "scale": 50,
+      "fact": "O nome homenageia o Barão do Rio Branco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Porto Velho?",
+      "answer": 1914,
+      "scale": 50,
+      "fact": "Ela surgiu com a ferrovia Madeira-Mamoré."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a capacidade do reservatório da Cantareira, em bilhões de litros?",
+      "answer": 982,
+      "unit": "bilhões",
+      "fact": "A crise hídrica de 2014 o levou a níveis muito baixos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude do Pico da Neblina, em pés?",
+      "answer": 9826,
+      "unit": "pés",
+      "fact": "Ele foi remedido em 2016."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Dom Pedro II ficou exilado até morrer?",
+      "answer": 2,
+      "unit": "anos",
+      "fact": "Ele saiu do Brasil em 1889 e morreu em 1891."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos se passaram entre a chegada de Cabral e a Independência?",
+      "answer": 322,
+      "unit": "anos",
+      "fact": "O período é conhecido como Brasil Colônia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias a viagem da corte de Portugal ao Brasil levou, em 1807 e 1808?",
+      "answer": 54,
+      "unit": "dias",
+      "fact": "A chegada foi em Salvador, em janeiro de 1808."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos navios trouxeram a corte portuguesa ao Brasil?",
+      "answer": 36,
+      "unit": "navios",
+      "fact": "A esquadra foi acompanhada por navios britânicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos meses a primeira expedição de Cabral levou até chegar ao Brasil?",
+      "answer": 2,
+      "unit": "meses",
+      "fact": "Eles saíram de Lisboa em março e chegaram em abril."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados fazem parte da região Nordeste?",
+      "answer": 9,
+      "unit": "estados",
+      "fact": "A Bahia é o maior deles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados fazem parte da região Sul?",
+      "answer": 3,
+      "unit": "estados",
+      "fact": "Paraná, Santa Catarina e Rio Grande do Sul."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados fazem parte da região Norte?",
+      "answer": 7,
+      "unit": "estados",
+      "fact": "A região é a maior do país em área."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados fazem parte da região Sudeste?",
+      "answer": 4,
+      "unit": "estados",
+      "fact": "Ela é a mais populosa do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países da América do Sul não fazem fronteira com o Brasil?",
+      "answer": 2,
+      "unit": "países",
+      "fact": "São o Chile e o Equador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados brasileiros são banhados pelo mar?",
+      "answer": 17,
+      "unit": "estados",
+      "fact": "Entre as capitais, Teresina não fica no litoral."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo o Brasil ganhou?",
+      "answer": 5,
+      "unit": "Copas",
+      "fact": "O último título foi em 2002."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas estrelas tem a camisa da seleção brasileira?",
+      "answer": 5,
+      "unit": "estrelas",
+      "fact": "Uma para cada título mundial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias costuma durar o Carnaval oficial, de sábado a terça?",
+      "answer": 4,
+      "unit": "dias",
+      "fact": "A Quarta-Feira de Cinzas marca o fim."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros de fronteira terrestre tem o Brasil, aproximadamente?",
+      "answer": 16900,
+      "unit": "km",
+      "fact": "Ela é uma das maiores do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a área do Brasil, em milhões de km², aproximadamente?",
+      "answer": 8.5,
+      "unit": "milhões",
+      "fact": "É o quinto maior país do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altura das Cataratas do Iguaçu, em metros, no ponto mais alto?",
+      "answer": 82,
+      "unit": "metros",
+      "fact": "A Garganta do Diabo é a parte mais famosa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto mede a Ponte Rio-Niterói, em quilômetros, aproximadamente?",
+      "answer": 13,
+      "unit": "km",
+      "fact": "Ela foi inaugurada em 1974."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos durou o Império no Brasil, de 1822 a 1889?",
+      "answer": 67,
+      "unit": "anos",
+      "fact": "Dom Pedro II reinou quase todo esse período."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos anos durou a ditadura militar no Brasil, de 1964 a 1985?",
+      "answer": 21,
+      "unit": "anos",
+      "fact": "Tancredo Neves foi eleito de forma indireta em 1985."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual foi a menor temperatura oficial do Brasil, em °C?",
+      "answer": -14,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "Ela foi registrada em Caçador, em 1952."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude de Urubici, em Santa Catarina, em metros, aproximadamente?",
+      "answer": 915,
+      "unit": "metros",
+      "fact": "É uma das cidades mais frias do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Dom Pedro II reinou, desde a coroação em 1841 até 1889?",
+      "answer": 48,
+      "unit": "anos",
+      "fact": "Ele foi coroado aos 15 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tinha Dom Pedro II quando foi coroado?",
+      "answer": 15,
+      "unit": "anos",
+      "fact": "A Maioridade foi antecipada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos soldados brasileiros foram à Itália com a FEB, em milhares?",
+      "answer": 25,
+      "unit": "mil",
+      "fact": "Monte Castelo é a batalha mais lembrada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos presidentes o Brasil teve, contando até Lula em 2023, aproximadamente?",
+      "answer": 39,
+      "unit": "presidentes",
+      "fact": "A contagem varia com juntas e interinos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto de área tem a Floresta Amazônica no Brasil, em milhões de km², aproximadamente?",
+      "answer": 4.2,
+      "unit": "milhões",
+      "fact": "Ela cobre cerca de metade do território brasileiro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros tem o Rio São Francisco, aproximadamente?",
+      "answer": 2830,
+      "unit": "km",
+      "fact": "Ele nasce na Serra da Canastra, em Minas Gerais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas capitais estaduais tem o Brasil, sem contar Brasília?",
+      "answer": 26,
+      "unit": "capitais",
+      "fact": "Cada estado tem a sua."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o Dedo de Deus, em Teresópolis, aproximadamente?",
+      "answer": 1692,
+      "unit": "metros",
+      "fact": "O pico é um símbolo do montanhismo brasileiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem a Rodovia Transamazônica, aproximadamente?",
+      "answer": 4000,
+      "unit": "km",
+      "fact": "Ela foi aberta nos anos 1970."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas cabem no Maracanã, em milhares, em jogos atuais?",
+      "answer": 78,
+      "unit": "mil",
+      "fact": "Na Copa de 1950, ele recebeu mais de 170 mil pessoas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viram a final da Copa de 1950 no Maracanã, em milhares, oficialmente?",
+      "answer": 173,
+      "unit": "mil",
+      "fact": "O Uruguai venceu e calou o estádio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da barragem de Itaipu, em metros, aproximadamente?",
+      "answer": 196,
+      "unit": "metros",
+      "fact": "Ela foi inaugurada em 1984."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores titulares tem um time de vôlei de praia no Brasil, por equipe?",
+      "answer": 2,
+      "unit": "jogadores",
+      "fact": "O país é uma potência no esporte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o Dedo de Deus, em Teresópolis, em relação ao nível do mar?",
+      "answer": 1692,
+      "unit": "metros",
+      "fact": "Ele é um símbolo do montanhismo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem a BR-116, aproximadamente?",
+      "answer": 4500,
+      "unit": "km",
+      "fact": "Ela é a rodovia mais longa do Brasil."
     }
   ]
 }

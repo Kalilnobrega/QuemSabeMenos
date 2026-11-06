@@ -195,6 +195,2416 @@
       "answer": 10080,
       "unit": "minutos",
       "fact": "7 × 24 × 60."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −23 + (9)?",
+      "answer": -14,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −14."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 18 ao quadrado?",
+      "answer": 324,
+      "fact": "Basta multiplicar 18 por 18, o que dá 324."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a área de um retângulo de 15 por 6 metros?",
+      "answer": 90,
+      "unit": "m²",
+      "fact": "A área é base vezes altura, ou 90 m²."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 541 − 276?",
+      "answer": 265,
+      "fact": "Dá para somar o que falta de 276 até 541, chegando a 265."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 27 ao quadrado?",
+      "answer": 729,
+      "fact": "Basta multiplicar 27 por 27, o que dá 729."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 5% de 700?",
+      "answer": 35,
+      "fact": "Basta multiplicar 700 por 5 e dividir por 100, o que dá 35."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 20% de 350?",
+      "answer": 70,
+      "fact": "Basta multiplicar 350 por 20 e dividir por 100, o que dá 70."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 432 dividido por 6?",
+      "answer": 72,
+      "fact": "Dá para conferir fazendo 72 × 6, que resulta em 432."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 67 × 4?",
+      "answer": 268,
+      "fact": "Dá para somar 60 × 4 e 7 × 4, chegando a 268."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 63 × 5?",
+      "answer": 315,
+      "fact": "Dá para somar 60 × 5 e 3 × 5, chegando a 315."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas têm 5 dias?",
+      "answer": 120,
+      "unit": "horas",
+      "fact": "Cada dia tem 24 horas, então são 120."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −18 + (−27)?",
+      "answer": -45,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −45."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 348 + 276?",
+      "answer": 624,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 624."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros têm 12 km?",
+      "answer": 12000,
+      "unit": "metros",
+      "fact": "Cada quilômetro tem 1.000 metros, então são 12.000."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 92 × 7?",
+      "answer": 644,
+      "fact": "Dá para somar 90 × 7 e 2 × 7, chegando a 644."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 760 − 295?",
+      "answer": 465,
+      "fact": "Dá para somar o que falta de 295 até 760, chegando a 465."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 946 + 378?",
+      "answer": 1324,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 1.324."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 21 ao quadrado?",
+      "answer": 441,
+      "fact": "Basta multiplicar 21 por 21, o que dá 441."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 517 + 289?",
+      "answer": 806,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 806."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas têm 30 dias?",
+      "answer": 720,
+      "unit": "horas",
+      "fact": "Cada dia tem 24 horas, então são 720."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a área de um retângulo de 25 por 4 metros?",
+      "answer": 100,
+      "unit": "m²",
+      "fact": "A área é base vezes altura, ou 100 m²."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 9 + (−44)?",
+      "answer": -35,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −35."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −15 + (8)?",
+      "answer": -7,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −7."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 58 × 3?",
+      "answer": 174,
+      "fact": "Dá para somar 50 × 3 e 8 × 3, chegando a 174."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 40% de 350?",
+      "answer": 140,
+      "fact": "Basta multiplicar 350 por 40 e dividir por 100, o que dá 140."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 9 lados, em graus?",
+      "answer": 1260,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 1.260."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 918 dividido por 3?",
+      "answer": 306,
+      "fact": "Dá para conferir fazendo 306 × 3, que resulta em 918."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas têm 3 dias?",
+      "answer": 72,
+      "unit": "horas",
+      "fact": "Cada dia tem 24 horas, então são 72."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 39 × 7?",
+      "answer": 273,
+      "fact": "Dá para somar 30 × 7 e 9 × 7, chegando a 273."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 77 × 4?",
+      "answer": 308,
+      "fact": "Dá para somar 70 × 4 e 7 × 4, chegando a 308."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros têm 3 km?",
+      "answer": 3000,
+      "unit": "metros",
+      "fact": "Cada quilômetro tem 1.000 metros, então são 3.000."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 15% de 300?",
+      "answer": 45,
+      "fact": "Basta multiplicar 300 por 15 e dividir por 100, o que dá 45."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 257 + 688?",
+      "answer": 945,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 945."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 875 dividido por 7?",
+      "answer": 125,
+      "fact": "Dá para conferir fazendo 125 × 7, que resulta em 875."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas têm 7 dias?",
+      "answer": 168,
+      "unit": "horas",
+      "fact": "Cada dia tem 24 horas, então são 168."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 74 × 3?",
+      "answer": 222,
+      "fact": "Dá para somar 70 × 3 e 4 × 3, chegando a 222."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 12 + (−30)?",
+      "answer": -18,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −18."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 684 dividido por 6?",
+      "answer": 114,
+      "fact": "Dá para conferir fazendo 114 × 6, que resulta em 684."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 10 lados, em graus?",
+      "answer": 1440,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 1.440."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 5 lados, em graus?",
+      "answer": 540,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 540."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −40 + (17)?",
+      "answer": -23,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −23."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 66 × 8?",
+      "answer": 528,
+      "fact": "Dá para somar 60 × 8 e 6 × 8, chegando a 528."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 12 lados, em graus?",
+      "answer": 1800,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 1.800."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o perímetro de um retângulo de 25 por 4 metros?",
+      "answer": 58,
+      "unit": "metros",
+      "fact": "É a soma dos quatro lados, ou 58 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 6 lados, em graus?",
+      "answer": 720,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 720."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 812 − 347?",
+      "answer": 465,
+      "fact": "Dá para somar o que falta de 347 até 812, chegando a 465."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 17 ao quadrado?",
+      "answer": 289,
+      "fact": "Basta multiplicar 17 por 17, o que dá 289."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 26 × 9?",
+      "answer": 234,
+      "fact": "Dá para somar 20 × 9 e 6 × 9, chegando a 234."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 36 × 9?",
+      "answer": 324,
+      "fact": "Dá para somar 30 × 9 e 6 × 9, chegando a 324."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 934 − 579?",
+      "answer": 355,
+      "fact": "Dá para somar o que falta de 579 até 934, chegando a 355."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 60% de 450?",
+      "answer": 270,
+      "fact": "Basta multiplicar 450 por 60 e dividir por 100, o que dá 270."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas têm 10 dias?",
+      "answer": 240,
+      "unit": "horas",
+      "fact": "Cada dia tem 24 horas, então são 240."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a área de um retângulo de 12 por 8 metros?",
+      "answer": 96,
+      "unit": "m²",
+      "fact": "A área é base vezes altura, ou 96 m²."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 1000 − 387?",
+      "answer": 613,
+      "fact": "Dá para somar o que falta de 387 até 1000, chegando a 613."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a área de um retângulo de 18 por 5 metros?",
+      "answer": 90,
+      "unit": "m²",
+      "fact": "A área é base vezes altura, ou 90 m²."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 56 × 4?",
+      "answer": 224,
+      "fact": "Dá para somar 50 × 4 e 6 × 4, chegando a 224."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −30 + (−45)?",
+      "answer": -75,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −75."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 8 lados, em graus?",
+      "answer": 1080,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 1.080."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 10% de 450?",
+      "answer": 45,
+      "fact": "Basta multiplicar 450 por 10 e dividir por 100, o que dá 45."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 592 dividido por 8?",
+      "answer": 74,
+      "fact": "Dá para conferir fazendo 74 × 8, que resulta em 592."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 7 lados, em graus?",
+      "answer": 900,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 900."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 23 ao quadrado?",
+      "answer": 529,
+      "fact": "Basta multiplicar 23 por 23, o que dá 529."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 71 × 6?",
+      "answer": 426,
+      "fact": "Dá para somar 70 × 6 e 1 × 6, chegando a 426."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 644 dividido por 7?",
+      "answer": 92,
+      "fact": "Dá para conferir fazendo 92 × 7, que resulta em 644."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 25% de 840?",
+      "answer": 210,
+      "fact": "Basta multiplicar 840 por 25 e dividir por 100, o que dá 210."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 16 ao quadrado?",
+      "answer": 256,
+      "fact": "Basta multiplicar 16 por 16, o que dá 256."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 835 + 467?",
+      "answer": 1302,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 1.302."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o perímetro de um retângulo de 15 por 6 metros?",
+      "answer": 42,
+      "unit": "metros",
+      "fact": "É a soma dos quatro lados, ou 42 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros têm 25 km?",
+      "answer": 25000,
+      "unit": "metros",
+      "fact": "Cada quilômetro tem 1.000 metros, então são 25.000."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 729 dividido por 9?",
+      "answer": 81,
+      "fact": "Dá para conferir fazendo 81 × 9, que resulta em 729."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 75% de 120?",
+      "answer": 90,
+      "fact": "Basta multiplicar 120 por 75 e dividir por 100, o que dá 90."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 756 dividido por 9?",
+      "answer": 84,
+      "fact": "Dá para conferir fazendo 84 × 9, que resulta em 756."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 30% de 250?",
+      "answer": 75,
+      "fact": "Basta multiplicar 250 por 30 e dividir por 100, o que dá 75."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 905 − 448?",
+      "answer": 457,
+      "fact": "Dá para somar o que falta de 448 até 905, chegando a 457."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos têm 5 horas?",
+      "answer": 300,
+      "unit": "minutos",
+      "fact": "Cada hora tem 60 minutos, então são 300."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 19 ao quadrado?",
+      "answer": 361,
+      "fact": "Basta multiplicar 19 por 19, o que dá 361."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 24 ao quadrado?",
+      "answer": 576,
+      "fact": "Basta multiplicar 24 por 24, o que dá 576."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −100 + (35)?",
+      "answer": -65,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −65."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é −7 + (−12)?",
+      "answer": -19,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −19."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos têm 12 horas?",
+      "answer": 720,
+      "unit": "minutos",
+      "fact": "Cada hora tem 60 minutos, então são 720."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 365 dividido por 5?",
+      "answer": 73,
+      "fact": "Dá para conferir fazendo 73 × 5, que resulta em 365."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 48 × 5?",
+      "answer": 240,
+      "fact": "Dá para somar 40 × 5 e 8 × 5, chegando a 240."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos têm 36 horas?",
+      "answer": 2160,
+      "unit": "minutos",
+      "fact": "Cada hora tem 60 minutos, então são 2.160."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 25 + (−60)?",
+      "answer": -35,
+      "fact": "Com sinais iguais somamos, com sinais diferentes subtraímos. O resultado é −35."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a área de um retângulo de 40 por 7 metros?",
+      "answer": 280,
+      "unit": "m²",
+      "fact": "A área é base vezes altura, ou 280 m²."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a área de um retângulo de 30 por 12 metros?",
+      "answer": 360,
+      "unit": "m²",
+      "fact": "A área é base vezes altura, ou 360 m²."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 620 − 185?",
+      "answer": 435,
+      "fact": "Dá para somar o que falta de 185 até 620, chegando a 435."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma dos ângulos internos de um polígono de 4 lados, em graus?",
+      "answer": 360,
+      "unit": "graus",
+      "fact": "A fórmula é (n − 2) × 180, o que dá 360."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 828 dividido por 4?",
+      "answer": 207,
+      "fact": "Dá para conferir fazendo 207 × 4, que resulta em 828."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 419 + 533?",
+      "answer": 952,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 952."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 14 ao quadrado?",
+      "answer": 196,
+      "fact": "Basta multiplicar 14 por 14, o que dá 196."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o perímetro de um retângulo de 12 por 8 metros?",
+      "answer": 40,
+      "unit": "metros",
+      "fact": "É a soma dos quatro lados, ou 40 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 623 + 198?",
+      "answer": 821,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 821."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 22 ao quadrado?",
+      "answer": 484,
+      "fact": "Basta multiplicar 22 por 22, o que dá 484."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 84 × 5?",
+      "answer": 420,
+      "fact": "Dá para somar 80 × 5 e 4 × 5, chegando a 420."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 29 × 8?",
+      "answer": 232,
+      "fact": "Dá para somar 20 × 8 e 9 × 8, chegando a 232."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o perímetro de um retângulo de 18 por 5 metros?",
+      "answer": 46,
+      "unit": "metros",
+      "fact": "É a soma dos quatro lados, ou 46 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 38 × 7?",
+      "answer": 266,
+      "fact": "Dá para somar 30 × 7 e 8 × 7, chegando a 266."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos têm 24 horas?",
+      "answer": 1440,
+      "unit": "minutos",
+      "fact": "Cada hora tem 60 minutos, então são 1.440."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 764 + 159?",
+      "answer": 923,
+      "fact": "Somando primeiro as centenas, a conta fica mais rápida e dá 923."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 50% de 1260?",
+      "answer": 630,
+      "fact": "Basta multiplicar 1260 por 50 e dividir por 100, o que dá 630."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 703 − 268?",
+      "answer": 435,
+      "fact": "Dá para somar o que falta de 268 até 703, chegando a 435."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros têm 7 km?",
+      "answer": 7000,
+      "unit": "metros",
+      "fact": "Cada quilômetro tem 1.000 metros, então são 7.000."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 47 × 6?",
+      "answer": 282,
+      "fact": "Dá para somar 40 × 6 e 7 × 6, chegando a 282."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 26 ao quadrado?",
+      "answer": 676,
+      "fact": "Basta multiplicar 26 por 26, o que dá 676."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 53 × 8?",
+      "answer": 424,
+      "fact": "Dá para somar 50 × 8 e 3 × 8, chegando a 424."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 85 × 6?",
+      "answer": 510,
+      "fact": "Dá para somar 80 × 6 e 5 × 6, chegando a 510."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos têm 8 horas?",
+      "answer": 480,
+      "unit": "minutos",
+      "fact": "Cada hora tem 60 minutos, então são 480."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 8 horas?",
+      "answer": 28800,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 28.800."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 41 × 99?",
+      "answer": 4059,
+      "fact": "Separando as dezenas das unidades, a conta chega a 4.059."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 100?",
+      "answer": 5050,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 5.050."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 79 × 62?",
+      "answer": 4898,
+      "fact": "Separando as dezenas das unidades, a conta chega a 4.898."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 47 × 36?",
+      "answer": 1692,
+      "fact": "Separando as dezenas das unidades, a conta chega a 1.692."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 3 pessoas em um grupo de 6?",
+      "answer": 20,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 6 tomados 3 a 3, que dá 20."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 2 pessoas em um grupo de 8?",
+      "answer": 28,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 8 tomados 2 a 2, que dá 28."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 200?",
+      "answer": 20100,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 20.100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 6 lados?",
+      "answer": 9,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 9."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 14 horas?",
+      "answer": 50400,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 50.400."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 12 ao cubo?",
+      "answer": 1728,
+      "fact": "É 12 × 12 × 12, o que dá 1.728."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 39 × 28?",
+      "answer": 1092,
+      "fact": "Separando as dezenas das unidades, a conta chega a 1.092."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 35% de 780?",
+      "answer": 273,
+      "fact": "É 780 × 35 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 12% de 450?",
+      "answer": 54,
+      "fact": "É 450 × 12 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 43 ao quadrado?",
+      "answer": 1849,
+      "fact": "Multiplicando 43 por 43, o resultado é 1.849."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 73 ao quadrado?",
+      "answer": 5329,
+      "fact": "Multiplicando 73 por 73, o resultado é 5.329."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 75 × 48?",
+      "answer": 3600,
+      "fact": "Separando as dezenas das unidades, a conta chega a 3.600."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 6.561?",
+      "answer": 81,
+      "fact": "Porque 81 × 81 é igual a 6.561."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 1.764?",
+      "answer": 42,
+      "fact": "Porque 42 × 42 é igual a 1.764."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 3 pessoas em um grupo de 7?",
+      "answer": 35,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 7 tomados 3 a 3, que dá 35."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 20 horas?",
+      "answer": 72000,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 72.000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 37 ao quadrado?",
+      "answer": 1369,
+      "fact": "Multiplicando 37 por 37, o resultado é 1.369."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 38 ao quadrado?",
+      "answer": 1444,
+      "fact": "Multiplicando 38 por 38, o resultado é 1.444."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 20 lados?",
+      "answer": 170,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 170."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 85% de 240?",
+      "answer": 204,
+      "fact": "É 240 × 85 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 2 horas?",
+      "answer": 7200,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 7.200."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 30?",
+      "answer": 465,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 465."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 16 ao cubo?",
+      "answer": 4096,
+      "fact": "É 16 × 16 × 16, o que dá 4.096."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 13 ao cubo?",
+      "answer": 2197,
+      "fact": "É 13 × 13 × 13, o que dá 2.197."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 65% de 320?",
+      "answer": 208,
+      "fact": "É 320 × 65 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −64 × (−57)?",
+      "answer": 3648,
+      "fact": "Sinais iguais dão positivo, e sinais diferentes dão negativo. O resultado é 3.648."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −73 × (19)?",
+      "answer": -1387,
+      "fact": "Sinais iguais dão positivo, e sinais diferentes dão negativo. O resultado é −1.387."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 15000 + (−22750)?",
+      "answer": -7750,
+      "fact": "O resultado da conta é −7.750."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 36 ao quadrado?",
+      "answer": 1296,
+      "fact": "Multiplicando 36 por 36, o resultado é 1.296."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 13º número da sequência de Fibonacci?",
+      "answer": 233,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 13º é 233."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 100 horas?",
+      "answer": 360000,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 360.000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −4500 + (8200)?",
+      "answer": 3700,
+      "fact": "O resultado da conta é 3.700."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 85 ao quadrado?",
+      "answer": 7225,
+      "fact": "Multiplicando 85 por 85, o resultado é 7.225."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 25 lados?",
+      "answer": 275,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 275."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 15 ao cubo?",
+      "answer": 3375,
+      "fact": "É 15 × 15 × 15, o que dá 3.375."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 18% de 250?",
+      "answer": 45,
+      "fact": "É 250 × 18 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 7% de 1.400?",
+      "answer": 98,
+      "fact": "É 1.400 × 7 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 11º número da sequência de Fibonacci?",
+      "answer": 89,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 11º é 89."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 50 lados?",
+      "answer": 1175,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 1.175."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 31 ao quadrado?",
+      "answer": 961,
+      "fact": "Multiplicando 31 por 31, o resultado é 961."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −9876 + (−1234)?",
+      "answer": -11110,
+      "fact": "O resultado da conta é −11.110."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 89 × 27?",
+      "answer": 2403,
+      "fact": "Separando as dezenas das unidades, a conta chega a 2.403."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 57 ao quadrado?",
+      "answer": 3249,
+      "fact": "Multiplicando 57 por 57, o resultado é 3.249."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 75?",
+      "answer": 2850,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 2.850."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 95 ao quadrado?",
+      "answer": 9025,
+      "fact": "Multiplicando 95 por 95, o resultado é 9.025."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 3200 + (−7650)?",
+      "answer": -4450,
+      "fact": "O resultado da conta é −4.450."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −92 × (67)?",
+      "answer": -6164,
+      "fact": "Sinais iguais dão positivo, e sinais diferentes dão negativo. O resultado é −6.164."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 86 × 42?",
+      "answer": 3612,
+      "fact": "Separando as dezenas das unidades, a conta chega a 3.612."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 63 × 38?",
+      "answer": 2394,
+      "fact": "Separando as dezenas das unidades, a conta chega a 2.394."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 11.025?",
+      "answer": 105,
+      "fact": "Porque 105 × 105 é igual a 11.025."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 9 ao cubo?",
+      "answer": 729,
+      "fact": "É 9 × 9 × 9, o que dá 729."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −1234 + (567)?",
+      "answer": -667,
+      "fact": "O resultado da conta é −667."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 2 pessoas em um grupo de 5?",
+      "answer": 10,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 5 tomados 2 a 2, que dá 10."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 15º número da sequência de Fibonacci?",
+      "answer": 610,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 15º é 610."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 34 ao quadrado?",
+      "answer": 1156,
+      "fact": "Multiplicando 34 por 34, o resultado é 1.156."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 14 ao cubo?",
+      "answer": 2744,
+      "fact": "É 14 × 14 × 14, o que dá 2.744."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 83 × 29?",
+      "answer": 2407,
+      "fact": "Separando as dezenas das unidades, a conta chega a 2.407."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 7 ao cubo?",
+      "answer": 343,
+      "fact": "É 7 × 7 × 7, o que dá 343."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 8 ao cubo?",
+      "answer": 512,
+      "fact": "É 8 × 8 × 8, o que dá 512."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 50 horas?",
+      "answer": 180000,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 180.000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 2 pessoas em um grupo de 15?",
+      "answer": 105,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 15 tomados 2 a 2, que dá 105."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 4 pessoas em um grupo de 9?",
+      "answer": 126,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 9 tomados 4 a 4, que dá 126."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 97 × 31?",
+      "answer": 3007,
+      "fact": "Separando as dezenas das unidades, a conta chega a 3.007."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 25 × 76?",
+      "answer": 1900,
+      "fact": "Separando as dezenas das unidades, a conta chega a 1.900."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos segundos têm 5 horas?",
+      "answer": 18000,
+      "unit": "segundos",
+      "fact": "Cada hora tem 3.600 segundos, então são 18.000."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 2 pessoas em um grupo de 20?",
+      "answer": 190,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 20 tomados 2 a 2, que dá 190."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 150?",
+      "answer": 11325,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 11.325."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 12 lados?",
+      "answer": 54,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 54."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 5 lados?",
+      "answer": 5,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 5."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 58 × 24?",
+      "answer": 1392,
+      "fact": "Separando as dezenas das unidades, a conta chega a 1.392."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 47 ao quadrado?",
+      "answer": 2209,
+      "fact": "Multiplicando 47 por 47, o resultado é 2.209."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 46 ao quadrado?",
+      "answer": 2116,
+      "fact": "Multiplicando 46 por 46, o resultado é 2.116."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 64 ao quadrado?",
+      "answer": 4096,
+      "fact": "Multiplicando 64 por 64, o resultado é 4.096."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 56 × 44?",
+      "answer": 2464,
+      "fact": "Separando as dezenas das unidades, a conta chega a 2.464."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 8º número da sequência de Fibonacci?",
+      "answer": 21,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 8º é 21."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 95 × 53?",
+      "answer": 5035,
+      "fact": "Separando as dezenas das unidades, a conta chega a 5.035."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −300 + (−950)?",
+      "answer": -1250,
+      "fact": "O resultado da conta é −1.250."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 500?",
+      "answer": 125250,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 125.250."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 10º número da sequência de Fibonacci?",
+      "answer": 55,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 10º é 55."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 32 ao quadrado?",
+      "answer": 1024,
+      "fact": "Multiplicando 32 por 32, o resultado é 1.024."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 5.184?",
+      "answer": 72,
+      "fact": "Porque 72 × 72 é igual a 5.184."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 11 ao cubo?",
+      "answer": 1331,
+      "fact": "É 11 × 11 × 11, o que dá 1.331."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 7 lados?",
+      "answer": 14,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 14."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 7.921?",
+      "answer": 89,
+      "fact": "Porque 89 × 89 é igual a 7.921."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 9 lados?",
+      "answer": 27,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 27."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 30 lados?",
+      "answer": 405,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 405."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 41 ao quadrado?",
+      "answer": 1681,
+      "fact": "Multiplicando 41 por 41, o resultado é 1.681."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 15 lados?",
+      "answer": 90,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 90."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 16% de 625?",
+      "answer": 100,
+      "fact": "É 625 × 16 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 72 × 46?",
+      "answer": 3312,
+      "fact": "Separando as dezenas das unidades, a conta chega a 3.312."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 4.096?",
+      "answer": 64,
+      "fact": "Porque 64 × 64 é igual a 4.096."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 3.249?",
+      "answer": 57,
+      "fact": "Porque 57 × 57 é igual a 3.249."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 9º número da sequência de Fibonacci?",
+      "answer": 34,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 9º é 34."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 9.604?",
+      "answer": 98,
+      "fact": "Porque 98 × 98 é igual a 9.604."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 5 pessoas em um grupo de 11?",
+      "answer": 462,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 11 tomados 5 a 5, que dá 462."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 50?",
+      "answer": 1275,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 1.275."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um polígono de 8 lados?",
+      "answer": 20,
+      "unit": "diagonais",
+      "fact": "A fórmula é n × (n − 3) ÷ 2, o que dá 20."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 25?",
+      "answer": 325,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 325."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 2.601?",
+      "answer": 51,
+      "fact": "Porque 51 × 51 é igual a 2.601."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 15?",
+      "answer": 120,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 120."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 6 ao cubo?",
+      "answer": 216,
+      "fact": "É 6 × 6 × 6, o que dá 216."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 4% de 3.750?",
+      "answer": 150,
+      "fact": "É 3.750 × 4 ÷ 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 3 pessoas em um grupo de 10?",
+      "answer": 120,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 10 tomados 3 a 3, que dá 120."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 68 × 54?",
+      "answer": 3672,
+      "fact": "Separando as dezenas das unidades, a conta chega a 3.672."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 1.089?",
+      "answer": 33,
+      "fact": "Porque 33 × 33 é igual a 1.089."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 52 ao quadrado?",
+      "answer": 2704,
+      "fact": "Multiplicando 52 por 52, o resultado é 2.704."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o 12º número da sequência de Fibonacci?",
+      "answer": 144,
+      "fact": "Cada termo é a soma dos dois anteriores, começando em 1 e 1. O 12º é 144."
+    },
+    {
+      "difficulty": "medium",
+      "text": "De quantas formas se escolhem 2 pessoas em um grupo de 12?",
+      "answer": 66,
+      "unit": "formas",
+      "fact": "A ordem não importa, então é a combinação de 12 tomados 2 a 2, que dá 66."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 34 × 88?",
+      "answer": 2992,
+      "fact": "Separando as dezenas das unidades, a conta chega a 2.992."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 1.369?",
+      "answer": 37,
+      "fact": "Porque 37 × 37 é igual a 1.369."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto dá a soma de todos os números inteiros de 1 a 365?",
+      "answer": 66795,
+      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 66.795."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a raiz quadrada de 2.116?",
+      "answer": 46,
+      "fact": "Porque 46 × 46 é igual a 2.116."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 1000º número primo?",
+      "answer": 7919,
+      "fact": "Contando os primos a partir do 2, o 1000º é 7.919."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias completos cabem em 10.000.000 de segundos?",
+      "answer": 115,
+      "unit": "dias",
+      "fact": "Dividindo por 86.400, chegamos a 115 dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 6 números existem em 45?",
+      "answer": 8145060,
+      "unit": "combinações",
+      "fact": "A combinação de 45 tomados 6 a 6 dá 8.145.060."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valem R$ 2.000 depois de 2 anos, com juros compostos de 20% ao ano?",
+      "answer": 2880,
+      "unit": "reais",
+      "fact": "Cada ano multiplica o valor por 1,2, chegando a R$ 2.880."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2.019 × 47?",
+      "answer": 94893,
+      "fact": "Decompondo os fatores, a conta chega a 94.893."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma de 1 até 1.000.000?",
+      "answer": 500000500000,
+      "fact": "Pela fórmula de Gauss, o resultado é 500.000.500.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valem R$ 1.000 depois de 3 anos, com juros compostos de 10% ao ano?",
+      "answer": 1331,
+      "unit": "reais",
+      "fact": "Cada ano multiplica o valor por 1,1, chegando a R$ 1.331."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 528 × 47?",
+      "answer": 24816,
+      "fact": "Decompondo os fatores, a conta chega a 24.816."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 8 fatorial (8!)?",
+      "answer": 40320,
+      "fact": "É o produto de todos os inteiros de 1 a 8, o que dá 40.320."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 784 × 35?",
+      "answer": 27440,
+      "fact": "Decompondo os fatores, a conta chega a 27.440."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 35º número da sequência de Fibonacci?",
+      "answer": 9227465,
+      "fact": "Começando em 1 e 1, o 35º termo é 9.227.465."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 365 × 24?",
+      "answer": 8760,
+      "fact": "Decompondo os fatores, a conta chega a 8.760."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 100º número primo?",
+      "answer": 541,
+      "fact": "Contando os primos a partir do 2, o 100º é 541."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 619 × (−73)?",
+      "answer": -45187,
+      "fact": "O sinal segue a regra da multiplicação, e o resultado é −45.187."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma de 1 até 500.000?",
+      "answer": 125000250000,
+      "fact": "Pela fórmula de Gauss, o resultado é 125.000.250.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 618 × 527?",
+      "answer": 325686,
+      "fact": "O resultado da multiplicação é 325.686."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é (−10) elevado a 9?",
+      "answer": -1000000000,
+      "fact": "Com expoente ímpar, o sinal fica negativo. O resultado é −1.000.000.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é (−2) elevado a 15?",
+      "answer": -32768,
+      "fact": "Com expoente ímpar, o sinal fica negativo. O resultado é −32.768."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 20?",
+      "answer": 3486784401,
+      "fact": "Multiplicando 3 por ele mesmo 20 vezes, o resultado é 3.486.784.401."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 6 números existem em 49?",
+      "answer": 13983816,
+      "unit": "combinações",
+      "fact": "A combinação de 49 tomados 6 a 6 dá 13.983.816."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o número binário 1111 em decimal?",
+      "answer": 15,
+      "fact": "Cada casa binária vale uma potência de 2. O total é 15."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é −12.500 × (−800)?",
+      "answer": 10000000,
+      "fact": "O sinal segue a regra da multiplicação, e o resultado é 10.000.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 25º número da sequência de Fibonacci?",
+      "answer": 75025,
+      "fact": "Começando em 1 e 1, o 25º termo é 75.025."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 25º número primo?",
+      "answer": 97,
+      "fact": "Contando os primos a partir do 2, o 25º é 97."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma dos quadrados de 1 a 100?",
+      "answer": 338350,
+      "fact": "A fórmula é n × (n + 1) × (2n + 1) ÷ 6, o que dá 338.350."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 50º número primo?",
+      "answer": 229,
+      "fact": "Contando os primos a partir do 2, o 50º é 229."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma dos quadrados de 1 a 10?",
+      "answer": 385,
+      "fact": "A fórmula é n × (n + 1) × (2n + 1) ÷ 6, o que dá 385."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 32?",
+      "answer": 4294967296,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 4.294.967.296."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 953 × 28?",
+      "answer": 26684,
+      "fact": "Decompondo os fatores, a conta chega a 26.684."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 7 elevado a 4?",
+      "answer": 2401,
+      "fact": "Multiplicando 7 por ele mesmo 4 vezes, o resultado é 2.401."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anagramas tem uma palavra de 8 letras todas diferentes?",
+      "answer": 40320,
+      "unit": "anagramas",
+      "fact": "São 8! permutações, o que dá 40.320."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma dos cubos de 1 a 50?",
+      "answer": 1625625,
+      "fact": "Ela é igual ao quadrado da soma de 1 a 50, o que dá 1.625.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 999 × 888?",
+      "answer": 887112,
+      "fact": "O resultado da multiplicação é 887.112."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anagramas tem uma palavra de 6 letras todas diferentes?",
+      "answer": 720,
+      "unit": "anagramas",
+      "fact": "São 6! permutações, o que dá 720."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos tem um campeonato de 40 times, em turno e returno?",
+      "answer": 1560,
+      "unit": "jogos",
+      "fact": "Cada time enfrenta os outros duas vezes, somando 1.560 jogos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o número binário 10000000 em decimal?",
+      "answer": 128,
+      "fact": "Cada casa binária vale uma potência de 2. O total é 128."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 500º número primo?",
+      "answer": 3571,
+      "fact": "Contando os primos a partir do 2, o 500º é 3.571."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 5 elevado a 15?",
+      "answer": 30517578125,
+      "fact": "Multiplicando 5 por ele mesmo 15 vezes, o resultado é 30.517.578.125."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é (−5) elevado a 7?",
+      "answer": -78125,
+      "fact": "Com expoente ímpar, o sinal fica negativo. O resultado é −78.125."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 246 × 135?",
+      "answer": 33210,
+      "fact": "O resultado da multiplicação é 33.210."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 25?",
+      "answer": 33554432,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 33.554.432."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valem R$ 1.000 depois de 2 anos, com juros compostos de 10% ao ano?",
+      "answer": 1210,
+      "unit": "reais",
+      "fact": "Cada ano multiplica o valor por 1,1, chegando a R$ 1.210."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anagramas tem uma palavra de 7 letras todas diferentes?",
+      "answer": 5040,
+      "unit": "anagramas",
+      "fact": "São 7! permutações, o que dá 5.040."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias completos cabem em 100.000.000 de segundos?",
+      "answer": 1157,
+      "unit": "dias",
+      "fact": "Dividindo por 86.400, chegamos a 1.157 dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 15 números existem em 25?",
+      "answer": 3268760,
+      "unit": "combinações",
+      "fact": "A combinação de 25 tomados 15 a 15 dá 3.268.760."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 45.000 × (−1.200)?",
+      "answer": -54000000,
+      "fact": "O sinal segue a regra da multiplicação, e o resultado é −54.000.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma de 1 até 100.000?",
+      "answer": 5000050000,
+      "fact": "Pela fórmula de Gauss, o resultado é 5.000.050.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma de 1 até 10.000?",
+      "answer": 50005000,
+      "fact": "Pela fórmula de Gauss, o resultado é 50.005.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos segundos tem uma semana?",
+      "answer": 604800,
+      "unit": "segundos",
+      "fact": "Um dia tem 86.400 segundos, então são 604.800."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 14?",
+      "answer": 16384,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 16.384."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valem R$ 100 depois de 10 anos, com juros compostos de 100% ao ano?",
+      "answer": 102400,
+      "unit": "reais",
+      "fact": "Cada ano multiplica o valor por 2, chegando a R$ 102.400."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 10 números existem em 40?",
+      "answer": 847660528,
+      "unit": "combinações",
+      "fact": "A combinação de 40 tomados 10 a 10 dá 847.660.528."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos segundos tem um ano bissexto?",
+      "answer": 31622400,
+      "unit": "segundos",
+      "fact": "Um dia tem 86.400 segundos, então são 31.622.400."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma dos cubos de 1 a 20?",
+      "answer": 44100,
+      "fact": "Ela é igual ao quadrado da soma de 1 a 20, o que dá 44.100."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 1.234 × 56?",
+      "answer": 69104,
+      "fact": "Decompondo os fatores, a conta chega a 69.104."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é (−11) elevado a 5?",
+      "answer": -161051,
+      "fact": "Com expoente ímpar, o sinal fica negativo. O resultado é −161.051."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 3 números existem em 100?",
+      "answer": 161700,
+      "unit": "combinações",
+      "fact": "A combinação de 100 tomados 3 a 3 dá 161.700."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 8?",
+      "answer": 6561,
+      "fact": "Multiplicando 3 por ele mesmo 8 vezes, o resultado é 6.561."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 12?",
+      "answer": 4096,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 4.096."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 437 × 66?",
+      "answer": 28842,
+      "fact": "Decompondo os fatores, a conta chega a 28.842."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 10?",
+      "answer": 59049,
+      "fact": "Multiplicando 3 por ele mesmo 10 vezes, o resultado é 59.049."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias completos cabem em 1.000.000 de segundos?",
+      "answer": 11,
+      "unit": "dias",
+      "fact": "Dividindo por 86.400, chegamos a 11 dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 200º número primo?",
+      "answer": 1223,
+      "fact": "Contando os primos a partir do 2, o 200º é 1.223."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 276 × 94?",
+      "answer": 25944,
+      "fact": "Decompondo os fatores, a conta chega a 25.944."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 5.280 × 12?",
+      "answer": 63360,
+      "fact": "Decompondo os fatores, a conta chega a 63.360."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma dos cubos de 1 a 10?",
+      "answer": 3025,
+      "fact": "Ela é igual ao quadrado da soma de 1 a 10, o que dá 3.025."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 5 elevado a 5?",
+      "answer": 3125,
+      "fact": "Multiplicando 5 por ele mesmo 5 vezes, o resultado é 3.125."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 123 × 456?",
+      "answer": 56088,
+      "fact": "O resultado da multiplicação é 56.088."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é −347 × (86)?",
+      "answer": -29842,
+      "fact": "O sinal segue a regra da multiplicação, e o resultado é −29.842."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 9 fatorial (9!)?",
+      "answer": 362880,
+      "fact": "É o produto de todos os inteiros de 1 a 9, o que dá 362.880."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 18?",
+      "answer": 262144,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 262.144."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 5 elevado a 10?",
+      "answer": 9765625,
+      "fact": "Multiplicando 5 por ele mesmo 10 vezes, o resultado é 9.765.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos segundos tem um ano comum?",
+      "answer": 31536000,
+      "unit": "segundos",
+      "fact": "Um dia tem 86.400 segundos, então são 31.536.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 842 × 59?",
+      "answer": 49678,
+      "fact": "Decompondo os fatores, a conta chega a 49.678."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos tem um campeonato de 32 times, em turno e returno?",
+      "answer": 992,
+      "unit": "jogos",
+      "fact": "Cada time enfrenta os outros duas vezes, somando 992 jogos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 512 × 256?",
+      "answer": 131072,
+      "fact": "O resultado da multiplicação é 131.072."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 765 × 432?",
+      "answer": 330480,
+      "fact": "O resultado da multiplicação é 330.480."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o número binário 11111111 em decimal?",
+      "answer": 255,
+      "fact": "Cada casa binária vale uma potência de 2. O total é 255."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos segundos tem um mês de 30 dias?",
+      "answer": 2592000,
+      "unit": "segundos",
+      "fact": "Um dia tem 86.400 segundos, então são 2.592.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 7 elevado a 6?",
+      "answer": 117649,
+      "fact": "Multiplicando 7 por ele mesmo 6 vezes, o resultado é 117.649."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anagramas tem uma palavra de 9 letras todas diferentes?",
+      "answer": 362880,
+      "unit": "anagramas",
+      "fact": "São 9! permutações, o que dá 362.880."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é −1.234 × (567)?",
+      "answer": -699678,
+      "fact": "O sinal segue a regra da multiplicação, e o resultado é −699.678."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 5 números existem em 80?",
+      "answer": 24040016,
+      "unit": "combinações",
+      "fact": "A combinação de 80 tomados 5 a 5 dá 24.040.016."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anagramas tem uma palavra de 10 letras todas diferentes?",
+      "answer": 3628800,
+      "unit": "anagramas",
+      "fact": "São 10! permutações, o que dá 3.628.800."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 6 números existem em 30?",
+      "answer": 593775,
+      "unit": "combinações",
+      "fact": "A combinação de 30 tomados 6 a 6 dá 593.775."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 45º número da sequência de Fibonacci?",
+      "answer": 1134903170,
+      "fact": "Começando em 1 e 1, o 45º termo é 1.134.903.170."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 11 elevado a 4?",
+      "answer": 14641,
+      "fact": "Multiplicando 11 por ele mesmo 4 vezes, o resultado é 14.641."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 9 elevado a 5?",
+      "answer": 59049,
+      "fact": "Multiplicando 9 por ele mesmo 5 vezes, o resultado é 59.049."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 30º número da sequência de Fibonacci?",
+      "answer": 832040,
+      "fact": "Começando em 1 e 1, o 30º termo é 832.040."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 12?",
+      "answer": 531441,
+      "fact": "Multiplicando 3 por ele mesmo 12 vezes, o resultado é 531.441."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 10 fatorial (10!)?",
+      "answer": 3628800,
+      "fact": "É o produto de todos os inteiros de 1 a 10, o que dá 3.628.800."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 24?",
+      "answer": 16777216,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 16.777.216."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 168º número primo?",
+      "answer": 997,
+      "fact": "Contando os primos a partir do 2, o 168º é 997."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o número binário 1111111111 em decimal?",
+      "answer": 1023,
+      "fact": "Cada casa binária vale uma potência de 2. O total é 1.023."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 50º número da sequência de Fibonacci?",
+      "answer": 12586269025,
+      "fact": "Começando em 1 e 1, o 50º termo é 12.586.269.025."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 9 elevado a 8?",
+      "answer": 43046721,
+      "fact": "Multiplicando 9 por ele mesmo 8 vezes, o resultado é 43.046.721."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o número binário 1100100 em decimal?",
+      "answer": 100,
+      "fact": "Cada casa binária vale uma potência de 2. O total é 100."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 6 fatorial (6!)?",
+      "answer": 720,
+      "fact": "É o produto de todos os inteiros de 1 a 6, o que dá 720."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 365 × 365?",
+      "answer": 133225,
+      "fact": "O resultado da multiplicação é 133.225."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto vale o número binário 101010 em decimal?",
+      "answer": 42,
+      "fact": "Cada casa binária vale uma potência de 2. O total é 42."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o 20º número da sequência de Fibonacci?",
+      "answer": 6765,
+      "fact": "Começando em 1 e 1, o 20º termo é 6.765."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 11 elevado a 9?",
+      "answer": 2357947691,
+      "fact": "Multiplicando 11 por ele mesmo 9 vezes, o resultado é 2.357.947.691."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 36?",
+      "answer": 68719476736,
+      "fact": "Cada expoente a mais dobra o resultado, chegando a 68.719.476.736."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 11 elevado a 6?",
+      "answer": 1771561,
+      "fact": "Multiplicando 11 por ele mesmo 6 vezes, o resultado é 1.771.561."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos tem um campeonato de 64 times, em turno e returno?",
+      "answer": 4032,
+      "unit": "jogos",
+      "fact": "Cada time enfrenta os outros duas vezes, somando 4.032 jogos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 5 elevado a 8?",
+      "answer": 390625,
+      "fact": "Multiplicando 5 por ele mesmo 8 vezes, o resultado é 390.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas combinações de 6 números existem em 60?",
+      "answer": 50063860,
+      "unit": "combinações",
+      "fact": "A combinação de 60 tomados 6 a 6 dá 50.063.860."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 5?",
+      "answer": 243,
+      "fact": "Multiplicando 3 por ele mesmo 5 vezes, o resultado é 243."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma de 1 até 12.345?",
+      "answer": 76205685,
+      "fact": "Pela fórmula de Gauss, o resultado é 76.205.685."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valem R$ 100.000 depois de 3 anos, com juros compostos de 10% ao ano?",
+      "answer": 133100,
+      "unit": "reais",
+      "fact": "Cada ano multiplica o valor por 1,1, chegando a R$ 133.100."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 11 fatorial (11!)?",
+      "answer": 39916800,
+      "fact": "É o produto de todos os inteiros de 1 a 11, o que dá 39.916.800."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 13 fatorial (13!)?",
+      "answer": 6227020800,
+      "fact": "É o produto de todos os inteiros de 1 a 13, o que dá 6.227.020.800."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 7 elevado a 10?",
+      "answer": 282475249,
+      "fact": "Multiplicando 7 por ele mesmo 10 vezes, o resultado é 282.475.249."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anagramas tem uma palavra de 4 letras todas diferentes?",
+      "answer": 24,
+      "unit": "anagramas",
+      "fact": "São 4! permutações, o que dá 24."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma de 1 até 99.999?",
+      "answer": 4999950000,
+      "fact": "Pela fórmula de Gauss, o resultado é 4.999.950.000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 7 elevado a 12?",
+      "answer": 13841287201,
+      "fact": "Multiplicando 7 por ele mesmo 12 vezes, o resultado é 13.841.287.201."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto dá a soma dos quadrados de 1 a 20?",
+      "answer": 2870,
+      "fact": "A fórmula é n × (n + 1) × (2n + 1) ÷ 6, o que dá 2.870."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros têm 3 metros e meio?",
+      "answer": 350,
+      "unit": "cm",
+      "fact": "Um metro tem 100 centímetros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos gramas têm 2 quilos e meio?",
+      "answer": 2500,
+      "unit": "gramas",
+      "fact": "Um quilo tem 1.000 gramas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos mililitros têm 3 litros?",
+      "answer": 3000,
+      "unit": "ml",
+      "fact": "Um litro tem 1.000 mililitros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas dúzias há em 144 ovos?",
+      "answer": 12,
+      "unit": "dúzias",
+      "fact": "O número 144 é chamado de grosa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem um ano bissexto, somando com o seguinte comum?",
+      "answer": 731,
+      "unit": "dias",
+      "fact": "São 366 mais 365 dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Se você dorme 8 horas por noite, quantas horas dorme em uma semana?",
+      "answer": 56,
+      "unit": "horas",
+      "fact": "Isso é um terço do tempo total da semana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas você dorme por ano, dormindo 8 horas por noite?",
+      "answer": 2920,
+      "unit": "horas",
+      "fact": "Isso dá quase quatro meses em um ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto custam 7 pastéis de R$ 12, em reais?",
+      "answer": 84,
+      "unit": "reais",
+      "fact": "Basta multiplicar 12 por 7."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é o dobro do dobro de 125?",
+      "answer": 500,
+      "unit": "número",
+      "fact": "O dobro de 125 é 250, e o dobro de 250 é 500."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é a metade da metade de 840?",
+      "answer": 210,
+      "unit": "número",
+      "fact": "A metade de 840 é 420, e a metade de 420 é 210."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto troco recebe quem paga R$ 200 em uma compra de R$ 137?",
+      "answer": 63,
+      "unit": "reais",
+      "fact": "Falta R$ 3 para 140 e mais R$ 60 para chegar a 200."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto dá a soma de 84 e 30?",
+      "answer": 114,
+      "fact": "Vale somar primeiro as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto dá a soma de 62 e 80?",
+      "answer": 142,
+      "fact": "Vale somar primeiro as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto dá a soma de 95 e 40?",
+      "answer": 135,
+      "fact": "Vale somar primeiro as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto dá a soma de 47 e 70?",
+      "answer": 117,
+      "fact": "Vale somar primeiro as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto dá a soma de 36 e 60?",
+      "answer": 96,
+      "fact": "Vale somar primeiro as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto dá a soma de 73 e 50?",
+      "answer": 123,
+      "fact": "Vale somar primeiro as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 18 vezes 7?",
+      "answer": 126,
+      "fact": "A multiplicação pode ser feita em partes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 25 vezes 8?",
+      "answer": 200,
+      "fact": "A multiplicação pode ser feita em partes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 32 vezes 6?",
+      "answer": 192,
+      "fact": "A multiplicação pode ser feita em partes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 45 vezes 4?",
+      "answer": 180,
+      "fact": "A multiplicação pode ser feita em partes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 53 vezes 3?",
+      "answer": 159,
+      "fact": "A multiplicação pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 125 multiplicado por 12?",
+      "answer": 1500,
+      "fact": "A conta pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 244 multiplicado por 18?",
+      "answer": 4392,
+      "fact": "A conta pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 315 multiplicado por 25?",
+      "answer": 7875,
+      "fact": "A conta pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 428 multiplicado por 35?",
+      "answer": 14980,
+      "fact": "A conta pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 650 multiplicado por 72?",
+      "answer": 46800,
+      "fact": "A conta pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 999 multiplicado por 33?",
+      "answer": 32967,
+      "fact": "A conta pode ser feita em partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de −250 mais (180)?",
+      "answer": -70,
+      "fact": "Sinais diferentes pedem subtração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de −75 mais (−125)?",
+      "answer": -200,
+      "fact": "Sinais diferentes pedem subtração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de 1000 mais (−1375)?",
+      "answer": -375,
+      "fact": "Sinais diferentes pedem subtração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de −640 mais (320)?",
+      "answer": -320,
+      "fact": "Sinais diferentes pedem subtração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de −999 mais (1)?",
+      "answer": -998,
+      "fact": "Sinais diferentes pedem subtração."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 2 elevado à potência 27?",
+      "answer": 134217728,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 2 elevado à potência 33?",
+      "answer": 8589934592,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 3 elevado à potência 13?",
+      "answer": 1594323,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 3 elevado à potência 17?",
+      "answer": 129140163,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 5 elevado à potência 12?",
+      "answer": 244140625,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 7 elevado à potência 9?",
+      "answer": 40353607,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 11 elevado à potência 7?",
+      "answer": 19487171,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 13 elevado à potência 5?",
+      "answer": 371293,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 17 elevado à potência 4?",
+      "answer": 83521,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o resultado de 19 elevado à potência 3?",
+      "answer": 6859,
+      "fact": "Cada expoente a mais multiplica o valor pela base."
     }
   ]
 }

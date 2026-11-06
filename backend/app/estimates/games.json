@@ -210,6 +210,2702 @@
       "answer": 2018,
       "scale": 50,
       "fact": "O jogo só estourou em 2020, durante a pandemia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos dá uma pastilha pequena em Pac-Man?",
+      "answer": 10,
+      "unit": "pontos",
+      "fact": "A pastilha grande vale 50."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fantasmas persegue o Pac-Man?",
+      "answer": 4,
+      "unit": "fantasmas",
+      "fact": "Blinky, Pinky, Inky e Clyde."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores por time tem o Counter-Strike?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "A partida é de cinco contra cinco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores por time tem o League of Legends?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "Cada um escolhe um personagem chamado de campeão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores por time tem o Valorant?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "O jogo é da Riot Games."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores por time tem o Rocket League, em geral?",
+      "answer": 3,
+      "unit": "jogadores",
+      "fact": "Os carros jogam futebol com foguetes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam uma partida de Among Us, no máximo?",
+      "answer": 15,
+      "unit": "jogadores",
+      "fact": "O número de impostores varia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam uma partida de PUBG?",
+      "answer": 100,
+      "unit": "jogadores",
+      "fact": "A ilha vai diminuindo com o tempo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vidas Mario tem no início do jogo clássico?",
+      "answer": 3,
+      "unit": "vidas",
+      "fact": "Cogumelos verdes dão vidas extras."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas dão uma vida extra em Super Mario Bros.?",
+      "answer": 100,
+      "unit": "moedas",
+      "fact": "O som é um dos mais famosos dos games."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis são necessários para Sonic entrar em uma fase especial?",
+      "answer": 50,
+      "unit": "anéis",
+      "fact": "Os anéis também o protegem de golpes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Esmeraldas do Caos existem em Sonic?",
+      "answer": 7,
+      "unit": "esmeraldas",
+      "fact": "Elas o transformam em Super Sonic."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Triforces existem em Zelda?",
+      "answer": 3,
+      "unit": "peças",
+      "fact": "São Poder, Sabedoria e Coragem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas opções de Pokémon inicial costuma haver?",
+      "answer": 3,
+      "unit": "opções",
+      "fact": "Geralmente, são planta, fogo e água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas insígnias um treinador precisa para a Liga Pokémon?",
+      "answer": 8,
+      "unit": "insígnias",
+      "fact": "Depois, ele enfrenta a Elite dos Quatro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos membros tem a Elite dos Quatro, na Liga Pokémon?",
+      "answer": 4,
+      "unit": "membros",
+      "fact": "O campeão vem depois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas peças tem cada forma do Tetris?",
+      "answer": 4,
+      "unit": "quadrados",
+      "fact": "Tetris vem de \"tetra\", ou quatro em grego."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas formas diferentes de peças tem o Tetris?",
+      "answer": 7,
+      "unit": "formas",
+      "fact": "Cada uma recebe uma letra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas linhas se fazem de uma vez em um \"Tetris\"?",
+      "answer": 4,
+      "unit": "linhas",
+      "fact": "A jogada dá mais pontos no jogo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos botões tem o controle do Atari 2600?",
+      "answer": 1,
+      "unit": "botão",
+      "fact": "A alavanca fazia todo o resto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos botões de ação tem o controle do Mega Drive original?",
+      "answer": 3,
+      "unit": "botões",
+      "fact": "A Sega lançou um controle de seis botões depois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos botões de ação tem o controle do NES?",
+      "answer": 2,
+      "unit": "botões",
+      "fact": "São o A e o B, além do Start e Select."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos botões de ação tem o controle do Super Nintendo?",
+      "answer": 4,
+      "unit": "botões",
+      "fact": "Havia ainda dois botões atrás."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o PlayStation 2?",
+      "answer": 2000,
+      "scale": 50,
+      "fact": "É o console mais vendido da história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o PlayStation 3?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Ele ficou famoso também como reprodutor de Blu-ray."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o PlayStation 5?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "Faltou muito na época da pandemia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Xbox?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Foi a estreia da Microsoft nos consoles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Xbox 360?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "O \"anel vermelho da morte\" virou um pesadelo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Xbox Series X?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "Ele saiu junto com o PlayStation 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Nintendo 64?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Ele ainda usava cartuchos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Nintendo DS?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Ele tinha duas telas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Wii?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Ele vendeu mais de 100 milhões."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Super Nintendo?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Ele chegou ao Brasil em 1993."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Steam Deck?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "A Valve levou os jogos de PC para um portátil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Nintendo Switch 2?",
+      "answer": 2025,
+      "scale": 50,
+      "fact": "Ele vendeu milhões nos primeiros dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"The Legend of Zelda\", original?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "O cartucho era dourado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Final Fantasy\", original?",
+      "answer": 1987,
+      "scale": 50,
+      "fact": "A empresa estava quase falindo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Mortal Kombat\", original?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "A violência levou ao selo de classificação."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Doom\", original?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Ele foi instalado em mais computadores que o próprio Windows 95."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Super Mario 64\"?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Foi um marco nos jogos em 3D."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Ocarina of Time\"?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "É um dos jogos mais bem avaliados da história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Half-Life\"?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "O protagonista não fala nada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"The Sims\", original?",
+      "answer": 2000,
+      "scale": 50,
+      "fact": "Ele é um dos jogos de PC mais vendidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"GTA III\"?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Ele mudou os jogos de mundo aberto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Call of Duty\", original?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "O primeiro se passa na Segunda Guerra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Halo\", original?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Ele era exclusivo do Xbox."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Guitar Hero\", original?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "A série fez o rock voltar aos jovens."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Portal\"?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "O famoso bolo é uma mentira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Angry Birds\"?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "Ele foi baixado bilhões de vezes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Dark Souls\"?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Ele popularizou um novo gênero."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Skyrim\"?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "A data de lançamento foi 11/11/11."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"The Witcher 3\"?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "Ele ganhou muitos prêmios de jogo do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Pokémon GO\"?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Ele atraiu multidões para as ruas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Red Dead Redemption 2\"?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Ele custou cerca de 500 milhões de dólares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Elden Ring\"?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "Ele vendeu mais de 20 milhões de cópias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Baldur's Gate 3\"?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele ganhou o prêmio de jogo do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"The Last of Us\", original?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "A série da HBO estreou em 2023."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Cyberpunk 2077\"?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "O lançamento cheio de erros gerou muitas críticas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Flappy Bird\"?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "O criador disse que tirou do ar porque o jogo era viciante."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Candy Crush\"?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "Ele foi um dos jogos de celular mais lucrativos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Clash of Clans\"?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "A Supercell é da Finlândia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Roblox\"?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "O jogo é uma plataforma feita pelos próprios usuários."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Rocket League\"?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "O jogo mistura carros e futebol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Zelda: Breath of the Wild\"?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Ele saiu junto com o Nintendo Switch."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Mario Kart\", o primeiro?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Foi lançado para o Super Nintendo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Sonic Mania\"?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Foi feito por fãs da série."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Wii Sports\"?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "Ele vinha junto com o console."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Bloodborne\"?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "Só saiu para o PlayStation 4."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Hollow Knight\"?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Foi feito por uma equipe de três pessoas na Austrália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Stardew Valley\"?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Uma só pessoa fez o jogo todo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Undertale\"?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "O autor é Toby Fox."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Terraria\"?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "Muitos o chamam de \"Minecraft em 2D\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Overwatch\", original?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Ele usa muitos personagens com habilidades distintas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Valorant\"?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "Foi lançado pela Riot Games."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Genshin Impact\"?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "A empresa chinesa faturou muito com ele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Hades\", original?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "Ele ganhou um prêmio na Game Awards."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Palworld\"?",
+      "answer": 2024,
+      "scale": 50,
+      "fact": "Ele vendeu milhões nos primeiros dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Dota 2\"?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "Ele nasceu de um mod de Warcraft III."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Counter-Strike 2\"?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele substituiu o CS:GO."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Tomb Raider\", original?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Lara Croft virou uma estrela."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Crash Bandicoot\", original?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Ele foi o mascote informal do primeiro PlayStation."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Resident Evil\", original?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "As frases dubladas são engraçadas até hoje."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Metal Gear Solid\", original?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Foi um dos jogos de PlayStation mais marcantes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Silent Hill\", original?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "A neblina escondia as limitações do console."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"God of War\", original?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "Ele foi um dos maiores do PlayStation 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Assassin's Creed\", original?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "Ele se passa na Terra Santa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Uncharted\", original?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "Nathan Drake virou o rosto do PlayStation 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Mass Effect\", original?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "O jogo tem escolhas que mudam a história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Space Invaders\"?",
+      "answer": 1978,
+      "scale": 50,
+      "fact": "Ele fez faltar moedas de 100 ienes no Japão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Asteroids\"?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "Os jogadores o preferiram ao Space Invaders."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Donkey Kong\", original?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Foi o primeiro em que Mario apareceu."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Frogger\"?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Um sapo atravessa uma rua movimentada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Galaga\"?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "Ele é uma evolução de Space Invaders."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"River Raid\"?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "Carol Shaw foi uma das primeiras mulheres a fazer games."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado \"Pitfall!\"?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "Foi um dos primeiros jogos de plataforma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Blizzard?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "No início, ela se chamava Silicon & Synapse."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Valve?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Dois ex-funcionários da Microsoft a fundaram."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Steam?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Começou como plataforma de atualização para jogos da Valve."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Rockstar Games?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Foi fundada em Nova York."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Epic Games?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "O nome era Potomac Computer Systems."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a EA?",
+      "answer": 1982,
+      "scale": 50,
+      "fact": "O fundador é Trip Hawkins."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Ubisoft?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "Cinco irmãos a fundaram na França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Capcom?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "O nome vem de \"Capsule Computers\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Sega?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "O nome vem de \"Service Games\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criada a Square Enix, com a fusão?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "Square e Enix foram duas empresas rivais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Discord?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "Ele foi feito para jogadores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a E3 pela primeira vez?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Foi uma feira de games muito importante."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu a última E3?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "O evento foi cancelado de forma definitiva em 2023."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o primeiro The Game Awards?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "Geoff Keighley é o apresentador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o Game Pass?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "Ele custa como uma assinatura de filmes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Sega deixou de fazer consoles?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Ela virou só uma produtora de jogos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos controles podem ser ligados ao Super Nintendo, sem adaptador?",
+      "answer": 2,
+      "unit": "controles",
+      "fact": "O multitap permitia mais jogadores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos controles podem ser ligados ao Nintendo 64?",
+      "answer": 4,
+      "unit": "controles",
+      "fact": "Isso foi muito bom para jogos multijogador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do PlayStation 1 foram vendidas, em milhões?",
+      "answer": 102,
+      "unit": "milhões",
+      "fact": "Foi o primeiro console a passar de 100 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do PlayStation 3 foram vendidas, em milhões?",
+      "answer": 87,
+      "unit": "milhões",
+      "fact": "Ele foi vendido a princípio com prejuízo para a Sony."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do PlayStation 4 foram vendidas, em milhões?",
+      "answer": 117,
+      "unit": "milhões",
+      "fact": "Foi o segundo mais vendido da marca."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do PlayStation 5 foram vendidas, até 2024, em milhões?",
+      "answer": 65,
+      "unit": "milhões",
+      "fact": "Sua produção sofreu muito no começo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Xbox 360 foram vendidas, em milhões?",
+      "answer": 84,
+      "unit": "milhões",
+      "fact": "É o mais vendido da Microsoft."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Xbox original foram vendidas, em milhões?",
+      "answer": 24,
+      "unit": "milhões",
+      "fact": "A Microsoft teve prejuízo enorme no início."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Xbox One foram vendidas, aproximadamente, em milhões?",
+      "answer": 58,
+      "unit": "milhões",
+      "fact": "A Microsoft parou de divulgar números."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Wii foram vendidas, em milhões?",
+      "answer": 101,
+      "unit": "milhões",
+      "fact": "Foi muito popular entre pessoas mais velhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do GameCube foram vendidas, em milhões?",
+      "answer": 21,
+      "unit": "milhões",
+      "fact": "Ele tinha discos menores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Nintendo 64 foram vendidas, em milhões?",
+      "answer": 33,
+      "unit": "milhões",
+      "fact": "A Nintendo perdeu a liderança para a Sony."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Super Nintendo foram vendidas, em milhões?",
+      "answer": 49,
+      "unit": "milhões",
+      "fact": "Sua rivalidade com o Mega Drive foi lendária."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do NES foram vendidas, em milhões?",
+      "answer": 62,
+      "unit": "milhões",
+      "fact": "Ele salvou os videogames depois da crise de 1983."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Nintendo Switch foram vendidas, até 2024, em milhões?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "É o console mais vendido da Nintendo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Nintendo 3DS foram vendidas, em milhões?",
+      "answer": 75,
+      "unit": "milhões",
+      "fact": "Ele fazia imagens em 3D sem óculos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do PSP foram vendidas, em milhões?",
+      "answer": 80,
+      "unit": "milhões",
+      "fact": "É o portátil mais vendido da Sony."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Mega Drive foram vendidas, em milhões?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "Fez muito sucesso no Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Dreamcast foram vendidas, em milhões?",
+      "answer": 9,
+      "unit": "milhões",
+      "fact": "A Sega abandonou os consoles depois dele."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Sega Saturn foram vendidas, em milhões?",
+      "answer": 9,
+      "unit": "milhões",
+      "fact": "Foi lançado de surpresa nos EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas unidades do Atari 2600 foram vendidas, em milhões?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "Ele ficou no mercado por muitos anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Tetris\", somando todas as versões, em milhões, aproximadamente?",
+      "answer": 520,
+      "unit": "milhões",
+      "fact": "Ele foi lançado em dezenas de plataformas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Wii Sports\", em milhões?",
+      "answer": 82,
+      "unit": "milhões",
+      "fact": "A maior parte vinha com o console."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"PUBG\", em milhões?",
+      "answer": 75,
+      "unit": "milhões",
+      "fact": "É o mais vendido em PC."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Mario Kart 8 Deluxe\", em milhões, aproximadamente?",
+      "answer": 65,
+      "unit": "milhões",
+      "fact": "É o mais vendido no Nintendo Switch."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Red Dead Redemption 2\", em milhões, aproximadamente?",
+      "answer": 70,
+      "unit": "milhões",
+      "fact": "Foi muito caro de produzir."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"The Witcher 3\", em milhões, aproximadamente?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "A CD Projekt fez dele um enorme sucesso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Terraria\", em milhões, aproximadamente?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "A equipe o atualizou por mais de 10 anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Elden Ring\", em milhões, até 2025?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "A expansão também fez muito sucesso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Skyrim\", em milhões, aproximadamente?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "Foi lançado em quase todo tipo de console."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Super Mario Bros.\", original, em milhões?",
+      "answer": 40,
+      "unit": "milhões",
+      "fact": "Ele vinha junto com o console."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Pokémon Red e Blue\", em milhões?",
+      "answer": 31,
+      "unit": "milhões",
+      "fact": "Foram lançados em 1996 no Japão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Stardew Valley\", em milhões, até 2024?",
+      "answer": 41,
+      "unit": "milhões",
+      "fact": "Foi feito por uma só pessoa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Cyberpunk 2077\", até 2024, em milhões?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "Depois de corrigido, recuperou seu prestígio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Hogwarts Legacy\", até 2024, em milhões?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "Foi o mais vendido de 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu \"Baldur's Gate 3\", até 2024, em milhões?",
+      "answer": 15,
+      "unit": "milhões",
+      "fact": "A Larian continuou independente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto arrecadou \"GTA V\", até 2023, em bilhões de dólares?",
+      "answer": 8,
+      "unit": "bilhões",
+      "fact": "É o produto de entretenimento mais lucrativo da história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custou \"GTA V\" para ser feito, em milhões de dólares?",
+      "answer": 265,
+      "unit": "milhões",
+      "fact": "Foi um dos jogos mais caros já feitos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custou \"Red Dead Redemption 2\", em milhões de dólares, aproximadamente?",
+      "answer": 500,
+      "unit": "milhões",
+      "fact": "Foram oito anos de desenvolvimento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto custou \"Cyberpunk 2077\", em milhões de dólares, aproximadamente?",
+      "answer": 430,
+      "unit": "milhões",
+      "fact": "Com a expansão, chegou a isso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto faturou \"Pokémon GO\" em receita total, até 2024, em bilhões de dólares?",
+      "answer": 8,
+      "unit": "bilhões",
+      "fact": "A Niantic foi vendida em 2025."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas chegaram a jogar Fortnite em um único concerto de Travis Scott, em milhões?",
+      "answer": 12.3,
+      "unit": "milhões",
+      "fact": "O show aconteceu dentro do jogo, em 2020."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas chegaram a jogar Roblox por mês, em milhões, em 2023?",
+      "answer": 300,
+      "unit": "milhões",
+      "fact": "A maioria dos jogadores é formada por crianças."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas pessoas no mundo jogam videogames, em bilhões, em 2023?",
+      "answer": 3.3,
+      "unit": "bilhões",
+      "fact": "Quase metade do planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o mercado de games movimenta por ano, em bilhões de dólares?",
+      "answer": 184,
+      "unit": "bilhões",
+      "fact": "É mais que o cinema e a música somados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas peças tem um dominó tradicional?",
+      "answer": 28,
+      "unit": "peças",
+      "fact": "O jogo veio da China, passando pela Itália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a soma das duas faces de um dado que ficam opostas?",
+      "answer": 7,
+      "unit": "soma",
+      "fact": "Assim, os dados são bem equilibrados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas propriedades tem o Monopoly tradicional, incluindo estações?",
+      "answer": 28,
+      "unit": "propriedades",
+      "fact": "O jogo é originalmente de Atlantic City."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos peões cada jogador tem no início do xadrez?",
+      "answer": 8,
+      "unit": "peões",
+      "fact": "Eles podem virar uma rainha ao chegar ao outro lado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor da nota mais alta do Banco Imobiliário tradicional, em dinheiro do jogo?",
+      "answer": 500,
+      "unit": "dinheiro",
+      "fact": "Ela é laranja, em muitas versões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos territórios tem o jogo War?",
+      "answer": 42,
+      "unit": "territórios",
+      "fact": "Ele foi lançado no Brasil em 1972."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos continentes tem o jogo War, no tabuleiro?",
+      "answer": 6,
+      "unit": "continentes",
+      "fact": "A Oceania é um dos mais fáceis de defender."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos personagens tem o Detetive, em sua versão clássica?",
+      "answer": 6,
+      "unit": "personagens",
+      "fact": "A partida se passa em uma mansão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas armas tem o jogo Detetive, em sua versão clássica?",
+      "answer": 6,
+      "unit": "armas",
+      "fact": "A corda e o castiçal são as mais conhecidas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cômodos tem a mansão do Detetive, em sua versão clássica?",
+      "answer": 9,
+      "unit": "cômodos",
+      "fact": "O jogo foi criado na Inglaterra em 1948."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cartas tem um baralho de UNO?",
+      "answer": 108,
+      "unit": "cartas",
+      "fact": "O jogo foi criado em 1971."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cartas tem o baralho do truco, sem os oitos, noves e dez?",
+      "answer": 40,
+      "unit": "cartas",
+      "fact": "O jogo é muito popular em São Paulo e no Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas casas tem o tabuleiro de Banco Imobiliário, em volta?",
+      "answer": 40,
+      "unit": "casas",
+      "fact": "A primeira é o \"Ponto de Partida\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cubinhos tem um cubo mágico padrão, visíveis?",
+      "answer": 26,
+      "unit": "cubinhos",
+      "fact": "Ele foi criado por Ernő Rubik em 1974."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas combinações tem um cubo mágico, em quintilhões?",
+      "answer": 43,
+      "unit": "quintilhões",
+      "fact": "Todas podem ser resolvidas em até 20 movimentos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em quantos movimentos, no máximo, qualquer cubo mágico pode ser resolvido?",
+      "answer": 20,
+      "unit": "movimentos",
+      "fact": "O número é chamado de \"Número de Deus\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde mundial de resolução do cubo mágico, em segundos, em 2023?",
+      "answer": 3.13,
+      "unit": "segundos",
+      "fact": "Max Park fez a marca nos EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o cubo mágico?",
+      "answer": 1974,
+      "scale": 50,
+      "fact": "O húngaro Ernő Rubik queria ensinar geometria a estudantes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos cubos mágicos foram vendidos, em milhões, aproximadamente?",
+      "answer": 450,
+      "unit": "milhões",
+      "fact": "Muitas pessoas o colocam entre os brinquedos mais vendidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas peças tem um jogo de Jenga, no início?",
+      "answer": 54,
+      "unit": "peças",
+      "fact": "A torre tem 18 andares de 3 peças."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas peças tem um jogo de Lego médio, em uma caixa do Coliseu?",
+      "answer": 9036,
+      "unit": "peças",
+      "fact": "Ele foi o maior conjunto da marca por anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos blocos de LEGO são produzidos por ano, em bilhões?",
+      "answer": 110,
+      "unit": "bilhões",
+      "fact": "É um dos brinquedos mais produzidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dados são usados no Yahtzee, em uma jogada?",
+      "answer": 5,
+      "unit": "dados",
+      "fact": "O jogo é também chamado de General."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dados são usados em uma partida de War, em cada ataque, no máximo?",
+      "answer": 3,
+      "unit": "dados",
+      "fact": "A defesa usa outros três dados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas faces tem o dado mais usado em RPG, o d20?",
+      "answer": 20,
+      "unit": "faces",
+      "fact": "É um icosaedro, um sólido de Platão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Dungeons & Dragons?",
+      "answer": 1974,
+      "scale": 50,
+      "fact": "Gary Gygax e Dave Arneson o criaram."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o jogo de tabuleiro Catan?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Ele já foi traduzido para mais de 30 línguas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o jogo de cartas UNO?",
+      "answer": 1971,
+      "scale": 50,
+      "fact": "Foi criado por um barbeiro de Ohio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o jogo War no Brasil?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "A fabricante é a Grow."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Grow?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "Ela foi fundada por quatro amigos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Cluedo, jogo que deu origem ao Detetive?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "Anthony Pratt, um inglês, criou o jogo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendida uma carta de Magic, o Black Lotus, em dólares?",
+      "answer": 540000,
+      "unit": "dólares",
+      "fact": "É uma das cartas mais valiosas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendida a carta de Pokémon Pikachu Illustrator, em milhões de dólares?",
+      "answer": 5.3,
+      "unit": "milhões",
+      "fact": "Logan Paul a comprou em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendida uma cópia lacrada de \"Super Mario 64\", em milhões de dólares?",
+      "answer": 1.56,
+      "unit": "milhão",
+      "fact": "Foi vendida em 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendida uma cópia lacrada de \"Super Mario Bros.\", em milhões de dólares, em 2021?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "Foi um recorde na época."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto foi vendida uma cópia de \"Zelda\", de 1987, em dólares, em 2021?",
+      "answer": 870000,
+      "unit": "dólares",
+      "fact": "Era um cartucho lacrado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o jogo Mario Kart Wii vendeu, em milhões, aproximadamente?",
+      "answer": 37,
+      "unit": "milhões",
+      "fact": "Ele vinha com um volante de plástico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde mundial de \"Super Mario Bros.\" em speedrun, em minutos, aproximadamente?",
+      "answer": 4.9,
+      "unit": "minutos",
+      "fact": "Hoje, os recordes são medidos em milésimos de segundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tempo do recorde de Ocarina of Time em speedrun, aproximadamente, em minutos?",
+      "answer": 9,
+      "unit": "minutos",
+      "fact": "Os jogadores usam muitos atalhos e erros do jogo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o recorde de \"Super Mario 64\" em 120 estrelas, em horas, aproximadamente?",
+      "answer": 1.6,
+      "unit": "hora",
+      "fact": "O recordista é Cheese, com o tempo de 1h35."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tempo aproximado para zerar The Witcher 3 por completo, em horas?",
+      "answer": 170,
+      "unit": "horas",
+      "fact": "As expansões elevam ainda mais o tempo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tempo aproximado para zerar Elden Ring por completo, em horas?",
+      "answer": 130,
+      "unit": "horas",
+      "fact": "É um mundo muito grande."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tempo aproximado para zerar Baldur's Gate 3 por completo, em horas?",
+      "answer": 140,
+      "unit": "horas",
+      "fact": "As escolhas mudam muito a história."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tempo aproximado para zerar Portal, em horas?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Ele é curto, mas muito marcante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mapa de GTA V, em km²?",
+      "answer": 81,
+      "unit": "km²",
+      "fact": "Ele foi um dos maiores em seu lançamento."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mapa de Red Dead Redemption 2, em km²?",
+      "answer": 75,
+      "unit": "km²",
+      "fact": "O mapa é cheio de detalhes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mapa de Skyrim, em km²?",
+      "answer": 37,
+      "unit": "km²",
+      "fact": "Parece bem maior por causa das montanhas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mapa de Breath of the Wild, em km²?",
+      "answer": 84,
+      "unit": "km²",
+      "fact": "Ele é bem detalhado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mundo de Minecraft, em km por lado, antes do limite?",
+      "answer": 60000,
+      "unit": "km",
+      "fact": "Dá um mundo muito maior do que a Terra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mapa de No Man's Sky, em planetas, em quintilhões?",
+      "answer": 18,
+      "unit": "quintilhões",
+      "fact": "O universo é gerado por um algoritmo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altura máxima de construção em Minecraft, em blocos, depois de 2021?",
+      "answer": 320,
+      "unit": "blocos",
+      "fact": "O limite subiu nessa atualização."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos blocos tem um chunk de Minecraft, por lado?",
+      "answer": 16,
+      "unit": "blocos",
+      "fact": "O mundo é gerado por essas partes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos corações de vida tem um jogador em Minecraft?",
+      "answer": 10,
+      "unit": "corações",
+      "fact": "Cada coração vale dois pontos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos dura um dia de Minecraft, em tempo real?",
+      "answer": 20,
+      "unit": "minutos",
+      "fact": "A noite dura cerca de sete minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos dura uma partida de Fall Guys, em geral?",
+      "answer": 15,
+      "unit": "minutos",
+      "fact": "O personagem é um feijão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos minutos dura uma partida de League of Legends, em média?",
+      "answer": 30,
+      "unit": "minutos",
+      "fact": "Algumas passam de uma hora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos personagens tem League of Legends, em 2024, aproximadamente?",
+      "answer": 168,
+      "unit": "campeões",
+      "fact": "Novos são lançados com frequência."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas partidas de LoL são jogadas por dia, em milhões, aproximadamente?",
+      "answer": 100,
+      "unit": "milhões",
+      "fact": "Ele foi lançado em 2009."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tinha o Atari 2600?",
+      "answer": 8,
+      "unit": "bits",
+      "fact": "Os processadores eram muito limitados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tinha o Super Nintendo?",
+      "answer": 16,
+      "unit": "bits",
+      "fact": "A \"guerra dos bits\" era usada em propaganda."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tinha o Mega Drive?",
+      "answer": 16,
+      "unit": "bits",
+      "fact": "O nome \"Blast Processing\" foi a propaganda da Sega."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tinha o Nintendo 64?",
+      "answer": 64,
+      "unit": "bits",
+      "fact": "O número aparece no nome do console."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tinha o PlayStation 1?",
+      "answer": 32,
+      "unit": "bits",
+      "fact": "Ele usava CD como mídia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bits tinha o Dreamcast?",
+      "answer": 128,
+      "unit": "bits",
+      "fact": "Foi um dos primeiros consoles com modem."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos KB de memória tinha o NES?",
+      "answer": 2,
+      "unit": "KB",
+      "fact": "Os jogos usavam muito pouca memória."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos bytes de RAM tinha o Atari 2600?",
+      "answer": 128,
+      "unit": "bytes",
+      "fact": "Isso é menos do que um e-mail curto."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos GB de memória tem o PlayStation 5?",
+      "answer": 16,
+      "unit": "GB",
+      "fact": "Ele tem também um SSD muito rápido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos GB de armazenamento tem o Nintendo Switch original?",
+      "answer": 32,
+      "unit": "GB",
+      "fact": "Ele aceita cartão de memória."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos GB tem o jogo \"Call of Duty: Modern Warfare\" de 2019, no PC?",
+      "answer": 175,
+      "unit": "GB",
+      "fact": "Era um dos maiores jogos da época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos KB tinha o jogo \"Super Mario Bros.\", original?",
+      "answer": 40,
+      "unit": "KB",
+      "fact": "Isso é menor que uma foto de celular."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos MB tinha \"Super Mario 64\"?",
+      "answer": 8,
+      "unit": "MB",
+      "fact": "Hoje, uma foto de celular é quase isso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos MB tinha o CD do PlayStation 1?",
+      "answer": 700,
+      "unit": "MB",
+      "fact": "Ele guardava muito mais que os cartuchos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos GB tem um Blu-ray de camada dupla?",
+      "answer": 50,
+      "unit": "GB",
+      "fact": "O PlayStation 3 ajudou a popularizar o formato."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cores o Game Boy original exibia, em tons?",
+      "answer": 4,
+      "unit": "tons",
+      "fact": "Eram tons de verde."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cores o NES podia usar de uma paleta, aproximadamente?",
+      "answer": 54,
+      "unit": "cores",
+      "fact": "Só 25 cores apareciam ao mesmo tempo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos pixels tinha a tela do Game Boy, na largura?",
+      "answer": 160,
+      "unit": "pixels",
+      "fact": "A altura era de 144 pixels."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Eric Barone levou para criar \"Stardew Valley\"?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "Ele trabalhava sozinho até 10 horas por dia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Team Cherry levou para fazer \"Silksong\"?",
+      "answer": 7,
+      "unit": "anos",
+      "fact": "A espera virou meme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Dong Nguyen tinha ao criar Flappy Bird, aproximadamente?",
+      "answer": 28,
+      "unit": "anos",
+      "fact": "Ele é vietnamita."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto Flappy Bird faturava por dia, no auge, em dólares?",
+      "answer": 50000,
+      "unit": "dólares",
+      "fact": "Ele o tirou do ar mesmo assim."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos dias Dong Nguyen levou para criar Flappy Bird?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "Foi um dos maiores sucessos do mundo mobile."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos pontos dá o fantasma que Pac-Man come por último, na sequência?",
+      "answer": 1600,
+      "unit": "pontos",
+      "fact": "O valor dobra a cada fantasma comido."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Satoru Iwata presidiu a Nintendo?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "Ele morreu em 2015, e os fãs fizeram homenagens."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Miyamoto tinha ao criar Super Mario Bros.?",
+      "answer": 32,
+      "unit": "anos",
+      "fact": "Ele nasceu em 1952."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos John Carmack tinha ao criar Doom?",
+      "answer": 23,
+      "unit": "anos",
+      "fact": "Ele ainda fazia programação nos anos 2000."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas trabalharam em \"Red Dead Redemption 2\", aproximadamente?",
+      "answer": 3000,
+      "unit": "pessoas",
+      "fact": "Muitos reclamaram de muitas horas extras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas linhas de diálogo tem \"Red Dead Redemption 2\", aproximadamente?",
+      "answer": 500000,
+      "unit": "linhas",
+      "fact": "Foi um dos jogos mais escritos da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas páginas tem o roteiro de \"Red Dead Redemption 2\", aproximadamente?",
+      "answer": 2000,
+      "unit": "páginas",
+      "fact": "Mais de mil atores participaram."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas viram a final de League of Legends de 2024, no pico, em milhões?",
+      "answer": 6.9,
+      "unit": "milhões",
+      "fact": "Foi o maior público da história dos esports."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valeu a premiação do Mundial de Dota de 2021, em milhões de dólares?",
+      "answer": 40,
+      "unit": "milhões",
+      "fact": "É o maior prêmio de esports da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Ninja tinha quando jogou com Drake?",
+      "answer": 26,
+      "unit": "anos",
+      "fact": "A partida bateu recordes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto Ninja recebeu para trocar a Twitch pelo Mixer, em milhões de dólares?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "A Microsoft encerrou o Mixer em seguida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Mixer, da Microsoft, foi encerrado?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "Muitos streamers voltaram à Twitch."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Faker joga pelo T1, até 2024?",
+      "answer": 11,
+      "unit": "anos",
+      "fact": "Ele é o maior nome do League of Legends."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas vezes Faker foi campeão mundial, até 2024?",
+      "answer": 5,
+      "unit": "vezes",
+      "fact": "Ele ganhou o título de novo em 2024."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançada a loja Xbox Live Arcade?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Ela ajudou muitos jogos independentes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano foi criado \"Magic: The Gathering\"?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Foi criado por um matemático, Richard Garfield."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano o jogo Banco Imobiliário foi lançado no Brasil?",
+      "answer": 1944,
+      "scale": 50,
+      "fact": "A Estrela é a fabricante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do ponto mais baixo do mundo de Minecraft, em blocos?",
+      "answer": -64,
+      "unit": "blocos",
+      "fact": "O limite mudou em uma atualização de 2021."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Super Mario Bros.\", com atores reais?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Foi um enorme fracasso."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Mortal Kombat\", original?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "A música-tema virou um clássico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Street Fighter\", com Van Damme?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Raul Julia fez o vilão em seu último papel."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Tomb Raider\", com Angelina Jolie?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Foi um sucesso de bilheteria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Sonic\", com Jim Carrey?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "O visual do personagem foi trocado depois das críticas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Super Mario Bros.\", animado?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele arrecadou mais de 1,3 bilhão de dólares."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu o filme \"Minecraft\", com Jack Black?",
+      "answer": 2025,
+      "scale": 50,
+      "fact": "A produção virou um grande sucesso de bilheteria."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto arrecadou o filme \"Super Mario Bros.\", de 2023, em bilhões de dólares?",
+      "answer": 1.36,
+      "unit": "bilhão",
+      "fact": "Foi a segunda maior bilheteria do ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto arrecadou o filme \"Um Filme Minecraft\", em milhões de dólares?",
+      "answer": 950,
+      "unit": "milhões",
+      "fact": "Ele se tornou a maior estreia de um filme de jogo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto arrecadou o filme \"Sonic 3\", em milhões de dólares?",
+      "answer": 490,
+      "unit": "milhões",
+      "fact": "Keanu Reeves fez a voz de Shadow."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas temporadas tem a série \"The Last of Us\", até 2025?",
+      "answer": 2,
+      "unit": "temporadas",
+      "fact": "Pedro Pascal e Bella Ramsey são os protagonistas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas temporadas tem a série \"The Witcher\", com Henry Cavill?",
+      "answer": 3,
+      "unit": "temporadas",
+      "fact": "Ele saiu e Liam Hemsworth entrou em seu lugar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas temporadas tem \"Arcane\", de League of Legends?",
+      "answer": 2,
+      "unit": "temporadas",
+      "fact": "Ela ganhou o Emmy de animação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano estreou \"Arcane\"?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "A produção custou cerca de 250 milhões de dólares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Tekken\", original?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Ele foi criado pela Namco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Virtua Fighter\"?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Foi o primeiro jogo de luta em 3D."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"King of Fighters 94\"?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Os personagens eram de vários jogos da SNK."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Sonic 2\"?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Tails estreou nesse jogo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Sonic Adventure\"?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Ele foi um grande título do Dreamcast."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Super Metroid\"?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Até hoje, é um dos mais queridos da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Super Mario World\"?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Foi lançado junto com o Super Nintendo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Super Mario Odyssey\"?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O boné Cappy é a principal novidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Super Mario Galaxy\"?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "A gravidade era a grande mecânica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Luigi's Mansion\"?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Foi lançado junto com o GameCube."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Animal Crossing: New Horizons\"?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "Foi a febre da pandemia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Animal Crossing: New Horizons\", em milhões?",
+      "answer": 47,
+      "unit": "milhões",
+      "fact": "Ele saiu logo no início da quarentena."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Rayman\", original?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "O personagem não tem braços nem pernas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Prince of Persia\", original?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "Jordan Mechner filmou o irmão correndo para fazer a animação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Myst\"?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "Foi um dos jogos mais vendidos dos anos 1990."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"SimCity\", original?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "As editoras achavam que ninguém compraria."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Age of Empires\", original?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "O monge \"Wololo\" virou meme."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Diablo\", original?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Ele quase foi um jogo por turnos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"StarCraft\", original?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Ele foi um fenômeno na Coreia do Sul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"World of Warcraft\", original?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Teve mais de 12 milhões de assinantes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Warcraft\", original?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Foi a primeira grande série da Blizzard."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Wolfenstein 3D\"?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Foi um dos primeiros jogos de tiro em primeira pessoa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Quake\", original?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Ele usava gráficos totalmente em 3D."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Half-Life 2\"?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "O Steam foi lançado junto com ele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Counter-Strike\", como mod?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Foi criado por Minh Le e Jess Cliffe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"BioShock\", original?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "A cidade de Rapture foi criada por Andrew Ryan."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Fallout\", original?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "A Bethesda comprou os direitos depois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"The Elder Scrolls: Arena\"?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Foi o início de uma longa série."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Baldur's Gate\", original?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Foi um dos maiores RPGs de computador."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Chrono Trigger\"?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "Akira Toriyama fez os personagens."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Final Fantasy VII\", original?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "A morte de Aerith marcou uma geração."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Kingdom Hearts\", original?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "Ele une a Disney e a Square."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Shadow of the Colossus\", original?",
+      "answer": 2005,
+      "scale": 50,
+      "fact": "O jogo não tem inimigos menores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Journey\"?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "Ele foi o primeiro jogo com indicação de música ao Grammy."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Inside\"?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "A Playdead também criou Limbo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Celeste\"?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Um jogo sobre ansiedade e escaladas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Cuphead\"?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O visual imita desenhos dos anos 1930."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Fall Guys\"?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "A Epic Games comprou o estúdio em 2021."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Among Us\", original?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Só virou febre em 2020."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Vampire Survivors\"?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "Foi um jogo feito por uma só pessoa."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Astro Bot\"?",
+      "answer": 2024,
+      "scale": 50,
+      "fact": "Ele levou o prêmio de jogo do ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Knights of Pen & Paper\", brasileiro?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "O jogo foi feito pela Behold Studios."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Dandara\", brasileiro?",
+      "answer": 2018,
+      "scale": 50,
+      "fact": "Ele é inspirado em uma heroína de Palmares."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Winning Eleven\", da Konami, nos EUA?",
+      "answer": 1995,
+      "scale": 50,
+      "fact": "A série virou PES e depois eFootball."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"FIFA International Soccer\", o primeiro?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "A bola ficou conhecida por não bater na trave."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o \"FIFA\" trocou de nome para \"EA Sports FC\"?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "A EA deixou de usar a marca da entidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto a EA pagava à FIFA por ano para usar o nome, em milhões de dólares?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "Esse custo foi um dos motivos para o fim da parceria."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"FIFA 18\", em milhões?",
+      "answer": 24,
+      "unit": "milhões",
+      "fact": "Foi uma das edições mais vendidas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu a série \"Call of Duty\", em milhões, até 2023?",
+      "answer": 500,
+      "unit": "milhões",
+      "fact": "Ela é uma das mais vendidas da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu a série \"Pokémon\", em milhões, até 2024?",
+      "answer": 480,
+      "unit": "milhões",
+      "fact": "Ela é a franquia mais lucrativa do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu a série \"Super Mario\", em milhões, até 2024?",
+      "answer": 890,
+      "unit": "milhões",
+      "fact": "Ela é a mais vendida da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu a série \"The Sims\", em milhões, até 2019?",
+      "answer": 200,
+      "unit": "milhões",
+      "fact": "A maior parte dos jogadores é formada por mulheres."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu a série \"Resident Evil\", em milhões, até 2024?",
+      "answer": 160,
+      "unit": "milhões",
+      "fact": "O filme com Milla Jovovich também foi um sucesso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu a série \"Zelda\", em milhões, até 2023?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "Os fãs sempre aguardam novos jogos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto faturou a franquia \"Pokémon\" no total, em bilhões de dólares, aproximadamente?",
+      "answer": 100,
+      "unit": "bilhões",
+      "fact": "É a franquia de entretenimento mais lucrativa do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto faturou a franquia \"Super Mario\" no total, em bilhões de dólares, aproximadamente?",
+      "answer": 36,
+      "unit": "bilhões",
+      "fact": "Os filmes também ajudam nessa conta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas telas tem o Nintendo DS?",
+      "answer": 2,
+      "unit": "telas",
+      "fact": "A de baixo é sensível ao toque."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu \"Civilization\", original?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "A frase \"só mais um turno\" virou uma piada entre os jogadores."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas cópias vendeu a série \"Grand Theft Auto\", em milhões, aproximadamente?",
+      "answer": 440,
+      "unit": "milhões",
+      "fact": "A produção de GTA VI levou mais de uma década."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que ano saiu \"Grand Theft Auto\", o primeiro?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "A visão era de cima, e o jogo era em 2D."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Sim City 2000\"?",
+      "answer": 1993,
+      "scale": 50,
+      "fact": "A sequência teve gráficos mais detalhados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Roller Coaster Tycoon\"?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Um único programador o fez quase todo em linguagem de máquina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Grim Fandango\"?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "Foi um dos últimos grandes jogos de aventura de sua época."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Monkey Island\", o primeiro?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "A Lucasfilm Games é a autora."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Lemmings\"?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Um pequeno estúdio escocês o criou, antes de fazer GTA."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Spelunky\"?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Ele ajudou a popularizar os roguelikes modernos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Braid\"?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "Foi um dos marcos da cena independente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Limbo\"?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "O visual é todo em preto e branco."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Papers, Please\"?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "O jogador é um fiscal de fronteira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Rust\"?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "O jogo de sobrevivência ainda recebe atualizações."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"The Binding of Isaac\"?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "O jogo foi feito em poucos meses por dois criadores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Slay the Spire\"?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "O jogo mistura cartas e roguelike."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Disco Elysium\"?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "O jogo tem mais de 1 milhão de palavras."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Sekiro\"?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "Ele ganhou o prêmio de jogo do ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Ghost of Tsushima\"?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "O jogo se passa no Japão, em 1274."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Death Stranding\"?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "O jogo mostra um entregador em um mundo arrasado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Metroid Dread\"?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Foi o primeiro em 2D em quase 20 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano saiu \"Zelda: Tears of the Kingdom\"?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele vendeu 10 milhões de cópias em três dias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Tears of the Kingdom\" nos primeiros três dias, em milhões?",
+      "answer": 10,
+      "unit": "milhões",
+      "fact": "É um recorde para a série."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Breath of the Wild\", em milhões, aproximadamente?",
+      "answer": 33,
+      "unit": "milhões",
+      "fact": "Foi um grande impulso para o Switch."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Pokémon Scarlet e Violet\", em milhões?",
+      "answer": 25,
+      "unit": "milhões",
+      "fact": "O lançamento foi cheio de erros técnicos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Super Smash Bros. Ultimate\", em milhões?",
+      "answer": 36,
+      "unit": "milhões",
+      "fact": "O jogo tem todos os personagens da série."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Sonic the Hedgehog\", original, em milhões?",
+      "answer": 15,
+      "unit": "milhões",
+      "fact": "Ele vinha junto com o Mega Drive."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias vendeu \"Metal Gear Solid\", original, em milhões?",
+      "answer": 7,
+      "unit": "milhões",
+      "fact": "Ele foi um marco do PlayStation."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam uma partida de Fortnite Battle Royale?",
+      "answer": 100,
+      "unit": "jogadores",
+      "fact": "O último de pé ganha a partida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam uma partida de Free Fire Battle Royale?",
+      "answer": 50,
+      "unit": "jogadores",
+      "fact": "A partida dura menos de 10 minutos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores cabiam em uma partida de Among Us, em 2020?",
+      "answer": 10,
+      "unit": "jogadores",
+      "fact": "Há até 15 em versões atuais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vidas tem Mario no início do primeiro Super Mario Bros.?",
+      "answer": 3,
+      "unit": "vidas",
+      "fact": "Dá para ganhar mais pegando cogumelos verdes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas Mario precisa pegar para ganhar uma vida extra?",
+      "answer": 100,
+      "unit": "moedas",
+      "fact": "A contagem volta a zero depois disso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fantasmas perseguem Pac-Man no labirinto?",
+      "answer": 4,
+      "unit": "fantasmas",
+      "fact": "Blinky, Pinky, Inky e Clyde."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anéis Sonic precisa ter para ganhar uma vida?",
+      "answer": 100,
+      "unit": "anéis",
+      "fact": "Ele os perde ao levar um golpe."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas peças diferentes tem o Tetris clássico?",
+      "answer": 7,
+      "unit": "peças",
+      "fact": "Cada uma tem quatro quadrados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos blocos forma cada peça do Tetris?",
+      "answer": 4,
+      "unit": "blocos",
+      "fact": "O nome vem do prefixo grego \"tetra\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores por time há em Counter-Strike competitivo?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "A partida vai até 13 vitórias de rodada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos personagens tem \"Super Smash Bros. Ultimate\", no total?",
+      "answer": 89,
+      "unit": "personagens",
+      "fact": "A propaganda dizia que todos estavam lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas estrelas tem \"Super Mario Galaxy\"?",
+      "answer": 121,
+      "unit": "estrelas",
+      "fact": "Coletar todas libera Luigi."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos corações Link começa em \"Ocarina of Time\"?",
+      "answer": 3,
+      "unit": "corações",
+      "fact": "Ele ganha mais com peças de coração."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos mundos tem \"Super Mario Bros.\", de 1985?",
+      "answer": 8,
+      "unit": "mundos",
+      "fact": "Cada um tem quatro fases."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas fases tem \"Super Mario Bros.\", de 1985?",
+      "answer": 32,
+      "unit": "fases",
+      "fact": "Bowser aparece no fim de cada mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto o Roblox fatura por ano, em bilhões de dólares, aproximadamente?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "A plataforma é muito popular entre crianças."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas cópias o Game Boy vendeu, em milhões, somando o Color?",
+      "answer": 118,
+      "unit": "milhões",
+      "fact": "Ele era muito resistente."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valeu o estúdio Bungie na venda para a Sony, em bilhões de dólares?",
+      "answer": 3.6,
+      "unit": "bilhões",
+      "fact": "O negócio foi fechado em 2022."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valeu a King, de Candy Crush, na venda à Activision, em bilhões de dólares?",
+      "answer": 5.9,
+      "unit": "bilhões",
+      "fact": "O negócio foi concluído em 2016."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valeu a Zynga na venda à Take-Two, em bilhões de dólares?",
+      "answer": 12.7,
+      "unit": "bilhões",
+      "fact": "A empresa fez \"FarmVille\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto valeu a Supercell na venda à Tencent, em bilhões de dólares?",
+      "answer": 8.6,
+      "unit": "bilhões",
+      "fact": "A empresa fez \"Clash of Clans\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a velocidade do Sonic em quilômetros, segundo dados oficiais, em km/h?",
+      "answer": 1225,
+      "unit": "km/h",
+      "fact": "Ele corre mais rápido que o som."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura de Mario, em centímetros, segundo fontes oficiais?",
+      "answer": 155,
+      "unit": "cm",
+      "fact": "O peso seria de 89 quilos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cartas iniciais recebe cada jogador em uma partida de UNO?",
+      "answer": 7,
+      "unit": "cartas",
+      "fact": "O restante forma a pilha de compra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos botões frontais tem o controle do Super Nintendo, sem os direcionais?",
+      "answer": 6,
+      "unit": "botões",
+      "fact": "Eram X, Y, A e B, mais L e R nos ombros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares em moedas Pac-Man arrecadou nos anos 1980, aproximadamente?",
+      "answer": 1,
+      "unit": "bilhão",
+      "fact": "Foi lançado em 1980."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos personagens jogáveis tinha \"Street Fighter II\", em 1991?",
+      "answer": 8,
+      "unit": "personagens",
+      "fact": "Os chefes viraram jogáveis depois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos Pokémon cabiam no time principal do jogador?",
+      "answer": 6,
+      "unit": "Pokémon",
+      "fact": "Os restantes ficam guardados no PC."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos Gabe Newell trabalhou na Microsoft antes de fundar a Valve?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "Ele saiu em 1996."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a taxa padrão do Steam sobre as vendas, em porcentagem?",
+      "answer": 30,
+      "unit": "%",
+      "scale": 10,
+      "fact": "Empresas maiores pagam menos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas casas tem um tabuleiro de War, em territórios da América do Sul?",
+      "answer": 4,
+      "unit": "territórios",
+      "fact": "O continente é um dos mais fáceis de defender."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dados de seis faces usa uma jogada de Banco Imobiliário?",
+      "answer": 2,
+      "unit": "dados",
+      "fact": "Tirar duas vezes iguais dá nova jogada."
     }
   ]
 }

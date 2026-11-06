@@ -40,14 +40,13 @@ def question(qid: str, answer: float, scale: float | None = None, difficulty: st
     )
 
 
-def test_bank_has_30_numeric_questions_per_theme():
+def test_bank_has_numeric_questions_at_every_level_in_every_theme():
     bank = load_estimates()
     assert len({q.id for q in bank}) == len(bank)
     themes = {q.theme for q in bank}
-    assert len(themes) == 12
-    assert all(sum(1 for q in bank if q.theme == t) == 30 for t in themes)
-    for t in themes:  # 10 de cada nível em cada tema
-        assert all(sum(1 for q in bank if q.theme == t and q.difficulty == d) == 10 for d in ("easy", "medium", "hard"))
+    assert len(themes) == 14
+    for t in themes:
+        assert all(sum(1 for q in bank if q.theme == t and q.difficulty == d) >= 100 for d in ("easy", "medium", "hard"))
 
 
 def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_30_percent():

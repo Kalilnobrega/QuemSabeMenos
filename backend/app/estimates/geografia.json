@@ -210,6 +210,2718 @@
       "answer": 40075,
       "unit": "km",
       "fact": "A 80 km/h, sem parar, a volta levaria cerca de três semanas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos continentes tem o mundo, no modelo mais comum no Brasil?",
+      "answer": 6,
+      "unit": "continentes",
+      "fact": "América, Europa, África, Ásia, Oceania e Antártida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos oceanos tem o mundo, no modelo mais comum?",
+      "answer": 5,
+      "unit": "oceanos",
+      "fact": "O Austral foi reconhecido oficialmente pela National Geographic em 2021."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem o Brasil?",
+      "answer": 26,
+      "unit": "estados",
+      "fact": "Além deles, há o Distrito Federal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem a região Nordeste?",
+      "answer": 9,
+      "unit": "estados",
+      "fact": "Salvador foi a primeira capital do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem a região Norte?",
+      "answer": 7,
+      "unit": "estados",
+      "fact": "É a maior região do Brasil em área."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem a região Sudeste?",
+      "answer": 4,
+      "unit": "estados",
+      "fact": "São Paulo, Rio, Minas e Espírito Santo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem a região Sul?",
+      "answer": 3,
+      "unit": "estados",
+      "fact": "É a menor região do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países fazem fronteira com o Brasil?",
+      "answer": 10,
+      "unit": "países",
+      "fact": "Só Chile e Equador não são vizinhos do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formam a América do Sul?",
+      "answer": 12,
+      "unit": "países",
+      "fact": "A Guiana Francesa é um território da França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas listras tem a bandeira dos Estados Unidos?",
+      "answer": 13,
+      "unit": "listras",
+      "fact": "Elas lembram as 13 colônias originais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países fazem parte do Reino Unido?",
+      "answer": 4,
+      "unit": "países",
+      "fact": "Inglaterra, Escócia, País de Gales e Irlanda do Norte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formam a Escandinávia, no sentido mais estrito?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "Noruega, Suécia e Dinamarca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países fazem fronteira com Portugal?",
+      "answer": 1,
+      "unit": "país",
+      "fact": "O único vizinho é a Espanha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fusos horários oficiais tem o Brasil?",
+      "answer": 4,
+      "unit": "fusos",
+      "fact": "Inclui o fuso de Fernando de Noronha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fusos horários oficiais tem a China?",
+      "answer": 1,
+      "unit": "fuso",
+      "fact": "O país inteiro segue o horário de Pequim."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fusos horários existem no mundo, no padrão inteiro?",
+      "answer": 24,
+      "unit": "fusos",
+      "fact": "Cada fuso corresponde a cerca de 15 graus."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos graus tem um círculo de longitude na Terra?",
+      "answer": 360,
+      "unit": "graus",
+      "fact": "Daí vêm os 15 graus de cada fuso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos graus de latitude tem do Equador até o Polo Norte?",
+      "answer": 90,
+      "unit": "graus",
+      "fact": "O Equador está em 0°."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude do Everest, em metros?",
+      "answer": 8849,
+      "unit": "metros",
+      "fact": "A altitude foi remedida em 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude do Monte Fuji, em metros?",
+      "answer": 3776,
+      "unit": "metros",
+      "fact": "O Japão pede que as pessoas não subam sem preparo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude do Kilimanjaro, em metros?",
+      "answer": 5895,
+      "unit": "metros",
+      "fact": "É a maior montanha isolada do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude do Monte Branco, em metros?",
+      "answer": 4807,
+      "unit": "metros",
+      "fact": "Ele fica entre a França e a Itália."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Brasília, em metros?",
+      "answer": 1172,
+      "unit": "metros",
+      "fact": "Por isso, a cidade é mais fresca e seca que o entorno."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de São Paulo, em metros?",
+      "answer": 760,
+      "unit": "metros",
+      "fact": "A serra separa a cidade do mar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Corcovado, em metros?",
+      "answer": 710,
+      "unit": "metros",
+      "fact": "O Cristo tem mais 38 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Cristo Redentor, em metros, contando a base?",
+      "answer": 38,
+      "unit": "metros",
+      "fact": "Ele foi inaugurado em 1931."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura da Torre Eiffel, em metros?",
+      "answer": 330,
+      "unit": "metros",
+      "fact": "Ela já foi a construção mais alta do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura da Estátua da Liberdade, com a base, em metros?",
+      "answer": 93,
+      "unit": "metros",
+      "fact": "A estátua foi um presente da França."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura da Grande Pirâmide de Gizé, em metros?",
+      "answer": 139,
+      "unit": "metros",
+      "fact": "Originalmente, tinha 146 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Big Ben, em metros?",
+      "answer": 96,
+      "unit": "metros",
+      "fact": "A torre se chama Elizabeth Tower."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Empire State, em metros, com a antena?",
+      "answer": 443,
+      "unit": "metros",
+      "fact": "Foi o prédio mais alto do mundo por 40 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura do Burj Khalifa, em metros?",
+      "answer": 828,
+      "unit": "metros",
+      "fact": "Tem mais de 160 andares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o comprimento da Ponte Rio-Niterói, em km?",
+      "answer": 13,
+      "unit": "km",
+      "fact": "Ela foi inaugurada em 1974."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o comprimento do Canal do Panamá, em km?",
+      "answer": 82,
+      "unit": "km",
+      "fact": "Um navio leva de 8 a 10 horas para atravessar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o comprimento do Canal de Suez, em km?",
+      "answer": 193,
+      "unit": "km",
+      "fact": "Ele foi aberto em 1869."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o comprimento do Eurotúnel, em km?",
+      "answer": 50,
+      "unit": "km",
+      "fact": "Ele passa por baixo do Canal da Mancha."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população do Brasil, em milhões, no Censo de 2022?",
+      "answer": 203,
+      "unit": "milhões",
+      "fact": "Foi o menor crescimento já registrado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da cidade de São Paulo, em milhões, no Censo de 2022?",
+      "answer": 11.4,
+      "unit": "milhões",
+      "fact": "Foi a primeira vez em que a população da cidade recuou nos dados."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da cidade do Rio de Janeiro, em milhões, no Censo de 2022?",
+      "answer": 6.2,
+      "unit": "milhões",
+      "fact": "Ela é a segunda maior do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Brasília, em milhões, no Censo de 2022?",
+      "answer": 2.8,
+      "unit": "milhões",
+      "fact": "Ela foi planejada para cerca de 500 mil moradores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Salvador, em milhões, no Censo de 2022?",
+      "answer": 2.4,
+      "unit": "milhões",
+      "fact": "Foi a primeira capital do país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Fortaleza, em milhões, no Censo de 2022?",
+      "answer": 2.4,
+      "unit": "milhões",
+      "fact": "Ela é a capital mais populosa do Ceará e da região."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Belo Horizonte, em milhões, no Censo de 2022?",
+      "answer": 2.3,
+      "unit": "milhões",
+      "fact": "Foi planejada para ser a nova capital de Minas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Manaus, em milhões, no Censo de 2022?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "Ela é a maior cidade da Região Norte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Curitiba, em milhões, no Censo de 2022?",
+      "answer": 1.8,
+      "unit": "milhão",
+      "fact": "Ela é conhecida pela qualidade do transporte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população dos EUA, em milhões, em 2023?",
+      "answer": 335,
+      "unit": "milhões",
+      "fact": "É o terceiro país mais populoso do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da Índia, em bilhões, em 2023?",
+      "answer": 1.43,
+      "unit": "bilhão",
+      "fact": "Passou a China no mesmo ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da China, em bilhões, em 2023?",
+      "answer": 1.41,
+      "unit": "bilhão",
+      "fact": "Ela começou a diminuir em 2022."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da Argentina, em milhões, em 2022?",
+      "answer": 46,
+      "unit": "milhões",
+      "fact": "Cerca de um terço vive perto de Buenos Aires."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população de Portugal, em milhões, em 2021?",
+      "answer": 10.3,
+      "unit": "milhões",
+      "fact": "Mais de 5 milhões de portugueses vivem no exterior."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da Rússia, em milhões, em 2021?",
+      "answer": 144,
+      "unit": "milhões",
+      "fact": "Boa parte dela vive perto da Europa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população da Alemanha, em milhões, em 2023?",
+      "answer": 84,
+      "unit": "milhões",
+      "fact": "É o país mais populoso da União Europeia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população do Japão, em milhões, em 2023?",
+      "answer": 125,
+      "unit": "milhões",
+      "fact": "Ela diminui ano após ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a população mundial, em bilhões, em 2023?",
+      "answer": 8,
+      "unit": "bilhões",
+      "fact": "Cerca de 60% das pessoas vivem na Ásia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho do Brasil, em milhões de km²?",
+      "answer": 8.5,
+      "unit": "milhões",
+      "fact": "É o quinto maior país do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho da Rússia, em milhões de km²?",
+      "answer": 17,
+      "unit": "milhões",
+      "fact": "É o maior país do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho do Canadá, em milhões de km²?",
+      "answer": 10,
+      "unit": "milhões",
+      "fact": "É o segundo maior."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho da China, em milhões de km²?",
+      "answer": 9.6,
+      "unit": "milhões",
+      "fact": "A disputa do tamanho com os EUA é pequena."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho dos Estados Unidos, em milhões de km²?",
+      "answer": 9.8,
+      "unit": "milhões",
+      "fact": "Inclui o Alasca e o Havaí."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho da Austrália, em milhões de km²?",
+      "answer": 7.7,
+      "unit": "milhões",
+      "fact": "É o sexto maior país do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho de Portugal, em km²?",
+      "answer": 92000,
+      "unit": "km²",
+      "fact": "É um pouco maior que Santa Catarina."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho do estado de São Paulo, em km²?",
+      "answer": 248000,
+      "unit": "km²",
+      "fact": "É maior que o Reino Unido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho do estado do Amazonas, em km²?",
+      "answer": 1560000,
+      "unit": "km²",
+      "fact": "É o maior estado do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho de Sergipe, em km²?",
+      "answer": 21900,
+      "unit": "km²",
+      "fact": "É o menor estado do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o tamanho do Vaticano, em km²?",
+      "answer": 0.44,
+      "unit": "km²",
+      "fact": "É o menor país do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a União Soviética acabou?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "O fim foi formalizado em dezembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Ponte Rio-Niterói foi inaugurada?",
+      "answer": 1974,
+      "scale": 50,
+      "fact": "Foi construída durante o regime militar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurado o Canal do Panamá?",
+      "answer": 1914,
+      "scale": 50,
+      "fact": "A França falhou antes de os EUA concluírem a obra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi inaugurado o Canal de Suez?",
+      "answer": 1869,
+      "scale": 50,
+      "fact": "O engenheiro francês Ferdinand de Lesseps foi o responsável."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Tocantins virou estado?",
+      "answer": 1988,
+      "scale": 50,
+      "fact": "Foi com a nova Constituição."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Hong Kong voltou para a China?",
+      "answer": 1997,
+      "scale": 50,
+      "fact": "Foi colônia britânica por 156 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Macau voltou para a China?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "Foi a última colônia europeia na Ásia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Reino Unido saiu da União Europeia?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "A saída ficou conhecida como Brexit."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Sudão do Sul virou independente?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "É o país mais novo do mundo reconhecido pela ONU."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a Bélgica, a França e outros criaram a CEE, precursora da União Europeia?",
+      "answer": 1957,
+      "scale": 50,
+      "fact": "O Tratado de Roma foi assinado nesse ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Mercosul foi criado?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Foi criado pelo Tratado de Assunção."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano a ONU foi criada?",
+      "answer": 1945,
+      "scale": 50,
+      "fact": "A sede fica em Nova York."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi criado o IBGE?",
+      "answer": 1936,
+      "scale": 50,
+      "fact": "Ele é responsável pelos censos do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano aconteceu o primeiro censo do Brasil?",
+      "answer": 1872,
+      "scale": 50,
+      "fact": "Foi durante o Império de Dom Pedro II."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Brasil chegou a 100 milhões de habitantes?",
+      "answer": 1972,
+      "scale": 50,
+      "fact": "A música \"Pra Frente Brasil\" falava em \"90 milhões em ação\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Rio de Janeiro deixou de ser a capital do Brasil?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "Ela foi capital por quase 200 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a distância aproximada entre Rio de Janeiro e São Paulo, em km?",
+      "answer": 430,
+      "unit": "km",
+      "fact": "A Via Dutra liga as duas cidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a distância aproximada entre São Paulo e Brasília, em km?",
+      "answer": 1000,
+      "unit": "km",
+      "fact": "A viagem de avião leva menos de duas horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a distância aproximada entre São Paulo e Nova York, em km?",
+      "answer": 7700,
+      "unit": "km",
+      "fact": "O voo direto leva cerca de 10 horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a distância aproximada entre Oiapoque e Chuí, em km?",
+      "answer": 4300,
+      "unit": "km",
+      "fact": "A frase ficou famosa como sinônimo de Brasil inteiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual a temperatura média anual de Natal, em °C?",
+      "answer": 27,
+      "unit": "°C",
+      "fact": "A cidade é chamada de \"capital do sol\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura média em Ushuaia, em °C, no verão?",
+      "answer": 10,
+      "unit": "°C",
+      "fact": "Ela é a cidade mais ao sul da América do Sul com mais de 50 mil pessoas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual foi a maior temperatura oficial já registrada no mundo, em °C?",
+      "answer": 56.7,
+      "unit": "°C",
+      "fact": "Foi em 1913, no Vale da Morte, nos EUA."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual foi a menor temperatura registrada em Portugal, em °C?",
+      "answer": -16,
+      "unit": "°C",
+      "fact": "Foi em Penhas da Saúde, em 1954."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura média em Moscou no inverno, em °C?",
+      "answer": -8,
+      "unit": "°C",
+      "fact": "Os invernos rigorosos derrotaram Napoleão e Hitler."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura média em Yakutsk no inverno, em °C?",
+      "answer": -39,
+      "unit": "°C",
+      "fact": "É a cidade grande mais fria do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura média em Reykjavik no inverno, em °C?",
+      "answer": 0,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "A corrente do Golfo deixa a Islândia menos fria do que parece."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Amsterdã, em relação ao nível do mar, em metros?",
+      "answer": -2,
+      "unit": "metros",
+      "fact": "Quase um terço da Holanda fica abaixo do nível do mar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude do ponto mais baixo da Holanda, em metros?",
+      "answer": -7,
+      "unit": "metros",
+      "fact": "Fica perto de Roterdã."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Baku, a capital mais baixa do mundo, em metros?",
+      "answer": -28,
+      "unit": "metros",
+      "fact": "A cidade fica às margens do mar Cáspio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Jericó, a cidade mais baixa do mundo, em metros?",
+      "answer": -258,
+      "unit": "metros",
+      "fact": "Também é uma das mais antigas cidades conhecidas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos tem o Brasil desde o Descobrimento, contando até 2000?",
+      "answer": 500,
+      "unit": "anos",
+      "fact": "Os 500 anos foram comemorados em Porto Seguro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países têm o português como língua oficial?",
+      "answer": 9,
+      "unit": "países",
+      "fact": "Eles formam a CPLP."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países têm o espanhol como língua oficial, aproximadamente?",
+      "answer": 20,
+      "unit": "países",
+      "fact": "O México é o país com mais falantes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países existem no mundo, segundo a ONU?",
+      "answer": 193,
+      "unit": "países",
+      "fact": "Além deles, há dois observadores, Vaticano e Palestina."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas ilhas formam as Filipinas, aproximadamente?",
+      "answer": 7600,
+      "unit": "ilhas",
+      "fact": "Só cerca de 2 mil têm moradores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas ilhas tem a Grécia, aproximadamente?",
+      "answer": 6000,
+      "unit": "ilhas",
+      "fact": "Só cerca de 200 são habitadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos canais tem Veneza, aproximadamente?",
+      "answer": 150,
+      "unit": "canais",
+      "fact": "A cidade tem mais de 400 pontes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pontes tem Veneza, aproximadamente?",
+      "answer": 400,
+      "unit": "pontes",
+      "fact": "A Ponte de Rialto é a mais famosa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas ilhas tem a baía de Angra dos Reis, aproximadamente?",
+      "answer": 365,
+      "unit": "ilhas",
+      "fact": "Diz-se que há uma para cada dia do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas ilhas tem Fernando de Noronha, aproximadamente?",
+      "answer": 21,
+      "unit": "ilhas",
+      "fact": "A população vive só na maior delas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas praias tem Florianópolis, aproximadamente?",
+      "answer": 100,
+      "unit": "praias",
+      "fact": "A ilha é chamada de \"Ilha da Magia\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Campos do Jordão, em metros?",
+      "answer": 1628,
+      "unit": "metros",
+      "fact": "É a cidade mais alta do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Cusco, em metros?",
+      "answer": 3399,
+      "unit": "metros",
+      "fact": "Ela foi a capital do Império Inca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Machu Picchu, em metros?",
+      "answer": 2430,
+      "unit": "metros",
+      "fact": "Ela foi redescoberta por Hiram Bingham em 1911."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Bogotá, em metros?",
+      "answer": 2640,
+      "unit": "metros",
+      "fact": "Mesmo perto do Equador, o clima lá é frio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Quito, em metros?",
+      "answer": 2850,
+      "unit": "metros",
+      "fact": "Fica quase em cima da linha do Equador."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude da Cidade do México, em metros?",
+      "answer": 2240,
+      "unit": "metros",
+      "fact": "Os atletas sentiram isso na Olimpíada de 1968."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altitude de Lhasa, no Tibete, em metros?",
+      "answer": 3656,
+      "unit": "metros",
+      "fact": "É chamada de \"Teto do Mundo\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a região metropolitana de São Paulo, em milhões?",
+      "answer": 21,
+      "unit": "milhões",
+      "fact": "É a maior região urbana do Hemisfério Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Xangai, em milhões?",
+      "answer": 25,
+      "unit": "milhões",
+      "fact": "É a maior cidade da China."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a região metropolitana de Delhi, em milhões?",
+      "answer": 33,
+      "unit": "milhões",
+      "fact": "Deve superar Tóquio nos próximos anos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a cidade de Nova York, em milhões?",
+      "answer": 8.3,
+      "unit": "milhões",
+      "fact": "Tem cinco grandes distritos, os boroughs."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Londres, em milhões?",
+      "answer": 8.9,
+      "unit": "milhões",
+      "fact": "Fala-se mais de 300 línguas por lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Paris, sem contar a região metropolitana, em milhões?",
+      "answer": 2.1,
+      "unit": "milhões",
+      "fact": "Com a região, são mais de 12 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Roma, em milhões?",
+      "answer": 2.8,
+      "unit": "milhões",
+      "fact": "No auge da Antiguidade, tinha cerca de 1 milhão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Lisboa, em milhares?",
+      "answer": 545,
+      "unit": "mil",
+      "fact": "Com a região metropolitana, são quase 3 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Buenos Aires, sem a região metropolitana, em milhões?",
+      "answer": 3.1,
+      "unit": "milhões",
+      "fact": "A região metropolitana tem mais de 15 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Montevidéu, em milhões?",
+      "answer": 1.3,
+      "unit": "milhão",
+      "fact": "Cerca de metade da população do Uruguai vive lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Uruguai, em milhões?",
+      "answer": 3.5,
+      "unit": "milhões",
+      "fact": "Lá há mais vacas do que pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Paraguai, em milhões?",
+      "answer": 6.8,
+      "unit": "milhões",
+      "fact": "Cerca de 90% da população fala guarani."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Chile, em milhões?",
+      "answer": 19,
+      "unit": "milhões",
+      "fact": "Quase 40% vivem na região de Santiago."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Bolívia, em milhões?",
+      "answer": 12,
+      "unit": "milhões",
+      "fact": "O país tem 36 línguas indígenas oficiais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Peru, em milhões?",
+      "answer": 33,
+      "unit": "milhões",
+      "fact": "Um terço vive em Lima."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Colômbia, em milhões?",
+      "answer": 52,
+      "unit": "milhões",
+      "fact": "Depois do Brasil, é o país mais populoso da América do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Venezuela, em milhões?",
+      "answer": 28,
+      "unit": "milhões",
+      "fact": "Milhões saíram do país na última década."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o México, em milhões?",
+      "answer": 129,
+      "unit": "milhões",
+      "fact": "É o país com mais falantes de espanhol do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Canadá, em milhões?",
+      "answer": 40,
+      "unit": "milhões",
+      "fact": "Cerca de 90% vivem a menos de 160 km da fronteira com os EUA."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Austrália, em milhões?",
+      "answer": 26,
+      "unit": "milhões",
+      "fact": "A maioria mora na costa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Nova Zelândia, em milhões?",
+      "answer": 5,
+      "unit": "milhões",
+      "fact": "Há mais ovelhas que pessoas por lá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas ovelhas tem a Nova Zelândia, em milhões, aproximadamente?",
+      "answer": 26,
+      "unit": "milhões",
+      "fact": "Em 1982, chegaram a ser mais de 70 milhões."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Nigéria, em milhões?",
+      "answer": 223,
+      "unit": "milhões",
+      "fact": "É o país mais populoso da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Egito, em milhões?",
+      "answer": 110,
+      "unit": "milhões",
+      "fact": "Quase todos vivem perto do rio Nilo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a África do Sul, em milhões?",
+      "answer": 60,
+      "unit": "milhões",
+      "fact": "O país tem 12 línguas oficiais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Angola, em milhões?",
+      "answer": 36,
+      "unit": "milhões",
+      "fact": "Foi colônia de Portugal até 1975."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Indonésia, em milhões?",
+      "answer": 277,
+      "unit": "milhões",
+      "fact": "É o país de maioria muçulmana mais populoso do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Paquistão, em milhões?",
+      "answer": 240,
+      "unit": "milhões",
+      "fact": "A população cresce rapidamente."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Bangladesh, em milhões?",
+      "answer": 172,
+      "unit": "milhões",
+      "fact": "É um dos países mais densos do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Turquia, em milhões?",
+      "answer": 85,
+      "unit": "milhões",
+      "fact": "A capital é Ancara, não Istambul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Irã, em milhões?",
+      "answer": 89,
+      "unit": "milhões",
+      "fact": "Fala-se persa no país."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Reino Unido, em milhões?",
+      "answer": 68,
+      "unit": "milhões",
+      "fact": "Cerca de 84% vivem na Inglaterra."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a França, em milhões?",
+      "answer": 68,
+      "unit": "milhões",
+      "fact": "Inclui os territórios ultramarinos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Itália, em milhões?",
+      "answer": 59,
+      "unit": "milhões",
+      "fact": "A população tem uma das idades médias mais altas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Espanha, em milhões?",
+      "answer": 48,
+      "unit": "milhões",
+      "fact": "Madri é a maior cidade."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem a Coreia do Sul, em milhões?",
+      "answer": 52,
+      "unit": "milhões",
+      "fact": "Metade vive na região de Seul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Singapura, em milhões?",
+      "answer": 5.9,
+      "unit": "milhões",
+      "fact": "É um dos países mais densos do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem o Vaticano, aproximadamente?",
+      "answer": 800,
+      "unit": "pessoas",
+      "fact": "A maioria é formada por religiosos e guardas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Mônaco, em milhares?",
+      "answer": 39,
+      "unit": "mil",
+      "fact": "Quase um terço é milionário."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos habitantes tem Andorra, em milhares?",
+      "answer": 80,
+      "unit": "mil",
+      "fact": "A língua oficial é o catalão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a densidade populacional de Bangladesh, em pessoas por km²?",
+      "answer": 1300,
+      "unit": "hab/km²",
+      "fact": "É uma das maiores entre países grandes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a densidade populacional de Mônaco, em pessoas por km²?",
+      "answer": 19000,
+      "unit": "hab/km²",
+      "fact": "É o país mais denso do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a densidade populacional do Brasil, em pessoas por km²?",
+      "answer": 24,
+      "unit": "hab/km²",
+      "fact": "Grande parte da Amazônia é pouco habitada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a densidade populacional da Mongólia, em pessoas por km²?",
+      "answer": 2,
+      "unit": "hab/km²",
+      "fact": "É o país com menos pessoas por km² do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a expectativa de vida no Brasil, em anos, em 2022?",
+      "answer": 75.5,
+      "unit": "anos",
+      "fact": "Ela caiu durante a pandemia e voltou a crescer."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a expectativa de vida no Japão, em anos?",
+      "answer": 84,
+      "unit": "anos",
+      "fact": "É uma das mais altas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a expectativa de vida em Mônaco, em anos, aproximadamente?",
+      "answer": 87,
+      "unit": "anos",
+      "fact": "É uma das mais altas do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a taxa de urbanização do Brasil, em %?",
+      "answer": 87,
+      "unit": "%",
+      "fact": "Em 1950, ela era de apenas 36%."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a porcentagem de católicos no Brasil no Censo de 2022, em %?",
+      "answer": 56.7,
+      "unit": "%",
+      "fact": "O número vem caindo a cada censo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a porcentagem de evangélicos no Brasil no Censo de 2022, em %?",
+      "answer": 26.9,
+      "unit": "%",
+      "fact": "O crescimento é constante desde os anos 1980."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Índia, em milhões de km²?",
+      "answer": 3.3,
+      "unit": "milhões",
+      "fact": "É o sétimo maior país do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Argentina, em milhões de km²?",
+      "answer": 2.8,
+      "unit": "milhões",
+      "fact": "É o oitavo maior país do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Argélia, em milhões de km²?",
+      "answer": 2.4,
+      "unit": "milhões",
+      "fact": "É o maior país da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da França metropolitana, em km²?",
+      "answer": 550000,
+      "unit": "km²",
+      "fact": "É o maior país da União Europeia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Alemanha, em km²?",
+      "answer": 358000,
+      "unit": "km²",
+      "fact": "É um pouco maior que o estado de Goiás."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Japão, em km²?",
+      "answer": 378000,
+      "unit": "km²",
+      "fact": "A maior parte é montanhosa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Reino Unido, em km²?",
+      "answer": 243000,
+      "unit": "km²",
+      "fact": "É um pouco menor que o estado de São Paulo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Uruguai, em km²?",
+      "answer": 176000,
+      "unit": "km²",
+      "fact": "É um pouco menor que o Paraná."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho de Israel, em km²?",
+      "answer": 22000,
+      "unit": "km²",
+      "fact": "É do tamanho aproximado de Sergipe."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Suíça, em km²?",
+      "answer": 41000,
+      "unit": "km²",
+      "fact": "Quase 60% do país fica nos Alpes."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho de Mônaco, em km²?",
+      "answer": 2.02,
+      "unit": "km²",
+      "fact": "É o segundo menor país do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho de Malta, em km²?",
+      "answer": 316,
+      "unit": "km²",
+      "fact": "É o menor país da União Europeia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Ilha de Marajó, em km²?",
+      "answer": 40000,
+      "unit": "km²",
+      "fact": "É maior que a Bélgica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho de Fernando de Noronha, em km²?",
+      "answer": 26,
+      "unit": "km²",
+      "fact": "Boa parte é parque nacional."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Ilha de Páscoa, em km²?",
+      "answer": 163,
+      "unit": "km²",
+      "fact": "Ela fica a 3.700 km do Chile."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do município de Altamira, em km²?",
+      "answer": 159000,
+      "unit": "km²",
+      "fact": "É o maior município do Brasil em área."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Distrito Federal, em km²?",
+      "answer": 5760,
+      "unit": "km²",
+      "fact": "Ele é menor que muitas cidades da Amazônia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho de Minas Gerais, em km²?",
+      "answer": 586000,
+      "unit": "km²",
+      "fact": "É maior que a França metropolitana."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Rio de Janeiro, o estado, em km²?",
+      "answer": 43700,
+      "unit": "km²",
+      "fact": "É um dos menores do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do lago Vitória, em km²?",
+      "answer": 68800,
+      "unit": "km²",
+      "fact": "É o maior lago da África."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do lago Superior, em km²?",
+      "answer": 82100,
+      "unit": "km²",
+      "fact": "É o maior lago de água doce em área."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do mar Cáspio, em km²?",
+      "answer": 371000,
+      "unit": "km²",
+      "fact": "É maior que a Alemanha."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Oceano Pacífico, em milhões de km²?",
+      "answer": 165,
+      "unit": "milhões",
+      "fact": "É maior que todos os continentes juntos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Oceano Atlântico, em milhões de km²?",
+      "answer": 106,
+      "unit": "milhões",
+      "fact": "Ele cresce alguns centímetros por ano."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Oceano Índico, em milhões de km²?",
+      "answer": 70,
+      "unit": "milhões",
+      "fact": "É o oceano mais quente do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho do Oceano Ártico, em milhões de km²?",
+      "answer": 14,
+      "unit": "milhões",
+      "fact": "É o menor oceano do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a profundidade do Oceano Atlântico no ponto mais fundo, em metros?",
+      "answer": 8376,
+      "unit": "metros",
+      "fact": "É a Fossa de Porto Rico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da fronteira entre EUA e Canadá, em km?",
+      "answer": 8891,
+      "unit": "km",
+      "fact": "É a mais longa do mundo entre dois países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da fronteira entre EUA e México, em km?",
+      "answer": 3145,
+      "unit": "km",
+      "fact": "Grande parte tem cercas e muros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Transiberiano, entre Moscou e Vladivostok, em km?",
+      "answer": 9289,
+      "unit": "km",
+      "fact": "A viagem leva cerca de sete dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da Estrada Pan-Americana, em km, aproximadamente?",
+      "answer": 30000,
+      "unit": "km",
+      "fact": "Liga o Alasca à Argentina, com uma interrupção no Panamá."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da Rota 66, nos EUA, em km?",
+      "answer": 3940,
+      "unit": "km",
+      "fact": "Ela ligava Chicago a Santa Mônica."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da Rodovia Transamazônica, em km?",
+      "answer": 4260,
+      "unit": "km",
+      "fact": "Boa parte dela nunca foi asfaltada."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da BR-116, a maior rodovia do Brasil, em km?",
+      "answer": 4385,
+      "unit": "km",
+      "fact": "Ela vai do Ceará ao Rio Grande do Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Túnel de São Gotardo, em km?",
+      "answer": 57,
+      "unit": "km",
+      "fact": "É o túnel ferroviário mais longo do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento da ponte Hong Kong-Zhuhai-Macau, em km?",
+      "answer": 55,
+      "unit": "km",
+      "fact": "É a maior ponte marítima do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Mississippi, em km?",
+      "answer": 3730,
+      "unit": "km",
+      "fact": "Ele corta os EUA de norte a sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Danúbio, em km?",
+      "answer": 2850,
+      "unit": "km",
+      "fact": "Ele passa por mais países do que qualquer outro rio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Volga, em km?",
+      "answer": 3530,
+      "unit": "km",
+      "fact": "Ele é o rio mais longo da Europa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Sena, em km?",
+      "answer": 777,
+      "unit": "km",
+      "fact": "Ele atravessa Paris."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Tâmisa, em km?",
+      "answer": 346,
+      "unit": "km",
+      "fact": "Ele atravessa Londres."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Tejo, em km?",
+      "answer": 1007,
+      "unit": "km",
+      "fact": "Ele nasce na Espanha e deságua em Lisboa."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Ganges, em km?",
+      "answer": 2525,
+      "unit": "km",
+      "fact": "Cerca de 500 milhões de pessoas vivem em sua bacia."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Congo, em km?",
+      "answer": 4700,
+      "unit": "km",
+      "fact": "É o rio mais profundo do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a profundidade do Rio Congo, em metros, no ponto mais fundo?",
+      "answer": 220,
+      "unit": "metros",
+      "fact": "É a maior profundidade conhecida em um rio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a largura do rio Amazonas na foz, em km?",
+      "answer": 300,
+      "unit": "km",
+      "fact": "Nas cheias, a largura aumenta ainda mais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do K2, em metros?",
+      "answer": 8611,
+      "unit": "metros",
+      "fact": "É considerado mais perigoso que o Everest."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do Mauna Kea acima do mar, em metros?",
+      "answer": 4207,
+      "unit": "metros",
+      "fact": "Da base no mar, ele tem mais de 10 mil metros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do Monte Elbrus, em metros?",
+      "answer": 5642,
+      "unit": "metros",
+      "fact": "É considerado o mais alto da Europa por muitos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do Denali, em metros?",
+      "answer": 6190,
+      "unit": "metros",
+      "fact": "É o ponto mais alto da América do Norte."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do Pico Duarte, o mais alto do Caribe, em metros?",
+      "answer": 3101,
+      "unit": "metros",
+      "fact": "Fica na República Dominicana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formam a União Europeia em 2024?",
+      "answer": 27,
+      "unit": "países",
+      "fact": "A Croácia foi o último a entrar, em 2013."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas línguas oficiais tem a Bolívia, contando as indígenas?",
+      "answer": 37,
+      "unit": "línguas",
+      "fact": "A Constituição de 2009 reconhece todas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países tem a América Central?",
+      "answer": 7,
+      "unit": "países",
+      "fact": "Belize é o único de língua inglesa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países tem o Oriente Médio, em uma das listas mais usadas?",
+      "answer": 17,
+      "unit": "países",
+      "fact": "A definição varia bastante."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas capitais a África do Sul tem?",
+      "answer": 3,
+      "unit": "capitais",
+      "fact": "Pretória, Cidade do Cabo e Bloemfontein."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que latitude fica a linha do Trópico de Capricórnio, aproximadamente?",
+      "answer": -23.4,
+      "unit": "graus",
+      "fact": "Ela passa pelo estado de São Paulo e é a linha do solstício de verão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que latitude fica Porto Alegre, aproximadamente, em graus?",
+      "answer": -30,
+      "unit": "graus",
+      "fact": "A latitude negativa indica o Hemisfério Sul."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que latitude fica Ushuaia, aproximadamente, em graus?",
+      "answer": -54.8,
+      "unit": "graus",
+      "fact": "Ela fica perto do fim do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que latitude fica Macapá, aproximadamente, em graus?",
+      "answer": 0,
+      "unit": "graus",
+      "scale": 5,
+      "fact": "A cidade é cortada pela linha do Equador."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que longitude fica o ponto mais a oeste do Brasil, em graus?",
+      "answer": -73.9,
+      "unit": "graus",
+      "fact": "Fica na Serra do Divisor, no Acre."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em que longitude fica a cidade de Greenwich, em graus?",
+      "answer": 0,
+      "unit": "graus",
+      "scale": 30,
+      "fact": "Foi definida como referência em 1884."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude da cidade de Nova Orleans, em média, em metros?",
+      "answer": -0.5,
+      "unit": "metros",
+      "fact": "Boa parte da cidade fica abaixo do nível do mar."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude da região de Turpan, na China, no ponto mais baixo, em metros?",
+      "answer": -154,
+      "unit": "metros",
+      "fact": "É o segundo ponto mais baixo em terra firme."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do Lago Eyre, o ponto mais baixo da Austrália, em metros?",
+      "answer": -15,
+      "unit": "metros",
+      "fact": "Ele fica cheio poucas vezes em um século."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude do ponto mais baixo da América do Sul, Laguna del Carbón, em metros?",
+      "answer": -105,
+      "unit": "metros",
+      "fact": "Fica na Patagônia argentina."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a altitude da região da Depressão de Qattara, no Egito, em metros?",
+      "answer": -133,
+      "unit": "metros",
+      "fact": "Foi um grande obstáculo na Segunda Guerra Mundial."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual a temperatura média em Oymyakon em janeiro, em °C?",
+      "answer": -50,
+      "unit": "°C",
+      "fact": "O lugar é conhecido como o \"Polo do Frio\"."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura máxima já registrada em Portugal, em °C?",
+      "answer": 47.4,
+      "unit": "°C",
+      "fact": "Foi em 2003, em Amareleja."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a temperatura máxima já registrada na Europa, em °C?",
+      "answer": 48.8,
+      "unit": "°C",
+      "fact": "Foi em 2021, na Sicília."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a temperatura mínima já registrada na Sibéria, em Verkhoyansk, em °C?",
+      "answer": -67.8,
+      "unit": "°C",
+      "fact": "A cidade também é muito quente no verão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a maior amplitude térmica de Verkhoyansk em um ano, em °C?",
+      "answer": 105,
+      "unit": "°C",
+      "fact": "A temperatura vai de quase -68 °C a mais de 37 °C."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Usando negativo para a.C., em que ano Roma foi fundada, segundo a tradição?",
+      "answer": -753,
+      "scale": 200,
+      "fact": "A lenda cita Rômulo e Remo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Usando negativo para a.C., em que ano Cartago foi fundada, segundo a tradição?",
+      "answer": -814,
+      "scale": 200,
+      "fact": "Foi rival de Roma nas Guerras Púnicas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Usando negativo para a.C., em que ano Bizâncio foi fundada, segundo a tradição?",
+      "answer": -667,
+      "scale": 200,
+      "fact": "A cidade hoje se chama Istambul."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Rio de Janeiro?",
+      "answer": 1565,
+      "scale": 50,
+      "fact": "Estácio de Sá fundou a cidade entre o Pão de Açúcar e o Cara de Cão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Salvador?",
+      "answer": 1549,
+      "scale": 50,
+      "fact": "Foi a primeira capital do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundado o Recife?",
+      "answer": 1537,
+      "scale": 50,
+      "fact": "Os holandeses transformaram a cidade no século XVII."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Belém?",
+      "answer": 1616,
+      "scale": 50,
+      "fact": "Era um forte para defender a foz do Amazonas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada São Luís?",
+      "answer": 1612,
+      "scale": 50,
+      "fact": "Os franceses a fundaram e deram o nome de um rei."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Fortaleza?",
+      "answer": 1726,
+      "scale": 50,
+      "fact": "A vila surgiu ao redor de um forte holandês."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Manaus?",
+      "answer": 1669,
+      "scale": 50,
+      "fact": "Era um forte português à beira do Rio Negro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Curitiba?",
+      "answer": 1693,
+      "scale": 50,
+      "fact": "O nome vem do tupi e significa \"muito pinhão\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Porto Alegre?",
+      "answer": 1772,
+      "scale": 50,
+      "fact": "Casais açorianos deram início à cidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Belo Horizonte?",
+      "answer": 1897,
+      "scale": 50,
+      "fact": "Foi a primeira capital planejada do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Goiânia?",
+      "answer": 1933,
+      "scale": 50,
+      "fact": "A capital foi transferida da Cidade de Goiás."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Palmas?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "É a capital mais jovem do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Buenos Aires pela segunda vez?",
+      "answer": 1580,
+      "scale": 50,
+      "fact": "A primeira fundação, de 1536, fracassou."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Lima?",
+      "answer": 1535,
+      "scale": 50,
+      "fact": "Foi fundada por Francisco Pizarro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Santiago do Chile?",
+      "answer": 1541,
+      "scale": 50,
+      "fact": "Foi fundada por Pedro de Valdivia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Nova York, como Nova Amsterdã?",
+      "answer": 1625,
+      "scale": 50,
+      "fact": "Os holandeses compraram Manhattan pouco depois."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada a cidade de Quebec?",
+      "answer": 1608,
+      "scale": 50,
+      "fact": "Foi fundada por Samuel de Champlain."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Sydney?",
+      "answer": 1788,
+      "scale": 50,
+      "fact": "A cidade começou como uma colônia penal britânica."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada São Petersburgo?",
+      "answer": 1703,
+      "scale": 50,
+      "fact": "Foi criada por Pedro, o Grande."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Moscou, segundo a primeira menção?",
+      "answer": 1147,
+      "scale": 50,
+      "fact": "Ela aparece em um registro de um príncipe."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi fundada Berlim, segundo os primeiros registros?",
+      "answer": 1237,
+      "scale": 50,
+      "fact": "A cidade cresceu rápido no século XIX."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi construída a Torre Eiffel?",
+      "answer": 1889,
+      "scale": 50,
+      "fact": "A estrutura seria desmontada depois de 20 anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi concluído o Empire State Building?",
+      "answer": 1931,
+      "scale": 50,
+      "fact": "A obra levou só 13 meses."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Burj Khalifa?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "Tem mais de 800 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Golden Gate?",
+      "answer": 1937,
+      "scale": 50,
+      "fact": "Ela ligou San Francisco ao condado de Marin."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Ponte do Brooklyn?",
+      "answer": 1883,
+      "scale": 50,
+      "fact": "Foi a primeira grande ponte suspensa de aço."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurado o Eurotúnel?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "Ele liga o Reino Unido à França."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a usina de Itaipu?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "A construção usou concreto para 210 estádios como o Maracanã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi inaugurada a Estrada de Ferro Madeira-Mamoré?",
+      "answer": 1912,
+      "scale": 50,
+      "fact": "Foi chamada de \"Ferrovia do Diabo\", pelas muitas mortes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi assinado o Tratado de Tordesilhas?",
+      "answer": 1494,
+      "scale": 50,
+      "fact": "Ele dividiu o Novo Mundo entre Portugal e Espanha."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi assinado o Tratado de Madri?",
+      "answer": 1750,
+      "scale": 50,
+      "fact": "Ele definiu boa parte das fronteiras do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Acre foi incorporado ao Brasil?",
+      "answer": 1903,
+      "scale": 50,
+      "fact": "O Tratado de Petrópolis comprou o território da Bolívia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Paraná, separado de São Paulo?",
+      "answer": 1853,
+      "scale": 50,
+      "fact": "Curitiba foi escolhida como capital da província."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado Mato Grosso do Sul?",
+      "answer": 1977,
+      "scale": 50,
+      "fact": "A divisão começou a valer em 1979."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Rio de Janeiro e a Guanabara se fundiram?",
+      "answer": 1975,
+      "scale": 50,
+      "fact": "A cidade do Rio virou capital do estado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Índia independente?",
+      "answer": 1947,
+      "scale": 50,
+      "fact": "A partição criou também o Paquistão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criado o Estado de Israel?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "David Ben-Gurion fez a proclamação."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi reunificado o Vietnã?",
+      "answer": 1976,
+      "scale": 50,
+      "fact": "Foi depois do fim da Guerra do Vietnã."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi reunificada a Alemanha?",
+      "answer": 1990,
+      "scale": 50,
+      "fact": "Isso aconteceu menos de um ano depois da queda do muro."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano foi criada a Coreia do Sul como Estado?",
+      "answer": 1948,
+      "scale": 50,
+      "fact": "A divisão seguiu o paralelo 38."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Angola ficou independente de Portugal?",
+      "answer": 1975,
+      "scale": 50,
+      "fact": "O país enfrentou uma longa guerra civil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano Moçambique ficou independente de Portugal?",
+      "answer": 1975,
+      "scale": 50,
+      "fact": "A Frelimo liderou a luta pela independência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano a Suíça entrou na ONU?",
+      "answer": 2002,
+      "scale": 50,
+      "fact": "Ela sempre defendeu a própria neutralidade."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Reino Unido entrou na CEE?",
+      "answer": 1973,
+      "scale": 50,
+      "fact": "Em 2016, o país decidiu sair da União Europeia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano o Brasil foi descoberto pelos portugueses?",
+      "answer": 1500,
+      "scale": 50,
+      "fact": "Pedro Álvares Cabral chegou em abril."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vivem na Antártida no verão, aproximadamente?",
+      "answer": 5000,
+      "unit": "pessoas",
+      "fact": "No inverno, o número cai para cerca de mil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vivem na Ilha de Tristão da Cunha, a mais isolada do mundo, aproximadamente?",
+      "answer": 250,
+      "unit": "pessoas",
+      "fact": "Ela fica a 2.400 km de Santa Helena."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vivem em Longyearbyen, em Svalbard, aproximadamente?",
+      "answer": 2500,
+      "unit": "pessoas",
+      "fact": "Por lei, morrer não é recomendado lá, porque o solo congelado conserva os corpos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vivem nas Ilhas Pitcairn, aproximadamente?",
+      "answer": 50,
+      "unit": "pessoas",
+      "fact": "Muitos descendem dos amotinados do navio Bounty."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vivem na Groenlândia, aproximadamente?",
+      "answer": 56000,
+      "unit": "pessoas",
+      "fact": "Ela pertence ao Reino da Dinamarca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas vivem na Ilha de Páscoa, aproximadamente?",
+      "answer": 7700,
+      "unit": "pessoas",
+      "fact": "Os moais foram talhados pelos antigos rapanuis."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos moais existem na Ilha de Páscoa, aproximadamente?",
+      "answer": 900,
+      "unit": "moais",
+      "fact": "A maioria foi feita de uma só pedreira."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pirâmides há em todo o Sudão, aproximadamente?",
+      "answer": 255,
+      "unit": "pirâmides",
+      "fact": "Há mais pirâmides no Sudão do que no Egito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pirâmides há no Egito, aproximadamente?",
+      "answer": 118,
+      "unit": "pirâmides",
+      "fact": "As mais famosas estão em Gizé."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos blocos de pedra tem a Grande Pirâmide, aproximadamente?",
+      "answer": 2300000,
+      "unit": "blocos",
+      "fact": "Cada um pesa, em média, 2,5 toneladas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas turbinas tem a usina de Itaipu?",
+      "answer": 20,
+      "unit": "turbinas",
+      "fact": "É uma das maiores geradoras do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas turbinas tem a usina de Três Gargantas, na China?",
+      "answer": 32,
+      "unit": "turbinas",
+      "fact": "É a maior hidrelétrica do mundo em potência."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da barragem de Três Gargantas, em metros?",
+      "answer": 181,
+      "unit": "metros",
+      "fact": "O peso de sua água alterou até a rotação da Terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o comprimento da barragem de Itaipu, em km?",
+      "answer": 7.9,
+      "unit": "km",
+      "fact": "A obra deslocou mais de 40 mil famílias."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos estados brasileiros têm litoral?",
+      "answer": 17,
+      "unit": "estados",
+      "fact": "O Piauí tem o menor deles."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a extensão do litoral do Piauí, em km?",
+      "answer": 66,
+      "unit": "km",
+      "fact": "É o menor litoral do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a extensão do litoral da Bahia, em km?",
+      "answer": 1103,
+      "unit": "km",
+      "fact": "É o maior litoral estadual do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países atravessa o Rio Amazonas, em seu curso?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "São Peru, Colômbia e Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países atravessa o Nilo, contando afluentes?",
+      "answer": 11,
+      "unit": "países",
+      "fact": "Ele é vital para o Egito."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países tem em sua fronteira a China?",
+      "answer": 14,
+      "unit": "países",
+      "fact": "Empata com a Rússia em número de vizinhos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países tem em sua fronteira a Alemanha?",
+      "answer": 9,
+      "unit": "países",
+      "fact": "É o país da Europa com mais vizinhos, excluindo a Rússia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos países tem em sua fronteira a Argentina?",
+      "answer": 5,
+      "unit": "países",
+      "fact": "A fronteira com o Chile é a terceira maior do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a fronteira entre Argentina e Chile?",
+      "answer": 5308,
+      "unit": "km",
+      "fact": "Ela segue principalmente a Cordilheira dos Andes."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a fronteira entre Brasil e Bolívia?",
+      "answer": 3423,
+      "unit": "km",
+      "fact": "É a maior fronteira do Brasil."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a fronteira entre Brasil e Paraguai?",
+      "answer": 1365,
+      "unit": "km",
+      "fact": "A Ponte da Amizade fica nela."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a fronteira mais curta do mundo, entre Espanha e Marrocos, em Peñón de Vélez?",
+      "answer": 0.085,
+      "unit": "km",
+      "fact": "Ela tem só 85 metros."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a rua mais curta do mundo, Ebenezer Place, na Escócia?",
+      "answer": 2,
+      "unit": "metros",
+      "fact": "Ela está no Guinness."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a rua mais íngreme do mundo, em Harlech, em inclinação, em %?",
+      "answer": 37,
+      "unit": "%",
+      "fact": "Ela fica no País de Gales."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da cachoeira Salto Angel, em metros?",
+      "answer": 979,
+      "unit": "metros",
+      "fact": "Em certos dias, a água vira névoa antes de chegar ao chão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a largura máxima das Cataratas Vitória, em metros?",
+      "answer": 1708,
+      "unit": "metros",
+      "fact": "O nome local é \"fumaça que troveja\"."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura das Cataratas Vitória, em metros?",
+      "answer": 108,
+      "unit": "metros",
+      "fact": "É a maior cortina de água do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a idade do rio Finke, um dos mais antigos do mundo, em milhões de anos?",
+      "answer": 350,
+      "unit": "milhões",
+      "fact": "Fica na Austrália."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altura da onda mais alta surfada, em Nazaré, em metros?",
+      "answer": 26.2,
+      "unit": "metros",
+      "fact": "Foi surfada por Sebastian Steudtner, em 2020."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o tamanho da Groenlândia coberta de gelo, em %?",
+      "answer": 80,
+      "unit": "%",
+      "fact": "O gelo tem até 3 km de espessura."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a menor distância entre a África e a Europa, em km?",
+      "answer": 14,
+      "unit": "km",
+      "fact": "É a largura do Estreito de Gibraltar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a largura do Estreito de Bering, em km?",
+      "answer": 82,
+      "unit": "km",
+      "fact": "Em dias claros, dá para ver a Rússia do Alasca."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a distância entre as ilhas Diomedes, de Rússia e EUA, em km?",
+      "answer": 3.8,
+      "unit": "km",
+      "fact": "Elas têm 21 horas de diferença de fuso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a largura do Canal da Mancha no ponto mais estreito, em km?",
+      "answer": 33,
+      "unit": "km",
+      "fact": "O nadador Matthew Webb o atravessou em 1875."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km separam Natal, no Brasil, de Dakar, no Senegal?",
+      "answer": 3000,
+      "unit": "km",
+      "fact": "É a menor distância entre a América e a África."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km separam Lisboa de Fernando de Noronha, aproximadamente?",
+      "answer": 5000,
+      "unit": "km",
+      "fact": "Gago Coutinho e Sacadura Cabral pararam na região em 1922."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km a Ilha Bouvet, a mais isolada do mundo, fica da terra mais próxima?",
+      "answer": 1700,
+      "unit": "km",
+      "fact": "Ela pertence à Noruega e quase não tem vida."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km a Ilha de Páscoa fica do Chile?",
+      "answer": 3700,
+      "unit": "km",
+      "fact": "Ela é um dos lugares habitados mais isolados do planeta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km Fernando de Noronha fica de Natal?",
+      "answer": 360,
+      "unit": "km",
+      "fact": "Ela foi uma base usada na Segunda Guerra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km o Havaí fica da Califórnia?",
+      "answer": 3900,
+      "unit": "km",
+      "fact": "É o grupo de ilhas mais isolado do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o ponto mais distante do mar no mundo, em km?",
+      "answer": 2500,
+      "unit": "km",
+      "fact": "Fica na China, perto de Urumqi."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o ponto mais distante da terra no mar, o Ponto Nemo, em km?",
+      "answer": 2688,
+      "unit": "km",
+      "fact": "Em muitos momentos, os astronautas estão mais próximos que qualquer pessoa em terra."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram no Terremoto da Grande Kanto, em 1923, aproximadamente?",
+      "answer": 140000,
+      "unit": "pessoas",
+      "fact": "Tóquio e Yokohama foram devastadas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram no terremoto de Shaanxi, em 1556, aproximadamente?",
+      "answer": 830000,
+      "unit": "pessoas",
+      "fact": "É considerado o mais mortal da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram na erupção de Tambora, em 1815, aproximadamente?",
+      "answer": 71000,
+      "unit": "pessoas",
+      "fact": "No ano seguinte, a Europa ficou sem verão."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas morreram no ciclone de Bhola, em 1970, aproximadamente?",
+      "answer": 500000,
+      "unit": "pessoas",
+      "fact": "Foi o ciclone mais mortal já registrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas pessoas foram removidas para a construção da represa de Três Gargantas, em milhões?",
+      "answer": 1.3,
+      "unit": "milhão",
+      "fact": "Cidades inteiras ficaram debaixo d'água."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem a Grande Muralha construída pela dinastia Ming?",
+      "answer": 8850,
+      "unit": "km",
+      "fact": "A soma de todos os trechos passa de 21 mil km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos degraus tem o caminho da subida do Monte Tai, na China?",
+      "answer": 7200,
+      "unit": "degraus",
+      "fact": "É um dos montes sagrados do país."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos degraus tem a Escadaria Selarón, no Rio?",
+      "answer": 215,
+      "unit": "degraus",
+      "fact": "O artista chileno cobriu tudo de azulejos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos degraus tem a subida da Torre Eiffel até o topo?",
+      "answer": 1665,
+      "unit": "degraus",
+      "fact": "Os visitantes só podem subir a pé até o segundo andar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos degraus tem a Basílica de São Pedro até a cúpula?",
+      "answer": 551,
+      "unit": "degraus",
+      "fact": "Michelangelo projetou a cúpula."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos anos tem a cidade mais antiga de Damasco, aproximadamente?",
+      "answer": 11000,
+      "unit": "anos",
+      "fact": "É uma das cidades habitadas mais antigas do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos templos tem a cidade de Bagan, em Mianmar, aproximadamente?",
+      "answer": 2200,
+      "unit": "templos",
+      "fact": "Havia mais de 10 mil em seu auge."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos templos tem o complexo de Angkor, aproximadamente?",
+      "answer": 1000,
+      "unit": "templos",
+      "fact": "Angkor Wat é o maior monumento religioso do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a Estátua da Unidade, na Índia?",
+      "answer": 182,
+      "unit": "metros",
+      "fact": "É a estátua mais alta do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem o Buda do Templo da Primavera, na China?",
+      "answer": 128,
+      "unit": "metros",
+      "fact": "Foi a estátua mais alta do mundo até 2018."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem o Cristo Protetor, em Encantado, no Rio Grande do Sul?",
+      "answer": 43.5,
+      "unit": "metros",
+      "fact": "É mais alto que o Cristo Redentor."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos metros tem a montanha de Thor, a maior parede vertical do mundo?",
+      "answer": 1250,
+      "unit": "metros",
+      "fact": "Ela fica na ilha de Baffin, no Canadá."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o comprimento do Fiorde Scoresby, o mais longo do mundo, em km?",
+      "answer": 350,
+      "unit": "km",
+      "fact": "Fica na Groenlândia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o comprimento do Fiorde de Sognefjord, na Noruega, em km?",
+      "answer": 205,
+      "unit": "km",
+      "fact": "É o fiorde mais longo da Noruega."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos km tem o litoral da Noruega, com todos os fiordes?",
+      "answer": 100000,
+      "unit": "km",
+      "fact": "Sem as reentrâncias, ele teria cerca de 2.500 km."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos vulcões tem a Islândia, aproximadamente?",
+      "answer": 130,
+      "unit": "vulcões",
+      "fact": "Eles ficam na fronteira entre duas placas tectônicas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ilhas tem a Suécia, aproximadamente?",
+      "answer": 267000,
+      "unit": "ilhas",
+      "fact": "É o país com mais ilhas no mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ilhas tem a Noruega, aproximadamente?",
+      "answer": 239000,
+      "unit": "ilhas",
+      "fact": "Isso vem principalmente do litoral recortado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos continentes existem, segundo a lista mais usada no Brasil?",
+      "answer": 6,
+      "unit": "continentes",
+      "fact": "Em alguns países, a lista tem sete."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos oceanos existem, na lista atual?",
+      "answer": 5,
+      "unit": "oceanos",
+      "fact": "O Oceano Antártico foi aceito por boa parte dos geógrafos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados tem os Estados Unidos, com o Havaí?",
+      "answer": 50,
+      "unit": "estados",
+      "fact": "O Alasca entrou no mesmo ano, em 1959."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas províncias e territórios tem o Canadá?",
+      "answer": 13,
+      "unit": "divisões",
+      "fact": "São 10 províncias e 3 territórios."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formam o Reino Unido?",
+      "answer": 4,
+      "unit": "países",
+      "fact": "São Inglaterra, Escócia, País de Gales e Irlanda do Norte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas ilhas principais tem o Japão?",
+      "answer": 4,
+      "unit": "ilhas",
+      "fact": "Honshu é a maior delas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos países formam a União Europeia, depois do Brexit?",
+      "answer": 27,
+      "unit": "países",
+      "fact": "O Reino Unido saiu em 2020."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem a bandeira da França?",
+      "answer": 3,
+      "unit": "cores",
+      "fact": "São azul, branco e vermelho."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Aconcágua, em metros, aproximadamente?",
+      "answer": 6961,
+      "unit": "metros",
+      "fact": "É a montanha mais alta das Américas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Mar da Galileia, em metros, aproximadamente?",
+      "answer": -210,
+      "unit": "metros",
+      "scale": 30,
+      "fact": "Ele é um dos lagos mais baixos do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude da Depressão de Danakil, na Etiópia, em metros, aproximadamente?",
+      "answer": -125,
+      "unit": "metros",
+      "scale": 30,
+      "fact": "É uma das regiões mais quentes do planeta."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude de um trecho de Baku, no Azerbaijão, em metros?",
+      "answer": -28,
+      "unit": "metros",
+      "scale": 10,
+      "fact": "É a capital mais baixa do mundo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o comprimento do Rio Nilo, em km, aproximadamente?",
+      "answer": 6650,
+      "unit": "km",
+      "fact": "Ele corre para o norte, até o Mediterrâneo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a área da Rússia, em milhões de km², aproximadamente?",
+      "answer": 17,
+      "unit": "milhões",
+      "fact": "Ela é quase o dobro do Brasil."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a área do Saara, em milhões de km², aproximadamente?",
+      "answer": 9.2,
+      "unit": "milhões",
+      "fact": "Ele se espalha por 11 países."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a população da China, em bilhões, aproximadamente?",
+      "answer": 1.41,
+      "unit": "bilhão",
+      "fact": "A Índia a superou em 2023."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a população da Índia, em bilhões, aproximadamente?",
+      "answer": 1.44,
+      "unit": "bilhão",
+      "fact": "Ela é o país mais populoso do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a população do Vaticano, aproximadamente?",
+      "answer": 800,
+      "unit": "pessoas",
+      "fact": "Ele é o menor país do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a área do Vaticano, em km²?",
+      "answer": 0.44,
+      "unit": "km²",
+      "scale": 1,
+      "fact": "Cabem nele poucos campos de futebol."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a área de Mônaco, em km²?",
+      "answer": 2.1,
+      "unit": "km²",
+      "fact": "Ele é o segundo menor país do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude do ponto mais baixo do Lago Baikal, em metros, aproximadamente?",
+      "answer": -1186,
+      "unit": "metros",
+      "scale": 200,
+      "fact": "Ele é o lago mais profundo do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude do fundo do Lago Tanganica, em metros, aproximadamente?",
+      "answer": -697,
+      "unit": "metros",
+      "scale": 300,
+      "fact": "É o segundo lago mais profundo do mundo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a menor temperatura da Sibéria em Oymyakon, em °C, oficialmente?",
+      "answer": -67.7,
+      "unit": "°C",
+      "scale": 15,
+      "fact": "O recorde é de 1933."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a altitude de La Rinconada, cidade mais alta do mundo, em metros?",
+      "answer": 5100,
+      "unit": "metros",
+      "fact": "Ela fica no Peru."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ilhas tem a Indonésia, aproximadamente?",
+      "answer": 17000,
+      "unit": "ilhas",
+      "fact": "Só parte delas é habitada."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas ilhas tem a Finlândia, aproximadamente?",
+      "answer": 178000,
+      "unit": "ilhas",
+      "fact": "A vizinha Suécia tem ainda mais ilhas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos lagos tem o Canadá, aproximadamente?",
+      "answer": 2000000,
+      "unit": "lagos",
+      "fact": "Ele tem mais lagos que todos os outros países juntos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas listras tem a bandeira da Alemanha?",
+      "answer": 3,
+      "unit": "listras",
+      "fact": "São preto, vermelho e dourado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos círculos polares há na Terra?",
+      "answer": 2,
+      "unit": "círculos",
+      "fact": "São o Ártico e o Antártico."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é a altitude do Lago Titicaca, em metros, aproximadamente?",
+      "answer": 3812,
+      "unit": "metros",
+      "fact": "Ele é o lago navegável mais alto do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos milímetros de chuva por ano recebe um deserto, em média, no máximo?",
+      "answer": 250,
+      "unit": "mm",
+      "fact": "O Atacama fica bem abaixo desse número."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos países atravessa o Rio Nilo, contando sua bacia, aproximadamente?",
+      "answer": 11,
+      "unit": "países",
+      "fact": "O Egito depende muito das águas dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos quilômetros tem o Canal de Suez, aproximadamente?",
+      "answer": 193,
+      "unit": "km",
+      "fact": "Ele liga o Mediterrâneo ao Mar Vermelho."
     }
   ]
 }
