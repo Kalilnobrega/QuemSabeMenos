@@ -526,9 +526,9 @@ function TeamRound({
 
       {revealed && (
         <>
+          {match.fact && <FactCard fact={match.fact} />}
           {match.powers && <TeamPowerBar match={match} players={room.players} playerId={playerId} onArm={onArm} />}
           <TeamResults match={match} players={room.players} playerId={playerId} />
-          {match.fact && <FactCard fact={match.fact} />}
           <TeamBoard match={match} players={room.players} />
           <SkipButton
             ready={match.ready}

@@ -45,13 +45,40 @@ function BulbIcon({ className }: { className?: string }) {
 
 /** A curiosidade da revelação: "Você sabia?" com a lâmpada (também no Chutômetro). */
 export function FactCard({ fact }: { fact: string }) {
+  const text = useRef<HTMLParagraphElement>(null)
+  const [expanded, setExpanded] = useState(false)
+  const [overflows, setOverflows] = useState(false)
+
+  // Mede de novo se a largura mudar (girar o celular); aberto não tem corte para medir.
+  useLayoutEffect(() => {
+    const el = text.current
+    if (!el || expanded) return
+    const measure = () => setOverflows(el.scrollHeight > el.clientHeight)
+    measure()
+    const observer = new ResizeObserver(measure)
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [fact, expanded])
+
   return (
     <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
       <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
         <BulbIcon className="size-5" />
         Você sabia?
       </p>
-      <p className="mt-1 leading-relaxed">{fact}</p>
+      <p ref={text} className={`mt-1 leading-relaxed ${expanded ? '' : 'line-clamp-2'}`}>
+        {fact}
+      </p>
+      {overflows && (
+        <button
+          type="button"
+          aria-expanded={expanded}
+          onClick={() => setExpanded(!expanded)}
+          className="-mb-1 py-1 text-sm font-semibold text-brand underline underline-offset-2"
+        >
+          {expanded ? 'Ver menos' : 'Ver mais'}
+        </button>
+      )}
     </div>
   )
 }
@@ -1226,6 +1253,7 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
   return (
     <div className="flex flex-col gap-3">
       {headline}
+      {game.fact && <FactCard fact={game.fact} />}
       <PowerUpBar
         powers={room.settings.powers}
         game={game}
@@ -1236,7 +1264,6 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
         onSkip={onSkip}
       />
       <BannerList items={banners} label="Acontecimentos da rodada" />
-      {game.fact && <FactCard fact={game.fact} />}
       <Ranking
         players={room.players}
         playerId={playerId}

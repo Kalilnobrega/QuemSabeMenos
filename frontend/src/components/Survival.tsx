@@ -505,6 +505,7 @@ function Statement({
         </div>
       </Magnifier>
       <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">{status}</p>
+      {survival.fact && <FactCard fact={survival.fact} />}
       {survival.phase === 'results' && (
         <PowerUpBar
           powers={survival.powers}
@@ -525,7 +526,6 @@ function Statement({
         />
       )}
       <BannerList items={notes} label="Acontecimentos da rodada" />
-      {survival.fact && <FactCard fact={survival.fact} />}
       {inReveal && <SurvivorStrip snapshot={snapshot} playerId={playerId} />}
       {error && <p className="text-center text-danger">{error}</p>}
     </section>

@@ -414,11 +414,11 @@ function Reveal({
         </p>
       )}
 
+      {estimate.fact && <FactCard fact={estimate.fact} />}
+
       {bar}
 
       {notes.length > 0 && <BannerList items={notes} label="O que os poderes fizeram" />}
-
-      {estimate.fact && <FactCard fact={estimate.fact} />}
 
       <ul className="flex flex-col gap-1.5" aria-label="Chutes">
         {estimate.guesses.map((guess, index) => {
