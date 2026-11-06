@@ -9,6 +9,7 @@ import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useRemaining, useSoundsOnMount } from '../lib/effects'
+import { useListMotion } from '../lib/listMotion'
 import { POWERUP_INFO, type Kind } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import type { PlayerView, RoomState } from '../types/events'
@@ -428,6 +429,16 @@ export function PlayerPodium({
       {done && extra}
       {done && list}
     </EndScreen>
+  )
+}
+
+/** A classificação do fim de jogo: os itens, com `data-flip`, entram em sequência quando ela aparece. */
+export function FinalList({ className = 'gap-2', children }: { className?: string; children: ReactNode }) {
+  const ref = useListMotion<HTMLOListElement>()
+  return (
+    <ol ref={ref} className={`relative flex flex-col ${className}`}>
+      {children}
+    </ol>
   )
 }
 

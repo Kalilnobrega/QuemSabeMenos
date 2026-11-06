@@ -2,13 +2,22 @@ import { useEffect, useRef, useState } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { useFlashbang, useNow, useSoundsOnMount, vibrate } from '../lib/effects'
 import { POTATO_HINTS, POWERUP_INFO, gainParts, gainTone, scrambleWords, type Kind } from '../lib/powerups'
+import { useListMotion } from '../lib/listMotion'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { HotPotatoView, PlayerView, PotatoView, PowerUpUse } from '../types/events'
 import { CategoryTag, Magnifier, PowerUpIcon, ScratchCard } from './PowerUps'
 import { ResurrectionScene } from './ResurrectionScene'
 import { MatchAwards } from './MatchAwards'
-import { BannerList, EffectChips, PlayerPodium, StartScreen, type BannerItem, type ChipItem } from './Screens'
+import {
+  BannerList,
+  EffectChips,
+  FinalList,
+  PlayerPodium,
+  StartScreen,
+  type BannerItem,
+  type ChipItem,
+} from './Screens'
 
 const LETTERS = ['A', 'B', 'C', 'D']
 const HELPS: Kind[] = ['fifty_fifty', 'shield', 'second_chance', 'cold_water', 'reverse', 'free_pass', 'thermometer']
@@ -213,24 +222,31 @@ function PotatoRound({
 
       {game.powers && <PotatoPowers game={game} playerId={playerId} onUse={onUse} />}
 
-      {out.length > 0 && (
-        <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-steel">
-          Fora
-          {out.map((p) => {
-            const player = room.players.find((x) => x.id === p.player_id)
-            return player ? (
-              <img
-                key={p.player_id}
-                src={avatarUrl(player)}
-                alt={player.nickname}
-                title={player.nickname}
-                className="size-7 opacity-40 grayscale"
-              />
-            ) : null
-          })}
-        </div>
-      )}
+      {out.length > 0 && <OutRow ids={out.map((p) => p.player_id)} players={room.players} />}
     </section>
+  )
+}
+
+/** Quem já queimou: cada um que cai entra no fim da fileira. */
+function OutRow({ ids, players }: { ids: string[]; players: PlayerView[] }) {
+  const ref = useListMotion<HTMLDivElement>({ watch: ids.join() })
+  return (
+    <div ref={ref} className="relative flex flex-wrap items-center justify-center gap-2 text-xs text-steel">
+      Fora
+      {ids.map((id) => {
+        const player = players.find((x) => x.id === id)
+        return player ? (
+          <img
+            key={id}
+            data-flip={id}
+            src={avatarUrl(player)}
+            alt={player.nickname}
+            title={player.nickname}
+            className="size-7 opacity-40 grayscale"
+          />
+        ) : null
+      })}
+    </div>
   )
 }
 
@@ -776,14 +792,17 @@ function Ring({ snapshot, alive, playerId }: { snapshot: Snapshot; alive: string
     return { left: 50 + 38 * Math.cos(angle), top: 50 + 38 * Math.sin(angle) }
   }
   const boom = spot(game.exploded)
+  // A roda redesenha a cada quadro, então só mede quando alguém entra ou sai. Quem fica desliza para o novo lugar.
+  const ringRef = useListMotion<HTMLDivElement>({ watch: seats.map((p) => p.id).join(), exit: true })
   return (
-    <div className="relative mx-auto mt-4 aspect-square w-full max-w-72">
+    <div ref={ringRef} className="relative mx-auto mt-4 aspect-square w-full max-w-72">
       {seats.map((p) => {
         const { left, top } = spot(p.id)
         const holding = holders.includes(p.id)
         return (
           <div
             key={p.id}
+            data-flip={p.id}
             className="absolute flex w-16 -translate-x-1/2 -translate-y-1/2 flex-col items-center"
             style={{ left: `${left}%`, top: `${top}%` }}
           >
@@ -883,13 +902,14 @@ function PotatoPodium({
       worstLine="Primeiro a queimar"
       extra={<MatchAwards awards={game.awards} players={room.players} playerId={playerId} />}
       list={
-        <ol className="flex flex-col gap-2">
+        <FinalList>
           {ranked.map((p) => {
             const player = playerOf(p.player_id)
             if (!player) return null
             return (
               <li
                 key={p.player_id}
+                data-flip={p.player_id}
                 className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${p.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
               >
                 <span className="w-5 text-center font-display text-lg text-steel">{p.place}</span>
@@ -904,7 +924,7 @@ function PotatoPodium({
               </li>
             )
           })}
-        </ol>
+        </FinalList>
       }
     />
   )

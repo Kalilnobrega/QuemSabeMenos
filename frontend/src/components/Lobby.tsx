@@ -4,6 +4,7 @@ import { LeaveButton } from './LeaveButton'
 import { InfoButton, ModeGuide } from './ModeGuide'
 import { Sheet } from './Sheet'
 import { AVATAR_NAMES, AVATARS, avatarUrl, type Avatar } from '../lib/avatars'
+import { useListMotion } from '../lib/listMotion'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
@@ -58,6 +59,10 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
   const [guideOpen, setGuideOpen] = useState(false)
 
   const isHost = room.host_id === playerId
+
+  // Quem chega ou sai muda a altura da lista: os blocos da tela deslizam junto, em vez de pular.
+  const blocksRef = useListMotion<HTMLElement>({ entrance: false })
+  const playersRef = useListMotion<HTMLUListElement>({ exit: true })
 
   const playerCount = useRef(room.players.length)
   useEffect(() => {
@@ -138,8 +143,8 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
             ]
 
   return (
-    <section className="flex w-full flex-col gap-6">
-      <header className="flex flex-col items-center gap-3 rounded-2xl bg-panel p-5">
+    <section ref={blocksRef} className="flex w-full flex-col gap-6">
+      <header data-flip="code" className="flex flex-col items-center gap-3 rounded-2xl bg-panel p-5">
         <span className="text-sm font-semibold tracking-widest text-steel uppercase">Código da sala</span>
         <span className="font-display text-6xl tracking-[0.25em] text-brand">{room.code}</span>
         <button onClick={invite} className="btn-3d btn-sm btn-light rounded-xl px-5 py-2 font-semibold text-ink">
@@ -147,7 +152,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         </button>
       </header>
 
-      <div className="flex flex-col gap-3">
+      <div data-flip="players" className="flex flex-col gap-3">
         <h2 className="flex items-baseline justify-between font-display text-2xl tracking-wide">
           Jogadores
           <span className="font-sans text-base text-steel">
@@ -164,10 +169,11 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
             onEditAvatar={() => setAvatarOpen(true)}
           />
         ) : (
-          <ul className="flex flex-col gap-2">
+          <ul ref={playersRef} className="relative flex flex-col gap-2">
             {room.players.map((player) => (
               <li
                 key={player.id}
+                data-flip={player.id}
                 className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${player.connected ? '' : 'opacity-50'}`}
               >
                 {player.id === playerId ? (
@@ -192,7 +198,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         )}
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div data-flip="match" className="flex flex-col gap-3">
         <h2 className="font-display text-2xl tracking-wide">Partida</h2>
         <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
           <span className="font-display text-xl tracking-wide text-brand">
@@ -235,10 +241,14 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         )}
       </div>
 
-      {notice && <p className="text-center text-steel">{notice}</p>}
+      {notice && (
+        <p data-flip="notice" className="text-center text-steel">
+          {notice}
+        </p>
+      )}
 
       {isHost ? (
-        <div className="flex flex-col gap-2">
+        <div data-flip="start" className="flex flex-col gap-2">
           <button
             onClick={start}
             disabled={!enoughPlayers || starting}
@@ -256,10 +266,14 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
           )}
         </div>
       ) : (
-        <p className="text-center font-hand font-medium text-lg text-steel">Esperando o anfitrião começar…</p>
+        <p data-flip="start" className="text-center font-hand font-medium text-lg text-steel">
+          Esperando o anfitrião começar…
+        </p>
       )}
 
-      <LeaveButton onLeave={onLeave} />
+      <div data-flip="leave" className="flex">
+        <LeaveButton onLeave={onLeave} />
+      </div>
 
       {guideOpen && <ModeGuide mode={room.settings.mode} onClose={() => setGuideOpen(false)} />}
 
@@ -644,17 +658,20 @@ function TeamBuilder({
   onEditAvatar: () => void
 }) {
   const { team_count: count, teams } = room.settings
+  // Um jogador trocando de time desliza até o outro, e os títulos abrem espaço para ele.
+  const listRef = useListMotion<HTMLDivElement>({ exit: true, deep: true })
   const move = async (player: PlayerView) => {
     playSound('select')
     onNotice(await onSetTeam(player.id, ((teams[player.id] ?? 0) + 1) % count))
   }
   return (
-    <div className="flex flex-col gap-3">
+    <div ref={listRef} className="relative flex flex-col gap-3">
       {Array.from({ length: count }, (_, team) => {
         const members = room.players.filter((p) => teams[p.id] === team)
         return (
           <div key={team} className={`flex flex-col gap-1.5 rounded-xl p-2 ${TEAMS[team].bg}`}>
             <h3
+              data-flip={`team-${team}`}
               className={`flex items-baseline justify-between px-1 font-display text-lg tracking-wide ${TEAMS[team].text}`}
             >
               {teamName(team)}
@@ -664,6 +681,7 @@ function TeamBuilder({
             {members.map((player) => (
               <button
                 key={player.id}
+                data-flip={player.id}
                 onClick={() => void move(player)}
                 disabled={!isHost}
                 className={`flex items-center gap-3 rounded-lg bg-panel px-3 py-1.5 text-left ${isHost ? 'btn-3d btn-sm btn-dark' : ''} ${player.connected ? '' : 'opacity-50'}`}

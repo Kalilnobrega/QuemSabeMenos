@@ -37,7 +37,14 @@
   --dur-pick: 260ms;
   --dur-exit: 120ms;
   --dur-enter: 320ms;
+  --dur-leave: 200ms;
   --stagger: 45ms;
+  /* O placar da revelação: as posições deslizam logo depois de a tela chegar, e o QI conta junto. */
+  --delay-rank: 350ms;
+  --dur-rank: 650ms;
+  --delay-count: 400ms;
+  --delay-rank-count: 700ms;
+  --dur-count: 1800ms;
   --ease-settle: cubic-bezier(0.2, 0, 0, 1);
   --ease-spring: cubic-bezier(0.3, 1.45, 0.5, 1);
   --ease-bounce: cubic-bezier(0.3, 1.9, 0.5, 1);

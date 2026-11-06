@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
+import { useListMotion } from '../lib/listMotion'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainParts, scrambleWords, type Kind } from '../lib/powerups'
@@ -11,7 +12,7 @@ import { DaggerStrike } from './DaggerStrike'
 import { ResurrectionScene } from './ResurrectionScene'
 import { FactCard, PeekBadge } from './Game'
 import { MatchAwards } from './MatchAwards'
-import { BannerList, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
+import { BannerList, FinalList, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
 import { ActivePowerUps, InstantPowerUps, Magnifier, PowerUpBar, PowerUpIcon, ScratchCard } from './PowerUps'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
@@ -545,8 +546,13 @@ function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: s
   const ordered = [...survival.survivors].sort(
     (a, b) => Number(a.out_round !== null) - Number(b.out_round !== null) || (b.out_round ?? 0) - (a.out_round ?? 0),
   )
+  // A fileira é recriada entre a pergunta e a revelação: quem caiu ainda desliza para o fim.
+  const listRef = useListMotion<HTMLUListElement>({
+    watch: ordered.map((s) => s.player_id).join(),
+    remember: 'survivors',
+  })
   return (
-    <ul className="flex flex-wrap justify-center gap-2" aria-label="Jogadores">
+    <ul ref={listRef} className="relative flex flex-wrap justify-center gap-2" aria-label="Jogadores">
       {ordered.map((s) => {
         const p = room.players.find((x) => x.id === s.player_id)
         if (!p) return null
@@ -556,6 +562,7 @@ function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: s
         return (
           <li
             key={s.player_id}
+            data-flip={s.player_id}
             className={`flex w-16 flex-col items-center gap-0.5 ${out && !pick ? 'opacity-35 grayscale' : ''} ${pick?.lost_life ? 'reveal-shake' : ''}`}
           >
             <AnsweredAvatar
@@ -656,13 +663,14 @@ function SurvivalPodium({
       worstLine="Primeiro a cair"
       extra={<MatchAwards awards={survival.awards} players={room.players} playerId={playerId} />}
       list={
-        <ol className="flex flex-col gap-2">
+        <FinalList>
           {ranked.map((s) => {
             const p = playerOf(s)
             if (!p) return null
             return (
               <li
                 key={s.player_id}
+                data-flip={s.player_id}
                 className={`flex items-center gap-3 rounded-xl bg-panel px-3 py-2 ${s.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
               >
                 <span className="w-5 text-center font-display text-lg text-steel">{s.place}</span>
@@ -676,7 +684,7 @@ function SurvivalPodium({
               </li>
             )
           })}
-        </ol>
+        </FinalList>
       }
     />
   )
