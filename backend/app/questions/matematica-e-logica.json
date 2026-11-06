@@ -5480,6 +5480,3968 @@
       ],
       "answer": 0,
       "fact": "Pela fórmula de Heron: √(21 × 8 × 7 × 6) = √7.056 = 84."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos tem um quarto de século?",
+      "options": [
+        "25",
+        "10",
+        "50",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "Um século tem 100 anos, e a quarta parte dele é 25."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Se um bolo é dividido entre 4 pessoas, que fração cada uma recebe?",
+      "options": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "1/8"
+      ],
+      "answer": 0,
+      "fact": "Cada uma fica com a quarta parte do bolo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Se hoje é domingo, que dia será daqui a 3 dias?",
+      "options": [
+        "Quarta-feira",
+        "Terça-feira",
+        "Quinta-feira",
+        "Sexta-feira"
+      ],
+      "answer": 0,
+      "fact": "Contando a partir de domingo, são segunda, terça e quarta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pés tem uma pessoa e um cachorro, somando tudo?",
+      "options": [
+        "6",
+        "4",
+        "8",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "São dois pés e quatro patas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas passa quem começa a trabalhar às 8h e termina às 17h?",
+      "options": [
+        "9",
+        "8",
+        "10",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "De 8h a 17h são 9 horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Um caderno custa R$ 12. Quanto custam 3 cadernos?",
+      "options": [
+        "R$ 36",
+        "R$ 24",
+        "R$ 30",
+        "R$ 42"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 12 por 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Um ingresso custa R$ 25. Quanto custam 4 ingressos?",
+      "options": [
+        "R$ 100",
+        "R$ 75",
+        "R$ 80",
+        "R$ 125"
+      ],
+      "answer": 0,
+      "fact": "Quatro vezes 25 é igual a 100."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Maria tem 15 balas e dá 6 para João. Com quantas fica?",
+      "options": [
+        "9",
+        "8",
+        "10",
+        "11"
+      ],
+      "answer": 0,
+      "fact": "Basta fazer 15 menos 6."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Pedro tinha R$ 30 e ganhou R$ 25. Quanto tem agora?",
+      "options": [
+        "R$ 55",
+        "R$ 45",
+        "R$ 50",
+        "R$ 65"
+      ],
+      "answer": 0,
+      "fact": "Basta somar 30 e 25."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Se uma dúzia custa R$ 24, quanto custa cada unidade?",
+      "options": [
+        "R$ 2",
+        "R$ 3",
+        "R$ 4",
+        "R$ 1"
+      ],
+      "answer": 0,
+      "fact": "Uma dúzia tem 12 unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o próximo número da sequência 2, 4, 6, 8?",
+      "options": [
+        "10",
+        "9",
+        "11",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "A sequência avança de 2 em 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o próximo número da sequência 5, 10, 15, 20?",
+      "options": [
+        "25",
+        "30",
+        "22",
+        "35"
+      ],
+      "answer": 0,
+      "fact": "A sequência avança de 5 em 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o próximo número da sequência 10, 20, 30, 40?",
+      "options": [
+        "50",
+        "45",
+        "60",
+        "55"
+      ],
+      "answer": 0,
+      "fact": "A sequência avança de 10 em 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o próximo número da sequência 100, 90, 80?",
+      "options": [
+        "70",
+        "60",
+        "75",
+        "65"
+      ],
+      "answer": 0,
+      "fact": "A sequência diminui de 10 em 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número é maior, 0,5 ou 0,25?",
+      "options": [
+        "0,5",
+        "0,25",
+        "São iguais",
+        "Depende do contexto"
+      ],
+      "answer": 0,
+      "fact": "0,5 é a metade, e 0,25 é um quarto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número é maior, 1/2 ou 1/3?",
+      "options": [
+        "1/2",
+        "1/3",
+        "São iguais",
+        "Depende"
+      ],
+      "answer": 0,
+      "fact": "Quanto mais partes, menor é cada uma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas faces tem um dado comum, somando pontos das faces?",
+      "options": [
+        "21",
+        "12",
+        "18",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "Somando de 1 a 6, chegamos a 21."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o resultado de 10 + 10 × 0?",
+      "options": [
+        "10",
+        "0",
+        "20",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "A multiplicação vem antes da soma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos meses têm 30 dias?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "São abril, junho, setembro e novembro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número romano é o X?",
+      "options": [
+        "10",
+        "5",
+        "50",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "Em romano, I vale 1, V vale 5 e X vale 10."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número romano é o L?",
+      "options": [
+        "50",
+        "100",
+        "500",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "C é 100, D é 500 e M é 1.000."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número romano é o C?",
+      "options": [
+        "100",
+        "50",
+        "500",
+        "1000"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de \"centum\", cem em latim."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que número romano é o M?",
+      "options": [
+        "1000",
+        "100",
+        "500",
+        "5000"
+      ],
+      "answer": 0,
+      "fact": "O nome vem de \"mille\", mil em latim."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pernas têm 3 galinhas e 2 vacas juntas?",
+      "options": [
+        "14",
+        "10",
+        "12",
+        "16"
+      ],
+      "answer": 0,
+      "fact": "São 6 pernas de galinhas e 8 de vacas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Uma caixa tem 24 lápis. Quantas caixas fazem 120 lápis?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 120 por 24."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um trem sai às 9h20 e chega às 11h05. Quanto dura a viagem?",
+      "options": [
+        "1h45",
+        "1h35",
+        "2h15",
+        "2h25"
+      ],
+      "answer": 0,
+      "fact": "Até 11h20 seriam duas horas, então tiramos 15 minutos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma pessoa dorme das 23h às 6h30. Quantas horas dorme?",
+      "options": [
+        "7h30",
+        "6h30",
+        "8h30",
+        "7h"
+      ],
+      "answer": 0,
+      "fact": "Até 6h são sete horas, e somamos mais meia hora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se 3 canetas custam R$ 7,50, quanto custam 5?",
+      "options": [
+        "R$ 12,50",
+        "R$ 10,00",
+        "R$ 15,00",
+        "R$ 11,50"
+      ],
+      "answer": 0,
+      "fact": "Cada caneta custa R$ 2,50."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma blusa de R$ 80 tem 25% de desconto. Quanto custa?",
+      "options": [
+        "R$ 60",
+        "R$ 55",
+        "R$ 65",
+        "R$ 70"
+      ],
+      "answer": 0,
+      "fact": "Um quarto de 80 é 20."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um salário de R$ 2.000 tem aumento de 15%. Qual é o novo valor?",
+      "options": [
+        "R$ 2.300",
+        "R$ 2.150",
+        "R$ 2.500",
+        "R$ 2.200"
+      ],
+      "answer": 0,
+      "fact": "Quinze por cento de 2.000 são 300."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Numa sala, há 12 meninos e 18 meninas. Que porcentagem é de meninos?",
+      "options": [
+        "40%",
+        "30%",
+        "60%",
+        "12%"
+      ],
+      "answer": 0,
+      "fact": "Ao todo, são 30 pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se um carro faz 12 km por litro, quantos litros usa em 300 km?",
+      "options": [
+        "25",
+        "20",
+        "30",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 300 por 12."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se um carro anda a 90 km/h, quantos km percorre em 40 minutos?",
+      "options": [
+        "60",
+        "45",
+        "75",
+        "90"
+      ],
+      "answer": 0,
+      "fact": "Quarenta minutos são dois terços de hora."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma torneira enche 1 litro em 15 segundos. Em quanto tempo enche 20 litros?",
+      "options": [
+        "5 minutos",
+        "3 minutos",
+        "4 minutos",
+        "6 minutos"
+      ],
+      "answer": 0,
+      "fact": "São 300 segundos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 3 × (4 + 5) − 2?",
+      "options": [
+        "25",
+        "27",
+        "29",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "Primeiro resolvemos o que está nos parênteses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 100 − 4 × 5 + 3?",
+      "options": [
+        "83",
+        "483",
+        "77",
+        "80"
+      ],
+      "answer": 0,
+      "fact": "Primeiro resolvemos a multiplicação."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 8 ÷ 2 × 4?",
+      "options": [
+        "16",
+        "1",
+        "6",
+        "2"
+      ],
+      "answer": 0,
+      "fact": "As operações de mesmo nível são feitas da esquerda para a direita."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de 6 ÷ 2 × (1 + 2)?",
+      "options": [
+        "9",
+        "1",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Essa conta gerou muita discussão na internet."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o menor múltiplo comum de 4 e 6?",
+      "options": [
+        "12",
+        "24",
+        "6",
+        "18"
+      ],
+      "answer": 0,
+      "fact": "Tanto 4 quanto 6 dividem 12."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o maior divisor comum de 18 e 24?",
+      "options": [
+        "6",
+        "3",
+        "4",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Tanto 18 quanto 24 são divisíveis por 6."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos números pares há entre 1 e 100?",
+      "options": [
+        "50",
+        "49",
+        "51",
+        "25"
+      ],
+      "answer": 0,
+      "fact": "São todos os múltiplos de 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos números de dois algarismos existem?",
+      "options": [
+        "90",
+        "99",
+        "89",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "Eles vão do 10 ao 99."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 3, 6, 12, 24?",
+      "options": [
+        "48",
+        "36",
+        "30",
+        "42"
+      ],
+      "answer": 0,
+      "fact": "Cada termo dobra o anterior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 1, 4, 9, 16?",
+      "options": [
+        "25",
+        "20",
+        "24",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "São os quadrados perfeitos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 2, 6, 12, 20, 30?",
+      "options": [
+        "42",
+        "40",
+        "36",
+        "48"
+      ],
+      "answer": 0,
+      "fact": "As diferenças crescem de dois em dois."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que figura tem três lados iguais?",
+      "options": [
+        "Triângulo equilátero",
+        "Triângulo isósceles",
+        "Triângulo escaleno",
+        "Triângulo retângulo"
+      ],
+      "answer": 0,
+      "fact": "Cada ângulo mede 60 graus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que figura tem exatamente um par de lados paralelos?",
+      "options": [
+        "Trapézio",
+        "Losango",
+        "Retângulo",
+        "Quadrado"
+      ],
+      "answer": 0,
+      "fact": "Os outros têm dois pares paralelos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que figura tem quatro lados iguais, mas ângulos que podem não ser retos?",
+      "options": [
+        "Losango",
+        "Quadrado",
+        "Retângulo",
+        "Trapézio"
+      ],
+      "answer": 0,
+      "fact": "O losango da bandeira do Brasil tem esse formato."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual sólido tem 2 bases circulares?",
+      "options": [
+        "Cilindro",
+        "Cone",
+        "Esfera",
+        "Prisma"
+      ],
+      "answer": 0,
+      "fact": "Uma lata de refrigerante é um exemplo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual sólido tem 1 base circular e 1 vértice?",
+      "options": [
+        "Cone",
+        "Cilindro",
+        "Esfera",
+        "Pirâmide"
+      ],
+      "answer": 0,
+      "fact": "A casquinha de sorvete é um exemplo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama a linha que vai do centro até a borda do círculo?",
+      "options": [
+        "Raio",
+        "Diâmetro",
+        "Corda",
+        "Tangente"
+      ],
+      "answer": 0,
+      "fact": "O diâmetro é o dobro do raio."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor aproximado de π?",
+      "options": [
+        "3,14",
+        "2,71",
+        "1,41",
+        "1,62"
+      ],
+      "answer": 0,
+      "fact": "Ele é a razão entre o comprimento e o diâmetro do círculo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O que significa a palavra \"média\" em estatística?",
+      "options": [
+        "Soma dividida pela quantidade",
+        "Valor mais comum",
+        "Valor do meio",
+        "Maior valor"
+      ],
+      "answer": 0,
+      "fact": "A moda é o mais comum, e a mediana é o do meio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Um caracol sobe 5 metros de dia e desce 4 à noite. Em quantos dias sai de um poço de 10 metros?",
+      "options": [
+        "6",
+        "10",
+        "5",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "No sexto dia, ele alcança a borda antes de escorregar."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Se você dobrar um papel 10 vezes, quantas camadas terá?",
+      "options": [
+        "1.024",
+        "100",
+        "512",
+        "2.048"
+      ],
+      "answer": 0,
+      "fact": "Cada dobra multiplica por 2."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Se dois trens a 60 km/h vêm um contra o outro, a 180 km, em quanto tempo se encontram?",
+      "options": [
+        "1h30",
+        "2h",
+        "3h",
+        "1h"
+      ],
+      "answer": 0,
+      "fact": "Juntos, eles se aproximam a 120 km/h."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Três amigos pagam R$ 30 por um quarto e recebem R$ 5 de volta, dividindo só R$ 3. Onde está o erro?",
+      "options": [
+        "Em somar R$ 2 com R$ 27",
+        "Em dividir por três",
+        "Em guardar R$ 5",
+        "Em cobrar R$ 30"
+      ],
+      "answer": 0,
+      "fact": "Os R$ 27 pagos já incluem os R$ 2 do empregado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos apertos de mão há entre 10 pessoas, se todas se cumprimentam?",
+      "options": [
+        "45",
+        "100",
+        "90",
+        "50"
+      ],
+      "answer": 0,
+      "fact": "É a combinação de 10 tomados 2 a 2."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos jogos tem um torneio mata-mata com 32 times?",
+      "options": [
+        "31",
+        "32",
+        "16",
+        "64"
+      ],
+      "answer": 0,
+      "fact": "Cada jogo elimina exatamente um time."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a soma dos números de um dado de 20 faces?",
+      "options": [
+        "210",
+        "200",
+        "190",
+        "420"
+      ],
+      "answer": 0,
+      "fact": "A soma de 1 a 20 é 210."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Numa família, há duas crianças, e uma é menina. Qual é a chance de a outra também ser?",
+      "options": [
+        "1/3",
+        "1/2",
+        "1/4",
+        "2/3"
+      ],
+      "answer": 0,
+      "fact": "O famoso problema tem resultado contraintuitivo."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a chance de acertar 6 números em uma Mega-Sena?",
+      "options": [
+        "1 em 50 milhões",
+        "1 em 5 milhões",
+        "1 em 500 milhões",
+        "1 em 500 mil"
+      ],
+      "answer": 0,
+      "fact": "O número exato é 1 em 50.063.860."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano nasceu Pitágoras, aproximadamente?",
+      "options": [
+        "570 a.C.",
+        "300 a.C.",
+        "100 a.C.",
+        "900 a.C."
+      ],
+      "answer": 0,
+      "fact": "Ele viveu na ilha de Samos, na Grécia."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em que ano viveu Euclides, aproximadamente?",
+      "options": [
+        "300 a.C.",
+        "570 a.C.",
+        "100 d.C.",
+        "900 a.C."
+      ],
+      "answer": 0,
+      "fact": "O livro dele foi usado por mais de 2 mil anos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o autor de \"Os Elementos\"?",
+      "options": [
+        "Euclides",
+        "Pitágoras",
+        "Arquimedes",
+        "Tales"
+      ],
+      "answer": 0,
+      "fact": "A obra é uma das mais editadas da história."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem propôs \"penso, logo existo\" e criou o plano cartesiano?",
+      "options": [
+        "René Descartes",
+        "Blaise Pascal",
+        "Isaac Newton",
+        "Gottfried Leibniz"
+      ],
+      "answer": 0,
+      "fact": "O nome \"cartesiano\" vem de Cartesius, sua forma latina."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem criou o primeiro computador mecânico, a Pascalina?",
+      "options": [
+        "Blaise Pascal",
+        "René Descartes",
+        "Charles Babbage",
+        "Gottfried Leibniz"
+      ],
+      "answer": 0,
+      "fact": "Ele queria ajudar o pai a calcular impostos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o matemático indiano autodidata retratado em \"O Homem Que Viu o Infinito\"?",
+      "options": [
+        "Srinivasa Ramanujan",
+        "G.H. Hardy",
+        "Aryabhata",
+        "Bhaskara"
+      ],
+      "answer": 0,
+      "fact": "Ele trabalhou com Hardy em Cambridge."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número famoso do encontro de Hardy e Ramanujan, em um táxi?",
+      "options": [
+        "1729",
+        "1024",
+        "2048",
+        "729"
+      ],
+      "answer": 0,
+      "fact": "É o menor número que é soma de dois cubos de duas formas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual filme retrata o matemático John Nash?",
+      "options": [
+        "Uma Mente Brilhante",
+        "Gênio Indomável",
+        "O Jogo da Imitação",
+        "O Homem Que Viu o Infinito"
+      ],
+      "answer": 0,
+      "fact": "Russell Crowe viveu o matemático."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem provou o Último Teorema de Fermat, em 1994?",
+      "options": [
+        "Andrew Wiles",
+        "Grigori Perelman",
+        "Terence Tao",
+        "John Nash"
+      ],
+      "answer": 0,
+      "fact": "A demonstração tem mais de 100 páginas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem resolveu a Conjectura de Poincaré e recusou 1 milhão de dólares?",
+      "options": [
+        "Grigori Perelman",
+        "Andrew Wiles",
+        "Terence Tao",
+        "Alexander Grothendieck"
+      ],
+      "answer": 0,
+      "fact": "Ele recusou até a Medalha Fields."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual o nome do hotel infinito, famoso em matemática?",
+      "options": [
+        "Hotel de Hilbert",
+        "Hotel de Cantor",
+        "Hotel de Euler",
+        "Hotel de Gödel"
+      ],
+      "answer": 0,
+      "fact": "Ele sempre tem lugar para mais um."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem provou que certos infinitos são maiores que outros?",
+      "options": [
+        "Georg Cantor",
+        "David Hilbert",
+        "Kurt Gödel",
+        "Euclides"
+      ],
+      "answer": 0,
+      "fact": "Muitos colegas rejeitaram as ideias dele."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quem é o autor dos teoremas da incompletude, em 1931?",
+      "options": [
+        "Kurt Gödel",
+        "Alan Turing",
+        "Bertrand Russell",
+        "David Hilbert"
+      ],
+      "answer": 0,
+      "fact": "Eles mostraram os limites da matemática."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que é um número palíndromo?",
+      "options": [
+        "Lido igual nos dois sentidos",
+        "Divisível por 11",
+        "Múltiplo de 10",
+        "Soma de seus algarismos"
+      ],
+      "answer": 0,
+      "fact": "Por exemplo, 1221 e 12321."
+    },
+    {
+      "difficulty": "hard",
+      "text": "O que é um número primo?",
+      "options": [
+        "Divisível só por 1 e por ele mesmo",
+        "Sempre ímpar",
+        "Múltiplo de 3",
+        "Sempre menor que 100"
+      ],
+      "answer": 0,
+      "fact": "Há infinitos, como provou Euclides."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Por que 1 não é primo?",
+      "options": [
+        "Só tem um divisor",
+        "Porque é ímpar",
+        "Porque é muito pequeno",
+        "Por ser múltiplo de 2"
+      ],
+      "answer": 0,
+      "fact": "A definição exige exatamente dois divisores."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o maior número de dois algarismos primo?",
+      "options": [
+        "97",
+        "99",
+        "91",
+        "93"
+      ],
+      "answer": 0,
+      "fact": "O 91 parece primo, mas é 7 × 13."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual destes números parece primo, mas é 7 × 13?",
+      "options": [
+        "91",
+        "97",
+        "89",
+        "83"
+      ],
+      "answer": 0,
+      "fact": "É uma pegadinha muito comum."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual destes é um número perfeito?",
+      "options": [
+        "28",
+        "25",
+        "12",
+        "30"
+      ],
+      "answer": 0,
+      "fact": "A soma dos divisores dele dá 28."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a razão áurea, aproximadamente?",
+      "options": [
+        "1,618",
+        "3,141",
+        "2,718",
+        "1,414"
+      ],
+      "answer": 0,
+      "fact": "Ela aparece na sequência de Fibonacci."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número de Euler, aproximadamente?",
+      "options": [
+        "2,718",
+        "3,141",
+        "1,618",
+        "1,414"
+      ],
+      "answer": 0,
+      "fact": "Ele é a base do logaritmo natural."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o valor de 0! (zero fatorial)?",
+      "options": [
+        "1",
+        "0",
+        "Não existe",
+        "−1"
+      ],
+      "answer": 0,
+      "fact": "O resultado é definido assim para fechar as fórmulas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o valor de 2 elevado a 0?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "Não existe"
+      ],
+      "answer": 0,
+      "fact": "Qualquer número diferente de zero elevado a 0 dá 1."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o valor de 10 elevado a −2?",
+      "options": [
+        "0,01",
+        "0,1",
+        "−100",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "Um expoente negativo indica o inverso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a raiz quadrada de −1, em números complexos?",
+      "options": [
+        "i",
+        "−1",
+        "Não existe",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "Ela é chamada de unidade imaginária."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 16 × 7?",
+      "options": [
+        "112",
+        "113",
+        "122",
+        "111"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 24 × 6?",
+      "options": [
+        "144",
+        "154",
+        "244",
+        "44"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 35 × 4?",
+      "options": [
+        "140",
+        "160",
+        "145",
+        "120"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 42 × 5?",
+      "options": [
+        "210",
+        "209",
+        "211",
+        "310"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 55 × 3?",
+      "options": [
+        "165",
+        "185",
+        "145",
+        "166"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 61 × 8?",
+      "options": [
+        "488",
+        "489",
+        "490",
+        "486"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 73 × 2?",
+      "options": [
+        "146",
+        "46",
+        "156",
+        "246"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 88 × 4?",
+      "options": [
+        "352",
+        "372",
+        "357",
+        "332"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 93 × 3?",
+      "options": [
+        "279",
+        "259",
+        "289",
+        "299"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 99 × 2?",
+      "options": [
+        "198",
+        "200",
+        "218",
+        "196"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 32 × 9?",
+      "options": [
+        "288",
+        "289",
+        "290",
+        "287"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 41 × 7?",
+      "options": [
+        "287",
+        "267",
+        "307",
+        "387"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 17 × 8?",
+      "options": [
+        "136",
+        "137",
+        "138",
+        "134"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 19 × 6?",
+      "options": [
+        "114",
+        "94",
+        "115",
+        "134"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 28 × 3?",
+      "options": [
+        "84",
+        "104",
+        "82",
+        "86"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 37 × 5?",
+      "options": [
+        "185",
+        "285",
+        "205",
+        "165"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 46 × 2?",
+      "options": [
+        "92",
+        "192",
+        "91",
+        "93"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 59 × 4?",
+      "options": [
+        "236",
+        "235",
+        "237",
+        "246"
+      ],
+      "answer": 0,
+      "fact": "O jeito mais rápido é separar as dezenas das unidades."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 87 + 36?",
+      "options": [
+        "123",
+        "128",
+        "113",
+        "133"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 164 + 29?",
+      "options": [
+        "193",
+        "194",
+        "213",
+        "173"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 258 + 47?",
+      "options": [
+        "305",
+        "285",
+        "307",
+        "325"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 391 + 109?",
+      "options": [
+        "500",
+        "600",
+        "501",
+        "400"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 444 + 256?",
+      "options": [
+        "700",
+        "800",
+        "705",
+        "695"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 625 + 175?",
+      "options": [
+        "800",
+        "900",
+        "820",
+        "780"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 78 + 65?",
+      "options": [
+        "143",
+        "144",
+        "145",
+        "142"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 250 + 250?",
+      "options": [
+        "500",
+        "600",
+        "501",
+        "400"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 333 + 667?",
+      "options": [
+        "1.000",
+        "1.200",
+        "800",
+        "1.010"
+      ],
+      "answer": 0,
+      "fact": "Vale começar somando as centenas e as dezenas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 345 dividido por 5?",
+      "options": [
+        "69",
+        "59",
+        "71",
+        "79"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 69 por 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 848 dividido por 8?",
+      "options": [
+        "106",
+        "105",
+        "107",
+        "206"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 106 por 8."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 972 dividido por 9?",
+      "options": [
+        "108",
+        "128",
+        "106",
+        "110"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 108 por 9."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 555 dividido por 5?",
+      "options": [
+        "111",
+        "121",
+        "116",
+        "101"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 111 por 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 777 dividido por 7?",
+      "options": [
+        "111",
+        "113",
+        "109",
+        "121"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 111 por 7."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 216 dividido por 6?",
+      "options": [
+        "36",
+        "41",
+        "46",
+        "31"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 36 por 6."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 315 dividido por 5?",
+      "options": [
+        "63",
+        "73",
+        "65",
+        "61"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 63 por 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 128 dividido por 4?",
+      "options": [
+        "32",
+        "27",
+        "132",
+        "37"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 32 por 4."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 26 × 34?",
+      "options": [
+        "884",
+        "889",
+        "885",
+        "879"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 45 × 22?",
+      "options": [
+        "990",
+        "992",
+        "989",
+        "991"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 66 × 15?",
+      "options": [
+        "990",
+        "1.000",
+        "1.090",
+        "890"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 38 × 12?",
+      "options": [
+        "456",
+        "457",
+        "458",
+        "454"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 54 × 25?",
+      "options": [
+        "1.350",
+        "1.400",
+        "1.450",
+        "1.250"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 16 × 48?",
+      "options": [
+        "768",
+        "668",
+        "868",
+        "773"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 72 × 18?",
+      "options": [
+        "1.296",
+        "1.346",
+        "1.396",
+        "1.246"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 84 × 13?",
+      "options": [
+        "1.092",
+        "1.112",
+        "1.042",
+        "1.142"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 96 × 35?",
+      "options": [
+        "3.360",
+        "3.410",
+        "3.380",
+        "3.340"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 27 × 37?",
+      "options": [
+        "999",
+        "1.099",
+        "899",
+        "1.019"
+      ],
+      "answer": 0,
+      "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 15% de 240?",
+      "options": [
+        "36",
+        "56",
+        "16",
+        "136"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 240 por 15 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 35% de 600?",
+      "options": [
+        "210",
+        "208",
+        "211",
+        "212"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 600 por 35 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 45% de 180?",
+      "options": [
+        "81",
+        "91",
+        "101",
+        "71"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 180 por 45 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 8% de 650?",
+      "options": [
+        "52",
+        "72",
+        "57",
+        "32"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 650 por 8 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 12% de 750?",
+      "options": [
+        "90",
+        "88",
+        "92",
+        "190"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 750 por 12 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 22% de 500?",
+      "options": [
+        "110",
+        "105",
+        "210",
+        "115"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 500 por 22 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 65% de 80?",
+      "options": [
+        "52",
+        "57",
+        "50",
+        "54"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 80 por 65 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 90% de 350?",
+      "options": [
+        "315",
+        "313",
+        "325",
+        "317"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 350 por 90 e dividir por 100."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −28 + (15)?",
+      "options": [
+        "−13",
+        "−33",
+        "−3",
+        "−113"
+      ],
+      "answer": 0,
+      "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −45 + (−38)?",
+      "options": [
+        "−83",
+        "−183",
+        "−93",
+        "−73"
+      ],
+      "answer": 0,
+      "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 60 + (−92)?",
+      "options": [
+        "−32",
+        "−31",
+        "−27",
+        "−33"
+      ],
+      "answer": 0,
+      "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −125 + (250)?",
+      "options": [
+        "125",
+        "115",
+        "126",
+        "135"
+      ],
+      "answer": 0,
+      "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é −300 + (75)?",
+      "options": [
+        "−225",
+        "−245",
+        "−223",
+        "−205"
+      ],
+      "answer": 0,
+      "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 84 + (−120)?",
+      "options": [
+        "−36",
+        "−16",
+        "−31",
+        "−41"
+      ],
+      "answer": 0,
+      "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 18 ao quadrado?",
+      "options": [
+        "324",
+        "344",
+        "314",
+        "334"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 18 por 18, que dá 324."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 22 ao quadrado?",
+      "options": [
+        "484",
+        "483",
+        "485",
+        "494"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 22 por 22, que dá 484."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 28 ao quadrado?",
+      "options": [
+        "784",
+        "786",
+        "804",
+        "782"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 28 por 28, que dá 784."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 33 ao quadrado?",
+      "options": [
+        "1.089",
+        "989",
+        "1.099",
+        "1.189"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 33 por 33, que dá 1.089."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 35 ao quadrado?",
+      "options": [
+        "1.225",
+        "1.235",
+        "1.245",
+        "1.205"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 35 por 35, que dá 1.225."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 45 ao quadrado?",
+      "options": [
+        "2.025",
+        "2.225",
+        "2.075",
+        "1.825"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 45 por 45, que dá 2.025."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 55 ao quadrado?",
+      "options": [
+        "3.025",
+        "3.125",
+        "3.045",
+        "3.005"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 55 por 55, que dá 3.025."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 65 ao quadrado?",
+      "options": [
+        "4.225",
+        "4.195",
+        "4.245",
+        "4.255"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 65 por 65, que dá 4.225."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 75 ao quadrado?",
+      "options": [
+        "5.625",
+        "5.675",
+        "5.595",
+        "5.655"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 75 por 75, que dá 5.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 127 × 43?",
+      "options": [
+        "5.461",
+        "5.661",
+        "5.261",
+        "5.471"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 236 × 58?",
+      "options": [
+        "13.688",
+        "13.658",
+        "13.708",
+        "13.718"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 419 × 27?",
+      "options": [
+        "11.313",
+        "11.283",
+        "11.333",
+        "11.343"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 508 × 36?",
+      "options": [
+        "18.288",
+        "18.298",
+        "18.318",
+        "18.278"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 643 × 72?",
+      "options": [
+        "46.296",
+        "46.496",
+        "46.346",
+        "46.246"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 781 × 94?",
+      "options": [
+        "73.414",
+        "73.394",
+        "73.434",
+        "73.464"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 925 × 63?",
+      "options": [
+        "58.275",
+        "58.285",
+        "58.175",
+        "58.375"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 358 × 87?",
+      "options": [
+        "31.146",
+        "31.176",
+        "31.116",
+        "31.246"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 614 × 49?",
+      "options": [
+        "30.086",
+        "30.096",
+        "30.116",
+        "30.076"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 263 × 76?",
+      "options": [
+        "19.988",
+        "20.008",
+        "19.968",
+        "20.188"
+      ],
+      "answer": 0,
+      "fact": "A conta pode ser feita em partes, somando depois os resultados."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 101 ao quadrado?",
+      "options": [
+        "10.201",
+        "10.171",
+        "10.211",
+        "10.231"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 101 por 101, que dá 10.201."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 111 ao quadrado?",
+      "options": [
+        "12.321",
+        "12.301",
+        "12.331",
+        "12.341"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 111 por 111, que dá 12.321."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 121 ao quadrado?",
+      "options": [
+        "14.641",
+        "14.651",
+        "14.611",
+        "14.671"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 121 por 121, que dá 14.641."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 125 ao quadrado?",
+      "options": [
+        "15.625",
+        "15.825",
+        "15.635",
+        "15.615"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 125 por 125, que dá 15.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 135 ao quadrado?",
+      "options": [
+        "18.225",
+        "18.425",
+        "18.255",
+        "18.025"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 135 por 135, que dá 18.225."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 144 ao quadrado?",
+      "options": [
+        "20.736",
+        "20.716",
+        "20.746",
+        "20.756"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 144 por 144, que dá 20.736."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 175 ao quadrado?",
+      "options": [
+        "30.625",
+        "30.525",
+        "30.725",
+        "30.645"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 175 por 175, que dá 30.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 199 ao quadrado?",
+      "options": [
+        "39.601",
+        "39.621",
+        "39.581",
+        "39.631"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 199 por 199, que dá 39.601."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 225 ao quadrado?",
+      "options": [
+        "50.625",
+        "50.825",
+        "50.675",
+        "50.425"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 225 por 225, que dá 50.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 250 ao quadrado?",
+      "options": [
+        "62.500",
+        "62.600",
+        "62.450",
+        "62.550"
+      ],
+      "answer": 0,
+      "fact": "É o produto de 250 por 250, que dá 62.500."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 13?",
+      "options": [
+        "8.192",
+        "8.202",
+        "8.182",
+        "8.222"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 2 por ele mesmo 13 vezes, chegamos a 8.192."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 15?",
+      "options": [
+        "32.768",
+        "32.738",
+        "32.868",
+        "32.798"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 2 por ele mesmo 15 vezes, chegamos a 32.768."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2 elevado a 17?",
+      "options": [
+        "131.072",
+        "131.272",
+        "130.972",
+        "131.172"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 2 por ele mesmo 17 vezes, chegamos a 131.072."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 6?",
+      "options": [
+        "729",
+        "730",
+        "731",
+        "727"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 3 por ele mesmo 6 vezes, chegamos a 729."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 7?",
+      "options": [
+        "2.187",
+        "2.177",
+        "2.197",
+        "2.287"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 3 por ele mesmo 7 vezes, chegamos a 2.187."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3 elevado a 9?",
+      "options": [
+        "19.683",
+        "19.713",
+        "19.663",
+        "19.703"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 3 por ele mesmo 9 vezes, chegamos a 19.683."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 4 elevado a 6?",
+      "options": [
+        "4.096",
+        "4.296",
+        "3.896",
+        "4.196"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 4 por ele mesmo 6 vezes, chegamos a 4.096."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 4 elevado a 7?",
+      "options": [
+        "16.384",
+        "16.434",
+        "16.404",
+        "16.364"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 4 por ele mesmo 7 vezes, chegamos a 16.384."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 5 elevado a 6?",
+      "options": [
+        "15.625",
+        "15.635",
+        "15.675",
+        "15.575"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 5 por ele mesmo 6 vezes, chegamos a 15.625."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 6 elevado a 6?",
+      "options": [
+        "46.656",
+        "46.856",
+        "46.676",
+        "46.636"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 6 por ele mesmo 6 vezes, chegamos a 46.656."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 7 elevado a 5?",
+      "options": [
+        "16.807",
+        "16.777",
+        "16.837",
+        "17.007"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 7 por ele mesmo 5 vezes, chegamos a 16.807."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 8 elevado a 4?",
+      "options": [
+        "4.096",
+        "4.296",
+        "3.896",
+        "4.116"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 8 por ele mesmo 4 vezes, chegamos a 4.096."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 8 elevado a 5?",
+      "options": [
+        "32.768",
+        "32.968",
+        "32.568",
+        "32.818"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 8 por ele mesmo 5 vezes, chegamos a 32.768."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 12 elevado a 3?",
+      "options": [
+        "1.728",
+        "1.708",
+        "1.748",
+        "1.778"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 12 por ele mesmo 3 vezes, chegamos a 1.728."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 15 elevado a 3?",
+      "options": [
+        "3.375",
+        "3.355",
+        "3.395",
+        "3.475"
+      ],
+      "answer": 0,
+      "fact": "Multiplicando 15 por ele mesmo 3 vezes, chegamos a 3.375."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 1.024 dividido por 16?",
+      "options": [
+        "64",
+        "84",
+        "69",
+        "44"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 64 por 16."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 3.375 dividido por 15?",
+      "options": [
+        "225",
+        "205",
+        "226",
+        "245"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 225 por 15."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 2.197 dividido por 13?",
+      "options": [
+        "169",
+        "170",
+        "189",
+        "149"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 169 por 13."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 1.728 dividido por 12?",
+      "options": [
+        "144",
+        "145",
+        "146",
+        "142"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 144 por 12."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 4.913 dividido por 17?",
+      "options": [
+        "289",
+        "309",
+        "389",
+        "189"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 289 por 17."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quanto é 6.859 dividido por 19?",
+      "options": [
+        "361",
+        "363",
+        "356",
+        "366"
+      ],
+      "answer": 0,
+      "fact": "Para conferir, basta multiplicar 361 por 19."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o maior número primo conhecido, em algarismos aproximados, descoberto em 2024?",
+      "options": [
+        "Mais de 41 milhões",
+        "Cerca de 1 milhão",
+        "Cerca de 100 mil",
+        "Mais de 1 bilhão",
+        "Cerca de 10 milhões",
+        "Cerca de 500 milhões"
+      ],
+      "answer": 0,
+      "fact": "É um primo de Mersenne, encontrado por computadores voluntários."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a soma dos primeiros 100 números primos?",
+      "options": [
+        "24.133",
+        "5.050",
+        "10.000",
+        "50.000",
+        "1.060",
+        "100.000"
+      ],
+      "answer": 0,
+      "fact": "O 100º primo é 541."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o centésimo número primo?",
+      "options": [
+        "541",
+        "499",
+        "523",
+        "547",
+        "601",
+        "997"
+      ],
+      "answer": 0,
+      "fact": "Nenhuma fórmula simples dá essa resposta direto."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos algarismos tem 2 elevado a 100?",
+      "options": [
+        "31",
+        "20",
+        "50",
+        "100",
+        "25",
+        "40"
+      ],
+      "answer": 0,
+      "fact": "O número tem cerca de 1,27 × 10³⁰."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos algarismos tem 100 fatorial?",
+      "options": [
+        "158",
+        "100",
+        "200",
+        "50",
+        "300",
+        "80"
+      ],
+      "answer": 0,
+      "fact": "Com tantos fatores, ele cresce muito rápido."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos zeros tem no final de 1.000 fatorial?",
+      "options": [
+        "249",
+        "200",
+        "100",
+        "500",
+        "300",
+        "999"
+      ],
+      "answer": 0,
+      "fact": "Cada múltiplo de 5 ajuda a formar um zero."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quais são as seis primeiras casas decimais de π?",
+      "options": [
+        "141592",
+        "141593",
+        "141529",
+        "142592",
+        "145192",
+        "141692"
+      ],
+      "answer": 0,
+      "fact": "A sequência continua com 6, 5, 3 e 5."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Até quantas casas decimais π já foi calculado, em 2024?",
+      "options": [
+        "Mais de 200 trilhões",
+        "Cerca de 1 bilhão",
+        "Cerca de 10 trilhões",
+        "Cerca de 1 milhão",
+        "Mais de 1 quatrilhão",
+        "Cerca de 100 bilhões"
+      ],
+      "answer": 0,
+      "fact": "Só 40 casas bastam para medir o Universo observável."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas casas de π são necessárias para calcular o Universo com precisão de um átomo?",
+      "options": [
+        "Cerca de 40",
+        "Cerca de 10",
+        "Cerca de 100",
+        "Cerca de 1.000",
+        "Cerca de 5",
+        "Cerca de 1 milhão"
+      ],
+      "answer": 0,
+      "fact": "Os cientistas da NASA usam só 15 casas."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas casas de π a NASA usa em cálculos de navegação?",
+      "options": [
+        "15",
+        "5",
+        "50",
+        "100",
+        "3",
+        "1.000"
+      ],
+      "answer": 0,
+      "fact": "Isso já é mais que suficiente."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi proposta a primeira definição moderna de função, por Euler?",
+      "options": [
+        "1748",
+        "1600",
+        "1850",
+        "1900",
+        "1500",
+        "1950"
+      ],
+      "answer": 0,
+      "fact": "A obra se chama \"Introductio in analysin infinitorum\"."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi criado o zero, na Índia, por Brahmagupta?",
+      "options": [
+        "628",
+        "100",
+        "1000",
+        "1200",
+        "300",
+        "850"
+      ],
+      "answer": 0,
+      "fact": "Ele definiu regras para o zero em cálculos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Fibonacci publicou \"Liber Abaci\"?",
+      "options": [
+        "1202",
+        "1000",
+        "1400",
+        "1500",
+        "800",
+        "1600"
+      ],
+      "answer": 0,
+      "fact": "O livro levou os algarismos arábicos à Europa."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Pierre de Fermat escreveu seu \"Último Teorema\"?",
+      "options": [
+        "1637",
+        "1500",
+        "1750",
+        "1800",
+        "1600",
+        "1900"
+      ],
+      "answer": 0,
+      "fact": "Ele escreveu que a margem do livro era pequena demais."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em quantos anos o Último Teorema de Fermat foi resolvido, desde 1637?",
+      "options": [
+        "Mais de 350",
+        "Cerca de 100",
+        "Cerca de 50",
+        "Cerca de 200",
+        "Cerca de 500",
+        "Cerca de 700"
+      ],
+      "answer": 0,
+      "fact": "Andrew Wiles fechou a prova em 1994."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas pontes havia em Königsberg no problema de Euler?",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "8",
+        "9",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "A resposta negativa criou a teoria dos grafos."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantas cores bastam para pintar qualquer mapa, segundo o Teorema das Quatro Cores?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6",
+        "2",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira prova famosa feita com ajuda de computador."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Teorema das Quatro Cores foi provado?",
+      "options": [
+        "1976",
+        "1920",
+        "1850",
+        "2000",
+        "1950",
+        "2010"
+      ],
+      "answer": 0,
+      "fact": "Dois matemáticos usaram mais de 1.000 horas de computador."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos Prêmios do Milênio foram resolvidos até 2024?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 0,
+      "fact": "Só a Conjectura de Poincaré foi resolvida."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quanto vale cada um dos Problemas do Milênio, em dólares?",
+      "options": [
+        "1 milhão",
+        "100 mil",
+        "10 milhões",
+        "500 mil",
+        "5 milhões",
+        "50 milhões"
+      ],
+      "answer": 0,
+      "fact": "O Instituto Clay anunciou a lista em 2000."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Artur Avila ganhou a Medalha Fields?",
+      "options": [
+        "2014",
+        "2002",
+        "2010",
+        "2018",
+        "2006",
+        "1998"
+      ],
+      "answer": 0,
+      "fact": "Foi o primeiro latino-americano a receber o prêmio."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano Maryam Mirzakhani ganhou a Medalha Fields?",
+      "options": [
+        "2014",
+        "2006",
+        "2010",
+        "2018",
+        "2022",
+        "2002"
+      ],
+      "answer": 0,
+      "fact": "Foi a primeira mulher a receber o prêmio."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos países participam da Olimpíada Internacional de Matemática, aproximadamente?",
+      "options": [
+        "Mais de 100",
+        "Cerca de 30",
+        "Cerca de 50",
+        "Mais de 190",
+        "Cerca de 10",
+        "Cerca de 70"
+      ],
+      "answer": 0,
+      "fact": "O evento existe desde 1959."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano o Brasil sediou a Olimpíada Internacional de Matemática, no Rio?",
+      "options": [
+        "2017",
+        "2005",
+        "2010",
+        "2022",
+        "1999",
+        "1985"
+      ],
+      "answer": 0,
+      "fact": "O país tem tido ótimos resultados."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que ano foi criada a Obmep, no Brasil?",
+      "options": [
+        "2005",
+        "1995",
+        "2010",
+        "2015",
+        "1985",
+        "2000"
+      ],
+      "answer": 0,
+      "fact": "Milhões de alunos da escola pública participam."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual o tamanho da Olimpíada Brasileira de Matemática das Escolas Públicas, em alunos, por ano?",
+      "options": [
+        "Mais de 18 milhões",
+        "Cerca de 2 milhões",
+        "Cerca de 500 mil",
+        "Mais de 50 milhões",
+        "Cerca de 100 mil",
+        "Cerca de 5 milhões"
+      ],
+      "answer": 0,
+      "fact": "É uma das maiores olimpíadas do mundo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Uma camiseta custa R$ 35 e uma bermuda custa R$ 45. Quanto custam as duas?",
+      "options": [
+        "R$ 80",
+        "R$ 70",
+        "R$ 75",
+        "R$ 90"
+      ],
+      "answer": 0,
+      "fact": "Basta somar os dois preços."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Um pacote tem 8 biscoitos. Quantos biscoitos há em 5 pacotes?",
+      "options": [
+        "40",
+        "35",
+        "45",
+        "48"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 8 por 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Numa festa, 24 doces foram divididos entre 6 crianças. Quantos doces cada uma recebeu?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 24 por 6."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Um ônibus sai às 10h e a viagem dura 3 horas. Que horas chega?",
+      "options": [
+        "13h",
+        "12h",
+        "14h",
+        "11h"
+      ],
+      "answer": 0,
+      "fact": "Basta somar 3 horas ao horário de saída."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Ana tem 12 anos. Quantos anos terá daqui a 8 anos?",
+      "options": [
+        "20",
+        "18",
+        "22",
+        "16"
+      ],
+      "answer": 0,
+      "fact": "Basta somar 12 e 8."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Lucas nasceu em 2010. Quantos anos faz em 2030?",
+      "options": [
+        "20",
+        "18",
+        "25",
+        "30"
+      ],
+      "answer": 0,
+      "fact": "Basta subtrair 2010 de 2030."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas meias há em 6 pares?",
+      "options": [
+        "12",
+        "6",
+        "10",
+        "18"
+      ],
+      "answer": 0,
+      "fact": "Cada par tem duas meias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Se um time ganhou 3 pontos em cada um de 4 jogos, quantos pontos fez?",
+      "options": [
+        "12",
+        "7",
+        "9",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 3 por 4."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas há entre 8h da manhã e meio-dia?",
+      "options": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Meio-dia corresponde a 12h."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é a metade de 1.000?",
+      "options": [
+        "500",
+        "250",
+        "100",
+        "750"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir por 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é o dobro de 250?",
+      "options": [
+        "500",
+        "300",
+        "450",
+        "750"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar por 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é o triplo de 30?",
+      "options": [
+        "90",
+        "60",
+        "33",
+        "120"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar por 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 10% de 100?",
+      "options": [
+        "10",
+        "1",
+        "20",
+        "50"
+      ],
+      "answer": 0,
+      "fact": "Dez por cento equivalem à décima parte."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 25% de 100?",
+      "options": [
+        "25",
+        "20",
+        "50",
+        "75"
+      ],
+      "answer": 0,
+      "fact": "Vinte e cinco por cento equivalem a um quarto."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 1/2 de 18?",
+      "options": [
+        "9",
+        "6",
+        "8",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir por 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 1/3 de 21?",
+      "options": [
+        "7",
+        "6",
+        "9",
+        "3"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir por 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto é 1/4 de 40?",
+      "options": [
+        "10",
+        "8",
+        "20",
+        "4"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir por 4."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cantos tem um retângulo?",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Ele tem os mesmos cantos de um quadrado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas de R$ 1 são necessárias para formar R$ 7?",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Cada moeda vale um real."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas notas de R$ 20 formam R$ 100?",
+      "options": [
+        "5",
+        "4",
+        "10",
+        "20"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 100 por 20."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas notas de R$ 50 formam R$ 200?",
+      "options": [
+        "4",
+        "2",
+        "5",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 200 por 50."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas de 25 centavos formam R$ 1?",
+      "options": [
+        "4",
+        "2",
+        "5",
+        "10"
+      ],
+      "answer": 0,
+      "fact": "Quatro vezes 25 dá 100."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos tem um biênio?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "O prefixo \"bi\" indica dois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos tem um quinquênio?",
+      "options": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "O prefixo \"quinqu\" indica cinco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o resultado de uma multiplicação?",
+      "options": [
+        "Produto",
+        "Quociente",
+        "Soma",
+        "Resto"
+      ],
+      "answer": 0,
+      "fact": "Quociente é o resultado da divisão."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Como se chama o resultado de uma divisão?",
+      "options": [
+        "Quociente",
+        "Produto",
+        "Fator",
+        "Dividendo"
+      ],
+      "answer": 0,
+      "fact": "Em 10 ÷ 2, o quociente é 5."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas faces tem um prisma de base triangular?",
+      "options": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "São duas bases e três faces laterais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantas arestas tem uma pirâmide de base quadrada?",
+      "options": [
+        "8",
+        "4",
+        "6",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "São quatro na base e quatro laterais."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos vértices tem uma pirâmide de base quadrada?",
+      "options": [
+        "5",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "São quatro na base e o topo."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes é um múltiplo de 9?",
+      "options": [
+        "81",
+        "80",
+        "82",
+        "84"
+      ],
+      "answer": 0,
+      "fact": "Os algarismos somam 9."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes é um múltiplo de 11?",
+      "options": [
+        "121",
+        "111",
+        "131",
+        "101"
+      ],
+      "answer": 0,
+      "fact": "Ele é igual a 11 × 11."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual destes números tem raiz quadrada exata?",
+      "options": [
+        "196",
+        "190",
+        "200",
+        "180"
+      ],
+      "answer": 0,
+      "fact": "Ele é igual a 14 × 14."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Que número multiplicado por ele mesmo dá 169?",
+      "options": [
+        "13",
+        "12",
+        "14",
+        "17"
+      ],
+      "answer": 0,
+      "fact": "Essa conta é o 13 ao quadrado."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um número somado a 15 dá 40. Que número é?",
+      "options": [
+        "25",
+        "15",
+        "30",
+        "55"
+      ],
+      "answer": 0,
+      "fact": "Basta fazer 40 menos 15."
+    },
+    {
+      "difficulty": "medium",
+      "text": "O triplo de um número é 45. Que número é?",
+      "options": [
+        "15",
+        "12",
+        "18",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 45 por 3."
+    },
+    {
+      "difficulty": "medium",
+      "text": "A metade de um número é 26. Que número é?",
+      "options": [
+        "52",
+        "13",
+        "46",
+        "62"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 26 por 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se x + 7 = 20, quanto vale x?",
+      "options": [
+        "13",
+        "27",
+        "12",
+        "14"
+      ],
+      "answer": 0,
+      "fact": "Basta fazer 20 menos 7."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se 4x = 48, quanto vale x?",
+      "options": [
+        "12",
+        "8",
+        "44",
+        "16"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 48 por 4."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se x − 9 = 16, quanto vale x?",
+      "options": [
+        "25",
+        "7",
+        "24",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "Basta somar 16 e 9."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Se x/3 = 8, quanto vale x?",
+      "options": [
+        "24",
+        "11",
+        "5",
+        "16"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 8 por 3."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma receita pede 3 ovos para 12 biscoitos. Quantos ovos para 36 biscoitos?",
+      "options": [
+        "9",
+        "6",
+        "12",
+        "15"
+      ],
+      "answer": 0,
+      "fact": "A receita fica três vezes maior."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Num mapa, 1 cm são 50 km. Quantos km são 7 cm?",
+      "options": [
+        "350",
+        "300",
+        "400",
+        "57"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 50 por 7."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um livro tem 240 páginas. Lendo 30 por dia, em quantos dias acaba?",
+      "options": [
+        "8",
+        "6",
+        "10",
+        "12"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 240 por 30."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Numa loja, um tênis custa R$ 150 à vista, ou 3 vezes de R$ 60. Quanto se paga a mais?",
+      "options": [
+        "R$ 30",
+        "R$ 20",
+        "R$ 10",
+        "R$ 50"
+      ],
+      "answer": 0,
+      "fact": "Parcelado, o total é R$ 180."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Em uma prova com 40 questões, alguém acertou 32. Qual foi a porcentagem?",
+      "options": [
+        "80%",
+        "75%",
+        "85%",
+        "90%"
+      ],
+      "answer": 0,
+      "fact": "Oito décimos das questões foram acertados."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Num grupo, 3 de cada 5 pessoas usam óculos. Qual é a porcentagem?",
+      "options": [
+        "60%",
+        "35%",
+        "50%",
+        "65%"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 3 por 5."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Uma mesa tem 6 lugares. Quantas mesas para 45 pessoas sentarem?",
+      "options": [
+        "8",
+        "7",
+        "6",
+        "9"
+      ],
+      "answer": 0,
+      "fact": "Sete mesas só comportam 42 pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Um elevador leva 8 pessoas. Quantas viagens para 50 pessoas?",
+      "options": [
+        "7",
+        "6",
+        "5",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Seis viagens só levam 48 pessoas."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias vão de 15 de março até 15 de abril?",
+      "options": [
+        "31",
+        "30",
+        "28",
+        "32"
+      ],
+      "answer": 0,
+      "fact": "Março tem 31 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos dias tem um trimestre de janeiro a março, em ano comum?",
+      "options": [
+        "90",
+        "91",
+        "92",
+        "93"
+      ],
+      "answer": 0,
+      "fact": "São 31, 28 e 31 dias."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor de 5² − 4²?",
+      "options": [
+        "9",
+        "1",
+        "3",
+        "41"
+      ],
+      "answer": 0,
+      "fact": "São 25 menos 16."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é (2 + 3)²?",
+      "options": [
+        "25",
+        "13",
+        "10",
+        "5"
+      ],
+      "answer": 0,
+      "fact": "Primeiro somamos, depois elevamos ao quadrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Se um bilhete tem 1% de chance de ganhar, qual é a chance de perder 2 vezes seguidas?",
+      "options": [
+        "98,01%",
+        "98%",
+        "99%",
+        "96%"
+      ],
+      "answer": 0,
+      "fact": "É 0,99 vezes 0,99."
+    },
+    {
+      "difficulty": "hard",
+      "text": "De quantas formas 5 livros podem ser arrumados em uma prateleira?",
+      "options": [
+        "120",
+        "25",
+        "60",
+        "720"
+      ],
+      "answer": 0,
+      "fact": "É o fatorial de 5."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos números de 3 algarismos diferentes se formam com 1, 2 e 3?",
+      "options": [
+        "6",
+        "3",
+        "9",
+        "27"
+      ],
+      "answer": 0,
+      "fact": "É o fatorial de 3."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a chance de sair cara duas vezes seguidas em uma moeda?",
+      "options": [
+        "25%",
+        "50%",
+        "12,5%",
+        "33%"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar um meio por um meio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a chance de tirar um ás em um baralho de 52 cartas?",
+      "options": [
+        "1/13",
+        "1/4",
+        "1/52",
+        "1/26"
+      ],
+      "answer": 0,
+      "fact": "Há 4 ases no baralho."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Uma pizza de 40 cm tem quantas vezes a área de uma de 20 cm?",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "A área depende do quadrado do raio."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Se um quadrado aumenta o lado em 10%, quanto aumenta a área?",
+      "options": [
+        "21%",
+        "10%",
+        "20%",
+        "100%"
+      ],
+      "answer": 0,
+      "fact": "O fator é 1,1 ao quadrado."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Depois de 2 aumentos seguidos de 10%, qual é o aumento total?",
+      "options": [
+        "21%",
+        "20%",
+        "22%",
+        "19%"
+      ],
+      "answer": 0,
+      "fact": "Os juros são compostos."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Com juros de 100% ao ano, em quantos anos um valor fica 8 vezes maior?",
+      "options": [
+        "3",
+        "8",
+        "4",
+        "2"
+      ],
+      "answer": 0,
+      "fact": "Ele dobra a cada ano."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a soma dos ângulos internos de um octógono?",
+      "options": [
+        "1.080°",
+        "720°",
+        "900°",
+        "1.260°"
+      ],
+      "answer": 0,
+      "fact": "A fórmula é (n − 2) × 180."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número de arestas de um icosaedro?",
+      "options": [
+        "30",
+        "20",
+        "12",
+        "60"
+      ],
+      "answer": 0,
+      "fact": "Ele tem 20 faces e 12 vértices."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é o número de vértices de um dodecaedro?",
+      "options": [
+        "20",
+        "12",
+        "30",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Ele tem 12 faces e 30 arestas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que fórmula relaciona vértices, arestas e faces de um poliedro?",
+      "options": [
+        "Relação de Euler",
+        "Teorema de Tales",
+        "Fórmula de Bhaskara",
+        "Lei dos senos"
+      ],
+      "answer": 0,
+      "fact": "A soma é V − A + F = 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores há em 3 times de 5 pessoas?",
+      "options": [
+        "15",
+        "8",
+        "10",
+        "20"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar 3 por 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto custam 2 sorvetes de R$ 9 e 1 água de R$ 4?",
+      "options": [
+        "R$ 22",
+        "R$ 18",
+        "R$ 13",
+        "R$ 26"
+      ],
+      "answer": 0,
+      "fact": "São R$ 18 de sorvete e R$ 4 de água."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Uma fita de 30 cm foi cortada em 3 partes iguais. Quanto mede cada parte?",
+      "options": [
+        "10 cm",
+        "15 cm",
+        "5 cm",
+        "3 cm"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir 30 por 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Uma garrafa tem 2 litros. Quantos copos de 200 ml ela enche?",
+      "options": [
+        "10",
+        "5",
+        "20",
+        "8"
+      ],
+      "answer": 0,
+      "fact": "Dois litros são 2.000 mililitros."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor de 2³ + 3²?",
+      "options": [
+        "17",
+        "13",
+        "12",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "A conta soma 8 e 9, o que dá 17."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Numa corrida com 8 atletas, de quantas formas se forma o pódio?",
+      "options": [
+        "336",
+        "24",
+        "56",
+        "512"
+      ],
+      "answer": 0,
+      "fact": "A conta é 8 × 7 × 6, pois a ordem importa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que nome tem o resultado de uma subtração?",
+      "options": [
+        "Diferença",
+        "Soma",
+        "Produto",
+        "Quociente"
+      ],
+      "answer": 0,
+      "fact": "Em 10 menos 4, a diferença é 6."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o número de baixo em uma fração?",
+      "options": [
+        "Denominador",
+        "Numerador",
+        "Quociente",
+        "Fator"
+      ],
+      "answer": 0,
+      "fact": "Ele indica em quantas partes o inteiro foi dividido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Como se chama o número de cima em uma fração?",
+      "options": [
+        "Numerador",
+        "Denominador",
+        "Resto",
+        "Divisor"
+      ],
+      "answer": 0,
+      "fact": "Ele indica quantas partes foram tomadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que operação é o contrário da soma?",
+      "options": [
+        "Subtração",
+        "Multiplicação",
+        "Divisão",
+        "Potência"
+      ],
+      "answer": 0,
+      "fact": "Uma desfaz o que a outra faz."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Que operação é o contrário da multiplicação?",
+      "options": [
+        "Divisão",
+        "Subtração",
+        "Soma",
+        "Raiz"
+      ],
+      "answer": 0,
+      "fact": "Por isso a divisão serve para conferir contas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem uma régua escolar comum?",
+      "options": [
+        "30",
+        "15",
+        "50",
+        "100"
+      ],
+      "answer": 0,
+      "fact": "As menores têm cerca de 15 cm."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos há em 2 minutos?",
+      "options": [
+        "120",
+        "100",
+        "60",
+        "200"
+      ],
+      "answer": 0,
+      "fact": "Cada minuto tem 60 segundos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o dobro de 1.000?",
+      "options": [
+        "2.000",
+        "1.500",
+        "3.000",
+        "500"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar por 2."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a metade de 500?",
+      "options": [
+        "250",
+        "200",
+        "125",
+        "150"
+      ],
+      "answer": 0,
+      "fact": "Basta dividir por 2."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o resultado de 3 × 12?",
+      "options": [
+        "36",
+        "33",
+        "39",
+        "42"
+      ],
+      "answer": 0,
+      "fact": "Três dúzias têm 36 unidades."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o valor de 2 × (3 + 4)?",
+      "options": [
+        "14",
+        "10",
+        "24",
+        "11"
+      ],
+      "answer": 0,
+      "fact": "Primeiro resolvemos o que está nos parênteses."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 1/2 + 1/2?",
+      "options": [
+        "1",
+        "1/4",
+        "2/4",
+        "2"
+      ],
+      "answer": 0,
+      "fact": "Duas metades formam um inteiro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 1/3 + 1/3?",
+      "options": [
+        "2/3",
+        "1/6",
+        "2/6",
+        "1"
+      ],
+      "answer": 0,
+      "fact": "Os denominadores iguais são mantidos."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 0,5 × 8?",
+      "options": [
+        "4",
+        "3",
+        "40",
+        "0,4"
+      ],
+      "answer": 0,
+      "fact": "Metade de oito é igual a quatro."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quanto é 7² − 1?",
+      "options": [
+        "48",
+        "13",
+        "49",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "Sete ao quadrado é igual a 49."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos graus tem cada ângulo de um triângulo equilátero?",
+      "options": [
+        "60",
+        "45",
+        "90",
+        "30"
+      ],
+      "answer": 0,
+      "fact": "A soma dá 180 graus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Quantos graus tem cada ângulo de um quadrado?",
+      "options": [
+        "90",
+        "45",
+        "180",
+        "60"
+      ],
+      "answer": 0,
+      "fact": "A soma dá 360 graus."
+    },
+    {
+      "difficulty": "medium",
+      "text": "Qual é o perímetro de um quadrado de lado 12?",
+      "options": [
+        "48",
+        "24",
+        "144",
+        "36"
+      ],
+      "answer": 0,
+      "fact": "Basta multiplicar o lado por 4."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Se um relógio atrasa 10 minutos por dia, quantos dias leva para atrasar 12 horas?",
+      "options": [
+        "72",
+        "60",
+        "120",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "São 720 minutos de atraso."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Se um relógio parado mostra a hora certa, quantas vezes isso acontece por dia?",
+      "options": [
+        "2",
+        "1",
+        "12",
+        "24"
+      ],
+      "answer": 0,
+      "fact": "Isso vale para um relógio de 12 horas."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Em uma corrida com 8 atletas, quantos cumprimentos ocorrem se todos cumprimentam todos?",
+      "options": [
+        "28",
+        "56",
+        "16",
+        "64"
+      ],
+      "answer": 0,
+      "fact": "É a combinação de 8 tomados 2 a 2."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas retas diferentes passam por 2 pontos?",
+      "options": [
+        "1",
+        "2",
+        "Infinitas",
+        "0"
+      ],
+      "answer": 0,
+      "fact": "Dois pontos definem uma reta."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantos planos diferentes passam por 3 pontos que não estão em linha?",
+      "options": [
+        "1",
+        "3",
+        "Infinitos",
+        "2"
+      ],
+      "answer": 0,
+      "fact": "Por isso, um tripé nunca balança."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Por que um tripé nunca balança?",
+      "options": [
+        "Três pontos definem um plano",
+        "Tem pernas curtas",
+        "Tem base pesada",
+        "Fica em um vértice"
+      ],
+      "answer": 0,
+      "fact": "É a mesma ideia da mesa de três pés."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Qual é a soma de dois números ímpares consecutivos, como 13 e 15?",
+      "options": [
+        "28",
+        "27",
+        "29",
+        "30"
+      ],
+      "answer": 0,
+      "fact": "Essa soma é sempre um número par."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Quantas faces tem um dodecaedro?",
+      "options": [
+        "12",
+        "20",
+        "8",
+        "6"
+      ],
+      "answer": 0,
+      "fact": "Cada face é um pentágono."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o nome do primo que é 2 elevado a um primo, menos 1?",
+      "options": [
+        "Primo de Mersenne",
+        "Primo de Fermat",
+        "Primo gêmeo",
+        "Primo de Sophie Germain",
+        "Primo de Euler",
+        "Primo de Gauss"
+      ],
+      "answer": 0,
+      "fact": "Os maiores primos conhecidos têm esse formato."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é o oitavo número da sequência de Fibonacci?",
+      "options": [
+        "21",
+        "13",
+        "34",
+        "55",
+        "8",
+        "18"
+      ],
+      "answer": 0,
+      "fact": "A sequência começa em 1 e 1."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Qual é a décima casa decimal de π?",
+      "options": [
+        "5",
+        "3",
+        "9",
+        "1",
+        "7",
+        "2"
+      ],
+      "answer": 0,
+      "fact": "Os dez primeiros decimais são 1415926535."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Em que século René Descartes publicou \"A Geometria\"?",
+      "options": [
+        "XVII",
+        "XVI",
+        "XVIII",
+        "XV",
+        "XIX",
+        "XIV"
+      ],
+      "answer": 0,
+      "fact": "A obra saiu em 1637."
+    },
+    {
+      "difficulty": "hard",
+      "text": "Que matemático grego calculou o raio da Terra usando sombras?",
+      "options": [
+        "Eratóstenes",
+        "Arquimedes",
+        "Euclides",
+        "Tales"
+      ],
+      "answer": 0,
+      "fact": "Ele chegou perto do valor correto no século III a.C."
+    },
+    {
+      "difficulty": "impossible",
+      "text": "Quantos subconjuntos tem um conjunto de 10 elementos?",
+      "options": [
+        "1.024",
+        "100",
+        "512",
+        "2.048",
+        "10",
+        "1.000"
+      ],
+      "answer": 0,
+      "fact": "A fórmula é 2 elevado ao número de elementos."
     }
   ]
 }
