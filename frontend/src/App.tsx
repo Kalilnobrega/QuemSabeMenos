@@ -71,6 +71,7 @@ export default function App() {
     chooseTheme,
     guess,
     mathSteps,
+    lastWordDraft,
     updateSettings,
     updateAvatar,
     setTeam,
@@ -99,6 +100,7 @@ export default function App() {
         playerId={playerId}
         onGuess={guess}
         onMathSteps={mathSteps}
+        onLastWordDraft={lastWordDraft}
         onSkip={skipResults}
         onArm={armPowerUp}
         onDisarm={disarmPowerUp}

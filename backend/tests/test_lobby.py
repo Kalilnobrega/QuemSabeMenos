@@ -667,3 +667,30 @@ async def test_math_target_sends_steps_and_who_guessed_watches_through_the_room(
     await ana.call("leave_room")
     await bia.call("leave_room")
     await match_closed("abandoned")
+
+
+async def test_last_word_opens_in_the_room_and_the_typing_reaches_everyone(connect, monkeypatch):
+    from app import estimate
+
+    monkeypatch.setattr(estimate, "START_SECONDS", 0.05)
+    monkeypatch.setattr(game, "MIN_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(game, "MAX_RESULTS_SECONDS", 5.0)
+    monkeypatch.setattr(estimate, "POWERS", ("shield",))
+    ana, bia, _created, _joined = await setup_room(connect)
+    assert (await ana.call("update_settings", {"mode": "estimate", "rounds": 10, "powers": True}))["ok"]
+    assert (await ana.call("start_game"))["ok"]
+    await ana.wait_for(lambda s: s["estimate"] and s["estimate"]["phase"] == "answering")
+    room = next(iter(main.rooms.rooms.values()))
+    ana_id = next(p.id for p in room.players if p.nickname == "Ana")
+    room.estimate.mythics[ana_id] = ["last_word"]
+    assert (await bia.call("submit_guess", {"value": 1}))["ok"]
+    assert (await ana.call("use_powerup", {"kind": "last_word"}))["ok"]  # Bia já chutou: abre na hora
+    opened = await ana.wait_for(lambda s: s["estimate"]["last_word"] and s["estimate"]["last_word"]["open"], timeout=2)
+    assert [g["value"] for g in opened["estimate"]["last_word"]["guesses"]] == [1]
+    assert (await ana.call("last_word_draft", {"draft": "42"}))["ok"]
+    await bia.wait_for(lambda s: s["estimate"]["last_word"] and s["estimate"]["last_word"]["draft"] == "42", timeout=2)
+    assert (await ana.call("submit_guess", {"value": 42}))["ok"]
+    await ana.wait_for(lambda s: s["estimate"]["phase"] == "results", timeout=2)
+    await ana.call("leave_room")
+    await bia.call("leave_room")
+    await match_closed("abandoned")

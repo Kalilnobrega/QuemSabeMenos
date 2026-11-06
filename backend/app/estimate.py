@@ -7,11 +7,11 @@ Fases: starting → (answering → results) por pergunta, com level quando o ní
 Não tem tempo de leitura: a pergunta já abre para chutar, e os 20 segundos já incluem ler.
 
 Com poderes: os comuns do clássico que fazem sentido com número (ver `POWERS`), armados na revelação
-para a próxima pergunta (Espiar na hora). "Acertar" é ganhar QI com o chute. Espiar mostra os chutes
-dos outros, e a Segunda chance diz se a resposta é mais alta ou mais baixa antes do novo chute.
+para a próxima pergunta. "Acertar" é ganhar QI com o chute. A Segunda chance diz se a resposta é mais
+alta ou mais baixa antes do novo chute.
 
-Poderes só deste modo: Faixa e Sniper (na hora), Margem larga, Tecla quente, Empurrão e Troca-troca
-valem aqui. Tecla quebrada, Teclado mentiroso, Perfeccionista, Teclas fugitivas, Curto-circuito e Duplo
+Poderes só deste modo: Faixa e Sniper (na hora), Margem larga, Tecla quente, Cópia, Empurrão e
+Troca-troca valem aqui. Tecla quebrada, Teclado mentiroso, Perfeccionista, Teclas fugitivas, Curto-circuito e Duplo
 clique só existem como sabotagem armada: o teclado é do navegador.
 """
 
@@ -28,12 +28,13 @@ from app import powerups as pw
 from app.engine import Revealed, RoomError
 from app.events import (
     EstimateGuess,
+    EstimateLastWord,
     EstimateMath,
-    EstimatePeek,
     EstimateRange,
     EstimateScoring,
     EstimateView,
     LastingPowerUp,
+    LastWordGuess,
     MathKey,
     MathWatch,
     PowerUp,
@@ -57,11 +58,11 @@ ANSWER_SECONDS = 20.0
 MATH_SECONDS = 30.0  # o alvo da Matemática tem mais tempo, e os outros assistem às contas
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
 # Sem 50/50, Alternativa falsa e Pedágio, que dependem de alternativas, e sem Tempo extra: a velocidade não dá QI.
-# Investimento, Embaralhar, Lupa, Acelerador e Flashbang também ficaram de fora, por escolha de jogo.
+# Investimento, Embaralhar, Lupa, Acelerador, Flashbang e Espiar também ficaram de fora, por escolha de jogo.
 POWERS: tuple[PowerUp, ...] = (
     "shield",
     "double",
-    "peek",
+    "copy",
     "second_chance",
     "reverse",
     "backpack",
@@ -83,8 +84,12 @@ POWERS: tuple[PowerUp, ...] = (
     "short_circuit",
     "double_click",
 )
-# Mítico: só chega por sorteio, nunca como poder comum nem lendário, e o Reverso não segura.
-MATH_CHANCE = (0.02, 0.08)  # (para quem não é lanterna, para o lanterna)
+# Míticos: só chegam por sorteio, nunca como poder comum nem lendário.
+MYTHICS: tuple[PowerUp, ...] = ("math", "last_word")
+MYTHIC_CHANCE = (0.02, 0.08)  # (para quem não é lanterna, para o lanterna)
+LAST_WORD_SECONDS = 10.0  # o tempo de quem fala por último, depois de ver os chutes
+LAST_WORD_STAKE = 10  # o QI da aposta com cada um dos outros
+LAST_WORD_MAX_STAKE = 40  # em sala grande a aposta se divide, para não decidir a partida sozinha
 MATH_KEYS = 9
 MATH_MAX_VALUE = 1e12  # acima disso o visor não cabe
 MATH_MAX_USES = 3
@@ -100,7 +105,7 @@ TARGETED: frozenset[PowerUp] = pw.TARGETED | {
     "short_circuit",
     "double_click",
 }
-INSTANT: frozenset[PowerUp] = pw.INSTANT | {"range", "sniper"}
+INSTANT: frozenset[PowerUp] = pw.INSTANT | {"range", "sniper", "last_word"}
 # As sabotagens em versão lendária, menos a Troca-troca, que só existe entre duas pessoas.
 LEGENDARY: tuple[PowerUp, ...] = tuple(kind for kind in POWERS if kind in TARGETED and kind != "swap")
 SNIPER_FACTOR = 2  # a zona de ganho fica desse tanto menor, e o ganho desse tanto maior
@@ -316,6 +321,9 @@ class Estimate(Revealed):
     legendaries: dict[str, list[PowerUp]] = field(default_factory=dict)
     mythics: dict[str, list[PowerUp]] = field(default_factory=dict)
     math_puzzles: dict[str, EstimateMath] = field(default_factory=dict)  # Matemática: de quem foi atingido
+    last_word_by: str | None = None  # Palavra final: quem fala por último nesta pergunta
+    last_word_opened_at: float | None = None  # quando todos terminaram e chegou a vez dele
+    last_word_draft: str = ""
     starting: dict[str, PowerUp] = field(default_factory=dict)
     extra_slots: dict[str, int] = field(default_factory=dict)
     armed: dict[str, PowerUpUse] = field(default_factory=dict)
@@ -376,7 +384,13 @@ class Estimate(Revealed):
             raise EstimateError("Agora não dá para chutar.")
         if player_id in self.guesses:
             raise EstimateError("Você já chutou.")
-        limit = self.phase_started_at + self.answer_window(player_id)
+        if player_id == self.last_word_by and self.last_word_opened_at is None:
+            raise EstimateError("Espere os outros: a palavra final é sua.")
+        limit = (
+            self.phase_ends_at
+            if player_id == self.last_word_by
+            else self.phase_started_at + self.answer_window(player_id)
+        )
         if now > limit + LATE_SECONDS:
             raise EstimateError("O tempo acabou.")
         guessed = (value, min(now, limit))
@@ -393,7 +407,9 @@ class Estimate(Revealed):
         return MATH_SECONDS if player_id in self.math_puzzles else ANSWER_SECONDS
 
     def time_is_up(self, player_id: str, now: float) -> bool:
-        """Sem tempo, mas a pergunta continua: só acontece com um alvo da Matemática fazendo contas."""
+        """Sem tempo, mas a pergunta continua: esperando o alvo da Matemática ou a Palavra final."""
+        if player_id == self.last_word_by:
+            return False  # o prazo dele só começa quando todos terminam
         return (
             self.phase == "answering"
             and player_id not in self.guesses
@@ -402,7 +418,9 @@ class Estimate(Revealed):
 
     def others_time_up_at(self) -> float | None:
         """Quando acaba o tempo de quem não é alvo, se a pergunta segue depois disso para esperar um alvo."""
-        if self.phase != "answering" or not self.math_puzzles:
+        if self.phase != "answering" or self.last_word_opened_at is not None:
+            return None
+        if not self.math_puzzles and not self.last_word_by:
             return None
         return self.phase_started_at + ANSWER_SECONDS + LATE_SECONDS
 
@@ -426,8 +444,29 @@ class Estimate(Revealed):
         self.math_puzzles[player_id] = puzzle.model_copy(update={"steps": steps, "value": value})
 
     def everyone_answered(self, connected: list[str], now: float | None = None) -> bool:
-        """Quem ficou sem tempo não segura a pergunta."""
-        return all(pid in self.guesses or (now is not None and self.time_is_up(pid, now)) for pid in connected)
+        """Quem ficou sem tempo não segura a pergunta. Quem tem a Palavra final só conta depois de abrir."""
+        waiting_last_word = self.last_word_by if self.last_word_opened_at is None else None
+        return all(
+            pid == waiting_last_word or pid in self.guesses or (now is not None and self.time_is_up(pid, now))
+            for pid in connected
+        )
+
+    def open_last_word(self, now: float, connected: list[str]) -> bool:
+        """Todos terminaram: é a vez de quem tem a Palavra final, que precisa estar na sala."""
+        pid = self.last_word_by
+        if self.phase != "answering" or not pid or self.last_word_opened_at is not None:
+            return False
+        if pid not in connected or pid in self.guesses:
+            return False
+        self.last_word_opened_at = now
+        self.phase_ends_at = now + LAST_WORD_SECONDS
+        return True
+
+    def last_word_typing(self, player_id: str, draft: str) -> None:
+        """Palavra final: a sala assiste ao que está sendo digitado."""
+        if player_id != self.last_word_by or self.last_word_opened_at is None or self.phase != "answering":
+            raise EstimateError("Agora não é a sua palavra final.")
+        self.last_word_draft = draft
 
     def everyone_ready(self, connected: list[str]) -> bool:
         """Quem está silenciado não vê a revelação: não precisa tocar em Pular."""
@@ -534,20 +573,26 @@ class Estimate(Revealed):
         self.ready.discard(player_id)
 
     def use_now(self, player_id: str, kind: PowerUp) -> None:
-        """Espiar, Faixa e Sniper: durante a pergunta, valem na hora."""
+        """Faixa, Sniper e Palavra final: durante a pergunta, valem na hora."""
         if self.phase != "answering" or not self.powers:
             raise EstimateError("Agora não dá para usar poder.")
         if kind not in INSTANT:
             raise EstimateError("Essa se arma na revelação.")
         if self.is_silenced(player_id):
             raise EstimateError("Silenciado: sem poderes por enquanto.")
-        held = self.held.get(player_id, [])
+        held = (self.mythics if kind in MYTHICS else self.held).get(player_id, [])
         if kind not in held:
             raise EstimateError("Você não tem esse poder.")
-        if player_id in self.guesses:
+        if player_id in self.guesses or player_id in self.first_guesses:
             raise EstimateError("Você já chutou.")
         if self._affects(kind, player_id):
             raise EstimateError("Já está valendo.")
+        if kind == "last_word":
+            if self.last_word_by:
+                raise EstimateError("Alguém já tem a palavra final desta pergunta.")
+            if player_id in self.math_puzzles:
+                raise EstimateError("Com a Matemática não dá: faça as contas.")
+            self.last_word_by = player_id
         held.remove(kind)
         if kind == "range":
             self.ranges[player_id] = draw_range(self.question, self.rng)
@@ -635,6 +680,26 @@ class Estimate(Revealed):
                 thief.stolen += share
                 target.robbed += share
 
+    def _settle_last_word(self) -> None:
+        """O tudo ou nada: mais perto que todos (empate vale), tira QI de cada um; senão, paga a cada um."""
+        speaker = next((g for g in self.results if g.player_id == self.last_word_by), None)
+        others = [g for g in self.results if g is not speaker]
+        if not speaker or not others:
+            return
+        stake = min(LAST_WORD_STAKE, LAST_WORD_MAX_STAKE // len(others))
+        # Quem copiou fica de fora: a aposta é contra quem chutou por conta própria.
+        errors = [g.error_percent for g in others if g.error_percent is not None and not g.copied_from]
+        won = (
+            speaker.error_percent is not None
+            and not speaker.copied_from
+            and all(speaker.error_percent <= error for error in errors)
+        )
+        for other in others:
+            if won and other.shielded:
+                continue  # o Escudo segura, como no Roubo
+            other.last_word = -stake if won else stake
+            speaker.last_word += stake if won else -stake
+
     def _scored_error(self, player_id: str, error: float) -> float:
         """O erro que vale para os pontos: mudar o tamanho das zonas é o mesmo que mudar o erro."""
         return error * self._zone_shrink(player_id)
@@ -666,6 +731,33 @@ class Estimate(Revealed):
             originals.setdefault(use.target, theirs[0])
             guesses[use.by], guesses[use.target] = (theirs[0], mine[1]), (mine[0], theirs[1])
         return guesses, originals
+
+    def _apply_nudges(self, guesses: dict[str, tuple[float, float]], player_ids: list[str]) -> dict[str, float]:
+        """Empurra os chutes e devolve o valor de antes, de quem andou."""
+        before = {}
+        for pid in player_ids:
+            if pid in guesses and (shift := self._nudge(pid)):
+                before[pid] = guesses[pid][0]
+                guesses[pid] = (round(guesses[pid][0] + shift, 3), guesses[pid][1])
+        return before
+
+    def _apply_copies(
+        self, guesses: dict[str, tuple[float, float]], copiers: list[str]
+    ) -> dict[str, tuple[str, float]]:
+        """Cópia: fica com o melhor chute de quem não copiou, se for melhor que o próprio. Quem não
+        chutou não copia. Devolve de quem veio o chute e o que o jogador tinha chutado."""
+        copied = {}
+        rivals = {pid: guess for pid, guess in guesses.items() if pid not in copiers}
+        if not rivals:
+            return copied
+        distance = lambda guess: abs(guess[0] - self.question.answer)
+        best = min(rivals, key=lambda pid: distance(rivals[pid]))
+        for pid in copiers:
+            own = guesses.get(pid)
+            if own and distance(rivals[best]) < distance(own):
+                copied[pid] = (best, own[0])
+                guesses[pid] = (rivals[best][0], own[1])
+        return copied
 
     def _nudge(self, player_id: str) -> float:
         """Quanto os Empurrões em cima do jogador mexem no chute."""
@@ -714,13 +806,13 @@ class Estimate(Revealed):
                 continue  # com as mãos cheias, a sequência continua valendo para depois
             trailing = player.id in behind
             roll = self.rng.random()
-            mythic_edge = MATH_CHANCE[1 if trailing else 0]
+            mythic_edge = MYTHIC_CHANCE[1 if trailing else 0]
             mythic = roll < mythic_edge
             legendary = not mythic and roll < mythic_edge + (
                 pw.LEGENDARY_TRAILING_CHANCE if trailing else pw.LEGENDARY_CHANCE
             )
             if mythic:
-                kind = "math"
+                kind = self.rng.choice(MYTHICS)
                 mythics.append(kind)
             else:
                 kind = self.rng.choice(LEGENDARY if legendary else POWERS)
@@ -746,6 +838,8 @@ class Estimate(Revealed):
             self.first_guesses = {}
             self.ranges = {}
             self.math_puzzles = {}
+            self.last_word_by = self.last_word_opened_at = None
+            self.last_word_draft = ""
             self.results = []
             self.ready = set()
             if self.powers:
@@ -764,24 +858,26 @@ class Estimate(Revealed):
         earned = set()  # quem ganhou QI com o chute, antes de Escudo e Roubo: é o "acerto" dos poderes
         exact_guesses = set()
         final_guesses, originals = self._swap_guesses(players)
+        copiers = [p.id for p in players if self._affects("copy", p.id)]
+        nudged = self._apply_nudges(final_guesses, [p.id for p in players if p.id not in copiers])
+        copied = self._apply_copies(final_guesses, copiers)
+        nudged |= self._apply_nudges(final_guesses, copiers)
         for player in players:
             first = self.first_guesses.get(player.id)
             retried = player.id in self.guesses
             guessed = final_guesses.get(player.id)
-            nudged_from = None
-            if guessed and (shift := self._nudge(player.id)):
-                nudged_from = guessed[0]
-                guessed = (round(guessed[0] + shift, 3), guessed[1])
+            copy = copied.get(player.id)
             if guessed is None:
                 error, elapsed = None, ANSWER_SECONDS
             else:
                 error, elapsed = error_percent(q, guessed[0]), max(0.0, guessed[1] - self.phase_started_at)
             scored = None if error is None else self._scored_error(player.id, error)
             delta = guess_points(scored, q.difficulty, self.point_scale)
-            if error == 0:
+            if error == 0 and not copy:
                 exact_guesses.add(player.id)
             if delta > 0:
-                earned.add(player.id)
+                if not copy:  # o acerto foi de outro: não vale para a sequência
+                    earned.add(player.id)
                 if first and retried:
                     delta = int(delta * pw.SECOND_CHANCE_SHARE)
                 if self._affects("sniper", player.id):
@@ -805,14 +901,18 @@ class Estimate(Revealed):
                     robbed=0,
                     doubled=doubled,
                     first_value=first[0] if first and retried else None,
-                    nudged_from=nudged_from,
+                    nudged_from=nudged.get(player.id),
                     swapped_from=originals.get(player.id),
+                    copied_from=copy[0] if copy else None,
+                    copied_own=copy[1] if copy else None,
+                    last_word=0,
                     expired=[],
                     gained=None,
                 )
             )
         if self.powers:
             self._settle_steals(players)
+            self._settle_last_word()
         by_id = {g.player_id: g for g in self.results}
         for player in players:
             player.score += by_id[player.id].total
@@ -839,13 +939,15 @@ class Estimate(Revealed):
         answering = self.phase == "answering"
         retrying = answering and first is not None and mine is None
         ends_at = self.phase_ends_at
+        started_at = self.phase_started_at
         time_up = bool(viewer) and self.time_is_up(viewer, now)
-        if answering and viewer and viewer not in self.guesses and not time_up:
+        if self.last_word_opened_at is not None:
+            started_at = self.last_word_opened_at  # a contagem da palavra final é só dela
+        elif answering and viewer and viewer not in self.guesses and not time_up and viewer != self.last_word_by:
             ends_at = self.phase_started_at + self.answer_window(viewer)  # o seu prazo, não o do alvo
-        peeking = answering and bool(viewer) and self._affects("peek", viewer)
         return EstimateView(
             phase=self.phase,
-            phase_duration_ms=round((ends_at - self.phase_started_at) * 1000),
+            phase_duration_ms=round((ends_at - started_at) * 1000),
             phase_ends_in_ms=max(0, round((ends_at - now) * 1000)),
             round=self.round + 1,
             total_rounds=len(self.questions),
@@ -875,19 +977,33 @@ class Estimate(Revealed):
             armed=self.armed.get(viewer) if viewer else None,
             active=[] if silenced and self.phase == "results" else self._visible_uses(viewer),
             lasting=self._lasting_view(viewer) if viewer and self.phase != "results" else [],
-            peek=(
-                [EstimatePeek(player_id=pid, value=value) for pid, (value, _) in self.guesses.items() if pid != viewer]
-                if peeking
-                else None
-            ),
             range_hint=self.ranges.get(viewer) if answering and viewer else None,
             hot_digits=answer_digits(q.answer) if answering and viewer and self._affects("hot_keys", viewer) else None,
             math=self.math_puzzles.get(viewer) if answering and viewer else None,
             math_watch=self._math_watch(viewer, now) if answering and viewer and not silenced else [],
+            last_word=self._last_word_view() if answering and self.last_word_by and not silenced else None,
             time_up=time_up,
             silenced_rounds=silenced,
             theme_choices=self.theme_choices,
             powers_round=self.powers_round,
+        )
+
+    def _last_word_view(self) -> EstimateLastWord:
+        """Os chutes (e o visor de quem fez contas) só aparecem quando chega a vez da palavra final."""
+        guesses = []
+        if self.last_word_opened_at is not None:
+            answer = self.question.answer
+            values = {pid: guess[0] for pid, guess in self.guesses.items()}
+            values |= {pid: p.value for pid, p in self.math_puzzles.items() if pid not in self.guesses}
+            for pid, value in sorted(values.items(), key=lambda item: item[1]):
+                if pid != self.last_word_by:
+                    side = "exact" if value == answer else "higher" if answer > value else "lower"
+                    guesses.append(LastWordGuess(player_id=pid, value=value, side=side))
+        return EstimateLastWord(
+            player_id=self.last_word_by,
+            open=self.last_word_opened_at is not None,
+            guesses=guesses,
+            draft=self.last_word_draft,
         )
 
     def _math_watch(self, viewer: str, now: float) -> list[MathWatch]:

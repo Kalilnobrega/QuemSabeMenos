@@ -83,7 +83,9 @@ PowerUp = Literal[
     "runaway_keys",
     "short_circuit",
     "double_click",
-    "math",  # só no Chutômetro
+    "math",
+    "last_word",
+    "copy",  # só no Chutômetro
 ]
 GameMode = Literal["classic", "specialist", "teams", "last_standing", "hot_potato", "estimate"]
 MODE_OPTIONS: tuple[GameMode, ...] = ("classic", "specialist", "teams", "last_standing", "hot_potato", "estimate")
@@ -183,6 +185,12 @@ class MathStepsRequest(BaseModel):
     """Matemática: as contas feitas até agora, para quem assiste e para valer se o tempo acabar."""
 
     steps: list[int]
+
+
+class LastWordDraftRequest(BaseModel):
+    """Palavra final: o que está sendo digitado, para a sala assistir."""
+
+    draft: str = Field(max_length=24)
 
 
 class SubmitGuessRequest(BaseModel):
@@ -761,20 +769,16 @@ class EstimateGuess(BaseModel):
     first_value: float | None  # Segunda chance: o primeiro chute, que perdia QI
     nudged_from: float | None  # Empurrão: o chute antes de andar; `value` é onde ele foi parar
     swapped_from: float | None  # Troca-troca: o chute do próprio jogador, antes da troca
+    copied_from: str | None  # Cópia: de quem veio o chute
+    copied_own: float | None  # Cópia: o chute do próprio jogador, que era pior
+    last_word: int  # Palavra final: o QI que a aposta de tudo ou nada tirou ou deu
     expired: list[PowerUp]  # Escudo, Segunda chance ou Reverso que quebraram sem ser usados
     gained: PowerUpGain | None
 
     @property
     def total(self) -> int:
         """Quanto o QI muda nesta pergunta."""
-        return self.delta + self.stolen - self.robbed
-
-
-class EstimatePeek(BaseModel):
-    """Espiar: o chute de outro jogador, ao vivo."""
-
-    player_id: str
-    value: float
+        return self.delta + self.stolen - self.robbed + self.last_word
 
 
 class MathKey(BaseModel):
@@ -799,6 +803,23 @@ class MathWatch(BaseModel):
 
     player_id: str
     math: EstimateMath
+
+
+class LastWordGuess(BaseModel):
+    """Palavra final: o chute de alguém e de que lado está a resposta."""
+
+    player_id: str
+    value: float
+    side: Literal["higher", "lower", "exact"]
+
+
+class EstimateLastWord(BaseModel):
+    """Palavra final: quem fala por último. Os chutes só aparecem quando todos os outros terminaram."""
+
+    player_id: str
+    open: bool
+    guesses: list[LastWordGuess]
+    draft: str  # o que está sendo digitado, ao vivo para a sala
 
 
 class EstimateRange(BaseModel):
@@ -855,11 +876,11 @@ class EstimateView(BaseModel):
     armed: PowerUpUse | None
     active: list[PowerUpUse]
     lasting: list[LastingPowerUp]
-    peek: list[EstimatePeek] | None  # Espiar: os chutes dos outros
     range_hint: EstimateRange | None  # Faixa: só para quem usou, enquanto chuta
     hot_digits: list[str] | None  # Tecla quente: os algarismos da resposta, só para quem usou, enquanto chuta
     math: EstimateMath | None  # Matemática: só para o alvo, enquanto chuta
     math_watch: list[MathWatch]  # Matemática: quem ainda faz contas, para quem já chutou ou ficou sem tempo
+    last_word: EstimateLastWord | None
     time_up: bool  # o seu tempo acabou, mas a pergunta continua porque um alvo da Matemática tem mais
     silenced_rounds: int
     theme_choices: list[str]

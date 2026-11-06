@@ -603,6 +603,14 @@ class RoomManager:
         room.estimate.math_steps(player.id, steps)
         return room
 
+    def last_word_draft(self, sid: str, draft: str) -> Room:
+        """Chutômetro: o que está sendo digitado na Palavra final."""
+        room, player = self._playing(sid)
+        if not room.estimate:
+            raise RoomError("Esse modo não tem palavra final.")
+        room.estimate.last_word_typing(player.id, draft)
+        return room
+
     def choose_theme(self, sid: str, theme: str) -> Room:
         """Especialista: quem foi sorteado escolhe o tema do bloco."""
         room, player = self._playing(sid)

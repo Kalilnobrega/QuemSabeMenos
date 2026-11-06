@@ -22,6 +22,7 @@ from app.events import (
     ErrorAck,
     JoinedAck,
     JoinRoomRequest,
+    LastWordDraftRequest,
     MathStepsRequest,
     OkAck,
     Pong,
@@ -336,6 +337,8 @@ async def run_estimate(room: Room) -> None:
                 await asyncio.wait_for(done.wait(), max(0.0, estimate.deadline() - time.monotonic()))
             if not alive():
                 return
+            if estimate.open_last_word(time.monotonic(), room.connected_ids()):
+                continue  # todos terminaram: a pergunta segue só para a palavra final
             estimate.advance(time.monotonic(), room.players)
             if match_id and estimate.phase == "results":
                 record(history.event, match_id, "question", modes.estimate_question(estimate), time.time())
@@ -588,9 +591,16 @@ async def disarm_powerup(sid: str) -> dict:
 @action(UsePowerUpRequest)
 async def use_powerup(sid: str, request: UsePowerUpRequest) -> dict:
     room = rooms.use_powerup(sid, request.kind, time.monotonic(), request.target_team, request.potato, request.option)
-    if room.hot_potato or room.team_match:
-        return await publish_move(room)  # o poder pode mudar o pavio, passar a batata ou travar um time
+    if room.hot_potato or room.team_match or room.estimate:
+        # O poder pode mudar o pavio, passar a batata, travar um time ou deixar só a palavra final faltando.
+        return await publish_move(room)
     return await publish(room)
+
+
+@sio.event
+@action(LastWordDraftRequest)
+async def last_word_draft(sid: str, request: LastWordDraftRequest) -> dict:
+    return await publish(rooms.last_word_draft(sid, request.draft))
 
 
 @sio.event

@@ -471,6 +471,28 @@ export function PowerUpIcon({ kind, className }: { kind: Kind; className?: strin
       </svg>
     )
   }
+  if (kind === 'copy') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="8" y="2.5" width="13.5" height="15" rx="2.5" fill="var(--color-chalk)" {...ICON_STROKE} />
+        <rect x="2.5" y="6.5" width="13.5" height="15" rx="2.5" fill="#7DD3FC" {...ICON_STROKE} />
+        <path d="M6 12h6.5M6 16h4.5" fill="none" {...ICON_STROKE} strokeWidth={2} />
+      </svg>
+    )
+  }
+  if (kind === 'last_word') {
+    return (
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <path
+          d="M4 3.5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-9l-5 4v-4H4a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2Z"
+          fill="#FCD34D"
+          {...ICON_STROKE}
+        />
+        <path d="M12 6.5v5.5" fill="none" {...ICON_STROKE} strokeWidth={2.6} />
+        <circle cx="12" cy="14.7" r="1" fill="var(--color-ink)" />
+      </svg>
+    )
+  }
   if (kind === 'math') {
     return (
       <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
@@ -1178,10 +1200,11 @@ export function InstantPowerUps({
 }) {
   const [error, setError] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
-  const kinds = [...new Set(game.powerups.filter((kind) => INSTANT.includes(kind)))]
+  const hand = [...game.powerups, ...game.mythic_powerups]
+  const kinds = [...new Set(hand.filter((kind) => INSTANT.includes(kind)))]
   if (!game.powers_round || kinds.length === 0) return null
   const inUse = (kind: Kind) => game.active.some((u) => u.kind === kind && u.by === playerId)
-  const count = (kind: Kind) => game.powerups.filter((k) => k === kind).length
+  const count = (kind: Kind) => hand.filter((k) => k === kind).length
 
   return (
     <div className="flex items-center justify-end gap-2">
@@ -1330,7 +1353,7 @@ export function PowerUpBar({
           </>
         )}
         <div className="flex gap-2">
-          {!MYTHIC_TARGET_PROMPT[selected.kind] && (
+          {!MYTHIC_TARGET_PROMPT[selected.kind] && !INSTANT.includes(selected.kind) && (
             <button
               onClick={() => void arm(selected.kind, null)}
               className="btn-3d btn-sm mythic flex-1 rounded-xl py-2 font-display text-lg"

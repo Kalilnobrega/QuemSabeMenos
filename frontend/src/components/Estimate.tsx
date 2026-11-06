@@ -8,7 +8,7 @@ import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView, PowerUpUse } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
 import { AnsweredRow } from './Answered'
-import { DIGIT_KEYS, draftValue } from '../lib/guessDraft'
+import { DIGIT_KEYS, draftValue, formatDraft } from '../lib/guessDraft'
 import { EstimateKeypad, MathKeypad, MathWatchPanel } from './EstimateKeypad'
 import { EstimateRuler } from './EstimateRuler'
 import { CountUp, FactCard, Podium, Ranking } from './Game'
@@ -21,6 +21,7 @@ interface Props {
   playerId: string | null
   onGuess: (value: number) => Promise<string | null>
   onMathSteps: (steps: number[]) => Promise<string | null>
+  onLastWordDraft: (draft: string) => Promise<string | null>
   onSkip: () => Promise<string | null>
   onArm: (
     kind: PowerUpUse['kind'],
@@ -36,12 +37,13 @@ interface Props {
 
 const SELF_LINES: Partial<Record<Kind, string>> = {
   shield: 'Seu Escudo está ativo por até 2 perguntas: o primeiro chute que perderia QI não tira nada.',
-  peek: 'Espiar: veja os chutes dos outros ao vivo.',
+  copy: 'Cópia: chute normalmente. Se alguém chegar mais perto, você fica com o chute dessa pessoa.',
   second_chance: 'Segunda chance nesta e na próxima: se o chute perder QI, você tenta de novo.',
   range: 'Faixa: a resposta está no intervalo acima do teclado.',
   wide_margin: 'Margem larga: nesta pergunta, sua zona de ganho é o dobro.',
   hot_keys: 'Tecla quente: as teclas acesas são algarismos da resposta.',
   sniper: 'Sniper: zona de ganho pela metade e ganho em dobro. Mire bem!',
+  last_word: 'Palavra final: você chuta por último. É tudo ou nada!',
 }
 const BROKEN_KEYS = 3
 const DOUBLE_KEYS = 3
@@ -82,6 +84,7 @@ export function Estimate({
   playerId,
   onGuess,
   onMathSteps,
+  onLastWordDraft,
   onSkip,
   onArm,
   onDisarm,
@@ -107,6 +110,7 @@ export function Estimate({
       playerId={playerId}
       onGuess={onGuess}
       onMathSteps={onMathSteps}
+      onLastWordDraft={onLastWordDraft}
       onSkip={onSkip}
       onArm={onArm}
       onDisarm={onDisarm}
@@ -139,6 +143,7 @@ interface RoundProps {
   playerId: string | null
   onGuess: Props['onGuess']
   onMathSteps: Props['onMathSteps']
+  onLastWordDraft: Props['onLastWordDraft']
   onSkip: Props['onSkip']
   onArm: Props['onArm']
   onDisarm: Props['onDisarm']
@@ -151,6 +156,7 @@ function EstimateRound({
   playerId,
   onGuess,
   onMathSteps,
+  onLastWordDraft,
   onSkip,
   onArm,
   onDisarm,
@@ -166,7 +172,10 @@ function EstimateRound({
   const remaining = useRemaining(receivedAt, estimate.phase_ends_in_ms, answering || results)
   const guessed = estimate.my_guess !== null && estimate.my_guess !== undefined
   const silenced = estimate.silenced_rounds > 0
-  useUrgentTick(remaining, answering && !guessed && !estimate.time_up && !silenced)
+  const lastWord = estimate.last_word
+  const speaking = lastWord?.player_id === playerId
+  const lastWordOpen = !!lastWord?.open
+  useUrgentTick(remaining, answering && !guessed && !estimate.time_up && !silenced && (!speaking || lastWordOpen))
   const mine = estimate.guesses.find((g) => g.player_id === playerId)
   // A sabotagem lendária não tem alvo: pega todos menos quem jogou.
   const hitsMe = (use: PowerUpUse) => (use.legendary ? use.by !== playerId : use.target === playerId)
@@ -178,6 +187,15 @@ function EstimateRound({
   useEffect(() => {
     if (answering) playSound('answersOpen')
   }, [answering])
+  // Palavra final: chegou a vez, e a sala assiste ao que é digitado.
+  useEffect(() => {
+    if (speaking && lastWordOpen) playSound('powerHit')
+  }, [speaking, lastWordOpen])
+  useEffect(() => {
+    if (speaking && lastWordOpen && draft) void onLastWordDraft(draft)
+    // Só quando o rascunho muda.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [draft])
   useEffect(() => {
     if (!shorted || guessed) return
     playSound('keyShort')
@@ -285,6 +303,9 @@ function EstimateRound({
           ) : (
             <p className="font-display text-2xl text-danger">Seu tempo acabou!</p>
           )}
+          {lastWord && !speaking && (
+            <LastWordPanel lastWord={lastWord} players={room.players} playerId={playerId} unit={estimate.unit} />
+          )}
           {estimate.math_watch.map(({ player_id, math }) => (
             <MathWatchPanel
               key={player_id}
@@ -295,8 +316,19 @@ function EstimateRound({
           ))}
           {!silenced && <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />}
         </div>
+      ) : speaking && !lastWordOpen ? (
+        <div className="flex flex-col items-center gap-3">
+          <p className="text-center font-display text-2xl text-brand">A palavra final é sua!</p>
+          <p className="text-center text-sm text-steel">
+            Quando todos chutarem, você vê os chutes e de que lado está a resposta, e tem 10 segundos.
+          </p>
+          <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />
+        </div>
       ) : (
         <div className="flex flex-col gap-3">
+          {lastWord && speaking && (
+            <LastWordPanel lastWord={lastWord} players={room.players} playerId={playerId} unit={estimate.unit} />
+          )}
           {estimate.first_guess !== null && (
             <p className="rounded-xl bg-panel px-3 py-2 text-center text-sm text-chalk">
               {withUnit(estimate.first_guess, estimate.unit)} perde QI. A resposta é{' '}
@@ -311,7 +343,6 @@ function EstimateRound({
               <strong className="text-brand">{withUnit(estimate.range_hint.high, estimate.unit)}</strong>.
             </p>
           )}
-          {estimate.peek && <PeekList peek={estimate.peek} players={room.players} unit={estimate.unit} />}
           {estimate.math ? (
             <MathKeypad
               puzzle={estimate.math}
@@ -359,32 +390,52 @@ function guessLabel(guess: EstimateGuess, maxLoss: number) {
   return `Errou por ${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 }).format(guess.error_percent ?? 0)}%`
 }
 
-/** Espiar: os chutes dos outros, ao vivo. */
-function PeekList({
-  peek,
+const LAST_WORD_SIDE = { higher: '↑ mais alta', lower: '↓ mais baixa', exact: 'Cravou!' }
+
+/** Palavra final: os chutes e de que lado está a resposta; para a sala, também o que está sendo digitado. */
+function LastWordPanel({
+  lastWord,
   players,
+  playerId,
   unit,
 }: {
-  peek: NonNullable<EstimateView['peek']>
+  lastWord: NonNullable<EstimateView['last_word']>
   players: PlayerView[]
+  playerId: string | null
   unit: EstimateView['unit']
 }) {
-  if (peek.length === 0) return <p className="text-center text-sm text-steel">Espiando: ninguém chutou ainda.</p>
+  const speaking = lastWord.player_id === playerId
+  const speaker = players.find((p) => p.id === lastWord.player_id)
+  if (!lastWord.open) {
+    return <p className="text-center text-sm text-steel">{speaker?.nickname} tem a palavra final e chuta por último.</p>
+  }
   return (
-    <ul className="flex flex-wrap justify-center gap-1.5" aria-label="Chutes dos outros">
-      {peek.map(({ player_id, value }) => {
-        const player = players.find((p) => p.id === player_id)
-        return (
-          <li
-            key={player_id}
-            className="flex items-center gap-1 rounded-full bg-panel py-0.5 pr-2.5 pl-1 text-sm font-semibold"
-          >
-            {player && <img src={avatarUrl(player)} alt={player.nickname} className="size-6" />}
-            {withUnit(value, unit)}
-          </li>
-        )
-      })}
-    </ul>
+    <div className="mythic flex w-full flex-col gap-2 rounded-xl p-3">
+      <p className="text-center font-display text-lg tracking-wide">
+        {speaking ? 'Chegue mais perto que todos!' : `A palavra final de ${speaker?.nickname}`}
+      </p>
+      {!speaking && (
+        <p className="text-center font-display text-4xl" aria-live="polite">
+          {lastWord.draft ? formatDraft(lastWord.draft) : '…'}
+          {unit && <span className="ml-2 font-sans text-sm font-semibold">{unit}</span>}
+        </p>
+      )}
+      <ul className="flex flex-col gap-1" aria-label="Chutes dos outros">
+        {lastWord.guesses.map(({ player_id, value, side }) => {
+          const player = players.find((p) => p.id === player_id)
+          return (
+            <li
+              key={player_id}
+              className="flex items-center gap-2 rounded-lg bg-ink/40 px-2 py-1 text-sm font-semibold"
+            >
+              {player && <img src={avatarUrl(player)} alt="" className="size-6" />}
+              <span className="min-w-0 flex-1 truncate">{withUnit(value, unit)}</span>
+              <span className="whitespace-nowrap">{LAST_WORD_SIDE[side]}</span>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 
@@ -395,7 +446,7 @@ function guessVerdict(guess: EstimateGuess) {
 }
 
 /** Quanto o QI mudou nesta pergunta, com os poderes. */
-const guessTotal = (guess: EstimateGuess) => guess.delta + guess.stolen - guess.robbed
+const guessTotal = (guess: EstimateGuess) => guess.delta + guess.stolen - guess.robbed + guess.last_word
 
 /** O que os poderes fizeram na revelação. */
 function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: string | null): BannerItem[] {
@@ -437,6 +488,31 @@ function powerNotes(estimate: EstimateView, players: PlayerView[], playerId: str
     }
     if (guess.nudged_from !== null) {
       note('nudge', 'nudge', 'Levou um Empurrão', `O chute era ${withUnit(guess.nudged_from, estimate.unit)}`)
+    }
+    if (guess.last_word) {
+      const speaker = estimate.active.some((use) => use.kind === 'last_word' && use.by === id)
+      note(
+        'last-word',
+        'last_word',
+        speaker ? (guess.last_word > 0 ? 'A palavra final venceu' : 'A palavra final perdeu') : 'Palavra final',
+        speaker
+          ? guess.last_word > 0
+            ? 'Chegou mais perto que todos'
+            : 'Não chegou mais perto que todos'
+          : guess.last_word > 0
+            ? 'Recebeu de quem falou por último'
+            : 'Pagou para quem falou por último',
+        guess.last_word,
+        'mythic',
+      )
+    }
+    if (guess.copied_from) {
+      note(
+        'copy',
+        'copy',
+        `Copiou ${who(guess.copied_from) === 'Você' ? 'você' : who(guess.copied_from)}`,
+        `O chute era ${withUnit(guess.copied_own ?? 0, estimate.unit)}`,
+      )
     }
     if (guess.swapped_from !== null) {
       note('swap', 'swap', 'Troca-troca', `O chute era ${withUnit(guess.swapped_from, estimate.unit)}`)

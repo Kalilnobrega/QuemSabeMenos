@@ -69,7 +69,9 @@ export interface ArmPowerUpRequest {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
-    | "math";
+    | "math"
+    | "last_word"
+    | "copy";
   target?: string | null;
   legendary?: boolean;
   theme?: string | null;
@@ -199,6 +201,9 @@ export interface EstimateGuess {
   first_value: number | null;
   nudged_from: number | null;
   swapped_from: number | null;
+  copied_from: string | null;
+  copied_own: number | null;
+  last_word: number;
   expired: (
     | "fifty_fifty"
     | "shield"
@@ -254,6 +259,8 @@ export interface EstimateGuess {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   gained: PowerUpGain | null;
 }
@@ -316,10 +323,35 @@ export interface PowerUpGain {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
-    | "math";
+    | "math"
+    | "last_word"
+    | "copy";
   reason: "start" | "streak" | "comeback" | "ghost" | "bet" | "elimination" | "exact";
   legendary?: boolean;
   mythic?: boolean;
+}
+/**
+ * Palavra final: quem fala por último. Os chutes só aparecem quando todos os outros terminaram.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "EstimateLastWord".
+ */
+export interface EstimateLastWord {
+  player_id: string;
+  open: boolean;
+  guesses: LastWordGuess[];
+  draft: string;
+}
+/**
+ * Palavra final: o chute de alguém e de que lado está a resposta.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "LastWordGuess".
+ */
+export interface LastWordGuess {
+  player_id: string;
+  value: number;
+  side: "higher" | "lower" | "exact";
 }
 /**
  * Matemática: o número que começa no visor, as teclas que substituem o teclado e as contas até agora.
@@ -343,16 +375,6 @@ export interface MathKey {
   op: "add" | "sub" | "mul" | "div" | "square" | "sqrt";
   value: number | null;
   uses: number;
-}
-/**
- * Espiar: o chute de outro jogador, ao vivo.
- *
- * This interface was referenced by `Events`'s JSON-Schema
- * via the `definition` "EstimatePeek".
- */
-export interface EstimatePeek {
-  player_id: string;
-  value: number;
 }
 /**
  * Faixa: um intervalo que contém a resposta, sem ela no meio.
@@ -462,6 +484,8 @@ export interface EstimateView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -518,6 +542,8 @@ export interface EstimateView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -574,6 +600,8 @@ export interface EstimateView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   powerup_max: number;
   power_run: number;
@@ -634,17 +662,19 @@ export interface EstimateView {
         | "short_circuit"
         | "double_click"
         | "math"
+        | "last_word"
+        | "copy"
       )
     | null;
   can_arm: boolean;
   armed: PowerUpUse | null;
   active: PowerUpUse[];
   lasting: LastingPowerUp[];
-  peek: EstimatePeek[] | null;
   range_hint: EstimateRange | null;
   hot_digits: string[] | null;
   math: EstimateMath | null;
   math_watch: MathWatch[];
+  last_word: EstimateLastWord | null;
   time_up: boolean;
   silenced_rounds: number;
   theme_choices: string[];
@@ -709,7 +739,9 @@ export interface PowerUpUse {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
-    | "math";
+    | "math"
+    | "last_word"
+    | "copy";
   by: string;
   target: string | null;
   reflected_by: string | null;
@@ -777,7 +809,9 @@ export interface LastingPowerUp {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
-    | "math";
+    | "math"
+    | "last_word"
+    | "copy";
   rounds_left: number;
   total: number;
 }
@@ -884,6 +918,8 @@ export interface GameView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -940,6 +976,8 @@ export interface GameView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -996,6 +1034,8 @@ export interface GameView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   revivals: Revival[];
   duels: DuelChallenge[];
@@ -1059,6 +1099,8 @@ export interface GameView {
         | "short_circuit"
         | "double_click"
         | "math"
+        | "last_word"
+        | "copy"
       )
     | null;
   can_arm: boolean;
@@ -1181,6 +1223,8 @@ export interface RoundResult {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   gained: PowerUpGain | null;
   bet_gained?: PowerUpGain | null;
@@ -1297,6 +1341,8 @@ export interface HotPotatoView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1353,6 +1399,8 @@ export interface HotPotatoView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   powerup_max: number;
   starting_powerup:
@@ -1411,6 +1459,8 @@ export interface HotPotatoView {
         | "short_circuit"
         | "double_click"
         | "math"
+        | "last_word"
+        | "copy"
       )
     | null;
   shielded: string[];
@@ -1664,6 +1714,8 @@ export interface SurvivalView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   legendary_powerups: (
     | "fifty_fifty"
@@ -1720,6 +1772,8 @@ export interface SurvivalView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -1776,6 +1830,8 @@ export interface SurvivalView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   powerup_max: number;
   power_run?: number;
@@ -1836,6 +1892,8 @@ export interface SurvivalView {
         | "short_circuit"
         | "double_click"
         | "math"
+        | "last_word"
+        | "copy"
       )
     | null;
   can_arm: boolean;
@@ -2005,6 +2063,8 @@ export interface TeamMatchView {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   silenced: boolean;
   peeking: number | null;
@@ -2090,6 +2150,8 @@ export interface TeamSide {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   mythic_powerups: (
     | "fifty_fifty"
@@ -2146,6 +2208,8 @@ export interface TeamSide {
     | "short_circuit"
     | "double_click"
     | "math"
+    | "last_word"
+    | "copy"
   )[];
   powerup_max: number;
   armed: TeamPowerUse | null;
@@ -2236,7 +2300,9 @@ export interface TeamPowerUse {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
-    | "math";
+    | "math"
+    | "last_word"
+    | "copy";
   by: string;
   by_team: number;
   target_team?: number | null;
@@ -2393,7 +2459,9 @@ export interface UsePowerUpRequest {
     | "runaway_keys"
     | "short_circuit"
     | "double_click"
-    | "math";
+    | "math"
+    | "last_word"
+    | "copy";
   target_team?: number | null;
   potato?: number | null;
   option?: number | null;

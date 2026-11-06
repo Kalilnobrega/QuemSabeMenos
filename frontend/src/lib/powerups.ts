@@ -24,7 +24,7 @@ export type PowerView = Pick<
   | 'power_run_goal'
 >
 
-export const INSTANT: Kind[] = ['fifty_fifty', 'peek', 'range', 'sniper']
+export const INSTANT: Kind[] = ['fifty_fifty', 'peek', 'range', 'sniper', 'last_word']
 
 export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: boolean; tone: string }> = {
   fifty_fifty: {
@@ -333,6 +333,18 @@ export const POWERUP_INFO: Record<Kind, { name: string; hint: string; targeted: 
     targeted: true,
     tone: 'bg-fuchsia-400/15 text-fuchsia-200',
   },
+  copy: {
+    name: 'Cópia',
+    hint: 'Na próxima pergunta, você chuta normalmente. Na revelação, se alguém chegou mais perto, seu chute vira o melhor da sala. Não vale para a sequência nem dá poder por cravada, e quem não chutar não copia.',
+    targeted: false,
+    tone: 'bg-sky-300/15 text-sky-100',
+  },
+  last_word: {
+    name: 'Palavra final',
+    hint: 'Use na hora da pergunta: você chuta por último, vendo os chutes de todos e de que lado está a resposta, com 10 segundos e a sala assistindo. É tudo ou nada: mais perto que todos, você tira 10 de QI de cada um; senão, paga 10 a cada um.',
+    targeted: false,
+    tone: 'bg-amber-300/15 text-amber-100',
+  },
   math: {
     name: 'Matemática',
     hint: 'O teclado do alvo vira 9 teclas de conta, como +3, ×4 e ÷6, com 1 a 3 usos cada, e o visor começa num número sorteado. Ele tem 30 segundos para fazer contas até a resposta, e quem já chutou assiste ao vivo. O Reverso não segura.',
@@ -392,7 +404,6 @@ export const POTATO_HINTS: Partial<Record<Kind, string>> = {
 export const ESTIMATE_HINTS: Partial<Record<Kind, string>> = {
   shield: 'Vale por até 2 perguntas: no primeiro chute que perderia QI, não perde. Se não precisar, quebra.',
   double: 'A próxima vale o dobro, para o bem e para o mal (na difícil, a perda é o triplo).',
-  peek: 'Use na hora da pergunta, pelo ícone: veja os chutes dos outros ao vivo.',
   second_chance:
     'Vale nas próximas 2 perguntas: se o chute perder QI, você descobre se a resposta é mais alta ou mais baixa e chuta de novo, valendo metade.',
   steal: 'Na próxima, você tira 10 de QI do alvo e, se ele ganhar QI, mais metade do que ganhar.',

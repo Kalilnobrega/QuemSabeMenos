@@ -58,7 +58,9 @@
             "runaway_keys",
             "short_circuit",
             "double_click",
-            "math"
+            "math",
+            "last_word",
+            "copy"
           ],
           "type": "string"
         },
@@ -510,6 +512,29 @@
             }
           ]
         },
+        "copied_from": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "copied_own": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "last_word": {
+          "type": "integer"
+        },
         "expired": {
           "items": {
             "enum": [
@@ -566,7 +591,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -597,10 +624,41 @@
         "first_value",
         "nudged_from",
         "swapped_from",
+        "copied_from",
+        "copied_own",
+        "last_word",
         "expired",
         "gained"
       ],
       "title": "EstimateGuess",
+      "type": "object"
+    },
+    "EstimateLastWord": {
+      "description": "Palavra final: quem fala por último. Os chutes só aparecem quando todos os outros terminaram.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "open": {
+          "type": "boolean"
+        },
+        "guesses": {
+          "items": {
+            "$ref": "#/$defs/LastWordGuess"
+          },
+          "type": "array"
+        },
+        "draft": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "player_id",
+        "open",
+        "guesses",
+        "draft"
+      ],
+      "title": "EstimateLastWord",
       "type": "object"
     },
     "EstimateMath": {
@@ -632,23 +690,6 @@
         "value"
       ],
       "title": "EstimateMath",
-      "type": "object"
-    },
-    "EstimatePeek": {
-      "description": "Espiar: o chute de outro jogador, ao vivo.",
-      "properties": {
-        "player_id": {
-          "type": "string"
-        },
-        "value": {
-          "type": "number"
-        }
-      },
-      "required": [
-        "player_id",
-        "value"
-      ],
-      "title": "EstimatePeek",
       "type": "object"
     },
     "EstimateRange": {
@@ -905,7 +946,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -967,7 +1010,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -1029,7 +1074,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -1101,7 +1148,9 @@
                 "runaway_keys",
                 "short_circuit",
                 "double_click",
-                "math"
+                "math",
+                "last_word",
+                "copy"
               ],
               "type": "string"
             },
@@ -1134,19 +1183,6 @@
             "$ref": "#/$defs/LastingPowerUp"
           },
           "type": "array"
-        },
-        "peek": {
-          "anyOf": [
-            {
-              "items": {
-                "$ref": "#/$defs/EstimatePeek"
-              },
-              "type": "array"
-            },
-            {
-              "type": "null"
-            }
-          ]
         },
         "range_hint": {
           "anyOf": [
@@ -1186,6 +1222,16 @@
             "$ref": "#/$defs/MathWatch"
           },
           "type": "array"
+        },
+        "last_word": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EstimateLastWord"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "time_up": {
           "type": "boolean"
@@ -1235,11 +1281,11 @@
         "armed",
         "active",
         "lasting",
-        "peek",
         "range_hint",
         "hot_digits",
         "math",
         "math_watch",
+        "last_word",
         "time_up",
         "silenced_rounds",
         "theme_choices",
@@ -1393,7 +1439,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -1455,7 +1503,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -1517,7 +1567,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -1613,7 +1665,9 @@
                 "runaway_keys",
                 "short_circuit",
                 "double_click",
-                "math"
+                "math",
+                "last_word",
+                "copy"
               ],
               "type": "string"
             },
@@ -2053,7 +2107,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -2115,7 +2171,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -2181,7 +2239,9 @@
                 "runaway_keys",
                 "short_circuit",
                 "double_click",
-                "math"
+                "math",
+                "last_word",
+                "copy"
               ],
               "type": "string"
             },
@@ -2302,6 +2362,32 @@
       "title": "JoinedAck",
       "type": "object"
     },
+    "LastWordGuess": {
+      "description": "Palavra final: o chute de alguém e de que lado está a resposta.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "side": {
+          "enum": [
+            "higher",
+            "lower",
+            "exact"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "player_id",
+        "value",
+        "side"
+      ],
+      "title": "LastWordGuess",
+      "type": "object"
+    },
     "LastingPowerUp": {
       "description": "Poder que vale por algumas perguntas (Tempo extra, Escudo, Segunda chance, Reverso).",
       "properties": {
@@ -2360,7 +2446,9 @@
             "runaway_keys",
             "short_circuit",
             "double_click",
-            "math"
+            "math",
+            "last_word",
+            "copy"
           ],
           "type": "string"
         },
@@ -2759,7 +2847,9 @@
             "runaway_keys",
             "short_circuit",
             "double_click",
-            "math"
+            "math",
+            "last_word",
+            "copy"
           ],
           "type": "string"
         },
@@ -2848,7 +2938,9 @@
             "runaway_keys",
             "short_circuit",
             "double_click",
-            "math"
+            "math",
+            "last_word",
+            "copy"
           ],
           "type": "string"
         },
@@ -3369,7 +3461,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -3816,7 +3910,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -3878,7 +3974,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -3940,7 +4038,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -4014,7 +4114,9 @@
                 "runaway_keys",
                 "short_circuit",
                 "double_click",
-                "math"
+                "math",
+                "last_word",
+                "copy"
               ],
               "type": "string"
             },
@@ -4476,7 +4578,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -4652,7 +4756,9 @@
             "runaway_keys",
             "short_circuit",
             "double_click",
-            "math"
+            "math",
+            "last_word",
+            "copy"
           ],
           "type": "string"
         },
@@ -4855,7 +4961,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -4917,7 +5025,9 @@
               "runaway_keys",
               "short_circuit",
               "double_click",
-              "math"
+              "math",
+              "last_word",
+              "copy"
             ],
             "type": "string"
           },
@@ -5271,7 +5381,9 @@
             "runaway_keys",
             "short_circuit",
             "double_click",
-            "math"
+            "math",
+            "last_word",
+            "copy"
           ],
           "type": "string"
         },

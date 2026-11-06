@@ -6,8 +6,10 @@ import pytest
 from app import powerups
 from app.estimate import (
     ANSWER_SECONDS,
+    LAST_WORD_SECONDS,
     LEGENDARY,
     MATH_SECONDS,
+    MYTHICS,
     POWERS,
     Estimate,
     EstimateError,
@@ -21,6 +23,7 @@ from app.estimate import (
     load_estimates,
     math_path,
 )
+from app.events import PowerUpUse
 
 
 @dataclass
@@ -358,30 +361,6 @@ def test_silence_hides_time_guesses_and_reveal_for_two_questions():
     assert game.view(game.phase_started_at, "b").answer == 100
 
 
-def test_peek_shows_other_guesses_live_and_is_spent_during_the_question():
-    a, b = P("a"), P("b")
-    game = powered()
-    ask(game, [a, b], a=100, b=100)
-    game.advance(game.phase_ends_at, [a, b])
-    at = game.phase_started_at
-    game.guess("b", 150, at + 1)
-    assert game.view(at + 1, "a").peek is None
-    game.held["a"] = ["peek"]
-    game.use_now("a", "peek")
-    assert game.held["a"] == []
-    peek = game.view(at + 1, "a").peek
-    assert [(p.player_id, p.value) for p in peek] == [("b", 150)]
-    assert game.view(at + 1, "b").peek is None
-
-
-def test_peek_is_not_armed_in_the_reveal():
-    game = powered()
-    ask(game, [P("a")], a=100)
-    game.held["a"] = ["peek"]
-    with pytest.raises(EstimateError):
-        game.arm("a", "peek", None, ["a"], None)
-
-
 def test_three_earning_guesses_in_a_row_give_a_power():
     a = P("a")
     game = powered()
@@ -571,7 +550,7 @@ def test_new_powers_stay_out_of_the_other_modes():
 
 
 def test_powers_taken_out_of_this_mode_stay_out():
-    assert not {"investment", "scramble", "magnifier", "accelerator", "flashbang"} & set(POWERS)
+    assert not {"investment", "scramble", "magnifier", "accelerator", "flashbang", "peek"} & set(POWERS)
 
 
 def test_nudge_stays_between_10_and_30_percent_on_both_sides():
@@ -924,7 +903,7 @@ def test_math_needs_a_target_and_goes_back_to_the_mythics_when_disarmed():
 
 
 def test_gained_power_can_come_mythic_and_math_is_never_common_or_legendary():
-    assert "math" not in POWERS and "math" not in LEGENDARY
+    assert not set(MYTHICS) & set(POWERS) and not set(MYTHICS) & set(LEGENDARY)
 
     class Lucky(random.Random):
         def random(self) -> float:
@@ -936,7 +915,7 @@ def test_gained_power_can_come_mythic_and_math_is_never_common_or_legendary():
     for _ in range(3):
         ask(game, [a], a=115)
     gained = result(game, "a").gained
-    assert gained.mythic and not gained.legendary and gained.kind == "math" and game.mythics["a"] == ["math"]
+    assert gained.mythic and not gained.legendary and gained.kind in MYTHICS and game.mythics["a"] == [gained.kind]
 
 
 def test_mythics_take_up_space_in_the_hand():
@@ -1043,3 +1022,243 @@ def test_without_math_nobody_gets_extra_time():
     ask(game, [a, b], a=110, b=110)
     game.advance(game.phase_ends_at, [a, b])
     assert game.others_time_up_at() is None and game.phase_ends_at == game.phase_started_at + ANSWER_SECONDS
+
+
+# --- mítico: Palavra final -----------------------------------------------------------
+
+
+def last_word_round(game: Estimate, players: list[P]) -> float:
+    """Abre uma pergunta e a usa para a; devolve quando ela começou."""
+    ask(game, players, **{p.id: 110 for p in players})
+    game.advance(game.phase_ends_at, players)
+    game.mythics["a"] = ["last_word"]
+    game.use_now("a", "last_word")
+    return game.phase_started_at
+
+
+def test_last_word_waits_for_the_others_and_then_shows_the_guesses_and_sides():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    at = last_word_round(game, [a, b, c])
+    assert game.mythics["a"] == [] and game.view(at, "b").last_word.player_id == "a"
+    with pytest.raises(EstimateError):
+        game.guess("a", 100, at + 1)
+    game.guess("b", 70, at + 1)
+    assert game.view(at + 1, "a").last_word.guesses == []  # só depois de todos
+    assert not game.everyone_answered(["a", "b", "c"], at + 1)
+    assert not game.open_last_word(at + 1, ["b", "c"])  # sem ele na sala, não abre
+    game.guess("c", 130, at + 2)
+    assert game.everyone_answered(["a", "b", "c"], at + 2)
+    assert game.open_last_word(at + 2, ["a", "b", "c"])
+    assert not game.everyone_answered(["a", "b", "c"], at + 3)
+    view = game.view(at + 2, "a")
+    assert view.last_word.open and view.phase_ends_in_ms == round(LAST_WORD_SECONDS * 1000)
+    assert view.phase_duration_ms == round(LAST_WORD_SECONDS * 1000)
+    assert [(g.player_id, g.value, g.side) for g in view.last_word.guesses] == [
+        ("b", 70, "higher"),
+        ("c", 130, "lower"),
+    ]
+    game.guess("a", 100, at + 3)
+    assert game.everyone_answered(["a", "b", "c"], at + 3)
+
+
+def test_last_word_opens_when_the_others_run_out_of_time():
+    a, b = P("a"), P("b")
+    game = powered()
+    at = last_word_round(game, [a, b])
+    assert game.others_time_up_at() == pytest.approx(at + ANSWER_SECONDS + 1)
+    assert game.everyone_answered(["a", "b"], at + ANSWER_SECONDS + 2)
+    assert game.open_last_word(at + ANSWER_SECONDS + 2, ["a", "b"])
+    assert game.others_time_up_at() is None
+    with pytest.raises(EstimateError):
+        game.guess("b", 100, at + ANSWER_SECONDS + 3)
+
+
+def finish_last_word(game: Estimate, players: list[P], at: float, speaker: float | None, **others: float) -> None:
+    for pid, value in others.items():
+        game.guess(pid, value, at + 1)
+    assert game.open_last_word(at + 2, [p.id for p in players])
+    if speaker is not None:
+        game.guess("a", speaker, at + 3)
+    game.advance(at + 3, players)
+
+
+def test_last_word_closest_takes_iq_from_each_of_the_others():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    at = last_word_round(game, [a, b, c])
+    finish_last_word(game, [a, b, c], at, 100, b=90, c=120)
+    assert result(game, "a").last_word == 20
+    assert result(game, "b").last_word == -10 and result(game, "c").last_word == -10
+    assert result(game, "a").total == result(game, "a").delta + 20
+
+
+def test_last_word_not_closest_pays_each_of_the_others():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    at = last_word_round(game, [a, b, c])
+    before = a.score
+    finish_last_word(game, [a, b, c], at, 150, b=100, c=170)
+    assert result(game, "a").last_word == -20 and result(game, "b").last_word == 10
+    assert a.score == before + result(game, "a").delta - 20
+
+
+def test_last_word_a_tie_goes_to_the_speaker_and_silence_loses():
+    a, b = P("a"), P("b")
+    game = powered()
+    at = last_word_round(game, [a, b])
+    finish_last_word(game, [a, b], at, 110, b=110)
+    assert result(game, "a").last_word == 10
+    at = last_word_round(game, [a, b])
+    finish_last_word(game, [a, b], at, None, b=170)
+    assert result(game, "a").value is None and result(game, "a").last_word == -10
+
+
+def test_last_word_stake_shrinks_in_big_rooms():
+    players = [P(pid) for pid in "abcdefghi"]
+    game = powered()
+    at = last_word_round(game, players)
+    finish_last_word(game, players, at, 100, **{p.id: 150 for p in players[1:]})
+    assert result(game, "a").last_word == 40 and result(game, "b").last_word == -5
+
+
+def test_last_word_is_one_per_question_and_not_for_math_targets():
+    a, b = P("a"), P("b")
+    game = powered()
+    last_word_round(game, [a, b])
+    game.mythics["b"] = ["last_word"]
+    with pytest.raises(EstimateError):
+        game.use_now("b", "last_word")
+    game = powered()
+    at = math_round(game, [a, b])
+    game.mythics["b"] = ["last_word"]
+    with pytest.raises(EstimateError):
+        game.use_now("b", "last_word")
+    assert at is not None
+
+
+def test_last_word_is_not_armed_and_typing_is_only_for_the_speaker_after_it_opens():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    game.mythics["a"] = ["last_word"]
+    with pytest.raises(EstimateError):
+        game.arm("a", "last_word", None, ["a", "b"], None)
+    game.advance(game.phase_ends_at, [a, b])
+    game.use_now("a", "last_word")
+    at = game.phase_started_at
+    with pytest.raises(EstimateError):
+        game.last_word_typing("a", "1")
+    game.guess("b", 100, at + 1)
+    game.open_last_word(at + 1, ["a", "b"])
+    with pytest.raises(EstimateError):
+        game.last_word_typing("b", "1")
+    game.last_word_typing("a", "12")
+    assert game.view(at + 1, "b").last_word.draft == "12"
+    game.guess("a", 12, at + 2)
+    game.advance(at + 2, [a, b])
+    game.advance(game.phase_ends_at, [a, b])
+    assert game.last_word_by is None and game.last_word_draft == ""
+
+
+# --- Cópia ---------------------------------------------------------------------------
+
+
+def test_copy_takes_the_best_guess_when_it_beats_your_own():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=110, b=110, c=110)
+    give(game, "a", "copy", ids=("a", "b", "c"))
+    ask(game, [a, b, c], a=170, b=105, c=130)
+    copied = result(game, "a")
+    assert copied.value == 105 and copied.copied_from == "b" and copied.copied_own == 170
+    assert copied.delta == result(game, "b").delta > 0
+
+
+def test_copy_keeps_your_guess_when_nobody_is_better():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give(game, "a", "copy")
+    ask(game, [a, b], a=105, b=170)
+    assert result(game, "a").value == 105 and result(game, "a").copied_from is None
+    give(game, "a", "copy")
+    ask(game, [a, b], a=105, b=105)  # empate: fica com o seu
+    assert result(game, "a").copied_from is None
+
+
+def test_copy_needs_your_own_guess():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give(game, "a", "copy")
+    ask(game, [a, b], b=100)
+    assert result(game, "a").value is None and result(game, "a").copied_from is None
+
+
+def test_copied_guess_counts_for_iq_but_not_for_the_streak_or_the_exact_power():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give(game, "a", "copy")
+    ask(game, [a, b], a=170, b=100)
+    copied = result(game, "a")
+    assert copied.exact and copied.delta > 0 and copied.gained is None
+    assert game.right_runs["a"] == 0
+    assert result(game, "b").gained is not None and result(game, "b").gained.reason == "exact"
+
+
+def test_two_copiers_copy_who_guessed_on_their_own():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=110, b=110, c=110)
+    give(game, "a", "copy", ids=("a", "b", "c"))
+    give(game, "b", "copy", ids=("a", "b", "c"))
+    ask(game, [a, b, c], a=150, b=101, c=120)
+    assert result(game, "a").value == 120 and result(game, "a").copied_from == "c"
+    assert result(game, "b").value == 101 and result(game, "b").copied_from is None
+
+
+def test_nudge_moves_the_copied_guess_and_the_nudged_rival_is_the_one_copied():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give(game, "a", "copy")
+    game.armed["b"] = PowerUpUse(kind="nudge", by="b", target="a", reflected_by=None)
+    ask(game, [a, b], a=170, b=100)
+    moved = result(game, "a")
+    assert moved.copied_from == "b" and moved.nudged_from == 100 and moved.value != 100
+
+
+def test_who_copied_is_out_of_the_last_word_comparison():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    ask(game, [a, b, c], a=110, b=110, c=110)
+    give(game, "b", "copy", ids=("a", "b", "c"))
+    game.advance(game.phase_ends_at, [a, b, c])
+    at = game.phase_started_at
+    game.mythics["a"] = ["last_word"]
+    game.use_now("a", "last_word")
+    game.guess("b", 170, at + 1)
+    game.guess("c", 110, at + 1)
+    assert game.open_last_word(at + 2, ["a", "b", "c"])
+    game.guess("a", 110, at + 3)  # empata com c, e b copiou um chute igual
+    game.advance(at + 3, [a, b, c])
+    assert result(game, "b").copied_from in ("a", "c")
+    assert result(game, "a").last_word == 20
+
+
+def test_speaker_who_copied_loses_the_last_word():
+    a, b = P("a"), P("b")
+    game = powered()
+    ask(game, [a, b], a=110, b=110)
+    give(game, "a", "copy")
+    game.advance(game.phase_ends_at, [a, b])
+    at = game.phase_started_at
+    game.mythics["a"] = ["last_word"]
+    game.use_now("a", "last_word")
+    game.guess("b", 100, at + 1)
+    assert game.open_last_word(at + 2, ["a", "b"])
+    game.guess("a", 170, at + 3)
+    game.advance(at + 3, [a, b])
+    assert result(game, "a").value == 100 and result(game, "a").last_word < 0

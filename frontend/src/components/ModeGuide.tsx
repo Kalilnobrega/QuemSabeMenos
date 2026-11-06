@@ -392,10 +392,10 @@ const GUIDES: Record<Mode, Guide> = {
     powersIntro: [
       'Com poderes (o anfitrião liga no lobby): cada um começa com um e ganha outro a cada 3 chutes seguidos que ganham QI, e a cada chute certeiro nas médias e difíceis. O lanterna muito atrás também ganha, a cada 3 rodadas.',
       'Os poderes são de dois tipos: Ajuda, que vale para você, e Sabotagem, que você joga em alguém para atrapalhar.',
-      'Na revelação, você escolhe um poder para a próxima pergunta; o Espiar, a Faixa e o Sniper se usam na hora.',
+      'Na revelação, você escolhe um poder para a próxima pergunta; a Faixa e o Sniper se usam na hora.',
       'Com poderes, o teclado físico do computador fica bloqueado: todo mundo digita pelo teclado da tela.',
       'Lendários: cada poder ganho durante a partida tem 6% de chance de vir como uma sabotagem LENDÁRIA (20% para quem está em último muito atrás). Ela vale em todos os outros de uma vez, e o Reverso não segura.',
-      'Mítico: um poder ganho durante a partida tem 2% de chance de vir como a Matemática (8% para quem está em último muito atrás).',
+      'Míticos: um poder ganho durante a partida tem 2% de chance de vir mítico (8% para quem está em último muito atrás).',
     ],
     powers: [
       {
@@ -403,7 +403,7 @@ const GUIDES: Record<Mode, Guide> = {
         kinds: [
           'shield',
           'double',
-          'peek',
+          'copy',
           'second_chance',
           'reverse',
           'backpack',
@@ -440,8 +440,8 @@ const GUIDES: Record<Mode, Guide> = {
         legendary: true,
       },
       {
-        title: 'Mítico',
-        kinds: ['math'],
+        title: 'Míticos',
+        kinds: ['math', 'last_word'],
         mythic: true,
       },
     ],
