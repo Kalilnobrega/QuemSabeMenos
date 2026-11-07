@@ -396,11 +396,11 @@ function AvatarSheet({
     return () => window.removeEventListener('keydown', onKey)
   }, [onClose])
 
+  const [picked, setPicked] = useState<Avatar | null>(null)
   const pick = async (avatar: Avatar) => {
     playSound('select')
-    const error = await onPick(avatar)
-    if (error) setNotice(error)
-    else onClose()
+    setPicked(avatar)
+    setNotice(await onPick(avatar))
   }
 
   return (
@@ -418,12 +418,14 @@ function AvatarSheet({
           return (
             <button
               key={avatar}
-              onClick={() => (selected ? onClose() : void pick(avatar))}
+              onClick={() => {
+                if (!selected) void pick(avatar)
+              }}
               aria-label={AVATAR_NAMES[avatar]}
               aria-pressed={selected}
               className={`relative rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-80 hover:opacity-100'}`}
             >
-              <img src={avatarUrl(preview)} alt="" className="w-full" />
+              <img src={avatarUrl(preview)} alt="" className={`w-full ${picked === avatar ? 'pick-pop' : ''}`} />
               {users.length > 0 && (
                 <span
                   className="absolute -right-1 -bottom-1 flex items-center rounded-full border-2 border-ink bg-panel px-1.5 text-xs font-bold text-chalk"
@@ -441,8 +443,14 @@ function AvatarSheet({
           {notice}
         </p>
       )}
-      <button onClick={onClose} className="btn-3d btn-dark rounded-xl py-3 font-semibold text-steel">
-        Fechar
+      <button
+        onClick={() => {
+          playSound('clickSoft')
+          onClose()
+        }}
+        className="btn-3d btn-brand rounded-xl py-3 font-display text-2xl tracking-wide text-ink"
+      >
+        Pronto
       </button>
     </Sheet>
   )

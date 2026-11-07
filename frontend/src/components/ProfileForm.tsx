@@ -19,6 +19,8 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
   const [code, setCode] = useState(initialCode)
   const [profile, setProfile] = useState<Profile>(() => loadProfile() ?? { nickname: '', avatar: randomAvatar() })
   const [error, setError] = useState<string | null>(null)
+  // Só o toque faz o bicho pular: o que já vem escolhido ao abrir fica quieto.
+  const [picked, setPicked] = useState<string | null>(null)
   const [sending, setSending] = useState(false)
 
   const nickname = profile.nickname.trim()
@@ -95,12 +97,13 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
                 onClick={() => {
                   playSound('select')
                   setProfile({ ...profile, avatar })
+                  setPicked(avatar)
                 }}
                 aria-label={AVATAR_NAMES[avatar]}
                 aria-pressed={selected}
                 className={`rounded-full p-1 ${selected ? 'scale-105 ring-4 ring-brand' : 'opacity-70 hover:opacity-100'}`}
               >
-                <img src={AVATAR_URLS[avatar]} alt="" className="w-full" />
+                <img src={AVATAR_URLS[avatar]} alt="" className={`w-full ${picked === avatar ? 'pick-pop' : ''}`} />
               </button>
             )
           })}
