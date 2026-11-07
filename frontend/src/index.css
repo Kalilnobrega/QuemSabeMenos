@@ -45,6 +45,8 @@
   --delay-count: 400ms;
   --delay-rank-count: 700ms;
   --dur-count: 1800ms;
+  /* As entradas com mais peso: o logo da tela inicial, o título do fim de jogo e os degraus do pódio. */
+  --dur-land: 520ms;
   --ease-settle: cubic-bezier(0.2, 0, 0, 1);
   --ease-spring: cubic-bezier(0.3, 1.45, 0.5, 1);
   --ease-bounce: cubic-bezier(0.3, 1.9, 0.5, 1);
@@ -363,6 +365,51 @@ body {
 }
 .podium-card {
   animation: card-enter 420ms var(--ease-spring) both;
+}
+/* A tela inicial: o logo cai com mola e os botões chegam logo depois. */
+.home-logo {
+  animation: logo-drop var(--dur-land) var(--ease-bounce) both;
+}
+.home-logo.is-waiting {
+  animation-play-state: paused;
+}
+.home-button {
+  animation: rise var(--dur-enter) var(--ease-spring) both;
+  animation-delay: calc(var(--dur-exit) * 2 + var(--i, 0) * var(--stagger) * 2);
+}
+@keyframes logo-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-48px) scale(0.86);
+  }
+}
+/* O fim de jogo: o título bate na tela e os degraus sobem do chão. */
+.end-title {
+  animation: title-land var(--dur-land) var(--ease-bounce) both;
+}
+/* Sem crescer demais: o título é largo e não pode abrir rolagem de lado no celular. */
+@keyframes title-land {
+  from {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+.podium-step {
+  transform-origin: 50% 100%;
+  animation: step-rise var(--dur-land) var(--ease-spring) both;
+  animation-delay: calc(var(--dur-exit) + var(--i, 0) * var(--dur-exit));
+}
+@keyframes step-rise {
+  from {
+    transform: scaleY(0);
+  }
+}
+.podium-unknown {
+  animation: rise var(--dur-enter) var(--ease-spring) calc(var(--dur-exit) * 4) both;
+}
+/* Quem ficou pronto no Próxima dá um pulinho. */
+.ready-pop {
+  animation: chip-pop var(--dur-enter) var(--ease-spring);
 }
 .confetti {
   position: absolute;

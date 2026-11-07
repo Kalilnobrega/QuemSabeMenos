@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type CSSProperties } from 'react'
 import { Estimate } from './components/Estimate'
 import { Game } from './components/Game'
 import { HotPotato } from './components/HotPotato'
@@ -44,6 +44,14 @@ function KeyIcon() {
         <rect x="19.8" y="12.5" width="2.4" height="3.2" rx=".8" />
       </g>
     </svg>
+  )
+}
+
+/** O logo só cai depois de carregar: na primeira visita, a animação terminaria antes de a imagem chegar. */
+function HomeLogo() {
+  const [loaded, setLoaded] = useState(false)
+  return (
+    <Logo className={`home-logo w-full max-w-sm ${loaded ? '' : 'is-waiting'}`} onSettled={() => setLoaded(true)} />
   )
 }
 
@@ -186,14 +194,14 @@ export default function App() {
   } else if (screen.name === 'home') {
     content = (
       <>
-        <Logo className="w-full max-w-sm" />
+        <HomeLogo />
         <div className="flex w-full flex-col gap-3">
           <button
             onClick={() => {
               playSound('click')
               go({ name: 'create' })
             }}
-            className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
+            className="home-button btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink"
           >
             <span className="flex items-center justify-center gap-3">
               <UsersIcon />
@@ -205,7 +213,8 @@ export default function App() {
               playSound('click')
               go({ name: 'join', code: '' })
             }}
-            className="btn-3d btn-dark rounded-xl py-4 font-display text-2xl tracking-wide"
+            className="home-button btn-3d btn-dark rounded-xl py-4 font-display text-2xl tracking-wide"
+            style={{ '--i': 1 } as CSSProperties}
           >
             <span className="flex items-center justify-center gap-3">
               <KeyIcon />

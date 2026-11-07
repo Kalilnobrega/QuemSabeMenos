@@ -3,7 +3,7 @@
  * fim de jogo (pódio) e o botão Pular da revelação. Cada modo só passa o que é dele (as regras
  * da abertura, a linha embaixo de cada um no pódio), e a animação e os sons ficam iguais em todos.
  */
-import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import coroa from '../assets/brand/coroa.svg'
 import haha from '../assets/brand/haha.svg'
@@ -285,7 +285,7 @@ export function EndScreen({
   const isHost = room.host_id === playerId
   return (
     <section className="flex w-full flex-col gap-6">
-      <h1 className="text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
+      <h1 className="end-title text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
       {children}
       {done ? (
         <>
@@ -411,10 +411,14 @@ export function PlayerPodium({
                     <span className="font-display text-xl text-brand">{entry.caption}</span>
                   </div>
                 ) : (
-                  <span className="font-display text-5xl text-steel/40">?</span>
+                  <span className="podium-unknown font-display text-5xl text-steel/40">?</span>
                 )}
               </div>
-              <div className={`flex w-full items-start justify-center rounded-t-xl pt-1 font-display text-2xl ${step}`}>
+              {/* Sobem do 3º para o 1º, antes de o primeiro jogador aparecer. */}
+              <div
+                className={`podium-step flex w-full items-start justify-center rounded-t-xl pt-1 font-display text-2xl ${step}`}
+                style={{ '--i': 3 - place } as CSSProperties}
+              >
                 {label}
               </div>
             </div>
@@ -549,7 +553,7 @@ export function SkipButton({
               src={avatarUrl(p)}
               alt=""
               title={p.nickname}
-              className={`size-7 rounded-full transition ${ready.includes(p.id) || (p.id === playerId && isReady) ? '' : 'opacity-30 grayscale'}`}
+              className={`size-7 rounded-full transition ${ready.includes(p.id) || (p.id === playerId && isReady) ? 'ready-pop' : 'opacity-30 grayscale'}`}
             />
           ))}
         </span>
