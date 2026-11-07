@@ -357,6 +357,15 @@ body {
 .settings-sheet {
   animation: sheet-up var(--dur-enter) var(--ease-spring) both;
 }
+/* O fundo da janela clareia e escurece junto com ela. A saída está em Sheet.tsx. */
+.sheet-backdrop {
+  animation: fade-in var(--dur-exit) ease-out;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
 @keyframes sheet-up {
   from {
     opacity: 0.25;
