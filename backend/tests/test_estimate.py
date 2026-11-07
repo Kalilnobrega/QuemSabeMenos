@@ -46,7 +46,9 @@ def test_bank_has_numeric_questions_at_every_level_in_every_theme():
     themes = {q.theme for q in bank}
     assert len(themes) == 14
     for t in themes:
-        assert all(sum(1 for q in bank if q.theme == t and q.difficulty == d) >= 100 for d in ("easy", "medium", "hard"))
+        assert all(
+            sum(1 for q in bank if q.theme == t and q.difficulty == d) >= 100 for d in ("easy", "medium", "hard")
+        )
 
 
 def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_30_percent():
