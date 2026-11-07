@@ -134,6 +134,26 @@ export function useListMotion<T extends HTMLElement>({
   return ref
 }
 
+/** Quando o texto de um item com `data-flash={nome}` muda, ele pisca. Na primeira vez, não: nada mudou ainda. */
+export function useChangeFlash(ref: RefObject<HTMLElement | null>) {
+  const last = useRef<Map<string, string> | null>(null)
+  useLayoutEffect(() => {
+    const root = ref.current
+    if (!root) return
+    const items = [...root.querySelectorAll<HTMLElement>('[data-flash]')]
+    const before = last.current
+    last.current = new Map(items.map((el) => [el.dataset.flash!, el.textContent]))
+    if (!before || reducedMotion()) return
+    for (const el of items) {
+      if (before.get(el.dataset.flash!) === el.textContent) continue
+      el.animate([{ opacity: 0.35, transform: 'scale(0.92)', offset: 0 }], {
+        duration: motionMs('--dur-enter'),
+        easing: token('--ease-bounce'),
+      })
+    }
+  })
+}
+
 /**
  * O placar da revelação: começa na ordem de antes da rodada e cada um desliza para a posição nova,
  * enquanto o QI conta. Só na primeira exibição. Os itens da lista precisam de `data-flip={id}`.

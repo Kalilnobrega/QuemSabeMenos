@@ -407,6 +407,44 @@ body {
 .podium-unknown {
   animation: rise var(--dur-enter) var(--ease-spring) calc(var(--dur-exit) * 4) both;
 }
+/* O lobby: o código entra letra por letra, o contador pula e o Começar avisa que a sala já pode começar. */
+.code-letter {
+  animation: letter-in var(--dur-enter) var(--ease-bounce) both;
+  animation-delay: calc(var(--i, 0) * var(--stagger) * 2);
+}
+@keyframes letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.6);
+  }
+}
+.count-bump {
+  animation: timer-pulse var(--dur-enter) var(--ease-spring);
+}
+.start-ready {
+  animation: chip-pop var(--dur-land) var(--ease-spring);
+}
+/* O anel fica invisível por padrão: sem animação (movimento reduzido), não sobra contorno no botão. */
+.start-ready::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--color-brand);
+  border-radius: inherit;
+  opacity: 0;
+  pointer-events: none;
+  animation: start-ring calc(var(--dur-land) * 1.4) ease-out 2;
+}
+@keyframes start-ring {
+  from {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.06, 1.35);
+  }
+}
 /* Quem ficou pronto no Próxima dá um pulinho. */
 .ready-pop {
   animation: chip-pop var(--dur-enter) var(--ease-spring);

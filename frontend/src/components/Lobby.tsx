@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { InfoButton, ModeGuide } from './ModeGuide'
 import { Sheet } from './Sheet'
 import { AVATAR_NAMES, AVATARS, avatarUrl, type Avatar } from '../lib/avatars'
-import { useListMotion } from '../lib/listMotion'
+import { useChangeFlash, useListMotion } from '../lib/listMotion'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { PlayerView, RoomSettings, RoomState, UpdateSettingsRequest } from '../types/events'
@@ -63,6 +63,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
   // Quem chega ou sai muda a altura da lista: os blocos da tela deslizam junto, em vez de pular.
   const blocksRef = useListMotion<HTMLElement>({ entrance: false })
   const playersRef = useListMotion<HTMLUListElement>({ exit: true })
+  useChangeFlash(blocksRef)
 
   const playerCount = useRef(room.players.length)
   useEffect(() => {
@@ -146,7 +147,18 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
     <section ref={blocksRef} className="flex w-full flex-col gap-6">
       <header data-flip="code" className="flex flex-col items-center gap-3 rounded-2xl bg-panel p-5">
         <span className="text-sm font-semibold tracking-widest text-steel uppercase">Código da sala</span>
-        <span className="font-display text-6xl tracking-[0.25em] text-brand">{room.code}</span>
+        <span role="img" aria-label={room.code} className="font-display text-6xl tracking-[0.25em] text-brand">
+          {[...room.code].map((letter, index) => (
+            <span
+              key={index}
+              aria-hidden="true"
+              className="code-letter inline-block"
+              style={{ '--i': index } as CSSProperties}
+            >
+              {letter}
+            </span>
+          ))}
+        </span>
         <button onClick={invite} className="btn-3d btn-sm btn-light rounded-xl px-5 py-2 font-semibold text-ink">
           Convidar a galera
         </button>
@@ -156,7 +168,10 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         <h2 className="flex items-baseline justify-between font-display text-2xl tracking-wide">
           Jogadores
           <span className="font-sans text-base text-steel">
-            {room.players.length}/{room.max_players}
+            <span key={room.players.length} className="count-bump inline-block">
+              {room.players.length}
+            </span>
+            /{room.max_players}
           </span>
         </h2>
         {teamsMode && room.settings.team_pick === 'host' ? (
@@ -200,7 +215,10 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
 
       <div data-flip="match" className="flex flex-col gap-3">
         <h2 className="font-display text-2xl tracking-wide">Partida</h2>
-        <div className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center">
+        <div
+          data-flash="mode"
+          className="relative flex flex-col items-center gap-0.5 rounded-xl bg-panel px-11 py-3 text-center"
+        >
           <span className="font-display text-xl tracking-wide text-brand">
             {MODES[room.settings.mode].name}
             {room.settings.powers && ' com poderes'}
@@ -217,6 +235,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
           {summary.map((item, index) => (
             <div
               key={item.label}
+              data-flash={item.label}
               // 3 por linha; na de baixo, os que sobram dividem a largura.
               className={`flex flex-col items-center justify-center rounded-xl bg-panel px-2 py-2 text-center ${
                 index < 3 ? 'col-span-2' : summary.length === 4 ? 'col-span-6' : 'col-span-3'
@@ -250,9 +269,13 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
       {isHost ? (
         <div data-flip="start" className="flex flex-col gap-2">
           <button
+            // A chave recria o botão quando a sala atinge o mínimo, e a animação toca nessa hora.
+            key={enoughPlayers ? 'ready' : 'waiting'}
             onClick={start}
             disabled={!enoughPlayers || starting}
-            className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50"
+            className={`btn-3d btn-brand relative rounded-xl py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50 ${
+              enoughPlayers ? 'start-ready' : ''
+            }`}
           >
             Começar partida
           </button>
