@@ -59,6 +59,7 @@ ROUND_OPTIONS = (10, 15, 20)
 ANSWER_SECONDS = 20.0
 MATH_SECONDS = 30.0  # o alvo da Matemática tem mais tempo, e os outros assistem às contas
 MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
+NO_GUESS_EXTRA = -5  # não chutar custa o pior erro e mais isso, para nunca compensar deixar passar
 # Sem 50/50, Alternativa falsa e Pedágio, que dependem de alternativas, e sem Tempo extra: a velocidade não dá QI.
 # Investimento, Embaralhar, Lupa, Acelerador, Flashbang e Espiar também ficaram de fora, por escolha de jogo.
 POWERS: tuple[PowerUp, ...] = (
@@ -281,7 +282,7 @@ def guess_points(error: float | None, difficulty: str = "medium", scale: float =
     """`scale`: como no clássico, partidas curtas valem mais por pergunta (20/N)."""
     rules = SCORING[difficulty]
     if error is None:
-        points = rules.max_loss
+        points = rules.max_loss + NO_GUESS_EXTRA
     elif error == 0:
         points = rules.max_points + rules.exact_bonus
     elif error <= rules.break_even:
@@ -301,6 +302,9 @@ class Scorable(Protocol):
     id: str
     score: int
     answer_ms: int
+
+    @property
+    def connected(self) -> bool: ...
 
 
 @dataclass
@@ -942,6 +946,9 @@ class Estimate(Revealed):
             else:
                 error, elapsed = error_percent(q, guessed[0]), max(0.0, guessed[1] - self.phase_started_at)
             scored = None if error is None else self._scored_error(player.id, error)
+            # Quem caiu da conexão não escolheu deixar passar: perde como o pior erro.
+            if guessed is None and not player.connected:
+                scored = SCORING[q.difficulty].max_loss_at
             delta = guess_points(scored, q.difficulty, self.point_scale)
             if error == 0 and not copy:
                 exact_guesses.add(player.id)

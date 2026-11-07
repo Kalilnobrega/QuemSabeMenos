@@ -35,6 +35,9 @@ class Scorable(Protocol):
     id: str
     score: int
 
+    @property
+    def connected(self) -> bool: ...
+
 
 @dataclass
 class DuelQuestion:

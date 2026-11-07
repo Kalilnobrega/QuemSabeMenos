@@ -259,7 +259,7 @@ async def test_round_ends_when_time_runs_out(connect):
         "option": None,
         "correct": False,
         "elapsed_ms": None,
-        "delta": -20,
+        "delta": -40,
         "bonuses": [],
         "bet": None,
         "bet_delta": 0,

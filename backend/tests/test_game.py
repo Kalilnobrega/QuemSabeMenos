@@ -16,6 +16,7 @@ from app.game import (
     Game,
     GameError,
     Question,
+    absent_points,
     bet_round,
     bet_win,
     load_bank,
@@ -35,6 +36,7 @@ class P:
     score: int = 0
     answer_ms: int = 0
     streak: int = 0
+    connected: bool = True
 
 
 def question(qid: str, difficulty: str = "easy", answer: int = 0) -> Question:
@@ -62,7 +64,21 @@ def test_points_follow_the_rules():
     assert points("medium", False) == -10
     assert points("hard", False) == -5
     assert points("impossible", False) == 0
-    assert points("easy", None) == -10
+    # Não responder custa o erro e mais 5.
+    assert [points(d, None) for d in ("easy", "medium", "hard", "impossible")] == [-20, -15, -10, -5]
+
+
+def test_who_dropped_loses_like_a_wrong_answer_and_the_final_still_costs_five():
+    assert [absent_points(d) for d in ("easy", "medium", "hard", "impossible")] == [-15, -10, -5, -5]
+    assert absent_points("easy", scale=2) == -30
+    assert absent_points("impossible", scale=2) == -5  # a final não muda com a escala
+
+    game = Game(questions=[question("e0"), question("e1")], answer_seconds=10)
+    here, dropped = P("here", 50), P("dropped", 50, connected=False)
+    reveal(game, [here, dropped], {"here": None, "dropped": None})
+    by_id = {r.player_id: r for r in game.results}
+    assert by_id["here"].delta == points("easy", None, scale=game.point_scale)
+    assert by_id["dropped"].delta == points("easy", False, scale=game.point_scale)
 
 
 def test_split_by_difficulty():
@@ -137,7 +153,7 @@ def test_round_flow_and_scoring():
     assert not game.everyone_answered(["ana", "bia", "caio"])
 
     game.close_round([ana, bia, caio], now=12)
-    assert (ana.score, bia.score, caio.score) == (11, -10, -10)
+    assert (ana.score, bia.score, caio.score) == (11, -10, -15)
     assert (ana.answer_ms, bia.answer_ms, caio.answer_ms) == (2000, 3000, 10000)
     view = game.view(now=12)
     assert view.correct_option == 2
@@ -431,7 +447,7 @@ def test_shield_holds_the_penalty_and_blocks_a_steal():
     game.arm("bia", "shield", None, ["ana", "bia"])
     reveal(game, [ana, bia], {"ana": 0, "bia": None})
     by_id = {r.player_id: r for r in game.results}
-    assert (by_id["bia"].delta, by_id["bia"].shielded, bia.score) == (0, 10, 50)
+    assert (by_id["bia"].delta, by_id["bia"].shielded, bia.score) == (0, 20, 50)
     assert (by_id["ana"].stolen, ana.score) == (0, 52)  # só o bônus das fáceis
 
 

@@ -3,7 +3,7 @@ import random
 import pytest
 
 from app.awards import team_key
-from app.game import Question
+from app.game import Question, points
 from app.teams import (
     CAPTAIN_BONUS,
     CHOOSING_SECONDS,
@@ -123,6 +123,14 @@ def test_one_wrong_vote_breaks_the_harmony_even_if_the_team_gets_it():
     assert team(match, 0).correct and team(match, 0).harmony == 0
 
 
+def test_a_team_that_dropped_loses_like_a_wrong_answer():
+    match = new_match()
+    open_question(match)
+    match.advance(match.phase_ends_at, ["a1", "a2", "a3"])
+    assert team(match, 0).delta == points("medium", None, scale=match.point_scale)  # conectado e não votou
+    assert team(match, 1).delta == points("medium", False, scale=match.point_scale)  # o time inteiro caiu
+
+
 def test_nobody_voting_counts_as_no_answer():
     match = new_match()
     open_question(match)
@@ -148,7 +156,7 @@ def test_bet_and_final_are_answered_by_the_chosen_representative():
     with pytest.raises(TeamMatchError):
         match.place_bet("a1", 10, match.phase_started_at)
     score = team(match, 0).score
-    match.place_bet("a2", 20, match.phase_started_at)
+    match.place_bet("a2", 10, match.phase_started_at)
     t0 = open_question(match)
     with pytest.raises(TeamMatchError, match="representante"):
         match.vote("a1", 0, t0, ALL)
@@ -156,7 +164,7 @@ def test_bet_and_final_are_answered_by_the_chosen_representative():
     assert team(match, 0).locked_at is not None
     match.advance(match.phase_ends_at, ALL)
     a = team(match, 0)
-    assert a.bet_delta == 10 and a.captain_delta == 0 and a.score == score + a.delta + 10
+    assert a.bet_delta == 5 and a.captain_delta == 0 and a.score == score + a.delta + 5
     match.advance(match.phase_ends_at, ALL)
     assert match.phase == "choosing"  # a final
     match.advance(match.phase_ends_at, ALL)

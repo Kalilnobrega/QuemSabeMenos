@@ -65,7 +65,7 @@ PERFECT_EASY_BONUS = 1
 STREAK_BONUS = {3: 3, 5: 10, 10: 20}
 WRONG_STREAK_PENALTY = {3: -5, 5: -10}
 SPEED_GRACE_SECONDS = 3.0
-NO_ANSWER_PENALTY = -10
+NO_ANSWER_EXTRA = -5  # não responder custa o erro e mais isso, para nunca compensar deixar passar
 
 # Efeito de digitação; o tempo de resposta só começa depois.
 TYPING_SECONDS_PER_CHAR = 0.035
@@ -264,11 +264,17 @@ def points(difficulty: Difficulty, correct: bool | None, remaining_fraction: flo
     if difficulty == FINAL_DIFFICULTY:
         scale = 1.0
     if correct is None:
-        return round(NO_ANSWER_PENALTY * scale)
+        return round((WRONG_PENALTY[difficulty] + NO_ANSWER_EXTRA) * scale)
     if not correct:
         return round(WRONG_PENALTY[difficulty] * scale)
     low, high = CORRECT_POINTS[difficulty]
     return round((low + (high - low) * max(0.0, min(1.0, remaining_fraction))) * scale)
+
+
+def absent_points(difficulty: Difficulty, scale: float = 1.0) -> int:
+    """Quem caiu da conexão não escolheu deixar passar: perde como quem errou. Só na final, em que errar
+    não tira nada, perde como quem não respondeu."""
+    return points(difficulty, None if difficulty == FINAL_DIFFICULTY else False, scale=scale)
 
 
 def _round_total(result: RoundResult) -> int:
@@ -845,7 +851,8 @@ class Game(QuestionDeck):
             # Na segunda chance, quem não tentou de novo fica com o erro da primeira.
             answer = self.answers.get(player.id) or first
             if answer is None:
-                correct, delta = False, points(difficulty, None, scale=self.point_scale)
+                missed = points(difficulty, None, scale=self.point_scale)
+                correct, delta = False, missed if player.connected else absent_points(difficulty, self.point_scale)
                 elapsed = self.answer_window(player.id)
             else:
                 correct = answer.option == self.question.answer

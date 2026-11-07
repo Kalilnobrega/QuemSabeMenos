@@ -50,6 +50,7 @@ from app.game import (
     Question,
     QuestionDeck,
     _duel_question,
+    absent_points,
     bet_round,
     bet_win,
     max_bet,
@@ -908,7 +909,12 @@ class TeamMatch(QuestionDeck):
         answered = team.option is not None
         team.correct = answered and team.option == q.answer
         elapsed = team.locked_at - self.phase_started_at
-        delta = points(q.difficulty, team.correct if answered else None, self._speed(elapsed, team), self.point_scale)
+        if answered or self._present(team, connected):
+            delta = points(
+                q.difficulty, team.correct if answered else None, self._speed(elapsed, team), self.point_scale
+            )
+        else:
+            delta = absent_points(q.difficulty, self.point_scale)
         if team.correct and team.first_option is not None:
             delta = int(delta * pw.SECOND_CHANCE_SHARE)
         if team.doubled:
