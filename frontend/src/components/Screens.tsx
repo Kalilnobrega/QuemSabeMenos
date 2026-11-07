@@ -289,7 +289,11 @@ export function EndScreen({
       {children}
       {done ? (
         <>
-          {notice && <p className="text-center text-steel">{notice}</p>}
+          {notice && (
+            <p key={notice} className="error-shake text-center text-steel">
+              {notice}
+            </p>
+          )}
           {isHost ? (
             <button
               onClick={async () => {

@@ -366,6 +366,60 @@ body {
     opacity: 0;
   }
 }
+/* Aviso bom entra suave, e erro chega com uma tremidinha curta: durante a pergunta, o tempo vale ponto. */
+.notice-in {
+  animation: rise var(--dur-enter) var(--ease-spring) both;
+}
+.error-shake {
+  animation: error-shake var(--dur-enter) ease-out both;
+}
+@keyframes error-shake {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  55% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+}
+/* Os pontinhos de carregando. */
+.loading-dots {
+  display: inline-flex;
+  gap: 0.16em;
+  margin-left: 0.28em;
+}
+.loading-dots span {
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  background: currentColor;
+  animation: dot-bounce calc(var(--dur-land) * 2) ease-in-out infinite;
+}
+.loading-dots span:nth-child(2) {
+  animation-delay: calc(var(--stagger) * 3);
+}
+.loading-dots span:nth-child(3) {
+  animation-delay: calc(var(--stagger) * 6);
+}
+@keyframes dot-bounce {
+  0%,
+  60%,
+  100% {
+    opacity: 0.5;
+    transform: none;
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-0.3em);
+  }
+}
 @keyframes sheet-up {
   from {
     opacity: 0.25;

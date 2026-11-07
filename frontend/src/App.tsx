@@ -3,6 +3,7 @@ import { Estimate } from './components/Estimate'
 import { Game } from './components/Game'
 import { HotPotato } from './components/HotPotato'
 import { Teams } from './components/Teams'
+import { LoadingDots } from './components/LoadingDots'
 import { Lobby } from './components/Lobby'
 import { Survival } from './components/Survival'
 import { Logo } from './components/Logo'
@@ -190,7 +191,12 @@ export default function App() {
       />
     )
   } else if (rejoining) {
-    content = <p className="font-hand font-medium text-lg text-steel">Voltando para a sala…</p>
+    content = (
+      <p className="notice-in font-hand font-medium text-lg text-steel">
+        Voltando para a sala
+        <LoadingDots />
+      </p>
+    )
   } else if (screen.name === 'home') {
     content = (
       <>

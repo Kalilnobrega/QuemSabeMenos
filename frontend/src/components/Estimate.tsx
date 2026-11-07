@@ -396,7 +396,11 @@ function EstimateRound({
               onSubmit={submit}
             />
           )}
-          {error && <p className="text-center text-sm text-danger">{error}</p>}
+          {error && (
+            <p key={error} className="error-shake text-center text-sm text-danger">
+              {error}
+            </p>
+          )}
           {!silenced && <AnsweredRow players={room.players} answered={estimate.answered} label="chutaram" />}
         </div>
       )}

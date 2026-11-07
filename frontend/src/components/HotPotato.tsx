@@ -463,7 +463,11 @@ function QuestionPanel({
           </ScratchCard>
         </Magnifier>
       )}
-      {error && <p className="text-center text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-center text-danger">
+          {error}
+        </p>
+      )}
     </div>
   )
 }
@@ -773,7 +777,11 @@ function PotatoPowers({
         </div>
       )}
       <p className="text-xs text-steel">{note}</p>
-      {error && <p className="text-sm text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-sm text-danger">
+          {error}
+        </p>
+      )}
     </div>
   )
 }

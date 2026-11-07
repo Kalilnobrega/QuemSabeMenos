@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { AVATAR_NAMES, AVATAR_URLS, AVATARS, randomAvatar } from '../lib/avatars'
 import { playSound } from '../lib/sounds'
+import { LoadingDots } from './LoadingDots'
 import { loadProfile, type Profile } from '../lib/storage'
 
 const CODE_LENGTH = 5
@@ -106,14 +107,27 @@ export function ProfileForm({ mode, initialCode = '', disabled, onBack, onSubmit
         </div>
       </fieldset>
 
-      {error && <p className="rounded-xl bg-danger-strong/15 px-4 py-3 text-center text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake rounded-xl bg-danger-strong/15 px-4 py-3 text-center text-danger">
+          {error}
+        </p>
+      )}
 
       <button
         type="submit"
         disabled={!ready || sending || disabled}
         className="btn-3d btn-brand rounded-xl py-4 font-display text-2xl tracking-wide text-ink disabled:opacity-50"
       >
-        {sending ? 'Só um instante…' : mode === 'create' ? 'Criar sala' : 'Entrar'}
+        {sending ? (
+          <>
+            Só um instante
+            <LoadingDots />
+          </>
+        ) : mode === 'create' ? (
+          'Criar sala'
+        ) : (
+          'Entrar'
+        )}
       </button>
     </form>
   )

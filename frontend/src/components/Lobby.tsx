@@ -46,6 +46,9 @@ interface Props {
   onUpdateAvatar: (avatar: Avatar) => Promise<string | null>
 }
 
+// O único aviso do lobby que não é erro: ele entra suave, e os outros tremem.
+const LINK_COPIED = 'Link copiado!'
+
 function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
@@ -85,7 +88,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
         return
       }
       await navigator.clipboard.writeText(url)
-      setNotice('Link copiado!')
+      setNotice(LINK_COPIED)
     } catch (e) {
       // Fechar o menu de compartilhar não é erro.
       if (e instanceof DOMException && e.name === 'AbortError') return
@@ -261,7 +264,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
       </div>
 
       {notice && (
-        <p data-flip="notice" className="text-center text-steel">
+        <p key={notice} className={`text-center text-steel ${notice === LINK_COPIED ? 'notice-in' : 'error-shake'}`}>
           {notice}
         </p>
       )}
@@ -433,7 +436,11 @@ function AvatarSheet({
           )
         })}
       </div>
-      {notice && <p className="text-center text-sm text-danger">{notice}</p>}
+      {notice && (
+        <p key={notice} className="error-shake text-center text-sm text-danger">
+          {notice}
+        </p>
+      )}
       <button onClick={onClose} className="btn-3d btn-dark rounded-xl py-3 font-semibold text-steel">
         Fechar
       </button>
@@ -637,7 +644,11 @@ function SettingsSheet({ room, onUpdate, onClose }: SettingsSheetProps) {
           </div>
         </div>
 
-        {notice && <p className="text-center text-steel">{notice}</p>}
+        {notice && (
+          <p key={notice} className="error-shake text-center text-steel">
+            {notice}
+          </p>
+        )}
 
         <button
           onClick={() => {

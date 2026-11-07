@@ -437,7 +437,11 @@ export function DuelScreen({ snapshot, stage, playerId, onAnswer, onDuelBet, sid
         })}
       </div>
       {body}
-      {error && <p className="text-center text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-center text-danger">
+          {error}
+        </p>
+      )}
     </section>
   )
 }
@@ -605,7 +609,11 @@ function ThemePick({
           )
         })}
       </ul>
-      {error && <p className="text-sm text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-sm text-danger">
+          {error}
+        </p>
+      )}
       {!game.block_theme && (
         <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} className="w-full max-w-sm" />
       )}
@@ -814,7 +822,11 @@ function Betting({
             </form>
           </>
         )}
-        {error && <p className="text-danger">{error}</p>}
+        {error && (
+          <p key={error} className="error-shake text-danger">
+            {error}
+          </p>
+        )}
       </div>
 
       <PhaseTimer remaining={remaining} duration={game.phase_duration_ms} className="w-full" />
@@ -1072,7 +1084,11 @@ function Round({ snapshot, game, playerId, onAnswer, onArm, onDisarm, onUse, onS
         </div>
       </Magnifier>
 
-      {error && <p className="text-center text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-center text-danger">
+          {error}
+        </p>
+      )}
 
       {showResults ? (
         <RoundSummary room={room} game={game} playerId={playerId} onArm={onArm} onDisarm={onDisarm} onSkip={onSkip} />

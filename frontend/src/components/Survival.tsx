@@ -527,7 +527,11 @@ function Statement({
       )}
       <BannerList items={notes} label="Acontecimentos da rodada" />
       {inReveal && <SurvivorStrip snapshot={snapshot} playerId={playerId} />}
-      {error && <p className="text-center text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-center text-danger">
+          {error}
+        </p>
+      )}
     </section>
   )
 }

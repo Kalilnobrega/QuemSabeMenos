@@ -229,7 +229,11 @@ function Choosing({
         <p className="text-steel">Os times estão escolhendo…</p>
       )}
       <p className="text-sm text-steel">Empate ou ninguém votando: sorteio.</p>
-      {error && <p className="text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-danger">
+          {error}
+        </p>
+      )}
     </section>
   )
 }
@@ -284,7 +288,11 @@ function TeamBetting({
       {mine && !isRep && mine.bet === null && (
         <p className="text-steel">{rep?.nickname ?? 'O representante'} está decidindo quanto apostar…</p>
       )}
-      {error && <p className="text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-danger">
+          {error}
+        </p>
+      )}
     </section>
   )
 }
@@ -525,7 +533,11 @@ function TeamRound({
       {match.infiltrating !== null && match.infiltrate_question && (
         <InfiltratorPanel match={match} onAnswer={onAnswer} />
       )}
-      {error && <p className="text-center text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-center text-danger">
+          {error}
+        </p>
+      )}
 
       {revealed && (
         <>
@@ -686,7 +698,11 @@ function InstantTeamPowers({ match, onUse }: { match: TeamMatchView; onUse: Prop
               {POWERUP_INFO[kind].name}
             </button>
           ))}
-      {error && <span className="w-full text-center text-sm text-danger">{error}</span>}
+      {error && (
+        <span key={error} className="error-shake w-full text-center text-sm text-danger">
+          {error}
+        </span>
+      )}
     </div>
   )
 }
@@ -721,7 +737,11 @@ function InfiltratorPanel({ match, onAnswer }: { match: TeamMatchView; onAnswer:
           </button>
         ))}
       </div>
-      {error && <p className="text-sm text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake text-sm text-danger">
+          {error}
+        </p>
+      )}
     </div>
   )
 }
@@ -909,7 +929,11 @@ function TeamPowerBar({
         Poderes do time ({mine.powerups.length + mine.mythic_powerups.length}/{mine.powerup_max})
       </p>
       {body}
-      {error && <p className="mt-1 text-sm text-danger">{error}</p>}
+      {error && (
+        <p key={error} className="error-shake mt-1 text-sm text-danger">
+          {error}
+        </p>
+      )}
     </div>
   )
 }

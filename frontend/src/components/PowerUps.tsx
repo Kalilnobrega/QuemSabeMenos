@@ -1208,7 +1208,11 @@ export function InstantPowerUps({
 
   return (
     <div className="flex items-center justify-end gap-2">
-      {error && <span className="mr-auto text-sm text-danger">{error}</span>}
+      {error && (
+        <span key={error} className="error-shake mr-auto text-sm text-danger">
+          {error}
+        </span>
+      )}
       {kinds.map((kind) => (
         <button
           key={kind}
@@ -1569,7 +1573,11 @@ export function PowerUpBar({
       {header}
       <div className="min-w-0">
         {body}
-        {error && <p className="mt-1 text-sm text-danger">{error}</p>}
+        {error && (
+          <p key={error} className="error-shake mt-1 text-sm text-danger">
+            {error}
+          </p>
+        )}
       </div>
       {skipButton}
     </div>
