@@ -71,15 +71,22 @@ export function useRoom() {
       void rejoin()
     }
     const onDisconnect = () => setConnected(false)
+    const onKicked = () => {
+      saveSession(null)
+      setPlayerId(null)
+      setRoom(null)
+    }
 
     socket.on('connect', onConnect)
     socket.on('disconnect', onDisconnect)
     socket.on('room_state', setRoom)
+    socket.on('kicked', onKicked)
     if (socket.connected) void rejoin()
     return () => {
       socket.off('connect', onConnect)
       socket.off('disconnect', onDisconnect)
       socket.off('room_state', setRoom)
+      socket.off('kicked', onKicked)
     }
   }, [enter, setRoom])
 
@@ -146,6 +153,7 @@ export function useRoom() {
     if (!error && saved) saveProfile({ ...saved, avatar }) // a próxima sala já abre com o bicho novo
     return error
   }, [])
+  const kick = useCallback((player_id: string) => request('kick_player', { player_id }), [])
   const setTeam = useCallback((player_id: string, team: number) => request('set_team', { player_id, team }), [])
 
   return {
@@ -171,6 +179,7 @@ export function useRoom() {
     lastWordDraft,
     updateSettings,
     updateAvatar,
+    kick,
     setTeam,
     chooseRepresentative,
   }

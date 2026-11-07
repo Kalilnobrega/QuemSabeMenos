@@ -363,6 +363,22 @@ class RoomManager:
         room.lobby_teams()[player_id] = team
         return room
 
+    def kick(self, sid: str, player_id: str) -> tuple[Room, str | None]:
+        """Tira um jogador do lobby. Devolve a sala e o sid dele, se ainda estava conectado."""
+        room = self._host_room(sid, "tirar jogadores")
+        if room.status != "lobby":
+            raise RoomError("A partida já começou.")
+        player = room.player(player_id)
+        if not player:
+            raise RoomError("Jogador não encontrado.")
+        if player.id == room.host_id:
+            raise RoomError("O anfitrião não pode tirar a si mesmo.")
+        kicked_sid = player.sid
+        if kicked_sid:
+            self._sessions.pop(kicked_sid, None)
+        self._remove(room, player)
+        return room, kicked_sid
+
     def _deal_teams(self, room: Room) -> dict[str, int]:
         """Os times da partida, cada um com pelo menos 2 jogadores."""
         if len(room.players) < room.team_count * MIN_TEAM_SIZE:

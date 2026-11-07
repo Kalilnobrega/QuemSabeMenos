@@ -12,6 +12,7 @@ import { playSound } from './lib/sounds'
 import { SoundToggle } from './components/SoundToggle'
 import { loadSession, saveSession } from './lib/storage'
 import { changeScreen } from './lib/screenTransition'
+import { socket } from './lib/socket'
 import { useRoom } from './lib/useRoom'
 
 type Screen = { name: 'home' } | { name: 'create' } | { name: 'join'; code: string }
@@ -84,12 +85,30 @@ export default function App() {
     lastWordDraft,
     updateSettings,
     updateAvatar,
+    kick,
     setTeam,
     chooseRepresentative,
   } = useRoom()
   const room = snapshot?.room ?? null
   const [screen, setScreen] = useState<Screen>(linkCode ? { name: 'join', code: linkCode } : { name: 'home' })
-  const go = (next: Screen) => changeScreen(() => setScreen(next))
+  const [kicked, setKicked] = useState(false)
+  const go = (next: Screen) => {
+    setKicked(false)
+    changeScreen(() => setScreen(next))
+  }
+
+  // useRoom limpa a sala. Aqui, quem foi tirado sempre volta para a tela inicial, mesmo tendo entrado por um link.
+  useEffect(() => {
+    const onKicked = () => {
+      playSound('leave')
+      setKicked(true)
+      setScreen({ name: 'home' })
+    }
+    socket.on('kicked', onKicked)
+    return () => {
+      socket.off('kicked', onKicked)
+    }
+  }, [])
 
   useEffect(() => {
     if (room) setUrl(`/sala/${room.code}`)
@@ -188,6 +207,7 @@ export default function App() {
         onUpdateSettings={updateSettings}
         onUpdateAvatar={updateAvatar}
         onSetTeam={setTeam}
+        onKick={kick}
       />
     )
   } else if (rejoining) {
@@ -201,6 +221,11 @@ export default function App() {
     content = (
       <>
         <HomeLogo />
+        {kicked && (
+          <p className="notice-in rounded-xl bg-panel px-4 py-3 text-center font-semibold">
+            O anfitrião tirou você da sala.
+          </p>
+        )}
         <div className="flex w-full flex-col gap-3">
           <button
             onClick={() => {

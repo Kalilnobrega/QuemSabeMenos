@@ -2402,6 +2402,15 @@ export interface TeamPlayerStat {
   represented_right: number;
 }
 /**
+ * O anfitrião tira um jogador da sala, só no lobby. Quem saiu pode entrar de novo com o código.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "KickPlayerRequest".
+ */
+export interface KickPlayerRequest {
+  player_id: string;
+}
+/**
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "OkAck".
  */

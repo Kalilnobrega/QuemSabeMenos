@@ -694,3 +694,54 @@ async def test_last_word_opens_in_the_room_and_the_typing_reaches_everyone(conne
     await ana.call("leave_room")
     await bia.call("leave_room")
     await match_closed("abandoned")
+
+
+async def test_host_kicks_a_player_who_can_come_back(connect):
+    host, guest, other = await connect(), await connect(), await connect()
+    created = await host.call("create_room", {"nickname": "Ana", "avatar": "burro"})
+    code = created["room"]["code"]
+    joined = await guest.call("join_room", {"code": code, "nickname": "Beto", "avatar": "coelho"})
+    await other.call("join_room", {"code": code, "nickname": "Caio", "avatar": "coruja"})
+    kicked = asyncio.Event()
+    guest.sio.on("kicked", kicked.set)
+
+    # Só o anfitrião tira, e não a si mesmo nem a quem não está na sala.
+    assert not (await other.call("kick_player", {"player_id": joined["player_id"]}))["ok"]
+    assert not (await host.call("kick_player", {"player_id": created["player_id"]}))["ok"]
+    assert not (await host.call("kick_player", {"player_id": "ninguem"}))["ok"]
+
+    assert (await host.call("kick_player", {"player_id": joined["player_id"]}))["ok"]
+    await asyncio.wait_for(kicked.wait(), 2)
+    state = await other.wait_for(lambda s: len(s["players"]) == 2)
+    assert [p["nickname"] for p in state["players"]] == ["Ana", "Caio"]
+
+    # O link salvo não vale mais, e o comando seguinte dele já não encontra a sala.
+    rejoin = await guest.call("rejoin_room", {"code": code, "token": joined["token"]})
+    assert not rejoin["ok"]
+
+    # Com o código, ele pode entrar de novo.
+    back = await guest.call("join_room", {"code": code, "nickname": "Beto", "avatar": "coelho"})
+    assert back["ok"]
+    await other.wait_for(lambda s: len(s["players"]) == 3)
+
+
+async def test_host_cannot_kick_during_the_match(connect):
+    host, guest = await connect(), await connect()
+    created = await host.call("create_room", {"nickname": "Ana", "avatar": "burro"})
+    joined = await guest.call("join_room", {"code": created["room"]["code"], "nickname": "Beto", "avatar": "coelho"})
+    assert (await host.call("start_game"))["ok"]
+    assert not (await host.call("kick_player", {"player_id": joined["player_id"]}))["ok"]
+
+
+async def test_kicking_a_disconnected_player_cancels_nothing_else(connect):
+    host, guest = await connect(), await connect()
+    created = await host.call("create_room", {"nickname": "Ana", "avatar": "burro"})
+    joined = await guest.call("join_room", {"code": created["room"]["code"], "nickname": "Beto", "avatar": "coelho"})
+    await guest.sio.disconnect()
+    await host.wait_for(lambda s: not next(p for p in s["players"] if p["id"] == joined["player_id"])["connected"])
+    assert (await host.call("kick_player", {"player_id": joined["player_id"]}))["ok"]
+    state = await host.wait_for(lambda s: len(s["players"]) == 1)
+    # O prazo de reconexão dele vence depois, sem mexer na sala.
+    await asyncio.sleep(0.3)
+    assert state["host_id"] == created["player_id"]
+    assert len(main.rooms.rooms[created["room"]["code"]].players) == 1

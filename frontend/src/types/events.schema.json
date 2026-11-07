@@ -2383,6 +2383,19 @@
       "title": "JoinedAck",
       "type": "object"
     },
+    "KickPlayerRequest": {
+      "description": "O anfitrião tira um jogador da sala, só no lobby. Quem saiu pode entrar de novo com o código.",
+      "properties": {
+        "player_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "player_id"
+      ],
+      "title": "KickPlayerRequest",
+      "type": "object"
+    },
     "LastWordGuess": {
       "description": "Palavra final: o chute de alguém e de que lado está a resposta.",
       "properties": {

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useRef, useState, type CSSProperties, type SyntheticEvent } from 'react'
 import coroa from '../assets/brand/coroa.svg'
 import { LeaveButton } from './LeaveButton'
 import { InfoButton, ModeGuide } from './ModeGuide'
@@ -43,6 +43,7 @@ interface Props {
   onStart: () => Promise<string | null>
   onUpdateSettings: (patch: UpdateSettingsRequest) => Promise<string | null>
   onSetTeam: (playerId: string, team: number) => Promise<string | null>
+  onKick: (playerId: string) => Promise<string | null>
   onUpdateAvatar: (avatar: Avatar) => Promise<string | null>
 }
 
@@ -53,7 +54,16 @@ function inviteUrl(code: string) {
   return `${window.location.origin}/sala/${code}`
 }
 
-export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSetTeam, onUpdateAvatar }: Props) {
+export function Lobby({
+  room,
+  playerId,
+  onLeave,
+  onStart,
+  onUpdateSettings,
+  onSetTeam,
+  onKick,
+  onUpdateAvatar,
+}: Props) {
   const [notice, setNotice] = useState<string | null>(null)
   const [avatarOpen, setAvatarOpen] = useState(false)
   const me = room.players.find((p) => p.id === playerId)
@@ -183,6 +193,7 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
             playerId={playerId}
             isHost={isHost}
             onSetTeam={onSetTeam}
+            onKick={onKick}
             onNotice={setNotice}
             onEditAvatar={() => setAvatarOpen(true)}
           />
@@ -205,6 +216,9 @@ export function Lobby({ room, playerId, onLeave, onStart, onUpdateSettings, onSe
                 </span>
                 {!player.connected && <span className="font-hand font-medium text-steel">reconectando…</span>}
                 {player.id === room.host_id && <img src={coroa} alt="Anfitrião" title="Anfitrião" className="size-8" />}
+                {isHost && player.id !== playerId && (
+                  <KickButton player={player} onKick={onKick} onNotice={setNotice} />
+                )}
               </li>
             ))}
           </ul>
@@ -367,6 +381,71 @@ function MyAvatar({ player, className, onClick }: { player: PlayerView; classNam
           <path d="m9.2 3.8 3 3" stroke="var(--color-brand)" strokeWidth="1.2" />
         </svg>
       </span>
+    </span>
+  )
+}
+
+// Sem o segundo toque nesse tempo, o botão volta ao normal.
+const KICK_CONFIRM_MS = 3000
+
+/** O × do anfitrião: o primeiro toque pede confirmação e o segundo tira o jogador. É um span pelo mesmo
+ * motivo do MyAvatar: a linha dos times já é um botão. */
+function KickButton({
+  player,
+  onKick,
+  onNotice,
+}: {
+  player: PlayerView
+  onKick: Props['onKick']
+  onNotice: (notice: string | null) => void
+}) {
+  const [armed, setArmed] = useState(false)
+  useEffect(() => {
+    if (!armed) return
+    const timer = setTimeout(() => setArmed(false), KICK_CONFIRM_MS)
+    return () => clearTimeout(timer)
+  }, [armed])
+
+  const press = async (e: SyntheticEvent) => {
+    e.stopPropagation()
+    if (!armed) {
+      playSound('clickSoft')
+      setArmed(true)
+      return
+    }
+    setArmed(false)
+    onNotice(await onKick(player.id))
+  }
+
+  return (
+    <span
+      role="button"
+      tabIndex={0}
+      aria-label={armed ? `Confirmar: tirar ${player.nickname} da sala` : `Tirar ${player.nickname} da sala`}
+      onClick={(e) => void press(e)}
+      onKeyDown={(e) => {
+        if (e.key !== 'Enter' && e.key !== ' ') return
+        e.preventDefault()
+        void press(e)
+      }}
+      className={`flex h-9 shrink-0 cursor-pointer items-center justify-center rounded-lg ${
+        armed ? 'pick-pop bg-danger-strong px-2.5 text-sm font-bold text-white' : 'w-9 text-steel hover:text-danger'
+      }`}
+    >
+      {armed ? (
+        'Tirar?'
+      ) : (
+        <svg
+          viewBox="0 0 16 16"
+          className="size-4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          aria-hidden="true"
+        >
+          <path d="M3.5 3.5l9 9M12.5 3.5l-9 9" strokeLinecap="round" />
+        </svg>
+      )}
     </span>
   )
 }
@@ -689,6 +768,7 @@ function TeamBuilder({
   playerId,
   isHost,
   onSetTeam,
+  onKick,
   onNotice,
   onEditAvatar,
 }: {
@@ -696,6 +776,7 @@ function TeamBuilder({
   playerId: string | null
   isHost: boolean
   onSetTeam: Props['onSetTeam']
+  onKick: Props['onKick']
   onNotice: (notice: string | null) => void
   onEditAvatar: () => void
 }) {
@@ -739,6 +820,7 @@ function TeamBuilder({
                 </span>
                 {player.id === room.host_id && <img src={coroa} alt="Anfitrião" title="Anfitrião" className="size-6" />}
                 {isHost && <span className="text-xs text-steel">trocar ›</span>}
+                {isHost && player.id !== playerId && <KickButton player={player} onKick={onKick} onNotice={onNotice} />}
               </button>
             ))}
           </div>

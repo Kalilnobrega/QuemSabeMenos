@@ -22,6 +22,7 @@ from app.events import (
     ErrorAck,
     JoinedAck,
     JoinRoomRequest,
+    KickPlayerRequest,
     LastWordDraftRequest,
     MathStepsRequest,
     OkAck,
@@ -521,6 +522,16 @@ async def update_settings(sid: str, request: UpdateSettingsRequest) -> dict:
 @action(UpdateAvatarRequest)
 async def update_avatar(sid: str, request: UpdateAvatarRequest) -> dict:
     return await publish(rooms.update_avatar(sid, request.avatar))
+
+
+@sio.event
+@action(KickPlayerRequest)
+async def kick_player(sid: str, request: KickPlayerRequest) -> dict:
+    room, kicked_sid = rooms.kick(sid, request.player_id)
+    if kicked_sid:
+        await sio.leave_room(kicked_sid, room.code)
+        await sio.emit("kicked", to=kicked_sid)
+    return await publish(room)
 
 
 @sio.event

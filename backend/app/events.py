@@ -148,6 +148,12 @@ class UpdateAvatarRequest(BaseModel):
     avatar: Avatar
 
 
+class KickPlayerRequest(BaseModel):
+    """O anfitrião tira um jogador da sala, só no lobby. Quem saiu pode entrar de novo com o código."""
+
+    player_id: str
+
+
 class SetTeamRequest(BaseModel):
     """Times montados pelo anfitrião: põe um jogador num time (0 a team_count - 1)."""
 
@@ -970,6 +976,7 @@ EVENT_MODELS: list[type[BaseModel]] = [
     RejoinRoomRequest,
     UpdateSettingsRequest,
     SetTeamRequest,
+    KickPlayerRequest,
     ChooseRepresentativeRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
