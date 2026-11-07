@@ -1026,7 +1026,7 @@ function TeamResults({
             <li
               key={team.id}
               className={`avatar-pop flex flex-col gap-1 rounded-xl px-3 py-2 ${TEAMS[team.id].bg} ${team.id === match.my_team ? `ring-1 ${TEAMS[team.id].ring}` : ''}`}
-              style={{ animationDelay: `${index * 0.12}s` }}
+              style={{ animationDelay: `calc(${index} * var(--stagger-slow))` }}
             >
               <span className="flex items-center gap-2">
                 <span className={`font-display text-lg ${TEAMS[team.id].text}`}>{teamName(team.id)}</span>

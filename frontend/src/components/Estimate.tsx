@@ -676,7 +676,7 @@ function Reveal({
                     ? 'bg-success-strong/15 text-success'
                     : 'bg-danger-strong/15 text-danger'
               } ${guess.player_id === playerId ? 'ring-1 ring-brand/60' : ''}`}
-              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+              style={{ animationDelay: `calc(0.3s + ${index} * var(--stagger-slow))` }}
             >
               {player && <img src={avatarUrl(player)} alt="" className="size-7" />}
               <span className="flex min-w-0 flex-1 flex-col leading-tight">

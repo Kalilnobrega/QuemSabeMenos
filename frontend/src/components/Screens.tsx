@@ -39,7 +39,11 @@ function AvatarRow({ players }: { players: PlayerView[] }) {
   return (
     <ul className="flex max-w-xs flex-wrap justify-center gap-2" aria-label="Jogadores">
       {players.map((player, index) => (
-        <li key={player.id} className="avatar-pop" style={{ animationDelay: `${0.8 + index * 0.08}s` }}>
+        <li
+          key={player.id}
+          className="avatar-pop"
+          style={{ animationDelay: `calc(0.8s + ${index} * var(--stagger-slow))` }}
+        >
           <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-12" />
         </li>
       ))}
@@ -538,7 +542,7 @@ export function SkipButton({
         }}
         disabled={isReady}
         aria-label={isReady ? `Pronto. Faltam ${missing}` : 'Próxima'}
-        className={`relative flex w-full items-center gap-2 overflow-hidden rounded-xl bg-raised py-2.5 pr-2 pl-4 transition-transform duration-75 ease-out active:translate-y-[3px] focus-visible:outline-2 focus-visible:outline-chalk ${
+        className={`relative flex w-full items-center gap-2 overflow-hidden rounded-xl bg-raised py-2.5 pr-2 pl-4 transition-transform duration-(--dur-press) ease-out active:translate-y-[3px] focus-visible:outline-2 focus-visible:outline-chalk ${
           isReady ? 'translate-y-[3px]' : ''
         } ${className}`}
       >

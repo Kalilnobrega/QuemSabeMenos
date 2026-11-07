@@ -38,7 +38,13 @@
   --dur-exit: 120ms;
   --dur-enter: 320ms;
   --dur-leave: 200ms;
+  --dur-hover: 150ms;
+  /* O carimbo: o que chega batendo na tela, como avatares, faixas e marcas da régua. */
+  --dur-stamp: 420ms;
+  --dur-shake: 500ms;
   --stagger: 45ms;
+  /* A sequência sem pressa, fora da pergunta: avatares e linhas de resultado entrando um a um. */
+  --stagger-slow: 80ms;
   /* O placar da revelação: as posições deslizam logo depois de a tela chegar, e o QI conta junto. */
   --delay-rank: 350ms;
   --dur-rank: 650ms;
@@ -166,7 +172,7 @@ body {
   }
 }
 .avatar-pop {
-  animation: avatar-pop 0.45s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+  animation: avatar-pop var(--dur-stamp) var(--ease-bounce) both;
 }
 @keyframes intro-glow {
   50% {
@@ -190,7 +196,7 @@ body {
 }
 /* Banners da revelação: cada um bate na tela como um carimbo, um depois do outro. */
 .banner-stamp {
-  animation: banner-stamp 0.42s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+  animation: banner-stamp var(--dur-stamp) var(--ease-bounce) both;
 }
 @keyframes banner-stamp {
   from {
@@ -209,8 +215,8 @@ body {
 /* Sabotagem que te atinge: o carimbo e depois uma tremidinha. */
 .banner-hit {
   animation:
-    banner-stamp 0.42s cubic-bezier(0.2, 1.6, 0.4, 1) both,
-    banner-shake 0.4s ease-in-out;
+    banner-stamp var(--dur-stamp) var(--ease-bounce) both,
+    banner-shake var(--dur-stamp) ease-in-out;
 }
 @keyframes banner-shake {
   25% {
@@ -298,7 +304,7 @@ body {
     background-color var(--dur-pick) var(--ease-settle),
     opacity var(--dur-pick) var(--ease-settle),
     outline-color var(--dur-pick) var(--ease-settle),
-    filter 150ms;
+    filter var(--dur-hover);
 }
 .btn-sm {
   --btn-depth: 4px;
@@ -310,7 +316,8 @@ body {
 .btn-3d.is-pressed {
   translate: 0 calc(var(--btn-depth) - 1px);
   box-shadow: 0 1px 0 var(--btn-base, var(--color-raised-edge));
-  transition-duration: var(--dur-press), var(--dur-press), var(--dur-pick), var(--dur-pick), var(--dur-pick), 150ms;
+  transition-duration:
+    var(--dur-press), var(--dur-press), var(--dur-pick), var(--dur-pick), var(--dur-pick), var(--dur-hover);
   transition-timing-function: ease-out, ease-out, var(--ease-settle), var(--ease-settle), var(--ease-settle), ease;
 }
 .btn-brand {
@@ -349,10 +356,10 @@ body {
   animation: timer-pulse 1s ease-out;
 }
 .reveal-pop {
-  animation: reveal-pop 420ms var(--ease-bounce);
+  animation: reveal-pop var(--dur-stamp) var(--ease-bounce);
 }
 .reveal-shake {
-  animation: reveal-shake 0.5s ease-in-out;
+  animation: reveal-shake var(--dur-shake) ease-in-out;
 }
 .settings-sheet {
   animation: sheet-up var(--dur-enter) var(--ease-spring) both;
@@ -427,7 +434,7 @@ body {
   }
 }
 .podium-card {
-  animation: card-enter 420ms var(--ease-spring) both;
+  animation: card-enter var(--dur-stamp) var(--ease-spring) both;
 }
 /* A tela inicial: o logo cai com mola e os botões chegam logo depois. */
 .home-logo {
@@ -1461,10 +1468,10 @@ body {
   animation: ruler-label 0.3s ease-out both;
 }
 .pin-drop {
-  animation: pin-drop 0.4s cubic-bezier(0.3, 1.5, 0.5, 1) both;
+  animation: pin-drop var(--dur-stamp) var(--ease-spring) both;
 }
 .guess-drop {
-  animation: guess-drop 0.45s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+  animation: guess-drop var(--dur-stamp) var(--ease-spring) both;
 }
 .guess-exact {
   animation: guess-exact 0.9s ease-in-out infinite alternate;

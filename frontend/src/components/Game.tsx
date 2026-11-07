@@ -589,7 +589,11 @@ function ThemePick({
         {(game.theme_options ?? []).map((theme, index) => {
           const chosen = game.block_theme === theme
           return (
-            <li key={theme} className="avatar-pop" style={{ animationDelay: `${0.5 + index * 0.08}s` }}>
+            <li
+              key={theme}
+              className="avatar-pop"
+              style={{ animationDelay: `calc(0.5s + ${index} * var(--stagger-slow))` }}
+            >
               <button
                 onClick={() => void choose(theme)}
                 disabled={!mine || !!game.block_theme}
@@ -659,7 +663,7 @@ function FinalIntro({ snapshot }: { snapshot: Snapshot }) {
           <li
             key={player.id}
             className="avatar-pop flex flex-col items-center gap-0.5"
-            style={{ animationDelay: `${1.1 + index * 0.08}s` }}
+            style={{ animationDelay: `calc(1.1s + ${index} * var(--stagger-slow))` }}
           >
             <img src={avatarUrl(player)} alt={player.nickname} title={player.nickname} className="size-11" />
             <span className="font-display text-sm text-orange-100 tabular-nums">{formatScore(player.score)}</span>
@@ -1573,13 +1577,13 @@ function Voters({ players }: { players: PlayerView[] }) {
           src={avatarUrl(player)}
           alt={player.nickname}
           className="avatar-pop -ml-2.5 size-7 rounded-full border-2 border-ink first:ml-0"
-          style={{ animationDelay: `${0.5 + index * 0.08}s` }}
+          style={{ animationDelay: `calc(0.5s + ${index} * var(--stagger-slow))` }}
         />
       ))}
       {hidden > 0 && (
         <span
           className="avatar-pop -ml-2.5 flex size-7 items-center justify-center rounded-full border-2 border-ink bg-chalk text-xs font-bold text-ink"
-          style={{ animationDelay: `${0.5 + shown.length * 0.08}s` }}
+          style={{ animationDelay: `calc(0.5s + ${shown.length} * var(--stagger-slow))` }}
         >
           +{hidden}
         </span>
