@@ -10,6 +10,7 @@ import haha from '../assets/brand/haha.svg'
 import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, useCountdownSounds, useRemaining, useSoundsOnMount } from '../lib/effects'
 import { useListMotion } from '../lib/listMotion'
+import { useScrollReveal } from '../lib/scrollReveal'
 import { POWERUP_INFO, type Kind } from '../lib/powerups'
 import { playSound, type SoundId } from '../lib/sounds'
 import type { PlayerView, RoomState } from '../types/events'
@@ -366,21 +367,24 @@ export function PlayerPodium({
 
   // Quantas etapas já foram reveladas (0 = pódio vazio; PODIUM_STEPS.length = tudo).
   const [stage, setStage] = useState(() => (reducedMotion() ? PODIUM_STEPS.length : 0))
+  // Os degraus e as etapas só começam quando o pódio está na tela.
+  const podiumRef = useRef<HTMLDivElement>(null)
+  const podiumSeen = useScrollReveal(podiumRef)
   useEffect(() => {
-    if (stage >= PODIUM_STEPS.length) return
+    if (!podiumSeen || stage >= PODIUM_STEPS.length) return
     const timers = PODIUM_STEPS.map((ms, i) => setTimeout(() => setStage((s) => Math.max(s, i + 1)), ms))
     return () => timers.forEach(clearTimeout)
-    // Agenda uma vez, quando o pódio aparece.
+    // Agenda uma vez, quando o pódio aparece na tela.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [podiumSeen])
 
   const revealed = (place: number) => stage >= 4 - place
   useEffect(() => {
+    // O som de quem sabe menos vem com o destaque dele, quando aparece na tela.
     const sounds: Record<number, SoundId | undefined> = {
       1: 'slam',
       2: 'slam',
       3: 'podiumWinner',
-      4: worst ? 'podiumLoser' : undefined,
     }
     const sound = sounds[stage]
     if (sound && !(stage === 1 && ranked.length < 3)) playSound(sound)
@@ -399,7 +403,7 @@ export function PlayerPodium({
       done={done}
       onSkipIntro={() => setStage(PODIUM_STEPS.length)}
     >
-      <div className="relative flex items-end justify-center gap-2" aria-label="Pódio">
+      <div ref={podiumRef} className="relative flex items-end justify-center gap-2" aria-label="Pódio">
         {stage >= 3 && <Confetti />}
         {places.map(({ place, label, step, order }) => {
           const entry = ranked[place - 1]
@@ -435,7 +439,14 @@ export function PlayerPodium({
       </div>
 
       {worst && stage >= 4 && (
-        <Spotlight title="Quem sabe menos" icon={haha} player={worst.player} line={worstLine} tone="text-danger" />
+        <Spotlight
+          title="Quem sabe menos"
+          icon={haha}
+          player={worst.player}
+          line={worstLine}
+          tone="text-danger"
+          sound="podiumLoser"
+        />
       )}
 
       {done && extra}
@@ -447,6 +458,7 @@ export function PlayerPodium({
 /** A classificação do fim de jogo: os itens, com `data-flip`, entram em sequência quando ela aparece. */
 export function FinalList({ className = 'gap-2', children }: { className?: string; children: ReactNode }) {
   const ref = useListMotion<HTMLOListElement>()
+  useScrollReveal(ref)
   return (
     <ol ref={ref} className={`relative flex flex-col ${className}`}>
       {children}
@@ -454,7 +466,8 @@ export function FinalList({ className = 'gap-2', children }: { className?: strin
   )
 }
 
-/** Um jogador em destaque, com o ícone do lado do avatar e uma linha embaixo. */
+/** Um jogador em destaque, com o ícone do lado do avatar e uma linha embaixo. Entra quando aparece na tela,
+ *  e `sound` toca junto. */
 export function Spotlight({
   title,
   icon,
@@ -462,6 +475,7 @@ export function Spotlight({
   line,
   tone,
   winner = false,
+  sound,
 }: {
   title: string
   icon: string
@@ -469,9 +483,20 @@ export function Spotlight({
   line: ReactNode
   tone: string
   winner?: boolean
+  sound?: SoundId
 }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const seen = useScrollReveal(ref)
+  useEffect(() => {
+    if (seen && sound) playSound(sound)
+    // Uma vez, quando aparece.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [seen])
   return (
-    <div className="podium-card relative flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center">
+    <div
+      ref={ref}
+      className="podium-card relative flex flex-col items-center gap-2 rounded-2xl bg-panel p-4 text-center"
+    >
       {winner && <Confetti />}
       <span className={`font-display text-lg tracking-wide ${tone}`}>{title}</span>
       <div className="relative">
@@ -617,9 +642,12 @@ export function BannerList({
   step?: number
   label?: string
 }) {
+  // A batida de cada faixa espera a lista aparecer na tela.
+  const ref = useRef<HTMLUListElement>(null)
+  useScrollReveal(ref)
   if (items.length === 0) return null
   return (
-    <ul className="flex flex-col gap-1.5" aria-label={label}>
+    <ul ref={ref} className="flex flex-col gap-1.5" aria-label={label}>
       {items.map((item, index) => (
         <li
           key={item.key}

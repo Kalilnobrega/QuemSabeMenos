@@ -3,6 +3,7 @@ import { avatarUrl } from '../lib/avatars'
 import { reducedMotion, useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { useListMotion } from '../lib/listMotion'
+import { useScrollReveal } from '../lib/scrollReveal'
 import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import { POWERUP_INFO, SURVIVAL_HINTS, gainParts, scrambleWords, type Kind } from '../lib/powerups'
@@ -555,6 +556,8 @@ function SurvivorStrip({ snapshot, playerId }: { snapshot: Snapshot; playerId: s
     watch: ordered.map((s) => s.player_id).join(),
     remember: 'survivors',
   })
+  // Na revelação a fileira fica embaixo: quem perdeu vida treme quando ela aparece na tela.
+  useScrollReveal(listRef)
   return (
     <ul ref={listRef} className="relative flex flex-wrap justify-center gap-2" aria-label="Jogadores">
       {ordered.map((s) => {

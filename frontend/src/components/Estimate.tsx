@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { useRemaining, useUrgentTick, vibrate } from '../lib/effects'
 import { ESTIMATE_HINTS, POWERUP_INFO, gainParts, seededShuffle, shortCircuitMs, type Kind } from '../lib/powerups'
@@ -7,6 +7,7 @@ import { playSound } from '../lib/sounds'
 import type { Snapshot } from '../lib/useRoom'
 import type { EstimateGuess, EstimateView, PlayerView, PowerUpUse } from '../types/events'
 import { formatDelta, formatEstimate } from '../lib/format'
+import { useScrollReveal } from '../lib/scrollReveal'
 import { AnsweredRow } from './Answered'
 import { DIGIT_KEYS, draftValue, formatDraft } from '../lib/guessDraft'
 import { EstimateKeypad, MathKeypad, MathWatchPanel } from './EstimateKeypad'
@@ -663,7 +664,7 @@ function Reveal({
 
       {notes.length > 0 && <BannerList items={notes} label="O que os poderes fizeram" />}
 
-      <ul className="flex flex-col gap-1.5" aria-label="Chutes">
+      <GuessList>
         {estimate.guesses.map((guess, index) => {
           const player = byId(guess.player_id)
           return (
@@ -690,9 +691,20 @@ function Reveal({
             </li>
           )
         })}
-      </ul>
+      </GuessList>
 
       <Ranking players={players} playerId={playerId} deltas={deltas} />
     </div>
+  )
+}
+
+/** A lista de chutes da revelação: os itens entram quando ela aparece na tela. */
+function GuessList({ children }: { children: ReactNode }) {
+  const ref = useRef<HTMLUListElement>(null)
+  useScrollReveal(ref)
+  return (
+    <ul ref={ref} className="flex flex-col gap-1.5" aria-label="Chutes">
+      {children}
+    </ul>
   )
 }

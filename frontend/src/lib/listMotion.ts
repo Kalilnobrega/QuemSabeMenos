@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, type RefObject } from 'react'
+import { useEffect, useLayoutEffect, useRef, type RefObject } from 'react'
 import { playSound } from './sounds'
 import { reducedMotion } from './effects'
 
@@ -157,9 +157,11 @@ export function useChangeFlash(ref: RefObject<HTMLElement | null>) {
 /**
  * O placar da revelação: começa na ordem de antes da rodada e cada um desliza para a posição nova,
  * enquanto o QI conta. Só na primeira exibição. Os itens da lista precisam de `data-flip={id}`.
+ * Com `seen`, o "fiu" espera a lista aparecer na tela (as animações esperam com `useHoldAnimations`).
  */
-export function useRankSlide(ref: RefObject<HTMLElement | null>, before: string[] | null) {
+export function useRankSlide(ref: RefObject<HTMLElement | null>, before: string[] | null, seen = true) {
   const order = useRef(before)
+  const moving = useRef(false)
   useLayoutEffect(() => {
     const list = ref.current
     if (!order.current || !list || reducedMotion()) return
@@ -167,18 +169,21 @@ export function useRankSlide(ref: RefObject<HTMLElement | null>, before: string[
     const previous = order.current
     const moved = items.filter((el, index) => previous.indexOf(el.dataset.flip!) !== index)
     if (moved.length === 0) return
-    const delay = motionMs('--delay-rank')
-    const timer = setTimeout(() => playSound('rankingSwish'), delay)
+    moving.current = true
     for (const el of moved) {
       const slot = items[previous.indexOf(el.dataset.flip!)]
       if (!slot) continue
       el.animate([{ transform: `translateY(${slot.offsetTop - el.offsetTop}px)` }, { transform: 'translateY(0)' }], {
         duration: motionMs('--dur-rank'),
-        delay,
+        delay: motionMs('--delay-rank'),
         easing: token('--ease-spring'),
         fill: 'backwards',
       })
     }
-    return () => clearTimeout(timer)
   }, [ref])
+  useEffect(() => {
+    if (!seen || !moving.current) return
+    const timer = setTimeout(() => playSound('rankingSwish'), motionMs('--delay-rank'))
+    return () => clearTimeout(timer)
+  }, [seen])
 }

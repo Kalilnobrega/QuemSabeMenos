@@ -6,6 +6,7 @@ import { useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } 
 import { DifficultyChip, PhaseTimer, TimerBar } from './RoundUI'
 import { POWERUP_INFO, TEAM_HINTS, gainParts, gainTone, scrambleWords, type Kind } from '../lib/powerups'
 import { motionMs, useRankSlide } from '../lib/listMotion'
+import { useHoldAnimations, useOnScreen, useScrollReveal } from '../lib/scrollReveal'
 import { playSound } from '../lib/sounds'
 import { TEAMS, teamName } from '../lib/teams'
 import type { Snapshot } from '../lib/useRoom'
@@ -1014,9 +1015,11 @@ function TeamResults({
         ]
       : [],
   )
+  const listRef = useRef<HTMLUListElement>(null)
+  const seen = useScrollReveal(listRef)
   return (
     <div className="flex flex-col gap-2">
-      <ul className="flex flex-col gap-2">
+      <ul ref={listRef} className="flex flex-col gap-2">
         {match.teams.map((team, index) => {
           const total = roundTotal(team)
           const captain = playerOf(players, team.captain)
@@ -1039,7 +1042,7 @@ function TeamResults({
                 <span
                   className={`font-display text-xl ${total > 0 ? 'text-success' : total < 0 ? 'text-danger' : 'text-steel'}`}
                 >
-                  <CountUp from={0} to={total} format={formatDelta} />
+                  <CountUp from={0} to={total} format={formatDelta} run={seen} />
                 </span>
               </span>
               <span className="flex flex-wrap gap-x-3 text-sm text-steel">
@@ -1099,12 +1102,15 @@ function roundTotal(team: TeamSide) {
 
 function TeamBoard({ match, players }: { match: TeamMatchView; players: PlayerView[] }) {
   const listRef = useRef<HTMLOListElement>(null)
+  const seen = useOnScreen(listRef)
   useRankSlide(
     listRef,
     ranked(match.teams.map((team) => ({ ...team, score: team.score - roundTotal(team) }))).map((team) =>
       String(team.id),
     ),
+    seen,
   )
+  useHoldAnimations(listRef, seen)
   return (
     <ol ref={listRef} className="flex flex-col gap-1.5" aria-label="Placar dos times">
       {ranked(match.teams).map((team, index) => (
@@ -1128,6 +1134,7 @@ function TeamBoard({ match, players }: { match: TeamMatchView; players: PlayerVi
               to={team.score}
               format={(score) => `${score} QI`}
               delay={motionMs('--delay-rank-count')}
+              run={seen}
             />
           </span>
         </li>

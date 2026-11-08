@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { avatarUrl } from '../lib/avatars'
 import { reducedMotion } from '../lib/effects'
 import { formatEstimate } from '../lib/format'
+import { whenOnScreen } from '../lib/scrollReveal'
 import { playSound } from '../lib/sounds'
 import type { MatchAward, PlayerView } from '../types/events'
 
@@ -225,7 +226,8 @@ export interface AwardTeam {
   mine: boolean
 }
 
-/** Depois do pódio: os prêmios começam escondidos e viram um de cada vez, com a batida do pódio.
+/** Depois do pódio: os prêmios começam escondidos e viram um de cada vez, com a batida do pódio,
+ *  conforme cada um aparece na tela pela rolagem.
  *  `startDelayMs`: espera antes de começar, nas telas em que os prêmios já aparecem junto com o resto. */
 export function MatchAwards({
   awards,
@@ -241,33 +243,30 @@ export function MatchAwards({
   startDelayMs?: number
 }) {
   const [shown, setShown] = useState(() => (reducedMotion() ? awards.length : 0))
-  const section = useRef<HTMLElement>(null)
-  // No celular o pódio ocupa a tela toda: sem isso, os prêmios virariam fora da vista.
+  const list = useRef<HTMLOListElement>(null)
+  const [mountedAt] = useState(() => performance.now())
+  // O próximo só vira quando o lugar dele está na tela. Rolando rápido, eles seguem o ritmo da batida.
   useEffect(() => {
-    const timer = setTimeout(
-      () => section.current?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' }),
-      startDelayMs,
-    )
-    return () => clearTimeout(timer)
-    // Rola uma vez, quando os prêmios aparecem.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-  useEffect(() => {
-    if (shown >= awards.length) return
-    const timer = setTimeout(
-      () => {
+    const next = list.current?.children[shown]
+    if (shown >= awards.length || !next) return
+    let timer: ReturnType<typeof setTimeout> | undefined
+    const stop = whenOnScreen(next, () => {
+      const wait = shown === 0 ? Math.max(FIRST_MS, startDelayMs + FIRST_MS - (performance.now() - mountedAt)) : STEP_MS
+      timer = setTimeout(() => {
         playSound('slam')
         setShown((count) => count + 1)
-      },
-      shown === 0 ? startDelayMs + FIRST_MS : STEP_MS,
-    )
-    return () => clearTimeout(timer)
-  }, [shown, awards.length, startDelayMs])
+      }, wait)
+    })
+    return () => {
+      stop()
+      clearTimeout(timer)
+    }
+  }, [shown, awards.length, startDelayMs, mountedAt])
   if (awards.length === 0) return null
   return (
-    <section ref={section} className="flex flex-col gap-2.5" aria-label="Prêmios da partida">
+    <section className="flex flex-col gap-2.5" aria-label="Prêmios da partida">
       <h2 className="text-center font-display text-3xl tracking-wide text-brand">Prêmios da partida</h2>
-      <ol className="flex flex-col gap-2.5">
+      <ol ref={list} className="flex flex-col gap-2.5">
         {awards.map((award, index) => {
           const { title, tone, detail } = AWARDS[award.kind]
           const key = `${award.kind}-${award.player_id ?? award.team}`

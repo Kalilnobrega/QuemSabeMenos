@@ -3,6 +3,7 @@ import { avatarUrl } from '../lib/avatars'
 import { formatDelta, formatScore } from '../lib/format'
 import { POWERUP_INFO, gainParts, scrambleWords } from '../lib/powerups'
 import { motionMs, useListMotion, useRankSlide } from '../lib/listMotion'
+import { useHoldAnimations, useOnScreen } from '../lib/scrollReveal'
 import { playSound, type SoundId } from '../lib/sounds'
 import { reducedMotion, useFlashbang, useRemaining, useSoundsOnMount, useUrgentTick, vibrate } from '../lib/effects'
 import { DifficultyChip, FlameIcon, PhaseTimer, TimerBar } from './RoundUI'
@@ -868,23 +869,25 @@ export function Flame() {
 
 const easeInOutCubic = (k: number) => (k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2)
 
-/** Número que sobe (ou desce) contando de `from` até `to`, depois de `delay` ms. */
+/** Número que sobe (ou desce) contando de `from` até `to`, depois de `delay` ms. Com `run` falso, espera parado. */
 export function CountUp({
   from,
   to,
   format = String,
   duration = motionMs('--dur-count'),
   delay = motionMs('--delay-count'),
+  run = true,
 }: {
   from: number
   to: number
   format?: (n: number) => string
   duration?: number
   delay?: number
+  run?: boolean
 }) {
   const [value, setValue] = useState(reducedMotion() ? to : from)
   useEffect(() => {
-    if (reducedMotion()) return
+    if (reducedMotion() || !run) return
     const start = performance.now() + delay
     let frame = requestAnimationFrame(function tick(t) {
       const k = Math.min(1, Math.max(0, (t - start) / duration))
@@ -892,7 +895,7 @@ export function CountUp({
       if (k < 1) frame = requestAnimationFrame(tick)
     })
     return () => cancelAnimationFrame(frame)
-  }, [from, to, duration, delay])
+  }, [from, to, duration, delay, run])
   return <>{format(value)}</>
 }
 
@@ -1617,6 +1620,8 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
   const sorted = [...players].sort(byRanking)
   // Com os pontos da rodada, o movimento é o deslize. Na classificação final, a entrada em sequência.
   const listRef = useListMotion<HTMLOListElement>({ watch: sorted.map((p) => p.id).join(), entrance: !deltas })
+  // Tudo espera a lista aparecer na tela: no celular ela costuma ficar abaixo da dobra.
+  const seen = useOnScreen(listRef)
   useRankSlide(
     listRef,
     deltas
@@ -1625,7 +1630,9 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
           .sort(byRanking)
           .map((p) => p.id)
       : null,
+    seen,
   )
+  useHoldAnimations(listRef, seen)
 
   return (
     <ol ref={listRef} className="relative flex flex-col gap-2">
@@ -1656,6 +1663,7 @@ export function Ranking({ players, playerId, deltas, picks }: RankingProps) {
                 to={player.score}
                 format={formatScore}
                 delay={motionMs('--delay-rank-count')}
+                run={seen}
               />
             ) : (
               formatScore(player.score)
