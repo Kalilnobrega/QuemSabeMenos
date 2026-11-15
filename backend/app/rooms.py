@@ -611,6 +611,12 @@ class RoomManager:
         room.estimate.guess(player.id, value, now)
         return room
 
+    def guess_draft(self, sid: str, value: float | None, now: float) -> None:
+        """Chutômetro: o que está no visor, para valer se o tempo acabar."""
+        room, player = self._playing(sid)
+        if room.estimate:
+            room.estimate.guess_draft(player.id, value, now)
+
     def math_steps(self, sid: str, steps: list[int]) -> Room:
         """Chutômetro: as contas do alvo da Matemática."""
         room, player = self._playing(sid)

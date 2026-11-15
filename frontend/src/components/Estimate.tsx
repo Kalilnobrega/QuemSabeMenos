@@ -25,6 +25,7 @@ interface Props {
   onGuess: (value: number) => Promise<string | null>
   onMathSteps: (steps: number[]) => Promise<string | null>
   onLastWordDraft: (draft: string) => Promise<string | null>
+  onGuessDraft: (value: number | null) => Promise<string | null>
   onSkip: () => Promise<string | null>
   onArm: (
     kind: PowerUpUse['kind'],
@@ -89,6 +90,7 @@ export function Estimate({
   onGuess,
   onMathSteps,
   onLastWordDraft,
+  onGuessDraft,
   onSkip,
   onArm,
   onDisarm,
@@ -123,6 +125,7 @@ export function Estimate({
       onGuess={onGuess}
       onMathSteps={onMathSteps}
       onLastWordDraft={onLastWordDraft}
+      onGuessDraft={onGuessDraft}
       onSkip={onSkip}
       onArm={onArm}
       onDisarm={onDisarm}
@@ -156,6 +159,7 @@ interface RoundProps {
   onGuess: Props['onGuess']
   onMathSteps: Props['onMathSteps']
   onLastWordDraft: Props['onLastWordDraft']
+  onGuessDraft: Props['onGuessDraft']
   onSkip: Props['onSkip']
   onArm: Props['onArm']
   onDisarm: Props['onDisarm']
@@ -169,6 +173,7 @@ function EstimateRound({
   onGuess,
   onMathSteps,
   onLastWordDraft,
+  onGuessDraft,
   onSkip,
   onArm,
   onDisarm,
@@ -217,6 +222,8 @@ function EstimateRound({
   }, [speaking, lastWordOpen])
   useEffect(() => {
     if (speaking && lastWordOpen && draft) void onLastWordDraft(draft)
+    // Sem tocar em Chutar, o que está no visor vale quando o tempo acabar.
+    if (answering && !guessed) void onGuessDraft(draftValue(draft))
     // Só quando o rascunho muda.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [draft])
@@ -319,10 +326,12 @@ function EstimateRound({
         />
       ) : guessed || estimate.time_up ? (
         <div className="flex flex-col items-center gap-3">
-          {guessed ? (
+          {guessed || draftValue(draft) !== null ? (
             <>
               <p className="text-steel">Seu chute</p>
-              <p className="font-display text-5xl text-brand">{withUnit(estimate.my_guess!, estimate.unit)}</p>
+              <p className="font-display text-5xl text-brand">
+                {withUnit(guessed ? estimate.my_guess! : draftValue(draft)!, estimate.unit)}
+              </p>
             </>
           ) : (
             <p className="font-display text-2xl text-danger">Seu tempo acabou!</p>

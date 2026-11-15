@@ -328,6 +328,7 @@ class Estimate(Revealed):
     results: list[EstimateGuess] = field(default_factory=list)
     ready: set[str] = field(default_factory=set)
     first_guesses: dict[str, tuple[float, float]] = field(default_factory=dict)  # Segunda chance: o chute que errou
+    drafts: dict[str, tuple[float, float]] = field(default_factory=dict)  # o visor de quem ainda não chutou
     # Poderes (ver powerups.py para o que cada um faz no clássico).
     powers: bool = False
     powerup_max: int = pw.MAX_HELD
@@ -414,6 +415,7 @@ class Estimate(Revealed):
         if now > limit + LATE_SECONDS:
             raise EstimateError("O tempo acabou.")
         guessed = (value, min(now, limit))
+        self.drafts.pop(player_id, None)
         q = self.question
         lost = guess_points(self._scored_error(player_id, error_percent(q, value)), q.difficulty, self.point_scale) <= 0
         if lost and player_id not in self.first_guesses and self._affects("second_chance", player_id):
@@ -421,6 +423,35 @@ class Estimate(Revealed):
             self.used_lasting.setdefault(player_id, set()).add("second_chance")
             return
         self.guesses[player_id] = guessed
+
+    def guess_draft(self, player_id: str, value: float | None, now: float) -> None:
+        """Guarda o visor. Se o tempo acabar sem o Chutar, ele vale como chute. Fora de hora, só ignora."""
+        if self.phase != "answering" or player_id in self.guesses or player_id in self.math_puzzles:
+            return
+        if player_id == self.last_word_by and self.last_word_opened_at is None:
+            return
+        limit = (
+            self.phase_ends_at
+            if player_id == self.last_word_by
+            else self.phase_started_at + self.answer_window(player_id)
+        )
+        if now > limit + LATE_SECONDS:
+            return
+        if value is None:
+            self.drafts.pop(player_id, None)
+        else:
+            self.drafts[player_id] = (value, min(now, limit))
+
+    def _commit_drafts(self, keep: str | None = None) -> None:
+        """O tempo acabou: o visor de quem não tocou em Chutar vira o chute (na Segunda chance, o novo).
+        `keep` continua digitando, como quem tem a Palavra final."""
+        for pid, draft in list(self.drafts.items()):
+            if pid == keep:
+                continue
+            first = self.first_guesses.get(pid)
+            if pid not in self.guesses and (not first or draft[1] >= first[1]):
+                self.guesses[pid] = draft
+            del self.drafts[pid]
 
     def answer_window(self, player_id: str) -> float:
         """Segundos que o jogador tem para chutar: o alvo da Matemática tem mais."""
@@ -478,6 +509,7 @@ class Estimate(Revealed):
             return False
         if pid not in connected or pid in self.guesses:
             return False
+        self._commit_drafts(keep=pid)  # quem fala por último vê o visor dos outros como chute
         self.last_word_opened_at = now
         self.phase_ends_at = now + LAST_WORD_SECONDS
         return True
@@ -857,6 +889,7 @@ class Estimate(Revealed):
             self.round += 1
             self.guesses = {}
             self.first_guesses = {}
+            self.drafts = {}
             self.ranges = {}
             self.math_puzzles = {}
             self.last_word_by = self.last_word_opened_at = None
@@ -935,6 +968,7 @@ class Estimate(Revealed):
 
     def _close(self, now: float, players: list[Scorable]) -> None:
         q = self.question
+        self._commit_drafts()
         self.results = []
         earned = set()  # quem ganhou QI com o chute, antes de Escudo e Roubo: é o "acerto" dos poderes
         exact_guesses = set()

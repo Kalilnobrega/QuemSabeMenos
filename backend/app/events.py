@@ -199,6 +199,12 @@ class LastWordDraftRequest(BaseModel):
     draft: str = Field(max_length=24)
 
 
+class GuessDraftRequest(BaseModel):
+    """Chutômetro: o que está no visor. Vale como chute se o tempo acabar antes do Chutar."""
+
+    value: float | None = Field(default=None, allow_inf_nan=False)
+
+
 class SubmitGuessRequest(BaseModel):
     """Chutômetro: o número chutado."""
 

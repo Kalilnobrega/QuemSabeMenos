@@ -20,6 +20,7 @@ from app.events import (
     ChooseThemeRequest,
     CreateRoomRequest,
     ErrorAck,
+    GuessDraftRequest,
     JoinedAck,
     JoinRoomRequest,
     KickPlayerRequest,
@@ -618,6 +619,14 @@ async def last_word_draft(sid: str, request: LastWordDraftRequest) -> dict:
 @action(MathStepsRequest)
 async def math_steps(sid: str, request: MathStepsRequest) -> dict:
     return await publish(rooms.math_steps(sid, request.steps))
+
+
+@sio.event
+@action(GuessDraftRequest)
+async def guess_draft(sid: str, request: GuessDraftRequest) -> dict:
+    # Ninguém mais vê o visor: não precisa avisar a sala.
+    rooms.guess_draft(sid, request.value, time.monotonic())
+    return OkAck().model_dump()
 
 
 @sio.event

@@ -1219,6 +1219,20 @@ def test_last_word_opens_when_the_others_run_out_of_time():
         game.guess("b", 100, at + ANSWER_SECONDS + 3)
 
 
+def test_last_word_sees_the_display_of_who_ran_out_of_time_and_its_own_display_counts():
+    a, b = P("a"), P("b")
+    game = powered()
+    at = last_word_round(game, [a, b])
+    game.guess_draft("a", 50, at + 1)  # ainda não é a vez dele: não guarda
+    game.guess_draft("b", 90, at + 5)
+    assert game.open_last_word(at + ANSWER_SECONDS + 2, ["a", "b"])
+    view = game.view(at + ANSWER_SECONDS + 2, "a")
+    assert [(g.player_id, g.value) for g in view.last_word.guesses] == [("b", 90)]
+    game.guess_draft("a", 95, at + ANSWER_SECONDS + 4)
+    game.advance(game.phase_ends_at + 1, [a, b])
+    assert result(game, "a").value == 95 and result(game, "b").value == 90
+
+
 def finish_last_word(game: Estimate, players: list[P], at: float, speaker: float | None, **others: float) -> None:
     for pid, value in others.items():
         game.guess(pid, value, at + 1)
@@ -1407,3 +1421,45 @@ def test_speaker_who_copied_loses_the_last_word():
     game.guess("a", 170, at + 3)
     game.advance(at + 3, [a, b])
     assert result(game, "a").value == 100 and result(game, "a").last_word < 0
+
+
+def test_the_display_counts_as_the_guess_when_time_runs_out():
+    a, b, c = P("a"), P("b"), P("c")
+    game = powered()
+    game.advance(game.phase_ends_at, [a, b, c])
+    at = game.phase_started_at
+    game.guess_draft("a", 130, at + 1)
+    game.guess_draft("a", 110, at + 3)  # vale o último
+    game.guess_draft("b", 120, at + 2)
+    game.guess_draft("b", None, at + 4)  # apagou tudo: fica sem chute
+    game.guess_draft("c", 300, at + 2)
+    game.guess("c", 105, at + 5)  # o Chutar vale mais que o visor
+    game.guess_draft("c", 900, at + 6)  # depois de chutar, o visor não conta
+    assert not game.everyone_answered(["a", "b", "c"])
+    game.advance(at + ANSWER_SECONDS + 1, [a, b, c])
+    assert result(game, "a").value == 110 and result(game, "a").elapsed_ms == 3000
+    assert result(game, "b").value is None
+    assert result(game, "c").value == 105
+
+
+def test_the_display_after_the_time_is_ignored():
+    a = P("a")
+    game = powered()
+    game.advance(game.phase_ends_at, [a])
+    at = game.phase_started_at
+    game.guess_draft("a", 110, at + ANSWER_SECONDS + 5)
+    game.advance(at + ANSWER_SECONDS + 6, [a])
+    assert result(game, "a").value is None
+
+
+def test_second_chance_takes_the_new_display():
+    a = P("a")
+    game = powered()
+    ask(game, [a], a=100)
+    give(game, "a", "second_chance", ids=("a",))
+    game.advance(game.phase_ends_at, [a])
+    at = game.phase_started_at
+    game.guess("a", 170, at + 1)
+    game.guess_draft("a", 115, at + 2)
+    game.advance(at + ANSWER_SECONDS + 1, [a])
+    assert result(game, "a").value == 115 and result(game, "a").first_value == 170

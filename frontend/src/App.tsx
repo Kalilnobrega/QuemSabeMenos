@@ -81,6 +81,7 @@ export default function App() {
     skipResults,
     chooseTheme,
     guess,
+    guessDraft,
     mathSteps,
     lastWordDraft,
     updateSettings,
@@ -129,6 +130,7 @@ export default function App() {
         snapshot={snapshot}
         playerId={playerId}
         onGuess={guess}
+        onGuessDraft={guessDraft}
         onMathSteps={mathSteps}
         onLastWordDraft={lastWordDraft}
         onSkip={skipResults}
