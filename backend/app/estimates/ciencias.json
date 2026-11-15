@@ -1753,26 +1753,25 @@
       "fact": "Em todo o céu, são cerca de 6 mil estrelas visíveis."
     },
     {
-      "difficulty": "medium",
-      "text": "Qual é a magnitude aparente do Sol, em uma escala em que números baixos são mais brilhantes?",
-      "answer": -26.7,
-      "unit": "magnitude",
-      "fact": "Sirius, em comparação, tem -1,46."
+      "difficulty": "hard",
+      "text": "Quantas vezes o Sol parece mais brilhante que a Lua cheia, vistos daqui da Terra?",
+      "answer": 400000,
+      "unit": "vezes",
+      "fact": "Mesmo assim, a Lua cheia ilumina o bastante para fazer sombra."
     },
     {
       "difficulty": "hard",
-      "text": "Na escala de brilho dos astros, o Sol tem −26,7, e quanto menor o número, mais brilhante. Qual é a magnitude da Lua cheia?",
-      "answer": -12.7,
-      "unit": "magnitude",
-      "fact": "Quanto menor o número, mais brilhante é o astro."
+      "text": "Quantas vezes a Lua cheia parece mais brilhante que Sirius, a estrela mais brilhante da noite?",
+      "answer": 30000,
+      "unit": "vezes",
+      "fact": "A Lua só reflete a luz do Sol, e mesmo assim ganha de qualquer estrela."
     },
     {
       "difficulty": "hard",
-      "text": "Na escala de brilho dos astros, o Sol tem −26,7, e quanto menor o número, mais brilhante. Qual é a magnitude de Sirius, a estrela mais brilhante do céu noturno?",
-      "answer": -1.46,
-      "unit": "magnitude",
-      "fact": "Ela é 25 vezes mais luminosa que o Sol.",
-      "scale": 5
+      "text": "Quantas vezes Sirius parece mais brilhante que as estrelas mais fracas que dá para ver a olho nu?",
+      "answer": 1000,
+      "unit": "vezes",
+      "fact": "Ela emite cerca de 25 vezes mais luz que o Sol."
     },
     {
       "difficulty": "medium",
