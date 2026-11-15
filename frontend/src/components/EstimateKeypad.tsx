@@ -164,7 +164,7 @@ export function EstimateKeypad({
         ) : (
           <span className="font-display text-2xl text-steel/60">Seu chute</span>
         )}
-        {unit && <span className="text-sm font-semibold text-steel">{unit}</span>}
+        {unit && <span className="text-sm font-semibold text-brand">{unit}</span>}
       </output>
 
       {/* dense: a tecla larga pode cair no fim da linha, e o buraco é preenchido pela próxima. */}
@@ -473,7 +473,7 @@ export function MathKeypad({
         <span className="font-display text-4xl text-chalk">
           {new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 }).format(value)}
         </span>
-        {unit && <span className="text-sm font-semibold text-steel">{unit}</span>}
+        {unit && <span className="text-sm font-semibold text-brand">{unit}</span>}
       </output>
 
       <ScratchCard
@@ -556,7 +556,7 @@ export function MathWatchPanel({
       </p>
       <p className="text-center font-display text-4xl text-chalk" aria-live="polite">
         {new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 3 }).format(math.value)}
-        {unit && <span className="ml-2 font-sans text-sm font-semibold text-steel">{unit}</span>}
+        {unit && <span className="ml-2 font-sans text-sm font-semibold text-brand">{unit}</span>}
       </p>
       <p className="min-h-5 text-center text-sm break-words text-steel">
         {steps.length > 0 &&
