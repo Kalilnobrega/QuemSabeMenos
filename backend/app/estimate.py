@@ -141,9 +141,9 @@ class Scoring:
 
 # Como no clássico: a fácil é obrigação (ganha pouco, perde muito) e a difícil vale o risco.
 SCORING: dict[str, Scoring] = {
-    "easy": Scoring(max_points=8, exact_bonus=4, break_even=35, max_loss=-20),
-    "medium": Scoring(max_points=16, exact_bonus=8, break_even=40, max_loss=-15),
-    "hard": Scoring(max_points=24, exact_bonus=12, break_even=40, max_loss=-10),
+    "easy": Scoring(max_points=10, exact_bonus=4, break_even=35, max_loss=-18),
+    "medium": Scoring(max_points=16, exact_bonus=8, break_even=40, max_loss=-14),
+    "hard": Scoring(max_points=22, exact_bonus=10, break_even=40, max_loss=-10),
 }
 
 Phase = Literal["starting", "level", "answering", "results", "finished"]

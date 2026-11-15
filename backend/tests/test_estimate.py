@@ -61,26 +61,26 @@ def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_40_per
     assert points(212) == 14 and points(228) == 10  # 6% ganha mais que 14%
     assert points(280) == 0  # 40%: nem ganha nem perde
     assert points(300) == -4  # 50%
-    assert points(320) == -8  # 60%
-    assert points(360) == -15 and points(5000) == -15  # de 80% em diante
-    assert guess_points(None, "medium") == -20  # sem chute: o pior erro e mais 5
+    assert points(320) == -7  # 60%
+    assert points(360) == -14 and points(5000) == -14  # de 80% em diante
+    assert guess_points(None, "medium") == -19  # sem chute: o pior erro e mais 5
 
 
 def test_easy_is_an_obligation_and_hard_is_worth_the_risk():
-    assert [guess_points(e, "easy") for e in (0, 10, 35, 50, 70, None)] == [12, 6, 0, -9, -20, -25]
-    assert [guess_points(e, "hard") for e in (0, 10, 40, 50, 80, None)] == [36, 18, 0, -3, -10, -15]
+    assert [guess_points(e, "easy") for e in (0, 10, 35, 50, 70, None)] == [14, 7, 0, -8, -18, -23]
+    assert [guess_points(e, "hard") for e in (0, 10, 40, 50, 80, None)] == [32, 17, 0, -3, -10, -15]
 
 
 def test_shorter_matches_are_worth_more_per_question():
-    assert guess_points(0, "hard", scale=2) == 72  # 10 perguntas: o dobro
-    assert guess_points(None, "easy", scale=2) == -50
+    assert guess_points(0, "hard", scale=2) == 64  # 10 perguntas: o dobro
+    assert guess_points(None, "easy", scale=2) == -46
 
 
 def test_years_use_the_question_scale():
     q = question("ano", 1822, scale=50)
     assert error_percent(q, 1820) == 4  # 2 anos de 50 = 4%, não 0,1%
     assert guess_points(error_percent(q, 1820), "medium") == 14
-    assert guess_points(error_percent(q, 1700), "medium") == -15
+    assert guess_points(error_percent(q, 1700), "medium") == -14
 
 
 def test_small_whole_answers_still_pay_for_missing_by_one():
@@ -124,7 +124,7 @@ def test_match_flow_scores_and_sorts_by_distance():
     assert [g.player_id for g in view.guesses] == ["bia", "ana", "caio"]
     assert view.guesses[0].exact and view.guesses[2].value is None
     # Fácil numa partida de 3 (vale 20/3 por pergunta): 40% de erro, cravou, sem chute.
-    assert (ana.score, bia.score, caio.score) == (50 - 19, 50 + 80, 50 - 167)
+    assert (ana.score, bia.score, caio.score) == (50 - 17, 50 + 93, 50 - 153)
     assert caio.answer_ms == ANSWER_SECONDS * 1000
 
     game.mark_ready("ana")
@@ -151,7 +151,7 @@ def test_late_guesses_are_rejected():
 
 
 def powered(rounds: int = 6, difficulty: str = "medium", themes: tuple[str, ...] = ("Teste",)) -> Estimate:
-    """Partida com poderes em que toda resposta é 100: 115 ganha +10, 170 perde 11 e sem chute perde 20 (médias)."""
+    """Partida com poderes em que toda resposta é 100: 115 ganha +10, 170 perde 11 e sem chute perde 19 (médias)."""
     questions = [question(f"q{i}", 100, difficulty=difficulty) for i in range(rounds)]
     bank = [q.model_copy(update={"id": f"{t}-{i}", "theme": t}) for t in themes for i, q in enumerate(questions)]
     game = Estimate(questions=questions, powers=True, rng=random.Random(1), bank=bank, used={q.id for q in questions})
@@ -228,7 +228,7 @@ def test_double_triples_the_loss_on_hard_questions():
     assert result(game, "a").delta == -45
 
 
-@pytest.mark.parametrize(("difficulty", "points"), [("easy", 20), ("medium", 40), ("hard", 60)])
+@pytest.mark.parametrize(("difficulty", "points"), [("easy", 24), ("medium", 40), ("hard", 54)])
 def test_double_does_not_double_the_exact_bonus(difficulty, points):
     a = P("a")
     game = powered(difficulty=difficulty)
