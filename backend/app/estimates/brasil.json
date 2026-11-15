@@ -352,7 +352,7 @@
       "fact": "A partir de 2009 ele passou a dar vagas em universidades."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi lançada a Coca-Cola no Brasil?",
       "answer": 1942,
       "scale": 50,
@@ -408,42 +408,42 @@
       "fact": "Foram 10 dias, com mais de 1 milhão de pessoas."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi a estreia do Fantástico?",
       "answer": 1973,
       "scale": 50,
       "fact": "Ele vai ao ar aos domingos."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi a estreia da TV Globo?",
       "answer": 1965,
       "scale": 50,
       "fact": "A primeira emissora foi no Rio de Janeiro."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi a estreia do SBT?",
       "answer": 1981,
       "scale": 50,
       "fact": "Silvio Santos ganhou a concessão no governo Figueiredo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o personagem Zé Carioca?",
       "answer": 1942,
       "scale": 50,
       "fact": "Walt Disney viajou ao Brasil no ano anterior."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Maurício de Sousa criou a Mônica?",
       "answer": 1963,
       "scale": 50,
       "fact": "Ela foi inspirada em uma filha dele."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado o Fusca brasileiro?",
       "answer": 1959,
       "scale": 50,
@@ -464,7 +464,7 @@
       "fact": "O Uruguai foi o campeão."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano o Brasil ganhou o primeiro ouro olímpico?",
       "answer": 1920,
       "scale": 50,
@@ -499,7 +499,7 @@
       "fact": "Ele tinha 93 anos."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Elis Regina morreu?",
       "answer": 1982,
       "scale": 50,
@@ -520,7 +520,7 @@
       "fact": "Ele foi líder da Legião Urbana."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Raul Seixas morreu?",
       "answer": 1989,
       "scale": 50,
@@ -611,14 +611,14 @@
       "fact": "Foram em 1988, 1990 e 1991."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos títulos mundiais de Fórmula 1 tem Nelson Piquet?",
       "answer": 3,
       "unit": "títulos",
       "fact": "Ele foi campeão em 1981, 1983 e 1987."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos títulos mundiais de Fórmula 1 tem Emerson Fittipaldi?",
       "answer": 2,
       "unit": "títulos",
@@ -639,259 +639,259 @@
       "fact": "Ela morreu em um acidente de avião."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Tom Jobim tinha quando morreu?",
       "answer": 67,
       "unit": "anos",
       "fact": "O aeroporto do Galeão leva o nome dele."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Dona Ivone Lara viveu?",
       "answer": 97,
       "unit": "anos",
       "fact": "Ela foi a primeira mulher a compor samba-enredo em escola do Rio."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas capitais brasileiras têm linha de metrô, aproximadamente?",
       "answer": 8,
       "unit": "capitais",
       "fact": "A maior é em São Paulo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos bairros tem a cidade do Rio de Janeiro, aproximadamente?",
       "answer": 165,
       "unit": "bairros",
       "fact": "Copacabana é o mais famoso."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos km tem a praia do Cassino, a maior em linha reta do mundo?",
       "answer": 254,
       "unit": "km",
       "fact": "Ela fica no Rio Grande do Sul."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos km tem a orla de Copacabana?",
       "answer": 4,
       "unit": "km",
       "fact": "Os prédios ali têm vista para o Atlântico."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a altura do Dedo de Deus, em metros?",
       "answer": 1692,
       "unit": "metros",
       "fact": "Fica em Teresópolis."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a altura da Pedra da Gávea, em metros?",
       "answer": 844,
       "unit": "metros",
       "fact": "É um dos maiores blocos de pedra à beira-mar do mundo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a altura do Pico do Jaraguá, em metros?",
       "answer": 1135,
       "unit": "metros",
       "fact": "É o ponto mais alto da cidade de São Paulo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a altura do Pico das Agulhas Negras, em metros?",
       "answer": 2791,
       "unit": "metros",
       "fact": "Ele fica no Itatiaia."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a altura do Pico da Bandeira, em metros?",
       "answer": 2892,
       "unit": "metros",
       "fact": "É o terceiro ponto mais alto do Brasil."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a altura da Ponte Estaiada, em São Paulo, em metros?",
       "answer": 138,
       "unit": "metros",
       "fact": "Ela foi inaugurada em 2008."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a altura do Edifício Altino Arantes, o \"Banespão\", em metros?",
       "answer": 161,
       "unit": "metros",
       "fact": "Foi inspirado no Empire State."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a altura do prédio Martinelli, em metros?",
       "answer": 105,
       "unit": "metros",
       "fact": "Foi o primeiro arranha-céu do Brasil."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é o prédio mais alto do Brasil, One Tower, em metros?",
       "answer": 290,
       "unit": "metros",
       "fact": "Fica em Balneário Camboriú."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a temperatura média de Curitiba no ano, em °C?",
       "answer": 17,
       "unit": "°C",
       "fact": "É a capital mais fria do Brasil."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a temperatura média de Teresina no ano, em °C?",
       "answer": 28,
       "unit": "°C",
       "fact": "É uma das capitais mais quentes do Brasil."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a população de Porto Alegre, em milhões, no Censo de 2022?",
       "answer": 1.3,
       "unit": "milhão",
       "fact": "Ela sofreu uma enchente histórica em 2024."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a população de Recife, em milhões, no Censo de 2022?",
       "answer": 1.5,
       "unit": "milhão",
       "fact": "É a cidade mais densa do Nordeste."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a população de Belém, em milhões, no Censo de 2022?",
       "answer": 1.3,
       "unit": "milhão",
       "fact": "Ela sediou a COP30."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a população de Goiânia, em milhões, no Censo de 2022?",
       "answer": 1.4,
       "unit": "milhão",
       "fact": "Ela foi planejada nos anos 1930."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a população de Florianópolis, em milhares, no Censo de 2022?",
       "answer": 537,
       "unit": "mil",
       "fact": "Ela é uma das capitais com melhor qualidade de vida."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a população de Vitória, em milhares, no Censo de 2022?",
       "answer": 322,
       "unit": "mil",
       "fact": "Fica em uma ilha, no Espírito Santo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a população de Minas Gerais, em milhões, no Censo de 2022?",
       "answer": 20.5,
       "unit": "milhões",
       "fact": "É o segundo estado mais populoso."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a população da Bahia, em milhões, no Censo de 2022?",
       "answer": 14,
       "unit": "milhões",
       "fact": "É o estado mais populoso do Nordeste."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é a população de Roraima, em milhares, no Censo de 2022?",
       "answer": 636,
       "unit": "mil",
       "fact": "É o estado com menos gente no Brasil."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros que vivem na região Sudeste, em %?",
       "answer": 42,
       "unit": "%",
       "fact": "Ela concentra também a maior parte do PIB."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros que vivem na região Nordeste, em %?",
       "answer": 27,
       "unit": "%",
       "fact": "É a segunda região mais populosa."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros que vivem na região Norte, em %?",
       "answer": 8.5,
       "unit": "%",
       "fact": "É a maior região em área."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a idade mediana dos brasileiros, em anos, no Censo de 2022?",
       "answer": 35,
       "unit": "anos",
       "fact": "Ela era de 29 anos em 2010."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos habitantes por domicílio há no Brasil, em média, no Censo de 2022?",
       "answer": 2.79,
       "unit": "pessoas",
       "fact": "Em 2010, a média era de 3,31."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros pardos, no Censo de 2022, em %?",
       "answer": 45.3,
       "unit": "%",
       "fact": "Foi a primeira vez que superaram os brancos desde 1991."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros brancos, no Censo de 2022, em %?",
       "answer": 43.5,
       "unit": "%",
       "fact": "Era a maior parcela no censo anterior."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros pretos, no Censo de 2022, em %?",
       "answer": 10.2,
       "unit": "%",
       "fact": "Em 2010, eram 7,6%."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos indígenas o Censo de 2022 contou no Brasil, aproximadamente?",
       "answer": 1700000,
       "unit": "pessoas",
       "fact": "Mais da metade mora na Amazônia."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos povos indígenas o Brasil tem, aproximadamente?",
       "answer": 305,
       "unit": "povos",
       "fact": "Alguns ainda vivem isolados."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos quilombolas o Censo de 2022 contou, aproximadamente?",
       "answer": 1300000,
       "unit": "pessoas",
@@ -919,7 +919,7 @@
       "fact": "Em caso de empate em mata-mata, há prorrogação."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas noites dura o Festival de Parintins?",
       "answer": 3,
       "unit": "noites",
@@ -933,7 +933,7 @@
       "fact": "Em muitas cidades, ele é bem mais longo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é o tempo máximo de desfile de uma escola de samba do Rio, em minutos?",
       "answer": 70,
       "unit": "minutos",
@@ -1486,49 +1486,49 @@
       "fact": "A divisão atual é de 1970."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos fusos horários tem o Brasil, contando as ilhas?",
       "answer": 4,
       "unit": "fusos",
       "fact": "A maior parte do país segue o horário de Brasília."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos países de língua portuguesa tem na África?",
       "answer": 5,
       "unit": "países",
       "fact": "Angola, Moçambique, Cabo Verde, Guiné-Bissau e São Tomé e Príncipe."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas capitais brasileiras ficam em ilhas, aproximadamente?",
       "answer": 3,
       "unit": "capitais",
       "fact": "São Luís, Vitória e Florianópolis."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos estados fazem fronteira com o Mato Grosso do Sul?",
       "answer": 5,
       "unit": "estados",
       "fact": "Ele também faz fronteira com Paraguai e Bolívia."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Dom Pedro I reinou no Brasil, depois da Independência?",
       "answer": 9,
       "unit": "anos",
       "fact": "Ele abdicou em 1831."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Tiradentes tinha ao ser enforcado?",
       "answer": 45,
       "unit": "anos",
       "fact": "Ele nasceu em 1746."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos filhos Dom Pedro II teve?",
       "answer": 4,
       "unit": "filhos",
@@ -2711,14 +2711,14 @@
       "fact": "Ela é a mais populosa do país."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos países da América do Sul não fazem fronteira com o Brasil?",
       "answer": 2,
       "unit": "países",
       "fact": "São o Chile e o Equador."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos estados brasileiros são banhados pelo mar?",
       "answer": 17,
       "unit": "estados",

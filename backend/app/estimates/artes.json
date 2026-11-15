@@ -2,14 +2,14 @@
   "theme": "Artes",
   "questions": [
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Leonardo da Vinci começou a pintar a Mona Lisa?",
       "answer": 1503,
       "scale": 50,
       "fact": "Ele começou por volta de 1503 e continuou retocando o quadro por mais de dez anos."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas sinfonias completas Beethoven compôs?",
       "answer": 9,
       "unit": "sinfonias",
@@ -79,7 +79,7 @@
       "fact": "O painel retrata o bombardeio da cidade basca de Guernica na Guerra Civil Espanhola."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos metros de altura tem a Torre Eiffel, contando as antenas?",
       "answer": 330,
       "unit": "metros",
@@ -107,7 +107,7 @@
       "fact": "Gaudí assumiu a obra em 1883 e trabalhou nela até morrer, em 1926."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas notas diferentes tem a escala cromática ocidental, sem repetir a oitava?",
       "answer": 12,
       "unit": "notas",
@@ -198,7 +198,7 @@
       "fact": "A fachada foi inspirada na Ópera de Paris."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos metros mede a Estátua da Liberdade, do pé à ponta da tocha?",
       "answer": 46,
       "unit": "metros",
@@ -226,7 +226,7 @@
       "fact": "Alguns concertos usam muito mais."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Mozart tinha ao começar a compor?",
       "answer": 5,
       "unit": "anos",
@@ -408,42 +408,42 @@
       "fact": "Ele tem mais 8 metros de base."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a envergadura dos braços do Cristo Redentor, em metros?",
       "answer": 28,
       "unit": "metros",
       "fact": "A cabeça foi modelada na França."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a altura do Coliseu, em metros?",
       "answer": 48,
       "unit": "metros",
       "fact": "Hoje resta um terço da construção original."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a altura da Torre de Pisa, em metros?",
       "answer": 56,
       "unit": "metros",
       "fact": "A inclinação foi corrigida para cerca de 4 graus."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é o ângulo de inclinação da Torre de Pisa, aproximadamente, em graus?",
       "answer": 4,
       "unit": "graus",
       "fact": "Ela chegou a 5,5 graus antes da restauração."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a altura da Sagrada Família, em metros, ao concluir a Torre de Jesus?",
       "answer": 172,
       "unit": "metros",
       "fact": "Foi feita para ser um pouco menor que a colina de Montjuïc."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Qual é a altura da catedral de Notre-Dame, nas torres, em metros?",
       "answer": 69,
       "unit": "metros",
@@ -513,14 +513,14 @@
       "fact": "Foram quatro dias, com cerca de 400 mil pessoas."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o Grammy?",
       "answer": 1959,
       "scale": 50,
       "fact": "O prêmio é dado todo ano pela Academia de Gravação."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o Oscar?",
       "answer": 1929,
       "scale": 50,
@@ -548,14 +548,14 @@
       "fact": "Ele prometia \"mil músicas no seu bolso\"."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano o Pequeno Príncipe foi publicado?",
       "answer": 1943,
       "scale": 50,
       "fact": "Saint-Exupéry sumiu no ano seguinte."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"O Senhor dos Anéis\"?",
       "answer": 1954,
       "scale": 50,
@@ -569,112 +569,112 @@
       "fact": "J.K. Rowling foi recusada por 12 editoras."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Dom Quixote\", a primeira parte?",
       "answer": 1605,
       "scale": 50,
       "fact": "É um dos livros mais vendidos da história."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Romeu e Julieta\"?",
       "answer": 1597,
       "scale": 50,
       "fact": "A primeira edição foi publicada sem o nome do autor."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Frankenstein\"?",
       "answer": 1818,
       "scale": 50,
       "fact": "Mary Shelley tinha 20 anos."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Drácula\"?",
       "answer": 1897,
       "scale": 50,
       "fact": "Bram Stoker nunca foi à Transilvânia."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Moby Dick\"?",
       "answer": 1851,
       "scale": 50,
       "fact": "O livro não fez muito sucesso em vida do autor."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Alice no País das Maravilhas\"?",
       "answer": 1865,
       "scale": 50,
       "fact": "A história foi inventada em um passeio de barco."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Sherlock Holmes\" pela primeira vez?",
       "answer": 1887,
       "scale": 50,
       "fact": "\"Um Estudo em Vermelho\" é a primeira obra."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"1984\"?",
       "answer": 1949,
       "scale": 50,
       "fact": "Ele foi publicado meses antes da morte de Orwell."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Orgulho e Preconceito\"?",
       "answer": 1813,
       "scale": 50,
       "fact": "Jane Austen não assinou a obra."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Os Miseráveis\"?",
       "answer": 1862,
       "scale": 50,
       "fact": "O livro é um dos maiores da literatura mundial."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano foi publicado \"Cem Anos de Solidão\"?",
       "answer": 1967,
       "scale": 50,
       "fact": "García Márquez ganhou o Nobel em 1982."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Leonardo da Vinci pintou \"A Última Ceia\", no fim?",
       "answer": 1498,
       "scale": 50,
       "fact": "A obra foi feita em um refeitório de Milão."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Dalí pintou \"A Persistência da Memória\"?",
       "answer": 1931,
       "scale": 50,
       "fact": "Está no MoMA de Nova York."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano Vermeer pintou \"Moça com Brinco de Pérola\", aproximadamente?",
       "answer": 1665,
       "scale": 50,
       "fact": "O quadro está na Holanda."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano Rembrandt pintou \"A Ronda Noturna\"?",
       "answer": 1642,
       "scale": 50,
       "fact": "Na verdade, a cena não é noturna, o verniz escureceu."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano Botticelli pintou \"O Nascimento de Vênus\", aproximadamente?",
       "answer": 1485,
       "scale": 50,
@@ -688,14 +688,14 @@
       "fact": "Algumas de Wagner passam de 5 horas."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas horas de duração tem \"Hamlet\" sem cortes, aproximadamente?",
       "answer": 4,
       "unit": "horas",
       "fact": "É a peça mais longa de Shakespeare."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Dom Quixote tinha, na história de Cervantes?",
       "answer": 50,
       "unit": "anos",
@@ -709,14 +709,14 @@
       "fact": "Ela faria 14 anos dali a duas semanas."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos metros de largura tem \"Guernica\"?",
       "answer": 7.8,
       "unit": "metros",
       "fact": "A pintura está no Museu Reina Sofía, em Madri."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos girassóis aparecem na versão de Van Gogh de Munique?",
       "answer": 12,
       "unit": "girassóis",
@@ -730,105 +730,105 @@
       "fact": "Eles reagem à fala de Jesus sobre a traição."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantas figuras aparecem no teto da Capela Sistina, aproximadamente?",
       "answer": 300,
       "unit": "figuras",
       "fact": "Michelangelo levou quatro anos para pintá-lo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Michelangelo levou para pintar o teto da Capela Sistina?",
       "answer": 4,
       "unit": "anos",
       "fact": "Ele pintou quase sempre de pé, não deitado."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos m² tem o teto da Capela Sistina?",
       "answer": 500,
       "unit": "m²",
       "fact": "O papa Júlio II encomendou a obra."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Qual é o peso da estátua de Davi, em toneladas?",
       "answer": 6,
       "unit": "toneladas",
       "fact": "Ela é um bloco único de mármore."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos artistas se apresentaram no Woodstock, aproximadamente?",
       "answer": 32,
       "unit": "artistas",
       "fact": "Jimi Hendrix fechou o festival."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas pessoas foram ao Woodstock, aproximadamente?",
       "answer": 400000,
       "unit": "pessoas",
       "fact": "Era esperado um público bem menor."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas pessoas viram o Live Aid na TV, em bilhões, aproximadamente?",
       "answer": 1.5,
       "unit": "bilhão",
       "fact": "Foi um dos maiores eventos da TV."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantas horas durou o Live Aid?",
       "answer": 16,
       "unit": "horas",
       "fact": "O Queen foi o destaque do show em Londres."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos discos o Thriller vendeu, em milhões, aproximadamente?",
       "answer": 70,
       "unit": "milhões",
       "fact": "É o álbum mais vendido da história."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos discos os Beatles venderam, em milhões, aproximadamente?",
       "answer": 600,
       "unit": "milhões",
       "fact": "É a banda que mais vendeu na história."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos discos Elvis Presley vendeu, em milhões, aproximadamente?",
       "answer": 500,
       "unit": "milhões",
       "fact": "Ele não fez nenhuma turnê fora da América do Norte."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos discos a Madonna vendeu, em milhões, aproximadamente?",
       "answer": 300,
       "unit": "milhões",
       "fact": "É a artista feminina que mais vendeu."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos Grammys ganhou Beyoncé até 2025?",
       "answer": 35,
       "unit": "Grammys",
       "fact": "É a pessoa com mais Grammys da história."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos Grammys ganhou Taylor Swift de Álbum do Ano, até 2024?",
       "answer": 4,
       "unit": "prêmios",
       "fact": "Ela é a única a chegar a esse número."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos shows teve a The Eras Tour, de Taylor Swift?",
       "answer": 149,
       "unit": "shows",
@@ -926,56 +926,56 @@
       "fact": "O mesmo ano de Madonna e Prince."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Leonardo da Vinci?",
       "answer": 1452,
       "scale": 50,
       "fact": "Ele nasceu em uma cidade da Toscana chamada Vinci."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Michelangelo?",
       "answer": 1475,
       "scale": 50,
       "fact": "Ele nasceu em Caprese, na Itália."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Rafael?",
       "answer": 1483,
       "scale": 50,
       "fact": "Ele morreu aos 37 anos."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Van Gogh?",
       "answer": 1853,
       "scale": 50,
       "fact": "Ele nasceu na Holanda."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Picasso?",
       "answer": 1881,
       "scale": 50,
       "fact": "Ele nasceu em Málaga, na Espanha."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Salvador Dalí?",
       "answer": 1904,
       "scale": 50,
       "fact": "Ele nasceu em Figueres."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Frida Kahlo?",
       "answer": 1907,
       "scale": 50,
       "fact": "Ela nasceu em Coyoacán, no México."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Tarsila do Amaral?",
       "answer": 1886,
       "scale": 50,
@@ -1465,63 +1465,63 @@
       "fact": "Foi poucos meses antes da morte de Mozart."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano foi criada a Academia Brasileira de Música?",
       "answer": 1945,
       "scale": 50,
       "fact": "Villa-Lobos foi o fundador."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Villa-Lobos?",
       "answer": 1887,
       "scale": 50,
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Tchaikovsky?",
       "answer": 1840,
       "scale": 50,
       "fact": "Ele foi professor no Conservatório de Moscou."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Chopin?",
       "answer": 1810,
       "scale": 50,
       "fact": "Ele nasceu perto de Varsóvia."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Mozart?",
       "answer": 1756,
       "scale": 50,
       "fact": "Ele nasceu em Salzburgo."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Bach?",
       "answer": 1685,
       "scale": 50,
       "fact": "O mesmo ano de Händel."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Vivaldi?",
       "answer": 1678,
       "scale": 50,
       "fact": "Ele foi padre e era chamado de \"Padre Ruivo\"."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Shakespeare?",
       "answer": 1564,
       "scale": 50,
       "fact": "O mesmo ano de Galileu Galilei."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Cervantes?",
       "answer": 1547,
       "scale": 50,
@@ -2732,14 +2732,14 @@
       "fact": "Ele viveu seus últimos meses na França."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos anos Michelangelo tinha quando terminou a Pietà do Vaticano?",
       "answer": 24,
       "unit": "anos",
       "fact": "Ele a assinou na faixa de Maria."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "medium",
       "text": "Quantos atos tem uma tragédia clássica de Shakespeare?",
       "answer": 5,
       "unit": "atos",
@@ -2872,7 +2872,7 @@
       "fact": "Ela conta a conquista normanda da Inglaterra."
     },
     {
-      "difficulty": "easy",
+      "difficulty": "hard",
       "text": "Quantos anos Monet morou em Giverny, aproximadamente?",
       "answer": 43,
       "unit": "anos",
