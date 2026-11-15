@@ -58,7 +58,8 @@ ESTIMATES_DIR = Path(__file__).parent / "estimates"
 ROUND_OPTIONS = (10, 15, 20)
 ANSWER_SECONDS = 20.0
 MATH_SECONDS = 30.0  # o alvo da Matemática tem mais tempo, e os outros assistem às contas
-MAX_LOSS_FACTOR = 3  # a perda chega ao máximo no triplo do erro em que o ganho zera
+MAX_LOSS_FACTOR = 2  # a perda chega ao máximo no dobro do erro em que o ganho zera
+MIN_INTEGER_BASE = 4  # com ela, errar por 1 numa resposta inteira pequena ainda ganha um pouco
 NO_GUESS_EXTRA = -5  # não chutar custa o pior erro e mais isso, para nunca compensar deixar passar
 # Sem 50/50, Alternativa falsa e Pedágio, que dependem de alternativas, e sem Tempo extra: a velocidade não dá QI.
 # Investimento, Embaralhar, Lupa, Acelerador, Flashbang e Espiar também ficaram de fora, por escolha de jogo.
@@ -125,7 +126,7 @@ RANGE_OFF_CENTER = (0.15, 0.4)  # a Faixa tem a resposta a essa fração de uma 
 @dataclass(frozen=True)
 class Scoring:
     """Pontos contínuos, em linha reta: o ganho cai de `max_points` (erro quase zero) até 0 em
-    `break_even` % de erro; daí em diante perde, até `max_loss` no triplo desse erro (e não passa
+    `break_even` % de erro; daí em diante perde, até `max_loss` no dobro desse erro (e não passa
     disso). Cravar soma `exact_bonus`. Sem chute, perde o máximo."""
 
     max_points: int
@@ -140,9 +141,9 @@ class Scoring:
 
 # Como no clássico: a fácil é obrigação (ganha pouco, perde muito) e a difícil vale o risco.
 SCORING: dict[str, Scoring] = {
-    "easy": Scoring(max_points=8, exact_bonus=4, break_even=20, max_loss=-20),
-    "medium": Scoring(max_points=16, exact_bonus=8, break_even=30, max_loss=-15),
-    "hard": Scoring(max_points=24, exact_bonus=12, break_even=35, max_loss=-10),
+    "easy": Scoring(max_points=8, exact_bonus=4, break_even=35, max_loss=-20),
+    "medium": Scoring(max_points=16, exact_bonus=8, break_even=40, max_loss=-15),
+    "hard": Scoring(max_points=24, exact_bonus=12, break_even=40, max_loss=-10),
 }
 
 Phase = Literal["starting", "level", "answering", "results", "finished"]
@@ -179,8 +180,14 @@ def load_estimates(directory: Path = ESTIMATES_DIR) -> list[EstimateQuestion]:
 
 
 def error_base(question: EstimateQuestion) -> float:
-    """O valor que vale 100% de erro."""
-    return question.scale or abs(question.answer) or 1
+    """O valor que vale 100% de erro. Numa resposta inteira pequena (3 pontos, 4 Oscars), errar por 1
+    seria 25% ou mais e já não ganharia nada, então a base não fica abaixo de `MIN_INTEGER_BASE`."""
+    if question.scale:
+        return question.scale
+    base = abs(question.answer)
+    if float(question.answer).is_integer():
+        return max(base, MIN_INTEGER_BASE)
+    return base or 1
 
 
 def error_percent(question: EstimateQuestion, value: float) -> float:

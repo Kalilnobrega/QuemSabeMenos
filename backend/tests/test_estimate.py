@@ -52,23 +52,23 @@ def test_bank_has_numeric_questions_at_every_level_in_every_theme():
         )
 
 
-def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_30_percent():
+def test_medium_points_shrink_with_the_distance_and_turn_into_losses_past_40_percent():
     q = question("q", 200)
     points = lambda guess: guess_points(error_percent(q, guess), "medium")
     assert points(200) == 24  # cravou: 16 + 8 de bônus
     assert points(201) == 16  # 0,5%: sem o bônus
-    assert points(210) == 13  # 5%
-    assert points(212) == 13 and points(228) == 9  # 6% ganha mais que 14%
-    assert points(260) == 0  # 30%: nem ganha nem perde
-    assert points(290) == -4  # 45%
+    assert points(210) == 14  # 5%
+    assert points(212) == 14 and points(228) == 10  # 6% ganha mais que 14%
+    assert points(280) == 0  # 40%: nem ganha nem perde
+    assert points(300) == -4  # 50%
     assert points(320) == -8  # 60%
-    assert points(380) == -15 and points(5000) == -15  # de 90% em diante
+    assert points(360) == -15 and points(5000) == -15  # de 80% em diante
     assert guess_points(None, "medium") == -20  # sem chute: o pior erro e mais 5
 
 
 def test_easy_is_an_obligation_and_hard_is_worth_the_risk():
-    assert [guess_points(e, "easy") for e in (0, 10, 20, 50, 60, None)] == [12, 4, 0, -15, -20, -25]
-    assert [guess_points(e, "hard") for e in (0, 10, 35, 50, 105, None)] == [36, 17, 0, -2, -10, -15]
+    assert [guess_points(e, "easy") for e in (0, 10, 35, 50, 70, None)] == [12, 6, 0, -9, -20, -25]
+    assert [guess_points(e, "hard") for e in (0, 10, 40, 50, 80, None)] == [36, 18, 0, -3, -10, -15]
 
 
 def test_shorter_matches_are_worth_more_per_question():
@@ -83,9 +83,18 @@ def test_years_use_the_question_scale():
     assert guess_points(error_percent(q, 1700), "medium") == -15
 
 
+def test_small_whole_answers_still_pay_for_missing_by_one():
+    braille = question("braille", 6, difficulty="easy")
+    assert guess_points(error_percent(braille, 5), "easy") > 0 and guess_points(error_percent(braille, 7), "easy") > 0
+    oscars = question("oscars", 3, difficulty="easy")
+    assert error_percent(oscars, 4) == 25  # a base não fica abaixo de 4
+    assert guess_points(error_percent(oscars, 4), "easy") > 0 and guess_points(error_percent(oscars, 5), "easy") < 0
+    assert error_percent(question("milhao", 1.5), 2) == pytest.approx(33.3, abs=0.1)  # com casas, a base é a resposta
+
+
 def test_negative_answers_measure_distance_from_the_absolute_value():
     q = question("frio", -273.15)
-    assert guess_points(error_percent(q, -270), "medium") == 15  # 1,15%
+    assert guess_points(error_percent(q, -270), "medium") == 16  # 1,15%
 
 
 def test_match_flow_scores_and_sorts_by_distance():
@@ -115,7 +124,7 @@ def test_match_flow_scores_and_sorts_by_distance():
     assert [g.player_id for g in view.guesses] == ["bia", "ana", "caio"]
     assert view.guesses[0].exact and view.guesses[2].value is None
     # Fácil numa partida de 3 (vale 20/3 por pergunta): 40% de erro, cravou, sem chute.
-    assert (ana.score, bia.score, caio.score) == (50 - 67, 50 + 80, 50 - 167)
+    assert (ana.score, bia.score, caio.score) == (50 - 19, 50 + 80, 50 - 167)
     assert caio.answer_ms == ANSWER_SECONDS * 1000
 
     game.mark_ready("ana")
@@ -142,7 +151,7 @@ def test_late_guesses_are_rejected():
 
 
 def powered(rounds: int = 6, difficulty: str = "medium", themes: tuple[str, ...] = ("Teste",)) -> Estimate:
-    """Partida com poderes em que toda resposta é 100: 115 ganha +8, 170 perde 10 e sem chute perde 20 (médias)."""
+    """Partida com poderes em que toda resposta é 100: 115 ganha +10, 170 perde 11 e sem chute perde 20 (médias)."""
     questions = [question(f"q{i}", 100, difficulty=difficulty) for i in range(rounds)]
     bank = [q.model_copy(update={"id": f"{t}-{i}", "theme": t}) for t in themes for i, q in enumerate(questions)]
     game = Estimate(questions=questions, powers=True, rng=random.Random(1), bank=bank, used={q.id for q in questions})
@@ -194,8 +203,8 @@ def test_double_doubles_gains_and_losses():
     ask(game, [a, b], a=100, b=100)
     give(game, "a", "double")
     ask(game, [a, b], a=115, b=115)
-    assert result(game, "a").delta == 16 and result(game, "a").doubled
-    assert result(game, "b").delta == 8
+    assert result(game, "a").delta == 20 and result(game, "a").doubled
+    assert result(game, "b").delta == 10
     give(game, "a", "double")
     ask(game, [a, b], a=170, b=170)
     assert result(game, "a").delta == 2 * result(game, "b").delta < 0
@@ -350,10 +359,10 @@ def test_shield_holds_one_loss_and_then_ends():
     give(game, "a", "shield")
     before = a.score
     ask(game, [a, b], a=170, b=100)
-    assert result(game, "a").delta == 0 and result(game, "a").shielded == 10
+    assert result(game, "a").delta == 0 and result(game, "a").shielded == 11
     assert a.score == before
     ask(game, [a, b], a=170, b=100)
-    assert result(game, "a").delta == -10
+    assert result(game, "a").delta == -11
 
 
 def test_unused_shield_breaks_after_two_questions():
@@ -375,8 +384,8 @@ def test_steal_takes_ten_and_half_of_the_gain():
     give(game, "a", "steal", "b")
     assert all(use.kind != "steal" for use in game.view(game.phase_ends_at, "b").active)
     ask(game, [a, b], a=170, b=115)
-    assert result(game, "a").stolen == result(game, "b").robbed == 14
-    assert a.score == -10 + 14 and b.score == 8 - 14
+    assert result(game, "a").stolen == result(game, "b").robbed == 15
+    assert a.score == -11 + 15 and b.score == 10 - 15
 
 
 def test_shield_blocks_steal():
@@ -403,7 +412,7 @@ def test_second_chance_tells_the_side_and_the_new_guess_is_worth_half():
     game.guess("a", 115, at + 2)
     assert game.view(at + 2, "a").retry_hint is None
     game.advance(at + 3, [a])
-    assert result(game, "a").delta == 4
+    assert result(game, "a").delta == 5
     assert result(game, "a").value == 115 and result(game, "a").first_value == 170
 
 
@@ -413,9 +422,9 @@ def test_second_chance_keeps_a_winning_guess_and_the_first_loss_if_nobody_retrie
     ask(game, [a], a=100)
     give(game, "a", "second_chance", ids=("a",))
     ask(game, [a], a=115)  # já ganhava QI: não gasta
-    assert result(game, "a").delta == 8 and result(game, "a").first_value is None
+    assert result(game, "a").delta == 10 and result(game, "a").first_value is None
     ask(game, [a], a=30)  # 70% de erro: perde, sem tentar de novo fica com ele
-    assert result(game, "a").delta == -10 and result(game, "a").value == 30
+    assert result(game, "a").delta == -11 and result(game, "a").value == 30
 
 
 def test_reverse_sends_the_sabotage_back_once():
@@ -586,14 +595,14 @@ def test_wide_margin_doubles_the_zones_for_who_used_it():
     game = powered()
     ask(game, [a, b], a=100, b=100)
     give(game, "a", "wide_margin")
-    ask(game, [a, b], a=145, b=145)  # 45% de erro: passa dos 30% das médias, mas não dos 60% da Margem
+    ask(game, [a, b], a=145, b=145)  # 45% de erro: passa dos 40% das médias, mas não dos 80% da Margem
     assert result(game, "a").delta > 0 and result(game, "b").delta < 0
     assert result(game, "a").error_percent == result(game, "b").error_percent == 45
     at = game.phase_started_at
-    assert game.view(at, "a").scoring.break_even_percent == 60
-    assert game.view(at, "b").scoring.break_even_percent == 30
+    assert game.view(at, "a").scoring.break_even_percent == 80
+    assert game.view(at, "b").scoring.break_even_percent == 40
     game.advance(game.phase_ends_at, [a, b])
-    assert game.view(game.phase_started_at, "a").scoring.break_even_percent == 30  # só vale uma pergunta
+    assert game.view(game.phase_started_at, "a").scoring.break_even_percent == 40  # só vale uma pergunta
 
 
 def test_wide_margin_avoids_spending_the_second_chance():
@@ -717,13 +726,13 @@ def test_sniper_halves_the_zone_and_doubles_the_gain_during_the_question():
     game = powered()
     ask(game, [a, b], a=100, b=100)
     at = snipe(game, [a, b], "a")
-    assert game.view(at, "a").scoring.break_even_percent == 15
+    assert game.view(at, "a").scoring.break_even_percent == 20
     assert game.view(at, "a").scoring.max_points == 32
-    assert game.view(at, "b").scoring.break_even_percent == 30
-    game.guess("a", 105, at)  # 5% de erro: na zona de 15% vale 11 de 16, em dobro
+    assert game.view(at, "b").scoring.break_even_percent == 40
+    game.guess("a", 105, at)  # 5% de erro: na zona de 20% vale 12 de 16, em dobro
     game.guess("b", 105, at)
     game.advance(at + 1, [a, b])
-    assert result(game, "a").delta == 22 and result(game, "b").delta == 13
+    assert result(game, "a").delta == 24 and result(game, "b").delta == 14
 
 
 def test_sniper_turns_a_near_miss_into_a_loss():
@@ -731,8 +740,8 @@ def test_sniper_turns_a_near_miss_into_a_loss():
     game = powered()
     ask(game, [a, b], a=100, b=100)
     at = snipe(game, [a, b], "a")
-    game.guess("a", 120, at)  # 20%: ganha sem o Sniper, perde com ele
-    game.guess("b", 120, at)
+    game.guess("a", 125, at)  # 25%: ganha sem o Sniper, perde com ele
+    game.guess("b", 125, at)
     game.advance(at + 1, [a, b])
     assert result(game, "a").delta < 0 < result(game, "b").delta
 
