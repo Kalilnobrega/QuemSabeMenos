@@ -232,6 +232,17 @@ class UsePowerUpRequest(BaseModel):
     option: int | None = None  # Batata quente: a alternativa do Palpite do além
 
 
+ReportReason = Literal["wrong_answer", "confusing", "wrong_level", "other"]
+
+
+class ReportQuestionRequest(BaseModel):
+    """Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco."""
+
+    text: str = Field(min_length=1, max_length=500)
+    reason: ReportReason
+    comment: str = Field(default="", max_length=300)
+
+
 # --- Servidor → cliente -------------------------------------------------------
 
 
@@ -989,6 +1000,7 @@ EVENT_MODELS: list[type[BaseModel]] = [
     SubmitDuelBetRequest,
     ArmPowerUpRequest,
     UsePowerUpRequest,
+    ReportQuestionRequest,
     RoomState,
     JoinedAck,
     OkAck,

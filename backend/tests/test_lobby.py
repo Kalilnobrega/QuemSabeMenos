@@ -354,6 +354,22 @@ async def test_history_download_needs_the_token(server_url, monkeypatch):
     assert response.status_code == 200 and response.content.startswith(b"SQLite format 3")
 
 
+async def test_report_reaches_the_reports_list(connect, server_url, monkeypatch):
+    ana, bia, _created, _ = await setup_room(connect)
+    await ana.call("start_game")
+    state = await bia.wait_for(lambda s: s["game"] and s["game"]["question"])
+    text = state["game"]["question"]["text"]
+    assert (await bia.call("report_question", {"text": text, "reason": "wrong_answer", "comment": " Errada. "}))["ok"]
+    assert (await bia.call("report_question", {"text": text, "reason": "other"}))["ok"]  # repetido: ignora quieto
+    assert "error" in await bia.call("report_question", {"text": text, "reason": "chato"})
+    monkeypatch.setattr(main, "HISTORY_TOKEN", "segredo")
+    async with httpx.AsyncClient(base_url=server_url) as client:
+        assert (await client.get("/reports")).status_code == 404
+        reports = (await client.get("/reports", headers={"Authorization": "Bearer segredo"})).json()
+    assert len(reports) == 1 and reports[0]["comment"] == "Errada." and reports[0]["nickname"] == "Bia"
+    assert reports[0]["question_id"] and reports[0]["question_text"] == text and reports[0]["mode"] == "classic"
+
+
 async def test_duel_stops_the_match_and_then_it_goes_on(connect, monkeypatch):
     from app import duel as x1
 

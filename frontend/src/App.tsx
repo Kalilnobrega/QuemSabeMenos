@@ -6,6 +6,7 @@ import { Teams } from './components/Teams'
 import { LoadingDots } from './components/LoadingDots'
 import { Lobby } from './components/Lobby'
 import { Survival } from './components/Survival'
+import { ReportProvider } from './components/ReportQuestion'
 import { Logo } from './components/Logo'
 import { ProfileForm } from './components/ProfileForm'
 import { playSound } from './lib/sounds'
@@ -82,6 +83,7 @@ export default function App() {
     chooseTheme,
     guess,
     guessDraft,
+    reportQuestion,
     mathSteps,
     lastWordDraft,
     updateSettings,
@@ -277,7 +279,7 @@ export default function App() {
         room?.game || room?.survival || room?.hot_potato ? 'justify-start pt-6 pb-10' : 'justify-center py-10'
       }`}
     >
-      {content}
+      <ReportProvider onSend={reportQuestion}>{content}</ReportProvider>
       {/* Só na tela inicial e no lobby: na partida, o pé da tela fica para o Próxima. */}
       {!(room?.game || room?.survival || room?.hot_potato || room?.team_match || room?.estimate) && <SoundToggle />}
       {!connected && (

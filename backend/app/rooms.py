@@ -7,6 +7,7 @@ import random
 import secrets
 import time
 import uuid
+from contextlib import suppress
 from dataclasses import dataclass, field
 from typing import Literal
 
@@ -610,6 +611,19 @@ class RoomManager:
             raise RoomError("Esse modo não tem chute.")
         room.estimate.guess(player.id, value, now)
         return room
+
+    def reported_question(self, sid: str, text: str) -> tuple[Room, Player, str | None]:
+        """A pergunta que o jogador quer reportar: a da partida, se o texto bater, ou a do banco com esse texto."""
+        room, player = self._playing(sid)
+        engines = (room.game, room.survival, room.hot_potato, room.team_match, room.estimate)
+        current = []
+        for engine in engines:
+            with suppress(AttributeError, IndexError):  # a Batata quente não tem uma pergunta só
+                current.append(engine.question)
+        for q in [*current, *self.bank, *self.statements, *self.estimates]:
+            if q is not None and q.text == text:
+                return room, player, q.id
+        return room, player, None
 
     def guess_draft(self, sid: str, value: float | None, now: float) -> None:
         """Chutômetro: o que está no visor, para valer se o tempo acabar."""

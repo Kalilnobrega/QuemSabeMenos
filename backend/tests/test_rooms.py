@@ -287,3 +287,30 @@ def test_host_builds_the_teams(manager):
     manager.set_team("sid-0", ids[3], 1)
     manager.start("sid-0")
     assert [t.members for t in room.team_match.teams] == [[ids[0], ids[1]], [ids[2], ids[3]]]
+
+
+def test_report_finds_the_question_of_the_match_or_of_the_bank(manager):
+    room, _ = manager.create("sid-ana", profile("Ana"))
+    manager.join("sid-bia", room.code, profile("Bia"))
+    with pytest.raises(RoomError, match="partida"):
+        manager.reported_question("sid-ana", "Qualquer coisa?")
+    manager.start("sid-ana")
+    current = room.game.question
+    assert manager.reported_question("sid-bia", current.text)[2] == current.id
+    other = next(q for q in manager.estimates if q.text != current.text)
+    assert manager.reported_question("sid-bia", other.text)[2] == other.id
+    assert manager.reported_question("sid-bia", "Pergunta que não existe?")[2] is None
+
+
+def test_report_is_saved_once_per_player_and_question(tmp_path, manager):
+    from app.history import MatchHistory
+
+    history = MatchHistory(tmp_path / "h.db")
+    room, ana = manager.create("sid-ana", profile("Ana"))
+    assert history.report(room, "q1", "Quanto?", "wrong_answer", "", ana.id, ana.nickname, 1)
+    assert not history.report(room, "q1", "Quanto?", "confusing", "de novo", ana.id, ana.nickname, 2)
+    assert history.report(room, "q2", "E agora?", "other", "Faltou a unidade.", ana.id, ana.nickname, 3)
+    reports = history.reports()
+    assert [r["question_id"] for r in reports] == ["q2", "q1"]
+    assert reports[0]["comment"] == "Faltou a unidade." and reports[1]["reason"] == "wrong_answer"
+    assert reports[0]["status"] == "open" and reports[0]["nickname"] == "Ana"

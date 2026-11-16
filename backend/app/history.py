@@ -84,6 +84,20 @@ CREATE TABLE IF NOT EXISTS events (
     data TEXT NOT NULL,
     PRIMARY KEY (match_id, seq)
 );
+CREATE TABLE IF NOT EXISTS reports (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    at REAL NOT NULL,
+    room_code TEXT NOT NULL,
+    mode TEXT NOT NULL,
+    question_id TEXT,  -- NULL se o texto não bateu com nenhuma pergunta do banco
+    question_text TEXT NOT NULL,  -- como o jogador viu
+    reason TEXT NOT NULL,  -- wrong_answer, confusing, wrong_level, other
+    comment TEXT NOT NULL,
+    player_id TEXT NOT NULL,
+    nickname TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'open'  -- open ou fixed, para marcar o que já foi arrumado
+);
+CREATE UNIQUE INDEX IF NOT EXISTS one_report_per_player ON reports (player_id, question_text);
 CREATE INDEX IF NOT EXISTS answers_by_question ON answers (match_id, round);
 CREATE INDEX IF NOT EXISTS rounds_by_question ON rounds (question_id);
 """
@@ -184,6 +198,32 @@ class MatchHistory:
                 "UPDATE rounds SET ended_at = ?, skipped = ? WHERE match_id = ? AND round = ?",
                 (now, int(skipped), match_id, round_number),
             )
+
+    def report(
+        self,
+        room: "Room",
+        question_id: str | None,
+        text: str,
+        reason: str,
+        comment: str,
+        player_id: str,
+        nickname: str,
+        now: float,
+    ) -> bool:
+        """Guarda o report de uma pergunta. Devolve False se o jogador já tinha reportado essa."""
+        with self.db:
+            cursor = self.db.execute(
+                "INSERT OR IGNORE INTO reports (at, room_code, mode, question_id, question_text, reason, comment,"
+                " player_id, nickname) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (now, room.code, room.mode, question_id, text, reason, comment, player_id, nickname),
+            )
+        return cursor.rowcount == 1
+
+    def reports(self) -> list[dict]:
+        """Todos os reports, do mais novo para o mais antigo."""
+        cursor = self.db.execute("SELECT * FROM reports ORDER BY at DESC")
+        names = [c[0] for c in cursor.description]
+        return [dict(zip(names, row)) for row in cursor.fetchall()]
 
     def snapshot(self) -> bytes:
         """Cópia consistente do banco inteiro, para baixar e analisar."""

@@ -2433,6 +2433,17 @@ export interface RejoinRoomRequest {
   token: string;
 }
 /**
+ * Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco.
+ *
+ * This interface was referenced by `Events`'s JSON-Schema
+ * via the `definition` "ReportQuestionRequest".
+ */
+export interface ReportQuestionRequest {
+  text: string;
+  reason: "wrong_answer" | "confusing" | "wrong_level" | "other";
+  comment?: string;
+}
+/**
  * Times montados pelo anfitrião: põe um jogador num time (0 a team_count - 1).
  *
  * This interface was referenced by `Events`'s JSON-Schema

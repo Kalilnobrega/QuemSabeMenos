@@ -3236,6 +3236,36 @@
       "title": "RejoinRoomRequest",
       "type": "object"
     },
+    "ReportQuestionRequest": {
+      "description": "Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco.",
+      "properties": {
+        "text": {
+          "maxLength": 500,
+          "minLength": 1,
+          "type": "string"
+        },
+        "reason": {
+          "enum": [
+            "wrong_answer",
+            "confusing",
+            "wrong_level",
+            "other"
+          ],
+          "type": "string"
+        },
+        "comment": {
+          "default": "",
+          "maxLength": 300,
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "reason"
+      ],
+      "title": "ReportQuestionRequest",
+      "type": "object"
+    },
     "Revival": {
       "description": "Ressurreição usada nesta revelação: o QI de antes e o de depois.",
       "properties": {

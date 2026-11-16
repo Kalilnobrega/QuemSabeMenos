@@ -667,7 +667,7 @@ function Reveal({
         </p>
       )}
 
-      {estimate.fact && <FactCard fact={estimate.fact} />}
+      {estimate.fact && <FactCard fact={estimate.fact} question={estimate.text} />}
 
       {bar}
 

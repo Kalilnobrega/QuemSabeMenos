@@ -508,7 +508,7 @@ function Statement({
         </div>
       </Magnifier>
       <p className="min-h-7 text-center font-hand text-lg font-medium text-steel">{status}</p>
-      {survival.fact && <FactCard fact={survival.fact} />}
+      {survival.fact && <FactCard fact={survival.fact} question={survival.text} />}
       {survival.phase === 'results' && (
         <PowerUpBar
           powers={survival.powers}

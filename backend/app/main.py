@@ -29,6 +29,7 @@ from app.events import (
     OkAck,
     Pong,
     RejoinRoomRequest,
+    ReportQuestionRequest,
     SetTeamRequest,
     SubmitAnswerRequest,
     SubmitBetRequest,
@@ -73,6 +74,14 @@ async def download_history(authorization: str = Header("")) -> Response:
     if not HISTORY_TOKEN or not secrets.compare_digest(authorization, f"Bearer {HISTORY_TOKEN}"):
         raise HTTPException(status_code=404)
     return Response(history.snapshot(), media_type="application/vnd.sqlite3")
+
+
+@api.get("/reports")
+async def list_reports(authorization: str = Header("")) -> list[dict]:
+    """As perguntas reportadas pelos jogadores, da mais nova para a mais antiga. Pede o mesmo token do histórico."""
+    if not HISTORY_TOKEN or not secrets.compare_digest(authorization, f"Bearer {HISTORY_TOKEN}"):
+        raise HTTPException(status_code=404)
+    return history.reports()
 
 
 def record(action, *args):
@@ -626,6 +635,27 @@ async def math_steps(sid: str, request: MathStepsRequest) -> dict:
 async def guess_draft(sid: str, request: GuessDraftRequest) -> dict:
     # Ninguém mais vê o visor: não precisa avisar a sala.
     rooms.guess_draft(sid, request.value, time.monotonic())
+    return OkAck().model_dump()
+
+
+@sio.event
+@action(ReportQuestionRequest)
+async def report_question(sid: str, request: ReportQuestionRequest) -> dict:
+    room, player, question_id = rooms.reported_question(sid, request.text)
+    comment = request.comment.strip()
+    saved = record(
+        history.report,
+        room,
+        question_id,
+        request.text,
+        request.reason,
+        comment,
+        player.id,
+        player.nickname,
+        time.time(),
+    )
+    if saved is None:
+        return error("Não deu para enviar agora. Tente de novo.")
     return OkAck().model_dump()
 
 

@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import type { ArmPowerUpRequest, ErrorAck, JoinedAck, OkAck, RoomState, UpdateSettingsRequest } from '../types/events'
+import type {
+  ArmPowerUpRequest,
+  ErrorAck,
+  JoinedAck,
+  OkAck,
+  ReportQuestionRequest,
+  RoomState,
+  UpdateSettingsRequest,
+} from '../types/events'
 import { changeScreen, screenKey } from './screenTransition'
 import { socket } from './socket'
 import { loadProfile, loadSession, saveProfile, saveSession, type Profile } from './storage'
@@ -146,6 +154,11 @@ export function useRoom() {
   const mathSteps = useCallback((steps: number[]) => request('math_steps', { steps }), [])
   const guess = useCallback((value: number) => request('submit_guess', { value }), [])
   const guessDraft = useCallback((value: number | null) => request('guess_draft', { value }), [])
+  const reportQuestion = useCallback(
+    (text: string, reason: ReportQuestionRequest['reason'], comment: string) =>
+      request('report_question', { text, reason, comment }),
+    [],
+  )
   const updateSettings = useCallback((patch: UpdateSettingsRequest) => request('update_settings', patch), [])
   const chooseRepresentative = useCallback((choice: string) => request('choose_representative', { choice }), [])
   const updateAvatar = useCallback(async (avatar: Profile['avatar']) => {
@@ -177,6 +190,7 @@ export function useRoom() {
     chooseTheme,
     guess,
     guessDraft,
+    reportQuestion,
     mathSteps,
     lastWordDraft,
     updateSettings,

@@ -14,6 +14,7 @@ import { AnsweredAvatar, AnsweredRow } from './Answered'
 import { ResurrectionScene } from './ResurrectionScene'
 import { MatchAwards } from './MatchAwards'
 import { BannerList, ImpossibleIntro, LevelIntro, PlayerPodium, StartScreen, type BannerItem } from './Screens'
+import { ReportButton } from './ReportQuestion'
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F']
 
@@ -47,7 +48,8 @@ function BulbIcon({ className }: { className?: string }) {
 }
 
 /** A curiosidade da revelação: "Você sabia?" com a lâmpada (também no Chutômetro). */
-export function FactCard({ fact }: { fact: string }) {
+/** `question`: o texto da pergunta, para o botão de reportar. */
+export function FactCard({ fact, question }: { fact: string; question?: string | null }) {
   const text = useRef<HTMLParagraphElement>(null)
   const [expanded, setExpanded] = useState(false)
   const [overflows, setOverflows] = useState(false)
@@ -65,10 +67,13 @@ export function FactCard({ fact }: { fact: string }) {
 
   return (
     <div className="rounded-xl border border-brand/30 bg-brand/10 px-4 py-3">
-      <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
-        <BulbIcon className="size-5" />
-        Você sabia?
-      </p>
+      <div className="flex items-center justify-between gap-2">
+        <p className="flex items-center gap-1.5 font-display text-lg tracking-wide text-brand">
+          <BulbIcon className="size-5" />
+          Você sabia?
+        </p>
+        {question && <ReportButton text={question} />}
+      </div>
       <p ref={text} className={`mt-1 leading-relaxed ${expanded ? '' : 'line-clamp-2'}`}>
         {fact}
       </p>
@@ -1286,7 +1291,7 @@ function RoundSummary({ room, game, playerId, onArm, onDisarm, onSkip }: Summary
   return (
     <div className="flex flex-col gap-3">
       {headline}
-      {game.fact && <FactCard fact={game.fact} />}
+      {game.fact && <FactCard fact={game.fact} question={game.question?.text} />}
       <PowerUpBar
         powers={room.settings.powers}
         game={game}
