@@ -196,14 +196,6 @@
       "fact": "A cidade vizinha, Pripyat, foi evacuada e está abandonada até hoje."
     },
     {
-      "id": "chute-historia-25",
-      "difficulty": "hard",
-      "text": "Em que ano a Revolução Cubana chegou ao poder?",
-      "answer": 1959,
-      "scale": 50,
-      "fact": "Fidel Castro entrou em Havana em janeiro de 1959."
-    },
-    {
       "id": "chute-historia-26",
       "difficulty": "medium",
       "text": "Quantos anos durou a Guerra do Vietnã?",
@@ -230,7 +222,7 @@
     },
     {
       "id": "chute-historia-29",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Muro de Berlim foi construído?",
       "answer": 1961,
       "scale": 50,
@@ -534,7 +526,7 @@
     },
     {
       "id": "chute-historia-70",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi o Grande Incêndio de Londres?",
       "answer": 1666,
       "scale": 50,
@@ -773,14 +765,6 @@
       "fact": "Ela foi de 1947 a 1991."
     },
     {
-      "id": "chute-historia-101",
-      "difficulty": "hard",
-      "text": "Quantos anos Dom Pedro II reinou, depois da maioridade?",
-      "answer": 49,
-      "unit": "anos",
-      "fact": "Foi um dos reinados mais longos da história do Brasil."
-    },
-    {
       "id": "chute-historia-102",
       "difficulty": "medium",
       "text": "Quantos anos a escravidão durou no Brasil, aproximadamente?",
@@ -957,28 +941,12 @@
       "fact": "Grover Cleveland é contado duas vezes."
     },
     {
-      "id": "chute-historia-125",
-      "difficulty": "medium",
-      "text": "Em que ano Getúlio Vargas criou a CLT?",
-      "answer": 1943,
-      "scale": 50,
-      "fact": "Ela foi assinada em 1º de maio."
-    },
-    {
       "id": "chute-historia-126",
       "difficulty": "medium",
       "text": "Em que ano Juscelino Kubitschek assumiu a presidência?",
       "answer": 1956,
       "scale": 50,
       "fact": "Ele prometeu \"50 anos em 5\"."
-    },
-    {
-      "id": "chute-historia-127",
-      "difficulty": "medium",
-      "text": "Em que ano foi criado o voto feminino no Brasil?",
-      "answer": 1932,
-      "scale": 50,
-      "fact": "Mas as mulheres só puderam votar para presidente em 1945."
     },
     {
       "id": "chute-historia-128",
@@ -1182,7 +1150,7 @@
     },
     {
       "id": "chute-historia-153",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano antes de Cristo o Código de Hamurabi foi criado, aproximadamente?",
       "answer": 1754,
       "fact": "Ele tem 282 leis.",
@@ -1206,7 +1174,7 @@
     },
     {
       "id": "chute-historia-156",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o Édito de Milão foi assinado?",
       "answer": 313,
       "scale": 50,
@@ -1214,7 +1182,7 @@
     },
     {
       "id": "chute-historia-157",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Roma foi saqueada pelos visigodos?",
       "answer": 410,
       "scale": 50,
@@ -1222,7 +1190,7 @@
     },
     {
       "id": "chute-historia-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Átila, o Huno?",
       "answer": 453,
       "scale": 50,
@@ -1230,7 +1198,7 @@
     },
     {
       "id": "chute-historia-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu o imperador Justiniano?",
       "answer": 565,
       "scale": 50,
@@ -1238,7 +1206,7 @@
     },
     {
       "id": "chute-historia-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano os árabes invadiram a Península Ibérica?",
       "answer": 711,
       "scale": 50,
@@ -1246,7 +1214,7 @@
     },
     {
       "id": "chute-historia-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Poitiers, contra os árabes?",
       "answer": 732,
       "scale": 50,
@@ -1262,7 +1230,7 @@
     },
     {
       "id": "chute-historia-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi o Grande Cisma do cristianismo?",
       "answer": 1054,
       "scale": 50,
@@ -1278,7 +1246,7 @@
     },
     {
       "id": "chute-historia-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Gengis Khan morreu?",
       "answer": 1227,
       "scale": 50,
@@ -1286,7 +1254,7 @@
     },
     {
       "id": "chute-historia-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Marco Polo voltou a Veneza?",
       "answer": 1295,
       "scale": 50,
@@ -1294,7 +1262,7 @@
     },
     {
       "id": "chute-historia-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano começou a Guerra dos Cem Anos?",
       "answer": 1337,
       "scale": 50,
@@ -1302,7 +1270,7 @@
     },
     {
       "id": "chute-historia-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Joana d'Arc foi queimada?",
       "answer": 1431,
       "scale": 50,
@@ -1326,7 +1294,7 @@
     },
     {
       "id": "chute-historia-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Michelangelo terminou o Davi?",
       "answer": 1504,
       "scale": 50,
@@ -1358,7 +1326,7 @@
     },
     {
       "id": "chute-historia-175",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Companhia de Jesus?",
       "answer": 1540,
       "scale": 50,
@@ -1374,7 +1342,7 @@
     },
     {
       "id": "chute-historia-177",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Dom Sebastião desapareceu?",
       "answer": 1578,
       "scale": 50,
@@ -1382,7 +1350,7 @@
     },
     {
       "id": "chute-historia-178",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi derrotada a Invencível Armada?",
       "answer": 1588,
       "scale": 50,
@@ -1438,7 +1406,7 @@
     },
     {
       "id": "chute-historia-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano os jesuítas foram expulsos do Brasil?",
       "answer": 1759,
       "scale": 50,
@@ -1446,7 +1414,7 @@
     },
     {
       "id": "chute-historia-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi a Conjuração Baiana?",
       "answer": 1798,
       "scale": 50,
@@ -1470,7 +1438,7 @@
     },
     {
       "id": "chute-historia-191",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi a Revolução Pernambucana?",
       "answer": 1817,
       "scale": 50,
@@ -1510,7 +1478,7 @@
     },
     {
       "id": "chute-historia-196",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi assinada a Lei Eusébio de Queirós?",
       "answer": 1850,
       "scale": 50,
@@ -1518,7 +1486,7 @@
     },
     {
       "id": "chute-historia-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi assinada a Lei de Terras?",
       "answer": 1850,
       "scale": 50,
@@ -1526,7 +1494,7 @@
     },
     {
       "id": "chute-historia-198",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi assinada a Lei do Sexagenário?",
       "answer": 1885,
       "scale": 50,
@@ -1534,7 +1502,7 @@
     },
     {
       "id": "chute-historia-199",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Deodoro da Fonseca renunciou?",
       "answer": 1891,
       "scale": 50,
@@ -1558,7 +1526,7 @@
     },
     {
       "id": "chute-historia-202",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criado o Partido Comunista Brasileiro?",
       "answer": 1922,
       "scale": 50,
@@ -1606,7 +1574,7 @@
     },
     {
       "id": "chute-historia-208",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o Acre passou a ser estado?",
       "answer": 1962,
       "scale": 50,
@@ -1622,7 +1590,7 @@
     },
     {
       "id": "chute-historia-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano João Goulart morreu?",
       "answer": 1976,
       "scale": 50,
@@ -1630,7 +1598,7 @@
     },
     {
       "id": "chute-historia-211",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Juscelino Kubitschek morreu?",
       "answer": 1976,
       "scale": 50,
@@ -1646,7 +1614,7 @@
     },
     {
       "id": "chute-historia-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano aconteceu o atentado do Riocentro?",
       "answer": 1981,
       "scale": 50,
@@ -1654,7 +1622,7 @@
     },
     {
       "id": "chute-historia-214",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano aconteceu o Massacre de Eldorado do Carajás?",
       "answer": 1996,
       "scale": 50,
@@ -1678,7 +1646,7 @@
     },
     {
       "id": "chute-historia-218",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos soldados soviéticos morreram na Segunda Guerra, aproximadamente, em milhões?",
       "answer": 9,
       "unit": "milhões",
@@ -1686,7 +1654,7 @@
     },
     {
       "id": "chute-historia-219",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos americanos morreram na Segunda Guerra, aproximadamente?",
       "answer": 405000,
       "unit": "americanos",
@@ -1694,7 +1662,7 @@
     },
     {
       "id": "chute-historia-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos soldados brasileiros morreram na Segunda Guerra, aproximadamente?",
       "answer": 450,
       "unit": "soldados",
@@ -1718,7 +1686,7 @@
     },
     {
       "id": "chute-historia-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram em Nagasaki, até o fim de 1945?",
       "answer": 74000,
       "unit": "pessoas",
@@ -1742,7 +1710,7 @@
     },
     {
       "id": "chute-historia-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram no Dia D, do lado Aliado?",
       "answer": 4414,
       "unit": "pessoas",
@@ -1750,7 +1718,7 @@
     },
     {
       "id": "chute-historia-227",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos soldados participaram do Dia D, do lado Aliado?",
       "answer": 156000,
       "unit": "soldados",
@@ -1758,7 +1726,7 @@
     },
     {
       "id": "chute-historia-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos navios participaram do Dia D, aproximadamente?",
       "answer": 7000,
       "unit": "navios",
@@ -1782,7 +1750,7 @@
     },
     {
       "id": "chute-historia-231",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram tentando atravessar o Muro de Berlim?",
       "answer": 140,
       "unit": "pessoas",
@@ -1790,7 +1758,7 @@
     },
     {
       "id": "chute-historia-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos passageiros o Mayflower levou, aproximadamente?",
       "answer": 102,
       "unit": "passageiros",
@@ -1798,7 +1766,7 @@
     },
     {
       "id": "chute-historia-233",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias durou a viagem do Mayflower até a América?",
       "answer": 66,
       "unit": "dias",
@@ -1854,7 +1822,7 @@
     },
     {
       "id": "chute-historia-240",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos durou o Império Inca, aproximadamente?",
       "answer": 100,
       "unit": "anos",
@@ -1862,7 +1830,7 @@
     },
     {
       "id": "chute-historia-241",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos soldados Pizarro tinha ao capturar Atahualpa?",
       "answer": 168,
       "unit": "soldados",
@@ -1870,7 +1838,7 @@
     },
     {
       "id": "chute-historia-242",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos homens Cortés tinha ao chegar ao México, aproximadamente?",
       "answer": 500,
       "unit": "homens",
@@ -1878,7 +1846,7 @@
     },
     {
       "id": "chute-historia-243",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias durou o reinado de Lady Jane Grey?",
       "answer": 9,
       "unit": "dias",
@@ -1886,7 +1854,7 @@
     },
     {
       "id": "chute-historia-244",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias durou o governo dos Cem Dias de Napoleão?",
       "answer": 111,
       "unit": "dias",
@@ -1894,7 +1862,7 @@
     },
     {
       "id": "chute-historia-245",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos minutos durou a guerra mais curta da história?",
       "answer": 38,
       "unit": "minutos",
@@ -1918,7 +1886,7 @@
     },
     {
       "id": "chute-historia-248",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos durou o reinado de Dom João VI no Brasil e em Portugal, como rei?",
       "answer": 10,
       "unit": "anos",
@@ -1934,7 +1902,7 @@
     },
     {
       "id": "chute-historia-250",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos Mandela ficou preso em Robben Island?",
       "answer": 18,
       "unit": "anos",
@@ -1950,7 +1918,7 @@
     },
     {
       "id": "chute-historia-252",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram no genocídio do Camboja, em milhões?",
       "answer": 1.7,
       "unit": "milhão",
@@ -1966,7 +1934,7 @@
     },
     {
       "id": "chute-historia-254",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram na Guerra do Vietnã, do lado vietnamita, em milhões?",
       "answer": 3,
       "unit": "milhões",
@@ -1974,7 +1942,7 @@
     },
     {
       "id": "chute-historia-255",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram na Guerra da Coreia, em milhões?",
       "answer": 3,
       "unit": "milhões",
@@ -1982,7 +1950,7 @@
     },
     {
       "id": "chute-historia-256",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram na Revolução Cultural da China, em milhões?",
       "answer": 2,
       "unit": "milhões",
@@ -1990,7 +1958,7 @@
     },
     {
       "id": "chute-historia-257",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram no Grande Salto Adiante, na China, em milhões?",
       "answer": 30,
       "unit": "milhões",
@@ -1998,7 +1966,7 @@
     },
     {
       "id": "chute-historia-258",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram na Grande Fome da Irlanda, em milhões?",
       "answer": 1,
       "unit": "milhão",
@@ -2006,7 +1974,7 @@
     },
     {
       "id": "chute-historia-259",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morreram no Holodomor, na Ucrânia, em milhões?",
       "answer": 4,
       "unit": "milhões",
@@ -2014,7 +1982,7 @@
     },
     {
       "id": "chute-historia-260",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos escravizados africanos foram levados às Américas, em milhões?",
       "answer": 12.5,
       "unit": "milhões",
@@ -2147,14 +2115,6 @@
       "answer": 15,
       "unit": "capitanias",
       "fact": "Só Pernambuco e São Vicente prosperaram de verdade."
-    },
-    {
-      "id": "chute-historia-277",
-      "difficulty": "hard",
-      "text": "Em que ano Duarte Coelho fundou Olinda?",
-      "answer": 1537,
-      "scale": 50,
-      "fact": "Ele foi donatário de Pernambuco."
     },
     {
       "id": "chute-historia-278",
@@ -2350,7 +2310,7 @@
     },
     {
       "id": "chute-historia-302",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Passeata dos Cem Mil?",
       "answer": 1968,
       "scale": 50,
@@ -2374,7 +2334,7 @@
     },
     {
       "id": "chute-historia-305",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Brasil conheceu o primeiro presidente operário?",
       "answer": 2003,
       "scale": 50,
@@ -2446,7 +2406,7 @@
     },
     {
       "id": "chute-historia-314",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Batalha de Stalingrado, no final?",
       "answer": 1943,
       "scale": 50,
@@ -2454,7 +2414,7 @@
     },
     {
       "id": "chute-historia-315",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Conferência de Yalta?",
       "answer": 1945,
       "scale": 50,
@@ -2518,7 +2478,7 @@
     },
     {
       "id": "chute-historia-323",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano Mussolini foi morto?",
       "answer": 1945,
       "scale": 50,
@@ -2526,7 +2486,7 @@
     },
     {
       "id": "chute-historia-324",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano começou a Guerra Civil Espanhola?",
       "answer": 1936,
       "scale": 50,
@@ -2542,7 +2502,7 @@
     },
     {
       "id": "chute-historia-326",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Noite dos Cristais, na Alemanha?",
       "answer": 1938,
       "scale": 50,
@@ -2566,7 +2526,7 @@
     },
     {
       "id": "chute-historia-329",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o czar Nicolau II foi executado?",
       "answer": 1918,
       "scale": 50,
@@ -2574,7 +2534,7 @@
     },
     {
       "id": "chute-historia-330",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano Lenin morreu?",
       "answer": 1924,
       "scale": 50,
@@ -2726,7 +2686,7 @@
     },
     {
       "id": "chute-historia-350",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias durou a Comuna de Paris?",
       "answer": 72,
       "unit": "dias",
@@ -2742,7 +2702,7 @@
     },
     {
       "id": "chute-historia-352",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km de estradas o Império Romano tinha, aproximadamente?",
       "answer": 80000,
       "unit": "km",
@@ -2750,7 +2710,7 @@
     },
     {
       "id": "chute-historia-353",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km de estradas o Império Inca tinha, aproximadamente?",
       "answer": 40000,
       "unit": "km",
@@ -2758,7 +2718,7 @@
     },
     {
       "id": "chute-historia-354",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gladiadores lutaram nos jogos de Trajano, em 107, aproximadamente?",
       "answer": 10000,
       "unit": "gladiadores",
@@ -2766,7 +2726,7 @@
     },
     {
       "id": "chute-historia-355",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos elefantes Aníbal levou pelos Alpes, aproximadamente?",
       "answer": 37,
       "unit": "elefantes",
@@ -2942,7 +2902,7 @@
     },
     {
       "id": "chute-historia-377",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Cristo Redentor?",
       "answer": 1931,
       "scale": 50,
@@ -3038,7 +2998,7 @@
     },
     {
       "id": "chute-historia-390",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto pesava a bomba Little Boy, em toneladas, aproximadamente?",
       "answer": 4.4,
       "unit": "toneladas",
@@ -3053,36 +3013,12 @@
       "fact": "Ela foi um ponto de virada da guerra."
     },
     {
-      "id": "chute-historia-392",
-      "difficulty": "medium",
-      "text": "Quantos dias Napoleão governou depois de voltar de Elba?",
-      "answer": 100,
-      "unit": "dias",
-      "fact": "Waterloo pôs fim ao chamado Governo dos Cem Dias."
-    },
-    {
       "id": "chute-historia-393",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano, com sinal de menos para antes de Cristo, César cruzou o Rubicão?",
       "answer": -49,
       "scale": 200,
       "fact": "A frase \"a sorte está lançada\" é daquele momento."
-    },
-    {
-      "id": "chute-historia-394",
-      "difficulty": "medium",
-      "text": "Em que ano, com sinal de menos para antes de Cristo, aconteceu a Batalha de Maratona?",
-      "answer": -490,
-      "scale": 200,
-      "fact": "A lenda deu origem à corrida."
-    },
-    {
-      "id": "chute-historia-395",
-      "difficulty": "hard",
-      "text": "Em que ano, com sinal de menos para antes de Cristo, Augusto se tornou imperador?",
-      "answer": -27,
-      "scale": 200,
-      "fact": "Ele é considerado o primeiro imperador romano."
     },
     {
       "id": "chute-historia-396",
@@ -3102,31 +3038,15 @@
     },
     {
       "id": "chute-historia-398",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos o Muro de Berlim ficou de pé?",
       "answer": 28,
       "unit": "anos",
       "fact": "Ele existiu de 1961 a 1989."
     },
     {
-      "id": "chute-historia-399",
-      "difficulty": "hard",
-      "text": "Quantos metros tinha o Muro de Berlim de altura, aproximadamente?",
-      "answer": 3.6,
-      "unit": "metros",
-      "fact": "Ele cercava toda Berlim Ocidental."
-    },
-    {
-      "id": "chute-historia-400",
-      "difficulty": "hard",
-      "text": "Quantos quilômetros tinha o Muro de Berlim, aproximadamente?",
-      "answer": 155,
-      "unit": "km",
-      "fact": "Mais de 100 pessoas morreram tentando cruzá-lo."
-    },
-    {
       "id": "chute-historia-401",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos dias durou a Crise dos Mísseis de Cuba?",
       "answer": 13,
       "unit": "dias",
@@ -3174,7 +3094,7 @@
     },
     {
       "id": "chute-historia-411",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos homens tinha a Coluna Prestes, no máximo, aproximadamente?",
       "answer": 1500,
       "unit": "homens",
@@ -3182,7 +3102,7 @@
     },
     {
       "id": "chute-historia-412",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos quilômetros a Coluna Prestes percorreu, aproximadamente?",
       "answer": 25000,
       "unit": "km",

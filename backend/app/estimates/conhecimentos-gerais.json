@@ -19,7 +19,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-3",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos países são membros da ONU?",
       "answer": 193,
       "unit": "países",
@@ -96,14 +96,6 @@
       "answer": 2.54,
       "unit": "cm",
       "fact": "Uma TV de 50 polegadas tem 127 cm na diagonal."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-13",
-      "difficulty": "hard",
-      "text": "Quantos metros tem uma milha terrestre?",
-      "answer": 1609,
-      "unit": "metros",
-      "fact": "A milha náutica, usada no mar e no ar, tem 1.852 metros."
     },
     {
       "id": "chute-conhecimentos-gerais-14",
@@ -183,14 +175,6 @@
       "answer": 100000,
       "unit": "vezes",
       "fact": "Ao longo de uma vida, são cerca de 2,5 bilhões de batidas."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-24",
-      "difficulty": "medium",
-      "text": "Quantas pessoas vivem no mundo?",
-      "answer": 8.1,
-      "unit": "bilhões",
-      "fact": "A população mundial passou de 8 bilhões em novembro de 2022, segundo a ONU."
     },
     {
       "id": "chute-conhecimentos-gerais-25",
@@ -471,14 +455,6 @@
       "answer": 1889,
       "scale": 50,
       "fact": "Ela foi feita para uma exposição mundial."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-64",
-      "difficulty": "medium",
-      "text": "Em que ano aconteceu a primeira Olimpíada moderna?",
-      "answer": 1896,
-      "scale": 50,
-      "fact": "Foi em Atenas, na Grécia."
     },
     {
       "id": "chute-conhecimentos-gerais-65",
@@ -1106,7 +1082,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-147",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas falam esperanto no mundo, em milhões, aproximadamente?",
       "answer": 2,
       "unit": "milhões",
@@ -1114,7 +1090,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-148",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos caracteres chineses uma pessoa precisa saber para ler um jornal, aproximadamente?",
       "answer": 3000,
       "unit": "caracteres",
@@ -1122,7 +1098,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-149",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos caracteres tem o maior dicionário chinês, em milhares, aproximadamente?",
       "answer": 85,
       "unit": "mil",
@@ -1130,7 +1106,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-150",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas letras tem o alfabeto havaiano?",
       "answer": 13,
       "unit": "letras",
@@ -1138,7 +1114,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-151",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas letras tem o alfabeto khmer, do Camboja?",
       "answer": 74,
       "unit": "letras",
@@ -1146,7 +1122,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas letras tem o alfabeto grego?",
       "answer": 24,
       "unit": "letras",
@@ -1154,7 +1130,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-153",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas letras tem o alfabeto russo?",
       "answer": 33,
       "unit": "letras",
@@ -1162,7 +1138,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas letras tem o alfabeto hebraico?",
       "answer": 22,
       "unit": "letras",
@@ -1170,7 +1146,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-155",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas letras tem o alfabeto árabe?",
       "answer": 28,
       "unit": "letras",
@@ -1178,27 +1154,11 @@
     },
     {
       "id": "chute-conhecimentos-gerais-156",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos livros foram impressos pela Bíblia, no total, em bilhões, aproximadamente?",
       "answer": 5,
       "unit": "bilhões",
       "fact": "Ela é o livro mais vendido da história."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-157",
-      "difficulty": "medium",
-      "text": "Quantos livros foram vendidos da série Harry Potter, em milhões, aproximadamente?",
-      "answer": 600,
-      "unit": "milhões",
-      "fact": "A autora é J. K. Rowling."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-158",
-      "difficulty": "medium",
-      "text": "Quantos livros foram vendidos de \"O Senhor dos Anéis\", em milhões, aproximadamente?",
-      "answer": 150,
-      "unit": "milhões",
-      "fact": "A obra saiu em três volumes."
     },
     {
       "id": "chute-conhecimentos-gerais-159",
@@ -1210,7 +1170,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos livros Paulo Coelho vendeu, em milhões, aproximadamente?",
       "answer": 320,
       "unit": "milhões",
@@ -1226,7 +1186,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos aviões voam ao mesmo tempo, em média, no mundo, em milhares?",
       "answer": 10,
       "unit": "mil",
@@ -1234,7 +1194,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos voos comerciais há no mundo por dia, em milhares, aproximadamente?",
       "answer": 100,
       "unit": "mil",
@@ -1242,7 +1202,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos passageiros passam por ano no aeroporto de Atlanta, em milhões?",
       "answer": 108,
       "unit": "milhões",
@@ -1250,7 +1210,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos passageiros passam por ano em Guarulhos, em milhões, aproximadamente?",
       "answer": 43,
       "unit": "milhões",
@@ -1266,7 +1226,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos carros são produzidos no mundo por ano, em milhões, aproximadamente?",
       "answer": 90,
       "unit": "milhões",
@@ -1282,7 +1242,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-169",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Fusca foram produzidas, em milhões?",
       "answer": 21.5,
       "unit": "milhões",
@@ -1290,7 +1250,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Toyota Corolla foram vendidas, em milhões, aproximadamente?",
       "answer": 50,
       "unit": "milhões",
@@ -1298,7 +1258,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Gol da Volkswagen foram produzidas, em milhões, aproximadamente?",
       "answer": 8.5,
       "unit": "milhões",
@@ -1306,7 +1266,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-172",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Ford Modelo T foram produzidas, em milhões?",
       "answer": 15,
       "unit": "milhões",
@@ -1314,7 +1274,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-173",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas lojas tem a IKEA no mundo, aproximadamente?",
       "answer": 480,
       "unit": "lojas",
@@ -1322,7 +1282,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-174",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas lojas tem a Zara no mundo, aproximadamente?",
       "answer": 2000,
       "unit": "lojas",
@@ -1330,7 +1290,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-175",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos funcionários tem o Walmart no mundo, em milhões?",
       "answer": 2.1,
       "unit": "milhões",
@@ -1338,23 +1298,15 @@
     },
     {
       "id": "chute-conhecimentos-gerais-176",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto é o maior prêmio de loteria da história dos EUA, em bilhões de dólares?",
       "answer": 2.04,
       "unit": "bilhões",
       "fact": "Foi em 2022, na Powerball."
     },
     {
-      "id": "chute-conhecimentos-gerais-177",
-      "difficulty": "medium",
-      "text": "Quanto foi vendido o quadro mais caro da história, em milhões de dólares?",
-      "answer": 450,
-      "unit": "milhões",
-      "fact": "É o \"Salvator Mundi\", de Leonardo da Vinci."
-    },
-    {
       "id": "chute-conhecimentos-gerais-178",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendido o carro mais caro em leilão, em milhões de euros?",
       "answer": 135,
       "unit": "milhões",
@@ -1362,7 +1314,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-179",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendida uma banana grudada na parede com fita, em milhões de dólares, em 2024?",
       "answer": 6.2,
       "unit": "milhões",
@@ -1370,7 +1322,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-180",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendido o diamante rosa, em 2017, em milhões de dólares?",
       "answer": 71,
       "unit": "milhões",
@@ -1378,7 +1330,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-181",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos quilates tem o maior diamante bruto já achado?",
       "answer": 3106,
       "unit": "quilates",
@@ -1386,7 +1338,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gramas pesa um quilate?",
       "answer": 0.2,
       "unit": "grama",
@@ -1402,7 +1354,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto pesa uma barra de ouro comum de banco central, em quilos, aproximadamente?",
       "answer": 12.4,
       "unit": "quilos",
@@ -1410,7 +1362,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o lado do cubo que caberia todo o ouro extraído, em metros, aproximadamente?",
       "answer": 22,
       "unit": "metros",
@@ -1418,7 +1370,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas notas de dólar circulam, em bilhões, aproximadamente?",
       "answer": 55,
       "unit": "bilhões",
@@ -1426,7 +1378,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto dura em média uma nota de 1 dólar, em anos, aproximadamente?",
       "answer": 6,
       "unit": "anos",
@@ -1434,7 +1386,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custa imprimir uma nota de 100 dólares, em centavos, aproximadamente?",
       "answer": 19,
       "unit": "centavos",
@@ -1442,7 +1394,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-189",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos Prêmios Nobel recebeu a família Curie, somando todos?",
       "answer": 5,
       "unit": "prêmios",
@@ -1450,19 +1402,11 @@
     },
     {
       "id": "chute-conhecimentos-gerais-190",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto vale um Prêmio Nobel, em milhões de coroas suecas, em 2024?",
       "answer": 11,
       "unit": "milhões",
       "fact": "O valor sai da fortuna de Alfred Nobel."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-191",
-      "difficulty": "medium",
-      "text": "Quantas estatuetas do Oscar \"Titanic\" ganhou?",
-      "answer": 11,
-      "unit": "estatuetas",
-      "fact": "Dois outros filmes têm o mesmo recorde."
     },
     {
       "id": "chute-conhecimentos-gerais-194",
@@ -1472,24 +1416,6 @@
       "unit": "°C",
       "scale": 20,
       "fact": "Ele é dióxido de carbono congelado."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-196",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura do zero absoluto, em °C, arredondada?",
-      "answer": -273,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Nenhum objeto consegue chegar exatamente a ele."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-197",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura média de um voo de cruzeiro do lado de fora do avião, em °C?",
-      "answer": -55,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "O ar fica bem rarefeito lá em cima."
     },
     {
       "id": "chute-conhecimentos-gerais-198",
@@ -1548,60 +1474,12 @@
       "fact": "Isso sem contar as bactérias que vivem nele."
     },
     {
-      "id": "chute-conhecimentos-gerais-206",
-      "difficulty": "hard",
-      "text": "Quantos fios de cabelo tem uma pessoa, em milhares, aproximadamente?",
-      "answer": 100,
-      "unit": "mil",
-      "fact": "Todo dia, caem dezenas deles."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-207",
-      "difficulty": "hard",
-      "text": "Quantas vezes uma pessoa pisca por dia, em milhares, aproximadamente?",
-      "answer": 15,
-      "unit": "mil",
-      "fact": "Isso ajuda a manter os olhos úmidos."
-    },
-    {
       "id": "chute-conhecimentos-gerais-208",
       "difficulty": "hard",
       "text": "Quantos passos dá uma pessoa em uma vida, em milhões, aproximadamente?",
       "answer": 200,
       "unit": "milhões",
       "fact": "Isso é bem mais do que uma volta ao mundo."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-209",
-      "difficulty": "hard",
-      "text": "Quantos anos uma pessoa passa dormindo em uma vida de 75 anos, aproximadamente?",
-      "answer": 25,
-      "unit": "anos",
-      "fact": "É um terço da vida."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-211",
-      "difficulty": "hard",
-      "text": "Qual foi o recorde de tempo prendendo a respiração, em minutos?",
-      "answer": 24,
-      "unit": "minutos",
-      "fact": "Um mergulhador croata usou oxigênio puro antes."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-212",
-      "difficulty": "hard",
-      "text": "Qual é o recorde de altura de um humano, em centímetros?",
-      "answer": 272,
-      "unit": "cm",
-      "fact": "Robert Wadlow morreu aos 22 anos."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-213",
-      "difficulty": "hard",
-      "text": "Qual é o recorde de idade de um humano, em anos?",
-      "answer": 122,
-      "unit": "anos",
-      "fact": "Jeanne Calment morava na França."
     },
     {
       "id": "chute-conhecimentos-gerais-214",
@@ -1637,7 +1515,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-218",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Qual é a velocidade de cruzeiro de um avião comercial, em km/h?",
       "answer": 900,
       "unit": "km/h",
@@ -1658,14 +1536,6 @@
       "answer": 2003,
       "scale": 50,
       "fact": "O acidente de 2000 ajudou a selar o destino dele."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-221",
-      "difficulty": "hard",
-      "text": "Qual é a altitude de voo de um avião comercial, em metros, aproximadamente?",
-      "answer": 11000,
-      "unit": "metros",
-      "fact": "A esse nível, há menos turbulência."
     },
     {
       "id": "chute-conhecimentos-gerais-222",
@@ -1716,17 +1586,8 @@
       "fact": "Ele foi o maior navio de sua época."
     },
     {
-      "id": "chute-conhecimentos-gerais-228",
-      "difficulty": "hard",
-      "text": "Qual é a altitude em que o Titanic se encontra, em metros?",
-      "answer": -3800,
-      "unit": "metros",
-      "scale": 300,
-      "fact": "Os destroços só foram achados em 1985."
-    },
-    {
       "id": "chute-conhecimentos-gerais-229",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foram achados os destroços do Titanic?",
       "answer": 1985,
       "scale": 50,
@@ -1758,7 +1619,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-233",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos dias Júlio Verne previu para uma volta ao mundo?",
       "answer": 80,
       "unit": "dias",
@@ -1782,7 +1643,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-236",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos dias a Apollo 11 levou para chegar à Lua?",
       "answer": 4,
       "unit": "dias",
@@ -1795,14 +1656,6 @@
       "answer": 47,
       "unit": "anos",
       "fact": "Ela foi lançada em 1977."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-238",
-      "difficulty": "hard",
-      "text": "Quantas bilhões de km a Voyager 1 está da Terra, em 2024, aproximadamente?",
-      "answer": 24,
-      "unit": "bilhões",
-      "fact": "Ela é o objeto humano mais distante."
     },
     {
       "id": "chute-conhecimentos-gerais-239",
@@ -1997,22 +1850,6 @@
       "fact": "Nos EUA, ela é chamada de \"quarter\"."
     },
     {
-      "id": "chute-conhecimentos-gerais-264",
-      "difficulty": "medium",
-      "text": "Quanto vale a nota mais alta do real, em reais?",
-      "answer": 200,
-      "unit": "reais",
-      "fact": "Ela traz o lobo-guará e foi lançada em 2020."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-266",
-      "difficulty": "medium",
-      "text": "Quantas moedas de real em circulação existem, entre os valores?",
-      "answer": 6,
-      "unit": "valores",
-      "fact": "Vão de 1 centavo a 1 real."
-    },
-    {
       "id": "chute-conhecimentos-gerais-267",
       "difficulty": "medium",
       "text": "Quanto vale a nota mais alta do euro, em euros?",
@@ -2030,7 +1867,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-269",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a maior nota em dólares já emitida, em dólares?",
       "answer": 100000,
       "unit": "dólares",
@@ -2046,7 +1883,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-271",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias a mais tem um ano do calendário solar do que o lunar islâmico, aproximadamente?",
       "answer": 11,
       "unit": "dias",
@@ -2054,7 +1891,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-272",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias tem o mês mais curto do calendário lunar islâmico?",
       "answer": 29,
       "unit": "dias",
@@ -2062,14 +1899,14 @@
     },
     {
       "id": "chute-conhecimentos-gerais-273",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estamos no calendário judaico, em 2024, aproximadamente?",
       "answer": 5785,
       "fact": "A contagem começa na criação do mundo, segundo a tradição."
     },
     {
       "id": "chute-conhecimentos-gerais-274",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estamos no calendário islâmico, em 2024, aproximadamente?",
       "answer": 1446,
       "scale": 50,
@@ -2077,14 +1914,14 @@
     },
     {
       "id": "chute-conhecimentos-gerais-275",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estamos no calendário budista, em 2024, aproximadamente?",
       "answer": 2567,
       "fact": "A contagem começa com a morte de Buda."
     },
     {
       "id": "chute-conhecimentos-gerais-277",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias foram retirados do ano na criação do calendário gregoriano?",
       "answer": 10,
       "unit": "dias",
@@ -2092,7 +1929,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-278",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano a Rússia adotou o calendário gregoriano?",
       "answer": 1918,
       "scale": 50,
@@ -2100,7 +1937,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-279",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o Reino Unido adotou o calendário gregoriano?",
       "answer": 1752,
       "scale": 50,
@@ -2108,7 +1945,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-280",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias tinha o ano, no calendário romano mais antigo?",
       "answer": 304,
       "unit": "dias",
@@ -2116,7 +1953,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-281",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos meses tinha o ano no calendário romano mais antigo?",
       "answer": 10,
       "unit": "meses",
@@ -2124,7 +1961,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-283",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos fusos horários oficiais tem os EUA, com todos os territórios?",
       "answer": 11,
       "unit": "fusos",
@@ -2140,7 +1977,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-285",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos segundos intercalares foram somados desde 1972?",
       "answer": 27,
       "unit": "segundos",
@@ -2148,7 +1985,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-286",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros corre a luz em um nanossegundo, aproximadamente?",
       "answer": 0.3,
       "unit": "metro",
@@ -2156,7 +1993,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-287",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas oscilações por segundo tem um relógio de quartzo?",
       "answer": 32768,
       "unit": "oscilações",
@@ -2188,7 +2025,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-291",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos um relógio atômico leva para atrasar 1 segundo, em milhões de anos, aproximadamente?",
       "answer": 300,
       "unit": "milhões",
@@ -2212,7 +2049,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-294",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos foi a Grande Pirâmide a construção mais alta do mundo, aproximadamente?",
       "answer": 3800,
       "unit": "anos",
@@ -2220,7 +2057,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-295",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos quilômetros tem a Grande Muralha da China, somando tudo, em milhares?",
       "answer": 21,
       "unit": "mil",
@@ -2236,7 +2073,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-297",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos levou a construção da Catedral de Colônia?",
       "answer": 632,
       "unit": "anos",
@@ -2244,7 +2081,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-298",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos levou a construção do Taj Mahal, aproximadamente?",
       "answer": 22,
       "unit": "anos",
@@ -2252,7 +2089,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-299",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos levou a construção do Empire State?",
       "answer": 1,
       "unit": "ano",
@@ -2260,7 +2097,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-300",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos rebites tem a Torre Eiffel, em milhões, aproximadamente?",
       "answer": 2.5,
       "unit": "milhões",
@@ -2268,7 +2105,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-301",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas toneladas pesa a Torre Eiffel?",
       "answer": 10100,
       "unit": "toneladas",
@@ -2276,7 +2113,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-302",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas toneladas pesa o Cristo Redentor?",
       "answer": 635,
       "unit": "toneladas",
@@ -2284,32 +2121,15 @@
     },
     {
       "id": "chute-conhecimentos-gerais-303",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas toneladas pesa a Estátua da Liberdade?",
       "answer": 225,
       "unit": "toneladas",
       "fact": "Ela chegou aos EUA em 214 caixas."
     },
     {
-      "id": "chute-conhecimentos-gerais-306",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Mar Morto, em metros, aproximadamente?",
-      "answer": -430,
-      "unit": "metros",
-      "scale": 30,
-      "fact": "Ele é o ponto mais baixo em terra firme."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-307",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do fundo da Fossa das Marianas, em metros, aproximadamente?",
-      "answer": -10900,
-      "unit": "metros",
-      "fact": "Poucas pessoas já chegaram até lá."
-    },
-    {
       "id": "chute-conhecimentos-gerais-309",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos uma garrafa de plástico pode levar para se decompor, aproximadamente?",
       "answer": 450,
       "unit": "anos",
@@ -2354,14 +2174,6 @@
       "answer": 80,
       "unit": "milhões",
       "fact": "Boa parte ainda vai para lixões."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-315",
-      "difficulty": "hard",
-      "text": "Quantos anos a Terra tem, em bilhões de anos, aproximadamente?",
-      "answer": 4.5,
-      "unit": "bilhões",
-      "fact": "Os meteoritos ajudaram nessa estimativa."
     },
     {
       "id": "chute-conhecimentos-gerais-317",
@@ -2453,7 +2265,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-328",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos eleitores tem o Brasil, em milhões, aproximadamente?",
       "answer": 156,
       "unit": "milhões",
@@ -2469,7 +2281,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-330",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos parlamentares tem o Congresso brasileiro, somando as duas casas?",
       "answer": 594,
       "unit": "parlamentares",
@@ -2477,7 +2289,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-331",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos tem a idade de aposentadoria compulsória dos ministros do STF?",
       "answer": 75,
       "unit": "anos",
@@ -2524,32 +2336,8 @@
       "fact": "Foi um dos maiores públicos da praia."
     },
     {
-      "id": "chute-conhecimentos-gerais-337",
-      "difficulty": "hard",
-      "text": "Quantas pessoas viram o show de Rod Stewart em Copacabana, em 1994, em milhões?",
-      "answer": 3.5,
-      "unit": "milhões",
-      "fact": "O Guinness registrou o número."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-338",
-      "difficulty": "hard",
-      "text": "Quantas pessoas viram o show de Madonna em Copacabana, em 2024, em milhões?",
-      "answer": 1.6,
-      "unit": "milhão",
-      "fact": "Foi o maior público da carreira dela."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-339",
-      "difficulty": "hard",
-      "text": "Quantas pessoas viram o show de Lady Gaga em Copacabana, em 2025, em milhões?",
-      "answer": 2.1,
-      "unit": "milhões",
-      "fact": "Foi o maior público da carreira dela."
-    },
-    {
       "id": "chute-conhecimentos-gerais-340",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantas pessoas vão ao Réveillon de Copacabana, em milhões, aproximadamente?",
       "answer": 2,
       "unit": "milhões",
@@ -2596,54 +2384,6 @@
       "fact": "As cores dela são verde e rosa."
     },
     {
-      "id": "chute-conhecimentos-gerais-347",
-      "difficulty": "medium",
-      "text": "Em que ano Júlio César foi morto, com sinal de menos para antes de Cristo?",
-      "answer": -44,
-      "scale": 200,
-      "fact": "Ele foi atacado nos idos de março."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-348",
-      "difficulty": "medium",
-      "text": "Em que ano Cleópatra deixou este mundo, com sinal de menos para antes de Cristo?",
-      "answer": -30,
-      "scale": 200,
-      "fact": "Ela foi a última rainha do Egito."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-349",
-      "difficulty": "medium",
-      "text": "Em que ano Alexandre, o Grande, deixou este mundo, com sinal de menos para antes de Cristo?",
-      "answer": -323,
-      "scale": 200,
-      "fact": "Ele estava na Babilônia, com 32 anos."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-350",
-      "difficulty": "medium",
-      "text": "Em que ano Sócrates foi condenado, com sinal de menos para antes de Cristo?",
-      "answer": -399,
-      "scale": 200,
-      "fact": "Ele tomou cicuta depois da sentença."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-351",
-      "difficulty": "medium",
-      "text": "Em que ano aconteceram os primeiros Jogos de Olímpia, com sinal de menos para antes de Cristo?",
-      "answer": -776,
-      "scale": 200,
-      "fact": "Os gregos usavam essa data como referência."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-352",
-      "difficulty": "medium",
-      "text": "Em que ano Roma foi fundada, segundo a lenda, com sinal de menos para antes de Cristo?",
-      "answer": -753,
-      "scale": 200,
-      "fact": "Rômulo e Remo são os gêmeos da história."
-    },
-    {
       "id": "chute-conhecimentos-gerais-353",
       "difficulty": "medium",
       "text": "Em que ano nasceu Aristóteles, com sinal de menos para antes de Cristo?",
@@ -2660,60 +2400,12 @@
       "fact": "As ideias dele moldaram a China por séculos."
     },
     {
-      "id": "chute-conhecimentos-gerais-355",
-      "difficulty": "medium",
-      "text": "Quantos metros tem uma maratona, em números redondos de metros?",
-      "answer": 42195,
-      "unit": "metros",
-      "fact": "A distância veio da Olimpíada de Londres, em 1908."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-356",
-      "difficulty": "medium",
-      "text": "Quantos metros tem um campo de futebol oficial de comprimento, em média?",
-      "answer": 105,
-      "unit": "metros",
-      "fact": "A Fifa recomenda essa medida em jogos internacionais."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-357",
-      "difficulty": "medium",
-      "text": "Quantos metros tem uma quadra de basquete oficial, de comprimento?",
-      "answer": 28,
-      "unit": "metros",
-      "fact": "Na NBA, ela é um pouco maior."
-    },
-    {
       "id": "chute-conhecimentos-gerais-358",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos centímetros tem o aro de basquete, em diâmetro?",
       "answer": 45.7,
       "unit": "cm",
       "fact": "Duas bolas quase caberiam lado a lado."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-359",
-      "difficulty": "medium",
-      "text": "Quantos metros de altura tem o aro de basquete?",
-      "answer": 3.05,
-      "unit": "metros",
-      "fact": "O número veio de uma galeria de 1891."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-360",
-      "difficulty": "medium",
-      "text": "Quantos metros tem uma trave de futebol de largura?",
-      "answer": 7.32,
-      "unit": "metros",
-      "fact": "A altura é de 2,44 metros."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-361",
-      "difficulty": "hard",
-      "text": "Quantas pessoas moram na maior favela do Brasil, a Rocinha, em milhares, aproximadamente?",
-      "answer": 72,
-      "unit": "mil",
-      "fact": "O número varia conforme a fonte."
     },
     {
       "id": "chute-conhecimentos-gerais-363",
@@ -2725,24 +2417,6 @@
       "fact": "Poucos lugares no mundo são tão frios."
     },
     {
-      "id": "chute-conhecimentos-gerais-364",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura mais baixa registrada no Hemisfério Norte, em °C?",
-      "answer": -67.8,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Foi na Sibéria, em Verkhoiansk."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-366",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura mais alta já registrada na Terra, em °C?",
-      "answer": 56.7,
-      "unit": "°C",
-      "scale": 5,
-      "fact": "Foi no Vale da Morte, em 1913."
-    },
-    {
       "id": "chute-conhecimentos-gerais-367",
       "difficulty": "hard",
       "text": "Qual é a temperatura mais alta já registrada no Brasil, em °C?",
@@ -2752,32 +2426,8 @@
       "fact": "Foi em Araçuaí, Minas Gerais, em 2023."
     },
     {
-      "id": "chute-conhecimentos-gerais-368",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura da superfície do Sol, em °C, aproximadamente?",
-      "answer": 5500,
-      "unit": "°C",
-      "fact": "Em seu núcleo, são milhões de graus."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-369",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura de um raio, em °C, aproximadamente?",
-      "answer": 30000,
-      "unit": "°C",
-      "fact": "Ele é mais quente que a superfície do Sol."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-370",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura de um forno de pizza a lenha, em °C, aproximadamente?",
-      "answer": 450,
-      "unit": "°C",
-      "fact": "Lá, a pizza fica pronta em minutos."
-    },
-    {
       "id": "chute-conhecimentos-gerais-372",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos reais tem uma pessoa bilionária, em bilhões, no mínimo?",
       "answer": 1,
       "unit": "bilhão",
@@ -2841,7 +2491,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-380",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos centímetros tem um disco de hóquei no gelo, em diâmetro?",
       "answer": 7.62,
       "unit": "cm",
@@ -2854,14 +2504,6 @@
       "answer": 7,
       "unit": "dias",
       "fact": "A ferrovia tem mais de 9 mil quilômetros."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-382",
-      "difficulty": "hard",
-      "text": "Quantos quilômetros tem a ferrovia Transiberiana, aproximadamente?",
-      "answer": 9289,
-      "unit": "km",
-      "fact": "É a mais longa ferrovia contínua do mundo."
     },
     {
       "id": "chute-conhecimentos-gerais-383",
@@ -2961,7 +2603,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-396",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura de um freezer de hospital para vacinas, em °C?",
       "answer": -70,
       "unit": "°C",
@@ -2985,24 +2627,8 @@
       "fact": "A ideia nasceu de um pedômetro japonês dos anos 1960."
     },
     {
-      "id": "chute-conhecimentos-gerais-400",
-      "difficulty": "medium",
-      "text": "Quantas calorias uma pessoa adulta consome por dia, em média?",
-      "answer": 2000,
-      "unit": "calorias",
-      "fact": "O rótulo dos alimentos usa esse valor."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-401",
-      "difficulty": "medium",
-      "text": "Quantos dias uma pessoa adulta pode viver sem comida, aproximadamente?",
-      "answer": 30,
-      "unit": "dias",
-      "fact": "A água é bem mais urgente."
-    },
-    {
       "id": "chute-conhecimentos-gerais-403",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas palavras tem o Dicionário Houaiss, aproximadamente?",
       "answer": 228000,
       "unit": "verbetes",
@@ -3010,7 +2636,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-404",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas palavras uma pessoa usa por dia, em média, em milhares?",
       "answer": 16,
       "unit": "mil",
@@ -3090,7 +2716,7 @@
     },
     {
       "id": "chute-conhecimentos-gerais-415",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos a Torre de Pisa levou para ser concluída, aproximadamente?",
       "answer": 199,
       "unit": "anos",

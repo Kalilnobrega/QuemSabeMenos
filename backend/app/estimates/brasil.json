@@ -218,14 +218,6 @@
       "fact": "O mesmo censo contou 305 etnias indígenas no país."
     },
     {
-      "id": "chute-brasil-28",
-      "difficulty": "hard",
-      "text": "Em que ano as mulheres conquistaram o direito de votar no Brasil?",
-      "answer": 1932,
-      "scale": 50,
-      "fact": "O voto feminino veio com o Código Eleitoral de 1932, no governo Vargas."
-    },
-    {
       "id": "chute-brasil-29",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Salvador, a primeira capital do Brasil?",
@@ -1059,7 +1051,7 @@
     },
     {
       "id": "chute-brasil-135",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cabeças de boi tem o Brasil, em milhões, aproximadamente?",
       "answer": 238,
       "unit": "milhões",
@@ -1067,7 +1059,7 @@
     },
     {
       "id": "chute-brasil-136",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas toneladas de soja o Brasil produz por ano, em milhões, aproximadamente?",
       "answer": 150,
       "unit": "milhões",
@@ -1083,7 +1075,7 @@
     },
     {
       "id": "chute-brasil-138",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas toneladas de carne bovina o Brasil exporta por ano, em milhões?",
       "answer": 3,
       "unit": "milhões",
@@ -1091,7 +1083,7 @@
     },
     {
       "id": "chute-brasil-139",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas toneladas de frango o Brasil exporta por ano, em milhões?",
       "answer": 5,
       "unit": "milhões",
@@ -1115,7 +1107,7 @@
     },
     {
       "id": "chute-brasil-142",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a potência da usina de Itaipu, em megawatts?",
       "answer": 14000,
       "unit": "MW",
@@ -1123,7 +1115,7 @@
     },
     {
       "id": "chute-brasil-143",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a potência da usina de Belo Monte, em megawatts?",
       "answer": 11233,
       "unit": "MW",
@@ -1131,7 +1123,7 @@
     },
     {
       "id": "chute-brasil-144",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Rodovia dos Bandeirantes, em km?",
       "answer": 175,
       "unit": "km",
@@ -1147,7 +1139,7 @@
     },
     {
       "id": "chute-brasil-146",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do rio Tietê, em km?",
       "answer": 1150,
       "unit": "km",
@@ -1155,7 +1147,7 @@
     },
     {
       "id": "chute-brasil-147",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do rio Paraíba do Sul, em km?",
       "answer": 1137,
       "unit": "km",
@@ -1163,7 +1155,7 @@
     },
     {
       "id": "chute-brasil-148",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do rio Tocantins, em km?",
       "answer": 2416,
       "unit": "km",
@@ -1171,7 +1163,7 @@
     },
     {
       "id": "chute-brasil-149",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento da Ponte Hercílio Luz, em metros?",
       "answer": 820,
       "unit": "metros",
@@ -1179,7 +1171,7 @@
     },
     {
       "id": "chute-brasil-150",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Elevador Lacerda, em metros de altura?",
       "answer": 72,
       "unit": "metros",
@@ -1195,7 +1187,7 @@
     },
     {
       "id": "chute-brasil-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bairros tem São Paulo, em distritos oficiais?",
       "answer": 96,
       "unit": "distritos",
@@ -1211,7 +1203,7 @@
     },
     {
       "id": "chute-brasil-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas moram na Rocinha, aproximadamente, segundo o Censo de 2022?",
       "answer": 72000,
       "unit": "pessoas",
@@ -1219,7 +1211,7 @@
     },
     {
       "id": "chute-brasil-155",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas peças formam a cúpula do Teatro Amazonas?",
       "answer": 36000,
       "unit": "peças",
@@ -1235,7 +1227,7 @@
     },
     {
       "id": "chute-brasil-157",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos trabalhadores construíram Brasília, aproximadamente?",
       "answer": 60000,
       "unit": "trabalhadores",
@@ -1243,7 +1235,7 @@
     },
     {
       "id": "chute-brasil-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem a Catedral de Brasília?",
       "answer": 40,
       "unit": "metros",
@@ -1251,7 +1243,7 @@
     },
     {
       "id": "chute-brasil-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas colunas tem a Catedral de Brasília?",
       "answer": 16,
       "unit": "colunas",
@@ -1267,7 +1259,7 @@
     },
     {
       "id": "chute-brasil-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas ilhas a Baía de Todos os Santos tem, aproximadamente?",
       "answer": 56,
       "unit": "ilhas",
@@ -1275,7 +1267,7 @@
     },
     {
       "id": "chute-brasil-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas visitam Aparecida por ano, em milhões, aproximadamente?",
       "answer": 13,
       "unit": "milhões",
@@ -1283,7 +1275,7 @@
     },
     {
       "id": "chute-brasil-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km mede a corda do Círio de Nazaré, em metros?",
       "answer": 400,
       "unit": "metros",
@@ -1307,7 +1299,7 @@
     },
     {
       "id": "chute-brasil-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu o Galo da Madrugada?",
       "answer": 1978,
       "scale": 50,
@@ -1315,7 +1307,7 @@
     },
     {
       "id": "chute-brasil-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas participaram do bloco Galo da Madrugada na primeira saída?",
       "answer": 75,
       "unit": "pessoas",
@@ -1323,7 +1315,7 @@
     },
     {
       "id": "chute-brasil-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu a escola de samba Mangueira?",
       "answer": 1928,
       "scale": 50,
@@ -1331,7 +1323,7 @@
     },
     {
       "id": "chute-brasil-169",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu a escola de samba Portela?",
       "answer": 1923,
       "scale": 50,
@@ -1339,7 +1331,7 @@
     },
     {
       "id": "chute-brasil-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu a escola de samba Beija-Flor?",
       "answer": 1948,
       "scale": 50,
@@ -1355,7 +1347,7 @@
     },
     {
       "id": "chute-brasil-172",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano surgiu o trio elétrico?",
       "answer": 1950,
       "scale": 50,
@@ -1403,7 +1395,7 @@
     },
     {
       "id": "chute-brasil-178",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Luiz Gonzaga?",
       "answer": 1912,
       "scale": 50,
@@ -1419,7 +1411,7 @@
     },
     {
       "id": "chute-brasil-181",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Memórias Póstumas de Brás Cubas\"?",
       "answer": 1881,
       "scale": 50,
@@ -1427,7 +1419,7 @@
     },
     {
       "id": "chute-brasil-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Os Sertões\"?",
       "answer": 1902,
       "scale": 50,
@@ -1435,7 +1427,7 @@
     },
     {
       "id": "chute-brasil-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Vidas Secas\"?",
       "answer": 1938,
       "scale": 50,
@@ -1443,7 +1435,7 @@
     },
     {
       "id": "chute-brasil-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Capitães da Areia\"?",
       "answer": 1937,
       "scale": 50,
@@ -1451,7 +1443,7 @@
     },
     {
       "id": "chute-brasil-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi publicado \"Iracema\"?",
       "answer": 1865,
       "scale": 50,
@@ -1467,7 +1459,7 @@
     },
     {
       "id": "chute-brasil-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o MASP na Avenida Paulista?",
       "answer": 1968,
       "scale": 50,
@@ -1483,7 +1475,7 @@
     },
     {
       "id": "chute-brasil-189",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Museu Imperial de Petrópolis?",
       "answer": 1943,
       "scale": 50,
@@ -1491,7 +1483,7 @@
     },
     {
       "id": "chute-brasil-190",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criada a Bienal de São Paulo?",
       "answer": 1951,
       "scale": 50,
@@ -1499,7 +1491,7 @@
     },
     {
       "id": "chute-brasil-191",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criado o Parque do Ibirapuera?",
       "answer": 1954,
       "scale": 50,
@@ -1507,7 +1499,7 @@
     },
     {
       "id": "chute-brasil-192",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Parque do Flamengo?",
       "answer": 1965,
       "scale": 50,
@@ -1515,7 +1507,7 @@
     },
     {
       "id": "chute-brasil-193",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o estádio do Morumbi?",
       "answer": 1960,
       "scale": 50,
@@ -1523,7 +1515,7 @@
     },
     {
       "id": "chute-brasil-194",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o Pacaembu foi inaugurado?",
       "answer": 1940,
       "scale": 50,
@@ -1531,7 +1523,7 @@
     },
     {
       "id": "chute-brasil-195",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o Mineirão foi inaugurado?",
       "answer": 1965,
       "scale": 50,
@@ -1723,7 +1715,7 @@
     },
     {
       "id": "chute-brasil-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o nível mínimo do rio Negro em Manaus em 2024, em metros?",
       "answer": 12.11,
       "unit": "metros",
@@ -1731,7 +1723,7 @@
     },
     {
       "id": "chute-brasil-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o nível máximo do rio Negro em Manaus, em 2021, em metros?",
       "answer": 30.02,
       "unit": "metros",
@@ -1739,7 +1731,7 @@
     },
     {
       "id": "chute-brasil-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o nível do Guaíba na enchente de 2024, em metros?",
       "answer": 5.35,
       "unit": "metros",
@@ -1747,7 +1739,7 @@
     },
     {
       "id": "chute-brasil-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o nível do Guaíba na enchente de 1941, em metros?",
       "answer": 4.76,
       "unit": "metros",
@@ -1819,7 +1811,7 @@
     },
     {
       "id": "chute-brasil-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vítimas o acidente com o Césio-137, em Goiânia, deixou de imediato?",
       "answer": 4,
       "unit": "mortos",
@@ -1827,7 +1819,7 @@
     },
     {
       "id": "chute-brasil-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a maior profundidade do Rio Amazonas, em metros, aproximadamente?",
       "answer": 100,
       "unit": "metros",
@@ -1835,7 +1827,7 @@
     },
     {
       "id": "chute-brasil-235",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a largura do rio Amazonas na época de seca, em km, aproximadamente?",
       "answer": 11,
       "unit": "km",
@@ -1843,7 +1835,7 @@
     },
     {
       "id": "chute-brasil-236",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem a queda da Cachoeira da Fumaça, na Chapada Diamantina?",
       "answer": 340,
       "unit": "metros",
@@ -1851,7 +1843,7 @@
     },
     {
       "id": "chute-brasil-237",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem a queda da Cachoeira do Tabuleiro, em Minas Gerais?",
       "answer": 273,
       "unit": "metros",
@@ -1859,7 +1851,7 @@
     },
     {
       "id": "chute-brasil-238",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas lagoas azuis têm os Lençóis Maranhenses, aproximadamente, na cheia?",
       "answer": 1000,
       "unit": "lagoas",
@@ -1867,7 +1859,7 @@
     },
     {
       "id": "chute-brasil-239",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a área dos Lençóis Maranhenses, em km²?",
       "answer": 1550,
       "unit": "km²",
@@ -1899,7 +1891,7 @@
     },
     {
       "id": "chute-brasil-243",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Parque Indígena do Xingu, em km²?",
       "answer": 26400,
       "unit": "km²",
@@ -1907,7 +1899,7 @@
     },
     {
       "id": "chute-brasil-244",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km² tem a Terra Indígena Yanomami?",
       "answer": 96650,
       "unit": "km²",
@@ -1915,7 +1907,7 @@
     },
     {
       "id": "chute-brasil-245",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos Yanomami vivem no Brasil, aproximadamente?",
       "answer": 27000,
       "unit": "pessoas",
@@ -1931,7 +1923,7 @@
     },
     {
       "id": "chute-brasil-247",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas universidades federais o Brasil tem, aproximadamente?",
       "answer": 69,
       "unit": "universidades",
@@ -1939,7 +1931,7 @@
     },
     {
       "id": "chute-brasil-248",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas viajam por dia no metrô de São Paulo, em milhões?",
       "answer": 3.7,
       "unit": "milhões",
@@ -1947,7 +1939,7 @@
     },
     {
       "id": "chute-brasil-249",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a extensão do metrô de São Paulo, em km, aproximadamente?",
       "answer": 104,
       "unit": "km",
@@ -2003,7 +1995,7 @@
     },
     {
       "id": "chute-brasil-256",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Qual é a capacidade atual do Maracanã?",
       "answer": 78838,
       "unit": "pessoas",
@@ -2283,7 +2275,7 @@
     },
     {
       "id": "chute-brasil-291",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi descoberto o pré-sal?",
       "answer": 2006,
       "scale": 50,
@@ -2315,7 +2307,7 @@
     },
     {
       "id": "chute-brasil-295",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a morte de Marielle Franco?",
       "answer": 2018,
       "scale": 50,
@@ -2323,7 +2315,7 @@
     },
     {
       "id": "chute-brasil-296",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Brasil adotou o feriado nacional do Dia da Consciência Negra?",
       "answer": 2023,
       "scale": 50,
@@ -2387,7 +2379,7 @@
     },
     {
       "id": "chute-brasil-307",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos candidatos a presidente concorreram em 1989?",
       "answer": 22,
       "unit": "candidatos",
@@ -2411,7 +2403,7 @@
     },
     {
       "id": "chute-brasil-310",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas votaram em Collor no segundo turno de 1989, em milhões?",
       "answer": 35,
       "unit": "milhões",
@@ -2435,7 +2427,7 @@
     },
     {
       "id": "chute-brasil-313",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas urnas eletrônicas o Brasil usou em 2022, aproximadamente?",
       "answer": 577000,
       "unit": "urnas",
@@ -2451,7 +2443,7 @@
     },
     {
       "id": "chute-brasil-315",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o voto feminino foi tornado obrigatório?",
       "answer": 1946,
       "scale": 50,
@@ -2459,7 +2451,7 @@
     },
     {
       "id": "chute-brasil-316",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano analfabetos ganharam o direito ao voto no Brasil?",
       "answer": 1985,
       "scale": 50,
@@ -2475,7 +2467,7 @@
     },
     {
       "id": "chute-brasil-318",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o voto secreto foi criado no Brasil?",
       "answer": 1932,
       "scale": 50,
@@ -2483,7 +2475,7 @@
     },
     {
       "id": "chute-brasil-319",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criada a Justiça Eleitoral?",
       "answer": 1932,
       "scale": 50,
@@ -2491,7 +2483,7 @@
     },
     {
       "id": "chute-brasil-320",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos ministros tem o Tribunal Superior Eleitoral?",
       "answer": 7,
       "unit": "ministros",
@@ -2507,7 +2499,7 @@
     },
     {
       "id": "chute-brasil-322",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos JK governou?",
       "answer": 5,
       "unit": "anos",
@@ -2523,7 +2515,7 @@
     },
     {
       "id": "chute-brasil-324",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos José Sarney governou?",
       "answer": 5,
       "unit": "anos",
@@ -2595,7 +2587,7 @@
     },
     {
       "id": "chute-brasil-333",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Luiz Inácio Lula da Silva?",
       "answer": 1945,
       "scale": 50,
@@ -2603,7 +2595,7 @@
     },
     {
       "id": "chute-brasil-334",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Fernando Henrique Cardoso?",
       "answer": 1931,
       "scale": 50,
@@ -2611,7 +2603,7 @@
     },
     {
       "id": "chute-brasil-335",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano nasceu Dilma Rousseff?",
       "answer": 1947,
       "scale": 50,
@@ -2962,14 +2954,6 @@
       "fact": "Ele saiu do Brasil em 1889 e morreu em 1891."
     },
     {
-      "id": "chute-brasil-380",
-      "difficulty": "hard",
-      "text": "Quantos anos se passaram entre a chegada de Cabral e a Independência?",
-      "answer": 322,
-      "unit": "anos",
-      "fact": "O período é conhecido como Brasil Colônia."
-    },
-    {
       "id": "chute-brasil-381",
       "difficulty": "hard",
       "text": "Quantos dias a viagem da corte de Portugal ao Brasil levou, em 1807 e 1808?",
@@ -3050,29 +3034,12 @@
       "fact": "Ela é uma das maiores do mundo."
     },
     {
-      "id": "chute-brasil-394",
-      "difficulty": "medium",
-      "text": "Qual é a área do Brasil, em milhões de km², aproximadamente?",
-      "answer": 8.5,
-      "unit": "milhões",
-      "fact": "É o quinto maior país do mundo."
-    },
-    {
       "id": "chute-brasil-397",
       "difficulty": "medium",
       "text": "Quantos anos durou o Império no Brasil, de 1822 a 1889?",
       "answer": 67,
       "unit": "anos",
       "fact": "Dom Pedro II reinou quase todo esse período."
-    },
-    {
-      "id": "chute-brasil-399",
-      "difficulty": "hard",
-      "text": "Qual foi a menor temperatura oficial do Brasil, em °C?",
-      "answer": -14,
-      "unit": "°C",
-      "scale": 10,
-      "fact": "Ela foi registrada em Caçador, em 1952."
     },
     {
       "id": "chute-brasil-400",
@@ -3084,7 +3051,7 @@
     },
     {
       "id": "chute-brasil-401",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos Dom Pedro II reinou, desde a coroação em 1841 até 1889?",
       "answer": 48,
       "unit": "anos",
@@ -3092,19 +3059,11 @@
     },
     {
       "id": "chute-brasil-402",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos tinha Dom Pedro II quando foi coroado?",
       "answer": 15,
       "unit": "anos",
       "fact": "A Maioridade foi antecipada."
-    },
-    {
-      "id": "chute-brasil-403",
-      "difficulty": "hard",
-      "text": "Quantos soldados brasileiros foram à Itália com a FEB, em milhares?",
-      "answer": 25,
-      "unit": "mil",
-      "fact": "Monte Castelo é a batalha mais lembrada."
     },
     {
       "id": "chute-brasil-404",
@@ -3123,14 +3082,6 @@
       "fact": "Ela cobre cerca de metade do território brasileiro."
     },
     {
-      "id": "chute-brasil-406",
-      "difficulty": "hard",
-      "text": "Quantos quilômetros tem o Rio São Francisco, aproximadamente?",
-      "answer": 2830,
-      "unit": "km",
-      "fact": "Ele nasce na Serra da Canastra, em Minas Gerais."
-    },
-    {
       "id": "chute-brasil-407",
       "difficulty": "easy",
       "text": "Quantas capitais estaduais tem o Brasil, sem contar Brasília?",
@@ -3139,44 +3090,12 @@
       "fact": "Cada estado tem a sua."
     },
     {
-      "id": "chute-brasil-409",
-      "difficulty": "medium",
-      "text": "Quantos quilômetros tem a Rodovia Transamazônica, aproximadamente?",
-      "answer": 4000,
-      "unit": "km",
-      "fact": "Ela foi aberta nos anos 1970."
-    },
-    {
-      "id": "chute-brasil-410",
-      "difficulty": "medium",
-      "text": "Quantas pessoas cabem no Maracanã, em milhares, em jogos atuais?",
-      "answer": 78,
-      "unit": "mil",
-      "fact": "Na Copa de 1950, ele recebeu mais de 170 mil pessoas."
-    },
-    {
-      "id": "chute-brasil-411",
-      "difficulty": "hard",
-      "text": "Quantas pessoas viram a final da Copa de 1950 no Maracanã, em milhares, oficialmente?",
-      "answer": 173,
-      "unit": "mil",
-      "fact": "O Uruguai venceu e calou o estádio."
-    },
-    {
       "id": "chute-brasil-412",
       "difficulty": "hard",
       "text": "Qual é a altura da barragem de Itaipu, em metros, aproximadamente?",
       "answer": 196,
       "unit": "metros",
       "fact": "Ela foi inaugurada em 1984."
-    },
-    {
-      "id": "chute-brasil-415",
-      "difficulty": "medium",
-      "text": "Quantos quilômetros tem a BR-116, aproximadamente?",
-      "answer": 4500,
-      "unit": "km",
-      "fact": "Ela é a rodovia mais longa do Brasil."
     },
     {
       "id": "chute-brasil-416",

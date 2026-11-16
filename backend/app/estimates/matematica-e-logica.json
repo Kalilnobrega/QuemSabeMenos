@@ -1030,13 +1030,6 @@
       "fact": "Separando as dezenas das unidades, a conta chega a 4.059."
     },
     {
-      "id": "chute-matematica-e-logica-141",
-      "difficulty": "medium",
-      "text": "Quanto dá a soma de todos os números inteiros de 1 a 100?",
-      "answer": 5050,
-      "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 5.050."
-    },
-    {
       "id": "chute-matematica-e-logica-142",
       "difficulty": "medium",
       "text": "Quanto é 79 × 62?",
@@ -1068,7 +1061,7 @@
     },
     {
       "id": "chute-matematica-e-logica-146",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto dá a soma de todos os números inteiros de 1 a 200?",
       "answer": 20100,
       "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 20.100."
@@ -1184,7 +1177,7 @@
     },
     {
       "id": "chute-matematica-e-logica-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas diagonais tem um polígono de 20 lados?",
       "answer": 170,
       "unit": "diagonais",
@@ -1292,7 +1285,7 @@
     },
     {
       "id": "chute-matematica-e-logica-177",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas diagonais tem um polígono de 25 lados?",
       "answer": 275,
       "unit": "diagonais",
@@ -1328,7 +1321,7 @@
     },
     {
       "id": "chute-matematica-e-logica-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas diagonais tem um polígono de 50 lados?",
       "answer": 1175,
       "unit": "diagonais",
@@ -1364,7 +1357,7 @@
     },
     {
       "id": "chute-matematica-e-logica-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto dá a soma de todos os números inteiros de 1 a 75?",
       "answer": 2850,
       "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 2.850."
@@ -1493,7 +1486,7 @@
     },
     {
       "id": "chute-matematica-e-logica-205",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "De quantas formas se escolhem 4 pessoas em um grupo de 9?",
       "answer": 126,
       "unit": "formas",
@@ -1531,7 +1524,7 @@
     },
     {
       "id": "chute-matematica-e-logica-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto dá a soma de todos os números inteiros de 1 a 150?",
       "answer": 11325,
       "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 11.325."
@@ -1610,7 +1603,7 @@
     },
     {
       "id": "chute-matematica-e-logica-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto dá a soma de todos os números inteiros de 1 a 500?",
       "answer": 125250,
       "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 125.250."
@@ -1668,7 +1661,7 @@
     },
     {
       "id": "chute-matematica-e-logica-229",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas diagonais tem um polígono de 30 lados?",
       "answer": 405,
       "unit": "diagonais",
@@ -1733,7 +1726,7 @@
     },
     {
       "id": "chute-matematica-e-logica-238",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "De quantas formas se escolhem 5 pessoas em um grupo de 11?",
       "answer": 462,
       "unit": "formas",
@@ -1849,7 +1842,7 @@
     },
     {
       "id": "chute-matematica-e-logica-254",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto dá a soma de todos os números inteiros de 1 a 365?",
       "answer": 66795,
       "fact": "A fórmula de Gauss é n × (n + 1) ÷ 2, o que dá 66.795."
@@ -1886,7 +1879,7 @@
     },
     {
       "id": "chute-matematica-e-logica-259",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto valem R$ 2.000 depois de 2 anos, com juros compostos de 20% ao ano?",
       "answer": 2880,
       "unit": "reais",
@@ -1894,7 +1887,7 @@
     },
     {
       "id": "chute-matematica-e-logica-260",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 2.019 × 47?",
       "answer": 94893,
       "fact": "Decompondo os fatores, a conta chega a 94.893."
@@ -1908,7 +1901,7 @@
     },
     {
       "id": "chute-matematica-e-logica-262",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto valem R$ 1.000 depois de 3 anos, com juros compostos de 10% ao ano?",
       "answer": 1331,
       "unit": "reais",
@@ -1916,7 +1909,7 @@
     },
     {
       "id": "chute-matematica-e-logica-263",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 528 × 47?",
       "answer": 24816,
       "fact": "Decompondo os fatores, a conta chega a 24.816."
@@ -1930,7 +1923,7 @@
     },
     {
       "id": "chute-matematica-e-logica-265",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 784 × 35?",
       "answer": 27440,
       "fact": "Decompondo os fatores, a conta chega a 27.440."
@@ -1944,7 +1937,7 @@
     },
     {
       "id": "chute-matematica-e-logica-267",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 365 × 24?",
       "answer": 8760,
       "fact": "Decompondo os fatores, a conta chega a 8.760."
@@ -1958,7 +1951,7 @@
     },
     {
       "id": "chute-matematica-e-logica-269",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 619 × (−73)?",
       "answer": -45187,
       "fact": "O sinal segue a regra da multiplicação, e o resultado é −45.187."
@@ -1972,7 +1965,7 @@
     },
     {
       "id": "chute-matematica-e-logica-271",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 618 × 527?",
       "answer": 325686,
       "fact": "O resultado da multiplicação é 325.686."
@@ -2015,7 +2008,7 @@
     },
     {
       "id": "chute-matematica-e-logica-277",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é −12.500 × (−800)?",
       "answer": 10000000,
       "fact": "O sinal segue a regra da multiplicação, e o resultado é 10.000.000."
@@ -2064,25 +2057,17 @@
     },
     {
       "id": "chute-matematica-e-logica-284",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 953 × 28?",
       "answer": 26684,
       "fact": "Decompondo os fatores, a conta chega a 26.684."
     },
     {
       "id": "chute-matematica-e-logica-285",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 7 elevado a 4?",
       "answer": 2401,
       "fact": "Multiplicando 7 por ele mesmo 4 vezes, o resultado é 2.401."
-    },
-    {
-      "id": "chute-matematica-e-logica-286",
-      "difficulty": "hard",
-      "text": "Quantos anagramas tem uma palavra de 8 letras todas diferentes?",
-      "answer": 40320,
-      "unit": "anagramas",
-      "fact": "São 8! permutações, o que dá 40.320."
     },
     {
       "id": "chute-matematica-e-logica-287",
@@ -2093,18 +2078,10 @@
     },
     {
       "id": "chute-matematica-e-logica-288",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 999 × 888?",
       "answer": 887112,
       "fact": "O resultado da multiplicação é 887.112."
-    },
-    {
-      "id": "chute-matematica-e-logica-289",
-      "difficulty": "hard",
-      "text": "Quantos anagramas tem uma palavra de 6 letras todas diferentes?",
-      "answer": 720,
-      "unit": "anagramas",
-      "fact": "São 6! permutações, o que dá 720."
     },
     {
       "id": "chute-matematica-e-logica-290",
@@ -2144,7 +2121,7 @@
     },
     {
       "id": "chute-matematica-e-logica-295",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 246 × 135?",
       "answer": 33210,
       "fact": "O resultado da multiplicação é 33.210."
@@ -2158,19 +2135,11 @@
     },
     {
       "id": "chute-matematica-e-logica-297",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto valem R$ 1.000 depois de 2 anos, com juros compostos de 10% ao ano?",
       "answer": 1210,
       "unit": "reais",
       "fact": "Cada ano multiplica o valor por 1,1, chegando a R$ 1.210."
-    },
-    {
-      "id": "chute-matematica-e-logica-298",
-      "difficulty": "hard",
-      "text": "Quantos anagramas tem uma palavra de 7 letras todas diferentes?",
-      "answer": 5040,
-      "unit": "anagramas",
-      "fact": "São 7! permutações, o que dá 5.040."
     },
     {
       "id": "chute-matematica-e-logica-299",
@@ -2190,7 +2159,7 @@
     },
     {
       "id": "chute-matematica-e-logica-301",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 45.000 × (−1.200)?",
       "answer": -54000000,
       "fact": "O sinal segue a regra da multiplicação, e o resultado é −54.000.000."
@@ -2211,7 +2180,7 @@
     },
     {
       "id": "chute-matematica-e-logica-304",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos segundos tem uma semana?",
       "answer": 604800,
       "unit": "segundos",
@@ -2257,7 +2226,7 @@
     },
     {
       "id": "chute-matematica-e-logica-310",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 1.234 × 56?",
       "answer": 69104,
       "fact": "Decompondo os fatores, a conta chega a 69.104."
@@ -2286,14 +2255,14 @@
     },
     {
       "id": "chute-matematica-e-logica-314",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 2 elevado a 12?",
       "answer": 4096,
       "fact": "Cada expoente a mais dobra o resultado, chegando a 4.096."
     },
     {
       "id": "chute-matematica-e-logica-315",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 437 × 66?",
       "answer": 28842,
       "fact": "Decompondo os fatores, a conta chega a 28.842."
@@ -2322,14 +2291,14 @@
     },
     {
       "id": "chute-matematica-e-logica-319",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 276 × 94?",
       "answer": 25944,
       "fact": "Decompondo os fatores, a conta chega a 25.944."
     },
     {
       "id": "chute-matematica-e-logica-320",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 5.280 × 12?",
       "answer": 63360,
       "fact": "Decompondo os fatores, a conta chega a 63.360."
@@ -2343,21 +2312,21 @@
     },
     {
       "id": "chute-matematica-e-logica-322",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 5 elevado a 5?",
       "answer": 3125,
       "fact": "Multiplicando 5 por ele mesmo 5 vezes, o resultado é 3.125."
     },
     {
       "id": "chute-matematica-e-logica-323",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 123 × 456?",
       "answer": 56088,
       "fact": "O resultado da multiplicação é 56.088."
     },
     {
       "id": "chute-matematica-e-logica-324",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é −347 × (86)?",
       "answer": -29842,
       "fact": "O sinal segue a regra da multiplicação, e o resultado é −29.842."
@@ -2393,7 +2362,7 @@
     },
     {
       "id": "chute-matematica-e-logica-329",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 842 × 59?",
       "answer": 49678,
       "fact": "Decompondo os fatores, a conta chega a 49.678."
@@ -2415,7 +2384,7 @@
     },
     {
       "id": "chute-matematica-e-logica-332",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 765 × 432?",
       "answer": 330480,
       "fact": "O resultado da multiplicação é 330.480."
@@ -2443,16 +2412,8 @@
       "fact": "Multiplicando 7 por ele mesmo 6 vezes, o resultado é 117.649."
     },
     {
-      "id": "chute-matematica-e-logica-336",
-      "difficulty": "hard",
-      "text": "Quantos anagramas tem uma palavra de 9 letras todas diferentes?",
-      "answer": 362880,
-      "unit": "anagramas",
-      "fact": "São 9! permutações, o que dá 362.880."
-    },
-    {
       "id": "chute-matematica-e-logica-337",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é −1.234 × (567)?",
       "answer": -699678,
       "fact": "O sinal segue a regra da multiplicação, e o resultado é −699.678."
@@ -2464,14 +2425,6 @@
       "answer": 24040016,
       "unit": "combinações",
       "fact": "A combinação de 80 tomados 5 a 5 dá 24.040.016."
-    },
-    {
-      "id": "chute-matematica-e-logica-339",
-      "difficulty": "hard",
-      "text": "Quantos anagramas tem uma palavra de 10 letras todas diferentes?",
-      "answer": 3628800,
-      "unit": "anagramas",
-      "fact": "São 10! permutações, o que dá 3.628.800."
     },
     {
       "id": "chute-matematica-e-logica-340",
@@ -2567,14 +2520,14 @@
     },
     {
       "id": "chute-matematica-e-logica-353",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 6 fatorial (6!)?",
       "answer": 720,
       "fact": "É o produto de todos os inteiros de 1 a 6, o que dá 720."
     },
     {
       "id": "chute-matematica-e-logica-354",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 365 × 365?",
       "answer": 133225,
       "fact": "O resultado da multiplicação é 133.225."
@@ -2630,16 +2583,8 @@
       "fact": "Multiplicando 5 por ele mesmo 8 vezes, o resultado é 390.625."
     },
     {
-      "id": "chute-matematica-e-logica-362",
-      "difficulty": "hard",
-      "text": "Quantas combinações de 6 números existem em 60?",
-      "answer": 50063860,
-      "unit": "combinações",
-      "fact": "A combinação de 60 tomados 6 a 6 dá 50.063.860."
-    },
-    {
       "id": "chute-matematica-e-logica-363",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto é 3 elevado a 5?",
       "answer": 243,
       "fact": "Multiplicando 3 por ele mesmo 5 vezes, o resultado é 243."

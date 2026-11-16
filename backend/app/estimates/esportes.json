@@ -98,14 +98,6 @@
       "fact": "Na raia 1, a mais de dentro; as raias de fora são mais longas, por isso a largada é escalonada."
     },
     {
-      "id": "chute-esportes-13",
-      "difficulty": "hard",
-      "text": "Quantos minutos durou a maratona recorde de Kelvin Kiptum, em 2023?",
-      "answer": 120.6,
-      "unit": "minutos",
-      "fact": "Ele correu em 2h00min35s em Chicago."
-    },
-    {
       "id": "chute-esportes-14",
       "difficulty": "medium",
       "text": "Quantos títulos de Grand Slam Roger Federer ganhou?",
@@ -123,7 +115,7 @@
     },
     {
       "id": "chute-esportes-16",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto pesa, em média, uma bola oficial de futebol?",
       "answer": 430,
       "unit": "gramas",
@@ -219,7 +211,7 @@
     },
     {
       "id": "chute-esportes-28",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Qual a altura da rede de vôlei masculino?",
       "answer": 2.43,
       "unit": "metros",
@@ -899,7 +891,7 @@
     },
     {
       "id": "chute-esportes-113",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altura da rede de tênis no centro, em cm?",
       "answer": 91.4,
       "unit": "cm",
@@ -1211,7 +1203,7 @@
     },
     {
       "id": "chute-esportes-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Barcelona pagou ao Liverpool por Coutinho, em milhões de euros?",
       "answer": 135,
       "unit": "milhões",
@@ -1219,7 +1211,7 @@
     },
     {
       "id": "chute-esportes-153",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Real Madrid pagou ao Tottenham por Bale, em milhões de euros?",
       "answer": 101,
       "unit": "milhões",
@@ -1227,7 +1219,7 @@
     },
     {
       "id": "chute-esportes-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Real Madrid pagou ao Manchester United por Cristiano Ronaldo, em milhões de euros?",
       "answer": 94,
       "unit": "milhões",
@@ -1235,7 +1227,7 @@
     },
     {
       "id": "chute-esportes-155",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Real Madrid pagou ao Milan por Kaká, em milhões de euros?",
       "answer": 67,
       "unit": "milhões",
@@ -1243,7 +1235,7 @@
     },
     {
       "id": "chute-esportes-156",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Real Madrid pagou à Juventus por Zidane, em milhões de euros?",
       "answer": 75,
       "unit": "milhões",
@@ -1251,7 +1243,7 @@
     },
     {
       "id": "chute-esportes-157",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Inter de Milão pagou ao Barcelona por Ronaldo, em milhões de dólares?",
       "answer": 27,
       "unit": "milhões",
@@ -1259,7 +1251,7 @@
     },
     {
       "id": "chute-esportes-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Napoli pagou ao Barcelona por Maradona, em milhões de libras?",
       "answer": 5,
       "unit": "milhões",
@@ -1275,7 +1267,7 @@
     },
     {
       "id": "chute-esportes-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto Messi recebeu no Inter Miami, em 2024, em milhões de dólares?",
       "answer": 20,
       "unit": "milhões",
@@ -1283,7 +1275,7 @@
     },
     {
       "id": "chute-esportes-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto Jordan vendeu os Charlotte Hornets, em bilhões de dólares?",
       "answer": 3,
       "unit": "bilhões",
@@ -1291,7 +1283,7 @@
     },
     {
       "id": "chute-esportes-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o valor do Dallas Cowboys, em bilhões de dólares, em 2024?",
       "answer": 10.1,
       "unit": "bilhões",
@@ -1299,7 +1291,7 @@
     },
     {
       "id": "chute-esportes-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido um tênis de Michael Jordan em leilão, em 2023, em milhões de dólares?",
       "answer": 2.2,
       "unit": "milhões",
@@ -1307,7 +1299,7 @@
     },
     {
       "id": "chute-esportes-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a camisa de Maradona, do jogo da \"Mão de Deus\", em milhões de dólares?",
       "answer": 9.3,
       "unit": "milhões",
@@ -1315,7 +1307,7 @@
     },
     {
       "id": "chute-esportes-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custou um anúncio de 30 segundos no Super Bowl de 2024, em milhões de dólares?",
       "answer": 7,
       "unit": "milhões",
@@ -1339,7 +1331,7 @@
     },
     {
       "id": "chute-esportes-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas viram os Jogos de Tóquio no mundo, em bilhões, aproximadamente?",
       "answer": 3,
       "unit": "bilhões",
@@ -1355,7 +1347,7 @@
     },
     {
       "id": "chute-esportes-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a capacidade do Rungrado 1º de Maio, na Coreia do Norte, em lugares?",
       "answer": 114000,
       "unit": "lugares",
@@ -1363,7 +1355,7 @@
     },
     {
       "id": "chute-esportes-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a capacidade do Camp Nou, após a reforma, em lugares?",
       "answer": 105000,
       "unit": "lugares",
@@ -1371,7 +1363,7 @@
     },
     {
       "id": "chute-esportes-172",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a capacidade do Estádio Azteca, em lugares, aproximadamente?",
       "answer": 87000,
       "unit": "lugares",
@@ -1387,7 +1379,7 @@
     },
     {
       "id": "chute-esportes-174",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a capacidade do Santiago Bernabéu, em lugares?",
       "answer": 85000,
       "unit": "lugares",
@@ -1395,7 +1387,7 @@
     },
     {
       "id": "chute-esportes-175",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a capacidade do Mineirão, em lugares?",
       "answer": 61846,
       "unit": "lugares",
@@ -1403,7 +1395,7 @@
     },
     {
       "id": "chute-esportes-176",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a capacidade do Allianz Parque, em lugares?",
       "answer": 43713,
       "unit": "lugares",
@@ -1491,7 +1483,7 @@
     },
     {
       "id": "chute-esportes-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gols a Hungria marcou na Copa de 1954?",
       "answer": 27,
       "unit": "gols",
@@ -1499,7 +1491,7 @@
     },
     {
       "id": "chute-esportes-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gols a seleção da Austrália fez contra a Samoa Americana, em 2001?",
       "answer": 31,
       "unit": "gols",
@@ -1515,7 +1507,7 @@
     },
     {
       "id": "chute-esportes-190",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a temperatura durante o jogo de NFL \"Freezer Bowl\", em °C?",
       "answer": -23,
       "unit": "°C",
@@ -1523,7 +1515,7 @@
     },
     {
       "id": "chute-esportes-191",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a temperatura durante a final do Ice Bowl, de 1967, em °C?",
       "answer": -26,
       "unit": "°C",
@@ -1531,7 +1523,7 @@
     },
     {
       "id": "chute-esportes-192",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura ideal de um rinque de hóquei, em °C?",
       "answer": -5,
       "unit": "°C",
@@ -1539,7 +1531,7 @@
     },
     {
       "id": "chute-esportes-193",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde mundial de velocidade de um corredor de esqui, em km/h?",
       "answer": 255,
       "unit": "km/h",
@@ -1555,7 +1547,7 @@
     },
     {
       "id": "chute-esportes-195",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade máxima de um arremesso no beisebol, em km/h?",
       "answer": 170,
       "unit": "km/h",
@@ -1563,7 +1555,7 @@
     },
     {
       "id": "chute-esportes-196",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade máxima de um chute de futebol, em km/h, aproximadamente?",
       "answer": 210,
       "unit": "km/h",
@@ -1571,7 +1563,7 @@
     },
     {
       "id": "chute-esportes-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade do chute mais famoso de Roberto Carlos, em km/h, aproximadamente?",
       "answer": 137,
       "unit": "km/h",
@@ -1579,7 +1571,7 @@
     },
     {
       "id": "chute-esportes-198",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade máxima de um saque no badminton, em km/h?",
       "answer": 493,
       "unit": "km/h",
@@ -1587,7 +1579,7 @@
     },
     {
       "id": "chute-esportes-199",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade máxima de uma bola de golfe, em km/h?",
       "answer": 349,
       "unit": "km/h",
@@ -1595,7 +1587,7 @@
     },
     {
       "id": "chute-esportes-200",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade média de um ciclista em Tour de France, em km/h?",
       "answer": 40,
       "unit": "km/h",
@@ -1603,7 +1595,7 @@
     },
     {
       "id": "chute-esportes-201",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde de velocidade de um maratonista, em km/h?",
       "answer": 21,
       "unit": "km/h",
@@ -1611,7 +1603,7 @@
     },
     {
       "id": "chute-esportes-202",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial da maratona masculina, em horas, em 2023, em minutos?",
       "answer": 120.58,
       "unit": "minutos",
@@ -1619,7 +1611,7 @@
     },
     {
       "id": "chute-esportes-203",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial da maratona feminina, em minutos, em 2024?",
       "answer": 129.93,
       "unit": "minutos",
@@ -1643,7 +1635,7 @@
     },
     {
       "id": "chute-esportes-206",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial dos 400 metros, em segundos?",
       "answer": 43.03,
       "unit": "segundos",
@@ -1651,7 +1643,7 @@
     },
     {
       "id": "chute-esportes-207",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial dos 50 metros livre na natação, em segundos?",
       "answer": 20.91,
       "unit": "segundos",
@@ -1659,7 +1651,7 @@
     },
     {
       "id": "chute-esportes-208",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial do salto com vara masculino, em metros, em 2024?",
       "answer": 6.25,
       "unit": "metros",
@@ -1667,7 +1659,7 @@
     },
     {
       "id": "chute-esportes-209",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial do salto em distância masculino, em metros?",
       "answer": 8.95,
       "unit": "metros",
@@ -1675,7 +1667,7 @@
     },
     {
       "id": "chute-esportes-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial do lançamento de dardo masculino, em metros?",
       "answer": 98.48,
       "unit": "metros",
@@ -1683,7 +1675,7 @@
     },
     {
       "id": "chute-esportes-211",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o recorde mundial do arremesso de peso masculino, em metros?",
       "answer": 23.56,
       "unit": "metros",
@@ -1691,7 +1683,7 @@
     },
     {
       "id": "chute-esportes-212",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pontos Oscar Schmidt fez em Olimpíadas?",
       "answer": 1093,
       "unit": "pontos",
@@ -1699,7 +1691,7 @@
     },
     {
       "id": "chute-esportes-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pontos LeBron James já fez, até 2025?",
       "answer": 42000,
       "unit": "pontos",
@@ -1707,7 +1699,7 @@
     },
     {
       "id": "chute-esportes-214",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pontos Kareem Abdul-Jabbar fez na NBA?",
       "answer": 38387,
       "unit": "pontos",
@@ -1739,7 +1731,7 @@
     },
     {
       "id": "chute-esportes-218",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos arremessos de três Stephen Curry acertou na carreira, até 2024?",
       "answer": 3700,
       "unit": "arremessos",
@@ -1803,7 +1795,7 @@
     },
     {
       "id": "chute-esportes-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km de bicicleta tem um Ironman?",
       "answer": 180,
       "unit": "km",
@@ -1819,7 +1811,7 @@
     },
     {
       "id": "chute-esportes-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km tem o triatlo olímpico, somando as três provas?",
       "answer": 51.5,
       "unit": "km",
@@ -1835,7 +1827,7 @@
     },
     {
       "id": "chute-esportes-230",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km tem uma volta em Interlagos?",
       "answer": 4.3,
       "unit": "km",
@@ -1843,7 +1835,7 @@
     },
     {
       "id": "chute-esportes-231",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km tem uma volta em Mônaco?",
       "answer": 3.3,
       "unit": "km",
@@ -1851,7 +1843,7 @@
     },
     {
       "id": "chute-esportes-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km tem uma volta em Spa-Francorchamps?",
       "answer": 7,
       "unit": "km",
@@ -1859,7 +1851,7 @@
     },
     {
       "id": "chute-esportes-233",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas voltas tem o GP do Brasil, em Interlagos?",
       "answer": 71,
       "unit": "voltas",
@@ -1867,7 +1859,7 @@
     },
     {
       "id": "chute-esportes-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas voltas tem o GP de Mônaco?",
       "answer": 78,
       "unit": "voltas",
@@ -1915,7 +1907,7 @@
     },
     {
       "id": "chute-esportes-240",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto pesa um carro de Fórmula 1, no mínimo, em kg?",
       "answer": 798,
       "unit": "kg",
@@ -1955,7 +1947,7 @@
     },
     {
       "id": "chute-esportes-246",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vitórias Nelson Piquet tem na F1?",
       "answer": 23,
       "unit": "vitórias",
@@ -1963,7 +1955,7 @@
     },
     {
       "id": "chute-esportes-247",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vitórias Rubens Barrichello tem na F1?",
       "answer": 11,
       "unit": "vitórias",
@@ -1971,7 +1963,7 @@
     },
     {
       "id": "chute-esportes-248",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vitórias Felipe Massa tem na F1?",
       "answer": 11,
       "unit": "vitórias",
@@ -1979,7 +1971,7 @@
     },
     {
       "id": "chute-esportes-249",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vitórias Emerson Fittipaldi tem na F1?",
       "answer": 14,
       "unit": "vitórias",
@@ -2011,7 +2003,7 @@
     },
     {
       "id": "chute-esportes-253",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde de pontuação no ranking de xadrez, de Magnus Carlsen?",
       "answer": 2882,
       "unit": "pontos",
@@ -2035,7 +2027,7 @@
     },
     {
       "id": "chute-esportes-256",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas casas tem o tabuleiro de go, em cruzamentos?",
       "answer": 361,
       "unit": "pontos",
@@ -2043,7 +2035,7 @@
     },
     {
       "id": "chute-esportes-257",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Babe Ruth foi vendido aos Yankees?",
       "answer": 1920,
       "scale": 50,
@@ -2051,7 +2043,7 @@
     },
     {
       "id": "chute-esportes-258",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos durou a \"Maldição do Bambino\", no Boston Red Sox?",
       "answer": 86,
       "unit": "anos",
@@ -2059,7 +2051,7 @@
     },
     {
       "id": "chute-esportes-259",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos os Chicago Cubs ficaram sem título, até 2016?",
       "answer": 108,
       "unit": "anos",
@@ -2067,7 +2059,7 @@
     },
     {
       "id": "chute-esportes-260",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas World Series os New York Yankees ganharam?",
       "answer": 27,
       "unit": "títulos",
@@ -2075,7 +2067,7 @@
     },
     {
       "id": "chute-esportes-261",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos home runs Babe Ruth fez na carreira?",
       "answer": 714,
       "unit": "home runs",
@@ -2083,7 +2075,7 @@
     },
     {
       "id": "chute-esportes-262",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos home runs Barry Bonds fez na carreira?",
       "answer": 762,
       "unit": "home runs",
@@ -2091,7 +2083,7 @@
     },
     {
       "id": "chute-esportes-263",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos Stanley Cups o Montreal Canadiens ganhou?",
       "answer": 24,
       "unit": "títulos",
@@ -2099,7 +2091,7 @@
     },
     {
       "id": "chute-esportes-264",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gols Wayne Gretzky fez na NHL?",
       "answer": 894,
       "unit": "gols",
@@ -2107,7 +2099,7 @@
     },
     {
       "id": "chute-esportes-265",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gols Alexander Ovechkin fez na NHL, até 2025, ao passar Gretzky?",
       "answer": 895,
       "unit": "gols",
@@ -2123,7 +2115,7 @@
     },
     {
       "id": "chute-esportes-267",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Berlim?",
       "answer": 1936,
       "scale": 50,
@@ -2131,7 +2123,7 @@
     },
     {
       "id": "chute-esportes-268",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Munique?",
       "answer": 1972,
       "scale": 50,
@@ -2139,7 +2131,7 @@
     },
     {
       "id": "chute-esportes-269",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Moscou?",
       "answer": 1980,
       "scale": 50,
@@ -2147,7 +2139,7 @@
     },
     {
       "id": "chute-esportes-270",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Los Angeles, com o boicote soviético?",
       "answer": 1984,
       "scale": 50,
@@ -2155,7 +2147,7 @@
     },
     {
       "id": "chute-esportes-271",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Seul?",
       "answer": 1988,
       "scale": 50,
@@ -2163,7 +2155,7 @@
     },
     {
       "id": "chute-esportes-272",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Barcelona?",
       "answer": 1992,
       "scale": 50,
@@ -2171,7 +2163,7 @@
     },
     {
       "id": "chute-esportes-273",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Atlanta?",
       "answer": 1996,
       "scale": 50,
@@ -2179,7 +2171,7 @@
     },
     {
       "id": "chute-esportes-274",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Pequim?",
       "answer": 2008,
       "scale": 50,
@@ -2203,7 +2195,7 @@
     },
     {
       "id": "chute-esportes-277",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Roma, em que Abebe Bikila correu descalço?",
       "answer": 1960,
       "scale": 50,
@@ -2211,7 +2203,7 @@
     },
     {
       "id": "chute-esportes-278",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Tóquio, a primeira no Japão?",
       "answer": 1964,
       "scale": 50,
@@ -2219,7 +2211,7 @@
     },
     {
       "id": "chute-esportes-279",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada do México, com Dick Fosbury?",
       "answer": 1968,
       "scale": 50,
@@ -2227,7 +2219,7 @@
     },
     {
       "id": "chute-esportes-280",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi a Olimpíada de Montreal, com a nota 10 de Nadia?",
       "answer": 1976,
       "scale": 50,
@@ -2251,7 +2243,7 @@
     },
     {
       "id": "chute-esportes-283",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano Eliud Kipchoge correu a maratona em menos de 2 horas?",
       "answer": 2019,
       "scale": 50,
@@ -2371,7 +2363,7 @@
     },
     {
       "id": "chute-esportes-298",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos km por partida corre um jogador de futebol, em média?",
       "answer": 11,
       "unit": "km",
@@ -2400,14 +2392,6 @@
       "answer": 11.6,
       "unit": "minutos",
       "fact": "O francês Stéphane Mifsud fez em 2009."
-    },
-    {
-      "id": "chute-esportes-302",
-      "difficulty": "hard",
-      "text": "Quantos metros tem a queda do salto de Felix Baumgartner?",
-      "answer": 38969,
-      "unit": "metros",
-      "fact": "Ele quebrou a barreira do som."
     },
     {
       "id": "chute-esportes-303",
@@ -2499,7 +2483,7 @@
     },
     {
       "id": "chute-esportes-314",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos Marta tinha ao disputar sua última Copa, em 2023?",
       "answer": 37,
       "unit": "anos",
@@ -2547,7 +2531,7 @@
     },
     {
       "id": "chute-esportes-320",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos torcedores tem o Flamengo, aproximadamente, em milhões?",
       "answer": 45,
       "unit": "milhões",
@@ -2555,7 +2539,7 @@
     },
     {
       "id": "chute-esportes-321",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos torcedores tem o Corinthians, aproximadamente, em milhões?",
       "answer": 30,
       "unit": "milhões",
@@ -2683,7 +2667,7 @@
     },
     {
       "id": "chute-esportes-337",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o vôlei feminino brasileiro ganhou seu primeiro ouro olímpico?",
       "answer": 2008,
       "scale": 50,
@@ -2779,7 +2763,7 @@
     },
     {
       "id": "chute-esportes-349",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantas medalhas de ouro em futebol masculino o Brasil tem?",
       "answer": 2,
       "unit": "ouros",
@@ -2859,7 +2843,7 @@
     },
     {
       "id": "chute-esportes-359",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Leicester City foi campeão inglês?",
       "answer": 2016,
       "scale": 50,
@@ -2899,7 +2883,7 @@
     },
     {
       "id": "chute-esportes-364",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Grécia ganhou a Eurocopa?",
       "answer": 2004,
       "scale": 50,
@@ -3098,22 +3082,6 @@
       "fact": "O Brasil fez apenas um gol."
     },
     {
-      "id": "chute-esportes-392",
-      "difficulty": "medium",
-      "text": "Quantos gols Pelé marcou pela seleção brasileira, em partidas oficiais?",
-      "answer": 77,
-      "unit": "gols",
-      "fact": "Neymar passou esse número em 2023."
-    },
-    {
-      "id": "chute-esportes-393",
-      "difficulty": "medium",
-      "text": "Quantos gols Ronaldo marcou em Copas do Mundo?",
-      "answer": 15,
-      "unit": "gols",
-      "fact": "Oito foram na Copa de 2002."
-    },
-    {
       "id": "chute-esportes-394",
       "difficulty": "medium",
       "text": "Quantos títulos de Grand Slam tem Novak Djokovic, até 2024?",
@@ -3130,30 +3098,6 @@
       "fact": "A medida exata varia."
     },
     {
-      "id": "chute-esportes-396",
-      "difficulty": "hard",
-      "text": "Qual é a força G de frenagem de um carro de Fórmula 1, aproximadamente?",
-      "answer": 6,
-      "unit": "G",
-      "fact": "O pescoço do piloto é muito treinado."
-    },
-    {
-      "id": "chute-esportes-398",
-      "difficulty": "hard",
-      "text": "Qual é a velocidade do chute mais forte registrado por um jogador, em km/h, aproximadamente?",
-      "answer": 211,
-      "unit": "km/h",
-      "fact": "Ronny Heberson, brasileiro, fez o chute em 2006."
-    },
-    {
-      "id": "chute-esportes-399",
-      "difficulty": "hard",
-      "text": "Qual é a altura da Copa do Mundo, o troféu, em centímetros?",
-      "answer": 36.8,
-      "unit": "cm",
-      "fact": "Ele pesa pouco mais de 6 quilos."
-    },
-    {
       "id": "chute-esportes-400",
       "difficulty": "hard",
       "text": "Quanto pesa a taça da Copa do Mundo, em quilos?",
@@ -3162,28 +3106,12 @@
       "fact": "Ela é oca e feita de ouro de 18 quilates."
     },
     {
-      "id": "chute-esportes-401",
-      "difficulty": "hard",
-      "text": "Quanto valeu o Mundial de 2022 para a Argentina, em milhões de dólares?",
-      "answer": 42,
-      "unit": "milhões",
-      "fact": "A Fifa bancou essa premiação."
-    },
-    {
       "id": "chute-esportes-402",
       "difficulty": "hard",
       "text": "Quantos jogos o Brasil já fez em Copas do Mundo, até 2022?",
       "answer": 114,
       "unit": "jogos",
       "fact": "Ele é o único presente em todas as edições."
-    },
-    {
-      "id": "chute-esportes-403",
-      "difficulty": "hard",
-      "text": "Qual é o maior público em um jogo de futebol, em milhares de pessoas?",
-      "answer": 199,
-      "unit": "mil",
-      "fact": "Foi na final da Copa de 1950, segundo estimativas."
     },
     {
       "id": "chute-esportes-405",
@@ -3208,22 +3136,6 @@
       "answer": 1,
       "unit": "bola",
       "fact": "Ela é a única que o jogador pode acertar direto."
-    },
-    {
-      "id": "chute-esportes-408",
-      "difficulty": "medium",
-      "text": "Quantos metros tem a raia de natação olímpica?",
-      "answer": 50,
-      "unit": "metros",
-      "fact": "Em provas de curta distância, ela é usada só uma vez por volta."
-    },
-    {
-      "id": "chute-esportes-409",
-      "difficulty": "medium",
-      "text": "Quantos quilômetros tem a prova de ciclismo Tour de France, aproximadamente?",
-      "answer": 3500,
-      "unit": "km",
-      "fact": "Ela dura cerca de três semanas."
     },
     {
       "id": "chute-esportes-413",

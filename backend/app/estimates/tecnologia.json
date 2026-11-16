@@ -99,7 +99,7 @@
     },
     {
       "id": "chute-tecnologia-13",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano Tim Berners-Lee propôs a World Wide Web?",
       "answer": 1989,
       "scale": 50,
@@ -170,14 +170,6 @@
       "fact": "Ela usa 7 bits; as versões estendidas chegaram a 256."
     },
     {
-      "id": "chute-tecnologia-22",
-      "difficulty": "medium",
-      "text": "Em que ano chegou ao mercado o primeiro celular com Android?",
-      "answer": 2008,
-      "scale": 50,
-      "fact": "Foi o HTC Dream, também chamado T-Mobile G1."
-    },
-    {
       "id": "chute-tecnologia-23",
       "difficulty": "easy",
       "text": "Em que ano o Orkut foi lançado?",
@@ -203,7 +195,7 @@
     },
     {
       "id": "chute-tecnologia-26",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro celular comercial, o Motorola DynaTAC?",
       "answer": 1983,
       "scale": 50,
@@ -226,16 +218,8 @@
       "fact": "No começo, só dava para postar fotos quadradas."
     },
     {
-      "id": "chute-tecnologia-29",
-      "difficulty": "medium",
-      "text": "Em que ano foi minerado o primeiro bloco do Bitcoin?",
-      "answer": 2009,
-      "scale": 50,
-      "fact": "O bloco gênese foi criado por Satoshi Nakamoto, cuja identidade segue desconhecida."
-    },
-    {
       "id": "chute-tecnologia-30",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Tesla foi fundada?",
       "answer": 2003,
       "scale": 50,
@@ -451,7 +435,7 @@
     },
     {
       "id": "chute-tecnologia-59",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criada a IBM com esse nome?",
       "answer": 1924,
       "scale": 50,
@@ -459,7 +443,7 @@
     },
     {
       "id": "chute-tecnologia-60",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criada a Samsung?",
       "answer": 1938,
       "scale": 50,
@@ -523,7 +507,7 @@
     },
     {
       "id": "chute-tecnologia-68",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criada a HP?",
       "answer": 1939,
       "scale": 50,
@@ -835,7 +819,7 @@
     },
     {
       "id": "chute-tecnologia-108",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas fotos de 5 MB cabem em 64 GB, aproximadamente?",
       "answer": 12800,
       "unit": "fotos",
@@ -851,7 +835,7 @@
     },
     {
       "id": "chute-tecnologia-110",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos disquetes de 1,44 MB são necessários para 1 GB, aproximadamente?",
       "answer": 694,
       "unit": "disquetes",
@@ -963,7 +947,7 @@
     },
     {
       "id": "chute-tecnologia-124",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas horas de música tinha o primeiro iPod, em bateria?",
       "answer": 10,
       "unit": "horas",
@@ -1178,28 +1162,12 @@
       "fact": "A rede é voltada a profissionais."
     },
     {
-      "id": "chute-tecnologia-153",
-      "difficulty": "medium",
-      "text": "Quantos assinantes tem a Netflix, em milhões, em 2024?",
-      "answer": 300,
-      "unit": "milhões",
-      "fact": "A empresa parou de divulgar o número em 2025."
-    },
-    {
       "id": "chute-tecnologia-154",
       "difficulty": "medium",
       "text": "Quantos assinantes tem o Spotify, em milhões, em 2024?",
       "answer": 260,
       "unit": "milhões",
       "fact": "O total de usuários fica acima de 600 milhões."
-    },
-    {
-      "id": "chute-tecnologia-155",
-      "difficulty": "medium",
-      "text": "Quantos clientes tem o Nubank, em milhões, em 2024?",
-      "answer": 110,
-      "unit": "milhões",
-      "fact": "A maioria está no Brasil."
     },
     {
       "id": "chute-tecnologia-156",
@@ -1251,7 +1219,7 @@
     },
     {
       "id": "chute-tecnologia-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos e-mails são enviados por dia no mundo, em bilhões, aproximadamente?",
       "answer": 350,
       "unit": "bilhões",
@@ -1259,7 +1227,7 @@
     },
     {
       "id": "chute-tecnologia-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas mensagens o WhatsApp entrega por dia, em bilhões, aproximadamente?",
       "answer": 100,
       "unit": "bilhões",
@@ -1267,7 +1235,7 @@
     },
     {
       "id": "chute-tecnologia-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos vídeos são vistos por dia no YouTube, em bilhões de horas?",
       "answer": 1,
       "unit": "bilhão",
@@ -1275,7 +1243,7 @@
     },
     {
       "id": "chute-tecnologia-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos artigos tem a Wikipédia em inglês, em milhões, em 2024?",
       "answer": 6.9,
       "unit": "milhões",
@@ -1283,7 +1251,7 @@
     },
     {
       "id": "chute-tecnologia-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos artigos tem a Wikipédia em português, em milhões, em 2024?",
       "answer": 1.1,
       "unit": "milhão",
@@ -1291,7 +1259,7 @@
     },
     {
       "id": "chute-tecnologia-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos sites têm o domínio .br registrado, em milhões, aproximadamente?",
       "answer": 5,
       "unit": "milhões",
@@ -1299,7 +1267,7 @@
     },
     {
       "id": "chute-tecnologia-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas moedas foram mineradas do Bitcoin até 2024, em milhões, aproximadamente?",
       "answer": 19.7,
       "unit": "milhões",
@@ -1371,7 +1339,7 @@
     },
     {
       "id": "chute-tecnologia-177",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Microsoft pagou pelo GitHub, em bilhões de dólares?",
       "answer": 7.5,
       "unit": "bilhões",
@@ -1379,7 +1347,7 @@
     },
     {
       "id": "chute-tecnologia-178",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Google pagou pelo Waze, em bilhões de dólares?",
       "answer": 1.1,
       "unit": "bilhão",
@@ -1387,7 +1355,7 @@
     },
     {
       "id": "chute-tecnologia-179",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Google pagou pela Motorola, em bilhões de dólares?",
       "answer": 12.5,
       "unit": "bilhões",
@@ -1395,7 +1363,7 @@
     },
     {
       "id": "chute-tecnologia-180",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Lenovo pagou pela Motorola, em bilhões de dólares?",
       "answer": 2.9,
       "unit": "bilhões",
@@ -1411,7 +1379,7 @@
     },
     {
       "id": "chute-tecnologia-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Broadcom pagou pela VMware, em bilhões de dólares?",
       "answer": 69,
       "unit": "bilhões",
@@ -1419,7 +1387,7 @@
     },
     {
       "id": "chute-tecnologia-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Adobe tentou pagar pela Figma, em bilhões de dólares?",
       "answer": 20,
       "unit": "bilhões",
@@ -1427,7 +1395,7 @@
     },
     {
       "id": "chute-tecnologia-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custou o primeiro Macintosh, em dólares?",
       "answer": 2495,
       "unit": "dólares",
@@ -1435,7 +1403,7 @@
     },
     {
       "id": "chute-tecnologia-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custou o primeiro PC da IBM, em dólares?",
       "answer": 1565,
       "unit": "dólares",
@@ -1459,7 +1427,7 @@
     },
     {
       "id": "chute-tecnologia-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custava o Motorola DynaTAC, em dólares, em 1984?",
       "answer": 3995,
       "unit": "dólares",
@@ -1467,7 +1435,7 @@
     },
     {
       "id": "chute-tecnologia-189",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto pesava o primeiro notebook comercial, o Osborne 1, em quilos?",
       "answer": 11,
       "unit": "quilos",
@@ -1507,7 +1475,7 @@
     },
     {
       "id": "chute-tecnologia-194",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos transistores tem o chip M1, em bilhões?",
       "answer": 16,
       "unit": "bilhões",
@@ -1515,7 +1483,7 @@
     },
     {
       "id": "chute-tecnologia-195",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos transistores tem o chip M3 Max, em bilhões?",
       "answer": 92,
       "unit": "bilhões",
@@ -1523,7 +1491,7 @@
     },
     {
       "id": "chute-tecnologia-196",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos transistores tem a Nvidia Blackwell, em bilhões?",
       "answer": 208,
       "unit": "bilhões",
@@ -1531,7 +1499,7 @@
     },
     {
       "id": "chute-tecnologia-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custa uma placa de IA H100, da Nvidia, em dólares, aproximadamente?",
       "answer": 30000,
       "unit": "dólares",
@@ -1539,7 +1507,7 @@
     },
     {
       "id": "chute-tecnologia-198",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos megawatts consome um grande data center, aproximadamente?",
       "answer": 100,
       "unit": "MW",
@@ -1547,7 +1515,7 @@
     },
     {
       "id": "chute-tecnologia-199",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos data centers existem no mundo, em milhares, aproximadamente?",
       "answer": 11,
       "unit": "mil",
@@ -1555,7 +1523,7 @@
     },
     {
       "id": "chute-tecnologia-200",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos quilômetros de cabos submarinos existem no mundo, em milhões, aproximadamente?",
       "answer": 1.4,
       "unit": "milhão",
@@ -1563,7 +1531,7 @@
     },
     {
       "id": "chute-tecnologia-201",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cabos submarinos de internet existem no mundo, aproximadamente?",
       "answer": 550,
       "unit": "cabos",
@@ -1627,7 +1595,7 @@
     },
     {
       "id": "chute-tecnologia-209",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude da órbita dos satélites de GPS, em km?",
       "answer": 20200,
       "unit": "km",
@@ -1635,7 +1603,7 @@
     },
     {
       "id": "chute-tecnologia-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude da órbita dos satélites Starlink, em km, aproximadamente?",
       "answer": 550,
       "unit": "km",
@@ -1643,7 +1611,7 @@
     },
     {
       "id": "chute-tecnologia-211",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos satélites a Starlink tem em órbita, em 2024, aproximadamente?",
       "answer": 6500,
       "unit": "satélites",
@@ -1651,7 +1619,7 @@
     },
     {
       "id": "chute-tecnologia-212",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos satélites compõem o sistema GPS, no mínimo?",
       "answer": 24,
       "unit": "satélites",
@@ -1659,7 +1627,7 @@
     },
     {
       "id": "chute-tecnologia-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bits tem um endereço IPv6?",
       "answer": 128,
       "unit": "bits",
@@ -1667,7 +1635,7 @@
     },
     {
       "id": "chute-tecnologia-214",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos caracteres tem o Unicode, em milhares, em 2024?",
       "answer": 155,
       "unit": "mil",
@@ -1675,7 +1643,7 @@
     },
     {
       "id": "chute-tecnologia-215",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos emojis existem no Unicode, em 2024, aproximadamente?",
       "answer": 3780,
       "unit": "emojis",
@@ -1683,7 +1651,7 @@
     },
     {
       "id": "chute-tecnologia-216",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos emojis Shigetaka Kurita criou na primeira versão?",
       "answer": 176,
       "unit": "emojis",
@@ -1698,14 +1666,6 @@
       "fact": "A dificuldade é ajustada a cada duas semanas."
     },
     {
-      "id": "chute-tecnologia-218",
-      "difficulty": "medium",
-      "text": "Qual foi o preço máximo de um Bitcoin em 2021, em dólares, aproximadamente?",
-      "answer": 69000,
-      "unit": "dólares",
-      "fact": "A moeda subiu muito de novo depois."
-    },
-    {
       "id": "chute-tecnologia-219",
       "difficulty": "medium",
       "text": "Qual foi o preço de um Bitcoin no fim de 2024, em dólares, aproximadamente?",
@@ -1714,16 +1674,8 @@
       "fact": "A marca foi alcançada em dezembro desse ano."
     },
     {
-      "id": "chute-tecnologia-220",
-      "difficulty": "medium",
-      "text": "Quanto foi vendido o primeiro tuíte, em NFT, em milhões de dólares?",
-      "answer": 2.9,
-      "unit": "milhões",
-      "fact": "Ele não vale nem perto disso hoje."
-    },
-    {
       "id": "chute-tecnologia-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dólares custavam as duas pizzas de 10 mil bitcoins, em 2010?",
       "answer": 41,
       "unit": "dólares",
@@ -1731,7 +1683,7 @@
     },
     {
       "id": "chute-tecnologia-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o resultado do Reality Labs, da Meta, em 2023, em bilhões de dólares?",
       "answer": -16,
       "unit": "bilhões",
@@ -1739,7 +1691,7 @@
     },
     {
       "id": "chute-tecnologia-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o resultado da Uber em 2019, em bilhões de dólares?",
       "answer": -8.5,
       "unit": "bilhões",
@@ -1747,7 +1699,7 @@
     },
     {
       "id": "chute-tecnologia-224",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o resultado da WeWork em 2019, em bilhões de dólares?",
       "answer": -3.2,
       "unit": "bilhões",
@@ -1755,7 +1707,7 @@
     },
     {
       "id": "chute-tecnologia-225",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o resultado da OpenAI em 2024, em bilhões de dólares, aproximadamente?",
       "answer": -5,
       "unit": "bilhões",
@@ -1763,7 +1715,7 @@
     },
     {
       "id": "chute-tecnologia-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto variou o valor da Nvidia em 27 de janeiro de 2025, em bilhões de dólares?",
       "answer": -589,
       "unit": "bilhões",
@@ -1771,7 +1723,7 @@
     },
     {
       "id": "chute-tecnologia-227",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto variou o valor da Meta em 3 de fevereiro de 2022, em bilhões de dólares?",
       "answer": -232,
       "unit": "bilhões",
@@ -1779,7 +1731,7 @@
     },
     {
       "id": "chute-tecnologia-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto variou o valor da Apple em 3 de janeiro de 2019, em bilhões de dólares?",
       "answer": -75,
       "unit": "bilhões",
@@ -2116,7 +2068,7 @@
     },
     {
       "id": "chute-tecnologia-272",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos iPhones foram vendidos em 2024, em milhões, aproximadamente?",
       "answer": 230,
       "unit": "milhões",
@@ -2163,14 +2115,6 @@
       "fact": "A Amazon raramente divulga esse número."
     },
     {
-      "id": "chute-tecnologia-278",
-      "difficulty": "hard",
-      "text": "Quantos Teslas foram entregues em 2023, em milhões?",
-      "answer": 1.8,
-      "unit": "milhão",
-      "fact": "Foi um recorde da empresa."
-    },
-    {
       "id": "chute-tecnologia-279",
       "difficulty": "hard",
       "text": "Quantos carros elétricos foram vendidos no mundo em 2023, em milhões?",
@@ -2188,7 +2132,7 @@
     },
     {
       "id": "chute-tecnologia-281",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos quilômetros roda um Tesla Model 3 Long Range, em uma carga, aproximadamente?",
       "answer": 600,
       "unit": "km",
@@ -2292,7 +2236,7 @@
     },
     {
       "id": "chute-tecnologia-295",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano AlphaGo venceu Lee Sedol?",
       "answer": 2016,
       "scale": 50,
@@ -2316,7 +2260,7 @@
     },
     {
       "id": "chute-tecnologia-298",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o GPT-4 foi lançado?",
       "answer": 2023,
       "scale": 50,
@@ -2340,7 +2284,7 @@
     },
     {
       "id": "chute-tecnologia-302",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias o Instagram levou para alcançar 1 milhão de contas?",
       "answer": 75,
       "unit": "dias",
@@ -2348,7 +2292,7 @@
     },
     {
       "id": "chute-tecnologia-303",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos a Netflix levou para alcançar 1 milhão de usuários?",
       "answer": 3.5,
       "unit": "anos",
@@ -2356,7 +2300,7 @@
     },
     {
       "id": "chute-tecnologia-304",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos o Twitter levou para alcançar 1 milhão de usuários?",
       "answer": 2,
       "unit": "anos",
@@ -2396,7 +2340,7 @@
     },
     {
       "id": "chute-tecnologia-309",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos minutos de música cabem em um CD comum?",
       "answer": 74,
       "unit": "minutos",
@@ -2420,7 +2364,7 @@
     },
     {
       "id": "chute-tecnologia-312",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos KB cabiam em um disquete de 5¼, comum nos anos 1980?",
       "answer": 360,
       "unit": "KB",
@@ -2428,7 +2372,7 @@
     },
     {
       "id": "chute-tecnologia-313",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos MB tinha o primeiro pendrive, em 2000?",
       "answer": 8,
       "unit": "MB",
@@ -2444,7 +2388,7 @@
     },
     {
       "id": "chute-tecnologia-315",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos ciclos completos aguenta uma bateria de iPhone 15, segundo a Apple?",
       "answer": 1000,
       "unit": "ciclos",
@@ -2460,7 +2404,7 @@
     },
     {
       "id": "chute-tecnologia-317",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a potência máxima de um USB-C PD 3.1, em watts?",
       "answer": 240,
       "unit": "watts",
@@ -2500,7 +2444,7 @@
     },
     {
       "id": "chute-tecnologia-322",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pontos por polegada tem uma tela \"Retina\" do iPhone 4?",
       "answer": 326,
       "unit": "ppi",
@@ -2516,7 +2460,7 @@
     },
     {
       "id": "chute-tecnologia-324",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dólares o Google pagou pelo domínio google.com, por erro, a um ex-funcionário?",
       "answer": 12,
       "unit": "dólares",
@@ -2531,16 +2475,8 @@
       "fact": "Na American Express, são quatro."
     },
     {
-      "id": "chute-tecnologia-326",
-      "difficulty": "medium",
-      "text": "Qual é o código telefônico do Brasil?",
-      "answer": 55,
-      "unit": "código",
-      "fact": "O código dos EUA é 1."
-    },
-    {
       "id": "chute-tecnologia-327",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o número da porta padrão do SSH?",
       "answer": 22,
       "unit": "porta",
@@ -2548,7 +2484,7 @@
     },
     {
       "id": "chute-tecnologia-328",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o número da porta padrão do FTP?",
       "answer": 21,
       "unit": "porta",
@@ -2660,7 +2596,7 @@
     },
     {
       "id": "chute-tecnologia-342",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criada a linguagem Java?",
       "answer": 1995,
       "scale": 50,
@@ -2668,7 +2604,7 @@
     },
     {
       "id": "chute-tecnologia-343",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criada a linguagem JavaScript?",
       "answer": 1995,
       "scale": 50,
@@ -2748,7 +2684,7 @@
     },
     {
       "id": "chute-tecnologia-353",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o GitHub?",
       "answer": 2008,
       "scale": 50,
@@ -2780,7 +2716,7 @@
     },
     {
       "id": "chute-tecnologia-357",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o MS-DOS?",
       "answer": 1981,
       "scale": 50,
@@ -2876,7 +2812,7 @@
     },
     {
       "id": "chute-tecnologia-370",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado o Apple II?",
       "answer": 1977,
       "scale": 50,
@@ -2892,7 +2828,7 @@
     },
     {
       "id": "chute-tecnologia-372",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro MacBook Air?",
       "answer": 2008,
       "scale": 50,
@@ -2900,7 +2836,7 @@
     },
     {
       "id": "chute-tecnologia-373",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro Surface, da Microsoft?",
       "answer": 2012,
       "scale": 50,
@@ -2916,7 +2852,7 @@
     },
     {
       "id": "chute-tecnologia-375",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos megawatts são necessários para treinar um grande modelo de IA, em média?",
       "answer": 50,
       "unit": "MW",
@@ -2956,7 +2892,7 @@
     },
     {
       "id": "chute-tecnologia-380",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas trabalham na Apple, em milhares, aproximadamente?",
       "answer": 160,
       "unit": "mil",
@@ -2964,7 +2900,7 @@
     },
     {
       "id": "chute-tecnologia-381",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas trabalham no Google, em milhares, aproximadamente?",
       "answer": 180,
       "unit": "mil",
@@ -2980,7 +2916,7 @@
     },
     {
       "id": "chute-tecnologia-383",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantas pessoas trabalhavam na Apple quando ela nasceu?",
       "answer": 3,
       "unit": "pessoas",
@@ -3060,7 +2996,7 @@
     },
     {
       "id": "chute-tecnologia-394",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos nanômetros tem um fio de cabelo, em milhares, de espessura?",
       "answer": 80,
       "unit": "mil",
@@ -3093,7 +3029,7 @@
     },
     {
       "id": "chute-tecnologia-398",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos terabytes de dados a internet gera por dia, em milhões?",
       "answer": 400,
       "unit": "milhões",
@@ -3101,7 +3037,7 @@
     },
     {
       "id": "chute-tecnologia-399",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos data centers o Google tem pelo mundo, aproximadamente?",
       "answer": 40,
       "unit": "centros",
@@ -3109,7 +3045,7 @@
     },
     {
       "id": "chute-tecnologia-400",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos megabytes por segundo transfere um SSD NVMe rápido, aproximadamente?",
       "answer": 7000,
       "unit": "MB/s",
@@ -3117,7 +3053,7 @@
     },
     {
       "id": "chute-tecnologia-401",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos megabytes por segundo transfere um HD comum, aproximadamente?",
       "answer": 150,
       "unit": "MB/s",
@@ -3213,7 +3149,7 @@
     },
     {
       "id": "chute-tecnologia-414",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos a Apple tinha quando Tim Cook virou presidente, em 2011?",
       "answer": 35,
       "unit": "anos",

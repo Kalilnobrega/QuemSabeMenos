@@ -43,19 +43,11 @@
     },
     {
       "id": "chute-games-6",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado o jogo Pong?",
       "answer": 1972,
       "scale": 50,
       "fact": "Foi o primeiro sucesso comercial dos videogames, da Atari."
-    },
-    {
-      "id": "chute-games-7",
-      "difficulty": "hard",
-      "text": "Em que ano foi lançado o primeiro The Legend of Zelda?",
-      "answer": 1986,
-      "scale": 50,
-      "fact": "Foi um dos primeiros jogos de console a salvar o progresso numa bateria no cartucho."
     },
     {
       "id": "chute-games-8",
@@ -203,19 +195,11 @@
     },
     {
       "id": "chute-games-26",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançado Street Fighter II?",
       "answer": 1991,
       "scale": 50,
       "fact": "Ele popularizou os jogos de luta e os combos nos fliperamas."
-    },
-    {
-      "id": "chute-games-27",
-      "difficulty": "hard",
-      "text": "Em que ano foi lançado o fliperama Donkey Kong?",
-      "answer": 1981,
-      "scale": 50,
-      "fact": "Foi a estreia do Mario, que ainda se chamava Jumpman."
     },
     {
       "id": "chute-games-28",
@@ -323,7 +307,7 @@
     },
     {
       "id": "chute-games-41",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anéis são necessários para Sonic entrar em uma fase especial?",
       "answer": 50,
       "unit": "anéis",
@@ -1115,7 +1099,7 @@
     },
     {
       "id": "chute-games-144",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do PlayStation 1 foram vendidas, em milhões?",
       "answer": 102,
       "unit": "milhões",
@@ -1123,7 +1107,7 @@
     },
     {
       "id": "chute-games-145",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do PlayStation 3 foram vendidas, em milhões?",
       "answer": 87,
       "unit": "milhões",
@@ -1131,7 +1115,7 @@
     },
     {
       "id": "chute-games-146",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do PlayStation 4 foram vendidas, em milhões?",
       "answer": 117,
       "unit": "milhões",
@@ -1139,7 +1123,7 @@
     },
     {
       "id": "chute-games-147",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do PlayStation 5 foram vendidas, até 2024, em milhões?",
       "answer": 65,
       "unit": "milhões",
@@ -1147,7 +1131,7 @@
     },
     {
       "id": "chute-games-148",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Xbox 360 foram vendidas, em milhões?",
       "answer": 84,
       "unit": "milhões",
@@ -1155,7 +1139,7 @@
     },
     {
       "id": "chute-games-149",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Xbox original foram vendidas, em milhões?",
       "answer": 24,
       "unit": "milhões",
@@ -1163,7 +1147,7 @@
     },
     {
       "id": "chute-games-150",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Xbox One foram vendidas, aproximadamente, em milhões?",
       "answer": 58,
       "unit": "milhões",
@@ -1171,7 +1155,7 @@
     },
     {
       "id": "chute-games-151",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Wii foram vendidas, em milhões?",
       "answer": 101,
       "unit": "milhões",
@@ -1179,7 +1163,7 @@
     },
     {
       "id": "chute-games-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do GameCube foram vendidas, em milhões?",
       "answer": 21,
       "unit": "milhões",
@@ -1187,7 +1171,7 @@
     },
     {
       "id": "chute-games-153",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Nintendo 64 foram vendidas, em milhões?",
       "answer": 33,
       "unit": "milhões",
@@ -1195,7 +1179,7 @@
     },
     {
       "id": "chute-games-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Super Nintendo foram vendidas, em milhões?",
       "answer": 49,
       "unit": "milhões",
@@ -1203,7 +1187,7 @@
     },
     {
       "id": "chute-games-155",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do NES foram vendidas, em milhões?",
       "answer": 62,
       "unit": "milhões",
@@ -1211,7 +1195,7 @@
     },
     {
       "id": "chute-games-156",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Nintendo Switch foram vendidas, até 2024, em milhões?",
       "answer": 150,
       "unit": "milhões",
@@ -1219,7 +1203,7 @@
     },
     {
       "id": "chute-games-157",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Nintendo 3DS foram vendidas, em milhões?",
       "answer": 75,
       "unit": "milhões",
@@ -1227,7 +1211,7 @@
     },
     {
       "id": "chute-games-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do PSP foram vendidas, em milhões?",
       "answer": 80,
       "unit": "milhões",
@@ -1235,7 +1219,7 @@
     },
     {
       "id": "chute-games-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Mega Drive foram vendidas, em milhões?",
       "answer": 30,
       "unit": "milhões",
@@ -1243,7 +1227,7 @@
     },
     {
       "id": "chute-games-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Dreamcast foram vendidas, em milhões?",
       "answer": 9,
       "unit": "milhões",
@@ -1251,7 +1235,7 @@
     },
     {
       "id": "chute-games-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Sega Saturn foram vendidas, em milhões?",
       "answer": 9,
       "unit": "milhões",
@@ -1259,7 +1243,7 @@
     },
     {
       "id": "chute-games-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas unidades do Atari 2600 foram vendidas, em milhões?",
       "answer": 30,
       "unit": "milhões",
@@ -1267,7 +1251,7 @@
     },
     {
       "id": "chute-games-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Tetris\", somando todas as versões, em milhões, aproximadamente?",
       "answer": 520,
       "unit": "milhões",
@@ -1275,7 +1259,7 @@
     },
     {
       "id": "chute-games-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Wii Sports\", em milhões?",
       "answer": 82,
       "unit": "milhões",
@@ -1283,7 +1267,7 @@
     },
     {
       "id": "chute-games-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"PUBG\", em milhões?",
       "answer": 75,
       "unit": "milhões",
@@ -1291,7 +1275,7 @@
     },
     {
       "id": "chute-games-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Mario Kart 8 Deluxe\", em milhões, aproximadamente?",
       "answer": 65,
       "unit": "milhões",
@@ -1299,7 +1283,7 @@
     },
     {
       "id": "chute-games-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Red Dead Redemption 2\", em milhões, aproximadamente?",
       "answer": 70,
       "unit": "milhões",
@@ -1307,7 +1291,7 @@
     },
     {
       "id": "chute-games-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"The Witcher 3\", em milhões, aproximadamente?",
       "answer": 60,
       "unit": "milhões",
@@ -1315,7 +1299,7 @@
     },
     {
       "id": "chute-games-169",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Terraria\", em milhões, aproximadamente?",
       "answer": 60,
       "unit": "milhões",
@@ -1323,7 +1307,7 @@
     },
     {
       "id": "chute-games-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Elden Ring\", em milhões, até 2025?",
       "answer": 30,
       "unit": "milhões",
@@ -1331,7 +1315,7 @@
     },
     {
       "id": "chute-games-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Skyrim\", em milhões, aproximadamente?",
       "answer": 60,
       "unit": "milhões",
@@ -1339,7 +1323,7 @@
     },
     {
       "id": "chute-games-172",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Super Mario Bros.\", original, em milhões?",
       "answer": 40,
       "unit": "milhões",
@@ -1347,7 +1331,7 @@
     },
     {
       "id": "chute-games-173",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Pokémon Red e Blue\", em milhões?",
       "answer": 31,
       "unit": "milhões",
@@ -1355,7 +1339,7 @@
     },
     {
       "id": "chute-games-174",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Stardew Valley\", em milhões, até 2024?",
       "answer": 41,
       "unit": "milhões",
@@ -1363,7 +1347,7 @@
     },
     {
       "id": "chute-games-175",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Cyberpunk 2077\", até 2024, em milhões?",
       "answer": 30,
       "unit": "milhões",
@@ -1371,7 +1355,7 @@
     },
     {
       "id": "chute-games-176",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Hogwarts Legacy\", até 2024, em milhões?",
       "answer": 30,
       "unit": "milhões",
@@ -1379,7 +1363,7 @@
     },
     {
       "id": "chute-games-177",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Baldur's Gate 3\", até 2024, em milhões?",
       "answer": 15,
       "unit": "milhões",
@@ -1387,7 +1371,7 @@
     },
     {
       "id": "chute-games-178",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto arrecadou \"GTA V\", até 2023, em bilhões de dólares?",
       "answer": 8,
       "unit": "bilhões",
@@ -1395,7 +1379,7 @@
     },
     {
       "id": "chute-games-179",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custou \"GTA V\" para ser feito, em milhões de dólares?",
       "answer": 265,
       "unit": "milhões",
@@ -1403,7 +1387,7 @@
     },
     {
       "id": "chute-games-180",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custou \"Red Dead Redemption 2\", em milhões de dólares, aproximadamente?",
       "answer": 500,
       "unit": "milhões",
@@ -1411,7 +1395,7 @@
     },
     {
       "id": "chute-games-181",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custou \"Cyberpunk 2077\", em milhões de dólares, aproximadamente?",
       "answer": 430,
       "unit": "milhões",
@@ -1419,7 +1403,7 @@
     },
     {
       "id": "chute-games-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto faturou \"Pokémon GO\" em receita total, até 2024, em bilhões de dólares?",
       "answer": 8,
       "unit": "bilhões",
@@ -1427,7 +1411,7 @@
     },
     {
       "id": "chute-games-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas chegaram a jogar Fortnite em um único concerto de Travis Scott, em milhões?",
       "answer": 12.3,
       "unit": "milhões",
@@ -1435,7 +1419,7 @@
     },
     {
       "id": "chute-games-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas chegaram a jogar Roblox por mês, em milhões, em 2023?",
       "answer": 300,
       "unit": "milhões",
@@ -1443,7 +1427,7 @@
     },
     {
       "id": "chute-games-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas no mundo jogam videogames, em bilhões, em 2023?",
       "answer": 3.3,
       "unit": "bilhões",
@@ -1451,7 +1435,7 @@
     },
     {
       "id": "chute-games-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o mercado de games movimenta por ano, em bilhões de dólares?",
       "answer": 184,
       "unit": "bilhões",
@@ -1531,7 +1515,7 @@
     },
     {
       "id": "chute-games-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cartas tem um baralho de UNO?",
       "answer": 108,
       "unit": "cartas",
@@ -1563,7 +1547,7 @@
     },
     {
       "id": "chute-games-201",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas combinações tem um cubo mágico, em quintilhões?",
       "answer": 43,
       "unit": "quintilhões",
@@ -1571,7 +1555,7 @@
     },
     {
       "id": "chute-games-202",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em quantos movimentos, no máximo, qualquer cubo mágico pode ser resolvido?",
       "answer": 20,
       "unit": "movimentos",
@@ -1579,7 +1563,7 @@
     },
     {
       "id": "chute-games-203",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde mundial de resolução do cubo mágico, em segundos, em 2023?",
       "answer": 3.13,
       "unit": "segundos",
@@ -1595,7 +1579,7 @@
     },
     {
       "id": "chute-games-205",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cubos mágicos foram vendidos, em milhões, aproximadamente?",
       "answer": 450,
       "unit": "milhões",
@@ -1611,7 +1595,7 @@
     },
     {
       "id": "chute-games-207",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas peças tem um jogo de Lego médio, em uma caixa do Coliseu?",
       "answer": 9036,
       "unit": "peças",
@@ -1619,7 +1603,7 @@
     },
     {
       "id": "chute-games-208",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos blocos de LEGO são produzidos por ano, em bilhões?",
       "answer": 110,
       "unit": "bilhões",
@@ -1691,7 +1675,7 @@
     },
     {
       "id": "chute-games-217",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criado o Cluedo, jogo que deu origem ao Detetive?",
       "answer": 1948,
       "scale": 50,
@@ -1699,7 +1683,7 @@
     },
     {
       "id": "chute-games-218",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendida uma carta de Magic, o Black Lotus, em dólares?",
       "answer": 540000,
       "unit": "dólares",
@@ -1707,7 +1691,7 @@
     },
     {
       "id": "chute-games-219",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendida a carta de Pokémon Pikachu Illustrator, em milhões de dólares?",
       "answer": 5.3,
       "unit": "milhões",
@@ -1715,7 +1699,7 @@
     },
     {
       "id": "chute-games-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendida uma cópia lacrada de \"Super Mario 64\", em milhões de dólares?",
       "answer": 1.56,
       "unit": "milhão",
@@ -1723,7 +1707,7 @@
     },
     {
       "id": "chute-games-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendida uma cópia lacrada de \"Super Mario Bros.\", em milhões de dólares, em 2021?",
       "answer": 2,
       "unit": "milhões",
@@ -1731,7 +1715,7 @@
     },
     {
       "id": "chute-games-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi vendida uma cópia de \"Zelda\", de 1987, em dólares, em 2021?",
       "answer": 870000,
       "unit": "dólares",
@@ -1739,7 +1723,7 @@
     },
     {
       "id": "chute-games-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o jogo Mario Kart Wii vendeu, em milhões, aproximadamente?",
       "answer": 37,
       "unit": "milhões",
@@ -1747,7 +1731,7 @@
     },
     {
       "id": "chute-games-224",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde mundial de \"Super Mario Bros.\" em speedrun, em minutos, aproximadamente?",
       "answer": 4.9,
       "unit": "minutos",
@@ -1755,7 +1739,7 @@
     },
     {
       "id": "chute-games-225",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tempo do recorde de Ocarina of Time em speedrun, aproximadamente, em minutos?",
       "answer": 9,
       "unit": "minutos",
@@ -1763,7 +1747,7 @@
     },
     {
       "id": "chute-games-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde de \"Super Mario 64\" em 120 estrelas, em horas, aproximadamente?",
       "answer": 1.6,
       "unit": "hora",
@@ -1771,7 +1755,7 @@
     },
     {
       "id": "chute-games-227",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tempo aproximado para zerar The Witcher 3 por completo, em horas?",
       "answer": 170,
       "unit": "horas",
@@ -1779,7 +1763,7 @@
     },
     {
       "id": "chute-games-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tempo aproximado para zerar Elden Ring por completo, em horas?",
       "answer": 130,
       "unit": "horas",
@@ -1787,7 +1771,7 @@
     },
     {
       "id": "chute-games-229",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tempo aproximado para zerar Baldur's Gate 3 por completo, em horas?",
       "answer": 140,
       "unit": "horas",
@@ -1803,7 +1787,7 @@
     },
     {
       "id": "chute-games-231",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mapa de GTA V, em km²?",
       "answer": 81,
       "unit": "km²",
@@ -1811,7 +1795,7 @@
     },
     {
       "id": "chute-games-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mapa de Red Dead Redemption 2, em km²?",
       "answer": 75,
       "unit": "km²",
@@ -1819,7 +1803,7 @@
     },
     {
       "id": "chute-games-233",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mapa de Skyrim, em km²?",
       "answer": 37,
       "unit": "km²",
@@ -1827,7 +1811,7 @@
     },
     {
       "id": "chute-games-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mapa de Breath of the Wild, em km²?",
       "answer": 84,
       "unit": "km²",
@@ -1835,7 +1819,7 @@
     },
     {
       "id": "chute-games-235",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mundo de Minecraft, em km por lado, antes do limite?",
       "answer": 60000,
       "unit": "km",
@@ -1843,7 +1827,7 @@
     },
     {
       "id": "chute-games-236",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mapa de No Man's Sky, em planetas, em quintilhões?",
       "answer": 18,
       "unit": "quintilhões",
@@ -1851,7 +1835,7 @@
     },
     {
       "id": "chute-games-237",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altura máxima de construção em Minecraft, em blocos, depois de 2021?",
       "answer": 320,
       "unit": "blocos",
@@ -1899,7 +1883,7 @@
     },
     {
       "id": "chute-games-243",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos personagens tem League of Legends, em 2024, aproximadamente?",
       "answer": 168,
       "unit": "campeões",
@@ -1907,7 +1891,7 @@
     },
     {
       "id": "chute-games-244",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas partidas de LoL são jogadas por dia, em milhões, aproximadamente?",
       "answer": 100,
       "unit": "milhões",
@@ -1915,7 +1899,7 @@
     },
     {
       "id": "chute-games-245",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos bits tinha o Atari 2600?",
       "answer": 8,
       "unit": "bits",
@@ -1923,7 +1907,7 @@
     },
     {
       "id": "chute-games-246",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos bits tinha o Super Nintendo?",
       "answer": 16,
       "unit": "bits",
@@ -1931,7 +1915,7 @@
     },
     {
       "id": "chute-games-247",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos bits tinha o Mega Drive?",
       "answer": 16,
       "unit": "bits",
@@ -1939,7 +1923,7 @@
     },
     {
       "id": "chute-games-248",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos bits tinha o Nintendo 64?",
       "answer": 64,
       "unit": "bits",
@@ -1947,7 +1931,7 @@
     },
     {
       "id": "chute-games-249",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos bits tinha o PlayStation 1?",
       "answer": 32,
       "unit": "bits",
@@ -2016,14 +2000,6 @@
       "answer": 8,
       "unit": "MB",
       "fact": "Hoje, uma foto de celular é quase isso."
-    },
-    {
-      "id": "chute-games-258",
-      "difficulty": "hard",
-      "text": "Quantos MB tinha o CD do PlayStation 1?",
-      "answer": 700,
-      "unit": "MB",
-      "fact": "Ele guardava muito mais que os cartuchos."
     },
     {
       "id": "chute-games-259",
@@ -2227,7 +2203,7 @@
     },
     {
       "id": "chute-games-285",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do ponto mais baixo do mundo de Minecraft, em blocos?",
       "answer": -64,
       "unit": "blocos",
@@ -2291,7 +2267,7 @@
     },
     {
       "id": "chute-games-293",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto arrecadou o filme \"Super Mario Bros.\", de 2023, em bilhões de dólares?",
       "answer": 1.36,
       "unit": "bilhão",
@@ -2299,7 +2275,7 @@
     },
     {
       "id": "chute-games-294",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto arrecadou o filme \"Um Filme Minecraft\", em milhões de dólares?",
       "answer": 950,
       "unit": "milhões",
@@ -2307,7 +2283,7 @@
     },
     {
       "id": "chute-games-295",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto arrecadou o filme \"Sonic 3\", em milhões de dólares?",
       "answer": 490,
       "unit": "milhões",
@@ -2347,7 +2323,7 @@
     },
     {
       "id": "chute-games-300",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Tekken\", original?",
       "answer": 1994,
       "scale": 50,
@@ -2371,7 +2347,7 @@
     },
     {
       "id": "chute-games-303",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Sonic 2\"?",
       "answer": 1992,
       "scale": 50,
@@ -2395,7 +2371,7 @@
     },
     {
       "id": "chute-games-306",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Super Mario World\"?",
       "answer": 1990,
       "scale": 50,
@@ -2403,7 +2379,7 @@
     },
     {
       "id": "chute-games-307",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Super Mario Odyssey\"?",
       "answer": 2017,
       "scale": 50,
@@ -2411,7 +2387,7 @@
     },
     {
       "id": "chute-games-308",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Super Mario Galaxy\"?",
       "answer": 2007,
       "scale": 50,
@@ -2427,7 +2403,7 @@
     },
     {
       "id": "chute-games-310",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Animal Crossing: New Horizons\"?",
       "answer": 2020,
       "scale": 50,
@@ -2475,7 +2451,7 @@
     },
     {
       "id": "chute-games-316",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Age of Empires\", original?",
       "answer": 1997,
       "scale": 50,
@@ -2483,7 +2459,7 @@
     },
     {
       "id": "chute-games-317",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Diablo\", original?",
       "answer": 1996,
       "scale": 50,
@@ -2491,7 +2467,7 @@
     },
     {
       "id": "chute-games-318",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"StarCraft\", original?",
       "answer": 1998,
       "scale": 50,
@@ -2499,7 +2475,7 @@
     },
     {
       "id": "chute-games-319",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"World of Warcraft\", original?",
       "answer": 2004,
       "scale": 50,
@@ -2531,7 +2507,7 @@
     },
     {
       "id": "chute-games-323",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Half-Life 2\"?",
       "answer": 2004,
       "scale": 50,
@@ -2539,7 +2515,7 @@
     },
     {
       "id": "chute-games-325",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"BioShock\", original?",
       "answer": 2007,
       "scale": 50,
@@ -2579,7 +2555,7 @@
     },
     {
       "id": "chute-games-330",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Final Fantasy VII\", original?",
       "answer": 1997,
       "scale": 50,
@@ -2587,7 +2563,7 @@
     },
     {
       "id": "chute-games-331",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Kingdom Hearts\", original?",
       "answer": 2002,
       "scale": 50,
@@ -2595,7 +2571,7 @@
     },
     {
       "id": "chute-games-332",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Shadow of the Colossus\", original?",
       "answer": 2005,
       "scale": 50,
@@ -2627,7 +2603,7 @@
     },
     {
       "id": "chute-games-336",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Cuphead\"?",
       "answer": 2017,
       "scale": 50,
@@ -2635,7 +2611,7 @@
     },
     {
       "id": "chute-games-337",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Fall Guys\"?",
       "answer": 2020,
       "scale": 50,
@@ -2691,7 +2667,7 @@
     },
     {
       "id": "chute-games-345",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o \"FIFA\" trocou de nome para \"EA Sports FC\"?",
       "answer": 2023,
       "scale": 50,
@@ -2795,7 +2771,7 @@
     },
     {
       "id": "chute-games-358",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"Grand Theft Auto\", em milhões, aproximadamente?",
       "answer": 440,
       "unit": "milhões",
@@ -2915,7 +2891,7 @@
     },
     {
       "id": "chute-games-373",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Sekiro\"?",
       "answer": 2019,
       "scale": 50,
@@ -2923,7 +2899,7 @@
     },
     {
       "id": "chute-games-374",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Ghost of Tsushima\"?",
       "answer": 2020,
       "scale": 50,
@@ -2931,7 +2907,7 @@
     },
     {
       "id": "chute-games-375",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Death Stranding\"?",
       "answer": 2019,
       "scale": 50,
@@ -2947,7 +2923,7 @@
     },
     {
       "id": "chute-games-377",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano saiu \"Zelda: Tears of the Kingdom\"?",
       "answer": 2023,
       "scale": 50,
@@ -3043,7 +3019,7 @@
     },
     {
       "id": "chute-games-394",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos personagens tem \"Super Smash Bros. Ultimate\", no total?",
       "answer": 89,
       "unit": "personagens",
@@ -3051,7 +3027,7 @@
     },
     {
       "id": "chute-games-395",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas estrelas tem \"Super Mario Galaxy\"?",
       "answer": 121,
       "unit": "estrelas",
@@ -3083,19 +3059,11 @@
     },
     {
       "id": "chute-games-399",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Roblox fatura por ano, em bilhões de dólares, aproximadamente?",
       "answer": 3,
       "unit": "bilhões",
       "fact": "A plataforma é muito popular entre crianças."
-    },
-    {
-      "id": "chute-games-400",
-      "difficulty": "hard",
-      "text": "Quantas cópias o Game Boy vendeu, em milhões, somando o Color?",
-      "answer": 118,
-      "unit": "milhões",
-      "fact": "Ele era muito resistente."
     },
     {
       "id": "chute-games-401",
@@ -3163,7 +3131,7 @@
     },
     {
       "id": "chute-games-409",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bilhões de dólares em moedas Pac-Man arrecadou nos anos 1980, aproximadamente?",
       "answer": 1,
       "unit": "bilhão",
@@ -3179,7 +3147,7 @@
     },
     {
       "id": "chute-games-411",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos Pokémon cabiam no time principal do jogador?",
       "answer": 6,
       "unit": "Pokémon",

@@ -106,14 +106,6 @@
       "fact": "É o menor país do mundo; caberia mais de 100 vezes no Parque do Ibirapuera."
     },
     {
-      "id": "chute-geografia-14",
-      "difficulty": "medium",
-      "text": "Qual a temperatura mais baixa já registrada na Terra?",
-      "answer": -89.2,
-      "unit": "°C",
-      "fact": "Foi na estação russa de Vostok, na Antártica, em 1983."
-    },
-    {
       "id": "chute-geografia-15",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Indonésia?",
@@ -130,14 +122,6 @@
       "fact": "Lá a água ferve a cerca de 88 °C."
     },
     {
-      "id": "chute-geografia-17",
-      "difficulty": "hard",
-      "text": "Qual a área do Deserto do Saara?",
-      "answer": 9.2,
-      "unit": "milhões de km²",
-      "fact": "O Saara é maior que o Brasil."
-    },
-    {
       "id": "chute-geografia-18",
       "difficulty": "medium",
       "text": "Quantos países há na Europa?",
@@ -152,22 +136,6 @@
       "answer": 82,
       "unit": "km",
       "fact": "Um navio leva de 8 a 10 horas para atravessar o canal."
-    },
-    {
-      "id": "chute-geografia-20",
-      "difficulty": "medium",
-      "text": "Qual a altura da Garganta do Diabo, nas Cataratas do Iguaçu?",
-      "answer": 80,
-      "unit": "metros",
-      "fact": "As cataratas têm cerca de 275 quedas, na fronteira do Brasil com a Argentina."
-    },
-    {
-      "id": "chute-geografia-21",
-      "difficulty": "hard",
-      "text": "Quantos metros abaixo do nível do mar fica o Mar Morto?",
-      "answer": 430,
-      "unit": "metros",
-      "fact": "É o ponto mais baixo em terra firme, e o nível baixa cerca de 1 metro por ano."
     },
     {
       "id": "chute-geografia-22",
@@ -195,7 +163,7 @@
     },
     {
       "id": "chute-geografia-25",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Islândia?",
       "answer": 390,
       "unit": "mil",
@@ -395,7 +363,7 @@
     },
     {
       "id": "chute-geografia-50",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do Monte Fuji, em metros?",
       "answer": 3776,
       "unit": "metros",
@@ -451,7 +419,7 @@
     },
     {
       "id": "chute-geografia-60",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altura do Big Ben, em metros?",
       "answer": 96,
       "unit": "metros",
@@ -472,14 +440,6 @@
       "answer": 828,
       "unit": "metros",
       "fact": "Tem mais de 160 andares."
-    },
-    {
-      "id": "chute-geografia-63",
-      "difficulty": "medium",
-      "text": "Qual é o comprimento da Ponte Rio-Niterói, em km?",
-      "answer": 13,
-      "unit": "km",
-      "fact": "Ela foi inaugurada em 1974."
     },
     {
       "id": "chute-geografia-65",
@@ -648,14 +608,6 @@
       "answer": 8.5,
       "unit": "milhões",
       "fact": "É o quinto maior país do mundo."
-    },
-    {
-      "id": "chute-geografia-86",
-      "difficulty": "medium",
-      "text": "Qual é o tamanho da Rússia, em milhões de km²?",
-      "answer": 17,
-      "unit": "milhões",
-      "fact": "É o maior país do mundo."
     },
     {
       "id": "chute-geografia-87",
@@ -932,7 +884,7 @@
     },
     {
       "id": "chute-geografia-123",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude de Amsterdã, em relação ao nível do mar, em metros?",
       "answer": -2,
       "unit": "metros",
@@ -1004,7 +956,7 @@
     },
     {
       "id": "chute-geografia-133",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos canais tem Veneza, aproximadamente?",
       "answer": 150,
       "unit": "canais",
@@ -1012,7 +964,7 @@
     },
     {
       "id": "chute-geografia-134",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pontes tem Veneza, aproximadamente?",
       "answer": 400,
       "unit": "pontes",
@@ -1044,7 +996,7 @@
     },
     {
       "id": "chute-geografia-138",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude de Campos do Jordão, em metros?",
       "answer": 1628,
       "unit": "metros",
@@ -1052,7 +1004,7 @@
     },
     {
       "id": "chute-geografia-139",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude de Cusco, em metros?",
       "answer": 3399,
       "unit": "metros",
@@ -1060,7 +1012,7 @@
     },
     {
       "id": "chute-geografia-140",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude de Machu Picchu, em metros?",
       "answer": 2430,
       "unit": "metros",
@@ -1068,7 +1020,7 @@
     },
     {
       "id": "chute-geografia-141",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude de Bogotá, em metros?",
       "answer": 2640,
       "unit": "metros",
@@ -1076,7 +1028,7 @@
     },
     {
       "id": "chute-geografia-142",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude de Quito, em metros?",
       "answer": 2850,
       "unit": "metros",
@@ -1084,7 +1036,7 @@
     },
     {
       "id": "chute-geografia-143",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude da Cidade do México, em metros?",
       "answer": 2240,
       "unit": "metros",
@@ -1097,14 +1049,6 @@
       "answer": 3656,
       "unit": "metros",
       "fact": "É chamada de \"Teto do Mundo\"."
-    },
-    {
-      "id": "chute-geografia-145",
-      "difficulty": "medium",
-      "text": "Quantos habitantes tem a região metropolitana de São Paulo, em milhões?",
-      "answer": 21,
-      "unit": "milhões",
-      "fact": "É a maior região urbana do Hemisfério Sul."
     },
     {
       "id": "chute-geografia-146",
@@ -1140,7 +1084,7 @@
     },
     {
       "id": "chute-geografia-150",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Paris, sem contar a região metropolitana, em milhões?",
       "answer": 2.1,
       "unit": "milhões",
@@ -1148,7 +1092,7 @@
     },
     {
       "id": "chute-geografia-151",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Roma, em milhões?",
       "answer": 2.8,
       "unit": "milhões",
@@ -1156,7 +1100,7 @@
     },
     {
       "id": "chute-geografia-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Lisboa, em milhares?",
       "answer": 545,
       "unit": "mil",
@@ -1164,7 +1108,7 @@
     },
     {
       "id": "chute-geografia-153",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Buenos Aires, sem a região metropolitana, em milhões?",
       "answer": 3.1,
       "unit": "milhões",
@@ -1172,7 +1116,7 @@
     },
     {
       "id": "chute-geografia-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Montevidéu, em milhões?",
       "answer": 1.3,
       "unit": "milhão",
@@ -1188,7 +1132,7 @@
     },
     {
       "id": "chute-geografia-156",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem o Paraguai, em milhões?",
       "answer": 6.8,
       "unit": "milhões",
@@ -1204,7 +1148,7 @@
     },
     {
       "id": "chute-geografia-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Bolívia, em milhões?",
       "answer": 12,
       "unit": "milhões",
@@ -1212,7 +1156,7 @@
     },
     {
       "id": "chute-geografia-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem o Peru, em milhões?",
       "answer": 33,
       "unit": "milhões",
@@ -1228,7 +1172,7 @@
     },
     {
       "id": "chute-geografia-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Venezuela, em milhões?",
       "answer": 28,
       "unit": "milhões",
@@ -1268,7 +1212,7 @@
     },
     {
       "id": "chute-geografia-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas ovelhas tem a Nova Zelândia, em milhões, aproximadamente?",
       "answer": 26,
       "unit": "milhões",
@@ -1276,7 +1220,7 @@
     },
     {
       "id": "chute-geografia-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Nigéria, em milhões?",
       "answer": 223,
       "unit": "milhões",
@@ -1284,7 +1228,7 @@
     },
     {
       "id": "chute-geografia-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem o Egito, em milhões?",
       "answer": 110,
       "unit": "milhões",
@@ -1292,7 +1236,7 @@
     },
     {
       "id": "chute-geografia-169",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a África do Sul, em milhões?",
       "answer": 60,
       "unit": "milhões",
@@ -1300,7 +1244,7 @@
     },
     {
       "id": "chute-geografia-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Angola, em milhões?",
       "answer": 36,
       "unit": "milhões",
@@ -1308,7 +1252,7 @@
     },
     {
       "id": "chute-geografia-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Indonésia, em milhões?",
       "answer": 277,
       "unit": "milhões",
@@ -1316,7 +1260,7 @@
     },
     {
       "id": "chute-geografia-172",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem o Paquistão, em milhões?",
       "answer": 240,
       "unit": "milhões",
@@ -1324,7 +1268,7 @@
     },
     {
       "id": "chute-geografia-173",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Bangladesh, em milhões?",
       "answer": 172,
       "unit": "milhões",
@@ -1332,7 +1276,7 @@
     },
     {
       "id": "chute-geografia-174",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Turquia, em milhões?",
       "answer": 85,
       "unit": "milhões",
@@ -1340,7 +1284,7 @@
     },
     {
       "id": "chute-geografia-175",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem o Irã, em milhões?",
       "answer": 89,
       "unit": "milhões",
@@ -1380,7 +1324,7 @@
     },
     {
       "id": "chute-geografia-180",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem a Coreia do Sul, em milhões?",
       "answer": 52,
       "unit": "milhões",
@@ -1388,7 +1332,7 @@
     },
     {
       "id": "chute-geografia-181",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Singapura, em milhões?",
       "answer": 5.9,
       "unit": "milhões",
@@ -1404,7 +1348,7 @@
     },
     {
       "id": "chute-geografia-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Mônaco, em milhares?",
       "answer": 39,
       "unit": "mil",
@@ -1412,7 +1356,7 @@
     },
     {
       "id": "chute-geografia-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos habitantes tem Andorra, em milhares?",
       "answer": 80,
       "unit": "mil",
@@ -1420,7 +1364,7 @@
     },
     {
       "id": "chute-geografia-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a densidade populacional de Bangladesh, em pessoas por km²?",
       "answer": 1300,
       "unit": "hab/km²",
@@ -1428,7 +1372,7 @@
     },
     {
       "id": "chute-geografia-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a densidade populacional de Mônaco, em pessoas por km²?",
       "answer": 19000,
       "unit": "hab/km²",
@@ -1436,7 +1380,7 @@
     },
     {
       "id": "chute-geografia-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a densidade populacional do Brasil, em pessoas por km²?",
       "answer": 24,
       "unit": "hab/km²",
@@ -1444,7 +1388,7 @@
     },
     {
       "id": "chute-geografia-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a densidade populacional da Mongólia, em pessoas por km²?",
       "answer": 2,
       "unit": "hab/km²",
@@ -1468,7 +1412,7 @@
     },
     {
       "id": "chute-geografia-191",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a expectativa de vida em Mônaco, em anos, aproximadamente?",
       "answer": 87,
       "unit": "anos",
@@ -1500,7 +1444,7 @@
     },
     {
       "id": "chute-geografia-195",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Índia, em milhões de km²?",
       "answer": 3.3,
       "unit": "milhões",
@@ -1508,7 +1452,7 @@
     },
     {
       "id": "chute-geografia-196",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Argentina, em milhões de km²?",
       "answer": 2.8,
       "unit": "milhões",
@@ -1516,7 +1460,7 @@
     },
     {
       "id": "chute-geografia-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Argélia, em milhões de km²?",
       "answer": 2.4,
       "unit": "milhões",
@@ -1524,7 +1468,7 @@
     },
     {
       "id": "chute-geografia-198",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da França metropolitana, em km²?",
       "answer": 550000,
       "unit": "km²",
@@ -1532,7 +1476,7 @@
     },
     {
       "id": "chute-geografia-199",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Alemanha, em km²?",
       "answer": 358000,
       "unit": "km²",
@@ -1540,7 +1484,7 @@
     },
     {
       "id": "chute-geografia-200",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Japão, em km²?",
       "answer": 378000,
       "unit": "km²",
@@ -1548,7 +1492,7 @@
     },
     {
       "id": "chute-geografia-201",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Reino Unido, em km²?",
       "answer": 243000,
       "unit": "km²",
@@ -1556,7 +1500,7 @@
     },
     {
       "id": "chute-geografia-202",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Uruguai, em km²?",
       "answer": 176000,
       "unit": "km²",
@@ -1564,7 +1508,7 @@
     },
     {
       "id": "chute-geografia-203",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho de Israel, em km²?",
       "answer": 22000,
       "unit": "km²",
@@ -1572,7 +1516,7 @@
     },
     {
       "id": "chute-geografia-204",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Suíça, em km²?",
       "answer": 41000,
       "unit": "km²",
@@ -1580,7 +1524,7 @@
     },
     {
       "id": "chute-geografia-205",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho de Mônaco, em km²?",
       "answer": 2.02,
       "unit": "km²",
@@ -1588,7 +1532,7 @@
     },
     {
       "id": "chute-geografia-206",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho de Malta, em km²?",
       "answer": 316,
       "unit": "km²",
@@ -1596,7 +1540,7 @@
     },
     {
       "id": "chute-geografia-207",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Ilha de Marajó, em km²?",
       "answer": 40000,
       "unit": "km²",
@@ -1612,7 +1556,7 @@
     },
     {
       "id": "chute-geografia-209",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Ilha de Páscoa, em km²?",
       "answer": 163,
       "unit": "km²",
@@ -1620,7 +1564,7 @@
     },
     {
       "id": "chute-geografia-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do município de Altamira, em km²?",
       "answer": 159000,
       "unit": "km²",
@@ -1628,7 +1572,7 @@
     },
     {
       "id": "chute-geografia-211",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Distrito Federal, em km²?",
       "answer": 5760,
       "unit": "km²",
@@ -1636,7 +1580,7 @@
     },
     {
       "id": "chute-geografia-212",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho de Minas Gerais, em km²?",
       "answer": 586000,
       "unit": "km²",
@@ -1644,7 +1588,7 @@
     },
     {
       "id": "chute-geografia-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Rio de Janeiro, o estado, em km²?",
       "answer": 43700,
       "unit": "km²",
@@ -1652,7 +1596,7 @@
     },
     {
       "id": "chute-geografia-214",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do lago Vitória, em km²?",
       "answer": 68800,
       "unit": "km²",
@@ -1660,7 +1604,7 @@
     },
     {
       "id": "chute-geografia-215",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do lago Superior, em km²?",
       "answer": 82100,
       "unit": "km²",
@@ -1668,7 +1612,7 @@
     },
     {
       "id": "chute-geografia-216",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do mar Cáspio, em km²?",
       "answer": 371000,
       "unit": "km²",
@@ -1676,7 +1620,7 @@
     },
     {
       "id": "chute-geografia-217",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Oceano Pacífico, em milhões de km²?",
       "answer": 165,
       "unit": "milhões",
@@ -1684,7 +1628,7 @@
     },
     {
       "id": "chute-geografia-218",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Oceano Atlântico, em milhões de km²?",
       "answer": 106,
       "unit": "milhões",
@@ -1692,7 +1636,7 @@
     },
     {
       "id": "chute-geografia-219",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Oceano Índico, em milhões de km²?",
       "answer": 70,
       "unit": "milhões",
@@ -1700,7 +1644,7 @@
     },
     {
       "id": "chute-geografia-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho do Oceano Ártico, em milhões de km²?",
       "answer": 14,
       "unit": "milhões",
@@ -1708,7 +1652,7 @@
     },
     {
       "id": "chute-geografia-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a profundidade do Oceano Atlântico no ponto mais fundo, em metros?",
       "answer": 8376,
       "unit": "metros",
@@ -1716,7 +1660,7 @@
     },
     {
       "id": "chute-geografia-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento da fronteira entre EUA e Canadá, em km?",
       "answer": 8891,
       "unit": "km",
@@ -1724,7 +1668,7 @@
     },
     {
       "id": "chute-geografia-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento da fronteira entre EUA e México, em km?",
       "answer": 3145,
       "unit": "km",
@@ -1732,7 +1676,7 @@
     },
     {
       "id": "chute-geografia-224",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Transiberiano, entre Moscou e Vladivostok, em km?",
       "answer": 9289,
       "unit": "km",
@@ -1740,7 +1684,7 @@
     },
     {
       "id": "chute-geografia-225",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento da Estrada Pan-Americana, em km, aproximadamente?",
       "answer": 30000,
       "unit": "km",
@@ -1748,7 +1692,7 @@
     },
     {
       "id": "chute-geografia-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento da Rota 66, nos EUA, em km?",
       "answer": 3940,
       "unit": "km",
@@ -1772,7 +1716,7 @@
     },
     {
       "id": "chute-geografia-229",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Túnel de São Gotardo, em km?",
       "answer": 57,
       "unit": "km",
@@ -1780,7 +1724,7 @@
     },
     {
       "id": "chute-geografia-230",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento da ponte Hong Kong-Zhuhai-Macau, em km?",
       "answer": 55,
       "unit": "km",
@@ -1788,7 +1732,7 @@
     },
     {
       "id": "chute-geografia-231",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Mississippi, em km?",
       "answer": 3730,
       "unit": "km",
@@ -1796,7 +1740,7 @@
     },
     {
       "id": "chute-geografia-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Danúbio, em km?",
       "answer": 2850,
       "unit": "km",
@@ -1804,7 +1748,7 @@
     },
     {
       "id": "chute-geografia-233",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Volga, em km?",
       "answer": 3530,
       "unit": "km",
@@ -1812,7 +1756,7 @@
     },
     {
       "id": "chute-geografia-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Sena, em km?",
       "answer": 777,
       "unit": "km",
@@ -1820,7 +1764,7 @@
     },
     {
       "id": "chute-geografia-235",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Tâmisa, em km?",
       "answer": 346,
       "unit": "km",
@@ -1828,7 +1772,7 @@
     },
     {
       "id": "chute-geografia-236",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Tejo, em km?",
       "answer": 1007,
       "unit": "km",
@@ -1836,7 +1780,7 @@
     },
     {
       "id": "chute-geografia-237",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Ganges, em km?",
       "answer": 2525,
       "unit": "km",
@@ -1844,7 +1788,7 @@
     },
     {
       "id": "chute-geografia-238",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o comprimento do Rio Congo, em km?",
       "answer": 4700,
       "unit": "km",
@@ -1852,7 +1796,7 @@
     },
     {
       "id": "chute-geografia-239",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a profundidade do Rio Congo, em metros, no ponto mais fundo?",
       "answer": 220,
       "unit": "metros",
@@ -1860,7 +1804,7 @@
     },
     {
       "id": "chute-geografia-240",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a largura do rio Amazonas na foz, em km?",
       "answer": 300,
       "unit": "km",
@@ -1876,7 +1820,7 @@
     },
     {
       "id": "chute-geografia-242",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude do Mauna Kea acima do mar, em metros?",
       "answer": 4207,
       "unit": "metros",
@@ -1884,7 +1828,7 @@
     },
     {
       "id": "chute-geografia-243",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude do Monte Elbrus, em metros?",
       "answer": 5642,
       "unit": "metros",
@@ -1892,7 +1836,7 @@
     },
     {
       "id": "chute-geografia-244",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude do Denali, em metros?",
       "answer": 6190,
       "unit": "metros",
@@ -1900,7 +1844,7 @@
     },
     {
       "id": "chute-geografia-245",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude do Pico Duarte, o mais alto do Caribe, em metros?",
       "answer": 3101,
       "unit": "metros",
@@ -1940,7 +1884,7 @@
     },
     {
       "id": "chute-geografia-251",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que latitude fica a linha do Trópico de Capricórnio, aproximadamente?",
       "answer": -23.4,
       "unit": "graus",
@@ -1948,7 +1892,7 @@
     },
     {
       "id": "chute-geografia-252",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que latitude fica Porto Alegre, aproximadamente, em graus?",
       "answer": -30,
       "unit": "graus",
@@ -1956,7 +1900,7 @@
     },
     {
       "id": "chute-geografia-253",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que latitude fica Ushuaia, aproximadamente, em graus?",
       "answer": -54.8,
       "unit": "graus",
@@ -1964,7 +1908,7 @@
     },
     {
       "id": "chute-geografia-254",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que latitude fica Macapá, aproximadamente, em graus?",
       "answer": 0,
       "unit": "graus",
@@ -1973,7 +1917,7 @@
     },
     {
       "id": "chute-geografia-255",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que longitude fica o ponto mais a oeste do Brasil, em graus?",
       "answer": -73.9,
       "unit": "graus",
@@ -1990,7 +1934,7 @@
     },
     {
       "id": "chute-geografia-257",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude da cidade de Nova Orleans, em média, em metros?",
       "answer": -0.5,
       "unit": "metros",
@@ -1998,7 +1942,7 @@
     },
     {
       "id": "chute-geografia-258",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude da região de Turpan, na China, no ponto mais baixo, em metros?",
       "answer": -154,
       "unit": "metros",
@@ -2006,7 +1950,7 @@
     },
     {
       "id": "chute-geografia-259",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude do Lago Eyre, o ponto mais baixo da Austrália, em metros?",
       "answer": -15,
       "unit": "metros",
@@ -2014,7 +1958,7 @@
     },
     {
       "id": "chute-geografia-260",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude do ponto mais baixo da América do Sul, Laguna del Carbón, em metros?",
       "answer": -105,
       "unit": "metros",
@@ -2022,7 +1966,7 @@
     },
     {
       "id": "chute-geografia-261",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altitude da região da Depressão de Qattara, no Egito, em metros?",
       "answer": -133,
       "unit": "metros",
@@ -2030,7 +1974,7 @@
     },
     {
       "id": "chute-geografia-262",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a temperatura média em Oymyakon em janeiro, em °C?",
       "answer": -50,
       "unit": "°C",
@@ -2038,7 +1982,7 @@
     },
     {
       "id": "chute-geografia-263",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura máxima já registrada em Portugal, em °C?",
       "answer": 47.4,
       "unit": "°C",
@@ -2046,7 +1990,7 @@
     },
     {
       "id": "chute-geografia-264",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura máxima já registrada na Europa, em °C?",
       "answer": 48.8,
       "unit": "°C",
@@ -2069,14 +2013,6 @@
       "fact": "A temperatura vai de quase -68 °C a mais de 37 °C."
     },
     {
-      "id": "chute-geografia-267",
-      "difficulty": "hard",
-      "text": "Usando negativo para a.C., em que ano Roma foi fundada, segundo a tradição?",
-      "answer": -753,
-      "scale": 200,
-      "fact": "A lenda cita Rômulo e Remo."
-    },
-    {
       "id": "chute-geografia-268",
       "difficulty": "hard",
       "text": "Usando negativo para a.C., em que ano Cartago foi fundada, segundo a tradição?",
@@ -2091,14 +2027,6 @@
       "answer": -667,
       "scale": 200,
       "fact": "A cidade hoje se chama Istambul."
-    },
-    {
-      "id": "chute-geografia-270",
-      "difficulty": "hard",
-      "text": "Em que ano foi fundado o Rio de Janeiro?",
-      "answer": 1565,
-      "scale": 50,
-      "fact": "Estácio de Sá fundou a cidade entre o Pão de Açúcar e o Cara de Cão."
     },
     {
       "id": "chute-geografia-272",
@@ -2158,7 +2086,7 @@
     },
     {
       "id": "chute-geografia-279",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada Belo Horizonte?",
       "answer": 1897,
       "scale": 50,
@@ -2166,7 +2094,7 @@
     },
     {
       "id": "chute-geografia-280",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada Goiânia?",
       "answer": 1933,
       "scale": 50,
@@ -2174,7 +2102,7 @@
     },
     {
       "id": "chute-geografia-281",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada Palmas?",
       "answer": 1989,
       "scale": 50,
@@ -2254,7 +2182,7 @@
     },
     {
       "id": "chute-geografia-292",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi concluído o Empire State Building?",
       "answer": 1931,
       "scale": 50,
@@ -2262,7 +2190,7 @@
     },
     {
       "id": "chute-geografia-293",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Burj Khalifa?",
       "answer": 2010,
       "scale": 50,
@@ -2270,7 +2198,7 @@
     },
     {
       "id": "chute-geografia-294",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi inaugurada a Golden Gate?",
       "answer": 1937,
       "scale": 50,
@@ -2286,7 +2214,7 @@
     },
     {
       "id": "chute-geografia-296",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Eurotúnel?",
       "answer": 1994,
       "scale": 50,
@@ -2350,7 +2278,7 @@
     },
     {
       "id": "chute-geografia-306",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o Estado de Israel?",
       "answer": 1948,
       "scale": 50,
@@ -2366,7 +2294,7 @@
     },
     {
       "id": "chute-geografia-308",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi reunificada a Alemanha?",
       "answer": 1990,
       "scale": 50,
@@ -2411,14 +2339,6 @@
       "answer": 1973,
       "scale": 50,
       "fact": "Em 2016, o país decidiu sair da União Europeia."
-    },
-    {
-      "id": "chute-geografia-314",
-      "difficulty": "hard",
-      "text": "Em que ano o Brasil foi descoberto pelos portugueses?",
-      "answer": 1500,
-      "scale": 50,
-      "fact": "Pedro Álvares Cabral chegou em abril."
     },
     {
       "id": "chute-geografia-315",
@@ -2531,14 +2451,6 @@
       "answer": 7.9,
       "unit": "km",
       "fact": "A obra deslocou mais de 40 mil famílias."
-    },
-    {
-      "id": "chute-geografia-329",
-      "difficulty": "hard",
-      "text": "Quantos estados brasileiros têm litoral?",
-      "answer": 17,
-      "unit": "estados",
-      "fact": "O Piauí tem o menor deles."
     },
     {
       "id": "chute-geografia-330",
@@ -2838,7 +2750,7 @@
     },
     {
       "id": "chute-geografia-368",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos degraus tem a Escadaria Selarón, no Rio?",
       "answer": 215,
       "unit": "degraus",
@@ -2990,7 +2902,7 @@
     },
     {
       "id": "chute-geografia-387",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas províncias e territórios tem o Canadá?",
       "answer": 13,
       "unit": "divisões",
@@ -3021,38 +2933,13 @@
       "fact": "São azul, branco e vermelho."
     },
     {
-      "id": "chute-geografia-392",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Aconcágua, em metros, aproximadamente?",
-      "answer": 6961,
-      "unit": "metros",
-      "fact": "É a montanha mais alta das Américas."
-    },
-    {
-      "id": "chute-geografia-393",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Mar da Galileia, em metros, aproximadamente?",
-      "answer": -210,
-      "unit": "metros",
-      "scale": 30,
-      "fact": "Ele é um dos lagos mais baixos do mundo."
-    },
-    {
       "id": "chute-geografia-394",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude da Depressão de Danakil, na Etiópia, em metros, aproximadamente?",
       "answer": -125,
       "unit": "metros",
       "scale": 30,
       "fact": "É uma das regiões mais quentes do planeta."
-    },
-    {
-      "id": "chute-geografia-397",
-      "difficulty": "medium",
-      "text": "Qual é a área da Rússia, em milhões de km², aproximadamente?",
-      "answer": 17,
-      "unit": "milhões",
-      "fact": "Ela é quase o dobro do Brasil."
     },
     {
       "id": "chute-geografia-399",
@@ -3069,14 +2956,6 @@
       "answer": 1.44,
       "unit": "bilhão",
       "fact": "Ela é o país mais populoso do mundo."
-    },
-    {
-      "id": "chute-geografia-403",
-      "difficulty": "hard",
-      "text": "Qual é a área de Mônaco, em km²?",
-      "answer": 2.1,
-      "unit": "km²",
-      "fact": "Ele é o segundo menor país do mundo."
     },
     {
       "id": "chute-geografia-404",
@@ -3138,7 +3017,7 @@
     },
     {
       "id": "chute-geografia-414",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos milímetros de chuva por ano recebe um deserto, em média, no máximo?",
       "answer": 250,
       "unit": "mm",

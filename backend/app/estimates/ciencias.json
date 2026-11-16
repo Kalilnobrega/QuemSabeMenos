@@ -73,14 +73,6 @@
       "fact": "São 23 pares: um conjunto vem da mãe e outro do pai."
     },
     {
-      "id": "chute-ciencias-10",
-      "difficulty": "medium",
-      "text": "Quantos minutos a luz do Sol leva para chegar à Terra?",
-      "answer": 8.3,
-      "unit": "minutos",
-      "fact": "São cerca de 8 minutos e 20 segundos."
-    },
-    {
       "id": "chute-ciencias-11",
       "difficulty": "easy",
       "text": "Qual a temperatura do zero absoluto, em Celsius?",
@@ -130,7 +122,7 @@
     },
     {
       "id": "chute-ciencias-17",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o Brasil adotou o horário de verão pela primeira vez?",
       "answer": 1931,
       "scale": 50,
@@ -161,7 +153,7 @@
     },
     {
       "id": "chute-ciencias-21",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o peso do maior meteorito do mundo, o Hoba, em toneladas?",
       "answer": 60,
       "unit": "toneladas",
@@ -214,14 +206,6 @@
       "answer": 1928,
       "scale": 50,
       "fact": "Ele notou que um fungo tinha matado as bactérias de uma placa esquecida no laboratório."
-    },
-    {
-      "id": "chute-ciencias-28",
-      "difficulty": "hard",
-      "text": "Qual a velocidade da Terra na órbita em volta do Sol?",
-      "answer": 30,
-      "unit": "km/s",
-      "fact": "São mais de 100 mil km/h, e mesmo assim não sentimos nada."
     },
     {
       "id": "chute-ciencias-29",
@@ -449,14 +433,6 @@
       "fact": "A primeira imagem foi da mão da esposa dele."
     },
     {
-      "id": "chute-ciencias-58",
-      "difficulty": "medium",
-      "text": "Em que ano a penicilina foi descoberta?",
-      "answer": 1928,
-      "scale": 50,
-      "fact": "Fleming esqueceu uma placa de cultura ao sair de férias."
-    },
-    {
       "id": "chute-ciencias-59",
       "difficulty": "medium",
       "text": "Em que ano foi publicada a teoria da relatividade geral?",
@@ -506,7 +482,7 @@
     },
     {
       "id": "chute-ciencias-66",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Plutão foi descoberto?",
       "answer": 1930,
       "scale": 50,
@@ -554,7 +530,7 @@
     },
     {
       "id": "chute-ciencias-72",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Isaac Newton?",
       "answer": 1643,
       "scale": 50,
@@ -562,7 +538,7 @@
     },
     {
       "id": "chute-ciencias-73",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Marie Curie?",
       "answer": 1867,
       "scale": 50,
@@ -1115,24 +1091,8 @@
       "fact": "É o objeto mais distante visível a olho nu."
     },
     {
-      "id": "chute-ciencias-143",
-      "difficulty": "medium",
-      "text": "Qual é a velocidade da luz em metros por segundo, valor exato?",
-      "answer": 299792458,
-      "unit": "m/s",
-      "fact": "Esse número é exato por definição desde 1983."
-    },
-    {
-      "id": "chute-ciencias-144",
-      "difficulty": "medium",
-      "text": "Qual a distância da Terra até o Sol, em km?",
-      "answer": 149600000,
-      "unit": "km",
-      "fact": "É a chamada unidade astronômica."
-    },
-    {
       "id": "chute-ciencias-145",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a distância média da Terra até Marte, em km?",
       "answer": 225000000,
       "unit": "km",
@@ -1140,7 +1100,7 @@
     },
     {
       "id": "chute-ciencias-146",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a distância média do Sol até Netuno, em km?",
       "answer": 4500000000,
       "unit": "km",
@@ -1148,7 +1108,7 @@
     },
     {
       "id": "chute-ciencias-147",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a distância da Voyager 1 até a Terra em 2024, em bilhões de km?",
       "answer": 24.5,
       "unit": "bilhões",
@@ -1204,7 +1164,7 @@
     },
     {
       "id": "chute-ciencias-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a massa do Sol, em relação à Terra, em vezes?",
       "answer": 333000,
       "unit": "vezes",
@@ -1244,7 +1204,7 @@
     },
     {
       "id": "chute-ciencias-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade de escape da Terra, em km/h?",
       "answer": 40320,
       "unit": "km/h",
@@ -1252,7 +1212,7 @@
     },
     {
       "id": "chute-ciencias-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade de escape do Sol, em km/s?",
       "answer": 618,
       "unit": "km/s",
@@ -1268,7 +1228,7 @@
     },
     {
       "id": "chute-ciencias-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade da Terra ao redor do Sol, em km/h?",
       "answer": 107000,
       "unit": "km/h",
@@ -1316,7 +1276,7 @@
     },
     {
       "id": "chute-ciencias-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do ferro?",
       "answer": 26,
       "unit": "número",
@@ -1324,7 +1284,7 @@
     },
     {
       "id": "chute-ciencias-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico da prata?",
       "answer": 47,
       "unit": "número",
@@ -1332,7 +1292,7 @@
     },
     {
       "id": "chute-ciencias-172",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do cobre?",
       "answer": 29,
       "unit": "número",
@@ -1340,7 +1300,7 @@
     },
     {
       "id": "chute-ciencias-173",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do sódio?",
       "answer": 11,
       "unit": "número",
@@ -1348,7 +1308,7 @@
     },
     {
       "id": "chute-ciencias-174",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do mercúrio?",
       "answer": 80,
       "unit": "número",
@@ -1356,7 +1316,7 @@
     },
     {
       "id": "chute-ciencias-175",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do chumbo?",
       "answer": 82,
       "unit": "número",
@@ -1364,7 +1324,7 @@
     },
     {
       "id": "chute-ciencias-176",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do polônio?",
       "answer": 84,
       "unit": "número",
@@ -1372,7 +1332,7 @@
     },
     {
       "id": "chute-ciencias-177",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o número atômico do rádio?",
       "answer": 88,
       "unit": "número",
@@ -1420,7 +1380,7 @@
     },
     {
       "id": "chute-ciencias-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km mede o maior acelerador de partículas do mundo?",
       "answer": 27,
       "unit": "km",
@@ -1428,7 +1388,7 @@
     },
     {
       "id": "chute-ciencias-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o tempo de queda de Felix Baumgartner do espaço, em segundos?",
       "answer": 259,
       "unit": "segundos",
@@ -1444,7 +1404,7 @@
     },
     {
       "id": "chute-ciencias-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a velocidade do som na água, em m/s?",
       "answer": 1480,
       "unit": "m/s",
@@ -1452,7 +1412,7 @@
     },
     {
       "id": "chute-ciencias-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a velocidade do som no aço, em m/s?",
       "answer": 5100,
       "unit": "m/s",
@@ -1484,7 +1444,7 @@
     },
     {
       "id": "chute-ciencias-191",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos nanômetros tem o comprimento de onda da luz vermelha, aproximadamente?",
       "answer": 700,
       "unit": "nm",
@@ -1492,7 +1452,7 @@
     },
     {
       "id": "chute-ciencias-192",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos nanômetros tem o comprimento de onda da luz violeta, aproximadamente?",
       "answer": 400,
       "unit": "nm",
@@ -1516,7 +1476,7 @@
     },
     {
       "id": "chute-ciencias-195",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o peso do cérebro de Einstein, em gramas?",
       "answer": 1230,
       "unit": "gramas",
@@ -1524,7 +1484,7 @@
     },
     {
       "id": "chute-ciencias-196",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos neurônios tem o cérebro humano, aproximadamente?",
       "answer": 86000000000,
       "unit": "neurônios",
@@ -1532,7 +1492,7 @@
     },
     {
       "id": "chute-ciencias-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias vive um glóbulo vermelho?",
       "answer": 120,
       "unit": "dias",
@@ -1540,7 +1500,7 @@
     },
     {
       "id": "chute-ciencias-198",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos litros de ar um adulto respira por dia, aproximadamente?",
       "answer": 11000,
       "unit": "litros",
@@ -1556,7 +1516,7 @@
     },
     {
       "id": "chute-ciencias-200",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km de vasos sanguíneos tem um adulto, aproximadamente?",
       "answer": 100000,
       "unit": "km",
@@ -1564,7 +1524,7 @@
     },
     {
       "id": "chute-ciencias-201",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem o DNA de uma única célula, se esticado?",
       "answer": 2,
       "unit": "metros",
@@ -1580,7 +1540,7 @@
     },
     {
       "id": "chute-ciencias-203",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pares de bases tem o genoma humano, aproximadamente?",
       "answer": 3200000000,
       "unit": "pares",
@@ -1595,16 +1555,8 @@
       "fact": "Quase um quarto dos ossos do corpo está nos pés."
     },
     {
-      "id": "chute-ciencias-205",
-      "difficulty": "medium",
-      "text": "Quantos ossos tem a coluna adulta, contando sacro e cóccix como um só?",
-      "answer": 26,
-      "unit": "ossos",
-      "fact": "Quando criança, são 33 vértebras separadas."
-    },
-    {
       "id": "chute-ciencias-206",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pares de nervos tem a medula espinhal?",
       "answer": 31,
       "unit": "pares",
@@ -1612,7 +1564,7 @@
     },
     {
       "id": "chute-ciencias-207",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pares de nervos cranianos tem o corpo?",
       "answer": 12,
       "unit": "pares",
@@ -1636,7 +1588,7 @@
     },
     {
       "id": "chute-ciencias-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos poros tem a pele humana, aproximadamente?",
       "answer": 5000000,
       "unit": "poros",
@@ -1660,7 +1612,7 @@
     },
     {
       "id": "chute-ciencias-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos m² de superfície têm os pulmões de um adulto, aproximadamente?",
       "answer": 70,
       "unit": "m²",
@@ -1668,7 +1620,7 @@
     },
     {
       "id": "chute-ciencias-214",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos alvéolos têm os dois pulmões de um adulto, aproximadamente?",
       "answer": 480000000,
       "unit": "alvéolos",
@@ -1676,7 +1628,7 @@
     },
     {
       "id": "chute-ciencias-215",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanta energia um ser humano adulto produz em repouso, em watts?",
       "answer": 100,
       "unit": "watts",
@@ -1724,7 +1676,7 @@
     },
     {
       "id": "chute-ciencias-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o recorde de apneia voluntária com oxigênio, em minutos?",
       "answer": 24,
       "unit": "minutos",
@@ -1772,7 +1724,7 @@
     },
     {
       "id": "chute-ciencias-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas doses de vacina de Covid foram aplicadas no mundo, em bilhões?",
       "answer": 13.5,
       "unit": "bilhões",
@@ -1820,7 +1772,7 @@
     },
     {
       "id": "chute-ciencias-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas Terras caberiam em uma fila de um lado ao outro de Saturno, sem os anéis?",
       "answer": 9,
       "unit": "Terras",
@@ -1828,7 +1780,7 @@
     },
     {
       "id": "chute-ciencias-235",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km de largura têm os anéis de Saturno?",
       "answer": 282000,
       "unit": "km",
@@ -1836,7 +1788,7 @@
     },
     {
       "id": "chute-ciencias-236",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade do vento mais rápido do Sistema Solar, em Netuno, em km/h?",
       "answer": 2100,
       "unit": "km/h",
@@ -1844,7 +1796,7 @@
     },
     {
       "id": "chute-ciencias-237",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a pressão atmosférica na superfície de Vênus, em vezes a da Terra?",
       "answer": 92,
       "unit": "vezes",
@@ -1852,7 +1804,7 @@
     },
     {
       "id": "chute-ciencias-238",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é o tamanho da Grande Mancha Vermelha de Júpiter, em km?",
       "answer": 16000,
       "unit": "km",
@@ -1860,7 +1812,7 @@
     },
     {
       "id": "chute-ciencias-239",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altura do Monte Olimpo, em Marte, em km?",
       "answer": 22,
       "unit": "km",
@@ -1868,7 +1820,7 @@
     },
     {
       "id": "chute-ciencias-240",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o comprimento do Valles Marineris, em Marte, em km?",
       "answer": 4000,
       "unit": "km",
@@ -1876,7 +1828,7 @@
     },
     {
       "id": "chute-ciencias-241",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas luas tem Júpiter, aproximadamente, em 2023?",
       "answer": 95,
       "unit": "luas",
@@ -1884,7 +1836,7 @@
     },
     {
       "id": "chute-ciencias-242",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas luas tem Saturno, aproximadamente, em 2025?",
       "answer": 274,
       "unit": "luas",
@@ -1892,7 +1844,7 @@
     },
     {
       "id": "chute-ciencias-243",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas luas tem Urano?",
       "answer": 29,
       "unit": "luas",
@@ -1900,7 +1852,7 @@
     },
     {
       "id": "chute-ciencias-244",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas luas tem Netuno?",
       "answer": 16,
       "unit": "luas",
@@ -1916,7 +1868,7 @@
     },
     {
       "id": "chute-ciencias-246",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cm a Lua se afasta da Terra por ano?",
       "answer": 3.8,
       "unit": "cm",
@@ -1924,7 +1876,7 @@
     },
     {
       "id": "chute-ciencias-247",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em quantos segundos a luz da Lua chega à Terra?",
       "answer": 1.3,
       "unit": "segundos",
@@ -1932,7 +1884,7 @@
     },
     {
       "id": "chute-ciencias-248",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em quantos minutos a luz do Sol chega a Júpiter?",
       "answer": 43,
       "unit": "minutos",
@@ -1940,7 +1892,7 @@
     },
     {
       "id": "chute-ciencias-249",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em quantas horas a luz do Sol chega a Plutão?",
       "answer": 5.5,
       "unit": "horas",
@@ -1948,7 +1900,7 @@
     },
     {
       "id": "chute-ciencias-250",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas estrelas dá para ver a olho nu, em uma noite escura?",
       "answer": 3000,
       "unit": "estrelas",
@@ -1980,7 +1932,7 @@
     },
     {
       "id": "chute-ciencias-254",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a temperatura mais fria medida na Lua, em °C?",
       "answer": -247,
       "unit": "°C",
@@ -1988,7 +1940,7 @@
     },
     {
       "id": "chute-ciencias-255",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura média do espaço profundo, em °C?",
       "answer": -270,
       "unit": "°C",
@@ -2308,7 +2260,7 @@
     },
     {
       "id": "chute-ciencias-295",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o SUS?",
       "answer": 1988,
       "scale": 50,
@@ -2548,7 +2500,7 @@
     },
     {
       "id": "chute-ciencias-326",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Qual é a altitude do limite do espaço, segundo a linha de Kármán, em km?",
       "answer": 100,
       "unit": "km",
@@ -2579,14 +2531,6 @@
       "fact": "Ela absorve a maior parte dos raios UV."
     },
     {
-      "id": "chute-ciencias-330",
-      "difficulty": "hard",
-      "text": "Qual a temperatura em Vostok no recorde de 1983, em °C?",
-      "answer": -89.2,
-      "unit": "°C",
-      "fact": "Ela é a menor temperatura medida no solo."
-    },
-    {
       "id": "chute-ciencias-331",
       "difficulty": "hard",
       "text": "Qual a pressão no fundo da Fossa das Marianas, em vezes a do nível do mar?",
@@ -2612,7 +2556,7 @@
     },
     {
       "id": "chute-ciencias-334",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual a altura do meteoro de Tunguska quando explodiu, em km, aproximadamente?",
       "answer": 8,
       "unit": "km",
@@ -2620,7 +2564,7 @@
     },
     {
       "id": "chute-ciencias-335",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas árvores o meteoro de Tunguska derrubou, em milhões?",
       "answer": 80,
       "unit": "milhões",
@@ -2628,7 +2572,7 @@
     },
     {
       "id": "chute-ciencias-336",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano caiu o meteoro de Tunguska?",
       "answer": 1908,
       "scale": 50,
@@ -2644,7 +2588,7 @@
     },
     {
       "id": "chute-ciencias-338",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km de diâmetro tem o asteroide Ceres, aproximadamente?",
       "answer": 940,
       "unit": "km",
@@ -2660,7 +2604,7 @@
     },
     {
       "id": "chute-ciencias-340",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos-luz Sirius está da Terra, em km, em trilhões?",
       "answer": 81,
       "unit": "trilhões",
@@ -2668,7 +2612,7 @@
     },
     {
       "id": "chute-ciencias-341",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos kg pesa o maior meteorito brasileiro, o Bendegó?",
       "answer": 5360,
       "unit": "kg",
@@ -2721,14 +2665,6 @@
       "answer": 100000,
       "unit": "anos",
       "fact": "Depois, leva só 8 minutos até chegar à Terra."
-    },
-    {
-      "id": "chute-ciencias-348",
-      "difficulty": "hard",
-      "text": "Qual a temperatura do núcleo do Sol, em °C?",
-      "answer": 15000000,
-      "unit": "°C",
-      "fact": "A pressão lá é enorme."
     },
     {
       "id": "chute-ciencias-349",
@@ -2924,7 +2860,7 @@
     },
     {
       "id": "chute-ciencias-373",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos meses dura uma viagem da Terra até Marte, em média?",
       "answer": 7,
       "unit": "meses",
@@ -3035,95 +2971,13 @@
       "fact": "O valor varia com idade e sexo."
     },
     {
-      "id": "chute-ciencias-390",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura média da superfície de Marte, em °C, aproximadamente?",
-      "answer": -60,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "No verão do equador, ela pode passar de zero."
-    },
-    {
-      "id": "chute-ciencias-391",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura média da superfície de Vênus, em °C, aproximadamente?",
-      "answer": 465,
-      "unit": "°C",
-      "fact": "Ele é mais quente que Mercúrio."
-    },
-    {
       "id": "chute-ciencias-392",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura média de Plutão, em °C, aproximadamente?",
       "answer": -230,
       "unit": "°C",
       "scale": 30,
       "fact": "A sonda New Horizons o visitou em 2015."
-    },
-    {
-      "id": "chute-ciencias-393",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura média da Lua à noite, em °C, aproximadamente?",
-      "answer": -173,
-      "unit": "°C",
-      "scale": 30,
-      "fact": "De dia, ela pode passar de 100 °C."
-    },
-    {
-      "id": "chute-ciencias-395",
-      "difficulty": "medium",
-      "text": "Qual é a distância entre a Terra e o Sol, em milhões de km, aproximadamente?",
-      "answer": 150,
-      "unit": "milhões",
-      "fact": "Essa medida é chamada de unidade astronômica."
-    },
-    {
-      "id": "chute-ciencias-396",
-      "difficulty": "medium",
-      "text": "Qual é a distância média entre a Terra e a Lua, em mil km, aproximadamente?",
-      "answer": 384,
-      "unit": "mil",
-      "fact": "A Lua se afasta quase 4 cm por ano."
-    },
-    {
-      "id": "chute-ciencias-397",
-      "difficulty": "medium",
-      "text": "Qual é a velocidade da luz, em km/s, aproximadamente?",
-      "answer": 300000,
-      "unit": "km/s",
-      "fact": "Nada com massa pode alcançá-la."
-    },
-    {
-      "id": "chute-ciencias-398",
-      "difficulty": "medium",
-      "text": "Quantos anos a luz do Sol leva para chegar a Alfa Centauri, em anos?",
-      "answer": 4.3,
-      "unit": "anos",
-      "fact": "É o sistema estelar mais próximo do Sol."
-    },
-    {
-      "id": "chute-ciencias-399",
-      "difficulty": "medium",
-      "text": "Qual é o diâmetro da Terra no equador, em km, aproximadamente?",
-      "answer": 12756,
-      "unit": "km",
-      "fact": "O planeta é levemente achatado nos polos."
-    },
-    {
-      "id": "chute-ciencias-400",
-      "difficulty": "medium",
-      "text": "Qual é a circunferência da Terra no equador, em km, aproximadamente?",
-      "answer": 40075,
-      "unit": "km",
-      "fact": "Eratóstenes calculou o valor no século III a.C."
-    },
-    {
-      "id": "chute-ciencias-401",
-      "difficulty": "hard",
-      "text": "Quantos anos-luz tem o diâmetro da Via Láctea, em milhares, aproximadamente?",
-      "answer": 100,
-      "unit": "mil",
-      "fact": "Ela tem centenas de bilhões de estrelas."
     },
     {
       "id": "chute-ciencias-402",
@@ -3142,47 +2996,12 @@
       "fact": "Alguns estudos sugerem um número bem maior."
     },
     {
-      "id": "chute-ciencias-404",
-      "difficulty": "hard",
-      "text": "Qual é a idade do Sistema Solar, em bilhões de anos, aproximadamente?",
-      "answer": 4.6,
-      "unit": "bilhões",
-      "fact": "Ele nasceu de uma nuvem de gás e poeira."
-    },
-    {
       "id": "chute-ciencias-405",
       "difficulty": "hard",
       "text": "Qual é a temperatura do núcleo do Sol, em milhões de °C, aproximadamente?",
       "answer": 15,
       "unit": "milhões",
       "fact": "Lá acontece a fusão nuclear."
-    },
-    {
-      "id": "chute-ciencias-406",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura de fundo do Universo, em °C, aproximadamente?",
-      "answer": -270,
-      "unit": "°C",
-      "scale": 30,
-      "fact": "Ela é um resquício do Big Bang."
-    },
-    {
-      "id": "chute-ciencias-407",
-      "difficulty": "hard",
-      "text": "Qual é o ponto de fusão do mercúrio, em °C?",
-      "answer": -39,
-      "unit": "°C",
-      "scale": 10,
-      "fact": "Por isso ele é líquido no ambiente."
-    },
-    {
-      "id": "chute-ciencias-408",
-      "difficulty": "hard",
-      "text": "Qual é o ponto de ebulição do hélio, em °C, aproximadamente?",
-      "answer": -269,
-      "unit": "°C",
-      "scale": 30,
-      "fact": "Ele é o elemento mais difícil de condensar."
     },
     {
       "id": "chute-ciencias-410",

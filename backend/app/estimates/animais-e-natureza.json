@@ -570,14 +570,6 @@
       "fact": "É o ponto mais baixo em terra firme."
     },
     {
-      "id": "chute-animais-e-natureza-74",
-      "difficulty": "medium",
-      "text": "A que altitude fica o fundo da Fossa das Marianas, em relação ao nível do mar?",
-      "answer": -10935,
-      "unit": "metros",
-      "fact": "É o ponto mais fundo dos oceanos, no Pacífico."
-    },
-    {
       "id": "chute-animais-e-natureza-76",
       "difficulty": "easy",
       "text": "Qual é a altura do Everest em metros?",
@@ -867,7 +859,7 @@
     },
     {
       "id": "chute-animais-e-natureza-113",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criado o Projeto Tamar?",
       "answer": 1980,
       "scale": 50,
@@ -875,7 +867,7 @@
     },
     {
       "id": "chute-animais-e-natureza-114",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criado o Parque Nacional de Yellowstone?",
       "answer": 1872,
       "scale": 50,
@@ -883,7 +875,7 @@
     },
     {
       "id": "chute-animais-e-natureza-115",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi criado o Parque Nacional do Iguaçu?",
       "answer": 1939,
       "scale": 50,
@@ -891,7 +883,7 @@
     },
     {
       "id": "chute-animais-e-natureza-116",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Instituto Butantan?",
       "answer": 1901,
       "scale": 50,
@@ -899,7 +891,7 @@
     },
     {
       "id": "chute-animais-e-natureza-117",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o último tigre-de-java foi visto?",
       "answer": 1976,
       "scale": 50,
@@ -923,7 +915,7 @@
     },
     {
       "id": "chute-animais-e-natureza-121",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o chimpanzé Ham foi ao espaço?",
       "answer": 1961,
       "scale": 50,
@@ -931,7 +923,7 @@
     },
     {
       "id": "chute-animais-e-natureza-122",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o vulcão Krakatoa explodiu?",
       "answer": 1883,
       "scale": 50,
@@ -939,7 +931,7 @@
     },
     {
       "id": "chute-animais-e-natureza-123",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano o vulcão Tambora explodiu?",
       "answer": 1815,
       "scale": 50,
@@ -1019,7 +1011,7 @@
     },
     {
       "id": "chute-animais-e-natureza-133",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias, em média, um filhote de canguru leva para sair da bolsa, depois de nascer?",
       "answer": 235,
       "unit": "dias",
@@ -1075,7 +1067,7 @@
     },
     {
       "id": "chute-animais-e-natureza-140",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto tempo uma preguiça consegue prender a respiração, em minutos?",
       "answer": 40,
       "unit": "minutos",
@@ -1083,7 +1075,7 @@
     },
     {
       "id": "chute-animais-e-natureza-141",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto tempo uma tartaruga-marinha consegue ficar debaixo d'água, em horas, dormindo?",
       "answer": 7,
       "unit": "horas",
@@ -1091,7 +1083,7 @@
     },
     {
       "id": "chute-animais-e-natureza-142",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto tempo o crocodilo fica sem comer, se preciso, em meses?",
       "answer": 12,
       "unit": "meses",
@@ -1123,7 +1115,7 @@
     },
     {
       "id": "chute-animais-e-natureza-146",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gnus participam da grande migração, aproximadamente?",
       "answer": 1500000,
       "unit": "gnus",
@@ -1131,7 +1123,7 @@
     },
     {
       "id": "chute-animais-e-natureza-147",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos leões selvagens existem hoje na África, aproximadamente?",
       "answer": 23000,
       "unit": "leões",
@@ -1139,7 +1131,7 @@
     },
     {
       "id": "chute-animais-e-natureza-148",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos tigres selvagens existem no mundo, aproximadamente?",
       "answer": 5500,
       "unit": "tigres",
@@ -1147,7 +1139,7 @@
     },
     {
       "id": "chute-animais-e-natureza-149",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos elefantes-africanos existem, aproximadamente?",
       "answer": 415000,
       "unit": "elefantes",
@@ -1155,7 +1147,7 @@
     },
     {
       "id": "chute-animais-e-natureza-150",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos pandas-gigantes selvagens existem, aproximadamente?",
       "answer": 1900,
       "unit": "pandas",
@@ -1163,7 +1155,7 @@
     },
     {
       "id": "chute-animais-e-natureza-151",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos orangotangos vivem na natureza, aproximadamente?",
       "answer": 120000,
       "unit": "orangotangos",
@@ -1171,7 +1163,7 @@
     },
     {
       "id": "chute-animais-e-natureza-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos gorilas-das-montanhas vivem na natureza, aproximadamente?",
       "answer": 1000,
       "unit": "gorilas",
@@ -1179,7 +1171,7 @@
     },
     {
       "id": "chute-animais-e-natureza-153",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos micos-leões-dourados vivem na natureza, aproximadamente?",
       "answer": 4800,
       "unit": "micos",
@@ -1187,7 +1179,7 @@
     },
     {
       "id": "chute-animais-e-natureza-154",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas ararinhas-azuis existem no mundo, aproximadamente?",
       "answer": 200,
       "unit": "ararinhas",
@@ -1203,7 +1195,7 @@
     },
     {
       "id": "chute-animais-e-natureza-156",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de teia uma aranha pode produzir em um dia, aproximadamente?",
       "answer": 20,
       "unit": "metros",
@@ -1211,7 +1203,7 @@
     },
     {
       "id": "chute-animais-e-natureza-157",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de seda pode produzir um único casulo de bicho-da-seda?",
       "answer": 1000,
       "unit": "metros",
@@ -1219,7 +1211,7 @@
     },
     {
       "id": "chute-animais-e-natureza-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos milhões de espécies vivem na Terra, segundo uma das estimativas mais aceitas?",
       "answer": 8.7,
       "unit": "milhões",
@@ -1227,7 +1219,7 @@
     },
     {
       "id": "chute-animais-e-natureza-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de insetos já foram descritas, aproximadamente?",
       "answer": 1000000,
       "unit": "espécies",
@@ -1235,7 +1227,7 @@
     },
     {
       "id": "chute-animais-e-natureza-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de peixes foram descritas, aproximadamente?",
       "answer": 34000,
       "unit": "espécies",
@@ -1243,7 +1235,7 @@
     },
     {
       "id": "chute-animais-e-natureza-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de peixes vivem na bacia amazônica, aproximadamente?",
       "answer": 2700,
       "unit": "espécies",
@@ -1251,7 +1243,7 @@
     },
     {
       "id": "chute-animais-e-natureza-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de anfíbios existem no Brasil, aproximadamente?",
       "answer": 1200,
       "unit": "espécies",
@@ -1259,7 +1251,7 @@
     },
     {
       "id": "chute-animais-e-natureza-163",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de plantas tem o Brasil, aproximadamente?",
       "answer": 46000,
       "unit": "espécies",
@@ -1267,7 +1259,7 @@
     },
     {
       "id": "chute-animais-e-natureza-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de árvores há na Amazônia, aproximadamente?",
       "answer": 16000,
       "unit": "espécies",
@@ -1275,7 +1267,7 @@
     },
     {
       "id": "chute-animais-e-natureza-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas árvores há por habitante no mundo, aproximadamente?",
       "answer": 400,
       "unit": "árvores",
@@ -1283,7 +1275,7 @@
     },
     {
       "id": "chute-animais-e-natureza-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos litros de água uma árvore grande da Amazônia pode lançar no ar por dia?",
       "answer": 1000,
       "unit": "litros",
@@ -1291,7 +1283,7 @@
     },
     {
       "id": "chute-animais-e-natureza-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bilhões de toneladas de água a Amazônia lança no ar por dia?",
       "answer": 20,
       "unit": "bilhões",
@@ -1299,7 +1291,7 @@
     },
     {
       "id": "chute-animais-e-natureza-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros cúbicos por segundo tem o rio Amazonas na foz, em média?",
       "answer": 209000,
       "unit": "m³/s",
@@ -1363,7 +1355,7 @@
     },
     {
       "id": "chute-animais-e-natureza-177",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a espessura média do gelo da Antártida, em metros?",
       "answer": 2160,
       "unit": "metros",
@@ -1371,7 +1363,7 @@
     },
     {
       "id": "chute-animais-e-natureza-178",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto subiria o nível dos oceanos, em metros, se toda a Antártida derretesse?",
       "answer": 58,
       "unit": "metros",
@@ -1379,7 +1371,7 @@
     },
     {
       "id": "chute-animais-e-natureza-179",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o nível dos oceanos subiu desde 1900, em cm?",
       "answer": 20,
       "unit": "cm",
@@ -1403,7 +1395,7 @@
     },
     {
       "id": "chute-animais-e-natureza-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km por hora tem o vento em um furacão de categoria 5, no mínimo?",
       "answer": 252,
       "unit": "km/h",
@@ -1411,7 +1403,7 @@
     },
     {
       "id": "chute-animais-e-natureza-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km por hora tem o vento em um furacão de categoria 1, no mínimo?",
       "answer": 119,
       "unit": "km/h",
@@ -1419,7 +1411,7 @@
     },
     {
       "id": "chute-animais-e-natureza-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos raios caem no Brasil por ano, aproximadamente?",
       "answer": 77000000,
       "unit": "raios",
@@ -1427,7 +1419,7 @@
     },
     {
       "id": "chute-animais-e-natureza-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos raios caem no mundo por dia, aproximadamente?",
       "answer": 4000000,
       "unit": "raios",
@@ -1435,7 +1427,7 @@
     },
     {
       "id": "chute-animais-e-natureza-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos graus Celsius tem o canal de um raio, aproximadamente?",
       "answer": 30000,
       "unit": "°C",
@@ -1547,7 +1539,7 @@
     },
     {
       "id": "chute-animais-e-natureza-200",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "A que temperatura corporal um esquilo-do-ártico pode baixar, em °C?",
       "answer": -2.9,
       "unit": "°C",
@@ -1555,7 +1547,7 @@
     },
     {
       "id": "chute-animais-e-natureza-201",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do Lago Assal, o ponto mais baixo da África, em metros?",
       "answer": -155,
       "unit": "metros",
@@ -1563,7 +1555,7 @@
     },
     {
       "id": "chute-animais-e-natureza-202",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do Vale da Morte, o ponto mais baixo da América do Norte, em metros?",
       "answer": -86,
       "unit": "metros",
@@ -1571,7 +1563,7 @@
     },
     {
       "id": "chute-animais-e-natureza-203",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do mar da Galileia em relação ao nível do mar, em metros?",
       "answer": -212,
       "unit": "metros",
@@ -1579,7 +1571,7 @@
     },
     {
       "id": "chute-animais-e-natureza-204",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do mar Cáspio, em relação ao nível do mar, em metros?",
       "answer": -28,
       "unit": "metros",
@@ -1587,7 +1579,7 @@
     },
     {
       "id": "chute-animais-e-natureza-205",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do fosso de Bentley, na Antártida, em metros?",
       "answer": -2555,
       "unit": "metros",
@@ -1595,7 +1587,7 @@
     },
     {
       "id": "chute-animais-e-natureza-206",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altitude do fundo do mar onde vive o peixe-caracol filmado em 2022, em metros?",
       "answer": -8336,
       "unit": "metros",
@@ -1603,7 +1595,7 @@
     },
     {
       "id": "chute-animais-e-natureza-207",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "A que altitude chegou uma baleia-bicuda-de-cuvier em seu recorde, em metros?",
       "answer": -2992,
       "unit": "metros",
@@ -1611,7 +1603,7 @@
     },
     {
       "id": "chute-animais-e-natureza-208",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "A que altitude chega um cachalote em mergulhos comuns, em metros?",
       "answer": -1000,
       "unit": "metros",
@@ -1627,7 +1619,7 @@
     },
     {
       "id": "chute-animais-e-natureza-210",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a temperatura de Oymyakon, na Rússia, em 1933, em °C?",
       "answer": -67.7,
       "unit": "°C",
@@ -1635,7 +1627,7 @@
     },
     {
       "id": "chute-animais-e-natureza-211",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura média anual no Polo Sul, em °C?",
       "answer": -49,
       "unit": "°C",
@@ -1643,7 +1635,7 @@
     },
     {
       "id": "chute-animais-e-natureza-212",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a temperatura média anual no Polo Norte, em °C?",
       "answer": -18,
       "unit": "°C",
@@ -1651,7 +1643,7 @@
     },
     {
       "id": "chute-animais-e-natureza-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a temperatura mais baixa já medida no Canadá, em °C?",
       "answer": -63,
       "unit": "°C",
@@ -1659,7 +1651,7 @@
     },
     {
       "id": "chute-animais-e-natureza-214",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a temperatura mais baixa já medida nos EUA, em °C?",
       "answer": -62.2,
       "unit": "°C",
@@ -1667,7 +1659,7 @@
     },
     {
       "id": "chute-animais-e-natureza-215",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a menor temperatura medida na Groenlândia, em °C?",
       "answer": -69.6,
       "unit": "°C",
@@ -1675,7 +1667,7 @@
     },
     {
       "id": "chute-animais-e-natureza-216",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Até que temperatura o sapo-da-floresta sobrevive congelado, em °C?",
       "answer": -6,
       "unit": "°C",
@@ -1683,7 +1675,7 @@
     },
     {
       "id": "chute-animais-e-natureza-217",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Até que temperatura um peixe-gelo vive, com anticongelante no sangue, em °C?",
       "answer": -2,
       "unit": "°C",
@@ -1691,7 +1683,7 @@
     },
     {
       "id": "chute-animais-e-natureza-218",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "A que altitude voa o ganso-indiano ao cruzar o Himalaia, em metros?",
       "answer": 8000,
       "unit": "metros",
@@ -1699,7 +1691,7 @@
     },
     {
       "id": "chute-animais-e-natureza-219",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "A que altitude chegou o abutre-de-rüppell em colisão com um avião, em metros?",
       "answer": 11300,
       "unit": "metros",
@@ -1707,7 +1699,7 @@
     },
     {
       "id": "chute-animais-e-natureza-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros um falcão-peregrino pode descer em um único segundo, em mergulho?",
       "answer": 108,
       "unit": "metros",
@@ -1715,7 +1707,7 @@
     },
     {
       "id": "chute-animais-e-natureza-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos mil km um andorinhão-preto voa em um ano, aproximadamente?",
       "answer": 200,
       "unit": "mil km",
@@ -1723,7 +1715,7 @@
     },
     {
       "id": "chute-animais-e-natureza-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto tempo o albatroz-errante pode ficar sem pousar, em anos?",
       "answer": 5,
       "unit": "anos",
@@ -1731,7 +1723,7 @@
     },
     {
       "id": "chute-animais-e-natureza-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de teia uma aranha-de-darwin pode fazer em um rio, de uma margem à outra?",
       "answer": 25,
       "unit": "metros",
@@ -1739,7 +1731,7 @@
     },
     {
       "id": "chute-animais-e-natureza-224",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos tem o Tubarão-da-groenlândia mais velho conhecido, segundo estudo de 2016?",
       "answer": 392,
       "unit": "anos",
@@ -1747,7 +1739,7 @@
     },
     {
       "id": "chute-animais-e-natureza-225",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos, em média, pode viver a baleia-da-groenlândia, no máximo?",
       "answer": 200,
       "unit": "anos",
@@ -1755,7 +1747,7 @@
     },
     {
       "id": "chute-animais-e-natureza-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos milhões de anos têm os tubarões como grupo, aproximadamente?",
       "answer": 450,
       "unit": "milhões",
@@ -1763,7 +1755,7 @@
     },
     {
       "id": "chute-animais-e-natureza-227",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos milhões de anos têm os crocodilos como grupo, aproximadamente?",
       "answer": 95,
       "unit": "milhões",
@@ -1771,7 +1763,7 @@
     },
     {
       "id": "chute-animais-e-natureza-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Há quantos milhões de anos as aves evoluíram, a partir de dinossauros?",
       "answer": 150,
       "unit": "milhões",
@@ -1787,7 +1779,7 @@
     },
     {
       "id": "chute-animais-e-natureza-230",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Há quantos anos os humanos e os chimpanzés tiveram um ancestral em comum, em milhões?",
       "answer": 7,
       "unit": "milhões",
@@ -2090,14 +2082,6 @@
       "fact": "O cérebro dele é maior que o de qualquer outro animal terrestre."
     },
     {
-      "id": "chute-animais-e-natureza-269",
-      "difficulty": "hard",
-      "text": "Qual é o peso do cérebro de um humano adulto, em kg?",
-      "answer": 1.4,
-      "unit": "kg",
-      "fact": "Consome cerca de 20% da energia do corpo."
-    },
-    {
       "id": "chute-animais-e-natureza-270",
       "difficulty": "hard",
       "text": "Quantos neurônios tem um polvo, aproximadamente?",
@@ -2179,7 +2163,7 @@
     },
     {
       "id": "chute-animais-e-natureza-280",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias o pinguim-imperador macho fica sem comer para chocar o ovo?",
       "answer": 65,
       "unit": "dias",
@@ -2187,7 +2171,7 @@
     },
     {
       "id": "chute-animais-e-natureza-281",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos km os pinguins-imperadores andam até a colônia, aproximadamente?",
       "answer": 120,
       "unit": "km",
@@ -2195,7 +2179,7 @@
     },
     {
       "id": "chute-animais-e-natureza-282",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de altura tem o maior bambu conhecido?",
       "answer": 40,
       "unit": "metros",
@@ -2203,7 +2187,7 @@
     },
     {
       "id": "chute-animais-e-natureza-283",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cm um bambu pode crescer em 24 horas?",
       "answer": 91,
       "unit": "cm",
@@ -2211,7 +2195,7 @@
     },
     {
       "id": "chute-animais-e-natureza-284",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos uma castanheira-do-pará pode viver?",
       "answer": 500,
       "unit": "anos",
@@ -2219,7 +2203,7 @@
     },
     {
       "id": "chute-animais-e-natureza-285",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem a envergadura da borboleta maior do mundo, em cm?",
       "answer": 28,
       "unit": "cm",
@@ -2235,7 +2219,7 @@
     },
     {
       "id": "chute-animais-e-natureza-287",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cm tem o menor peixe do mundo, em milímetros?",
       "answer": 8,
       "unit": "mm",
@@ -2251,7 +2235,7 @@
     },
     {
       "id": "chute-animais-e-natureza-289",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vezes por segundo uma mosca bate as asas, aproximadamente?",
       "answer": 200,
       "unit": "vezes",
@@ -2259,7 +2243,7 @@
     },
     {
       "id": "chute-animais-e-natureza-290",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vezes por segundo uma abelha bate as asas, aproximadamente?",
       "answer": 230,
       "unit": "vezes",
@@ -2267,7 +2251,7 @@
     },
     {
       "id": "chute-animais-e-natureza-291",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morrem por ano por picadas de cobra no mundo, aproximadamente?",
       "answer": 120000,
       "unit": "pessoas",
@@ -2275,7 +2259,7 @@
     },
     {
       "id": "chute-animais-e-natureza-292",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas morrem por ano por doenças transmitidas por mosquitos, aproximadamente?",
       "answer": 700000,
       "unit": "pessoas",
@@ -2459,7 +2443,7 @@
     },
     {
       "id": "chute-animais-e-natureza-315",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantas extinções em massa aconteceram, segundo a ciência, antes do tempo atual?",
       "answer": 5,
       "unit": "extinções",
@@ -2507,7 +2491,7 @@
     },
     {
       "id": "chute-animais-e-natureza-321",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Qual foi o comprimento do Tiranossauro rex, em metros?",
       "answer": 12,
       "unit": "metros",
@@ -2691,7 +2675,7 @@
     },
     {
       "id": "chute-animais-e-natureza-344",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pontas costuma ter a estrela-do-mar-coroa-de-espinhos?",
       "answer": 16,
       "unit": "pontas",
@@ -2699,7 +2683,7 @@
     },
     {
       "id": "chute-animais-e-natureza-345",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias um filhote de águia-careca fica no ninho?",
       "answer": 80,
       "unit": "dias",
@@ -2707,7 +2691,7 @@
     },
     {
       "id": "chute-animais-e-natureza-346",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o peso máximo conhecido de um ninho de águia-careca, em toneladas?",
       "answer": 2.7,
       "unit": "toneladas",
@@ -2723,7 +2707,7 @@
     },
     {
       "id": "chute-animais-e-natureza-348",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cm tem a garra de uma harpia, aproximadamente?",
       "answer": 13,
       "unit": "cm",
@@ -2731,7 +2715,7 @@
     },
     {
       "id": "chute-animais-e-natureza-349",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a velocidade máxima do peixe-espada, em km/h?",
       "answer": 100,
       "unit": "km/h",
@@ -2875,7 +2859,7 @@
     },
     {
       "id": "chute-animais-e-natureza-368",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos metros tem o Pão de Açúcar, aproximadamente?",
       "answer": 396,
       "unit": "metros",
@@ -2883,7 +2867,7 @@
     },
     {
       "id": "chute-animais-e-natureza-369",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos km tem o rio São Francisco?",
       "answer": 2830,
       "unit": "km",
@@ -3026,30 +3010,6 @@
       "fact": "Ele só mantém essa corrida por poucos segundos."
     },
     {
-      "id": "chute-animais-e-natureza-388",
-      "difficulty": "medium",
-      "text": "Quantas toneladas pode pesar uma baleia-azul?",
-      "answer": 150,
-      "unit": "toneladas",
-      "fact": "É o maior animal que já existiu."
-    },
-    {
-      "id": "chute-animais-e-natureza-389",
-      "difficulty": "medium",
-      "text": "Quantos metros pode medir uma baleia-azul?",
-      "answer": 30,
-      "unit": "metros",
-      "fact": "Ela come principalmente krill."
-    },
-    {
-      "id": "chute-animais-e-natureza-390",
-      "difficulty": "medium",
-      "text": "Quanto pesa o coração de uma baleia-azul, em quilos, aproximadamente?",
-      "answer": 180,
-      "unit": "quilos",
-      "fact": "Antes, se pensava que ele fosse bem maior."
-    },
-    {
       "id": "chute-animais-e-natureza-391",
       "difficulty": "medium",
       "text": "Até que altitude em relação ao mar um cachalote mergulha, em metros, aproximadamente?",
@@ -3060,7 +3020,7 @@
     },
     {
       "id": "chute-animais-e-natureza-392",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas aves existem no mundo, em bilhões, segundo um estudo de 2021?",
       "answer": 50,
       "unit": "bilhões",
@@ -3068,7 +3028,7 @@
     },
     {
       "id": "chute-animais-e-natureza-393",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas árvores existem na Terra, em trilhões, aproximadamente?",
       "answer": 3,
       "unit": "trilhões",
@@ -3076,7 +3036,7 @@
     },
     {
       "id": "chute-animais-e-natureza-394",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas árvores existem na Amazônia, em bilhões, aproximadamente?",
       "answer": 390,
       "unit": "bilhões",
@@ -3084,7 +3044,7 @@
     },
     {
       "id": "chute-animais-e-natureza-395",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas formigas existem na Terra, em quatrilhões, segundo um estudo de 2022?",
       "answer": 20,
       "unit": "quatrilhões",
@@ -3092,19 +3052,11 @@
     },
     {
       "id": "chute-animais-e-natureza-397",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas vezes por segundo um beija-flor bate as asas, nas espécies pequenas?",
       "answer": 80,
       "unit": "batidas",
       "fact": "Por isso, as asas parecem borradas."
-    },
-    {
-      "id": "chute-animais-e-natureza-398",
-      "difficulty": "hard",
-      "text": "Quantos anos pode viver um tubarão-da-groenlândia, aproximadamente?",
-      "answer": 400,
-      "unit": "anos",
-      "fact": "A idade foi medida pelo olho de um exemplar."
     },
     {
       "id": "chute-animais-e-natureza-399",
@@ -3113,14 +3065,6 @@
       "answer": 4800,
       "unit": "anos",
       "fact": "O local exato é mantido em segredo."
-    },
-    {
-      "id": "chute-animais-e-natureza-400",
-      "difficulty": "hard",
-      "text": "Qual é a altura da maior árvore do mundo, em metros?",
-      "answer": 115,
-      "unit": "metros",
-      "fact": "A sequoia Hyperion fica na Califórnia."
     },
     {
       "id": "chute-animais-e-natureza-401",
@@ -3149,16 +3093,8 @@
       "fact": "Ele resiste em um estado chamado de criptobiose."
     },
     {
-      "id": "chute-animais-e-natureza-405",
-      "difficulty": "hard",
-      "text": "Quanto pesa um elefante-africano macho grande, em toneladas?",
-      "answer": 6,
-      "unit": "toneladas",
-      "fact": "Ele é o maior animal terrestre."
-    },
-    {
       "id": "chute-animais-e-natureza-406",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quanto pesa um ovo de avestruz, em quilos, aproximadamente?",
       "answer": 1.4,
       "unit": "quilo",
@@ -3189,14 +3125,6 @@
       "fact": "As gerações que migram vivem bem mais."
     },
     {
-      "id": "chute-animais-e-natureza-410",
-      "difficulty": "medium",
-      "text": "Quantos ovos uma tartaruga-marinha põe por ninho, aproximadamente?",
-      "answer": 100,
-      "unit": "ovos",
-      "fact": "Poucos filhotes chegam à vida adulta."
-    },
-    {
       "id": "chute-animais-e-natureza-411",
       "difficulty": "easy",
       "text": "Quantos filhotes um panda-gigante tem por parto, em geral?",
@@ -3206,7 +3134,7 @@
     },
     {
       "id": "chute-animais-e-natureza-414",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas espécies de animais marinhos estão descritas, em milhares, aproximadamente?",
       "answer": 240,
       "unit": "mil",

@@ -179,7 +179,7 @@
     },
     {
       "id": "chute-artes-23",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Leonardo da Vinci morreu?",
       "answer": 1519,
       "scale": 50,
@@ -235,7 +235,7 @@
     },
     {
       "id": "chute-artes-30",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Monet pintou Impressão, nascer do sol?",
       "answer": 1872,
       "scale": 50,
@@ -803,7 +803,7 @@
     },
     {
       "id": "chute-artes-103",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos girassóis aparecem na versão de Van Gogh de Munique?",
       "answer": 12,
       "unit": "girassóis",
@@ -851,7 +851,7 @@
     },
     {
       "id": "chute-artes-109",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos artistas se apresentaram no Woodstock, aproximadamente?",
       "answer": 32,
       "unit": "artistas",
@@ -1139,7 +1139,7 @@
     },
     {
       "id": "chute-artes-147",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Rembrandt?",
       "answer": 1669,
       "scale": 50,
@@ -1147,7 +1147,7 @@
     },
     {
       "id": "chute-artes-148",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Michelangelo?",
       "answer": 1564,
       "scale": 50,
@@ -1155,7 +1155,7 @@
     },
     {
       "id": "chute-artes-149",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Rafael?",
       "answer": 1520,
       "scale": 50,
@@ -1227,7 +1227,7 @@
     },
     {
       "id": "chute-artes-158",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Beethoven?",
       "answer": 1827,
       "scale": 50,
@@ -1235,7 +1235,7 @@
     },
     {
       "id": "chute-artes-159",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Bach?",
       "answer": 1750,
       "scale": 50,
@@ -1243,7 +1243,7 @@
     },
     {
       "id": "chute-artes-160",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Chopin?",
       "answer": 1849,
       "scale": 50,
@@ -1251,7 +1251,7 @@
     },
     {
       "id": "chute-artes-161",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Tchaikovsky?",
       "answer": 1893,
       "scale": 50,
@@ -1259,7 +1259,7 @@
     },
     {
       "id": "chute-artes-162",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Wagner?",
       "answer": 1883,
       "scale": 50,
@@ -1275,7 +1275,7 @@
     },
     {
       "id": "chute-artes-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Dante Alighieri?",
       "answer": 1321,
       "scale": 50,
@@ -1283,7 +1283,7 @@
     },
     {
       "id": "chute-artes-165",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Camões?",
       "answer": 1580,
       "scale": 50,
@@ -1291,7 +1291,7 @@
     },
     {
       "id": "chute-artes-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Victor Hugo?",
       "answer": 1885,
       "scale": 50,
@@ -1299,7 +1299,7 @@
     },
     {
       "id": "chute-artes-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Dostoiévski?",
       "answer": 1881,
       "scale": 50,
@@ -1307,7 +1307,7 @@
     },
     {
       "id": "chute-artes-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Tolstói?",
       "answer": 1910,
       "scale": 50,
@@ -1315,7 +1315,7 @@
     },
     {
       "id": "chute-artes-169",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano morreu Franz Kafka?",
       "answer": 1924,
       "scale": 50,
@@ -1410,16 +1410,8 @@
       "fact": "A série vendeu mais de 500 milhões de cópias."
     },
     {
-      "id": "chute-artes-181",
-      "difficulty": "medium",
-      "text": "Em que ano foi inaugurado o Louvre?",
-      "answer": 1793,
-      "scale": 50,
-      "fact": "Ele já tinha sido um palácio real."
-    },
-    {
       "id": "chute-artes-182",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Museu Britânico?",
       "answer": 1759,
       "scale": 50,
@@ -1427,7 +1419,7 @@
     },
     {
       "id": "chute-artes-183",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o MoMA?",
       "answer": 1929,
       "scale": 50,
@@ -1435,7 +1427,7 @@
     },
     {
       "id": "chute-artes-184",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Museu Guggenheim de Nova York?",
       "answer": 1959,
       "scale": 50,
@@ -1443,7 +1435,7 @@
     },
     {
       "id": "chute-artes-185",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Centre Pompidou?",
       "answer": 1977,
       "scale": 50,
@@ -1451,7 +1443,7 @@
     },
     {
       "id": "chute-artes-186",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Museu de Bilbao?",
       "answer": 1997,
       "scale": 50,
@@ -1459,7 +1451,7 @@
     },
     {
       "id": "chute-artes-187",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Ópera de Sydney?",
       "answer": 1973,
       "scale": 50,
@@ -1467,7 +1459,7 @@
     },
     {
       "id": "chute-artes-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Ópera de Paris?",
       "answer": 1875,
       "scale": 50,
@@ -1475,7 +1467,7 @@
     },
     {
       "id": "chute-artes-189",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Scala de Milão?",
       "answer": 1778,
       "scale": 50,
@@ -1483,7 +1475,7 @@
     },
     {
       "id": "chute-artes-190",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Royal Albert Hall?",
       "answer": 1871,
       "scale": 50,
@@ -1491,7 +1483,7 @@
     },
     {
       "id": "chute-artes-191",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Carnegie Hall?",
       "answer": 1891,
       "scale": 50,
@@ -1499,7 +1491,7 @@
     },
     {
       "id": "chute-artes-192",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Sala São Paulo?",
       "answer": 1999,
       "scale": 50,
@@ -1507,7 +1499,7 @@
     },
     {
       "id": "chute-artes-193",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Pinacoteca de São Paulo?",
       "answer": 1905,
       "scale": 50,
@@ -1515,7 +1507,7 @@
     },
     {
       "id": "chute-artes-194",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Teatro Amazonas?",
       "answer": 1896,
       "scale": 50,
@@ -1523,7 +1515,7 @@
     },
     {
       "id": "chute-artes-195",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Inhotim?",
       "answer": 2006,
       "scale": 50,
@@ -1539,7 +1531,7 @@
     },
     {
       "id": "chute-artes-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano começou a Capela Sistina a ter pinturas no teto?",
       "answer": 1508,
       "scale": 50,
@@ -1547,7 +1539,7 @@
     },
     {
       "id": "chute-artes-198",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Michelangelo pintou o Juízo Final, no fim?",
       "answer": 1541,
       "scale": 50,
@@ -1555,7 +1547,7 @@
     },
     {
       "id": "chute-artes-199",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano Van Gogh se internou em Saint-Rémy?",
       "answer": 1889,
       "scale": 50,
@@ -1595,7 +1587,7 @@
     },
     {
       "id": "chute-artes-205",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estreou \"O Lago dos Cisnes\"?",
       "answer": 1877,
       "scale": 50,
@@ -1603,7 +1595,7 @@
     },
     {
       "id": "chute-artes-206",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estreou \"O Quebra-Nozes\"?",
       "answer": 1892,
       "scale": 50,
@@ -1611,7 +1603,7 @@
     },
     {
       "id": "chute-artes-207",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estreou a \"Nona Sinfonia\" de Beethoven?",
       "answer": 1824,
       "scale": 50,
@@ -1619,7 +1611,7 @@
     },
     {
       "id": "chute-artes-208",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estreou \"A Sagração da Primavera\"?",
       "answer": 1913,
       "scale": 50,
@@ -1627,7 +1619,7 @@
     },
     {
       "id": "chute-artes-209",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano estreou \"A Flauta Mágica\"?",
       "answer": 1791,
       "scale": 50,
@@ -1651,7 +1643,7 @@
     },
     {
       "id": "chute-artes-212",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Tchaikovsky?",
       "answer": 1840,
       "scale": 50,
@@ -1659,7 +1651,7 @@
     },
     {
       "id": "chute-artes-213",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Chopin?",
       "answer": 1810,
       "scale": 50,
@@ -1675,7 +1667,7 @@
     },
     {
       "id": "chute-artes-215",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Bach?",
       "answer": 1685,
       "scale": 50,
@@ -1683,7 +1675,7 @@
     },
     {
       "id": "chute-artes-216",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Vivaldi?",
       "answer": 1678,
       "scale": 50,
@@ -1691,7 +1683,7 @@
     },
     {
       "id": "chute-artes-217",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano nasceu Shakespeare?",
       "answer": 1564,
       "scale": 50,
@@ -1707,7 +1699,7 @@
     },
     {
       "id": "chute-artes-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"Interchange\", de Willem de Kooning, em dólares?",
       "answer": 300000000,
       "unit": "dólares",
@@ -1715,7 +1707,7 @@
     },
     {
       "id": "chute-artes-221",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"Os Jogadores de Cartas\", de Cézanne, em dólares?",
       "answer": 250000000,
       "unit": "dólares",
@@ -1723,7 +1715,7 @@
     },
     {
       "id": "chute-artes-222",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"Nafea\", de Gauguin, em dólares?",
       "answer": 210000000,
       "unit": "dólares",
@@ -1731,7 +1723,7 @@
     },
     {
       "id": "chute-artes-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"Número 17A\", de Pollock, em dólares?",
       "answer": 200000000,
       "unit": "dólares",
@@ -1739,7 +1731,7 @@
     },
     {
       "id": "chute-artes-224",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido o retrato de Marilyn, de Warhol, em 2022, em dólares?",
       "answer": 195000000,
       "unit": "dólares",
@@ -1747,7 +1739,7 @@
     },
     {
       "id": "chute-artes-225",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"Les Femmes d'Alger\", de Picasso, em 2015, em dólares?",
       "answer": 179400000,
       "unit": "dólares",
@@ -1755,7 +1747,7 @@
     },
     {
       "id": "chute-artes-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"O Grito\", de Munch, em 2012, em dólares?",
       "answer": 119900000,
       "unit": "dólares",
@@ -1763,7 +1755,7 @@
     },
     {
       "id": "chute-artes-227",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a pintura de um crânio de Basquiat, em 2017, em dólares?",
       "answer": 110500000,
       "unit": "dólares",
@@ -1771,7 +1763,7 @@
     },
     {
       "id": "chute-artes-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a escultura \"Rabbit\", de Jeff Koons, em 2019, em dólares?",
       "answer": 91100000,
       "unit": "dólares",
@@ -1779,7 +1771,7 @@
     },
     {
       "id": "chute-artes-229",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a escultura \"O Homem que Caminha\", de Giacometti, em dólares?",
       "answer": 104300000,
       "unit": "dólares",
@@ -1787,7 +1779,7 @@
     },
     {
       "id": "chute-artes-230",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido \"Abaporu\", em dólares, em 1995?",
       "answer": 1300000,
       "unit": "dólares",
@@ -1795,7 +1787,7 @@
     },
     {
       "id": "chute-artes-231",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a NFT de Beeple, em 2021, em dólares?",
       "answer": 69300000,
       "unit": "dólares",
@@ -1803,7 +1795,7 @@
     },
     {
       "id": "chute-artes-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a guitarra Black Strat de David Gilmour, em dólares?",
       "answer": 3975000,
       "unit": "dólares",
@@ -1811,7 +1803,7 @@
     },
     {
       "id": "chute-artes-233",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendida a guitarra de Kurt Cobain do MTV Unplugged, em dólares?",
       "answer": 6000000,
       "unit": "dólares",
@@ -1819,7 +1811,7 @@
     },
     {
       "id": "chute-artes-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido o piano branco de John Lennon, em dólares?",
       "answer": 2100000,
       "unit": "dólares",
@@ -1827,7 +1819,7 @@
     },
     {
       "id": "chute-artes-235",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Por quanto foi vendido o violino \"Lady Blunt\", em dólares?",
       "answer": 15900000,
       "unit": "dólares",
@@ -1835,7 +1827,7 @@
     },
     {
       "id": "chute-artes-236",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos Stradivarius existem hoje, aproximadamente?",
       "answer": 650,
       "unit": "instrumentos",
@@ -1843,7 +1835,7 @@
     },
     {
       "id": "chute-artes-237",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos instrumentos Stradivari construiu, aproximadamente?",
       "answer": 1100,
       "unit": "instrumentos",
@@ -1859,7 +1851,7 @@
     },
     {
       "id": "chute-artes-239",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas obras o Louvre tem em exposição, aproximadamente?",
       "answer": 35000,
       "unit": "obras",
@@ -1867,7 +1859,7 @@
     },
     {
       "id": "chute-artes-240",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas visitas o Inhotim recebe por ano, aproximadamente?",
       "answer": 300000,
       "unit": "pessoas",
@@ -1875,7 +1867,7 @@
     },
     {
       "id": "chute-artes-241",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas visitas o Masp recebe por ano, aproximadamente?",
       "answer": 500000,
       "unit": "pessoas",
@@ -1883,7 +1875,7 @@
     },
     {
       "id": "chute-artes-242",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o valor de seguro da Mona Lisa em 1962, em dólares?",
       "answer": 100000000,
       "unit": "dólares",
@@ -1891,7 +1883,7 @@
     },
     {
       "id": "chute-artes-243",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas pessoas veem a Mona Lisa por dia, em média?",
       "answer": 30000,
       "unit": "pessoas",
@@ -1899,7 +1891,7 @@
     },
     {
       "id": "chute-artes-244",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cadernos Leonardo da Vinci deixou, em páginas, aproximadamente?",
       "answer": 7000,
       "unit": "páginas",
@@ -1923,7 +1915,7 @@
     },
     {
       "id": "chute-artes-247",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bilhões de execuções tem \"Blinding Lights\" no Spotify, em bilhões?",
       "answer": 5,
       "unit": "bilhões",
@@ -1939,7 +1931,7 @@
     },
     {
       "id": "chute-artes-249",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto Paul McCartney tem de fortuna, em bilhões de dólares, aproximadamente?",
       "answer": 1.2,
       "unit": "bilhão",
@@ -1947,7 +1939,7 @@
     },
     {
       "id": "chute-artes-250",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos prêmios Grammy ganhou Quincy Jones?",
       "answer": 28,
       "unit": "Grammys",
@@ -1955,7 +1947,7 @@
     },
     {
       "id": "chute-artes-251",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias os Beatles levaram para gravar seu primeiro disco?",
       "answer": 1,
       "unit": "dia",
@@ -1963,7 +1955,7 @@
     },
     {
       "id": "chute-artes-252",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas versões tem \"Yesterday\", dos Beatles, aproximadamente?",
       "answer": 2200,
       "unit": "gravações",
@@ -1971,7 +1963,7 @@
     },
     {
       "id": "chute-artes-253",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas apresentações teve \"O Fantasma da Ópera\" na Broadway?",
       "answer": 13981,
       "unit": "apresentações",
@@ -2339,7 +2331,7 @@
     },
     {
       "id": "chute-artes-301",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos durou a Guerra de Troia, na Ilíada?",
       "answer": 10,
       "unit": "anos",
@@ -2347,7 +2339,7 @@
     },
     {
       "id": "chute-artes-302",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos anos Ulisses levou para voltar para casa?",
       "answer": 10,
       "unit": "anos",
@@ -2355,7 +2347,7 @@
     },
     {
       "id": "chute-artes-303",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos círculos tem o Inferno de Dante?",
       "answer": 9,
       "unit": "círculos",
@@ -2371,7 +2363,7 @@
     },
     {
       "id": "chute-artes-305",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos mosqueteiros D'Artagnan encontra, no início do livro?",
       "answer": 3,
       "unit": "mosqueteiros",
@@ -2395,7 +2387,7 @@
     },
     {
       "id": "chute-artes-308",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos minutos tem \"Bohemian Rhapsody\"?",
       "answer": 6,
       "unit": "minutos",
@@ -2403,7 +2395,7 @@
     },
     {
       "id": "chute-artes-309",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos minutos tem \"Stairway to Heaven\"?",
       "answer": 8,
       "unit": "minutos",
@@ -2419,7 +2411,7 @@
     },
     {
       "id": "chute-artes-311",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Quantos minutos tem \"Thriller\" no clipe?",
       "answer": 14,
       "unit": "minutos",
@@ -2442,16 +2434,8 @@
       "fact": "Ela fecha o disco Abbey Road."
     },
     {
-      "id": "chute-artes-314",
-      "difficulty": "medium",
-      "text": "Por quanto Bill Gates comprou o Codex Leicester, de Leonardo, em 1994, em dólares?",
-      "answer": 30800000,
-      "unit": "dólares",
-      "fact": "É o livro mais caro já vendido em leilão."
-    },
-    {
       "id": "chute-artes-315",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas páginas tem o Codex Leicester, de Leonardo da Vinci?",
       "answer": 72,
       "unit": "páginas",
@@ -2459,7 +2443,7 @@
     },
     {
       "id": "chute-artes-316",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas folhas de ouro foram usadas em \"O Beijo\", de Klimt, aproximadamente?",
       "answer": 1000,
       "unit": "folhas",
@@ -2467,7 +2451,7 @@
     },
     {
       "id": "chute-artes-317",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem o quadro \"A Ronda Noturna\" de largura?",
       "answer": 4.37,
       "unit": "metros",
@@ -2475,7 +2459,7 @@
     },
     {
       "id": "chute-artes-318",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros tem o painel \"A Última Ceia\" de largura?",
       "answer": 8.8,
       "unit": "metros",
@@ -2483,7 +2467,7 @@
     },
     {
       "id": "chute-artes-319",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos durou a restauração de \"A Última Ceia\", finalizada em 1999?",
       "answer": 21,
       "unit": "anos",
@@ -2491,7 +2475,7 @@
     },
     {
       "id": "chute-artes-320",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros quadrados tem o painel \"Etnias\", de Eduardo Kobra?",
       "answer": 3000,
       "unit": "m²",
@@ -2499,7 +2483,7 @@
     },
     {
       "id": "chute-artes-321",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de altura tem o Monumento às Bandeiras, de Brecheret?",
       "answer": 16,
       "unit": "metros",
@@ -2507,7 +2491,7 @@
     },
     {
       "id": "chute-artes-322",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de comprimento tem o Monumento às Bandeiras, de Brecheret?",
       "answer": 50,
       "unit": "metros",
@@ -2515,7 +2499,7 @@
     },
     {
       "id": "chute-artes-323",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos livros a Biblioteca do Congresso dos EUA tem, em milhões, aproximadamente?",
       "answer": 40,
       "unit": "milhões",
@@ -2523,7 +2507,7 @@
     },
     {
       "id": "chute-artes-324",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos livros a Biblioteca Nacional do Brasil tem, em milhões?",
       "answer": 10,
       "unit": "milhões",
@@ -2723,7 +2707,7 @@
     },
     {
       "id": "chute-artes-350",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano Banksy fez o quadro se autodestruir em leilão?",
       "answer": 2018,
       "scale": 50,
@@ -2875,7 +2859,7 @@
     },
     {
       "id": "chute-artes-369",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos teatros tem a região da Broadway, aproximadamente?",
       "answer": 41,
       "unit": "teatros",
@@ -2883,7 +2867,7 @@
     },
     {
       "id": "chute-artes-370",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos lugares tem o Theatro Municipal de São Paulo, aproximadamente?",
       "answer": 1500,
       "unit": "lugares",
@@ -3042,48 +3026,8 @@
       "fact": "A divisão é herança da tradição romana."
     },
     {
-      "id": "chute-artes-393",
-      "difficulty": "medium",
-      "text": "Quantas obras Pablo Picasso criou, em milhares, aproximadamente?",
-      "answer": 50,
-      "unit": "mil",
-      "fact": "Ele trabalhou até os 91 anos."
-    },
-    {
-      "id": "chute-artes-395",
-      "difficulty": "medium",
-      "text": "Quantas obras o Louvre abriga em exposição, em milhares, aproximadamente?",
-      "answer": 35,
-      "unit": "mil",
-      "fact": "O acervo total é bem maior."
-    },
-    {
-      "id": "chute-artes-396",
-      "difficulty": "medium",
-      "text": "Quanto foi vendida \"Les Femmes d'Alger\", de Picasso, em milhões de dólares?",
-      "answer": 179,
-      "unit": "milhões",
-      "fact": "A venda foi em 2015."
-    },
-    {
-      "id": "chute-artes-397",
-      "difficulty": "medium",
-      "text": "Quanto foi vendida a obra \"Abaporu\", em milhões de dólares, em 1995?",
-      "answer": 1.3,
-      "unit": "milhão",
-      "fact": "Hoje, ela está em Buenos Aires."
-    },
-    {
-      "id": "chute-artes-398",
-      "difficulty": "medium",
-      "text": "Quanto foi vendido \"O Grito\", em milhões de dólares, em 2012?",
-      "answer": 120,
-      "unit": "milhões",
-      "fact": "Foi um recorde em leilão à época."
-    },
-    {
       "id": "chute-artes-399",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altura do afresco Juízo Final, de Michelangelo, em metros?",
       "answer": 13.7,
       "unit": "metros",
@@ -3091,7 +3035,7 @@
     },
     {
       "id": "chute-artes-400",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas figuras tem o Juízo Final, de Michelangelo, aproximadamente?",
       "answer": 390,
       "unit": "figuras",
@@ -3099,7 +3043,7 @@
     },
     {
       "id": "chute-artes-401",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos concertos para piano Mozart compôs?",
       "answer": 27,
       "unit": "concertos",
@@ -3107,7 +3051,7 @@
     },
     {
       "id": "chute-artes-402",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas sinfonias Mozart compôs, na contagem tradicional?",
       "answer": 41,
       "unit": "sinfonias",
@@ -3120,22 +3064,6 @@
       "answer": 1100,
       "unit": "obras",
       "fact": "A sigla significa catálogo das obras de Bach."
-    },
-    {
-      "id": "chute-artes-404",
-      "difficulty": "hard",
-      "text": "Qual é a altura do Davi de Michelangelo, em metros, aproximadamente?",
-      "answer": 5.17,
-      "unit": "metros",
-      "fact": "Ele foi esculpido em um bloco rejeitado."
-    },
-    {
-      "id": "chute-artes-405",
-      "difficulty": "hard",
-      "text": "Quanto pesa o Davi de Michelangelo, em toneladas, aproximadamente?",
-      "answer": 5.5,
-      "unit": "toneladas",
-      "fact": "As rachaduras nos tornozelos preocupam os restauradores."
     },
     {
       "id": "chute-artes-406",
@@ -3195,7 +3123,7 @@
     },
     {
       "id": "chute-artes-415",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos metros de altura tem o Davi de Bernini, sem a base, aproximadamente?",
       "answer": 1.7,
       "unit": "metro",

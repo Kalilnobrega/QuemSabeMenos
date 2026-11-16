@@ -74,22 +74,6 @@
       "fact": "Até 1988, a jornada era de 48 horas."
     },
     {
-      "id": "chute-dinheiro-e-negocios-10",
-      "difficulty": "medium",
-      "text": "Em que ano a Coca-Cola foi inventada?",
-      "answer": 1886,
-      "scale": 50,
-      "fact": "O farmacêutico John Pemberton a criou em Atlanta."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-11",
-      "difficulty": "medium",
-      "text": "Em que ano o McDonald's chegou ao Brasil?",
-      "answer": 1979,
-      "scale": 50,
-      "fact": "A primeira loja abriu em Copacabana."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-12",
       "difficulty": "easy",
       "text": "Em que ano o primeiro iPhone foi apresentado?",
@@ -128,14 +112,6 @@
       "answer": 1962,
       "scale": 50,
       "fact": "O modelo foi inspirado na sandália japonesa zori."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-17",
-      "difficulty": "medium",
-      "text": "Em que ano a Disney abriu seu primeiro parque?",
-      "answer": 1955,
-      "scale": 50,
-      "fact": "A Disneylândia abriu na Califórnia."
     },
     {
       "id": "chute-dinheiro-e-negocios-18",
@@ -243,7 +219,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-31",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas estrelas tem o logo da Subaru?",
       "answer": 6,
       "unit": "estrelas",
@@ -330,14 +306,6 @@
       "fact": "A multa é paga pelo empregador ao trabalhador."
     },
     {
-      "id": "chute-dinheiro-e-negocios-42",
-      "difficulty": "medium",
-      "text": "Em que ano a CLT foi criada?",
-      "answer": 1943,
-      "scale": 50,
-      "fact": "Getúlio Vargas a assinou em 1º de maio."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-43",
       "difficulty": "medium",
       "text": "Em que ano foi criado o salário mínimo no Brasil?",
@@ -395,7 +363,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-50",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Toyota?",
       "answer": 1937,
       "scale": 50,
@@ -419,7 +387,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-53",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Adidas foi registrada?",
       "answer": 1949,
       "scale": 50,
@@ -427,7 +395,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-54",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Zara abriu sua primeira loja?",
       "answer": 1975,
       "scale": 50,
@@ -435,7 +403,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-55",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano nasceu a IKEA?",
       "answer": 1943,
       "scale": 50,
@@ -475,7 +443,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-60",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o Magazine Luiza?",
       "answer": 1957,
       "scale": 50,
@@ -531,7 +499,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-69",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi lançada a primeira edição do Banco Imobiliário no Brasil?",
       "answer": 1944,
       "scale": 50,
@@ -539,19 +507,11 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-70",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o jogo Monopoly foi vendido pela Parker Brothers?",
       "answer": 1935,
       "scale": 50,
       "fact": "Charles Darrow vendeu o jogo, baseado em um de Lizzie Magie."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-71",
-      "difficulty": "medium",
-      "text": "Em que ano a Coca-Cola chegou ao Brasil?",
-      "answer": 1942,
-      "scale": 50,
-      "fact": "Chegou por Recife e Natal, junto com os soldados americanos."
     },
     {
       "id": "chute-dinheiro-e-negocios-72",
@@ -587,7 +547,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-77",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que nota de dólar está Abraham Lincoln?",
       "answer": 5,
       "unit": "dólares",
@@ -603,7 +563,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-79",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que nota de dólar está Andrew Jackson?",
       "answer": 20,
       "unit": "dólares",
@@ -619,7 +579,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-81",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que nota de dólar está Alexander Hamilton?",
       "answer": 10,
       "unit": "dólares",
@@ -771,7 +731,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-101",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas empresas formam o índice Dow Jones?",
       "answer": 30,
       "unit": "empresas",
@@ -787,7 +747,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-103",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas empresas formam o índice britânico FTSE?",
       "answer": 100,
       "unit": "empresas",
@@ -827,7 +787,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-108",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas lojas o McDonald's tem no mundo, aproximadamente?",
       "answer": 40000,
       "unit": "lojas",
@@ -835,57 +795,11 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-109",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos clientes o McDonald's atende por dia no mundo?",
       "answer": 69000000,
       "unit": "clientes",
       "fact": "É mais gente que a população da França."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-110",
-      "difficulty": "medium",
-      "text": "Quantas doses de Coca-Cola são consumidas por dia no mundo?",
-      "answer": 1900000000,
-      "unit": "doses",
-      "fact": "A marca é vendida em mais de 200 países."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-111",
-      "difficulty": "medium",
-      "text": "Quantos funcionários tem o Walmart no mundo, aproximadamente?",
-      "answer": 2100000,
-      "unit": "funcionários",
-      "fact": "É a maior empregadora privada do mundo."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-112",
-      "difficulty": "medium",
-      "text": "Quantos Fuscas foram fabricados no mundo?",
-      "answer": 21500000,
-      "unit": "carros",
-      "fact": "A produção durou de 1938 a 2003."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-113",
-      "difficulty": "medium",
-      "text": "Quantos Modelos T a Ford produziu?",
-      "answer": 15000000,
-      "unit": "carros",
-      "fact": "Por anos, todos saíam pretos, porque a tinta secava mais rápido."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-114",
-      "difficulty": "medium",
-      "text": "Quantas chances, 1 em quantas, há de ganhar a Mega-Sena com aposta simples?",
-      "answer": 50063860,
-      "fact": "É bem mais fácil ser atingido por um raio."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-115",
-      "difficulty": "medium",
-      "text": "Quantas chances, 1 em quantas, há de ganhar a Lotofácil com aposta simples?",
-      "answer": 3268760,
-      "fact": "Por isso ela tem esse nome."
     },
     {
       "id": "chute-dinheiro-e-negocios-116",
@@ -897,7 +811,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-117",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi o preço do barril de petróleo WTI, em dólares, em 20 de abril de 2020?",
       "answer": -37.63,
       "unit": "dólares",
@@ -905,7 +819,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-118",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Dow Jones variou na Black Monday de 1987, em %?",
       "answer": -22.6,
       "unit": "%",
@@ -921,7 +835,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-120",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o PIB do Brasil variou em 2015, em %?",
       "answer": -3.5,
       "unit": "%",
@@ -929,7 +843,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-121",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o PIB do Brasil variou em 1990, em %?",
       "answer": -4.3,
       "unit": "%",
@@ -937,7 +851,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-122",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o PIB do Brasil cresceu em 2010, em %?",
       "answer": 7.5,
       "unit": "%",
@@ -945,7 +859,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-123",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a inflação brasileira em 1993, em %?",
       "answer": 2477,
       "unit": "%",
@@ -953,7 +867,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-124",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a inflação de um único mês no Brasil, março de 1990, em %?",
       "answer": 82.39,
       "unit": "%",
@@ -961,7 +875,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-125",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos cruzeiros reais valia 1 real em 1994?",
       "answer": 2750,
       "unit": "cruzeiros reais",
@@ -969,7 +883,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-126",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual o valor do salário mínimo quando o real foi lançado, em reais?",
       "answer": 64.79,
       "unit": "reais",
@@ -977,7 +891,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-127",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual foi a Selic mais alta da era do real, em 1999, em %?",
       "answer": 45,
       "unit": "%",
@@ -1009,7 +923,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-131",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Disney pagou pela Marvel, em bilhões de dólares?",
       "answer": 4,
       "unit": "bilhões",
@@ -1017,7 +931,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-132",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Disney pagou pela Lucasfilm, em dólares?",
       "answer": 4050000000,
       "unit": "dólares",
@@ -1025,7 +939,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-133",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Disney pagou pela Pixar, em dólares?",
       "answer": 7400000000,
       "unit": "dólares",
@@ -1033,7 +947,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-134",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Disney pagou pela Fox, em bilhões de dólares?",
       "answer": 71,
       "unit": "bilhões",
@@ -1041,7 +955,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-135",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto o Google pagou pelo YouTube, em dólares?",
       "answer": 1650000000,
       "unit": "dólares",
@@ -1049,7 +963,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-136",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Microsoft pagou pelo LinkedIn, em dólares?",
       "answer": 26200000000,
       "unit": "dólares",
@@ -1057,7 +971,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-137",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Microsoft pagou pela Activision, em bilhões de dólares?",
       "answer": 69,
       "unit": "bilhões",
@@ -1065,7 +979,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-138",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Amazon pagou pela rede Whole Foods, em dólares?",
       "answer": 13700000000,
       "unit": "dólares",
@@ -1073,7 +987,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-139",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto a Amazon pagou pela MGM, em bilhões de dólares?",
       "answer": 8.45,
       "unit": "bilhões",
@@ -1089,7 +1003,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-141",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto custava um Apple I em 1976, em dólares?",
       "answer": 666.66,
       "unit": "dólares",
@@ -1097,7 +1011,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-142",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual era o preço do Modelo T em 1908, em dólares?",
       "answer": 850,
       "unit": "dólares",
@@ -1113,7 +1027,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-144",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Louis Vuitton?",
       "answer": 1854,
       "scale": 50,
@@ -1161,7 +1075,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-150",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Tiffany & Co.?",
       "answer": 1837,
       "scale": 50,
@@ -1169,7 +1083,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-151",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Hermès?",
       "answer": 1837,
       "scale": 50,
@@ -1177,7 +1091,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-152",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Levi's?",
       "answer": 1853,
       "scale": 50,
@@ -1249,7 +1163,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-164",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Kodak?",
       "answer": 1888,
       "scale": 50,
@@ -1257,7 +1171,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-166",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Colgate?",
       "answer": 1806,
       "scale": 50,
@@ -1265,7 +1179,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-167",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Procter & Gamble?",
       "answer": 1837,
       "scale": 50,
@@ -1273,7 +1187,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-168",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Johnson & Johnson?",
       "answer": 1886,
       "scale": 50,
@@ -1281,7 +1195,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-169",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Bayer?",
       "answer": 1863,
       "scale": 50,
@@ -1289,7 +1203,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-170",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Pfizer?",
       "answer": 1849,
       "scale": 50,
@@ -1297,7 +1211,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-171",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundado o Goldman Sachs?",
       "answer": 1869,
       "scale": 50,
@@ -1425,7 +1339,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-188",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em que ano foi fundada a Hering?",
       "answer": 1880,
       "scale": 50,
@@ -1465,7 +1379,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-193",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos milhões de dólares a Blockbuster recusou pagar pela Netflix em 2000?",
       "answer": 50,
       "unit": "milhões",
@@ -1489,7 +1403,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-196",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bitcoins Laszlo Hanyecz pagou por duas pizzas em 2010?",
       "answer": 10000,
       "unit": "bitcoins",
@@ -1497,7 +1411,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-197",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bitcoins sumiram com a corretora Mt. Gox, aproximadamente?",
       "answer": 850000,
       "unit": "bitcoins",
@@ -1529,7 +1443,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-202",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos John D. Rockefeller viveu?",
       "answer": 97,
       "unit": "anos",
@@ -1537,7 +1451,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-203",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Em quantas empresas a Standard Oil foi dividida, em 1911?",
       "answer": 34,
       "unit": "empresas",
@@ -1545,7 +1459,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-204",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos Harland Sanders tinha quando começou a franquear o KFC?",
       "answer": 62,
       "unit": "anos",
@@ -1553,7 +1467,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-205",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dólares o designer do logo da Nike recebeu inicialmente?",
       "answer": 35,
       "unit": "dólares",
@@ -1561,7 +1475,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-206",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dias durou o bloqueio do Canal de Suez pelo Ever Given, em 2021?",
       "answer": 6,
       "unit": "dias",
@@ -1569,7 +1483,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-208",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Pizza Hut?",
       "answer": 1958,
       "scale": 50,
@@ -1585,7 +1499,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-210",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Brasil começou a usar o cruzeiro como moeda?",
       "answer": 1942,
       "scale": 50,
@@ -1649,7 +1563,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-220",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos países têm uma loja da IKEA, aproximadamente?",
       "answer": 60,
       "unit": "países",
@@ -1673,7 +1587,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-223",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos dura um aluguel da cervejaria da Guinness, firmado em 1759?",
       "answer": 9000,
       "unit": "anos",
@@ -1681,7 +1595,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-224",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas lojas o Starbucks tem no mundo, aproximadamente?",
       "answer": 40000,
       "unit": "lojas",
@@ -1689,7 +1603,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-225",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dólares o Costco cobra pelo cachorro-quente com refrigerante?",
       "answer": 1.5,
       "unit": "dólares",
@@ -1697,7 +1611,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-226",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos o preço do combo do Costco está congelado, considerando 2025?",
       "answer": 40,
       "unit": "anos",
@@ -1705,7 +1619,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-227",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas marcas tem a Stellantis?",
       "answer": 14,
       "unit": "marcas",
@@ -1713,7 +1627,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-228",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas marcas de carro tem o grupo Volkswagen, aproximadamente?",
       "answer": 10,
       "unit": "marcas",
@@ -1721,7 +1635,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-229",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos carros a Toyota vende por ano no mundo, aproximadamente?",
       "answer": 10000000,
       "unit": "carros",
@@ -1729,7 +1643,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-230",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos carros elétricos a Tesla entregou em 2023, aproximadamente?",
       "answer": 1800000,
       "unit": "carros",
@@ -1737,7 +1651,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-231",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos iPhones a Apple vendeu por ano no pico de 2015, em milhões?",
       "answer": 231,
       "unit": "milhões",
@@ -1745,7 +1659,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-232",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Qual é a altura do logo Hollywood, feito para vender imóveis em 1923, em metros?",
       "answer": 14,
       "unit": "metros",
@@ -1753,7 +1667,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-233",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos andares tem a Antilia, a casa de Mukesh Ambani?",
       "answer": 27,
       "unit": "andares",
@@ -1761,7 +1675,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-234",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos durou a Companhia Holandesa das Índias Orientais?",
       "answer": 197,
       "unit": "anos",
@@ -1777,23 +1691,15 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-236",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos Jack Welch comandou a General Electric?",
       "answer": 20,
       "unit": "anos",
       "fact": "O valor de mercado da empresa subiu muito nesse tempo."
     },
     {
-      "id": "chute-dinheiro-e-negocios-237",
-      "difficulty": "medium",
-      "text": "Quantos dólares a nota de maior valor já impressa pelo governo dos EUA valia?",
-      "answer": 100000,
-      "unit": "dólares",
-      "fact": "Era usada só entre os bancos do Fed, em 1934."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-238",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos trilhões de dólares tinha a nota de maior valor do Zimbábue?",
       "answer": 100,
       "unit": "trilhões",
@@ -1833,7 +1739,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-243",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Nvidia chegou a 5 trilhões de dólares em valor?",
       "answer": 2025,
       "scale": 50,
@@ -1841,7 +1747,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-244",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Apple chegou a 1 trilhão de dólares de valor?",
       "answer": 2018,
       "scale": 50,
@@ -2009,7 +1915,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-265",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a revista Forbes?",
       "answer": 1917,
       "scale": 50,
@@ -2017,7 +1923,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-266",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Bloomberg?",
       "answer": 1981,
       "scale": 50,
@@ -2025,7 +1931,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-267",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criada a Mastercard, como Interbank?",
       "answer": 1966,
       "scale": 50,
@@ -2033,7 +1939,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-268",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a PayPal?",
       "answer": 1998,
       "scale": 50,
@@ -2041,7 +1947,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-269",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Target?",
       "answer": 1902,
       "scale": 50,
@@ -2049,7 +1955,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-270",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Domino's?",
       "answer": 1960,
       "scale": 50,
@@ -2073,7 +1979,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-273",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a BMW?",
       "answer": 1916,
       "scale": 50,
@@ -2081,7 +1987,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-274",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Mercedes-Benz?",
       "answer": 1926,
       "scale": 50,
@@ -2089,7 +1995,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-275",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a General Motors?",
       "answer": 1908,
       "scale": 50,
@@ -2097,7 +2003,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-276",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Hyundai Motor?",
       "answer": 1967,
       "scale": 50,
@@ -2105,7 +2011,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-277",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Airbus?",
       "answer": 1970,
       "scale": 50,
@@ -2113,7 +2019,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-278",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Puma?",
       "answer": 1948,
       "scale": 50,
@@ -2121,23 +2027,15 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-279",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Converse?",
       "answer": 1908,
       "scale": 50,
       "fact": "Marquis Converse fazia calçados de borracha."
     },
     {
-      "id": "chute-dinheiro-e-negocios-280",
-      "difficulty": "hard",
-      "text": "Em que ano foi fundada a Azul Linhas Aéreas?",
-      "answer": 2008,
-      "scale": 50,
-      "fact": "David Neeleman também criou a JetBlue."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-281",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundado o Banco Safra no Brasil?",
       "answer": 1955,
       "scale": 50,
@@ -2145,7 +2043,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-282",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Votorantim?",
       "answer": 1918,
       "scale": 50,
@@ -2153,7 +2051,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-283",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Grendene?",
       "answer": 1971,
       "scale": 50,
@@ -2161,7 +2059,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-284",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Renner, como rede de lojas?",
       "answer": 1965,
       "scale": 50,
@@ -2169,7 +2067,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-285",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Riachuelo?",
       "answer": 1947,
       "scale": 50,
@@ -2177,7 +2075,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-286",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi fundada a Pernambucanas?",
       "answer": 1908,
       "scale": 50,
@@ -2185,7 +2083,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-287",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Ponto Frio foi fundado?",
       "answer": 1946,
       "scale": 50,
@@ -2193,7 +2091,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-288",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Carrefour foi fundada, na França?",
       "answer": 1959,
       "scale": 50,
@@ -2201,7 +2099,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-289",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano o Walmart chegou ao Brasil?",
       "answer": 1995,
       "scale": 50,
@@ -2209,23 +2107,15 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-290",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano a Ypê foi fundada?",
       "answer": 1950,
       "scale": 50,
       "fact": "Nasceu em Amparo, no interior paulista."
     },
     {
-      "id": "chute-dinheiro-e-negocios-291",
-      "difficulty": "hard",
-      "text": "Em que ano a Rede Globo foi inaugurada?",
-      "answer": 1965,
-      "scale": 50,
-      "fact": "Foi criada por Roberto Marinho, no Rio."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-292",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "text": "Em que ano foi criado o Plano Cruzado?",
       "answer": 1986,
       "scale": 50,
@@ -2512,14 +2402,6 @@
       "fact": "O cálculo é do IBPT, que soma tributos diretos e indiretos."
     },
     {
-      "id": "chute-dinheiro-e-negocios-331",
-      "difficulty": "medium",
-      "text": "Quantos reais tinha de valor o primeiro salário mínimo do real, arredondado?",
-      "answer": 65,
-      "unit": "reais",
-      "fact": "Era julho de 1994 e o valor exato era R$ 64,79."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-332",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a nota de 200 reais?",
@@ -2537,7 +2419,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-334",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos Ray Kroc tinha quando entrou no McDonald's?",
       "answer": 52,
       "unit": "anos",
@@ -2545,7 +2427,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-335",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto Ray Kroc pagou aos irmãos McDonald pela marca, em dólares?",
       "answer": 2700000,
       "unit": "dólares",
@@ -2553,7 +2435,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-336",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos dólares custava o primeiro hambúrguer dos irmãos McDonald, em centavos?",
       "answer": 15,
       "unit": "centavos",
@@ -2561,7 +2443,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-337",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos anos Coco Chanel tinha ao reabrir a marca, em 1954?",
       "answer": 71,
       "unit": "anos",
@@ -2569,7 +2451,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-338",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos milhões de dólares a primeira mensagem de Jack Dorsey no Twitter rendeu como NFT em 2021?",
       "answer": 2.9,
       "unit": "milhões",
@@ -2577,7 +2459,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-342",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bilhões de dólares a Kraft e a Heinz valiam ao se unirem em 2015, em negócio de 3G e Buffett?",
       "answer": 46,
       "unit": "bilhões",
@@ -2585,7 +2467,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-343",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantos bilhões de dólares a compra da Anheuser-Busch custou à InBev em 2008?",
       "answer": 52,
       "unit": "bilhões",
@@ -2809,7 +2691,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-373",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas agências o Bradesco tinha em 2023, aproximadamente?",
       "answer": 2500,
       "unit": "agências",
@@ -2817,7 +2699,7 @@
     },
     {
       "id": "chute-dinheiro-e-negocios-374",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quantas cooperativas existem no Sicredi, aproximadamente?",
       "answer": 100,
       "unit": "cooperativas",
@@ -2944,14 +2826,6 @@
       "fact": "Quatro delas formam um real."
     },
     {
-      "id": "chute-dinheiro-e-negocios-391",
-      "difficulty": "medium",
-      "text": "Qual é o valor de face da nota de maior valor do real, em reais?",
-      "answer": 200,
-      "unit": "reais",
-      "fact": "Ela foi lançada em 2020, com o lobo-guará."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-392",
       "difficulty": "medium",
       "text": "Quanto rendem R$ 1.000 em um ano, com 10% de juros simples, em reais?",
@@ -2968,17 +2842,8 @@
       "fact": "No segundo mês, os juros incidem sobre R$ 110."
     },
     {
-      "id": "chute-dinheiro-e-negocios-394",
-      "difficulty": "medium",
-      "text": "Quanto foi o IPCA de 1993, em porcentagem, aproximadamente?",
-      "answer": 2477,
-      "unit": "%",
-      "scale": 500,
-      "fact": "Foi um dos piores anos da hiperinflação."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-395",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto foi a inflação do Brasil em 1994, antes do real, em porcentagem, aproximadamente?",
       "answer": 916,
       "unit": "%",
@@ -2986,31 +2851,13 @@
       "fact": "O Plano Real mudou esse cenário."
     },
     {
-      "id": "chute-dinheiro-e-negocios-396",
-      "difficulty": "medium",
-      "text": "Qual foi o resultado do PIB brasileiro em 2020, em porcentagem, aproximadamente?",
-      "answer": -3.3,
-      "unit": "%",
-      "scale": 5,
-      "fact": "Foi o ano da pandemia."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-399",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "text": "Quanto variou o índice Ibovespa em 12 de março de 2020, em porcentagem?",
       "answer": -14.8,
       "unit": "%",
       "scale": 8,
       "fact": "A bolsa acionou o circuito de segurança naquele dia."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-400",
-      "difficulty": "medium",
-      "text": "Quantos dólares um barril de petróleo chegou a valer em abril de 2020, em contratos dos EUA?",
-      "answer": -37,
-      "unit": "dólares",
-      "scale": 30,
-      "fact": "Foi a primeira cotação abaixo de zero."
     },
     {
       "id": "chute-dinheiro-e-negocios-401",
@@ -3037,14 +2884,6 @@
       "answer": 3,
       "unit": "zeros",
       "fact": "Foi uma das várias trocas de moeda."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-404",
-      "difficulty": "hard",
-      "text": "Qual é o PIB mundial, em trilhões de dólares, aproximadamente?",
-      "answer": 105,
-      "unit": "trilhões",
-      "fact": "Os EUA e a China somam boa parte dele."
     },
     {
       "id": "chute-dinheiro-e-negocios-405",
