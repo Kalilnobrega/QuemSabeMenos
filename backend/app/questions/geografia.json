@@ -2,6 +2,7 @@
   "theme": "Geografia",
   "questions": [
     {
+      "id": "geografia-1",
       "difficulty": "easy",
       "text": "Qual é a capital da França?",
       "options": [
@@ -14,6 +15,7 @@
       "fact": "Paris é cortada pelo rio Sena e é chamada de Cidade Luz, em parte por ter sido pioneira na iluminação pública."
     },
     {
+      "id": "geografia-2",
       "difficulty": "easy",
       "text": "Qual é o maior oceano do planeta?",
       "options": [
@@ -26,6 +28,7 @@
       "fact": "O Pacífico cobre cerca de um terço da superfície da Terra, mais que todos os continentes juntos."
     },
     {
+      "id": "geografia-3",
       "difficulty": "easy",
       "text": "Em que continente fica o Egito?",
       "options": [
@@ -38,6 +41,7 @@
       "fact": "O Egito fica no nordeste da África, mas a península do Sinai está na Ásia. Por isso o país é transcontinental."
     },
     {
+      "id": "geografia-4",
       "difficulty": "easy",
       "text": "Qual país tem o formato de uma bota?",
       "options": [
@@ -50,6 +54,7 @@
       "fact": "A \"bota\" italiana até chuta uma \"bola\": a ilha da Sicília, bem na ponta."
     },
     {
+      "id": "geografia-5",
       "difficulty": "easy",
       "text": "Qual é a capital da Argentina?",
       "options": [
@@ -62,6 +67,7 @@
       "fact": "Montevidéu é a capital do Uruguai, Santiago a do Chile e Lima a do Peru."
     },
     {
+      "id": "geografia-6",
       "difficulty": "medium",
       "text": "Qual é o maior país do mundo em área?",
       "options": [
@@ -74,6 +80,7 @@
       "fact": "A Rússia tem mais de 17 milhões de km², o dobro do Brasil, e se espalha por 11 fusos horários."
     },
     {
+      "id": "geografia-7",
       "difficulty": "medium",
       "text": "Qual é a capital da Austrália?",
       "options": [
@@ -86,6 +93,7 @@
       "fact": "Camberra foi construída para ser capital como meio-termo na disputa entre Sydney e Melbourne, as maiores cidades do país."
     },
     {
+      "id": "geografia-8",
       "difficulty": "medium",
       "text": "Qual é a montanha mais alta do mundo?",
       "options": [
@@ -98,6 +106,7 @@
       "fact": "O Everest tem cerca de 8.849 metros e fica na fronteira entre o Nepal e a China, no Tibete."
     },
     {
+      "id": "geografia-9",
       "difficulty": "medium",
       "text": "Em que país fica Machu Picchu?",
       "options": [
@@ -110,6 +119,7 @@
       "fact": "Machu Picchu foi construída pelos incas no século XV, nos Andes, a cerca de 2.400 metros de altitude."
     },
     {
+      "id": "geografia-10",
       "difficulty": "medium",
       "text": "Qual é o menor país do mundo?",
       "options": [
@@ -122,6 +132,7 @@
       "fact": "O Vaticano tem menos de 0,5 km², fica dentro de Roma e é governado pelo papa."
     },
     {
+      "id": "geografia-11",
       "difficulty": "hard",
       "text": "Qual é a capital do Canadá?",
       "options": [
@@ -134,6 +145,7 @@
       "fact": "Toronto é a maior cidade do Canadá, mas a capital é Ottawa, escolhida pela rainha Vitória em 1857."
     },
     {
+      "id": "geografia-12",
       "difficulty": "hard",
       "text": "Qual é o deserto não polar mais seco do mundo?",
       "options": [
@@ -146,6 +158,7 @@
       "fact": "Algumas áreas do Atacama passam anos sem uma gota de chuva. Por parecer Marte, a NASA testa equipamentos lá."
     },
     {
+      "id": "geografia-13",
       "difficulty": "hard",
       "text": "Com quantos países o Brasil faz fronteira?",
       "options": [
@@ -158,6 +171,7 @@
       "fact": "O Brasil só não faz fronteira com dois países da América do Sul: Chile e Equador. E a Guiana Francesa conta como França!"
     },
     {
+      "id": "geografia-14",
       "difficulty": "hard",
       "text": "Qual é a capital da Turquia?",
       "options": [
@@ -170,6 +184,7 @@
       "fact": "Istambul é a maior e mais famosa cidade da Turquia, mas a capital é Ancara desde 1923."
     },
     {
+      "id": "geografia-15",
       "difficulty": "hard",
       "text": "Qual é o lago mais profundo do mundo?",
       "options": [
@@ -182,6 +197,7 @@
       "fact": "O Baikal, na Sibéria, tem mais de 1.600 metros de profundidade e guarda cerca de 20% da água doce de superfície do planeta."
     },
     {
+      "id": "geografia-16",
       "difficulty": "easy",
       "text": "Qual é a capital da Itália?",
       "options": [
@@ -194,6 +210,7 @@
       "fact": "Roma é chamada de Cidade Eterna e tem um país inteiro dentro dela: o Vaticano."
     },
     {
+      "id": "geografia-17",
       "difficulty": "easy",
       "text": "Qual é a capital da Espanha?",
       "options": [
@@ -206,6 +223,7 @@
       "fact": "Madri fica bem no centro da Península Ibérica e virou capital em 1561."
     },
     {
+      "id": "geografia-18",
       "difficulty": "easy",
       "text": "Qual é a capital de Portugal?",
       "options": [
@@ -218,6 +236,7 @@
       "fact": "Lisboa foi quase destruída por um terremoto seguido de tsunami em 1755."
     },
     {
+      "id": "geografia-19",
       "difficulty": "easy",
       "text": "Qual é a capital do Japão?",
       "options": [
@@ -230,6 +249,7 @@
       "fact": "Antes de Tóquio, a capital imperial era Quioto. E Tóquio já se chamou Edo."
     },
     {
+      "id": "geografia-20",
       "difficulty": "easy",
       "text": "Em que país fica o Big Ben?",
       "options": [
@@ -242,6 +262,7 @@
       "fact": "Big Ben é o nome do sino. A torre se chama Elizabeth Tower desde 2012."
     },
     {
+      "id": "geografia-21",
       "difficulty": "easy",
       "text": "Qual é o maior continente do mundo?",
       "options": [
@@ -254,6 +275,7 @@
       "fact": "A Ásia tem cerca de 30% das terras do planeta e mais da metade da população mundial."
     },
     {
+      "id": "geografia-22",
       "difficulty": "easy",
       "text": "Em que continente fica a Austrália?",
       "options": [
@@ -266,6 +288,7 @@
       "fact": "A Austrália é tão grande que costuma ser chamada de continente-ilha."
     },
     {
+      "id": "geografia-23",
       "difficulty": "easy",
       "text": "Que oceano banha o litoral brasileiro?",
       "options": [
@@ -278,6 +301,7 @@
       "fact": "O Brasil tem cerca de 7.400 km de litoral, todo voltado para o Atlântico."
     },
     {
+      "id": "geografia-24",
       "difficulty": "easy",
       "text": "Qual é o país mais populoso da América do Sul?",
       "options": [
@@ -290,6 +314,7 @@
       "fact": "O Brasil tem mais de 200 milhões de habitantes, cerca de metade da população do continente."
     },
     {
+      "id": "geografia-25",
       "difficulty": "easy",
       "text": "Qual é a capital dos Estados Unidos?",
       "options": [
@@ -302,6 +327,7 @@
       "fact": "Washington, D.C. não pertence a nenhum estado: fica no Distrito de Colúmbia."
     },
     {
+      "id": "geografia-26",
       "difficulty": "easy",
       "text": "Em que país fica a Grande Muralha?",
       "options": [
@@ -314,6 +340,7 @@
       "fact": "Somando todos os trechos, a muralha passa de 20 mil km. E não, ela não é visível da Lua a olho nu."
     },
     {
+      "id": "geografia-27",
       "difficulty": "easy",
       "text": "Qual é a capital da Inglaterra?",
       "options": [
@@ -326,6 +353,7 @@
       "fact": "Londres foi fundada pelos romanos, com o nome de Londinium, há quase 2 mil anos."
     },
     {
+      "id": "geografia-28",
       "difficulty": "easy",
       "text": "Que país é famoso pelos cangurus?",
       "options": [
@@ -338,6 +366,7 @@
       "fact": "O filhote de canguru nasce do tamanho de um feijão e termina de se desenvolver na bolsa da mãe."
     },
     {
+      "id": "geografia-29",
       "difficulty": "easy",
       "text": "Qual é a capital do México?",
       "options": [
@@ -350,6 +379,7 @@
       "fact": "A Cidade do México fica a mais de 2.200 metros de altitude e afunda alguns centímetros por ano, porque foi construída sobre um antigo lago."
     },
     {
+      "id": "geografia-30",
       "difficulty": "medium",
       "text": "Qual é o maior deserto quente do mundo?",
       "options": [
@@ -362,6 +392,7 @@
       "fact": "O Saara tem área parecida com a dos Estados Unidos. Contando os desertos frios, os maiores são a Antártida e o Ártico."
     },
     {
+      "id": "geografia-31",
       "difficulty": "medium",
       "text": "Qual é o maior país da África em área?",
       "options": [
@@ -374,6 +405,7 @@
       "fact": "A Argélia virou a maior da África em 2011, quando o Sudão do Sul se separou do Sudão."
     },
     {
+      "id": "geografia-32",
       "difficulty": "medium",
       "text": "Qual é a capital da Alemanha?",
       "options": [
@@ -386,6 +418,7 @@
       "fact": "Durante a divisão do país, a capital da Alemanha Ocidental era Bonn."
     },
     {
+      "id": "geografia-33",
       "difficulty": "medium",
       "text": "Qual é a capital da Rússia?",
       "options": [
@@ -398,6 +431,7 @@
       "fact": "São Petersburgo foi a capital do Império Russo por cerca de 200 anos, até 1918."
     },
     {
+      "id": "geografia-34",
       "difficulty": "medium",
       "text": "Qual é a capital do Egito?",
       "options": [
@@ -410,6 +444,7 @@
       "fact": "O Cairo é a maior cidade do mundo árabe e fica às margens do rio Nilo."
     },
     {
+      "id": "geografia-35",
       "difficulty": "medium",
       "text": "Desde 2023, qual é o país mais populoso do mundo?",
       "options": [
@@ -422,6 +457,7 @@
       "fact": "Segundo a ONU, a Índia ultrapassou a China em 2023. Os dois passam de 1,4 bilhão de habitantes."
     },
     {
+      "id": "geografia-36",
       "difficulty": "medium",
       "text": "Qual é a capital da Índia?",
       "options": [
@@ -434,6 +470,7 @@
       "fact": "Mumbai é a cidade mais populosa e o centro financeiro do país, mas a capital é Nova Délhi."
     },
     {
+      "id": "geografia-37",
       "difficulty": "medium",
       "text": "Qual é a capital da Grécia?",
       "options": [
@@ -446,6 +483,7 @@
       "fact": "Atenas é uma das cidades mais antigas do mundo, habitada há mais de 3 mil anos."
     },
     {
+      "id": "geografia-38",
       "difficulty": "medium",
       "text": "Qual é o maior país da América do Sul?",
       "options": [
@@ -458,6 +496,7 @@
       "fact": "O Brasil ocupa quase metade da área da América do Sul."
     },
     {
+      "id": "geografia-39",
       "difficulty": "medium",
       "text": "Que país é longo e estreito, com mais de 4 mil km de norte a sul?",
       "options": [
@@ -470,6 +509,7 @@
       "fact": "O Chile tem mais de 4 mil km de comprimento, mas em média só uns 180 km de largura."
     },
     {
+      "id": "geografia-40",
       "difficulty": "medium",
       "text": "Qual é a capital da China?",
       "options": [
@@ -482,6 +522,7 @@
       "fact": "Pequim significa \"capital do norte\". Xangai é a cidade mais populosa do país."
     },
     {
+      "id": "geografia-41",
       "difficulty": "medium",
       "text": "Em que continente fica o monte Kilimanjaro?",
       "options": [
@@ -494,6 +535,7 @@
       "fact": "O Kilimanjaro, na Tanzânia, é a montanha mais alta da África, com quase 5.900 metros."
     },
     {
+      "id": "geografia-42",
       "difficulty": "medium",
       "text": "Qual é a capital da Colômbia?",
       "options": [
@@ -506,6 +548,7 @@
       "fact": "Bogotá fica a cerca de 2.600 metros de altitude, uma das capitais mais altas do mundo."
     },
     {
+      "id": "geografia-43",
       "difficulty": "medium",
       "text": "Que linha imaginária divide a Terra em hemisférios Norte e Sul?",
       "options": [
@@ -518,6 +561,7 @@
       "fact": "A Linha do Equador corta o Brasil, passando por estados como Amapá, Pará, Amazonas e Roraima."
     },
     {
+      "id": "geografia-44",
       "difficulty": "hard",
       "text": "Qual é o rio mais extenso da Europa?",
       "options": [
@@ -530,6 +574,7 @@
       "fact": "O Volga corre todo dentro da Rússia e deságua no mar Cáspio."
     },
     {
+      "id": "geografia-45",
       "difficulty": "hard",
       "text": "Que estreito separa a Europa da África?",
       "options": [
@@ -542,6 +587,7 @@
       "fact": "No ponto mais estreito, são só uns 14 km entre a Espanha e o Marrocos."
     },
     {
+      "id": "geografia-46",
       "difficulty": "hard",
       "text": "Qual é a capital da Nova Zelândia?",
       "options": [
@@ -554,6 +600,7 @@
       "fact": "Auckland é a maior cidade, mas a capital é Wellington, a capital nacional mais ao sul do mundo."
     },
     {
+      "id": "geografia-47",
       "difficulty": "hard",
       "text": "Qual é a capital da Suíça?",
       "options": [
@@ -566,6 +613,7 @@
       "fact": "Oficialmente, a Constituição suíça nem fala em capital: Berna é chamada de \"cidade federal\"."
     },
     {
+      "id": "geografia-48",
       "difficulty": "hard",
       "text": "Qual é o ponto mais baixo em terra firme no planeta?",
       "options": [
@@ -578,6 +626,7 @@
       "fact": "As margens do Mar Morto ficam mais de 400 metros abaixo do nível do mar. A água é tão salgada que dá para boiar sem esforço."
     },
     {
+      "id": "geografia-49",
       "difficulty": "hard",
       "text": "Qual é a capital do Marrocos?",
       "options": [
@@ -590,6 +639,7 @@
       "fact": "Casablanca é a maior cidade, mas a capital é Rabat."
     },
     {
+      "id": "geografia-50",
       "difficulty": "hard",
       "text": "Qual rio europeu atravessa mais países?",
       "options": [
@@ -602,6 +652,7 @@
       "fact": "O Danúbio passa por 10 países e quatro capitais: Viena, Bratislava, Budapeste e Belgrado."
     },
     {
+      "id": "geografia-51",
       "difficulty": "hard",
       "text": "Que país é chamado de Terra do Sol Nascente?",
       "options": [
@@ -614,6 +665,7 @@
       "fact": "O nome do Japão no idioma local, Nihon, significa algo como \"origem do sol\"."
     },
     {
+      "id": "geografia-52",
       "difficulty": "hard",
       "text": "Quantos fusos horários tem o território brasileiro?",
       "options": [
@@ -626,6 +678,7 @@
       "fact": "Contando as ilhas oceânicas, como Fernando de Noronha, são 4. O horário de Brasília é o oficial do país."
     },
     {
+      "id": "geografia-53",
       "difficulty": "hard",
       "text": "Em que país fica Petra, a cidade esculpida na rocha?",
       "options": [
@@ -638,6 +691,7 @@
       "fact": "Petra foi construída pelos nabateus há mais de 2 mil anos e é uma das sete maravilhas do mundo moderno."
     },
     {
+      "id": "geografia-54",
       "difficulty": "hard",
       "text": "Qual é a capital do Vietnã?",
       "options": [
@@ -650,6 +704,7 @@
       "fact": "Ho Chi Minh, a antiga Saigon, é a maior cidade, mas a capital é Hanói."
     },
     {
+      "id": "geografia-55",
       "difficulty": "hard",
       "text": "Que país tem a maior área de floresta tropical do mundo?",
       "options": [
@@ -662,6 +717,7 @@
       "fact": "Cerca de 60% da Amazônia fica em território brasileiro."
     },
     {
+      "id": "geografia-56",
       "difficulty": "hard",
       "text": "Em que país fica o Salar de Uyuni, o maior deserto de sal do mundo?",
       "options": [
@@ -674,6 +730,7 @@
       "fact": "Depois das chuvas, uma fina camada de água transforma o salar num espelho gigante."
     },
     {
+      "id": "geografia-57",
       "difficulty": "impossible",
       "text": "Qual é a capital do Butão?",
       "options": [
@@ -688,6 +745,7 @@
       "fact": "O Butão mede o progresso pela \"Felicidade Interna Bruta\", e Thimphu é famosa por não ter semáforos."
     },
     {
+      "id": "geografia-58",
       "difficulty": "impossible",
       "text": "Contando os territórios ultramarinos, que país tem mais fusos horários?",
       "options": [
@@ -702,6 +760,7 @@
       "fact": "Com territórios espalhados pelo mundo, a França tem 12 fusos horários, ou 13 contando sua área reivindicada na Antártida."
     },
     {
+      "id": "geografia-59",
       "difficulty": "impossible",
       "text": "Qual é a capital do Cazaquistão?",
       "options": [
@@ -716,6 +775,7 @@
       "fact": "A cidade já se chamou Akmola e Nur-Sultan. Desde 2022, voltou a se chamar Astana."
     },
     {
+      "id": "geografia-60",
       "difficulty": "impossible",
       "text": "Que país tem mais lagos no mundo?",
       "options": [
@@ -730,6 +790,7 @@
       "fact": "Estima-se que o Canadá tenha mais da metade de todos os lagos do planeta."
     },
     {
+      "id": "geografia-61",
       "difficulty": "impossible",
       "text": "Qual é o único país cuja bandeira não tem quatro lados?",
       "options": [
@@ -744,6 +805,7 @@
       "fact": "A bandeira do Nepal é formada por dois triângulos. Suíça e Vaticano têm bandeiras quadradas."
     },
     {
+      "id": "geografia-62",
       "difficulty": "impossible",
       "text": "Qual é o rio mais extenso que corre inteiro dentro de um só país?",
       "options": [
@@ -758,6 +820,7 @@
       "fact": "O Yangtzé tem cerca de 6.300 km, todos dentro da China."
     },
     {
+      "id": "geografia-63",
       "difficulty": "impossible",
       "text": "Com quantos países a Rússia faz fronteira por terra?",
       "options": [
@@ -772,6 +835,7 @@
       "fact": "Entre eles estão Noruega, Polônia, China, Mongólia e até a Coreia do Norte."
     },
     {
+      "id": "geografia-64",
       "difficulty": "hard",
       "text": "Qual é o maior país que fica inteiramente na Europa?",
       "options": [
@@ -784,6 +848,7 @@
       "fact": "A Rússia é maior, mas a maior parte do território russo fica na Ásia."
     },
     {
+      "id": "geografia-65",
       "difficulty": "hard",
       "text": "Que estreito separa a Ásia da América do Norte?",
       "options": [
@@ -796,6 +861,7 @@
       "fact": "No ponto mais estreito, Rússia e Alasca ficam a cerca de 82 km de distância."
     },
     {
+      "id": "geografia-66",
       "difficulty": "hard",
       "text": "Qual é a capital da Nigéria?",
       "options": [
@@ -808,6 +874,7 @@
       "fact": "Abuja foi planejada e substituiu Lagos como capital em 1991."
     },
     {
+      "id": "geografia-67",
       "difficulty": "hard",
       "text": "Que cidade boliviana é a sede do governo e a capital mais alta do mundo?",
       "options": [
@@ -820,6 +887,7 @@
       "fact": "La Paz fica a cerca de 3.600 metros de altitude; a capital constitucional é Sucre."
     },
     {
+      "id": "geografia-68",
       "difficulty": "hard",
       "text": "Qual é a capital da Islândia?",
       "options": [
@@ -832,6 +900,7 @@
       "fact": "Reykjavík é a capital mais ao norte do mundo entre os países soberanos."
     },
     {
+      "id": "geografia-69",
       "difficulty": "hard",
       "text": "Qual é a capital do Paquistão?",
       "options": [
@@ -844,6 +913,7 @@
       "fact": "Islamabad foi construída nos anos 1960 para ser a nova capital, no lugar de Karachi."
     },
     {
+      "id": "geografia-70",
       "difficulty": "hard",
       "text": "Qual é a capital da Etiópia?",
       "options": [
@@ -856,6 +926,7 @@
       "fact": "Adis Abeba é a sede da União Africana."
     },
     {
+      "id": "geografia-71",
       "difficulty": "hard",
       "text": "Qual é a capital da Croácia?",
       "options": [
@@ -868,6 +939,7 @@
       "fact": "Split e Dubrovnik, no litoral, são as cidades croatas mais visitadas."
     },
     {
+      "id": "geografia-72",
       "difficulty": "hard",
       "text": "Que país tem o maior número de ilhas do mundo?",
       "options": [
@@ -880,6 +952,7 @@
       "fact": "A Suécia tem mais de 260 mil ilhas, a maioria pequena e desabitada."
     },
     {
+      "id": "geografia-73",
       "difficulty": "hard",
       "text": "Qual é considerada a montanha mais alta da Europa?",
       "options": [
@@ -892,6 +965,7 @@
       "fact": "O Elbrus fica no Cáucaso russo e tem 5.642 metros."
     },
     {
+      "id": "geografia-74",
       "difficulty": "hard",
       "text": "Qual é a capital do estado americano da Califórnia?",
       "options": [
@@ -904,6 +978,7 @@
       "fact": "Muitas capitais de estados americanos não são as maiores cidades, como Sacramento e Albany."
     },
     {
+      "id": "geografia-75",
       "difficulty": "hard",
       "text": "Qual é o país com a maior população muçulmana do mundo?",
       "options": [
@@ -916,6 +991,7 @@
       "fact": "A Indonésia tem mais de 200 milhões de muçulmanos."
     },
     {
+      "id": "geografia-76",
       "difficulty": "hard",
       "text": "Qual é o único país que fica nos quatro hemisférios: Norte, Sul, Leste e Oeste?",
       "options": [
@@ -928,6 +1004,7 @@
       "fact": "As ilhas de Kiribati se espalham dos dois lados da Linha do Equador e do meridiano 180°."
     },
     {
+      "id": "geografia-77",
       "difficulty": "hard",
       "text": "Qual é o país com a maior densidade populacional do mundo?",
       "options": [
@@ -940,6 +1017,7 @@
       "fact": "Mônaco tem cerca de 2 km² e quase 40 mil habitantes."
     },
     {
+      "id": "geografia-78",
       "difficulty": "hard",
       "text": "Qual é o maior lago da África?",
       "options": [
@@ -952,6 +1030,7 @@
       "fact": "O Lago Vitória é dividido entre Uganda, Quênia e Tanzânia."
     },
     {
+      "id": "geografia-79",
       "difficulty": "hard",
       "text": "Que rio atravessa a cidade de Bagdá?",
       "options": [
@@ -964,6 +1043,7 @@
       "fact": "A região entre os rios Tigre e Eufrates era a Mesopotâmia, berço de antigas civilizações."
     },
     {
+      "id": "geografia-80",
       "difficulty": "hard",
       "text": "Que rio forma parte da fronteira entre os Estados Unidos e o México?",
       "options": [
@@ -976,6 +1056,7 @@
       "fact": "No México, o mesmo rio é chamado de Río Bravo."
     },
     {
+      "id": "geografia-81",
       "difficulty": "hard",
       "text": "Que país tem o litoral mais extenso do mundo?",
       "options": [
@@ -988,6 +1069,7 @@
       "fact": "Contando todas as ilhas, o litoral canadense passa de 200 mil km."
     },
     {
+      "id": "geografia-82",
       "difficulty": "hard",
       "text": "Qual é o país com a menor altitude média do mundo?",
       "options": [
@@ -1000,6 +1082,7 @@
       "fact": "Por isso, as Maldivas estão entre os países mais ameaçados pela subida do nível do mar."
     },
     {
+      "id": "geografia-83",
       "difficulty": "hard",
       "text": "Qual é o país com a maior altitude média do mundo?",
       "options": [
@@ -1012,6 +1095,7 @@
       "fact": "O Butão fica no Himalaia e mede seu sucesso pela \"Felicidade Interna Bruta\"."
     },
     {
+      "id": "geografia-84",
       "difficulty": "hard",
       "text": "Onde fica o ponto mais profundo dos oceanos?",
       "options": [
@@ -1024,6 +1108,7 @@
       "fact": "O Abismo Challenger, na Fossa das Marianas, tem quase 11 mil metros de profundidade."
     },
     {
+      "id": "geografia-85",
       "difficulty": "hard",
       "text": "Qual é a maior ilha do Mediterrâneo?",
       "options": [
@@ -1036,6 +1121,7 @@
       "fact": "Na Sicília fica o Etna, o vulcão ativo mais alto da Europa."
     },
     {
+      "id": "geografia-86",
       "difficulty": "hard",
       "text": "A que país pertence a ilha da Córsega?",
       "options": [
@@ -1048,6 +1134,7 @@
       "fact": "Napoleão Bonaparte nasceu na Córsega, em 1769."
     },
     {
+      "id": "geografia-87",
       "difficulty": "hard",
       "text": "A que país pertencem as Ilhas Canárias?",
       "options": [
@@ -1060,6 +1147,7 @@
       "fact": "As Canárias ficam no Atlântico, perto da costa do Marrocos."
     },
     {
+      "id": "geografia-88",
       "difficulty": "hard",
       "text": "A que país pertencem os Açores?",
       "options": [
@@ -1072,6 +1160,7 @@
       "fact": "O arquipélago fica no meio do Atlântico, a cerca de 1.400 km de Lisboa."
     },
     {
+      "id": "geografia-89",
       "difficulty": "hard",
       "text": "Que país controla as Ilhas Malvinas (Falklands)?",
       "options": [
@@ -1084,6 +1173,7 @@
       "fact": "A Argentina reivindica as ilhas e lutou por elas numa guerra em 1982."
     },
     {
+      "id": "geografia-90",
       "difficulty": "hard",
       "text": "A que país pertence a ilha da Tasmânia?",
       "options": [
@@ -1096,6 +1186,7 @@
       "fact": "A Tasmânia dá nome ao diabo-da-tasmânia, marsupial que só vive lá."
     },
     {
+      "id": "geografia-91",
       "difficulty": "hard",
       "text": "Qual é a capital de Mianmar?",
       "options": [
@@ -1108,6 +1199,7 @@
       "fact": "Naypyidaw substituiu Yangon como capital em 2006."
     },
     {
+      "id": "geografia-92",
       "difficulty": "hard",
       "text": "Qual é a capital do Senegal?",
       "options": [
@@ -1120,6 +1212,7 @@
       "fact": "O famoso rali Paris-Dakar terminava na capital senegalesa."
     },
     {
+      "id": "geografia-93",
       "difficulty": "hard",
       "text": "Qual é a capital do Afeganistão?",
       "options": [
@@ -1132,6 +1225,7 @@
       "fact": "Cabul fica a cerca de 1.800 metros de altitude, entre montanhas."
     },
     {
+      "id": "geografia-94",
       "difficulty": "hard",
       "text": "Qual é a capital da Mongólia?",
       "options": [
@@ -1144,6 +1238,7 @@
       "fact": "Ulan Bator costuma ser considerada a capital mais fria do mundo."
     },
     {
+      "id": "geografia-95",
       "difficulty": "hard",
       "text": "Qual é a capital da Bósnia e Herzegovina?",
       "options": [
@@ -1156,6 +1251,7 @@
       "fact": "O assassinato do arquiduque Francisco Ferdinando, em Sarajevo, em 1914, deflagrou a Primeira Guerra."
     },
     {
+      "id": "geografia-96",
       "difficulty": "hard",
       "text": "Qual é a capital da Sérvia?",
       "options": [
@@ -1168,6 +1264,7 @@
       "fact": "Belgrado fica no encontro dos rios Sava e Danúbio."
     },
     {
+      "id": "geografia-97",
       "difficulty": "hard",
       "text": "Qual é a capital da Romênia?",
       "options": [
@@ -1180,6 +1277,7 @@
       "fact": "O Palácio do Parlamento, em Bucareste, é um dos maiores prédios do mundo."
     },
     {
+      "id": "geografia-98",
       "difficulty": "hard",
       "text": "Qual é a capital de Honduras?",
       "options": [
@@ -1192,6 +1290,7 @@
       "fact": "Tegucigalpa fica num vale cercado de montanhas."
     },
     {
+      "id": "geografia-99",
       "difficulty": "hard",
       "text": "Qual é a capital da Costa Rica?",
       "options": [
@@ -1204,6 +1303,7 @@
       "fact": "A Costa Rica aboliu o exército em 1948."
     },
     {
+      "id": "geografia-100",
       "difficulty": "hard",
       "text": "Além da Bolívia, que outro país da América do Sul não tem saída para o mar?",
       "options": [
@@ -1216,6 +1316,7 @@
       "fact": "Mesmo sem mar, o Paraguai tem uma marinha, que patrulha os rios."
     },
     {
+      "id": "geografia-101",
       "difficulty": "hard",
       "text": "Que país fica totalmente cercado pela África do Sul?",
       "options": [
@@ -1228,6 +1329,7 @@
       "fact": "Todo o território do Lesoto fica acima de 1.000 metros de altitude."
     },
     {
+      "id": "geografia-102",
       "difficulty": "hard",
       "text": "Que país, além do Vaticano, fica totalmente cercado pela Itália?",
       "options": [
@@ -1240,6 +1342,7 @@
       "fact": "San Marino é considerada a república mais antiga do mundo ainda existente."
     },
     {
+      "id": "geografia-103",
       "difficulty": "hard",
       "text": "Qual é o maior país do mundo sem saída para o mar?",
       "options": [
@@ -1252,6 +1355,7 @@
       "fact": "O Cazaquistão é o nono maior país do mundo em área."
     },
     {
+      "id": "geografia-104",
       "difficulty": "hard",
       "text": "Contando os desertos polares, qual é o maior deserto do mundo?",
       "options": [
@@ -1264,6 +1368,7 @@
       "fact": "Deserto se define pela pouca chuva, não pelo calor."
     },
     {
+      "id": "geografia-105",
       "difficulty": "hard",
       "text": "Que país tem o maior número de línguas faladas?",
       "options": [
@@ -1276,6 +1381,7 @@
       "fact": "Em Papua-Nova Guiné se falam mais de 800 línguas."
     },
     {
+      "id": "geografia-106",
       "difficulty": "hard",
       "text": "Que paralelo serviu de base para dividir as duas Coreias?",
       "options": [
@@ -1288,6 +1394,7 @@
       "fact": "Entre os dois países há uma zona desmilitarizada de 4 km de largura."
     },
     {
+      "id": "geografia-107",
       "difficulty": "hard",
       "text": "Qual é o país mais novo do mundo, independente desde 2011?",
       "options": [
@@ -1300,6 +1407,7 @@
       "fact": "O Sudão do Sul se separou do Sudão depois de um referendo."
     },
     {
+      "id": "geografia-108",
       "difficulty": "hard",
       "text": "Qual é o único país da América do Sul que tem o inglês como língua oficial?",
       "options": [
@@ -1312,6 +1420,7 @@
       "fact": "No vizinho Suriname, a língua oficial é o holandês."
     },
     {
+      "id": "geografia-109",
       "difficulty": "hard",
       "text": "Em que país fica a histórica cidade de Timbuktu?",
       "options": [
@@ -1324,6 +1433,7 @@
       "fact": "Timbuktu foi um grande centro de comércio e de estudos islâmicos no século XV."
     },
     {
+      "id": "geografia-110",
       "difficulty": "hard",
       "text": "Qual é a capital oficial da Tanzânia?",
       "options": [
@@ -1336,6 +1446,7 @@
       "fact": "Dar es Salaam é a maior cidade, mas a capital oficial é Dodoma."
     },
     {
+      "id": "geografia-111",
       "difficulty": "hard",
       "text": "Que rio corta a cidade de Moscou?",
       "options": [
@@ -1348,6 +1459,7 @@
       "fact": "O rio deu nome à cidade."
     },
     {
+      "id": "geografia-112",
       "difficulty": "hard",
       "text": "Que rio passa por Roma?",
       "options": [
@@ -1360,6 +1472,7 @@
       "fact": "Segundo a lenda, Rômulo e Remo foram deixados às margens do Tibre."
     },
     {
+      "id": "geografia-113",
       "difficulty": "hard",
       "text": "Que rio passa por Lisboa?",
       "options": [
@@ -1372,6 +1485,7 @@
       "fact": "A Ponte 25 de Abril, sobre o Tejo, lembra a Golden Gate de São Francisco."
     },
     {
+      "id": "geografia-114",
       "difficulty": "hard",
       "text": "Que rio passa a oeste de Manhattan, em Nova York?",
       "options": [
@@ -1384,6 +1498,7 @@
       "fact": "Em 2009, um avião fez um pouso de emergência no Hudson e todos sobreviveram."
     },
     {
+      "id": "geografia-115",
       "difficulty": "hard",
       "text": "Em que país fica o ponto mais ao norte da América do Sul?",
       "options": [
@@ -1396,6 +1511,7 @@
       "fact": "O ponto é a Punta Gallinas, na península de La Guajira."
     },
     {
+      "id": "geografia-116",
       "difficulty": "hard",
       "text": "Que golfo fica entre o Irã e a Península Arábica?",
       "options": [
@@ -1408,6 +1524,7 @@
       "fact": "Boa parte do petróleo do mundo sai pelo Golfo Pérsico, através do Estreito de Ormuz."
     },
     {
+      "id": "geografia-117",
       "difficulty": "hard",
       "text": "Qual é a segunda montanha mais alta do mundo?",
       "options": [
@@ -1420,6 +1537,7 @@
       "fact": "O K2 fica na fronteira entre o Paquistão e a China."
     },
     {
+      "id": "geografia-118",
       "difficulty": "hard",
       "text": "Em que país fica o Monte Ararat, onde a Arca de Noé teria parado?",
       "options": [
@@ -1432,6 +1550,7 @@
       "fact": "O Ararat aparece no brasão da Armênia, embora hoje fique em território turco."
     },
     {
+      "id": "geografia-119",
       "difficulty": "hard",
       "text": "Em que país fica Samarcanda, antiga cidade da Rota da Seda?",
       "options": [
@@ -1444,6 +1563,7 @@
       "fact": "A praça Registan, em Samarcanda, é cercada por enormes construções cobertas de azulejos azuis."
     },
     {
+      "id": "geografia-120",
       "difficulty": "hard",
       "text": "Que ilha é dividida entre Indonésia, Malásia e Brunei?",
       "options": [
@@ -1456,6 +1576,7 @@
       "fact": "Bornéu é a terceira maior ilha do mundo."
     },
     {
+      "id": "geografia-121",
       "difficulty": "hard",
       "text": "Qual é a capital da Letônia?",
       "options": [
@@ -1468,6 +1589,7 @@
       "fact": "Tallinn é a capital da Estônia, e Vilnius, da Lituânia: os três países bálticos."
     },
     {
+      "id": "geografia-122",
       "difficulty": "easy",
       "text": "Qual é a capital do Chile?",
       "options": [
@@ -1480,6 +1602,7 @@
       "fact": "Santiago fica num vale ao pé da Cordilheira dos Andes."
     },
     {
+      "id": "geografia-123",
       "difficulty": "easy",
       "text": "Qual é a capital do Peru?",
       "options": [
@@ -1492,6 +1615,7 @@
       "fact": "Lima é uma das capitais mais secas do mundo: quase nunca chove de verdade."
     },
     {
+      "id": "geografia-124",
       "difficulty": "easy",
       "text": "Qual é a capital do Uruguai?",
       "options": [
@@ -1504,6 +1628,7 @@
       "fact": "Montevidéu concentra cerca de 40% da população do Uruguai."
     },
     {
+      "id": "geografia-125",
       "difficulty": "easy",
       "text": "Qual é a capital do Paraguai?",
       "options": [
@@ -1516,6 +1641,7 @@
       "fact": "Fundada em 1537, Assunção é uma das cidades mais antigas da América do Sul."
     },
     {
+      "id": "geografia-126",
       "difficulty": "easy",
       "text": "Qual é a capital da Venezuela?",
       "options": [
@@ -1528,6 +1654,7 @@
       "fact": "Caracas fica num vale a cerca de 900 metros de altitude, bem perto do mar do Caribe."
     },
     {
+      "id": "geografia-127",
       "difficulty": "easy",
       "text": "Qual é a capital da Coreia do Sul?",
       "options": [
@@ -1540,6 +1667,7 @@
       "fact": "Cerca de metade dos sul-coreanos vive na região metropolitana de Seul."
     },
     {
+      "id": "geografia-128",
       "difficulty": "easy",
       "text": "Qual é a capital da Irlanda?",
       "options": [
@@ -1552,6 +1680,7 @@
       "fact": "Belfast é a capital da Irlanda do Norte, que faz parte do Reino Unido."
     },
     {
+      "id": "geografia-129",
       "difficulty": "easy",
       "text": "Qual é a capital dos Países Baixos (Holanda)?",
       "options": [
@@ -1564,6 +1693,7 @@
       "fact": "Amsterdã é a capital, mas o governo e o Parlamento ficam em Haia."
     },
     {
+      "id": "geografia-130",
       "difficulty": "easy",
       "text": "Qual é a capital da Bélgica?",
       "options": [
@@ -1576,6 +1706,7 @@
       "fact": "Bruxelas também é sede da União Europeia e da OTAN."
     },
     {
+      "id": "geografia-131",
       "difficulty": "easy",
       "text": "Qual é a capital da Áustria?",
       "options": [
@@ -1588,6 +1719,7 @@
       "fact": "Viena foi o centro da música clássica: lá viveram Haydn, Mozart e Beethoven."
     },
     {
+      "id": "geografia-132",
       "difficulty": "easy",
       "text": "Qual é a capital de Cuba?",
       "options": [
@@ -1600,6 +1732,7 @@
       "fact": "Os carros americanos dos anos 1950 que ainda rodam pelas ruas viraram símbolo de Havana."
     },
     {
+      "id": "geografia-133",
       "difficulty": "easy",
       "text": "Em que país fica a Torre Eiffel?",
       "options": [
@@ -1612,6 +1745,7 @@
       "fact": "Na inauguração, em 1889, a torre foi muito criticada por artistas que a achavam feia."
     },
     {
+      "id": "geografia-134",
       "difficulty": "easy",
       "text": "Em que cidade fica a Estátua da Liberdade?",
       "options": [
@@ -1624,6 +1758,7 @@
       "fact": "A estátua foi um presente da França aos Estados Unidos, inaugurado em 1886."
     },
     {
+      "id": "geografia-135",
       "difficulty": "easy",
       "text": "Em que país fica o Coliseu?",
       "options": [
@@ -1636,6 +1771,7 @@
       "fact": "O Coliseu podia receber cerca de 50 mil espectadores."
     },
     {
+      "id": "geografia-136",
       "difficulty": "easy",
       "text": "Em que cidade os gondoleiros conduzem barcos pelos canais?",
       "options": [
@@ -1648,6 +1784,7 @@
       "fact": "Veneza é formada por mais de 100 ilhas ligadas por pontes."
     },
     {
+      "id": "geografia-137",
       "difficulty": "easy",
       "text": "Em que país fica o Monte Fuji?",
       "options": [
@@ -1660,6 +1797,7 @@
       "fact": "O Monte Fuji é um vulcão, e sua última erupção foi em 1707."
     },
     {
+      "id": "geografia-138",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Dubai?",
       "options": [
@@ -1672,6 +1810,7 @@
       "fact": "Dubai tem o prédio mais alto do mundo, o Burj Khalifa, com 828 metros."
     },
     {
+      "id": "geografia-139",
       "difficulty": "easy",
       "text": "Qual é o rio mais famoso do Egito?",
       "options": [
@@ -1684,6 +1823,7 @@
       "fact": "O Nilo corre de sul para norte e deságua no mar Mediterrâneo."
     },
     {
+      "id": "geografia-140",
       "difficulty": "easy",
       "text": "Que oceano fica ao redor do Polo Norte?",
       "options": [
@@ -1696,6 +1836,7 @@
       "fact": "O Ártico é o menor e o mais raso dos oceanos."
     },
     {
+      "id": "geografia-141",
       "difficulty": "easy",
       "text": "Qual é o continente mais frio do planeta?",
       "options": [
@@ -1708,6 +1849,7 @@
       "fact": "A menor temperatura já registrada na Terra, -89,2 °C, foi medida na Antártida."
     },
     {
+      "id": "geografia-142",
       "difficulty": "easy",
       "text": "Além do Brasil e do Paraguai, que país fica na Tríplice Fronteira de Foz do Iguaçu?",
       "options": [
@@ -1720,6 +1862,7 @@
       "fact": "No Marco das Três Fronteiras, dá para ver Brasil, Argentina e Paraguai ao mesmo tempo."
     },
     {
+      "id": "geografia-143",
       "difficulty": "easy",
       "text": "Qual é o menor continente do mundo?",
       "options": [
@@ -1732,6 +1875,7 @@
       "fact": "A Austrália sozinha ocupa a maior parte da área da Oceania."
     },
     {
+      "id": "geografia-144",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Barcelona?",
       "options": [
@@ -1744,6 +1888,7 @@
       "fact": "Em Barcelona também se fala catalão, a língua da região da Catalunha."
     },
     {
+      "id": "geografia-145",
       "difficulty": "easy",
       "text": "Em que país fica a ilha de Bali?",
       "options": [
@@ -1756,6 +1901,7 @@
       "fact": "A Indonésia é formada por milhares de ilhas, e Bali é a mais famosa entre os turistas."
     },
     {
+      "id": "geografia-146",
       "difficulty": "easy",
       "text": "As Cataratas do Niágara ficam na fronteira entre quais países?",
       "options": [
@@ -1768,6 +1914,7 @@
       "fact": "Durante a noite, parte da água é desviada para usinas hidrelétricas."
     },
     {
+      "id": "geografia-147",
       "difficulty": "easy",
       "text": "Que cordilheira atravessa a América do Sul de norte a sul?",
       "options": [
@@ -1780,6 +1927,7 @@
       "fact": "Os Andes são a cordilheira mais longa do mundo, com cerca de 7 mil quilômetros."
     },
     {
+      "id": "geografia-148",
       "difficulty": "easy",
       "text": "Em que cordilheira fica o Monte Everest?",
       "options": [
@@ -1792,6 +1940,7 @@
       "fact": "O Himalaia continua subindo alguns milímetros por ano, empurrado pelo choque de placas tectônicas."
     },
     {
+      "id": "geografia-149",
       "difficulty": "easy",
       "text": "Em que país fica o Kremlin?",
       "options": [
@@ -1804,6 +1953,7 @@
       "fact": "\"Kremlin\" quer dizer \"fortaleza\" em russo."
     },
     {
+      "id": "geografia-150",
       "difficulty": "easy",
       "text": "Dentro de que cidade fica o Vaticano?",
       "options": [
@@ -1816,6 +1966,7 @@
       "fact": "O Vaticano é um país independente, cercado pela cidade de Roma."
     },
     {
+      "id": "geografia-151",
       "difficulty": "easy",
       "text": "Em que país fica a Acrópole, com o Partenon?",
       "options": [
@@ -1828,6 +1979,7 @@
       "fact": "O Partenon foi construído em homenagem à deusa Atena."
     },
     {
+      "id": "geografia-152",
       "difficulty": "easy",
       "text": "Qual é o país mais populoso das Américas?",
       "options": [
@@ -1840,6 +1992,7 @@
       "fact": "O Brasil é o segundo país mais populoso das Américas."
     },
     {
+      "id": "geografia-153",
       "difficulty": "easy",
       "text": "Em que país fica Cancún?",
       "options": [
@@ -1852,6 +2005,7 @@
       "fact": "Cancún fica na península de Yucatán, perto de ruínas maias como Chichén Itzá."
     },
     {
+      "id": "geografia-154",
       "difficulty": "easy",
       "text": "Em que país fica Bariloche?",
       "options": [
@@ -1864,6 +2018,7 @@
       "fact": "Bariloche fica na Patagônia, às margens do lago Nahuel Huapi."
     },
     {
+      "id": "geografia-155",
       "difficulty": "easy",
       "text": "Qual é a maior ilha do mundo?",
       "options": [
@@ -1876,6 +2031,7 @@
       "fact": "A Groenlândia pertence ao Reino da Dinamarca."
     },
     {
+      "id": "geografia-156",
       "difficulty": "easy",
       "text": "Qual destes países fica na Ásia?",
       "options": [
@@ -1888,6 +2044,7 @@
       "fact": "A Tailândia é o único país do Sudeste Asiático que nunca foi colônia europeia."
     },
     {
+      "id": "geografia-157",
       "difficulty": "easy",
       "text": "Em que direção o Sol nasce?",
       "options": [
@@ -1900,6 +2057,7 @@
       "fact": "O Sol nasce exatamente no leste apenas nos equinócios; no resto do ano, um pouco desviado."
     },
     {
+      "id": "geografia-158",
       "difficulty": "easy",
       "text": "Em que hemisfério fica a maior parte do Brasil?",
       "options": [
@@ -1912,6 +2070,7 @@
       "fact": "Uma pequena parte do Norte do país fica acima da Linha do Equador."
     },
     {
+      "id": "geografia-159",
       "difficulty": "easy",
       "text": "Qual é o maior país da América do Norte em área?",
       "options": [
@@ -1924,6 +2083,7 @@
       "fact": "O Canadá é o segundo maior país do mundo, atrás só da Rússia."
     },
     {
+      "id": "geografia-160",
       "difficulty": "easy",
       "text": "Com que país Portugal faz fronteira por terra?",
       "options": [
@@ -1936,6 +2096,7 @@
       "fact": "A Espanha é o único vizinho terrestre de Portugal."
     },
     {
+      "id": "geografia-161",
       "difficulty": "easy",
       "text": "Que mar fica entre a Europa e a África?",
       "options": [
@@ -1948,6 +2109,7 @@
       "fact": "\"Mediterrâneo\" quer dizer \"no meio das terras\"."
     },
     {
+      "id": "geografia-162",
       "difficulty": "easy",
       "text": "Que país faz fronteira com os Estados Unidos ao sul?",
       "options": [
@@ -1960,6 +2122,7 @@
       "fact": "A fronteira entre os dois países tem mais de 3 mil quilômetros."
     },
     {
+      "id": "geografia-163",
       "difficulty": "easy",
       "text": "Que cidade é chamada de \"Cidade Luz\"?",
       "options": [
@@ -1972,6 +2135,7 @@
       "fact": "O apelido vem da iluminação pública pioneira e do papel de Paris como centro cultural."
     },
     {
+      "id": "geografia-164",
       "difficulty": "easy",
       "text": "Qual destes países NÃO fica na Europa?",
       "options": [
@@ -1984,6 +2148,7 @@
       "fact": "O Marrocos fica no norte da África, a apenas 14 km da Espanha pelo Estreito de Gibraltar."
     },
     {
+      "id": "geografia-165",
       "difficulty": "easy",
       "text": "Em que oceano fica o Havaí?",
       "options": [
@@ -1996,6 +2161,7 @@
       "fact": "O Havaí é o único estado americano formado só por ilhas."
     },
     {
+      "id": "geografia-166",
       "difficulty": "easy",
       "text": "Em que país fica o Grand Canyon?",
       "options": [
@@ -2008,6 +2174,7 @@
       "fact": "O cânion foi esculpido pelo rio Colorado ao longo de milhões de anos."
     },
     {
+      "id": "geografia-167",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Medellín?",
       "options": [
@@ -2020,6 +2187,7 @@
       "fact": "Medellín é chamada de \"Cidade da Eterna Primavera\" por causa do clima ameno."
     },
     {
+      "id": "geografia-168",
       "difficulty": "easy",
       "text": "Que país sul-americano tem o nome de uma linha imaginária?",
       "options": [
@@ -2032,6 +2200,7 @@
       "fact": "A capital, Quito, fica a poucos quilômetros da Linha do Equador."
     },
     {
+      "id": "geografia-169",
       "difficulty": "easy",
       "text": "Em que país fica Istambul?",
       "options": [
@@ -2044,6 +2213,7 @@
       "fact": "Istambul fica em dois continentes, Europa e Ásia, separados pelo estreito de Bósforo."
     },
     {
+      "id": "geografia-170",
       "difficulty": "easy",
       "text": "Que país europeu é famoso pelos chocolates, relógios e bancos?",
       "options": [
@@ -2056,6 +2226,7 @@
       "fact": "A Suíça tem quatro línguas oficiais: alemão, francês, italiano e romanche."
     },
     {
+      "id": "geografia-171",
       "difficulty": "easy",
       "text": "Em que cidade fica a ponte Golden Gate?",
       "options": [
@@ -2068,6 +2239,7 @@
       "fact": "A ponte foi inaugurada em 1937, e sua cor se chama \"laranja internacional\"."
     },
     {
+      "id": "geografia-172",
       "difficulty": "easy",
       "text": "Que cidade-Estado asiática é famosa pelo porto e pela limpeza?",
       "options": [
@@ -2080,6 +2252,7 @@
       "fact": "Em Singapura, a venda de chiclete é proibida desde 1992, com poucas exceções."
     },
     {
+      "id": "geografia-173",
       "difficulty": "easy",
       "text": "Que rio passa por Paris?",
       "options": [
@@ -2092,6 +2265,7 @@
       "fact": "Mais de 30 pontes cruzam o Sena dentro de Paris."
     },
     {
+      "id": "geografia-174",
       "difficulty": "easy",
       "text": "Que rio passa por Londres?",
       "options": [
@@ -2104,6 +2278,7 @@
       "fact": "A Tower Bridge, sobre o Tâmisa, se abre para os navios passarem."
     },
     {
+      "id": "geografia-175",
       "difficulty": "easy",
       "text": "Qual continente tem mais países?",
       "options": [
@@ -2116,6 +2291,7 @@
       "fact": "A África tem 54 países reconhecidos pela ONU."
     },
     {
+      "id": "geografia-176",
       "difficulty": "easy",
       "text": "Em que países fica a Patagônia?",
       "options": [
@@ -2128,6 +2304,7 @@
       "fact": "O nome viria dos \"patagones\", gigantes que os navegadores espanhóis diziam ter visto por lá."
     },
     {
+      "id": "geografia-177",
       "difficulty": "easy",
       "text": "Quantos países formam o Reino Unido?",
       "options": [
@@ -2140,6 +2317,7 @@
       "fact": "São Inglaterra, Escócia, País de Gales e Irlanda do Norte."
     },
     {
+      "id": "geografia-178",
       "difficulty": "easy",
       "text": "Hong Kong fica em que país?",
       "options": [
@@ -2152,6 +2330,7 @@
       "fact": "Hong Kong foi colônia britânica até 1997, quando voltou para a China."
     },
     {
+      "id": "geografia-179",
       "difficulty": "impossible",
       "text": "Qual é a capital de Burkina Faso?",
       "options": [
@@ -2166,6 +2345,7 @@
       "fact": "Bamako é a capital do Mali, e Niamey, do Níger."
     },
     {
+      "id": "geografia-180",
       "difficulty": "impossible",
       "text": "Qual é a capital do Quirguistão?",
       "options": [
@@ -2180,6 +2360,7 @@
       "fact": "Tashkent é a capital do Uzbequistão, e Duchambé, do Tajiquistão."
     },
     {
+      "id": "geografia-181",
       "difficulty": "impossible",
       "text": "Qual é a cidade com mais de 100 mil habitantes mais alta do mundo?",
       "options": [
@@ -2194,6 +2375,7 @@
       "fact": "El Alto, na Bolívia, fica a mais de 4 mil metros de altitude, vizinha de La Paz."
     },
     {
+      "id": "geografia-182",
       "difficulty": "impossible",
       "text": "Qual é o menor país independente da América do Sul em área?",
       "options": [
@@ -2208,6 +2390,7 @@
       "fact": "A Guiana Francesa é menor, mas não é um país independente: faz parte da França."
     },
     {
+      "id": "geografia-183",
       "difficulty": "impossible",
       "text": "Qual é a capital da Eslovênia?",
       "options": [
@@ -2222,6 +2405,7 @@
       "fact": "Bratislava é a capital da Eslováquia, país que muita gente confunde com a Eslovênia."
     },
     {
+      "id": "geografia-184",
       "difficulty": "medium",
       "text": "Qual é a capital da Suécia?",
       "options": [
@@ -2234,6 +2418,7 @@
       "fact": "Estocolmo é construída sobre 14 ilhas."
     },
     {
+      "id": "geografia-185",
       "difficulty": "medium",
       "text": "Qual é a capital da Dinamarca?",
       "options": [
@@ -2246,6 +2431,7 @@
       "fact": "A estátua da Pequena Sereia, do conto de Andersen, fica no porto de Copenhague."
     },
     {
+      "id": "geografia-186",
       "difficulty": "medium",
       "text": "Qual é a capital da Polônia?",
       "options": [
@@ -2258,6 +2444,7 @@
       "fact": "O centro histórico de Varsóvia foi quase todo destruído na Segunda Guerra e reconstruído."
     },
     {
+      "id": "geografia-187",
       "difficulty": "medium",
       "text": "Qual é a capital da Ucrânia?",
       "options": [
@@ -2270,6 +2457,7 @@
       "fact": "Kiev é cortada pelo rio Dnipro."
     },
     {
+      "id": "geografia-188",
       "difficulty": "medium",
       "text": "Qual é a capital da Arábia Saudita?",
       "options": [
@@ -2282,6 +2470,7 @@
       "fact": "Meca, a cidade sagrada do islã, fica no oeste do país."
     },
     {
+      "id": "geografia-189",
       "difficulty": "medium",
       "text": "Qual é a capital da Tailândia?",
       "options": [
@@ -2294,6 +2483,7 @@
       "fact": "O nome completo de Bangcoc em tailandês é um dos mais longos do mundo."
     },
     {
+      "id": "geografia-190",
       "difficulty": "medium",
       "text": "Qual é a capital do Quênia?",
       "options": [
@@ -2306,6 +2496,7 @@
       "fact": "Nairóbi tem um parque nacional com leões e girafas dentro dos limites da cidade."
     },
     {
+      "id": "geografia-191",
       "difficulty": "medium",
       "text": "Qual é o país mais populoso da África?",
       "options": [
@@ -2318,6 +2509,7 @@
       "fact": "A Nigéria tem mais de 200 milhões de habitantes."
     },
     {
+      "id": "geografia-192",
       "difficulty": "medium",
       "text": "Que país europeu é famoso pelos fiordes?",
       "options": [
@@ -2330,6 +2522,7 @@
       "fact": "Os fiordes são vales escavados por geleiras e depois invadidos pelo mar."
     },
     {
+      "id": "geografia-193",
       "difficulty": "medium",
       "text": "Qual é a língua mais falada na Índia?",
       "options": [
@@ -2342,6 +2535,7 @@
       "fact": "A Índia tem 22 línguas reconhecidas na Constituição."
     },
     {
+      "id": "geografia-194",
       "difficulty": "medium",
       "text": "A que país pertence a Ilha de Páscoa, com as estátuas moai?",
       "options": [
@@ -2354,6 +2548,7 @@
       "fact": "Os moais foram esculpidos pelo povo rapa nui, e alguns pesam dezenas de toneladas."
     },
     {
+      "id": "geografia-195",
       "difficulty": "medium",
       "text": "Qual é o maior lago da América do Sul?",
       "options": [
@@ -2366,6 +2561,7 @@
       "fact": "O Titicaca fica a cerca de 3.800 metros de altitude, entre o Peru e a Bolívia."
     },
     {
+      "id": "geografia-196",
       "difficulty": "medium",
       "text": "Que linha imaginária passa pela cidade inglesa de Greenwich?",
       "options": [
@@ -2378,6 +2574,7 @@
       "fact": "O meridiano de Greenwich é a referência para os fusos horários do mundo."
     },
     {
+      "id": "geografia-197",
       "difficulty": "medium",
       "text": "Qual é o país mais visitado por turistas no mundo?",
       "options": [
@@ -2390,6 +2587,7 @@
       "fact": "A França recebe dezenas de milhões de turistas estrangeiros por ano."
     },
     {
+      "id": "geografia-198",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de Marrakech?",
       "options": [
@@ -2402,6 +2600,7 @@
       "fact": "A praça Jemaa el-Fna, em Marrakech, reúne encantadores de serpente e contadores de histórias."
     },
     {
+      "id": "geografia-199",
       "difficulty": "medium",
       "text": "Sem contar a Rússia, qual é o país mais populoso da Europa?",
       "options": [
@@ -2414,6 +2613,7 @@
       "fact": "A Alemanha tem mais de 80 milhões de habitantes."
     },
     {
+      "id": "geografia-200",
       "difficulty": "medium",
       "text": "Qual é a capital da Escócia?",
       "options": [
@@ -2426,6 +2626,7 @@
       "fact": "O castelo de Edimburgo fica no alto de um antigo vulcão extinto."
     },
     {
+      "id": "geografia-201",
       "difficulty": "medium",
       "text": "Em que país fica o Monte Kilimanjaro?",
       "options": [
@@ -2438,6 +2639,7 @@
       "fact": "O Kilimanjaro é a montanha mais alta da África, com quase 5.900 metros."
     },
     {
+      "id": "geografia-202",
       "difficulty": "medium",
       "text": "Que país insular fica ao sul da Índia e já se chamou Ceilão?",
       "options": [
@@ -2450,6 +2652,7 @@
       "fact": "O Sri Lanka é um dos maiores produtores de chá do mundo."
     },
     {
+      "id": "geografia-203",
       "difficulty": "medium",
       "text": "Que cidade americana é chamada de \"Cidade dos Ventos\"?",
       "options": [
@@ -2462,6 +2665,7 @@
       "fact": "Chicago fica às margens do lago Michigan."
     },
     {
+      "id": "geografia-204",
       "difficulty": "medium",
       "text": "Em que país fica o Salto Ángel, a cachoeira mais alta do mundo?",
       "options": [
@@ -2474,6 +2678,7 @@
       "fact": "O Salto Ángel tem uma queda de cerca de 979 metros."
     },
     {
+      "id": "geografia-205",
       "difficulty": "medium",
       "text": "Praga é a capital de que país?",
       "options": [
@@ -2486,6 +2691,7 @@
       "fact": "A Ponte Carlos, de Praga, tem mais de 600 anos."
     },
     {
+      "id": "geografia-206",
       "difficulty": "medium",
       "text": "Que pequeno país fica nos Pireneus, entre a Espanha e a França?",
       "options": [
@@ -2498,6 +2704,7 @@
       "fact": "Andorra tem o catalão como língua oficial."
     },
     {
+      "id": "geografia-207",
       "difficulty": "medium",
       "text": "Qual é o maior país do Oriente Médio em área?",
       "options": [
@@ -2510,6 +2717,7 @@
       "fact": "A maior parte da Arábia Saudita é coberta por desertos."
     },
     {
+      "id": "geografia-208",
       "difficulty": "medium",
       "text": "Que rio largo separa Buenos Aires de Montevidéu?",
       "options": [
@@ -2522,6 +2730,7 @@
       "fact": "O Rio da Prata é tão largo que parece um mar."
     },
     {
+      "id": "geografia-209",
       "difficulty": "medium",
       "text": "Em que país nasce o rio Amazonas?",
       "options": [
@@ -2534,6 +2743,7 @@
       "fact": "O Amazonas nasce nos Andes peruanos e atravessa o continente até o Atlântico."
     },
     {
+      "id": "geografia-210",
       "difficulty": "medium",
       "text": "Que país divide a ilha de Hispaniola com o Haiti?",
       "options": [
@@ -2546,6 +2756,7 @@
       "fact": "Foi na Hispaniola que Cristóvão Colombo fundou a primeira colônia europeia nas Américas."
     },
     {
+      "id": "geografia-211",
       "difficulty": "medium",
       "text": "Que grande ilha, que é também um país, fica no sudeste da África?",
       "options": [
@@ -2558,6 +2769,7 @@
       "fact": "A maioria dos animais de Madagascar, como os lêmures, só existe lá."
     },
     {
+      "id": "geografia-212",
       "difficulty": "medium",
       "text": "Qual é a capital dos Emirados Árabes Unidos?",
       "options": [
@@ -2570,6 +2782,7 @@
       "fact": "Muita gente acha que é Dubai, mas a capital é Abu Dhabi."
     },
     {
+      "id": "geografia-213",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de Auckland?",
       "options": [
@@ -2582,6 +2795,7 @@
       "fact": "Auckland é a maior cidade da Nova Zelândia, mas a capital é Wellington."
     },
     {
+      "id": "geografia-214",
       "difficulty": "medium",
       "text": "Qual é a capital da Finlândia?",
       "options": [
@@ -2594,6 +2808,7 @@
       "fact": "A Finlândia é chamada de \"terra dos mil lagos\", mas tem bem mais que isso."
     },
     {
+      "id": "geografia-215",
       "difficulty": "medium",
       "text": "Qual é a capital da Hungria?",
       "options": [
@@ -2606,6 +2821,7 @@
       "fact": "A cidade nasceu da união de Buda e Peste, separadas pelo rio Danúbio."
     },
     {
+      "id": "geografia-216",
       "difficulty": "medium",
       "text": "Qual é a capital do Irã?",
       "options": [
@@ -2618,6 +2834,7 @@
       "fact": "O Irã já foi chamado de Pérsia até 1935."
     },
     {
+      "id": "geografia-217",
       "difficulty": "medium",
       "text": "Qual é a capital do Iraque?",
       "options": [
@@ -2630,6 +2847,7 @@
       "fact": "Bagdá fica às margens do rio Tigre."
     },
     {
+      "id": "geografia-218",
       "difficulty": "medium",
       "text": "Qual é a capital das Filipinas?",
       "options": [
@@ -2642,6 +2860,7 @@
       "fact": "As Filipinas têm mais de 7 mil ilhas."
     },
     {
+      "id": "geografia-219",
       "difficulty": "medium",
       "text": "Qual é a capital da Malásia?",
       "options": [
@@ -2654,6 +2873,7 @@
       "fact": "As Torres Petronas, em Kuala Lumpur, já foram os prédios mais altos do mundo."
     },
     {
+      "id": "geografia-220",
       "difficulty": "medium",
       "text": "Qual é a capital de Angola?",
       "options": [
@@ -2666,6 +2886,7 @@
       "fact": "Angola é um dos países que têm o português como língua oficial."
     },
     {
+      "id": "geografia-221",
       "difficulty": "medium",
       "text": "Qual é a capital de Moçambique?",
       "options": [
@@ -2678,6 +2899,7 @@
       "fact": "Antes da independência, em 1975, Maputo se chamava Lourenço Marques."
     },
     {
+      "id": "geografia-222",
       "difficulty": "medium",
       "text": "Qual é a capital da Jamaica?",
       "options": [
@@ -2690,6 +2912,7 @@
       "fact": "Em Kingston fica o Museu Bob Marley, na casa onde o cantor viveu."
     },
     {
+      "id": "geografia-223",
       "difficulty": "medium",
       "text": "Que cordilheira marca a divisão entre a Europa e a Ásia?",
       "options": [
@@ -2702,6 +2925,7 @@
       "fact": "Os Urais ficam na Rússia e se estendem por cerca de 2.500 km de norte a sul."
     },
     {
+      "id": "geografia-224",
       "difficulty": "medium",
       "text": "Que mar fica entre a Península Arábica e a África?",
       "options": [
@@ -2714,6 +2938,7 @@
       "fact": "O Mar Vermelho é um dos mares mais quentes e salgados do mundo."
     },
     {
+      "id": "geografia-225",
       "difficulty": "medium",
       "text": "Qual é o maior corpo de água fechado do mundo, cercado por terra?",
       "options": [
@@ -2726,6 +2951,7 @@
       "fact": "Apesar do nome, o Mar Cáspio é considerado o maior lago do mundo."
     },
     {
+      "id": "geografia-226",
       "difficulty": "medium",
       "text": "Em que país ficam as ruínas do templo de Angkor Wat?",
       "options": [
@@ -2738,6 +2964,7 @@
       "fact": "Angkor Wat é o maior monumento religioso do mundo e aparece na bandeira do Camboja."
     },
     {
+      "id": "geografia-227",
       "difficulty": "medium",
       "text": "Que canal liga o oceano Atlântico ao Pacífico?",
       "options": [
@@ -2750,6 +2977,7 @@
       "fact": "O Canal do Panamá foi inaugurado em 1914."
     },
     {
+      "id": "geografia-228",
       "difficulty": "medium",
       "text": "Que canal liga o mar Mediterrâneo ao mar Vermelho?",
       "options": [
@@ -2762,6 +2990,7 @@
       "fact": "O Canal de Suez fica no Egito e foi inaugurado em 1869."
     },
     {
+      "id": "geografia-229",
       "difficulty": "hard",
       "text": "Qual é a montanha mais alta da América do Sul?",
       "options": [
@@ -2774,6 +3003,7 @@
       "fact": "O Aconcágua fica na Argentina e tem quase 7 mil metros."
     },
     {
+      "id": "geografia-230",
       "difficulty": "medium",
       "text": "Qual é o país mais populoso do mundo árabe?",
       "options": [
@@ -2786,6 +3016,7 @@
       "fact": "O Egito tem mais de 100 milhões de habitantes."
     },
     {
+      "id": "geografia-231",
       "difficulty": "medium",
       "text": "Que linha imaginária passa pelo estado de São Paulo?",
       "options": [
@@ -2798,6 +3029,7 @@
       "fact": "O Trópico de Capricórnio passa bem perto da cidade de São Paulo."
     },
     {
+      "id": "geografia-232",
       "difficulty": "medium",
       "text": "A que país pertencem as Ilhas Galápagos?",
       "options": [
@@ -2810,6 +3042,7 @@
       "fact": "As espécies das Galápagos inspiraram Charles Darwin na teoria da evolução."
     },
     {
+      "id": "geografia-233",
       "difficulty": "medium",
       "text": "Que países dividem a ilha da Irlanda?",
       "options": [
@@ -2822,6 +3055,7 @@
       "fact": "A Irlanda do Norte faz parte do Reino Unido."
     },
     {
+      "id": "geografia-234",
       "difficulty": "medium",
       "text": "Que deserto se estende pela Mongólia e pelo norte da China?",
       "options": [
@@ -2834,6 +3068,7 @@
       "fact": "No Gobi foram encontrados os primeiros ovos de dinossauro reconhecidos pela ciência, nos anos 1920."
     },
     {
+      "id": "geografia-235",
       "difficulty": "medium",
       "text": "Qual é a maior cidade do Canadá?",
       "options": [
@@ -2846,6 +3081,7 @@
       "fact": "A Torre CN, em Toronto, já foi a estrutura mais alta do mundo."
     },
     {
+      "id": "geografia-236",
       "difficulty": "medium",
       "text": "Praia é a capital de qual país de língua portuguesa?",
       "options": [
@@ -2858,6 +3094,7 @@
       "fact": "Cabo Verde é um arquipélago no oceano Atlântico, na costa da África."
     },
     {
+      "id": "geografia-237",
       "difficulty": "medium",
       "text": "Qual é o estado mais populoso dos Estados Unidos?",
       "options": [
@@ -2870,6 +3107,7 @@
       "fact": "Se fosse um país, a economia da Califórnia estaria entre as maiores do mundo."
     },
     {
+      "id": "geografia-238",
       "difficulty": "medium",
       "text": "Qual é o maior estado dos Estados Unidos em área?",
       "options": [
@@ -2882,6 +3120,7 @@
       "fact": "Os Estados Unidos compraram o Alasca da Rússia em 1867."
     },
     {
+      "id": "geografia-239",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de São Petersburgo?",
       "options": [
@@ -2894,6 +3133,7 @@
       "fact": "São Petersburgo foi a capital da Rússia de 1712 a 1918."
     },
     {
+      "id": "geografia-240",
       "difficulty": "medium",
       "text": "Qual é a capital da Coreia do Norte?",
       "options": [
@@ -2906,6 +3146,7 @@
       "fact": "As duas Coreias estão tecnicamente em guerra desde 1950, sem tratado de paz."
     },
     {
+      "id": "geografia-241",
       "difficulty": "easy",
       "text": "Em que país fica a cidade do Porto?",
       "options": [
@@ -2918,6 +3159,7 @@
       "fact": "O vinho do Porto ganhou esse nome porque era exportado pela cidade."
     },
     {
+      "id": "geografia-242",
       "difficulty": "easy",
       "text": "Em que país fica a Torre de Pisa?",
       "options": [
@@ -2930,6 +3172,7 @@
       "fact": "A torre começou a inclinar ainda durante a construção, no século 12."
     },
     {
+      "id": "geografia-243",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Sevilha?",
       "options": [
@@ -2942,6 +3185,7 @@
       "fact": "É a terra do flamenco e da famosa Feira de Abril."
     },
     {
+      "id": "geografia-244",
       "difficulty": "easy",
       "text": "Em que continente fica a Índia?",
       "options": [
@@ -2954,6 +3198,7 @@
       "fact": "A Índia é o país mais populoso do mundo desde 2023."
     },
     {
+      "id": "geografia-245",
       "difficulty": "easy",
       "text": "Em que país fica Las Vegas, a cidade dos cassinos?",
       "options": [
@@ -2966,6 +3211,7 @@
       "fact": "A cidade fica no meio do deserto de Nevada."
     },
     {
+      "id": "geografia-246",
       "difficulty": "easy",
       "text": "Que oceano fica entre a África e a Austrália?",
       "options": [
@@ -2978,6 +3224,7 @@
       "fact": "É o terceiro maior oceano do planeta."
     },
     {
+      "id": "geografia-247",
       "difficulty": "easy",
       "text": "Perto de que polo vive a maioria dos pinguins?",
       "options": [
@@ -2990,6 +3237,7 @@
       "fact": "Os ursos-polares vivem no Ártico, perto do Polo Norte."
     },
     {
+      "id": "geografia-248",
       "difficulty": "easy",
       "text": "Que país é famoso pelas tulipas e pelos moinhos de vento?",
       "options": [
@@ -3002,6 +3250,7 @@
       "fact": "Boa parte do país fica abaixo do nível do mar."
     },
     {
+      "id": "geografia-249",
       "difficulty": "easy",
       "text": "Que língua oficial Angola tem em comum com o Brasil?",
       "options": [
@@ -3014,6 +3263,7 @@
       "fact": "Angola tem mais falantes de português que o próprio Portugal."
     },
     {
+      "id": "geografia-250",
       "difficulty": "easy",
       "text": "Em que país fica Punta del Este, famosa praia de veraneio?",
       "options": [
@@ -3026,6 +3276,7 @@
       "fact": "A escultura de uma mão saindo da areia é o cartão-postal da cidade."
     },
     {
+      "id": "geografia-251",
       "difficulty": "easy",
       "text": "Em que cidade americana fica o Walt Disney World?",
       "options": [
@@ -3038,6 +3289,7 @@
       "fact": "A Disneylândia original, de 1955, fica na Califórnia."
     },
     {
+      "id": "geografia-252",
       "difficulty": "easy",
       "text": "Em que continentes fica a Rússia?",
       "options": [
@@ -3050,6 +3302,7 @@
       "fact": "Os Montes Urais marcam a divisão entre a parte europeia e a asiática."
     },
     {
+      "id": "geografia-253",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Munique, famosa pela Oktoberfest?",
       "options": [
@@ -3062,6 +3315,7 @@
       "fact": "A Oktoberfest de Munique começa em setembro, apesar do nome."
     },
     {
+      "id": "geografia-254",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Florença?",
       "options": [
@@ -3074,6 +3328,7 @@
       "fact": "Ela é considerada o berço do Renascimento."
     },
     {
+      "id": "geografia-255",
       "difficulty": "easy",
       "text": "Em que país fica Santorini, com suas casinhas brancas e cúpulas azuis?",
       "options": [
@@ -3086,6 +3341,7 @@
       "fact": "A ilha é o que restou de um vulcão que explodiu há cerca de 3.600 anos."
     },
     {
+      "id": "geografia-256",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Zurique?",
       "options": [
@@ -3098,6 +3354,7 @@
       "fact": "É a maior cidade do país e um grande centro financeiro, famoso pelos bancos."
     },
     {
+      "id": "geografia-257",
       "difficulty": "easy",
       "text": "Em que país fica Montreal?",
       "options": [
@@ -3110,6 +3367,7 @@
       "fact": "É a maior cidade de língua francesa das Américas."
     },
     {
+      "id": "geografia-258",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Melbourne?",
       "options": [
@@ -3122,6 +3380,7 @@
       "fact": "Muita gente acha que Sydney ou Melbourne é a capital, mas a capital é Camberra."
     },
     {
+      "id": "geografia-259",
       "difficulty": "easy",
       "text": "Em que país fica Xangai, a maior cidade chinesa?",
       "options": [
@@ -3134,6 +3393,7 @@
       "fact": "Xangai tem um dos portos mais movimentados do mundo."
     },
     {
+      "id": "geografia-260",
       "difficulty": "easy",
       "text": "Em que país fica Mumbai, a antiga Bombaim?",
       "options": [
@@ -3146,6 +3406,7 @@
       "fact": "A cidade é a sede de Bollywood, o cinema indiano."
     },
     {
+      "id": "geografia-261",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Osaka?",
       "options": [
@@ -3158,6 +3419,7 @@
       "fact": "É famosa pela comida de rua e pelo castelo de Osaka."
     },
     {
+      "id": "geografia-262",
       "difficulty": "easy",
       "text": "Em que país vivem os pandas-gigantes na natureza?",
       "options": [
@@ -3170,6 +3432,7 @@
       "fact": "Eles comem quase só bambu, até 12 horas por dia."
     },
     {
+      "id": "geografia-263",
       "difficulty": "easy",
       "text": "Em que cidade fica a Times Square?",
       "options": [
@@ -3182,6 +3445,7 @@
       "fact": "Ali acontece a famosa descida da bola na virada do ano."
     },
     {
+      "id": "geografia-264",
       "difficulty": "easy",
       "text": "Em que país fica a Cidade do Cabo?",
       "options": [
@@ -3194,6 +3458,7 @@
       "fact": "A Montanha da Mesa, de topo plano, domina a paisagem da cidade."
     },
     {
+      "id": "geografia-265",
       "difficulty": "easy",
       "text": "Em que país fica Mendoza, terra de vinhos aos pés dos Andes?",
       "options": [
@@ -3206,6 +3471,7 @@
       "fact": "A uva malbec é o grande símbolo da região."
     },
     {
+      "id": "geografia-266",
       "difficulty": "easy",
       "text": "Em que país ficam Valparaíso e Viña del Mar?",
       "options": [
@@ -3218,6 +3484,7 @@
       "fact": "As casas coloridas de Valparaíso são Patrimônio Mundial da UNESCO."
     },
     {
+      "id": "geografia-267",
       "difficulty": "easy",
       "text": "Que cidade americana é a casa de Hollywood?",
       "options": [
@@ -3230,6 +3497,7 @@
       "fact": "O famoso letreiro, de 1923, dizia \"Hollywoodland\"."
     },
     {
+      "id": "geografia-268",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Guadalajara?",
       "options": [
@@ -3242,6 +3510,7 @@
       "fact": "É considerada a terra dos mariachis e da tequila."
     },
     {
+      "id": "geografia-269",
       "difficulty": "easy",
       "text": "Em que país fica Ushuaia, a \"cidade do fim do mundo\"?",
       "options": [
@@ -3254,6 +3523,7 @@
       "fact": "É uma das cidades mais ao sul do planeta."
     },
     {
+      "id": "geografia-270",
       "difficulty": "easy",
       "text": "Em que país fica Liverpool, terra dos Beatles?",
       "options": [
@@ -3266,6 +3536,7 @@
       "fact": "A cidade também é famosa pelos clubes de futebol Liverpool e Everton."
     },
     {
+      "id": "geografia-271",
       "difficulty": "easy",
       "text": "Em que país fica o Monte Rushmore, com os rostos esculpidos de quatro presidentes?",
       "options": [
@@ -3278,6 +3549,7 @@
       "fact": "Os rostos são de Washington, Jefferson, Theodore Roosevelt e Lincoln."
     },
     {
+      "id": "geografia-272",
       "difficulty": "easy",
       "text": "Em que hemisfério fica o Japão?",
       "options": [
@@ -3290,6 +3562,7 @@
       "fact": "Por isso, quando é verão no Brasil, é inverno no Japão."
     },
     {
+      "id": "geografia-273",
       "difficulty": "medium",
       "text": "Qual é a capital do Equador?",
       "options": [
@@ -3302,6 +3575,7 @@
       "fact": "Quito fica a cerca de 2.850 metros de altitude, bem perto da Linha do Equador."
     },
     {
+      "id": "geografia-274",
       "difficulty": "medium",
       "text": "Qual é a capital da Noruega?",
       "options": [
@@ -3314,6 +3588,7 @@
       "fact": "Todo ano, o Prêmio Nobel da Paz é entregue em Oslo."
     },
     {
+      "id": "geografia-275",
       "difficulty": "medium",
       "text": "Em que estado americano fica Miami?",
       "options": [
@@ -3326,6 +3601,7 @@
       "fact": "A Flórida é uma península entre o Atlântico e o Golfo do México."
     },
     {
+      "id": "geografia-276",
       "difficulty": "medium",
       "text": "Em que continente fica a Groenlândia?",
       "options": [
@@ -3338,6 +3614,7 @@
       "fact": "Apesar disso, ela pertence ao Reino da Dinamarca."
     },
     {
+      "id": "geografia-277",
       "difficulty": "medium",
       "text": "Que território da França faz fronteira com o Amapá?",
       "options": [
@@ -3350,6 +3627,7 @@
       "fact": "É ali que fica a base de lançamento de foguetes de Kourou."
     },
     {
+      "id": "geografia-278",
       "difficulty": "medium",
       "text": "Em que país fica a Floresta Negra?",
       "options": [
@@ -3362,6 +3640,7 @@
       "fact": "É a terra do relógio cuco e do famoso bolo de chocolate com cereja."
     },
     {
+      "id": "geografia-279",
       "difficulty": "medium",
       "text": "Em que país fica Cartagena, com sua cidade murada à beira do Caribe?",
       "options": [
@@ -3374,6 +3653,7 @@
       "fact": "As muralhas foram erguidas pelos espanhóis para se defender de piratas."
     },
     {
+      "id": "geografia-280",
       "difficulty": "medium",
       "text": "Que país asiático é formado por mais de 17 mil ilhas?",
       "options": [
@@ -3386,6 +3666,7 @@
       "fact": "As ilhas mais conhecidas são Java, Sumatra e Bali."
     },
     {
+      "id": "geografia-281",
       "difficulty": "medium",
       "text": "Em que país fica a Baía de Halong, com milhares de ilhotas de pedra?",
       "options": [
@@ -3398,6 +3679,7 @@
       "fact": "O nome quer dizer \"onde o dragão desceu ao mar\"."
     },
     {
+      "id": "geografia-282",
       "difficulty": "medium",
       "text": "Em que país fica a Lapônia, conhecida como a terra do Papai Noel?",
       "options": [
@@ -3410,6 +3692,7 @@
       "fact": "A vila do Papai Noel fica em Rovaniemi, em cima do Círculo Polar Ártico."
     },
     {
+      "id": "geografia-283",
       "difficulty": "medium",
       "text": "Em que país fica o Parque Nacional do Serengeti?",
       "options": [
@@ -3422,6 +3705,7 @@
       "fact": "Ali acontece a grande migração anual de gnus e zebras."
     },
     {
+      "id": "geografia-284",
       "difficulty": "medium",
       "text": "Em que país fica o Muro das Lamentações?",
       "options": [
@@ -3434,6 +3718,7 @@
       "fact": "Ele é o que restou do muro que cercava o antigo Templo de Jerusalém."
     },
     {
+      "id": "geografia-285",
       "difficulty": "medium",
       "text": "Em que país fica Salzburgo, cidade natal de Mozart?",
       "options": [
@@ -3446,6 +3731,7 @@
       "fact": "O filme \"A Noviça Rebelde\" foi gravado na cidade."
     },
     {
+      "id": "geografia-286",
       "difficulty": "medium",
       "text": "Doha é a capital de que país?",
       "options": [
@@ -3458,6 +3744,7 @@
       "fact": "O país sediou a Copa do Mundo de 2022."
     },
     {
+      "id": "geografia-287",
       "difficulty": "medium",
       "text": "Que mar banha Cancún, no México?",
       "options": [
@@ -3470,6 +3757,7 @@
       "fact": "Cancún fica na península de Yucatán."
     },
     {
+      "id": "geografia-288",
       "difficulty": "medium",
       "text": "A que país pertence a Ilha da Madeira?",
       "options": [
@@ -3482,6 +3770,7 @@
       "fact": "É a terra natal de Cristiano Ronaldo."
     },
     {
+      "id": "geografia-289",
       "difficulty": "medium",
       "text": "Qual é a capital do Panamá?",
       "options": [
@@ -3494,6 +3783,7 @@
       "fact": "É a única capital do mundo com uma floresta tropical dentro dos limites da cidade."
     },
     {
+      "id": "geografia-290",
       "difficulty": "medium",
       "text": "Qual é a capital de Luxemburgo?",
       "options": [
@@ -3506,6 +3796,7 @@
       "fact": "O país é um dos mais ricos do mundo por habitante."
     },
     {
+      "id": "geografia-291",
       "difficulty": "medium",
       "text": "Qual é o maior país da Oceania?",
       "options": [
@@ -3518,6 +3809,7 @@
       "fact": "Sozinha, a Austrália ocupa quase 90% das terras da Oceania."
     },
     {
+      "id": "geografia-292",
       "difficulty": "medium",
       "text": "Em que país fica a Capadócia, famosa pelos passeios de balão?",
       "options": [
@@ -3530,6 +3822,7 @@
       "fact": "Os moradores antigos cavaram casas e igrejas dentro das rochas."
     },
     {
+      "id": "geografia-293",
       "difficulty": "medium",
       "text": "Em que país fica Dubrovnik, cidade murada à beira do mar Adriático?",
       "options": [
@@ -3542,6 +3835,7 @@
       "fact": "A cidade serviu de cenário para Porto Real, em \"Game of Thrones\"."
     },
     {
+      "id": "geografia-294",
       "difficulty": "medium",
       "text": "Em que país fica Bruges, com seus canais medievais?",
       "options": [
@@ -3554,6 +3848,7 @@
       "fact": "O centro histórico é Patrimônio Mundial da UNESCO."
     },
     {
+      "id": "geografia-295",
       "difficulty": "medium",
       "text": "Qual é a capital da Guatemala?",
       "options": [
@@ -3566,6 +3861,7 @@
       "fact": "Antígua foi a capital até ser destruída por terremotos no século 18."
     },
     {
+      "id": "geografia-296",
       "difficulty": "medium",
       "text": "Qual é a maior cidade da Turquia?",
       "options": [
@@ -3578,6 +3874,7 @@
       "fact": "Ela fica metade na Europa e metade na Ásia."
     },
     {
+      "id": "geografia-297",
       "difficulty": "medium",
       "text": "Qual é a língua mais falada na Suíça?",
       "options": [
@@ -3590,6 +3887,7 @@
       "fact": "O país tem quatro línguas oficiais: alemão, francês, italiano e romanche."
     },
     {
+      "id": "geografia-298",
       "difficulty": "medium",
       "text": "Em que país do Reino Unido fica o Lago Ness, famoso pelo suposto monstro?",
       "options": [
@@ -3602,6 +3900,7 @@
       "fact": "O lago guarda mais água doce que todos os lagos da Inglaterra e do País de Gales juntos."
     },
     {
+      "id": "geografia-299",
       "difficulty": "medium",
       "text": "Em que país fica a península de Yucatán, com ruínas maias?",
       "options": [
@@ -3614,6 +3913,7 @@
       "fact": "Uma das ruínas mais famosas é a pirâmide de Chichén Itzá."
     },
     {
+      "id": "geografia-300",
       "difficulty": "medium",
       "text": "Em que estado americano fica o Grand Canyon?",
       "options": [
@@ -3626,6 +3926,7 @@
       "fact": "O cânion foi escavado pelo rio Colorado ao longo de milhões de anos."
     },
     {
+      "id": "geografia-301",
       "difficulty": "medium",
       "text": "Em que país fica Varadero, uma das praias mais famosas do Caribe?",
       "options": [
@@ -3638,6 +3939,7 @@
       "fact": "Fica a cerca de duas horas de carro de Havana."
     },
     {
+      "id": "geografia-302",
       "difficulty": "medium",
       "text": "Em que país fica a cidade sagrada de Medina?",
       "options": [
@@ -3650,6 +3952,7 @@
       "fact": "Junto com Meca, é uma das duas cidades mais sagradas do islamismo."
     },
     {
+      "id": "geografia-303",
       "difficulty": "medium",
       "text": "Em que país fica Goa, antiga colônia portuguesa?",
       "options": [
@@ -3662,6 +3965,7 @@
       "fact": "Goa ficou sob domínio português até 1961."
     },
     {
+      "id": "geografia-304",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de Marselha?",
       "options": [
@@ -3674,6 +3978,7 @@
       "fact": "É a cidade mais antiga da França, fundada pelos gregos há cerca de 2.600 anos."
     },
     {
+      "id": "geografia-305",
       "difficulty": "hard",
       "text": "Qual é a capital da Nicarágua?",
       "options": [
@@ -3686,6 +3991,7 @@
       "fact": "O país tem o maior lago da América Central, o Cocibolca."
     },
     {
+      "id": "geografia-306",
       "difficulty": "hard",
       "text": "Qual é a capital da República Dominicana?",
       "options": [
@@ -3698,6 +4004,7 @@
       "fact": "É a cidade europeia mais antiga das Américas, fundada em 1496."
     },
     {
+      "id": "geografia-307",
       "difficulty": "hard",
       "text": "Qual é a capital da Argélia?",
       "options": [
@@ -3710,6 +4017,7 @@
       "fact": "O país ganhou o nome da capital."
     },
     {
+      "id": "geografia-308",
       "difficulty": "hard",
       "text": "Qual é a capital da Tunísia?",
       "options": [
@@ -3722,6 +4030,7 @@
       "fact": "Perto dela ficam as ruínas de Cartago, a antiga rival de Roma."
     },
     {
+      "id": "geografia-309",
       "difficulty": "hard",
       "text": "Qual é a capital do País de Gales?",
       "options": [
@@ -3734,6 +4043,7 @@
       "fact": "O galês, uma língua celta, aparece nas placas ao lado do inglês."
     },
     {
+      "id": "geografia-310",
       "difficulty": "hard",
       "text": "Qual é a capital da Irlanda do Norte?",
       "options": [
@@ -3746,6 +4056,7 @@
       "fact": "O Titanic foi construído num estaleiro de Belfast."
     },
     {
+      "id": "geografia-311",
       "difficulty": "hard",
       "text": "Qual é a capital da Bulgária?",
       "options": [
@@ -3758,6 +4069,7 @@
       "fact": "O nome vem da antiga Basílica de Santa Sofia, que ainda existe na cidade."
     },
     {
+      "id": "geografia-312",
       "difficulty": "hard",
       "text": "Que rio atravessa o centro de Berlim?",
       "options": [
@@ -3770,6 +4082,7 @@
       "fact": "O Reno é o rio mais famoso da Alemanha, mas passa longe de Berlim."
     },
     {
+      "id": "geografia-313",
       "difficulty": "hard",
       "text": "Às margens de que rio fica o Taj Mahal, na Índia?",
       "options": [
@@ -3782,6 +4095,7 @@
       "fact": "O Yamuna é o maior afluente do Ganges."
     },
     {
+      "id": "geografia-314",
       "difficulty": "hard",
       "text": "Em que país fica Chiang Mai, cercada de templos budistas?",
       "options": [
@@ -3794,6 +4108,7 @@
       "fact": "É a maior cidade do norte da Tailândia."
     },
     {
+      "id": "geografia-315",
       "difficulty": "hard",
       "text": "A que país pertence Bora Bora, no Pacífico?",
       "options": [
@@ -3806,6 +4121,7 @@
       "fact": "A ilha faz parte da Polinésia Francesa."
     },
     {
+      "id": "geografia-316",
       "difficulty": "hard",
       "text": "Além do francês, que língua é oficial no Haiti?",
       "options": [
@@ -3818,6 +4134,7 @@
       "fact": "O crioulo, de base francesa, é a língua do dia a dia de quase todos os haitianos."
     },
     {
+      "id": "geografia-317",
       "difficulty": "hard",
       "text": "Qual é a língua oficial do Irã?",
       "options": [
@@ -3830,6 +4147,7 @@
       "fact": "O persa também é chamado de farsi."
     },
     {
+      "id": "geografia-318",
       "difficulty": "hard",
       "text": "Bratislava é a capital de que país?",
       "options": [
@@ -3842,6 +4160,7 @@
       "fact": "Fica a cerca de 60 km de Viena, uma das capitais mais próximas do mundo."
     },
     {
+      "id": "geografia-319",
       "difficulty": "hard",
       "text": "Qual é o único continente cortado pela Linha do Equador e pelos dois trópicos?",
       "options": [
@@ -3854,6 +4173,7 @@
       "fact": "O Trópico de Câncer passa no Saara, e o de Capricórnio, no sul do continente."
     },
     {
+      "id": "geografia-320",
       "difficulty": "hard",
       "text": "Qual é a maior ilha do Japão?",
       "options": [
@@ -3866,6 +4186,7 @@
       "fact": "Tóquio, Osaka e Kyoto ficam todas em Honshu."
     },
     {
+      "id": "geografia-321",
       "difficulty": "hard",
       "text": "Qual é a montanha mais alta da América do Norte?",
       "options": [
@@ -3878,6 +4199,7 @@
       "fact": "Ela fica no Alasca; em 2025, o governo americano voltou a chamá-la oficialmente de Monte McKinley."
     },
     {
+      "id": "geografia-322",
       "difficulty": "hard",
       "text": "Qual é a capital da Albânia?",
       "options": [
@@ -3890,6 +4212,7 @@
       "fact": "Escópia é a capital da Macedônia do Norte."
     },
     {
+      "id": "geografia-323",
       "difficulty": "hard",
       "text": "Qual é a capital do Uzbequistão?",
       "options": [
@@ -3902,6 +4225,7 @@
       "fact": "Samarcanda é a cidade mais famosa do país, mas não é a capital."
     },
     {
+      "id": "geografia-324",
       "difficulty": "hard",
       "text": "Qual é a capital da Jordânia?",
       "options": [
@@ -3914,6 +4238,7 @@
       "fact": "A cidade foi construída sobre sete colinas, como Roma."
     },
     {
+      "id": "geografia-325",
       "difficulty": "hard",
       "text": "Qual é a capital do Líbano?",
       "options": [
@@ -3926,6 +4251,7 @@
       "fact": "Já foi chamada de \"Paris do Oriente Médio\"."
     },
     {
+      "id": "geografia-326",
       "difficulty": "hard",
       "text": "Qual é a capital da Síria?",
       "options": [
@@ -3938,6 +4264,7 @@
       "fact": "Ela é uma das cidades habitadas há mais tempo no mundo."
     },
     {
+      "id": "geografia-327",
       "difficulty": "hard",
       "text": "Qual é a capital de Gana?",
       "options": [
@@ -3950,6 +4277,7 @@
       "fact": "Gana foi a primeira colônia da África subsaariana a ficar independente, em 1957."
     },
     {
+      "id": "geografia-328",
       "difficulty": "hard",
       "text": "Qual é a capital constitucional da Bolívia?",
       "options": [
@@ -3962,6 +4290,7 @@
       "fact": "La Paz é a sede do governo."
     },
     {
+      "id": "geografia-329",
       "difficulty": "hard",
       "text": "Que rio forma as Cataratas Vitória, na fronteira entre Zâmbia e Zimbábue?",
       "options": [
@@ -3974,6 +4303,7 @@
       "fact": "Os moradores chamam as cataratas de \"a fumaça que troveja\"."
     },
     {
+      "id": "geografia-330",
       "difficulty": "hard",
       "text": "Em que país fica a maior parte do deserto do Kalahari?",
       "options": [
@@ -3986,6 +4316,7 @@
       "fact": "Apesar de chamado de deserto, ele tem muita vegetação rasteira."
     },
     {
+      "id": "geografia-331",
       "difficulty": "hard",
       "text": "Que mar fica entre a Itália e a península dos Bálcãs?",
       "options": [
@@ -3998,6 +4329,7 @@
       "fact": "Veneza fica no fundo desse mar."
     },
     {
+      "id": "geografia-332",
       "difficulty": "hard",
       "text": "Em que mar fica a cidade russa de Sochi?",
       "options": [
@@ -4010,6 +4342,7 @@
       "fact": "Sochi sediou os Jogos Olímpicos de Inverno de 2014."
     },
     {
+      "id": "geografia-333",
       "difficulty": "hard",
       "text": "Qual é o maior lago inteiramente na Europa?",
       "options": [
@@ -4022,6 +4355,7 @@
       "fact": "Ele fica na Rússia, perto de São Petersburgo."
     },
     {
+      "id": "geografia-334",
       "difficulty": "hard",
       "text": "Depois do Brasil, qual é o país mais populoso da América do Sul?",
       "options": [
@@ -4034,6 +4368,7 @@
       "fact": "O país tem mais de 50 milhões de habitantes."
     },
     {
+      "id": "geografia-335",
       "difficulty": "hard",
       "text": "Qual é a única capital sul-americana banhada pelo oceano Pacífico?",
       "options": [
@@ -4046,6 +4381,7 @@
       "fact": "Santiago fica a cerca de 100 km do mar, separada da costa por montanhas."
     },
     {
+      "id": "geografia-336",
       "difficulty": "hard",
       "text": "Qual é a capital oficial da Costa do Marfim?",
       "options": [
@@ -4058,6 +4394,7 @@
       "fact": "Abidjan, a maior cidade, continua sendo o centro econômico do país."
     },
     {
+      "id": "geografia-337",
       "difficulty": "impossible",
       "text": "Qual é a profundidade aproximada do ponto mais fundo da Fossa das Marianas?",
       "options": [
@@ -4072,6 +4409,7 @@
       "fact": "Se o Everest fosse colocado lá dentro, o topo ainda ficaria mais de 2 km debaixo d'água."
     },
     {
+      "id": "geografia-338",
       "difficulty": "impossible",
       "text": "Quantos países independentes existem na África, segundo a ONU?",
       "options": [
@@ -4086,6 +4424,7 @@
       "fact": "O Sudão do Sul, de 2011, é o mais novo deles."
     },
     {
+      "id": "geografia-339",
       "difficulty": "impossible",
       "text": "Qual é a capital do Lesoto?",
       "options": [
@@ -4100,6 +4439,7 @@
       "fact": "O Lesoto é o único país do mundo inteiramente acima de mil metros de altitude."
     },
     {
+      "id": "geografia-340",
       "difficulty": "impossible",
       "text": "Qual é a área aproximada da Rússia?",
       "options": [
@@ -4114,6 +4454,7 @@
       "fact": "É quase o dobro da área do Brasil."
     },
     {
+      "id": "geografia-341",
       "difficulty": "easy",
       "text": "Em que país ficam as pirâmides de Gizé?",
       "options": [
@@ -4126,6 +4467,7 @@
       "fact": "A Grande Pirâmide foi a construção mais alta feita pelo homem por cerca de 3.800 anos."
     },
     {
+      "id": "geografia-342",
       "difficulty": "easy",
       "text": "Em que país fica o Cristo Redentor?",
       "options": [
@@ -4138,6 +4480,7 @@
       "fact": "O Cristo foi eleito uma das Sete Novas Maravilhas do Mundo em 2007."
     },
     {
+      "id": "geografia-343",
       "difficulty": "easy",
       "text": "Em que país fica a Sagrada Família, a basílica de Gaudí?",
       "options": [
@@ -4150,6 +4493,7 @@
       "fact": "A Sagrada Família fica em Barcelona."
     },
     {
+      "id": "geografia-344",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Nova York?",
       "options": [
@@ -4162,6 +4506,7 @@
       "fact": "Nova York já se chamou Nova Amsterdã, quando era colônia holandesa."
     },
     {
+      "id": "geografia-345",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Toronto?",
       "options": [
@@ -4174,6 +4519,7 @@
       "fact": "A Torre CN, de Toronto, foi a estrutura mais alta do mundo por mais de 30 anos."
     },
     {
+      "id": "geografia-346",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Sydney?",
       "options": [
@@ -4186,6 +4532,7 @@
       "fact": "Apesar de ser a maior cidade do país, Sydney não é a capital da Austrália."
     },
     {
+      "id": "geografia-347",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Tóquio?",
       "options": [
@@ -4198,6 +4545,7 @@
       "fact": "A região metropolitana de Tóquio é a mais populosa do mundo."
     },
     {
+      "id": "geografia-348",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Lisboa?",
       "options": [
@@ -4210,6 +4558,7 @@
       "fact": "Lisboa é uma das capitais mais antigas da Europa Ocidental."
     },
     {
+      "id": "geografia-349",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Buenos Aires?",
       "options": [
@@ -4222,6 +4571,7 @@
       "fact": "O nome da cidade quer dizer \"bons ares\"."
     },
     {
+      "id": "geografia-350",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Berlim?",
       "options": [
@@ -4234,6 +4584,7 @@
       "fact": "O Muro de Berlim dividiu a cidade de 1961 a 1989."
     },
     {
+      "id": "geografia-351",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Moscou?",
       "options": [
@@ -4246,6 +4597,7 @@
       "fact": "A Praça Vermelha, em Moscou, tem esse nome desde muito antes do comunismo."
     },
     {
+      "id": "geografia-352",
       "difficulty": "easy",
       "text": "Em que país fica a cidade do Cairo?",
       "options": [
@@ -4258,6 +4610,7 @@
       "fact": "O Cairo é a maior cidade do mundo árabe."
     },
     {
+      "id": "geografia-353",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Pequim?",
       "options": [
@@ -4270,6 +4623,7 @@
       "fact": "A Cidade Proibida, em Pequim, foi o palácio dos imperadores chineses por quase 500 anos."
     },
     {
+      "id": "geografia-354",
       "difficulty": "easy",
       "text": "Qual é o maior país do mundo em população, junto com a Índia?",
       "options": [
@@ -4282,6 +4636,7 @@
       "fact": "Índia e China têm, cada uma, mais de 1,4 bilhão de habitantes."
     },
     {
+      "id": "geografia-355",
       "difficulty": "easy",
       "text": "Em que país fica o rio Ganges, sagrado para os hindus?",
       "options": [
@@ -4294,6 +4649,7 @@
       "fact": "Milhões de peregrinos se banham no Ganges na cidade de Varanasi."
     },
     {
+      "id": "geografia-356",
       "difficulty": "easy",
       "text": "Que país é chamado de \"Terra do Tango\"?",
       "options": [
@@ -4306,6 +4662,7 @@
       "fact": "O tango nasceu nos bairros portuários de Buenos Aires e Montevidéu."
     },
     {
+      "id": "geografia-357",
       "difficulty": "easy",
       "text": "Que país tem como símbolos o pássaro kiwi e a cultura maori?",
       "options": [
@@ -4318,6 +4675,7 @@
       "fact": "Os maoris chegaram à Nova Zelândia por volta do ano 1300."
     },
     {
+      "id": "geografia-358",
       "difficulty": "easy",
       "text": "Qual destes países fica na América do Sul?",
       "options": [
@@ -4330,6 +4688,7 @@
       "fact": "A América do Sul tem 12 países independentes."
     },
     {
+      "id": "geografia-359",
       "difficulty": "easy",
       "text": "Qual destes países fica na África?",
       "options": [
@@ -4342,6 +4701,7 @@
       "fact": "O Quênia é famoso pelos safáris e pelos corredores de longa distância."
     },
     {
+      "id": "geografia-360",
       "difficulty": "easy",
       "text": "Qual destes países fica na Oceania?",
       "options": [
@@ -4354,6 +4714,7 @@
       "fact": "A Nova Zelândia foi um dos últimos grandes territórios a ser habitados por humanos."
     },
     {
+      "id": "geografia-361",
       "difficulty": "easy",
       "text": "Qual destes países fica na Europa?",
       "options": [
@@ -4366,6 +4727,7 @@
       "fact": "A Polônia faz fronteira com sete países."
     },
     {
+      "id": "geografia-362",
       "difficulty": "easy",
       "text": "Que continente é formado por 12 países, incluindo o Brasil?",
       "options": [
@@ -4378,6 +4740,7 @@
       "fact": "A Guiana Francesa fica na América do Sul, mas é parte da França."
     },
     {
+      "id": "geografia-363",
       "difficulty": "easy",
       "text": "Em que continente fica o Japão?",
       "options": [
@@ -4390,6 +4753,7 @@
       "fact": "O Japão fica sobre o encontro de quatro placas tectônicas, por isso tem tantos terremotos."
     },
     {
+      "id": "geografia-364",
       "difficulty": "easy",
       "text": "Qual destes países fala espanhol?",
       "options": [
@@ -4402,6 +4766,7 @@
       "fact": "O México é o país com mais falantes nativos de espanhol do mundo."
     },
     {
+      "id": "geografia-365",
       "difficulty": "easy",
       "text": "Qual destes países é uma ilha?",
       "options": [
@@ -4414,6 +4779,7 @@
       "fact": "A Islândia fica sobre a fronteira entre duas placas tectônicas."
     },
     {
+      "id": "geografia-366",
       "difficulty": "easy",
       "text": "Qual é o oceano entre a América e a Europa?",
       "options": [
@@ -4426,6 +4792,7 @@
       "fact": "O Atlântico fica cerca de 2,5 centímetros mais largo a cada ano."
     },
     {
+      "id": "geografia-367",
       "difficulty": "easy",
       "text": "Em que continente fica a Argentina?",
       "options": [
@@ -4438,6 +4805,7 @@
       "fact": "A Argentina é o segundo maior país da América do Sul."
     },
     {
+      "id": "geografia-368",
       "difficulty": "easy",
       "text": "Que oceano fica a oeste da América do Sul?",
       "options": [
@@ -4450,6 +4818,7 @@
       "fact": "O nome \"Pacífico\" foi dado por Fernão de Magalhães, que encontrou ali águas calmas."
     },
     {
+      "id": "geografia-369",
       "difficulty": "easy",
       "text": "Que país fica ao norte dos Estados Unidos?",
       "options": [
@@ -4462,6 +4831,7 @@
       "fact": "A fronteira entre os dois países é a mais longa do mundo entre apenas dois países."
     },
     {
+      "id": "geografia-370",
       "difficulty": "medium",
       "text": "Qual é a capital da África do Sul que sedia o governo?",
       "options": [
@@ -4474,6 +4844,7 @@
       "fact": "A África do Sul tem três capitais: Pretória, Cidade do Cabo e Bloemfontein."
     },
     {
+      "id": "geografia-371",
       "difficulty": "medium",
       "text": "Qual é a capital do Nepal?",
       "options": [
@@ -4486,6 +4857,7 @@
       "fact": "Katmandu fica a cerca de 1.400 metros de altitude."
     },
     {
+      "id": "geografia-372",
       "difficulty": "medium",
       "text": "Qual é a capital de Bangladesh?",
       "options": [
@@ -4498,6 +4870,7 @@
       "fact": "Daca é uma das cidades mais densamente povoadas do mundo."
     },
     {
+      "id": "geografia-373",
       "difficulty": "medium",
       "text": "Qual é a capital do Camboja?",
       "options": [
@@ -4510,6 +4883,7 @@
       "fact": "A moeda do Camboja é o riel, mas o dólar americano também é muito usado no país."
     },
     {
+      "id": "geografia-374",
       "difficulty": "medium",
       "text": "Qual é a capital da Armênia?",
       "options": [
@@ -4522,6 +4896,7 @@
       "fact": "Ierevan é uma das cidades habitadas mais antigas do mundo, fundada em 782 a.C."
     },
     {
+      "id": "geografia-375",
       "difficulty": "medium",
       "text": "Qual é a capital da Guiana?",
       "options": [
@@ -4534,6 +4909,7 @@
       "fact": "Georgetown fica abaixo do nível do mar e é protegida por um grande muro contra as marés."
     },
     {
+      "id": "geografia-376",
       "difficulty": "medium",
       "text": "Qual é a capital do Suriname?",
       "options": [
@@ -4546,6 +4922,7 @@
       "fact": "O Suriname tem o holandês como língua oficial."
     },
     {
+      "id": "geografia-377",
       "difficulty": "medium",
       "text": "Qual é a capital de El Salvador?",
       "options": [
@@ -4558,6 +4935,7 @@
       "fact": "El Salvador é o menor país da América Central."
     },
     {
+      "id": "geografia-378",
       "difficulty": "medium",
       "text": "Qual é a capital da Bielorrússia?",
       "options": [
@@ -4570,6 +4948,7 @@
       "fact": "Minsk foi quase totalmente reconstruída depois da Segunda Guerra Mundial."
     },
     {
+      "id": "geografia-379",
       "difficulty": "medium",
       "text": "Qual é a capital da Zâmbia?",
       "options": [
@@ -4582,6 +4961,7 @@
       "fact": "A Zâmbia divide com o Zimbábue as famosas Cataratas Vitória."
     },
     {
+      "id": "geografia-380",
       "difficulty": "medium",
       "text": "Qual é a capital da Geórgia, o país do Cáucaso?",
       "options": [
@@ -4594,6 +4974,7 @@
       "fact": "A Geórgia é considerada um dos berços do vinho, com tradição de 8 mil anos."
     },
     {
+      "id": "geografia-381",
       "difficulty": "medium",
       "text": "Qual é a capital do Azerbaijão?",
       "options": [
@@ -4606,6 +4987,7 @@
       "fact": "Baku fica abaixo do nível do mar, às margens do mar Cáspio."
     },
     {
+      "id": "geografia-382",
       "difficulty": "medium",
       "text": "Qual é a capital de Malta?",
       "options": [
@@ -4618,6 +5000,7 @@
       "fact": "Valeta é uma das menores capitais da Europa."
     },
     {
+      "id": "geografia-383",
       "difficulty": "medium",
       "text": "Qual é a capital de Chipre?",
       "options": [
@@ -4630,6 +5013,7 @@
       "fact": "Nicósia é a última capital dividida da Europa, entre as partes grega e turca."
     },
     {
+      "id": "geografia-384",
       "difficulty": "medium",
       "text": "Qual é a capital do Kuwait?",
       "options": [
@@ -4642,6 +5026,7 @@
       "fact": "O dinar kuwaitiano é a moeda de maior valor do mundo."
     },
     {
+      "id": "geografia-385",
       "difficulty": "medium",
       "text": "Qual é a capital de Omã?",
       "options": [
@@ -4654,6 +5039,7 @@
       "fact": "Omã é um dos países mais antigos do mundo árabe."
     },
     {
+      "id": "geografia-386",
       "difficulty": "medium",
       "text": "Qual é a capital da Líbia?",
       "options": [
@@ -4666,6 +5052,7 @@
       "fact": "Também existe uma cidade chamada Trípoli no Líbano."
     },
     {
+      "id": "geografia-387",
       "difficulty": "medium",
       "text": "Qual é a capital do Sudão?",
       "options": [
@@ -4678,6 +5065,7 @@
       "fact": "Em Cartum, o Nilo Azul e o Nilo Branco se encontram."
     },
     {
+      "id": "geografia-388",
       "difficulty": "medium",
       "text": "Qual é a capital de Uganda?",
       "options": [
@@ -4690,6 +5078,7 @@
       "fact": "Uganda é chamada de \"Pérola da África\"."
     },
     {
+      "id": "geografia-389",
       "difficulty": "medium",
       "text": "Qual é a capital de Ruanda?",
       "options": [
@@ -4702,6 +5091,7 @@
       "fact": "Kigali é conhecida como uma das cidades mais limpas da África."
     },
     {
+      "id": "geografia-390",
       "difficulty": "medium",
       "text": "Qual é a capital do Zimbábue?",
       "options": [
@@ -4714,6 +5104,7 @@
       "fact": "Harare se chamava Salisbury até 1982."
     },
     {
+      "id": "geografia-391",
       "difficulty": "medium",
       "text": "Qual é a capital de Madagascar?",
       "options": [
@@ -4726,6 +5117,7 @@
       "fact": "Madagascar tem animais que só existem lá, como os lêmures."
     },
     {
+      "id": "geografia-392",
       "difficulty": "medium",
       "text": "Qual é a capital do Malawi?",
       "options": [
@@ -4738,6 +5130,7 @@
       "fact": "O Lago Malawi ocupa cerca de um quinto do território do país."
     },
     {
+      "id": "geografia-393",
       "difficulty": "medium",
       "text": "Qual é a capital do Timor-Leste?",
       "options": [
@@ -4750,6 +5143,7 @@
       "fact": "O Timor-Leste se tornou independente em 2002, o primeiro país novo do século XXI."
     },
     {
+      "id": "geografia-394",
       "difficulty": "medium",
       "text": "Qual é a capital de Botsuana?",
       "options": [
@@ -4762,6 +5156,7 @@
       "fact": "Botsuana tem a maior população de elefantes da África."
     },
     {
+      "id": "geografia-395",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de Casablanca?",
       "options": [
@@ -4774,6 +5169,7 @@
       "fact": "O filme \"Casablanca\", de 1942, foi todo gravado em estúdios de Hollywood."
     },
     {
+      "id": "geografia-396",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de Cracóvia?",
       "options": [
@@ -4786,6 +5182,7 @@
       "fact": "Cracóvia foi a capital da Polônia até o fim do século XVI."
     },
     {
+      "id": "geografia-397",
       "difficulty": "hard",
       "text": "Em que país fica a cidade de Cusco, antiga capital inca?",
       "options": [
@@ -4798,6 +5195,7 @@
       "fact": "Cusco fica a cerca de 3.400 metros de altitude."
     },
     {
+      "id": "geografia-398",
       "difficulty": "hard",
       "text": "Em que país fica a cidade de Potosí, famosa pelas minas de prata?",
       "options": [
@@ -4810,6 +5208,7 @@
       "fact": "No século XVII, Potosí era uma das maiores cidades do mundo."
     },
     {
+      "id": "geografia-399",
       "difficulty": "hard",
       "text": "Em que país fica a cidade de Kyoto, antiga capital imperial?",
       "options": [
@@ -4822,6 +5221,7 @@
       "fact": "Kyoto tem mais de 1.600 templos budistas."
     },
     {
+      "id": "geografia-400",
       "difficulty": "hard",
       "text": "Em que país fica a cidade de Lhasa, no Tibete?",
       "options": [
@@ -4834,6 +5234,7 @@
       "fact": "Lhasa fica a cerca de 3.650 metros de altitude."
     },
     {
+      "id": "geografia-401",
       "difficulty": "hard",
       "text": "Que rio forma a fronteira entre a China e a Rússia, no extremo leste?",
       "options": [
@@ -4846,6 +5247,7 @@
       "fact": "O Amur é chamado pelos chineses de Heilongjiang, o \"Rio do Dragão Negro\"."
     },
     {
+      "id": "geografia-402",
       "difficulty": "hard",
       "text": "Em que país fica a cidade de Genebra, sede de vários órgãos da ONU?",
       "options": [
@@ -4858,6 +5260,7 @@
       "fact": "O Jato d'Água de Genebra lança água a cerca de 140 metros de altura."
     },
     {
+      "id": "geografia-403",
       "difficulty": "hard",
       "text": "Que cidade holandesa é a sede do governo e do parlamento, apesar de não ser a capital oficial?",
       "options": [
@@ -4870,6 +5273,7 @@
       "fact": "Amsterdã é a capital oficial, mas o rei, o parlamento e o governo ficam em Haia."
     },
     {
+      "id": "geografia-404",
       "difficulty": "hard",
       "text": "Em que país fica o Lago Titicaca, além do Peru?",
       "options": [
@@ -4882,6 +5286,7 @@
       "fact": "O Titicaca é o lago navegável mais alto do mundo."
     },
     {
+      "id": "geografia-405",
       "difficulty": "hard",
       "text": "Em que país fica o deserto do Namibe, um dos mais antigos do mundo?",
       "options": [
@@ -4894,6 +5299,7 @@
       "fact": "As dunas do Namibe estão entre as mais altas do planeta."
     },
     {
+      "id": "geografia-406",
       "difficulty": "hard",
       "text": "Qual é a montanha mais alta da Austrália continental?",
       "options": [
@@ -4906,6 +5312,7 @@
       "fact": "O Uluru é famoso, mas tem só cerca de 350 metros acima da planície."
     },
     {
+      "id": "geografia-407",
       "difficulty": "hard",
       "text": "Que cordilheira atravessa o Marrocos, a Argélia e a Tunísia?",
       "options": [
@@ -4918,6 +5325,7 @@
       "fact": "O ponto mais alto da cordilheira é o monte Toubkal, no Marrocos."
     },
     {
+      "id": "geografia-408",
       "difficulty": "hard",
       "text": "Que país tem a maior parte da Floresta Amazônica, depois do Brasil?",
       "options": [
@@ -4930,6 +5338,7 @@
       "fact": "O Brasil tem cerca de 60% da floresta."
     },
     {
+      "id": "geografia-409",
       "difficulty": "hard",
       "text": "Que rio é o mais extenso da América do Norte?",
       "options": [
@@ -4942,6 +5351,7 @@
       "fact": "O Missouri é afluente do Mississippi, e juntos formam um dos maiores sistemas fluviais do mundo."
     },
     {
+      "id": "geografia-410",
       "difficulty": "hard",
       "text": "Que rio passa pela cidade alemã de Dresden e por Hamburgo?",
       "options": [
@@ -4954,6 +5364,7 @@
       "fact": "O Elba deságua no Mar do Norte, perto de Hamburgo."
     },
     {
+      "id": "geografia-411",
       "difficulty": "hard",
       "text": "Que rio passa por Colônia e Basileia e forma parte da fronteira entre França e Alemanha?",
       "options": [
@@ -4966,6 +5377,7 @@
       "fact": "O Reno é uma das hidrovias mais movimentadas do mundo."
     },
     {
+      "id": "geografia-412",
       "difficulty": "hard",
       "text": "Que rio passa por Varsóvia?",
       "options": [
@@ -4978,6 +5390,7 @@
       "fact": "O Vístula é o rio mais longo da Polônia."
     },
     {
+      "id": "geografia-413",
       "difficulty": "hard",
       "text": "Que rio passa por Praga?",
       "options": [
@@ -4990,6 +5403,7 @@
       "fact": "A Ponte Carlos, sobre o Moldava, tem mais de 600 anos."
     },
     {
+      "id": "geografia-414",
       "difficulty": "hard",
       "text": "Que rio passa por Florença?",
       "options": [
@@ -5002,6 +5416,7 @@
       "fact": "A Ponte Vecchio, sobre o Arno, tem lojas construídas sobre ela."
     },
     {
+      "id": "geografia-415",
       "difficulty": "hard",
       "text": "Que rio passa pela cidade do Porto, em Portugal?",
       "options": [
@@ -5014,6 +5429,7 @@
       "fact": "O vinho do Porto era levado pelo rio em barcos chamados rabelos."
     },
     {
+      "id": "geografia-416",
       "difficulty": "hard",
       "text": "A que país pertence o arquipélago de Svalbard, terra de ursos-polares?",
       "options": [
@@ -5026,6 +5442,7 @@
       "fact": "Em Svalbard fica um cofre que guarda sementes de plantas do mundo todo."
     },
     {
+      "id": "geografia-417",
       "difficulty": "hard",
       "text": "Que rio atravessa a Tailândia, o Laos, o Camboja e o Vietnã?",
       "options": [
@@ -5038,6 +5455,7 @@
       "fact": "O delta do Mekong é chamado de \"tigela de arroz\" do Vietnã."
     },
     {
+      "id": "geografia-418",
       "difficulty": "hard",
       "text": "Que mar fica entre a Suécia e a Finlândia, ao norte da Europa?",
       "options": [
@@ -5050,6 +5468,7 @@
       "fact": "A água do Báltico é pouco salgada, por causa dos muitos rios que desembocam nele."
     },
     {
+      "id": "geografia-419",
       "difficulty": "hard",
       "text": "Que mar separa a Grã-Bretanha da Noruega e da Dinamarca?",
       "options": [
@@ -5062,6 +5481,7 @@
       "fact": "O mar do Norte tem grandes reservas de petróleo e gás."
     },
     {
+      "id": "geografia-420",
       "difficulty": "hard",
       "text": "Que canal separa a Inglaterra da França?",
       "options": [
@@ -5074,6 +5494,7 @@
       "fact": "O Eurotúnel, sob o canal, tem cerca de 50 quilômetros."
     },
     {
+      "id": "geografia-421",
       "difficulty": "hard",
       "text": "Qual é o maior lago de água doce do mundo em área, na fronteira entre EUA e Canadá?",
       "options": [
@@ -5086,6 +5507,7 @@
       "fact": "O Lago Superior guarda cerca de 10% da água doce de superfície do planeta."
     },
     {
+      "id": "geografia-422",
       "difficulty": "hard",
       "text": "Em que país ficam as ruínas de Persépolis?",
       "options": [
@@ -5098,6 +5520,7 @@
       "fact": "Persépolis foi a capital cerimonial do Império Persa, fundada por Dario I."
     },
     {
+      "id": "geografia-423",
       "difficulty": "hard",
       "text": "Que estreito separa a Península Malaia da ilha de Sumatra?",
       "options": [
@@ -5110,6 +5533,7 @@
       "fact": "É uma das rotas marítimas mais movimentadas do mundo."
     },
     {
+      "id": "geografia-424",
       "difficulty": "hard",
       "text": "Que estreito, no sul do Chile, liga o Atlântico ao Pacífico?",
       "options": [
@@ -5122,6 +5546,7 @@
       "fact": "Fernão de Magalhães atravessou o estreito em 1520."
     },
     {
+      "id": "geografia-425",
       "difficulty": "impossible",
       "text": "Qual é a extensão da Grande Muralha da China, somando todos os trechos?",
       "options": [
@@ -5136,6 +5561,7 @@
       "fact": "O número vem de um levantamento oficial chinês divulgado em 2012."
     },
     {
+      "id": "geografia-426",
       "difficulty": "impossible",
       "text": "Qual é a altitude do Aconcágua, a montanha mais alta das Américas?",
       "options": [
@@ -5150,6 +5576,7 @@
       "fact": "O Aconcágua fica na Argentina, perto da fronteira com o Chile."
     },
     {
+      "id": "geografia-427",
       "difficulty": "impossible",
       "text": "A quantos metros abaixo do nível do mar fica a superfície do Mar Morto, aproximadamente?",
       "options": [
@@ -5164,6 +5591,7 @@
       "fact": "O nível do Mar Morto baixa cerca de 1 metro por ano."
     },
     {
+      "id": "geografia-428",
       "difficulty": "impossible",
       "text": "Quantos países fazem fronteira com a China?",
       "options": [
@@ -5178,6 +5606,7 @@
       "fact": "A China e a Rússia são os países com mais vizinhos por terra."
     },
     {
+      "id": "geografia-429",
       "difficulty": "impossible",
       "text": "Quantos países existem na Europa, segundo a ONU, aproximadamente?",
       "options": [
@@ -5192,6 +5621,7 @@
       "fact": "A Rússia é o maior país europeu, e o Vaticano, o menor."
     },
     {
+      "id": "geografia-430",
       "difficulty": "impossible",
       "text": "Quantos países tem a União Europeia?",
       "options": [
@@ -5206,6 +5636,7 @@
       "fact": "O Reino Unido saiu do bloco em 2020."
     },
     {
+      "id": "geografia-431",
       "difficulty": "impossible",
       "text": "Quantos estados têm os Estados Unidos?",
       "options": [
@@ -5220,6 +5651,7 @@
       "fact": "Os dois últimos a entrar foram o Alasca e o Havaí, em 1959."
     },
     {
+      "id": "geografia-432",
       "difficulty": "impossible",
       "text": "Quantos países existem nas Américas?",
       "options": [
@@ -5234,6 +5666,7 @@
       "fact": "A maior parte deles fica na América Central e no Caribe."
     },
     {
+      "id": "geografia-433",
       "difficulty": "impossible",
       "text": "Qual é a área aproximada da Groenlândia?",
       "options": [
@@ -5248,6 +5681,7 @@
       "fact": "Nos mapas comuns, a Groenlândia parece do tamanho da África, mas é cerca de 14 vezes menor."
     },
     {
+      "id": "geografia-434",
       "difficulty": "impossible",
       "text": "Qual é a profundidade máxima do Lago Baikal?",
       "options": [
@@ -5262,6 +5696,7 @@
       "fact": "O Baikal guarda cerca de 20% da água doce líquida de superfície do planeta."
     },
     {
+      "id": "geografia-435",
       "difficulty": "impossible",
       "text": "Qual é a área aproximada do Saara?",
       "options": [
@@ -5276,6 +5711,7 @@
       "fact": "O Saara já foi verde, com lagos e animais, há cerca de 6 mil anos."
     },
     {
+      "id": "geografia-436",
       "difficulty": "impossible",
       "text": "Qual é a extensão aproximada do rio Nilo?",
       "options": [
@@ -5290,6 +5726,7 @@
       "fact": "O Nilo atravessa ou banha 11 países."
     },
     {
+      "id": "geografia-437",
       "difficulty": "impossible",
       "text": "Qual é a população aproximada do Vaticano?",
       "options": [
@@ -5304,6 +5741,7 @@
       "fact": "O Vaticano tem menos de meio quilômetro quadrado."
     },
     {
+      "id": "geografia-438",
       "difficulty": "impossible",
       "text": "Qual é a área do Vaticano?",
       "options": [
@@ -5318,6 +5756,7 @@
       "fact": "O Vaticano é cerca de quatro vezes menor que o Parque Ibirapuera, em São Paulo."
     },
     {
+      "id": "geografia-439",
       "difficulty": "impossible",
       "text": "Qual é a população aproximada da Índia, a maior do mundo?",
       "options": [
@@ -5332,6 +5771,7 @@
       "fact": "A Índia passou a China como país mais populoso em 2023."
     },
     {
+      "id": "geografia-440",
       "difficulty": "impossible",
       "text": "Qual é a população mundial aproximada em 2024?",
       "options": [
@@ -5346,6 +5786,7 @@
       "fact": "A população mundial passou de 8 bilhões em novembro de 2022, segundo a ONU."
     },
     {
+      "id": "geografia-441",
       "difficulty": "impossible",
       "text": "Em que ano a população mundial chegou a 1 bilhão de pessoas, segundo estimativas?",
       "options": [
@@ -5360,6 +5801,7 @@
       "fact": "O segundo bilhão só chegou mais de 120 anos depois, em 1927."
     },
     {
+      "id": "geografia-442",
       "difficulty": "impossible",
       "text": "Qual é o comprimento da Linha do Equador?",
       "options": [
@@ -5374,6 +5816,7 @@
       "fact": "O raio da Terra no Equador é cerca de 21 km maior que nos polos."
     },
     {
+      "id": "geografia-443",
       "difficulty": "impossible",
       "text": "Que temperatura média, aproximadamente, tem Oymyakon, na Rússia, em janeiro?",
       "options": [
@@ -5388,6 +5831,7 @@
       "fact": "Oymyakon é considerada a cidade habitada mais fria do mundo."
     },
     {
+      "id": "geografia-444",
       "difficulty": "impossible",
       "text": "Quantas ilhas tem o Japão, segundo a recontagem oficial de 2023?",
       "options": [
@@ -5402,6 +5846,7 @@
       "fact": "A contagem anterior, de 1987, apontava 6.852 ilhas."
     },
     {
+      "id": "geografia-445",
       "difficulty": "impossible",
       "text": "Qual é a profundidade média dos oceanos, aproximadamente?",
       "options": [
@@ -5416,6 +5861,7 @@
       "fact": "Mais de 80% do fundo do mar ainda não foi mapeado em detalhe."
     },
     {
+      "id": "geografia-446",
       "difficulty": "impossible",
       "text": "Que porcentagem da superfície da Terra é coberta por oceanos?",
       "options": [
@@ -5430,6 +5876,7 @@
       "fact": "O oceano Pacífico sozinho é maior que todos os continentes juntos."
     },
     {
+      "id": "geografia-447",
       "difficulty": "impossible",
       "text": "Quantos fusos horários a China usa oficialmente?",
       "options": [
@@ -5444,6 +5891,7 @@
       "fact": "Apesar de ter tamanho para uns cinco fusos, a China inteira segue o horário de Pequim."
     },
     {
+      "id": "geografia-448",
       "difficulty": "impossible",
       "text": "Quantos países do mundo não têm saída para o mar?",
       "options": [
@@ -5458,6 +5906,7 @@
       "fact": "O Uzbequistão e o Liechtenstein são duplamente sem saída: cercados só por países também sem mar."
     },
     {
+      "id": "geografia-449",
       "difficulty": "medium",
       "text": "Qual é a capital do Laos?",
       "options": [
@@ -5470,6 +5919,7 @@
       "fact": "O Laos é o único país do Sudeste Asiático sem saída para o mar."
     },
     {
+      "id": "geografia-450",
       "difficulty": "medium",
       "text": "Em que país fica a cidade de Bergen, com casinhas coloridas no porto?",
       "options": [
@@ -5482,6 +5932,7 @@
       "fact": "Bergen é uma das cidades mais chuvosas da Europa."
     },
     {
+      "id": "geografia-451",
       "difficulty": "easy",
       "text": "Qual é a capital do Reino Unido?",
       "options": [
@@ -5494,6 +5945,7 @@
       "fact": "O rio Tâmisa atravessa a cidade."
     },
     {
+      "id": "geografia-452",
       "difficulty": "easy",
       "text": "Em que país fica a Estátua da Liberdade?",
       "options": [
@@ -5506,6 +5958,7 @@
       "fact": "Ela foi um presente da França."
     },
     {
+      "id": "geografia-453",
       "difficulty": "easy",
       "text": "Qual é o maior estado do Brasil em área?",
       "options": [
@@ -5518,6 +5971,7 @@
       "fact": "Ele é maior que a França, a Espanha e a Suécia juntas."
     },
     {
+      "id": "geografia-454",
       "difficulty": "easy",
       "text": "Qual é o menor estado do Brasil em área?",
       "options": [
@@ -5530,6 +5984,7 @@
       "fact": "Ele tem pouco mais de 21 mil km²."
     },
     {
+      "id": "geografia-455",
       "difficulty": "easy",
       "text": "Quantas regiões o Brasil tem, segundo o IBGE?",
       "options": [
@@ -5542,6 +5997,7 @@
       "fact": "São Norte, Nordeste, Centro-Oeste, Sudeste e Sul."
     },
     {
+      "id": "geografia-456",
       "difficulty": "easy",
       "text": "Em qual região do Brasil fica o estado do Piauí?",
       "options": [
@@ -5554,6 +6010,7 @@
       "fact": "É o único estado nordestino sem capital no litoral."
     },
     {
+      "id": "geografia-457",
       "difficulty": "easy",
       "text": "Em qual região do Brasil fica o estado de Rondônia?",
       "options": [
@@ -5566,6 +6023,7 @@
       "fact": "O nome homenageia o Marechal Rondon."
     },
     {
+      "id": "geografia-458",
       "difficulty": "easy",
       "text": "Qual oceano banha o Brasil?",
       "options": [
@@ -5578,6 +6036,7 @@
       "fact": "O litoral brasileiro tem mais de 7 mil km."
     },
     {
+      "id": "geografia-459",
       "difficulty": "easy",
       "text": "Qual é o maior oceano do mundo?",
       "options": [
@@ -5590,6 +6049,7 @@
       "fact": "Ele sozinho é maior que todos os continentes juntos."
     },
     {
+      "id": "geografia-460",
       "difficulty": "easy",
       "text": "Em que continente fica o Brasil?",
       "options": [
@@ -5602,6 +6062,7 @@
       "fact": "O Brasil fica na América do Sul."
     },
     {
+      "id": "geografia-461",
       "difficulty": "easy",
       "text": "Em que continente fica a Nigéria?",
       "options": [
@@ -5614,6 +6075,7 @@
       "fact": "É o país mais populoso da África."
     },
     {
+      "id": "geografia-462",
       "difficulty": "easy",
       "text": "Quais são as cores da bandeira do Brasil?",
       "options": [
@@ -5626,6 +6088,7 @@
       "fact": "Ela tem 27 estrelas, uma para cada estado e o DF."
     },
     {
+      "id": "geografia-463",
       "difficulty": "easy",
       "text": "O que tem no centro da bandeira do Japão?",
       "options": [
@@ -5638,6 +6101,7 @@
       "fact": "O círculo representa o Sol."
     },
     {
+      "id": "geografia-464",
       "difficulty": "easy",
       "text": "O que tem no centro da bandeira do Canadá?",
       "options": [
@@ -5650,6 +6114,7 @@
       "fact": "Ela foi adotada em 1965."
     },
     {
+      "id": "geografia-465",
       "difficulty": "easy",
       "text": "Qual é o nome da linha imaginária que passa pela cidade de Londres?",
       "options": [
@@ -5662,6 +6127,7 @@
       "fact": "Ela marca a longitude zero do planeta."
     },
     {
+      "id": "geografia-466",
       "difficulty": "easy",
       "text": "Qual linha imaginária passa por São Paulo?",
       "options": [
@@ -5674,6 +6140,7 @@
       "fact": "Essa linha passa pelo Brasil, cortando vários estados."
     },
     {
+      "id": "geografia-467",
       "difficulty": "easy",
       "text": "Qual é o nome do grande rio que corta o Egito?",
       "options": [
@@ -5686,6 +6153,7 @@
       "fact": "Nele ficavam muitas das grandes cidades do Egito antigo."
     },
     {
+      "id": "geografia-468",
       "difficulty": "easy",
       "text": "Qual é o nome do rio sagrado da Índia?",
       "options": [
@@ -5698,6 +6166,7 @@
       "fact": "Milhões de hindus se banham em suas águas todos os anos."
     },
     {
+      "id": "geografia-469",
       "difficulty": "easy",
       "text": "Qual rio atravessa Paris?",
       "options": [
@@ -5710,6 +6179,7 @@
       "fact": "Ele foi usado na natação da Olimpíada de 2024."
     },
     {
+      "id": "geografia-470",
       "difficulty": "easy",
       "text": "Qual rio atravessa Londres?",
       "options": [
@@ -5722,6 +6192,7 @@
       "fact": "Por séculos, ele era muito poluído."
     },
     {
+      "id": "geografia-471",
       "difficulty": "easy",
       "text": "Qual rio atravessa Lisboa?",
       "options": [
@@ -5734,6 +6205,7 @@
       "fact": "É o rio mais longo da Península Ibérica."
     },
     {
+      "id": "geografia-472",
       "difficulty": "easy",
       "text": "Qual é o nome da cordilheira da América do Sul?",
       "options": [
@@ -5746,6 +6218,7 @@
       "fact": "É a cordilheira mais longa do mundo."
     },
     {
+      "id": "geografia-473",
       "difficulty": "easy",
       "text": "Em que cordilheira fica o Mont Blanc?",
       "options": [
@@ -5758,6 +6231,7 @@
       "fact": "É o ponto mais alto dos Alpes."
     },
     {
+      "id": "geografia-474",
       "difficulty": "easy",
       "text": "Qual é o nome da montanha mais alta da África?",
       "options": [
@@ -5770,6 +6244,7 @@
       "fact": "Ela é um vulcão inativo, e tem neve no topo."
     },
     {
+      "id": "geografia-475",
       "difficulty": "easy",
       "text": "Em qual continente fica o deserto do Saara?",
       "options": [
@@ -5782,6 +6257,7 @@
       "fact": "Ele é tão grande quanto os EUA."
     },
     {
+      "id": "geografia-476",
       "difficulty": "easy",
       "text": "Em qual país fica Veneza?",
       "options": [
@@ -5794,6 +6270,7 @@
       "fact": "A cidade tem cerca de 150 canais."
     },
     {
+      "id": "geografia-477",
       "difficulty": "easy",
       "text": "Em qual país fica Amsterdã?",
       "options": [
@@ -5806,6 +6283,7 @@
       "fact": "Há mais bicicletas que pessoas na cidade."
     },
     {
+      "id": "geografia-478",
       "difficulty": "easy",
       "text": "Em qual país fica Punta del Este?",
       "options": [
@@ -5818,6 +6296,7 @@
       "fact": "É o principal balneário do Uruguai."
     },
     {
+      "id": "geografia-479",
       "difficulty": "easy",
       "text": "Em qual país fica Las Vegas?",
       "options": [
@@ -5830,6 +6309,7 @@
       "fact": "Fica no estado de Nevada, no meio do deserto."
     },
     {
+      "id": "geografia-480",
       "difficulty": "easy",
       "text": "Em qual país fica Hollywood?",
       "options": [
@@ -5842,6 +6322,7 @@
       "fact": "É um bairro de Los Angeles."
     },
     {
+      "id": "geografia-481",
       "difficulty": "easy",
       "text": "Que país tem uma folha vermelha na bandeira?",
       "options": [
@@ -5854,6 +6335,7 @@
       "fact": "A folha é de bordo, árvore típica do país."
     },
     {
+      "id": "geografia-482",
       "difficulty": "easy",
       "text": "Qual é a cor da estrela na bandeira da China?",
       "options": [
@@ -5866,6 +6348,7 @@
       "fact": "São cinco estrelas sobre fundo vermelho."
     },
     {
+      "id": "geografia-483",
       "difficulty": "easy",
       "text": "Quais são as cores da bandeira da Argentina?",
       "options": [
@@ -5878,6 +6361,7 @@
       "fact": "No centro fica o Sol de Maio."
     },
     {
+      "id": "geografia-484",
       "difficulty": "easy",
       "text": "Que animal aparece em muitos desenhos sobre a Austrália, com um salto longo?",
       "options": [
@@ -5890,6 +6374,7 @@
       "fact": "Ele aparece até no brasão do país."
     },
     {
+      "id": "geografia-485",
       "difficulty": "easy",
       "text": "Que país é o vizinho do Brasil ao sul, com capital em Montevidéu?",
       "options": [
@@ -5902,6 +6387,7 @@
       "fact": "Ele já foi uma província do Brasil chamada Cisplatina."
     },
     {
+      "id": "geografia-486",
       "difficulty": "easy",
       "text": "Que estado do Brasil faz fronteira com a Guiana Francesa?",
       "options": [
@@ -5914,6 +6400,7 @@
       "fact": "A ponte sobre o Oiapoque liga os dois lados."
     },
     {
+      "id": "geografia-487",
       "difficulty": "easy",
       "text": "Em que estado fica a cidade de Paraty?",
       "options": [
@@ -5926,6 +6413,7 @@
       "fact": "Ela tem ruas de pedra e um centro histórico colonial."
     },
     {
+      "id": "geografia-488",
       "difficulty": "easy",
       "text": "Em que estado fica a cidade de Jericoacoara?",
       "options": [
@@ -5938,6 +6426,7 @@
       "fact": "Fica no litoral oeste do estado."
     },
     {
+      "id": "geografia-489",
       "difficulty": "easy",
       "text": "Em que estado fica a cidade de Búzios?",
       "options": [
@@ -5950,6 +6439,7 @@
       "fact": "A atriz Brigitte Bardot ajudou a torná-la famosa."
     },
     {
+      "id": "geografia-490",
       "difficulty": "easy",
       "text": "Em que estado fica o arquipélago de Fernando de Noronha?",
       "options": [
@@ -5962,6 +6452,7 @@
       "fact": "Fica a mais de 350 km da costa."
     },
     {
+      "id": "geografia-491",
       "difficulty": "easy",
       "text": "Em que estado fica Balneário Camboriú?",
       "options": [
@@ -5974,6 +6465,7 @@
       "fact": "A cidade tem alguns dos prédios mais altos do Brasil."
     },
     {
+      "id": "geografia-492",
       "difficulty": "easy",
       "text": "Em que estado fica a Serra Gaúcha?",
       "options": [
@@ -5986,6 +6478,7 @@
       "fact": "Ela é conhecida pelos vinhos."
     },
     {
+      "id": "geografia-493",
       "difficulty": "easy",
       "text": "Que cidade é a capital federal do Brasil?",
       "options": [
@@ -5998,6 +6491,7 @@
       "fact": "Ela foi inaugurada em 1960."
     },
     {
+      "id": "geografia-494",
       "difficulty": "easy",
       "text": "Qual é o nome da avenida à beira-mar mais famosa do Rio de Janeiro, em Copacabana?",
       "options": [
@@ -6010,6 +6504,7 @@
       "fact": "O calçadão tem ondas de pedras portuguesas."
     },
     {
+      "id": "geografia-495",
       "difficulty": "easy",
       "text": "Qual é a maior cidade do Brasil?",
       "options": [
@@ -6022,6 +6517,7 @@
       "fact": "Ela tem mais de 11 milhões de moradores."
     },
     {
+      "id": "geografia-496",
       "difficulty": "easy",
       "text": "Qual é a região do Brasil que tem mais estados?",
       "options": [
@@ -6034,6 +6530,7 @@
       "fact": "São nove estados."
     },
     {
+      "id": "geografia-497",
       "difficulty": "easy",
       "text": "Qual é a região do Brasil com o menor número de estados?",
       "options": [
@@ -6046,6 +6543,7 @@
       "fact": "Ela é formada por Paraná, Santa Catarina e Rio Grande do Sul."
     },
     {
+      "id": "geografia-498",
       "difficulty": "easy",
       "text": "Qual é a linha imaginária que passa por Macapá?",
       "options": [
@@ -6058,6 +6556,7 @@
       "fact": "O estádio local, o Zerão, tem o meio-campo sobre essa linha."
     },
     {
+      "id": "geografia-499",
       "difficulty": "easy",
       "text": "Qual é o nome do clima muito frio dos polos?",
       "options": [
@@ -6070,6 +6569,7 @@
       "fact": "Na Antártida, a temperatura pode passar de -80 °C."
     },
     {
+      "id": "geografia-500",
       "difficulty": "easy",
       "text": "Qual é o nome do clima de boa parte do Nordeste do Brasil, com poucas chuvas?",
       "options": [
@@ -6082,6 +6582,7 @@
       "fact": "O Sertão é a parte mais conhecida."
     },
     {
+      "id": "geografia-501",
       "difficulty": "easy",
       "text": "Em que região brasileira fica o Sertão?",
       "options": [
@@ -6094,6 +6595,7 @@
       "fact": "Ele também alcança o norte de Minas Gerais."
     },
     {
+      "id": "geografia-502",
       "difficulty": "easy",
       "text": "Qual é o nome do desenho que representa o mundo inteiro no papel?",
       "options": [
@@ -6106,6 +6608,7 @@
       "fact": "O mapa de Mercator aumenta os países perto dos polos."
     },
     {
+      "id": "geografia-503",
       "difficulty": "easy",
       "text": "Como se chama o estudo dos mapas?",
       "options": [
@@ -6118,6 +6621,7 @@
       "fact": "Os mapas mais antigos conhecidos são da Babilônia."
     },
     {
+      "id": "geografia-504",
       "difficulty": "easy",
       "text": "Qual é o nome do ponto mais alto da Terra em que se pode ficar de pé?",
       "options": [
@@ -6130,6 +6634,7 @@
       "fact": "Edmund Hillary e Tenzing Norgay chegaram lá em 1953."
     },
     {
+      "id": "geografia-505",
       "difficulty": "easy",
       "text": "Em que país fica o Monte Vesúvio?",
       "options": [
@@ -6142,6 +6647,7 @@
       "fact": "Ele fica perto de Nápoles."
     },
     {
+      "id": "geografia-506",
       "difficulty": "easy",
       "text": "Em que país fica o Parque Yellowstone?",
       "options": [
@@ -6154,6 +6660,7 @@
       "fact": "É o primeiro parque nacional do mundo."
     },
     {
+      "id": "geografia-507",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Nairóbi?",
       "options": [
@@ -6166,6 +6673,7 @@
       "fact": "Tem um parque nacional dentro da própria cidade."
     },
     {
+      "id": "geografia-508",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Havana?",
       "options": [
@@ -6178,6 +6686,7 @@
       "fact": "Os carros antigos são uma de suas marcas."
     },
     {
+      "id": "geografia-509",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Bogotá?",
       "options": [
@@ -6190,6 +6699,7 @@
       "fact": "Ela fica a mais de 2.600 metros de altitude."
     },
     {
+      "id": "geografia-510",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Quito?",
       "options": [
@@ -6202,6 +6712,7 @@
       "fact": "É uma das capitais mais altas do mundo."
     },
     {
+      "id": "geografia-511",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Dublin?",
       "options": [
@@ -6214,6 +6725,7 @@
       "fact": "O Dia de São Patrício é a festa mais famosa de lá."
     },
     {
+      "id": "geografia-512",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Edimburgo?",
       "options": [
@@ -6226,6 +6738,7 @@
       "fact": "Fica sob o Castelo de Edimburgo, sobre um antigo vulcão."
     },
     {
+      "id": "geografia-513",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Viena?",
       "options": [
@@ -6238,6 +6751,7 @@
       "fact": "Mozart e Beethoven viveram lá."
     },
     {
+      "id": "geografia-514",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Atenas?",
       "options": [
@@ -6250,6 +6764,7 @@
       "fact": "Ela foi o berço da democracia."
     },
     {
+      "id": "geografia-515",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Oslo?",
       "options": [
@@ -6262,6 +6777,7 @@
       "fact": "É lá que o Nobel da Paz é entregue."
     },
     {
+      "id": "geografia-516",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Estocolmo?",
       "options": [
@@ -6274,6 +6790,7 @@
       "fact": "Ela fica sobre 14 ilhas."
     },
     {
+      "id": "geografia-517",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Copenhague?",
       "options": [
@@ -6286,6 +6803,7 @@
       "fact": "A Pequena Sereia é um dos seus símbolos."
     },
     {
+      "id": "geografia-518",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Bangkok?",
       "options": [
@@ -6298,6 +6816,7 @@
       "fact": "O nome completo é um dos maiores do mundo."
     },
     {
+      "id": "geografia-519",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Seul?",
       "options": [
@@ -6310,6 +6829,7 @@
       "fact": "Ela é um dos centros do pop coreano."
     },
     {
+      "id": "geografia-520",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Teerã?",
       "options": [
@@ -6322,6 +6842,7 @@
       "fact": "Fica aos pés dos montes Elburz."
     },
     {
+      "id": "geografia-521",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Jerusalém?",
       "options": [
@@ -6334,6 +6855,7 @@
       "fact": "É sagrada para judeus, cristãos e muçulmanos."
     },
     {
+      "id": "geografia-522",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de Meca?",
       "options": [
@@ -6346,6 +6868,7 @@
       "fact": "Milhões de muçulmanos peregrinam até lá."
     },
     {
+      "id": "geografia-523",
       "difficulty": "easy",
       "text": "Em que país fica Tijuana?",
       "options": [
@@ -6358,6 +6881,7 @@
       "fact": "É uma das cidades mais visitadas na fronteira."
     },
     {
+      "id": "geografia-524",
       "difficulty": "easy",
       "text": "Em que país fica Lima?",
       "options": [
@@ -6370,6 +6894,7 @@
       "fact": "A cidade fica no litoral do Pacífico."
     },
     {
+      "id": "geografia-525",
       "difficulty": "easy",
       "text": "Em que país fica Assunção?",
       "options": [
@@ -6382,6 +6907,7 @@
       "fact": "Muitos brasileiros compram em Ciudad del Este, no mesmo país."
     },
     {
+      "id": "geografia-526",
       "difficulty": "easy",
       "text": "Em que país fica Ciudad del Este, centro de compras na fronteira?",
       "options": [
@@ -6394,6 +6920,7 @@
       "fact": "A Ponte da Amizade liga a cidade a Foz do Iguaçu."
     },
     {
+      "id": "geografia-527",
       "difficulty": "easy",
       "text": "Em que país fica a cidade de La Paz?",
       "options": [
@@ -6406,6 +6933,7 @@
       "fact": "Ela é a sede do governo do país."
     },
     {
+      "id": "geografia-528",
       "difficulty": "easy",
       "text": "Em que país fica a ilha de Bali, além de Java e Sumatra?",
       "options": [
@@ -6418,6 +6946,7 @@
       "fact": "É um destino turístico muito famoso."
     },
     {
+      "id": "geografia-529",
       "difficulty": "easy",
       "text": "Em que oceano fica o arquipélago das Maldivas?",
       "options": [
@@ -6430,6 +6959,7 @@
       "fact": "A maior parte fica a poucos metros acima do mar."
     },
     {
+      "id": "geografia-530",
       "difficulty": "easy",
       "text": "Em que oceano ficam as ilhas do Caribe?",
       "options": [
@@ -6442,6 +6972,7 @@
       "fact": "O mar do Caribe é uma parte do Atlântico."
     },
     {
+      "id": "geografia-531",
       "difficulty": "medium",
       "text": "Que país europeu tem a capital mais ao norte?",
       "options": [
@@ -6454,6 +6985,7 @@
       "fact": "Reykjavik fica perto do Círculo Polar Ártico."
     },
     {
+      "id": "geografia-532",
       "difficulty": "medium",
       "text": "Que país tem mais fusos horários dentro de um território contínuo?",
       "options": [
@@ -6466,6 +6998,7 @@
       "fact": "São 11 fusos do Báltico ao Pacífico."
     },
     {
+      "id": "geografia-533",
       "difficulty": "medium",
       "text": "Qual país é famoso pela cidade de Petra, além de ser banhado pelo mar Morto?",
       "options": [
@@ -6478,6 +7011,7 @@
       "fact": "A cidade foi cenário de Indiana Jones."
     },
     {
+      "id": "geografia-534",
       "difficulty": "medium",
       "text": "Em que país fica o Mar de Aral, que quase secou?",
       "options": [
@@ -6490,6 +7024,7 @@
       "fact": "Era um dos maiores lagos do mundo, antes de os rios serem desviados."
     },
     {
+      "id": "geografia-535",
       "difficulty": "medium",
       "text": "Que país europeu tem cerca de 7 mil ilhas no Mediterrâneo e no Egeu, muitas desabitadas?",
       "options": [
@@ -6502,6 +7037,7 @@
       "fact": "O turismo é uma de suas maiores fontes de renda."
     },
     {
+      "id": "geografia-536",
       "difficulty": "medium",
       "text": "Qual é o único atol do Atlântico Sul, que fica no Brasil?",
       "options": [
@@ -6514,6 +7050,7 @@
       "fact": "Ele é uma reserva biológica no Rio Grande do Norte."
     },
     {
+      "id": "geografia-537",
       "difficulty": "medium",
       "text": "Em que cidade brasileira há uma estátua gigante de Cristo, maior que a do Rio?",
       "options": [
@@ -6526,6 +7063,7 @@
       "fact": "A estátua Cristo Protetor foi inaugurada em Encantado, no Rio Grande do Sul."
     },
     {
+      "id": "geografia-538",
       "difficulty": "medium",
       "text": "Em que estado fica o Pantanal Sul?",
       "options": [
@@ -6538,6 +7076,7 @@
       "fact": "Bonito fica nessa mesma região."
     },
     {
+      "id": "geografia-539",
       "difficulty": "medium",
       "text": "Qual é o nome da região metropolitana maior do Sul do Brasil?",
       "options": [
@@ -6550,6 +7089,7 @@
       "fact": "Ela tem cerca de 4 milhões de pessoas."
     },
     {
+      "id": "geografia-540",
       "difficulty": "medium",
       "text": "Qual é a segunda maior cidade do Brasil, em população?",
       "options": [
@@ -6562,6 +7102,7 @@
       "fact": "O censo de 2022 indica cerca de 6 milhões de moradores."
     },
     {
+      "id": "geografia-541",
       "difficulty": "medium",
       "text": "Qual é a terceira maior cidade do Brasil, em população, pelo Censo de 2022?",
       "options": [
@@ -6574,6 +7115,7 @@
       "fact": "Brasília passou Salvador nos últimos censos."
     },
     {
+      "id": "geografia-542",
       "difficulty": "medium",
       "text": "Qual é a maior ilha fluvial do mundo, no Brasil?",
       "options": [
@@ -6586,6 +7128,7 @@
       "fact": "Ela fica na foz do Amazonas e é maior que a Suíça."
     },
     {
+      "id": "geografia-543",
       "difficulty": "medium",
       "text": "Qual é a maior ilha totalmente fluvial do mundo, no Tocantins?",
       "options": [
@@ -6598,6 +7141,7 @@
       "fact": "Ela tem mais de 19 mil km²."
     },
     {
+      "id": "geografia-544",
       "difficulty": "medium",
       "text": "Qual rio brasileiro é chamado de \"rio da integração nacional\"?",
       "options": [
@@ -6610,6 +7154,7 @@
       "fact": "Ele nasce em Minas e deságua entre Alagoas e Sergipe."
     },
     {
+      "id": "geografia-545",
       "difficulty": "medium",
       "text": "Qual é o maior afluente do rio Amazonas em volume?",
       "options": [
@@ -6622,6 +7167,7 @@
       "fact": "Ele é um dos maiores rios do mundo."
     },
     {
+      "id": "geografia-546",
       "difficulty": "medium",
       "text": "Em que cidade o rio Negro encontra o Solimões?",
       "options": [
@@ -6634,6 +7180,7 @@
       "fact": "As águas correm lado a lado sem se misturar por vários quilômetros."
     },
     {
+      "id": "geografia-547",
       "difficulty": "medium",
       "text": "Qual rio tem uma das maiores usinas hidrelétricas do mundo, Itaipu?",
       "options": [
@@ -6646,6 +7193,7 @@
       "fact": "A usina fica na fronteira entre Brasil e Paraguai."
     },
     {
+      "id": "geografia-548",
       "difficulty": "medium",
       "text": "Qual é o rio que dá nome à hidrelétrica de Belo Monte?",
       "options": [
@@ -6658,6 +7206,7 @@
       "fact": "A usina fica no Pará e foi muito criticada por seus impactos."
     },
     {
+      "id": "geografia-549",
       "difficulty": "medium",
       "text": "Qual é o ponto mais alto do estado de São Paulo?",
       "options": [
@@ -6670,6 +7219,7 @@
       "fact": "A Pedra da Mina tem 2.798 metros."
     },
     {
+      "id": "geografia-550",
       "difficulty": "medium",
       "text": "Qual é o ponto mais oriental do Brasil?",
       "options": [
@@ -6682,6 +7232,7 @@
       "fact": "Fica em João Pessoa, na Paraíba."
     },
     {
+      "id": "geografia-551",
       "difficulty": "medium",
       "text": "Qual é o ponto mais setentrional do Brasil?",
       "options": [
@@ -6694,6 +7245,7 @@
       "fact": "Fica em Roraima, e por isso a frase \"do Oiapoque ao Chuí\" é imprecisa."
     },
     {
+      "id": "geografia-552",
       "difficulty": "medium",
       "text": "Qual é o ponto mais meridional do Brasil?",
       "options": [
@@ -6706,6 +7258,7 @@
       "fact": "Ele fica no Rio Grande do Sul."
     },
     {
+      "id": "geografia-553",
       "difficulty": "medium",
       "text": "Qual é o ponto mais ocidental do Brasil?",
       "options": [
@@ -6718,6 +7271,7 @@
       "fact": "Ele fica no Acre, na fronteira com o Peru."
     },
     {
+      "id": "geografia-554",
       "difficulty": "medium",
       "text": "Em qual capital brasileira o Sol nasce primeiro?",
       "options": [
@@ -6730,6 +7284,7 @@
       "fact": "Isso acontece na ponta leste do continente."
     },
     {
+      "id": "geografia-555",
       "difficulty": "medium",
       "text": "Que estado brasileiro faz fronteira com o maior número de países?",
       "options": [
@@ -6742,6 +7297,7 @@
       "fact": "Ele faz fronteira com Peru, Colômbia e Venezuela."
     },
     {
+      "id": "geografia-556",
       "difficulty": "medium",
       "text": "Em que oceano fica a costa da Califórnia?",
       "options": [
@@ -6754,6 +7310,7 @@
       "fact": "A costa é ligada a várias falhas geológicas."
     },
     {
+      "id": "geografia-557",
       "difficulty": "medium",
       "text": "Em que oceano fica a costa de Portugal?",
       "options": [
@@ -6766,6 +7323,7 @@
       "fact": "Os navegantes portugueses saíam por lá."
     },
     {
+      "id": "geografia-558",
       "difficulty": "medium",
       "text": "Qual é o maior golfo do mundo?",
       "options": [
@@ -6778,6 +7336,7 @@
       "fact": "É uma grande fonte de petróleo e furacões."
     },
     {
+      "id": "geografia-559",
       "difficulty": "medium",
       "text": "Qual é a maior baía do mundo?",
       "options": [
@@ -6790,6 +7349,7 @@
       "fact": "Ela banha a Índia e Bangladesh."
     },
     {
+      "id": "geografia-560",
       "difficulty": "medium",
       "text": "Qual é a maior baía do Brasil?",
       "options": [
@@ -6802,6 +7362,7 @@
       "fact": "Ela fica na Bahia, em frente a Salvador."
     },
     {
+      "id": "geografia-561",
       "difficulty": "medium",
       "text": "Qual é o mar entre a Rússia e o Irã, e o maior lago salgado do mundo?",
       "options": [
@@ -6814,6 +7375,7 @@
       "fact": "Apesar do nome, é considerado um lago por muitos especialistas."
     },
     {
+      "id": "geografia-562",
       "difficulty": "medium",
       "text": "Que grande cidade está em dois continentes, cortada pelo Bósforo?",
       "options": [
@@ -6826,6 +7388,7 @@
       "fact": "Ela já se chamou Bizâncio e Constantinopla."
     },
     {
+      "id": "geografia-563",
       "difficulty": "medium",
       "text": "Que grande estreito liga o Mar Negro ao Mar de Mármara?",
       "options": [
@@ -6838,6 +7401,7 @@
       "fact": "Ele divide Istambul."
     },
     {
+      "id": "geografia-564",
       "difficulty": "medium",
       "text": "Que estreito é vital para o transporte do petróleo do Golfo Pérsico?",
       "options": [
@@ -6850,6 +7414,7 @@
       "fact": "Cerca de um quinto do petróleo mundial passa por lá."
     },
     {
+      "id": "geografia-565",
       "difficulty": "medium",
       "text": "Qual cidade é conhecida como \"Cidade Eterna\"?",
       "options": [
@@ -6862,6 +7427,7 @@
       "fact": "Ela foi fundada, segundo a lenda, em 753 a.C."
     },
     {
+      "id": "geografia-566",
       "difficulty": "medium",
       "text": "Qual cidade é conhecida como \"Big Apple\"?",
       "options": [
@@ -6874,6 +7440,7 @@
       "fact": "O termo veio do mundo das corridas de cavalos nos anos 1920."
     },
     {
+      "id": "geografia-567",
       "difficulty": "medium",
       "text": "Qual cidade é conhecida como \"Cidade dos Anjos\"?",
       "options": [
@@ -6886,6 +7453,7 @@
       "fact": "O nome espanhol era bem mais longo."
     },
     {
+      "id": "geografia-568",
       "difficulty": "medium",
       "text": "Qual cidade é conhecida como a \"Veneza do Norte\", cheia de canais, na Rússia?",
       "options": [
@@ -6898,6 +7466,7 @@
       "fact": "Foi fundada por Pedro, o Grande, em 1703."
     },
     {
+      "id": "geografia-569",
       "difficulty": "medium",
       "text": "Qual cidade é chamada de \"Pérola do Oriente\"?",
       "options": [
@@ -6910,6 +7479,7 @@
       "fact": "Ela já foi um grande centro comercial nos anos 1930."
     },
     {
+      "id": "geografia-570",
       "difficulty": "medium",
       "text": "Qual é a língua oficial da Áustria?",
       "options": [
@@ -6922,6 +7492,7 @@
       "fact": "O alemão falado lá tem diferenças regionais."
     },
     {
+      "id": "geografia-571",
       "difficulty": "medium",
       "text": "Qual é a língua oficial do Egito?",
       "options": [
@@ -6934,6 +7505,7 @@
       "fact": "O idioma egípcio antigo sobrevive em rituais coptas."
     },
     {
+      "id": "geografia-572",
       "difficulty": "medium",
       "text": "Qual é a língua oficial de Israel?",
       "options": [
@@ -6946,6 +7518,7 @@
       "fact": "O hebraico foi revivido como língua falada no século XIX."
     },
     {
+      "id": "geografia-573",
       "difficulty": "medium",
       "text": "Qual é a língua oficial da Tailândia?",
       "options": [
@@ -6958,6 +7531,7 @@
       "fact": "O alfabeto tem 44 consoantes."
     },
     {
+      "id": "geografia-574",
       "difficulty": "medium",
       "text": "Qual é o idioma mais falado na Argentina?",
       "options": [
@@ -6970,6 +7544,7 @@
       "fact": "Muitos descendentes de italianos moldaram o sotaque local."
     },
     {
+      "id": "geografia-575",
       "difficulty": "medium",
       "text": "Quais são as línguas oficiais do Canadá?",
       "options": [
@@ -6982,6 +7557,7 @@
       "fact": "O francês é predominante em Quebec."
     },
     {
+      "id": "geografia-576",
       "difficulty": "medium",
       "text": "Quantas línguas oficiais tem a África do Sul, aproximadamente?",
       "options": [
@@ -6994,6 +7570,7 @@
       "fact": "A língua de sinais foi a mais nova, adicionada em 2023."
     },
     {
+      "id": "geografia-577",
       "difficulty": "medium",
       "text": "Quantas línguas oficiais tem a Suíça?",
       "options": [
@@ -7006,6 +7583,7 @@
       "fact": "São alemão, francês, italiano e romanche."
     },
     {
+      "id": "geografia-578",
       "difficulty": "medium",
       "text": "Qual destes países é uma monarquia?",
       "options": [
@@ -7018,6 +7596,7 @@
       "fact": "O rei atual é Felipe VI."
     },
     {
+      "id": "geografia-579",
       "difficulty": "medium",
       "text": "Qual destes países é uma república?",
       "options": [
@@ -7030,6 +7609,7 @@
       "fact": "A Itália virou república em 1946."
     },
     {
+      "id": "geografia-580",
       "difficulty": "medium",
       "text": "Qual é o maior produtor de petróleo do mundo, nos últimos anos?",
       "options": [
@@ -7042,6 +7622,7 @@
       "fact": "A produção subiu muito por causa do xisto."
     },
     {
+      "id": "geografia-581",
       "difficulty": "medium",
       "text": "Qual é o maior exportador mundial de soja?",
       "options": [
@@ -7054,6 +7635,7 @@
       "fact": "Ela vai principalmente para a China."
     },
     {
+      "id": "geografia-582",
       "difficulty": "medium",
       "text": "Qual é o maior exportador mundial de carne bovina?",
       "options": [
@@ -7066,6 +7648,7 @@
       "fact": "O rebanho brasileiro é maior que a população do país."
     },
     {
+      "id": "geografia-583",
       "difficulty": "medium",
       "text": "Qual é o país que mais produz vinho no mundo, em muitos anos?",
       "options": [
@@ -7078,6 +7661,7 @@
       "fact": "França e Espanha são os grandes rivais."
     },
     {
+      "id": "geografia-584",
       "difficulty": "medium",
       "text": "Qual é o país que mais produz arroz no mundo?",
       "options": [
@@ -7090,6 +7674,7 @@
       "fact": "A Índia é o segundo maior produtor."
     },
     {
+      "id": "geografia-585",
       "difficulty": "medium",
       "text": "Qual é o país mais importante produtor de cobre do mundo?",
       "options": [
@@ -7102,6 +7687,7 @@
       "fact": "A mina de Chuquicamata é uma das maiores do mundo."
     },
     {
+      "id": "geografia-586",
       "difficulty": "medium",
       "text": "Qual destes países tem o maior PIB da América do Sul?",
       "options": [
@@ -7114,6 +7700,7 @@
       "fact": "O país é responsável por cerca de metade da produção da região."
     },
     {
+      "id": "geografia-587",
       "difficulty": "medium",
       "text": "Qual país tem o maior número de vulcões ativos?",
       "options": [
@@ -7126,6 +7713,7 @@
       "fact": "O Krakatoa fica entre as ilhas de Java e Sumatra."
     },
     {
+      "id": "geografia-588",
       "difficulty": "medium",
       "text": "Em qual continente o rio Congo corre?",
       "options": [
@@ -7138,6 +7726,7 @@
       "fact": "É o rio mais profundo do mundo."
     },
     {
+      "id": "geografia-589",
       "difficulty": "medium",
       "text": "Em qual continente ficam os Pirineus?",
       "options": [
@@ -7150,6 +7739,7 @@
       "fact": "Essa cordilheira separa a Espanha da França."
     },
     {
+      "id": "geografia-590",
       "difficulty": "medium",
       "text": "Em qual continente fica o Rio Indo?",
       "options": [
@@ -7162,6 +7752,7 @@
       "fact": "O nome dele deu origem à palavra Índia."
     },
     {
+      "id": "geografia-591",
       "difficulty": "medium",
       "text": "Em qual continente ficam as Montanhas Rochosas?",
       "options": [
@@ -7174,6 +7765,7 @@
       "fact": "Elas vão do Canadá até o Novo México."
     },
     {
+      "id": "geografia-592",
       "difficulty": "medium",
       "text": "Em qual país ficam os fiordes de Milford Sound?",
       "options": [
@@ -7186,6 +7778,7 @@
       "fact": "O local aparece nos filmes de O Senhor dos Anéis."
     },
     {
+      "id": "geografia-593",
       "difficulty": "medium",
       "text": "Em qual país foram gravadas as paisagens de O Senhor dos Anéis?",
       "options": [
@@ -7198,6 +7791,7 @@
       "fact": "A vila de Hobbiton virou atração turística."
     },
     {
+      "id": "geografia-594",
       "difficulty": "medium",
       "text": "Em qual país há geleiras como a Perito Moreno?",
       "options": [
@@ -7210,6 +7804,7 @@
       "fact": "Ela fica em Santa Cruz, na Patagônia."
     },
     {
+      "id": "geografia-595",
       "difficulty": "medium",
       "text": "Em qual país fica o Parque Nacional Torres del Paine?",
       "options": [
@@ -7222,6 +7817,7 @@
       "fact": "Suas torres de granito são um grande cartão-postal."
     },
     {
+      "id": "geografia-596",
       "difficulty": "medium",
       "text": "Em qual país ficam as linhas de Nazca?",
       "options": [
@@ -7234,6 +7830,7 @@
       "fact": "Elas formam desenhos gigantes no deserto."
     },
     {
+      "id": "geografia-597",
       "difficulty": "medium",
       "text": "Em qual país fica o Deserto do Atacama?",
       "options": [
@@ -7246,6 +7843,7 @@
       "fact": "É muito usado por astrônomos, pelo céu limpo."
     },
     {
+      "id": "geografia-598",
       "difficulty": "medium",
       "text": "Em qual país fica o Lago Vitória, junto com Uganda e Tanzânia?",
       "options": [
@@ -7258,6 +7856,7 @@
       "fact": "É a nascente mais conhecida do Nilo Branco."
     },
     {
+      "id": "geografia-599",
       "difficulty": "medium",
       "text": "Em qual país fica o Monte Sinai?",
       "options": [
@@ -7270,6 +7869,7 @@
       "fact": "Na tradição, foi lá que Moisés recebeu os Dez Mandamentos."
     },
     {
+      "id": "geografia-600",
       "difficulty": "medium",
       "text": "Em qual país há o deserto da Arábia, em sua maior parte?",
       "options": [
@@ -7282,6 +7882,7 @@
       "fact": "Tem o maior deserto de areia contínua do mundo."
     },
     {
+      "id": "geografia-601",
       "difficulty": "medium",
       "text": "Em qual país ficam as maiores reservas de petróleo do mundo?",
       "options": [
@@ -7294,6 +7895,7 @@
       "fact": "A maior parte é de petróleo muito pesado."
     },
     {
+      "id": "geografia-602",
       "difficulty": "easy",
       "text": "Que país vizinho do Brasil tem a cidade de Bariloche e o tango?",
       "options": [
@@ -7306,6 +7908,7 @@
       "fact": "O tango nasceu nos bairros de Buenos Aires e Montevidéu."
     },
     {
+      "id": "geografia-603",
       "difficulty": "easy",
       "text": "Em que região do Brasil fica o Pantanal?",
       "options": [
@@ -7318,6 +7921,7 @@
       "fact": "Ele fica em Mato Grosso e Mato Grosso do Sul."
     },
     {
+      "id": "geografia-604",
       "difficulty": "easy",
       "text": "Em que região do Brasil fica o Rio Grande do Norte?",
       "options": [
@@ -7330,6 +7934,7 @@
       "fact": "Natal é conhecida pelas dunas de Genipabu."
     },
     {
+      "id": "geografia-605",
       "difficulty": "easy",
       "text": "Em que região do Brasil fica o Espírito Santo?",
       "options": [
@@ -7342,6 +7947,7 @@
       "fact": "É o menor estado dessa região."
     },
     {
+      "id": "geografia-606",
       "difficulty": "easy",
       "text": "Em que região do Brasil fica o Amapá?",
       "options": [
@@ -7354,6 +7960,7 @@
       "fact": "Sua capital é Macapá, cortada pela linha do Equador."
     },
     {
+      "id": "geografia-607",
       "difficulty": "easy",
       "text": "Em que região do Brasil fica o Paraná?",
       "options": [
@@ -7366,6 +7973,7 @@
       "fact": "As Cataratas do Iguaçu ficam nesse estado."
     },
     {
+      "id": "geografia-608",
       "difficulty": "easy",
       "text": "Qual é a capital do Maranhão?",
       "options": [
@@ -7378,6 +7986,7 @@
       "fact": "É a única capital brasileira fundada por franceses."
     },
     {
+      "id": "geografia-609",
       "difficulty": "medium",
       "text": "Qual é a capital do Piauí?",
       "options": [
@@ -7390,6 +7999,7 @@
       "fact": "É a única capital do Nordeste fora do litoral."
     },
     {
+      "id": "geografia-610",
       "difficulty": "medium",
       "text": "Qual é a capital de Roraima?",
       "options": [
@@ -7402,6 +8012,7 @@
       "fact": "É a única capital brasileira totalmente no Hemisfério Norte."
     },
     {
+      "id": "geografia-611",
       "difficulty": "medium",
       "text": "Que país europeu não é membro da União Europeia e tem capital em Oslo?",
       "options": [
@@ -7414,6 +8025,7 @@
       "fact": "A população rejeitou a entrada em dois plebiscitos."
     },
     {
+      "id": "geografia-612",
       "difficulty": "medium",
       "text": "Em qual país europeu fica o maior número de patrimônios mundiais da Unesco?",
       "options": [
@@ -7426,6 +8038,7 @@
       "fact": "Tem também um dos maiores acervos artísticos do mundo."
     },
     {
+      "id": "geografia-613",
       "difficulty": "hard",
       "text": "Qual é a capital do Sudão do Sul?",
       "options": [
@@ -7438,6 +8051,7 @@
       "fact": "O país é independente desde 2011."
     },
     {
+      "id": "geografia-614",
       "difficulty": "hard",
       "text": "Qual é a capital da Eritreia?",
       "options": [
@@ -7450,6 +8064,7 @@
       "fact": "A cidade é famosa por sua arquitetura italiana."
     },
     {
+      "id": "geografia-615",
       "difficulty": "hard",
       "text": "Qual é a capital da Somália?",
       "options": [
@@ -7462,6 +8077,7 @@
       "fact": "Fica à beira do Oceano Índico."
     },
     {
+      "id": "geografia-616",
       "difficulty": "hard",
       "text": "Qual é a capital do Mali?",
       "options": [
@@ -7474,6 +8090,7 @@
       "fact": "O rio Níger corta a cidade."
     },
     {
+      "id": "geografia-617",
       "difficulty": "hard",
       "text": "Qual é a capital do Níger?",
       "options": [
@@ -7486,6 +8103,7 @@
       "fact": "Boa parte do país está no Saara."
     },
     {
+      "id": "geografia-618",
       "difficulty": "hard",
       "text": "Qual é a capital do Chade?",
       "options": [
@@ -7498,6 +8116,7 @@
       "fact": "O Lago Chade encolheu muito nas últimas décadas."
     },
     {
+      "id": "geografia-619",
       "difficulty": "hard",
       "text": "Qual é a capital da República Democrática do Congo?",
       "options": [
@@ -7510,6 +8129,7 @@
       "fact": "Ela fica em frente a Brazzaville, capital do outro Congo."
     },
     {
+      "id": "geografia-620",
       "difficulty": "hard",
       "text": "Qual é a capital do Gabão?",
       "options": [
@@ -7522,6 +8142,7 @@
       "fact": "O nome significa \"cidade livre\", dado por escravos libertos."
     },
     {
+      "id": "geografia-621",
       "difficulty": "hard",
       "text": "Qual é a capital de Camarões?",
       "options": [
@@ -7534,6 +8155,7 @@
       "fact": "Douala é maior, mas Iaundé é a capital."
     },
     {
+      "id": "geografia-622",
       "difficulty": "hard",
       "text": "Qual é a capital da Guiné Equatorial?",
       "options": [
@@ -7546,6 +8168,7 @@
       "fact": "É o único país africano com espanhol como língua oficial."
     },
     {
+      "id": "geografia-623",
       "difficulty": "hard",
       "text": "Qual é a capital da Namíbia?",
       "options": [
@@ -7558,6 +8181,7 @@
       "fact": "O alemão ainda é ouvido em algumas áreas."
     },
     {
+      "id": "geografia-624",
       "difficulty": "hard",
       "text": "Qual é a capital de Burundi?",
       "options": [
@@ -7570,6 +8194,7 @@
       "fact": "Em 2019, a capital política foi mudada de Bujumbura."
     },
     {
+      "id": "geografia-625",
       "difficulty": "hard",
       "text": "Qual é a capital da Mauritânia?",
       "options": [
@@ -7582,6 +8207,7 @@
       "fact": "Ela foi planejada nos anos 1950, perto da costa do Atlântico."
     },
     {
+      "id": "geografia-626",
       "difficulty": "hard",
       "text": "Qual é a capital do Togo?",
       "options": [
@@ -7594,6 +8220,7 @@
       "fact": "Fica bem na fronteira com Gana."
     },
     {
+      "id": "geografia-627",
       "difficulty": "hard",
       "text": "Qual é a capital oficial do Benim?",
       "options": [
@@ -7606,6 +8233,7 @@
       "fact": "Cotonou é a sede do governo."
     },
     {
+      "id": "geografia-628",
       "difficulty": "hard",
       "text": "Qual é a capital de Serra Leoa?",
       "options": [
@@ -7618,6 +8246,7 @@
       "fact": "Foi fundada para escravizados libertados."
     },
     {
+      "id": "geografia-629",
       "difficulty": "hard",
       "text": "Qual é a capital da Libéria?",
       "options": [
@@ -7630,6 +8259,7 @@
       "fact": "O nome homenageia o presidente americano James Monroe."
     },
     {
+      "id": "geografia-630",
       "difficulty": "hard",
       "text": "Qual é a capital da Estônia?",
       "options": [
@@ -7642,6 +8272,7 @@
       "fact": "Seu centro medieval é Patrimônio Mundial."
     },
     {
+      "id": "geografia-631",
       "difficulty": "hard",
       "text": "Qual é a capital da Lituânia?",
       "options": [
@@ -7654,6 +8285,7 @@
       "fact": "O país foi a primeira república soviética a declarar independência."
     },
     {
+      "id": "geografia-632",
       "difficulty": "hard",
       "text": "Qual é a capital da Moldávia?",
       "options": [
@@ -7666,6 +8298,7 @@
       "fact": "O país é um dos mais pobres da Europa."
     },
     {
+      "id": "geografia-633",
       "difficulty": "hard",
       "text": "Qual é a capital da Macedônia do Norte?",
       "options": [
@@ -7678,6 +8311,7 @@
       "fact": "O nome do país mudou em 2019, por disputa com a Grécia."
     },
     {
+      "id": "geografia-634",
       "difficulty": "hard",
       "text": "Qual é a capital de Montenegro?",
       "options": [
@@ -7690,6 +8324,7 @@
       "fact": "O país é independente da Sérvia desde 2006."
     },
     {
+      "id": "geografia-635",
       "difficulty": "hard",
       "text": "Qual é a capital do Kosovo?",
       "options": [
@@ -7702,6 +8337,7 @@
       "fact": "O país declarou independência em 2008."
     },
     {
+      "id": "geografia-636",
       "difficulty": "hard",
       "text": "Qual é a capital do Turcomenistão?",
       "options": [
@@ -7714,6 +8350,7 @@
       "fact": "A cidade tem a maior densidade de prédios de mármore do mundo."
     },
     {
+      "id": "geografia-637",
       "difficulty": "hard",
       "text": "Qual é a capital do Tajiquistão?",
       "options": [
@@ -7726,6 +8363,7 @@
       "fact": "O nome significa \"segunda-feira\", dia do mercado local."
     },
     {
+      "id": "geografia-638",
       "difficulty": "hard",
       "text": "Qual é a capital do Sri Lanka, oficialmente?",
       "options": [
@@ -7738,6 +8376,7 @@
       "fact": "Colombo é a capital econômica."
     },
     {
+      "id": "geografia-639",
       "difficulty": "hard",
       "text": "Qual é a capital da Papua-Nova Guiné?",
       "options": [
@@ -7750,6 +8389,7 @@
       "fact": "O país tem mais de 800 línguas."
     },
     {
+      "id": "geografia-640",
       "difficulty": "hard",
       "text": "Qual é a capital de Fiji?",
       "options": [
@@ -7762,6 +8402,7 @@
       "fact": "O país tem mais de 300 ilhas."
     },
     {
+      "id": "geografia-641",
       "difficulty": "hard",
       "text": "Qual é a capital de Samoa?",
       "options": [
@@ -7774,6 +8415,7 @@
       "fact": "O escritor Robert Louis Stevenson viveu e morreu lá."
     },
     {
+      "id": "geografia-642",
       "difficulty": "hard",
       "text": "Qual é a capital de Barbados?",
       "options": [
@@ -7786,6 +8428,7 @@
       "fact": "O país virou república em 2021, deixando a monarquia britânica."
     },
     {
+      "id": "geografia-643",
       "difficulty": "hard",
       "text": "Qual é a capital de Trinidad e Tobago?",
       "options": [
@@ -7798,6 +8441,7 @@
       "fact": "O país é conhecido pelo carnaval e pelo steelpan."
     },
     {
+      "id": "geografia-644",
       "difficulty": "hard",
       "text": "Qual é a capital das Bahamas?",
       "options": [
@@ -7810,6 +8454,7 @@
       "fact": "Fica na ilha de Nova Providência."
     },
     {
+      "id": "geografia-645",
       "difficulty": "hard",
       "text": "Em que estado brasileiro nasce o rio São Francisco?",
       "options": [
@@ -7822,6 +8467,7 @@
       "fact": "Ele nasce na Serra da Canastra."
     },
     {
+      "id": "geografia-646",
       "difficulty": "hard",
       "text": "Qual é o rio que separa Brasil e Argentina em boa parte da fronteira?",
       "options": [
@@ -7834,6 +8480,7 @@
       "fact": "Ele nasce no planalto do sul do Brasil."
     },
     {
+      "id": "geografia-647",
       "difficulty": "hard",
       "text": "Qual rio forma a fronteira entre o Brasil e o Paraguai, em parte?",
       "options": [
@@ -7846,6 +8493,7 @@
       "fact": "A hidrelétrica de Itaipu está nele."
     },
     {
+      "id": "geografia-648",
       "difficulty": "hard",
       "text": "Qual rio separa a França da Alemanha em parte?",
       "options": [
@@ -7858,6 +8506,7 @@
       "fact": "O vale do Reno é famoso pelos castelos e vinhedos."
     },
     {
+      "id": "geografia-649",
       "difficulty": "hard",
       "text": "Qual é o rio mais extenso da Ásia?",
       "options": [
@@ -7870,6 +8519,7 @@
       "fact": "Ele é o terceiro mais longo do mundo."
     },
     {
+      "id": "geografia-650",
       "difficulty": "hard",
       "text": "Qual é o rio mais extenso da África?",
       "options": [
@@ -7882,6 +8532,7 @@
       "fact": "Ele tem cerca de 6.650 km."
     },
     {
+      "id": "geografia-651",
       "difficulty": "hard",
       "text": "Qual é o rio mais extenso da América do Sul, junto do Amazonas?",
       "options": [
@@ -7894,6 +8545,7 @@
       "fact": "Depois do Amazonas, ele é o segundo, com cerca de 4.880 km."
     },
     {
+      "id": "geografia-652",
       "difficulty": "hard",
       "text": "Qual é o maior rio em volume da Europa?",
       "options": [
@@ -7906,6 +8558,7 @@
       "fact": "Ele deságua no mar Cáspio."
     },
     {
+      "id": "geografia-653",
       "difficulty": "hard",
       "text": "Qual é a cordilheira mais alta da Rússia?",
       "options": [
@@ -7918,6 +8571,7 @@
       "fact": "O Elbrus é o ponto mais alto, com 5.642 metros."
     },
     {
+      "id": "geografia-654",
       "difficulty": "hard",
       "text": "Qual é a montanha mais alta do Cáucaso e da Rússia?",
       "options": [
@@ -7930,6 +8584,7 @@
       "fact": "É um vulcão dormente."
     },
     {
+      "id": "geografia-655",
       "difficulty": "hard",
       "text": "Em que continente fica o Maciço Vinson?",
       "options": [
@@ -7942,6 +8597,7 @@
       "fact": "Ele é o ponto mais alto da Antártida, com mais de 4.800 metros."
     },
     {
+      "id": "geografia-656",
       "difficulty": "hard",
       "text": "Qual é a ponta sul da África?",
       "options": [
@@ -7954,6 +8610,7 @@
       "fact": "O Cabo da Boa Esperança não é o ponto mais ao sul."
     },
     {
+      "id": "geografia-657",
       "difficulty": "hard",
       "text": "Qual é o ponto mais ao sul da América do Sul?",
       "options": [
@@ -7966,6 +8623,7 @@
       "fact": "Marinheiros temem muito as tempestades da região."
     },
     {
+      "id": "geografia-658",
       "difficulty": "hard",
       "text": "Qual é o principal porto da Holanda e da Europa?",
       "options": [
@@ -7978,6 +8636,7 @@
       "fact": "Grande parte dos produtos da Europa passa por lá."
     },
     {
+      "id": "geografia-659",
       "difficulty": "hard",
       "text": "Qual é o maior porto do Brasil?",
       "options": [
@@ -7990,6 +8649,7 @@
       "fact": "Grande parte do comércio exterior do Brasil passa por ele."
     },
     {
+      "id": "geografia-660",
       "difficulty": "hard",
       "text": "Qual é o maior porto do mundo em carga?",
       "options": [
@@ -8002,6 +8662,7 @@
       "fact": "Ele movimenta mais de 40 milhões de contêineres por ano."
     },
     {
+      "id": "geografia-661",
       "difficulty": "hard",
       "text": "Qual é a altitude de La Paz, aproximadamente?",
       "options": [
@@ -8014,6 +8675,7 @@
       "fact": "Os visitantes costumam sentir mal-estar pelo ar rarefeito."
     },
     {
+      "id": "geografia-662",
       "difficulty": "hard",
       "text": "Qual é a capital mais alta do mundo, se contar a sede de governo?",
       "options": [
@@ -8026,6 +8688,7 @@
       "fact": "Ela fica a mais de 3.600 metros de altitude."
     },
     {
+      "id": "geografia-663",
       "difficulty": "hard",
       "text": "Qual é a capital mais ao sul do mundo?",
       "options": [
@@ -8038,6 +8701,7 @@
       "fact": "Fica na Ilha do Norte da Nova Zelândia."
     },
     {
+      "id": "geografia-664",
       "difficulty": "hard",
       "text": "Qual é a capital mais ao norte do mundo?",
       "options": [
@@ -8050,6 +8714,7 @@
       "fact": "Nuuk, na Groenlândia, é mais ao norte, mas não é um país independente."
     },
     {
+      "id": "geografia-665",
       "difficulty": "hard",
       "text": "Qual é o país com a maior faixa costeira na África?",
       "options": [
@@ -8062,6 +8727,7 @@
       "fact": "A costa dela tem mais de 3.000 km."
     },
     {
+      "id": "geografia-666",
       "difficulty": "hard",
       "text": "Qual é o menor país da África em área continental?",
       "options": [
@@ -8074,6 +8740,7 @@
       "fact": "Ele fica às margens de um rio, cercado pelo Senegal."
     },
     {
+      "id": "geografia-667",
       "difficulty": "hard",
       "text": "Qual é o menor país da América Central?",
       "options": [
@@ -8086,6 +8753,7 @@
       "fact": "Ele é conhecido por uma grande costa no Pacífico."
     },
     {
+      "id": "geografia-668",
       "difficulty": "hard",
       "text": "Qual país da América Central não tem exército, desde 1949?",
       "options": [
@@ -8098,6 +8766,7 @@
       "fact": "Ele investiu o dinheiro em saúde e educação."
     },
     {
+      "id": "geografia-669",
       "difficulty": "hard",
       "text": "Qual país da América Central tem o inglês como língua oficial?",
       "options": [
@@ -8110,6 +8779,7 @@
       "fact": "Ele foi chamado de Honduras Britânica."
     },
     {
+      "id": "geografia-670",
       "difficulty": "hard",
       "text": "Qual é a língua oficial de Timor-Leste, além do tétum?",
       "options": [
@@ -8122,6 +8792,7 @@
       "fact": "Foi colônia de Portugal até 1975."
     },
     {
+      "id": "geografia-671",
       "difficulty": "hard",
       "text": "Qual é a língua oficial de Macau, além do chinês?",
       "options": [
@@ -8134,6 +8805,7 @@
       "fact": "Macau voltou à China em 1999."
     },
     {
+      "id": "geografia-672",
       "difficulty": "hard",
       "text": "Em que país fica o maior número de falantes de português fora do Brasil?",
       "options": [
@@ -8146,6 +8818,7 @@
       "fact": "O crescimento populacional fez Angola passar Portugal."
     },
     {
+      "id": "geografia-673",
       "difficulty": "hard",
       "text": "Qual país tem mais habitantes depois da China e da Índia?",
       "options": [
@@ -8158,6 +8831,7 @@
       "fact": "Os EUA têm mais de 330 milhões de pessoas."
     },
     {
+      "id": "geografia-674",
       "difficulty": "hard",
       "text": "Qual é o país mais populoso da Europa Ocidental?",
       "options": [
@@ -8170,6 +8844,7 @@
       "fact": "Ele tem mais de 83 milhões de habitantes."
     },
     {
+      "id": "geografia-675",
       "difficulty": "hard",
       "text": "Qual é a cidade mais populosa da África?",
       "options": [
@@ -8182,6 +8857,7 @@
       "fact": "Tem mais de 15 milhões de pessoas."
     },
     {
+      "id": "geografia-676",
       "difficulty": "hard",
       "text": "Qual é a cidade mais populosa do mundo, em região metropolitana?",
       "options": [
@@ -8194,6 +8870,7 @@
       "fact": "Ela tem cerca de 37 milhões de pessoas."
     },
     {
+      "id": "geografia-677",
       "difficulty": "hard",
       "text": "Qual é a cidade mais ao norte com mais de 100 mil habitantes?",
       "options": [
@@ -8206,6 +8883,7 @@
       "fact": "Ela fica na Sibéria, acima do Círculo Polar Ártico."
     },
     {
+      "id": "geografia-678",
       "difficulty": "hard",
       "text": "Que oceano é cortado pela Linha Internacional de Data?",
       "options": [
@@ -8218,6 +8896,7 @@
       "fact": "Ao cruzá-la, muda-se um dia no calendário."
     },
     {
+      "id": "geografia-679",
       "difficulty": "easy",
       "text": "Em qual estado fica a Chapada Diamantina, famosa por suas cachoeiras?",
       "options": [
@@ -8230,6 +8909,7 @@
       "fact": "Ela já foi um centro de garimpo de diamantes."
     },
     {
+      "id": "geografia-680",
       "difficulty": "medium",
       "text": "Que país fica entre a Espanha e a França, com capital de mesmo nome?",
       "options": [
@@ -8242,6 +8922,7 @@
       "fact": "Ele é um dos menores países da Europa."
     },
     {
+      "id": "geografia-681",
       "difficulty": "medium",
       "text": "Em que região da Itália fica Roma?",
       "options": [
@@ -8254,6 +8935,7 @@
       "fact": "O nome Lácio deu origem à palavra latim."
     },
     {
+      "id": "geografia-682",
       "difficulty": "medium",
       "text": "Em que região da Itália fica Florença?",
       "options": [
@@ -8266,6 +8948,7 @@
       "fact": "A região é famosa pelos vinhos e pelo Renascimento."
     },
     {
+      "id": "geografia-683",
       "difficulty": "medium",
       "text": "Em que região da Itália fica Veneza?",
       "options": [
@@ -8278,6 +8961,7 @@
       "fact": "A cidade está afundando alguns milímetros por ano."
     },
     {
+      "id": "geografia-684",
       "difficulty": "medium",
       "text": "Em que região da Itália fica Milão?",
       "options": [
@@ -8290,6 +8974,7 @@
       "fact": "É a capital financeira e da moda do país."
     },
     {
+      "id": "geografia-685",
       "difficulty": "medium",
       "text": "Em qual região da Espanha fica Sevilha?",
       "options": [
@@ -8302,6 +8987,7 @@
       "fact": "É a terra do flamenco."
     },
     {
+      "id": "geografia-686",
       "difficulty": "medium",
       "text": "Em que região da Espanha fica Barcelona?",
       "options": [
@@ -8314,6 +9000,7 @@
       "fact": "A língua catalã é oficial por lá."
     },
     {
+      "id": "geografia-687",
       "difficulty": "medium",
       "text": "Em que região da França fica a cidade de Bordeaux?",
       "options": [
@@ -8326,6 +9013,7 @@
       "fact": "É famosa pelos vinhos."
     },
     {
+      "id": "geografia-688",
       "difficulty": "medium",
       "text": "Em que região da França ficam as praias do Dia D?",
       "options": [
@@ -8338,6 +9026,7 @@
       "fact": "O desembarque foi em junho de 1944."
     },
     {
+      "id": "geografia-689",
       "difficulty": "medium",
       "text": "Qual o outro nome da Holanda em português?",
       "options": [
@@ -8350,6 +9039,7 @@
       "fact": "Holanda é só uma região do país."
     },
     {
+      "id": "geografia-690",
       "difficulty": "medium",
       "text": "Qual é o nome oficial do país do Burj Khalifa?",
       "options": [
@@ -8362,6 +9052,7 @@
       "fact": "É o prédio mais alto do mundo."
     },
     {
+      "id": "geografia-691",
       "difficulty": "medium",
       "text": "Qual é o estado americano mais ao norte?",
       "options": [
@@ -8374,6 +9065,7 @@
       "fact": "Foi comprado da Rússia em 1867."
     },
     {
+      "id": "geografia-692",
       "difficulty": "hard",
       "text": "Em que ano a Rússia vendeu o Alasca aos EUA?",
       "options": [
@@ -8386,6 +9078,7 @@
       "fact": "O preço foi de 7,2 milhões de dólares."
     },
     {
+      "id": "geografia-693",
       "difficulty": "hard",
       "text": "De que país os EUA compraram a Louisiana, em 1803?",
       "options": [
@@ -8398,6 +9091,7 @@
       "fact": "Napoleão precisava de dinheiro para as guerras."
     },
     {
+      "id": "geografia-694",
       "difficulty": "hard",
       "text": "A que país pertenceu o Canal do Panamá até 1999?",
       "options": [
@@ -8410,6 +9104,7 @@
       "fact": "O canal foi inaugurado em 1914."
     },
     {
+      "id": "geografia-695",
       "difficulty": "hard",
       "text": "A que país pertenceu Hong Kong até 1997?",
       "options": [
@@ -8422,6 +9117,7 @@
       "fact": "O território foi devolvido à China."
     },
     {
+      "id": "geografia-696",
       "difficulty": "hard",
       "text": "A que país pertenceu Macau até 1999?",
       "options": [
@@ -8434,6 +9130,7 @@
       "fact": "Foi a última colônia europeia na Ásia."
     },
     {
+      "id": "geografia-697",
       "difficulty": "hard",
       "text": "De que país se separou Bangladesh em 1971?",
       "options": [
@@ -8446,6 +9143,7 @@
       "fact": "O país se chamava Paquistão Oriental."
     },
     {
+      "id": "geografia-698",
       "difficulty": "hard",
       "text": "De que país se separou a Eritreia, em 1993?",
       "options": [
@@ -8458,6 +9156,7 @@
       "fact": "A guerra de independência durou 30 anos."
     },
     {
+      "id": "geografia-699",
       "difficulty": "hard",
       "text": "De que país se separou o Timor-Leste, em 2002?",
       "options": [
@@ -8470,6 +9169,7 @@
       "fact": "A independência veio depois de um referendo."
     },
     {
+      "id": "geografia-700",
       "difficulty": "hard",
       "text": "Que país europeu se dividiu em dois, em 1993, em uma separação pacífica?",
       "options": [
@@ -8482,6 +9182,7 @@
       "fact": "A divisão ficou conhecida como \"Divórcio de Veludo\"."
     },
     {
+      "id": "geografia-701",
       "difficulty": "hard",
       "text": "Em quantos países se dividiu a União Soviética?",
       "options": [
@@ -8494,6 +9195,7 @@
       "fact": "A dissolução aconteceu em dezembro de 1991."
     },
     {
+      "id": "geografia-702",
       "difficulty": "hard",
       "text": "Em quantos países se dividiu a Iugoslávia, contando o Kosovo?",
       "options": [
@@ -8506,6 +9208,7 @@
       "fact": "As guerras dos anos 1990 mataram mais de 100 mil pessoas."
     },
     {
+      "id": "geografia-703",
       "difficulty": "hard",
       "text": "Qual o antigo nome do Sri Lanka, usado até 1972?",
       "options": [
@@ -8518,6 +9221,7 @@
       "fact": "A palavra Ceilão aparece ainda no nome de um famoso chá."
     },
     {
+      "id": "geografia-704",
       "difficulty": "hard",
       "text": "Qual o antigo nome da Tailândia?",
       "options": [
@@ -8530,6 +9234,7 @@
       "fact": "O nome mudou em 1939."
     },
     {
+      "id": "geografia-705",
       "difficulty": "hard",
       "text": "Qual o antigo nome do Irã?",
       "options": [
@@ -8542,6 +9247,7 @@
       "fact": "O nome oficial mudou em 1935."
     },
     {
+      "id": "geografia-706",
       "difficulty": "hard",
       "text": "Qual o antigo nome de Mianmar?",
       "options": [
@@ -8554,6 +9260,7 @@
       "fact": "O governo militar mudou o nome em 1989."
     },
     {
+      "id": "geografia-707",
       "difficulty": "hard",
       "text": "Qual o antigo nome de Istambul?",
       "options": [
@@ -8566,6 +9273,7 @@
       "fact": "O nome mudou oficialmente em 1930."
     },
     {
+      "id": "geografia-708",
       "difficulty": "hard",
       "text": "Qual o antigo nome de Tóquio?",
       "options": [
@@ -8578,6 +9286,7 @@
       "fact": "O nome mudou em 1868, com a volta do imperador."
     },
     {
+      "id": "geografia-709",
       "difficulty": "hard",
       "text": "Qual o antigo nome de Ho Chi Minh?",
       "options": [
@@ -8590,6 +9299,7 @@
       "fact": "A cidade mudou de nome depois da guerra, em 1976."
     },
     {
+      "id": "geografia-710",
       "difficulty": "hard",
       "text": "Qual o antigo nome de Mumbai?",
       "options": [
@@ -8602,6 +9312,7 @@
       "fact": "O nome mudou em 1995."
     },
     {
+      "id": "geografia-711",
       "difficulty": "hard",
       "text": "Qual o antigo nome de Nova York?",
       "options": [
@@ -8614,6 +9325,7 @@
       "fact": "Os holandeses venderam a cidade aos ingleses em 1664."
     },
     {
+      "id": "geografia-712",
       "difficulty": "hard",
       "text": "Qual o antigo nome de São Petersburgo no século XX?",
       "options": [
@@ -8626,6 +9338,7 @@
       "fact": "O nome antigo voltou em 1991."
     },
     {
+      "id": "geografia-713",
       "difficulty": "hard",
       "text": "Qual é o nome atual da antiga Stalingrado?",
       "options": [
@@ -8638,6 +9351,7 @@
       "fact": "A batalha de lá foi decisiva na Segunda Guerra."
     },
     {
+      "id": "geografia-714",
       "difficulty": "impossible",
       "text": "Qual a área aproximada do Brasil, em km²?",
       "options": [
@@ -8652,6 +9366,7 @@
       "fact": "É o quinto maior país do mundo em área."
     },
     {
+      "id": "geografia-715",
       "difficulty": "impossible",
       "text": "Qual o comprimento da fronteira terrestre do Brasil, aproximadamente?",
       "options": [
@@ -8666,6 +9381,7 @@
       "fact": "Ele faz fronteira com 10 países da América do Sul."
     },
     {
+      "id": "geografia-716",
       "difficulty": "impossible",
       "text": "Qual o comprimento do litoral brasileiro, aproximadamente?",
       "options": [
@@ -8680,6 +9396,7 @@
       "fact": "Ele é banhado todo pelo Atlântico."
     },
     {
+      "id": "geografia-717",
       "difficulty": "impossible",
       "text": "Em que paralelo fica o ponto extremo norte do Brasil, aproximadamente?",
       "options": [
@@ -8694,6 +9411,7 @@
       "fact": "O Monte Caburaí, em Roraima, fica nesse paralelo."
     },
     {
+      "id": "geografia-718",
       "difficulty": "impossible",
       "text": "Qual é a população aproximada de São Paulo no Censo de 2022?",
       "options": [
@@ -8708,6 +9426,7 @@
       "fact": "Ela é a maior cidade das Américas."
     },
     {
+      "id": "geografia-719",
       "difficulty": "impossible",
       "text": "Qual é a população do Brasil no Censo de 2022, aproximadamente?",
       "options": [
@@ -8722,6 +9441,7 @@
       "fact": "O crescimento ficou abaixo do previsto."
     },
     {
+      "id": "geografia-720",
       "difficulty": "impossible",
       "text": "Qual é o estado do Brasil com mais municípios?",
       "options": [
@@ -8736,6 +9456,7 @@
       "fact": "Ele tem 853 municípios."
     },
     {
+      "id": "geografia-721",
       "difficulty": "impossible",
       "text": "Qual é o município brasileiro com menos habitantes?",
       "options": [
@@ -8750,6 +9471,7 @@
       "fact": "A cidade mineira tem menos de 900 pessoas."
     },
     {
+      "id": "geografia-722",
       "difficulty": "impossible",
       "text": "Quantos países tem a África, considerando os membros da ONU?",
       "options": [
@@ -8764,6 +9486,7 @@
       "fact": "A Nigéria e a Etiópia estão entre os mais populosos."
     },
     {
+      "id": "geografia-723",
       "difficulty": "impossible",
       "text": "Qual é a altura da Linha de Neve no Equador, aproximadamente?",
       "options": [
@@ -8778,6 +9501,7 @@
       "fact": "A neve no Kilimanjaro está desaparecendo aos poucos."
     },
     {
+      "id": "geografia-724",
       "difficulty": "impossible",
       "text": "Qual é a área do Canadá, em km²?",
       "options": [
@@ -8792,6 +9516,7 @@
       "fact": "Ele é o segundo maior país do mundo."
     },
     {
+      "id": "geografia-725",
       "difficulty": "impossible",
       "text": "Qual é o tamanho do litoral do Canadá, aproximadamente?",
       "options": [
@@ -8806,6 +9531,7 @@
       "fact": "Ele tem mais de 50 mil ilhas."
     },
     {
+      "id": "geografia-726",
       "difficulty": "impossible",
       "text": "Qual é a área da Antártida, aproximadamente?",
       "options": [
@@ -8820,6 +9546,7 @@
       "fact": "Ela tem cerca de 90% do gelo da Terra."
     },
     {
+      "id": "geografia-727",
       "difficulty": "impossible",
       "text": "Quantos países tem o Tratado da Antártida, aproximadamente?",
       "options": [
@@ -8834,6 +9561,7 @@
       "fact": "Foi assinado em 1959."
     },
     {
+      "id": "geografia-728",
       "difficulty": "impossible",
       "text": "Qual a população da Islândia, aproximadamente?",
       "options": [
@@ -8848,6 +9576,7 @@
       "fact": "Cerca de 60% vivem na região da capital."
     },
     {
+      "id": "geografia-729",
       "difficulty": "impossible",
       "text": "Qual a população de Mônaco, aproximadamente?",
       "options": [
@@ -8862,6 +9591,7 @@
       "fact": "É o país mais denso do mundo."
     },
     {
+      "id": "geografia-730",
       "difficulty": "impossible",
       "text": "Qual a população de Tuvalu, aproximadamente?",
       "options": [
@@ -8876,6 +9606,7 @@
       "fact": "O país pode sumir com a subida do mar."
     },
     {
+      "id": "geografia-731",
       "difficulty": "impossible",
       "text": "Qual é a área de Tuvalu, em km²?",
       "options": [
@@ -8890,6 +9621,7 @@
       "fact": "Ele é um dos menores países do mundo."
     },
     {
+      "id": "geografia-732",
       "difficulty": "impossible",
       "text": "Qual é o menor país de todo o Hemisfério Sul?",
       "options": [
@@ -8904,6 +9636,7 @@
       "fact": "A ilha tem só 21 km²."
     },
     {
+      "id": "geografia-733",
       "difficulty": "impossible",
       "text": "Qual é o menor país da União Europeia?",
       "options": [
@@ -8918,6 +9651,7 @@
       "fact": "Ele tem cerca de 316 km²."
     },
     {
+      "id": "geografia-734",
       "difficulty": "impossible",
       "text": "Em que ano a população mundial chegou a 8 bilhões?",
       "options": [
@@ -8932,6 +9666,7 @@
       "fact": "A ONU anunciou o marco em novembro."
     },
     {
+      "id": "geografia-735",
       "difficulty": "impossible",
       "text": "Em que ano o Brasil adotou a divisão atual em 5 regiões?",
       "options": [
@@ -8946,6 +9681,7 @@
       "fact": "A divisão atual foi definida pelo IBGE."
     },
     {
+      "id": "geografia-736",
       "difficulty": "impossible",
       "text": "Qual a porcentagem da população mundial que vive na Ásia?",
       "options": [
@@ -8960,6 +9696,7 @@
       "fact": "Índia e China têm mais de 2,8 bilhões de habitantes."
     },
     {
+      "id": "geografia-737",
       "difficulty": "impossible",
       "text": "Em que ano o Tocantins foi criado?",
       "options": [
@@ -8974,6 +9711,7 @@
       "fact": "Ele foi separado de Goiás."
     },
     {
+      "id": "geografia-738",
       "difficulty": "impossible",
       "text": "Em que ano Mato Grosso do Sul foi criado?",
       "options": [
@@ -8988,6 +9726,7 @@
       "fact": "Ele foi desmembrado de Mato Grosso."
     },
     {
+      "id": "geografia-739",
       "difficulty": "easy",
       "text": "Em que estado fica a Praia do Forte, com o Projeto Tamar?",
       "options": [
@@ -9000,6 +9739,7 @@
       "fact": "Ela fica a cerca de 80 km de Salvador."
     },
     {
+      "id": "geografia-740",
       "difficulty": "medium",
       "text": "Que país tem como capital Vaduz, nos Alpes?",
       "options": [
@@ -9012,6 +9752,7 @@
       "fact": "Ele não tem aeroporto."
     },
     {
+      "id": "geografia-741",
       "difficulty": "medium",
       "text": "Qual é a maior cidade da Austrália?",
       "options": [
@@ -9024,6 +9765,7 @@
       "fact": "Ela disputa a população com Melbourne há décadas."
     },
     {
+      "id": "geografia-742",
       "difficulty": "impossible",
       "text": "Qual é a altura do Burj Khalifa, em metros?",
       "options": [
@@ -9038,6 +9780,7 @@
       "fact": "É o prédio mais alto do mundo desde 2010."
     },
     {
+      "id": "geografia-743",
       "difficulty": "hard",
       "text": "Qual é a capital do estado de Nova York?",
       "options": [
@@ -9050,6 +9793,7 @@
       "fact": "Muita gente pensa que é a cidade de Nova York."
     },
     {
+      "id": "geografia-744",
       "difficulty": "easy",
       "text": "Qual é o continente mais populoso?",
       "options": [
@@ -9062,6 +9806,7 @@
       "fact": "Ele tem mais da metade da população mundial."
     },
     {
+      "id": "geografia-745",
       "difficulty": "easy",
       "text": "Que linha imaginária marca o meridiano zero?",
       "options": [
@@ -9074,6 +9819,7 @@
       "fact": "Ela passa por Londres."
     },
     {
+      "id": "geografia-746",
       "difficulty": "medium",
       "text": "Que rio é o maior do mundo em volume de água?",
       "options": [
@@ -9086,6 +9832,7 @@
       "fact": "Ele despeja cerca de 20% da água doce nos oceanos."
     },
     {
+      "id": "geografia-747",
       "difficulty": "hard",
       "text": "Qual é a capital da Tanzânia?",
       "options": [
@@ -9098,6 +9845,7 @@
       "fact": "Dar es Salaam é a maior cidade."
     },
     {
+      "id": "geografia-748",
       "difficulty": "hard",
       "text": "Qual é a capital da Bolívia, segundo a Constituição?",
       "options": [
@@ -9110,6 +9858,7 @@
       "fact": "La Paz é a sede do governo."
     },
     {
+      "id": "geografia-749",
       "difficulty": "hard",
       "text": "Qual é a menor capital de um país, em população, entre estas?",
       "options": [
@@ -9122,6 +9871,7 @@
       "fact": "Ela fica em Liechtenstein."
     },
     {
+      "id": "geografia-750",
       "difficulty": "hard",
       "text": "Que estreito corta Istambul entre dois continentes?",
       "options": [
@@ -9134,6 +9884,7 @@
       "fact": "Ele liga o Mar Negro ao Mar de Mármara."
     },
     {
+      "id": "geografia-751",
       "difficulty": "hard",
       "text": "Que estreito por onde passa muito petróleo fica entre Irã e Omã?",
       "options": [
@@ -9146,6 +9897,7 @@
       "fact": "Ele é um ponto crítico do comércio mundial."
     },
     {
+      "id": "geografia-752",
       "difficulty": "impossible",
       "text": "Quantos fusos horários oficiais tem a França, contando territórios?",
       "options": [
@@ -9160,6 +9912,7 @@
       "fact": "É o país com mais fusos do mundo."
     },
     {
+      "id": "geografia-753",
       "difficulty": "impossible",
       "text": "Quantos países africanos não têm saída para o mar?",
       "options": [
@@ -9174,6 +9927,7 @@
       "fact": "O número inclui Sudão do Sul e Chade."
     },
     {
+      "id": "geografia-754",
       "difficulty": "impossible",
       "text": "Qual é o país mais novo reconhecido pela ONU?",
       "options": [
@@ -9188,6 +9942,7 @@
       "fact": "Ele surgiu em 2011."
     },
     {
+      "id": "geografia-755",
       "difficulty": "impossible",
       "text": "Qual é o menor país da América do Sul?",
       "options": [
@@ -9202,6 +9957,7 @@
       "fact": "A língua oficial é o holandês."
     },
     {
+      "id": "geografia-756",
       "difficulty": "impossible",
       "text": "Que país da Ásia tem o nome em homenagem a um rei espanhol?",
       "options": [
@@ -9216,6 +9972,7 @@
       "fact": "O nome homenageia Filipe II, da Espanha."
     },
     {
+      "id": "geografia-757",
       "difficulty": "medium",
       "text": "Em que país fica Petra, a cidade cavada na rocha?",
       "options": [
@@ -9228,6 +9985,7 @@
       "fact": "Ela é uma das Novas Sete Maravilhas."
     },
     {
+      "id": "geografia-758",
       "difficulty": "medium",
       "text": "Em que país fica Angkor Wat?",
       "options": [
@@ -9240,6 +9998,7 @@
       "fact": "É o maior monumento religioso do mundo."
     },
     {
+      "id": "geografia-759",
       "difficulty": "medium",
       "text": "Em que país fica o Salar de Uyuni?",
       "options": [
@@ -9252,6 +10011,7 @@
       "fact": "É o maior deserto de sal do mundo."
     },
     {
+      "id": "geografia-760",
       "difficulty": "medium",
       "text": "Em que país fica o deserto do Atacama, em sua maior parte?",
       "options": [
@@ -9264,6 +10024,7 @@
       "fact": "É um dos lugares mais secos do mundo."
     },
     {
+      "id": "geografia-761",
       "difficulty": "medium",
       "text": "Em que país fica o Cânion do Colorado?",
       "options": [
@@ -9276,6 +10037,7 @@
       "fact": "Ele tem mais de 400 km de extensão."
     },
     {
+      "id": "geografia-762",
       "difficulty": "medium",
       "text": "Em que país fica a Grande Barreira de Corais?",
       "options": [
@@ -9288,6 +10050,7 @@
       "fact": "Ela pode ser vista do espaço."
     },
     {
+      "id": "geografia-763",
       "difficulty": "hard",
       "text": "Que lago é o mais extenso da África?",
       "options": [
@@ -9300,6 +10063,7 @@
       "fact": "Ele banha três países."
     },
     {
+      "id": "geografia-764",
       "difficulty": "easy",
       "text": "Que continente é coberto quase todo por gelo?",
       "options": [
@@ -9312,6 +10076,7 @@
       "fact": "Ele não tem população fixa."
     },
     {
+      "id": "geografia-765",
       "difficulty": "easy",
       "text": "De que lado o Sol se põe?",
       "options": [
@@ -9324,6 +10089,7 @@
       "fact": "Ele nasce no lado oposto."
     },
     {
+      "id": "geografia-766",
       "difficulty": "easy",
       "text": "Como se chama a porção de terra cercada de água por todos os lados?",
       "options": [
@@ -9336,6 +10102,7 @@
       "fact": "A península é ligada ao continente por um lado."
     },
     {
+      "id": "geografia-767",
       "difficulty": "easy",
       "text": "Como se chama o grande rio que corta a cidade de Manaus e passa ao lado dela?",
       "options": [
@@ -9348,6 +10115,7 @@
       "fact": "Ele encontra o Solimões perto da cidade."
     },
     {
+      "id": "geografia-768",
       "difficulty": "easy",
       "text": "Como se chama o instrumento usado para saber a direção norte?",
       "options": [
@@ -9360,6 +10128,7 @@
       "fact": "A agulha aponta para o polo magnético."
     },
     {
+      "id": "geografia-769",
       "difficulty": "medium",
       "text": "Que país reúne Inglaterra, Escócia, Gales e Irlanda do Norte?",
       "options": [
@@ -9372,6 +10141,7 @@
       "fact": "A capital é Londres."
     },
     {
+      "id": "geografia-770",
       "difficulty": "medium",
       "text": "Que cidade italiana é famosa pelos canais e gôndolas?",
       "options": [
@@ -9384,6 +10154,7 @@
       "fact": "Ela foi construída em ilhas e estacas."
     },
     {
+      "id": "geografia-771",
       "difficulty": "hard",
       "text": "Que paralelo costuma dividir as duas Coreias?",
       "options": [
@@ -9396,6 +10167,7 @@
       "fact": "A zona desmilitarizada fica ao longo dessa linha."
     },
     {
+      "id": "geografia-772",
       "difficulty": "easy",
       "text": "Que oceano banha a costa oeste dos Estados Unidos?",
       "options": [
@@ -9408,6 +10180,7 @@
       "fact": "Los Angeles e São Francisco ficam nessa costa."
     },
     {
+      "id": "geografia-773",
       "difficulty": "easy",
       "text": "Que rio corta Paris?",
       "options": [
@@ -9420,6 +10193,7 @@
       "fact": "A Torre Eiffel fica perto das margens dele."
     },
     {
+      "id": "geografia-774",
       "difficulty": "hard",
       "text": "Que rio corta Londres?",
       "options": [
@@ -9432,6 +10206,7 @@
       "fact": "A Tower Bridge é o símbolo dele."
     },
     {
+      "id": "geografia-775",
       "difficulty": "hard",
       "text": "Que cadeia de montanhas separa a Europa da Ásia, na tradição?",
       "options": [

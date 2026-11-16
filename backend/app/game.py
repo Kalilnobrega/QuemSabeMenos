@@ -170,12 +170,12 @@ class ThemeFile(BaseModel):
 
 
 def load_bank(directory: Path = QUESTIONS_DIR) -> list[Question]:
-    """Lê questions/<tema>.json. O id de cada pergunta é <arquivo>-<posição>."""
+    """Lê questions/<tema>.json. Cada pergunta traz o próprio id (<arquivo>-<número>), que nunca muda:
+    dá para apagar uma pergunta sem trocar o id das outras, e o histórico segue apontando certo."""
     bank = []
     for path in sorted(directory.glob("*.json")):
         data = ThemeFile.model_validate(json.loads(path.read_text()))
-        for i, raw in enumerate(data.questions, start=1):
-            bank.append(Question(id=f"{path.stem}-{i}", theme=data.theme, **raw))
+        bank += [Question(theme=data.theme, **raw) for raw in data.questions]
     return bank
 
 

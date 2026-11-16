@@ -2,576 +2,672 @@
   "theme": "Artes",
   "statements": [
     {
+      "id": "vf-artes-1",
       "difficulty": "medium",
       "text": "A Noite Estrelada foi pintada por Vincent van Gogh.",
       "answer": true,
       "fact": "Van Gogh pintou o quadro em 1889, enquanto estava internado num hospital psiquiátrico em Saint-Rémy-de-Provence, na França."
     },
     {
+      "id": "vf-artes-2",
       "difficulty": "medium",
       "text": "A escultura O Pensador é de Michelangelo.",
       "answer": false,
       "fact": "O Pensador é de Auguste Rodin, escultor francês. Ela nasceu como parte de uma obra maior, A Porta do Inferno."
     },
     {
+      "id": "vf-artes-3",
       "difficulty": "medium",
       "text": "Tarsila do Amaral pintou o Abaporu.",
       "answer": true,
       "fact": "Tarsila pintou o Abaporu em 1928 como presente para Oswald de Andrade. O quadro inspirou o Movimento Antropofágico."
     },
     {
+      "id": "vf-artes-4",
       "difficulty": "medium",
       "text": "A Mona Lisa está exposta no Museu do Prado, em Madri.",
       "answer": false,
       "fact": "A Mona Lisa fica no Museu do Louvre, em Paris, atrás de um vidro à prova de balas."
     },
     {
+      "id": "vf-artes-5",
       "difficulty": "medium",
       "text": "A música do balé O Lago dos Cisnes é de Tchaikovsky.",
       "answer": true,
       "fact": "O Lago dos Cisnes estreou em 1877, em Moscou, e no começo não fez sucesso."
     },
     {
+      "id": "vf-artes-6",
       "difficulty": "medium",
       "text": "Dom Casmurro foi escrito por José de Alencar.",
       "answer": false,
       "fact": "Dom Casmurro é de Machado de Assis, publicado em 1899. Até hoje se discute se Capitu traiu Bentinho."
     },
     {
+      "id": "vf-artes-7",
       "difficulty": "medium",
       "text": "Romeu e Julieta é uma tragédia de William Shakespeare.",
       "answer": true,
       "fact": "Shakespeare escreveu Romeu e Julieta por volta de 1595. A história se passa em Verona, na Itália."
     },
     {
+      "id": "vf-artes-8",
       "difficulty": "medium",
       "text": "Beethoven compôs a ópera A Flauta Mágica.",
       "answer": false,
       "fact": "A Flauta Mágica é de Mozart e estreou em Viena em 1791, poucos meses antes da morte dele."
     },
     {
+      "id": "vf-artes-9",
       "difficulty": "medium",
       "text": "Os Lusíadas foi escrito por Luís de Camões.",
       "answer": true,
       "fact": "Publicado em 1572, Os Lusíadas é uma epopeia que conta a viagem de Vasco da Gama às Índias."
     },
     {
+      "id": "vf-artes-10",
       "difficulty": "medium",
       "text": "O Cristo Redentor foi projetado por Oscar Niemeyer.",
       "answer": false,
       "fact": "O projeto é do engenheiro Heitor da Silva Costa, e o rosto foi esculpido pelo romeno Gheorghe Leonida. O Cristo foi inaugurado em 1931."
     },
     {
+      "id": "vf-artes-11",
       "difficulty": "hard",
       "text": "O Grito, de Edvard Munch, existe em uma única versão.",
       "answer": false,
       "fact": "Munch fez várias versões de O Grito: pinturas, pastéis e uma litografia. Duas delas já foram roubadas e recuperadas."
     },
     {
+      "id": "vf-artes-12",
       "difficulty": "hard",
       "text": "Salvador Dalí pintou A Persistência da Memória, o quadro dos relógios derretidos.",
       "answer": true,
       "fact": "O quadro é de 1931 e é pequeno, cerca de 24 × 33 cm. Fica no MoMA, em Nova York."
     },
     {
+      "id": "vf-artes-13",
       "difficulty": "hard",
       "text": "Moça com Brinco de Pérola foi pintada por Johannes Vermeer.",
       "answer": true,
       "fact": "Vermeer pintou o quadro por volta de 1665. Ele fica no museu Mauritshuis, em Haia, na Holanda."
     },
     {
+      "id": "vf-artes-14",
       "difficulty": "hard",
       "text": "Os painéis Guerra e Paz, de Portinari, ficam no Palácio do Planalto.",
       "answer": false,
       "fact": "Guerra e Paz foi um presente do Brasil à ONU e fica na sede da organização, em Nova York, desde 1957."
     },
     {
+      "id": "vf-artes-15",
       "difficulty": "hard",
       "text": "Aleijadinho esculpiu os profetas do Santuário de Bom Jesus de Matosinhos, em Congonhas.",
       "answer": true,
       "fact": "São doze profetas esculpidos em pedra-sabão entre 1800 e 1805, quando Aleijadinho já sofria com a doença que lhe deu o apelido."
     },
     {
+      "id": "vf-artes-16",
       "difficulty": "hard",
       "text": "Claude Monet pintou O Nascimento de Vênus.",
       "answer": false,
       "fact": "O Nascimento de Vênus é de Sandro Botticelli, pintado por volta de 1485. Fica na Galeria Uffizi, em Florença."
     },
     {
+      "id": "vf-artes-17",
       "difficulty": "hard",
       "text": "Frida Kahlo foi casada com o muralista Diego Rivera.",
       "answer": true,
       "fact": "Frida e Diego se casaram em 1929, se divorciaram e se casaram de novo em 1940."
     },
     {
+      "id": "vf-artes-18",
       "difficulty": "hard",
       "text": "O teto da Capela Sistina foi pintado por Rafael.",
       "answer": false,
       "fact": "O teto é obra de Michelangelo, que o pintou entre 1508 e 1512, quase sempre em pé, olhando para cima."
     },
     {
+      "id": "vf-artes-19",
       "difficulty": "hard",
       "text": "A Semana de Arte Moderna de 1922 aconteceu no Theatro Municipal de São Paulo.",
       "answer": true,
       "fact": "A Semana teve três noites de festival em fevereiro de 1922, com vaias e aplausos do público."
     },
     {
+      "id": "vf-artes-20",
       "difficulty": "hard",
       "text": "Picasso pintou Guernica para retratar um bombardeio da Primeira Guerra Mundial.",
       "answer": false,
       "fact": "Guernica retrata o bombardeio da cidade basca em 1937, durante a Guerra Civil Espanhola."
     },
     {
+      "id": "vf-artes-21",
       "difficulty": "medium",
       "text": "Michelangelo pintou o teto da Capela Sistina.",
       "answer": true,
       "fact": "Ele levou cerca de quatro anos."
     },
     {
+      "id": "vf-artes-22",
       "difficulty": "medium",
       "text": "Michelangelo pintou a Mona Lisa.",
       "answer": false,
       "fact": "Quem pintou foi Leonardo da Vinci."
     },
     {
+      "id": "vf-artes-23",
       "difficulty": "medium",
       "text": "Leonardo da Vinci também foi inventor.",
       "answer": true,
       "fact": "Ele desenhou máquinas voadoras e armas."
     },
     {
+      "id": "vf-artes-24",
       "difficulty": "medium",
       "text": "Van Gogh era francês.",
       "answer": false,
       "fact": "Ele nasceu na Holanda."
     },
     {
+      "id": "vf-artes-25",
       "difficulty": "medium",
       "text": "Van Gogh passou um tempo em um hospital psiquiátrico.",
       "answer": true,
       "fact": "Foi lá que ele pintou \"A Noite Estrelada\"."
     },
     {
+      "id": "vf-artes-26",
       "difficulty": "medium",
       "text": "Salvador Dalí era italiano.",
       "answer": false,
       "fact": "Ele nasceu na Espanha."
     },
     {
+      "id": "vf-artes-27",
       "difficulty": "medium",
       "text": "Picasso nasceu na Espanha.",
       "answer": true,
       "fact": "Ele passou a maior parte da vida na França."
     },
     {
+      "id": "vf-artes-28",
       "difficulty": "medium",
       "text": "Guernica foi pintado por Salvador Dalí.",
       "answer": false,
       "fact": "Foi pintado por Picasso."
     },
     {
+      "id": "vf-artes-29",
       "difficulty": "medium",
       "text": "Frida Kahlo era mexicana.",
       "answer": true,
       "fact": "A casa dela virou um museu."
     },
     {
+      "id": "vf-artes-30",
       "difficulty": "medium",
       "text": "Frida Kahlo foi casada com Picasso.",
       "answer": false,
       "fact": "Ela foi casada com Diego Rivera."
     },
     {
+      "id": "vf-artes-31",
       "difficulty": "medium",
       "text": "Abaporu foi pintado por Portinari.",
       "answer": false,
       "fact": "Foi pintado por Tarsila do Amaral."
     },
     {
+      "id": "vf-artes-32",
       "difficulty": "medium",
       "text": "Portinari pintou \"Os Retirantes\".",
       "answer": true,
       "fact": "A obra mostra a seca do Nordeste."
     },
     {
+      "id": "vf-artes-33",
       "difficulty": "medium",
       "text": "O Louvre fica em Londres.",
       "answer": false,
       "fact": "Ele fica em Paris."
     },
     {
+      "id": "vf-artes-34",
       "difficulty": "medium",
       "text": "O Museu Britânico fica em Londres.",
       "answer": true,
       "fact": "A entrada é gratuita."
     },
     {
+      "id": "vf-artes-35",
       "difficulty": "medium",
       "text": "Beethoven era italiano.",
       "answer": false,
       "fact": "Ele nasceu na Alemanha."
     },
     {
+      "id": "vf-artes-36",
       "difficulty": "medium",
       "text": "Beethoven compôs obras depois de ficar surdo.",
       "answer": true,
       "fact": "Entre elas, a Nona Sinfonia."
     },
     {
+      "id": "vf-artes-37",
       "difficulty": "medium",
       "text": "Mozart morreu muito velho.",
       "answer": false,
       "fact": "Ele morreu aos 35 anos."
     },
     {
+      "id": "vf-artes-38",
       "difficulty": "medium",
       "text": "Vivaldi compôs \"As Quatro Estações\".",
       "answer": true,
       "fact": "São quatro concertos para violino."
     },
     {
+      "id": "vf-artes-39",
       "difficulty": "medium",
       "text": "Bach compôs \"O Lago dos Cisnes\".",
       "answer": false,
       "fact": "Foi Tchaikovsky."
     },
     {
+      "id": "vf-artes-40",
       "difficulty": "medium",
       "text": "Chopin nasceu na Polônia.",
       "answer": true,
       "fact": "Ele passou boa parte da vida em Paris."
     },
     {
+      "id": "vf-artes-41",
       "difficulty": "medium",
       "text": "Elvis Presley era britânico.",
       "answer": false,
       "fact": "Ele era dos Estados Unidos."
     },
     {
+      "id": "vf-artes-42",
       "difficulty": "medium",
       "text": "Os Beatles são de Liverpool.",
       "answer": true,
       "fact": "A cidade tem até um museu sobre eles."
     },
     {
+      "id": "vf-artes-43",
       "difficulty": "medium",
       "text": "Freddie Mercury foi vocalista dos Beatles.",
       "answer": false,
       "fact": "Ele foi vocalista do Queen."
     },
     {
+      "id": "vf-artes-44",
       "difficulty": "medium",
       "text": "Michael Jackson lançou o disco Thriller.",
       "answer": true,
       "fact": "É o mais vendido da história."
     },
     {
+      "id": "vf-artes-45",
       "difficulty": "medium",
       "text": "Madonna lançou o disco Thriller.",
       "answer": false,
       "fact": "Foi Michael Jackson."
     },
     {
+      "id": "vf-artes-46",
       "difficulty": "medium",
       "text": "Machado de Assis escreveu \"Memórias Póstumas de Brás Cubas\".",
       "answer": true,
       "fact": "O narrador é um defunto."
     },
     {
+      "id": "vf-artes-47",
       "difficulty": "medium",
       "text": "José de Alencar escreveu \"Grande Sertão Veredas\".",
       "answer": false,
       "fact": "Foi Guimarães Rosa."
     },
     {
+      "id": "vf-artes-48",
       "difficulty": "medium",
       "text": "Clarice Lispector escreveu \"A Hora da Estrela\".",
       "answer": true,
       "fact": "A personagem principal é Macabéa."
     },
     {
+      "id": "vf-artes-49",
       "difficulty": "medium",
       "text": "Jorge Amado escreveu \"Vidas Secas\".",
       "answer": false,
       "fact": "Foi Graciliano Ramos."
     },
     {
+      "id": "vf-artes-50",
       "difficulty": "medium",
       "text": "Monteiro Lobato escreveu \"Reinações de Narizinho\".",
       "answer": true,
       "fact": "A obra faz parte do Sítio do Picapau Amarelo."
     },
     {
+      "id": "vf-artes-51",
       "difficulty": "medium",
       "text": "Shakespeare escreveu \"Dom Quixote\".",
       "answer": false,
       "fact": "Foi Miguel de Cervantes."
     },
     {
+      "id": "vf-artes-52",
       "difficulty": "medium",
       "text": "J.R.R. Tolkien escreveu \"O Hobbit\".",
       "answer": true,
       "fact": "Foi publicado em 1937."
     },
     {
+      "id": "vf-artes-53",
       "difficulty": "medium",
       "text": "J.K. Rowling escreveu \"O Senhor dos Anéis\".",
       "answer": false,
       "fact": "Foi J.R.R. Tolkien."
     },
     {
+      "id": "vf-artes-54",
       "difficulty": "medium",
       "text": "George Orwell escreveu \"1984\".",
       "answer": true,
       "fact": "O livro é sobre o \"Grande Irmão\"."
     },
     {
+      "id": "vf-artes-55",
       "difficulty": "hard",
       "text": "Monet foi um dos grandes nomes do cubismo.",
       "answer": false,
       "fact": "Ele é o grande nome do impressionismo."
     },
     {
+      "id": "vf-artes-56",
       "difficulty": "hard",
       "text": "O nome impressionismo veio de uma crítica ao quadro de Monet.",
       "answer": true,
       "fact": "O título da obra era \"Impressão, Nascer do Sol\"."
     },
     {
+      "id": "vf-artes-57",
       "difficulty": "hard",
       "text": "Rembrandt foi um pintor impressionista.",
       "answer": false,
       "fact": "Ele foi um mestre do barroco."
     },
     {
+      "id": "vf-artes-58",
       "difficulty": "hard",
       "text": "A Ronda Noturna não é uma cena noturna.",
       "answer": true,
       "fact": "Quem a escureceu foi o verniz."
     },
     {
+      "id": "vf-artes-59",
       "difficulty": "hard",
       "text": "O Davi de Michelangelo é feito de bronze.",
       "answer": false,
       "fact": "Ele é feito de mármore."
     },
     {
+      "id": "vf-artes-60",
       "difficulty": "hard",
       "text": "Da Vinci nasceu em Roma.",
       "answer": false,
       "fact": "Ele nasceu em Vinci, perto de Florença."
     },
     {
+      "id": "vf-artes-61",
       "difficulty": "hard",
       "text": "A Mona Lisa foi roubada em 1911.",
       "answer": true,
       "fact": "Quem roubou foi um funcionário italiano do Louvre."
     },
     {
+      "id": "vf-artes-62",
       "difficulty": "hard",
       "text": "A Mona Lisa é um quadro enorme.",
       "answer": false,
       "fact": "Ela é pequena, com cerca de 77 × 53 cm."
     },
     {
+      "id": "vf-artes-63",
       "difficulty": "hard",
       "text": "Van Gogh vendeu poucas obras em vida.",
       "answer": true,
       "fact": "Muitos acreditam que ele vendeu só uma."
     },
     {
+      "id": "vf-artes-64",
       "difficulty": "hard",
       "text": "Picasso pintou \"A Persistência da Memória\".",
       "answer": false,
       "fact": "Foi Salvador Dalí."
     },
     {
+      "id": "vf-artes-65",
       "difficulty": "hard",
       "text": "Warhol nasceu em Pittsburgh.",
       "answer": true,
       "fact": "O nome dele era Andrew Warhola."
     },
     {
+      "id": "vf-artes-66",
       "difficulty": "hard",
       "text": "Pollock é conhecido por pintar retratos realistas.",
       "answer": false,
       "fact": "Ele é famoso pelos respingos de tinta."
     },
     {
+      "id": "vf-artes-67",
       "difficulty": "hard",
       "text": "Yayoi Kusama mora em um hospital psiquiátrico por vontade própria.",
       "answer": true,
       "fact": "Ela mora lá desde os anos 1970."
     },
     {
+      "id": "vf-artes-68",
       "difficulty": "hard",
       "text": "Banksy revelou sua identidade em 2010.",
       "answer": false,
       "fact": "A identidade dele continua sem confirmação oficial."
     },
     {
+      "id": "vf-artes-69",
       "difficulty": "hard",
       "text": "Portinari foi envenenado pelas tintas que usava.",
       "answer": true,
       "fact": "O chumbo das tintas causou a morte dele."
     },
     {
+      "id": "vf-artes-70",
       "difficulty": "hard",
       "text": "O Masp foi projetado por Oscar Niemeyer.",
       "answer": false,
       "fact": "Foi projetado por Lina Bo Bardi."
     },
     {
+      "id": "vf-artes-71",
       "difficulty": "hard",
       "text": "Lina Bo Bardi nasceu na Itália.",
       "answer": true,
       "fact": "Ela se mudou para o Brasil em 1946."
     },
     {
+      "id": "vf-artes-72",
       "difficulty": "hard",
       "text": "O Monumento às Bandeiras fica no Rio de Janeiro.",
       "answer": false,
       "fact": "Ele fica no Parque do Ibirapuera, em São Paulo."
     },
     {
+      "id": "vf-artes-73",
       "difficulty": "hard",
       "text": "Fernando Pessoa tinha heterônimos.",
       "answer": true,
       "fact": "Os mais conhecidos são Álvaro de Campos, Ricardo Reis e Alberto Caeiro."
     },
     {
+      "id": "vf-artes-74",
       "difficulty": "hard",
       "text": "Saramago nunca ganhou o Nobel de Literatura.",
       "answer": false,
       "fact": "Ele ganhou o prêmio em 1998."
     },
     {
+      "id": "vf-artes-75",
       "difficulty": "hard",
       "text": "Camões perdeu um olho em uma batalha.",
       "answer": true,
       "fact": "Foi em Ceuta, no norte da África."
     },
     {
+      "id": "vf-artes-76",
       "difficulty": "hard",
       "text": "Os Lusíadas foi escrito em espanhol.",
       "answer": false,
       "fact": "Foi escrito em português."
     },
     {
+      "id": "vf-artes-77",
       "difficulty": "hard",
       "text": "Tchaikovsky escreveu \"O Quebra-Nozes\".",
       "answer": true,
       "fact": "É um clássico no Natal."
     },
     {
+      "id": "vf-artes-78",
       "difficulty": "hard",
       "text": "O Hino à Alegria é o hino da União Europeia.",
       "answer": true,
       "fact": "Faz parte da Nona Sinfonia de Beethoven."
     },
     {
+      "id": "vf-artes-79",
       "difficulty": "hard",
       "text": "A Nona Sinfonia foi escrita por Mozart.",
       "answer": false,
       "fact": "Foi escrita por Beethoven."
     },
     {
+      "id": "vf-artes-80",
       "difficulty": "hard",
       "text": "Paganini era conhecido como um violinista virtuoso.",
       "answer": true,
       "fact": "Diziam que ele tinha um pacto com o diabo."
     },
     {
+      "id": "vf-artes-81",
       "difficulty": "hard",
       "text": "Stradivari construía pianos.",
       "answer": false,
       "fact": "Ele construía violinos e outros instrumentos de corda."
     },
     {
+      "id": "vf-artes-82",
       "difficulty": "hard",
       "text": "Carlos Gomes estreou \"O Guarani\" em Milão.",
       "answer": true,
       "fact": "Foi em 1870, no Teatro alla Scala."
     },
     {
+      "id": "vf-artes-83",
       "difficulty": "hard",
       "text": "Villa-Lobos compôs a Bossa Nova.",
       "answer": false,
       "fact": "Ele é autor das \"Bachianas Brasileiras\"."
     },
     {
+      "id": "vf-artes-84",
       "difficulty": "hard",
       "text": "O Oscar existe desde 1929.",
       "answer": true,
       "fact": "A primeira cerimônia durou apenas 15 minutos."
     },
     {
+      "id": "vf-artes-85",
       "difficulty": "hard",
       "text": "A peça \"A Ratoeira\" está em cartaz desde 1952.",
       "answer": true,
       "fact": "Ela é a peça mais longa em cartaz sem interrupção."
     },
     {
+      "id": "vf-artes-86",
       "difficulty": "medium",
       "text": "A Sagrada Família foi concluída no século XIX.",
       "answer": false,
       "fact": "A construção começou em 1882, e continua."
     },
     {
+      "id": "vf-artes-87",
       "difficulty": "hard",
       "text": "Michelangelo assinou só uma de suas esculturas, a Pietà.",
       "answer": true,
       "fact": "Ele teria ficado irritado ao ver a obra atribuída a outro."
     },
     {
+      "id": "vf-artes-88",
       "difficulty": "hard",
       "text": "Wagner compôs \"As Quatro Estações\".",
       "answer": false,
       "fact": "O autor da obra é Antonio Vivaldi."
     },
     {
+      "id": "vf-artes-89",
       "difficulty": "hard",
       "text": "Da Vinci escrevia de trás para frente em seus cadernos.",
       "answer": true,
       "fact": "Para ler, é preciso usar um espelho."
     },
     {
+      "id": "vf-artes-90",
       "difficulty": "medium",
       "text": "\"O Pensador\" é uma escultura de Auguste Rodin.",
       "answer": true,
       "fact": "Há versões dele em vários países."
     },
     {
+      "id": "vf-artes-91",
       "difficulty": "medium",
       "text": "\"A Noite Estrelada\" foi pintada por Claude Monet.",
       "answer": false,
       "fact": "Foi pintada por Vincent van Gogh, em 1889."
     },
     {
+      "id": "vf-artes-92",
       "difficulty": "medium",
       "text": "Tarsila do Amaral é uma cantora de ópera.",
       "answer": false,
       "fact": "Ela foi uma pintora modernista brasileira."
     },
     {
+      "id": "vf-artes-93",
       "difficulty": "hard",
       "text": "Leonardo da Vinci escrevia de trás para frente em suas anotações.",
       "answer": true,
       "fact": "Era preciso um espelho para ler com facilidade."
     },
     {
+      "id": "vf-artes-94",
       "difficulty": "hard",
       "text": "O nome do \"Impressionismo\" nasceu de uma crítica.",
       "answer": true,
       "fact": "O crítico zombou de um quadro de Monet, em 1874."
     },
     {
+      "id": "vf-artes-95",
       "difficulty": "medium",
       "text": "\"As Meninas\" é um quadro de Diego Velázquez.",
       "answer": true,
       "fact": "A pintura fica no Museu do Prado, em Madri."
     },
     {
+      "id": "vf-artes-96",
       "difficulty": "hard",
       "text": "Frida Kahlo nasceu no Brasil.",
       "answer": false,

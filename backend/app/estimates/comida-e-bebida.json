@@ -2,6 +2,7 @@
   "theme": "Comida e bebida",
   "questions": [
     {
+      "id": "chute-comida-e-bebida-1",
       "difficulty": "medium",
       "text": "Em que ano a Coca-Cola foi criada?",
       "answer": 1886,
@@ -9,6 +10,7 @@
       "fact": "O farmacêutico John Pemberton vendia a bebida como tônico numa farmácia de Atlanta."
     },
     {
+      "id": "chute-comida-e-bebida-2",
       "difficulty": "medium",
       "text": "Quantas calorias tem um grama de gordura?",
       "answer": 9,
@@ -16,6 +18,7 @@
       "fact": "Proteína e carboidrato têm cerca de 4 kcal por grama."
     },
     {
+      "id": "chute-comida-e-bebida-3",
       "difficulty": "medium",
       "text": "A que temperatura é assada uma pizza napolitana tradicional?",
       "answer": 450,
@@ -23,6 +26,7 @@
       "fact": "No forno a lenha, ela fica pronta em 60 a 90 segundos."
     },
     {
+      "id": "chute-comida-e-bebida-4",
       "difficulty": "medium",
       "text": "Quantos litros de leite são necessários para fazer 1 kg de queijo?",
       "answer": 10,
@@ -30,6 +34,7 @@
       "fact": "Queijos duros, como o parmesão, pedem ainda mais leite por quilo."
     },
     {
+      "id": "chute-comida-e-bebida-5",
       "difficulty": "medium",
       "text": "Em que ano o primeiro McDonald's abriu no Brasil?",
       "answer": 1979,
@@ -37,6 +42,7 @@
       "fact": "A primeira loja foi em Copacabana, no Rio de Janeiro."
     },
     {
+      "id": "chute-comida-e-bebida-6",
       "difficulty": "easy",
       "text": "Que porcentagem da melancia é água?",
       "answer": 92,
@@ -44,6 +50,7 @@
       "fact": "O nome em inglês, watermelon, já diz: melão de água."
     },
     {
+      "id": "chute-comida-e-bebida-7",
       "difficulty": "hard",
       "text": "Quantos miligramas de cafeína tem um café expresso?",
       "answer": 63,
@@ -51,6 +58,7 @@
       "fact": "Uma xícara de café coado costuma ter mais cafeína que um expresso."
     },
     {
+      "id": "chute-comida-e-bebida-8",
       "difficulty": "hard",
       "text": "Em que ano teria surgido a pizza Margherita?",
       "answer": 1889,
@@ -58,6 +66,7 @@
       "fact": "Segundo a história, ela foi criada em Nápoles em homenagem à rainha Margherita, com as cores da Itália."
     },
     {
+      "id": "chute-comida-e-bebida-9",
       "difficulty": "hard",
       "text": "Quantos tipos de queijo a França teria, na frase famosa de Charles de Gaulle?",
       "answer": 246,
@@ -65,6 +74,7 @@
       "fact": "Ele perguntou como governar um país que tem 246 variedades de queijo."
     },
     {
+      "id": "chute-comida-e-bebida-10",
       "difficulty": "medium",
       "text": "Qual o teor alcoólico mínimo da cachaça, pela lei brasileira?",
       "answer": 38,
@@ -72,6 +82,7 @@
       "fact": "A cachaça vai de 38% a 48%; acima disso, vira aguardente de cana."
     },
     {
+      "id": "chute-comida-e-bebida-11",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma colher de sopa de açúcar?",
       "answer": 48,
@@ -79,6 +90,7 @@
       "fact": "Uma colher de sopa rasa tem cerca de 12 gramas de açúcar."
     },
     {
+      "id": "chute-comida-e-bebida-12",
       "difficulty": "hard",
       "text": "Em que ano o Guaraná Antarctica foi lançado?",
       "answer": 1921,
@@ -86,6 +98,7 @@
       "fact": "A receita é feita com extrato do fruto do guaraná, nativo da Amazônia."
     },
     {
+      "id": "chute-comida-e-bebida-13",
       "difficulty": "hard",
       "text": "Quantos litros de seiva de bordo são necessários para 1 litro de xarope?",
       "answer": 40,
@@ -93,6 +106,7 @@
       "fact": "A seiva é fervida por horas até virar xarope; o Canadá produz a maior parte do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-14",
       "difficulty": "medium",
       "text": "A que temperatura a água ferve no topo do Everest?",
       "answer": 70,
@@ -100,6 +114,7 @@
       "fact": "Com menos pressão do ar, a água ferve mais cedo, e cozinhar fica mais difícil."
     },
     {
+      "id": "chute-comida-e-bebida-15",
       "difficulty": "medium",
       "text": "Quantas sementes tem, em média, um morango?",
       "answer": 200,
@@ -107,6 +122,7 @@
       "fact": "Os pontinhos de fora são os frutos de verdade; a parte vermelha é o receptáculo da flor."
     },
     {
+      "id": "chute-comida-e-bebida-16",
       "difficulty": "hard",
       "text": "Quantos milhões de SHU tem, em média, a pimenta Carolina Reaper?",
       "answer": 1.6,
@@ -114,6 +130,7 @@
       "fact": "Uma pimenta jalapeño tem de 2.500 a 8.000 SHU."
     },
     {
+      "id": "chute-comida-e-bebida-17",
       "difficulty": "medium",
       "text": "Em que ano a Nutella foi lançada?",
       "answer": 1964,
@@ -121,6 +138,7 @@
       "fact": "Ela nasceu de uma pasta de avelã criada na Itália do pós-guerra, quando o cacau era caro."
     },
     {
+      "id": "chute-comida-e-bebida-18",
       "difficulty": "hard",
       "text": "Quantos litros de água são usados, em média, para produzir 1 kg de carne bovina?",
       "answer": 15400,
@@ -128,6 +146,7 @@
       "fact": "A maior parte é a água usada para cultivar a comida do gado."
     },
     {
+      "id": "chute-comida-e-bebida-19",
       "difficulty": "medium",
       "text": "Em que ano Momofuku Ando inventou o macarrão instantâneo?",
       "answer": 1958,
@@ -135,6 +154,7 @@
       "fact": "O primeiro foi o Chicken Ramen; o copo de isopor veio em 1971."
     },
     {
+      "id": "chute-comida-e-bebida-20",
       "difficulty": "hard",
       "text": "Quantas camadas tem uma massa folhada clássica?",
       "answer": 729,
@@ -142,6 +162,7 @@
       "fact": "Seis dobras em três: 3 elevado a 6 dá 729 camadas de massa e manteiga."
     },
     {
+      "id": "chute-comida-e-bebida-21",
       "difficulty": "medium",
       "text": "Que porcentagem da polpa do abacate é gordura?",
       "answer": 15,
@@ -149,6 +170,7 @@
       "fact": "É sobretudo gordura monoinsaturada, a mesma do azeite."
     },
     {
+      "id": "chute-comida-e-bebida-22",
       "difficulty": "medium",
       "text": "Qual a temperatura no centro de um bife ao ponto?",
       "answer": 60,
@@ -156,6 +178,7 @@
       "fact": "Mal passado fica perto de 52 °C; bem passado, acima de 70 °C."
     },
     {
+      "id": "chute-comida-e-bebida-23",
       "difficulty": "medium",
       "text": "Quanto pesa uma roda de queijo Parmigiano Reggiano?",
       "answer": 40,
@@ -163,6 +186,7 @@
       "fact": "Cada roda leva cerca de 550 litros de leite."
     },
     {
+      "id": "chute-comida-e-bebida-24",
       "difficulty": "medium",
       "text": "Por quantos meses, no mínimo, o Parmigiano Reggiano precisa maturar?",
       "answer": 12,
@@ -170,6 +194,7 @@
       "fact": "Os mais apreciados maturam por 24 a 36 meses."
     },
     {
+      "id": "chute-comida-e-bebida-25",
       "difficulty": "hard",
       "text": "Em que ano a cervejaria Heineken foi fundada?",
       "answer": 1864,
@@ -177,6 +202,7 @@
       "fact": "Gerard Adriaan Heineken comprou uma cervejaria em Amsterdã aos 22 anos."
     },
     {
+      "id": "chute-comida-e-bebida-26",
       "difficulty": "easy",
       "text": "Quantos litros tem um barril de chope padrão no Brasil?",
       "answer": 50,
@@ -184,6 +210,7 @@
       "fact": "Também existem barris de 30 litros, comuns em festas."
     },
     {
+      "id": "chute-comida-e-bebida-27",
       "difficulty": "medium",
       "text": "Em que ano o Big Mac começou a ser vendido?",
       "answer": 1967,
@@ -191,6 +218,7 @@
       "fact": "Foi criado por um franqueado de Pittsburgh e chegou a todo o país em 1968."
     },
     {
+      "id": "chute-comida-e-bebida-28",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma lata de 350 ml de Coca-Cola?",
       "answer": 149,
@@ -198,6 +226,7 @@
       "fact": "Quase tudo vem dos cerca de 37 gramas de açúcar."
     },
     {
+      "id": "chute-comida-e-bebida-29",
       "difficulty": "medium",
       "text": "Quantos ovos uma galinha poedeira bota por ano?",
       "answer": 300,
@@ -205,6 +234,7 @@
       "fact": "As galinhas selvagens, ancestrais das de granja, botavam cerca de 12 por ano."
     },
     {
+      "id": "chute-comida-e-bebida-30",
       "difficulty": "hard",
       "text": "Quantas variedades de batata existem no Peru?",
       "answer": 4000,
@@ -212,6 +242,7 @@
       "fact": "A batata foi domesticada nos Andes há cerca de 8 mil anos."
     },
     {
+      "id": "chute-comida-e-bebida-31",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma colher de sopa de azeite, aproximadamente?",
       "answer": 120,
@@ -219,6 +250,7 @@
       "fact": "O azeite é quase todo feito de gordura."
     },
     {
+      "id": "chute-comida-e-bebida-32",
       "difficulty": "easy",
       "text": "Quantas calorias tem um ovo de galinha, aproximadamente?",
       "answer": 75,
@@ -226,6 +258,7 @@
       "fact": "A gema tem a maior parte delas."
     },
     {
+      "id": "chute-comida-e-bebida-33",
       "difficulty": "easy",
       "text": "Quantas calorias tem uma banana média, aproximadamente?",
       "answer": 100,
@@ -233,6 +266,7 @@
       "fact": "Ela é rica em potássio."
     },
     {
+      "id": "chute-comida-e-bebida-34",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma maçã média, aproximadamente?",
       "answer": 80,
@@ -240,6 +274,7 @@
       "fact": "Cerca de 85% dela é água."
     },
     {
+      "id": "chute-comida-e-bebida-35",
       "difficulty": "easy",
       "text": "Quantas calorias tem um pão francês, aproximadamente?",
       "answer": 135,
@@ -247,6 +282,7 @@
       "fact": "Ele pesa cerca de 50 gramas."
     },
     {
+      "id": "chute-comida-e-bebida-36",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma coxinha média, aproximadamente?",
       "answer": 300,
@@ -254,6 +290,7 @@
       "fact": "A massa é frita em óleo."
     },
     {
+      "id": "chute-comida-e-bebida-37",
       "difficulty": "easy",
       "text": "Quantas calorias tem um brigadeiro, aproximadamente?",
       "answer": 80,
@@ -261,6 +298,7 @@
       "fact": "A receita leva leite condensado e chocolate."
     },
     {
+      "id": "chute-comida-e-bebida-38",
       "difficulty": "medium",
       "text": "Quantas calorias tem um pedaço de pizza de muçarela, aproximadamente?",
       "answer": 280,
@@ -268,6 +306,7 @@
       "fact": "Uma pizza inteira pode passar de 2 mil calorias."
     },
     {
+      "id": "chute-comida-e-bebida-39",
       "difficulty": "easy",
       "text": "Quantas calorias tem um Big Mac, aproximadamente?",
       "answer": 500,
@@ -275,6 +314,7 @@
       "fact": "Ele tem dois hambúrgueres."
     },
     {
+      "id": "chute-comida-e-bebida-40",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma lata de cerveja, aproximadamente?",
       "answer": 145,
@@ -282,6 +322,7 @@
       "fact": "A cerveja comum tem cerca de 5% de álcool."
     },
     {
+      "id": "chute-comida-e-bebida-41",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma taça de vinho, aproximadamente?",
       "answer": 125,
@@ -289,6 +330,7 @@
       "fact": "A maior parte vem do álcool."
     },
     {
+      "id": "chute-comida-e-bebida-42",
       "difficulty": "easy",
       "text": "Quantas calorias tem um copo de leite integral, aproximadamente?",
       "answer": 150,
@@ -296,6 +338,7 @@
       "fact": "O copo tem cerca de 240 ml."
     },
     {
+      "id": "chute-comida-e-bebida-43",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma colher de sopa de manteiga, aproximadamente?",
       "answer": 100,
@@ -303,6 +346,7 @@
       "fact": "Ela é feita de creme de leite batido."
     },
     {
+      "id": "chute-comida-e-bebida-44",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma colher de sopa de açúcar, sem contar a de chá?",
       "answer": 48,
@@ -310,6 +354,7 @@
       "fact": "O Brasil é o maior produtor mundial de açúcar."
     },
     {
+      "id": "chute-comida-e-bebida-45",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma barra de chocolate ao leite de 100 g, aproximadamente?",
       "answer": 540,
@@ -317,6 +362,7 @@
       "fact": "Cerca de metade das calorias vem da gordura."
     },
     {
+      "id": "chute-comida-e-bebida-46",
       "difficulty": "medium",
       "text": "Quantos gramas de açúcar tem uma lata de Coca-Cola de 350 ml, aproximadamente?",
       "answer": 37,
@@ -324,6 +370,7 @@
       "fact": "Isso dá quase 10 colheres de chá."
     },
     {
+      "id": "chute-comida-e-bebida-47",
       "difficulty": "medium",
       "text": "Quantos gramas de proteína tem um ovo, aproximadamente?",
       "answer": 6,
@@ -331,6 +378,7 @@
       "fact": "A clara tem mais da metade dela."
     },
     {
+      "id": "chute-comida-e-bebida-48",
       "difficulty": "easy",
       "text": "Quantos ml tem uma lata comum de refrigerante, no Brasil?",
       "answer": 350,
@@ -338,6 +386,7 @@
       "fact": "O formato de lata é usado desde os anos 1960."
     },
     {
+      "id": "chute-comida-e-bebida-49",
       "difficulty": "easy",
       "text": "Quantos ml tem uma long neck de cerveja?",
       "answer": 355,
@@ -345,6 +394,7 @@
       "fact": "O nome significa \"gargalo comprido\" em inglês."
     },
     {
+      "id": "chute-comida-e-bebida-50",
       "difficulty": "easy",
       "text": "Quantos ml tem um chope em tulipa, em média?",
       "answer": 300,
@@ -352,6 +402,7 @@
       "fact": "No Rio, o chope gelado é uma tradição."
     },
     {
+      "id": "chute-comida-e-bebida-51",
       "difficulty": "easy",
       "text": "Quantos ml tem uma garrafa de vinho padrão?",
       "answer": 750,
@@ -359,6 +410,7 @@
       "fact": "Ela rende cerca de cinco taças."
     },
     {
+      "id": "chute-comida-e-bebida-52",
       "difficulty": "medium",
       "text": "Quantos litros tem uma garrafa Magnum de vinho?",
       "answer": 1.5,
@@ -366,6 +418,7 @@
       "fact": "Ela equivale a duas garrafas comuns."
     },
     {
+      "id": "chute-comida-e-bebida-53",
       "difficulty": "easy",
       "text": "Quantos ml tem um café expresso padrão?",
       "answer": 30,
@@ -373,6 +426,7 @@
       "fact": "A dose dupla tem 60 ml."
     },
     {
+      "id": "chute-comida-e-bebida-54",
       "difficulty": "medium",
       "text": "Quantos gramas de café moído são usados em um expresso?",
       "answer": 7,
@@ -380,6 +434,7 @@
       "fact": "A extração dura de 25 a 30 segundos."
     },
     {
+      "id": "chute-comida-e-bebida-55",
       "difficulty": "medium",
       "text": "Quantos segundos dura a extração de um expresso, aproximadamente?",
       "answer": 28,
@@ -387,6 +442,7 @@
       "fact": "Mais tempo pode deixar o café amargo."
     },
     {
+      "id": "chute-comida-e-bebida-56",
       "difficulty": "easy",
       "text": "Quantas fatias costuma ter uma pizza grande no Brasil?",
       "answer": 8,
@@ -394,6 +450,7 @@
       "fact": "Em São Paulo, a pizza é um grande orgulho."
     },
     {
+      "id": "chute-comida-e-bebida-57",
       "difficulty": "easy",
       "text": "Quantos hambúrgueres tem um Big Mac?",
       "answer": 2,
@@ -401,6 +458,7 @@
       "fact": "Ele foi criado em 1967."
     },
     {
+      "id": "chute-comida-e-bebida-58",
       "difficulty": "easy",
       "text": "Quantas colheres de chá cabem em uma colher de sopa?",
       "answer": 3,
@@ -408,6 +466,7 @@
       "fact": "Cada colher de chá tem 5 ml."
     },
     {
+      "id": "chute-comida-e-bebida-59",
       "difficulty": "easy",
       "text": "Quantos ml tem uma colher de sopa?",
       "answer": 15,
@@ -415,6 +474,7 @@
       "fact": "Medidas ajudam a seguir bem uma receita."
     },
     {
+      "id": "chute-comida-e-bebida-60",
       "difficulty": "medium",
       "text": "Quantas xícaras de chá cabem em um litro, em receitas?",
       "answer": 4,
@@ -422,6 +482,7 @@
       "fact": "A xícara de medida tem cerca de 240 ml."
     },
     {
+      "id": "chute-comida-e-bebida-61",
       "difficulty": "medium",
       "text": "Quantos meses dura, em média, o tempo de cura do presunto de Parma, no mínimo?",
       "answer": 12,
@@ -429,6 +490,7 @@
       "fact": "Os porcos vêm de regiões definidas da Itália."
     },
     {
+      "id": "chute-comida-e-bebida-62",
       "difficulty": "easy",
       "text": "Quantos minutos cozinha o miojo, segundo a embalagem?",
       "answer": 3,
@@ -436,6 +498,7 @@
       "fact": "Ele foi criado no Japão em 1958."
     },
     {
+      "id": "chute-comida-e-bebida-63",
       "difficulty": "easy",
       "text": "Quantos minutos cozinha um ovo para ficar com a gema mole, aproximadamente?",
       "answer": 6,
@@ -443,6 +506,7 @@
       "fact": "Em 10 minutos, ele fica duro."
     },
     {
+      "id": "chute-comida-e-bebida-64",
       "difficulty": "easy",
       "text": "Quantos minutos cozinha um ovo para ficar duro, aproximadamente?",
       "answer": 10,
@@ -450,6 +514,7 @@
       "fact": "A gema fica esverdeada se cozinhar demais."
     },
     {
+      "id": "chute-comida-e-bebida-65",
       "difficulty": "easy",
       "text": "Qual é a temperatura de um forno médio, em °C?",
       "answer": 180,
@@ -457,6 +522,7 @@
       "fact": "Muitos bolos são assados nessa temperatura."
     },
     {
+      "id": "chute-comida-e-bebida-66",
       "difficulty": "easy",
       "text": "Qual é a temperatura de um freezer doméstico, em °C?",
       "answer": -18,
@@ -464,6 +530,7 @@
       "fact": "Nessa temperatura, as bactérias param de se multiplicar."
     },
     {
+      "id": "chute-comida-e-bebida-67",
       "difficulty": "easy",
       "text": "Qual é a temperatura ideal de uma geladeira, em °C?",
       "answer": 4,
@@ -471,6 +538,7 @@
       "fact": "Acima disso, os alimentos estragam mais rápido."
     },
     {
+      "id": "chute-comida-e-bebida-68",
       "difficulty": "easy",
       "text": "A que temperatura o sorvete fica guardado, em °C?",
       "answer": -18,
@@ -478,6 +546,7 @@
       "fact": "Ele é servido em torno de -12 °C."
     },
     {
+      "id": "chute-comida-e-bebida-69",
       "difficulty": "hard",
       "text": "A que temperatura o nitrogênio líquido usado na cozinha molecular está, em °C?",
       "answer": -196,
@@ -485,6 +554,7 @@
       "fact": "Ele congela sorvete em segundos."
     },
     {
+      "id": "chute-comida-e-bebida-70",
       "difficulty": "easy",
       "text": "A que temperatura se serve o chope ideal, em °C?",
       "answer": 4,
@@ -492,6 +562,7 @@
       "fact": "Os cariocas chamam o chope de \"estupidamente gelado\"."
     },
     {
+      "id": "chute-comida-e-bebida-71",
       "difficulty": "easy",
       "text": "A que temperatura o óleo de fritura costuma estar, em °C?",
       "answer": 180,
@@ -499,6 +570,7 @@
       "fact": "Acima disso, ele começa a queimar."
     },
     {
+      "id": "chute-comida-e-bebida-72",
       "difficulty": "medium",
       "text": "A que temperatura o açúcar vira caramelo, aproximadamente, em °C?",
       "answer": 170,
@@ -506,6 +578,7 @@
       "fact": "Depois, ele queima rapidamente."
     },
     {
+      "id": "chute-comida-e-bebida-73",
       "difficulty": "medium",
       "text": "A que temperatura a água do chá verde deve estar, em °C?",
       "answer": 80,
@@ -513,6 +586,7 @@
       "fact": "Se for muito quente, o chá amarga."
     },
     {
+      "id": "chute-comida-e-bebida-74",
       "difficulty": "medium",
       "text": "A que temperatura se serve o vinho tinto, em média, em °C?",
       "answer": 17,
@@ -520,6 +594,7 @@
       "fact": "O vinho branco fica em torno de 10 °C."
     },
     {
+      "id": "chute-comida-e-bebida-75",
       "difficulty": "medium",
       "text": "A que temperatura se serve o champanhe, em média, em °C?",
       "answer": 8,
@@ -527,6 +602,7 @@
       "fact": "Na taça gelada, ele conserva melhor as bolhas."
     },
     {
+      "id": "chute-comida-e-bebida-76",
       "difficulty": "medium",
       "text": "A que temperatura o chocolate começa a derreter, em °C?",
       "answer": 34,
@@ -534,6 +610,7 @@
       "fact": "Por isso, ele derrete na boca."
     },
     {
+      "id": "chute-comida-e-bebida-77",
       "difficulty": "medium",
       "text": "Em que ano foi criado o McDonald's?",
       "answer": 1940,
@@ -541,6 +618,7 @@
       "fact": "Foi em San Bernardino, na Califórnia."
     },
     {
+      "id": "chute-comida-e-bebida-78",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Miojo?",
       "answer": 1958,
@@ -548,6 +626,7 @@
       "fact": "O japonês Momofuku Ando o inventou."
     },
     {
+      "id": "chute-comida-e-bebida-79",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o refrigerante Sprite?",
       "answer": 1961,
@@ -555,6 +634,7 @@
       "fact": "A bebida nasceu na Alemanha, como Fanta Klare Zitrone."
     },
     {
+      "id": "chute-comida-e-bebida-80",
       "difficulty": "hard",
       "text": "Em que ano foi lançada a Pepsi com esse nome?",
       "answer": 1898,
@@ -562,6 +642,7 @@
       "fact": "O nome vem de \"dyspepsia\"."
     },
     {
+      "id": "chute-comida-e-bebida-81",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Nestlé, na Suíça?",
       "answer": 1866,
@@ -569,6 +650,7 @@
       "fact": "A primeira fábrica fica em Vevey."
     },
     {
+      "id": "chute-comida-e-bebida-82",
       "difficulty": "hard",
       "text": "Em que ano foi criada a marca Garoto?",
       "answer": 1929,
@@ -576,6 +658,7 @@
       "fact": "A sede ainda fica em Vila Velha."
     },
     {
+      "id": "chute-comida-e-bebida-83",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Kit Kat?",
       "answer": 1935,
@@ -583,6 +666,7 @@
       "fact": "A marca é da Rowntree, depois comprada pela Nestlé."
     },
     {
+      "id": "chute-comida-e-bebida-84",
       "difficulty": "hard",
       "text": "Em que ano foi criado o M&M's?",
       "answer": 1941,
@@ -590,6 +674,7 @@
       "fact": "A casca não derrete, pois foi feita para soldados."
     },
     {
+      "id": "chute-comida-e-bebida-85",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Snickers?",
       "answer": 1930,
@@ -597,6 +682,7 @@
       "fact": "O nome vem de um cavalo da família Mars."
     },
     {
+      "id": "chute-comida-e-bebida-86",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Toblerone?",
       "answer": 1908,
@@ -604,6 +690,7 @@
       "fact": "Ele é feito em Berna, na Suíça."
     },
     {
+      "id": "chute-comida-e-bebida-87",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Oreo?",
       "answer": 1912,
@@ -611,6 +698,7 @@
       "fact": "Ele é o biscoito mais vendido do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-88",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Ferrero Rocher?",
       "answer": 1982,
@@ -618,6 +706,7 @@
       "fact": "A marca é italiana."
     },
     {
+      "id": "chute-comida-e-bebida-89",
       "difficulty": "hard",
       "text": "Em que ano foi criado o chiclete moderno, com goma?",
       "answer": 1869,
@@ -625,6 +714,7 @@
       "fact": "Thomas Adams tentou fazer pneu com a goma, sem sucesso."
     },
     {
+      "id": "chute-comida-e-bebida-90",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Doritos?",
       "answer": 1964,
@@ -632,6 +722,7 @@
       "fact": "Ele nasceu na Disneylândia."
     },
     {
+      "id": "chute-comida-e-bebida-91",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Red Bull na Áustria?",
       "answer": 1987,
@@ -639,6 +730,7 @@
       "fact": "A bebida veio de um energético tailandês."
     },
     {
+      "id": "chute-comida-e-bebida-92",
       "difficulty": "hard",
       "text": "Em que ano foi criado o cachorro-quente Nathan's?",
       "answer": 1916,
@@ -646,6 +738,7 @@
       "fact": "Ele foi aberto por um imigrante polonês."
     },
     {
+      "id": "chute-comida-e-bebida-93",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Pringles?",
       "answer": 1967,
@@ -653,6 +746,7 @@
       "fact": "O químico que criou a lata foi enterrado em uma."
     },
     {
+      "id": "chute-comida-e-bebida-94",
       "difficulty": "medium",
       "text": "Em que ano foi criado o KFC, na primeira franquia?",
       "answer": 1952,
@@ -660,6 +754,7 @@
       "fact": "Foi aberto em Salt Lake City."
     },
     {
+      "id": "chute-comida-e-bebida-95",
       "difficulty": "medium",
       "text": "Em que ano foi criada a rede Habib's?",
       "answer": 1988,
@@ -667,6 +762,7 @@
       "fact": "O fundador é português."
     },
     {
+      "id": "chute-comida-e-bebida-96",
       "difficulty": "medium",
       "text": "Em que ano foi criada a rede Outback, nos EUA?",
       "answer": 1988,
@@ -674,6 +770,7 @@
       "fact": "Apesar do tema, os fundadores são americanos."
     },
     {
+      "id": "chute-comida-e-bebida-97",
       "difficulty": "medium",
       "text": "Em que ano foi criada a rede Subway?",
       "answer": 1965,
@@ -681,6 +778,7 @@
       "fact": "O fundador abriu a primeira loja aos 17 anos."
     },
     {
+      "id": "chute-comida-e-bebida-98",
       "difficulty": "medium",
       "text": "Em que ano foi criado o café solúvel Nescafé?",
       "answer": 1938,
@@ -688,6 +786,7 @@
       "fact": "O Brasil tinha excesso de café."
     },
     {
+      "id": "chute-comida-e-bebida-99",
       "difficulty": "hard",
       "text": "Em que ano foi criado o saquinho de chá?",
       "answer": 1908,
@@ -695,6 +794,7 @@
       "fact": "Um comerciante mandava amostras em sacos de seda."
     },
     {
+      "id": "chute-comida-e-bebida-100",
       "difficulty": "hard",
       "text": "Em que ano o café chegou ao Brasil, segundo a tradição?",
       "answer": 1727,
@@ -702,6 +802,7 @@
       "fact": "Ele chegou em Belém do Pará."
     },
     {
+      "id": "chute-comida-e-bebida-101",
       "difficulty": "hard",
       "text": "Em que ano a Lei da Pureza da cerveja foi criada na Baviera?",
       "answer": 1516,
@@ -709,6 +810,7 @@
       "fact": "Só permitia água, cevada e lúpulo."
     },
     {
+      "id": "chute-comida-e-bebida-102",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Lei Seca nos EUA, no início?",
       "answer": 1920,
@@ -716,6 +818,7 @@
       "fact": "Ela durou até 1933."
     },
     {
+      "id": "chute-comida-e-bebida-103",
       "difficulty": "medium",
       "text": "Em que ano terminou a Lei Seca nos EUA?",
       "answer": 1933,
@@ -723,6 +826,7 @@
       "fact": "Foi durante o governo Roosevelt."
     },
     {
+      "id": "chute-comida-e-bebida-104",
       "difficulty": "hard",
       "text": "Em que ano a Oktoberfest começou?",
       "answer": 1810,
@@ -730,6 +834,7 @@
       "fact": "Foi criada para comemorar um casamento real."
     },
     {
+      "id": "chute-comida-e-bebida-105",
       "difficulty": "hard",
       "text": "Em que ano foi criado o pisco sour?",
       "answer": 1920,
@@ -737,6 +842,7 @@
       "fact": "Um americano o criou em Lima, no Peru."
     },
     {
+      "id": "chute-comida-e-bebida-106",
       "difficulty": "hard",
       "text": "Em que ano foi criado o coquetel Margarita, aproximadamente?",
       "answer": 1938,
@@ -744,6 +850,7 @@
       "fact": "Muitos bartenders reivindicam a invenção."
     },
     {
+      "id": "chute-comida-e-bebida-107",
       "difficulty": "hard",
       "text": "Em que ano foi criado o coquetel Negroni?",
       "answer": 1919,
@@ -751,6 +858,7 @@
       "fact": "O conde Negroni pediu mais gim em vez de soda."
     },
     {
+      "id": "chute-comida-e-bebida-108",
       "difficulty": "medium",
       "text": "Quantos anos vive uma oliveira produtiva, em geral?",
       "answer": 500,
@@ -758,6 +866,7 @@
       "fact": "Algumas passam de 2 mil anos."
     },
     {
+      "id": "chute-comida-e-bebida-109",
       "difficulty": "medium",
       "text": "Quantos anos leva uma árvore de cacau para produzir frutos?",
       "answer": 4,
@@ -765,6 +874,7 @@
       "fact": "Os frutos crescem direto no tronco."
     },
     {
+      "id": "chute-comida-e-bebida-110",
       "difficulty": "medium",
       "text": "Quantos anos leva um pé de café para produzir?",
       "answer": 3,
@@ -772,6 +882,7 @@
       "fact": "Ele vive por várias décadas."
     },
     {
+      "id": "chute-comida-e-bebida-111",
       "difficulty": "hard",
       "text": "Quantas sementes de cacau tem um fruto, aproximadamente?",
       "answer": 40,
@@ -779,6 +890,7 @@
       "fact": "São necessárias centenas para fazer 1 kg de chocolate."
     },
     {
+      "id": "chute-comida-e-bebida-112",
       "difficulty": "medium",
       "text": "Quantos anos leva um coqueiro para dar frutos?",
       "answer": 6,
@@ -786,6 +898,7 @@
       "fact": "Ele pode produzir por mais de 60 anos."
     },
     {
+      "id": "chute-comida-e-bebida-113",
       "difficulty": "medium",
       "text": "Quantos cocos um coqueiro dá por ano, aproximadamente?",
       "answer": 100,
@@ -793,6 +906,7 @@
       "fact": "Eles são muito usados em todo o Nordeste."
     },
     {
+      "id": "chute-comida-e-bebida-114",
       "difficulty": "medium",
       "text": "Quantos meses leva um abacaxi para ficar pronto, aproximadamente?",
       "answer": 18,
@@ -800,6 +914,7 @@
       "fact": "Ele é originário da América do Sul."
     },
     {
+      "id": "chute-comida-e-bebida-115",
       "difficulty": "easy",
       "text": "Quantos ovos costuma levar um pudim de leite condensado?",
       "answer": 3,
@@ -807,6 +922,7 @@
       "fact": "Ele costuma ser feito em banho-maria."
     },
     {
+      "id": "chute-comida-e-bebida-116",
       "difficulty": "easy",
       "text": "Quantos ingredientes tem a pizza margherita original?",
       "answer": 3,
@@ -814,6 +930,7 @@
       "fact": "Tomate, muçarela e manjericão, além da massa."
     },
     {
+      "id": "chute-comida-e-bebida-117",
       "difficulty": "easy",
       "text": "Quantas cores tem a pizza margherita?",
       "answer": 3,
@@ -821,6 +938,7 @@
       "fact": "Elas lembram a bandeira da Itália."
     },
     {
+      "id": "chute-comida-e-bebida-118",
       "difficulty": "medium",
       "text": "Quantos ingredientes tem o cacio e pepe?",
       "answer": 3,
@@ -828,6 +946,7 @@
       "fact": "Massa, queijo e pimenta."
     },
     {
+      "id": "chute-comida-e-bebida-119",
       "difficulty": "medium",
       "text": "Quantos ingredientes permite a Lei da Pureza da cerveja, de 1516?",
       "answer": 3,
@@ -835,6 +954,7 @@
       "fact": "Água, cevada e lúpulo, e a levedura foi adicionada depois."
     },
     {
+      "id": "chute-comida-e-bebida-120",
       "difficulty": "hard",
       "text": "Quantos países produzem café em grande escala, aproximadamente?",
       "answer": 70,
@@ -842,6 +962,7 @@
       "fact": "A maioria fica perto da linha do Equador."
     },
     {
+      "id": "chute-comida-e-bebida-121",
       "difficulty": "hard",
       "text": "Quantos quilos de batata-frita o McDonald's vende por dia nos EUA, em milhões?",
       "answer": 4.5,
@@ -849,6 +970,7 @@
       "fact": "É um dos produtos mais vendidos."
     },
     {
+      "id": "chute-comida-e-bebida-122",
       "difficulty": "hard",
       "text": "Quantos sabores tem a Fanta no mundo, aproximadamente?",
       "answer": 100,
@@ -856,6 +978,7 @@
       "fact": "No Brasil, os mais comuns são laranja e uva."
     },
     {
+      "id": "chute-comida-e-bebida-123",
       "difficulty": "hard",
       "text": "Quantos sabores de Kit Kat o Japão já teve, aproximadamente?",
       "answer": 300,
@@ -863,6 +986,7 @@
       "fact": "Lá, ele é presente de boa sorte para estudantes."
     },
     {
+      "id": "chute-comida-e-bebida-124",
       "difficulty": "hard",
       "text": "Quantos tipos de massa existem na Itália, aproximadamente?",
       "answer": 350,
@@ -870,6 +994,7 @@
       "fact": "Cada formato segura o molho de um jeito."
     },
     {
+      "id": "chute-comida-e-bebida-125",
       "difficulty": "hard",
       "text": "Quantos tipos de queijo existem no mundo, aproximadamente?",
       "answer": 1800,
@@ -877,6 +1002,7 @@
       "fact": "A França tem mais de mil variedades."
     },
     {
+      "id": "chute-comida-e-bebida-126",
       "difficulty": "medium",
       "text": "Em que ano a baguete virou Patrimônio da Humanidade?",
       "answer": 2022,
@@ -884,6 +1010,7 @@
       "fact": "Os franceses comem bilhões por ano."
     },
     {
+      "id": "chute-comida-e-bebida-127",
       "difficulty": "medium",
       "text": "Em que ano a pizza napolitana virou Patrimônio da Humanidade?",
       "answer": 2017,
@@ -891,6 +1018,7 @@
       "fact": "A arte do \"pizzaiuolo\" foi reconhecida."
     },
     {
+      "id": "chute-comida-e-bebida-128",
       "difficulty": "medium",
       "text": "Em que ano a culinária mexicana virou Patrimônio da Humanidade?",
       "answer": 2010,
@@ -898,6 +1026,7 @@
       "fact": "Ela foi a primeira cozinha nacional na lista."
     },
     {
+      "id": "chute-comida-e-bebida-129",
       "difficulty": "medium",
       "text": "Em que ano o acarajé foi registrado no Iphan?",
       "answer": 2004,
@@ -905,6 +1034,7 @@
       "fact": "O registro é do ofício das baianas."
     },
     {
+      "id": "chute-comida-e-bebida-130",
       "difficulty": "medium",
       "text": "Quantas toneladas de soja o mundo produz por ano, em milhões?",
       "answer": 400,
@@ -912,6 +1042,7 @@
       "fact": "O Brasil é o maior produtor."
     },
     {
+      "id": "chute-comida-e-bebida-131",
       "difficulty": "medium",
       "text": "Quantas toneladas de milho o mundo produz por ano, em bilhões?",
       "answer": 1.2,
@@ -919,6 +1050,7 @@
       "fact": "É o cereal mais produzido do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-132",
       "difficulty": "medium",
       "text": "Quantas toneladas de arroz o mundo produz por ano, em milhões?",
       "answer": 520,
@@ -926,6 +1058,7 @@
       "fact": "A China e a Índia lideram a produção."
     },
     {
+      "id": "chute-comida-e-bebida-133",
       "difficulty": "medium",
       "text": "Quantas toneladas de trigo o mundo produz por ano, em milhões?",
       "answer": 790,
@@ -933,6 +1066,7 @@
       "fact": "A China é a maior produtora."
     },
     {
+      "id": "chute-comida-e-bebida-134",
       "difficulty": "medium",
       "text": "Quantas toneladas de açúcar o mundo produz por ano, em milhões?",
       "answer": 180,
@@ -940,6 +1074,7 @@
       "fact": "O Brasil lidera a produção."
     },
     {
+      "id": "chute-comida-e-bebida-135",
       "difficulty": "medium",
       "text": "Quantas toneladas de café o mundo produz por ano, em milhões?",
       "answer": 10,
@@ -947,6 +1082,7 @@
       "fact": "O Brasil produz cerca de um terço."
     },
     {
+      "id": "chute-comida-e-bebida-136",
       "difficulty": "medium",
       "text": "Quantas toneladas de cacau o mundo produz por ano, em milhões?",
       "answer": 5,
@@ -954,6 +1090,7 @@
       "fact": "A Costa do Marfim é a maior produtora."
     },
     {
+      "id": "chute-comida-e-bebida-137",
       "difficulty": "medium",
       "text": "Quantas toneladas de banana o mundo produz por ano, em milhões?",
       "answer": 125,
@@ -961,6 +1098,7 @@
       "fact": "A Índia é a maior produtora."
     },
     {
+      "id": "chute-comida-e-bebida-138",
       "difficulty": "medium",
       "text": "Quantas toneladas de tomate o mundo produz por ano, em milhões?",
       "answer": 186,
@@ -968,6 +1106,7 @@
       "fact": "A China é a maior produtora."
     },
     {
+      "id": "chute-comida-e-bebida-139",
       "difficulty": "medium",
       "text": "Quantas xícaras de café são consumidas por dia no mundo, em bilhões?",
       "answer": 2.25,
@@ -975,6 +1114,7 @@
       "fact": "A Finlândia é a maior consumidora por pessoa."
     },
     {
+      "id": "chute-comida-e-bebida-140",
       "difficulty": "medium",
       "text": "Quantos litros de café o brasileiro bebe por ano, aproximadamente, por pessoa?",
       "answer": 80,
@@ -982,6 +1122,7 @@
       "fact": "O Brasil é o segundo maior consumidor do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-141",
       "difficulty": "medium",
       "text": "Quantos kg de café os finlandeses consomem por pessoa, por ano?",
       "answer": 12,
@@ -989,6 +1130,7 @@
       "fact": "O consumo é o maior do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-142",
       "difficulty": "medium",
       "text": "Quantos kg de chocolate os suíços consomem por pessoa, por ano?",
       "answer": 9,
@@ -996,6 +1138,7 @@
       "fact": "A Suíça lidera esse ranking há muitos anos."
     },
     {
+      "id": "chute-comida-e-bebida-143",
       "difficulty": "medium",
       "text": "Quantos kg de carne os brasileiros consomem por pessoa, por ano, aproximadamente?",
       "answer": 100,
@@ -1003,6 +1146,7 @@
       "fact": "O frango é a carne mais comum."
     },
     {
+      "id": "chute-comida-e-bebida-144",
       "difficulty": "medium",
       "text": "Quantos kg de arroz os brasileiros consomem por pessoa, por ano?",
       "answer": 32,
@@ -1010,6 +1154,7 @@
       "fact": "O prato com feijão é uma tradição."
     },
     {
+      "id": "chute-comida-e-bebida-145",
       "difficulty": "medium",
       "text": "Quantos kg de feijão os brasileiros consomem por pessoa, por ano?",
       "answer": 15,
@@ -1017,6 +1162,7 @@
       "fact": "O consumo vem caindo."
     },
     {
+      "id": "chute-comida-e-bebida-146",
       "difficulty": "medium",
       "text": "Quantos litros de cerveja os tchecos bebem por pessoa, por ano?",
       "answer": 129,
@@ -1024,6 +1170,7 @@
       "fact": "A República Tcheca lidera há décadas."
     },
     {
+      "id": "chute-comida-e-bebida-147",
       "difficulty": "medium",
       "text": "Quantos litros de cerveja os brasileiros bebem por pessoa, por ano, aproximadamente?",
       "answer": 60,
@@ -1031,6 +1178,7 @@
       "fact": "O Brasil é o terceiro maior produtor do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-148",
       "difficulty": "medium",
       "text": "Quantos litros de cerveja o Brasil produz por ano, em bilhões?",
       "answer": 15,
@@ -1038,6 +1186,7 @@
       "fact": "É o terceiro maior produtor do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-149",
       "difficulty": "medium",
       "text": "Quantos litros de vinho os brasileiros bebem por pessoa, por ano?",
       "answer": 2.5,
@@ -1045,6 +1194,7 @@
       "fact": "Os italianos bebem cerca de 40 litros."
     },
     {
+      "id": "chute-comida-e-bebida-150",
       "difficulty": "medium",
       "text": "Quantos litros de vinho os italianos bebem por pessoa, por ano?",
       "answer": 40,
@@ -1052,6 +1202,7 @@
       "fact": "A Itália também é uma das maiores produtoras."
     },
     {
+      "id": "chute-comida-e-bebida-151",
       "difficulty": "medium",
       "text": "Quantas cervejarias existem no Brasil, aproximadamente?",
       "answer": 1800,
@@ -1059,6 +1210,7 @@
       "fact": "Cresceram muito depois das microcervejarias."
     },
     {
+      "id": "chute-comida-e-bebida-152",
       "difficulty": "medium",
       "text": "Quantos litros de cachaça o Brasil produz por ano, em milhões?",
       "answer": 800,
@@ -1066,6 +1218,7 @@
       "fact": "Só uma pequena parte é exportada."
     },
     {
+      "id": "chute-comida-e-bebida-153",
       "difficulty": "medium",
       "text": "Quantos litros de leite o Brasil produz por ano, em bilhões?",
       "answer": 35,
@@ -1073,6 +1226,7 @@
       "fact": "Minas Gerais é o maior produtor."
     },
     {
+      "id": "chute-comida-e-bebida-154",
       "difficulty": "medium",
       "text": "Quantos ovos os brasileiros comem por pessoa, por ano, aproximadamente?",
       "answer": 240,
@@ -1080,6 +1234,7 @@
       "fact": "O número cresceu muito nas últimas décadas."
     },
     {
+      "id": "chute-comida-e-bebida-155",
       "difficulty": "medium",
       "text": "Quantas pizzas São Paulo produz por dia, aproximadamente?",
       "answer": 1000000,
@@ -1087,6 +1242,7 @@
       "fact": "A cidade é conhecida como a capital da pizza."
     },
     {
+      "id": "chute-comida-e-bebida-156",
       "difficulty": "medium",
       "text": "Quantas pizzarias tem São Paulo, aproximadamente?",
       "answer": 6000,
@@ -1094,6 +1250,7 @@
       "fact": "O Dia da Pizza é comemorado em 10 de julho."
     },
     {
+      "id": "chute-comida-e-bebida-157",
       "difficulty": "medium",
       "text": "Quantos restaurantes tem São Paulo, aproximadamente?",
       "answer": 12500,
@@ -1101,6 +1258,7 @@
       "fact": "Ela é uma das capitais gastronômicas do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-158",
       "difficulty": "medium",
       "text": "Quantos Big Macs o McDonald's vende por ano, em milhões?",
       "answer": 900,
@@ -1108,6 +1266,7 @@
       "fact": "O índice Big Mac compara preços de vários países."
     },
     {
+      "id": "chute-comida-e-bebida-159",
       "difficulty": "medium",
       "text": "Quantos litros de Coca-Cola são vendidos por dia no mundo, em bilhões, aproximadamente?",
       "answer": 1.8,
@@ -1115,6 +1274,7 @@
       "fact": "Ela é vendida em mais de 200 países."
     },
     {
+      "id": "chute-comida-e-bebida-160",
       "difficulty": "medium",
       "text": "Quantos países vendem Coca-Cola?",
       "answer": 200,
@@ -1122,6 +1282,7 @@
       "fact": "Só Cuba e a Coreia do Norte não têm venda oficial."
     },
     {
+      "id": "chute-comida-e-bebida-161",
       "difficulty": "medium",
       "text": "Quantos países não vendem oficialmente a Coca-Cola?",
       "answer": 2,
@@ -1129,6 +1290,7 @@
       "fact": "São Cuba e Coreia do Norte."
     },
     {
+      "id": "chute-comida-e-bebida-162",
       "difficulty": "medium",
       "text": "Quantos cubos de açúcar tem uma lata de Coca-Cola, aproximadamente?",
       "answer": 10,
@@ -1136,6 +1298,7 @@
       "fact": "Cada cubo tem cerca de 4 gramas."
     },
     {
+      "id": "chute-comida-e-bebida-163",
       "difficulty": "medium",
       "text": "Quantos Oreos são vendidos por ano no mundo, em bilhões?",
       "answer": 40,
@@ -1143,6 +1306,7 @@
       "fact": "É o biscoito mais vendido do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-164",
       "difficulty": "medium",
       "text": "Quantos potes de Nutella são vendidos por ano, em milhões?",
       "answer": 365,
@@ -1150,6 +1314,7 @@
       "fact": "Ela usa cerca de 25% das avelãs do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-165",
       "difficulty": "medium",
       "text": "Qual a porcentagem de avelãs do mundo usadas pela Ferrero, aproximadamente?",
       "answer": 25,
@@ -1157,6 +1322,7 @@
       "fact": "A maior parte das avelãs vem da Turquia."
     },
     {
+      "id": "chute-comida-e-bebida-166",
       "difficulty": "medium",
       "text": "Qual o peso do maior ovo de chocolate já feito, em toneladas?",
       "answer": 7.2,
@@ -1164,6 +1330,7 @@
       "fact": "Foi feito na Itália, em 2011."
     },
     {
+      "id": "chute-comida-e-bebida-167",
       "difficulty": "medium",
       "text": "Qual a área da maior pizza do mundo, em m²?",
       "answer": 1261,
@@ -1171,6 +1338,7 @@
       "fact": "Foi feita em Roma, em 2012."
     },
     {
+      "id": "chute-comida-e-bebida-168",
       "difficulty": "medium",
       "text": "Qual é o recorde de peso de uma abóbora gigante, em kg?",
       "answer": 1247,
@@ -1178,6 +1346,7 @@
       "fact": "Ela foi cultivada na Itália, em 2021."
     },
     {
+      "id": "chute-comida-e-bebida-169",
       "difficulty": "medium",
       "text": "Qual é o recorde de peso de uma melancia, em kg?",
       "answer": 159,
@@ -1185,6 +1354,7 @@
       "fact": "Foi cultivada nos EUA."
     },
     {
+      "id": "chute-comida-e-bebida-170",
       "difficulty": "medium",
       "text": "Qual é o recorde de peso de um tomate, em kg?",
       "answer": 4.9,
@@ -1192,6 +1362,7 @@
       "fact": "O tomate é uma fruta, para a botânica."
     },
     {
+      "id": "chute-comida-e-bebida-171",
       "difficulty": "medium",
       "text": "Qual é o preço de um quilo de açafrão puro, em dólares, aproximadamente?",
       "answer": 10000,
@@ -1199,6 +1370,7 @@
       "fact": "Ele é a especiaria mais cara do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-172",
       "difficulty": "medium",
       "text": "Quantas flores são necessárias para 1 kg de açafrão, aproximadamente?",
       "answer": 150000,
@@ -1206,6 +1378,7 @@
       "fact": "A colheita é feita à mão."
     },
     {
+      "id": "chute-comida-e-bebida-173",
       "difficulty": "medium",
       "text": "Quantos kg de cacau são necessários para fazer 1 kg de chocolate amargo, aproximadamente?",
       "answer": 1.5,
@@ -1213,6 +1386,7 @@
       "fact": "Ele precisa ser fermentado e torrado."
     },
     {
+      "id": "chute-comida-e-bebida-174",
       "difficulty": "medium",
       "text": "Quantos kg de leite são necessários para fazer 1 kg de Parmigiano, aproximadamente?",
       "answer": 16,
@@ -1220,6 +1394,7 @@
       "fact": "Uma roda pesa cerca de 40 kg."
     },
     {
+      "id": "chute-comida-e-bebida-175",
       "difficulty": "medium",
       "text": "Quantos kg de batata são necessários para fazer 1 kg de batata chips, aproximadamente?",
       "answer": 4,
@@ -1227,6 +1402,7 @@
       "fact": "O sal e o óleo também pesam bastante."
     },
     {
+      "id": "chute-comida-e-bebida-176",
       "difficulty": "medium",
       "text": "Quantos litros de água são usados para produzir um kg de carne, aproximadamente?",
       "answer": 15000,
@@ -1234,6 +1410,7 @@
       "fact": "Esse número inclui a água da plantação de ração."
     },
     {
+      "id": "chute-comida-e-bebida-177",
       "difficulty": "medium",
       "text": "Quantos litros de água são usados para fazer uma xícara de café, aproximadamente?",
       "answer": 130,
@@ -1241,6 +1418,7 @@
       "fact": "Quase tudo é usado na plantação."
     },
     {
+      "id": "chute-comida-e-bebida-178",
       "difficulty": "medium",
       "text": "Qual a porcentagem do suco de laranja do mundo que vem do Brasil, aproximadamente?",
       "answer": 80,
@@ -1248,6 +1426,7 @@
       "fact": "São Paulo é o principal estado produtor."
     },
     {
+      "id": "chute-comida-e-bebida-179",
       "difficulty": "medium",
       "text": "Qual a porcentagem de álcool de uma cerveja comum, em média?",
       "answer": 5,
@@ -1255,6 +1434,7 @@
       "fact": "As cervejas sem álcool têm até 0,5%."
     },
     {
+      "id": "chute-comida-e-bebida-180",
       "difficulty": "medium",
       "text": "Qual a porcentagem de álcool de um vinho comum, em média?",
       "answer": 13,
@@ -1262,6 +1442,7 @@
       "fact": "Vinhos fortificados passam de 18%."
     },
     {
+      "id": "chute-comida-e-bebida-181",
       "difficulty": "medium",
       "text": "Qual a porcentagem de álcool de uma cachaça comum, em média?",
       "answer": 40,
@@ -1269,6 +1450,7 @@
       "fact": "A lei fixa o limite entre 38% e 48%."
     },
     {
+      "id": "chute-comida-e-bebida-182",
       "difficulty": "medium",
       "text": "Qual a porcentagem de álcool de uma vodca comum?",
       "answer": 40,
@@ -1276,6 +1458,7 @@
       "fact": "A polonesa Spirytus tem mais de 95%."
     },
     {
+      "id": "chute-comida-e-bebida-183",
       "difficulty": "medium",
       "text": "Qual a porcentagem de álcool da vodca polonesa Spirytus?",
       "answer": 96,
@@ -1283,6 +1466,7 @@
       "fact": "É a bebida mais forte vendida no mundo."
     },
     {
+      "id": "chute-comida-e-bebida-184",
       "difficulty": "medium",
       "text": "Qual a porcentagem de álcool do saquê, em média?",
       "answer": 15,
@@ -1290,6 +1474,7 @@
       "fact": "Tem o teor de um vinho encorpado."
     },
     {
+      "id": "chute-comida-e-bebida-185",
       "difficulty": "medium",
       "text": "Qual a porcentagem de cacau do chocolate amargo, no mínimo, em geral?",
       "answer": 70,
@@ -1297,6 +1482,7 @@
       "fact": "O chocolate branco não tem massa de cacau."
     },
     {
+      "id": "chute-comida-e-bebida-186",
       "difficulty": "medium",
       "text": "Qual a porcentagem de água em um pepino?",
       "answer": 96,
@@ -1304,6 +1490,7 @@
       "fact": "É um dos alimentos com mais água."
     },
     {
+      "id": "chute-comida-e-bebida-187",
       "difficulty": "medium",
       "text": "Qual a porcentagem de água em um tomate?",
       "answer": 94,
@@ -1311,6 +1498,7 @@
       "fact": "A cor vermelha vem do licopeno."
     },
     {
+      "id": "chute-comida-e-bebida-188",
       "difficulty": "medium",
       "text": "Qual a porcentagem de água na alface?",
       "answer": 95,
@@ -1318,6 +1506,7 @@
       "fact": "Ela tem pouquíssimas calorias."
     },
     {
+      "id": "chute-comida-e-bebida-189",
       "difficulty": "medium",
       "text": "Qual a porcentagem de gordura do leite integral, aproximadamente?",
       "answer": 3,
@@ -1325,6 +1514,7 @@
       "fact": "O desnatado tem menos de 0,5%."
     },
     {
+      "id": "chute-comida-e-bebida-190",
       "difficulty": "medium",
       "text": "Qual a porcentagem de gordura da manteiga, aproximadamente?",
       "answer": 80,
@@ -1332,6 +1522,7 @@
       "fact": "O restante é água e leite."
     },
     {
+      "id": "chute-comida-e-bebida-191",
       "difficulty": "medium",
       "text": "Quantos anos, em média, leva uma cerejeira para dar frutos?",
       "answer": 4,
@@ -1339,6 +1530,7 @@
       "fact": "O Japão celebra a florada, e não os frutos."
     },
     {
+      "id": "chute-comida-e-bebida-192",
       "difficulty": "hard",
       "text": "Quantas horas cozinha um barreado tradicional, aproximadamente?",
       "answer": 12,
@@ -1346,6 +1538,7 @@
       "fact": "A panela de barro fica vedada com massa de farinha."
     },
     {
+      "id": "chute-comida-e-bebida-193",
       "difficulty": "medium",
       "text": "Quantas horas fica assando uma costela de fogo de chão, aproximadamente?",
       "answer": 8,
@@ -1353,6 +1546,7 @@
       "fact": "O calor é baixo e a gordura derrete devagar."
     },
     {
+      "id": "chute-comida-e-bebida-194",
       "difficulty": "medium",
       "text": "Quantas horas leva uma feijoada completa, com as carnes dessalgadas, em horas de cozimento?",
       "answer": 4,
@@ -1360,6 +1554,7 @@
       "fact": "Muitas pessoas deixam as carnes de molho na véspera."
     },
     {
+      "id": "chute-comida-e-bebida-195",
       "difficulty": "hard",
       "text": "Quantos cortes tem um boi inteiro, aproximadamente, no Brasil?",
       "answer": 30,
@@ -1367,6 +1562,7 @@
       "fact": "A picanha é o mais famoso deles."
     },
     {
+      "id": "chute-comida-e-bebida-196",
       "difficulty": "medium",
       "text": "Quantos kg pesa uma peça de picanha, em média?",
       "answer": 1.2,
@@ -1374,6 +1570,7 @@
       "fact": "Em cada boi, há só duas peças."
     },
     {
+      "id": "chute-comida-e-bebida-197",
       "difficulty": "medium",
       "text": "Quantas peças de picanha tem um boi?",
       "answer": 2,
@@ -1381,6 +1578,7 @@
       "fact": "Por isso, ela costuma ser mais cara."
     },
     {
+      "id": "chute-comida-e-bebida-198",
       "difficulty": "medium",
       "text": "Quantos pedaços de frango tem um balde médio do KFC?",
       "answer": 8,
@@ -1388,6 +1586,7 @@
       "fact": "A rede é famosa pela receita secreta."
     },
     {
+      "id": "chute-comida-e-bebida-199",
       "difficulty": "medium",
       "text": "Quantas ervas e especiarias tem a receita do KFC?",
       "answer": 11,
@@ -1395,6 +1594,7 @@
       "fact": "O papel com a receita fica guardado em um cofre."
     },
     {
+      "id": "chute-comida-e-bebida-200",
       "difficulty": "medium",
       "text": "Quantos centavos custava o primeiro copo de Coca-Cola?",
       "answer": 5,
@@ -1402,6 +1602,7 @@
       "fact": "O preço ficou igual por mais de 70 anos."
     },
     {
+      "id": "chute-comida-e-bebida-201",
       "difficulty": "hard",
       "text": "Quantos anos a Coca-Cola manteve o preço de 5 centavos?",
       "answer": 70,
@@ -1409,6 +1610,7 @@
       "fact": "O preço só mudou no fim dos anos 1950."
     },
     {
+      "id": "chute-comida-e-bebida-202",
       "difficulty": "medium",
       "text": "Quantos países a Heineken alcança, aproximadamente?",
       "answer": 190,
@@ -1416,6 +1618,7 @@
       "fact": "A cervejaria é da Holanda."
     },
     {
+      "id": "chute-comida-e-bebida-203",
       "difficulty": "medium",
       "text": "Quantas uvas diferentes podem ser usadas no champanhe, principalmente?",
       "answer": 3,
@@ -1423,6 +1626,7 @@
       "fact": "São Chardonnay, Pinot Noir e Pinot Meunier."
     },
     {
+      "id": "chute-comida-e-bebida-204",
       "difficulty": "hard",
       "text": "Quantas bolhas tem uma garrafa de champanhe, em milhões, aproximadamente?",
       "answer": 49,
@@ -1430,6 +1634,7 @@
       "fact": "Um cientista fez essa conta em 2013."
     },
     {
+      "id": "chute-comida-e-bebida-205",
       "difficulty": "medium",
       "text": "Quantos anos, no mínimo, um Parmigiano precisa curar?",
       "answer": 1,
@@ -1437,6 +1642,7 @@
       "fact": "Muitos ficam dois ou três anos."
     },
     {
+      "id": "chute-comida-e-bebida-206",
       "difficulty": "medium",
       "text": "Quantos meses, no mínimo, um Grana Padano precisa curar?",
       "answer": 9,
@@ -1444,6 +1650,7 @@
       "fact": "Ele é um primo mais jovem do Parmigiano."
     },
     {
+      "id": "chute-comida-e-bebida-207",
       "difficulty": "hard",
       "text": "Quantos kg de uvas são necessários para 1 litro de vinho, aproximadamente?",
       "answer": 1.3,
@@ -1451,6 +1658,7 @@
       "fact": "Parte da fruta fica no fundo do tanque."
     },
     {
+      "id": "chute-comida-e-bebida-208",
       "difficulty": "hard",
       "text": "Quantos meses leva um barril de cachaça premium para envelhecer, no mínimo?",
       "answer": 12,
@@ -1458,6 +1666,7 @@
       "fact": "A lei define o tempo para o nome \"envelhecida\"."
     },
     {
+      "id": "chute-comida-e-bebida-209",
       "difficulty": "hard",
       "text": "Quantos anos, no mínimo, leva uma cachaça \"extra premium\" no barril?",
       "answer": 3,
@@ -1465,6 +1674,7 @@
       "fact": "Ela usa barris de carvalho e outras madeiras."
     },
     {
+      "id": "chute-comida-e-bebida-210",
       "difficulty": "medium",
       "text": "Em que ano foi inventado o forno de micro-ondas?",
       "answer": 1945,
@@ -1472,6 +1682,7 @@
       "fact": "Um engenheiro percebeu um chocolate derretido no bolso."
     },
     {
+      "id": "chute-comida-e-bebida-211",
       "difficulty": "medium",
       "text": "Em que ano foi inventada a pasteurização?",
       "answer": 1864,
@@ -1479,6 +1690,7 @@
       "fact": "Louis Pasteur a criou para o vinho."
     },
     {
+      "id": "chute-comida-e-bebida-212",
       "difficulty": "medium",
       "text": "Em que ano foi inventada a comida enlatada, para Napoleão?",
       "answer": 1810,
@@ -1486,6 +1698,7 @@
       "fact": "Primeiro, ela usava garrafas de vidro."
     },
     {
+      "id": "chute-comida-e-bebida-213",
       "difficulty": "medium",
       "text": "Em que ano foi inventado o abridor de latas?",
       "answer": 1858,
@@ -1493,6 +1706,7 @@
       "fact": "As latas existiam décadas antes do abridor."
     },
     {
+      "id": "chute-comida-e-bebida-214",
       "difficulty": "medium",
       "text": "Em que ano foi inventada a geladeira doméstica, nos EUA?",
       "answer": 1913,
@@ -1500,6 +1714,7 @@
       "fact": "Ela custava mais que um carro."
     },
     {
+      "id": "chute-comida-e-bebida-215",
       "difficulty": "medium",
       "text": "Em que ano foi inventada a panela de teflon?",
       "answer": 1954,
@@ -1507,6 +1722,7 @@
       "fact": "A mulher de um engenheiro francês deu a ideia."
     },
     {
+      "id": "chute-comida-e-bebida-216",
       "difficulty": "medium",
       "text": "Em que ano foi inventado o pão fatiado?",
       "answer": 1928,
@@ -1514,6 +1730,7 @@
       "fact": "A invenção foi proibida por um tempo na guerra."
     },
     {
+      "id": "chute-comida-e-bebida-217",
       "difficulty": "medium",
       "text": "Em que ano foi inventada a batata chips, segundo a lenda?",
       "answer": 1853,
@@ -1521,6 +1738,7 @@
       "fact": "Um cliente reclamou de uma batata grossa."
     },
     {
+      "id": "chute-comida-e-bebida-218",
       "difficulty": "medium",
       "text": "Em que ano foi inventado o ketchup moderno, da Heinz?",
       "answer": 1876,
@@ -1528,6 +1746,7 @@
       "fact": "Antes, ele era um molho de peixe asiático."
     },
     {
+      "id": "chute-comida-e-bebida-219",
       "difficulty": "medium",
       "text": "Em que ano foi inventado o sanduíche, segundo a lenda?",
       "answer": 1762,
@@ -1535,6 +1754,7 @@
       "fact": "O Conde de Sandwich não queria parar um jogo."
     },
     {
+      "id": "chute-comida-e-bebida-220",
       "difficulty": "medium",
       "text": "Em que ano a batata chegou à Europa, aproximadamente?",
       "answer": 1570,
@@ -1542,6 +1762,7 @@
       "fact": "Os espanhóis a trouxeram da América."
     },
     {
+      "id": "chute-comida-e-bebida-221",
       "difficulty": "medium",
       "text": "Em que ano o tomate chegou à Itália, aproximadamente?",
       "answer": 1548,
@@ -1549,6 +1770,7 @@
       "fact": "Primeiro, muitos acharam que era venenoso."
     },
     {
+      "id": "chute-comida-e-bebida-222",
       "difficulty": "medium",
       "text": "Em que ano o chocolate chegou à Espanha, aproximadamente?",
       "answer": 1528,
@@ -1556,6 +1778,7 @@
       "fact": "Hernán Cortés o levou para a corte."
     },
     {
+      "id": "chute-comida-e-bebida-223",
       "difficulty": "medium",
       "text": "Em que ano surgiu a primeira barra de chocolate?",
       "answer": 1847,
@@ -1563,6 +1786,7 @@
       "fact": "A J.S. Fry & Sons foi a pioneira."
     },
     {
+      "id": "chute-comida-e-bebida-224",
       "difficulty": "medium",
       "text": "Em que ano o chocolate com leite foi criado?",
       "answer": 1875,
@@ -1570,6 +1794,7 @@
       "fact": "Daniel Peter usou o leite em pó de Henri Nestlé."
     },
     {
+      "id": "chute-comida-e-bebida-225",
       "difficulty": "medium",
       "text": "Em que ano foi criado o chocolate branco comercial?",
       "answer": 1936,
@@ -1577,6 +1802,7 @@
       "fact": "A Nestlé o lançou na Suíça."
     },
     {
+      "id": "chute-comida-e-bebida-226",
       "difficulty": "medium",
       "text": "Em que ano foi criado o chocolate rosa Ruby?",
       "answer": 2017,
@@ -1584,6 +1810,7 @@
       "fact": "Ele é feito de um cacau especial."
     },
     {
+      "id": "chute-comida-e-bebida-227",
       "difficulty": "medium",
       "text": "Em que ano abriu a primeira cafeteria da Europa, em Veneza?",
       "answer": 1645,
@@ -1591,6 +1818,7 @@
       "fact": "A bebida era chamada de \"vinho árabe\"."
     },
     {
+      "id": "chute-comida-e-bebida-228",
       "difficulty": "medium",
       "text": "Em que ano abriu o Procope, o café mais antigo de Paris?",
       "answer": 1686,
@@ -1598,6 +1826,7 @@
       "fact": "Voltaire era um dos clientes."
     },
     {
+      "id": "chute-comida-e-bebida-229",
       "difficulty": "medium",
       "text": "Em que ano abriu o Café Tortoni, de Buenos Aires?",
       "answer": 1858,
@@ -1605,6 +1834,7 @@
       "fact": "Jorge Luis Borges frequentava o local."
     },
     {
+      "id": "chute-comida-e-bebida-230",
       "difficulty": "medium",
       "text": "Em que ano abriu a Confeitaria Colombo, no Rio de Janeiro?",
       "answer": 1894,
@@ -1612,6 +1842,7 @@
       "fact": "É uma das cafeterias mais bonitas do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-231",
       "difficulty": "medium",
       "text": "Em que ano abriu o Bar Luiz, no Rio de Janeiro?",
       "answer": 1887,
@@ -1619,6 +1850,7 @@
       "fact": "O bar é um dos mais antigos da cidade."
     },
     {
+      "id": "chute-comida-e-bebida-232",
       "difficulty": "medium",
       "text": "Em que ano abriu o Mercado Municipal de Belo Horizonte?",
       "answer": 1929,
@@ -1626,6 +1858,7 @@
       "fact": "Lá se vende muito queijo e cachaça."
     },
     {
+      "id": "chute-comida-e-bebida-233",
       "difficulty": "medium",
       "text": "Em que ano foi criado o sanduíche Bauru, em São Paulo, no Ponto Chic?",
       "answer": 1934,
@@ -1633,6 +1866,7 @@
       "fact": "O sanduíche leva rosbife, queijo, tomate e pepino."
     },
     {
+      "id": "chute-comida-e-bebida-234",
       "difficulty": "medium",
       "text": "Em que ano foi criado o restaurante Noma?",
       "answer": 2003,
@@ -1640,6 +1874,7 @@
       "fact": "Ele fica em Copenhague."
     },
     {
+      "id": "chute-comida-e-bebida-235",
       "difficulty": "medium",
       "text": "Em que ano o elBulli fechou?",
       "answer": 2011,
@@ -1647,6 +1882,7 @@
       "fact": "Ferran Adrià o transformou em uma fundação."
     },
     {
+      "id": "chute-comida-e-bebida-236",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Bauducco no Brasil?",
       "answer": 1948,
@@ -1654,6 +1890,7 @@
       "fact": "Ela começou fazendo panetones em São Paulo."
     },
     {
+      "id": "chute-comida-e-bebida-237",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Sadia?",
       "answer": 1944,
@@ -1661,6 +1898,7 @@
       "fact": "O nome veio de \"S.A.\" e das letras finais de Concórdia."
     },
     {
+      "id": "chute-comida-e-bebida-238",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Toddynho?",
       "answer": 1982,
@@ -1668,6 +1906,7 @@
       "fact": "Ele foi o primeiro achocolatado pronto do Brasil."
     },
     {
+      "id": "chute-comida-e-bebida-239",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Yakult?",
       "answer": 1935,
@@ -1675,6 +1914,7 @@
       "fact": "O cientista japonês se chamava Minoru Shirota."
     },
     {
+      "id": "chute-comida-e-bebida-240",
       "difficulty": "medium",
       "text": "Em que ano foi fundada a cervejaria Weihenstephan, a mais antiga do mundo?",
       "answer": 1040,
@@ -1682,6 +1922,7 @@
       "fact": "Era parte de um mosteiro."
     },
     {
+      "id": "chute-comida-e-bebida-241",
       "difficulty": "medium",
       "text": "Em que ano a Bohemia, de Petrópolis, começou a produzir?",
       "answer": 1853,
@@ -1689,6 +1930,7 @@
       "fact": "É a cerveja mais antiga do Brasil."
     },
     {
+      "id": "chute-comida-e-bebida-242",
       "difficulty": "medium",
       "text": "Em que ano o primeiro iogurte industrial foi produzido, pela Danone?",
       "answer": 1919,
@@ -1696,6 +1938,7 @@
       "fact": "O nome da empresa vem do filho do fundador."
     },
     {
+      "id": "chute-comida-e-bebida-243",
       "difficulty": "medium",
       "text": "Em que ano foi fundado o restaurante Botín, o mais antigo do mundo?",
       "answer": 1725,
@@ -1703,6 +1946,7 @@
       "fact": "Fica em Madri, e o forno nunca se apagou."
     },
     {
+      "id": "chute-comida-e-bebida-244",
       "difficulty": "hard",
       "text": "Há quantos anos o vinho é produzido, segundo vestígios na Geórgia, aproximadamente?",
       "answer": 8000,
@@ -1710,6 +1954,7 @@
       "fact": "Os vestígios foram achados em jarros de barro."
     },
     {
+      "id": "chute-comida-e-bebida-245",
       "difficulty": "hard",
       "text": "Há quantos anos o pão é feito, segundo vestígios na Jordânia, aproximadamente?",
       "answer": 14000,
@@ -1717,6 +1962,7 @@
       "fact": "A descoberta foi publicada em 2018."
     },
     {
+      "id": "chute-comida-e-bebida-246",
       "difficulty": "hard",
       "text": "Há quantos anos a cerveja é produzida, aproximadamente?",
       "answer": 13000,
@@ -1724,6 +1970,7 @@
       "fact": "Os vestígios foram achados em uma caverna em Israel."
     },
     {
+      "id": "chute-comida-e-bebida-247",
       "difficulty": "hard",
       "text": "Há quantos anos o queijo é feito, aproximadamente?",
       "answer": 7500,
@@ -1731,6 +1978,7 @@
       "fact": "Os vestígios foram achados na Polônia."
     },
     {
+      "id": "chute-comida-e-bebida-248",
       "difficulty": "hard",
       "text": "Há quantos anos o chocolate é consumido, aproximadamente?",
       "answer": 5300,
@@ -1738,6 +1986,7 @@
       "fact": "A bebida já era usada no Equador."
     },
     {
+      "id": "chute-comida-e-bebida-249",
       "difficulty": "hard",
       "text": "Há quantos anos o arroz é cultivado, aproximadamente?",
       "answer": 9000,
@@ -1745,6 +1994,7 @@
       "fact": "Ele surgiu na China, no vale do rio Yangtzé."
     },
     {
+      "id": "chute-comida-e-bebida-250",
       "difficulty": "hard",
       "text": "Há quantos anos o macarrão é feito, na China, segundo uma tigela encontrada?",
       "answer": 4000,
@@ -1752,6 +2002,7 @@
       "fact": "A massa foi encontrada debaixo da terra."
     },
     {
+      "id": "chute-comida-e-bebida-251",
       "difficulty": "hard",
       "text": "Há quantos anos o mel é coletado pelos humanos, segundo pinturas na Espanha?",
       "answer": 8000,
@@ -1759,6 +2010,7 @@
       "fact": "A Caverna da Aranha tem pinturas de coleta."
     },
     {
+      "id": "chute-comida-e-bebida-252",
       "difficulty": "hard",
       "text": "Há quantos anos o milho foi domesticado, no México?",
       "answer": 9000,
@@ -1766,6 +2018,7 @@
       "fact": "Ele veio de uma planta chamada teosinto."
     },
     {
+      "id": "chute-comida-e-bebida-253",
       "difficulty": "hard",
       "text": "Há quantos anos a mandioca é cultivada na Amazônia, aproximadamente?",
       "answer": 9000,
@@ -1773,6 +2026,7 @@
       "fact": "Ela foi domesticada em Rondônia."
     },
     {
+      "id": "chute-comida-e-bebida-254",
       "difficulty": "hard",
       "text": "Há quantos anos a batata é cultivada, nos Andes, aproximadamente?",
       "answer": 8000,
@@ -1780,6 +2034,7 @@
       "fact": "Os incas a congelavam na neve, para conservar."
     },
     {
+      "id": "chute-comida-e-bebida-255",
       "difficulty": "hard",
       "text": "Quantos tipos de batatas os Andes têm, aproximadamente?",
       "answer": 4000,
@@ -1787,6 +2042,7 @@
       "fact": "O Peru tem até um Dia Nacional da Batata."
     },
     {
+      "id": "chute-comida-e-bebida-256",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram em Boston na Inundação de Melaço, em 1919?",
       "answer": 21,
@@ -1794,6 +2050,7 @@
       "fact": "Um tanque se rompeu e matou gente e cavalos."
     },
     {
+      "id": "chute-comida-e-bebida-257",
       "difficulty": "hard",
       "text": "Quantos litros de melaço vazaram na Inundação de Boston, em 1919, em milhões?",
       "answer": 8.7,
@@ -1801,6 +2058,7 @@
       "fact": "A onda alcançou cerca de 50 km/h."
     },
     {
+      "id": "chute-comida-e-bebida-258",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Inundação de Melaço, em Boston?",
       "answer": 1919,
@@ -1808,6 +2066,7 @@
       "fact": "A cidade ficou com cheiro doce por décadas."
     },
     {
+      "id": "chute-comida-e-bebida-259",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Festa do Chá de Boston?",
       "answer": 1773,
@@ -1815,6 +2074,7 @@
       "fact": "Foram jogados ao mar 342 caixotes de chá."
     },
     {
+      "id": "chute-comida-e-bebida-260",
       "difficulty": "hard",
       "text": "Quantos caixotes de chá foram jogados ao mar em Boston, em 1773?",
       "answer": 342,
@@ -1822,6 +2082,7 @@
       "fact": "Os colonos protestavam contra os impostos britânicos."
     },
     {
+      "id": "chute-comida-e-bebida-261",
       "difficulty": "hard",
       "text": "Quantas xícaras de chá o Reino Unido bebe por dia, em milhões?",
       "answer": 100,
@@ -1829,6 +2090,7 @@
       "fact": "O país é um dos maiores consumidores do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-262",
       "difficulty": "hard",
       "text": "Quantos dias Mahatma Gandhi andou na Marcha do Sal?",
       "answer": 24,
@@ -1836,6 +2098,7 @@
       "fact": "Ele protestava contra um imposto britânico."
     },
     {
+      "id": "chute-comida-e-bebida-263",
       "difficulty": "hard",
       "text": "Quantos km Gandhi andou na Marcha do Sal?",
       "answer": 390,
@@ -1843,6 +2106,7 @@
       "fact": "Ele colheu sal do mar no fim do caminho."
     },
     {
+      "id": "chute-comida-e-bebida-264",
       "difficulty": "hard",
       "text": "Quantas calorias um competidor de sumô come por dia, aproximadamente?",
       "answer": 20000,
@@ -1850,6 +2114,7 @@
       "fact": "Eles treinam antes do café da manhã."
     },
     {
+      "id": "chute-comida-e-bebida-265",
       "difficulty": "hard",
       "text": "Quantas calorias Michael Phelps dizia comer por dia, em Pequim?",
       "answer": 12000,
@@ -1857,6 +2122,7 @@
       "fact": "Ele depois disse que o número era exagerado."
     },
     {
+      "id": "chute-comida-e-bebida-266",
       "difficulty": "hard",
       "text": "Quanto custou o hambúrguer mais caro do mundo, em dólares, em 2021?",
       "answer": 6000,
@@ -1864,6 +2130,7 @@
       "fact": "Foi feito na Holanda, com wagyu e trufas."
     },
     {
+      "id": "chute-comida-e-bebida-267",
       "difficulty": "hard",
       "text": "Quanto custou a pizza mais cara do mundo, em dólares, em 2017?",
       "answer": 2700,
@@ -1871,6 +2138,7 @@
       "fact": "Ela levava caviar e ouro."
     },
     {
+      "id": "chute-comida-e-bebida-268",
       "difficulty": "hard",
       "text": "Por quanto foi vendido o maior atum no Japão, em 2019, em dólares?",
       "answer": 3100000,
@@ -1878,6 +2146,7 @@
       "fact": "Ele pesava 278 kg."
     },
     {
+      "id": "chute-comida-e-bebida-269",
       "difficulty": "hard",
       "text": "Quantos kg pesava o atum vendido por 3,1 milhões de dólares, em 2019?",
       "answer": 278,
@@ -1885,6 +2154,7 @@
       "fact": "O comprador é conhecido como \"Rei do Atum\"."
     },
     {
+      "id": "chute-comida-e-bebida-270",
       "difficulty": "hard",
       "text": "Por quanto foi vendido o melão Yubari King mais caro, em dólares, em 2019?",
       "answer": 45000,
@@ -1892,6 +2162,7 @@
       "fact": "Foi vendido em um par, no Japão."
     },
     {
+      "id": "chute-comida-e-bebida-271",
       "difficulty": "hard",
       "text": "Por quanto foi vendida uma garrafa de uísque Dalmore 62 anos, em libras?",
       "answer": 125000,
@@ -1899,6 +2170,7 @@
       "fact": "Um hotel de Singapura a comprou em 2011."
     },
     {
+      "id": "chute-comida-e-bebida-272",
       "difficulty": "hard",
       "text": "Por quanto foi vendido um Château Lafite 1787 de Thomas Jefferson, em dólares?",
       "answer": 156000,
@@ -1906,6 +2178,7 @@
       "fact": "Muitos acham que ele era falsificado."
     },
     {
+      "id": "chute-comida-e-bebida-273",
       "difficulty": "hard",
       "text": "A que profundidade ficaram garrafas de champanhe de um naufrágio em 1916, no Mar Báltico, em metros?",
       "answer": 64,
@@ -1913,6 +2186,7 @@
       "fact": "Elas foram encontradas em 1997."
     },
     {
+      "id": "chute-comida-e-bebida-274",
       "difficulty": "hard",
       "text": "Qual o número de grãos de milho de uma espiga média, aproximadamente?",
       "answer": 800,
@@ -1920,6 +2194,7 @@
       "fact": "Ela tem sempre um número par de fileiras."
     },
     {
+      "id": "chute-comida-e-bebida-275",
       "difficulty": "hard",
       "text": "Quantas fileiras costuma ter uma espiga de milho?",
       "answer": 16,
@@ -1927,6 +2202,7 @@
       "fact": "O número sempre é par."
     },
     {
+      "id": "chute-comida-e-bebida-276",
       "difficulty": "hard",
       "text": "Quantos grãos de café tem um fruto, em geral?",
       "answer": 2,
@@ -1934,6 +2210,7 @@
       "fact": "Às vezes, há um só, chamado moca."
     },
     {
+      "id": "chute-comida-e-bebida-277",
       "difficulty": "hard",
       "text": "Quantos grãos de café cabem em uma dose de expresso, aproximadamente?",
       "answer": 50,
@@ -1941,6 +2218,7 @@
       "fact": "A moagem é muito importante."
     },
     {
+      "id": "chute-comida-e-bebida-278",
       "difficulty": "hard",
       "text": "Qual a pressão de uma panela de pressão doméstica, em atmosferas?",
       "answer": 2,
@@ -1948,6 +2226,7 @@
       "fact": "A água ferve a cerca de 120 °C."
     },
     {
+      "id": "chute-comida-e-bebida-279",
       "difficulty": "hard",
       "text": "Qual a temperatura da água na panela de pressão, em °C?",
       "answer": 120,
@@ -1955,6 +2234,7 @@
       "fact": "Por isso, o feijão cozinha bem mais rápido."
     },
     {
+      "id": "chute-comida-e-bebida-280",
       "difficulty": "hard",
       "text": "Qual a temperatura de um forno a lenha de pizza napolitana, em °C?",
       "answer": 485,
@@ -1962,6 +2242,7 @@
       "fact": "A pizza fica pronta em cerca de 90 segundos."
     },
     {
+      "id": "chute-comida-e-bebida-281",
       "difficulty": "hard",
       "text": "Quantos segundos uma pizza napolitana leva para assar?",
       "answer": 90,
@@ -1969,6 +2250,7 @@
       "fact": "Essa é uma das regras da associação oficial."
     },
     {
+      "id": "chute-comida-e-bebida-282",
       "difficulty": "hard",
       "text": "Quantos mm de espessura deve ter a massa de pizza napolitana no centro?",
       "answer": 2.5,
@@ -1976,6 +2258,7 @@
       "fact": "Essa é uma das regras da associação oficial."
     },
     {
+      "id": "chute-comida-e-bebida-283",
       "difficulty": "hard",
       "text": "Quantos cm de diâmetro deve ter a pizza napolitana?",
       "answer": 35,
@@ -1983,6 +2266,7 @@
       "fact": "A borda pode ter até 2 cm."
     },
     {
+      "id": "chute-comida-e-bebida-284",
       "difficulty": "hard",
       "text": "A que temperatura se conserva um atum de sushi de alta qualidade, em °C?",
       "answer": -60,
@@ -1990,6 +2274,7 @@
       "fact": "Por isso, os frigoríficos japoneses são tão frios."
     },
     {
+      "id": "chute-comida-e-bebida-285",
       "difficulty": "hard",
       "text": "Qual é a temperatura do sorvete feito com nitrogênio líquido, na hora, em °C?",
       "answer": -196,
@@ -1997,6 +2282,7 @@
       "fact": "Ele cristaliza rápido e fica muito cremoso."
     },
     {
+      "id": "chute-comida-e-bebida-286",
       "difficulty": "hard",
       "text": "Qual a menor temperatura para fazer vinho do gelo, em °C?",
       "answer": -8,
@@ -2004,6 +2290,7 @@
       "fact": "A colheita é feita de madrugada."
     },
     {
+      "id": "chute-comida-e-bebida-287",
       "difficulty": "hard",
       "text": "Qual a altitude em que cresce a quinoa, em metros, nos Andes, em média?",
       "answer": 3800,
@@ -2011,6 +2298,7 @@
       "fact": "Ela tem uma grande resistência ao frio."
     },
     {
+      "id": "chute-comida-e-bebida-288",
       "difficulty": "hard",
       "text": "Qual a altitude da vinícola mais alta do mundo, na Argentina, em metros?",
       "answer": 3111,
@@ -2018,6 +2306,7 @@
       "fact": "Fica em Salta, no noroeste do país."
     },
     {
+      "id": "chute-comida-e-bebida-289",
       "difficulty": "medium",
       "text": "Quantos dentes de alho costuma ter uma cabeça, em média?",
       "answer": 12,
@@ -2025,6 +2314,7 @@
       "fact": "Em algumas variedades, são bem menos."
     },
     {
+      "id": "chute-comida-e-bebida-290",
       "difficulty": "medium",
       "text": "Quantas estrelas tem o Guia Michelin no Rio e em São Paulo juntos, no restaurante mais premiado do Brasil, até 2024?",
       "answer": 2,
@@ -2032,6 +2322,7 @@
       "fact": "Até 2024, nenhum restaurante brasileiro tinha três estrelas."
     },
     {
+      "id": "chute-comida-e-bebida-291",
       "difficulty": "medium",
       "text": "Quantos restaurantes têm três estrelas Michelin na França, aproximadamente, em 2024?",
       "answer": 30,
@@ -2039,6 +2330,7 @@
       "fact": "A França tem a maior tradição nesse guia."
     },
     {
+      "id": "chute-comida-e-bebida-292",
       "difficulty": "medium",
       "text": "Quantos restaurantes têm três estrelas Michelin em Tóquio, aproximadamente?",
       "answer": 12,
@@ -2046,6 +2338,7 @@
       "fact": "É a cidade com mais estrelas do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-293",
       "difficulty": "medium",
       "text": "Quantas estrelas Michelin Tóquio tem ao todo, aproximadamente, em 2024?",
       "answer": 200,
@@ -2053,6 +2346,7 @@
       "fact": "Ela supera Paris há muitos anos."
     },
     {
+      "id": "chute-comida-e-bebida-294",
       "difficulty": "medium",
       "text": "Quantos anos o Paul Bocuse manteve as três estrelas?",
       "answer": 53,
@@ -2060,6 +2354,7 @@
       "fact": "Foi um recorde no guia."
     },
     {
+      "id": "chute-comida-e-bebida-295",
       "difficulty": "medium",
       "text": "Em que ano Paul Bocuse morreu?",
       "answer": 2018,
@@ -2067,6 +2362,7 @@
       "fact": "Ele tinha 91 anos."
     },
     {
+      "id": "chute-comida-e-bebida-296",
       "difficulty": "medium",
       "text": "Em que ano Anthony Bourdain morreu?",
       "answer": 2018,
@@ -2074,6 +2370,7 @@
       "fact": "Ele apresentava programas de viagem e comida."
     },
     {
+      "id": "chute-comida-e-bebida-297",
       "difficulty": "medium",
       "text": "Em que ano Julia Child lançou seu famoso livro de cozinha francesa?",
       "answer": 1961,
@@ -2081,6 +2378,7 @@
       "fact": "Ela foi chamada de \"a mulher que ensinou os EUA a cozinhar\"."
     },
     {
+      "id": "chute-comida-e-bebida-298",
       "difficulty": "medium",
       "text": "Em que ano Auguste Escoffier publicou seu \"Guia Culinário\"?",
       "answer": 1903,
@@ -2088,6 +2386,7 @@
       "fact": "Ele criou a organização moderna das cozinhas."
     },
     {
+      "id": "chute-comida-e-bebida-299",
       "difficulty": "medium",
       "text": "Em que ano o Guia Michelin deu as primeiras estrelas?",
       "answer": 1926,
@@ -2095,6 +2394,7 @@
       "fact": "No começo, o guia era para motoristas."
     },
     {
+      "id": "chute-comida-e-bebida-300",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro Guia Michelin?",
       "answer": 1900,
@@ -2102,6 +2402,7 @@
       "fact": "Era distribuído de graça para quem tinha carro."
     },
     {
+      "id": "chute-comida-e-bebida-301",
       "difficulty": "medium",
       "text": "Em que ano estreou \"MasterChef Brasil\"?",
       "answer": 2014,
@@ -2109,6 +2410,7 @@
       "fact": "Ana Paula Padrão é a apresentadora."
     },
     {
+      "id": "chute-comida-e-bebida-302",
       "difficulty": "medium",
       "text": "Em que ano estreou o programa \"Hell's Kitchen\", com Gordon Ramsay?",
       "answer": 2005,
@@ -2116,6 +2418,7 @@
       "fact": "Ele é famoso pelos gritos."
     },
     {
+      "id": "chute-comida-e-bebida-303",
       "difficulty": "medium",
       "text": "Quantas estrelas Michelin Gordon Ramsay já acumulou?",
       "answer": 17,
@@ -2123,6 +2426,7 @@
       "fact": "Ele jogou futebol antes de ser chef."
     },
     {
+      "id": "chute-comida-e-bebida-304",
       "difficulty": "hard",
       "text": "Quantas calorias tem um pedaço grande de bolo de chocolate, aproximadamente?",
       "answer": 400,
@@ -2130,6 +2434,7 @@
       "fact": "A cobertura traz boa parte das calorias."
     },
     {
+      "id": "chute-comida-e-bebida-305",
       "difficulty": "hard",
       "text": "Quantas calorias tem um pastel de carne frito, aproximadamente?",
       "answer": 280,
@@ -2137,6 +2442,7 @@
       "fact": "É um clássico das feiras brasileiras."
     },
     {
+      "id": "chute-comida-e-bebida-306",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de picanha, aproximadamente?",
       "answer": 250,
@@ -2144,6 +2450,7 @@
       "fact": "A gordura é o que dá sabor a ela."
     },
     {
+      "id": "chute-comida-e-bebida-307",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de açaí com xarope, aproximadamente?",
       "answer": 250,
@@ -2151,6 +2458,7 @@
       "fact": "Na Amazônia, ele é comido sem açúcar."
     },
     {
+      "id": "chute-comida-e-bebida-308",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de arroz branco cozido, aproximadamente?",
       "answer": 130,
@@ -2158,6 +2466,7 @@
       "fact": "É a base de muitas refeições no mundo."
     },
     {
+      "id": "chute-comida-e-bebida-309",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de feijão cozido, aproximadamente?",
       "answer": 77,
@@ -2165,6 +2474,7 @@
       "fact": "Ele é rico em ferro e proteína."
     },
     {
+      "id": "chute-comida-e-bebida-310",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de batata frita, aproximadamente?",
       "answer": 310,
@@ -2172,6 +2482,7 @@
       "fact": "A batata cozida tem cerca de um quarto disso."
     },
     {
+      "id": "chute-comida-e-bebida-311",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de salmão, aproximadamente?",
       "answer": 208,
@@ -2179,6 +2490,7 @@
       "fact": "A gordura dele é boa para o coração."
     },
     {
+      "id": "chute-comida-e-bebida-312",
       "difficulty": "hard",
       "text": "Quantas calorias tem uma porção de 100 g de peito de frango grelhado, aproximadamente?",
       "answer": 165,
@@ -2186,6 +2498,7 @@
       "fact": "Ele é muito rico em proteína."
     },
     {
+      "id": "chute-comida-e-bebida-313",
       "difficulty": "hard",
       "text": "Quantos gramas de proteína tem 100 g de peito de frango grelhado, aproximadamente?",
       "answer": 31,
@@ -2193,6 +2506,7 @@
       "fact": "Por isso, ele é o favorito de quem vai à academia."
     },
     {
+      "id": "chute-comida-e-bebida-314",
       "difficulty": "hard",
       "text": "Quantos miligramas de cafeína tem uma lata de Red Bull?",
       "answer": 80,
@@ -2200,6 +2514,7 @@
       "fact": "Ela tem cerca de 250 ml."
     },
     {
+      "id": "chute-comida-e-bebida-315",
       "difficulty": "hard",
       "text": "Quantos miligramas de cafeína tem uma lata de Coca-Cola, de 350 ml?",
       "answer": 34,
@@ -2207,6 +2522,7 @@
       "fact": "Uma xícara de café tem bem mais."
     },
     {
+      "id": "chute-comida-e-bebida-316",
       "difficulty": "hard",
       "text": "Quantos miligramas de cafeína tem uma xícara de café coado, aproximadamente?",
       "answer": 95,
@@ -2214,6 +2530,7 @@
       "fact": "Depende muito do grão e da moagem."
     },
     {
+      "id": "chute-comida-e-bebida-317",
       "difficulty": "hard",
       "text": "Quantos miligramas de cafeína são considerados seguros por dia para um adulto?",
       "answer": 400,
@@ -2221,6 +2538,7 @@
       "fact": "Isso dá cerca de quatro xícaras."
     },
     {
+      "id": "chute-comida-e-bebida-318",
       "difficulty": "hard",
       "text": "Quantos miligramas de sódio tem um pacote de miojo com tempero, aproximadamente?",
       "answer": 1800,
@@ -2228,6 +2546,7 @@
       "fact": "É quase toda a recomendação diária."
     },
     {
+      "id": "chute-comida-e-bebida-319",
       "difficulty": "hard",
       "text": "Quantos gramas de sal a OMS recomenda por dia, no máximo?",
       "answer": 5,
@@ -2235,6 +2554,7 @@
       "fact": "Os brasileiros costumam comer o dobro."
     },
     {
+      "id": "chute-comida-e-bebida-320",
       "difficulty": "hard",
       "text": "Quantos gramas de açúcar livre a OMS recomenda por dia, no máximo?",
       "answer": 50,
@@ -2242,6 +2562,7 @@
       "fact": "Uma lata de refrigerante já tem quase tudo isso."
     },
     {
+      "id": "chute-comida-e-bebida-321",
       "difficulty": "hard",
       "text": "Qual a porcentagem de sal na água do mar, aproximadamente?",
       "answer": 3.5,
@@ -2249,6 +2570,7 @@
       "fact": "A flor de sal é colhida da superfície da salina."
     },
     {
+      "id": "chute-comida-e-bebida-322",
       "difficulty": "hard",
       "text": "Qual a porcentagem de açúcar no mel, aproximadamente?",
       "answer": 82,
@@ -2256,6 +2578,7 @@
       "fact": "Por isso, ele não estraga com facilidade."
     },
     {
+      "id": "chute-comida-e-bebida-323",
       "difficulty": "hard",
       "text": "Qual a porcentagem de cafeína no grão de arábica, aproximadamente?",
       "answer": 1.2,
@@ -2263,6 +2586,7 @@
       "fact": "O robusta tem cerca de duas vezes mais."
     },
     {
+      "id": "chute-comida-e-bebida-324",
       "difficulty": "hard",
       "text": "Qual a porcentagem de café arábica na produção mundial, aproximadamente?",
       "answer": 60,
@@ -2270,6 +2594,7 @@
       "fact": "O robusta é mais forte e mais barato."
     },
     {
+      "id": "chute-comida-e-bebida-325",
       "difficulty": "hard",
       "text": "Qual a porcentagem das calorias de uma cerveja que vem do álcool, aproximadamente?",
       "answer": 60,
@@ -2277,6 +2602,7 @@
       "fact": "O restante vem dos carboidratos."
     },
     {
+      "id": "chute-comida-e-bebida-326",
       "difficulty": "hard",
       "text": "Quantos metros tem a maior adega do mundo, na Moldávia, em km?",
       "answer": 200,
@@ -2284,6 +2610,7 @@
       "fact": "A adega Mileștii Mici guarda quase 2 milhões de garrafas."
     },
     {
+      "id": "chute-comida-e-bebida-327",
       "difficulty": "hard",
       "text": "Quantas garrafas de vinho tem a adega Mileștii Mici, em milhões?",
       "answer": 2,
@@ -2291,6 +2618,7 @@
       "fact": "Ela fica na Moldávia e está no Guinness."
     },
     {
+      "id": "chute-comida-e-bebida-328",
       "difficulty": "hard",
       "text": "Quantos barris de uísque há em Kentucky, em milhões, aproximadamente?",
       "answer": 14,
@@ -2298,6 +2626,7 @@
       "fact": "É bem mais do que a população do estado."
     },
     {
+      "id": "chute-comida-e-bebida-329",
       "difficulty": "hard",
       "text": "Quantos barris de cerveja tem a Oktoberfest por ano, em litros, em milhões?",
       "answer": 7.5,
@@ -2305,6 +2634,7 @@
       "fact": "Cerca de 6 milhões de pessoas vão ao evento."
     },
     {
+      "id": "chute-comida-e-bebida-330",
       "difficulty": "hard",
       "text": "Quantas pessoas vão à Oktoberfest de Munique por ano, em milhões?",
       "answer": 6,
@@ -2312,6 +2642,7 @@
       "fact": "O evento dura cerca de duas semanas."
     },
     {
+      "id": "chute-comida-e-bebida-331",
       "difficulty": "hard",
       "text": "Quantas pessoas vão à Oktoberfest de Blumenau por ano, aproximadamente?",
       "answer": 600000,
@@ -2319,6 +2650,7 @@
       "fact": "A primeira edição foi em 1984, depois de uma enchente."
     },
     {
+      "id": "chute-comida-e-bebida-332",
       "difficulty": "hard",
       "text": "Em que ano foi a primeira Oktoberfest de Blumenau?",
       "answer": 1984,
@@ -2326,6 +2658,7 @@
       "fact": "Foi uma forma de recuperar a cidade depois da enchente."
     },
     {
+      "id": "chute-comida-e-bebida-333",
       "difficulty": "hard",
       "text": "Em que ano foi a primeira Festa da Uva de Caxias do Sul?",
       "answer": 1931,
@@ -2333,6 +2666,7 @@
       "fact": "Ela acontece a cada dois anos."
     },
     {
+      "id": "chute-comida-e-bebida-334",
       "difficulty": "hard",
       "text": "Quantos anos as barricas de vinagre balsâmico tradicional de Modena ficam guardadas, no mínimo?",
       "answer": 12,
@@ -2340,6 +2674,7 @@
       "fact": "Alguns ficam mais de 25 anos."
     },
     {
+      "id": "chute-comida-e-bebida-335",
       "difficulty": "hard",
       "text": "Quantos anos, no mínimo, ficam as barricas de vinagre balsâmico \"extra vecchio\"?",
       "answer": 25,
@@ -2347,6 +2682,7 @@
       "fact": "Pequenas quantidades custam centenas de euros."
     },
     {
+      "id": "chute-comida-e-bebida-336",
       "difficulty": "hard",
       "text": "Quantos anos, em média, uma trufeira leva para produzir, depois de plantada?",
       "answer": 7,
@@ -2354,6 +2690,7 @@
       "fact": "Cães são usados para a colheita."
     },
     {
+      "id": "chute-comida-e-bebida-337",
       "difficulty": "hard",
       "text": "Em que ano o Brasil proibiu as gorduras trans em alimentos?",
       "answer": 2023,
@@ -2361,6 +2698,7 @@
       "fact": "Elas eram muito usadas em biscoitos e salgadinhos."
     },
     {
+      "id": "chute-comida-e-bebida-338",
       "difficulty": "hard",
       "text": "Em que ano foi criada a tabela nutricional obrigatória no Brasil?",
       "answer": 2001,
@@ -2368,6 +2706,7 @@
       "fact": "A lei foi atualizada em 2020."
     },
     {
+      "id": "chute-comida-e-bebida-339",
       "difficulty": "hard",
       "text": "Em que ano o selo de \"alto em açúcar\" começou a valer no Brasil?",
       "answer": 2022,
@@ -2375,6 +2714,7 @@
       "fact": "Ele foi inspirado em países como o Chile."
     },
     {
+      "id": "chute-comida-e-bebida-340",
       "difficulty": "hard",
       "text": "Em que ano a Coca-Cola New foi lançada, em um fracasso famoso?",
       "answer": 1985,
@@ -2382,6 +2722,7 @@
       "fact": "A empresa voltou atrás depois de 79 dias."
     },
     {
+      "id": "chute-comida-e-bebida-341",
       "difficulty": "hard",
       "text": "Quantos dias durou a New Coke, antes da volta da fórmula antiga?",
       "answer": 79,
@@ -2389,6 +2730,7 @@
       "fact": "Foi um dos maiores erros do marketing."
     },
     {
+      "id": "chute-comida-e-bebida-342",
       "difficulty": "hard",
       "text": "Em que ano foi inventada a lata de alumínio de refrigerante?",
       "answer": 1967,
@@ -2396,6 +2738,7 @@
       "fact": "Antes, ela era de aço."
     },
     {
+      "id": "chute-comida-e-bebida-343",
       "difficulty": "hard",
       "text": "Em que ano foi lançada a garrafa de vidro de Coca-Cola?",
       "answer": 1915,
@@ -2403,6 +2746,7 @@
       "fact": "Ela foi feita para ser reconhecida até no escuro."
     },
     {
+      "id": "chute-comida-e-bebida-344",
       "difficulty": "hard",
       "text": "Em que ano a Coca-Cola abriu a primeira fábrica de garrafas?",
       "answer": 1899,
@@ -2410,6 +2754,7 @@
       "fact": "Os direitos foram vendidos por um dólar."
     },
     {
+      "id": "chute-comida-e-bebida-345",
       "difficulty": "hard",
       "text": "Por quanto foram vendidos os direitos de engarrafar Coca-Cola, em 1899, em dólares?",
       "answer": 1,
@@ -2417,6 +2762,7 @@
       "fact": "Foi um dos piores negócios da história."
     },
     {
+      "id": "chute-comida-e-bebida-346",
       "difficulty": "hard",
       "text": "Em que ano a Coca-Cola deixou de usar cocaína em sua fórmula?",
       "answer": 1929,
@@ -2424,6 +2770,7 @@
       "fact": "No início, havia bastante nela."
     },
     {
+      "id": "chute-comida-e-bebida-347",
       "difficulty": "hard",
       "text": "Em que ano a Pepsi fez um acordo de refrigerantes por vodca com a União Soviética?",
       "answer": 1972,
@@ -2431,6 +2778,7 @@
       "fact": "A empresa chegou a receber navios de guerra em pagamento."
     },
     {
+      "id": "chute-comida-e-bebida-348",
       "difficulty": "hard",
       "text": "Quantos navios de guerra soviéticos a Pepsi chegou a receber em um acordo, em 1989?",
       "answer": 17,
@@ -2438,6 +2786,7 @@
       "fact": "Por um instante, teve uma das maiores frotas do mundo."
     },
     {
+      "id": "chute-comida-e-bebida-349",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Dia Mundial do Chocolate?",
       "answer": 2009,
@@ -2445,6 +2794,7 @@
       "fact": "A data é 7 de julho."
     },
     {
+      "id": "chute-comida-e-bebida-350",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Hershey's?",
       "answer": 1894,
@@ -2452,6 +2802,7 @@
       "fact": "A cidade de Hershey foi construída para os trabalhadores."
     },
     {
+      "id": "chute-comida-e-bebida-351",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Cadbury?",
       "answer": 1824,
@@ -2459,6 +2810,7 @@
       "fact": "Foi fundada por um quacre, em Birmingham."
     },
     {
+      "id": "chute-comida-e-bebida-352",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Lindt?",
       "answer": 1845,
@@ -2466,6 +2818,7 @@
       "fact": "Ela inventou a técnica de conchagem do chocolate."
     },
     {
+      "id": "chute-comida-e-bebida-353",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Godiva?",
       "answer": 1926,
@@ -2473,6 +2826,7 @@
       "fact": "A marca é da Bélgica."
     },
     {
+      "id": "chute-comida-e-bebida-354",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Ferrero?",
       "answer": 1946,
@@ -2480,6 +2834,7 @@
       "fact": "A marca é da Itália, e os ingredientes de cacau eram escassos."
     },
     {
+      "id": "chute-comida-e-bebida-355",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Ben & Jerry's?",
       "answer": 1978,
@@ -2487,6 +2842,7 @@
       "fact": "Eles aprenderam a fazer sorvete em um curso por correspondência."
     },
     {
+      "id": "chute-comida-e-bebida-356",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Häagen-Dazs?",
       "answer": 1960,
@@ -2494,6 +2850,7 @@
       "fact": "Apesar do nome, ela é dos EUA."
     },
     {
+      "id": "chute-comida-e-bebida-357",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Sonho de Valsa?",
       "answer": 1938,
@@ -2501,6 +2858,7 @@
       "fact": "O bombom tem um casal dançando na embalagem."
     },
     {
+      "id": "chute-comida-e-bebida-358",
       "difficulty": "medium",
       "text": "Em que ano o Leite Moça foi lançado no Brasil?",
       "answer": 1921,
@@ -2508,6 +2866,7 @@
       "fact": "Ele passou por diferentes nomes."
     },
     {
+      "id": "chute-comida-e-bebida-359",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Nescau, no Brasil?",
       "answer": 1932,
@@ -2515,6 +2874,7 @@
       "fact": "Na época, se chamava Nescao."
     },
     {
+      "id": "chute-comida-e-bebida-360",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Toddy, no Brasil?",
       "answer": 1933,
@@ -2522,6 +2882,7 @@
       "fact": "A marca veio de Porto Rico."
     },
     {
+      "id": "chute-comida-e-bebida-361",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a Coca-Cola Zero?",
       "answer": 2005,
@@ -2529,6 +2890,7 @@
       "fact": "A receita foi atualizada algumas vezes."
     },
     {
+      "id": "chute-comida-e-bebida-362",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a Diet Coke?",
       "answer": 1982,
@@ -2536,6 +2898,7 @@
       "fact": "Foi a primeira grande extensão da marca."
     },
     {
+      "id": "chute-comida-e-bebida-363",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Guaraná Jesus, do Maranhão?",
       "answer": 1920,
@@ -2543,6 +2906,7 @@
       "fact": "A Coca-Cola comprou a marca em 2001."
     },
     {
+      "id": "chute-comida-e-bebida-364",
       "difficulty": "medium",
       "text": "Em que ano o chef Ferran Adrià ganhou a terceira estrela Michelin?",
       "answer": 1997,
@@ -2550,6 +2914,7 @@
       "fact": "Ele foi um dos pioneiros da gastronomia molecular."
     },
     {
+      "id": "chute-comida-e-bebida-365",
       "difficulty": "hard",
       "text": "Quantos dias por ano o elBulli ficava aberto, nos últimos anos?",
       "answer": 180,
@@ -2557,6 +2922,7 @@
       "fact": "A lista de espera tinha cerca de 2 milhões de pedidos."
     },
     {
+      "id": "chute-comida-e-bebida-366",
       "difficulty": "hard",
       "text": "Quantos pedidos de reserva o elBulli recebia por ano, em milhões?",
       "answer": 2,
@@ -2564,6 +2930,7 @@
       "fact": "Só cerca de 8 mil pessoas conseguiam uma mesa."
     },
     {
+      "id": "chute-comida-e-bebida-367",
       "difficulty": "hard",
       "text": "Quantos pratos tinha um menu degustação do elBulli, aproximadamente?",
       "answer": 35,
@@ -2571,6 +2938,7 @@
       "fact": "Alguns tinham uma só mordida."
     },
     {
+      "id": "chute-comida-e-bebida-368",
       "difficulty": "hard",
       "text": "Quantos anos descansa uma pimenta Tabasco nos barris, no máximo?",
       "answer": 3,
@@ -2578,6 +2946,7 @@
       "fact": "Os barris são de carvalho e selados com sal."
     },
     {
+      "id": "chute-comida-e-bebida-369",
       "difficulty": "hard",
       "text": "Em que ano foi criado o molho Tabasco?",
       "answer": 1868,
@@ -2585,6 +2954,7 @@
       "fact": "Edmund McIlhenny plantou as pimentas depois da guerra."
     },
     {
+      "id": "chute-comida-e-bebida-370",
       "difficulty": "hard",
       "text": "Quantos kg de massa um italiano come por ano, aproximadamente?",
       "answer": 23,
@@ -2592,6 +2962,7 @@
       "fact": "A Itália lidera o consumo mundial."
     },
     {
+      "id": "chute-comida-e-bebida-371",
       "difficulty": "hard",
       "text": "Quantos kg de arroz um japonês come por ano, aproximadamente?",
       "answer": 50,
@@ -2599,6 +2970,7 @@
       "fact": "Nos anos 1960, o consumo era mais que o dobro."
     },
     {
+      "id": "chute-comida-e-bebida-372",
       "difficulty": "hard",
       "text": "Quantos kg de batatas um belga come por ano, aproximadamente?",
       "answer": 75,
@@ -2606,6 +2978,7 @@
       "fact": "A Bélgica tem muito orgulho das batatas fritas."
     },
     {
+      "id": "chute-comida-e-bebida-373",
       "difficulty": "hard",
       "text": "Quantos kg de queijo um francês come por ano, aproximadamente?",
       "answer": 27,
@@ -2613,6 +2986,7 @@
       "fact": "De Gaulle brincava sobre governar um país com 246 queijos."
     },
     {
+      "id": "chute-comida-e-bebida-374",
       "difficulty": "hard",
       "text": "Quantos tipos de queijo De Gaulle citou, em sua frase famosa?",
       "answer": 246,
@@ -2620,6 +2994,7 @@
       "fact": "Ele se perguntava como governar um país assim."
     },
     {
+      "id": "chute-comida-e-bebida-375",
       "difficulty": "hard",
       "text": "Quantos kg de queijo um brasileiro come por ano, aproximadamente?",
       "answer": 5.5,
@@ -2627,6 +3002,7 @@
       "fact": "O número vem crescendo com a renda."
     },
     {
+      "id": "chute-comida-e-bebida-376",
       "difficulty": "hard",
       "text": "Quantos kg de chocolate um brasileiro come por ano, aproximadamente?",
       "answer": 3,
@@ -2634,6 +3010,7 @@
       "fact": "O consumo cresce muito na Páscoa."
     },
     {
+      "id": "chute-comida-e-bebida-377",
       "difficulty": "hard",
       "text": "Quantos ovos de Páscoa o Brasil produz por ano, em milhões?",
       "answer": 100,
@@ -2641,6 +3018,7 @@
       "fact": "A Lacta e a Cacau Show estão entre as maiores."
     },
     {
+      "id": "chute-comida-e-bebida-378",
       "difficulty": "hard",
       "text": "Quantos panetones a Bauducco vende por ano, em milhões?",
       "answer": 40,
@@ -2648,6 +3026,7 @@
       "fact": "A receita veio da Itália em 1948."
     },
     {
+      "id": "chute-comida-e-bebida-379",
       "difficulty": "hard",
       "text": "Quantos litros de óleo o McDonald's usa em uma fritadeira, aproximadamente?",
       "answer": 30,
@@ -2655,6 +3034,7 @@
       "fact": "O óleo é filtrado todos os dias."
     },
     {
+      "id": "chute-comida-e-bebida-380",
       "difficulty": "hard",
       "text": "Quantos minutos dura a fritura da batata do McDonald's?",
       "answer": 3,
@@ -2662,6 +3042,7 @@
       "fact": "O tempo é controlado por um alarme."
     },
     {
+      "id": "chute-comida-e-bebida-381",
       "difficulty": "hard",
       "text": "Quantas batatas fritas tem uma porção média do McDonald's, aproximadamente?",
       "answer": 60,
@@ -2669,6 +3050,7 @@
       "fact": "O número varia muito por embalagem."
     },
     {
+      "id": "chute-comida-e-bebida-382",
       "difficulty": "hard",
       "text": "Quantos gramas pesa um hambúrguer simples do McDonald's, cru?",
       "answer": 45,
@@ -2676,6 +3058,7 @@
       "fact": "O do Quarteirão tem 113 gramas."
     },
     {
+      "id": "chute-comida-e-bebida-383",
       "difficulty": "hard",
       "text": "Quantos gramas pesa um Quarteirão com Queijo, cru?",
       "answer": 113,
@@ -2683,6 +3066,7 @@
       "fact": "O nome vem de um quarto de libra."
     },
     {
+      "id": "chute-comida-e-bebida-384",
       "difficulty": "easy",
       "text": "Quantos ovos tem uma dúzia e meia?",
       "answer": 18,
@@ -2690,6 +3074,7 @@
       "fact": "Uma dúzia tem 12 unidades."
     },
     {
+      "id": "chute-comida-e-bebida-385",
       "difficulty": "medium",
       "text": "Quantas colheres de sopa cabem em uma xícara de chá, aproximadamente?",
       "answer": 16,
@@ -2697,6 +3082,7 @@
       "fact": "A medida muda um pouco em cada receita."
     },
     {
+      "id": "chute-comida-e-bebida-386",
       "difficulty": "easy",
       "text": "Quantos mililitros tem uma lata comum de refrigerante, no Brasil?",
       "answer": 350,
@@ -2704,6 +3090,7 @@
       "fact": "A latinha menor costuma ter 220 ml."
     },
     {
+      "id": "chute-comida-e-bebida-387",
       "difficulty": "easy",
       "text": "Quantos mililitros tem uma garrafa comum de vinho?",
       "answer": 750,
@@ -2711,6 +3098,7 @@
       "fact": "A garrafa magnum tem o dobro."
     },
     {
+      "id": "chute-comida-e-bebida-388",
       "difficulty": "easy",
       "text": "Quantos gramas tem uma barra de chocolate comum?",
       "answer": 90,
@@ -2718,6 +3106,7 @@
       "fact": "O tamanho varia conforme a marca."
     },
     {
+      "id": "chute-comida-e-bebida-389",
       "difficulty": "easy",
       "text": "Quantos pedaços tem uma pizza grande comum, no Brasil?",
       "answer": 8,
@@ -2725,6 +3114,7 @@
       "fact": "Muitos lugares vendem até a gigante."
     },
     {
+      "id": "chute-comida-e-bebida-390",
       "difficulty": "easy",
       "text": "Em que temperatura uma pizza costuma assar em forno doméstico, em °C?",
       "answer": 250,
@@ -2732,6 +3122,7 @@
       "fact": "Quanto mais quente, melhor a massa."
     },
     {
+      "id": "chute-comida-e-bebida-391",
       "difficulty": "easy",
       "text": "Em que temperatura se assa um bolo comum, em °C?",
       "answer": 180,
@@ -2739,6 +3130,7 @@
       "fact": "O forno precisa estar preaquecido."
     },
     {
+      "id": "chute-comida-e-bebida-392",
       "difficulty": "easy",
       "text": "Em que temperatura costuma ficar uma geladeira doméstica, em °C?",
       "answer": 4,
@@ -2747,6 +3139,7 @@
       "fact": "Abaixo de 5 °C, as bactérias crescem devagar."
     },
     {
+      "id": "chute-comida-e-bebida-393",
       "difficulty": "medium",
       "text": "Em que temperatura a cerveja se serve bem gelada, em °C, aproximadamente?",
       "answer": 4,
@@ -2755,6 +3148,7 @@
       "fact": "Tipos mais encorpados pedem menos frio."
     },
     {
+      "id": "chute-comida-e-bebida-394",
       "difficulty": "medium",
       "text": "Qual é a temperatura de uma sorveteria na vitrine, em °C, aproximadamente?",
       "answer": -14,
@@ -2763,6 +3157,7 @@
       "fact": "Muito abaixo disso, o sorvete fica duro demais."
     },
     {
+      "id": "chute-comida-e-bebida-395",
       "difficulty": "medium",
       "text": "Qual é a temperatura do nitrogênio usado em sorvetes de restaurante, em °C?",
       "answer": -196,
@@ -2771,6 +3166,7 @@
       "fact": "Ele congela a mistura em segundos."
     },
     {
+      "id": "chute-comida-e-bebida-396",
       "difficulty": "medium",
       "text": "Quantos grãos de café cabem em uma xícara de espresso, aproximadamente?",
       "answer": 60,
@@ -2778,6 +3174,7 @@
       "fact": "Em peso, são cerca de 7 gramas."
     },
     {
+      "id": "chute-comida-e-bebida-397",
       "difficulty": "medium",
       "text": "Quantas xícaras de café um brasileiro bebe por dia, em média?",
       "answer": 3,
@@ -2785,6 +3182,7 @@
       "fact": "O Brasil é o maior produtor mundial."
     },
     {
+      "id": "chute-comida-e-bebida-398",
       "difficulty": "medium",
       "text": "Qual é a produção de café do Brasil, em milhões de sacas por ano, aproximadamente?",
       "answer": 60,
@@ -2792,6 +3190,7 @@
       "fact": "Cada saca tem 60 quilos."
     },
     {
+      "id": "chute-comida-e-bebida-399",
       "difficulty": "medium",
       "text": "Quantos quilos tem uma saca de café?",
       "answer": 60,
@@ -2799,6 +3198,7 @@
       "fact": "Ela é a unidade padrão do mercado."
     },
     {
+      "id": "chute-comida-e-bebida-400",
       "difficulty": "medium",
       "text": "Quantos litros de leite são precisos para 1 quilo de queijo minas, aproximadamente?",
       "answer": 10,
@@ -2806,6 +3206,7 @@
       "fact": "Queijos curados pedem ainda mais leite."
     },
     {
+      "id": "chute-comida-e-bebida-401",
       "difficulty": "medium",
       "text": "Quantos litros de água são gastos para fazer 1 quilo de carne bovina, aproximadamente?",
       "answer": 15000,
@@ -2813,6 +3214,7 @@
       "fact": "A maior parte é da chuva usada no pasto."
     },
     {
+      "id": "chute-comida-e-bebida-402",
       "difficulty": "medium",
       "text": "Quantos litros de água são gastos para fazer 1 kg de arroz, aproximadamente?",
       "answer": 2500,
@@ -2820,6 +3222,7 @@
       "fact": "O cultivo em lavoura alagada consome muito."
     },
     {
+      "id": "chute-comida-e-bebida-403",
       "difficulty": "medium",
       "text": "Quantos ovos o mundo produz por ano, em trilhões, aproximadamente?",
       "answer": 1.5,
@@ -2827,6 +3230,7 @@
       "fact": "A China lidera a produção."
     },
     {
+      "id": "chute-comida-e-bebida-404",
       "difficulty": "hard",
       "text": "Qual é o teor alcoólico máximo de uma cachaça, em porcentagem, pela lei brasileira?",
       "answer": 48,
@@ -2835,6 +3239,7 @@
       "fact": "O mínimo é de 38%."
     },
     {
+      "id": "chute-comida-e-bebida-405",
       "difficulty": "hard",
       "text": "Qual é o teor alcoólico da vodka comum, em porcentagem?",
       "answer": 40,
@@ -2843,6 +3248,7 @@
       "fact": "O destilado é quase neutro."
     },
     {
+      "id": "chute-comida-e-bebida-406",
       "difficulty": "hard",
       "text": "Quantos quilos de açúcar um brasileiro consome por ano, aproximadamente?",
       "answer": 30,
@@ -2850,6 +3256,7 @@
       "fact": "O valor é bem maior que o recomendado."
     },
     {
+      "id": "chute-comida-e-bebida-407",
       "difficulty": "hard",
       "text": "Quantos milhões de unidades Scoville tem a pimenta Carolina Reaper, aproximadamente?",
       "answer": 1.6,
@@ -2857,6 +3264,7 @@
       "fact": "Foi recorde mundial por uma década."
     },
     {
+      "id": "chute-comida-e-bebida-408",
       "difficulty": "hard",
       "text": "Quantas unidades Scoville tem o jalapeño, aproximadamente?",
       "answer": 5000,
@@ -2864,6 +3272,7 @@
       "fact": "Ele é bem mais leve que as pimentas campeãs."
     },
     {
+      "id": "chute-comida-e-bebida-409",
       "difficulty": "hard",
       "text": "Quantas cápsulas Nespresso são vendidas por ano, em bilhões, aproximadamente?",
       "answer": 14,
@@ -2871,6 +3280,7 @@
       "fact": "A marca foi criada pela Nestlé em 1986."
     },
     {
+      "id": "chute-comida-e-bebida-410",
       "difficulty": "easy",
       "text": "Quantas fatias de pão tem um pacote de forma comum, aproximadamente?",
       "answer": 20,
@@ -2878,6 +3288,7 @@
       "fact": "A conta muda conforme a marca."
     },
     {
+      "id": "chute-comida-e-bebida-411",
       "difficulty": "easy",
       "text": "Quantos cafés coados cabem em uma garrafa térmica de 1 litro, em xícaras de 50 ml?",
       "answer": 20,
@@ -2885,6 +3296,7 @@
       "fact": "Basta dividir 1.000 por 50."
     },
     {
+      "id": "chute-comida-e-bebida-412",
       "difficulty": "hard",
       "text": "Quantas toneladas de tomate são usadas na Tomatina de Buñol, aproximadamente?",
       "answer": 120,
@@ -2892,6 +3304,7 @@
       "fact": "A guerra acontece na Espanha."
     },
     {
+      "id": "chute-comida-e-bebida-413",
       "difficulty": "hard",
       "text": "Quantos visitantes a Oktoberfest de Munique recebe por ano, em milhões?",
       "answer": 7,
@@ -2899,6 +3312,7 @@
       "fact": "Ela dura cerca de duas semanas."
     },
     {
+      "id": "chute-comida-e-bebida-414",
       "difficulty": "hard",
       "text": "Quantos anos tem a Lei da Pureza da cerveja alemã, de 1516, até 2016?",
       "answer": 500,
@@ -2906,6 +3320,7 @@
       "fact": "Ela só aceitava água, cevada e lúpulo."
     },
     {
+      "id": "chute-comida-e-bebida-415",
       "difficulty": "hard",
       "text": "Quantos anos tem a garrafa de vinho de Speyer, aproximadamente?",
       "answer": 1700,
@@ -2913,6 +3328,7 @@
       "fact": "A garrafa romana fica fechada em um museu alemão."
     },
     {
+      "id": "chute-comida-e-bebida-416",
       "difficulty": "easy",
       "text": "Quantos gramas tem um pacote comum de macarrão no supermercado?",
       "answer": 500,
@@ -2920,6 +3336,7 @@
       "fact": "Massas frescas costumam vir em pacotes menores."
     },
     {
+      "id": "chute-comida-e-bebida-417",
       "difficulty": "easy",
       "text": "Quantos quilos tem um pacote comum de arroz no supermercado?",
       "answer": 5,
@@ -2927,6 +3344,7 @@
       "fact": "Pacotes de 1 e 2 kg também são comuns."
     },
     {
+      "id": "chute-comida-e-bebida-418",
       "difficulty": "easy",
       "text": "Quantos quilos tem um pacote comum de feijão no supermercado?",
       "answer": 1,
@@ -2934,6 +3352,7 @@
       "fact": "O feijão-carioca é o mais consumido do país."
     },
     {
+      "id": "chute-comida-e-bebida-419",
       "difficulty": "easy",
       "text": "Quantos quilos tem um pacote comum de açúcar no supermercado?",
       "answer": 1,
@@ -2941,6 +3360,7 @@
       "fact": "O açúcar cristal e o refinado vêm em pacotes parecidos."
     },
     {
+      "id": "chute-comida-e-bebida-420",
       "difficulty": "easy",
       "text": "Quantos gramas tem um pacote comum de café torrado e moído?",
       "answer": 500,
@@ -2948,6 +3368,7 @@
       "fact": "Pacotes de 250 g também são muito vendidos."
     },
     {
+      "id": "chute-comida-e-bebida-421",
       "difficulty": "easy",
       "text": "Quantos gramas tem uma lata de leite condensado?",
       "answer": 395,
@@ -2955,6 +3376,7 @@
       "fact": "Ela é a base do brigadeiro e do pudim."
     },
     {
+      "id": "chute-comida-e-bebida-422",
       "difficulty": "easy",
       "text": "Quantos gramas tem uma caixinha de creme de leite?",
       "answer": 200,
@@ -2962,6 +3384,7 @@
       "fact": "Ele deixa o estrogonofe cremoso."
     },
     {
+      "id": "chute-comida-e-bebida-423",
       "difficulty": "easy",
       "text": "Quantos litros tem uma caixa de leite longa vida?",
       "answer": 1,
@@ -2969,6 +3392,7 @@
       "fact": "A caixa protege o leite da luz e do ar."
     },
     {
+      "id": "chute-comida-e-bebida-424",
       "difficulty": "easy",
       "text": "Quantos litros tem uma garrafa grande de refrigerante?",
       "answer": 2,
@@ -2976,6 +3400,7 @@
       "fact": "Também existem garrafas de 2,5 e 3 litros."
     },
     {
+      "id": "chute-comida-e-bebida-425",
       "difficulty": "easy",
       "text": "Quantos mililitros tem um copo americano cheio até a boca?",
       "answer": 190,
@@ -2983,6 +3408,7 @@
       "fact": "O copo americano foi criado no Brasil em 1947."
     },
     {
+      "id": "chute-comida-e-bebida-426",
       "difficulty": "easy",
       "text": "Quantos mililitros tem uma garrafinha de água comum?",
       "answer": 500,
@@ -2990,6 +3416,7 @@
       "fact": "Garrafões de 20 litros abastecem casas e escritórios."
     },
     {
+      "id": "chute-comida-e-bebida-427",
       "difficulty": "easy",
       "text": "Quantos litros tem um galão de água mineral de bebedouro?",
       "answer": 20,
@@ -2997,6 +3424,7 @@
       "fact": "Ele costuma ser retornável."
     },
     {
+      "id": "chute-comida-e-bebida-428",
       "difficulty": "easy",
       "text": "Quantos minutos leva para cozinhar arroz branco na panela, aproximadamente?",
       "answer": 20,
@@ -3004,6 +3432,7 @@
       "fact": "Depois de pronto, é bom deixar o arroz descansar tampado."
     },
     {
+      "id": "chute-comida-e-bebida-429",
       "difficulty": "easy",
       "text": "Quantos minutos leva para cozinhar feijão na panela de pressão, aproximadamente?",
       "answer": 30,
@@ -3011,6 +3440,7 @@
       "fact": "Deixar o feijão de molho antes encurta o cozimento."
     },
     {
+      "id": "chute-comida-e-bebida-430",
       "difficulty": "easy",
       "text": "Quantos minutos leva um bolo comum para assar, aproximadamente?",
       "answer": 40,
@@ -3018,6 +3448,7 @@
       "fact": "O teste do palito mostra se o bolo está pronto."
     },
     {
+      "id": "chute-comida-e-bebida-431",
       "difficulty": "easy",
       "text": "Quantos minutos leva para fazer pipoca de micro-ondas?",
       "answer": 3,
@@ -3025,6 +3456,7 @@
       "fact": "O barulho do milho estourando avisa a hora de parar."
     },
     {
+      "id": "chute-comida-e-bebida-432",
       "difficulty": "easy",
       "text": "Quantos minutos leva um pão de queijo congelado para assar, aproximadamente?",
       "answer": 25,
@@ -3032,6 +3464,7 @@
       "fact": "Ele cresce no forno por causa do polvilho."
     },
     {
+      "id": "chute-comida-e-bebida-433",
       "difficulty": "easy",
       "text": "Quantos ovos leva uma receita comum de bolo caseiro?",
       "answer": 3,
@@ -3039,6 +3472,7 @@
       "fact": "Bater as claras em neve deixa o bolo mais fofo."
     },
     {
+      "id": "chute-comida-e-bebida-434",
       "difficulty": "easy",
       "text": "Quantas xícaras de farinha de trigo leva uma receita comum de bolo?",
       "answer": 2,
@@ -3046,6 +3480,7 @@
       "fact": "A farinha deve entrar peneirada."
     },
     {
+      "id": "chute-comida-e-bebida-435",
       "difficulty": "easy",
       "text": "Quantos gomos tem uma laranja, em média?",
       "answer": 10,
@@ -3053,6 +3488,7 @@
       "fact": "O número varia, mas quase sempre fica entre 8 e 12."
     },
     {
+      "id": "chute-comida-e-bebida-436",
       "difficulty": "easy",
       "text": "Quantos pães franceses costumam pesar 1 quilo?",
       "answer": 20,
@@ -3060,6 +3496,7 @@
       "fact": "Cada pãozinho pesa cerca de 50 gramas."
     },
     {
+      "id": "chute-comida-e-bebida-437",
       "difficulty": "easy",
       "text": "Quantos gramas tem uma fatia de queijo muçarela comum, aproximadamente?",
       "answer": 20,
@@ -3067,6 +3504,7 @@
       "fact": "A muçarela é o queijo mais usado nas pizzas brasileiras."
     },
     {
+      "id": "chute-comida-e-bebida-438",
       "difficulty": "easy",
       "text": "Quantos gramas tem um hambúrguer de lanchonete comum, cru, aproximadamente?",
       "answer": 120,
@@ -3074,6 +3512,7 @@
       "fact": "Os hambúrgueres \"smash\" são bem mais finos."
     },
     {
+      "id": "chute-comida-e-bebida-439",
       "difficulty": "easy",
       "text": "Quantos gramas tem um bife comum, aproximadamente?",
       "answer": 150,
@@ -3081,6 +3520,7 @@
       "fact": "O bife perde peso na frigideira por causa da água."
     },
     {
+      "id": "chute-comida-e-bebida-440",
       "difficulty": "easy",
       "text": "Quantas coxinhas pequenas de festa costumam vir num cento?",
       "answer": 100,
@@ -3088,6 +3528,7 @@
       "fact": "O cento é a medida mais comum nos pedidos de salgado."
     },
     {
+      "id": "chute-comida-e-bebida-441",
       "difficulty": "easy",
       "text": "Quantos salgadinhos por convidado se calcula numa festa de aniversário, aproximadamente?",
       "answer": 15,
@@ -3095,6 +3536,7 @@
       "fact": "Festas mais longas pedem mais salgados."
     },
     {
+      "id": "chute-comida-e-bebida-442",
       "difficulty": "easy",
       "text": "Quantos brigadeiros saem de uma lata de leite condensado, aproximadamente?",
       "answer": 25,
@@ -3102,6 +3544,7 @@
       "fact": "Brigadeiros maiores rendem bem menos."
     },
     {
+      "id": "chute-comida-e-bebida-443",
       "difficulty": "easy",
       "text": "Quantos minutos se bate o brigadeiro no fogo até desgrudar da panela, aproximadamente?",
       "answer": 10,
@@ -3109,6 +3552,7 @@
       "fact": "Fogo baixo evita que ele queime no fundo."
     },
     {
+      "id": "chute-comida-e-bebida-444",
       "difficulty": "easy",
       "text": "Quantos gramas tem um tablete de manteiga?",
       "answer": 200,
@@ -3116,6 +3560,7 @@
       "fact": "Também é comum o pote de 500 gramas."
     },
     {
+      "id": "chute-comida-e-bebida-445",
       "difficulty": "easy",
       "text": "Quantas colheres de sopa de pó se usa para 1 litro de café coado, aproximadamente?",
       "answer": 8,
@@ -3123,6 +3568,7 @@
       "fact": "Café forte leva mais pó."
     },
     {
+      "id": "chute-comida-e-bebida-446",
       "difficulty": "easy",
       "text": "Quantos litros de água se usa para cozinhar 500 g de macarrão?",
       "answer": 5,
@@ -3130,6 +3576,7 @@
       "fact": "Muita água evita que a massa grude."
     },
     {
+      "id": "chute-comida-e-bebida-447",
       "difficulty": "easy",
       "text": "Quantos minutos leva para cozinhar macarrão espaguete, aproximadamente?",
       "answer": 10,
@@ -3137,6 +3584,7 @@
       "fact": "O tempo certo vem escrito no pacote."
     },
     {
+      "id": "chute-comida-e-bebida-448",
       "difficulty": "easy",
       "text": "Quantas fatias de pizza costuma ter uma pizza broto?",
       "answer": 4,
@@ -3144,6 +3592,7 @@
       "fact": "A broto é a menor pizza do cardápio."
     },
     {
+      "id": "chute-comida-e-bebida-449",
       "difficulty": "easy",
       "text": "Quantos sabores podem ir numa pizza grande, na maioria das pizzarias?",
       "answer": 2,
@@ -3151,6 +3600,7 @@
       "fact": "Algumas pizzarias aceitam até quatro sabores na mesma pizza."
     },
     {
+      "id": "chute-comida-e-bebida-450",
       "difficulty": "easy",
       "text": "Quantos centímetros tem uma pizza grande, aproximadamente?",
       "answer": 35,
@@ -3158,6 +3608,7 @@
       "fact": "A gigante pode passar de 40 cm."
     },
     {
+      "id": "chute-comida-e-bebida-451",
       "difficulty": "easy",
       "text": "Quantos minutos assa uma pizza em forno a lenha, aproximadamente?",
       "answer": 5,
@@ -3165,6 +3616,7 @@
       "fact": "O forno a lenha fica bem mais quente que o forno de casa."
     },
     {
+      "id": "chute-comida-e-bebida-452",
       "difficulty": "easy",
       "text": "Quantos litros de sorvete tem um pote grande de supermercado?",
       "answer": 2,
@@ -3172,6 +3624,7 @@
       "fact": "Também há potes de 1,5 litro."
     },
     {
+      "id": "chute-comida-e-bebida-453",
       "difficulty": "easy",
       "text": "Quantas latas vêm num fardo comum de cerveja?",
       "answer": 12,
@@ -3179,6 +3632,7 @@
       "fact": "Fardos de 6 e de 15 latas também são vendidos."
     },
     {
+      "id": "chute-comida-e-bebida-454",
       "difficulty": "easy",
       "text": "Quantas garrafas vêm num engradado de cerveja de 600 ml?",
       "answer": 24,
@@ -3186,6 +3640,7 @@
       "fact": "O engradado volta para o depósito com os cascos vazios."
     },
     {
+      "id": "chute-comida-e-bebida-455",
       "difficulty": "easy",
       "text": "Quantos mililitros tem uma garrafa de cerveja de bar, a \"garrafa grande\"?",
       "answer": 600,
@@ -3193,6 +3648,7 @@
       "fact": "Ela é a mais pedida nos botecos."
     },
     {
+      "id": "chute-comida-e-bebida-456",
       "difficulty": "easy",
       "text": "Quantos mililitros tem uma lata pequena de cerveja, a \"latinha\"?",
       "answer": 269,
@@ -3200,6 +3656,7 @@
       "fact": "A lata comum tem 350 ml."
     },
     {
+      "id": "chute-comida-e-bebida-457",
       "difficulty": "easy",
       "text": "Qual é o teor alcoólico de uma cerveja comum, em %?",
       "answer": 5,
@@ -3207,6 +3664,7 @@
       "fact": "Cervejas sem álcool têm até 0,5%."
     },
     {
+      "id": "chute-comida-e-bebida-458",
       "difficulty": "easy",
       "text": "Qual é o teor alcoólico de um vinho comum, em %?",
       "answer": 12,
@@ -3214,6 +3672,7 @@
       "fact": "Vinhos de sobremesa podem passar de 15%."
     },
     {
+      "id": "chute-comida-e-bebida-459",
       "difficulty": "easy",
       "text": "Quantos limões leva uma caipirinha, em geral?",
       "answer": 1,
@@ -3221,6 +3680,7 @@
       "fact": "O limão vai cortado e amassado com açúcar."
     },
     {
+      "id": "chute-comida-e-bebida-460",
       "difficulty": "easy",
       "text": "Quantos copos de suco rende uma jarra de 1 litro?",
       "answer": 4,
@@ -3228,6 +3688,7 @@
       "fact": "Um copo comum tem uns 250 ml."
     },
     {
+      "id": "chute-comida-e-bebida-461",
       "difficulty": "easy",
       "text": "Quantas laranjas são precisas para um copo de suco, aproximadamente?",
       "answer": 3,
@@ -3235,6 +3696,7 @@
       "fact": "Laranjas mais suculentas rendem mais suco."
     },
     {
+      "id": "chute-comida-e-bebida-462",
       "difficulty": "easy",
       "text": "Quantos gramas tem uma barra de chocolate pequena, de bolso?",
       "answer": 25,
@@ -3242,6 +3704,7 @@
       "fact": "Ela cabe no bolso e derrete rápido no calor."
     },
     {
+      "id": "chute-comida-e-bebida-463",
       "difficulty": "easy",
       "text": "Quantos bombons vêm numa caixa comum de bombons do supermercado?",
       "answer": 20,
@@ -3249,6 +3712,7 @@
       "fact": "A caixa de bombons é presente clássico de Dia das Mães."
     },
     {
+      "id": "chute-comida-e-bebida-464",
       "difficulty": "easy",
       "text": "Quantos gramas pesa um ovo de Páscoa comum de supermercado, aproximadamente?",
       "answer": 200,
@@ -3256,6 +3720,7 @@
       "fact": "Os ovos de colher são mais pesados por causa do recheio."
     },
     {
+      "id": "chute-comida-e-bebida-465",
       "difficulty": "easy",
       "text": "Quantos quilos tem um peru de Natal comum, aproximadamente?",
       "answer": 4,
@@ -3263,6 +3728,7 @@
       "fact": "O peru costuma vir temperado e congelado."
     },
     {
+      "id": "chute-comida-e-bebida-466",
       "difficulty": "easy",
       "text": "Quantos dias dura um pão francês fresco em casa, antes de ficar duro?",
       "answer": 1,
@@ -3270,6 +3736,7 @@
       "fact": "Esquentar no forno devolve parte da crocância."
     },
     {
+      "id": "chute-comida-e-bebida-467",
       "difficulty": "easy",
       "text": "Quantos dias dura uma caixa de leite depois de aberta, na geladeira?",
       "answer": 3,
@@ -3277,6 +3744,7 @@
       "fact": "Fechada e fora da geladeira, ela dura meses."
     },
     {
+      "id": "chute-comida-e-bebida-468",
       "difficulty": "easy",
       "text": "Quantos dias dura uma comida feita na geladeira, em geral?",
       "answer": 3,
@@ -3284,6 +3752,7 @@
       "fact": "No freezer, a comida dura meses."
     },
     {
+      "id": "chute-comida-e-bebida-469",
       "difficulty": "easy",
       "text": "Quantas refeições principais um brasileiro costuma fazer por dia?",
       "answer": 3,
@@ -3291,6 +3760,7 @@
       "fact": "Café da manhã, almoço e jantar."
     },
     {
+      "id": "chute-comida-e-bebida-470",
       "difficulty": "easy",
       "text": "Quantas fatias de pão vão num sanduíche comum?",
       "answer": 2,
@@ -3298,6 +3768,7 @@
       "fact": "O misto-quente é um dos sanduíches mais pedidos nas padarias."
     },
     {
+      "id": "chute-comida-e-bebida-471",
       "difficulty": "easy",
       "text": "Quantas colheres de açúcar muita gente coloca num cafezinho, em média?",
       "answer": 2,
@@ -3305,6 +3776,7 @@
       "fact": "Cada vez mais gente toma café sem açúcar."
     },
     {
+      "id": "chute-comida-e-bebida-472",
       "difficulty": "easy",
       "text": "Quantos gramas tem um pacote de biscoito recheado comum?",
       "answer": 130,
@@ -3312,6 +3784,7 @@
       "fact": "O recheio fica entre dois biscoitos crocantes."
     },
     {
+      "id": "chute-comida-e-bebida-473",
       "difficulty": "easy",
       "text": "Quantos gramas tem um pote comum de requeijão cremoso?",
       "answer": 200,
@@ -3319,6 +3792,7 @@
       "fact": "Ele é passado no pão em muitas casas do Brasil."
     },
     {
+      "id": "chute-comida-e-bebida-474",
       "difficulty": "easy",
       "text": "Quantos gramas tem um pacote de macarrão instantâneo?",
       "answer": 85,
@@ -3326,6 +3800,7 @@
       "fact": "O tempero vem num saquinho separado."
     },
     {
+      "id": "chute-comida-e-bebida-475",
       "difficulty": "easy",
       "text": "Quantos litros cabem numa panela de pressão comum de casa?",
       "answer": 4.5,
@@ -3333,6 +3808,7 @@
       "fact": "Ela nunca deve ser enchida até a boca."
     },
     {
+      "id": "chute-comida-e-bebida-476",
       "difficulty": "easy",
       "text": "Quantas bocas tem um fogão comum de casa?",
       "answer": 4,
@@ -3340,6 +3816,7 @@
       "fact": "Fogões maiores têm cinco ou seis bocas."
     },
     {
+      "id": "chute-comida-e-bebida-477",
       "difficulty": "easy",
       "text": "Quantos gramas de carne se calcula por pessoa num churrasco, aproximadamente?",
       "answer": 400,

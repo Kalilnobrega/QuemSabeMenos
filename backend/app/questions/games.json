@@ -2,6 +2,7 @@
   "theme": "Games",
   "questions": [
     {
+      "id": "games-1",
       "difficulty": "hard",
       "text": "Que pistola de luz do NES era usada para jogar \"Duck Hunt\"?",
       "options": [
@@ -14,6 +15,7 @@
       "fact": "A Zapper funcionava detectando um flash branco na tela no momento do tiro."
     },
     {
+      "id": "games-2",
       "difficulty": "hard",
       "text": "Qual é o apelido do brasileiro Gabriel Toledo, bicampeão mundial de Counter-Strike?",
       "options": [
@@ -26,6 +28,7 @@
       "fact": "O time brasileiro venceu dois Majors de CS:GO em 2016."
     },
     {
+      "id": "games-3",
       "difficulty": "hard",
       "text": "Em que série de terror aparece o monstro Pyramid Head?",
       "options": [
@@ -38,6 +41,7 @@
       "fact": "O Pyramid Head estreou em Silent Hill 2, de 2001."
     },
     {
+      "id": "games-4",
       "difficulty": "hard",
       "text": "Em que jogo a jovem Madeline tenta escalar uma montanha?",
       "options": [
@@ -50,6 +54,7 @@
       "fact": "Celeste fala sobre ansiedade e depressão por meio da escalada."
     },
     {
+      "id": "games-5",
       "difficulty": "hard",
       "text": "Em que jogo o príncipe Zagreus tenta fugir do submundo grego?",
       "options": [
@@ -62,6 +67,7 @@
       "fact": "Hades foi o primeiro videogame a ganhar o prêmio Hugo, da ficção científica e fantasia."
     },
     {
+      "id": "games-6",
       "difficulty": "hard",
       "text": "Quem é o criador da série \"Metal Gear\"?",
       "options": [
@@ -74,6 +80,7 @@
       "fact": "Depois de sair da Konami, Kojima criou o jogo Death Stranding."
     },
     {
+      "id": "games-7",
       "difficulty": "hard",
       "text": "Que jogo de RPG online polonês, de 1997, é muito popular no Brasil?",
       "options": [
@@ -86,6 +93,7 @@
       "fact": "Os brasileiros estão entre os jogadores mais numerosos de Tibia."
     },
     {
+      "id": "games-8",
       "difficulty": "hard",
       "text": "Que jogo do Master System adaptou Wonder Boy com personagens brasileiros?",
       "options": [
@@ -98,6 +106,7 @@
       "fact": "A adaptação foi feita pela Tectoy em 1991."
     },
     {
+      "id": "games-9",
       "difficulty": "hard",
       "text": "Quem criou Pokémon?",
       "options": [
@@ -110,6 +119,7 @@
       "fact": "Tajiri se inspirou no hobby de colecionar insetos quando era criança."
     },
     {
+      "id": "games-10",
       "difficulty": "hard",
       "text": "O que a Nintendo fabricava antes de fazer videogames?",
       "options": [
@@ -122,6 +132,7 @@
       "fact": "A Nintendo foi fundada em 1889, fazendo cartas japonesas chamadas hanafuda."
     },
     {
+      "id": "games-11",
       "difficulty": "hard",
       "text": "Qual foi o primeiro videogame doméstico da história, de 1972?",
       "options": [
@@ -134,6 +145,7 @@
       "fact": "O Odyssey usava películas coloridas coladas na tela da TV."
     },
     {
+      "id": "games-12",
       "difficulty": "hard",
       "text": "Quem fundou a Atari?",
       "options": [
@@ -146,6 +158,7 @@
       "fact": "Antes de fundar a Apple, Steve Jobs chegou a trabalhar na Atari."
     },
     {
+      "id": "games-13",
       "difficulty": "hard",
       "text": "Que jogo de 1982, baseado num filme de Spielberg, teve cartuchos enterrados no deserto?",
       "options": [
@@ -158,6 +171,7 @@
       "fact": "Os cartuchos enterrados no Novo México foram desenterrados por pesquisadores em 2014."
     },
     {
+      "id": "games-14",
       "difficulty": "hard",
       "text": "Como se chama a inteligência artificial vilã de \"Portal\"?",
       "options": [
@@ -170,6 +184,7 @@
       "fact": "GLaDOS promete bolo para quem completar os testes."
     },
     {
+      "id": "games-15",
       "difficulty": "hard",
       "text": "Como se chama a espada lendária usada por Link?",
       "options": [
@@ -182,6 +197,7 @@
       "fact": "A Buster Sword é a espada gigante de Cloud, em Final Fantasy VII."
     },
     {
+      "id": "games-16",
       "difficulty": "hard",
       "text": "Como se chama a égua de Link em \"Ocarina of Time\"?",
       "options": [
@@ -194,6 +210,7 @@
       "fact": "Link conquista Epona tocando uma canção que aprendeu com Malon, na fazenda."
     },
     {
+      "id": "games-17",
       "difficulty": "hard",
       "text": "Como se chama o ouriço preto, rival do Sonic?",
       "options": [
@@ -206,6 +223,7 @@
       "fact": "Shadow estreou em Sonic Adventure 2, de 2001."
     },
     {
+      "id": "games-18",
       "difficulty": "hard",
       "text": "Quem é o chefe final de \"Street Fighter II\"?",
       "options": [
@@ -218,6 +236,7 @@
       "fact": "Nos Estados Unidos, os nomes de M. Bison, Balrog e Vega foram trocados entre si."
     },
     {
+      "id": "games-19",
       "difficulty": "hard",
       "text": "Que deus do trovão protege a Terra em \"Mortal Kombat\"?",
       "options": [
@@ -230,6 +249,7 @@
       "fact": "Raiden usa um grande chapéu de palha."
     },
     {
+      "id": "games-20",
       "difficulty": "hard",
       "text": "Em que série de luta da SNK estreou Terry Bogard?",
       "options": [
@@ -242,6 +262,7 @@
       "fact": "Terry também é um dos principais personagens de The King of Fighters."
     },
     {
+      "id": "games-21",
       "difficulty": "hard",
       "text": "Que série de luta da SNK tem times de três lutadores?",
       "options": [
@@ -254,6 +275,7 @@
       "fact": "A série foi um grande sucesso nos fliperamas brasileiros nos anos 1990."
     },
     {
+      "id": "games-22",
       "difficulty": "hard",
       "text": "Que lutador brasileiro de capoeira faz parte de \"Tekken\"?",
       "options": [
@@ -266,6 +288,7 @@
       "fact": "Eddy Gordo estreou em Tekken 3, de 1997."
     },
     {
+      "id": "games-23",
       "difficulty": "hard",
       "text": "Que lutadora brasileira de Street Fighter V luta jiu-jítsu e solta eletricidade?",
       "options": [
@@ -278,6 +301,7 @@
       "fact": "Laura é irmã de Sean, outro lutador brasileiro da série."
     },
     {
+      "id": "games-24",
       "difficulty": "hard",
       "text": "Qual é o código de identificação do Master Chief?",
       "options": [
@@ -290,6 +314,7 @@
       "fact": "Ele faz parte do programa de supersoldados Spartan-II."
     },
     {
+      "id": "games-25",
       "difficulty": "hard",
       "text": "Em \"Final Fantasy VII\", que personagem é morta por Sephiroth?",
       "options": [
@@ -302,6 +327,7 @@
       "fact": "A cena, de 1997, é uma das mais famosas da história dos videogames."
     },
     {
+      "id": "games-26",
       "difficulty": "hard",
       "text": "Que estúdio japonês criou \"Dark Souls\" e \"Elden Ring\"?",
       "options": [
@@ -314,6 +340,7 @@
       "fact": "Os jogos do estúdio são famosos pela dificuldade."
     },
     {
+      "id": "games-27",
       "difficulty": "hard",
       "text": "Quem dirigiu \"Dark Souls\" e \"Elden Ring\"?",
       "options": [
@@ -326,6 +353,7 @@
       "fact": "Hayao Miyazaki é o diretor de animações do Studio Ghibli, sem parentesco com ele."
     },
     {
+      "id": "games-28",
       "difficulty": "hard",
       "text": "Que escritor de \"Game of Thrones\" colaborou com a história de \"Elden Ring\"?",
       "options": [
@@ -338,6 +366,7 @@
       "fact": "Elden Ring foi eleito o jogo do ano em 2022."
     },
     {
+      "id": "games-29",
       "difficulty": "hard",
       "text": "Em que ano o primeiro PlayStation foi lançado no Japão?",
       "options": [
@@ -350,6 +379,7 @@
       "fact": "A Sony entrou nos games depois de uma parceria fracassada com a Nintendo."
     },
     {
+      "id": "games-30",
       "difficulty": "hard",
       "text": "Que console disputa com o PlayStation 2 o posto de mais vendido, com cerca de 154 milhões?",
       "options": [
@@ -362,6 +392,7 @@
       "fact": "O Game Boy, somado ao Game Boy Color, também passou de 118 milhões."
     },
     {
+      "id": "games-31",
       "difficulty": "hard",
       "text": "De que cor era a tela do Game Boy original?",
       "options": [
@@ -374,6 +405,7 @@
       "fact": "A tela mostrava quatro tons de verde-acinzentado."
     },
     {
+      "id": "games-32",
       "difficulty": "hard",
       "text": "Quais foram os primeiros jogos de Pokémon lançados no Ocidente?",
       "options": [
@@ -386,6 +418,7 @@
       "fact": "No Japão, os primeiros foram Red e Green, em 1996."
     },
     {
+      "id": "games-33",
       "difficulty": "hard",
       "text": "Qual é o número de Pikachu na Pokédex?",
       "options": [
@@ -398,6 +431,7 @@
       "fact": "O 52 é o Meowth, e o 151, o Mew."
     },
     {
+      "id": "games-34",
       "difficulty": "hard",
       "text": "Que tipo de Pokémon tem vantagem contra o tipo Água?",
       "options": [
@@ -410,6 +444,7 @@
       "fact": "O tipo Planta também é forte contra o tipo Água."
     },
     {
+      "id": "games-35",
       "difficulty": "hard",
       "text": "Que Pokémon fraco, que só sabe espirrar água, evolui para o poderoso Gyarados?",
       "options": [
@@ -422,6 +457,7 @@
       "fact": "No jogo, um vendedor tenta empurrar um Magikarp para o jogador por 500 moedas."
     },
     {
+      "id": "games-36",
       "difficulty": "hard",
       "text": "Que Pokémon tem várias evoluções diferentes, como Vaporeon, Jolteon e Flareon?",
       "options": [
@@ -434,6 +470,7 @@
       "fact": "Hoje, Eevee tem oito evoluções diferentes."
     },
     {
+      "id": "games-37",
       "difficulty": "hard",
       "text": "Como se chama o rival de Ash no começo do anime Pokémon?",
       "options": [
@@ -446,6 +483,7 @@
       "fact": "Gary é neto do Professor Carvalho."
     },
     {
+      "id": "games-38",
       "difficulty": "hard",
       "text": "Que material é usado para construir o portal do Nether, em Minecraft?",
       "options": [
@@ -458,6 +496,7 @@
       "fact": "A obsidiana se forma quando a água encontra a lava parada."
     },
     {
+      "id": "games-39",
       "difficulty": "hard",
       "text": "O que deixa um Enderman irritado em Minecraft?",
       "options": [
@@ -470,6 +509,7 @@
       "fact": "Endermen também não gostam de água e se teletransportam para fugir dela."
     },
     {
+      "id": "games-40",
       "difficulty": "hard",
       "text": "Qual é o primeiro e mais clássico mapa de \"Free Fire\"?",
       "options": [
@@ -482,6 +522,7 @@
       "fact": "Erangel é o mapa clássico de PUBG."
     },
     {
+      "id": "games-41",
       "difficulty": "hard",
       "text": "Como se chama o mapa principal de \"League of Legends\"?",
       "options": [
@@ -494,6 +535,7 @@
       "fact": "No Brasil, ele também é chamado de Vale dos Invocadores."
     },
     {
+      "id": "games-42",
       "difficulty": "hard",
       "text": "Que jogador sul-coreano é considerado a maior lenda de \"League of Legends\"?",
       "options": [
@@ -506,6 +548,7 @@
       "fact": "Faker venceu o Mundial de LoL várias vezes, sempre pela equipe T1."
     },
     {
+      "id": "games-43",
       "difficulty": "hard",
       "text": "Que time brasileiro surpreendeu ao vencer a Alliance no Mundial de LoL de 2014?",
       "options": [
@@ -518,6 +561,7 @@
       "fact": "A vitória é lembrada como uma das maiores zebras da história do torneio."
     },
     {
+      "id": "games-44",
       "difficulty": "hard",
       "text": "Qual é o rifle de precisão mais famoso de Counter-Strike?",
       "options": [
@@ -530,6 +574,7 @@
       "fact": "Um tiro de AWP no corpo costuma derrubar o adversário de uma vez."
     },
     {
+      "id": "games-45",
       "difficulty": "hard",
       "text": "Em que jogo cooperativo da Valve quatro sobreviventes enfrentam hordas de infectados?",
       "options": [
@@ -542,6 +587,7 @@
       "fact": "Left 4 Dead foi lançado em 2008."
     },
     {
+      "id": "games-46",
       "difficulty": "hard",
       "text": "Que jogo de 1993 popularizou o tiro em primeira pessoa, com demônios em Marte?",
       "options": [
@@ -554,6 +600,7 @@
       "fact": "Fãs já conseguiram rodar Doom em calculadoras, geladeiras e até em testes de gravidez."
     },
     {
+      "id": "games-47",
       "difficulty": "hard",
       "text": "Que jogo de 1992, da id Software, é considerado o avô dos jogos de tiro em primeira pessoa?",
       "options": [
@@ -566,6 +613,7 @@
       "fact": "No jogo, o protagonista foge de um castelo nazista."
     },
     {
+      "id": "games-48",
       "difficulty": "hard",
       "text": "Que dupla de programadores criou \"Doom\"?",
       "options": [
@@ -578,6 +626,7 @@
       "fact": "Carmack ficou famoso pelas técnicas gráficas; Romero, pelo design das fases."
     },
     {
+      "id": "games-49",
       "difficulty": "hard",
       "text": "Qual é o jogo mais vendido do Super Nintendo?",
       "options": [
@@ -590,6 +639,7 @@
       "fact": "Super Mario World vinha junto com o console em muitos pacotes."
     },
     {
+      "id": "games-50",
       "difficulty": "hard",
       "text": "Qual é o jogo mais vendido do PlayStation 2?",
       "options": [
@@ -602,6 +652,7 @@
       "fact": "San Andreas vendeu mais de 17 milhões de cópias só no PS2."
     },
     {
+      "id": "games-51",
       "difficulty": "hard",
       "text": "Que acessório do Xbox 360 permitia jogar usando só o corpo, sem controle?",
       "options": [
@@ -614,6 +665,7 @@
       "fact": "O Kinect chegou a ser o aparelho eletrônico vendido mais rápido do mundo."
     },
     {
+      "id": "games-52",
       "difficulty": "hard",
       "text": "Como se chama a linha de óculos de realidade virtual da Meta?",
       "options": [
@@ -626,6 +678,7 @@
       "fact": "O Vision Pro é o óculos da Apple, e o Vive, da HTC."
     },
     {
+      "id": "games-53",
       "difficulty": "hard",
       "text": "Qual foi o primeiro jogo da série Zelda em 3D?",
       "options": [
@@ -638,6 +691,7 @@
       "fact": "Ocarina of Time, de 1998, é considerado um dos melhores jogos da história."
     },
     {
+      "id": "games-54",
       "difficulty": "hard",
       "text": "Que série de corrida futurista da Nintendo tem o piloto Captain Falcon?",
       "options": [
@@ -650,6 +704,7 @@
       "fact": "Captain Falcon também é lutador em Super Smash Bros."
     },
     {
+      "id": "games-55",
       "difficulty": "hard",
       "text": "Como se chama a raposa piloto de \"Star Fox\"?",
       "options": [
@@ -662,6 +717,7 @@
       "fact": "Star Fox, de 1993, usava um chip especial no cartucho para gráficos em 3D."
     },
     {
+      "id": "games-56",
       "difficulty": "hard",
       "text": "Que jogo da Nintendo, de 2015, tem lulas que pintam o cenário com tinta?",
       "options": [
@@ -674,6 +730,7 @@
       "fact": "Em Splatoon, os personagens podem virar lula para nadar na própria tinta."
     },
     {
+      "id": "games-57",
       "difficulty": "hard",
       "text": "Em que jogo da série GTA a cidade se chama Liberty City e o protagonista é Niko Bellic?",
       "options": [
@@ -686,6 +743,7 @@
       "fact": "Liberty City é inspirada em Nova York."
     },
     {
+      "id": "games-58",
       "difficulty": "hard",
       "text": "Quem é o protagonista de \"Red Dead Redemption 2\"?",
       "options": [
@@ -698,6 +756,7 @@
       "fact": "John Marston, protagonista do primeiro jogo, também aparece na história."
     },
     {
+      "id": "games-59",
       "difficulty": "hard",
       "text": "Como se chama a filha adotiva de Geralt em \"The Witcher\"?",
       "options": [
@@ -710,6 +769,7 @@
       "fact": "Ciri tem o poder de viajar entre mundos."
     },
     {
+      "id": "games-60",
       "difficulty": "hard",
       "text": "Como se chama a égua de Geralt em \"The Witcher\"?",
       "options": [
@@ -722,6 +782,7 @@
       "fact": "Geralt dá o mesmo nome a todos os cavalos que tem."
     },
     {
+      "id": "games-61",
       "difficulty": "hard",
       "text": "Que policial novato estreia em \"Resident Evil 2\", em Raccoon City?",
       "options": [
@@ -734,6 +795,7 @@
       "fact": "Leon voltou como protagonista em Resident Evil 4."
     },
     {
+      "id": "games-62",
       "difficulty": "hard",
       "text": "Quem é o protagonista do primeiro \"Assassin's Creed\"?",
       "options": [
@@ -746,6 +808,7 @@
       "fact": "O primeiro jogo se passa durante a Terceira Cruzada, no século XII."
     },
     {
+      "id": "games-63",
       "difficulty": "hard",
       "text": "Quem é o protagonista de \"Assassin's Creed II\", na Itália renascentista?",
       "options": [
@@ -758,6 +821,7 @@
       "fact": "Ezio chega a conhecer Leonardo da Vinci no jogo."
     },
     {
+      "id": "games-64",
       "difficulty": "hard",
       "text": "Que série de corrida exclusiva do Xbox tem a linha \"Horizon\", de mundo aberto?",
       "options": [
@@ -770,6 +834,7 @@
       "fact": "Forza Horizon 5 se passa no México."
     },
     {
+      "id": "games-65",
       "difficulty": "hard",
       "text": "Que jogo brasileiro de 2018 tem uma heroína que salta entre paredes e tetos?",
       "options": [
@@ -782,6 +847,7 @@
       "fact": "A personagem homenageia Dandara, guerreira do Quilombo dos Palmares."
     },
     {
+      "id": "games-66",
       "difficulty": "hard",
       "text": "Que jogo brasileiro de corrida homenageia clássicos de 16 bits, como \"Top Gear\"?",
       "options": [
@@ -794,6 +860,7 @@
       "fact": "Horizon Chase foi criado pela Aquiris, um estúdio de Porto Alegre."
     },
     {
+      "id": "games-67",
       "difficulty": "hard",
       "text": "Que jogo de corrida do Super Nintendo tem uma das trilhas sonoras mais famosas da plataforma?",
       "options": [
@@ -806,6 +873,7 @@
       "fact": "A trilha sonora de Top Gear foi composta por Barry Leitch."
     },
     {
+      "id": "games-68",
       "difficulty": "hard",
       "text": "Que lutador indiano de Street Fighter estica os braços e as pernas?",
       "options": [
@@ -818,6 +886,7 @@
       "fact": "Dhalsim é mestre de ioga e cospe fogo."
     },
     {
+      "id": "games-69",
       "difficulty": "hard",
       "text": "Que série de jogos se passa em Rapture, uma cidade construída no fundo do mar?",
       "options": [
@@ -830,6 +899,7 @@
       "fact": "O primeiro BioShock saiu em 2007."
     },
     {
+      "id": "games-70",
       "difficulty": "hard",
       "text": "Que série de RPG mistura personagens da Disney com os de Final Fantasy?",
       "options": [
@@ -842,6 +912,7 @@
       "fact": "O herói Sora usa uma arma em forma de chave, a Keyblade."
     },
     {
+      "id": "games-71",
       "difficulty": "hard",
       "text": "Em que jogo de 2011 dragões são derrotados com o grito \"Fus Ro Dah\"?",
       "options": [
@@ -854,6 +925,7 @@
       "fact": "Skyrim foi relançado em tantos aparelhos que virou piada entre os fãs."
     },
     {
+      "id": "games-72",
       "difficulty": "hard",
       "text": "Em que jogo de terror um jornalista explora um hospício só com uma câmera?",
       "options": [
@@ -866,6 +938,7 @@
       "fact": "Em Outlast, o protagonista não pode lutar: só correr e se esconder."
     },
     {
+      "id": "games-73",
       "difficulty": "hard",
       "text": "Qual é considerado um dos primeiros jogos eletrônicos, criado em 1958 num osciloscópio?",
       "options": [
@@ -878,6 +951,7 @@
       "fact": "O jogo foi criado pelo físico William Higinbotham, para uma exposição num laboratório americano."
     },
     {
+      "id": "games-74",
       "difficulty": "hard",
       "text": "Em que país foi fundada a Ubisoft, criadora de \"Assassin's Creed\"?",
       "options": [
@@ -890,6 +964,7 @@
       "fact": "A Ubisoft foi fundada em 1986 por cinco irmãos da família Guillemot."
     },
     {
+      "id": "games-75",
       "difficulty": "hard",
       "text": "Que engenheiro da Nintendo criou o Game Boy e os portáteis Game & Watch?",
       "options": [
@@ -902,6 +977,7 @@
       "fact": "A filosofia de Yokoi era usar tecnologias já baratas de jeitos criativos."
     },
     {
+      "id": "games-76",
       "difficulty": "hard",
       "text": "Qual era o nome do mascote do Sega Master System no Brasil, herói de vários jogos?",
       "options": [
@@ -914,6 +990,7 @@
       "fact": "Alex Kidd in Miracle World vinha na memória de muitos Master System."
     },
     {
+      "id": "games-77",
       "difficulty": "easy",
       "text": "Como se chama o irmão do Mario?",
       "options": [
@@ -926,6 +1003,7 @@
       "fact": "Luigi é mais alto que o Mario e, em vários jogos, pula mais alto também."
     },
     {
+      "id": "games-78",
       "difficulty": "easy",
       "text": "Que princesa o Mario costuma salvar?",
       "options": [
@@ -938,6 +1016,7 @@
       "fact": "Peach é a princesa do Reino do Cogumelo."
     },
     {
+      "id": "games-79",
       "difficulty": "easy",
       "text": "Como se chama o vilão tartaruga dos jogos do Mario?",
       "options": [
@@ -950,6 +1029,7 @@
       "fact": "No Japão, o Bowser é chamado de Koopa."
     },
     {
+      "id": "games-80",
       "difficulty": "easy",
       "text": "Que dinossauro verde o Mario usa como montaria?",
       "options": [
@@ -962,6 +1042,7 @@
       "fact": "Yoshi estreou em Super Mario World, de 1990."
     },
     {
+      "id": "games-81",
       "difficulty": "easy",
       "text": "Que item faz o Mario crescer?",
       "options": [
@@ -974,6 +1055,7 @@
       "fact": "A Flor de Fogo faz o Mario soltar bolas de fogo, e a Estrela o deixa invencível."
     },
     {
+      "id": "games-82",
       "difficulty": "easy",
       "text": "Como se chama o porco-espinho azul da Sega?",
       "options": [
@@ -986,6 +1068,7 @@
       "fact": "Sonic foi criado em 1991 para competir com o Mario."
     },
     {
+      "id": "games-83",
       "difficulty": "easy",
       "text": "Como se chama a raposa de duas caudas, amiga do Sonic?",
       "options": [
@@ -998,6 +1081,7 @@
       "fact": "O nome completo de Tails é Miles Prower."
     },
     {
+      "id": "games-84",
       "difficulty": "easy",
       "text": "Que cientista de bigode é o grande vilão dos jogos do Sonic?",
       "options": [
@@ -1010,6 +1094,7 @@
       "fact": "Nos primeiros jogos lançados no Ocidente, ele era chamado de Dr. Robotnik."
     },
     {
+      "id": "games-85",
       "difficulty": "easy",
       "text": "O que o Sonic coleta pelas fases?",
       "options": [
@@ -1022,6 +1107,7 @@
       "fact": "Se o Sonic for atingido com anéis, ele perde todos, mas continua vivo."
     },
     {
+      "id": "games-86",
       "difficulty": "easy",
       "text": "Como se chama o herói de \"The Legend of Zelda\"?",
       "options": [
@@ -1034,6 +1120,7 @@
       "fact": "Muita gente acha que Zelda é o herói, mas ela é a princesa."
     },
     {
+      "id": "games-87",
       "difficulty": "easy",
       "text": "Qual é o Pokémon amarelo mais famoso?",
       "options": [
@@ -1046,6 +1133,7 @@
       "fact": "Pikachu é do tipo elétrico."
     },
     {
+      "id": "games-88",
       "difficulty": "easy",
       "text": "Como se chama o treinador protagonista do desenho Pokémon?",
       "options": [
@@ -1058,6 +1146,7 @@
       "fact": "Ash foi o protagonista do anime de 1997 a 2023."
     },
     {
+      "id": "games-89",
       "difficulty": "easy",
       "text": "Que objeto é usado para capturar Pokémon?",
       "options": [
@@ -1070,6 +1159,7 @@
       "fact": "A Pokédex é a enciclopédia eletrônica com as informações dos Pokémon."
     },
     {
+      "id": "games-90",
       "difficulty": "easy",
       "text": "Que jogo de blocos, em que se minera e se constrói, é o mais vendido da história?",
       "options": [
@@ -1082,6 +1172,7 @@
       "fact": "Minecraft já passou de 300 milhões de cópias vendidas."
     },
     {
+      "id": "games-91",
       "difficulty": "easy",
       "text": "Que criatura verde de Minecraft explode quando chega perto do jogador?",
       "options": [
@@ -1094,6 +1185,7 @@
       "fact": "O Creeper nasceu de um erro de programação: era para ser um porco."
     },
     {
+      "id": "games-92",
       "difficulty": "easy",
       "text": "Em que jogo os jogadores pulam de um ônibus voador numa ilha?",
       "options": [
@@ -1106,6 +1198,7 @@
       "fact": "Fortnite popularizou as dancinhas dentro dos jogos."
     },
     {
+      "id": "games-93",
       "difficulty": "easy",
       "text": "Que jogo de battle royale para celular, da Garena, é um dos mais jogados no Brasil?",
       "options": [
@@ -1118,6 +1211,7 @@
       "fact": "Free Fire ficou popular por rodar bem até em celulares simples."
     },
     {
+      "id": "games-94",
       "difficulty": "easy",
       "text": "Como se chama hoje a série de futebol da EA que antes se chamava FIFA?",
       "options": [
@@ -1130,6 +1224,7 @@
       "fact": "A troca de nome aconteceu em 2023."
     },
     {
+      "id": "games-95",
       "difficulty": "easy",
       "text": "Que série de futebol da Konami era a grande rival do FIFA?",
       "options": [
@@ -1142,6 +1237,7 @@
       "fact": "Hoje a série da Konami se chama eFootball."
     },
     {
+      "id": "games-96",
       "difficulty": "easy",
       "text": "Em que jogo peças formadas por quatro quadrados caem e você completa linhas?",
       "options": [
@@ -1154,6 +1250,7 @@
       "fact": "Tetris foi criado por Alexey Pajitnov em 1984."
     },
     {
+      "id": "games-97",
       "difficulty": "easy",
       "text": "Que personagem amarelo come pastilhas e foge de fantasmas?",
       "options": [
@@ -1166,6 +1263,7 @@
       "fact": "Diz a lenda que o formato do Pac-Man foi inspirado numa pizza sem uma fatia."
     },
     {
+      "id": "games-98",
       "difficulty": "easy",
       "text": "Que macaco gigante jogava barris no Mario no fliperama de 1981?",
       "options": [
@@ -1178,6 +1276,7 @@
       "fact": "Nesse jogo, o Mario ainda se chamava Jumpman."
     },
     {
+      "id": "games-99",
       "difficulty": "easy",
       "text": "Em que jogo pássaros são lançados com um estilingue contra porcos?",
       "options": [
@@ -1190,6 +1289,7 @@
       "fact": "Angry Birds foi criado na Finlândia, em 2009."
     },
     {
+      "id": "games-100",
       "difficulty": "easy",
       "text": "Em que jogo de celular se combinam doces coloridos?",
       "options": [
@@ -1202,6 +1302,7 @@
       "fact": "Candy Crush tem milhares de fases, e novas continuam sendo lançadas."
     },
     {
+      "id": "games-101",
       "difficulty": "easy",
       "text": "Em que jogo de celular se corre pelos trilhos do metrô fugindo de um guarda?",
       "options": [
@@ -1214,6 +1315,7 @@
       "fact": "Subway Surfers foi o primeiro jogo a passar de 1 bilhão de downloads na Google Play."
     },
     {
+      "id": "games-102",
       "difficulty": "easy",
       "text": "Em que jogo tripulantes tentam descobrir quem é o impostor da nave?",
       "options": [
@@ -1226,6 +1328,7 @@
       "fact": "Among Us é de 2018, mas virou febre só em 2020."
     },
     {
+      "id": "games-103",
       "difficulty": "easy",
       "text": "Que videogame portátil da Nintendo tinha duas telas?",
       "options": [
@@ -1238,6 +1341,7 @@
       "fact": "A tela de baixo do DS era sensível ao toque."
     },
     {
+      "id": "games-104",
       "difficulty": "easy",
       "text": "Que console da Nintendo de 2006 tinha controles com sensor de movimento?",
       "options": [
@@ -1250,6 +1354,7 @@
       "fact": "Com o Wii Sports, até avós começaram a jogar boliche na sala."
     },
     {
+      "id": "games-105",
       "difficulty": "easy",
       "text": "Que console da Sega era o grande rival do Super Nintendo?",
       "options": [
@@ -1262,6 +1367,7 @@
       "fact": "Nos Estados Unidos, o Mega Drive se chamava Genesis."
     },
     {
+      "id": "games-106",
       "difficulty": "easy",
       "text": "De que console são os botões com triângulo, círculo, xis e quadrado?",
       "options": [
@@ -1274,6 +1380,7 @@
       "fact": "No Japão, o círculo confirma e o xis cancela; no Ocidente, costuma ser o contrário."
     },
     {
+      "id": "games-107",
       "difficulty": "easy",
       "text": "Que lutador de Street Fighter solta o famoso \"Hadouken\"?",
       "options": [
@@ -1286,6 +1393,7 @@
       "fact": "Ken, o amigo e rival de Ryu, também solta o golpe."
     },
     {
+      "id": "games-108",
       "difficulty": "easy",
       "text": "Que lutador verde de Street Fighter é brasileiro e solta eletricidade?",
       "options": [
@@ -1298,6 +1406,7 @@
       "fact": "Na história do jogo, Blanka cresceu na Floresta Amazônica."
     },
     {
+      "id": "games-109",
       "difficulty": "easy",
       "text": "Em que jogo de luta existem os golpes finais chamados \"Fatality\"?",
       "options": [
@@ -1310,6 +1419,7 @@
       "fact": "A violência de Mortal Kombat ajudou a criar a classificação etária dos jogos nos EUA."
     },
     {
+      "id": "games-110",
       "difficulty": "easy",
       "text": "Em que jogo de corrida da Nintendo os pilotos atiram cascos de tartaruga?",
       "options": [
@@ -1322,6 +1432,7 @@
       "fact": "O temido casco azul vai direto atrás de quem está em primeiro lugar."
     },
     {
+      "id": "games-111",
       "difficulty": "easy",
       "text": "Em que série de jogos o espartano Kratos enfrenta deuses?",
       "options": [
@@ -1334,6 +1445,7 @@
       "fact": "Nos jogos mais recentes, Kratos deixa a mitologia grega e vai para a nórdica."
     },
     {
+      "id": "games-112",
       "difficulty": "easy",
       "text": "Em que série de jogos fica a cidade fictícia de Los Santos?",
       "options": [
@@ -1346,6 +1458,7 @@
       "fact": "Los Santos é inspirada em Los Angeles."
     },
     {
+      "id": "games-113",
       "difficulty": "easy",
       "text": "Que jogo da Riot Games é chamado pelos fãs de \"LoL\"?",
       "options": [
@@ -1358,6 +1471,7 @@
       "fact": "League of Legends é um dos maiores jogos de e-sports do mundo."
     },
     {
+      "id": "games-114",
       "difficulty": "easy",
       "text": "Em que jogo de tiro equipes de terroristas enfrentam contraterroristas?",
       "options": [
@@ -1370,6 +1484,7 @@
       "fact": "Counter-Strike começou como uma modificação feita por fãs do jogo Half-Life, em 1999."
     },
     {
+      "id": "games-115",
       "difficulty": "easy",
       "text": "Que plataforma tem jogos criados pelos próprios usuários e a moeda Robux?",
       "options": [
@@ -1382,6 +1497,7 @@
       "fact": "Muitos dos jogos do Roblox são criados por adolescentes."
     },
     {
+      "id": "games-116",
       "difficulty": "easy",
       "text": "Em que jogo os personagens falam uma língua inventada, o \"simlish\"?",
       "options": [
@@ -1394,6 +1510,7 @@
       "fact": "O cristal verde em cima da cabeça dos Sims se chama plumbob."
     },
     {
+      "id": "games-117",
       "difficulty": "easy",
       "text": "Que jogo de dança pede para o jogador imitar os passos de um dançarino na tela?",
       "options": [
@@ -1406,6 +1523,7 @@
       "fact": "Just Dance lança uma versão nova praticamente todo ano."
     },
     {
+      "id": "games-118",
       "difficulty": "easy",
       "text": "Que jogo tinha um controle em forma de guitarra com botões coloridos?",
       "options": [
@@ -1418,6 +1536,7 @@
       "fact": "O controle tinha cinco botões coloridos no braço da guitarra."
     },
     {
+      "id": "games-119",
       "difficulty": "easy",
       "text": "Que arqueóloga aventureira é a protagonista de \"Tomb Raider\"?",
       "options": [
@@ -1430,6 +1549,7 @@
       "fact": "Lara Croft já foi vivida no cinema por Angelina Jolie e por Alicia Vikander."
     },
     {
+      "id": "games-120",
       "difficulty": "easy",
       "text": "Em que série de jogos o Master Chief enfrenta os alienígenas Covenant?",
       "options": [
@@ -1442,6 +1562,7 @@
       "fact": "Halo foi o grande sucesso do primeiro Xbox, em 2001."
     },
     {
+      "id": "games-121",
       "difficulty": "easy",
       "text": "Que série de terror da Capcom tem zumbis criados pela empresa Umbrella?",
       "options": [
@@ -1454,6 +1575,7 @@
       "fact": "No Japão, a série se chama Biohazard."
     },
     {
+      "id": "games-122",
       "difficulty": "easy",
       "text": "Que bolinha rosa da Nintendo engole os inimigos e copia os poderes deles?",
       "options": [
@@ -1466,6 +1588,7 @@
       "fact": "Kirby estreou em 1992, no Game Boy."
     },
     {
+      "id": "games-123",
       "difficulty": "easy",
       "text": "Que jogo de 2016 levou multidões às ruas para caçar Pokémon com o celular?",
       "options": [
@@ -1478,6 +1601,7 @@
       "fact": "O jogo usa o GPS e a câmera do celular para mostrar os Pokémon no mundo real."
     },
     {
+      "id": "games-124",
       "difficulty": "easy",
       "text": "O que é um jogo do tipo \"battle royale\"?",
       "options": [
@@ -1490,6 +1614,7 @@
       "fact": "O nome veio do filme japonês \"Battle Royale\", de 2000."
     },
     {
+      "id": "games-125",
       "difficulty": "easy",
       "text": "O que é um NPC num jogo?",
       "options": [
@@ -1502,6 +1627,7 @@
       "fact": "NPC quer dizer \"non-player character\", personagem não jogável."
     },
     {
+      "id": "games-126",
       "difficulty": "easy",
       "text": "O que é um \"easter egg\" num jogo?",
       "options": [
@@ -1514,6 +1640,7 @@
       "fact": "Um dos primeiros foi o nome do criador escondido no jogo Adventure, do Atari, em 1980."
     },
     {
+      "id": "games-127",
       "difficulty": "easy",
       "text": "Qual é a loja de jogos para computador da Valve?",
       "options": [
@@ -1526,6 +1653,7 @@
       "fact": "A Steam foi lançada em 2003."
     },
     {
+      "id": "games-128",
       "difficulty": "easy",
       "text": "Que plataforma roxa de transmissões ao vivo é muito usada por gamers?",
       "options": [
@@ -1538,6 +1666,7 @@
       "fact": "A Amazon comprou a Twitch em 2014."
     },
     {
+      "id": "games-129",
       "difficulty": "easy",
       "text": "Que aplicativo de bate-papo por voz é muito usado por quem joga online?",
       "options": [
@@ -1550,6 +1679,7 @@
       "fact": "O Discord foi lançado em 2015, pensado justamente para gamers."
     },
     {
+      "id": "games-130",
       "difficulty": "easy",
       "text": "Como se chama o personagem padrão de Minecraft?",
       "options": [
@@ -1562,6 +1692,7 @@
       "fact": "A versão feminina do personagem padrão se chama Alex."
     },
     {
+      "id": "games-131",
       "difficulty": "easy",
       "text": "Que jogo de celular tem vilas, bárbaros e ataques a outros jogadores?",
       "options": [
@@ -1574,6 +1705,7 @@
       "fact": "Clash of Clans foi criado pela empresa finlandesa Supercell."
     },
     {
+      "id": "games-132",
       "difficulty": "easy",
       "text": "Que jogo aparece no Chrome quando a internet cai?",
       "options": [
@@ -1586,6 +1718,7 @@
       "fact": "Dá para jogar mesmo com internet: basta digitar chrome://dino na barra de endereços."
     },
     {
+      "id": "games-133",
       "difficulty": "easy",
       "text": "Que jogo clássico do Windows escondia minas num tabuleiro?",
       "options": [
@@ -1598,6 +1731,7 @@
       "fact": "O número em cada casa mostra quantas minas estão ao redor."
     },
     {
+      "id": "games-134",
       "difficulty": "easy",
       "text": "Que jogo de cartas vinha no Windows e ajudava a treinar o uso do mouse?",
       "options": [
@@ -1610,6 +1744,7 @@
       "fact": "Arrastar as cartas ensinava as pessoas a clicar e arrastar com o mouse."
     },
     {
+      "id": "games-135",
       "difficulty": "easy",
       "text": "Que jogo da cobrinha fez sucesso nos celulares Nokia?",
       "options": [
@@ -1622,6 +1757,7 @@
       "fact": "O Snake vinha no Nokia 6110, de 1997."
     },
     {
+      "id": "games-136",
       "difficulty": "easy",
       "text": "O que é um speedrun?",
       "options": [
@@ -1634,6 +1770,7 @@
       "fact": "Speedrunners usam até falhas do jogo para ganhar segundos."
     },
     {
+      "id": "games-137",
       "difficulty": "easy",
       "text": "Que rival do Mario usa boné amarelo com a letra \"W\"?",
       "options": [
@@ -1646,6 +1783,7 @@
       "fact": "O \"W\" de Wario é o \"M\" do Mario de cabeça para baixo."
     },
     {
+      "id": "games-138",
       "difficulty": "easy",
       "text": "Em que jogo carros com foguetes jogam futebol com uma bola gigante?",
       "options": [
@@ -1658,6 +1796,7 @@
       "fact": "Rocket League virou um grande jogo de e-sports."
     },
     {
+      "id": "games-139",
       "difficulty": "easy",
       "text": "Que série de tiro da Activision tem a linha \"Modern Warfare\"?",
       "options": [
@@ -1670,6 +1809,7 @@
       "fact": "O primeiro Call of Duty, de 2003, se passava na Segunda Guerra Mundial."
     },
     {
+      "id": "games-140",
       "difficulty": "easy",
       "text": "Que cogumelo ajudante acompanha a Princesa Peach?",
       "options": [
@@ -1682,6 +1822,7 @@
       "fact": "Toad é o nome do personagem e também da espécie de cogumelos falantes."
     },
     {
+      "id": "games-141",
       "difficulty": "easy",
       "text": "Que jogo de luta da Nintendo reúne Mario, Link, Pikachu e muitos outros?",
       "options": [
@@ -1694,6 +1835,7 @@
       "fact": "Em Smash, o objetivo é jogar os adversários para fora da arena."
     },
     {
+      "id": "games-142",
       "difficulty": "easy",
       "text": "Em que jogo de celular um explorador foge correndo de um templo?",
       "options": [
@@ -1706,6 +1848,7 @@
       "fact": "Temple Run foi lançado em 2011 e virou um dos primeiros grandes sucessos de celular."
     },
     {
+      "id": "games-143",
       "difficulty": "easy",
       "text": "Que robô azul da Capcom copia os poderes dos chefes que derrota?",
       "options": [
@@ -1718,6 +1861,7 @@
       "fact": "No Japão, ele se chama Rockman."
     },
     {
+      "id": "games-144",
       "difficulty": "easy",
       "text": "Que jogo de fazenda no Facebook virou febre em 2009?",
       "options": [
@@ -1730,6 +1874,7 @@
       "fact": "No auge, FarmVille tinha dezenas de milhões de jogadores por dia."
     },
     {
+      "id": "games-145",
       "difficulty": "easy",
       "text": "Que bicho é o Crash Bandicoot?",
       "options": [
@@ -1742,6 +1887,7 @@
       "fact": "O bandicoot é um pequeno marsupial que vive na Austrália."
     },
     {
+      "id": "games-146",
       "difficulty": "easy",
       "text": "Que dragão roxo protagoniza uma série de jogos do PlayStation?",
       "options": [
@@ -1754,6 +1900,7 @@
       "fact": "O primeiro jogo do Spyro saiu em 1998."
     },
     {
+      "id": "games-147",
       "difficulty": "easy",
       "text": "Em que série os protagonistas pulam do alto de torres num \"salto de fé\"?",
       "options": [
@@ -1766,6 +1913,7 @@
       "fact": "Os jogos da série passam por épocas como as Cruzadas, o Renascimento e o Egito Antigo."
     },
     {
+      "id": "games-148",
       "difficulty": "easy",
       "text": "Que série de jogos de corrida da EA tem \"Most Wanted\" e \"Underground\"?",
       "options": [
@@ -1778,6 +1926,7 @@
       "fact": "Need for Speed estreou em 1994."
     },
     {
+      "id": "games-149",
       "difficulty": "easy",
       "text": "O que é um \"mod\" de um jogo?",
       "options": [
@@ -1790,6 +1939,7 @@
       "fact": "Jogos inteiros, como Counter-Strike e Dota, nasceram de mods."
     },
     {
+      "id": "games-150",
       "difficulty": "easy",
       "text": "Como se chama o atraso entre o comando do jogador e a reação no jogo online?",
       "options": [
@@ -1802,6 +1952,7 @@
       "fact": "O lag costuma ser causado por uma conexão de internet lenta ou instável."
     },
     {
+      "id": "games-151",
       "difficulty": "easy",
       "text": "Em que jogo o jogador administra uma cidade inteira como prefeito?",
       "options": [
@@ -1814,6 +1965,7 @@
       "fact": "Will Wright, criador de SimCity, também criou The Sims."
     },
     {
+      "id": "games-152",
       "difficulty": "easy",
       "text": "Como se chamava o controle do Wii, parecido com um controle remoto?",
       "options": [
@@ -1826,6 +1978,7 @@
       "fact": "Muita gente quebrou a TV ao soltar o Wii Remote sem querer, por isso ele tinha uma alça de pulso."
     },
     {
+      "id": "games-153",
       "difficulty": "impossible",
       "text": "Qual é o primeiro inimigo que aparece na fase 1-1 de Super Mario Bros.?",
       "options": [
@@ -1840,6 +1993,7 @@
       "fact": "O Goomba é um cogumelo traidor do Reino do Cogumelo."
     },
     {
+      "id": "games-154",
       "difficulty": "impossible",
       "text": "Quantas fases tem o Super Mario Bros. original, de 1985?",
       "options": [
@@ -1854,6 +2008,7 @@
       "fact": "São 8 mundos, cada um com 4 fases."
     },
     {
+      "id": "games-155",
       "difficulty": "impossible",
       "text": "Qual era o nome original do Pac-Man no Japão?",
       "options": [
@@ -1868,6 +2023,7 @@
       "fact": "O nome foi trocado nos EUA para evitar que vândalos transformassem o \"P\" em outra letra."
     },
     {
+      "id": "games-156",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"The Legend of Zelda\" no Japão?",
       "options": [
@@ -1882,6 +2038,7 @@
       "fact": "O cartucho americano era dourado, coisa rara na época."
     },
     {
+      "id": "games-157",
       "difficulty": "impossible",
       "text": "Quantas espécies de Pokémon existem até a nona geração?",
       "options": [
@@ -1896,6 +2053,7 @@
       "fact": "A nona geração estreou com Pokémon Scarlet e Violet, em 2022."
     },
     {
+      "id": "games-158",
       "difficulty": "impossible",
       "text": "Quem compôs a música tema de Super Mario Bros.?",
       "options": [
@@ -1910,6 +2068,7 @@
       "fact": "Koji Kondo também compôs as músicas de The Legend of Zelda."
     },
     {
+      "id": "games-159",
       "difficulty": "impossible",
       "text": "Em que cidade fica o último ginásio de Kanto, em Pokémon Red e Blue?",
       "options": [
@@ -1924,6 +2083,7 @@
       "fact": "O líder desse ginásio é Giovanni, o chefe da Equipe Rocket."
     },
     {
+      "id": "games-160",
       "difficulty": "impossible",
       "text": "Em que ano saiu o primeiro jogo da série GTA?",
       "options": [
@@ -1938,6 +2098,7 @@
       "fact": "O primeiro GTA tinha visão de cima, vista do alto da cidade."
     },
     {
+      "id": "games-161",
       "difficulty": "impossible",
       "text": "Qual é a altura máxima de construção em Minecraft desde a versão 1.18?",
       "options": [
@@ -1952,6 +2113,7 @@
       "fact": "Antes da versão 1.18, de 2021, o limite era de 256 blocos."
     },
     {
+      "id": "games-162",
       "difficulty": "impossible",
       "text": "Qual é a sequência do famoso \"código Konami\"?",
       "options": [
@@ -1966,6 +2128,7 @@
       "fact": "Em Contra, o código dava ao jogador 30 vidas."
     },
     {
+      "id": "games-163",
       "difficulty": "impossible",
       "text": "Qual foi o primeiro Pokémon a ser desenhado pela equipe criadora?",
       "options": [
@@ -1980,6 +2143,7 @@
       "fact": "Por isso, Rhydon aparece como modelo padrão em vários dados internos dos primeiros jogos."
     },
     {
+      "id": "games-164",
       "difficulty": "impossible",
       "text": "Quantos jogadores começam uma partida clássica de Free Fire?",
       "options": [
@@ -1994,6 +2158,7 @@
       "fact": "No PUBG e no Fortnite, as partidas clássicas começam com 100 jogadores."
     },
     {
+      "id": "games-165",
       "difficulty": "medium",
       "text": "Quantos Pokémon existiam na primeira geração?",
       "options": [
@@ -2006,6 +2171,7 @@
       "fact": "O 151º é o Mew, que nem aparecia normalmente no jogo."
     },
     {
+      "id": "games-166",
       "difficulty": "medium",
       "text": "Qual é o videogame mais vendido da história?",
       "options": [
@@ -2018,6 +2184,7 @@
       "fact": "O PlayStation 2 vendeu mais de 155 milhões de unidades."
     },
     {
+      "id": "games-167",
       "difficulty": "medium",
       "text": "Que empresa brasileira lançou os consoles da Sega no Brasil?",
       "options": [
@@ -2030,6 +2197,7 @@
       "fact": "A Tectoy continuou vendendo o Mega Drive no Brasil por décadas."
     },
     {
+      "id": "games-168",
       "difficulty": "medium",
       "text": "O que significa a sigla GTA?",
       "options": [
@@ -2042,6 +2210,7 @@
       "fact": "\"Grand theft auto\" é o termo usado nos EUA para o crime de roubo de carro."
     },
     {
+      "id": "games-169",
       "difficulty": "medium",
       "text": "Que console da Atari, de 1977, levou os videogames para dentro de casa?",
       "options": [
@@ -2054,6 +2223,7 @@
       "fact": "O Atari 2600 usava cartuchos e um joystick com um botão só."
     },
     {
+      "id": "games-170",
       "difficulty": "medium",
       "text": "Que jogo de cartas digital da Blizzard se passa no universo de Warcraft?",
       "options": [
@@ -2066,6 +2236,7 @@
       "fact": "Hearthstone foi lançado em 2014."
     },
     {
+      "id": "games-171",
       "difficulty": "medium",
       "text": "Quantos fantasmas perseguem o Pac-Man?",
       "options": [
@@ -2078,6 +2249,7 @@
       "fact": "Os fantasmas se chamam Blinky, Pinky, Inky e Clyde."
     },
     {
+      "id": "games-172",
       "difficulty": "medium",
       "text": "Em que jogo o jogador herda uma fazenda do avô e cuida das plantações?",
       "options": [
@@ -2090,6 +2262,7 @@
       "fact": "Stardew Valley foi feito praticamente sozinho por um único desenvolvedor, Eric Barone."
     },
     {
+      "id": "games-173",
       "difficulty": "medium",
       "text": "Que série de jogos de faroeste é da Rockstar, a mesma de GTA?",
       "options": [
@@ -2102,6 +2275,7 @@
       "fact": "Red Dead Redemption 2 se passa em 1899."
     },
     {
+      "id": "games-174",
       "difficulty": "medium",
       "text": "Que jogo de 1972, da Atari, simulava uma partida de tênis de mesa?",
       "options": [
@@ -2114,6 +2288,7 @@
       "fact": "Pong foi um dos primeiros grandes sucessos dos fliperamas."
     },
     {
+      "id": "games-175",
       "difficulty": "medium",
       "text": "Que série de jogos de luta da Namco tem a família Mishima?",
       "options": [
@@ -2126,6 +2301,7 @@
       "fact": "Tekken foi uma das grandes vitrines do primeiro PlayStation."
     },
     {
+      "id": "games-176",
       "difficulty": "medium",
       "text": "Quem criou o Mario?",
       "options": [
@@ -2138,6 +2314,7 @@
       "fact": "Miyamoto também criou The Legend of Zelda e Donkey Kong."
     },
     {
+      "id": "games-177",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"Super Mario Bros.\", no NES?",
       "options": [
@@ -2150,6 +2327,7 @@
       "fact": "O jogo vendeu mais de 40 milhões de cópias."
     },
     {
+      "id": "games-178",
       "difficulty": "medium",
       "text": "Como o console NES se chamava no Japão?",
       "options": [
@@ -2162,6 +2340,7 @@
       "fact": "Famicom quer dizer \"Family Computer\", computador da família."
     },
     {
+      "id": "games-179",
       "difficulty": "medium",
       "text": "Que console da Nintendo, de 1996, tinha um controle com três \"cabos\"?",
       "options": [
@@ -2174,6 +2353,7 @@
       "fact": "O Nintendo 64 tinha um direcional analógico no meio do controle."
     },
     {
+      "id": "games-180",
       "difficulty": "medium",
       "text": "Qual foi o último console de mesa da Sega?",
       "options": [
@@ -2186,6 +2366,7 @@
       "fact": "O Dreamcast foi o primeiro console a já vir com modem embutido para jogar pela internet."
     },
     {
+      "id": "games-181",
       "difficulty": "medium",
       "text": "Que portátil da Nintendo, de 1989, vinha com o jogo Tetris?",
       "options": [
@@ -2198,6 +2379,7 @@
       "fact": "O Game Boy funcionava com quatro pilhas AA."
     },
     {
+      "id": "games-182",
       "difficulty": "medium",
       "text": "Qual foi o primeiro videogame portátil da Sony?",
       "options": [
@@ -2210,6 +2392,7 @@
       "fact": "PSP quer dizer PlayStation Portable."
     },
     {
+      "id": "games-183",
       "difficulty": "medium",
       "text": "Qual é o tipo do Pokémon Charmander?",
       "options": [
@@ -2222,6 +2405,7 @@
       "fact": "Charmander evolui para Charmeleon e depois para Charizard."
     },
     {
+      "id": "games-184",
       "difficulty": "medium",
       "text": "Qual é o Pokémon número 1 da Pokédex?",
       "options": [
@@ -2234,6 +2418,7 @@
       "fact": "Bulbasaur é do tipo planta e veneno."
     },
     {
+      "id": "games-185",
       "difficulty": "medium",
       "text": "Que Pokémon enorme passa o dia dormindo e bloqueia caminhos?",
       "options": [
@@ -2246,6 +2431,7 @@
       "fact": "Para acordar o Snorlax no jogo, é preciso tocar a Poké Flauta."
     },
     {
+      "id": "games-186",
       "difficulty": "medium",
       "text": "Que Pokémon lendário foi criado num laboratório a partir do DNA de Mew?",
       "options": [
@@ -2258,6 +2444,7 @@
       "fact": "Mewtwo é o protagonista do primeiro filme de Pokémon, de 1998."
     },
     {
+      "id": "games-187",
       "difficulty": "medium",
       "text": "Em que região se passam os primeiros jogos de Pokémon?",
       "options": [
@@ -2270,6 +2457,7 @@
       "fact": "Kanto é inspirada numa região real do Japão de mesmo nome."
     },
     {
+      "id": "games-188",
       "difficulty": "medium",
       "text": "Como se chama o grande vilão da série \"The Legend of Zelda\"?",
       "options": [
@@ -2282,6 +2470,7 @@
       "fact": "Na forma humana, ele é chamado de Ganondorf."
     },
     {
+      "id": "games-189",
       "difficulty": "medium",
       "text": "Como se chama o reino onde se passa a maioria dos jogos de Zelda?",
       "options": [
@@ -2294,6 +2483,7 @@
       "fact": "A princesa Zelda é da família real de Hyrule."
     },
     {
+      "id": "games-190",
       "difficulty": "medium",
       "text": "Que fadinha acompanha Link em \"Ocarina of Time\"?",
       "options": [
@@ -2306,6 +2496,7 @@
       "fact": "Navi vivia chamando a atenção do jogador com \"Hey! Listen!\"."
     },
     {
+      "id": "games-191",
       "difficulty": "medium",
       "text": "Que pedras preciosas o Sonic junta para virar o Super Sonic?",
       "options": [
@@ -2318,6 +2509,7 @@
       "fact": "Com as sete esmeraldas, Sonic fica dourado e invencível."
     },
     {
+      "id": "games-192",
       "difficulty": "medium",
       "text": "Que personagem rosa vive correndo atrás do Sonic, apaixonada?",
       "options": [
@@ -2330,6 +2522,7 @@
       "fact": "Amy anda com um enorme martelo, o Piko Piko."
     },
     {
+      "id": "games-193",
       "difficulty": "medium",
       "text": "Que equidna vermelho é rival e amigo do Sonic?",
       "options": [
@@ -2342,6 +2535,7 @@
       "fact": "Knuckles é o guardião da Esmeralda Mestre."
     },
     {
+      "id": "games-194",
       "difficulty": "medium",
       "text": "Qual é o nome do protagonista de \"GTA: San Andreas\"?",
       "options": [
@@ -2354,6 +2548,7 @@
       "fact": "O jogo se passa no início dos anos 1990."
     },
     {
+      "id": "games-195",
       "difficulty": "medium",
       "text": "Que lutadora de Street Fighter é famosa pelos chutes rápidos?",
       "options": [
@@ -2366,6 +2561,7 @@
       "fact": "Chun-Li foi a primeira personagem feminina jogável de um jogo de luta famoso."
     },
     {
+      "id": "games-196",
       "difficulty": "medium",
       "text": "Que militar americano de Street Fighter solta o golpe \"Sonic Boom\"?",
       "options": [
@@ -2378,6 +2574,7 @@
       "fact": "O tema musical de Guile virou meme por \"combinar com tudo\"."
     },
     {
+      "id": "games-197",
       "difficulty": "medium",
       "text": "Que ninja de Mortal Kombat grita \"Get over here!\" ao lançar um arpão?",
       "options": [
@@ -2390,6 +2587,7 @@
       "fact": "Scorpion usa uma máscara amarela e controla o fogo."
     },
     {
+      "id": "games-198",
       "difficulty": "medium",
       "text": "Que ninja de Mortal Kombat tem poderes de gelo?",
       "options": [
@@ -2402,6 +2600,7 @@
       "fact": "Sub-Zero e Scorpion são os grandes rivais da série."
     },
     {
+      "id": "games-199",
       "difficulty": "medium",
       "text": "Que série de RPG tem os personagens Cloud e Sephiroth?",
       "options": [
@@ -2414,6 +2613,7 @@
       "fact": "Diz a lenda que o nome \"Final Fantasy\" veio do medo de ser o último jogo da empresa."
     },
     {
+      "id": "games-200",
       "difficulty": "medium",
       "text": "Que série de RPG japonesa tem os simpáticos \"slimes\" como mascote?",
       "options": [
@@ -2426,6 +2626,7 @@
       "fact": "Os personagens de Dragon Quest foram desenhados por Akira Toriyama, de Dragon Ball."
     },
     {
+      "id": "games-201",
       "difficulty": "medium",
       "text": "Que jogo de 2017 levou Link a um enorme mundo aberto?",
       "options": [
@@ -2438,6 +2639,7 @@
       "fact": "O jogo saiu junto com o lançamento do Nintendo Switch."
     },
     {
+      "id": "games-202",
       "difficulty": "medium",
       "text": "Em que jogo pós-apocalíptico Joel protege a garota Ellie?",
       "options": [
@@ -2450,6 +2652,7 @@
       "fact": "O jogo virou uma série da HBO em 2023."
     },
     {
+      "id": "games-203",
       "difficulty": "medium",
       "text": "Que estúdio criou \"The Last of Us\" e \"Uncharted\"?",
       "options": [
@@ -2462,6 +2665,7 @@
       "fact": "A Naughty Dog também criou Crash Bandicoot, nos anos 1990."
     },
     {
+      "id": "games-204",
       "difficulty": "medium",
       "text": "Em que série o caçador de tesouros Nathan Drake vive aventuras?",
       "options": [
@@ -2474,6 +2678,7 @@
       "fact": "A série virou filme em 2022, com Tom Holland como Drake."
     },
     {
+      "id": "games-205",
       "difficulty": "medium",
       "text": "Que estúdio polonês criou \"The Witcher 3\"?",
       "options": [
@@ -2486,6 +2691,7 @@
       "fact": "The Witcher é baseado nos livros do escritor polonês Andrzej Sapkowski."
     },
     {
+      "id": "games-206",
       "difficulty": "medium",
       "text": "Qual é o nome do bruxo protagonista de \"The Witcher\"?",
       "options": [
@@ -2498,6 +2704,7 @@
       "fact": "Na série da Netflix, Geralt foi vivido por Henry Cavill nas primeiras temporadas."
     },
     {
+      "id": "games-207",
       "difficulty": "medium",
       "text": "Em que cidade fictícia se passa \"Cyberpunk 2077\"?",
       "options": [
@@ -2510,6 +2717,7 @@
       "fact": "Keanu Reeves interpreta o personagem Johnny Silverhand no jogo."
     },
     {
+      "id": "games-208",
       "difficulty": "medium",
       "text": "Como se chama a dimensão infernal de Minecraft?",
       "options": [
@@ -2522,6 +2730,7 @@
       "fact": "Para chegar ao Nether, é preciso construir um portal."
     },
     {
+      "id": "games-209",
       "difficulty": "medium",
       "text": "Que dragão é o chefe final de Minecraft?",
       "options": [
@@ -2534,6 +2743,7 @@
       "fact": "O Ender Dragon fica na dimensão chamada The End."
     },
     {
+      "id": "games-210",
       "difficulty": "medium",
       "text": "Que empresa comprou o Minecraft em 2014?",
       "options": [
@@ -2546,6 +2756,7 @@
       "fact": "A compra custou 2,5 bilhões de dólares."
     },
     {
+      "id": "games-211",
       "difficulty": "medium",
       "text": "Quem criou o Minecraft?",
       "options": [
@@ -2558,6 +2769,7 @@
       "fact": "Notch é sueco e lançou a primeira versão em 2009."
     },
     {
+      "id": "games-212",
       "difficulty": "medium",
       "text": "Que empresa criou o Fortnite?",
       "options": [
@@ -2570,6 +2782,7 @@
       "fact": "A Epic Games também criou o Unreal Engine, motor gráfico usado em muitos jogos e filmes."
     },
     {
+      "id": "games-213",
       "difficulty": "medium",
       "text": "Que empresa criou \"League of Legends\"?",
       "options": [
@@ -2582,6 +2795,7 @@
       "fact": "A Riot também criou o jogo de tiro Valorant."
     },
     {
+      "id": "games-214",
       "difficulty": "medium",
       "text": "Em que jogo online existem as facções Aliança e Horda?",
       "options": [
@@ -2594,6 +2808,7 @@
       "fact": "World of Warcraft foi lançado em 2004 pela Blizzard."
     },
     {
+      "id": "games-215",
       "difficulty": "medium",
       "text": "Que jogo de tiro gratuito da Riot tem agentes com habilidades especiais?",
       "options": [
@@ -2606,6 +2821,7 @@
       "fact": "Valorant foi lançado em 2020."
     },
     {
+      "id": "games-216",
       "difficulty": "medium",
       "text": "Que jogo de tiro em equipe da Blizzard tem heróis como Tracer?",
       "options": [
@@ -2618,6 +2834,7 @@
       "fact": "Overwatch foi lançado em 2016."
     },
     {
+      "id": "games-217",
       "difficulty": "medium",
       "text": "Qual é o mapa mais famoso de Counter-Strike?",
       "options": [
@@ -2630,6 +2847,7 @@
       "fact": "O Dust 2 é inspirado numa cidade do Oriente Médio."
     },
     {
+      "id": "games-218",
       "difficulty": "medium",
       "text": "Em que série da Valve o cientista Gordon Freeman luta com um pé de cabra?",
       "options": [
@@ -2642,6 +2860,7 @@
       "fact": "Gordon Freeman nunca fala uma palavra nos jogos."
     },
     {
+      "id": "games-219",
       "difficulty": "medium",
       "text": "Em que jogo de quebra-cabeça da Valve se usa uma arma de portais?",
       "options": [
@@ -2654,6 +2873,7 @@
       "fact": "A frase \"O bolo é uma mentira\" virou meme por causa do jogo."
     },
     {
+      "id": "games-220",
       "difficulty": "medium",
       "text": "Em que jogo de terror animatrônicos atacam um vigia noturno de pizzaria?",
       "options": [
@@ -2666,6 +2886,7 @@
       "fact": "O jogo foi criado praticamente sozinho por Scott Cawthon, em 2014."
     },
     {
+      "id": "games-221",
       "difficulty": "medium",
       "text": "Em que jogo independente aparecem os esqueletos Sans e Papyrus?",
       "options": [
@@ -2678,6 +2899,7 @@
       "fact": "Em Undertale, dá para terminar o jogo sem matar ninguém."
     },
     {
+      "id": "games-222",
       "difficulty": "medium",
       "text": "Que série de corrida da Sony é famosa por simular carros reais?",
       "options": [
@@ -2690,6 +2912,7 @@
       "fact": "Gran Turismo estreou em 1997, no primeiro PlayStation."
     },
     {
+      "id": "games-223",
       "difficulty": "medium",
       "text": "Em que jogo da Nintendo o guaxinim Tom Nook vende casas numa ilha?",
       "options": [
@@ -2702,6 +2925,7 @@
       "fact": "\"Animal Crossing: New Horizons\" foi o grande jogo da quarentena de 2020."
     },
     {
+      "id": "games-224",
       "difficulty": "medium",
       "text": "Que jogo de dança tem um tapete com setas no chão?",
       "options": [
@@ -2714,6 +2938,7 @@
       "fact": "Dance Dance Revolution estreou nos fliperamas japoneses em 1998."
     },
     {
+      "id": "games-225",
       "difficulty": "medium",
       "text": "Que jogo de fliperama de 1978 tem naves alienígenas descendo em fileiras?",
       "options": [
@@ -2726,6 +2951,7 @@
       "fact": "Space Invaders foi um dos primeiros grandes sucessos dos fliperamas."
     },
     {
+      "id": "games-226",
       "difficulty": "medium",
       "text": "Em \"Duck Hunt\", que animal ri do jogador quando ele erra?",
       "options": [
@@ -2738,6 +2964,7 @@
       "fact": "Duck Hunt saiu em 1984 e era jogado com uma pistola de luz."
     },
     {
+      "id": "games-227",
       "difficulty": "medium",
       "text": "Que console da Microsoft veio depois do Xbox 360?",
       "options": [
@@ -2750,6 +2977,7 @@
       "fact": "O Xbox One foi lançado em 2013."
     },
     {
+      "id": "games-228",
       "difficulty": "medium",
       "text": "Que console a Sony lançou em 2020?",
       "options": [
@@ -2762,6 +2990,7 @@
       "fact": "O PlayStation 5 trouxe o controle DualSense, com vibração mais precisa."
     },
     {
+      "id": "games-229",
       "difficulty": "medium",
       "text": "Como se chama o serviço de assinatura de jogos da Microsoft?",
       "options": [
@@ -2774,6 +3003,7 @@
       "fact": "No Game Pass, os jogos da própria Microsoft chegam no dia do lançamento."
     },
     {
+      "id": "games-230",
       "difficulty": "medium",
       "text": "Em que cidade o Ash começa sua jornada Pokémon?",
       "options": [
@@ -2786,6 +3016,7 @@
       "fact": "Em várias traduções, a cidade é chamada de Cidade de Pallet."
     },
     {
+      "id": "games-231",
       "difficulty": "medium",
       "text": "Que professor dá o primeiro Pokémon ao jogador em Kanto?",
       "options": [
@@ -2798,6 +3029,7 @@
       "fact": "Em inglês, ele se chama Professor Oak."
     },
     {
+      "id": "games-232",
       "difficulty": "medium",
       "text": "Que Pokémon da Equipe Rocket fala como gente?",
       "options": [
@@ -2810,6 +3042,7 @@
       "fact": "Meowth aprendeu a falar sozinho, para impressionar uma gata."
     },
     {
+      "id": "games-233",
       "difficulty": "medium",
       "text": "Em que série de jogos o espião Solid Snake se esconde dentro de caixas?",
       "options": [
@@ -2822,6 +3055,7 @@
       "fact": "Esconder-se numa caixa de papelão virou marca registrada da série."
     },
     {
+      "id": "games-234",
       "difficulty": "medium",
       "text": "Que jogo de estratégia da Blizzard virou esporte nacional na Coreia do Sul?",
       "options": [
@@ -2834,6 +3068,7 @@
       "fact": "Partidas de StarCraft chegaram a ser transmitidas em canais de TV coreanos."
     },
     {
+      "id": "games-235",
       "difficulty": "medium",
       "text": "Que série da Nintendo tem a caçadora de recompensas Samus Aran?",
       "options": [
@@ -2846,6 +3081,7 @@
       "fact": "No primeiro Metroid, só no final se descobre que Samus é uma mulher."
     },
     {
+      "id": "games-236",
       "difficulty": "medium",
       "text": "Qual é o videogame portátil da Valve, que roda jogos da Steam?",
       "options": [
@@ -2858,6 +3094,7 @@
       "fact": "O Steam Deck foi lançado em 2022."
     },
     {
+      "id": "games-237",
       "difficulty": "medium",
       "text": "Que jogo musical tinha guitarra, bateria e microfone para tocar em banda?",
       "options": [
@@ -2870,6 +3107,7 @@
       "fact": "Rock Band foi criado pelo mesmo estúdio que fez os primeiros Guitar Hero."
     },
     {
+      "id": "games-238",
       "difficulty": "medium",
       "text": "Que jogo de 1996 levou o Mario para o mundo 3D?",
       "options": [
@@ -2882,6 +3120,7 @@
       "fact": "Super Mario 64 foi lançado junto com o Nintendo 64."
     },
     {
+      "id": "games-239",
       "difficulty": "medium",
       "text": "Que console da Nintendo, de 2012, tinha uma tela no próprio controle?",
       "options": [
@@ -2894,6 +3133,7 @@
       "fact": "O Wii U vendeu pouco, mas muitos jogos dele foram relançados no Switch."
     },
     {
+      "id": "games-240",
       "difficulty": "medium",
       "text": "Que herói da Ubisoft não tem braços nem pernas, só mãos e pés que flutuam?",
       "options": [
@@ -2906,6 +3146,7 @@
       "fact": "Rayman estreou em 1995 e depois ganhou a companhia dos malucos Rabbids."
     },
     {
+      "id": "games-241",
       "difficulty": "easy",
       "text": "De que cor é o boné do Luigi?",
       "options": [
@@ -2918,6 +3159,7 @@
       "fact": "O Luigi é mais alto que o Mario e pula mais alto também."
     },
     {
+      "id": "games-242",
       "difficulty": "easy",
       "text": "Qual é a profissão do Mario?",
       "options": [
@@ -2930,6 +3172,7 @@
       "fact": "O macacão e o boné ajudavam a desenhar o personagem com poucos pixels."
     },
     {
+      "id": "games-243",
       "difficulty": "easy",
       "text": "Que flor dá ao Mario o poder de jogar bolas de fogo?",
       "options": [
@@ -2942,6 +3185,7 @@
       "fact": "Com ela, o macacão do Mario fica branco e vermelho."
     },
     {
+      "id": "games-244",
       "difficulty": "easy",
       "text": "Que item deixa o Mario invencível por alguns segundos?",
       "options": [
@@ -2954,6 +3198,7 @@
       "fact": "Durante o efeito, uma música acelerada começa a tocar."
     },
     {
+      "id": "games-245",
       "difficulty": "easy",
       "text": "De que cor são os tênis do Sonic?",
       "options": [
@@ -2966,6 +3211,7 @@
       "fact": "Os criadores contam que se inspiraram nas botas de Michael Jackson."
     },
     {
+      "id": "games-246",
       "difficulty": "easy",
       "text": "Que Pokémon inicial é uma tartaruga azul?",
       "options": [
@@ -2978,6 +3224,7 @@
       "fact": "Ele evolui para Wartortle e depois para Blastoise."
     },
     {
+      "id": "games-247",
       "difficulty": "easy",
       "text": "De que tipo é o Pikachu?",
       "options": [
@@ -2990,6 +3237,7 @@
       "fact": "As bochechas vermelhas do Pikachu guardam eletricidade."
     },
     {
+      "id": "games-248",
       "difficulty": "easy",
       "text": "Em Minecraft, que material faz as ferramentas mais fortes antes do netherite?",
       "options": [
@@ -3002,6 +3250,7 @@
       "fact": "As ferramentas de ouro são rápidas, mas quebram muito depressa."
     },
     {
+      "id": "games-249",
       "difficulty": "easy",
       "text": "Que monstro de Minecraft anda com os braços esticados e pega fogo ao sol?",
       "options": [
@@ -3014,6 +3263,7 @@
       "fact": "Os esqueletos também queimam quando o dia nasce."
     },
     {
+      "id": "games-250",
       "difficulty": "easy",
       "text": "Que jogo com boliche, tênis e boxe vinha junto com o console Wii?",
       "options": [
@@ -3026,6 +3276,7 @@
       "fact": "É um dos jogos mais vendidos da história."
     },
     {
+      "id": "games-251",
       "difficulty": "easy",
       "text": "Que gato de celular repete tudo o que você fala com uma voz engraçada?",
       "options": [
@@ -3038,6 +3289,7 @@
       "fact": "O jogo virou desenho animado e uma família de apps."
     },
     {
+      "id": "games-252",
       "difficulty": "easy",
       "text": "Em que jogo de celular um passarinho passa voando entre canos verdes?",
       "options": [
@@ -3050,6 +3302,7 @@
       "fact": "O criador tirou o jogo das lojas em 2014, no auge do sucesso."
     },
     {
+      "id": "games-253",
       "difficulty": "easy",
       "text": "O que quer dizer \"game over\"?",
       "options": [
@@ -3062,6 +3315,7 @@
       "fact": "Nos fliperamas, era hora de pôr mais uma ficha."
     },
     {
+      "id": "games-254",
       "difficulty": "easy",
       "text": "Que jogo do Mario é uma festa de tabuleiro cheia de minijogos?",
       "options": [
@@ -3074,6 +3328,7 @@
       "fact": "A série começou em 1998, no Nintendo 64."
     },
     {
+      "id": "games-255",
       "difficulty": "easy",
       "text": "O que costuma indicar a barra de \"HP\" num jogo?",
       "options": [
@@ -3086,6 +3341,7 @@
       "fact": "A sigla vem do inglês \"hit points\", pontos de vida."
     },
     {
+      "id": "games-256",
       "difficulty": "easy",
       "text": "O que é \"XP\" num jogo?",
       "options": [
@@ -3098,6 +3354,7 @@
       "fact": "Juntando experiência, o personagem sobe de nível."
     },
     {
+      "id": "games-257",
       "difficulty": "easy",
       "text": "Como se chama o inimigo mais forte, que aparece no fim de uma fase?",
       "options": [
@@ -3110,6 +3367,7 @@
       "fact": "Em inglês, ele é chamado de \"boss\"."
     },
     {
+      "id": "games-258",
       "difficulty": "easy",
       "text": "Em \"Among Us\", por onde o impostor se esconde e se move pela nave?",
       "options": [
@@ -3122,6 +3380,7 @@
       "fact": "Só o impostor pode entrar nos dutos."
     },
     {
+      "id": "games-259",
       "difficulty": "easy",
       "text": "Em que jogo de celular se cortam frutas jogadas para o alto?",
       "options": [
@@ -3134,6 +3393,7 @@
       "fact": "Se cortar uma bomba, a partida acaba."
     },
     {
+      "id": "games-260",
       "difficulty": "easy",
       "text": "Em que jogo plantas defendem a casa de uma invasão de zumbis?",
       "options": [
@@ -3146,6 +3406,7 @@
       "fact": "Os girassóis produzem a energia do sol para comprar novas plantas."
     },
     {
+      "id": "games-261",
       "difficulty": "easy",
       "text": "Que bichinho virtual japonês, de 1996, vivia num chaveiro e precisava de cuidados?",
       "options": [
@@ -3158,6 +3419,7 @@
       "fact": "Se fosse esquecido, o bichinho podia morrer."
     },
     {
+      "id": "games-262",
       "difficulty": "easy",
       "text": "Em que jogo de celular uma galinha tenta atravessar ruas e rios sem fim?",
       "options": [
@@ -3170,6 +3432,7 @@
       "fact": "O jogo é uma versão moderna do clássico \"Frogger\", de 1981."
     },
     {
+      "id": "games-263",
       "difficulty": "easy",
       "text": "O que o Pac-Man come para poder perseguir os fantasmas?",
       "options": [
@@ -3182,6 +3445,7 @@
       "fact": "Durante o efeito, os fantasmas ficam azuis e fogem dele."
     },
     {
+      "id": "games-264",
       "difficulty": "easy",
       "text": "Em que jogo de celular, de 2014, os blocos iguais se somam ao deslizar o dedo: 2, 4, 8, 16...?",
       "options": [
@@ -3194,6 +3458,7 @@
       "fact": "O jogo foi criado por um italiano de 19 anos, em apenas um fim de semana."
     },
     {
+      "id": "games-265",
       "difficulty": "easy",
       "text": "Em que jogo de celular é preciso tocar só nas teclas pretas de um piano?",
       "options": [
@@ -3206,6 +3471,7 @@
       "fact": "Encostar numa tecla branca encerra a partida."
     },
     {
+      "id": "games-266",
       "difficulty": "easy",
       "text": "Em que jogo de cartas se grita o nome dele quando sobra uma carta na mão?",
       "options": [
@@ -3218,6 +3484,7 @@
       "fact": "Quem esquece de gritar \"Uno!\" precisa comprar cartas."
     },
     {
+      "id": "games-267",
       "difficulty": "easy",
       "text": "Que bichinho virtual de celular, marrom e redondo, precisava comer, tomar banho e dormir?",
       "options": [
@@ -3230,6 +3497,7 @@
       "fact": "O jogo foi lançado em 2012 e virou febre entre as crianças."
     },
     {
+      "id": "games-268",
       "difficulty": "easy",
       "text": "Que fantasma tímido da série Mario cobre o rosto quando você olha para ele?",
       "options": [
@@ -3242,6 +3510,7 @@
       "fact": "Quando você vira de costas, ele se aproxima."
     },
     {
+      "id": "games-269",
       "difficulty": "easy",
       "text": "De que cor é o pássaro mais famoso de \"Angry Birds\"?",
       "options": [
@@ -3254,6 +3523,7 @@
       "fact": "Ele se chama Red e ganhou até filme no cinema."
     },
     {
+      "id": "games-270",
       "difficulty": "easy",
       "text": "Em Minecraft, o que se consegue socando uma árvore?",
       "options": [
@@ -3266,6 +3536,7 @@
       "fact": "Com madeira se faz a bancada de trabalho, o primeiro passo do jogo."
     },
     {
+      "id": "games-271",
       "difficulty": "easy",
       "text": "O que quer dizer \"PvP\" nos jogos?",
       "options": [
@@ -3278,6 +3549,7 @@
       "fact": "O PvE é o jogador contra o ambiente, os inimigos do próprio jogo."
     },
     {
+      "id": "games-272",
       "difficulty": "easy",
       "text": "O que quer dizer chamar alguém de \"noob\" nos jogos?",
       "options": [
@@ -3290,6 +3562,7 @@
       "fact": "A palavra vem do inglês \"newbie\"."
     },
     {
+      "id": "games-273",
       "difficulty": "medium",
       "text": "Para que Pokémon o Charmander evolui primeiro?",
       "options": [
@@ -3302,6 +3575,7 @@
       "fact": "Depois, Charmeleon evolui para Charizard."
     },
     {
+      "id": "games-274",
       "difficulty": "medium",
       "text": "Em \"Mario Kart\", que casco persegue o primeiro colocado da corrida?",
       "options": [
@@ -3314,6 +3588,7 @@
       "fact": "O casco verde vai em linha reta, e o vermelho persegue o piloto da frente."
     },
     {
+      "id": "games-275",
       "difficulty": "medium",
       "text": "Que jogo de battle royale, da Krafton, é rival do Free Fire nos celulares?",
       "options": [
@@ -3326,6 +3601,7 @@
       "fact": "No PUBG, a vitória vem com a frase \"Winner Winner Chicken Dinner\"."
     },
     {
+      "id": "games-276",
       "difficulty": "medium",
       "text": "Em \"Fortnite\", como se chama a vitória numa partida?",
       "options": [
@@ -3338,6 +3614,7 @@
       "fact": "\"Booyah\" é o grito de vitória do Free Fire."
     },
     {
+      "id": "games-277",
       "difficulty": "medium",
       "text": "Em que série de jogos do PlayStation aparece o boneco de pano Sackboy?",
       "options": [
@@ -3350,6 +3627,7 @@
       "fact": "Os jogos deixavam os jogadores criarem e compartilharem suas próprias fases."
     },
     {
+      "id": "games-278",
       "difficulty": "medium",
       "text": "De que cor é o Blinky, o fantasma mais agressivo do Pac-Man?",
       "options": [
@@ -3362,6 +3640,7 @@
       "fact": "Os outros são Pinky (rosa), Inky (azul) e Clyde (laranja)."
     },
     {
+      "id": "games-279",
       "difficulty": "medium",
       "text": "Em Minecraft, o que acontece quando se tenta dormir numa cama no Nether?",
       "options": [
@@ -3374,6 +3653,7 @@
       "fact": "O mesmo acontece no End."
     },
     {
+      "id": "games-280",
       "difficulty": "medium",
       "text": "Que série de jogos de basquete leva o nome da liga americana?",
       "options": [
@@ -3386,6 +3666,7 @@
       "fact": "O \"2K\" vem da empresa que publica a série."
     },
     {
+      "id": "games-281",
       "difficulty": "medium",
       "text": "Que série de RPG da Bethesda se passa num mundo destruído por guerras nucleares?",
       "options": [
@@ -3398,6 +3679,7 @@
       "fact": "O mascote da série é o Vault Boy, o bonequinho que faz joinha."
     },
     {
+      "id": "games-282",
       "difficulty": "medium",
       "text": "Em \"League of Legends\", que estrutura precisa ser destruída para vencer a partida?",
       "options": [
@@ -3410,6 +3692,7 @@
       "fact": "O Barão Nashor é um monstro que dá bônus ao time que o derrota."
     },
     {
+      "id": "games-283",
       "difficulty": "medium",
       "text": "Em \"Counter-Strike\", qual é o objetivo dos terroristas no modo de bomba?",
       "options": [
@@ -3422,6 +3705,7 @@
       "fact": "Os contraterroristas vencem se desarmarem a bomba a tempo."
     },
     {
+      "id": "games-284",
       "difficulty": "medium",
       "text": "Que lutador de Street Fighter, de quimono vermelho, é o melhor amigo e rival de Ryu?",
       "options": [
@@ -3434,6 +3718,7 @@
       "fact": "Os dois aprenderam com o mesmo mestre e têm golpes parecidos."
     },
     {
+      "id": "games-285",
       "difficulty": "medium",
       "text": "Que lutador de \"Mortal Kombat\" arremessa o chapéu de lâmina afiada?",
       "options": [
@@ -3446,6 +3731,7 @@
       "fact": "Ele é um monge do templo Shaolin, como Liu Kang."
     },
     {
+      "id": "games-286",
       "difficulty": "medium",
       "text": "Em \"Super Mario Bros.\", quantas moedas é preciso juntar para ganhar uma vida extra?",
       "options": [
@@ -3458,6 +3744,7 @@
       "fact": "O cogumelo verde também dá uma vida extra."
     },
     {
+      "id": "games-287",
       "difficulty": "medium",
       "text": "Que cogumelo dá uma vida extra ao Mario?",
       "options": [
@@ -3470,6 +3757,7 @@
       "fact": "O cogumelo venenoso roxo faz o Mario perder uma vida."
     },
     {
+      "id": "games-288",
       "difficulty": "medium",
       "text": "Que Pokémon cor-de-rosa canta e faz todo mundo dormir?",
       "options": [
@@ -3482,6 +3770,7 @@
       "fact": "No desenho, ele fica bravo e rabisca o rosto de quem dorme durante a música."
     },
     {
+      "id": "games-289",
       "difficulty": "medium",
       "text": "Que tipo de Pokémon tem vantagem contra o tipo Fogo?",
       "options": [
@@ -3494,6 +3783,7 @@
       "fact": "Fogo, por sua vez, tem vantagem contra Grama."
     },
     {
+      "id": "games-290",
       "difficulty": "medium",
       "text": "Que Pokémon lendário é um pássaro de gelo?",
       "options": [
@@ -3506,6 +3796,7 @@
       "fact": "Zapdos e Moltres são os outros dois pássaros lendários de Kanto."
     },
     {
+      "id": "games-291",
       "difficulty": "medium",
       "text": "Como se chama o dinheiro dos jogos de \"The Legend of Zelda\"?",
       "options": [
@@ -3518,6 +3809,7 @@
       "fact": "Gil é o dinheiro da série \"Final Fantasy\"."
     },
     {
+      "id": "games-292",
       "difficulty": "medium",
       "text": "Em \"The Last of Us\", que fungo transforma as pessoas em infectados?",
       "options": [
@@ -3530,6 +3822,7 @@
       "fact": "O fungo existe de verdade, mas ataca insetos, como formigas."
     },
     {
+      "id": "games-293",
       "difficulty": "medium",
       "text": "Que portátil colorido da Sega, de 1990, competia com o Game Boy?",
       "options": [
@@ -3542,6 +3835,7 @@
       "fact": "O Game Gear tinha tela colorida, mas gastava pilhas muito rápido."
     },
     {
+      "id": "games-294",
       "difficulty": "medium",
       "text": "Em que jogo o jogador controla um ganso que apronta com os moradores de uma vila?",
       "options": [
@@ -3554,6 +3848,7 @@
       "fact": "O jogo independente fez sucesso em 2019 e virou meme."
     },
     {
+      "id": "games-295",
       "difficulty": "medium",
       "text": "Em que jogo Luigi caça fantasmas com um aspirador de pó?",
       "options": [
@@ -3566,6 +3861,7 @@
       "fact": "O primeiro saiu em 2001, no lançamento do GameCube."
     },
     {
+      "id": "games-296",
       "difficulty": "medium",
       "text": "Que macaquinho de boné vermelho é sobrinho e parceiro do Donkey Kong?",
       "options": [
@@ -3578,6 +3874,7 @@
       "fact": "Cranky Kong é o vovô ranzinza da família."
     },
     {
+      "id": "games-297",
       "difficulty": "medium",
       "text": "Que skatista dá nome a uma famosa série de jogos de skate?",
       "options": [
@@ -3590,6 +3887,7 @@
       "fact": "O brasileiro Bob Burnquist também aparece como personagem nos jogos."
     },
     {
+      "id": "games-298",
       "difficulty": "medium",
       "text": "Que jogo de exploração espacial de 2016 tem bilhões de planetas para visitar?",
       "options": [
@@ -3602,6 +3900,7 @@
       "fact": "O lançamento foi criticado, mas o jogo foi melhorando com anos de atualizações gratuitas."
     },
     {
+      "id": "games-299",
       "difficulty": "medium",
       "text": "Em Minecraft, que pó vermelho funciona como fio elétrico para circuitos?",
       "options": [
@@ -3614,6 +3913,7 @@
       "fact": "Jogadores já construíram até computadores funcionando com redstone."
     },
     {
+      "id": "games-300",
       "difficulty": "medium",
       "text": "Quantos protagonistas jogáveis tem \"GTA V\"?",
       "options": [
@@ -3626,6 +3926,7 @@
       "fact": "Eles são Michael, Franklin e Trevor."
     },
     {
+      "id": "games-301",
       "difficulty": "medium",
       "text": "Em que jogo de terror o monstro azul Huggy Wuggy persegue o jogador numa fábrica de brinquedos?",
       "options": [
@@ -3638,6 +3939,7 @@
       "fact": "O nome vem da boneca Poppy, que pede ajuda ao jogador."
     },
     {
+      "id": "games-302",
       "difficulty": "medium",
       "text": "Que Pokémon amarelo vive com dor de cabeça e solta poderes psíquicos?",
       "options": [
@@ -3650,6 +3952,7 @@
       "fact": "No desenho, ele é o Pokémon da Misty."
     },
     {
+      "id": "games-303",
       "difficulty": "medium",
       "text": "Em \"Clash Royale\", quantas torres cada jogador tem na arena?",
       "options": [
@@ -3662,6 +3965,7 @@
       "fact": "Derrubar a torre do rei garante a vitória na hora."
     },
     {
+      "id": "games-304",
       "difficulty": "medium",
       "text": "Que empresa criou o jogo \"Candy Crush Saga\"?",
       "options": [
@@ -3674,6 +3978,7 @@
       "fact": "A Supercell criou \"Clash of Clans\", e a Rovio, \"Angry Birds\"."
     },
     {
+      "id": "games-305",
       "difficulty": "hard",
       "text": "Como se chama o mundo onde se passa \"World of Warcraft\"?",
       "options": [
@@ -3686,6 +3991,7 @@
       "fact": "Tamriel é o continente da série \"The Elder Scrolls\"."
     },
     {
+      "id": "games-306",
       "difficulty": "hard",
       "text": "Que integrante da equipe S.T.A.R.S. protagoniza o primeiro \"Resident Evil\" ao lado de Chris Redfield?",
       "options": [
@@ -3698,6 +4004,7 @@
       "fact": "Claire, irmã de Chris, só aparece a partir de \"Resident Evil 2\"."
     },
     {
+      "id": "games-307",
       "difficulty": "hard",
       "text": "Como se chama o jogo de Zelda de 2023, continuação de \"Breath of the Wild\"?",
       "options": [
@@ -3710,6 +4017,7 @@
       "fact": "No jogo, Link pode juntar objetos para montar veículos e máquinas."
     },
     {
+      "id": "games-308",
       "difficulty": "hard",
       "text": "Em que ano o PlayStation 4 foi lançado?",
       "options": [
@@ -3722,6 +4030,7 @@
       "fact": "Na mesma época saiu o Xbox One, seu grande rival."
     },
     {
+      "id": "games-309",
       "difficulty": "hard",
       "text": "Em que jogo um pequeno cavaleiro explora o reino subterrâneo de Hallownest?",
       "options": [
@@ -3734,6 +4043,7 @@
       "fact": "O jogo foi feito por um estúdio australiano de apenas três pessoas."
     },
     {
+      "id": "games-310",
       "difficulty": "hard",
       "text": "Que série de futebol da Konami, antes do PES, fez sucesso no Super Nintendo?",
       "options": [
@@ -3746,6 +4056,7 @@
       "fact": "O atacante fictício Allejo, que imitava um brasileiro, virou lenda entre os fãs."
     },
     {
+      "id": "games-311",
       "difficulty": "hard",
       "text": "Que estúdio americano criou a série \"Halo\"?",
       "options": [
@@ -3758,6 +4069,7 @@
       "fact": "Depois, a série passou para o estúdio 343 Industries, da Microsoft."
     },
     {
+      "id": "games-312",
       "difficulty": "hard",
       "text": "Que time brasileiro venceu o primeiro Mundial de Free Fire, em 2019?",
       "options": [
@@ -3770,6 +4082,7 @@
       "fact": "A final foi disputada no Rio de Janeiro."
     },
     {
+      "id": "games-313",
       "difficulty": "hard",
       "text": "Que console de 32 bits da Sega concorreu com o primeiro PlayStation?",
       "options": [
@@ -3782,6 +4095,7 @@
       "fact": "O Saturn tinha dois processadores e era difícil de programar."
     },
     {
+      "id": "games-314",
       "difficulty": "hard",
       "text": "Que programador da Sega é um dos criadores do Sonic?",
       "options": [
@@ -3794,6 +4108,7 @@
       "fact": "O visual do Sonic foi desenhado por Naoto Ohshima."
     },
     {
+      "id": "games-315",
       "difficulty": "hard",
       "text": "Em que centro de pesquisa começa a história de \"Half-Life\"?",
       "options": [
@@ -3806,6 +4121,7 @@
       "fact": "A Aperture Science é a empresa rival, de \"Portal\"."
     },
     {
+      "id": "games-316",
       "difficulty": "hard",
       "text": "Em \"Half-Life 2\", que arma pega e arremessa objetos do cenário?",
       "options": [
@@ -3818,6 +4134,7 @@
       "fact": "A Portal Gun é a arma da série \"Portal\"."
     },
     {
+      "id": "games-317",
       "difficulty": "hard",
       "text": "Quantas estrelas existem para coletar em \"Super Mario 64\"?",
       "options": [
@@ -3830,6 +4147,7 @@
       "fact": "Com 70 já dá para enfrentar o Bowser na fase final."
     },
     {
+      "id": "games-318",
       "difficulty": "hard",
       "text": "Qual é o jogo mais vendido do Nintendo Switch?",
       "options": [
@@ -3842,6 +4160,7 @@
       "fact": "Ele é uma versão melhorada do \"Mario Kart 8\", do Wii U."
     },
     {
+      "id": "games-319",
       "difficulty": "hard",
       "text": "Como se chama a terra onde se passa \"Elden Ring\"?",
       "options": [
@@ -3854,6 +4173,7 @@
       "fact": "Lordran é o reino do primeiro \"Dark Souls\", e Yharnam, a cidade de \"Bloodborne\"."
     },
     {
+      "id": "games-320",
       "difficulty": "hard",
       "text": "Que lutador de Street Fighter é um sumô japonês?",
       "options": [
@@ -3866,6 +4186,7 @@
       "fact": "Zangief é o lutador russo, famoso pelo piledriver giratório."
     },
     {
+      "id": "games-321",
       "difficulty": "hard",
       "text": "Que item faz o Pikachu evoluir para Raichu?",
       "options": [
@@ -3878,6 +4199,7 @@
       "fact": "No desenho, o Pikachu de Ash recusa a evolução."
     },
     {
+      "id": "games-322",
       "difficulty": "hard",
       "text": "Como se chama o chefe da Equipe Rocket nos primeiros jogos de Pokémon?",
       "options": [
@@ -3890,6 +4212,7 @@
       "fact": "Ele também é o líder do último ginásio de Kanto."
     },
     {
+      "id": "games-323",
       "difficulty": "hard",
       "text": "Que Pokémon lendário aparece na capa de \"Pokémon Gold\"?",
       "options": [
@@ -3902,6 +4225,7 @@
       "fact": "Lugia é o lendário da capa de \"Pokémon Silver\"."
     },
     {
+      "id": "games-324",
       "difficulty": "hard",
       "text": "Em \"Sonic\", como se chama a ilha flutuante onde mora o Knuckles?",
       "options": [
@@ -3914,6 +4238,7 @@
       "fact": "Ela flutua graças ao poder da Esmeralda Mestra."
     },
     {
+      "id": "games-325",
       "difficulty": "hard",
       "text": "Como se chama o protagonista de \"Kingdom Hearts\"?",
       "options": [
@@ -3926,6 +4251,7 @@
       "fact": "Ele luta com a Keyblade, uma espada em forma de chave."
     },
     {
+      "id": "games-326",
       "difficulty": "hard",
       "text": "Que ave amarela serve de montaria na série \"Final Fantasy\"?",
       "options": [
@@ -3938,6 +4264,7 @@
       "fact": "O Moogle é a criaturinha branca de pompom vermelho na cabeça."
     },
     {
+      "id": "games-327",
       "difficulty": "hard",
       "text": "Como se chama o cientista que criou o Mega Man?",
       "options": [
@@ -3950,6 +4277,7 @@
       "fact": "O Dr. Wily é o vilão que rouba os robôs do Dr. Light."
     },
     {
+      "id": "games-328",
       "difficulty": "hard",
       "text": "Que console da Nintendo, de 1995, mostrava gráficos 3D em vermelho e preto e fracassou?",
       "options": [
@@ -3962,6 +4290,7 @@
       "fact": "Ele foi tirado do mercado em menos de um ano."
     },
     {
+      "id": "games-329",
       "difficulty": "hard",
       "text": "Que estúdio brasileiro criou \"Horizon Chase\"?",
       "options": [
@@ -3974,6 +4303,7 @@
       "fact": "O estúdio é de Porto Alegre."
     },
     {
+      "id": "games-330",
       "difficulty": "hard",
       "text": "Que jogo de tiro de 1997, do Nintendo 64, era baseado num filme de James Bond?",
       "options": [
@@ -3986,6 +4316,7 @@
       "fact": "O modo multijogador em tela dividida virou febre."
     },
     {
+      "id": "games-331",
       "difficulty": "hard",
       "text": "Que série de estratégia da Microsoft tem civilizações medievais e antigas?",
       "options": [
@@ -3998,6 +4329,7 @@
       "fact": "O segundo jogo, de 1999, é o mais lembrado da série."
     },
     {
+      "id": "games-332",
       "difficulty": "hard",
       "text": "Que série de estratégia por turnos tem o lema \"só mais um turno\"?",
       "options": [
@@ -4010,6 +4342,7 @@
       "fact": "Ela foi criada por Sid Meier, em 1991."
     },
     {
+      "id": "games-333",
       "difficulty": "hard",
       "text": "Como o Mario se chamava no fliperama \"Donkey Kong\", de 1981?",
       "options": [
@@ -4022,6 +4355,7 @@
       "fact": "Lá ele era carpinteiro, e não encanador."
     },
     {
+      "id": "games-334",
       "difficulty": "hard",
       "text": "Quanto dura um dia completo, com noite, em Minecraft?",
       "options": [
@@ -4034,6 +4368,7 @@
       "fact": "O dia tem cerca de 10 minutos de sol."
     },
     {
+      "id": "games-335",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o modo battle royale de \"Fortnite\"?",
       "options": [
@@ -4046,6 +4381,7 @@
       "fact": "O jogo original era um modo cooperativo contra zumbis, chamado \"Salve o Mundo\"."
     },
     {
+      "id": "games-336",
       "difficulty": "hard",
       "text": "Que designer da Namco criou o Pac-Man?",
       "options": [
@@ -4058,6 +4394,7 @@
       "fact": "Ele queria um jogo que também atraísse o público feminino aos fliperamas."
     },
     {
+      "id": "games-337",
       "difficulty": "impossible",
       "text": "Em que ano a Nintendo foi fundada?",
       "options": [
@@ -4072,6 +4409,7 @@
       "fact": "O nome original da empresa era Nintendo Koppai."
     },
     {
+      "id": "games-338",
       "difficulty": "impossible",
       "text": "Qual é a pontuação máxima possível no Pac-Man original?",
       "options": [
@@ -4086,6 +4424,7 @@
       "fact": "Para chegar lá, é preciso passar as 255 fases sem perder vidas, comendo tudo, inclusive os fantasmas."
     },
     {
+      "id": "games-339",
       "difficulty": "impossible",
       "text": "A que distância do centro fica a borda do mundo de Minecraft, aproximadamente?",
       "options": [
@@ -4100,6 +4439,7 @@
       "fact": "Andando sem parar, um jogador levaria mais de dois meses reais para chegar lá."
     },
     {
+      "id": "games-340",
       "difficulty": "impossible",
       "text": "Em que ano os primeiros jogos de Pokémon foram lançados no Japão?",
       "options": [
@@ -4114,6 +4454,7 @@
       "fact": "No Japão, as versões originais foram a Red e a Green."
     },
     {
+      "id": "games-341",
       "difficulty": "easy",
       "text": "Em que jogo de papel se tenta acertar os navios escondidos do adversário dizendo coordenadas?",
       "options": [
@@ -4126,6 +4467,7 @@
       "fact": "O jogo também ganhou versão de tabuleiro, com pinos e grade de plástico."
     },
     {
+      "id": "games-342",
       "difficulty": "easy",
       "text": "Como se chamam os controles destacáveis do Nintendo Switch?",
       "options": [
@@ -4138,6 +4480,7 @@
       "fact": "O nome junta \"joy\" (alegria) com \"controller\"."
     },
     {
+      "id": "games-343",
       "difficulty": "easy",
       "text": "Em que jogo online um jogador desenha e os outros tentam adivinhar a palavra?",
       "options": [
@@ -4150,6 +4493,7 @@
       "fact": "O Gartic é um jogo brasileiro, criado em 2008."
     },
     {
+      "id": "games-344",
       "difficulty": "easy",
       "text": "Em que brincadeira se sorteia uma letra e todos escrevem nome, cidade, fruta e outras coisas com ela?",
       "options": [
@@ -4162,6 +4506,7 @@
       "fact": "Em várias regiões do Brasil, a brincadeira também é chamada de adedanha ou adedonha."
     },
     {
+      "id": "games-345",
       "difficulty": "easy",
       "text": "Que jogo de tabuleiro tem um campo de batalha de 8 por 8 casas e peças como torre, bispo e rei?",
       "options": [
@@ -4174,6 +4519,7 @@
       "fact": "O xadrez moderno se espalhou pela Europa a partir do século XV."
     },
     {
+      "id": "games-346",
       "difficulty": "easy",
       "text": "Que empresa criou o Mario?",
       "options": [
@@ -4186,6 +4532,7 @@
       "fact": "Mario apareceu pela primeira vez em 1981."
     },
     {
+      "id": "games-347",
       "difficulty": "easy",
       "text": "Que empresa criou o Sonic?",
       "options": [
@@ -4198,6 +4545,7 @@
       "fact": "O Sonic foi criado para ser um mascote rápido e \"radical\", em oposição ao Mario."
     },
     {
+      "id": "games-348",
       "difficulty": "easy",
       "text": "Que acessório se coloca na cabeça para jogar em realidade virtual?",
       "options": [
@@ -4210,6 +4558,7 @@
       "fact": "Alguns óculos de realidade virtual já funcionam sem precisar de computador."
     },
     {
+      "id": "games-349",
       "difficulty": "easy",
       "text": "Que jogo de futebol de celular e console da EA tem o modo Ultimate Team?",
       "options": [
@@ -4222,6 +4571,7 @@
       "fact": "O Ultimate Team permite montar um time com cartas de jogadores reais."
     },
     {
+      "id": "games-350",
       "difficulty": "easy",
       "text": "Que jogo de adivinhar palavras desenha um bonequinho a cada erro?",
       "options": [
@@ -4234,6 +4584,7 @@
       "fact": "Quando o desenho fica completo, o jogador perde."
     },
     {
+      "id": "games-351",
       "difficulty": "easy",
       "text": "Que jogo de tabuleiro com bolinhas de gude tem a forma de uma estrela de seis pontas?",
       "options": [
@@ -4246,6 +4597,7 @@
       "fact": "Apesar do nome, o jogo foi inventado na Alemanha, no século XIX."
     },
     {
+      "id": "games-352",
       "difficulty": "easy",
       "text": "Que personagem do Mario é a princesa de vestido amarelo, amiga da Peach?",
       "options": [
@@ -4258,6 +4610,7 @@
       "fact": "Daisy é a princesa do reino de Sarasaland."
     },
     {
+      "id": "games-353",
       "difficulty": "easy",
       "text": "Que dinossauro aparece no \"jogo do Chrome\" quando não há internet?",
       "options": [
@@ -4270,6 +4623,7 @@
       "fact": "No jogo, o dinossauro precisa pular cactos e desviar de pterodáctilos."
     },
     {
+      "id": "games-354",
       "difficulty": "easy",
       "text": "Em que jogo de celular o jogador cuida de um cachorrinho ou gato virtual que fala?",
       "options": [
@@ -4282,6 +4636,7 @@
       "fact": "Talking Tom foi lançado em 2010 e virou desenho animado."
     },
     {
+      "id": "games-355",
       "difficulty": "easy",
       "text": "Que jogo de tabuleiro com dinheiro de mentira tem propriedades e hotéis?",
       "options": [
@@ -4294,6 +4649,7 @@
       "fact": "A versão original americana se chama Monopoly."
     },
     {
+      "id": "games-356",
       "difficulty": "easy",
       "text": "Em que jogo de tabuleiro os jogadores conquistam territórios do mapa-múndi com exércitos?",
       "options": [
@@ -4306,6 +4662,7 @@
       "fact": "War é a versão brasileira do jogo Risk."
     },
     {
+      "id": "games-357",
       "difficulty": "easy",
       "text": "Em que jogo de tabuleiro se descobre quem cometeu um crime, com que arma e em que cômodo?",
       "options": [
@@ -4318,6 +4675,7 @@
       "fact": "A versão original inglesa se chama Cluedo."
     },
     {
+      "id": "games-358",
       "difficulty": "easy",
       "text": "Em que jogo de cartas o objetivo é formar sequências e trincas, e quem \"bate\" primeiro ganha a rodada?",
       "options": [
@@ -4330,6 +4688,7 @@
       "fact": "O buraco costuma ser jogado com dois baralhos completos."
     },
     {
+      "id": "games-359",
       "difficulty": "easy",
       "text": "Que jogo com peças retangulares e pontinhos se joga encaixando números iguais?",
       "options": [
@@ -4342,6 +4701,7 @@
       "fact": "Um dominó comum tem 28 peças."
     },
     {
+      "id": "games-360",
       "difficulty": "easy",
       "text": "Em que jogo de tabuleiro as peças só andam na diagonal e \"comem\" pulando a peça adversária?",
       "options": [
@@ -4354,6 +4714,7 @@
       "fact": "Quando uma peça chega ao outro lado do tabuleiro, vira \"dama\" e pode andar mais casas."
     },
     {
+      "id": "games-361",
       "difficulty": "easy",
       "text": "Em que jogo de tabuleiro colorido se joga o dado e é preciso tirar 6 para tirar a peça de casa?",
       "options": [
@@ -4366,6 +4727,7 @@
       "fact": "O ludo vem de um jogo indiano antigo chamado pachisi."
     },
     {
+      "id": "games-362",
       "difficulty": "easy",
       "text": "Que jogo de celular famoso tem cartas, torres e uma arena com reis e princesas?",
       "options": [
@@ -4378,6 +4740,7 @@
       "fact": "Clash Royale e Clash of Clans são da mesma empresa, a finlandesa Supercell."
     },
     {
+      "id": "games-363",
       "difficulty": "easy",
       "text": "Que jogo de celular da Supercell tem partidas rápidas de 3 contra 3 com personagens chamados de \"brawlers\"?",
       "options": [
@@ -4390,6 +4753,7 @@
       "fact": "Brawl Stars foi lançado no mundo todo em 2018."
     },
     {
+      "id": "games-364",
       "difficulty": "easy",
       "text": "Em que jogo de celular um bichinho verde vai pulando de plataforma em plataforma, subindo sem parar?",
       "options": [
@@ -4402,6 +4766,7 @@
       "fact": "Doodle Jump foi um dos primeiros grandes sucessos da App Store, em 2009."
     },
     {
+      "id": "games-365",
       "difficulty": "easy",
       "text": "Que botão costuma pausar o jogo no controle?",
       "options": [
@@ -4414,6 +4779,7 @@
       "fact": "Nos controles modernos, o Start foi substituído por botões como \"Options\" e \"Menu\"."
     },
     {
+      "id": "games-366",
       "difficulty": "easy",
       "text": "Como se chama a pessoa que joga videogame profissionalmente, em competições?",
       "options": [
@@ -4426,6 +4792,7 @@
       "fact": "Algumas competições de e-sports distribuem dezenas de milhões de dólares em prêmios."
     },
     {
+      "id": "games-367",
       "difficulty": "easy",
       "text": "Que jogo brasileiro, inspirado no Wordle, desafia a adivinhar uma palavra de cinco letras por dia?",
       "options": [
@@ -4438,6 +4805,7 @@
       "fact": "O Wordle original, em inglês, foi criado em 2021."
     },
     {
+      "id": "games-368",
       "difficulty": "easy",
       "text": "Como se chamava a máquina de jogos de moedinha, comum em bares e shoppings?",
       "options": [
@@ -4450,6 +4818,7 @@
       "fact": "Em inglês, os fliperamas são chamados de \"arcades\"."
     },
     {
+      "id": "games-369",
       "difficulty": "easy",
       "text": "Como se chamava a loja onde se pagava por hora para jogar em computadores em rede?",
       "options": [
@@ -4462,6 +4831,7 @@
       "fact": "As lan houses viveram seu auge no Brasil nos anos 2000."
     },
     {
+      "id": "games-370",
       "difficulty": "medium",
       "text": "Que jogo de tabuleiro em equipes mistura mímica, desenho e cartas com categorias?",
       "options": [
@@ -4474,6 +4844,7 @@
       "fact": "Numa das categorias, o jogador precisa fazer mímica sem dizer nenhuma palavra."
     },
     {
+      "id": "games-371",
       "difficulty": "medium",
       "text": "Que personagem de \"Animal Crossing\" é uma cachorrinha secretária amarela?",
       "options": [
@@ -4486,6 +4857,7 @@
       "fact": "Isabelle também virou lutadora em \"Super Smash Bros. Ultimate\"."
     },
     {
+      "id": "games-372",
       "difficulty": "medium",
       "text": "Que personagem de \"The Legend of Zelda\" é um povo de pedra que come rochas?",
       "options": [
@@ -4498,6 +4870,7 @@
       "fact": "Os Zora são o povo aquático da série."
     },
     {
+      "id": "games-373",
       "difficulty": "medium",
       "text": "Em \"Minecraft\", que mob verde e pixelado pula e se divide em pedaços menores?",
       "options": [
@@ -4510,6 +4883,7 @@
       "fact": "Os slimes aparecem principalmente em pântanos e em cavernas."
     },
     {
+      "id": "games-374",
       "difficulty": "medium",
       "text": "Em \"Minecraft\", que animal pode ser domado com ossos e vira companheiro?",
       "options": [
@@ -4522,6 +4896,7 @@
       "fact": "Os gatos são domados com peixe cru."
     },
     {
+      "id": "games-375",
       "difficulty": "medium",
       "text": "Em \"Minecraft\", que bloco cai quando não tem nada embaixo, junto com o cascalho?",
       "options": [
@@ -4534,6 +4909,7 @@
       "fact": "A areia, derretida numa fornalha, vira vidro."
     },
     {
+      "id": "games-376",
       "difficulty": "medium",
       "text": "Em \"Minecraft\", em que se transforma um aldeão atingido por um raio?",
       "options": [
@@ -4546,6 +4922,7 @@
       "fact": "Um creeper atingido por um raio vira um creeper carregado, com explosão mais forte."
     },
     {
+      "id": "games-377",
       "difficulty": "medium",
       "text": "Em \"Minecraft\", que golem gigante protege as vilas?",
       "options": [
@@ -4558,6 +4935,7 @@
       "fact": "O golem de neve é feito com dois blocos de neve e uma abóbora."
     },
     {
+      "id": "games-378",
       "difficulty": "medium",
       "text": "Que jogo de tabuleiro com pedras pretas e brancas, nascido na China, é um dos mais antigos do mundo?",
       "options": [
@@ -4570,6 +4948,7 @@
       "fact": "Em 2016, o programa AlphaGo venceu Lee Sedol, um dos melhores jogadores do mundo."
     },
     {
+      "id": "games-379",
       "difficulty": "medium",
       "text": "Que jogo de cartas tem monstros como o Dragão Branco de Olhos Azuis?",
       "options": [
@@ -4582,6 +4961,7 @@
       "fact": "Yu-Gi-Oh! começou como mangá, em 1996."
     },
     {
+      "id": "games-380",
       "difficulty": "medium",
       "text": "Em que jogo antigo, com dados, as peças andam pelas pontas triangulares do tabuleiro?",
       "options": [
@@ -4594,6 +4974,7 @@
       "fact": "O gamão tem milhares de anos de história, com versões já jogadas na antiga Mesopotâmia."
     },
     {
+      "id": "games-381",
       "difficulty": "medium",
       "text": "Que lutador tailandês de \"Street Fighter\" tem um tapa-olho e uma cicatriz no peito?",
       "options": [
@@ -4606,6 +4987,7 @@
       "fact": "A cicatriz de Sagat foi causada por um golpe de Ryu."
     },
     {
+      "id": "games-382",
       "difficulty": "medium",
       "text": "Em \"Mortal Kombat\", como se chama o feiticeiro que rouba a alma dos adversários?",
       "options": [
@@ -4618,6 +5000,7 @@
       "fact": "Shang Tsung é o chefe do primeiro \"Mortal Kombat\", de 1992."
     },
     {
+      "id": "games-383",
       "difficulty": "medium",
       "text": "Que lutador de \"Tekken\" é um japonês do clã Mishima, de cabelo espetado, rival do próprio pai?",
       "options": [
@@ -4630,6 +5013,7 @@
       "fact": "Jin é filho de Kazuya Mishima e neto de Heihachi."
     },
     {
+      "id": "games-384",
       "difficulty": "medium",
       "text": "Que série de jogos de luta da Capcom tem os personagens da Marvel lutando contra os da Capcom?",
       "options": [
@@ -4642,6 +5026,7 @@
       "fact": "\"Marvel vs. Capcom 2\" é considerado um dos melhores jogos de luta em equipe."
     },
     {
+      "id": "games-385",
       "difficulty": "medium",
       "text": "Que jogo de luta da NetherRealm coloca super-heróis da DC uns contra os outros?",
       "options": [
@@ -4654,6 +5039,7 @@
       "fact": "Na história do jogo, o Superman vira um ditador."
     },
     {
+      "id": "games-386",
       "difficulty": "medium",
       "text": "Que série de jogos tem o Batman nos lugares Asilo Arkham e Cidade Arkham?",
       "options": [
@@ -4666,6 +5052,7 @@
       "fact": "O primeiro, \"Batman: Arkham Asylum\", é de 2009."
     },
     {
+      "id": "games-387",
       "difficulty": "medium",
       "text": "Que jogo do Homem-Aranha, de 2018, foi exclusivo do PlayStation 4?",
       "options": [
@@ -4678,6 +5065,7 @@
       "fact": "O jogo vendeu mais de 20 milhões de cópias."
     },
     {
+      "id": "games-388",
       "difficulty": "medium",
       "text": "Que estúdio fez a série \"Ratchet & Clank\" e \"Marvel's Spider-Man\"?",
       "options": [
@@ -4690,6 +5078,7 @@
       "fact": "A Insomniac também criou o dragão Spyro."
     },
     {
+      "id": "games-389",
       "difficulty": "medium",
       "text": "Que estúdio da Sony criou a série \"God of War\"?",
       "options": [
@@ -4702,6 +5091,7 @@
       "fact": "O \"God of War\" de 2018 levou Kratos para a mitologia nórdica."
     },
     {
+      "id": "games-390",
       "difficulty": "medium",
       "text": "Em \"God of War\" (2018), como se chama o filho de Kratos?",
       "options": [
@@ -4714,6 +5104,7 @@
       "fact": "No fim do jogo, descobre-se que Atreus também tem o nome de Loki."
     },
     {
+      "id": "games-391",
       "difficulty": "medium",
       "text": "Que jogo da Sony tem a caçadora Aloy enfrentando máquinas em forma de dinossauro?",
       "options": [
@@ -4726,6 +5117,7 @@
       "fact": "A série foi criada pelo estúdio holandês Guerrilla Games."
     },
     {
+      "id": "games-392",
       "difficulty": "medium",
       "text": "Que jogo de 2020 tem o samurai Jin Sakai defendendo uma ilha japonesa da invasão mongol?",
       "options": [
@@ -4738,6 +5130,7 @@
       "fact": "O jogo tem um modo em preto e branco inspirado nos filmes de Akira Kurosawa."
     },
     {
+      "id": "games-393",
       "difficulty": "medium",
       "text": "Que jogo com peças de símbolos chineses, como bambus e dragões, costuma ser jogado por quatro pessoas?",
       "options": [
@@ -4750,6 +5143,7 @@
       "fact": "Fora da China, ficou famosa também a versão de paciência, em que se juntam pares de peças."
     },
     {
+      "id": "games-394",
       "difficulty": "medium",
       "text": "Em \"The Sims\", que objeto verde flutua sobre a cabeça dos personagens?",
       "options": [
@@ -4762,6 +5156,7 @@
       "fact": "A cor do plumbob mostra o humor do sim."
     },
     {
+      "id": "games-395",
       "difficulty": "medium",
       "text": "Em \"The Sims\", qual é o código de trapaça clássico que dá 1.000 simoleons?",
       "options": [
@@ -4774,6 +5169,7 @@
       "fact": "\"Motherlode\" dá ainda mais: 50 mil simoleons."
     },
     {
+      "id": "games-396",
       "difficulty": "medium",
       "text": "Em \"GTA: San Andreas\", em que cidade fictícia fica a Grove Street?",
       "options": [
@@ -4786,6 +5182,7 @@
       "fact": "San Fierro é inspirada em San Francisco, e Las Venturas, em Las Vegas."
     },
     {
+      "id": "games-397",
       "difficulty": "medium",
       "text": "Em que jogo da série GTA o protagonista é Tommy Vercetti, nos anos 1980?",
       "options": [
@@ -4798,6 +5195,7 @@
       "fact": "A trilha sonora do jogo tem dezenas de músicas reais dos anos 1980."
     },
     {
+      "id": "games-398",
       "difficulty": "hard",
       "text": "Que cidade dos Estados Unidos inspirou a Vice City, de \"GTA\"?",
       "options": [
@@ -4810,6 +5208,7 @@
       "fact": "O jogo foi lançado em 2002, para PlayStation 2."
     },
     {
+      "id": "games-399",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"GTA V\"?",
       "options": [
@@ -4822,6 +5221,7 @@
       "fact": "O jogo arrecadou 1 bilhão de dólares em apenas três dias."
     },
     {
+      "id": "games-400",
       "difficulty": "hard",
       "text": "Que estúdio criou \"Hades\" e \"Bastion\"?",
       "options": [
@@ -4834,6 +5234,7 @@
       "fact": "\"Hades II\" entrou em acesso antecipado em 2024."
     },
     {
+      "id": "games-401",
       "difficulty": "hard",
       "text": "Em \"The Last of Us Part II\", quem é a outra protagonista jogável, além de Ellie?",
       "options": [
@@ -4846,6 +5247,7 @@
       "fact": "A série de TV da HBO começou a adaptar a história em 2023."
     },
     {
+      "id": "games-402",
       "difficulty": "hard",
       "text": "Que ator interpreta Joel na série de TV \"The Last of Us\"?",
       "options": [
@@ -4858,6 +5260,7 @@
       "fact": "Na versão original do jogo, Joel foi interpretado por Troy Baker."
     },
     {
+      "id": "games-403",
       "difficulty": "hard",
       "text": "Em \"Hollow Knight\", qual é o nome da continuação que demorou anos para sair?",
       "options": [
@@ -4870,6 +5273,7 @@
       "fact": "A protagonista de \"Silksong\" é Hornet, uma personagem do primeiro jogo."
     },
     {
+      "id": "games-404",
       "difficulty": "hard",
       "text": "Que jogo de 2015, da CD Projekt Red, ganhou dezenas de prêmios de jogo do ano?",
       "options": [
@@ -4882,6 +5286,7 @@
       "fact": "A expansão \"Blood and Wine\" é considerada uma das melhores já feitas."
     },
     {
+      "id": "games-405",
       "difficulty": "hard",
       "text": "Em \"Cyberpunk 2077\", que ator interpreta o personagem Johnny Silverhand?",
       "options": [
@@ -4894,6 +5299,7 @@
       "fact": "No anúncio, Keanu respondeu a um fã na plateia: \"Você é de tirar o fôlego!\"."
     },
     {
+      "id": "games-406",
       "difficulty": "hard",
       "text": "Que jogo da FromSoftware, de 2019, tem um shinobi de braço protético no Japão feudal?",
       "options": [
@@ -4906,6 +5312,7 @@
       "fact": "Sekiro ganhou o prêmio de jogo do ano no The Game Awards de 2019."
     },
     {
+      "id": "games-407",
       "difficulty": "hard",
       "text": "Que jogo venceu o prêmio de jogo do ano no The Game Awards de 2022?",
       "options": [
@@ -4918,6 +5325,7 @@
       "fact": "Elden Ring vendeu mais de 25 milhões de cópias."
     },
     {
+      "id": "games-408",
       "difficulty": "hard",
       "text": "Que jogo venceu o prêmio de jogo do ano no The Game Awards de 2023?",
       "options": [
@@ -4930,6 +5338,7 @@
       "fact": "O jogo foi desenvolvido pelo estúdio belga Larian."
     },
     {
+      "id": "games-409",
       "difficulty": "hard",
       "text": "Em que jogo de RPG de mesa é baseado \"Baldur's Gate 3\"?",
       "options": [
@@ -4942,6 +5351,7 @@
       "fact": "Dungeons & Dragons foi criado em 1974."
     },
     {
+      "id": "games-410",
       "difficulty": "hard",
       "text": "Que jogo independente de 2017 tem gráficos que imitam os desenhos animados dos anos 1930?",
       "options": [
@@ -4954,6 +5364,7 @@
       "fact": "Cada quadro do jogo foi desenhado à mão, como nos desenhos da época."
     },
     {
+      "id": "games-411",
       "difficulty": "hard",
       "text": "Que jogo de 2015, da Moon Studios, tem um espírito guardião da floresta chamado Ori?",
       "options": [
@@ -4966,6 +5377,7 @@
       "fact": "O jogo é famoso pela trilha sonora emocionante e pelo começo triste."
     },
     {
+      "id": "games-412",
       "difficulty": "hard",
       "text": "Que jogo de 2010 mostra um menino num mundo sombrio em preto e branco?",
       "options": [
@@ -4978,6 +5390,7 @@
       "fact": "O mesmo estúdio dinamarquês, Playdead, fez depois \"Inside\"."
     },
     {
+      "id": "games-413",
       "difficulty": "hard",
       "text": "Que jogo de 2012 coloca o jogador como uma figura de manto atravessando um deserto até uma montanha?",
       "options": [
@@ -4990,6 +5403,7 @@
       "fact": "\"Journey\" foi o primeiro jogo a ser indicado ao Grammy por sua trilha sonora."
     },
     {
+      "id": "games-414",
       "difficulty": "hard",
       "text": "Em que jogo um herói precisa derrotar 16 colossos gigantes para salvar uma garota?",
       "options": [
@@ -5002,6 +5416,7 @@
       "fact": "O jogo foi criado por Fumito Ueda, também diretor de \"Ico\"."
     },
     {
+      "id": "games-415",
       "difficulty": "hard",
       "text": "Que jogo de terror de 2014 tem uma mulher sendo perseguida por um alienígena numa estação espacial?",
       "options": [
@@ -5014,6 +5429,7 @@
       "fact": "O jogo foi elogiado por recriar o clima do filme de 1979."
     },
     {
+      "id": "games-416",
       "difficulty": "hard",
       "text": "Em que série de terror o engenheiro Isaac Clarke enfrenta criaturas chamadas necromorfos?",
       "options": [
@@ -5026,6 +5442,7 @@
       "fact": "O primeiro \"Dead Space\" ganhou um remake em 2023."
     },
     {
+      "id": "games-417",
       "difficulty": "hard",
       "text": "Que personagem de \"Resident Evil Village\" ficou famosa como uma vampira gigante?",
       "options": [
@@ -5038,6 +5455,7 @@
       "fact": "A altura da personagem é de cerca de 2,90 metros, contando o chapéu e o salto."
     },
     {
+      "id": "games-418",
       "difficulty": "hard",
       "text": "Em \"Resident Evil 4\", que personagem o protagonista precisa resgatar?",
       "options": [
@@ -5050,6 +5468,7 @@
       "fact": "Ashley é a filha do presidente dos Estados Unidos no jogo."
     },
     {
+      "id": "games-419",
       "difficulty": "hard",
       "text": "Que vilão de \"Resident Evil\" usa óculos escuros e é ex-capitão da equipe S.T.A.R.S.?",
       "options": [
@@ -5062,6 +5481,7 @@
       "fact": "Wesker é um dos vilões mais icônicos da série."
     },
     {
+      "id": "games-420",
       "difficulty": "hard",
       "text": "Que jogador brasileiro de \"Counter-Strike\" tem o apelido de \"coldzera\"?",
       "options": [
@@ -5074,6 +5494,7 @@
       "fact": "Coldzera foi eleito o melhor jogador do mundo de CS em 2016 e 2017."
     },
     {
+      "id": "games-421",
       "difficulty": "impossible",
       "text": "Quantas cópias, aproximadamente, Minecraft já vendeu?",
       "options": [
@@ -5088,6 +5509,7 @@
       "fact": "Minecraft é o jogo mais vendido da história."
     },
     {
+      "id": "games-422",
       "difficulty": "impossible",
       "text": "Quantas cópias, aproximadamente, \"GTA V\" já vendeu?",
       "options": [
@@ -5102,6 +5524,7 @@
       "fact": "É o segundo jogo mais vendido da história, atrás de Minecraft."
     },
     {
+      "id": "games-423",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o GameCube?",
       "options": [
@@ -5116,6 +5539,7 @@
       "fact": "Os discos do GameCube eram menores que um DVD comum, com cerca de 8 cm."
     },
     {
+      "id": "games-424",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro Xbox?",
       "options": [
@@ -5130,6 +5554,7 @@
       "fact": "O primeiro Xbox tinha um disco rígido interno, algo raro em consoles da época."
     },
     {
+      "id": "games-425",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o Nintendo Switch?",
       "options": [
@@ -5144,6 +5569,7 @@
       "fact": "O Switch passou de 140 milhões de unidades vendidas."
     },
     {
+      "id": "games-426",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o Game Boy?",
       "options": [
@@ -5158,6 +5584,7 @@
       "fact": "Um Game Boy sobreviveu a um bombardeio na Guerra do Golfo e continuou funcionando."
     },
     {
+      "id": "games-427",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o Super Nintendo no Japão?",
       "options": [
@@ -5172,6 +5599,7 @@
       "fact": "No Japão, o console se chamava Super Famicom."
     },
     {
+      "id": "games-428",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o Mega Drive no Japão?",
       "options": [
@@ -5186,6 +5614,7 @@
       "fact": "Na América do Norte, o console se chamava Genesis."
     },
     {
+      "id": "games-429",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o Atari 2600?",
       "options": [
@@ -5200,6 +5629,7 @@
       "fact": "O console vendeu cerca de 30 milhões de unidades."
     },
     {
+      "id": "games-430",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"Sonic the Hedgehog\"?",
       "options": [
@@ -5214,6 +5644,7 @@
       "fact": "A velocidade do Sonic foi pensada para mostrar o poder do Mega Drive."
     },
     {
+      "id": "games-431",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"Street Fighter\"?",
       "options": [
@@ -5228,6 +5659,7 @@
       "fact": "O sucesso mesmo veio com \"Street Fighter II\", de 1991."
     },
     {
+      "id": "games-432",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"Mortal Kombat\"?",
       "options": [
@@ -5242,6 +5674,7 @@
       "fact": "A violência do jogo ajudou a criar o sistema de classificação etária dos jogos nos EUA."
     },
     {
+      "id": "games-433",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"Counter-Strike\", como mod de \"Half-Life\"?",
       "options": [
@@ -5256,6 +5689,7 @@
       "fact": "O mod foi criado por dois estudantes e depois comprado pela Valve."
     },
     {
+      "id": "games-434",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"Call of Duty\"?",
       "options": [
@@ -5270,6 +5704,7 @@
       "fact": "O primeiro jogo da série se passava na Segunda Guerra Mundial."
     },
     {
+      "id": "games-435",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"World of Warcraft\"?",
       "options": [
@@ -5284,6 +5719,7 @@
       "fact": "No auge, em 2010, o jogo tinha cerca de 12 milhões de assinantes."
     },
     {
+      "id": "games-436",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"League of Legends\"?",
       "options": [
@@ -5298,6 +5734,7 @@
       "fact": "O Mundial de LoL chega a ter mais de 6 milhões de espectadores simultâneos."
     },
     {
+      "id": "games-437",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"Free Fire\"?",
       "options": [
@@ -5312,6 +5749,7 @@
       "fact": "Free Fire foi criado pela empresa Garena, de Singapura."
     },
     {
+      "id": "games-438",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"Among Us\"?",
       "options": [
@@ -5326,6 +5764,7 @@
       "fact": "O jogo só virou febre em 2020, durante a pandemia, dois anos depois do lançamento."
     },
     {
+      "id": "games-439",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"Fortnite\", no modo original \"Salve o Mundo\"?",
       "options": [
@@ -5340,6 +5779,7 @@
       "fact": "O modo \"Salve o Mundo\" era cooperativo e pago, contra zumbis."
     },
     {
+      "id": "games-440",
       "difficulty": "impossible",
       "text": "Quantas vezes, aproximadamente, Mario apareceu em jogos até 2024, contando todos os títulos?",
       "options": [
@@ -5354,6 +5794,7 @@
       "fact": "Mario é o personagem de videogame com mais aparições da história."
     },
     {
+      "id": "games-441",
       "difficulty": "impossible",
       "text": "Quantos Pokémon existiam na segunda geração, somando os da primeira?",
       "options": [
@@ -5368,6 +5809,7 @@
       "fact": "A segunda geração, de \"Gold\" e \"Silver\", trouxe 100 Pokémon novos."
     },
     {
+      "id": "games-442",
       "difficulty": "impossible",
       "text": "Quantos Pokémon foram adicionados na terceira geração, de \"Ruby\" e \"Sapphire\"?",
       "options": [
@@ -5382,6 +5824,7 @@
       "fact": "Com eles, a Pokédex nacional chegou a 386 espécies."
     },
     {
+      "id": "games-443",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado o primeiro \"Resident Evil\"?",
       "options": [
@@ -5396,6 +5839,7 @@
       "fact": "No Japão, a série se chama \"Biohazard\"."
     },
     {
+      "id": "games-444",
       "difficulty": "impossible",
       "text": "Em que nível um jogador de 13 anos \"zerou\" o Tetris de NES, fazendo o jogo travar, em 2023?",
       "options": [
@@ -5410,6 +5854,7 @@
       "fact": "Durante décadas, achava-se que o jogo não tinha fim."
     },
     {
+      "id": "games-445",
       "difficulty": "medium",
       "text": "Que jogo de cartas colecionáveis, de 1993, é considerado o primeiro do gênero?",
       "options": [
@@ -5422,6 +5867,7 @@
       "fact": "Magic foi criado pelo matemático Richard Garfield."
     },
     {
+      "id": "games-446",
       "difficulty": "hard",
       "text": "Que estúdio australiano criou \"Hollow Knight\"?",
       "options": [
@@ -5434,6 +5880,7 @@
       "fact": "A equipe principal do estúdio tinha só três pessoas."
     },
     {
+      "id": "games-447",
       "difficulty": "hard",
       "text": "Que jogo da Media Molecule, de 2020, permite criar jogos dentro do próprio jogo?",
       "options": [
@@ -5446,6 +5893,7 @@
       "fact": "Alguns jogadores fizeram curtas-metragens e até álbuns de música dentro do jogo."
     },
     {
+      "id": "games-448",
       "difficulty": "hard",
       "text": "Que herói brasileiro de um jogo de tiro da Blizzard é um DJ que cura os aliados com música?",
       "options": [
@@ -5458,6 +5906,7 @@
       "fact": "Lúcio é do Rio de Janeiro e luta patinando pelas paredes."
     },
     {
+      "id": "games-449",
       "difficulty": "hard",
       "text": "Como se chama o cientista vilão da série \"Crash Bandicoot\"?",
       "options": [
@@ -5470,6 +5919,7 @@
       "fact": "Cortex tem um \"N\" enorme estampado na testa."
     },
     {
+      "id": "games-450",
       "difficulty": "hard",
       "text": "Em \"Portal\", que recompensa prometida à protagonista virou piada entre os jogadores?",
       "options": [
@@ -5482,6 +5932,7 @@
       "fact": "A frase \"The cake is a lie\" (\"O bolo é uma mentira\") virou meme."
     },
     {
+      "id": "games-451",
       "difficulty": "easy",
       "text": "Qual é a cor do Sonic?",
       "options": [
@@ -5494,6 +5945,7 @@
       "fact": "Ele foi criado em 1991 para concorrer com Mario."
     },
     {
+      "id": "games-452",
       "difficulty": "easy",
       "text": "Qual é a cor do chapéu do Mario?",
       "options": [
@@ -5506,6 +5958,7 @@
       "fact": "O chapéu surgiu porque era difícil desenhar cabelo."
     },
     {
+      "id": "games-453",
       "difficulty": "easy",
       "text": "Qual é a cor do Pac-Man?",
       "options": [
@@ -5518,6 +5971,7 @@
       "fact": "O formato teria sido inspirado em uma pizza."
     },
     {
+      "id": "games-454",
       "difficulty": "easy",
       "text": "Qual é a cor do Kirby?",
       "options": [
@@ -5530,6 +5984,7 @@
       "fact": "No início, o criador pensou nele amarelo."
     },
     {
+      "id": "games-455",
       "difficulty": "easy",
       "text": "Qual é a cor do Yoshi mais conhecido?",
       "options": [
@@ -5542,6 +5997,7 @@
       "fact": "Ele é apaixonado por frutas e tem uma língua longa."
     },
     {
+      "id": "games-456",
       "difficulty": "easy",
       "text": "Qual é a cor do personagem Wario?",
       "options": [
@@ -5554,6 +6010,7 @@
       "fact": "O nome mistura \"warui\", mau em japonês, com Mario."
     },
     {
+      "id": "games-457",
       "difficulty": "easy",
       "text": "Qual empresa criou o PlayStation?",
       "options": [
@@ -5566,6 +6023,7 @@
       "fact": "O projeto nasceu de uma parceria que falhou com a Nintendo."
     },
     {
+      "id": "games-458",
       "difficulty": "easy",
       "text": "Qual empresa criou o Xbox?",
       "options": [
@@ -5578,6 +6036,7 @@
       "fact": "O primeiro foi lançado em 2001."
     },
     {
+      "id": "games-459",
       "difficulty": "easy",
       "text": "Qual empresa criou o Game Boy?",
       "options": [
@@ -5590,6 +6049,7 @@
       "fact": "Ele vendeu mais de 118 milhões de unidades."
     },
     {
+      "id": "games-460",
       "difficulty": "easy",
       "text": "Qual empresa criou o Mega Drive?",
       "options": [
@@ -5602,6 +6062,7 @@
       "fact": "Ele foi vendido no Brasil pela Tectoy."
     },
     {
+      "id": "games-461",
       "difficulty": "easy",
       "text": "Qual empresa vendia consoles da Sega no Brasil?",
       "options": [
@@ -5614,6 +6075,7 @@
       "fact": "Ela ainda lançou versões novas por décadas."
     },
     {
+      "id": "games-462",
       "difficulty": "easy",
       "text": "Qual empresa criou o Roblox?",
       "options": [
@@ -5626,6 +6088,7 @@
       "fact": "O jogo saiu em 2006."
     },
     {
+      "id": "games-463",
       "difficulty": "easy",
       "text": "Qual empresa criou o Candy Crush?",
       "options": [
@@ -5638,6 +6101,7 @@
       "fact": "A Activision comprou a empresa em 2016."
     },
     {
+      "id": "games-464",
       "difficulty": "easy",
       "text": "Qual empresa criou o Angry Birds?",
       "options": [
@@ -5650,6 +6114,7 @@
       "fact": "Ela é da Finlândia."
     },
     {
+      "id": "games-465",
       "difficulty": "easy",
       "text": "Qual empresa criou o Clash of Clans?",
       "options": [
@@ -5662,6 +6127,7 @@
       "fact": "Ela é da Finlândia também."
     },
     {
+      "id": "games-466",
       "difficulty": "easy",
       "text": "Qual empresa criou o Pokémon GO?",
       "options": [
@@ -5674,6 +6140,7 @@
       "fact": "Em 2016, ele atraiu multidões para as ruas."
     },
     {
+      "id": "games-467",
       "difficulty": "easy",
       "text": "Qual empresa criou a série Assassin's Creed?",
       "options": [
@@ -5686,6 +6153,7 @@
       "fact": "O primeiro jogo se passa nas Cruzadas."
     },
     {
+      "id": "games-468",
       "difficulty": "easy",
       "text": "Qual empresa criou a série Street Fighter?",
       "options": [
@@ -5698,6 +6166,7 @@
       "fact": "O primeiro é de 1987."
     },
     {
+      "id": "games-469",
       "difficulty": "easy",
       "text": "Qual empresa criou a série Resident Evil?",
       "options": [
@@ -5710,6 +6179,7 @@
       "fact": "O primeiro saiu em 1996."
     },
     {
+      "id": "games-470",
       "difficulty": "easy",
       "text": "Qual empresa criou o jogo The Sims?",
       "options": [
@@ -5722,6 +6192,7 @@
       "fact": "O criador é Will Wright."
     },
     {
+      "id": "games-471",
       "difficulty": "easy",
       "text": "Qual empresa criou a série GTA?",
       "options": [
@@ -5734,6 +6205,7 @@
       "fact": "O primeiro jogo saiu em 1997."
     },
     {
+      "id": "games-472",
       "difficulty": "easy",
       "text": "Qual empresa criou Call of Duty?",
       "options": [
@@ -5746,6 +6218,7 @@
       "fact": "O primeiro é de 2003."
     },
     {
+      "id": "games-473",
       "difficulty": "easy",
       "text": "Qual empresa criou o Counter-Strike?",
       "options": [
@@ -5758,6 +6231,7 @@
       "fact": "Ele começou como um mod de Half-Life."
     },
     {
+      "id": "games-474",
       "difficulty": "easy",
       "text": "Qual empresa criou o World of Warcraft?",
       "options": [
@@ -5770,6 +6244,7 @@
       "fact": "Ele chegou a ter mais de 12 milhões de assinantes."
     },
     {
+      "id": "games-475",
       "difficulty": "easy",
       "text": "Qual empresa criou o Valorant?",
       "options": [
@@ -5782,6 +6257,7 @@
       "fact": "Ela também criou o League of Legends."
     },
     {
+      "id": "games-476",
       "difficulty": "easy",
       "text": "Qual empresa criou The Witcher 3?",
       "options": [
@@ -5794,6 +6270,7 @@
       "fact": "A empresa é da Polônia."
     },
     {
+      "id": "games-477",
       "difficulty": "easy",
       "text": "Qual empresa criou o Skyrim?",
       "options": [
@@ -5806,6 +6283,7 @@
       "fact": "O jogo saiu em 2011 e foi relançado muitas vezes."
     },
     {
+      "id": "games-478",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Steve aparece?",
       "options": [
@@ -5818,6 +6296,7 @@
       "fact": "Ele também foi para Super Smash Bros."
     },
     {
+      "id": "games-479",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Kratos aparece?",
       "options": [
@@ -5830,6 +6309,7 @@
       "fact": "Ele mata deuses gregos e depois nórdicos."
     },
     {
+      "id": "games-480",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Nathan Drake aparece?",
       "options": [
@@ -5842,6 +6322,7 @@
       "fact": "O ator Tom Holland o interpretou no cinema."
     },
     {
+      "id": "games-481",
       "difficulty": "easy",
       "text": "Em que jogo a personagem Lara Croft aparece?",
       "options": [
@@ -5854,6 +6335,7 @@
       "fact": "Angelina Jolie a interpretou no cinema."
     },
     {
+      "id": "games-482",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Master Chief aparece?",
       "options": [
@@ -5866,6 +6348,7 @@
       "fact": "A série foi essencial para o primeiro Xbox."
     },
     {
+      "id": "games-483",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Geralt aparece?",
       "options": [
@@ -5878,6 +6361,7 @@
       "fact": "A série de livros é polonesa."
     },
     {
+      "id": "games-484",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Arthur Morgan aparece?",
       "options": [
@@ -5890,6 +6374,7 @@
       "fact": "O jogo se passa em 1899."
     },
     {
+      "id": "games-485",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Joel protege Ellie?",
       "options": [
@@ -5902,6 +6387,7 @@
       "fact": "Foi adaptado pela HBO."
     },
     {
+      "id": "games-486",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Sub-Zero aparece?",
       "options": [
@@ -5914,6 +6400,7 @@
       "fact": "O jogo causou muita polêmica pela violência."
     },
     {
+      "id": "games-487",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Ryu aparece?",
       "options": [
@@ -5926,6 +6413,7 @@
       "fact": "O golpe Hadouken é o mais famoso dele."
     },
     {
+      "id": "games-488",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Solid Snake aparece?",
       "options": [
@@ -5938,6 +6426,7 @@
       "fact": "O criador é Hideo Kojima."
     },
     {
+      "id": "games-489",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Dante aparece?",
       "options": [
@@ -5950,6 +6439,7 @@
       "fact": "Ele é meio demônio."
     },
     {
+      "id": "games-490",
       "difficulty": "easy",
       "text": "Em que jogo a personagem Samus aparece?",
       "options": [
@@ -5962,6 +6452,7 @@
       "fact": "A revelação de que era mulher surpreendeu muita gente em 1986."
     },
     {
+      "id": "games-491",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Cloud aparece?",
       "options": [
@@ -5974,6 +6465,7 @@
       "fact": "Ele tem uma espada gigante."
     },
     {
+      "id": "games-492",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Link aparece?",
       "options": [
@@ -5986,6 +6478,7 @@
       "fact": "Muitos acham que o herói se chama Zelda."
     },
     {
+      "id": "games-493",
       "difficulty": "easy",
       "text": "Qual é o nome do dinossauro verde que Mario monta?",
       "options": [
@@ -5998,6 +6491,7 @@
       "fact": "Ele estreou em 1990."
     },
     {
+      "id": "games-494",
       "difficulty": "easy",
       "text": "Qual é o nome do irmão gêmeo do Mario?",
       "options": [
@@ -6010,6 +6504,7 @@
       "fact": "Ele é mais alto e usa verde."
     },
     {
+      "id": "games-495",
       "difficulty": "easy",
       "text": "Qual é o nome do cogumelo amigo de Mario?",
       "options": [
@@ -6022,6 +6517,7 @@
       "fact": "Ele sempre diz que a princesa está em outro castelo."
     },
     {
+      "id": "games-496",
       "difficulty": "easy",
       "text": "Qual é o nome da tartaruga vilã de Mario?",
       "options": [
@@ -6034,6 +6530,7 @@
       "fact": "O nome dele no Japão é Koopa."
     },
     {
+      "id": "games-497",
       "difficulty": "easy",
       "text": "Qual é o nome do esquilo voador da Sega, parceiro do Sonic?",
       "options": [
@@ -6046,6 +6543,7 @@
       "fact": "Na verdade, ele é uma raposa."
     },
     {
+      "id": "games-498",
       "difficulty": "easy",
       "text": "Qual é a moeda do Super Mario?",
       "options": [
@@ -6058,6 +6556,7 @@
       "fact": "Coletar 100 delas dá uma vida extra."
     },
     {
+      "id": "games-499",
       "difficulty": "easy",
       "text": "Qual é a moeda de The Legend of Zelda?",
       "options": [
@@ -6070,6 +6569,7 @@
       "fact": "Elas têm formas de pedras preciosas."
     },
     {
+      "id": "games-500",
       "difficulty": "easy",
       "text": "Qual é a moeda de Final Fantasy?",
       "options": [
@@ -6082,6 +6582,7 @@
       "fact": "A moeda aparece em quase todos os jogos da série."
     },
     {
+      "id": "games-501",
       "difficulty": "easy",
       "text": "Qual é a moeda de Fortnite?",
       "options": [
@@ -6094,6 +6595,7 @@
       "fact": "Ela é usada na loja do jogo."
     },
     {
+      "id": "games-502",
       "difficulty": "easy",
       "text": "Qual é a moeda de Roblox?",
       "options": [
@@ -6106,6 +6608,7 @@
       "fact": "Muita gente gasta dinheiro de verdade com ela."
     },
     {
+      "id": "games-503",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo Tetris?",
       "options": [
@@ -6118,6 +6621,7 @@
       "fact": "Foi criado na União Soviética, em 1984."
     },
     {
+      "id": "games-504",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo Pac-Man?",
       "options": [
@@ -6130,6 +6634,7 @@
       "fact": "O jogo foi feito para atrair também mulheres."
     },
     {
+      "id": "games-505",
       "difficulty": "easy",
       "text": "Qual é o objetivo do Flappy Bird?",
       "options": [
@@ -6142,6 +6647,7 @@
       "fact": "O criador tirou o jogo do ar no auge do sucesso."
     },
     {
+      "id": "games-506",
       "difficulty": "easy",
       "text": "Qual é o objetivo do Angry Birds?",
       "options": [
@@ -6154,6 +6660,7 @@
       "fact": "A ideia ganhou até filmes."
     },
     {
+      "id": "games-507",
       "difficulty": "easy",
       "text": "Qual é o objetivo do Fruit Ninja?",
       "options": [
@@ -6166,6 +6673,7 @@
       "fact": "Foi um grande sucesso nos primeiros smartphones."
     },
     {
+      "id": "games-508",
       "difficulty": "easy",
       "text": "Qual é o objetivo do Candy Crush?",
       "options": [
@@ -6178,6 +6686,7 @@
       "fact": "Ele chegou a ter centenas de milhões de jogadores."
     },
     {
+      "id": "games-509",
       "difficulty": "easy",
       "text": "Qual é o objetivo de um battle royale?",
       "options": [
@@ -6190,6 +6699,7 @@
       "fact": "Os jogadores começam só com pouca coisa e buscam itens."
     },
     {
+      "id": "games-510",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo Monopoly?",
       "options": [
@@ -6202,6 +6712,7 @@
       "fact": "O jogo de tabuleiro foi criado para criticar a concentração de terras."
     },
     {
+      "id": "games-511",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo War?",
       "options": [
@@ -6214,6 +6725,7 @@
       "fact": "A versão brasileira é da Grow."
     },
     {
+      "id": "games-512",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo Xadrez?",
       "options": [
@@ -6226,6 +6738,7 @@
       "fact": "O nome \"xeque-mate\" vem do persa."
     },
     {
+      "id": "games-513",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo de damas?",
       "options": [
@@ -6238,6 +6751,7 @@
       "fact": "A peça que chega ao fim do tabuleiro vira uma dama."
     },
     {
+      "id": "games-514",
       "difficulty": "easy",
       "text": "Qual é o objetivo do jogo da velha?",
       "options": [
@@ -6250,6 +6764,7 @@
       "fact": "Com a jogada certa, sempre dá empate."
     },
     {
+      "id": "games-515",
       "difficulty": "easy",
       "text": "Qual é a peça mais importante do xadrez?",
       "options": [
@@ -6262,6 +6777,7 @@
       "fact": "Se ele levar xeque-mate, o jogo acaba."
     },
     {
+      "id": "games-516",
       "difficulty": "easy",
       "text": "Qual peça de xadrez anda em forma de L?",
       "options": [
@@ -6274,6 +6790,7 @@
       "fact": "Ela é a única que pula sobre outras."
     },
     {
+      "id": "games-517",
       "difficulty": "easy",
       "text": "Quantas peças tem cada jogador no início do xadrez?",
       "options": [
@@ -6286,6 +6803,7 @@
       "fact": "São 8 peões e 8 outras peças."
     },
     {
+      "id": "games-518",
       "difficulty": "easy",
       "text": "Quantas casas tem o tabuleiro de damas padrão no Brasil?",
       "options": [
@@ -6298,6 +6816,7 @@
       "fact": "É o mesmo tabuleiro do xadrez."
     },
     {
+      "id": "games-519",
       "difficulty": "easy",
       "text": "Quantos naipes tem o baralho comum?",
       "options": [
@@ -6310,6 +6829,7 @@
       "fact": "Eles são copas, ouros, paus e espadas."
     },
     {
+      "id": "games-520",
       "difficulty": "easy",
       "text": "Quantas faces tem um dado comum?",
       "options": [
@@ -6322,6 +6842,7 @@
       "fact": "A soma das faces opostas sempre dá 7."
     },
     {
+      "id": "games-521",
       "difficulty": "easy",
       "text": "Quantas cartas o jogador começa no UNO?",
       "options": [
@@ -6334,6 +6855,7 @@
       "fact": "O jogo foi criado em 1971 por um barbeiro."
     },
     {
+      "id": "games-522",
       "difficulty": "easy",
       "text": "Qual é o jogo de cartas da Mattel em que se grita o próprio nome?",
       "options": [
@@ -6346,6 +6868,7 @@
       "fact": "Foi criado por Merle Robbins nos EUA."
     },
     {
+      "id": "games-523",
       "difficulty": "easy",
       "text": "Que jogo de cartas brasileiro tem \"seis\" e \"doze\" gritados na mesa?",
       "options": [
@@ -6358,6 +6881,7 @@
       "fact": "O blefe faz parte da diversão."
     },
     {
+      "id": "games-524",
       "difficulty": "easy",
       "text": "Que jogo de cartas tem Royal Flush?",
       "options": [
@@ -6370,6 +6894,7 @@
       "fact": "A sequência é a maior mão."
     },
     {
+      "id": "games-525",
       "difficulty": "easy",
       "text": "Que jogo de cassino tem uma roda numerada?",
       "options": [
@@ -6382,6 +6907,7 @@
       "fact": "Ela tem 37 ou 38 casas."
     },
     {
+      "id": "games-526",
       "difficulty": "easy",
       "text": "Que jogo de cartas tem a meta de chegar a 21?",
       "options": [
@@ -6394,6 +6920,7 @@
       "fact": "Ele também é conhecido como 21."
     },
     {
+      "id": "games-527",
       "difficulty": "easy",
       "text": "Que jogo envolve descobrir o assassino com cartas, em uma mansão?",
       "options": [
@@ -6406,6 +6933,7 @@
       "fact": "Em inglês, ele se chama Clue ou Cluedo."
     },
     {
+      "id": "games-528",
       "difficulty": "easy",
       "text": "Que jogo de tabuleiro simula a vida, com um carrinho e pinos?",
       "options": [
@@ -6418,6 +6946,7 @@
       "fact": "Foi criado por Milton Bradley em 1860."
     },
     {
+      "id": "games-529",
       "difficulty": "easy",
       "text": "Que jogo de tabuleiro forma palavras cruzadas?",
       "options": [
@@ -6430,6 +6959,7 @@
       "fact": "No Brasil, ele também é conhecido como Palavras Cruzadas."
     },
     {
+      "id": "games-530",
       "difficulty": "easy",
       "text": "Que jogo de celular tem uma cobrinha comendo bolinhas e foi famoso no Nokia?",
       "options": [
@@ -6442,6 +6972,7 @@
       "fact": "O jogo vinha nos celulares a partir de 1997."
     },
     {
+      "id": "games-531",
       "difficulty": "easy",
       "text": "Que console tem o controle em forma de \"Joy-Con\"?",
       "options": [
@@ -6454,6 +6985,7 @@
       "fact": "Os controles se soltam do aparelho."
     },
     {
+      "id": "games-532",
       "difficulty": "easy",
       "text": "Que console tem os botões A, B, X e Y coloridos?",
       "options": [
@@ -6466,6 +6998,7 @@
       "fact": "O design foi feito para combinar com um controle grande."
     },
     {
+      "id": "games-533",
       "difficulty": "easy",
       "text": "Em que país surgiu o jogo Tetris?",
       "options": [
@@ -6478,6 +7011,7 @@
       "fact": "O nome mistura \"tetra\" e \"tênis\"."
     },
     {
+      "id": "games-534",
       "difficulty": "easy",
       "text": "Em que país surgiu o jogo Pac-Man?",
       "options": [
@@ -6490,6 +7024,7 @@
       "fact": "O nome vem de um som em japonês."
     },
     {
+      "id": "games-535",
       "difficulty": "easy",
       "text": "Em que país surgiu o jogo Minecraft?",
       "options": [
@@ -6502,6 +7037,7 @@
       "fact": "O criador é Markus Persson."
     },
     {
+      "id": "games-536",
       "difficulty": "easy",
       "text": "Em que país surgiu o Angry Birds?",
       "options": [
@@ -6514,6 +7050,7 @@
       "fact": "Foi criado pela Rovio, em 2009."
     },
     {
+      "id": "games-537",
       "difficulty": "medium",
       "text": "Quem é o criador de Super Mario?",
       "options": [
@@ -6526,6 +7063,7 @@
       "fact": "Ele também criou Zelda e Donkey Kong."
     },
     {
+      "id": "games-538",
       "difficulty": "medium",
       "text": "Quem é o criador de Metal Gear Solid e Death Stranding?",
       "options": [
@@ -6538,6 +7076,7 @@
       "fact": "Ele fundou o próprio estúdio em 2015."
     },
     {
+      "id": "games-539",
       "difficulty": "medium",
       "text": "Quem é o criador de Tetris?",
       "options": [
@@ -6550,6 +7089,7 @@
       "fact": "Ele só começou a receber direitos em 1996."
     },
     {
+      "id": "games-540",
       "difficulty": "medium",
       "text": "Quem é o criador de Pac-Man?",
       "options": [
@@ -6562,6 +7102,7 @@
       "fact": "Ele queria um jogo sem tanta violência."
     },
     {
+      "id": "games-541",
       "difficulty": "medium",
       "text": "Quem é o criador de Sonic?",
       "options": [
@@ -6574,6 +7115,7 @@
       "fact": "Ele também foi preso em 2023, por uso indevido de informação privilegiada."
     },
     {
+      "id": "games-542",
       "difficulty": "medium",
       "text": "Quem é o criador de The Sims?",
       "options": [
@@ -6586,6 +7128,7 @@
       "fact": "Ele criou também SimCity."
     },
     {
+      "id": "games-543",
       "difficulty": "medium",
       "text": "Quem é o criador da série Civilization?",
       "options": [
@@ -6598,6 +7141,7 @@
       "fact": "O nome dele aparece no título de muitos jogos."
     },
     {
+      "id": "games-544",
       "difficulty": "medium",
       "text": "Quem é o fundador da Valve e do Steam?",
       "options": [
@@ -6610,6 +7154,7 @@
       "fact": "Ele foi funcionário da Microsoft por 13 anos."
     },
     {
+      "id": "games-545",
       "difficulty": "medium",
       "text": "Quem é o fundador da Epic Games?",
       "options": [
@@ -6622,6 +7167,7 @@
       "fact": "Ele a fundou na casa dos pais."
     },
     {
+      "id": "games-546",
       "difficulty": "medium",
       "text": "Quem é o criador da série Grand Theft Auto, como produtor principal?",
       "options": [
@@ -6634,6 +7180,7 @@
       "fact": "Eles são irmãos britânicos."
     },
     {
+      "id": "games-547",
       "difficulty": "medium",
       "text": "Quem é o criador de Elden Ring e Dark Souls?",
       "options": [
@@ -6646,6 +7193,7 @@
       "fact": "Ele começou no setor tarde, aos 29 anos."
     },
     {
+      "id": "games-548",
       "difficulty": "medium",
       "text": "Quem fundou a Nintendo como fábrica de baralhos?",
       "options": [
@@ -6658,6 +7206,7 @@
       "fact": "O nome da empresa significa algo como \"deixe o destino decidir\"."
     },
     {
+      "id": "games-549",
       "difficulty": "medium",
       "text": "Quem é o personagem da Sega que substituiu Alex Kidd como mascote?",
       "options": [
@@ -6670,6 +7219,7 @@
       "fact": "Ele foi feito para ser mais rápido que Mario."
     },
     {
+      "id": "games-550",
       "difficulty": "medium",
       "text": "Quem é a personagem que passa em uma nave, em Mass Effect?",
       "options": [
@@ -6682,6 +7232,7 @@
       "fact": "O jogador pode escolher o gênero do personagem."
     },
     {
+      "id": "games-551",
       "difficulty": "medium",
       "text": "Quem é o principal inimigo de Geralt, em The Witcher 3?",
       "options": [
@@ -6694,6 +7245,7 @@
       "fact": "Ele está em busca de sua filha adotiva."
     },
     {
+      "id": "games-552",
       "difficulty": "medium",
       "text": "Quem é o principal inimigo de Cloud, em Final Fantasy VII?",
       "options": [
@@ -6706,6 +7258,7 @@
       "fact": "A morte de uma personagem nesse jogo chocou uma geração."
     },
     {
+      "id": "games-553",
       "difficulty": "medium",
       "text": "Quem é o principal inimigo de Kratos nos primeiros jogos?",
       "options": [
@@ -6718,6 +7271,7 @@
       "fact": "Ele mata quase todo o panteão grego."
     },
     {
+      "id": "games-554",
       "difficulty": "medium",
       "text": "Quem é o principal inimigo de Ryu, em Street Fighter?",
       "options": [
@@ -6730,6 +7284,7 @@
       "fact": "No Japão, o nome dele é Vega."
     },
     {
+      "id": "games-555",
       "difficulty": "medium",
       "text": "Quem é o principal inimigo de Master Chief?",
       "options": [
@@ -6742,6 +7297,7 @@
       "fact": "Halo foi lançado em 2001."
     },
     {
+      "id": "games-556",
       "difficulty": "medium",
       "text": "Quem foi Lara Croft nos filmes de 2001?",
       "options": [
@@ -6754,6 +7310,7 @@
       "fact": "Alicia Vikander fez o papel em 2018."
     },
     {
+      "id": "games-557",
       "difficulty": "medium",
       "text": "Quem interpretou Sonic na voz, no filme de 2020?",
       "options": [
@@ -6766,6 +7323,7 @@
       "fact": "Jim Carrey fez o Dr. Robotnik."
     },
     {
+      "id": "games-558",
       "difficulty": "medium",
       "text": "Quem interpretou Mario na voz, no filme de 2023?",
       "options": [
@@ -6778,6 +7336,7 @@
       "fact": "O filme arrecadou mais de 1,3 bilhão de dólares."
     },
     {
+      "id": "games-559",
       "difficulty": "medium",
       "text": "Quem interpretou Bowser na voz, no filme de 2023?",
       "options": [
@@ -6790,6 +7349,7 @@
       "fact": "Ele também canta \"Peaches\" no filme."
     },
     {
+      "id": "games-560",
       "difficulty": "medium",
       "text": "Quem interpretou Doutor Robotnik no cinema?",
       "options": [
@@ -6802,6 +7362,7 @@
       "fact": "Ele fez o papel em três filmes."
     },
     {
+      "id": "games-561",
       "difficulty": "medium",
       "text": "Quem interpretou Pikachu no filme \"Detetive Pikachu\"?",
       "options": [
@@ -6814,6 +7375,7 @@
       "fact": "O ator é o mesmo de Deadpool."
     },
     {
+      "id": "games-562",
       "difficulty": "medium",
       "text": "Qual é o console de maior venda da Sega?",
       "options": [
@@ -6826,6 +7388,7 @@
       "fact": "Ele vendeu mais de 30 milhões de unidades."
     },
     {
+      "id": "games-563",
       "difficulty": "medium",
       "text": "Qual foi o primeiro console da Microsoft?",
       "options": [
@@ -6838,6 +7401,7 @@
       "fact": "Ele foi lançado em novembro de 2001."
     },
     {
+      "id": "games-564",
       "difficulty": "medium",
       "text": "Qual foi o primeiro Xbox com serviço de assinatura Game Pass?",
       "options": [
@@ -6850,6 +7414,7 @@
       "fact": "O serviço foi lançado em 2017."
     },
     {
+      "id": "games-565",
       "difficulty": "medium",
       "text": "Qual foi o primeiro console a usar CD como mídia principal, entre os grandes?",
       "options": [
@@ -6862,6 +7427,7 @@
       "fact": "O CD-ROM guardava muito mais do que cartuchos."
     },
     {
+      "id": "games-566",
       "difficulty": "medium",
       "text": "Qual foi o último console da Nintendo a usar cartuchos antes do Switch?",
       "options": [
@@ -6874,6 +7440,7 @@
       "fact": "Por isso, muitas empresas migraram para o PlayStation."
     },
     {
+      "id": "games-567",
       "difficulty": "medium",
       "text": "Qual foi o console da Nintendo que usava sensor de movimento em 2006?",
       "options": [
@@ -6886,6 +7453,7 @@
       "fact": "O controle com sensor virou febre."
     },
     {
+      "id": "games-568",
       "difficulty": "medium",
       "text": "Qual foi o console da Nintendo de 2012, um fracasso comercial?",
       "options": [
@@ -6898,6 +7466,7 @@
       "fact": "Ele vendeu só cerca de 13 milhões."
     },
     {
+      "id": "games-569",
       "difficulty": "medium",
       "text": "Qual foi o portátil da Sony de 2004?",
       "options": [
@@ -6910,6 +7479,7 @@
       "fact": "Ele vendeu mais de 80 milhões de unidades."
     },
     {
+      "id": "games-570",
       "difficulty": "medium",
       "text": "Qual foi o portátil da Sony de 2011?",
       "options": [
@@ -6922,6 +7492,7 @@
       "fact": "A Sony encerrou a produção em 2019."
     },
     {
+      "id": "games-571",
       "difficulty": "medium",
       "text": "Qual foi o celular da Nokia feito para jogos, em 2003?",
       "options": [
@@ -6934,6 +7505,7 @@
       "fact": "Era conhecido pelo design \"taco\" e por jogos bons."
     },
     {
+      "id": "games-572",
       "difficulty": "medium",
       "text": "Qual jogo chegou aos cinemas em \"Pixels\", de 2015?",
       "options": [
@@ -6946,6 +7518,7 @@
       "fact": "O filme é com Adam Sandler."
     },
     {
+      "id": "games-573",
       "difficulty": "medium",
       "text": "Qual jogo da Nintendo tem Link voltando no tempo e uma lua que cai?",
       "options": [
@@ -6958,6 +7531,7 @@
       "fact": "O jogador tem só três dias para salvar o mundo."
     },
     {
+      "id": "games-574",
       "difficulty": "medium",
       "text": "Qual jogo da Sony tem um pai e um menino na mitologia nórdica?",
       "options": [
@@ -6970,6 +7544,7 @@
       "fact": "Ele foi o jogo do ano em 2018."
     },
     {
+      "id": "games-575",
       "difficulty": "medium",
       "text": "Qual jogo da Sony tem robôs dinossauros e a heroína Aloy?",
       "options": [
@@ -6982,6 +7557,7 @@
       "fact": "Ele foi lançado em 2017."
     },
     {
+      "id": "games-576",
       "difficulty": "medium",
       "text": "Qual jogo da Sony tem Peter Parker e Miles Morales?",
       "options": [
@@ -6994,6 +7570,7 @@
       "fact": "A Insomniac fez o jogo."
     },
     {
+      "id": "games-577",
       "difficulty": "medium",
       "text": "Qual jogo tem um mundo em que tudo é feito em blocos?",
       "options": [
@@ -7006,6 +7583,7 @@
       "fact": "É o jogo mais vendido da história."
     },
     {
+      "id": "games-578",
       "difficulty": "medium",
       "text": "Qual jogo tem um vilão falando em \"A Cake is a Lie\"?",
       "options": [
@@ -7018,6 +7596,7 @@
       "fact": "A inteligência artificial se chama GLaDOS."
     },
     {
+      "id": "games-579",
       "difficulty": "medium",
       "text": "Qual jogo tem a frase \"Do a barrel roll\"?",
       "options": [
@@ -7030,6 +7609,7 @@
       "fact": "O Google fez uma brincadeira com isso na busca."
     },
     {
+      "id": "games-580",
       "difficulty": "medium",
       "text": "Qual jogo tem a frase \"It's dangerous to go alone\"?",
       "options": [
@@ -7042,6 +7622,7 @@
       "fact": "O velho entrega uma espada ao jogador."
     },
     {
+      "id": "games-581",
       "difficulty": "medium",
       "text": "Qual jogo tem a frase \"The princess is in another castle\"?",
       "options": [
@@ -7054,6 +7635,7 @@
       "fact": "A frase é dita por um cogumelo."
     },
     {
+      "id": "games-582",
       "difficulty": "medium",
       "text": "Qual jogo tem a frase \"Finish Him\"?",
       "options": [
@@ -7066,6 +7648,7 @@
       "fact": "A voz dela é famosa no fliperama."
     },
     {
+      "id": "games-583",
       "difficulty": "medium",
       "text": "Qual jogo tem o grito \"Hadouken\"?",
       "options": [
@@ -7078,6 +7661,7 @@
       "fact": "O golpe é uma bola de energia."
     },
     {
+      "id": "games-584",
       "difficulty": "medium",
       "text": "Qual jogo tem o golpe \"Fatality\"?",
       "options": [
@@ -7090,6 +7674,7 @@
       "fact": "Foi um dos motivos para criar a classificação indicativa."
     },
     {
+      "id": "games-585",
       "difficulty": "medium",
       "text": "Qual jogo é famoso pela frase \"Praise the Sun\"?",
       "options": [
@@ -7102,6 +7687,7 @@
       "fact": "O personagem Solaire a diz o tempo todo."
     },
     {
+      "id": "games-586",
       "difficulty": "medium",
       "text": "Qual jogo é famoso pela frase \"You Died\"?",
       "options": [
@@ -7114,6 +7700,7 @@
       "fact": "Ela aparece em letras vermelhas muito grandes."
     },
     {
+      "id": "games-587",
       "difficulty": "medium",
       "text": "Qual jogo é famoso pela criatura verde Creeper?",
       "options": [
@@ -7126,6 +7713,7 @@
       "fact": "O personagem surgiu por erro, de um modelo de porco."
     },
     {
+      "id": "games-588",
       "difficulty": "medium",
       "text": "Qual é o gênero de The Sims?",
       "options": [
@@ -7138,6 +7726,7 @@
       "fact": "É uma das séries mais vendidas para PC."
     },
     {
+      "id": "games-589",
       "difficulty": "medium",
       "text": "Qual é o gênero de Dark Souls?",
       "options": [
@@ -7150,6 +7739,7 @@
       "fact": "O gênero soulslike leva o nome da série."
     },
     {
+      "id": "games-590",
       "difficulty": "medium",
       "text": "Qual é o gênero de Civilization?",
       "options": [
@@ -7162,6 +7752,7 @@
       "fact": "O famoso \"só mais um turno\" vem dele."
     },
     {
+      "id": "games-591",
       "difficulty": "medium",
       "text": "Qual é o gênero de StarCraft?",
       "options": [
@@ -7174,6 +7765,7 @@
       "fact": "Na Coreia do Sul, ele virou um esporte com enormes públicos."
     },
     {
+      "id": "games-592",
       "difficulty": "medium",
       "text": "Qual é o gênero de Guitar Hero?",
       "options": [
@@ -7186,6 +7778,7 @@
       "fact": "O controle lembra uma guitarra."
     },
     {
+      "id": "games-593",
       "difficulty": "medium",
       "text": "Qual é o gênero de Doom?",
       "options": [
@@ -7198,6 +7791,7 @@
       "fact": "Ele já foi rodado em calculadoras e até em testes de gravidez."
     },
     {
+      "id": "games-594",
       "difficulty": "medium",
       "text": "Qual é o gênero de Gran Turismo?",
       "options": [
@@ -7210,6 +7804,7 @@
       "fact": "O slogan é \"o verdadeiro simulador de direção\"."
     },
     {
+      "id": "games-595",
       "difficulty": "medium",
       "text": "Qual é o gênero de Final Fantasy?",
       "options": [
@@ -7222,6 +7817,7 @@
       "fact": "O nome surgiu porque seria o último projeto da empresa."
     },
     {
+      "id": "games-596",
       "difficulty": "medium",
       "text": "Por que Final Fantasy tem esse nome?",
       "options": [
@@ -7234,6 +7830,7 @@
       "fact": "A empresa estava à beira da falência."
     },
     {
+      "id": "games-597",
       "difficulty": "medium",
       "text": "Por que Mario usa bigode?",
       "options": [
@@ -7246,6 +7843,7 @@
       "fact": "Do mesmo jeito, o boné evita desenhar o cabelo."
     },
     {
+      "id": "games-598",
       "difficulty": "medium",
       "text": "Por que Sonic é azul?",
       "options": [
@@ -7258,6 +7856,7 @@
       "fact": "O vermelho do tênis veio de Michael Jackson."
     },
     {
+      "id": "games-599",
       "difficulty": "medium",
       "text": "Quem inspirou as botas de Sonic?",
       "options": [
@@ -7270,6 +7869,7 @@
       "fact": "As meias e o fecho vieram dele."
     },
     {
+      "id": "games-600",
       "difficulty": "medium",
       "text": "Por que Mario pula?",
       "options": [
@@ -7282,6 +7882,7 @@
       "fact": "No início, ele era chamado de Jumpman."
     },
     {
+      "id": "games-601",
       "difficulty": "easy",
       "text": "Que personagem da Nintendo come os inimigos para copiar poderes?",
       "options": [
@@ -7294,6 +7895,7 @@
       "fact": "Ele estreou em 1992, no Game Boy."
     },
     {
+      "id": "games-602",
       "difficulty": "easy",
       "text": "Qual é o nome do cachorro que aparece em Nintendogs, em geral?",
       "options": [
@@ -7306,6 +7908,7 @@
       "fact": "Foi um grande sucesso do Nintendo DS."
     },
     {
+      "id": "games-603",
       "difficulty": "easy",
       "text": "Em que console saiu Wii Sports?",
       "options": [
@@ -7318,6 +7921,7 @@
       "fact": "Ele vinha junto com o console em muitos países."
     },
     {
+      "id": "games-604",
       "difficulty": "medium",
       "text": "Qual jogo tem a frase \"Would you kindly\", em uma reviravolta famosa?",
       "options": [
@@ -7330,6 +7934,7 @@
       "fact": "Ela faz parte de uma das maiores surpresas dos games."
     },
     {
+      "id": "games-605",
       "difficulty": "medium",
       "text": "Qual jogo tem o bordão \"War never changes\"?",
       "options": [
@@ -7342,6 +7947,7 @@
       "fact": "A frase abre quase todos os jogos da série."
     },
     {
+      "id": "games-606",
       "difficulty": "medium",
       "text": "Qual jogo tem o mundo pós-apocalíptico chamado \"Wasteland\"?",
       "options": [
@@ -7354,6 +7960,7 @@
       "fact": "Ele é uma série de RPG da Bethesda."
     },
     {
+      "id": "games-607",
       "difficulty": "medium",
       "text": "Qual jogo tem a cidade submarina de Rapture?",
       "options": [
@@ -7366,6 +7973,7 @@
       "fact": "A cidade foi criada por Andrew Ryan."
     },
     {
+      "id": "games-608",
       "difficulty": "medium",
       "text": "Qual jogo tem a cidade flutuante de Columbia?",
       "options": [
@@ -7378,6 +7986,7 @@
       "fact": "Foi lançado em 2013."
     },
     {
+      "id": "games-609",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem Gordon Freeman?",
       "options": [
@@ -7390,6 +7999,7 @@
       "fact": "Ele nunca fala durante o jogo."
     },
     {
+      "id": "games-610",
       "difficulty": "medium",
       "text": "Quantos anos levou para sair \"Duke Nukem Forever\"?",
       "options": [
@@ -7402,6 +8012,7 @@
       "fact": "O jogo foi um fracasso entre os críticos."
     },
     {
+      "id": "games-611",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem Agente 47?",
       "options": [
@@ -7414,6 +8025,7 @@
       "fact": "Ele tem um código de barras na nuca."
     },
     {
+      "id": "games-612",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem Sam Fisher?",
       "options": [
@@ -7426,6 +8038,7 @@
       "fact": "Ele usa óculos com três luzes verdes."
     },
     {
+      "id": "games-613",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem Vault Boy?",
       "options": [
@@ -7438,6 +8051,7 @@
       "fact": "O sinal de joia dele é um teste para radiação."
     },
     {
+      "id": "games-614",
       "difficulty": "medium",
       "text": "Qual jogo tem a heroína Ciri?",
       "options": [
@@ -7450,6 +8064,7 @@
       "fact": "Ela tem poderes de viajar entre os mundos."
     },
     {
+      "id": "games-615",
       "difficulty": "medium",
       "text": "Qual jogo tem o Dovahkiin?",
       "options": [
@@ -7462,6 +8077,7 @@
       "fact": "A frase \"I used to be an adventurer\" virou meme."
     },
     {
+      "id": "games-616",
       "difficulty": "medium",
       "text": "Qual jogo de 2024 ganhou o prêmio de jogo do ano no The Game Awards?",
       "options": [
@@ -7474,6 +8090,7 @@
       "fact": "O robozinho da Sony surpreendeu muitos."
     },
     {
+      "id": "games-617",
       "difficulty": "medium",
       "text": "Qual jogo de 2018 ganhou o prêmio de jogo do ano no The Game Awards?",
       "options": [
@@ -7486,6 +8103,7 @@
       "fact": "Foi uma das disputas mais comentadas da premiação."
     },
     {
+      "id": "games-618",
       "difficulty": "hard",
       "text": "Qual jogo da Valve teve mais de 40 milhões de dólares em premiação em uma só edição?",
       "options": [
@@ -7498,6 +8116,7 @@
       "fact": "O torneio \"The International\" tem premiação recorde."
     },
     {
+      "id": "games-619",
       "difficulty": "hard",
       "text": "Qual é o nome do campeonato de Dota 2?",
       "options": [
@@ -7510,6 +8129,7 @@
       "fact": "Foi o evento com maior prêmio de esportes eletrônicos."
     },
     {
+      "id": "games-620",
       "difficulty": "hard",
       "text": "Qual é o nome do campeonato mundial de League of Legends?",
       "options": [
@@ -7522,6 +8142,7 @@
       "fact": "O time T1 é o maior vencedor."
     },
     {
+      "id": "games-621",
       "difficulty": "hard",
       "text": "Qual time é o maior vencedor do Mundial de League of Legends?",
       "options": [
@@ -7534,6 +8155,7 @@
       "fact": "O jogador Faker é o maior astro do time."
     },
     {
+      "id": "games-622",
       "difficulty": "hard",
       "text": "Qual time brasileiro de CS:GO ficou famoso com FalleN e Coldzera?",
       "options": [
@@ -7546,6 +8168,7 @@
       "fact": "O time ganhou dois Majors em 2016."
     },
     {
+      "id": "games-623",
       "difficulty": "hard",
       "text": "Qual é o nome de Gabriel Toledo no CS?",
       "options": [
@@ -7558,6 +8181,7 @@
       "fact": "Ele é chamado de \"o professor\"."
     },
     {
+      "id": "games-624",
       "difficulty": "hard",
       "text": "Qual é o nome do jogador Marcelo David no CS?",
       "options": [
@@ -7570,6 +8194,7 @@
       "fact": "Ele foi o melhor jogador do mundo em 2016 e 2017."
     },
     {
+      "id": "games-625",
       "difficulty": "hard",
       "text": "Qual é o time brasileiro de CS mais popular em 2020?",
       "options": [
@@ -7582,6 +8207,7 @@
       "fact": "A torcida dela é famosa no mundo inteiro."
     },
     {
+      "id": "games-626",
       "difficulty": "hard",
       "text": "Qual jogo tem o mapa Dust 2?",
       "options": [
@@ -7594,6 +8220,7 @@
       "fact": "É o mapa mais famoso da série."
     },
     {
+      "id": "games-627",
       "difficulty": "hard",
       "text": "Qual jogo tem o agente Sova?",
       "options": [
@@ -7606,6 +8233,7 @@
       "fact": "O jogo foi lançado em 2020."
     },
     {
+      "id": "games-628",
       "difficulty": "hard",
       "text": "Qual jogo tem a personagem Tracer?",
       "options": [
@@ -7618,6 +8246,7 @@
       "fact": "A Blizzard o lançou em 2016."
     },
     {
+      "id": "games-629",
       "difficulty": "hard",
       "text": "Qual jogo tem o Reino de Azeroth?",
       "options": [
@@ -7630,6 +8259,7 @@
       "fact": "Ele foi lançado em 2004."
     },
     {
+      "id": "games-630",
       "difficulty": "hard",
       "text": "Qual jogo tem as raças Terran, Zerg e Protoss?",
       "options": [
@@ -7642,6 +8272,7 @@
       "fact": "Foi muito popular na Coreia do Sul."
     },
     {
+      "id": "games-631",
       "difficulty": "hard",
       "text": "Qual jogo tem a personagem Sarah Kerrigan?",
       "options": [
@@ -7654,6 +8285,7 @@
       "fact": "Ela é a \"Rainha das Lâminas\"."
     },
     {
+      "id": "games-632",
       "difficulty": "hard",
       "text": "Qual jogo tem o personagem Arthas?",
       "options": [
@@ -7666,6 +8298,7 @@
       "fact": "Ele se torna o Lich King."
     },
     {
+      "id": "games-633",
       "difficulty": "hard",
       "text": "Qual jogo tem a civilização dos teutões e o famoso \"Wololo\"?",
       "options": [
@@ -7678,6 +8311,7 @@
       "fact": "O monge usa esse som para converter inimigos."
     },
     {
+      "id": "games-634",
       "difficulty": "hard",
       "text": "Qual jogo tem a tela de abertura \"Sid Meier's\"?",
       "options": [
@@ -7690,6 +8324,7 @@
       "fact": "Ele também tem Gandhi com bombas nucleares em versões antigas."
     },
     {
+      "id": "games-635",
       "difficulty": "hard",
       "text": "Qual líder é famoso por usar bombas nucleares em Civilization?",
       "options": [
@@ -7702,6 +8337,7 @@
       "fact": "Dizem que era um erro no código, mas o criador desmentiu."
     },
     {
+      "id": "games-636",
       "difficulty": "hard",
       "text": "Qual jogo tem o mundo de Vvardenfell?",
       "options": [
@@ -7714,6 +8350,7 @@
       "fact": "É o terceiro título da série Elder Scrolls."
     },
     {
+      "id": "games-637",
       "difficulty": "hard",
       "text": "Qual jogo tem a escola de Hogwarts em um mundo aberto, de 2023?",
       "options": [
@@ -7726,6 +8363,7 @@
       "fact": "O jogo vendeu mais de 30 milhões de cópias."
     },
     {
+      "id": "games-638",
       "difficulty": "hard",
       "text": "Qual jogo tem o Reino de Hyrule, em uma visão de cima, em 1991?",
       "options": [
@@ -7738,6 +8376,7 @@
       "fact": "Foi lançado para Super Nintendo."
     },
     {
+      "id": "games-639",
       "difficulty": "hard",
       "text": "Qual jogo de Zelda é considerado um dos melhores de todos os tempos, de 1998?",
       "options": [
@@ -7750,6 +8389,7 @@
       "fact": "Ele usa um instrumento musical como mecânica."
     },
     {
+      "id": "games-640",
       "difficulty": "hard",
       "text": "Qual jogo tem Link com visual de desenho animado, em 2002?",
       "options": [
@@ -7762,6 +8402,7 @@
       "fact": "O visual foi criticado no lançamento, mas virou clássico."
     },
     {
+      "id": "games-641",
       "difficulty": "hard",
       "text": "Qual é o nome do cavalo de Link em Ocarina of Time?",
       "options": [
@@ -7774,6 +8415,7 @@
       "fact": "Roach é o de Geralt, e Agro é de Shadow of the Colossus."
     },
     {
+      "id": "games-642",
       "difficulty": "hard",
       "text": "Qual é o jogo que tem um cavalo chamado Agro?",
       "options": [
@@ -7786,6 +8428,7 @@
       "fact": "A primeira versão é de 2005."
     },
     {
+      "id": "games-643",
       "difficulty": "hard",
       "text": "Qual jogo de PlayStation 2 é muito elogiado, com menino e menina de mãos dadas?",
       "options": [
@@ -7798,6 +8441,7 @@
       "fact": "O estúdio é de Fumito Ueda."
     },
     {
+      "id": "games-644",
       "difficulty": "hard",
       "text": "Qual jogo tem a deusa japonesa em forma de lobo?",
       "options": [
@@ -7810,6 +8454,7 @@
       "fact": "O visual lembra uma pintura em tinta."
     },
     {
+      "id": "games-645",
       "difficulty": "hard",
       "text": "Qual jogo tem o Alma, uma criança assustadora?",
       "options": [
@@ -7822,6 +8467,7 @@
       "fact": "O jogo mistura tiro e terror."
     },
     {
+      "id": "games-646",
       "difficulty": "hard",
       "text": "Qual jogo tem a cidade cheia de neblina, com o Pyramid Head?",
       "options": [
@@ -7834,6 +8480,7 @@
       "fact": "O monstro é uma das figuras mais famosas do terror nos games."
     },
     {
+      "id": "games-647",
       "difficulty": "hard",
       "text": "Qual jogo tem a nave Ishimura?",
       "options": [
@@ -7846,6 +8493,7 @@
       "fact": "O personagem principal se chama Isaac Clarke."
     },
     {
+      "id": "games-648",
       "difficulty": "hard",
       "text": "Qual jogo tem um vilão de Terror chamado Mr. X?",
       "options": [
@@ -7858,6 +8506,7 @@
       "fact": "Ele persegue o jogador de chapéu e sobretudo."
     },
     {
+      "id": "games-649",
       "difficulty": "hard",
       "text": "Qual jogo tem o vilão Nemesis?",
       "options": [
@@ -7870,6 +8519,7 @@
       "fact": "Ele grita \"STARS\" o tempo todo."
     },
     {
+      "id": "games-650",
       "difficulty": "hard",
       "text": "Qual jogo tem a vilã Lady Dimitrescu?",
       "options": [
@@ -7882,6 +8532,7 @@
       "fact": "Ela virou febre na internet por ser muito alta."
     },
     {
+      "id": "games-651",
       "difficulty": "hard",
       "text": "Qual ator estrelou \"Death Stranding\"?",
       "options": [
@@ -7894,6 +8545,7 @@
       "fact": "Mads Mikkelsen também aparece no jogo."
     },
     {
+      "id": "games-652",
       "difficulty": "hard",
       "text": "Qual ator estrelou \"Cyberpunk 2077\" como Johnny Silverhand?",
       "options": [
@@ -7906,6 +8558,7 @@
       "fact": "A plateia gritou \"Você é incrível!\" no anúncio do jogo."
     },
     {
+      "id": "games-653",
       "difficulty": "hard",
       "text": "Qual ator faz a voz de Joel, em The Last of Us?",
       "options": [
@@ -7918,6 +8571,7 @@
       "fact": "Ele é um dos dubladores mais famosos dos games."
     },
     {
+      "id": "games-654",
       "difficulty": "hard",
       "text": "Qual ator faz a voz de Nathan Drake?",
       "options": [
@@ -7930,6 +8584,7 @@
       "fact": "Ele aparece em uma enorme lista de jogos."
     },
     {
+      "id": "games-655",
       "difficulty": "hard",
       "text": "Qual empresa comprou a Bethesda em 2021?",
       "options": [
@@ -7942,6 +8597,7 @@
       "fact": "A compra custou 7,5 bilhões de dólares."
     },
     {
+      "id": "games-656",
       "difficulty": "hard",
       "text": "Qual empresa comprou a Activision Blizzard em 2023?",
       "options": [
@@ -7954,6 +8610,7 @@
       "fact": "O valor foi de cerca de 69 bilhões de dólares."
     },
     {
+      "id": "games-657",
       "difficulty": "hard",
       "text": "Qual empresa comprou a Bungie, criadora de Halo, em 2022?",
       "options": [
@@ -7966,6 +8623,7 @@
       "fact": "Antes, a Bungie era da Microsoft."
     },
     {
+      "id": "games-658",
       "difficulty": "hard",
       "text": "Qual empresa comprou a Supercell em 2016, em parte?",
       "options": [
@@ -7978,6 +8636,7 @@
       "fact": "A empresa chinesa pagou cerca de 8,6 bilhões."
     },
     {
+      "id": "games-659",
       "difficulty": "hard",
       "text": "Qual empresa chinesa é dona da Riot Games?",
       "options": [
@@ -7990,6 +8649,7 @@
       "fact": "Ela é a maior do mundo no ramo de games."
     },
     {
+      "id": "games-660",
       "difficulty": "hard",
       "text": "Qual empresa chinesa criou Genshin Impact?",
       "options": [
@@ -8002,6 +8662,7 @@
       "fact": "O jogo faturou bilhões nos primeiros anos."
     },
     {
+      "id": "games-661",
       "difficulty": "hard",
       "text": "Qual empresa criou o motor gráfico Unreal Engine?",
       "options": [
@@ -8014,6 +8675,7 @@
       "fact": "É muito usado em filmes e séries."
     },
     {
+      "id": "games-662",
       "difficulty": "hard",
       "text": "Qual empresa criou o motor gráfico Source?",
       "options": [
@@ -8026,6 +8688,7 @@
       "fact": "Half-Life 2 usou esse motor."
     },
     {
+      "id": "games-663",
       "difficulty": "hard",
       "text": "Qual estúdio brasileiro criou \"Dandara\"?",
       "options": [
@@ -8038,6 +8701,7 @@
       "fact": "Ele fica em Belo Horizonte."
     },
     {
+      "id": "games-664",
       "difficulty": "hard",
       "text": "Qual estúdio brasileiro criou \"Chroma Squad\"?",
       "options": [
@@ -8050,6 +8714,7 @@
       "fact": "Ele fica em Brasília."
     },
     {
+      "id": "games-665",
       "difficulty": "hard",
       "text": "Qual é o primeiro jogo eletrônico feito no Brasil, oficialmente?",
       "options": [
@@ -8062,6 +8727,7 @@
       "fact": "Foi lançado em 1985, por Renato Degiovani."
     },
     {
+      "id": "games-666",
       "difficulty": "hard",
       "text": "Qual jogo de futebol com narração em português fez sucesso no PlayStation 2?",
       "options": [
@@ -8074,6 +8740,7 @@
       "fact": "O jogo foi criado por brasileiros, a partir de Winning Eleven."
     },
     {
+      "id": "games-667",
       "difficulty": "hard",
       "text": "Qual era a tecnologia do \"Polystation\", famoso videogame clone?",
       "options": [
@@ -8086,6 +8753,7 @@
       "fact": "Vendida em camelôs, ela trazia cartuchos de 8 bits."
     },
     {
+      "id": "games-668",
       "difficulty": "hard",
       "text": "Em qual console saiu \"Alex Kidd in Miracle World\"?",
       "options": [
@@ -8098,6 +8766,7 @@
       "fact": "Ele vinha na memória de muitos consoles."
     },
     {
+      "id": "games-669",
       "difficulty": "hard",
       "text": "Em qual console saiu o jogo \"Banjo-Kazooie\"?",
       "options": [
@@ -8110,6 +8779,7 @@
       "fact": "O urso e a ave são da Rare."
     },
     {
+      "id": "games-670",
       "difficulty": "hard",
       "text": "Em qual console saiu o jogo \"GoldenEye 007\"?",
       "options": [
@@ -8122,6 +8792,7 @@
       "fact": "Foi um marco nos jogos de tiro em console."
     },
     {
+      "id": "games-671",
       "difficulty": "hard",
       "text": "Em qual console saiu o jogo \"Chrono Trigger\"?",
       "options": [
@@ -8134,6 +8805,7 @@
       "fact": "É considerado um dos melhores RPGs de todos os tempos."
     },
     {
+      "id": "games-672",
       "difficulty": "hard",
       "text": "Em qual console saiu o jogo \"Metal Gear Solid\", de 1998?",
       "options": [
@@ -8146,6 +8818,7 @@
       "fact": "A série começou no MSX, em 1987."
     },
     {
+      "id": "games-673",
       "difficulty": "hard",
       "text": "Em qual console saiu o jogo \"Shenmue\"?",
       "options": [
@@ -8158,6 +8831,7 @@
       "fact": "Ele foi o mais caro da época, e quase quebrou a Sega."
     },
     {
+      "id": "games-674",
       "difficulty": "hard",
       "text": "Em qual console saiu o jogo \"Halo: Combat Evolved\"?",
       "options": [
@@ -8170,6 +8844,7 @@
       "fact": "A Bungie o tinha mostrado primeiro em um evento da Apple."
     },
     {
+      "id": "games-675",
       "difficulty": "medium",
       "text": "Qual jogo tem um detetive com narração em primeira pessoa e \"bullet time\", de 2001?",
       "options": [
@@ -8182,6 +8857,7 @@
       "fact": "O protagonista busca vingança pela família."
     },
     {
+      "id": "games-676",
       "difficulty": "medium",
       "text": "Qual jogo tem uma cidade fictícia inspirada em Miami?",
       "options": [
@@ -8194,6 +8870,7 @@
       "fact": "O jogo se passa nos anos 1980."
     },
     {
+      "id": "games-677",
       "difficulty": "medium",
       "text": "Qual jogo tem a cidade de Liberty City inspirada em Nova York?",
       "options": [
@@ -8206,6 +8883,7 @@
       "fact": "Ele mudou os jogos de mundo aberto em 2001."
     },
     {
+      "id": "games-678",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem CJ?",
       "options": [
@@ -8218,6 +8896,7 @@
       "fact": "O nome completo é Carl Johnson."
     },
     {
+      "id": "games-679",
       "difficulty": "medium",
       "text": "Qual jogo tem Trevor, Michael e Franklin?",
       "options": [
@@ -8230,6 +8909,7 @@
       "fact": "Foram os três protagonistas do jogo."
     },
     {
+      "id": "games-680",
       "difficulty": "medium",
       "text": "Qual jogo tem Niko Bellic?",
       "options": [
@@ -8242,6 +8922,7 @@
       "fact": "Ele é um imigrante do Leste Europeu."
     },
     {
+      "id": "games-681",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem John Marston?",
       "options": [
@@ -8254,6 +8935,7 @@
       "fact": "Ele é um pistoleiro em busca da família."
     },
     {
+      "id": "games-682",
       "difficulty": "medium",
       "text": "Qual jogo tem a personagem Jill Valentine?",
       "options": [
@@ -8266,6 +8948,7 @@
       "fact": "Ela é uma das fundadoras da equipe S.T.A.R.S."
     },
     {
+      "id": "games-683",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem Chris Redfield?",
       "options": [
@@ -8278,6 +8961,7 @@
       "fact": "A irmã dele, Claire, aparece no segundo jogo."
     },
     {
+      "id": "games-684",
       "difficulty": "hard",
       "text": "Qual é o verdadeiro nome do Master Chief?",
       "options": [
@@ -8290,6 +8974,7 @@
       "fact": "O rosto dele nunca é mostrado por completo."
     },
     {
+      "id": "games-685",
       "difficulty": "hard",
       "text": "Qual é o verdadeiro nome do personagem Big Boss?",
       "options": [
@@ -8302,6 +8987,7 @@
       "fact": "Ele é pai de Solid Snake, por meio de um clone."
     },
     {
+      "id": "games-686",
       "difficulty": "hard",
       "text": "Qual é o nome do protagonista de \"The Elder Scrolls V\"?",
       "options": [
@@ -8314,6 +9000,7 @@
       "fact": "O jogador escolhe o nome e a raça dele."
     },
     {
+      "id": "games-687",
       "difficulty": "hard",
       "text": "Qual é o nome do protagonista de \"Fallout 4\"?",
       "options": [
@@ -8326,6 +9013,7 @@
       "fact": "A busca é pelo filho perdido."
     },
     {
+      "id": "games-688",
       "difficulty": "hard",
       "text": "Qual é o nome do protagonista de \"Cyberpunk 2077\"?",
       "options": [
@@ -8338,6 +9026,7 @@
       "fact": "O jogador pode escolher o gênero."
     },
     {
+      "id": "games-689",
       "difficulty": "hard",
       "text": "Qual é o nome do protagonista de \"Death Stranding\"?",
       "options": [
@@ -8350,6 +9039,7 @@
       "fact": "Ele entrega encomendas em um mundo arruinado."
     },
     {
+      "id": "games-690",
       "difficulty": "hard",
       "text": "Qual é o nome do protagonista de \"Sekiro\"?",
       "options": [
@@ -8362,6 +9052,7 @@
       "fact": "O jogo foi lançado em 2019 pela FromSoftware."
     },
     {
+      "id": "games-691",
       "difficulty": "hard",
       "text": "Qual é o nome da região onde se passa Elden Ring?",
       "options": [
@@ -8374,6 +9065,7 @@
       "fact": "O mundo tem a colaboração de George R. R. Martin."
     },
     {
+      "id": "games-692",
       "difficulty": "hard",
       "text": "Qual é o nome da região onde se passa Dark Souls?",
       "options": [
@@ -8386,6 +9078,7 @@
       "fact": "O primeiro chefe é o Demônio do Refúgio."
     },
     {
+      "id": "games-693",
       "difficulty": "hard",
       "text": "Qual é o nome da cidade onde se passa Bloodborne?",
       "options": [
@@ -8398,6 +9091,7 @@
       "fact": "Ela é inspirada em Londres vitoriana."
     },
     {
+      "id": "games-694",
       "difficulty": "hard",
       "text": "Qual é o nome do continente onde se passa The Elder Scrolls?",
       "options": [
@@ -8410,6 +9104,7 @@
       "fact": "Skyrim é uma de suas províncias."
     },
     {
+      "id": "games-695",
       "difficulty": "hard",
       "text": "Qual é o nome do mundo de \"World of Warcraft\"?",
       "options": [
@@ -8422,6 +9117,7 @@
       "fact": "Ele é dividido entre a Aliança e a Horda."
     },
     {
+      "id": "games-696",
       "difficulty": "hard",
       "text": "Qual é o nome das duas facções de World of Warcraft?",
       "options": [
@@ -8434,6 +9130,7 @@
       "fact": "Cada uma tem raças próprias."
     },
     {
+      "id": "games-697",
       "difficulty": "hard",
       "text": "Qual é a cidade onde se passa \"GTA V\"?",
       "options": [
@@ -8446,6 +9143,7 @@
       "fact": "É inspirada em Los Angeles."
     },
     {
+      "id": "games-698",
       "difficulty": "impossible",
       "text": "Quem é o autor de \"Amazônia\", um dos primeiros jogos brasileiros?",
       "options": [
@@ -8460,6 +9158,7 @@
       "fact": "O jogo saiu na revista Micro Sistemas."
     },
     {
+      "id": "games-699",
       "difficulty": "impossible",
       "text": "Em que ano saiu o primeiro jogo eletrônico conhecido, \"Tennis for Two\"?",
       "options": [
@@ -8474,6 +9173,7 @@
       "fact": "Ele foi criado em um laboratório nos EUA."
     },
     {
+      "id": "games-700",
       "difficulty": "impossible",
       "text": "Em que ano saiu \"Spacewar!\", um dos primeiros jogos de computador?",
       "options": [
@@ -8488,6 +9188,7 @@
       "fact": "Ele foi feito no MIT."
     },
     {
+      "id": "games-701",
       "difficulty": "impossible",
       "text": "Em que ano saiu \"Pong\", o primeiro grande sucesso comercial de videogames?",
       "options": [
@@ -8502,6 +9203,7 @@
       "fact": "Foi lançado pela Atari."
     },
     {
+      "id": "games-702",
       "difficulty": "impossible",
       "text": "Em que ano saiu o console Magnavox Odyssey?",
       "options": [
@@ -8516,6 +9218,7 @@
       "fact": "Ele é o primeiro videogame caseiro comercial."
     },
     {
+      "id": "games-703",
       "difficulty": "impossible",
       "text": "Quem é o criador do Magnavox Odyssey?",
       "options": [
@@ -8530,6 +9233,7 @@
       "fact": "Ele é conhecido como \"pai dos videogames\"."
     },
     {
+      "id": "games-704",
       "difficulty": "impossible",
       "text": "Em que ano aconteceu o \"crash\" dos videogames, nos EUA?",
       "options": [
@@ -8544,6 +9248,7 @@
       "fact": "O jogo do E.T. virou o símbolo da queda."
     },
     {
+      "id": "games-705",
       "difficulty": "impossible",
       "text": "Em que deserto a Atari enterrou milhões de cartuchos?",
       "options": [
@@ -8558,6 +9263,7 @@
       "fact": "Em 2014, um documentário os desenterrou."
     },
     {
+      "id": "games-706",
       "difficulty": "impossible",
       "text": "Quantas semanas Howard Scott Warshaw levou para criar o jogo do E.T.?",
       "options": [
@@ -8572,6 +9278,7 @@
       "fact": "Ele hoje é terapeuta."
     },
     {
+      "id": "games-707",
       "difficulty": "impossible",
       "text": "Em que ano saiu o Virtual Boy, da Nintendo, com tela vermelha?",
       "options": [
@@ -8586,6 +9293,7 @@
       "fact": "Ele foi um dos maiores fracassos da empresa."
     },
     {
+      "id": "games-708",
       "difficulty": "impossible",
       "text": "Quantas unidades do Virtual Boy foram vendidas, aproximadamente?",
       "options": [
@@ -8600,6 +9308,7 @@
       "fact": "Causava dor de cabeça em muitos jogadores."
     },
     {
+      "id": "games-709",
       "difficulty": "impossible",
       "text": "Qual foi o primeiro Pokémon criado, segundo os autores?",
       "options": [
@@ -8614,6 +9323,7 @@
       "fact": "Na Pokédex original, ele é o número 112."
     },
     {
+      "id": "games-710",
       "difficulty": "impossible",
       "text": "Qual o número do Mew, no Pokédex original?",
       "options": [
@@ -8628,6 +9338,7 @@
       "fact": "Ele foi adicionado em segredo pouco antes do lançamento."
     },
     {
+      "id": "games-711",
       "difficulty": "impossible",
       "text": "Qual o número do Mewtwo, no Pokédex original?",
       "options": [
@@ -8642,6 +9353,7 @@
       "fact": "Ele é um clone de Mew."
     },
     {
+      "id": "games-712",
       "difficulty": "impossible",
       "text": "Quantos Pokémon havia na segunda geração, no total?",
       "options": [
@@ -8656,6 +9368,7 @@
       "fact": "A segunda região é Johto."
     },
     {
+      "id": "games-713",
       "difficulty": "impossible",
       "text": "Quantos Pokémon foram lançados até a nona geração, em 2022?",
       "options": [
@@ -8670,6 +9383,7 @@
       "fact": "A lista cresce a cada novo jogo."
     },
     {
+      "id": "games-714",
       "difficulty": "impossible",
       "text": "Qual o valor mais alto de pontos que um jogador conseguiu em Pac-Man?",
       "options": [
@@ -8684,6 +9398,7 @@
       "fact": "Billy Mitchell chegou ao topo em 1999."
     },
     {
+      "id": "games-715",
       "difficulty": "medium",
       "text": "Qual jogo tem a equipe de super-heróis com Mario, em lutas de bordas?",
       "options": [
@@ -8696,6 +9411,7 @@
       "fact": "A série reúne personagens de várias empresas."
     },
     {
+      "id": "games-716",
       "difficulty": "medium",
       "text": "Qual jogo mistura Pokémon e armas, com um grande sucesso em 2024?",
       "options": [
@@ -8708,6 +9424,7 @@
       "fact": "A Nintendo processou o estúdio por causa disso."
     },
     {
+      "id": "games-717",
       "difficulty": "hard",
       "text": "Qual é a cidade do Batman na série Arkham?",
       "options": [
@@ -8720,6 +9437,7 @@
       "fact": "O hospício de Arkham é o cenário do primeiro jogo."
     },
     {
+      "id": "games-718",
       "difficulty": "hard",
       "text": "Qual é o nome do hospício da série de jogos do Batman?",
       "options": [
@@ -8732,6 +9450,7 @@
       "fact": "Ele aparece no jogo de 2009."
     },
     {
+      "id": "games-719",
       "difficulty": "hard",
       "text": "Qual é o nome do rei do jogo \"Dark Souls\", a quem o herói pode ligar a chama?",
       "options": [
@@ -8744,6 +9463,7 @@
       "fact": "Os fãs discutem muito a história do jogo."
     },
     {
+      "id": "games-720",
       "difficulty": "hard",
       "text": "Qual é o nome do streamer brasileiro famoso por transmissões de Free Fire?",
       "options": [
@@ -8756,6 +9476,7 @@
       "fact": "Ele foi considerado o melhor jogador do mundo em 2019."
     },
     {
+      "id": "games-721",
       "difficulty": "hard",
       "text": "Qual é o nome do streamer brasileiro famoso por Counter-Strike, em Twitch?",
       "options": [
@@ -8768,6 +9489,7 @@
       "fact": "Ele foi um dos mais assistidos do mundo."
     },
     {
+      "id": "games-722",
       "difficulty": "hard",
       "text": "Qual é o nome do youtuber brasileiro que faz vídeos de jogos e virou escritor?",
       "options": [
@@ -8780,6 +9502,7 @@
       "fact": "Ele criou também a série \"Ordem Paranormal\"."
     },
     {
+      "id": "games-723",
       "difficulty": "hard",
       "text": "Qual é o nome do streamer americano de Fortnite, que jogou com Drake em 2018?",
       "options": [
@@ -8792,6 +9515,7 @@
       "fact": "A partida bateu recordes na Twitch."
     },
     {
+      "id": "games-724",
       "difficulty": "hard",
       "text": "Qual é o nome do youtuber sueco que dominou o site por anos?",
       "options": [
@@ -8804,6 +9528,7 @@
       "fact": "O nome real dele é Felix Kjellberg."
     },
     {
+      "id": "games-725",
       "difficulty": "hard",
       "text": "Qual é o nome da empresa que comprou a Twitch em 2014?",
       "options": [
@@ -8816,6 +9541,7 @@
       "fact": "Foi por 970 milhões de dólares."
     },
     {
+      "id": "games-726",
       "difficulty": "hard",
       "text": "Quanto a Amazon pagou pela Twitch, em 2014?",
       "options": [
@@ -8828,6 +9554,7 @@
       "fact": "A plataforma nasceu de um site chamado Justin.tv."
     },
     {
+      "id": "games-727",
       "difficulty": "hard",
       "text": "Qual é o nome do site que deu origem à Twitch?",
       "options": [
@@ -8840,6 +9567,7 @@
       "fact": "A plataforma de jogos virou muito maior que o site original."
     },
     {
+      "id": "games-728",
       "difficulty": "impossible",
       "text": "Em que ano foi criado o selo de idade dos jogos nos EUA, o ESRB?",
       "options": [
@@ -8854,6 +9582,7 @@
       "fact": "A criação foi em resposta a Mortal Kombat e Night Trap."
     },
     {
+      "id": "games-729",
       "difficulty": "impossible",
       "text": "Em que ano o Atari 2600 chegou ao Brasil oficialmente?",
       "options": [
@@ -8868,6 +9597,7 @@
       "fact": "Muitas crianças pediam de presente de Natal."
     },
     {
+      "id": "games-730",
       "difficulty": "impossible",
       "text": "Em que ano a Tectoy lançou o Master System no Brasil?",
       "options": [
@@ -8882,6 +9612,7 @@
       "fact": "A empresa ainda vendia o console nos anos 2010."
     },
     {
+      "id": "games-731",
       "difficulty": "impossible",
       "text": "Em que ano a Nintendo chegou oficialmente ao Brasil, com a Playtronic?",
       "options": [
@@ -8896,6 +9627,7 @@
       "fact": "A empresa saiu do Brasil em 2015."
     },
     {
+      "id": "games-732",
       "difficulty": "impossible",
       "text": "Quem fazia o Phantom System no Brasil?",
       "options": [
@@ -8910,6 +9642,7 @@
       "fact": "Era um clone do Nintendinho."
     },
     {
+      "id": "games-733",
       "difficulty": "impossible",
       "text": "Em que ano o primeiro campeonato mundial de Tetris começou?",
       "options": [
@@ -8924,6 +9657,7 @@
       "fact": "Um menino de 13 anos \"zerou\" o jogo em 2023."
     },
     {
+      "id": "games-734",
       "difficulty": "impossible",
       "text": "Quem foi o primeiro humano a \"zerar\" o Tetris clássico, aos 13 anos, em 2023?",
       "options": [
@@ -8938,6 +9672,7 @@
       "fact": "Foi o primeiro a chegar à \"tela de morte\"."
     },
     {
+      "id": "games-735",
       "difficulty": "impossible",
       "text": "Quantos níveis tem Pac-Man até travar a última fase?",
       "options": [
@@ -8952,6 +9687,7 @@
       "fact": "A fase 256 fica cheia de números e letras."
     },
     {
+      "id": "games-736",
       "difficulty": "hard",
       "text": "Qual é o nome do cachorro de Fallout 4?",
       "options": [
@@ -8964,6 +9700,7 @@
       "fact": "O nome é uma piada com a carne de cachorro."
     },
     {
+      "id": "games-737",
       "difficulty": "hard",
       "text": "Qual é o nome do cavalo de Arthur Morgan, se o jogador usar o primeiro?",
       "options": [
@@ -8976,6 +9713,7 @@
       "fact": "O nome vem de uma rainha guerreira."
     },
     {
+      "id": "games-738",
       "difficulty": "hard",
       "text": "Qual é o nome do personagem que narra \"Hades\"?",
       "options": [
@@ -8988,6 +9726,7 @@
       "fact": "A voz faz comentários sobre cada morte do jogador."
     },
     {
+      "id": "games-739",
       "difficulty": "hard",
       "text": "Qual é o nome da inteligência artificial de Master Chief?",
       "options": [
@@ -9000,6 +9739,7 @@
       "fact": "A assistente da Microsoft herdou esse nome."
     },
     {
+      "id": "games-740",
       "difficulty": "hard",
       "text": "Qual é a assistente da Microsoft com nome tirado de um jogo?",
       "options": [
@@ -9012,6 +9752,7 @@
       "fact": "A atriz de voz foi a mesma no início."
     },
     {
+      "id": "games-741",
       "difficulty": "hard",
       "text": "Qual é a linguagem de programação usada em Minecraft, na versão original?",
       "options": [
@@ -9024,6 +9765,7 @@
       "fact": "A versão Bedrock usa C++."
     },
     {
+      "id": "games-742",
       "difficulty": "hard",
       "text": "Qual é a língua falada em \"The Sims\"?",
       "options": [
@@ -9036,6 +9778,7 @@
       "fact": "Ela não tem vocabulário fixo."
     },
     {
+      "id": "games-743",
       "difficulty": "impossible",
       "text": "Quantas estrelas tem \"Super Mario 64\", para coletar todas?",
       "options": [
@@ -9050,6 +9793,7 @@
       "fact": "O castelo da princesa Peach é o ponto de partida."
     },
     {
+      "id": "games-744",
       "difficulty": "easy",
       "text": "Em que jogo os jogadores constroem com blocos e enfrentam creepers?",
       "options": [
@@ -9062,6 +9806,7 @@
       "fact": "O creeper nasceu de um erro de modelagem."
     },
     {
+      "id": "games-745",
       "difficulty": "easy",
       "text": "Em que jogo os jogadores são tripulantes e impostores?",
       "options": [
@@ -9074,6 +9819,7 @@
       "fact": "A febre veio em 2020."
     },
     {
+      "id": "games-746",
       "difficulty": "easy",
       "text": "Em que jogo os jogadores caçam Pokémon nas ruas com o celular?",
       "options": [
@@ -9086,6 +9832,7 @@
       "fact": "Ele estreou no Brasil em agosto de 2016."
     },
     {
+      "id": "games-747",
       "difficulty": "easy",
       "text": "Que jogo de cores é famoso pelas palavras \"UNO\"?",
       "options": [
@@ -9098,6 +9845,7 @@
       "fact": "O jogador grita o nome quando fica com uma carta."
     },
     {
+      "id": "games-748",
       "difficulty": "easy",
       "text": "Qual é o nome do encanador de boné vermelho da Nintendo?",
       "options": [
@@ -9110,6 +9858,7 @@
       "fact": "Ele usa macacão azul."
     },
     {
+      "id": "games-749",
       "difficulty": "easy",
       "text": "Qual é o irmão de boné verde de Mario?",
       "options": [
@@ -9122,6 +9871,7 @@
       "fact": "O nome é parecido com a palavra italiana para sopa."
     },
     {
+      "id": "games-750",
       "difficulty": "easy",
       "text": "Qual é o dinossauro verde que acompanha Mario?",
       "options": [
@@ -9134,6 +9884,7 @@
       "fact": "Ele estreou em 1990."
     },
     {
+      "id": "games-751",
       "difficulty": "easy",
       "text": "Qual é o rival de Mario, um grande réptil de chifres?",
       "options": [
@@ -9146,6 +9897,7 @@
       "fact": "O objetivo dele costuma ser sequestrar a princesa Peach."
     },
     {
+      "id": "games-752",
       "difficulty": "easy",
       "text": "Qual é o ouriço azul que é o mascote da Sega?",
       "options": [
@@ -9158,6 +9910,7 @@
       "fact": "Ele corre muito e coleta anéis."
     },
     {
+      "id": "games-753",
       "difficulty": "medium",
       "text": "Que personagem é o grande herói de \"God of War\"?",
       "options": [
@@ -9170,6 +9923,7 @@
       "fact": "Ele saiu da mitologia grega para a nórdica."
     },
     {
+      "id": "games-754",
       "difficulty": "medium",
       "text": "Que personagem é o herói de \"Halo\"?",
       "options": [
@@ -9182,6 +9936,7 @@
       "fact": "O nome verdadeiro dele é John-117."
     },
     {
+      "id": "games-755",
       "difficulty": "medium",
       "text": "Que personagem é a protagonista de \"Tomb Raider\"?",
       "options": [
@@ -9194,6 +9949,7 @@
       "fact": "Ela estreou em 1996."
     },
     {
+      "id": "games-756",
       "difficulty": "medium",
       "text": "Que personagem é o caçador de bruxos de \"The Witcher\"?",
       "options": [
@@ -9206,6 +9962,7 @@
       "fact": "Ele nasceu nos livros de Andrzej Sapkowski."
     },
     {
+      "id": "games-757",
       "difficulty": "medium",
       "text": "Que personagem é o assassino florentino de \"Assassin's Creed II\"?",
       "options": [
@@ -9218,6 +9975,7 @@
       "fact": "A história se passa na Renascença."
     },
     {
+      "id": "games-758",
       "difficulty": "medium",
       "text": "Que jogo de luta tem Ryu, Ken e Chun-Li?",
       "options": [
@@ -9230,6 +9988,7 @@
       "fact": "A série nasceu em 1987."
     },
     {
+      "id": "games-759",
       "difficulty": "medium",
       "text": "Que jogo de luta tem Scorpion e Sub-Zero?",
       "options": [
@@ -9242,6 +10001,7 @@
       "fact": "A violência dele gerou polêmica nos EUA."
     },
     {
+      "id": "games-760",
       "difficulty": "medium",
       "text": "Que jogo de corrida tem Bowser, Peach e cascos de tartaruga?",
       "options": [
@@ -9254,6 +10014,7 @@
       "fact": "O casco azul é o mais temido."
     },
     {
+      "id": "games-761",
       "difficulty": "medium",
       "text": "Que marca brasileira vendeu os consoles Sega no país?",
       "options": [
@@ -9266,6 +10027,7 @@
       "fact": "O Master System foi um enorme sucesso aqui."
     },
     {
+      "id": "games-762",
       "difficulty": "hard",
       "text": "Que personagem de \"Metal Gear Solid\" é conhecido pela caixa de papelão?",
       "options": [
@@ -9278,6 +10040,7 @@
       "fact": "Hideo Kojima é o criador da série."
     },
     {
+      "id": "games-763",
       "difficulty": "hard",
       "text": "Que empresa criou \"Dark Souls\" e \"Elden Ring\"?",
       "options": [
@@ -9290,6 +10053,7 @@
       "fact": "Hidetaka Miyazaki é o diretor."
     },
     {
+      "id": "games-764",
       "difficulty": "hard",
       "text": "Que empresa belga criou \"Baldur's Gate 3\"?",
       "options": [
@@ -9302,6 +10066,7 @@
       "fact": "Foi o jogo do ano de 2023."
     },
     {
+      "id": "games-765",
       "difficulty": "hard",
       "text": "Que empresa criou \"Hollow Knight\"?",
       "options": [
@@ -9314,6 +10079,7 @@
       "fact": "É um estúdio australiano."
     },
     {
+      "id": "games-766",
       "difficulty": "hard",
       "text": "Que empresa criou \"Hades\"?",
       "options": [
@@ -9326,6 +10092,7 @@
       "fact": "Ela também fez \"Bastion\"."
     },
     {
+      "id": "games-767",
       "difficulty": "hard",
       "text": "Em que jogo aparece Pyramid Head?",
       "options": [
@@ -9338,6 +10105,7 @@
       "fact": "Ele é um dos maiores vilões do terror."
     },
     {
+      "id": "games-768",
       "difficulty": "impossible",
       "text": "Quantos jogos oficiais da franquia Pokémon formam a primeira geração, no Ocidente?",
       "options": [
@@ -9352,6 +10120,7 @@
       "fact": "São Red, Blue e Yellow."
     },
     {
+      "id": "games-769",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"OXO\", um dos primeiros jogos de computador?",
       "options": [
@@ -9366,6 +10135,7 @@
       "fact": "Ele era um jogo da velha em Cambridge."
     },
     {
+      "id": "games-770",
       "difficulty": "impossible",
       "text": "Qual é o nome do primeiro console doméstico da história?",
       "options": [
@@ -9380,6 +10150,7 @@
       "fact": "Ele foi lançado em 1972."
     },
     {
+      "id": "games-771",
       "difficulty": "impossible",
       "text": "Como é conhecido Ralph Baer, criador do primeiro console doméstico?",
       "options": [
@@ -9394,6 +10165,7 @@
       "fact": "Ele nasceu na Alemanha e foi para os EUA."
     },
     {
+      "id": "games-772",
       "difficulty": "impossible",
       "text": "Em que ano foi lançado \"Tennis for Two\", do físico William Higinbotham?",
       "options": [
@@ -9408,6 +10180,7 @@
       "fact": "O jogo rodava em um osciloscópio."
     },
     {
+      "id": "games-773",
       "difficulty": "hard",
       "text": "Que estúdio francês criou \"Dead Cells\"?",
       "options": [
@@ -9420,6 +10193,7 @@
       "fact": "O jogo é um roguelike de ação."
     },
     {
+      "id": "games-774",
       "difficulty": "hard",
       "text": "Que empresa japonesa criou \"Metal Gear\" e \"Silent Hill\"?",
       "options": [
@@ -9432,6 +10206,7 @@
       "fact": "Ela também tem a série \"Pro Evolution Soccer\"."
     },
     {
+      "id": "games-775",
       "difficulty": "hard",
       "text": "Que empresa criou \"Monster Hunter\" e \"Resident Evil\"?",
       "options": [

@@ -2,6 +2,7 @@
   "theme": "Tecnologia",
   "questions": [
     {
+      "id": "chute-tecnologia-1",
       "difficulty": "easy",
       "text": "Em que ano o primeiro iPhone foi lançado?",
       "answer": 2007,
@@ -9,6 +10,7 @@
       "fact": "Steve Jobs apresentou o aparelho como 'um iPod, um telefone e um comunicador de internet'."
     },
     {
+      "id": "chute-tecnologia-2",
       "difficulty": "easy",
       "text": "Quantos bytes tem um kilobyte, na conta binária?",
       "answer": 1024,
@@ -16,6 +18,7 @@
       "fact": "No Sistema Internacional, um kilobyte tem 1.000 bytes; o de 1.024 se chama kibibyte."
     },
     {
+      "id": "chute-tecnologia-3",
       "difficulty": "medium",
       "text": "Em que ano o Google foi fundado?",
       "answer": 1998,
@@ -23,6 +26,7 @@
       "fact": "Larry Page e Sergey Brin começaram o projeto quando eram estudantes em Stanford."
     },
     {
+      "id": "chute-tecnologia-4",
       "difficulty": "easy",
       "text": "Em que ano o Facebook foi criado?",
       "answer": 2004,
@@ -30,6 +34,7 @@
       "fact": "No começo, só alunos de Harvard podiam entrar."
     },
     {
+      "id": "chute-tecnologia-5",
       "difficulty": "hard",
       "text": "Em que ano foi enviado o primeiro e-mail?",
       "answer": 1971,
@@ -37,6 +42,7 @@
       "fact": "Ray Tomlinson escolheu o @ para separar o usuário do computador."
     },
     {
+      "id": "chute-tecnologia-6",
       "difficulty": "easy",
       "text": "Qual era o limite original de caracteres de um tuíte?",
       "answer": 140,
@@ -44,6 +50,7 @@
       "fact": "O limite vinha do SMS, que tinha 160 caracteres; subiu para 280 em 2017."
     },
     {
+      "id": "chute-tecnologia-7",
       "difficulty": "medium",
       "text": "Em que ano a Apple foi fundada?",
       "answer": 1976,
@@ -51,6 +58,7 @@
       "fact": "Steve Jobs e Steve Wozniak montaram o Apple I numa garagem."
     },
     {
+      "id": "chute-tecnologia-8",
       "difficulty": "medium",
       "text": "Em que ano a Microsoft foi fundada?",
       "answer": 1975,
@@ -58,6 +66,7 @@
       "fact": "Bill Gates e Paul Allen fundaram a empresa em Albuquerque, nos EUA."
     },
     {
+      "id": "chute-tecnologia-9",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o Facebook tinha em 2024?",
       "answer": 3,
@@ -65,6 +74,7 @@
       "fact": "É a rede social mais usada do mundo."
     },
     {
+      "id": "chute-tecnologia-10",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Windows XP?",
       "answer": 2001,
@@ -72,6 +82,7 @@
       "fact": "O suporte oficial acabou em 2014, mas ele seguiu em uso por anos."
     },
     {
+      "id": "chute-tecnologia-11",
       "difficulty": "medium",
       "text": "Em que ano o WhatsApp foi criado?",
       "answer": 2009,
@@ -79,6 +90,7 @@
       "fact": "O Facebook comprou o aplicativo em 2014 por 19 bilhões de dólares."
     },
     {
+      "id": "chute-tecnologia-12",
       "difficulty": "hard",
       "text": "Quantos bits tem um endereço IPv4?",
       "answer": 32,
@@ -86,6 +98,7 @@
       "fact": "Isso dá cerca de 4,3 bilhões de endereços, que acabaram; por isso surgiu o IPv6."
     },
     {
+      "id": "chute-tecnologia-13",
       "difficulty": "hard",
       "text": "Em que ano Tim Berners-Lee propôs a World Wide Web?",
       "answer": 1989,
@@ -93,6 +106,7 @@
       "fact": "Ele trabalhava no CERN, na Suíça, e queria compartilhar documentos entre cientistas."
     },
     {
+      "id": "chute-tecnologia-14",
       "difficulty": "hard",
       "text": "Quantos transistores tinha o Intel 4004, o primeiro microprocessador comercial?",
       "answer": 2300,
@@ -100,6 +114,7 @@
       "fact": "Os chips de hoje têm dezenas de bilhões de transistores."
     },
     {
+      "id": "chute-tecnologia-15",
       "difficulty": "easy",
       "text": "Em que ano o YouTube foi lançado?",
       "answer": 2005,
@@ -107,6 +122,7 @@
       "fact": "O primeiro vídeo, Me at the zoo, tem 19 segundos."
     },
     {
+      "id": "chute-tecnologia-16",
       "difficulty": "hard",
       "text": "Quanto pesava o ENIAC, um dos primeiros computadores?",
       "answer": 27,
@@ -114,6 +130,7 @@
       "fact": "Ele ocupava uma sala inteira e tinha cerca de 18 mil válvulas."
     },
     {
+      "id": "chute-tecnologia-17",
       "difficulty": "medium",
       "text": "Em que ano, aproximadamente, Gutenberg criou a prensa de tipos móveis?",
       "answer": 1440,
@@ -121,6 +138,7 @@
       "fact": "O livro mais famoso dele é a Bíblia de Gutenberg, de cerca de 1455."
     },
     {
+      "id": "chute-tecnologia-18",
       "difficulty": "medium",
       "text": "Em que ano a internet comercial chegou ao Brasil?",
       "answer": 1995,
@@ -128,6 +146,7 @@
       "fact": "Antes disso, a rede era restrita a universidades e centros de pesquisa."
     },
     {
+      "id": "chute-tecnologia-19",
       "difficulty": "easy",
       "text": "Em que ano o ChatGPT foi lançado?",
       "answer": 2022,
@@ -135,6 +154,7 @@
       "fact": "Ele chegou a 100 milhões de usuários em cerca de dois meses."
     },
     {
+      "id": "chute-tecnologia-20",
       "difficulty": "hard",
       "text": "Quantos megabytes cabiam no primeiro disco rígido da IBM, de 1956?",
       "answer": 3.75,
@@ -142,6 +162,7 @@
       "fact": "O IBM 350 pesava cerca de uma tonelada."
     },
     {
+      "id": "chute-tecnologia-21",
       "difficulty": "hard",
       "text": "Quantos caracteres tem a tabela ASCII original?",
       "answer": 128,
@@ -149,6 +170,7 @@
       "fact": "Ela usa 7 bits; as versões estendidas chegaram a 256."
     },
     {
+      "id": "chute-tecnologia-22",
       "difficulty": "medium",
       "text": "Em que ano chegou ao mercado o primeiro celular com Android?",
       "answer": 2008,
@@ -156,6 +178,7 @@
       "fact": "Foi o HTC Dream, também chamado T-Mobile G1."
     },
     {
+      "id": "chute-tecnologia-23",
       "difficulty": "easy",
       "text": "Em que ano o Orkut foi lançado?",
       "answer": 2004,
@@ -163,6 +186,7 @@
       "fact": "O Brasil virou o país com mais usuários da rede; ela fechou em 2014."
     },
     {
+      "id": "chute-tecnologia-24",
       "difficulty": "medium",
       "text": "Quantos megabytes cabiam num disquete de 3,5 polegadas?",
       "answer": 1.44,
@@ -170,6 +194,7 @@
       "fact": "O ícone de salvar de muitos programas ainda é um disquete."
     },
     {
+      "id": "chute-tecnologia-25",
       "difficulty": "medium",
       "text": "Em que ano a Amazon foi fundada?",
       "answer": 1994,
@@ -177,6 +202,7 @@
       "fact": "Jeff Bezos começou vendendo livros pela internet, numa garagem em Seattle."
     },
     {
+      "id": "chute-tecnologia-26",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro celular comercial, o Motorola DynaTAC?",
       "answer": 1983,
@@ -184,6 +210,7 @@
       "fact": "A bateria durava cerca de 30 minutos de conversa e levava 10 horas para carregar."
     },
     {
+      "id": "chute-tecnologia-27",
       "difficulty": "hard",
       "text": "Quanto pesava o celular Motorola DynaTAC 8000X?",
       "answer": 790,
@@ -191,6 +218,7 @@
       "fact": "Ele era chamado de 'tijolão' e custava cerca de 4 mil dólares."
     },
     {
+      "id": "chute-tecnologia-28",
       "difficulty": "easy",
       "text": "Em que ano o Instagram foi lançado?",
       "answer": 2010,
@@ -198,6 +226,7 @@
       "fact": "No começo, só dava para postar fotos quadradas."
     },
     {
+      "id": "chute-tecnologia-29",
       "difficulty": "medium",
       "text": "Em que ano foi minerado o primeiro bloco do Bitcoin?",
       "answer": 2009,
@@ -205,6 +234,7 @@
       "fact": "O bloco gênese foi criado por Satoshi Nakamoto, cuja identidade segue desconhecida."
     },
     {
+      "id": "chute-tecnologia-30",
       "difficulty": "hard",
       "text": "Em que ano a Tesla foi fundada?",
       "answer": 2003,
@@ -212,6 +242,7 @@
       "fact": "Elon Musk entrou como investidor em 2004 e virou CEO em 2008."
     },
     {
+      "id": "chute-tecnologia-31",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Windows 10?",
       "answer": 2015,
@@ -219,6 +250,7 @@
       "fact": "Ele pulou o número 9."
     },
     {
+      "id": "chute-tecnologia-32",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Android, em aparelhos?",
       "answer": 2008,
@@ -226,6 +258,7 @@
       "fact": "O primeiro celular foi o HTC Dream."
     },
     {
+      "id": "chute-tecnologia-33",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro iPad?",
       "answer": 2010,
@@ -233,6 +266,7 @@
       "fact": "Foi lançado meses antes da morte de Steve Jobs no ano seguinte."
     },
     {
+      "id": "chute-tecnologia-34",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro Apple Watch?",
       "answer": 2015,
@@ -240,6 +274,7 @@
       "fact": "Seu foco acabou indo para a saúde."
     },
     {
+      "id": "chute-tecnologia-35",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o iPhone X?",
       "answer": 2017,
@@ -247,6 +282,7 @@
       "fact": "Foi o primeiro com reconhecimento facial."
     },
     {
+      "id": "chute-tecnologia-36",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Gmail?",
       "answer": 2004,
@@ -254,6 +290,7 @@
       "fact": "O anúncio saiu em 1º de abril, e muitos acharam que era piada."
     },
     {
+      "id": "chute-tecnologia-37",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Google Maps?",
       "answer": 2005,
@@ -261,6 +298,7 @@
       "fact": "O Street View chegou em 2007."
     },
     {
+      "id": "chute-tecnologia-38",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Google Chrome?",
       "answer": 2008,
@@ -268,6 +306,7 @@
       "fact": "Ele virou o navegador mais usado do mundo."
     },
     {
+      "id": "chute-tecnologia-39",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Firefox?",
       "answer": 2004,
@@ -275,6 +314,7 @@
       "fact": "Ele nasceu do antigo Netscape."
     },
     {
+      "id": "chute-tecnologia-40",
       "difficulty": "easy",
       "text": "Em que ano a Netflix iniciou o streaming?",
       "answer": 2007,
@@ -282,6 +322,7 @@
       "fact": "Antes, ela só alugava DVDs pelo correio."
     },
     {
+      "id": "chute-tecnologia-41",
       "difficulty": "easy",
       "text": "Em que ano a Netflix chegou ao Brasil?",
       "answer": 2011,
@@ -289,6 +330,7 @@
       "fact": "Foi um dos primeiros países fora da América do Norte."
     },
     {
+      "id": "chute-tecnologia-42",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Twitter?",
       "answer": 2006,
@@ -296,6 +338,7 @@
       "fact": "O primeiro tuíte foi \"just setting up my twttr\"."
     },
     {
+      "id": "chute-tecnologia-43",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Telegram?",
       "answer": 2013,
@@ -303,6 +346,7 @@
       "fact": "Os irmãos Durov são os fundadores."
     },
     {
+      "id": "chute-tecnologia-44",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o TikTok internacionalmente?",
       "answer": 2017,
@@ -310,6 +354,7 @@
       "fact": "Na China, ele se chama Douyin."
     },
     {
+      "id": "chute-tecnologia-45",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Zoom?",
       "answer": 2013,
@@ -317,6 +362,7 @@
       "fact": "O fundador é Eric Yuan."
     },
     {
+      "id": "chute-tecnologia-46",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Snapchat?",
       "answer": 2011,
@@ -324,6 +370,7 @@
       "fact": "As imagens somem depois de vistas."
     },
     {
+      "id": "chute-tecnologia-47",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Uber?",
       "answer": 2009,
@@ -331,6 +378,7 @@
       "fact": "A ideia surgiu em uma noite sem táxis em Paris."
     },
     {
+      "id": "chute-tecnologia-48",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Airbnb?",
       "answer": 2008,
@@ -338,6 +386,7 @@
       "fact": "Os fundadores alugavam colchões de ar."
     },
     {
+      "id": "chute-tecnologia-49",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Nubank?",
       "answer": 2013,
@@ -345,6 +394,7 @@
       "fact": "Ele começou com um cartão roxo."
     },
     {
+      "id": "chute-tecnologia-50",
       "difficulty": "easy",
       "text": "Em que ano foi criado o iFood?",
       "answer": 2011,
@@ -352,6 +402,7 @@
       "fact": "Ele nasceu de um guia impresso."
     },
     {
+      "id": "chute-tecnologia-51",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Mercado Livre?",
       "answer": 1999,
@@ -359,6 +410,7 @@
       "fact": "Marcos Galperin é argentino."
     },
     {
+      "id": "chute-tecnologia-52",
       "difficulty": "easy",
       "text": "Em que ano foi criada a Wikipédia?",
       "answer": 2001,
@@ -366,6 +418,7 @@
       "fact": "O nome reúne \"wiki\" e \"enciclopédia\"."
     },
     {
+      "id": "chute-tecnologia-53",
       "difficulty": "easy",
       "text": "Em que ano foi criada a Netflix?",
       "answer": 1997,
@@ -373,6 +426,7 @@
       "fact": "Reed Hastings e Marc Randolph são os fundadores."
     },
     {
+      "id": "chute-tecnologia-54",
       "difficulty": "easy",
       "text": "Em que ano foi criada a Tesla?",
       "answer": 2003,
@@ -380,6 +434,7 @@
       "fact": "Elon Musk só entrou na empresa no ano seguinte."
     },
     {
+      "id": "chute-tecnologia-55",
       "difficulty": "easy",
       "text": "Em que ano foi criada a SpaceX?",
       "answer": 2002,
@@ -387,6 +442,7 @@
       "fact": "O primeiro foguete a chegar à órbita foi em 2008."
     },
     {
+      "id": "chute-tecnologia-56",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Nvidia?",
       "answer": 1993,
@@ -394,6 +450,7 @@
       "fact": "A ideia surgiu em uma lanchonete."
     },
     {
+      "id": "chute-tecnologia-57",
       "difficulty": "easy",
       "text": "Em que ano foi criada a OpenAI?",
       "answer": 2015,
@@ -401,6 +458,7 @@
       "fact": "Ela começou como uma organização sem fins lucrativos."
     },
     {
+      "id": "chute-tecnologia-58",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Intel?",
       "answer": 1968,
@@ -408,6 +466,7 @@
       "fact": "Gordon Moore e Robert Noyce são os fundadores."
     },
     {
+      "id": "chute-tecnologia-59",
       "difficulty": "hard",
       "text": "Em que ano foi criada a IBM com esse nome?",
       "answer": 1924,
@@ -415,6 +474,7 @@
       "fact": "Antes, a empresa se chamava CTR."
     },
     {
+      "id": "chute-tecnologia-60",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Samsung?",
       "answer": 1938,
@@ -422,6 +482,7 @@
       "fact": "Ela vendia alimentos."
     },
     {
+      "id": "chute-tecnologia-61",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Sony?",
       "answer": 1946,
@@ -429,6 +490,7 @@
       "fact": "Ela nasceu em Tóquio depois da guerra."
     },
     {
+      "id": "chute-tecnologia-62",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Nokia?",
       "answer": 1865,
@@ -436,6 +498,7 @@
       "fact": "Ela começou como fábrica de papel."
     },
     {
+      "id": "chute-tecnologia-63",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Xiaomi?",
       "answer": 2010,
@@ -443,6 +506,7 @@
       "fact": "O nome significa \"pequeno arroz\"."
     },
     {
+      "id": "chute-tecnologia-64",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Huawei?",
       "answer": 1987,
@@ -450,6 +514,7 @@
       "fact": "Ren Zhengfei é o fundador."
     },
     {
+      "id": "chute-tecnologia-65",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Oracle?",
       "answer": 1977,
@@ -457,6 +522,7 @@
       "fact": "Larry Ellison é um dos fundadores."
     },
     {
+      "id": "chute-tecnologia-66",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Adobe?",
       "answer": 1982,
@@ -464,6 +530,7 @@
       "fact": "O PDF foi criado por ela em 1993."
     },
     {
+      "id": "chute-tecnologia-67",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Dell?",
       "answer": 1984,
@@ -471,6 +538,7 @@
       "fact": "Michael Dell começou em um dormitório da universidade."
     },
     {
+      "id": "chute-tecnologia-68",
       "difficulty": "hard",
       "text": "Em que ano foi criada a HP?",
       "answer": 1939,
@@ -478,6 +546,7 @@
       "fact": "A garagem em Palo Alto é um marco do Vale do Silício."
     },
     {
+      "id": "chute-tecnologia-69",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro Kindle?",
       "answer": 2007,
@@ -485,6 +554,7 @@
       "fact": "Foram vendidos todos em poucas horas."
     },
     {
+      "id": "chute-tecnologia-70",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro AirPods?",
       "answer": 2016,
@@ -492,6 +562,7 @@
       "fact": "No início, muitos fizeram piada com o formato."
     },
     {
+      "id": "chute-tecnologia-71",
       "difficulty": "medium",
       "text": "Em que ano foi criada a linguagem Python?",
       "answer": 1991,
@@ -499,6 +570,7 @@
       "fact": "Guido van Rossum criou a linguagem."
     },
     {
+      "id": "chute-tecnologia-72",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Bitcoin, com o artigo de Satoshi?",
       "answer": 2008,
@@ -506,6 +578,7 @@
       "fact": "O nome é um pseudônimo."
     },
     {
+      "id": "chute-tecnologia-73",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Linux?",
       "answer": 1991,
@@ -513,6 +586,7 @@
       "fact": "Linus Torvalds tinha 21 anos."
     },
     {
+      "id": "chute-tecnologia-74",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro Pendrive?",
       "answer": 2000,
@@ -520,6 +594,7 @@
       "fact": "Ele tinha só 8 MB."
     },
     {
+      "id": "chute-tecnologia-75",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro DVD?",
       "answer": 1996,
@@ -527,6 +602,7 @@
       "fact": "Ele saiu primeiro no Japão."
     },
     {
+      "id": "chute-tecnologia-76",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro Blu-ray?",
       "answer": 2006,
@@ -534,6 +610,7 @@
       "fact": "O PlayStation 3 ajudou a tornar o formato popular."
     },
     {
+      "id": "chute-tecnologia-77",
       "difficulty": "medium",
       "text": "Em que ano foi criado o primeiro CD?",
       "answer": 1982,
@@ -541,6 +618,7 @@
       "fact": "A Sony e a Philips criaram o formato."
     },
     {
+      "id": "chute-tecnologia-78",
       "difficulty": "easy",
       "text": "Em que ano o Instagram foi comprado pelo Facebook?",
       "answer": 2012,
@@ -548,6 +626,7 @@
       "fact": "O preço foi de 1 bilhão de dólares."
     },
     {
+      "id": "chute-tecnologia-79",
       "difficulty": "easy",
       "text": "Em que ano o WhatsApp foi comprado pelo Facebook?",
       "answer": 2014,
@@ -555,6 +634,7 @@
       "fact": "O preço foi de 19 bilhões de dólares."
     },
     {
+      "id": "chute-tecnologia-80",
       "difficulty": "easy",
       "text": "Em que ano o YouTube foi comprado pelo Google?",
       "answer": 2006,
@@ -562,6 +642,7 @@
       "fact": "O preço foi de 1,65 bilhão de dólares."
     },
     {
+      "id": "chute-tecnologia-81",
       "difficulty": "easy",
       "text": "Em que ano Elon Musk comprou o Twitter?",
       "answer": 2022,
@@ -569,6 +650,7 @@
       "fact": "O preço foi de 44 bilhões de dólares."
     },
     {
+      "id": "chute-tecnologia-82",
       "difficulty": "easy",
       "text": "Em que ano Steve Jobs apresentou o primeiro iPod?",
       "answer": 2001,
@@ -576,6 +658,7 @@
       "fact": "A frase foi \"mil músicas no seu bolso\"."
     },
     {
+      "id": "chute-tecnologia-83",
       "difficulty": "medium",
       "text": "Em que ano nasceu Bill Gates?",
       "answer": 1955,
@@ -583,6 +666,7 @@
       "fact": "Steve Jobs nasceu no mesmo ano."
     },
     {
+      "id": "chute-tecnologia-84",
       "difficulty": "easy",
       "text": "Em que ano nasceu Mark Zuckerberg?",
       "answer": 1984,
@@ -590,6 +674,7 @@
       "fact": "Ele tinha 19 anos ao criar o Facebook."
     },
     {
+      "id": "chute-tecnologia-85",
       "difficulty": "medium",
       "text": "Em que ano nasceu Elon Musk?",
       "answer": 1971,
@@ -597,6 +682,7 @@
       "fact": "Ele nasceu em Pretória, na África do Sul."
     },
     {
+      "id": "chute-tecnologia-86",
       "difficulty": "medium",
       "text": "Em que ano nasceu Alan Turing?",
       "answer": 1912,
@@ -604,6 +690,7 @@
       "fact": "O maior prêmio da computação tem o nome dele."
     },
     {
+      "id": "chute-tecnologia-87",
       "difficulty": "hard",
       "text": "Em que ano nasceu Ada Lovelace?",
       "answer": 1815,
@@ -611,6 +698,7 @@
       "fact": "Ela foi a única filha legítima de Lord Byron."
     },
     {
+      "id": "chute-tecnologia-88",
       "difficulty": "medium",
       "text": "Quantas teclas tem um teclado de computador comum?",
       "answer": 104,
@@ -618,6 +706,7 @@
       "fact": "Os modelos brasileiros costumam ter mais uma tecla."
     },
     {
+      "id": "chute-tecnologia-89",
       "difficulty": "easy",
       "text": "Quantos bits tem um processador comum de hoje?",
       "answer": 64,
@@ -625,6 +714,7 @@
       "fact": "A geração de 32 bits ficou para trás."
     },
     {
+      "id": "chute-tecnologia-90",
       "difficulty": "easy",
       "text": "Quantas câmeras tem na parte de trás um iPhone 15 Pro?",
       "answer": 3,
@@ -632,6 +722,7 @@
       "fact": "Elas são principal, ultra-angular e teleobjetiva."
     },
     {
+      "id": "chute-tecnologia-91",
       "difficulty": "medium",
       "text": "Quantos anos a Apple levou para passar de 1 trilhão de dólares, desde 1976?",
       "answer": 42,
@@ -639,6 +730,7 @@
       "fact": "O marco foi alcançado em 2018."
     },
     {
+      "id": "chute-tecnologia-92",
       "difficulty": "easy",
       "text": "Quantos anos Steve Jobs tinha ao morrer?",
       "answer": 56,
@@ -646,6 +738,7 @@
       "fact": "Ele lutou contra um câncer no pâncreas."
     },
     {
+      "id": "chute-tecnologia-93",
       "difficulty": "medium",
       "text": "Quantos anos Steve Jobs tinha ao fundar a Apple?",
       "answer": 21,
@@ -653,6 +746,7 @@
       "fact": "Steve Wozniak tinha 25."
     },
     {
+      "id": "chute-tecnologia-94",
       "difficulty": "medium",
       "text": "Quantos anos Linus Torvalds tinha ao criar o Linux?",
       "answer": 21,
@@ -660,6 +754,7 @@
       "fact": "Ele estudava na Finlândia."
     },
     {
+      "id": "chute-tecnologia-95",
       "difficulty": "hard",
       "text": "Quantos pinos tem o conector Lightning?",
       "answer": 8,
@@ -667,6 +762,7 @@
       "fact": "A Apple o usou por 11 anos."
     },
     {
+      "id": "chute-tecnologia-96",
       "difficulty": "hard",
       "text": "Quantos pinos tem o conector USB-C?",
       "answer": 24,
@@ -674,6 +770,7 @@
       "fact": "Ele encaixa de qualquer lado."
     },
     {
+      "id": "chute-tecnologia-97",
       "difficulty": "hard",
       "text": "Quantos segundos dura o primeiro vídeo do YouTube?",
       "answer": 19,
@@ -681,6 +778,7 @@
       "fact": "Ele mostra um dos fundadores no zoológico."
     },
     {
+      "id": "chute-tecnologia-98",
       "difficulty": "easy",
       "text": "Quantos caracteres tem um tuíte hoje, sem assinatura?",
       "answer": 280,
@@ -688,6 +786,7 @@
       "fact": "O limite antigo foi dobrado em 2017."
     },
     {
+      "id": "chute-tecnologia-99",
       "difficulty": "easy",
       "text": "Quantos pontos tem o Braille em cada célula?",
       "answer": 6,
@@ -695,6 +794,7 @@
       "fact": "Muitos celulares já oferecem leitura em Braille."
     },
     {
+      "id": "chute-tecnologia-100",
       "difficulty": "easy",
       "text": "Quantos dígitos tem uma senha de iPhone, em geral?",
       "answer": 6,
@@ -702,6 +802,7 @@
       "fact": "Os modelos antigos usavam quatro."
     },
     {
+      "id": "chute-tecnologia-101",
       "difficulty": "easy",
       "text": "Quantas senhas de 4 dígitos são possíveis?",
       "answer": 10000,
@@ -709,6 +810,7 @@
       "fact": "Elas vão de 0000 a 9999."
     },
     {
+      "id": "chute-tecnologia-102",
       "difficulty": "easy",
       "text": "Quantas senhas de 6 dígitos são possíveis?",
       "answer": 1000000,
@@ -716,6 +818,7 @@
       "fact": "Por isso, os aparelhos atrasam novas tentativas."
     },
     {
+      "id": "chute-tecnologia-103",
       "difficulty": "easy",
       "text": "Quantos bytes tem um megabyte, em milhões?",
       "answer": 1,
@@ -723,6 +826,7 @@
       "fact": "Na base binária, são 1.048.576."
     },
     {
+      "id": "chute-tecnologia-104",
       "difficulty": "easy",
       "text": "Quantos megabytes tem um gigabyte, em decimal?",
       "answer": 1000,
@@ -730,6 +834,7 @@
       "fact": "Por isso, os discos parecem menores no computador."
     },
     {
+      "id": "chute-tecnologia-105",
       "difficulty": "easy",
       "text": "Quantos gigabytes tem um terabyte, em decimal?",
       "answer": 1000,
@@ -737,6 +842,7 @@
       "fact": "É o tamanho de muitos HDs domésticos."
     },
     {
+      "id": "chute-tecnologia-106",
       "difficulty": "easy",
       "text": "Quantos terabytes tem um petabyte, em decimal?",
       "answer": 1000,
@@ -744,6 +850,7 @@
       "fact": "Os grandes data centers usam essa escala."
     },
     {
+      "id": "chute-tecnologia-107",
       "difficulty": "easy",
       "text": "Quantas músicas de 4 MB cabem em 1 GB, aproximadamente?",
       "answer": 250,
@@ -751,6 +858,7 @@
       "fact": "Depende de cada formato."
     },
     {
+      "id": "chute-tecnologia-108",
       "difficulty": "medium",
       "text": "Quantas fotos de 5 MB cabem em 64 GB, aproximadamente?",
       "answer": 12800,
@@ -758,6 +866,7 @@
       "fact": "Os vídeos ocupam muito mais espaço."
     },
     {
+      "id": "chute-tecnologia-109",
       "difficulty": "easy",
       "text": "Quantos filmes de 2 GB cabem em um HD de 1 TB, aproximadamente?",
       "answer": 500,
@@ -765,6 +874,7 @@
       "fact": "O tamanho muda de acordo com a qualidade."
     },
     {
+      "id": "chute-tecnologia-110",
       "difficulty": "medium",
       "text": "Quantos disquetes de 1,44 MB são necessários para 1 GB, aproximadamente?",
       "answer": 694,
@@ -772,6 +882,7 @@
       "fact": "Uma pilha dessas teria mais de 2 metros."
     },
     {
+      "id": "chute-tecnologia-111",
       "difficulty": "easy",
       "text": "Quantos pixels tem a largura de uma tela Full HD?",
       "answer": 1920,
@@ -779,6 +890,7 @@
       "fact": "Ela tem 1.080 pixels na altura."
     },
     {
+      "id": "chute-tecnologia-112",
       "difficulty": "easy",
       "text": "Quantos pixels tem a largura de uma tela 4K?",
       "answer": 3840,
@@ -786,6 +898,7 @@
       "fact": "Ela tem 2.160 pixels na altura."
     },
     {
+      "id": "chute-tecnologia-113",
       "difficulty": "medium",
       "text": "Quantos pixels tem a largura de uma tela 8K?",
       "answer": 7680,
@@ -793,6 +906,7 @@
       "fact": "Ela tem 4.320 pixels na altura."
     },
     {
+      "id": "chute-tecnologia-114",
       "difficulty": "easy",
       "text": "Quantos pixels tem a altura de uma tela HD simples?",
       "answer": 720,
@@ -800,6 +914,7 @@
       "fact": "É por isso que ela é chamada de 720p."
     },
     {
+      "id": "chute-tecnologia-115",
       "difficulty": "medium",
       "text": "Quantos megapixels tem uma tela 4K, aproximadamente?",
       "answer": 8.3,
@@ -807,6 +922,7 @@
       "fact": "Basta multiplicar 3.840 por 2.160."
     },
     {
+      "id": "chute-tecnologia-116",
       "difficulty": "medium",
       "text": "Quantos megapixels tem uma câmera principal de iPhone 15 Pro?",
       "answer": 48,
@@ -814,6 +930,7 @@
       "fact": "As fotos saem em 24 megapixels por padrão."
     },
     {
+      "id": "chute-tecnologia-117",
       "difficulty": "medium",
       "text": "Quantos megapixels tem a maior câmera de celular da Samsung, no S23 Ultra?",
       "answer": 200,
@@ -821,6 +938,7 @@
       "fact": "A foto final costuma sair menor."
     },
     {
+      "id": "chute-tecnologia-118",
       "difficulty": "medium",
       "text": "Quantos megapixels tinha a câmera do primeiro iPhone?",
       "answer": 2,
@@ -828,6 +946,7 @@
       "fact": "Ele não gravava vídeo."
     },
     {
+      "id": "chute-tecnologia-119",
       "difficulty": "medium",
       "text": "Quantos gigabytes de memória tinha o primeiro iPhone, no modelo básico?",
       "answer": 4,
@@ -835,6 +954,7 @@
       "fact": "A Apple cortou depois essa versão."
     },
     {
+      "id": "chute-tecnologia-120",
       "difficulty": "medium",
       "text": "Quanto custava o primeiro iPhone, em dólares?",
       "answer": 499,
@@ -842,6 +962,7 @@
       "fact": "Foi o modelo de 4 GB."
     },
     {
+      "id": "chute-tecnologia-121",
       "difficulty": "medium",
       "text": "Quanto custou um iPhone 16 Pro Max de entrada nos EUA, em dólares?",
       "answer": 1199,
@@ -849,6 +970,7 @@
       "fact": "No Brasil, ele foi lançado por mais de R$ 10 mil."
     },
     {
+      "id": "chute-tecnologia-122",
       "difficulty": "medium",
       "text": "Quantos segundos dura o toque clássico da Nokia, aproximadamente?",
       "answer": 5,
@@ -856,6 +978,7 @@
       "fact": "A melodia veio de uma peça para violão de 1902."
     },
     {
+      "id": "chute-tecnologia-123",
       "difficulty": "medium",
       "text": "Em que ano apareceu o toque clássico da Nokia?",
       "answer": 1994,
@@ -863,6 +986,7 @@
       "fact": "Foi usado em bilhões de celulares."
     },
     {
+      "id": "chute-tecnologia-124",
       "difficulty": "medium",
       "text": "Quantas horas de música tinha o primeiro iPod, em bateria?",
       "answer": 10,
@@ -870,6 +994,7 @@
       "fact": "Os modelos mais novos chegaram a 40 horas."
     },
     {
+      "id": "chute-tecnologia-125",
       "difficulty": "medium",
       "text": "Quantos anos o Orkut durou?",
       "answer": 10,
@@ -877,6 +1002,7 @@
       "fact": "Ele foi de 2004 a 2014."
     },
     {
+      "id": "chute-tecnologia-126",
       "difficulty": "medium",
       "text": "Quantos anos o MSN Messenger durou?",
       "answer": 14,
@@ -884,6 +1010,7 @@
       "fact": "Ele foi de 1999 a 2013."
     },
     {
+      "id": "chute-tecnologia-127",
       "difficulty": "medium",
       "text": "Quantos anos o Internet Explorer durou?",
       "answer": 27,
@@ -891,6 +1018,7 @@
       "fact": "Ele foi de 1995 a 2022."
     },
     {
+      "id": "chute-tecnologia-128",
       "difficulty": "medium",
       "text": "Quantos anos o Skype durou?",
       "answer": 22,
@@ -898,6 +1026,7 @@
       "fact": "Ele foi de 2003 a 2025."
     },
     {
+      "id": "chute-tecnologia-129",
       "difficulty": "easy",
       "text": "Quantos dígitos tem um CPF, com verificadores?",
       "answer": 11,
@@ -905,6 +1034,7 @@
       "fact": "Os dois últimos são de checagem."
     },
     {
+      "id": "chute-tecnologia-130",
       "difficulty": "easy",
       "text": "Quantos dígitos tem um número de cartão de crédito comum?",
       "answer": 16,
@@ -912,6 +1042,7 @@
       "fact": "O último serve de checagem."
     },
     {
+      "id": "chute-tecnologia-131",
       "difficulty": "medium",
       "text": "Quantos dígitos tem um código de barras comum, do tipo EAN-13?",
       "answer": 13,
@@ -919,6 +1050,7 @@
       "fact": "O último é de checagem."
     },
     {
+      "id": "chute-tecnologia-132",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Waze?",
       "answer": 2006,
@@ -926,6 +1058,7 @@
       "fact": "Ele nasceu em Israel."
     },
     {
+      "id": "chute-tecnologia-133",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o PlayStation Portable, da Sony?",
       "answer": 2004,
@@ -933,6 +1066,7 @@
       "fact": "Ele usava discos pequenos chamados UMD."
     },
     {
+      "id": "chute-tecnologia-134",
       "difficulty": "easy",
       "text": "Em que ano a Apple lançou o Apple Pay?",
       "answer": 2014,
@@ -940,6 +1074,7 @@
       "fact": "Ele chegou ao Brasil em 2021."
     },
     {
+      "id": "chute-tecnologia-135",
       "difficulty": "easy",
       "text": "Em que ano a Tesla lançou o Model S?",
       "answer": 2012,
@@ -947,6 +1082,7 @@
       "fact": "Ele foi um dos carros elétricos mais influentes."
     },
     {
+      "id": "chute-tecnologia-136",
       "difficulty": "easy",
       "text": "Em que ano o Google lançou o Pixel?",
       "answer": 2016,
@@ -954,6 +1090,7 @@
       "fact": "Antes, a empresa tinha a linha Nexus."
     },
     {
+      "id": "chute-tecnologia-137",
       "difficulty": "medium",
       "text": "Em que ano nasceu Steve Wozniak?",
       "answer": 1950,
@@ -961,6 +1098,7 @@
       "fact": "Ele projetou o Apple I e o Apple II."
     },
     {
+      "id": "chute-tecnologia-138",
       "difficulty": "medium",
       "text": "Em que ano nasceu Jeff Bezos?",
       "answer": 1964,
@@ -968,6 +1106,7 @@
       "fact": "Ele largou um emprego em Wall Street para criar a Amazon."
     },
     {
+      "id": "chute-tecnologia-139",
       "difficulty": "medium",
       "text": "Em que ano nasceu Tim Berners-Lee?",
       "answer": 1955,
@@ -975,6 +1114,7 @@
       "fact": "Ele nasceu em Londres."
     },
     {
+      "id": "chute-tecnologia-140",
       "difficulty": "medium",
       "text": "Em que ano nasceu Linus Torvalds?",
       "answer": 1969,
@@ -982,6 +1122,7 @@
       "fact": "Ele nasceu na Finlândia."
     },
     {
+      "id": "chute-tecnologia-141",
       "difficulty": "medium",
       "text": "Em que ano nasceu Sam Altman?",
       "answer": 1985,
@@ -989,6 +1130,7 @@
       "fact": "Ele ficou famoso à frente da OpenAI."
     },
     {
+      "id": "chute-tecnologia-142",
       "difficulty": "hard",
       "text": "Em que ano nasceu Satoshi Nakamoto, segundo o perfil dele?",
       "answer": 1975,
@@ -996,6 +1138,7 @@
       "fact": "A data informada é 5 de abril."
     },
     {
+      "id": "chute-tecnologia-143",
       "difficulty": "easy",
       "text": "Quantos segundos tem um dia de bateria de 24 horas?",
       "answer": 86400,
@@ -1003,6 +1146,7 @@
       "fact": "Basta multiplicar 24 por 3.600."
     },
     {
+      "id": "chute-tecnologia-144",
       "difficulty": "easy",
       "text": "Quantas teclas de letras tem um teclado QWERTY comum, sem Ç?",
       "answer": 26,
@@ -1010,6 +1154,7 @@
       "fact": "O layout foi criado para máquinas de escrever."
     },
     {
+      "id": "chute-tecnologia-145",
       "difficulty": "easy",
       "text": "Quantas teclas de função, como F1, tem um teclado comum?",
       "answer": 12,
@@ -1017,6 +1162,7 @@
       "fact": "Elas vão do F1 ao F12."
     },
     {
+      "id": "chute-tecnologia-146",
       "difficulty": "easy",
       "text": "Quantos anos o Brasil levou para trocar a TV analógica pela digital, entre 2007 e 2023?",
       "answer": 16,
@@ -1024,6 +1170,7 @@
       "fact": "O desligamento avançou por etapas."
     },
     {
+      "id": "chute-tecnologia-147",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o WhatsApp tem, em bilhões, aproximadamente?",
       "answer": 2.5,
@@ -1031,6 +1178,7 @@
       "fact": "O Brasil é um dos maiores mercados do aplicativo."
     },
     {
+      "id": "chute-tecnologia-148",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o Instagram tem, em bilhões, aproximadamente?",
       "answer": 2,
@@ -1038,6 +1186,7 @@
       "fact": "A compra por 1 bilhão de dólares foi um grande negócio."
     },
     {
+      "id": "chute-tecnologia-149",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o YouTube tem, em bilhões, aproximadamente?",
       "answer": 2.5,
@@ -1045,6 +1194,7 @@
       "fact": "Ele é a segunda maior rede social do mundo."
     },
     {
+      "id": "chute-tecnologia-150",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o TikTok tem, em bilhões, aproximadamente?",
       "answer": 1.5,
@@ -1052,6 +1202,7 @@
       "fact": "A ByteDance é a dona."
     },
     {
+      "id": "chute-tecnologia-151",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o Telegram tem, em milhões, em 2024?",
       "answer": 950,
@@ -1059,6 +1210,7 @@
       "fact": "O aplicativo já passou de 1 bilhão em 2025."
     },
     {
+      "id": "chute-tecnologia-152",
       "difficulty": "medium",
       "text": "Quantos usuários ativos por mês o LinkedIn tem, em milhões, aproximadamente?",
       "answer": 1000,
@@ -1066,6 +1218,7 @@
       "fact": "A rede é voltada a profissionais."
     },
     {
+      "id": "chute-tecnologia-153",
       "difficulty": "medium",
       "text": "Quantos assinantes tem a Netflix, em milhões, em 2024?",
       "answer": 300,
@@ -1073,6 +1226,7 @@
       "fact": "A empresa parou de divulgar o número em 2025."
     },
     {
+      "id": "chute-tecnologia-154",
       "difficulty": "medium",
       "text": "Quantos assinantes tem o Spotify, em milhões, em 2024?",
       "answer": 260,
@@ -1080,6 +1234,7 @@
       "fact": "O total de usuários fica acima de 600 milhões."
     },
     {
+      "id": "chute-tecnologia-155",
       "difficulty": "medium",
       "text": "Quantos clientes tem o Nubank, em milhões, em 2024?",
       "answer": 110,
@@ -1087,6 +1242,7 @@
       "fact": "A maioria está no Brasil."
     },
     {
+      "id": "chute-tecnologia-156",
       "difficulty": "medium",
       "text": "Quantos usuários o ChatGPT teve em dois meses, em milhões?",
       "answer": 100,
@@ -1094,6 +1250,7 @@
       "fact": "Foi o crescimento mais rápido visto até então."
     },
     {
+      "id": "chute-tecnologia-157",
       "difficulty": "medium",
       "text": "Quantos dias o ChatGPT levou para ter 1 milhão de usuários?",
       "answer": 5,
@@ -1101,6 +1258,7 @@
       "fact": "A Netflix levou mais de 3 anos."
     },
     {
+      "id": "chute-tecnologia-158",
       "difficulty": "medium",
       "text": "Quantos dias o Threads levou para ter 100 milhões de inscritos?",
       "answer": 5,
@@ -1108,6 +1266,7 @@
       "fact": "Ele é um rival do antigo Twitter."
     },
     {
+      "id": "chute-tecnologia-159",
       "difficulty": "medium",
       "text": "Quantos smartphones são vendidos por ano no mundo, em bilhões, aproximadamente?",
       "answer": 1.2,
@@ -1115,6 +1274,7 @@
       "fact": "O número caiu um pouco nos últimos anos."
     },
     {
+      "id": "chute-tecnologia-160",
       "difficulty": "medium",
       "text": "Quantos celulares existem em uso no mundo, em bilhões, aproximadamente?",
       "answer": 8,
@@ -1122,6 +1282,7 @@
       "fact": "Há mais linhas que pessoas em alguns lugares."
     },
     {
+      "id": "chute-tecnologia-161",
       "difficulty": "medium",
       "text": "Quantas pessoas usam a internet no mundo, em bilhões, em 2024?",
       "answer": 5.5,
@@ -1129,6 +1290,7 @@
       "fact": "Ainda há bilhões sem conexão."
     },
     {
+      "id": "chute-tecnologia-162",
       "difficulty": "medium",
       "text": "Quantos e-mails são enviados por dia no mundo, em bilhões, aproximadamente?",
       "answer": 350,
@@ -1136,6 +1298,7 @@
       "fact": "A maior parte é spam ou propaganda."
     },
     {
+      "id": "chute-tecnologia-163",
       "difficulty": "medium",
       "text": "Quantas mensagens o WhatsApp entrega por dia, em bilhões, aproximadamente?",
       "answer": 100,
@@ -1143,6 +1306,7 @@
       "fact": "O aplicativo tem criptografia de ponta a ponta."
     },
     {
+      "id": "chute-tecnologia-164",
       "difficulty": "medium",
       "text": "Quantos vídeos são vistos por dia no YouTube, em bilhões de horas?",
       "answer": 1,
@@ -1150,6 +1314,7 @@
       "fact": "O dado foi divulgado pela própria empresa."
     },
     {
+      "id": "chute-tecnologia-165",
       "difficulty": "medium",
       "text": "Quantos artigos tem a Wikipédia em inglês, em milhões, em 2024?",
       "answer": 6.9,
@@ -1157,6 +1322,7 @@
       "fact": "Ela é mantida por voluntários."
     },
     {
+      "id": "chute-tecnologia-166",
       "difficulty": "medium",
       "text": "Quantos artigos tem a Wikipédia em português, em milhões, em 2024?",
       "answer": 1.1,
@@ -1164,6 +1330,7 @@
       "fact": "Ela começou em 2001, com poucas páginas."
     },
     {
+      "id": "chute-tecnologia-167",
       "difficulty": "medium",
       "text": "Quantos sites têm o domínio .br registrado, em milhões, aproximadamente?",
       "answer": 5,
@@ -1171,6 +1338,7 @@
       "fact": "O Registro.br administra o domínio."
     },
     {
+      "id": "chute-tecnologia-168",
       "difficulty": "medium",
       "text": "Quantas moedas foram mineradas do Bitcoin até 2024, em milhões, aproximadamente?",
       "answer": 19.7,
@@ -1178,6 +1346,7 @@
       "fact": "O total nunca passará de 21 milhões."
     },
     {
+      "id": "chute-tecnologia-169",
       "difficulty": "medium",
       "text": "Qual é o valor da Apple em 2024, em trilhões de dólares, aproximadamente?",
       "answer": 3.5,
@@ -1185,6 +1354,7 @@
       "fact": "Ela chegou a ser a mais valiosa do mundo."
     },
     {
+      "id": "chute-tecnologia-170",
       "difficulty": "medium",
       "text": "Qual é o valor da Microsoft em 2024, em trilhões de dólares, aproximadamente?",
       "answer": 3.1,
@@ -1192,6 +1362,7 @@
       "fact": "A aposta em IA ajudou bastante."
     },
     {
+      "id": "chute-tecnologia-171",
       "difficulty": "medium",
       "text": "Qual é o valor da Nvidia em 2024, em trilhões de dólares, aproximadamente?",
       "answer": 3.5,
@@ -1199,6 +1370,7 @@
       "fact": "Antes do surto da IA, ela valia bem menos."
     },
     {
+      "id": "chute-tecnologia-172",
       "difficulty": "medium",
       "text": "Qual é o valor da Tesla em 2024, em trilhões de dólares, aproximadamente?",
       "answer": 1.3,
@@ -1206,6 +1378,7 @@
       "fact": "A fatia de Elon Musk é uma das maiores."
     },
     {
+      "id": "chute-tecnologia-173",
       "difficulty": "medium",
       "text": "Quanto o Facebook pagou pelo Instagram, em bilhões de dólares?",
       "answer": 1,
@@ -1213,6 +1386,7 @@
       "fact": "A compra foi muito questionada à época."
     },
     {
+      "id": "chute-tecnologia-174",
       "difficulty": "medium",
       "text": "Quanto o Facebook pagou pelo WhatsApp, em bilhões de dólares?",
       "answer": 19,
@@ -1220,6 +1394,7 @@
       "fact": "A negociação foi uma das maiores da tecnologia."
     },
     {
+      "id": "chute-tecnologia-175",
       "difficulty": "medium",
       "text": "Quanto a Microsoft pagou pelo Minecraft, em bilhões de dólares?",
       "answer": 2.5,
@@ -1227,6 +1402,7 @@
       "fact": "O jogo era da Mojang."
     },
     {
+      "id": "chute-tecnologia-176",
       "difficulty": "medium",
       "text": "Quanto a Microsoft pagou pela Skype, em bilhões de dólares?",
       "answer": 8.5,
@@ -1234,6 +1410,7 @@
       "fact": "Foi uma aposta muito cara para a época."
     },
     {
+      "id": "chute-tecnologia-177",
       "difficulty": "medium",
       "text": "Quanto a Microsoft pagou pelo GitHub, em bilhões de dólares?",
       "answer": 7.5,
@@ -1241,6 +1418,7 @@
       "fact": "A plataforma tem milhões de programadores."
     },
     {
+      "id": "chute-tecnologia-178",
       "difficulty": "medium",
       "text": "Quanto o Google pagou pelo Waze, em bilhões de dólares?",
       "answer": 1.1,
@@ -1248,6 +1426,7 @@
       "fact": "A empresa concorreu com outras grandes do setor."
     },
     {
+      "id": "chute-tecnologia-179",
       "difficulty": "medium",
       "text": "Quanto o Google pagou pela Motorola, em bilhões de dólares?",
       "answer": 12.5,
@@ -1255,6 +1434,7 @@
       "fact": "Mais tarde, a Lenovo comprou a divisão de celulares."
     },
     {
+      "id": "chute-tecnologia-180",
       "difficulty": "medium",
       "text": "Quanto a Lenovo pagou pela Motorola, em bilhões de dólares?",
       "answer": 2.9,
@@ -1262,6 +1442,7 @@
       "fact": "Muitas patentes ficaram com o Google."
     },
     {
+      "id": "chute-tecnologia-181",
       "difficulty": "medium",
       "text": "Quanto a Apple pagou pela Beats, em bilhões de dólares?",
       "answer": 3,
@@ -1269,6 +1450,7 @@
       "fact": "Dr. Dre ficou muito rico com a venda."
     },
     {
+      "id": "chute-tecnologia-182",
       "difficulty": "medium",
       "text": "Quanto a Broadcom pagou pela VMware, em bilhões de dólares?",
       "answer": 69,
@@ -1276,6 +1458,7 @@
       "fact": "Foi um dos maiores negócios de 2023."
     },
     {
+      "id": "chute-tecnologia-183",
       "difficulty": "medium",
       "text": "Quanto a Adobe tentou pagar pela Figma, em bilhões de dólares?",
       "answer": 20,
@@ -1283,6 +1466,7 @@
       "fact": "O negócio foi cancelado depois de pressão de reguladores."
     },
     {
+      "id": "chute-tecnologia-184",
       "difficulty": "medium",
       "text": "Quanto custou o primeiro Macintosh, em dólares?",
       "answer": 2495,
@@ -1290,6 +1474,7 @@
       "fact": "O valor seria muito maior hoje, com a inflação."
     },
     {
+      "id": "chute-tecnologia-185",
       "difficulty": "medium",
       "text": "Quanto custou o primeiro PC da IBM, em dólares?",
       "answer": 1565,
@@ -1297,6 +1482,7 @@
       "fact": "O modelo básico não tinha disco rígido."
     },
     {
+      "id": "chute-tecnologia-186",
       "difficulty": "medium",
       "text": "Quanto custou o primeiro iPad, em dólares?",
       "answer": 499,
@@ -1304,6 +1490,7 @@
       "fact": "Ele foi um enorme sucesso."
     },
     {
+      "id": "chute-tecnologia-187",
       "difficulty": "medium",
       "text": "Quanto custaram os óculos Vision Pro, em dólares?",
       "answer": 3499,
@@ -1311,6 +1498,7 @@
       "fact": "O preço alto limitou as vendas."
     },
     {
+      "id": "chute-tecnologia-188",
       "difficulty": "medium",
       "text": "Quanto custava o Motorola DynaTAC, em dólares, em 1984?",
       "answer": 3995,
@@ -1318,6 +1506,7 @@
       "fact": "Com a inflação, o valor passaria de 10 mil dólares."
     },
     {
+      "id": "chute-tecnologia-189",
       "difficulty": "medium",
       "text": "Quanto pesava o primeiro notebook comercial, o Osborne 1, em quilos?",
       "answer": 11,
@@ -1325,6 +1514,7 @@
       "fact": "Ele tinha uma tela de 5 polegadas."
     },
     {
+      "id": "chute-tecnologia-190",
       "difficulty": "medium",
       "text": "Quanto pesa um iPhone 15 Pro, em gramas?",
       "answer": 187,
@@ -1332,6 +1522,7 @@
       "fact": "Ele trocou o aço por titânio."
     },
     {
+      "id": "chute-tecnologia-191",
       "difficulty": "medium",
       "text": "Quanto pesa um MacBook Air de 13 polegadas, em quilos, aproximadamente?",
       "answer": 1.24,
@@ -1339,6 +1530,7 @@
       "fact": "Ele tem um chip da própria Apple."
     },
     {
+      "id": "chute-tecnologia-192",
       "difficulty": "medium",
       "text": "Quantas horas tem a bateria de um MacBook Air M3, em vídeo?",
       "answer": 18,
@@ -1346,6 +1538,7 @@
       "fact": "Os chips da Apple gastam pouca energia."
     },
     {
+      "id": "chute-tecnologia-193",
       "difficulty": "medium",
       "text": "Quantos núcleos tem o chip M1 da Apple?",
       "answer": 8,
@@ -1353,6 +1546,7 @@
       "fact": "São quatro de alto desempenho e quatro de economia."
     },
     {
+      "id": "chute-tecnologia-194",
       "difficulty": "medium",
       "text": "Quantos transistores tem o chip M1, em bilhões?",
       "answer": 16,
@@ -1360,6 +1554,7 @@
       "fact": "O primeiro processador tinha só 2.300."
     },
     {
+      "id": "chute-tecnologia-195",
       "difficulty": "medium",
       "text": "Quantos transistores tem o chip M3 Max, em bilhões?",
       "answer": 92,
@@ -1367,6 +1562,7 @@
       "fact": "Ele é um dos maiores da Apple."
     },
     {
+      "id": "chute-tecnologia-196",
       "difficulty": "medium",
       "text": "Quantos transistores tem a Nvidia Blackwell, em bilhões?",
       "answer": 208,
@@ -1374,6 +1570,7 @@
       "fact": "Ela é voltada à inteligência artificial."
     },
     {
+      "id": "chute-tecnologia-197",
       "difficulty": "medium",
       "text": "Quanto custa uma placa de IA H100, da Nvidia, em dólares, aproximadamente?",
       "answer": 30000,
@@ -1381,6 +1578,7 @@
       "fact": "Empresas compram dezenas de milhares delas."
     },
     {
+      "id": "chute-tecnologia-198",
       "difficulty": "medium",
       "text": "Quantos megawatts consome um grande data center, aproximadamente?",
       "answer": 100,
@@ -1388,6 +1586,7 @@
       "fact": "É o consumo de uma cidade média."
     },
     {
+      "id": "chute-tecnologia-199",
       "difficulty": "medium",
       "text": "Quantos data centers existem no mundo, em milhares, aproximadamente?",
       "answer": 11,
@@ -1395,6 +1594,7 @@
       "fact": "Os EUA têm a maior parte."
     },
     {
+      "id": "chute-tecnologia-200",
       "difficulty": "medium",
       "text": "Quantos quilômetros de cabos submarinos existem no mundo, em milhões, aproximadamente?",
       "answer": 1.4,
@@ -1402,6 +1602,7 @@
       "fact": "Eles levam quase todo o tráfego da internet."
     },
     {
+      "id": "chute-tecnologia-201",
       "difficulty": "medium",
       "text": "Quantos cabos submarinos de internet existem no mundo, aproximadamente?",
       "answer": 550,
@@ -1409,6 +1610,7 @@
       "fact": "Às vezes, tubarões já morderam alguns deles."
     },
     {
+      "id": "chute-tecnologia-202",
       "difficulty": "medium",
       "text": "Qual é a velocidade do 5G, em Gbps, em condições ideais?",
       "answer": 10,
@@ -1416,6 +1618,7 @@
       "fact": "Na prática, costuma ser bem menos."
     },
     {
+      "id": "chute-tecnologia-203",
       "difficulty": "medium",
       "text": "Qual é a velocidade máxima do USB 3.0, em Gbps?",
       "answer": 5,
@@ -1423,6 +1626,7 @@
       "fact": "A versão 2.0 chegava a 480 Mbps."
     },
     {
+      "id": "chute-tecnologia-204",
       "difficulty": "medium",
       "text": "Qual é a velocidade do USB 2.0, em Mbps?",
       "answer": 480,
@@ -1430,6 +1634,7 @@
       "fact": "A versão foi lançada em 2000."
     },
     {
+      "id": "chute-tecnologia-205",
       "difficulty": "medium",
       "text": "Qual é a velocidade máxima do Thunderbolt 4, em Gbps?",
       "answer": 40,
@@ -1437,6 +1642,7 @@
       "fact": "Ele usa um conector USB-C."
     },
     {
+      "id": "chute-tecnologia-206",
       "difficulty": "medium",
       "text": "Qual é a velocidade do modem discado, em Kbps?",
       "answer": 56,
@@ -1444,6 +1650,7 @@
       "fact": "O barulho dele virou símbolo de uma geração."
     },
     {
+      "id": "chute-tecnologia-207",
       "difficulty": "medium",
       "text": "Qual é o alcance típico do Bluetooth comum, em metros?",
       "answer": 10,
@@ -1451,6 +1658,7 @@
       "fact": "Algumas versões vão bem além disso."
     },
     {
+      "id": "chute-tecnologia-208",
       "difficulty": "medium",
       "text": "Qual é o alcance típico de um NFC, em centímetros?",
       "answer": 4,
@@ -1458,6 +1666,7 @@
       "fact": "O alcance curto ajuda na segurança dos pagamentos."
     },
     {
+      "id": "chute-tecnologia-209",
       "difficulty": "medium",
       "text": "Qual é a altitude da órbita dos satélites de GPS, em km?",
       "answer": 20200,
@@ -1465,6 +1674,7 @@
       "fact": "Eles dão uma volta na Terra em quase 12 horas."
     },
     {
+      "id": "chute-tecnologia-210",
       "difficulty": "medium",
       "text": "Qual é a altitude da órbita dos satélites Starlink, em km, aproximadamente?",
       "answer": 550,
@@ -1472,6 +1682,7 @@
       "fact": "A órbita baixa reduz o atraso do sinal."
     },
     {
+      "id": "chute-tecnologia-211",
       "difficulty": "medium",
       "text": "Quantos satélites a Starlink tem em órbita, em 2024, aproximadamente?",
       "answer": 6500,
@@ -1479,6 +1690,7 @@
       "fact": "Eles são mais da metade dos ativos no mundo."
     },
     {
+      "id": "chute-tecnologia-212",
       "difficulty": "medium",
       "text": "Quantos satélites compõem o sistema GPS, no mínimo?",
       "answer": 24,
@@ -1486,6 +1698,7 @@
       "fact": "Hoje, são mais de 30 em operação."
     },
     {
+      "id": "chute-tecnologia-213",
       "difficulty": "medium",
       "text": "Quantos bits tem um endereço IPv6?",
       "answer": 128,
@@ -1493,6 +1706,7 @@
       "fact": "Assim, os endereços praticamente não acabam."
     },
     {
+      "id": "chute-tecnologia-214",
       "difficulty": "medium",
       "text": "Quantos caracteres tem o Unicode, em milhares, em 2024?",
       "answer": 155,
@@ -1500,6 +1714,7 @@
       "fact": "Ele inclui escritas antigas e emojis."
     },
     {
+      "id": "chute-tecnologia-215",
       "difficulty": "medium",
       "text": "Quantos emojis existem no Unicode, em 2024, aproximadamente?",
       "answer": 3780,
@@ -1507,6 +1722,7 @@
       "fact": "A cada ano, novos entram na lista."
     },
     {
+      "id": "chute-tecnologia-216",
       "difficulty": "medium",
       "text": "Quantos emojis Shigetaka Kurita criou na primeira versão?",
       "answer": 176,
@@ -1514,6 +1730,7 @@
       "fact": "Eles foram para a operadora japonesa NTT DoCoMo."
     },
     {
+      "id": "chute-tecnologia-217",
       "difficulty": "medium",
       "text": "Quantos minutos leva, em média, para minerar um bloco de Bitcoin?",
       "answer": 10,
@@ -1521,6 +1738,7 @@
       "fact": "A dificuldade é ajustada a cada duas semanas."
     },
     {
+      "id": "chute-tecnologia-218",
       "difficulty": "medium",
       "text": "Qual foi o preço máximo de um Bitcoin em 2021, em dólares, aproximadamente?",
       "answer": 69000,
@@ -1528,6 +1746,7 @@
       "fact": "A moeda subiu muito de novo depois."
     },
     {
+      "id": "chute-tecnologia-219",
       "difficulty": "medium",
       "text": "Qual foi o preço de um Bitcoin no fim de 2024, em dólares, aproximadamente?",
       "answer": 100000,
@@ -1535,6 +1754,7 @@
       "fact": "A marca foi alcançada em dezembro desse ano."
     },
     {
+      "id": "chute-tecnologia-220",
       "difficulty": "medium",
       "text": "Quanto foi vendido o primeiro tuíte, em NFT, em milhões de dólares?",
       "answer": 2.9,
@@ -1542,6 +1762,7 @@
       "fact": "Ele não vale nem perto disso hoje."
     },
     {
+      "id": "chute-tecnologia-221",
       "difficulty": "medium",
       "text": "Quantos dólares custavam as duas pizzas de 10 mil bitcoins, em 2010?",
       "answer": 41,
@@ -1549,6 +1770,7 @@
       "fact": "Hoje, seriam quase 1 bilhão de dólares."
     },
     {
+      "id": "chute-tecnologia-222",
       "difficulty": "medium",
       "text": "Qual foi o resultado do Reality Labs, da Meta, em 2023, em bilhões de dólares?",
       "answer": -16,
@@ -1556,6 +1778,7 @@
       "fact": "A divisão cuida dos óculos e do metaverso."
     },
     {
+      "id": "chute-tecnologia-223",
       "difficulty": "medium",
       "text": "Qual foi o resultado da Uber em 2019, em bilhões de dólares?",
       "answer": -8.5,
@@ -1563,6 +1786,7 @@
       "fact": "Só em 2023 ela passou a ter lucro anual."
     },
     {
+      "id": "chute-tecnologia-224",
       "difficulty": "medium",
       "text": "Qual foi o resultado da WeWork em 2019, em bilhões de dólares?",
       "answer": -3.2,
@@ -1570,6 +1794,7 @@
       "fact": "A empresa desistiu de abrir o capital naquele ano."
     },
     {
+      "id": "chute-tecnologia-225",
       "difficulty": "medium",
       "text": "Qual foi o resultado da OpenAI em 2024, em bilhões de dólares, aproximadamente?",
       "answer": -5,
@@ -1577,6 +1802,7 @@
       "fact": "O treino de grandes modelos custa muito."
     },
     {
+      "id": "chute-tecnologia-226",
       "difficulty": "medium",
       "text": "Quanto variou o valor da Nvidia em 27 de janeiro de 2025, em bilhões de dólares?",
       "answer": -589,
@@ -1584,6 +1810,7 @@
       "fact": "Foi a maior queda diária da história da bolsa."
     },
     {
+      "id": "chute-tecnologia-227",
       "difficulty": "medium",
       "text": "Quanto variou o valor da Meta em 3 de fevereiro de 2022, em bilhões de dólares?",
       "answer": -232,
@@ -1591,6 +1818,7 @@
       "fact": "Na época, foi a maior queda em um só dia."
     },
     {
+      "id": "chute-tecnologia-228",
       "difficulty": "medium",
       "text": "Quanto variou o valor da Apple em 3 de janeiro de 2019, em bilhões de dólares?",
       "answer": -75,
@@ -1598,6 +1826,7 @@
       "fact": "A empresa havia reduzido sua previsão de vendas."
     },
     {
+      "id": "chute-tecnologia-229",
       "difficulty": "hard",
       "text": "Qual é a temperatura de operação de um computador quântico supercondutor, em °C?",
       "answer": -273,
@@ -1606,6 +1835,7 @@
       "fact": "Ele fica muito perto do zero absoluto."
     },
     {
+      "id": "chute-tecnologia-230",
       "difficulty": "hard",
       "text": "Qual é a temperatura do nitrogênio líquido usado em overclock, em °C?",
       "answer": -196,
@@ -1614,6 +1844,7 @@
       "fact": "Com esse frio, os chips quebram recordes de velocidade."
     },
     {
+      "id": "chute-tecnologia-231",
       "difficulty": "hard",
       "text": "Qual é a temperatura do hélio líquido usado para resfriar, em °C?",
       "answer": -269,
@@ -1622,6 +1853,7 @@
       "fact": "Ele é usado em ímãs e em chips quânticos."
     },
     {
+      "id": "chute-tecnologia-232",
       "difficulty": "hard",
       "text": "Qual é a temperatura de operação do instrumento MIRI, do telescópio James Webb, em °C?",
       "answer": -266,
@@ -1630,6 +1862,7 @@
       "fact": "O equipamento precisa de um resfriador próprio."
     },
     {
+      "id": "chute-tecnologia-233",
       "difficulty": "hard",
       "text": "Qual é a temperatura mínima de uso do iPhone, em °C?",
       "answer": 0,
@@ -1638,6 +1871,7 @@
       "fact": "Abaixo disso, a bateria pode se desligar sozinha."
     },
     {
+      "id": "chute-tecnologia-234",
       "difficulty": "hard",
       "text": "Qual é a temperatura mínima de armazenamento do iPhone, em °C?",
       "answer": -20,
@@ -1646,6 +1880,7 @@
       "fact": "Guardado, ele suporta mais do que em uso."
     },
     {
+      "id": "chute-tecnologia-235",
       "difficulty": "hard",
       "text": "Qual é o maior número de 32 bits sem sinal, em bilhões, aproximadamente?",
       "answer": 4.29,
@@ -1653,6 +1888,7 @@
       "fact": "Foi esse número que limitou o IPv4."
     },
     {
+      "id": "chute-tecnologia-236",
       "difficulty": "hard",
       "text": "Qual é o menor número de um inteiro de 32 bits com sinal, em bilhões, aproximadamente?",
       "answer": -2.147,
@@ -1660,24 +1896,28 @@
       "fact": "Esse limite causa o problema do ano 2038."
     },
     {
+      "id": "chute-tecnologia-237",
       "difficulty": "hard",
       "text": "Qual é o menor número de um inteiro de 16 bits com sinal?",
       "answer": -32768,
       "fact": "Passar dele causa um estouro de valor."
     },
     {
+      "id": "chute-tecnologia-238",
       "difficulty": "hard",
       "text": "Qual é o maior número de um inteiro de 16 bits com sinal?",
       "answer": 32767,
       "fact": "Muitos jogos antigos tinham esse limite."
     },
     {
+      "id": "chute-tecnologia-239",
       "difficulty": "hard",
       "text": "Qual é o menor número de um inteiro de 8 bits com sinal?",
       "answer": -128,
       "fact": "O maior número é 127."
     },
     {
+      "id": "chute-tecnologia-240",
       "difficulty": "hard",
       "text": "Quantas visualizações \"Gangnam Style\" alcançou até quebrar o contador do YouTube, em bilhões?",
       "answer": 2.147,
@@ -1685,6 +1925,7 @@
       "fact": "O YouTube teve de ampliar o contador em 2014."
     },
     {
+      "id": "chute-tecnologia-241",
       "difficulty": "hard",
       "text": "Em que ano \"Gangnam Style\" estourou o contador do YouTube?",
       "answer": 2014,
@@ -1692,6 +1933,7 @@
       "fact": "O limite era o número máximo de 32 bits."
     },
     {
+      "id": "chute-tecnologia-242",
       "difficulty": "hard",
       "text": "Em que ano os contadores de sistemas de 32 bits vão estourar?",
       "answer": 2038,
@@ -1699,6 +1941,7 @@
       "fact": "Ocorre em 19 de janeiro desse ano."
     },
     {
+      "id": "chute-tecnologia-243",
       "difficulty": "hard",
       "text": "Em que ano começa a contagem do tempo Unix?",
       "answer": 1970,
@@ -1706,6 +1949,7 @@
       "fact": "Ela começou em 1º de janeiro desse ano."
     },
     {
+      "id": "chute-tecnologia-244",
       "difficulty": "hard",
       "text": "Quantas vezes o Galaxy Note 7 foi retirado do mercado?",
       "answer": 2,
@@ -1713,6 +1957,7 @@
       "fact": "As baterias pegavam fogo."
     },
     {
+      "id": "chute-tecnologia-245",
       "difficulty": "hard",
       "text": "Quanto a Samsung gastou com o Galaxy Note 7, em bilhões de dólares, aproximadamente?",
       "answer": 5.3,
@@ -1720,6 +1965,7 @@
       "fact": "Os aviões proibiram o aparelho a bordo."
     },
     {
+      "id": "chute-tecnologia-246",
       "difficulty": "hard",
       "text": "Quanto custou a falha da CrowdStrike para grandes empresas, em bilhões de dólares?",
       "answer": 5.4,
@@ -1727,6 +1973,7 @@
       "fact": "Foi o cálculo da seguradora Parametrix."
     },
     {
+      "id": "chute-tecnologia-247",
       "difficulty": "hard",
       "text": "Quantos computadores a falha da CrowdStrike afetou, em milhões?",
       "answer": 8.5,
@@ -1734,6 +1981,7 @@
       "fact": "Foi menos de 1% dos computadores com Windows."
     },
     {
+      "id": "chute-tecnologia-248",
       "difficulty": "hard",
       "text": "Quantos computadores o WannaCry atacou, em milhares?",
       "answer": 230,
@@ -1741,6 +1989,7 @@
       "fact": "Ele foi detido em parte por um pesquisador britânico."
     },
     {
+      "id": "chute-tecnologia-249",
       "difficulty": "hard",
       "text": "Quantos países o WannaCry atacou, aproximadamente?",
       "answer": 150,
@@ -1748,6 +1997,7 @@
       "fact": "O sistema de saúde britânico foi muito afetado."
     },
     {
+      "id": "chute-tecnologia-250",
       "difficulty": "hard",
       "text": "Quantos computadores a Morris Worm atacou, em 1988, aproximadamente?",
       "answer": 6000,
@@ -1755,6 +2005,7 @@
       "fact": "Isso era cerca de 10% da internet da época."
     },
     {
+      "id": "chute-tecnologia-251",
       "difficulty": "hard",
       "text": "Quantos computadores o ILOVEYOU atacou, em milhões?",
       "answer": 50,
@@ -1762,6 +2013,7 @@
       "fact": "Ele causou bilhões em prejuízos."
     },
     {
+      "id": "chute-tecnologia-252",
       "difficulty": "hard",
       "text": "Quantas contas do Yahoo foram expostas no vazamento de 2013, em bilhões?",
       "answer": 3,
@@ -1769,6 +2021,7 @@
       "fact": "É um dos maiores vazamentos conhecidos."
     },
     {
+      "id": "chute-tecnologia-253",
       "difficulty": "hard",
       "text": "Quantos registros foram expostos no vazamento brasileiro de CPFs de 2021, em milhões?",
       "answer": 223,
@@ -1776,6 +2029,7 @@
       "fact": "O número superou a população do Brasil."
     },
     {
+      "id": "chute-tecnologia-254",
       "difficulty": "hard",
       "text": "Quanto a Meta foi multada na Europa em 2023, em bilhões de euros?",
       "answer": 1.2,
@@ -1783,6 +2037,7 @@
       "fact": "A multa foi por transferir dados aos EUA."
     },
     {
+      "id": "chute-tecnologia-255",
       "difficulty": "hard",
       "text": "Quanto a Apple foi condenada a pagar à Irlanda, em bilhões de euros?",
       "answer": 13,
@@ -1790,6 +2045,7 @@
       "fact": "A decisão final saiu em 2024."
     },
     {
+      "id": "chute-tecnologia-256",
       "difficulty": "hard",
       "text": "Quanto o Google foi multado na Europa em 2018, em bilhões de euros?",
       "answer": 4.3,
@@ -1797,6 +2053,7 @@
       "fact": "A causa foi o caso do Android."
     },
     {
+      "id": "chute-tecnologia-257",
       "difficulty": "hard",
       "text": "Quanto custou um dia fora do ar do Facebook, em 2021, em milhões de dólares?",
       "answer": 100,
@@ -1804,6 +2061,7 @@
       "fact": "O problema durou cerca de seis horas."
     },
     {
+      "id": "chute-tecnologia-258",
       "difficulty": "hard",
       "text": "Quantas horas o Facebook ficou fora do ar em 2021?",
       "answer": 6,
@@ -1811,6 +2069,7 @@
       "fact": "O erro veio de uma mudança nas rotas."
     },
     {
+      "id": "chute-tecnologia-259",
       "difficulty": "hard",
       "text": "Quantas linhas de código tem o Windows, em milhões, aproximadamente?",
       "answer": 50,
@@ -1818,6 +2077,7 @@
       "fact": "O sistema não para de crescer."
     },
     {
+      "id": "chute-tecnologia-260",
       "difficulty": "hard",
       "text": "Quantas linhas de código tem o Linux, em milhões, aproximadamente?",
       "answer": 30,
@@ -1825,6 +2085,7 @@
       "fact": "Milhares de pessoas já contribuíram."
     },
     {
+      "id": "chute-tecnologia-261",
       "difficulty": "hard",
       "text": "Quantas linhas de código tem todo o Google, em bilhões?",
       "answer": 2,
@@ -1832,6 +2093,7 @@
       "fact": "O dado foi revelado em 2015."
     },
     {
+      "id": "chute-tecnologia-262",
       "difficulty": "hard",
       "text": "Quantas linhas de código tinha a Apollo 11, aproximadamente, em milhares?",
       "answer": 145,
@@ -1839,6 +2101,7 @@
       "fact": "Hoje, um celular tem milhões de vezes mais."
     },
     {
+      "id": "chute-tecnologia-263",
       "difficulty": "hard",
       "text": "Quantas linhas de código tem um carro moderno, em milhões, aproximadamente?",
       "answer": 100,
@@ -1846,6 +2109,7 @@
       "fact": "É mais do que um avião de caça."
     },
     {
+      "id": "chute-tecnologia-264",
       "difficulty": "hard",
       "text": "Quantos KB de armazenamento tinha o computador de bordo da Apollo?",
       "answer": 72,
@@ -1853,6 +2117,7 @@
       "fact": "Ele era costurado à mão."
     },
     {
+      "id": "chute-tecnologia-265",
       "difficulty": "hard",
       "text": "Quantos KB tinha a memória do primeiro Mac?",
       "answer": 128,
@@ -1860,6 +2125,7 @@
       "fact": "Um celular de hoje tem dezenas de milhares de vezes mais."
     },
     {
+      "id": "chute-tecnologia-266",
       "difficulty": "hard",
       "text": "Quantos KB Bill Gates teria dito que bastavam, em uma frase famosa?",
       "answer": 640,
@@ -1867,6 +2133,7 @@
       "fact": "Ele nega ter dito isso."
     },
     {
+      "id": "chute-tecnologia-267",
       "difficulty": "hard",
       "text": "Quantos KB tinha a memória do Apple I?",
       "answer": 4,
@@ -1874,6 +2141,7 @@
       "fact": "Podia chegar a 8 KB ou mais com placas."
     },
     {
+      "id": "chute-tecnologia-268",
       "difficulty": "hard",
       "text": "Quantos KB tinha a memória do Commodore 64?",
       "answer": 64,
@@ -1881,6 +2149,7 @@
       "fact": "Foi o computador pessoal mais vendido da história."
     },
     {
+      "id": "chute-tecnologia-269",
       "difficulty": "hard",
       "text": "Quantas unidades vendeu o Commodore 64, em milhões?",
       "answer": 12.5,
@@ -1888,6 +2157,7 @@
       "fact": "Ele custava 595 dólares."
     },
     {
+      "id": "chute-tecnologia-270",
       "difficulty": "hard",
       "text": "Quantas unidades vendeu o Macintosh em seus primeiros 100 dias, em milhares?",
       "answer": 70,
@@ -1895,6 +2165,7 @@
       "fact": "Foi um começo muito promissor."
     },
     {
+      "id": "chute-tecnologia-271",
       "difficulty": "hard",
       "text": "Quantas unidades vendeu o primeiro iPhone no primeiro trimestre, em milhões?",
       "answer": 1.4,
@@ -1902,6 +2173,7 @@
       "fact": "Hoje, são centenas de milhões por ano."
     },
     {
+      "id": "chute-tecnologia-272",
       "difficulty": "hard",
       "text": "Quantos iPhones foram vendidos em 2024, em milhões, aproximadamente?",
       "answer": 230,
@@ -1909,6 +2181,7 @@
       "fact": "É cerca de um em cada cinco celulares vendidos."
     },
     {
+      "id": "chute-tecnologia-273",
       "difficulty": "hard",
       "text": "Quantos Nokia 1100 foram vendidos, em milhões?",
       "answer": 250,
@@ -1916,6 +2189,7 @@
       "fact": "É o celular mais vendido da história."
     },
     {
+      "id": "chute-tecnologia-274",
       "difficulty": "hard",
       "text": "Quantos Motorola RAZR V3 foram vendidos, em milhões?",
       "answer": 130,
@@ -1923,6 +2197,7 @@
       "fact": "Ele foi lançado em 2004."
     },
     {
+      "id": "chute-tecnologia-275",
       "difficulty": "hard",
       "text": "Quantos iPods foram vendidos, em milhões?",
       "answer": 450,
@@ -1930,6 +2205,7 @@
       "fact": "A produção acabou em 2022."
     },
     {
+      "id": "chute-tecnologia-276",
       "difficulty": "hard",
       "text": "Quantos Walkman foram vendidos, em milhões?",
       "answer": 400,
@@ -1937,6 +2213,7 @@
       "fact": "A Sony lançou o aparelho em 1979."
     },
     {
+      "id": "chute-tecnologia-277",
       "difficulty": "hard",
       "text": "Quantos Kindles foram vendidos, em milhões?",
       "answer": 100,
@@ -1944,6 +2221,7 @@
       "fact": "A Amazon raramente divulga esse número."
     },
     {
+      "id": "chute-tecnologia-278",
       "difficulty": "hard",
       "text": "Quantos Teslas foram entregues em 2023, em milhões?",
       "answer": 1.8,
@@ -1951,6 +2229,7 @@
       "fact": "Foi um recorde da empresa."
     },
     {
+      "id": "chute-tecnologia-279",
       "difficulty": "hard",
       "text": "Quantos carros elétricos foram vendidos no mundo em 2023, em milhões?",
       "answer": 14,
@@ -1958,6 +2237,7 @@
       "fact": "Isso foi cerca de 18% das vendas."
     },
     {
+      "id": "chute-tecnologia-280",
       "difficulty": "hard",
       "text": "Quantos BYD elétricos e híbridos foram vendidos em 2024, em milhões?",
       "answer": 4.3,
@@ -1965,6 +2245,7 @@
       "fact": "A BYD nasceu fabricando baterias."
     },
     {
+      "id": "chute-tecnologia-281",
       "difficulty": "hard",
       "text": "Quantos quilômetros roda um Tesla Model 3 Long Range, em uma carga, aproximadamente?",
       "answer": 600,
@@ -1972,6 +2253,7 @@
       "fact": "O número muda de acordo com o teste."
     },
     {
+      "id": "chute-tecnologia-282",
       "difficulty": "hard",
       "text": "Quantos quilômetros de distância já percorreu um robô da Waymo, em milhões de km, até 2024?",
       "answer": 35,
@@ -1979,6 +2261,7 @@
       "fact": "O serviço opera em algumas cidades dos EUA."
     },
     {
+      "id": "chute-tecnologia-283",
       "difficulty": "hard",
       "text": "Qual é a carga do Starship, em toneladas, na versão reutilizável?",
       "answer": 150,
@@ -1986,6 +2269,7 @@
       "fact": "Isso pode ajudar a levar pessoas a Marte."
     },
     {
+      "id": "chute-tecnologia-284",
       "difficulty": "hard",
       "text": "Em que ano a SpaceX pegou o foguete com \"pinças\" pela primeira vez?",
       "answer": 2024,
@@ -1993,6 +2277,7 @@
       "fact": "O Super Heavy foi capturado em outubro."
     },
     {
+      "id": "chute-tecnologia-285",
       "difficulty": "hard",
       "text": "Quantas vezes a SpaceX reutilizou um único Falcon 9, em 2024, aproximadamente?",
       "answer": 23,
@@ -2000,6 +2285,7 @@
       "fact": "A reutilização mudou o setor."
     },
     {
+      "id": "chute-tecnologia-286",
       "difficulty": "hard",
       "text": "Quanto custa um lançamento do Falcon 9, em milhões de dólares, aproximadamente?",
       "answer": 70,
@@ -2007,6 +2293,7 @@
       "fact": "Outros foguetes custam muito mais."
     },
     {
+      "id": "chute-tecnologia-287",
       "difficulty": "hard",
       "text": "Quanto vale a SpaceX em 2024, em bilhões de dólares, aproximadamente?",
       "answer": 350,
@@ -2014,6 +2301,7 @@
       "fact": "A empresa ainda não está na bolsa."
     },
     {
+      "id": "chute-tecnologia-288",
       "difficulty": "hard",
       "text": "Quanto vale a OpenAI em 2024, em bilhões de dólares?",
       "answer": 157,
@@ -2021,6 +2309,7 @@
       "fact": "A avaliação subiu rápido depois."
     },
     {
+      "id": "chute-tecnologia-289",
       "difficulty": "hard",
       "text": "Quanto a Microsoft investiu na OpenAI, em bilhões de dólares, em 2023?",
       "answer": 10,
@@ -2028,6 +2317,7 @@
       "fact": "Parte foi paga com uso da nuvem Azure."
     },
     {
+      "id": "chute-tecnologia-290",
       "difficulty": "hard",
       "text": "Quanto custou treinar o GPT-4, em milhões de dólares, aproximadamente?",
       "answer": 100,
@@ -2035,6 +2325,7 @@
       "fact": "Sam Altman citou um valor acima disso."
     },
     {
+      "id": "chute-tecnologia-291",
       "difficulty": "hard",
       "text": "Quanto a DeepSeek disse ter gasto em treinar seu modelo, em milhões de dólares?",
       "answer": 5.6,
@@ -2042,6 +2333,7 @@
       "fact": "Muitos especialistas duvidaram desse valor."
     },
     {
+      "id": "chute-tecnologia-292",
       "difficulty": "hard",
       "text": "Em que ano o termo \"inteligência artificial\" foi criado?",
       "answer": 1956,
@@ -2049,6 +2341,7 @@
       "fact": "Foi em uma conferência em Dartmouth."
     },
     {
+      "id": "chute-tecnologia-293",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Perceptron, base das redes neurais?",
       "answer": 1958,
@@ -2056,6 +2349,7 @@
       "fact": "Frank Rosenblatt o criou."
     },
     {
+      "id": "chute-tecnologia-294",
       "difficulty": "hard",
       "text": "Em que ano Deep Blue venceu Kasparov?",
       "answer": 1997,
@@ -2063,6 +2357,7 @@
       "fact": "A primeira partida entre eles foi um ano antes."
     },
     {
+      "id": "chute-tecnologia-295",
       "difficulty": "hard",
       "text": "Em que ano AlphaGo venceu Lee Sedol?",
       "answer": 2016,
@@ -2070,6 +2365,7 @@
       "fact": "O coreano ganhou uma das cinco partidas."
     },
     {
+      "id": "chute-tecnologia-296",
       "difficulty": "hard",
       "text": "Em que ano o Watson venceu no Jeopardy?",
       "answer": 2011,
@@ -2077,6 +2373,7 @@
       "fact": "O computador da IBM venceu dois grandes campeões."
     },
     {
+      "id": "chute-tecnologia-297",
       "difficulty": "hard",
       "text": "Em que ano foi publicado o artigo dos Transformers?",
       "answer": 2017,
@@ -2084,6 +2381,7 @@
       "fact": "A sigla GPT usa essa ideia."
     },
     {
+      "id": "chute-tecnologia-298",
       "difficulty": "hard",
       "text": "Em que ano o GPT-4 foi lançado?",
       "answer": 2023,
@@ -2091,6 +2389,7 @@
       "fact": "Ele saiu poucos meses depois do ChatGPT."
     },
     {
+      "id": "chute-tecnologia-299",
       "difficulty": "easy",
       "text": "Em que ano o Google lançou o Google Earth?",
       "answer": 2005,
@@ -2098,6 +2397,7 @@
       "fact": "Ele nasceu de uma empresa apoiada pela CIA."
     },
     {
+      "id": "chute-tecnologia-300",
       "difficulty": "easy",
       "text": "Em que ano o Facebook passou a se chamar Meta?",
       "answer": 2021,
@@ -2105,6 +2405,7 @@
       "fact": "A mudança foi uma aposta no metaverso."
     },
     {
+      "id": "chute-tecnologia-301",
       "difficulty": "easy",
       "text": "Em que ano o Brasil realizou o primeiro leilão de 5G?",
       "answer": 2021,
@@ -2112,6 +2413,7 @@
       "fact": "O sinal começou a funcionar nas capitais no ano seguinte."
     },
     {
+      "id": "chute-tecnologia-302",
       "difficulty": "medium",
       "text": "Quantos dias o Instagram levou para alcançar 1 milhão de contas?",
       "answer": 75,
@@ -2119,6 +2421,7 @@
       "fact": "Ele foi lançado em outubro de 2010."
     },
     {
+      "id": "chute-tecnologia-303",
       "difficulty": "medium",
       "text": "Quantos anos a Netflix levou para alcançar 1 milhão de usuários?",
       "answer": 3.5,
@@ -2126,6 +2429,7 @@
       "fact": "Era o tempo do aluguel de DVDs."
     },
     {
+      "id": "chute-tecnologia-304",
       "difficulty": "medium",
       "text": "Quantos anos o Twitter levou para alcançar 1 milhão de usuários?",
       "answer": 2,
@@ -2133,6 +2437,7 @@
       "fact": "O crescimento dele veio aos poucos."
     },
     {
+      "id": "chute-tecnologia-305",
       "difficulty": "medium",
       "text": "Qual é o tamanho de uma tela do iPhone 15 Pro Max, em polegadas?",
       "answer": 6.7,
@@ -2140,6 +2445,7 @@
       "fact": "Os celulares não param de aumentar."
     },
     {
+      "id": "chute-tecnologia-306",
       "difficulty": "medium",
       "text": "Qual é o tamanho de uma tela do primeiro iPhone, em polegadas?",
       "answer": 3.5,
@@ -2147,6 +2453,7 @@
       "fact": "Muitos achavam que aquilo era grande."
     },
     {
+      "id": "chute-tecnologia-307",
       "difficulty": "medium",
       "text": "Quanto mede um disquete comum, em polegadas?",
       "answer": 3.5,
@@ -2154,6 +2461,7 @@
       "fact": "Ele cabia no bolso da camisa."
     },
     {
+      "id": "chute-tecnologia-308",
       "difficulty": "medium",
       "text": "Quanto mede um CD comum, em centímetros?",
       "answer": 12,
@@ -2161,6 +2469,7 @@
       "fact": "A duração original era de 74 minutos."
     },
     {
+      "id": "chute-tecnologia-309",
       "difficulty": "medium",
       "text": "Quantos minutos de música cabem em um CD comum?",
       "answer": 74,
@@ -2168,6 +2477,7 @@
       "fact": "A lenda diz que a duração foi escolhida por causa da Nona de Beethoven."
     },
     {
+      "id": "chute-tecnologia-310",
       "difficulty": "medium",
       "text": "Quantos MB cabem em um CD comum?",
       "answer": 700,
@@ -2175,6 +2485,7 @@
       "fact": "Um DVD guarda quase 7 vezes mais."
     },
     {
+      "id": "chute-tecnologia-311",
       "difficulty": "medium",
       "text": "Quantos GB cabem em um DVD de camada simples?",
       "answer": 4.7,
@@ -2182,6 +2493,7 @@
       "fact": "A camada dupla chega a 8,5 GB."
     },
     {
+      "id": "chute-tecnologia-312",
       "difficulty": "medium",
       "text": "Quantos KB cabiam em um disquete de 5¼, comum nos anos 1980?",
       "answer": 360,
@@ -2189,6 +2501,7 @@
       "fact": "Eles eram mesmo flexíveis."
     },
     {
+      "id": "chute-tecnologia-313",
       "difficulty": "medium",
       "text": "Quantos MB tinha o primeiro pendrive, em 2000?",
       "answer": 8,
@@ -2196,6 +2509,7 @@
       "fact": "Hoje, há modelos de terabytes."
     },
     {
+      "id": "chute-tecnologia-314",
       "difficulty": "medium",
       "text": "Quantos TB tem o maior microSD comercial, em 2024?",
       "answer": 2,
@@ -2203,6 +2517,7 @@
       "fact": "A marca foi alcançada pela SanDisk e pela Kioxia."
     },
     {
+      "id": "chute-tecnologia-315",
       "difficulty": "medium",
       "text": "Quantos ciclos completos aguenta uma bateria de iPhone 15, segundo a Apple?",
       "answer": 1000,
@@ -2210,6 +2525,7 @@
       "fact": "Depois disso, a capacidade cai para 80%."
     },
     {
+      "id": "chute-tecnologia-316",
       "difficulty": "medium",
       "text": "Qual é a voltagem de uma porta USB tradicional?",
       "answer": 5,
@@ -2217,6 +2533,7 @@
       "fact": "Os carregadores rápidos usam mais."
     },
     {
+      "id": "chute-tecnologia-317",
       "difficulty": "medium",
       "text": "Qual é a potência máxima de um USB-C PD 3.1, em watts?",
       "answer": 240,
@@ -2224,6 +2541,7 @@
       "fact": "Isso dá para carregar um notebook grande."
     },
     {
+      "id": "chute-tecnologia-318",
       "difficulty": "medium",
       "text": "Qual é a potência de uma lâmpada LED comum, em watts, aproximadamente?",
       "answer": 9,
@@ -2231,6 +2549,7 @@
       "fact": "Ela ilumina como uma incandescente de 60 W."
     },
     {
+      "id": "chute-tecnologia-319",
       "difficulty": "medium",
       "text": "Qual é a frequência do Wi-Fi mais comum, em GHz?",
       "answer": 2.4,
@@ -2238,6 +2557,7 @@
       "fact": "Ela é a mesma do micro-ondas."
     },
     {
+      "id": "chute-tecnologia-320",
       "difficulty": "medium",
       "text": "Qual é a taxa de atualização comum de um iPhone Pro, em Hz?",
       "answer": 120,
@@ -2245,6 +2565,7 @@
       "fact": "Os modelos básicos ficam em 60 Hz."
     },
     {
+      "id": "chute-tecnologia-321",
       "difficulty": "medium",
       "text": "Quantos quadros por segundo tem um filme de cinema?",
       "answer": 24,
@@ -2252,6 +2573,7 @@
       "fact": "Peter Jackson testou 48 quadros em \"O Hobbit\"."
     },
     {
+      "id": "chute-tecnologia-322",
       "difficulty": "medium",
       "text": "Quantos pontos por polegada tem uma tela \"Retina\" do iPhone 4?",
       "answer": 326,
@@ -2259,6 +2581,7 @@
       "fact": "Steve Jobs disse que o olho não distingue os pixels."
     },
     {
+      "id": "chute-tecnologia-323",
       "difficulty": "medium",
       "text": "Quantos zeros tem um googol?",
       "answer": 100,
@@ -2266,6 +2589,7 @@
       "fact": "O nome foi inventado por um menino de nove anos."
     },
     {
+      "id": "chute-tecnologia-324",
       "difficulty": "medium",
       "text": "Quantos dólares o Google pagou pelo domínio google.com, por erro, a um ex-funcionário?",
       "answer": 12,
@@ -2273,6 +2597,7 @@
       "fact": "Ele comprou o domínio por um minuto."
     },
     {
+      "id": "chute-tecnologia-325",
       "difficulty": "medium",
       "text": "Quantos dígitos tem o código de verificação do cartão de crédito comum?",
       "answer": 3,
@@ -2280,6 +2605,7 @@
       "fact": "Na American Express, são quatro."
     },
     {
+      "id": "chute-tecnologia-326",
       "difficulty": "medium",
       "text": "Qual é o código telefônico do Brasil?",
       "answer": 55,
@@ -2287,6 +2613,7 @@
       "fact": "O código dos EUA é 1."
     },
     {
+      "id": "chute-tecnologia-327",
       "difficulty": "medium",
       "text": "Qual é o número da porta padrão do SSH?",
       "answer": 22,
@@ -2294,6 +2621,7 @@
       "fact": "A do FTP é a 21."
     },
     {
+      "id": "chute-tecnologia-328",
       "difficulty": "medium",
       "text": "Qual é o número da porta padrão do FTP?",
       "answer": 21,
@@ -2301,6 +2629,7 @@
       "fact": "O protocolo é bem antigo."
     },
     {
+      "id": "chute-tecnologia-329",
       "difficulty": "hard",
       "text": "Qual é o número da porta padrão do SMTP?",
       "answer": 25,
@@ -2308,6 +2637,7 @@
       "fact": "O protocolo envia e-mails."
     },
     {
+      "id": "chute-tecnologia-330",
       "difficulty": "hard",
       "text": "Qual é o número da porta padrão do DNS?",
       "answer": 53,
@@ -2315,6 +2645,7 @@
       "fact": "É ele que transforma nomes em endereços IP."
     },
     {
+      "id": "chute-tecnologia-331",
       "difficulty": "hard",
       "text": "Qual é o número da porta padrão do Minecraft?",
       "answer": 25565,
@@ -2322,6 +2653,7 @@
       "fact": "Muitas crianças aprenderam sobre redes por causa dele."
     },
     {
+      "id": "chute-tecnologia-332",
       "difficulty": "hard",
       "text": "Em que ano foi criado o protocolo TCP/IP, adotado na Arpanet?",
       "answer": 1983,
@@ -2329,6 +2661,7 @@
       "fact": "A data é vista como o nascimento da internet atual."
     },
     {
+      "id": "chute-tecnologia-333",
       "difficulty": "hard",
       "text": "Em que ano foi criado o protocolo Bluetooth?",
       "answer": 1994,
@@ -2336,6 +2669,7 @@
       "fact": "A Ericsson iniciou o projeto."
     },
     {
+      "id": "chute-tecnologia-334",
       "difficulty": "hard",
       "text": "Em que ano foi criado o padrão Wi-Fi 802.11?",
       "answer": 1997,
@@ -2343,6 +2677,7 @@
       "fact": "O nome Wi-Fi veio depois."
     },
     {
+      "id": "chute-tecnologia-335",
       "difficulty": "hard",
       "text": "Em que ano foi criado o primeiro padrão USB?",
       "answer": 1996,
@@ -2350,6 +2685,7 @@
       "fact": "Ajay Bhatt é um dos criadores."
     },
     {
+      "id": "chute-tecnologia-336",
       "difficulty": "hard",
       "text": "Em que ano foi criado o padrão HDMI?",
       "answer": 2002,
@@ -2357,6 +2693,7 @@
       "fact": "Ele reuniu áudio e vídeo em um só cabo."
     },
     {
+      "id": "chute-tecnologia-337",
       "difficulty": "hard",
       "text": "Em que ano foi criado o formato PDF?",
       "answer": 1993,
@@ -2364,6 +2701,7 @@
       "fact": "John Warnock, da Adobe, teve a ideia."
     },
     {
+      "id": "chute-tecnologia-338",
       "difficulty": "hard",
       "text": "Em que ano foi criado o formato GIF?",
       "answer": 1987,
@@ -2371,6 +2709,7 @@
       "fact": "O criador é Steve Wilhite."
     },
     {
+      "id": "chute-tecnologia-339",
       "difficulty": "hard",
       "text": "Em que ano foi criado o formato JPEG?",
       "answer": 1992,
@@ -2378,6 +2717,7 @@
       "fact": "O nome vem do grupo que o desenvolveu."
     },
     {
+      "id": "chute-tecnologia-340",
       "difficulty": "hard",
       "text": "Em que ano foi criado o formato MP3?",
       "answer": 1993,
@@ -2385,6 +2725,7 @@
       "fact": "Ele foi criado por pesquisadores alemães."
     },
     {
+      "id": "chute-tecnologia-341",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem C?",
       "answer": 1972,
@@ -2392,6 +2733,7 @@
       "fact": "Dennis Ritchie a criou nos Bell Labs."
     },
     {
+      "id": "chute-tecnologia-342",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Java?",
       "answer": 1995,
@@ -2399,6 +2741,7 @@
       "fact": "James Gosling a criou."
     },
     {
+      "id": "chute-tecnologia-343",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem JavaScript?",
       "answer": 1995,
@@ -2406,6 +2749,7 @@
       "fact": "A primeira versão levou dez dias."
     },
     {
+      "id": "chute-tecnologia-344",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem PHP?",
       "answer": 1995,
@@ -2413,6 +2757,7 @@
       "fact": "Rasmus Lerdorf a criou para sua página pessoal."
     },
     {
+      "id": "chute-tecnologia-345",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Ruby?",
       "answer": 1995,
@@ -2420,6 +2765,7 @@
       "fact": "Yukihiro Matsumoto a criou no Japão."
     },
     {
+      "id": "chute-tecnologia-346",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Lua?",
       "answer": 1993,
@@ -2427,6 +2773,7 @@
       "fact": "Três pesquisadores da PUC-Rio a criaram."
     },
     {
+      "id": "chute-tecnologia-347",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Swift?",
       "answer": 2014,
@@ -2434,6 +2781,7 @@
       "fact": "Ela substituiu o Objective-C aos poucos."
     },
     {
+      "id": "chute-tecnologia-348",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Rust, versão 1.0?",
       "answer": 2015,
@@ -2441,6 +2789,7 @@
       "fact": "A Mozilla patrocinou o projeto."
     },
     {
+      "id": "chute-tecnologia-349",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Go?",
       "answer": 2009,
@@ -2448,6 +2797,7 @@
       "fact": "O Google a criou."
     },
     {
+      "id": "chute-tecnologia-350",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem Fortran?",
       "answer": 1957,
@@ -2455,6 +2805,7 @@
       "fact": "Foi uma das primeiras de alto nível."
     },
     {
+      "id": "chute-tecnologia-351",
       "difficulty": "hard",
       "text": "Em que ano foi criada a linguagem COBOL?",
       "answer": 1959,
@@ -2462,6 +2813,7 @@
       "fact": "Muitos bancos ainda a usam."
     },
     {
+      "id": "chute-tecnologia-352",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Git?",
       "answer": 2005,
@@ -2469,6 +2821,7 @@
       "fact": "Linus Torvalds o criou em cerca de duas semanas."
     },
     {
+      "id": "chute-tecnologia-353",
       "difficulty": "hard",
       "text": "Em que ano foi criado o GitHub?",
       "answer": 2008,
@@ -2476,6 +2829,7 @@
       "fact": "Ele tem o gato-polvo como mascote."
     },
     {
+      "id": "chute-tecnologia-354",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Stack Overflow?",
       "answer": 2008,
@@ -2483,6 +2837,7 @@
       "fact": "Joel Spolsky e Jeff Atwood são os fundadores."
     },
     {
+      "id": "chute-tecnologia-355",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Docker?",
       "answer": 2013,
@@ -2490,6 +2845,7 @@
       "fact": "O mascote é uma baleia carregada de contêineres."
     },
     {
+      "id": "chute-tecnologia-356",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Unix?",
       "answer": 1969,
@@ -2497,6 +2853,7 @@
       "fact": "Ken Thompson o fez em uma sobra de computador."
     },
     {
+      "id": "chute-tecnologia-357",
       "difficulty": "hard",
       "text": "Em que ano foi criado o MS-DOS?",
       "answer": 1981,
@@ -2504,6 +2861,7 @@
       "fact": "A Microsoft comprou a base dele por 50 mil dólares."
     },
     {
+      "id": "chute-tecnologia-358",
       "difficulty": "hard",
       "text": "Quantos dólares a Microsoft pagou pela base do MS-DOS?",
       "answer": 50000,
@@ -2511,6 +2869,7 @@
       "fact": "Foi um dos melhores negócios da história."
     },
     {
+      "id": "chute-tecnologia-359",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o primeiro supercomputador moderno, o Cray-1?",
       "answer": 1976,
@@ -2518,6 +2877,7 @@
       "fact": "Seu formato lembrava um sofá circular."
     },
     {
+      "id": "chute-tecnologia-360",
       "difficulty": "hard",
       "text": "Quantos dólares custou o Cray-1, em milhões?",
       "answer": 8,
@@ -2525,6 +2885,7 @@
       "fact": "Um celular de hoje é muito mais rápido."
     },
     {
+      "id": "chute-tecnologia-361",
       "difficulty": "hard",
       "text": "Quantos quatrilhões de cálculos por segundo faz o supercomputador El Capitan, em 2024?",
       "answer": 1742,
@@ -2532,6 +2893,7 @@
       "fact": "Ele foi o mais rápido do mundo naquele ano."
     },
     {
+      "id": "chute-tecnologia-362",
       "difficulty": "hard",
       "text": "Qual era a potência elétrica do supercomputador Frontier, em megawatts?",
       "answer": 21,
@@ -2539,6 +2901,7 @@
       "fact": "É o consumo de milhares de casas."
     },
     {
+      "id": "chute-tecnologia-363",
       "difficulty": "hard",
       "text": "Quantas válvulas tinha o ENIAC?",
       "answer": 17468,
@@ -2546,6 +2909,7 @@
       "fact": "Elas queimavam com frequência."
     },
     {
+      "id": "chute-tecnologia-364",
       "difficulty": "hard",
       "text": "Quantos metros quadrados ocupava o ENIAC?",
       "answer": 167,
@@ -2553,6 +2917,7 @@
       "fact": "Ele ocupava uma sala inteira."
     },
     {
+      "id": "chute-tecnologia-365",
       "difficulty": "hard",
       "text": "Quantas somas por segundo fazia o ENIAC?",
       "answer": 5000,
@@ -2560,6 +2925,7 @@
       "fact": "Um celular faz bilhões de operações por segundo."
     },
     {
+      "id": "chute-tecnologia-366",
       "difficulty": "hard",
       "text": "Em que ano o ENIAC foi apresentado ao público?",
       "answer": 1946,
@@ -2567,6 +2933,7 @@
       "fact": "Seis mulheres foram as primeiras programadoras dele."
     },
     {
+      "id": "chute-tecnologia-367",
       "difficulty": "hard",
       "text": "Em que ano foi criado o transistor?",
       "answer": 1947,
@@ -2574,6 +2941,7 @@
       "fact": "Ele deu o Nobel a Bardeen, Brattain e Shockley."
     },
     {
+      "id": "chute-tecnologia-368",
       "difficulty": "hard",
       "text": "Em que ano foi criado o circuito integrado?",
       "answer": 1958,
@@ -2581,6 +2949,7 @@
       "fact": "Jack Kilby o criou na Texas Instruments."
     },
     {
+      "id": "chute-tecnologia-369",
       "difficulty": "hard",
       "text": "Em que ano Gordon Moore criou sua lei?",
       "answer": 1965,
@@ -2588,6 +2957,7 @@
       "fact": "A previsão foi publicada em uma revista."
     },
     {
+      "id": "chute-tecnologia-370",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o Apple II?",
       "answer": 1977,
@@ -2595,6 +2965,7 @@
       "fact": "O sucesso dele tornou a empresa muito grande."
     },
     {
+      "id": "chute-tecnologia-371",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro ThinkPad?",
       "answer": 1992,
@@ -2602,6 +2973,7 @@
       "fact": "O modelo tinha um ponto vermelho no teclado."
     },
     {
+      "id": "chute-tecnologia-372",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro MacBook Air?",
       "answer": 2008,
@@ -2609,6 +2981,7 @@
       "fact": "Steve Jobs o tirou de dentro de um envelope."
     },
     {
+      "id": "chute-tecnologia-373",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro Surface, da Microsoft?",
       "answer": 2012,
@@ -2616,6 +2989,7 @@
       "fact": "Foi uma tentativa de disputar com o iPad."
     },
     {
+      "id": "chute-tecnologia-374",
       "difficulty": "medium",
       "text": "Quantos TB tem o HD comum em um notebook, em média?",
       "answer": 1,
@@ -2623,6 +2997,7 @@
       "fact": "Os SSDs de 512 GB também são comuns."
     },
     {
+      "id": "chute-tecnologia-375",
       "difficulty": "medium",
       "text": "Quantos megawatts são necessários para treinar um grande modelo de IA, em média?",
       "answer": 50,
@@ -2630,6 +3005,7 @@
       "fact": "O consumo de energia vira uma grande preocupação."
     },
     {
+      "id": "chute-tecnologia-376",
       "difficulty": "medium",
       "text": "Quantos anos a Nokia levou para deixar de ser líder em celulares, depois do iPhone?",
       "answer": 5,
@@ -2637,6 +3013,7 @@
       "fact": "A Samsung assumiu a liderança em 2012."
     },
     {
+      "id": "chute-tecnologia-377",
       "difficulty": "medium",
       "text": "Quantos telefones Nokia 3310 foram vendidos, em milhões?",
       "answer": 126,
@@ -2644,6 +3021,7 @@
       "fact": "O aparelho voltou em versão renovada em 2017."
     },
     {
+      "id": "chute-tecnologia-378",
       "difficulty": "hard",
       "text": "Quantos anos Satoshi Nakamoto ficou ativo no projeto do Bitcoin, antes de sumir?",
       "answer": 2,
@@ -2651,6 +3029,7 @@
       "fact": "Ele deixou os fóruns no fim de 2010."
     },
     {
+      "id": "chute-tecnologia-379",
       "difficulty": "medium",
       "text": "Quantas pessoas trabalham na Amazon, em milhões, aproximadamente?",
       "answer": 1.5,
@@ -2658,6 +3037,7 @@
       "fact": "Ela é uma das maiores empregadoras privadas do mundo."
     },
     {
+      "id": "chute-tecnologia-380",
       "difficulty": "medium",
       "text": "Quantas pessoas trabalham na Apple, em milhares, aproximadamente?",
       "answer": 160,
@@ -2665,6 +3045,7 @@
       "fact": "A maior parte dos aparelhos é montada por outras empresas."
     },
     {
+      "id": "chute-tecnologia-381",
       "difficulty": "medium",
       "text": "Quantas pessoas trabalham no Google, em milhares, aproximadamente?",
       "answer": 180,
@@ -2672,6 +3053,7 @@
       "fact": "A empresa nasceu com dois estudantes."
     },
     {
+      "id": "chute-tecnologia-382",
       "difficulty": "medium",
       "text": "Quantas pessoas trabalham na Foxconn, em milhões, no auge?",
       "answer": 1.3,
@@ -2679,6 +3061,7 @@
       "fact": "A empresa monta boa parte dos iPhones."
     },
     {
+      "id": "chute-tecnologia-383",
       "difficulty": "hard",
       "text": "Quantas pessoas trabalhavam na Apple quando ela nasceu?",
       "answer": 3,
@@ -2686,6 +3069,7 @@
       "fact": "Jobs, Wozniak e Wayne a fundaram."
     },
     {
+      "id": "chute-tecnologia-384",
       "difficulty": "easy",
       "text": "Quantos anos dura uma bateria de notebook, em média?",
       "answer": 3,
@@ -2693,6 +3077,7 @@
       "fact": "O uso e a temperatura mudam esse número."
     },
     {
+      "id": "chute-tecnologia-385",
       "difficulty": "easy",
       "text": "Quantas letras tem a palavra \"Google\"?",
       "answer": 6,
@@ -2700,6 +3085,7 @@
       "fact": "O nome veio de \"googol\"."
     },
     {
+      "id": "chute-tecnologia-386",
       "difficulty": "easy",
       "text": "Quantas cores tem o logotipo do Google?",
       "answer": 4,
@@ -2707,6 +3093,7 @@
       "fact": "São azul, vermelho, amarelo e verde."
     },
     {
+      "id": "chute-tecnologia-387",
       "difficulty": "easy",
       "text": "Quantas câmeras frontais tem um iPhone comum?",
       "answer": 1,
@@ -2714,6 +3101,7 @@
       "fact": "A traseira costuma ter mais de uma."
     },
     {
+      "id": "chute-tecnologia-388",
       "difficulty": "medium",
       "text": "Quantas portas Thunderbolt tem um MacBook Air básico?",
       "answer": 2,
@@ -2721,6 +3109,7 @@
       "fact": "Elas usam o conector USB-C."
     },
     {
+      "id": "chute-tecnologia-389",
       "difficulty": "easy",
       "text": "Quantas polegadas tem um monitor pequeno de escritório, em geral?",
       "answer": 24,
@@ -2728,6 +3117,7 @@
       "fact": "A medida vai de um canto ao outro."
     },
     {
+      "id": "chute-tecnologia-390",
       "difficulty": "easy",
       "text": "Quantas polegadas tem uma tela de TV de sala comum?",
       "answer": 55,
@@ -2735,6 +3125,7 @@
       "fact": "O tamanho cresce a cada ano."
     },
     {
+      "id": "chute-tecnologia-391",
       "difficulty": "easy",
       "text": "Quantos gigabytes tem um celular básico, em armazenamento, em média?",
       "answer": 128,
@@ -2742,6 +3133,7 @@
       "fact": "Os vídeos ocupam boa parte desse espaço."
     },
     {
+      "id": "chute-tecnologia-392",
       "difficulty": "medium",
       "text": "Quantos anos a Lei de Moore prevê para dobrar o número de transistores, aproximadamente?",
       "answer": 2,
@@ -2749,6 +3141,7 @@
       "fact": "Gordon Moore fez a previsão em 1965."
     },
     {
+      "id": "chute-tecnologia-393",
       "difficulty": "medium",
       "text": "Quantos transistores tem um chip Intel 4004, de 1971?",
       "answer": 2300,
@@ -2756,6 +3149,7 @@
       "fact": "Hoje, há chips com dezenas de bilhões."
     },
     {
+      "id": "chute-tecnologia-394",
       "difficulty": "medium",
       "text": "Quantos nanômetros tem um fio de cabelo, em milhares, de espessura?",
       "answer": 80,
@@ -2763,6 +3157,7 @@
       "fact": "Um chip moderno tem estruturas bem menores."
     },
     {
+      "id": "chute-tecnologia-395",
       "difficulty": "medium",
       "text": "Quantos transistores cabem em um chip moderno de celular, em bilhões, aproximadamente?",
       "answer": 20,
@@ -2770,6 +3165,7 @@
       "fact": "Há meio século, eram milhares."
     },
     {
+      "id": "chute-tecnologia-396",
       "difficulty": "medium",
       "text": "Qual é o limite de resfriamento de um processador comum, em °C, antes de reduzir a velocidade?",
       "answer": 100,
@@ -2778,6 +3174,7 @@
       "fact": "Assim, ele evita danos permanentes."
     },
     {
+      "id": "chute-tecnologia-397",
       "difficulty": "medium",
       "text": "Quanto mede a espessura de um iPhone 15, em milímetros?",
       "answer": 7.8,
@@ -2785,6 +3182,7 @@
       "fact": "Cada novo modelo muda pouco."
     },
     {
+      "id": "chute-tecnologia-398",
       "difficulty": "medium",
       "text": "Quantos terabytes de dados a internet gera por dia, em milhões?",
       "answer": 400,
@@ -2792,6 +3190,7 @@
       "fact": "A maior parte são vídeos."
     },
     {
+      "id": "chute-tecnologia-399",
       "difficulty": "medium",
       "text": "Quantos data centers o Google tem pelo mundo, aproximadamente?",
       "answer": 40,
@@ -2799,6 +3198,7 @@
       "fact": "Muitos usam energia renovável."
     },
     {
+      "id": "chute-tecnologia-400",
       "difficulty": "medium",
       "text": "Quantos megabytes por segundo transfere um SSD NVMe rápido, aproximadamente?",
       "answer": 7000,
@@ -2806,6 +3206,7 @@
       "fact": "Um HD tradicional fica perto de 150 MB/s."
     },
     {
+      "id": "chute-tecnologia-401",
       "difficulty": "medium",
       "text": "Quantos megabytes por segundo transfere um HD comum, aproximadamente?",
       "answer": 150,
@@ -2813,6 +3214,7 @@
       "fact": "Por isso, os SSDs parecem tão rápidos."
     },
     {
+      "id": "chute-tecnologia-402",
       "difficulty": "hard",
       "text": "Quantos anos um dado fica guardado em uma fita magnética, aproximadamente?",
       "answer": 30,
@@ -2820,6 +3222,7 @@
       "fact": "Empresas ainda usam fita para arquivar dados."
     },
     {
+      "id": "chute-tecnologia-403",
       "difficulty": "hard",
       "text": "Quantos terabytes cabem em uma fita LTO-9, sem compressão?",
       "answer": 18,
@@ -2827,6 +3230,7 @@
       "fact": "Muitas empresas ainda usam fita para arquivar dados."
     },
     {
+      "id": "chute-tecnologia-404",
       "difficulty": "hard",
       "text": "Quantas pessoas trabalham na TSMC, em milhares, aproximadamente?",
       "answer": 76,
@@ -2834,6 +3238,7 @@
       "fact": "Ela fabrica boa parte dos chips avançados do mundo."
     },
     {
+      "id": "chute-tecnologia-405",
       "difficulty": "hard",
       "text": "Qual é o valor de uma fábrica moderna de chips, em bilhões de dólares, aproximadamente?",
       "answer": 20,
@@ -2841,6 +3246,7 @@
       "fact": "Poucos países conseguem construir uma."
     },
     {
+      "id": "chute-tecnologia-406",
       "difficulty": "hard",
       "text": "Quanto custa uma máquina de litografia EUV da ASML, em milhões de dólares, aproximadamente?",
       "answer": 200,
@@ -2848,6 +3254,7 @@
       "fact": "Ela tem mais de 100 mil peças."
     },
     {
+      "id": "chute-tecnologia-407",
       "difficulty": "hard",
       "text": "Quantas toneladas pesa uma máquina de litografia EUV, aproximadamente?",
       "answer": 150,
@@ -2855,6 +3262,7 @@
       "fact": "O transporte exige vários aviões."
     },
     {
+      "id": "chute-tecnologia-408",
       "difficulty": "hard",
       "text": "Qual é a menor temperatura de um chip quântico da IBM, em °C?",
       "answer": -273,
@@ -2863,6 +3271,7 @@
       "fact": "Fica a frações de grau do zero absoluto."
     },
     {
+      "id": "chute-tecnologia-409",
       "difficulty": "hard",
       "text": "Quantos qubits tem o chip Condor, da IBM?",
       "answer": 1121,
@@ -2870,6 +3279,7 @@
       "fact": "Ele foi anunciado em 2023."
     },
     {
+      "id": "chute-tecnologia-410",
       "difficulty": "easy",
       "text": "Quantos botões físicos de volume tem um celular comum?",
       "answer": 2,
@@ -2877,6 +3287,7 @@
       "fact": "Um deles aumenta, e o outro diminui."
     },
     {
+      "id": "chute-tecnologia-411",
       "difficulty": "easy",
       "text": "Quantos pinos tem um plugue de tomada no padrão brasileiro de três pontos?",
       "answer": 3,
@@ -2884,6 +3295,7 @@
       "fact": "O padrão ficou obrigatório nos anos 2000."
     },
     {
+      "id": "chute-tecnologia-412",
       "difficulty": "easy",
       "text": "Quantos volts tem uma tomada comum em São Paulo?",
       "answer": 127,
@@ -2891,6 +3303,7 @@
       "fact": "Em Brasília, são 220 volts."
     },
     {
+      "id": "chute-tecnologia-413",
       "difficulty": "medium",
       "text": "Quantos volts tem uma tomada comum em Brasília?",
       "answer": 220,
@@ -2898,6 +3311,7 @@
       "fact": "A tensão muda de uma cidade para outra."
     },
     {
+      "id": "chute-tecnologia-414",
       "difficulty": "hard",
       "text": "Quantos anos a Apple tinha quando Tim Cook virou presidente, em 2011?",
       "answer": 35,
@@ -2905,6 +3319,7 @@
       "fact": "Ela foi fundada em 1976."
     },
     {
+      "id": "chute-tecnologia-415",
       "difficulty": "hard",
       "text": "Quantos terabytes tem o maior SSD comercial para empresas, em 2023, aproximadamente?",
       "answer": 60,
@@ -2912,6 +3327,7 @@
       "fact": "Eles custam milhares de dólares."
     },
     {
+      "id": "chute-tecnologia-416",
       "difficulty": "easy",
       "text": "Quantas horas a bateria de um celular comum dura com uso normal, aproximadamente?",
       "answer": 24,
@@ -2919,6 +3335,7 @@
       "fact": "Brilho alto e jogos gastam a bateria mais rápido."
     },
     {
+      "id": "chute-tecnologia-417",
       "difficulty": "easy",
       "text": "Quantas polegadas tem a tela de um celular comum hoje, aproximadamente?",
       "answer": 6.5,
@@ -2926,6 +3343,7 @@
       "fact": "Os primeiros smartphones tinham telas de menos de 4 polegadas."
     },
     {
+      "id": "chute-tecnologia-418",
       "difficulty": "easy",
       "text": "Quantas polegadas tem a tela de um notebook comum?",
       "answer": 15,
@@ -2933,6 +3351,7 @@
       "fact": "Modelos menores e mais leves costumam ter 13 ou 14 polegadas."
     },
     {
+      "id": "chute-tecnologia-419",
       "difficulty": "easy",
       "text": "Quantos gramas pesa um celular comum, aproximadamente?",
       "answer": 190,
@@ -2940,6 +3359,7 @@
       "fact": "Celulares maiores e com bateria grande passam de 220 gramas."
     },
     {
+      "id": "chute-tecnologia-420",
       "difficulty": "easy",
       "text": "Quantos dígitos tem o código de verificação que chega por SMS, em geral?",
       "answer": 6,
@@ -2947,6 +3367,7 @@
       "fact": "Nunca passe esse código para ninguém."
     },
     {
+      "id": "chute-tecnologia-421",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Windows 11?",
       "answer": 2021,
@@ -2954,6 +3375,7 @@
       "fact": "Ele trouxe o botão Iniciar no meio da barra de tarefas."
     },
     {
+      "id": "chute-tecnologia-422",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o iPhone 15?",
       "answer": 2023,
@@ -2961,6 +3383,7 @@
       "fact": "Foi o primeiro iPhone com entrada USB-C."
     },
     {
+      "id": "chute-tecnologia-423",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Threads, a rede social da Meta?",
       "answer": 2023,
@@ -2968,6 +3391,7 @@
       "fact": "Ele ganhou milhões de contas nos primeiros dias."
     },
     {
+      "id": "chute-tecnologia-424",
       "difficulty": "easy",
       "text": "Em que ano o Orkut foi desligado?",
       "answer": 2014,
@@ -2975,6 +3399,7 @@
       "fact": "O Orkut foi muito popular no Brasil."
     },
     {
+      "id": "chute-tecnologia-425",
       "difficulty": "easy",
       "text": "Quantos centímetros tem um cabo de carregador de celular comum?",
       "answer": 100,
@@ -2982,6 +3407,7 @@
       "fact": "Cabos de dois metros também são vendidos."
     },
     {
+      "id": "chute-tecnologia-426",
       "difficulty": "easy",
       "text": "Quantas horas por dia o brasileiro passa no celular, em média, segundo pesquisas?",
       "answer": 5,
@@ -2989,6 +3415,7 @@
       "fact": "O Brasil aparece entre os países que mais usam o celular."
     },
     {
+      "id": "chute-tecnologia-427",
       "difficulty": "easy",
       "text": "De quantos em quantos anos o brasileiro troca de celular, em média?",
       "answer": 3,
@@ -2996,6 +3423,7 @@
       "fact": "Bateria fraca é um dos motivos mais comuns da troca."
     },
     {
+      "id": "chute-tecnologia-428",
       "difficulty": "easy",
       "text": "Quantos chips cabem num celular dual chip?",
       "answer": 2,
@@ -3003,6 +3431,7 @@
       "fact": "Muitos celulares novos também aceitam o chip virtual, o eSIM."
     },
     {
+      "id": "chute-tecnologia-429",
       "difficulty": "easy",
       "text": "Quantos dígitos tem um número de celular brasileiro, sem o DDD?",
       "answer": 9,
@@ -3010,6 +3439,7 @@
       "fact": "O nono dígito, o 9 da frente, foi adicionado aos poucos a partir de 2012."
     },
     {
+      "id": "chute-tecnologia-430",
       "difficulty": "easy",
       "text": "Quantas barras de sinal aparecem no celular, no máximo, em geral?",
       "answer": 4,
@@ -3017,6 +3447,7 @@
       "fact": "Cada vez mais celulares mostram também o 5G."
     },
     {
+      "id": "chute-tecnologia-431",
       "difficulty": "easy",
       "text": "Quantos segundos uma foto fica na tela num story do Instagram?",
       "answer": 5,

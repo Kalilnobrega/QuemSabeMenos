@@ -1463,3 +1463,24 @@ def test_second_chance_takes_the_new_display():
     game.guess_draft("a", 115, at + 2)
     game.advance(at + ANSWER_SECONDS + 1, [a])
     assert result(game, "a").value == 115 and result(game, "a").first_value == 170
+
+
+def test_ids_live_in_the_file_so_deleting_a_question_keeps_the_others(tmp_path):
+    import json
+
+    base = {"difficulty": "easy", "text": "Quanto?", "answer": 1, "fact": "Curiosidade."}
+    questions = [{**base, "id": "chute-teste-1"}, {**base, "id": "chute-teste-3", "text": "Outra?"}]
+    (tmp_path / "teste.json").write_text(json.dumps({"theme": "Teste", "questions": questions}))
+    assert [q.id for q in load_estimates(tmp_path)] == ["chute-teste-1", "chute-teste-3"]
+
+
+def test_every_question_in_every_bank_has_a_unique_id_named_after_its_file():
+    import re
+
+    from app.duel import load_statements
+    from app.game import load_bank
+
+    for bank, prefix in ((load_bank(), ""), (load_estimates(), "chute-"), (load_statements(), "vf-")):
+        ids = [q.id for q in bank]
+        assert len(ids) == len(set(ids))
+        assert all(re.fullmatch(rf"{prefix}[a-z-]+-\d+", i) for i in ids)

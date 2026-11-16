@@ -2,6 +2,7 @@
   "theme": "Entretenimento",
   "questions": [
     {
+      "id": "chute-entretenimento-1",
       "difficulty": "medium",
       "text": "Em que ano estreou o primeiro filme de Star Wars?",
       "answer": 1977,
@@ -9,6 +10,7 @@
       "fact": "O filme quase não foi feito: os estúdios achavam que ficção científica não dava bilheteria."
     },
     {
+      "id": "chute-entretenimento-2",
       "difficulty": "hard",
       "text": "Quantos episódios tem a série Friends?",
       "answer": 236,
@@ -16,6 +18,7 @@
       "fact": "Foram 10 temporadas, de 1994 a 2004."
     },
     {
+      "id": "chute-entretenimento-3",
       "difficulty": "easy",
       "text": "Em que ano o filme Titanic foi lançado?",
       "answer": 1997,
@@ -23,6 +26,7 @@
       "fact": "Foi o primeiro filme a passar de 1 bilhão de dólares de bilheteria."
     },
     {
+      "id": "chute-entretenimento-4",
       "difficulty": "medium",
       "text": "Quantos Oscars o filme Titanic ganhou?",
       "answer": 11,
@@ -30,6 +34,7 @@
       "fact": "Ele divide o recorde com Ben-Hur e O Senhor dos Anéis: O Retorno do Rei."
     },
     {
+      "id": "chute-entretenimento-5",
       "difficulty": "medium",
       "text": "Em que ano os Beatles se separaram?",
       "answer": 1970,
@@ -37,6 +42,7 @@
       "fact": "Paul McCartney anunciou a saída em abril de 1970."
     },
     {
+      "id": "chute-entretenimento-6",
       "difficulty": "medium",
       "text": "Em que ano Os Simpsons estrearam como série própria?",
       "answer": 1989,
@@ -44,6 +50,7 @@
       "fact": "Antes disso, a família aparecia em curtas no programa de Tracey Ullman, desde 1987."
     },
     {
+      "id": "chute-entretenimento-7",
       "difficulty": "hard",
       "text": "Quantos minutos dura o filme Titanic?",
       "answer": 194,
@@ -51,6 +58,7 @@
       "fact": "São 3 horas e 14 minutos; o naufrágio na tela dura quase o mesmo tempo que o real."
     },
     {
+      "id": "chute-entretenimento-8",
       "difficulty": "easy",
       "text": "Em que ano estreou o primeiro Toy Story?",
       "answer": 1995,
@@ -58,6 +66,7 @@
       "fact": "Foi o primeiro longa-metragem feito inteiro por computador."
     },
     {
+      "id": "chute-entretenimento-9",
       "difficulty": "hard",
       "text": "Quantos episódios tem Breaking Bad?",
       "answer": 62,
@@ -65,6 +74,7 @@
       "fact": "A série teve 5 temporadas, de 2008 a 2013."
     },
     {
+      "id": "chute-entretenimento-10",
       "difficulty": "medium",
       "text": "Em que ano Michael Jackson lançou o álbum Thriller?",
       "answer": 1982,
@@ -72,6 +82,7 @@
       "fact": "É considerado o álbum mais vendido da história."
     },
     {
+      "id": "chute-entretenimento-11",
       "difficulty": "medium",
       "text": "Com quantos anos Elvis Presley morreu?",
       "answer": 42,
@@ -79,6 +90,7 @@
       "fact": "Elvis morreu em 1977, em Graceland, sua casa em Memphis."
     },
     {
+      "id": "chute-entretenimento-12",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o primeiro Rock in Rio?",
       "answer": 1985,
@@ -86,6 +98,7 @@
       "fact": "Queen, AC/DC e Iron Maiden tocaram na primeira edição, na Cidade do Rock."
     },
     {
+      "id": "chute-entretenimento-13",
       "difficulty": "hard",
       "text": "Quantos episódios teve Game of Thrones?",
       "answer": 73,
@@ -93,6 +106,7 @@
       "fact": "Foram 8 temporadas, de 2011 a 2019."
     },
     {
+      "id": "chute-entretenimento-14",
       "difficulty": "hard",
       "text": "Em que ano Chaves estreou na TV brasileira?",
       "answer": 1984,
@@ -100,6 +114,7 @@
       "fact": "O SBT exibiu o seriado mexicano por décadas, até 2020."
     },
     {
+      "id": "chute-entretenimento-15",
       "difficulty": "easy",
       "text": "Em que ano estreou o primeiro filme do Homem de Ferro?",
       "answer": 2008,
@@ -107,6 +122,7 @@
       "fact": "Foi o primeiro filme do Universo Cinematográfico Marvel."
     },
     {
+      "id": "chute-entretenimento-16",
       "difficulty": "hard",
       "text": "Em que ano estreou o Jornal Nacional?",
       "answer": 1969,
@@ -114,6 +130,7 @@
       "fact": "Foi o primeiro telejornal transmitido ao vivo para várias regiões do Brasil."
     },
     {
+      "id": "chute-entretenimento-17",
       "difficulty": "medium",
       "text": "Quanto o filme Avatar, de 2009, arrecadou nas bilheterias?",
       "answer": 2.92,
@@ -121,6 +138,7 @@
       "fact": "Com os relançamentos, ele é a maior bilheteria da história do cinema."
     },
     {
+      "id": "chute-entretenimento-18",
       "difficulty": "hard",
       "text": "Quantas músicas os Beatles gravaram oficialmente?",
       "answer": 213,
@@ -128,6 +146,7 @@
       "fact": "Lennon e McCartney assinaram a grande maioria delas."
     },
     {
+      "id": "chute-entretenimento-19",
       "difficulty": "easy",
       "text": "Em que ano estreou o primeiro Shrek?",
       "answer": 2001,
@@ -135,6 +154,7 @@
       "fact": "Shrek ganhou o primeiro Oscar de melhor animação da história."
     },
     {
+      "id": "chute-entretenimento-20",
       "difficulty": "medium",
       "text": "Quantos segundos dura Bohemian Rhapsody, do Queen?",
       "answer": 354,
@@ -142,6 +162,7 @@
       "fact": "São 5 minutos e 54 segundos, sem refrão, em partes de balada, ópera e rock."
     },
     {
+      "id": "chute-entretenimento-21",
       "difficulty": "easy",
       "text": "Em que ano foi a primeira edição do Big Brother Brasil?",
       "answer": 2002,
@@ -149,6 +170,7 @@
       "fact": "O primeiro campeão foi Kléber Bambam."
     },
     {
+      "id": "chute-entretenimento-22",
       "difficulty": "easy",
       "text": "Em que ano Leonardo DiCaprio ganhou o Oscar de melhor ator?",
       "answer": 2016,
@@ -156,6 +178,7 @@
       "fact": "Ele ganhou por O Regresso, depois de cinco indicações sem vitória."
     },
     {
+      "id": "chute-entretenimento-23",
       "difficulty": "easy",
       "text": "Em que ano estreou a animação O Rei Leão?",
       "answer": 1994,
@@ -163,6 +186,7 @@
       "fact": "A trilha de Elton John e Hans Zimmer ganhou dois Oscars."
     },
     {
+      "id": "chute-entretenimento-24",
       "difficulty": "medium",
       "text": "Em que ano a Netflix foi fundada?",
       "answer": 1997,
@@ -170,6 +194,7 @@
       "fact": "Ela começou alugando DVDs pelo correio; o streaming veio em 2007."
     },
     {
+      "id": "chute-entretenimento-25",
       "difficulty": "hard",
       "text": "Quantas cópias o álbum Thriller vendeu, segundo as estimativas?",
       "answer": 70,
@@ -177,6 +202,7 @@
       "fact": "Sete das nove faixas do álbum viraram singles de sucesso."
     },
     {
+      "id": "chute-entretenimento-26",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o filme Cidade de Deus?",
       "answer": 2002,
@@ -184,6 +210,7 @@
       "fact": "O filme recebeu quatro indicações ao Oscar, incluindo melhor diretor."
     },
     {
+      "id": "chute-entretenimento-27",
       "difficulty": "hard",
       "text": "Quantos minutos dura Vingadores: Ultimato?",
       "answer": 181,
@@ -191,6 +218,7 @@
       "fact": "Ele tirou de Avatar o posto de maior bilheteria por um tempo, em 2019."
     },
     {
+      "id": "chute-entretenimento-28",
       "difficulty": "easy",
       "text": "Em que ano estreou o filme Tropa de Elite?",
       "answer": 2007,
@@ -198,6 +226,7 @@
       "fact": "O filme vazou na internet antes da estreia e virou fenômeno em cópias piratas."
     },
     {
+      "id": "chute-entretenimento-29",
       "difficulty": "hard",
       "text": "Em que ano Roberto Carlos lançou a música Detalhes?",
       "answer": 1971,
@@ -205,6 +234,7 @@
       "fact": "A música está no álbum Roberto Carlos de 1971, um dos mais vendidos dele."
     },
     {
+      "id": "chute-entretenimento-30",
       "difficulty": "easy",
       "text": "Em que ano estreou a série Stranger Things?",
       "answer": 2016,
@@ -212,6 +242,7 @@
       "fact": "A série se passa nos anos 80 e é cheia de referências a filmes da época."
     },
     {
+      "id": "chute-entretenimento-31",
       "difficulty": "easy",
       "text": "Quantos filmes tem a saga Harry Potter?",
       "answer": 8,
@@ -219,6 +250,7 @@
       "fact": "O último livro virou dois filmes."
     },
     {
+      "id": "chute-entretenimento-32",
       "difficulty": "easy",
       "text": "Quantos livros tem a saga Harry Potter?",
       "answer": 7,
@@ -226,6 +258,7 @@
       "fact": "Cada um representa um ano na escola."
     },
     {
+      "id": "chute-entretenimento-33",
       "difficulty": "easy",
       "text": "Quantos filmes tem a trilogia original de Star Wars?",
       "answer": 3,
@@ -233,6 +266,7 @@
       "fact": "Eles estrearam entre 1977 e 1983."
     },
     {
+      "id": "chute-entretenimento-34",
       "difficulty": "easy",
       "text": "Quantos filmes tem a saga principal de Star Wars?",
       "answer": 9,
@@ -240,6 +274,7 @@
       "fact": "A trilogia mais recente terminou em 2019."
     },
     {
+      "id": "chute-entretenimento-35",
       "difficulty": "easy",
       "text": "Quantos filmes tem a trilogia O Senhor dos Anéis?",
       "answer": 3,
@@ -247,6 +282,7 @@
       "fact": "Foram filmados ao mesmo tempo na Nova Zelândia."
     },
     {
+      "id": "chute-entretenimento-36",
       "difficulty": "easy",
       "text": "Quantos filmes Toy Story tem até 2024?",
       "answer": 4,
@@ -254,6 +290,7 @@
       "fact": "O quinto está previsto para 2026."
     },
     {
+      "id": "chute-entretenimento-37",
       "difficulty": "easy",
       "text": "Quantos filmes tem a saga Crepúsculo?",
       "answer": 5,
@@ -261,6 +298,7 @@
       "fact": "O último livro virou dois filmes."
     },
     {
+      "id": "chute-entretenimento-38",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"Friends\"?",
       "answer": 10,
@@ -268,6 +306,7 @@
       "fact": "O último episódio foi ao ar em 2004."
     },
     {
+      "id": "chute-entretenimento-39",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"Game of Thrones\"?",
       "answer": 8,
@@ -275,6 +314,7 @@
       "fact": "A série estreou em 2011."
     },
     {
+      "id": "chute-entretenimento-40",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"Breaking Bad\"?",
       "answer": 5,
@@ -282,6 +322,7 @@
       "fact": "A série ganhou 16 prêmios Emmy."
     },
     {
+      "id": "chute-entretenimento-41",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"Stranger Things\"?",
       "answer": 5,
@@ -289,6 +330,7 @@
       "fact": "A última foi lançada em 2025."
     },
     {
+      "id": "chute-entretenimento-42",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"The Office\", americano?",
       "answer": 9,
@@ -296,6 +338,7 @@
       "fact": "A série ficou no ar de 2005 a 2013."
     },
     {
+      "id": "chute-entretenimento-43",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"The Big Bang Theory\"?",
       "answer": 12,
@@ -303,6 +346,7 @@
       "fact": "O último episódio é de 2019."
     },
     {
+      "id": "chute-entretenimento-44",
       "difficulty": "easy",
       "text": "Quantas temporadas tem \"How I Met Your Mother\"?",
       "answer": 9,
@@ -310,6 +354,7 @@
       "fact": "O final dividiu muito os fãs."
     },
     {
+      "id": "chute-entretenimento-45",
       "difficulty": "easy",
       "text": "Quantos Vingadores originais estavam no filme de 2012?",
       "answer": 6,
@@ -317,6 +362,7 @@
       "fact": "Eles foram reunidos por Nick Fury."
     },
     {
+      "id": "chute-entretenimento-46",
       "difficulty": "easy",
       "text": "Quantas Joias do Infinito existem nos filmes da Marvel?",
       "answer": 6,
@@ -324,6 +370,7 @@
       "fact": "Thanos juntou todas na manopla."
     },
     {
+      "id": "chute-entretenimento-47",
       "difficulty": "easy",
       "text": "Quantos filhos Darth Vader teve?",
       "answer": 2,
@@ -331,6 +378,7 @@
       "fact": "Luke e Leia são gêmeos."
     },
     {
+      "id": "chute-entretenimento-48",
       "difficulty": "easy",
       "text": "Quantos Horcruxes Voldemort criou de propósito?",
       "answer": 6,
@@ -338,6 +386,7 @@
       "fact": "O próprio Harry é uma sétima, sem querer."
     },
     {
+      "id": "chute-entretenimento-49",
       "difficulty": "easy",
       "text": "Quantos anões vão com Bilbo em \"O Hobbit\"?",
       "answer": 13,
@@ -345,6 +394,7 @@
       "fact": "Eles vão retomar a montanha de Smaug."
     },
     {
+      "id": "chute-entretenimento-50",
       "difficulty": "easy",
       "text": "Quantos jogadores começam no \"Round 6\"?",
       "answer": 456,
@@ -352,6 +402,7 @@
       "fact": "Só um ganha o prêmio."
     },
     {
+      "id": "chute-entretenimento-51",
       "difficulty": "medium",
       "text": "Quantos anos Michael Jackson tinha ao lançar seu primeiro disco com os Jackson 5?",
       "answer": 11,
@@ -359,6 +410,7 @@
       "fact": "Ele era o caçula do grupo."
     },
     {
+      "id": "chute-entretenimento-52",
       "difficulty": "easy",
       "text": "Quantos irmãos tinham os Jackson 5?",
       "answer": 5,
@@ -366,6 +418,7 @@
       "fact": "Michael era o mais novo."
     },
     {
+      "id": "chute-entretenimento-53",
       "difficulty": "medium",
       "text": "Quantos filmes James Bond tem, até 2021, oficiais?",
       "answer": 25,
@@ -373,6 +426,7 @@
       "fact": "Sean Connery foi o primeiro no papel."
     },
     {
+      "id": "chute-entretenimento-54",
       "difficulty": "medium",
       "text": "Quantos atores interpretaram James Bond nos filmes oficiais?",
       "answer": 6,
@@ -380,6 +434,7 @@
       "fact": "O último foi Daniel Craig."
     },
     {
+      "id": "chute-entretenimento-55",
       "difficulty": "medium",
       "text": "Quantos filmes Daniel Craig fez como James Bond?",
       "answer": 5,
@@ -387,6 +442,7 @@
       "fact": "O primeiro foi Cassino Royale, de 2006."
     },
     {
+      "id": "chute-entretenimento-56",
       "difficulty": "medium",
       "text": "Quantos filmes Sean Connery fez como James Bond, oficialmente?",
       "answer": 6,
@@ -394,6 +450,7 @@
       "fact": "Ele foi o primeiro no papel."
     },
     {
+      "id": "chute-entretenimento-57",
       "difficulty": "hard",
       "text": "Quantos Doutores houve em \"Doctor Who\", na fase mais longa da série?",
       "answer": 14,
@@ -401,6 +458,7 @@
       "fact": "A série começou em 1963."
     },
     {
+      "id": "chute-entretenimento-58",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Star Wars\", o primeiro?",
       "answer": 1977,
@@ -408,6 +466,7 @@
       "fact": "Poucos acreditavam no sucesso do filme."
     },
     {
+      "id": "chute-entretenimento-59",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Tubarão\"?",
       "answer": 1975,
@@ -415,6 +474,7 @@
       "fact": "Foi o primeiro grande sucesso do verão."
     },
     {
+      "id": "chute-entretenimento-60",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"E.T.\"?",
       "answer": 1982,
@@ -422,6 +482,7 @@
       "fact": "Foi o filme de maior bilheteria da época."
     },
     {
+      "id": "chute-entretenimento-61",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"De Volta para o Futuro\"?",
       "answer": 1985,
@@ -429,6 +490,7 @@
       "fact": "O personagem viaja até 1955."
     },
     {
+      "id": "chute-entretenimento-62",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Jurassic Park\"?",
       "answer": 1993,
@@ -436,6 +498,7 @@
       "fact": "O filme usou efeitos digitais pioneiros."
     },
     {
+      "id": "chute-entretenimento-63",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Matrix\"?",
       "answer": 1999,
@@ -443,6 +506,7 @@
       "fact": "O filme popularizou o efeito \"bullet time\"."
     },
     {
+      "id": "chute-entretenimento-64",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Avatar\"?",
       "answer": 2009,
@@ -450,6 +514,7 @@
       "fact": "Foi o maior filme em 3D de sua época."
     },
     {
+      "id": "chute-entretenimento-65",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Homem de Ferro\"?",
       "answer": 2008,
@@ -457,6 +522,7 @@
       "fact": "Foi o início do universo Marvel."
     },
     {
+      "id": "chute-entretenimento-66",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Frozen\"?",
       "answer": 2013,
@@ -464,6 +530,7 @@
       "fact": "A música \"Let It Go\" foi um fenômeno."
     },
     {
+      "id": "chute-entretenimento-67",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Barbie\"?",
       "answer": 2023,
@@ -471,6 +538,7 @@
       "fact": "O filme foi lançado no mesmo dia que \"Oppenheimer\"."
     },
     {
+      "id": "chute-entretenimento-68",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Oppenheimer\"?",
       "answer": 2023,
@@ -478,6 +546,7 @@
       "fact": "Ganhou sete Oscars."
     },
     {
+      "id": "chute-entretenimento-69",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Parasita\"?",
       "answer": 2019,
@@ -485,6 +554,7 @@
       "fact": "Foi o primeiro filme não falado em inglês a ganhar o Oscar de Melhor Filme."
     },
     {
+      "id": "chute-entretenimento-70",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Ainda Estou Aqui\"?",
       "answer": 2024,
@@ -492,6 +562,7 @@
       "fact": "Fernanda Torres ganhou o Globo de Ouro pelo papel."
     },
     {
+      "id": "chute-entretenimento-71",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"O Auto da Compadecida\", no cinema?",
       "answer": 2000,
@@ -499,6 +570,7 @@
       "fact": "A continuação saiu em 2024."
     },
     {
+      "id": "chute-entretenimento-72",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Central do Brasil\"?",
       "answer": 1998,
@@ -506,6 +578,7 @@
       "fact": "Ganhou o Urso de Ouro, em Berlim."
     },
     {
+      "id": "chute-entretenimento-73",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Forrest Gump\"?",
       "answer": 1994,
@@ -513,6 +586,7 @@
       "fact": "Ganhou seis Oscars."
     },
     {
+      "id": "chute-entretenimento-74",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Pulp Fiction\"?",
       "answer": 1994,
@@ -520,6 +594,7 @@
       "fact": "Ganhou a Palma de Ouro em Cannes."
     },
     {
+      "id": "chute-entretenimento-75",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"O Poderoso Chefão\"?",
       "answer": 1972,
@@ -527,6 +602,7 @@
       "fact": "A parte 2 ganhou o Oscar também."
     },
     {
+      "id": "chute-entretenimento-76",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"Psicose\"?",
       "answer": 1960,
@@ -534,6 +610,7 @@
       "fact": "Hitchcock não deixava ninguém entrar depois de começado."
     },
     {
+      "id": "chute-entretenimento-77",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"Cidadão Kane\"?",
       "answer": 1941,
@@ -541,6 +618,7 @@
       "fact": "A palavra \"Rosebud\" é o grande mistério."
     },
     {
+      "id": "chute-entretenimento-78",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"Casablanca\"?",
       "answer": 1942,
@@ -548,6 +626,7 @@
       "fact": "Foi feito enquanto a guerra acontecia."
     },
     {
+      "id": "chute-entretenimento-79",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"E o Vento Levou\"?",
       "answer": 1939,
@@ -555,6 +634,7 @@
       "fact": "É o filme com a maior bilheteria corrigida."
     },
     {
+      "id": "chute-entretenimento-80",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"O Mágico de Oz\"?",
       "answer": 1939,
@@ -562,6 +642,7 @@
       "fact": "Foi um dos primeiros filmes coloridos de grande sucesso."
     },
     {
+      "id": "chute-entretenimento-81",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"Tempos Modernos\", de Chaplin?",
       "answer": 1936,
@@ -569,6 +650,7 @@
       "fact": "Foi um dos últimos filmes mudos de grande sucesso."
     },
     {
+      "id": "chute-entretenimento-82",
       "difficulty": "easy",
       "text": "Em que ano estreou a série \"Friends\"?",
       "answer": 1994,
@@ -576,6 +658,7 @@
       "fact": "O último episódio foi visto por 52 milhões de pessoas nos EUA."
     },
     {
+      "id": "chute-entretenimento-83",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Game of Thrones\"?",
       "answer": 2011,
@@ -583,6 +666,7 @@
       "fact": "A série se baseou nos livros de George R. R. Martin."
     },
     {
+      "id": "chute-entretenimento-84",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Breaking Bad\"?",
       "answer": 2008,
@@ -590,6 +674,7 @@
       "fact": "A série só estourou depois de entrar na Netflix."
     },
     {
+      "id": "chute-entretenimento-85",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Round 6\"?",
       "answer": 2021,
@@ -597,6 +682,7 @@
       "fact": "Foi a série mais vista da Netflix."
     },
     {
+      "id": "chute-entretenimento-86",
       "difficulty": "easy",
       "text": "Em que ano estreou \"La Casa de Papel\"?",
       "answer": 2017,
@@ -604,6 +690,7 @@
       "fact": "A Netflix a comprou depois de pouco sucesso na TV."
     },
     {
+      "id": "chute-entretenimento-87",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Bob Esponja\"?",
       "answer": 1999,
@@ -611,6 +698,7 @@
       "fact": "O criador era biólogo marinho."
     },
     {
+      "id": "chute-entretenimento-88",
       "difficulty": "medium",
       "text": "Em que ano estreou \"Dragon Ball\", no Japão, como mangá?",
       "answer": 1984,
@@ -618,6 +706,7 @@
       "fact": "Akira Toriyama morreu em 2024."
     },
     {
+      "id": "chute-entretenimento-89",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Cavaleiros do Zodíaco\" no Brasil?",
       "answer": 1994,
@@ -625,6 +714,7 @@
       "fact": "Foi transmitido pela Manchete."
     },
     {
+      "id": "chute-entretenimento-90",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Pokémon\" na TV japonesa?",
       "answer": 1997,
@@ -632,6 +722,7 @@
       "fact": "O primeiro game é de 1996."
     },
     {
+      "id": "chute-entretenimento-91",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Naruto\", como anime?",
       "answer": 2002,
@@ -639,6 +730,7 @@
       "fact": "A série teve mais de 700 episódios."
     },
     {
+      "id": "chute-entretenimento-92",
       "difficulty": "medium",
       "text": "Em que ano estreou o Sítio do Picapau Amarelo na Globo?",
       "answer": 1977,
@@ -646,6 +738,7 @@
       "fact": "Dona Benta foi interpretada por Zilka Salaberry."
     },
     {
+      "id": "chute-entretenimento-93",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Castelo Rá-Tim-Bum\"?",
       "answer": 1994,
@@ -653,6 +746,7 @@
       "fact": "Foi um grande sucesso da TV Cultura."
     },
     {
+      "id": "chute-entretenimento-94",
       "difficulty": "easy",
       "text": "Em que ano estreou \"Xou da Xuxa\"?",
       "answer": 1986,
@@ -660,6 +754,7 @@
       "fact": "Ela ficou seis anos no ar diariamente."
     },
     {
+      "id": "chute-entretenimento-95",
       "difficulty": "medium",
       "text": "Em que ano estreou \"Os Trapalhões\", na Globo?",
       "answer": 1977,
@@ -667,6 +762,7 @@
       "fact": "O grupo apareceu primeiro na TV Excelsior."
     },
     {
+      "id": "chute-entretenimento-96",
       "difficulty": "medium",
       "text": "Em que ano estreou \"Escolinha do Professor Raimundo\", na Globo, como programa próprio?",
       "answer": 1990,
@@ -674,6 +770,7 @@
       "fact": "Chico Anysio fazia centenas de personagens."
     },
     {
+      "id": "chute-entretenimento-97",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a novela \"Avenida Brasil\"?",
       "answer": 2012,
@@ -681,6 +778,7 @@
       "fact": "A final parou o país."
     },
     {
+      "id": "chute-entretenimento-98",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a novela \"Pantanal\", original, na Manchete?",
       "answer": 1990,
@@ -688,6 +786,7 @@
       "fact": "A nova versão, da Globo, é de 2022."
     },
     {
+      "id": "chute-entretenimento-99",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a novela \"Vale Tudo\", original?",
       "answer": 1988,
@@ -695,6 +794,7 @@
       "fact": "A Globo fez uma nova versão em 2025."
     },
     {
+      "id": "chute-entretenimento-100",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a novela \"O Clone\"?",
       "answer": 2001,
@@ -702,6 +802,7 @@
       "fact": "A novela popularizou a dança do ventre no Brasil."
     },
     {
+      "id": "chute-entretenimento-101",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a novela \"Roque Santeiro\"?",
       "answer": 1985,
@@ -709,6 +810,7 @@
       "fact": "A primeira versão foi censurada em 1975."
     },
     {
+      "id": "chute-entretenimento-102",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a novela \"A Escrava Isaura\"?",
       "answer": 1976,
@@ -716,6 +818,7 @@
       "fact": "Ela foi vendida para mais de 100 países."
     },
     {
+      "id": "chute-entretenimento-103",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a novela \"Senhora do Destino\"?",
       "answer": 2004,
@@ -723,6 +826,7 @@
       "fact": "A vilã foi Nazaré Tedesco."
     },
     {
+      "id": "chute-entretenimento-104",
       "difficulty": "medium",
       "text": "Quantas horas dura a trilogia estendida de \"O Senhor dos Anéis\", aproximadamente?",
       "answer": 11,
@@ -730,6 +834,7 @@
       "fact": "Muitos fãs fazem maratona."
     },
     {
+      "id": "chute-entretenimento-105",
       "difficulty": "medium",
       "text": "Quantos minutos dura \"O Rei Leão\" original, aproximadamente?",
       "answer": 88,
@@ -737,6 +842,7 @@
       "fact": "É um dos filmes mais curtos da Disney entre os clássicos."
     },
     {
+      "id": "chute-entretenimento-106",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"Cidadão Kane\", aproximadamente?",
       "answer": 119,
@@ -744,6 +850,7 @@
       "fact": "O filme foi um fracasso na bilheteria de 1941."
     },
     {
+      "id": "chute-entretenimento-107",
       "difficulty": "easy",
       "text": "Quantos minutos dura \"Oppenheimer\", aproximadamente?",
       "answer": 180,
@@ -751,6 +858,7 @@
       "fact": "Mesmo tão longo, rendeu quase 1 bilhão de dólares."
     },
     {
+      "id": "chute-entretenimento-108",
       "difficulty": "medium",
       "text": "Quantos minutos dura \"Avatar\", de 2009, aproximadamente?",
       "answer": 162,
@@ -758,6 +866,7 @@
       "fact": "Foi filmado em tecnologia 3D própria."
     },
     {
+      "id": "chute-entretenimento-109",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"E o Vento Levou\", aproximadamente?",
       "answer": 238,
@@ -765,6 +874,7 @@
       "fact": "Na época, foi o mais caro já produzido."
     },
     {
+      "id": "chute-entretenimento-110",
       "difficulty": "easy",
       "text": "Quantos minutos dura um episódio de \"Friends\", aproximadamente?",
       "answer": 22,
@@ -772,6 +882,7 @@
       "fact": "Mesmo curto, cada episódio custou milhões no final."
     },
     {
+      "id": "chute-entretenimento-111",
       "difficulty": "easy",
       "text": "Quantos minutos dura um episódio de \"Bob Esponja\", com os dois segmentos?",
       "answer": 22,
@@ -779,6 +890,7 @@
       "fact": "Cada segmento tem cerca de 11 minutos."
     },
     {
+      "id": "chute-entretenimento-112",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Stranger Things\" em cada uma das primeiras temporadas, aproximadamente?",
       "answer": 8,
@@ -786,6 +898,7 @@
       "fact": "Na primeira, foram exatamente oito."
     },
     {
+      "id": "chute-entretenimento-113",
       "difficulty": "medium",
       "text": "Quantos episódios teve \"Round 6\" na primeira temporada?",
       "answer": 9,
@@ -793,6 +906,7 @@
       "fact": "A segunda foi lançada em 2024."
     },
     {
+      "id": "chute-entretenimento-114",
       "difficulty": "medium",
       "text": "Quantos episódios teve \"Avenida Brasil\"?",
       "answer": 179,
@@ -800,6 +914,7 @@
       "fact": "O último foi exibido em outubro de 2012."
     },
     {
+      "id": "chute-entretenimento-115",
       "difficulty": "medium",
       "text": "Quantos anos durou \"Malhação\" na Globo?",
       "answer": 25,
@@ -807,6 +922,7 @@
       "fact": "A novela teen teve mais de 20 temporadas."
     },
     {
+      "id": "chute-entretenimento-116",
       "difficulty": "easy",
       "text": "Quantos anos durou o programa \"Domingão do Faustão\"?",
       "answer": 32,
@@ -814,6 +930,7 @@
       "fact": "Ele saiu da Globo em 2021."
     },
     {
+      "id": "chute-entretenimento-117",
       "difficulty": "medium",
       "text": "Quantos Oscars \"Parasita\" ganhou?",
       "answer": 4,
@@ -821,6 +938,7 @@
       "fact": "Foi o primeiro filme não falado em inglês a vencer como Melhor Filme."
     },
     {
+      "id": "chute-entretenimento-118",
       "difficulty": "medium",
       "text": "Quantos Oscars \"Oppenheimer\" ganhou?",
       "answer": 7,
@@ -828,6 +946,7 @@
       "fact": "Inclui Melhor Filme e Melhor Direção."
     },
     {
+      "id": "chute-entretenimento-119",
       "difficulty": "medium",
       "text": "Quantos Oscars \"Tudo em Todo Lugar ao Mesmo Tempo\" ganhou?",
       "answer": 7,
@@ -835,6 +954,7 @@
       "fact": "Michelle Yeoh foi a primeira asiática a ganhar Melhor Atriz."
     },
     {
+      "id": "chute-entretenimento-120",
       "difficulty": "medium",
       "text": "Quantos Oscars \"Avatar\" ganhou?",
       "answer": 3,
@@ -842,6 +962,7 @@
       "fact": "Perdeu Melhor Filme para \"Guerra ao Terror\"."
     },
     {
+      "id": "chute-entretenimento-121",
       "difficulty": "hard",
       "text": "Quantos Oscars Walt Disney ganhou, em estatuetas regulares?",
       "answer": 22,
@@ -849,6 +970,7 @@
       "fact": "É o maior vencedor da história."
     },
     {
+      "id": "chute-entretenimento-122",
       "difficulty": "medium",
       "text": "Quantos Oscars Katharine Hepburn ganhou como Melhor Atriz?",
       "answer": 4,
@@ -856,6 +978,7 @@
       "fact": "É o maior número de todos os atores."
     },
     {
+      "id": "chute-entretenimento-123",
       "difficulty": "medium",
       "text": "Quantos Oscars Daniel Day-Lewis ganhou como Melhor Ator?",
       "answer": 3,
@@ -863,6 +986,7 @@
       "fact": "Ele é o único homem com esse recorde."
     },
     {
+      "id": "chute-entretenimento-124",
       "difficulty": "easy",
       "text": "Quantos Oscars Leonardo DiCaprio ganhou?",
       "answer": 1,
@@ -870,6 +994,7 @@
       "fact": "Foi por \"O Regresso\", em 2016."
     },
     {
+      "id": "chute-entretenimento-125",
       "difficulty": "medium",
       "text": "Quantos Oscars Tom Hanks ganhou?",
       "answer": 2,
@@ -877,6 +1002,7 @@
       "fact": "Ele ganhou seguidamente em 1994 e 1995."
     },
     {
+      "id": "chute-entretenimento-126",
       "difficulty": "hard",
       "text": "Quantas indicações ao Oscar Meryl Streep recebeu?",
       "answer": 21,
@@ -884,6 +1010,7 @@
       "fact": "Ela é recordista entre atores."
     },
     {
+      "id": "chute-entretenimento-127",
       "difficulty": "medium",
       "text": "Quantos Oscars Meryl Streep ganhou?",
       "answer": 3,
@@ -891,6 +1018,7 @@
       "fact": "Um deles foi por \"A Dama de Ferro\"."
     },
     {
+      "id": "chute-entretenimento-128",
       "difficulty": "easy",
       "text": "Quantos Oscars o Brasil já ganhou em filmes de longa-metragem até 2025?",
       "answer": 1,
@@ -898,6 +1026,7 @@
       "fact": "\"Ainda Estou Aqui\" foi o primeiro."
     },
     {
+      "id": "chute-entretenimento-129",
       "difficulty": "medium",
       "text": "Qual é a altura da estatueta do Oscar, em cm?",
       "answer": 34,
@@ -905,6 +1034,7 @@
       "fact": "Ela pesa cerca de 3,8 kg."
     },
     {
+      "id": "chute-entretenimento-130",
       "difficulty": "medium",
       "text": "Qual é o peso da estatueta do Oscar, em kg?",
       "answer": 3.8,
@@ -912,6 +1042,7 @@
       "fact": "Na Segunda Guerra, ela era de gesso."
     },
     {
+      "id": "chute-entretenimento-131",
       "difficulty": "easy",
       "text": "Em que ano foi inaugurada a primeira Disneylândia?",
       "answer": 1955,
@@ -919,6 +1050,7 @@
       "fact": "Foi em Anaheim, na Califórnia."
     },
     {
+      "id": "chute-entretenimento-132",
       "difficulty": "easy",
       "text": "Em que ano foi inaugurado o Magic Kingdom, na Flórida?",
       "answer": 1971,
@@ -926,6 +1058,7 @@
       "fact": "Walt Disney morreu antes da inauguração."
     },
     {
+      "id": "chute-entretenimento-133",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Beto Carrero World?",
       "answer": 1991,
@@ -933,6 +1066,7 @@
       "fact": "É o maior parque temático da América Latina."
     },
     {
+      "id": "chute-entretenimento-134",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Hopi Hari?",
       "answer": 1999,
@@ -940,6 +1074,7 @@
       "fact": "Ele fica em Vinhedo, em São Paulo."
     },
     {
+      "id": "chute-entretenimento-135",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Hollywood Walk of Fame?",
       "answer": 1960,
@@ -947,6 +1082,7 @@
       "fact": "Hoje tem mais de 2.700 estrelas."
     },
     {
+      "id": "chute-entretenimento-136",
       "difficulty": "medium",
       "text": "Em que ano nasceu Walt Disney?",
       "answer": 1901,
@@ -954,6 +1090,7 @@
       "fact": "Ele morreu em 1966."
     },
     {
+      "id": "chute-entretenimento-137",
       "difficulty": "medium",
       "text": "Em que ano nasceu Stan Lee?",
       "answer": 1922,
@@ -961,6 +1098,7 @@
       "fact": "Ele fez participações em quase todos os filmes da Marvel."
     },
     {
+      "id": "chute-entretenimento-138",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Titanic\", em bilhões de dólares?",
       "answer": 2.26,
@@ -968,6 +1106,7 @@
       "fact": "Foi o primeiro filme a passar de 2 bilhões."
     },
     {
+      "id": "chute-entretenimento-139",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Divertida Mente 2\", em bilhões de dólares?",
       "answer": 1.7,
@@ -975,6 +1114,7 @@
       "fact": "Foi a maior animação de Hollywood."
     },
     {
+      "id": "chute-entretenimento-140",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Barbie\", em bilhões de dólares?",
       "answer": 1.44,
@@ -982,6 +1122,7 @@
       "fact": "Foi o maior filme de 2023."
     },
     {
+      "id": "chute-entretenimento-141",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Oppenheimer\", em milhões de dólares?",
       "answer": 975,
@@ -989,6 +1130,7 @@
       "fact": "É o filme de maior bilheteria com censura restrita de Nolan."
     },
     {
+      "id": "chute-entretenimento-142",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Coringa\", de 2019, em bilhões de dólares?",
       "answer": 1.07,
@@ -996,6 +1138,7 @@
       "fact": "O filme custou apenas cerca de 55 milhões de dólares."
     },
     {
+      "id": "chute-entretenimento-143",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Ne Zha 2\", em 2025, em bilhões de dólares?",
       "answer": 2.2,
@@ -1003,6 +1146,7 @@
       "fact": "É a maior bilheteria de um filme chinês."
     },
     {
+      "id": "chute-entretenimento-144",
       "difficulty": "medium",
       "text": "Quanto custou \"Titanic\", em milhões de dólares?",
       "answer": 200,
@@ -1010,6 +1154,7 @@
       "fact": "Na época, foi o filme mais caro da história."
     },
     {
+      "id": "chute-entretenimento-145",
       "difficulty": "medium",
       "text": "Quanto custou \"Star Wars\", de 1977, em milhões de dólares?",
       "answer": 11,
@@ -1017,6 +1162,7 @@
       "fact": "Hoje, a saga vale bilhões."
     },
     {
+      "id": "chute-entretenimento-146",
       "difficulty": "medium",
       "text": "Quanto custou \"A Bruxa de Blair\", em dólares?",
       "answer": 60000,
@@ -1024,6 +1170,7 @@
       "fact": "Arrecadou quase 250 milhões."
     },
     {
+      "id": "chute-entretenimento-147",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"A Bruxa de Blair\", em milhões de dólares?",
       "answer": 248,
@@ -1031,6 +1178,7 @@
       "fact": "É um dos maiores retornos sobre investimento da história."
     },
     {
+      "id": "chute-entretenimento-148",
       "difficulty": "medium",
       "text": "Quanto custou \"Atividade Paranormal\", em dólares?",
       "answer": 15000,
@@ -1038,6 +1186,7 @@
       "fact": "Arrecadou quase 200 milhões."
     },
     {
+      "id": "chute-entretenimento-149",
       "difficulty": "medium",
       "text": "Quanto custou \"E.T.\", em milhões de dólares?",
       "answer": 10.5,
@@ -1045,6 +1194,7 @@
       "fact": "Arrecadou quase 800 milhões."
     },
     {
+      "id": "chute-entretenimento-150",
       "difficulty": "medium",
       "text": "Quanto Keanu Reeves ganhou com a primeira \"Matrix\", em milhões de dólares, aproximadamente?",
       "answer": 35,
@@ -1052,6 +1202,7 @@
       "fact": "Ele doou muito do que ganhou para a equipe."
     },
     {
+      "id": "chute-entretenimento-151",
       "difficulty": "medium",
       "text": "Quanto cada ator de \"Friends\" ganhava por episódio nas últimas temporadas, em milhões de dólares?",
       "answer": 1,
@@ -1059,6 +1210,7 @@
       "fact": "Eles negociaram juntos, em grupo."
     },
     {
+      "id": "chute-entretenimento-152",
       "difficulty": "medium",
       "text": "Quanto cada ator de \"The Big Bang Theory\" ganhava por episódio, em dólares, no fim?",
       "answer": 1000000,
@@ -1066,6 +1218,7 @@
       "fact": "Os cinco principais ganhavam isso."
     },
     {
+      "id": "chute-entretenimento-153",
       "difficulty": "medium",
       "text": "Quanto Jennifer Aniston recebeu, por ano, em direitos de reprise de \"Friends\", em milhões de dólares?",
       "answer": 20,
@@ -1073,6 +1226,7 @@
       "fact": "Os atores continuam ganhando bem com as reprises."
     },
     {
+      "id": "chute-entretenimento-154",
       "difficulty": "medium",
       "text": "Quantas estrelas tem a Calçada da Fama de Hollywood, aproximadamente?",
       "answer": 2700,
@@ -1080,6 +1234,7 @@
       "fact": "Cada estrela custa uma taxa de mais de 50 mil dólares."
     },
     {
+      "id": "chute-entretenimento-155",
       "difficulty": "medium",
       "text": "Quantos filmes a franquia \"Velozes e Furiosos\" tem, até 2023?",
       "answer": 10,
@@ -1087,6 +1242,7 @@
       "fact": "O primeiro é de 2001."
     },
     {
+      "id": "chute-entretenimento-156",
       "difficulty": "medium",
       "text": "Quantos filmes a Pixar lançou até 2024, aproximadamente?",
       "answer": 28,
@@ -1094,6 +1250,7 @@
       "fact": "Toy Story foi o primeiro, em 1995."
     },
     {
+      "id": "chute-entretenimento-157",
       "difficulty": "medium",
       "text": "Quantos dias levou a cena do chuveiro de \"Psicose\"?",
       "answer": 7,
@@ -1101,6 +1258,7 @@
       "fact": "Ela tem 78 cortes em 45 segundos."
     },
     {
+      "id": "chute-entretenimento-158",
       "difficulty": "medium",
       "text": "Quantos cortes tem a cena do chuveiro de \"Psicose\"?",
       "answer": 78,
@@ -1108,6 +1266,7 @@
       "fact": "O sangue era calda de chocolate."
     },
     {
+      "id": "chute-entretenimento-159",
       "difficulty": "medium",
       "text": "Quantos figurantes participaram do filme \"Gandhi\", em um único dia?",
       "answer": 300000,
@@ -1115,6 +1274,7 @@
       "fact": "Foi o maior número da história do cinema."
     },
     {
+      "id": "chute-entretenimento-160",
       "difficulty": "medium",
       "text": "Quantos anos levou para fazer \"Boyhood\"?",
       "answer": 12,
@@ -1122,6 +1282,7 @@
       "fact": "O filme acompanha um menino crescendo de verdade."
     },
     {
+      "id": "chute-entretenimento-161",
       "difficulty": "medium",
       "text": "Quantos assinantes tinha a Netflix no fim de 2024, em milhões?",
       "answer": 301,
@@ -1129,6 +1290,7 @@
       "fact": "Ela parou de divulgar o número em 2025."
     },
     {
+      "id": "chute-entretenimento-162",
       "difficulty": "medium",
       "text": "Quantos assinantes tinha a Netflix em 2010, em milhões, aproximadamente?",
       "answer": 20,
@@ -1136,6 +1298,7 @@
       "fact": "O streaming ainda estava começando."
     },
     {
+      "id": "chute-entretenimento-163",
       "difficulty": "medium",
       "text": "Quantas horas de vídeo são enviadas por minuto ao YouTube, aproximadamente?",
       "answer": 500,
@@ -1143,6 +1306,7 @@
       "fact": "Seria impossível assistir a tudo."
     },
     {
+      "id": "chute-entretenimento-164",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Dragon Ball Z\"?",
       "answer": 291,
@@ -1150,6 +1314,7 @@
       "fact": "Foi exibido no Brasil pela Globo e outras redes."
     },
     {
+      "id": "chute-entretenimento-165",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"One Piece\" até o início de 2025, aproximadamente?",
       "answer": 1120,
@@ -1157,6 +1322,7 @@
       "fact": "É um dos animes mais longos do mundo."
     },
     {
+      "id": "chute-entretenimento-166",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Os Simpsons\", até 2025, aproximadamente?",
       "answer": 790,
@@ -1164,6 +1330,7 @@
       "fact": "É a série americana de horário nobre mais longa da história."
     },
     {
+      "id": "chute-entretenimento-167",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Naruto\", somando Shippuden?",
       "answer": 720,
@@ -1171,6 +1338,7 @@
       "fact": "O autor é Masashi Kishimoto."
     },
     {
+      "id": "chute-entretenimento-168",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Grey's Anatomy\", até 2025, aproximadamente?",
       "answer": 440,
@@ -1178,6 +1346,7 @@
       "fact": "É a série médica mais longa da TV americana."
     },
     {
+      "id": "chute-entretenimento-169",
       "difficulty": "medium",
       "text": "Quantas temporadas tem \"Os Simpsons\", até 2025, aproximadamente?",
       "answer": 36,
@@ -1185,6 +1354,7 @@
       "fact": "A série estreou em 1989."
     },
     {
+      "id": "chute-entretenimento-170",
       "difficulty": "medium",
       "text": "Quantos capítulos teve \"Vale Tudo\" na versão de 1988?",
       "answer": 204,
@@ -1192,6 +1362,7 @@
       "fact": "Odete Roitman foi assassinada nos últimos capítulos."
     },
     {
+      "id": "chute-entretenimento-171",
       "difficulty": "medium",
       "text": "Quantos capítulos teve a novela \"O Clone\"?",
       "answer": 221,
@@ -1199,6 +1370,7 @@
       "fact": "A novela foi transmitida em mais de 90 países."
     },
     {
+      "id": "chute-entretenimento-172",
       "difficulty": "medium",
       "text": "Em quantos países \"A Escrava Isaura\" foi exibida, aproximadamente?",
       "answer": 100,
@@ -1206,6 +1378,7 @@
       "fact": "Ela fez sucesso na China e em Cuba."
     },
     {
+      "id": "chute-entretenimento-173",
       "difficulty": "medium",
       "text": "Quantas pessoas viram o último capítulo de \"Avenida Brasil\", em milhões, aproximadamente?",
       "answer": 38,
@@ -1213,6 +1386,7 @@
       "fact": "Comícios foram cancelados nas eleições daquele dia."
     },
     {
+      "id": "chute-entretenimento-174",
       "difficulty": "medium",
       "text": "Quantas pessoas viram o episódio final de \"Friends\", nos EUA, em milhões?",
       "answer": 52.5,
@@ -1220,6 +1394,7 @@
       "fact": "Foi o programa mais visto do ano nos EUA."
     },
     {
+      "id": "chute-entretenimento-175",
       "difficulty": "medium",
       "text": "Quantas pessoas viram o último episódio de \"M*A*S*H\", nos EUA, em milhões?",
       "answer": 106,
@@ -1227,6 +1402,7 @@
       "fact": "Foi o recorde por décadas."
     },
     {
+      "id": "chute-entretenimento-176",
       "difficulty": "medium",
       "text": "Quantas pessoas viram \"Round 6\" nas primeiras semanas, em milhões de contas?",
       "answer": 111,
@@ -1234,6 +1410,7 @@
       "fact": "Foi a maior estreia da Netflix."
     },
     {
+      "id": "chute-entretenimento-177",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme mais visto do Brasil, \"Minha Mãe É uma Peça 3\", em milhões?",
       "answer": 11.5,
@@ -1241,6 +1418,7 @@
       "fact": "Paulo Gustavo morreu em 2021, de Covid."
     },
     {
+      "id": "chute-entretenimento-178",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme \"Tropa de Elite 2\", em milhões?",
       "answer": 11.1,
@@ -1248,6 +1426,7 @@
       "fact": "Foi o segundo mais visto do Brasil até hoje."
     },
     {
+      "id": "chute-entretenimento-179",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme \"Dona Flor e Seus Dois Maridos\", em milhões?",
       "answer": 10.7,
@@ -1255,6 +1434,7 @@
       "fact": "Foi lançado em 1976."
     },
     {
+      "id": "chute-entretenimento-180",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme \"Se Eu Fosse Você 2\", em milhões?",
       "answer": 6.1,
@@ -1262,6 +1442,7 @@
       "fact": "Glória Pires e Tony Ramos foram os protagonistas."
     },
     {
+      "id": "chute-entretenimento-181",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme \"Ainda Estou Aqui\" nos cinemas do Brasil, em milhões?",
       "answer": 5.8,
@@ -1269,6 +1450,7 @@
       "fact": "Foi a maior bilheteria nacional desde a pandemia."
     },
     {
+      "id": "chute-entretenimento-182",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme \"Cidade de Deus\" no Brasil, em milhões?",
       "answer": 3.3,
@@ -1276,6 +1458,7 @@
       "fact": "O filme foi indicado a quatro Oscars."
     },
     {
+      "id": "chute-entretenimento-183",
       "difficulty": "medium",
       "text": "Quantas pessoas assistiram ao filme \"Central do Brasil\" no Brasil, em milhões?",
       "answer": 1.6,
@@ -1283,6 +1466,7 @@
       "fact": "Foi indicado a dois Oscars."
     },
     {
+      "id": "chute-entretenimento-184",
       "difficulty": "medium",
       "text": "Em que ano nasceu Tom Hanks?",
       "answer": 1956,
@@ -1290,6 +1474,7 @@
       "fact": "Ele nasceu na Califórnia."
     },
     {
+      "id": "chute-entretenimento-185",
       "difficulty": "easy",
       "text": "Em que ano nasceu Tom Cruise?",
       "answer": 1962,
@@ -1297,6 +1482,7 @@
       "fact": "Ele faz suas próprias cenas de ação."
     },
     {
+      "id": "chute-entretenimento-186",
       "difficulty": "easy",
       "text": "Em que ano nasceu Leonardo DiCaprio?",
       "answer": 1974,
@@ -1304,6 +1490,7 @@
       "fact": "Ele foi indicado sete vezes ao Oscar de ator ou produtor."
     },
     {
+      "id": "chute-entretenimento-187",
       "difficulty": "medium",
       "text": "Em que ano nasceu Fernanda Montenegro?",
       "answer": 1929,
@@ -1311,6 +1498,7 @@
       "fact": "Ela ainda atua, passando dos 90 anos."
     },
     {
+      "id": "chute-entretenimento-188",
       "difficulty": "medium",
       "text": "Em que ano nasceu Fernanda Torres?",
       "answer": 1965,
@@ -1318,6 +1506,7 @@
       "fact": "Ela é filha de Fernanda Montenegro."
     },
     {
+      "id": "chute-entretenimento-189",
       "difficulty": "medium",
       "text": "Em que ano nasceu Silvio Santos?",
       "answer": 1930,
@@ -1325,6 +1514,7 @@
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
+      "id": "chute-entretenimento-190",
       "difficulty": "easy",
       "text": "Em que ano nasceu Xuxa?",
       "answer": 1963,
@@ -1332,6 +1522,7 @@
       "fact": "Ela nasceu em Santa Rosa, no Rio Grande do Sul."
     },
     {
+      "id": "chute-entretenimento-191",
       "difficulty": "easy",
       "text": "Em que ano Paulo Gustavo morreu?",
       "answer": 2021,
@@ -1339,6 +1530,7 @@
       "fact": "Ele morreu de Covid-19, aos 42 anos."
     },
     {
+      "id": "chute-entretenimento-192",
       "difficulty": "easy",
       "text": "Em que ano Chadwick Boseman morreu?",
       "answer": 2020,
@@ -1346,6 +1538,7 @@
       "fact": "Ele filmou \"Pantera Negra\" com câncer."
     },
     {
+      "id": "chute-entretenimento-193",
       "difficulty": "easy",
       "text": "Em que ano Heath Ledger morreu?",
       "answer": 2008,
@@ -1353,6 +1546,7 @@
       "fact": "Ele não viu seu Coringa nos cinemas."
     },
     {
+      "id": "chute-entretenimento-194",
       "difficulty": "easy",
       "text": "Em que ano Robin Williams morreu?",
       "answer": 2014,
@@ -1360,6 +1554,7 @@
       "fact": "Foi uma grande perda para o humor."
     },
     {
+      "id": "chute-entretenimento-195",
       "difficulty": "easy",
       "text": "Em que ano Stan Lee morreu?",
       "answer": 2018,
@@ -1367,6 +1562,7 @@
       "fact": "Ele tinha 95 anos."
     },
     {
+      "id": "chute-entretenimento-196",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Vingadores: Ultimato\", em bilhões de dólares?",
       "answer": 2.8,
@@ -1374,6 +1570,7 @@
       "fact": "Chegou a ser a maior bilheteria da história."
     },
     {
+      "id": "chute-entretenimento-197",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Star Wars: O Despertar da Força\", em bilhões de dólares?",
       "answer": 2.07,
@@ -1381,6 +1578,7 @@
       "fact": "Foi um enorme sucesso depois da compra pela Disney."
     },
     {
+      "id": "chute-entretenimento-198",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Vingadores: Guerra Infinita\", em bilhões de dólares?",
       "answer": 2.05,
@@ -1388,6 +1586,7 @@
       "fact": "Foi o maior filme de 2018."
     },
     {
+      "id": "chute-entretenimento-199",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Homem-Aranha: Sem Volta para Casa\", em bilhões de dólares?",
       "answer": 1.92,
@@ -1395,6 +1594,7 @@
       "fact": "Três Homens-Aranha aparecem no filme."
     },
     {
+      "id": "chute-entretenimento-200",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Top Gun: Maverick\", em bilhões de dólares?",
       "answer": 1.49,
@@ -1402,6 +1602,7 @@
       "fact": "Tom Cruise voltou ao papel depois de 36 anos."
     },
     {
+      "id": "chute-entretenimento-201",
       "difficulty": "medium",
       "text": "Quanto custou \"Avatar: O Caminho da Água\", em milhões de dólares?",
       "answer": 350,
@@ -1409,6 +1610,7 @@
       "fact": "O filme arrecadou mais de 2,3 bilhões."
     },
     {
+      "id": "chute-entretenimento-202",
       "difficulty": "medium",
       "text": "Quanto custou \"Vingadores: Ultimato\", em milhões de dólares?",
       "answer": 356,
@@ -1416,6 +1618,7 @@
       "fact": "Foi um dos filmes mais caros já feitos."
     },
     {
+      "id": "chute-entretenimento-203",
       "difficulty": "medium",
       "text": "Quanto Robert Downey Jr. ganhou em \"Vingadores: Ultimato\", em milhões de dólares, aproximadamente?",
       "answer": 75,
@@ -1423,6 +1626,7 @@
       "fact": "Ele foi fundamental para o sucesso da saga."
     },
     {
+      "id": "chute-entretenimento-204",
       "difficulty": "medium",
       "text": "Quantos filmes há no Universo Marvel, até \"Vingadores: Ultimato\"?",
       "answer": 22,
@@ -1430,6 +1634,7 @@
       "fact": "Essa fase é chamada de Saga do Infinito."
     },
     {
+      "id": "chute-entretenimento-205",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"O Rei Leão\" de 2019, em bilhões de dólares?",
       "answer": 1.66,
@@ -1437,6 +1642,7 @@
       "fact": "É um remake feito com computação gráfica."
     },
     {
+      "id": "chute-entretenimento-206",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Frozen 2\", em bilhões de dólares?",
       "answer": 1.45,
@@ -1444,6 +1650,7 @@
       "fact": "Na época, foi a animação de maior bilheteria."
     },
     {
+      "id": "chute-entretenimento-207",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Jurassic World\", em bilhões de dólares?",
       "answer": 1.67,
@@ -1451,6 +1658,7 @@
       "fact": "O filme de 2015 reativou a franquia."
     },
     {
+      "id": "chute-entretenimento-208",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Harry Potter e as Relíquias da Morte: Parte 2\", em bilhões de dólares?",
       "answer": 1.34,
@@ -1458,6 +1666,7 @@
       "fact": "O final da saga, em 2011."
     },
     {
+      "id": "chute-entretenimento-209",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"O Senhor dos Anéis: O Retorno do Rei\", em bilhões de dólares?",
       "answer": 1.15,
@@ -1465,6 +1674,7 @@
       "fact": "Levou 11 Oscars, incluindo Melhor Filme."
     },
     {
+      "id": "chute-entretenimento-210",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Shrek 2\", em milhões de dólares?",
       "answer": 928,
@@ -1472,6 +1682,7 @@
       "fact": "Foi o filme de maior bilheteria de 2004."
     },
     {
+      "id": "chute-entretenimento-211",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Forrest Gump\", em milhões de dólares?",
       "answer": 678,
@@ -1479,6 +1690,7 @@
       "fact": "Foi o maior sucesso de 1994 nos EUA."
     },
     {
+      "id": "chute-entretenimento-212",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Tubarão\", em milhões de dólares?",
       "answer": 476,
@@ -1486,6 +1698,7 @@
       "fact": "O filme criou o conceito de blockbuster."
     },
     {
+      "id": "chute-entretenimento-213",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Star Wars\" de 1977, em milhões de dólares, com relançamentos?",
       "answer": 775,
@@ -1493,6 +1706,7 @@
       "fact": "Ele superou Tubarão, na bilheteria, naquela época."
     },
     {
+      "id": "chute-entretenimento-214",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"O Poderoso Chefão\", em milhões de dólares?",
       "answer": 250,
@@ -1500,6 +1714,7 @@
       "fact": "Marlon Brando recusou o Oscar pelo papel."
     },
     {
+      "id": "chute-entretenimento-215",
       "difficulty": "medium",
       "text": "Quanto custou \"Parasita\", em milhões de dólares?",
       "answer": 11,
@@ -1507,6 +1722,7 @@
       "fact": "Arrecadou mais de 250 milhões em todo o mundo."
     },
     {
+      "id": "chute-entretenimento-216",
       "difficulty": "medium",
       "text": "Quanto custou \"Coringa\", de 2019, em milhões de dólares?",
       "answer": 55,
@@ -1514,6 +1730,7 @@
       "fact": "Foi um ótimo retorno para a Warner."
     },
     {
+      "id": "chute-entretenimento-217",
       "difficulty": "medium",
       "text": "Quanto custou \"Ainda Estou Aqui\", em milhões de reais, aproximadamente?",
       "answer": 45,
@@ -1521,6 +1738,7 @@
       "fact": "O filme arrecadou muito mais fora do Brasil."
     },
     {
+      "id": "chute-entretenimento-218",
       "difficulty": "medium",
       "text": "Quanto ganhou o vencedor do primeiro \"Big Brother Brasil\", em reais?",
       "answer": 500000,
@@ -1528,6 +1746,7 @@
       "fact": "Kleber Bambam venceu em 2002."
     },
     {
+      "id": "chute-entretenimento-219",
       "difficulty": "medium",
       "text": "Quanto ganhou Davi Brito no Big Brother Brasil de 2024, em milhões de reais?",
       "answer": 2.92,
@@ -1535,6 +1754,7 @@
       "fact": "Foi o maior prêmio do programa até então."
     },
     {
+      "id": "chute-entretenimento-220",
       "difficulty": "medium",
       "text": "Quantos anos Daniel Radcliffe tinha ao começar \"Harry Potter\"?",
       "answer": 11,
@@ -1542,6 +1762,7 @@
       "fact": "Ele tinha 21 anos no último filme."
     },
     {
+      "id": "chute-entretenimento-221",
       "difficulty": "medium",
       "text": "Quantos kg Tom Hanks perdeu para o filme \"Náufrago\", aproximadamente?",
       "answer": 25,
@@ -1549,6 +1770,7 @@
       "fact": "A filmagem parou um ano por causa disso."
     },
     {
+      "id": "chute-entretenimento-222",
       "difficulty": "medium",
       "text": "Quantos kg Christian Bale perdeu para \"O Operário\"?",
       "answer": 28,
@@ -1556,6 +1778,7 @@
       "fact": "Ele foi a cerca de 55 kg."
     },
     {
+      "id": "chute-entretenimento-223",
       "difficulty": "medium",
       "text": "Quantos kg Christian Bale ganhou para \"Trapaça\"?",
       "answer": 20,
@@ -1563,6 +1786,7 @@
       "fact": "Ele já foi muito magro e muito forte, em filmes seguidos."
     },
     {
+      "id": "chute-entretenimento-224",
       "difficulty": "medium",
       "text": "Quantos kg Joaquin Phoenix perdeu para \"Coringa\"?",
       "answer": 23,
@@ -1570,6 +1794,7 @@
       "fact": "Ele ganhou o Oscar pelo papel."
     },
     {
+      "id": "chute-entretenimento-225",
       "difficulty": "medium",
       "text": "Quantos kg Matthew McConaughey perdeu para \"Clube de Compras Dallas\"?",
       "answer": 21,
@@ -1577,6 +1802,7 @@
       "fact": "Ele ganhou o Oscar em 2014."
     },
     {
+      "id": "chute-entretenimento-226",
       "difficulty": "medium",
       "text": "Quantos kg Robert De Niro ganhou para \"Touro Indomável\"?",
       "answer": 27,
@@ -1584,6 +1810,7 @@
       "fact": "A produção parou para ele engordar."
     },
     {
+      "id": "chute-entretenimento-227",
       "difficulty": "medium",
       "text": "Quantos minutos de cena Anthony Hopkins teve em \"O Silêncio dos Inocentes\"?",
       "answer": 16,
@@ -1591,6 +1818,7 @@
       "fact": "Mesmo assim, ganhou o Oscar de Melhor Ator."
     },
     {
+      "id": "chute-entretenimento-228",
       "difficulty": "medium",
       "text": "Quantos minutos de cena Judi Dench teve em \"Shakespeare Apaixonada\"?",
       "answer": 8,
@@ -1598,6 +1826,7 @@
       "fact": "Mesmo assim, ganhou o Oscar."
     },
     {
+      "id": "chute-entretenimento-229",
       "difficulty": "medium",
       "text": "Quantos filmes Alfred Hitchcock dirigiu, aproximadamente?",
       "answer": 53,
@@ -1605,6 +1834,7 @@
       "fact": "Ele nunca ganhou um Oscar de direção."
     },
     {
+      "id": "chute-entretenimento-230",
       "difficulty": "medium",
       "text": "Quantos filmes Steven Spielberg dirigiu, até 2022, aproximadamente?",
       "answer": 34,
@@ -1612,6 +1842,7 @@
       "fact": "Ele ganhou três Oscars."
     },
     {
+      "id": "chute-entretenimento-231",
       "difficulty": "medium",
       "text": "Quantos filmes Quentin Tarantino dirigiu, até 2019?",
       "answer": 9,
@@ -1619,6 +1850,7 @@
       "fact": "Ele diz que só fará 10 longas."
     },
     {
+      "id": "chute-entretenimento-232",
       "difficulty": "medium",
       "text": "Quantos filmes Christopher Nolan dirigiu até 2023?",
       "answer": 12,
@@ -1626,6 +1858,7 @@
       "fact": "Ele não usa celular nem e-mail."
     },
     {
+      "id": "chute-entretenimento-233",
       "difficulty": "medium",
       "text": "Quantos Oscars Steven Spielberg ganhou como diretor?",
       "answer": 2,
@@ -1633,6 +1866,7 @@
       "fact": "Por \"A Lista de Schindler\" e \"O Resgate do Soldado Ryan\"."
     },
     {
+      "id": "chute-entretenimento-234",
       "difficulty": "medium",
       "text": "Quantos Oscars James Cameron ganhou com \"Titanic\"?",
       "answer": 3,
@@ -1640,6 +1874,7 @@
       "fact": "Melhor Filme, Direção e Montagem."
     },
     {
+      "id": "chute-entretenimento-235",
       "difficulty": "medium",
       "text": "Quantos anos Hayao Miyazaki tinha ao lançar \"O Menino e a Garça\"?",
       "answer": 82,
@@ -1647,6 +1882,7 @@
       "fact": "Ele ganhou o Oscar de animação pelo filme."
     },
     {
+      "id": "chute-entretenimento-236",
       "difficulty": "medium",
       "text": "Quantos fantasmas aparecem em \"Um Conto de Natal\", visitando Scrooge?",
       "answer": 4,
@@ -1654,6 +1890,7 @@
       "fact": "Inclui o antigo sócio, Marley."
     },
     {
+      "id": "chute-entretenimento-237",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Doctor Who\"?",
       "answer": 1963,
@@ -1661,6 +1898,7 @@
       "fact": "Ela é a série de ficção científica mais longa da TV."
     },
     {
+      "id": "chute-entretenimento-238",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Star Trek\"?",
       "answer": 1966,
@@ -1668,6 +1906,7 @@
       "fact": "A série original durou apenas três temporadas."
     },
     {
+      "id": "chute-entretenimento-239",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Twin Peaks\"?",
       "answer": 1990,
@@ -1675,6 +1914,7 @@
       "fact": "David Lynch voltou com novos episódios em 2017."
     },
     {
+      "id": "chute-entretenimento-240",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Arquivo X\"?",
       "answer": 1993,
@@ -1682,6 +1922,7 @@
       "fact": "Mulder e Scully ficaram famosos com a frase \"A verdade está lá fora\"."
     },
     {
+      "id": "chute-entretenimento-241",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Família Soprano\"?",
       "answer": 1999,
@@ -1689,6 +1930,7 @@
       "fact": "A série mudou as produções de TV."
     },
     {
+      "id": "chute-entretenimento-242",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Lost\"?",
       "answer": 2004,
@@ -1696,6 +1938,7 @@
       "fact": "O episódio piloto foi um dos mais caros da época."
     },
     {
+      "id": "chute-entretenimento-243",
       "difficulty": "hard",
       "text": "Em que ano estreou \"The Walking Dead\"?",
       "answer": 2010,
@@ -1703,6 +1946,7 @@
       "fact": "A série durou 11 temporadas."
     },
     {
+      "id": "chute-entretenimento-244",
       "difficulty": "hard",
       "text": "Em que ano estreou \"House of Cards\"?",
       "answer": 2013,
@@ -1710,6 +1954,7 @@
       "fact": "Foi a primeira grande série original da Netflix."
     },
     {
+      "id": "chute-entretenimento-245",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Peaky Blinders\"?",
       "answer": 2013,
@@ -1717,6 +1962,7 @@
       "fact": "O personagem de Cillian Murphy se chama Tommy Shelby."
     },
     {
+      "id": "chute-entretenimento-246",
       "difficulty": "hard",
       "text": "Em que ano estreou \"The Crown\"?",
       "answer": 2016,
@@ -1724,6 +1970,7 @@
       "fact": "A série custou mais de 100 milhões de dólares por temporada."
     },
     {
+      "id": "chute-entretenimento-247",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Chernobyl\", da HBO?",
       "answer": 2019,
@@ -1731,6 +1978,7 @@
       "fact": "Foi aclamada por sua precisão histórica."
     },
     {
+      "id": "chute-entretenimento-248",
       "difficulty": "hard",
       "text": "Em que ano estreou \"The Last of Us\", da HBO?",
       "answer": 2023,
@@ -1738,6 +1986,7 @@
       "fact": "A série é baseada em um videogame de 2013."
     },
     {
+      "id": "chute-entretenimento-249",
       "difficulty": "hard",
       "text": "Em que ano estreou \"Wandinha\"?",
       "answer": 2022,
@@ -1745,6 +1994,7 @@
       "fact": "A dança da personagem virou febre no TikTok."
     },
     {
+      "id": "chute-entretenimento-250",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Um Sonho de Liberdade\"?",
       "answer": 1994,
@@ -1752,6 +2002,7 @@
       "fact": "Não fez muito sucesso no início, mas hoje é um clássico."
     },
     {
+      "id": "chute-entretenimento-251",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Clube da Luta\"?",
       "answer": 1999,
@@ -1759,6 +2010,7 @@
       "fact": "Foi um fracasso nos cinemas, mas virou cult."
     },
     {
+      "id": "chute-entretenimento-252",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Blade Runner\"?",
       "answer": 1982,
@@ -1766,6 +2018,7 @@
       "fact": "A história se passa em uma Los Angeles de 2019."
     },
     {
+      "id": "chute-entretenimento-253",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Alien\"?",
       "answer": 1979,
@@ -1773,6 +2026,7 @@
       "fact": "O slogan é \"No espaço, ninguém pode ouvir você gritar\"."
     },
     {
+      "id": "chute-entretenimento-254",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"2001: Uma Odisseia no Espaço\"?",
       "answer": 1968,
@@ -1780,6 +2034,7 @@
       "fact": "O computador HAL 9000 é o grande vilão."
     },
     {
+      "id": "chute-entretenimento-255",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"O Exorcista\"?",
       "answer": 1973,
@@ -1787,6 +2042,7 @@
       "fact": "Foi indicado ao Oscar de Melhor Filme, algo raro para o terror."
     },
     {
+      "id": "chute-entretenimento-256",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"O Iluminado\"?",
       "answer": 1980,
@@ -1794,6 +2050,7 @@
       "fact": "Stephen King não gostou do filme de Kubrick."
     },
     {
+      "id": "chute-entretenimento-257",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Halloween\", de John Carpenter?",
       "answer": 1978,
@@ -1801,6 +2058,7 @@
       "fact": "A máscara do vilão era de William Shatner, pintada de branco."
     },
     {
+      "id": "chute-entretenimento-258",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"A Hora do Pesadelo\"?",
       "answer": 1984,
@@ -1808,6 +2066,7 @@
       "fact": "Johnny Depp estreou nele."
     },
     {
+      "id": "chute-entretenimento-259",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Pânico\"?",
       "answer": 1996,
@@ -1815,6 +2074,7 @@
       "fact": "Wes Craven renovou o terror."
     },
     {
+      "id": "chute-entretenimento-260",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Corra!\", de Jordan Peele?",
       "answer": 2017,
@@ -1822,6 +2082,7 @@
       "fact": "Ele ganhou o Oscar de Melhor Roteiro."
     },
     {
+      "id": "chute-entretenimento-261",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Nosferatu\", original?",
       "answer": 1922,
@@ -1829,6 +2090,7 @@
       "fact": "O filme quase foi destruído por processo judicial da viúva de Bram Stoker."
     },
     {
+      "id": "chute-entretenimento-262",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Metrópolis\", de Fritz Lang?",
       "answer": 1927,
@@ -1836,6 +2098,7 @@
       "fact": "O robô do filme inspirou o C-3PO."
     },
     {
+      "id": "chute-entretenimento-263",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Viagem à Lua\", de Georges Méliès?",
       "answer": 1902,
@@ -1843,6 +2106,7 @@
       "fact": "A cena da nave no olho da Lua é um marco."
     },
     {
+      "id": "chute-entretenimento-264",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Luzes da Cidade\", de Chaplin?",
       "answer": 1931,
@@ -1850,6 +2114,7 @@
       "fact": "O filme é mudo, mesmo depois do cinema sonoro."
     },
     {
+      "id": "chute-entretenimento-265",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"O Grande Ditador\", de Chaplin?",
       "answer": 1940,
@@ -1857,6 +2122,7 @@
       "fact": "Ele satirizou Hitler, antes de os EUA entrarem na guerra."
     },
     {
+      "id": "chute-entretenimento-266",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Rashomon\", de Akira Kurosawa?",
       "answer": 1950,
@@ -1864,6 +2130,7 @@
       "fact": "Trouxe o cinema japonês para o mundo."
     },
     {
+      "id": "chute-entretenimento-267",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Os Sete Samurais\"?",
       "answer": 1954,
@@ -1871,6 +2138,7 @@
       "fact": "Inspirou \"Sete Homens e um Destino\"."
     },
     {
+      "id": "chute-entretenimento-268",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Ben-Hur\", com Charlton Heston?",
       "answer": 1959,
@@ -1878,6 +2146,7 @@
       "fact": "A corrida de bigas é um marco."
     },
     {
+      "id": "chute-entretenimento-269",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Lawrence da Arábia\"?",
       "answer": 1962,
@@ -1885,6 +2154,7 @@
       "fact": "Foi filmado em boa parte no deserto da Jordânia."
     },
     {
+      "id": "chute-entretenimento-270",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"A Noviça Rebelde\"?",
       "answer": 1965,
@@ -1892,6 +2162,7 @@
       "fact": "Foi muito popular durante décadas."
     },
     {
+      "id": "chute-entretenimento-271",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"O Bebê de Rosemary\"?",
       "answer": 1968,
@@ -1899,6 +2170,7 @@
       "fact": "O prédio do filme é o Dakota, em Nova York."
     },
     {
+      "id": "chute-entretenimento-272",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Apocalypse Now\"?",
       "answer": 1979,
@@ -1906,6 +2178,7 @@
       "fact": "A produção foi um verdadeiro caos."
     },
     {
+      "id": "chute-entretenimento-273",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Scarface\", com Al Pacino?",
       "answer": 1983,
@@ -1913,6 +2186,7 @@
       "fact": "Foi criticado pela violência, mas virou cult."
     },
     {
+      "id": "chute-entretenimento-274",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Ghost, do Outro Lado da Vida\"?",
       "answer": 1990,
@@ -1920,6 +2194,7 @@
       "fact": "A cena do vaso de cerâmica é famosa."
     },
     {
+      "id": "chute-entretenimento-275",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Dança com Lobos\"?",
       "answer": 1990,
@@ -1927,6 +2202,7 @@
       "fact": "Kevin Costner ganhou o Oscar de direção."
     },
     {
+      "id": "chute-entretenimento-276",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"O Rei Leão\" original?",
       "answer": 1994,
@@ -1934,6 +2210,7 @@
       "fact": "Foi o filme de maior bilheteria do ano."
     },
     {
+      "id": "chute-entretenimento-277",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Shrek\" original?",
       "answer": 2001,
@@ -1941,6 +2218,7 @@
       "fact": "Foi o primeiro filme a ganhar o Oscar de Melhor Animação."
     },
     {
+      "id": "chute-entretenimento-278",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Gladiador\" original?",
       "answer": 2000,
@@ -1948,6 +2226,7 @@
       "fact": "Ganhou cinco Oscars."
     },
     {
+      "id": "chute-entretenimento-279",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Piratas do Caribe\" original?",
       "answer": 2003,
@@ -1955,6 +2234,7 @@
       "fact": "O filme é baseado em uma atração da Disney."
     },
     {
+      "id": "chute-entretenimento-280",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Tropa de Elite\" no cinema?",
       "answer": 2007,
@@ -1962,6 +2242,7 @@
       "fact": "Uma versão vazou na internet antes da estreia."
     },
     {
+      "id": "chute-entretenimento-281",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Bacurau\"?",
       "answer": 2019,
@@ -1969,6 +2250,7 @@
       "fact": "Ganhou o Prêmio do Júri em Cannes."
     },
     {
+      "id": "chute-entretenimento-282",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"O Pagador de Promessas\"?",
       "answer": 1962,
@@ -1976,6 +2258,7 @@
       "fact": "É o único filme brasileiro a ganhar a Palma de Ouro."
     },
     {
+      "id": "chute-entretenimento-283",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Pixote\"?",
       "answer": 1980,
@@ -1983,6 +2266,7 @@
       "fact": "Foi dirigido por Hector Babenco."
     },
     {
+      "id": "chute-entretenimento-284",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Carandiru\", no cinema?",
       "answer": 2003,
@@ -1990,6 +2274,7 @@
       "fact": "Foi baseado em um livro de Drauzio Varella."
     },
     {
+      "id": "chute-entretenimento-285",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"2 Filhos de Francisco\"?",
       "answer": 2005,
@@ -1997,6 +2282,7 @@
       "fact": "Conta a história da dupla Zezé Di Camargo & Luciano."
     },
     {
+      "id": "chute-entretenimento-286",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Se Eu Fosse Você\"?",
       "answer": 2006,
@@ -2004,6 +2290,7 @@
       "fact": "O sucesso gerou uma continuação."
     },
     {
+      "id": "chute-entretenimento-287",
       "difficulty": "medium",
       "text": "Quantos atores interpretaram o Homem-Aranha em filmes, até 2021?",
       "answer": 3,
@@ -2011,6 +2298,7 @@
       "fact": "Tobey Maguire, Andrew Garfield e Tom Holland."
     },
     {
+      "id": "chute-entretenimento-288",
       "difficulty": "medium",
       "text": "Quantos atores interpretaram o Batman em filmes principais, até 2022?",
       "answer": 7,
@@ -2018,6 +2306,7 @@
       "fact": "Adam West foi o primeiro no cinema."
     },
     {
+      "id": "chute-entretenimento-289",
       "difficulty": "medium",
       "text": "Quantos atores interpretaram o Coringa em filmes, até 2019?",
       "answer": 4,
@@ -2025,6 +2314,7 @@
       "fact": "Jack Nicholson, Heath Ledger, Jared Leto e Joaquin Phoenix."
     },
     {
+      "id": "chute-entretenimento-290",
       "difficulty": "medium",
       "text": "Quantas vezes Heath Ledger foi indicado ao Oscar?",
       "answer": 2,
@@ -2032,6 +2322,7 @@
       "fact": "Ele ganhou uma estatueta depois de morto."
     },
     {
+      "id": "chute-entretenimento-291",
       "difficulty": "medium",
       "text": "Quantos anos Robert Downey Jr. tinha quando fez o primeiro \"Homem de Ferro\"?",
       "answer": 43,
@@ -2039,6 +2330,7 @@
       "fact": "Ele vinha de problemas com drogas e prisão."
     },
     {
+      "id": "chute-entretenimento-292",
       "difficulty": "medium",
       "text": "Quantos anos Harrison Ford tinha quando fez o último \"Indiana Jones\"?",
       "answer": 80,
@@ -2046,6 +2338,7 @@
       "fact": "A primeira aventura é de 1981."
     },
     {
+      "id": "chute-entretenimento-293",
       "difficulty": "medium",
       "text": "Quantos filmes tem a saga \"Indiana Jones\"?",
       "answer": 5,
@@ -2053,6 +2346,7 @@
       "fact": "O último saiu em 2023."
     },
     {
+      "id": "chute-entretenimento-294",
       "difficulty": "medium",
       "text": "Quantos filmes tem a franquia \"O Exterminador do Futuro\"?",
       "answer": 6,
@@ -2060,6 +2354,7 @@
       "fact": "O primeiro é de 1984."
     },
     {
+      "id": "chute-entretenimento-295",
       "difficulty": "medium",
       "text": "Quantos filmes tem a franquia \"Alien\", até 2024, em linha principal?",
       "answer": 7,
@@ -2067,6 +2362,7 @@
       "fact": "Sem contar as lutas contra o Predador."
     },
     {
+      "id": "chute-entretenimento-296",
       "difficulty": "medium",
       "text": "Quantos filmes tem \"Rocky\", sem contar \"Creed\"?",
       "answer": 6,
@@ -2074,6 +2370,7 @@
       "fact": "O sexto é de 2006."
     },
     {
+      "id": "chute-entretenimento-297",
       "difficulty": "medium",
       "text": "Quantos filmes tem \"Rambo\"?",
       "answer": 5,
@@ -2081,6 +2378,7 @@
       "fact": "O último é de 2019."
     },
     {
+      "id": "chute-entretenimento-298",
       "difficulty": "medium",
       "text": "Quantos filmes \"De Volta para o Futuro\" tem?",
       "answer": 3,
@@ -2088,6 +2386,7 @@
       "fact": "O último saiu em 1990."
     },
     {
+      "id": "chute-entretenimento-299",
       "difficulty": "medium",
       "text": "Quantos filmes tem a saga \"Matrix\"?",
       "answer": 4,
@@ -2095,6 +2394,7 @@
       "fact": "O último é de 2021."
     },
     {
+      "id": "chute-entretenimento-300",
       "difficulty": "medium",
       "text": "Quantos filmes \"Jurassic Park\" tem, até \"Jurassic World: Domínio\"?",
       "answer": 6,
@@ -2102,6 +2402,7 @@
       "fact": "O sétimo saiu em 2025."
     },
     {
+      "id": "chute-entretenimento-301",
       "difficulty": "medium",
       "text": "Quantos filmes \"Piratas do Caribe\" tem até 2017?",
       "answer": 5,
@@ -2109,6 +2410,7 @@
       "fact": "Johnny Depp esteve em todos."
     },
     {
+      "id": "chute-entretenimento-302",
       "difficulty": "medium",
       "text": "Quantos filmes tem a saga \"Jogos Vorazes\", até 2023?",
       "answer": 5,
@@ -2116,6 +2418,7 @@
       "fact": "Em 2023 saiu um prequel."
     },
     {
+      "id": "chute-entretenimento-303",
       "difficulty": "medium",
       "text": "Quantos filmes Daniel Radcliffe fez em Harry Potter?",
       "answer": 8,
@@ -2123,6 +2426,7 @@
       "fact": "Ele trabalhou no mesmo papel por dez anos."
     },
     {
+      "id": "chute-entretenimento-304",
       "difficulty": "medium",
       "text": "Quantos irmãos Rony Weasley tem?",
       "answer": 6,
@@ -2130,6 +2434,7 @@
       "fact": "Ele é o sexto filho da família."
     },
     {
+      "id": "chute-entretenimento-305",
       "difficulty": "medium",
       "text": "Quantas casas tem Hogwarts?",
       "answer": 4,
@@ -2137,6 +2442,7 @@
       "fact": "Grifinória, Sonserina, Corvinal e Lufa-Lufa."
     },
     {
+      "id": "chute-entretenimento-306",
       "difficulty": "medium",
       "text": "Quantos livros tem a saga \"As Crônicas de Nárnia\"?",
       "answer": 7,
@@ -2144,6 +2450,7 @@
       "fact": "O primeiro saiu em 1950."
     },
     {
+      "id": "chute-entretenimento-307",
       "difficulty": "medium",
       "text": "Quantos livros tem a saga \"O Senhor dos Anéis\", em volumes?",
       "answer": 3,
@@ -2151,6 +2458,7 @@
       "fact": "O autor o considerava um único livro."
     },
     {
+      "id": "chute-entretenimento-308",
       "difficulty": "medium",
       "text": "Quantas irmãs tem a Ariel, de A Pequena Sereia?",
       "answer": 6,
@@ -2158,6 +2466,7 @@
       "fact": "Ela é a mais nova das sete."
     },
     {
+      "id": "chute-entretenimento-309",
       "difficulty": "hard",
       "text": "Quantos balões levam a casa de Carl em \"Up\"?",
       "answer": 20000,
@@ -2165,6 +2474,7 @@
       "fact": "A equipe calculou cerca de 10 mil para a maioria das cenas."
     },
     {
+      "id": "chute-entretenimento-310",
       "difficulty": "hard",
       "text": "Quantos pelos tem o Sulley, em \"Monstros S.A.\", aproximadamente?",
       "answer": 2300000,
@@ -2172,6 +2482,7 @@
       "fact": "Foi um grande desafio da animação na época."
     },
     {
+      "id": "chute-entretenimento-311",
       "difficulty": "hard",
       "text": "Quantos dálmatas aparecem no filme clássico?",
       "answer": 101,
@@ -2179,6 +2490,7 @@
       "fact": "A produção usou cópias por xerox nos desenhos."
     },
     {
+      "id": "chute-entretenimento-312",
       "difficulty": "hard",
       "text": "Quantas manchas tem Pongo, no filme \"101 Dálmatas\"?",
       "answer": 72,
@@ -2186,6 +2498,7 @@
       "fact": "Os animadores contaram uma por uma."
     },
     {
+      "id": "chute-entretenimento-313",
       "difficulty": "hard",
       "text": "Quantas horas levava para renderizar um quadro de \"Toy Story\", no máximo?",
       "answer": 15,
@@ -2193,6 +2506,7 @@
       "fact": "Hoje, os computadores fazem muito mais em segundos."
     },
     {
+      "id": "chute-entretenimento-314",
       "difficulty": "hard",
       "text": "Quantos desenhos foram feitos para \"Branca de Neve\", aproximadamente?",
       "answer": 2000000,
@@ -2200,6 +2514,7 @@
       "fact": "Na época, Hollywood chamou o projeto de \"A loucura de Disney\"."
     },
     {
+      "id": "chute-entretenimento-315",
       "difficulty": "hard",
       "text": "Quantos milhões de dólares custou \"O Mágico de Oz\", aproximadamente?",
       "answer": 2.8,
@@ -2207,6 +2522,7 @@
       "fact": "Só deu lucro quando foi relançado."
     },
     {
+      "id": "chute-entretenimento-316",
       "difficulty": "hard",
       "text": "Quanto custou \"E o Vento Levou\", em milhões de dólares?",
       "answer": 3.9,
@@ -2214,6 +2530,7 @@
       "fact": "Foi o filme mais caro da época."
     },
     {
+      "id": "chute-entretenimento-317",
       "difficulty": "hard",
       "text": "Quanto arrecadou \"E o Vento Levou\", em dólares corrigidos pela inflação, em bilhões?",
       "answer": 3.4,
@@ -2221,6 +2538,7 @@
       "fact": "Essa é a maior bilheteria real da história."
     },
     {
+      "id": "chute-entretenimento-318",
       "difficulty": "hard",
       "text": "Quanto custou \"Cleópatra\", com Elizabeth Taylor, em milhões de dólares?",
       "answer": 44,
@@ -2228,6 +2546,7 @@
       "fact": "Quase levou a Fox à falência."
     },
     {
+      "id": "chute-entretenimento-319",
       "difficulty": "hard",
       "text": "Quanto Elizabeth Taylor recebeu em \"Cleópatra\", em milhões de dólares?",
       "answer": 1,
@@ -2235,6 +2554,7 @@
       "fact": "Foi a primeira atriz a ganhar esse valor em um filme."
     },
     {
+      "id": "chute-entretenimento-320",
       "difficulty": "hard",
       "text": "Quanto Jack Nicholson recebeu por \"Batman\", de 1989, em milhões de dólares, aproximadamente?",
       "answer": 60,
@@ -2242,6 +2562,7 @@
       "fact": "Ele negociou uma parte da bilheteria."
     },
     {
+      "id": "chute-entretenimento-321",
       "difficulty": "hard",
       "text": "Quanto Harrison Ford recebeu pelo primeiro \"Star Wars\", em dólares?",
       "answer": 10000,
@@ -2249,6 +2570,7 @@
       "fact": "Ele trabalhava como carpinteiro antes de ser ator."
     },
     {
+      "id": "chute-entretenimento-322",
       "difficulty": "hard",
       "text": "Quanto David Prowse media, o ator que usou o traje de Darth Vader, em metros?",
       "answer": 1.98,
@@ -2256,6 +2578,7 @@
       "fact": "A voz dele foi trocada por causa do sotaque."
     },
     {
+      "id": "chute-entretenimento-323",
       "difficulty": "hard",
       "text": "Em que ano Marlon Brando recusou o Oscar?",
       "answer": 1973,
@@ -2263,6 +2586,7 @@
       "fact": "Uma indígena subiu ao palco para explicar."
     },
     {
+      "id": "chute-entretenimento-324",
       "difficulty": "hard",
       "text": "Em que ano Halle Berry ganhou o Oscar?",
       "answer": 2002,
@@ -2270,6 +2594,7 @@
       "fact": "Ela foi a primeira mulher negra a vencer como Melhor Atriz."
     },
     {
+      "id": "chute-entretenimento-325",
       "difficulty": "hard",
       "text": "Em que ano Hattie McDaniel ganhou o Oscar por \"E o Vento Levou\"?",
       "answer": 1940,
@@ -2277,6 +2602,7 @@
       "fact": "Ela foi a primeira pessoa negra a ganhar o prêmio."
     },
     {
+      "id": "chute-entretenimento-326",
       "difficulty": "hard",
       "text": "Em que ano Kathryn Bigelow ganhou o Oscar de Direção?",
       "answer": 2010,
@@ -2284,6 +2610,7 @@
       "fact": "Ela foi a primeira mulher a ganhar nessa categoria."
     },
     {
+      "id": "chute-entretenimento-327",
       "difficulty": "hard",
       "text": "Em que ano Michelle Yeoh ganhou o Oscar?",
       "answer": 2023,
@@ -2291,6 +2618,7 @@
       "fact": "Ela é a primeira asiática a vencer como Melhor Atriz."
     },
     {
+      "id": "chute-entretenimento-328",
       "difficulty": "hard",
       "text": "Em que ano foi o tapa de Will Smith no Oscar?",
       "answer": 2022,
@@ -2298,6 +2626,7 @@
       "fact": "Ele foi banido da festa por dez anos."
     },
     {
+      "id": "chute-entretenimento-329",
       "difficulty": "hard",
       "text": "Em que ano foi a confusão de \"La La Land\" e \"Moonlight\" no Oscar?",
       "answer": 2017,
@@ -2305,6 +2634,7 @@
       "fact": "O envelope errado causou o erro."
     },
     {
+      "id": "chute-entretenimento-330",
       "difficulty": "hard",
       "text": "Em que ano Fernanda Torres ganhou o Globo de Ouro?",
       "answer": 2025,
@@ -2312,6 +2642,7 @@
       "fact": "Ela venceu Angelina Jolie e Nicole Kidman."
     },
     {
+      "id": "chute-entretenimento-331",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Festival de Cannes?",
       "answer": 1946,
@@ -2319,6 +2650,7 @@
       "fact": "Ele foi planejado em 1939, mas a guerra o adiou."
     },
     {
+      "id": "chute-entretenimento-332",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Festival de Veneza?",
       "answer": 1932,
@@ -2326,6 +2658,7 @@
       "fact": "É o festival de cinema mais antigo do mundo."
     },
     {
+      "id": "chute-entretenimento-333",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Festival de Berlim?",
       "answer": 1951,
@@ -2333,6 +2666,7 @@
       "fact": "O prêmio principal se chama Urso de Ouro."
     },
     {
+      "id": "chute-entretenimento-334",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Emmy?",
       "answer": 1949,
@@ -2340,6 +2674,7 @@
       "fact": "É o principal prêmio da TV americana."
     },
     {
+      "id": "chute-entretenimento-335",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Globo de Ouro?",
       "answer": 1944,
@@ -2347,6 +2682,7 @@
       "fact": "É dado por jornalistas estrangeiros."
     },
     {
+      "id": "chute-entretenimento-336",
       "difficulty": "hard",
       "text": "Em que ano foi criado o BAFTA?",
       "answer": 1947,
@@ -2354,6 +2690,7 @@
       "fact": "É o principal prêmio do cinema britânico."
     },
     {
+      "id": "chute-entretenimento-337",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Prêmio Multishow?",
       "answer": 1994,
@@ -2361,6 +2698,7 @@
       "fact": "É um dos maiores prêmios musicais do Brasil."
     },
     {
+      "id": "chute-entretenimento-338",
       "difficulty": "hard",
       "text": "Em que ano a Netflix começou a oferecer streaming?",
       "answer": 2007,
@@ -2368,6 +2706,7 @@
       "fact": "Antes, a empresa enviava DVDs pelo correio."
     },
     {
+      "id": "chute-entretenimento-339",
       "difficulty": "hard",
       "text": "Em que ano a Disney+ foi lançada?",
       "answer": 2019,
@@ -2375,6 +2714,7 @@
       "fact": "A plataforma conseguiu 10 milhões de assinantes no primeiro dia."
     },
     {
+      "id": "chute-entretenimento-340",
       "difficulty": "medium",
       "text": "Quantos anos tem o programa \"Vídeo Show\" de existência, até 2019?",
       "answer": 36,
@@ -2382,6 +2722,7 @@
       "fact": "Foi um dos programas mais longos da Globo."
     },
     {
+      "id": "chute-entretenimento-341",
       "difficulty": "medium",
       "text": "Quantos anos durou o \"Programa do Jô\", na Globo?",
       "answer": 16,
@@ -2389,6 +2730,7 @@
       "fact": "Ele estreou em 2000."
     },
     {
+      "id": "chute-entretenimento-342",
       "difficulty": "medium",
       "text": "Quantos anos Silvio Santos apresentou programa de TV, aproximadamente?",
       "answer": 60,
@@ -2396,6 +2738,7 @@
       "fact": "Ele parou em 2022."
     },
     {
+      "id": "chute-entretenimento-343",
       "difficulty": "medium",
       "text": "Quantos anos Hebe Camargo trabalhou na TV, aproximadamente?",
       "answer": 60,
@@ -2403,6 +2746,7 @@
       "fact": "Ela estreou nos primeiros dias da TV no Brasil."
     },
     {
+      "id": "chute-entretenimento-344",
       "difficulty": "medium",
       "text": "Quantos episódios teve \"Chaves\", aproximadamente?",
       "answer": 290,
@@ -2410,6 +2754,7 @@
       "fact": "A série tem um grande número de reprises."
     },
     {
+      "id": "chute-entretenimento-345",
       "difficulty": "medium",
       "text": "Quantos episódios teve \"Castelo Rá-Tim-Bum\"?",
       "answer": 90,
@@ -2417,6 +2762,7 @@
       "fact": "Fez muito sucesso em sua estreia em 1994."
     },
     {
+      "id": "chute-entretenimento-346",
       "difficulty": "medium",
       "text": "Quantos episódios teve \"Dexter\" na série original?",
       "answer": 96,
@@ -2424,6 +2770,7 @@
       "fact": "O final da série foi muito criticado."
     },
     {
+      "id": "chute-entretenimento-347",
       "difficulty": "hard",
       "text": "Quantos episódios teve \"The Wire\"?",
       "answer": 60,
@@ -2431,6 +2778,7 @@
       "fact": "A série tem cinco temporadas."
     },
     {
+      "id": "chute-entretenimento-348",
       "difficulty": "hard",
       "text": "Quantos episódios teve \"Lost\"?",
       "answer": 121,
@@ -2438,6 +2786,7 @@
       "fact": "O final da série virou motivo de discussão."
     },
     {
+      "id": "chute-entretenimento-349",
       "difficulty": "hard",
       "text": "Quantos episódios teve \"Sopranos\"?",
       "answer": 86,
@@ -2445,6 +2794,7 @@
       "fact": "O último tem uma tela preta muito famosa."
     },
     {
+      "id": "chute-entretenimento-350",
       "difficulty": "hard",
       "text": "Quantos episódios teve \"Seinfeld\"?",
       "answer": 180,
@@ -2452,6 +2802,7 @@
       "fact": "O próprio ator desistiu de uma fortuna para encerrar a série."
     },
     {
+      "id": "chute-entretenimento-351",
       "difficulty": "hard",
       "text": "Quantos episódios teve \"Arquivo X\", na série principal?",
       "answer": 218,
@@ -2459,6 +2810,7 @@
       "fact": "A série voltou em 2016."
     },
     {
+      "id": "chute-entretenimento-352",
       "difficulty": "hard",
       "text": "Quantos episódios teve \"Doctor Who\", aproximadamente, até 2023?",
       "answer": 870,
@@ -2466,6 +2818,7 @@
       "fact": "A série tem capítulos perdidos da década de 1960."
     },
     {
+      "id": "chute-entretenimento-353",
       "difficulty": "hard",
       "text": "Quanto Jerry Seinfeld recebeu em oferta para a última temporada, em milhões de dólares?",
       "answer": 110,
@@ -2473,6 +2826,7 @@
       "fact": "Ele recusou para encerrar a série em alta."
     },
     {
+      "id": "chute-entretenimento-354",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"Duna: Parte 2\"?",
       "answer": 166,
@@ -2480,6 +2834,7 @@
       "fact": "Foi filmado em boa parte na Jordânia e nos Emirados."
     },
     {
+      "id": "chute-entretenimento-355",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"Pulp Fiction\"?",
       "answer": 154,
@@ -2487,6 +2842,7 @@
       "fact": "A história é contada fora da ordem."
     },
     {
+      "id": "chute-entretenimento-356",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"Ben-Hur\", de 1959?",
       "answer": 212,
@@ -2494,6 +2850,7 @@
       "fact": "A corrida de bigas levou cinco semanas para ser filmada."
     },
     {
+      "id": "chute-entretenimento-357",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"Lawrence da Arábia\"?",
       "answer": 222,
@@ -2501,6 +2858,7 @@
       "fact": "Ganhou sete Oscars."
     },
     {
+      "id": "chute-entretenimento-358",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"O Retorno do Rei\", versão estendida?",
       "answer": 263,
@@ -2508,6 +2866,7 @@
       "fact": "Foi um grande sucesso para os fãs."
     },
     {
+      "id": "chute-entretenimento-359",
       "difficulty": "hard",
       "text": "Quantos minutos dura o filme \"Sátántangó\", de Béla Tarr?",
       "answer": 439,
@@ -2515,6 +2874,7 @@
       "fact": "É um dos filmes de arte mais longos."
     },
     {
+      "id": "chute-entretenimento-360",
       "difficulty": "hard",
       "text": "Quantas horas dura a primeira gravação de \"Empire\", de Warhol?",
       "answer": 8,
@@ -2522,6 +2882,7 @@
       "fact": "O filme é uma câmera parada no Empire State."
     },
     {
+      "id": "chute-entretenimento-361",
       "difficulty": "hard",
       "text": "Quantas vezes James Cameron mergulhou até os destroços do Titanic?",
       "answer": 33,
@@ -2529,6 +2890,7 @@
       "fact": "Ele já passou mais tempo no navio do que o capitão."
     },
     {
+      "id": "chute-entretenimento-362",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Titanic\" e \"Avatar\", ambos de James Cameron?",
       "answer": 12,
@@ -2536,6 +2898,7 @@
       "fact": "Foram os dois maiores filmes de suas épocas."
     },
     {
+      "id": "chute-entretenimento-363",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Avatar\" e \"Avatar: O Caminho da Água\"?",
       "answer": 13,
@@ -2543,6 +2906,7 @@
       "fact": "Ele esperou a tecnologia avançar."
     },
     {
+      "id": "chute-entretenimento-364",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Top Gun\" e \"Top Gun: Maverick\"?",
       "answer": 36,
@@ -2550,6 +2914,7 @@
       "fact": "A sequência arrecadou mais de 1,4 bilhão de dólares."
     },
     {
+      "id": "chute-entretenimento-365",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Blade Runner\" e \"Blade Runner 2049\"?",
       "answer": 35,
@@ -2557,6 +2922,7 @@
       "fact": "Harrison Ford voltou ao personagem."
     },
     {
+      "id": "chute-entretenimento-366",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Tron\" e \"Tron: O Legado\"?",
       "answer": 28,
@@ -2564,6 +2930,7 @@
       "fact": "Jeff Bridges voltou ao personagem."
     },
     {
+      "id": "chute-entretenimento-367",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Mary Poppins\" e \"O Retorno de Mary Poppins\"?",
       "answer": 54,
@@ -2571,6 +2938,7 @@
       "fact": "É uma das maiores distâncias entre filmes de Hollywood."
     },
     {
+      "id": "chute-entretenimento-368",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre \"Fantasia\" e \"Fantasia 2000\"?",
       "answer": 59,
@@ -2578,6 +2946,7 @@
       "fact": "Foi um projeto antigo de Walt Disney."
     },
     {
+      "id": "chute-entretenimento-369",
       "difficulty": "hard",
       "text": "Quantos anos passaram entre o \"Auto da Compadecida\" e a sequência?",
       "answer": 24,
@@ -2585,6 +2954,7 @@
       "fact": "Matheus Nachtergaele e Selton Mello voltaram aos papéis."
     },
     {
+      "id": "chute-entretenimento-370",
       "difficulty": "hard",
       "text": "Quantas vezes \"Um Conto de Natal\" foi adaptado, aproximadamente?",
       "answer": 100,
@@ -2592,6 +2962,7 @@
       "fact": "Até os Muppets fizeram sua versão."
     },
     {
+      "id": "chute-entretenimento-371",
       "difficulty": "hard",
       "text": "Quantas vezes Drácula apareceu no cinema, aproximadamente?",
       "answer": 200,
@@ -2599,6 +2970,7 @@
       "fact": "É um dos personagens mais usados."
     },
     {
+      "id": "chute-entretenimento-372",
       "difficulty": "hard",
       "text": "Quantas vezes Sherlock Holmes apareceu em filmes, aproximadamente?",
       "answer": 250,
@@ -2606,6 +2978,7 @@
       "fact": "Ele é um dos personagens mais retratados no cinema."
     },
     {
+      "id": "chute-entretenimento-373",
       "difficulty": "medium",
       "text": "Quantos personagens Chico Anysio criou, aproximadamente?",
       "answer": 209,
@@ -2613,6 +2986,7 @@
       "fact": "Ele morreu em 2012."
     },
     {
+      "id": "chute-entretenimento-374",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"A Forma da Água\"?",
       "answer": 4,
@@ -2620,6 +2994,7 @@
       "fact": "Guillermo del Toro é o diretor."
     },
     {
+      "id": "chute-entretenimento-375",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"La La Land\"?",
       "answer": 6,
@@ -2627,6 +3002,7 @@
       "fact": "Por poucos instantes, parecia que tinha ganhado o principal."
     },
     {
+      "id": "chute-entretenimento-376",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"Ben-Hur\", de 1959?",
       "answer": 11,
@@ -2634,6 +3010,7 @@
       "fact": "Foi o primeiro filme a chegar a esse número."
     },
     {
+      "id": "chute-entretenimento-377",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"Forrest Gump\"?",
       "answer": 6,
@@ -2641,6 +3018,7 @@
       "fact": "Um deles foi o de Melhor Filme."
     },
     {
+      "id": "chute-entretenimento-378",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"Gladiador\"?",
       "answer": 5,
@@ -2648,6 +3026,7 @@
       "fact": "Um deles foi o de Melhor Filme."
     },
     {
+      "id": "chute-entretenimento-379",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"O Silêncio dos Inocentes\"?",
       "answer": 5,
@@ -2655,6 +3034,7 @@
       "fact": "Ele venceu as cinco categorias principais."
     },
     {
+      "id": "chute-entretenimento-380",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"A Lista de Schindler\"?",
       "answer": 7,
@@ -2662,6 +3042,7 @@
       "fact": "Foi filmado quase todo em preto e branco."
     },
     {
+      "id": "chute-entretenimento-381",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"West Side Story\", de 1961?",
       "answer": 10,
@@ -2669,6 +3050,7 @@
       "fact": "É o musical mais premiado da história do Oscar."
     },
     {
+      "id": "chute-entretenimento-382",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"Lawrence da Arábia\"?",
       "answer": 7,
@@ -2676,6 +3058,7 @@
       "fact": "Peter O'Toole foi indicado, mas não ganhou."
     },
     {
+      "id": "chute-entretenimento-383",
       "difficulty": "hard",
       "text": "Quantos Oscars ganhou \"Duna\", de 2021?",
       "answer": 6,
@@ -2683,6 +3066,7 @@
       "fact": "A maioria foi em categorias técnicas."
     },
     {
+      "id": "chute-entretenimento-384",
       "difficulty": "easy",
       "text": "Quantos anões acompanham Bilbo em \"O Hobbit\"?",
       "answer": 13,
@@ -2690,6 +3074,7 @@
       "fact": "Gandalf também acompanha o grupo."
     },
     {
+      "id": "chute-entretenimento-385",
       "difficulty": "easy",
       "text": "Quantos irmãos Pevensie vão a Nárnia?",
       "answer": 4,
@@ -2697,6 +3082,7 @@
       "fact": "Eles entram pelo guarda-roupa."
     },
     {
+      "id": "chute-entretenimento-386",
       "difficulty": "easy",
       "text": "Quantos Vingadores originais aparecem no primeiro filme de 2012?",
       "answer": 6,
@@ -2704,6 +3090,7 @@
       "fact": "O filme foi escrito e dirigido por Joss Whedon."
     },
     {
+      "id": "chute-entretenimento-387",
       "difficulty": "easy",
       "text": "Quantas meninas têm \"As Meninas Superpoderosas\"?",
       "answer": 3,
@@ -2711,6 +3098,7 @@
       "fact": "Elas são Florzinha, Lindinha e Docinho."
     },
     {
+      "id": "chute-entretenimento-388",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Avatar\", de 2009, em bilhões de dólares, aproximadamente?",
       "answer": 2.9,
@@ -2718,6 +3106,7 @@
       "fact": "É a maior bilheteria da história."
     },
     {
+      "id": "chute-entretenimento-389",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"Barbie\", de 2023, em bilhões de dólares, aproximadamente?",
       "answer": 1.44,
@@ -2725,6 +3114,7 @@
       "fact": "Greta Gerwig dirigiu o filme."
     },
     {
+      "id": "chute-entretenimento-390",
       "difficulty": "medium",
       "text": "Quantas estatuetas do Oscar ganhou \"O Senhor dos Anéis: O Retorno do Rei\"?",
       "answer": 11,
@@ -2732,6 +3122,7 @@
       "fact": "Ele venceu em todas as categorias que disputou."
     },
     {
+      "id": "chute-entretenimento-391",
       "difficulty": "medium",
       "text": "Quantos Oscars Walt Disney ganhou?",
       "answer": 22,
@@ -2739,6 +3130,7 @@
       "fact": "Ninguém tem mais que ele."
     },
     {
+      "id": "chute-entretenimento-392",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Os Simpsons\", até 2024, aproximadamente?",
       "answer": 790,
@@ -2746,6 +3138,7 @@
       "fact": "A série estreou em 1989."
     },
     {
+      "id": "chute-entretenimento-393",
       "difficulty": "medium",
       "text": "Quantos episódios tem \"Friends\"?",
       "answer": 236,
@@ -2753,6 +3146,7 @@
       "fact": "O último foi visto por 52 milhões nos EUA."
     },
     {
+      "id": "chute-entretenimento-394",
       "difficulty": "hard",
       "text": "Quantas visualizações tem \"Baby Shark\" no YouTube, em bilhões, aproximadamente?",
       "answer": 15,
@@ -2760,6 +3154,7 @@
       "fact": "É o vídeo mais visto da história."
     },
     {
+      "id": "chute-entretenimento-395",
       "difficulty": "hard",
       "text": "Quantos capítulos tem \"Avenida Brasil\"?",
       "answer": 179,
@@ -2767,6 +3162,7 @@
       "fact": "O final parou o país em 2012."
     },
     {
+      "id": "chute-entretenimento-396",
       "difficulty": "hard",
       "text": "Quantos anos Fernanda Montenegro tinha quando foi indicada ao Oscar?",
       "answer": 69,
@@ -2774,6 +3170,7 @@
       "fact": "A cerimônia foi em 1999."
     },
     {
+      "id": "chute-entretenimento-397",
       "difficulty": "hard",
       "text": "Quantos anos Harrison Ford tinha quando gravou o último \"Indiana Jones\", em 2023?",
       "answer": 80,
@@ -2781,6 +3178,7 @@
       "fact": "Ele voltou ao papel depois de 15 anos."
     },
     {
+      "id": "chute-entretenimento-398",
       "difficulty": "easy",
       "text": "Quantos anos Macaulay Culkin tinha em \"Esqueceram de Mim\", de 1990?",
       "answer": 10,
@@ -2788,6 +3186,7 @@
       "fact": "Ele virou um astro mundial."
     },
     {
+      "id": "chute-entretenimento-399",
       "difficulty": "easy",
       "text": "Quantos hobbits saem do Condado no início de \"O Senhor dos Anéis\"?",
       "answer": 4,
@@ -2795,6 +3194,7 @@
       "fact": "São Frodo, Sam, Merry e Pippin."
     },
     {
+      "id": "chute-entretenimento-400",
       "difficulty": "easy",
       "text": "Quantos integrantes tem o grupo Mamonas Assassinas?",
       "answer": 5,
@@ -2802,6 +3202,7 @@
       "fact": "A banda morreu em um acidente aéreo, em 1996."
     },
     {
+      "id": "chute-entretenimento-401",
       "difficulty": "easy",
       "text": "Quantos Power Rangers havia na formação inicial?",
       "answer": 5,
@@ -2809,6 +3210,7 @@
       "fact": "A série estreou em 1993."
     },
     {
+      "id": "chute-entretenimento-402",
       "difficulty": "easy",
       "text": "Quantas tartarugas ninja existem?",
       "answer": 4,
@@ -2816,6 +3218,7 @@
       "fact": "Os nomes vêm de artistas do Renascimento."
     },
     {
+      "id": "chute-entretenimento-403",
       "difficulty": "medium",
       "text": "Quanto custou \"Avatar\", de 2009, em milhões de dólares, aproximadamente?",
       "answer": 237,
@@ -2823,6 +3226,7 @@
       "fact": "O valor não inclui toda a divulgação."
     },
     {
+      "id": "chute-entretenimento-404",
       "difficulty": "hard",
       "text": "Quantos pontos de audiência teve o último capítulo de \"Avenida Brasil\", em São Paulo?",
       "answer": 51,
@@ -2830,6 +3234,7 @@
       "fact": "Muita gente assistiu em bares e restaurantes."
     },
     {
+      "id": "chute-entretenimento-405",
       "difficulty": "hard",
       "text": "Quantos anos passou Pedro Bial no comando do \"Big Brother Brasil\"?",
       "answer": 16,
@@ -2837,6 +3242,7 @@
       "fact": "Ele apresentou de 2002 a 2016."
     },
     {
+      "id": "chute-entretenimento-406",
       "difficulty": "hard",
       "text": "Quantos anos Silvio Santos ficou na TV, aproximadamente?",
       "answer": 60,
@@ -2844,6 +3250,7 @@
       "fact": "Ele morreu em 2024, aos 93 anos."
     },
     {
+      "id": "chute-entretenimento-407",
       "difficulty": "hard",
       "text": "Quantos anos Hebe Camargo tinha quando morreu?",
       "answer": 83,
@@ -2851,6 +3258,7 @@
       "fact": "Ela ficou conhecida como a rainha da TV brasileira."
     },
     {
+      "id": "chute-entretenimento-408",
       "difficulty": "medium",
       "text": "Quantas vezes o Oscar de melhor filme foi para um filme em língua não inglesa, até \"Parasita\"?",
       "answer": 1,
@@ -2858,6 +3266,7 @@
       "fact": "A vitória foi em 2020."
     },
     {
+      "id": "chute-entretenimento-409",
       "difficulty": "hard",
       "text": "Quantos irmãos Marx trabalharam em filmes juntos, aproximadamente?",
       "answer": 5,
@@ -2865,6 +3274,7 @@
       "fact": "Groucho é o mais famoso."
     },
     {
+      "id": "chute-entretenimento-410",
       "difficulty": "medium",
       "text": "Quantos filmes da Pixar saíram entre \"Toy Story\" e \"Soul\", em 2020, aproximadamente?",
       "answer": 23,
@@ -2872,6 +3282,7 @@
       "fact": "A Disney comprou o estúdio em 2006."
     },
     {
+      "id": "chute-entretenimento-411",
       "difficulty": "medium",
       "text": "Quantos Oscars \"Ben-Hur\" ganhou?",
       "answer": 11,
@@ -2879,6 +3290,7 @@
       "fact": "O filme de 1959 foi o primeiro a alcançar esse número."
     },
     {
+      "id": "chute-entretenimento-412",
       "difficulty": "medium",
       "text": "Quantos Oscars ganhou \"A Viagem de Chihiro\", na categoria de animação?",
       "answer": 1,
@@ -2886,6 +3298,7 @@
       "fact": "Até hoje, é um dos filmes mais queridos do Japão."
     },
     {
+      "id": "chute-entretenimento-413",
       "difficulty": "hard",
       "text": "Quantos minutos dura \"O Poderoso Chefão\", de 1972, aproximadamente?",
       "answer": 175,
@@ -2893,6 +3306,7 @@
       "fact": "A parte dois é ainda mais longa."
     },
     {
+      "id": "chute-entretenimento-414",
       "difficulty": "hard",
       "text": "Quantos anos a TV Globo tinha em 2025, desde a fundação em 1965?",
       "answer": 60,
@@ -2900,6 +3314,7 @@
       "fact": "Roberto Marinho é o fundador."
     },
     {
+      "id": "chute-entretenimento-415",
       "difficulty": "medium",
       "text": "Quantas estatuetas do Oscar levou \"Ainda Estou Aqui\", na cerimônia de 2025?",
       "answer": 1,
@@ -2907,6 +3322,7 @@
       "fact": "Foi o primeiro Oscar de um filme brasileiro."
     },
     {
+      "id": "chute-entretenimento-416",
       "difficulty": "easy",
       "text": "Quantos minutos dura um filme comum, aproximadamente?",
       "answer": 120,
@@ -2914,6 +3330,7 @@
       "fact": "Filmes de super-herói passam muitas vezes das duas horas e meia."
     },
     {
+      "id": "chute-entretenimento-417",
       "difficulty": "easy",
       "text": "Quantos episódios tem uma temporada comum de série de streaming?",
       "answer": 8,
@@ -2921,6 +3338,7 @@
       "fact": "Na TV aberta, as temporadas costumavam ter mais de 20 episódios."
     },
     {
+      "id": "chute-entretenimento-418",
       "difficulty": "easy",
       "text": "Quantos participantes entram no Big Brother Brasil, em geral?",
       "answer": 20,
@@ -2928,6 +3346,7 @@
       "fact": "Parte do elenco vem de famosos e parte de anônimos."
     },
     {
+      "id": "chute-entretenimento-419",
       "difficulty": "easy",
       "text": "Quantos dias dura uma edição do Big Brother Brasil, aproximadamente?",
       "answer": 100,
@@ -2935,6 +3354,7 @@
       "fact": "O programa vai ao ar de janeiro até abril."
     },
     {
+      "id": "chute-entretenimento-420",
       "difficulty": "easy",
       "text": "Quantos filmes tem a saga principal de \"Shrek\", até 2025?",
       "answer": 4,
@@ -2942,6 +3362,7 @@
       "fact": "O Gato de Botas ganhou filmes próprios."
     },
     {
+      "id": "chute-entretenimento-421",
       "difficulty": "easy",
       "text": "Quantos filmes tem a série \"Missão Impossível\", até 2025?",
       "answer": 8,
@@ -2949,6 +3370,7 @@
       "fact": "Tom Cruise faz boa parte das cenas de risco sem dublê."
     },
     {
+      "id": "chute-entretenimento-422",
       "difficulty": "easy",
       "text": "Quantos filmes do Homem-Aranha Tom Holland estrelou como protagonista, até 2021?",
       "answer": 3,
@@ -2956,6 +3378,7 @@
       "fact": "O último deles juntou os três Homens-Aranha do cinema."
     },
     {
+      "id": "chute-entretenimento-423",
       "difficulty": "easy",
       "text": "Quantas temporadas tem a série \"Round 6\"?",
       "answer": 3,

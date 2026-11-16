@@ -177,14 +177,14 @@ class Duel:
 
 
 def load_statements(directory: Path = STATEMENTS_DIR) -> list[DuelQuestion]:
-    """Lê true_false/<tema>.json. O id de cada frase é vf-<arquivo>-<posição>."""
+    """Lê true_false/<tema>.json. Cada frase traz o próprio id (vf-<arquivo>-<número>), que nunca muda."""
     statements = []
     for path in sorted(directory.glob("*.json")):
         data = json.loads(path.read_text())
-        for i, raw in enumerate(data["statements"], start=1):
+        for raw in data["statements"]:
             statements.append(
                 DuelQuestion(
-                    id=f"vf-{path.stem}-{i}",
+                    id=raw["id"],
                     theme=data["theme"],
                     kind="true_false",
                     text=raw["text"],

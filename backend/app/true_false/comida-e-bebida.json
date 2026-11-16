@@ -2,576 +2,672 @@
   "theme": "Comida e bebida",
   "statements": [
     {
+      "id": "vf-comida-e-bebida-1",
       "difficulty": "medium",
       "text": "O guaraná é uma fruta nativa da Amazônia.",
       "answer": true,
       "fact": "Os povos Sateré-Mawé já cultivavam o guaraná muito antes dos refrigerantes. A semente tem bastante cafeína."
     },
     {
+      "id": "vf-comida-e-bebida-2",
       "difficulty": "medium",
       "text": "Para a botânica, o tomate é um legume.",
       "answer": false,
       "fact": "Para a botânica o tomate é um fruto, porque se forma da flor e tem sementes."
     },
     {
+      "id": "vf-comida-e-bebida-3",
       "difficulty": "medium",
       "text": "O feijão-preto é o ingrediente principal da feijoada tradicional.",
       "answer": true,
       "fact": "A feijoada clássica junta feijão-preto com carnes de porco salgadas e defumadas, e vem com arroz, couve e farofa."
     },
     {
+      "id": "vf-comida-e-bebida-4",
       "difficulty": "medium",
       "text": "O vinho é feito da fermentação da cevada.",
       "answer": false,
       "fact": "O vinho é feito da uva. A cevada é a base da cerveja."
     },
     {
+      "id": "vf-comida-e-bebida-5",
       "difficulty": "medium",
       "text": "No Pará, o açaí é muito comido salgado, com peixe frito e farinha.",
       "answer": true,
       "fact": "No Pará o açaí é comida do dia a dia, sem açúcar. A versão doce com granola ficou famosa no resto do país."
     },
     {
+      "id": "vf-comida-e-bebida-6",
       "difficulty": "medium",
       "text": "O queijo parmesão é originário da França.",
       "answer": false,
       "fact": "O parmesão vem da Itália, da região de Parma e Reggio Emilia, onde se chama Parmigiano-Reggiano."
     },
     {
+      "id": "vf-comida-e-bebida-7",
       "difficulty": "medium",
       "text": "O café chegou ao Brasil no século XVIII.",
       "answer": true,
       "fact": "As primeiras mudas chegaram ao Pará em 1727, trazidas da Guiana Francesa por Francisco de Melo Palheta."
     },
     {
+      "id": "vf-comida-e-bebida-8",
       "difficulty": "medium",
       "text": "O brigadeiro foi criado em Portugal.",
       "answer": false,
       "fact": "O brigadeiro surgiu no Brasil nos anos 1940, numa campanha do brigadeiro Eduardo Gomes à Presidência."
     },
     {
+      "id": "vf-comida-e-bebida-9",
       "difficulty": "medium",
       "text": "O pão de queijo leva polvilho em vez de farinha de trigo.",
       "answer": true,
       "fact": "O polvilho vem da mandioca, e por isso o pão de queijo não tem glúten."
     },
     {
+      "id": "vf-comida-e-bebida-10",
       "difficulty": "medium",
       "text": "A parte carnuda do caju é o fruto da planta.",
       "answer": false,
       "fact": "O fruto do caju é a castanha. A parte carnuda é o pedúnculo, chamado de pseudofruto."
     },
     {
+      "id": "vf-comida-e-bebida-11",
       "difficulty": "hard",
       "text": "O wasabi da maioria dos restaurantes é feito de raiz-forte com corante.",
       "answer": true,
       "fact": "O wasabi verdadeiro é uma raiz cara e difícil de cultivar, então quase sempre é trocado por raiz-forte tingida de verde."
     },
     {
+      "id": "vf-comida-e-bebida-12",
       "difficulty": "hard",
       "text": "Qualquer espumante francês pode se chamar champanhe.",
       "answer": false,
       "fact": "Só o espumante da região de Champagne, feito pelas regras de lá, pode usar esse nome."
     },
     {
+      "id": "vf-comida-e-bebida-13",
       "difficulty": "hard",
       "text": "O tucupi é extraído da mandioca-brava.",
       "answer": true,
       "fact": "O caldo amarelo é fervido por horas para eliminar o ácido cianídrico, que é venenoso."
     },
     {
+      "id": "vf-comida-e-bebida-14",
       "difficulty": "hard",
       "text": "A pimenta-do-reino é nativa das Américas.",
       "answer": false,
       "fact": "A pimenta-do-reino é nativa da Índia. Ela foi um dos motivos das Grandes Navegações."
     },
     {
+      "id": "vf-comida-e-bebida-15",
       "difficulty": "hard",
       "text": "O ketchup já foi vendido como remédio nos Estados Unidos.",
       "answer": true,
       "fact": "Nos anos 1830, o tomate foi anunciado como cura para indigestão, e chegaram a vender pílulas de ketchup."
     },
     {
+      "id": "vf-comida-e-bebida-16",
       "difficulty": "hard",
       "text": "A cachaça e o rum são feitos da mesma parte da cana: o melaço.",
       "answer": false,
       "fact": "A cachaça é feita do caldo fresco da cana. O rum, na maioria das vezes, é feito do melaço."
     },
     {
+      "id": "vf-comida-e-bebida-17",
       "difficulty": "hard",
       "text": "A moqueca capixaba não leva azeite de dendê.",
       "answer": true,
       "fact": "A capixaba usa urucum e azeite de oliva, feita na panela de barro. Dendê e leite de coco são da moqueca baiana."
     },
     {
+      "id": "vf-comida-e-bebida-18",
       "difficulty": "hard",
       "text": "O tiramisu leva queijo ricota.",
       "answer": false,
       "fact": "O tiramisu leva mascarpone, um queijo cremoso italiano, com café e biscoito champanhe."
     },
     {
+      "id": "vf-comida-e-bebida-19",
       "difficulty": "hard",
       "text": "A baunilha vem de uma orquídea.",
       "answer": true,
       "fact": "A baunilha é a vagem de orquídeas do gênero Vanilla. Cada flor precisa ser polinizada, muitas vezes à mão."
     },
     {
+      "id": "vf-comida-e-bebida-20",
       "difficulty": "hard",
       "text": "O vinho do Porto é produzido na Espanha.",
       "answer": false,
       "fact": "O vinho do Porto vem do Vale do Douro, em Portugal, e leva o nome da cidade de onde era exportado."
     },
     {
+      "id": "vf-comida-e-bebida-21",
       "difficulty": "medium",
       "text": "O tomate é uma fruta, botanicamente falando.",
       "answer": true,
       "fact": "Nos EUA, a Justiça o classificou como verdura em 1893."
     },
     {
+      "id": "vf-comida-e-bebida-22",
       "difficulty": "medium",
       "text": "O amendoim cresce em árvores.",
       "answer": false,
       "fact": "Ele cresce debaixo da terra."
     },
     {
+      "id": "vf-comida-e-bebida-23",
       "difficulty": "medium",
       "text": "O amendoim é uma leguminosa.",
       "answer": true,
       "fact": "Ele é parente do feijão."
     },
     {
+      "id": "vf-comida-e-bebida-24",
       "difficulty": "medium",
       "text": "A banana nasce de uma árvore com tronco de madeira.",
       "answer": false,
       "fact": "A bananeira é uma erva gigante."
     },
     {
+      "id": "vf-comida-e-bebida-25",
       "difficulty": "medium",
       "text": "O morango não é uma baga, botanicamente.",
       "answer": true,
       "fact": "As sementes ficam do lado de fora."
     },
     {
+      "id": "vf-comida-e-bebida-26",
       "difficulty": "medium",
       "text": "A abóbora é um legume, botanicamente.",
       "answer": false,
       "fact": "Botanicamente, ela é um fruto."
     },
     {
+      "id": "vf-comida-e-bebida-27",
       "difficulty": "medium",
       "text": "A pimenta arde por causa da capsaicina.",
       "answer": true,
       "fact": "A substância \"engana\" os sensores de calor."
     },
     {
+      "id": "vf-comida-e-bebida-28",
       "difficulty": "medium",
       "text": "Beber água alivia bem o ardor da pimenta.",
       "answer": false,
       "fact": "Leite funciona melhor, porque a capsaicina se dissolve em gordura."
     },
     {
+      "id": "vf-comida-e-bebida-29",
       "difficulty": "medium",
       "text": "O leite alivia o ardor da pimenta.",
       "answer": true,
       "fact": "A caseína e a gordura do leite ajudam."
     },
     {
+      "id": "vf-comida-e-bebida-30",
       "difficulty": "medium",
       "text": "A cachaça é feita de milho.",
       "answer": false,
       "fact": "Ela é feita de cana-de-açúcar."
     },
     {
+      "id": "vf-comida-e-bebida-31",
       "difficulty": "medium",
       "text": "O saquê é feito de arroz.",
       "answer": true,
       "fact": "A bebida é tradicional no Japão."
     },
     {
+      "id": "vf-comida-e-bebida-32",
       "difficulty": "medium",
       "text": "A cerveja é feita principalmente com malte de cevada.",
       "answer": true,
       "fact": "Ela também leva lúpulo e levedura."
     },
     {
+      "id": "vf-comida-e-bebida-33",
       "difficulty": "medium",
       "text": "A tequila é feita de uva.",
       "answer": false,
       "fact": "Ela é feita de agave azul."
     },
     {
+      "id": "vf-comida-e-bebida-34",
       "difficulty": "medium",
       "text": "A vodca pode ser feita de batata.",
       "answer": true,
       "fact": "Muitas marcas usam cereais."
     },
     {
+      "id": "vf-comida-e-bebida-35",
       "difficulty": "medium",
       "text": "O chocolate branco leva muita massa de cacau.",
       "answer": false,
       "fact": "Ele leva manteiga de cacau, mas sem a massa."
     },
     {
+      "id": "vf-comida-e-bebida-36",
       "difficulty": "medium",
       "text": "O café é o fruto de um arbusto.",
       "answer": true,
       "fact": "Os grãos são as sementes do fruto."
     },
     {
+      "id": "vf-comida-e-bebida-37",
       "difficulty": "medium",
       "text": "O Brasil é o maior produtor de vinho do mundo.",
       "answer": false,
       "fact": "Itália, França e Espanha lideram essa produção."
     },
     {
+      "id": "vf-comida-e-bebida-38",
       "difficulty": "medium",
       "text": "O Brasil é o maior produtor de café do mundo.",
       "answer": true,
       "fact": "Ele produz cerca de um terço do total mundial."
     },
     {
+      "id": "vf-comida-e-bebida-39",
       "difficulty": "medium",
       "text": "O Brasil é o maior produtor mundial de arroz.",
       "answer": false,
       "fact": "China e Índia lideram essa produção."
     },
     {
+      "id": "vf-comida-e-bebida-40",
       "difficulty": "medium",
       "text": "O Brasil é o maior produtor de cana-de-açúcar do mundo.",
       "answer": true,
       "fact": "O estado de São Paulo é o líder."
     },
     {
+      "id": "vf-comida-e-bebida-41",
       "difficulty": "medium",
       "text": "O sushi tem origem na Itália.",
       "answer": false,
       "fact": "Ele tem origem na Ásia, e foi refinado no Japão."
     },
     {
+      "id": "vf-comida-e-bebida-42",
       "difficulty": "medium",
       "text": "O ketchup já foi vendido como remédio nos EUA.",
       "answer": true,
       "fact": "Isso aconteceu no século XIX."
     },
     {
+      "id": "vf-comida-e-bebida-43",
       "difficulty": "medium",
       "text": "Hambúrguer é originalmente feito de porco.",
       "answer": false,
       "fact": "A carne tradicional é bovina."
     },
     {
+      "id": "vf-comida-e-bebida-44",
       "difficulty": "medium",
       "text": "O carbonara tradicional não leva creme de leite.",
       "answer": true,
       "fact": "A cremosidade vem do ovo e do queijo."
     },
     {
+      "id": "vf-comida-e-bebida-45",
       "difficulty": "medium",
       "text": "A pizza havaiana foi inventada no Havaí.",
       "answer": false,
       "fact": "Ela foi criada por um grego, no Canadá."
     },
     {
+      "id": "vf-comida-e-bebida-46",
       "difficulty": "medium",
       "text": "A pizza havaiana foi inventada no Canadá.",
       "answer": true,
       "fact": "O autor foi Sam Panopoulos, em 1962."
     },
     {
+      "id": "vf-comida-e-bebida-47",
       "difficulty": "medium",
       "text": "O croissant surgiu na França.",
       "answer": false,
       "fact": "Ele veio de um pão austríaco, o kipferl."
     },
     {
+      "id": "vf-comida-e-bebida-48",
       "difficulty": "medium",
       "text": "O biscoito da sorte foi criado nos EUA.",
       "answer": true,
       "fact": "Ele tem raízes em um biscoito japonês."
     },
     {
+      "id": "vf-comida-e-bebida-49",
       "difficulty": "medium",
       "text": "O biscoito da sorte é um doce tradicional da China.",
       "answer": false,
       "fact": "Ele quase não é conhecido por lá."
     },
     {
+      "id": "vf-comida-e-bebida-50",
       "difficulty": "medium",
       "text": "A batata é originária da América do Sul.",
       "answer": true,
       "fact": "Ela só chegou à Europa no século XVI."
     },
     {
+      "id": "vf-comida-e-bebida-51",
       "difficulty": "medium",
       "text": "O tomate é originário da Itália.",
       "answer": false,
       "fact": "Ele é originário das Américas."
     },
     {
+      "id": "vf-comida-e-bebida-52",
       "difficulty": "medium",
       "text": "O milho é originário das Américas.",
       "answer": true,
       "fact": "Ele foi domesticado no México há milhares de anos."
     },
     {
+      "id": "vf-comida-e-bebida-53",
       "difficulty": "medium",
       "text": "O cacau é originário da África.",
       "answer": false,
       "fact": "Ele é originário das Américas, embora hoje a África seja a maior produtora."
     },
     {
+      "id": "vf-comida-e-bebida-54",
       "difficulty": "medium",
       "text": "O abacaxi é originário da América do Sul.",
       "answer": true,
       "fact": "Os europeus o trataram como um símbolo de riqueza."
     },
     {
+      "id": "vf-comida-e-bebida-55",
       "difficulty": "hard",
       "text": "A língua tem regiões separadas para cada sabor.",
       "answer": false,
       "fact": "Todas as áreas sentem todos os sabores."
     },
     {
+      "id": "vf-comida-e-bebida-56",
       "difficulty": "hard",
       "text": "O umami é reconhecido como o quinto sabor básico.",
       "answer": true,
       "fact": "O japonês Kikunae Ikeda o identificou em 1908."
     },
     {
+      "id": "vf-comida-e-bebida-57",
       "difficulty": "hard",
       "text": "O mel estraga em poucos meses.",
       "answer": false,
       "fact": "Ele pode durar milhares de anos, se ficar bem fechado."
     },
     {
+      "id": "vf-comida-e-bebida-58",
       "difficulty": "hard",
       "text": "Foi encontrado mel ainda comestível em tumbas egípcias.",
       "answer": true,
       "fact": "Ele tem pouca água e é bem ácido."
     },
     {
+      "id": "vf-comida-e-bebida-59",
       "difficulty": "hard",
       "text": "O sal comum tem cor rosa natural.",
       "answer": false,
       "fact": "Só o do Himalaia é rosa, por causa do ferro."
     },
     {
+      "id": "vf-comida-e-bebida-60",
       "difficulty": "hard",
       "text": "O sal rosa do Himalaia vem de uma mina no Paquistão.",
       "answer": true,
       "fact": "A mina de Khewra é uma das maiores do mundo."
     },
     {
+      "id": "vf-comida-e-bebida-61",
       "difficulty": "hard",
       "text": "O wasabi usado em todos os restaurantes é de wasabi puro.",
       "answer": false,
       "fact": "Quase sempre é raiz-forte com corante."
     },
     {
+      "id": "vf-comida-e-bebida-62",
       "difficulty": "hard",
       "text": "A Coca-Cola já teve cocaína na fórmula.",
       "answer": true,
       "fact": "Ela foi removida no início do século XX."
     },
     {
+      "id": "vf-comida-e-bebida-63",
       "difficulty": "hard",
       "text": "A Coca-Cola sempre foi azul no início.",
       "answer": false,
       "fact": "A bebida sempre foi escura."
     },
     {
+      "id": "vf-comida-e-bebida-64",
       "difficulty": "hard",
       "text": "A Fanta foi criada na Alemanha nazista.",
       "answer": true,
       "fact": "A filial não conseguia mais o xarope da Coca-Cola."
     },
     {
+      "id": "vf-comida-e-bebida-65",
       "difficulty": "hard",
       "text": "A New Coke fez um enorme sucesso.",
       "answer": false,
       "fact": "Ela foi um fracasso, e voltou a fórmula antiga em 79 dias."
     },
     {
+      "id": "vf-comida-e-bebida-66",
       "difficulty": "hard",
       "text": "O lobo-guará come muita lobeira.",
       "answer": true,
       "fact": "Essa fruta ajuda a combater vermes no animal."
     },
     {
+      "id": "vf-comida-e-bebida-67",
       "difficulty": "hard",
       "text": "O kiwi é uma fruta originária da Nova Zelândia.",
       "answer": false,
       "fact": "Ele veio da China, e o nome foi dado depois."
     },
     {
+      "id": "vf-comida-e-bebida-68",
       "difficulty": "hard",
       "text": "O kiwi é originário da China.",
       "answer": true,
       "fact": "Os neozelandeses mudaram o nome por causa da exportação."
     },
     {
+      "id": "vf-comida-e-bebida-69",
       "difficulty": "hard",
       "text": "Marco Polo trouxe o macarrão à Itália.",
       "answer": false,
       "fact": "Os italianos já comiam massa antes das viagens dele."
     },
     {
+      "id": "vf-comida-e-bebida-70",
       "difficulty": "hard",
       "text": "A Lei da Pureza da cerveja é de 1516.",
       "answer": true,
       "fact": "Ela vale na Baviera, na Alemanha."
     },
     {
+      "id": "vf-comida-e-bebida-71",
       "difficulty": "hard",
       "text": "Dom Pérignon inventou o champanhe sem dúvida.",
       "answer": false,
       "fact": "Ele aperfeiçoou a técnica, mas não a criou."
     },
     {
+      "id": "vf-comida-e-bebida-72",
       "difficulty": "hard",
       "text": "A pasteurização recebeu o nome de Louis Pasteur.",
       "answer": true,
       "fact": "Ele a desenvolveu para proteger o vinho."
     },
     {
+      "id": "vf-comida-e-bebida-73",
       "difficulty": "hard",
       "text": "O sal escurece as maçãs cortadas.",
       "answer": false,
       "fact": "Elas escurecem ao entrar em contato com o oxigênio."
     },
     {
+      "id": "vf-comida-e-bebida-74",
       "difficulty": "hard",
       "text": "O açafrão é a especiaria mais cara do mundo.",
       "answer": true,
       "fact": "São necessárias milhares de flores para cada 100 gramas."
     },
     {
+      "id": "vf-comida-e-bebida-75",
       "difficulty": "hard",
       "text": "A baunilha vem de uma árvore de caule grosso.",
       "answer": false,
       "fact": "Ela vem de uma orquídea trepadeira."
     },
     {
+      "id": "vf-comida-e-bebida-76",
       "difficulty": "hard",
       "text": "A pimenta-do-reino é uma pimenta do tipo Capsicum.",
       "answer": false,
       "fact": "Ela é de outra família de plantas."
     },
     {
+      "id": "vf-comida-e-bebida-77",
       "difficulty": "hard",
       "text": "O bolo de rolo é patrimônio imaterial de Pernambuco.",
       "answer": true,
       "fact": "O título foi dado em 2007."
     },
     {
+      "id": "vf-comida-e-bebida-78",
       "difficulty": "hard",
       "text": "O brigadeiro nasceu em Portugal.",
       "answer": false,
       "fact": "Ele nasceu no Brasil, nos anos 1940."
     },
     {
+      "id": "vf-comida-e-bebida-79",
       "difficulty": "hard",
       "text": "O nome brigadeiro homenageia um candidato à presidência.",
       "answer": true,
       "fact": "O brigadeiro Eduardo Gomes concorreu em 1945."
     },
     {
+      "id": "vf-comida-e-bebida-80",
       "difficulty": "hard",
       "text": "A caipirinha foi criada em Minas Gerais, com vodca.",
       "answer": false,
       "fact": "Ela é paulista, feita com cachaça."
     },
     {
+      "id": "vf-comida-e-bebida-81",
       "difficulty": "hard",
       "text": "A bebida caipirinha é reconhecida por lei como brasileira.",
       "answer": true,
       "fact": "Um decreto de 2003 define a receita."
     },
     {
+      "id": "vf-comida-e-bebida-82",
       "difficulty": "hard",
       "text": "O queijo minas é feito tradicionalmente de leite de cabra.",
       "answer": false,
       "fact": "Ele é feito de leite de vaca."
     },
     {
+      "id": "vf-comida-e-bebida-83",
       "difficulty": "hard",
       "text": "O queijo Canastra é feito no estado de Minas Gerais.",
       "answer": true,
       "fact": "Ele é um dos mais premiados do Brasil."
     },
     {
+      "id": "vf-comida-e-bebida-84",
       "difficulty": "hard",
       "text": "O tucupi vem do milho.",
       "answer": false,
       "fact": "Ele vem da mandioca-brava."
     },
     {
+      "id": "vf-comida-e-bebida-85",
       "difficulty": "hard",
       "text": "O tucupi é venenoso antes de ser cozido.",
       "answer": true,
       "fact": "A mandioca-brava tem ácido cianídrico."
     },
     {
+      "id": "vf-comida-e-bebida-86",
       "difficulty": "hard",
       "text": "Feijoada é um prato de origem japonesa.",
       "answer": false,
       "fact": "Ela tem raízes em cozidos europeus e foi adaptada no Brasil."
     },
     {
+      "id": "vf-comida-e-bebida-87",
       "difficulty": "hard",
       "text": "A jabuticaba nasce grudada no tronco da árvore.",
       "answer": true,
       "fact": "Ela é típica da Mata Atlântica."
     },
     {
+      "id": "vf-comida-e-bebida-88",
       "difficulty": "medium",
       "text": "O vinho do Porto é produzido em Roma.",
       "answer": false,
       "fact": "Ele é produzido no Vale do Douro, em Portugal."
     },
     {
+      "id": "vf-comida-e-bebida-89",
       "difficulty": "hard",
       "text": "A dieta de um lutador de sumô pode ter 20 mil calorias por dia.",
       "answer": true,
       "fact": "Eles comem um cozido chamado chankonabe."
     },
     {
+      "id": "vf-comida-e-bebida-90",
       "difficulty": "medium",
       "text": "O tomate é um fruto, segundo a botânica.",
       "answer": true,
       "fact": "Na cozinha, ele é tratado como legume."
     },
     {
+      "id": "vf-comida-e-bebida-91",
       "difficulty": "medium",
       "text": "A batata-doce é uma variedade da batata comum.",
       "answer": false,
       "fact": "As duas pertencem a famílias diferentes."
     },
     {
+      "id": "vf-comida-e-bebida-92",
       "difficulty": "medium",
       "text": "A cachaça é feita de cana-de-açúcar.",
       "answer": true,
       "fact": "O destilado é exclusivo do Brasil por lei."
     },
     {
+      "id": "vf-comida-e-bebida-93",
       "difficulty": "medium",
       "text": "O sushi sempre leva peixe cru.",
       "answer": false,
       "fact": "A palavra indica o arroz temperado."
     },
     {
+      "id": "vf-comida-e-bebida-94",
       "difficulty": "hard",
       "text": "A Coca-Cola foi criada como bebida alcoólica no Brasil.",
       "answer": false,
       "fact": "Ela foi criada em 1886, em Atlanta, nos EUA."
     },
     {
+      "id": "vf-comida-e-bebida-95",
       "difficulty": "hard",
       "text": "A mandioca é tóxica se for consumida crua em certas variedades.",
       "answer": true,
       "fact": "Ela contém compostos que liberam cianeto."
     },
     {
+      "id": "vf-comida-e-bebida-96",
       "difficulty": "hard",
       "text": "O sal já foi usado como forma de pagamento.",
       "answer": true,

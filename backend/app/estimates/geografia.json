@@ -2,6 +2,7 @@
   "theme": "Geografia",
   "questions": [
     {
+      "id": "chute-geografia-1",
       "difficulty": "easy",
       "text": "Qual a altura do Monte Everest?",
       "answer": 8849,
@@ -9,6 +10,7 @@
       "fact": "A medição oficial, de 2020, foi feita em conjunto por China e Nepal."
     },
     {
+      "id": "chute-geografia-2",
       "difficulty": "medium",
       "text": "Quantos países há na África?",
       "answer": 54,
@@ -16,6 +18,7 @@
       "fact": "É o continente com mais países reconhecidos pela ONU."
     },
     {
+      "id": "chute-geografia-3",
       "difficulty": "medium",
       "text": "Quantos quilômetros tem o Rio Nilo?",
       "answer": 6650,
@@ -23,6 +26,7 @@
       "fact": "Ele disputa com o Amazonas o título de rio mais longo do mundo."
     },
     {
+      "id": "chute-geografia-4",
       "difficulty": "easy",
       "text": "Quantos países independentes há na América do Sul?",
       "answer": 12,
@@ -30,6 +34,7 @@
       "fact": "A Guiana Francesa não entra: ela é um território da França."
     },
     {
+      "id": "chute-geografia-5",
       "difficulty": "medium",
       "text": "Qual a profundidade da Fossa das Marianas, o ponto mais fundo do oceano?",
       "answer": 10994,
@@ -37,6 +42,7 @@
       "fact": "Se o Everest fosse colocado lá dentro, o topo ainda ficaria a 2 km da superfície."
     },
     {
+      "id": "chute-geografia-6",
       "difficulty": "medium",
       "text": "Qual a área da Rússia?",
       "answer": 17.1,
@@ -44,6 +50,7 @@
       "fact": "A Rússia é quase o dobro do Brasil e cobre 11 fusos horários."
     },
     {
+      "id": "chute-geografia-7",
       "difficulty": "easy",
       "text": "Quantos estados têm os Estados Unidos?",
       "answer": 50,
@@ -51,6 +58,7 @@
       "fact": "O Havaí, em 1959, foi o último a entrar."
     },
     {
+      "id": "chute-geografia-8",
       "difficulty": "hard",
       "text": "A que altitude fica o Lago Titicaca?",
       "answer": 3812,
@@ -58,6 +66,7 @@
       "fact": "É o lago navegável mais alto do mundo, entre o Peru e a Bolívia."
     },
     {
+      "id": "chute-geografia-9",
       "difficulty": "easy",
       "text": "Quantos habitantes tem a China?",
       "answer": 1.41,
@@ -65,6 +74,7 @@
       "fact": "A Índia passou a China em 2023 como o país mais populoso."
     },
     {
+      "id": "chute-geografia-10",
       "difficulty": "hard",
       "text": "Quantos quilômetros tem a Muralha da China, somando todos os trechos?",
       "answer": 21196,
@@ -72,6 +82,7 @@
       "fact": "A medição de 2012 somou todas as muralhas construídas ao longo de vários séculos."
     },
     {
+      "id": "chute-geografia-11",
       "difficulty": "medium",
       "text": "Qual a altura do Aconcágua, o ponto mais alto das Américas?",
       "answer": 6961,
@@ -79,6 +90,7 @@
       "fact": "Ele fica na Argentina, perto da fronteira com o Chile."
     },
     {
+      "id": "chute-geografia-12",
       "difficulty": "hard",
       "text": "Com quantos países a Rússia faz fronteira por terra?",
       "answer": 14,
@@ -86,6 +98,7 @@
       "fact": "Ela divide com a China o recorde de mais vizinhos."
     },
     {
+      "id": "chute-geografia-13",
       "difficulty": "hard",
       "text": "Qual a área do Vaticano?",
       "answer": 0.44,
@@ -93,6 +106,7 @@
       "fact": "É o menor país do mundo; caberia mais de 100 vezes no Parque do Ibirapuera."
     },
     {
+      "id": "chute-geografia-14",
       "difficulty": "medium",
       "text": "Qual a temperatura mais baixa já registrada na Terra?",
       "answer": -89.2,
@@ -100,6 +114,7 @@
       "fact": "Foi na estação russa de Vostok, na Antártica, em 1983."
     },
     {
+      "id": "chute-geografia-15",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Indonésia?",
       "answer": 17000,
@@ -107,6 +122,7 @@
       "fact": "Só umas 6 mil são habitadas."
     },
     {
+      "id": "chute-geografia-16",
       "difficulty": "medium",
       "text": "A que altitude fica a cidade de La Paz, na Bolívia?",
       "answer": 3640,
@@ -114,6 +130,7 @@
       "fact": "Lá a água ferve a cerca de 88 °C."
     },
     {
+      "id": "chute-geografia-17",
       "difficulty": "hard",
       "text": "Qual a área do Deserto do Saara?",
       "answer": 9.2,
@@ -121,6 +138,7 @@
       "fact": "O Saara é maior que o Brasil."
     },
     {
+      "id": "chute-geografia-18",
       "difficulty": "medium",
       "text": "Quantos países há na Europa?",
       "answer": 44,
@@ -128,6 +146,7 @@
       "fact": "O número muda conforme a conta: Rússia e Turquia, por exemplo, ficam em dois continentes."
     },
     {
+      "id": "chute-geografia-19",
       "difficulty": "hard",
       "text": "Quantos quilômetros tem o Canal do Panamá?",
       "answer": 82,
@@ -135,6 +154,7 @@
       "fact": "Um navio leva de 8 a 10 horas para atravessar o canal."
     },
     {
+      "id": "chute-geografia-20",
       "difficulty": "medium",
       "text": "Qual a altura da Garganta do Diabo, nas Cataratas do Iguaçu?",
       "answer": 80,
@@ -142,6 +162,7 @@
       "fact": "As cataratas têm cerca de 275 quedas, na fronteira do Brasil com a Argentina."
     },
     {
+      "id": "chute-geografia-21",
       "difficulty": "hard",
       "text": "Quantos metros abaixo do nível do mar fica o Mar Morto?",
       "answer": 430,
@@ -149,6 +170,7 @@
       "fact": "É o ponto mais baixo em terra firme, e o nível baixa cerca de 1 metro por ano."
     },
     {
+      "id": "chute-geografia-22",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a região metropolitana de Tóquio?",
       "answer": 37,
@@ -156,6 +178,7 @@
       "fact": "É a maior aglomeração urbana do mundo."
     },
     {
+      "id": "chute-geografia-23",
       "difficulty": "medium",
       "text": "Qual a distância em linha reta entre o Rio de Janeiro e Lisboa?",
       "answer": 7700,
@@ -163,6 +186,7 @@
       "fact": "As caravelas de Cabral levaram cerca de 44 dias para cruzar o Atlântico."
     },
     {
+      "id": "chute-geografia-24",
       "difficulty": "hard",
       "text": "Qual a área da Groenlândia?",
       "answer": 2.17,
@@ -170,6 +194,7 @@
       "fact": "Nos mapas comuns ela parece do tamanho da África, que é 14 vezes maior."
     },
     {
+      "id": "chute-geografia-25",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Islândia?",
       "answer": 390,
@@ -177,6 +202,7 @@
       "fact": "É menos do que a população de muitas cidades médias brasileiras."
     },
     {
+      "id": "chute-geografia-26",
       "difficulty": "medium",
       "text": "Qual a altura do Kilimanjaro?",
       "answer": 5895,
@@ -184,6 +210,7 @@
       "fact": "É a montanha mais alta da África e um vulcão adormecido."
     },
     {
+      "id": "chute-geografia-27",
       "difficulty": "hard",
       "text": "Qual a profundidade máxima do Lago Baikal?",
       "answer": 1642,
@@ -191,6 +218,7 @@
       "fact": "É o lago mais fundo do mundo e guarda cerca de 20% da água doce líquida da superfície."
     },
     {
+      "id": "chute-geografia-28",
       "difficulty": "medium",
       "text": "Quantos países há na Ásia?",
       "answer": 48,
@@ -198,6 +226,7 @@
       "fact": "É o maior continente em área e em população."
     },
     {
+      "id": "chute-geografia-29",
       "difficulty": "medium",
       "text": "Quantos graus o eixo da Terra é inclinado?",
       "answer": 23.4,
@@ -205,6 +234,7 @@
       "fact": "É essa inclinação que causa as estações do ano."
     },
     {
+      "id": "chute-geografia-30",
       "difficulty": "medium",
       "text": "Qual o comprimento da linha do Equador?",
       "answer": 40075,
@@ -212,6 +242,7 @@
       "fact": "A 80 km/h, sem parar, a volta levaria cerca de três semanas."
     },
     {
+      "id": "chute-geografia-31",
       "difficulty": "easy",
       "text": "Quantos continentes tem o mundo, no modelo mais comum no Brasil?",
       "answer": 6,
@@ -219,6 +250,7 @@
       "fact": "América, Europa, África, Ásia, Oceania e Antártida."
     },
     {
+      "id": "chute-geografia-32",
       "difficulty": "easy",
       "text": "Quantos oceanos tem o mundo, no modelo mais comum?",
       "answer": 5,
@@ -226,6 +258,7 @@
       "fact": "O Austral foi reconhecido oficialmente pela National Geographic em 2021."
     },
     {
+      "id": "chute-geografia-33",
       "difficulty": "easy",
       "text": "Quantos estados tem o Brasil?",
       "answer": 26,
@@ -233,6 +266,7 @@
       "fact": "Além deles, há o Distrito Federal."
     },
     {
+      "id": "chute-geografia-34",
       "difficulty": "easy",
       "text": "Quantos estados tem a região Nordeste?",
       "answer": 9,
@@ -240,6 +274,7 @@
       "fact": "Salvador foi a primeira capital do Brasil."
     },
     {
+      "id": "chute-geografia-35",
       "difficulty": "easy",
       "text": "Quantos estados tem a região Norte?",
       "answer": 7,
@@ -247,6 +282,7 @@
       "fact": "É a maior região do Brasil em área."
     },
     {
+      "id": "chute-geografia-36",
       "difficulty": "easy",
       "text": "Quantos estados tem a região Sudeste?",
       "answer": 4,
@@ -254,6 +290,7 @@
       "fact": "São Paulo, Rio, Minas e Espírito Santo."
     },
     {
+      "id": "chute-geografia-37",
       "difficulty": "easy",
       "text": "Quantos estados tem a região Sul?",
       "answer": 3,
@@ -261,6 +298,7 @@
       "fact": "É a menor região do país."
     },
     {
+      "id": "chute-geografia-38",
       "difficulty": "easy",
       "text": "Quantos países fazem fronteira com o Brasil?",
       "answer": 10,
@@ -268,6 +306,7 @@
       "fact": "Só Chile e Equador não são vizinhos do Brasil."
     },
     {
+      "id": "chute-geografia-39",
       "difficulty": "easy",
       "text": "Quantos países formam a América do Sul?",
       "answer": 12,
@@ -275,6 +314,7 @@
       "fact": "A Guiana Francesa é um território da França."
     },
     {
+      "id": "chute-geografia-40",
       "difficulty": "easy",
       "text": "Quantas listras tem a bandeira dos Estados Unidos?",
       "answer": 13,
@@ -282,6 +322,7 @@
       "fact": "Elas lembram as 13 colônias originais."
     },
     {
+      "id": "chute-geografia-41",
       "difficulty": "easy",
       "text": "Quantos países fazem parte do Reino Unido?",
       "answer": 4,
@@ -289,6 +330,7 @@
       "fact": "Inglaterra, Escócia, País de Gales e Irlanda do Norte."
     },
     {
+      "id": "chute-geografia-42",
       "difficulty": "medium",
       "text": "Quantos países formam a Escandinávia, no sentido mais estrito?",
       "answer": 3,
@@ -296,6 +338,7 @@
       "fact": "Noruega, Suécia e Dinamarca."
     },
     {
+      "id": "chute-geografia-43",
       "difficulty": "easy",
       "text": "Quantos países fazem fronteira com Portugal?",
       "answer": 1,
@@ -303,6 +346,7 @@
       "fact": "O único vizinho é a Espanha."
     },
     {
+      "id": "chute-geografia-44",
       "difficulty": "medium",
       "text": "Quantos fusos horários oficiais tem o Brasil?",
       "answer": 4,
@@ -310,6 +354,7 @@
       "fact": "Inclui o fuso de Fernando de Noronha."
     },
     {
+      "id": "chute-geografia-45",
       "difficulty": "medium",
       "text": "Quantos fusos horários oficiais tem a China?",
       "answer": 1,
@@ -317,6 +362,7 @@
       "fact": "O país inteiro segue o horário de Pequim."
     },
     {
+      "id": "chute-geografia-46",
       "difficulty": "easy",
       "text": "Quantos fusos horários existem no mundo, no padrão inteiro?",
       "answer": 24,
@@ -324,6 +370,7 @@
       "fact": "Cada fuso corresponde a cerca de 15 graus."
     },
     {
+      "id": "chute-geografia-47",
       "difficulty": "easy",
       "text": "Quantos graus tem um círculo de longitude na Terra?",
       "answer": 360,
@@ -331,6 +378,7 @@
       "fact": "Daí vêm os 15 graus de cada fuso."
     },
     {
+      "id": "chute-geografia-48",
       "difficulty": "easy",
       "text": "Quantos graus de latitude tem do Equador até o Polo Norte?",
       "answer": 90,
@@ -338,6 +386,7 @@
       "fact": "O Equador está em 0°."
     },
     {
+      "id": "chute-geografia-49",
       "difficulty": "easy",
       "text": "Qual é a altitude do Everest, em metros?",
       "answer": 8849,
@@ -345,6 +394,7 @@
       "fact": "A altitude foi remedida em 2020."
     },
     {
+      "id": "chute-geografia-50",
       "difficulty": "medium",
       "text": "Qual é a altitude do Monte Fuji, em metros?",
       "answer": 3776,
@@ -352,6 +402,7 @@
       "fact": "O Japão pede que as pessoas não subam sem preparo."
     },
     {
+      "id": "chute-geografia-51",
       "difficulty": "medium",
       "text": "Qual é a altitude do Kilimanjaro, em metros?",
       "answer": 5895,
@@ -359,6 +410,7 @@
       "fact": "É a maior montanha isolada do mundo."
     },
     {
+      "id": "chute-geografia-52",
       "difficulty": "hard",
       "text": "Qual é a altitude do Monte Branco, em metros?",
       "answer": 4807,
@@ -366,6 +418,7 @@
       "fact": "Ele fica entre a França e a Itália."
     },
     {
+      "id": "chute-geografia-53",
       "difficulty": "medium",
       "text": "Qual é a altitude de Brasília, em metros?",
       "answer": 1172,
@@ -373,6 +426,7 @@
       "fact": "Por isso, a cidade é mais fresca e seca que o entorno."
     },
     {
+      "id": "chute-geografia-54",
       "difficulty": "medium",
       "text": "Qual é a altitude de São Paulo, em metros?",
       "answer": 760,
@@ -380,6 +434,7 @@
       "fact": "A serra separa a cidade do mar."
     },
     {
+      "id": "chute-geografia-55",
       "difficulty": "medium",
       "text": "Qual é a altura do Corcovado, em metros?",
       "answer": 710,
@@ -387,6 +442,7 @@
       "fact": "O Cristo tem mais 38 metros."
     },
     {
+      "id": "chute-geografia-56",
       "difficulty": "medium",
       "text": "Qual é a altura do Cristo Redentor, em metros, contando a base?",
       "answer": 38,
@@ -394,6 +450,7 @@
       "fact": "Ele foi inaugurado em 1931."
     },
     {
+      "id": "chute-geografia-57",
       "difficulty": "easy",
       "text": "Qual é a altura da Torre Eiffel, em metros?",
       "answer": 330,
@@ -401,6 +458,7 @@
       "fact": "Ela já foi a construção mais alta do mundo."
     },
     {
+      "id": "chute-geografia-58",
       "difficulty": "medium",
       "text": "Qual é a altura da Estátua da Liberdade, com a base, em metros?",
       "answer": 93,
@@ -408,6 +466,7 @@
       "fact": "A estátua foi um presente da França."
     },
     {
+      "id": "chute-geografia-59",
       "difficulty": "medium",
       "text": "Qual é a altura da Grande Pirâmide de Gizé, em metros?",
       "answer": 139,
@@ -415,6 +474,7 @@
       "fact": "Originalmente, tinha 146 metros."
     },
     {
+      "id": "chute-geografia-60",
       "difficulty": "medium",
       "text": "Qual é a altura do Big Ben, em metros?",
       "answer": 96,
@@ -422,6 +482,7 @@
       "fact": "A torre se chama Elizabeth Tower."
     },
     {
+      "id": "chute-geografia-61",
       "difficulty": "medium",
       "text": "Qual é a altura do Empire State, em metros, com a antena?",
       "answer": 443,
@@ -429,6 +490,7 @@
       "fact": "Foi o prédio mais alto do mundo por 40 anos."
     },
     {
+      "id": "chute-geografia-62",
       "difficulty": "medium",
       "text": "Qual é a altura do Burj Khalifa, em metros?",
       "answer": 828,
@@ -436,6 +498,7 @@
       "fact": "Tem mais de 160 andares."
     },
     {
+      "id": "chute-geografia-63",
       "difficulty": "medium",
       "text": "Qual é o comprimento da Ponte Rio-Niterói, em km?",
       "answer": 13,
@@ -443,6 +506,7 @@
       "fact": "Ela foi inaugurada em 1974."
     },
     {
+      "id": "chute-geografia-64",
       "difficulty": "hard",
       "text": "Qual é o comprimento do Canal do Panamá, em km?",
       "answer": 82,
@@ -450,6 +514,7 @@
       "fact": "Um navio leva de 8 a 10 horas para atravessar."
     },
     {
+      "id": "chute-geografia-65",
       "difficulty": "hard",
       "text": "Qual é o comprimento do Canal de Suez, em km?",
       "answer": 193,
@@ -457,6 +522,7 @@
       "fact": "Ele foi aberto em 1869."
     },
     {
+      "id": "chute-geografia-66",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Eurotúnel, em km?",
       "answer": 50,
@@ -464,6 +530,7 @@
       "fact": "Ele passa por baixo do Canal da Mancha."
     },
     {
+      "id": "chute-geografia-67",
       "difficulty": "easy",
       "text": "Qual é a população do Brasil, em milhões, no Censo de 2022?",
       "answer": 203,
@@ -471,6 +538,7 @@
       "fact": "Foi o menor crescimento já registrado."
     },
     {
+      "id": "chute-geografia-68",
       "difficulty": "easy",
       "text": "Qual é a população da cidade de São Paulo, em milhões, no Censo de 2022?",
       "answer": 11.4,
@@ -478,6 +546,7 @@
       "fact": "Foi a primeira vez em que a população da cidade recuou nos dados."
     },
     {
+      "id": "chute-geografia-69",
       "difficulty": "easy",
       "text": "Qual é a população da cidade do Rio de Janeiro, em milhões, no Censo de 2022?",
       "answer": 6.2,
@@ -485,6 +554,7 @@
       "fact": "Ela é a segunda maior do país."
     },
     {
+      "id": "chute-geografia-70",
       "difficulty": "medium",
       "text": "Qual é a população de Brasília, em milhões, no Censo de 2022?",
       "answer": 2.8,
@@ -492,6 +562,7 @@
       "fact": "Ela foi planejada para cerca de 500 mil moradores."
     },
     {
+      "id": "chute-geografia-71",
       "difficulty": "medium",
       "text": "Qual é a população de Salvador, em milhões, no Censo de 2022?",
       "answer": 2.4,
@@ -499,6 +570,7 @@
       "fact": "Foi a primeira capital do país."
     },
     {
+      "id": "chute-geografia-72",
       "difficulty": "medium",
       "text": "Qual é a população de Fortaleza, em milhões, no Censo de 2022?",
       "answer": 2.4,
@@ -506,6 +578,7 @@
       "fact": "Ela é a capital mais populosa do Ceará e da região."
     },
     {
+      "id": "chute-geografia-73",
       "difficulty": "medium",
       "text": "Qual é a população de Belo Horizonte, em milhões, no Censo de 2022?",
       "answer": 2.3,
@@ -513,6 +586,7 @@
       "fact": "Foi planejada para ser a nova capital de Minas."
     },
     {
+      "id": "chute-geografia-74",
       "difficulty": "medium",
       "text": "Qual é a população de Manaus, em milhões, no Censo de 2022?",
       "answer": 2,
@@ -520,6 +594,7 @@
       "fact": "Ela é a maior cidade da Região Norte."
     },
     {
+      "id": "chute-geografia-75",
       "difficulty": "medium",
       "text": "Qual é a população de Curitiba, em milhões, no Censo de 2022?",
       "answer": 1.8,
@@ -527,6 +602,7 @@
       "fact": "Ela é conhecida pela qualidade do transporte."
     },
     {
+      "id": "chute-geografia-76",
       "difficulty": "medium",
       "text": "Qual é a população dos EUA, em milhões, em 2023?",
       "answer": 335,
@@ -534,6 +610,7 @@
       "fact": "É o terceiro país mais populoso do mundo."
     },
     {
+      "id": "chute-geografia-77",
       "difficulty": "easy",
       "text": "Qual é a população da Índia, em bilhões, em 2023?",
       "answer": 1.43,
@@ -541,6 +618,7 @@
       "fact": "Passou a China no mesmo ano."
     },
     {
+      "id": "chute-geografia-78",
       "difficulty": "easy",
       "text": "Qual é a população da China, em bilhões, em 2023?",
       "answer": 1.41,
@@ -548,6 +626,7 @@
       "fact": "Ela começou a diminuir em 2022."
     },
     {
+      "id": "chute-geografia-79",
       "difficulty": "medium",
       "text": "Qual é a população da Argentina, em milhões, em 2022?",
       "answer": 46,
@@ -555,6 +634,7 @@
       "fact": "Cerca de um terço vive perto de Buenos Aires."
     },
     {
+      "id": "chute-geografia-80",
       "difficulty": "medium",
       "text": "Qual é a população de Portugal, em milhões, em 2021?",
       "answer": 10.3,
@@ -562,6 +642,7 @@
       "fact": "Mais de 5 milhões de portugueses vivem no exterior."
     },
     {
+      "id": "chute-geografia-81",
       "difficulty": "medium",
       "text": "Qual é a população da Rússia, em milhões, em 2021?",
       "answer": 144,
@@ -569,6 +650,7 @@
       "fact": "Boa parte dela vive perto da Europa."
     },
     {
+      "id": "chute-geografia-82",
       "difficulty": "medium",
       "text": "Qual é a população da Alemanha, em milhões, em 2023?",
       "answer": 84,
@@ -576,6 +658,7 @@
       "fact": "É o país mais populoso da União Europeia."
     },
     {
+      "id": "chute-geografia-83",
       "difficulty": "medium",
       "text": "Qual é a população do Japão, em milhões, em 2023?",
       "answer": 125,
@@ -583,6 +666,7 @@
       "fact": "Ela diminui ano após ano."
     },
     {
+      "id": "chute-geografia-84",
       "difficulty": "easy",
       "text": "Qual é a população mundial, em bilhões, em 2023?",
       "answer": 8,
@@ -590,6 +674,7 @@
       "fact": "Cerca de 60% das pessoas vivem na Ásia."
     },
     {
+      "id": "chute-geografia-85",
       "difficulty": "easy",
       "text": "Qual é o tamanho do Brasil, em milhões de km²?",
       "answer": 8.5,
@@ -597,6 +682,7 @@
       "fact": "É o quinto maior país do mundo."
     },
     {
+      "id": "chute-geografia-86",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Rússia, em milhões de km²?",
       "answer": 17,
@@ -604,6 +690,7 @@
       "fact": "É o maior país do mundo."
     },
     {
+      "id": "chute-geografia-87",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Canadá, em milhões de km²?",
       "answer": 10,
@@ -611,6 +698,7 @@
       "fact": "É o segundo maior."
     },
     {
+      "id": "chute-geografia-88",
       "difficulty": "medium",
       "text": "Qual é o tamanho da China, em milhões de km²?",
       "answer": 9.6,
@@ -618,6 +706,7 @@
       "fact": "A disputa do tamanho com os EUA é pequena."
     },
     {
+      "id": "chute-geografia-89",
       "difficulty": "medium",
       "text": "Qual é o tamanho dos Estados Unidos, em milhões de km²?",
       "answer": 9.8,
@@ -625,6 +714,7 @@
       "fact": "Inclui o Alasca e o Havaí."
     },
     {
+      "id": "chute-geografia-90",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Austrália, em milhões de km²?",
       "answer": 7.7,
@@ -632,6 +722,7 @@
       "fact": "É o sexto maior país do mundo."
     },
     {
+      "id": "chute-geografia-91",
       "difficulty": "hard",
       "text": "Qual é o tamanho de Portugal, em km²?",
       "answer": 92000,
@@ -639,6 +730,7 @@
       "fact": "É um pouco maior que Santa Catarina."
     },
     {
+      "id": "chute-geografia-92",
       "difficulty": "hard",
       "text": "Qual é o tamanho do estado de São Paulo, em km²?",
       "answer": 248000,
@@ -646,6 +738,7 @@
       "fact": "É maior que o Reino Unido."
     },
     {
+      "id": "chute-geografia-93",
       "difficulty": "hard",
       "text": "Qual é o tamanho do estado do Amazonas, em km²?",
       "answer": 1560000,
@@ -653,6 +746,7 @@
       "fact": "É o maior estado do Brasil."
     },
     {
+      "id": "chute-geografia-94",
       "difficulty": "hard",
       "text": "Qual é o tamanho de Sergipe, em km²?",
       "answer": 21900,
@@ -660,6 +754,7 @@
       "fact": "É o menor estado do Brasil."
     },
     {
+      "id": "chute-geografia-95",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Vaticano, em km²?",
       "answer": 0.44,
@@ -667,6 +762,7 @@
       "fact": "É o menor país do mundo."
     },
     {
+      "id": "chute-geografia-96",
       "difficulty": "easy",
       "text": "Em que ano a União Soviética acabou?",
       "answer": 1991,
@@ -674,6 +770,7 @@
       "fact": "O fim foi formalizado em dezembro."
     },
     {
+      "id": "chute-geografia-97",
       "difficulty": "medium",
       "text": "Em que ano a Ponte Rio-Niterói foi inaugurada?",
       "answer": 1974,
@@ -681,6 +778,7 @@
       "fact": "Foi construída durante o regime militar."
     },
     {
+      "id": "chute-geografia-98",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Canal do Panamá?",
       "answer": 1914,
@@ -688,6 +786,7 @@
       "fact": "A França falhou antes de os EUA concluírem a obra."
     },
     {
+      "id": "chute-geografia-99",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Canal de Suez?",
       "answer": 1869,
@@ -695,6 +794,7 @@
       "fact": "O engenheiro francês Ferdinand de Lesseps foi o responsável."
     },
     {
+      "id": "chute-geografia-100",
       "difficulty": "medium",
       "text": "Em que ano o Tocantins virou estado?",
       "answer": 1988,
@@ -702,6 +802,7 @@
       "fact": "Foi com a nova Constituição."
     },
     {
+      "id": "chute-geografia-101",
       "difficulty": "easy",
       "text": "Em que ano Hong Kong voltou para a China?",
       "answer": 1997,
@@ -709,6 +810,7 @@
       "fact": "Foi colônia britânica por 156 anos."
     },
     {
+      "id": "chute-geografia-102",
       "difficulty": "medium",
       "text": "Em que ano Macau voltou para a China?",
       "answer": 1999,
@@ -716,6 +818,7 @@
       "fact": "Foi a última colônia europeia na Ásia."
     },
     {
+      "id": "chute-geografia-103",
       "difficulty": "easy",
       "text": "Em que ano o Reino Unido saiu da União Europeia?",
       "answer": 2020,
@@ -723,6 +826,7 @@
       "fact": "A saída ficou conhecida como Brexit."
     },
     {
+      "id": "chute-geografia-104",
       "difficulty": "medium",
       "text": "Em que ano o Sudão do Sul virou independente?",
       "answer": 2011,
@@ -730,6 +834,7 @@
       "fact": "É o país mais novo do mundo reconhecido pela ONU."
     },
     {
+      "id": "chute-geografia-105",
       "difficulty": "medium",
       "text": "Em que ano a Bélgica, a França e outros criaram a CEE, precursora da União Europeia?",
       "answer": 1957,
@@ -737,6 +842,7 @@
       "fact": "O Tratado de Roma foi assinado nesse ano."
     },
     {
+      "id": "chute-geografia-106",
       "difficulty": "medium",
       "text": "Em que ano o Mercosul foi criado?",
       "answer": 1991,
@@ -744,6 +850,7 @@
       "fact": "Foi criado pelo Tratado de Assunção."
     },
     {
+      "id": "chute-geografia-107",
       "difficulty": "easy",
       "text": "Em que ano a ONU foi criada?",
       "answer": 1945,
@@ -751,6 +858,7 @@
       "fact": "A sede fica em Nova York."
     },
     {
+      "id": "chute-geografia-108",
       "difficulty": "hard",
       "text": "Em que ano foi criado o IBGE?",
       "answer": 1936,
@@ -758,6 +866,7 @@
       "fact": "Ele é responsável pelos censos do Brasil."
     },
     {
+      "id": "chute-geografia-109",
       "difficulty": "hard",
       "text": "Em que ano aconteceu o primeiro censo do Brasil?",
       "answer": 1872,
@@ -765,6 +874,7 @@
       "fact": "Foi durante o Império de Dom Pedro II."
     },
     {
+      "id": "chute-geografia-110",
       "difficulty": "hard",
       "text": "Em que ano o Brasil chegou a 100 milhões de habitantes?",
       "answer": 1972,
@@ -772,6 +882,7 @@
       "fact": "A música \"Pra Frente Brasil\" falava em \"90 milhões em ação\"."
     },
     {
+      "id": "chute-geografia-111",
       "difficulty": "easy",
       "text": "Em que ano Rio de Janeiro deixou de ser a capital do Brasil?",
       "answer": 1960,
@@ -779,6 +890,7 @@
       "fact": "Ela foi capital por quase 200 anos."
     },
     {
+      "id": "chute-geografia-112",
       "difficulty": "medium",
       "text": "Qual a distância aproximada entre Rio de Janeiro e São Paulo, em km?",
       "answer": 430,
@@ -786,6 +898,7 @@
       "fact": "A Via Dutra liga as duas cidades."
     },
     {
+      "id": "chute-geografia-113",
       "difficulty": "medium",
       "text": "Qual a distância aproximada entre São Paulo e Brasília, em km?",
       "answer": 1000,
@@ -793,6 +906,7 @@
       "fact": "A viagem de avião leva menos de duas horas."
     },
     {
+      "id": "chute-geografia-114",
       "difficulty": "medium",
       "text": "Qual a distância aproximada entre São Paulo e Nova York, em km?",
       "answer": 7700,
@@ -800,6 +914,7 @@
       "fact": "O voo direto leva cerca de 10 horas."
     },
     {
+      "id": "chute-geografia-115",
       "difficulty": "medium",
       "text": "Qual a distância aproximada entre Oiapoque e Chuí, em km?",
       "answer": 4300,
@@ -807,6 +922,7 @@
       "fact": "A frase ficou famosa como sinônimo de Brasil inteiro."
     },
     {
+      "id": "chute-geografia-116",
       "difficulty": "medium",
       "text": "Qual a temperatura média anual de Natal, em °C?",
       "answer": 27,
@@ -814,6 +930,7 @@
       "fact": "A cidade é chamada de \"capital do sol\"."
     },
     {
+      "id": "chute-geografia-117",
       "difficulty": "medium",
       "text": "Qual é a temperatura média em Ushuaia, em °C, no verão?",
       "answer": 10,
@@ -821,6 +938,7 @@
       "fact": "Ela é a cidade mais ao sul da América do Sul com mais de 50 mil pessoas."
     },
     {
+      "id": "chute-geografia-118",
       "difficulty": "medium",
       "text": "Qual foi a maior temperatura oficial já registrada no mundo, em °C?",
       "answer": 56.7,
@@ -828,6 +946,7 @@
       "fact": "Foi em 1913, no Vale da Morte, nos EUA."
     },
     {
+      "id": "chute-geografia-119",
       "difficulty": "hard",
       "text": "Qual foi a menor temperatura registrada em Portugal, em °C?",
       "answer": -16,
@@ -835,6 +954,7 @@
       "fact": "Foi em Penhas da Saúde, em 1954."
     },
     {
+      "id": "chute-geografia-120",
       "difficulty": "medium",
       "text": "Qual é a temperatura média em Moscou no inverno, em °C?",
       "answer": -8,
@@ -842,6 +962,7 @@
       "fact": "Os invernos rigorosos derrotaram Napoleão e Hitler."
     },
     {
+      "id": "chute-geografia-121",
       "difficulty": "hard",
       "text": "Qual é a temperatura média em Yakutsk no inverno, em °C?",
       "answer": -39,
@@ -849,6 +970,7 @@
       "fact": "É a cidade grande mais fria do mundo."
     },
     {
+      "id": "chute-geografia-122",
       "difficulty": "medium",
       "text": "Qual é a temperatura média em Reykjavik no inverno, em °C?",
       "answer": 0,
@@ -857,6 +979,7 @@
       "fact": "A corrente do Golfo deixa a Islândia menos fria do que parece."
     },
     {
+      "id": "chute-geografia-123",
       "difficulty": "medium",
       "text": "Qual é a altitude de Amsterdã, em relação ao nível do mar, em metros?",
       "answer": -2,
@@ -864,6 +987,7 @@
       "fact": "Quase um terço da Holanda fica abaixo do nível do mar."
     },
     {
+      "id": "chute-geografia-124",
       "difficulty": "hard",
       "text": "Qual é a altitude do ponto mais baixo da Holanda, em metros?",
       "answer": -7,
@@ -871,6 +995,7 @@
       "fact": "Fica perto de Roterdã."
     },
     {
+      "id": "chute-geografia-125",
       "difficulty": "hard",
       "text": "Qual é a altitude de Baku, a capital mais baixa do mundo, em metros?",
       "answer": -28,
@@ -878,6 +1003,7 @@
       "fact": "A cidade fica às margens do mar Cáspio."
     },
     {
+      "id": "chute-geografia-126",
       "difficulty": "hard",
       "text": "Qual é a altitude de Jericó, a cidade mais baixa do mundo, em metros?",
       "answer": -258,
@@ -885,6 +1011,7 @@
       "fact": "Também é uma das mais antigas cidades conhecidas."
     },
     {
+      "id": "chute-geografia-127",
       "difficulty": "easy",
       "text": "Quantos anos tem o Brasil desde o Descobrimento, contando até 2000?",
       "answer": 500,
@@ -892,6 +1019,7 @@
       "fact": "Os 500 anos foram comemorados em Porto Seguro."
     },
     {
+      "id": "chute-geografia-128",
       "difficulty": "medium",
       "text": "Quantos países têm o português como língua oficial?",
       "answer": 9,
@@ -899,6 +1027,7 @@
       "fact": "Eles formam a CPLP."
     },
     {
+      "id": "chute-geografia-129",
       "difficulty": "medium",
       "text": "Quantos países têm o espanhol como língua oficial, aproximadamente?",
       "answer": 20,
@@ -906,6 +1035,7 @@
       "fact": "O México é o país com mais falantes."
     },
     {
+      "id": "chute-geografia-130",
       "difficulty": "easy",
       "text": "Quantos países existem no mundo, segundo a ONU?",
       "answer": 193,
@@ -913,6 +1043,7 @@
       "fact": "Além deles, há dois observadores, Vaticano e Palestina."
     },
     {
+      "id": "chute-geografia-131",
       "difficulty": "hard",
       "text": "Quantas ilhas formam as Filipinas, aproximadamente?",
       "answer": 7600,
@@ -920,6 +1051,7 @@
       "fact": "Só cerca de 2 mil têm moradores."
     },
     {
+      "id": "chute-geografia-132",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Grécia, aproximadamente?",
       "answer": 6000,
@@ -927,6 +1059,7 @@
       "fact": "Só cerca de 200 são habitadas."
     },
     {
+      "id": "chute-geografia-133",
       "difficulty": "medium",
       "text": "Quantos canais tem Veneza, aproximadamente?",
       "answer": 150,
@@ -934,6 +1067,7 @@
       "fact": "A cidade tem mais de 400 pontes."
     },
     {
+      "id": "chute-geografia-134",
       "difficulty": "medium",
       "text": "Quantas pontes tem Veneza, aproximadamente?",
       "answer": 400,
@@ -941,6 +1075,7 @@
       "fact": "A Ponte de Rialto é a mais famosa."
     },
     {
+      "id": "chute-geografia-135",
       "difficulty": "medium",
       "text": "Quantas ilhas tem a baía de Angra dos Reis, aproximadamente?",
       "answer": 365,
@@ -948,6 +1083,7 @@
       "fact": "Diz-se que há uma para cada dia do ano."
     },
     {
+      "id": "chute-geografia-136",
       "difficulty": "medium",
       "text": "Quantas ilhas tem Fernando de Noronha, aproximadamente?",
       "answer": 21,
@@ -955,6 +1091,7 @@
       "fact": "A população vive só na maior delas."
     },
     {
+      "id": "chute-geografia-137",
       "difficulty": "medium",
       "text": "Quantas praias tem Florianópolis, aproximadamente?",
       "answer": 100,
@@ -962,6 +1099,7 @@
       "fact": "A ilha é chamada de \"Ilha da Magia\"."
     },
     {
+      "id": "chute-geografia-138",
       "difficulty": "medium",
       "text": "Qual é a altitude de Campos do Jordão, em metros?",
       "answer": 1628,
@@ -969,6 +1107,7 @@
       "fact": "É a cidade mais alta do Brasil."
     },
     {
+      "id": "chute-geografia-139",
       "difficulty": "medium",
       "text": "Qual é a altitude de Cusco, em metros?",
       "answer": 3399,
@@ -976,6 +1115,7 @@
       "fact": "Ela foi a capital do Império Inca."
     },
     {
+      "id": "chute-geografia-140",
       "difficulty": "medium",
       "text": "Qual é a altitude de Machu Picchu, em metros?",
       "answer": 2430,
@@ -983,6 +1123,7 @@
       "fact": "Ela foi redescoberta por Hiram Bingham em 1911."
     },
     {
+      "id": "chute-geografia-141",
       "difficulty": "medium",
       "text": "Qual é a altitude de Bogotá, em metros?",
       "answer": 2640,
@@ -990,6 +1131,7 @@
       "fact": "Mesmo perto do Equador, o clima lá é frio."
     },
     {
+      "id": "chute-geografia-142",
       "difficulty": "medium",
       "text": "Qual é a altitude de Quito, em metros?",
       "answer": 2850,
@@ -997,6 +1139,7 @@
       "fact": "Fica quase em cima da linha do Equador."
     },
     {
+      "id": "chute-geografia-143",
       "difficulty": "medium",
       "text": "Qual é a altitude da Cidade do México, em metros?",
       "answer": 2240,
@@ -1004,6 +1147,7 @@
       "fact": "Os atletas sentiram isso na Olimpíada de 1968."
     },
     {
+      "id": "chute-geografia-144",
       "difficulty": "hard",
       "text": "Qual é a altitude de Lhasa, no Tibete, em metros?",
       "answer": 3656,
@@ -1011,6 +1155,7 @@
       "fact": "É chamada de \"Teto do Mundo\"."
     },
     {
+      "id": "chute-geografia-145",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a região metropolitana de São Paulo, em milhões?",
       "answer": 21,
@@ -1018,6 +1163,7 @@
       "fact": "É a maior região urbana do Hemisfério Sul."
     },
     {
+      "id": "chute-geografia-146",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Xangai, em milhões?",
       "answer": 25,
@@ -1025,6 +1171,7 @@
       "fact": "É a maior cidade da China."
     },
     {
+      "id": "chute-geografia-147",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a região metropolitana de Delhi, em milhões?",
       "answer": 33,
@@ -1032,6 +1179,7 @@
       "fact": "Deve superar Tóquio nos próximos anos."
     },
     {
+      "id": "chute-geografia-148",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a cidade de Nova York, em milhões?",
       "answer": 8.3,
@@ -1039,6 +1187,7 @@
       "fact": "Tem cinco grandes distritos, os boroughs."
     },
     {
+      "id": "chute-geografia-149",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Londres, em milhões?",
       "answer": 8.9,
@@ -1046,6 +1195,7 @@
       "fact": "Fala-se mais de 300 línguas por lá."
     },
     {
+      "id": "chute-geografia-150",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Paris, sem contar a região metropolitana, em milhões?",
       "answer": 2.1,
@@ -1053,6 +1203,7 @@
       "fact": "Com a região, são mais de 12 milhões."
     },
     {
+      "id": "chute-geografia-151",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Roma, em milhões?",
       "answer": 2.8,
@@ -1060,6 +1211,7 @@
       "fact": "No auge da Antiguidade, tinha cerca de 1 milhão."
     },
     {
+      "id": "chute-geografia-152",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Lisboa, em milhares?",
       "answer": 545,
@@ -1067,6 +1219,7 @@
       "fact": "Com a região metropolitana, são quase 3 milhões."
     },
     {
+      "id": "chute-geografia-153",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Buenos Aires, sem a região metropolitana, em milhões?",
       "answer": 3.1,
@@ -1074,6 +1227,7 @@
       "fact": "A região metropolitana tem mais de 15 milhões."
     },
     {
+      "id": "chute-geografia-154",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Montevidéu, em milhões?",
       "answer": 1.3,
@@ -1081,6 +1235,7 @@
       "fact": "Cerca de metade da população do Uruguai vive lá."
     },
     {
+      "id": "chute-geografia-155",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Uruguai, em milhões?",
       "answer": 3.5,
@@ -1088,6 +1243,7 @@
       "fact": "Lá há mais vacas do que pessoas."
     },
     {
+      "id": "chute-geografia-156",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Paraguai, em milhões?",
       "answer": 6.8,
@@ -1095,6 +1251,7 @@
       "fact": "Cerca de 90% da população fala guarani."
     },
     {
+      "id": "chute-geografia-157",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Chile, em milhões?",
       "answer": 19,
@@ -1102,6 +1259,7 @@
       "fact": "Quase 40% vivem na região de Santiago."
     },
     {
+      "id": "chute-geografia-158",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Bolívia, em milhões?",
       "answer": 12,
@@ -1109,6 +1267,7 @@
       "fact": "O país tem 36 línguas indígenas oficiais."
     },
     {
+      "id": "chute-geografia-159",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Peru, em milhões?",
       "answer": 33,
@@ -1116,6 +1275,7 @@
       "fact": "Um terço vive em Lima."
     },
     {
+      "id": "chute-geografia-160",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Colômbia, em milhões?",
       "answer": 52,
@@ -1123,6 +1283,7 @@
       "fact": "Depois do Brasil, é o país mais populoso da América do Sul."
     },
     {
+      "id": "chute-geografia-161",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Venezuela, em milhões?",
       "answer": 28,
@@ -1130,6 +1291,7 @@
       "fact": "Milhões saíram do país na última década."
     },
     {
+      "id": "chute-geografia-162",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o México, em milhões?",
       "answer": 129,
@@ -1137,6 +1299,7 @@
       "fact": "É o país com mais falantes de espanhol do mundo."
     },
     {
+      "id": "chute-geografia-163",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Canadá, em milhões?",
       "answer": 40,
@@ -1144,6 +1307,7 @@
       "fact": "Cerca de 90% vivem a menos de 160 km da fronteira com os EUA."
     },
     {
+      "id": "chute-geografia-164",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Austrália, em milhões?",
       "answer": 26,
@@ -1151,6 +1315,7 @@
       "fact": "A maioria mora na costa."
     },
     {
+      "id": "chute-geografia-165",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Nova Zelândia, em milhões?",
       "answer": 5,
@@ -1158,6 +1323,7 @@
       "fact": "Há mais ovelhas que pessoas por lá."
     },
     {
+      "id": "chute-geografia-166",
       "difficulty": "medium",
       "text": "Quantas ovelhas tem a Nova Zelândia, em milhões, aproximadamente?",
       "answer": 26,
@@ -1165,6 +1331,7 @@
       "fact": "Em 1982, chegaram a ser mais de 70 milhões."
     },
     {
+      "id": "chute-geografia-167",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Nigéria, em milhões?",
       "answer": 223,
@@ -1172,6 +1339,7 @@
       "fact": "É o país mais populoso da África."
     },
     {
+      "id": "chute-geografia-168",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Egito, em milhões?",
       "answer": 110,
@@ -1179,6 +1347,7 @@
       "fact": "Quase todos vivem perto do rio Nilo."
     },
     {
+      "id": "chute-geografia-169",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a África do Sul, em milhões?",
       "answer": 60,
@@ -1186,6 +1355,7 @@
       "fact": "O país tem 12 línguas oficiais."
     },
     {
+      "id": "chute-geografia-170",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Angola, em milhões?",
       "answer": 36,
@@ -1193,6 +1363,7 @@
       "fact": "Foi colônia de Portugal até 1975."
     },
     {
+      "id": "chute-geografia-171",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Indonésia, em milhões?",
       "answer": 277,
@@ -1200,6 +1371,7 @@
       "fact": "É o país de maioria muçulmana mais populoso do mundo."
     },
     {
+      "id": "chute-geografia-172",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Paquistão, em milhões?",
       "answer": 240,
@@ -1207,6 +1379,7 @@
       "fact": "A população cresce rapidamente."
     },
     {
+      "id": "chute-geografia-173",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Bangladesh, em milhões?",
       "answer": 172,
@@ -1214,6 +1387,7 @@
       "fact": "É um dos países mais densos do mundo."
     },
     {
+      "id": "chute-geografia-174",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Turquia, em milhões?",
       "answer": 85,
@@ -1221,6 +1395,7 @@
       "fact": "A capital é Ancara, não Istambul."
     },
     {
+      "id": "chute-geografia-175",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Irã, em milhões?",
       "answer": 89,
@@ -1228,6 +1403,7 @@
       "fact": "Fala-se persa no país."
     },
     {
+      "id": "chute-geografia-176",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Reino Unido, em milhões?",
       "answer": 68,
@@ -1235,6 +1411,7 @@
       "fact": "Cerca de 84% vivem na Inglaterra."
     },
     {
+      "id": "chute-geografia-177",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a França, em milhões?",
       "answer": 68,
@@ -1242,6 +1419,7 @@
       "fact": "Inclui os territórios ultramarinos."
     },
     {
+      "id": "chute-geografia-178",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Itália, em milhões?",
       "answer": 59,
@@ -1249,6 +1427,7 @@
       "fact": "A população tem uma das idades médias mais altas do mundo."
     },
     {
+      "id": "chute-geografia-179",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Espanha, em milhões?",
       "answer": 48,
@@ -1256,6 +1435,7 @@
       "fact": "Madri é a maior cidade."
     },
     {
+      "id": "chute-geografia-180",
       "difficulty": "medium",
       "text": "Quantos habitantes tem a Coreia do Sul, em milhões?",
       "answer": 52,
@@ -1263,6 +1443,7 @@
       "fact": "Metade vive na região de Seul."
     },
     {
+      "id": "chute-geografia-181",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Singapura, em milhões?",
       "answer": 5.9,
@@ -1270,6 +1451,7 @@
       "fact": "É um dos países mais densos do mundo."
     },
     {
+      "id": "chute-geografia-182",
       "difficulty": "medium",
       "text": "Quantos habitantes tem o Vaticano, aproximadamente?",
       "answer": 800,
@@ -1277,6 +1459,7 @@
       "fact": "A maioria é formada por religiosos e guardas."
     },
     {
+      "id": "chute-geografia-183",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Mônaco, em milhares?",
       "answer": 39,
@@ -1284,6 +1467,7 @@
       "fact": "Quase um terço é milionário."
     },
     {
+      "id": "chute-geografia-184",
       "difficulty": "medium",
       "text": "Quantos habitantes tem Andorra, em milhares?",
       "answer": 80,
@@ -1291,6 +1475,7 @@
       "fact": "A língua oficial é o catalão."
     },
     {
+      "id": "chute-geografia-185",
       "difficulty": "medium",
       "text": "Qual é a densidade populacional de Bangladesh, em pessoas por km²?",
       "answer": 1300,
@@ -1298,6 +1483,7 @@
       "fact": "É uma das maiores entre países grandes."
     },
     {
+      "id": "chute-geografia-186",
       "difficulty": "medium",
       "text": "Qual é a densidade populacional de Mônaco, em pessoas por km²?",
       "answer": 19000,
@@ -1305,6 +1491,7 @@
       "fact": "É o país mais denso do mundo."
     },
     {
+      "id": "chute-geografia-187",
       "difficulty": "medium",
       "text": "Qual é a densidade populacional do Brasil, em pessoas por km²?",
       "answer": 24,
@@ -1312,6 +1499,7 @@
       "fact": "Grande parte da Amazônia é pouco habitada."
     },
     {
+      "id": "chute-geografia-188",
       "difficulty": "medium",
       "text": "Qual é a densidade populacional da Mongólia, em pessoas por km²?",
       "answer": 2,
@@ -1319,6 +1507,7 @@
       "fact": "É o país com menos pessoas por km² do mundo."
     },
     {
+      "id": "chute-geografia-189",
       "difficulty": "medium",
       "text": "Qual é a expectativa de vida no Brasil, em anos, em 2022?",
       "answer": 75.5,
@@ -1326,6 +1515,7 @@
       "fact": "Ela caiu durante a pandemia e voltou a crescer."
     },
     {
+      "id": "chute-geografia-190",
       "difficulty": "medium",
       "text": "Qual é a expectativa de vida no Japão, em anos?",
       "answer": 84,
@@ -1333,6 +1523,7 @@
       "fact": "É uma das mais altas do mundo."
     },
     {
+      "id": "chute-geografia-191",
       "difficulty": "medium",
       "text": "Qual é a expectativa de vida em Mônaco, em anos, aproximadamente?",
       "answer": 87,
@@ -1340,6 +1531,7 @@
       "fact": "É uma das mais altas do mundo."
     },
     {
+      "id": "chute-geografia-192",
       "difficulty": "medium",
       "text": "Qual é a taxa de urbanização do Brasil, em %?",
       "answer": 87,
@@ -1347,6 +1539,7 @@
       "fact": "Em 1950, ela era de apenas 36%."
     },
     {
+      "id": "chute-geografia-193",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de católicos no Brasil no Censo de 2022, em %?",
       "answer": 56.7,
@@ -1354,6 +1547,7 @@
       "fact": "O número vem caindo a cada censo."
     },
     {
+      "id": "chute-geografia-194",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de evangélicos no Brasil no Censo de 2022, em %?",
       "answer": 26.9,
@@ -1361,6 +1555,7 @@
       "fact": "O crescimento é constante desde os anos 1980."
     },
     {
+      "id": "chute-geografia-195",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Índia, em milhões de km²?",
       "answer": 3.3,
@@ -1368,6 +1563,7 @@
       "fact": "É o sétimo maior país do mundo."
     },
     {
+      "id": "chute-geografia-196",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Argentina, em milhões de km²?",
       "answer": 2.8,
@@ -1375,6 +1571,7 @@
       "fact": "É o oitavo maior país do mundo."
     },
     {
+      "id": "chute-geografia-197",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Argélia, em milhões de km²?",
       "answer": 2.4,
@@ -1382,6 +1579,7 @@
       "fact": "É o maior país da África."
     },
     {
+      "id": "chute-geografia-198",
       "difficulty": "medium",
       "text": "Qual é o tamanho da França metropolitana, em km²?",
       "answer": 550000,
@@ -1389,6 +1587,7 @@
       "fact": "É o maior país da União Europeia."
     },
     {
+      "id": "chute-geografia-199",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Alemanha, em km²?",
       "answer": 358000,
@@ -1396,6 +1595,7 @@
       "fact": "É um pouco maior que o estado de Goiás."
     },
     {
+      "id": "chute-geografia-200",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Japão, em km²?",
       "answer": 378000,
@@ -1403,6 +1603,7 @@
       "fact": "A maior parte é montanhosa."
     },
     {
+      "id": "chute-geografia-201",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Reino Unido, em km²?",
       "answer": 243000,
@@ -1410,6 +1611,7 @@
       "fact": "É um pouco menor que o estado de São Paulo."
     },
     {
+      "id": "chute-geografia-202",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Uruguai, em km²?",
       "answer": 176000,
@@ -1417,6 +1619,7 @@
       "fact": "É um pouco menor que o Paraná."
     },
     {
+      "id": "chute-geografia-203",
       "difficulty": "medium",
       "text": "Qual é o tamanho de Israel, em km²?",
       "answer": 22000,
@@ -1424,6 +1627,7 @@
       "fact": "É do tamanho aproximado de Sergipe."
     },
     {
+      "id": "chute-geografia-204",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Suíça, em km²?",
       "answer": 41000,
@@ -1431,6 +1635,7 @@
       "fact": "Quase 60% do país fica nos Alpes."
     },
     {
+      "id": "chute-geografia-205",
       "difficulty": "medium",
       "text": "Qual é o tamanho de Mônaco, em km²?",
       "answer": 2.02,
@@ -1438,6 +1643,7 @@
       "fact": "É o segundo menor país do mundo."
     },
     {
+      "id": "chute-geografia-206",
       "difficulty": "medium",
       "text": "Qual é o tamanho de Malta, em km²?",
       "answer": 316,
@@ -1445,6 +1651,7 @@
       "fact": "É o menor país da União Europeia."
     },
     {
+      "id": "chute-geografia-207",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Ilha de Marajó, em km²?",
       "answer": 40000,
@@ -1452,6 +1659,7 @@
       "fact": "É maior que a Bélgica."
     },
     {
+      "id": "chute-geografia-208",
       "difficulty": "medium",
       "text": "Qual é o tamanho de Fernando de Noronha, em km²?",
       "answer": 26,
@@ -1459,6 +1667,7 @@
       "fact": "Boa parte é parque nacional."
     },
     {
+      "id": "chute-geografia-209",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Ilha de Páscoa, em km²?",
       "answer": 163,
@@ -1466,6 +1675,7 @@
       "fact": "Ela fica a 3.700 km do Chile."
     },
     {
+      "id": "chute-geografia-210",
       "difficulty": "medium",
       "text": "Qual é o tamanho do município de Altamira, em km²?",
       "answer": 159000,
@@ -1473,6 +1683,7 @@
       "fact": "É o maior município do Brasil em área."
     },
     {
+      "id": "chute-geografia-211",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Distrito Federal, em km²?",
       "answer": 5760,
@@ -1480,6 +1691,7 @@
       "fact": "Ele é menor que muitas cidades da Amazônia."
     },
     {
+      "id": "chute-geografia-212",
       "difficulty": "medium",
       "text": "Qual é o tamanho de Minas Gerais, em km²?",
       "answer": 586000,
@@ -1487,6 +1699,7 @@
       "fact": "É maior que a França metropolitana."
     },
     {
+      "id": "chute-geografia-213",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Rio de Janeiro, o estado, em km²?",
       "answer": 43700,
@@ -1494,6 +1707,7 @@
       "fact": "É um dos menores do Brasil."
     },
     {
+      "id": "chute-geografia-214",
       "difficulty": "medium",
       "text": "Qual é o tamanho do lago Vitória, em km²?",
       "answer": 68800,
@@ -1501,6 +1715,7 @@
       "fact": "É o maior lago da África."
     },
     {
+      "id": "chute-geografia-215",
       "difficulty": "medium",
       "text": "Qual é o tamanho do lago Superior, em km²?",
       "answer": 82100,
@@ -1508,6 +1723,7 @@
       "fact": "É o maior lago de água doce em área."
     },
     {
+      "id": "chute-geografia-216",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mar Cáspio, em km²?",
       "answer": 371000,
@@ -1515,6 +1731,7 @@
       "fact": "É maior que a Alemanha."
     },
     {
+      "id": "chute-geografia-217",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Oceano Pacífico, em milhões de km²?",
       "answer": 165,
@@ -1522,6 +1739,7 @@
       "fact": "É maior que todos os continentes juntos."
     },
     {
+      "id": "chute-geografia-218",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Oceano Atlântico, em milhões de km²?",
       "answer": 106,
@@ -1529,6 +1747,7 @@
       "fact": "Ele cresce alguns centímetros por ano."
     },
     {
+      "id": "chute-geografia-219",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Oceano Índico, em milhões de km²?",
       "answer": 70,
@@ -1536,6 +1755,7 @@
       "fact": "É o oceano mais quente do mundo."
     },
     {
+      "id": "chute-geografia-220",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Oceano Ártico, em milhões de km²?",
       "answer": 14,
@@ -1543,6 +1763,7 @@
       "fact": "É o menor oceano do mundo."
     },
     {
+      "id": "chute-geografia-221",
       "difficulty": "medium",
       "text": "Qual é a profundidade do Oceano Atlântico no ponto mais fundo, em metros?",
       "answer": 8376,
@@ -1550,6 +1771,7 @@
       "fact": "É a Fossa de Porto Rico."
     },
     {
+      "id": "chute-geografia-222",
       "difficulty": "medium",
       "text": "Qual é o comprimento da fronteira entre EUA e Canadá, em km?",
       "answer": 8891,
@@ -1557,6 +1779,7 @@
       "fact": "É a mais longa do mundo entre dois países."
     },
     {
+      "id": "chute-geografia-223",
       "difficulty": "medium",
       "text": "Qual é o comprimento da fronteira entre EUA e México, em km?",
       "answer": 3145,
@@ -1564,6 +1787,7 @@
       "fact": "Grande parte tem cercas e muros."
     },
     {
+      "id": "chute-geografia-224",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Transiberiano, entre Moscou e Vladivostok, em km?",
       "answer": 9289,
@@ -1571,6 +1795,7 @@
       "fact": "A viagem leva cerca de sete dias."
     },
     {
+      "id": "chute-geografia-225",
       "difficulty": "medium",
       "text": "Qual é o comprimento da Estrada Pan-Americana, em km, aproximadamente?",
       "answer": 30000,
@@ -1578,6 +1803,7 @@
       "fact": "Liga o Alasca à Argentina, com uma interrupção no Panamá."
     },
     {
+      "id": "chute-geografia-226",
       "difficulty": "medium",
       "text": "Qual é o comprimento da Rota 66, nos EUA, em km?",
       "answer": 3940,
@@ -1585,6 +1811,7 @@
       "fact": "Ela ligava Chicago a Santa Mônica."
     },
     {
+      "id": "chute-geografia-227",
       "difficulty": "medium",
       "text": "Qual é o comprimento da Rodovia Transamazônica, em km?",
       "answer": 4260,
@@ -1592,6 +1819,7 @@
       "fact": "Boa parte dela nunca foi asfaltada."
     },
     {
+      "id": "chute-geografia-228",
       "difficulty": "medium",
       "text": "Qual é o comprimento da BR-116, a maior rodovia do Brasil, em km?",
       "answer": 4385,
@@ -1599,6 +1827,7 @@
       "fact": "Ela vai do Ceará ao Rio Grande do Sul."
     },
     {
+      "id": "chute-geografia-229",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Túnel de São Gotardo, em km?",
       "answer": 57,
@@ -1606,6 +1835,7 @@
       "fact": "É o túnel ferroviário mais longo do mundo."
     },
     {
+      "id": "chute-geografia-230",
       "difficulty": "medium",
       "text": "Qual é o comprimento da ponte Hong Kong-Zhuhai-Macau, em km?",
       "answer": 55,
@@ -1613,6 +1843,7 @@
       "fact": "É a maior ponte marítima do mundo."
     },
     {
+      "id": "chute-geografia-231",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Mississippi, em km?",
       "answer": 3730,
@@ -1620,6 +1851,7 @@
       "fact": "Ele corta os EUA de norte a sul."
     },
     {
+      "id": "chute-geografia-232",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Danúbio, em km?",
       "answer": 2850,
@@ -1627,6 +1859,7 @@
       "fact": "Ele passa por mais países do que qualquer outro rio."
     },
     {
+      "id": "chute-geografia-233",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Volga, em km?",
       "answer": 3530,
@@ -1634,6 +1867,7 @@
       "fact": "Ele é o rio mais longo da Europa."
     },
     {
+      "id": "chute-geografia-234",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Sena, em km?",
       "answer": 777,
@@ -1641,6 +1875,7 @@
       "fact": "Ele atravessa Paris."
     },
     {
+      "id": "chute-geografia-235",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Tâmisa, em km?",
       "answer": 346,
@@ -1648,6 +1883,7 @@
       "fact": "Ele atravessa Londres."
     },
     {
+      "id": "chute-geografia-236",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Tejo, em km?",
       "answer": 1007,
@@ -1655,6 +1891,7 @@
       "fact": "Ele nasce na Espanha e deságua em Lisboa."
     },
     {
+      "id": "chute-geografia-237",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Ganges, em km?",
       "answer": 2525,
@@ -1662,6 +1899,7 @@
       "fact": "Cerca de 500 milhões de pessoas vivem em sua bacia."
     },
     {
+      "id": "chute-geografia-238",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Congo, em km?",
       "answer": 4700,
@@ -1669,6 +1907,7 @@
       "fact": "É o rio mais profundo do mundo."
     },
     {
+      "id": "chute-geografia-239",
       "difficulty": "medium",
       "text": "Qual é a profundidade do Rio Congo, em metros, no ponto mais fundo?",
       "answer": 220,
@@ -1676,6 +1915,7 @@
       "fact": "É a maior profundidade conhecida em um rio."
     },
     {
+      "id": "chute-geografia-240",
       "difficulty": "medium",
       "text": "Qual é a largura do rio Amazonas na foz, em km?",
       "answer": 300,
@@ -1683,6 +1923,7 @@
       "fact": "Nas cheias, a largura aumenta ainda mais."
     },
     {
+      "id": "chute-geografia-241",
       "difficulty": "medium",
       "text": "Qual a altitude do K2, em metros?",
       "answer": 8611,
@@ -1690,6 +1931,7 @@
       "fact": "É considerado mais perigoso que o Everest."
     },
     {
+      "id": "chute-geografia-242",
       "difficulty": "medium",
       "text": "Qual a altitude do Mauna Kea acima do mar, em metros?",
       "answer": 4207,
@@ -1697,6 +1939,7 @@
       "fact": "Da base no mar, ele tem mais de 10 mil metros."
     },
     {
+      "id": "chute-geografia-243",
       "difficulty": "medium",
       "text": "Qual a altitude do Monte Elbrus, em metros?",
       "answer": 5642,
@@ -1704,6 +1947,7 @@
       "fact": "É considerado o mais alto da Europa por muitos."
     },
     {
+      "id": "chute-geografia-244",
       "difficulty": "medium",
       "text": "Qual a altitude do Denali, em metros?",
       "answer": 6190,
@@ -1711,6 +1955,7 @@
       "fact": "É o ponto mais alto da América do Norte."
     },
     {
+      "id": "chute-geografia-245",
       "difficulty": "medium",
       "text": "Qual a altitude do Pico Duarte, o mais alto do Caribe, em metros?",
       "answer": 3101,
@@ -1718,6 +1963,7 @@
       "fact": "Fica na República Dominicana."
     },
     {
+      "id": "chute-geografia-246",
       "difficulty": "easy",
       "text": "Quantos países formam a União Europeia em 2024?",
       "answer": 27,
@@ -1725,6 +1971,7 @@
       "fact": "A Croácia foi o último a entrar, em 2013."
     },
     {
+      "id": "chute-geografia-247",
       "difficulty": "hard",
       "text": "Quantas línguas oficiais tem a Bolívia, contando as indígenas?",
       "answer": 37,
@@ -1732,6 +1979,7 @@
       "fact": "A Constituição de 2009 reconhece todas."
     },
     {
+      "id": "chute-geografia-248",
       "difficulty": "medium",
       "text": "Quantos países tem a América Central?",
       "answer": 7,
@@ -1739,6 +1987,7 @@
       "fact": "Belize é o único de língua inglesa."
     },
     {
+      "id": "chute-geografia-249",
       "difficulty": "hard",
       "text": "Quantos países tem o Oriente Médio, em uma das listas mais usadas?",
       "answer": 17,
@@ -1746,6 +1995,7 @@
       "fact": "A definição varia bastante."
     },
     {
+      "id": "chute-geografia-250",
       "difficulty": "medium",
       "text": "Quantas capitais a África do Sul tem?",
       "answer": 3,
@@ -1753,6 +2003,7 @@
       "fact": "Pretória, Cidade do Cabo e Bloemfontein."
     },
     {
+      "id": "chute-geografia-251",
       "difficulty": "medium",
       "text": "Em que latitude fica a linha do Trópico de Capricórnio, aproximadamente?",
       "answer": -23.4,
@@ -1760,6 +2011,7 @@
       "fact": "Ela passa pelo estado de São Paulo e é a linha do solstício de verão."
     },
     {
+      "id": "chute-geografia-252",
       "difficulty": "medium",
       "text": "Em que latitude fica Porto Alegre, aproximadamente, em graus?",
       "answer": -30,
@@ -1767,6 +2019,7 @@
       "fact": "A latitude negativa indica o Hemisfério Sul."
     },
     {
+      "id": "chute-geografia-253",
       "difficulty": "medium",
       "text": "Em que latitude fica Ushuaia, aproximadamente, em graus?",
       "answer": -54.8,
@@ -1774,6 +2027,7 @@
       "fact": "Ela fica perto do fim do mundo."
     },
     {
+      "id": "chute-geografia-254",
       "difficulty": "medium",
       "text": "Em que latitude fica Macapá, aproximadamente, em graus?",
       "answer": 0,
@@ -1782,6 +2036,7 @@
       "fact": "A cidade é cortada pela linha do Equador."
     },
     {
+      "id": "chute-geografia-255",
       "difficulty": "medium",
       "text": "Em que longitude fica o ponto mais a oeste do Brasil, em graus?",
       "answer": -73.9,
@@ -1789,6 +2044,7 @@
       "fact": "Fica na Serra do Divisor, no Acre."
     },
     {
+      "id": "chute-geografia-256",
       "difficulty": "medium",
       "text": "Em que longitude fica a cidade de Greenwich, em graus?",
       "answer": 0,
@@ -1797,6 +2053,7 @@
       "fact": "Foi definida como referência em 1884."
     },
     {
+      "id": "chute-geografia-257",
       "difficulty": "medium",
       "text": "Qual a altitude da cidade de Nova Orleans, em média, em metros?",
       "answer": -0.5,
@@ -1804,6 +2061,7 @@
       "fact": "Boa parte da cidade fica abaixo do nível do mar."
     },
     {
+      "id": "chute-geografia-258",
       "difficulty": "medium",
       "text": "Qual a altitude da região de Turpan, na China, no ponto mais baixo, em metros?",
       "answer": -154,
@@ -1811,6 +2069,7 @@
       "fact": "É o segundo ponto mais baixo em terra firme."
     },
     {
+      "id": "chute-geografia-259",
       "difficulty": "medium",
       "text": "Qual a altitude do Lago Eyre, o ponto mais baixo da Austrália, em metros?",
       "answer": -15,
@@ -1818,6 +2077,7 @@
       "fact": "Ele fica cheio poucas vezes em um século."
     },
     {
+      "id": "chute-geografia-260",
       "difficulty": "medium",
       "text": "Qual a altitude do ponto mais baixo da América do Sul, Laguna del Carbón, em metros?",
       "answer": -105,
@@ -1825,6 +2085,7 @@
       "fact": "Fica na Patagônia argentina."
     },
     {
+      "id": "chute-geografia-261",
       "difficulty": "medium",
       "text": "Qual a altitude da região da Depressão de Qattara, no Egito, em metros?",
       "answer": -133,
@@ -1832,6 +2093,7 @@
       "fact": "Foi um grande obstáculo na Segunda Guerra Mundial."
     },
     {
+      "id": "chute-geografia-262",
       "difficulty": "medium",
       "text": "Qual a temperatura média em Oymyakon em janeiro, em °C?",
       "answer": -50,
@@ -1839,6 +2101,7 @@
       "fact": "O lugar é conhecido como o \"Polo do Frio\"."
     },
     {
+      "id": "chute-geografia-263",
       "difficulty": "medium",
       "text": "Qual é a temperatura máxima já registrada em Portugal, em °C?",
       "answer": 47.4,
@@ -1846,6 +2109,7 @@
       "fact": "Foi em 2003, em Amareleja."
     },
     {
+      "id": "chute-geografia-264",
       "difficulty": "medium",
       "text": "Qual é a temperatura máxima já registrada na Europa, em °C?",
       "answer": 48.8,
@@ -1853,6 +2117,7 @@
       "fact": "Foi em 2021, na Sicília."
     },
     {
+      "id": "chute-geografia-265",
       "difficulty": "hard",
       "text": "Qual é a temperatura mínima já registrada na Sibéria, em Verkhoyansk, em °C?",
       "answer": -67.8,
@@ -1860,6 +2125,7 @@
       "fact": "A cidade também é muito quente no verão."
     },
     {
+      "id": "chute-geografia-266",
       "difficulty": "hard",
       "text": "Qual é a maior amplitude térmica de Verkhoyansk em um ano, em °C?",
       "answer": 105,
@@ -1867,6 +2133,7 @@
       "fact": "A temperatura vai de quase -68 °C a mais de 37 °C."
     },
     {
+      "id": "chute-geografia-267",
       "difficulty": "hard",
       "text": "Usando negativo para a.C., em que ano Roma foi fundada, segundo a tradição?",
       "answer": -753,
@@ -1874,6 +2141,7 @@
       "fact": "A lenda cita Rômulo e Remo."
     },
     {
+      "id": "chute-geografia-268",
       "difficulty": "hard",
       "text": "Usando negativo para a.C., em que ano Cartago foi fundada, segundo a tradição?",
       "answer": -814,
@@ -1881,6 +2149,7 @@
       "fact": "Foi rival de Roma nas Guerras Púnicas."
     },
     {
+      "id": "chute-geografia-269",
       "difficulty": "hard",
       "text": "Usando negativo para a.C., em que ano Bizâncio foi fundada, segundo a tradição?",
       "answer": -667,
@@ -1888,6 +2157,7 @@
       "fact": "A cidade hoje se chama Istambul."
     },
     {
+      "id": "chute-geografia-270",
       "difficulty": "hard",
       "text": "Em que ano foi fundado o Rio de Janeiro?",
       "answer": 1565,
@@ -1895,6 +2165,7 @@
       "fact": "Estácio de Sá fundou a cidade entre o Pão de Açúcar e o Cara de Cão."
     },
     {
+      "id": "chute-geografia-271",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Salvador?",
       "answer": 1549,
@@ -1902,6 +2173,7 @@
       "fact": "Foi a primeira capital do Brasil."
     },
     {
+      "id": "chute-geografia-272",
       "difficulty": "hard",
       "text": "Em que ano foi fundado o Recife?",
       "answer": 1537,
@@ -1909,6 +2181,7 @@
       "fact": "Os holandeses transformaram a cidade no século XVII."
     },
     {
+      "id": "chute-geografia-273",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Belém?",
       "answer": 1616,
@@ -1916,6 +2189,7 @@
       "fact": "Era um forte para defender a foz do Amazonas."
     },
     {
+      "id": "chute-geografia-274",
       "difficulty": "hard",
       "text": "Em que ano foi fundada São Luís?",
       "answer": 1612,
@@ -1923,6 +2197,7 @@
       "fact": "Os franceses a fundaram e deram o nome de um rei."
     },
     {
+      "id": "chute-geografia-275",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Fortaleza?",
       "answer": 1726,
@@ -1930,6 +2205,7 @@
       "fact": "A vila surgiu ao redor de um forte holandês."
     },
     {
+      "id": "chute-geografia-276",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Manaus?",
       "answer": 1669,
@@ -1937,6 +2213,7 @@
       "fact": "Era um forte português à beira do Rio Negro."
     },
     {
+      "id": "chute-geografia-277",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Curitiba?",
       "answer": 1693,
@@ -1944,6 +2221,7 @@
       "fact": "O nome vem do tupi e significa \"muito pinhão\"."
     },
     {
+      "id": "chute-geografia-278",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Porto Alegre?",
       "answer": 1772,
@@ -1951,6 +2229,7 @@
       "fact": "Casais açorianos deram início à cidade."
     },
     {
+      "id": "chute-geografia-279",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Belo Horizonte?",
       "answer": 1897,
@@ -1958,6 +2237,7 @@
       "fact": "Foi a primeira capital planejada do país."
     },
     {
+      "id": "chute-geografia-280",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Goiânia?",
       "answer": 1933,
@@ -1965,6 +2245,7 @@
       "fact": "A capital foi transferida da Cidade de Goiás."
     },
     {
+      "id": "chute-geografia-281",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Palmas?",
       "answer": 1989,
@@ -1972,6 +2253,7 @@
       "fact": "É a capital mais jovem do Brasil."
     },
     {
+      "id": "chute-geografia-282",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Buenos Aires pela segunda vez?",
       "answer": 1580,
@@ -1979,6 +2261,7 @@
       "fact": "A primeira fundação, de 1536, fracassou."
     },
     {
+      "id": "chute-geografia-283",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Lima?",
       "answer": 1535,
@@ -1986,6 +2269,7 @@
       "fact": "Foi fundada por Francisco Pizarro."
     },
     {
+      "id": "chute-geografia-284",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Santiago do Chile?",
       "answer": 1541,
@@ -1993,6 +2277,7 @@
       "fact": "Foi fundada por Pedro de Valdivia."
     },
     {
+      "id": "chute-geografia-285",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Nova York, como Nova Amsterdã?",
       "answer": 1625,
@@ -2000,6 +2285,7 @@
       "fact": "Os holandeses compraram Manhattan pouco depois."
     },
     {
+      "id": "chute-geografia-286",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Quebec?",
       "answer": 1608,
@@ -2007,6 +2293,7 @@
       "fact": "Foi fundada por Samuel de Champlain."
     },
     {
+      "id": "chute-geografia-287",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Sydney?",
       "answer": 1788,
@@ -2014,6 +2301,7 @@
       "fact": "A cidade começou como uma colônia penal britânica."
     },
     {
+      "id": "chute-geografia-288",
       "difficulty": "hard",
       "text": "Em que ano foi fundada São Petersburgo?",
       "answer": 1703,
@@ -2021,6 +2309,7 @@
       "fact": "Foi criada por Pedro, o Grande."
     },
     {
+      "id": "chute-geografia-289",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Moscou, segundo a primeira menção?",
       "answer": 1147,
@@ -2028,6 +2317,7 @@
       "fact": "Ela aparece em um registro de um príncipe."
     },
     {
+      "id": "chute-geografia-290",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Berlim, segundo os primeiros registros?",
       "answer": 1237,
@@ -2035,6 +2325,7 @@
       "fact": "A cidade cresceu rápido no século XIX."
     },
     {
+      "id": "chute-geografia-291",
       "difficulty": "hard",
       "text": "Em que ano foi construída a Torre Eiffel?",
       "answer": 1889,
@@ -2042,6 +2333,7 @@
       "fact": "A estrutura seria desmontada depois de 20 anos."
     },
     {
+      "id": "chute-geografia-292",
       "difficulty": "hard",
       "text": "Em que ano foi concluído o Empire State Building?",
       "answer": 1931,
@@ -2049,6 +2341,7 @@
       "fact": "A obra levou só 13 meses."
     },
     {
+      "id": "chute-geografia-293",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Burj Khalifa?",
       "answer": 2010,
@@ -2056,6 +2349,7 @@
       "fact": "Tem mais de 800 metros."
     },
     {
+      "id": "chute-geografia-294",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Golden Gate?",
       "answer": 1937,
@@ -2063,6 +2357,7 @@
       "fact": "Ela ligou San Francisco ao condado de Marin."
     },
     {
+      "id": "chute-geografia-295",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Ponte do Brooklyn?",
       "answer": 1883,
@@ -2070,6 +2365,7 @@
       "fact": "Foi a primeira grande ponte suspensa de aço."
     },
     {
+      "id": "chute-geografia-296",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Eurotúnel?",
       "answer": 1994,
@@ -2077,6 +2373,7 @@
       "fact": "Ele liga o Reino Unido à França."
     },
     {
+      "id": "chute-geografia-297",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a usina de Itaipu?",
       "answer": 1984,
@@ -2084,6 +2381,7 @@
       "fact": "A construção usou concreto para 210 estádios como o Maracanã."
     },
     {
+      "id": "chute-geografia-298",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Estrada de Ferro Madeira-Mamoré?",
       "answer": 1912,
@@ -2091,6 +2389,7 @@
       "fact": "Foi chamada de \"Ferrovia do Diabo\", pelas muitas mortes."
     },
     {
+      "id": "chute-geografia-299",
       "difficulty": "hard",
       "text": "Em que ano foi assinado o Tratado de Tordesilhas?",
       "answer": 1494,
@@ -2098,6 +2397,7 @@
       "fact": "Ele dividiu o Novo Mundo entre Portugal e Espanha."
     },
     {
+      "id": "chute-geografia-300",
       "difficulty": "hard",
       "text": "Em que ano foi assinado o Tratado de Madri?",
       "answer": 1750,
@@ -2105,6 +2405,7 @@
       "fact": "Ele definiu boa parte das fronteiras do Brasil."
     },
     {
+      "id": "chute-geografia-301",
       "difficulty": "hard",
       "text": "Em que ano o Acre foi incorporado ao Brasil?",
       "answer": 1903,
@@ -2112,6 +2413,7 @@
       "fact": "O Tratado de Petrópolis comprou o território da Bolívia."
     },
     {
+      "id": "chute-geografia-302",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Paraná, separado de São Paulo?",
       "answer": 1853,
@@ -2119,6 +2421,7 @@
       "fact": "Curitiba foi escolhida como capital da província."
     },
     {
+      "id": "chute-geografia-303",
       "difficulty": "hard",
       "text": "Em que ano foi criado Mato Grosso do Sul?",
       "answer": 1977,
@@ -2126,6 +2429,7 @@
       "fact": "A divisão começou a valer em 1979."
     },
     {
+      "id": "chute-geografia-304",
       "difficulty": "hard",
       "text": "Em que ano o Rio de Janeiro e a Guanabara se fundiram?",
       "answer": 1975,
@@ -2133,6 +2437,7 @@
       "fact": "A cidade do Rio virou capital do estado."
     },
     {
+      "id": "chute-geografia-305",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Índia independente?",
       "answer": 1947,
@@ -2140,6 +2445,7 @@
       "fact": "A partição criou também o Paquistão."
     },
     {
+      "id": "chute-geografia-306",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Estado de Israel?",
       "answer": 1948,
@@ -2147,6 +2453,7 @@
       "fact": "David Ben-Gurion fez a proclamação."
     },
     {
+      "id": "chute-geografia-307",
       "difficulty": "hard",
       "text": "Em que ano foi reunificado o Vietnã?",
       "answer": 1976,
@@ -2154,6 +2461,7 @@
       "fact": "Foi depois do fim da Guerra do Vietnã."
     },
     {
+      "id": "chute-geografia-308",
       "difficulty": "hard",
       "text": "Em que ano foi reunificada a Alemanha?",
       "answer": 1990,
@@ -2161,6 +2469,7 @@
       "fact": "Isso aconteceu menos de um ano depois da queda do muro."
     },
     {
+      "id": "chute-geografia-309",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Coreia do Sul como Estado?",
       "answer": 1948,
@@ -2168,6 +2477,7 @@
       "fact": "A divisão seguiu o paralelo 38."
     },
     {
+      "id": "chute-geografia-310",
       "difficulty": "hard",
       "text": "Em que ano Angola ficou independente de Portugal?",
       "answer": 1975,
@@ -2175,6 +2485,7 @@
       "fact": "O país enfrentou uma longa guerra civil."
     },
     {
+      "id": "chute-geografia-311",
       "difficulty": "hard",
       "text": "Em que ano Moçambique ficou independente de Portugal?",
       "answer": 1975,
@@ -2182,6 +2493,7 @@
       "fact": "A Frelimo liderou a luta pela independência."
     },
     {
+      "id": "chute-geografia-312",
       "difficulty": "hard",
       "text": "Em que ano a Suíça entrou na ONU?",
       "answer": 2002,
@@ -2189,6 +2501,7 @@
       "fact": "Ela sempre defendeu a própria neutralidade."
     },
     {
+      "id": "chute-geografia-313",
       "difficulty": "hard",
       "text": "Em que ano o Reino Unido entrou na CEE?",
       "answer": 1973,
@@ -2196,6 +2509,7 @@
       "fact": "Em 2016, o país decidiu sair da União Europeia."
     },
     {
+      "id": "chute-geografia-314",
       "difficulty": "hard",
       "text": "Em que ano o Brasil foi descoberto pelos portugueses?",
       "answer": 1500,
@@ -2203,6 +2517,7 @@
       "fact": "Pedro Álvares Cabral chegou em abril."
     },
     {
+      "id": "chute-geografia-315",
       "difficulty": "hard",
       "text": "Quantas pessoas vivem na Antártida no verão, aproximadamente?",
       "answer": 5000,
@@ -2210,6 +2525,7 @@
       "fact": "No inverno, o número cai para cerca de mil."
     },
     {
+      "id": "chute-geografia-316",
       "difficulty": "hard",
       "text": "Quantas pessoas vivem na Ilha de Tristão da Cunha, a mais isolada do mundo, aproximadamente?",
       "answer": 250,
@@ -2217,6 +2533,7 @@
       "fact": "Ela fica a 2.400 km de Santa Helena."
     },
     {
+      "id": "chute-geografia-317",
       "difficulty": "hard",
       "text": "Quantas pessoas vivem em Longyearbyen, em Svalbard, aproximadamente?",
       "answer": 2500,
@@ -2224,6 +2541,7 @@
       "fact": "Por lei, morrer não é recomendado lá, porque o solo congelado conserva os corpos."
     },
     {
+      "id": "chute-geografia-318",
       "difficulty": "hard",
       "text": "Quantas pessoas vivem nas Ilhas Pitcairn, aproximadamente?",
       "answer": 50,
@@ -2231,6 +2549,7 @@
       "fact": "Muitos descendem dos amotinados do navio Bounty."
     },
     {
+      "id": "chute-geografia-319",
       "difficulty": "hard",
       "text": "Quantas pessoas vivem na Groenlândia, aproximadamente?",
       "answer": 56000,
@@ -2238,6 +2557,7 @@
       "fact": "Ela pertence ao Reino da Dinamarca."
     },
     {
+      "id": "chute-geografia-320",
       "difficulty": "hard",
       "text": "Quantas pessoas vivem na Ilha de Páscoa, aproximadamente?",
       "answer": 7700,
@@ -2245,6 +2565,7 @@
       "fact": "Os moais foram talhados pelos antigos rapanuis."
     },
     {
+      "id": "chute-geografia-321",
       "difficulty": "hard",
       "text": "Quantos moais existem na Ilha de Páscoa, aproximadamente?",
       "answer": 900,
@@ -2252,6 +2573,7 @@
       "fact": "A maioria foi feita de uma só pedreira."
     },
     {
+      "id": "chute-geografia-322",
       "difficulty": "hard",
       "text": "Quantas pirâmides há em todo o Sudão, aproximadamente?",
       "answer": 255,
@@ -2259,6 +2581,7 @@
       "fact": "Há mais pirâmides no Sudão do que no Egito."
     },
     {
+      "id": "chute-geografia-323",
       "difficulty": "hard",
       "text": "Quantas pirâmides há no Egito, aproximadamente?",
       "answer": 118,
@@ -2266,6 +2589,7 @@
       "fact": "As mais famosas estão em Gizé."
     },
     {
+      "id": "chute-geografia-324",
       "difficulty": "hard",
       "text": "Quantos blocos de pedra tem a Grande Pirâmide, aproximadamente?",
       "answer": 2300000,
@@ -2273,6 +2597,7 @@
       "fact": "Cada um pesa, em média, 2,5 toneladas."
     },
     {
+      "id": "chute-geografia-325",
       "difficulty": "hard",
       "text": "Quantas turbinas tem a usina de Itaipu?",
       "answer": 20,
@@ -2280,6 +2605,7 @@
       "fact": "É uma das maiores geradoras do mundo."
     },
     {
+      "id": "chute-geografia-326",
       "difficulty": "hard",
       "text": "Quantas turbinas tem a usina de Três Gargantas, na China?",
       "answer": 32,
@@ -2287,6 +2613,7 @@
       "fact": "É a maior hidrelétrica do mundo em potência."
     },
     {
+      "id": "chute-geografia-327",
       "difficulty": "hard",
       "text": "Qual é a altura da barragem de Três Gargantas, em metros?",
       "answer": 181,
@@ -2294,6 +2621,7 @@
       "fact": "O peso de sua água alterou até a rotação da Terra."
     },
     {
+      "id": "chute-geografia-328",
       "difficulty": "hard",
       "text": "Qual é o comprimento da barragem de Itaipu, em km?",
       "answer": 7.9,
@@ -2301,6 +2629,7 @@
       "fact": "A obra deslocou mais de 40 mil famílias."
     },
     {
+      "id": "chute-geografia-329",
       "difficulty": "hard",
       "text": "Quantos estados brasileiros têm litoral?",
       "answer": 17,
@@ -2308,6 +2637,7 @@
       "fact": "O Piauí tem o menor deles."
     },
     {
+      "id": "chute-geografia-330",
       "difficulty": "hard",
       "text": "Qual é a extensão do litoral do Piauí, em km?",
       "answer": 66,
@@ -2315,6 +2645,7 @@
       "fact": "É o menor litoral do Brasil."
     },
     {
+      "id": "chute-geografia-331",
       "difficulty": "hard",
       "text": "Qual é a extensão do litoral da Bahia, em km?",
       "answer": 1103,
@@ -2322,6 +2653,7 @@
       "fact": "É o maior litoral estadual do Brasil."
     },
     {
+      "id": "chute-geografia-332",
       "difficulty": "hard",
       "text": "Quantos países atravessa o Rio Amazonas, em seu curso?",
       "answer": 3,
@@ -2329,6 +2661,7 @@
       "fact": "São Peru, Colômbia e Brasil."
     },
     {
+      "id": "chute-geografia-333",
       "difficulty": "hard",
       "text": "Quantos países atravessa o Nilo, contando afluentes?",
       "answer": 11,
@@ -2336,6 +2669,7 @@
       "fact": "Ele é vital para o Egito."
     },
     {
+      "id": "chute-geografia-334",
       "difficulty": "hard",
       "text": "Quantos países tem em sua fronteira a China?",
       "answer": 14,
@@ -2343,6 +2677,7 @@
       "fact": "Empata com a Rússia em número de vizinhos."
     },
     {
+      "id": "chute-geografia-335",
       "difficulty": "hard",
       "text": "Quantos países tem em sua fronteira a Alemanha?",
       "answer": 9,
@@ -2350,6 +2685,7 @@
       "fact": "É o país da Europa com mais vizinhos, excluindo a Rússia."
     },
     {
+      "id": "chute-geografia-336",
       "difficulty": "hard",
       "text": "Quantos países tem em sua fronteira a Argentina?",
       "answer": 5,
@@ -2357,6 +2693,7 @@
       "fact": "A fronteira com o Chile é a terceira maior do mundo."
     },
     {
+      "id": "chute-geografia-337",
       "difficulty": "hard",
       "text": "Quantos km tem a fronteira entre Argentina e Chile?",
       "answer": 5308,
@@ -2364,6 +2701,7 @@
       "fact": "Ela segue principalmente a Cordilheira dos Andes."
     },
     {
+      "id": "chute-geografia-338",
       "difficulty": "hard",
       "text": "Quantos km tem a fronteira entre Brasil e Bolívia?",
       "answer": 3423,
@@ -2371,6 +2709,7 @@
       "fact": "É a maior fronteira do Brasil."
     },
     {
+      "id": "chute-geografia-339",
       "difficulty": "hard",
       "text": "Quantos km tem a fronteira entre Brasil e Paraguai?",
       "answer": 1365,
@@ -2378,6 +2717,7 @@
       "fact": "A Ponte da Amizade fica nela."
     },
     {
+      "id": "chute-geografia-340",
       "difficulty": "hard",
       "text": "Quantos km tem a fronteira mais curta do mundo, entre Espanha e Marrocos, em Peñón de Vélez?",
       "answer": 0.085,
@@ -2385,6 +2725,7 @@
       "fact": "Ela tem só 85 metros."
     },
     {
+      "id": "chute-geografia-341",
       "difficulty": "hard",
       "text": "Quantos metros tem a rua mais curta do mundo, Ebenezer Place, na Escócia?",
       "answer": 2,
@@ -2392,6 +2733,7 @@
       "fact": "Ela está no Guinness."
     },
     {
+      "id": "chute-geografia-342",
       "difficulty": "hard",
       "text": "Quantos metros tem a rua mais íngreme do mundo, em Harlech, em inclinação, em %?",
       "answer": 37,
@@ -2399,6 +2741,7 @@
       "fact": "Ela fica no País de Gales."
     },
     {
+      "id": "chute-geografia-343",
       "difficulty": "hard",
       "text": "Qual é a altura da cachoeira Salto Angel, em metros?",
       "answer": 979,
@@ -2406,6 +2749,7 @@
       "fact": "Em certos dias, a água vira névoa antes de chegar ao chão."
     },
     {
+      "id": "chute-geografia-344",
       "difficulty": "hard",
       "text": "Qual é a largura máxima das Cataratas Vitória, em metros?",
       "answer": 1708,
@@ -2413,6 +2757,7 @@
       "fact": "O nome local é \"fumaça que troveja\"."
     },
     {
+      "id": "chute-geografia-345",
       "difficulty": "hard",
       "text": "Qual é a altura das Cataratas Vitória, em metros?",
       "answer": 108,
@@ -2420,6 +2765,7 @@
       "fact": "É a maior cortina de água do mundo."
     },
     {
+      "id": "chute-geografia-346",
       "difficulty": "hard",
       "text": "Qual é a idade do rio Finke, um dos mais antigos do mundo, em milhões de anos?",
       "answer": 350,
@@ -2427,6 +2773,7 @@
       "fact": "Fica na Austrália."
     },
     {
+      "id": "chute-geografia-347",
       "difficulty": "hard",
       "text": "Qual é a altura da onda mais alta surfada, em Nazaré, em metros?",
       "answer": 26.2,
@@ -2434,6 +2781,7 @@
       "fact": "Foi surfada por Sebastian Steudtner, em 2020."
     },
     {
+      "id": "chute-geografia-348",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Groenlândia coberta de gelo, em %?",
       "answer": 80,
@@ -2441,6 +2789,7 @@
       "fact": "O gelo tem até 3 km de espessura."
     },
     {
+      "id": "chute-geografia-349",
       "difficulty": "medium",
       "text": "Qual é a menor distância entre a África e a Europa, em km?",
       "answer": 14,
@@ -2448,6 +2797,7 @@
       "fact": "É a largura do Estreito de Gibraltar."
     },
     {
+      "id": "chute-geografia-350",
       "difficulty": "hard",
       "text": "Qual é a largura do Estreito de Bering, em km?",
       "answer": 82,
@@ -2455,6 +2805,7 @@
       "fact": "Em dias claros, dá para ver a Rússia do Alasca."
     },
     {
+      "id": "chute-geografia-351",
       "difficulty": "hard",
       "text": "Qual é a distância entre as ilhas Diomedes, de Rússia e EUA, em km?",
       "answer": 3.8,
@@ -2462,6 +2813,7 @@
       "fact": "Elas têm 21 horas de diferença de fuso."
     },
     {
+      "id": "chute-geografia-352",
       "difficulty": "hard",
       "text": "Qual é a largura do Canal da Mancha no ponto mais estreito, em km?",
       "answer": 33,
@@ -2469,6 +2821,7 @@
       "fact": "O nadador Matthew Webb o atravessou em 1875."
     },
     {
+      "id": "chute-geografia-353",
       "difficulty": "hard",
       "text": "Quantos km separam Natal, no Brasil, de Dakar, no Senegal?",
       "answer": 3000,
@@ -2476,6 +2829,7 @@
       "fact": "É a menor distância entre a América e a África."
     },
     {
+      "id": "chute-geografia-354",
       "difficulty": "hard",
       "text": "Quantos km separam Lisboa de Fernando de Noronha, aproximadamente?",
       "answer": 5000,
@@ -2483,6 +2837,7 @@
       "fact": "Gago Coutinho e Sacadura Cabral pararam na região em 1922."
     },
     {
+      "id": "chute-geografia-355",
       "difficulty": "hard",
       "text": "Quantos km a Ilha Bouvet, a mais isolada do mundo, fica da terra mais próxima?",
       "answer": 1700,
@@ -2490,6 +2845,7 @@
       "fact": "Ela pertence à Noruega e quase não tem vida."
     },
     {
+      "id": "chute-geografia-356",
       "difficulty": "hard",
       "text": "Quantos km a Ilha de Páscoa fica do Chile?",
       "answer": 3700,
@@ -2497,6 +2853,7 @@
       "fact": "Ela é um dos lugares habitados mais isolados do planeta."
     },
     {
+      "id": "chute-geografia-357",
       "difficulty": "hard",
       "text": "Quantos km Fernando de Noronha fica de Natal?",
       "answer": 360,
@@ -2504,6 +2861,7 @@
       "fact": "Ela foi uma base usada na Segunda Guerra."
     },
     {
+      "id": "chute-geografia-358",
       "difficulty": "hard",
       "text": "Quantos km o Havaí fica da Califórnia?",
       "answer": 3900,
@@ -2511,6 +2869,7 @@
       "fact": "É o grupo de ilhas mais isolado do mundo."
     },
     {
+      "id": "chute-geografia-359",
       "difficulty": "hard",
       "text": "Qual é o ponto mais distante do mar no mundo, em km?",
       "answer": 2500,
@@ -2518,6 +2877,7 @@
       "fact": "Fica na China, perto de Urumqi."
     },
     {
+      "id": "chute-geografia-360",
       "difficulty": "hard",
       "text": "Qual é o ponto mais distante da terra no mar, o Ponto Nemo, em km?",
       "answer": 2688,
@@ -2525,6 +2885,7 @@
       "fact": "Em muitos momentos, os astronautas estão mais próximos que qualquer pessoa em terra."
     },
     {
+      "id": "chute-geografia-361",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram no Terremoto da Grande Kanto, em 1923, aproximadamente?",
       "answer": 140000,
@@ -2532,6 +2893,7 @@
       "fact": "Tóquio e Yokohama foram devastadas."
     },
     {
+      "id": "chute-geografia-362",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram no terremoto de Shaanxi, em 1556, aproximadamente?",
       "answer": 830000,
@@ -2539,6 +2901,7 @@
       "fact": "É considerado o mais mortal da história."
     },
     {
+      "id": "chute-geografia-363",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram na erupção de Tambora, em 1815, aproximadamente?",
       "answer": 71000,
@@ -2546,6 +2909,7 @@
       "fact": "No ano seguinte, a Europa ficou sem verão."
     },
     {
+      "id": "chute-geografia-364",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram no ciclone de Bhola, em 1970, aproximadamente?",
       "answer": 500000,
@@ -2553,6 +2917,7 @@
       "fact": "Foi o ciclone mais mortal já registrado."
     },
     {
+      "id": "chute-geografia-365",
       "difficulty": "hard",
       "text": "Quantas pessoas foram removidas para a construção da represa de Três Gargantas, em milhões?",
       "answer": 1.3,
@@ -2560,6 +2925,7 @@
       "fact": "Cidades inteiras ficaram debaixo d'água."
     },
     {
+      "id": "chute-geografia-366",
       "difficulty": "hard",
       "text": "Quantos km tem a Grande Muralha construída pela dinastia Ming?",
       "answer": 8850,
@@ -2567,6 +2933,7 @@
       "fact": "A soma de todos os trechos passa de 21 mil km."
     },
     {
+      "id": "chute-geografia-367",
       "difficulty": "hard",
       "text": "Quantos degraus tem o caminho da subida do Monte Tai, na China?",
       "answer": 7200,
@@ -2574,6 +2941,7 @@
       "fact": "É um dos montes sagrados do país."
     },
     {
+      "id": "chute-geografia-368",
       "difficulty": "hard",
       "text": "Quantos degraus tem a Escadaria Selarón, no Rio?",
       "answer": 215,
@@ -2581,6 +2949,7 @@
       "fact": "O artista chileno cobriu tudo de azulejos."
     },
     {
+      "id": "chute-geografia-369",
       "difficulty": "hard",
       "text": "Quantos degraus tem a subida da Torre Eiffel até o topo?",
       "answer": 1665,
@@ -2588,6 +2957,7 @@
       "fact": "Os visitantes só podem subir a pé até o segundo andar."
     },
     {
+      "id": "chute-geografia-370",
       "difficulty": "hard",
       "text": "Quantos degraus tem a Basílica de São Pedro até a cúpula?",
       "answer": 551,
@@ -2595,6 +2965,7 @@
       "fact": "Michelangelo projetou a cúpula."
     },
     {
+      "id": "chute-geografia-371",
       "difficulty": "hard",
       "text": "Quantos anos tem a cidade mais antiga de Damasco, aproximadamente?",
       "answer": 11000,
@@ -2602,6 +2973,7 @@
       "fact": "É uma das cidades habitadas mais antigas do mundo."
     },
     {
+      "id": "chute-geografia-372",
       "difficulty": "hard",
       "text": "Quantos templos tem a cidade de Bagan, em Mianmar, aproximadamente?",
       "answer": 2200,
@@ -2609,6 +2981,7 @@
       "fact": "Havia mais de 10 mil em seu auge."
     },
     {
+      "id": "chute-geografia-373",
       "difficulty": "hard",
       "text": "Quantos templos tem o complexo de Angkor, aproximadamente?",
       "answer": 1000,
@@ -2616,6 +2989,7 @@
       "fact": "Angkor Wat é o maior monumento religioso do mundo."
     },
     {
+      "id": "chute-geografia-374",
       "difficulty": "hard",
       "text": "Quantos metros tem a Estátua da Unidade, na Índia?",
       "answer": 182,
@@ -2623,6 +2997,7 @@
       "fact": "É a estátua mais alta do mundo."
     },
     {
+      "id": "chute-geografia-375",
       "difficulty": "hard",
       "text": "Quantos metros tem o Buda do Templo da Primavera, na China?",
       "answer": 128,
@@ -2630,6 +3005,7 @@
       "fact": "Foi a estátua mais alta do mundo até 2018."
     },
     {
+      "id": "chute-geografia-376",
       "difficulty": "hard",
       "text": "Quantos metros tem o Cristo Protetor, em Encantado, no Rio Grande do Sul?",
       "answer": 43.5,
@@ -2637,6 +3013,7 @@
       "fact": "É mais alto que o Cristo Redentor."
     },
     {
+      "id": "chute-geografia-377",
       "difficulty": "hard",
       "text": "Quantos metros tem a montanha de Thor, a maior parede vertical do mundo?",
       "answer": 1250,
@@ -2644,6 +3021,7 @@
       "fact": "Ela fica na ilha de Baffin, no Canadá."
     },
     {
+      "id": "chute-geografia-378",
       "difficulty": "hard",
       "text": "Qual é o comprimento do Fiorde Scoresby, o mais longo do mundo, em km?",
       "answer": 350,
@@ -2651,6 +3029,7 @@
       "fact": "Fica na Groenlândia."
     },
     {
+      "id": "chute-geografia-379",
       "difficulty": "hard",
       "text": "Qual é o comprimento do Fiorde de Sognefjord, na Noruega, em km?",
       "answer": 205,
@@ -2658,6 +3037,7 @@
       "fact": "É o fiorde mais longo da Noruega."
     },
     {
+      "id": "chute-geografia-380",
       "difficulty": "hard",
       "text": "Quantos km tem o litoral da Noruega, com todos os fiordes?",
       "answer": 100000,
@@ -2665,6 +3045,7 @@
       "fact": "Sem as reentrâncias, ele teria cerca de 2.500 km."
     },
     {
+      "id": "chute-geografia-381",
       "difficulty": "hard",
       "text": "Quantos vulcões tem a Islândia, aproximadamente?",
       "answer": 130,
@@ -2672,6 +3053,7 @@
       "fact": "Eles ficam na fronteira entre duas placas tectônicas."
     },
     {
+      "id": "chute-geografia-382",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Suécia, aproximadamente?",
       "answer": 267000,
@@ -2679,6 +3061,7 @@
       "fact": "É o país com mais ilhas no mundo."
     },
     {
+      "id": "chute-geografia-383",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Noruega, aproximadamente?",
       "answer": 239000,
@@ -2686,6 +3069,7 @@
       "fact": "Isso vem principalmente do litoral recortado."
     },
     {
+      "id": "chute-geografia-384",
       "difficulty": "easy",
       "text": "Quantos continentes existem, segundo a lista mais usada no Brasil?",
       "answer": 6,
@@ -2693,6 +3077,7 @@
       "fact": "Em alguns países, a lista tem sete."
     },
     {
+      "id": "chute-geografia-385",
       "difficulty": "easy",
       "text": "Quantos oceanos existem, na lista atual?",
       "answer": 5,
@@ -2700,6 +3085,7 @@
       "fact": "O Oceano Antártico foi aceito por boa parte dos geógrafos."
     },
     {
+      "id": "chute-geografia-386",
       "difficulty": "easy",
       "text": "Quantos estados tem os Estados Unidos, com o Havaí?",
       "answer": 50,
@@ -2707,6 +3093,7 @@
       "fact": "O Alasca entrou no mesmo ano, em 1959."
     },
     {
+      "id": "chute-geografia-387",
       "difficulty": "medium",
       "text": "Quantas províncias e territórios tem o Canadá?",
       "answer": 13,
@@ -2714,6 +3101,7 @@
       "fact": "São 10 províncias e 3 territórios."
     },
     {
+      "id": "chute-geografia-388",
       "difficulty": "easy",
       "text": "Quantos países formam o Reino Unido?",
       "answer": 4,
@@ -2721,6 +3109,7 @@
       "fact": "São Inglaterra, Escócia, País de Gales e Irlanda do Norte."
     },
     {
+      "id": "chute-geografia-389",
       "difficulty": "medium",
       "text": "Quantas ilhas principais tem o Japão?",
       "answer": 4,
@@ -2728,6 +3117,7 @@
       "fact": "Honshu é a maior delas."
     },
     {
+      "id": "chute-geografia-390",
       "difficulty": "easy",
       "text": "Quantos países formam a União Europeia, depois do Brexit?",
       "answer": 27,
@@ -2735,6 +3125,7 @@
       "fact": "O Reino Unido saiu em 2020."
     },
     {
+      "id": "chute-geografia-391",
       "difficulty": "easy",
       "text": "Quantas cores tem a bandeira da França?",
       "answer": 3,
@@ -2742,6 +3133,7 @@
       "fact": "São azul, branco e vermelho."
     },
     {
+      "id": "chute-geografia-392",
       "difficulty": "medium",
       "text": "Qual é a altitude do Aconcágua, em metros, aproximadamente?",
       "answer": 6961,
@@ -2749,6 +3141,7 @@
       "fact": "É a montanha mais alta das Américas."
     },
     {
+      "id": "chute-geografia-393",
       "difficulty": "medium",
       "text": "Qual é a altitude do Mar da Galileia, em metros, aproximadamente?",
       "answer": -210,
@@ -2757,6 +3150,7 @@
       "fact": "Ele é um dos lagos mais baixos do mundo."
     },
     {
+      "id": "chute-geografia-394",
       "difficulty": "medium",
       "text": "Qual é a altitude da Depressão de Danakil, na Etiópia, em metros, aproximadamente?",
       "answer": -125,
@@ -2765,6 +3159,7 @@
       "fact": "É uma das regiões mais quentes do planeta."
     },
     {
+      "id": "chute-geografia-395",
       "difficulty": "medium",
       "text": "Qual é a altitude de um trecho de Baku, no Azerbaijão, em metros?",
       "answer": -28,
@@ -2773,6 +3168,7 @@
       "fact": "É a capital mais baixa do mundo."
     },
     {
+      "id": "chute-geografia-396",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Rio Nilo, em km, aproximadamente?",
       "answer": 6650,
@@ -2780,6 +3176,7 @@
       "fact": "Ele corre para o norte, até o Mediterrâneo."
     },
     {
+      "id": "chute-geografia-397",
       "difficulty": "medium",
       "text": "Qual é a área da Rússia, em milhões de km², aproximadamente?",
       "answer": 17,
@@ -2787,6 +3184,7 @@
       "fact": "Ela é quase o dobro do Brasil."
     },
     {
+      "id": "chute-geografia-398",
       "difficulty": "medium",
       "text": "Qual é a área do Saara, em milhões de km², aproximadamente?",
       "answer": 9.2,
@@ -2794,6 +3192,7 @@
       "fact": "Ele se espalha por 11 países."
     },
     {
+      "id": "chute-geografia-399",
       "difficulty": "medium",
       "text": "Qual é a população da China, em bilhões, aproximadamente?",
       "answer": 1.41,
@@ -2801,6 +3200,7 @@
       "fact": "A Índia a superou em 2023."
     },
     {
+      "id": "chute-geografia-400",
       "difficulty": "medium",
       "text": "Qual é a população da Índia, em bilhões, aproximadamente?",
       "answer": 1.44,
@@ -2808,6 +3208,7 @@
       "fact": "Ela é o país mais populoso do mundo."
     },
     {
+      "id": "chute-geografia-401",
       "difficulty": "hard",
       "text": "Qual é a população do Vaticano, aproximadamente?",
       "answer": 800,
@@ -2815,6 +3216,7 @@
       "fact": "Ele é o menor país do mundo."
     },
     {
+      "id": "chute-geografia-402",
       "difficulty": "hard",
       "text": "Qual é a área do Vaticano, em km²?",
       "answer": 0.44,
@@ -2823,6 +3225,7 @@
       "fact": "Cabem nele poucos campos de futebol."
     },
     {
+      "id": "chute-geografia-403",
       "difficulty": "hard",
       "text": "Qual é a área de Mônaco, em km²?",
       "answer": 2.1,
@@ -2830,6 +3233,7 @@
       "fact": "Ele é o segundo menor país do mundo."
     },
     {
+      "id": "chute-geografia-404",
       "difficulty": "hard",
       "text": "Qual é a altitude do ponto mais baixo do Lago Baikal, em metros, aproximadamente?",
       "answer": -1186,
@@ -2838,6 +3242,7 @@
       "fact": "Ele é o lago mais profundo do mundo."
     },
     {
+      "id": "chute-geografia-405",
       "difficulty": "hard",
       "text": "Qual é a altitude do fundo do Lago Tanganica, em metros, aproximadamente?",
       "answer": -697,
@@ -2846,6 +3251,7 @@
       "fact": "É o segundo lago mais profundo do mundo."
     },
     {
+      "id": "chute-geografia-406",
       "difficulty": "hard",
       "text": "Qual é a menor temperatura da Sibéria em Oymyakon, em °C, oficialmente?",
       "answer": -67.7,
@@ -2854,6 +3260,7 @@
       "fact": "O recorde é de 1933."
     },
     {
+      "id": "chute-geografia-407",
       "difficulty": "hard",
       "text": "Qual é a altitude de La Rinconada, cidade mais alta do mundo, em metros?",
       "answer": 5100,
@@ -2861,6 +3268,7 @@
       "fact": "Ela fica no Peru."
     },
     {
+      "id": "chute-geografia-408",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Indonésia, aproximadamente?",
       "answer": 17000,
@@ -2868,6 +3276,7 @@
       "fact": "Só parte delas é habitada."
     },
     {
+      "id": "chute-geografia-409",
       "difficulty": "hard",
       "text": "Quantas ilhas tem a Finlândia, aproximadamente?",
       "answer": 178000,
@@ -2875,6 +3284,7 @@
       "fact": "A vizinha Suécia tem ainda mais ilhas."
     },
     {
+      "id": "chute-geografia-410",
       "difficulty": "hard",
       "text": "Quantos lagos tem o Canadá, aproximadamente?",
       "answer": 2000000,
@@ -2882,6 +3292,7 @@
       "fact": "Ele tem mais lagos que todos os outros países juntos."
     },
     {
+      "id": "chute-geografia-411",
       "difficulty": "easy",
       "text": "Quantas listras tem a bandeira da Alemanha?",
       "answer": 3,
@@ -2889,6 +3300,7 @@
       "fact": "São preto, vermelho e dourado."
     },
     {
+      "id": "chute-geografia-412",
       "difficulty": "easy",
       "text": "Quantos círculos polares há na Terra?",
       "answer": 2,
@@ -2896,6 +3308,7 @@
       "fact": "São o Ártico e o Antártico."
     },
     {
+      "id": "chute-geografia-413",
       "difficulty": "medium",
       "text": "Qual é a altitude do Lago Titicaca, em metros, aproximadamente?",
       "answer": 3812,
@@ -2903,6 +3316,7 @@
       "fact": "Ele é o lago navegável mais alto do mundo."
     },
     {
+      "id": "chute-geografia-414",
       "difficulty": "hard",
       "text": "Quantos milímetros de chuva por ano recebe um deserto, em média, no máximo?",
       "answer": 250,
@@ -2910,6 +3324,7 @@
       "fact": "O Atacama fica bem abaixo desse número."
     },
     {
+      "id": "chute-geografia-415",
       "difficulty": "medium",
       "text": "Quantos países atravessa o Rio Nilo, contando sua bacia, aproximadamente?",
       "answer": 11,
@@ -2917,6 +3332,7 @@
       "fact": "O Egito depende muito das águas dele."
     },
     {
+      "id": "chute-geografia-416",
       "difficulty": "hard",
       "text": "Quantos quilômetros tem o Canal de Suez, aproximadamente?",
       "answer": 193,
@@ -2924,6 +3340,7 @@
       "fact": "Ele liga o Mediterrâneo ao Mar Vermelho."
     },
     {
+      "id": "chute-geografia-417",
       "difficulty": "easy",
       "text": "Quantas unidades federativas tem o Centro-Oeste, contando o Distrito Federal?",
       "answer": 4,
@@ -2931,6 +3348,7 @@
       "fact": "São Goiás, Mato Grosso, Mato Grosso do Sul e o Distrito Federal."
     },
     {
+      "id": "chute-geografia-418",
       "difficulty": "easy",
       "text": "Qual a distância aproximada entre São Paulo e Curitiba, em km?",
       "answer": 400,
@@ -2938,6 +3356,7 @@
       "fact": "O caminho principal é a rodovia Régis Bittencourt."
     },
     {
+      "id": "chute-geografia-419",
       "difficulty": "easy",
       "text": "Quantas horas dura um voo direto de São Paulo a Lisboa, aproximadamente?",
       "answer": 10,
@@ -2945,6 +3364,7 @@
       "fact": "Lisboa é uma das portas de entrada dos brasileiros na Europa."
     },
     {
+      "id": "chute-geografia-420",
       "difficulty": "easy",
       "text": "Quantos minutos dura um voo da ponte aérea Rio-São Paulo, aproximadamente?",
       "answer": 60,
@@ -2952,6 +3372,7 @@
       "fact": "É uma das rotas aéreas mais movimentadas do mundo."
     },
     {
+      "id": "chute-geografia-421",
       "difficulty": "easy",
       "text": "Quantas horas se leva de carro de São Paulo ao Rio de Janeiro, aproximadamente?",
       "answer": 6,
@@ -2959,6 +3380,7 @@
       "fact": "O caminho mais usado é a Via Dutra."
     },
     {
+      "id": "chute-geografia-422",
       "difficulty": "easy",
       "text": "Quantas capitais do Nordeste ficam no litoral?",
       "answer": 8,
@@ -2966,6 +3388,7 @@
       "fact": "Teresina é a única capital nordestina longe do mar."
     },
     {
+      "id": "chute-geografia-423",
       "difficulty": "easy",
       "text": "Quantos pontos cardeais existem?",
       "answer": 4,
@@ -2973,6 +3396,7 @@
       "fact": "Eles são norte, sul, leste e oeste."
     },
     {
+      "id": "chute-geografia-424",
       "difficulty": "easy",
       "text": "Quantas horas de diferença tem o Acre em relação a Brasília?",
       "answer": 2,
@@ -2980,6 +3404,7 @@
       "fact": "O Acre fica no fuso mais a oeste do país."
     },
     {
+      "id": "chute-geografia-425",
       "difficulty": "easy",
       "text": "Quantas horas de diferença tem Fernando de Noronha em relação a Brasília?",
       "answer": 1,
@@ -2987,6 +3412,7 @@
       "fact": "Lá o relógio fica uma hora adiantado."
     },
     {
+      "id": "chute-geografia-426",
       "difficulty": "easy",
       "text": "Quantos metros tem um quarteirão comum, aproximadamente?",
       "answer": 100,
@@ -2994,6 +3420,7 @@
       "fact": "Muitas cidades foram planejadas com quadras desse tamanho."
     },
     {
+      "id": "chute-geografia-427",
       "difficulty": "easy",
       "text": "Qual é a temperatura máxima média de um dia de verão no Rio de Janeiro, em °C?",
       "answer": 30,
@@ -3001,6 +3428,7 @@
       "fact": "Em ondas de calor, a sensação térmica passa de 40 °C."
     },
     {
+      "id": "chute-geografia-428",
       "difficulty": "easy",
       "text": "Qual é a temperatura média de um dia de inverno em São Paulo, em °C?",
       "answer": 17,
@@ -3008,6 +3436,7 @@
       "fact": "Algumas madrugadas de inverno ficam abaixo de 10 °C."
     },
     {
+      "id": "chute-geografia-429",
       "difficulty": "easy",
       "text": "Quantos lados tem o prédio do Pentágono, nos Estados Unidos?",
       "answer": 5,
@@ -3015,6 +3444,7 @@
       "fact": "Ele é a sede do Departamento de Defesa americano."
     },
     {
+      "id": "chute-geografia-430",
       "difficulty": "easy",
       "text": "Quantas pirâmides grandes ficam em Gizé, no Egito?",
       "answer": 3,
@@ -3022,6 +3452,7 @@
       "fact": "A maior delas é a de Quéops."
     },
     {
+      "id": "chute-geografia-431",
       "difficulty": "easy",
       "text": "Qual a distância aproximada entre Rio de Janeiro e Belo Horizonte, em km?",
       "answer": 440,
@@ -3029,6 +3460,7 @@
       "fact": "A BR-040 liga as duas capitais."
     },
     {
+      "id": "chute-geografia-432",
       "difficulty": "easy",
       "text": "Qual a distância aproximada entre Brasília e Goiânia, em km?",
       "answer": 210,
@@ -3036,6 +3468,7 @@
       "fact": "Muita gente faz o trajeto de carro em menos de três horas."
     },
     {
+      "id": "chute-geografia-433",
       "difficulty": "easy",
       "text": "Quantas horas dura um voo de São Paulo a Recife, aproximadamente?",
       "answer": 3,
@@ -3043,6 +3476,7 @@
       "fact": "Recife é um dos principais destinos de férias do Nordeste."
     },
     {
+      "id": "chute-geografia-434",
       "difficulty": "easy",
       "text": "Quantas horas dura um voo de São Paulo a Orlando, aproximadamente?",
       "answer": 9,
@@ -3050,6 +3484,7 @@
       "fact": "Os parques da Disney estão entre os destinos favoritos dos brasileiros."
     },
     {
+      "id": "chute-geografia-435",
       "difficulty": "easy",
       "text": "Quantas horas dura uma viagem de avião do Brasil ao Japão, com escala, aproximadamente?",
       "answer": 24,
@@ -3057,6 +3492,7 @@
       "fact": "O Japão fica quase do outro lado do planeta."
     },
     {
+      "id": "chute-geografia-436",
       "difficulty": "easy",
       "text": "Quantos países fazem fronteira com o Uruguai?",
       "answer": 2,
@@ -3064,6 +3500,7 @@
       "fact": "Ele fica entre o Brasil e a Argentina."
     },
     {
+      "id": "chute-geografia-437",
       "difficulty": "easy",
       "text": "Quantos países fazem fronteira com o Chile?",
       "answer": 3,
@@ -3071,6 +3508,7 @@
       "fact": "São o Peru, a Bolívia e a Argentina."
     },
     {
+      "id": "chute-geografia-438",
       "difficulty": "easy",
       "text": "Quantos oceanos banham o Brasil?",
       "answer": 1,
@@ -3078,6 +3516,7 @@
       "fact": "Todo o litoral brasileiro fica no Atlântico."
     },
     {
+      "id": "chute-geografia-439",
       "difficulty": "easy",
       "text": "Quantos países da América do Sul não têm saída para o mar?",
       "answer": 2,
@@ -3085,6 +3524,7 @@
       "fact": "São o Paraguai e a Bolívia."
     },
     {
+      "id": "chute-geografia-440",
       "difficulty": "easy",
       "text": "Quantas letras tem a sigla de cada estado brasileiro?",
       "answer": 2,
@@ -3092,6 +3532,7 @@
       "fact": "São Paulo é SP, e Rio de Janeiro é RJ."
     },
     {
+      "id": "chute-geografia-441",
       "difficulty": "easy",
       "text": "Quantos milhões de pessoas vivem na Grande São Paulo, aproximadamente?",
       "answer": 21,
@@ -3099,6 +3540,7 @@
       "fact": "É a maior região metropolitana do Hemisfério Sul."
     },
     {
+      "id": "chute-geografia-442",
       "difficulty": "easy",
       "text": "Quantos estados do Nordeste têm litoral?",
       "answer": 9,
@@ -3106,6 +3548,7 @@
       "fact": "Todos os estados nordestinos têm praia."
     },
     {
+      "id": "chute-geografia-443",
       "difficulty": "easy",
       "text": "Quantos estados do Sudeste têm litoral?",
       "answer": 3,
@@ -3113,6 +3556,7 @@
       "fact": "Minas Gerais é o único sem praia."
     },
     {
+      "id": "chute-geografia-444",
       "difficulty": "easy",
       "text": "Quantos estados do Centro-Oeste têm praia de mar?",
       "answer": 0,
@@ -3120,6 +3564,7 @@
       "fact": "A região inteira fica longe do oceano."
     },
     {
+      "id": "chute-geografia-445",
       "difficulty": "easy",
       "text": "Quantas horas se leva de carro de São Paulo a Santos, aproximadamente?",
       "answer": 1,
@@ -3127,6 +3572,7 @@
       "fact": "A descida da serra é feita pela Imigrantes ou pela Anchieta."
     },
     {
+      "id": "chute-geografia-446",
       "difficulty": "easy",
       "text": "Quantos trópicos existem na Terra?",
       "answer": 2,
@@ -3134,6 +3580,7 @@
       "fact": "São o de Câncer e o de Capricórnio."
     },
     {
+      "id": "chute-geografia-447",
       "difficulty": "easy",
       "text": "Quantas horas de diferença tem Manaus em relação a Brasília?",
       "answer": 1,
@@ -3141,6 +3588,7 @@
       "fact": "Manaus fica um fuso a oeste de Brasília."
     },
     {
+      "id": "chute-geografia-448",
       "difficulty": "easy",
       "text": "Quantas cores tem a bandeira do Japão?",
       "answer": 2,
@@ -3148,6 +3596,7 @@
       "fact": "O círculo vermelho representa o Sol."
     },
     {
+      "id": "chute-geografia-449",
       "difficulty": "easy",
       "text": "Quantas folhas aparecem na bandeira do Canadá?",
       "answer": 1,
@@ -3155,6 +3604,7 @@
       "fact": "É uma folha de bordo, símbolo do país."
     },
     {
+      "id": "chute-geografia-450",
       "difficulty": "easy",
       "text": "Quantas horas dura um voo de São Paulo a Buenos Aires, aproximadamente?",
       "answer": 3,
@@ -3162,6 +3612,7 @@
       "fact": "Buenos Aires é um dos destinos internacionais mais procurados pelos brasileiros."
     },
     {
+      "id": "chute-geografia-451",
       "difficulty": "easy",
       "text": "Quantas horas dura um voo de São Paulo a Brasília, aproximadamente?",
       "answer": 1.5,
@@ -3169,6 +3620,7 @@
       "fact": "A capital fica no Planalto Central."
     },
     {
+      "id": "chute-geografia-452",
       "difficulty": "easy",
       "text": "Quantas horas se leva de carro de Porto Alegre a Gramado, aproximadamente?",
       "answer": 2,
@@ -3176,18 +3628,21 @@
       "fact": "Gramado é famosa pelo Natal Luz."
     },
     {
+      "id": "chute-geografia-453",
       "difficulty": "easy",
       "text": "Em que mês do ano começa o verão no Brasil?",
       "answer": 12,
       "fact": "Ele começa por volta do dia 21 de dezembro."
     },
     {
+      "id": "chute-geografia-454",
       "difficulty": "easy",
       "text": "Em que mês do ano começa o inverno no Brasil?",
       "answer": 6,
       "fact": "Ele começa por volta do dia 21 de junho."
     },
     {
+      "id": "chute-geografia-455",
       "difficulty": "easy",
       "text": "Quantas horas dura o dia mais longo do ano em Porto Alegre, aproximadamente?",
       "answer": 14,

@@ -2,6 +2,7 @@
   "theme": "Artes",
   "questions": [
     {
+      "id": "chute-artes-1",
       "difficulty": "medium",
       "text": "Em que ano Leonardo da Vinci começou a pintar a Mona Lisa?",
       "answer": 1503,
@@ -9,6 +10,7 @@
       "fact": "Ele começou por volta de 1503 e continuou retocando o quadro por mais de dez anos."
     },
     {
+      "id": "chute-artes-2",
       "difficulty": "medium",
       "text": "Quantas sinfonias completas Beethoven compôs?",
       "answer": 9,
@@ -16,6 +18,7 @@
       "fact": "A Nona, de 1824, tem a Ode à Alegria e foi composta quando ele já estava praticamente surdo."
     },
     {
+      "id": "chute-artes-3",
       "difficulty": "easy",
       "text": "Quantas teclas tem um piano padrão?",
       "answer": 88,
@@ -23,6 +26,7 @@
       "fact": "São 52 brancas e 36 pretas, cobrindo pouco mais de sete oitavas."
     },
     {
+      "id": "chute-artes-4",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a Semana de Arte Moderna, em São Paulo?",
       "answer": 1922,
@@ -30,6 +34,7 @@
       "fact": "Foi em fevereiro de 1922, no Theatro Municipal, no centenário da Independência."
     },
     {
+      "id": "chute-artes-5",
       "difficulty": "medium",
       "text": "Em que ano Van Gogh pintou A Noite Estrelada?",
       "answer": 1889,
@@ -37,6 +42,7 @@
       "fact": "Ele pintou a vista da janela do hospital psiquiátrico de Saint-Rémy, na França."
     },
     {
+      "id": "chute-artes-6",
       "difficulty": "medium",
       "text": "Com quantos anos Mozart morreu?",
       "answer": 35,
@@ -44,6 +50,7 @@
       "fact": "Mozart morreu em 1791, deixando o Réquiem inacabado."
     },
     {
+      "id": "chute-artes-7",
       "difficulty": "easy",
       "text": "Quantos metros de altura tem a estátua do Cristo Redentor, sem o pedestal?",
       "answer": 30,
@@ -51,6 +58,7 @@
       "fact": "A estátua tem 30 metros e o pedestal mais 8; os braços abertos medem 28 metros."
     },
     {
+      "id": "chute-artes-8",
       "difficulty": "hard",
       "text": "Em que ano Michelangelo terminou de pintar o teto da Capela Sistina?",
       "answer": 1512,
@@ -58,6 +66,7 @@
       "fact": "Foram cerca de quatro anos de trabalho, de 1508 a 1512."
     },
     {
+      "id": "chute-artes-9",
       "difficulty": "medium",
       "text": "Em que ano Tarsila do Amaral pintou o Abaporu?",
       "answer": 1928,
@@ -65,6 +74,7 @@
       "fact": "O quadro foi presente para Oswald de Andrade e inspirou o Movimento Antropofágico."
     },
     {
+      "id": "chute-artes-10",
       "difficulty": "hard",
       "text": "Quantas peças de teatro são atribuídas a Shakespeare?",
       "answer": 37,
@@ -72,6 +82,7 @@
       "fact": "A conta tradicional é 37; com colaborações, alguns estudiosos chegam a 39."
     },
     {
+      "id": "chute-artes-11",
       "difficulty": "medium",
       "text": "Em que ano Picasso pintou Guernica?",
       "answer": 1937,
@@ -79,6 +90,7 @@
       "fact": "O painel retrata o bombardeio da cidade basca de Guernica na Guerra Civil Espanhola."
     },
     {
+      "id": "chute-artes-12",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem a Torre Eiffel, contando as antenas?",
       "answer": 330,
@@ -86,6 +98,7 @@
       "fact": "Com a antena instalada em 2022, ela chegou a 330 metros; sem antenas, são cerca de 300."
     },
     {
+      "id": "chute-artes-13",
       "difficulty": "medium",
       "text": "Em que ano Dom Casmurro, de Machado de Assis, foi publicado?",
       "answer": 1899,
@@ -93,6 +106,7 @@
       "fact": "Até hoje se discute se Capitu traiu Bentinho; o livro nunca responde."
     },
     {
+      "id": "chute-artes-14",
       "difficulty": "hard",
       "text": "Em que ano o Louvre abriu as portas como museu?",
       "answer": 1793,
@@ -100,6 +114,7 @@
       "fact": "Antes de museu, o Louvre foi fortaleza e palácio dos reis da França."
     },
     {
+      "id": "chute-artes-15",
       "difficulty": "hard",
       "text": "Em que ano começou a construção da Sagrada Família, em Barcelona?",
       "answer": 1882,
@@ -107,6 +122,7 @@
       "fact": "Gaudí assumiu a obra em 1883 e trabalhou nela até morrer, em 1926."
     },
     {
+      "id": "chute-artes-16",
       "difficulty": "medium",
       "text": "Quantas notas diferentes tem a escala cromática ocidental, sem repetir a oitava?",
       "answer": 12,
@@ -114,6 +130,7 @@
       "fact": "São as 7 notas naturais mais 5 sustenidos ou bemóis."
     },
     {
+      "id": "chute-artes-17",
       "difficulty": "hard",
       "text": "Em que ano nasceu Machado de Assis?",
       "answer": 1839,
@@ -121,6 +138,7 @@
       "fact": "Ele nasceu no Morro do Livramento, no Rio, e fundou a Academia Brasileira de Letras."
     },
     {
+      "id": "chute-artes-18",
       "difficulty": "hard",
       "text": "Em que ano Os Lusíadas, de Camões, foi publicado?",
       "answer": 1572,
@@ -128,6 +146,7 @@
       "fact": "O poema tem 10 cantos e conta a viagem de Vasco da Gama às Índias."
     },
     {
+      "id": "chute-artes-19",
       "difficulty": "hard",
       "text": "Em que ano estreou a ópera O Guarani, de Carlos Gomes?",
       "answer": 1870,
@@ -135,6 +154,7 @@
       "fact": "A estreia foi no Teatro alla Scala, em Milão; a abertura virou a vinheta da Voz do Brasil."
     },
     {
+      "id": "chute-artes-20",
       "difficulty": "easy",
       "text": "Quantos versos tem um soneto?",
       "answer": 14,
@@ -142,6 +162,7 @@
       "fact": "São dois quartetos e dois tercetos, forma popularizada por Petrarca."
     },
     {
+      "id": "chute-artes-21",
       "difficulty": "medium",
       "text": "Em que ano Edvard Munch pintou a primeira versão de O Grito?",
       "answer": 1893,
@@ -149,6 +170,7 @@
       "fact": "Munch fez várias versões, em pintura e em gravura, entre 1893 e 1910."
     },
     {
+      "id": "chute-artes-22",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o Davi de Michelangelo, sem o pedestal?",
       "answer": 5.17,
@@ -156,6 +178,7 @@
       "fact": "A estátua foi esculpida num único bloco de mármore, entre 1501 e 1504."
     },
     {
+      "id": "chute-artes-23",
       "difficulty": "medium",
       "text": "Em que ano Leonardo da Vinci morreu?",
       "answer": 1519,
@@ -163,6 +186,7 @@
       "fact": "Ele morreu na França, onde vivia a convite do rei Francisco I."
     },
     {
+      "id": "chute-artes-24",
       "difficulty": "medium",
       "text": "Em que ano nasceu Oscar Niemeyer?",
       "answer": 1907,
@@ -170,6 +194,7 @@
       "fact": "Niemeyer projetou os principais prédios de Brasília e trabalhou até depois dos 100 anos."
     },
     {
+      "id": "chute-artes-25",
       "difficulty": "easy",
       "text": "Com quantos anos Oscar Niemeyer morreu?",
       "answer": 104,
@@ -177,6 +202,7 @@
       "fact": "Ele morreu em 2012, dez dias antes de completar 105 anos."
     },
     {
+      "id": "chute-artes-26",
       "difficulty": "hard",
       "text": "Em que ano nasceu Beethoven?",
       "answer": 1770,
@@ -184,6 +210,7 @@
       "fact": "Beethoven nasceu em Bonn, na Alemanha, e foi aluno de Haydn em Viena."
     },
     {
+      "id": "chute-artes-27",
       "difficulty": "hard",
       "text": "Em que ano Drummond publicou o poema No meio do caminho?",
       "answer": 1928,
@@ -191,6 +218,7 @@
       "fact": "Saiu na Revista de Antropofagia e foi chamado de 'besteira' por muitos críticos da época."
     },
     {
+      "id": "chute-artes-28",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Theatro Municipal do Rio de Janeiro?",
       "answer": 1909,
@@ -198,6 +226,7 @@
       "fact": "A fachada foi inspirada na Ópera de Paris."
     },
     {
+      "id": "chute-artes-29",
       "difficulty": "medium",
       "text": "Quantos metros mede a Estátua da Liberdade, do pé à ponta da tocha?",
       "answer": 46,
@@ -205,6 +234,7 @@
       "fact": "Com o pedestal, o monumento chega a 93 metros."
     },
     {
+      "id": "chute-artes-30",
       "difficulty": "medium",
       "text": "Em que ano Monet pintou Impressão, nascer do sol?",
       "answer": 1872,
@@ -212,6 +242,7 @@
       "fact": "Um crítico usou o nome do quadro para zombar do grupo, e o termo Impressionismo pegou."
     },
     {
+      "id": "chute-artes-31",
       "difficulty": "easy",
       "text": "Quantas linhas tem uma pauta musical?",
       "answer": 5,
@@ -219,6 +250,7 @@
       "fact": "As notas ficam nas linhas e nos espaços."
     },
     {
+      "id": "chute-artes-32",
       "difficulty": "easy",
       "text": "Quantos músicos tem uma orquestra sinfônica, aproximadamente?",
       "answer": 80,
@@ -226,6 +258,7 @@
       "fact": "Alguns concertos usam muito mais."
     },
     {
+      "id": "chute-artes-33",
       "difficulty": "medium",
       "text": "Quantos anos Mozart tinha ao começar a compor?",
       "answer": 5,
@@ -233,6 +266,7 @@
       "fact": "Ele fazia turnês pela Europa com o pai."
     },
     {
+      "id": "chute-artes-34",
       "difficulty": "easy",
       "text": "Quantos anos Beethoven viveu?",
       "answer": 56,
@@ -240,6 +274,7 @@
       "fact": "O enterro reuniu cerca de 20 mil pessoas em Viena."
     },
     {
+      "id": "chute-artes-35",
       "difficulty": "easy",
       "text": "Quantos anos Bach viveu?",
       "answer": 65,
@@ -247,6 +282,7 @@
       "fact": "Ele teve mais de 20 filhos."
     },
     {
+      "id": "chute-artes-36",
       "difficulty": "easy",
       "text": "Quantos anos Michelangelo viveu?",
       "answer": 88,
@@ -254,6 +290,7 @@
       "fact": "Ele trabalhou até poucos dias antes de morrer."
     },
     {
+      "id": "chute-artes-37",
       "difficulty": "easy",
       "text": "Quantos anos Leonardo da Vinci viveu?",
       "answer": 67,
@@ -261,6 +298,7 @@
       "fact": "Ele morreu na França."
     },
     {
+      "id": "chute-artes-38",
       "difficulty": "easy",
       "text": "Quantos anos Van Gogh viveu?",
       "answer": 37,
@@ -268,6 +306,7 @@
       "fact": "Ele só se dedicou à pintura nos últimos dez anos."
     },
     {
+      "id": "chute-artes-39",
       "difficulty": "easy",
       "text": "Quantos anos Picasso viveu?",
       "answer": 91,
@@ -275,6 +314,7 @@
       "fact": "Ele deixou milhares de obras."
     },
     {
+      "id": "chute-artes-40",
       "difficulty": "easy",
       "text": "Quantos anos Salvador Dalí viveu?",
       "answer": 84,
@@ -282,6 +322,7 @@
       "fact": "Ele foi enterrado no próprio museu."
     },
     {
+      "id": "chute-artes-41",
       "difficulty": "easy",
       "text": "Quantos anos Frida Kahlo viveu?",
       "answer": 47,
@@ -289,6 +330,7 @@
       "fact": "Ela sofreu um grave acidente de ônibus aos 18 anos."
     },
     {
+      "id": "chute-artes-42",
       "difficulty": "easy",
       "text": "Quantos anos Shakespeare viveu?",
       "answer": 52,
@@ -296,6 +338,7 @@
       "fact": "Ele nasceu e morreu em abril."
     },
     {
+      "id": "chute-artes-43",
       "difficulty": "easy",
       "text": "Quantos anos Machado de Assis viveu?",
       "answer": 69,
@@ -303,6 +346,7 @@
       "fact": "Ele foi casado com Carolina por 35 anos."
     },
     {
+      "id": "chute-artes-44",
       "difficulty": "easy",
       "text": "Quantos anos Elvis Presley viveu?",
       "answer": 42,
@@ -310,6 +354,7 @@
       "fact": "Ele morreu em Graceland, em Memphis."
     },
     {
+      "id": "chute-artes-45",
       "difficulty": "easy",
       "text": "Quantos anos Freddie Mercury viveu?",
       "answer": 45,
@@ -317,6 +362,7 @@
       "fact": "Ele morreu um dia depois de confirmar que tinha aids."
     },
     {
+      "id": "chute-artes-46",
       "difficulty": "easy",
       "text": "Quantos anos John Lennon viveu?",
       "answer": 40,
@@ -324,6 +370,7 @@
       "fact": "Ele foi morto em Nova York."
     },
     {
+      "id": "chute-artes-47",
       "difficulty": "easy",
       "text": "Quantos anos Michael Jackson viveu?",
       "answer": 50,
@@ -331,6 +378,7 @@
       "fact": "Ele morreu em junho de 2009."
     },
     {
+      "id": "chute-artes-48",
       "difficulty": "easy",
       "text": "Quantos anos Bob Marley viveu?",
       "answer": 36,
@@ -338,6 +386,7 @@
       "fact": "Ele morreu de câncer, em Miami."
     },
     {
+      "id": "chute-artes-49",
       "difficulty": "easy",
       "text": "Quantos anos Amy Winehouse viveu?",
       "answer": 27,
@@ -345,6 +394,7 @@
       "fact": "Ela entrou para o \"Clube dos 27\"."
     },
     {
+      "id": "chute-artes-50",
       "difficulty": "easy",
       "text": "Quantos anos Kurt Cobain viveu?",
       "answer": 27,
@@ -352,6 +402,7 @@
       "fact": "Ele foi encontrado morto em Seattle."
     },
     {
+      "id": "chute-artes-51",
       "difficulty": "easy",
       "text": "Quantos integrantes tinham os Beatles?",
       "answer": 4,
@@ -359,6 +410,7 @@
       "fact": "John, Paul, George e Ringo."
     },
     {
+      "id": "chute-artes-52",
       "difficulty": "easy",
       "text": "Quantos integrantes tinha o Queen?",
       "answer": 4,
@@ -366,6 +418,7 @@
       "fact": "Freddie, Brian, Roger e John."
     },
     {
+      "id": "chute-artes-53",
       "difficulty": "easy",
       "text": "Quantos integrantes tinha o ABBA?",
       "answer": 4,
@@ -373,6 +426,7 @@
       "fact": "O nome vem das iniciais dos quatro."
     },
     {
+      "id": "chute-artes-54",
       "difficulty": "easy",
       "text": "Quantos integrantes tem o BTS?",
       "answer": 7,
@@ -380,6 +434,7 @@
       "fact": "Todos serviram ao exército da Coreia do Sul."
     },
     {
+      "id": "chute-artes-55",
       "difficulty": "easy",
       "text": "Quantos integrantes tinha a banda Spice Girls?",
       "answer": 5,
@@ -387,6 +442,7 @@
       "fact": "Cada uma tinha um apelido."
     },
     {
+      "id": "chute-artes-56",
       "difficulty": "easy",
       "text": "Quantos integrantes tinha o Legião Urbana, em sua fase mais famosa?",
       "answer": 3,
@@ -394,6 +450,7 @@
       "fact": "Renato Russo, Dado Villa-Lobos e Marcelo Bonfá."
     },
     {
+      "id": "chute-artes-57",
       "difficulty": "easy",
       "text": "Quantos integrantes tinha os Mamonas Assassinas?",
       "answer": 5,
@@ -401,6 +458,7 @@
       "fact": "Eles morreram em um acidente de avião, em 1996."
     },
     {
+      "id": "chute-artes-58",
       "difficulty": "easy",
       "text": "Qual é a altura do Cristo Redentor, em metros, sem a base?",
       "answer": 30,
@@ -408,6 +466,7 @@
       "fact": "Ele tem mais 8 metros de base."
     },
     {
+      "id": "chute-artes-59",
       "difficulty": "medium",
       "text": "Qual é a envergadura dos braços do Cristo Redentor, em metros?",
       "answer": 28,
@@ -415,6 +474,7 @@
       "fact": "A cabeça foi modelada na França."
     },
     {
+      "id": "chute-artes-60",
       "difficulty": "medium",
       "text": "Qual é a altura do Coliseu, em metros?",
       "answer": 48,
@@ -422,6 +482,7 @@
       "fact": "Hoje resta um terço da construção original."
     },
     {
+      "id": "chute-artes-61",
       "difficulty": "medium",
       "text": "Qual é a altura da Torre de Pisa, em metros?",
       "answer": 56,
@@ -429,6 +490,7 @@
       "fact": "A inclinação foi corrigida para cerca de 4 graus."
     },
     {
+      "id": "chute-artes-62",
       "difficulty": "hard",
       "text": "Qual é o ângulo de inclinação da Torre de Pisa, aproximadamente, em graus?",
       "answer": 4,
@@ -436,6 +498,7 @@
       "fact": "Ela chegou a 5,5 graus antes da restauração."
     },
     {
+      "id": "chute-artes-63",
       "difficulty": "medium",
       "text": "Qual é a altura da Sagrada Família, em metros, ao concluir a Torre de Jesus?",
       "answer": 172,
@@ -443,6 +506,7 @@
       "fact": "Foi feita para ser um pouco menor que a colina de Montjuïc."
     },
     {
+      "id": "chute-artes-64",
       "difficulty": "medium",
       "text": "Qual é a altura da catedral de Notre-Dame, nas torres, em metros?",
       "answer": 69,
@@ -450,6 +514,7 @@
       "fact": "A flecha que queimou tinha 96 metros."
     },
     {
+      "id": "chute-artes-65",
       "difficulty": "easy",
       "text": "Em que ano foi reaberta a catedral de Notre-Dame?",
       "answer": 2024,
@@ -457,6 +522,7 @@
       "fact": "Foi em dezembro, depois de uma reconstrução recorde."
     },
     {
+      "id": "chute-artes-66",
       "difficulty": "easy",
       "text": "Em que ano os Beatles apareceram na TV americana pela primeira vez?",
       "answer": 1964,
@@ -464,6 +530,7 @@
       "fact": "Foram 73 milhões de telespectadores."
     },
     {
+      "id": "chute-artes-67",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o show do Live Aid?",
       "answer": 1985,
@@ -471,6 +538,7 @@
       "fact": "O Queen fez uma apresentação histórica."
     },
     {
+      "id": "chute-artes-68",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Bohemian Rhapsody\"?",
       "answer": 1975,
@@ -478,6 +546,7 @@
       "fact": "A música tem cerca de 6 minutos."
     },
     {
+      "id": "chute-artes-69",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Imagine\"?",
       "answer": 1971,
@@ -485,6 +554,7 @@
       "fact": "A música foi composta no piano da casa dele."
     },
     {
+      "id": "chute-artes-70",
       "difficulty": "easy",
       "text": "Em que ano Michael Jackson morreu?",
       "answer": 2009,
@@ -492,6 +562,7 @@
       "fact": "Ele morreu em Los Angeles."
     },
     {
+      "id": "chute-artes-71",
       "difficulty": "easy",
       "text": "Em que ano Freddie Mercury morreu?",
       "answer": 1991,
@@ -499,6 +570,7 @@
       "fact": "Ele morreu em Londres."
     },
     {
+      "id": "chute-artes-72",
       "difficulty": "easy",
       "text": "Em que ano John Lennon morreu?",
       "answer": 1980,
@@ -506,6 +578,7 @@
       "fact": "Foi em Nova York, em frente ao prédio Dakota."
     },
     {
+      "id": "chute-artes-73",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o Woodstock?",
       "answer": 1969,
@@ -513,6 +586,7 @@
       "fact": "Foram quatro dias, com cerca de 400 mil pessoas."
     },
     {
+      "id": "chute-artes-74",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Grammy?",
       "answer": 1959,
@@ -520,6 +594,7 @@
       "fact": "O prêmio é dado todo ano pela Academia de Gravação."
     },
     {
+      "id": "chute-artes-75",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Oscar?",
       "answer": 1929,
@@ -527,6 +602,7 @@
       "fact": "A primeira festa durou apenas 15 minutos."
     },
     {
+      "id": "chute-artes-76",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Spotify?",
       "answer": 2006,
@@ -534,6 +610,7 @@
       "fact": "O lançamento ao público foi em 2008."
     },
     {
+      "id": "chute-artes-77",
       "difficulty": "easy",
       "text": "Em que ano foi lançada a MTV?",
       "answer": 1981,
@@ -541,6 +618,7 @@
       "fact": "O primeiro clipe foi \"Video Killed the Radio Star\"."
     },
     {
+      "id": "chute-artes-78",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro iPod?",
       "answer": 2001,
@@ -548,6 +626,7 @@
       "fact": "Ele prometia \"mil músicas no seu bolso\"."
     },
     {
+      "id": "chute-artes-79",
       "difficulty": "medium",
       "text": "Em que ano o Pequeno Príncipe foi publicado?",
       "answer": 1943,
@@ -555,6 +634,7 @@
       "fact": "Saint-Exupéry sumiu no ano seguinte."
     },
     {
+      "id": "chute-artes-80",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"O Senhor dos Anéis\"?",
       "answer": 1954,
@@ -562,6 +642,7 @@
       "fact": "Ele saiu em três volumes."
     },
     {
+      "id": "chute-artes-81",
       "difficulty": "easy",
       "text": "Em que ano foi publicado o primeiro Harry Potter?",
       "answer": 1997,
@@ -569,6 +650,7 @@
       "fact": "J.K. Rowling foi recusada por 12 editoras."
     },
     {
+      "id": "chute-artes-82",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Dom Quixote\", a primeira parte?",
       "answer": 1605,
@@ -576,6 +658,7 @@
       "fact": "É um dos livros mais vendidos da história."
     },
     {
+      "id": "chute-artes-83",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Romeu e Julieta\"?",
       "answer": 1597,
@@ -583,6 +666,7 @@
       "fact": "A primeira edição foi publicada sem o nome do autor."
     },
     {
+      "id": "chute-artes-84",
       "difficulty": "hard",
       "text": "Em que ano foi publicado \"Frankenstein\"?",
       "answer": 1818,
@@ -590,6 +674,7 @@
       "fact": "Mary Shelley tinha 20 anos."
     },
     {
+      "id": "chute-artes-85",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Drácula\"?",
       "answer": 1897,
@@ -597,6 +682,7 @@
       "fact": "Bram Stoker nunca foi à Transilvânia."
     },
     {
+      "id": "chute-artes-86",
       "difficulty": "hard",
       "text": "Em que ano foi publicado \"Moby Dick\"?",
       "answer": 1851,
@@ -604,6 +690,7 @@
       "fact": "O livro não fez muito sucesso em vida do autor."
     },
     {
+      "id": "chute-artes-87",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Alice no País das Maravilhas\"?",
       "answer": 1865,
@@ -611,6 +698,7 @@
       "fact": "A história foi inventada em um passeio de barco."
     },
     {
+      "id": "chute-artes-88",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Sherlock Holmes\" pela primeira vez?",
       "answer": 1887,
@@ -618,6 +706,7 @@
       "fact": "\"Um Estudo em Vermelho\" é a primeira obra."
     },
     {
+      "id": "chute-artes-89",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"1984\"?",
       "answer": 1949,
@@ -625,6 +714,7 @@
       "fact": "Ele foi publicado meses antes da morte de Orwell."
     },
     {
+      "id": "chute-artes-90",
       "difficulty": "hard",
       "text": "Em que ano foi publicado \"Orgulho e Preconceito\"?",
       "answer": 1813,
@@ -632,6 +722,7 @@
       "fact": "Jane Austen não assinou a obra."
     },
     {
+      "id": "chute-artes-91",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Os Miseráveis\"?",
       "answer": 1862,
@@ -639,6 +730,7 @@
       "fact": "O livro é um dos maiores da literatura mundial."
     },
     {
+      "id": "chute-artes-92",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Cem Anos de Solidão\"?",
       "answer": 1967,
@@ -646,6 +738,7 @@
       "fact": "García Márquez ganhou o Nobel em 1982."
     },
     {
+      "id": "chute-artes-93",
       "difficulty": "medium",
       "text": "Em que ano Leonardo da Vinci pintou \"A Última Ceia\", no fim?",
       "answer": 1498,
@@ -653,6 +746,7 @@
       "fact": "A obra foi feita em um refeitório de Milão."
     },
     {
+      "id": "chute-artes-94",
       "difficulty": "medium",
       "text": "Em que ano Dalí pintou \"A Persistência da Memória\"?",
       "answer": 1931,
@@ -660,6 +754,7 @@
       "fact": "Está no MoMA de Nova York."
     },
     {
+      "id": "chute-artes-95",
       "difficulty": "hard",
       "text": "Em que ano Vermeer pintou \"Moça com Brinco de Pérola\", aproximadamente?",
       "answer": 1665,
@@ -667,6 +762,7 @@
       "fact": "O quadro está na Holanda."
     },
     {
+      "id": "chute-artes-96",
       "difficulty": "hard",
       "text": "Em que ano Rembrandt pintou \"A Ronda Noturna\"?",
       "answer": 1642,
@@ -674,6 +770,7 @@
       "fact": "Na verdade, a cena não é noturna, o verniz escureceu."
     },
     {
+      "id": "chute-artes-97",
       "difficulty": "medium",
       "text": "Em que ano Botticelli pintou \"O Nascimento de Vênus\", aproximadamente?",
       "answer": 1485,
@@ -681,6 +778,7 @@
       "fact": "Está na Galeria Uffizi, em Florença."
     },
     {
+      "id": "chute-artes-98",
       "difficulty": "easy",
       "text": "Quantas horas dura uma ópera comum, aproximadamente?",
       "answer": 3,
@@ -688,6 +786,7 @@
       "fact": "Algumas de Wagner passam de 5 horas."
     },
     {
+      "id": "chute-artes-99",
       "difficulty": "medium",
       "text": "Quantas horas de duração tem \"Hamlet\" sem cortes, aproximadamente?",
       "answer": 4,
@@ -695,6 +794,7 @@
       "fact": "É a peça mais longa de Shakespeare."
     },
     {
+      "id": "chute-artes-100",
       "difficulty": "medium",
       "text": "Quantos anos Dom Quixote tinha, na história de Cervantes?",
       "answer": 50,
@@ -702,6 +802,7 @@
       "fact": "O nome real dele é Alonso Quijano."
     },
     {
+      "id": "chute-artes-101",
       "difficulty": "easy",
       "text": "Quantos anos tinha Julieta, em \"Romeu e Julieta\"?",
       "answer": 13,
@@ -709,6 +810,7 @@
       "fact": "Ela faria 14 anos dali a duas semanas."
     },
     {
+      "id": "chute-artes-102",
       "difficulty": "hard",
       "text": "Quantos metros de largura tem \"Guernica\"?",
       "answer": 7.8,
@@ -716,6 +818,7 @@
       "fact": "A pintura está no Museu Reina Sofía, em Madri."
     },
     {
+      "id": "chute-artes-103",
       "difficulty": "medium",
       "text": "Quantos girassóis aparecem na versão de Van Gogh de Munique?",
       "answer": 12,
@@ -723,6 +826,7 @@
       "fact": "A série tem várias versões."
     },
     {
+      "id": "chute-artes-104",
       "difficulty": "easy",
       "text": "Quantos apóstolos aparecem em \"A Última Ceia\"?",
       "answer": 12,
@@ -730,6 +834,7 @@
       "fact": "Eles reagem à fala de Jesus sobre a traição."
     },
     {
+      "id": "chute-artes-105",
       "difficulty": "hard",
       "text": "Quantas figuras aparecem no teto da Capela Sistina, aproximadamente?",
       "answer": 300,
@@ -737,6 +842,7 @@
       "fact": "Michelangelo levou quatro anos para pintá-lo."
     },
     {
+      "id": "chute-artes-106",
       "difficulty": "medium",
       "text": "Quantos anos Michelangelo levou para pintar o teto da Capela Sistina?",
       "answer": 4,
@@ -744,6 +850,7 @@
       "fact": "Ele pintou quase sempre de pé, não deitado."
     },
     {
+      "id": "chute-artes-107",
       "difficulty": "hard",
       "text": "Quantos m² tem o teto da Capela Sistina?",
       "answer": 500,
@@ -751,6 +858,7 @@
       "fact": "O papa Júlio II encomendou a obra."
     },
     {
+      "id": "chute-artes-108",
       "difficulty": "hard",
       "text": "Qual é o peso da estátua de Davi, em toneladas?",
       "answer": 6,
@@ -758,6 +866,7 @@
       "fact": "Ela é um bloco único de mármore."
     },
     {
+      "id": "chute-artes-109",
       "difficulty": "medium",
       "text": "Quantos artistas se apresentaram no Woodstock, aproximadamente?",
       "answer": 32,
@@ -765,6 +874,7 @@
       "fact": "Jimi Hendrix fechou o festival."
     },
     {
+      "id": "chute-artes-110",
       "difficulty": "medium",
       "text": "Quantas pessoas foram ao Woodstock, aproximadamente?",
       "answer": 400000,
@@ -772,6 +882,7 @@
       "fact": "Era esperado um público bem menor."
     },
     {
+      "id": "chute-artes-111",
       "difficulty": "medium",
       "text": "Quantas pessoas viram o Live Aid na TV, em bilhões, aproximadamente?",
       "answer": 1.5,
@@ -779,6 +890,7 @@
       "fact": "Foi um dos maiores eventos da TV."
     },
     {
+      "id": "chute-artes-112",
       "difficulty": "medium",
       "text": "Quantas horas durou o Live Aid?",
       "answer": 16,
@@ -786,6 +898,7 @@
       "fact": "O Queen foi o destaque do show em Londres."
     },
     {
+      "id": "chute-artes-113",
       "difficulty": "medium",
       "text": "Quantos discos o Thriller vendeu, em milhões, aproximadamente?",
       "answer": 70,
@@ -793,6 +906,7 @@
       "fact": "É o álbum mais vendido da história."
     },
     {
+      "id": "chute-artes-114",
       "difficulty": "medium",
       "text": "Quantos discos os Beatles venderam, em milhões, aproximadamente?",
       "answer": 600,
@@ -800,6 +914,7 @@
       "fact": "É a banda que mais vendeu na história."
     },
     {
+      "id": "chute-artes-115",
       "difficulty": "medium",
       "text": "Quantos discos Elvis Presley vendeu, em milhões, aproximadamente?",
       "answer": 500,
@@ -807,6 +922,7 @@
       "fact": "Ele não fez nenhuma turnê fora da América do Norte."
     },
     {
+      "id": "chute-artes-116",
       "difficulty": "medium",
       "text": "Quantos discos a Madonna vendeu, em milhões, aproximadamente?",
       "answer": 300,
@@ -814,6 +930,7 @@
       "fact": "É a artista feminina que mais vendeu."
     },
     {
+      "id": "chute-artes-117",
       "difficulty": "medium",
       "text": "Quantos Grammys ganhou Beyoncé até 2025?",
       "answer": 35,
@@ -821,6 +938,7 @@
       "fact": "É a pessoa com mais Grammys da história."
     },
     {
+      "id": "chute-artes-118",
       "difficulty": "medium",
       "text": "Quantos Grammys ganhou Taylor Swift de Álbum do Ano, até 2024?",
       "answer": 4,
@@ -828,6 +946,7 @@
       "fact": "Ela é a única a chegar a esse número."
     },
     {
+      "id": "chute-artes-119",
       "difficulty": "medium",
       "text": "Quantos shows teve a The Eras Tour, de Taylor Swift?",
       "answer": 149,
@@ -835,6 +954,7 @@
       "fact": "A turnê arrecadou mais de 2 bilhões de dólares."
     },
     {
+      "id": "chute-artes-120",
       "difficulty": "easy",
       "text": "Em que ano nasceu Roberto Carlos?",
       "answer": 1941,
@@ -842,6 +962,7 @@
       "fact": "Ele nasceu em Cachoeiro de Itapemirim."
     },
     {
+      "id": "chute-artes-121",
       "difficulty": "easy",
       "text": "Em que ano nasceu Caetano Veloso?",
       "answer": 1942,
@@ -849,6 +970,7 @@
       "fact": "Ele é de Santo Amaro, na Bahia."
     },
     {
+      "id": "chute-artes-122",
       "difficulty": "easy",
       "text": "Em que ano nasceu Gilberto Gil?",
       "answer": 1942,
@@ -856,6 +978,7 @@
       "fact": "Ele nasceu em Salvador."
     },
     {
+      "id": "chute-artes-123",
       "difficulty": "easy",
       "text": "Em que ano nasceu Chico Buarque, compositor de \"A Banda\"?",
       "answer": 1944,
@@ -863,6 +986,7 @@
       "fact": "Ele é também escritor."
     },
     {
+      "id": "chute-artes-124",
       "difficulty": "easy",
       "text": "Em que ano nasceu Rita Lee?",
       "answer": 1947,
@@ -870,6 +994,7 @@
       "fact": "Ela morreu em 2023."
     },
     {
+      "id": "chute-artes-125",
       "difficulty": "easy",
       "text": "Em que ano nasceu Anitta?",
       "answer": 1993,
@@ -877,6 +1002,7 @@
       "fact": "Ela nasceu no Rio de Janeiro."
     },
     {
+      "id": "chute-artes-126",
       "difficulty": "easy",
       "text": "Em que ano nasceu Madonna?",
       "answer": 1958,
@@ -884,6 +1010,7 @@
       "fact": "Ela nasceu no estado de Michigan."
     },
     {
+      "id": "chute-artes-127",
       "difficulty": "easy",
       "text": "Em que ano nasceu Taylor Swift?",
       "answer": 1989,
@@ -891,6 +1018,7 @@
       "fact": "O álbum \"1989\" leva esse nome."
     },
     {
+      "id": "chute-artes-128",
       "difficulty": "easy",
       "text": "Em que ano nasceu Beyoncé?",
       "answer": 1981,
@@ -898,6 +1026,7 @@
       "fact": "Ela nasceu em Houston, no Texas."
     },
     {
+      "id": "chute-artes-129",
       "difficulty": "easy",
       "text": "Em que ano nasceu Paul McCartney?",
       "answer": 1942,
@@ -905,6 +1034,7 @@
       "fact": "Ele ainda faz turnês mundiais."
     },
     {
+      "id": "chute-artes-130",
       "difficulty": "easy",
       "text": "Em que ano nasceu Mick Jagger?",
       "answer": 1943,
@@ -912,6 +1042,7 @@
       "fact": "Ele canta há mais de 60 anos."
     },
     {
+      "id": "chute-artes-131",
       "difficulty": "easy",
       "text": "Em que ano nasceu Elvis Presley?",
       "answer": 1935,
@@ -919,6 +1050,7 @@
       "fact": "Ele tinha um irmão gêmeo que morreu no parto."
     },
     {
+      "id": "chute-artes-132",
       "difficulty": "easy",
       "text": "Em que ano nasceu Michael Jackson?",
       "answer": 1958,
@@ -926,6 +1058,7 @@
       "fact": "O mesmo ano de Madonna e Prince."
     },
     {
+      "id": "chute-artes-133",
       "difficulty": "medium",
       "text": "Em que ano nasceu Leonardo da Vinci?",
       "answer": 1452,
@@ -933,6 +1066,7 @@
       "fact": "Ele nasceu em uma cidade da Toscana chamada Vinci."
     },
     {
+      "id": "chute-artes-134",
       "difficulty": "medium",
       "text": "Em que ano nasceu Michelangelo?",
       "answer": 1475,
@@ -940,6 +1074,7 @@
       "fact": "Ele nasceu em Caprese, na Itália."
     },
     {
+      "id": "chute-artes-135",
       "difficulty": "medium",
       "text": "Em que ano nasceu Rafael?",
       "answer": 1483,
@@ -947,6 +1082,7 @@
       "fact": "Ele morreu aos 37 anos."
     },
     {
+      "id": "chute-artes-136",
       "difficulty": "medium",
       "text": "Em que ano nasceu Van Gogh?",
       "answer": 1853,
@@ -954,6 +1090,7 @@
       "fact": "Ele nasceu na Holanda."
     },
     {
+      "id": "chute-artes-137",
       "difficulty": "medium",
       "text": "Em que ano nasceu Picasso?",
       "answer": 1881,
@@ -961,6 +1098,7 @@
       "fact": "Ele nasceu em Málaga, na Espanha."
     },
     {
+      "id": "chute-artes-138",
       "difficulty": "medium",
       "text": "Em que ano nasceu Salvador Dalí?",
       "answer": 1904,
@@ -968,6 +1106,7 @@
       "fact": "Ele nasceu em Figueres."
     },
     {
+      "id": "chute-artes-139",
       "difficulty": "medium",
       "text": "Em que ano nasceu Frida Kahlo?",
       "answer": 1907,
@@ -975,6 +1114,7 @@
       "fact": "Ela nasceu em Coyoacán, no México."
     },
     {
+      "id": "chute-artes-140",
       "difficulty": "medium",
       "text": "Em que ano nasceu Tarsila do Amaral?",
       "answer": 1886,
@@ -982,6 +1122,7 @@
       "fact": "Ela nasceu em Capivari, em São Paulo."
     },
     {
+      "id": "chute-artes-141",
       "difficulty": "medium",
       "text": "Em que ano morreu Picasso?",
       "answer": 1973,
@@ -989,6 +1130,7 @@
       "fact": "Ele deixou uma obra imensa."
     },
     {
+      "id": "chute-artes-142",
       "difficulty": "medium",
       "text": "Em que ano morreu Salvador Dalí?",
       "answer": 1989,
@@ -996,6 +1138,7 @@
       "fact": "Foi na mesma cidade em que nasceu."
     },
     {
+      "id": "chute-artes-143",
       "difficulty": "medium",
       "text": "Em que ano morreu Frida Kahlo?",
       "answer": 1954,
@@ -1003,6 +1146,7 @@
       "fact": "Ela morreu na \"Casa Azul\"."
     },
     {
+      "id": "chute-artes-144",
       "difficulty": "medium",
       "text": "Em que ano morreu Andy Warhol?",
       "answer": 1987,
@@ -1010,6 +1154,7 @@
       "fact": "Ele foi vítima de complicações depois de uma cirurgia."
     },
     {
+      "id": "chute-artes-145",
       "difficulty": "medium",
       "text": "Em que ano morreu Van Gogh?",
       "answer": 1890,
@@ -1017,6 +1162,7 @@
       "fact": "Ele morreu com um tiro em Auvers-sur-Oise."
     },
     {
+      "id": "chute-artes-146",
       "difficulty": "medium",
       "text": "Em que ano morreu Claude Monet?",
       "answer": 1926,
@@ -1024,6 +1170,7 @@
       "fact": "Ele pintou até o fim, mesmo com catarata."
     },
     {
+      "id": "chute-artes-147",
       "difficulty": "medium",
       "text": "Em que ano morreu Rembrandt?",
       "answer": 1669,
@@ -1031,6 +1178,7 @@
       "fact": "Ele foi enterrado em uma sepultura sem nome."
     },
     {
+      "id": "chute-artes-148",
       "difficulty": "medium",
       "text": "Em que ano morreu Michelangelo?",
       "answer": 1564,
@@ -1038,6 +1186,7 @@
       "fact": "Ele tinha 88 anos."
     },
     {
+      "id": "chute-artes-149",
       "difficulty": "medium",
       "text": "Em que ano morreu Rafael?",
       "answer": 1520,
@@ -1045,6 +1194,7 @@
       "fact": "Ele foi enterrado no Panteão de Roma."
     },
     {
+      "id": "chute-artes-150",
       "difficulty": "medium",
       "text": "Em que ano morreu Tarsila do Amaral?",
       "answer": 1973,
@@ -1052,6 +1202,7 @@
       "fact": "Ela tinha 86 anos."
     },
     {
+      "id": "chute-artes-151",
       "difficulty": "medium",
       "text": "Em que ano morreu Portinari?",
       "answer": 1962,
@@ -1059,6 +1210,7 @@
       "fact": "Ele foi envenenado pelas tintas que usava."
     },
     {
+      "id": "chute-artes-152",
       "difficulty": "medium",
       "text": "Em que ano morreu Chico Science?",
       "answer": 1997,
@@ -1066,6 +1218,7 @@
       "fact": "Ele morreu em um acidente de carro."
     },
     {
+      "id": "chute-artes-153",
       "difficulty": "medium",
       "text": "Em que ano morreu Tom Jobim?",
       "answer": 1994,
@@ -1073,6 +1226,7 @@
       "fact": "Foi em Nova York."
     },
     {
+      "id": "chute-artes-154",
       "difficulty": "medium",
       "text": "Em que ano morreu Vinicius de Moraes?",
       "answer": 1980,
@@ -1080,6 +1234,7 @@
       "fact": "Ele foi encontrado na banheira de casa."
     },
     {
+      "id": "chute-artes-155",
       "difficulty": "medium",
       "text": "Em que ano morreu Rita Lee?",
       "answer": 2023,
@@ -1087,6 +1242,7 @@
       "fact": "Ela foi conhecida como a Rainha do Rock brasileira."
     },
     {
+      "id": "chute-artes-156",
       "difficulty": "medium",
       "text": "Em que ano morreu Gal Costa?",
       "answer": 2022,
@@ -1094,6 +1250,7 @@
       "fact": "Ela foi um dos grandes nomes da Tropicália."
     },
     {
+      "id": "chute-artes-157",
       "difficulty": "medium",
       "text": "Em que ano morreu Erasmo Carlos?",
       "answer": 2022,
@@ -1101,6 +1258,7 @@
       "fact": "Foi em novembro, poucos dias depois de Gal Costa."
     },
     {
+      "id": "chute-artes-158",
       "difficulty": "medium",
       "text": "Em que ano morreu Beethoven?",
       "answer": 1827,
@@ -1108,6 +1266,7 @@
       "fact": "Cerca de 20 mil pessoas acompanharam o funeral."
     },
     {
+      "id": "chute-artes-159",
       "difficulty": "medium",
       "text": "Em que ano morreu Bach?",
       "answer": 1750,
@@ -1115,6 +1274,7 @@
       "fact": "A morte dele é usada para marcar o fim do período barroco."
     },
     {
+      "id": "chute-artes-160",
       "difficulty": "medium",
       "text": "Em que ano morreu Chopin?",
       "answer": 1849,
@@ -1122,6 +1282,7 @@
       "fact": "O coração dele está em Varsóvia, e o corpo, em Paris."
     },
     {
+      "id": "chute-artes-161",
       "difficulty": "medium",
       "text": "Em que ano morreu Tchaikovsky?",
       "answer": 1893,
@@ -1129,6 +1290,7 @@
       "fact": "Muitos suspeitam de suicídio."
     },
     {
+      "id": "chute-artes-162",
       "difficulty": "medium",
       "text": "Em que ano morreu Wagner?",
       "answer": 1883,
@@ -1136,6 +1298,7 @@
       "fact": "Ele morreu em Veneza."
     },
     {
+      "id": "chute-artes-163",
       "difficulty": "medium",
       "text": "Em que ano morreu Villa-Lobos?",
       "answer": 1959,
@@ -1143,6 +1306,7 @@
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
+      "id": "chute-artes-164",
       "difficulty": "medium",
       "text": "Em que ano morreu Dante Alighieri?",
       "answer": 1321,
@@ -1150,6 +1314,7 @@
       "fact": "Ele morreu exilado em Ravena."
     },
     {
+      "id": "chute-artes-165",
       "difficulty": "medium",
       "text": "Em que ano morreu Camões?",
       "answer": 1580,
@@ -1157,6 +1322,7 @@
       "fact": "Ele morreu na pobreza, em Lisboa."
     },
     {
+      "id": "chute-artes-166",
       "difficulty": "medium",
       "text": "Em que ano morreu Victor Hugo?",
       "answer": 1885,
@@ -1164,6 +1330,7 @@
       "fact": "Cerca de 2 milhões foram ao funeral."
     },
     {
+      "id": "chute-artes-167",
       "difficulty": "medium",
       "text": "Em que ano morreu Dostoiévski?",
       "answer": 1881,
@@ -1171,6 +1338,7 @@
       "fact": "Ele foi condenado à morte, e o czar suspendeu a pena no último minuto."
     },
     {
+      "id": "chute-artes-168",
       "difficulty": "medium",
       "text": "Em que ano morreu Tolstói?",
       "answer": 1910,
@@ -1178,6 +1346,7 @@
       "fact": "Ele morreu em uma estação de trem."
     },
     {
+      "id": "chute-artes-169",
       "difficulty": "medium",
       "text": "Em que ano morreu Franz Kafka?",
       "answer": 1924,
@@ -1185,6 +1354,7 @@
       "fact": "Ele pediu que queimassem seus manuscritos."
     },
     {
+      "id": "chute-artes-170",
       "difficulty": "medium",
       "text": "Em que ano morreu Agatha Christie?",
       "answer": 1976,
@@ -1192,6 +1362,7 @@
       "fact": "A peça dela, A Ratoeira, ainda está em cartaz."
     },
     {
+      "id": "chute-artes-171",
       "difficulty": "medium",
       "text": "Em que ano morreu Ernest Hemingway?",
       "answer": 1961,
@@ -1199,6 +1370,7 @@
       "fact": "Ele se matou em Idaho."
     },
     {
+      "id": "chute-artes-172",
       "difficulty": "medium",
       "text": "Em que ano morreu Jorge Amado?",
       "answer": 2001,
@@ -1206,6 +1378,7 @@
       "fact": "Suas cinzas foram espalhadas no jardim de casa."
     },
     {
+      "id": "chute-artes-173",
       "difficulty": "medium",
       "text": "Em que ano morreu Clarice Lispector?",
       "answer": 1977,
@@ -1213,6 +1386,7 @@
       "fact": "Ela morreu um dia antes de seu aniversário."
     },
     {
+      "id": "chute-artes-174",
       "difficulty": "medium",
       "text": "Em que ano morreu Guimarães Rosa?",
       "answer": 1967,
@@ -1220,6 +1394,7 @@
       "fact": "Ele morreu três dias depois de tomar posse na Academia."
     },
     {
+      "id": "chute-artes-175",
       "difficulty": "medium",
       "text": "Em que ano morreu Drummond?",
       "answer": 1987,
@@ -1227,6 +1402,7 @@
       "fact": "Foi 12 dias depois da morte da filha."
     },
     {
+      "id": "chute-artes-176",
       "difficulty": "medium",
       "text": "Em que ano morreu Monteiro Lobato?",
       "answer": 1948,
@@ -1234,6 +1410,7 @@
       "fact": "Ele foi preso pelo governo Vargas."
     },
     {
+      "id": "chute-artes-177",
       "difficulty": "medium",
       "text": "Em que ano morreu Ariano Suassuna?",
       "answer": 2014,
@@ -1241,6 +1418,7 @@
       "fact": "Ele foi o criador do Movimento Armorial."
     },
     {
+      "id": "chute-artes-178",
       "difficulty": "medium",
       "text": "Em que ano morreu José Saramago?",
       "answer": 2010,
@@ -1248,6 +1426,7 @@
       "fact": "Ele vivia na ilha de Lanzarote."
     },
     {
+      "id": "chute-artes-179",
       "difficulty": "medium",
       "text": "Em que ano morreu Fernando Pessoa?",
       "answer": 1935,
@@ -1255,6 +1434,7 @@
       "fact": "A arca com seus textos tinha mais de 25 mil folhas."
     },
     {
+      "id": "chute-artes-180",
       "difficulty": "medium",
       "text": "Em que ano J.K. Rowling lançou o último livro de Harry Potter?",
       "answer": 2007,
@@ -1262,6 +1442,7 @@
       "fact": "A série vendeu mais de 500 milhões de cópias."
     },
     {
+      "id": "chute-artes-181",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Louvre?",
       "answer": 1793,
@@ -1269,6 +1450,7 @@
       "fact": "Ele já tinha sido um palácio real."
     },
     {
+      "id": "chute-artes-182",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Museu Britânico?",
       "answer": 1759,
@@ -1276,6 +1458,7 @@
       "fact": "Ele nasceu da coleção de um médico."
     },
     {
+      "id": "chute-artes-183",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o MoMA?",
       "answer": 1929,
@@ -1283,6 +1466,7 @@
       "fact": "Abriu poucos dias depois do crash da bolsa."
     },
     {
+      "id": "chute-artes-184",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Museu Guggenheim de Nova York?",
       "answer": 1959,
@@ -1290,6 +1474,7 @@
       "fact": "Frank Lloyd Wright morreu meses antes."
     },
     {
+      "id": "chute-artes-185",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Centre Pompidou?",
       "answer": 1977,
@@ -1297,6 +1482,7 @@
       "fact": "Os tubos ficam no lado de fora."
     },
     {
+      "id": "chute-artes-186",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Museu de Bilbao?",
       "answer": 1997,
@@ -1304,6 +1490,7 @@
       "fact": "O prédio trouxe milhões de turistas à cidade."
     },
     {
+      "id": "chute-artes-187",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurada a Ópera de Sydney?",
       "answer": 1973,
@@ -1311,6 +1498,7 @@
       "fact": "A rainha Elizabeth II a inaugurou."
     },
     {
+      "id": "chute-artes-188",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurada a Ópera de Paris?",
       "answer": 1875,
@@ -1318,6 +1506,7 @@
       "fact": "O Fantasma da Ópera se passa nela."
     },
     {
+      "id": "chute-artes-189",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Scala de Milão?",
       "answer": 1778,
@@ -1325,6 +1514,7 @@
       "fact": "Foi construído depois de um incêndio."
     },
     {
+      "id": "chute-artes-190",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Royal Albert Hall?",
       "answer": 1871,
@@ -1332,6 +1522,7 @@
       "fact": "A rainha Vitória foi à abertura."
     },
     {
+      "id": "chute-artes-191",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Carnegie Hall?",
       "answer": 1891,
@@ -1339,6 +1530,7 @@
       "fact": "Tchaikovsky regeu a noite de abertura."
     },
     {
+      "id": "chute-artes-192",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurada a Sala São Paulo?",
       "answer": 1999,
@@ -1346,6 +1538,7 @@
       "fact": "Fica em uma antiga estação de trem."
     },
     {
+      "id": "chute-artes-193",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurada a Pinacoteca de São Paulo?",
       "answer": 1905,
@@ -1353,6 +1546,7 @@
       "fact": "É o museu de arte mais antigo da cidade."
     },
     {
+      "id": "chute-artes-194",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Teatro Amazonas?",
       "answer": 1896,
@@ -1360,6 +1554,7 @@
       "fact": "Foi construído durante o ciclo da borracha."
     },
     {
+      "id": "chute-artes-195",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Inhotim?",
       "answer": 2006,
@@ -1367,6 +1562,7 @@
       "fact": "O acervo é ligado a Bernardo Paz."
     },
     {
+      "id": "chute-artes-196",
       "difficulty": "medium",
       "text": "Em que ano foi construída a Pirâmide de vidro do Louvre?",
       "answer": 1989,
@@ -1374,6 +1570,7 @@
       "fact": "O projeto foi muito criticado na época."
     },
     {
+      "id": "chute-artes-197",
       "difficulty": "medium",
       "text": "Em que ano começou a Capela Sistina a ter pinturas no teto?",
       "answer": 1508,
@@ -1381,6 +1578,7 @@
       "fact": "Ela foi concluída em 1512."
     },
     {
+      "id": "chute-artes-198",
       "difficulty": "medium",
       "text": "Em que ano Michelangelo pintou o Juízo Final, no fim?",
       "answer": 1541,
@@ -1388,6 +1586,7 @@
       "fact": "O papa mandou cobrir muitos nus, depois."
     },
     {
+      "id": "chute-artes-199",
       "difficulty": "medium",
       "text": "Em que ano Van Gogh se internou em Saint-Rémy?",
       "answer": 1889,
@@ -1395,6 +1594,7 @@
       "fact": "Ele pintou a Noite Estrelada dessa janela."
     },
     {
+      "id": "chute-artes-200",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Semana de Arte Moderna?",
       "answer": 1922,
@@ -1402,6 +1602,7 @@
       "fact": "Foi em São Paulo."
     },
     {
+      "id": "chute-artes-201",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Bossa Nova, em disco?",
       "answer": 1958,
@@ -1409,6 +1610,7 @@
       "fact": "Foi o ano do disco de João Gilberto."
     },
     {
+      "id": "chute-artes-202",
       "difficulty": "medium",
       "text": "Em que ano estreou O Fantasma da Ópera na Broadway?",
       "answer": 1988,
@@ -1416,6 +1618,7 @@
       "fact": "A peça ficou em cartaz por 35 anos."
     },
     {
+      "id": "chute-artes-203",
       "difficulty": "medium",
       "text": "Em que ano estreou \"Cats\", na Broadway?",
       "answer": 1982,
@@ -1423,6 +1626,7 @@
       "fact": "Foi criada com base em poemas de T. S. Eliot."
     },
     {
+      "id": "chute-artes-204",
       "difficulty": "medium",
       "text": "Em que ano estreou \"Hamilton\", na Broadway?",
       "answer": 2015,
@@ -1430,6 +1634,7 @@
       "fact": "Foi escrita por Lin-Manuel Miranda."
     },
     {
+      "id": "chute-artes-205",
       "difficulty": "medium",
       "text": "Em que ano estreou \"O Lago dos Cisnes\"?",
       "answer": 1877,
@@ -1437,6 +1642,7 @@
       "fact": "A estreia foi um fracasso."
     },
     {
+      "id": "chute-artes-206",
       "difficulty": "medium",
       "text": "Em que ano estreou \"O Quebra-Nozes\"?",
       "answer": 1892,
@@ -1444,6 +1650,7 @@
       "fact": "Foi em São Petersburgo."
     },
     {
+      "id": "chute-artes-207",
       "difficulty": "medium",
       "text": "Em que ano estreou a \"Nona Sinfonia\" de Beethoven?",
       "answer": 1824,
@@ -1451,6 +1658,7 @@
       "fact": "Ele não conseguiu ouvir os aplausos."
     },
     {
+      "id": "chute-artes-208",
       "difficulty": "medium",
       "text": "Em que ano estreou \"A Sagração da Primavera\"?",
       "answer": 1913,
@@ -1458,6 +1666,7 @@
       "fact": "A plateia saiu no tapa em Paris."
     },
     {
+      "id": "chute-artes-209",
       "difficulty": "medium",
       "text": "Em que ano estreou \"A Flauta Mágica\"?",
       "answer": 1791,
@@ -1465,6 +1674,7 @@
       "fact": "Foi poucos meses antes da morte de Mozart."
     },
     {
+      "id": "chute-artes-210",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Academia Brasileira de Música?",
       "answer": 1945,
@@ -1472,6 +1682,7 @@
       "fact": "Villa-Lobos foi o fundador."
     },
     {
+      "id": "chute-artes-211",
       "difficulty": "medium",
       "text": "Em que ano nasceu Villa-Lobos?",
       "answer": 1887,
@@ -1479,6 +1690,7 @@
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
+      "id": "chute-artes-212",
       "difficulty": "medium",
       "text": "Em que ano nasceu Tchaikovsky?",
       "answer": 1840,
@@ -1486,6 +1698,7 @@
       "fact": "Ele foi professor no Conservatório de Moscou."
     },
     {
+      "id": "chute-artes-213",
       "difficulty": "medium",
       "text": "Em que ano nasceu Chopin?",
       "answer": 1810,
@@ -1493,6 +1706,7 @@
       "fact": "Ele nasceu perto de Varsóvia."
     },
     {
+      "id": "chute-artes-214",
       "difficulty": "medium",
       "text": "Em que ano nasceu Mozart?",
       "answer": 1756,
@@ -1500,6 +1714,7 @@
       "fact": "Ele nasceu em Salzburgo."
     },
     {
+      "id": "chute-artes-215",
       "difficulty": "medium",
       "text": "Em que ano nasceu Bach?",
       "answer": 1685,
@@ -1507,6 +1722,7 @@
       "fact": "O mesmo ano de Händel."
     },
     {
+      "id": "chute-artes-216",
       "difficulty": "medium",
       "text": "Em que ano nasceu Vivaldi?",
       "answer": 1678,
@@ -1514,6 +1730,7 @@
       "fact": "Ele foi padre e era chamado de \"Padre Ruivo\"."
     },
     {
+      "id": "chute-artes-217",
       "difficulty": "medium",
       "text": "Em que ano nasceu Shakespeare?",
       "answer": 1564,
@@ -1521,6 +1738,7 @@
       "fact": "O mesmo ano de Galileu Galilei."
     },
     {
+      "id": "chute-artes-218",
       "difficulty": "hard",
       "text": "Em que ano nasceu Cervantes?",
       "answer": 1547,
@@ -1528,6 +1746,7 @@
       "fact": "Ele foi escravizado em Argel por cinco anos."
     },
     {
+      "id": "chute-artes-219",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Salvator Mundi\", em dólares?",
       "answer": 450300000,
@@ -1535,6 +1754,7 @@
       "fact": "Foi em 2017, pela casa Christie's."
     },
     {
+      "id": "chute-artes-220",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Interchange\", de Willem de Kooning, em dólares?",
       "answer": 300000000,
@@ -1542,6 +1762,7 @@
       "fact": "Foi uma venda particular em 2015."
     },
     {
+      "id": "chute-artes-221",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Os Jogadores de Cartas\", de Cézanne, em dólares?",
       "answer": 250000000,
@@ -1549,6 +1770,7 @@
       "fact": "O Catar comprou em 2011."
     },
     {
+      "id": "chute-artes-222",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Nafea\", de Gauguin, em dólares?",
       "answer": 210000000,
@@ -1556,6 +1778,7 @@
       "fact": "A pintura retrata duas mulheres no Taiti."
     },
     {
+      "id": "chute-artes-223",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Número 17A\", de Pollock, em dólares?",
       "answer": 200000000,
@@ -1563,6 +1786,7 @@
       "fact": "Foi uma venda particular."
     },
     {
+      "id": "chute-artes-224",
       "difficulty": "medium",
       "text": "Por quanto foi vendido o retrato de Marilyn, de Warhol, em 2022, em dólares?",
       "answer": 195000000,
@@ -1570,6 +1794,7 @@
       "fact": "É a obra americana mais cara em leilão."
     },
     {
+      "id": "chute-artes-225",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Les Femmes d'Alger\", de Picasso, em 2015, em dólares?",
       "answer": 179400000,
@@ -1577,6 +1802,7 @@
       "fact": "Foi um recorde para Picasso."
     },
     {
+      "id": "chute-artes-226",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"O Grito\", de Munch, em 2012, em dólares?",
       "answer": 119900000,
@@ -1584,6 +1810,7 @@
       "fact": "Foi a versão em pastel, de 1895."
     },
     {
+      "id": "chute-artes-227",
       "difficulty": "medium",
       "text": "Por quanto foi vendida a pintura de um crânio de Basquiat, em 2017, em dólares?",
       "answer": 110500000,
@@ -1591,6 +1818,7 @@
       "fact": "Foi comprada por um empresário japonês."
     },
     {
+      "id": "chute-artes-228",
       "difficulty": "medium",
       "text": "Por quanto foi vendida a escultura \"Rabbit\", de Jeff Koons, em 2019, em dólares?",
       "answer": 91100000,
@@ -1598,6 +1826,7 @@
       "fact": "É a obra mais cara de um artista vivo em leilão."
     },
     {
+      "id": "chute-artes-229",
       "difficulty": "medium",
       "text": "Por quanto foi vendida a escultura \"O Homem que Caminha\", de Giacometti, em dólares?",
       "answer": 104300000,
@@ -1605,6 +1834,7 @@
       "fact": "Foi em 2010, em Londres."
     },
     {
+      "id": "chute-artes-230",
       "difficulty": "medium",
       "text": "Por quanto foi vendido \"Abaporu\", em dólares, em 1995?",
       "answer": 1300000,
@@ -1612,6 +1842,7 @@
       "fact": "O comprador foi um colecionador argentino."
     },
     {
+      "id": "chute-artes-231",
       "difficulty": "medium",
       "text": "Por quanto foi vendida a NFT de Beeple, em 2021, em dólares?",
       "answer": 69300000,
@@ -1619,6 +1850,7 @@
       "fact": "Foi a primeira grande venda de arte digital na Christie's."
     },
     {
+      "id": "chute-artes-232",
       "difficulty": "medium",
       "text": "Por quanto foi vendida a guitarra Black Strat de David Gilmour, em dólares?",
       "answer": 3975000,
@@ -1626,6 +1858,7 @@
       "fact": "Foi em 2019, para arrecadar fundos para o clima."
     },
     {
+      "id": "chute-artes-233",
       "difficulty": "medium",
       "text": "Por quanto foi vendida a guitarra de Kurt Cobain do MTV Unplugged, em dólares?",
       "answer": 6000000,
@@ -1633,6 +1866,7 @@
       "fact": "Foi em 2020, um recorde para guitarras."
     },
     {
+      "id": "chute-artes-234",
       "difficulty": "medium",
       "text": "Por quanto foi vendido o piano branco de John Lennon, em dólares?",
       "answer": 2100000,
@@ -1640,6 +1874,7 @@
       "fact": "George Michael o comprou em 2000."
     },
     {
+      "id": "chute-artes-235",
       "difficulty": "medium",
       "text": "Por quanto foi vendido o violino \"Lady Blunt\", em dólares?",
       "answer": 15900000,
@@ -1647,6 +1882,7 @@
       "fact": "Foi construído por Stradivari, em 1721."
     },
     {
+      "id": "chute-artes-236",
       "difficulty": "medium",
       "text": "Quantos Stradivarius existem hoje, aproximadamente?",
       "answer": 650,
@@ -1654,6 +1890,7 @@
       "fact": "Ele fez cerca de 1.100 instrumentos."
     },
     {
+      "id": "chute-artes-237",
       "difficulty": "medium",
       "text": "Quantos instrumentos Stradivari construiu, aproximadamente?",
       "answer": 1100,
@@ -1661,6 +1898,7 @@
       "fact": "A madeira da \"Pequena Era do Gelo\" pode explicar o som."
     },
     {
+      "id": "chute-artes-238",
       "difficulty": "medium",
       "text": "Quantas visitas o Louvre recebe por ano, em milhões, aproximadamente?",
       "answer": 9,
@@ -1668,6 +1906,7 @@
       "fact": "É o museu mais visitado do mundo."
     },
     {
+      "id": "chute-artes-239",
       "difficulty": "medium",
       "text": "Quantas obras o Louvre tem em exposição, aproximadamente?",
       "answer": 35000,
@@ -1675,6 +1914,7 @@
       "fact": "Levaria mais de 100 dias para ver todas."
     },
     {
+      "id": "chute-artes-240",
       "difficulty": "medium",
       "text": "Quantas visitas o Inhotim recebe por ano, aproximadamente?",
       "answer": 300000,
@@ -1682,6 +1922,7 @@
       "fact": "O parque tem mais de 140 hectares."
     },
     {
+      "id": "chute-artes-241",
       "difficulty": "medium",
       "text": "Quantas visitas o Masp recebe por ano, aproximadamente?",
       "answer": 500000,
@@ -1689,6 +1930,7 @@
       "fact": "Tem a coleção mais importante do Hemisfério Sul."
     },
     {
+      "id": "chute-artes-242",
       "difficulty": "medium",
       "text": "Qual foi o valor de seguro da Mona Lisa em 1962, em dólares?",
       "answer": 100000000,
@@ -1696,6 +1938,7 @@
       "fact": "Hoje seria cerca de 1 bilhão de dólares."
     },
     {
+      "id": "chute-artes-243",
       "difficulty": "medium",
       "text": "Quantas pessoas veem a Mona Lisa por dia, em média?",
       "answer": 30000,
@@ -1703,6 +1946,7 @@
       "fact": "Elas ficam cerca de 15 minutos na fila."
     },
     {
+      "id": "chute-artes-244",
       "difficulty": "medium",
       "text": "Quantos cadernos Leonardo da Vinci deixou, em páginas, aproximadamente?",
       "answer": 7000,
@@ -1710,6 +1954,7 @@
       "fact": "Muitos foram escritos ao contrário."
     },
     {
+      "id": "chute-artes-245",
       "difficulty": "medium",
       "text": "Quantas visualizações tem o clipe mais visto do YouTube, \"Baby Shark\", em bilhões?",
       "answer": 15,
@@ -1717,6 +1962,7 @@
       "fact": "É o vídeo mais visto do site."
     },
     {
+      "id": "chute-artes-246",
       "difficulty": "medium",
       "text": "Quantas visualizações tem \"Despacito\" no YouTube, em bilhões?",
       "answer": 8.7,
@@ -1724,6 +1970,7 @@
       "fact": "Foi o clipe mais visto até 2020."
     },
     {
+      "id": "chute-artes-247",
       "difficulty": "medium",
       "text": "Quantos bilhões de execuções tem \"Blinding Lights\" no Spotify, em bilhões?",
       "answer": 5,
@@ -1731,6 +1978,7 @@
       "fact": "É a música mais tocada da plataforma."
     },
     {
+      "id": "chute-artes-248",
       "difficulty": "medium",
       "text": "Quanto rendeu a turnê The Eras, de Taylor Swift, em bilhões de dólares?",
       "answer": 2.08,
@@ -1738,6 +1986,7 @@
       "fact": "É a maior turnê de todos os tempos."
     },
     {
+      "id": "chute-artes-249",
       "difficulty": "medium",
       "text": "Quanto Paul McCartney tem de fortuna, em bilhões de dólares, aproximadamente?",
       "answer": 1.2,
@@ -1745,6 +1994,7 @@
       "fact": "Ele foi o primeiro músico britânico bilionário."
     },
     {
+      "id": "chute-artes-250",
       "difficulty": "medium",
       "text": "Quantos prêmios Grammy ganhou Quincy Jones?",
       "answer": 28,
@@ -1752,6 +2002,7 @@
       "fact": "Ele produziu o Thriller, de Michael Jackson."
     },
     {
+      "id": "chute-artes-251",
       "difficulty": "medium",
       "text": "Quantos dias os Beatles levaram para gravar seu primeiro disco?",
       "answer": 1,
@@ -1759,6 +2010,7 @@
       "fact": "\"Please Please Me\" foi gravado em cerca de 13 horas."
     },
     {
+      "id": "chute-artes-252",
       "difficulty": "medium",
       "text": "Quantas versões tem \"Yesterday\", dos Beatles, aproximadamente?",
       "answer": 2200,
@@ -1766,6 +2018,7 @@
       "fact": "É uma das mais regravadas da história."
     },
     {
+      "id": "chute-artes-253",
       "difficulty": "medium",
       "text": "Quantas apresentações teve \"O Fantasma da Ópera\" na Broadway?",
       "answer": 13981,
@@ -1773,6 +2026,7 @@
       "fact": "Foi o maior espetáculo da Broadway."
     },
     {
+      "id": "chute-artes-254",
       "difficulty": "hard",
       "text": "Quantas apresentações teve \"A Ratoeira\", de Agatha Christie, em Londres, até 2025, aproximadamente?",
       "answer": 30000,
@@ -1780,6 +2034,7 @@
       "fact": "Está em cartaz desde 1952."
     },
     {
+      "id": "chute-artes-255",
       "difficulty": "hard",
       "text": "Em que ano \"A Ratoeira\" estreou em Londres?",
       "answer": 1952,
@@ -1787,6 +2042,7 @@
       "fact": "É a peça com a maior carreira ininterrupta do mundo."
     },
     {
+      "id": "chute-artes-256",
       "difficulty": "hard",
       "text": "Quantos exemplares vendeu Agatha Christie, em bilhões?",
       "answer": 2,
@@ -1794,6 +2050,7 @@
       "fact": "Ela é a autora de ficção mais vendida."
     },
     {
+      "id": "chute-artes-257",
       "difficulty": "hard",
       "text": "Quantos exemplares de \"Dom Quixote\" foram vendidos, em milhões, segundo estimativas?",
       "answer": 500,
@@ -1801,6 +2058,7 @@
       "fact": "Muitos afirmam que é o romance mais vendido."
     },
     {
+      "id": "chute-artes-258",
       "difficulty": "hard",
       "text": "Quantos exemplares de \"Harry Potter\" foram vendidos, em milhões?",
       "answer": 600,
@@ -1808,6 +2066,7 @@
       "fact": "A série foi traduzida para mais de 80 idiomas."
     },
     {
+      "id": "chute-artes-259",
       "difficulty": "hard",
       "text": "Quantos exemplares de \"O Senhor dos Anéis\" foram vendidos, em milhões?",
       "answer": 150,
@@ -1815,6 +2074,7 @@
       "fact": "Tolkien inventou línguas para a saga."
     },
     {
+      "id": "chute-artes-260",
       "difficulty": "hard",
       "text": "Quantos exemplares de \"O Pequeno Príncipe\" foram vendidos, em milhões?",
       "answer": 200,
@@ -1822,6 +2082,7 @@
       "fact": "É um dos livros mais traduzidos do mundo."
     },
     {
+      "id": "chute-artes-261",
       "difficulty": "hard",
       "text": "Em quantas línguas foi traduzido \"O Pequeno Príncipe\", aproximadamente?",
       "answer": 500,
@@ -1829,6 +2090,7 @@
       "fact": "Só a Bíblia e poucos outros têm tantos idiomas."
     },
     {
+      "id": "chute-artes-262",
       "difficulty": "hard",
       "text": "Quantos exemplares de \"O Alquimista\" foram vendidos, em milhões?",
       "answer": 150,
@@ -1836,6 +2098,7 @@
       "fact": "Ele é o livro brasileiro mais vendido."
     },
     {
+      "id": "chute-artes-263",
       "difficulty": "hard",
       "text": "Quantas palavras tem a obra de Shakespeare, em milhares, aproximadamente?",
       "answer": 884,
@@ -1843,6 +2106,7 @@
       "fact": "Ele teria inventado mais de 1.700 palavras do inglês."
     },
     {
+      "id": "chute-artes-264",
       "difficulty": "hard",
       "text": "Quantas palavras tem \"Em Busca do Tempo Perdido\", em milhões?",
       "answer": 1.26,
@@ -1850,6 +2114,7 @@
       "fact": "É o romance mais longo, segundo o Guinness."
     },
     {
+      "id": "chute-artes-265",
       "difficulty": "hard",
       "text": "Quantos volumes tem \"Em Busca do Tempo Perdido\"?",
       "answer": 7,
@@ -1857,6 +2122,7 @@
       "fact": "O primeiro foi publicado em 1913."
     },
     {
+      "id": "chute-artes-266",
       "difficulty": "hard",
       "text": "Quantos sonetos Shakespeare escreveu?",
       "answer": 154,
@@ -1864,6 +2130,7 @@
       "fact": "Eles foram publicados em 1609."
     },
     {
+      "id": "chute-artes-267",
       "difficulty": "hard",
       "text": "Quantas peças escreveu Molière, aproximadamente?",
       "answer": 30,
@@ -1871,6 +2138,7 @@
       "fact": "Ele passou mal ao interpretar \"O Doente Imaginário\", e morreu horas depois."
     },
     {
+      "id": "chute-artes-268",
       "difficulty": "hard",
       "text": "Quantas peças escreveu Sófocles, aproximadamente?",
       "answer": 120,
@@ -1878,6 +2146,7 @@
       "fact": "Só sete sobreviveram até hoje."
     },
     {
+      "id": "chute-artes-269",
       "difficulty": "hard",
       "text": "Quantos desenhos fez Picasso, em milhares?",
       "answer": 12,
@@ -1885,6 +2154,7 @@
       "fact": "Ao todo, ele fez cerca de 50 mil obras."
     },
     {
+      "id": "chute-artes-270",
       "difficulty": "hard",
       "text": "Quantas obras Picasso fez em toda a vida, aproximadamente?",
       "answer": 50000,
@@ -1892,6 +2162,7 @@
       "fact": "Só pinturas são cerca de 1.885."
     },
     {
+      "id": "chute-artes-271",
       "difficulty": "hard",
       "text": "Quantas pinturas Van Gogh fez, aproximadamente?",
       "answer": 860,
@@ -1899,6 +2170,7 @@
       "fact": "Ele fez a maior parte em cerca de dois anos."
     },
     {
+      "id": "chute-artes-272",
       "difficulty": "hard",
       "text": "Quantas pinturas Vermeer deixou, aproximadamente?",
       "answer": 37,
@@ -1906,6 +2178,7 @@
       "fact": "Ele trabalhava bem devagar."
     },
     {
+      "id": "chute-artes-273",
       "difficulty": "hard",
       "text": "Quantas pinturas Leonardo da Vinci deixou, aproximadamente?",
       "answer": 20,
@@ -1913,6 +2186,7 @@
       "fact": "Ele costumava deixar as obras inacabadas."
     },
     {
+      "id": "chute-artes-274",
       "difficulty": "hard",
       "text": "Quantas pinturas Monet fez de nenúfares, aproximadamente?",
       "answer": 250,
@@ -1920,6 +2194,7 @@
       "fact": "Ele pintou o tema nas três últimas décadas de vida."
     },
     {
+      "id": "chute-artes-275",
       "difficulty": "hard",
       "text": "Quantos autorretratos Rembrandt fez, aproximadamente?",
       "answer": 80,
@@ -1927,6 +2202,7 @@
       "fact": "Eles mostram a idade dele em cada fase."
     },
     {
+      "id": "chute-artes-276",
       "difficulty": "hard",
       "text": "Quantos autorretratos Frida Kahlo fez, aproximadamente?",
       "answer": 55,
@@ -1934,6 +2210,7 @@
       "fact": "São cerca de um terço de suas pinturas."
     },
     {
+      "id": "chute-artes-277",
       "difficulty": "hard",
       "text": "Quantos autorretratos Van Gogh fez, aproximadamente?",
       "answer": 35,
@@ -1941,6 +2218,7 @@
       "fact": "Ele não tinha dinheiro para pagar modelos."
     },
     {
+      "id": "chute-artes-278",
       "difficulty": "hard",
       "text": "Quantas sinfonias Bruckner compôs, contando as numeradas?",
       "answer": 9,
@@ -1948,6 +2226,7 @@
       "fact": "Ele tinha muito medo de morrer no número nove."
     },
     {
+      "id": "chute-artes-279",
       "difficulty": "hard",
       "text": "Quantas sinfonias Mahler compôs, completas?",
       "answer": 9,
@@ -1955,6 +2234,7 @@
       "fact": "Ele tentou escapar da \"maldição da nona\"."
     },
     {
+      "id": "chute-artes-280",
       "difficulty": "hard",
       "text": "Quantas sinfonias Tchaikovsky compôs?",
       "answer": 6,
@@ -1962,6 +2242,7 @@
       "fact": "A última é a \"Patética\"."
     },
     {
+      "id": "chute-artes-281",
       "difficulty": "hard",
       "text": "Quantas sinfonias Schubert compôs?",
       "answer": 8,
@@ -1969,6 +2250,7 @@
       "fact": "A oitava é a famosa \"Inacabada\"."
     },
     {
+      "id": "chute-artes-282",
       "difficulty": "hard",
       "text": "Quantas sinfonias Brahms compôs?",
       "answer": 4,
@@ -1976,6 +2258,7 @@
       "fact": "Ele demorou 21 anos para escrever a primeira."
     },
     {
+      "id": "chute-artes-283",
       "difficulty": "hard",
       "text": "Quantos concertos para piano Beethoven compôs?",
       "answer": 5,
@@ -1983,6 +2266,7 @@
       "fact": "O último se chama \"Imperador\"."
     },
     {
+      "id": "chute-artes-284",
       "difficulty": "hard",
       "text": "Quantos concertos Vivaldi escreveu, aproximadamente?",
       "answer": 500,
@@ -1990,6 +2274,7 @@
       "fact": "As Quatro Estações são quatro deles."
     },
     {
+      "id": "chute-artes-285",
       "difficulty": "hard",
       "text": "Quantos noturnos Chopin escreveu?",
       "answer": 21,
@@ -1997,6 +2282,7 @@
       "fact": "Ele deixou instruções para queimar obras inéditas."
     },
     {
+      "id": "chute-artes-286",
       "difficulty": "hard",
       "text": "Quantas peças para piano Bach escreveu em \"O Cravo Bem Temperado\"?",
       "answer": 48,
@@ -2004,6 +2290,7 @@
       "fact": "São prelúdios e fugas em cada tom."
     },
     {
+      "id": "chute-artes-287",
       "difficulty": "hard",
       "text": "Quantas valsas Johann Strauss II compôs, aproximadamente?",
       "answer": 400,
@@ -2011,6 +2298,7 @@
       "fact": "Ele é chamado de \"Rei da Valsa\"."
     },
     {
+      "id": "chute-artes-288",
       "difficulty": "hard",
       "text": "Quantas cantatas Bach compôs, aproximadamente?",
       "answer": 200,
@@ -2018,6 +2306,7 @@
       "fact": "Muitas se perderam."
     },
     {
+      "id": "chute-artes-289",
       "difficulty": "hard",
       "text": "Quantos filhos Bach teve?",
       "answer": 20,
@@ -2025,6 +2314,7 @@
       "fact": "Nove sobreviveram a ele."
     },
     {
+      "id": "chute-artes-290",
       "difficulty": "hard",
       "text": "Quantos anos Bach trabalhou em Leipzig?",
       "answer": 27,
@@ -2032,6 +2322,7 @@
       "fact": "Ele trabalhou na Igreja de São Tomás."
     },
     {
+      "id": "chute-artes-291",
       "difficulty": "hard",
       "text": "Quantos anos durou a composição de \"Fausto\", de Goethe, aproximadamente?",
       "answer": 60,
@@ -2039,6 +2330,7 @@
       "fact": "Ele terminou a segunda parte pouco antes de morrer."
     },
     {
+      "id": "chute-artes-292",
       "difficulty": "hard",
       "text": "Quantos anos Michelangelo tinha ao terminar a Pietà?",
       "answer": 24,
@@ -2046,6 +2338,7 @@
       "fact": "É a única obra que ele assinou."
     },
     {
+      "id": "chute-artes-293",
       "difficulty": "hard",
       "text": "Quantos anos Dostoiévski ficou preso na Sibéria?",
       "answer": 4,
@@ -2053,6 +2346,7 @@
       "fact": "A experiência inspirou \"Memórias da Casa dos Mortos\"."
     },
     {
+      "id": "chute-artes-294",
       "difficulty": "hard",
       "text": "Quantos anos Oscar Wilde ficou preso?",
       "answer": 2,
@@ -2060,6 +2354,7 @@
       "fact": "Ele foi condenado por sua homossexualidade."
     },
     {
+      "id": "chute-artes-295",
       "difficulty": "hard",
       "text": "Quantos anos Graciliano Ramos ficou preso, aproximadamente?",
       "answer": 1,
@@ -2067,6 +2362,7 @@
       "fact": "A experiência virou o livro \"Memórias do Cárcere\"."
     },
     {
+      "id": "chute-artes-296",
       "difficulty": "hard",
       "text": "Quantos anos Cervantes ficou preso em Argel?",
       "answer": 5,
@@ -2074,6 +2370,7 @@
       "fact": "Ele tentou fugir quatro vezes."
     },
     {
+      "id": "chute-artes-297",
       "difficulty": "hard",
       "text": "Quantos poemas Emily Dickinson escreveu, aproximadamente?",
       "answer": 1800,
@@ -2081,6 +2378,7 @@
       "fact": "Menos de 10 foram publicados em vida."
     },
     {
+      "id": "chute-artes-298",
       "difficulty": "hard",
       "text": "Quantos poemas tem a \"Mensagem\", de Fernando Pessoa?",
       "answer": 44,
@@ -2088,6 +2386,7 @@
       "fact": "Foi o único livro em português que ele publicou em vida."
     },
     {
+      "id": "chute-artes-299",
       "difficulty": "hard",
       "text": "Quantos versos tem a \"Ilíada\", aproximadamente?",
       "answer": 15693,
@@ -2095,6 +2394,7 @@
       "fact": "Ela narra só cerca de 50 dias da guerra."
     },
     {
+      "id": "chute-artes-300",
       "difficulty": "hard",
       "text": "Quantos versos tem a \"Odisseia\", aproximadamente?",
       "answer": 12110,
@@ -2102,6 +2402,7 @@
       "fact": "A viagem de volta dura dez anos."
     },
     {
+      "id": "chute-artes-301",
       "difficulty": "hard",
       "text": "Quantos anos durou a Guerra de Troia, na Ilíada?",
       "answer": 10,
@@ -2109,6 +2410,7 @@
       "fact": "A narrativa cobre o último ano."
     },
     {
+      "id": "chute-artes-302",
       "difficulty": "hard",
       "text": "Quantos anos Ulisses levou para voltar para casa?",
       "answer": 10,
@@ -2116,6 +2418,7 @@
       "fact": "Ao todo, ele ficou fora por 20 anos."
     },
     {
+      "id": "chute-artes-303",
       "difficulty": "hard",
       "text": "Quantos círculos tem o Inferno de Dante?",
       "answer": 9,
@@ -2123,6 +2426,7 @@
       "fact": "Lúcifer fica no último, preso no gelo."
     },
     {
+      "id": "chute-artes-304",
       "difficulty": "hard",
       "text": "Quantos anos Dante tinha quando inicia a jornada da Divina Comédia?",
       "answer": 35,
@@ -2130,6 +2434,7 @@
       "fact": "A primeira frase é \"No meio do caminho de nossa vida\"."
     },
     {
+      "id": "chute-artes-305",
       "difficulty": "hard",
       "text": "Quantos mosqueteiros D'Artagnan encontra, no início do livro?",
       "answer": 3,
@@ -2137,6 +2442,7 @@
       "fact": "Atos, Portos e Aramis são os três."
     },
     {
+      "id": "chute-artes-306",
       "difficulty": "hard",
       "text": "Quantos capítulos tem \"Moby Dick\"?",
       "answer": 135,
@@ -2144,6 +2450,7 @@
       "fact": "A primeira frase é \"Chamai-me Ismael\"."
     },
     {
+      "id": "chute-artes-307",
       "difficulty": "hard",
       "text": "Quantos capítulos tem \"Dom Casmurro\"?",
       "answer": 148,
@@ -2151,6 +2458,7 @@
       "fact": "Eles são muito curtos."
     },
     {
+      "id": "chute-artes-308",
       "difficulty": "hard",
       "text": "Quantos minutos tem \"Bohemian Rhapsody\"?",
       "answer": 6,
@@ -2158,6 +2466,7 @@
       "fact": "A gravadora achou a música muito longa."
     },
     {
+      "id": "chute-artes-309",
       "difficulty": "hard",
       "text": "Quantos minutos tem \"Stairway to Heaven\"?",
       "answer": 8,
@@ -2165,6 +2474,7 @@
       "fact": "A música nunca foi lançada como single no Reino Unido."
     },
     {
+      "id": "chute-artes-310",
       "difficulty": "hard",
       "text": "Quantos minutos tem \"Faroeste Caboclo\"?",
       "answer": 9,
@@ -2172,6 +2482,7 @@
       "fact": "A música foi gravada em 1987."
     },
     {
+      "id": "chute-artes-311",
       "difficulty": "hard",
       "text": "Quantos minutos tem \"Thriller\" no clipe?",
       "answer": 14,
@@ -2179,6 +2490,7 @@
       "fact": "Foi o clipe de maior produção da época."
     },
     {
+      "id": "chute-artes-312",
       "difficulty": "hard",
       "text": "Quantos anos dura a execução de \"As Slow As Possible\", de John Cage, em uma igreja da Alemanha?",
       "answer": 639,
@@ -2186,6 +2498,7 @@
       "fact": "A nota muda a cada poucos anos."
     },
     {
+      "id": "chute-artes-313",
       "difficulty": "hard",
       "text": "Quantos segundos tem a música mais curta dos Beatles, \"Her Majesty\"?",
       "answer": 23,
@@ -2193,6 +2506,7 @@
       "fact": "Ela fecha o disco Abbey Road."
     },
     {
+      "id": "chute-artes-314",
       "difficulty": "medium",
       "text": "Por quanto Bill Gates comprou o Codex Leicester, de Leonardo, em 1994, em dólares?",
       "answer": 30800000,
@@ -2200,6 +2514,7 @@
       "fact": "É o livro mais caro já vendido em leilão."
     },
     {
+      "id": "chute-artes-315",
       "difficulty": "medium",
       "text": "Quantas páginas tem o Codex Leicester, de Leonardo da Vinci?",
       "answer": 72,
@@ -2207,6 +2522,7 @@
       "fact": "Ele foi escrito de trás para a frente."
     },
     {
+      "id": "chute-artes-316",
       "difficulty": "medium",
       "text": "Quantas folhas de ouro foram usadas em \"O Beijo\", de Klimt, aproximadamente?",
       "answer": 1000,
@@ -2214,6 +2530,7 @@
       "fact": "A obra foi comprada pelo governo austríaco antes de estar pronta."
     },
     {
+      "id": "chute-artes-317",
       "difficulty": "medium",
       "text": "Quantos metros tem o quadro \"A Ronda Noturna\" de largura?",
       "answer": 4.37,
@@ -2221,6 +2538,7 @@
       "fact": "Ele foi cortado para caber em uma parede em 1715."
     },
     {
+      "id": "chute-artes-318",
       "difficulty": "medium",
       "text": "Quantos metros tem o painel \"A Última Ceia\" de largura?",
       "answer": 8.8,
@@ -2228,6 +2546,7 @@
       "fact": "Foi restaurado por 21 anos, até 1999."
     },
     {
+      "id": "chute-artes-319",
       "difficulty": "medium",
       "text": "Quantos anos durou a restauração de \"A Última Ceia\", finalizada em 1999?",
       "answer": 21,
@@ -2235,6 +2554,7 @@
       "fact": "Da Vinci usou uma técnica pouco resistente."
     },
     {
+      "id": "chute-artes-320",
       "difficulty": "medium",
       "text": "Quantos metros quadrados tem o painel \"Etnias\", de Eduardo Kobra?",
       "answer": 3000,
@@ -2242,6 +2562,7 @@
       "fact": "Ele foi feito para a Olimpíada de 2016 no Rio."
     },
     {
+      "id": "chute-artes-321",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o Monumento às Bandeiras, de Brecheret?",
       "answer": 16,
@@ -2249,6 +2570,7 @@
       "fact": "A obra levou mais de 30 anos para ficar pronta."
     },
     {
+      "id": "chute-artes-322",
       "difficulty": "medium",
       "text": "Quantos metros de comprimento tem o Monumento às Bandeiras, de Brecheret?",
       "answer": 50,
@@ -2256,6 +2578,7 @@
       "fact": "Ela fica no Ibirapuera."
     },
     {
+      "id": "chute-artes-323",
       "difficulty": "medium",
       "text": "Quantos livros a Biblioteca do Congresso dos EUA tem, em milhões, aproximadamente?",
       "answer": 40,
@@ -2263,6 +2586,7 @@
       "fact": "É a maior biblioteca do mundo."
     },
     {
+      "id": "chute-artes-324",
       "difficulty": "medium",
       "text": "Quantos livros a Biblioteca Nacional do Brasil tem, em milhões?",
       "answer": 10,
@@ -2270,6 +2594,7 @@
       "fact": "É a maior da América Latina."
     },
     {
+      "id": "chute-artes-325",
       "difficulty": "hard",
       "text": "Quantos anos levou para construir o Taj Mahal?",
       "answer": 22,
@@ -2277,6 +2602,7 @@
       "fact": "Foram cerca de 20 mil trabalhadores."
     },
     {
+      "id": "chute-artes-326",
       "difficulty": "hard",
       "text": "Quantos trabalhadores construíram o Taj Mahal, aproximadamente?",
       "answer": 20000,
@@ -2284,6 +2610,7 @@
       "fact": "Foi um presente do imperador Shah Jahan à esposa morta."
     },
     {
+      "id": "chute-artes-327",
       "difficulty": "hard",
       "text": "Quantos anos levou para construir o Partenon?",
       "answer": 9,
@@ -2291,6 +2618,7 @@
       "fact": "Foi na Grécia Antiga, no século V a.C."
     },
     {
+      "id": "chute-artes-328",
       "difficulty": "hard",
       "text": "Quantas colunas tem o Partenon?",
       "answer": 46,
@@ -2298,6 +2626,7 @@
       "fact": "Os visitantes não podem entrar desde os anos 1970."
     },
     {
+      "id": "chute-artes-329",
       "difficulty": "hard",
       "text": "Em que ano foi concluída a \"Porta do Paraíso\", em Florença?",
       "answer": 1452,
@@ -2305,6 +2634,7 @@
       "fact": "Ghiberti levou 27 anos para terminar a obra."
     },
     {
+      "id": "chute-artes-330",
       "difficulty": "hard",
       "text": "Em que ano Brunelleschi concluiu a cúpula de Florença?",
       "answer": 1436,
@@ -2312,6 +2642,7 @@
       "fact": "Ele usou um sistema sem andaimes de apoio no chão."
     },
     {
+      "id": "chute-artes-331",
       "difficulty": "hard",
       "text": "Quantos tijolos tem a cúpula de Brunelleschi, em milhões?",
       "answer": 4,
@@ -2319,6 +2650,7 @@
       "fact": "Foi a maior cúpula de alvenaria do mundo."
     },
     {
+      "id": "chute-artes-332",
       "difficulty": "hard",
       "text": "Em que ano Michelangelo projetou a cúpula da Basílica de São Pedro?",
       "answer": 1547,
@@ -2326,6 +2658,7 @@
       "fact": "Ele não viu a obra pronta."
     },
     {
+      "id": "chute-artes-333",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Basílica de São Pedro?",
       "answer": 1626,
@@ -2333,6 +2666,7 @@
       "fact": "A obra levou mais de 120 anos."
     },
     {
+      "id": "chute-artes-334",
       "difficulty": "hard",
       "text": "Em que ano foi concluído o Palácio de Versalhes?",
       "answer": 1710,
@@ -2340,6 +2674,7 @@
       "fact": "Luís XIV o usou como sede da corte."
     },
     {
+      "id": "chute-artes-335",
       "difficulty": "hard",
       "text": "Em que ano Bernini terminou o \"Êxtase de Santa Teresa\"?",
       "answer": 1652,
@@ -2347,6 +2682,7 @@
       "fact": "A obra fica em Roma."
     },
     {
+      "id": "chute-artes-336",
       "difficulty": "hard",
       "text": "Em que ano Velázquez pintou \"As Meninas\"?",
       "answer": 1656,
@@ -2354,6 +2690,7 @@
       "fact": "A obra está no Prado."
     },
     {
+      "id": "chute-artes-337",
       "difficulty": "hard",
       "text": "Em que ano Goya pintou \"O Três de Maio\"?",
       "answer": 1814,
@@ -2361,6 +2698,7 @@
       "fact": "A obra mostra as execuções feitas pelos franceses em Madri."
     },
     {
+      "id": "chute-artes-338",
       "difficulty": "hard",
       "text": "Em que ano Delacroix pintou \"A Liberdade Guiando o Povo\"?",
       "answer": 1830,
@@ -2368,6 +2706,7 @@
       "fact": "A cena é da Revolução de Julho."
     },
     {
+      "id": "chute-artes-339",
       "difficulty": "hard",
       "text": "Em que ano Manet pintou \"O Almoço na Relva\"?",
       "answer": 1863,
@@ -2375,6 +2714,7 @@
       "fact": "A obra chocou a sociedade francesa."
     },
     {
+      "id": "chute-artes-340",
       "difficulty": "hard",
       "text": "Em que ano foi a primeira exposição impressionista?",
       "answer": 1874,
@@ -2382,6 +2722,7 @@
       "fact": "Foi em Paris, no estúdio do fotógrafo Nadar."
     },
     {
+      "id": "chute-artes-341",
       "difficulty": "hard",
       "text": "Em que ano Seurat concluiu \"Uma Tarde de Domingo na Ilha de La Grande Jatte\"?",
       "answer": 1886,
@@ -2389,6 +2730,7 @@
       "fact": "A técnica é o pontilhismo."
     },
     {
+      "id": "chute-artes-342",
       "difficulty": "hard",
       "text": "Em que ano Rodin concluiu \"O Pensador\", em tamanho grande?",
       "answer": 1904,
@@ -2396,6 +2738,7 @@
       "fact": "A figura vem das \"Portas do Inferno\"."
     },
     {
+      "id": "chute-artes-343",
       "difficulty": "hard",
       "text": "Em que ano Picasso pintou \"Les Demoiselles d'Avignon\"?",
       "answer": 1907,
@@ -2403,6 +2746,7 @@
       "fact": "A obra é considerada o início do cubismo."
     },
     {
+      "id": "chute-artes-344",
       "difficulty": "hard",
       "text": "Em que ano Duchamp apresentou \"A Fonte\", o mictório?",
       "answer": 1917,
@@ -2410,6 +2754,7 @@
       "fact": "A obra foi recusada na exposição."
     },
     {
+      "id": "chute-artes-345",
       "difficulty": "hard",
       "text": "Em que ano Mondrian pintou \"Broadway Boogie-Woogie\"?",
       "answer": 1943,
@@ -2417,6 +2762,7 @@
       "fact": "A obra é inspirada em Nova York."
     },
     {
+      "id": "chute-artes-346",
       "difficulty": "hard",
       "text": "Em que ano Pollock morreu, em um acidente de carro?",
       "answer": 1956,
@@ -2424,6 +2770,7 @@
       "fact": "Ele estava bêbado no momento do acidente."
     },
     {
+      "id": "chute-artes-347",
       "difficulty": "hard",
       "text": "Em que ano Warhol fez as latas de sopa Campbell?",
       "answer": 1962,
@@ -2431,6 +2778,7 @@
       "fact": "A obra tem 32 telas, uma para cada sabor."
     },
     {
+      "id": "chute-artes-348",
       "difficulty": "hard",
       "text": "Quantas telas tem a obra das latas de sopa de Warhol?",
       "answer": 32,
@@ -2438,6 +2786,7 @@
       "fact": "Era o número de sabores disponíveis."
     },
     {
+      "id": "chute-artes-349",
       "difficulty": "hard",
       "text": "Em que ano Basquiat morreu?",
       "answer": 1988,
@@ -2445,6 +2794,7 @@
       "fact": "Ele tinha apenas 27 anos."
     },
     {
+      "id": "chute-artes-350",
       "difficulty": "hard",
       "text": "Em que ano Banksy fez o quadro se autodestruir em leilão?",
       "answer": 2018,
@@ -2452,6 +2802,7 @@
       "fact": "O quadro é a Menina com Balão."
     },
     {
+      "id": "chute-artes-351",
       "difficulty": "hard",
       "text": "Em que ano Tarsila pintou \"Operários\"?",
       "answer": 1933,
@@ -2459,6 +2810,7 @@
       "fact": "A obra mostra muitos rostos diferentes."
     },
     {
+      "id": "chute-artes-352",
       "difficulty": "hard",
       "text": "Em que ano Anita Malfatti fez a exposição que chocou Monteiro Lobato?",
       "answer": 1917,
@@ -2466,6 +2818,7 @@
       "fact": "Ele a criticou em um artigo chamado \"Paranoia ou Mistificação?\"."
     },
     {
+      "id": "chute-artes-353",
       "difficulty": "hard",
       "text": "Em que ano Di Cavalcanti pintou \"Samba\"?",
       "answer": 1925,
@@ -2473,6 +2826,7 @@
       "fact": "A obra foi perdida em um incêndio em 2012."
     },
     {
+      "id": "chute-artes-354",
       "difficulty": "hard",
       "text": "Em que ano Aleijadinho morreu?",
       "answer": 1814,
@@ -2480,6 +2834,7 @@
       "fact": "Ele tinha cerca de 76 anos."
     },
     {
+      "id": "chute-artes-355",
       "difficulty": "hard",
       "text": "Em que ano Pedro Américo pintou \"Independência ou Morte\"?",
       "answer": 1888,
@@ -2487,6 +2842,7 @@
       "fact": "A obra foi feita em Florença, em 66 anos depois do fato."
     },
     {
+      "id": "chute-artes-356",
       "difficulty": "hard",
       "text": "Quantos metros tem a tela \"Independência ou Morte\", de largura?",
       "answer": 7.6,
@@ -2494,6 +2850,7 @@
       "fact": "Ela está no Museu do Ipiranga."
     },
     {
+      "id": "chute-artes-357",
       "difficulty": "hard",
       "text": "Em que ano Victor Meirelles pintou \"A Primeira Missa no Brasil\"?",
       "answer": 1860,
@@ -2501,6 +2858,7 @@
       "fact": "Ele a pintou em Paris."
     },
     {
+      "id": "chute-artes-358",
       "difficulty": "hard",
       "text": "Em que ano Almeida Júnior pintou \"Caipira Picando Fumo\"?",
       "answer": 1893,
@@ -2508,6 +2866,7 @@
       "fact": "O autor foi assassinado por um marido ciumento."
     },
     {
+      "id": "chute-artes-359",
       "difficulty": "hard",
       "text": "Em que ano Debret chegou ao Brasil?",
       "answer": 1816,
@@ -2515,6 +2874,7 @@
       "fact": "Ele fez parte da Missão Artística Francesa."
     },
     {
+      "id": "chute-artes-360",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro disco de samba, \"Pelo Telefone\"?",
       "answer": 1917,
@@ -2522,6 +2882,7 @@
       "fact": "A autoria foi disputada por muita gente."
     },
     {
+      "id": "chute-artes-361",
       "difficulty": "hard",
       "text": "Em que ano Carmen Miranda foi para os EUA?",
       "answer": 1939,
@@ -2529,6 +2890,7 @@
       "fact": "Ela chegou a ser a mulher mais bem paga dos EUA."
     },
     {
+      "id": "chute-artes-362",
       "difficulty": "hard",
       "text": "Em que ano Tom Jobim fez o show do Carnegie Hall, com a bossa nova?",
       "answer": 1962,
@@ -2536,6 +2898,7 @@
       "fact": "O show ajudou a tornar o estilo conhecido no mundo."
     },
     {
+      "id": "chute-artes-363",
       "difficulty": "hard",
       "text": "Quantas peças formam a coleção de vitrais da Sainte-Chapelle, em cenas bíblicas?",
       "answer": 1113,
@@ -2543,6 +2906,7 @@
       "fact": "Fica em Paris, junto ao Palácio da Justiça."
     },
     {
+      "id": "chute-artes-364",
       "difficulty": "hard",
       "text": "Quantas pessoas formaram o coro e a orquestra na estreia da \"Sinfonia dos Mil\", de Mahler?",
       "answer": 1029,
@@ -2550,6 +2914,7 @@
       "fact": "Foi em 1910, em Munique."
     },
     {
+      "id": "chute-artes-365",
       "difficulty": "hard",
       "text": "Em que ano foi oficializada a letra do Hino Nacional do Brasil?",
       "answer": 1922,
@@ -2557,6 +2922,7 @@
       "fact": "Foi no centenário da Independência."
     },
     {
+      "id": "chute-artes-366",
       "difficulty": "hard",
       "text": "Em que ano Francisco Manuel da Silva compôs a música do Hino Nacional?",
       "answer": 1831,
@@ -2564,6 +2930,7 @@
       "fact": "A letra atual veio mais de 80 anos depois."
     },
     {
+      "id": "chute-artes-367",
       "difficulty": "hard",
       "text": "Quantos anos durou a Bauhaus, escola de arte alemã?",
       "answer": 14,
@@ -2571,6 +2938,7 @@
       "fact": "Os nazistas a fecharam em 1933."
     },
     {
+      "id": "chute-artes-368",
       "difficulty": "hard",
       "text": "Quantos metros tem o \"Cloud Gate\", de Anish Kapoor, em Chicago?",
       "answer": 20,
@@ -2578,6 +2946,7 @@
       "fact": "A obra é apelidada de \"O Feijão\"."
     },
     {
+      "id": "chute-artes-369",
       "difficulty": "medium",
       "text": "Quantos teatros tem a região da Broadway, aproximadamente?",
       "answer": 41,
@@ -2585,6 +2954,7 @@
       "fact": "Cada um tem pelo menos 500 lugares."
     },
     {
+      "id": "chute-artes-370",
       "difficulty": "medium",
       "text": "Quantos lugares tem o Theatro Municipal de São Paulo, aproximadamente?",
       "answer": 1500,
@@ -2592,6 +2962,7 @@
       "fact": "Foi inspirado na Ópera de Paris."
     },
     {
+      "id": "chute-artes-371",
       "difficulty": "hard",
       "text": "Quantos lugares tem o Teatro alla Scala, aproximadamente?",
       "answer": 2000,
@@ -2599,6 +2970,7 @@
       "fact": "Ele foi reformado várias vezes."
     },
     {
+      "id": "chute-artes-372",
       "difficulty": "hard",
       "text": "Quantos lugares tem o Royal Albert Hall, aproximadamente?",
       "answer": 5300,
@@ -2606,6 +2978,7 @@
       "fact": "A acústica tinha eco, e foi corrigida com \"cogumelos\" no teto."
     },
     {
+      "id": "chute-artes-373",
       "difficulty": "hard",
       "text": "Quantos lugares tem a Ópera de Sydney, na sala principal, aproximadamente?",
       "answer": 2700,
@@ -2613,6 +2986,7 @@
       "fact": "A obra custou 14 vezes mais do que o previsto."
     },
     {
+      "id": "chute-artes-374",
       "difficulty": "hard",
       "text": "Quantas vezes o custo da Ópera de Sydney superou o previsto?",
       "answer": 14,
@@ -2620,6 +2994,7 @@
       "fact": "A obra foi paga em parte por uma loteria."
     },
     {
+      "id": "chute-artes-375",
       "difficulty": "hard",
       "text": "Quantos anos levou a construção da Ópera de Sydney?",
       "answer": 14,
@@ -2627,6 +3002,7 @@
       "fact": "A previsão inicial era de quatro."
     },
     {
+      "id": "chute-artes-376",
       "difficulty": "hard",
       "text": "Quantas telhas tem a Ópera de Sydney, em milhões?",
       "answer": 1,
@@ -2634,6 +3010,7 @@
       "fact": "Foram feitas na Suécia."
     },
     {
+      "id": "chute-artes-377",
       "difficulty": "hard",
       "text": "Quantas colunas tem a Catedral de Sevilha, aproximadamente?",
       "answer": 36,
@@ -2641,6 +3018,7 @@
       "fact": "É a maior catedral gótica do mundo."
     },
     {
+      "id": "chute-artes-378",
       "difficulty": "hard",
       "text": "Quantos metros tem a torre La Giralda, em Sevilha?",
       "answer": 104,
@@ -2648,6 +3026,7 @@
       "fact": "Ela foi originalmente um minarete."
     },
     {
+      "id": "chute-artes-379",
       "difficulty": "hard",
       "text": "Quantas torres terá a Sagrada Família, quando estiver pronta?",
       "answer": 18,
@@ -2655,6 +3034,7 @@
       "fact": "A obra começou em 1882."
     },
     {
+      "id": "chute-artes-380",
       "difficulty": "hard",
       "text": "Quantos anos Gaudí trabalhou na Sagrada Família?",
       "answer": 43,
@@ -2662,6 +3042,7 @@
       "fact": "Ele foi atropelado por um bonde em 1926."
     },
     {
+      "id": "chute-artes-381",
       "difficulty": "hard",
       "text": "Quantos anos Gaudí tinha ao morrer?",
       "answer": 73,
@@ -2669,6 +3050,7 @@
       "fact": "Ele foi confundido com um mendigo depois do acidente."
     },
     {
+      "id": "chute-artes-382",
       "difficulty": "hard",
       "text": "Quantos anos levou a escultura de Davi, de Michelangelo, para ficar pronta?",
       "answer": 3,
@@ -2676,6 +3058,7 @@
       "fact": "Ele trabalhou em um bloco que outros já tinham começado."
     },
     {
+      "id": "chute-artes-383",
       "difficulty": "hard",
       "text": "Quantas pessoas trabalharam na restauração de Notre-Dame, no auge?",
       "answer": 2000,
@@ -2683,6 +3066,7 @@
       "fact": "A obra levou pouco mais de cinco anos."
     },
     {
+      "id": "chute-artes-384",
       "difficulty": "easy",
       "text": "Quantas cordas tem uma guitarra comum?",
       "answer": 6,
@@ -2690,6 +3074,7 @@
       "fact": "Há modelos de 7 e 12 cordas."
     },
     {
+      "id": "chute-artes-385",
       "difficulty": "easy",
       "text": "Quantas cordas tem um baixo elétrico comum?",
       "answer": 4,
@@ -2697,6 +3082,7 @@
       "fact": "Muitos músicos usam modelos de 5."
     },
     {
+      "id": "chute-artes-386",
       "difficulty": "easy",
       "text": "Quantos músicos tem um quarteto de cordas?",
       "answer": 4,
@@ -2704,6 +3090,7 @@
       "fact": "Em geral, são dois violinos, viola e violoncelo."
     },
     {
+      "id": "chute-artes-387",
       "difficulty": "easy",
       "text": "Quantos versos tem um haicai?",
       "answer": 3,
@@ -2711,6 +3098,7 @@
       "fact": "Eles somam 17 sílabas."
     },
     {
+      "id": "chute-artes-388",
       "difficulty": "easy",
       "text": "Quantos anos Beethoven tinha quando morreu?",
       "answer": 56,
@@ -2718,6 +3106,7 @@
       "fact": "Ele estava quase totalmente surdo."
     },
     {
+      "id": "chute-artes-389",
       "difficulty": "easy",
       "text": "Quantos anos Mozart tinha quando morreu?",
       "answer": 35,
@@ -2725,6 +3114,7 @@
       "fact": "Ele deixou mais de 600 obras."
     },
     {
+      "id": "chute-artes-390",
       "difficulty": "easy",
       "text": "Quantos anos Van Gogh tinha quando morreu?",
       "answer": 37,
@@ -2732,6 +3122,7 @@
       "fact": "Ele viveu seus últimos meses na França."
     },
     {
+      "id": "chute-artes-391",
       "difficulty": "medium",
       "text": "Quantos anos Michelangelo tinha quando terminou a Pietà do Vaticano?",
       "answer": 24,
@@ -2739,6 +3130,7 @@
       "fact": "Ele a assinou na faixa de Maria."
     },
     {
+      "id": "chute-artes-392",
       "difficulty": "medium",
       "text": "Quantos atos tem uma tragédia clássica de Shakespeare?",
       "answer": 5,
@@ -2746,6 +3138,7 @@
       "fact": "A divisão é herança da tradição romana."
     },
     {
+      "id": "chute-artes-393",
       "difficulty": "medium",
       "text": "Quantas obras Pablo Picasso criou, em milhares, aproximadamente?",
       "answer": 50,
@@ -2753,6 +3146,7 @@
       "fact": "Ele trabalhou até os 91 anos."
     },
     {
+      "id": "chute-artes-394",
       "difficulty": "medium",
       "text": "Quantos visitantes o Louvre recebe por ano, em milhões, aproximadamente?",
       "answer": 9,
@@ -2760,6 +3154,7 @@
       "fact": "Ele é o museu mais visitado do mundo."
     },
     {
+      "id": "chute-artes-395",
       "difficulty": "medium",
       "text": "Quantas obras o Louvre abriga em exposição, em milhares, aproximadamente?",
       "answer": 35,
@@ -2767,6 +3162,7 @@
       "fact": "O acervo total é bem maior."
     },
     {
+      "id": "chute-artes-396",
       "difficulty": "medium",
       "text": "Quanto foi vendida \"Les Femmes d'Alger\", de Picasso, em milhões de dólares?",
       "answer": 179,
@@ -2774,6 +3170,7 @@
       "fact": "A venda foi em 2015."
     },
     {
+      "id": "chute-artes-397",
       "difficulty": "medium",
       "text": "Quanto foi vendida a obra \"Abaporu\", em milhões de dólares, em 1995?",
       "answer": 1.3,
@@ -2781,6 +3178,7 @@
       "fact": "Hoje, ela está em Buenos Aires."
     },
     {
+      "id": "chute-artes-398",
       "difficulty": "medium",
       "text": "Quanto foi vendido \"O Grito\", em milhões de dólares, em 2012?",
       "answer": 120,
@@ -2788,6 +3186,7 @@
       "fact": "Foi um recorde em leilão à época."
     },
     {
+      "id": "chute-artes-399",
       "difficulty": "medium",
       "text": "Qual é a altura do afresco Juízo Final, de Michelangelo, em metros?",
       "answer": 13.7,
@@ -2795,6 +3194,7 @@
       "fact": "Ele fica na parede do altar da Capela Sistina."
     },
     {
+      "id": "chute-artes-400",
       "difficulty": "medium",
       "text": "Quantas figuras tem o Juízo Final, de Michelangelo, aproximadamente?",
       "answer": 390,
@@ -2802,6 +3202,7 @@
       "fact": "Muitas foram cobertas depois por censura."
     },
     {
+      "id": "chute-artes-401",
       "difficulty": "medium",
       "text": "Quantos concertos para piano Mozart compôs?",
       "answer": 27,
@@ -2809,6 +3210,7 @@
       "fact": "Vários deles foram tocados por ele."
     },
     {
+      "id": "chute-artes-402",
       "difficulty": "medium",
       "text": "Quantas sinfonias Mozart compôs, na contagem tradicional?",
       "answer": 41,
@@ -2816,6 +3218,7 @@
       "fact": "A última é chamada de \"Júpiter\"."
     },
     {
+      "id": "chute-artes-403",
       "difficulty": "hard",
       "text": "Quantas peças Bach deixou no catálogo BWV, aproximadamente?",
       "answer": 1100,
@@ -2823,6 +3226,7 @@
       "fact": "A sigla significa catálogo das obras de Bach."
     },
     {
+      "id": "chute-artes-404",
       "difficulty": "hard",
       "text": "Qual é a altura do Davi de Michelangelo, em metros, aproximadamente?",
       "answer": 5.17,
@@ -2830,6 +3234,7 @@
       "fact": "Ele foi esculpido em um bloco rejeitado."
     },
     {
+      "id": "chute-artes-405",
       "difficulty": "hard",
       "text": "Quanto pesa o Davi de Michelangelo, em toneladas, aproximadamente?",
       "answer": 5.5,
@@ -2837,6 +3242,7 @@
       "fact": "As rachaduras nos tornozelos preocupam os restauradores."
     },
     {
+      "id": "chute-artes-406",
       "difficulty": "hard",
       "text": "Quantos anos Da Vinci levou trabalhando na Mona Lisa, aproximadamente?",
       "answer": 16,
@@ -2844,6 +3250,7 @@
       "fact": "Ele a levou consigo para a França."
     },
     {
+      "id": "chute-artes-407",
       "difficulty": "hard",
       "text": "Quantas páginas tem o Códice Leicester, de Leonardo da Vinci?",
       "answer": 72,
@@ -2851,6 +3258,7 @@
       "fact": "Bill Gates o comprou em 1994."
     },
     {
+      "id": "chute-artes-408",
       "difficulty": "hard",
       "text": "Quanto Bill Gates pagou pelo Códice Leicester, em milhões de dólares?",
       "answer": 30.8,
@@ -2858,6 +3266,7 @@
       "fact": "Foi o livro mais caro já vendido."
     },
     {
+      "id": "chute-artes-409",
       "difficulty": "hard",
       "text": "Quantas obras Claude Monet fez da série das ninfeias, aproximadamente?",
       "answer": 250,
@@ -2865,6 +3274,7 @@
       "fact": "Ele as pintou em Giverny."
     },
     {
+      "id": "chute-artes-410",
       "difficulty": "hard",
       "text": "Quantos metros de comprimento tem a Tapeçaria de Bayeux, aproximadamente?",
       "answer": 70,
@@ -2872,6 +3282,7 @@
       "fact": "Ela conta a conquista normanda da Inglaterra."
     },
     {
+      "id": "chute-artes-411",
       "difficulty": "hard",
       "text": "Quantos anos Monet morou em Giverny, aproximadamente?",
       "answer": 43,
@@ -2879,6 +3290,7 @@
       "fact": "Ele viveu lá de 1883 até morrer, em 1926."
     },
     {
+      "id": "chute-artes-412",
       "difficulty": "easy",
       "text": "Quantos músicos tocam em um trio?",
       "answer": 3,
@@ -2886,6 +3298,7 @@
       "fact": "O trio de jazz clássico tem piano, baixo e bateria."
     },
     {
+      "id": "chute-artes-413",
       "difficulty": "hard",
       "text": "Quantos anos o Museu do Prado tem, desde a abertura em 1819, até 2019?",
       "answer": 200,
@@ -2893,6 +3306,7 @@
       "fact": "Ele fica em Madri."
     },
     {
+      "id": "chute-artes-414",
       "difficulty": "hard",
       "text": "Quantos metros de altura tem a Estátua da Mãe-Pátria, na Rússia, sem a base?",
       "answer": 52,
@@ -2900,6 +3314,7 @@
       "fact": "A espada leva o total a 85 metros."
     },
     {
+      "id": "chute-artes-415",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o Davi de Bernini, sem a base, aproximadamente?",
       "answer": 1.7,
@@ -2907,6 +3322,7 @@
       "fact": "Ele mostra o herói no instante de lançar a pedra."
     },
     {
+      "id": "chute-artes-416",
       "difficulty": "easy",
       "text": "Quantos minutos dura uma música pop comum, aproximadamente?",
       "answer": 3.5,
@@ -2914,6 +3330,7 @@
       "fact": "As rádios preferem músicas com menos de quatro minutos."
     },
     {
+      "id": "chute-artes-417",
       "difficulty": "easy",
       "text": "Quantas músicas tem um álbum comum, aproximadamente?",
       "answer": 12,
@@ -2921,6 +3338,7 @@
       "fact": "Antigamente o tamanho do disco de vinil limitava o álbum."
     },
     {
+      "id": "chute-artes-418",
       "difficulty": "easy",
       "text": "Quantas cordas tem um ukulele?",
       "answer": 4,
@@ -2928,6 +3346,7 @@
       "fact": "O ukulele ficou famoso no Havaí."
     },
     {
+      "id": "chute-artes-419",
       "difficulty": "easy",
       "text": "Quantas horas dura um show comum de estádio, aproximadamente?",
       "answer": 2,
@@ -2935,6 +3354,7 @@
       "fact": "Algumas turnês longas passam de três horas por show."
     },
     {
+      "id": "chute-artes-420",
       "difficulty": "easy",
       "text": "Quantos lápis vêm numa caixa comum de lápis de cor escolar?",
       "answer": 12,
@@ -2942,6 +3362,7 @@
       "fact": "Caixas maiores têm 24, 36 ou até 72 cores."
     },
     {
+      "id": "chute-artes-421",
       "difficulty": "easy",
       "text": "Quantos quadros Van Gogh vendeu enquanto estava vivo, segundo a história mais contada?",
       "answer": 1,
@@ -2949,6 +3370,7 @@
       "fact": "Hoje as obras dele valem milhões de dólares."
     },
     {
+      "id": "chute-artes-422",
       "difficulty": "easy",
       "text": "Quantas orelhas Van Gogh cortou?",
       "answer": 1,
@@ -2956,6 +3378,7 @@
       "fact": "Na verdade, ele cortou só uma parte da orelha esquerda."
     },
     {
+      "id": "chute-artes-423",
       "difficulty": "easy",
       "text": "Quantos braços tem a estátua Vênus de Milo?",
       "answer": 0,
@@ -2963,6 +3386,7 @@
       "fact": "Os braços nunca foram encontrados."
     },
     {
+      "id": "chute-artes-424",
       "difficulty": "easy",
       "text": "Quantas sobrancelhas aparecem na Mona Lisa?",
       "answer": 0,
@@ -2970,6 +3394,7 @@
       "fact": "Alguns estudiosos acham que elas se apagaram com o tempo."
     },
     {
+      "id": "chute-artes-425",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Despacito\"?",
       "answer": 2017,
@@ -2977,6 +3402,7 @@
       "fact": "O clipe foi o primeiro a passar de 5 bilhões de visualizações no YouTube."
     },
     {
+      "id": "chute-artes-426",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Gangnam Style\"?",
       "answer": 2012,
@@ -2984,6 +3410,7 @@
       "fact": "O clipe foi o primeiro a chegar a 1 bilhão de visualizações no YouTube."
     },
     {
+      "id": "chute-artes-427",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Ai Se Eu Te Pego\", de Michel Teló?",
       "answer": 2011,
@@ -2991,6 +3418,7 @@
       "fact": "A música fez sucesso em vários países da Europa."
     },
     {
+      "id": "chute-artes-428",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Evidências\", na voz de Chitãozinho e Xororó?",
       "answer": 1990,
@@ -2998,6 +3426,7 @@
       "fact": "Ela virou o hino informal dos karaokês brasileiros."
     },
     {
+      "id": "chute-artes-429",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Envolver\", de Anitta?",
       "answer": 2021,
@@ -3005,6 +3434,7 @@
       "fact": "A música chegou ao primeiro lugar mundial do Spotify."
     },
     {
+      "id": "chute-artes-430",
       "difficulty": "easy",
       "text": "Em que ano morreu a cantora Marília Mendonça?",
       "answer": 2021,
@@ -3012,6 +3442,7 @@
       "fact": "Ela era chamada de rainha da sofrência."
     },
     {
+      "id": "chute-artes-431",
       "difficulty": "easy",
       "text": "Quantos minutos dura o Hino Nacional brasileiro tocado completo, aproximadamente?",
       "answer": 3.5,
@@ -3019,6 +3450,7 @@
       "fact": "Nos jogos de futebol, muitas vezes só a primeira parte é tocada."
     },
     {
+      "id": "chute-artes-432",
       "difficulty": "easy",
       "text": "Quantos dias dura o festival Lollapalooza Brasil, em geral?",
       "answer": 3,
@@ -3026,6 +3458,7 @@
       "fact": "O festival acontece no Autódromo de Interlagos, em São Paulo."
     },
     {
+      "id": "chute-artes-433",
       "difficulty": "easy",
       "text": "Quantos segundos dura um comercial comum de TV?",
       "answer": 30,
@@ -3033,6 +3466,7 @@
       "fact": "Os intervalos da TV aberta somam vários minutos por hora."
     },
     {
+      "id": "chute-artes-434",
       "difficulty": "easy",
       "text": "Quantas páginas tem um livro comum, aproximadamente?",
       "answer": 250,
@@ -3040,6 +3474,7 @@
       "fact": "Livros infantis costumam ter bem menos páginas."
     },
     {
+      "id": "chute-artes-435",
       "difficulty": "easy",
       "text": "Quantos livros tem a saga \"Crepúsculo\", a principal?",
       "answer": 4,
@@ -3047,6 +3482,7 @@
       "fact": "A autora é a americana Stephenie Meyer."
     },
     {
+      "id": "chute-artes-436",
       "difficulty": "easy",
       "text": "Quantos livros tem a série original de \"Jogos Vorazes\"?",
       "answer": 3,
@@ -3054,6 +3490,7 @@
       "fact": "Anos depois, a autora lançou livros novos com a história de Panem."
     },
     {
+      "id": "chute-artes-437",
       "difficulty": "easy",
       "text": "Quantos integrantes tem uma banda de rock clássica, em geral?",
       "answer": 4,
@@ -3061,6 +3498,7 @@
       "fact": "Guitarra, baixo, bateria e voz formam o time clássico."
     },
     {
+      "id": "chute-artes-438",
       "difficulty": "easy",
       "text": "Quantos minutos dura uma peça de teatro comum, aproximadamente?",
       "answer": 90,
@@ -3068,6 +3506,7 @@
       "fact": "Peças longas costumam ter um intervalo no meio."
     },
     {
+      "id": "chute-artes-439",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Baby\", de Justin Bieber?",
       "answer": 2010,
@@ -3075,6 +3514,7 @@
       "fact": "O cantor foi descoberto por vídeos que postava no YouTube."
     },
     {
+      "id": "chute-artes-440",
       "difficulty": "easy",
       "text": "Em que ano foi lançada \"Hello\", de Adele?",
       "answer": 2015,

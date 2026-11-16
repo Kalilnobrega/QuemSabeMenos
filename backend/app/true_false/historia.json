@@ -2,576 +2,672 @@
   "theme": "História",
   "statements": [
     {
+      "id": "vf-historia-1",
       "difficulty": "medium",
       "text": "Cristóvão Colombo chegou à América em 1492.",
       "answer": true,
       "fact": "Colombo chegou às Bahamas achando que estava nas Índias, por isso os povos nativos foram chamados de índios."
     },
     {
+      "id": "vf-historia-2",
       "difficulty": "medium",
       "text": "Napoleão Bonaparte era italiano.",
       "answer": false,
       "fact": "Napoleão nasceu na Córsega em 1769, um ano depois de a ilha passar a ser francesa."
     },
     {
+      "id": "vf-historia-3",
       "difficulty": "medium",
       "text": "O Muro de Berlim caiu em 1989.",
       "answer": true,
       "fact": "O muro caiu em 9 de novembro de 1989, e a Alemanha foi reunificada no ano seguinte."
     },
     {
+      "id": "vf-historia-4",
       "difficulty": "medium",
       "text": "A Primeira Guerra Mundial começou em 1939.",
       "answer": false,
       "fact": "A Primeira Guerra começou em 1914. Em 1939 começou a Segunda."
     },
     {
+      "id": "vf-historia-5",
       "difficulty": "medium",
       "text": "Os antigos egípcios mumificavam seus mortos.",
       "answer": true,
       "fact": "O processo levava cerca de 70 dias, e os órgãos eram guardados em vasos chamados canopos."
     },
     {
+      "id": "vf-historia-6",
       "difficulty": "medium",
       "text": "Júlio César foi o primeiro imperador romano.",
       "answer": false,
       "fact": "O primeiro imperador foi Augusto, sobrinho-neto de César, em 27 a.C. César foi ditador."
     },
     {
+      "id": "vf-historia-7",
       "difficulty": "medium",
       "text": "O Titanic afundou na viagem inaugural.",
       "answer": true,
       "fact": "O Titanic bateu num iceberg na noite de 14 de abril de 1912 e afundou em menos de três horas."
     },
     {
+      "id": "vf-historia-8",
       "difficulty": "medium",
       "text": "Pedro Álvares Cabral chegou ao Brasil em 1600.",
       "answer": false,
       "fact": "A esquadra de Cabral chegou em abril de 1500, no litoral do sul da Bahia."
     },
     {
+      "id": "vf-historia-9",
       "difficulty": "medium",
       "text": "A Revolução Francesa começou em 1789.",
       "answer": true,
       "fact": "O símbolo do começo é a Queda da Bastilha, em 14 de julho de 1789, hoje feriado nacional na França."
     },
     {
+      "id": "vf-historia-10",
       "difficulty": "medium",
       "text": "Neil Armstrong pisou na Lua em 1979.",
       "answer": false,
       "fact": "Armstrong pisou na Lua em 20 de julho de 1969, na missão Apollo 11."
     },
     {
+      "id": "vf-historia-11",
       "difficulty": "hard",
       "text": "Cleópatra viveu mais perto da chegada do homem à Lua do que da construção da Grande Pirâmide.",
       "answer": true,
       "fact": "A Grande Pirâmide é de cerca de 2560 a.C. Cleópatra morreu em 30 a.C., uns 2.500 anos depois."
     },
     {
+      "id": "vf-historia-12",
       "difficulty": "hard",
       "text": "Os vikings usavam capacetes com chifres em combate.",
       "answer": false,
       "fact": "Os chifres são uma invenção do século XIX, popularizada pelos figurinos das óperas de Wagner."
     },
     {
+      "id": "vf-historia-13",
       "difficulty": "hard",
       "text": "A Guerra dos Cem Anos durou mais de cem anos.",
       "answer": true,
       "fact": "A guerra entre Inglaterra e França durou 116 anos, de 1337 a 1453, com longas pausas."
     },
     {
+      "id": "vf-historia-14",
       "difficulty": "hard",
       "text": "A Inconfidência Mineira aconteceu depois da Independência do Brasil.",
       "answer": false,
       "fact": "A Inconfidência foi em 1789, mais de 30 anos antes da Independência."
     },
     {
+      "id": "vf-historia-15",
       "difficulty": "hard",
       "text": "Gandhi nunca recebeu o Prêmio Nobel da Paz.",
       "answer": true,
       "fact": "Gandhi foi indicado cinco vezes. O comitê do Nobel já admitiu que foi uma grande omissão."
     },
     {
+      "id": "vf-historia-16",
       "difficulty": "hard",
       "text": "Hitler nasceu na Alemanha.",
       "answer": false,
       "fact": "Hitler nasceu na Áustria, em Braunau am Inn, em 1889."
     },
     {
+      "id": "vf-historia-17",
       "difficulty": "hard",
       "text": "A Guerra do Paraguai foi o maior conflito entre países da história da América do Sul.",
       "answer": true,
       "fact": "A guerra durou de 1864 a 1870 e opôs o Paraguai a Brasil, Argentina e Uruguai."
     },
     {
+      "id": "vf-historia-18",
       "difficulty": "hard",
       "text": "A Revolução Russa de 1917 derrubou o czar Alexandre III.",
       "answer": false,
       "fact": "O czar derrubado foi Nicolau II, o último dos Romanov."
     },
     {
+      "id": "vf-historia-19",
       "difficulty": "hard",
       "text": "O Império Romano do Oriente durou até 1453.",
       "answer": true,
       "fact": "O império acabou com a tomada de Constantinopla pelos otomanos, que rebatizaram a cidade de Istambul."
     },
     {
+      "id": "vf-historia-20",
       "difficulty": "hard",
       "text": "George Washington assinou a Declaração de Independência dos Estados Unidos.",
       "answer": false,
       "fact": "Washington não assinou: em 1776 ele estava no comando do exército. A declaração foi escrita principalmente por Thomas Jefferson."
     },
     {
+      "id": "vf-historia-21",
       "difficulty": "medium",
       "text": "A Revolução Russa aconteceu em 1789.",
       "answer": false,
       "fact": "A Revolução Russa foi em 1917."
     },
     {
+      "id": "vf-historia-22",
       "difficulty": "medium",
       "text": "Napoleão nasceu na ilha da Córsega.",
       "answer": true,
       "fact": "A ilha tinha virado francesa um ano antes."
     },
     {
+      "id": "vf-historia-23",
       "difficulty": "medium",
       "text": "Napoleão morreu em Paris.",
       "answer": false,
       "fact": "Ele morreu exilado na ilha de Santa Helena."
     },
     {
+      "id": "vf-historia-24",
       "difficulty": "medium",
       "text": "Dom Pedro I proclamou a independência do Brasil.",
       "answer": true,
       "fact": "Foi em 7 de setembro de 1822."
     },
     {
+      "id": "vf-historia-25",
       "difficulty": "medium",
       "text": "Dom Pedro II proclamou a independência do Brasil.",
       "answer": false,
       "fact": "Quem proclamou foi seu pai, Dom Pedro I."
     },
     {
+      "id": "vf-historia-26",
       "difficulty": "medium",
       "text": "O Brasil foi o último país das Américas a abolir a escravidão.",
       "answer": true,
       "fact": "A Lei Áurea é de 1888."
     },
     {
+      "id": "vf-historia-27",
       "difficulty": "medium",
       "text": "A Lei Áurea foi assinada por Dom Pedro I.",
       "answer": false,
       "fact": "Ela foi assinada pela Princesa Isabel."
     },
     {
+      "id": "vf-historia-28",
       "difficulty": "medium",
       "text": "Salvador foi a primeira capital do Brasil.",
       "answer": true,
       "fact": "Ela foi capital até 1763."
     },
     {
+      "id": "vf-historia-29",
       "difficulty": "medium",
       "text": "São Paulo foi a primeira capital do Brasil.",
       "answer": false,
       "fact": "A primeira capital foi Salvador."
     },
     {
+      "id": "vf-historia-30",
       "difficulty": "medium",
       "text": "Brasília foi inaugurada em 1960.",
       "answer": true,
       "fact": "Juscelino Kubitschek foi seu grande idealizador."
     },
     {
+      "id": "vf-historia-31",
       "difficulty": "medium",
       "text": "Getúlio Vargas construiu Brasília.",
       "answer": false,
       "fact": "Quem construiu foi Juscelino Kubitschek."
     },
     {
+      "id": "vf-historia-32",
       "difficulty": "medium",
       "text": "Getúlio Vargas criou a CLT.",
       "answer": true,
       "fact": "Ela foi assinada em 1943."
     },
     {
+      "id": "vf-historia-33",
       "difficulty": "medium",
       "text": "A ditadura militar brasileira começou em 1934.",
       "answer": false,
       "fact": "Ela começou em 1964."
     },
     {
+      "id": "vf-historia-34",
       "difficulty": "medium",
       "text": "Tiradentes foi enforcado no Rio de Janeiro.",
       "answer": true,
       "fact": "A execução foi em 21 de abril de 1792."
     },
     {
+      "id": "vf-historia-35",
       "difficulty": "medium",
       "text": "Tiradentes foi o primeiro presidente do Brasil.",
       "answer": false,
       "fact": "O primeiro presidente foi Deodoro da Fonseca."
     },
     {
+      "id": "vf-historia-36",
       "difficulty": "medium",
       "text": "A Segunda Guerra Mundial terminou em 1945.",
       "answer": true,
       "fact": "A rendição do Japão aconteceu em setembro."
     },
     {
+      "id": "vf-historia-37",
       "difficulty": "medium",
       "text": "Adolf Hitler nasceu na Áustria.",
       "answer": true,
       "fact": "Ele nasceu em Braunau am Inn."
     },
     {
+      "id": "vf-historia-38",
       "difficulty": "medium",
       "text": "Winston Churchill foi primeiro-ministro do Reino Unido.",
       "answer": true,
       "fact": "Ele liderou o país durante a Segunda Guerra."
     },
     {
+      "id": "vf-historia-39",
       "difficulty": "medium",
       "text": "Stalin foi líder da Alemanha.",
       "answer": false,
       "fact": "Ele foi líder da União Soviética."
     },
     {
+      "id": "vf-historia-40",
       "difficulty": "medium",
       "text": "A Guerra Fria terminou em 1945.",
       "answer": false,
       "fact": "Ela começou depois da Segunda Guerra e terminou em 1991."
     },
     {
+      "id": "vf-historia-41",
       "difficulty": "medium",
       "text": "John Kennedy foi assassinado em Dallas.",
       "answer": true,
       "fact": "Foi em novembro de 1963."
     },
     {
+      "id": "vf-historia-42",
       "difficulty": "medium",
       "text": "Abraham Lincoln foi o primeiro presidente dos EUA.",
       "answer": false,
       "fact": "O primeiro foi George Washington."
     },
     {
+      "id": "vf-historia-43",
       "difficulty": "medium",
       "text": "Os vikings chegaram à América antes de Colombo.",
       "answer": true,
       "fact": "Leif Erikson chegou lá por volta do ano 1000."
     },
     {
+      "id": "vf-historia-44",
       "difficulty": "medium",
       "text": "Cristóvão Colombo era português.",
       "answer": false,
       "fact": "Ele nasceu em Gênova, onde hoje é a Itália."
     },
     {
+      "id": "vf-historia-45",
       "difficulty": "medium",
       "text": "Vasco da Gama chegou à Índia por mar em 1498.",
       "answer": true,
       "fact": "Ele contornou a África."
     },
     {
+      "id": "vf-historia-46",
       "difficulty": "medium",
       "text": "Pedro Álvares Cabral chegou ao Brasil em 1492.",
       "answer": false,
       "fact": "Ele chegou em 1500."
     },
     {
+      "id": "vf-historia-47",
       "difficulty": "medium",
       "text": "Os astecas viviam onde hoje é o México.",
       "answer": true,
       "fact": "Sua capital ficava em um lago."
     },
     {
+      "id": "vf-historia-48",
       "difficulty": "medium",
       "text": "Os incas viviam onde hoje é o México.",
       "answer": false,
       "fact": "Os incas viviam nos Andes."
     },
     {
+      "id": "vf-historia-49",
       "difficulty": "medium",
       "text": "O Coliseu fica em Atenas.",
       "answer": false,
       "fact": "O Coliseu fica em Roma."
     },
     {
+      "id": "vf-historia-50",
       "difficulty": "medium",
       "text": "Os romanos construíram aquedutos.",
       "answer": true,
       "fact": "Alguns ainda funcionam até hoje."
     },
     {
+      "id": "vf-historia-51",
       "difficulty": "hard",
       "text": "Nero foi imperador quando Roma pegou fogo em 64.",
       "answer": true,
       "fact": "Ele culpou os cristãos."
     },
     {
+      "id": "vf-historia-52",
       "difficulty": "hard",
       "text": "Calígula foi o último imperador de Roma.",
       "answer": false,
       "fact": "O último do Ocidente foi Rômulo Augusto."
     },
     {
+      "id": "vf-historia-53",
       "difficulty": "hard",
       "text": "Átila era o líder dos hunos.",
       "answer": true,
       "fact": "Ele ameaçou Roma no século V."
     },
     {
+      "id": "vf-historia-54",
       "difficulty": "hard",
       "text": "Os vikings usavam capacetes com chifres nas batalhas.",
       "answer": false,
       "fact": "Não há evidências disso, e a imagem veio de uma ópera do século XIX."
     },
     {
+      "id": "vf-historia-55",
       "difficulty": "hard",
       "text": "A Grande Pirâmide de Gizé foi a estrutura mais alta do mundo por quase 4 mil anos.",
       "answer": true,
       "fact": "Ela só foi superada no século XIV."
     },
     {
+      "id": "vf-historia-56",
       "difficulty": "hard",
       "text": "Escravizados construíram as pirâmides, segundo a arqueologia atual.",
       "answer": false,
       "fact": "Evidências mostram que trabalhadores pagos fizeram boa parte da obra."
     },
     {
+      "id": "vf-historia-57",
       "difficulty": "hard",
       "text": "Cleópatra viveu mais perto da chegada à Lua que da construção das pirâmides.",
       "answer": true,
       "fact": "Ela viveu cerca de 2.500 anos depois da construção da Grande Pirâmide."
     },
     {
+      "id": "vf-historia-58",
       "difficulty": "hard",
       "text": "Cleópatra era de origem egípcia.",
       "answer": false,
       "fact": "Ela era de origem grega, da dinastia ptolomaica."
     },
     {
+      "id": "vf-historia-59",
       "difficulty": "hard",
       "text": "Maria Antonieta nasceu na Áustria.",
       "answer": true,
       "fact": "Ela foi guilhotinada em 1793."
     },
     {
+      "id": "vf-historia-60",
       "difficulty": "hard",
       "text": "Maria Antonieta realmente disse \"Que comam brioches\".",
       "answer": false,
       "fact": "Não há registros de que ela tenha dito isso."
     },
     {
+      "id": "vf-historia-61",
       "difficulty": "hard",
       "text": "Napoleão era de estatura normal para a época.",
       "answer": true,
       "fact": "A fama de baixinho veio de propaganda britânica."
     },
     {
+      "id": "vf-historia-62",
       "difficulty": "hard",
       "text": "Einstein foi um péssimo aluno em matemática.",
       "answer": false,
       "fact": "Ele sempre foi muito bom em matemática."
     },
     {
+      "id": "vf-historia-63",
       "difficulty": "hard",
       "text": "O Titanic afundou em sua viagem de estreia.",
       "answer": true,
       "fact": "Foi em abril de 1912."
     },
     {
+      "id": "vf-historia-64",
       "difficulty": "hard",
       "text": "O Titanic afundou no Oceano Pacífico.",
       "answer": false,
       "fact": "Ele afundou no Atlântico Norte."
     },
     {
+      "id": "vf-historia-65",
       "difficulty": "hard",
       "text": "O Brasil foi o único país sul-americano a mandar tropas à Segunda Guerra.",
       "answer": true,
       "fact": "Foi a Força Expedicionária Brasileira."
     },
     {
+      "id": "vf-historia-66",
       "difficulty": "hard",
       "text": "Os pracinhas lutaram na França.",
       "answer": false,
       "fact": "Eles lutaram na Itália."
     },
     {
+      "id": "vf-historia-67",
       "difficulty": "hard",
       "text": "O Plano Real foi lançado no governo de Itamar Franco.",
       "answer": true,
       "fact": "FHC era o ministro da Fazenda quando o projeto começou."
     },
     {
+      "id": "vf-historia-68",
       "difficulty": "hard",
       "text": "O AI-5 foi decretado durante o governo de Getúlio Vargas.",
       "answer": false,
       "fact": "Ele foi decretado em 1968, com Costa e Silva."
     },
     {
+      "id": "vf-historia-69",
       "difficulty": "hard",
       "text": "Tancredo Neves morreu antes de tomar posse.",
       "answer": true,
       "fact": "José Sarney, o vice, assumiu no lugar dele."
     },
     {
+      "id": "vf-historia-70",
       "difficulty": "hard",
       "text": "Dilma Rousseff foi a primeira mulher a governar a América do Sul.",
       "answer": false,
       "fact": "Isabelita Perón governou a Argentina antes, nos anos 1970."
     },
     {
+      "id": "vf-historia-71",
       "difficulty": "hard",
       "text": "O Quilombo dos Palmares ficava em Alagoas.",
       "answer": true,
       "fact": "Na época, a região fazia parte de Pernambuco."
     },
     {
+      "id": "vf-historia-72",
       "difficulty": "hard",
       "text": "Canudos era um quilombo no Rio Grande do Sul.",
       "answer": false,
       "fact": "Canudos ficava no sertão da Bahia."
     },
     {
+      "id": "vf-historia-73",
       "difficulty": "hard",
       "text": "A Revolução Farroupilha durou dez anos.",
       "answer": true,
       "fact": "Ela aconteceu entre 1835 e 1845."
     },
     {
+      "id": "vf-historia-74",
       "difficulty": "hard",
       "text": "Anita Garibaldi nasceu na Itália.",
       "answer": false,
       "fact": "Ela nasceu em Santa Catarina."
     },
     {
+      "id": "vf-historia-75",
       "difficulty": "hard",
       "text": "Maria Quitéria se vestiu de homem para lutar pela independência.",
       "answer": true,
       "fact": "Ela foi condecorada por Dom Pedro I."
     },
     {
+      "id": "vf-historia-76",
       "difficulty": "hard",
       "text": "Dom Pedro I morreu em Portugal.",
       "answer": true,
       "fact": "Ele voltou para lá depois da abdicação, em 1831."
     },
     {
+      "id": "vf-historia-77",
       "difficulty": "hard",
       "text": "Dom Pedro II morreu no Rio de Janeiro.",
       "answer": false,
       "fact": "Ele morreu em Paris, em 1891."
     },
     {
+      "id": "vf-historia-78",
       "difficulty": "hard",
       "text": "A Guerra do Paraguai durou seis anos.",
       "answer": true,
       "fact": "Foi de 1864 a 1870."
     },
     {
+      "id": "vf-historia-79",
       "difficulty": "hard",
       "text": "O primeiro voo dos irmãos Wright foi em Paris.",
       "answer": false,
       "fact": "Eles voaram nos EUA, em 1903."
     },
     {
+      "id": "vf-historia-80",
       "difficulty": "hard",
       "text": "O inventor Bartolomeu de Gusmão, brasileiro, fez voar um balão em Lisboa em 1709.",
       "answer": true,
       "fact": "Ele mostrou o invento ao rei de Portugal."
     },
     {
+      "id": "vf-historia-81",
       "difficulty": "hard",
       "text": "A Guerra do Golfo aconteceu nos anos 1950.",
       "answer": false,
       "fact": "Ela aconteceu em 1990 e 1991."
     },
     {
+      "id": "vf-historia-82",
       "difficulty": "medium",
       "text": "Júlio César foi assassinado em 44 a.C.",
       "answer": true,
       "fact": "Bruto e Cássio lideraram a conspiração."
     },
     {
+      "id": "vf-historia-83",
       "difficulty": "medium",
       "text": "A Lei Áurea libertou os escravizados em 1850.",
       "answer": false,
       "fact": "Ela é de 1888, e a lei de 1850 proibiu o tráfico."
     },
     {
+      "id": "vf-historia-84",
       "difficulty": "medium",
       "text": "A Proclamação da República no Brasil aconteceu em 1889.",
       "answer": true,
       "fact": "O imperador Dom Pedro II partiu para a Europa com a família."
     },
     {
+      "id": "vf-historia-85",
       "difficulty": "medium",
       "text": "O Império Romano do Ocidente caiu em 1453.",
       "answer": false,
       "fact": "Ele caiu em 476, e o Oriente caiu em 1453."
     },
     {
+      "id": "vf-historia-86",
       "difficulty": "medium",
       "text": "Constantinopla caiu em 1453.",
       "answer": true,
       "fact": "A cidade hoje se chama Istambul."
     },
     {
+      "id": "vf-historia-87",
       "difficulty": "hard",
       "text": "Santos Dumont voou com o 14-Bis em Paris, em 1906.",
       "answer": true,
       "fact": "Ele não patenteou seus inventos, para deixar livre o uso."
     },
     {
+      "id": "vf-historia-88",
       "difficulty": "hard",
       "text": "O Muro de Berlim foi construído pelos Estados Unidos.",
       "answer": false,
       "fact": "Ele foi construído pela Alemanha Oriental, em 1961."
     },
     {
+      "id": "vf-historia-89",
       "difficulty": "hard",
       "text": "O primeiro presidente eleito de forma direta depois da ditadura foi Fernando Collor.",
       "answer": true,
       "fact": "A eleição aconteceu em 1989."
     },
     {
+      "id": "vf-historia-90",
       "difficulty": "medium",
       "text": "Maria Antonieta foi guilhotinada.",
       "answer": true,
       "fact": "Ela morreu em outubro de 1793."
     },
     {
+      "id": "vf-historia-91",
       "difficulty": "medium",
       "text": "Dom Pedro II foi o último imperador do Brasil.",
       "answer": true,
       "fact": "Ele foi para o exílio em 1889."
     },
     {
+      "id": "vf-historia-92",
       "difficulty": "medium",
       "text": "A Guerra Fria teve batalhas diretas entre EUA e URSS.",
       "answer": false,
       "fact": "As superpotências se enfrentaram por conflitos indiretos."
     },
     {
+      "id": "vf-historia-93",
       "difficulty": "medium",
       "text": "O Muro de Berlim dividiu a cidade por 28 anos.",
       "answer": true,
       "fact": "Ele foi construído em 1961."
     },
     {
+      "id": "vf-historia-94",
       "difficulty": "hard",
       "text": "Getúlio Vargas foi presidente por uma única vez.",
       "answer": false,
       "fact": "Ele governou de 1930 a 1945 e de 1951 a 1954."
     },
     {
+      "id": "vf-historia-95",
       "difficulty": "hard",
       "text": "A Revolução de 1930 pôs fim à República Velha.",
       "answer": true,
       "fact": "Ela levou Getúlio Vargas ao poder."
     },
     {
+      "id": "vf-historia-96",
       "difficulty": "hard",
       "text": "A Inquisição foi criada no século XX.",
       "answer": false,

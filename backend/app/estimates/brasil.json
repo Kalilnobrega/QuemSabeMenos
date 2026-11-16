@@ -2,6 +2,7 @@
   "theme": "Brasil",
   "questions": [
     {
+      "id": "chute-brasil-1",
       "difficulty": "easy",
       "text": "Em que ano o Brasil ficou independente de Portugal?",
       "answer": 1822,
@@ -9,6 +10,7 @@
       "fact": "Dom Pedro declarou a independência em 7 de setembro, às margens do Ipiranga."
     },
     {
+      "id": "chute-brasil-2",
       "difficulty": "easy",
       "text": "Em que ano foi proclamada a República no Brasil?",
       "answer": 1889,
@@ -16,6 +18,7 @@
       "fact": "Foi em 15 de novembro, liderada pelo marechal Deodoro da Fonseca."
     },
     {
+      "id": "chute-brasil-3",
       "difficulty": "easy",
       "text": "Em que ano Brasília foi inaugurada?",
       "answer": 1960,
@@ -23,6 +26,7 @@
       "fact": "A capital foi construída em menos de quatro anos, no governo de Juscelino Kubitschek."
     },
     {
+      "id": "chute-brasil-4",
       "difficulty": "easy",
       "text": "Quantos estados tem o Brasil, sem contar o Distrito Federal?",
       "answer": 26,
@@ -30,6 +34,7 @@
       "fact": "Com o Distrito Federal, são 27 unidades da federação."
     },
     {
+      "id": "chute-brasil-5",
       "difficulty": "easy",
       "text": "Em que ano foi assinada a Lei Áurea?",
       "answer": 1888,
@@ -37,6 +42,7 @@
       "fact": "A princesa Isabel assinou a lei em 13 de maio; o Brasil foi o último país das Américas a abolir a escravidão."
     },
     {
+      "id": "chute-brasil-6",
       "difficulty": "easy",
       "text": "Quantos habitantes o Brasil tinha no Censo de 2022?",
       "answer": 203,
@@ -44,6 +50,7 @@
       "fact": "O Censo contou 203,1 milhões de pessoas, menos do que as projeções esperavam."
     },
     {
+      "id": "chute-brasil-7",
       "difficulty": "medium",
       "text": "Quantos quilômetros de litoral tem o Brasil?",
       "answer": 7367,
@@ -51,6 +58,7 @@
       "fact": "Contando as reentrâncias de baías e ilhas, o número passa de 9 mil km."
     },
     {
+      "id": "chute-brasil-8",
       "difficulty": "medium",
       "text": "Com quantos países o Brasil faz fronteira?",
       "answer": 10,
@@ -58,6 +66,7 @@
       "fact": "Só Chile e Equador, na América do Sul, não fazem fronteira com o Brasil."
     },
     {
+      "id": "chute-brasil-9",
       "difficulty": "hard",
       "text": "Qual a altura do Pico da Neblina, o ponto mais alto do Brasil?",
       "answer": 2995,
@@ -65,6 +74,7 @@
       "fact": "Ele fica no Amazonas, na fronteira com a Venezuela, numa terra indígena Yanomami."
     },
     {
+      "id": "chute-brasil-10",
       "difficulty": "easy",
       "text": "Em que ano a esquadra de Cabral chegou ao Brasil?",
       "answer": 1500,
@@ -72,6 +82,7 @@
       "fact": "Os portugueses desembarcaram em 22 de abril, no sul da Bahia."
     },
     {
+      "id": "chute-brasil-11",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o Pão de Açúcar?",
       "answer": 396,
@@ -79,6 +90,7 @@
       "fact": "O bondinho, inaugurado em 1912, foi o primeiro teleférico do Brasil."
     },
     {
+      "id": "chute-brasil-12",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de São Paulo?",
       "answer": 1554,
@@ -86,6 +98,7 @@
       "fact": "Os jesuítas fundaram o colégio de São Paulo de Piratininga em 25 de janeiro."
     },
     {
+      "id": "chute-brasil-13",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade do Rio de Janeiro?",
       "answer": 1565,
@@ -93,6 +106,7 @@
       "fact": "Estácio de Sá fundou a cidade em 1º de março, durante a luta contra os franceses."
     },
     {
+      "id": "chute-brasil-14",
       "difficulty": "medium",
       "text": "Qual a área do Brasil?",
       "answer": 8.51,
@@ -100,6 +114,7 @@
       "fact": "O Brasil é o 5º maior país do mundo, atrás de Rússia, Canadá, China e Estados Unidos."
     },
     {
+      "id": "chute-brasil-15",
       "difficulty": "easy",
       "text": "Em que ano foi promulgada a Constituição atual do Brasil?",
       "answer": 1988,
@@ -107,6 +122,7 @@
       "fact": "Ulysses Guimarães a chamou de Constituição Cidadã."
     },
     {
+      "id": "chute-brasil-16",
       "difficulty": "easy",
       "text": "Em que ano o real entrou em circulação?",
       "answer": 1994,
@@ -114,6 +130,7 @@
       "fact": "As notas e moedas do real começaram a circular em 1º de julho."
     },
     {
+      "id": "chute-brasil-17",
       "difficulty": "medium",
       "text": "Quantos municípios tem o Brasil?",
       "answer": 5570,
@@ -121,6 +138,7 @@
       "fact": "São 5.568 municípios, mais o Distrito Federal e o distrito de Fernando de Noronha."
     },
     {
+      "id": "chute-brasil-18",
       "difficulty": "hard",
       "text": "Em que ano a capital do Brasil passou de Salvador para o Rio de Janeiro?",
       "answer": 1763,
@@ -128,6 +146,7 @@
       "fact": "A mudança acompanhou a importância do ouro de Minas, escoado pelo porto do Rio."
     },
     {
+      "id": "chute-brasil-19",
       "difficulty": "medium",
       "text": "Em que ano Santos Dumont voou com o 14-Bis em Paris?",
       "answer": 1906,
@@ -135,6 +154,7 @@
       "fact": "O voo de 23 de outubro foi o primeiro de um avião que decolou por meios próprios, diante de testemunhas."
     },
     {
+      "id": "chute-brasil-20",
       "difficulty": "hard",
       "text": "Em que ano a Petrobras foi criada?",
       "answer": 1953,
@@ -142,6 +162,7 @@
       "fact": "Foi criada por Getúlio Vargas, depois da campanha 'O petróleo é nosso'."
     },
     {
+      "id": "chute-brasil-21",
       "difficulty": "easy",
       "text": "Quantos anos durou a ditadura militar no Brasil?",
       "answer": 21,
@@ -149,6 +170,7 @@
       "fact": "Durou de 1964 a 1985, quando Tancredo Neves foi eleito pelo Colégio Eleitoral."
     },
     {
+      "id": "chute-brasil-22",
       "difficulty": "medium",
       "text": "Em que ano Getúlio Vargas morreu?",
       "answer": 1954,
@@ -156,6 +178,7 @@
       "fact": "Ele deixou uma carta-testamento com a frase 'Saio da vida para entrar na História'."
     },
     {
+      "id": "chute-brasil-23",
       "difficulty": "medium",
       "text": "Em que ano o Maracanã foi inaugurado?",
       "answer": 1950,
@@ -163,6 +186,7 @@
       "fact": "Ele foi construído para a Copa de 1950, que terminou com o Maracanazo."
     },
     {
+      "id": "chute-brasil-24",
       "difficulty": "medium",
       "text": "Quantos quilômetros tem a Ponte Rio-Niterói?",
       "answer": 13.3,
@@ -170,6 +194,7 @@
       "fact": "Inaugurada em 1974, ela tem trechos a 72 metros de altura para os navios passarem."
     },
     {
+      "id": "chute-brasil-25",
       "difficulty": "hard",
       "text": "Em que ano Dom Pedro II foi coroado imperador?",
       "answer": 1841,
@@ -177,6 +202,7 @@
       "fact": "Ele tinha só 15 anos; o Golpe da Maioridade antecipou a coroação."
     },
     {
+      "id": "chute-brasil-26",
       "difficulty": "hard",
       "text": "Em que ano a usina de Itaipu começou a gerar energia?",
       "answer": 1984,
@@ -184,6 +210,7 @@
       "fact": "Itaipu é binacional, do Brasil e do Paraguai, e já foi a maior hidrelétrica do mundo."
     },
     {
+      "id": "chute-brasil-27",
       "difficulty": "hard",
       "text": "Quantas línguas indígenas o Censo de 2010 registrou no Brasil?",
       "answer": 274,
@@ -191,6 +218,7 @@
       "fact": "O mesmo censo contou 305 etnias indígenas no país."
     },
     {
+      "id": "chute-brasil-28",
       "difficulty": "hard",
       "text": "Em que ano as mulheres conquistaram o direito de votar no Brasil?",
       "answer": 1932,
@@ -198,6 +226,7 @@
       "fact": "O voto feminino veio com o Código Eleitoral de 1932, no governo Vargas."
     },
     {
+      "id": "chute-brasil-29",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Salvador, a primeira capital do Brasil?",
       "answer": 1549,
@@ -205,6 +234,7 @@
       "fact": "Tomé de Sousa, o primeiro governador-geral, fundou a cidade."
     },
     {
+      "id": "chute-brasil-30",
       "difficulty": "medium",
       "text": "Em que ano terminou a Guerra do Paraguai?",
       "answer": 1870,
@@ -212,6 +242,7 @@
       "fact": "Foi o maior conflito armado da América do Sul; o Paraguai perdeu grande parte da população."
     },
     {
+      "id": "chute-brasil-31",
       "difficulty": "easy",
       "text": "Quantos anos dura o mandato de um presidente do Brasil?",
       "answer": 4,
@@ -219,6 +250,7 @@
       "fact": "Ele pode ser reeleito uma vez."
     },
     {
+      "id": "chute-brasil-32",
       "difficulty": "easy",
       "text": "Quantos anos dura o mandato de um deputado federal?",
       "answer": 4,
@@ -226,6 +258,7 @@
       "fact": "A Câmara tem 513 deputados."
     },
     {
+      "id": "chute-brasil-33",
       "difficulty": "easy",
       "text": "Quantos deputados federais tem a Câmara?",
       "answer": 513,
@@ -233,6 +266,7 @@
       "fact": "São Paulo tem o maior número, com 70."
     },
     {
+      "id": "chute-brasil-34",
       "difficulty": "easy",
       "text": "Quantos senadores tem o Brasil?",
       "answer": 81,
@@ -240,6 +274,7 @@
       "fact": "São três por estado e três pelo DF."
     },
     {
+      "id": "chute-brasil-35",
       "difficulty": "easy",
       "text": "Quantos senadores tem cada estado?",
       "answer": 3,
@@ -247,6 +282,7 @@
       "fact": "Cada estado tem peso igual no Senado."
     },
     {
+      "id": "chute-brasil-36",
       "difficulty": "easy",
       "text": "Quantos ministros tem o Supremo Tribunal Federal?",
       "answer": 11,
@@ -254,6 +290,7 @@
       "fact": "Eles são indicados pelo presidente."
     },
     {
+      "id": "chute-brasil-37",
       "difficulty": "easy",
       "text": "Com quantos anos é permitido votar no Brasil?",
       "answer": 16,
@@ -261,6 +298,7 @@
       "fact": "Dos 16 aos 18, o voto é facultativo."
     },
     {
+      "id": "chute-brasil-38",
       "difficulty": "easy",
       "text": "Com quantos anos o voto se torna obrigatório?",
       "answer": 18,
@@ -268,6 +306,7 @@
       "fact": "Ele deixa de ser obrigatório aos 70."
     },
     {
+      "id": "chute-brasil-39",
       "difficulty": "easy",
       "text": "A partir de quantos anos o voto deixa de ser obrigatório?",
       "answer": 70,
@@ -275,6 +314,7 @@
       "fact": "Mesmo assim, muitos idosos seguem votando."
     },
     {
+      "id": "chute-brasil-40",
       "difficulty": "easy",
       "text": "Quantos dígitos tem um número de celular com DDD no Brasil?",
       "answer": 11,
@@ -282,6 +322,7 @@
       "fact": "O nono dígito foi adotado aos poucos, até 2016."
     },
     {
+      "id": "chute-brasil-41",
       "difficulty": "easy",
       "text": "Quantos dígitos tem o DDD do Brasil?",
       "answer": 2,
@@ -289,6 +330,7 @@
       "fact": "São Paulo capital usa o 11."
     },
     {
+      "id": "chute-brasil-42",
       "difficulty": "easy",
       "text": "Qual o DDD de Brasília?",
       "answer": 61,
@@ -296,6 +338,7 @@
       "fact": "O número fica na região central do país."
     },
     {
+      "id": "chute-brasil-43",
       "difficulty": "easy",
       "text": "Qual o DDD do Rio de Janeiro?",
       "answer": 21,
@@ -303,6 +346,7 @@
       "fact": "A região metropolitana usa também o 24 em alguns pontos."
     },
     {
+      "id": "chute-brasil-44",
       "difficulty": "easy",
       "text": "Qual o DDD de São Paulo capital?",
       "answer": 11,
@@ -310,6 +354,7 @@
       "fact": "O número virou gíria e nome de produto."
     },
     {
+      "id": "chute-brasil-45",
       "difficulty": "easy",
       "text": "Qual o código do Brasil para ligações internacionais?",
       "answer": 55,
@@ -317,6 +362,7 @@
       "fact": "Ele é usado também em contas de WhatsApp."
     },
     {
+      "id": "chute-brasil-46",
       "difficulty": "easy",
       "text": "Qual é o número da emergência do Corpo de Bombeiros?",
       "answer": 193,
@@ -324,6 +370,7 @@
       "fact": "O da polícia é 190."
     },
     {
+      "id": "chute-brasil-47",
       "difficulty": "easy",
       "text": "Qual é o número da polícia militar?",
       "answer": 190,
@@ -331,6 +378,7 @@
       "fact": "O da Polícia Civil é 197."
     },
     {
+      "id": "chute-brasil-48",
       "difficulty": "easy",
       "text": "Qual é o número da ambulância do SAMU?",
       "answer": 192,
@@ -338,6 +386,7 @@
       "fact": "O atendimento é gratuito."
     },
     {
+      "id": "chute-brasil-49",
       "difficulty": "easy",
       "text": "Em que ano nasceu o Bolsa Família?",
       "answer": 2003,
@@ -345,6 +394,7 @@
       "fact": "Ele juntou outros programas de benefício."
     },
     {
+      "id": "chute-brasil-50",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Enem?",
       "answer": 1998,
@@ -352,6 +402,7 @@
       "fact": "A partir de 2009 ele passou a dar vagas em universidades."
     },
     {
+      "id": "chute-brasil-51",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a Coca-Cola no Brasil?",
       "answer": 1942,
@@ -359,6 +410,7 @@
       "fact": "Ela chegou com os soldados americanos em Natal e Recife."
     },
     {
+      "id": "chute-brasil-52",
       "difficulty": "easy",
       "text": "Em que ano o Brasil ganhou a segunda Copa do Mundo?",
       "answer": 1962,
@@ -366,6 +418,7 @@
       "fact": "Foi no Chile, com um show de Garrincha."
     },
     {
+      "id": "chute-brasil-53",
       "difficulty": "easy",
       "text": "Em que ano o Brasil ganhou a terceira Copa do Mundo?",
       "answer": 1970,
@@ -373,6 +426,7 @@
       "fact": "Foi no México, com uma seleção histórica."
     },
     {
+      "id": "chute-brasil-54",
       "difficulty": "easy",
       "text": "Em que ano o Brasil ganhou a quarta Copa do Mundo?",
       "answer": 1994,
@@ -380,6 +434,7 @@
       "fact": "Foi nos EUA, nos pênaltis contra a Itália."
     },
     {
+      "id": "chute-brasil-55",
       "difficulty": "easy",
       "text": "Em que ano o Brasil ganhou a quinta Copa do Mundo?",
       "answer": 2002,
@@ -387,6 +442,7 @@
       "fact": "Foi na Coreia e no Japão."
     },
     {
+      "id": "chute-brasil-56",
       "difficulty": "easy",
       "text": "Em que ano foi o 7 a 1 entre Alemanha e Brasil?",
       "answer": 2014,
@@ -394,6 +450,7 @@
       "fact": "Foi no Mineirão, na semifinal."
     },
     {
+      "id": "chute-brasil-57",
       "difficulty": "easy",
       "text": "Em que ano nasceu Chico Buarque?",
       "answer": 1944,
@@ -401,6 +458,7 @@
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
+      "id": "chute-brasil-58",
       "difficulty": "easy",
       "text": "Em que ano foi a estreia do Rock in Rio?",
       "answer": 1985,
@@ -408,6 +466,7 @@
       "fact": "Foram 10 dias, com mais de 1 milhão de pessoas."
     },
     {
+      "id": "chute-brasil-59",
       "difficulty": "medium",
       "text": "Em que ano foi a estreia do Fantástico?",
       "answer": 1973,
@@ -415,6 +474,7 @@
       "fact": "Ele vai ao ar aos domingos."
     },
     {
+      "id": "chute-brasil-60",
       "difficulty": "medium",
       "text": "Em que ano foi a estreia da TV Globo?",
       "answer": 1965,
@@ -422,6 +482,7 @@
       "fact": "A primeira emissora foi no Rio de Janeiro."
     },
     {
+      "id": "chute-brasil-61",
       "difficulty": "medium",
       "text": "Em que ano foi a estreia do SBT?",
       "answer": 1981,
@@ -429,6 +490,7 @@
       "fact": "Silvio Santos ganhou a concessão no governo Figueiredo."
     },
     {
+      "id": "chute-brasil-62",
       "difficulty": "medium",
       "text": "Em que ano foi criado o personagem Zé Carioca?",
       "answer": 1942,
@@ -436,6 +498,7 @@
       "fact": "Walt Disney viajou ao Brasil no ano anterior."
     },
     {
+      "id": "chute-brasil-63",
       "difficulty": "medium",
       "text": "Em que ano Maurício de Sousa criou a Mônica?",
       "answer": 1963,
@@ -443,6 +506,7 @@
       "fact": "Ela foi inspirada em uma filha dele."
     },
     {
+      "id": "chute-brasil-64",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Fusca brasileiro?",
       "answer": 1959,
@@ -450,6 +514,7 @@
       "fact": "Virou o carro mais popular do país."
     },
     {
+      "id": "chute-brasil-65",
       "difficulty": "easy",
       "text": "Em que ano o Brasil adotou o horário de verão por último?",
       "answer": 2018,
@@ -457,6 +522,7 @@
       "fact": "O decreto de 2019 acabou com ele."
     },
     {
+      "id": "chute-brasil-66",
       "difficulty": "easy",
       "text": "Em que ano foi a Copa do Mundo do Maracanaço?",
       "answer": 1950,
@@ -464,6 +530,7 @@
       "fact": "O Uruguai foi o campeão."
     },
     {
+      "id": "chute-brasil-67",
       "difficulty": "hard",
       "text": "Em que ano o Brasil ganhou o primeiro ouro olímpico?",
       "answer": 1920,
@@ -471,6 +538,7 @@
       "fact": "Guilherme Paraense ganhou na prova de tiro."
     },
     {
+      "id": "chute-brasil-68",
       "difficulty": "easy",
       "text": "Em que ano foram as Olimpíadas do Rio?",
       "answer": 2016,
@@ -478,6 +546,7 @@
       "fact": "O Brasil teve seu recorde de medalhas até aquela edição."
     },
     {
+      "id": "chute-brasil-69",
       "difficulty": "easy",
       "text": "Em que ano foi a morte de Ayrton Senna?",
       "answer": 1994,
@@ -485,6 +554,7 @@
       "fact": "Foi um grande luto no país."
     },
     {
+      "id": "chute-brasil-70",
       "difficulty": "easy",
       "text": "Em que ano Pelé morreu?",
       "answer": 2022,
@@ -492,6 +562,7 @@
       "fact": "Ele tinha 82 anos."
     },
     {
+      "id": "chute-brasil-71",
       "difficulty": "easy",
       "text": "Em que ano Silvio Santos morreu?",
       "answer": 2024,
@@ -499,6 +570,7 @@
       "fact": "Ele tinha 93 anos."
     },
     {
+      "id": "chute-brasil-72",
       "difficulty": "medium",
       "text": "Em que ano Elis Regina morreu?",
       "answer": 1982,
@@ -506,6 +578,7 @@
       "fact": "Ela tinha apenas 36 anos."
     },
     {
+      "id": "chute-brasil-73",
       "difficulty": "easy",
       "text": "Em que ano Cazuza morreu?",
       "answer": 1990,
@@ -513,6 +586,7 @@
       "fact": "Ele tinha 32 anos."
     },
     {
+      "id": "chute-brasil-74",
       "difficulty": "easy",
       "text": "Em que ano Renato Russo morreu?",
       "answer": 1996,
@@ -520,6 +594,7 @@
       "fact": "Ele foi líder da Legião Urbana."
     },
     {
+      "id": "chute-brasil-75",
       "difficulty": "medium",
       "text": "Em que ano Raul Seixas morreu?",
       "answer": 1989,
@@ -527,6 +602,7 @@
       "fact": "Ele tinha 44 anos."
     },
     {
+      "id": "chute-brasil-76",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o acidente dos Mamonas Assassinas?",
       "answer": 1996,
@@ -534,6 +610,7 @@
       "fact": "Eles estavam no auge da fama."
     },
     {
+      "id": "chute-brasil-77",
       "difficulty": "easy",
       "text": "Em que ano foi a tragédia da Boate Kiss?",
       "answer": 2013,
@@ -541,6 +618,7 @@
       "fact": "Foi em Santa Maria, no Rio Grande do Sul."
     },
     {
+      "id": "chute-brasil-78",
       "difficulty": "easy",
       "text": "Em que ano foi a queda do avião da Chapecoense?",
       "answer": 2016,
@@ -548,6 +626,7 @@
       "fact": "Foi na Colômbia, a caminho da final."
     },
     {
+      "id": "chute-brasil-79",
       "difficulty": "easy",
       "text": "Em que ano foi o rompimento da barragem de Brumadinho?",
       "answer": 2019,
@@ -555,6 +634,7 @@
       "fact": "Morreram 272 pessoas."
     },
     {
+      "id": "chute-brasil-80",
       "difficulty": "easy",
       "text": "Em que ano foi o incêndio do Museu Nacional?",
       "answer": 2018,
@@ -562,6 +642,7 @@
       "fact": "Quase todo o acervo foi perdido."
     },
     {
+      "id": "chute-brasil-81",
       "difficulty": "easy",
       "text": "Em que ano foram os ataques às sedes dos três poderes, em Brasília?",
       "answer": 2023,
@@ -569,6 +650,7 @@
       "fact": "Foi em 8 de janeiro."
     },
     {
+      "id": "chute-brasil-82",
       "difficulty": "easy",
       "text": "Em que ano Fernanda Montenegro foi indicada ao Oscar por Central do Brasil?",
       "answer": 1999,
@@ -576,6 +658,7 @@
       "fact": "Ela perdeu para Gwyneth Paltrow."
     },
     {
+      "id": "chute-brasil-83",
       "difficulty": "easy",
       "text": "Em que ano o filme Ainda Estou Aqui ganhou o Oscar?",
       "answer": 2025,
@@ -583,6 +666,7 @@
       "fact": "Foi o primeiro Oscar do Brasil para um longa-metragem."
     },
     {
+      "id": "chute-brasil-84",
       "difficulty": "easy",
       "text": "Quantas Copas do Mundo o Brasil venceu?",
       "answer": 5,
@@ -590,6 +674,7 @@
       "fact": "É o país com mais títulos."
     },
     {
+      "id": "chute-brasil-85",
       "difficulty": "easy",
       "text": "Quantos jogadores a Seleção convoca para uma Copa, desde 2022?",
       "answer": 26,
@@ -597,6 +682,7 @@
       "fact": "Antes, eram 23 jogadores."
     },
     {
+      "id": "chute-brasil-86",
       "difficulty": "easy",
       "text": "Quantos Grand Slams Gustavo Kuerten ganhou?",
       "answer": 3,
@@ -604,6 +690,7 @@
       "fact": "Foram três vezes em Roland Garros."
     },
     {
+      "id": "chute-brasil-87",
       "difficulty": "easy",
       "text": "Quantos títulos mundiais de Fórmula 1 tem Ayrton Senna?",
       "answer": 3,
@@ -611,6 +698,7 @@
       "fact": "Foram em 1988, 1990 e 1991."
     },
     {
+      "id": "chute-brasil-88",
       "difficulty": "medium",
       "text": "Quantos títulos mundiais de Fórmula 1 tem Nelson Piquet?",
       "answer": 3,
@@ -618,6 +706,7 @@
       "fact": "Ele foi campeão em 1981, 1983 e 1987."
     },
     {
+      "id": "chute-brasil-89",
       "difficulty": "medium",
       "text": "Quantos títulos mundiais de Fórmula 1 tem Emerson Fittipaldi?",
       "answer": 2,
@@ -625,6 +714,7 @@
       "fact": "Ele foi o primeiro brasileiro campeão."
     },
     {
+      "id": "chute-brasil-90",
       "difficulty": "easy",
       "text": "Quantos anos Faustão apresentou o Domingão, aproximadamente?",
       "answer": 32,
@@ -632,6 +722,7 @@
       "fact": "Ele saiu da Globo em 2021."
     },
     {
+      "id": "chute-brasil-91",
       "difficulty": "easy",
       "text": "Quantos anos Marília Mendonça tinha quando morreu?",
       "answer": 26,
@@ -639,6 +730,7 @@
       "fact": "Ela morreu em um acidente de avião."
     },
     {
+      "id": "chute-brasil-92",
       "difficulty": "medium",
       "text": "Quantos anos Tom Jobim tinha quando morreu?",
       "answer": 67,
@@ -646,6 +738,7 @@
       "fact": "O aeroporto do Galeão leva o nome dele."
     },
     {
+      "id": "chute-brasil-93",
       "difficulty": "medium",
       "text": "Quantos anos Dona Ivone Lara viveu?",
       "answer": 97,
@@ -653,6 +746,7 @@
       "fact": "Ela foi a primeira mulher a compor samba-enredo em escola do Rio."
     },
     {
+      "id": "chute-brasil-94",
       "difficulty": "medium",
       "text": "Quantas capitais brasileiras têm linha de metrô, aproximadamente?",
       "answer": 8,
@@ -660,6 +754,7 @@
       "fact": "A maior é em São Paulo."
     },
     {
+      "id": "chute-brasil-95",
       "difficulty": "hard",
       "text": "Quantos bairros tem a cidade do Rio de Janeiro, aproximadamente?",
       "answer": 165,
@@ -667,6 +762,7 @@
       "fact": "Copacabana é o mais famoso."
     },
     {
+      "id": "chute-brasil-96",
       "difficulty": "hard",
       "text": "Quantos km tem a praia do Cassino, a maior em linha reta do mundo?",
       "answer": 254,
@@ -674,6 +770,7 @@
       "fact": "Ela fica no Rio Grande do Sul."
     },
     {
+      "id": "chute-brasil-97",
       "difficulty": "medium",
       "text": "Quantos km tem a orla de Copacabana?",
       "answer": 4,
@@ -681,6 +778,7 @@
       "fact": "Os prédios ali têm vista para o Atlântico."
     },
     {
+      "id": "chute-brasil-98",
       "difficulty": "hard",
       "text": "Qual é a altura do Dedo de Deus, em metros?",
       "answer": 1692,
@@ -688,6 +786,7 @@
       "fact": "Fica em Teresópolis."
     },
     {
+      "id": "chute-brasil-99",
       "difficulty": "medium",
       "text": "Qual é a altura da Pedra da Gávea, em metros?",
       "answer": 844,
@@ -695,6 +794,7 @@
       "fact": "É um dos maiores blocos de pedra à beira-mar do mundo."
     },
     {
+      "id": "chute-brasil-100",
       "difficulty": "hard",
       "text": "Qual é a altura do Pico do Jaraguá, em metros?",
       "answer": 1135,
@@ -702,6 +802,7 @@
       "fact": "É o ponto mais alto da cidade de São Paulo."
     },
     {
+      "id": "chute-brasil-101",
       "difficulty": "hard",
       "text": "Qual é a altura do Pico das Agulhas Negras, em metros?",
       "answer": 2791,
@@ -709,6 +810,7 @@
       "fact": "Ele fica no Itatiaia."
     },
     {
+      "id": "chute-brasil-102",
       "difficulty": "medium",
       "text": "Qual é a altura do Pico da Bandeira, em metros?",
       "answer": 2892,
@@ -716,6 +818,7 @@
       "fact": "É o terceiro ponto mais alto do Brasil."
     },
     {
+      "id": "chute-brasil-103",
       "difficulty": "hard",
       "text": "Qual é a altura da Ponte Estaiada, em São Paulo, em metros?",
       "answer": 138,
@@ -723,6 +826,7 @@
       "fact": "Ela foi inaugurada em 2008."
     },
     {
+      "id": "chute-brasil-104",
       "difficulty": "hard",
       "text": "Qual é a altura do Edifício Altino Arantes, o \"Banespão\", em metros?",
       "answer": 161,
@@ -730,6 +834,7 @@
       "fact": "Foi inspirado no Empire State."
     },
     {
+      "id": "chute-brasil-105",
       "difficulty": "hard",
       "text": "Qual é a altura do prédio Martinelli, em metros?",
       "answer": 105,
@@ -737,6 +842,7 @@
       "fact": "Foi o primeiro arranha-céu do Brasil."
     },
     {
+      "id": "chute-brasil-106",
       "difficulty": "medium",
       "text": "Qual é o prédio mais alto do Brasil, One Tower, em metros?",
       "answer": 290,
@@ -744,6 +850,7 @@
       "fact": "Fica em Balneário Camboriú."
     },
     {
+      "id": "chute-brasil-107",
       "difficulty": "medium",
       "text": "Qual é a temperatura média de Curitiba no ano, em °C?",
       "answer": 17,
@@ -751,6 +858,7 @@
       "fact": "É a capital mais fria do Brasil."
     },
     {
+      "id": "chute-brasil-108",
       "difficulty": "medium",
       "text": "Qual é a temperatura média de Teresina no ano, em °C?",
       "answer": 28,
@@ -758,6 +866,7 @@
       "fact": "É uma das capitais mais quentes do Brasil."
     },
     {
+      "id": "chute-brasil-109",
       "difficulty": "medium",
       "text": "Qual é a população de Porto Alegre, em milhões, no Censo de 2022?",
       "answer": 1.3,
@@ -765,6 +874,7 @@
       "fact": "Ela sofreu uma enchente histórica em 2024."
     },
     {
+      "id": "chute-brasil-110",
       "difficulty": "medium",
       "text": "Qual é a população de Recife, em milhões, no Censo de 2022?",
       "answer": 1.5,
@@ -772,6 +882,7 @@
       "fact": "É a cidade mais densa do Nordeste."
     },
     {
+      "id": "chute-brasil-111",
       "difficulty": "medium",
       "text": "Qual é a população de Belém, em milhões, no Censo de 2022?",
       "answer": 1.3,
@@ -779,6 +890,7 @@
       "fact": "Ela sediou a COP30."
     },
     {
+      "id": "chute-brasil-112",
       "difficulty": "medium",
       "text": "Qual é a população de Goiânia, em milhões, no Censo de 2022?",
       "answer": 1.4,
@@ -786,6 +898,7 @@
       "fact": "Ela foi planejada nos anos 1930."
     },
     {
+      "id": "chute-brasil-113",
       "difficulty": "hard",
       "text": "Qual é a população de Florianópolis, em milhares, no Censo de 2022?",
       "answer": 537,
@@ -793,6 +906,7 @@
       "fact": "Ela é uma das capitais com melhor qualidade de vida."
     },
     {
+      "id": "chute-brasil-114",
       "difficulty": "hard",
       "text": "Qual é a população de Vitória, em milhares, no Censo de 2022?",
       "answer": 322,
@@ -800,6 +914,7 @@
       "fact": "Fica em uma ilha, no Espírito Santo."
     },
     {
+      "id": "chute-brasil-115",
       "difficulty": "medium",
       "text": "Qual é a população de Minas Gerais, em milhões, no Censo de 2022?",
       "answer": 20.5,
@@ -807,6 +922,7 @@
       "fact": "É o segundo estado mais populoso."
     },
     {
+      "id": "chute-brasil-116",
       "difficulty": "medium",
       "text": "Qual é a população da Bahia, em milhões, no Censo de 2022?",
       "answer": 14,
@@ -814,6 +930,7 @@
       "fact": "É o estado mais populoso do Nordeste."
     },
     {
+      "id": "chute-brasil-117",
       "difficulty": "hard",
       "text": "Qual é a população de Roraima, em milhares, no Censo de 2022?",
       "answer": 636,
@@ -821,6 +938,7 @@
       "fact": "É o estado com menos gente no Brasil."
     },
     {
+      "id": "chute-brasil-118",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros que vivem na região Sudeste, em %?",
       "answer": 42,
@@ -828,6 +946,7 @@
       "fact": "Ela concentra também a maior parte do PIB."
     },
     {
+      "id": "chute-brasil-119",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros que vivem na região Nordeste, em %?",
       "answer": 27,
@@ -835,6 +954,7 @@
       "fact": "É a segunda região mais populosa."
     },
     {
+      "id": "chute-brasil-120",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros que vivem na região Norte, em %?",
       "answer": 8.5,
@@ -842,6 +962,7 @@
       "fact": "É a maior região em área."
     },
     {
+      "id": "chute-brasil-121",
       "difficulty": "medium",
       "text": "Qual é a idade mediana dos brasileiros, em anos, no Censo de 2022?",
       "answer": 35,
@@ -849,6 +970,7 @@
       "fact": "Ela era de 29 anos em 2010."
     },
     {
+      "id": "chute-brasil-122",
       "difficulty": "medium",
       "text": "Quantos habitantes por domicílio há no Brasil, em média, no Censo de 2022?",
       "answer": 2.79,
@@ -856,6 +978,7 @@
       "fact": "Em 2010, a média era de 3,31."
     },
     {
+      "id": "chute-brasil-123",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros pardos, no Censo de 2022, em %?",
       "answer": 45.3,
@@ -863,6 +986,7 @@
       "fact": "Foi a primeira vez que superaram os brancos desde 1991."
     },
     {
+      "id": "chute-brasil-124",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros brancos, no Censo de 2022, em %?",
       "answer": 43.5,
@@ -870,6 +994,7 @@
       "fact": "Era a maior parcela no censo anterior."
     },
     {
+      "id": "chute-brasil-125",
       "difficulty": "medium",
       "text": "Qual é a porcentagem de brasileiros pretos, no Censo de 2022, em %?",
       "answer": 10.2,
@@ -877,6 +1002,7 @@
       "fact": "Em 2010, eram 7,6%."
     },
     {
+      "id": "chute-brasil-126",
       "difficulty": "hard",
       "text": "Quantos indígenas o Censo de 2022 contou no Brasil, aproximadamente?",
       "answer": 1700000,
@@ -884,6 +1010,7 @@
       "fact": "Mais da metade mora na Amazônia."
     },
     {
+      "id": "chute-brasil-127",
       "difficulty": "hard",
       "text": "Quantos povos indígenas o Brasil tem, aproximadamente?",
       "answer": 305,
@@ -891,6 +1018,7 @@
       "fact": "Alguns ainda vivem isolados."
     },
     {
+      "id": "chute-brasil-128",
       "difficulty": "hard",
       "text": "Quantos quilombolas o Censo de 2022 contou, aproximadamente?",
       "answer": 1300000,
@@ -898,6 +1026,7 @@
       "fact": "Foi a primeira vez que o Censo os contou."
     },
     {
+      "id": "chute-brasil-129",
       "difficulty": "easy",
       "text": "Quantos anos dura o ensino fundamental no Brasil?",
       "answer": 9,
@@ -905,6 +1034,7 @@
       "fact": "Ele antes tinha 8 anos."
     },
     {
+      "id": "chute-brasil-130",
       "difficulty": "easy",
       "text": "Quantos anos dura o ensino médio no Brasil?",
       "answer": 3,
@@ -912,6 +1042,7 @@
       "fact": "A reforma de 2017 mudou a grade."
     },
     {
+      "id": "chute-brasil-131",
       "difficulty": "easy",
       "text": "Quantos minutos dura cada tempo de um jogo de futebol?",
       "answer": 45,
@@ -919,6 +1050,7 @@
       "fact": "Em caso de empate em mata-mata, há prorrogação."
     },
     {
+      "id": "chute-brasil-132",
       "difficulty": "medium",
       "text": "Quantas noites dura o Festival de Parintins?",
       "answer": 3,
@@ -926,6 +1058,7 @@
       "fact": "Os dois bois se revezam no Bumbódromo."
     },
     {
+      "id": "chute-brasil-133",
       "difficulty": "easy",
       "text": "Quantos dias dura o Carnaval oficialmente, do sábado à terça?",
       "answer": 4,
@@ -933,6 +1066,7 @@
       "fact": "Em muitas cidades, ele é bem mais longo."
     },
     {
+      "id": "chute-brasil-134",
       "difficulty": "medium",
       "text": "Qual é o tempo máximo de desfile de uma escola de samba do Rio, em minutos?",
       "answer": 70,
@@ -940,6 +1074,7 @@
       "fact": "Passar do tempo tira pontos."
     },
     {
+      "id": "chute-brasil-135",
       "difficulty": "medium",
       "text": "Quantas cabeças de boi tem o Brasil, em milhões, aproximadamente?",
       "answer": 238,
@@ -947,6 +1082,7 @@
       "fact": "É o maior rebanho comercial do mundo."
     },
     {
+      "id": "chute-brasil-136",
       "difficulty": "medium",
       "text": "Quantas toneladas de soja o Brasil produz por ano, em milhões, aproximadamente?",
       "answer": 150,
@@ -954,6 +1090,7 @@
       "fact": "É o maior produtor do mundo."
     },
     {
+      "id": "chute-brasil-137",
       "difficulty": "medium",
       "text": "Quantas sacas de café o Brasil produz por ano, em milhões, aproximadamente?",
       "answer": 60,
@@ -961,6 +1098,7 @@
       "fact": "O Brasil lidera a produção há mais de 150 anos."
     },
     {
+      "id": "chute-brasil-138",
       "difficulty": "medium",
       "text": "Quantas toneladas de carne bovina o Brasil exporta por ano, em milhões?",
       "answer": 3,
@@ -968,6 +1106,7 @@
       "fact": "A China é o maior comprador."
     },
     {
+      "id": "chute-brasil-139",
       "difficulty": "medium",
       "text": "Quantas toneladas de frango o Brasil exporta por ano, em milhões?",
       "answer": 5,
@@ -975,6 +1114,7 @@
       "fact": "É o maior exportador do mundo."
     },
     {
+      "id": "chute-brasil-140",
       "difficulty": "medium",
       "text": "Qual a porcentagem da eletricidade brasileira que vem de fontes renováveis?",
       "answer": 85,
@@ -982,6 +1122,7 @@
       "fact": "É uma das maiores matrizes limpas do mundo."
     },
     {
+      "id": "chute-brasil-141",
       "difficulty": "medium",
       "text": "Qual a porcentagem da energia elétrica do Brasil gerada por usinas hidrelétricas?",
       "answer": 60,
@@ -989,6 +1130,7 @@
       "fact": "A dependência da chuva é um grande risco."
     },
     {
+      "id": "chute-brasil-142",
       "difficulty": "medium",
       "text": "Qual a potência da usina de Itaipu, em megawatts?",
       "answer": 14000,
@@ -996,6 +1138,7 @@
       "fact": "Ela divide a produção com o Paraguai."
     },
     {
+      "id": "chute-brasil-143",
       "difficulty": "medium",
       "text": "Qual a potência da usina de Belo Monte, em megawatts?",
       "answer": 11233,
@@ -1003,6 +1146,7 @@
       "fact": "Foi uma das obras mais polêmicas do país."
     },
     {
+      "id": "chute-brasil-144",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Rodovia dos Bandeirantes, em km?",
       "answer": 175,
@@ -1010,6 +1154,7 @@
       "fact": "É uma das melhores estradas do Brasil."
     },
     {
+      "id": "chute-brasil-145",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Rodovia Presidente Dutra, em km?",
       "answer": 402,
@@ -1017,6 +1162,7 @@
       "fact": "Ela liga São Paulo ao Rio."
     },
     {
+      "id": "chute-brasil-146",
       "difficulty": "medium",
       "text": "Qual é o comprimento do rio Tietê, em km?",
       "answer": 1150,
@@ -1024,6 +1170,7 @@
       "fact": "Ele corre em direção ao interior."
     },
     {
+      "id": "chute-brasil-147",
       "difficulty": "medium",
       "text": "Qual é o comprimento do rio Paraíba do Sul, em km?",
       "answer": 1137,
@@ -1031,6 +1178,7 @@
       "fact": "Abastece boa parte do Rio de Janeiro."
     },
     {
+      "id": "chute-brasil-148",
       "difficulty": "medium",
       "text": "Qual é o comprimento do rio Tocantins, em km?",
       "answer": 2416,
@@ -1038,6 +1186,7 @@
       "fact": "Ele passa pelo Lago de Tucuruí."
     },
     {
+      "id": "chute-brasil-149",
       "difficulty": "medium",
       "text": "Qual é o comprimento da Ponte Hercílio Luz, em metros?",
       "answer": 820,
@@ -1045,6 +1194,7 @@
       "fact": "É uma das maiores pontes pênseis do mundo."
     },
     {
+      "id": "chute-brasil-150",
       "difficulty": "medium",
       "text": "Qual é o comprimento do Elevador Lacerda, em metros de altura?",
       "answer": 72,
@@ -1052,6 +1202,7 @@
       "fact": "Ele liga as duas partes de Salvador."
     },
     {
+      "id": "chute-brasil-151",
       "difficulty": "medium",
       "text": "Qual é o comprimento da Avenida Paulista, em km?",
       "answer": 2.8,
@@ -1059,6 +1210,7 @@
       "fact": "Ela é fechada para carros aos domingos."
     },
     {
+      "id": "chute-brasil-152",
       "difficulty": "medium",
       "text": "Quantos bairros tem São Paulo, em distritos oficiais?",
       "answer": 96,
@@ -1066,6 +1218,7 @@
       "fact": "Em cada subprefeitura há vários distritos."
     },
     {
+      "id": "chute-brasil-153",
       "difficulty": "medium",
       "text": "Quantas favelas existem no Rio de Janeiro, aproximadamente?",
       "answer": 1000,
@@ -1073,6 +1226,7 @@
       "fact": "A Rocinha é a maior delas."
     },
     {
+      "id": "chute-brasil-154",
       "difficulty": "medium",
       "text": "Quantas pessoas moram na Rocinha, aproximadamente, segundo o Censo de 2022?",
       "answer": 72000,
@@ -1080,6 +1234,7 @@
       "fact": "É a maior favela do Brasil."
     },
     {
+      "id": "chute-brasil-155",
       "difficulty": "medium",
       "text": "Quantas peças formam a cúpula do Teatro Amazonas?",
       "answer": 36000,
@@ -1087,6 +1242,7 @@
       "fact": "As peças vieram da Europa."
     },
     {
+      "id": "chute-brasil-156",
       "difficulty": "medium",
       "text": "Quantos dias durou a construção de Brasília, aproximadamente?",
       "answer": 1000,
@@ -1094,6 +1250,7 @@
       "fact": "Foram 41 meses de obras."
     },
     {
+      "id": "chute-brasil-157",
       "difficulty": "medium",
       "text": "Quantos trabalhadores construíram Brasília, aproximadamente?",
       "answer": 60000,
@@ -1101,6 +1258,7 @@
       "fact": "Eles ficaram conhecidos como candangos."
     },
     {
+      "id": "chute-brasil-158",
       "difficulty": "medium",
       "text": "Quantos metros tem a Catedral de Brasília?",
       "answer": 40,
@@ -1108,6 +1266,7 @@
       "fact": "As 16 colunas parecem mãos erguidas."
     },
     {
+      "id": "chute-brasil-159",
       "difficulty": "medium",
       "text": "Quantas colunas tem a Catedral de Brasília?",
       "answer": 16,
@@ -1115,6 +1274,7 @@
       "fact": "A entrada é feita por um túnel escuro."
     },
     {
+      "id": "chute-brasil-160",
       "difficulty": "medium",
       "text": "Quantas estátuas de profetas de Aleijadinho estão em Congonhas?",
       "answer": 12,
@@ -1122,6 +1282,7 @@
       "fact": "Eles foram esculpidos na pedra-sabão."
     },
     {
+      "id": "chute-brasil-161",
       "difficulty": "medium",
       "text": "Quantas ilhas a Baía de Todos os Santos tem, aproximadamente?",
       "answer": 56,
@@ -1129,6 +1290,7 @@
       "fact": "A maior é Itaparica."
     },
     {
+      "id": "chute-brasil-162",
       "difficulty": "medium",
       "text": "Quantas pessoas visitam Aparecida por ano, em milhões, aproximadamente?",
       "answer": 13,
@@ -1136,6 +1298,7 @@
       "fact": "É um dos maiores santuários marianos do mundo."
     },
     {
+      "id": "chute-brasil-163",
       "difficulty": "medium",
       "text": "Quantos km mede a corda do Círio de Nazaré, em metros?",
       "answer": 400,
@@ -1143,6 +1306,7 @@
       "fact": "Ela é considerada uma promessa em si."
     },
     {
+      "id": "chute-brasil-164",
       "difficulty": "medium",
       "text": "Quantas pessoas participam do Círio de Nazaré, em milhões, aproximadamente?",
       "answer": 2,
@@ -1150,6 +1314,7 @@
       "fact": "É uma das maiores festas religiosas do mundo."
     },
     {
+      "id": "chute-brasil-165",
       "difficulty": "medium",
       "text": "Quantas pessoas seguem o Galo da Madrugada, em milhões, aproximadamente?",
       "answer": 2,
@@ -1157,6 +1322,7 @@
       "fact": "O bloco nasceu em 1978."
     },
     {
+      "id": "chute-brasil-166",
       "difficulty": "medium",
       "text": "Em que ano nasceu o Galo da Madrugada?",
       "answer": 1978,
@@ -1164,6 +1330,7 @@
       "fact": "Foi em Recife, com cerca de 75 pessoas."
     },
     {
+      "id": "chute-brasil-167",
       "difficulty": "medium",
       "text": "Quantas pessoas participaram do bloco Galo da Madrugada na primeira saída?",
       "answer": 75,
@@ -1171,6 +1338,7 @@
       "fact": "Hoje ele está no Guinness."
     },
     {
+      "id": "chute-brasil-168",
       "difficulty": "medium",
       "text": "Em que ano nasceu a escola de samba Mangueira?",
       "answer": 1928,
@@ -1178,6 +1346,7 @@
       "fact": "Ela foi fundada com Cartola entre os criadores."
     },
     {
+      "id": "chute-brasil-169",
       "difficulty": "medium",
       "text": "Em que ano nasceu a escola de samba Portela?",
       "answer": 1923,
@@ -1185,6 +1354,7 @@
       "fact": "Paulo da Portela é um de seus fundadores."
     },
     {
+      "id": "chute-brasil-170",
       "difficulty": "medium",
       "text": "Em que ano nasceu a escola de samba Beija-Flor?",
       "answer": 1948,
@@ -1192,6 +1362,7 @@
       "fact": "Ela é de Nilópolis."
     },
     {
+      "id": "chute-brasil-171",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Sambódromo do Rio?",
       "answer": 1984,
@@ -1199,6 +1370,7 @@
       "fact": "Foi construído em cerca de 110 dias."
     },
     {
+      "id": "chute-brasil-172",
       "difficulty": "medium",
       "text": "Em que ano surgiu o trio elétrico?",
       "answer": 1950,
@@ -1206,6 +1378,7 @@
       "fact": "Dodô e Osmar o criaram em Salvador, em um velho Ford."
     },
     {
+      "id": "chute-brasil-173",
       "difficulty": "medium",
       "text": "Em que ano foi composta \"Aquarela do Brasil\"?",
       "answer": 1939,
@@ -1213,6 +1386,7 @@
       "fact": "Ary Barroso a compôs em uma noite chuvosa."
     },
     {
+      "id": "chute-brasil-174",
       "difficulty": "medium",
       "text": "Em que ano foi composta \"Garota de Ipanema\"?",
       "answer": 1962,
@@ -1220,6 +1394,7 @@
       "fact": "Helô Pinheiro foi a musa."
     },
     {
+      "id": "chute-brasil-175",
       "difficulty": "medium",
       "text": "Em que ano João Gilberto lançou \"Chega de Saudade\"?",
       "answer": 1958,
@@ -1227,6 +1402,7 @@
       "fact": "Esse disco iniciou a bossa nova."
     },
     {
+      "id": "chute-brasil-176",
       "difficulty": "medium",
       "text": "Em que ano foi lançado \"Tropicália ou Panis et Circencis\"?",
       "answer": 1968,
@@ -1234,6 +1410,7 @@
       "fact": "Caetano e Gil foram exilados no ano seguinte."
     },
     {
+      "id": "chute-brasil-177",
       "difficulty": "medium",
       "text": "Em que ano Luiz Gonzaga lançou \"Asa Branca\"?",
       "answer": 1947,
@@ -1241,6 +1418,7 @@
       "fact": "A música virou um hino do Nordeste."
     },
     {
+      "id": "chute-brasil-178",
       "difficulty": "medium",
       "text": "Em que ano nasceu Luiz Gonzaga?",
       "answer": 1912,
@@ -1248,6 +1426,7 @@
       "fact": "Ele nasceu em Exu, em Pernambuco."
     },
     {
+      "id": "chute-brasil-179",
       "difficulty": "medium",
       "text": "Em que ano morreu Machado de Assis?",
       "answer": 1908,
@@ -1255,6 +1434,7 @@
       "fact": "Ele foi velado na Academia."
     },
     {
+      "id": "chute-brasil-180",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Dom Casmurro\"?",
       "answer": 1899,
@@ -1262,6 +1442,7 @@
       "fact": "Até hoje se discute se Capitu traiu Bentinho."
     },
     {
+      "id": "chute-brasil-181",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Memórias Póstumas de Brás Cubas\"?",
       "answer": 1881,
@@ -1269,6 +1450,7 @@
       "fact": "A obra é narrada por um defunto."
     },
     {
+      "id": "chute-brasil-182",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Os Sertões\"?",
       "answer": 1902,
@@ -1276,6 +1458,7 @@
       "fact": "Euclides da Cunha cobriu a Guerra de Canudos."
     },
     {
+      "id": "chute-brasil-183",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Vidas Secas\"?",
       "answer": 1938,
@@ -1283,6 +1466,7 @@
       "fact": "O livro mostra a dura vida de Fabiano e Sinhá Vitória."
     },
     {
+      "id": "chute-brasil-184",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Capitães da Areia\"?",
       "answer": 1937,
@@ -1290,6 +1474,7 @@
       "fact": "Exemplares foram queimados em Salvador."
     },
     {
+      "id": "chute-brasil-185",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Iracema\"?",
       "answer": 1865,
@@ -1297,6 +1482,7 @@
       "fact": "José de Alencar era cearense."
     },
     {
+      "id": "chute-brasil-186",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"O Alquimista\"?",
       "answer": 1988,
@@ -1304,6 +1490,7 @@
       "fact": "Paulo Coelho vendeu mais de 65 milhões de exemplares."
     },
     {
+      "id": "chute-brasil-187",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o MASP na Avenida Paulista?",
       "answer": 1968,
@@ -1311,6 +1498,7 @@
       "fact": "A rainha Elizabeth II esteve na inauguração."
     },
     {
+      "id": "chute-brasil-188",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Museu do Amanhã?",
       "answer": 2015,
@@ -1318,6 +1506,7 @@
       "fact": "O projeto é de Santiago Calatrava."
     },
     {
+      "id": "chute-brasil-189",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Museu Imperial de Petrópolis?",
       "answer": 1943,
@@ -1325,6 +1514,7 @@
       "fact": "Ele guarda a coroa de Dom Pedro II."
     },
     {
+      "id": "chute-brasil-190",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Bienal de São Paulo?",
       "answer": 1951,
@@ -1332,6 +1522,7 @@
       "fact": "É uma das mais importantes do mundo."
     },
     {
+      "id": "chute-brasil-191",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Parque do Ibirapuera?",
       "answer": 1954,
@@ -1339,6 +1530,7 @@
       "fact": "Foi inaugurado no quarto centenário da cidade."
     },
     {
+      "id": "chute-brasil-192",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Parque do Flamengo?",
       "answer": 1965,
@@ -1346,6 +1538,7 @@
       "fact": "O paisagismo é de Burle Marx."
     },
     {
+      "id": "chute-brasil-193",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o estádio do Morumbi?",
       "answer": 1960,
@@ -1353,6 +1546,7 @@
       "fact": "O estádio foi concluído 10 anos depois."
     },
     {
+      "id": "chute-brasil-194",
       "difficulty": "medium",
       "text": "Em que ano o Pacaembu foi inaugurado?",
       "answer": 1940,
@@ -1360,6 +1554,7 @@
       "fact": "A abertura teve a presença de Getúlio Vargas."
     },
     {
+      "id": "chute-brasil-195",
       "difficulty": "medium",
       "text": "Em que ano o Mineirão foi inaugurado?",
       "answer": 1965,
@@ -1367,6 +1562,7 @@
       "fact": "Ele é um dos estádios mais famosos do país."
     },
     {
+      "id": "chute-brasil-196",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Corinthians?",
       "answer": 1910,
@@ -1374,6 +1570,7 @@
       "fact": "O clube foi fundado por operários no Bom Retiro."
     },
     {
+      "id": "chute-brasil-197",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Flamengo?",
       "answer": 1895,
@@ -1381,6 +1578,7 @@
       "fact": "Ele nasceu como clube de remo."
     },
     {
+      "id": "chute-brasil-198",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Palmeiras?",
       "answer": 1914,
@@ -1388,6 +1586,7 @@
       "fact": "Foi fundado como Palestra Itália."
     },
     {
+      "id": "chute-brasil-199",
       "difficulty": "medium",
       "text": "Em que ano foi criado o São Paulo FC?",
       "answer": 1930,
@@ -1395,6 +1594,7 @@
       "fact": "O clube refundou-se em 1935."
     },
     {
+      "id": "chute-brasil-200",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Santos FC?",
       "answer": 1912,
@@ -1402,6 +1602,7 @@
       "fact": "Foi fundado por três desportistas."
     },
     {
+      "id": "chute-brasil-201",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Vasco da Gama?",
       "answer": 1898,
@@ -1409,6 +1610,7 @@
       "fact": "Foi um dos primeiros grandes clubes a aceitar jogadores negros."
     },
     {
+      "id": "chute-brasil-202",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Fluminense?",
       "answer": 1902,
@@ -1416,6 +1618,7 @@
       "fact": "Ele foi fundado por Oscar Cox."
     },
     {
+      "id": "chute-brasil-203",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Botafogo?",
       "answer": 1904,
@@ -1423,6 +1626,7 @@
       "fact": "O remo veio antes, em 1894."
     },
     {
+      "id": "chute-brasil-204",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Grêmio?",
       "answer": 1903,
@@ -1430,6 +1634,7 @@
       "fact": "Foi fundado em Porto Alegre."
     },
     {
+      "id": "chute-brasil-205",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Internacional?",
       "answer": 1909,
@@ -1437,6 +1642,7 @@
       "fact": "Foi criado para aceitar todas as pessoas."
     },
     {
+      "id": "chute-brasil-206",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Cruzeiro?",
       "answer": 1921,
@@ -1444,6 +1650,7 @@
       "fact": "Nasceu como Palestra Itália de Belo Horizonte."
     },
     {
+      "id": "chute-brasil-207",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Atlético Mineiro?",
       "answer": 1908,
@@ -1451,6 +1658,7 @@
       "fact": "Foi fundado por estudantes."
     },
     {
+      "id": "chute-brasil-208",
       "difficulty": "easy",
       "text": "Quantos estados têm a palavra \"Rio\" no nome?",
       "answer": 3,
@@ -1458,6 +1666,7 @@
       "fact": "Rio de Janeiro, Rio Grande do Sul e Rio Grande do Norte."
     },
     {
+      "id": "chute-brasil-209",
       "difficulty": "easy",
       "text": "Quantos estados têm \"Mato Grosso\" no nome?",
       "answer": 2,
@@ -1465,6 +1674,7 @@
       "fact": "Eles se separaram em 1977."
     },
     {
+      "id": "chute-brasil-210",
       "difficulty": "easy",
       "text": "Quantas cores tem a bandeira do Brasil?",
       "answer": 4,
@@ -1472,6 +1682,7 @@
       "fact": "Verde, amarelo, azul e branco."
     },
     {
+      "id": "chute-brasil-211",
       "difficulty": "easy",
       "text": "Quantas palavras tem o lema da bandeira do Brasil?",
       "answer": 3,
@@ -1479,6 +1690,7 @@
       "fact": "O lema é \"Ordem e Progresso\"."
     },
     {
+      "id": "chute-brasil-212",
       "difficulty": "easy",
       "text": "Quantas regiões tem o Brasil?",
       "answer": 5,
@@ -1486,6 +1698,7 @@
       "fact": "A divisão atual é de 1970."
     },
     {
+      "id": "chute-brasil-213",
       "difficulty": "medium",
       "text": "Quantos fusos horários tem o Brasil, contando as ilhas?",
       "answer": 4,
@@ -1493,6 +1706,7 @@
       "fact": "A maior parte do país segue o horário de Brasília."
     },
     {
+      "id": "chute-brasil-214",
       "difficulty": "medium",
       "text": "Quantos países de língua portuguesa tem na África?",
       "answer": 5,
@@ -1500,6 +1714,7 @@
       "fact": "Angola, Moçambique, Cabo Verde, Guiné-Bissau e São Tomé e Príncipe."
     },
     {
+      "id": "chute-brasil-215",
       "difficulty": "medium",
       "text": "Quantas capitais brasileiras ficam em ilhas, aproximadamente?",
       "answer": 3,
@@ -1507,6 +1722,7 @@
       "fact": "São Luís, Vitória e Florianópolis."
     },
     {
+      "id": "chute-brasil-216",
       "difficulty": "hard",
       "text": "Quantos estados fazem fronteira com o Mato Grosso do Sul?",
       "answer": 5,
@@ -1514,6 +1730,7 @@
       "fact": "Ele também faz fronteira com Paraguai e Bolívia."
     },
     {
+      "id": "chute-brasil-217",
       "difficulty": "medium",
       "text": "Quantos anos Dom Pedro I reinou no Brasil, depois da Independência?",
       "answer": 9,
@@ -1521,6 +1738,7 @@
       "fact": "Ele abdicou em 1831."
     },
     {
+      "id": "chute-brasil-218",
       "difficulty": "medium",
       "text": "Quantos anos Tiradentes tinha ao ser enforcado?",
       "answer": 45,
@@ -1528,6 +1746,7 @@
       "fact": "Ele nasceu em 1746."
     },
     {
+      "id": "chute-brasil-219",
       "difficulty": "medium",
       "text": "Quantos filhos Dom Pedro II teve?",
       "answer": 4,
@@ -1535,6 +1754,7 @@
       "fact": "Só duas meninas chegaram à idade adulta."
     },
     {
+      "id": "chute-brasil-220",
       "difficulty": "medium",
       "text": "Qual foi o nível mínimo do rio Negro em Manaus em 2024, em metros?",
       "answer": 12.11,
@@ -1542,6 +1762,7 @@
       "fact": "Foi o menor valor em mais de 120 anos de registros."
     },
     {
+      "id": "chute-brasil-221",
       "difficulty": "medium",
       "text": "Qual foi o nível máximo do rio Negro em Manaus, em 2021, em metros?",
       "answer": 30.02,
@@ -1549,6 +1770,7 @@
       "fact": "A cheia foi a maior já registrada até então."
     },
     {
+      "id": "chute-brasil-222",
       "difficulty": "medium",
       "text": "Qual foi o nível do Guaíba na enchente de 2024, em metros?",
       "answer": 5.35,
@@ -1556,6 +1778,7 @@
       "fact": "Ela passou do recorde de 1941."
     },
     {
+      "id": "chute-brasil-223",
       "difficulty": "medium",
       "text": "Qual foi o nível do Guaíba na enchente de 1941, em metros?",
       "answer": 4.76,
@@ -1563,6 +1786,7 @@
       "fact": "Depois dela, a cidade construiu o Muro da Mauá."
     },
     {
+      "id": "chute-brasil-224",
       "difficulty": "medium",
       "text": "Quantos mortos a enchente gaúcha de 2024 deixou, aproximadamente?",
       "answer": 183,
@@ -1570,6 +1794,7 @@
       "fact": "Foram mais de 2 milhões de pessoas afetadas."
     },
     {
+      "id": "chute-brasil-225",
       "difficulty": "medium",
       "text": "Quantos mortos o rompimento da barragem de Mariana deixou?",
       "answer": 19,
@@ -1577,6 +1802,7 @@
       "fact": "A lama percorreu mais de 600 km até o mar."
     },
     {
+      "id": "chute-brasil-226",
       "difficulty": "medium",
       "text": "Quantos mortos o rompimento da barragem de Brumadinho deixou?",
       "answer": 272,
@@ -1584,6 +1810,7 @@
       "fact": "A empresa Vale foi a responsável pela barragem."
     },
     {
+      "id": "chute-brasil-227",
       "difficulty": "medium",
       "text": "Quantos mortos o incêndio da Boate Kiss deixou?",
       "answer": 242,
@@ -1591,6 +1818,7 @@
       "fact": "Foi uma das maiores tragédias do Brasil."
     },
     {
+      "id": "chute-brasil-228",
       "difficulty": "medium",
       "text": "Quantos mortos o acidente da Chapecoense deixou?",
       "answer": 71,
@@ -1598,6 +1826,7 @@
       "fact": "Havia jogadores, jornalistas e dirigentes."
     },
     {
+      "id": "chute-brasil-229",
       "difficulty": "medium",
       "text": "Quantos mortos o voo 3054 da TAM deixou, em 2007?",
       "answer": 199,
@@ -1605,6 +1834,7 @@
       "fact": "Foi em Congonhas, em São Paulo."
     },
     {
+      "id": "chute-brasil-230",
       "difficulty": "medium",
       "text": "Quantos mortos o voo 1907 da Gol deixou, em 2006?",
       "answer": 154,
@@ -1612,6 +1842,7 @@
       "fact": "Ele bateu em um jato menor sobre a Amazônia."
     },
     {
+      "id": "chute-brasil-231",
       "difficulty": "medium",
       "text": "Quantos mortos o Massacre do Carandiru deixou?",
       "answer": 111,
@@ -1619,6 +1850,7 @@
       "fact": "Foi na Casa de Detenção de São Paulo."
     },
     {
+      "id": "chute-brasil-232",
       "difficulty": "medium",
       "text": "Quantas vítimas o acidente com o Césio-137, em Goiânia, deixou de imediato?",
       "answer": 4,
@@ -1626,6 +1858,7 @@
       "fact": "Foi o pior acidente radiológico fora de usinas."
     },
     {
+      "id": "chute-brasil-233",
       "difficulty": "medium",
       "text": "Quantos metros tem o Corcovado em relação ao mar?",
       "answer": 710,
@@ -1633,6 +1866,7 @@
       "fact": "Ele tem uma estrada e um trem até o topo."
     },
     {
+      "id": "chute-brasil-234",
       "difficulty": "medium",
       "text": "Qual é a maior profundidade do Rio Amazonas, em metros, aproximadamente?",
       "answer": 100,
@@ -1640,6 +1874,7 @@
       "fact": "A profundidade média é de cerca de 50 metros."
     },
     {
+      "id": "chute-brasil-235",
       "difficulty": "medium",
       "text": "Qual é a largura do rio Amazonas na época de seca, em km, aproximadamente?",
       "answer": 11,
@@ -1647,6 +1882,7 @@
       "fact": "Na cheia, em alguns trechos, chega a 50 km."
     },
     {
+      "id": "chute-brasil-236",
       "difficulty": "medium",
       "text": "Quantos metros tem a queda da Cachoeira da Fumaça, na Chapada Diamantina?",
       "answer": 340,
@@ -1654,6 +1890,7 @@
       "fact": "Sua água vira névoa e sobe com o vento."
     },
     {
+      "id": "chute-brasil-237",
       "difficulty": "medium",
       "text": "Quantos metros tem a queda da Cachoeira do Tabuleiro, em Minas Gerais?",
       "answer": 273,
@@ -1661,6 +1898,7 @@
       "fact": "É a mais alta do estado."
     },
     {
+      "id": "chute-brasil-238",
       "difficulty": "medium",
       "text": "Quantas lagoas azuis têm os Lençóis Maranhenses, aproximadamente, na cheia?",
       "answer": 1000,
@@ -1668,6 +1906,7 @@
       "fact": "A água da chuva forma as lagoas entre as dunas."
     },
     {
+      "id": "chute-brasil-239",
       "difficulty": "medium",
       "text": "Qual é a área dos Lençóis Maranhenses, em km²?",
       "answer": 1550,
@@ -1675,6 +1914,7 @@
       "fact": "O parque é Patrimônio Mundial desde 2024."
     },
     {
+      "id": "chute-brasil-240",
       "difficulty": "medium",
       "text": "Quantos km² tem o Pantanal, aproximadamente, em todo o Brasil?",
       "answer": 150000,
@@ -1682,6 +1922,7 @@
       "fact": "Em 2020, o fogo destruiu cerca de um quarto do bioma."
     },
     {
+      "id": "chute-brasil-241",
       "difficulty": "medium",
       "text": "Quantos km² tem o Cerrado, em milhões, aproximadamente?",
       "answer": 2,
@@ -1689,6 +1930,7 @@
       "fact": "É a savana mais biodiversa do mundo."
     },
     {
+      "id": "chute-brasil-242",
       "difficulty": "medium",
       "text": "Qual a porcentagem da Amazônia que já foi desmatada, aproximadamente?",
       "answer": 20,
@@ -1696,6 +1938,7 @@
       "fact": "Cientistas falam em ponto de não retorno entre 20% e 25%."
     },
     {
+      "id": "chute-brasil-243",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Parque Indígena do Xingu, em km²?",
       "answer": 26400,
@@ -1703,6 +1946,7 @@
       "fact": "Ele reúne 16 povos diferentes."
     },
     {
+      "id": "chute-brasil-244",
       "difficulty": "medium",
       "text": "Quantos km² tem a Terra Indígena Yanomami?",
       "answer": 96650,
@@ -1710,6 +1954,7 @@
       "fact": "É a maior terra indígena do Brasil."
     },
     {
+      "id": "chute-brasil-245",
       "difficulty": "medium",
       "text": "Quantos Yanomami vivem no Brasil, aproximadamente?",
       "answer": 27000,
@@ -1717,6 +1962,7 @@
       "fact": "A crise de garimpo ilegal recebeu ajuda federal em 2023."
     },
     {
+      "id": "chute-brasil-246",
       "difficulty": "medium",
       "text": "Quantos candidatos fizeram o Enem de 2024, aproximadamente, em milhões?",
       "answer": 4.3,
@@ -1724,6 +1970,7 @@
       "fact": "É um dos maiores exames do mundo."
     },
     {
+      "id": "chute-brasil-247",
       "difficulty": "medium",
       "text": "Quantas universidades federais o Brasil tem, aproximadamente?",
       "answer": 69,
@@ -1731,6 +1978,7 @@
       "fact": "Elas oferecem cursos gratuitos."
     },
     {
+      "id": "chute-brasil-248",
       "difficulty": "medium",
       "text": "Quantas pessoas viajam por dia no metrô de São Paulo, em milhões?",
       "answer": 3.7,
@@ -1738,6 +1986,7 @@
       "fact": "O metrô de São Paulo é um dos mais lotados do mundo."
     },
     {
+      "id": "chute-brasil-249",
       "difficulty": "medium",
       "text": "Qual é a extensão do metrô de São Paulo, em km, aproximadamente?",
       "answer": 104,
@@ -1745,6 +1994,7 @@
       "fact": "O metrô de Xangai tem mais de 800 km."
     },
     {
+      "id": "chute-brasil-250",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram na tragédia do Bateau Mouche, em 1988?",
       "answer": 55,
@@ -1752,6 +2002,7 @@
       "fact": "O barco virou no réveillon do Rio."
     },
     {
+      "id": "chute-brasil-251",
       "difficulty": "hard",
       "text": "Qual é a temperatura máxima já registrada em São Paulo, em °C?",
       "answer": 37.8,
@@ -1759,6 +2010,7 @@
       "fact": "Foi em 2014, e o verão foi muito seco."
     },
     {
+      "id": "chute-brasil-252",
       "difficulty": "hard",
       "text": "Quantas pessoas viveram em Canudos no auge, aproximadamente?",
       "answer": 25000,
@@ -1766,6 +2018,7 @@
       "fact": "Ela chegou a ser a segunda maior cidade da Bahia."
     },
     {
+      "id": "chute-brasil-253",
       "difficulty": "hard",
       "text": "Quantos soldados republicanos lutaram em Canudos, aproximadamente?",
       "answer": 12000,
@@ -1773,6 +2026,7 @@
       "fact": "Foram necessárias quatro expedições militares."
     },
     {
+      "id": "chute-brasil-254",
       "difficulty": "hard",
       "text": "Quantas expedições militares foram enviadas a Canudos?",
       "answer": 4,
@@ -1780,6 +2034,7 @@
       "fact": "A última destruiu completamente o arraial."
     },
     {
+      "id": "chute-brasil-255",
       "difficulty": "hard",
       "text": "Qual foi o público da final da Copa do Mundo de 2014, no Maracanã?",
       "answer": 74738,
@@ -1787,6 +2042,7 @@
       "fact": "A Alemanha venceu por 1 a 0."
     },
     {
+      "id": "chute-brasil-256",
       "difficulty": "hard",
       "text": "Qual é a capacidade atual do Maracanã?",
       "answer": 78838,
@@ -1794,6 +2050,7 @@
       "fact": "Antes, ele chegou a receber quase 200 mil."
     },
     {
+      "id": "chute-brasil-257",
       "difficulty": "hard",
       "text": "Qual é a capacidade atual do Morumbi?",
       "answer": 66795,
@@ -1801,6 +2058,7 @@
       "fact": "Ele é o maior estádio particular do Brasil."
     },
     {
+      "id": "chute-brasil-258",
       "difficulty": "hard",
       "text": "Qual é a capacidade do Sambódromo do Rio de Janeiro?",
       "answer": 72500,
@@ -1808,6 +2066,7 @@
       "fact": "Oscar Niemeyer fez o projeto."
     },
     {
+      "id": "chute-brasil-259",
       "difficulty": "hard",
       "text": "Qual é o maior público já registrado em um show, no Brasil, em Copacabana?",
       "answer": 1600000,
@@ -1815,6 +2074,7 @@
       "fact": "Madonna reuniu esse público em 2024."
     },
     {
+      "id": "chute-brasil-260",
       "difficulty": "hard",
       "text": "Quantas pessoas Lady Gaga reuniu em Copacabana, em 2025, aproximadamente?",
       "answer": 2100000,
@@ -1822,6 +2082,7 @@
       "fact": "Foi o maior show de sua carreira."
     },
     {
+      "id": "chute-brasil-261",
       "difficulty": "hard",
       "text": "Quantas pessoas Rod Stewart reuniu em Copacabana, em 1994, aproximadamente?",
       "answer": 3500000,
@@ -1829,6 +2090,7 @@
       "fact": "Os números foram muito discutidos."
     },
     {
+      "id": "chute-brasil-262",
       "difficulty": "hard",
       "text": "Quantas pessoas visitaram o Rock in Rio de 1985, aproximadamente?",
       "answer": 1380000,
@@ -1836,6 +2098,7 @@
       "fact": "Foram 10 dias, na Barra da Tijuca."
     },
     {
+      "id": "chute-brasil-263",
       "difficulty": "hard",
       "text": "Qual é o peso de uma coroa imperial de Dom Pedro II, em kg?",
       "answer": 1.95,
@@ -1843,6 +2106,7 @@
       "fact": "Ela tem 639 diamantes."
     },
     {
+      "id": "chute-brasil-264",
       "difficulty": "hard",
       "text": "Quantos diamantes tem a coroa de Dom Pedro II?",
       "answer": 639,
@@ -1850,6 +2114,7 @@
       "fact": "Ela está no Museu Imperial de Petrópolis."
     },
     {
+      "id": "chute-brasil-265",
       "difficulty": "hard",
       "text": "Quantas toneladas de ouro saíram do Brasil no século XVIII, aproximadamente?",
       "answer": 1000,
@@ -1857,6 +2122,7 @@
       "fact": "O ouro pagou boa parte do Palácio de Mafra, em Portugal."
     },
     {
+      "id": "chute-brasil-266",
       "difficulty": "hard",
       "text": "Em que ano foi criado o estado de Rondônia?",
       "answer": 1981,
@@ -1864,6 +2130,7 @@
       "fact": "O nome homenageia o Marechal Rondon."
     },
     {
+      "id": "chute-brasil-267",
       "difficulty": "hard",
       "text": "Em que ano foi criado o estado de Roraima?",
       "answer": 1988,
@@ -1871,6 +2138,7 @@
       "fact": "Antes era um território federal."
     },
     {
+      "id": "chute-brasil-268",
       "difficulty": "hard",
       "text": "Em que ano foi criado o estado do Amapá?",
       "answer": 1988,
@@ -1878,6 +2146,7 @@
       "fact": "Antes, também era um território federal."
     },
     {
+      "id": "chute-brasil-269",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Ministério da Educação?",
       "answer": 1930,
@@ -1885,6 +2154,7 @@
       "fact": "Foi logo depois da chegada de Getúlio Vargas ao poder."
     },
     {
+      "id": "chute-brasil-270",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Banco Nacional de Desenvolvimento, o BNDES?",
       "answer": 1952,
@@ -1892,6 +2162,7 @@
       "fact": "Ele nasceu como BNDE, sem o S."
     },
     {
+      "id": "chute-brasil-271",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Eletrobras?",
       "answer": 1962,
@@ -1899,6 +2170,7 @@
       "fact": "Ela foi privatizada em 2022."
     },
     {
+      "id": "chute-brasil-272",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Embratel?",
       "answer": 1965,
@@ -1906,6 +2178,7 @@
       "fact": "Ela foi privatizada em 1998."
     },
     {
+      "id": "chute-brasil-273",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a TV Tupi?",
       "answer": 1950,
@@ -1913,6 +2186,7 @@
       "fact": "Foi a primeira emissora de TV do Brasil."
     },
     {
+      "id": "chute-brasil-274",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Rádio Sociedade do Rio de Janeiro?",
       "answer": 1923,
@@ -1920,6 +2194,7 @@
       "fact": "Roquette-Pinto é considerado o pai do rádio brasileiro."
     },
     {
+      "id": "chute-brasil-275",
       "difficulty": "hard",
       "text": "Em que ano foi a primeira transmissão de rádio no Brasil?",
       "answer": 1922,
@@ -1927,6 +2202,7 @@
       "fact": "Foi no centenário da Independência."
     },
     {
+      "id": "chute-brasil-276",
       "difficulty": "hard",
       "text": "Em que ano foi o primeiro voo comercial da Varig?",
       "answer": 1927,
@@ -1934,6 +2210,7 @@
       "fact": "Era um voo entre Porto Alegre e Rio Grande."
     },
     {
+      "id": "chute-brasil-277",
       "difficulty": "hard",
       "text": "Em que ano nasceu Ruy Barbosa?",
       "answer": 1849,
@@ -1941,6 +2218,7 @@
       "fact": "Ele nasceu em Salvador."
     },
     {
+      "id": "chute-brasil-278",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Rodovia Transamazônica?",
       "answer": 1972,
@@ -1948,6 +2226,7 @@
       "fact": "Muitos trechos ainda não têm asfalto."
     },
     {
+      "id": "chute-brasil-279",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Rodovia Belém-Brasília?",
       "answer": 1960,
@@ -1955,6 +2234,7 @@
       "fact": "Ela foi obra de JK."
     },
     {
+      "id": "chute-brasil-280",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Rodovia Dutra?",
       "answer": 1951,
@@ -1962,6 +2242,7 @@
       "fact": "Ela liga as duas maiores cidades do país."
     },
     {
+      "id": "chute-brasil-281",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Rodovia dos Imigrantes?",
       "answer": 1976,
@@ -1969,6 +2250,7 @@
       "fact": "Ela liga São Paulo a Santos."
     },
     {
+      "id": "chute-brasil-282",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o primeiro shopping em São Paulo, o Iguatemi?",
       "answer": 1966,
@@ -1976,6 +2258,7 @@
       "fact": "É o mais antigo do Brasil."
     },
     {
+      "id": "chute-brasil-283",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o aeroporto de Guarulhos?",
       "answer": 1985,
@@ -1983,6 +2266,7 @@
       "fact": "Ele é o maior do Brasil."
     },
     {
+      "id": "chute-brasil-284",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o aeroporto de Congonhas?",
       "answer": 1936,
@@ -1990,6 +2274,7 @@
       "fact": "Ele fica dentro da cidade de São Paulo."
     },
     {
+      "id": "chute-brasil-285",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o aeroporto Santos Dumont?",
       "answer": 1936,
@@ -1997,6 +2282,7 @@
       "fact": "Ele foi o primeiro aeroporto civil do Brasil."
     },
     {
+      "id": "chute-brasil-286",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Galeão como aeroporto internacional?",
       "answer": 1977,
@@ -2004,6 +2290,7 @@
       "fact": "O nome oficial homenageia Tom Jobim."
     },
     {
+      "id": "chute-brasil-287",
       "difficulty": "hard",
       "text": "Em que ano foi criada a primeira Reserva Extrativista do Brasil?",
       "answer": 1990,
@@ -2011,6 +2298,7 @@
       "fact": "A Chico Mendes fica no Acre."
     },
     {
+      "id": "chute-brasil-288",
       "difficulty": "hard",
       "text": "Em que ano Chico Mendes foi morto?",
       "answer": 1988,
@@ -2018,6 +2306,7 @@
       "fact": "Ele foi assassinado em Xapuri."
     },
     {
+      "id": "chute-brasil-289",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Parque Nacional da Amazônia?",
       "answer": 1974,
@@ -2025,6 +2314,7 @@
       "fact": "Ele fica no Pará."
     },
     {
+      "id": "chute-brasil-290",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Parque Nacional de Fernando de Noronha?",
       "answer": 1988,
@@ -2032,6 +2322,7 @@
       "fact": "Boa parte do arquipélago é protegida."
     },
     {
+      "id": "chute-brasil-291",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o pré-sal?",
       "answer": 2006,
@@ -2039,6 +2330,7 @@
       "fact": "O campo de Tupi foi o primeiro achado."
     },
     {
+      "id": "chute-brasil-292",
       "difficulty": "hard",
       "text": "Em que ano o Brasil chegou à autossuficiência do petróleo, segundo o governo?",
       "answer": 2006,
@@ -2046,6 +2338,7 @@
       "fact": "Lula sujou a mão de óleo em uma plataforma."
     },
     {
+      "id": "chute-brasil-293",
       "difficulty": "hard",
       "text": "Em que ano o Brasil foi tirado do Mapa da Fome da ONU?",
       "answer": 2014,
@@ -2053,6 +2346,7 @@
       "fact": "O país voltou ao mapa alguns anos depois."
     },
     {
+      "id": "chute-brasil-294",
       "difficulty": "hard",
       "text": "Em que ano foi aprovada a lei de cotas nas universidades federais?",
       "answer": 2012,
@@ -2060,6 +2354,7 @@
       "fact": "Ela reservou 50% das vagas para alunos de escola pública."
     },
     {
+      "id": "chute-brasil-295",
       "difficulty": "hard",
       "text": "Em que ano foi a morte de Marielle Franco?",
       "answer": 2018,
@@ -2067,6 +2362,7 @@
       "fact": "Ela era vereadora do Rio de Janeiro."
     },
     {
+      "id": "chute-brasil-296",
       "difficulty": "hard",
       "text": "Em que ano o Brasil adotou o feriado nacional do Dia da Consciência Negra?",
       "answer": 2023,
@@ -2074,6 +2370,7 @@
       "fact": "Foi sancionado por Lula, no fim do ano."
     },
     {
+      "id": "chute-brasil-297",
       "difficulty": "hard",
       "text": "Em que ano foi legalizado o casamento gay no Brasil?",
       "answer": 2013,
@@ -2081,6 +2378,7 @@
       "fact": "A decisão foi do Conselho Nacional de Justiça."
     },
     {
+      "id": "chute-brasil-298",
       "difficulty": "hard",
       "text": "Em que ano foi aprovado o divórcio no Brasil?",
       "answer": 1977,
@@ -2088,6 +2386,7 @@
       "fact": "A Lei do Divórcio foi uma grande batalha política."
     },
     {
+      "id": "chute-brasil-299",
       "difficulty": "hard",
       "text": "Em que ano foi aprovado o Estatuto da Criança e do Adolescente?",
       "answer": 1990,
@@ -2095,6 +2394,7 @@
       "fact": "Foi criado depois da Constituição de 1988."
     },
     {
+      "id": "chute-brasil-300",
       "difficulty": "hard",
       "text": "Em que ano foi aprovado o Código de Trânsito atual?",
       "answer": 1997,
@@ -2102,6 +2402,7 @@
       "fact": "Ele tornou obrigatório o uso do cinto."
     },
     {
+      "id": "chute-brasil-301",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Mercosul, com o Tratado de Assunção?",
       "answer": 1991,
@@ -2109,6 +2410,7 @@
       "fact": "Quatro países o criaram."
     },
     {
+      "id": "chute-brasil-302",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Bolsa Escola?",
       "answer": 2001,
@@ -2116,6 +2418,7 @@
       "fact": "Foi o precursor do Bolsa Família."
     },
     {
+      "id": "chute-brasil-303",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Fome Zero?",
       "answer": 2003,
@@ -2123,6 +2426,7 @@
       "fact": "Foi a principal marca inicial do governo Lula."
     },
     {
+      "id": "chute-brasil-304",
       "difficulty": "easy",
       "text": "Quantos anos, no mínimo, a pessoa deve ter para ser presidente do Brasil?",
       "answer": 35,
@@ -2130,6 +2434,7 @@
       "fact": "A Constituição define a idade mínima."
     },
     {
+      "id": "chute-brasil-305",
       "difficulty": "easy",
       "text": "Quantos anos, no mínimo, a pessoa deve ter para ser vereador?",
       "answer": 18,
@@ -2137,6 +2442,7 @@
       "fact": "É a menor idade para ocupar um cargo eletivo."
     },
     {
+      "id": "chute-brasil-306",
       "difficulty": "easy",
       "text": "Quantos anos, no mínimo, para tirar a CNH de carro?",
       "answer": 18,
@@ -2144,6 +2450,7 @@
       "fact": "Antes disso, só com autorização judicial em casos especiais."
     },
     {
+      "id": "chute-brasil-307",
       "difficulty": "medium",
       "text": "Quantos candidatos a presidente concorreram em 1989?",
       "answer": 22,
@@ -2151,6 +2458,7 @@
       "fact": "Foi a primeira eleição direta depois da ditadura."
     },
     {
+      "id": "chute-brasil-308",
       "difficulty": "medium",
       "text": "Quantos votos Lula teve no segundo turno de 2022, em milhões?",
       "answer": 60,
@@ -2158,6 +2466,7 @@
       "fact": "Foi a maior votação de um presidente do Brasil."
     },
     {
+      "id": "chute-brasil-309",
       "difficulty": "medium",
       "text": "Quantos votos Jair Bolsonaro teve no segundo turno de 2022, em milhões?",
       "answer": 58,
@@ -2165,6 +2474,7 @@
       "fact": "A diferença foi a menor desde a redemocratização."
     },
     {
+      "id": "chute-brasil-310",
       "difficulty": "medium",
       "text": "Quantas pessoas votaram em Collor no segundo turno de 1989, em milhões?",
       "answer": 35,
@@ -2172,6 +2482,7 @@
       "fact": "Ele venceu Lula na primeira eleição direta pós-ditadura."
     },
     {
+      "id": "chute-brasil-311",
       "difficulty": "medium",
       "text": "Qual é a idade mínima para ser senador?",
       "answer": 35,
@@ -2179,6 +2490,7 @@
       "fact": "A idade mínima para governador é 30 anos."
     },
     {
+      "id": "chute-brasil-312",
       "difficulty": "medium",
       "text": "Qual é a idade mínima para ser governador?",
       "answer": 30,
@@ -2186,6 +2498,7 @@
       "fact": "Ela é menor que a exigida para presidente."
     },
     {
+      "id": "chute-brasil-313",
       "difficulty": "medium",
       "text": "Quantas urnas eletrônicas o Brasil usou em 2022, aproximadamente?",
       "answer": 577000,
@@ -2193,6 +2506,7 @@
       "fact": "Elas são transportadas até por barco e avião."
     },
     {
+      "id": "chute-brasil-314",
       "difficulty": "medium",
       "text": "Quantos anos o Brasil levou para ter a primeira mulher presidente, desde 1889?",
       "answer": 122,
@@ -2200,6 +2514,7 @@
       "fact": "Dilma assumiu em 2011."
     },
     {
+      "id": "chute-brasil-315",
       "difficulty": "medium",
       "text": "Em que ano o voto feminino foi tornado obrigatório?",
       "answer": 1946,
@@ -2207,6 +2522,7 @@
       "fact": "Até então, ele era facultativo."
     },
     {
+      "id": "chute-brasil-316",
       "difficulty": "medium",
       "text": "Em que ano analfabetos ganharam o direito ao voto no Brasil?",
       "answer": 1985,
@@ -2214,6 +2530,7 @@
       "fact": "Eles ficaram quase 100 anos sem votar."
     },
     {
+      "id": "chute-brasil-317",
       "difficulty": "medium",
       "text": "Em que ano o voto dos jovens de 16 anos foi aprovado?",
       "answer": 1988,
@@ -2221,6 +2538,7 @@
       "fact": "A Constituição fez essa mudança."
     },
     {
+      "id": "chute-brasil-318",
       "difficulty": "medium",
       "text": "Em que ano o voto secreto foi criado no Brasil?",
       "answer": 1932,
@@ -2228,6 +2546,7 @@
       "fact": "O Código Eleitoral criou também a Justiça Eleitoral."
     },
     {
+      "id": "chute-brasil-319",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Justiça Eleitoral?",
       "answer": 1932,
@@ -2235,6 +2554,7 @@
       "fact": "Ela surgiu em resposta às fraudes da República Velha."
     },
     {
+      "id": "chute-brasil-320",
       "difficulty": "medium",
       "text": "Quantos ministros tem o Tribunal Superior Eleitoral?",
       "answer": 7,
@@ -2242,6 +2562,7 @@
       "fact": "Três deles vêm do STF."
     },
     {
+      "id": "chute-brasil-321",
       "difficulty": "hard",
       "text": "Quantos meses Jânio Quadros governou antes de renunciar?",
       "answer": 7,
@@ -2249,6 +2570,7 @@
       "fact": "Ele tinha sido eleito com a maior votação até então."
     },
     {
+      "id": "chute-brasil-322",
       "difficulty": "hard",
       "text": "Quantos anos JK governou?",
       "answer": 5,
@@ -2256,6 +2578,7 @@
       "fact": "Na época, o mandato era de cinco anos."
     },
     {
+      "id": "chute-brasil-323",
       "difficulty": "hard",
       "text": "Quantos anos João Figueiredo governou?",
       "answer": 6,
@@ -2263,6 +2586,7 @@
       "fact": "Foi o mandato mais longo da ditadura."
     },
     {
+      "id": "chute-brasil-324",
       "difficulty": "hard",
       "text": "Quantos anos José Sarney governou?",
       "answer": 5,
@@ -2270,6 +2594,7 @@
       "fact": "Ele assumiu após a morte de Tancredo Neves."
     },
     {
+      "id": "chute-brasil-325",
       "difficulty": "hard",
       "text": "Quantos anos Dutra governou?",
       "answer": 5,
@@ -2277,6 +2602,7 @@
       "fact": "Durante o governo dele, os cassinos foram proibidos."
     },
     {
+      "id": "chute-brasil-326",
       "difficulty": "hard",
       "text": "Em que ano os cassinos foram proibidos no Brasil?",
       "answer": 1946,
@@ -2284,6 +2610,7 @@
       "fact": "Ao todo, cerca de 70 cassinos fecharam as portas."
     },
     {
+      "id": "chute-brasil-327",
       "difficulty": "hard",
       "text": "Quantos cassinos fecharam com a proibição de 1946?",
       "answer": 71,
@@ -2291,6 +2618,7 @@
       "fact": "O da Urca, no Rio, era o mais famoso."
     },
     {
+      "id": "chute-brasil-328",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Hidrelétrica de Paulo Afonso, a primeira grande do Nordeste?",
       "answer": 1955,
@@ -2298,6 +2626,7 @@
       "fact": "Fica na Bahia, no rio São Francisco."
     },
     {
+      "id": "chute-brasil-329",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Hidrelétrica de Tucuruí?",
       "answer": 1984,
@@ -2305,6 +2634,7 @@
       "fact": "Ela inundou uma enorme área na Amazônia."
     },
     {
+      "id": "chute-brasil-330",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Hidrelétrica de Belo Monte?",
       "answer": 2016,
@@ -2312,6 +2642,7 @@
       "fact": "Fica no rio Xingu."
     },
     {
+      "id": "chute-brasil-331",
       "difficulty": "hard",
       "text": "Em que ano começaram as obras da Transposição do São Francisco?",
       "answer": 2007,
@@ -2319,6 +2650,7 @@
       "fact": "Ela leva água para o semiárido do Nordeste."
     },
     {
+      "id": "chute-brasil-332",
       "difficulty": "hard",
       "text": "Quantos km tem a Transposição do São Francisco, somando os eixos?",
       "answer": 477,
@@ -2326,6 +2658,7 @@
       "fact": "A obra atinge quatro estados."
     },
     {
+      "id": "chute-brasil-333",
       "difficulty": "hard",
       "text": "Em que ano nasceu Luiz Inácio Lula da Silva?",
       "answer": 1945,
@@ -2333,6 +2666,7 @@
       "fact": "Ele nasceu em Caetés, no estado de Pernambuco."
     },
     {
+      "id": "chute-brasil-334",
       "difficulty": "hard",
       "text": "Em que ano nasceu Fernando Henrique Cardoso?",
       "answer": 1931,
@@ -2340,6 +2674,7 @@
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
+      "id": "chute-brasil-335",
       "difficulty": "hard",
       "text": "Em que ano nasceu Dilma Rousseff?",
       "answer": 1947,
@@ -2347,6 +2682,7 @@
       "fact": "O pai dela era búlgaro."
     },
     {
+      "id": "chute-brasil-336",
       "difficulty": "hard",
       "text": "Em que ano nasceu Juscelino Kubitschek?",
       "answer": 1902,
@@ -2354,6 +2690,7 @@
       "fact": "Ele era médico antes da política."
     },
     {
+      "id": "chute-brasil-337",
       "difficulty": "hard",
       "text": "Em que ano nasceu Getúlio Vargas?",
       "answer": 1882,
@@ -2361,6 +2698,7 @@
       "fact": "Ele foi presidente por 19 anos."
     },
     {
+      "id": "chute-brasil-338",
       "difficulty": "hard",
       "text": "Em que ano nasceu Santos Dumont?",
       "answer": 1873,
@@ -2368,6 +2706,7 @@
       "fact": "Ele nasceu em Palmira, hoje Santos Dumont, em Minas Gerais."
     },
     {
+      "id": "chute-brasil-339",
       "difficulty": "hard",
       "text": "Em que ano nasceu Tom Jobim?",
       "answer": 1927,
@@ -2375,6 +2714,7 @@
       "fact": "Ele morreu em Nova York, em 1994."
     },
     {
+      "id": "chute-brasil-340",
       "difficulty": "hard",
       "text": "Em que ano nasceu Vinicius de Moraes?",
       "answer": 1913,
@@ -2382,6 +2722,7 @@
       "fact": "Ele se casou nove vezes."
     },
     {
+      "id": "chute-brasil-341",
       "difficulty": "hard",
       "text": "Em que ano nasceu Cartola?",
       "answer": 1908,
@@ -2389,6 +2730,7 @@
       "fact": "Ele só gravou seu primeiro disco aos 66 anos."
     },
     {
+      "id": "chute-brasil-342",
       "difficulty": "hard",
       "text": "Em que ano nasceu Pixinguinha?",
       "answer": 1897,
@@ -2396,6 +2738,7 @@
       "fact": "Ele tocou com a Orquestra dos Oito Batutas."
     },
     {
+      "id": "chute-brasil-343",
       "difficulty": "hard",
       "text": "Em que ano nasceu Noel Rosa?",
       "answer": 1910,
@@ -2403,6 +2746,7 @@
       "fact": "Ele morreu aos 26 anos, de tuberculose."
     },
     {
+      "id": "chute-brasil-344",
       "difficulty": "hard",
       "text": "Em que ano nasceu Carmen Miranda?",
       "answer": 1909,
@@ -2410,6 +2754,7 @@
       "fact": "Ela nasceu em Portugal."
     },
     {
+      "id": "chute-brasil-345",
       "difficulty": "hard",
       "text": "Em que ano nasceu Clarice Lispector?",
       "answer": 1920,
@@ -2417,6 +2762,7 @@
       "fact": "Ela nasceu na atual Ucrânia."
     },
     {
+      "id": "chute-brasil-346",
       "difficulty": "hard",
       "text": "Em que ano nasceu Jorge Amado?",
       "answer": 1912,
@@ -2424,6 +2770,7 @@
       "fact": "Ele escreveu Gabriela, Cravo e Canela."
     },
     {
+      "id": "chute-brasil-347",
       "difficulty": "hard",
       "text": "Em que ano nasceu Paulo Freire?",
       "answer": 1921,
@@ -2431,6 +2778,7 @@
       "fact": "Ele nasceu em Recife."
     },
     {
+      "id": "chute-brasil-348",
       "difficulty": "hard",
       "text": "Em que ano nasceu Zumbi dos Palmares, segundo estimativa?",
       "answer": 1655,
@@ -2438,6 +2786,7 @@
       "fact": "Ele foi criado por um padre e voltou ao quilombo."
     },
     {
+      "id": "chute-brasil-349",
       "difficulty": "hard",
       "text": "Em que ano nasceu Maria Bonita?",
       "answer": 1911,
@@ -2445,6 +2794,7 @@
       "fact": "Ela morreu em 1938, em Sergipe."
     },
     {
+      "id": "chute-brasil-350",
       "difficulty": "hard",
       "text": "Em que ano nasceu Lampião?",
       "answer": 1898,
@@ -2452,6 +2802,7 @@
       "fact": "Ele foi um dos cangaceiros mais famosos do Brasil."
     },
     {
+      "id": "chute-brasil-351",
       "difficulty": "hard",
       "text": "Em que ano Dom Pedro II foi coroado imperador, com 15 anos?",
       "answer": 1841,
@@ -2459,6 +2810,7 @@
       "fact": "O corpo diplomático chamou a coroação de uma grande festa."
     },
     {
+      "id": "chute-brasil-352",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Ponte Hercílio Luz?",
       "answer": 1926,
@@ -2466,6 +2818,7 @@
       "fact": "Ela ficou fechada por muitos anos, até 2019."
     },
     {
+      "id": "chute-brasil-353",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Estação da Luz, em São Paulo?",
       "answer": 1901,
@@ -2473,6 +2826,7 @@
       "fact": "Ela foi feita com peças trazidas da Inglaterra."
     },
     {
+      "id": "chute-brasil-354",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Mercado Ver-o-Peso, em Belém?",
       "answer": 1625,
@@ -2480,6 +2834,7 @@
       "fact": "É um dos mercados mais antigos do Brasil."
     },
     {
+      "id": "chute-brasil-355",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Mercado Municipal de São Paulo?",
       "answer": 1933,
@@ -2487,6 +2842,7 @@
       "fact": "O sanduíche de mortadela é famoso lá."
     },
     {
+      "id": "chute-brasil-356",
       "difficulty": "hard",
       "text": "Em que ano foi feita a primeira edição do Festival de Cinema de Gramado?",
       "answer": 1973,
@@ -2494,6 +2850,7 @@
       "fact": "Ele é o maior festival de cinema do Brasil."
     },
     {
+      "id": "chute-brasil-357",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Nova Friburgo, com colonos suíços?",
       "answer": 1818,
@@ -2501,6 +2858,7 @@
       "fact": "Ela é uma das colônias mais antigas não portuguesas do Brasil."
     },
     {
+      "id": "chute-brasil-358",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Holambra, com imigrantes holandeses?",
       "answer": 1948,
@@ -2508,6 +2866,7 @@
       "fact": "A cidade é famosa pelas flores."
     },
     {
+      "id": "chute-brasil-359",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Pomerode, com alemães?",
       "answer": 1861,
@@ -2515,6 +2874,7 @@
       "fact": "É a cidade mais alemã do Brasil."
     },
     {
+      "id": "chute-brasil-360",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Americana, com imigrantes dos EUA?",
       "answer": 1875,
@@ -2522,6 +2882,7 @@
       "fact": "Muitos eram sulistas que fugiram da Guerra Civil."
     },
     {
+      "id": "chute-brasil-361",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Santos?",
       "answer": 1546,
@@ -2529,6 +2890,7 @@
       "fact": "O porto é um dos maiores da América Latina."
     },
     {
+      "id": "chute-brasil-362",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Olinda?",
       "answer": 1537,
@@ -2536,6 +2898,7 @@
       "fact": "Ela foi a capital de Pernambuco até o domínio holandês."
     },
     {
+      "id": "chute-brasil-363",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de São Vicente?",
       "answer": 1532,
@@ -2543,6 +2906,7 @@
       "fact": "Foi a primeira vila do Brasil."
     },
     {
+      "id": "chute-brasil-364",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Vitória?",
       "answer": 1551,
@@ -2550,6 +2914,7 @@
       "fact": "Ela fica em uma ilha."
     },
     {
+      "id": "chute-brasil-365",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de João Pessoa?",
       "answer": 1585,
@@ -2557,6 +2922,7 @@
       "fact": "É a terceira capital mais antiga do Brasil."
     },
     {
+      "id": "chute-brasil-366",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Natal?",
       "answer": 1599,
@@ -2564,6 +2930,7 @@
       "fact": "Ela foi fundada no dia de Natal, em um forte."
     },
     {
+      "id": "chute-brasil-367",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Cuiabá?",
       "answer": 1719,
@@ -2571,6 +2938,7 @@
       "fact": "Ela nasceu com a descoberta de ouro."
     },
     {
+      "id": "chute-brasil-368",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Ouro Preto?",
       "answer": 1711,
@@ -2578,6 +2946,7 @@
       "fact": "Ela se chamava Vila Rica."
     },
     {
+      "id": "chute-brasil-369",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Florianópolis?",
       "answer": 1673,
@@ -2585,6 +2954,7 @@
       "fact": "Antes, se chamava Nossa Senhora do Desterro."
     },
     {
+      "id": "chute-brasil-370",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Campo Grande?",
       "answer": 1872,
@@ -2592,6 +2962,7 @@
       "fact": "Ela fica em Mato Grosso do Sul."
     },
     {
+      "id": "chute-brasil-371",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Londrina?",
       "answer": 1934,
@@ -2599,6 +2970,7 @@
       "fact": "Os ingleses compraram as terras da região."
     },
     {
+      "id": "chute-brasil-372",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Maringá?",
       "answer": 1947,
@@ -2606,6 +2978,7 @@
       "fact": "Ela foi planejada e tem muitas árvores."
     },
     {
+      "id": "chute-brasil-373",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Boa Vista?",
       "answer": 1890,
@@ -2613,6 +2986,7 @@
       "fact": "Ela foi planejada em formato de leque."
     },
     {
+      "id": "chute-brasil-374",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Macapá?",
       "answer": 1758,
@@ -2620,6 +2994,7 @@
       "fact": "Ela tem a Fortaleza de São José."
     },
     {
+      "id": "chute-brasil-375",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Rio Branco?",
       "answer": 1882,
@@ -2627,6 +3002,7 @@
       "fact": "O nome homenageia o Barão do Rio Branco."
     },
     {
+      "id": "chute-brasil-376",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a cidade de Porto Velho?",
       "answer": 1914,
@@ -2634,6 +3010,7 @@
       "fact": "Ela surgiu com a ferrovia Madeira-Mamoré."
     },
     {
+      "id": "chute-brasil-377",
       "difficulty": "hard",
       "text": "Qual é a capacidade do reservatório da Cantareira, em bilhões de litros?",
       "answer": 982,
@@ -2641,6 +3018,7 @@
       "fact": "A crise hídrica de 2014 o levou a níveis muito baixos."
     },
     {
+      "id": "chute-brasil-378",
       "difficulty": "hard",
       "text": "Qual é a altitude do Pico da Neblina, em pés?",
       "answer": 9826,
@@ -2648,6 +3026,7 @@
       "fact": "Ele foi remedido em 2016."
     },
     {
+      "id": "chute-brasil-379",
       "difficulty": "hard",
       "text": "Quantos anos Dom Pedro II ficou exilado até morrer?",
       "answer": 2,
@@ -2655,6 +3034,7 @@
       "fact": "Ele saiu do Brasil em 1889 e morreu em 1891."
     },
     {
+      "id": "chute-brasil-380",
       "difficulty": "hard",
       "text": "Quantos anos se passaram entre a chegada de Cabral e a Independência?",
       "answer": 322,
@@ -2662,6 +3042,7 @@
       "fact": "O período é conhecido como Brasil Colônia."
     },
     {
+      "id": "chute-brasil-381",
       "difficulty": "hard",
       "text": "Quantos dias a viagem da corte de Portugal ao Brasil levou, em 1807 e 1808?",
       "answer": 54,
@@ -2669,6 +3050,7 @@
       "fact": "A chegada foi em Salvador, em janeiro de 1808."
     },
     {
+      "id": "chute-brasil-382",
       "difficulty": "hard",
       "text": "Quantos navios trouxeram a corte portuguesa ao Brasil?",
       "answer": 36,
@@ -2676,6 +3058,7 @@
       "fact": "A esquadra foi acompanhada por navios britânicos."
     },
     {
+      "id": "chute-brasil-383",
       "difficulty": "hard",
       "text": "Quantos meses a primeira expedição de Cabral levou até chegar ao Brasil?",
       "answer": 2,
@@ -2683,6 +3066,7 @@
       "fact": "Eles saíram de Lisboa em março e chegaram em abril."
     },
     {
+      "id": "chute-brasil-384",
       "difficulty": "easy",
       "text": "Quantos estados fazem parte da região Nordeste?",
       "answer": 9,
@@ -2690,6 +3074,7 @@
       "fact": "A Bahia é o maior deles."
     },
     {
+      "id": "chute-brasil-385",
       "difficulty": "easy",
       "text": "Quantos estados fazem parte da região Sul?",
       "answer": 3,
@@ -2697,6 +3082,7 @@
       "fact": "Paraná, Santa Catarina e Rio Grande do Sul."
     },
     {
+      "id": "chute-brasil-386",
       "difficulty": "easy",
       "text": "Quantos estados fazem parte da região Norte?",
       "answer": 7,
@@ -2704,6 +3090,7 @@
       "fact": "A região é a maior do país em área."
     },
     {
+      "id": "chute-brasil-387",
       "difficulty": "easy",
       "text": "Quantos estados fazem parte da região Sudeste?",
       "answer": 4,
@@ -2711,6 +3098,7 @@
       "fact": "Ela é a mais populosa do país."
     },
     {
+      "id": "chute-brasil-388",
       "difficulty": "medium",
       "text": "Quantos países da América do Sul não fazem fronteira com o Brasil?",
       "answer": 2,
@@ -2718,6 +3106,7 @@
       "fact": "São o Chile e o Equador."
     },
     {
+      "id": "chute-brasil-389",
       "difficulty": "medium",
       "text": "Quantos estados brasileiros são banhados pelo mar?",
       "answer": 17,
@@ -2725,6 +3114,7 @@
       "fact": "Entre as capitais, Teresina não fica no litoral."
     },
     {
+      "id": "chute-brasil-390",
       "difficulty": "easy",
       "text": "Quantas Copas do Mundo o Brasil ganhou?",
       "answer": 5,
@@ -2732,6 +3122,7 @@
       "fact": "O último título foi em 2002."
     },
     {
+      "id": "chute-brasil-391",
       "difficulty": "easy",
       "text": "Quantas estrelas tem a camisa da seleção brasileira?",
       "answer": 5,
@@ -2739,6 +3130,7 @@
       "fact": "Uma para cada título mundial."
     },
     {
+      "id": "chute-brasil-392",
       "difficulty": "easy",
       "text": "Quantos dias costuma durar o Carnaval oficial, de sábado a terça?",
       "answer": 4,
@@ -2746,6 +3138,7 @@
       "fact": "A Quarta-Feira de Cinzas marca o fim."
     },
     {
+      "id": "chute-brasil-393",
       "difficulty": "medium",
       "text": "Quantos quilômetros de fronteira terrestre tem o Brasil, aproximadamente?",
       "answer": 16900,
@@ -2753,6 +3146,7 @@
       "fact": "Ela é uma das maiores do mundo."
     },
     {
+      "id": "chute-brasil-394",
       "difficulty": "medium",
       "text": "Qual é a área do Brasil, em milhões de km², aproximadamente?",
       "answer": 8.5,
@@ -2760,6 +3154,7 @@
       "fact": "É o quinto maior país do mundo."
     },
     {
+      "id": "chute-brasil-395",
       "difficulty": "medium",
       "text": "Qual é a altura das Cataratas do Iguaçu, em metros, no ponto mais alto?",
       "answer": 82,
@@ -2767,6 +3162,7 @@
       "fact": "A Garganta do Diabo é a parte mais famosa."
     },
     {
+      "id": "chute-brasil-396",
       "difficulty": "medium",
       "text": "Quanto mede a Ponte Rio-Niterói, em quilômetros, aproximadamente?",
       "answer": 13,
@@ -2774,6 +3170,7 @@
       "fact": "Ela foi inaugurada em 1974."
     },
     {
+      "id": "chute-brasil-397",
       "difficulty": "medium",
       "text": "Quantos anos durou o Império no Brasil, de 1822 a 1889?",
       "answer": 67,
@@ -2781,6 +3178,7 @@
       "fact": "Dom Pedro II reinou quase todo esse período."
     },
     {
+      "id": "chute-brasil-398",
       "difficulty": "medium",
       "text": "Quantos anos durou a ditadura militar no Brasil, de 1964 a 1985?",
       "answer": 21,
@@ -2788,6 +3186,7 @@
       "fact": "Tancredo Neves foi eleito de forma indireta em 1985."
     },
     {
+      "id": "chute-brasil-399",
       "difficulty": "hard",
       "text": "Qual foi a menor temperatura oficial do Brasil, em °C?",
       "answer": -14,
@@ -2796,6 +3195,7 @@
       "fact": "Ela foi registrada em Caçador, em 1952."
     },
     {
+      "id": "chute-brasil-400",
       "difficulty": "hard",
       "text": "Qual é a altitude de Urubici, em Santa Catarina, em metros, aproximadamente?",
       "answer": 915,
@@ -2803,6 +3203,7 @@
       "fact": "É uma das cidades mais frias do país."
     },
     {
+      "id": "chute-brasil-401",
       "difficulty": "hard",
       "text": "Quantos anos Dom Pedro II reinou, desde a coroação em 1841 até 1889?",
       "answer": 48,
@@ -2810,6 +3211,7 @@
       "fact": "Ele foi coroado aos 15 anos."
     },
     {
+      "id": "chute-brasil-402",
       "difficulty": "hard",
       "text": "Quantos anos tinha Dom Pedro II quando foi coroado?",
       "answer": 15,
@@ -2817,6 +3219,7 @@
       "fact": "A Maioridade foi antecipada."
     },
     {
+      "id": "chute-brasil-403",
       "difficulty": "hard",
       "text": "Quantos soldados brasileiros foram à Itália com a FEB, em milhares?",
       "answer": 25,
@@ -2824,6 +3227,7 @@
       "fact": "Monte Castelo é a batalha mais lembrada."
     },
     {
+      "id": "chute-brasil-404",
       "difficulty": "hard",
       "text": "Quantos presidentes o Brasil teve, contando até Lula em 2023, aproximadamente?",
       "answer": 39,
@@ -2831,6 +3235,7 @@
       "fact": "A contagem varia com juntas e interinos."
     },
     {
+      "id": "chute-brasil-405",
       "difficulty": "hard",
       "text": "Quanto de área tem a Floresta Amazônica no Brasil, em milhões de km², aproximadamente?",
       "answer": 4.2,
@@ -2838,6 +3243,7 @@
       "fact": "Ela cobre cerca de metade do território brasileiro."
     },
     {
+      "id": "chute-brasil-406",
       "difficulty": "hard",
       "text": "Quantos quilômetros tem o Rio São Francisco, aproximadamente?",
       "answer": 2830,
@@ -2845,6 +3251,7 @@
       "fact": "Ele nasce na Serra da Canastra, em Minas Gerais."
     },
     {
+      "id": "chute-brasil-407",
       "difficulty": "easy",
       "text": "Quantas capitais estaduais tem o Brasil, sem contar Brasília?",
       "answer": 26,
@@ -2852,6 +3259,7 @@
       "fact": "Cada estado tem a sua."
     },
     {
+      "id": "chute-brasil-408",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o Dedo de Deus, em Teresópolis, aproximadamente?",
       "answer": 1692,
@@ -2859,6 +3267,7 @@
       "fact": "O pico é um símbolo do montanhismo brasileiro."
     },
     {
+      "id": "chute-brasil-409",
       "difficulty": "medium",
       "text": "Quantos quilômetros tem a Rodovia Transamazônica, aproximadamente?",
       "answer": 4000,
@@ -2866,6 +3275,7 @@
       "fact": "Ela foi aberta nos anos 1970."
     },
     {
+      "id": "chute-brasil-410",
       "difficulty": "medium",
       "text": "Quantas pessoas cabem no Maracanã, em milhares, em jogos atuais?",
       "answer": 78,
@@ -2873,6 +3283,7 @@
       "fact": "Na Copa de 1950, ele recebeu mais de 170 mil pessoas."
     },
     {
+      "id": "chute-brasil-411",
       "difficulty": "hard",
       "text": "Quantas pessoas viram a final da Copa de 1950 no Maracanã, em milhares, oficialmente?",
       "answer": 173,
@@ -2880,6 +3291,7 @@
       "fact": "O Uruguai venceu e calou o estádio."
     },
     {
+      "id": "chute-brasil-412",
       "difficulty": "hard",
       "text": "Qual é a altura da barragem de Itaipu, em metros, aproximadamente?",
       "answer": 196,
@@ -2887,6 +3299,7 @@
       "fact": "Ela foi inaugurada em 1984."
     },
     {
+      "id": "chute-brasil-413",
       "difficulty": "easy",
       "text": "Quantos jogadores titulares tem um time de vôlei de praia no Brasil, por equipe?",
       "answer": 2,
@@ -2894,6 +3307,7 @@
       "fact": "O país é uma potência no esporte."
     },
     {
+      "id": "chute-brasil-414",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o Dedo de Deus, em Teresópolis, em relação ao nível do mar?",
       "answer": 1692,
@@ -2901,6 +3315,7 @@
       "fact": "Ele é um símbolo do montanhismo."
     },
     {
+      "id": "chute-brasil-415",
       "difficulty": "medium",
       "text": "Quantos quilômetros tem a BR-116, aproximadamente?",
       "answer": 4500,
@@ -2908,6 +3323,7 @@
       "fact": "Ela é a rodovia mais longa do Brasil."
     },
     {
+      "id": "chute-brasil-416",
       "difficulty": "easy",
       "text": "Quantos anos dura o mandato de um prefeito no Brasil?",
       "answer": 4,
@@ -2915,6 +3331,7 @@
       "fact": "A eleição municipal acontece dois anos depois da presidencial."
     },
     {
+      "id": "chute-brasil-417",
       "difficulty": "easy",
       "text": "Quantos turnos pode ter uma eleição para presidente no Brasil?",
       "answer": 2,
@@ -2922,42 +3339,49 @@
       "fact": "Só há segundo turno se ninguém passar da metade dos votos válidos."
     },
     {
+      "id": "chute-brasil-418",
       "difficulty": "easy",
       "text": "Em que dia de setembro se comemora a Independência do Brasil?",
       "answer": 7,
       "fact": "Dom Pedro I teria gritado às margens do riacho Ipiranga."
     },
     {
+      "id": "chute-brasil-419",
       "difficulty": "easy",
       "text": "Em que dia de novembro se comemora a Proclamação da República?",
       "answer": 15,
       "fact": "O marechal Deodoro da Fonseca liderou o movimento."
     },
     {
+      "id": "chute-brasil-420",
       "difficulty": "easy",
       "text": "Em que dia de abril é o feriado de Tiradentes?",
       "answer": 21,
       "fact": "A data lembra a morte do inconfidente."
     },
     {
+      "id": "chute-brasil-421",
       "difficulty": "easy",
       "text": "Em que dia de outubro se comemora o Dia das Crianças?",
       "answer": 12,
       "fact": "A data também é feriado religioso no Brasil."
     },
     {
+      "id": "chute-brasil-422",
       "difficulty": "easy",
       "text": "Em que dia de junho se comemora o Dia dos Namorados no Brasil?",
       "answer": 12,
       "fact": "A data fica na véspera do dia de Santo Antônio, o santo casamenteiro."
     },
     {
+      "id": "chute-brasil-423",
       "difficulty": "easy",
       "text": "Em que dia de junho se comemora o Dia de São João?",
       "answer": 24,
       "fact": "As festas juninas atraem milhões de pessoas ao Nordeste."
     },
     {
+      "id": "chute-brasil-424",
       "difficulty": "easy",
       "text": "Quantas vezes Lula foi eleito presidente do Brasil?",
       "answer": 3,
@@ -2965,6 +3389,7 @@
       "fact": "Ele perdeu outras três eleições antes de vencer pela primeira vez."
     },
     {
+      "id": "chute-brasil-425",
       "difficulty": "easy",
       "text": "Em que ano Lula voltou a ser presidente?",
       "answer": 2023,
@@ -2972,6 +3397,7 @@
       "fact": "Ele venceu a eleição mais apertada desde a redemocratização."
     },
     {
+      "id": "chute-brasil-426",
       "difficulty": "easy",
       "text": "Qual é o número de telefone da Defesa Civil?",
       "answer": 199,
@@ -2979,6 +3405,7 @@
       "fact": "Ela atende em casos de enchente e deslizamento."
     },
     {
+      "id": "chute-brasil-427",
       "difficulty": "easy",
       "text": "Qual é o DDD de Salvador?",
       "answer": 71,
@@ -2986,6 +3413,7 @@
       "fact": "A Bahia tem vários DDDs diferentes."
     },
     {
+      "id": "chute-brasil-428",
       "difficulty": "easy",
       "text": "Qual é o DDD de Belo Horizonte?",
       "answer": 31,
@@ -2993,6 +3421,7 @@
       "fact": "Os DDDs de Minas Gerais começam com 3."
     },
     {
+      "id": "chute-brasil-429",
       "difficulty": "easy",
       "text": "Qual é o DDD de Porto Alegre?",
       "answer": 51,
@@ -3000,6 +3429,7 @@
       "fact": "Os DDDs do Rio Grande do Sul começam com 5."
     },
     {
+      "id": "chute-brasil-430",
       "difficulty": "easy",
       "text": "Qual é o DDD de Recife?",
       "answer": 81,
@@ -3007,24 +3437,28 @@
       "fact": "Os DDDs de Pernambuco começam com 8."
     },
     {
+      "id": "chute-brasil-431",
       "difficulty": "easy",
       "text": "Em que dia de maio se comemora o Dia do Trabalhador?",
       "answer": 1,
       "fact": "A data lembra greves por jornadas de oito horas no século XIX."
     },
     {
+      "id": "chute-brasil-432",
       "difficulty": "easy",
       "text": "Em que dia de novembro se comemora o Dia da Consciência Negra?",
       "answer": 20,
       "fact": "A data lembra a morte de Zumbi dos Palmares."
     },
     {
+      "id": "chute-brasil-433",
       "difficulty": "easy",
       "text": "Em que dia de novembro é o feriado de Finados?",
       "answer": 2,
       "fact": "É o dia de visitar os túmulos de quem já se foi."
     },
     {
+      "id": "chute-brasil-434",
       "difficulty": "easy",
       "text": "Quantos anos de independência o Brasil completou em 2022?",
       "answer": 200,

@@ -2,6 +2,7 @@
   "theme": "Games",
   "questions": [
     {
+      "id": "chute-games-1",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro Super Mario Bros.?",
       "answer": 1985,
@@ -9,6 +10,7 @@
       "fact": "O jogo vinha junto com o Nintendo Entertainment System em muitos pacotes."
     },
     {
+      "id": "chute-games-2",
       "difficulty": "easy",
       "text": "Em que ano o primeiro PlayStation foi lançado no Japão?",
       "answer": 1994,
@@ -16,6 +18,7 @@
       "fact": "O console nasceu de uma parceria desfeita entre Sony e Nintendo."
     },
     {
+      "id": "chute-games-3",
       "difficulty": "easy",
       "text": "Quantos Pokémon havia na primeira geração?",
       "answer": 151,
@@ -23,6 +26,7 @@
       "fact": "O 151º é o Mew, que nem estava nos planos e entrou escondido no código."
     },
     {
+      "id": "chute-games-4",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a versão completa de Minecraft?",
       "answer": 2011,
@@ -30,6 +34,7 @@
       "fact": "Antes disso, o jogo já fazia sucesso em versões de teste desde 2009."
     },
     {
+      "id": "chute-games-5",
       "difficulty": "hard",
       "text": "Quantas cópias Minecraft vendeu até 2023?",
       "answer": 300,
@@ -37,6 +42,7 @@
       "fact": "É o jogo mais vendido da história."
     },
     {
+      "id": "chute-games-6",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o jogo Pong?",
       "answer": 1972,
@@ -44,6 +50,7 @@
       "fact": "Foi o primeiro sucesso comercial dos videogames, da Atari."
     },
     {
+      "id": "chute-games-7",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro The Legend of Zelda?",
       "answer": 1986,
@@ -51,6 +58,7 @@
       "fact": "Foi um dos primeiros jogos de console a salvar o progresso numa bateria no cartucho."
     },
     {
+      "id": "chute-games-8",
       "difficulty": "medium",
       "text": "Em que ano Tetris foi criado?",
       "answer": 1984,
@@ -58,6 +66,7 @@
       "fact": "Alexey Pajitnov criou o jogo num computador da Academia de Ciências da União Soviética."
     },
     {
+      "id": "chute-games-9",
       "difficulty": "easy",
       "text": "Em que ano o Nintendo Switch foi lançado?",
       "answer": 2017,
@@ -65,6 +74,7 @@
       "fact": "Ele é ao mesmo tempo console de mesa e portátil."
     },
     {
+      "id": "chute-games-10",
       "difficulty": "hard",
       "text": "Quantas unidades do PlayStation 2 foram vendidas?",
       "answer": 160,
@@ -72,6 +82,7 @@
       "fact": "É o console mais vendido da história."
     },
     {
+      "id": "chute-games-11",
       "difficulty": "easy",
       "text": "Em que ano foi lançado GTA V?",
       "answer": 2013,
@@ -79,6 +90,7 @@
       "fact": "Ele arrecadou 1 bilhão de dólares em três dias."
     },
     {
+      "id": "chute-games-12",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Pac-Man?",
       "answer": 1980,
@@ -86,6 +98,7 @@
       "fact": "O nome original no Japão era Puck-Man."
     },
     {
+      "id": "chute-games-13",
       "difficulty": "medium",
       "text": "Em que ano o Mega Drive foi lançado no Brasil?",
       "answer": 1990,
@@ -93,6 +106,7 @@
       "fact": "A Tectoy lançou o console aqui e fabricou versões por décadas."
     },
     {
+      "id": "chute-games-14",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Fortnite Battle Royale?",
       "answer": 2017,
@@ -100,6 +114,7 @@
       "fact": "O modo gratuito saiu poucos meses depois do Fortnite original."
     },
     {
+      "id": "chute-games-15",
       "difficulty": "hard",
       "text": "Quantos Pokémon existem até a nona geração?",
       "answer": 1025,
@@ -107,6 +122,7 @@
       "fact": "A nona geração veio com Pokémon Scarlet e Violet, em 2022."
     },
     {
+      "id": "chute-games-16",
       "difficulty": "medium",
       "text": "Em que ano surgiu o primeiro Counter-Strike?",
       "answer": 1999,
@@ -114,6 +130,7 @@
       "fact": "Ele começou como um mod gratuito de Half-Life."
     },
     {
+      "id": "chute-games-17",
       "difficulty": "medium",
       "text": "Em que ano o Game Boy foi lançado?",
       "answer": 1989,
@@ -121,6 +138,7 @@
       "fact": "Tetris vinha junto e ajudou a vender milhões de aparelhos."
     },
     {
+      "id": "chute-games-18",
       "difficulty": "hard",
       "text": "Quantas unidades do Game Boy, somando o Game Boy Color, foram vendidas?",
       "answer": 119,
@@ -128,6 +146,7 @@
       "fact": "As pilhas duravam cerca de 30 horas, muito mais que as dos rivais."
     },
     {
+      "id": "chute-games-19",
       "difficulty": "medium",
       "text": "Em que ano saiu o primeiro jogo de futebol da série FIFA?",
       "answer": 1993,
@@ -135,6 +154,7 @@
       "fact": "Foi o FIFA International Soccer, que ainda não tinha jogadores reais com nome."
     },
     {
+      "id": "chute-games-20",
       "difficulty": "medium",
       "text": "Em que ano foi lançado Sonic the Hedgehog?",
       "answer": 1991,
@@ -142,6 +162,7 @@
       "fact": "Ele foi criado para ser o mascote da Sega contra o Mario."
     },
     {
+      "id": "chute-games-21",
       "difficulty": "easy",
       "text": "Em que ano foi lançado League of Legends?",
       "answer": 2009,
@@ -149,6 +170,7 @@
       "fact": "O Mundial de LoL virou um dos maiores eventos de esports do mundo."
     },
     {
+      "id": "chute-games-22",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o primeiro Xbox?",
       "answer": 2001,
@@ -156,6 +178,7 @@
       "fact": "Foi a estreia da Microsoft em consoles, com Halo como grande sucesso."
     },
     {
+      "id": "chute-games-23",
       "difficulty": "hard",
       "text": "Quantas cópias GTA V vendeu até 2024?",
       "answer": 200,
@@ -163,6 +186,7 @@
       "fact": "Ele foi lançado em três gerações de consoles."
     },
     {
+      "id": "chute-games-24",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Free Fire?",
       "answer": 2017,
@@ -170,6 +194,7 @@
       "fact": "O jogo virou febre no Brasil por rodar bem em celulares mais simples."
     },
     {
+      "id": "chute-games-25",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Atari 2600?",
       "answer": 1977,
@@ -177,6 +202,7 @@
       "fact": "Ele popularizou os cartuchos com jogos trocáveis."
     },
     {
+      "id": "chute-games-26",
       "difficulty": "hard",
       "text": "Em que ano foi lançado Street Fighter II?",
       "answer": 1991,
@@ -184,6 +210,7 @@
       "fact": "Ele popularizou os jogos de luta e os combos nos fliperamas."
     },
     {
+      "id": "chute-games-27",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o fliperama Donkey Kong?",
       "answer": 1981,
@@ -191,6 +218,7 @@
       "fact": "Foi a estreia do Mario, que ainda se chamava Jumpman."
     },
     {
+      "id": "chute-games-28",
       "difficulty": "hard",
       "text": "Quantas unidades do Nintendo DS foram vendidas?",
       "answer": 154,
@@ -198,6 +226,7 @@
       "fact": "É o portátil mais vendido da história."
     },
     {
+      "id": "chute-games-29",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o primeiro Resident Evil?",
       "answer": 1996,
@@ -205,6 +234,7 @@
       "fact": "O jogo popularizou o termo survival horror."
     },
     {
+      "id": "chute-games-30",
       "difficulty": "easy",
       "text": "Em que ano foi lançado Among Us?",
       "answer": 2018,
@@ -212,6 +242,7 @@
       "fact": "O jogo só estourou em 2020, durante a pandemia."
     },
     {
+      "id": "chute-games-31",
       "difficulty": "medium",
       "text": "Quantos pontos dá uma pastilha pequena em Pac-Man?",
       "answer": 10,
@@ -219,6 +250,7 @@
       "fact": "A pastilha grande vale 50."
     },
     {
+      "id": "chute-games-32",
       "difficulty": "easy",
       "text": "Quantos fantasmas persegue o Pac-Man?",
       "answer": 4,
@@ -226,6 +258,7 @@
       "fact": "Blinky, Pinky, Inky e Clyde."
     },
     {
+      "id": "chute-games-33",
       "difficulty": "easy",
       "text": "Quantos jogadores por time tem o Counter-Strike?",
       "answer": 5,
@@ -233,6 +266,7 @@
       "fact": "A partida é de cinco contra cinco."
     },
     {
+      "id": "chute-games-34",
       "difficulty": "easy",
       "text": "Quantos jogadores por time tem o League of Legends?",
       "answer": 5,
@@ -240,6 +274,7 @@
       "fact": "Cada um escolhe um personagem chamado de campeão."
     },
     {
+      "id": "chute-games-35",
       "difficulty": "easy",
       "text": "Quantos jogadores por time tem o Valorant?",
       "answer": 5,
@@ -247,6 +282,7 @@
       "fact": "O jogo é da Riot Games."
     },
     {
+      "id": "chute-games-36",
       "difficulty": "easy",
       "text": "Quantos jogadores por time tem o Rocket League, em geral?",
       "answer": 3,
@@ -254,6 +290,7 @@
       "fact": "Os carros jogam futebol com foguetes."
     },
     {
+      "id": "chute-games-37",
       "difficulty": "medium",
       "text": "Quantos jogadores começam uma partida de Among Us, no máximo?",
       "answer": 15,
@@ -261,6 +298,7 @@
       "fact": "O número de impostores varia."
     },
     {
+      "id": "chute-games-38",
       "difficulty": "easy",
       "text": "Quantos jogadores começam uma partida de PUBG?",
       "answer": 100,
@@ -268,6 +306,7 @@
       "fact": "A ilha vai diminuindo com o tempo."
     },
     {
+      "id": "chute-games-39",
       "difficulty": "easy",
       "text": "Quantas vidas Mario tem no início do jogo clássico?",
       "answer": 3,
@@ -275,6 +314,7 @@
       "fact": "Cogumelos verdes dão vidas extras."
     },
     {
+      "id": "chute-games-40",
       "difficulty": "easy",
       "text": "Quantas moedas dão uma vida extra em Super Mario Bros.?",
       "answer": 100,
@@ -282,6 +322,7 @@
       "fact": "O som é um dos mais famosos dos games."
     },
     {
+      "id": "chute-games-41",
       "difficulty": "medium",
       "text": "Quantos anéis são necessários para Sonic entrar em uma fase especial?",
       "answer": 50,
@@ -289,6 +330,7 @@
       "fact": "Os anéis também o protegem de golpes."
     },
     {
+      "id": "chute-games-42",
       "difficulty": "easy",
       "text": "Quantas Esmeraldas do Caos existem em Sonic?",
       "answer": 7,
@@ -296,6 +338,7 @@
       "fact": "Elas o transformam em Super Sonic."
     },
     {
+      "id": "chute-games-43",
       "difficulty": "easy",
       "text": "Quantas Triforces existem em Zelda?",
       "answer": 3,
@@ -303,6 +346,7 @@
       "fact": "São Poder, Sabedoria e Coragem."
     },
     {
+      "id": "chute-games-44",
       "difficulty": "easy",
       "text": "Quantas opções de Pokémon inicial costuma haver?",
       "answer": 3,
@@ -310,6 +354,7 @@
       "fact": "Geralmente, são planta, fogo e água."
     },
     {
+      "id": "chute-games-45",
       "difficulty": "easy",
       "text": "Quantas insígnias um treinador precisa para a Liga Pokémon?",
       "answer": 8,
@@ -317,6 +362,7 @@
       "fact": "Depois, ele enfrenta a Elite dos Quatro."
     },
     {
+      "id": "chute-games-46",
       "difficulty": "medium",
       "text": "Quantos membros tem a Elite dos Quatro, na Liga Pokémon?",
       "answer": 4,
@@ -324,6 +370,7 @@
       "fact": "O campeão vem depois."
     },
     {
+      "id": "chute-games-47",
       "difficulty": "easy",
       "text": "Quantas peças tem cada forma do Tetris?",
       "answer": 4,
@@ -331,6 +378,7 @@
       "fact": "Tetris vem de \"tetra\", ou quatro em grego."
     },
     {
+      "id": "chute-games-48",
       "difficulty": "easy",
       "text": "Quantas formas diferentes de peças tem o Tetris?",
       "answer": 7,
@@ -338,6 +386,7 @@
       "fact": "Cada uma recebe uma letra."
     },
     {
+      "id": "chute-games-49",
       "difficulty": "easy",
       "text": "Quantas linhas se fazem de uma vez em um \"Tetris\"?",
       "answer": 4,
@@ -345,6 +394,7 @@
       "fact": "A jogada dá mais pontos no jogo."
     },
     {
+      "id": "chute-games-50",
       "difficulty": "medium",
       "text": "Quantos botões tem o controle do Atari 2600?",
       "answer": 1,
@@ -352,6 +402,7 @@
       "fact": "A alavanca fazia todo o resto."
     },
     {
+      "id": "chute-games-51",
       "difficulty": "medium",
       "text": "Quantos botões de ação tem o controle do Mega Drive original?",
       "answer": 3,
@@ -359,6 +410,7 @@
       "fact": "A Sega lançou um controle de seis botões depois."
     },
     {
+      "id": "chute-games-52",
       "difficulty": "medium",
       "text": "Quantos botões de ação tem o controle do NES?",
       "answer": 2,
@@ -366,6 +418,7 @@
       "fact": "São o A e o B, além do Start e Select."
     },
     {
+      "id": "chute-games-53",
       "difficulty": "medium",
       "text": "Quantos botões de ação tem o controle do Super Nintendo?",
       "answer": 4,
@@ -373,6 +426,7 @@
       "fact": "Havia ainda dois botões atrás."
     },
     {
+      "id": "chute-games-54",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o PlayStation 2?",
       "answer": 2000,
@@ -380,6 +434,7 @@
       "fact": "É o console mais vendido da história."
     },
     {
+      "id": "chute-games-55",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o PlayStation 3?",
       "answer": 2006,
@@ -387,6 +442,7 @@
       "fact": "Ele ficou famoso também como reprodutor de Blu-ray."
     },
     {
+      "id": "chute-games-56",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o PlayStation 5?",
       "answer": 2020,
@@ -394,6 +450,7 @@
       "fact": "Faltou muito na época da pandemia."
     },
     {
+      "id": "chute-games-57",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Xbox?",
       "answer": 2001,
@@ -401,6 +458,7 @@
       "fact": "Foi a estreia da Microsoft nos consoles."
     },
     {
+      "id": "chute-games-58",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Xbox 360?",
       "answer": 2005,
@@ -408,6 +466,7 @@
       "fact": "O \"anel vermelho da morte\" virou um pesadelo."
     },
     {
+      "id": "chute-games-59",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Xbox Series X?",
       "answer": 2020,
@@ -415,6 +474,7 @@
       "fact": "Ele saiu junto com o PlayStation 5."
     },
     {
+      "id": "chute-games-60",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Nintendo 64?",
       "answer": 1996,
@@ -422,6 +482,7 @@
       "fact": "Ele ainda usava cartuchos."
     },
     {
+      "id": "chute-games-61",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Nintendo DS?",
       "answer": 2004,
@@ -429,6 +490,7 @@
       "fact": "Ele tinha duas telas."
     },
     {
+      "id": "chute-games-62",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Wii?",
       "answer": 2006,
@@ -436,6 +498,7 @@
       "fact": "Ele vendeu mais de 100 milhões."
     },
     {
+      "id": "chute-games-63",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Super Nintendo?",
       "answer": 1990,
@@ -443,6 +506,7 @@
       "fact": "Ele chegou ao Brasil em 1993."
     },
     {
+      "id": "chute-games-64",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Steam Deck?",
       "answer": 2022,
@@ -450,6 +514,7 @@
       "fact": "A Valve levou os jogos de PC para um portátil."
     },
     {
+      "id": "chute-games-65",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Nintendo Switch 2?",
       "answer": 2025,
@@ -457,6 +522,7 @@
       "fact": "Ele vendeu milhões nos primeiros dias."
     },
     {
+      "id": "chute-games-66",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"The Legend of Zelda\", original?",
       "answer": 1986,
@@ -464,6 +530,7 @@
       "fact": "O cartucho era dourado."
     },
     {
+      "id": "chute-games-67",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Final Fantasy\", original?",
       "answer": 1987,
@@ -471,6 +538,7 @@
       "fact": "A empresa estava quase falindo."
     },
     {
+      "id": "chute-games-68",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Mortal Kombat\", original?",
       "answer": 1992,
@@ -478,6 +546,7 @@
       "fact": "A violência levou ao selo de classificação."
     },
     {
+      "id": "chute-games-69",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Doom\", original?",
       "answer": 1993,
@@ -485,6 +554,7 @@
       "fact": "Ele foi instalado em mais computadores que o próprio Windows 95."
     },
     {
+      "id": "chute-games-70",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Super Mario 64\"?",
       "answer": 1996,
@@ -492,6 +562,7 @@
       "fact": "Foi um marco nos jogos em 3D."
     },
     {
+      "id": "chute-games-71",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Ocarina of Time\"?",
       "answer": 1998,
@@ -499,6 +570,7 @@
       "fact": "É um dos jogos mais bem avaliados da história."
     },
     {
+      "id": "chute-games-72",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Half-Life\"?",
       "answer": 1998,
@@ -506,6 +578,7 @@
       "fact": "O protagonista não fala nada."
     },
     {
+      "id": "chute-games-73",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"The Sims\", original?",
       "answer": 2000,
@@ -513,6 +586,7 @@
       "fact": "Ele é um dos jogos de PC mais vendidos."
     },
     {
+      "id": "chute-games-74",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"GTA III\"?",
       "answer": 2001,
@@ -520,6 +594,7 @@
       "fact": "Ele mudou os jogos de mundo aberto."
     },
     {
+      "id": "chute-games-75",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Call of Duty\", original?",
       "answer": 2003,
@@ -527,6 +602,7 @@
       "fact": "O primeiro se passa na Segunda Guerra."
     },
     {
+      "id": "chute-games-76",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Halo\", original?",
       "answer": 2001,
@@ -534,6 +610,7 @@
       "fact": "Ele era exclusivo do Xbox."
     },
     {
+      "id": "chute-games-77",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Guitar Hero\", original?",
       "answer": 2005,
@@ -541,6 +618,7 @@
       "fact": "A série fez o rock voltar aos jovens."
     },
     {
+      "id": "chute-games-78",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Portal\"?",
       "answer": 2007,
@@ -548,6 +626,7 @@
       "fact": "O famoso bolo é uma mentira."
     },
     {
+      "id": "chute-games-79",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Angry Birds\"?",
       "answer": 2009,
@@ -555,6 +634,7 @@
       "fact": "Ele foi baixado bilhões de vezes."
     },
     {
+      "id": "chute-games-80",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Dark Souls\"?",
       "answer": 2011,
@@ -562,6 +642,7 @@
       "fact": "Ele popularizou um novo gênero."
     },
     {
+      "id": "chute-games-81",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Skyrim\"?",
       "answer": 2011,
@@ -569,6 +650,7 @@
       "fact": "A data de lançamento foi 11/11/11."
     },
     {
+      "id": "chute-games-82",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"The Witcher 3\"?",
       "answer": 2015,
@@ -576,6 +658,7 @@
       "fact": "Ele ganhou muitos prêmios de jogo do ano."
     },
     {
+      "id": "chute-games-83",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Pokémon GO\"?",
       "answer": 2016,
@@ -583,6 +666,7 @@
       "fact": "Ele atraiu multidões para as ruas."
     },
     {
+      "id": "chute-games-84",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Red Dead Redemption 2\"?",
       "answer": 2018,
@@ -590,6 +674,7 @@
       "fact": "Ele custou cerca de 500 milhões de dólares."
     },
     {
+      "id": "chute-games-85",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Elden Ring\"?",
       "answer": 2022,
@@ -597,6 +682,7 @@
       "fact": "Ele vendeu mais de 20 milhões de cópias."
     },
     {
+      "id": "chute-games-86",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Baldur's Gate 3\"?",
       "answer": 2023,
@@ -604,6 +690,7 @@
       "fact": "Ele ganhou o prêmio de jogo do ano."
     },
     {
+      "id": "chute-games-87",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"The Last of Us\", original?",
       "answer": 2013,
@@ -611,6 +698,7 @@
       "fact": "A série da HBO estreou em 2023."
     },
     {
+      "id": "chute-games-88",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Cyberpunk 2077\"?",
       "answer": 2020,
@@ -618,6 +706,7 @@
       "fact": "O lançamento cheio de erros gerou muitas críticas."
     },
     {
+      "id": "chute-games-89",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Flappy Bird\"?",
       "answer": 2013,
@@ -625,6 +714,7 @@
       "fact": "O criador disse que tirou do ar porque o jogo era viciante."
     },
     {
+      "id": "chute-games-90",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Candy Crush\"?",
       "answer": 2012,
@@ -632,6 +722,7 @@
       "fact": "Ele foi um dos jogos de celular mais lucrativos."
     },
     {
+      "id": "chute-games-91",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Clash of Clans\"?",
       "answer": 2012,
@@ -639,6 +730,7 @@
       "fact": "A Supercell é da Finlândia."
     },
     {
+      "id": "chute-games-92",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Roblox\"?",
       "answer": 2006,
@@ -646,6 +738,7 @@
       "fact": "O jogo é uma plataforma feita pelos próprios usuários."
     },
     {
+      "id": "chute-games-93",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Rocket League\"?",
       "answer": 2015,
@@ -653,6 +746,7 @@
       "fact": "O jogo mistura carros e futebol."
     },
     {
+      "id": "chute-games-94",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Zelda: Breath of the Wild\"?",
       "answer": 2017,
@@ -660,6 +754,7 @@
       "fact": "Ele saiu junto com o Nintendo Switch."
     },
     {
+      "id": "chute-games-95",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Mario Kart\", o primeiro?",
       "answer": 1992,
@@ -667,6 +762,7 @@
       "fact": "Foi lançado para o Super Nintendo."
     },
     {
+      "id": "chute-games-96",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Sonic Mania\"?",
       "answer": 2017,
@@ -674,6 +770,7 @@
       "fact": "Foi feito por fãs da série."
     },
     {
+      "id": "chute-games-97",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Wii Sports\"?",
       "answer": 2006,
@@ -681,6 +778,7 @@
       "fact": "Ele vinha junto com o console."
     },
     {
+      "id": "chute-games-98",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Bloodborne\"?",
       "answer": 2015,
@@ -688,6 +786,7 @@
       "fact": "Só saiu para o PlayStation 4."
     },
     {
+      "id": "chute-games-99",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Hollow Knight\"?",
       "answer": 2017,
@@ -695,6 +794,7 @@
       "fact": "Foi feito por uma equipe de três pessoas na Austrália."
     },
     {
+      "id": "chute-games-100",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Stardew Valley\"?",
       "answer": 2016,
@@ -702,6 +802,7 @@
       "fact": "Uma só pessoa fez o jogo todo."
     },
     {
+      "id": "chute-games-101",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Undertale\"?",
       "answer": 2015,
@@ -709,6 +810,7 @@
       "fact": "O autor é Toby Fox."
     },
     {
+      "id": "chute-games-102",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Terraria\"?",
       "answer": 2011,
@@ -716,6 +818,7 @@
       "fact": "Muitos o chamam de \"Minecraft em 2D\"."
     },
     {
+      "id": "chute-games-103",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Overwatch\", original?",
       "answer": 2016,
@@ -723,6 +826,7 @@
       "fact": "Ele usa muitos personagens com habilidades distintas."
     },
     {
+      "id": "chute-games-104",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Valorant\"?",
       "answer": 2020,
@@ -730,6 +834,7 @@
       "fact": "Foi lançado pela Riot Games."
     },
     {
+      "id": "chute-games-105",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Genshin Impact\"?",
       "answer": 2020,
@@ -737,6 +842,7 @@
       "fact": "A empresa chinesa faturou muito com ele."
     },
     {
+      "id": "chute-games-106",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Hades\", original?",
       "answer": 2020,
@@ -744,6 +850,7 @@
       "fact": "Ele ganhou um prêmio na Game Awards."
     },
     {
+      "id": "chute-games-107",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Palworld\"?",
       "answer": 2024,
@@ -751,6 +858,7 @@
       "fact": "Ele vendeu milhões nos primeiros dias."
     },
     {
+      "id": "chute-games-108",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Dota 2\"?",
       "answer": 2013,
@@ -758,6 +866,7 @@
       "fact": "Ele nasceu de um mod de Warcraft III."
     },
     {
+      "id": "chute-games-109",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Counter-Strike 2\"?",
       "answer": 2023,
@@ -765,6 +874,7 @@
       "fact": "Ele substituiu o CS:GO."
     },
     {
+      "id": "chute-games-110",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Tomb Raider\", original?",
       "answer": 1996,
@@ -772,6 +882,7 @@
       "fact": "Lara Croft virou uma estrela."
     },
     {
+      "id": "chute-games-111",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Crash Bandicoot\", original?",
       "answer": 1996,
@@ -779,6 +890,7 @@
       "fact": "Ele foi o mascote informal do primeiro PlayStation."
     },
     {
+      "id": "chute-games-112",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Resident Evil\", original?",
       "answer": 1996,
@@ -786,6 +898,7 @@
       "fact": "As frases dubladas são engraçadas até hoje."
     },
     {
+      "id": "chute-games-113",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Metal Gear Solid\", original?",
       "answer": 1998,
@@ -793,6 +906,7 @@
       "fact": "Foi um dos jogos de PlayStation mais marcantes."
     },
     {
+      "id": "chute-games-114",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Silent Hill\", original?",
       "answer": 1999,
@@ -800,6 +914,7 @@
       "fact": "A neblina escondia as limitações do console."
     },
     {
+      "id": "chute-games-115",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"God of War\", original?",
       "answer": 2005,
@@ -807,6 +922,7 @@
       "fact": "Ele foi um dos maiores do PlayStation 2."
     },
     {
+      "id": "chute-games-116",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Assassin's Creed\", original?",
       "answer": 2007,
@@ -814,6 +930,7 @@
       "fact": "Ele se passa na Terra Santa."
     },
     {
+      "id": "chute-games-117",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Uncharted\", original?",
       "answer": 2007,
@@ -821,6 +938,7 @@
       "fact": "Nathan Drake virou o rosto do PlayStation 3."
     },
     {
+      "id": "chute-games-118",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Mass Effect\", original?",
       "answer": 2007,
@@ -828,6 +946,7 @@
       "fact": "O jogo tem escolhas que mudam a história."
     },
     {
+      "id": "chute-games-119",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Space Invaders\"?",
       "answer": 1978,
@@ -835,6 +954,7 @@
       "fact": "Ele fez faltar moedas de 100 ienes no Japão."
     },
     {
+      "id": "chute-games-120",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Asteroids\"?",
       "answer": 1979,
@@ -842,6 +962,7 @@
       "fact": "Os jogadores o preferiram ao Space Invaders."
     },
     {
+      "id": "chute-games-121",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Donkey Kong\", original?",
       "answer": 1981,
@@ -849,6 +970,7 @@
       "fact": "Foi o primeiro em que Mario apareceu."
     },
     {
+      "id": "chute-games-122",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Frogger\"?",
       "answer": 1981,
@@ -856,6 +978,7 @@
       "fact": "Um sapo atravessa uma rua movimentada."
     },
     {
+      "id": "chute-games-123",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Galaga\"?",
       "answer": 1981,
@@ -863,6 +986,7 @@
       "fact": "Ele é uma evolução de Space Invaders."
     },
     {
+      "id": "chute-games-124",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"River Raid\"?",
       "answer": 1982,
@@ -870,6 +994,7 @@
       "fact": "Carol Shaw foi uma das primeiras mulheres a fazer games."
     },
     {
+      "id": "chute-games-125",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Pitfall!\"?",
       "answer": 1982,
@@ -877,6 +1002,7 @@
       "fact": "Foi um dos primeiros jogos de plataforma."
     },
     {
+      "id": "chute-games-126",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Blizzard?",
       "answer": 1991,
@@ -884,6 +1010,7 @@
       "fact": "No início, ela se chamava Silicon & Synapse."
     },
     {
+      "id": "chute-games-127",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Valve?",
       "answer": 1996,
@@ -891,6 +1018,7 @@
       "fact": "Dois ex-funcionários da Microsoft a fundaram."
     },
     {
+      "id": "chute-games-128",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Steam?",
       "answer": 2003,
@@ -898,6 +1026,7 @@
       "fact": "Começou como plataforma de atualização para jogos da Valve."
     },
     {
+      "id": "chute-games-129",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Rockstar Games?",
       "answer": 1998,
@@ -905,6 +1034,7 @@
       "fact": "Foi fundada em Nova York."
     },
     {
+      "id": "chute-games-130",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Epic Games?",
       "answer": 1991,
@@ -912,6 +1042,7 @@
       "fact": "O nome era Potomac Computer Systems."
     },
     {
+      "id": "chute-games-131",
       "difficulty": "medium",
       "text": "Em que ano foi criada a EA?",
       "answer": 1982,
@@ -919,6 +1050,7 @@
       "fact": "O fundador é Trip Hawkins."
     },
     {
+      "id": "chute-games-132",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Ubisoft?",
       "answer": 1986,
@@ -926,6 +1058,7 @@
       "fact": "Cinco irmãos a fundaram na França."
     },
     {
+      "id": "chute-games-133",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Capcom?",
       "answer": 1979,
@@ -933,6 +1066,7 @@
       "fact": "O nome vem de \"Capsule Computers\"."
     },
     {
+      "id": "chute-games-134",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Sega?",
       "answer": 1960,
@@ -940,6 +1074,7 @@
       "fact": "O nome vem de \"Service Games\"."
     },
     {
+      "id": "chute-games-135",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Square Enix, com a fusão?",
       "answer": 2003,
@@ -947,6 +1082,7 @@
       "fact": "Square e Enix foram duas empresas rivais."
     },
     {
+      "id": "chute-games-136",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Discord?",
       "answer": 2015,
@@ -954,6 +1090,7 @@
       "fact": "Ele foi feito para jogadores."
     },
     {
+      "id": "chute-games-137",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a E3 pela primeira vez?",
       "answer": 1995,
@@ -961,6 +1098,7 @@
       "fact": "Foi uma feira de games muito importante."
     },
     {
+      "id": "chute-games-138",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a última E3?",
       "answer": 2019,
@@ -968,6 +1106,7 @@
       "fact": "O evento foi cancelado de forma definitiva em 2023."
     },
     {
+      "id": "chute-games-139",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o primeiro The Game Awards?",
       "answer": 2014,
@@ -975,6 +1114,7 @@
       "fact": "Geoff Keighley é o apresentador."
     },
     {
+      "id": "chute-games-140",
       "difficulty": "easy",
       "text": "Em que ano foi criado o Game Pass?",
       "answer": 2017,
@@ -982,6 +1122,7 @@
       "fact": "Ele custa como uma assinatura de filmes."
     },
     {
+      "id": "chute-games-141",
       "difficulty": "medium",
       "text": "Em que ano a Sega deixou de fazer consoles?",
       "answer": 2001,
@@ -989,6 +1130,7 @@
       "fact": "Ela virou só uma produtora de jogos."
     },
     {
+      "id": "chute-games-142",
       "difficulty": "medium",
       "text": "Quantos controles podem ser ligados ao Super Nintendo, sem adaptador?",
       "answer": 2,
@@ -996,6 +1138,7 @@
       "fact": "O multitap permitia mais jogadores."
     },
     {
+      "id": "chute-games-143",
       "difficulty": "medium",
       "text": "Quantos controles podem ser ligados ao Nintendo 64?",
       "answer": 4,
@@ -1003,6 +1146,7 @@
       "fact": "Isso foi muito bom para jogos multijogador."
     },
     {
+      "id": "chute-games-144",
       "difficulty": "medium",
       "text": "Quantas unidades do PlayStation 1 foram vendidas, em milhões?",
       "answer": 102,
@@ -1010,6 +1154,7 @@
       "fact": "Foi o primeiro console a passar de 100 milhões."
     },
     {
+      "id": "chute-games-145",
       "difficulty": "medium",
       "text": "Quantas unidades do PlayStation 3 foram vendidas, em milhões?",
       "answer": 87,
@@ -1017,6 +1162,7 @@
       "fact": "Ele foi vendido a princípio com prejuízo para a Sony."
     },
     {
+      "id": "chute-games-146",
       "difficulty": "medium",
       "text": "Quantas unidades do PlayStation 4 foram vendidas, em milhões?",
       "answer": 117,
@@ -1024,6 +1170,7 @@
       "fact": "Foi o segundo mais vendido da marca."
     },
     {
+      "id": "chute-games-147",
       "difficulty": "medium",
       "text": "Quantas unidades do PlayStation 5 foram vendidas, até 2024, em milhões?",
       "answer": 65,
@@ -1031,6 +1178,7 @@
       "fact": "Sua produção sofreu muito no começo."
     },
     {
+      "id": "chute-games-148",
       "difficulty": "medium",
       "text": "Quantas unidades do Xbox 360 foram vendidas, em milhões?",
       "answer": 84,
@@ -1038,6 +1186,7 @@
       "fact": "É o mais vendido da Microsoft."
     },
     {
+      "id": "chute-games-149",
       "difficulty": "medium",
       "text": "Quantas unidades do Xbox original foram vendidas, em milhões?",
       "answer": 24,
@@ -1045,6 +1194,7 @@
       "fact": "A Microsoft teve prejuízo enorme no início."
     },
     {
+      "id": "chute-games-150",
       "difficulty": "medium",
       "text": "Quantas unidades do Xbox One foram vendidas, aproximadamente, em milhões?",
       "answer": 58,
@@ -1052,6 +1202,7 @@
       "fact": "A Microsoft parou de divulgar números."
     },
     {
+      "id": "chute-games-151",
       "difficulty": "medium",
       "text": "Quantas unidades do Wii foram vendidas, em milhões?",
       "answer": 101,
@@ -1059,6 +1210,7 @@
       "fact": "Foi muito popular entre pessoas mais velhas."
     },
     {
+      "id": "chute-games-152",
       "difficulty": "medium",
       "text": "Quantas unidades do GameCube foram vendidas, em milhões?",
       "answer": 21,
@@ -1066,6 +1218,7 @@
       "fact": "Ele tinha discos menores."
     },
     {
+      "id": "chute-games-153",
       "difficulty": "medium",
       "text": "Quantas unidades do Nintendo 64 foram vendidas, em milhões?",
       "answer": 33,
@@ -1073,6 +1226,7 @@
       "fact": "A Nintendo perdeu a liderança para a Sony."
     },
     {
+      "id": "chute-games-154",
       "difficulty": "medium",
       "text": "Quantas unidades do Super Nintendo foram vendidas, em milhões?",
       "answer": 49,
@@ -1080,6 +1234,7 @@
       "fact": "Sua rivalidade com o Mega Drive foi lendária."
     },
     {
+      "id": "chute-games-155",
       "difficulty": "medium",
       "text": "Quantas unidades do NES foram vendidas, em milhões?",
       "answer": 62,
@@ -1087,6 +1242,7 @@
       "fact": "Ele salvou os videogames depois da crise de 1983."
     },
     {
+      "id": "chute-games-156",
       "difficulty": "medium",
       "text": "Quantas unidades do Nintendo Switch foram vendidas, até 2024, em milhões?",
       "answer": 150,
@@ -1094,6 +1250,7 @@
       "fact": "É o console mais vendido da Nintendo."
     },
     {
+      "id": "chute-games-157",
       "difficulty": "medium",
       "text": "Quantas unidades do Nintendo 3DS foram vendidas, em milhões?",
       "answer": 75,
@@ -1101,6 +1258,7 @@
       "fact": "Ele fazia imagens em 3D sem óculos."
     },
     {
+      "id": "chute-games-158",
       "difficulty": "medium",
       "text": "Quantas unidades do PSP foram vendidas, em milhões?",
       "answer": 80,
@@ -1108,6 +1266,7 @@
       "fact": "É o portátil mais vendido da Sony."
     },
     {
+      "id": "chute-games-159",
       "difficulty": "medium",
       "text": "Quantas unidades do Mega Drive foram vendidas, em milhões?",
       "answer": 30,
@@ -1115,6 +1274,7 @@
       "fact": "Fez muito sucesso no Brasil."
     },
     {
+      "id": "chute-games-160",
       "difficulty": "medium",
       "text": "Quantas unidades do Dreamcast foram vendidas, em milhões?",
       "answer": 9,
@@ -1122,6 +1282,7 @@
       "fact": "A Sega abandonou os consoles depois dele."
     },
     {
+      "id": "chute-games-161",
       "difficulty": "medium",
       "text": "Quantas unidades do Sega Saturn foram vendidas, em milhões?",
       "answer": 9,
@@ -1129,6 +1290,7 @@
       "fact": "Foi lançado de surpresa nos EUA."
     },
     {
+      "id": "chute-games-162",
       "difficulty": "medium",
       "text": "Quantas unidades do Atari 2600 foram vendidas, em milhões?",
       "answer": 30,
@@ -1136,6 +1298,7 @@
       "fact": "Ele ficou no mercado por muitos anos."
     },
     {
+      "id": "chute-games-163",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Tetris\", somando todas as versões, em milhões, aproximadamente?",
       "answer": 520,
@@ -1143,6 +1306,7 @@
       "fact": "Ele foi lançado em dezenas de plataformas."
     },
     {
+      "id": "chute-games-164",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Wii Sports\", em milhões?",
       "answer": 82,
@@ -1150,6 +1314,7 @@
       "fact": "A maior parte vinha com o console."
     },
     {
+      "id": "chute-games-165",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"PUBG\", em milhões?",
       "answer": 75,
@@ -1157,6 +1322,7 @@
       "fact": "É o mais vendido em PC."
     },
     {
+      "id": "chute-games-166",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Mario Kart 8 Deluxe\", em milhões, aproximadamente?",
       "answer": 65,
@@ -1164,6 +1330,7 @@
       "fact": "É o mais vendido no Nintendo Switch."
     },
     {
+      "id": "chute-games-167",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Red Dead Redemption 2\", em milhões, aproximadamente?",
       "answer": 70,
@@ -1171,6 +1338,7 @@
       "fact": "Foi muito caro de produzir."
     },
     {
+      "id": "chute-games-168",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"The Witcher 3\", em milhões, aproximadamente?",
       "answer": 60,
@@ -1178,6 +1346,7 @@
       "fact": "A CD Projekt fez dele um enorme sucesso."
     },
     {
+      "id": "chute-games-169",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Terraria\", em milhões, aproximadamente?",
       "answer": 60,
@@ -1185,6 +1354,7 @@
       "fact": "A equipe o atualizou por mais de 10 anos."
     },
     {
+      "id": "chute-games-170",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Elden Ring\", em milhões, até 2025?",
       "answer": 30,
@@ -1192,6 +1362,7 @@
       "fact": "A expansão também fez muito sucesso."
     },
     {
+      "id": "chute-games-171",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Skyrim\", em milhões, aproximadamente?",
       "answer": 60,
@@ -1199,6 +1370,7 @@
       "fact": "Foi lançado em quase todo tipo de console."
     },
     {
+      "id": "chute-games-172",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Super Mario Bros.\", original, em milhões?",
       "answer": 40,
@@ -1206,6 +1378,7 @@
       "fact": "Ele vinha junto com o console."
     },
     {
+      "id": "chute-games-173",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Pokémon Red e Blue\", em milhões?",
       "answer": 31,
@@ -1213,6 +1386,7 @@
       "fact": "Foram lançados em 1996 no Japão."
     },
     {
+      "id": "chute-games-174",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Stardew Valley\", em milhões, até 2024?",
       "answer": 41,
@@ -1220,6 +1394,7 @@
       "fact": "Foi feito por uma só pessoa."
     },
     {
+      "id": "chute-games-175",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Cyberpunk 2077\", até 2024, em milhões?",
       "answer": 30,
@@ -1227,6 +1402,7 @@
       "fact": "Depois de corrigido, recuperou seu prestígio."
     },
     {
+      "id": "chute-games-176",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Hogwarts Legacy\", até 2024, em milhões?",
       "answer": 30,
@@ -1234,6 +1410,7 @@
       "fact": "Foi o mais vendido de 2023."
     },
     {
+      "id": "chute-games-177",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu \"Baldur's Gate 3\", até 2024, em milhões?",
       "answer": 15,
@@ -1241,6 +1418,7 @@
       "fact": "A Larian continuou independente."
     },
     {
+      "id": "chute-games-178",
       "difficulty": "medium",
       "text": "Quanto arrecadou \"GTA V\", até 2023, em bilhões de dólares?",
       "answer": 8,
@@ -1248,6 +1426,7 @@
       "fact": "É o produto de entretenimento mais lucrativo da história."
     },
     {
+      "id": "chute-games-179",
       "difficulty": "medium",
       "text": "Quanto custou \"GTA V\" para ser feito, em milhões de dólares?",
       "answer": 265,
@@ -1255,6 +1434,7 @@
       "fact": "Foi um dos jogos mais caros já feitos."
     },
     {
+      "id": "chute-games-180",
       "difficulty": "medium",
       "text": "Quanto custou \"Red Dead Redemption 2\", em milhões de dólares, aproximadamente?",
       "answer": 500,
@@ -1262,6 +1442,7 @@
       "fact": "Foram oito anos de desenvolvimento."
     },
     {
+      "id": "chute-games-181",
       "difficulty": "medium",
       "text": "Quanto custou \"Cyberpunk 2077\", em milhões de dólares, aproximadamente?",
       "answer": 430,
@@ -1269,6 +1450,7 @@
       "fact": "Com a expansão, chegou a isso."
     },
     {
+      "id": "chute-games-182",
       "difficulty": "medium",
       "text": "Quanto faturou \"Pokémon GO\" em receita total, até 2024, em bilhões de dólares?",
       "answer": 8,
@@ -1276,6 +1458,7 @@
       "fact": "A Niantic foi vendida em 2025."
     },
     {
+      "id": "chute-games-183",
       "difficulty": "medium",
       "text": "Quantas pessoas chegaram a jogar Fortnite em um único concerto de Travis Scott, em milhões?",
       "answer": 12.3,
@@ -1283,6 +1466,7 @@
       "fact": "O show aconteceu dentro do jogo, em 2020."
     },
     {
+      "id": "chute-games-184",
       "difficulty": "medium",
       "text": "Quantas pessoas chegaram a jogar Roblox por mês, em milhões, em 2023?",
       "answer": 300,
@@ -1290,6 +1474,7 @@
       "fact": "A maioria dos jogadores é formada por crianças."
     },
     {
+      "id": "chute-games-185",
       "difficulty": "medium",
       "text": "Quantas pessoas no mundo jogam videogames, em bilhões, em 2023?",
       "answer": 3.3,
@@ -1297,6 +1482,7 @@
       "fact": "Quase metade do planeta."
     },
     {
+      "id": "chute-games-186",
       "difficulty": "medium",
       "text": "Quanto o mercado de games movimenta por ano, em bilhões de dólares?",
       "answer": 184,
@@ -1304,6 +1490,7 @@
       "fact": "É mais que o cinema e a música somados."
     },
     {
+      "id": "chute-games-187",
       "difficulty": "medium",
       "text": "Quantas peças tem um dominó tradicional?",
       "answer": 28,
@@ -1311,6 +1498,7 @@
       "fact": "O jogo veio da China, passando pela Itália."
     },
     {
+      "id": "chute-games-188",
       "difficulty": "easy",
       "text": "Qual é a soma das duas faces de um dado que ficam opostas?",
       "answer": 7,
@@ -1318,6 +1506,7 @@
       "fact": "Assim, os dados são bem equilibrados."
     },
     {
+      "id": "chute-games-189",
       "difficulty": "hard",
       "text": "Quantas propriedades tem o Monopoly tradicional, incluindo estações?",
       "answer": 28,
@@ -1325,6 +1514,7 @@
       "fact": "O jogo é originalmente de Atlantic City."
     },
     {
+      "id": "chute-games-190",
       "difficulty": "easy",
       "text": "Quantos peões cada jogador tem no início do xadrez?",
       "answer": 8,
@@ -1332,6 +1522,7 @@
       "fact": "Eles podem virar uma rainha ao chegar ao outro lado."
     },
     {
+      "id": "chute-games-191",
       "difficulty": "medium",
       "text": "Qual é o valor da nota mais alta do Banco Imobiliário tradicional, em dinheiro do jogo?",
       "answer": 500,
@@ -1339,6 +1530,7 @@
       "fact": "Ela é laranja, em muitas versões."
     },
     {
+      "id": "chute-games-192",
       "difficulty": "medium",
       "text": "Quantos territórios tem o jogo War?",
       "answer": 42,
@@ -1346,6 +1538,7 @@
       "fact": "Ele foi lançado no Brasil em 1972."
     },
     {
+      "id": "chute-games-193",
       "difficulty": "medium",
       "text": "Quantos continentes tem o jogo War, no tabuleiro?",
       "answer": 6,
@@ -1353,6 +1546,7 @@
       "fact": "A Oceania é um dos mais fáceis de defender."
     },
     {
+      "id": "chute-games-194",
       "difficulty": "medium",
       "text": "Quantos personagens tem o Detetive, em sua versão clássica?",
       "answer": 6,
@@ -1360,6 +1554,7 @@
       "fact": "A partida se passa em uma mansão."
     },
     {
+      "id": "chute-games-195",
       "difficulty": "medium",
       "text": "Quantas armas tem o jogo Detetive, em sua versão clássica?",
       "answer": 6,
@@ -1367,6 +1562,7 @@
       "fact": "A corda e o castiçal são as mais conhecidas."
     },
     {
+      "id": "chute-games-196",
       "difficulty": "medium",
       "text": "Quantos cômodos tem a mansão do Detetive, em sua versão clássica?",
       "answer": 9,
@@ -1374,6 +1570,7 @@
       "fact": "O jogo foi criado na Inglaterra em 1948."
     },
     {
+      "id": "chute-games-197",
       "difficulty": "medium",
       "text": "Quantas cartas tem um baralho de UNO?",
       "answer": 108,
@@ -1381,6 +1578,7 @@
       "fact": "O jogo foi criado em 1971."
     },
     {
+      "id": "chute-games-198",
       "difficulty": "medium",
       "text": "Quantas cartas tem o baralho do truco, sem os oitos, noves e dez?",
       "answer": 40,
@@ -1388,6 +1586,7 @@
       "fact": "O jogo é muito popular em São Paulo e no Sul."
     },
     {
+      "id": "chute-games-199",
       "difficulty": "medium",
       "text": "Quantas casas tem o tabuleiro de Banco Imobiliário, em volta?",
       "answer": 40,
@@ -1395,6 +1594,7 @@
       "fact": "A primeira é o \"Ponto de Partida\"."
     },
     {
+      "id": "chute-games-200",
       "difficulty": "medium",
       "text": "Quantos cubinhos tem um cubo mágico padrão, visíveis?",
       "answer": 26,
@@ -1402,6 +1602,7 @@
       "fact": "Ele foi criado por Ernő Rubik em 1974."
     },
     {
+      "id": "chute-games-201",
       "difficulty": "medium",
       "text": "Quantas combinações tem um cubo mágico, em quintilhões?",
       "answer": 43,
@@ -1409,6 +1610,7 @@
       "fact": "Todas podem ser resolvidas em até 20 movimentos."
     },
     {
+      "id": "chute-games-202",
       "difficulty": "medium",
       "text": "Em quantos movimentos, no máximo, qualquer cubo mágico pode ser resolvido?",
       "answer": 20,
@@ -1416,6 +1618,7 @@
       "fact": "O número é chamado de \"Número de Deus\"."
     },
     {
+      "id": "chute-games-203",
       "difficulty": "medium",
       "text": "Qual é o recorde mundial de resolução do cubo mágico, em segundos, em 2023?",
       "answer": 3.13,
@@ -1423,6 +1626,7 @@
       "fact": "Max Park fez a marca nos EUA."
     },
     {
+      "id": "chute-games-204",
       "difficulty": "medium",
       "text": "Em que ano foi criado o cubo mágico?",
       "answer": 1974,
@@ -1430,6 +1634,7 @@
       "fact": "O húngaro Ernő Rubik queria ensinar geometria a estudantes."
     },
     {
+      "id": "chute-games-205",
       "difficulty": "medium",
       "text": "Quantos cubos mágicos foram vendidos, em milhões, aproximadamente?",
       "answer": 450,
@@ -1437,6 +1642,7 @@
       "fact": "Muitas pessoas o colocam entre os brinquedos mais vendidos."
     },
     {
+      "id": "chute-games-206",
       "difficulty": "medium",
       "text": "Quantas peças tem um jogo de Jenga, no início?",
       "answer": 54,
@@ -1444,6 +1650,7 @@
       "fact": "A torre tem 18 andares de 3 peças."
     },
     {
+      "id": "chute-games-207",
       "difficulty": "medium",
       "text": "Quantas peças tem um jogo de Lego médio, em uma caixa do Coliseu?",
       "answer": 9036,
@@ -1451,6 +1658,7 @@
       "fact": "Ele foi o maior conjunto da marca por anos."
     },
     {
+      "id": "chute-games-208",
       "difficulty": "medium",
       "text": "Quantos blocos de LEGO são produzidos por ano, em bilhões?",
       "answer": 110,
@@ -1458,6 +1666,7 @@
       "fact": "É um dos brinquedos mais produzidos."
     },
     {
+      "id": "chute-games-209",
       "difficulty": "medium",
       "text": "Quantos dados são usados no Yahtzee, em uma jogada?",
       "answer": 5,
@@ -1465,6 +1674,7 @@
       "fact": "O jogo é também chamado de General."
     },
     {
+      "id": "chute-games-210",
       "difficulty": "medium",
       "text": "Quantos dados são usados em uma partida de War, em cada ataque, no máximo?",
       "answer": 3,
@@ -1472,6 +1682,7 @@
       "fact": "A defesa usa outros três dados."
     },
     {
+      "id": "chute-games-211",
       "difficulty": "medium",
       "text": "Quantas faces tem o dado mais usado em RPG, o d20?",
       "answer": 20,
@@ -1479,6 +1690,7 @@
       "fact": "É um icosaedro, um sólido de Platão."
     },
     {
+      "id": "chute-games-212",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Dungeons & Dragons?",
       "answer": 1974,
@@ -1486,6 +1698,7 @@
       "fact": "Gary Gygax e Dave Arneson o criaram."
     },
     {
+      "id": "chute-games-213",
       "difficulty": "medium",
       "text": "Em que ano foi criado o jogo de tabuleiro Catan?",
       "answer": 1995,
@@ -1493,6 +1706,7 @@
       "fact": "Ele já foi traduzido para mais de 30 línguas."
     },
     {
+      "id": "chute-games-214",
       "difficulty": "medium",
       "text": "Em que ano foi criado o jogo de cartas UNO?",
       "answer": 1971,
@@ -1500,6 +1714,7 @@
       "fact": "Foi criado por um barbeiro de Ohio."
     },
     {
+      "id": "chute-games-215",
       "difficulty": "medium",
       "text": "Em que ano foi criado o jogo War no Brasil?",
       "answer": 1972,
@@ -1507,6 +1722,7 @@
       "fact": "A fabricante é a Grow."
     },
     {
+      "id": "chute-games-216",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Grow?",
       "answer": 1972,
@@ -1514,6 +1730,7 @@
       "fact": "Ela foi fundada por quatro amigos."
     },
     {
+      "id": "chute-games-217",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Cluedo, jogo que deu origem ao Detetive?",
       "answer": 1948,
@@ -1521,6 +1738,7 @@
       "fact": "Anthony Pratt, um inglês, criou o jogo."
     },
     {
+      "id": "chute-games-218",
       "difficulty": "medium",
       "text": "Quanto foi vendida uma carta de Magic, o Black Lotus, em dólares?",
       "answer": 540000,
@@ -1528,6 +1746,7 @@
       "fact": "É uma das cartas mais valiosas do mundo."
     },
     {
+      "id": "chute-games-219",
       "difficulty": "medium",
       "text": "Quanto foi vendida a carta de Pokémon Pikachu Illustrator, em milhões de dólares?",
       "answer": 5.3,
@@ -1535,6 +1754,7 @@
       "fact": "Logan Paul a comprou em 2021."
     },
     {
+      "id": "chute-games-220",
       "difficulty": "medium",
       "text": "Quanto foi vendida uma cópia lacrada de \"Super Mario 64\", em milhões de dólares?",
       "answer": 1.56,
@@ -1542,6 +1762,7 @@
       "fact": "Foi vendida em 2021."
     },
     {
+      "id": "chute-games-221",
       "difficulty": "medium",
       "text": "Quanto foi vendida uma cópia lacrada de \"Super Mario Bros.\", em milhões de dólares, em 2021?",
       "answer": 2,
@@ -1549,6 +1770,7 @@
       "fact": "Foi um recorde na época."
     },
     {
+      "id": "chute-games-222",
       "difficulty": "medium",
       "text": "Quanto foi vendida uma cópia de \"Zelda\", de 1987, em dólares, em 2021?",
       "answer": 870000,
@@ -1556,6 +1778,7 @@
       "fact": "Era um cartucho lacrado."
     },
     {
+      "id": "chute-games-223",
       "difficulty": "medium",
       "text": "Quanto o jogo Mario Kart Wii vendeu, em milhões, aproximadamente?",
       "answer": 37,
@@ -1563,6 +1786,7 @@
       "fact": "Ele vinha com um volante de plástico."
     },
     {
+      "id": "chute-games-224",
       "difficulty": "medium",
       "text": "Qual é o recorde mundial de \"Super Mario Bros.\" em speedrun, em minutos, aproximadamente?",
       "answer": 4.9,
@@ -1570,6 +1794,7 @@
       "fact": "Hoje, os recordes são medidos em milésimos de segundo."
     },
     {
+      "id": "chute-games-225",
       "difficulty": "medium",
       "text": "Qual é o tempo do recorde de Ocarina of Time em speedrun, aproximadamente, em minutos?",
       "answer": 9,
@@ -1577,6 +1802,7 @@
       "fact": "Os jogadores usam muitos atalhos e erros do jogo."
     },
     {
+      "id": "chute-games-226",
       "difficulty": "medium",
       "text": "Qual é o recorde de \"Super Mario 64\" em 120 estrelas, em horas, aproximadamente?",
       "answer": 1.6,
@@ -1584,6 +1810,7 @@
       "fact": "O recordista é Cheese, com o tempo de 1h35."
     },
     {
+      "id": "chute-games-227",
       "difficulty": "medium",
       "text": "Qual é o tempo aproximado para zerar The Witcher 3 por completo, em horas?",
       "answer": 170,
@@ -1591,6 +1818,7 @@
       "fact": "As expansões elevam ainda mais o tempo."
     },
     {
+      "id": "chute-games-228",
       "difficulty": "medium",
       "text": "Qual é o tempo aproximado para zerar Elden Ring por completo, em horas?",
       "answer": 130,
@@ -1598,6 +1826,7 @@
       "fact": "É um mundo muito grande."
     },
     {
+      "id": "chute-games-229",
       "difficulty": "medium",
       "text": "Qual é o tempo aproximado para zerar Baldur's Gate 3 por completo, em horas?",
       "answer": 140,
@@ -1605,6 +1834,7 @@
       "fact": "As escolhas mudam muito a história."
     },
     {
+      "id": "chute-games-230",
       "difficulty": "medium",
       "text": "Qual é o tempo aproximado para zerar Portal, em horas?",
       "answer": 3,
@@ -1612,6 +1842,7 @@
       "fact": "Ele é curto, mas muito marcante."
     },
     {
+      "id": "chute-games-231",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mapa de GTA V, em km²?",
       "answer": 81,
@@ -1619,6 +1850,7 @@
       "fact": "Ele foi um dos maiores em seu lançamento."
     },
     {
+      "id": "chute-games-232",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mapa de Red Dead Redemption 2, em km²?",
       "answer": 75,
@@ -1626,6 +1858,7 @@
       "fact": "O mapa é cheio de detalhes."
     },
     {
+      "id": "chute-games-233",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mapa de Skyrim, em km²?",
       "answer": 37,
@@ -1633,6 +1866,7 @@
       "fact": "Parece bem maior por causa das montanhas."
     },
     {
+      "id": "chute-games-234",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mapa de Breath of the Wild, em km²?",
       "answer": 84,
@@ -1640,6 +1874,7 @@
       "fact": "Ele é bem detalhado."
     },
     {
+      "id": "chute-games-235",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mundo de Minecraft, em km por lado, antes do limite?",
       "answer": 60000,
@@ -1647,6 +1882,7 @@
       "fact": "Dá um mundo muito maior do que a Terra."
     },
     {
+      "id": "chute-games-236",
       "difficulty": "medium",
       "text": "Qual é o tamanho do mapa de No Man's Sky, em planetas, em quintilhões?",
       "answer": 18,
@@ -1654,6 +1890,7 @@
       "fact": "O universo é gerado por um algoritmo."
     },
     {
+      "id": "chute-games-237",
       "difficulty": "medium",
       "text": "Qual é a altura máxima de construção em Minecraft, em blocos, depois de 2021?",
       "answer": 320,
@@ -1661,6 +1898,7 @@
       "fact": "O limite subiu nessa atualização."
     },
     {
+      "id": "chute-games-238",
       "difficulty": "medium",
       "text": "Quantos blocos tem um chunk de Minecraft, por lado?",
       "answer": 16,
@@ -1668,6 +1906,7 @@
       "fact": "O mundo é gerado por essas partes."
     },
     {
+      "id": "chute-games-239",
       "difficulty": "medium",
       "text": "Quantos corações de vida tem um jogador em Minecraft?",
       "answer": 10,
@@ -1675,6 +1914,7 @@
       "fact": "Cada coração vale dois pontos."
     },
     {
+      "id": "chute-games-240",
       "difficulty": "medium",
       "text": "Quantos minutos dura um dia de Minecraft, em tempo real?",
       "answer": 20,
@@ -1682,6 +1922,7 @@
       "fact": "A noite dura cerca de sete minutos."
     },
     {
+      "id": "chute-games-241",
       "difficulty": "medium",
       "text": "Quantos minutos dura uma partida de Fall Guys, em geral?",
       "answer": 15,
@@ -1689,6 +1930,7 @@
       "fact": "O personagem é um feijão."
     },
     {
+      "id": "chute-games-242",
       "difficulty": "medium",
       "text": "Quantos minutos dura uma partida de League of Legends, em média?",
       "answer": 30,
@@ -1696,6 +1938,7 @@
       "fact": "Algumas passam de uma hora."
     },
     {
+      "id": "chute-games-243",
       "difficulty": "medium",
       "text": "Quantos personagens tem League of Legends, em 2024, aproximadamente?",
       "answer": 168,
@@ -1703,6 +1946,7 @@
       "fact": "Novos são lançados com frequência."
     },
     {
+      "id": "chute-games-244",
       "difficulty": "medium",
       "text": "Quantas partidas de LoL são jogadas por dia, em milhões, aproximadamente?",
       "answer": 100,
@@ -1710,6 +1954,7 @@
       "fact": "Ele foi lançado em 2009."
     },
     {
+      "id": "chute-games-245",
       "difficulty": "hard",
       "text": "Quantos bits tinha o Atari 2600?",
       "answer": 8,
@@ -1717,6 +1962,7 @@
       "fact": "Os processadores eram muito limitados."
     },
     {
+      "id": "chute-games-246",
       "difficulty": "hard",
       "text": "Quantos bits tinha o Super Nintendo?",
       "answer": 16,
@@ -1724,6 +1970,7 @@
       "fact": "A \"guerra dos bits\" era usada em propaganda."
     },
     {
+      "id": "chute-games-247",
       "difficulty": "hard",
       "text": "Quantos bits tinha o Mega Drive?",
       "answer": 16,
@@ -1731,6 +1978,7 @@
       "fact": "O nome \"Blast Processing\" foi a propaganda da Sega."
     },
     {
+      "id": "chute-games-248",
       "difficulty": "hard",
       "text": "Quantos bits tinha o Nintendo 64?",
       "answer": 64,
@@ -1738,6 +1986,7 @@
       "fact": "O número aparece no nome do console."
     },
     {
+      "id": "chute-games-249",
       "difficulty": "hard",
       "text": "Quantos bits tinha o PlayStation 1?",
       "answer": 32,
@@ -1745,6 +1994,7 @@
       "fact": "Ele usava CD como mídia."
     },
     {
+      "id": "chute-games-250",
       "difficulty": "hard",
       "text": "Quantos bits tinha o Dreamcast?",
       "answer": 128,
@@ -1752,6 +2002,7 @@
       "fact": "Foi um dos primeiros consoles com modem."
     },
     {
+      "id": "chute-games-251",
       "difficulty": "hard",
       "text": "Quantos KB de memória tinha o NES?",
       "answer": 2,
@@ -1759,6 +2010,7 @@
       "fact": "Os jogos usavam muito pouca memória."
     },
     {
+      "id": "chute-games-252",
       "difficulty": "hard",
       "text": "Quantos bytes de RAM tinha o Atari 2600?",
       "answer": 128,
@@ -1766,6 +2018,7 @@
       "fact": "Isso é menos do que um e-mail curto."
     },
     {
+      "id": "chute-games-253",
       "difficulty": "hard",
       "text": "Quantos GB de memória tem o PlayStation 5?",
       "answer": 16,
@@ -1773,6 +2026,7 @@
       "fact": "Ele tem também um SSD muito rápido."
     },
     {
+      "id": "chute-games-254",
       "difficulty": "hard",
       "text": "Quantos GB de armazenamento tem o Nintendo Switch original?",
       "answer": 32,
@@ -1780,6 +2034,7 @@
       "fact": "Ele aceita cartão de memória."
     },
     {
+      "id": "chute-games-255",
       "difficulty": "hard",
       "text": "Quantos GB tem o jogo \"Call of Duty: Modern Warfare\" de 2019, no PC?",
       "answer": 175,
@@ -1787,6 +2042,7 @@
       "fact": "Era um dos maiores jogos da época."
     },
     {
+      "id": "chute-games-256",
       "difficulty": "hard",
       "text": "Quantos KB tinha o jogo \"Super Mario Bros.\", original?",
       "answer": 40,
@@ -1794,6 +2050,7 @@
       "fact": "Isso é menor que uma foto de celular."
     },
     {
+      "id": "chute-games-257",
       "difficulty": "hard",
       "text": "Quantos MB tinha \"Super Mario 64\"?",
       "answer": 8,
@@ -1801,6 +2058,7 @@
       "fact": "Hoje, uma foto de celular é quase isso."
     },
     {
+      "id": "chute-games-258",
       "difficulty": "hard",
       "text": "Quantos MB tinha o CD do PlayStation 1?",
       "answer": 700,
@@ -1808,6 +2066,7 @@
       "fact": "Ele guardava muito mais que os cartuchos."
     },
     {
+      "id": "chute-games-259",
       "difficulty": "hard",
       "text": "Quantos GB tem um Blu-ray de camada dupla?",
       "answer": 50,
@@ -1815,6 +2074,7 @@
       "fact": "O PlayStation 3 ajudou a popularizar o formato."
     },
     {
+      "id": "chute-games-260",
       "difficulty": "hard",
       "text": "Quantas cores o Game Boy original exibia, em tons?",
       "answer": 4,
@@ -1822,6 +2082,7 @@
       "fact": "Eram tons de verde."
     },
     {
+      "id": "chute-games-261",
       "difficulty": "hard",
       "text": "Quantas cores o NES podia usar de uma paleta, aproximadamente?",
       "answer": 54,
@@ -1829,6 +2090,7 @@
       "fact": "Só 25 cores apareciam ao mesmo tempo."
     },
     {
+      "id": "chute-games-262",
       "difficulty": "hard",
       "text": "Quantos pixels tinha a tela do Game Boy, na largura?",
       "answer": 160,
@@ -1836,6 +2098,7 @@
       "fact": "A altura era de 144 pixels."
     },
     {
+      "id": "chute-games-263",
       "difficulty": "hard",
       "text": "Quantos anos Eric Barone levou para criar \"Stardew Valley\"?",
       "answer": 4,
@@ -1843,6 +2106,7 @@
       "fact": "Ele trabalhava sozinho até 10 horas por dia."
     },
     {
+      "id": "chute-games-264",
       "difficulty": "hard",
       "text": "Quantos anos Team Cherry levou para fazer \"Silksong\"?",
       "answer": 7,
@@ -1850,6 +2114,7 @@
       "fact": "A espera virou meme."
     },
     {
+      "id": "chute-games-265",
       "difficulty": "hard",
       "text": "Quantos anos Dong Nguyen tinha ao criar Flappy Bird, aproximadamente?",
       "answer": 28,
@@ -1857,6 +2122,7 @@
       "fact": "Ele é vietnamita."
     },
     {
+      "id": "chute-games-266",
       "difficulty": "hard",
       "text": "Quanto Flappy Bird faturava por dia, no auge, em dólares?",
       "answer": 50000,
@@ -1864,6 +2130,7 @@
       "fact": "Ele o tirou do ar mesmo assim."
     },
     {
+      "id": "chute-games-267",
       "difficulty": "hard",
       "text": "Quantos dias Dong Nguyen levou para criar Flappy Bird?",
       "answer": 3,
@@ -1871,6 +2138,7 @@
       "fact": "Foi um dos maiores sucessos do mundo mobile."
     },
     {
+      "id": "chute-games-268",
       "difficulty": "hard",
       "text": "Quantos pontos dá o fantasma que Pac-Man come por último, na sequência?",
       "answer": 1600,
@@ -1878,6 +2146,7 @@
       "fact": "O valor dobra a cada fantasma comido."
     },
     {
+      "id": "chute-games-269",
       "difficulty": "hard",
       "text": "Quantos anos Satoru Iwata presidiu a Nintendo?",
       "answer": 13,
@@ -1885,6 +2154,7 @@
       "fact": "Ele morreu em 2015, e os fãs fizeram homenagens."
     },
     {
+      "id": "chute-games-270",
       "difficulty": "hard",
       "text": "Quantos anos Miyamoto tinha ao criar Super Mario Bros.?",
       "answer": 32,
@@ -1892,6 +2162,7 @@
       "fact": "Ele nasceu em 1952."
     },
     {
+      "id": "chute-games-271",
       "difficulty": "hard",
       "text": "Quantos anos John Carmack tinha ao criar Doom?",
       "answer": 23,
@@ -1899,6 +2170,7 @@
       "fact": "Ele ainda fazia programação nos anos 2000."
     },
     {
+      "id": "chute-games-272",
       "difficulty": "hard",
       "text": "Quantas pessoas trabalharam em \"Red Dead Redemption 2\", aproximadamente?",
       "answer": 3000,
@@ -1906,6 +2178,7 @@
       "fact": "Muitos reclamaram de muitas horas extras."
     },
     {
+      "id": "chute-games-273",
       "difficulty": "hard",
       "text": "Quantas linhas de diálogo tem \"Red Dead Redemption 2\", aproximadamente?",
       "answer": 500000,
@@ -1913,6 +2186,7 @@
       "fact": "Foi um dos jogos mais escritos da história."
     },
     {
+      "id": "chute-games-274",
       "difficulty": "hard",
       "text": "Quantas páginas tem o roteiro de \"Red Dead Redemption 2\", aproximadamente?",
       "answer": 2000,
@@ -1920,6 +2194,7 @@
       "fact": "Mais de mil atores participaram."
     },
     {
+      "id": "chute-games-275",
       "difficulty": "hard",
       "text": "Quantas pessoas viram a final de League of Legends de 2024, no pico, em milhões?",
       "answer": 6.9,
@@ -1927,6 +2202,7 @@
       "fact": "Foi o maior público da história dos esports."
     },
     {
+      "id": "chute-games-276",
       "difficulty": "hard",
       "text": "Quanto valeu a premiação do Mundial de Dota de 2021, em milhões de dólares?",
       "answer": 40,
@@ -1934,6 +2210,7 @@
       "fact": "É o maior prêmio de esports da história."
     },
     {
+      "id": "chute-games-277",
       "difficulty": "hard",
       "text": "Quantos anos Ninja tinha quando jogou com Drake?",
       "answer": 26,
@@ -1941,6 +2218,7 @@
       "fact": "A partida bateu recordes."
     },
     {
+      "id": "chute-games-278",
       "difficulty": "hard",
       "text": "Quanto Ninja recebeu para trocar a Twitch pelo Mixer, em milhões de dólares?",
       "answer": 30,
@@ -1948,6 +2226,7 @@
       "fact": "A Microsoft encerrou o Mixer em seguida."
     },
     {
+      "id": "chute-games-279",
       "difficulty": "hard",
       "text": "Em que ano o Mixer, da Microsoft, foi encerrado?",
       "answer": 2020,
@@ -1955,6 +2234,7 @@
       "fact": "Muitos streamers voltaram à Twitch."
     },
     {
+      "id": "chute-games-280",
       "difficulty": "hard",
       "text": "Quantos anos Faker joga pelo T1, até 2024?",
       "answer": 11,
@@ -1962,6 +2242,7 @@
       "fact": "Ele é o maior nome do League of Legends."
     },
     {
+      "id": "chute-games-281",
       "difficulty": "hard",
       "text": "Quantas vezes Faker foi campeão mundial, até 2024?",
       "answer": 5,
@@ -1969,6 +2250,7 @@
       "fact": "Ele ganhou o título de novo em 2024."
     },
     {
+      "id": "chute-games-282",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a loja Xbox Live Arcade?",
       "answer": 2004,
@@ -1976,6 +2258,7 @@
       "fact": "Ela ajudou muitos jogos independentes."
     },
     {
+      "id": "chute-games-283",
       "difficulty": "medium",
       "text": "Em que ano foi criado \"Magic: The Gathering\"?",
       "answer": 1993,
@@ -1983,6 +2266,7 @@
       "fact": "Foi criado por um matemático, Richard Garfield."
     },
     {
+      "id": "chute-games-284",
       "difficulty": "medium",
       "text": "Em que ano o jogo Banco Imobiliário foi lançado no Brasil?",
       "answer": 1944,
@@ -1990,6 +2274,7 @@
       "fact": "A Estrela é a fabricante."
     },
     {
+      "id": "chute-games-285",
       "difficulty": "medium",
       "text": "Qual é a altitude do ponto mais baixo do mundo de Minecraft, em blocos?",
       "answer": -64,
@@ -1997,6 +2282,7 @@
       "fact": "O limite mudou em uma atualização de 2021."
     },
     {
+      "id": "chute-games-286",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Super Mario Bros.\", com atores reais?",
       "answer": 1993,
@@ -2004,6 +2290,7 @@
       "fact": "Foi um enorme fracasso."
     },
     {
+      "id": "chute-games-287",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Mortal Kombat\", original?",
       "answer": 1995,
@@ -2011,6 +2298,7 @@
       "fact": "A música-tema virou um clássico."
     },
     {
+      "id": "chute-games-288",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Street Fighter\", com Van Damme?",
       "answer": 1994,
@@ -2018,6 +2306,7 @@
       "fact": "Raul Julia fez o vilão em seu último papel."
     },
     {
+      "id": "chute-games-289",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Tomb Raider\", com Angelina Jolie?",
       "answer": 2001,
@@ -2025,6 +2314,7 @@
       "fact": "Foi um sucesso de bilheteria."
     },
     {
+      "id": "chute-games-290",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Sonic\", com Jim Carrey?",
       "answer": 2020,
@@ -2032,6 +2322,7 @@
       "fact": "O visual do personagem foi trocado depois das críticas."
     },
     {
+      "id": "chute-games-291",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Super Mario Bros.\", animado?",
       "answer": 2023,
@@ -2039,6 +2330,7 @@
       "fact": "Ele arrecadou mais de 1,3 bilhão de dólares."
     },
     {
+      "id": "chute-games-292",
       "difficulty": "medium",
       "text": "Em que ano saiu o filme \"Minecraft\", com Jack Black?",
       "answer": 2025,
@@ -2046,6 +2338,7 @@
       "fact": "A produção virou um grande sucesso de bilheteria."
     },
     {
+      "id": "chute-games-293",
       "difficulty": "medium",
       "text": "Quanto arrecadou o filme \"Super Mario Bros.\", de 2023, em bilhões de dólares?",
       "answer": 1.36,
@@ -2053,6 +2346,7 @@
       "fact": "Foi a segunda maior bilheteria do ano."
     },
     {
+      "id": "chute-games-294",
       "difficulty": "medium",
       "text": "Quanto arrecadou o filme \"Um Filme Minecraft\", em milhões de dólares?",
       "answer": 950,
@@ -2060,6 +2354,7 @@
       "fact": "Ele se tornou a maior estreia de um filme de jogo."
     },
     {
+      "id": "chute-games-295",
       "difficulty": "medium",
       "text": "Quanto arrecadou o filme \"Sonic 3\", em milhões de dólares?",
       "answer": 490,
@@ -2067,6 +2362,7 @@
       "fact": "Keanu Reeves fez a voz de Shadow."
     },
     {
+      "id": "chute-games-296",
       "difficulty": "medium",
       "text": "Quantas temporadas tem a série \"The Last of Us\", até 2025?",
       "answer": 2,
@@ -2074,6 +2370,7 @@
       "fact": "Pedro Pascal e Bella Ramsey são os protagonistas."
     },
     {
+      "id": "chute-games-297",
       "difficulty": "medium",
       "text": "Quantas temporadas tem a série \"The Witcher\", com Henry Cavill?",
       "answer": 3,
@@ -2081,6 +2378,7 @@
       "fact": "Ele saiu e Liam Hemsworth entrou em seu lugar."
     },
     {
+      "id": "chute-games-298",
       "difficulty": "medium",
       "text": "Quantas temporadas tem \"Arcane\", de League of Legends?",
       "answer": 2,
@@ -2088,6 +2386,7 @@
       "fact": "Ela ganhou o Emmy de animação."
     },
     {
+      "id": "chute-games-299",
       "difficulty": "medium",
       "text": "Em que ano estreou \"Arcane\"?",
       "answer": 2021,
@@ -2095,6 +2394,7 @@
       "fact": "A produção custou cerca de 250 milhões de dólares."
     },
     {
+      "id": "chute-games-300",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Tekken\", original?",
       "answer": 1994,
@@ -2102,6 +2402,7 @@
       "fact": "Ele foi criado pela Namco."
     },
     {
+      "id": "chute-games-301",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Virtua Fighter\"?",
       "answer": 1993,
@@ -2109,6 +2410,7 @@
       "fact": "Foi o primeiro jogo de luta em 3D."
     },
     {
+      "id": "chute-games-302",
       "difficulty": "hard",
       "text": "Em que ano saiu \"King of Fighters 94\"?",
       "answer": 1994,
@@ -2116,6 +2418,7 @@
       "fact": "Os personagens eram de vários jogos da SNK."
     },
     {
+      "id": "chute-games-303",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Sonic 2\"?",
       "answer": 1992,
@@ -2123,6 +2426,7 @@
       "fact": "Tails estreou nesse jogo."
     },
     {
+      "id": "chute-games-304",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Sonic Adventure\"?",
       "answer": 1998,
@@ -2130,6 +2434,7 @@
       "fact": "Ele foi um grande título do Dreamcast."
     },
     {
+      "id": "chute-games-305",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Super Metroid\"?",
       "answer": 1994,
@@ -2137,6 +2442,7 @@
       "fact": "Até hoje, é um dos mais queridos da história."
     },
     {
+      "id": "chute-games-306",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Super Mario World\"?",
       "answer": 1990,
@@ -2144,6 +2450,7 @@
       "fact": "Foi lançado junto com o Super Nintendo."
     },
     {
+      "id": "chute-games-307",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Super Mario Odyssey\"?",
       "answer": 2017,
@@ -2151,6 +2458,7 @@
       "fact": "O boné Cappy é a principal novidade."
     },
     {
+      "id": "chute-games-308",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Super Mario Galaxy\"?",
       "answer": 2007,
@@ -2158,6 +2466,7 @@
       "fact": "A gravidade era a grande mecânica."
     },
     {
+      "id": "chute-games-309",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Luigi's Mansion\"?",
       "answer": 2001,
@@ -2165,6 +2474,7 @@
       "fact": "Foi lançado junto com o GameCube."
     },
     {
+      "id": "chute-games-310",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Animal Crossing: New Horizons\"?",
       "answer": 2020,
@@ -2172,6 +2482,7 @@
       "fact": "Foi a febre da pandemia."
     },
     {
+      "id": "chute-games-311",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Animal Crossing: New Horizons\", em milhões?",
       "answer": 47,
@@ -2179,6 +2490,7 @@
       "fact": "Ele saiu logo no início da quarentena."
     },
     {
+      "id": "chute-games-312",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Rayman\", original?",
       "answer": 1995,
@@ -2186,6 +2498,7 @@
       "fact": "O personagem não tem braços nem pernas."
     },
     {
+      "id": "chute-games-313",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Prince of Persia\", original?",
       "answer": 1989,
@@ -2193,6 +2506,7 @@
       "fact": "Jordan Mechner filmou o irmão correndo para fazer a animação."
     },
     {
+      "id": "chute-games-314",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Myst\"?",
       "answer": 1993,
@@ -2200,6 +2514,7 @@
       "fact": "Foi um dos jogos mais vendidos dos anos 1990."
     },
     {
+      "id": "chute-games-315",
       "difficulty": "hard",
       "text": "Em que ano saiu \"SimCity\", original?",
       "answer": 1989,
@@ -2207,6 +2522,7 @@
       "fact": "As editoras achavam que ninguém compraria."
     },
     {
+      "id": "chute-games-316",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Age of Empires\", original?",
       "answer": 1997,
@@ -2214,6 +2530,7 @@
       "fact": "O monge \"Wololo\" virou meme."
     },
     {
+      "id": "chute-games-317",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Diablo\", original?",
       "answer": 1996,
@@ -2221,6 +2538,7 @@
       "fact": "Ele quase foi um jogo por turnos."
     },
     {
+      "id": "chute-games-318",
       "difficulty": "hard",
       "text": "Em que ano saiu \"StarCraft\", original?",
       "answer": 1998,
@@ -2228,6 +2546,7 @@
       "fact": "Ele foi um fenômeno na Coreia do Sul."
     },
     {
+      "id": "chute-games-319",
       "difficulty": "hard",
       "text": "Em que ano saiu \"World of Warcraft\", original?",
       "answer": 2004,
@@ -2235,6 +2554,7 @@
       "fact": "Teve mais de 12 milhões de assinantes."
     },
     {
+      "id": "chute-games-320",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Warcraft\", original?",
       "answer": 1994,
@@ -2242,6 +2562,7 @@
       "fact": "Foi a primeira grande série da Blizzard."
     },
     {
+      "id": "chute-games-321",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Wolfenstein 3D\"?",
       "answer": 1992,
@@ -2249,6 +2570,7 @@
       "fact": "Foi um dos primeiros jogos de tiro em primeira pessoa."
     },
     {
+      "id": "chute-games-322",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Quake\", original?",
       "answer": 1996,
@@ -2256,6 +2578,7 @@
       "fact": "Ele usava gráficos totalmente em 3D."
     },
     {
+      "id": "chute-games-323",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Half-Life 2\"?",
       "answer": 2004,
@@ -2263,6 +2586,7 @@
       "fact": "O Steam foi lançado junto com ele."
     },
     {
+      "id": "chute-games-324",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Counter-Strike\", como mod?",
       "answer": 1999,
@@ -2270,6 +2594,7 @@
       "fact": "Foi criado por Minh Le e Jess Cliffe."
     },
     {
+      "id": "chute-games-325",
       "difficulty": "hard",
       "text": "Em que ano saiu \"BioShock\", original?",
       "answer": 2007,
@@ -2277,6 +2602,7 @@
       "fact": "A cidade de Rapture foi criada por Andrew Ryan."
     },
     {
+      "id": "chute-games-326",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Fallout\", original?",
       "answer": 1997,
@@ -2284,6 +2610,7 @@
       "fact": "A Bethesda comprou os direitos depois."
     },
     {
+      "id": "chute-games-327",
       "difficulty": "hard",
       "text": "Em que ano saiu \"The Elder Scrolls: Arena\"?",
       "answer": 1994,
@@ -2291,6 +2618,7 @@
       "fact": "Foi o início de uma longa série."
     },
     {
+      "id": "chute-games-328",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Baldur's Gate\", original?",
       "answer": 1998,
@@ -2298,6 +2626,7 @@
       "fact": "Foi um dos maiores RPGs de computador."
     },
     {
+      "id": "chute-games-329",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Chrono Trigger\"?",
       "answer": 1995,
@@ -2305,6 +2634,7 @@
       "fact": "Akira Toriyama fez os personagens."
     },
     {
+      "id": "chute-games-330",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Final Fantasy VII\", original?",
       "answer": 1997,
@@ -2312,6 +2642,7 @@
       "fact": "A morte de Aerith marcou uma geração."
     },
     {
+      "id": "chute-games-331",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Kingdom Hearts\", original?",
       "answer": 2002,
@@ -2319,6 +2650,7 @@
       "fact": "Ele une a Disney e a Square."
     },
     {
+      "id": "chute-games-332",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Shadow of the Colossus\", original?",
       "answer": 2005,
@@ -2326,6 +2658,7 @@
       "fact": "O jogo não tem inimigos menores."
     },
     {
+      "id": "chute-games-333",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Journey\"?",
       "answer": 2012,
@@ -2333,6 +2666,7 @@
       "fact": "Ele foi o primeiro jogo com indicação de música ao Grammy."
     },
     {
+      "id": "chute-games-334",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Inside\"?",
       "answer": 2016,
@@ -2340,6 +2674,7 @@
       "fact": "A Playdead também criou Limbo."
     },
     {
+      "id": "chute-games-335",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Celeste\"?",
       "answer": 2018,
@@ -2347,6 +2682,7 @@
       "fact": "Um jogo sobre ansiedade e escaladas."
     },
     {
+      "id": "chute-games-336",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Cuphead\"?",
       "answer": 2017,
@@ -2354,6 +2690,7 @@
       "fact": "O visual imita desenhos dos anos 1930."
     },
     {
+      "id": "chute-games-337",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Fall Guys\"?",
       "answer": 2020,
@@ -2361,6 +2698,7 @@
       "fact": "A Epic Games comprou o estúdio em 2021."
     },
     {
+      "id": "chute-games-338",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Among Us\", original?",
       "answer": 2018,
@@ -2368,6 +2706,7 @@
       "fact": "Só virou febre em 2020."
     },
     {
+      "id": "chute-games-339",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Vampire Survivors\"?",
       "answer": 2022,
@@ -2375,6 +2714,7 @@
       "fact": "Foi um jogo feito por uma só pessoa."
     },
     {
+      "id": "chute-games-340",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Astro Bot\"?",
       "answer": 2024,
@@ -2382,6 +2722,7 @@
       "fact": "Ele levou o prêmio de jogo do ano."
     },
     {
+      "id": "chute-games-341",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Knights of Pen & Paper\", brasileiro?",
       "answer": 2013,
@@ -2389,6 +2730,7 @@
       "fact": "O jogo foi feito pela Behold Studios."
     },
     {
+      "id": "chute-games-342",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Dandara\", brasileiro?",
       "answer": 2018,
@@ -2396,6 +2738,7 @@
       "fact": "Ele é inspirado em uma heroína de Palmares."
     },
     {
+      "id": "chute-games-343",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Winning Eleven\", da Konami, nos EUA?",
       "answer": 1995,
@@ -2403,6 +2746,7 @@
       "fact": "A série virou PES e depois eFootball."
     },
     {
+      "id": "chute-games-344",
       "difficulty": "hard",
       "text": "Em que ano saiu \"FIFA International Soccer\", o primeiro?",
       "answer": 1993,
@@ -2410,6 +2754,7 @@
       "fact": "A bola ficou conhecida por não bater na trave."
     },
     {
+      "id": "chute-games-345",
       "difficulty": "hard",
       "text": "Em que ano o \"FIFA\" trocou de nome para \"EA Sports FC\"?",
       "answer": 2023,
@@ -2417,6 +2762,7 @@
       "fact": "A EA deixou de usar a marca da entidade."
     },
     {
+      "id": "chute-games-346",
       "difficulty": "hard",
       "text": "Quanto a EA pagava à FIFA por ano para usar o nome, em milhões de dólares?",
       "answer": 150,
@@ -2424,6 +2770,7 @@
       "fact": "Esse custo foi um dos motivos para o fim da parceria."
     },
     {
+      "id": "chute-games-347",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"FIFA 18\", em milhões?",
       "answer": 24,
@@ -2431,6 +2778,7 @@
       "fact": "Foi uma das edições mais vendidas."
     },
     {
+      "id": "chute-games-348",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"Call of Duty\", em milhões, até 2023?",
       "answer": 500,
@@ -2438,6 +2786,7 @@
       "fact": "Ela é uma das mais vendidas da história."
     },
     {
+      "id": "chute-games-349",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"Pokémon\", em milhões, até 2024?",
       "answer": 480,
@@ -2445,6 +2794,7 @@
       "fact": "Ela é a franquia mais lucrativa do mundo."
     },
     {
+      "id": "chute-games-350",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"Super Mario\", em milhões, até 2024?",
       "answer": 890,
@@ -2452,6 +2802,7 @@
       "fact": "Ela é a mais vendida da história."
     },
     {
+      "id": "chute-games-351",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"The Sims\", em milhões, até 2019?",
       "answer": 200,
@@ -2459,6 +2810,7 @@
       "fact": "A maior parte dos jogadores é formada por mulheres."
     },
     {
+      "id": "chute-games-352",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"Resident Evil\", em milhões, até 2024?",
       "answer": 160,
@@ -2466,6 +2818,7 @@
       "fact": "O filme com Milla Jovovich também foi um sucesso."
     },
     {
+      "id": "chute-games-353",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu a série \"Zelda\", em milhões, até 2023?",
       "answer": 150,
@@ -2473,6 +2826,7 @@
       "fact": "Os fãs sempre aguardam novos jogos."
     },
     {
+      "id": "chute-games-354",
       "difficulty": "hard",
       "text": "Quanto faturou a franquia \"Pokémon\" no total, em bilhões de dólares, aproximadamente?",
       "answer": 100,
@@ -2480,6 +2834,7 @@
       "fact": "É a franquia de entretenimento mais lucrativa do mundo."
     },
     {
+      "id": "chute-games-355",
       "difficulty": "hard",
       "text": "Quanto faturou a franquia \"Super Mario\" no total, em bilhões de dólares, aproximadamente?",
       "answer": 36,
@@ -2487,6 +2842,7 @@
       "fact": "Os filmes também ajudam nessa conta."
     },
     {
+      "id": "chute-games-356",
       "difficulty": "easy",
       "text": "Quantas telas tem o Nintendo DS?",
       "answer": 2,
@@ -2494,6 +2850,7 @@
       "fact": "A de baixo é sensível ao toque."
     },
     {
+      "id": "chute-games-357",
       "difficulty": "medium",
       "text": "Em que ano saiu \"Civilization\", original?",
       "answer": 1991,
@@ -2501,6 +2858,7 @@
       "fact": "A frase \"só mais um turno\" virou uma piada entre os jogadores."
     },
     {
+      "id": "chute-games-358",
       "difficulty": "medium",
       "text": "Quantas cópias vendeu a série \"Grand Theft Auto\", em milhões, aproximadamente?",
       "answer": 440,
@@ -2508,6 +2866,7 @@
       "fact": "A produção de GTA VI levou mais de uma década."
     },
     {
+      "id": "chute-games-359",
       "difficulty": "medium",
       "text": "Em que ano saiu \"Grand Theft Auto\", o primeiro?",
       "answer": 1997,
@@ -2515,6 +2874,7 @@
       "fact": "A visão era de cima, e o jogo era em 2D."
     },
     {
+      "id": "chute-games-360",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Sim City 2000\"?",
       "answer": 1993,
@@ -2522,6 +2882,7 @@
       "fact": "A sequência teve gráficos mais detalhados."
     },
     {
+      "id": "chute-games-361",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Roller Coaster Tycoon\"?",
       "answer": 1999,
@@ -2529,6 +2890,7 @@
       "fact": "Um único programador o fez quase todo em linguagem de máquina."
     },
     {
+      "id": "chute-games-362",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Grim Fandango\"?",
       "answer": 1998,
@@ -2536,6 +2898,7 @@
       "fact": "Foi um dos últimos grandes jogos de aventura de sua época."
     },
     {
+      "id": "chute-games-363",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Monkey Island\", o primeiro?",
       "answer": 1990,
@@ -2543,6 +2906,7 @@
       "fact": "A Lucasfilm Games é a autora."
     },
     {
+      "id": "chute-games-364",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Lemmings\"?",
       "answer": 1991,
@@ -2550,6 +2914,7 @@
       "fact": "Um pequeno estúdio escocês o criou, antes de fazer GTA."
     },
     {
+      "id": "chute-games-365",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Spelunky\"?",
       "answer": 2008,
@@ -2557,6 +2922,7 @@
       "fact": "Ele ajudou a popularizar os roguelikes modernos."
     },
     {
+      "id": "chute-games-366",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Braid\"?",
       "answer": 2008,
@@ -2564,6 +2930,7 @@
       "fact": "Foi um dos marcos da cena independente."
     },
     {
+      "id": "chute-games-367",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Limbo\"?",
       "answer": 2010,
@@ -2571,6 +2938,7 @@
       "fact": "O visual é todo em preto e branco."
     },
     {
+      "id": "chute-games-368",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Papers, Please\"?",
       "answer": 2013,
@@ -2578,6 +2946,7 @@
       "fact": "O jogador é um fiscal de fronteira."
     },
     {
+      "id": "chute-games-369",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Rust\"?",
       "answer": 2013,
@@ -2585,6 +2954,7 @@
       "fact": "O jogo de sobrevivência ainda recebe atualizações."
     },
     {
+      "id": "chute-games-370",
       "difficulty": "hard",
       "text": "Em que ano saiu \"The Binding of Isaac\"?",
       "answer": 2011,
@@ -2592,6 +2962,7 @@
       "fact": "O jogo foi feito em poucos meses por dois criadores."
     },
     {
+      "id": "chute-games-371",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Slay the Spire\"?",
       "answer": 2019,
@@ -2599,6 +2970,7 @@
       "fact": "O jogo mistura cartas e roguelike."
     },
     {
+      "id": "chute-games-372",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Disco Elysium\"?",
       "answer": 2019,
@@ -2606,6 +2978,7 @@
       "fact": "O jogo tem mais de 1 milhão de palavras."
     },
     {
+      "id": "chute-games-373",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Sekiro\"?",
       "answer": 2019,
@@ -2613,6 +2986,7 @@
       "fact": "Ele ganhou o prêmio de jogo do ano."
     },
     {
+      "id": "chute-games-374",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Ghost of Tsushima\"?",
       "answer": 2020,
@@ -2620,6 +2994,7 @@
       "fact": "O jogo se passa no Japão, em 1274."
     },
     {
+      "id": "chute-games-375",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Death Stranding\"?",
       "answer": 2019,
@@ -2627,6 +3002,7 @@
       "fact": "O jogo mostra um entregador em um mundo arrasado."
     },
     {
+      "id": "chute-games-376",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Metroid Dread\"?",
       "answer": 2021,
@@ -2634,6 +3010,7 @@
       "fact": "Foi o primeiro em 2D em quase 20 anos."
     },
     {
+      "id": "chute-games-377",
       "difficulty": "hard",
       "text": "Em que ano saiu \"Zelda: Tears of the Kingdom\"?",
       "answer": 2023,
@@ -2641,6 +3018,7 @@
       "fact": "Ele vendeu 10 milhões de cópias em três dias."
     },
     {
+      "id": "chute-games-378",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Tears of the Kingdom\" nos primeiros três dias, em milhões?",
       "answer": 10,
@@ -2648,6 +3026,7 @@
       "fact": "É um recorde para a série."
     },
     {
+      "id": "chute-games-379",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Breath of the Wild\", em milhões, aproximadamente?",
       "answer": 33,
@@ -2655,6 +3034,7 @@
       "fact": "Foi um grande impulso para o Switch."
     },
     {
+      "id": "chute-games-380",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Pokémon Scarlet e Violet\", em milhões?",
       "answer": 25,
@@ -2662,6 +3042,7 @@
       "fact": "O lançamento foi cheio de erros técnicos."
     },
     {
+      "id": "chute-games-381",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Super Smash Bros. Ultimate\", em milhões?",
       "answer": 36,
@@ -2669,6 +3050,7 @@
       "fact": "O jogo tem todos os personagens da série."
     },
     {
+      "id": "chute-games-382",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Sonic the Hedgehog\", original, em milhões?",
       "answer": 15,
@@ -2676,6 +3058,7 @@
       "fact": "Ele vinha junto com o Mega Drive."
     },
     {
+      "id": "chute-games-383",
       "difficulty": "hard",
       "text": "Quantas cópias vendeu \"Metal Gear Solid\", original, em milhões?",
       "answer": 7,
@@ -2683,6 +3066,7 @@
       "fact": "Ele foi um marco do PlayStation."
     },
     {
+      "id": "chute-games-384",
       "difficulty": "easy",
       "text": "Quantos jogadores começam uma partida de Fortnite Battle Royale?",
       "answer": 100,
@@ -2690,6 +3074,7 @@
       "fact": "O último de pé ganha a partida."
     },
     {
+      "id": "chute-games-385",
       "difficulty": "medium",
       "text": "Quantos jogadores começam uma partida de Free Fire Battle Royale?",
       "answer": 50,
@@ -2697,6 +3082,7 @@
       "fact": "A partida dura menos de 10 minutos."
     },
     {
+      "id": "chute-games-386",
       "difficulty": "medium",
       "text": "Quantos jogadores cabiam em uma partida de Among Us, em 2020?",
       "answer": 10,
@@ -2704,6 +3090,7 @@
       "fact": "Há até 15 em versões atuais."
     },
     {
+      "id": "chute-games-387",
       "difficulty": "easy",
       "text": "Quantas vidas tem Mario no início do primeiro Super Mario Bros.?",
       "answer": 3,
@@ -2711,6 +3098,7 @@
       "fact": "Dá para ganhar mais pegando cogumelos verdes."
     },
     {
+      "id": "chute-games-388",
       "difficulty": "easy",
       "text": "Quantas moedas Mario precisa pegar para ganhar uma vida extra?",
       "answer": 100,
@@ -2718,6 +3106,7 @@
       "fact": "A contagem volta a zero depois disso."
     },
     {
+      "id": "chute-games-389",
       "difficulty": "easy",
       "text": "Quantos fantasmas perseguem Pac-Man no labirinto?",
       "answer": 4,
@@ -2725,6 +3114,7 @@
       "fact": "Blinky, Pinky, Inky e Clyde."
     },
     {
+      "id": "chute-games-390",
       "difficulty": "medium",
       "text": "Quantos anéis Sonic precisa ter para ganhar uma vida?",
       "answer": 100,
@@ -2732,6 +3122,7 @@
       "fact": "Ele os perde ao levar um golpe."
     },
     {
+      "id": "chute-games-391",
       "difficulty": "easy",
       "text": "Quantas peças diferentes tem o Tetris clássico?",
       "answer": 7,
@@ -2739,6 +3130,7 @@
       "fact": "Cada uma tem quatro quadrados."
     },
     {
+      "id": "chute-games-392",
       "difficulty": "easy",
       "text": "Quantos blocos forma cada peça do Tetris?",
       "answer": 4,
@@ -2746,6 +3138,7 @@
       "fact": "O nome vem do prefixo grego \"tetra\"."
     },
     {
+      "id": "chute-games-393",
       "difficulty": "easy",
       "text": "Quantos jogadores por time há em Counter-Strike competitivo?",
       "answer": 5,
@@ -2753,6 +3146,7 @@
       "fact": "A partida vai até 13 vitórias de rodada."
     },
     {
+      "id": "chute-games-394",
       "difficulty": "medium",
       "text": "Quantos personagens tem \"Super Smash Bros. Ultimate\", no total?",
       "answer": 89,
@@ -2760,6 +3154,7 @@
       "fact": "A propaganda dizia que todos estavam lá."
     },
     {
+      "id": "chute-games-395",
       "difficulty": "medium",
       "text": "Quantas estrelas tem \"Super Mario Galaxy\"?",
       "answer": 121,
@@ -2767,6 +3162,7 @@
       "fact": "Coletar todas libera Luigi."
     },
     {
+      "id": "chute-games-396",
       "difficulty": "medium",
       "text": "Quantos corações Link começa em \"Ocarina of Time\"?",
       "answer": 3,
@@ -2774,6 +3170,7 @@
       "fact": "Ele ganha mais com peças de coração."
     },
     {
+      "id": "chute-games-397",
       "difficulty": "medium",
       "text": "Quantos mundos tem \"Super Mario Bros.\", de 1985?",
       "answer": 8,
@@ -2781,6 +3178,7 @@
       "fact": "Cada um tem quatro fases."
     },
     {
+      "id": "chute-games-398",
       "difficulty": "medium",
       "text": "Quantas fases tem \"Super Mario Bros.\", de 1985?",
       "answer": 32,
@@ -2788,6 +3186,7 @@
       "fact": "Bowser aparece no fim de cada mundo."
     },
     {
+      "id": "chute-games-399",
       "difficulty": "medium",
       "text": "Quanto o Roblox fatura por ano, em bilhões de dólares, aproximadamente?",
       "answer": 3,
@@ -2795,6 +3194,7 @@
       "fact": "A plataforma é muito popular entre crianças."
     },
     {
+      "id": "chute-games-400",
       "difficulty": "hard",
       "text": "Quantas cópias o Game Boy vendeu, em milhões, somando o Color?",
       "answer": 118,
@@ -2802,6 +3202,7 @@
       "fact": "Ele era muito resistente."
     },
     {
+      "id": "chute-games-401",
       "difficulty": "hard",
       "text": "Quanto valeu o estúdio Bungie na venda para a Sony, em bilhões de dólares?",
       "answer": 3.6,
@@ -2809,6 +3210,7 @@
       "fact": "O negócio foi fechado em 2022."
     },
     {
+      "id": "chute-games-402",
       "difficulty": "hard",
       "text": "Quanto valeu a King, de Candy Crush, na venda à Activision, em bilhões de dólares?",
       "answer": 5.9,
@@ -2816,6 +3218,7 @@
       "fact": "O negócio foi concluído em 2016."
     },
     {
+      "id": "chute-games-403",
       "difficulty": "hard",
       "text": "Quanto valeu a Zynga na venda à Take-Two, em bilhões de dólares?",
       "answer": 12.7,
@@ -2823,6 +3226,7 @@
       "fact": "A empresa fez \"FarmVille\"."
     },
     {
+      "id": "chute-games-404",
       "difficulty": "hard",
       "text": "Quanto valeu a Supercell na venda à Tencent, em bilhões de dólares?",
       "answer": 8.6,
@@ -2830,6 +3234,7 @@
       "fact": "A empresa fez \"Clash of Clans\"."
     },
     {
+      "id": "chute-games-405",
       "difficulty": "hard",
       "text": "Qual é a velocidade do Sonic em quilômetros, segundo dados oficiais, em km/h?",
       "answer": 1225,
@@ -2837,6 +3242,7 @@
       "fact": "Ele corre mais rápido que o som."
     },
     {
+      "id": "chute-games-406",
       "difficulty": "hard",
       "text": "Qual é a altura de Mario, em centímetros, segundo fontes oficiais?",
       "answer": 155,
@@ -2844,6 +3250,7 @@
       "fact": "O peso seria de 89 quilos."
     },
     {
+      "id": "chute-games-407",
       "difficulty": "easy",
       "text": "Quantas cartas iniciais recebe cada jogador em uma partida de UNO?",
       "answer": 7,
@@ -2851,6 +3258,7 @@
       "fact": "O restante forma a pilha de compra."
     },
     {
+      "id": "chute-games-408",
       "difficulty": "medium",
       "text": "Quantos botões frontais tem o controle do Super Nintendo, sem os direcionais?",
       "answer": 6,
@@ -2858,6 +3266,7 @@
       "fact": "Eram X, Y, A e B, mais L e R nos ombros."
     },
     {
+      "id": "chute-games-409",
       "difficulty": "medium",
       "text": "Quantos bilhões de dólares em moedas Pac-Man arrecadou nos anos 1980, aproximadamente?",
       "answer": 1,
@@ -2865,6 +3274,7 @@
       "fact": "Foi lançado em 1980."
     },
     {
+      "id": "chute-games-410",
       "difficulty": "medium",
       "text": "Quantos personagens jogáveis tinha \"Street Fighter II\", em 1991?",
       "answer": 8,
@@ -2872,6 +3282,7 @@
       "fact": "Os chefes viraram jogáveis depois."
     },
     {
+      "id": "chute-games-411",
       "difficulty": "hard",
       "text": "Quantos Pokémon cabiam no time principal do jogador?",
       "answer": 6,
@@ -2879,6 +3290,7 @@
       "fact": "Os restantes ficam guardados no PC."
     },
     {
+      "id": "chute-games-412",
       "difficulty": "hard",
       "text": "Quantos anos Gabe Newell trabalhou na Microsoft antes de fundar a Valve?",
       "answer": 13,
@@ -2886,6 +3298,7 @@
       "fact": "Ele saiu em 1996."
     },
     {
+      "id": "chute-games-413",
       "difficulty": "hard",
       "text": "Qual é a taxa padrão do Steam sobre as vendas, em porcentagem?",
       "answer": 30,
@@ -2894,6 +3307,7 @@
       "fact": "Empresas maiores pagam menos."
     },
     {
+      "id": "chute-games-414",
       "difficulty": "medium",
       "text": "Quantas casas tem um tabuleiro de War, em territórios da América do Sul?",
       "answer": 4,
@@ -2901,6 +3315,7 @@
       "fact": "O continente é um dos mais fáceis de defender."
     },
     {
+      "id": "chute-games-415",
       "difficulty": "medium",
       "text": "Quantos dados de seis faces usa uma jogada de Banco Imobiliário?",
       "answer": 2,

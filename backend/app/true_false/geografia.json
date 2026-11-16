@@ -2,576 +2,672 @@
   "theme": "Geografia",
   "statements": [
     {
+      "id": "vf-geografia-1",
       "difficulty": "medium",
       "text": "O Rio Nilo atravessa o Egito.",
       "answer": true,
       "fact": "O Nilo corre para o norte e deságua no Mar Mediterrâneo. Quase toda a população do Egito vive perto dele."
     },
     {
+      "id": "vf-geografia-2",
       "difficulty": "medium",
       "text": "A Austrália fica no Hemisfério Norte.",
       "answer": false,
       "fact": "A Austrália fica no Hemisfério Sul, e por isso o Natal lá cai no verão."
     },
     {
+      "id": "vf-geografia-3",
       "difficulty": "medium",
       "text": "O Monte Everest fica na cordilheira do Himalaia.",
       "answer": true,
       "fact": "O Everest fica na fronteira entre o Nepal e a China e tem cerca de 8.849 m."
     },
     {
+      "id": "vf-geografia-4",
       "difficulty": "medium",
       "text": "A capital da Austrália é Sydney.",
       "answer": false,
       "fact": "A capital é Camberra, construída para encerrar a disputa entre Sydney e Melbourne."
     },
     {
+      "id": "vf-geografia-5",
       "difficulty": "medium",
       "text": "A Rússia é o maior país do mundo em área.",
       "answer": true,
       "fact": "A Rússia tem mais de 17 milhões de km² e 11 fusos horários."
     },
     {
+      "id": "vf-geografia-6",
       "difficulty": "medium",
       "text": "O Deserto do Saara fica na Ásia.",
       "answer": false,
       "fact": "O Saara fica no norte da África e é o maior deserto quente do mundo."
     },
     {
+      "id": "vf-geografia-7",
       "difficulty": "medium",
       "text": "O Japão é formado por milhares de ilhas.",
       "answer": true,
       "fact": "O Japão tem mais de 14 mil ilhas, mas quase todo mundo vive nas quatro maiores."
     },
     {
+      "id": "vf-geografia-8",
       "difficulty": "medium",
       "text": "O Canadá é o país mais populoso da América do Norte.",
       "answer": false,
       "fact": "O mais populoso é os Estados Unidos. O Canadá é maior em área, mas tem cerca de 40 milhões de habitantes."
     },
     {
+      "id": "vf-geografia-9",
       "difficulty": "medium",
       "text": "O Oceano Pacífico é o maior do planeta.",
       "answer": true,
       "fact": "O Pacífico cobre cerca de um terço da superfície da Terra, mais do que todos os continentes juntos."
     },
     {
+      "id": "vf-geografia-10",
       "difficulty": "medium",
       "text": "A capital da Turquia é Istambul.",
       "answer": false,
       "fact": "A capital é Ancara. Istambul é a maior cidade e fica entre a Europa e a Ásia."
     },
     {
+      "id": "vf-geografia-11",
       "difficulty": "hard",
       "text": "A Bolívia tem duas capitais: Sucre e La Paz.",
       "answer": true,
       "fact": "Sucre é a capital constitucional, e La Paz é a sede do governo."
     },
     {
+      "id": "vf-geografia-12",
       "difficulty": "hard",
       "text": "O Rio Amazonas deságua no Oceano Pacífico.",
       "answer": false,
       "fact": "O Amazonas deságua no Oceano Atlântico, entre o Pará e o Amapá."
     },
     {
+      "id": "vf-geografia-13",
       "difficulty": "hard",
       "text": "O Lago Titicaca fica na fronteira entre Peru e Bolívia.",
       "answer": true,
       "fact": "A cerca de 3.800 m de altitude, é o lago navegável mais alto do mundo."
     },
     {
+      "id": "vf-geografia-14",
       "difficulty": "hard",
       "text": "A Groenlândia é um país independente.",
       "answer": false,
       "fact": "A Groenlândia é um território autônomo do Reino da Dinamarca. É a maior ilha do mundo."
     },
     {
+      "id": "vf-geografia-15",
       "difficulty": "hard",
       "text": "O Vaticano é o menor país do mundo.",
       "answer": true,
       "fact": "O Vaticano tem menos de meio quilômetro quadrado e fica dentro de Roma."
     },
     {
+      "id": "vf-geografia-16",
       "difficulty": "hard",
       "text": "O ponto mais baixo da superfície terrestre é o Vale da Morte, nos Estados Unidos.",
       "answer": false,
       "fact": "O mais baixo são as margens do Mar Morto, a mais de 400 m abaixo do nível do mar. O Vale da Morte é o mais baixo da América do Norte."
     },
     {
+      "id": "vf-geografia-17",
       "difficulty": "hard",
       "text": "A Indonésia é o país com mais muçulmanos do mundo.",
       "answer": true,
       "fact": "A Indonésia tem mais de 230 milhões de muçulmanos e é formada por mais de 17 mil ilhas."
     },
     {
+      "id": "vf-geografia-18",
       "difficulty": "hard",
       "text": "O Rio Danúbio passa por Paris.",
       "answer": false,
       "fact": "Paris é cortada pelo Sena. O Danúbio passa por capitais como Viena, Bratislava, Budapeste e Belgrado."
     },
     {
+      "id": "vf-geografia-19",
       "difficulty": "hard",
       "text": "O Cazaquistão é o maior país do mundo sem saída para o mar.",
       "answer": true,
       "fact": "O Cazaquistão tem cerca de 2,7 milhões de km² e é banhado só pelo Mar Cáspio, que é um lago."
     },
     {
+      "id": "vf-geografia-20",
       "difficulty": "hard",
       "text": "A Nova Zelândia fica na Ásia.",
       "answer": false,
       "fact": "A Nova Zelândia fica na Oceania, a cerca de 2.000 km a sudeste da Austrália."
     },
     {
+      "id": "vf-geografia-21",
       "difficulty": "medium",
       "text": "A África é o continente com mais países.",
       "answer": true,
       "fact": "Ela tem 54 países reconhecidos pela ONU."
     },
     {
+      "id": "vf-geografia-22",
       "difficulty": "medium",
       "text": "A Oceania é o maior continente do mundo.",
       "answer": false,
       "fact": "O maior é a Ásia, e a Oceania é o menor."
     },
     {
+      "id": "vf-geografia-23",
       "difficulty": "medium",
       "text": "A Rússia fica em dois continentes.",
       "answer": true,
       "fact": "Boa parte da população mora no lado europeu."
     },
     {
+      "id": "vf-geografia-24",
       "difficulty": "medium",
       "text": "O Canadá é o maior país do mundo.",
       "answer": false,
       "fact": "É o segundo. O maior é a Rússia."
     },
     {
+      "id": "vf-geografia-25",
       "difficulty": "medium",
       "text": "O Brasil é o maior país da América do Sul.",
       "answer": true,
       "fact": "Ele ocupa quase metade do continente."
     },
     {
+      "id": "vf-geografia-26",
       "difficulty": "medium",
       "text": "A Itália faz fronteira com a Espanha.",
       "answer": false,
       "fact": "A França fica entre os dois países."
     },
     {
+      "id": "vf-geografia-27",
       "difficulty": "medium",
       "text": "A capital da Austrália é Canberra.",
       "answer": true,
       "fact": "Muita gente acha que é Sydney."
     },
     {
+      "id": "vf-geografia-28",
       "difficulty": "medium",
       "text": "A capital do Canadá é Toronto.",
       "answer": false,
       "fact": "A capital é Ottawa."
     },
     {
+      "id": "vf-geografia-29",
       "difficulty": "medium",
       "text": "A capital dos Estados Unidos é Washington.",
       "answer": true,
       "fact": "A cidade foi planejada para ser a capital."
     },
     {
+      "id": "vf-geografia-30",
       "difficulty": "medium",
       "text": "Montevidéu é a capital do Uruguai.",
       "answer": true,
       "fact": "A cidade fica às margens do Rio da Prata."
     },
     {
+      "id": "vf-geografia-31",
       "difficulty": "medium",
       "text": "O Egito fica na América do Sul.",
       "answer": false,
       "fact": "O Egito fica principalmente na África."
     },
     {
+      "id": "vf-geografia-32",
       "difficulty": "medium",
       "text": "O Equador é cortado pela linha que leva o seu nome.",
       "answer": true,
       "fact": "Daí vem o nome do país."
     },
     {
+      "id": "vf-geografia-33",
       "difficulty": "medium",
       "text": "O Chile faz fronteira com o Brasil.",
       "answer": false,
       "fact": "O Chile e o Equador são os únicos da América do Sul sem fronteira com o Brasil."
     },
     {
+      "id": "vf-geografia-34",
       "difficulty": "medium",
       "text": "O Paraguai não tem saída para o mar.",
       "answer": true,
       "fact": "A Bolívia também não."
     },
     {
+      "id": "vf-geografia-35",
       "difficulty": "medium",
       "text": "A Argentina não tem saída para o mar.",
       "answer": false,
       "fact": "A Argentina tem uma grande costa no Atlântico."
     },
     {
+      "id": "vf-geografia-36",
       "difficulty": "medium",
       "text": "Portugal só faz fronteira terrestre com a Espanha.",
       "answer": true,
       "fact": "Portugal fica na Península Ibérica."
     },
     {
+      "id": "vf-geografia-37",
       "difficulty": "medium",
       "text": "A Antártida é um país.",
       "answer": false,
       "fact": "A Antártida é um continente regulado por um tratado internacional."
     },
     {
+      "id": "vf-geografia-38",
       "difficulty": "medium",
       "text": "A Groenlândia pertence ao Reino da Dinamarca.",
       "answer": true,
       "fact": "Ela tem governo próprio em boa parte dos assuntos."
     },
     {
+      "id": "vf-geografia-39",
       "difficulty": "medium",
       "text": "O Everest fica nos Andes.",
       "answer": false,
       "fact": "O Everest fica no Himalaia."
     },
     {
+      "id": "vf-geografia-40",
       "difficulty": "medium",
       "text": "O Monte Fuji fica no Japão.",
       "answer": true,
       "fact": "Ele é um vulcão e símbolo do país."
     },
     {
+      "id": "vf-geografia-41",
       "difficulty": "medium",
       "text": "O rio Nilo atravessa a França.",
       "answer": false,
       "fact": "O Nilo corta a África e deságua no Mediterrâneo."
     },
     {
+      "id": "vf-geografia-42",
       "difficulty": "medium",
       "text": "O rio Sena atravessa Paris.",
       "answer": true,
       "fact": "Ele foi palco de provas na Olimpíada de 2024."
     },
     {
+      "id": "vf-geografia-43",
       "difficulty": "medium",
       "text": "Londres é cortada pelo rio Danúbio.",
       "answer": false,
       "fact": "Londres é cortada pelo rio Tâmisa."
     },
     {
+      "id": "vf-geografia-44",
       "difficulty": "medium",
       "text": "Budapeste fica às margens do Danúbio.",
       "answer": true,
       "fact": "O rio separa as antigas Buda e Peste."
     },
     {
+      "id": "vf-geografia-45",
       "difficulty": "medium",
       "text": "Sergipe é o maior estado do Brasil.",
       "answer": false,
       "fact": "Ele é o menor, e o Amazonas é o maior."
     },
     {
+      "id": "vf-geografia-46",
       "difficulty": "medium",
       "text": "Minas Gerais é o estado com mais municípios do Brasil.",
       "answer": true,
       "fact": "São 853 municípios."
     },
     {
+      "id": "vf-geografia-47",
       "difficulty": "medium",
       "text": "Brasília fica na região Sudeste.",
       "answer": false,
       "fact": "Ela fica na região Centro-Oeste."
     },
     {
+      "id": "vf-geografia-48",
       "difficulty": "medium",
       "text": "Salvador nunca foi a capital do Brasil.",
       "answer": false,
       "fact": "Ela foi a primeira capital, de 1549 a 1763."
     },
     {
+      "id": "vf-geografia-49",
       "difficulty": "medium",
       "text": "Palmas é a capital do Tocantins.",
       "answer": true,
       "fact": "Ela foi planejada e criada em 1989."
     },
     {
+      "id": "vf-geografia-50",
       "difficulty": "medium",
       "text": "O Tocantins fica na região Sul.",
       "answer": false,
       "fact": "O Tocantins fica na região Norte."
     },
     {
+      "id": "vf-geografia-51",
       "difficulty": "medium",
       "text": "Em Macapá, a linha do Equador passa pelo meio de um estádio.",
       "answer": true,
       "fact": "O estádio se chama Zerão."
     },
     {
+      "id": "vf-geografia-52",
       "difficulty": "medium",
       "text": "Fortaleza é a capital do Rio Grande do Norte.",
       "answer": false,
       "fact": "A capital do Rio Grande do Norte é Natal."
     },
     {
+      "id": "vf-geografia-53",
       "difficulty": "medium",
       "text": "Boa Vista fica no Hemisfério Norte.",
       "answer": true,
       "fact": "É a única capital brasileira totalmente acima do Equador."
     },
     {
+      "id": "vf-geografia-54",
       "difficulty": "hard",
       "text": "A Bolívia tem saída para o Oceano Pacífico.",
       "answer": false,
       "fact": "Ela perdeu a saída para o mar na Guerra do Pacífico, em 1883."
     },
     {
+      "id": "vf-geografia-55",
       "difficulty": "hard",
       "text": "A África do Sul tem três capitais.",
       "answer": true,
       "fact": "São Pretória, Cidade do Cabo e Bloemfontein."
     },
     {
+      "id": "vf-geografia-56",
       "difficulty": "hard",
       "text": "San Marino fica totalmente cercado pela Itália.",
       "answer": true,
       "fact": "É uma das repúblicas mais antigas do mundo."
     },
     {
+      "id": "vf-geografia-57",
       "difficulty": "hard",
       "text": "A Suíça faz parte da União Europeia.",
       "answer": false,
       "fact": "Ela nunca entrou no bloco."
     },
     {
+      "id": "vf-geografia-58",
       "difficulty": "hard",
       "text": "A Noruega não faz parte da União Europeia.",
       "answer": true,
       "fact": "O país rejeitou a entrada em dois plebiscitos."
     },
     {
+      "id": "vf-geografia-59",
       "difficulty": "hard",
       "text": "A Turquia fica toda na Ásia.",
       "answer": false,
       "fact": "Uma pequena parte fica na Europa."
     },
     {
+      "id": "vf-geografia-60",
       "difficulty": "hard",
       "text": "A Indonésia é o maior país muçulmano em população.",
       "answer": true,
       "fact": "Ela tem mais de 230 milhões de muçulmanos."
     },
     {
+      "id": "vf-geografia-61",
       "difficulty": "hard",
       "text": "O Vaticano é maior que Mônaco.",
       "answer": false,
       "fact": "Mônaco tem mais de 2 km², e o Vaticano, menos de 0,5 km²."
     },
     {
+      "id": "vf-geografia-62",
       "difficulty": "hard",
       "text": "O Mar Morto é, na verdade, um lago.",
       "answer": true,
       "fact": "Ele não tem ligação com o oceano."
     },
     {
+      "id": "vf-geografia-63",
       "difficulty": "hard",
       "text": "O ponto mais alto do Brasil fica no Amazonas.",
       "answer": true,
       "fact": "O Pico da Neblina fica na fronteira com a Venezuela."
     },
     {
+      "id": "vf-geografia-64",
       "difficulty": "hard",
       "text": "O ponto extremo norte do Brasil é Oiapoque.",
       "answer": false,
       "fact": "É o Monte Caburaí, em Roraima."
     },
     {
+      "id": "vf-geografia-65",
       "difficulty": "hard",
       "text": "O ponto extremo leste do Brasil fica na Paraíba.",
       "answer": true,
       "fact": "É a Ponta do Seixas, em João Pessoa."
     },
     {
+      "id": "vf-geografia-66",
       "difficulty": "hard",
       "text": "Curitiba fica no litoral do Paraná.",
       "answer": false,
       "fact": "Curitiba fica no planalto, a cerca de 900 metros de altitude."
     },
     {
+      "id": "vf-geografia-67",
       "difficulty": "hard",
       "text": "O Brasil tem território nos dois hemisférios Norte e Sul.",
       "answer": true,
       "fact": "O Equador corta o Pará, Amapá, Amazonas e Roraima."
     },
     {
+      "id": "vf-geografia-68",
       "difficulty": "hard",
       "text": "O Trópico de Capricórnio passa por Salvador.",
       "answer": false,
       "fact": "Ele passa, por exemplo, pelo estado de São Paulo."
     },
     {
+      "id": "vf-geografia-69",
       "difficulty": "hard",
       "text": "O arquipélago de Abrolhos fica no Rio Grande do Sul.",
       "answer": false,
       "fact": "Ele fica na Bahia."
     },
     {
+      "id": "vf-geografia-70",
       "difficulty": "hard",
       "text": "A cidade de Bonito fica em Mato Grosso do Sul.",
       "answer": true,
       "fact": "É conhecida por rios muito transparentes."
     },
     {
+      "id": "vf-geografia-71",
       "difficulty": "hard",
       "text": "Foz do Iguaçu é vizinha da Bolívia.",
       "answer": false,
       "fact": "Ela é vizinha da Argentina e do Paraguai."
     },
     {
+      "id": "vf-geografia-72",
       "difficulty": "hard",
       "text": "A Ilha de Marajó fica na foz do rio Amazonas.",
       "answer": true,
       "fact": "Ela é maior que muitos países europeus."
     },
     {
+      "id": "vf-geografia-73",
       "difficulty": "hard",
       "text": "O Rio Tietê corre em direção ao mar.",
       "answer": false,
       "fact": "Ele corre para o interior de São Paulo."
     },
     {
+      "id": "vf-geografia-74",
       "difficulty": "hard",
       "text": "A China usa só um fuso horário oficial.",
       "answer": true,
       "fact": "Em certas regiões, o Sol nasce muito tarde."
     },
     {
+      "id": "vf-geografia-75",
       "difficulty": "hard",
       "text": "O Reino Unido tem 11 fusos horários em seu território principal.",
       "answer": false,
       "fact": "É a Rússia que tem 11 fusos."
     },
     {
+      "id": "vf-geografia-76",
       "difficulty": "hard",
       "text": "A Austrália é uma ilha no Oceano Atlântico.",
       "answer": false,
       "fact": "Ela fica entre os oceanos Índico e Pacífico."
     },
     {
+      "id": "vf-geografia-77",
       "difficulty": "hard",
       "text": "Baku é uma capital abaixo do nível do mar.",
       "answer": true,
       "fact": "Ela fica a cerca de 28 metros abaixo."
     },
     {
+      "id": "vf-geografia-78",
       "difficulty": "hard",
       "text": "La Paz é a capital mais baixa do mundo.",
       "answer": false,
       "fact": "Ela é a sede de governo mais alta do mundo."
     },
     {
+      "id": "vf-geografia-79",
       "difficulty": "hard",
       "text": "O rio Congo corta a linha do Equador duas vezes.",
       "answer": true,
       "fact": "É um dos poucos rios a fazer isso."
     },
     {
+      "id": "vf-geografia-80",
       "difficulty": "hard",
       "text": "O rio Amazonas nasce no Brasil.",
       "answer": false,
       "fact": "Ele nasce no Peru, na Cordilheira dos Andes."
     },
     {
+      "id": "vf-geografia-81",
       "difficulty": "hard",
       "text": "A Península Ibérica reúne Portugal e Espanha.",
       "answer": true,
       "fact": "Os Pirineus a separam do resto da Europa."
     },
     {
+      "id": "vf-geografia-82",
       "difficulty": "hard",
       "text": "O Canal da Mancha separa Portugal da Espanha.",
       "answer": false,
       "fact": "Ele separa o Reino Unido da França."
     },
     {
+      "id": "vf-geografia-83",
       "difficulty": "hard",
       "text": "O Estreito de Gibraltar liga o Atlântico ao Mediterrâneo.",
       "answer": true,
       "fact": "Ele tem cerca de 14 km no ponto mais estreito."
     },
     {
+      "id": "vf-geografia-84",
       "difficulty": "medium",
       "text": "O Rio de Janeiro foi a capital do Brasil até 1960.",
       "answer": true,
       "fact": "Naquele ano, a capital passou para Brasília."
     },
     {
+      "id": "vf-geografia-85",
       "difficulty": "medium",
       "text": "Rondônia fica na região Nordeste.",
       "answer": false,
       "fact": "Rondônia fica na região Norte."
     },
     {
+      "id": "vf-geografia-86",
       "difficulty": "hard",
       "text": "A França tem mais fusos horários que a Rússia, contando os territórios ultramarinos.",
       "answer": true,
       "fact": "Ao todo, a França tem 12 fusos."
     },
     {
+      "id": "vf-geografia-87",
       "difficulty": "hard",
       "text": "Hong Kong é um país independente.",
       "answer": false,
       "fact": "Ela é uma região administrativa especial da China."
     },
     {
+      "id": "vf-geografia-88",
       "difficulty": "hard",
       "text": "O Lesoto fica inteiramente dentro da África do Sul.",
       "answer": true,
       "fact": "É um dos três países cercados por um único vizinho."
     },
     {
+      "id": "vf-geografia-89",
       "difficulty": "hard",
       "text": "O Iêmen faz fronteira com o Egito.",
       "answer": false,
       "fact": "O Iêmen fica no sul da Península Arábica."
     },
     {
+      "id": "vf-geografia-90",
       "difficulty": "medium",
       "text": "A capital da Austrália é Camberra.",
       "answer": true,
       "fact": "Sydney e Melbourne são maiores, mas não são a capital."
     },
     {
+      "id": "vf-geografia-91",
       "difficulty": "medium",
       "text": "O Rio Nilo corre pela América do Sul.",
       "answer": false,
       "fact": "Ele corre pela África."
     },
     {
+      "id": "vf-geografia-92",
       "difficulty": "medium",
       "text": "A Rússia fica na Europa e na Ásia.",
       "answer": true,
       "fact": "Os Montes Urais marcam a divisão tradicional."
     },
     {
+      "id": "vf-geografia-93",
       "difficulty": "medium",
       "text": "O Canadá faz fronteira com o México.",
       "answer": false,
       "fact": "Os Estados Unidos ficam entre os dois."
     },
     {
+      "id": "vf-geografia-94",
       "difficulty": "hard",
       "text": "O Lesoto é totalmente cercado pela África do Sul.",
       "answer": true,
       "fact": "É um dos três países cercados por um só vizinho."
     },
     {
+      "id": "vf-geografia-95",
       "difficulty": "hard",
       "text": "O Mar Cáspio é um rio.",
       "answer": false,
       "fact": "Ele é o maior corpo de água interior do mundo."
     },
     {
+      "id": "vf-geografia-96",
       "difficulty": "hard",
       "text": "Istambul fica em dois continentes.",
       "answer": true,

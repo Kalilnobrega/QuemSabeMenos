@@ -2,6 +2,7 @@
   "theme": "Ciências",
   "questions": [
     {
+      "id": "chute-ciencias-1",
       "difficulty": "easy",
       "text": "Qual a velocidade da luz no vácuo?",
       "answer": 299792,
@@ -9,6 +10,7 @@
       "fact": "Em um segundo, a luz daria mais de sete voltas na Terra."
     },
     {
+      "id": "chute-ciencias-2",
       "difficulty": "easy",
       "text": "Quantos ossos tem o corpo humano adulto?",
       "answer": 206,
@@ -16,6 +18,7 @@
       "fact": "Um bebê nasce com cerca de 300; vários se fundem durante o crescimento."
     },
     {
+      "id": "chute-ciencias-3",
       "difficulty": "medium",
       "text": "A que temperatura a água ferve ao nível do mar, em Fahrenheit?",
       "answer": 212,
@@ -23,6 +26,7 @@
       "fact": "Na escala Fahrenheit, a água congela a 32 °F."
     },
     {
+      "id": "chute-ciencias-4",
       "difficulty": "medium",
       "text": "Quantos elementos tem a tabela periódica hoje?",
       "answer": 118,
@@ -30,6 +34,7 @@
       "fact": "Os quatro últimos foram nomeados em 2016, entre eles o oganessônio."
     },
     {
+      "id": "chute-ciencias-5",
       "difficulty": "medium",
       "text": "Qual a distância média da Terra até a Lua?",
       "answer": 384400,
@@ -37,6 +42,7 @@
       "fact": "A Lua se afasta da Terra cerca de 3,8 cm por ano."
     },
     {
+      "id": "chute-ciencias-6",
       "difficulty": "easy",
       "text": "Quantos dentes tem um adulto, contando os sisos?",
       "answer": 32,
@@ -44,12 +50,14 @@
       "fact": "As crianças têm 20 dentes de leite."
     },
     {
+      "id": "chute-ciencias-7",
       "difficulty": "hard",
       "text": "Qual o número atômico do ouro?",
       "answer": 79,
       "fact": "O símbolo Au vem de aurum, ouro em latim."
     },
     {
+      "id": "chute-ciencias-8",
       "difficulty": "hard",
       "text": "Qual a temperatura da superfície do Sol?",
       "answer": 5500,
@@ -57,6 +65,7 @@
       "fact": "O núcleo do Sol passa de 15 milhões de graus Celsius."
     },
     {
+      "id": "chute-ciencias-9",
       "difficulty": "easy",
       "text": "Quantos cromossomos tem uma célula humana comum?",
       "answer": 46,
@@ -64,6 +73,7 @@
       "fact": "São 23 pares: um conjunto vem da mãe e outro do pai."
     },
     {
+      "id": "chute-ciencias-10",
       "difficulty": "medium",
       "text": "Quantos minutos a luz do Sol leva para chegar à Terra?",
       "answer": 8.3,
@@ -71,6 +81,7 @@
       "fact": "São cerca de 8 minutos e 20 segundos."
     },
     {
+      "id": "chute-ciencias-11",
       "difficulty": "easy",
       "text": "Qual a temperatura do zero absoluto, em Celsius?",
       "answer": -273.15,
@@ -78,6 +89,7 @@
       "fact": "É o ponto em que as partículas teriam a menor energia possível; nada chega exatamente lá."
     },
     {
+      "id": "chute-ciencias-12",
       "difficulty": "hard",
       "text": "Em que ano Darwin publicou A Origem das Espécies?",
       "answer": 1859,
@@ -85,6 +97,7 @@
       "fact": "A primeira tiragem, de 1.250 exemplares, esgotou no primeiro dia."
     },
     {
+      "id": "chute-ciencias-13",
       "difficulty": "hard",
       "text": "Qual o diâmetro da Terra?",
       "answer": 12742,
@@ -92,6 +105,7 @@
       "fact": "A Terra é um pouco achatada: o diâmetro nos polos é cerca de 43 km menor."
     },
     {
+      "id": "chute-ciencias-14",
       "difficulty": "easy",
       "text": "Em que ano o homem pisou na Lua pela primeira vez?",
       "answer": 1969,
@@ -99,6 +113,7 @@
       "fact": "Neil Armstrong e Buzz Aldrin pousaram com a Apollo 11 em 20 de julho."
     },
     {
+      "id": "chute-ciencias-15",
       "difficulty": "medium",
       "text": "Qual a idade estimada do universo?",
       "answer": 13.8,
@@ -106,6 +121,7 @@
       "fact": "A estimativa vem da radiação cósmica de fundo, o 'eco' do Big Bang."
     },
     {
+      "id": "chute-ciencias-16",
       "difficulty": "medium",
       "text": "Qual a velocidade do som no ar, a 20 °C?",
       "answer": 343,
@@ -113,6 +129,7 @@
       "fact": "Na água, o som anda mais de quatro vezes mais rápido."
     },
     {
+      "id": "chute-ciencias-17",
       "difficulty": "medium",
       "text": "Em que ano o Brasil adotou o horário de verão pela primeira vez?",
       "answer": 1931,
@@ -120,6 +137,7 @@
       "fact": "Ele foi extinto em 2019."
     },
     {
+      "id": "chute-ciencias-18",
       "difficulty": "hard",
       "text": "Em que ano Isaac Newton publicou os Principia?",
       "answer": 1687,
@@ -127,6 +145,7 @@
       "fact": "No livro estão as três leis do movimento e a lei da gravitação universal."
     },
     {
+      "id": "chute-ciencias-19",
       "difficulty": "easy",
       "text": "Qual a aceleração da gravidade na superfície da Terra?",
       "answer": 9.8,
@@ -134,12 +153,14 @@
       "fact": "Na Lua, a gravidade é cerca de seis vezes menor."
     },
     {
+      "id": "chute-ciencias-20",
       "difficulty": "easy",
       "text": "Qual o pH da água pura?",
       "answer": 7,
       "fact": "Abaixo de 7 é ácido, acima é básico; o suco gástrico tem pH perto de 2."
     },
     {
+      "id": "chute-ciencias-21",
       "difficulty": "medium",
       "text": "Qual o peso do maior meteorito do mundo, o Hoba, em toneladas?",
       "answer": 60,
@@ -147,6 +168,7 @@
       "fact": "Ele fica na Namíbia e nunca foi removido do local."
     },
     {
+      "id": "chute-ciencias-22",
       "difficulty": "hard",
       "text": "Em que ano Marie Curie ganhou o primeiro Prêmio Nobel?",
       "answer": 1903,
@@ -154,6 +176,7 @@
       "fact": "Ela ganhou de novo em 1911 e foi a primeira pessoa com dois Nobel."
     },
     {
+      "id": "chute-ciencias-23",
       "difficulty": "hard",
       "text": "Quantas Terras cabem, lado a lado, no diâmetro do Sol?",
       "answer": 109,
@@ -161,6 +184,7 @@
       "fact": "Em volume, caberiam cerca de 1,3 milhão de Terras dentro do Sol."
     },
     {
+      "id": "chute-ciencias-24",
       "difficulty": "easy",
       "text": "Qual a temperatura normal do corpo humano?",
       "answer": 36.5,
@@ -168,6 +192,7 @@
       "fact": "A temperatura varia ao longo do dia e costuma ser mais baixa de madrugada."
     },
     {
+      "id": "chute-ciencias-25",
       "difficulty": "hard",
       "text": "Quantos ossos tem o crânio humano adulto?",
       "answer": 22,
@@ -175,6 +200,7 @@
       "fact": "São 8 ossos do neurocrânio e 14 da face."
     },
     {
+      "id": "chute-ciencias-26",
       "difficulty": "medium",
       "text": "Qual a distância média da Terra até o Sol?",
       "answer": 150,
@@ -182,6 +208,7 @@
       "fact": "Essa distância é a unidade astronômica, usada para medir o sistema solar."
     },
     {
+      "id": "chute-ciencias-27",
       "difficulty": "medium",
       "text": "Em que ano Alexander Fleming descobriu a penicilina?",
       "answer": 1928,
@@ -189,6 +216,7 @@
       "fact": "Ele notou que um fungo tinha matado as bactérias de uma placa esquecida no laboratório."
     },
     {
+      "id": "chute-ciencias-28",
       "difficulty": "hard",
       "text": "Qual a velocidade da Terra na órbita em volta do Sol?",
       "answer": 30,
@@ -196,6 +224,7 @@
       "fact": "São mais de 100 mil km/h, e mesmo assim não sentimos nada."
     },
     {
+      "id": "chute-ciencias-29",
       "difficulty": "medium",
       "text": "Em que ano Einstein publicou a Teoria da Relatividade Restrita?",
       "answer": 1905,
@@ -203,6 +232,7 @@
       "fact": "No mesmo ano, chamado de 'ano milagroso', ele publicou outros três artigos revolucionários."
     },
     {
+      "id": "chute-ciencias-30",
       "difficulty": "hard",
       "text": "A quantos anos-luz fica Proxima Centauri, a estrela mais próxima do Sol?",
       "answer": 4.24,
@@ -210,6 +240,7 @@
       "fact": "Com as sondas mais rápidas de hoje, a viagem levaria milhares de anos."
     },
     {
+      "id": "chute-ciencias-31",
       "difficulty": "easy",
       "text": "Quantos planetas tem o Sistema Solar?",
       "answer": 8,
@@ -217,6 +248,7 @@
       "fact": "Plutão perdeu o título em 2006."
     },
     {
+      "id": "chute-ciencias-32",
       "difficulty": "easy",
       "text": "Quantas horas a Terra leva para girar em torno de si mesma?",
       "answer": 24,
@@ -224,6 +256,7 @@
       "fact": "Na verdade, são 23 horas e 56 minutos."
     },
     {
+      "id": "chute-ciencias-33",
       "difficulty": "easy",
       "text": "Quantos dias a Terra leva para dar a volta no Sol?",
       "answer": 365,
@@ -231,6 +264,7 @@
       "fact": "Por isso existem anos bissextos."
     },
     {
+      "id": "chute-ciencias-34",
       "difficulty": "easy",
       "text": "Quantos dias, aproximadamente, a Lua leva para dar uma volta na Terra?",
       "answer": 27,
@@ -238,6 +272,7 @@
       "fact": "Sempre vemos o mesmo lado da Lua."
     },
     {
+      "id": "chute-ciencias-35",
       "difficulty": "easy",
       "text": "Quantos elementos químicos tem o sal de cozinha?",
       "answer": 2,
@@ -245,6 +280,7 @@
       "fact": "São o sódio e o cloro."
     },
     {
+      "id": "chute-ciencias-36",
       "difficulty": "easy",
       "text": "Quantos átomos tem uma molécula de água?",
       "answer": 3,
@@ -252,6 +288,7 @@
       "fact": "Dois de hidrogênio e um de oxigênio."
     },
     {
+      "id": "chute-ciencias-37",
       "difficulty": "easy",
       "text": "Quantos pares de cromossomos tem uma pessoa?",
       "answer": 23,
@@ -259,6 +296,7 @@
       "fact": "Um par define o sexo biológico."
     },
     {
+      "id": "chute-ciencias-38",
       "difficulty": "medium",
       "text": "Quantos ossos, aproximadamente, tem um bebê ao nascer?",
       "answer": 300,
@@ -266,6 +304,7 @@
       "fact": "Com o crescimento, vários se fundem."
     },
     {
+      "id": "chute-ciencias-39",
       "difficulty": "medium",
       "text": "Quantos músculos, aproximadamente, tem o corpo humano?",
       "answer": 600,
@@ -273,6 +312,7 @@
       "fact": "Eles representam cerca de 40% do peso."
     },
     {
+      "id": "chute-ciencias-40",
       "difficulty": "medium",
       "text": "Qual a temperatura normal do corpo, em Fahrenheit?",
       "answer": 98.6,
@@ -280,6 +320,7 @@
       "fact": "Essa medida foi definida no século XIX."
     },
     {
+      "id": "chute-ciencias-41",
       "difficulty": "easy",
       "text": "A quantos graus a água congela em Celsius, ao nível do mar?",
       "answer": 0,
@@ -288,6 +329,7 @@
       "fact": "A escala foi criada em 1742."
     },
     {
+      "id": "chute-ciencias-42",
       "difficulty": "medium",
       "text": "A quantos graus a água congela em Fahrenheit?",
       "answer": 32,
@@ -295,6 +337,7 @@
       "fact": "A escala Fahrenheit é usada nos EUA."
     },
     {
+      "id": "chute-ciencias-43",
       "difficulty": "medium",
       "text": "A quantos Kelvin a água congela?",
       "answer": 273.15,
@@ -302,6 +345,7 @@
       "fact": "A escala Kelvin começa no zero absoluto."
     },
     {
+      "id": "chute-ciencias-44",
       "difficulty": "easy",
       "text": "Quantos litros de sangue, em média, tem um adulto?",
       "answer": 5,
@@ -309,6 +353,7 @@
       "fact": "O sangue dá uma volta completa no corpo em cerca de 1 minuto."
     },
     {
+      "id": "chute-ciencias-45",
       "difficulty": "easy",
       "text": "Quantas câmaras tem o coração humano?",
       "answer": 4,
@@ -316,6 +361,7 @@
       "fact": "Dois átrios e dois ventrículos."
     },
     {
+      "id": "chute-ciencias-46",
       "difficulty": "easy",
       "text": "Quantas vezes por minuto, em média, o coração de um adulto bate em repouso?",
       "answer": 70,
@@ -323,6 +369,7 @@
       "fact": "Atletas podem ter valores abaixo de 40."
     },
     {
+      "id": "chute-ciencias-47",
       "difficulty": "medium",
       "text": "Quantas vezes por minuto, em média, um adulto respira em repouso?",
       "answer": 15,
@@ -330,6 +377,7 @@
       "fact": "Isso dá mais de 20 mil respirações por dia."
     },
     {
+      "id": "chute-ciencias-48",
       "difficulty": "easy",
       "text": "Qual o número atômico do hidrogênio?",
       "answer": 1,
@@ -337,6 +385,7 @@
       "fact": "É o elemento mais simples da tabela periódica."
     },
     {
+      "id": "chute-ciencias-49",
       "difficulty": "medium",
       "text": "Qual o número atômico do hélio?",
       "answer": 2,
@@ -344,6 +393,7 @@
       "fact": "O nome vem de Hélio, o deus Sol grego."
     },
     {
+      "id": "chute-ciencias-50",
       "difficulty": "medium",
       "text": "Qual o número atômico do carbono?",
       "answer": 6,
@@ -351,6 +401,7 @@
       "fact": "O carbono é a base da vida."
     },
     {
+      "id": "chute-ciencias-51",
       "difficulty": "medium",
       "text": "Qual o número atômico do oxigênio?",
       "answer": 8,
@@ -358,6 +409,7 @@
       "fact": "O oxigênio é o mais abundante na crosta terrestre."
     },
     {
+      "id": "chute-ciencias-52",
       "difficulty": "easy",
       "text": "Em que ano Neil Armstrong pisou na Lua?",
       "answer": 1969,
@@ -365,6 +417,7 @@
       "fact": "A primeira pegada dele ainda está lá, porque na Lua não venta."
     },
     {
+      "id": "chute-ciencias-53",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Sputnik?",
       "answer": 1957,
@@ -372,6 +425,7 @@
       "fact": "Foi o primeiro satélite artificial."
     },
     {
+      "id": "chute-ciencias-54",
       "difficulty": "medium",
       "text": "Em que ano Yuri Gagarin foi ao espaço?",
       "answer": 1961,
@@ -379,6 +433,7 @@
       "fact": "O voo durou 108 minutos."
     },
     {
+      "id": "chute-ciencias-55",
       "difficulty": "medium",
       "text": "Em que ano Thomas Edison patenteou a lâmpada?",
       "answer": 1880,
@@ -386,6 +441,7 @@
       "fact": "Ele testou milhares de materiais antes."
     },
     {
+      "id": "chute-ciencias-56",
       "difficulty": "medium",
       "text": "Em que ano Graham Bell patenteou o telefone?",
       "answer": 1876,
@@ -393,6 +449,7 @@
       "fact": "Dizem que ele chegou duas horas antes de um rival."
     },
     {
+      "id": "chute-ciencias-57",
       "difficulty": "medium",
       "text": "Em que ano Roentgen descobriu os raios X?",
       "answer": 1895,
@@ -400,6 +457,7 @@
       "fact": "A primeira imagem foi da mão da esposa dele."
     },
     {
+      "id": "chute-ciencias-58",
       "difficulty": "medium",
       "text": "Em que ano a penicilina foi descoberta?",
       "answer": 1928,
@@ -407,6 +465,7 @@
       "fact": "Fleming esqueceu uma placa de cultura ao sair de férias."
     },
     {
+      "id": "chute-ciencias-59",
       "difficulty": "medium",
       "text": "Em que ano foi publicada a teoria da relatividade geral?",
       "answer": 1915,
@@ -414,6 +473,7 @@
       "fact": "Foi confirmada por um eclipse no Ceará, em 1919."
     },
     {
+      "id": "chute-ciencias-60",
       "difficulty": "medium",
       "text": "Em que ano foi descoberta a estrutura do DNA?",
       "answer": 1953,
@@ -421,6 +481,7 @@
       "fact": "Watson e Crick publicaram o artigo na revista Nature."
     },
     {
+      "id": "chute-ciencias-61",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o desastre de Chernobyl?",
       "answer": 1986,
@@ -428,6 +489,7 @@
       "fact": "A cidade de Pripyat foi abandonada."
     },
     {
+      "id": "chute-ciencias-62",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o desastre de Fukushima?",
       "answer": 2011,
@@ -435,6 +497,7 @@
       "fact": "Foi causado por um tsunami, depois de um terremoto."
     },
     {
+      "id": "chute-ciencias-63",
       "difficulty": "easy",
       "text": "Em que ano aconteceu o acidente com o Césio-137, em Goiânia?",
       "answer": 1987,
@@ -442,6 +505,7 @@
       "fact": "Foi o pior acidente radiológico do Brasil."
     },
     {
+      "id": "chute-ciencias-64",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a chegada do Perseverance a Marte?",
       "answer": 2021,
@@ -449,6 +513,7 @@
       "fact": "Ele levou o pequeno helicóptero Ingenuity."
     },
     {
+      "id": "chute-ciencias-65",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o telescópio Hubble?",
       "answer": 1990,
@@ -456,6 +521,7 @@
       "fact": "Precisou de um conserto no espaço em 1993."
     },
     {
+      "id": "chute-ciencias-66",
       "difficulty": "medium",
       "text": "Em que ano Plutão foi descoberto?",
       "answer": 1930,
@@ -463,6 +529,7 @@
       "fact": "Foi descoberto por Clyde Tombaugh."
     },
     {
+      "id": "chute-ciencias-67",
       "difficulty": "medium",
       "text": "Em que ano o homem voltou à Lua pela última vez?",
       "answer": 1972,
@@ -470,6 +537,7 @@
       "fact": "Foi na missão Apollo 17."
     },
     {
+      "id": "chute-ciencias-68",
       "difficulty": "easy",
       "text": "Em que ano a OMS declarou a pandemia de Covid-19?",
       "answer": 2020,
@@ -477,6 +545,7 @@
       "fact": "A declaração saiu em 11 de março."
     },
     {
+      "id": "chute-ciencias-69",
       "difficulty": "hard",
       "text": "Em que ano Galileu viu as luas de Júpiter?",
       "answer": 1610,
@@ -484,6 +553,7 @@
       "fact": "Seu telescópio aumentava apenas 20 vezes."
     },
     {
+      "id": "chute-ciencias-70",
       "difficulty": "medium",
       "text": "Em que ano nasceu Albert Einstein?",
       "answer": 1879,
@@ -491,6 +561,7 @@
       "fact": "Ele nasceu na Alemanha, em Ulm."
     },
     {
+      "id": "chute-ciencias-71",
       "difficulty": "easy",
       "text": "Em que ano morreu Stephen Hawking?",
       "answer": 2018,
@@ -498,6 +569,7 @@
       "fact": "Foi no dia do Pi, em 14 de março."
     },
     {
+      "id": "chute-ciencias-72",
       "difficulty": "medium",
       "text": "Em que ano nasceu Isaac Newton?",
       "answer": 1643,
@@ -505,6 +577,7 @@
       "fact": "Era 25 de dezembro, no calendário antigo da época."
     },
     {
+      "id": "chute-ciencias-73",
       "difficulty": "medium",
       "text": "Em que ano nasceu Marie Curie?",
       "answer": 1867,
@@ -512,6 +585,7 @@
       "fact": "Ela nasceu em Varsóvia."
     },
     {
+      "id": "chute-ciencias-74",
       "difficulty": "easy",
       "text": "Quantos prêmios Nobel Marie Curie ganhou?",
       "answer": 2,
@@ -519,6 +593,7 @@
       "fact": "Em física e em química."
     },
     {
+      "id": "chute-ciencias-75",
       "difficulty": "medium",
       "text": "Quantos astronautas pisaram na Lua?",
       "answer": 12,
@@ -526,6 +601,7 @@
       "fact": "Todos os doze são americanos."
     },
     {
+      "id": "chute-ciencias-76",
       "difficulty": "medium",
       "text": "Quantos dias durou a missão Apollo 11, aproximadamente?",
       "answer": 8,
@@ -533,6 +609,7 @@
       "fact": "Armstrong e Aldrin ficaram 21 horas e meia na superfície."
     },
     {
+      "id": "chute-ciencias-77",
       "difficulty": "hard",
       "text": "Quantas horas os astronautas da Apollo 11 ficaram na superfície da Lua?",
       "answer": 21.5,
@@ -540,6 +617,7 @@
       "fact": "Foram cerca de 2 horas e meia fora do módulo."
     },
     {
+      "id": "chute-ciencias-78",
       "difficulty": "medium",
       "text": "Quantos tripulantes tem, em geral, a Estação Espacial?",
       "answer": 7,
@@ -547,6 +625,7 @@
       "fact": "A estação recebe visitantes de vários países."
     },
     {
+      "id": "chute-ciencias-79",
       "difficulty": "medium",
       "text": "Quantos km acima da Terra orbita a Estação Espacial, aproximadamente?",
       "answer": 400,
@@ -554,6 +633,7 @@
       "fact": "Ela é tão brilhante que dá para vê-la sem telescópio."
     },
     {
+      "id": "chute-ciencias-80",
       "difficulty": "hard",
       "text": "Qual é a velocidade da Estação Espacial, aproximadamente, em km/h?",
       "answer": 27600,
@@ -561,6 +641,7 @@
       "fact": "Ela dá 16 voltas por dia na Terra."
     },
     {
+      "id": "chute-ciencias-81",
       "difficulty": "easy",
       "text": "Quantas luas tem a Terra?",
       "answer": 1,
@@ -568,6 +649,7 @@
       "fact": "Ela se afasta 3,8 cm por ano."
     },
     {
+      "id": "chute-ciencias-82",
       "difficulty": "medium",
       "text": "Quantas luas tem Mercúrio?",
       "answer": 0,
@@ -576,6 +658,7 @@
       "fact": "O planeta é muito próximo do Sol para manter um satélite."
     },
     {
+      "id": "chute-ciencias-83",
       "difficulty": "medium",
       "text": "Quantas luas tem Vênus?",
       "answer": 0,
@@ -584,6 +667,7 @@
       "fact": "Pode ser que tenha tido uma no passado."
     },
     {
+      "id": "chute-ciencias-84",
       "difficulty": "hard",
       "text": "Quantas horas dura o dia em Júpiter, aproximadamente?",
       "answer": 10,
@@ -591,6 +675,7 @@
       "fact": "É o planeta que gira mais rápido."
     },
     {
+      "id": "chute-ciencias-85",
       "difficulty": "medium",
       "text": "Quantos anos Saturno leva para dar a volta no Sol?",
       "answer": 29,
@@ -598,6 +683,7 @@
       "fact": "Galileu viu seus anéis, mas achou que eram orelhas."
     },
     {
+      "id": "chute-ciencias-86",
       "difficulty": "medium",
       "text": "Quantos anos Júpiter leva para dar a volta no Sol?",
       "answer": 12,
@@ -605,6 +691,7 @@
       "fact": "Júpiter é o maior planeta do Sistema Solar."
     },
     {
+      "id": "chute-ciencias-87",
       "difficulty": "medium",
       "text": "Quantos dias Mercúrio leva para dar a volta no Sol?",
       "answer": 88,
@@ -612,6 +699,7 @@
       "fact": "É o planeta mais rápido em sua órbita."
     },
     {
+      "id": "chute-ciencias-88",
       "difficulty": "medium",
       "text": "Quantos dias Marte leva para dar a volta no Sol?",
       "answer": 687,
@@ -619,6 +707,7 @@
       "fact": "Seu ano é quase o dobro do nosso."
     },
     {
+      "id": "chute-ciencias-89",
       "difficulty": "medium",
       "text": "Quantos dias Vênus leva para dar a volta no Sol?",
       "answer": 225,
@@ -626,6 +715,7 @@
       "fact": "Ele tem a rotação mais lenta do Sistema Solar."
     },
     {
+      "id": "chute-ciencias-90",
       "difficulty": "hard",
       "text": "Quantos anos terrestres Netuno leva para dar a volta no Sol?",
       "answer": 165,
@@ -633,6 +723,7 @@
       "fact": "Ele completou uma volta desde a descoberta só em 2011."
     },
     {
+      "id": "chute-ciencias-91",
       "difficulty": "medium",
       "text": "Qual a temperatura média na Terra, em °C?",
       "answer": 15,
@@ -640,6 +731,7 @@
       "fact": "Sem efeito estufa, seria cerca de -18 °C."
     },
     {
+      "id": "chute-ciencias-92",
       "difficulty": "medium",
       "text": "Qual a temperatura média em Marte, em °C?",
       "answer": -63,
@@ -647,6 +739,7 @@
       "fact": "No verão, chega perto de 20 °C em alguns pontos."
     },
     {
+      "id": "chute-ciencias-93",
       "difficulty": "medium",
       "text": "Qual a temperatura média em Vênus, em °C?",
       "answer": 464,
@@ -654,6 +747,7 @@
       "fact": "É quente o bastante para derreter chumbo."
     },
     {
+      "id": "chute-ciencias-94",
       "difficulty": "hard",
       "text": "Qual a temperatura de noite em Mercúrio, em °C?",
       "answer": -180,
@@ -661,6 +755,7 @@
       "fact": "De dia, ela chega a 430 °C."
     },
     {
+      "id": "chute-ciencias-95",
       "difficulty": "hard",
       "text": "Qual a temperatura de dia em Mercúrio, em °C?",
       "answer": 430,
@@ -668,6 +763,7 @@
       "fact": "Ele quase não tem atmosfera para reter o calor."
     },
     {
+      "id": "chute-ciencias-96",
       "difficulty": "medium",
       "text": "Qual a temperatura média em Netuno, em °C?",
       "answer": -200,
@@ -675,6 +771,7 @@
       "fact": "Tem também os ventos mais rápidos do Sistema Solar."
     },
     {
+      "id": "chute-ciencias-97",
       "difficulty": "hard",
       "text": "Qual a temperatura na superfície da Lua de noite, em °C?",
       "answer": -173,
@@ -682,6 +779,7 @@
       "fact": "De dia, passa de 120 °C."
     },
     {
+      "id": "chute-ciencias-98",
       "difficulty": "hard",
       "text": "Qual a temperatura na superfície da Lua de dia, em °C?",
       "answer": 127,
@@ -689,6 +787,7 @@
       "fact": "Ela não tem atmosfera para reter o calor."
     },
     {
+      "id": "chute-ciencias-99",
       "difficulty": "medium",
       "text": "Qual a temperatura de uma chama de vela, em °C?",
       "answer": 1400,
@@ -696,6 +795,7 @@
       "fact": "O ponto mais quente fica bem na parte azul."
     },
     {
+      "id": "chute-ciencias-100",
       "difficulty": "medium",
       "text": "A que temperatura o papel entra em combustão, em Fahrenheit?",
       "answer": 451,
@@ -703,6 +803,7 @@
       "fact": "Daí vem o nome do livro de Ray Bradbury."
     },
     {
+      "id": "chute-ciencias-101",
       "difficulty": "medium",
       "text": "A que temperatura o ferro derrete, em °C?",
       "answer": 1538,
@@ -710,6 +811,7 @@
       "fact": "Ele é o metal mais usado pela humanidade."
     },
     {
+      "id": "chute-ciencias-102",
       "difficulty": "medium",
       "text": "A que temperatura o ouro derrete, em °C?",
       "answer": 1064,
@@ -717,6 +819,7 @@
       "fact": "Ele tem baixa dureza, mas é muito estável."
     },
     {
+      "id": "chute-ciencias-103",
       "difficulty": "medium",
       "text": "A que temperatura o chumbo derrete, em °C?",
       "answer": 327,
@@ -724,6 +827,7 @@
       "fact": "Esse é um dos metais mais fáceis de fundir."
     },
     {
+      "id": "chute-ciencias-104",
       "difficulty": "medium",
       "text": "A que temperatura o nitrogênio líquido ferve, em °C?",
       "answer": -196,
@@ -731,6 +835,7 @@
       "fact": "Ele é muito usado na conservação de células."
     },
     {
+      "id": "chute-ciencias-105",
       "difficulty": "hard",
       "text": "A que temperatura o hélio líquido ferve, em °C?",
       "answer": -269,
@@ -738,6 +843,7 @@
       "fact": "É o mais frio dos líquidos comuns em laboratório."
     },
     {
+      "id": "chute-ciencias-106",
       "difficulty": "hard",
       "text": "A que temperatura o mercúrio congela, em °C?",
       "answer": -39,
@@ -745,6 +851,7 @@
       "fact": "Por isso, ele é líquido na temperatura ambiente."
     },
     {
+      "id": "chute-ciencias-107",
       "difficulty": "hard",
       "text": "A que temperatura o álcool etílico congela, em °C?",
       "answer": -114,
@@ -752,6 +859,7 @@
       "fact": "Por isso, é usado como anticongelante."
     },
     {
+      "id": "chute-ciencias-108",
       "difficulty": "hard",
       "text": "A que temperatura o oxigênio se torna líquido, em °C?",
       "answer": -183,
@@ -759,6 +867,7 @@
       "fact": "Ele tem uma cor azul-claro."
     },
     {
+      "id": "chute-ciencias-109",
       "difficulty": "hard",
       "text": "Qual o zero absoluto em Fahrenheit?",
       "answer": -459.67,
@@ -766,6 +875,7 @@
       "fact": "É o ponto em que as partículas têm o mínimo de energia."
     },
     {
+      "id": "chute-ciencias-110",
       "difficulty": "medium",
       "text": "Qual o pH do vinagre, aproximadamente?",
       "answer": 2.5,
@@ -773,6 +883,7 @@
       "fact": "Vinagre é uma solução diluída de ácido acético."
     },
     {
+      "id": "chute-ciencias-111",
       "difficulty": "medium",
       "text": "Qual o pH do suco gástrico, aproximadamente?",
       "answer": 1.5,
@@ -780,6 +891,7 @@
       "fact": "Ele é tão ácido que dissolve alguns metais."
     },
     {
+      "id": "chute-ciencias-112",
       "difficulty": "medium",
       "text": "Qual o pH da água sanitária, aproximadamente?",
       "answer": 12,
@@ -787,6 +899,7 @@
       "fact": "Por isso ela é tão agressiva à pele."
     },
     {
+      "id": "chute-ciencias-113",
       "difficulty": "medium",
       "text": "Qual o pH do sangue humano, aproximadamente?",
       "answer": 7.4,
@@ -794,6 +907,7 @@
       "fact": "Um pequeno desvio já é perigoso à saúde."
     },
     {
+      "id": "chute-ciencias-114",
       "difficulty": "medium",
       "text": "Qual a porcentagem de nitrogênio na atmosfera?",
       "answer": 78,
@@ -801,6 +915,7 @@
       "fact": "O nitrogênio é pouco reativo."
     },
     {
+      "id": "chute-ciencias-115",
       "difficulty": "hard",
       "text": "Qual a porcentagem de argônio na atmosfera?",
       "answer": 0.93,
@@ -808,6 +923,7 @@
       "fact": "É o terceiro gás mais abundante do ar."
     },
     {
+      "id": "chute-ciencias-116",
       "difficulty": "medium",
       "text": "Qual a porcentagem de água no cérebro humano?",
       "answer": 75,
@@ -815,6 +931,7 @@
       "fact": "Pouca desidratação já pode prejudicar a atenção."
     },
     {
+      "id": "chute-ciencias-117",
       "difficulty": "hard",
       "text": "Qual a porcentagem de oxigênio em massa no corpo humano?",
       "answer": 65,
@@ -822,6 +939,7 @@
       "fact": "Ele vem principalmente da água."
     },
     {
+      "id": "chute-ciencias-118",
       "difficulty": "easy",
       "text": "Qual a porcentagem de DNA em comum entre os humanos?",
       "answer": 99.9,
@@ -829,6 +947,7 @@
       "fact": "A diferença é pequena, mas nos torna únicos."
     },
     {
+      "id": "chute-ciencias-119",
       "difficulty": "medium",
       "text": "Qual a fração da energia total usada pelo cérebro, em %?",
       "answer": 20,
@@ -836,6 +955,7 @@
       "fact": "Ele pesa só 2% do corpo."
     },
     {
+      "id": "chute-ciencias-120",
       "difficulty": "medium",
       "text": "Qual a porcentagem do corpo representada pelo peso do cérebro?",
       "answer": 2,
@@ -843,6 +963,7 @@
       "fact": "Ele usa muito mais energia do que parece."
     },
     {
+      "id": "chute-ciencias-121",
       "difficulty": "hard",
       "text": "Qual o tempo máximo sem dormir já registrado, em dias?",
       "answer": 11,
@@ -850,6 +971,7 @@
       "fact": "O americano Randy Gardner fez isso em 1964."
     },
     {
+      "id": "chute-ciencias-122",
       "difficulty": "medium",
       "text": "Quantos anos, em média, uma pessoa dorme ao longo da vida?",
       "answer": 26,
@@ -857,6 +979,7 @@
       "fact": "É cerca de um terço da vida."
     },
     {
+      "id": "chute-ciencias-123",
       "difficulty": "medium",
       "text": "Quantos cm a unha da mão cresce por ano?",
       "answer": 4,
@@ -864,6 +987,7 @@
       "fact": "A unha do pé cresce bem mais devagar."
     },
     {
+      "id": "chute-ciencias-124",
       "difficulty": "easy",
       "text": "Quantos cm o cabelo cresce por mês?",
       "answer": 1,
@@ -871,6 +995,7 @@
       "fact": "O cabelo mais longo do mundo tem quase 6 metros."
     },
     {
+      "id": "chute-ciencias-125",
       "difficulty": "medium",
       "text": "Em que ano Gregor Mendel publicou suas leis da herança?",
       "answer": 1866,
@@ -878,6 +1003,7 @@
       "fact": "Mendel era monge e fez os testes com ervilhas."
     },
     {
+      "id": "chute-ciencias-126",
       "difficulty": "medium",
       "text": "Em que ano Oswaldo Cruz organizou a campanha contra a febre amarela?",
       "answer": 1903,
@@ -885,6 +1011,7 @@
       "fact": "A vacinação foi uma das causas da Revolta da Vacina de 1904."
     },
     {
+      "id": "chute-ciencias-127",
       "difficulty": "medium",
       "text": "Em que ano foi realizada a primeira vacina, contra a varíola?",
       "answer": 1796,
@@ -892,6 +1019,7 @@
       "fact": "Jenner usou material de pústulas de vacas."
     },
     {
+      "id": "chute-ciencias-128",
       "difficulty": "medium",
       "text": "Em que ano a varíola foi declarada erradicada pela OMS?",
       "answer": 1980,
@@ -899,6 +1027,7 @@
       "fact": "Foi a primeira doença humana erradicada."
     },
     {
+      "id": "chute-ciencias-129",
       "difficulty": "medium",
       "text": "Em que ano foi feito o primeiro transplante de coração no Brasil?",
       "answer": 1968,
@@ -906,6 +1035,7 @@
       "fact": "Foi conduzido por Euryclides Zerbini, em São Paulo."
     },
     {
+      "id": "chute-ciencias-130",
       "difficulty": "medium",
       "text": "Em que ano foi feito o primeiro transplante de coração do mundo?",
       "answer": 1967,
@@ -913,6 +1043,7 @@
       "fact": "O paciente viveu 18 dias."
     },
     {
+      "id": "chute-ciencias-131",
       "difficulty": "medium",
       "text": "Em que ano nasceu o primeiro bebê de proveta?",
       "answer": 1978,
@@ -920,6 +1051,7 @@
       "fact": "Louise Brown nasceu na Inglaterra."
     },
     {
+      "id": "chute-ciencias-132",
       "difficulty": "easy",
       "text": "Em que ano a ovelha Dolly foi anunciada ao mundo?",
       "answer": 1997,
@@ -927,6 +1059,7 @@
       "fact": "Ela nasceu no ano anterior, na Escócia."
     },
     {
+      "id": "chute-ciencias-133",
       "difficulty": "easy",
       "text": "Em que ano o Bóson de Higgs foi confirmado?",
       "answer": 2012,
@@ -934,6 +1067,7 @@
       "fact": "A descoberta foi feita pelo LHC."
     },
     {
+      "id": "chute-ciencias-134",
       "difficulty": "medium",
       "text": "Em que ano foi lançada a sonda Voyager 1?",
       "answer": 1977,
@@ -941,6 +1075,7 @@
       "fact": "Ela continua transmitindo dados."
     },
     {
+      "id": "chute-ciencias-135",
       "difficulty": "medium",
       "text": "Em que ano foi criada a NASA?",
       "answer": 1958,
@@ -948,6 +1083,7 @@
       "fact": "Antes, havia uma agência chamada NACA."
     },
     {
+      "id": "chute-ciencias-136",
       "difficulty": "medium",
       "text": "Em que ano a Estação Espacial começou a ser montada?",
       "answer": 1998,
@@ -955,6 +1091,7 @@
       "fact": "Ela está em órbita desde então."
     },
     {
+      "id": "chute-ciencias-137",
       "difficulty": "hard",
       "text": "Em que ano Galileu foi condenado pela Inquisição?",
       "answer": 1633,
@@ -962,6 +1099,7 @@
       "fact": "Ele passou o resto da vida em prisão domiciliar."
     },
     {
+      "id": "chute-ciencias-138",
       "difficulty": "hard",
       "text": "Quantas Terras cabem no volume do Sol, aproximadamente?",
       "answer": 1300000,
@@ -969,6 +1107,7 @@
       "fact": "O Sol tem 99,8% da massa do Sistema Solar."
     },
     {
+      "id": "chute-ciencias-139",
       "difficulty": "hard",
       "text": "Quantas vezes por dia, em média, as pessoas piscam?",
       "answer": 14400,
@@ -976,6 +1115,7 @@
       "fact": "São cerca de 10 piscadas por minuto."
     },
     {
+      "id": "chute-ciencias-140",
       "difficulty": "medium",
       "text": "Quantos anos dura, em média, um ciclo solar?",
       "answer": 11,
@@ -983,6 +1123,7 @@
       "fact": "As manchas do Sol aumentam e diminuem nesse ritmo."
     },
     {
+      "id": "chute-ciencias-141",
       "difficulty": "hard",
       "text": "Quantos anos-luz tem de distância Sirius, aproximadamente?",
       "answer": 8.6,
@@ -990,6 +1131,7 @@
       "fact": "É a estrela mais brilhante do céu noturno."
     },
     {
+      "id": "chute-ciencias-142",
       "difficulty": "hard",
       "text": "Quantos anos-luz tem Andrômeda de distância, em milhões?",
       "answer": 2.5,
@@ -997,6 +1139,7 @@
       "fact": "É o objeto mais distante visível a olho nu."
     },
     {
+      "id": "chute-ciencias-143",
       "difficulty": "medium",
       "text": "Qual é a velocidade da luz em metros por segundo, valor exato?",
       "answer": 299792458,
@@ -1004,6 +1147,7 @@
       "fact": "Esse número é exato por definição desde 1983."
     },
     {
+      "id": "chute-ciencias-144",
       "difficulty": "medium",
       "text": "Qual a distância da Terra até o Sol, em km?",
       "answer": 149600000,
@@ -1011,6 +1155,7 @@
       "fact": "É a chamada unidade astronômica."
     },
     {
+      "id": "chute-ciencias-145",
       "difficulty": "medium",
       "text": "Qual a distância média da Terra até Marte, em km?",
       "answer": 225000000,
@@ -1018,6 +1163,7 @@
       "fact": "Na melhor oportunidade, a viagem leva cerca de 7 meses."
     },
     {
+      "id": "chute-ciencias-146",
       "difficulty": "medium",
       "text": "Qual a distância média do Sol até Netuno, em km?",
       "answer": 4500000000,
@@ -1025,6 +1171,7 @@
       "fact": "A luz do Sol leva 4 horas para chegar até lá."
     },
     {
+      "id": "chute-ciencias-147",
       "difficulty": "medium",
       "text": "Qual a distância da Voyager 1 até a Terra em 2024, em bilhões de km?",
       "answer": 24.5,
@@ -1032,6 +1179,7 @@
       "fact": "É o objeto feito pelo homem mais distante."
     },
     {
+      "id": "chute-ciencias-148",
       "difficulty": "medium",
       "text": "Qual o diâmetro do Sol, em km?",
       "answer": 1390000,
@@ -1039,6 +1187,7 @@
       "fact": "Isso é cerca de 109 vezes o diâmetro da Terra."
     },
     {
+      "id": "chute-ciencias-149",
       "difficulty": "medium",
       "text": "Qual o diâmetro da Lua, em km?",
       "answer": 3474,
@@ -1046,6 +1195,7 @@
       "fact": "É pouco mais de um quarto do diâmetro da Terra."
     },
     {
+      "id": "chute-ciencias-150",
       "difficulty": "medium",
       "text": "Qual o diâmetro de Júpiter, em km?",
       "answer": 139820,
@@ -1053,6 +1203,7 @@
       "fact": "É o maior planeta do Sistema Solar."
     },
     {
+      "id": "chute-ciencias-151",
       "difficulty": "medium",
       "text": "Qual o diâmetro de Marte, em km?",
       "answer": 6779,
@@ -1060,6 +1211,7 @@
       "fact": "É cerca de metade do diâmetro da Terra."
     },
     {
+      "id": "chute-ciencias-152",
       "difficulty": "medium",
       "text": "Qual o diâmetro de Mercúrio, em km?",
       "answer": 4879,
@@ -1067,6 +1219,7 @@
       "fact": "Ele é menor que Ganimedes, lua de Júpiter."
     },
     {
+      "id": "chute-ciencias-153",
       "difficulty": "medium",
       "text": "Qual o diâmetro de Plutão, em km?",
       "answer": 2377,
@@ -1074,6 +1227,7 @@
       "fact": "É menor que a nossa Lua."
     },
     {
+      "id": "chute-ciencias-154",
       "difficulty": "medium",
       "text": "Qual a massa do Sol, em relação à Terra, em vezes?",
       "answer": 333000,
@@ -1081,6 +1235,7 @@
       "fact": "Ele tem massa muito maior que a de todos os planetas."
     },
     {
+      "id": "chute-ciencias-155",
       "difficulty": "medium",
       "text": "Quantas vezes a gravidade na Lua é menor que a da Terra, aproximadamente?",
       "answer": 6,
@@ -1088,6 +1243,7 @@
       "fact": "Armstrong podia saltar com facilidade mesmo com o traje pesado."
     },
     {
+      "id": "chute-ciencias-156",
       "difficulty": "medium",
       "text": "Quantas vezes a gravidade de Júpiter é maior que a da Terra, aproximadamente?",
       "answer": 2.5,
@@ -1095,6 +1251,7 @@
       "fact": "Uma pessoa de 70 kg sentiria 177 kg."
     },
     {
+      "id": "chute-ciencias-157",
       "difficulty": "medium",
       "text": "Qual é a aceleração da gravidade na Lua, em m/s²?",
       "answer": 1.62,
@@ -1102,6 +1259,7 @@
       "fact": "Dá para pular muito mais alto lá."
     },
     {
+      "id": "chute-ciencias-158",
       "difficulty": "medium",
       "text": "Qual é a aceleração da gravidade em Marte, em m/s²?",
       "answer": 3.71,
@@ -1109,6 +1267,7 @@
       "fact": "Cerca de 38% da gravidade da Terra."
     },
     {
+      "id": "chute-ciencias-159",
       "difficulty": "medium",
       "text": "Qual é a velocidade de escape da Terra, em km/h?",
       "answer": 40320,
@@ -1116,6 +1275,7 @@
       "fact": "Foguetes precisam vencer essa velocidade para ir além da órbita."
     },
     {
+      "id": "chute-ciencias-160",
       "difficulty": "medium",
       "text": "Qual é a velocidade de escape do Sol, em km/s?",
       "answer": 618,
@@ -1123,6 +1283,7 @@
       "fact": "É mais de 50 vezes a da Terra."
     },
     {
+      "id": "chute-ciencias-161",
       "difficulty": "medium",
       "text": "Qual é a velocidade de rotação da Terra no Equador, em km/h?",
       "answer": 1670,
@@ -1130,6 +1291,7 @@
       "fact": "Em São Paulo, é um pouco menor."
     },
     {
+      "id": "chute-ciencias-162",
       "difficulty": "medium",
       "text": "Qual é a velocidade da Terra ao redor do Sol, em km/h?",
       "answer": 107000,
@@ -1137,6 +1299,7 @@
       "fact": "Nós não percebemos, porque tudo se move junto."
     },
     {
+      "id": "chute-ciencias-163",
       "difficulty": "medium",
       "text": "Qual é a idade da Terra, em bilhões de anos?",
       "answer": 4.5,
@@ -1144,6 +1307,7 @@
       "fact": "Foi calculada a partir de meteoritos por Clair Patterson."
     },
     {
+      "id": "chute-ciencias-164",
       "difficulty": "medium",
       "text": "Qual é a idade do Sol, em bilhões de anos?",
       "answer": 4.6,
@@ -1151,6 +1315,7 @@
       "fact": "Ele ainda vai durar uns 5 bilhões de anos."
     },
     {
+      "id": "chute-ciencias-165",
       "difficulty": "medium",
       "text": "Qual é a idade do Universo, em bilhões de anos?",
       "answer": 13.8,
@@ -1158,6 +1323,7 @@
       "fact": "Foi calculada principalmente com a radiação cósmica de fundo."
     },
     {
+      "id": "chute-ciencias-166",
       "difficulty": "medium",
       "text": "Quantos bilhões de anos o Sol ainda tem de vida, aproximadamente?",
       "answer": 5,
@@ -1165,6 +1331,7 @@
       "fact": "Depois ele vai virar gigante vermelha e anã branca."
     },
     {
+      "id": "chute-ciencias-167",
       "difficulty": "medium",
       "text": "Quantos elementos químicos há na tabela periódica?",
       "answer": 118,
@@ -1172,6 +1339,7 @@
       "fact": "O último, oganessônio, foi nomeado em 2016."
     },
     {
+      "id": "chute-ciencias-168",
       "difficulty": "medium",
       "text": "Quantos elementos químicos surgem naturalmente, aproximadamente?",
       "answer": 94,
@@ -1179,6 +1347,7 @@
       "fact": "Os outros foram criados em laboratório."
     },
     {
+      "id": "chute-ciencias-169",
       "difficulty": "medium",
       "text": "Qual o número atômico do urânio?",
       "answer": 92,
@@ -1186,6 +1355,7 @@
       "fact": "Ele foi descoberto em 1789 e nomeado por causa de Urano."
     },
     {
+      "id": "chute-ciencias-170",
       "difficulty": "medium",
       "text": "Qual o número atômico do ferro?",
       "answer": 26,
@@ -1193,6 +1363,7 @@
       "fact": "O ferro é o principal metal do núcleo da Terra."
     },
     {
+      "id": "chute-ciencias-171",
       "difficulty": "medium",
       "text": "Qual o número atômico da prata?",
       "answer": 47,
@@ -1200,6 +1371,7 @@
       "fact": "A prata é o melhor condutor de eletricidade."
     },
     {
+      "id": "chute-ciencias-172",
       "difficulty": "medium",
       "text": "Qual o número atômico do cobre?",
       "answer": 29,
@@ -1207,6 +1379,7 @@
       "fact": "A Estátua da Liberdade é coberta dele."
     },
     {
+      "id": "chute-ciencias-173",
       "difficulty": "medium",
       "text": "Qual o número atômico do sódio?",
       "answer": 11,
@@ -1214,6 +1387,7 @@
       "fact": "O sódio reage violentamente com a água."
     },
     {
+      "id": "chute-ciencias-174",
       "difficulty": "medium",
       "text": "Qual o número atômico do mercúrio?",
       "answer": 80,
@@ -1221,6 +1395,7 @@
       "fact": "É o único metal líquido à temperatura ambiente, junto de poucos outros em dias quentes."
     },
     {
+      "id": "chute-ciencias-175",
       "difficulty": "medium",
       "text": "Qual o número atômico do chumbo?",
       "answer": 82,
@@ -1228,6 +1403,7 @@
       "fact": "Foi muito usado em tintas e encanamentos no passado."
     },
     {
+      "id": "chute-ciencias-176",
       "difficulty": "medium",
       "text": "Qual o número atômico do polônio?",
       "answer": 84,
@@ -1235,6 +1411,7 @@
       "fact": "Marie Curie o nomeou em homenagem à Polônia."
     },
     {
+      "id": "chute-ciencias-177",
       "difficulty": "medium",
       "text": "Qual o número atômico do rádio?",
       "answer": 88,
@@ -1242,6 +1419,7 @@
       "fact": "Ele foi descoberto pelo casal Curie em 1898."
     },
     {
+      "id": "chute-ciencias-178",
       "difficulty": "medium",
       "text": "Qual é a massa de um próton, em relação à de um elétron, em vezes?",
       "answer": 1836,
@@ -1249,6 +1427,7 @@
       "fact": "Quase toda a massa do átomo vem do núcleo."
     },
     {
+      "id": "chute-ciencias-179",
       "difficulty": "medium",
       "text": "Quantos elétrons, no máximo, cabem na primeira camada de um átomo?",
       "answer": 2,
@@ -1256,6 +1435,7 @@
       "fact": "Por isso o hélio é um gás nobre."
     },
     {
+      "id": "chute-ciencias-180",
       "difficulty": "medium",
       "text": "Quantos elétrons cabem na segunda camada de um átomo?",
       "answer": 8,
@@ -1263,6 +1443,7 @@
       "fact": "É a chamada regra do octeto."
     },
     {
+      "id": "chute-ciencias-181",
       "difficulty": "medium",
       "text": "Quantos prótons tem o átomo de carbono-14?",
       "answer": 6,
@@ -1270,6 +1451,7 @@
       "fact": "O número 14 inclui 8 nêutrons."
     },
     {
+      "id": "chute-ciencias-182",
       "difficulty": "medium",
       "text": "Quantos nêutrons tem o átomo de urânio-238?",
       "answer": 146,
@@ -1277,6 +1459,7 @@
       "fact": "Isso dá uma soma de 92 prótons e 146 nêutrons."
     },
     {
+      "id": "chute-ciencias-183",
       "difficulty": "medium",
       "text": "Quantos km mede o maior acelerador de partículas do mundo?",
       "answer": 27,
@@ -1284,6 +1467,7 @@
       "fact": "Ele fica no CERN, em Genebra."
     },
     {
+      "id": "chute-ciencias-184",
       "difficulty": "medium",
       "text": "Qual foi o tempo de queda de Felix Baumgartner do espaço, em segundos?",
       "answer": 259,
@@ -1291,6 +1475,7 @@
       "fact": "Ele saltou de 39 km de altura e quebrou a barreira do som."
     },
     {
+      "id": "chute-ciencias-185",
       "difficulty": "medium",
       "text": "Qual a altura do salto de Felix Baumgartner, em km?",
       "answer": 39,
@@ -1298,6 +1483,7 @@
       "fact": "Em 2014, Alan Eustace passou essa marca."
     },
     {
+      "id": "chute-ciencias-186",
       "difficulty": "medium",
       "text": "Qual a velocidade do som na água, em m/s?",
       "answer": 1480,
@@ -1305,6 +1491,7 @@
       "fact": "É mais de quatro vezes maior que no ar."
     },
     {
+      "id": "chute-ciencias-187",
       "difficulty": "medium",
       "text": "Qual a velocidade do som no aço, em m/s?",
       "answer": 5100,
@@ -1312,6 +1499,7 @@
       "fact": "Antigamente, as pessoas ouviam o trem encostando a orelha nos trilhos."
     },
     {
+      "id": "chute-ciencias-188",
       "difficulty": "medium",
       "text": "Qual a velocidade do som no ar, em km/h?",
       "answer": 1235,
@@ -1319,6 +1507,7 @@
       "fact": "Isso vale perto dos 20 °C."
     },
     {
+      "id": "chute-ciencias-189",
       "difficulty": "medium",
       "text": "Quantos decibéis faz um avião a jato decolando, a 30 metros?",
       "answer": 140,
@@ -1326,6 +1515,7 @@
       "fact": "É bem acima do que os ouvidos suportam sem dor."
     },
     {
+      "id": "chute-ciencias-190",
       "difficulty": "medium",
       "text": "Quantos decibéis faz um sussurro?",
       "answer": 30,
@@ -1333,6 +1523,7 @@
       "fact": "A cada 10 dB, o som parece dobrar."
     },
     {
+      "id": "chute-ciencias-191",
       "difficulty": "medium",
       "text": "Quantos nanômetros tem o comprimento de onda da luz vermelha, aproximadamente?",
       "answer": 700,
@@ -1340,6 +1531,7 @@
       "fact": "É a cor com menor frequência visível."
     },
     {
+      "id": "chute-ciencias-192",
       "difficulty": "medium",
       "text": "Quantos nanômetros tem o comprimento de onda da luz violeta, aproximadamente?",
       "answer": 400,
@@ -1347,6 +1539,7 @@
       "fact": "Abaixo disso já é ultravioleta."
     },
     {
+      "id": "chute-ciencias-193",
       "difficulty": "medium",
       "text": "Quantas cores tradicionais tem o espectro de Newton?",
       "answer": 7,
@@ -1354,6 +1547,7 @@
       "fact": "Ele adicionou o índigo por causa do número 7."
     },
     {
+      "id": "chute-ciencias-194",
       "difficulty": "medium",
       "text": "Qual a altura do corpo humano mais alto registrado, em metros?",
       "answer": 2.72,
@@ -1361,6 +1555,7 @@
       "fact": "Foi o americano Robert Wadlow, morto em 1940."
     },
     {
+      "id": "chute-ciencias-195",
       "difficulty": "medium",
       "text": "Qual o peso do cérebro de Einstein, em gramas?",
       "answer": 1230,
@@ -1368,6 +1563,7 @@
       "fact": "Era menor que a média, mas com algumas diferenças."
     },
     {
+      "id": "chute-ciencias-196",
       "difficulty": "medium",
       "text": "Quantos neurônios tem o cérebro humano, aproximadamente?",
       "answer": 86000000000,
@@ -1375,6 +1571,7 @@
       "fact": "Por décadas se falou em 100 bilhões, sem dados diretos."
     },
     {
+      "id": "chute-ciencias-197",
       "difficulty": "medium",
       "text": "Quantos dias vive um glóbulo vermelho?",
       "answer": 120,
@@ -1382,6 +1579,7 @@
       "fact": "Depois é reciclado no baço."
     },
     {
+      "id": "chute-ciencias-198",
       "difficulty": "medium",
       "text": "Quantos litros de ar um adulto respira por dia, aproximadamente?",
       "answer": 11000,
@@ -1389,6 +1587,7 @@
       "fact": "Boa parte é nitrogênio, que entra e sai sem ser usado."
     },
     {
+      "id": "chute-ciencias-199",
       "difficulty": "medium",
       "text": "Quantos litros de sangue o coração bombeia por minuto, em repouso?",
       "answer": 5,
@@ -1396,6 +1595,7 @@
       "fact": "Em exercício, pode chegar a 30 litros."
     },
     {
+      "id": "chute-ciencias-200",
       "difficulty": "medium",
       "text": "Quantos km de vasos sanguíneos tem um adulto, aproximadamente?",
       "answer": 100000,
@@ -1403,6 +1603,7 @@
       "fact": "Isso dá mais de duas voltas na Terra."
     },
     {
+      "id": "chute-ciencias-201",
       "difficulty": "medium",
       "text": "Quantos metros tem o DNA de uma única célula, se esticado?",
       "answer": 2,
@@ -1410,6 +1611,7 @@
       "fact": "Ele fica compactado em um núcleo microscópico."
     },
     {
+      "id": "chute-ciencias-202",
       "difficulty": "medium",
       "text": "Quantos genes tem um ser humano, aproximadamente, segundo o Projeto Genoma?",
       "answer": 20000,
@@ -1417,6 +1619,7 @@
       "fact": "Esperava-se mais de 100 mil no início da pesquisa."
     },
     {
+      "id": "chute-ciencias-203",
       "difficulty": "medium",
       "text": "Quantos pares de bases tem o genoma humano, aproximadamente?",
       "answer": 3200000000,
@@ -1424,6 +1627,7 @@
       "fact": "Se lêssemos uma por segundo, levaria mais de 100 anos."
     },
     {
+      "id": "chute-ciencias-204",
       "difficulty": "medium",
       "text": "Quantos ossos tem o pé humano?",
       "answer": 26,
@@ -1431,6 +1635,7 @@
       "fact": "Quase um quarto dos ossos do corpo está nos pés."
     },
     {
+      "id": "chute-ciencias-205",
       "difficulty": "medium",
       "text": "Quantos ossos tem a coluna adulta, contando sacro e cóccix como um só?",
       "answer": 26,
@@ -1438,6 +1643,7 @@
       "fact": "Quando criança, são 33 vértebras separadas."
     },
     {
+      "id": "chute-ciencias-206",
       "difficulty": "medium",
       "text": "Quantos pares de nervos tem a medula espinhal?",
       "answer": 31,
@@ -1445,6 +1651,7 @@
       "fact": "Eles são chamados de nervos espinhais."
     },
     {
+      "id": "chute-ciencias-207",
       "difficulty": "medium",
       "text": "Quantos pares de nervos cranianos tem o corpo?",
       "answer": 12,
@@ -1452,6 +1659,7 @@
       "fact": "O nervo olfatório é o primeiro."
     },
     {
+      "id": "chute-ciencias-208",
       "difficulty": "medium",
       "text": "Quantos dentes de leite tem uma criança?",
       "answer": 20,
@@ -1459,6 +1667,7 @@
       "fact": "O primeiro costuma nascer por volta dos 6 meses."
     },
     {
+      "id": "chute-ciencias-209",
       "difficulty": "medium",
       "text": "Quantos fios de cabelo tem, em média, uma cabeça humana?",
       "answer": 100000,
@@ -1466,6 +1675,7 @@
       "fact": "Os ruivos costumam ter menos fios."
     },
     {
+      "id": "chute-ciencias-210",
       "difficulty": "medium",
       "text": "Quantos poros tem a pele humana, aproximadamente?",
       "answer": 5000000,
@@ -1473,6 +1683,7 @@
       "fact": "Eles estão em quase todo o corpo."
     },
     {
+      "id": "chute-ciencias-211",
       "difficulty": "medium",
       "text": "Quantos m² tem a pele de um adulto, aproximadamente?",
       "answer": 1.8,
@@ -1480,6 +1691,7 @@
       "fact": "Pesa cerca de 4 kg."
     },
     {
+      "id": "chute-ciencias-212",
       "difficulty": "medium",
       "text": "Quantos kg pesa a pele de um adulto, aproximadamente?",
       "answer": 4,
@@ -1487,6 +1699,7 @@
       "fact": "Ela é o maior órgão do corpo."
     },
     {
+      "id": "chute-ciencias-213",
       "difficulty": "medium",
       "text": "Quantos m² de superfície têm os pulmões de um adulto, aproximadamente?",
       "answer": 70,
@@ -1494,6 +1707,7 @@
       "fact": "É a área de metade de uma quadra de tênis."
     },
     {
+      "id": "chute-ciencias-214",
       "difficulty": "medium",
       "text": "Quantos alvéolos têm os dois pulmões de um adulto, aproximadamente?",
       "answer": 480000000,
@@ -1501,6 +1715,7 @@
       "fact": "São os pequenos sacos onde há trocas de gases."
     },
     {
+      "id": "chute-ciencias-215",
       "difficulty": "medium",
       "text": "Quanta energia um ser humano adulto produz em repouso, em watts?",
       "answer": 100,
@@ -1508,6 +1723,7 @@
       "fact": "É o mesmo que uma lâmpada antiga."
     },
     {
+      "id": "chute-ciencias-216",
       "difficulty": "medium",
       "text": "Quantas calorias um adulto gasta por dia, em média?",
       "answer": 2000,
@@ -1515,6 +1731,7 @@
       "fact": "O cérebro consome cerca de 20% disso."
     },
     {
+      "id": "chute-ciencias-217",
       "difficulty": "medium",
       "text": "Quantas calorias tem 1 grama de gordura, aproximadamente?",
       "answer": 9,
@@ -1522,6 +1739,7 @@
       "fact": "Ela tem mais energia que os carboidratos e as proteínas."
     },
     {
+      "id": "chute-ciencias-218",
       "difficulty": "medium",
       "text": "Quantas calorias tem 1 grama de carboidrato, aproximadamente?",
       "answer": 4,
@@ -1529,6 +1747,7 @@
       "fact": "É o mesmo valor das proteínas."
     },
     {
+      "id": "chute-ciencias-219",
       "difficulty": "medium",
       "text": "Quantos dias uma pessoa aguenta sem água, em média?",
       "answer": 3,
@@ -1536,6 +1755,7 @@
       "fact": "Pode variar muito, conforme o ambiente."
     },
     {
+      "id": "chute-ciencias-220",
       "difficulty": "medium",
       "text": "Quantos dias uma pessoa aguenta sem comida, em média?",
       "answer": 60,
@@ -1543,6 +1763,7 @@
       "fact": "Gandhi jejuou 21 dias aos 74 anos."
     },
     {
+      "id": "chute-ciencias-221",
       "difficulty": "medium",
       "text": "Quantos minutos um cérebro aguenta sem oxigênio antes de sofrer danos graves?",
       "answer": 5,
@@ -1550,6 +1771,7 @@
       "fact": "Por isso a massagem cardíaca é tão urgente."
     },
     {
+      "id": "chute-ciencias-222",
       "difficulty": "medium",
       "text": "Qual é o recorde de apneia voluntária com oxigênio, em minutos?",
       "answer": 24,
@@ -1557,6 +1779,7 @@
       "fact": "O croata Budimir Sobat fez isso em 2021."
     },
     {
+      "id": "chute-ciencias-223",
       "difficulty": "medium",
       "text": "A que altitude o corpo humano começa a não se adaptar, em metros?",
       "answer": 8000,
@@ -1564,6 +1787,7 @@
       "fact": "Por isso, ela é chamada de \"zona da morte\"."
     },
     {
+      "id": "chute-ciencias-224",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na gripe espanhola, aproximadamente, em milhões?",
       "answer": 50,
@@ -1571,6 +1795,7 @@
       "fact": "Foi uma das maiores pandemias da história."
     },
     {
+      "id": "chute-ciencias-225",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na Peste Negra, aproximadamente, em milhões?",
       "answer": 75,
@@ -1578,6 +1803,7 @@
       "fact": "Ela matou de um terço a metade da Europa."
     },
     {
+      "id": "chute-ciencias-226",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram por Covid-19 no mundo, segundo a OMS?",
       "answer": 7000000,
@@ -1585,6 +1811,7 @@
       "fact": "Os números reais podem ser muito maiores."
     },
     {
+      "id": "chute-ciencias-227",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram por Covid-19 no Brasil, aproximadamente?",
       "answer": 700000,
@@ -1592,6 +1819,7 @@
       "fact": "Foi o segundo país com mais mortes."
     },
     {
+      "id": "chute-ciencias-228",
       "difficulty": "medium",
       "text": "Quantas doses de vacina de Covid foram aplicadas no mundo, em bilhões?",
       "answer": 13.5,
@@ -1599,6 +1827,7 @@
       "fact": "Nunca antes houve uma vacinação tão rápida."
     },
     {
+      "id": "chute-ciencias-229",
       "difficulty": "medium",
       "text": "Quantos anos Einstein tinha ao publicar a relatividade restrita?",
       "answer": 26,
@@ -1606,6 +1835,7 @@
       "fact": "Ele trabalhava em um escritório de patentes."
     },
     {
+      "id": "chute-ciencias-230",
       "difficulty": "medium",
       "text": "Quantos anos Marie Curie viveu?",
       "answer": 66,
@@ -1613,6 +1843,7 @@
       "fact": "Ela morreu por doença ligada à exposição à radiação."
     },
     {
+      "id": "chute-ciencias-231",
       "difficulty": "medium",
       "text": "Quantos anos Isaac Newton viveu?",
       "answer": 84,
@@ -1620,6 +1851,7 @@
       "fact": "Ele foi enterrado na Abadia de Westminster."
     },
     {
+      "id": "chute-ciencias-232",
       "difficulty": "hard",
       "text": "Quantos anos Charles Darwin tinha ao embarcar no Beagle?",
       "answer": 22,
@@ -1627,6 +1859,7 @@
       "fact": "A viagem durou quase cinco anos."
     },
     {
+      "id": "chute-ciencias-233",
       "difficulty": "easy",
       "text": "Quantos anos Stephen Hawking viveu?",
       "answer": 76,
@@ -1634,6 +1867,7 @@
       "fact": "Os médicos previram só dois anos de vida quando ele tinha 21."
     },
     {
+      "id": "chute-ciencias-234",
       "difficulty": "medium",
       "text": "Quantas Terras caberiam em uma fila de um lado ao outro de Saturno, sem os anéis?",
       "answer": 9,
@@ -1641,6 +1875,7 @@
       "fact": "Com os anéis, a largura é bem maior."
     },
     {
+      "id": "chute-ciencias-235",
       "difficulty": "medium",
       "text": "Quantos km de largura têm os anéis de Saturno?",
       "answer": 282000,
@@ -1648,6 +1883,7 @@
       "fact": "A espessura deles é de poucas dezenas de metros."
     },
     {
+      "id": "chute-ciencias-236",
       "difficulty": "medium",
       "text": "Qual é a velocidade do vento mais rápido do Sistema Solar, em Netuno, em km/h?",
       "answer": 2100,
@@ -1655,6 +1891,7 @@
       "fact": "Ele passa da velocidade do som na Terra."
     },
     {
+      "id": "chute-ciencias-237",
       "difficulty": "medium",
       "text": "Qual é a pressão atmosférica na superfície de Vênus, em vezes a da Terra?",
       "answer": 92,
@@ -1662,6 +1899,7 @@
       "fact": "É como estar a 900 metros de profundidade no mar."
     },
     {
+      "id": "chute-ciencias-238",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Grande Mancha Vermelha de Júpiter, em km?",
       "answer": 16000,
@@ -1669,6 +1907,7 @@
       "fact": "Ela está encolhendo, mas ainda é maior que a Terra."
     },
     {
+      "id": "chute-ciencias-239",
       "difficulty": "medium",
       "text": "Qual a altura do Monte Olimpo, em Marte, em km?",
       "answer": 22,
@@ -1676,6 +1915,7 @@
       "fact": "É quase três vezes mais alto que o Everest."
     },
     {
+      "id": "chute-ciencias-240",
       "difficulty": "medium",
       "text": "Qual o comprimento do Valles Marineris, em Marte, em km?",
       "answer": 4000,
@@ -1683,6 +1923,7 @@
       "fact": "Ele tem o comprimento dos EUA de costa a costa."
     },
     {
+      "id": "chute-ciencias-241",
       "difficulty": "medium",
       "text": "Quantas luas tem Júpiter, aproximadamente, em 2023?",
       "answer": 95,
@@ -1690,6 +1931,7 @@
       "fact": "A lista continua crescendo."
     },
     {
+      "id": "chute-ciencias-242",
       "difficulty": "medium",
       "text": "Quantas luas tem Saturno, aproximadamente, em 2025?",
       "answer": 274,
@@ -1697,6 +1939,7 @@
       "fact": "Em 2025, foram anunciadas outras 128."
     },
     {
+      "id": "chute-ciencias-243",
       "difficulty": "medium",
       "text": "Quantas luas tem Urano?",
       "answer": 29,
@@ -1704,6 +1947,7 @@
       "fact": "A 29ª foi achada em 2025 pelo telescópio James Webb."
     },
     {
+      "id": "chute-ciencias-244",
       "difficulty": "medium",
       "text": "Quantas luas tem Netuno?",
       "answer": 16,
@@ -1711,6 +1955,7 @@
       "fact": "Tritão é a maior delas."
     },
     {
+      "id": "chute-ciencias-245",
       "difficulty": "medium",
       "text": "Quantas luas tem Marte?",
       "answer": 2,
@@ -1718,6 +1963,7 @@
       "fact": "Fobos e Deimos têm formato de batata."
     },
     {
+      "id": "chute-ciencias-246",
       "difficulty": "medium",
       "text": "Quantos cm a Lua se afasta da Terra por ano?",
       "answer": 3.8,
@@ -1725,6 +1971,7 @@
       "fact": "Espelhos deixados pelas missões Apollo permitem medir isso."
     },
     {
+      "id": "chute-ciencias-247",
       "difficulty": "medium",
       "text": "Em quantos segundos a luz da Lua chega à Terra?",
       "answer": 1.3,
@@ -1732,6 +1979,7 @@
       "fact": "Por isso, a conversa com a Apollo tinha um pequeno atraso."
     },
     {
+      "id": "chute-ciencias-248",
       "difficulty": "medium",
       "text": "Em quantos minutos a luz do Sol chega a Júpiter?",
       "answer": 43,
@@ -1739,6 +1987,7 @@
       "fact": "Em Plutão, leva cerca de 5,5 horas."
     },
     {
+      "id": "chute-ciencias-249",
       "difficulty": "medium",
       "text": "Em quantas horas a luz do Sol chega a Plutão?",
       "answer": 5.5,
@@ -1746,6 +1995,7 @@
       "fact": "Esse é o tempo médio."
     },
     {
+      "id": "chute-ciencias-250",
       "difficulty": "medium",
       "text": "Quantas estrelas dá para ver a olho nu, em uma noite escura?",
       "answer": 3000,
@@ -1753,6 +2003,7 @@
       "fact": "Em todo o céu, são cerca de 6 mil estrelas visíveis."
     },
     {
+      "id": "chute-ciencias-251",
       "difficulty": "hard",
       "text": "Quantas vezes o Sol parece mais brilhante que a Lua cheia, vistos daqui da Terra?",
       "answer": 400000,
@@ -1760,6 +2011,7 @@
       "fact": "Mesmo assim, a Lua cheia ilumina o bastante para fazer sombra."
     },
     {
+      "id": "chute-ciencias-252",
       "difficulty": "hard",
       "text": "Quantas vezes a Lua cheia parece mais brilhante que Sirius, a estrela mais brilhante da noite?",
       "answer": 30000,
@@ -1767,6 +2019,7 @@
       "fact": "A Lua só reflete a luz do Sol, e mesmo assim ganha de qualquer estrela."
     },
     {
+      "id": "chute-ciencias-253",
       "difficulty": "hard",
       "text": "Quantas vezes Sirius parece mais brilhante que as estrelas mais fracas que dá para ver a olho nu?",
       "answer": 1000,
@@ -1774,6 +2027,7 @@
       "fact": "Ela emite cerca de 25 vezes mais luz que o Sol."
     },
     {
+      "id": "chute-ciencias-254",
       "difficulty": "medium",
       "text": "Qual a temperatura mais fria medida na Lua, em °C?",
       "answer": -247,
@@ -1781,6 +2035,7 @@
       "fact": "Foi em crateras que nunca recebem luz solar."
     },
     {
+      "id": "chute-ciencias-255",
       "difficulty": "medium",
       "text": "Qual é a temperatura média do espaço profundo, em °C?",
       "answer": -270,
@@ -1788,6 +2043,7 @@
       "fact": "Isso corresponde à radiação cósmica de fundo."
     },
     {
+      "id": "chute-ciencias-256",
       "difficulty": "hard",
       "text": "Qual é o tempo de vida de um nêutron livre, em minutos?",
       "answer": 15,
@@ -1795,6 +2051,7 @@
       "fact": "Ele vira um próton, um elétron e um antineutrino."
     },
     {
+      "id": "chute-ciencias-257",
       "difficulty": "hard",
       "text": "Qual é a meia-vida do carbono-14, em anos?",
       "answer": 5730,
@@ -1802,6 +2059,7 @@
       "fact": "Isso permite datar coisas de até cerca de 50 mil anos."
     },
     {
+      "id": "chute-ciencias-258",
       "difficulty": "hard",
       "text": "Qual é a meia-vida do urânio-235, em milhões de anos?",
       "answer": 704,
@@ -1809,6 +2067,7 @@
       "fact": "Ele é o urânio usado em reatores e bombas."
     },
     {
+      "id": "chute-ciencias-259",
       "difficulty": "hard",
       "text": "Qual é a meia-vida do plutônio-239, em anos?",
       "answer": 24100,
@@ -1816,6 +2075,7 @@
       "fact": "Ele é fabricado em reatores nucleares."
     },
     {
+      "id": "chute-ciencias-260",
       "difficulty": "hard",
       "text": "Qual é a meia-vida do césio-137, em anos?",
       "answer": 30,
@@ -1823,6 +2083,7 @@
       "fact": "Foi o elemento do acidente de Goiânia."
     },
     {
+      "id": "chute-ciencias-261",
       "difficulty": "hard",
       "text": "Qual é a meia-vida do iodo-131, em dias?",
       "answer": 8,
@@ -1830,6 +2091,7 @@
       "fact": "Ele foi um dos principais em Chernobyl."
     },
     {
+      "id": "chute-ciencias-262",
       "difficulty": "hard",
       "text": "Quantos gramas de césio-137 causaram o acidente de Goiânia, aproximadamente?",
       "answer": 19,
@@ -1837,6 +2099,7 @@
       "fact": "O pó azul brilhante atraiu a atenção das pessoas."
     },
     {
+      "id": "chute-ciencias-263",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o elétron?",
       "answer": 1897,
@@ -1844,6 +2107,7 @@
       "fact": "Foi descoberto por J. J. Thomson."
     },
     {
+      "id": "chute-ciencias-264",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o próton?",
       "answer": 1919,
@@ -1851,6 +2115,7 @@
       "fact": "Foi descoberto por Rutherford."
     },
     {
+      "id": "chute-ciencias-265",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o nêutron?",
       "answer": 1932,
@@ -1858,6 +2123,7 @@
       "fact": "Foi descoberto por James Chadwick."
     },
     {
+      "id": "chute-ciencias-266",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o pósitron?",
       "answer": 1932,
@@ -1865,6 +2131,7 @@
       "fact": "Foi descoberto por Carl Anderson."
     },
     {
+      "id": "chute-ciencias-267",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o méson pi, com ajuda de César Lattes?",
       "answer": 1947,
@@ -1872,6 +2139,7 @@
       "fact": "A descoberta rendeu um Nobel a Cecil Powell, mas não ao brasileiro."
     },
     {
+      "id": "chute-ciencias-268",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o oxigênio?",
       "answer": 1774,
@@ -1879,6 +2147,7 @@
       "fact": "Joseph Priestley fez a descoberta."
     },
     {
+      "id": "chute-ciencias-269",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o hidrogênio?",
       "answer": 1766,
@@ -1886,6 +2155,7 @@
       "fact": "Henry Cavendish o chamou de \"ar inflamável\"."
     },
     {
+      "id": "chute-ciencias-270",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o urânio?",
       "answer": 1789,
@@ -1893,6 +2163,7 @@
       "fact": "Foi descoberto por Martin Klaproth."
     },
     {
+      "id": "chute-ciencias-271",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o rádio?",
       "answer": 1898,
@@ -1900,6 +2171,7 @@
       "fact": "O casal Curie processou toneladas de minério."
     },
     {
+      "id": "chute-ciencias-272",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto Netuno?",
       "answer": 1846,
@@ -1907,6 +2179,7 @@
       "fact": "Foi previsto com cálculos antes mesmo de ser visto."
     },
     {
+      "id": "chute-ciencias-273",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto Urano?",
       "answer": 1781,
@@ -1914,6 +2187,7 @@
       "fact": "William Herschel quase o batizou de \"George\"."
     },
     {
+      "id": "chute-ciencias-274",
       "difficulty": "hard",
       "text": "Em que ano foi descoberto o primeiro exoplaneta em torno de uma estrela comum?",
       "answer": 1995,
@@ -1921,6 +2195,7 @@
       "fact": "Os suíços Mayor e Queloz ganharam o Nobel por isso."
     },
     {
+      "id": "chute-ciencias-275",
       "difficulty": "hard",
       "text": "Em que ano foram detectadas pela primeira vez as ondas gravitacionais?",
       "answer": 2015,
@@ -1928,6 +2203,7 @@
       "fact": "O anúncio foi feito no ano seguinte."
     },
     {
+      "id": "chute-ciencias-276",
       "difficulty": "hard",
       "text": "Em que ano foi detectado o neutrino?",
       "answer": 1956,
@@ -1935,6 +2211,7 @@
       "fact": "Pauli havia previsto a partícula em 1930."
     },
     {
+      "id": "chute-ciencias-277",
       "difficulty": "hard",
       "text": "Em que ano foi criada a primeira tabela periódica?",
       "answer": 1869,
@@ -1942,6 +2219,7 @@
       "fact": "Mendeleev previu elementos que ainda não existiam."
     },
     {
+      "id": "chute-ciencias-278",
       "difficulty": "hard",
       "text": "Em que ano Hubble mostrou a expansão do Universo?",
       "answer": 1929,
@@ -1949,6 +2227,7 @@
       "fact": "Einstein chamou sua constante de \"maior erro\"."
     },
     {
+      "id": "chute-ciencias-279",
       "difficulty": "hard",
       "text": "Em que ano foi inventado o microscópio, aproximadamente?",
       "answer": 1590,
@@ -1956,6 +2235,7 @@
       "fact": "Holandeses fabricantes de óculos foram os primeiros."
     },
     {
+      "id": "chute-ciencias-280",
       "difficulty": "hard",
       "text": "Em que ano Anton van Leeuwenhoek viu bactérias pela primeira vez?",
       "answer": 1676,
@@ -1963,6 +2243,7 @@
       "fact": "Ele as chamava de \"animálculos\"."
     },
     {
+      "id": "chute-ciencias-281",
       "difficulty": "hard",
       "text": "Em que ano foi inventada a pilha elétrica?",
       "answer": 1800,
@@ -1970,6 +2251,7 @@
       "fact": "Alessandro Volta a apresentou à Royal Society."
     },
     {
+      "id": "chute-ciencias-282",
       "difficulty": "hard",
       "text": "Em que ano foi inventado o laser?",
       "answer": 1960,
@@ -1977,6 +2259,7 @@
       "fact": "Theodore Maiman construiu o primeiro, com um rubi."
     },
     {
+      "id": "chute-ciencias-283",
       "difficulty": "hard",
       "text": "Em que ano foi inventado o transistor?",
       "answer": 1947,
@@ -1984,6 +2267,7 @@
       "fact": "A invenção rendeu um Nobel de Física em 1956."
     },
     {
+      "id": "chute-ciencias-284",
       "difficulty": "hard",
       "text": "Em que ano foi feita a primeira cirurgia com anestesia geral com éter, em público?",
       "answer": 1846,
@@ -1991,6 +2275,7 @@
       "fact": "Foi em Boston, por William Morton."
     },
     {
+      "id": "chute-ciencias-285",
       "difficulty": "hard",
       "text": "Em que ano foi criada a vacina contra a poliomielite?",
       "answer": 1955,
@@ -1998,6 +2283,7 @@
       "fact": "Jonas Salk não quis patentear a vacina."
     },
     {
+      "id": "chute-ciencias-286",
       "difficulty": "hard",
       "text": "Em que ano foi criada a vacina contra a raiva?",
       "answer": 1885,
@@ -2005,6 +2291,7 @@
       "fact": "Louis Pasteur testou-a em um menino chamado Joseph Meister."
     },
     {
+      "id": "chute-ciencias-287",
       "difficulty": "hard",
       "text": "Em que ano foi criada a vacina contra a febre amarela?",
       "answer": 1937,
@@ -2012,6 +2299,7 @@
       "fact": "Max Theiler ganhou o Nobel por isso."
     },
     {
+      "id": "chute-ciencias-288",
       "difficulty": "hard",
       "text": "Em que ano foi isolada a insulina?",
       "answer": 1921,
@@ -2019,6 +2307,7 @@
       "fact": "Foi em Toronto, no Canadá."
     },
     {
+      "id": "chute-ciencias-289",
       "difficulty": "hard",
       "text": "Em que ano foi criado o primeiro antibiótico sintético, a sulfa?",
       "answer": 1932,
@@ -2026,6 +2315,7 @@
       "fact": "Gerhard Domagk ganhou o Nobel, mas os nazistas não o deixaram receber."
     },
     {
+      "id": "chute-ciencias-290",
       "difficulty": "hard",
       "text": "Em que ano foi feito o primeiro transplante de rim bem-sucedido?",
       "answer": 1954,
@@ -2033,6 +2323,7 @@
       "fact": "Os irmãos gêmeos Herrick participaram da cirurgia."
     },
     {
+      "id": "chute-ciencias-291",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Fiocruz?",
       "answer": 1900,
@@ -2040,6 +2331,7 @@
       "fact": "Era o antigo Instituto Soroterápico, no Rio de Janeiro."
     },
     {
+      "id": "chute-ciencias-292",
       "difficulty": "hard",
       "text": "Em que ano foi fundado o Instituto Pasteur?",
       "answer": 1887,
@@ -2047,6 +2339,7 @@
       "fact": "Fica em Paris e descobriu o HIV em 1983."
     },
     {
+      "id": "chute-ciencias-293",
       "difficulty": "hard",
       "text": "Em que ano foi identificado o vírus HIV?",
       "answer": 1983,
@@ -2054,6 +2347,7 @@
       "fact": "Luc Montagnier e Françoise Barré-Sinoussi ganharam o Nobel."
     },
     {
+      "id": "chute-ciencias-294",
       "difficulty": "hard",
       "text": "Em que ano o primeiro caso de aids foi registrado no Brasil?",
       "answer": 1982,
@@ -2061,6 +2355,7 @@
       "fact": "Havia pouca informação, e o preconceito era enorme."
     },
     {
+      "id": "chute-ciencias-295",
       "difficulty": "hard",
       "text": "Em que ano foi criado o SUS?",
       "answer": 1988,
@@ -2068,6 +2363,7 @@
       "fact": "Foi com a Constituição Cidadã."
     },
     {
+      "id": "chute-ciencias-296",
       "difficulty": "hard",
       "text": "Em que ano foi criada a Organização Mundial da Saúde?",
       "answer": 1948,
@@ -2075,6 +2371,7 @@
       "fact": "O 7 de abril é o Dia Mundial da Saúde."
     },
     {
+      "id": "chute-ciencias-297",
       "difficulty": "hard",
       "text": "Em que ano foi criado o CERN?",
       "answer": 1954,
@@ -2082,6 +2379,7 @@
       "fact": "É o maior laboratório de física de partículas do mundo."
     },
     {
+      "id": "chute-ciencias-298",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o LHC?",
       "answer": 2008,
@@ -2089,6 +2387,7 @@
       "fact": "Depois de 9 dias, ele quebrou e parou por um ano."
     },
     {
+      "id": "chute-ciencias-299",
       "difficulty": "hard",
       "text": "Em que ano foi criada a USP?",
       "answer": 1934,
@@ -2096,6 +2395,7 @@
       "fact": "Foi fundada em São Paulo, a partir de escolas já existentes."
     },
     {
+      "id": "chute-ciencias-300",
       "difficulty": "hard",
       "text": "Em que ano foi criado o CNPq?",
       "answer": 1951,
@@ -2103,6 +2403,7 @@
       "fact": "O almirante Álvaro Alberto foi seu fundador."
     },
     {
+      "id": "chute-ciencias-301",
       "difficulty": "hard",
       "text": "Em que ano foi criado o Inpe?",
       "answer": 1961,
@@ -2110,6 +2411,7 @@
       "fact": "O instituto fica em São José dos Campos."
     },
     {
+      "id": "chute-ciencias-302",
       "difficulty": "hard",
       "text": "Em que ano foi lançado o primeiro satélite brasileiro feito em casa, o SCD-1?",
       "answer": 1993,
@@ -2117,6 +2419,7 @@
       "fact": "Ele foi lançado por um foguete americano."
     },
     {
+      "id": "chute-ciencias-303",
       "difficulty": "hard",
       "text": "Em que ano ocorreu o acidente de Alcântara, com o foguete VLS-1?",
       "answer": 2003,
@@ -2124,6 +2427,7 @@
       "fact": "21 técnicos morreram."
     },
     {
+      "id": "chute-ciencias-304",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram no acidente de Alcântara, em 2003?",
       "answer": 21,
@@ -2131,6 +2435,7 @@
       "fact": "Foi a maior tragédia do programa espacial brasileiro."
     },
     {
+      "id": "chute-ciencias-305",
       "difficulty": "hard",
       "text": "Qual é o tempo de ida e volta de um sinal de rádio até a Voyager 1, em horas?",
       "answer": 46,
@@ -2138,6 +2443,7 @@
       "fact": "Mesmo na velocidade da luz, leva quase dois dias."
     },
     {
+      "id": "chute-ciencias-306",
       "difficulty": "hard",
       "text": "Qual a velocidade da Voyager 1, em km/h?",
       "answer": 61000,
@@ -2145,6 +2451,7 @@
       "fact": "A sonda vai levar 40 mil anos para passar perto de outra estrela."
     },
     {
+      "id": "chute-ciencias-307",
       "difficulty": "hard",
       "text": "Qual a velocidade máxima da sonda Parker, em km/h?",
       "answer": 690000,
@@ -2152,6 +2459,7 @@
       "fact": "É o objeto mais rápido já feito pelo homem."
     },
     {
+      "id": "chute-ciencias-308",
       "difficulty": "hard",
       "text": "Qual é o peso do Curiosity, em kg?",
       "answer": 899,
@@ -2159,6 +2467,7 @@
       "fact": "É o tamanho de um carro compacto."
     },
     {
+      "id": "chute-ciencias-309",
       "difficulty": "hard",
       "text": "Qual é o peso do helicóptero Ingenuity, em kg?",
       "answer": 1.8,
@@ -2166,6 +2475,7 @@
       "fact": "Ele fez 72 voos em Marte, muito além do previsto."
     },
     {
+      "id": "chute-ciencias-310",
       "difficulty": "hard",
       "text": "Quantos voos o Ingenuity fez em Marte?",
       "answer": 72,
@@ -2173,6 +2483,7 @@
       "fact": "Foram previstos só cinco voos."
     },
     {
+      "id": "chute-ciencias-311",
       "difficulty": "hard",
       "text": "Quantos anos a sonda Opportunity trabalhou em Marte, em dias?",
       "answer": 5352,
@@ -2180,6 +2491,7 @@
       "fact": "Foi planejada para durar 90 dias."
     },
     {
+      "id": "chute-ciencias-312",
       "difficulty": "hard",
       "text": "Quantas toneladas tem a Estação Espacial Internacional?",
       "answer": 420,
@@ -2187,6 +2499,7 @@
       "fact": "Ela é o maior objeto feito pelo homem em órbita."
     },
     {
+      "id": "chute-ciencias-313",
       "difficulty": "hard",
       "text": "Qual é o custo total da Estação Espacial, em bilhões de dólares?",
       "answer": 150,
@@ -2194,6 +2507,7 @@
       "fact": "É o objeto mais caro já construído."
     },
     {
+      "id": "chute-ciencias-314",
       "difficulty": "hard",
       "text": "Quantas toneladas tinha o foguete Saturno V, em seu lançamento?",
       "answer": 2970,
@@ -2201,6 +2515,7 @@
       "fact": "O foguete tinha a altura de um prédio de 36 andares."
     },
     {
+      "id": "chute-ciencias-315",
       "difficulty": "hard",
       "text": "Qual a altura do foguete Saturno V, em metros?",
       "answer": 111,
@@ -2208,6 +2523,7 @@
       "fact": "Ele continua sendo um dos foguetes mais poderosos."
     },
     {
+      "id": "chute-ciencias-316",
       "difficulty": "hard",
       "text": "Qual a altura do foguete Starship, em metros?",
       "answer": 121,
@@ -2215,6 +2531,7 @@
       "fact": "Ele é o foguete mais alto e potente até hoje."
     },
     {
+      "id": "chute-ciencias-317",
       "difficulty": "hard",
       "text": "Quantos dias Valeri Polyakov passou em órbita de uma só vez?",
       "answer": 437,
@@ -2222,6 +2539,7 @@
       "fact": "Ele fez o recorde na estação Mir, em 1995."
     },
     {
+      "id": "chute-ciencias-318",
       "difficulty": "hard",
       "text": "Quantos dias Frank Rubio passou em órbita em sua missão?",
       "answer": 371,
@@ -2229,6 +2547,7 @@
       "fact": "É o recorde americano, estabelecido em 2023 por um defeito na nave."
     },
     {
+      "id": "chute-ciencias-319",
       "difficulty": "hard",
       "text": "Quantas pessoas já foram ao espaço, aproximadamente?",
       "answer": 700,
@@ -2236,6 +2555,7 @@
       "fact": "A maioria é dos EUA e da Rússia."
     },
     {
+      "id": "chute-ciencias-320",
       "difficulty": "hard",
       "text": "Quantos países já tiveram astronautas no espaço, aproximadamente?",
       "answer": 45,
@@ -2243,6 +2563,7 @@
       "fact": "A Polônia, a Hungria e o Vietnã tiveram só uma pessoa, durante décadas."
     },
     {
+      "id": "chute-ciencias-321",
       "difficulty": "hard",
       "text": "Qual é o tamanho de um ano-luz, em bilhões de km?",
       "answer": 9460,
@@ -2250,6 +2571,7 @@
       "fact": "É a distância que a luz percorre em um ano."
     },
     {
+      "id": "chute-ciencias-322",
       "difficulty": "hard",
       "text": "Qual é o diâmetro da Via Láctea, em anos-luz?",
       "answer": 100000,
@@ -2257,6 +2579,7 @@
       "fact": "O Sol fica a cerca de 26 mil anos-luz do centro."
     },
     {
+      "id": "chute-ciencias-323",
       "difficulty": "hard",
       "text": "Qual é a distância do Sol até o centro da Via Láctea, em anos-luz?",
       "answer": 26000,
@@ -2264,6 +2587,7 @@
       "fact": "O Sistema Solar leva 225 milhões de anos para dar a volta."
     },
     {
+      "id": "chute-ciencias-324",
       "difficulty": "hard",
       "text": "Qual é a idade dos fósseis mais antigos de seres vivos, em bilhões de anos?",
       "answer": 3.5,
@@ -2271,6 +2595,7 @@
       "fact": "Eles são chamados de estromatólitos e estão na Austrália."
     },
     {
+      "id": "chute-ciencias-325",
       "difficulty": "hard",
       "text": "Qual é a altitude máxima que um avião comercial voa, em metros?",
       "answer": 12500,
@@ -2278,6 +2603,7 @@
       "fact": "Essa altura ajuda a evitar o mau tempo."
     },
     {
+      "id": "chute-ciencias-326",
       "difficulty": "hard",
       "text": "Qual é a altitude do limite do espaço, segundo a linha de Kármán, em km?",
       "answer": 100,
@@ -2285,6 +2611,7 @@
       "fact": "Ela foi definida como a fronteira da atmosfera."
     },
     {
+      "id": "chute-ciencias-327",
       "difficulty": "hard",
       "text": "Qual é a altura da troposfera, em média, em km?",
       "answer": 12,
@@ -2292,6 +2619,7 @@
       "fact": "É lá que acontecem as nuvens e a chuva."
     },
     {
+      "id": "chute-ciencias-328",
       "difficulty": "hard",
       "text": "Qual é a temperatura no topo da troposfera, em °C?",
       "answer": -55,
@@ -2299,6 +2627,7 @@
       "fact": "Por isso, os aviões têm cabines aquecidas."
     },
     {
+      "id": "chute-ciencias-329",
       "difficulty": "hard",
       "text": "A que altitude fica a camada de ozônio, em km, em média?",
       "answer": 25,
@@ -2306,6 +2635,7 @@
       "fact": "Ela absorve a maior parte dos raios UV."
     },
     {
+      "id": "chute-ciencias-330",
       "difficulty": "hard",
       "text": "Qual a temperatura em Vostok no recorde de 1983, em °C?",
       "answer": -89.2,
@@ -2313,6 +2643,7 @@
       "fact": "Ela é a menor temperatura medida no solo."
     },
     {
+      "id": "chute-ciencias-331",
       "difficulty": "hard",
       "text": "Qual a pressão no fundo da Fossa das Marianas, em vezes a do nível do mar?",
       "answer": 1000,
@@ -2320,6 +2651,7 @@
       "fact": "Em 1960, Piccard e Walsh chegaram ao fundo."
     },
     {
+      "id": "chute-ciencias-332",
       "difficulty": "hard",
       "text": "Quantas pessoas já desceram até o fundo da Fossa das Marianas, aproximadamente?",
       "answer": 27,
@@ -2327,6 +2659,7 @@
       "fact": "Em 2012, o diretor James Cameron desceu sozinho."
     },
     {
+      "id": "chute-ciencias-333",
       "difficulty": "easy",
       "text": "Quantos pontos tem o Cruzeiro do Sul, na bandeira do Brasil?",
       "answer": 5,
@@ -2334,6 +2667,7 @@
       "fact": "A menor delas é a Intrometida."
     },
     {
+      "id": "chute-ciencias-334",
       "difficulty": "medium",
       "text": "Qual a altura do meteoro de Tunguska quando explodiu, em km, aproximadamente?",
       "answer": 8,
@@ -2341,6 +2675,7 @@
       "fact": "A explosão de 1908 derrubou 80 milhões de árvores."
     },
     {
+      "id": "chute-ciencias-335",
       "difficulty": "medium",
       "text": "Quantas árvores o meteoro de Tunguska derrubou, em milhões?",
       "answer": 80,
@@ -2348,6 +2683,7 @@
       "fact": "Ele não deixou nenhuma cratera."
     },
     {
+      "id": "chute-ciencias-336",
       "difficulty": "medium",
       "text": "Em que ano caiu o meteoro de Tunguska?",
       "answer": 1908,
@@ -2355,6 +2691,7 @@
       "fact": "Ele explodiu sobre a Sibéria."
     },
     {
+      "id": "chute-ciencias-337",
       "difficulty": "medium",
       "text": "Em que ano o meteoro de Chelyabinsk explodiu na Rússia?",
       "answer": 2013,
@@ -2362,6 +2699,7 @@
       "fact": "Mais de mil pessoas ficaram feridas, principalmente por vidros quebrados."
     },
     {
+      "id": "chute-ciencias-338",
       "difficulty": "medium",
       "text": "Quantos km de diâmetro tem o asteroide Ceres, aproximadamente?",
       "answer": 940,
@@ -2369,6 +2707,7 @@
       "fact": "Ele é o maior objeto do cinturão de asteroides."
     },
     {
+      "id": "chute-ciencias-339",
       "difficulty": "medium",
       "text": "Em que ano a sonda DART atingiu um asteroide de propósito?",
       "answer": 2022,
@@ -2376,6 +2715,7 @@
       "fact": "A missão mudou a órbita de Dimorphos."
     },
     {
+      "id": "chute-ciencias-340",
       "difficulty": "medium",
       "text": "Quantos anos-luz Sirius está da Terra, em km, em trilhões?",
       "answer": 81,
@@ -2383,6 +2723,7 @@
       "fact": "Ela é uma das estrelas mais próximas."
     },
     {
+      "id": "chute-ciencias-341",
       "difficulty": "medium",
       "text": "Quantos kg pesa o maior meteorito brasileiro, o Bendegó?",
       "answer": 5360,
@@ -2390,6 +2731,7 @@
       "fact": "Ele fica no Museu Nacional, e sobreviveu ao incêndio de 2018."
     },
     {
+      "id": "chute-ciencias-342",
       "difficulty": "medium",
       "text": "Em que ano o Museu Nacional, onde está o Bendegó, pegou fogo?",
       "answer": 2018,
@@ -2397,6 +2739,7 @@
       "fact": "O meteorito foi um dos poucos itens intactos."
     },
     {
+      "id": "chute-ciencias-343",
       "difficulty": "hard",
       "text": "Quantos km de raio tem um buraco negro de uma massa solar, aproximadamente?",
       "answer": 3,
@@ -2404,6 +2747,7 @@
       "fact": "Essa medida é o raio de Schwarzschild."
     },
     {
+      "id": "chute-ciencias-344",
       "difficulty": "hard",
       "text": "Qual a massa do buraco negro Sagitário A*, em milhões de sóis?",
       "answer": 4,
@@ -2411,6 +2755,7 @@
       "fact": "Ele fica no centro da Via Láctea."
     },
     {
+      "id": "chute-ciencias-345",
       "difficulty": "hard",
       "text": "Qual a massa do buraco negro M87*, em bilhões de sóis?",
       "answer": 6.5,
@@ -2418,6 +2763,7 @@
       "fact": "Ele foi o primeiro a ser fotografado."
     },
     {
+      "id": "chute-ciencias-346",
       "difficulty": "hard",
       "text": "A que distância da Terra fica o buraco negro M87*, em milhões de anos-luz?",
       "answer": 55,
@@ -2425,6 +2771,7 @@
       "fact": "A imagem foi feita por uma rede mundial de radiotelescópios."
     },
     {
+      "id": "chute-ciencias-347",
       "difficulty": "hard",
       "text": "Quantos anos, em média, leva um fóton a sair do centro do Sol?",
       "answer": 100000,
@@ -2432,6 +2779,7 @@
       "fact": "Depois, leva só 8 minutos até chegar à Terra."
     },
     {
+      "id": "chute-ciencias-348",
       "difficulty": "hard",
       "text": "Qual a temperatura do núcleo do Sol, em °C?",
       "answer": 15000000,
@@ -2439,6 +2787,7 @@
       "fact": "A pressão lá é enorme."
     },
     {
+      "id": "chute-ciencias-349",
       "difficulty": "hard",
       "text": "Qual é a temperatura da coroa do Sol, em °C?",
       "answer": 2000000,
@@ -2446,6 +2795,7 @@
       "fact": "Curiosamente, ela é muito mais quente que a superfície."
     },
     {
+      "id": "chute-ciencias-350",
       "difficulty": "hard",
       "text": "Qual a velocidade do vento solar, em km/s?",
       "answer": 400,
@@ -2453,6 +2803,7 @@
       "fact": "Ela provoca as auroras na Terra."
     },
     {
+      "id": "chute-ciencias-351",
       "difficulty": "hard",
       "text": "Quantas toneladas de hidrogênio o Sol transforma por segundo, em milhões?",
       "answer": 600,
@@ -2460,6 +2811,7 @@
       "fact": "Isso produz toda a sua energia."
     },
     {
+      "id": "chute-ciencias-352",
       "difficulty": "hard",
       "text": "Quantas toneladas de massa o Sol perde por segundo, em milhões?",
       "answer": 4,
@@ -2467,6 +2819,7 @@
       "fact": "Mesmo assim, ele vai durar bilhões de anos."
     },
     {
+      "id": "chute-ciencias-353",
       "difficulty": "hard",
       "text": "Qual a temperatura mais alta produzida em um reator de fusão, em milhões de °C?",
       "answer": 160,
@@ -2474,6 +2827,7 @@
       "fact": "O reator coreano KSTAR a sustentou por 20 segundos em 2020."
     },
     {
+      "id": "chute-ciencias-354",
       "difficulty": "hard",
       "text": "Quantos milhões de °C são necessários para fundir hidrogênio em uma bomba?",
       "answer": 100,
@@ -2481,6 +2835,7 @@
       "fact": "Por isso, as bombas de hidrogênio começam com uma bomba atômica."
     },
     {
+      "id": "chute-ciencias-355",
       "difficulty": "hard",
       "text": "Qual a potência da bomba Tsar, em megatons?",
       "answer": 50,
@@ -2488,6 +2843,7 @@
       "fact": "Foi a maior explosão já feita pelo homem, em 1961."
     },
     {
+      "id": "chute-ciencias-356",
       "difficulty": "hard",
       "text": "Qual a potência da bomba de Hiroshima, em quilotons?",
       "answer": 15,
@@ -2495,6 +2851,7 @@
       "fact": "Foi lançada em 6 de agosto de 1945."
     },
     {
+      "id": "chute-ciencias-357",
       "difficulty": "hard",
       "text": "Quantos kg de urânio tinha a bomba de Hiroshima?",
       "answer": 64,
@@ -2502,6 +2859,7 @@
       "fact": "Menos de 1 kg chegou a passar por fissão."
     },
     {
+      "id": "chute-ciencias-358",
       "difficulty": "hard",
       "text": "Quantos kg de plutônio tinha a bomba de Nagasaki?",
       "answer": 6.2,
@@ -2509,6 +2867,7 @@
       "fact": "Ela foi mais forte que a de Hiroshima."
     },
     {
+      "id": "chute-ciencias-359",
       "difficulty": "hard",
       "text": "Qual a distância de segurança inicial de Chernobyl, em km, em torno da usina?",
       "answer": 30,
@@ -2516,6 +2875,7 @@
       "fact": "A zona de exclusão continua existindo."
     },
     {
+      "id": "chute-ciencias-360",
       "difficulty": "hard",
       "text": "Quantas pessoas viviam em Pripyat antes do acidente?",
       "answer": 49000,
@@ -2523,6 +2883,7 @@
       "fact": "Ela foi evacuada em poucos dias."
     },
     {
+      "id": "chute-ciencias-361",
       "difficulty": "hard",
       "text": "Quantos mortos oficiais houve de imediato em Chernobyl?",
       "answer": 31,
@@ -2530,6 +2891,7 @@
       "fact": "A estimativa de longo prazo é muito discutida."
     },
     {
+      "id": "chute-ciencias-362",
       "difficulty": "hard",
       "text": "Qual a nota do terremoto do Chile de 1960?",
       "answer": 9.5,
@@ -2537,6 +2899,7 @@
       "fact": "É o terremoto mais forte já registrado."
     },
     {
+      "id": "chute-ciencias-363",
       "difficulty": "hard",
       "text": "Qual a nota do terremoto de Fukushima, em 2011?",
       "answer": 9.1,
@@ -2544,6 +2907,7 @@
       "fact": "Foi o mais forte já registrado no Japão."
     },
     {
+      "id": "chute-ciencias-364",
       "difficulty": "hard",
       "text": "Qual a nota do terremoto no Oceano Índico, em 2004?",
       "answer": 9.1,
@@ -2551,6 +2915,7 @@
       "fact": "Foi medido entre 9,1 e 9,3."
     },
     {
+      "id": "chute-ciencias-365",
       "difficulty": "hard",
       "text": "Qual a nota do terremoto mais forte do Brasil, em 1955?",
       "answer": 6.2,
@@ -2558,6 +2923,7 @@
       "fact": "Foi em Porto dos Gaúchos, no Mato Grosso."
     },
     {
+      "id": "chute-ciencias-366",
       "difficulty": "hard",
       "text": "Qual a altura do Tsunami de Lituya Bay, em 1958, em metros?",
       "answer": 524,
@@ -2565,6 +2931,7 @@
       "fact": "Foi o maior já registrado, depois de um deslizamento."
     },
     {
+      "id": "chute-ciencias-367",
       "difficulty": "hard",
       "text": "Qual a velocidade máxima de um tsunami em mar aberto, em km/h?",
       "answer": 800,
@@ -2572,6 +2939,7 @@
       "fact": "É a velocidade de um avião comercial."
     },
     {
+      "id": "chute-ciencias-368",
       "difficulty": "hard",
       "text": "Quantas Hiroshimas equivale a energia de um grande furacão por dia?",
       "answer": 10000,
@@ -2579,6 +2947,7 @@
       "fact": "A energia é tão grande que ninguém consegue impedi-lo."
     },
     {
+      "id": "chute-ciencias-369",
       "difficulty": "hard",
       "text": "Quantos milissegundos dura um raio, em média?",
       "answer": 200,
@@ -2586,6 +2955,7 @@
       "fact": "Mesmo assim, ele carrega muita energia."
     },
     {
+      "id": "chute-ciencias-370",
       "difficulty": "hard",
       "text": "Qual a voltagem de um raio, em milhões de volts?",
       "answer": 300,
@@ -2593,6 +2963,7 @@
       "fact": "A corrente passa de 30 mil ampères."
     },
     {
+      "id": "chute-ciencias-371",
       "difficulty": "easy",
       "text": "Quantos dias tem fevereiro em anos bissextos?",
       "answer": 29,
@@ -2600,6 +2971,7 @@
       "fact": "O calendário gregoriano foi adotado em 1582."
     },
     {
+      "id": "chute-ciencias-372",
       "difficulty": "hard",
       "text": "Qual é a menor distância entre a Terra e Marte, em 2003, em km?",
       "answer": 55800000,
@@ -2607,6 +2979,7 @@
       "fact": "Foi a menor em quase 60 mil anos."
     },
     {
+      "id": "chute-ciencias-373",
       "difficulty": "hard",
       "text": "Quantos meses dura uma viagem da Terra até Marte, em média?",
       "answer": 7,
@@ -2614,6 +2987,7 @@
       "fact": "A janela de lançamento só abre a cada 26 meses."
     },
     {
+      "id": "chute-ciencias-374",
       "difficulty": "hard",
       "text": "Qual é a altitude da órbita dos satélites geoestacionários, em km?",
       "answer": 35786,
@@ -2621,6 +2995,7 @@
       "fact": "Eles giram junto com a Terra e parecem parados no céu."
     },
     {
+      "id": "chute-ciencias-375",
       "difficulty": "hard",
       "text": "Quantos satélites ativos havia em órbita em 2024, aproximadamente?",
       "answer": 10000,
@@ -2628,6 +3003,7 @@
       "fact": "Boa parte é da rede Starlink."
     },
     {
+      "id": "chute-ciencias-376",
       "difficulty": "hard",
       "text": "Quantos fragmentos de lixo espacial maiores que 10 cm há em órbita, aproximadamente?",
       "answer": 36000,
@@ -2635,6 +3011,7 @@
       "fact": "Eles viajam a mais de 27 mil km/h."
     },
     {
+      "id": "chute-ciencias-377",
       "difficulty": "hard",
       "text": "Quantos satélites GPS são necessários para saber a posição, no mínimo?",
       "answer": 4,
@@ -2642,6 +3019,7 @@
       "fact": "Os relógios deles são corrigidos pela teoria da relatividade."
     },
     {
+      "id": "chute-ciencias-378",
       "difficulty": "hard",
       "text": "Quantos microssegundos por dia os relógios do GPS se adiantam pela relatividade?",
       "answer": 38,
@@ -2649,6 +3027,7 @@
       "fact": "Sem a correção, o erro seria de 10 km por dia."
     },
     {
+      "id": "chute-ciencias-379",
       "difficulty": "hard",
       "text": "Qual a temperatura em que a água \"supercrítica\" passa a existir, em °C?",
       "answer": 374,
@@ -2656,6 +3035,7 @@
       "fact": "Nesse estado, ela não é mais líquido nem gás."
     },
     {
+      "id": "chute-ciencias-380",
       "difficulty": "hard",
       "text": "Qual a densidade do ósmio, em g/cm³?",
       "answer": 22.59,
@@ -2663,6 +3043,7 @@
       "fact": "É o elemento natural mais denso."
     },
     {
+      "id": "chute-ciencias-381",
       "difficulty": "hard",
       "text": "Qual a densidade do ouro, em g/cm³?",
       "answer": 19.3,
@@ -2670,6 +3051,7 @@
       "fact": "Uma barra padrão pesa cerca de 12,4 kg."
     },
     {
+      "id": "chute-ciencias-382",
       "difficulty": "hard",
       "text": "Qual o preço por quilate do berkélio, em dólares por grama?",
       "answer": 27000000,
@@ -2677,6 +3059,7 @@
       "fact": "Ele é um dos elementos mais caros já produzidos."
     },
     {
+      "id": "chute-ciencias-383",
       "difficulty": "hard",
       "text": "Qual é o ponto de fusão do tungstênio, em °C?",
       "answer": 3422,
@@ -2684,6 +3067,7 @@
       "fact": "Por isso, ele foi usado em filamentos de lâmpadas."
     },
     {
+      "id": "chute-ciencias-384",
       "difficulty": "easy",
       "text": "Em quantos graus a água ferve, ao nível do mar, em °C?",
       "answer": 100,
@@ -2691,6 +3075,7 @@
       "fact": "Em lugares altos, ela ferve antes."
     },
     {
+      "id": "chute-ciencias-385",
       "difficulty": "easy",
       "text": "Em quantos graus a água congela, ao nível do mar, em °C?",
       "answer": 0,
@@ -2699,6 +3084,7 @@
       "fact": "O sal pode baixar esse ponto."
     },
     {
+      "id": "chute-ciencias-386",
       "difficulty": "easy",
       "text": "Qual é a temperatura normal do corpo humano, em °C, aproximadamente?",
       "answer": 36.5,
@@ -2707,6 +3093,7 @@
       "fact": "A febre começa perto de 37,8 °C."
     },
     {
+      "id": "chute-ciencias-387",
       "difficulty": "easy",
       "text": "Quantos pares de cromossomos tem uma célula humana?",
       "answer": 23,
@@ -2714,6 +3101,7 @@
       "fact": "As células sexuais têm a metade."
     },
     {
+      "id": "chute-ciencias-388",
       "difficulty": "easy",
       "text": "Quantos litros de sangue tem um adulto, aproximadamente?",
       "answer": 5,
@@ -2721,6 +3109,7 @@
       "fact": "O valor varia com o peso."
     },
     {
+      "id": "chute-ciencias-389",
       "difficulty": "easy",
       "text": "Que porcentagem do corpo humano adulto é água, aproximadamente?",
       "answer": 60,
@@ -2728,6 +3117,7 @@
       "fact": "O valor varia com idade e sexo."
     },
     {
+      "id": "chute-ciencias-390",
       "difficulty": "medium",
       "text": "Qual é a temperatura média da superfície de Marte, em °C, aproximadamente?",
       "answer": -60,
@@ -2736,6 +3126,7 @@
       "fact": "No verão do equador, ela pode passar de zero."
     },
     {
+      "id": "chute-ciencias-391",
       "difficulty": "medium",
       "text": "Qual é a temperatura média da superfície de Vênus, em °C, aproximadamente?",
       "answer": 465,
@@ -2743,6 +3134,7 @@
       "fact": "Ele é mais quente que Mercúrio."
     },
     {
+      "id": "chute-ciencias-392",
       "difficulty": "medium",
       "text": "Qual é a temperatura média de Plutão, em °C, aproximadamente?",
       "answer": -230,
@@ -2751,6 +3143,7 @@
       "fact": "A sonda New Horizons o visitou em 2015."
     },
     {
+      "id": "chute-ciencias-393",
       "difficulty": "medium",
       "text": "Qual é a temperatura média da Lua à noite, em °C, aproximadamente?",
       "answer": -173,
@@ -2759,6 +3152,7 @@
       "fact": "De dia, ela pode passar de 100 °C."
     },
     {
+      "id": "chute-ciencias-394",
       "difficulty": "medium",
       "text": "Qual é a temperatura de ebulição do nitrogênio líquido, em °C?",
       "answer": -196,
@@ -2767,6 +3161,7 @@
       "fact": "Por isso ele é usado em criogenia."
     },
     {
+      "id": "chute-ciencias-395",
       "difficulty": "medium",
       "text": "Qual é a distância entre a Terra e o Sol, em milhões de km, aproximadamente?",
       "answer": 150,
@@ -2774,6 +3169,7 @@
       "fact": "Essa medida é chamada de unidade astronômica."
     },
     {
+      "id": "chute-ciencias-396",
       "difficulty": "medium",
       "text": "Qual é a distância média entre a Terra e a Lua, em mil km, aproximadamente?",
       "answer": 384,
@@ -2781,6 +3177,7 @@
       "fact": "A Lua se afasta quase 4 cm por ano."
     },
     {
+      "id": "chute-ciencias-397",
       "difficulty": "medium",
       "text": "Qual é a velocidade da luz, em km/s, aproximadamente?",
       "answer": 300000,
@@ -2788,6 +3185,7 @@
       "fact": "Nada com massa pode alcançá-la."
     },
     {
+      "id": "chute-ciencias-398",
       "difficulty": "medium",
       "text": "Quantos anos a luz do Sol leva para chegar a Alfa Centauri, em anos?",
       "answer": 4.3,
@@ -2795,6 +3193,7 @@
       "fact": "É o sistema estelar mais próximo do Sol."
     },
     {
+      "id": "chute-ciencias-399",
       "difficulty": "medium",
       "text": "Qual é o diâmetro da Terra no equador, em km, aproximadamente?",
       "answer": 12756,
@@ -2802,6 +3201,7 @@
       "fact": "O planeta é levemente achatado nos polos."
     },
     {
+      "id": "chute-ciencias-400",
       "difficulty": "medium",
       "text": "Qual é a circunferência da Terra no equador, em km, aproximadamente?",
       "answer": 40075,
@@ -2809,6 +3209,7 @@
       "fact": "Eratóstenes calculou o valor no século III a.C."
     },
     {
+      "id": "chute-ciencias-401",
       "difficulty": "hard",
       "text": "Quantos anos-luz tem o diâmetro da Via Láctea, em milhares, aproximadamente?",
       "answer": 100,
@@ -2816,6 +3217,7 @@
       "fact": "Ela tem centenas de bilhões de estrelas."
     },
     {
+      "id": "chute-ciencias-402",
       "difficulty": "hard",
       "text": "Quantas estrelas tem a Via Láctea, em bilhões, aproximadamente?",
       "answer": 200,
@@ -2823,6 +3225,7 @@
       "fact": "A estimativa vai até 400 bilhões."
     },
     {
+      "id": "chute-ciencias-403",
       "difficulty": "hard",
       "text": "Quantas galáxias tem o Universo observável, em bilhões, em estimativas comuns?",
       "answer": 200,
@@ -2830,6 +3233,7 @@
       "fact": "Alguns estudos sugerem um número bem maior."
     },
     {
+      "id": "chute-ciencias-404",
       "difficulty": "hard",
       "text": "Qual é a idade do Sistema Solar, em bilhões de anos, aproximadamente?",
       "answer": 4.6,
@@ -2837,6 +3241,7 @@
       "fact": "Ele nasceu de uma nuvem de gás e poeira."
     },
     {
+      "id": "chute-ciencias-405",
       "difficulty": "hard",
       "text": "Qual é a temperatura do núcleo do Sol, em milhões de °C, aproximadamente?",
       "answer": 15,
@@ -2844,6 +3249,7 @@
       "fact": "Lá acontece a fusão nuclear."
     },
     {
+      "id": "chute-ciencias-406",
       "difficulty": "hard",
       "text": "Qual é a temperatura de fundo do Universo, em °C, aproximadamente?",
       "answer": -270,
@@ -2852,6 +3258,7 @@
       "fact": "Ela é um resquício do Big Bang."
     },
     {
+      "id": "chute-ciencias-407",
       "difficulty": "hard",
       "text": "Qual é o ponto de fusão do mercúrio, em °C?",
       "answer": -39,
@@ -2860,6 +3267,7 @@
       "fact": "Por isso ele é líquido no ambiente."
     },
     {
+      "id": "chute-ciencias-408",
       "difficulty": "hard",
       "text": "Qual é o ponto de ebulição do hélio, em °C, aproximadamente?",
       "answer": -269,
@@ -2868,6 +3276,7 @@
       "fact": "Ele é o elemento mais difícil de condensar."
     },
     {
+      "id": "chute-ciencias-409",
       "difficulty": "hard",
       "text": "Quantos metros de DNA há em uma célula humana, aproximadamente?",
       "answer": 2,
@@ -2875,6 +3284,7 @@
       "fact": "Ele fica muito bem dobrado no núcleo."
     },
     {
+      "id": "chute-ciencias-410",
       "difficulty": "easy",
       "text": "Quantos segundos a luz do Sol leva para chegar à Terra, aproximadamente?",
       "answer": 500,
@@ -2882,6 +3292,7 @@
       "fact": "Isso dá cerca de 8 minutos e 20 segundos."
     },
     {
+      "id": "chute-ciencias-411",
       "difficulty": "medium",
       "text": "Quantos ossos tem a coluna vertebral de um adulto?",
       "answer": 33,
@@ -2889,6 +3300,7 @@
       "fact": "Parte deles se funde no sacro e no cóccix."
     },
     {
+      "id": "chute-ciencias-412",
       "difficulty": "medium",
       "text": "Quantos minutos o cérebro resiste sem oxigênio, em média, antes de lesões graves?",
       "answer": 5,
@@ -2896,6 +3308,7 @@
       "fact": "Por isso a reanimação precisa ser rápida."
     },
     {
+      "id": "chute-ciencias-413",
       "difficulty": "medium",
       "text": "Qual é o comprimento do intestino delgado de um adulto, em metros, aproximadamente?",
       "answer": 6,
@@ -2903,6 +3316,7 @@
       "fact": "O grosso tem cerca de 1,5 metro."
     },
     {
+      "id": "chute-ciencias-414",
       "difficulty": "medium",
       "text": "Quantas horas o estômago leva para esvaziar uma refeição comum, aproximadamente?",
       "answer": 4,
@@ -2910,6 +3324,7 @@
       "fact": "As gorduras demoram mais."
     },
     {
+      "id": "chute-ciencias-415",
       "difficulty": "hard",
       "text": "Quantas vezes o próton é mais pesado que o elétron?",
       "answer": 1836,
@@ -2917,6 +3332,7 @@
       "fact": "O próton é bem mais pesado."
     },
     {
+      "id": "chute-ciencias-416",
       "difficulty": "easy",
       "text": "A partir de quantos graus, em °C, a temperatura do corpo já é considerada febre?",
       "answer": 37.8,
@@ -2925,6 +3341,7 @@
       "fact": "Entre 37,3 e 37,7 °C muita gente chama de \"estado febril\"."
     },
     {
+      "id": "chute-ciencias-417",
       "difficulty": "easy",
       "text": "Com quantos anos, em média, cai o primeiro dente de leite?",
       "answer": 6,
@@ -2932,6 +3349,7 @@
       "fact": "Os primeiros a cair costumam ser os da frente, de baixo."
     },
     {
+      "id": "chute-ciencias-418",
       "difficulty": "easy",
       "text": "Quantos litros de urina um adulto produz por dia, em média?",
       "answer": 1.5,
@@ -2939,6 +3357,7 @@
       "fact": "Beber mais água aumenta essa quantidade."
     },
     {
+      "id": "chute-ciencias-419",
       "difficulty": "easy",
       "text": "Qual é a altura média do homem brasileiro, em centímetros?",
       "answer": 173,
@@ -2946,6 +3365,7 @@
       "fact": "A altura média das brasileiras fica perto de 161 cm."
     },
     {
+      "id": "chute-ciencias-420",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um bebê ao nascer, em média?",
       "answer": 3.3,
@@ -2953,6 +3373,7 @@
       "fact": "Bebês com menos de 2,5 kg são considerados de baixo peso."
     },
     {
+      "id": "chute-ciencias-421",
       "difficulty": "easy",
       "text": "Quantos centímetros mede um bebê ao nascer, em média?",
       "answer": 49,
@@ -2960,6 +3381,7 @@
       "fact": "No primeiro ano de vida ele cresce cerca de 25 cm."
     },
     {
+      "id": "chute-ciencias-422",
       "difficulty": "easy",
       "text": "Qual é a temperatura de um banho quente confortável, em °C, aproximadamente?",
       "answer": 38,
@@ -2967,6 +3389,7 @@
       "fact": "Acima de uns 45 °C a água já pode queimar a pele."
     },
     {
+      "id": "chute-ciencias-423",
       "difficulty": "easy",
       "text": "Quantos ossos tem o braço, do ombro até o cotovelo?",
       "answer": 1,
@@ -2974,6 +3397,7 @@
       "fact": "É o úmero, o maior osso do braço."
     },
     {
+      "id": "chute-ciencias-424",
       "difficulty": "easy",
       "text": "Quantos ossos tem o antebraço, do cotovelo até o punho?",
       "answer": 2,
@@ -2981,6 +3405,7 @@
       "fact": "São o rádio e a ulna."
     },
     {
+      "id": "chute-ciencias-425",
       "difficulty": "easy",
       "text": "Quantos litros de saliva uma pessoa produz por dia, aproximadamente?",
       "answer": 1,
@@ -2988,6 +3413,7 @@
       "fact": "A saliva já começa a digerir o amido na boca."
     },
     {
+      "id": "chute-ciencias-426",
       "difficulty": "easy",
       "text": "Quantos dias dura uma gripe comum, em média?",
       "answer": 7,
@@ -2995,6 +3421,7 @@
       "fact": "Repouso e água ajudam o corpo a se recuperar."
     },
     {
+      "id": "chute-ciencias-427",
       "difficulty": "easy",
       "text": "Quantos segundos o som do trovão leva para percorrer 1 km, aproximadamente?",
       "answer": 3,
@@ -3002,6 +3429,7 @@
       "fact": "Contar os segundos entre o raio e o trovão dá a distância da tempestade."
     },
     {
+      "id": "chute-ciencias-428",
       "difficulty": "easy",
       "text": "A quantos km de altura voa um avião comercial, aproximadamente?",
       "answer": 10,
@@ -3009,6 +3437,7 @@
       "fact": "O ar lá em cima é rarefeito demais para respirar."
     },
     {
+      "id": "chute-ciencias-429",
       "difficulty": "easy",
       "text": "Quantos estados físicos da água aprendemos na escola?",
       "answer": 3,
@@ -3016,6 +3445,7 @@
       "fact": "São sólido, líquido e gasoso."
     },
     {
+      "id": "chute-ciencias-430",
       "difficulty": "easy",
       "text": "Quantas cores primárias se aprendem na escola, na pintura?",
       "answer": 3,
@@ -3023,6 +3453,7 @@
       "fact": "Misturando as primárias saem as outras cores."
     },
     {
+      "id": "chute-ciencias-431",
       "difficulty": "easy",
       "text": "Quantos volts tem uma pilha comum, do tipo AA?",
       "answer": 1.5,
@@ -3030,6 +3461,7 @@
       "fact": "Duas pilhas em série somam o dobro de tensão."
     },
     {
+      "id": "chute-ciencias-432",
       "difficulty": "easy",
       "text": "Quantos volts tem a bateria de um carro comum?",
       "answer": 12,
@@ -3037,6 +3469,7 @@
       "fact": "Ela dá a partida no motor e alimenta as luzes."
     },
     {
+      "id": "chute-ciencias-433",
       "difficulty": "easy",
       "text": "Quantos minutos leva para ferver 1 litro de água no fogão, aproximadamente?",
       "answer": 8,
@@ -3044,6 +3477,7 @@
       "fact": "Com tampa, a água ferve mais rápido."
     },
     {
+      "id": "chute-ciencias-434",
       "difficulty": "easy",
       "text": "Quantas horas por dia um bebê recém-nascido dorme, aproximadamente?",
       "answer": 16,
@@ -3051,6 +3485,7 @@
       "fact": "Ele acorda a cada poucas horas para mamar."
     },
     {
+      "id": "chute-ciencias-435",
       "difficulty": "easy",
       "text": "Com quantos meses um bebê costuma começar a andar, em média?",
       "answer": 12,
@@ -3058,6 +3493,7 @@
       "fact": "Alguns andam antes, outros só depois de um ano e meio."
     },
     {
+      "id": "chute-ciencias-436",
       "difficulty": "easy",
       "text": "Com quantos meses um bebê costuma sentar sem apoio, em média?",
       "answer": 6,
@@ -3065,6 +3501,7 @@
       "fact": "Antes disso ele aprende a sustentar a cabeça."
     },
     {
+      "id": "chute-ciencias-437",
       "difficulty": "easy",
       "text": "Qual é a temperatura de uma xícara de café recém-servido, em °C, aproximadamente?",
       "answer": 70,
@@ -3072,6 +3509,7 @@
       "fact": "Café muito quente perde parte do aroma."
     },
     {
+      "id": "chute-ciencias-438",
       "difficulty": "easy",
       "text": "Quantos centímetros tem um palmo de adulto, aproximadamente?",
       "answer": 20,
@@ -3079,6 +3517,7 @@
       "fact": "O palmo já foi usado como unidade de medida."
     },
     {
+      "id": "chute-ciencias-439",
       "difficulty": "easy",
       "text": "Quantos centímetros tem o pé de um adulto, aproximadamente?",
       "answer": 26,
@@ -3086,6 +3525,7 @@
       "fact": "O número do sapato brasileiro vem do tamanho do pé."
     },
     {
+      "id": "chute-ciencias-440",
       "difficulty": "easy",
       "text": "Quantos quilômetros uma pessoa anda em uma hora de caminhada normal?",
       "answer": 5,
@@ -3093,6 +3533,7 @@
       "fact": "Correndo leve, a distância passa do dobro."
     },
     {
+      "id": "chute-ciencias-441",
       "difficulty": "easy",
       "text": "Quantos mililitros de sangue se tiram numa doação?",
       "answer": 450,
@@ -3100,6 +3541,7 @@
       "fact": "O corpo repõe o volume de líquido em um ou dois dias."
     },
     {
+      "id": "chute-ciencias-442",
       "difficulty": "easy",
       "text": "De quantos em quantos meses um homem pode doar sangue no Brasil?",
       "answer": 2,
@@ -3107,6 +3549,7 @@
       "fact": "Para as mulheres o intervalo é de três meses."
     },
     {
+      "id": "chute-ciencias-443",
       "difficulty": "easy",
       "text": "Com quantos quilos, no mínimo, uma pessoa pode doar sangue?",
       "answer": 50,
@@ -3114,6 +3557,7 @@
       "fact": "Também é preciso ter entre 16 e 69 anos."
     },
     {
+      "id": "chute-ciencias-444",
       "difficulty": "easy",
       "text": "Quantos dias a Lua leva para mudar de uma fase para a outra, aproximadamente?",
       "answer": 7,
@@ -3121,6 +3565,7 @@
       "fact": "Por isso a Lua cheia volta mais ou menos uma vez por mês."
     },
     {
+      "id": "chute-ciencias-445",
       "difficulty": "easy",
       "text": "Quantos quilômetros tem uma milha, aproximadamente?",
       "answer": 1.6,
@@ -3128,6 +3573,7 @@
       "fact": "A milha ainda é usada nos Estados Unidos e no Reino Unido."
     },
     {
+      "id": "chute-ciencias-446",
       "difficulty": "easy",
       "text": "Quantos fios de cabelo uma pessoa perde por dia, em média?",
       "answer": 100,
@@ -3135,6 +3581,7 @@
       "fact": "Perder até essa quantidade por dia é considerado normal."
     },
     {
+      "id": "chute-ciencias-447",
       "difficulty": "easy",
       "text": "Quantos planetas ficam entre a Terra e o Sol?",
       "answer": 2,
@@ -3142,6 +3589,7 @@
       "fact": "São Mercúrio e Vênus."
     },
     {
+      "id": "chute-ciencias-448",
       "difficulty": "easy",
       "text": "Qual é a posição da Terra na ordem dos planetas, contando a partir do Sol?",
       "answer": 3,
@@ -3149,6 +3597,7 @@
       "fact": "É o único planeta conhecido com água líquida na superfície."
     },
     {
+      "id": "chute-ciencias-449",
       "difficulty": "easy",
       "text": "Quantos centímetros de comprimento tem o coração de um adulto, aproximadamente?",
       "answer": 12,
@@ -3156,6 +3605,7 @@
       "fact": "Ele tem mais ou menos o tamanho de uma mão fechada."
     },
     {
+      "id": "chute-ciencias-450",
       "difficulty": "easy",
       "text": "Quantos quilos pesa o cérebro de um adulto, aproximadamente?",
       "answer": 1.4,
@@ -3163,6 +3613,7 @@
       "fact": "Ele é feito em boa parte de água e gordura."
     },
     {
+      "id": "chute-ciencias-451",
       "difficulty": "easy",
       "text": "Quantos dentes do siso uma pessoa pode ter, no máximo?",
       "answer": 4,
@@ -3170,6 +3621,7 @@
       "fact": "Muita gente nunca chega a ter todos."
     },
     {
+      "id": "chute-ciencias-452",
       "difficulty": "easy",
       "text": "Quantas vezes por dia uma pessoa urina, em média?",
       "answer": 7,
@@ -3177,6 +3629,7 @@
       "fact": "Café e chá aumentam a vontade de ir ao banheiro."
     },
     {
+      "id": "chute-ciencias-453",
       "difficulty": "easy",
       "text": "Em que temperatura, em °C, muita gente deixa o ar-condicionado no verão?",
       "answer": 23,
@@ -3184,6 +3637,7 @@
       "fact": "Cada grau a menos aumenta o consumo de energia."
     },
     {
+      "id": "chute-ciencias-454",
       "difficulty": "easy",
       "text": "Quantas horas de sono por noite uma criança de 10 anos precisa, aproximadamente?",
       "answer": 10,
@@ -3191,6 +3645,7 @@
       "fact": "Adolescentes também precisam de mais sono que os adultos."
     },
     {
+      "id": "chute-ciencias-455",
       "difficulty": "easy",
       "text": "Com quantos anos, em média, a puberdade começa nas meninas?",
       "answer": 11,
@@ -3198,6 +3653,7 @@
       "fact": "Nos meninos ela costuma começar um pouco depois."
     },
     {
+      "id": "chute-ciencias-456",
       "difficulty": "easy",
       "text": "Quantos dias dura um ciclo menstrual, em média?",
       "answer": 28,
@@ -3205,6 +3661,7 @@
       "fact": "O ciclo pode variar bastante de uma pessoa para outra."
     },
     {
+      "id": "chute-ciencias-457",
       "difficulty": "easy",
       "text": "Quantos minutos de atividade física por semana a OMS recomenda para adultos, no mínimo?",
       "answer": 150,
@@ -3212,6 +3669,7 @@
       "fact": "Dá cerca de meia hora em cinco dias da semana."
     },
     {
+      "id": "chute-ciencias-458",
       "difficulty": "easy",
       "text": "Quantos polos tem um ímã?",
       "answer": 2,
@@ -3219,6 +3677,7 @@
       "fact": "Polos iguais se repelem e polos diferentes se atraem."
     },
     {
+      "id": "chute-ciencias-459",
       "difficulty": "easy",
       "text": "Até quantos graus, em °C, vai um termômetro clínico comum?",
       "answer": 42,
@@ -3226,6 +3685,7 @@
       "fact": "O corpo humano não aguenta muito tempo acima disso."
     },
     {
+      "id": "chute-ciencias-460",
       "difficulty": "easy",
       "text": "Quantas horas leva para a água virar gelo numa forminha, no freezer, aproximadamente?",
       "answer": 3,
@@ -3233,6 +3693,7 @@
       "fact": "Forminhas menores congelam mais rápido."
     },
     {
+      "id": "chute-ciencias-461",
       "difficulty": "easy",
       "text": "Quantos minutos se deve escovar os dentes, segundo os dentistas?",
       "answer": 2,
@@ -3240,6 +3701,7 @@
       "fact": "O fio dental limpa onde a escova não alcança."
     },
     {
+      "id": "chute-ciencias-462",
       "difficulty": "easy",
       "text": "De quantos em quantos meses se deve trocar a escova de dentes?",
       "answer": 3,
@@ -3247,6 +3709,7 @@
       "fact": "Cerdas gastas limpam bem menos."
     },
     {
+      "id": "chute-ciencias-463",
       "difficulty": "easy",
       "text": "Quantas horas de jejum se pede antes de um exame de sangue comum, em geral?",
       "answer": 8,
@@ -3254,6 +3717,7 @@
       "fact": "Água costuma ser liberada durante o jejum."
     },
     {
+      "id": "chute-ciencias-464",
       "difficulty": "easy",
       "text": "Quantos dias dura um tratamento comum com antibiótico, em geral?",
       "answer": 7,
@@ -3261,6 +3725,7 @@
       "fact": "Parar antes da hora ajuda as bactérias a ficarem resistentes."
     },
     {
+      "id": "chute-ciencias-465",
       "difficulty": "easy",
       "text": "Qual é o fator de proteção mínimo de protetor solar que os dermatologistas recomendam?",
       "answer": 30,
@@ -3268,6 +3733,7 @@
       "fact": "O protetor precisa ser reaplicado a cada duas horas."
     },
     {
+      "id": "chute-ciencias-466",
       "difficulty": "easy",
       "text": "Quantos minutos um remédio comum para dor leva para fazer efeito, em média?",
       "answer": 30,
@@ -3275,6 +3741,7 @@
       "fact": "Remédio em gotas costuma agir mais rápido que o comprimido."
     },
     {
+      "id": "chute-ciencias-467",
       "difficulty": "easy",
       "text": "Quantos segundos uma pessoa comum aguenta sem respirar, aproximadamente?",
       "answer": 60,

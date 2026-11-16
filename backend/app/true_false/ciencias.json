@@ -2,576 +2,672 @@
   "theme": "Ciências",
   "statements": [
     {
+      "id": "vf-ciencias-1",
       "difficulty": "medium",
       "text": "O coração humano tem quatro cavidades.",
       "answer": true,
       "fact": "São dois átrios e dois ventrículos. O coração bate cerca de 100 mil vezes por dia."
     },
     {
+      "id": "vf-ciencias-2",
       "difficulty": "medium",
       "text": "A Lua tem luz própria.",
       "answer": false,
       "fact": "A Lua só reflete a luz do Sol. As fases mudam conforme a parte iluminada que vemos da Terra."
     },
     {
+      "id": "vf-ciencias-3",
       "difficulty": "medium",
       "text": "Ao nível do mar, a água ferve a 100 °C.",
       "answer": true,
       "fact": "Em lugares altos a pressão é menor e a água ferve antes: em La Paz, ferve perto de 88 °C."
     },
     {
+      "id": "vf-ciencias-4",
       "difficulty": "medium",
       "text": "O diamante é feito de silício.",
       "answer": false,
       "fact": "O diamante é carbono puro, o mesmo elemento do grafite do lápis. Muda só a organização dos átomos."
     },
     {
+      "id": "vf-ciencias-5",
       "difficulty": "medium",
       "text": "A vitamina D é produzida principalmente por comer frutas.",
       "answer": false,
       "fact": "Ela é produzida na pele com a luz do Sol."
     },
     {
+      "id": "vf-ciencias-6",
       "difficulty": "medium",
       "text": "Marie Curie ganhou dois prêmios Nobel.",
       "answer": true,
       "fact": "Um em Física e outro em Química."
     },
     {
+      "id": "vf-ciencias-7",
       "difficulty": "medium",
       "text": "Marte tem duas luas.",
       "answer": true,
       "fact": "As luas de Marte se chamam Fobos e Deimos, que significam medo e terror em grego."
     },
     {
+      "id": "vf-ciencias-8",
       "difficulty": "medium",
       "text": "O osso mais longo do corpo humano é o úmero.",
       "answer": false,
       "fact": "O mais longo é o fêmur, o osso da coxa. O úmero é o osso do braço."
     },
     {
+      "id": "vf-ciencias-9",
       "difficulty": "medium",
       "text": "Na fotossíntese, as plantas liberam oxigênio.",
       "answer": true,
       "fact": "As plantas usam luz, água e gás carbônico para produzir açúcar, e o oxigênio sai como sobra."
     },
     {
+      "id": "vf-ciencias-10",
       "difficulty": "medium",
       "text": "O som se propaga no vácuo.",
       "answer": false,
       "fact": "O som precisa de um meio, como ar ou água, para se propagar. Por isso, no espaço não há som."
     },
     {
+      "id": "vf-ciencias-11",
       "difficulty": "hard",
       "text": "O símbolo químico do ouro é Au.",
       "answer": true,
       "fact": "Au vem de aurum, nome do ouro em latim. Todo o ouro já extraído caberia num cubo de uns 22 m de lado."
     },
     {
+      "id": "vf-ciencias-12",
       "difficulty": "hard",
       "text": "O gás mais abundante no ar é o oxigênio.",
       "answer": false,
       "fact": "O mais abundante é o nitrogênio, com cerca de 78% do ar. O oxigênio fica perto de 21%."
     },
     {
+      "id": "vf-ciencias-13",
       "difficulty": "hard",
       "text": "Vênus é o planeta mais quente do Sistema Solar.",
       "answer": true,
       "fact": "Vênus é mais quente que Mercúrio por causa do efeito estufa da atmosfera densa: cerca de 465 °C."
     },
     {
+      "id": "vf-ciencias-14",
       "difficulty": "hard",
       "text": "A luz do Sol leva cerca de 8 segundos para chegar à Terra.",
       "answer": false,
       "fact": "A luz do Sol leva cerca de 8 minutos e 20 segundos para chegar até nós."
     },
     {
+      "id": "vf-ciencias-15",
       "difficulty": "hard",
       "text": "O DNA tem a forma de uma dupla hélice.",
       "answer": true,
       "fact": "A estrutura foi descrita em 1953 por Watson e Crick, com base nas imagens de raio X de Rosalind Franklin."
     },
     {
+      "id": "vf-ciencias-16",
       "difficulty": "hard",
       "text": "A OMS declarou a varíola erradicada em 1980.",
       "answer": true,
       "fact": "É a única doença humana erradicada."
     },
     {
+      "id": "vf-ciencias-17",
       "difficulty": "hard",
       "text": "Um adulto tem 206 ossos.",
       "answer": true,
       "fact": "Os bebês nascem com cerca de 300 ossos, e vários se fundem durante o crescimento."
     },
     {
+      "id": "vf-ciencias-18",
       "difficulty": "hard",
       "text": "A unidade de medida da força é o joule.",
       "answer": false,
       "fact": "A força é medida em newtons. O joule mede energia e trabalho."
     },
     {
+      "id": "vf-ciencias-19",
       "difficulty": "hard",
       "text": "O mercúrio é um metal líquido em temperatura ambiente.",
       "answer": true,
       "fact": "O mercúrio derrete a cerca de −39 °C. Era muito usado em termômetros antigos."
     },
     {
+      "id": "vf-ciencias-20",
       "difficulty": "hard",
       "text": "Plutão ainda é considerado o nono planeta do Sistema Solar.",
       "answer": false,
       "fact": "Desde 2006, Plutão é classificado como planeta-anão pela União Astronômica Internacional."
     },
     {
+      "id": "vf-ciencias-21",
       "difficulty": "medium",
       "text": "O Sol é uma estrela.",
       "answer": true,
       "fact": "Ele é apenas uma entre centenas de bilhões na Via Láctea."
     },
     {
+      "id": "vf-ciencias-22",
       "difficulty": "medium",
       "text": "Mercúrio é o planeta mais quente do Sistema Solar.",
       "answer": false,
       "fact": "O mais quente é Vênus, por causa do efeito estufa."
     },
     {
+      "id": "vf-ciencias-23",
       "difficulty": "medium",
       "text": "Vênus é mais quente que Mercúrio, apesar de mais longe do Sol.",
       "answer": true,
       "fact": "Sua atmosfera densa retém o calor."
     },
     {
+      "id": "vf-ciencias-24",
       "difficulty": "medium",
       "text": "O Sol gira em torno da Terra.",
       "answer": false,
       "fact": "A Terra gira em torno do Sol, como mostrou Copérnico."
     },
     {
+      "id": "vf-ciencias-25",
       "difficulty": "medium",
       "text": "Um dia em Vênus é mais longo que seu ano.",
       "answer": true,
       "fact": "Vênus gira muito devagar."
     },
     {
+      "id": "vf-ciencias-26",
       "difficulty": "medium",
       "text": "Plutão continua sendo classificado como planeta.",
       "answer": false,
       "fact": "Desde 2006, ele é um planeta anão."
     },
     {
+      "id": "vf-ciencias-27",
       "difficulty": "medium",
       "text": "Júpiter é maior que todos os outros planetas somados.",
       "answer": true,
       "fact": "Sua massa é 2,5 vezes a de todos os outros somados."
     },
     {
+      "id": "vf-ciencias-28",
       "difficulty": "medium",
       "text": "Saturno é o único planeta que tem anéis.",
       "answer": false,
       "fact": "Júpiter, Urano e Netuno também têm anéis."
     },
     {
+      "id": "vf-ciencias-29",
       "difficulty": "medium",
       "text": "A Terra não é uma esfera perfeita.",
       "answer": true,
       "fact": "Ela é mais achatada nos polos."
     },
     {
+      "id": "vf-ciencias-30",
       "difficulty": "medium",
       "text": "A Grande Muralha da China é facilmente vista da Lua.",
       "answer": false,
       "fact": "Nem da órbita ela é tão fácil de ver sem ajuda."
     },
     {
+      "id": "vf-ciencias-31",
       "difficulty": "medium",
       "text": "Na Lua, uma pessoa pesa cerca de seis vezes menos que na Terra.",
       "answer": true,
       "fact": "A massa continua igual."
     },
     {
+      "id": "vf-ciencias-32",
       "difficulty": "medium",
       "text": "Existe uma face da Lua sempre escura.",
       "answer": false,
       "fact": "O lado oculto também recebe luz, mas não é visto da Terra."
     },
     {
+      "id": "vf-ciencias-33",
       "difficulty": "medium",
       "text": "A Lua está se afastando da Terra.",
       "answer": true,
       "fact": "Ela se afasta cerca de 3,8 cm por ano."
     },
     {
+      "id": "vf-ciencias-34",
       "difficulty": "medium",
       "text": "No espaço, o som se propaga mais rápido que no ar.",
       "answer": false,
       "fact": "No vácuo, o som não se propaga."
     },
     {
+      "id": "vf-ciencias-35",
       "difficulty": "medium",
       "text": "A luz do Sol leva cerca de oito minutos para chegar à Terra.",
       "answer": true,
       "fact": "Essa distância é chamada de unidade astronômica."
     },
     {
+      "id": "vf-ciencias-36",
       "difficulty": "medium",
       "text": "A água conduz mal a eletricidade em qualquer condição.",
       "answer": false,
       "fact": "Com sais dissolvidos, ela conduz bem a eletricidade."
     },
     {
+      "id": "vf-ciencias-37",
       "difficulty": "medium",
       "text": "O diamante e o grafite são feitos de carbono.",
       "answer": true,
       "fact": "A diferença está na organização dos átomos."
     },
     {
+      "id": "vf-ciencias-38",
       "difficulty": "medium",
       "text": "O ouro é o metal mais pesado que existe.",
       "answer": false,
       "fact": "O ósmio e o irídio são bem mais densos."
     },
     {
+      "id": "vf-ciencias-39",
       "difficulty": "medium",
       "text": "O vidro é feito principalmente de areia.",
       "answer": true,
       "fact": "A areia é rica em sílica."
     },
     {
+      "id": "vf-ciencias-40",
       "difficulty": "medium",
       "text": "O gelo é mais denso que a água líquida.",
       "answer": false,
       "fact": "Por isso o gelo boia."
     },
     {
+      "id": "vf-ciencias-41",
       "difficulty": "medium",
       "text": "O hidrogênio é o elemento mais abundante do Universo.",
       "answer": true,
       "fact": "Cerca de 75% da matéria comum é hidrogênio."
     },
     {
+      "id": "vf-ciencias-42",
       "difficulty": "medium",
       "text": "O gás mais abundante no ar é o gás carbônico.",
       "answer": false,
       "fact": "O mais abundante é o nitrogênio, com cerca de 78%."
     },
     {
+      "id": "vf-ciencias-43",
       "difficulty": "medium",
       "text": "O átomo é formado por prótons, nêutrons e elétrons.",
       "answer": true,
       "fact": "A maior parte de sua massa está no núcleo."
     },
     {
+      "id": "vf-ciencias-44",
       "difficulty": "medium",
       "text": "Os elétrons ficam dentro do núcleo do átomo.",
       "answer": false,
       "fact": "Os elétrons ficam em torno do núcleo."
     },
     {
+      "id": "vf-ciencias-45",
       "difficulty": "medium",
       "text": "O sangue humano é sempre vermelho, nunca azul.",
       "answer": true,
       "fact": "As veias só parecem azuis por causa de como a luz atravessa a pele."
     },
     {
+      "id": "vf-ciencias-46",
       "difficulty": "medium",
       "text": "O ser humano usa só 10% do cérebro.",
       "answer": false,
       "fact": "Exames mostram que usamos o cérebro inteiro."
     },
     {
+      "id": "vf-ciencias-47",
       "difficulty": "medium",
       "text": "O fêmur é o osso mais longo do corpo humano.",
       "answer": true,
       "fact": "Ele é mais resistente que o concreto."
     },
     {
+      "id": "vf-ciencias-48",
       "difficulty": "medium",
       "text": "O coração fica totalmente no lado esquerdo do peito.",
       "answer": false,
       "fact": "Ele fica no centro, com a ponta para a esquerda."
     },
     {
+      "id": "vf-ciencias-49",
       "difficulty": "medium",
       "text": "O corpo humano adulto tem menos ossos que o de um bebê.",
       "answer": true,
       "fact": "Vários ossos se fundem com o crescimento."
     },
     {
+      "id": "vf-ciencias-50",
       "difficulty": "medium",
       "text": "O sangue passa pelo fígado só uma vez por dia.",
       "answer": false,
       "fact": "Ele passa por lá centenas de vezes."
     },
     {
+      "id": "vf-ciencias-51",
       "difficulty": "medium",
       "text": "O pâncreas produz insulina.",
       "answer": true,
       "fact": "Ela controla o açúcar no sangue."
     },
     {
+      "id": "vf-ciencias-52",
       "difficulty": "medium",
       "text": "Antibióticos combatem vírus.",
       "answer": false,
       "fact": "Eles só agem contra bactérias."
     },
     {
+      "id": "vf-ciencias-53",
       "difficulty": "medium",
       "text": "Vacinas treinam o sistema imunológico.",
       "answer": true,
       "fact": "Elas apresentam uma versão segura do agente."
     },
     {
+      "id": "vf-ciencias-54",
       "difficulty": "medium",
       "text": "A primeira vacina foi criada para combater a varíola.",
       "answer": true,
       "fact": "Edward Jenner a criou em 1796."
     },
     {
+      "id": "vf-ciencias-55",
       "difficulty": "medium",
       "text": "A penicilina foi descoberta por Louis Pasteur.",
       "answer": false,
       "fact": "Foi por Alexander Fleming, em 1928."
     },
     {
+      "id": "vf-ciencias-56",
       "difficulty": "hard",
       "text": "Einstein ganhou o Nobel pela teoria da relatividade.",
       "answer": false,
       "fact": "O prêmio foi pelo efeito fotoelétrico."
     },
     {
+      "id": "vf-ciencias-57",
       "difficulty": "hard",
       "text": "A teoria da relatividade foi testada no Brasil.",
       "answer": true,
       "fact": "O eclipse de 1919, em Sobral, confirmou previsões de Einstein."
     },
     {
+      "id": "vf-ciencias-58",
       "difficulty": "hard",
       "text": "Newton escreveu os Principia em alemão.",
       "answer": false,
       "fact": "O livro foi escrito em latim."
     },
     {
+      "id": "vf-ciencias-59",
       "difficulty": "hard",
       "text": "Galileu foi condenado pela Inquisição.",
       "answer": true,
       "fact": "Ele passou seus últimos anos em prisão domiciliar."
     },
     {
+      "id": "vf-ciencias-60",
       "difficulty": "hard",
       "text": "Marie Curie nasceu na França.",
       "answer": false,
       "fact": "Ela nasceu na Polônia, em Varsóvia."
     },
     {
+      "id": "vf-ciencias-61",
       "difficulty": "hard",
       "text": "Lavoisier foi guilhotinado na Revolução Francesa.",
       "answer": true,
       "fact": "Isso aconteceu em 1794."
     },
     {
+      "id": "vf-ciencias-62",
       "difficulty": "hard",
       "text": "Mendeleev descobriu o oxigênio.",
       "answer": false,
       "fact": "Priestley e Scheele foram os descobridores, e Mendeleev organizou a tabela periódica."
     },
     {
+      "id": "vf-ciencias-63",
       "difficulty": "hard",
       "text": "Rosalind Franklin fez imagens decisivas para descobrir a dupla hélice do DNA.",
       "answer": true,
       "fact": "Ela morreu antes de o Nobel ser concedido a Watson, Crick e Wilkins."
     },
     {
+      "id": "vf-ciencias-64",
       "difficulty": "hard",
       "text": "O carbono-14 serve para datar rochas de bilhões de anos.",
       "answer": false,
       "fact": "Ele serve para materiais de até cerca de 50 mil anos."
     },
     {
+      "id": "vf-ciencias-65",
       "difficulty": "hard",
       "text": "O gálio pode derreter na palma da mão.",
       "answer": true,
       "fact": "Ele derrete a cerca de 30 °C."
     },
     {
+      "id": "vf-ciencias-66",
       "difficulty": "hard",
       "text": "O mercúrio é o metal mais denso.",
       "answer": false,
       "fact": "O ósmio é o mais denso."
     },
     {
+      "id": "vf-ciencias-67",
       "difficulty": "hard",
       "text": "O tungstênio tem o maior ponto de fusão entre os metais.",
       "answer": true,
       "fact": "Ele derrete a mais de 3.400 °C."
     },
     {
+      "id": "vf-ciencias-68",
       "difficulty": "hard",
       "text": "O hélio é mais denso que o ar.",
       "answer": false,
       "fact": "Por ser mais leve, faz os balões flutuarem."
     },
     {
+      "id": "vf-ciencias-69",
       "difficulty": "hard",
       "text": "O hélio foi detectado no Sol antes de ser encontrado na Terra.",
       "answer": true,
       "fact": "Foi em 1868, durante um eclipse."
     },
     {
+      "id": "vf-ciencias-70",
       "difficulty": "hard",
       "text": "A água pura tem pH 4.",
       "answer": false,
       "fact": "Ela tem pH próximo de 7 a 25 °C."
     },
     {
+      "id": "vf-ciencias-71",
       "difficulty": "hard",
       "text": "A água é um solvente muito comum por causa de sua polaridade.",
       "answer": true,
       "fact": "Ela é chamada de solvente universal."
     },
     {
+      "id": "vf-ciencias-72",
       "difficulty": "hard",
       "text": "O efeito estufa é sempre ruim para a vida.",
       "answer": false,
       "fact": "Sem ele, a Terra seria um mundo gelado, com cerca de -18 °C."
     },
     {
+      "id": "vf-ciencias-73",
       "difficulty": "hard",
       "text": "Em Marte há um vulcão quase três vezes mais alto que o Everest.",
       "answer": true,
       "fact": "É o Monte Olimpo, com cerca de 22 km."
     },
     {
+      "id": "vf-ciencias-74",
       "difficulty": "hard",
       "text": "O maior vulcão do Sistema Solar fica em Vênus.",
       "answer": false,
       "fact": "Ele fica em Marte, e é o Monte Olimpo."
     },
     {
+      "id": "vf-ciencias-75",
       "difficulty": "hard",
       "text": "Ganimedes é maior que o planeta Mercúrio.",
       "answer": true,
       "fact": "Essa é a maior lua do Sistema Solar."
     },
     {
+      "id": "vf-ciencias-76",
       "difficulty": "hard",
       "text": "Titã é uma lua de Júpiter.",
       "answer": false,
       "fact": "Titã é uma lua de Saturno."
     },
     {
+      "id": "vf-ciencias-77",
       "difficulty": "hard",
       "text": "Titã tem lagos de metano líquido.",
       "answer": true,
       "fact": "A sonda Huygens pousou lá em 2005."
     },
     {
+      "id": "vf-ciencias-78",
       "difficulty": "hard",
       "text": "A sonda Voyager 1 já saiu da Via Láctea.",
       "answer": false,
       "fact": "Ela saiu da heliosfera, mas continua na galáxia."
     },
     {
+      "id": "vf-ciencias-79",
       "difficulty": "hard",
       "text": "As sondas Voyager levam um disco de ouro.",
       "answer": true,
       "fact": "O disco tem sons e músicas da Terra."
     },
     {
+      "id": "vf-ciencias-80",
       "difficulty": "hard",
       "text": "O cometa Halley passa a cada 12 anos.",
       "answer": false,
       "fact": "Ele passa a cada 76 anos, aproximadamente."
     },
     {
+      "id": "vf-ciencias-81",
       "difficulty": "hard",
       "text": "Stephen Hawking propôs que buracos negros emitem radiação.",
       "answer": true,
       "fact": "Ela recebeu o nome de radiação Hawking."
     },
     {
+      "id": "vf-ciencias-82",
       "difficulty": "hard",
       "text": "Um buraco negro é um buraco vazio no espaço.",
       "answer": false,
       "fact": "Ele é uma região de massa enorme em um espaço pequeno."
     },
     {
+      "id": "vf-ciencias-83",
       "difficulty": "hard",
       "text": "O ano de 1905 é chamado de ano milagroso de Einstein.",
       "answer": true,
       "fact": "Ele publicou quatro artigos revolucionários."
     },
     {
+      "id": "vf-ciencias-84",
       "difficulty": "hard",
       "text": "A radiação ultravioleta é visível ao olho humano.",
       "answer": false,
       "fact": "Ela fica além da faixa do que o olho humano consegue ver."
     },
     {
+      "id": "vf-ciencias-85",
       "difficulty": "hard",
       "text": "O efeito Doppler explica a mudança no som de uma ambulância que passa.",
       "answer": true,
       "fact": "A frequência muda conforme a distância diminui ou aumenta."
     },
     {
+      "id": "vf-ciencias-86",
       "difficulty": "hard",
       "text": "Dois objetos soltos no vácuo caem em velocidades diferentes.",
       "answer": false,
       "fact": "Galileu mostrou que caem iguais, e os astronautas confirmaram na Lua."
     },
     {
+      "id": "vf-ciencias-87",
       "difficulty": "hard",
       "text": "O nome \"quark\" vem de um livro de James Joyce.",
       "answer": true,
       "fact": "Murray Gell-Mann usou um verso de Finnegans Wake."
     },
     {
+      "id": "vf-ciencias-88",
       "difficulty": "hard",
       "text": "O Bóson de Higgs foi confirmado em 1950.",
       "answer": false,
       "fact": "Ele foi confirmado no LHC, em 2012."
     },
     {
+      "id": "vf-ciencias-89",
       "difficulty": "hard",
       "text": "O quilograma foi redefinido em 2019.",
       "answer": true,
       "fact": "Hoje ele usa a constante de Planck."
     },
     {
+      "id": "vf-ciencias-90",
       "difficulty": "medium",
       "text": "Vênus é mais quente que Mercúrio.",
       "answer": true,
       "fact": "A atmosfera densa de Vênus prende o calor."
     },
     {
+      "id": "vf-ciencias-91",
       "difficulty": "medium",
       "text": "O hidrogênio é o elemento mais leve.",
       "answer": true,
       "fact": "Ele tem apenas um próton no átomo mais comum."
     },
     {
+      "id": "vf-ciencias-92",
       "difficulty": "hard",
       "text": "A luz viaja mais devagar no vácuo do que na água.",
       "answer": false,
       "fact": "Ela é mais rápida no vácuo."
     },
     {
+      "id": "vf-ciencias-93",
       "difficulty": "hard",
       "text": "O átomo é a menor partícula conhecida da matéria.",
       "answer": false,
       "fact": "Prótons, nêutrons e elétrons são ainda menores."
     },
     {
+      "id": "vf-ciencias-94",
       "difficulty": "hard",
       "text": "O elemento hélio foi detectado primeiro no Sol.",
       "answer": true,
       "fact": "O nome vem de \"helios\", sol em grego."
     },
     {
+      "id": "vf-ciencias-95",
       "difficulty": "medium",
       "text": "O coração tem seu próprio sistema elétrico.",
       "answer": true,
       "fact": "O nó sinoatrial marca o ritmo das batidas."
     },
     {
+      "id": "vf-ciencias-96",
       "difficulty": "medium",
       "text": "A água do mar congela abaixo de 0 °C.",
       "answer": true,

@@ -2,576 +2,672 @@
   "theme": "Tecnologia",
   "statements": [
     {
+      "id": "vf-tecnologia-1",
       "difficulty": "medium",
       "text": "O HTML é usado para criar páginas da web.",
       "answer": true,
       "fact": "HTML quer dizer HyperText Markup Language. A primeira página da web foi publicada em 1991."
     },
     {
+      "id": "vf-tecnologia-2",
       "difficulty": "medium",
       "text": "O Windows foi criado pela Apple.",
       "answer": false,
       "fact": "O Windows é da Microsoft. A primeira versão saiu em 1985."
     },
     {
+      "id": "vf-tecnologia-3",
       "difficulty": "medium",
       "text": "Um byte tem 8 bits.",
       "answer": true,
       "fact": "Com 8 bits dá para formar 256 combinações diferentes, de 0 a 255."
     },
     {
+      "id": "vf-tecnologia-4",
       "difficulty": "medium",
       "text": "O Android é um sistema operacional da Apple.",
       "answer": false,
       "fact": "O Android é do Google, que comprou a empresa Android em 2005. O sistema da Apple é o iOS."
     },
     {
+      "id": "vf-tecnologia-5",
       "difficulty": "medium",
       "text": "O WhatsApp foi comprado pelo Facebook.",
       "answer": true,
       "fact": "O Facebook comprou o WhatsApp em 2014 por cerca de 19 bilhões de dólares."
     },
     {
+      "id": "vf-tecnologia-6",
       "difficulty": "medium",
       "text": "O Wi-Fi transmite dados por cabos de fibra óptica.",
       "answer": false,
       "fact": "O Wi-Fi usa ondas de rádio. A fibra óptica chega até o roteador, e dali o sinal vai pelo ar."
     },
     {
+      "id": "vf-tecnologia-7",
       "difficulty": "medium",
       "text": "Steve Jobs foi um dos fundadores da Apple.",
       "answer": true,
       "fact": "A Apple foi fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne, que vendeu sua parte poucos dias depois."
     },
     {
+      "id": "vf-tecnologia-8",
       "difficulty": "medium",
       "text": "O primeiro iPhone foi lançado em 2010.",
       "answer": false,
       "fact": "O primeiro iPhone foi apresentado em janeiro de 2007 por Steve Jobs."
     },
     {
+      "id": "vf-tecnologia-9",
       "difficulty": "medium",
       "text": "O Google começou como um projeto de estudantes da Universidade Stanford.",
       "answer": true,
       "fact": "Larry Page e Sergey Brin criaram o Google em 1998. O primeiro nome do projeto era BackRub."
     },
     {
+      "id": "vf-tecnologia-10",
       "difficulty": "medium",
       "text": "A memória RAM guarda os arquivos mesmo com o computador desligado.",
       "answer": false,
       "fact": "A RAM é volátil: perde tudo sem energia. Os arquivos ficam guardados no SSD ou no HD."
     },
     {
+      "id": "vf-tecnologia-11",
       "difficulty": "hard",
       "text": "O primeiro bug de computador registrado foi uma mariposa de verdade.",
       "answer": true,
       "fact": "Em 1947, a equipe de Grace Hopper achou uma mariposa presa no computador Mark II e colou o inseto no caderno de registros."
     },
     {
+      "id": "vf-tecnologia-12",
       "difficulty": "hard",
       "text": "O Linux foi criado por Bill Gates.",
       "answer": false,
       "fact": "O Linux foi criado em 1991 pelo finlandês Linus Torvalds, que ainda era estudante."
     },
     {
+      "id": "vf-tecnologia-13",
       "difficulty": "hard",
       "text": "A linguagem Python tem esse nome por causa do grupo Monty Python.",
       "answer": true,
       "fact": "O criador, Guido van Rossum, era fã do grupo de comédia britânico. A cobra só veio depois, no logotipo."
     },
     {
+      "id": "vf-tecnologia-14",
       "difficulty": "hard",
       "text": "O QR Code foi inventado nos Estados Unidos.",
       "answer": false,
       "fact": "O QR Code foi inventado no Japão em 1994, pela Denso Wave, para rastrear peças na indústria de carros."
     },
     {
+      "id": "vf-tecnologia-15",
       "difficulty": "hard",
       "text": "O primeiro e-mail foi enviado em 1971.",
       "answer": true,
       "fact": "Ray Tomlinson enviou o primeiro e-mail pela ARPANET e escolheu o @ para separar o usuário do computador."
     },
     {
+      "id": "vf-tecnologia-16",
       "difficulty": "hard",
       "text": "Um terabyte equivale a 100 gigabytes.",
       "answer": false,
       "fact": "Um terabyte são 1.000 gigabytes, ou 1.024 se contado na base binária."
     },
     {
+      "id": "vf-tecnologia-17",
       "difficulty": "hard",
       "text": "O Bluetooth tem esse nome por causa de um rei viking.",
       "answer": true,
       "fact": "O nome homenageia Harald Dente-Azul, rei que uniu tribos da Dinamarca e da Noruega, assim como a tecnologia une aparelhos."
     },
     {
+      "id": "vf-tecnologia-18",
       "difficulty": "hard",
       "text": "A primeira mensagem SMS foi enviada em 2001.",
       "answer": false,
       "fact": "O primeiro SMS foi enviado em 1992 e dizia \"Merry Christmas\"."
     },
     {
+      "id": "vf-tecnologia-19",
       "difficulty": "hard",
       "text": "O ENIAC, um dos primeiros computadores, ocupava uma sala inteira.",
       "answer": true,
       "fact": "O ENIAC ficou pronto em 1946, pesava cerca de 30 toneladas e tinha quase 18 mil válvulas."
     },
     {
+      "id": "vf-tecnologia-20",
       "difficulty": "hard",
       "text": "A Positivo, fabricante de computadores, é uma empresa coreana.",
       "answer": false,
       "fact": "A Positivo é brasileira, de Curitiba, e já foi uma das maiores fabricantes de computadores do país."
     },
     {
+      "id": "vf-tecnologia-21",
       "difficulty": "medium",
       "text": "O ChatGPT foi criado pela OpenAI.",
       "answer": true,
       "fact": "Ele foi lançado em novembro de 2022."
     },
     {
+      "id": "vf-tecnologia-22",
       "difficulty": "medium",
       "text": "O Excel é um programa de edição de vídeo.",
       "answer": false,
       "fact": "Ele é um programa de planilhas da Microsoft."
     },
     {
+      "id": "vf-tecnologia-23",
       "difficulty": "medium",
       "text": "O Pix só funciona em horário comercial.",
       "answer": false,
       "fact": "Ele funciona todos os dias, a qualquer hora."
     },
     {
+      "id": "vf-tecnologia-24",
       "difficulty": "medium",
       "text": "Um gigabyte é maior que um megabyte.",
       "answer": true,
       "fact": "Um gigabyte tem cerca de mil megabytes."
     },
     {
+      "id": "vf-tecnologia-25",
       "difficulty": "medium",
       "text": "Um kilobyte é maior que um gigabyte.",
       "answer": false,
       "fact": "O kilobyte é bem menor, cerca de um milhão de vezes."
     },
     {
+      "id": "vf-tecnologia-26",
       "difficulty": "medium",
       "text": "O iPhone usa o sistema iOS.",
       "answer": true,
       "fact": "O sistema é exclusivo da Apple."
     },
     {
+      "id": "vf-tecnologia-27",
       "difficulty": "medium",
       "text": "Os celulares Samsung usam iOS.",
       "answer": false,
       "fact": "A maioria deles usa Android."
     },
     {
+      "id": "vf-tecnologia-28",
       "difficulty": "medium",
       "text": "A Tesla fabrica carros elétricos.",
       "answer": true,
       "fact": "A empresa também vende baterias e painéis solares."
     },
     {
+      "id": "vf-tecnologia-29",
       "difficulty": "medium",
       "text": "A SpaceX é uma fabricante de refrigerantes.",
       "answer": false,
       "fact": "Ela lança foguetes e satélites."
     },
     {
+      "id": "vf-tecnologia-30",
       "difficulty": "medium",
       "text": "O Twitter passou a se chamar X.",
       "answer": true,
       "fact": "A mudança veio em 2023, depois da compra por Elon Musk."
     },
     {
+      "id": "vf-tecnologia-31",
       "difficulty": "medium",
       "text": "Elon Musk fundou o Twitter.",
       "answer": false,
       "fact": "Ele comprou a empresa em 2022 por 44 bilhões de dólares."
     },
     {
+      "id": "vf-tecnologia-32",
       "difficulty": "medium",
       "text": "O Orkut foi muito popular no Brasil.",
       "answer": true,
       "fact": "Ele foi desativado em 2014."
     },
     {
+      "id": "vf-tecnologia-33",
       "difficulty": "medium",
       "text": "O MSN Messenger ainda é o aplicativo mais usado do mundo.",
       "answer": false,
       "fact": "Ele foi encerrado em 2013 na maior parte do mundo."
     },
     {
+      "id": "vf-tecnologia-34",
       "difficulty": "medium",
       "text": "O disquete virou o ícone de salvar em muitos programas.",
       "answer": true,
       "fact": "Muitos jovens nunca viram um de verdade."
     },
     {
+      "id": "vf-tecnologia-35",
       "difficulty": "medium",
       "text": "O CD guarda mais dados que um Blu-ray.",
       "answer": false,
       "fact": "Um Blu-ray guarda dezenas de vezes mais."
     },
     {
+      "id": "vf-tecnologia-36",
       "difficulty": "medium",
       "text": "O GPS usa satélites para localizar um aparelho.",
       "answer": true,
       "fact": "O sistema foi criado pelos EUA para uso militar."
     },
     {
+      "id": "vf-tecnologia-37",
       "difficulty": "medium",
       "text": "O GPS só funciona com internet.",
       "answer": false,
       "fact": "O sinal vem dos satélites, sem precisar de dados."
     },
     {
+      "id": "vf-tecnologia-38",
       "difficulty": "medium",
       "text": "Um pixel é um ponto de uma imagem digital.",
       "answer": true,
       "fact": "O nome vem de \"picture element\"."
     },
     {
+      "id": "vf-tecnologia-39",
       "difficulty": "medium",
       "text": "Uma tela 4K tem menos pixels que uma Full HD.",
       "answer": false,
       "fact": "Ela tem quatro vezes mais pixels."
     },
     {
+      "id": "vf-tecnologia-40",
       "difficulty": "medium",
       "text": "Spam é o nome das mensagens indesejadas.",
       "answer": true,
       "fact": "O nome veio de um quadro do Monty Python sobre carne enlatada."
     },
     {
+      "id": "vf-tecnologia-41",
       "difficulty": "medium",
       "text": "Um vírus de computador é um organismo vivo.",
       "answer": false,
       "fact": "Ele é um programa feito para se espalhar."
     },
     {
+      "id": "vf-tecnologia-42",
       "difficulty": "medium",
       "text": "O Linux tem um pinguim como mascote.",
       "answer": true,
       "fact": "O nome dele é Tux."
     },
     {
+      "id": "vf-tecnologia-43",
       "difficulty": "medium",
       "text": "A Amazon começou vendendo carros.",
       "answer": false,
       "fact": "Ela começou como uma livraria on-line."
     },
     {
+      "id": "vf-tecnologia-44",
       "difficulty": "medium",
       "text": "A Netflix começou alugando DVDs pelo correio.",
       "answer": true,
       "fact": "O streaming só veio em 2007."
     },
     {
+      "id": "vf-tecnologia-45",
       "difficulty": "medium",
       "text": "O Spotify foi criado no Brasil.",
       "answer": false,
       "fact": "Ele foi criado na Suécia."
     },
     {
+      "id": "vf-tecnologia-46",
       "difficulty": "medium",
       "text": "O TikTok é de uma empresa chinesa.",
       "answer": true,
       "fact": "A empresa dona é a ByteDance."
     },
     {
+      "id": "vf-tecnologia-47",
       "difficulty": "medium",
       "text": "O Telegram é do Google.",
       "answer": false,
       "fact": "Ele foi criado pelos irmãos Durov, nascidos na Rússia."
     },
     {
+      "id": "vf-tecnologia-48",
       "difficulty": "medium",
       "text": "O nome Google vem de \"googol\", um número enorme.",
       "answer": true,
       "fact": "Um googol é o número 1 seguido de 100 zeros."
     },
     {
+      "id": "vf-tecnologia-49",
       "difficulty": "medium",
       "text": "O nome Apple veio de um computador muito grande.",
       "answer": false,
       "fact": "Steve Jobs disse que gostava da fruta e achou o nome simpático."
     },
     {
+      "id": "vf-tecnologia-50",
       "difficulty": "medium",
       "text": "O emoji nasceu no Japão.",
       "answer": true,
       "fact": "Shigetaka Kurita desenhou 176 deles em 1999."
     },
     {
+      "id": "vf-tecnologia-51",
       "difficulty": "medium",
       "text": "O primeiro celular tinha tela sensível ao toque.",
       "answer": false,
       "fact": "O primeiro, de 1973, só tinha teclas."
     },
     {
+      "id": "vf-tecnologia-52",
       "difficulty": "medium",
       "text": "O Wi-Fi usa ondas de rádio.",
       "answer": true,
       "fact": "As faixas mais comuns são de 2,4 e 5 GHz."
     },
     {
+      "id": "vf-tecnologia-53",
       "difficulty": "hard",
       "text": "A Nokia já fabricou papel e pneus.",
       "answer": true,
       "fact": "A empresa finlandesa nasceu em 1865 como fábrica de papel."
     },
     {
+      "id": "vf-tecnologia-54",
       "difficulty": "hard",
       "text": "A Samsung começou fabricando computadores.",
       "answer": false,
       "fact": "Ela começou em 1938 vendendo alimentos secos."
     },
     {
+      "id": "vf-tecnologia-55",
       "difficulty": "hard",
       "text": "A Samsung começou vendendo alimentos secos.",
       "answer": true,
       "fact": "Só depois entrou em eletrônicos."
     },
     {
+      "id": "vf-tecnologia-56",
       "difficulty": "hard",
       "text": "Tim Berners-Lee ficou bilionário com a patente da web.",
       "answer": false,
       "fact": "Ele não patenteou a web e a deixou aberta a todos."
     },
     {
+      "id": "vf-tecnologia-57",
       "difficulty": "hard",
       "text": "A primeira foto enviada na web foi de uma banda de mulheres do CERN.",
       "answer": true,
       "fact": "O grupo se chamava Les Horribles Cernettes."
     },
     {
+      "id": "vf-tecnologia-58",
       "difficulty": "hard",
       "text": "O primeiro site da história saiu do ar para sempre.",
       "answer": false,
       "fact": "O CERN recolocou o site no ar em 2013."
     },
     {
+      "id": "vf-tecnologia-59",
       "difficulty": "hard",
       "text": "Ronald Wayne vendeu sua parte da Apple por 800 dólares.",
       "answer": true,
       "fact": "Ele saiu da empresa poucos dias depois de ajudar a fundá-la."
     },
     {
+      "id": "vf-tecnologia-60",
       "difficulty": "hard",
       "text": "A Apple nasceu em um grande escritório em Nova York.",
       "answer": false,
       "fact": "Ela nasceu na Califórnia, na garagem da casa dos Jobs."
     },
     {
+      "id": "vf-tecnologia-61",
       "difficulty": "hard",
       "text": "O nome \"robô\" vem de uma palavra tcheca ligada a trabalho forçado.",
       "answer": true,
       "fact": "A palavra surgiu em uma peça de Karel Čapek, de 1920."
     },
     {
+      "id": "vf-tecnologia-62",
       "difficulty": "hard",
       "text": "Isaac Asimov inventou a primeira CPU.",
       "answer": false,
       "fact": "Ele foi um escritor que criou as Três Leis da Robótica."
     },
     {
+      "id": "vf-tecnologia-63",
       "difficulty": "hard",
       "text": "A Intel lançou o primeiro microprocessador comercial em 1971.",
       "answer": true,
       "fact": "Ele se chamava 4004."
     },
     {
+      "id": "vf-tecnologia-64",
       "difficulty": "hard",
       "text": "O Y2K derrubou todos os aviões do mundo.",
       "answer": false,
       "fact": "O problema foi em boa parte corrigido antes da virada de 2000."
     },
     {
+      "id": "vf-tecnologia-65",
       "difficulty": "hard",
       "text": "Um computador pode ter problema em 2038 por causa da contagem de segundos.",
       "answer": true,
       "fact": "Sistemas de 32 bits contam o tempo desde 1970 e estouram nesse ano."
     },
     {
+      "id": "vf-tecnologia-66",
       "difficulty": "hard",
       "text": "O problema do ano 2038 só afeta celulares da Apple.",
       "answer": false,
       "fact": "Ele afeta sistemas antigos de 32 bits em geral."
     },
     {
+      "id": "vf-tecnologia-67",
       "difficulty": "hard",
       "text": "O Bitcoin tem um limite de 21 milhões de moedas.",
       "answer": true,
       "fact": "Essa regra está no próprio código."
     },
     {
+      "id": "vf-tecnologia-68",
       "difficulty": "hard",
       "text": "Satoshi Nakamoto foi identificado oficialmente em 2010.",
       "answer": false,
       "fact": "A verdadeira identidade dele segue desconhecida."
     },
     {
+      "id": "vf-tecnologia-69",
       "difficulty": "hard",
       "text": "Alguém pagou 10 mil bitcoins por duas pizzas em 2010.",
       "answer": true,
       "fact": "O dia 22 de maio virou o \"Bitcoin Pizza Day\"."
     },
     {
+      "id": "vf-tecnologia-70",
       "difficulty": "hard",
       "text": "A primeira rede 5G comercial do mundo foi lançada em 2005.",
       "answer": false,
       "fact": "As primeiras redes surgiram em 2019."
     },
     {
+      "id": "vf-tecnologia-71",
       "difficulty": "hard",
       "text": "A Coreia do Sul foi um dos primeiros países com 5G comercial.",
       "answer": true,
       "fact": "A rede abriu em abril de 2019."
     },
     {
+      "id": "vf-tecnologia-72",
       "difficulty": "hard",
       "text": "O protocolo IPv4 tem endereços suficientes para sempre.",
       "answer": false,
       "fact": "Os 4,3 bilhões de endereços já se esgotaram."
     },
     {
+      "id": "vf-tecnologia-73",
       "difficulty": "hard",
       "text": "O Código Morse ainda é usado por alguns radioamadores.",
       "answer": true,
       "fact": "Ele foi criado nos anos 1830."
     },
     {
+      "id": "vf-tecnologia-74",
       "difficulty": "hard",
       "text": "Grace Hopper foi uma atriz de Hollywood.",
       "answer": false,
       "fact": "Ela foi uma cientista da computação e almirante da Marinha dos EUA."
     },
     {
+      "id": "vf-tecnologia-75",
       "difficulty": "hard",
       "text": "Hedy Lamarr, atriz de Hollywood, ajudou a criar uma tecnologia base do Wi-Fi.",
       "answer": true,
       "fact": "Ela patenteou um sistema de salto de frequência em 1942."
     },
     {
+      "id": "vf-tecnologia-76",
       "difficulty": "hard",
       "text": "Alan Turing trabalhou na NASA nos anos 1970.",
       "answer": false,
       "fact": "Ele morreu em 1954, antes da criação da agência."
     },
     {
+      "id": "vf-tecnologia-77",
       "difficulty": "hard",
       "text": "Alan Turing ajudou a quebrar o código nazista Enigma.",
       "answer": true,
       "fact": "O trabalho dele ficou em segredo por décadas."
     },
     {
+      "id": "vf-tecnologia-78",
       "difficulty": "hard",
       "text": "A Xerox nunca desenvolveu computadores.",
       "answer": false,
       "fact": "Ela criou no Parc o Alto, com janelas e mouse."
     },
     {
+      "id": "vf-tecnologia-79",
       "difficulty": "hard",
       "text": "Linus Torvalds também criou o Git.",
       "answer": true,
       "fact": "Ele o fez em 2005, para cuidar do código do Linux."
     },
     {
+      "id": "vf-tecnologia-80",
       "difficulty": "hard",
       "text": "O Python foi criado por Bjarne Stroustrup.",
       "answer": false,
       "fact": "Foi criado por Guido van Rossum, e Stroustrup fez o C++."
     },
     {
+      "id": "vf-tecnologia-81",
       "difficulty": "hard",
       "text": "JavaScript foi escrito em cerca de 10 dias, na primeira versão.",
       "answer": true,
       "fact": "Brendan Eich o criou na Netscape em 1995."
     },
     {
+      "id": "vf-tecnologia-82",
       "difficulty": "hard",
       "text": "Java e JavaScript são a mesma linguagem.",
       "answer": false,
       "fact": "São linguagens bem diferentes, apesar do nome."
     },
     {
+      "id": "vf-tecnologia-83",
       "difficulty": "medium",
       "text": "O YouTube foi comprado em 2006.",
       "answer": true,
       "fact": "A compradora foi o Google, por 1,65 bilhão de dólares."
     },
     {
+      "id": "vf-tecnologia-84",
       "difficulty": "medium",
       "text": "O Instagram surgiu como um aplicativo de carros.",
       "answer": false,
       "fact": "Ele nasceu como um aplicativo de fotos, em 2010."
     },
     {
+      "id": "vf-tecnologia-85",
       "difficulty": "medium",
       "text": "O Pix permite transferências em poucos segundos.",
       "answer": true,
       "fact": "Em poucos anos, ele superou o cartão em número de transações."
     },
     {
+      "id": "vf-tecnologia-86",
       "difficulty": "hard",
       "text": "Um computador quântico usa qubits.",
       "answer": true,
       "fact": "Um qubit pode estar em superposição de estados."
     },
     {
+      "id": "vf-tecnologia-87",
       "difficulty": "hard",
       "text": "Um computador quântico é só um computador comum bem rápido.",
       "answer": false,
       "fact": "Ele usa outro princípio físico e serve melhor a certos problemas."
     },
     {
+      "id": "vf-tecnologia-88",
       "difficulty": "hard",
       "text": "O primeiro mouse era feito de madeira.",
       "answer": true,
       "fact": "Douglas Engelbart o apresentou em 1968."
     },
     {
+      "id": "vf-tecnologia-89",
       "difficulty": "hard",
       "text": "A primeira câmera digital foi criada pela Apple.",
       "answer": false,
       "fact": "Um engenheiro da Kodak a criou em 1975."
     },
     {
+      "id": "vf-tecnologia-90",
       "difficulty": "medium",
       "text": "O Excel é um programa de planilhas.",
       "answer": true,
       "fact": "A primeira versão saiu para o Mac, em 1985."
     },
     {
+      "id": "vf-tecnologia-91",
       "difficulty": "medium",
       "text": "O Photoshop é um programa da Microsoft.",
       "answer": false,
       "fact": "Ele é da Adobe."
     },
     {
+      "id": "vf-tecnologia-92",
       "difficulty": "medium",
       "text": "O atalho Ctrl + Z desfaz a última ação.",
       "answer": true,
       "fact": "O atalho funciona em quase todos os programas."
     },
     {
+      "id": "vf-tecnologia-93",
       "difficulty": "medium",
       "text": "Um pendrive precisa de internet para guardar arquivos.",
       "answer": false,
       "fact": "Ele guarda os dados em memória própria."
     },
     {
+      "id": "vf-tecnologia-94",
       "difficulty": "hard",
       "text": "O primeiro iPhone tinha loja de aplicativos desde o lançamento.",
       "answer": false,
       "fact": "A App Store só chegou em 2008."
     },
     {
+      "id": "vf-tecnologia-95",
       "difficulty": "hard",
       "text": "O primeiro iPhone não copiava e colava texto.",
       "answer": true,
       "fact": "O recurso só veio em 2009."
     },
     {
+      "id": "vf-tecnologia-96",
       "difficulty": "hard",
       "text": "O sistema hexadecimal usa somente números de 0 a 9.",
       "answer": false,

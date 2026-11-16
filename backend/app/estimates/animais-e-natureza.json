@@ -2,6 +2,7 @@
   "theme": "Animais e natureza",
   "questions": [
     {
+      "id": "chute-animais-e-natureza-1",
       "difficulty": "medium",
       "text": "Qual a velocidade máxima de um guepardo?",
       "answer": 110,
@@ -9,6 +10,7 @@
       "fact": "Ele acelera de 0 a 100 km/h em cerca de 3 segundos, mas só aguenta poucos segundos."
     },
     {
+      "id": "chute-animais-e-natureza-2",
       "difficulty": "medium",
       "text": "Quantos metros de altura pode ter uma girafa macho adulta?",
       "answer": 5.5,
@@ -16,6 +18,7 @@
       "fact": "Mesmo com o pescoço enorme, a girafa tem 7 vértebras cervicais, como nós."
     },
     {
+      "id": "chute-animais-e-natureza-3",
       "difficulty": "easy",
       "text": "Quantos anos vive, em média, um cachorro?",
       "answer": 13,
@@ -23,6 +26,7 @@
       "fact": "Raças pequenas costumam viver mais que as grandes."
     },
     {
+      "id": "chute-animais-e-natureza-4",
       "difficulty": "easy",
       "text": "Quantos anos vive, em média, um gato doméstico?",
       "answer": 15,
@@ -30,6 +34,7 @@
       "fact": "Gatos que ficam em casa vivem mais do que os de rua."
     },
     {
+      "id": "chute-animais-e-natureza-5",
       "difficulty": "easy",
       "text": "Quantos anos vive, em média, um cavalo?",
       "answer": 28,
@@ -37,6 +42,7 @@
       "fact": "Um cavalo inglês chamado Old Billy teria chegado a 62 anos."
     },
     {
+      "id": "chute-animais-e-natureza-6",
       "difficulty": "easy",
       "text": "Quantos anos vive, em média, um elefante-africano?",
       "answer": 65,
@@ -44,6 +50,7 @@
       "fact": "As fêmeas costumam viver mais que os machos."
     },
     {
+      "id": "chute-animais-e-natureza-7",
       "difficulty": "medium",
       "text": "Quantos anos pode viver uma arara-azul?",
       "answer": 50,
@@ -51,6 +58,7 @@
       "fact": "Muitos casais ficam juntos a vida toda."
     },
     {
+      "id": "chute-animais-e-natureza-8",
       "difficulty": "medium",
       "text": "Quantos anos pode viver uma tartaruga-gigante de Galápagos?",
       "answer": 150,
@@ -58,6 +66,7 @@
       "fact": "Harriet viveu até 175 anos em um zoológico da Austrália."
     },
     {
+      "id": "chute-animais-e-natureza-9",
       "difficulty": "easy",
       "text": "Quantos anos vive, em média, um leão na natureza?",
       "answer": 13,
@@ -65,6 +74,7 @@
       "fact": "Em cativeiro, pode chegar a 25 anos."
     },
     {
+      "id": "chute-animais-e-natureza-10",
       "difficulty": "easy",
       "text": "Quantos anos vive, em média, um coelho doméstico?",
       "answer": 10,
@@ -72,6 +82,7 @@
       "fact": "O coelho mais velho registrado chegou a 18 anos."
     },
     {
+      "id": "chute-animais-e-natureza-11",
       "difficulty": "medium",
       "text": "Quantos anos vive, em média, uma vaca, sem ser abatida?",
       "answer": 20,
@@ -79,6 +90,7 @@
       "fact": "Nas fazendas, costuma durar bem menos."
     },
     {
+      "id": "chute-animais-e-natureza-12",
       "difficulty": "easy",
       "text": "Quantas patas tem uma formiga?",
       "answer": 6,
@@ -86,6 +98,7 @@
       "fact": "Todo inseto tem seis patas."
     },
     {
+      "id": "chute-animais-e-natureza-13",
       "difficulty": "easy",
       "text": "Quantas patas tem um escorpião?",
       "answer": 8,
@@ -93,6 +106,7 @@
       "fact": "Os escorpiões são parentes das aranhas."
     },
     {
+      "id": "chute-animais-e-natureza-14",
       "difficulty": "easy",
       "text": "Quantas patas tem um caranguejo?",
       "answer": 10,
@@ -100,6 +114,7 @@
       "fact": "As duas patas da frente viram pinças."
     },
     {
+      "id": "chute-animais-e-natureza-15",
       "difficulty": "easy",
       "text": "Quantos braços tem um polvo?",
       "answer": 8,
@@ -107,6 +122,7 @@
       "fact": "Cada braço tem centenas de ventosas."
     },
     {
+      "id": "chute-animais-e-natureza-16",
       "difficulty": "medium",
       "text": "Quantos braços tem uma lula, contando os tentáculos?",
       "answer": 10,
@@ -114,6 +130,7 @@
       "fact": "São oito braços e dois tentáculos."
     },
     {
+      "id": "chute-animais-e-natureza-17",
       "difficulty": "easy",
       "text": "Quantos olhos tem a maioria das aranhas?",
       "answer": 8,
@@ -121,6 +138,7 @@
       "fact": "Algumas espécies têm 6, e outras, menos."
     },
     {
+      "id": "chute-animais-e-natureza-18",
       "difficulty": "easy",
       "text": "Quantas asas tem uma mosca?",
       "answer": 2,
@@ -128,6 +146,7 @@
       "fact": "As moscas têm só um par de asas, ao contrário de outros insetos."
     },
     {
+      "id": "chute-animais-e-natureza-19",
       "difficulty": "easy",
       "text": "Quantos dedos tem a pata da frente de um cachorro, contando o dedo da unha?",
       "answer": 5,
@@ -135,6 +154,7 @@
       "fact": "As patas de trás costumam ter quatro."
     },
     {
+      "id": "chute-animais-e-natureza-20",
       "difficulty": "medium",
       "text": "Quantos dedos tem a pata de uma avestruz?",
       "answer": 2,
@@ -142,6 +162,7 @@
       "fact": "É a única ave com só dois dedos."
     },
     {
+      "id": "chute-animais-e-natureza-21",
       "difficulty": "medium",
       "text": "Quantos dedos tem a pata de um cavalo?",
       "answer": 1,
@@ -149,6 +170,7 @@
       "fact": "O casco é, na verdade, um dedo modificado."
     },
     {
+      "id": "chute-animais-e-natureza-22",
       "difficulty": "medium",
       "text": "Quantos chifres tem o rinoceronte-branco?",
       "answer": 2,
@@ -156,6 +178,7 @@
       "fact": "O chifre é feito de queratina, a mesma substância da unha."
     },
     {
+      "id": "chute-animais-e-natureza-23",
       "difficulty": "easy",
       "text": "Quantos estômagos em câmaras tem a vaca?",
       "answer": 4,
@@ -163,6 +186,7 @@
       "fact": "Por isso a digestão do capim é tão eficiente."
     },
     {
+      "id": "chute-animais-e-natureza-24",
       "difficulty": "easy",
       "text": "Quantos meses dura a gestação de uma vaca?",
       "answer": 9,
@@ -170,6 +194,7 @@
       "fact": "É quase igual à gestação de um ser humano."
     },
     {
+      "id": "chute-animais-e-natureza-25",
       "difficulty": "medium",
       "text": "Quantos meses dura a gestação de uma elefanta?",
       "answer": 22,
@@ -177,6 +202,7 @@
       "fact": "É a gestação mais longa entre os mamíferos terrestres."
     },
     {
+      "id": "chute-animais-e-natureza-26",
       "difficulty": "medium",
       "text": "Quantos meses dura a gestação de uma égua?",
       "answer": 11,
@@ -184,6 +210,7 @@
       "fact": "O potro fica de pé pouco tempo depois de nascer."
     },
     {
+      "id": "chute-animais-e-natureza-27",
       "difficulty": "medium",
       "text": "Quantos dias dura a gestação de uma gata?",
       "answer": 65,
@@ -191,6 +218,7 @@
       "fact": "Cada ninhada costuma ter de 3 a 5 filhotes."
     },
     {
+      "id": "chute-animais-e-natureza-28",
       "difficulty": "medium",
       "text": "Quantos dias dura a gestação de uma cadela?",
       "answer": 63,
@@ -198,6 +226,7 @@
       "fact": "Isso dá cerca de 9 semanas."
     },
     {
+      "id": "chute-animais-e-natureza-29",
       "difficulty": "medium",
       "text": "Quantos dias a galinha choca o ovo?",
       "answer": 21,
@@ -205,6 +234,7 @@
       "fact": "O pintinho quebra a casca com um \"dente\" no bico."
     },
     {
+      "id": "chute-animais-e-natureza-30",
       "difficulty": "medium",
       "text": "Quantos ovos põe uma galinha poedeira por ano?",
       "answer": 300,
@@ -212,6 +242,7 @@
       "fact": "Elas põem quase um ovo por dia."
     },
     {
+      "id": "chute-animais-e-natureza-31",
       "difficulty": "easy",
       "text": "Quantos filhotes costuma ter uma baleia-azul por gestação?",
       "answer": 1,
@@ -219,6 +250,7 @@
       "fact": "A gestação dura cerca de um ano."
     },
     {
+      "id": "chute-animais-e-natureza-32",
       "difficulty": "easy",
       "text": "Quantas horas por dia um gato costuma dormir?",
       "answer": 15,
@@ -226,6 +258,7 @@
       "fact": "Eles caçam mais ao anoitecer e ao amanhecer."
     },
     {
+      "id": "chute-animais-e-natureza-33",
       "difficulty": "easy",
       "text": "Quantas horas por dia um cachorro adulto costuma dormir?",
       "answer": 12,
@@ -233,6 +266,7 @@
       "fact": "Os filhotes dormem ainda mais."
     },
     {
+      "id": "chute-animais-e-natureza-34",
       "difficulty": "medium",
       "text": "Quantas horas por dia um coala costuma dormir?",
       "answer": 20,
@@ -240,6 +274,7 @@
       "fact": "As folhas de eucalipto têm pouca energia."
     },
     {
+      "id": "chute-animais-e-natureza-35",
       "difficulty": "medium",
       "text": "Quantas horas por dia um leão costuma descansar?",
       "answer": 20,
@@ -247,6 +282,7 @@
       "fact": "Os leões caçam principalmente de noite."
     },
     {
+      "id": "chute-animais-e-natureza-36",
       "difficulty": "medium",
       "text": "Quantas horas por dia um cavalo costuma dormir?",
       "answer": 3,
@@ -254,6 +290,7 @@
       "fact": "Ele tira cochilos de pé, com as pernas travadas."
     },
     {
+      "id": "chute-animais-e-natureza-37",
       "difficulty": "hard",
       "text": "Quantas horas por dia um elefante-africano dorme na natureza, em média?",
       "answer": 2,
@@ -261,6 +298,7 @@
       "fact": "Um estudo de 2017 mediu isso em elefantes selvagens."
     },
     {
+      "id": "chute-animais-e-natureza-38",
       "difficulty": "easy",
       "text": "Qual a altura média de uma girafa adulta macho, em metros?",
       "answer": 5.5,
@@ -268,6 +306,7 @@
       "fact": "Ela consegue enxergar a quilômetros de distância."
     },
     {
+      "id": "chute-animais-e-natureza-39",
       "difficulty": "medium",
       "text": "Qual é o peso de um elefante-africano macho adulto, em toneladas?",
       "answer": 6,
@@ -275,6 +314,7 @@
       "fact": "Ele come até 150 kg de plantas por dia."
     },
     {
+      "id": "chute-animais-e-natureza-40",
       "difficulty": "easy",
       "text": "Qual o comprimento de uma baleia-azul adulta, em metros?",
       "answer": 30,
@@ -282,6 +322,7 @@
       "fact": "É mais longa do que uma quadra de vôlei e meia."
     },
     {
+      "id": "chute-animais-e-natureza-41",
       "difficulty": "medium",
       "text": "Quantas toneladas pesa a baleia-azul, aproximadamente?",
       "answer": 150,
@@ -289,6 +330,7 @@
       "fact": "É o maior animal que já viveu."
     },
     {
+      "id": "chute-animais-e-natureza-42",
       "difficulty": "medium",
       "text": "Quantos metros tem, em média, uma sucuri-verde adulta?",
       "answer": 5,
@@ -296,6 +338,7 @@
       "fact": "As fêmeas são muito maiores que os machos."
     },
     {
+      "id": "chute-animais-e-natureza-43",
       "difficulty": "easy",
       "text": "Qual é o peso de um leão macho adulto, em kg?",
       "answer": 190,
@@ -303,6 +346,7 @@
       "fact": "As leoas costumam pesar uns 130 kg."
     },
     {
+      "id": "chute-animais-e-natureza-44",
       "difficulty": "easy",
       "text": "Qual é o peso de uma capivara adulta, em kg?",
       "answer": 50,
@@ -310,6 +354,7 @@
       "fact": "É o maior roedor do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-45",
       "difficulty": "medium",
       "text": "Qual é o peso de um tamanduá-bandeira adulto, em kg?",
       "answer": 35,
@@ -317,6 +362,7 @@
       "fact": "Ele não tem dentes."
     },
     {
+      "id": "chute-animais-e-natureza-46",
       "difficulty": "medium",
       "text": "Qual é o peso de um gorila macho adulto, em kg?",
       "answer": 180,
@@ -324,6 +370,7 @@
       "fact": "Sua força é cerca de 10 vezes a de um homem adulto."
     },
     {
+      "id": "chute-animais-e-natureza-47",
       "difficulty": "medium",
       "text": "Qual é o peso de uma onça-pintada adulta, em kg?",
       "answer": 90,
@@ -331,6 +378,7 @@
       "fact": "No Pantanal, elas chegam a mais de 130 kg."
     },
     {
+      "id": "chute-animais-e-natureza-48",
       "difficulty": "medium",
       "text": "Qual é o peso de um tigre-siberiano adulto, em kg?",
       "answer": 250,
@@ -338,6 +386,7 @@
       "fact": "É o maior felino selvagem."
     },
     {
+      "id": "chute-animais-e-natureza-49",
       "difficulty": "medium",
       "text": "Qual é o peso de um urso-polar macho adulto, em kg?",
       "answer": 500,
@@ -345,6 +394,7 @@
       "fact": "Ele chega a sentir o cheiro de focas a dezenas de quilômetros."
     },
     {
+      "id": "chute-animais-e-natureza-50",
       "difficulty": "easy",
       "text": "Qual é a velocidade máxima de um leão, em km/h?",
       "answer": 80,
@@ -352,6 +402,7 @@
       "fact": "Ele cansa rápido, e por isso caça em grupo."
     },
     {
+      "id": "chute-animais-e-natureza-51",
       "difficulty": "easy",
       "text": "Qual é a velocidade máxima de um cavalo a galope, em km/h?",
       "answer": 70,
@@ -359,6 +410,7 @@
       "fact": "O recorde de um puro-sangue passa de 70 km/h."
     },
     {
+      "id": "chute-animais-e-natureza-52",
       "difficulty": "easy",
       "text": "Qual é a velocidade máxima de um avestruz, em km/h?",
       "answer": 70,
@@ -366,6 +418,7 @@
       "fact": "É a ave mais rápida em terra."
     },
     {
+      "id": "chute-animais-e-natureza-53",
       "difficulty": "hard",
       "text": "Qual é a velocidade de uma preguiça em uma árvore, em metros por minuto?",
       "answer": 4,
@@ -373,6 +426,7 @@
       "fact": "Ela é o mamífero mais lento do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-54",
       "difficulty": "medium",
       "text": "Qual é a velocidade máxima de um golfinho, em km/h?",
       "answer": 55,
@@ -380,6 +434,7 @@
       "fact": "Eles costumam surfar nas ondas dos barcos."
     },
     {
+      "id": "chute-animais-e-natureza-55",
       "difficulty": "medium",
       "text": "Qual é a velocidade máxima de um tubarão-branco, em km/h?",
       "answer": 40,
@@ -387,6 +442,7 @@
       "fact": "Ele pode saltar para fora da água ao atacar."
     },
     {
+      "id": "chute-animais-e-natureza-56",
       "difficulty": "medium",
       "text": "Quantos dentes tem um cachorro adulto?",
       "answer": 42,
@@ -394,6 +450,7 @@
       "fact": "Os filhotes têm 28 dentes de leite."
     },
     {
+      "id": "chute-animais-e-natureza-57",
       "difficulty": "medium",
       "text": "Quantos dentes tem um gato adulto?",
       "answer": 30,
@@ -401,6 +458,7 @@
       "fact": "Os felinos não têm dentes para mastigar de verdade."
     },
     {
+      "id": "chute-animais-e-natureza-58",
       "difficulty": "medium",
       "text": "Quantos ossos tem o pescoço de uma girafa?",
       "answer": 7,
@@ -408,6 +466,7 @@
       "fact": "É o mesmo número dos humanos."
     },
     {
+      "id": "chute-animais-e-natureza-59",
       "difficulty": "easy",
       "text": "Quantos países tem a Amazônia?",
       "answer": 9,
@@ -415,6 +474,7 @@
       "fact": "O Brasil tem cerca de 60% da floresta."
     },
     {
+      "id": "chute-animais-e-natureza-60",
       "difficulty": "easy",
       "text": "Quantos biomas tem o Brasil?",
       "answer": 6,
@@ -422,6 +482,7 @@
       "fact": "Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa."
     },
     {
+      "id": "chute-animais-e-natureza-61",
       "difficulty": "easy",
       "text": "Qual porcentagem do território do Brasil é ocupada pela Amazônia?",
       "answer": 49,
@@ -429,6 +490,7 @@
       "fact": "A área é quase do tamanho da Europa ocidental."
     },
     {
+      "id": "chute-animais-e-natureza-62",
       "difficulty": "medium",
       "text": "Qual a porcentagem aproximada da Mata Atlântica que ainda sobrevive?",
       "answer": 12,
@@ -436,6 +498,7 @@
       "fact": "Ela é um dos biomas mais biodiversos do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-63",
       "difficulty": "easy",
       "text": "Qual a porcentagem da superfície da Terra coberta por oceanos?",
       "answer": 71,
@@ -443,6 +506,7 @@
       "fact": "A maior parte dos seres vivos está no mar."
     },
     {
+      "id": "chute-animais-e-natureza-64",
       "difficulty": "easy",
       "text": "Qual a porcentagem de água salgada no total da Terra?",
       "answer": 97,
@@ -450,6 +514,7 @@
       "fact": "Quase toda a água doce está em geleiras."
     },
     {
+      "id": "chute-animais-e-natureza-65",
       "difficulty": "easy",
       "text": "Qual a porcentagem de oxigênio no ar que respiramos?",
       "answer": 21,
@@ -457,6 +522,7 @@
       "fact": "O restante é sobretudo nitrogênio."
     },
     {
+      "id": "chute-animais-e-natureza-66",
       "difficulty": "easy",
       "text": "Quantas estações tem o ano?",
       "answer": 4,
@@ -464,6 +530,7 @@
       "fact": "A inclinação da Terra é a causa delas."
     },
     {
+      "id": "chute-animais-e-natureza-67",
       "difficulty": "medium",
       "text": "A que temperatura a água do mar congela, em média, em °C?",
       "answer": -2,
@@ -471,6 +538,7 @@
       "fact": "O sal faz com que a água do mar congele abaixo de zero."
     },
     {
+      "id": "chute-animais-e-natureza-68",
       "difficulty": "medium",
       "text": "Qual foi a menor temperatura já registrada na Antártida, em °C?",
       "answer": -89.2,
@@ -478,6 +546,7 @@
       "fact": "Foi medida em 1983, na estação russa Vostok."
     },
     {
+      "id": "chute-animais-e-natureza-69",
       "difficulty": "hard",
       "text": "Qual foi a menor temperatura oficial já registrada no Brasil, em °C?",
       "answer": -14,
@@ -485,6 +554,7 @@
       "fact": "Foi em 1952, em Caçador, Santa Catarina."
     },
     {
+      "id": "chute-animais-e-natureza-70",
       "difficulty": "medium",
       "text": "Qual a temperatura do corpo de um pinguim-imperador no inverno, em °C?",
       "answer": 38,
@@ -492,6 +562,7 @@
       "fact": "Os pinguins se revezam no meio do grupo para não sentir frio."
     },
     {
+      "id": "chute-animais-e-natureza-71",
       "difficulty": "medium",
       "text": "Qual a temperatura externa que um pinguim-imperador enfrenta no inverno, em °C?",
       "answer": -40,
@@ -499,6 +570,7 @@
       "fact": "Eles formam grupos enormes para se aquecer."
     },
     {
+      "id": "chute-animais-e-natureza-72",
       "difficulty": "hard",
       "text": "Qual a profundidade máxima que um pinguim-imperador pode mergulhar, em metros?",
       "answer": 500,
@@ -506,6 +578,7 @@
       "fact": "Ele fica até cerca de 20 minutos sem respirar."
     },
     {
+      "id": "chute-animais-e-natureza-73",
       "difficulty": "medium",
       "text": "Qual a altitude do Mar Morto em relação ao nível do mar, em metros?",
       "answer": -430,
@@ -513,6 +586,7 @@
       "fact": "É o ponto mais baixo em terra firme."
     },
     {
+      "id": "chute-animais-e-natureza-74",
       "difficulty": "medium",
       "text": "A que altitude fica o fundo da Fossa das Marianas, em relação ao nível do mar?",
       "answer": -10935,
@@ -520,6 +594,7 @@
       "fact": "É o ponto mais fundo dos oceanos, no Pacífico."
     },
     {
+      "id": "chute-animais-e-natureza-75",
       "difficulty": "medium",
       "text": "Qual é a altitude do Pico da Neblina em metros?",
       "answer": 2995,
@@ -527,6 +602,7 @@
       "fact": "Ele é o ponto mais alto do Brasil."
     },
     {
+      "id": "chute-animais-e-natureza-76",
       "difficulty": "easy",
       "text": "Qual é a altura do Everest em metros?",
       "answer": 8849,
@@ -534,6 +610,7 @@
       "fact": "A montanha cresce alguns milímetros por ano."
     },
     {
+      "id": "chute-animais-e-natureza-77",
       "difficulty": "easy",
       "text": "Qual é o comprimento do rio Amazonas em km?",
       "answer": 6992,
@@ -541,6 +618,7 @@
       "fact": "Ele nasce no Peru."
     },
     {
+      "id": "chute-animais-e-natureza-78",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Floresta Amazônica em milhões de km²?",
       "answer": 5.5,
@@ -548,6 +626,7 @@
       "fact": "Ela responde por metade das florestas tropicais do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-79",
       "difficulty": "easy",
       "text": "Quantas vértebras tem o pescoço de um ser humano e de uma girafa?",
       "answer": 7,
@@ -555,6 +634,7 @@
       "fact": "Quase todos os mamíferos têm esse número."
     },
     {
+      "id": "chute-animais-e-natureza-80",
       "difficulty": "hard",
       "text": "Quantas espécies de pinguins existem, aproximadamente?",
       "answer": 18,
@@ -562,6 +642,7 @@
       "fact": "Todas vivem no Hemisfério Sul, quase sem exceção."
     },
     {
+      "id": "chute-animais-e-natureza-81",
       "difficulty": "hard",
       "text": "Quantas espécies de tubarões existem, aproximadamente?",
       "answer": 500,
@@ -569,6 +650,7 @@
       "fact": "Os primeiros apareceram há mais de 400 milhões de anos."
     },
     {
+      "id": "chute-animais-e-natureza-82",
       "difficulty": "medium",
       "text": "Quantas espécies de felinos existem, aproximadamente?",
       "answer": 40,
@@ -576,6 +658,7 @@
       "fact": "O gato doméstico é só um deles."
     },
     {
+      "id": "chute-animais-e-natureza-83",
       "difficulty": "hard",
       "text": "Quantas espécies de primatas existem, aproximadamente?",
       "answer": 500,
@@ -583,6 +666,7 @@
       "fact": "O Brasil tem a maior diversidade do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-84",
       "difficulty": "medium",
       "text": "Quantas espécies de ursos existem?",
       "answer": 8,
@@ -590,6 +674,7 @@
       "fact": "Vão do pequeno urso-malaio ao urso-polar."
     },
     {
+      "id": "chute-animais-e-natureza-85",
       "difficulty": "easy",
       "text": "Quantas espécies de elefantes existem?",
       "answer": 3,
@@ -597,6 +682,7 @@
       "fact": "Elefante-asiático, elefante-da-savana e elefante-da-floresta."
     },
     {
+      "id": "chute-animais-e-natureza-86",
       "difficulty": "hard",
       "text": "Quantas espécies de girafas existem, segundo estudo de 2021?",
       "answer": 4,
@@ -604,6 +690,7 @@
       "fact": "Antes acreditava-se que existia só uma."
     },
     {
+      "id": "chute-animais-e-natureza-87",
       "difficulty": "medium",
       "text": "Quantas espécies de zebras existem?",
       "answer": 3,
@@ -611,6 +698,7 @@
       "fact": "Zebra-das-planícies, zebra-de-grévy e zebra-das-montanhas."
     },
     {
+      "id": "chute-animais-e-natureza-88",
       "difficulty": "medium",
       "text": "Quantas espécies de rinocerontes existem?",
       "answer": 5,
@@ -618,6 +706,7 @@
       "fact": "Duas na África e três na Ásia."
     },
     {
+      "id": "chute-animais-e-natureza-89",
       "difficulty": "medium",
       "text": "Quantos metros de altura pode ter um pinheiro-do-paraná?",
       "answer": 50,
@@ -625,6 +714,7 @@
       "fact": "A árvore pode viver mais de 500 anos."
     },
     {
+      "id": "chute-animais-e-natureza-90",
       "difficulty": "hard",
       "text": "Quantos metros de altura pode ter a árvore mais alta do Brasil, um angelim-vermelho?",
       "answer": 88,
@@ -632,6 +722,7 @@
       "fact": "Ela foi encontrada no Amapá em 2022."
     },
     {
+      "id": "chute-animais-e-natureza-91",
       "difficulty": "medium",
       "text": "Quantos metros de envergadura tem um condor-dos-andes, aproximadamente?",
       "answer": 3,
@@ -639,6 +730,7 @@
       "fact": "É uma das maiores aves voadoras do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-92",
       "difficulty": "easy",
       "text": "Quantos centímetros de comprimento tem o menor beija-flor do mundo?",
       "answer": 5,
@@ -646,6 +738,7 @@
       "fact": "Ele vive em Cuba e pesa menos que uma moeda."
     },
     {
+      "id": "chute-animais-e-natureza-93",
       "difficulty": "medium",
       "text": "Quantos ovos uma fêmea de tartaruga-marinha põe por ninho, em média?",
       "answer": 120,
@@ -653,6 +746,7 @@
       "fact": "Eles ficam enterrados na areia por cerca de dois meses."
     },
     {
+      "id": "chute-animais-e-natureza-94",
       "difficulty": "hard",
       "text": "Quantos ovos põe, em um dia, uma rainha de abelhas em plena temporada?",
       "answer": 2000,
@@ -660,6 +754,7 @@
       "fact": "Isso é mais que o próprio peso da rainha."
     },
     {
+      "id": "chute-animais-e-natureza-95",
       "difficulty": "medium",
       "text": "Quantas abelhas pode ter uma colmeia em plena atividade?",
       "answer": 60000,
@@ -667,6 +762,7 @@
       "fact": "A maioria é formada por operárias."
     },
     {
+      "id": "chute-animais-e-natureza-96",
       "difficulty": "hard",
       "text": "Quantas flores uma abelha visita para fazer uma colher de mel, aproximadamente?",
       "answer": 2000,
@@ -674,6 +770,7 @@
       "fact": "Uma operária produz cerca de uma colherzinha de mel durante a vida."
     },
     {
+      "id": "chute-animais-e-natureza-97",
       "difficulty": "medium",
       "text": "Quantos dias vive uma abelha operária no verão, em média?",
       "answer": 40,
@@ -681,6 +778,7 @@
       "fact": "No inverno, elas vivem mais tempo."
     },
     {
+      "id": "chute-animais-e-natureza-98",
       "difficulty": "medium",
       "text": "Quantos metros pode alcançar um cupinzeiro africano?",
       "answer": 9,
@@ -688,6 +786,7 @@
       "fact": "Os maiores são verdadeiros arranha-céus de insetos."
     },
     {
+      "id": "chute-animais-e-natureza-99",
       "difficulty": "hard",
       "text": "Quantos anos de vida tem a ave albatroz-de-laysan mais velha conhecida, chamada Wisdom?",
       "answer": 70,
@@ -695,6 +794,7 @@
       "fact": "Ela já tinha filhotes após os 70 anos."
     },
     {
+      "id": "chute-animais-e-natureza-100",
       "difficulty": "hard",
       "text": "Quantos km uma baleia-jubarte percorre em sua migração anual, aproximadamente?",
       "answer": 16000,
@@ -702,6 +802,7 @@
       "fact": "Elas vão de áreas de alimentação até áreas quentes de reprodução."
     },
     {
+      "id": "chute-animais-e-natureza-101",
       "difficulty": "hard",
       "text": "Quantos km voa uma andorinha-do-ártico por ano, aproximadamente?",
       "answer": 70000,
@@ -709,6 +810,7 @@
       "fact": "Ela vive mais dias de sol que qualquer outro animal."
     },
     {
+      "id": "chute-animais-e-natureza-102",
       "difficulty": "medium",
       "text": "Quantas vezes por minuto o coração de um elefante bate, em média?",
       "answer": 30,
@@ -716,6 +818,7 @@
       "fact": "Animais grandes têm o coração mais lento."
     },
     {
+      "id": "chute-animais-e-natureza-103",
       "difficulty": "hard",
       "text": "Quantos batimentos cardíacos por minuto tem um beija-flor em voo, aproximadamente?",
       "answer": 1200,
@@ -723,6 +826,7 @@
       "fact": "Ele chega a 20 batimentos por segundo."
     },
     {
+      "id": "chute-animais-e-natureza-104",
       "difficulty": "hard",
       "text": "Quantas toneladas de krill uma baleia-azul come por dia?",
       "answer": 4,
@@ -730,6 +834,7 @@
       "fact": "Ela filtra a água com placas chamadas barbatanas."
     },
     {
+      "id": "chute-animais-e-natureza-105",
       "difficulty": "medium",
       "text": "Quantos quilos de bambu um panda-gigante come por dia, aproximadamente?",
       "answer": 12,
@@ -737,6 +842,7 @@
       "fact": "Sua dieta tem 99% de bambu, mesmo sendo um carnívoro por origem."
     },
     {
+      "id": "chute-animais-e-natureza-106",
       "difficulty": "medium",
       "text": "Quantos quilos um elefante come por dia, aproximadamente?",
       "answer": 150,
@@ -744,6 +850,7 @@
       "fact": "Ele passa até 18 horas por dia comendo."
     },
     {
+      "id": "chute-animais-e-natureza-107",
       "difficulty": "medium",
       "text": "Quantos quilos de carne um leão pode comer em uma refeição, aproximadamente?",
       "answer": 40,
@@ -751,6 +858,7 @@
       "fact": "Depois de comer tanto, ele pode descansar por dias."
     },
     {
+      "id": "chute-animais-e-natureza-108",
       "difficulty": "medium",
       "text": "Quantos cm tem a língua de uma girafa, aproximadamente?",
       "answer": 50,
@@ -758,6 +866,7 @@
       "fact": "Ela é roxa e protege a boca dos espinhos da acácia."
     },
     {
+      "id": "chute-animais-e-natureza-109",
       "difficulty": "medium",
       "text": "Quantos cm tem a língua de um tamanduá-bandeira, aproximadamente?",
       "answer": 60,
@@ -765,6 +874,7 @@
       "fact": "Ela entra e sai da boca mais de 150 vezes por minuto."
     },
     {
+      "id": "chute-animais-e-natureza-110",
       "difficulty": "hard",
       "text": "Quantos cupins um tamanduá-bandeira pode comer por dia?",
       "answer": 30000,
@@ -772,6 +882,7 @@
       "fact": "Ele não tem dentes, usando a língua para pegar os insetos."
     },
     {
+      "id": "chute-animais-e-natureza-111",
       "difficulty": "medium",
       "text": "Qual é a altura máxima do salto de uma pulga, em cm?",
       "answer": 33,
@@ -779,6 +890,7 @@
       "fact": "Isso equivale a mais de 100 vezes a altura dela."
     },
     {
+      "id": "chute-animais-e-natureza-112",
       "difficulty": "medium",
       "text": "Quantas vezes a formiga carrega o próprio peso, aproximadamente?",
       "answer": 50,
@@ -786,6 +898,7 @@
       "fact": "A espécie cortadeira tem tanta força que parece caminhar com árvores."
     },
     {
+      "id": "chute-animais-e-natureza-113",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Projeto Tamar?",
       "answer": 1980,
@@ -793,6 +906,7 @@
       "fact": "O projeto protege cinco espécies de tartarugas-marinhas."
     },
     {
+      "id": "chute-animais-e-natureza-114",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Parque Nacional de Yellowstone?",
       "answer": 1872,
@@ -800,6 +914,7 @@
       "fact": "É o primeiro parque nacional do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-115",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Parque Nacional do Iguaçu?",
       "answer": 1939,
@@ -807,6 +922,7 @@
       "fact": "Ele é Patrimônio da Humanidade desde 1986."
     },
     {
+      "id": "chute-animais-e-natureza-116",
       "difficulty": "medium",
       "text": "Em que ano foi inaugurado o Instituto Butantan?",
       "answer": 1901,
@@ -814,6 +930,7 @@
       "fact": "Vital Brazil criou por lá o soro antiofídico."
     },
     {
+      "id": "chute-animais-e-natureza-117",
       "difficulty": "medium",
       "text": "Em que ano o último tigre-de-java foi visto?",
       "answer": 1976,
@@ -821,6 +938,7 @@
       "fact": "Ele foi extinto na Indonésia."
     },
     {
+      "id": "chute-animais-e-natureza-118",
       "difficulty": "medium",
       "text": "Em que ano a ovelha Dolly nasceu?",
       "answer": 1996,
@@ -828,6 +946,7 @@
       "fact": "Ela viveu seis anos."
     },
     {
+      "id": "chute-animais-e-natureza-119",
       "difficulty": "medium",
       "text": "Em que ano o Tubarão, de Spielberg, estreou nos cinemas?",
       "answer": 1975,
@@ -835,6 +954,7 @@
       "fact": "O filme aumentou muito o medo de tubarões no mundo todo."
     },
     {
+      "id": "chute-animais-e-natureza-120",
       "difficulty": "medium",
       "text": "Em que ano foi publicado o livro A Origem das Espécies?",
       "answer": 1859,
@@ -842,6 +962,7 @@
       "fact": "Darwin levou mais de 20 anos para publicar suas ideias."
     },
     {
+      "id": "chute-animais-e-natureza-121",
       "difficulty": "medium",
       "text": "Em que ano o chimpanzé Ham foi ao espaço?",
       "answer": 1961,
@@ -849,6 +970,7 @@
       "fact": "Ele voltou vivo e foi morar em um zoológico."
     },
     {
+      "id": "chute-animais-e-natureza-122",
       "difficulty": "medium",
       "text": "Em que ano o vulcão Krakatoa explodiu?",
       "answer": 1883,
@@ -856,6 +978,7 @@
       "fact": "A cinza alterou o clima do mundo por anos."
     },
     {
+      "id": "chute-animais-e-natureza-123",
       "difficulty": "medium",
       "text": "Em que ano o vulcão Tambora explodiu?",
       "answer": 1815,
@@ -863,6 +986,7 @@
       "fact": "No ano seguinte, a Europa não teve verão."
     },
     {
+      "id": "chute-animais-e-natureza-124",
       "difficulty": "medium",
       "text": "Em que ano o vulcão Vesúvio destruiu Pompeia?",
       "answer": 79,
@@ -870,6 +994,7 @@
       "fact": "Plínio, o Jovem, escreveu relatos da tragédia."
     },
     {
+      "id": "chute-animais-e-natureza-125",
       "difficulty": "medium",
       "text": "Em que ano o vulcão Santa Helena explodiu, nos EUA?",
       "answer": 1980,
@@ -877,6 +1002,7 @@
       "fact": "A explosão foi 500 vezes mais forte que a bomba de Hiroshima."
     },
     {
+      "id": "chute-animais-e-natureza-126",
       "difficulty": "medium",
       "text": "Em que ano o terremoto de Lisboa destruiu a cidade?",
       "answer": 1755,
@@ -884,6 +1010,7 @@
       "fact": "O desastre mudou a filosofia europeia."
     },
     {
+      "id": "chute-animais-e-natureza-127",
       "difficulty": "medium",
       "text": "Em que ano o terremoto do Haiti devastou o país?",
       "answer": 2010,
@@ -891,6 +1018,7 @@
       "fact": "Morreram cerca de 200 mil pessoas."
     },
     {
+      "id": "chute-animais-e-natureza-128",
       "difficulty": "medium",
       "text": "Em que ano houve o maior tsunami recente no Japão?",
       "answer": 2011,
@@ -898,6 +1026,7 @@
       "fact": "Ele causou o acidente nuclear de Fukushima."
     },
     {
+      "id": "chute-animais-e-natureza-129",
       "difficulty": "medium",
       "text": "Em que ano houve o tsunami do Oceano Índico?",
       "answer": 2004,
@@ -905,6 +1034,7 @@
       "fact": "Cerca de 230 mil pessoas morreram em vários países."
     },
     {
+      "id": "chute-animais-e-natureza-130",
       "difficulty": "medium",
       "text": "Em que ano o furacão Katrina atingiu Nova Orleans?",
       "answer": 2005,
@@ -912,6 +1042,7 @@
       "fact": "Foi um dos desastres mais caros da história dos EUA."
     },
     {
+      "id": "chute-animais-e-natureza-131",
       "difficulty": "medium",
       "text": "Em que ano a barragem de Fundão se rompeu em Mariana?",
       "answer": 2015,
@@ -919,6 +1050,7 @@
       "fact": "A lama chegou até o oceano."
     },
     {
+      "id": "chute-animais-e-natureza-132",
       "difficulty": "medium",
       "text": "Em que ano o Rio Grande do Sul viveu a sua maior enchente até hoje?",
       "answer": 2024,
@@ -926,6 +1058,7 @@
       "fact": "Mais de 180 pessoas morreram, e Porto Alegre foi inundada."
     },
     {
+      "id": "chute-animais-e-natureza-133",
       "difficulty": "medium",
       "text": "Quantos dias, em média, um filhote de canguru leva para sair da bolsa, depois de nascer?",
       "answer": 235,
@@ -933,6 +1066,7 @@
       "fact": "Ao nascer, ele tem o tamanho de um feijão."
     },
     {
+      "id": "chute-animais-e-natureza-134",
       "difficulty": "medium",
       "text": "Quantas gramas pesa um canguru-vermelho ao nascer?",
       "answer": 1,
@@ -940,6 +1074,7 @@
       "fact": "Em adulto, ele pode passar de 90 kg."
     },
     {
+      "id": "chute-animais-e-natureza-135",
       "difficulty": "medium",
       "text": "Quantos kg pode pesar o canguru-vermelho macho?",
       "answer": 90,
@@ -947,6 +1082,7 @@
       "fact": "É o maior marsupial do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-136",
       "difficulty": "medium",
       "text": "Qual a altura do salto de um canguru-vermelho, em metros?",
       "answer": 3,
@@ -954,6 +1090,7 @@
       "fact": "A distância pode chegar a 8 metros."
     },
     {
+      "id": "chute-animais-e-natureza-137",
       "difficulty": "medium",
       "text": "Quantos km/h um canguru-vermelho consegue alcançar?",
       "answer": 70,
@@ -961,6 +1098,7 @@
       "fact": "Ele usa o rabo como um terceiro pé."
     },
     {
+      "id": "chute-animais-e-natureza-138",
       "difficulty": "medium",
       "text": "Quantos kg pesa, em média, uma preguiça-comum adulta?",
       "answer": 5,
@@ -968,6 +1106,7 @@
       "fact": "Ela tem cerca de 40 cm de comprimento."
     },
     {
+      "id": "chute-animais-e-natureza-139",
       "difficulty": "medium",
       "text": "Quantas horas por dia uma preguiça dorme na natureza?",
       "answer": 10,
@@ -975,6 +1114,7 @@
       "fact": "Em cativeiro, costuma dormir bem mais."
     },
     {
+      "id": "chute-animais-e-natureza-140",
       "difficulty": "medium",
       "text": "Quanto tempo uma preguiça consegue prender a respiração, em minutos?",
       "answer": 40,
@@ -982,6 +1122,7 @@
       "fact": "Muitas são nadadoras surpreendentemente boas."
     },
     {
+      "id": "chute-animais-e-natureza-141",
       "difficulty": "medium",
       "text": "Quanto tempo uma tartaruga-marinha consegue ficar debaixo d'água, em horas, dormindo?",
       "answer": 7,
@@ -989,6 +1130,7 @@
       "fact": "Elas reduzem o metabolismo para economizar oxigênio."
     },
     {
+      "id": "chute-animais-e-natureza-142",
       "difficulty": "medium",
       "text": "Quanto tempo o crocodilo fica sem comer, se preciso, em meses?",
       "answer": 12,
@@ -996,6 +1138,7 @@
       "fact": "Ele tem um metabolismo muito lento."
     },
     {
+      "id": "chute-animais-e-natureza-143",
       "difficulty": "medium",
       "text": "Quanto tempo um camelo aguenta sem beber água, em semanas?",
       "answer": 2,
@@ -1003,6 +1146,7 @@
       "fact": "Depois, ele pode beber mais de 100 litros em minutos."
     },
     {
+      "id": "chute-animais-e-natureza-144",
       "difficulty": "medium",
       "text": "Quantos litros de água um camelo bebe de uma vez?",
       "answer": 130,
@@ -1010,6 +1154,7 @@
       "fact": "Ele repõe em minutos o que perdeu em dias."
     },
     {
+      "id": "chute-animais-e-natureza-145",
       "difficulty": "medium",
       "text": "Quantos litros de água um elefante bebe por dia, aproximadamente?",
       "answer": 200,
@@ -1017,6 +1162,7 @@
       "fact": "Ele usa a tromba como mangueira."
     },
     {
+      "id": "chute-animais-e-natureza-146",
       "difficulty": "medium",
       "text": "Quantos gnus participam da grande migração, aproximadamente?",
       "answer": 1500000,
@@ -1024,6 +1170,7 @@
       "fact": "Eles enfrentam crocodilos ao cruzar o rio Mara."
     },
     {
+      "id": "chute-animais-e-natureza-147",
       "difficulty": "medium",
       "text": "Quantos leões selvagens existem hoje na África, aproximadamente?",
       "answer": 23000,
@@ -1031,6 +1178,7 @@
       "fact": "Eram mais de 200 mil há um século."
     },
     {
+      "id": "chute-animais-e-natureza-148",
       "difficulty": "medium",
       "text": "Quantos tigres selvagens existem no mundo, aproximadamente?",
       "answer": 5500,
@@ -1038,6 +1186,7 @@
       "fact": "Mais tigres vivem hoje em cativeiro do que soltos na natureza."
     },
     {
+      "id": "chute-animais-e-natureza-149",
       "difficulty": "medium",
       "text": "Quantos elefantes-africanos existem, aproximadamente?",
       "answer": 415000,
@@ -1045,6 +1194,7 @@
       "fact": "A caça por marfim reduziu muito a população."
     },
     {
+      "id": "chute-animais-e-natureza-150",
       "difficulty": "medium",
       "text": "Quantos pandas-gigantes selvagens existem, aproximadamente?",
       "answer": 1900,
@@ -1052,6 +1202,7 @@
       "fact": "A China tirou o panda da lista de ameaçados em 2021."
     },
     {
+      "id": "chute-animais-e-natureza-151",
       "difficulty": "medium",
       "text": "Quantos orangotangos vivem na natureza, aproximadamente?",
       "answer": 120000,
@@ -1059,6 +1210,7 @@
       "fact": "A palma de óleo é a maior ameaça a eles."
     },
     {
+      "id": "chute-animais-e-natureza-152",
       "difficulty": "medium",
       "text": "Quantos gorilas-das-montanhas vivem na natureza, aproximadamente?",
       "answer": 1000,
@@ -1066,6 +1218,7 @@
       "fact": "Eles vivem em Ruanda, Uganda e Congo."
     },
     {
+      "id": "chute-animais-e-natureza-153",
       "difficulty": "medium",
       "text": "Quantos micos-leões-dourados vivem na natureza, aproximadamente?",
       "answer": 4800,
@@ -1073,6 +1226,7 @@
       "fact": "Havia apenas cerca de 200 em 1970."
     },
     {
+      "id": "chute-animais-e-natureza-154",
       "difficulty": "medium",
       "text": "Quantas ararinhas-azuis existem no mundo, aproximadamente?",
       "answer": 200,
@@ -1080,6 +1234,7 @@
       "fact": "Quase todas estão em cativeiro."
     },
     {
+      "id": "chute-animais-e-natureza-155",
       "difficulty": "medium",
       "text": "Quantos dias uma borboleta-monarca vive, em uma geração comum?",
       "answer": 30,
@@ -1087,6 +1242,7 @@
       "fact": "A geração que migra vive até oito meses."
     },
     {
+      "id": "chute-animais-e-natureza-156",
       "difficulty": "medium",
       "text": "Quantos metros de teia uma aranha pode produzir em um dia, aproximadamente?",
       "answer": 20,
@@ -1094,6 +1250,7 @@
       "fact": "Ela costuma comer a teia antiga para reaproveitar."
     },
     {
+      "id": "chute-animais-e-natureza-157",
       "difficulty": "medium",
       "text": "Quantos metros de seda pode produzir um único casulo de bicho-da-seda?",
       "answer": 1000,
@@ -1101,6 +1258,7 @@
       "fact": "A China guardou esse segredo por milhares de anos."
     },
     {
+      "id": "chute-animais-e-natureza-158",
       "difficulty": "medium",
       "text": "Quantos milhões de espécies vivem na Terra, segundo uma das estimativas mais aceitas?",
       "answer": 8.7,
@@ -1108,6 +1266,7 @@
       "fact": "Mais de 80% ainda não foram descritas."
     },
     {
+      "id": "chute-animais-e-natureza-159",
       "difficulty": "medium",
       "text": "Quantas espécies de insetos já foram descritas, aproximadamente?",
       "answer": 1000000,
@@ -1115,6 +1274,7 @@
       "fact": "É o maior grupo de seres vivos do planeta."
     },
     {
+      "id": "chute-animais-e-natureza-160",
       "difficulty": "medium",
       "text": "Quantas espécies de peixes foram descritas, aproximadamente?",
       "answer": 34000,
@@ -1122,6 +1282,7 @@
       "fact": "É mais do que todos os outros vertebrados somados."
     },
     {
+      "id": "chute-animais-e-natureza-161",
       "difficulty": "medium",
       "text": "Quantas espécies de peixes vivem na bacia amazônica, aproximadamente?",
       "answer": 2700,
@@ -1129,6 +1290,7 @@
       "fact": "É a maior diversidade de água doce do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-162",
       "difficulty": "medium",
       "text": "Quantas espécies de anfíbios existem no Brasil, aproximadamente?",
       "answer": 1200,
@@ -1136,6 +1298,7 @@
       "fact": "O Brasil tem a maior variedade do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-163",
       "difficulty": "medium",
       "text": "Quantas espécies de plantas tem o Brasil, aproximadamente?",
       "answer": 46000,
@@ -1143,6 +1306,7 @@
       "fact": "É o país com mais espécies de plantas do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-164",
       "difficulty": "medium",
       "text": "Quantas espécies de árvores há na Amazônia, aproximadamente?",
       "answer": 16000,
@@ -1150,6 +1314,7 @@
       "fact": "Só 227 são hiperdominantes."
     },
     {
+      "id": "chute-animais-e-natureza-165",
       "difficulty": "medium",
       "text": "Quantas árvores há por habitante no mundo, aproximadamente?",
       "answer": 400,
@@ -1157,6 +1322,7 @@
       "fact": "No total, são cerca de 3 trilhões de árvores no planeta."
     },
     {
+      "id": "chute-animais-e-natureza-166",
       "difficulty": "medium",
       "text": "Quantos litros de água uma árvore grande da Amazônia pode lançar no ar por dia?",
       "answer": 1000,
@@ -1164,6 +1330,7 @@
       "fact": "Ela forma os chamados rios voadores."
     },
     {
+      "id": "chute-animais-e-natureza-167",
       "difficulty": "medium",
       "text": "Quantos bilhões de toneladas de água a Amazônia lança no ar por dia?",
       "answer": 20,
@@ -1171,6 +1338,7 @@
       "fact": "É mais que o rio Amazonas despeja no oceano."
     },
     {
+      "id": "chute-animais-e-natureza-168",
       "difficulty": "medium",
       "text": "Quantos metros cúbicos por segundo tem o rio Amazonas na foz, em média?",
       "answer": 209000,
@@ -1178,6 +1346,7 @@
       "fact": "É mais que os seis maiores rios seguintes somados."
     },
     {
+      "id": "chute-animais-e-natureza-169",
       "difficulty": "medium",
       "text": "Quantos metros de profundidade tem o lago Baikal?",
       "answer": 1642,
@@ -1185,6 +1354,7 @@
       "fact": "É o lago mais profundo do planeta."
     },
     {
+      "id": "chute-animais-e-natureza-170",
       "difficulty": "medium",
       "text": "Quantos metros tem o Salto Angel, a cachoeira mais alta do mundo?",
       "answer": 979,
@@ -1192,6 +1362,7 @@
       "fact": "A cachoeira fica no Parque Nacional Canaima, na Venezuela."
     },
     {
+      "id": "chute-animais-e-natureza-171",
       "difficulty": "medium",
       "text": "Quantas quedas tem as Cataratas do Iguaçu, aproximadamente?",
       "answer": 275,
@@ -1199,6 +1370,7 @@
       "fact": "A mais famosa é a Garganta do Diabo."
     },
     {
+      "id": "chute-animais-e-natureza-172",
       "difficulty": "medium",
       "text": "Qual é a altura máxima das Cataratas do Iguaçu, em metros?",
       "answer": 82,
@@ -1206,6 +1378,7 @@
       "fact": "Dá para se aproximar delas por uma passarela no Brasil."
     },
     {
+      "id": "chute-animais-e-natureza-173",
       "difficulty": "medium",
       "text": "Qual é a altura das Cataratas do Niágara, em metros?",
       "answer": 51,
@@ -1213,6 +1386,7 @@
       "fact": "Elas ficam entre os EUA e o Canadá."
     },
     {
+      "id": "chute-animais-e-natureza-174",
       "difficulty": "medium",
       "text": "Qual é o tamanho aproximado do Pantanal em km²?",
       "answer": 150000,
@@ -1220,6 +1394,7 @@
       "fact": "É do tamanho aproximado da Grécia."
     },
     {
+      "id": "chute-animais-e-natureza-175",
       "difficulty": "medium",
       "text": "Qual é o tamanho do Saara, em milhões de km²?",
       "answer": 9,
@@ -1227,6 +1402,7 @@
       "fact": "Ele é quase do tamanho dos EUA."
     },
     {
+      "id": "chute-animais-e-natureza-176",
       "difficulty": "medium",
       "text": "Qual é o tamanho da Antártida, em milhões de km²?",
       "answer": 14,
@@ -1234,6 +1410,7 @@
       "fact": "Ela é maior que a Europa."
     },
     {
+      "id": "chute-animais-e-natureza-177",
       "difficulty": "medium",
       "text": "Qual é a espessura média do gelo da Antártida, em metros?",
       "answer": 2160,
@@ -1241,6 +1418,7 @@
       "fact": "Se tudo derretesse, os mares subiriam cerca de 58 metros."
     },
     {
+      "id": "chute-animais-e-natureza-178",
       "difficulty": "medium",
       "text": "Quanto subiria o nível dos oceanos, em metros, se toda a Antártida derretesse?",
       "answer": 58,
@@ -1248,6 +1426,7 @@
       "fact": "A Groenlândia acrescentaria mais 7 metros."
     },
     {
+      "id": "chute-animais-e-natureza-179",
       "difficulty": "medium",
       "text": "Quanto o nível dos oceanos subiu desde 1900, em cm?",
       "answer": 20,
@@ -1255,6 +1434,7 @@
       "fact": "A subida tem se acelerado nas últimas décadas."
     },
     {
+      "id": "chute-animais-e-natureza-180",
       "difficulty": "medium",
       "text": "Qual é o aumento da temperatura global desde a era pré-industrial, em °C, em 2024?",
       "answer": 1.5,
@@ -1262,6 +1442,7 @@
       "fact": "2024 foi o primeiro ano acima dessa marca."
     },
     {
+      "id": "chute-animais-e-natureza-181",
       "difficulty": "medium",
       "text": "Qual é a concentração de CO₂ na atmosfera, em ppm, em 2024?",
       "answer": 424,
@@ -1269,6 +1450,7 @@
       "fact": "Antes da Revolução Industrial, era de cerca de 280 ppm."
     },
     {
+      "id": "chute-animais-e-natureza-182",
       "difficulty": "medium",
       "text": "Quantos km por hora tem o vento em um furacão de categoria 5, no mínimo?",
       "answer": 252,
@@ -1276,6 +1458,7 @@
       "fact": "Em furacões assim, poucas construções resistem."
     },
     {
+      "id": "chute-animais-e-natureza-183",
       "difficulty": "medium",
       "text": "Quantos km por hora tem o vento em um furacão de categoria 1, no mínimo?",
       "answer": 119,
@@ -1283,6 +1466,7 @@
       "fact": "O vento já é forte o suficiente para quebrar árvores."
     },
     {
+      "id": "chute-animais-e-natureza-184",
       "difficulty": "medium",
       "text": "Quantos raios caem no Brasil por ano, aproximadamente?",
       "answer": 77000000,
@@ -1290,6 +1474,7 @@
       "fact": "Estima-se que é um dos países com mais raios no mundo."
     },
     {
+      "id": "chute-animais-e-natureza-185",
       "difficulty": "medium",
       "text": "Quantos raios caem no mundo por dia, aproximadamente?",
       "answer": 4000000,
@@ -1297,6 +1482,7 @@
       "fact": "A cada segundo, são dezenas deles."
     },
     {
+      "id": "chute-animais-e-natureza-186",
       "difficulty": "medium",
       "text": "Quantos graus Celsius tem o canal de um raio, aproximadamente?",
       "answer": 30000,
@@ -1304,6 +1490,7 @@
       "fact": "É cerca de cinco vezes mais que a superfície do Sol."
     },
     {
+      "id": "chute-animais-e-natureza-187",
       "difficulty": "medium",
       "text": "Quantos graus Celsius tem a lava, aproximadamente, ao sair do vulcão?",
       "answer": 1100,
@@ -1311,6 +1498,7 @@
       "fact": "Dependendo da composição, pode ser mais fria ou mais quente."
     },
     {
+      "id": "chute-animais-e-natureza-188",
       "difficulty": "medium",
       "text": "Quantos anos a tartaruga Jonathan tinha em 2024?",
       "answer": 192,
@@ -1318,6 +1506,7 @@
       "fact": "Ele é o animal terrestre vivo mais velho conhecido."
     },
     {
+      "id": "chute-animais-e-natureza-189",
       "difficulty": "medium",
       "text": "Quantos centímetros tem um filhote de panda-gigante ao nascer?",
       "answer": 15,
@@ -1325,6 +1514,7 @@
       "fact": "Ele é cerca de 900 vezes menor que a mãe."
     },
     {
+      "id": "chute-animais-e-natureza-190",
       "difficulty": "medium",
       "text": "Quantos gramas pesa um filhote de panda-gigante ao nascer?",
       "answer": 100,
@@ -1332,6 +1522,7 @@
       "fact": "A mãe pesa mais de 100 kg."
     },
     {
+      "id": "chute-animais-e-natureza-191",
       "difficulty": "medium",
       "text": "Quantos kg pesa um filhote de baleia-azul ao nascer?",
       "answer": 2500,
@@ -1339,6 +1530,7 @@
       "fact": "Ele nasce com cerca de 7 metros."
     },
     {
+      "id": "chute-animais-e-natureza-192",
       "difficulty": "medium",
       "text": "Quantos metros tem um filhote de baleia-azul ao nascer?",
       "answer": 7,
@@ -1346,6 +1538,7 @@
       "fact": "Ele mama cerca de 200 litros de leite por dia."
     },
     {
+      "id": "chute-animais-e-natureza-193",
       "difficulty": "medium",
       "text": "Quantos kg pesa um filhote de elefante-africano ao nascer?",
       "answer": 100,
@@ -1353,6 +1546,7 @@
       "fact": "Em poucos minutos, ele já tenta ficar de pé."
     },
     {
+      "id": "chute-animais-e-natureza-194",
       "difficulty": "medium",
       "text": "Quantos cm de altura tem uma girafa recém-nascida, em metros?",
       "answer": 1.8,
@@ -1360,6 +1554,7 @@
       "fact": "Ele nasce caindo de 2 metros, porque a mãe dá à luz em pé."
     },
     {
+      "id": "chute-animais-e-natureza-195",
       "difficulty": "hard",
       "text": "Qual é o tamanho da Caatinga, em km², aproximadamente?",
       "answer": 850000,
@@ -1367,6 +1562,7 @@
       "fact": "É o único bioma exclusivamente brasileiro."
     },
     {
+      "id": "chute-animais-e-natureza-196",
       "difficulty": "medium",
       "text": "Qual é a altura máxima das dunas de Lençóis Maranhenses, em metros?",
       "answer": 40,
@@ -1374,6 +1570,7 @@
       "fact": "A área do parque é de 155 mil hectares."
     },
     {
+      "id": "chute-animais-e-natureza-197",
       "difficulty": "medium",
       "text": "Quantos países tem a Mata Atlântica?",
       "answer": 3,
@@ -1381,6 +1578,7 @@
       "fact": "Brasil, Paraguai e Argentina."
     },
     {
+      "id": "chute-animais-e-natureza-198",
       "difficulty": "hard",
       "text": "Quantas pétalas tem, em geral, uma margarida?",
       "answer": 34,
@@ -1388,6 +1586,7 @@
       "fact": "O número costuma ser da sequência de Fibonacci."
     },
     {
+      "id": "chute-animais-e-natureza-199",
       "difficulty": "hard",
       "text": "Quantos anos pode viver uma oliveira, no máximo?",
       "answer": 2000,
@@ -1395,6 +1594,7 @@
       "fact": "Algumas ainda dão frutos em Israel e na Grécia."
     },
     {
+      "id": "chute-animais-e-natureza-200",
       "difficulty": "medium",
       "text": "A que temperatura corporal um esquilo-do-ártico pode baixar, em °C?",
       "answer": -2.9,
@@ -1402,6 +1602,7 @@
       "fact": "É o menor valor conhecido em um mamífero."
     },
     {
+      "id": "chute-animais-e-natureza-201",
       "difficulty": "medium",
       "text": "Qual é a altitude do Lago Assal, o ponto mais baixo da África, em metros?",
       "answer": -155,
@@ -1409,6 +1610,7 @@
       "fact": "Ele fica no Djibuti e é muito salgado."
     },
     {
+      "id": "chute-animais-e-natureza-202",
       "difficulty": "medium",
       "text": "Qual é a altitude do Vale da Morte, o ponto mais baixo da América do Norte, em metros?",
       "answer": -86,
@@ -1416,6 +1618,7 @@
       "fact": "Foi lá que mediram 56,7 °C em 1913."
     },
     {
+      "id": "chute-animais-e-natureza-203",
       "difficulty": "medium",
       "text": "Qual é a altitude do mar da Galileia em relação ao nível do mar, em metros?",
       "answer": -212,
@@ -1423,6 +1626,7 @@
       "fact": "É o lago de água doce mais baixo do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-204",
       "difficulty": "medium",
       "text": "Qual é a altitude do mar Cáspio, em relação ao nível do mar, em metros?",
       "answer": -28,
@@ -1430,6 +1634,7 @@
       "fact": "É o maior corpo d'água interior do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-205",
       "difficulty": "medium",
       "text": "Qual é a altitude do fosso de Bentley, na Antártida, em metros?",
       "answer": -2555,
@@ -1437,6 +1642,7 @@
       "fact": "É o ponto mais baixo não coberto por mar, debaixo do gelo."
     },
     {
+      "id": "chute-animais-e-natureza-206",
       "difficulty": "medium",
       "text": "Qual é a altitude do fundo do mar onde vive o peixe-caracol filmado em 2022, em metros?",
       "answer": -8336,
@@ -1444,6 +1650,7 @@
       "fact": "É o registro mais fundo de um peixe."
     },
     {
+      "id": "chute-animais-e-natureza-207",
       "difficulty": "medium",
       "text": "A que altitude chegou uma baleia-bicuda-de-cuvier em seu recorde, em metros?",
       "answer": -2992,
@@ -1451,6 +1658,7 @@
       "fact": "Ela tem o maior recorde de mergulho entre os mamíferos."
     },
     {
+      "id": "chute-animais-e-natureza-208",
       "difficulty": "medium",
       "text": "A que altitude chega um cachalote em mergulhos comuns, em metros?",
       "answer": -1000,
@@ -1458,6 +1666,7 @@
       "fact": "Ele pode ficar mais de 1 hora sem respirar."
     },
     {
+      "id": "chute-animais-e-natureza-209",
       "difficulty": "medium",
       "text": "A que profundidade já mergulhou uma tartaruga-de-couro, em metros?",
       "answer": 1280,
@@ -1465,6 +1674,7 @@
       "fact": "É o réptil que mergulha mais fundo."
     },
     {
+      "id": "chute-animais-e-natureza-210",
       "difficulty": "medium",
       "text": "Qual foi a temperatura de Oymyakon, na Rússia, em 1933, em °C?",
       "answer": -67.7,
@@ -1472,6 +1682,7 @@
       "fact": "É o lugar habitado mais frio do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-211",
       "difficulty": "medium",
       "text": "Qual é a temperatura média anual no Polo Sul, em °C?",
       "answer": -49,
@@ -1479,6 +1690,7 @@
       "fact": "No inverno, pode chegar a -80 °C."
     },
     {
+      "id": "chute-animais-e-natureza-212",
       "difficulty": "medium",
       "text": "Qual é a temperatura média anual no Polo Norte, em °C?",
       "answer": -18,
@@ -1486,6 +1698,7 @@
       "fact": "O Polo Norte é bem mais quente que o Polo Sul."
     },
     {
+      "id": "chute-animais-e-natureza-213",
       "difficulty": "medium",
       "text": "Qual foi a temperatura mais baixa já medida no Canadá, em °C?",
       "answer": -63,
@@ -1493,6 +1706,7 @@
       "fact": "Foi medida em Snag, no Yukon, em 1947."
     },
     {
+      "id": "chute-animais-e-natureza-214",
       "difficulty": "medium",
       "text": "Qual foi a temperatura mais baixa já medida nos EUA, em °C?",
       "answer": -62.2,
@@ -1500,6 +1714,7 @@
       "fact": "Foi em 1971, em Prospect Creek, no Alasca."
     },
     {
+      "id": "chute-animais-e-natureza-215",
       "difficulty": "medium",
       "text": "Qual foi a menor temperatura medida na Groenlândia, em °C?",
       "answer": -69.6,
@@ -1507,6 +1722,7 @@
       "fact": "Foi em 1991, em um ponto do manto de gelo."
     },
     {
+      "id": "chute-animais-e-natureza-216",
       "difficulty": "medium",
       "text": "Até que temperatura o sapo-da-floresta sobrevive congelado, em °C?",
       "answer": -6,
@@ -1514,6 +1730,7 @@
       "fact": "Ele fica com o coração parado até o degelo."
     },
     {
+      "id": "chute-animais-e-natureza-217",
       "difficulty": "medium",
       "text": "Até que temperatura um peixe-gelo vive, com anticongelante no sangue, em °C?",
       "answer": -2,
@@ -1521,6 +1738,7 @@
       "fact": "O sangue dele é transparente e não tem hemoglobina."
     },
     {
+      "id": "chute-animais-e-natureza-218",
       "difficulty": "medium",
       "text": "A que altitude voa o ganso-indiano ao cruzar o Himalaia, em metros?",
       "answer": 8000,
@@ -1528,6 +1746,7 @@
       "fact": "Ali o oxigênio é cerca de um terço do encontrado no nível do mar."
     },
     {
+      "id": "chute-animais-e-natureza-219",
       "difficulty": "medium",
       "text": "A que altitude chegou o abutre-de-rüppell em colisão com um avião, em metros?",
       "answer": 11300,
@@ -1535,6 +1754,7 @@
       "fact": "Foi em 1973, sobre a Costa do Marfim."
     },
     {
+      "id": "chute-animais-e-natureza-220",
       "difficulty": "medium",
       "text": "Quantos metros um falcão-peregrino pode descer em um único segundo, em mergulho?",
       "answer": 108,
@@ -1542,6 +1762,7 @@
       "fact": "Ele tem cones nas narinas que ajudam a respirar."
     },
     {
+      "id": "chute-animais-e-natureza-221",
       "difficulty": "medium",
       "text": "Quantos mil km um andorinhão-preto voa em um ano, aproximadamente?",
       "answer": 200,
@@ -1549,6 +1770,7 @@
       "fact": "Ele raramente pousa."
     },
     {
+      "id": "chute-animais-e-natureza-222",
       "difficulty": "medium",
       "text": "Quanto tempo o albatroz-errante pode ficar sem pousar, em anos?",
       "answer": 5,
@@ -1556,6 +1778,7 @@
       "fact": "Ele vai à terra só para acasalar."
     },
     {
+      "id": "chute-animais-e-natureza-223",
       "difficulty": "medium",
       "text": "Quantos metros de teia uma aranha-de-darwin pode fazer em um rio, de uma margem à outra?",
       "answer": 25,
@@ -1563,6 +1786,7 @@
       "fact": "É a maior teia conhecida, em Madagascar."
     },
     {
+      "id": "chute-animais-e-natureza-224",
       "difficulty": "medium",
       "text": "Quantos anos tem o Tubarão-da-groenlândia mais velho conhecido, segundo estudo de 2016?",
       "answer": 392,
@@ -1570,6 +1794,7 @@
       "fact": "A idade foi medida no olho, por radiocarbono."
     },
     {
+      "id": "chute-animais-e-natureza-225",
       "difficulty": "medium",
       "text": "Quantos anos, em média, pode viver a baleia-da-groenlândia, no máximo?",
       "answer": 200,
@@ -1577,6 +1802,7 @@
       "fact": "É o mamífero mais longevo que se conhece."
     },
     {
+      "id": "chute-animais-e-natureza-226",
       "difficulty": "medium",
       "text": "Quantos milhões de anos têm os tubarões como grupo, aproximadamente?",
       "answer": 450,
@@ -1584,6 +1810,7 @@
       "fact": "Eles são mais antigos que as árvores."
     },
     {
+      "id": "chute-animais-e-natureza-227",
       "difficulty": "medium",
       "text": "Quantos milhões de anos têm os crocodilos como grupo, aproximadamente?",
       "answer": 95,
@@ -1591,6 +1818,7 @@
       "fact": "Eles sobreviveram à extinção dos dinossauros."
     },
     {
+      "id": "chute-animais-e-natureza-228",
       "difficulty": "medium",
       "text": "Há quantos milhões de anos as aves evoluíram, a partir de dinossauros?",
       "answer": 150,
@@ -1598,6 +1826,7 @@
       "fact": "O Arqueópterix é um dos fósseis mais antigos conhecidos."
     },
     {
+      "id": "chute-animais-e-natureza-229",
       "difficulty": "medium",
       "text": "Há quantos milhões de anos os dinossauros foram extintos?",
       "answer": 66,
@@ -1605,6 +1834,7 @@
       "fact": "O impacto de um asteroide no México foi a principal causa."
     },
     {
+      "id": "chute-animais-e-natureza-230",
       "difficulty": "medium",
       "text": "Há quantos anos os humanos e os chimpanzés tiveram um ancestral em comum, em milhões?",
       "answer": 7,
@@ -1612,6 +1842,7 @@
       "fact": "Os fósseis mais antigos dessa linhagem foram achados no Chade."
     },
     {
+      "id": "chute-animais-e-natureza-231",
       "difficulty": "hard",
       "text": "Há quantos anos começou a domesticação dos cães, aproximadamente?",
       "answer": 15000,
@@ -1619,6 +1850,7 @@
       "fact": "Eles foram os primeiros animais domesticados."
     },
     {
+      "id": "chute-animais-e-natureza-232",
       "difficulty": "hard",
       "text": "Há quantos anos os gatos foram domesticados, aproximadamente?",
       "answer": 10000,
@@ -1626,6 +1858,7 @@
       "fact": "Os primeiros foram atraídos pelos ratos que comiam os grãos."
     },
     {
+      "id": "chute-animais-e-natureza-233",
       "difficulty": "hard",
       "text": "Há quantos anos os cavalos foram domesticados, aproximadamente?",
       "answer": 5500,
@@ -1633,6 +1866,7 @@
       "fact": "As primeiras evidências vêm do Cazaquistão."
     },
     {
+      "id": "chute-animais-e-natureza-234",
       "difficulty": "hard",
       "text": "Há quantos milhões de anos surgiram as primeiras plantas terrestres?",
       "answer": 470,
@@ -1640,6 +1874,7 @@
       "fact": "Elas se pareciam com musgos."
     },
     {
+      "id": "chute-animais-e-natureza-235",
       "difficulty": "hard",
       "text": "Há quantos bilhões de anos surgiu a vida na Terra, aproximadamente?",
       "answer": 3.8,
@@ -1647,6 +1882,7 @@
       "fact": "Os fósseis mais antigos são de micróbios."
     },
     {
+      "id": "chute-animais-e-natureza-236",
       "difficulty": "hard",
       "text": "Há quantos anos começou a última era do gelo?",
       "answer": 115000,
@@ -1654,6 +1890,7 @@
       "fact": "Ela acabou há cerca de 11.700 anos."
     },
     {
+      "id": "chute-animais-e-natureza-237",
       "difficulty": "hard",
       "text": "Há quantos anos o último mamute viveu, aproximadamente?",
       "answer": 4000,
@@ -1661,6 +1898,7 @@
       "fact": "Os últimos viviam na Ilha de Wrangel, no Ártico."
     },
     {
+      "id": "chute-animais-e-natureza-238",
       "difficulty": "hard",
       "text": "Qual foi o tamanho da maior baleia-azul já medida, em metros?",
       "answer": 33.6,
@@ -1668,6 +1906,7 @@
       "fact": "A medição foi feita em 1909 na Geórgia do Sul."
     },
     {
+      "id": "chute-animais-e-natureza-239",
       "difficulty": "hard",
       "text": "Qual foi o peso do maior elefante conhecido, em toneladas?",
       "answer": 10.4,
@@ -1675,6 +1914,7 @@
       "fact": "O animal foi caçado em Angola, em 1955."
     },
     {
+      "id": "chute-animais-e-natureza-240",
       "difficulty": "hard",
       "text": "Qual o peso do coração de uma baleia-azul, em kg?",
       "answer": 180,
@@ -1682,6 +1922,7 @@
       "fact": "Em 2014, um foi preservado e exposto no Canadá."
     },
     {
+      "id": "chute-animais-e-natureza-241",
       "difficulty": "hard",
       "text": "Qual o peso da língua de uma baleia-azul, em kg?",
       "answer": 2700,
@@ -1689,6 +1930,7 @@
       "fact": "É mais ou menos o peso de um elefante pequeno."
     },
     {
+      "id": "chute-animais-e-natureza-242",
       "difficulty": "hard",
       "text": "Qual é o volume de água, em litros, que uma baleia-azul engole de uma vez?",
       "answer": 100000,
@@ -1696,6 +1938,7 @@
       "fact": "Ela filtra o krill e devolve a água."
     },
     {
+      "id": "chute-animais-e-natureza-243",
       "difficulty": "hard",
       "text": "Quantos decibéis pode alcançar o som de uma baleia-azul?",
       "answer": 188,
@@ -1703,6 +1946,7 @@
       "fact": "O som dela pode ser ouvido a centenas de quilômetros."
     },
     {
+      "id": "chute-animais-e-natureza-244",
       "difficulty": "hard",
       "text": "Quantos decibéis faz o cachalote em seus cliques?",
       "answer": 230,
@@ -1710,6 +1954,7 @@
       "fact": "É o som mais forte de todos os seres vivos."
     },
     {
+      "id": "chute-animais-e-natureza-245",
       "difficulty": "hard",
       "text": "Quantos decibéis tem o estalo de um camarão-pistola?",
       "answer": 210,
@@ -1717,6 +1962,7 @@
       "fact": "A bolha chega a uma temperatura próxima da do Sol."
     },
     {
+      "id": "chute-animais-e-natureza-246",
       "difficulty": "hard",
       "text": "Quantos anos viveu o molusco Ming, de 1499 até ser morto?",
       "answer": 507,
@@ -1724,6 +1970,7 @@
       "fact": "Foi o animal não colonial mais velho já conhecido."
     },
     {
+      "id": "chute-animais-e-natureza-247",
       "difficulty": "hard",
       "text": "Quantos anos tem uma esponja Monorhaphis chuni, segundo estimativas?",
       "answer": 11000,
@@ -1731,6 +1978,7 @@
       "fact": "É um dos animais mais velhos conhecidos."
     },
     {
+      "id": "chute-animais-e-natureza-248",
       "difficulty": "hard",
       "text": "Quantos anos tem o Pando, colônia de álamos dos EUA, segundo estimativa?",
       "answer": 14000,
@@ -1738,6 +1986,7 @@
       "fact": "Algumas estimativas chegam a muito mais."
     },
     {
+      "id": "chute-animais-e-natureza-249",
       "difficulty": "hard",
       "text": "Quantas toneladas pesa o Pando, em sua maior estimativa?",
       "answer": 6000,
@@ -1745,6 +1994,7 @@
       "fact": "Ele é considerado o organismo mais pesado do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-250",
       "difficulty": "hard",
       "text": "Quantos troncos tem o Pando, aproximadamente?",
       "answer": 47000,
@@ -1752,6 +2002,7 @@
       "fact": "Todos compartilham as mesmas raízes."
     },
     {
+      "id": "chute-animais-e-natureza-251",
       "difficulty": "hard",
       "text": "Qual é a altura da Hyperion, árvore mais alta do mundo, em metros?",
       "answer": 115.9,
@@ -1759,6 +2010,7 @@
       "fact": "Ela foi descoberta em 2006, na Califórnia."
     },
     {
+      "id": "chute-animais-e-natureza-252",
       "difficulty": "hard",
       "text": "Qual é o volume do General Sherman, em metros cúbicos?",
       "answer": 1487,
@@ -1766,6 +2018,7 @@
       "fact": "Ele pesa cerca de 2 mil toneladas."
     },
     {
+      "id": "chute-animais-e-natureza-253",
       "difficulty": "hard",
       "text": "Qual é a idade do General Sherman, aproximadamente?",
       "answer": 2200,
@@ -1773,6 +2026,7 @@
       "fact": "Ele fica no Parque Nacional da Sequoia."
     },
     {
+      "id": "chute-animais-e-natureza-254",
       "difficulty": "hard",
       "text": "Qual é o peso do maior fungo do mundo, em toneladas, em Oregon?",
       "answer": 35000,
@@ -1780,6 +2034,7 @@
       "fact": "Ele é maior que o Pando em área, mas sua idade é discutida."
     },
     {
+      "id": "chute-animais-e-natureza-255",
       "difficulty": "hard",
       "text": "Qual é a idade do maior fungo do mundo, em anos?",
       "answer": 2400,
@@ -1787,6 +2042,7 @@
       "fact": "Ele cresce pouco a cada ano sob a floresta."
     },
     {
+      "id": "chute-animais-e-natureza-256",
       "difficulty": "hard",
       "text": "Quantos dentes tem o interior de um caracol-de-jardim, na \"língua\" chamada rádula?",
       "answer": 14000,
@@ -1794,6 +2050,7 @@
       "fact": "A rádula funciona como uma lixa para raspar as plantas."
     },
     {
+      "id": "chute-animais-e-natureza-257",
       "difficulty": "hard",
       "text": "Quantos olhos tem um molusco chamado quíton, em alguns casos?",
       "answer": 1000,
@@ -1801,6 +2058,7 @@
       "fact": "Os olhos são feitos de um mineral na própria concha."
     },
     {
+      "id": "chute-animais-e-natureza-258",
       "difficulty": "hard",
       "text": "Quantos olhos tem uma libélula, na soma dos olhos pequenos?",
       "answer": 30000,
@@ -1808,6 +2066,7 @@
       "fact": "Ela vê quase em 360 graus."
     },
     {
+      "id": "chute-animais-e-natureza-259",
       "difficulty": "hard",
       "text": "Quantas ventosas tem um polvo-gigante, aproximadamente?",
       "answer": 2240,
@@ -1815,6 +2074,7 @@
       "fact": "Cada ventosa consegue sentir o gosto."
     },
     {
+      "id": "chute-animais-e-natureza-260",
       "difficulty": "hard",
       "text": "Quantas pernas tinha o piolho-de-cobra descrito em 2021?",
       "answer": 1306,
@@ -1822,6 +2082,7 @@
       "fact": "Ele foi achado em uma mina, a 60 metros de profundidade."
     },
     {
+      "id": "chute-animais-e-natureza-261",
       "difficulty": "hard",
       "text": "Quantos genes tem um ser humano, aproximadamente?",
       "answer": 20000,
@@ -1829,6 +2090,7 @@
       "fact": "Temos muito menos que muitas plantas."
     },
     {
+      "id": "chute-animais-e-natureza-262",
       "difficulty": "hard",
       "text": "Quantos genes tem o trigo, aproximadamente?",
       "answer": 107000,
@@ -1836,6 +2098,7 @@
       "fact": "O trigo tem mais de cinco vezes mais genes que nós."
     },
     {
+      "id": "chute-animais-e-natureza-263",
       "difficulty": "hard",
       "text": "Quantos cromossomos tem um cachorro?",
       "answer": 78,
@@ -1843,6 +2106,7 @@
       "fact": "Os humanos têm 46."
     },
     {
+      "id": "chute-animais-e-natureza-264",
       "difficulty": "hard",
       "text": "Quantos cromossomos tem um gato?",
       "answer": 38,
@@ -1850,6 +2114,7 @@
       "fact": "Ele tem menos que um cão."
     },
     {
+      "id": "chute-animais-e-natureza-265",
       "difficulty": "hard",
       "text": "Quantos cromossomos tem um chimpanzé?",
       "answer": 48,
@@ -1857,6 +2122,7 @@
       "fact": "Dois cromossomos deles se fundiram na linhagem humana."
     },
     {
+      "id": "chute-animais-e-natureza-266",
       "difficulty": "hard",
       "text": "Quantos cromossomos tem uma samambaia da espécie Ophioglossum?",
       "answer": 1260,
@@ -1864,6 +2130,7 @@
       "fact": "É o maior número conhecido em um ser vivo."
     },
     {
+      "id": "chute-animais-e-natureza-267",
       "difficulty": "hard",
       "text": "Qual é o peso de um cérebro de cachalote, em kg?",
       "answer": 7.8,
@@ -1871,6 +2138,7 @@
       "fact": "Cinco vezes mais que o humano."
     },
     {
+      "id": "chute-animais-e-natureza-268",
       "difficulty": "hard",
       "text": "Qual é o peso de um cérebro de elefante-africano, em kg?",
       "answer": 5,
@@ -1878,6 +2146,7 @@
       "fact": "O cérebro dele é maior que o de qualquer outro animal terrestre."
     },
     {
+      "id": "chute-animais-e-natureza-269",
       "difficulty": "hard",
       "text": "Qual é o peso do cérebro de um humano adulto, em kg?",
       "answer": 1.4,
@@ -1885,6 +2154,7 @@
       "fact": "Consome cerca de 20% da energia do corpo."
     },
     {
+      "id": "chute-animais-e-natureza-270",
       "difficulty": "hard",
       "text": "Quantos neurônios tem um polvo, aproximadamente?",
       "answer": 500000000,
@@ -1892,6 +2162,7 @@
       "fact": "A maior parte fica nos braços."
     },
     {
+      "id": "chute-animais-e-natureza-271",
       "difficulty": "hard",
       "text": "Quantos neurônios tem uma abelha, aproximadamente?",
       "answer": 1000000,
@@ -1899,6 +2170,7 @@
       "fact": "Com tão pouco, ela reconhece até rostos."
     },
     {
+      "id": "chute-animais-e-natureza-272",
       "difficulty": "hard",
       "text": "Quantos neurônios tem uma formiga, aproximadamente?",
       "answer": 250000,
@@ -1906,6 +2178,7 @@
       "fact": "A colônia inteira age como um grande cérebro."
     },
     {
+      "id": "chute-animais-e-natureza-273",
       "difficulty": "hard",
       "text": "Quantos neurônios tem um elefante-africano, aproximadamente?",
       "answer": 257000000000,
@@ -1913,6 +2186,7 @@
       "fact": "É o triplo dos humanos, mas a maior parte fica no cerebelo."
     },
     {
+      "id": "chute-animais-e-natureza-274",
       "difficulty": "medium",
       "text": "Quantos anos uma baleia-jubarte pode viver?",
       "answer": 80,
@@ -1920,6 +2194,7 @@
       "fact": "A caça comercial quase acabou com a espécie."
     },
     {
+      "id": "chute-animais-e-natureza-275",
       "difficulty": "medium",
       "text": "Quantos ovos põe uma galinha caipira por semana, aproximadamente?",
       "answer": 4,
@@ -1927,6 +2202,7 @@
       "fact": "A galinha de granja põe bem mais por causa da seleção e da luz."
     },
     {
+      "id": "chute-animais-e-natureza-276",
       "difficulty": "medium",
       "text": "Quantos anos vive um papagaio-verdadeiro, em média?",
       "answer": 60,
@@ -1934,6 +2210,7 @@
       "fact": "Muitos sobrevivem aos próprios donos."
     },
     {
+      "id": "chute-animais-e-natureza-277",
       "difficulty": "medium",
       "text": "Quantos anos vive um jacaré-do-pantanal, em média?",
       "answer": 50,
@@ -1941,6 +2218,7 @@
       "fact": "A fêmea cuida dos filhotes por meses."
     },
     {
+      "id": "chute-animais-e-natureza-278",
       "difficulty": "medium",
       "text": "Quantos anos vive, em média, uma anta?",
       "answer": 30,
@@ -1948,6 +2226,7 @@
       "fact": "Ela é uma grande jardineira da floresta."
     },
     {
+      "id": "chute-animais-e-natureza-279",
       "difficulty": "medium",
       "text": "Quantos anos vive um lobo-guará na natureza, em média?",
       "answer": 15,
@@ -1955,6 +2234,7 @@
       "fact": "Em cativeiro, pode viver mais."
     },
     {
+      "id": "chute-animais-e-natureza-280",
       "difficulty": "medium",
       "text": "Quantos dias o pinguim-imperador macho fica sem comer para chocar o ovo?",
       "answer": 65,
@@ -1962,6 +2242,7 @@
       "fact": "A fêmea volta do mar só depois de meses."
     },
     {
+      "id": "chute-animais-e-natureza-281",
       "difficulty": "medium",
       "text": "Quantos km os pinguins-imperadores andam até a colônia, aproximadamente?",
       "answer": 120,
@@ -1969,6 +2250,7 @@
       "fact": "A viagem é feita sobre gelo, e ficou famosa no filme A Marcha dos Pinguins."
     },
     {
+      "id": "chute-animais-e-natureza-282",
       "difficulty": "medium",
       "text": "Quantos metros de altura tem o maior bambu conhecido?",
       "answer": 40,
@@ -1976,6 +2258,7 @@
       "fact": "O bambu é tecnicamente uma grama."
     },
     {
+      "id": "chute-animais-e-natureza-283",
       "difficulty": "medium",
       "text": "Quantos cm um bambu pode crescer em 24 horas?",
       "answer": 91,
@@ -1983,6 +2266,7 @@
       "fact": "Em algumas espécies, dá para acompanhar o crescimento."
     },
     {
+      "id": "chute-animais-e-natureza-284",
       "difficulty": "medium",
       "text": "Quantos anos uma castanheira-do-pará pode viver?",
       "answer": 500,
@@ -1990,6 +2274,7 @@
       "fact": "Sua produção depende de uma abelha específica e de uma cotia."
     },
     {
+      "id": "chute-animais-e-natureza-285",
       "difficulty": "medium",
       "text": "Quantos metros tem a envergadura da borboleta maior do mundo, em cm?",
       "answer": 28,
@@ -1997,6 +2282,7 @@
       "fact": "É a Rainha-Alexandra, de Papua-Nova Guiné."
     },
     {
+      "id": "chute-animais-e-natureza-286",
       "difficulty": "medium",
       "text": "Quantos km/h pode alcançar um peixe-vela?",
       "answer": 110,
@@ -2004,6 +2290,7 @@
       "fact": "Ele é considerado o peixe mais rápido."
     },
     {
+      "id": "chute-animais-e-natureza-287",
       "difficulty": "medium",
       "text": "Quantos cm tem o menor peixe do mundo, em milímetros?",
       "answer": 8,
@@ -2011,6 +2298,7 @@
       "fact": "É uma espécie da Indonésia, que vive em água ácida."
     },
     {
+      "id": "chute-animais-e-natureza-288",
       "difficulty": "medium",
       "text": "Quantos dias, em média, vive uma mosca-doméstica?",
       "answer": 28,
@@ -2018,6 +2306,7 @@
       "fact": "Em poucos dias, ela já pode botar ovos."
     },
     {
+      "id": "chute-animais-e-natureza-289",
       "difficulty": "medium",
       "text": "Quantas vezes por segundo uma mosca bate as asas, aproximadamente?",
       "answer": 200,
@@ -2025,6 +2314,7 @@
       "fact": "Algumas moscas menores chegam a mais de mil."
     },
     {
+      "id": "chute-animais-e-natureza-290",
       "difficulty": "medium",
       "text": "Quantas vezes por segundo uma abelha bate as asas, aproximadamente?",
       "answer": 230,
@@ -2032,6 +2322,7 @@
       "fact": "A forma de voar dela confundiu os cientistas por décadas."
     },
     {
+      "id": "chute-animais-e-natureza-291",
       "difficulty": "medium",
       "text": "Quantas pessoas morrem por ano por picadas de cobra no mundo, aproximadamente?",
       "answer": 120000,
@@ -2039,6 +2330,7 @@
       "fact": "Os números vêm principalmente da Índia e da África."
     },
     {
+      "id": "chute-animais-e-natureza-292",
       "difficulty": "medium",
       "text": "Quantas pessoas morrem por ano por doenças transmitidas por mosquitos, aproximadamente?",
       "answer": 700000,
@@ -2046,6 +2338,7 @@
       "fact": "O mosquito é o animal que mais mata humanos."
     },
     {
+      "id": "chute-animais-e-natureza-293",
       "difficulty": "medium",
       "text": "Quantas pessoas morrem por ano em ataques de tubarão, aproximadamente?",
       "answer": 5,
@@ -2053,6 +2346,7 @@
       "fact": "Morrem mais pessoas por causa de vacas e cocos caindo."
     },
     {
+      "id": "chute-animais-e-natureza-294",
       "difficulty": "hard",
       "text": "Quantos tubarões são mortos por ano por humanos, aproximadamente?",
       "answer": 100000000,
@@ -2060,6 +2354,7 @@
       "fact": "A pesca para fazer sopa de barbatana é uma das causas."
     },
     {
+      "id": "chute-animais-e-natureza-295",
       "difficulty": "hard",
       "text": "Quantas aves morrem por ano nos EUA por choques em janelas de vidro, em média?",
       "answer": 1000000000,
@@ -2067,6 +2362,7 @@
       "fact": "É uma das maiores causas de mortes de aves."
     },
     {
+      "id": "chute-animais-e-natureza-296",
       "difficulty": "hard",
       "text": "Quantas aves são mortas por gatos, por ano, nos EUA, segundo estimativa?",
       "answer": 2400000000,
@@ -2074,6 +2370,7 @@
       "fact": "Gatos domésticos também caçam, mesmo bem alimentados."
     },
     {
+      "id": "chute-animais-e-natureza-297",
       "difficulty": "hard",
       "text": "Quantas galinhas vivem no mundo, aproximadamente?",
       "answer": 33000000000,
@@ -2081,6 +2378,7 @@
       "fact": "Elas são as aves mais numerosas da Terra."
     },
     {
+      "id": "chute-animais-e-natureza-298",
       "difficulty": "hard",
       "text": "Quantos bois existem no mundo, aproximadamente?",
       "answer": 1500000000,
@@ -2088,6 +2386,7 @@
       "fact": "A pecuária ocupa grande parte das terras agrícolas."
     },
     {
+      "id": "chute-animais-e-natureza-299",
       "difficulty": "hard",
       "text": "Qual a massa de seres humanos em relação a todos os mamíferos selvagens, em vezes?",
       "answer": 10,
@@ -2095,6 +2394,7 @@
       "fact": "Os mamíferos domésticos são ainda mais pesados."
     },
     {
+      "id": "chute-animais-e-natureza-300",
       "difficulty": "hard",
       "text": "Qual a porcentagem da biomassa total de mamíferos que corresponde aos selvagens?",
       "answer": 4,
@@ -2102,6 +2402,7 @@
       "fact": "Quase todo o resto são seres humanos e gado."
     },
     {
+      "id": "chute-animais-e-natureza-301",
       "difficulty": "hard",
       "text": "Qual a porcentagem da biomassa total da Terra composta por plantas?",
       "answer": 82,
@@ -2109,6 +2410,7 @@
       "fact": "As bactérias vêm depois, com cerca de 13%."
     },
     {
+      "id": "chute-animais-e-natureza-302",
       "difficulty": "hard",
       "text": "Qual a porcentagem da biomassa total da Terra composta por animais?",
       "answer": 0.4,
@@ -2116,6 +2418,7 @@
       "fact": "Os humanos são uma parte pequena disso."
     },
     {
+      "id": "chute-animais-e-natureza-303",
       "difficulty": "hard",
       "text": "Quantas toneladas de insetos as aranhas comem por ano, em milhões?",
       "answer": 800,
@@ -2123,6 +2426,7 @@
       "fact": "É mais do que os seres humanos comem de carne e peixe."
     },
     {
+      "id": "chute-animais-e-natureza-304",
       "difficulty": "hard",
       "text": "Quantos milhões de toneladas de plástico entram nos oceanos por ano, aproximadamente?",
       "answer": 11,
@@ -2130,6 +2434,7 @@
       "fact": "Se nada mudar, o número pode quase triplicar até 2040."
     },
     {
+      "id": "chute-animais-e-natureza-305",
       "difficulty": "hard",
       "text": "Qual o tamanho da Grande Mancha de Lixo do Pacífico, em milhões de km²?",
       "answer": 1.6,
@@ -2137,6 +2442,7 @@
       "fact": "É cerca de três vezes o tamanho da França."
     },
     {
+      "id": "chute-animais-e-natureza-306",
       "difficulty": "hard",
       "text": "Quantos km² de floresta a Amazônia brasileira perdeu no pico de 2004?",
       "answer": 27772,
@@ -2144,6 +2450,7 @@
       "fact": "Depois disso, a taxa caiu bastante até meados da década de 2010."
     },
     {
+      "id": "chute-animais-e-natureza-307",
       "difficulty": "hard",
       "text": "Quantos km² de floresta a Amazônia brasileira perdeu em 2023?",
       "answer": 9001,
@@ -2151,6 +2458,7 @@
       "fact": "Em 2024, o número caiu para cerca de 6.300 km²."
     },
     {
+      "id": "chute-animais-e-natureza-308",
       "difficulty": "hard",
       "text": "Quantos hectares o Pantanal perdeu com os incêndios de 2020, em milhões?",
       "answer": 4,
@@ -2158,6 +2466,7 @@
       "fact": "Foi quase um terço do bioma brasileiro."
     },
     {
+      "id": "chute-animais-e-natureza-309",
       "difficulty": "hard",
       "text": "Quantos animais morreram nos incêndios do Pantanal em 2020, em milhões?",
       "answer": 17,
@@ -2165,6 +2474,7 @@
       "fact": "A estimativa foi feita por um estudo publicado em 2021."
     },
     {
+      "id": "chute-animais-e-natureza-310",
       "difficulty": "hard",
       "text": "Quantos animais foram afetados nos incêndios da Austrália em 2019-2020, em bilhões?",
       "answer": 3,
@@ -2172,6 +2482,7 @@
       "fact": "Foi um dos maiores desastres da vida selvagem moderna."
     },
     {
+      "id": "chute-animais-e-natureza-311",
       "difficulty": "hard",
       "text": "Quantos corais morreram na Grande Barreira entre 2016 e 2017, em %?",
       "answer": 50,
@@ -2179,6 +2490,7 @@
       "fact": "O calor da água é a principal causa dos branqueamentos."
     },
     {
+      "id": "chute-animais-e-natureza-312",
       "difficulty": "hard",
       "text": "Quantas espécies estão ameaçadas de extinção, segundo a IPBES, em milhões?",
       "answer": 1,
@@ -2186,6 +2498,7 @@
       "fact": "O relatório foi publicado em 2019."
     },
     {
+      "id": "chute-animais-e-natureza-313",
       "difficulty": "hard",
       "text": "Quantas espécies a IUCN classifica como ameaçadas, em 2024?",
       "answer": 46000,
@@ -2193,6 +2506,7 @@
       "fact": "A lista inclui cerca de 28% de tudo o que foi avaliado."
     },
     {
+      "id": "chute-animais-e-natureza-314",
       "difficulty": "hard",
       "text": "Qual a taxa de extinção atual, em comparação com a natural, em vezes?",
       "answer": 1000,
@@ -2200,6 +2514,7 @@
       "fact": "Muitos chamam isso de sexta extinção em massa."
     },
     {
+      "id": "chute-animais-e-natureza-315",
       "difficulty": "hard",
       "text": "Quantas extinções em massa aconteceram, segundo a ciência, antes do tempo atual?",
       "answer": 5,
@@ -2207,6 +2522,7 @@
       "fact": "A mais grave foi a do Permiano, há 252 milhões de anos."
     },
     {
+      "id": "chute-animais-e-natureza-316",
       "difficulty": "hard",
       "text": "Qual a porcentagem de espécies marinhas extintas no fim do Permiano?",
       "answer": 96,
@@ -2214,6 +2530,7 @@
       "fact": "É chamada de \"a Grande Morte\"."
     },
     {
+      "id": "chute-animais-e-natureza-317",
       "difficulty": "hard",
       "text": "Qual a porcentagem de espécies extintas no fim do Cretáceo?",
       "answer": 75,
@@ -2221,6 +2538,7 @@
       "fact": "Isso inclui todos os dinossauros não aviários."
     },
     {
+      "id": "chute-animais-e-natureza-318",
       "difficulty": "hard",
       "text": "Qual o diâmetro do asteroide que matou os dinossauros, em km?",
       "answer": 10,
@@ -2228,6 +2546,7 @@
       "fact": "A cratera tem mais de 180 km."
     },
     {
+      "id": "chute-animais-e-natureza-319",
       "difficulty": "hard",
       "text": "Qual o tamanho da cratera de Chicxulub, em km?",
       "answer": 180,
@@ -2235,6 +2554,7 @@
       "fact": "Ela fica no México, em Yucatán."
     },
     {
+      "id": "chute-animais-e-natureza-320",
       "difficulty": "hard",
       "text": "Quantos metros tinha o tsunami causado pelo asteroide de Chicxulub, em estimativa?",
       "answer": 1500,
@@ -2242,6 +2562,7 @@
       "fact": "Foi talvez a maior onda da história da Terra."
     },
     {
+      "id": "chute-animais-e-natureza-321",
       "difficulty": "hard",
       "text": "Qual foi o comprimento do Tiranossauro rex, em metros?",
       "answer": 12,
@@ -2249,6 +2570,7 @@
       "fact": "Sue, o fóssil mais famoso, tem 12,3 metros."
     },
     {
+      "id": "chute-animais-e-natureza-322",
       "difficulty": "hard",
       "text": "Por quanto foi vendido o fóssil de T. rex chamado Sue, em 1997, em dólares?",
       "answer": 8360000,
@@ -2256,6 +2578,7 @@
       "fact": "Foi comprado pelo Field Museum de Chicago."
     },
     {
+      "id": "chute-animais-e-natureza-323",
       "difficulty": "hard",
       "text": "Por quanto foi vendido o fóssil de T. rex chamado Stan, em 2020, em dólares?",
       "answer": 31800000,
@@ -2263,6 +2586,7 @@
       "fact": "Foi o fóssil mais caro da história até 2024."
     },
     {
+      "id": "chute-animais-e-natureza-324",
       "difficulty": "hard",
       "text": "Por quanto foi vendido o fóssil de estegossauro Apex, em 2024, em dólares?",
       "answer": 44600000,
@@ -2270,6 +2594,7 @@
       "fact": "Foi o fóssil mais caro já vendido em leilão."
     },
     {
+      "id": "chute-animais-e-natureza-325",
       "difficulty": "hard",
       "text": "Qual é o peso do argentinossauro, em toneladas, segundo estimativas?",
       "answer": 70,
@@ -2277,6 +2602,7 @@
       "fact": "É o maior animal terrestre já descoberto."
     },
     {
+      "id": "chute-animais-e-natureza-326",
       "difficulty": "hard",
       "text": "Qual é o comprimento do argentinossauro, em metros, segundo estimativas?",
       "answer": 35,
@@ -2284,6 +2610,7 @@
       "fact": "Ele tinha um pescoço enorme, bom para alcançar árvores altas."
     },
     {
+      "id": "chute-animais-e-natureza-327",
       "difficulty": "hard",
       "text": "Qual é o peso do megalodon, em toneladas, segundo estimativas?",
       "answer": 50,
@@ -2291,6 +2618,7 @@
       "fact": "Seus dentes podem passar de 17 cm."
     },
     {
+      "id": "chute-animais-e-natureza-328",
       "difficulty": "hard",
       "text": "Qual o comprimento do megalodon, em metros, segundo estimativas?",
       "answer": 16,
@@ -2298,6 +2626,7 @@
       "fact": "Ele foi extinto há 3,6 milhões de anos."
     },
     {
+      "id": "chute-animais-e-natureza-329",
       "difficulty": "hard",
       "text": "Qual o comprimento do mosasauro, em metros, segundo estimativas?",
       "answer": 15,
@@ -2305,6 +2634,7 @@
       "fact": "Ele aparece em uma cena famosa de Jurassic World."
     },
     {
+      "id": "chute-animais-e-natureza-330",
       "difficulty": "hard",
       "text": "Qual a envergadura do Quetzalcoatlus, em metros, segundo estimativas?",
       "answer": 11,
@@ -2312,6 +2642,7 @@
       "fact": "É como um pequeno avião."
     },
     {
+      "id": "chute-animais-e-natureza-331",
       "difficulty": "hard",
       "text": "Qual o peso do pássaro-elefante, em kg, segundo estimativas?",
       "answer": 650,
@@ -2319,6 +2650,7 @@
       "fact": "É a maior ave que já existiu."
     },
     {
+      "id": "chute-animais-e-natureza-332",
       "difficulty": "hard",
       "text": "Quantos litros tinha um ovo de pássaro-elefante, aproximadamente?",
       "answer": 9,
@@ -2326,6 +2658,7 @@
       "fact": "Ele equivale a mais de 150 ovos de galinha."
     },
     {
+      "id": "chute-animais-e-natureza-333",
       "difficulty": "hard",
       "text": "Qual a altura da moa, ave extinta da Nova Zelândia, em metros?",
       "answer": 3.6,
@@ -2333,6 +2666,7 @@
       "fact": "A espécie foi caçada até a extinção por volta do ano 1400."
     },
     {
+      "id": "chute-animais-e-natureza-334",
       "difficulty": "hard",
       "text": "Quantos kg pesa o maior tubarão-branco já registrado, aproximadamente?",
       "answer": 2000,
@@ -2340,6 +2674,7 @@
       "fact": "Ela foi apelidada de Deep Blue, e tem mais de 6 metros."
     },
     {
+      "id": "chute-animais-e-natureza-335",
       "difficulty": "hard",
       "text": "Qual é a altura de um salto da Orca, em metros?",
       "answer": 5,
@@ -2347,6 +2682,7 @@
       "fact": "Até uma baleia de várias toneladas se projeta inteira no ar."
     },
     {
+      "id": "chute-animais-e-natureza-336",
       "difficulty": "hard",
       "text": "Em que ano foram registrados os lobos reintroduzidos em Yellowstone, após anos de ausência?",
       "answer": 1995,
@@ -2354,6 +2690,7 @@
       "fact": "O impacto foi tão grande que mudou até o curso dos rios."
     },
     {
+      "id": "chute-animais-e-natureza-337",
       "difficulty": "hard",
       "text": "Em que ano foi registrada a extinção oficial do rinoceronte-negro-ocidental?",
       "answer": 2011,
@@ -2361,6 +2698,7 @@
       "fact": "A caça pelos chifres destruiu a espécie."
     },
     {
+      "id": "chute-animais-e-natureza-338",
       "difficulty": "hard",
       "text": "Em que ano foi declarado extinto o golfinho Baiji, funcionalmente?",
       "answer": 2006,
@@ -2368,6 +2706,7 @@
       "fact": "Uma expedição no rio Yangtzé não conseguiu achá-lo."
     },
     {
+      "id": "chute-animais-e-natureza-339",
       "difficulty": "hard",
       "text": "Em que ano foi extinta a tartaruga Lonesome George, de Pinta?",
       "answer": 2012,
@@ -2375,6 +2714,7 @@
       "fact": "A tartaruga foi encontrada em 1971."
     },
     {
+      "id": "chute-animais-e-natureza-340",
       "difficulty": "hard",
       "text": "Em que ano o último arau-gigante foi morto?",
       "answer": 1844,
@@ -2382,6 +2722,7 @@
       "fact": "Foi em uma ilha perto da Islândia."
     },
     {
+      "id": "chute-animais-e-natureza-341",
       "difficulty": "hard",
       "text": "Em que ano o último pombo-passageiro morreu?",
       "answer": 1914,
@@ -2389,6 +2730,7 @@
       "fact": "A espécie já teve bilhões de aves."
     },
     {
+      "id": "chute-animais-e-natureza-342",
       "difficulty": "hard",
       "text": "Em que ano o último dodô foi visto, aproximadamente?",
       "answer": 1662,
@@ -2396,6 +2738,7 @@
       "fact": "Ele sumiu menos de um século depois da chegada dos humanos."
     },
     {
+      "id": "chute-animais-e-natureza-343",
       "difficulty": "hard",
       "text": "Em que ano o último quagga morreu?",
       "answer": 1883,
@@ -2403,6 +2746,7 @@
       "fact": "Foi no zoológico de Amsterdã, na Holanda."
     },
     {
+      "id": "chute-animais-e-natureza-344",
       "difficulty": "medium",
       "text": "Quantas pontas costuma ter a estrela-do-mar-coroa-de-espinhos?",
       "answer": 16,
@@ -2410,6 +2754,7 @@
       "fact": "Ela é uma grande predadora de corais."
     },
     {
+      "id": "chute-animais-e-natureza-345",
       "difficulty": "medium",
       "text": "Quantos dias um filhote de águia-careca fica no ninho?",
       "answer": 80,
@@ -2417,6 +2762,7 @@
       "fact": "O ninho pode pesar mais de uma tonelada."
     },
     {
+      "id": "chute-animais-e-natureza-346",
       "difficulty": "medium",
       "text": "Qual o peso máximo conhecido de um ninho de águia-careca, em toneladas?",
       "answer": 2.7,
@@ -2424,6 +2770,7 @@
       "fact": "Foi encontrado na Flórida, em 1963."
     },
     {
+      "id": "chute-animais-e-natureza-347",
       "difficulty": "medium",
       "text": "Qual é a envergadura máxima de uma harpia, em metros?",
       "answer": 2.2,
@@ -2431,6 +2778,7 @@
       "fact": "Ela é uma das aves mais fortes do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-348",
       "difficulty": "medium",
       "text": "Quantos cm tem a garra de uma harpia, aproximadamente?",
       "answer": 13,
@@ -2438,6 +2786,7 @@
       "fact": "É maior que a garra de um urso-pardo."
     },
     {
+      "id": "chute-animais-e-natureza-349",
       "difficulty": "medium",
       "text": "Qual é a velocidade máxima do peixe-espada, em km/h?",
       "answer": 100,
@@ -2445,6 +2794,7 @@
       "fact": "Ele já foi visto perfurando barcos de madeira."
     },
     {
+      "id": "chute-animais-e-natureza-350",
       "difficulty": "hard",
       "text": "Quantos elefantes foram mortos por caçadores na África entre 2010 e 2012?",
       "answer": 100000,
@@ -2452,6 +2802,7 @@
       "fact": "A demanda por marfim explodiu na época."
     },
     {
+      "id": "chute-animais-e-natureza-351",
       "difficulty": "hard",
       "text": "Em que ano a China proibiu o comércio legal de marfim?",
       "answer": 2017,
@@ -2459,6 +2810,7 @@
       "fact": "A proibição é vista como uma grande vitória contra a caça."
     },
     {
+      "id": "chute-animais-e-natureza-352",
       "difficulty": "hard",
       "text": "Quantos rinocerontes-brancos-do-norte seguem vivos?",
       "answer": 2,
@@ -2466,6 +2818,7 @@
       "fact": "São fêmeas, e os cientistas tentam salvar a espécie com embriões."
     },
     {
+      "id": "chute-animais-e-natureza-353",
       "difficulty": "hard",
       "text": "Quantos rinocerontes-de-java vivem hoje, aproximadamente?",
       "answer": 75,
@@ -2473,6 +2826,7 @@
       "fact": "Todos ficam em um único parque na Indonésia."
     },
     {
+      "id": "chute-animais-e-natureza-354",
       "difficulty": "hard",
       "text": "Quantas vaquitas vivem na natureza, aproximadamente, em 2024?",
       "answer": 10,
@@ -2480,6 +2834,7 @@
       "fact": "Elas são os cetáceos mais ameaçados do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-355",
       "difficulty": "hard",
       "text": "Quantos anos dura o ciclo de vida da cigarra periódica mais longa?",
       "answer": 17,
@@ -2487,6 +2842,7 @@
       "fact": "O número primo pode ajudá-las a evitar predadores."
     },
     {
+      "id": "chute-animais-e-natureza-356",
       "difficulty": "hard",
       "text": "Quantos anos de idade tinha Martha, a última pomba-passageira, ao morrer?",
       "answer": 29,
@@ -2494,6 +2850,7 @@
       "fact": "O zoológico de Cincinnati construiu um memorial para ela."
     },
     {
+      "id": "chute-animais-e-natureza-357",
       "difficulty": "hard",
       "text": "Quantos anos de idade tinha Toughie, a última rã-arborícola-de-franja-de-rabbs?",
       "answer": 12,
@@ -2501,6 +2858,7 @@
       "fact": "Ele morreu em 2016, em um jardim botânico de Atlanta."
     },
     {
+      "id": "chute-animais-e-natureza-358",
       "difficulty": "hard",
       "text": "Quantos anos Dian Fossey passou com gorilas em Ruanda?",
       "answer": 18,
@@ -2508,6 +2866,7 @@
       "fact": "Ela chegou lá em 1967 e foi morta em 1985."
     },
     {
+      "id": "chute-animais-e-natureza-359",
       "difficulty": "hard",
       "text": "Quantos anos Jane Goodall estudou chimpanzés em Gombe, aproximadamente?",
       "answer": 60,
@@ -2515,6 +2874,7 @@
       "fact": "O trabalho começou em 1960."
     },
     {
+      "id": "chute-animais-e-natureza-360",
       "difficulty": "hard",
       "text": "Quantos dias durou a viagem do HMS Beagle, aproximadamente?",
       "answer": 1740,
@@ -2522,6 +2882,7 @@
       "fact": "A viagem foi de 1831 a 1836 e passou pelo Brasil."
     },
     {
+      "id": "chute-animais-e-natureza-361",
       "difficulty": "hard",
       "text": "Quantos dias Darwin passou em Galápagos?",
       "answer": 35,
@@ -2529,6 +2890,7 @@
       "fact": "A visita mudou a história da biologia."
     },
     {
+      "id": "chute-animais-e-natureza-362",
       "difficulty": "hard",
       "text": "Quantos km³ de gelo a Antártida tem, em milhões?",
       "answer": 26,
@@ -2536,6 +2898,7 @@
       "fact": "É cerca de 90% de todo o gelo do planeta."
     },
     {
+      "id": "chute-animais-e-natureza-363",
       "difficulty": "hard",
       "text": "Quantas ilhas Galápagos formam o arquipélago principal?",
       "answer": 19,
@@ -2543,6 +2906,7 @@
       "fact": "Elas ficam a 1.000 km da costa do Equador."
     },
     {
+      "id": "chute-animais-e-natureza-364",
       "difficulty": "hard",
       "text": "Quantos km tem a Grande Muralha Verde planejada para cruzar a África?",
       "answer": 8000,
@@ -2550,6 +2914,7 @@
       "fact": "O projeto tenta frear o avanço do deserto do Saara."
     },
     {
+      "id": "chute-animais-e-natureza-365",
       "difficulty": "hard",
       "text": "Quantos metros tem a montanha mais alta em relação à base, o Mauna Kea?",
       "answer": 10203,
@@ -2557,6 +2922,7 @@
       "fact": "Ele supera o Everest se contada a parte submersa."
     },
     {
+      "id": "chute-animais-e-natureza-366",
       "difficulty": "hard",
       "text": "Quantos metros tem o Monte Roraima?",
       "answer": 2810,
@@ -2564,6 +2930,7 @@
       "fact": "Ele inspirou Up e o livro O Mundo Perdido."
     },
     {
+      "id": "chute-animais-e-natureza-367",
       "difficulty": "hard",
       "text": "Quantos metros tem o Dedo de Deus, em Teresópolis?",
       "answer": 1692,
@@ -2571,6 +2938,7 @@
       "fact": "É um dos símbolos do montanhismo brasileiro."
     },
     {
+      "id": "chute-animais-e-natureza-368",
       "difficulty": "hard",
       "text": "Quantos metros tem o Pão de Açúcar, aproximadamente?",
       "answer": 396,
@@ -2578,6 +2946,7 @@
       "fact": "A subida começou de bondinho em 1912."
     },
     {
+      "id": "chute-animais-e-natureza-369",
       "difficulty": "hard",
       "text": "Quantos km tem o rio São Francisco?",
       "answer": 2830,
@@ -2585,6 +2954,7 @@
       "fact": "Ele é chamado de \"Velho Chico\"."
     },
     {
+      "id": "chute-animais-e-natureza-370",
       "difficulty": "hard",
       "text": "Quantos km tem o rio Paraná?",
       "answer": 4880,
@@ -2592,6 +2962,7 @@
       "fact": "Ele é o segundo maior rio da América do Sul."
     },
     {
+      "id": "chute-animais-e-natureza-371",
       "difficulty": "hard",
       "text": "Quantos km tem o rio Mississippi-Missouri?",
       "answer": 6275,
@@ -2599,6 +2970,7 @@
       "fact": "É o maior sistema de rios da América do Norte."
     },
     {
+      "id": "chute-animais-e-natureza-372",
       "difficulty": "hard",
       "text": "Quantos km tem o rio Yangtzé?",
       "answer": 6300,
@@ -2606,6 +2978,7 @@
       "fact": "É o maior rio da Ásia."
     },
     {
+      "id": "chute-animais-e-natureza-373",
       "difficulty": "hard",
       "text": "Quantos países atravessa o rio Danúbio?",
       "answer": 10,
@@ -2613,6 +2986,7 @@
       "fact": "É o rio que mais atravessa países."
     },
     {
+      "id": "chute-animais-e-natureza-374",
       "difficulty": "hard",
       "text": "Qual é a profundidade do Cânion do Colorado, em metros?",
       "answer": 1857,
@@ -2620,6 +2994,7 @@
       "fact": "Ele tem quase 450 km de comprimento."
     },
     {
+      "id": "chute-animais-e-natureza-375",
       "difficulty": "hard",
       "text": "Qual é a idade das rochas mais antigas do Grand Canyon, em bilhões de anos?",
       "answer": 1.8,
@@ -2627,6 +3002,7 @@
       "fact": "O cânion em si é muito mais jovem."
     },
     {
+      "id": "chute-animais-e-natureza-376",
       "difficulty": "hard",
       "text": "Qual é a idade das rochas mais antigas da Terra, em bilhões de anos?",
       "answer": 4,
@@ -2634,6 +3010,7 @@
       "fact": "Elas ficam no noroeste do Canadá."
     },
     {
+      "id": "chute-animais-e-natureza-377",
       "difficulty": "hard",
       "text": "Qual é o maior número de filhotes conhecido em uma ninhada de porca?",
       "answer": 37,
@@ -2641,6 +3018,7 @@
       "fact": "Foi um recorde mundial na Dinamarca."
     },
     {
+      "id": "chute-animais-e-natureza-378",
       "difficulty": "hard",
       "text": "Qual é o maior número de filhotes conhecido em uma ninhada de cadela?",
       "answer": 24,
@@ -2648,6 +3026,7 @@
       "fact": "Foi a mastim napolitana Tia, em 2004, na Inglaterra."
     },
     {
+      "id": "chute-animais-e-natureza-379",
       "difficulty": "hard",
       "text": "Em que altitude vive a lhama, em metros, em média?",
       "answer": 4000,
@@ -2655,6 +3034,7 @@
       "fact": "O sangue dela captura mais oxigênio que o de outros mamíferos."
     },
     {
+      "id": "chute-animais-e-natureza-380",
       "difficulty": "hard",
       "text": "Qual é o comprimento da língua de uma baleia-azul, em metros?",
       "answer": 3,
@@ -2662,6 +3042,7 @@
       "fact": "Ela pesa o mesmo que um elefante pequeno."
     },
     {
+      "id": "chute-animais-e-natureza-381",
       "difficulty": "hard",
       "text": "Qual a velocidade de impacto de um pica-pau contra uma árvore, em km/h?",
       "answer": 25,
@@ -2669,6 +3050,7 @@
       "fact": "Ele bate cerca de 20 vezes por segundo."
     },
     {
+      "id": "chute-animais-e-natureza-382",
       "difficulty": "hard",
       "text": "Quantas bicadas por segundo um pica-pau pode dar?",
       "answer": 20,
@@ -2676,6 +3058,7 @@
       "fact": "A força do impacto é de até 1.000 g."
     },
     {
+      "id": "chute-animais-e-natureza-383",
       "difficulty": "easy",
       "text": "Quantas patas tem um inseto adulto?",
       "answer": 6,
@@ -2683,6 +3066,7 @@
       "fact": "As aranhas não são insetos, pois têm oito."
     },
     {
+      "id": "chute-animais-e-natureza-384",
       "difficulty": "easy",
       "text": "Quantas asas tem uma abelha?",
       "answer": 4,
@@ -2690,6 +3074,7 @@
       "fact": "Elas se prendem em dois pares."
     },
     {
+      "id": "chute-animais-e-natureza-385",
       "difficulty": "easy",
       "text": "Quantas patas tem um caranguejo, contando as pinças?",
       "answer": 10,
@@ -2697,6 +3082,7 @@
       "fact": "Por isso, ele é um decápode."
     },
     {
+      "id": "chute-animais-e-natureza-386",
       "difficulty": "easy",
       "text": "Quantos meses dura a gestação de uma gata?",
       "answer": 2,
@@ -2704,6 +3090,7 @@
       "fact": "A ninhada costuma ter de 3 a 5 filhotes."
     },
     {
+      "id": "chute-animais-e-natureza-387",
       "difficulty": "easy",
       "text": "Qual é a velocidade máxima de um guepardo, em km/h?",
       "answer": 100,
@@ -2711,6 +3098,7 @@
       "fact": "Ele só mantém essa corrida por poucos segundos."
     },
     {
+      "id": "chute-animais-e-natureza-388",
       "difficulty": "medium",
       "text": "Quantas toneladas pode pesar uma baleia-azul?",
       "answer": 150,
@@ -2718,6 +3106,7 @@
       "fact": "É o maior animal que já existiu."
     },
     {
+      "id": "chute-animais-e-natureza-389",
       "difficulty": "medium",
       "text": "Quantos metros pode medir uma baleia-azul?",
       "answer": 30,
@@ -2725,6 +3114,7 @@
       "fact": "Ela come principalmente krill."
     },
     {
+      "id": "chute-animais-e-natureza-390",
       "difficulty": "medium",
       "text": "Quanto pesa o coração de uma baleia-azul, em quilos, aproximadamente?",
       "answer": 180,
@@ -2732,6 +3122,7 @@
       "fact": "Antes, se pensava que ele fosse bem maior."
     },
     {
+      "id": "chute-animais-e-natureza-391",
       "difficulty": "medium",
       "text": "Até que altitude em relação ao mar um cachalote mergulha, em metros, aproximadamente?",
       "answer": -2000,
@@ -2740,6 +3131,7 @@
       "fact": "Ele busca lulas-gigantes nas profundezas."
     },
     {
+      "id": "chute-animais-e-natureza-392",
       "difficulty": "medium",
       "text": "Quantas aves existem no mundo, em bilhões, segundo um estudo de 2021?",
       "answer": 50,
@@ -2747,6 +3139,7 @@
       "fact": "Isso dá cerca de seis aves por pessoa."
     },
     {
+      "id": "chute-animais-e-natureza-393",
       "difficulty": "medium",
       "text": "Quantas árvores existem na Terra, em trilhões, aproximadamente?",
       "answer": 3,
@@ -2754,6 +3147,7 @@
       "fact": "A estimativa foi publicada em 2015."
     },
     {
+      "id": "chute-animais-e-natureza-394",
       "difficulty": "medium",
       "text": "Quantas árvores existem na Amazônia, em bilhões, aproximadamente?",
       "answer": 390,
@@ -2761,6 +3155,7 @@
       "fact": "Elas se dividem em cerca de 16 mil espécies."
     },
     {
+      "id": "chute-animais-e-natureza-395",
       "difficulty": "medium",
       "text": "Quantas formigas existem na Terra, em quatrilhões, segundo um estudo de 2022?",
       "answer": 20,
@@ -2768,6 +3163,7 @@
       "fact": "Elas somam mais massa que aves e mamíferos selvagens juntos."
     },
     {
+      "id": "chute-animais-e-natureza-396",
       "difficulty": "medium",
       "text": "Quantas vezes por minuto o coração de um beija-flor bate, em pleno voo?",
       "answer": 1200,
@@ -2775,6 +3171,7 @@
       "fact": "Em repouso, a frequência é bem menor."
     },
     {
+      "id": "chute-animais-e-natureza-397",
       "difficulty": "medium",
       "text": "Quantas vezes por segundo um beija-flor bate as asas, nas espécies pequenas?",
       "answer": 80,
@@ -2782,6 +3179,7 @@
       "fact": "Por isso, as asas parecem borradas."
     },
     {
+      "id": "chute-animais-e-natureza-398",
       "difficulty": "hard",
       "text": "Quantos anos pode viver um tubarão-da-groenlândia, aproximadamente?",
       "answer": 400,
@@ -2789,6 +3187,7 @@
       "fact": "A idade foi medida pelo olho de um exemplar."
     },
     {
+      "id": "chute-animais-e-natureza-399",
       "difficulty": "hard",
       "text": "Quantos anos tem o pinheiro Matusalém, nos EUA, aproximadamente?",
       "answer": 4800,
@@ -2796,6 +3195,7 @@
       "fact": "O local exato é mantido em segredo."
     },
     {
+      "id": "chute-animais-e-natureza-400",
       "difficulty": "hard",
       "text": "Qual é a altura da maior árvore do mundo, em metros?",
       "answer": 115,
@@ -2803,6 +3203,7 @@
       "fact": "A sequoia Hyperion fica na Califórnia."
     },
     {
+      "id": "chute-animais-e-natureza-401",
       "difficulty": "hard",
       "text": "Qual é a velocidade de mergulho de um falcão-peregrino, em km/h?",
       "answer": 390,
@@ -2810,6 +3211,7 @@
       "fact": "Ele é o animal mais rápido do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-402",
       "difficulty": "hard",
       "text": "Quantos quilômetros por ano uma andorinha-do-ártico percorre, aproximadamente?",
       "answer": 70000,
@@ -2817,6 +3219,7 @@
       "fact": "Em uma vida, ela pode voar o equivalente a três idas à Lua."
     },
     {
+      "id": "chute-animais-e-natureza-403",
       "difficulty": "hard",
       "text": "Até que altitude em relação ao mar já se filmou um peixe, em metros, aproximadamente?",
       "answer": -8300,
@@ -2825,6 +3228,7 @@
       "fact": "Um peixe-caracol foi filmado perto do Japão, em 2023."
     },
     {
+      "id": "chute-animais-e-natureza-404",
       "difficulty": "hard",
       "text": "Que temperatura um tardígrado já suportou em laboratório, em °C, aproximadamente?",
       "answer": -272,
@@ -2833,6 +3237,7 @@
       "fact": "Ele resiste em um estado chamado de criptobiose."
     },
     {
+      "id": "chute-animais-e-natureza-405",
       "difficulty": "hard",
       "text": "Quanto pesa um elefante-africano macho grande, em toneladas?",
       "answer": 6,
@@ -2840,6 +3245,7 @@
       "fact": "Ele é o maior animal terrestre."
     },
     {
+      "id": "chute-animais-e-natureza-406",
       "difficulty": "hard",
       "text": "Quanto pesa um ovo de avestruz, em quilos, aproximadamente?",
       "answer": 1.4,
@@ -2847,6 +3253,7 @@
       "fact": "Ele equivale a cerca de 24 ovos de galinha."
     },
     {
+      "id": "chute-animais-e-natureza-407",
       "difficulty": "hard",
       "text": "Quantas espécies de aves há no Brasil, aproximadamente?",
       "answer": 1900,
@@ -2854,6 +3261,7 @@
       "fact": "O país está entre os mais ricos do mundo em aves."
     },
     {
+      "id": "chute-animais-e-natureza-408",
       "difficulty": "medium",
       "text": "Quantas pernas tem uma centopeia de jardim comum, no mínimo?",
       "answer": 30,
@@ -2861,6 +3269,7 @@
       "fact": "Apesar do nome, nenhuma tem cem pernas exatas por regra."
     },
     {
+      "id": "chute-animais-e-natureza-409",
       "difficulty": "medium",
       "text": "Quantos anos dura uma borboleta-monarca em média, em meses?",
       "answer": 8,
@@ -2868,6 +3277,7 @@
       "fact": "As gerações que migram vivem bem mais."
     },
     {
+      "id": "chute-animais-e-natureza-410",
       "difficulty": "medium",
       "text": "Quantos ovos uma tartaruga-marinha põe por ninho, aproximadamente?",
       "answer": 100,
@@ -2875,6 +3285,7 @@
       "fact": "Poucos filhotes chegam à vida adulta."
     },
     {
+      "id": "chute-animais-e-natureza-411",
       "difficulty": "easy",
       "text": "Quantos filhotes um panda-gigante tem por parto, em geral?",
       "answer": 1,
@@ -2882,6 +3293,7 @@
       "fact": "Às vezes nascem gêmeos, mas é raro criar os dois."
     },
     {
+      "id": "chute-animais-e-natureza-412",
       "difficulty": "easy",
       "text": "Quanto mede um beija-flor-abelha, o menor do mundo, em centímetros?",
       "answer": 5,
@@ -2889,6 +3301,7 @@
       "fact": "Ele vive em Cuba."
     },
     {
+      "id": "chute-animais-e-natureza-413",
       "difficulty": "medium",
       "text": "Quantas horas por dia um coala dorme, aproximadamente?",
       "answer": 20,
@@ -2896,6 +3309,7 @@
       "fact": "As folhas de eucalipto dão pouca energia."
     },
     {
+      "id": "chute-animais-e-natureza-414",
       "difficulty": "medium",
       "text": "Quantas espécies de animais marinhos estão descritas, em milhares, aproximadamente?",
       "answer": 240,
@@ -2903,6 +3317,7 @@
       "fact": "Os oceanos ainda guardam muitas desconhecidas."
     },
     {
+      "id": "chute-animais-e-natureza-415",
       "difficulty": "easy",
       "text": "Quantas patas tem uma aranha?",
       "answer": 8,
@@ -2910,6 +3325,7 @@
       "fact": "Por ter oito patas, a aranha não é um inseto."
     },
     {
+      "id": "chute-animais-e-natureza-416",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um gato doméstico adulto, em média?",
       "answer": 4,
@@ -2917,6 +3333,7 @@
       "fact": "Gatos de raças grandes, como o maine coon, passam de 8 kg."
     },
     {
+      "id": "chute-animais-e-natureza-417",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um labrador adulto, em média?",
       "answer": 30,
@@ -2924,6 +3341,7 @@
       "fact": "É uma das raças de cachorro mais populares do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-418",
       "difficulty": "easy",
       "text": "Quantos filhotes uma cadela costuma ter por ninhada?",
       "answer": 6,
@@ -2931,6 +3349,7 @@
       "fact": "Raças pequenas costumam ter ninhadas menores."
     },
     {
+      "id": "chute-animais-e-natureza-419",
       "difficulty": "easy",
       "text": "Quantos filhotes uma gata costuma ter por ninhada?",
       "answer": 4,
@@ -2938,6 +3357,7 @@
       "fact": "Uma gata pode ter mais de uma ninhada por ano."
     },
     {
+      "id": "chute-animais-e-natureza-420",
       "difficulty": "easy",
       "text": "Quantos quilos pesa uma vaca adulta, aproximadamente?",
       "answer": 600,
@@ -2945,6 +3365,7 @@
       "fact": "Touros de raças grandes podem passar de uma tonelada."
     },
     {
+      "id": "chute-animais-e-natureza-421",
       "difficulty": "easy",
       "text": "Quantos anos vive um hamster, em média?",
       "answer": 2,
@@ -2952,6 +3373,7 @@
       "fact": "Ele é um dos bichos de estimação de vida mais curta."
     },
     {
+      "id": "chute-animais-e-natureza-422",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um cavalo adulto, aproximadamente?",
       "answer": 500,
@@ -2959,6 +3381,7 @@
       "fact": "Cavalos de tração podem passar de 900 kg."
     },
     {
+      "id": "chute-animais-e-natureza-423",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um porco pronto para o abate, aproximadamente?",
       "answer": 110,
@@ -2966,6 +3389,7 @@
       "fact": "O porco chega a esse peso em uns seis meses."
     },
     {
+      "id": "chute-animais-e-natureza-424",
       "difficulty": "easy",
       "text": "Quantos ovos uma galinha põe por dia, no máximo?",
       "answer": 1,
@@ -2973,6 +3397,7 @@
       "fact": "Cada ovo leva cerca de um dia para se formar."
     },
     {
+      "id": "chute-animais-e-natureza-425",
       "difficulty": "easy",
       "text": "Quantas asas tem uma borboleta?",
       "answer": 4,
@@ -2980,6 +3405,7 @@
       "fact": "São dois pares, cobertos de escamas minúsculas."
     },
     {
+      "id": "chute-animais-e-natureza-426",
       "difficulty": "easy",
       "text": "Quantas corcovas tem um camelo?",
       "answer": 2,
@@ -2987,6 +3413,7 @@
       "fact": "O dromedário, parente dele, tem uma só."
     },
     {
+      "id": "chute-animais-e-natureza-427",
       "difficulty": "easy",
       "text": "Quantos gramas pesa um ovo de galinha médio?",
       "answer": 50,
@@ -2994,6 +3421,7 @@
       "fact": "A casca é cerca de um décimo do peso do ovo."
     },
     {
+      "id": "chute-animais-e-natureza-428",
       "difficulty": "easy",
       "text": "Quantas rainhas tem uma colmeia de abelhas, normalmente?",
       "answer": 1,
@@ -3001,6 +3429,7 @@
       "fact": "As operárias criam uma nova rainha quando precisam."
     },
     {
+      "id": "chute-animais-e-natureza-429",
       "difficulty": "easy",
       "text": "Quantas patas tem uma minhoca?",
       "answer": 0,
@@ -3008,6 +3437,7 @@
       "fact": "Ela anda contraindo e esticando os músculos do corpo."
     },
     {
+      "id": "chute-animais-e-natureza-430",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um coelho doméstico adulto, em média?",
       "answer": 2,
@@ -3015,6 +3445,7 @@
       "fact": "Algumas raças gigantes de coelho passam de 7 kg."
     },
     {
+      "id": "chute-animais-e-natureza-431",
       "difficulty": "easy",
       "text": "Quantos quilos pesa uma galinha adulta, aproximadamente?",
       "answer": 2.5,
@@ -3022,6 +3453,7 @@
       "fact": "O galo costuma ser mais pesado que a galinha."
     },
     {
+      "id": "chute-animais-e-natureza-432",
       "difficulty": "easy",
       "text": "Quantos dias dura cada estação do ano, aproximadamente?",
       "answer": 90,
@@ -3029,6 +3461,7 @@
       "fact": "As quatro estações juntas somam o ano inteiro."
     },
     {
+      "id": "chute-animais-e-natureza-433",
       "difficulty": "easy",
       "text": "Quantas horas dura o dia no equinócio, aproximadamente?",
       "answer": 12,
@@ -3036,6 +3469,7 @@
       "fact": "No equinócio, dia e noite têm quase a mesma duração no planeta todo."
     },
     {
+      "id": "chute-animais-e-natureza-434",
       "difficulty": "easy",
       "text": "Qual é a temperatura da água do mar no litoral do Nordeste, em média, em °C?",
       "answer": 27,
@@ -3043,6 +3477,7 @@
       "fact": "A água quente é um dos atrativos das praias nordestinas."
     },
     {
+      "id": "chute-animais-e-natureza-435",
       "difficulty": "easy",
       "text": "Quantas fases principais tem a Lua?",
       "answer": 4,
@@ -3050,6 +3485,7 @@
       "fact": "São nova, crescente, cheia e minguante."
     },
     {
+      "id": "chute-animais-e-natureza-436",
       "difficulty": "easy",
       "text": "Quantas vezes por dia um cachorro adulto costuma comer?",
       "answer": 2,
@@ -3057,6 +3493,7 @@
       "fact": "Filhotes costumam comer mais vezes por dia."
     },
     {
+      "id": "chute-animais-e-natureza-437",
       "difficulty": "easy",
       "text": "Quantos meses tem um filhote de cachorro quando costuma ser separado da mãe?",
       "answer": 2,
@@ -3064,6 +3501,7 @@
       "fact": "Antes disso ele ainda depende do leite e da ninhada."
     },
     {
+      "id": "chute-animais-e-natureza-438",
       "difficulty": "easy",
       "text": "Quantos metros de altura tem um elefante-africano adulto, aproximadamente?",
       "answer": 3,
@@ -3071,6 +3509,7 @@
       "fact": "Ele é o maior animal terrestre do planeta."
     },
     {
+      "id": "chute-animais-e-natureza-439",
       "difficulty": "easy",
       "text": "Quantos metros de altura tem um avestruz adulto, aproximadamente?",
       "answer": 2.5,
@@ -3078,6 +3517,7 @@
       "fact": "O avestruz é a maior ave do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-440",
       "difficulty": "easy",
       "text": "Quantos metros de comprimento tem um tubarão-branco adulto, em média?",
       "answer": 5,
@@ -3085,6 +3525,7 @@
       "fact": "As fêmeas costumam ser maiores que os machos."
     },
     {
+      "id": "chute-animais-e-natureza-441",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um chihuahua adulto, em média?",
       "answer": 2,
@@ -3092,6 +3533,7 @@
       "fact": "É a menor raça de cachorro do mundo."
     },
     {
+      "id": "chute-animais-e-natureza-442",
       "difficulty": "easy",
       "text": "Quantos olhos tem um polvo?",
       "answer": 2,
@@ -3099,6 +3541,7 @@
       "fact": "Já os braços são oito, cheios de ventosas."
     },
     {
+      "id": "chute-animais-e-natureza-443",
       "difficulty": "easy",
       "text": "Quantos dias leva um feijão para brotar no algodão molhado, aproximadamente?",
       "answer": 5,
@@ -3106,6 +3549,7 @@
       "fact": "É uma das experiências mais famosas das aulas de ciências."
     },
     {
+      "id": "chute-animais-e-natureza-444",
       "difficulty": "easy",
       "text": "Quantas sementes tem um abacate?",
       "answer": 1,
@@ -3113,6 +3557,7 @@
       "fact": "O caroço do abacate pode virar uma árvore nova."
     },
     {
+      "id": "chute-animais-e-natureza-445",
       "difficulty": "easy",
       "text": "Quantos quilos tem um saco grande de ração para cachorro, no supermercado?",
       "answer": 15,
@@ -3120,6 +3565,7 @@
       "fact": "Sacos menores, de 1 a 3 kg, também são comuns."
     },
     {
+      "id": "chute-animais-e-natureza-446",
       "difficulty": "easy",
       "text": "Quantas patas tem um cavalo?",
       "answer": 4,
@@ -3127,6 +3573,7 @@
       "fact": "O cavalo apoia cada pata num único dedo, o casco."
     },
     {
+      "id": "chute-animais-e-natureza-447",
       "difficulty": "easy",
       "text": "Quantas antenas tem uma formiga?",
       "answer": 2,
@@ -3134,6 +3581,7 @@
       "fact": "Ela usa as antenas para sentir cheiros e se comunicar."
     },
     {
+      "id": "chute-animais-e-natureza-448",
       "difficulty": "easy",
       "text": "Quantos centímetros tem uma formiga comum de jardim, aproximadamente?",
       "answer": 0.5,
@@ -3141,6 +3589,7 @@
       "fact": "Algumas formigas tropicais passam de 3 cm."
     },
     {
+      "id": "chute-animais-e-natureza-449",
       "difficulty": "easy",
       "text": "Quantos dedos tem a pata da frente de um gato?",
       "answer": 5,
@@ -3148,6 +3597,7 @@
       "fact": "Na pata de trás são só quatro."
     },
     {
+      "id": "chute-animais-e-natureza-450",
       "difficulty": "easy",
       "text": "Quantos anos vive um peixe-beta, em média?",
       "answer": 3,
@@ -3155,6 +3605,7 @@
       "fact": "O beta é famoso por brigar com outros machos da espécie."
     },
     {
+      "id": "chute-animais-e-natureza-451",
       "difficulty": "easy",
       "text": "Quantas horas por dia um gato filhote costuma dormir?",
       "answer": 20,
@@ -3162,6 +3613,7 @@
       "fact": "Filhotes dormem ainda mais que os gatos adultos."
     },
     {
+      "id": "chute-animais-e-natureza-452",
       "difficulty": "easy",
       "text": "Quantos litros de leite uma vaca leiteira produz por dia numa boa fazenda?",
       "answer": 25,
@@ -3169,6 +3621,7 @@
       "fact": "As campeãs passam de 60 litros por dia."
     },
     {
+      "id": "chute-animais-e-natureza-453",
       "difficulty": "easy",
       "text": "Quantos centímetros tem um pintinho recém-nascido, aproximadamente?",
       "answer": 5,
@@ -3176,6 +3629,7 @@
       "fact": "Ele já nasce coberto de penugem e andando."
     },
     {
+      "id": "chute-animais-e-natureza-454",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um cachorro vira-lata médio, aproximadamente?",
       "answer": 15,
@@ -3183,6 +3637,7 @@
       "fact": "O vira-lata caramelo virou um símbolo do Brasil."
     },
     {
+      "id": "chute-animais-e-natureza-455",
       "difficulty": "easy",
       "text": "Quantos anos vive uma calopsita, em média?",
       "answer": 15,
@@ -3190,6 +3645,7 @@
       "fact": "Ela é uma das aves de estimação mais comuns no Brasil."
     },
     {
+      "id": "chute-animais-e-natureza-456",
       "difficulty": "easy",
       "text": "Quantas cores tem o pelo de uma vaca holandesa?",
       "answer": 2,
@@ -3197,6 +3653,7 @@
       "fact": "Ela é malhada de preto e branco."
     },
     {
+      "id": "chute-animais-e-natureza-457",
       "difficulty": "easy",
       "text": "Quantos metros pode saltar um gato para cima, aproximadamente?",
       "answer": 1.5,
@@ -3204,6 +3661,7 @@
       "fact": "O gato pula até umas cinco vezes a própria altura."
     },
     {
+      "id": "chute-animais-e-natureza-458",
       "difficulty": "easy",
       "text": "Quantas penas tem a cauda aberta de um pavão, aproximadamente?",
       "answer": 200,
@@ -3211,6 +3669,7 @@
       "fact": "Só os machos têm a cauda colorida."
     },
     {
+      "id": "chute-animais-e-natureza-459",
       "difficulty": "easy",
       "text": "Quantos litros de água um cavalo bebe por dia, aproximadamente?",
       "answer": 40,
@@ -3218,6 +3677,7 @@
       "fact": "No calor ou no trabalho pesado ele bebe ainda mais."
     },
     {
+      "id": "chute-animais-e-natureza-460",
       "difficulty": "easy",
       "text": "Quantos dias dura a vida de uma mosca doméstica, aproximadamente?",
       "answer": 28,
@@ -3225,6 +3685,7 @@
       "fact": "Nesse tempo uma fêmea pode botar centenas de ovos."
     },
     {
+      "id": "chute-animais-e-natureza-461",
       "difficulty": "easy",
       "text": "Quantos ovos tem uma ninhada comum de galinha caipira chocando?",
       "answer": 12,
@@ -3232,6 +3693,7 @@
       "fact": "A galinha vira os ovos várias vezes por dia."
     },
     {
+      "id": "chute-animais-e-natureza-462",
       "difficulty": "easy",
       "text": "Quantos centímetros tem um gato adulto do focinho à base do rabo, aproximadamente?",
       "answer": 46,
@@ -3239,6 +3701,7 @@
       "fact": "O rabo soma mais uns 25 a 30 cm."
     },
     {
+      "id": "chute-animais-e-natureza-463",
       "difficulty": "easy",
       "text": "Quantos metros de altura tem um pé de coqueiro adulto, aproximadamente?",
       "answer": 20,
@@ -3246,6 +3709,7 @@
       "fact": "Alguns coqueiros passam de 30 metros."
     },
     {
+      "id": "chute-animais-e-natureza-464",
       "difficulty": "easy",
       "text": "Quantos graus faz num dia frio de inverno em Curitiba, de madrugada, aproximadamente, em °C?",
       "answer": 5,
@@ -3253,6 +3717,7 @@
       "fact": "Curitiba é a capital mais fria do Brasil."
     },
     {
+      "id": "chute-animais-e-natureza-465",
       "difficulty": "easy",
       "text": "Quantos meses dura a primavera?",
       "answer": 3,
@@ -3260,6 +3725,7 @@
       "fact": "No Brasil ela vai de setembro a dezembro."
     },
     {
+      "id": "chute-animais-e-natureza-466",
       "difficulty": "easy",
       "text": "Quantos minutos dura um banho de sol recomendado para tomar vitamina D, em média?",
       "answer": 15,
@@ -3267,6 +3733,7 @@
       "fact": "A pele produz vitamina D com a luz do sol."
     },
     {
+      "id": "chute-animais-e-natureza-467",
       "difficulty": "easy",
       "text": "Quantos dedos tem a pata de uma galinha?",
       "answer": 4,
@@ -3274,6 +3741,7 @@
       "fact": "Três apontam para frente e um para trás."
     },
     {
+      "id": "chute-animais-e-natureza-468",
       "difficulty": "easy",
       "text": "Quantos anos vive um porquinho-da-índia, em média?",
       "answer": 6,
@@ -3281,6 +3749,7 @@
       "fact": "Ele não é da Índia, e sim da América do Sul."
     },
     {
+      "id": "chute-animais-e-natureza-469",
       "difficulty": "easy",
       "text": "Quantas patas tem uma lagartixa?",
       "answer": 4,
@@ -3288,6 +3757,7 @@
       "fact": "Se perder o rabo, ela consegue fazer crescer outro."
     },
     {
+      "id": "chute-animais-e-natureza-470",
       "difficulty": "easy",
       "text": "Quantos centímetros tem uma barata comum, aproximadamente?",
       "answer": 4,
@@ -3295,6 +3765,7 @@
       "fact": "A barata existe há mais de 300 milhões de anos."
     },
     {
+      "id": "chute-animais-e-natureza-471",
       "difficulty": "easy",
       "text": "Quantos quilos pesa um pinguim-de-magalhães, que aparece no litoral do Sul?",
       "answer": 4,
@@ -3302,6 +3773,7 @@
       "fact": "Ele chega ao Brasil no inverno, levado pelas correntes frias."
     },
     {
+      "id": "chute-animais-e-natureza-472",
       "difficulty": "easy",
       "text": "Quantas horas por dia uma vaca passa comendo, aproximadamente?",
       "answer": 8,

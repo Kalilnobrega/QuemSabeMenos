@@ -2,6 +2,7 @@
   "theme": "História",
   "questions": [
     {
+      "id": "chute-historia-1",
       "difficulty": "easy",
       "text": "Em que ano começou a Primeira Guerra Mundial?",
       "answer": 1914,
@@ -9,6 +10,7 @@
       "fact": "O estopim foi o assassinato do arquiduque Francisco Ferdinando, em Sarajevo."
     },
     {
+      "id": "chute-historia-2",
       "difficulty": "easy",
       "text": "Em que ano terminou a Segunda Guerra Mundial?",
       "answer": 1945,
@@ -16,6 +18,7 @@
       "fact": "A guerra acabou na Europa em maio e no Pacífico em setembro."
     },
     {
+      "id": "chute-historia-3",
       "difficulty": "easy",
       "text": "Em que ano caiu o Muro de Berlim?",
       "answer": 1989,
@@ -23,6 +26,7 @@
       "fact": "O muro caiu em 9 de novembro, depois de 28 anos dividindo a cidade."
     },
     {
+      "id": "chute-historia-4",
       "difficulty": "easy",
       "text": "Em que ano começou a Revolução Francesa?",
       "answer": 1789,
@@ -30,6 +34,7 @@
       "fact": "A Queda da Bastilha, em 14 de julho, virou a data nacional da França."
     },
     {
+      "id": "chute-historia-5",
       "difficulty": "easy",
       "text": "Em que ano Colombo chegou à América?",
       "answer": 1492,
@@ -37,6 +42,7 @@
       "fact": "Ele desembarcou numa ilha das Bahamas achando que tinha chegado às Índias."
     },
     {
+      "id": "chute-historia-6",
       "difficulty": "hard",
       "text": "Em que ano caiu Constantinopla?",
       "answer": 1453,
@@ -44,6 +50,7 @@
       "fact": "A conquista pelos otomanos marca, para muitos historiadores, o fim da Idade Média."
     },
     {
+      "id": "chute-historia-7",
       "difficulty": "easy",
       "text": "Em que ano os Estados Unidos declararam a independência?",
       "answer": 1776,
@@ -51,6 +58,7 @@
       "fact": "A declaração foi aprovada em 4 de julho, em Filadélfia."
     },
     {
+      "id": "chute-historia-8",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo Júlio César foi assassinado?",
       "answer": 44,
@@ -59,6 +67,7 @@
       "fact": "Foi nos Idos de Março, 15 de março, no Senado de Roma."
     },
     {
+      "id": "chute-historia-9",
       "difficulty": "hard",
       "text": "Quantos anos durou a Guerra dos Cem Anos?",
       "answer": 116,
@@ -66,6 +75,7 @@
       "fact": "Ela foi de 1337 a 1453, com longas tréguas no meio."
     },
     {
+      "id": "chute-historia-10",
       "difficulty": "easy",
       "text": "Em que ano o Titanic afundou?",
       "answer": 1912,
@@ -73,6 +83,7 @@
       "fact": "Ele bateu num iceberg na viagem inaugural, de Southampton a Nova York."
     },
     {
+      "id": "chute-historia-11",
       "difficulty": "hard",
       "text": "Quantas pessoas estavam a bordo do Titanic?",
       "answer": 2224,
@@ -80,6 +91,7 @@
       "fact": "Mais de 1.500 morreram; faltavam botes salva-vidas para todos."
     },
     {
+      "id": "chute-historia-12",
       "difficulty": "medium",
       "text": "Em que ano caiu o Império Romano do Ocidente?",
       "answer": 476,
@@ -87,6 +99,7 @@
       "fact": "O último imperador, Rômulo Augusto, foi deposto por Odoacro."
     },
     {
+      "id": "chute-historia-13",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a Revolução Russa?",
       "answer": 1917,
@@ -94,6 +107,7 @@
       "fact": "Os bolcheviques, liderados por Lenin, tomaram o poder em outubro."
     },
     {
+      "id": "chute-historia-14",
       "difficulty": "medium",
       "text": "Em que ano aconteceu o ataque a Pearl Harbor?",
       "answer": 1941,
@@ -101,6 +115,7 @@
       "fact": "O ataque japonês levou os Estados Unidos a entrar na Segunda Guerra."
     },
     {
+      "id": "chute-historia-15",
       "difficulty": "medium",
       "text": "Quantos anos Nelson Mandela passou preso?",
       "answer": 27,
@@ -108,6 +123,7 @@
       "fact": "Ele saiu em 1990 e foi eleito presidente da África do Sul em 1994."
     },
     {
+      "id": "chute-historia-16",
       "difficulty": "medium",
       "text": "Em que ano Gandhi foi assassinado?",
       "answer": 1948,
@@ -115,6 +131,7 @@
       "fact": "Foi poucos meses depois da independência da Índia."
     },
     {
+      "id": "chute-historia-17",
       "difficulty": "easy",
       "text": "Em que ano a União Soviética deixou de existir?",
       "answer": 1991,
@@ -122,6 +139,7 @@
       "fact": "Ela se dividiu em 15 países independentes."
     },
     {
+      "id": "chute-historia-18",
       "difficulty": "medium",
       "text": "Em que ano Napoleão foi derrotado em Waterloo?",
       "answer": 1815,
@@ -129,6 +147,7 @@
       "fact": "Depois da derrota, ele foi exilado na ilha de Santa Helena, onde morreu."
     },
     {
+      "id": "chute-historia-19",
       "difficulty": "medium",
       "text": "Em que ano Martin Luther King fez o discurso 'Eu tenho um sonho'?",
       "answer": 1963,
@@ -136,6 +155,7 @@
       "fact": "O discurso foi em Washington, para mais de 250 mil pessoas."
     },
     {
+      "id": "chute-historia-20",
       "difficulty": "easy",
       "text": "Quantos anos durou o reinado de Elizabeth II?",
       "answer": 70,
@@ -143,6 +163,7 @@
       "fact": "Ela reinou de 1952 a 2022, o reinado mais longo da história britânica."
     },
     {
+      "id": "chute-historia-21",
       "difficulty": "hard",
       "text": "Em que ano antes de Cristo a Grande Pirâmide de Gizé ficou pronta?",
       "answer": 2560,
@@ -151,6 +172,7 @@
       "fact": "Ela foi a construção mais alta feita pelo homem por quase 4 mil anos."
     },
     {
+      "id": "chute-historia-22",
       "difficulty": "hard",
       "text": "Em que ano Lutero publicou as 95 teses?",
       "answer": 1517,
@@ -158,6 +180,7 @@
       "fact": "O protesto contra a venda de indulgências deu início à Reforma Protestante."
     },
     {
+      "id": "chute-historia-23",
       "difficulty": "hard",
       "text": "Em que ano foi assinada a Magna Carta, na Inglaterra?",
       "answer": 1215,
@@ -165,6 +188,7 @@
       "fact": "Ela limitou o poder do rei João Sem-Terra e inspirou constituições modernas."
     },
     {
+      "id": "chute-historia-24",
       "difficulty": "medium",
       "text": "Em que ano aconteceu o acidente nuclear de Chernobyl?",
       "answer": 1986,
@@ -172,6 +196,7 @@
       "fact": "A cidade vizinha, Pripyat, foi evacuada e está abandonada até hoje."
     },
     {
+      "id": "chute-historia-25",
       "difficulty": "hard",
       "text": "Em que ano a Revolução Cubana chegou ao poder?",
       "answer": 1959,
@@ -179,6 +204,7 @@
       "fact": "Fidel Castro entrou em Havana em janeiro de 1959."
     },
     {
+      "id": "chute-historia-26",
       "difficulty": "medium",
       "text": "Quantos anos durou a Guerra do Vietnã?",
       "answer": 20,
@@ -186,6 +212,7 @@
       "fact": "Ela foi de 1955 a 1975, com a queda de Saigon."
     },
     {
+      "id": "chute-historia-27",
       "difficulty": "hard",
       "text": "Em que ano antes de Cristo Cleópatra morreu?",
       "answer": 30,
@@ -194,6 +221,7 @@
       "fact": "Com a morte dela, o Egito virou uma província romana."
     },
     {
+      "id": "chute-historia-28",
       "difficulty": "hard",
       "text": "Em que ano a Peste Negra chegou à Europa?",
       "answer": 1347,
@@ -201,6 +229,7 @@
       "fact": "A epidemia matou entre um terço e metade da população europeia."
     },
     {
+      "id": "chute-historia-29",
       "difficulty": "hard",
       "text": "Em que ano o Muro de Berlim foi construído?",
       "answer": 1961,
@@ -208,6 +237,7 @@
       "fact": "A Alemanha Oriental ergueu o muro da noite para o dia, em 13 de agosto."
     },
     {
+      "id": "chute-historia-30",
       "difficulty": "medium",
       "text": "Em que ano Nelson Mandela foi eleito presidente da África do Sul?",
       "answer": 1994,
@@ -215,6 +245,7 @@
       "fact": "Foi a primeira eleição em que toda a população negra pôde votar."
     },
     {
+      "id": "chute-historia-31",
       "difficulty": "easy",
       "text": "Em que ano a Segunda Guerra começou?",
       "answer": 1939,
@@ -222,6 +253,7 @@
       "fact": "A invasão da Polônia foi em 1º de setembro."
     },
     {
+      "id": "chute-historia-32",
       "difficulty": "easy",
       "text": "Em que ano a Primeira Guerra terminou?",
       "answer": 1918,
@@ -229,6 +261,7 @@
       "fact": "O armistício foi assinado no mês de novembro."
     },
     {
+      "id": "chute-historia-33",
       "difficulty": "easy",
       "text": "Em que ano foi o Dia D?",
       "answer": 1944,
@@ -236,6 +269,7 @@
       "fact": "Foi em junho, na Normandia."
     },
     {
+      "id": "chute-historia-34",
       "difficulty": "easy",
       "text": "Em que ano foram lançadas as bombas de Hiroshima e Nagasaki?",
       "answer": 1945,
@@ -243,6 +277,7 @@
       "fact": "Elas foram lançadas em agosto."
     },
     {
+      "id": "chute-historia-35",
       "difficulty": "easy",
       "text": "Em que ano John Kennedy foi assassinado?",
       "answer": 1963,
@@ -250,6 +285,7 @@
       "fact": "Ele foi morto em Dallas, em novembro."
     },
     {
+      "id": "chute-historia-36",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a queda das Torres Gêmeas?",
       "answer": 2001,
@@ -257,6 +293,7 @@
       "fact": "Foi no dia 11 de setembro."
     },
     {
+      "id": "chute-historia-37",
       "difficulty": "medium",
       "text": "Em que ano começou a Revolução Industrial, aproximadamente?",
       "answer": 1760,
@@ -264,6 +301,7 @@
       "fact": "Ela começou na Inglaterra."
     },
     {
+      "id": "chute-historia-38",
       "difficulty": "easy",
       "text": "Em que ano foi a Independência do Brasil?",
       "answer": 1822,
@@ -271,6 +309,7 @@
       "fact": "Foi às margens do Ipiranga."
     },
     {
+      "id": "chute-historia-39",
       "difficulty": "easy",
       "text": "Em que ano foi a Proclamação da República no Brasil?",
       "answer": 1889,
@@ -278,6 +317,7 @@
       "fact": "Ela foi proclamada por Deodoro da Fonseca."
     },
     {
+      "id": "chute-historia-40",
       "difficulty": "easy",
       "text": "Em que ano foi abolida a escravidão no Brasil?",
       "answer": 1888,
@@ -285,6 +325,7 @@
       "fact": "A Lei Áurea foi assinada em 13 de maio."
     },
     {
+      "id": "chute-historia-41",
       "difficulty": "easy",
       "text": "Em que ano começou o Golpe Militar no Brasil?",
       "answer": 1964,
@@ -292,6 +333,7 @@
       "fact": "João Goulart foi deposto."
     },
     {
+      "id": "chute-historia-42",
       "difficulty": "easy",
       "text": "Em que ano acabou a ditadura militar no Brasil?",
       "answer": 1985,
@@ -299,6 +341,7 @@
       "fact": "José Sarney assumiu a presidência."
     },
     {
+      "id": "chute-historia-43",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a chegada da família real ao Brasil?",
       "answer": 1808,
@@ -306,6 +349,7 @@
       "fact": "Ela fugia das tropas de Napoleão."
     },
     {
+      "id": "chute-historia-44",
       "difficulty": "easy",
       "text": "Em que ano foi fundada Brasília?",
       "answer": 1960,
@@ -313,6 +357,7 @@
       "fact": "Foi construída no governo de JK."
     },
     {
+      "id": "chute-historia-45",
       "difficulty": "easy",
       "text": "Em que ano Getúlio Vargas se matou?",
       "answer": 1954,
@@ -320,6 +365,7 @@
       "fact": "Ele estava no Palácio do Catete."
     },
     {
+      "id": "chute-historia-46",
       "difficulty": "easy",
       "text": "Em que ano Tancredo Neves morreu?",
       "answer": 1985,
@@ -327,6 +373,7 @@
       "fact": "Ele não chegou a tomar posse."
     },
     {
+      "id": "chute-historia-47",
       "difficulty": "easy",
       "text": "Em que ano Fernando Collor renunciou?",
       "answer": 1992,
@@ -334,6 +381,7 @@
       "fact": "Foi durante o processo de impeachment."
     },
     {
+      "id": "chute-historia-48",
       "difficulty": "easy",
       "text": "Em que ano Dilma Rousseff sofreu impeachment?",
       "answer": 2016,
@@ -341,6 +389,7 @@
       "fact": "Michel Temer assumiu em seguida."
     },
     {
+      "id": "chute-historia-49",
       "difficulty": "easy",
       "text": "Em que ano Lula foi eleito presidente pela primeira vez?",
       "answer": 2002,
@@ -348,6 +397,7 @@
       "fact": "Foi na quarta tentativa."
     },
     {
+      "id": "chute-historia-50",
       "difficulty": "medium",
       "text": "Em que ano a Inconfidência Mineira foi descoberta?",
       "answer": 1789,
@@ -355,6 +405,7 @@
       "fact": "Tiradentes foi enforcado três anos depois."
     },
     {
+      "id": "chute-historia-51",
       "difficulty": "medium",
       "text": "Em que ano Tiradentes foi enforcado?",
       "answer": 1792,
@@ -362,6 +413,7 @@
       "fact": "Ele é o único condenado à morte do grupo."
     },
     {
+      "id": "chute-historia-52",
       "difficulty": "medium",
       "text": "Em que ano a Revolução Farroupilha começou?",
       "answer": 1835,
@@ -369,6 +421,7 @@
       "fact": "Ela durou dez anos."
     },
     {
+      "id": "chute-historia-53",
       "difficulty": "medium",
       "text": "Em que ano começou a Guerra do Paraguai?",
       "answer": 1864,
@@ -376,6 +429,7 @@
       "fact": "Ela durou até 1870."
     },
     {
+      "id": "chute-historia-54",
       "difficulty": "medium",
       "text": "Em que ano terminou a Guerra de Canudos?",
       "answer": 1897,
@@ -383,6 +437,7 @@
       "fact": "O arraial foi totalmente arrasado."
     },
     {
+      "id": "chute-historia-55",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Revolta da Vacina?",
       "answer": 1904,
@@ -390,6 +445,7 @@
       "fact": "Ela aconteceu no Rio de Janeiro."
     },
     {
+      "id": "chute-historia-56",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Revolta da Chibata?",
       "answer": 1910,
@@ -397,6 +453,7 @@
       "fact": "Foi liderada por João Cândido."
     },
     {
+      "id": "chute-historia-57",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a Semana de Arte Moderna?",
       "answer": 1922,
@@ -404,6 +461,7 @@
       "fact": "Ela foi em São Paulo, no Theatro Municipal."
     },
     {
+      "id": "chute-historia-58",
       "difficulty": "medium",
       "text": "Em que ano começou o Estado Novo de Getúlio Vargas?",
       "answer": 1937,
@@ -411,6 +469,7 @@
       "fact": "Ele durou até 1945."
     },
     {
+      "id": "chute-historia-59",
       "difficulty": "medium",
       "text": "Em que ano o Brasil entrou na Segunda Guerra?",
       "answer": 1942,
@@ -418,6 +477,7 @@
       "fact": "Os navios brasileiros foram atacados por submarinos."
     },
     {
+      "id": "chute-historia-60",
       "difficulty": "medium",
       "text": "Em que ano foi decretado o AI-5?",
       "answer": 1968,
@@ -425,6 +485,7 @@
       "fact": "Foi durante o governo Costa e Silva."
     },
     {
+      "id": "chute-historia-61",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a campanha das Diretas Já?",
       "answer": 1984,
@@ -432,6 +493,7 @@
       "fact": "Milhões foram às ruas."
     },
     {
+      "id": "chute-historia-62",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Plano Real?",
       "answer": 1994,
@@ -439,6 +501,7 @@
       "fact": "Foi durante o governo de Itamar Franco."
     },
     {
+      "id": "chute-historia-63",
       "difficulty": "hard",
       "text": "Em que ano Maomé saiu de Meca, dando início ao calendário islâmico?",
       "answer": 622,
@@ -446,6 +509,7 @@
       "fact": "Esse episódio é chamado de Hégira."
     },
     {
+      "id": "chute-historia-64",
       "difficulty": "hard",
       "text": "Em que ano foi coroado Carlos Magno?",
       "answer": 800,
@@ -453,6 +517,7 @@
       "fact": "Foi no dia de Natal, em Roma."
     },
     {
+      "id": "chute-historia-65",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Hastings?",
       "answer": 1066,
@@ -460,6 +525,7 @@
       "fact": "Guilherme, o Conquistador, venceu."
     },
     {
+      "id": "chute-historia-66",
       "difficulty": "easy",
       "text": "Em que ano Colombo fez a sua primeira viagem?",
       "answer": 1492,
@@ -467,6 +533,7 @@
       "fact": "Ele chegou às Bahamas em outubro."
     },
     {
+      "id": "chute-historia-67",
       "difficulty": "hard",
       "text": "Em que ano Martinho Lutero morreu?",
       "answer": 1546,
@@ -474,6 +541,7 @@
       "fact": "Ele morreu na mesma cidade em que nasceu."
     },
     {
+      "id": "chute-historia-68",
       "difficulty": "medium",
       "text": "Em que ano Shakespeare morreu?",
       "answer": 1616,
@@ -481,6 +549,7 @@
       "fact": "Miguel de Cervantes morreu no mesmo ano."
     },
     {
+      "id": "chute-historia-69",
       "difficulty": "medium",
       "text": "Em que ano a peregrinação do Mayflower chegou à América?",
       "answer": 1620,
@@ -488,6 +557,7 @@
       "fact": "O navio levava cerca de 100 pessoas."
     },
     {
+      "id": "chute-historia-70",
       "difficulty": "medium",
       "text": "Em que ano foi o Grande Incêndio de Londres?",
       "answer": 1666,
@@ -495,6 +565,7 @@
       "fact": "A cidade foi reconstruída com tijolos."
     },
     {
+      "id": "chute-historia-71",
       "difficulty": "hard",
       "text": "Em que ano a Revolução Gloriosa aconteceu na Inglaterra?",
       "answer": 1688,
@@ -502,6 +573,7 @@
       "fact": "Guilherme de Orange assumiu o trono."
     },
     {
+      "id": "chute-historia-72",
       "difficulty": "easy",
       "text": "Em que ano foi assinada a Declaração de Independência dos EUA?",
       "answer": 1776,
@@ -509,6 +581,7 @@
       "fact": "Thomas Jefferson foi o principal autor."
     },
     {
+      "id": "chute-historia-73",
       "difficulty": "easy",
       "text": "Em que ano foi a Queda da Bastilha?",
       "answer": 1789,
@@ -516,6 +589,7 @@
       "fact": "É a festa nacional da França."
     },
     {
+      "id": "chute-historia-74",
       "difficulty": "medium",
       "text": "Em que ano Napoleão foi coroado imperador?",
       "answer": 1804,
@@ -523,6 +597,7 @@
       "fact": "Ele colocou a coroa na própria cabeça."
     },
     {
+      "id": "chute-historia-75",
       "difficulty": "medium",
       "text": "Em que ano Napoleão invadiu a Rússia?",
       "answer": 1812,
@@ -530,6 +605,7 @@
       "fact": "O inverno destruiu seu exército."
     },
     {
+      "id": "chute-historia-76",
       "difficulty": "medium",
       "text": "Em que ano Napoleão morreu?",
       "answer": 1821,
@@ -537,6 +613,7 @@
       "fact": "Ele morreu em Santa Helena."
     },
     {
+      "id": "chute-historia-77",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Guerra Civil Americana, no início?",
       "answer": 1861,
@@ -544,6 +621,7 @@
       "fact": "Ela durou até 1865."
     },
     {
+      "id": "chute-historia-78",
       "difficulty": "medium",
       "text": "Em que ano Abraham Lincoln foi assassinado?",
       "answer": 1865,
@@ -551,6 +629,7 @@
       "fact": "Foi em um teatro de Washington."
     },
     {
+      "id": "chute-historia-79",
       "difficulty": "medium",
       "text": "Em que ano Karl Marx publicou o Manifesto Comunista?",
       "answer": 1848,
@@ -558,6 +637,7 @@
       "fact": "O ano ficou conhecido como a \"Primavera dos Povos\"."
     },
     {
+      "id": "chute-historia-80",
       "difficulty": "medium",
       "text": "Em que ano foi a Unificação da Alemanha?",
       "answer": 1871,
@@ -565,6 +645,7 @@
       "fact": "Bismarck comandou o processo."
     },
     {
+      "id": "chute-historia-81",
       "difficulty": "medium",
       "text": "Em que ano Elizabeth II foi coroada?",
       "answer": 1953,
@@ -572,6 +653,7 @@
       "fact": "Foi a primeira coroação transmitida pela TV."
     },
     {
+      "id": "chute-historia-82",
       "difficulty": "easy",
       "text": "Em que ano Elizabeth II morreu?",
       "answer": 2022,
@@ -579,6 +661,7 @@
       "fact": "Ela reinou por 70 anos."
     },
     {
+      "id": "chute-historia-83",
       "difficulty": "medium",
       "text": "Em que ano Martin Luther King foi assassinado?",
       "answer": 1968,
@@ -586,6 +669,7 @@
       "fact": "Foi em Memphis, nos EUA."
     },
     {
+      "id": "chute-historia-84",
       "difficulty": "easy",
       "text": "Em que ano Fidel Castro morreu?",
       "answer": 2016,
@@ -593,6 +677,7 @@
       "fact": "Ele tinha 90 anos."
     },
     {
+      "id": "chute-historia-85",
       "difficulty": "easy",
       "text": "Em que ano Nelson Mandela morreu?",
       "answer": 2013,
@@ -600,6 +685,7 @@
       "fact": "Ele tinha 95 anos."
     },
     {
+      "id": "chute-historia-86",
       "difficulty": "easy",
       "text": "Em que ano a Guerra Fria acabou, com o fim da URSS?",
       "answer": 1991,
@@ -607,6 +693,7 @@
       "fact": "Gorbachev renunciou no Natal."
     },
     {
+      "id": "chute-historia-87",
       "difficulty": "medium",
       "text": "Em que ano Che Guevara morreu?",
       "answer": 1967,
@@ -614,6 +701,7 @@
       "fact": "Ele foi executado na Bolívia."
     },
     {
+      "id": "chute-historia-88",
       "difficulty": "medium",
       "text": "Em que ano Adolf Hitler chegou ao poder na Alemanha?",
       "answer": 1933,
@@ -621,6 +709,7 @@
       "fact": "Ele foi nomeado chanceler em janeiro."
     },
     {
+      "id": "chute-historia-89",
       "difficulty": "easy",
       "text": "Em que ano Hitler morreu?",
       "answer": 1945,
@@ -628,6 +717,7 @@
       "fact": "Ele se matou em um bunker em Berlim."
     },
     {
+      "id": "chute-historia-90",
       "difficulty": "medium",
       "text": "Em que ano Stalin morreu?",
       "answer": 1953,
@@ -635,6 +725,7 @@
       "fact": "Ele governou a União Soviética por quase 30 anos."
     },
     {
+      "id": "chute-historia-91",
       "difficulty": "medium",
       "text": "Em que ano Mao Tsé-Tung morreu?",
       "answer": 1976,
@@ -642,6 +733,7 @@
       "fact": "Deng Xiaoping assumiu depois."
     },
     {
+      "id": "chute-historia-92",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a invasão do Iraque pelos EUA?",
       "answer": 2003,
@@ -649,6 +741,7 @@
       "fact": "Saddam Hussein foi capturado em dezembro."
     },
     {
+      "id": "chute-historia-93",
       "difficulty": "easy",
       "text": "Em que ano a Rússia invadiu a Ucrânia em larga escala?",
       "answer": 2022,
@@ -656,6 +749,7 @@
       "fact": "A guerra começou em fevereiro."
     },
     {
+      "id": "chute-historia-94",
       "difficulty": "easy",
       "text": "Quantos anos durou a Segunda Guerra Mundial?",
       "answer": 6,
@@ -663,6 +757,7 @@
       "fact": "Ela foi de 1939 a 1945."
     },
     {
+      "id": "chute-historia-95",
       "difficulty": "easy",
       "text": "Quantos anos durou a Primeira Guerra Mundial?",
       "answer": 4,
@@ -670,6 +765,7 @@
       "fact": "Ela foi de 1914 a 1918."
     },
     {
+      "id": "chute-historia-96",
       "difficulty": "medium",
       "text": "Quantos anos durou o Estado Novo?",
       "answer": 8,
@@ -677,6 +773,7 @@
       "fact": "Ele durou de 1937 a 1945."
     },
     {
+      "id": "chute-historia-97",
       "difficulty": "medium",
       "text": "Quantos anos durou a Guerra do Paraguai?",
       "answer": 6,
@@ -684,6 +781,7 @@
       "fact": "Foi a maior guerra da América do Sul."
     },
     {
+      "id": "chute-historia-98",
       "difficulty": "medium",
       "text": "Quantos anos durou a Revolução Farroupilha?",
       "answer": 10,
@@ -691,6 +789,7 @@
       "fact": "Foi a mais longa revolta do Brasil."
     },
     {
+      "id": "chute-historia-99",
       "difficulty": "easy",
       "text": "Quantos anos durou a ditadura militar brasileira?",
       "answer": 21,
@@ -698,6 +797,7 @@
       "fact": "Ela foi de 1964 a 1985."
     },
     {
+      "id": "chute-historia-100",
       "difficulty": "medium",
       "text": "Quantos anos durou a Guerra Fria, aproximadamente?",
       "answer": 44,
@@ -705,6 +805,7 @@
       "fact": "Ela foi de 1947 a 1991."
     },
     {
+      "id": "chute-historia-101",
       "difficulty": "hard",
       "text": "Quantos anos Dom Pedro II reinou, depois da maioridade?",
       "answer": 49,
@@ -712,6 +813,7 @@
       "fact": "Foi um dos reinados mais longos da história do Brasil."
     },
     {
+      "id": "chute-historia-102",
       "difficulty": "medium",
       "text": "Quantos anos a escravidão durou no Brasil, aproximadamente?",
       "answer": 350,
@@ -719,6 +821,7 @@
       "fact": "O país foi o último a aboli-la nas Américas."
     },
     {
+      "id": "chute-historia-103",
       "difficulty": "hard",
       "text": "Quantos anos durou o Império Romano do Ocidente?",
       "answer": 500,
@@ -726,6 +829,7 @@
       "fact": "Ele durou de 27 a.C. a 476 d.C."
     },
     {
+      "id": "chute-historia-104",
       "difficulty": "medium",
       "text": "Quantos anos durou a Guerra do Vietnã, aproximadamente, para os EUA?",
       "answer": 20,
@@ -733,6 +837,7 @@
       "fact": "Ela terminou em 1975."
     },
     {
+      "id": "chute-historia-105",
       "difficulty": "medium",
       "text": "Quantos anos durou a Idade Média, aproximadamente?",
       "answer": 1000,
@@ -740,6 +845,7 @@
       "fact": "Do século V ao XV."
     },
     {
+      "id": "chute-historia-106",
       "difficulty": "medium",
       "text": "Quantos anos Hitler ficou no poder?",
       "answer": 12,
@@ -747,6 +853,7 @@
       "fact": "Ele chegou ao poder em 1933."
     },
     {
+      "id": "chute-historia-107",
       "difficulty": "medium",
       "text": "Quantos presidentes o Brasil teve durante a ditadura militar?",
       "answer": 5,
@@ -754,6 +861,7 @@
       "fact": "Todos eram generais."
     },
     {
+      "id": "chute-historia-108",
       "difficulty": "easy",
       "text": "Quantos imperadores teve o Brasil?",
       "answer": 2,
@@ -761,6 +869,7 @@
       "fact": "Foram Dom Pedro I e Dom Pedro II."
     },
     {
+      "id": "chute-historia-109",
       "difficulty": "medium",
       "text": "Quantas Constituições o Brasil já teve?",
       "answer": 7,
@@ -768,6 +877,7 @@
       "fact": "A atual é de 1988."
     },
     {
+      "id": "chute-historia-110",
       "difficulty": "easy",
       "text": "Quantas vidas foram perdidas no Holocausto, em milhões, de judeus?",
       "answer": 6,
@@ -775,6 +885,7 @@
       "fact": "Foi o maior genocídio do século XX."
     },
     {
+      "id": "chute-historia-111",
       "difficulty": "easy",
       "text": "Quantos dias durou a Guerra dos Seis Dias?",
       "answer": 6,
@@ -782,6 +893,7 @@
       "fact": "Ela aconteceu em junho de 1967."
     },
     {
+      "id": "chute-historia-112",
       "difficulty": "easy",
       "text": "Quantas teses Lutero publicou?",
       "answer": 95,
@@ -789,6 +901,7 @@
       "fact": "Ele as teria pregado na porta da igreja de Wittenberg."
     },
     {
+      "id": "chute-historia-113",
       "difficulty": "medium",
       "text": "Quantos navios tinha a frota de Cabral?",
       "answer": 13,
@@ -796,6 +909,7 @@
       "fact": "Ele veio com cerca de 1.200 homens."
     },
     {
+      "id": "chute-historia-114",
       "difficulty": "easy",
       "text": "Quantas esposas Henrique VIII teve?",
       "answer": 6,
@@ -803,6 +917,7 @@
       "fact": "Duas delas foram decapitadas."
     },
     {
+      "id": "chute-historia-115",
       "difficulty": "easy",
       "text": "Quantos soldados espartanos Leônidas levou às Termópilas?",
       "answer": 300,
@@ -810,6 +925,7 @@
       "fact": "Havia também outros milhares de gregos."
     },
     {
+      "id": "chute-historia-116",
       "difficulty": "medium",
       "text": "Quantos anos tinha Joana d'Arc quando foi queimada?",
       "answer": 19,
@@ -817,6 +933,7 @@
       "fact": "Ela foi canonizada em 1920."
     },
     {
+      "id": "chute-historia-117",
       "difficulty": "medium",
       "text": "Quantos anos tinha Alexandre, o Grande, quando morreu?",
       "answer": 32,
@@ -824,6 +941,7 @@
       "fact": "Ele tinha conquistado um enorme império."
     },
     {
+      "id": "chute-historia-118",
       "difficulty": "medium",
       "text": "Quantos anos tinha Anne Frank quando morreu?",
       "answer": 15,
@@ -831,6 +949,7 @@
       "fact": "Ela morreu no campo de Bergen-Belsen."
     },
     {
+      "id": "chute-historia-119",
       "difficulty": "medium",
       "text": "Quantos anos tinha Tutancâmon quando morreu?",
       "answer": 19,
@@ -838,6 +957,7 @@
       "fact": "Seu túmulo foi descoberto em 1922."
     },
     {
+      "id": "chute-historia-120",
       "difficulty": "medium",
       "text": "Quantos anos tinha Dom Pedro I quando proclamou a Independência?",
       "answer": 23,
@@ -845,6 +965,7 @@
       "fact": "Ele morreu aos 35, em Portugal."
     },
     {
+      "id": "chute-historia-121",
       "difficulty": "medium",
       "text": "Quantos anos tinha Dom Pedro II quando assumiu o trono?",
       "answer": 14,
@@ -852,6 +973,7 @@
       "fact": "O golpe da maioridade antecipou a posse."
     },
     {
+      "id": "chute-historia-122",
       "difficulty": "hard",
       "text": "Quantos anos tinha Luís XIV quando virou rei?",
       "answer": 4,
@@ -859,6 +981,7 @@
       "fact": "Sua mãe foi regente por um longo tempo."
     },
     {
+      "id": "chute-historia-123",
       "difficulty": "medium",
       "text": "Quantos anos tinha Elizabeth II ao assumir o trono?",
       "answer": 25,
@@ -866,6 +989,7 @@
       "fact": "Ela estava no Quênia quando soube da morte do pai."
     },
     {
+      "id": "chute-historia-124",
       "difficulty": "medium",
       "text": "Quantos presidentes os EUA tiveram até Joe Biden?",
       "answer": 46,
@@ -873,6 +997,7 @@
       "fact": "Grover Cleveland é contado duas vezes."
     },
     {
+      "id": "chute-historia-125",
       "difficulty": "medium",
       "text": "Em que ano Getúlio Vargas criou a CLT?",
       "answer": 1943,
@@ -880,6 +1005,7 @@
       "fact": "Ela foi assinada em 1º de maio."
     },
     {
+      "id": "chute-historia-126",
       "difficulty": "medium",
       "text": "Em que ano Juscelino Kubitschek assumiu a presidência?",
       "answer": 1956,
@@ -887,6 +1013,7 @@
       "fact": "Ele prometeu \"50 anos em 5\"."
     },
     {
+      "id": "chute-historia-127",
       "difficulty": "medium",
       "text": "Em que ano foi criado o voto feminino no Brasil?",
       "answer": 1932,
@@ -894,6 +1021,7 @@
       "fact": "Mas as mulheres só puderam votar para presidente em 1945."
     },
     {
+      "id": "chute-historia-128",
       "difficulty": "medium",
       "text": "Em que ano o Titanic foi encontrado no fundo do mar?",
       "answer": 1985,
@@ -901,6 +1029,7 @@
       "fact": "Robert Ballard liderou a expedição."
     },
     {
+      "id": "chute-historia-129",
       "difficulty": "easy",
       "text": "Em que ano foi o ataque ao Capitólio americano?",
       "answer": 2021,
@@ -908,6 +1037,7 @@
       "fact": "Apoiadores de Trump invadiram o Congresso em janeiro."
     },
     {
+      "id": "chute-historia-130",
       "difficulty": "medium",
       "text": "Em que ano a Coreia foi dividida no paralelo 38?",
       "answer": 1945,
@@ -915,6 +1045,7 @@
       "fact": "A guerra entre o Norte e o Sul ocorreu depois."
     },
     {
+      "id": "chute-historia-131",
       "difficulty": "medium",
       "text": "Em que ano a Índia se tornou independente?",
       "answer": 1947,
@@ -922,6 +1053,7 @@
       "fact": "Gandhi foi morto no ano seguinte."
     },
     {
+      "id": "chute-historia-132",
       "difficulty": "medium",
       "text": "Em que ano a China virou comunista?",
       "answer": 1949,
@@ -929,6 +1061,7 @@
       "fact": "Mao proclamou a nova república em Pequim."
     },
     {
+      "id": "chute-historia-133",
       "difficulty": "medium",
       "text": "Em que ano começou a Guerra da Coreia?",
       "answer": 1950,
@@ -936,6 +1069,7 @@
       "fact": "Ela acabou em 1953 com um armistício."
     },
     {
+      "id": "chute-historia-134",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Crise dos Mísseis?",
       "answer": 1962,
@@ -943,6 +1077,7 @@
       "fact": "Foi em outubro, entre EUA e URSS."
     },
     {
+      "id": "chute-historia-135",
       "difficulty": "medium",
       "text": "Em que ano a Guerra do Vietnã terminou?",
       "answer": 1975,
@@ -950,6 +1085,7 @@
       "fact": "Saigon caiu em abril."
     },
     {
+      "id": "chute-historia-136",
       "difficulty": "medium",
       "text": "Em que ano a Revolução dos Cravos aconteceu em Portugal?",
       "answer": 1974,
@@ -957,6 +1093,7 @@
       "fact": "Ela acabou com o regime salazarista."
     },
     {
+      "id": "chute-historia-137",
       "difficulty": "medium",
       "text": "Em que ano Francisco Franco morreu?",
       "answer": 1975,
@@ -964,6 +1101,7 @@
       "fact": "A Espanha voltou a ser uma monarquia."
     },
     {
+      "id": "chute-historia-138",
       "difficulty": "medium",
       "text": "Em que ano foi a Revolução Iraniana?",
       "answer": 1979,
@@ -971,6 +1109,7 @@
       "fact": "O aiatolá Khomeini assumiu o poder."
     },
     {
+      "id": "chute-historia-139",
       "difficulty": "easy",
       "text": "Em que ano foi a Primavera Árabe, no início?",
       "answer": 2010,
@@ -978,6 +1117,7 @@
       "fact": "Tudo começou com um vendedor na Tunísia."
     },
     {
+      "id": "chute-historia-140",
       "difficulty": "easy",
       "text": "Em que ano o Brexit foi aprovado no plebiscito?",
       "answer": 2016,
@@ -985,6 +1125,7 @@
       "fact": "A saída só aconteceu em 2020."
     },
     {
+      "id": "chute-historia-141",
       "difficulty": "easy",
       "text": "Em que ano Joe Biden assumiu a presidência?",
       "answer": 2021,
@@ -992,6 +1133,7 @@
       "fact": "Foi depois de vencer Donald Trump."
     },
     {
+      "id": "chute-historia-142",
       "difficulty": "easy",
       "text": "Em que ano o papa Francisco foi eleito?",
       "answer": 2013,
@@ -999,6 +1141,7 @@
       "fact": "Foi o primeiro papa das Américas."
     },
     {
+      "id": "chute-historia-143",
       "difficulty": "easy",
       "text": "Em que ano o papa Francisco morreu?",
       "answer": 2025,
@@ -1006,6 +1149,7 @@
       "fact": "Ele morreu na segunda-feira de Páscoa."
     },
     {
+      "id": "chute-historia-144",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo foi fundada Roma, segundo a tradição?",
       "answer": 753,
@@ -1013,6 +1157,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-145",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo foi a Batalha de Maratona?",
       "answer": 490,
@@ -1020,6 +1165,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-146",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo foi a Batalha das Termópilas?",
       "answer": 480,
@@ -1027,6 +1173,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-147",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo foi a Batalha de Actium?",
       "answer": 31,
@@ -1034,6 +1181,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-148",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo Sócrates morreu?",
       "answer": 399,
@@ -1041,6 +1189,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-149",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo Alexandre, o Grande, morreu?",
       "answer": 323,
@@ -1048,6 +1197,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-150",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo Cartago foi destruída?",
       "answer": 146,
@@ -1055,6 +1205,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-151",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo foram os primeiros Jogos Olímpicos?",
       "answer": 776,
@@ -1062,6 +1213,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-152",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo Augusto virou imperador?",
       "answer": 27,
@@ -1069,6 +1221,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-153",
       "difficulty": "medium",
       "text": "Em que ano antes de Cristo o Código de Hamurabi foi criado, aproximadamente?",
       "answer": 1754,
@@ -1076,6 +1229,7 @@
       "scale": 50
     },
     {
+      "id": "chute-historia-154",
       "difficulty": "medium",
       "text": "Em que ano a Roma Antiga sofreu um grande incêndio, com Nero?",
       "answer": 64,
@@ -1083,6 +1237,7 @@
       "fact": "Nero culpou os cristãos pelo incêndio."
     },
     {
+      "id": "chute-historia-155",
       "difficulty": "medium",
       "text": "Em que ano o Coliseu foi inaugurado?",
       "answer": 80,
@@ -1090,6 +1245,7 @@
       "fact": "Os jogos da inauguração duraram 100 dias."
     },
     {
+      "id": "chute-historia-156",
       "difficulty": "medium",
       "text": "Em que ano o Édito de Milão foi assinado?",
       "answer": 313,
@@ -1097,6 +1253,7 @@
       "fact": "Ele permitiu a prática do cristianismo."
     },
     {
+      "id": "chute-historia-157",
       "difficulty": "medium",
       "text": "Em que ano Roma foi saqueada pelos visigodos?",
       "answer": 410,
@@ -1104,6 +1261,7 @@
       "fact": "Foi a primeira vez em 800 anos."
     },
     {
+      "id": "chute-historia-158",
       "difficulty": "medium",
       "text": "Em que ano morreu Átila, o Huno?",
       "answer": 453,
@@ -1111,6 +1269,7 @@
       "fact": "Ele morreu em sua noite de núpcias."
     },
     {
+      "id": "chute-historia-159",
       "difficulty": "medium",
       "text": "Em que ano morreu o imperador Justiniano?",
       "answer": 565,
@@ -1118,6 +1277,7 @@
       "fact": "Ele tentou reconquistar o antigo Império Romano."
     },
     {
+      "id": "chute-historia-160",
       "difficulty": "medium",
       "text": "Em que ano os árabes invadiram a Península Ibérica?",
       "answer": 711,
@@ -1125,6 +1285,7 @@
       "fact": "Eles ficaram por lá até 1492."
     },
     {
+      "id": "chute-historia-161",
       "difficulty": "medium",
       "text": "Em que ano foi a Batalha de Poitiers, contra os árabes?",
       "answer": 732,
@@ -1132,6 +1293,7 @@
       "fact": "Carlos Martel venceu."
     },
     {
+      "id": "chute-historia-162",
       "difficulty": "medium",
       "text": "Em que ano os vikings chegaram à América, aproximadamente?",
       "answer": 1000,
@@ -1139,6 +1301,7 @@
       "fact": "Leif Erikson chegou à Terra Nova."
     },
     {
+      "id": "chute-historia-163",
       "difficulty": "medium",
       "text": "Em que ano foi o Grande Cisma do cristianismo?",
       "answer": 1054,
@@ -1146,6 +1309,7 @@
       "fact": "Católicos e ortodoxos se separaram."
     },
     {
+      "id": "chute-historia-164",
       "difficulty": "medium",
       "text": "Em que ano foi a Primeira Cruzada, no início?",
       "answer": 1096,
@@ -1153,6 +1317,7 @@
       "fact": "Jerusalém foi tomada três anos depois."
     },
     {
+      "id": "chute-historia-165",
       "difficulty": "medium",
       "text": "Em que ano Gengis Khan morreu?",
       "answer": 1227,
@@ -1160,6 +1325,7 @@
       "fact": "O túmulo dele nunca foi encontrado."
     },
     {
+      "id": "chute-historia-166",
       "difficulty": "medium",
       "text": "Em que ano Marco Polo voltou a Veneza?",
       "answer": 1295,
@@ -1167,6 +1333,7 @@
       "fact": "Depois foi preso e contou suas viagens."
     },
     {
+      "id": "chute-historia-167",
       "difficulty": "medium",
       "text": "Em que ano começou a Guerra dos Cem Anos?",
       "answer": 1337,
@@ -1174,6 +1341,7 @@
       "fact": "Ela durou 116 anos."
     },
     {
+      "id": "chute-historia-168",
       "difficulty": "medium",
       "text": "Em que ano Joana d'Arc foi queimada?",
       "answer": 1431,
@@ -1181,6 +1349,7 @@
       "fact": "Ela foi queimada em Rouen."
     },
     {
+      "id": "chute-historia-169",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Tomada de Granada?",
       "answer": 1492,
@@ -1188,6 +1357,7 @@
       "fact": "Foi o mesmo ano da viagem de Colombo."
     },
     {
+      "id": "chute-historia-170",
       "difficulty": "medium",
       "text": "Em que ano Vasco da Gama chegou à Índia?",
       "answer": 1498,
@@ -1195,6 +1365,7 @@
       "fact": "Ele trouxe especiarias que renderam muito lucro."
     },
     {
+      "id": "chute-historia-171",
       "difficulty": "medium",
       "text": "Em que ano Michelangelo terminou o Davi?",
       "answer": 1504,
@@ -1202,6 +1373,7 @@
       "fact": "A estátua tem 5 metros de altura."
     },
     {
+      "id": "chute-historia-172",
       "difficulty": "medium",
       "text": "Em que ano Fernão de Magalhães partiu para dar a volta ao mundo?",
       "answer": 1519,
@@ -1209,6 +1381,7 @@
       "fact": "Ele morreu nas Filipinas em 1521."
     },
     {
+      "id": "chute-historia-173",
       "difficulty": "medium",
       "text": "Em que ano Hernán Cortés conquistou Tenochtitlán?",
       "answer": 1521,
@@ -1216,6 +1389,7 @@
       "fact": "A cidade era a capital asteca."
     },
     {
+      "id": "chute-historia-174",
       "difficulty": "medium",
       "text": "Em que ano Francisco Pizarro capturou o imperador inca?",
       "answer": 1532,
@@ -1223,6 +1397,7 @@
       "fact": "Atahualpa pagou um enorme resgate."
     },
     {
+      "id": "chute-historia-175",
       "difficulty": "medium",
       "text": "Em que ano foi fundada a Companhia de Jesus?",
       "answer": 1540,
@@ -1230,6 +1405,7 @@
       "fact": "Inácio de Loyola fundou a ordem."
     },
     {
+      "id": "chute-historia-176",
       "difficulty": "medium",
       "text": "Em que ano foi nomeado o primeiro governador-geral do Brasil?",
       "answer": 1549,
@@ -1237,6 +1413,7 @@
       "fact": "Tomé de Sousa fundou Salvador."
     },
     {
+      "id": "chute-historia-177",
       "difficulty": "medium",
       "text": "Em que ano Dom Sebastião desapareceu?",
       "answer": 1578,
@@ -1244,6 +1421,7 @@
       "fact": "Ele sumiu na batalha de Alcácer-Quibir."
     },
     {
+      "id": "chute-historia-178",
       "difficulty": "medium",
       "text": "Em que ano foi derrotada a Invencível Armada?",
       "answer": 1588,
@@ -1251,6 +1429,7 @@
       "fact": "Elizabeth I era a rainha inglesa."
     },
     {
+      "id": "chute-historia-179",
       "difficulty": "medium",
       "text": "Em que ano o calendário gregoriano foi criado?",
       "answer": 1582,
@@ -1258,6 +1437,7 @@
       "fact": "Dez dias sumiram do calendário."
     },
     {
+      "id": "chute-historia-180",
       "difficulty": "medium",
       "text": "Em que ano os holandeses chegaram a Pernambuco?",
       "answer": 1630,
@@ -1265,6 +1445,7 @@
       "fact": "Eles ficaram até 1654."
     },
     {
+      "id": "chute-historia-181",
       "difficulty": "medium",
       "text": "Em que ano Maurício de Nassau chegou a Pernambuco?",
       "answer": 1637,
@@ -1272,6 +1453,7 @@
       "fact": "Ele trouxe artistas e cientistas."
     },
     {
+      "id": "chute-historia-182",
       "difficulty": "medium",
       "text": "Em que ano o Quilombo dos Palmares foi destruído?",
       "answer": 1694,
@@ -1279,6 +1461,7 @@
       "fact": "Zumbi foi morto no ano seguinte."
     },
     {
+      "id": "chute-historia-183",
       "difficulty": "medium",
       "text": "Em que ano Zumbi dos Palmares morreu?",
       "answer": 1695,
@@ -1286,6 +1469,7 @@
       "fact": "O dia 20 de novembro virou Dia da Consciência Negra."
     },
     {
+      "id": "chute-historia-184",
       "difficulty": "medium",
       "text": "Em que ano o ouro de Minas foi descoberto, aproximadamente?",
       "answer": 1693,
@@ -1293,6 +1477,7 @@
       "fact": "A corrida do ouro mudou o Brasil."
     },
     {
+      "id": "chute-historia-185",
       "difficulty": "medium",
       "text": "Em que ano a capital do Brasil foi transferida para o Rio de Janeiro?",
       "answer": 1763,
@@ -1300,6 +1485,7 @@
       "fact": "O ouro de Minas era embarcado no porto do Rio."
     },
     {
+      "id": "chute-historia-186",
       "difficulty": "medium",
       "text": "Em que ano os jesuítas foram expulsos do Brasil?",
       "answer": 1759,
@@ -1307,6 +1493,7 @@
       "fact": "Foi por ordem do Marquês de Pombal."
     },
     {
+      "id": "chute-historia-187",
       "difficulty": "medium",
       "text": "Em que ano aconteceu o Terremoto de Lisboa?",
       "answer": 1755,
@@ -1314,6 +1501,7 @@
       "fact": "Ele aconteceu no feriado de Todos os Santos."
     },
     {
+      "id": "chute-historia-188",
       "difficulty": "medium",
       "text": "Em que ano foi a Conjuração Baiana?",
       "answer": 1798,
@@ -1321,6 +1509,7 @@
       "fact": "Quatro líderes foram enforcados."
     },
     {
+      "id": "chute-historia-189",
       "difficulty": "medium",
       "text": "Em que ano a abertura dos portos foi decretada no Brasil?",
       "answer": 1808,
@@ -1328,6 +1517,7 @@
       "fact": "Dom João VI assinou o decreto."
     },
     {
+      "id": "chute-historia-190",
       "difficulty": "medium",
       "text": "Em que ano o Brasil virou Reino Unido a Portugal?",
       "answer": 1815,
@@ -1335,6 +1525,7 @@
       "fact": "Ele deixou de ser colônia."
     },
     {
+      "id": "chute-historia-191",
       "difficulty": "medium",
       "text": "Em que ano foi a Revolução Pernambucana?",
       "answer": 1817,
@@ -1342,6 +1533,7 @@
       "fact": "Os líderes foram executados."
     },
     {
+      "id": "chute-historia-192",
       "difficulty": "medium",
       "text": "Em que ano Dom João VI voltou a Portugal?",
       "answer": 1821,
@@ -1349,6 +1541,7 @@
       "fact": "Dom Pedro ficou como príncipe regente."
     },
     {
+      "id": "chute-historia-193",
       "difficulty": "medium",
       "text": "Em que ano Dom Pedro I abdicou?",
       "answer": 1831,
@@ -1356,6 +1549,7 @@
       "fact": "Seu filho tinha cinco anos."
     },
     {
+      "id": "chute-historia-194",
       "difficulty": "medium",
       "text": "Em que ano Dom Pedro I morreu?",
       "answer": 1834,
@@ -1363,6 +1557,7 @@
       "fact": "Ele morreu em Portugal, aos 35 anos."
     },
     {
+      "id": "chute-historia-195",
       "difficulty": "medium",
       "text": "Em que ano aconteceu o Golpe da Maioridade?",
       "answer": 1840,
@@ -1370,6 +1565,7 @@
       "fact": "Dom Pedro II tinha 14 anos."
     },
     {
+      "id": "chute-historia-196",
       "difficulty": "medium",
       "text": "Em que ano foi assinada a Lei Eusébio de Queirós?",
       "answer": 1850,
@@ -1377,6 +1573,7 @@
       "fact": "Ela proibiu o tráfico de escravizados."
     },
     {
+      "id": "chute-historia-197",
       "difficulty": "medium",
       "text": "Em que ano foi assinada a Lei de Terras?",
       "answer": 1850,
@@ -1384,6 +1581,7 @@
       "fact": "A lei dificultou o acesso à terra pelos pobres."
     },
     {
+      "id": "chute-historia-198",
       "difficulty": "medium",
       "text": "Em que ano foi assinada a Lei do Sexagenário?",
       "answer": 1885,
@@ -1391,6 +1589,7 @@
       "fact": "Poucos escravizados chegavam aos 60 anos."
     },
     {
+      "id": "chute-historia-199",
       "difficulty": "medium",
       "text": "Em que ano Deodoro da Fonseca renunciou?",
       "answer": 1891,
@@ -1398,6 +1597,7 @@
       "fact": "Floriano Peixoto assumiu em seguida."
     },
     {
+      "id": "chute-historia-200",
       "difficulty": "medium",
       "text": "Em que ano a primeira Constituição republicana foi promulgada?",
       "answer": 1891,
@@ -1405,6 +1605,7 @@
       "fact": "Inspirada na dos EUA, ela criou o federalismo."
     },
     {
+      "id": "chute-historia-201",
       "difficulty": "medium",
       "text": "Em que ano o Brasil participou da Primeira Guerra?",
       "answer": 1917,
@@ -1412,6 +1613,7 @@
       "fact": "Navios brasileiros foram atacados."
     },
     {
+      "id": "chute-historia-202",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Partido Comunista Brasileiro?",
       "answer": 1922,
@@ -1419,6 +1621,7 @@
       "fact": "O ano também teve a Semana de Arte Moderna."
     },
     {
+      "id": "chute-historia-203",
       "difficulty": "medium",
       "text": "Em que ano foi a Revolução Constitucionalista de São Paulo?",
       "answer": 1932,
@@ -1426,6 +1629,7 @@
       "fact": "São Paulo perdeu, mas Vargas fez uma Constituição em 1934."
     },
     {
+      "id": "chute-historia-204",
       "difficulty": "medium",
       "text": "Em que ano Lampião foi morto?",
       "answer": 1938,
@@ -1433,6 +1637,7 @@
       "fact": "Sua cabeça ficou exposta em Salvador."
     },
     {
+      "id": "chute-historia-205",
       "difficulty": "medium",
       "text": "Em que ano Getúlio Vargas foi deposto, pela primeira vez?",
       "answer": 1945,
@@ -1440,6 +1645,7 @@
       "fact": "Ele voltou eleito em 1951."
     },
     {
+      "id": "chute-historia-206",
       "difficulty": "medium",
       "text": "Em que ano o Brasil sediou a Copa do Mundo pela primeira vez?",
       "answer": 1950,
@@ -1447,6 +1653,7 @@
       "fact": "A derrota para o Uruguai ficou conhecida como Maracanaço."
     },
     {
+      "id": "chute-historia-207",
       "difficulty": "medium",
       "text": "Em que ano o Rio de Janeiro sediou a Eco-92?",
       "answer": 1992,
@@ -1454,6 +1661,7 @@
       "fact": "Representantes de 178 países participaram."
     },
     {
+      "id": "chute-historia-208",
       "difficulty": "medium",
       "text": "Em que ano o Acre passou a ser estado?",
       "answer": 1962,
@@ -1461,6 +1669,7 @@
       "fact": "Antes era um território federal."
     },
     {
+      "id": "chute-historia-209",
       "difficulty": "medium",
       "text": "Em que ano Jânio Quadros renunciou?",
       "answer": 1961,
@@ -1468,6 +1677,7 @@
       "fact": "Ele culpou \"forças terríveis\"."
     },
     {
+      "id": "chute-historia-210",
       "difficulty": "medium",
       "text": "Em que ano João Goulart morreu?",
       "answer": 1976,
@@ -1475,6 +1685,7 @@
       "fact": "Ele morreu na Argentina, exilado."
     },
     {
+      "id": "chute-historia-211",
       "difficulty": "medium",
       "text": "Em que ano Juscelino Kubitschek morreu?",
       "answer": 1976,
@@ -1482,6 +1693,7 @@
       "fact": "Ele morreu em um acidente de carro na Via Dutra."
     },
     {
+      "id": "chute-historia-212",
       "difficulty": "medium",
       "text": "Em que ano aconteceu a Anistia no Brasil?",
       "answer": 1979,
@@ -1489,6 +1701,7 @@
       "fact": "Exilados puderam voltar ao país."
     },
     {
+      "id": "chute-historia-213",
       "difficulty": "medium",
       "text": "Em que ano aconteceu o atentado do Riocentro?",
       "answer": 1981,
@@ -1496,6 +1709,7 @@
       "fact": "A bomba explodiu no colo de um militar."
     },
     {
+      "id": "chute-historia-214",
       "difficulty": "medium",
       "text": "Em que ano aconteceu o Massacre de Eldorado do Carajás?",
       "answer": 1996,
@@ -1503,6 +1717,7 @@
       "fact": "19 trabalhadores sem-terra foram mortos."
     },
     {
+      "id": "chute-historia-215",
       "difficulty": "medium",
       "text": "Em que ano foi aprovada a reeleição para presidente no Brasil?",
       "answer": 1997,
@@ -1510,6 +1725,7 @@
       "fact": "FHC se reelegeu no ano seguinte."
     },
     {
+      "id": "chute-historia-216",
       "difficulty": "medium",
       "text": "Em que ano o Brasil sediou as Olimpíadas?",
       "answer": 2016,
@@ -1517,6 +1733,7 @@
       "fact": "Elas foram no Rio de Janeiro."
     },
     {
+      "id": "chute-historia-217",
       "difficulty": "medium",
       "text": "Quantos mortos a Primeira Guerra Mundial causou, aproximadamente, em milhões?",
       "answer": 20,
@@ -1524,6 +1741,7 @@
       "fact": "Muitos morreram em trincheiras."
     },
     {
+      "id": "chute-historia-218",
       "difficulty": "medium",
       "text": "Quantos soldados soviéticos morreram na Segunda Guerra, aproximadamente, em milhões?",
       "answer": 9,
@@ -1531,6 +1749,7 @@
       "fact": "Contando civis, foram mais de 25 milhões."
     },
     {
+      "id": "chute-historia-219",
       "difficulty": "medium",
       "text": "Quantos americanos morreram na Segunda Guerra, aproximadamente?",
       "answer": 405000,
@@ -1538,6 +1757,7 @@
       "fact": "O país não sofreu com combates em seu território principal."
     },
     {
+      "id": "chute-historia-220",
       "difficulty": "medium",
       "text": "Quantos soldados brasileiros morreram na Segunda Guerra, aproximadamente?",
       "answer": 450,
@@ -1545,6 +1765,7 @@
       "fact": "Eles estão enterrados no Monumento aos Pracinhas, no Rio."
     },
     {
+      "id": "chute-historia-221",
       "difficulty": "medium",
       "text": "Quantos soldados brasileiros foram à Itália na Segunda Guerra, aproximadamente?",
       "answer": 25000,
@@ -1552,6 +1773,7 @@
       "fact": "A Cobra Fumou é o lema da FEB."
     },
     {
+      "id": "chute-historia-222",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram em Hiroshima, até o fim de 1945?",
       "answer": 140000,
@@ -1559,6 +1781,7 @@
       "fact": "Muitas morreram pela radiação."
     },
     {
+      "id": "chute-historia-223",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram em Nagasaki, até o fim de 1945?",
       "answer": 74000,
@@ -1566,6 +1789,7 @@
       "fact": "A bomba foi lançada três dias depois da de Hiroshima."
     },
     {
+      "id": "chute-historia-224",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram nos atentados de 11 de setembro?",
       "answer": 2977,
@@ -1573,6 +1797,7 @@
       "fact": "Havia pessoas de mais de 90 países."
     },
     {
+      "id": "chute-historia-225",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram no naufrágio do Titanic, aproximadamente?",
       "answer": 1500,
@@ -1580,6 +1805,7 @@
       "fact": "Havia botes salva-vidas para cerca de metade dos passageiros."
     },
     {
+      "id": "chute-historia-226",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram no Dia D, do lado Aliado?",
       "answer": 4414,
@@ -1587,6 +1813,7 @@
       "fact": "Essa cifra é o dado oficial de mortes aliadas."
     },
     {
+      "id": "chute-historia-227",
       "difficulty": "medium",
       "text": "Quantos soldados participaram do Dia D, do lado Aliado?",
       "answer": 156000,
@@ -1594,6 +1821,7 @@
       "fact": "Foi a maior invasão anfíbia da história."
     },
     {
+      "id": "chute-historia-228",
       "difficulty": "medium",
       "text": "Quantos navios participaram do Dia D, aproximadamente?",
       "answer": 7000,
@@ -1601,6 +1829,7 @@
       "fact": "Foram cerca de 11 mil aviões também."
     },
     {
+      "id": "chute-historia-229",
       "difficulty": "medium",
       "text": "Qual a altura do Muro de Berlim, em metros?",
       "answer": 3.6,
@@ -1608,6 +1837,7 @@
       "fact": "Ele tinha mais de 150 km de extensão."
     },
     {
+      "id": "chute-historia-230",
       "difficulty": "medium",
       "text": "Qual a extensão do Muro de Berlim, em km?",
       "answer": 155,
@@ -1615,6 +1845,7 @@
       "fact": "Ele durou 28 anos."
     },
     {
+      "id": "chute-historia-231",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram tentando atravessar o Muro de Berlim?",
       "answer": 140,
@@ -1622,6 +1853,7 @@
       "fact": "A primeira vítima foi em agosto de 1961."
     },
     {
+      "id": "chute-historia-232",
       "difficulty": "medium",
       "text": "Quantos passageiros o Mayflower levou, aproximadamente?",
       "answer": 102,
@@ -1629,6 +1861,7 @@
       "fact": "Metade morreu no primeiro inverno."
     },
     {
+      "id": "chute-historia-233",
       "difficulty": "medium",
       "text": "Quantos dias durou a viagem do Mayflower até a América?",
       "answer": 66,
@@ -1636,6 +1869,7 @@
       "fact": "Eles planejavam ir para a Virgínia."
     },
     {
+      "id": "chute-historia-234",
       "difficulty": "hard",
       "text": "Quantas vezes o Brasil trocou de moeda desde 1942 até o real?",
       "answer": 8,
@@ -1643,6 +1877,7 @@
       "fact": "A hiperinflação obrigou a cortar zeros várias vezes."
     },
     {
+      "id": "chute-historia-235",
       "difficulty": "hard",
       "text": "Quantos estados tinha o Brasil em 1889, como províncias?",
       "answer": 20,
@@ -1650,6 +1885,7 @@
       "fact": "Os limites mudaram depois."
     },
     {
+      "id": "chute-historia-236",
       "difficulty": "medium",
       "text": "Quantos anos Getúlio Vargas governou, somando os períodos?",
       "answer": 19,
@@ -1657,6 +1893,7 @@
       "fact": "Foi o presidente que mais tempo governou o Brasil."
     },
     {
+      "id": "chute-historia-237",
       "difficulty": "medium",
       "text": "Quantos anos Stalin governou a União Soviética, aproximadamente?",
       "answer": 29,
@@ -1664,6 +1901,7 @@
       "fact": "Ele assumiu depois da morte de Lenin."
     },
     {
+      "id": "chute-historia-238",
       "difficulty": "medium",
       "text": "Quantos anos Fidel Castro governou Cuba?",
       "answer": 49,
@@ -1671,6 +1909,7 @@
       "fact": "Foi um dos governos mais longos do século XX."
     },
     {
+      "id": "chute-historia-239",
       "difficulty": "hard",
       "text": "Quantos anos Salazar governou Portugal, aproximadamente?",
       "answer": 36,
@@ -1678,6 +1917,7 @@
       "fact": "Ele saiu do poder depois de cair de uma cadeira."
     },
     {
+      "id": "chute-historia-240",
       "difficulty": "medium",
       "text": "Quantos anos durou o Império Inca, aproximadamente?",
       "answer": 100,
@@ -1685,6 +1925,7 @@
       "fact": "Ele cresceu muito rápido até a chegada de Pizarro."
     },
     {
+      "id": "chute-historia-241",
       "difficulty": "medium",
       "text": "Quantos soldados Pizarro tinha ao capturar Atahualpa?",
       "answer": 168,
@@ -1692,6 +1933,7 @@
       "fact": "O imperador inca tinha milhares de homens."
     },
     {
+      "id": "chute-historia-242",
       "difficulty": "medium",
       "text": "Quantos homens Cortés tinha ao chegar ao México, aproximadamente?",
       "answer": 500,
@@ -1699,6 +1941,7 @@
       "fact": "Ele conseguiu muitos aliados indígenas."
     },
     {
+      "id": "chute-historia-243",
       "difficulty": "medium",
       "text": "Quantos dias durou o reinado de Lady Jane Grey?",
       "answer": 9,
@@ -1706,6 +1949,7 @@
       "fact": "Ela foi decapitada aos 16 anos."
     },
     {
+      "id": "chute-historia-244",
       "difficulty": "medium",
       "text": "Quantos dias durou o governo dos Cem Dias de Napoleão?",
       "answer": 111,
@@ -1713,6 +1957,7 @@
       "fact": "O nome é uma aproximação."
     },
     {
+      "id": "chute-historia-245",
       "difficulty": "medium",
       "text": "Quantos minutos durou a guerra mais curta da história?",
       "answer": 38,
@@ -1720,6 +1965,7 @@
       "fact": "Foi entre o Reino Unido e Zanzibar, em 1896."
     },
     {
+      "id": "chute-historia-246",
       "difficulty": "medium",
       "text": "Quantos anos durou o reinado de Luís XIV?",
       "answer": 72,
@@ -1727,6 +1973,7 @@
       "fact": "É o reinado mais longo da história da Europa."
     },
     {
+      "id": "chute-historia-247",
       "difficulty": "medium",
       "text": "Quantos anos durou o reinado da rainha Vitória?",
       "answer": 63,
@@ -1734,6 +1981,7 @@
       "fact": "Foi superado só por Elizabeth II no Reino Unido."
     },
     {
+      "id": "chute-historia-248",
       "difficulty": "medium",
       "text": "Quantos anos durou o reinado de Dom João VI no Brasil e em Portugal, como rei?",
       "answer": 10,
@@ -1741,6 +1989,7 @@
       "fact": "Ele foi aclamado rei em 1818."
     },
     {
+      "id": "chute-historia-249",
       "difficulty": "medium",
       "text": "Quantos anos durou a União Soviética?",
       "answer": 69,
@@ -1748,6 +1997,7 @@
       "fact": "Ela foi criada em 1922."
     },
     {
+      "id": "chute-historia-250",
       "difficulty": "medium",
       "text": "Quantos anos Mandela ficou preso em Robben Island?",
       "answer": 18,
@@ -1755,6 +2005,7 @@
       "fact": "Ele ficou em outras prisões também."
     },
     {
+      "id": "chute-historia-251",
       "difficulty": "medium",
       "text": "Quantos anos Pol Pot governou o Camboja?",
       "answer": 4,
@@ -1762,6 +2013,7 @@
       "fact": "Em poucos anos, seu regime matou cerca de um quarto da população."
     },
     {
+      "id": "chute-historia-252",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram no genocídio do Camboja, em milhões?",
       "answer": 1.7,
@@ -1769,6 +2021,7 @@
       "fact": "Os campos de morte são hoje museus."
     },
     {
+      "id": "chute-historia-253",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram no genocídio de Ruanda, em 1994?",
       "answer": 800000,
@@ -1776,6 +2029,7 @@
       "fact": "Durou cerca de 100 dias."
     },
     {
+      "id": "chute-historia-254",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na Guerra do Vietnã, do lado vietnamita, em milhões?",
       "answer": 3,
@@ -1783,6 +2037,7 @@
       "fact": "O agente laranja causa doenças até hoje."
     },
     {
+      "id": "chute-historia-255",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na Guerra da Coreia, em milhões?",
       "answer": 3,
@@ -1790,6 +2045,7 @@
       "fact": "Tecnicamente, a guerra nunca acabou."
     },
     {
+      "id": "chute-historia-256",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na Revolução Cultural da China, em milhões?",
       "answer": 2,
@@ -1797,6 +2053,7 @@
       "fact": "Estudantes viraram contra professores."
     },
     {
+      "id": "chute-historia-257",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram no Grande Salto Adiante, na China, em milhões?",
       "answer": 30,
@@ -1804,6 +2061,7 @@
       "fact": "Foi uma das piores fomes da história."
     },
     {
+      "id": "chute-historia-258",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na Grande Fome da Irlanda, em milhões?",
       "answer": 1,
@@ -1811,6 +2069,7 @@
       "fact": "Outro milhão emigrou, principalmente para os EUA."
     },
     {
+      "id": "chute-historia-259",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram no Holodomor, na Ucrânia, em milhões?",
       "answer": 4,
@@ -1818,6 +2077,7 @@
       "fact": "Foi uma fome criada pelo regime de Stalin."
     },
     {
+      "id": "chute-historia-260",
       "difficulty": "medium",
       "text": "Quantos escravizados africanos foram levados às Américas, em milhões?",
       "answer": 12.5,
@@ -1825,6 +2085,7 @@
       "fact": "Quase 2 milhões morreram na travessia."
     },
     {
+      "id": "chute-historia-261",
       "difficulty": "hard",
       "text": "Quantos escravizados africanos o Brasil recebeu, em milhões?",
       "answer": 4.8,
@@ -1832,6 +2093,7 @@
       "fact": "É o maior número entre todos os países das Américas."
     },
     {
+      "id": "chute-historia-262",
       "difficulty": "hard",
       "text": "Quantos dias, em média, durava a travessia do Atlântico em um navio negreiro?",
       "answer": 45,
@@ -1839,6 +2101,7 @@
       "fact": "Em muitas viagens, parte dos cativos morria no caminho."
     },
     {
+      "id": "chute-historia-263",
       "difficulty": "hard",
       "text": "Qual era a população do Brasil em 1872, no primeiro censo, em milhões?",
       "answer": 9.9,
@@ -1846,6 +2109,7 @@
       "fact": "Cerca de 15% eram escravizados."
     },
     {
+      "id": "chute-historia-264",
       "difficulty": "hard",
       "text": "Qual era a população do Rio de Janeiro quando a corte chegou, em 1808?",
       "answer": 60000,
@@ -1853,6 +2117,7 @@
       "fact": "Metade era formada por escravizados."
     },
     {
+      "id": "chute-historia-265",
       "difficulty": "hard",
       "text": "Quantas pessoas vieram com a família real para o Brasil, em 1808?",
       "answer": 15000,
@@ -1860,6 +2125,7 @@
       "fact": "Elas tomaram muitas casas dos moradores do Rio."
     },
     {
+      "id": "chute-historia-266",
       "difficulty": "hard",
       "text": "Quantos imigrantes chegaram ao Brasil entre 1880 e 1930, em milhões?",
       "answer": 4,
@@ -1867,6 +2133,7 @@
       "fact": "Italianos e portugueses foram os mais numerosos."
     },
     {
+      "id": "chute-historia-267",
       "difficulty": "hard",
       "text": "Quantos japoneses vieram no navio Kasato Maru, em 1908?",
       "answer": 781,
@@ -1874,6 +2141,7 @@
       "fact": "Foi o primeiro navio com imigrantes do Japão."
     },
     {
+      "id": "chute-historia-268",
       "difficulty": "hard",
       "text": "Em que ano o navio Kasato Maru chegou ao Brasil?",
       "answer": 1908,
@@ -1881,6 +2149,7 @@
       "fact": "O navio atracou em Santos."
     },
     {
+      "id": "chute-historia-269",
       "difficulty": "hard",
       "text": "Em que ano os primeiros italianos chegaram em grande número ao Brasil?",
       "answer": 1875,
@@ -1888,6 +2157,7 @@
       "fact": "A maioria foi para o Sul e para as fazendas de café."
     },
     {
+      "id": "chute-historia-270",
       "difficulty": "hard",
       "text": "Em que ano os alemães chegaram a São Leopoldo?",
       "answer": 1824,
@@ -1895,6 +2165,7 @@
       "fact": "Foi a primeira grande colônia alemã do Brasil."
     },
     {
+      "id": "chute-historia-271",
       "difficulty": "hard",
       "text": "Em que ano foi fundada Blumenau?",
       "answer": 1850,
@@ -1902,6 +2173,7 @@
       "fact": "Herrmann Blumenau trouxe 17 colonos."
     },
     {
+      "id": "chute-historia-272",
       "difficulty": "hard",
       "text": "Quantos anos durou a Inconfidência até a execução de Tiradentes?",
       "answer": 3,
@@ -1909,6 +2181,7 @@
       "fact": "Ele foi preso em maio de 1789."
     },
     {
+      "id": "chute-historia-273",
       "difficulty": "hard",
       "text": "Em que ano Pedro Álvares Cabral morreu?",
       "answer": 1520,
@@ -1916,6 +2189,7 @@
       "fact": "Ele nunca mais voltou ao Brasil."
     },
     {
+      "id": "chute-historia-274",
       "difficulty": "hard",
       "text": "Em que ano Caramuru chegou à Bahia, segundo a tradição?",
       "answer": 1510,
@@ -1923,6 +2197,7 @@
       "fact": "Ele sobreviveu a um naufrágio e viveu com os tupinambás."
     },
     {
+      "id": "chute-historia-275",
       "difficulty": "hard",
       "text": "Em que ano foi criado o sistema de capitanias hereditárias?",
       "answer": 1534,
@@ -1930,6 +2205,7 @@
       "fact": "Ele dividiu o Brasil em 15 lotes."
     },
     {
+      "id": "chute-historia-276",
       "difficulty": "hard",
       "text": "Quantas capitanias hereditárias foram criadas?",
       "answer": 15,
@@ -1937,6 +2213,7 @@
       "fact": "Só Pernambuco e São Vicente prosperaram de verdade."
     },
     {
+      "id": "chute-historia-277",
       "difficulty": "hard",
       "text": "Em que ano Duarte Coelho fundou Olinda?",
       "answer": 1537,
@@ -1944,6 +2221,7 @@
       "fact": "Ele foi donatário de Pernambuco."
     },
     {
+      "id": "chute-historia-278",
       "difficulty": "hard",
       "text": "Em que ano os franceses fundaram a França Equinocial no Maranhão?",
       "answer": 1612,
@@ -1951,6 +2229,7 @@
       "fact": "Os portugueses os expulsaram em 1615."
     },
     {
+      "id": "chute-historia-279",
       "difficulty": "hard",
       "text": "Em que ano os franceses foram expulsos do Rio de Janeiro?",
       "answer": 1567,
@@ -1958,6 +2237,7 @@
       "fact": "Estácio de Sá morreu na luta."
     },
     {
+      "id": "chute-historia-280",
       "difficulty": "hard",
       "text": "Em que ano foi assinada a paz entre Portugal e os Países Baixos sobre o Brasil?",
       "answer": 1661,
@@ -1965,6 +2245,7 @@
       "fact": "Portugal pagou uma indenização enorme."
     },
     {
+      "id": "chute-historia-281",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Batalha dos Guararapes?",
       "answer": 1648,
@@ -1972,6 +2253,7 @@
       "fact": "Ela é considerada a origem do Exército Brasileiro."
     },
     {
+      "id": "chute-historia-282",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Guerra dos Mascates?",
       "answer": 1710,
@@ -1979,6 +2261,7 @@
       "fact": "Foi entre Olinda e Recife."
     },
     {
+      "id": "chute-historia-283",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Guerra dos Emboabas?",
       "answer": 1707,
@@ -1986,6 +2269,7 @@
       "fact": "Paulistas e portugueses disputaram o ouro."
     },
     {
+      "id": "chute-historia-284",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Revolta de Filipe dos Santos?",
       "answer": 1720,
@@ -1993,6 +2277,7 @@
       "fact": "Foi em Vila Rica, contra os impostos do ouro."
     },
     {
+      "id": "chute-historia-285",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Guerra Guaranítica?",
       "answer": 1756,
@@ -2000,6 +2285,7 @@
       "fact": "O Tratado de Madri é a causa."
     },
     {
+      "id": "chute-historia-286",
       "difficulty": "hard",
       "text": "Em que ano aconteceu a Revolta de Beckman?",
       "answer": 1684,
@@ -2007,6 +2293,7 @@
       "fact": "Foi no Maranhão, contra o monopólio comercial."
     },
     {
+      "id": "chute-historia-287",
       "difficulty": "hard",
       "text": "Em que ano foi a Confederação do Equador?",
       "answer": 1824,
@@ -2014,6 +2301,7 @@
       "fact": "Frei Caneca foi fuzilado no ano seguinte."
     },
     {
+      "id": "chute-historia-288",
       "difficulty": "hard",
       "text": "Em que ano foi a Cabanagem, no início?",
       "answer": 1835,
@@ -2021,6 +2309,7 @@
       "fact": "Ela matou cerca de 30% da população do Pará."
     },
     {
+      "id": "chute-historia-289",
       "difficulty": "hard",
       "text": "Em que ano foi a Balaiada, no início?",
       "answer": 1838,
@@ -2028,6 +2317,7 @@
       "fact": "Foi no Maranhão."
     },
     {
+      "id": "chute-historia-290",
       "difficulty": "hard",
       "text": "Em que ano foi a Sabinada?",
       "answer": 1837,
@@ -2035,6 +2325,7 @@
       "fact": "Foi na Bahia, e o nome vem do médico Sabino."
     },
     {
+      "id": "chute-historia-291",
       "difficulty": "hard",
       "text": "Em que ano foi a Revolta dos Malês?",
       "answer": 1835,
@@ -2042,6 +2333,7 @@
       "fact": "Foi em Salvador, com africanos muçulmanos."
     },
     {
+      "id": "chute-historia-292",
       "difficulty": "hard",
       "text": "Em que ano foi a Praieira?",
       "answer": 1848,
@@ -2049,6 +2341,7 @@
       "fact": "Foi a última grande revolta do Império, em Pernambuco."
     },
     {
+      "id": "chute-historia-293",
       "difficulty": "hard",
       "text": "Em que ano foi a Questão Christie?",
       "answer": 1862,
@@ -2056,6 +2349,7 @@
       "fact": "O Brasil rompeu relações com o Reino Unido."
     },
     {
+      "id": "chute-historia-294",
       "difficulty": "hard",
       "text": "Em que ano foi a Revolução Federalista, no início?",
       "answer": 1893,
@@ -2063,6 +2357,7 @@
       "fact": "Ela é chamada de \"guerra da degola\"."
     },
     {
+      "id": "chute-historia-295",
       "difficulty": "hard",
       "text": "Em que ano foi a Revolta da Armada, no início?",
       "answer": 1893,
@@ -2070,6 +2365,7 @@
       "fact": "Foi contra o governo de Floriano Peixoto."
     },
     {
+      "id": "chute-historia-296",
       "difficulty": "hard",
       "text": "Em que ano foi a Guerra do Contestado, no início?",
       "answer": 1912,
@@ -2077,6 +2373,7 @@
       "fact": "Foi em Santa Catarina e no Paraná."
     },
     {
+      "id": "chute-historia-297",
       "difficulty": "hard",
       "text": "Em que ano foi o Levante dos 18 do Forte?",
       "answer": 1922,
@@ -2084,6 +2381,7 @@
       "fact": "Só dois sobreviveram."
     },
     {
+      "id": "chute-historia-298",
       "difficulty": "hard",
       "text": "Em que ano começou a Coluna Prestes?",
       "answer": 1925,
@@ -2091,6 +2389,7 @@
       "fact": "Ela caminhou cerca de 25 mil km."
     },
     {
+      "id": "chute-historia-299",
       "difficulty": "hard",
       "text": "Em que ano foi a Intentona Comunista?",
       "answer": 1935,
@@ -2098,6 +2397,7 @@
       "fact": "O movimento fracassou rapidamente."
     },
     {
+      "id": "chute-historia-300",
       "difficulty": "hard",
       "text": "Em que ano foi a Campanha da Legalidade?",
       "answer": 1961,
@@ -2105,6 +2405,7 @@
       "fact": "Foi liderada por Leonel Brizola."
     },
     {
+      "id": "chute-historia-301",
       "difficulty": "hard",
       "text": "Em que ano foi o Comício da Central?",
       "answer": 1964,
@@ -2112,6 +2413,7 @@
       "fact": "Foi em março, antes do golpe militar."
     },
     {
+      "id": "chute-historia-302",
       "difficulty": "hard",
       "text": "Em que ano foi a Passeata dos Cem Mil?",
       "answer": 1968,
@@ -2119,6 +2421,7 @@
       "fact": "Foi no Rio de Janeiro, contra a ditadura."
     },
     {
+      "id": "chute-historia-303",
       "difficulty": "hard",
       "text": "Em que ano foi o sequestro do embaixador dos EUA, no Brasil?",
       "answer": 1969,
@@ -2126,6 +2429,7 @@
       "fact": "Foram libertados 15 presos políticos."
     },
     {
+      "id": "chute-historia-304",
       "difficulty": "hard",
       "text": "Em que ano foi o Massacre do Carandiru?",
       "answer": 1992,
@@ -2133,6 +2437,7 @@
       "fact": "Foram 111 mortos."
     },
     {
+      "id": "chute-historia-305",
       "difficulty": "hard",
       "text": "Em que ano o Brasil conheceu o primeiro presidente operário?",
       "answer": 2003,
@@ -2140,6 +2445,7 @@
       "fact": "Lula assumiu em janeiro."
     },
     {
+      "id": "chute-historia-306",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Lepanto?",
       "answer": 1571,
@@ -2147,6 +2453,7 @@
       "fact": "Cervantes perdeu o uso da mão esquerda."
     },
     {
+      "id": "chute-historia-307",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Trafalgar?",
       "answer": 1805,
@@ -2154,6 +2461,7 @@
       "fact": "Nelson derrotou a França e a Espanha."
     },
     {
+      "id": "chute-historia-308",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Austerlitz?",
       "answer": 1805,
@@ -2161,6 +2469,7 @@
       "fact": "Foi a maior vitória de Napoleão."
     },
     {
+      "id": "chute-historia-309",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Gettysburg?",
       "answer": 1863,
@@ -2168,6 +2477,7 @@
       "fact": "Foi a virada na Guerra Civil americana."
     },
     {
+      "id": "chute-historia-310",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Tsushima?",
       "answer": 1905,
@@ -2175,6 +2485,7 @@
       "fact": "O Japão derrotou a Rússia no mar."
     },
     {
+      "id": "chute-historia-311",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha do Somme?",
       "answer": 1916,
@@ -2182,6 +2493,7 @@
       "fact": "Foi uma das mais sangrentas da Primeira Guerra."
     },
     {
+      "id": "chute-historia-312",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Verdun?",
       "answer": 1916,
@@ -2189,6 +2501,7 @@
       "fact": "Durou quase um ano."
     },
     {
+      "id": "chute-historia-313",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Midway?",
       "answer": 1942,
@@ -2196,6 +2509,7 @@
       "fact": "Foi a virada na guerra do Pacífico."
     },
     {
+      "id": "chute-historia-314",
       "difficulty": "hard",
       "text": "Em que ano foi a Batalha de Stalingrado, no final?",
       "answer": 1943,
@@ -2203,6 +2517,7 @@
       "fact": "Mais de 1 milhão de pessoas morreram."
     },
     {
+      "id": "chute-historia-315",
       "difficulty": "hard",
       "text": "Em que ano foi a Conferência de Yalta?",
       "answer": 1945,
@@ -2210,6 +2525,7 @@
       "fact": "Reuniu Churchill, Roosevelt e Stalin."
     },
     {
+      "id": "chute-historia-316",
       "difficulty": "hard",
       "text": "Em que ano foi a Conferência de Berlim, que dividiu a África?",
       "answer": 1884,
@@ -2217,6 +2533,7 @@
       "fact": "Nenhum africano foi convidado."
     },
     {
+      "id": "chute-historia-317",
       "difficulty": "hard",
       "text": "Em que ano foi o Congresso de Viena?",
       "answer": 1814,
@@ -2224,6 +2541,7 @@
       "fact": "Ele reorganizou a Europa depois de Napoleão."
     },
     {
+      "id": "chute-historia-318",
       "difficulty": "hard",
       "text": "Em que ano foi a Paz de Vestfália?",
       "answer": 1648,
@@ -2231,6 +2549,7 @@
       "fact": "Ela encerrou a Guerra dos Trinta Anos."
     },
     {
+      "id": "chute-historia-319",
       "difficulty": "hard",
       "text": "Em que ano foi a Revolução Haitiana, no início?",
       "answer": 1791,
@@ -2238,6 +2557,7 @@
       "fact": "Foi a única revolta de escravizados que criou um país."
     },
     {
+      "id": "chute-historia-320",
       "difficulty": "hard",
       "text": "Em que ano foi a Independência do México, declarada?",
       "answer": 1810,
@@ -2245,6 +2565,7 @@
       "fact": "O reconhecimento veio em 1821."
     },
     {
+      "id": "chute-historia-321",
       "difficulty": "hard",
       "text": "Em que ano foi a Revolução Mexicana, no início?",
       "answer": 1910,
@@ -2252,6 +2573,7 @@
       "fact": "Zapata e Pancho Villa foram líderes."
     },
     {
+      "id": "chute-historia-322",
       "difficulty": "hard",
       "text": "Em que ano foi a Marcha sobre Roma, de Mussolini?",
       "answer": 1922,
@@ -2259,6 +2581,7 @@
       "fact": "Ele foi nomeado chefe de governo logo depois."
     },
     {
+      "id": "chute-historia-323",
       "difficulty": "hard",
       "text": "Em que ano Mussolini foi morto?",
       "answer": 1945,
@@ -2266,6 +2589,7 @@
       "fact": "Seu corpo foi pendurado em Milão."
     },
     {
+      "id": "chute-historia-324",
       "difficulty": "hard",
       "text": "Em que ano começou a Guerra Civil Espanhola?",
       "answer": 1936,
@@ -2273,6 +2597,7 @@
       "fact": "Franco venceu em 1939."
     },
     {
+      "id": "chute-historia-325",
       "difficulty": "hard",
       "text": "Em que ano foi o bombardeio de Guernica?",
       "answer": 1937,
@@ -2280,6 +2605,7 @@
       "fact": "Inspirou o famoso quadro de Picasso."
     },
     {
+      "id": "chute-historia-326",
       "difficulty": "hard",
       "text": "Em que ano foi a Noite dos Cristais, na Alemanha?",
       "answer": 1938,
@@ -2287,6 +2613,7 @@
       "fact": "Sinagogas foram destruídas."
     },
     {
+      "id": "chute-historia-327",
       "difficulty": "hard",
       "text": "Em que ano começou a Guerra da Crimeia?",
       "answer": 1853,
@@ -2294,6 +2621,7 @@
       "fact": "Florence Nightingale fez fama nessa guerra."
     },
     {
+      "id": "chute-historia-328",
       "difficulty": "hard",
       "text": "Em que ano foi abolida a servidão na Rússia?",
       "answer": 1861,
@@ -2301,6 +2629,7 @@
       "fact": "Alexandre II libertou 23 milhões de servos."
     },
     {
+      "id": "chute-historia-329",
       "difficulty": "hard",
       "text": "Em que ano o czar Nicolau II foi executado?",
       "answer": 1918,
@@ -2308,6 +2637,7 @@
       "fact": "Toda a família foi morta em Ecaterimburgo."
     },
     {
+      "id": "chute-historia-330",
       "difficulty": "hard",
       "text": "Em que ano Lenin morreu?",
       "answer": 1924,
@@ -2315,6 +2645,7 @@
       "fact": "O corpo dele continua exposto em Moscou."
     },
     {
+      "id": "chute-historia-331",
       "difficulty": "hard",
       "text": "Em que ano Trotsky foi assassinado?",
       "answer": 1940,
@@ -2322,6 +2653,7 @@
       "fact": "Ele foi morto com uma picareta, no México."
     },
     {
+      "id": "chute-historia-332",
       "difficulty": "hard",
       "text": "Em que ano foi a Guerra Russo-Japonesa, no início?",
       "answer": 1904,
@@ -2329,6 +2661,7 @@
       "fact": "Foi a primeira grande vitória de um país asiático contra uma potência europeia."
     },
     {
+      "id": "chute-historia-333",
       "difficulty": "hard",
       "text": "Em que ano Hong Kong foi cedida aos britânicos?",
       "answer": 1842,
@@ -2336,6 +2669,7 @@
       "fact": "Foi depois da Primeira Guerra do Ópio."
     },
     {
+      "id": "chute-historia-334",
       "difficulty": "hard",
       "text": "Em que ano começou a Era Meiji, no Japão?",
       "answer": 1868,
@@ -2343,6 +2677,7 @@
       "fact": "Durou até 1912."
     },
     {
+      "id": "chute-historia-335",
       "difficulty": "hard",
       "text": "Em que ano o Muro de Adriano começou a ser construído?",
       "answer": 122,
@@ -2350,6 +2685,7 @@
       "fact": "Ele tem 117 km de extensão."
     },
     {
+      "id": "chute-historia-336",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Universidade de Oxford, aproximadamente?",
       "answer": 1096,
@@ -2357,6 +2693,7 @@
       "fact": "É a mais antiga dos países de língua inglesa."
     },
     {
+      "id": "chute-historia-337",
       "difficulty": "hard",
       "text": "Em que ano Gutenberg imprimiu a primeira Bíblia, aproximadamente?",
       "answer": 1455,
@@ -2364,6 +2701,7 @@
       "fact": "Hoje existem menos de 50 cópias."
     },
     {
+      "id": "chute-historia-338",
       "difficulty": "hard",
       "text": "Em que ano Copérnico publicou sua obra sobre os astros?",
       "answer": 1543,
@@ -2371,6 +2709,7 @@
       "fact": "Ele morreu no mesmo ano."
     },
     {
+      "id": "chute-historia-339",
       "difficulty": "hard",
       "text": "Em que ano Galileu morreu?",
       "answer": 1642,
@@ -2378,6 +2717,7 @@
       "fact": "Newton nasceu no mesmo ano, em um calendário da época."
     },
     {
+      "id": "chute-historia-340",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Royal Society?",
       "answer": 1660,
@@ -2385,6 +2725,7 @@
       "fact": "É uma das academias de ciência mais antigas do mundo."
     },
     {
+      "id": "chute-historia-341",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Bolsa de Londres?",
       "answer": 1801,
@@ -2392,6 +2733,7 @@
       "fact": "Os negócios antes aconteciam em cafés."
     },
     {
+      "id": "chute-historia-342",
       "difficulty": "hard",
       "text": "Em que ano o Reino Unido aboliu o tráfico de escravizados?",
       "answer": 1807,
@@ -2399,6 +2741,7 @@
       "fact": "William Wilberforce liderou a campanha."
     },
     {
+      "id": "chute-historia-343",
       "difficulty": "hard",
       "text": "Em que ano o Reino Unido aboliu a escravidão em suas colônias?",
       "answer": 1833,
@@ -2406,6 +2749,7 @@
       "fact": "A lei indenizou os donos, e não os escravizados."
     },
     {
+      "id": "chute-historia-344",
       "difficulty": "hard",
       "text": "Em que ano o Haiti aboliu a escravidão?",
       "answer": 1793,
@@ -2413,6 +2757,7 @@
       "fact": "O país é independente desde 1804."
     },
     {
+      "id": "chute-historia-345",
       "difficulty": "hard",
       "text": "Em que ano os EUA emitiram a Proclamação de Emancipação?",
       "answer": 1863,
@@ -2420,6 +2765,7 @@
       "fact": "Lincoln a assinou durante a Guerra Civil."
     },
     {
+      "id": "chute-historia-346",
       "difficulty": "hard",
       "text": "Em que ano a Nova Zelândia deu voto às mulheres?",
       "answer": 1893,
@@ -2427,6 +2773,7 @@
       "fact": "Foi o primeiro país a fazer isso em eleições nacionais."
     },
     {
+      "id": "chute-historia-347",
       "difficulty": "hard",
       "text": "Em que ano a Suíça deu voto às mulheres?",
       "answer": 1971,
@@ -2434,6 +2781,7 @@
       "fact": "Um cantão só aceitou em 1990."
     },
     {
+      "id": "chute-historia-348",
       "difficulty": "hard",
       "text": "Em que ano a Arábia Saudita deu voto às mulheres?",
       "answer": 2015,
@@ -2441,6 +2789,7 @@
       "fact": "Foi em eleições municipais."
     },
     {
+      "id": "chute-historia-349",
       "difficulty": "hard",
       "text": "Em que ano a primeira mulher foi eleita para o Senado no Brasil?",
       "answer": 1979,
@@ -2448,6 +2797,7 @@
       "fact": "Eunice Michiles foi a primeira a assumir."
     },
     {
+      "id": "chute-historia-350",
       "difficulty": "medium",
       "text": "Quantos dias durou a Comuna de Paris?",
       "answer": 72,
@@ -2455,6 +2805,7 @@
       "fact": "O governo francês esmagou o levante com grande violência."
     },
     {
+      "id": "chute-historia-351",
       "difficulty": "medium",
       "text": "Quantas pessoas viviam em Roma no auge do império, aproximadamente?",
       "answer": 1000000,
@@ -2462,6 +2813,7 @@
       "fact": "Só Londres voltaria a esse número, no século XIX."
     },
     {
+      "id": "chute-historia-352",
       "difficulty": "medium",
       "text": "Quantos km de estradas o Império Romano tinha, aproximadamente?",
       "answer": 80000,
@@ -2469,6 +2821,7 @@
       "fact": "Algumas ainda são usadas hoje."
     },
     {
+      "id": "chute-historia-353",
       "difficulty": "medium",
       "text": "Quantos km de estradas o Império Inca tinha, aproximadamente?",
       "answer": 40000,
@@ -2476,6 +2829,7 @@
       "fact": "Mensageiros corriam por elas em revezamento."
     },
     {
+      "id": "chute-historia-354",
       "difficulty": "medium",
       "text": "Quantos gladiadores lutaram nos jogos de Trajano, em 107, aproximadamente?",
       "answer": 10000,
@@ -2483,6 +2837,7 @@
       "fact": "Os jogos duraram 123 dias."
     },
     {
+      "id": "chute-historia-355",
       "difficulty": "medium",
       "text": "Quantos elefantes Aníbal levou pelos Alpes, aproximadamente?",
       "answer": 37,
@@ -2490,6 +2845,7 @@
       "fact": "Quase todos morreram logo depois."
     },
     {
+      "id": "chute-historia-356",
       "difficulty": "hard",
       "text": "Quantos soldados Napoleão levou à Rússia, aproximadamente?",
       "answer": 600000,
@@ -2497,6 +2853,7 @@
       "fact": "Menos de 100 mil voltaram."
     },
     {
+      "id": "chute-historia-357",
       "difficulty": "hard",
       "text": "Quantos soldados morreram na Batalha de Waterloo, aproximadamente?",
       "answer": 50000,
@@ -2504,6 +2861,7 @@
       "fact": "Foi o último combate de Napoleão."
     },
     {
+      "id": "chute-historia-358",
       "difficulty": "hard",
       "text": "Quantos soldados morreram na Batalha do Somme, aproximadamente?",
       "answer": 1000000,
@@ -2511,6 +2869,7 @@
       "fact": "No primeiro dia, os britânicos tiveram quase 60 mil baixas."
     },
     {
+      "id": "chute-historia-359",
       "difficulty": "hard",
       "text": "Quantos soldados britânicos caíram no primeiro dia do Somme, aproximadamente?",
       "answer": 57000,
@@ -2518,6 +2877,7 @@
       "fact": "É o dia mais sangrento do exército britânico."
     },
     {
+      "id": "chute-historia-360",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram na Batalha de Stalingrado, em milhões?",
       "answer": 2,
@@ -2525,6 +2885,7 @@
       "fact": "A cidade ficou quase toda destruída."
     },
     {
+      "id": "chute-historia-361",
       "difficulty": "hard",
       "text": "Quantas pessoas morreram no Cerco de Leningrado, em milhões?",
       "answer": 1,
@@ -2532,6 +2893,7 @@
       "fact": "A maioria morreu de fome."
     },
     {
+      "id": "chute-historia-362",
       "difficulty": "hard",
       "text": "Quantos soldados foram resgatados em Dunquerque, em 1940?",
       "answer": 338000,
@@ -2539,6 +2901,7 @@
       "fact": "Pequenos barcos civis ajudaram no resgate."
     },
     {
+      "id": "chute-historia-363",
       "difficulty": "hard",
       "text": "Quantos tanques lutaram em Kursk, aproximadamente?",
       "answer": 6000,
@@ -2546,6 +2909,7 @@
       "fact": "Foi a maior batalha de tanques da história."
     },
     {
+      "id": "chute-historia-364",
       "difficulty": "hard",
       "text": "Quantas pessoas estavam a bordo do Hindenburg?",
       "answer": 97,
@@ -2553,6 +2917,7 @@
       "fact": "Morreram 36 pessoas no acidente."
     },
     {
+      "id": "chute-historia-365",
       "difficulty": "hard",
       "text": "Quantas vítimas fatais houve no Hindenburg?",
       "answer": 36,
@@ -2560,6 +2925,7 @@
       "fact": "A explosão foi transmitida por rádio."
     },
     {
+      "id": "chute-historia-366",
       "difficulty": "hard",
       "text": "Quantos botes salva-vidas tinha o Titanic?",
       "answer": 20,
@@ -2567,6 +2933,7 @@
       "fact": "Havia lugar para menos da metade dos passageiros."
     },
     {
+      "id": "chute-historia-367",
       "difficulty": "hard",
       "text": "Quantos metros tinha o Titanic de comprimento?",
       "answer": 269,
@@ -2574,6 +2941,7 @@
       "fact": "Era o maior navio do mundo na época."
     },
     {
+      "id": "chute-historia-368",
       "difficulty": "hard",
       "text": "A que profundidade está o Titanic, em metros?",
       "answer": 3800,
@@ -2581,6 +2949,7 @@
       "fact": "Em 2023, um submarino implodiu ao visitá-lo."
     },
     {
+      "id": "chute-historia-369",
       "difficulty": "hard",
       "text": "Quantos minutos o Titanic levou para afundar, aproximadamente?",
       "answer": 160,
@@ -2588,6 +2957,7 @@
       "fact": "Foram cerca de 2 horas e 40 minutos."
     },
     {
+      "id": "chute-historia-370",
       "difficulty": "hard",
       "text": "Em que ano a Estátua da Liberdade foi inaugurada?",
       "answer": 1886,
@@ -2595,6 +2965,7 @@
       "fact": "Ela veio da França em 350 peças."
     },
     {
+      "id": "chute-historia-371",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Torre de Londres?",
       "answer": 1078,
@@ -2602,6 +2973,7 @@
       "fact": "Ela foi construída por Guilherme, o Conquistador."
     },
     {
+      "id": "chute-historia-372",
       "difficulty": "hard",
       "text": "Em que ano foi concluída a Catedral de Notre-Dame?",
       "answer": 1345,
@@ -2609,6 +2981,7 @@
       "fact": "Ela pegou fogo em 2019 e foi reaberta em 2024."
     },
     {
+      "id": "chute-historia-373",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Palácio de Versalhes como sede do governo?",
       "answer": 1682,
@@ -2616,6 +2989,7 @@
       "fact": "Luís XIV levou a corte para lá."
     },
     {
+      "id": "chute-historia-374",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Palácio do Catete?",
       "answer": 1867,
@@ -2623,6 +2997,7 @@
       "fact": "Foi a sede do governo até 1960."
     },
     {
+      "id": "chute-historia-375",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Theatro Municipal de São Paulo?",
       "answer": 1911,
@@ -2630,6 +3005,7 @@
       "fact": "Lá aconteceu a Semana de Arte Moderna."
     },
     {
+      "id": "chute-historia-376",
       "difficulty": "hard",
       "text": "Em que ano o Museu do Ipiranga foi aberto?",
       "answer": 1895,
@@ -2637,6 +3013,7 @@
       "fact": "Lá está o quadro Independência ou Morte."
     },
     {
+      "id": "chute-historia-377",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurado o Cristo Redentor?",
       "answer": 1931,
@@ -2644,6 +3021,7 @@
       "fact": "A obra foi feita com pedra-sabão."
     },
     {
+      "id": "chute-historia-378",
       "difficulty": "hard",
       "text": "Em que ano a Biblioteca Nacional chegou ao Rio de Janeiro?",
       "answer": 1810,
@@ -2651,6 +3029,7 @@
       "fact": "Ela veio de Lisboa com a família real."
     },
     {
+      "id": "chute-historia-379",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Academia Brasileira de Letras?",
       "answer": 1897,
@@ -2658,6 +3037,7 @@
       "fact": "Machado de Assis foi o primeiro presidente."
     },
     {
+      "id": "chute-historia-380",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Universidade de Coimbra?",
       "answer": 1290,
@@ -2665,6 +3045,7 @@
       "fact": "É uma das mais antigas do mundo."
     },
     {
+      "id": "chute-historia-381",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Universidade de Harvard?",
       "answer": 1636,
@@ -2672,6 +3053,7 @@
       "fact": "É a mais antiga dos EUA."
     },
     {
+      "id": "chute-historia-382",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Universidade de Bolonha?",
       "answer": 1088,
@@ -2679,6 +3061,7 @@
       "fact": "É a mais antiga do mundo ocidental."
     },
     {
+      "id": "chute-historia-383",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Universidade de Paris, a Sorbonne?",
       "answer": 1257,
@@ -2686,6 +3069,7 @@
       "fact": "Robert de Sorbon deu nome ao colégio."
     },
     {
+      "id": "chute-historia-384",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a Independência dos EUA?",
       "answer": 1776,
@@ -2693,6 +3077,7 @@
       "fact": "A declaração foi aprovada em 4 de julho."
     },
     {
+      "id": "chute-historia-385",
       "difficulty": "medium",
       "text": "Quantos anos Tiradentes tinha quando morreu?",
       "answer": 45,
@@ -2700,6 +3085,7 @@
       "fact": "Ele foi enforcado em 1792."
     },
     {
+      "id": "chute-historia-386",
       "difficulty": "hard",
       "text": "Quantos dias durou a Revolta da Vacina, no Rio, aproximadamente?",
       "answer": 7,
@@ -2707,6 +3093,7 @@
       "fact": "A vacinação obrigatória gerou o conflito."
     },
     {
+      "id": "chute-historia-387",
       "difficulty": "medium",
       "text": "Quantos anos Dom Pedro I tinha na Independência do Brasil?",
       "answer": 23,
@@ -2714,6 +3101,7 @@
       "fact": "Ele nasceu em 1798."
     },
     {
+      "id": "chute-historia-388",
       "difficulty": "medium",
       "text": "Quantos soldados morreram na Primeira Guerra Mundial, em milhões, aproximadamente?",
       "answer": 10,
@@ -2721,6 +3109,7 @@
       "fact": "A guerra das trincheiras foi devastadora."
     },
     {
+      "id": "chute-historia-389",
       "difficulty": "medium",
       "text": "Quantas pessoas morreram na Segunda Guerra Mundial, em milhões, aproximadamente?",
       "answer": 70,
@@ -2728,6 +3117,7 @@
       "fact": "Foi o conflito mais mortal da história."
     },
     {
+      "id": "chute-historia-390",
       "difficulty": "medium",
       "text": "Quanto pesava a bomba Little Boy, em toneladas, aproximadamente?",
       "answer": 4.4,
@@ -2735,6 +3125,7 @@
       "fact": "Ela foi lançada de um avião B-29."
     },
     {
+      "id": "chute-historia-391",
       "difficulty": "medium",
       "text": "Quantos dias durou a Batalha de Stalingrado, aproximadamente?",
       "answer": 200,
@@ -2742,6 +3133,7 @@
       "fact": "Ela foi um ponto de virada da guerra."
     },
     {
+      "id": "chute-historia-392",
       "difficulty": "medium",
       "text": "Quantos dias Napoleão governou depois de voltar de Elba?",
       "answer": 100,
@@ -2749,6 +3141,7 @@
       "fact": "Waterloo pôs fim ao chamado Governo dos Cem Dias."
     },
     {
+      "id": "chute-historia-393",
       "difficulty": "medium",
       "text": "Em que ano, com sinal de menos para antes de Cristo, César cruzou o Rubicão?",
       "answer": -49,
@@ -2756,6 +3149,7 @@
       "fact": "A frase \"a sorte está lançada\" é daquele momento."
     },
     {
+      "id": "chute-historia-394",
       "difficulty": "medium",
       "text": "Em que ano, com sinal de menos para antes de Cristo, aconteceu a Batalha de Maratona?",
       "answer": -490,
@@ -2763,6 +3157,7 @@
       "fact": "A lenda deu origem à corrida."
     },
     {
+      "id": "chute-historia-395",
       "difficulty": "hard",
       "text": "Em que ano, com sinal de menos para antes de Cristo, Augusto se tornou imperador?",
       "answer": -27,
@@ -2770,6 +3165,7 @@
       "fact": "Ele é considerado o primeiro imperador romano."
     },
     {
+      "id": "chute-historia-396",
       "difficulty": "hard",
       "text": "Em que ano, com sinal de menos para antes de Cristo, morreu Tutancâmon, aproximadamente?",
       "answer": -1323,
@@ -2777,6 +3173,7 @@
       "fact": "A tumba dele foi achada em 1922."
     },
     {
+      "id": "chute-historia-397",
       "difficulty": "hard",
       "text": "Em que ano a tumba de Tutancâmon foi encontrada?",
       "answer": 1922,
@@ -2784,6 +3181,7 @@
       "fact": "Howard Carter a encontrou no Vale dos Reis."
     },
     {
+      "id": "chute-historia-398",
       "difficulty": "hard",
       "text": "Quantos anos o Muro de Berlim ficou de pé?",
       "answer": 28,
@@ -2791,6 +3189,7 @@
       "fact": "Ele existiu de 1961 a 1989."
     },
     {
+      "id": "chute-historia-399",
       "difficulty": "hard",
       "text": "Quantos metros tinha o Muro de Berlim de altura, aproximadamente?",
       "answer": 3.6,
@@ -2798,6 +3197,7 @@
       "fact": "Ele cercava toda Berlim Ocidental."
     },
     {
+      "id": "chute-historia-400",
       "difficulty": "hard",
       "text": "Quantos quilômetros tinha o Muro de Berlim, aproximadamente?",
       "answer": 155,
@@ -2805,6 +3205,7 @@
       "fact": "Mais de 100 pessoas morreram tentando cruzá-lo."
     },
     {
+      "id": "chute-historia-401",
       "difficulty": "hard",
       "text": "Quantos dias durou a Crise dos Mísseis de Cuba?",
       "answer": 13,
@@ -2812,6 +3213,7 @@
       "fact": "Foi em outubro de 1962."
     },
     {
+      "id": "chute-historia-402",
       "difficulty": "hard",
       "text": "Quantos anos Mandela ficou preso?",
       "answer": 27,
@@ -2819,6 +3221,7 @@
       "fact": "Ele saiu em 1990."
     },
     {
+      "id": "chute-historia-403",
       "difficulty": "hard",
       "text": "Quantos anos Gengis Khan governou, aproximadamente?",
       "answer": 21,
@@ -2826,6 +3229,7 @@
       "fact": "Ele reinou de 1206 a 1227."
     },
     {
+      "id": "chute-historia-404",
       "difficulty": "hard",
       "text": "Quantos soldados Pizarro tinha em Cajamarca, aproximadamente?",
       "answer": 168,
@@ -2833,6 +3237,7 @@
       "fact": "Ele capturou Atahualpa, apesar dos milhares de guerreiros."
     },
     {
+      "id": "chute-historia-405",
       "difficulty": "hard",
       "text": "Quantas Cruzadas principais a tradição conta, entre os séculos XI e XIII?",
       "answer": 8,
@@ -2840,6 +3245,7 @@
       "fact": "Jerusalém era o grande alvo."
     },
     {
+      "id": "chute-historia-406",
       "difficulty": "easy",
       "text": "Quantos reis magos a tradição conta?",
       "answer": 3,
@@ -2847,6 +3253,7 @@
       "fact": "Eles levaram ouro, incenso e mirra."
     },
     {
+      "id": "chute-historia-407",
       "difficulty": "easy",
       "text": "Quantas caravelas Colombo levou na primeira viagem?",
       "answer": 3,
@@ -2854,6 +3261,7 @@
       "fact": "Eram Santa Maria, Pinta e Niña."
     },
     {
+      "id": "chute-historia-408",
       "difficulty": "medium",
       "text": "Quantos navios Cabral trouxe, aproximadamente, em 1500?",
       "answer": 13,
@@ -2861,6 +3269,7 @@
       "fact": "Eles carregavam cerca de 1.500 homens."
     },
     {
+      "id": "chute-historia-409",
       "difficulty": "hard",
       "text": "Quantos homens Cabral trouxe, aproximadamente, em 1500?",
       "answer": 1500,
@@ -2868,6 +3277,7 @@
       "fact": "O destino oficial era a Índia."
     },
     {
+      "id": "chute-historia-410",
       "difficulty": "easy",
       "text": "Quantos anos durou a Era Vargas inicial, de 1930 a 1945?",
       "answer": 15,
@@ -2875,6 +3285,7 @@
       "fact": "O Estado Novo foi a fase mais dura."
     },
     {
+      "id": "chute-historia-411",
       "difficulty": "medium",
       "text": "Quantos homens tinha a Coluna Prestes, no máximo, aproximadamente?",
       "answer": 1500,
@@ -2882,6 +3293,7 @@
       "fact": "Ela percorreu mais de 25 mil km."
     },
     {
+      "id": "chute-historia-412",
       "difficulty": "medium",
       "text": "Quantos quilômetros a Coluna Prestes percorreu, aproximadamente?",
       "answer": 25000,
@@ -2889,6 +3301,7 @@
       "fact": "Ela nunca foi derrotada de forma definitiva."
     },
     {
+      "id": "chute-historia-413",
       "difficulty": "medium",
       "text": "Quantos anos durou o Reinado de Elizabeth I da Inglaterra?",
       "answer": 44,
@@ -2896,6 +3309,7 @@
       "fact": "Ela governou de 1558 a 1603."
     },
     {
+      "id": "chute-historia-414",
       "difficulty": "medium",
       "text": "Quantas colônias britânicas assinaram a independência dos EUA, em 1776?",
       "answer": 13,
@@ -2903,6 +3317,7 @@
       "fact": "As 13 listras da bandeira lembram esse número."
     },
     {
+      "id": "chute-historia-415",
       "difficulty": "medium",
       "text": "Quantos anos Dom João VI ficou no Brasil, de 1808 a 1821?",
       "answer": 13,
@@ -2910,6 +3325,7 @@
       "fact": "A vinda da corte fugia de Napoleão."
     },
     {
+      "id": "chute-historia-416",
       "difficulty": "easy",
       "text": "Em que ano Barack Obama foi eleito presidente dos Estados Unidos pela primeira vez?",
       "answer": 2008,
@@ -2917,6 +3333,7 @@
       "fact": "Ele foi o primeiro presidente negro do país."
     },
     {
+      "id": "chute-historia-417",
       "difficulty": "easy",
       "text": "Em que ano Donald Trump foi eleito presidente dos Estados Unidos pela primeira vez?",
       "answer": 2016,
@@ -2924,6 +3341,7 @@
       "fact": "Ele venceu Hillary Clinton no colégio eleitoral."
     },
     {
+      "id": "chute-historia-418",
       "difficulty": "easy",
       "text": "Em que ano Jair Bolsonaro foi eleito presidente do Brasil?",
       "answer": 2018,
@@ -2931,6 +3349,7 @@
       "fact": "Ele venceu Fernando Haddad no segundo turno."
     },
     {
+      "id": "chute-historia-419",
       "difficulty": "easy",
       "text": "Em que ano Dilma Rousseff foi eleita presidente pela primeira vez?",
       "answer": 2010,
@@ -2938,6 +3357,7 @@
       "fact": "Ela foi a primeira mulher a presidir o Brasil."
     },
     {
+      "id": "chute-historia-420",
       "difficulty": "easy",
       "text": "Em que ano Fernando Henrique Cardoso assumiu a presidência pela primeira vez?",
       "answer": 1995,
@@ -2945,6 +3365,7 @@
       "fact": "Antes, como ministro da Fazenda, ele lançou o Plano Real."
     },
     {
+      "id": "chute-historia-421",
       "difficulty": "easy",
       "text": "Em que ano Fernando Collor assumiu a presidência?",
       "answer": 1990,
@@ -2952,6 +3373,7 @@
       "fact": "Ele foi o primeiro presidente eleito pelo voto direto depois da ditadura."
     },
     {
+      "id": "chute-historia-422",
       "difficulty": "easy",
       "text": "Em que ano foi a primeira eleição direta para presidente depois da ditadura militar?",
       "answer": 1989,
@@ -2959,6 +3381,7 @@
       "fact": "Collor e Lula disputaram o segundo turno."
     },
     {
+      "id": "chute-historia-423",
       "difficulty": "easy",
       "text": "Em que ano morreu o papa João Paulo II?",
       "answer": 2005,
@@ -2966,6 +3389,7 @@
       "fact": "Ele foi papa por mais de 26 anos."
     },
     {
+      "id": "chute-historia-424",
       "difficulty": "easy",
       "text": "Em que ano Osama bin Laden foi morto?",
       "answer": 2011,
@@ -2973,6 +3397,7 @@
       "fact": "Ele foi encontrado no Paquistão."
     },
     {
+      "id": "chute-historia-425",
       "difficulty": "easy",
       "text": "Em que ano Saddam Hussein foi executado?",
       "answer": 2006,
@@ -2980,6 +3405,7 @@
       "fact": "Ele foi capturado escondido num buraco perto de Tikrit."
     },
     {
+      "id": "chute-historia-426",
       "difficulty": "easy",
       "text": "Em que ano Nelson Mandela saiu da prisão?",
       "answer": 1990,
@@ -2987,6 +3413,7 @@
       "fact": "Quatro anos depois, ele virou presidente da África do Sul."
     },
     {
+      "id": "chute-historia-427",
       "difficulty": "easy",
       "text": "Em que ano começou a Guerra do Golfo, com a invasão do Kuwait pelo Iraque?",
       "answer": 1990,
@@ -2994,6 +3421,7 @@
       "fact": "A guerra foi uma das primeiras transmitidas ao vivo pela TV."
     },
     {
+      "id": "chute-historia-428",
       "difficulty": "easy",
       "text": "Em que ano aconteceram os grandes protestos que começaram contra o aumento da passagem de ônibus?",
       "answer": 2013,
@@ -3001,6 +3429,7 @@
       "fact": "O movimento começou contra um aumento de 20 centavos."
     },
     {
+      "id": "chute-historia-429",
       "difficulty": "easy",
       "text": "Em que ano foi a greve dos caminhoneiros que deixou o Brasil sem combustível?",
       "answer": 2018,
@@ -3008,6 +3437,7 @@
       "fact": "Postos e supermercados ficaram vazios em várias cidades."
     },
     {
+      "id": "chute-historia-430",
       "difficulty": "easy",
       "text": "Quantos anos Lula governou nos dois primeiros mandatos?",
       "answer": 8,
@@ -3015,6 +3445,7 @@
       "fact": "Ele voltou à presidência em 2023."
     },
     {
+      "id": "chute-historia-431",
       "difficulty": "easy",
       "text": "Quantos anos o Brasil foi colônia de Portugal, de 1500 a 1822?",
       "answer": 322,
@@ -3022,6 +3453,7 @@
       "fact": "Por isso o português virou a língua do país."
     },
     {
+      "id": "chute-historia-432",
       "difficulty": "easy",
       "text": "Quantos anos a República brasileira completou em 2025?",
       "answer": 136,
@@ -3029,24 +3461,28 @@
       "fact": "Ela foi proclamada em 15 de novembro."
     },
     {
+      "id": "chute-historia-433",
       "difficulty": "easy",
       "text": "Em que século Cabral chegou ao Brasil?",
       "answer": 16,
       "fact": "O século XVI vai de 1501 a 1600."
     },
     {
+      "id": "chute-historia-434",
       "difficulty": "easy",
       "text": "Em que século aconteceu a Independência do Brasil?",
       "answer": 19,
       "fact": "O século XIX vai de 1801 a 1900."
     },
     {
+      "id": "chute-historia-435",
       "difficulty": "easy",
       "text": "Em que século viveu Tiradentes?",
       "answer": 18,
       "fact": "Ele foi enforcado no Rio de Janeiro."
     },
     {
+      "id": "chute-historia-436",
       "difficulty": "easy",
       "text": "Quantas guerras mundiais já aconteceram?",
       "answer": 2,
@@ -3054,6 +3490,7 @@
       "fact": "As duas aconteceram no século XX."
     },
     {
+      "id": "chute-historia-437",
       "difficulty": "easy",
       "text": "Quantas bombas atômicas já foram usadas numa guerra?",
       "answer": 2,
@@ -3061,6 +3498,7 @@
       "fact": "Elas caíram sobre Hiroshima e Nagasaki, em 1945."
     },
     {
+      "id": "chute-historia-438",
       "difficulty": "easy",
       "text": "Com quantos anos a rainha Elizabeth II morreu?",
       "answer": 96,
@@ -3068,6 +3506,7 @@
       "fact": "Ela morreu no castelo de Balmoral, na Escócia."
     },
     {
+      "id": "chute-historia-439",
       "difficulty": "easy",
       "text": "Com quantos anos John Kennedy foi assassinado?",
       "answer": 46,
@@ -3075,6 +3514,7 @@
       "fact": "Ele levou tiros enquanto desfilava em carro aberto em Dallas."
     },
     {
+      "id": "chute-historia-440",
       "difficulty": "easy",
       "text": "Com quantos anos Martin Luther King foi assassinado?",
       "answer": 39,
@@ -3082,6 +3522,7 @@
       "fact": "Ele ganhou o Nobel da Paz aos 35 anos."
     },
     {
+      "id": "chute-historia-441",
       "difficulty": "easy",
       "text": "Com quantos anos Getúlio Vargas morreu?",
       "answer": 72,
@@ -3089,6 +3530,7 @@
       "fact": "Ele deixou uma carta-testamento famosa."
     },
     {
+      "id": "chute-historia-442",
       "difficulty": "easy",
       "text": "Com quantos anos Dom Pedro I morreu?",
       "answer": 35,
@@ -3096,6 +3538,7 @@
       "fact": "Ele morreu em Portugal, onde também foi rei."
     },
     {
+      "id": "chute-historia-443",
       "difficulty": "easy",
       "text": "Com quantos anos Napoleão Bonaparte morreu?",
       "answer": 51,
@@ -3103,6 +3546,7 @@
       "fact": "Ele morreu exilado na ilha de Santa Helena."
     },
     {
+      "id": "chute-historia-444",
       "difficulty": "easy",
       "text": "Com quantos anos Lula assumiu a presidência pela primeira vez?",
       "answer": 57,
@@ -3110,6 +3554,7 @@
       "fact": "Antes da política, ele foi metalúrgico e líder sindical."
     },
     {
+      "id": "chute-historia-445",
       "difficulty": "easy",
       "text": "Em que ano Fidel Castro chegou ao poder em Cuba?",
       "answer": 1959,
@@ -3117,6 +3562,7 @@
       "fact": "Ele governou o país por quase cinco décadas."
     },
     {
+      "id": "chute-historia-446",
       "difficulty": "easy",
       "text": "Quantos anos o PT ficou na presidência, de 2003 a 2016?",
       "answer": 13,
@@ -3124,6 +3570,7 @@
       "fact": "O período terminou com o impeachment de Dilma Rousseff."
     },
     {
+      "id": "chute-historia-447",
       "difficulty": "easy",
       "text": "Quantos anos durou a Guerra dos Trinta Anos?",
       "answer": 30,
@@ -3131,6 +3578,7 @@
       "fact": "Ela devastou boa parte da Europa Central no século XVII."
     },
     {
+      "id": "chute-historia-448",
       "difficulty": "easy",
       "text": "Em que ano Lula foi preso?",
       "answer": 2018,
@@ -3138,6 +3586,7 @@
       "fact": "Ele ficou 580 dias preso em Curitiba."
     },
     {
+      "id": "chute-historia-449",
       "difficulty": "easy",
       "text": "Em que ano morreu Hugo Chávez, presidente da Venezuela?",
       "answer": 2013,
@@ -3145,6 +3594,7 @@
       "fact": "Ele governou o país por 14 anos."
     },
     {
+      "id": "chute-historia-450",
       "difficulty": "easy",
       "text": "Em que ano a Rússia anexou a Crimeia?",
       "answer": 2014,
@@ -3152,6 +3602,7 @@
       "fact": "A península pertencia à Ucrânia."
     },
     {
+      "id": "chute-historia-451",
       "difficulty": "easy",
       "text": "Em que ano os Estados Unidos retiraram as tropas do Afeganistão?",
       "answer": 2021,
@@ -3159,6 +3610,7 @@
       "fact": "O Talibã voltou ao poder logo depois."
     },
     {
+      "id": "chute-historia-452",
       "difficulty": "easy",
       "text": "Em que ano começou a guerra entre Israel e o Hamas, depois do ataque de 7 de outubro?",
       "answer": 2023,

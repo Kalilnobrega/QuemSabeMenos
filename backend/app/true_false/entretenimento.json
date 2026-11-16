@@ -2,576 +2,672 @@
   "theme": "Entretenimento",
   "statements": [
     {
+      "id": "vf-entretenimento-1",
       "difficulty": "medium",
       "text": "Titanic ganhou o Oscar de melhor filme.",
       "answer": true,
       "fact": "Titanic ganhou 11 Oscars em 1998, recorde que divide com Ben-Hur e O Senhor dos Anéis: O Retorno do Rei."
     },
     {
+      "id": "vf-entretenimento-2",
       "difficulty": "medium",
       "text": "Harry Potter estuda na escola de magia Beauxbatons.",
       "answer": false,
       "fact": "Harry estuda em Hogwarts. Beauxbatons é a escola francesa que aparece em O Cálice de Fogo."
     },
     {
+      "id": "vf-entretenimento-3",
       "difficulty": "medium",
       "text": "Os Beatles eram de Liverpool.",
       "answer": true,
       "fact": "Os quatro integrantes nasceram em Liverpool, na Inglaterra, onde a banda começou tocando no Cavern Club."
     },
     {
+      "id": "vf-entretenimento-4",
       "difficulty": "medium",
       "text": "O Rei Leão se passa na Índia.",
       "answer": false,
       "fact": "O Rei Leão se passa na savana africana, e vários nomes vêm do suaíli: Simba quer dizer leão."
     },
     {
+      "id": "vf-entretenimento-5",
       "difficulty": "medium",
       "text": "O Xou da Xuxa era exibido na TV Globo.",
       "answer": true,
       "fact": "O programa ficou no ar de 1986 a 1992 e lançou músicas como Ilariê."
     },
     {
+      "id": "vf-entretenimento-6",
       "difficulty": "medium",
       "text": "A série Friends se passa em Los Angeles.",
       "answer": false,
       "fact": "Friends se passa em Nova York, e a maior parte das cenas acontece no café Central Perk."
     },
     {
+      "id": "vf-entretenimento-7",
       "difficulty": "medium",
       "text": "Darth Vader é o pai de Luke Skywalker.",
       "answer": true,
       "fact": "A revelação está em O Império Contra-Ataca, de 1980, e foi guardada em segredo até do elenco."
     },
     {
+      "id": "vf-entretenimento-8",
       "difficulty": "medium",
       "text": "Michael Jackson lançou o álbum Thriller nos anos 1990.",
       "answer": false,
       "fact": "Thriller é de 1982 e é considerado o álbum mais vendido da história."
     },
     {
+      "id": "vf-entretenimento-9",
       "difficulty": "medium",
       "text": "Chaves é uma série mexicana.",
       "answer": true,
       "fact": "Chaves foi criado por Roberto Gómez Bolaños, que também fazia o personagem, e estreou em 1971."
     },
     {
+      "id": "vf-entretenimento-10",
       "difficulty": "medium",
       "text": "Shrek é um personagem da Pixar.",
       "answer": false,
       "fact": "Shrek é da DreamWorks. O primeiro filme, de 2001, ganhou o primeiro Oscar de melhor animação."
     },
     {
+      "id": "vf-entretenimento-11",
       "difficulty": "hard",
       "text": "Toy Story foi o primeiro longa-metragem feito todo em computação gráfica.",
       "answer": true,
       "fact": "Toy Story é de 1995. A Pixar levou cerca de quatro anos para terminar o filme."
     },
     {
+      "id": "vf-entretenimento-12",
       "difficulty": "hard",
       "text": "Cidade de Deus foi o primeiro filme brasileiro indicado ao Oscar de melhor filme.",
       "answer": false,
       "fact": "Cidade de Deus foi indicado em quatro categorias, mas não em melhor filme. O primeiro foi Ainda Estou Aqui, em 2025."
     },
     {
+      "id": "vf-entretenimento-13",
       "difficulty": "hard",
       "text": "A série Breaking Bad se passa em Albuquerque, no Novo México.",
       "answer": true,
       "fact": "A cidade virou ponto turístico: a casa de Walter White recebia tantos fãs que os donos colocaram uma cerca."
     },
     {
+      "id": "vf-entretenimento-14",
       "difficulty": "hard",
       "text": "O Senhor dos Anéis foi escrito por C. S. Lewis.",
       "answer": false,
       "fact": "O Senhor dos Anéis é de J. R. R. Tolkien. C. S. Lewis, amigo dele, escreveu As Crônicas de Nárnia."
     },
     {
+      "id": "vf-entretenimento-15",
       "difficulty": "hard",
       "text": "Tom Jobim é um dos compositores de Garota de Ipanema.",
       "answer": true,
       "fact": "Garota de Ipanema é de Tom Jobim e Vinicius de Moraes, de 1962. É uma das músicas mais gravadas do mundo."
     },
     {
+      "id": "vf-entretenimento-16",
       "difficulty": "hard",
       "text": "O primeiro filme de James Bond foi 007 Contra Goldfinger.",
       "answer": false,
       "fact": "O primeiro foi 007 Contra o Satânico Dr. No, de 1962, com Sean Connery."
     },
     {
+      "id": "vf-entretenimento-17",
       "difficulty": "hard",
       "text": "Elvis Presley nunca fez shows fora da América do Norte.",
       "answer": true,
       "fact": "Fora dos Estados Unidos, Elvis só se apresentou no Canadá, em 1957."
     },
     {
+      "id": "vf-entretenimento-18",
       "difficulty": "hard",
       "text": "A Turma da Mônica foi criada por Ziraldo.",
       "answer": false,
       "fact": "A Turma da Mônica é de Mauricio de Sousa. Ziraldo criou o Menino Maluquinho e a Turma do Pererê."
     },
     {
+      "id": "vf-entretenimento-19",
       "difficulty": "hard",
       "text": "O Pica-Pau foi criado por Walter Lantz.",
       "answer": true,
       "fact": "O Pica-Pau estreou em 1940. A risada característica foi feita no começo por Mel Blanc."
     },
     {
+      "id": "vf-entretenimento-20",
       "difficulty": "hard",
       "text": "A banda Legião Urbana surgiu em São Paulo.",
       "answer": false,
       "fact": "A Legião Urbana surgiu em Brasília, em 1982, assim como Capital Inicial e Plebe Rude."
     },
     {
+      "id": "vf-entretenimento-21",
       "difficulty": "medium",
       "text": "Tom Hanks ganhou dois Oscars seguidos.",
       "answer": true,
       "fact": "Foi por \"Filadélfia\" e \"Forrest Gump\"."
     },
     {
+      "id": "vf-entretenimento-22",
       "difficulty": "medium",
       "text": "Leonardo DiCaprio ganhou seu primeiro Oscar por \"Titanic\".",
       "answer": false,
       "fact": "Ele ganhou por \"O Regresso\", em 2016."
     },
     {
+      "id": "vf-entretenimento-23",
       "difficulty": "medium",
       "text": "Heath Ledger ganhou o Oscar depois de morrer.",
       "answer": true,
       "fact": "Foi pelo papel de Coringa em \"Batman: O Cavaleiro das Trevas\"."
     },
     {
+      "id": "vf-entretenimento-24",
       "difficulty": "medium",
       "text": "Robert Downey Jr. interpretou o Capitão América.",
       "answer": false,
       "fact": "Ele interpretou o Homem de Ferro."
     },
     {
+      "id": "vf-entretenimento-25",
       "difficulty": "medium",
       "text": "Chris Evans interpretou o Capitão América.",
       "answer": true,
       "fact": "Ele já tinha sido o Tocha Humana."
     },
     {
+      "id": "vf-entretenimento-26",
       "difficulty": "medium",
       "text": "Thanos é um vilão da DC Comics.",
       "answer": false,
       "fact": "Thanos é da Marvel."
     },
     {
+      "id": "vf-entretenimento-27",
       "difficulty": "medium",
       "text": "Superman nasceu em Krypton.",
       "answer": true,
       "fact": "Os pais dele o enviaram à Terra."
     },
     {
+      "id": "vf-entretenimento-28",
       "difficulty": "medium",
       "text": "Batman nasceu em Krypton.",
       "answer": false,
       "fact": "O Batman é Bruce Wayne, um humano de Gotham."
     },
     {
+      "id": "vf-entretenimento-29",
       "difficulty": "medium",
       "text": "Wakanda é o país do Pantera Negra.",
       "answer": true,
       "fact": "É um país fictício da África."
     },
     {
+      "id": "vf-entretenimento-30",
       "difficulty": "medium",
       "text": "Stan Lee ajudou a criar o Homem-Aranha.",
       "answer": true,
       "fact": "Steve Ditko também é cocriador."
     },
     {
+      "id": "vf-entretenimento-31",
       "difficulty": "medium",
       "text": "Yoda é um personagem de \"Star Trek\".",
       "answer": false,
       "fact": "Ele é de \"Star Wars\"."
     },
     {
+      "id": "vf-entretenimento-32",
       "difficulty": "medium",
       "text": "Han Solo é o pai de Luke Skywalker.",
       "answer": false,
       "fact": "O pai é Darth Vader."
     },
     {
+      "id": "vf-entretenimento-33",
       "difficulty": "medium",
       "text": "Frodo é o portador do Um Anel.",
       "answer": true,
       "fact": "Sam o ajuda até o fim."
     },
     {
+      "id": "vf-entretenimento-34",
       "difficulty": "medium",
       "text": "Hogwarts é uma escola de magia.",
       "answer": true,
       "fact": "Ela fica na Escócia."
     },
     {
+      "id": "vf-entretenimento-35",
       "difficulty": "medium",
       "text": "Harry Potter é da casa Sonserina.",
       "answer": false,
       "fact": "Ele é da Grifinória."
     },
     {
+      "id": "vf-entretenimento-36",
       "difficulty": "medium",
       "text": "Hermione Granger é filha de pais trouxas.",
       "answer": true,
       "fact": "Os pais dela são dentistas."
     },
     {
+      "id": "vf-entretenimento-37",
       "difficulty": "medium",
       "text": "Dumbledore é um personagem de \"O Senhor dos Anéis\".",
       "answer": false,
       "fact": "Ele é de \"Harry Potter\"."
     },
     {
+      "id": "vf-entretenimento-38",
       "difficulty": "medium",
       "text": "Shrek é um ogro.",
       "answer": true,
       "fact": "O primeiro filme é de 2001."
     },
     {
+      "id": "vf-entretenimento-39",
       "difficulty": "medium",
       "text": "Simba é um tigre.",
       "answer": false,
       "fact": "Simba é um leão."
     },
     {
+      "id": "vf-entretenimento-40",
       "difficulty": "medium",
       "text": "Elsa tem poderes de gelo.",
       "answer": true,
       "fact": "Ela é rainha de Arendelle."
     },
     {
+      "id": "vf-entretenimento-41",
       "difficulty": "medium",
       "text": "Ariel é uma princesa do Egito.",
       "answer": false,
       "fact": "Ela é uma sereia."
     },
     {
+      "id": "vf-entretenimento-42",
       "difficulty": "medium",
       "text": "Nemo é um peixe-palhaço.",
       "answer": true,
       "fact": "O filme é de 2003."
     },
     {
+      "id": "vf-entretenimento-43",
       "difficulty": "medium",
       "text": "Woody é um astronauta.",
       "answer": false,
       "fact": "Woody é um cowboy, e Buzz é o astronauta."
     },
     {
+      "id": "vf-entretenimento-44",
       "difficulty": "medium",
       "text": "Mickey Mouse estreou em 1928.",
       "answer": true,
       "fact": "O desenho se chama \"Steamboat Willie\"."
     },
     {
+      "id": "vf-entretenimento-45",
       "difficulty": "medium",
       "text": "Bob Esponja mora em uma lata.",
       "answer": false,
       "fact": "Ele mora em um abacaxi."
     },
     {
+      "id": "vf-entretenimento-46",
       "difficulty": "medium",
       "text": "Homer Simpson trabalha em uma usina nuclear.",
       "answer": true,
       "fact": "O chefe dele é o Sr. Burns."
     },
     {
+      "id": "vf-entretenimento-47",
       "difficulty": "medium",
       "text": "Os Simpsons moram em Nova York.",
       "answer": false,
       "fact": "Eles moram em Springfield."
     },
     {
+      "id": "vf-entretenimento-48",
       "difficulty": "medium",
       "text": "Friends se passa em Nova York.",
       "answer": true,
       "fact": "Os amigos se encontram no café Central Perk."
     },
     {
+      "id": "vf-entretenimento-49",
       "difficulty": "medium",
       "text": "Breaking Bad é sobre um advogado.",
       "answer": false,
       "fact": "É sobre um professor de química que fabrica drogas."
     },
     {
+      "id": "vf-entretenimento-50",
       "difficulty": "medium",
       "text": "Stranger Things se passa nos anos 1980.",
       "answer": true,
       "fact": "A cidade fictícia se chama Hawkins."
     },
     {
+      "id": "vf-entretenimento-51",
       "difficulty": "medium",
       "text": "Round 6 é uma série japonesa.",
       "answer": false,
       "fact": "É uma série sul-coreana."
     },
     {
+      "id": "vf-entretenimento-52",
       "difficulty": "medium",
       "text": "La Casa de Papel é uma série espanhola.",
       "answer": true,
       "fact": "A Netflix a tornou mundial."
     },
     {
+      "id": "vf-entretenimento-53",
       "difficulty": "hard",
       "text": "\"Parasita\" é um filme japonês.",
       "answer": false,
       "fact": "É um filme sul-coreano."
     },
     {
+      "id": "vf-entretenimento-54",
       "difficulty": "hard",
       "text": "\"Parasita\" foi o primeiro filme não falado em inglês a vencer o Oscar de Melhor Filme.",
       "answer": true,
       "fact": "A premiação foi em 2020."
     },
     {
+      "id": "vf-entretenimento-55",
       "difficulty": "hard",
       "text": "\"Titanic\" ganhou 15 Oscars.",
       "answer": false,
       "fact": "Ganhou 11, o recorde empatado com outros dois filmes."
     },
     {
+      "id": "vf-entretenimento-56",
       "difficulty": "hard",
       "text": "\"O Rei Leão\" tem cenas inspiradas em Hamlet.",
       "answer": true,
       "fact": "A história tem um tio que mata o rei, pai do herói."
     },
     {
+      "id": "vf-entretenimento-57",
       "difficulty": "hard",
       "text": "\"Cidadão Kane\" foi um grande sucesso de bilheteria em 1941.",
       "answer": false,
       "fact": "Foi um fracasso, e só depois virou clássico."
     },
     {
+      "id": "vf-entretenimento-58",
       "difficulty": "hard",
       "text": "\"Rosebud\" é o nome do trenó de Charles Foster Kane.",
       "answer": true,
       "fact": "Essa é a última palavra dele."
     },
     {
+      "id": "vf-entretenimento-59",
       "difficulty": "hard",
       "text": "Hitchcock ganhou o Oscar de Melhor Direção cinco vezes.",
       "answer": false,
       "fact": "Ele nunca ganhou um Oscar de direção competitivo."
     },
     {
+      "id": "vf-entretenimento-60",
       "difficulty": "hard",
       "text": "A cena do chuveiro de \"Psicose\" usou calda de chocolate como sangue.",
       "answer": true,
       "fact": "O filme é em preto e branco."
     },
     {
+      "id": "vf-entretenimento-61",
       "difficulty": "hard",
       "text": "\"O Mágico de Oz\" foi filmado todo em preto e branco.",
       "answer": false,
       "fact": "A parte em Oz é colorida."
     },
     {
+      "id": "vf-entretenimento-62",
       "difficulty": "hard",
       "text": "James Cameron dirigiu \"Titanic\" e \"Avatar\".",
       "answer": true,
       "fact": "Os dois foram os filmes mais lucrativos de suas épocas."
     },
     {
+      "id": "vf-entretenimento-63",
       "difficulty": "hard",
       "text": "Steven Spielberg dirigiu \"Star Wars\".",
       "answer": false,
       "fact": "Foi George Lucas."
     },
     {
+      "id": "vf-entretenimento-64",
       "difficulty": "hard",
       "text": "George Lucas e Spielberg criaram Indiana Jones juntos.",
       "answer": true,
       "fact": "Harrison Ford foi escolhido para o papel."
     },
     {
+      "id": "vf-entretenimento-65",
       "difficulty": "hard",
       "text": "Marlon Brando aceitou com alegria o Oscar por \"O Poderoso Chefão\".",
       "answer": false,
       "fact": "Ele recusou o prêmio, em protesto."
     },
     {
+      "id": "vf-entretenimento-66",
       "difficulty": "hard",
       "text": "Al Pacino quase foi rejeitado pelo estúdio para \"O Poderoso Chefão\".",
       "answer": true,
       "fact": "Coppola insistiu nele."
     },
     {
+      "id": "vf-entretenimento-67",
       "difficulty": "hard",
       "text": "Tom Hanks interpretou Rambo.",
       "answer": false,
       "fact": "Foi Sylvester Stallone."
     },
     {
+      "id": "vf-entretenimento-68",
       "difficulty": "hard",
       "text": "Stallone escreveu o roteiro de \"Rocky\".",
       "answer": true,
       "fact": "Ele só vendeu com a condição de ser o protagonista."
     },
     {
+      "id": "vf-entretenimento-69",
       "difficulty": "hard",
       "text": "Rocky Balboa é de Chicago.",
       "answer": false,
       "fact": "Ele é da Filadélfia."
     },
     {
+      "id": "vf-entretenimento-70",
       "difficulty": "hard",
       "text": "Keanu Reeves nasceu no Líbano.",
       "answer": true,
       "fact": "Ele cresceu em Toronto, no Canadá."
     },
     {
+      "id": "vf-entretenimento-71",
       "difficulty": "hard",
       "text": "Julia Roberts ganhou o Oscar por \"Uma Linda Mulher\".",
       "answer": false,
       "fact": "Ela ganhou por \"Erin Brockovich\"."
     },
     {
+      "id": "vf-entretenimento-72",
       "difficulty": "hard",
       "text": "Meryl Streep tem mais de 20 indicações ao Oscar.",
       "answer": true,
       "fact": "É a recordista entre atores."
     },
     {
+      "id": "vf-entretenimento-73",
       "difficulty": "hard",
       "text": "Audrey Hepburn nunca ganhou um Oscar.",
       "answer": false,
       "fact": "Ela ganhou por \"A Princesa e o Plebeu\"."
     },
     {
+      "id": "vf-entretenimento-74",
       "difficulty": "hard",
       "text": "Grace Kelly virou princesa de Mônaco.",
       "answer": true,
       "fact": "Ela abandonou o cinema depois de se casar."
     },
     {
+      "id": "vf-entretenimento-75",
       "difficulty": "hard",
       "text": "Marilyn Monroe é a atriz de \"Bonequinha de Luxo\".",
       "answer": false,
       "fact": "Foi Audrey Hepburn."
     },
     {
+      "id": "vf-entretenimento-76",
       "difficulty": "hard",
       "text": "Fernanda Torres é filha de Fernanda Montenegro.",
       "answer": true,
       "fact": "As duas têm ligação com o Oscar."
     },
     {
+      "id": "vf-entretenimento-77",
       "difficulty": "hard",
       "text": "Wagner Moura interpretou Pablo Escobar em um filme americano de 2002.",
       "answer": false,
       "fact": "Ele fez esse papel na série \"Narcos\", de 2015."
     },
     {
+      "id": "vf-entretenimento-78",
       "difficulty": "hard",
       "text": "Wagner Moura interpretou o Capitão Nascimento.",
       "answer": true,
       "fact": "O filme é \"Tropa de Elite\"."
     },
     {
+      "id": "vf-entretenimento-79",
       "difficulty": "hard",
       "text": "\"Cidade de Deus\" se passa em São Paulo.",
       "answer": false,
       "fact": "Ele se passa no Rio de Janeiro."
     },
     {
+      "id": "vf-entretenimento-80",
       "difficulty": "hard",
       "text": "\"Central do Brasil\" foi dirigido por Walter Salles.",
       "answer": true,
       "fact": "Ele também dirigiu \"Ainda Estou Aqui\"."
     },
     {
+      "id": "vf-entretenimento-81",
       "difficulty": "hard",
       "text": "\"Bacurau\" é um filme argentino.",
       "answer": false,
       "fact": "É um filme brasileiro, de Kleber Mendonça Filho."
     },
     {
+      "id": "vf-entretenimento-82",
       "difficulty": "hard",
       "text": "Seu Madruga é o dono da vila do Chaves.",
       "answer": false,
       "fact": "O dono é o Senhor Barriga."
     },
     {
+      "id": "vf-entretenimento-83",
       "difficulty": "hard",
       "text": "Silvio Santos foi o dono do SBT.",
       "answer": true,
       "fact": "Ele morreu em 2024."
     },
     {
+      "id": "vf-entretenimento-84",
       "difficulty": "hard",
       "text": "Xuxa foi a primeira apresentadora do \"Jornal Nacional\".",
       "answer": false,
       "fact": "Ela ficou famosa em programas infantis."
     },
     {
+      "id": "vf-entretenimento-85",
       "difficulty": "hard",
       "text": "Cid Moreira foi o primeiro apresentador do \"Jornal Nacional\".",
       "answer": true,
       "fact": "Ele apresentou por 27 anos."
     },
     {
+      "id": "vf-entretenimento-86",
       "difficulty": "medium",
       "text": "A Mulher-Maravilha é uma personagem da Marvel.",
       "answer": false,
       "fact": "Ela pertence à DC Comics."
     },
     {
+      "id": "vf-entretenimento-87",
       "difficulty": "medium",
       "text": "Darth Vader se chamava Anakin Skywalker antes de ir para o lado sombrio.",
       "answer": true,
       "fact": "Ele foi um cavaleiro Jedi."
     },
     {
+      "id": "vf-entretenimento-88",
       "difficulty": "medium",
       "text": "Gandalf é um hobbit do Condado.",
       "answer": false,
       "fact": "Ele é um mago, bem mais velho que os hobbits."
     },
     {
+      "id": "vf-entretenimento-89",
       "difficulty": "hard",
       "text": "Roberto Gómez Bolaños criou e interpretou o Chaves.",
       "answer": true,
       "fact": "O apelido dele era Chespirito."
     },
     {
+      "id": "vf-entretenimento-90",
       "difficulty": "medium",
       "text": "Rodrigo Santoro interpretou Xerxes em \"300\".",
       "answer": true,
       "fact": "O filme é de 2006."
     },
     {
+      "id": "vf-entretenimento-91",
       "difficulty": "medium",
       "text": "Leonardo DiCaprio protagonizou \"Forrest Gump\".",
       "answer": false,
       "fact": "Quem fez o papel foi Tom Hanks."
     },
     {
+      "id": "vf-entretenimento-92",
       "difficulty": "medium",
       "text": "Frodo é o protagonista de \"Harry Potter\".",
       "answer": false,
       "fact": "Ele é o protagonista de \"O Senhor dos Anéis\"."
     },
     {
+      "id": "vf-entretenimento-93",
       "difficulty": "medium",
       "text": "Stan Lee participou de muitos filmes da Marvel em pequenas pontas.",
       "answer": true,
       "fact": "Ele apareceu até depois de sua morte, em 2018."
     },
     {
+      "id": "vf-entretenimento-94",
       "difficulty": "hard",
       "text": "O primeiro \"Star Wars\" estreou em 1990.",
       "answer": false,
       "fact": "Ele estreou em 1977."
     },
     {
+      "id": "vf-entretenimento-95",
       "difficulty": "hard",
       "text": "Fernanda Torres ganhou um Globo de Ouro por \"Ainda Estou Aqui\".",
       "answer": true,
       "fact": "A atriz é filha de Fernanda Montenegro."
     },
     {
+      "id": "vf-entretenimento-96",
       "difficulty": "hard",
       "text": "\"Cidade de Deus\" foi dirigido por Walter Salles.",
       "answer": false,

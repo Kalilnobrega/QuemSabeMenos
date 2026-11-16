@@ -170,12 +170,11 @@ class EstimateFile(BaseModel):
 
 
 def load_estimates(directory: Path = ESTIMATES_DIR) -> list[EstimateQuestion]:
-    """Lê estimates/<tema>.json. O id de cada pergunta é chute-<arquivo>-<posição>."""
+    """Lê estimates/<tema>.json. Cada pergunta traz o próprio id (chute-<arquivo>-<número>), que nunca muda."""
     bank = []
     for path in sorted(directory.glob("*.json")):
         data = EstimateFile.model_validate(json.loads(path.read_text()))
-        for i, raw in enumerate(data.questions, start=1):
-            bank.append(EstimateQuestion(id=f"chute-{path.stem}-{i}", theme=data.theme, **raw))
+        bank += [EstimateQuestion(theme=data.theme, **raw) for raw in data.questions]
     return bank
 
 

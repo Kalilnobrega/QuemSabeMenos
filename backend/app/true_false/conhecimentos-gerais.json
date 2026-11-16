@@ -2,576 +2,672 @@
   "theme": "Conhecimentos gerais",
   "statements": [
     {
+      "id": "vf-conhecimentos-gerais-1",
       "difficulty": "medium",
       "text": "Um ano bissexto tem 366 dias.",
       "answer": true,
       "fact": "O dia a mais é 29 de fevereiro. Anos terminados em 00 só são bissextos se forem divisíveis por 400, como 2000."
     },
     {
+      "id": "vf-conhecimentos-gerais-2",
       "difficulty": "medium",
       "text": "O arco-íris tem cinco cores.",
       "answer": false,
       "fact": "Tradicionalmente o arco-íris tem sete cores: vermelho, laranja, amarelo, verde, azul, anil e violeta."
     },
     {
+      "id": "vf-conhecimentos-gerais-3",
       "difficulty": "medium",
       "text": "Parte das igrejas ortodoxas comemora o Natal em 7 de janeiro.",
       "answer": true,
       "fact": "Essas igrejas seguem o calendário juliano, que hoje está 13 dias atrás do calendário que usamos."
     },
     {
+      "id": "vf-conhecimentos-gerais-4",
       "difficulty": "medium",
       "text": "A Estátua da Liberdade foi um presente da Inglaterra aos Estados Unidos.",
       "answer": false,
       "fact": "A estátua foi um presente da França, inaugurada em Nova York em 1886. A estrutura interna é de Gustave Eiffel."
     },
     {
+      "id": "vf-conhecimentos-gerais-5",
       "difficulty": "medium",
       "text": "O alfabeto da língua portuguesa tem 26 letras.",
       "answer": true,
       "fact": "K, W e Y voltaram oficialmente ao alfabeto com o Acordo Ortográfico de 1990."
     },
     {
+      "id": "vf-conhecimentos-gerais-6",
       "difficulty": "medium",
       "text": "No Brasil, o dia mais longo do ano é em junho.",
       "answer": false,
       "fact": "No Hemisfério Sul, o dia mais longo é no solstício de dezembro. Em junho acontece o dia mais curto."
     },
     {
+      "id": "vf-conhecimentos-gerais-7",
       "difficulty": "medium",
       "text": "A Grande Muralha da China não pode ser vista a olho nu da Lua.",
       "answer": true,
       "fact": "É um mito: a muralha é comprida, mas estreita demais para ser vista de tão longe."
     },
     {
+      "id": "vf-conhecimentos-gerais-8",
       "difficulty": "medium",
       "text": "Um quilo de algodão pesa menos que um quilo de ferro.",
       "answer": false,
       "fact": "Os dois pesam exatamente um quilo. O algodão só ocupa muito mais espaço."
     },
     {
+      "id": "vf-conhecimentos-gerais-9",
       "difficulty": "medium",
       "text": "No Brasil, o número de emergência do SAMU é 192.",
       "answer": true,
       "fact": "O 190 é da Polícia Militar e o 193 é dos Bombeiros."
     },
     {
+      "id": "vf-conhecimentos-gerais-10",
       "difficulty": "medium",
       "text": "O símbolo @ se chama cerquilha.",
       "answer": false,
       "fact": "O @ é a arroba. A cerquilha é o símbolo #, também chamado de jogo da velha."
     },
     {
+      "id": "vf-conhecimentos-gerais-11",
       "difficulty": "hard",
       "text": "O Cristo Redentor é uma das sete maravilhas do mundo moderno.",
       "answer": true,
       "fact": "As sete maravilhas modernas foram eleitas numa votação mundial anunciada em 2007, em Lisboa."
     },
     {
+      "id": "vf-conhecimentos-gerais-12",
       "difficulty": "hard",
       "text": "Big Ben é o nome da torre do relógio do Parlamento, em Londres.",
       "answer": false,
       "fact": "Big Ben é o nome do sino. A torre se chama Elizabeth Tower desde 2012."
     },
     {
+      "id": "vf-conhecimentos-gerais-13",
       "difficulty": "hard",
       "text": "A ONU foi fundada em 1945.",
       "answer": true,
       "fact": "A ONU foi criada logo depois da Segunda Guerra Mundial, com 51 países. Hoje tem 193."
     },
     {
+      "id": "vf-conhecimentos-gerais-14",
       "difficulty": "hard",
       "text": "A cerimônia do Oscar acontece em Nova York.",
       "answer": false,
       "fact": "O Oscar é entregue em Los Angeles, no Dolby Theatre, em Hollywood."
     },
     {
+      "id": "vf-conhecimentos-gerais-15",
       "difficulty": "hard",
       "text": "Os primeiros Jogos Olímpicos da era moderna foram em Atenas, em 1896.",
       "answer": true,
       "fact": "Os Jogos foram recriados pelo francês Pierre de Coubertin. Em 1896, só homens competiram."
     },
     {
+      "id": "vf-conhecimentos-gerais-16",
       "difficulty": "hard",
       "text": "Todos os Prêmios Nobel são entregues na Suíça.",
       "answer": false,
       "fact": "Os prêmios são entregues em Estocolmo, na Suécia, e o da Paz em Oslo, na Noruega."
     },
     {
+      "id": "vf-conhecimentos-gerais-17",
       "difficulty": "hard",
       "text": "Em código Morse, SOS é três pontos, três traços e três pontos.",
       "answer": true,
       "fact": "O SOS foi escolhido por ser fácil de transmitir e reconhecer, e não é a sigla de nenhuma frase."
     },
     {
+      "id": "vf-conhecimentos-gerais-18",
       "difficulty": "hard",
       "text": "O inglês é a língua com mais falantes nativos no mundo.",
       "answer": false,
       "fact": "O mandarim tem mais falantes nativos. O inglês só lidera quando se somam os que falam como segunda língua."
     },
     {
+      "id": "vf-conhecimentos-gerais-19",
       "difficulty": "hard",
       "text": "Na escala Richter, cada ponto a mais é um tremor com amplitude cerca de 10 vezes maior.",
       "answer": true,
       "fact": "Em energia liberada, cada ponto a mais equivale a cerca de 32 vezes mais."
     },
     {
+      "id": "vf-conhecimentos-gerais-20",
       "difficulty": "hard",
       "text": "A Bíblia tem o mesmo número de livros em todas as igrejas cristãs.",
       "answer": false,
       "fact": "A Bíblia protestante tem 66 livros, a católica tem 73, e algumas ortodoxas têm ainda mais."
     },
     {
+      "id": "vf-conhecimentos-gerais-21",
       "difficulty": "medium",
       "text": "A Torre de Pisa é inclinada.",
       "answer": true,
       "fact": "O solo mole cedeu durante a própria construção."
     },
     {
+      "id": "vf-conhecimentos-gerais-22",
       "difficulty": "medium",
       "text": "Um elefante é mais leve que um cavalo.",
       "answer": false,
       "fact": "Um elefante pesa várias toneladas."
     },
     {
+      "id": "vf-conhecimentos-gerais-23",
       "difficulty": "medium",
       "text": "O chiclete leva sete anos para sair do estômago.",
       "answer": false,
       "fact": "Ele é eliminado em poucos dias, como outros alimentos."
     },
     {
+      "id": "vf-conhecimentos-gerais-24",
       "difficulty": "medium",
       "text": "O zíper foi inventado antes do velcro.",
       "answer": true,
       "fact": "O velcro só surgiu nos anos 1940."
     },
     {
+      "id": "vf-conhecimentos-gerais-25",
       "difficulty": "medium",
       "text": "O velcro foi inventado pela NASA.",
       "answer": false,
       "fact": "Foi um engenheiro suíço, inspirado em sementes que grudavam no cachorro."
     },
     {
+      "id": "vf-conhecimentos-gerais-26",
       "difficulty": "medium",
       "text": "O lápis não tem chumbo.",
       "answer": true,
       "fact": "O miolo dele é de grafite e argila."
     },
     {
+      "id": "vf-conhecimentos-gerais-27",
       "difficulty": "medium",
       "text": "O nome \"grafite\" vem do chumbo.",
       "answer": false,
       "fact": "Ele vem do grego \"graphein\", que quer dizer escrever."
     },
     {
+      "id": "vf-conhecimentos-gerais-28",
       "difficulty": "medium",
       "text": "O relógio de sol não funciona à noite.",
       "answer": true,
       "fact": "Sem a luz, a sombra não aparece."
     },
     {
+      "id": "vf-conhecimentos-gerais-29",
       "difficulty": "medium",
       "text": "O sinal vermelho no semáforo indica \"siga\".",
       "answer": false,
       "fact": "O vermelho indica \"pare\"."
     },
     {
+      "id": "vf-conhecimentos-gerais-30",
       "difficulty": "medium",
       "text": "O semáforo foi inventado antes do carro se popularizar.",
       "answer": true,
       "fact": "O primeiro foi instalado em Londres, em 1868."
     },
     {
+      "id": "vf-conhecimentos-gerais-31",
       "difficulty": "medium",
       "text": "O Dia do Trabalho no Brasil é em 1º de junho.",
       "answer": false,
       "fact": "Ele é comemorado em 1º de maio."
     },
     {
+      "id": "vf-conhecimentos-gerais-32",
       "difficulty": "medium",
       "text": "O Dia do Trabalhador é comemorado em 1º de maio.",
       "answer": true,
       "fact": "A data lembra greves em Chicago, em 1886."
     },
     {
+      "id": "vf-conhecimentos-gerais-33",
       "difficulty": "medium",
       "text": "O Dia das Mães, no Brasil, é em dezembro.",
       "answer": false,
       "fact": "Ele é no segundo domingo de maio."
     },
     {
+      "id": "vf-conhecimentos-gerais-34",
       "difficulty": "medium",
       "text": "O Dia dos Namorados no Brasil é em 12 de junho.",
       "answer": true,
       "fact": "A data é a véspera do dia de Santo Antônio."
     },
     {
+      "id": "vf-conhecimentos-gerais-35",
       "difficulty": "medium",
       "text": "O Dia dos Namorados no Brasil é em 14 de fevereiro.",
       "answer": false,
       "fact": "Essa data é a de muitos outros países."
     },
     {
+      "id": "vf-conhecimentos-gerais-36",
       "difficulty": "medium",
       "text": "O número 13 é considerado azarado em muitos lugares.",
       "answer": true,
       "fact": "Muitos prédios pulam esse andar."
     },
     {
+      "id": "vf-conhecimentos-gerais-37",
       "difficulty": "medium",
       "text": "O trevo de quatro folhas é visto como sinal de azar.",
       "answer": false,
       "fact": "Ele é visto como sinal de boa sorte."
     },
     {
+      "id": "vf-conhecimentos-gerais-38",
       "difficulty": "medium",
       "text": "Passar debaixo de uma escada é visto como azar.",
       "answer": true,
       "fact": "Uma das origens é o medo de que algo caia."
     },
     {
+      "id": "vf-conhecimentos-gerais-39",
       "difficulty": "medium",
       "text": "Gato preto é sinal de sorte na tradição brasileira.",
       "answer": false,
       "fact": "Aqui, a superstição diz que ele traz azar."
     },
     {
+      "id": "vf-conhecimentos-gerais-40",
       "difficulty": "medium",
       "text": "Bater na madeira serve para afastar o azar, segundo a superstição.",
       "answer": true,
       "fact": "O gesto é conhecido em muitos países."
     },
     {
+      "id": "vf-conhecimentos-gerais-41",
       "difficulty": "medium",
       "text": "Na Itália, o número do azar é o 13, e não o 17.",
       "answer": false,
       "fact": "Lá, o número mais temido é o 17."
     },
     {
+      "id": "vf-conhecimentos-gerais-42",
       "difficulty": "medium",
       "text": "No Japão, o número 4 é visto como azarado.",
       "answer": true,
       "fact": "A pronúncia dele lembra a palavra \"morte\"."
     },
     {
+      "id": "vf-conhecimentos-gerais-43",
       "difficulty": "medium",
       "text": "Na China, o 8 é visto como número azarado.",
       "answer": false,
       "fact": "Ele é visto como número da sorte."
     },
     {
+      "id": "vf-conhecimentos-gerais-44",
       "difficulty": "medium",
       "text": "Os Jogos Olímpicos de Pequim começaram em 8/8/2008, às 20h08.",
       "answer": true,
       "fact": "O número 8 é sinônimo de sorte na China."
     },
     {
+      "id": "vf-conhecimentos-gerais-45",
       "difficulty": "medium",
       "text": "O Oscar é um prêmio de literatura.",
       "answer": false,
       "fact": "Ele é um prêmio de cinema."
     },
     {
+      "id": "vf-conhecimentos-gerais-46",
       "difficulty": "medium",
       "text": "O Nobel da Paz é entregue na Noruega.",
       "answer": true,
       "fact": "Os outros são entregues na Suécia."
     },
     {
+      "id": "vf-conhecimentos-gerais-47",
       "difficulty": "medium",
       "text": "O Nobel de Matemática é o mais antigo de todos.",
       "answer": false,
       "fact": "Não existe Nobel de Matemática."
     },
     {
+      "id": "vf-conhecimentos-gerais-48",
       "difficulty": "medium",
       "text": "Uma maratona tem mais de 42 quilômetros.",
       "answer": true,
       "fact": "A distância oficial é de 42,195 km."
     },
     {
+      "id": "vf-conhecimentos-gerais-49",
       "difficulty": "medium",
       "text": "Um quilômetro é mais longo que uma milha terrestre.",
       "answer": false,
       "fact": "A milha terrestre tem cerca de 1,6 km."
     },
     {
+      "id": "vf-conhecimentos-gerais-50",
       "difficulty": "medium",
       "text": "O ouro não enferruja.",
       "answer": true,
       "fact": "Ele é um dos metais menos reativos."
     },
     {
+      "id": "vf-conhecimentos-gerais-51",
       "difficulty": "medium",
       "text": "O diamante é feito de ferro.",
       "answer": false,
       "fact": "Ele é carbono puro em forma cristalina."
     },
     {
+      "id": "vf-conhecimentos-gerais-52",
       "difficulty": "medium",
       "text": "O grafite e o diamante são feitos do mesmo elemento.",
       "answer": true,
       "fact": "Os dois são formas de carbono."
     },
     {
+      "id": "vf-conhecimentos-gerais-53",
       "difficulty": "medium",
       "text": "Um dia em Marte é igual a um ano na Terra.",
       "answer": false,
       "fact": "Um dia de Marte tem pouco mais de 24 horas."
     },
     {
+      "id": "vf-conhecimentos-gerais-54",
       "difficulty": "hard",
       "text": "O sal de cozinha é feito de açúcar.",
       "answer": false,
       "fact": "Ele é cloreto de sódio."
     },
     {
+      "id": "vf-conhecimentos-gerais-55",
       "difficulty": "hard",
       "text": "O prédio mais alto do mundo tem mais de 800 metros.",
       "answer": true,
       "fact": "O Burj Khalifa tem 828 metros."
     },
     {
+      "id": "vf-conhecimentos-gerais-56",
       "difficulty": "hard",
       "text": "O papel higiênico foi inventado no século XX.",
       "answer": false,
       "fact": "Os chineses já usavam papel com essa função séculos antes."
     },
     {
+      "id": "vf-conhecimentos-gerais-57",
       "difficulty": "hard",
       "text": "O garfo demorou séculos para ser aceito na Europa.",
       "answer": true,
       "fact": "Muitos o viam como luxo exagerado e até pecado."
     },
     {
+      "id": "vf-conhecimentos-gerais-58",
       "difficulty": "hard",
       "text": "O sanduíche recebeu o nome de um padeiro francês.",
       "answer": false,
       "fact": "O nome vem do Conde de Sandwich, um nobre inglês."
     },
     {
+      "id": "vf-conhecimentos-gerais-59",
       "difficulty": "hard",
       "text": "A palavra \"saudade\" é muito citada como difícil de traduzir.",
       "answer": true,
       "fact": "Ela é vista como um símbolo da língua portuguesa."
     },
     {
+      "id": "vf-conhecimentos-gerais-60",
       "difficulty": "hard",
       "text": "O Esperanto é a língua oficial da ONU.",
       "answer": false,
       "fact": "Ele foi criado em 1887 e não é oficial na ONU."
     },
     {
+      "id": "vf-conhecimentos-gerais-61",
       "difficulty": "hard",
       "text": "O Esperanto foi criado por um oftalmologista polonês.",
       "answer": true,
       "fact": "L. L. Zamenhof queria uma língua sem fronteiras."
     },
     {
+      "id": "vf-conhecimentos-gerais-62",
       "difficulty": "hard",
       "text": "O calendário gregoriano foi criado por Júlio César.",
       "answer": false,
       "fact": "O papa Gregório XIII o criou em 1582."
     },
     {
+      "id": "vf-conhecimentos-gerais-63",
       "difficulty": "hard",
       "text": "Países pularam dias na adoção do calendário gregoriano.",
       "answer": true,
       "fact": "Em 1582, em alguns países, o dia 4 de outubro foi seguido do dia 15."
     },
     {
+      "id": "vf-conhecimentos-gerais-64",
       "difficulty": "hard",
       "text": "A guilhotina foi criada para execuções em massa na Idade Média.",
       "answer": false,
       "fact": "Ela ficou famosa na Revolução Francesa, no fim do século XVIII."
     },
     {
+      "id": "vf-conhecimentos-gerais-65",
       "difficulty": "hard",
       "text": "O código de barras foi usado pela primeira vez em um chiclete.",
       "answer": true,
       "fact": "O pacote foi escaneado em Ohio, em 1974."
     },
     {
+      "id": "vf-conhecimentos-gerais-66",
       "difficulty": "hard",
       "text": "A primeira patente do telefone foi registrada em 1950.",
       "answer": false,
       "fact": "Alexander Graham Bell a registrou em 1876."
     },
     {
+      "id": "vf-conhecimentos-gerais-67",
       "difficulty": "hard",
       "text": "Thomas Edison criou o fonógrafo.",
       "answer": true,
       "fact": "Ele o apresentou em 1877."
     },
     {
+      "id": "vf-conhecimentos-gerais-68",
       "difficulty": "hard",
       "text": "Edison inventou a corrente alternada.",
       "answer": false,
       "fact": "Ele defendia a contínua, e Tesla a alternada."
     },
     {
+      "id": "vf-conhecimentos-gerais-69",
       "difficulty": "hard",
       "text": "O Dia Mundial do Livro é em 23 de abril.",
       "answer": true,
       "fact": "A data é ligada à morte de Cervantes e de Shakespeare."
     },
     {
+      "id": "vf-conhecimentos-gerais-70",
       "difficulty": "hard",
       "text": "Sherlock Holmes foi uma pessoa real.",
       "answer": false,
       "fact": "Ele é um personagem de Arthur Conan Doyle."
     },
     {
+      "id": "vf-conhecimentos-gerais-71",
       "difficulty": "hard",
       "text": "A frase \"Elementar, meu caro Watson\" não aparece nos livros de Conan Doyle.",
       "answer": true,
       "fact": "Ela foi popularizada depois, em outras obras."
     },
     {
+      "id": "vf-conhecimentos-gerais-72",
       "difficulty": "hard",
       "text": "Napoleão era bem mais baixo que a média dos franceses.",
       "answer": false,
       "fact": "A altura dele estava na média da época."
     },
     {
+      "id": "vf-conhecimentos-gerais-73",
       "difficulty": "hard",
       "text": "Os vikings não usavam capacete com chifres, segundo a arqueologia.",
       "answer": true,
       "fact": "A imagem veio de figurinos do século XIX."
     },
     {
+      "id": "vf-conhecimentos-gerais-74",
       "difficulty": "hard",
       "text": "A Grande Muralha é vista facilmente da Lua a olho nu.",
       "answer": false,
       "fact": "A estrutura é estreita demais para isso."
     },
     {
+      "id": "vf-conhecimentos-gerais-75",
       "difficulty": "hard",
       "text": "Um \"ano-luz\" é uma medida de distância.",
       "answer": true,
       "fact": "Equivale a cerca de 9,46 trilhões de quilômetros."
     },
     {
+      "id": "vf-conhecimentos-gerais-76",
       "difficulty": "hard",
       "text": "O Empire State é atingido por raios muitas vezes por ano.",
       "answer": true,
       "fact": "A média é de cerca de 25."
     },
     {
+      "id": "vf-conhecimentos-gerais-77",
       "difficulty": "hard",
       "text": "Os touros ficam furiosos com a cor vermelha.",
       "answer": false,
       "fact": "Eles reagem ao movimento da capa."
     },
     {
+      "id": "vf-conhecimentos-gerais-78",
       "difficulty": "hard",
       "text": "As notas de dólar são feitas principalmente de algodão.",
       "answer": true,
       "fact": "A mistura também leva um pouco de linho."
     },
     {
+      "id": "vf-conhecimentos-gerais-79",
       "difficulty": "hard",
       "text": "Humanos usam apenas 10% do cérebro.",
       "answer": false,
       "fact": "Exames mostram uso de praticamente todo o órgão."
     },
     {
+      "id": "vf-conhecimentos-gerais-80",
       "difficulty": "hard",
       "text": "A unha e o cabelo são feitos de queratina.",
       "answer": true,
       "fact": "Os chifres de alguns animais também são."
     },
     {
+      "id": "vf-conhecimentos-gerais-81",
       "difficulty": "hard",
       "text": "Morcegos são completamente cegos.",
       "answer": false,
       "fact": "Todas as espécies enxergam em algum grau."
     },
     {
+      "id": "vf-conhecimentos-gerais-82",
       "difficulty": "hard",
       "text": "A Mona Lisa já foi roubada do Louvre.",
       "answer": true,
       "fact": "Foi em 1911, e ela voltou em 1913."
     },
     {
+      "id": "vf-conhecimentos-gerais-83",
       "difficulty": "hard",
       "text": "O número de ossos é igual em bebês e adultos.",
       "answer": false,
       "fact": "Bebês têm mais, pois muitos se fundem."
     },
     {
+      "id": "vf-conhecimentos-gerais-84",
       "difficulty": "hard",
       "text": "Um relógio analógico anda no sentido anti-horário.",
       "answer": false,
       "fact": "O sentido vem do relógio de sol no Hemisfério Norte."
     },
     {
+      "id": "vf-conhecimentos-gerais-85",
       "difficulty": "hard",
       "text": "A água ferve a uma temperatura menor em lugares muito altos.",
       "answer": true,
       "fact": "No Everest, ela ferve perto de 70 °C."
     },
     {
+      "id": "vf-conhecimentos-gerais-86",
       "difficulty": "medium",
       "text": "O telefone de emergência da polícia no Brasil é o 190.",
       "answer": true,
       "fact": "O dos bombeiros é o 193 e o do Samu é o 192."
     },
     {
+      "id": "vf-conhecimentos-gerais-87",
       "difficulty": "medium",
       "text": "O número do Samu, no Brasil, é o 100.",
       "answer": false,
       "fact": "O número do Samu é o 192."
     },
     {
+      "id": "vf-conhecimentos-gerais-88",
       "difficulty": "hard",
       "text": "O termo \"OK\" surgiu como brincadeira em jornais americanos.",
       "answer": true,
       "fact": "Ele apareceu em 1839 como abreviação de \"oll korrect\"."
     },
     {
+      "id": "vf-conhecimentos-gerais-89",
       "difficulty": "hard",
       "text": "A palavra \"tchau\" vem do francês.",
       "answer": false,
       "fact": "Ela vem do italiano \"ciao\"."
     },
     {
+      "id": "vf-conhecimentos-gerais-90",
       "difficulty": "medium",
       "text": "As notas de real têm animais em cada valor.",
       "answer": true,
       "fact": "A arara está na de 10 reais."
     },
     {
+      "id": "vf-conhecimentos-gerais-91",
       "difficulty": "medium",
       "text": "A nota de 20 reais traz o rosto de um presidente.",
       "answer": false,
       "fact": "Ela traz o mico-leão-dourado."
     },
     {
+      "id": "vf-conhecimentos-gerais-92",
       "difficulty": "medium",
       "text": "A primavera no Brasil começa em setembro.",
       "answer": true,
       "fact": "No Hemisfério Sul, as estações são invertidas."
     },
     {
+      "id": "vf-conhecimentos-gerais-93",
       "difficulty": "medium",
       "text": "No Brasil, o inverno começa em dezembro.",
       "answer": false,
       "fact": "Ele começa em junho."
     },
     {
+      "id": "vf-conhecimentos-gerais-94",
       "difficulty": "hard",
       "text": "A medalha olímpica de ouro é feita totalmente de ouro.",
       "answer": false,
       "fact": "Ela é quase toda de prata, com banho de ouro."
     },
     {
+      "id": "vf-conhecimentos-gerais-95",
       "difficulty": "hard",
       "text": "A Coroa Imperial britânica tem mais de 2.800 diamantes.",
       "answer": true,
       "fact": "Ela também tem safiras e rubis."
     },
     {
+      "id": "vf-conhecimentos-gerais-96",
       "difficulty": "hard",
       "text": "A meta de 10 mil passos veio de uma pesquisa médica dos anos 1990.",
       "answer": false,

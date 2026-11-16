@@ -2,6 +2,7 @@
   "theme": "Matemática e lógica",
   "questions": [
     {
+      "id": "matematica-e-logica-1",
       "difficulty": "easy",
       "text": "Quanto é 9 × 6?",
       "options": [
@@ -14,6 +15,7 @@
       "fact": "O 9 tem um truque: os algarismos dos resultados da tabuada do 9 sempre somam 9 (5 + 4 = 9)."
     },
     {
+      "id": "matematica-e-logica-2",
       "difficulty": "easy",
       "text": "Quanto é 12 + 19?",
       "options": [
@@ -26,6 +28,7 @@
       "fact": "Somar 20 e tirar 1 é um atalho para somar 19 de cabeça."
     },
     {
+      "id": "matematica-e-logica-3",
       "difficulty": "easy",
       "text": "Quanto é 50 − 17?",
       "options": [
@@ -38,6 +41,7 @@
       "fact": "Subtrair 17 é o mesmo que subtrair 20 e somar 3."
     },
     {
+      "id": "matematica-e-logica-4",
       "difficulty": "easy",
       "text": "Quanto é 8 × 7?",
       "options": [
@@ -50,6 +54,7 @@
       "fact": "Um jeito de lembrar: 5, 6, 7, 8 → 56 = 7 × 8."
     },
     {
+      "id": "matematica-e-logica-5",
       "difficulty": "easy",
       "text": "Quanto é 81 dividido por 9?",
       "options": [
@@ -62,6 +67,7 @@
       "fact": "81 é um quadrado perfeito: 9 × 9."
     },
     {
+      "id": "matematica-e-logica-6",
       "difficulty": "easy",
       "text": "Quanto é o dobro de 35?",
       "options": [
@@ -74,6 +80,7 @@
       "fact": "Dobrar é o mesmo que somar o número com ele mesmo: 35 + 35."
     },
     {
+      "id": "matematica-e-logica-7",
       "difficulty": "easy",
       "text": "Quanto é o triplo de 12?",
       "options": [
@@ -86,6 +93,7 @@
       "fact": "Triplo é três vezes: 12 + 12 + 12."
     },
     {
+      "id": "matematica-e-logica-8",
       "difficulty": "easy",
       "text": "Quanto é a metade de 90?",
       "options": [
@@ -98,6 +106,7 @@
       "fact": "Metade é o mesmo que dividir por 2."
     },
     {
+      "id": "matematica-e-logica-9",
       "difficulty": "easy",
       "text": "Quanto é um quarto de 100?",
       "options": [
@@ -110,6 +119,7 @@
       "fact": "Um quarto de 100 também é 25%."
     },
     {
+      "id": "matematica-e-logica-10",
       "difficulty": "easy",
       "text": "Quantos minutos tem uma hora?",
       "options": [
@@ -122,6 +132,7 @@
       "fact": "A divisão da hora em 60 minutos vem dos babilônios, que contavam em base 60."
     },
     {
+      "id": "matematica-e-logica-11",
       "difficulty": "easy",
       "text": "Quanto é 7 × 5?",
       "options": [
@@ -134,6 +145,7 @@
       "fact": "Multiplicar por 5 é o mesmo que multiplicar por 10 e dividir por 2."
     },
     {
+      "id": "matematica-e-logica-12",
       "difficulty": "easy",
       "text": "Quanto é 64 dividido por 8?",
       "options": [
@@ -146,6 +158,7 @@
       "fact": "64 é um quadrado perfeito: 8 × 8, o número de casas de um tabuleiro de xadrez."
     },
     {
+      "id": "matematica-e-logica-13",
       "difficulty": "easy",
       "text": "Quanto é 90 + 90?",
       "options": [
@@ -158,6 +171,7 @@
       "fact": "180 também é a soma dos ângulos de um triângulo, em graus."
     },
     {
+      "id": "matematica-e-logica-14",
       "difficulty": "easy",
       "text": "Quanto é 500 − 125?",
       "options": [
@@ -170,6 +184,7 @@
       "fact": "125 é um oitavo de 1.000, e 375 são três oitavos."
     },
     {
+      "id": "matematica-e-logica-15",
       "difficulty": "easy",
       "text": "Quantos dias tem um ano comum, que não é bissexto?",
       "options": [
@@ -182,6 +197,7 @@
       "fact": "A Terra leva cerca de 365 dias e 6 horas para dar a volta no Sol."
     },
     {
+      "id": "matematica-e-logica-16",
       "difficulty": "easy",
       "text": "De quantos em quantos anos acontece um ano bissexto?",
       "options": [
@@ -194,6 +210,7 @@
       "fact": "O dia a mais, 29 de fevereiro, compensa as 6 horas que sobram por ano."
     },
     {
+      "id": "matematica-e-logica-17",
       "difficulty": "easy",
       "text": "Quantos centímetros tem um metro e meio?",
       "options": [
@@ -206,6 +223,7 @@
       "fact": "Um metro e meio é 100 cm mais a metade de 100 cm."
     },
     {
+      "id": "matematica-e-logica-18",
       "difficulty": "easy",
       "text": "Quantos segundos tem meio minuto?",
       "options": [
@@ -218,6 +236,7 @@
       "fact": "Meio minuto é a metade de 60 segundos."
     },
     {
+      "id": "matematica-e-logica-19",
       "difficulty": "easy",
       "text": "Quantas horas têm dois dias?",
       "options": [
@@ -230,6 +249,7 @@
       "fact": "Cada dia tem 24 horas: 2 × 24 = 48."
     },
     {
+      "id": "matematica-e-logica-20",
       "difficulty": "easy",
       "text": "Quantos mililitros tem um litro?",
       "options": [
@@ -242,6 +262,7 @@
       "fact": "Uma garrafa pequena de água costuma ter 500 ml, ou meio litro."
     },
     {
+      "id": "matematica-e-logica-21",
       "difficulty": "easy",
       "text": "Quantos lados tem um triângulo?",
       "options": [
@@ -254,6 +275,7 @@
       "fact": "\"Tri\" quer dizer três, como em triciclo e tricampeão."
     },
     {
+      "id": "matematica-e-logica-22",
       "difficulty": "easy",
       "text": "Quantos lados tem um quadrado?",
       "options": [
@@ -266,6 +288,7 @@
       "fact": "Todo quadrado é também um retângulo, mas nem todo retângulo é quadrado."
     },
     {
+      "id": "matematica-e-logica-23",
       "difficulty": "easy",
       "text": "Quantos lados tem um pentágono?",
       "options": [
@@ -278,6 +301,7 @@
       "fact": "O prédio do Departamento de Defesa dos EUA tem esse formato e esse nome."
     },
     {
+      "id": "matematica-e-logica-24",
       "difficulty": "easy",
       "text": "Como se chama a figura redonda, sem lados e sem cantos?",
       "options": [
@@ -290,6 +314,7 @@
       "fact": "A distância do centro até a borda do círculo se chama raio."
     },
     {
+      "id": "matematica-e-logica-25",
       "difficulty": "easy",
       "text": "Qual destes números é par?",
       "options": [
@@ -302,6 +327,7 @@
       "fact": "Todo número par termina em 0, 2, 4, 6 ou 8."
     },
     {
+      "id": "matematica-e-logica-26",
       "difficulty": "easy",
       "text": "Qual destes números é ímpar?",
       "options": [
@@ -314,6 +340,7 @@
       "fact": "Somar dois números ímpares sempre dá um número par."
     },
     {
+      "id": "matematica-e-logica-27",
       "difficulty": "easy",
       "text": "Qual é o maior destes números?",
       "options": [
@@ -326,6 +353,7 @@
       "fact": "Para comparar números inteiros, quem tem mais algarismos é maior."
     },
     {
+      "id": "matematica-e-logica-28",
       "difficulty": "easy",
       "text": "Qual é o menor destes números?",
       "options": [
@@ -338,6 +366,7 @@
       "fact": "0,5 é a mesma coisa que metade."
     },
     {
+      "id": "matematica-e-logica-29",
       "difficulty": "easy",
       "text": "Que número vem depois do 99?",
       "options": [
@@ -350,6 +379,7 @@
       "fact": "O 100 é o primeiro número com três algarismos."
     },
     {
+      "id": "matematica-e-logica-30",
       "difficulty": "easy",
       "text": "Quanto é 10 × 10?",
       "options": [
@@ -362,6 +392,7 @@
       "fact": "Multiplicar por 10 é só acrescentar um zero."
     },
     {
+      "id": "matematica-e-logica-31",
       "difficulty": "easy",
       "text": "Quanto é 1.000 dividido por 10?",
       "options": [
@@ -374,6 +405,7 @@
       "fact": "Dividir por 10 é tirar um zero do final."
     },
     {
+      "id": "matematica-e-logica-32",
       "difficulty": "easy",
       "text": "Quanto é 7 + 7 + 7?",
       "options": [
@@ -386,6 +418,7 @@
       "fact": "Somar o mesmo número várias vezes é multiplicar: 3 × 7."
     },
     {
+      "id": "matematica-e-logica-33",
       "difficulty": "easy",
       "text": "Quanto é 6 × 0?",
       "options": [
@@ -398,6 +431,7 @@
       "fact": "Qualquer número multiplicado por zero dá zero."
     },
     {
+      "id": "matematica-e-logica-34",
       "difficulty": "easy",
       "text": "Quanto é 15 × 1?",
       "options": [
@@ -410,6 +444,7 @@
       "fact": "O 1 é o elemento neutro da multiplicação: não muda o número."
     },
     {
+      "id": "matematica-e-logica-35",
       "difficulty": "easy",
       "text": "Quanto é 45 + 55?",
       "options": [
@@ -422,6 +457,7 @@
       "fact": "Pares de números que somam 100 ajudam muito a fazer contas de cabeça."
     },
     {
+      "id": "matematica-e-logica-36",
       "difficulty": "easy",
       "text": "Quanto é 200 − 75?",
       "options": [
@@ -434,6 +470,7 @@
       "fact": "Uma dica é pensar em dinheiro: de 2 notas de 100, gastar 75."
     },
     {
+      "id": "matematica-e-logica-37",
       "difficulty": "easy",
       "text": "Quanto troco você recebe ao pagar R$ 20 por algo que custa R$ 13?",
       "options": [
@@ -446,6 +483,7 @@
       "fact": "Para conferir o troco, some o preço com o troco: tem que dar o valor pago."
     },
     {
+      "id": "matematica-e-logica-38",
       "difficulty": "easy",
       "text": "Se um chocolate custa R$ 4, quanto custam 5 chocolates?",
       "options": [
@@ -458,6 +496,7 @@
       "fact": "Multiplicar o preço pela quantidade dá o total."
     },
     {
+      "id": "matematica-e-logica-39",
       "difficulty": "easy",
       "text": "Uma pizza foi cortada em 8 pedaços. Se você comeu 2, quantos sobraram?",
       "options": [
@@ -470,6 +509,7 @@
       "fact": "Comer 2 de 8 pedaços é comer um quarto da pizza."
     },
     {
+      "id": "matematica-e-logica-40",
       "difficulty": "easy",
       "text": "Se hoje é segunda-feira, que dia será depois de amanhã?",
       "options": [
@@ -482,6 +522,7 @@
       "fact": "\"Depois de amanhã\" são dois dias à frente."
     },
     {
+      "id": "matematica-e-logica-41",
       "difficulty": "easy",
       "text": "Se hoje é sexta-feira, que dia foi ontem?",
       "options": [
@@ -494,6 +535,7 @@
       "fact": "Em português, a semana tem \"feiras\" por herança de um costume religioso da Idade Média."
     },
     {
+      "id": "matematica-e-logica-42",
       "difficulty": "easy",
       "text": "Quantas rodas têm 3 bicicletas?",
       "options": [
@@ -506,6 +548,7 @@
       "fact": "São 2 rodas por bicicleta: 3 × 2 = 6."
     },
     {
+      "id": "matematica-e-logica-43",
       "difficulty": "easy",
       "text": "Quantas patas têm 4 cachorros?",
       "options": [
@@ -518,6 +561,7 @@
       "fact": "São 4 patas por cachorro: 4 × 4 = 16."
     },
     {
+      "id": "matematica-e-logica-44",
       "difficulty": "easy",
       "text": "Quantos dedos têm as duas mãos de 3 pessoas?",
       "options": [
@@ -530,6 +574,7 @@
       "fact": "Cada pessoa tem 10 dedos nas mãos: 3 × 10 = 30."
     },
     {
+      "id": "matematica-e-logica-45",
       "difficulty": "easy",
       "text": "Que número completa a sequência 5, 10, 15, __, 25?",
       "options": [
@@ -542,6 +587,7 @@
       "fact": "A sequência sobe de 5 em 5, como na tabuada do 5."
     },
     {
+      "id": "matematica-e-logica-46",
       "difficulty": "easy",
       "text": "Que número completa a sequência 1, 3, 5, 7, __?",
       "options": [
@@ -554,6 +600,7 @@
       "fact": "São os números ímpares, em ordem."
     },
     {
+      "id": "matematica-e-logica-47",
       "difficulty": "easy",
       "text": "Que número completa a sequência 100, 90, 80, __, 60?",
       "options": [
@@ -566,6 +613,7 @@
       "fact": "A sequência desce de 10 em 10."
     },
     {
+      "id": "matematica-e-logica-48",
       "difficulty": "easy",
       "text": "Que número completa a sequência 3, 6, 9, 12, __?",
       "options": [
@@ -578,6 +626,7 @@
       "fact": "É a tabuada do 3."
     },
     {
+      "id": "matematica-e-logica-49",
       "difficulty": "easy",
       "text": "Que número completa a sequência 1, 2, 4, 8, __?",
       "options": [
@@ -590,6 +639,7 @@
       "fact": "Cada número é o dobro do anterior."
     },
     {
+      "id": "matematica-e-logica-50",
       "difficulty": "easy",
       "text": "Quanto é 3 ao quadrado (3²)?",
       "options": [
@@ -602,6 +652,7 @@
       "fact": "Elevar ao quadrado é multiplicar o número por ele mesmo."
     },
     {
+      "id": "matematica-e-logica-51",
       "difficulty": "easy",
       "text": "Qual é a raiz quadrada de 25?",
       "options": [
@@ -614,6 +665,7 @@
       "fact": "A raiz quadrada é o número que, multiplicado por ele mesmo, dá o valor."
     },
     {
+      "id": "matematica-e-logica-52",
       "difficulty": "easy",
       "text": "Qual é a raiz quadrada de 9?",
       "options": [
@@ -626,6 +678,7 @@
       "fact": "9 é um quadrado perfeito: 3 × 3."
     },
     {
+      "id": "matematica-e-logica-53",
       "difficulty": "easy",
       "text": "Quanto é 50% de 30?",
       "options": [
@@ -638,6 +691,7 @@
       "fact": "50% é sempre a metade."
     },
     {
+      "id": "matematica-e-logica-54",
       "difficulty": "easy",
       "text": "Quanto é 100% de 42?",
       "options": [
@@ -650,6 +704,7 @@
       "fact": "100% é o valor inteiro."
     },
     {
+      "id": "matematica-e-logica-55",
       "difficulty": "easy",
       "text": "Se um produto de R$ 100 está com 10% de desconto, quanto ele passa a custar?",
       "options": [
@@ -662,6 +717,7 @@
       "fact": "10% de 100 é 10, e 100 − 10 = 90."
     },
     {
+      "id": "matematica-e-logica-56",
       "difficulty": "easy",
       "text": "Que fração representa a metade?",
       "options": [
@@ -674,6 +730,7 @@
       "fact": "O número de baixo da fração diz em quantas partes o inteiro foi dividido."
     },
     {
+      "id": "matematica-e-logica-57",
       "difficulty": "easy",
       "text": "Quantas unidades tem uma dezena?",
       "options": [
@@ -686,6 +743,7 @@
       "fact": "A palavra \"dezena\" vem de dez, assim como \"centena\" vem de cem."
     },
     {
+      "id": "matematica-e-logica-58",
       "difficulty": "easy",
       "text": "Quantas unidades tem uma centena?",
       "options": [
@@ -698,6 +756,7 @@
       "fact": "Os números de três algarismos começam na centena."
     },
     {
+      "id": "matematica-e-logica-59",
       "difficulty": "easy",
       "text": "Quantos meses tem um semestre?",
       "options": [
@@ -710,6 +769,7 @@
       "fact": "\"Semestre\" vem do latim e significa \"seis meses\"."
     },
     {
+      "id": "matematica-e-logica-60",
       "difficulty": "easy",
       "text": "Quantos meses tem um trimestre?",
       "options": [
@@ -722,6 +782,7 @@
       "fact": "O ano tem 4 trimestres."
     },
     {
+      "id": "matematica-e-logica-61",
       "difficulty": "easy",
       "text": "Quantos dias têm 3 semanas?",
       "options": [
@@ -734,6 +795,7 @@
       "fact": "Cada semana tem 7 dias: 3 × 7 = 21."
     },
     {
+      "id": "matematica-e-logica-62",
       "difficulty": "easy",
       "text": "Quantas semanas, aproximadamente, tem um mês?",
       "options": [
@@ -746,6 +808,7 @@
       "fact": "Um mês tem 4 semanas e mais 2 ou 3 dias, exceto fevereiro comum."
     },
     {
+      "id": "matematica-e-logica-63",
       "difficulty": "easy",
       "text": "Quanto é 3 × 3 × 3?",
       "options": [
@@ -758,6 +821,7 @@
       "fact": "3 × 3 × 3 é o mesmo que 3 elevado ao cubo."
     },
     {
+      "id": "matematica-e-logica-64",
       "difficulty": "easy",
       "text": "Que sinal se usa para somar?",
       "options": [
@@ -770,6 +834,7 @@
       "fact": "O sinal de mais apareceu em livros impressos no século XV."
     },
     {
+      "id": "matematica-e-logica-65",
       "difficulty": "easy",
       "text": "Qual é o resultado de uma subtração chamado?",
       "options": [
@@ -782,6 +847,7 @@
       "fact": "O resultado da multiplicação se chama produto, e o da divisão, quociente."
     },
     {
+      "id": "matematica-e-logica-66",
       "difficulty": "easy",
       "text": "Quantos dias tem o mês de fevereiro num ano comum?",
       "options": [
@@ -794,6 +860,7 @@
       "fact": "Fevereiro é o único mês que pode ter menos de 30 dias."
     },
     {
+      "id": "matematica-e-logica-67",
       "difficulty": "easy",
       "text": "Quantos dias tem o mês de dezembro?",
       "options": [
@@ -806,6 +873,7 @@
       "fact": "Os meses com 31 dias são sete: janeiro, março, maio, julho, agosto, outubro e dezembro."
     },
     {
+      "id": "matematica-e-logica-68",
       "difficulty": "easy",
       "text": "Quantas horas tem meio dia?",
       "options": [
@@ -818,6 +886,7 @@
       "fact": "\"Meio-dia\" também é o nome do momento em que o relógio marca 12 horas."
     },
     {
+      "id": "matematica-e-logica-69",
       "difficulty": "easy",
       "text": "Quanto é 11 × 11?",
       "options": [
@@ -830,6 +899,7 @@
       "fact": "Multiplicações de 11 por números de dois algarismos têm um atalho: some os algarismos e coloque o resultado no meio."
     },
     {
+      "id": "matematica-e-logica-70",
       "difficulty": "easy",
       "text": "Quanto é 25 × 4?",
       "options": [
@@ -842,6 +912,7 @@
       "fact": "Quatro moedas de 25 centavos fazem 1 real."
     },
     {
+      "id": "matematica-e-logica-71",
       "difficulty": "easy",
       "text": "Quanto é 60 dividido por 5?",
       "options": [
@@ -854,6 +925,7 @@
       "fact": "Uma hora tem 60 minutos, ou 12 blocos de 5 minutos, como no mostrador do relógio."
     },
     {
+      "id": "matematica-e-logica-72",
       "difficulty": "easy",
       "text": "Quanto é 72 dividido por 8?",
       "options": [
@@ -866,6 +938,7 @@
       "fact": "A divisão é a operação inversa da multiplicação: 8 × 9 = 72."
     },
     {
+      "id": "matematica-e-logica-73",
       "difficulty": "easy",
       "text": "Quanto é 8 + 8 + 8 + 8?",
       "options": [
@@ -878,6 +951,7 @@
       "fact": "Somar quatro vezes o 8 é o mesmo que 4 × 8."
     },
     {
+      "id": "matematica-e-logica-74",
       "difficulty": "easy",
       "text": "Quanto é 300 + 450?",
       "options": [
@@ -890,6 +964,7 @@
       "fact": "Somar as centenas primeiro facilita: 300 + 400 = 700, mais 50."
     },
     {
+      "id": "matematica-e-logica-75",
       "difficulty": "easy",
       "text": "Quanto é 1.000 − 1?",
       "options": [
@@ -902,6 +977,7 @@
       "fact": "999 é o maior número de três algarismos."
     },
     {
+      "id": "matematica-e-logica-76",
       "difficulty": "easy",
       "text": "Quanto é 4 × 4 × 4?",
       "options": [
@@ -914,6 +990,7 @@
       "fact": "4 × 4 × 4 é o mesmo que 4 elevado ao cubo."
     },
     {
+      "id": "matematica-e-logica-77",
       "difficulty": "easy",
       "text": "Quanto é 2 + 2 × 2?",
       "options": [
@@ -926,6 +1003,7 @@
       "fact": "Na expressão, a multiplicação é feita antes da soma: 2 + 4."
     },
     {
+      "id": "matematica-e-logica-78",
       "difficulty": "easy",
       "text": "Quanto é 10 − 3 + 3?",
       "options": [
@@ -938,6 +1016,7 @@
       "fact": "Subtrair 3 e somar 3 se anulam."
     },
     {
+      "id": "matematica-e-logica-79",
       "difficulty": "easy",
       "text": "Quantos centavos tem 1 real?",
       "options": [
@@ -950,6 +1029,7 @@
       "fact": "O real tem moedas de 5, 10, 25 e 50 centavos e de 1 real."
     },
     {
+      "id": "matematica-e-logica-80",
       "difficulty": "easy",
       "text": "Quantas moedas de 50 centavos formam R$ 2?",
       "options": [
@@ -962,6 +1042,7 @@
       "fact": "Cada duas moedas de 50 centavos formam 1 real."
     },
     {
+      "id": "matematica-e-logica-81",
       "difficulty": "easy",
       "text": "Quantas notas de R$ 10 formam R$ 100?",
       "options": [
@@ -974,6 +1055,7 @@
       "fact": "A cédula de 10 reais tem a arara-vermelha no verso."
     },
     {
+      "id": "matematica-e-logica-82",
       "difficulty": "easy",
       "text": "Se você tem R$ 50 e gasta R$ 32, com quanto fica?",
       "options": [
@@ -986,6 +1068,7 @@
       "fact": "32 + 18 = 50, então sobram R$ 18."
     },
     {
+      "id": "matematica-e-logica-83",
       "difficulty": "easy",
       "text": "Uma caixa tem 6 ovos. Quantos ovos há em 3 caixas?",
       "options": [
@@ -998,6 +1081,7 @@
       "fact": "Meia dúzia vezes três dá uma dúzia e meia."
     },
     {
+      "id": "matematica-e-logica-84",
       "difficulty": "easy",
       "text": "Se 1 caderno custa R$ 8, quanto custam 3 cadernos?",
       "options": [
@@ -1010,6 +1094,7 @@
       "fact": "3 × 8 = 24."
     },
     {
+      "id": "matematica-e-logica-85",
       "difficulty": "easy",
       "text": "Uma corrida tem 10 voltas. Se o piloto completou 7, quantas faltam?",
       "options": [
@@ -1022,6 +1107,7 @@
       "fact": "Contar o que falta é uma subtração: 10 − 7."
     },
     {
+      "id": "matematica-e-logica-86",
       "difficulty": "easy",
       "text": "Um ônibus tinha 20 passageiros. Desceram 5 e subiram 8. Quantos há agora?",
       "options": [
@@ -1034,6 +1120,7 @@
       "fact": "20 − 5 = 15, e 15 + 8 = 23."
     },
     {
+      "id": "matematica-e-logica-87",
       "difficulty": "easy",
       "text": "Se um filme começou às 14h e durou 2 horas, a que horas terminou?",
       "options": [
@@ -1046,6 +1133,7 @@
       "fact": "Para somar horas, basta somar como números comuns, até 24."
     },
     {
+      "id": "matematica-e-logica-88",
       "difficulty": "easy",
       "text": "Que horas são 15h no formato de 12 horas?",
       "options": [
@@ -1058,6 +1146,7 @@
       "fact": "Basta subtrair 12 das horas da tarde: 15 − 12 = 3."
     },
     {
+      "id": "matematica-e-logica-89",
       "difficulty": "easy",
       "text": "Quantos minutos há em meia hora?",
       "options": [
@@ -1070,6 +1159,7 @@
       "fact": "Meia hora é a metade de 60 minutos."
     },
     {
+      "id": "matematica-e-logica-90",
       "difficulty": "easy",
       "text": "Quantos minutos há em um quarto de hora?",
       "options": [
@@ -1082,6 +1172,7 @@
       "fact": "Um quarto de 60 minutos dá 15."
     },
     {
+      "id": "matematica-e-logica-91",
       "difficulty": "easy",
       "text": "Uma barra de chocolate tem 12 quadradinhos. Dividindo igualmente entre 3 amigos, quantos cada um ganha?",
       "options": [
@@ -1094,6 +1185,7 @@
       "fact": "12 dividido por 3 dá 4."
     },
     {
+      "id": "matematica-e-logica-92",
       "difficulty": "easy",
       "text": "Quantos dias tem uma quinzena?",
       "options": [
@@ -1106,6 +1198,7 @@
       "fact": "Na prática, muita gente chama de quinzena um período de duas semanas."
     },
     {
+      "id": "matematica-e-logica-93",
       "difficulty": "easy",
       "text": "Quantos dias têm duas semanas?",
       "options": [
@@ -1118,6 +1211,7 @@
       "fact": "Duas semanas são 2 × 7 dias."
     },
     {
+      "id": "matematica-e-logica-94",
       "difficulty": "easy",
       "text": "Se hoje é dia 10 e você viaja daqui a 7 dias, em que dia vai viajar?",
       "options": [
@@ -1130,6 +1224,7 @@
       "fact": "Somar dias no mesmo mês é uma soma simples."
     },
     {
+      "id": "matematica-e-logica-95",
       "difficulty": "easy",
       "text": "Quantos lados um hexágono tem a mais que um triângulo?",
       "options": [
@@ -1142,6 +1237,7 @@
       "fact": "O hexágono tem 6 lados, e o triângulo, 3."
     },
     {
+      "id": "matematica-e-logica-96",
       "difficulty": "easy",
       "text": "Quantos cantos (vértices) tem um quadrado?",
       "options": [
@@ -1154,6 +1250,7 @@
       "fact": "Cada canto de um quadrado forma um ângulo reto."
     },
     {
+      "id": "matematica-e-logica-97",
       "difficulty": "easy",
       "text": "Que figura tem quatro lados, todos os ângulos retos e dois lados maiores que os outros dois?",
       "options": [
@@ -1166,6 +1263,7 @@
       "fact": "As telas de TV e de celular costumam ter formato de retângulo."
     },
     {
+      "id": "matematica-e-logica-98",
       "difficulty": "easy",
       "text": "Como se chama o sólido redondo como uma bola?",
       "options": [
@@ -1178,6 +1276,7 @@
       "fact": "A Terra não é perfeitamente redonda: é um pouco achatada nos polos."
     },
     {
+      "id": "matematica-e-logica-99",
       "difficulty": "easy",
       "text": "Que sólido tem a forma de uma casquinha de sorvete?",
       "options": [
@@ -1190,6 +1289,7 @@
       "fact": "O cone tem uma base redonda e uma ponta, chamada vértice."
     },
     {
+      "id": "matematica-e-logica-100",
       "difficulty": "easy",
       "text": "Que sólido tem a forma de uma lata de refrigerante?",
       "options": [
@@ -1202,6 +1302,7 @@
       "fact": "O cilindro tem duas bases redondas iguais."
     },
     {
+      "id": "matematica-e-logica-101",
       "difficulty": "easy",
       "text": "Que sólido tem a forma de um dado?",
       "options": [
@@ -1214,6 +1315,7 @@
       "fact": "O cubo tem todas as faces quadradas e iguais."
     },
     {
+      "id": "matematica-e-logica-102",
       "difficulty": "easy",
       "text": "Quantas arestas tem um cubo?",
       "options": [
@@ -1226,6 +1328,7 @@
       "fact": "O cubo tem 6 faces, 8 vértices e 12 arestas."
     },
     {
+      "id": "matematica-e-logica-103",
       "difficulty": "easy",
       "text": "Como se chama a linha que divide um círculo ao meio, passando pelo centro?",
       "options": [
@@ -1238,6 +1341,7 @@
       "fact": "O diâmetro é sempre o dobro do raio."
     },
     {
+      "id": "matematica-e-logica-104",
       "difficulty": "easy",
       "text": "Se o raio de um círculo mede 5 cm, quanto mede o diâmetro?",
       "options": [
@@ -1250,6 +1354,7 @@
       "fact": "O diâmetro é o dobro do raio."
     },
     {
+      "id": "matematica-e-logica-105",
       "difficulty": "easy",
       "text": "Como se chama a medida do contorno de uma figura?",
       "options": [
@@ -1262,6 +1367,7 @@
       "fact": "\"Perímetro\" vem do grego e significa \"medida em volta\"."
     },
     {
+      "id": "matematica-e-logica-106",
       "difficulty": "easy",
       "text": "Qual é o perímetro de um quadrado de lado 3 cm?",
       "options": [
@@ -1274,6 +1380,7 @@
       "fact": "São 4 lados iguais: 4 × 3 = 12."
     },
     {
+      "id": "matematica-e-logica-107",
       "difficulty": "easy",
       "text": "Qual é a área de um quadrado de lado 4 cm?",
       "options": [
@@ -1286,6 +1393,7 @@
       "fact": "A área do quadrado é lado vezes lado."
     },
     {
+      "id": "matematica-e-logica-108",
       "difficulty": "easy",
       "text": "Qual é a área de um retângulo de 5 cm por 2 cm?",
       "options": [
@@ -1298,6 +1406,7 @@
       "fact": "A área do retângulo é base vezes altura."
     },
     {
+      "id": "matematica-e-logica-109",
       "difficulty": "easy",
       "text": "Que tipo de ângulo é menor que 90°?",
       "options": [
@@ -1310,6 +1419,7 @@
       "fact": "\"Agudo\" vem do latim e significa pontudo."
     },
     {
+      "id": "matematica-e-logica-110",
       "difficulty": "easy",
       "text": "Que tipo de ângulo é maior que 90° e menor que 180°?",
       "options": [
@@ -1322,6 +1432,7 @@
       "fact": "Os ponteiros do relógio às 4h em ponto formam um ângulo obtuso, de 120°."
     },
     {
+      "id": "matematica-e-logica-111",
       "difficulty": "easy",
       "text": "Quantos graus tem uma volta completa?",
       "options": [
@@ -1334,6 +1445,7 @@
       "fact": "Os babilônios teriam escolhido 360 por ser perto do número de dias do ano."
     },
     {
+      "id": "matematica-e-logica-112",
       "difficulty": "easy",
       "text": "Quantos graus tem meia volta?",
       "options": [
@@ -1346,6 +1458,7 @@
       "fact": "Dar meia-volta é virar de costas para onde se estava olhando."
     },
     {
+      "id": "matematica-e-logica-113",
       "difficulty": "easy",
       "text": "Qual destes números é múltiplo de 5?",
       "options": [
@@ -1358,6 +1471,7 @@
       "fact": "Todo múltiplo de 5 termina em 0 ou 5."
     },
     {
+      "id": "matematica-e-logica-114",
       "difficulty": "easy",
       "text": "Qual destes números é divisível por 2?",
       "options": [
@@ -1370,6 +1484,7 @@
       "fact": "Todo número par é divisível por 2."
     },
     {
+      "id": "matematica-e-logica-115",
       "difficulty": "easy",
       "text": "Qual destes números é divisível por 10?",
       "options": [
@@ -1382,6 +1497,7 @@
       "fact": "Todo número que termina em 0 é divisível por 10."
     },
     {
+      "id": "matematica-e-logica-116",
       "difficulty": "easy",
       "text": "Qual destes números é um número primo?",
       "options": [
@@ -1394,6 +1510,7 @@
       "fact": "Um número primo só pode ser dividido por 1 e por ele mesmo."
     },
     {
+      "id": "matematica-e-logica-117",
       "difficulty": "easy",
       "text": "Qual é o menor número natural?",
       "options": [
@@ -1406,6 +1523,7 @@
       "fact": "Alguns livros começam os números naturais pelo 1, mas no Brasil o padrão é começar pelo 0."
     },
     {
+      "id": "matematica-e-logica-118",
       "difficulty": "easy",
       "text": "Que número romano representa o 1?",
       "options": [
@@ -1418,6 +1536,7 @@
       "fact": "Os números romanos não têm um símbolo para o zero."
     },
     {
+      "id": "matematica-e-logica-119",
       "difficulty": "easy",
       "text": "Que número romano é o IV?",
       "options": [
@@ -1430,6 +1549,7 @@
       "fact": "O I antes do V subtrai: 5 − 1 = 4."
     },
     {
+      "id": "matematica-e-logica-120",
       "difficulty": "easy",
       "text": "Que número romano é o VI?",
       "options": [
@@ -1442,6 +1562,7 @@
       "fact": "O I depois do V soma: 5 + 1 = 6."
     },
     {
+      "id": "matematica-e-logica-121",
       "difficulty": "easy",
       "text": "Que número é XX em algarismos romanos?",
       "options": [
@@ -1454,6 +1575,7 @@
       "fact": "Cada X vale 10."
     },
     {
+      "id": "matematica-e-logica-122",
       "difficulty": "easy",
       "text": "Quantos números de 1 a 10 são pares?",
       "options": [
@@ -1466,6 +1588,7 @@
       "fact": "Os pares são 2, 4, 6, 8 e 10."
     },
     {
+      "id": "matematica-e-logica-123",
       "difficulty": "easy",
       "text": "Qual é o resultado de 5 − 5?",
       "options": [
@@ -1478,6 +1601,7 @@
       "fact": "Subtrair um número dele mesmo sempre dá zero."
     },
     {
+      "id": "matematica-e-logica-124",
       "difficulty": "easy",
       "text": "Quanto é 9 + 9?",
       "options": [
@@ -1490,6 +1614,7 @@
       "fact": "Somar 9 é o mesmo que somar 10 e tirar 1."
     },
     {
+      "id": "matematica-e-logica-125",
       "difficulty": "easy",
       "text": "Qual destes valores é igual a 1/4?",
       "options": [
@@ -1502,6 +1627,7 @@
       "fact": "Um quarto é 1 dividido por 4."
     },
     {
+      "id": "matematica-e-logica-126",
       "difficulty": "easy",
       "text": "Qual destes valores é igual a 1/2?",
       "options": [
@@ -1514,6 +1640,7 @@
       "fact": "Metade de 1 é 0,5."
     },
     {
+      "id": "matematica-e-logica-127",
       "difficulty": "easy",
       "text": "Quanto é 2,5 + 2,5?",
       "options": [
@@ -1526,6 +1653,7 @@
       "fact": "Duas metades de 5 formam o 5 inteiro."
     },
     {
+      "id": "matematica-e-logica-128",
       "difficulty": "easy",
       "text": "Quantos gramas tem meio quilo?",
       "options": [
@@ -1538,6 +1666,7 @@
       "fact": "Um pacote de café comum costuma ter 500 gramas."
     },
     {
+      "id": "matematica-e-logica-129",
       "difficulty": "easy",
       "text": "Quantos centímetros tem meio metro?",
       "options": [
@@ -1550,6 +1679,7 @@
       "fact": "Uma régua escolar comum costuma ter 30 centímetros."
     },
     {
+      "id": "matematica-e-logica-130",
       "difficulty": "easy",
       "text": "Quantos litros tem uma garrafa de 2.000 ml?",
       "options": [
@@ -1562,6 +1692,7 @@
       "fact": "Garrafas de refrigerante de 2 litros são muito comuns em festas."
     },
     {
+      "id": "matematica-e-logica-131",
       "difficulty": "easy",
       "text": "Qual é a unidade usada para medir a temperatura no Brasil?",
       "options": [
@@ -1574,6 +1705,7 @@
       "fact": "Os Estados Unidos usam o grau Fahrenheit."
     },
     {
+      "id": "matematica-e-logica-132",
       "difficulty": "easy",
       "text": "Se você tem 3 camisetas e 2 bermudas, quantas combinações diferentes de roupa pode montar?",
       "options": [
@@ -1586,6 +1718,7 @@
       "fact": "Para cada camiseta há 2 bermudas: 3 × 2 = 6."
     },
     {
+      "id": "matematica-e-logica-133",
       "difficulty": "easy",
       "text": "Se Ana é mais alta que Bia, e Bia é mais alta que Carla, quem é a mais baixa?",
       "options": [
@@ -1598,6 +1731,7 @@
       "fact": "Esse tipo de raciocínio se chama transitividade."
     },
     {
+      "id": "matematica-e-logica-134",
       "difficulty": "easy",
       "text": "Se todos os gatos têm bigode e Mimi é uma gata, o que podemos concluir?",
       "options": [
@@ -1610,6 +1744,7 @@
       "fact": "Esse tipo de raciocínio, com duas premissas e uma conclusão, se chama silogismo."
     },
     {
+      "id": "matematica-e-logica-135",
       "difficulty": "easy",
       "text": "Quantos zeros tem o número mil?",
       "options": [
@@ -1622,6 +1757,7 @@
       "fact": "Mil é 10 × 10 × 10, por isso tem três zeros."
     },
     {
+      "id": "matematica-e-logica-136",
       "difficulty": "easy",
       "text": "Se 2 gatos pegam 2 ratos, quantos ratos pegam 4 gatos no mesmo tempo?",
       "options": [
@@ -1634,6 +1770,7 @@
       "fact": "Cada gato pega 1 rato, então 4 gatos pegam 4."
     },
     {
+      "id": "matematica-e-logica-137",
       "difficulty": "easy",
       "text": "Qual destes números é maior que 50 e menor que 60?",
       "options": [
@@ -1646,6 +1783,7 @@
       "fact": "Entre 50 e 60 ficam os números que começam com 5 na casa das dezenas."
     },
     {
+      "id": "matematica-e-logica-138",
       "difficulty": "medium",
       "text": "Quanto é 15 × 15?",
       "options": [
@@ -1658,6 +1796,7 @@
       "fact": "Um truque para quadrados terminados em 5: 1 × 2 = 2, e coloca 25 no final: 225."
     },
     {
+      "id": "matematica-e-logica-139",
       "difficulty": "medium",
       "text": "Quanto é 25 × 25?",
       "options": [
@@ -1670,6 +1809,7 @@
       "fact": "Truque para quadrados terminados em 5: multiplique o 2 pelo seguinte, 3, e coloque 25 no final."
     },
     {
+      "id": "matematica-e-logica-140",
       "difficulty": "medium",
       "text": "Quanto é 12 × 12?",
       "options": [
@@ -1682,6 +1822,7 @@
       "fact": "Doze dúzias formam uma grosa, que tem 144 unidades."
     },
     {
+      "id": "matematica-e-logica-141",
       "difficulty": "medium",
       "text": "Quanto é 14 × 6?",
       "options": [
@@ -1694,6 +1835,7 @@
       "fact": "Dá para separar: 10 × 6 = 60 e 4 × 6 = 24; somando, 84."
     },
     {
+      "id": "matematica-e-logica-142",
       "difficulty": "medium",
       "text": "Quanto é 125 × 8?",
       "options": [
@@ -1706,6 +1848,7 @@
       "fact": "125 é exatamente um oitavo de 1.000."
     },
     {
+      "id": "matematica-e-logica-143",
       "difficulty": "medium",
       "text": "Quanto é 999 + 999?",
       "options": [
@@ -1718,6 +1861,7 @@
       "fact": "Um atalho: 1.000 + 1.000 = 2.000, menos 2."
     },
     {
+      "id": "matematica-e-logica-144",
       "difficulty": "medium",
       "text": "Quanto é 1.001 − 999?",
       "options": [
@@ -1730,6 +1874,7 @@
       "fact": "Os dois números estão a 1 de distância do 1.000, cada um de um lado."
     },
     {
+      "id": "matematica-e-logica-145",
       "difficulty": "medium",
       "text": "Quanto é 144 dividido por 12?",
       "options": [
@@ -1742,6 +1887,7 @@
       "fact": "144 é o quadrado de 12."
     },
     {
+      "id": "matematica-e-logica-146",
       "difficulty": "medium",
       "text": "Quanto é 300 dividido por 4?",
       "options": [
@@ -1754,6 +1900,7 @@
       "fact": "Dividir por 4 é dividir por 2 duas vezes: 150 e depois 75."
     },
     {
+      "id": "matematica-e-logica-147",
       "difficulty": "medium",
       "text": "Quanto é 7 × 8 − 6?",
       "options": [
@@ -1766,6 +1913,7 @@
       "fact": "Primeiro a multiplicação: 56 − 6 = 50."
     },
     {
+      "id": "matematica-e-logica-148",
       "difficulty": "medium",
       "text": "Quanto é (3 + 5) × 2, fazendo primeiro o que está entre parênteses?",
       "options": [
@@ -1778,6 +1926,7 @@
       "fact": "Os parênteses mandam fazer a soma antes da multiplicação."
     },
     {
+      "id": "matematica-e-logica-149",
       "difficulty": "medium",
       "text": "Quanto é 3 + 5 × 2?",
       "options": [
@@ -1790,6 +1939,7 @@
       "fact": "Sem parênteses, a multiplicação vem antes da soma: 3 + 10."
     },
     {
+      "id": "matematica-e-logica-150",
       "difficulty": "medium",
       "text": "Quanto é 20 − 4 × 3?",
       "options": [
@@ -1802,6 +1952,7 @@
       "fact": "A multiplicação vem primeiro: 20 − 12 = 8."
     },
     {
+      "id": "matematica-e-logica-151",
       "difficulty": "medium",
       "text": "Quanto é 2 elevado à quinta potência (2⁵)?",
       "options": [
@@ -1814,6 +1965,7 @@
       "fact": "2⁵ = 2 × 2 × 2 × 2 × 2."
     },
     {
+      "id": "matematica-e-logica-152",
       "difficulty": "medium",
       "text": "Quanto é 10 elevado à quarta potência (10⁴)?",
       "options": [
@@ -1826,6 +1978,7 @@
       "fact": "Em potências de 10, o expoente diz quantos zeros o número tem."
     },
     {
+      "id": "matematica-e-logica-153",
       "difficulty": "medium",
       "text": "Quanto é 5 ao cubo (5³)?",
       "options": [
@@ -1838,6 +1991,7 @@
       "fact": "5³ = 5 × 5 × 5."
     },
     {
+      "id": "matematica-e-logica-154",
       "difficulty": "medium",
       "text": "Quanto é qualquer número (diferente de zero) elevado a zero?",
       "options": [
@@ -1850,6 +2004,7 @@
       "fact": "A regra vem das divisões de potências: 2³ ÷ 2³ = 2⁰ = 1."
     },
     {
+      "id": "matematica-e-logica-155",
       "difficulty": "medium",
       "text": "Qual é a raiz quadrada de 81?",
       "options": [
@@ -1862,6 +2017,7 @@
       "fact": "81 é 9 × 9."
     },
     {
+      "id": "matematica-e-logica-156",
       "difficulty": "medium",
       "text": "Qual é a raiz quadrada de 169?",
       "options": [
@@ -1874,6 +2030,7 @@
       "fact": "169 é 13 × 13."
     },
     {
+      "id": "matematica-e-logica-157",
       "difficulty": "medium",
       "text": "Qual é a raiz quadrada de 400?",
       "options": [
@@ -1886,6 +2043,7 @@
       "fact": "400 é 20 × 20."
     },
     {
+      "id": "matematica-e-logica-158",
       "difficulty": "medium",
       "text": "Qual é a raiz cúbica de 27?",
       "options": [
@@ -1898,6 +2056,7 @@
       "fact": "A raiz cúbica é o número que multiplicado por ele mesmo três vezes dá o valor."
     },
     {
+      "id": "matematica-e-logica-159",
       "difficulty": "medium",
       "text": "Qual é a raiz cúbica de 1.000?",
       "options": [
@@ -1910,6 +2069,7 @@
       "fact": "10 × 10 × 10 = 1.000."
     },
     {
+      "id": "matematica-e-logica-160",
       "difficulty": "medium",
       "text": "Quanto é 20% de 150?",
       "options": [
@@ -1922,6 +2082,7 @@
       "fact": "20% é o mesmo que um quinto."
     },
     {
+      "id": "matematica-e-logica-161",
       "difficulty": "medium",
       "text": "Quanto é 75% de 40?",
       "options": [
@@ -1934,6 +2095,7 @@
       "fact": "75% são três quartos: um quarto de 40 é 10, três quartos são 30."
     },
     {
+      "id": "matematica-e-logica-162",
       "difficulty": "medium",
       "text": "Quanto é 1% de 3.500?",
       "options": [
@@ -1946,6 +2108,7 @@
       "fact": "Para achar 1%, basta dividir por 100."
     },
     {
+      "id": "matematica-e-logica-163",
       "difficulty": "medium",
       "text": "Quanto é 200% de 15?",
       "options": [
@@ -1958,6 +2121,7 @@
       "fact": "200% é o dobro."
     },
     {
+      "id": "matematica-e-logica-164",
       "difficulty": "medium",
       "text": "Quanto é 5% de 60?",
       "options": [
@@ -1970,6 +2134,7 @@
       "fact": "5% é a metade de 10%: 10% de 60 é 6, e 5% é 3."
     },
     {
+      "id": "matematica-e-logica-165",
       "difficulty": "medium",
       "text": "Um produto de R$ 80 teve aumento de 25%. Quanto passou a custar?",
       "options": [
@@ -1982,6 +2147,7 @@
       "fact": "25% de 80 é 20, e 80 + 20 = 100."
     },
     {
+      "id": "matematica-e-logica-166",
       "difficulty": "medium",
       "text": "Uma camiseta de R$ 60 está com 30% de desconto. Qual é o novo preço?",
       "options": [
@@ -1994,6 +2160,7 @@
       "fact": "30% de 60 é 18, e 60 − 18 = 42."
     },
     {
+      "id": "matematica-e-logica-167",
       "difficulty": "medium",
       "text": "Se um preço sobe 10% e depois desce 10%, como ele fica em relação ao original?",
       "options": [
@@ -2006,6 +2173,7 @@
       "fact": "De 100 vai a 110, e 10% de 110 é 11: termina em 99."
     },
     {
+      "id": "matematica-e-logica-168",
       "difficulty": "medium",
       "text": "Numa turma de 40 alunos, 25% usam óculos. Quantos alunos usam óculos?",
       "options": [
@@ -2018,6 +2186,7 @@
       "fact": "25% é um quarto: 40 ÷ 4 = 10."
     },
     {
+      "id": "matematica-e-logica-169",
       "difficulty": "medium",
       "text": "Quanto é 1/2 + 1/4?",
       "options": [
@@ -2030,6 +2199,7 @@
       "fact": "Meia pizza mais um quarto de pizza dão três quartos."
     },
     {
+      "id": "matematica-e-logica-170",
       "difficulty": "medium",
       "text": "Quanto é 1/2 − 1/3?",
       "options": [
@@ -2042,6 +2212,7 @@
       "fact": "Com denominador comum 6, a conta fica 3/6 − 2/6 = 1/6."
     },
     {
+      "id": "matematica-e-logica-171",
       "difficulty": "medium",
       "text": "Quanto é 3/4 de 20?",
       "options": [
@@ -2054,6 +2225,7 @@
       "fact": "Um quarto de 20 é 5; três quartos são 15."
     },
     {
+      "id": "matematica-e-logica-172",
       "difficulty": "medium",
       "text": "Quanto é 2/5 de 50?",
       "options": [
@@ -2066,6 +2238,7 @@
       "fact": "Um quinto de 50 é 10; dois quintos são 20."
     },
     {
+      "id": "matematica-e-logica-173",
       "difficulty": "medium",
       "text": "Que fração é igual a 0,75?",
       "options": [
@@ -2078,6 +2251,7 @@
       "fact": "0,75 é 75 centésimos, que simplificando dá 3/4."
     },
     {
+      "id": "matematica-e-logica-174",
       "difficulty": "medium",
       "text": "Que fração é igual a 20%?",
       "options": [
@@ -2090,6 +2264,7 @@
       "fact": "20% é 20/100, que simplificado dá 1/5."
     },
     {
+      "id": "matematica-e-logica-175",
       "difficulty": "medium",
       "text": "Que fração é equivalente a 2/4?",
       "options": [
@@ -2102,6 +2277,7 @@
       "fact": "Dividindo em cima e embaixo por 2, 2/4 vira 1/2."
     },
     {
+      "id": "matematica-e-logica-176",
       "difficulty": "medium",
       "text": "Quanto é metade de um terço?",
       "options": [
@@ -2114,6 +2290,7 @@
       "fact": "Metade de 1/3 é 1/3 × 1/2 = 1/6."
     },
     {
+      "id": "matematica-e-logica-177",
       "difficulty": "medium",
       "text": "Qual destas frações é a maior?",
       "options": [
@@ -2126,6 +2303,7 @@
       "fact": "Em decimal: 0,75; 0,666...; 0,625; 0,5."
     },
     {
+      "id": "matematica-e-logica-178",
       "difficulty": "medium",
       "text": "Qual é o valor de 0,1 × 0,1?",
       "options": [
@@ -2138,6 +2316,7 @@
       "fact": "Um décimo de um décimo é um centésimo."
     },
     {
+      "id": "matematica-e-logica-179",
       "difficulty": "medium",
       "text": "Quanto é 0,5 dividido por 0,5?",
       "options": [
@@ -2150,6 +2329,7 @@
       "fact": "Qualquer número dividido por ele mesmo dá 1."
     },
     {
+      "id": "matematica-e-logica-180",
       "difficulty": "medium",
       "text": "Quanto é 6 dividido por 0,5?",
       "options": [
@@ -2162,6 +2342,7 @@
       "fact": "Dividir por meio é o mesmo que multiplicar por 2."
     },
     {
+      "id": "matematica-e-logica-181",
       "difficulty": "medium",
       "text": "Qual destes números é primo?",
       "options": [
@@ -2174,6 +2355,7 @@
       "fact": "29 só é divisível por 1 e por ele mesmo."
     },
     {
+      "id": "matematica-e-logica-182",
       "difficulty": "medium",
       "text": "Qual destes números NÃO é primo?",
       "options": [
@@ -2186,6 +2368,7 @@
       "fact": "51 parece primo, mas é 3 × 17."
     },
     {
+      "id": "matematica-e-logica-183",
       "difficulty": "medium",
       "text": "Qual destes números é primo: 31, 21, 91 ou 51?",
       "options": [
@@ -2198,6 +2381,7 @@
       "fact": "91 engana muita gente: é 7 × 13."
     },
     {
+      "id": "matematica-e-logica-184",
       "difficulty": "medium",
       "text": "Qual é o menor número primo?",
       "options": [
@@ -2210,6 +2394,7 @@
       "fact": "O 1 não é considerado primo, porque só tem um divisor."
     },
     {
+      "id": "matematica-e-logica-185",
       "difficulty": "medium",
       "text": "Quantos divisores tem o número 12?",
       "options": [
@@ -2222,6 +2407,7 @@
       "fact": "Os divisores de 12 são 1, 2, 3, 4, 6 e 12."
     },
     {
+      "id": "matematica-e-logica-186",
       "difficulty": "medium",
       "text": "Qual é o máximo divisor comum (MDC) de 12 e 18?",
       "options": [
@@ -2234,6 +2420,7 @@
       "fact": "12 = 2 × 6 e 18 = 3 × 6."
     },
     {
+      "id": "matematica-e-logica-187",
       "difficulty": "medium",
       "text": "Qual é o mínimo múltiplo comum (MMC) de 4 e 6?",
       "options": [
@@ -2246,6 +2433,7 @@
       "fact": "Os múltiplos de 4 são 4, 8, 12...; os de 6 são 6, 12...: o primeiro em comum é 12."
     },
     {
+      "id": "matematica-e-logica-188",
       "difficulty": "medium",
       "text": "Qual é o MMC de 3 e 5?",
       "options": [
@@ -2258,6 +2446,7 @@
       "fact": "Quando os números não têm divisor comum, o MMC é o produto deles."
     },
     {
+      "id": "matematica-e-logica-189",
       "difficulty": "medium",
       "text": "Qual destes números é divisível por 3?",
       "options": [
@@ -2270,6 +2459,7 @@
       "fact": "Um número é divisível por 3 quando a soma dos algarismos é divisível por 3: 1 + 1 + 1 = 3."
     },
     {
+      "id": "matematica-e-logica-190",
       "difficulty": "medium",
       "text": "Qual destes números é divisível por 9?",
       "options": [
@@ -2282,6 +2472,7 @@
       "fact": "1 + 1 + 7 = 9, então 117 é divisível por 9."
     },
     {
+      "id": "matematica-e-logica-191",
       "difficulty": "medium",
       "text": "Qual destes números é divisível por 4?",
       "options": [
@@ -2294,6 +2485,7 @@
       "fact": "Um número é divisível por 4 quando os dois últimos algarismos formam um múltiplo de 4: 16."
     },
     {
+      "id": "matematica-e-logica-192",
       "difficulty": "medium",
       "text": "Qual destes números é um quadrado perfeito?",
       "options": [
@@ -2306,6 +2498,7 @@
       "fact": "49 é 7 × 7."
     },
     {
+      "id": "matematica-e-logica-193",
       "difficulty": "medium",
       "text": "Qual destes números é um cubo perfeito?",
       "options": [
@@ -2318,6 +2511,7 @@
       "fact": "64 é 4 × 4 × 4."
     },
     {
+      "id": "matematica-e-logica-194",
       "difficulty": "medium",
       "text": "Qual destes números é tanto quadrado quanto cubo perfeito?",
       "options": [
@@ -2330,6 +2524,7 @@
       "fact": "64 é 8² e também 4³."
     },
     {
+      "id": "matematica-e-logica-195",
       "difficulty": "medium",
       "text": "Quanto é −5 + 8?",
       "options": [
@@ -2342,6 +2537,7 @@
       "fact": "Na reta numérica, sair do −5 e andar 8 casas para a direita leva ao 3."
     },
     {
+      "id": "matematica-e-logica-196",
       "difficulty": "medium",
       "text": "Quanto é −3 × −4?",
       "options": [
@@ -2354,6 +2550,7 @@
       "fact": "Menos vezes menos dá mais."
     },
     {
+      "id": "matematica-e-logica-197",
       "difficulty": "medium",
       "text": "Quanto é −10 − 5?",
       "options": [
@@ -2366,6 +2563,7 @@
       "fact": "Subtrair um número positivo de um negativo afasta ainda mais do zero."
     },
     {
+      "id": "matematica-e-logica-198",
       "difficulty": "medium",
       "text": "Quanto é −2 ao quadrado, ou seja, (−2)²?",
       "options": [
@@ -2378,6 +2576,7 @@
       "fact": "O quadrado de qualquer número diferente de zero é positivo."
     },
     {
+      "id": "matematica-e-logica-199",
       "difficulty": "medium",
       "text": "Que número romano é o MCM?",
       "options": [
@@ -2390,6 +2589,7 @@
       "fact": "M = 1.000, CM = 900 (100 antes de 1.000)."
     },
     {
+      "id": "matematica-e-logica-200",
       "difficulty": "medium",
       "text": "Que número romano é o XC?",
       "options": [
@@ -2402,6 +2602,7 @@
       "fact": "O X antes do C subtrai: 100 − 10 = 90."
     },
     {
+      "id": "matematica-e-logica-201",
       "difficulty": "medium",
       "text": "Como se escreve 99 em algarismos romanos?",
       "options": [
@@ -2414,6 +2615,7 @@
       "fact": "Os romanos não permitiam o IC: o 99 é 90 (XC) + 9 (IX)."
     },
     {
+      "id": "matematica-e-logica-202",
       "difficulty": "medium",
       "text": "Que número romano é o CD?",
       "options": [
@@ -2426,6 +2628,7 @@
       "fact": "O C antes do D subtrai: 500 − 100 = 400."
     },
     {
+      "id": "matematica-e-logica-203",
       "difficulty": "medium",
       "text": "Que número romano é o DCCC?",
       "options": [
@@ -2438,6 +2641,7 @@
       "fact": "D = 500 e cada C vale 100."
     },
     {
+      "id": "matematica-e-logica-204",
       "difficulty": "medium",
       "text": "Que número romano é o XLIV?",
       "options": [
@@ -2450,6 +2654,7 @@
       "fact": "XL = 40 e IV = 4."
     },
     {
+      "id": "matematica-e-logica-205",
       "difficulty": "medium",
       "text": "Quanto mede cada ângulo interno de um triângulo equilátero?",
       "options": [
@@ -2462,6 +2667,7 @@
       "fact": "Os três ângulos são iguais e somam 180°: 180 ÷ 3 = 60."
     },
     {
+      "id": "matematica-e-logica-206",
       "difficulty": "medium",
       "text": "Quanto dá a soma dos ângulos internos de um quadrilátero?",
       "options": [
@@ -2474,6 +2680,7 @@
       "fact": "Todo quadrilátero pode ser dividido em dois triângulos: 2 × 180° = 360°."
     },
     {
+      "id": "matematica-e-logica-207",
       "difficulty": "medium",
       "text": "Quanto dá a soma dos ângulos internos de um pentágono?",
       "options": [
@@ -2486,6 +2693,7 @@
       "fact": "A fórmula é (n − 2) × 180°, em que n é o número de lados: 3 × 180° = 540°."
     },
     {
+      "id": "matematica-e-logica-208",
       "difficulty": "medium",
       "text": "Como se chama o triângulo que tem um ângulo de 90°?",
       "options": [
@@ -2498,6 +2706,7 @@
       "fact": "No triângulo retângulo, os outros dois ângulos sempre somam 90°."
     },
     {
+      "id": "matematica-e-logica-209",
       "difficulty": "medium",
       "text": "Como se chama o lado maior de um triângulo retângulo?",
       "options": [
@@ -2510,6 +2719,7 @@
       "fact": "Os outros dois lados do triângulo retângulo são os catetos."
     },
     {
+      "id": "matematica-e-logica-210",
       "difficulty": "medium",
       "text": "Num triângulo retângulo com catetos de 6 e 8, quanto mede a hipotenusa?",
       "options": [
@@ -2522,6 +2732,7 @@
       "fact": "Pela relação a² = b² + c²: 6² + 8² = 36 + 64 = 100, e a raiz de 100 é 10."
     },
     {
+      "id": "matematica-e-logica-211",
       "difficulty": "medium",
       "text": "Num triângulo retângulo com catetos de 5 e 12, quanto mede a hipotenusa?",
       "options": [
@@ -2534,6 +2745,7 @@
       "fact": "5² + 12² = 25 + 144 = 169, e a raiz de 169 é 13."
     },
     {
+      "id": "matematica-e-logica-212",
       "difficulty": "medium",
       "text": "Que matemático grego dá nome ao teorema sobre os lados do triângulo retângulo?",
       "options": [
@@ -2546,6 +2758,7 @@
       "fact": "Os babilônios já conheciam essa relação mais de mil anos antes de Pitágoras."
     },
     {
+      "id": "matematica-e-logica-213",
       "difficulty": "medium",
       "text": "Como se chama o triângulo com dois lados iguais?",
       "options": [
@@ -2558,6 +2771,7 @@
       "fact": "\"Isósceles\" vem do grego e significa \"pernas iguais\"."
     },
     {
+      "id": "matematica-e-logica-214",
       "difficulty": "medium",
       "text": "Como se chama o triângulo com os três lados diferentes?",
       "options": [
@@ -2570,6 +2784,7 @@
       "fact": "Num triângulo escaleno, os três ângulos também são diferentes."
     },
     {
+      "id": "matematica-e-logica-215",
       "difficulty": "medium",
       "text": "Qual é a área de um triângulo com base 10 cm e altura 6 cm?",
       "options": [
@@ -2582,6 +2797,7 @@
       "fact": "A área do triângulo é base vezes altura dividido por 2."
     },
     {
+      "id": "matematica-e-logica-216",
       "difficulty": "medium",
       "text": "Qual é o perímetro de um retângulo de 7 cm por 3 cm?",
       "options": [
@@ -2594,6 +2810,7 @@
       "fact": "Perímetro é a soma dos lados: 7 + 3 + 7 + 3 = 20."
     },
     {
+      "id": "matematica-e-logica-217",
       "difficulty": "medium",
       "text": "Qual é o volume de um cubo de aresta 3 cm?",
       "options": [
@@ -2606,6 +2823,7 @@
       "fact": "O volume do cubo é aresta × aresta × aresta."
     },
     {
+      "id": "matematica-e-logica-218",
       "difficulty": "medium",
       "text": "Quantos litros cabem em 1 metro cúbico?",
       "options": [
@@ -2618,6 +2836,7 @@
       "fact": "Uma caixa-d'água de 1.000 litros tem exatamente 1 metro cúbico de volume."
     },
     {
+      "id": "matematica-e-logica-219",
       "difficulty": "medium",
       "text": "Qual é a fórmula da área de um círculo?",
       "options": [
@@ -2630,6 +2849,7 @@
       "fact": "A área de um círculo de raio 1 é exatamente π."
     },
     {
+      "id": "matematica-e-logica-220",
       "difficulty": "medium",
       "text": "Qual é a fórmula do comprimento de uma circunferência?",
       "options": [
@@ -2642,6 +2862,7 @@
       "fact": "Uma roda de raio 1 metro anda pouco mais de 6,28 metros a cada volta."
     },
     {
+      "id": "matematica-e-logica-221",
       "difficulty": "medium",
       "text": "Quantas faces tem uma pirâmide de base quadrada, contando a base?",
       "options": [
@@ -2654,6 +2875,7 @@
       "fact": "São 4 faces triangulares e 1 face quadrada."
     },
     {
+      "id": "matematica-e-logica-222",
       "difficulty": "medium",
       "text": "Quantos vértices tem um cubo?",
       "options": [
@@ -2666,6 +2888,7 @@
       "fact": "Pela relação de Euler, vértices − arestas + faces = 2: 8 − 12 + 6 = 2."
     },
     {
+      "id": "matematica-e-logica-223",
       "difficulty": "medium",
       "text": "Quantas faces tem um tetraedro?",
       "options": [
@@ -2678,6 +2901,7 @@
       "fact": "\"Tetra\" significa quatro, em grego."
     },
     {
+      "id": "matematica-e-logica-224",
       "difficulty": "medium",
       "text": "Quantas faces tem um octaedro?",
       "options": [
@@ -2690,6 +2914,7 @@
       "fact": "O octaedro parece duas pirâmides de base quadrada coladas pela base."
     },
     {
+      "id": "matematica-e-logica-225",
       "difficulty": "medium",
       "text": "Quantos lados tem um dodecágono?",
       "options": [
@@ -2702,6 +2927,7 @@
       "fact": "\"Dodeca\" significa doze, em grego."
     },
     {
+      "id": "matematica-e-logica-226",
       "difficulty": "medium",
       "text": "Quantos lados tem um eneágono?",
       "options": [
@@ -2714,6 +2940,7 @@
       "fact": "O eneágono também é chamado de nonágono."
     },
     {
+      "id": "matematica-e-logica-227",
       "difficulty": "medium",
       "text": "Quantos lados tem um heptágono?",
       "options": [
@@ -2726,6 +2953,7 @@
       "fact": "A moeda de 50 pence do Reino Unido tem forma de heptágono com lados curvos."
     },
     {
+      "id": "matematica-e-logica-228",
       "difficulty": "medium",
       "text": "Quantas diagonais tem um quadrado?",
       "options": [
@@ -2738,6 +2966,7 @@
       "fact": "As diagonais do quadrado se cruzam no centro, formando ângulos retos."
     },
     {
+      "id": "matematica-e-logica-229",
       "difficulty": "medium",
       "text": "Quantas diagonais tem um pentágono?",
       "options": [
@@ -2750,6 +2979,7 @@
       "fact": "Ligando todas as diagonais de um pentágono, forma-se uma estrela de cinco pontas."
     },
     {
+      "id": "matematica-e-logica-230",
       "difficulty": "medium",
       "text": "Como se chamam duas retas que nunca se cruzam, no mesmo plano?",
       "options": [
@@ -2762,6 +2992,7 @@
       "fact": "Os trilhos de um trem são um exemplo de retas paralelas."
     },
     {
+      "id": "matematica-e-logica-231",
       "difficulty": "medium",
       "text": "Como se chamam duas retas que se cruzam formando ângulos de 90°?",
       "options": [
@@ -2774,6 +3005,7 @@
       "fact": "As linhas de um papel quadriculado são perpendiculares entre si."
     },
     {
+      "id": "matematica-e-logica-232",
       "difficulty": "medium",
       "text": "Quanto mede um ângulo raso?",
       "options": [
@@ -2786,6 +3018,7 @@
       "fact": "O ângulo raso parece uma linha reta."
     },
     {
+      "id": "matematica-e-logica-233",
       "difficulty": "medium",
       "text": "Qual é o complemento de um ângulo de 30°, ou seja, quanto falta para 90°?",
       "options": [
@@ -2798,6 +3031,7 @@
       "fact": "Ângulos complementares somam 90°; suplementares somam 180°."
     },
     {
+      "id": "matematica-e-logica-234",
       "difficulty": "medium",
       "text": "Qual é o suplemento de um ângulo de 110°, ou seja, quanto falta para 180°?",
       "options": [
@@ -2810,6 +3044,7 @@
       "fact": "Ângulos suplementares somam 180°."
     },
     {
+      "id": "matematica-e-logica-235",
       "difficulty": "medium",
       "text": "Que número completa a sequência 2, 6, 18, 54, __?",
       "options": [
@@ -2822,6 +3057,7 @@
       "fact": "Cada número é o anterior vezes 3."
     },
     {
+      "id": "matematica-e-logica-236",
       "difficulty": "medium",
       "text": "Que número completa a sequência 1, 4, 9, 16, 25, __?",
       "options": [
@@ -2834,6 +3070,7 @@
       "fact": "São os quadrados perfeitos: 1², 2², 3², 4², 5², 6²."
     },
     {
+      "id": "matematica-e-logica-237",
       "difficulty": "medium",
       "text": "Que número completa a sequência 1, 8, 27, 64, __?",
       "options": [
@@ -2846,6 +3083,7 @@
       "fact": "São os cubos: 1³, 2³, 3³, 4³, 5³."
     },
     {
+      "id": "matematica-e-logica-238",
       "difficulty": "medium",
       "text": "Que número completa a sequência 2, 3, 5, 7, 11, __?",
       "options": [
@@ -2858,6 +3096,7 @@
       "fact": "São os números primos em ordem."
     },
     {
+      "id": "matematica-e-logica-239",
       "difficulty": "medium",
       "text": "Que número completa a sequência 1, 3, 6, 10, 15, __?",
       "options": [
@@ -2870,6 +3109,7 @@
       "fact": "A diferença aumenta de 1 em 1: +2, +3, +4, +5, +6."
     },
     {
+      "id": "matematica-e-logica-240",
       "difficulty": "medium",
       "text": "Que número completa a sequência 64, 32, 16, 8, __?",
       "options": [
@@ -2882,6 +3122,7 @@
       "fact": "Cada número é a metade do anterior."
     },
     {
+      "id": "matematica-e-logica-241",
       "difficulty": "medium",
       "text": "Que número completa a sequência 1, 2, 6, 24, __?",
       "options": [
@@ -2894,6 +3135,7 @@
       "fact": "Cada termo é o anterior vezes 2, 3, 4 e 5: são os fatoriais."
     },
     {
+      "id": "matematica-e-logica-242",
       "difficulty": "medium",
       "text": "Que letra completa a sequência A, C, E, G, __?",
       "options": [
@@ -2906,6 +3148,7 @@
       "fact": "A sequência pula uma letra de cada vez."
     },
     {
+      "id": "matematica-e-logica-243",
       "difficulty": "medium",
       "text": "Quanto é 4! (quatro fatorial)?",
       "options": [
@@ -2918,6 +3161,7 @@
       "fact": "4! = 4 × 3 × 2 × 1."
     },
     {
+      "id": "matematica-e-logica-244",
       "difficulty": "medium",
       "text": "Quanto é 5! (cinco fatorial)?",
       "options": [
@@ -2930,6 +3174,7 @@
       "fact": "O fatorial cresce muito rápido: 10! já passa de 3 milhões."
     },
     {
+      "id": "matematica-e-logica-245",
       "difficulty": "medium",
       "text": "Quanto é 3 elevado a 4 (3⁴)?",
       "options": [
@@ -2942,6 +3187,7 @@
       "fact": "3⁴ = 3 × 3 × 3 × 3."
     },
     {
+      "id": "matematica-e-logica-246",
       "difficulty": "medium",
       "text": "Quanto é 2¹⁰?",
       "options": [
@@ -2954,6 +3200,7 @@
       "fact": "Por isso 1 kilobyte, em computação, às vezes é tratado como 1.024 bytes."
     },
     {
+      "id": "matematica-e-logica-247",
       "difficulty": "medium",
       "text": "Que número é 1.000.000 em potência de 10?",
       "options": [
@@ -2966,6 +3213,7 @@
       "fact": "O expoente é o número de zeros: um milhão tem seis."
     },
     {
+      "id": "matematica-e-logica-248",
       "difficulty": "medium",
       "text": "Como se escreve o número 5 em binário?",
       "options": [
@@ -2978,6 +3226,7 @@
       "fact": "No sistema binário, só existem os algarismos 0 e 1: 101 = 4 + 0 + 1."
     },
     {
+      "id": "matematica-e-logica-249",
       "difficulty": "medium",
       "text": "Que número decimal é o binário 1000?",
       "options": [
@@ -2990,6 +3239,7 @@
       "fact": "Cada posição no binário vale o dobro da anterior: 1, 2, 4, 8."
     },
     {
+      "id": "matematica-e-logica-250",
       "difficulty": "medium",
       "text": "Que número decimal é o binário 1111?",
       "options": [
@@ -3002,6 +3252,7 @@
       "fact": "1111 = 8 + 4 + 2 + 1 = 15."
     },
     {
+      "id": "matematica-e-logica-251",
       "difficulty": "medium",
       "text": "Qual é a média de 4, 8 e 12?",
       "options": [
@@ -3014,6 +3265,7 @@
       "fact": "A média é a soma dividida pela quantidade: 24 ÷ 3 = 8."
     },
     {
+      "id": "matematica-e-logica-252",
       "difficulty": "medium",
       "text": "Qual é a média das notas 6, 7, 8 e 9?",
       "options": [
@@ -3026,6 +3278,7 @@
       "fact": "A soma é 30, dividida por 4 dá 7,5."
     },
     {
+      "id": "matematica-e-logica-253",
       "difficulty": "medium",
       "text": "Qual é a mediana de 3, 7, 9, 12 e 20?",
       "options": [
@@ -3038,6 +3291,7 @@
       "fact": "A mediana é o valor do meio quando os números estão em ordem."
     },
     {
+      "id": "matematica-e-logica-254",
       "difficulty": "medium",
       "text": "Qual é a moda do conjunto 2, 3, 3, 5, 7, 3, 2?",
       "options": [
@@ -3050,6 +3304,7 @@
       "fact": "A moda é o valor que mais se repete."
     },
     {
+      "id": "matematica-e-logica-255",
       "difficulty": "medium",
       "text": "Ao jogar um dado comum, qual é a probabilidade de sair o 6?",
       "options": [
@@ -3062,6 +3317,7 @@
       "fact": "O dado tem seis faces igualmente prováveis."
     },
     {
+      "id": "matematica-e-logica-256",
       "difficulty": "medium",
       "text": "Ao jogar um dado comum, qual é a probabilidade de sair um número par?",
       "options": [
@@ -3074,6 +3330,7 @@
       "fact": "Os pares do dado são 2, 4 e 6: três de seis faces."
     },
     {
+      "id": "matematica-e-logica-257",
       "difficulty": "medium",
       "text": "Jogando duas moedas, qual é a probabilidade de dar duas caras?",
       "options": [
@@ -3086,6 +3343,7 @@
       "fact": "Os resultados possíveis são cara-cara, cara-coroa, coroa-cara e coroa-coroa."
     },
     {
+      "id": "matematica-e-logica-258",
       "difficulty": "medium",
       "text": "Quantos resultados diferentes são possíveis ao lançar dois dados?",
       "options": [
@@ -3098,6 +3356,7 @@
       "fact": "6 resultados do primeiro dado vezes 6 do segundo."
     },
     {
+      "id": "matematica-e-logica-259",
       "difficulty": "medium",
       "text": "Com dois dados, que soma tem a maior chance de sair?",
       "options": [
@@ -3110,6 +3369,7 @@
       "fact": "A soma 7 aparece de seis jeitos: 1+6, 2+5, 3+4, 4+3, 5+2 e 6+1."
     },
     {
+      "id": "matematica-e-logica-260",
       "difficulty": "medium",
       "text": "Um baralho comum, sem coringas, tem quantas cartas?",
       "options": [
@@ -3122,6 +3382,7 @@
       "fact": "São 4 naipes com 13 cartas cada."
     },
     {
+      "id": "matematica-e-logica-261",
       "difficulty": "medium",
       "text": "De quantas formas diferentes 3 pessoas podem fazer uma fila?",
       "options": [
@@ -3134,6 +3395,7 @@
       "fact": "3! = 3 × 2 × 1 = 6."
     },
     {
+      "id": "matematica-e-logica-262",
       "difficulty": "medium",
       "text": "Numa festa, 5 pessoas se cumprimentam com um aperto de mão, cada uma com todas as outras. Quantos apertos de mão acontecem?",
       "options": [
@@ -3146,6 +3408,7 @@
       "fact": "Cada pessoa aperta a mão de 4, mas cada aperto envolve 2 pessoas: 5 × 4 ÷ 2 = 10."
     },
     {
+      "id": "matematica-e-logica-263",
       "difficulty": "medium",
       "text": "Se 3 operários constroem um muro em 6 dias, quantos dias 6 operários levariam?",
       "options": [
@@ -3158,6 +3421,7 @@
       "fact": "Dobrando os operários, o tempo cai pela metade: é uma grandeza inversamente proporcional."
     },
     {
+      "id": "matematica-e-logica-264",
       "difficulty": "medium",
       "text": "Um carro anda a 60 km/h. Quantos quilômetros ele percorre em 2 horas e meia?",
       "options": [
@@ -3170,6 +3434,7 @@
       "fact": "60 × 2,5 = 150."
     },
     {
+      "id": "matematica-e-logica-265",
       "difficulty": "medium",
       "text": "Uma torneira enche um balde de 12 litros em 4 minutos. Quantos litros ela enche por minuto?",
       "options": [
@@ -3182,6 +3447,7 @@
       "fact": "12 ÷ 4 = 3 litros por minuto."
     },
     {
+      "id": "matematica-e-logica-266",
       "difficulty": "medium",
       "text": "Se 4 canetas custam R$ 10, quanto custam 6 canetas?",
       "options": [
@@ -3194,6 +3460,7 @@
       "fact": "Cada caneta custa R$ 2,50: 6 × 2,50 = 15."
     },
     {
+      "id": "matematica-e-logica-267",
       "difficulty": "medium",
       "text": "Quantos segundos tem uma hora?",
       "options": [
@@ -3206,6 +3473,7 @@
       "fact": "60 minutos × 60 segundos = 3.600."
     },
     {
+      "id": "matematica-e-logica-268",
       "difficulty": "medium",
       "text": "Quantos minutos têm 3 horas e 15 minutos?",
       "options": [
@@ -3218,6 +3486,7 @@
       "fact": "3 × 60 = 180, mais 15 minutos dá 195."
     },
     {
+      "id": "matematica-e-logica-269",
       "difficulty": "medium",
       "text": "Quantas semanas completas tem um ano?",
       "options": [
@@ -3230,6 +3499,7 @@
       "fact": "Sobra 1 dia, ou 2 nos anos bissextos, além das 52 semanas."
     },
     {
+      "id": "matematica-e-logica-270",
       "difficulty": "medium",
       "text": "Que horas o relógio marca 100 minutos depois das 10h?",
       "options": [
@@ -3242,6 +3512,7 @@
       "fact": "100 minutos são 1 hora e 40 minutos."
     },
     {
+      "id": "matematica-e-logica-271",
       "difficulty": "medium",
       "text": "Quantos graus o ponteiro dos minutos gira em 15 minutos?",
       "options": [
@@ -3254,6 +3525,7 @@
       "fact": "Uma volta completa, de 360°, leva 60 minutos: 15 minutos são um quarto de volta."
     },
     {
+      "id": "matematica-e-logica-272",
       "difficulty": "medium",
       "text": "Às 3h em ponto, qual é o ângulo entre os ponteiros do relógio?",
       "options": [
@@ -3266,6 +3538,7 @@
       "fact": "Cada hora do mostrador corresponde a 30°: 3 × 30° = 90°."
     },
     {
+      "id": "matematica-e-logica-273",
       "difficulty": "medium",
       "text": "Quantas vezes o número 1 aparece ao escrever os números de 1 a 20?",
       "options": [
@@ -3278,6 +3551,7 @@
       "fact": "Aparece no 1, no 10, duas vezes no 11 e uma vez em cada número de 12 a 19: 1 + 1 + 2 + 8 = 12."
     },
     {
+      "id": "matematica-e-logica-274",
       "difficulty": "medium",
       "text": "Se um ano bissexto começa numa segunda-feira, em que dia da semana ele termina?",
       "options": [
@@ -3290,6 +3564,7 @@
       "fact": "O último dia vem 365 dias depois do primeiro, e 365 dias são 52 semanas mais 1 dia."
     },
     {
+      "id": "matematica-e-logica-275",
       "difficulty": "hard",
       "text": "Um taco e uma bola custam R$ 1,10 juntos. O taco custa R$ 1 a mais que a bola. Quanto custa a bola?",
       "options": [
@@ -3302,6 +3577,7 @@
       "fact": "A resposta intuitiva, R$ 0,10, está errada: aí o taco custaria R$ 1,10 e o total seria R$ 1,20."
     },
     {
+      "id": "matematica-e-logica-276",
       "difficulty": "hard",
       "text": "Se 5 máquinas fazem 5 peças em 5 minutos, quanto tempo 100 máquinas levam para fazer 100 peças?",
       "options": [
@@ -3314,6 +3590,7 @@
       "fact": "Cada máquina faz 1 peça em 5 minutos, não importa quantas máquinas sejam."
     },
     {
+      "id": "matematica-e-logica-277",
       "difficulty": "hard",
       "text": "Num lago, uma mancha de plantas dobra de tamanho todo dia e cobre o lago em 48 dias. Em quantos dias cobre metade do lago?",
       "options": [
@@ -3326,6 +3603,7 @@
       "fact": "Como dobra a cada dia, um dia antes de cobrir tudo ela cobria a metade."
     },
     {
+      "id": "matematica-e-logica-278",
       "difficulty": "hard",
       "text": "Numa corrida, você ultrapassa o segundo colocado. Em que posição você fica?",
       "options": [
@@ -3338,6 +3616,7 @@
       "fact": "Ao ultrapassar o segundo, você toma o lugar dele; o primeiro continua na frente."
     },
     {
+      "id": "matematica-e-logica-279",
       "difficulty": "hard",
       "text": "Quantos meses do ano têm 28 dias?",
       "options": [
@@ -3350,6 +3629,7 @@
       "fact": "Todos os meses têm pelo menos 28 dias; só fevereiro para por aí nos anos comuns."
     },
     {
+      "id": "matematica-e-logica-280",
       "difficulty": "hard",
       "text": "Um pai e um filho somam 36 anos. O pai tem 30 anos a mais que o filho. Quantos anos tem o filho?",
       "options": [
@@ -3362,6 +3642,7 @@
       "fact": "Filho = x e pai = x + 30: 2x + 30 = 36, então x = 3."
     },
     {
+      "id": "matematica-e-logica-281",
       "difficulty": "hard",
       "text": "Se 3 gatos caçam 3 ratos em 3 minutos, quantos gatos são necessários para caçar 100 ratos em 100 minutos?",
       "options": [
@@ -3374,6 +3655,7 @@
       "fact": "Cada gato caça 1 rato a cada 3 minutos: em 100 minutos, 3 gatos caçam cerca de 100 ratos."
     },
     {
+      "id": "matematica-e-logica-282",
       "difficulty": "hard",
       "text": "Um tijolo pesa 1 quilo mais meio tijolo. Quanto pesa um tijolo?",
       "options": [
@@ -3386,6 +3668,7 @@
       "fact": "Se o tijolo é T, então T = 1 + T/2, e T = 2."
     },
     {
+      "id": "matematica-e-logica-283",
       "difficulty": "hard",
       "text": "Uma lesma sobe 3 metros de dia e escorrega 2 à noite num poço de 10 metros. Em quantos dias ela sai?",
       "options": [
@@ -3398,6 +3681,7 @@
       "fact": "Depois de 7 dias e noites ela está a 7 metros; no 8º dia sobe 3 e sai."
     },
     {
+      "id": "matematica-e-logica-284",
       "difficulty": "hard",
       "text": "Quantas vezes, num dia de 24 horas, os ponteiros das horas e dos minutos se sobrepõem?",
       "options": [
@@ -3410,6 +3694,7 @@
       "fact": "Em cada 12 horas eles se encontram 11 vezes, não 12, porque entre 11h e 13h só se cruzam ao meio-dia."
     },
     {
+      "id": "matematica-e-logica-285",
       "difficulty": "hard",
       "text": "Qual é o próximo número: 1, 11, 21, 1211, 111221, __?",
       "options": [
@@ -3422,6 +3707,7 @@
       "fact": "Cada termo \"lê\" o anterior: 111221 tem três 1, dois 2 e um 1: 312211."
     },
     {
+      "id": "matematica-e-logica-286",
       "difficulty": "hard",
       "text": "Qual é o próximo número da sequência 2, 5, 10, 17, 26, __?",
       "options": [
@@ -3434,6 +3720,7 @@
       "fact": "Cada termo é n² + 1: 6² + 1 = 37."
     },
     {
+      "id": "matematica-e-logica-287",
       "difficulty": "hard",
       "text": "Qual é o próximo número da sequência 1, 2, 4, 7, 11, __?",
       "options": [
@@ -3446,6 +3733,7 @@
       "fact": "As diferenças são 1, 2, 3, 4, 5."
     },
     {
+      "id": "matematica-e-logica-288",
       "difficulty": "hard",
       "text": "Qual é o próximo número da sequência 3, 5, 9, 17, 33, __?",
       "options": [
@@ -3458,6 +3746,7 @@
       "fact": "Cada termo é o dobro do anterior menos 1."
     },
     {
+      "id": "matematica-e-logica-289",
       "difficulty": "hard",
       "text": "Qual é o próximo número da sequência 1, 1, 2, 3, 5, 8, 13, 21, __?",
       "options": [
@@ -3470,6 +3759,7 @@
       "fact": "Cada termo é a soma dos dois anteriores: 13 + 21 = 34."
     },
     {
+      "id": "matematica-e-logica-290",
       "difficulty": "hard",
       "text": "Que letra completa a sequência U, D, T, Q, C, S, S, O, __?",
       "options": [
@@ -3482,6 +3772,7 @@
       "fact": "São as iniciais dos números em português: um, dois, três, quatro, cinco, seis, sete, oito, nove."
     },
     {
+      "id": "matematica-e-logica-291",
       "difficulty": "hard",
       "text": "Quanto é 17 × 23?",
       "options": [
@@ -3494,6 +3785,7 @@
       "fact": "Um truque: 20² − 3² = 400 − 9 = 391, porque (20 − 3)(20 + 3)."
     },
     {
+      "id": "matematica-e-logica-292",
       "difficulty": "hard",
       "text": "Quanto é 99 × 99?",
       "options": [
@@ -3506,6 +3798,7 @@
       "fact": "99² = (100 − 1)² = 10.000 − 200 + 1."
     },
     {
+      "id": "matematica-e-logica-293",
       "difficulty": "hard",
       "text": "Quanto é 111.111.111 × 111.111.111?",
       "options": [
@@ -3518,6 +3811,7 @@
       "fact": "O resultado é um palíndromo: lido de trás para frente, é o mesmo número."
     },
     {
+      "id": "matematica-e-logica-294",
       "difficulty": "hard",
       "text": "Quanto é 37 × 3?",
       "options": [
@@ -3530,6 +3824,7 @@
       "fact": "Multiplicando 37 por 3, 6, 9... aparecem 111, 222, 333..."
     },
     {
+      "id": "matematica-e-logica-295",
       "difficulty": "hard",
       "text": "Quanto é 1.234 + 4.321?",
       "options": [
@@ -3542,6 +3837,7 @@
       "fact": "Somar um número com o seu \"espelho\" muitas vezes gera padrões curiosos."
     },
     {
+      "id": "matematica-e-logica-296",
       "difficulty": "hard",
       "text": "Quanto é 2²⁰, aproximadamente?",
       "options": [
@@ -3554,6 +3850,7 @@
       "fact": "2²⁰ = 1.048.576, por isso 1 megabyte às vezes é tratado como 2²⁰ bytes."
     },
     {
+      "id": "matematica-e-logica-297",
       "difficulty": "hard",
       "text": "Qual é o último algarismo de 2¹⁰⁰?",
       "options": [
@@ -3566,6 +3863,7 @@
       "fact": "Os últimos algarismos das potências de 2 se repetem em ciclo: 2, 4, 8, 6. Como 100 é múltiplo de 4, termina em 6."
     },
     {
+      "id": "matematica-e-logica-298",
       "difficulty": "hard",
       "text": "Qual é o último algarismo de 7²?",
       "options": [
@@ -3578,6 +3876,7 @@
       "fact": "7² = 49."
     },
     {
+      "id": "matematica-e-logica-299",
       "difficulty": "hard",
       "text": "Quantos zeros tem no final o número 10! (10 fatorial)?",
       "options": [
@@ -3590,6 +3889,7 @@
       "fact": "10! = 3.628.800: os zeros vêm dos pares 2 × 5, e há dois cincos (5 e 10)."
     },
     {
+      "id": "matematica-e-logica-300",
       "difficulty": "hard",
       "text": "Quantos zeros tem no final o número 25!?",
       "options": [
@@ -3602,6 +3902,7 @@
       "fact": "Há cinco múltiplos de 5 até 25, e o 25 conta duas vezes (5 × 5): 6 zeros."
     },
     {
+      "id": "matematica-e-logica-301",
       "difficulty": "hard",
       "text": "Quanto é a soma dos números de 1 a 50?",
       "options": [
@@ -3614,6 +3915,7 @@
       "fact": "A fórmula é n × (n + 1) ÷ 2: 50 × 51 ÷ 2."
     },
     {
+      "id": "matematica-e-logica-302",
       "difficulty": "hard",
       "text": "Quanto é a soma dos 10 primeiros números ímpares?",
       "options": [
@@ -3626,6 +3928,7 @@
       "fact": "A soma dos n primeiros ímpares é sempre n²: 1 + 3 + 5 + ... + 19 = 10²."
     },
     {
+      "id": "matematica-e-logica-303",
       "difficulty": "hard",
       "text": "Quanto é 1 − 2 + 3 − 4 + ... + 99 − 100?",
       "options": [
@@ -3638,6 +3941,7 @@
       "fact": "São 50 pares de (ímpar − par), cada um dando −1."
     },
     {
+      "id": "matematica-e-logica-304",
       "difficulty": "hard",
       "text": "Qual é a soma dos ângulos internos de um hexágono?",
       "options": [
@@ -3650,6 +3954,7 @@
       "fact": "(6 − 2) × 180° = 720°."
     },
     {
+      "id": "matematica-e-logica-305",
       "difficulty": "hard",
       "text": "Quanto mede cada ângulo interno de um hexágono regular?",
       "options": [
@@ -3662,6 +3967,7 @@
       "fact": "720° ÷ 6 = 120°. É por isso que os favos das abelhas se encaixam perfeitamente."
     },
     {
+      "id": "matematica-e-logica-306",
       "difficulty": "hard",
       "text": "Quanto mede cada ângulo interno de um pentágono regular?",
       "options": [
@@ -3674,6 +3980,7 @@
       "fact": "540° ÷ 5 = 108°."
     },
     {
+      "id": "matematica-e-logica-307",
       "difficulty": "hard",
       "text": "Quantas diagonais tem um octógono?",
       "options": [
@@ -3686,6 +3993,7 @@
       "fact": "A fórmula é n × (n − 3) ÷ 2: 8 × 5 ÷ 2 = 20."
     },
     {
+      "id": "matematica-e-logica-308",
       "difficulty": "hard",
       "text": "Quantas diagonais tem um decágono?",
       "options": [
@@ -3698,6 +4006,7 @@
       "fact": "10 × 7 ÷ 2 = 35."
     },
     {
+      "id": "matematica-e-logica-309",
       "difficulty": "hard",
       "text": "Que polígonos regulares conseguem cobrir um plano sozinhos, sem buracos?",
       "options": [
@@ -3710,6 +4019,7 @@
       "fact": "Os ângulos precisam dividir 360° exatamente: 60°, 90° e 120° dividem; 108° não."
     },
     {
+      "id": "matematica-e-logica-310",
       "difficulty": "hard",
       "text": "Quantos poliedros regulares (sólidos de Platão) existem?",
       "options": [
@@ -3722,6 +4032,7 @@
       "fact": "São o tetraedro, o cubo, o octaedro, o dodecaedro e o icosaedro."
     },
     {
+      "id": "matematica-e-logica-311",
       "difficulty": "hard",
       "text": "Que forma tem cada face de um dodecaedro regular?",
       "options": [
@@ -3734,6 +4045,7 @@
       "fact": "O dodecaedro tem 12 faces pentagonais."
     },
     {
+      "id": "matematica-e-logica-312",
       "difficulty": "hard",
       "text": "Uma bola de futebol clássica é formada por que figuras?",
       "options": [
@@ -3746,6 +4058,7 @@
       "fact": "A bola clássica tem 12 pentágonos pretos e 20 hexágonos brancos."
     },
     {
+      "id": "matematica-e-logica-313",
       "difficulty": "hard",
       "text": "Se a aresta de um cubo dobra, o volume fica quantas vezes maior?",
       "options": [
@@ -3758,6 +4071,7 @@
       "fact": "O volume depende da aresta ao cubo: 2³ = 8."
     },
     {
+      "id": "matematica-e-logica-314",
       "difficulty": "hard",
       "text": "Se o raio de um círculo dobra, a área fica quantas vezes maior?",
       "options": [
@@ -3770,6 +4084,7 @@
       "fact": "A área depende do raio ao quadrado: 2² = 4."
     },
     {
+      "id": "matematica-e-logica-315",
       "difficulty": "hard",
       "text": "Qual é a diagonal de um quadrado de lado 1?",
       "options": [
@@ -3782,6 +4097,7 @@
       "fact": "Pela relação a² = b² + c²: 1² + 1² = 2."
     },
     {
+      "id": "matematica-e-logica-316",
       "difficulty": "hard",
       "text": "Qual é a área de um círculo de raio 10 cm, usando π = 3,14?",
       "options": [
@@ -3794,6 +4110,7 @@
       "fact": "π × 10² = 3,14 × 100."
     },
     {
+      "id": "matematica-e-logica-317",
       "difficulty": "hard",
       "text": "Quanto mede o comprimento de uma circunferência de diâmetro 10 cm, com π = 3,14?",
       "options": [
@@ -3806,6 +4123,7 @@
       "fact": "Comprimento = π × diâmetro."
     },
     {
+      "id": "matematica-e-logica-318",
       "difficulty": "hard",
       "text": "Qual destes números é irracional?",
       "options": [
@@ -3818,6 +4136,7 @@
       "fact": "√9 = 3, e as dízimas periódicas, como 0,333..., são frações."
     },
     {
+      "id": "matematica-e-logica-319",
       "difficulty": "hard",
       "text": "Qual é o valor de 0,999... (com noves infinitos)?",
       "options": [
@@ -3830,6 +4149,7 @@
       "fact": "Se x = 0,999..., então 10x = 9,999..., e 10x − x = 9, ou seja, x = 1."
     },
     {
+      "id": "matematica-e-logica-320",
       "difficulty": "hard",
       "text": "Que fração é a dízima 0,333...?",
       "options": [
@@ -3842,6 +4162,7 @@
       "fact": "Toda dízima periódica pode ser escrita como fração."
     },
     {
+      "id": "matematica-e-logica-321",
       "difficulty": "hard",
       "text": "Que fração é a dízima 0,121212...?",
       "options": [
@@ -3854,6 +4175,7 @@
       "fact": "0,1212... = 12/99, que simplificado dá 4/33."
     },
     {
+      "id": "matematica-e-logica-322",
       "difficulty": "hard",
       "text": "Quanto é 0,2 ao quadrado?",
       "options": [
@@ -3866,6 +4188,7 @@
       "fact": "0,2 × 0,2 = 0,04."
     },
     {
+      "id": "matematica-e-logica-323",
       "difficulty": "hard",
       "text": "Quanto é 1 dividido por 8, em decimal?",
       "options": [
@@ -3878,6 +4201,7 @@
       "fact": "1/8 é a metade de 1/4, que é 0,25."
     },
     {
+      "id": "matematica-e-logica-324",
       "difficulty": "hard",
       "text": "Um número aumentado em 20% dá 60. Que número é esse?",
       "options": [
@@ -3890,6 +4214,7 @@
       "fact": "x × 1,2 = 60, então x = 50."
     },
     {
+      "id": "matematica-e-logica-325",
       "difficulty": "hard",
       "text": "Depois de um desconto de 20%, um produto custa R$ 80. Qual era o preço original?",
       "options": [
@@ -3902,6 +4227,7 @@
       "fact": "80 é 80% do preço original: 80 ÷ 0,8 = 100."
     },
     {
+      "id": "matematica-e-logica-326",
       "difficulty": "hard",
       "text": "Um preço caiu 50% e depois subiu 50%. Em relação ao original, como ficou?",
       "options": [
@@ -3914,6 +4240,7 @@
       "fact": "De 100 vai a 50, e 50% de 50 é 25: termina em 75."
     },
     {
+      "id": "matematica-e-logica-327",
       "difficulty": "hard",
       "text": "Qual é o próximo ano bissexto depois de 2096?",
       "options": [
@@ -3926,6 +4253,7 @@
       "fact": "Anos terminados em 00 só são bissextos se forem divisíveis por 400, por isso 2100 não é."
     },
     {
+      "id": "matematica-e-logica-328",
       "difficulty": "hard",
       "text": "Qual destes anos NÃO foi bissexto?",
       "options": [
@@ -3938,6 +4266,7 @@
       "fact": "1900 é divisível por 100 mas não por 400."
     },
     {
+      "id": "matematica-e-logica-329",
       "difficulty": "hard",
       "text": "Quanto é log de 1.000 na base 10?",
       "options": [
@@ -3950,6 +4279,7 @@
       "fact": "10³ = 1.000."
     },
     {
+      "id": "matematica-e-logica-330",
       "difficulty": "hard",
       "text": "Quanto é log de 1 em qualquer base?",
       "options": [
@@ -3962,6 +4292,7 @@
       "fact": "Qualquer base elevada a zero dá 1."
     },
     {
+      "id": "matematica-e-logica-331",
       "difficulty": "hard",
       "text": "Que número é representado pela letra \"e\", base do logaritmo natural, aproximadamente?",
       "options": [
@@ -3974,6 +4305,7 @@
       "fact": "O número de Euler aparece em juros compostos e no crescimento de populações."
     },
     {
+      "id": "matematica-e-logica-332",
       "difficulty": "hard",
       "text": "Qual é o valor aproximado do número de ouro?",
       "options": [
@@ -3986,6 +4318,7 @@
       "fact": "O número de ouro aparece na razão entre termos seguidos da sequência de Fibonacci."
     },
     {
+      "id": "matematica-e-logica-333",
       "difficulty": "hard",
       "text": "Qual é o valor aproximado da raiz quadrada de 2?",
       "options": [
@@ -3998,6 +4331,7 @@
       "fact": "Os gregos descobriram que √2 não pode ser escrito como fração, e conta a lenda que isso foi tratado como segredo."
     },
     {
+      "id": "matematica-e-logica-334",
       "difficulty": "hard",
       "text": "Qual é a raiz quadrada de 0,25?",
       "options": [
@@ -4010,6 +4344,7 @@
       "fact": "0,5 × 0,5 = 0,25."
     },
     {
+      "id": "matematica-e-logica-335",
       "difficulty": "hard",
       "text": "Que sábio grego, de Mileto, teria medido a altura de uma pirâmide pela sombra?",
       "options": [
@@ -4022,6 +4357,7 @@
       "fact": "O teorema de Tales, sobre retas paralelas cortadas por transversais, ainda é ensinado nas escolas."
     },
     {
+      "id": "matematica-e-logica-336",
       "difficulty": "hard",
       "text": "Que matemático grego calculou um valor aproximado de π usando polígonos de 96 lados?",
       "options": [
@@ -4034,6 +4370,7 @@
       "fact": "Ele mostrou que π fica entre 3 + 10/71 e 3 + 1/7."
     },
     {
+      "id": "matematica-e-logica-337",
       "difficulty": "hard",
       "text": "Que matemática de Alexandria, morta em 415, é uma das primeiras mulheres matemáticas conhecidas?",
       "options": [
@@ -4046,6 +4383,7 @@
       "fact": "A vida de Hipátia inspirou o filme \"Alexandria\", de 2009."
     },
     {
+      "id": "matematica-e-logica-338",
       "difficulty": "hard",
       "text": "Que matemático italiano apresentou à Europa a sequência 1, 1, 2, 3, 5, 8...?",
       "options": [
@@ -4058,6 +4396,7 @@
       "fact": "Fibonacci também ajudou a espalhar na Europa os algarismos indo-arábicos."
     },
     {
+      "id": "matematica-e-logica-339",
       "difficulty": "hard",
       "text": "Que povo antigo inventou o conceito de zero como número?",
       "options": [
@@ -4070,6 +4409,7 @@
       "fact": "O matemático indiano Brahmagupta escreveu regras para operar com o zero no século VII."
     },
     {
+      "id": "matematica-e-logica-340",
       "difficulty": "hard",
       "text": "Que matemático francês criou o plano cartesiano?",
       "options": [
@@ -4082,6 +4422,7 @@
       "fact": "\"Cartesiano\" vem de Cartesius, o nome de Descartes em latim."
     },
     {
+      "id": "matematica-e-logica-341",
       "difficulty": "hard",
       "text": "Que triângulo de números, em que cada um é a soma dos dois de cima, leva o nome de um francês?",
       "options": [
@@ -4094,6 +4435,7 @@
       "fact": "Chineses e persas já conheciam esse triângulo séculos antes de Pascal."
     },
     {
+      "id": "matematica-e-logica-342",
       "difficulty": "hard",
       "text": "Que teorema francês, proposto em 1637, só foi provado em 1994 por Andrew Wiles?",
       "options": [
@@ -4106,6 +4448,7 @@
       "fact": "Fermat escreveu na margem de um livro que tinha uma prova, mas que não cabia ali."
     },
     {
+      "id": "matematica-e-logica-343",
       "difficulty": "hard",
       "text": "Qual é o nome do matemático que, segundo a lenda, somou os números de 1 a 100 em segundos ainda criança?",
       "options": [
@@ -4118,6 +4461,7 @@
       "fact": "O menino percebeu que 1 + 100, 2 + 99, 3 + 98... sempre dão 101."
     },
     {
+      "id": "matematica-e-logica-344",
       "difficulty": "hard",
       "text": "Num grupo de quantas pessoas, no mínimo, é garantido que duas fazem aniversário no mesmo mês?",
       "options": [
@@ -4130,6 +4474,7 @@
       "fact": "É o princípio da casa dos pombos: com 12 meses e 13 pessoas, algum mês fica com duas."
     },
     {
+      "id": "matematica-e-logica-345",
       "difficulty": "hard",
       "text": "Numa gaveta escura há meias pretas e brancas soltas. Quantas meias, no mínimo, você precisa tirar para garantir um par da mesma cor?",
       "options": [
@@ -4142,6 +4487,7 @@
       "fact": "Com 3 meias e só 2 cores, pelo menos duas serão iguais."
     },
     {
+      "id": "matematica-e-logica-346",
       "difficulty": "hard",
       "text": "Quantas pessoas, aproximadamente, precisam estar numa sala para haver mais de 50% de chance de duas fazerem aniversário no mesmo dia?",
       "options": [
@@ -4154,6 +4500,7 @@
       "fact": "Parece pouco porque o que conta são todos os pares possíveis: com 23 pessoas, já são 253 pares."
     },
     {
+      "id": "matematica-e-logica-347",
       "difficulty": "hard",
       "text": "No problema de Monty Hall, com 3 portas, depois que o apresentador abre uma porta vazia, qual é a chance de ganhar trocando de porta?",
       "options": [
@@ -4166,6 +4513,7 @@
       "fact": "Trocar dobra a chance: quem fica com a porta original ganha só em 1/3 das vezes."
     },
     {
+      "id": "matematica-e-logica-348",
       "difficulty": "hard",
       "text": "Jogando dois dados, qual é a probabilidade de a soma ser 12?",
       "options": [
@@ -4178,6 +4526,7 @@
       "fact": "Só existe um jeito: 6 e 6."
     },
     {
+      "id": "matematica-e-logica-349",
       "difficulty": "hard",
       "text": "Jogando dois dados, qual é a probabilidade de a soma ser 7?",
       "options": [
@@ -4190,6 +4539,7 @@
       "fact": "São 6 combinações em 36 possíveis."
     },
     {
+      "id": "matematica-e-logica-350",
       "difficulty": "hard",
       "text": "Jogando três moedas, qual é a probabilidade de saírem três caras?",
       "options": [
@@ -4202,6 +4552,7 @@
       "fact": "(1/2)³ = 1/8."
     },
     {
+      "id": "matematica-e-logica-351",
       "difficulty": "hard",
       "text": "Uma moeda deu cara 5 vezes seguidas. Qual é a chance de dar cara na próxima jogada?",
       "options": [
@@ -4214,6 +4565,7 @@
       "fact": "A moeda não tem memória: achar que \"agora vem coroa\" é a chamada falácia do apostador."
     },
     {
+      "id": "matematica-e-logica-352",
       "difficulty": "hard",
       "text": "De quantas formas diferentes 5 livros podem ser arrumados numa estante?",
       "options": [
@@ -4226,6 +4578,7 @@
       "fact": "5! = 5 × 4 × 3 × 2 × 1."
     },
     {
+      "id": "matematica-e-logica-353",
       "difficulty": "hard",
       "text": "Quantos anagramas tem a palavra AMOR?",
       "options": [
@@ -4238,6 +4591,7 @@
       "fact": "São 4 letras diferentes: 4! = 24."
     },
     {
+      "id": "matematica-e-logica-354",
       "difficulty": "hard",
       "text": "Quantos anagramas tem a palavra ARARA?",
       "options": [
@@ -4250,6 +4604,7 @@
       "fact": "5! ÷ (3! × 2!) = 120 ÷ 12 = 10, por causa das letras repetidas."
     },
     {
+      "id": "matematica-e-logica-355",
       "difficulty": "hard",
       "text": "Quantas senhas de 4 algarismos (de 0000 a 9999) existem?",
       "options": [
@@ -4262,6 +4617,7 @@
       "fact": "Cada posição tem 10 opções: 10⁴."
     },
     {
+      "id": "matematica-e-logica-356",
       "difficulty": "hard",
       "text": "De quantas formas se pode escolher 2 pessoas de um grupo de 6?",
       "options": [
@@ -4274,6 +4630,7 @@
       "fact": "6 × 5 ÷ 2 = 15, porque a ordem não importa."
     },
     {
+      "id": "matematica-e-logica-357",
       "difficulty": "hard",
       "text": "Numa Mega-Sena, quantos números são sorteados entre os 60?",
       "options": [
@@ -4286,6 +4643,7 @@
       "fact": "A chance de acertar a sena com uma aposta simples é de 1 em mais de 50 milhões."
     },
     {
+      "id": "matematica-e-logica-358",
       "difficulty": "hard",
       "text": "Um campeonato de turno único tem 10 times, e todos jogam contra todos uma vez. Quantos jogos acontecem?",
       "options": [
@@ -4298,6 +4656,7 @@
       "fact": "10 × 9 ÷ 2 = 45."
     },
     {
+      "id": "matematica-e-logica-359",
       "difficulty": "hard",
       "text": "Quantos triângulos diferentes se formam ligando 3 dos 5 vértices de um pentágono?",
       "options": [
@@ -4310,6 +4669,7 @@
       "fact": "Escolher 3 de 5: 5 × 4 × 3 ÷ 6 = 10."
     },
     {
+      "id": "matematica-e-logica-360",
       "difficulty": "hard",
       "text": "Qual é o menor número que, dividido por 2, 3, 4, 5 e 6, sempre deixa resto 1?",
       "options": [
@@ -4322,6 +4682,7 @@
       "fact": "O MMC de 2, 3, 4, 5 e 6 é 60; somando 1, dá 61."
     },
     {
+      "id": "matematica-e-logica-361",
       "difficulty": "hard",
       "text": "Qual é o MMC de 8, 12 e 18?",
       "options": [
@@ -4334,6 +4695,7 @@
       "fact": "8 = 2³, 12 = 2² × 3 e 18 = 2 × 3²: MMC = 2³ × 3² = 72."
     },
     {
+      "id": "matematica-e-logica-362",
       "difficulty": "hard",
       "text": "Qual é o MDC de 84 e 126?",
       "options": [
@@ -4346,6 +4708,7 @@
       "fact": "84 = 2 × 42 e 126 = 3 × 42."
     },
     {
+      "id": "matematica-e-logica-363",
       "difficulty": "hard",
       "text": "Quantos números primos existem entre 1 e 50?",
       "options": [
@@ -4358,6 +4721,7 @@
       "fact": "São 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43 e 47."
     },
     {
+      "id": "matematica-e-logica-364",
       "difficulty": "hard",
       "text": "Qual destes números, perto de 100, é primo?",
       "options": [
@@ -4370,6 +4734,7 @@
       "fact": "91 = 7 × 13, 87 = 3 × 29 e 93 = 3 × 31."
     },
     {
+      "id": "matematica-e-logica-365",
       "difficulty": "hard",
       "text": "Qual destes números de três algarismos é primo?",
       "options": [
@@ -4382,6 +4747,7 @@
       "fact": "111 = 3 × 37, 121 = 11² e 141 = 3 × 47."
     },
     {
+      "id": "matematica-e-logica-366",
       "difficulty": "hard",
       "text": "Qual destes números de algarismos repetidos é primo?",
       "options": [
@@ -4394,6 +4760,7 @@
       "fact": "22, 33, 44... são todos múltiplos de 11: só o próprio 11 é primo."
     },
     {
+      "id": "matematica-e-logica-367",
       "difficulty": "hard",
       "text": "Como se chamam primos que diferem por 2, como 11 e 13?",
       "options": [
@@ -4406,6 +4773,7 @@
       "fact": "Ninguém conseguiu provar ainda se existem infinitos primos gêmeos."
     },
     {
+      "id": "matematica-e-logica-368",
       "difficulty": "hard",
       "text": "Como se chama um número igual à soma dos seus divisores próprios, como o 6 (1 + 2 + 3)?",
       "options": [
@@ -4418,6 +4786,7 @@
       "fact": "O próximo número perfeito depois do 6 é o 28: 1 + 2 + 4 + 7 + 14."
     },
     {
+      "id": "matematica-e-logica-369",
       "difficulty": "hard",
       "text": "Qual é o segundo número perfeito, depois do 6?",
       "options": [
@@ -4430,6 +4799,7 @@
       "fact": "1 + 2 + 4 + 7 + 14 = 28."
     },
     {
+      "id": "matematica-e-logica-370",
       "difficulty": "hard",
       "text": "Que conjectura famosa diz que todo número par maior que 2 é a soma de dois primos?",
       "options": [
@@ -4442,6 +4812,7 @@
       "fact": "Proposta em 1742, a conjectura foi testada por computador até números enormes, mas nunca provada."
     },
     {
+      "id": "matematica-e-logica-371",
       "difficulty": "hard",
       "text": "Qual é o problema em que, se o número é par, divide-se por 2, e se é ímpar, multiplica-se por 3 e soma-se 1?",
       "options": [
@@ -4454,6 +4825,7 @@
       "fact": "Até hoje, todo número testado acabou chegando ao 1, mas ninguém provou que isso sempre acontece."
     },
     {
+      "id": "matematica-e-logica-372",
       "difficulty": "hard",
       "text": "Que método antigo encontra números primos riscando os múltiplos numa tabela?",
       "options": [
@@ -4466,6 +4838,7 @@
       "fact": "\"Crivo\" significa peneira: os primos são os números que sobram."
     },
     {
+      "id": "matematica-e-logica-373",
       "difficulty": "hard",
       "text": "Que método antigo calcula o MDC de dois números por divisões sucessivas?",
       "options": [
@@ -4478,6 +4851,7 @@
       "fact": "É um dos algoritmos mais antigos ainda usados, com mais de 2.300 anos."
     },
     {
+      "id": "matematica-e-logica-374",
       "difficulty": "hard",
       "text": "Quem provou, há mais de 2 mil anos, que existem infinitos números primos?",
       "options": [
@@ -4490,6 +4864,7 @@
       "fact": "A prova é feita por absurdo e é considerada uma das mais elegantes da matemática."
     },
     {
+      "id": "matematica-e-logica-375",
       "difficulty": "hard",
       "text": "Que prêmio é considerado o \"Nobel da Matemática\"?",
       "options": [
@@ -4502,6 +4877,7 @@
       "fact": "A Medalha Fields só é dada a matemáticos de até 40 anos, a cada quatro anos."
     },
     {
+      "id": "matematica-e-logica-376",
       "difficulty": "hard",
       "text": "Que brasileiro ganhou a Medalha Fields, em 2014?",
       "options": [
@@ -4514,6 +4890,7 @@
       "fact": "Artur Avila foi o primeiro latino-americano a ganhar a medalha."
     },
     {
+      "id": "matematica-e-logica-377",
       "difficulty": "hard",
       "text": "Que instituto brasileiro de matemática, no Rio de Janeiro, formou Artur Avila?",
       "options": [
@@ -4526,6 +4903,7 @@
       "fact": "O IMPA foi fundado em 1952 e organiza a Olimpíada Brasileira de Matemática das Escolas Públicas."
     },
     {
+      "id": "matematica-e-logica-378",
       "difficulty": "hard",
       "text": "Que matemática ucraniana foi a segunda mulher a ganhar a Medalha Fields, em 2022, depois da iraniana Maryam Mirzakhani?",
       "options": [
@@ -4538,6 +4916,7 @@
       "fact": "Viazovska resolveu o problema do empacotamento de esferas em 8 e 24 dimensões."
     },
     {
+      "id": "matematica-e-logica-379",
       "difficulty": "hard",
       "text": "Que matemática alemã criou um teorema que liga as simetrias às leis de conservação da física?",
       "options": [
@@ -4550,6 +4929,7 @@
       "fact": "Einstein elogiou Noether como uma das mentes matemáticas mais criativas de seu tempo."
     },
     {
+      "id": "matematica-e-logica-380",
       "difficulty": "hard",
       "text": "Que matemático britânico decifrou o código Enigma na Segunda Guerra e é pai da computação?",
       "options": [
@@ -4562,6 +4942,7 @@
       "fact": "A história de Turing foi contada no filme \"O Jogo da Imitação\"."
     },
     {
+      "id": "matematica-e-logica-381",
       "difficulty": "hard",
       "text": "Que matemático suíço do século XVIII é o que mais publicou na história e criou a notação f(x)?",
       "options": [
@@ -4574,6 +4955,7 @@
       "fact": "Euler continuou produzindo muito mesmo depois de ficar praticamente cego."
     },
     {
+      "id": "matematica-e-logica-382",
       "difficulty": "hard",
       "text": "Que problema de Euler, das sete pontes de uma cidade, deu origem à teoria dos grafos?",
       "options": [
@@ -4586,6 +4968,7 @@
       "fact": "Euler provou que era impossível atravessar as sete pontes passando uma única vez por cada."
     },
     {
+      "id": "matematica-e-logica-383",
       "difficulty": "hard",
       "text": "Que matemático alemão é chamado de \"príncipe dos matemáticos\"?",
       "options": [
@@ -4598,6 +4981,7 @@
       "fact": "Ele fez contribuições importantes ainda adolescente, como a construção do polígono de 17 lados com régua e compasso."
     },
     {
+      "id": "matematica-e-logica-384",
       "difficulty": "hard",
       "text": "Que dois cientistas disputaram a invenção do cálculo diferencial no século XVII?",
       "options": [
@@ -4610,6 +4994,7 @@
       "fact": "A notação de Leibniz, com o \"dx\", é a mais usada até hoje."
     },
     {
+      "id": "matematica-e-logica-385",
       "difficulty": "hard",
       "text": "Qual destas é a famosa equação de Euler, que liga cinco números importantes?",
       "options": [
@@ -4622,6 +5007,7 @@
       "fact": "Ela reúne e, i, π, 1 e 0 numa só igualdade."
     },
     {
+      "id": "matematica-e-logica-386",
       "difficulty": "hard",
       "text": "Que letra representa a unidade imaginária, a raiz quadrada de −1?",
       "options": [
@@ -4634,6 +5020,7 @@
       "fact": "Os números imaginários pareciam absurdos no começo, mas hoje são essenciais na engenharia elétrica."
     },
     {
+      "id": "matematica-e-logica-387",
       "difficulty": "hard",
       "text": "Que figura é formada por pontos que estão à mesma distância de um ponto central, no espaço?",
       "options": [
@@ -4646,6 +5033,7 @@
       "fact": "No plano, a figura equivalente é a circunferência."
     },
     {
+      "id": "matematica-e-logica-388",
       "difficulty": "hard",
       "text": "Que curva tem a forma da órbita dos planetas, segundo Kepler?",
       "options": [
@@ -4658,6 +5046,7 @@
       "fact": "O Sol fica em um dos dois focos da elipse."
     },
     {
+      "id": "matematica-e-logica-389",
       "difficulty": "hard",
       "text": "Que curva descreve a trajetória de uma bola chutada para o alto, sem contar o ar?",
       "options": [
@@ -4670,6 +5059,7 @@
       "fact": "Galileu foi um dos primeiros a descrever corretamente a forma dessa trajetória."
     },
     {
+      "id": "matematica-e-logica-390",
       "difficulty": "hard",
       "text": "Como se chama o gráfico de uma função do tipo y = ax² + bx + c?",
       "options": [
@@ -4682,6 +5072,7 @@
       "fact": "Se \"a\" é positivo, a curva tem a \"boca\" virada para cima."
     },
     {
+      "id": "matematica-e-logica-391",
       "difficulty": "hard",
       "text": "Qual é a fórmula usada para resolver equações do 2º grau, muito ensinada no Brasil?",
       "options": [
@@ -4694,6 +5085,7 @@
       "fact": "Fora do Brasil, ela é chamada apenas de \"fórmula quadrática\"."
     },
     {
+      "id": "matematica-e-logica-392",
       "difficulty": "hard",
       "text": "Quais são as raízes da equação x² − 5x + 6 = 0?",
       "options": [
@@ -4706,6 +5098,7 @@
       "fact": "Duas raízes que somam 5 e multiplicam 6."
     },
     {
+      "id": "matematica-e-logica-393",
       "difficulty": "hard",
       "text": "Se 2x + 3 = 15, quanto vale x?",
       "options": [
@@ -4718,6 +5111,7 @@
       "fact": "2x = 12, então x = 6."
     },
     {
+      "id": "matematica-e-logica-394",
       "difficulty": "hard",
       "text": "Se 3x − 7 = 2x + 5, quanto vale x?",
       "options": [
@@ -4730,6 +5124,7 @@
       "fact": "Passando 2x e −7 para os outros lados: x = 12."
     },
     {
+      "id": "matematica-e-logica-395",
       "difficulty": "hard",
       "text": "Qual é o valor de x em x/4 = 9?",
       "options": [
@@ -4742,6 +5137,7 @@
       "fact": "Multiplicando os dois lados por 4: x = 36."
     },
     {
+      "id": "matematica-e-logica-396",
       "difficulty": "hard",
       "text": "Se x + y = 10 e x − y = 4, quanto vale x?",
       "options": [
@@ -4754,6 +5150,7 @@
       "fact": "Somando as equações: 2x = 14."
     },
     {
+      "id": "matematica-e-logica-397",
       "difficulty": "hard",
       "text": "Qual é o seno de 30°?",
       "options": [
@@ -4766,6 +5163,7 @@
       "fact": "Seno, cosseno e tangente de 30°, 45° e 60° são os \"ângulos notáveis\" das escolas."
     },
     {
+      "id": "matematica-e-logica-398",
       "difficulty": "hard",
       "text": "Qual é o cosseno de 0°?",
       "options": [
@@ -4778,6 +5176,7 @@
       "fact": "O cosseno de 90°, por outro lado, é 0."
     },
     {
+      "id": "matematica-e-logica-399",
       "difficulty": "hard",
       "text": "Qual é a tangente de 45°?",
       "options": [
@@ -4790,6 +5189,7 @@
       "fact": "Num ângulo de 45°, os dois catetos são iguais, então a razão entre eles é 1."
     },
     {
+      "id": "matematica-e-logica-400",
       "difficulty": "hard",
       "text": "Quantos radianos tem uma volta completa?",
       "options": [
@@ -4802,6 +5202,7 @@
       "fact": "Um radiano é o ângulo em que o arco tem o mesmo comprimento do raio."
     },
     {
+      "id": "matematica-e-logica-401",
       "difficulty": "hard",
       "text": "Qual é o nome da faixa de papel com uma só face, feita torcendo e colando as pontas?",
       "options": [
@@ -4814,6 +5215,7 @@
       "fact": "Uma formiga andando pela fita de Möbius passa pelos \"dois lados\" sem cruzar nenhuma borda."
     },
     {
+      "id": "matematica-e-logica-402",
       "difficulty": "hard",
       "text": "Que sólido parece uma rosquinha, ou boia, na geometria?",
       "options": [
@@ -4826,6 +5228,7 @@
       "fact": "Para um topólogo, uma xícara com alça e uma rosquinha são a \"mesma\" forma."
     },
     {
+      "id": "matematica-e-logica-403",
       "difficulty": "hard",
       "text": "Que teorema diz que bastam quatro cores para pintar qualquer mapa sem que vizinhos tenham a mesma cor?",
       "options": [
@@ -4838,6 +5241,7 @@
       "fact": "Foi o primeiro grande teorema provado com ajuda de computador, em 1976."
     },
     {
+      "id": "matematica-e-logica-404",
       "difficulty": "hard",
       "text": "Quantos movimentos, no mínimo, são necessários para resolver a Torre de Hanói com 3 discos?",
       "options": [
@@ -4850,6 +5254,7 @@
       "fact": "Com n discos, o mínimo é 2ⁿ − 1."
     },
     {
+      "id": "matematica-e-logica-405",
       "difficulty": "hard",
       "text": "Qual é o \"número de Deus\", o máximo de movimentos para resolver qualquer cubo mágico 3×3?",
       "options": [
@@ -4862,6 +5267,7 @@
       "fact": "Foi provado em 2010, com ajuda de muito tempo de computação doado pelo Google."
     },
     {
+      "id": "matematica-e-logica-406",
       "difficulty": "hard",
       "text": "Quantas casas tem um tabuleiro de sudoku tradicional?",
       "options": [
@@ -4874,6 +5280,7 @@
       "fact": "São 9 linhas e 9 colunas."
     },
     {
+      "id": "matematica-e-logica-407",
       "difficulty": "hard",
       "text": "Num sudoku tradicional, quantas vezes cada algarismo aparece no tabuleiro resolvido?",
       "options": [
@@ -4886,6 +5293,7 @@
       "fact": "Uma vez em cada linha, cada coluna e cada quadrado 3×3."
     },
     {
+      "id": "matematica-e-logica-408",
       "difficulty": "hard",
       "text": "Qual é o valor do número \"googol\"?",
       "options": [
@@ -4898,6 +5306,7 @@
       "fact": "O nome do Google vem de um erro de grafia de \"googol\"."
     },
     {
+      "id": "matematica-e-logica-409",
       "difficulty": "hard",
       "text": "Quantos números de três algarismos existem?",
       "options": [
@@ -4910,6 +5319,7 @@
       "fact": "De 100 a 999 há 900 números."
     },
     {
+      "id": "matematica-e-logica-410",
       "difficulty": "hard",
       "text": "Quantos algarismos são usados para escrever os números de 1 a 100?",
       "options": [
@@ -4922,6 +5332,7 @@
       "fact": "9 de um algarismo, 90 de dois e 1 de três: 9 + 180 + 3 = 192."
     },
     {
+      "id": "matematica-e-logica-411",
       "difficulty": "impossible",
       "text": "Qual é o milésimo número primo?",
       "options": [
@@ -4936,6 +5347,7 @@
       "fact": "O 10.000º primo é 104.729."
     },
     {
+      "id": "matematica-e-logica-412",
       "difficulty": "impossible",
       "text": "Quantos números primos existem abaixo de 1.000?",
       "options": [
@@ -4950,6 +5362,7 @@
       "fact": "A proporção de primos vai diminuindo: abaixo de 100 eles são 25%, abaixo de 1.000, menos de 17%."
     },
     {
+      "id": "matematica-e-logica-413",
       "difficulty": "impossible",
       "text": "Quantos números primos existem abaixo de 100?",
       "options": [
@@ -4964,6 +5377,7 @@
       "fact": "Os primos ficam mais raros conforme os números crescem, mas nunca acabam."
     },
     {
+      "id": "matematica-e-logica-414",
       "difficulty": "impossible",
       "text": "Qual é o primeiro número primo de quatro algarismos?",
       "options": [
@@ -4978,6 +5392,7 @@
       "fact": "1.001 parece primo, mas é 7 × 11 × 13."
     },
     {
+      "id": "matematica-e-logica-415",
       "difficulty": "impossible",
       "text": "Quantos algarismos tem o número 2¹⁰⁰?",
       "options": [
@@ -4992,6 +5407,7 @@
       "fact": "2¹⁰⁰ tem um pouco mais de um nonilhão: 1.267.650.600.228.229.401.496.703.205.376."
     },
     {
+      "id": "matematica-e-logica-416",
       "difficulty": "impossible",
       "text": "Quantos algarismos tem o número 100! (cem fatorial)?",
       "options": [
@@ -5006,6 +5422,7 @@
       "fact": "100! é muito maior que o número estimado de átomos no universo observável."
     },
     {
+      "id": "matematica-e-logica-417",
       "difficulty": "impossible",
       "text": "Com quantos zeros termina o número 100! (cem fatorial)?",
       "options": [
@@ -5020,6 +5437,7 @@
       "fact": "Há 20 múltiplos de 5 até 100, e 4 deles (25, 50, 75 e 100) contam em dobro."
     },
     {
+      "id": "matematica-e-logica-418",
       "difficulty": "impossible",
       "text": "Qual é a sexta casa decimal de π (3,14159...)?",
       "options": [
@@ -5034,6 +5452,7 @@
       "fact": "π = 3,14159265...: as seis primeiras casas são 1, 4, 1, 5, 9 e 2."
     },
     {
+      "id": "matematica-e-logica-419",
       "difficulty": "impossible",
       "text": "Qual é o valor de \"e\" com cinco casas decimais?",
       "options": [
@@ -5048,6 +5467,7 @@
       "fact": "Curiosamente, depois do 2,7, o \"1828\" aparece duas vezes seguidas: 2,718281828..."
     },
     {
+      "id": "matematica-e-logica-420",
       "difficulty": "impossible",
       "text": "Qual é o valor de √2 com quatro casas decimais?",
       "options": [
@@ -5062,6 +5482,7 @@
       "fact": "Uma tábua babilônica de cerca de 1800 a.C. já trazia √2 com precisão de seis casas."
     },
     {
+      "id": "matematica-e-logica-421",
       "difficulty": "impossible",
       "text": "Qual é o valor do número de ouro com quatro casas decimais?",
       "options": [
@@ -5076,6 +5497,7 @@
       "fact": "O número de ouro é (1 + √5) ÷ 2."
     },
     {
+      "id": "matematica-e-logica-422",
       "difficulty": "impossible",
       "text": "Que número ficou famoso como \"número de táxi\", o menor que é soma de dois cubos de duas formas diferentes?",
       "options": [
@@ -5090,6 +5512,7 @@
       "fact": "1.729 = 1³ + 12³ = 9³ + 10³. Ramanujan percebeu isso ao ouvir o número do táxi de um amigo."
     },
     {
+      "id": "matematica-e-logica-423",
       "difficulty": "impossible",
       "text": "Quanto é a soma de todos os números de 1 a 1.000?",
       "options": [
@@ -5104,6 +5527,7 @@
       "fact": "1.000 × 1.001 ÷ 2 = 500.500."
     },
     {
+      "id": "matematica-e-logica-424",
       "difficulty": "impossible",
       "text": "Quantos anagramas tem a palavra MATEMATICA?",
       "options": [
@@ -5118,6 +5542,7 @@
       "fact": "São 10 letras com repetições: 10! ÷ (3! × 2! × 2!), por causa dos três A, dois M e dois T."
     },
     {
+      "id": "matematica-e-logica-425",
       "difficulty": "impossible",
       "text": "Quantos quadrados perfeitos existem de 1 a 1.000?",
       "options": [
@@ -5132,6 +5557,7 @@
       "fact": "O maior deles é 31² = 961; 32² já é 1.024."
     },
     {
+      "id": "matematica-e-logica-426",
       "difficulty": "impossible",
       "text": "Qual é a soma dos ângulos internos de um polígono de 20 lados?",
       "options": [
@@ -5146,6 +5572,7 @@
       "fact": "(20 − 2) × 180° = 3.240°."
     },
     {
+      "id": "matematica-e-logica-427",
       "difficulty": "impossible",
       "text": "Quantas diagonais tem um polígono de 20 lados?",
       "options": [
@@ -5160,6 +5587,7 @@
       "fact": "20 × 17 ÷ 2 = 170."
     },
     {
+      "id": "matematica-e-logica-428",
       "difficulty": "impossible",
       "text": "Quantos números de 1 a 100 têm pelo menos um algarismo 7?",
       "options": [
@@ -5174,6 +5602,7 @@
       "fact": "São 7, 17, ..., 97 (dez números) e 70 a 79 (dez), com o 77 contado nas duas listas."
     },
     {
+      "id": "matematica-e-logica-429",
       "difficulty": "impossible",
       "text": "Quantas vezes o algarismo 9 aparece ao escrever todos os números de 1 a 100?",
       "options": [
@@ -5188,6 +5617,7 @@
       "fact": "O 99 tem dois noves e conta duas vezes."
     },
     {
+      "id": "matematica-e-logica-430",
       "difficulty": "impossible",
       "text": "Qual é o menor número divisível por todos os números de 1 a 10?",
       "options": [
@@ -5202,6 +5632,7 @@
       "fact": "2.520 = 2³ × 3² × 5 × 7."
     },
     {
+      "id": "matematica-e-logica-431",
       "difficulty": "impossible",
       "text": "Quantos grãos de trigo haveria na última casa do tabuleiro de xadrez, dobrando a cada casa a partir de 1?",
       "options": [
@@ -5216,6 +5647,7 @@
       "fact": "Na casa 64 ficam 2⁶³ grãos; somando o tabuleiro inteiro, são mais de 18 quintilhões."
     },
     {
+      "id": "matematica-e-logica-432",
       "difficulty": "impossible",
       "text": "Qual é a probabilidade de receber um royal flush nas 5 primeiras cartas do pôquer?",
       "options": [
@@ -5230,6 +5662,7 @@
       "fact": "Existem 2.598.960 mãos de 5 cartas, e só 4 delas são royal flush."
     },
     {
+      "id": "matematica-e-logica-433",
       "difficulty": "impossible",
       "text": "Quantas posições diferentes um cubo mágico 3×3 pode ter, aproximadamente?",
       "options": [
@@ -5244,6 +5677,7 @@
       "fact": "Se você testasse uma posição por segundo, levaria mais de 1 trilhão de anos para ver todas."
     },
     {
+      "id": "matematica-e-logica-434",
       "difficulty": "impossible",
       "text": "Qual é a estimativa de Claude Shannon para o número de partidas de xadrez possíveis?",
       "options": [
@@ -5258,6 +5692,7 @@
       "fact": "O número de átomos do universo observável é estimado em cerca de 10⁸⁰, muito menos."
     },
     {
+      "id": "matematica-e-logica-435",
       "difficulty": "impossible",
       "text": "De quantas maneiras se podem colocar 8 rainhas num tabuleiro de xadrez sem que nenhuma ataque outra?",
       "options": [
@@ -5272,6 +5707,7 @@
       "fact": "Contando como iguais as soluções que são rotações ou reflexos umas das outras, sobram 12."
     },
     {
+      "id": "matematica-e-logica-436",
       "difficulty": "impossible",
       "text": "Quantas vezes por dia os ponteiros de um relógio formam um ângulo reto?",
       "options": [
@@ -5286,6 +5722,7 @@
       "fact": "Em cada 12 horas acontecem 22 ângulos retos, e não 24, por causa das horas em que os ponteiros \"pulam\" um encontro."
     },
     {
+      "id": "matematica-e-logica-437",
       "difficulty": "impossible",
       "text": "Que número de 4 algarismos é a \"constante de Kaprekar\", à qual se chega ordenando e subtraindo algarismos?",
       "options": [
@@ -5300,6 +5737,7 @@
       "fact": "Pegue quase qualquer número de 4 algarismos, subtraia o menor arranjo do maior e repita: em até 7 passos, chega a 6.174."
     },
     {
+      "id": "matematica-e-logica-438",
       "difficulty": "impossible",
       "text": "Qual é o terceiro número perfeito, depois do 6 e do 28?",
       "options": [
@@ -5314,6 +5752,7 @@
       "fact": "496 = 1 + 2 + 4 + 8 + 16 + 31 + 62 + 124 + 248."
     },
     {
+      "id": "matematica-e-logica-439",
       "difficulty": "impossible",
       "text": "Qual é o menor número ímpar abundante, cuja soma dos divisores próprios passa dele?",
       "options": [
@@ -5328,6 +5767,7 @@
       "fact": "Todos os números abundantes menores que 945 são pares."
     },
     {
+      "id": "matematica-e-logica-440",
       "difficulty": "impossible",
       "text": "Quantos problemas o matemático David Hilbert apresentou em 1900 como os grandes desafios do século?",
       "options": [
@@ -5342,6 +5782,7 @@
       "fact": "Alguns dos problemas de Hilbert continuam sem solução, como a Hipótese de Riemann."
     },
     {
+      "id": "matematica-e-logica-441",
       "difficulty": "impossible",
       "text": "Quantos são os \"Problemas do Milênio\", que valem 1 milhão de dólares cada?",
       "options": [
@@ -5356,6 +5797,7 @@
       "fact": "Eles foram anunciados pelo Instituto Clay de Matemática no ano 2000."
     },
     {
+      "id": "matematica-e-logica-442",
       "difficulty": "impossible",
       "text": "Qual dos Problemas do Milênio já foi resolvido?",
       "options": [
@@ -5370,6 +5812,7 @@
       "fact": "O russo Grigori Perelman resolveu o problema e recusou tanto o prêmio de 1 milhão quanto a medalha mais importante da matemática."
     },
     {
+      "id": "matematica-e-logica-443",
       "difficulty": "impossible",
       "text": "Em que ano o símbolo π foi usado pela primeira vez para a razão entre a circunferência e o diâmetro?",
       "options": [
@@ -5384,6 +5827,7 @@
       "fact": "Quem usou primeiro foi William Jones; a notação ficou famosa depois que Euler a adotou."
     },
     {
+      "id": "matematica-e-logica-444",
       "difficulty": "impossible",
       "text": "Em que ano o sinal de igual (=) apareceu pela primeira vez num livro?",
       "options": [
@@ -5398,6 +5842,7 @@
       "fact": "Robert Recorde escolheu dois tracinhos iguais porque \"nada pode ser mais igual\"."
     },
     {
+      "id": "matematica-e-logica-445",
       "difficulty": "impossible",
       "text": "Em que século viveu Bhaskara, o matemático que dá nome à fórmula do 2º grau no Brasil?",
       "options": [
@@ -5412,6 +5857,7 @@
       "fact": "A fórmula que leva o nome dele já era conhecida antes, por outros matemáticos."
     },
     {
+      "id": "matematica-e-logica-446",
       "difficulty": "impossible",
       "text": "Quantos são os sólidos de Arquimedes, poliedros com faces regulares de mais de um tipo?",
       "options": [
@@ -5426,6 +5872,7 @@
       "fact": "A bola de futebol clássica tem a forma de um deles, o icosaedro truncado."
     },
     {
+      "id": "matematica-e-logica-447",
       "difficulty": "impossible",
       "text": "Quantos tipos de simetria diferentes existem para padrões que cobrem o plano, como papéis de parede?",
       "options": [
@@ -5440,6 +5887,7 @@
       "fact": "Segundo muitos estudiosos, todos os 17 aparecem nos azulejos do palácio de Alhambra, na Espanha."
     },
     {
+      "id": "matematica-e-logica-448",
       "difficulty": "impossible",
       "text": "Quantas grades completas de sudoku 9×9 válidas existem, aproximadamente?",
       "options": [
@@ -5454,6 +5902,7 @@
       "fact": "O número exato, 6.670.903.752.021.072.936.960, foi calculado em 2005."
     },
     {
+      "id": "matematica-e-logica-449",
       "difficulty": "impossible",
       "text": "Quantas pessoas são necessárias numa sala para haver 99% de chance de duas fazerem aniversário no mesmo dia?",
       "options": [
@@ -5468,6 +5917,7 @@
       "fact": "Com 57 pessoas, a chance passa de 99%; com 23, já passa de 50%."
     },
     {
+      "id": "matematica-e-logica-450",
       "difficulty": "impossible",
       "text": "Qual é a área de um triângulo de lados 13, 14 e 15?",
       "options": [
@@ -5482,6 +5932,7 @@
       "fact": "Pela fórmula de Heron: √(21 × 8 × 7 × 6) = √7.056 = 84."
     },
     {
+      "id": "matematica-e-logica-451",
       "difficulty": "easy",
       "text": "Quantos anos tem um quarto de século?",
       "options": [
@@ -5494,6 +5945,7 @@
       "fact": "Um século tem 100 anos, e a quarta parte dele é 25."
     },
     {
+      "id": "matematica-e-logica-452",
       "difficulty": "easy",
       "text": "Se um bolo é dividido entre 4 pessoas, que fração cada uma recebe?",
       "options": [
@@ -5506,6 +5958,7 @@
       "fact": "Cada uma fica com a quarta parte do bolo."
     },
     {
+      "id": "matematica-e-logica-453",
       "difficulty": "easy",
       "text": "Se hoje é domingo, que dia será daqui a 3 dias?",
       "options": [
@@ -5518,6 +5971,7 @@
       "fact": "Contando a partir de domingo, são segunda, terça e quarta."
     },
     {
+      "id": "matematica-e-logica-454",
       "difficulty": "easy",
       "text": "Quantos pés tem uma pessoa e um cachorro, somando tudo?",
       "options": [
@@ -5530,6 +5984,7 @@
       "fact": "São dois pés e quatro patas."
     },
     {
+      "id": "matematica-e-logica-455",
       "difficulty": "easy",
       "text": "Quantas horas passa quem começa a trabalhar às 8h e termina às 17h?",
       "options": [
@@ -5542,6 +5997,7 @@
       "fact": "De 8h a 17h são 9 horas."
     },
     {
+      "id": "matematica-e-logica-456",
       "difficulty": "easy",
       "text": "Um caderno custa R$ 12. Quanto custam 3 cadernos?",
       "options": [
@@ -5554,6 +6010,7 @@
       "fact": "Basta multiplicar 12 por 3."
     },
     {
+      "id": "matematica-e-logica-457",
       "difficulty": "easy",
       "text": "Um ingresso custa R$ 25. Quanto custam 4 ingressos?",
       "options": [
@@ -5566,6 +6023,7 @@
       "fact": "Quatro vezes 25 é igual a 100."
     },
     {
+      "id": "matematica-e-logica-458",
       "difficulty": "easy",
       "text": "Maria tem 15 balas e dá 6 para João. Com quantas fica?",
       "options": [
@@ -5578,6 +6036,7 @@
       "fact": "Basta fazer 15 menos 6."
     },
     {
+      "id": "matematica-e-logica-459",
       "difficulty": "easy",
       "text": "Pedro tinha R$ 30 e ganhou R$ 25. Quanto tem agora?",
       "options": [
@@ -5590,6 +6049,7 @@
       "fact": "Basta somar 30 e 25."
     },
     {
+      "id": "matematica-e-logica-460",
       "difficulty": "easy",
       "text": "Se uma dúzia custa R$ 24, quanto custa cada unidade?",
       "options": [
@@ -5602,6 +6062,7 @@
       "fact": "Uma dúzia tem 12 unidades."
     },
     {
+      "id": "matematica-e-logica-461",
       "difficulty": "easy",
       "text": "Qual é o próximo número da sequência 2, 4, 6, 8?",
       "options": [
@@ -5614,6 +6075,7 @@
       "fact": "A sequência avança de 2 em 2."
     },
     {
+      "id": "matematica-e-logica-462",
       "difficulty": "easy",
       "text": "Qual é o próximo número da sequência 5, 10, 15, 20?",
       "options": [
@@ -5626,6 +6088,7 @@
       "fact": "A sequência avança de 5 em 5."
     },
     {
+      "id": "matematica-e-logica-463",
       "difficulty": "easy",
       "text": "Qual é o próximo número da sequência 10, 20, 30, 40?",
       "options": [
@@ -5638,6 +6101,7 @@
       "fact": "A sequência avança de 10 em 10."
     },
     {
+      "id": "matematica-e-logica-464",
       "difficulty": "easy",
       "text": "Qual é o próximo número da sequência 100, 90, 80?",
       "options": [
@@ -5650,6 +6114,7 @@
       "fact": "A sequência diminui de 10 em 10."
     },
     {
+      "id": "matematica-e-logica-465",
       "difficulty": "easy",
       "text": "Que número é maior, 0,5 ou 0,25?",
       "options": [
@@ -5662,6 +6127,7 @@
       "fact": "0,5 é a metade, e 0,25 é um quarto."
     },
     {
+      "id": "matematica-e-logica-466",
       "difficulty": "easy",
       "text": "Que número é maior, 1/2 ou 1/3?",
       "options": [
@@ -5674,6 +6140,7 @@
       "fact": "Quanto mais partes, menor é cada uma."
     },
     {
+      "id": "matematica-e-logica-467",
       "difficulty": "easy",
       "text": "Quantas faces tem um dado comum, somando pontos das faces?",
       "options": [
@@ -5686,6 +6153,7 @@
       "fact": "Somando de 1 a 6, chegamos a 21."
     },
     {
+      "id": "matematica-e-logica-468",
       "difficulty": "easy",
       "text": "Qual é o resultado de 10 + 10 × 0?",
       "options": [
@@ -5698,6 +6166,7 @@
       "fact": "A multiplicação vem antes da soma."
     },
     {
+      "id": "matematica-e-logica-469",
       "difficulty": "easy",
       "text": "Quantos meses têm 30 dias?",
       "options": [
@@ -5710,6 +6179,7 @@
       "fact": "São abril, junho, setembro e novembro."
     },
     {
+      "id": "matematica-e-logica-470",
       "difficulty": "easy",
       "text": "Que número romano é o X?",
       "options": [
@@ -5722,6 +6192,7 @@
       "fact": "Em romano, I vale 1, V vale 5 e X vale 10."
     },
     {
+      "id": "matematica-e-logica-471",
       "difficulty": "easy",
       "text": "Que número romano é o L?",
       "options": [
@@ -5734,6 +6205,7 @@
       "fact": "C é 100, D é 500 e M é 1.000."
     },
     {
+      "id": "matematica-e-logica-472",
       "difficulty": "easy",
       "text": "Que número romano é o C?",
       "options": [
@@ -5746,6 +6218,7 @@
       "fact": "O nome vem de \"centum\", cem em latim."
     },
     {
+      "id": "matematica-e-logica-473",
       "difficulty": "easy",
       "text": "Que número romano é o M?",
       "options": [
@@ -5758,6 +6231,7 @@
       "fact": "O nome vem de \"mille\", mil em latim."
     },
     {
+      "id": "matematica-e-logica-474",
       "difficulty": "easy",
       "text": "Quantas pernas têm 3 galinhas e 2 vacas juntas?",
       "options": [
@@ -5770,6 +6244,7 @@
       "fact": "São 6 pernas de galinhas e 8 de vacas."
     },
     {
+      "id": "matematica-e-logica-475",
       "difficulty": "easy",
       "text": "Uma caixa tem 24 lápis. Quantas caixas fazem 120 lápis?",
       "options": [
@@ -5782,6 +6257,7 @@
       "fact": "Basta dividir 120 por 24."
     },
     {
+      "id": "matematica-e-logica-476",
       "difficulty": "medium",
       "text": "Um trem sai às 9h20 e chega às 11h05. Quanto dura a viagem?",
       "options": [
@@ -5794,6 +6270,7 @@
       "fact": "Até 11h20 seriam duas horas, então tiramos 15 minutos."
     },
     {
+      "id": "matematica-e-logica-477",
       "difficulty": "medium",
       "text": "Uma pessoa dorme das 23h às 6h30. Quantas horas dorme?",
       "options": [
@@ -5806,6 +6283,7 @@
       "fact": "Até 6h são sete horas, e somamos mais meia hora."
     },
     {
+      "id": "matematica-e-logica-478",
       "difficulty": "medium",
       "text": "Se 3 canetas custam R$ 7,50, quanto custam 5?",
       "options": [
@@ -5818,6 +6296,7 @@
       "fact": "Cada caneta custa R$ 2,50."
     },
     {
+      "id": "matematica-e-logica-479",
       "difficulty": "medium",
       "text": "Uma blusa de R$ 80 tem 25% de desconto. Quanto custa?",
       "options": [
@@ -5830,6 +6309,7 @@
       "fact": "Um quarto de 80 é 20."
     },
     {
+      "id": "matematica-e-logica-480",
       "difficulty": "medium",
       "text": "Um salário de R$ 2.000 tem aumento de 15%. Qual é o novo valor?",
       "options": [
@@ -5842,6 +6322,7 @@
       "fact": "Quinze por cento de 2.000 são 300."
     },
     {
+      "id": "matematica-e-logica-481",
       "difficulty": "medium",
       "text": "Numa sala, há 12 meninos e 18 meninas. Que porcentagem é de meninos?",
       "options": [
@@ -5854,6 +6335,7 @@
       "fact": "Ao todo, são 30 pessoas."
     },
     {
+      "id": "matematica-e-logica-482",
       "difficulty": "medium",
       "text": "Se um carro faz 12 km por litro, quantos litros usa em 300 km?",
       "options": [
@@ -5866,6 +6348,7 @@
       "fact": "Basta dividir 300 por 12."
     },
     {
+      "id": "matematica-e-logica-483",
       "difficulty": "medium",
       "text": "Se um carro anda a 90 km/h, quantos km percorre em 40 minutos?",
       "options": [
@@ -5878,6 +6361,7 @@
       "fact": "Quarenta minutos são dois terços de hora."
     },
     {
+      "id": "matematica-e-logica-484",
       "difficulty": "medium",
       "text": "Uma torneira enche 1 litro em 15 segundos. Em quanto tempo enche 20 litros?",
       "options": [
@@ -5890,6 +6374,7 @@
       "fact": "São 300 segundos."
     },
     {
+      "id": "matematica-e-logica-485",
       "difficulty": "medium",
       "text": "Quanto é 3 × (4 + 5) − 2?",
       "options": [
@@ -5902,6 +6387,7 @@
       "fact": "Primeiro resolvemos o que está nos parênteses."
     },
     {
+      "id": "matematica-e-logica-486",
       "difficulty": "medium",
       "text": "Quanto é 100 − 4 × 5 + 3?",
       "options": [
@@ -5914,6 +6400,7 @@
       "fact": "Primeiro resolvemos a multiplicação."
     },
     {
+      "id": "matematica-e-logica-487",
       "difficulty": "medium",
       "text": "Quanto é 8 ÷ 2 × 4?",
       "options": [
@@ -5926,6 +6413,7 @@
       "fact": "As operações de mesmo nível são feitas da esquerda para a direita."
     },
     {
+      "id": "matematica-e-logica-488",
       "difficulty": "medium",
       "text": "Qual é o resultado de 6 ÷ 2 × (1 + 2)?",
       "options": [
@@ -5938,6 +6426,7 @@
       "fact": "Essa conta gerou muita discussão na internet."
     },
     {
+      "id": "matematica-e-logica-489",
       "difficulty": "medium",
       "text": "Qual é o menor múltiplo comum de 4 e 6?",
       "options": [
@@ -5950,6 +6439,7 @@
       "fact": "Tanto 4 quanto 6 dividem 12."
     },
     {
+      "id": "matematica-e-logica-490",
       "difficulty": "medium",
       "text": "Qual é o maior divisor comum de 18 e 24?",
       "options": [
@@ -5962,6 +6452,7 @@
       "fact": "Tanto 18 quanto 24 são divisíveis por 6."
     },
     {
+      "id": "matematica-e-logica-491",
       "difficulty": "medium",
       "text": "Quantos números pares há entre 1 e 100?",
       "options": [
@@ -5974,6 +6465,7 @@
       "fact": "São todos os múltiplos de 2."
     },
     {
+      "id": "matematica-e-logica-492",
       "difficulty": "medium",
       "text": "Quantos números de dois algarismos existem?",
       "options": [
@@ -5986,6 +6478,7 @@
       "fact": "Eles vão do 10 ao 99."
     },
     {
+      "id": "matematica-e-logica-493",
       "difficulty": "medium",
       "text": "Qual é o próximo número da sequência 3, 6, 12, 24?",
       "options": [
@@ -5998,6 +6491,7 @@
       "fact": "Cada termo dobra o anterior."
     },
     {
+      "id": "matematica-e-logica-494",
       "difficulty": "medium",
       "text": "Qual é o próximo número da sequência 1, 4, 9, 16?",
       "options": [
@@ -6010,6 +6504,7 @@
       "fact": "São os quadrados perfeitos."
     },
     {
+      "id": "matematica-e-logica-495",
       "difficulty": "medium",
       "text": "Qual é o próximo número da sequência 2, 6, 12, 20, 30?",
       "options": [
@@ -6022,6 +6517,7 @@
       "fact": "As diferenças crescem de dois em dois."
     },
     {
+      "id": "matematica-e-logica-496",
       "difficulty": "medium",
       "text": "Que figura tem três lados iguais?",
       "options": [
@@ -6034,6 +6530,7 @@
       "fact": "Cada ângulo mede 60 graus."
     },
     {
+      "id": "matematica-e-logica-497",
       "difficulty": "medium",
       "text": "Que figura tem exatamente um par de lados paralelos?",
       "options": [
@@ -6046,6 +6543,7 @@
       "fact": "Os outros têm dois pares paralelos."
     },
     {
+      "id": "matematica-e-logica-498",
       "difficulty": "medium",
       "text": "Que figura tem quatro lados iguais, mas ângulos que podem não ser retos?",
       "options": [
@@ -6058,6 +6556,7 @@
       "fact": "O losango da bandeira do Brasil tem esse formato."
     },
     {
+      "id": "matematica-e-logica-499",
       "difficulty": "medium",
       "text": "Qual sólido tem 2 bases circulares?",
       "options": [
@@ -6070,6 +6569,7 @@
       "fact": "Uma lata de refrigerante é um exemplo."
     },
     {
+      "id": "matematica-e-logica-500",
       "difficulty": "medium",
       "text": "Qual sólido tem 1 base circular e 1 vértice?",
       "options": [
@@ -6082,6 +6582,7 @@
       "fact": "A casquinha de sorvete é um exemplo."
     },
     {
+      "id": "matematica-e-logica-501",
       "difficulty": "medium",
       "text": "Como se chama a linha que vai do centro até a borda do círculo?",
       "options": [
@@ -6094,6 +6595,7 @@
       "fact": "O diâmetro é o dobro do raio."
     },
     {
+      "id": "matematica-e-logica-502",
       "difficulty": "medium",
       "text": "Qual é o valor aproximado de π?",
       "options": [
@@ -6106,6 +6608,7 @@
       "fact": "Ele é a razão entre o comprimento e o diâmetro do círculo."
     },
     {
+      "id": "matematica-e-logica-503",
       "difficulty": "medium",
       "text": "O que significa a palavra \"média\" em estatística?",
       "options": [
@@ -6118,6 +6621,7 @@
       "fact": "A moda é o mais comum, e a mediana é o do meio."
     },
     {
+      "id": "matematica-e-logica-504",
       "difficulty": "hard",
       "text": "Um caracol sobe 5 metros de dia e desce 4 à noite. Em quantos dias sai de um poço de 10 metros?",
       "options": [
@@ -6130,6 +6634,7 @@
       "fact": "No sexto dia, ele alcança a borda antes de escorregar."
     },
     {
+      "id": "matematica-e-logica-505",
       "difficulty": "hard",
       "text": "Se você dobrar um papel 10 vezes, quantas camadas terá?",
       "options": [
@@ -6142,6 +6647,7 @@
       "fact": "Cada dobra multiplica por 2."
     },
     {
+      "id": "matematica-e-logica-506",
       "difficulty": "hard",
       "text": "Se dois trens a 60 km/h vêm um contra o outro, a 180 km, em quanto tempo se encontram?",
       "options": [
@@ -6154,6 +6660,7 @@
       "fact": "Juntos, eles se aproximam a 120 km/h."
     },
     {
+      "id": "matematica-e-logica-507",
       "difficulty": "hard",
       "text": "Três amigos pagam R$ 30 por um quarto e recebem R$ 5 de volta, dividindo só R$ 3. Onde está o erro?",
       "options": [
@@ -6166,6 +6673,7 @@
       "fact": "Os R$ 27 pagos já incluem os R$ 2 do empregado."
     },
     {
+      "id": "matematica-e-logica-508",
       "difficulty": "hard",
       "text": "Quantos apertos de mão há entre 10 pessoas, se todas se cumprimentam?",
       "options": [
@@ -6178,6 +6686,7 @@
       "fact": "É a combinação de 10 tomados 2 a 2."
     },
     {
+      "id": "matematica-e-logica-509",
       "difficulty": "hard",
       "text": "Quantos jogos tem um torneio mata-mata com 32 times?",
       "options": [
@@ -6190,6 +6699,7 @@
       "fact": "Cada jogo elimina exatamente um time."
     },
     {
+      "id": "matematica-e-logica-510",
       "difficulty": "hard",
       "text": "Qual é a soma dos números de um dado de 20 faces?",
       "options": [
@@ -6202,6 +6712,7 @@
       "fact": "A soma de 1 a 20 é 210."
     },
     {
+      "id": "matematica-e-logica-511",
       "difficulty": "hard",
       "text": "Numa família, há duas crianças, e uma é menina. Qual é a chance de a outra também ser?",
       "options": [
@@ -6214,6 +6725,7 @@
       "fact": "O famoso problema tem resultado contraintuitivo."
     },
     {
+      "id": "matematica-e-logica-512",
       "difficulty": "hard",
       "text": "Qual é a chance de acertar 6 números em uma Mega-Sena?",
       "options": [
@@ -6226,6 +6738,7 @@
       "fact": "O número exato é 1 em 50.063.860."
     },
     {
+      "id": "matematica-e-logica-513",
       "difficulty": "hard",
       "text": "Em que ano nasceu Pitágoras, aproximadamente?",
       "options": [
@@ -6238,6 +6751,7 @@
       "fact": "Ele viveu na ilha de Samos, na Grécia."
     },
     {
+      "id": "matematica-e-logica-514",
       "difficulty": "hard",
       "text": "Em que ano viveu Euclides, aproximadamente?",
       "options": [
@@ -6250,6 +6764,7 @@
       "fact": "O livro dele foi usado por mais de 2 mil anos."
     },
     {
+      "id": "matematica-e-logica-515",
       "difficulty": "hard",
       "text": "Quem é o autor de \"Os Elementos\"?",
       "options": [
@@ -6262,6 +6777,7 @@
       "fact": "A obra é uma das mais editadas da história."
     },
     {
+      "id": "matematica-e-logica-516",
       "difficulty": "hard",
       "text": "Quem propôs \"penso, logo existo\" e criou o plano cartesiano?",
       "options": [
@@ -6274,6 +6790,7 @@
       "fact": "O nome \"cartesiano\" vem de Cartesius, sua forma latina."
     },
     {
+      "id": "matematica-e-logica-517",
       "difficulty": "hard",
       "text": "Quem criou o primeiro computador mecânico, a Pascalina?",
       "options": [
@@ -6286,6 +6803,7 @@
       "fact": "Ele queria ajudar o pai a calcular impostos."
     },
     {
+      "id": "matematica-e-logica-518",
       "difficulty": "hard",
       "text": "Quem é o matemático indiano autodidata retratado em \"O Homem Que Viu o Infinito\"?",
       "options": [
@@ -6298,6 +6816,7 @@
       "fact": "Ele trabalhou com Hardy em Cambridge."
     },
     {
+      "id": "matematica-e-logica-519",
       "difficulty": "hard",
       "text": "Qual é o número famoso do encontro de Hardy e Ramanujan, em um táxi?",
       "options": [
@@ -6310,6 +6829,7 @@
       "fact": "É o menor número que é soma de dois cubos de duas formas."
     },
     {
+      "id": "matematica-e-logica-520",
       "difficulty": "hard",
       "text": "Qual filme retrata o matemático John Nash?",
       "options": [
@@ -6322,6 +6842,7 @@
       "fact": "Russell Crowe viveu o matemático."
     },
     {
+      "id": "matematica-e-logica-521",
       "difficulty": "hard",
       "text": "Quem provou o Último Teorema de Fermat, em 1994?",
       "options": [
@@ -6334,6 +6855,7 @@
       "fact": "A demonstração tem mais de 100 páginas."
     },
     {
+      "id": "matematica-e-logica-522",
       "difficulty": "hard",
       "text": "Quem resolveu a Conjectura de Poincaré e recusou 1 milhão de dólares?",
       "options": [
@@ -6346,6 +6868,7 @@
       "fact": "Ele recusou até a Medalha Fields."
     },
     {
+      "id": "matematica-e-logica-523",
       "difficulty": "hard",
       "text": "Qual o nome do hotel infinito, famoso em matemática?",
       "options": [
@@ -6358,6 +6881,7 @@
       "fact": "Ele sempre tem lugar para mais um."
     },
     {
+      "id": "matematica-e-logica-524",
       "difficulty": "hard",
       "text": "Quem provou que certos infinitos são maiores que outros?",
       "options": [
@@ -6370,6 +6894,7 @@
       "fact": "Muitos colegas rejeitaram as ideias dele."
     },
     {
+      "id": "matematica-e-logica-525",
       "difficulty": "hard",
       "text": "Quem é o autor dos teoremas da incompletude, em 1931?",
       "options": [
@@ -6382,6 +6907,7 @@
       "fact": "Eles mostraram os limites da matemática."
     },
     {
+      "id": "matematica-e-logica-526",
       "difficulty": "hard",
       "text": "O que é um número palíndromo?",
       "options": [
@@ -6394,6 +6920,7 @@
       "fact": "Por exemplo, 1221 e 12321."
     },
     {
+      "id": "matematica-e-logica-527",
       "difficulty": "hard",
       "text": "O que é um número primo?",
       "options": [
@@ -6406,6 +6933,7 @@
       "fact": "Há infinitos, como provou Euclides."
     },
     {
+      "id": "matematica-e-logica-528",
       "difficulty": "hard",
       "text": "Por que 1 não é primo?",
       "options": [
@@ -6418,6 +6946,7 @@
       "fact": "A definição exige exatamente dois divisores."
     },
     {
+      "id": "matematica-e-logica-529",
       "difficulty": "hard",
       "text": "Qual é o maior número de dois algarismos primo?",
       "options": [
@@ -6430,6 +6959,7 @@
       "fact": "O 91 parece primo, mas é 7 × 13."
     },
     {
+      "id": "matematica-e-logica-530",
       "difficulty": "hard",
       "text": "Qual destes números parece primo, mas é 7 × 13?",
       "options": [
@@ -6442,6 +6972,7 @@
       "fact": "É uma pegadinha muito comum."
     },
     {
+      "id": "matematica-e-logica-531",
       "difficulty": "hard",
       "text": "Qual destes é um número perfeito?",
       "options": [
@@ -6454,6 +6985,7 @@
       "fact": "A soma dos divisores dele dá 28."
     },
     {
+      "id": "matematica-e-logica-532",
       "difficulty": "hard",
       "text": "Qual é a razão áurea, aproximadamente?",
       "options": [
@@ -6466,6 +6998,7 @@
       "fact": "Ela aparece na sequência de Fibonacci."
     },
     {
+      "id": "matematica-e-logica-533",
       "difficulty": "hard",
       "text": "Qual é o número de Euler, aproximadamente?",
       "options": [
@@ -6478,6 +7011,7 @@
       "fact": "Ele é a base do logaritmo natural."
     },
     {
+      "id": "matematica-e-logica-534",
       "difficulty": "hard",
       "text": "Qual é o valor de 0! (zero fatorial)?",
       "options": [
@@ -6490,6 +7024,7 @@
       "fact": "O resultado é definido assim para fechar as fórmulas."
     },
     {
+      "id": "matematica-e-logica-535",
       "difficulty": "hard",
       "text": "Qual é o valor de 2 elevado a 0?",
       "options": [
@@ -6502,6 +7037,7 @@
       "fact": "Qualquer número diferente de zero elevado a 0 dá 1."
     },
     {
+      "id": "matematica-e-logica-536",
       "difficulty": "hard",
       "text": "Qual é o valor de 10 elevado a −2?",
       "options": [
@@ -6514,6 +7050,7 @@
       "fact": "Um expoente negativo indica o inverso."
     },
     {
+      "id": "matematica-e-logica-537",
       "difficulty": "hard",
       "text": "Qual é a raiz quadrada de −1, em números complexos?",
       "options": [
@@ -6526,6 +7063,7 @@
       "fact": "Ela é chamada de unidade imaginária."
     },
     {
+      "id": "matematica-e-logica-538",
       "difficulty": "easy",
       "text": "Quanto é 16 × 7?",
       "options": [
@@ -6538,6 +7076,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-539",
       "difficulty": "easy",
       "text": "Quanto é 24 × 6?",
       "options": [
@@ -6550,6 +7089,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-540",
       "difficulty": "easy",
       "text": "Quanto é 35 × 4?",
       "options": [
@@ -6562,6 +7102,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-541",
       "difficulty": "easy",
       "text": "Quanto é 42 × 5?",
       "options": [
@@ -6574,6 +7115,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-542",
       "difficulty": "easy",
       "text": "Quanto é 55 × 3?",
       "options": [
@@ -6586,6 +7128,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-543",
       "difficulty": "easy",
       "text": "Quanto é 61 × 8?",
       "options": [
@@ -6598,6 +7141,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-544",
       "difficulty": "easy",
       "text": "Quanto é 73 × 2?",
       "options": [
@@ -6610,6 +7154,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-545",
       "difficulty": "easy",
       "text": "Quanto é 88 × 4?",
       "options": [
@@ -6622,6 +7167,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-546",
       "difficulty": "easy",
       "text": "Quanto é 93 × 3?",
       "options": [
@@ -6634,6 +7180,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-547",
       "difficulty": "easy",
       "text": "Quanto é 99 × 2?",
       "options": [
@@ -6646,6 +7193,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-548",
       "difficulty": "easy",
       "text": "Quanto é 32 × 9?",
       "options": [
@@ -6658,6 +7206,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-549",
       "difficulty": "easy",
       "text": "Quanto é 41 × 7?",
       "options": [
@@ -6670,6 +7219,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-550",
       "difficulty": "easy",
       "text": "Quanto é 17 × 8?",
       "options": [
@@ -6682,6 +7232,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-551",
       "difficulty": "easy",
       "text": "Quanto é 19 × 6?",
       "options": [
@@ -6694,6 +7245,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-552",
       "difficulty": "easy",
       "text": "Quanto é 28 × 3?",
       "options": [
@@ -6706,6 +7258,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-553",
       "difficulty": "easy",
       "text": "Quanto é 37 × 5?",
       "options": [
@@ -6718,6 +7271,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-554",
       "difficulty": "easy",
       "text": "Quanto é 46 × 2?",
       "options": [
@@ -6730,6 +7284,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-555",
       "difficulty": "easy",
       "text": "Quanto é 59 × 4?",
       "options": [
@@ -6742,6 +7297,7 @@
       "fact": "O jeito mais rápido é separar as dezenas das unidades."
     },
     {
+      "id": "matematica-e-logica-556",
       "difficulty": "easy",
       "text": "Quanto é 87 + 36?",
       "options": [
@@ -6754,6 +7310,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-557",
       "difficulty": "easy",
       "text": "Quanto é 164 + 29?",
       "options": [
@@ -6766,6 +7323,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-558",
       "difficulty": "easy",
       "text": "Quanto é 258 + 47?",
       "options": [
@@ -6778,6 +7336,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-559",
       "difficulty": "easy",
       "text": "Quanto é 391 + 109?",
       "options": [
@@ -6790,6 +7349,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-560",
       "difficulty": "easy",
       "text": "Quanto é 444 + 256?",
       "options": [
@@ -6802,6 +7362,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-561",
       "difficulty": "easy",
       "text": "Quanto é 625 + 175?",
       "options": [
@@ -6814,6 +7375,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-562",
       "difficulty": "easy",
       "text": "Quanto é 78 + 65?",
       "options": [
@@ -6826,6 +7388,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-563",
       "difficulty": "easy",
       "text": "Quanto é 250 + 250?",
       "options": [
@@ -6838,6 +7401,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-564",
       "difficulty": "easy",
       "text": "Quanto é 333 + 667?",
       "options": [
@@ -6850,6 +7414,7 @@
       "fact": "Vale começar somando as centenas e as dezenas."
     },
     {
+      "id": "matematica-e-logica-565",
       "difficulty": "easy",
       "text": "Quanto é 345 dividido por 5?",
       "options": [
@@ -6862,6 +7427,7 @@
       "fact": "Para conferir, basta multiplicar 69 por 5."
     },
     {
+      "id": "matematica-e-logica-566",
       "difficulty": "easy",
       "text": "Quanto é 848 dividido por 8?",
       "options": [
@@ -6874,6 +7440,7 @@
       "fact": "Para conferir, basta multiplicar 106 por 8."
     },
     {
+      "id": "matematica-e-logica-567",
       "difficulty": "easy",
       "text": "Quanto é 972 dividido por 9?",
       "options": [
@@ -6886,6 +7453,7 @@
       "fact": "Para conferir, basta multiplicar 108 por 9."
     },
     {
+      "id": "matematica-e-logica-568",
       "difficulty": "easy",
       "text": "Quanto é 555 dividido por 5?",
       "options": [
@@ -6898,6 +7466,7 @@
       "fact": "Para conferir, basta multiplicar 111 por 5."
     },
     {
+      "id": "matematica-e-logica-569",
       "difficulty": "easy",
       "text": "Quanto é 777 dividido por 7?",
       "options": [
@@ -6910,6 +7479,7 @@
       "fact": "Para conferir, basta multiplicar 111 por 7."
     },
     {
+      "id": "matematica-e-logica-570",
       "difficulty": "easy",
       "text": "Quanto é 216 dividido por 6?",
       "options": [
@@ -6922,6 +7492,7 @@
       "fact": "Para conferir, basta multiplicar 36 por 6."
     },
     {
+      "id": "matematica-e-logica-571",
       "difficulty": "easy",
       "text": "Quanto é 315 dividido por 5?",
       "options": [
@@ -6934,6 +7505,7 @@
       "fact": "Para conferir, basta multiplicar 63 por 5."
     },
     {
+      "id": "matematica-e-logica-572",
       "difficulty": "easy",
       "text": "Quanto é 128 dividido por 4?",
       "options": [
@@ -6946,6 +7518,7 @@
       "fact": "Para conferir, basta multiplicar 32 por 4."
     },
     {
+      "id": "matematica-e-logica-573",
       "difficulty": "medium",
       "text": "Quanto é 26 × 34?",
       "options": [
@@ -6958,6 +7531,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-574",
       "difficulty": "medium",
       "text": "Quanto é 45 × 22?",
       "options": [
@@ -6970,6 +7544,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-575",
       "difficulty": "medium",
       "text": "Quanto é 66 × 15?",
       "options": [
@@ -6982,6 +7557,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-576",
       "difficulty": "medium",
       "text": "Quanto é 38 × 12?",
       "options": [
@@ -6994,6 +7570,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-577",
       "difficulty": "medium",
       "text": "Quanto é 54 × 25?",
       "options": [
@@ -7006,6 +7583,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-578",
       "difficulty": "medium",
       "text": "Quanto é 16 × 48?",
       "options": [
@@ -7018,6 +7596,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-579",
       "difficulty": "medium",
       "text": "Quanto é 72 × 18?",
       "options": [
@@ -7030,6 +7609,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-580",
       "difficulty": "medium",
       "text": "Quanto é 84 × 13?",
       "options": [
@@ -7042,6 +7622,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-581",
       "difficulty": "medium",
       "text": "Quanto é 96 × 35?",
       "options": [
@@ -7054,6 +7635,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-582",
       "difficulty": "medium",
       "text": "Quanto é 27 × 37?",
       "options": [
@@ -7066,6 +7648,7 @@
       "fact": "Separar um dos fatores em dezenas e unidades ajuda bastante."
     },
     {
+      "id": "matematica-e-logica-583",
       "difficulty": "medium",
       "text": "Quanto é 15% de 240?",
       "options": [
@@ -7078,6 +7661,7 @@
       "fact": "Basta multiplicar 240 por 15 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-584",
       "difficulty": "medium",
       "text": "Quanto é 35% de 600?",
       "options": [
@@ -7090,6 +7674,7 @@
       "fact": "Basta multiplicar 600 por 35 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-585",
       "difficulty": "medium",
       "text": "Quanto é 45% de 180?",
       "options": [
@@ -7102,6 +7687,7 @@
       "fact": "Basta multiplicar 180 por 45 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-586",
       "difficulty": "medium",
       "text": "Quanto é 8% de 650?",
       "options": [
@@ -7114,6 +7700,7 @@
       "fact": "Basta multiplicar 650 por 8 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-587",
       "difficulty": "medium",
       "text": "Quanto é 12% de 750?",
       "options": [
@@ -7126,6 +7713,7 @@
       "fact": "Basta multiplicar 750 por 12 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-588",
       "difficulty": "medium",
       "text": "Quanto é 22% de 500?",
       "options": [
@@ -7138,6 +7726,7 @@
       "fact": "Basta multiplicar 500 por 22 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-589",
       "difficulty": "medium",
       "text": "Quanto é 65% de 80?",
       "options": [
@@ -7150,6 +7739,7 @@
       "fact": "Basta multiplicar 80 por 65 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-590",
       "difficulty": "medium",
       "text": "Quanto é 90% de 350?",
       "options": [
@@ -7162,6 +7752,7 @@
       "fact": "Basta multiplicar 350 por 90 e dividir por 100."
     },
     {
+      "id": "matematica-e-logica-591",
       "difficulty": "medium",
       "text": "Quanto é −28 + (15)?",
       "options": [
@@ -7174,6 +7765,7 @@
       "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
     },
     {
+      "id": "matematica-e-logica-592",
       "difficulty": "medium",
       "text": "Quanto é −45 + (−38)?",
       "options": [
@@ -7186,6 +7778,7 @@
       "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
     },
     {
+      "id": "matematica-e-logica-593",
       "difficulty": "medium",
       "text": "Quanto é 60 + (−92)?",
       "options": [
@@ -7198,6 +7791,7 @@
       "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
     },
     {
+      "id": "matematica-e-logica-594",
       "difficulty": "medium",
       "text": "Quanto é −125 + (250)?",
       "options": [
@@ -7210,6 +7804,7 @@
       "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
     },
     {
+      "id": "matematica-e-logica-595",
       "difficulty": "medium",
       "text": "Quanto é −300 + (75)?",
       "options": [
@@ -7222,6 +7817,7 @@
       "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
     },
     {
+      "id": "matematica-e-logica-596",
       "difficulty": "medium",
       "text": "Quanto é 84 + (−120)?",
       "options": [
@@ -7234,6 +7830,7 @@
       "fact": "Com sinais diferentes, subtraímos e mantemos o sinal do maior."
     },
     {
+      "id": "matematica-e-logica-597",
       "difficulty": "medium",
       "text": "Quanto é 18 ao quadrado?",
       "options": [
@@ -7246,6 +7843,7 @@
       "fact": "É o produto de 18 por 18, que dá 324."
     },
     {
+      "id": "matematica-e-logica-598",
       "difficulty": "medium",
       "text": "Quanto é 22 ao quadrado?",
       "options": [
@@ -7258,6 +7856,7 @@
       "fact": "É o produto de 22 por 22, que dá 484."
     },
     {
+      "id": "matematica-e-logica-599",
       "difficulty": "medium",
       "text": "Quanto é 28 ao quadrado?",
       "options": [
@@ -7270,6 +7869,7 @@
       "fact": "É o produto de 28 por 28, que dá 784."
     },
     {
+      "id": "matematica-e-logica-600",
       "difficulty": "medium",
       "text": "Quanto é 33 ao quadrado?",
       "options": [
@@ -7282,6 +7882,7 @@
       "fact": "É o produto de 33 por 33, que dá 1.089."
     },
     {
+      "id": "matematica-e-logica-601",
       "difficulty": "medium",
       "text": "Quanto é 35 ao quadrado?",
       "options": [
@@ -7294,6 +7895,7 @@
       "fact": "É o produto de 35 por 35, que dá 1.225."
     },
     {
+      "id": "matematica-e-logica-602",
       "difficulty": "medium",
       "text": "Quanto é 45 ao quadrado?",
       "options": [
@@ -7306,6 +7908,7 @@
       "fact": "É o produto de 45 por 45, que dá 2.025."
     },
     {
+      "id": "matematica-e-logica-603",
       "difficulty": "medium",
       "text": "Quanto é 55 ao quadrado?",
       "options": [
@@ -7318,6 +7921,7 @@
       "fact": "É o produto de 55 por 55, que dá 3.025."
     },
     {
+      "id": "matematica-e-logica-604",
       "difficulty": "medium",
       "text": "Quanto é 65 ao quadrado?",
       "options": [
@@ -7330,6 +7934,7 @@
       "fact": "É o produto de 65 por 65, que dá 4.225."
     },
     {
+      "id": "matematica-e-logica-605",
       "difficulty": "medium",
       "text": "Quanto é 75 ao quadrado?",
       "options": [
@@ -7342,6 +7947,7 @@
       "fact": "É o produto de 75 por 75, que dá 5.625."
     },
     {
+      "id": "matematica-e-logica-606",
       "difficulty": "hard",
       "text": "Quanto é 127 × 43?",
       "options": [
@@ -7354,6 +7960,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-607",
       "difficulty": "hard",
       "text": "Quanto é 236 × 58?",
       "options": [
@@ -7366,6 +7973,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-608",
       "difficulty": "hard",
       "text": "Quanto é 419 × 27?",
       "options": [
@@ -7378,6 +7986,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-609",
       "difficulty": "hard",
       "text": "Quanto é 508 × 36?",
       "options": [
@@ -7390,6 +7999,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-610",
       "difficulty": "hard",
       "text": "Quanto é 643 × 72?",
       "options": [
@@ -7402,6 +8012,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-611",
       "difficulty": "hard",
       "text": "Quanto é 781 × 94?",
       "options": [
@@ -7414,6 +8025,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-612",
       "difficulty": "hard",
       "text": "Quanto é 925 × 63?",
       "options": [
@@ -7426,6 +8038,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-613",
       "difficulty": "hard",
       "text": "Quanto é 358 × 87?",
       "options": [
@@ -7438,6 +8051,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-614",
       "difficulty": "hard",
       "text": "Quanto é 614 × 49?",
       "options": [
@@ -7450,6 +8064,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-615",
       "difficulty": "hard",
       "text": "Quanto é 263 × 76?",
       "options": [
@@ -7462,6 +8077,7 @@
       "fact": "A conta pode ser feita em partes, somando depois os resultados."
     },
     {
+      "id": "matematica-e-logica-616",
       "difficulty": "hard",
       "text": "Quanto é 101 ao quadrado?",
       "options": [
@@ -7474,6 +8090,7 @@
       "fact": "É o produto de 101 por 101, que dá 10.201."
     },
     {
+      "id": "matematica-e-logica-617",
       "difficulty": "hard",
       "text": "Quanto é 111 ao quadrado?",
       "options": [
@@ -7486,6 +8103,7 @@
       "fact": "É o produto de 111 por 111, que dá 12.321."
     },
     {
+      "id": "matematica-e-logica-618",
       "difficulty": "hard",
       "text": "Quanto é 121 ao quadrado?",
       "options": [
@@ -7498,6 +8116,7 @@
       "fact": "É o produto de 121 por 121, que dá 14.641."
     },
     {
+      "id": "matematica-e-logica-619",
       "difficulty": "hard",
       "text": "Quanto é 125 ao quadrado?",
       "options": [
@@ -7510,6 +8129,7 @@
       "fact": "É o produto de 125 por 125, que dá 15.625."
     },
     {
+      "id": "matematica-e-logica-620",
       "difficulty": "hard",
       "text": "Quanto é 135 ao quadrado?",
       "options": [
@@ -7522,6 +8142,7 @@
       "fact": "É o produto de 135 por 135, que dá 18.225."
     },
     {
+      "id": "matematica-e-logica-621",
       "difficulty": "hard",
       "text": "Quanto é 144 ao quadrado?",
       "options": [
@@ -7534,6 +8155,7 @@
       "fact": "É o produto de 144 por 144, que dá 20.736."
     },
     {
+      "id": "matematica-e-logica-622",
       "difficulty": "hard",
       "text": "Quanto é 175 ao quadrado?",
       "options": [
@@ -7546,6 +8168,7 @@
       "fact": "É o produto de 175 por 175, que dá 30.625."
     },
     {
+      "id": "matematica-e-logica-623",
       "difficulty": "hard",
       "text": "Quanto é 199 ao quadrado?",
       "options": [
@@ -7558,6 +8181,7 @@
       "fact": "É o produto de 199 por 199, que dá 39.601."
     },
     {
+      "id": "matematica-e-logica-624",
       "difficulty": "hard",
       "text": "Quanto é 225 ao quadrado?",
       "options": [
@@ -7570,6 +8194,7 @@
       "fact": "É o produto de 225 por 225, que dá 50.625."
     },
     {
+      "id": "matematica-e-logica-625",
       "difficulty": "hard",
       "text": "Quanto é 250 ao quadrado?",
       "options": [
@@ -7582,6 +8207,7 @@
       "fact": "É o produto de 250 por 250, que dá 62.500."
     },
     {
+      "id": "matematica-e-logica-626",
       "difficulty": "hard",
       "text": "Quanto é 2 elevado a 13?",
       "options": [
@@ -7594,6 +8220,7 @@
       "fact": "Multiplicando 2 por ele mesmo 13 vezes, chegamos a 8.192."
     },
     {
+      "id": "matematica-e-logica-627",
       "difficulty": "hard",
       "text": "Quanto é 2 elevado a 15?",
       "options": [
@@ -7606,6 +8233,7 @@
       "fact": "Multiplicando 2 por ele mesmo 15 vezes, chegamos a 32.768."
     },
     {
+      "id": "matematica-e-logica-628",
       "difficulty": "hard",
       "text": "Quanto é 2 elevado a 17?",
       "options": [
@@ -7618,6 +8246,7 @@
       "fact": "Multiplicando 2 por ele mesmo 17 vezes, chegamos a 131.072."
     },
     {
+      "id": "matematica-e-logica-629",
       "difficulty": "hard",
       "text": "Quanto é 3 elevado a 6?",
       "options": [
@@ -7630,6 +8259,7 @@
       "fact": "Multiplicando 3 por ele mesmo 6 vezes, chegamos a 729."
     },
     {
+      "id": "matematica-e-logica-630",
       "difficulty": "hard",
       "text": "Quanto é 3 elevado a 7?",
       "options": [
@@ -7642,6 +8272,7 @@
       "fact": "Multiplicando 3 por ele mesmo 7 vezes, chegamos a 2.187."
     },
     {
+      "id": "matematica-e-logica-631",
       "difficulty": "hard",
       "text": "Quanto é 3 elevado a 9?",
       "options": [
@@ -7654,6 +8285,7 @@
       "fact": "Multiplicando 3 por ele mesmo 9 vezes, chegamos a 19.683."
     },
     {
+      "id": "matematica-e-logica-632",
       "difficulty": "hard",
       "text": "Quanto é 4 elevado a 6?",
       "options": [
@@ -7666,6 +8298,7 @@
       "fact": "Multiplicando 4 por ele mesmo 6 vezes, chegamos a 4.096."
     },
     {
+      "id": "matematica-e-logica-633",
       "difficulty": "hard",
       "text": "Quanto é 4 elevado a 7?",
       "options": [
@@ -7678,6 +8311,7 @@
       "fact": "Multiplicando 4 por ele mesmo 7 vezes, chegamos a 16.384."
     },
     {
+      "id": "matematica-e-logica-634",
       "difficulty": "hard",
       "text": "Quanto é 5 elevado a 6?",
       "options": [
@@ -7690,6 +8324,7 @@
       "fact": "Multiplicando 5 por ele mesmo 6 vezes, chegamos a 15.625."
     },
     {
+      "id": "matematica-e-logica-635",
       "difficulty": "hard",
       "text": "Quanto é 6 elevado a 6?",
       "options": [
@@ -7702,6 +8337,7 @@
       "fact": "Multiplicando 6 por ele mesmo 6 vezes, chegamos a 46.656."
     },
     {
+      "id": "matematica-e-logica-636",
       "difficulty": "hard",
       "text": "Quanto é 7 elevado a 5?",
       "options": [
@@ -7714,6 +8350,7 @@
       "fact": "Multiplicando 7 por ele mesmo 5 vezes, chegamos a 16.807."
     },
     {
+      "id": "matematica-e-logica-637",
       "difficulty": "hard",
       "text": "Quanto é 8 elevado a 4?",
       "options": [
@@ -7726,6 +8363,7 @@
       "fact": "Multiplicando 8 por ele mesmo 4 vezes, chegamos a 4.096."
     },
     {
+      "id": "matematica-e-logica-638",
       "difficulty": "hard",
       "text": "Quanto é 8 elevado a 5?",
       "options": [
@@ -7738,6 +8376,7 @@
       "fact": "Multiplicando 8 por ele mesmo 5 vezes, chegamos a 32.768."
     },
     {
+      "id": "matematica-e-logica-639",
       "difficulty": "hard",
       "text": "Quanto é 12 elevado a 3?",
       "options": [
@@ -7750,6 +8389,7 @@
       "fact": "Multiplicando 12 por ele mesmo 3 vezes, chegamos a 1.728."
     },
     {
+      "id": "matematica-e-logica-640",
       "difficulty": "hard",
       "text": "Quanto é 15 elevado a 3?",
       "options": [
@@ -7762,6 +8402,7 @@
       "fact": "Multiplicando 15 por ele mesmo 3 vezes, chegamos a 3.375."
     },
     {
+      "id": "matematica-e-logica-641",
       "difficulty": "hard",
       "text": "Quanto é 1.024 dividido por 16?",
       "options": [
@@ -7774,6 +8415,7 @@
       "fact": "Para conferir, basta multiplicar 64 por 16."
     },
     {
+      "id": "matematica-e-logica-642",
       "difficulty": "hard",
       "text": "Quanto é 3.375 dividido por 15?",
       "options": [
@@ -7786,6 +8428,7 @@
       "fact": "Para conferir, basta multiplicar 225 por 15."
     },
     {
+      "id": "matematica-e-logica-643",
       "difficulty": "hard",
       "text": "Quanto é 2.197 dividido por 13?",
       "options": [
@@ -7798,6 +8441,7 @@
       "fact": "Para conferir, basta multiplicar 169 por 13."
     },
     {
+      "id": "matematica-e-logica-644",
       "difficulty": "hard",
       "text": "Quanto é 1.728 dividido por 12?",
       "options": [
@@ -7810,6 +8454,7 @@
       "fact": "Para conferir, basta multiplicar 144 por 12."
     },
     {
+      "id": "matematica-e-logica-645",
       "difficulty": "hard",
       "text": "Quanto é 4.913 dividido por 17?",
       "options": [
@@ -7822,6 +8467,7 @@
       "fact": "Para conferir, basta multiplicar 289 por 17."
     },
     {
+      "id": "matematica-e-logica-646",
       "difficulty": "hard",
       "text": "Quanto é 6.859 dividido por 19?",
       "options": [
@@ -7834,6 +8480,7 @@
       "fact": "Para conferir, basta multiplicar 361 por 19."
     },
     {
+      "id": "matematica-e-logica-647",
       "difficulty": "impossible",
       "text": "Qual é o maior número primo conhecido, em algarismos aproximados, descoberto em 2024?",
       "options": [
@@ -7848,6 +8495,7 @@
       "fact": "É um primo de Mersenne, encontrado por computadores voluntários."
     },
     {
+      "id": "matematica-e-logica-648",
       "difficulty": "impossible",
       "text": "Qual é a soma dos primeiros 100 números primos?",
       "options": [
@@ -7862,6 +8510,7 @@
       "fact": "O 100º primo é 541."
     },
     {
+      "id": "matematica-e-logica-649",
       "difficulty": "impossible",
       "text": "Qual é o centésimo número primo?",
       "options": [
@@ -7876,6 +8525,7 @@
       "fact": "Nenhuma fórmula simples dá essa resposta direto."
     },
     {
+      "id": "matematica-e-logica-650",
       "difficulty": "impossible",
       "text": "Quantos algarismos tem 2 elevado a 100?",
       "options": [
@@ -7890,6 +8540,7 @@
       "fact": "O número tem cerca de 1,27 × 10³⁰."
     },
     {
+      "id": "matematica-e-logica-651",
       "difficulty": "impossible",
       "text": "Quantos algarismos tem 100 fatorial?",
       "options": [
@@ -7904,6 +8555,7 @@
       "fact": "Com tantos fatores, ele cresce muito rápido."
     },
     {
+      "id": "matematica-e-logica-652",
       "difficulty": "impossible",
       "text": "Quantos zeros tem no final de 1.000 fatorial?",
       "options": [
@@ -7918,6 +8570,7 @@
       "fact": "Cada múltiplo de 5 ajuda a formar um zero."
     },
     {
+      "id": "matematica-e-logica-653",
       "difficulty": "impossible",
       "text": "Quais são as seis primeiras casas decimais de π?",
       "options": [
@@ -7932,6 +8585,7 @@
       "fact": "A sequência continua com 6, 5, 3 e 5."
     },
     {
+      "id": "matematica-e-logica-654",
       "difficulty": "impossible",
       "text": "Até quantas casas decimais π já foi calculado, em 2024?",
       "options": [
@@ -7946,6 +8600,7 @@
       "fact": "Só 40 casas bastam para medir o Universo observável."
     },
     {
+      "id": "matematica-e-logica-655",
       "difficulty": "impossible",
       "text": "Quantas casas de π são necessárias para calcular o Universo com precisão de um átomo?",
       "options": [
@@ -7960,6 +8615,7 @@
       "fact": "Os cientistas da NASA usam só 15 casas."
     },
     {
+      "id": "matematica-e-logica-656",
       "difficulty": "impossible",
       "text": "Quantas casas de π a NASA usa em cálculos de navegação?",
       "options": [
@@ -7974,6 +8630,7 @@
       "fact": "Isso já é mais que suficiente."
     },
     {
+      "id": "matematica-e-logica-657",
       "difficulty": "impossible",
       "text": "Em que ano foi proposta a primeira definição moderna de função, por Euler?",
       "options": [
@@ -7988,6 +8645,7 @@
       "fact": "A obra se chama \"Introductio in analysin infinitorum\"."
     },
     {
+      "id": "matematica-e-logica-658",
       "difficulty": "impossible",
       "text": "Em que ano foi criado o zero, na Índia, por Brahmagupta?",
       "options": [
@@ -8002,6 +8660,7 @@
       "fact": "Ele definiu regras para o zero em cálculos."
     },
     {
+      "id": "matematica-e-logica-659",
       "difficulty": "impossible",
       "text": "Em que ano Fibonacci publicou \"Liber Abaci\"?",
       "options": [
@@ -8016,6 +8675,7 @@
       "fact": "O livro levou os algarismos arábicos à Europa."
     },
     {
+      "id": "matematica-e-logica-660",
       "difficulty": "impossible",
       "text": "Em que ano Pierre de Fermat escreveu seu \"Último Teorema\"?",
       "options": [
@@ -8030,6 +8690,7 @@
       "fact": "Ele escreveu que a margem do livro era pequena demais."
     },
     {
+      "id": "matematica-e-logica-661",
       "difficulty": "impossible",
       "text": "Em quantos anos o Último Teorema de Fermat foi resolvido, desde 1637?",
       "options": [
@@ -8044,6 +8705,7 @@
       "fact": "Andrew Wiles fechou a prova em 1994."
     },
     {
+      "id": "matematica-e-logica-662",
       "difficulty": "impossible",
       "text": "Quantas pontes havia em Königsberg no problema de Euler?",
       "options": [
@@ -8058,6 +8720,7 @@
       "fact": "A resposta negativa criou a teoria dos grafos."
     },
     {
+      "id": "matematica-e-logica-663",
       "difficulty": "impossible",
       "text": "Quantas cores bastam para pintar qualquer mapa, segundo o Teorema das Quatro Cores?",
       "options": [
@@ -8072,6 +8735,7 @@
       "fact": "Foi a primeira prova famosa feita com ajuda de computador."
     },
     {
+      "id": "matematica-e-logica-664",
       "difficulty": "impossible",
       "text": "Em que ano o Teorema das Quatro Cores foi provado?",
       "options": [
@@ -8086,6 +8750,7 @@
       "fact": "Dois matemáticos usaram mais de 1.000 horas de computador."
     },
     {
+      "id": "matematica-e-logica-665",
       "difficulty": "impossible",
       "text": "Quantos Prêmios do Milênio foram resolvidos até 2024?",
       "options": [
@@ -8100,6 +8765,7 @@
       "fact": "Só a Conjectura de Poincaré foi resolvida."
     },
     {
+      "id": "matematica-e-logica-666",
       "difficulty": "impossible",
       "text": "Quanto vale cada um dos Problemas do Milênio, em dólares?",
       "options": [
@@ -8114,6 +8780,7 @@
       "fact": "O Instituto Clay anunciou a lista em 2000."
     },
     {
+      "id": "matematica-e-logica-667",
       "difficulty": "impossible",
       "text": "Em que ano Artur Avila ganhou a Medalha Fields?",
       "options": [
@@ -8128,6 +8795,7 @@
       "fact": "Foi o primeiro latino-americano a receber o prêmio."
     },
     {
+      "id": "matematica-e-logica-668",
       "difficulty": "impossible",
       "text": "Em que ano Maryam Mirzakhani ganhou a Medalha Fields?",
       "options": [
@@ -8142,6 +8810,7 @@
       "fact": "Foi a primeira mulher a receber o prêmio."
     },
     {
+      "id": "matematica-e-logica-669",
       "difficulty": "impossible",
       "text": "Quantos países participam da Olimpíada Internacional de Matemática, aproximadamente?",
       "options": [
@@ -8156,6 +8825,7 @@
       "fact": "O evento existe desde 1959."
     },
     {
+      "id": "matematica-e-logica-670",
       "difficulty": "impossible",
       "text": "Em que ano o Brasil sediou a Olimpíada Internacional de Matemática, no Rio?",
       "options": [
@@ -8170,6 +8840,7 @@
       "fact": "O país tem tido ótimos resultados."
     },
     {
+      "id": "matematica-e-logica-671",
       "difficulty": "impossible",
       "text": "Em que ano foi criada a Obmep, no Brasil?",
       "options": [
@@ -8184,6 +8855,7 @@
       "fact": "Milhões de alunos da escola pública participam."
     },
     {
+      "id": "matematica-e-logica-672",
       "difficulty": "impossible",
       "text": "Qual o tamanho da Olimpíada Brasileira de Matemática das Escolas Públicas, em alunos, por ano?",
       "options": [
@@ -8198,6 +8870,7 @@
       "fact": "É uma das maiores olimpíadas do mundo."
     },
     {
+      "id": "matematica-e-logica-673",
       "difficulty": "easy",
       "text": "Uma camiseta custa R$ 35 e uma bermuda custa R$ 45. Quanto custam as duas?",
       "options": [
@@ -8210,6 +8883,7 @@
       "fact": "Basta somar os dois preços."
     },
     {
+      "id": "matematica-e-logica-674",
       "difficulty": "easy",
       "text": "Um pacote tem 8 biscoitos. Quantos biscoitos há em 5 pacotes?",
       "options": [
@@ -8222,6 +8896,7 @@
       "fact": "Basta multiplicar 8 por 5."
     },
     {
+      "id": "matematica-e-logica-675",
       "difficulty": "easy",
       "text": "Numa festa, 24 doces foram divididos entre 6 crianças. Quantos doces cada uma recebeu?",
       "options": [
@@ -8234,6 +8909,7 @@
       "fact": "Basta dividir 24 por 6."
     },
     {
+      "id": "matematica-e-logica-676",
       "difficulty": "easy",
       "text": "Um ônibus sai às 10h e a viagem dura 3 horas. Que horas chega?",
       "options": [
@@ -8246,6 +8922,7 @@
       "fact": "Basta somar 3 horas ao horário de saída."
     },
     {
+      "id": "matematica-e-logica-677",
       "difficulty": "easy",
       "text": "Ana tem 12 anos. Quantos anos terá daqui a 8 anos?",
       "options": [
@@ -8258,6 +8935,7 @@
       "fact": "Basta somar 12 e 8."
     },
     {
+      "id": "matematica-e-logica-678",
       "difficulty": "easy",
       "text": "Lucas nasceu em 2010. Quantos anos faz em 2030?",
       "options": [
@@ -8270,6 +8948,7 @@
       "fact": "Basta subtrair 2010 de 2030."
     },
     {
+      "id": "matematica-e-logica-679",
       "difficulty": "easy",
       "text": "Quantas meias há em 6 pares?",
       "options": [
@@ -8282,6 +8961,7 @@
       "fact": "Cada par tem duas meias."
     },
     {
+      "id": "matematica-e-logica-680",
       "difficulty": "easy",
       "text": "Se um time ganhou 3 pontos em cada um de 4 jogos, quantos pontos fez?",
       "options": [
@@ -8294,6 +8974,7 @@
       "fact": "Basta multiplicar 3 por 4."
     },
     {
+      "id": "matematica-e-logica-681",
       "difficulty": "easy",
       "text": "Quantas horas há entre 8h da manhã e meio-dia?",
       "options": [
@@ -8306,6 +8987,7 @@
       "fact": "Meio-dia corresponde a 12h."
     },
     {
+      "id": "matematica-e-logica-682",
       "difficulty": "easy",
       "text": "Quanto é a metade de 1.000?",
       "options": [
@@ -8318,6 +9000,7 @@
       "fact": "Basta dividir por 2."
     },
     {
+      "id": "matematica-e-logica-683",
       "difficulty": "easy",
       "text": "Quanto é o dobro de 250?",
       "options": [
@@ -8330,6 +9013,7 @@
       "fact": "Basta multiplicar por 2."
     },
     {
+      "id": "matematica-e-logica-684",
       "difficulty": "easy",
       "text": "Quanto é o triplo de 30?",
       "options": [
@@ -8342,6 +9026,7 @@
       "fact": "Basta multiplicar por 3."
     },
     {
+      "id": "matematica-e-logica-685",
       "difficulty": "easy",
       "text": "Quanto é 10% de 100?",
       "options": [
@@ -8354,6 +9039,7 @@
       "fact": "Dez por cento equivalem à décima parte."
     },
     {
+      "id": "matematica-e-logica-686",
       "difficulty": "easy",
       "text": "Quanto é 25% de 100?",
       "options": [
@@ -8366,6 +9052,7 @@
       "fact": "Vinte e cinco por cento equivalem a um quarto."
     },
     {
+      "id": "matematica-e-logica-687",
       "difficulty": "easy",
       "text": "Quanto é 1/2 de 18?",
       "options": [
@@ -8378,6 +9065,7 @@
       "fact": "Basta dividir por 2."
     },
     {
+      "id": "matematica-e-logica-688",
       "difficulty": "easy",
       "text": "Quanto é 1/3 de 21?",
       "options": [
@@ -8390,6 +9078,7 @@
       "fact": "Basta dividir por 3."
     },
     {
+      "id": "matematica-e-logica-689",
       "difficulty": "easy",
       "text": "Quanto é 1/4 de 40?",
       "options": [
@@ -8402,6 +9091,7 @@
       "fact": "Basta dividir por 4."
     },
     {
+      "id": "matematica-e-logica-690",
       "difficulty": "easy",
       "text": "Quantos cantos tem um retângulo?",
       "options": [
@@ -8414,6 +9104,7 @@
       "fact": "Ele tem os mesmos cantos de um quadrado."
     },
     {
+      "id": "matematica-e-logica-691",
       "difficulty": "easy",
       "text": "Quantas moedas de R$ 1 são necessárias para formar R$ 7?",
       "options": [
@@ -8426,6 +9117,7 @@
       "fact": "Cada moeda vale um real."
     },
     {
+      "id": "matematica-e-logica-692",
       "difficulty": "easy",
       "text": "Quantas notas de R$ 20 formam R$ 100?",
       "options": [
@@ -8438,6 +9130,7 @@
       "fact": "Basta dividir 100 por 20."
     },
     {
+      "id": "matematica-e-logica-693",
       "difficulty": "easy",
       "text": "Quantas notas de R$ 50 formam R$ 200?",
       "options": [
@@ -8450,6 +9143,7 @@
       "fact": "Basta dividir 200 por 50."
     },
     {
+      "id": "matematica-e-logica-694",
       "difficulty": "easy",
       "text": "Quantas moedas de 25 centavos formam R$ 1?",
       "options": [
@@ -8462,6 +9156,7 @@
       "fact": "Quatro vezes 25 dá 100."
     },
     {
+      "id": "matematica-e-logica-695",
       "difficulty": "easy",
       "text": "Quantos anos tem um biênio?",
       "options": [
@@ -8474,6 +9169,7 @@
       "fact": "O prefixo \"bi\" indica dois."
     },
     {
+      "id": "matematica-e-logica-696",
       "difficulty": "easy",
       "text": "Quantos anos tem um quinquênio?",
       "options": [
@@ -8486,6 +9182,7 @@
       "fact": "O prefixo \"quinqu\" indica cinco."
     },
     {
+      "id": "matematica-e-logica-697",
       "difficulty": "easy",
       "text": "Como se chama o resultado de uma multiplicação?",
       "options": [
@@ -8498,6 +9195,7 @@
       "fact": "Quociente é o resultado da divisão."
     },
     {
+      "id": "matematica-e-logica-698",
       "difficulty": "medium",
       "text": "Como se chama o resultado de uma divisão?",
       "options": [
@@ -8510,6 +9208,7 @@
       "fact": "Em 10 ÷ 2, o quociente é 5."
     },
     {
+      "id": "matematica-e-logica-699",
       "difficulty": "medium",
       "text": "Quantas faces tem um prisma de base triangular?",
       "options": [
@@ -8522,6 +9221,7 @@
       "fact": "São duas bases e três faces laterais."
     },
     {
+      "id": "matematica-e-logica-700",
       "difficulty": "medium",
       "text": "Quantas arestas tem uma pirâmide de base quadrada?",
       "options": [
@@ -8534,6 +9234,7 @@
       "fact": "São quatro na base e quatro laterais."
     },
     {
+      "id": "matematica-e-logica-701",
       "difficulty": "medium",
       "text": "Quantos vértices tem uma pirâmide de base quadrada?",
       "options": [
@@ -8546,6 +9247,7 @@
       "fact": "São quatro na base e o topo."
     },
     {
+      "id": "matematica-e-logica-702",
       "difficulty": "medium",
       "text": "Qual destes é um múltiplo de 9?",
       "options": [
@@ -8558,6 +9260,7 @@
       "fact": "Os algarismos somam 9."
     },
     {
+      "id": "matematica-e-logica-703",
       "difficulty": "medium",
       "text": "Qual destes é um múltiplo de 11?",
       "options": [
@@ -8570,6 +9273,7 @@
       "fact": "Ele é igual a 11 × 11."
     },
     {
+      "id": "matematica-e-logica-704",
       "difficulty": "medium",
       "text": "Qual destes números tem raiz quadrada exata?",
       "options": [
@@ -8582,6 +9286,7 @@
       "fact": "Ele é igual a 14 × 14."
     },
     {
+      "id": "matematica-e-logica-705",
       "difficulty": "medium",
       "text": "Que número multiplicado por ele mesmo dá 169?",
       "options": [
@@ -8594,6 +9299,7 @@
       "fact": "Essa conta é o 13 ao quadrado."
     },
     {
+      "id": "matematica-e-logica-706",
       "difficulty": "medium",
       "text": "Um número somado a 15 dá 40. Que número é?",
       "options": [
@@ -8606,6 +9312,7 @@
       "fact": "Basta fazer 40 menos 15."
     },
     {
+      "id": "matematica-e-logica-707",
       "difficulty": "medium",
       "text": "O triplo de um número é 45. Que número é?",
       "options": [
@@ -8618,6 +9325,7 @@
       "fact": "Basta dividir 45 por 3."
     },
     {
+      "id": "matematica-e-logica-708",
       "difficulty": "medium",
       "text": "A metade de um número é 26. Que número é?",
       "options": [
@@ -8630,6 +9338,7 @@
       "fact": "Basta multiplicar 26 por 2."
     },
     {
+      "id": "matematica-e-logica-709",
       "difficulty": "medium",
       "text": "Se x + 7 = 20, quanto vale x?",
       "options": [
@@ -8642,6 +9351,7 @@
       "fact": "Basta fazer 20 menos 7."
     },
     {
+      "id": "matematica-e-logica-710",
       "difficulty": "medium",
       "text": "Se 4x = 48, quanto vale x?",
       "options": [
@@ -8654,6 +9364,7 @@
       "fact": "Basta dividir 48 por 4."
     },
     {
+      "id": "matematica-e-logica-711",
       "difficulty": "medium",
       "text": "Se x − 9 = 16, quanto vale x?",
       "options": [
@@ -8666,6 +9377,7 @@
       "fact": "Basta somar 16 e 9."
     },
     {
+      "id": "matematica-e-logica-712",
       "difficulty": "medium",
       "text": "Se x/3 = 8, quanto vale x?",
       "options": [
@@ -8678,6 +9390,7 @@
       "fact": "Basta multiplicar 8 por 3."
     },
     {
+      "id": "matematica-e-logica-713",
       "difficulty": "medium",
       "text": "Uma receita pede 3 ovos para 12 biscoitos. Quantos ovos para 36 biscoitos?",
       "options": [
@@ -8690,6 +9403,7 @@
       "fact": "A receita fica três vezes maior."
     },
     {
+      "id": "matematica-e-logica-714",
       "difficulty": "medium",
       "text": "Num mapa, 1 cm são 50 km. Quantos km são 7 cm?",
       "options": [
@@ -8702,6 +9416,7 @@
       "fact": "Basta multiplicar 50 por 7."
     },
     {
+      "id": "matematica-e-logica-715",
       "difficulty": "medium",
       "text": "Um livro tem 240 páginas. Lendo 30 por dia, em quantos dias acaba?",
       "options": [
@@ -8714,6 +9429,7 @@
       "fact": "Basta dividir 240 por 30."
     },
     {
+      "id": "matematica-e-logica-716",
       "difficulty": "medium",
       "text": "Numa loja, um tênis custa R$ 150 à vista, ou 3 vezes de R$ 60. Quanto se paga a mais?",
       "options": [
@@ -8726,6 +9442,7 @@
       "fact": "Parcelado, o total é R$ 180."
     },
     {
+      "id": "matematica-e-logica-717",
       "difficulty": "medium",
       "text": "Em uma prova com 40 questões, alguém acertou 32. Qual foi a porcentagem?",
       "options": [
@@ -8738,6 +9455,7 @@
       "fact": "Oito décimos das questões foram acertados."
     },
     {
+      "id": "matematica-e-logica-718",
       "difficulty": "medium",
       "text": "Num grupo, 3 de cada 5 pessoas usam óculos. Qual é a porcentagem?",
       "options": [
@@ -8750,6 +9468,7 @@
       "fact": "Basta dividir 3 por 5."
     },
     {
+      "id": "matematica-e-logica-719",
       "difficulty": "medium",
       "text": "Uma mesa tem 6 lugares. Quantas mesas para 45 pessoas sentarem?",
       "options": [
@@ -8762,6 +9481,7 @@
       "fact": "Sete mesas só comportam 42 pessoas."
     },
     {
+      "id": "matematica-e-logica-720",
       "difficulty": "medium",
       "text": "Um elevador leva 8 pessoas. Quantas viagens para 50 pessoas?",
       "options": [
@@ -8774,6 +9494,7 @@
       "fact": "Seis viagens só levam 48 pessoas."
     },
     {
+      "id": "matematica-e-logica-721",
       "difficulty": "medium",
       "text": "Quantos dias vão de 15 de março até 15 de abril?",
       "options": [
@@ -8786,6 +9507,7 @@
       "fact": "Março tem 31 dias."
     },
     {
+      "id": "matematica-e-logica-722",
       "difficulty": "medium",
       "text": "Quantos dias tem um trimestre de janeiro a março, em ano comum?",
       "options": [
@@ -8798,6 +9520,7 @@
       "fact": "São 31, 28 e 31 dias."
     },
     {
+      "id": "matematica-e-logica-723",
       "difficulty": "medium",
       "text": "Qual é o valor de 5² − 4²?",
       "options": [
@@ -8810,6 +9533,7 @@
       "fact": "São 25 menos 16."
     },
     {
+      "id": "matematica-e-logica-724",
       "difficulty": "medium",
       "text": "Quanto é (2 + 3)²?",
       "options": [
@@ -8822,6 +9546,7 @@
       "fact": "Primeiro somamos, depois elevamos ao quadrado."
     },
     {
+      "id": "matematica-e-logica-725",
       "difficulty": "hard",
       "text": "Se um bilhete tem 1% de chance de ganhar, qual é a chance de perder 2 vezes seguidas?",
       "options": [
@@ -8834,6 +9559,7 @@
       "fact": "É 0,99 vezes 0,99."
     },
     {
+      "id": "matematica-e-logica-726",
       "difficulty": "hard",
       "text": "De quantas formas 5 livros podem ser arrumados em uma prateleira?",
       "options": [
@@ -8846,6 +9572,7 @@
       "fact": "É o fatorial de 5."
     },
     {
+      "id": "matematica-e-logica-727",
       "difficulty": "hard",
       "text": "Quantos números de 3 algarismos diferentes se formam com 1, 2 e 3?",
       "options": [
@@ -8858,6 +9585,7 @@
       "fact": "É o fatorial de 3."
     },
     {
+      "id": "matematica-e-logica-728",
       "difficulty": "hard",
       "text": "Qual é a chance de sair cara duas vezes seguidas em uma moeda?",
       "options": [
@@ -8870,6 +9598,7 @@
       "fact": "Basta multiplicar um meio por um meio."
     },
     {
+      "id": "matematica-e-logica-729",
       "difficulty": "hard",
       "text": "Qual é a chance de tirar um ás em um baralho de 52 cartas?",
       "options": [
@@ -8882,6 +9611,7 @@
       "fact": "Há 4 ases no baralho."
     },
     {
+      "id": "matematica-e-logica-730",
       "difficulty": "hard",
       "text": "Uma pizza de 40 cm tem quantas vezes a área de uma de 20 cm?",
       "options": [
@@ -8894,6 +9624,7 @@
       "fact": "A área depende do quadrado do raio."
     },
     {
+      "id": "matematica-e-logica-731",
       "difficulty": "hard",
       "text": "Se um quadrado aumenta o lado em 10%, quanto aumenta a área?",
       "options": [
@@ -8906,6 +9637,7 @@
       "fact": "O fator é 1,1 ao quadrado."
     },
     {
+      "id": "matematica-e-logica-732",
       "difficulty": "hard",
       "text": "Depois de 2 aumentos seguidos de 10%, qual é o aumento total?",
       "options": [
@@ -8918,6 +9650,7 @@
       "fact": "Os juros são compostos."
     },
     {
+      "id": "matematica-e-logica-733",
       "difficulty": "hard",
       "text": "Com juros de 100% ao ano, em quantos anos um valor fica 8 vezes maior?",
       "options": [
@@ -8930,6 +9663,7 @@
       "fact": "Ele dobra a cada ano."
     },
     {
+      "id": "matematica-e-logica-734",
       "difficulty": "hard",
       "text": "Qual é a soma dos ângulos internos de um octógono?",
       "options": [
@@ -8942,6 +9676,7 @@
       "fact": "A fórmula é (n − 2) × 180."
     },
     {
+      "id": "matematica-e-logica-735",
       "difficulty": "hard",
       "text": "Qual é o número de arestas de um icosaedro?",
       "options": [
@@ -8954,6 +9689,7 @@
       "fact": "Ele tem 20 faces e 12 vértices."
     },
     {
+      "id": "matematica-e-logica-736",
       "difficulty": "hard",
       "text": "Qual é o número de vértices de um dodecaedro?",
       "options": [
@@ -8966,6 +9702,7 @@
       "fact": "Ele tem 12 faces e 30 arestas."
     },
     {
+      "id": "matematica-e-logica-737",
       "difficulty": "hard",
       "text": "Que fórmula relaciona vértices, arestas e faces de um poliedro?",
       "options": [
@@ -8978,6 +9715,7 @@
       "fact": "A soma é V − A + F = 2."
     },
     {
+      "id": "matematica-e-logica-738",
       "difficulty": "easy",
       "text": "Quantos jogadores há em 3 times de 5 pessoas?",
       "options": [
@@ -8990,6 +9728,7 @@
       "fact": "Basta multiplicar 3 por 5."
     },
     {
+      "id": "matematica-e-logica-739",
       "difficulty": "easy",
       "text": "Quanto custam 2 sorvetes de R$ 9 e 1 água de R$ 4?",
       "options": [
@@ -9002,6 +9741,7 @@
       "fact": "São R$ 18 de sorvete e R$ 4 de água."
     },
     {
+      "id": "matematica-e-logica-740",
       "difficulty": "easy",
       "text": "Uma fita de 30 cm foi cortada em 3 partes iguais. Quanto mede cada parte?",
       "options": [
@@ -9014,6 +9754,7 @@
       "fact": "Basta dividir 30 por 3."
     },
     {
+      "id": "matematica-e-logica-741",
       "difficulty": "easy",
       "text": "Uma garrafa tem 2 litros. Quantos copos de 200 ml ela enche?",
       "options": [
@@ -9026,6 +9767,7 @@
       "fact": "Dois litros são 2.000 mililitros."
     },
     {
+      "id": "matematica-e-logica-742",
       "difficulty": "medium",
       "text": "Qual é o valor de 2³ + 3²?",
       "options": [
@@ -9038,6 +9780,7 @@
       "fact": "A conta soma 8 e 9, o que dá 17."
     },
     {
+      "id": "matematica-e-logica-743",
       "difficulty": "hard",
       "text": "Numa corrida com 8 atletas, de quantas formas se forma o pódio?",
       "options": [
@@ -9050,6 +9793,7 @@
       "fact": "A conta é 8 × 7 × 6, pois a ordem importa."
     },
     {
+      "id": "matematica-e-logica-744",
       "difficulty": "easy",
       "text": "Que nome tem o resultado de uma subtração?",
       "options": [
@@ -9062,6 +9806,7 @@
       "fact": "Em 10 menos 4, a diferença é 6."
     },
     {
+      "id": "matematica-e-logica-745",
       "difficulty": "easy",
       "text": "Como se chama o número de baixo em uma fração?",
       "options": [
@@ -9074,6 +9819,7 @@
       "fact": "Ele indica em quantas partes o inteiro foi dividido."
     },
     {
+      "id": "matematica-e-logica-746",
       "difficulty": "easy",
       "text": "Como se chama o número de cima em uma fração?",
       "options": [
@@ -9086,6 +9832,7 @@
       "fact": "Ele indica quantas partes foram tomadas."
     },
     {
+      "id": "matematica-e-logica-747",
       "difficulty": "easy",
       "text": "Que operação é o contrário da soma?",
       "options": [
@@ -9098,6 +9845,7 @@
       "fact": "Uma desfaz o que a outra faz."
     },
     {
+      "id": "matematica-e-logica-748",
       "difficulty": "easy",
       "text": "Que operação é o contrário da multiplicação?",
       "options": [
@@ -9110,6 +9858,7 @@
       "fact": "Por isso a divisão serve para conferir contas."
     },
     {
+      "id": "matematica-e-logica-749",
       "difficulty": "easy",
       "text": "Quantos centímetros tem uma régua escolar comum?",
       "options": [
@@ -9122,6 +9871,7 @@
       "fact": "As menores têm cerca de 15 cm."
     },
     {
+      "id": "matematica-e-logica-750",
       "difficulty": "easy",
       "text": "Quantos segundos há em 2 minutos?",
       "options": [
@@ -9134,6 +9884,7 @@
       "fact": "Cada minuto tem 60 segundos."
     },
     {
+      "id": "matematica-e-logica-751",
       "difficulty": "easy",
       "text": "Qual é o dobro de 1.000?",
       "options": [
@@ -9146,6 +9897,7 @@
       "fact": "Basta multiplicar por 2."
     },
     {
+      "id": "matematica-e-logica-752",
       "difficulty": "easy",
       "text": "Qual é a metade de 500?",
       "options": [
@@ -9158,6 +9910,7 @@
       "fact": "Basta dividir por 2."
     },
     {
+      "id": "matematica-e-logica-753",
       "difficulty": "medium",
       "text": "Qual é o resultado de 3 × 12?",
       "options": [
@@ -9170,6 +9923,7 @@
       "fact": "Três dúzias têm 36 unidades."
     },
     {
+      "id": "matematica-e-logica-754",
       "difficulty": "medium",
       "text": "Qual é o valor de 2 × (3 + 4)?",
       "options": [
@@ -9182,6 +9936,7 @@
       "fact": "Primeiro resolvemos o que está nos parênteses."
     },
     {
+      "id": "matematica-e-logica-755",
       "difficulty": "medium",
       "text": "Quanto é 1/2 + 1/2?",
       "options": [
@@ -9194,6 +9949,7 @@
       "fact": "Duas metades formam um inteiro."
     },
     {
+      "id": "matematica-e-logica-756",
       "difficulty": "medium",
       "text": "Quanto é 1/3 + 1/3?",
       "options": [
@@ -9206,6 +9962,7 @@
       "fact": "Os denominadores iguais são mantidos."
     },
     {
+      "id": "matematica-e-logica-757",
       "difficulty": "medium",
       "text": "Quanto é 0,5 × 8?",
       "options": [
@@ -9218,6 +9975,7 @@
       "fact": "Metade de oito é igual a quatro."
     },
     {
+      "id": "matematica-e-logica-758",
       "difficulty": "medium",
       "text": "Quanto é 7² − 1?",
       "options": [
@@ -9230,6 +9988,7 @@
       "fact": "Sete ao quadrado é igual a 49."
     },
     {
+      "id": "matematica-e-logica-759",
       "difficulty": "medium",
       "text": "Quantos graus tem cada ângulo de um triângulo equilátero?",
       "options": [
@@ -9242,6 +10001,7 @@
       "fact": "A soma dá 180 graus."
     },
     {
+      "id": "matematica-e-logica-760",
       "difficulty": "medium",
       "text": "Quantos graus tem cada ângulo de um quadrado?",
       "options": [
@@ -9254,6 +10014,7 @@
       "fact": "A soma dá 360 graus."
     },
     {
+      "id": "matematica-e-logica-761",
       "difficulty": "medium",
       "text": "Qual é o perímetro de um quadrado de lado 12?",
       "options": [
@@ -9266,6 +10027,7 @@
       "fact": "Basta multiplicar o lado por 4."
     },
     {
+      "id": "matematica-e-logica-762",
       "difficulty": "hard",
       "text": "Se um relógio atrasa 10 minutos por dia, quantos dias leva para atrasar 12 horas?",
       "options": [
@@ -9278,6 +10040,7 @@
       "fact": "São 720 minutos de atraso."
     },
     {
+      "id": "matematica-e-logica-763",
       "difficulty": "hard",
       "text": "Se um relógio parado mostra a hora certa, quantas vezes isso acontece por dia?",
       "options": [
@@ -9290,6 +10053,7 @@
       "fact": "Isso vale para um relógio de 12 horas."
     },
     {
+      "id": "matematica-e-logica-764",
       "difficulty": "hard",
       "text": "Em uma corrida com 8 atletas, quantos cumprimentos ocorrem se todos cumprimentam todos?",
       "options": [
@@ -9302,6 +10066,7 @@
       "fact": "É a combinação de 8 tomados 2 a 2."
     },
     {
+      "id": "matematica-e-logica-765",
       "difficulty": "hard",
       "text": "Quantas retas diferentes passam por 2 pontos?",
       "options": [
@@ -9314,6 +10079,7 @@
       "fact": "Dois pontos definem uma reta."
     },
     {
+      "id": "matematica-e-logica-766",
       "difficulty": "hard",
       "text": "Quantos planos diferentes passam por 3 pontos que não estão em linha?",
       "options": [
@@ -9326,6 +10092,7 @@
       "fact": "Por isso, um tripé nunca balança."
     },
     {
+      "id": "matematica-e-logica-767",
       "difficulty": "hard",
       "text": "Por que um tripé nunca balança?",
       "options": [
@@ -9338,6 +10105,7 @@
       "fact": "É a mesma ideia da mesa de três pés."
     },
     {
+      "id": "matematica-e-logica-768",
       "difficulty": "hard",
       "text": "Qual é a soma de dois números ímpares consecutivos, como 13 e 15?",
       "options": [
@@ -9350,6 +10118,7 @@
       "fact": "Essa soma é sempre um número par."
     },
     {
+      "id": "matematica-e-logica-769",
       "difficulty": "hard",
       "text": "Quantas faces tem um dodecaedro?",
       "options": [
@@ -9362,6 +10131,7 @@
       "fact": "Cada face é um pentágono."
     },
     {
+      "id": "matematica-e-logica-770",
       "difficulty": "impossible",
       "text": "Qual é o nome do primo que é 2 elevado a um primo, menos 1?",
       "options": [
@@ -9376,6 +10146,7 @@
       "fact": "Os maiores primos conhecidos têm esse formato."
     },
     {
+      "id": "matematica-e-logica-771",
       "difficulty": "impossible",
       "text": "Qual é o oitavo número da sequência de Fibonacci?",
       "options": [
@@ -9390,6 +10161,7 @@
       "fact": "A sequência começa em 1 e 1."
     },
     {
+      "id": "matematica-e-logica-772",
       "difficulty": "impossible",
       "text": "Qual é a décima casa decimal de π?",
       "options": [
@@ -9404,6 +10176,7 @@
       "fact": "Os dez primeiros decimais são 1415926535."
     },
     {
+      "id": "matematica-e-logica-773",
       "difficulty": "impossible",
       "text": "Em que século René Descartes publicou \"A Geometria\"?",
       "options": [
@@ -9418,6 +10191,7 @@
       "fact": "A obra saiu em 1637."
     },
     {
+      "id": "matematica-e-logica-774",
       "difficulty": "hard",
       "text": "Que matemático grego calculou o raio da Terra usando sombras?",
       "options": [
@@ -9430,6 +10204,7 @@
       "fact": "Ele chegou perto do valor correto no século III a.C."
     },
     {
+      "id": "matematica-e-logica-775",
       "difficulty": "impossible",
       "text": "Quantos subconjuntos tem um conjunto de 10 elementos?",
       "options": [

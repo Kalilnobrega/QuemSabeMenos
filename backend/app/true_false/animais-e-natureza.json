@@ -2,564 +2,658 @@
   "theme": "Animais e natureza",
   "statements": [
     {
+      "id": "vf-animais-e-natureza-1",
       "difficulty": "medium",
       "text": "Os morcegos são mamíferos.",
       "answer": true,
       "fact": "Os morcegos são os únicos mamíferos capazes de voar de verdade, batendo as asas."
     },
     {
+      "id": "vf-animais-e-natureza-2",
       "difficulty": "medium",
       "text": "A baleia é um peixe.",
       "answer": false,
       "fact": "A baleia é um mamífero: respira por pulmões, tem sangue quente e amamenta os filhotes."
     },
     {
+      "id": "vf-animais-e-natureza-3",
       "difficulty": "hard",
       "text": "O polvo tem um único coração.",
       "answer": false,
       "fact": "O polvo tem três corações e sangue azul, por causa de uma proteína com cobre."
     },
     {
+      "id": "vf-animais-e-natureza-4",
       "difficulty": "medium",
       "text": "Os morcegos são os únicos mamíferos que voam de verdade.",
       "answer": true,
       "fact": "O esquilo-voador apenas plana."
     },
     {
+      "id": "vf-animais-e-natureza-5",
       "difficulty": "medium",
       "text": "Todas as cobras são venenosas.",
       "answer": false,
       "fact": "Há cerca de 4 mil espécies, e só cerca de 600 são venenosas."
     },
     {
+      "id": "vf-animais-e-natureza-6",
       "difficulty": "medium",
       "text": "O ornitorrinco é um mamífero que bota ovos.",
       "answer": true,
       "fact": "Ele também tem bico e esporão venenoso."
     },
     {
+      "id": "vf-animais-e-natureza-7",
       "difficulty": "medium",
       "text": "A aranha é um inseto.",
       "answer": false,
       "fact": "A aranha é um aracnídeo, com oito patas."
     },
     {
+      "id": "vf-animais-e-natureza-8",
       "difficulty": "medium",
       "text": "Os golfinhos respiram por pulmões.",
       "answer": true,
       "fact": "Eles sobem à superfície para buscar ar."
     },
     {
+      "id": "vf-animais-e-natureza-9",
       "difficulty": "medium",
       "text": "Os tubarões são mamíferos.",
       "answer": false,
       "fact": "Tubarões são peixes cartilaginosos."
     },
     {
+      "id": "vf-animais-e-natureza-10",
       "difficulty": "medium",
       "text": "O camaleão consegue mover cada olho separadamente.",
       "answer": true,
       "fact": "Ele pode olhar para duas direções diferentes."
     },
     {
+      "id": "vf-animais-e-natureza-11",
       "difficulty": "medium",
       "text": "As corujas só conseguem enxergar de dia.",
       "answer": false,
       "fact": "Elas têm ótima visão noturna."
     },
     {
+      "id": "vf-animais-e-natureza-12",
       "difficulty": "medium",
       "text": "O pinguim é uma ave.",
       "answer": true,
       "fact": "Ele tem penas e bota ovos, mas não voa."
     },
     {
+      "id": "vf-animais-e-natureza-13",
       "difficulty": "medium",
       "text": "Os pinguins vivem no Ártico.",
       "answer": false,
       "fact": "Eles vivem quase todos no Hemisfério Sul."
     },
     {
+      "id": "vf-animais-e-natureza-14",
       "difficulty": "medium",
       "text": "Os ursos-polares vivem no Hemisfério Norte.",
       "answer": true,
       "fact": "Eles não encontram pinguins na natureza."
     },
     {
+      "id": "vf-animais-e-natureza-15",
       "difficulty": "medium",
       "text": "A corcova do camelo guarda água.",
       "answer": false,
       "fact": "Ela guarda gordura."
     },
     {
+      "id": "vf-animais-e-natureza-16",
       "difficulty": "medium",
       "text": "O beija-flor consegue voar para trás.",
       "answer": true,
       "fact": "Ele é a única ave com essa capacidade."
     },
     {
+      "id": "vf-animais-e-natureza-17",
       "difficulty": "medium",
       "text": "A avestruz enterra a cabeça na areia quando sente medo.",
       "answer": false,
       "fact": "Isso é um mito, ela se abaixa para vigiar ovos ou se esconder."
     },
     {
+      "id": "vf-animais-e-natureza-18",
       "difficulty": "medium",
       "text": "O leão vive em grupos chamados bandos.",
       "answer": true,
       "fact": "É o único felino realmente social."
     },
     {
+      "id": "vf-animais-e-natureza-19",
       "difficulty": "medium",
       "text": "As baleias são peixes.",
       "answer": false,
       "fact": "As baleias são mamíferos e amamentam os filhotes."
     },
     {
+      "id": "vf-animais-e-natureza-20",
       "difficulty": "medium",
       "text": "O sapo começa a vida como um girino.",
       "answer": true,
       "fact": "Ele passa por uma metamorfose até ficar adulto."
     },
     {
+      "id": "vf-animais-e-natureza-21",
       "difficulty": "medium",
       "text": "As borboletas nascem já com asas.",
       "answer": false,
       "fact": "Elas passam primeiro pela fase de lagarta."
     },
     {
+      "id": "vf-animais-e-natureza-22",
       "difficulty": "medium",
       "text": "As abelhas operárias são fêmeas.",
       "answer": true,
       "fact": "Os machos são os zangões, que não têm ferrão."
     },
     {
+      "id": "vf-animais-e-natureza-23",
       "difficulty": "medium",
       "text": "Os ratos preferem queijo a qualquer alimento.",
       "answer": false,
       "fact": "Essa ideia é mais dos desenhos, e eles preferem grãos e doces."
     },
     {
+      "id": "vf-animais-e-natureza-24",
       "difficulty": "medium",
       "text": "O cavalo-marinho macho gesta os filhotes.",
       "answer": true,
       "fact": "A fêmea deposita os ovos na bolsa dele."
     },
     {
+      "id": "vf-animais-e-natureza-25",
       "difficulty": "medium",
       "text": "O elefante é o animal mais alto do mundo.",
       "answer": false,
       "fact": "A girafa é o animal mais alto."
     },
     {
+      "id": "vf-animais-e-natureza-26",
       "difficulty": "medium",
       "text": "A onça-pintada é o maior felino das Américas.",
       "answer": true,
       "fact": "Ela vive do sul dos EUA até a Argentina."
     },
     {
+      "id": "vf-animais-e-natureza-27",
       "difficulty": "medium",
       "text": "O tigre vive na África.",
       "answer": false,
       "fact": "Os tigres selvagens vivem só na Ásia."
     },
     {
+      "id": "vf-animais-e-natureza-28",
       "difficulty": "medium",
       "text": "O canguru vive na Oceania.",
       "answer": true,
       "fact": "Ele é símbolo da Austrália."
     },
     {
+      "id": "vf-animais-e-natureza-29",
       "difficulty": "medium",
       "text": "O urso-panda é carnívoro por hábito alimentar.",
       "answer": false,
       "fact": "Mesmo com sistema digestivo de carnívoro, ele come bambu quase o tempo todo."
     },
     {
+      "id": "vf-animais-e-natureza-30",
       "difficulty": "medium",
       "text": "A preguiça desce das árvores para fazer as necessidades.",
       "answer": true,
       "fact": "Isso acontece cerca de uma vez por semana."
     },
     {
+      "id": "vf-animais-e-natureza-31",
       "difficulty": "medium",
       "text": "Todo camaleão muda de cor só para se esconder.",
       "answer": false,
       "fact": "A cor muda sobretudo para se comunicar e regular a temperatura."
     },
     {
+      "id": "vf-animais-e-natureza-32",
       "difficulty": "medium",
       "text": "O Pantanal é a maior planície alagada do mundo.",
       "answer": true,
       "fact": "Ele fica no Brasil, na Bolívia e no Paraguai."
     },
     {
+      "id": "vf-animais-e-natureza-33",
       "difficulty": "medium",
       "text": "A Caatinga fica no Sul do Brasil.",
       "answer": false,
       "fact": "A Caatinga fica no Nordeste e no norte de Minas."
     },
     {
+      "id": "vf-animais-e-natureza-34",
       "difficulty": "medium",
       "text": "A Caatinga é o único bioma exclusivamente brasileiro.",
       "answer": true,
       "fact": "Sua fauna e flora se adaptaram à seca."
     },
     {
+      "id": "vf-animais-e-natureza-35",
       "difficulty": "medium",
       "text": "A Amazônia fica em apenas um país.",
       "answer": false,
       "fact": "Ela se estende por nove países."
     },
     {
+      "id": "vf-animais-e-natureza-36",
       "difficulty": "medium",
       "text": "O rio Amazonas é o mais volumoso do mundo.",
       "answer": true,
       "fact": "Ele sozinho despeja cerca de 20% da água doce que chega aos oceanos."
     },
     {
+      "id": "vf-animais-e-natureza-37",
       "difficulty": "medium",
       "text": "O Everest é a montanha mais alta do Brasil.",
       "answer": false,
       "fact": "O ponto mais alto do Brasil é o Pico da Neblina."
     },
     {
+      "id": "vf-animais-e-natureza-38",
       "difficulty": "medium",
       "text": "Os corais são animais.",
       "answer": true,
       "fact": "Eles são pequenos pólipos que formam colônias."
     },
     {
+      "id": "vf-animais-e-natureza-39",
       "difficulty": "medium",
       "text": "Os cogumelos são plantas.",
       "answer": false,
       "fact": "Os cogumelos são fungos."
     },
     {
+      "id": "vf-animais-e-natureza-40",
       "difficulty": "medium",
       "text": "A maior parte da água doce da Terra está em forma de gelo.",
       "answer": true,
       "fact": "Cerca de 69% da água doce está em geleiras e no gelo polar."
     },
     {
+      "id": "vf-animais-e-natureza-41",
       "difficulty": "medium",
       "text": "Um raio nunca cai duas vezes no mesmo lugar.",
       "answer": false,
       "fact": "O Empire State Building leva cerca de 20 raios por ano."
     },
     {
+      "id": "vf-animais-e-natureza-42",
       "difficulty": "medium",
       "text": "A Antártida é considerada um deserto.",
       "answer": true,
       "fact": "Chove e neva muito pouco por lá."
     },
     {
+      "id": "vf-animais-e-natureza-43",
       "difficulty": "medium",
       "text": "O Saara é o maior deserto do mundo.",
       "answer": false,
       "fact": "O maior é a Antártida, e o Saara é o maior deserto quente."
     },
     {
+      "id": "vf-animais-e-natureza-44",
       "difficulty": "medium",
       "text": "O vulcão Vesúvio destruiu Pompeia.",
       "answer": true,
       "fact": "A erupção foi no ano 79."
     },
     {
+      "id": "vf-animais-e-natureza-45",
       "difficulty": "medium",
       "text": "Os dinossauros e os humanos viveram na mesma época.",
       "answer": false,
       "fact": "Os dinossauros não aviários sumiram 66 milhões de anos antes."
     },
     {
+      "id": "vf-animais-e-natureza-46",
       "difficulty": "hard",
       "text": "O polvo tem o sangue azul.",
       "answer": true,
       "fact": "O cobre da hemocianina dá essa cor."
     },
     {
+      "id": "vf-animais-e-natureza-47",
       "difficulty": "hard",
       "text": "O falcão-peregrino é a ave mais rápida apenas na horizontal.",
       "answer": false,
       "fact": "Ele é mais rápido em mergulho, chegando a cerca de 390 km/h."
     },
     {
+      "id": "vf-animais-e-natureza-48",
       "difficulty": "hard",
       "text": "O coala tem impressões digitais parecidas com as dos humanos.",
       "answer": true,
       "fact": "São tão parecidas que já confundiram peritos."
     },
     {
+      "id": "vf-animais-e-natureza-49",
       "difficulty": "hard",
       "text": "A língua da baleia-azul pesa menos que um boi.",
       "answer": false,
       "fact": "Ela pode pesar mais de 2 toneladas, como um elefante pequeno."
     },
     {
+      "id": "vf-animais-e-natureza-50",
       "difficulty": "hard",
       "text": "Os tubarões existem há mais tempo que as árvores.",
       "answer": true,
       "fact": "Tubarões têm mais de 400 milhões de anos."
     },
     {
+      "id": "vf-animais-e-natureza-51",
       "difficulty": "hard",
       "text": "O tubarão-da-groenlândia vive no máximo 50 anos.",
       "answer": false,
       "fact": "Ele pode viver cerca de 400 anos."
     },
     {
+      "id": "vf-animais-e-natureza-52",
       "difficulty": "hard",
       "text": "Os vombates fazem cocô em forma de cubo.",
       "answer": true,
       "fact": "Isso ajuda a marcar território sem que role."
     },
     {
+      "id": "vf-animais-e-natureza-53",
       "difficulty": "hard",
       "text": "A pele do urso-polar é branca.",
       "answer": false,
       "fact": "A pele é preta, e o pelo é transparente."
     },
     {
+      "id": "vf-animais-e-natureza-54",
       "difficulty": "hard",
       "text": "Os flamingos nascem cinzentos.",
       "answer": true,
       "fact": "A cor rosa aparece com os pigmentos do que eles comem."
     },
     {
+      "id": "vf-animais-e-natureza-55",
       "difficulty": "hard",
       "text": "A pantera-negra é uma espécie própria.",
       "answer": false,
       "fact": "Ela é uma onça ou um leopardo com excesso de melanina."
     },
     {
+      "id": "vf-animais-e-natureza-56",
       "difficulty": "hard",
       "text": "A água-viva Turritopsis dohrnii pode rejuvenescer.",
       "answer": true,
       "fact": "Ela pode voltar ao estágio de pólipo."
     },
     {
+      "id": "vf-animais-e-natureza-57",
       "difficulty": "hard",
       "text": "Polvos têm apenas um coração.",
       "answer": false,
       "fact": "Eles têm três corações."
     },
     {
+      "id": "vf-animais-e-natureza-58",
       "difficulty": "hard",
       "text": "Um tardígrado pode sobreviver no vácuo do espaço.",
       "answer": true,
       "fact": "Em 2007, eles foram levados à órbita em um experimento."
     },
     {
+      "id": "vf-animais-e-natureza-59",
       "difficulty": "hard",
       "text": "Girafas têm mais vértebras no pescoço do que os humanos.",
       "answer": false,
       "fact": "As duas espécies têm sete."
     },
     {
+      "id": "vf-animais-e-natureza-60",
       "difficulty": "hard",
       "text": "O bico do tucano ajuda a regular a temperatura do corpo.",
       "answer": true,
       "fact": "Ele pode liberar até 60% do calor corporal."
     },
     {
+      "id": "vf-animais-e-natureza-61",
       "difficulty": "hard",
       "text": "O gato enxerga na escuridão total.",
       "answer": false,
       "fact": "Ele precisa de um pouco de luz, mas precisa de bem menos que nós."
     },
     {
+      "id": "vf-animais-e-natureza-62",
       "difficulty": "hard",
       "text": "O canto dos machos das baleias-jubarte muda com o tempo.",
       "answer": true,
       "fact": "As canções se espalham pelos grupos como modas."
     },
     {
+      "id": "vf-animais-e-natureza-63",
       "difficulty": "hard",
       "text": "O dodô era uma ave do Brasil.",
       "answer": false,
       "fact": "Ele vivia nas ilhas Maurício."
     },
     {
+      "id": "vf-animais-e-natureza-64",
       "difficulty": "hard",
       "text": "Os emus derrotaram soldados australianos em 1932.",
       "answer": true,
       "fact": "A \"Guerra dos Emus\" terminou sem controlar as aves."
     },
     {
+      "id": "vf-animais-e-natureza-65",
       "difficulty": "hard",
       "text": "A bexiga natatória é comum em todos os tubarões.",
       "answer": false,
       "fact": "Tubarões não têm esse órgão e usam o fígado para boiar."
     },
     {
+      "id": "vf-animais-e-natureza-66",
       "difficulty": "hard",
       "text": "O elefante é um dos poucos animais que se reconhecem no espelho.",
       "answer": true,
       "fact": "O teste foi feito por cientistas em 2006."
     },
     {
+      "id": "vf-animais-e-natureza-67",
       "difficulty": "hard",
       "text": "O megalodon ainda vive em alto-mar.",
       "answer": false,
       "fact": "Ele foi extinto há cerca de 3,6 milhões de anos."
     },
     {
+      "id": "vf-animais-e-natureza-68",
       "difficulty": "hard",
       "text": "As aves descendem dos dinossauros.",
       "answer": true,
       "fact": "Elas são consideradas dinossauros terópodes vivos."
     },
     {
+      "id": "vf-animais-e-natureza-69",
       "difficulty": "hard",
       "text": "O Tiranossauro rex viveu no Jurássico.",
       "answer": false,
       "fact": "Ele viveu no Cretáceo, há cerca de 68 milhões de anos."
     },
     {
+      "id": "vf-animais-e-natureza-70",
       "difficulty": "hard",
       "text": "O bambu é uma espécie de grama.",
       "answer": true,
       "fact": "Ele pertence à mesma família do trigo e do arroz."
     },
     {
+      "id": "vf-animais-e-natureza-71",
       "difficulty": "hard",
       "text": "A vitória-régia é uma planta do deserto.",
       "answer": false,
       "fact": "Ela é uma planta aquática da Amazônia."
     },
     {
+      "id": "vf-animais-e-natureza-72",
       "difficulty": "hard",
       "text": "O ginkgo sobreviveu perto do local da bomba de Hiroshima.",
       "answer": true,
       "fact": "Alguns continuam vivos na cidade."
     },
     {
+      "id": "vf-animais-e-natureza-73",
       "difficulty": "hard",
       "text": "A sequoia é a maior flor do mundo.",
       "answer": false,
       "fact": "A sequoia é uma árvore, e a rafflesia é a maior flor."
     },
     {
+      "id": "vf-animais-e-natureza-74",
       "difficulty": "hard",
       "text": "A castanheira-do-pará depende de abelhas e cotias para se reproduzir.",
       "answer": true,
       "fact": "As cotias enterram as sementes."
     },
     {
+      "id": "vf-animais-e-natureza-75",
       "difficulty": "hard",
       "text": "A fotossíntese ocorre na raiz das plantas.",
       "answer": false,
       "fact": "Ela acontece principalmente nas folhas."
     },
     {
+      "id": "vf-animais-e-natureza-76",
       "difficulty": "hard",
       "text": "Em 1883, a explosão do Krakatoa foi ouvida a milhares de quilômetros.",
       "answer": true,
       "fact": "O estrondo foi ouvido a cerca de 4.800 km de distância."
     },
     {
+      "id": "vf-animais-e-natureza-77",
       "difficulty": "hard",
       "text": "O maior terremoto registrado aconteceu no Japão.",
       "answer": false,
       "fact": "Foi em Valdivia, no Chile, em 1960."
     },
     {
+      "id": "vf-animais-e-natureza-78",
       "difficulty": "hard",
       "text": "O lago Baikal contém cerca de um quinto da água doce líquida da superfície do planeta.",
       "answer": true,
       "fact": "Ele fica na Rússia."
     },
     {
+      "id": "vf-animais-e-natureza-79",
       "difficulty": "hard",
       "text": "O Mar Morto fica acima do nível do mar.",
       "answer": false,
       "fact": "Ele fica cerca de 430 metros abaixo."
     },
     {
+      "id": "vf-animais-e-natureza-80",
       "difficulty": "hard",
       "text": "O monte Mauna Kea supera o Everest se contado da base no fundo do mar.",
       "answer": true,
       "fact": "Ele tem mais de 10 mil metros no total."
     },
     {
+      "id": "vf-animais-e-natureza-81",
       "difficulty": "hard",
       "text": "A escala Fujita classifica tornados.",
       "answer": true,
       "fact": "Ela leva o nome do meteorologista Tetsuya Fujita."
     },
     {
+      "id": "vf-animais-e-natureza-82",
       "difficulty": "hard",
       "text": "A camada de ozônio protege a Terra contra terremotos.",
       "answer": false,
       "fact": "Ela filtra parte da radiação ultravioleta do Sol."
     },
     {
+      "id": "vf-animais-e-natureza-83",
       "difficulty": "hard",
       "text": "O buraco na camada de ozônio começou a se recuperar após o Protocolo de Montreal.",
       "answer": true,
       "fact": "A ONU estima a recuperação até meados deste século."
     },
     {
+      "id": "vf-animais-e-natureza-84",
       "difficulty": "hard",
       "text": "O animal com a mordida mais forte conhecida é um crocodilo.",
       "answer": true,
       "fact": "O crocodilo-de-água-salgada supera qualquer outro animal medido."
     },
     {
+      "id": "vf-animais-e-natureza-85",
       "difficulty": "hard",
       "text": "Os elefantes têm medo real de ratos, como mostram os desenhos.",
       "answer": false,
       "fact": "Não há nenhuma evidência de que tenham esse medo."
     },
     {
+      "id": "vf-animais-e-natureza-86",
       "difficulty": "hard",
       "text": "Os cães conseguem cheirar mudanças no açúcar do sangue das pessoas.",
       "answer": true,
       "fact": "Alguns são treinados para alertar diabéticos."
     },
     {
+      "id": "vf-animais-e-natureza-87",
       "difficulty": "medium",
       "text": "O canguru macho não tem bolsa.",
       "answer": true,
       "fact": "Só as fêmeas carregam os filhotes na bolsa."
     },
     {
+      "id": "vf-animais-e-natureza-88",
       "difficulty": "medium",
       "text": "O tatu é um tipo de réptil.",
       "answer": false,
       "fact": "Ele é um mamífero com carapaça."
     },
     {
+      "id": "vf-animais-e-natureza-89",
       "difficulty": "medium",
       "text": "As baleias respiram por brânquias.",
       "answer": false,
       "fact": "Elas são mamíferos e têm pulmões."
     },
     {
+      "id": "vf-animais-e-natureza-90",
       "difficulty": "medium",
       "text": "O mico-leão-dourado vive na Mata Atlântica.",
       "answer": true,
       "fact": "A espécie quase foi extinta nos anos 1970."
     },
     {
+      "id": "vf-animais-e-natureza-91",
       "difficulty": "hard",
       "text": "Os polvos têm três corações.",
       "answer": true,
       "fact": "Dois deles levam sangue às brânquias."
     },
     {
+      "id": "vf-animais-e-natureza-92",
       "difficulty": "hard",
       "text": "As hienas-malhadas só comem restos deixados por outros animais.",
       "answer": false,
       "fact": "Na verdade, elas caçam boa parte do alimento."
     },
     {
+      "id": "vf-animais-e-natureza-93",
       "difficulty": "hard",
       "text": "O macho do cavalo-marinho carrega os filhotes.",
       "answer": true,
       "fact": "A fêmea deposita os ovos em uma bolsa dele."
     },
     {
+      "id": "vf-animais-e-natureza-94",
       "difficulty": "hard",
       "text": "O camaleão muda de cor apenas para se esconder.",
       "answer": false,
