@@ -2905,6 +2905,139 @@
       "answer": 400,
       "unit": "metros",
       "fact": "Cada atleta corre 100 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos dura cada tempo de um jogo de futsal?",
+      "answer": 20,
+      "unit": "minutos",
+      "fact": "No futsal, o relógio para quando a bola sai."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos tem a prorrogação no futebol, somando os dois tempos?",
+      "answer": 30,
+      "unit": "minutos",
+      "fact": "Se o empate continuar, a decisão vai para os pênaltis."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pênaltis cada time cobra numa disputa, antes das cobranças alternadas?",
+      "answer": 5,
+      "unit": "pênaltis",
+      "fact": "Se empatar, cada time cobra um por vez até alguém errar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas substituições cada time pode fazer num jogo de futebol oficial, hoje?",
+      "answer": 5,
+      "unit": "substituições",
+      "fact": "Antes da pandemia, o limite era de três trocas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos cartões amarelos no mesmo jogo levam à expulsão?",
+      "answer": 2,
+      "unit": "cartões",
+      "fact": "O segundo amarelo vira vermelho na hora."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos pontos vale uma vitória no Brasileirão?",
+      "answer": 3,
+      "unit": "pontos",
+      "fact": "O empate vale um ponto para cada time."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos times disputam a Série A do Brasileirão?",
+      "answer": 20,
+      "unit": "times",
+      "fact": "Todos jogam contra todos, em turno e returno."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas rodadas tem a Série A do Brasileirão?",
+      "answer": 38,
+      "unit": "rodadas",
+      "fact": "Cada time joga duas vezes contra cada adversário."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos times caem da Série A para a Série B a cada ano?",
+      "answer": 4,
+      "unit": "times",
+      "fact": "Os quatro melhores da Série B sobem no lugar deles."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas seleções disputaram a Copa do Mundo de 2022?",
+      "answer": 32,
+      "unit": "seleções",
+      "fact": "Foi a primeira Copa disputada no fim do ano."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas seleções vão disputar a Copa do Mundo de 2026?",
+      "answer": 48,
+      "unit": "seleções",
+      "fact": "A Copa será nos Estados Unidos, no Canadá e no México."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogos cada seleção faz na fase de grupos da Copa do Mundo?",
+      "answer": 3,
+      "unit": "jogos",
+      "fact": "Os melhores de cada grupo avançam para o mata-mata."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de comprimento tem um campo de futebol oficial, aproximadamente?",
+      "answer": 105,
+      "unit": "metros",
+      "fact": "A largura padrão é de 68 metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos dura cada round de uma luta de boxe profissional?",
+      "answer": 3,
+      "unit": "minutos",
+      "fact": "Entre os rounds há um minuto de descanso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos jogadores de cada time ficam em campo no futebol society?",
+      "answer": 7,
+      "unit": "jogadores",
+      "fact": "O campo de society é bem menor que o de futebol."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo a Argentina já ganhou?",
+      "answer": 3,
+      "unit": "Copas",
+      "fact": "A última foi em 2022, no Catar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo a Alemanha já ganhou?",
+      "answer": 4,
+      "unit": "Copas",
+      "fact": "A última foi em 2014, no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilômetros tem uma meia maratona, aproximadamente?",
+      "answer": 21,
+      "unit": "km",
+      "fact": "É exatamente a metade da distância de uma maratona."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes o Brasil foi vice-campeão da Copa do Mundo?",
+      "answer": 2,
+      "unit": "vezes",
+      "fact": "As derrotas nas finais foram para o Uruguai e para a França."
     }
   ]
 }

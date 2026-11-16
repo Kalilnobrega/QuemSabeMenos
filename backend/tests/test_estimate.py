@@ -46,8 +46,8 @@ def test_bank_has_numeric_questions_at_every_level_in_every_theme():
     assert len({q.id for q in bank}) == len(bank)
     themes = {q.theme for q in bank}
     assert len(themes) == 14
-    # Depois da revisão de 2026-11-15, as fáceis ficaram com o que dá para chutar perto sem saber.
-    minimum = {"easy": 35, "medium": 100, "hard": 100}
+    # Depois da revisão de 2026-11-15, as fáceis ficaram com o que dá para chutar perto sem saber, e foram repostas.
+    minimum = {"easy": 80, "medium": 100, "hard": 100}
     for t in themes:
         assert all(sum(1 for q in bank if q.theme == t and q.difficulty == d) >= n for d, n in minimum.items())
 

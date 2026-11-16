@@ -2910,6 +2910,118 @@
       "answer": 60,
       "unit": "TB",
       "fact": "Eles custam milhares de dólares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas a bateria de um celular comum dura com uso normal, aproximadamente?",
+      "answer": 24,
+      "unit": "horas",
+      "fact": "Brilho alto e jogos gastam a bateria mais rápido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas polegadas tem a tela de um celular comum hoje, aproximadamente?",
+      "answer": 6.5,
+      "unit": "polegadas",
+      "fact": "Os primeiros smartphones tinham telas de menos de 4 polegadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas polegadas tem a tela de um notebook comum?",
+      "answer": 15,
+      "unit": "polegadas",
+      "fact": "Modelos menores e mais leves costumam ter 13 ou 14 polegadas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um celular comum, aproximadamente?",
+      "answer": 190,
+      "unit": "gramas",
+      "fact": "Celulares maiores e com bateria grande passam de 220 gramas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem o código de verificação que chega por SMS, em geral?",
+      "answer": 6,
+      "unit": "dígitos",
+      "fact": "Nunca passe esse código para ninguém."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Windows 11?",
+      "answer": 2021,
+      "scale": 50,
+      "fact": "Ele trouxe o botão Iniciar no meio da barra de tarefas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o iPhone 15?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Foi o primeiro iPhone com entrada USB-C."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano foi lançado o Threads, a rede social da Meta?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele ganhou milhões de contas nos primeiros dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano o Orkut foi desligado?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "O Orkut foi muito popular no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um cabo de carregador de celular comum?",
+      "answer": 100,
+      "unit": "cm",
+      "fact": "Cabos de dois metros também são vendidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia o brasileiro passa no celular, em média, segundo pesquisas?",
+      "answer": 5,
+      "unit": "horas",
+      "fact": "O Brasil aparece entre os países que mais usam o celular."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De quantos em quantos anos o brasileiro troca de celular, em média?",
+      "answer": 3,
+      "unit": "anos",
+      "fact": "Bateria fraca é um dos motivos mais comuns da troca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos chips cabem num celular dual chip?",
+      "answer": 2,
+      "unit": "chips",
+      "fact": "Muitos celulares novos também aceitam o chip virtual, o eSIM."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem um número de celular brasileiro, sem o DDD?",
+      "answer": 9,
+      "unit": "dígitos",
+      "fact": "O nono dígito, o 9 da frente, foi adicionado aos poucos a partir de 2012."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas barras de sinal aparecem no celular, no máximo, em geral?",
+      "answer": 4,
+      "unit": "barras",
+      "fact": "Cada vez mais celulares mostram também o 5G."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos uma foto fica na tela num story do Instagram?",
+      "answer": 5,
+      "unit": "segundos",
+      "fact": "Os vídeos podem durar mais tempo."
     }
   ]
 }

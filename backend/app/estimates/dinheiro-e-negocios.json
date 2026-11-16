@@ -2913,6 +2913,198 @@
       "answer": 10,
       "unit": "bilhões",
       "fact": "Basta dividir por 100."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais custava a passagem de ônibus municipal em São Paulo em 2025?",
+      "answer": 5,
+      "unit": "reais",
+      "fact": "Estudantes de baixa renda podem andar de graça."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias úteis tem um mês, em média?",
+      "answer": 22,
+      "unit": "dias",
+      "fact": "Feriados podem tirar alguns dias dessa conta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos salários por ano recebe um trabalhador CLT, contando o 13º?",
+      "answer": 13,
+      "unit": "salários",
+      "fact": "Nas férias, ele ainda ganha um terço a mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas moedas diferentes de real estão em circulação?",
+      "answer": 6,
+      "unit": "moedas",
+      "fact": "São as de 1, 5, 10, 25 e 50 centavos e a de 1 real."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota que tem a onça-pintada?",
+      "answer": 50,
+      "unit": "reais",
+      "fact": "Cada nota do real traz um animal da fauna brasileira."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota que tem o mico-leão-dourado?",
+      "answer": 20,
+      "unit": "reais",
+      "fact": "O mico-leão-dourado só existe na Mata Atlântica."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias tem o mês comercial, usado nas contas de juros?",
+      "answer": 30,
+      "unit": "dias",
+      "fact": "Usar sempre o mesmo número de dias facilita as contas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em quantas parcelas sem juros as lojas costumam parcelar, no máximo?",
+      "answer": 10,
+      "unit": "parcelas",
+      "fact": "Compras grandes às vezes chegam a 12 parcelas sem juros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem a senha de cartão de banco, em geral?",
+      "answer": 4,
+      "unit": "dígitos",
+      "fact": "Errar a senha algumas vezes seguidas bloqueia o cartão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Por quantos anos vale um cartão de crédito, em geral?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "A data de validade vem impressa no cartão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos zeros tem 1 milhão?",
+      "answer": 6,
+      "unit": "zeros",
+      "fact": "Um milhão de reais em notas de 100 pesa cerca de 10 quilos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias de licença-paternidade a CLT garante, no padrão?",
+      "answer": 5,
+      "unit": "dias",
+      "fact": "Empresas do programa Empresa Cidadã dão 20 dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos, em geral, o homem pode se aposentar por idade no Brasil, depois da reforma de 2019?",
+      "answer": 65,
+      "unit": "anos",
+      "fact": "Para as mulheres, a idade mínima é de 62 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem o logotipo do Banco do Brasil?",
+      "answer": 2,
+      "unit": "cores",
+      "fact": "O amarelo e o azul viraram marca registrada do banco."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centavos tem um euro?",
+      "answer": 100,
+      "unit": "centavos",
+      "fact": "As moedas de euro têm um lado diferente em cada país."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Até que dia útil do mês o salário deve ser pago, pela CLT?",
+      "answer": 5,
+      "unit": "º dia útil",
+      "fact": "O salário é do mês anterior."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Até que dia de novembro deve ser paga a primeira parcela do 13º salário?",
+      "answer": 30,
+      "fact": "Ela também pode ser adiantada junto com as férias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um shopping costuma ficar aberto, de segunda a sábado?",
+      "answer": 12,
+      "unit": "horas",
+      "fact": "Aos domingos, o horário costuma ser menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A que horas as agências bancárias costumam abrir?",
+      "answer": 10,
+      "unit": "horas",
+      "fact": "Elas costumam fechar às 16 horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que mês do ano acontece a Black Friday?",
+      "answer": 11,
+      "fact": "Ela cai na última sexta-feira do mês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quanto rende a poupança por mês, aproximadamente, em %?",
+      "answer": 0.5,
+      "unit": "%",
+      "fact": "Com os juros básicos altos, a poupança rende menos que outros investimentos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos reais custava o litro da gasolina no Brasil em 2025, em média, aproximadamente?",
+      "answer": 6.3,
+      "unit": "reais",
+      "fact": "Os impostos são uma parte grande do preço."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias de garantia legal tem um produto durável, como uma geladeira?",
+      "answer": 90,
+      "unit": "dias",
+      "fact": "O prazo começa a contar a partir da entrega."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos, no mínimo, uma pessoa pode ter cartão de crédito próprio?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Menores podem ter cartão adicional na conta dos pais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem o número de uma agência bancária, em geral?",
+      "answer": 4,
+      "unit": "dígitos",
+      "fact": "O dígito verificador vem separado, depois do traço."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a porcentagem máxima do salário que o trabalhador paga pelo vale-transporte?",
+      "answer": 6,
+      "unit": "%",
+      "fact": "A empresa paga o que passar disso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que mês do ano termina o prazo para declarar o Imposto de Renda?",
+      "answer": 5,
+      "fact": "Quem perde o prazo paga multa."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Até que dia de dezembro deve ser paga a segunda parcela do 13º salário?",
+      "answer": 20,
+      "fact": "Nessa parcela é que entram os descontos de INSS e Imposto de Renda."
     }
   ]
 }

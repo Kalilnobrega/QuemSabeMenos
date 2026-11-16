@@ -2906,6 +2906,130 @@
       "answer": 4500,
       "unit": "km",
       "fact": "Ela é a rodovia mais longa do Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos dura o mandato de um prefeito no Brasil?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "A eleição municipal acontece dois anos depois da presidencial."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos turnos pode ter uma eleição para presidente no Brasil?",
+      "answer": 2,
+      "unit": "turnos",
+      "fact": "Só há segundo turno se ninguém passar da metade dos votos válidos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de setembro se comemora a Independência do Brasil?",
+      "answer": 7,
+      "fact": "Dom Pedro I teria gritado às margens do riacho Ipiranga."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de novembro se comemora a Proclamação da República?",
+      "answer": 15,
+      "fact": "O marechal Deodoro da Fonseca liderou o movimento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de abril é o feriado de Tiradentes?",
+      "answer": 21,
+      "fact": "A data lembra a morte do inconfidente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de outubro se comemora o Dia das Crianças?",
+      "answer": 12,
+      "fact": "A data também é feriado religioso no Brasil."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de junho se comemora o Dia dos Namorados no Brasil?",
+      "answer": 12,
+      "fact": "A data fica na véspera do dia de Santo Antônio, o santo casamenteiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de junho se comemora o Dia de São João?",
+      "answer": 24,
+      "fact": "As festas juninas atraem milhões de pessoas ao Nordeste."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes Lula foi eleito presidente do Brasil?",
+      "answer": 3,
+      "unit": "vezes",
+      "fact": "Ele perdeu outras três eleições antes de vencer pela primeira vez."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que ano Lula voltou a ser presidente?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "Ele venceu a eleição mais apertada desde a redemocratização."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o número de telefone da Defesa Civil?",
+      "answer": 199,
+      "unit": "número",
+      "fact": "Ela atende em casos de enchente e deslizamento."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o DDD de Salvador?",
+      "answer": 71,
+      "unit": "DDD",
+      "fact": "A Bahia tem vários DDDs diferentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o DDD de Belo Horizonte?",
+      "answer": 31,
+      "unit": "DDD",
+      "fact": "Os DDDs de Minas Gerais começam com 3."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o DDD de Porto Alegre?",
+      "answer": 51,
+      "unit": "DDD",
+      "fact": "Os DDDs do Rio Grande do Sul começam com 5."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o DDD de Recife?",
+      "answer": 81,
+      "unit": "DDD",
+      "fact": "Os DDDs de Pernambuco começam com 8."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de maio se comemora o Dia do Trabalhador?",
+      "answer": 1,
+      "fact": "A data lembra greves por jornadas de oito horas no século XIX."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de novembro se comemora o Dia da Consciência Negra?",
+      "answer": 20,
+      "fact": "A data lembra a morte de Zumbi dos Palmares."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que dia de novembro é o feriado de Finados?",
+      "answer": 2,
+      "fact": "É o dia de visitar os túmulos de quem já se foi."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos anos de independência o Brasil completou em 2022?",
+      "answer": 200,
+      "unit": "anos",
+      "fact": "O coração de Dom Pedro I veio de Portugal para a comemoração."
     }
   ]
 }

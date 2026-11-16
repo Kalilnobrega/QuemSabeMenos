@@ -2915,6 +2915,371 @@
       "answer": 1836,
       "unit": "vezes",
       "fact": "O próton é bem mais pesado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A partir de quantos graus, em °C, a temperatura do corpo já é considerada febre?",
+      "answer": 37.8,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "Entre 37,3 e 37,7 °C muita gente chama de \"estado febril\"."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos, em média, cai o primeiro dente de leite?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "Os primeiros a cair costumam ser os da frente, de baixo."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros de urina um adulto produz por dia, em média?",
+      "answer": 1.5,
+      "unit": "litros",
+      "fact": "Beber mais água aumenta essa quantidade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a altura média do homem brasileiro, em centímetros?",
+      "answer": 173,
+      "unit": "cm",
+      "fact": "A altura média das brasileiras fica perto de 161 cm."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa um bebê ao nascer, em média?",
+      "answer": 3.3,
+      "unit": "kg",
+      "fact": "Bebês com menos de 2,5 kg são considerados de baixo peso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros mede um bebê ao nascer, em média?",
+      "answer": 49,
+      "unit": "cm",
+      "fact": "No primeiro ano de vida ele cresce cerca de 25 cm."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura de um banho quente confortável, em °C, aproximadamente?",
+      "answer": 38,
+      "unit": "°C",
+      "fact": "Acima de uns 45 °C a água já pode queimar a pele."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos tem o braço, do ombro até o cotovelo?",
+      "answer": 1,
+      "unit": "osso",
+      "fact": "É o úmero, o maior osso do braço."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos ossos tem o antebraço, do cotovelo até o punho?",
+      "answer": 2,
+      "unit": "ossos",
+      "fact": "São o rádio e a ulna."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros de saliva uma pessoa produz por dia, aproximadamente?",
+      "answer": 1,
+      "unit": "litro",
+      "fact": "A saliva já começa a digerir o amido na boca."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura uma gripe comum, em média?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "Repouso e água ajudam o corpo a se recuperar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos o som do trovão leva para percorrer 1 km, aproximadamente?",
+      "answer": 3,
+      "unit": "segundos",
+      "fact": "Contar os segundos entre o raio e o trovão dá a distância da tempestade."
+    },
+    {
+      "difficulty": "easy",
+      "text": "A quantos km de altura voa um avião comercial, aproximadamente?",
+      "answer": 10,
+      "unit": "km",
+      "fact": "O ar lá em cima é rarefeito demais para respirar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos estados físicos da água aprendemos na escola?",
+      "answer": 3,
+      "unit": "estados",
+      "fact": "São sólido, líquido e gasoso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores primárias se aprendem na escola, na pintura?",
+      "answer": 3,
+      "unit": "cores",
+      "fact": "Misturando as primárias saem as outras cores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos volts tem uma pilha comum, do tipo AA?",
+      "answer": 1.5,
+      "unit": "volts",
+      "fact": "Duas pilhas em série somam o dobro de tensão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos volts tem a bateria de um carro comum?",
+      "answer": 12,
+      "unit": "volts",
+      "fact": "Ela dá a partida no motor e alimenta as luzes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para ferver 1 litro de água no fogão, aproximadamente?",
+      "answer": 8,
+      "unit": "minutos",
+      "fact": "Com tampa, a água ferve mais rápido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um bebê recém-nascido dorme, aproximadamente?",
+      "answer": 16,
+      "unit": "horas",
+      "fact": "Ele acorda a cada poucas horas para mamar."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos meses um bebê costuma começar a andar, em média?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Alguns andam antes, outros só depois de um ano e meio."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos meses um bebê costuma sentar sem apoio, em média?",
+      "answer": 6,
+      "unit": "meses",
+      "fact": "Antes disso ele aprende a sustentar a cabeça."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a temperatura de uma xícara de café recém-servido, em °C, aproximadamente?",
+      "answer": 70,
+      "unit": "°C",
+      "fact": "Café muito quente perde parte do aroma."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um palmo de adulto, aproximadamente?",
+      "answer": 20,
+      "unit": "cm",
+      "fact": "O palmo já foi usado como unidade de medida."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem o pé de um adulto, aproximadamente?",
+      "answer": 26,
+      "unit": "cm",
+      "fact": "O número do sapato brasileiro vem do tamanho do pé."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilômetros uma pessoa anda em uma hora de caminhada normal?",
+      "answer": 5,
+      "unit": "km",
+      "fact": "Correndo leve, a distância passa do dobro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos mililitros de sangue se tiram numa doação?",
+      "answer": 450,
+      "unit": "ml",
+      "fact": "O corpo repõe o volume de líquido em um ou dois dias."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De quantos em quantos meses um homem pode doar sangue no Brasil?",
+      "answer": 2,
+      "unit": "meses",
+      "fact": "Para as mulheres o intervalo é de três meses."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos quilos, no mínimo, uma pessoa pode doar sangue?",
+      "answer": 50,
+      "unit": "kg",
+      "fact": "Também é preciso ter entre 16 e 69 anos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias a Lua leva para mudar de uma fase para a outra, aproximadamente?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "Por isso a Lua cheia volta mais ou menos uma vez por mês."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilômetros tem uma milha, aproximadamente?",
+      "answer": 1.6,
+      "unit": "km",
+      "fact": "A milha ainda é usada nos Estados Unidos e no Reino Unido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos fios de cabelo uma pessoa perde por dia, em média?",
+      "answer": 100,
+      "unit": "fios",
+      "fact": "Perder até essa quantidade por dia é considerado normal."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos planetas ficam entre a Terra e o Sol?",
+      "answer": 2,
+      "unit": "planetas",
+      "fact": "São Mercúrio e Vênus."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a posição da Terra na ordem dos planetas, contando a partir do Sol?",
+      "answer": 3,
+      "unit": "º",
+      "fact": "É o único planeta conhecido com água líquida na superfície."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros de comprimento tem o coração de um adulto, aproximadamente?",
+      "answer": 12,
+      "unit": "cm",
+      "fact": "Ele tem mais ou menos o tamanho de uma mão fechada."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa o cérebro de um adulto, aproximadamente?",
+      "answer": 1.4,
+      "unit": "kg",
+      "fact": "Ele é feito em boa parte de água e gordura."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dentes do siso uma pessoa pode ter, no máximo?",
+      "answer": 4,
+      "unit": "dentes",
+      "fact": "Muita gente nunca chega a ter todos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas vezes por dia uma pessoa urina, em média?",
+      "answer": 7,
+      "unit": "vezes",
+      "fact": "Café e chá aumentam a vontade de ir ao banheiro."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Em que temperatura, em °C, muita gente deixa o ar-condicionado no verão?",
+      "answer": 23,
+      "unit": "°C",
+      "fact": "Cada grau a menos aumenta o consumo de energia."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas de sono por noite uma criança de 10 anos precisa, aproximadamente?",
+      "answer": 10,
+      "unit": "horas",
+      "fact": "Adolescentes também precisam de mais sono que os adultos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos anos, em média, a puberdade começa nas meninas?",
+      "answer": 11,
+      "unit": "anos",
+      "fact": "Nos meninos ela costuma começar um pouco depois."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura um ciclo menstrual, em média?",
+      "answer": 28,
+      "unit": "dias",
+      "fact": "O ciclo pode variar bastante de uma pessoa para outra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos de atividade física por semana a OMS recomenda para adultos, no mínimo?",
+      "answer": 150,
+      "unit": "minutos",
+      "fact": "Dá cerca de meia hora em cinco dias da semana."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos polos tem um ímã?",
+      "answer": 2,
+      "unit": "polos",
+      "fact": "Polos iguais se repelem e polos diferentes se atraem."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Até quantos graus, em °C, vai um termômetro clínico comum?",
+      "answer": 42,
+      "unit": "°C",
+      "fact": "O corpo humano não aguenta muito tempo acima disso."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas leva para a água virar gelo numa forminha, no freezer, aproximadamente?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Forminhas menores congelam mais rápido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos se deve escovar os dentes, segundo os dentistas?",
+      "answer": 2,
+      "unit": "minutos",
+      "fact": "O fio dental limpa onde a escova não alcança."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De quantos em quantos meses se deve trocar a escova de dentes?",
+      "answer": 3,
+      "unit": "meses",
+      "fact": "Cerdas gastas limpam bem menos."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas de jejum se pede antes de um exame de sangue comum, em geral?",
+      "answer": 8,
+      "unit": "horas",
+      "fact": "Água costuma ser liberada durante o jejum."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias dura um tratamento comum com antibiótico, em geral?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "Parar antes da hora ajuda as bactérias a ficarem resistentes."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é o fator de proteção mínimo de protetor solar que os dermatologistas recomendam?",
+      "answer": 30,
+      "unit": "FPS",
+      "fact": "O protetor precisa ser reaplicado a cada duas horas."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos um remédio comum para dor leva para fazer efeito, em média?",
+      "answer": 30,
+      "unit": "minutos",
+      "fact": "Remédio em gotas costuma agir mais rápido que o comprimido."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos segundos uma pessoa comum aguenta sem respirar, aproximadamente?",
+      "answer": 60,
+      "unit": "segundos",
+      "fact": "Mergulhadores treinados passam de dez minutos."
     }
   ]
 }

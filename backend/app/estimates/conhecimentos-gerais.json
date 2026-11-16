@@ -2918,6 +2918,146 @@
       "answer": 199,
       "unit": "anos",
       "fact": "A inclinação começou ainda durante a obra."
+    },
+    {
+      "difficulty": "easy",
+      "text": "De quantos em quantos anos se renova a CNH de quem tem menos de 50 anos?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Depois dos 50, o prazo diminui."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Por quantos anos vale um passaporte brasileiro de adulto?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Para crianças pequenas, a validade é menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros cabem no tanque de combustível de um carro popular, aproximadamente?",
+      "answer": 50,
+      "unit": "litros",
+      "fact": "Com o tanque cheio, um carro popular roda centenas de quilômetros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Com quantos pontos na CNH o motorista tem a carteira suspensa, se não tiver infração gravíssima?",
+      "answer": 40,
+      "unit": "pontos",
+      "fact": "Com infrações gravíssimas, o limite é menor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos metros de altura tem um prédio de 10 andares, aproximadamente?",
+      "answer": 30,
+      "unit": "metros",
+      "fact": "Cada andar costuma ter cerca de três metros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem uma régua escolar comum?",
+      "answer": 30,
+      "unit": "cm",
+      "fact": "Também existem réguas menores, de 15 e 20 cm."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos litros tem uma caixa-d'água comum de casa?",
+      "answer": 1000,
+      "unit": "litros",
+      "fact": "O tamanho depende do número de moradores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas cores tem um semáforo comum?",
+      "answer": 3,
+      "unit": "cores",
+      "fact": "O amarelo avisa que o vermelho vem aí."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um lápis novo, aproximadamente?",
+      "answer": 18,
+      "unit": "cm",
+      "fact": "Um lápis pode escrever uma linha de vários quilômetros."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem a largura de uma folha A4?",
+      "answer": 21,
+      "unit": "cm",
+      "fact": "A altura da folha é de 29,7 cm."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos minutos dura o recreio na escola, em geral?",
+      "answer": 20,
+      "unit": "minutos",
+      "fact": "Em muitas escolas, é a hora da merenda."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos dias letivos tem um ano escolar no Brasil, no mínimo?",
+      "answer": 200,
+      "unit": "dias",
+      "fact": "Feriados e férias não entram nessa conta."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um aluno fica na escola no meio período, aproximadamente?",
+      "answer": 4,
+      "unit": "horas",
+      "fact": "Nas escolas de tempo integral, são sete horas ou mais."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos alunos tem uma sala de aula comum, aproximadamente?",
+      "answer": 30,
+      "unit": "alunos",
+      "fact": "Salas menores facilitam a atenção do professor."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Qual é a velocidade máxima nas rodovias federais de pista dupla, para carros, em km/h?",
+      "answer": 110,
+      "unit": "km/h",
+      "fact": "Caminhões e ônibus têm limites menores."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas pessoas cabem sentadas num ônibus urbano comum, aproximadamente?",
+      "answer": 40,
+      "unit": "lugares",
+      "fact": "Contando quem vai em pé, cabe bem mais gente."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos passageiros cabem num avião comercial de porte médio, como o Boeing 737, aproximadamente?",
+      "answer": 180,
+      "unit": "passageiros",
+      "fact": "Ele é um dos aviões mais vendidos da história."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem a largura de um cartão de crédito?",
+      "answer": 8.5,
+      "unit": "cm",
+      "fact": "Cartões de banco, de crédito e de identidade seguem o mesmo padrão."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas folhas tem um pacote comum de papel A4?",
+      "answer": 500,
+      "unit": "folhas",
+      "fact": "A gramatura mais comum é de 75 gramas por metro quadrado."
+    },
+    {
+      "difficulty": "easy",
+      "text": "Quantas folhas tem um caderno espiral comum de uma matéria?",
+      "answer": 96,
+      "unit": "folhas",
+      "fact": "Cadernos de dez matérias passam de 200 folhas."
     }
   ]
 }
