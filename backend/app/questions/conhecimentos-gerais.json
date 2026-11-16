@@ -1589,19 +1589,6 @@
       "fact": "O primeiro selo postal, o Penny Black, foi lançado no Reino Unido em 1840."
     },
     {
-      "id": "conhecimentos-gerais-122",
-      "difficulty": "easy",
-      "text": "Quantos dias tem fevereiro num ano que não é bissexto?",
-      "options": [
-        "28",
-        "29",
-        "30",
-        "31"
-      ],
-      "answer": 0,
-      "fact": "A cada 4 anos, nos anos bissextos, fevereiro ganha o dia 29."
-    },
-    {
       "id": "conhecimentos-gerais-123",
       "difficulty": "easy",
       "text": "Quanto é 7 × 8?",
@@ -2239,19 +2226,6 @@
       "fact": "Em muitas línguas, mandar rosas vermelhas é o jeito clássico de dizer \"eu te amo\"."
     },
     {
-      "id": "conhecimentos-gerais-172",
-      "difficulty": "easy",
-      "text": "Que animal carrega o filhote numa bolsa na barriga?",
-      "options": [
-        "Canguru",
-        "Coala",
-        "Macaco",
-        "Urso-polar"
-      ],
-      "answer": 0,
-      "fact": "O filhote do canguru nasce do tamanho de um feijão e termina de se desenvolver dentro da bolsa."
-    },
-    {
       "id": "conhecimentos-gerais-173",
       "difficulty": "easy",
       "text": "Que bichinho de estimação guarda comida nas bochechas?",
@@ -2315,19 +2289,6 @@
       ],
       "answer": 0,
       "fact": "Círculo é plano; a esfera é o sólido, em três dimensões."
-    },
-    {
-      "id": "conhecimentos-gerais-178",
-      "difficulty": "easy",
-      "text": "Quantos centavos tem um real?",
-      "options": [
-        "100",
-        "10",
-        "50",
-        "1.000"
-      ],
-      "answer": 0,
-      "fact": "A moeda de 1 real tem o centro prateado e a borda dourada."
     },
     {
       "id": "conhecimentos-gerais-179",
@@ -4701,19 +4662,6 @@
       "fact": "Os gatos adultos quase só miam para se comunicar com humanos, e não entre si."
     },
     {
-      "id": "conhecimentos-gerais-360",
-      "difficulty": "easy",
-      "text": "Que animal é o símbolo do Natal que puxa o trenó do Papai Noel?",
-      "options": [
-        "Rena",
-        "Cavalo",
-        "Alce",
-        "Cachorro"
-      ],
-      "answer": 0,
-      "fact": "Na natureza, renas machos e fêmeas têm chifres."
-    },
-    {
       "id": "conhecimentos-gerais-361",
       "difficulty": "easy",
       "text": "Que festa se comemora em 31 de dezembro?",
@@ -5857,21 +5805,6 @@
       "fact": "É o país com mais fusos horários do mundo, por causa dos territórios espalhados pelo planeta."
     },
     {
-      "id": "conhecimentos-gerais-446",
-      "difficulty": "impossible",
-      "text": "Quantos fusos horários tem o Brasil?",
-      "options": [
-        "4",
-        "2",
-        "3",
-        "5",
-        "6",
-        "1"
-      ],
-      "answer": 0,
-      "fact": "O fuso de Fernando de Noronha fica uma hora à frente do horário de Brasília."
-    },
-    {
       "id": "conhecimentos-gerais-447",
       "difficulty": "impossible",
       "text": "Em que ano a Libras foi reconhecida por lei como meio legal de comunicação no Brasil?",
@@ -6073,32 +6006,6 @@
       ],
       "answer": 0,
       "fact": "A data lembra o ano de 1822."
-    },
-    {
-      "id": "conhecimentos-gerais-462",
-      "difficulty": "easy",
-      "text": "Em que dia é comemorada a Proclamação da República?",
-      "options": [
-        "15 de novembro",
-        "7 de setembro",
-        "1º de maio",
-        "21 de abril"
-      ],
-      "answer": 0,
-      "fact": "A data lembra o ano de 1889."
-    },
-    {
-      "id": "conhecimentos-gerais-463",
-      "difficulty": "easy",
-      "text": "Em que dia é comemorado o Dia de Tiradentes?",
-      "options": [
-        "21 de abril",
-        "15 de novembro",
-        "12 de outubro",
-        "2 de novembro"
-      ],
-      "answer": 0,
-      "fact": "O herói foi executado em 1792."
     },
     {
       "id": "conhecimentos-gerais-464",
@@ -6400,32 +6307,6 @@
       "fact": "A profissão é muito antiga."
     },
     {
-      "id": "conhecimentos-gerais-487",
-      "difficulty": "easy",
-      "text": "Como se chama quem conserta canos?",
-      "options": [
-        "Encanador",
-        "Pedreiro",
-        "Marceneiro",
-        "Eletricista"
-      ],
-      "answer": 0,
-      "fact": "Em Portugal, ele se chama canalizador."
-    },
-    {
-      "id": "conhecimentos-gerais-488",
-      "difficulty": "easy",
-      "text": "Como se chama quem trabalha com móveis de madeira?",
-      "options": [
-        "Marceneiro",
-        "Encanador",
-        "Pedreiro",
-        "Sapateiro"
-      ],
-      "answer": 0,
-      "fact": "O carpinteiro trabalha com estruturas maiores."
-    },
-    {
       "id": "conhecimentos-gerais-489",
       "difficulty": "easy",
       "text": "Como se chama quem corta o cabelo dos homens?",
@@ -6621,19 +6502,6 @@
       "fact": "A de São Paulo, o Tietê, é uma das maiores do mundo."
     },
     {
-      "id": "conhecimentos-gerais-504",
-      "difficulty": "easy",
-      "text": "Que aparelho usamos para ver as horas no pulso?",
-      "options": [
-        "Relógio",
-        "Pulseira",
-        "Bússola",
-        "Régua"
-      ],
-      "answer": 0,
-      "fact": "Os suíços são famosos por fazê-los."
-    },
-    {
       "id": "conhecimentos-gerais-505",
       "difficulty": "easy",
       "text": "Em que objeto colocamos cartas para envio pelos Correios?",
@@ -6749,19 +6617,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi patenteado em 1869."
-    },
-    {
-      "id": "conhecimentos-gerais-514",
-      "difficulty": "easy",
-      "text": "Que objeto usamos para nos proteger da chuva?",
-      "options": [
-        "Guarda-chuva",
-        "Boné",
-        "Bota",
-        "Óculos"
-      ],
-      "answer": 0,
-      "fact": "Os primeiros surgiram há milhares de anos."
     },
     {
       "id": "conhecimentos-gerais-515",
@@ -7063,32 +6918,6 @@
       "fact": "A procura cresce muito na Semana Santa."
     },
     {
-      "id": "conhecimentos-gerais-538",
-      "difficulty": "medium",
-      "text": "Que escritor criou o personagem Sherlock Holmes?",
-      "options": [
-        "Arthur Conan Doyle",
-        "Agatha Christie",
-        "Edgar Allan Poe",
-        "Charles Dickens"
-      ],
-      "answer": 0,
-      "fact": "Ele também era médico."
-    },
-    {
-      "id": "conhecimentos-gerais-539",
-      "difficulty": "medium",
-      "text": "Que escritora criou o detetive Hercule Poirot?",
-      "options": [
-        "Agatha Christie",
-        "J. K. Rowling",
-        "Jane Austen",
-        "Mary Shelley"
-      ],
-      "answer": 0,
-      "fact": "Ela é a autora de ficção mais vendida do mundo."
-    },
-    {
       "id": "conhecimentos-gerais-540",
       "difficulty": "medium",
       "text": "Quem é o criador da famosa frase \"só sei que nada sei\"?",
@@ -7100,32 +6929,6 @@
       ],
       "answer": 0,
       "fact": "A frase é atribuída a ele por Platão."
-    },
-    {
-      "id": "conhecimentos-gerais-541",
-      "difficulty": "medium",
-      "text": "Quem disse \"penso, logo existo\"?",
-      "options": [
-        "René Descartes",
-        "Sócrates",
-        "Immanuel Kant",
-        "Friedrich Nietzsche"
-      ],
-      "answer": 0,
-      "fact": "A frase apareceu em \"Discurso do Método\"."
-    },
-    {
-      "id": "conhecimentos-gerais-542",
-      "difficulty": "medium",
-      "text": "Quem disse \"Vim, vi e venci\"?",
-      "options": [
-        "Júlio César",
-        "Napoleão",
-        "Alexandre, o Grande",
-        "Augusto"
-      ],
-      "answer": 0,
-      "fact": "A frase é de uma campanha militar de 47 a.C."
     },
     {
       "id": "conhecimentos-gerais-543",
@@ -7141,19 +6944,6 @@
       "fact": "O discurso foi em 1963, em Washington."
     },
     {
-      "id": "conhecimentos-gerais-544",
-      "difficulty": "medium",
-      "text": "Quem disse \"Um pequeno passo para o homem...\"?",
-      "options": [
-        "Neil Armstrong",
-        "Buzz Aldrin",
-        "Yuri Gagarin",
-        "Michael Collins"
-      ],
-      "answer": 0,
-      "fact": "A frase foi dita em 1969."
-    },
-    {
       "id": "conhecimentos-gerais-545",
       "difficulty": "medium",
       "text": "Quem disse \"A Terra é azul\"?",
@@ -7165,19 +6955,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi o primeiro humano no espaço."
-    },
-    {
-      "id": "conhecimentos-gerais-546",
-      "difficulty": "medium",
-      "text": "Quem inventou a lâmpada elétrica comercial?",
-      "options": [
-        "Thomas Edison",
-        "Nikola Tesla",
-        "Alexander Graham Bell",
-        "Benjamin Franklin"
-      ],
-      "answer": 0,
-      "fact": "Ele testou muitos filamentos antes de acertar."
     },
     {
       "id": "conhecimentos-gerais-547",
@@ -7206,19 +6983,6 @@
       "fact": "O padre brasileiro Landell de Moura também fez testes."
     },
     {
-      "id": "conhecimentos-gerais-549",
-      "difficulty": "medium",
-      "text": "Quem inventou a imprensa com tipos móveis, na Europa?",
-      "options": [
-        "Johannes Gutenberg",
-        "Leonardo da Vinci",
-        "Martinho Lutero",
-        "Isaac Newton"
-      ],
-      "answer": 0,
-      "fact": "A Bíblia dele é do século XV."
-    },
-    {
       "id": "conhecimentos-gerais-550",
       "difficulty": "medium",
       "text": "Quem inventou a dinamite?",
@@ -7243,19 +7007,6 @@
       ],
       "answer": 0,
       "fact": "O modelo é de 1886."
-    },
-    {
-      "id": "conhecimentos-gerais-552",
-      "difficulty": "medium",
-      "text": "Quem popularizou o automóvel com a linha de montagem?",
-      "options": [
-        "Henry Ford",
-        "Karl Benz",
-        "Enzo Ferrari",
-        "Soichiro Honda"
-      ],
-      "answer": 0,
-      "fact": "O Modelo T é de 1908."
     },
     {
       "id": "conhecimentos-gerais-553",
@@ -7518,19 +7269,6 @@
       "fact": "O apelido do tenista René Lacoste era Crocodilo."
     },
     {
-      "id": "conhecimentos-gerais-573",
-      "difficulty": "medium",
-      "text": "Que marca tem uma maçã mordida como logo?",
-      "options": [
-        "Apple",
-        "Samsung",
-        "Microsoft",
-        "Nokia"
-      ],
-      "answer": 0,
-      "fact": "Rob Janoff criou o desenho em 1977."
-    },
-    {
       "id": "conhecimentos-gerais-574",
       "difficulty": "medium",
       "text": "Que marca de carro tem um cavalinho como símbolo?",
@@ -7568,32 +7306,6 @@
       ],
       "answer": 0,
       "fact": "O símbolo é da fonte de Netuno, em Bolonha."
-    },
-    {
-      "id": "conhecimentos-gerais-577",
-      "difficulty": "medium",
-      "text": "Que marca de carro tem quatro argolas como símbolo?",
-      "options": [
-        "Audi",
-        "BMW",
-        "Mercedes-Benz",
-        "Volkswagen"
-      ],
-      "answer": 0,
-      "fact": "Ela representa a união de quatro empresas."
-    },
-    {
-      "id": "conhecimentos-gerais-578",
-      "difficulty": "medium",
-      "text": "Que marca tem um \"swoosh\" como logo?",
-      "options": [
-        "Nike",
-        "Adidas",
-        "Puma",
-        "Reebok"
-      ],
-      "answer": 0,
-      "fact": "A estudante que o criou recebeu só 35 dólares."
     },
     {
       "id": "conhecimentos-gerais-579",
@@ -7635,19 +7347,6 @@
       "fact": "Os arcos dourados são muito famosos."
     },
     {
-      "id": "conhecimentos-gerais-582",
-      "difficulty": "medium",
-      "text": "Que empresa sueca é famosa por móveis baratos e kits de montar?",
-      "options": [
-        "IKEA",
-        "H&M",
-        "Volvo",
-        "Spotify"
-      ],
-      "answer": 0,
-      "fact": "O nome vem das iniciais do fundador e dos lugares dele."
-    },
-    {
       "id": "conhecimentos-gerais-583",
       "difficulty": "medium",
       "text": "Que empresa dinamarquesa fabrica os blocos de montar LEGO?",
@@ -7659,19 +7358,6 @@
       ],
       "answer": 0,
       "fact": "O nome vem de \"brinque bem\", em dinamarquês."
-    },
-    {
-      "id": "conhecimentos-gerais-584",
-      "difficulty": "medium",
-      "text": "Que empresa brasileira fabrica a Susi e a Banco Imobiliário?",
-      "options": [
-        "Estrela",
-        "Grow",
-        "Mattel",
-        "Hasbro"
-      ],
-      "answer": 0,
-      "fact": "Ela foi fundada em 1937."
     },
     {
       "id": "conhecimentos-gerais-585",
@@ -7804,19 +7490,6 @@
       "fact": "Ela também é a sede da Otan."
     },
     {
-      "id": "conhecimentos-gerais-595",
-      "difficulty": "medium",
-      "text": "Em que cidade fica a sede do FMI?",
-      "options": [
-        "Washington",
-        "Nova York",
-        "Genebra",
-        "Londres"
-      ],
-      "answer": 0,
-      "fact": "O Banco Mundial também fica lá."
-    },
-    {
       "id": "conhecimentos-gerais-596",
       "difficulty": "medium",
       "text": "Em que cidade fica a sede da Fifa?",
@@ -7908,19 +7581,6 @@
       "fact": "A ideia surgiu de uma discussão em uma caçada."
     },
     {
-      "id": "conhecimentos-gerais-603",
-      "difficulty": "medium",
-      "text": "Que empresa francesa de pneus criou o famoso guia de restaurantes?",
-      "options": [
-        "Michelin",
-        "Goodyear",
-        "Pirelli",
-        "Bridgestone"
-      ],
-      "answer": 0,
-      "fact": "O guia queria incentivar viagens de carro."
-    },
-    {
       "id": "conhecimentos-gerais-604",
       "difficulty": "hard",
       "text": "Que relógio antigo funcionava com água?",
@@ -7958,19 +7618,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi criado no século XVIII."
-    },
-    {
-      "id": "conhecimentos-gerais-607",
-      "difficulty": "hard",
-      "text": "Que instrumento mede a pressão atmosférica?",
-      "options": [
-        "Barômetro",
-        "Higrômetro",
-        "Anemômetro",
-        "Altímetro"
-      ],
-      "answer": 0,
-      "fact": "Evangelista Torricelli o criou em 1643."
     },
     {
       "id": "conhecimentos-gerais-608",
@@ -8038,32 +7685,6 @@
       "fact": "Ele foi o primeiro a ganhar o Nobel de Física."
     },
     {
-      "id": "conhecimentos-gerais-613",
-      "difficulty": "hard",
-      "text": "Quem criou a vacina contra a varíola?",
-      "options": [
-        "Edward Jenner",
-        "Louis Pasteur",
-        "Jonas Salk",
-        "Albert Sabin"
-      ],
-      "answer": 0,
-      "fact": "Ele usou a varíola das vacas."
-    },
-    {
-      "id": "conhecimentos-gerais-614",
-      "difficulty": "hard",
-      "text": "Quem criou a vacina contra a raiva?",
-      "options": [
-        "Louis Pasteur",
-        "Edward Jenner",
-        "Robert Koch",
-        "Jonas Salk"
-      ],
-      "answer": 0,
-      "fact": "O primeiro tratado foi um menino, em 1885."
-    },
-    {
       "id": "conhecimentos-gerais-615",
       "difficulty": "hard",
       "text": "Quem criou a vacina em gotinhas contra a pólio?",
@@ -8075,32 +7696,6 @@
       ],
       "answer": 0,
       "fact": "Ele abriu mão da patente."
-    },
-    {
-      "id": "conhecimentos-gerais-616",
-      "difficulty": "hard",
-      "text": "Quem combateu a febre amarela e a varíola no Rio, no início do século XX?",
-      "options": [
-        "Oswaldo Cruz",
-        "Carlos Chagas",
-        "Vital Brazil",
-        "Adolfo Lutz"
-      ],
-      "answer": 0,
-      "fact": "A obrigatoriedade da vacina gerou uma revolta em 1904."
-    },
-    {
-      "id": "conhecimentos-gerais-617",
-      "difficulty": "hard",
-      "text": "Que cientista brasileiro criou o soro antiofídico?",
-      "options": [
-        "Vital Brazil",
-        "Oswaldo Cruz",
-        "Carlos Chagas",
-        "Adolfo Lutz"
-      ],
-      "answer": 0,
-      "fact": "O Instituto Butantan é a grande obra dele."
     },
     {
       "id": "conhecimentos-gerais-618",
@@ -8337,45 +7932,6 @@
       "fact": "Ela significa \"aproveite o dia\"."
     },
     {
-      "id": "conhecimentos-gerais-636",
-      "difficulty": "hard",
-      "text": "O que significa \"carpe diem\"?",
-      "options": [
-        "Aproveite o dia",
-        "Vá em paz",
-        "Até amanhã",
-        "Dia de sorte"
-      ],
-      "answer": 0,
-      "fact": "A expressão é de um poema de Horácio."
-    },
-    {
-      "id": "conhecimentos-gerais-637",
-      "difficulty": "hard",
-      "text": "O que significa \"alea jacta est\"?",
-      "options": [
-        "A sorte está lançada",
-        "O dia é curto",
-        "A vida é breve",
-        "A lei é dura"
-      ],
-      "answer": 0,
-      "fact": "Júlio César a teria dito ao cruzar o rio Rubicão."
-    },
-    {
-      "id": "conhecimentos-gerais-638",
-      "difficulty": "hard",
-      "text": "O que significa \"habeas corpus\"?",
-      "options": [
-        "Que tenhas o corpo",
-        "Corpo presente",
-        "Corpo livre",
-        "Corpo são"
-      ],
-      "answer": 0,
-      "fact": "É uma garantia contra a prisão ilegal."
-    },
-    {
       "id": "conhecimentos-gerais-639",
       "difficulty": "hard",
       "text": "O que significa \"pro bono\"?",
@@ -8387,19 +7943,6 @@
       ],
       "answer": 0,
       "fact": "A expressão é muito usada na advocacia."
-    },
-    {
-      "id": "conhecimentos-gerais-640",
-      "difficulty": "hard",
-      "text": "O que significa \"persona non grata\"?",
-      "options": [
-        "Pessoa indesejada",
-        "Pessoa famosa",
-        "Pessoa rica",
-        "Pessoa inocente"
-      ],
-      "answer": 0,
-      "fact": "Ela é usada na diplomacia."
     },
     {
       "id": "conhecimentos-gerais-641",
@@ -8543,19 +8086,6 @@
       ],
       "answer": 0,
       "fact": "A obra deu origem ao termo \"maquiavélico\"."
-    },
-    {
-      "id": "conhecimentos-gerais-652",
-      "difficulty": "hard",
-      "text": "Quem é o autor de \"A Riqueza das Nações\"?",
-      "options": [
-        "Adam Smith",
-        "Karl Marx",
-        "John Keynes",
-        "Milton Friedman"
-      ],
-      "answer": 0,
-      "fact": "A obra é de 1776."
     },
     {
       "id": "conhecimentos-gerais-653",
@@ -9026,19 +8556,6 @@
       "fact": "Ele fazia acrobacias a cavalo."
     },
     {
-      "id": "conhecimentos-gerais-689",
-      "difficulty": "hard",
-      "text": "Que companhia canadense revolucionou o circo sem animais?",
-      "options": [
-        "Cirque du Soleil",
-        "Ringling Bros.",
-        "Moscow Circus",
-        "Big Apple Circus"
-      ],
-      "answer": 0,
-      "fact": "Ela nasceu em 1984, em Quebec."
-    },
-    {
       "id": "conhecimentos-gerais-690",
       "difficulty": "hard",
       "text": "Quem é o rei retratado nas cartas de copas, segundo a tradição?",
@@ -9091,19 +8608,6 @@
       "fact": "Eles deram origem à Biblioteca Nacional."
     },
     {
-      "id": "conhecimentos-gerais-694",
-      "difficulty": "hard",
-      "text": "Que antiga biblioteca foi destruída no Egito?",
-      "options": [
-        "Alexandria",
-        "Cartago",
-        "Pérgamo",
-        "Atenas"
-      ],
-      "answer": 0,
-      "fact": "A cidade foi fundada por Alexandre, o Grande."
-    },
-    {
       "id": "conhecimentos-gerais-695",
       "difficulty": "hard",
       "text": "Em qual país é publicada a \"Bíblia de Gutenberg\" original?",
@@ -9141,19 +8645,6 @@
       ],
       "answer": 0,
       "fact": "A lenda não tem base firme."
-    },
-    {
-      "id": "conhecimentos-gerais-698",
-      "difficulty": "hard",
-      "text": "Que imperador romano teria nomeado seu cavalo cônsul, segundo a lenda?",
-      "options": [
-        "Calígula",
-        "Nero",
-        "Tibério",
-        "Cláudio"
-      ],
-      "answer": 0,
-      "fact": "O cavalo se chamava Incitato."
     },
     {
       "id": "conhecimentos-gerais-699",
@@ -9208,19 +8699,6 @@
       "fact": "A viagem durou cinco anos."
     },
     {
-      "id": "conhecimentos-gerais-703",
-      "difficulty": "hard",
-      "text": "Em que navio os peregrinos ingleses chegaram à América, em 1620?",
-      "options": [
-        "Mayflower",
-        "Beagle",
-        "Santa Maria",
-        "Nina"
-      ],
-      "answer": 0,
-      "fact": "A chegada é ligada ao Dia de Ação de Graças."
-    },
-    {
       "id": "conhecimentos-gerais-704",
       "difficulty": "impossible",
       "text": "Em que ano foi criado o Guinness World Records?",
@@ -9249,21 +8727,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi instalado em Cleveland."
-    },
-    {
-      "id": "conhecimentos-gerais-706",
-      "difficulty": "impossible",
-      "text": "Em que ano foi instalado o primeiro semáforo do mundo, em Londres?",
-      "options": [
-        "1868",
-        "1914",
-        "1890",
-        "1925",
-        "1850",
-        "1900"
-      ],
-      "answer": 0,
-      "fact": "Ele explodiu e feriu um policial."
     },
     {
       "id": "conhecimentos-gerais-707",
@@ -9491,21 +8954,6 @@
       "fact": "Foi entre o Reino Unido e Zanzibar."
     },
     {
-      "id": "conhecimentos-gerais-722",
-      "difficulty": "impossible",
-      "text": "Quantos anos durou o reinado mais longo de um monarca europeu?",
-      "options": [
-        "72",
-        "63",
-        "70",
-        "50",
-        "80",
-        "90"
-      ],
-      "answer": 0,
-      "fact": "Luís XIV reinou de 1643 a 1715."
-    },
-    {
       "id": "conhecimentos-gerais-723",
       "difficulty": "impossible",
       "text": "Quantos anos reinou a rainha Elizabeth II?",
@@ -9590,19 +9038,6 @@
       "fact": "O segredo foi guardado por séculos."
     },
     {
-      "id": "conhecimentos-gerais-729",
-      "difficulty": "medium",
-      "text": "Que rota comercial ligava a China à Europa?",
-      "options": [
-        "Rota da Seda",
-        "Rota das Índias",
-        "Estrada Real",
-        "Rota 66"
-      ],
-      "answer": 0,
-      "fact": "Marco Polo é o viajante mais famoso dela."
-    },
-    {
       "id": "conhecimentos-gerais-730",
       "difficulty": "medium",
       "text": "Que estrada americana liga Chicago a Santa Monica?",
@@ -9629,32 +9064,6 @@
       "fact": "Ela foi construída a partir de 312 a.C."
     },
     {
-      "id": "conhecimentos-gerais-732",
-      "difficulty": "medium",
-      "text": "Que estrada histórica ligava o ouro de Minas Gerais ao litoral?",
-      "options": [
-        "Estrada Real",
-        "Rota da Seda",
-        "Rota 66",
-        "Via Dutra"
-      ],
-      "answer": 0,
-      "fact": "Ela ia até Paraty e o Rio de Janeiro."
-    },
-    {
-      "id": "conhecimentos-gerais-733",
-      "difficulty": "hard",
-      "text": "Que primeiro-ministro britânico liderou o país na Segunda Guerra?",
-      "options": [
-        "Winston Churchill",
-        "Neville Chamberlain",
-        "Clement Attlee",
-        "Margaret Thatcher"
-      ],
-      "answer": 0,
-      "fact": "Ele também ganhou o Nobel de Literatura."
-    },
-    {
       "id": "conhecimentos-gerais-734",
       "difficulty": "hard",
       "text": "Quem foi o primeiro a dar uma volta ao mundo em uma só viagem?",
@@ -9666,21 +9075,6 @@
       ],
       "answer": 0,
       "fact": "Magalhães morreu no caminho, e Elcano terminou a viagem."
-    },
-    {
-      "id": "conhecimentos-gerais-735",
-      "difficulty": "impossible",
-      "text": "Quem terminou a primeira volta ao mundo depois da morte de Magalhães?",
-      "options": [
-        "Juan Sebastián Elcano",
-        "Vasco da Gama",
-        "Francis Drake",
-        "Américo Vespúcio",
-        "James Cook",
-        "Bartolomeu Dias"
-      ],
-      "answer": 0,
-      "fact": "A viagem durou de 1519 a 1522."
     },
     {
       "id": "conhecimentos-gerais-736",
@@ -9819,19 +9213,6 @@
       "fact": "Os primeiros bancos surgiram na Itália medieval."
     },
     {
-      "id": "conhecimentos-gerais-746",
-      "difficulty": "easy",
-      "text": "Que profissional tira dentes e trata cáries?",
-      "options": [
-        "Dentista",
-        "Pediatra",
-        "Veterinário",
-        "Cardiologista"
-      ],
-      "answer": 0,
-      "fact": "O Dia do Dentista é 25 de outubro."
-    },
-    {
       "id": "conhecimentos-gerais-747",
       "difficulty": "easy",
       "text": "Que peça de roupa se usa na cabeça para fazer sombra?",
@@ -9869,19 +9250,6 @@
       ],
       "answer": 0,
       "fact": "Ela também é usada em várias profissões."
-    },
-    {
-      "id": "conhecimentos-gerais-750",
-      "difficulty": "easy",
-      "text": "Que refeição costuma ser feita de manhã?",
-      "options": [
-        "Café da manhã",
-        "Almoço",
-        "Jantar",
-        "Ceia"
-      ],
-      "answer": 0,
-      "fact": "Muitos a chamam de a mais importante do dia."
     },
     {
       "id": "conhecimentos-gerais-751",

@@ -4649,19 +4649,6 @@
       "fact": "Milhões de peregrinos se banham no Ganges na cidade de Varanasi."
     },
     {
-      "id": "geografia-356",
-      "difficulty": "easy",
-      "text": "Que país é chamado de \"Terra do Tango\"?",
-      "options": [
-        "Argentina",
-        "Uruguai",
-        "Espanha",
-        "Chile"
-      ],
-      "answer": 0,
-      "fact": "O tango nasceu nos bairros portuários de Buenos Aires e Montevidéu."
-    },
-    {
       "id": "geografia-357",
       "difficulty": "easy",
       "text": "Que país tem como símbolos o pássaro kiwi e a cultura maori?",
@@ -5984,19 +5971,6 @@
       "fact": "Ele tem pouco mais de 21 mil km²."
     },
     {
-      "id": "geografia-455",
-      "difficulty": "easy",
-      "text": "Quantas regiões o Brasil tem, segundo o IBGE?",
-      "options": [
-        "5",
-        "4",
-        "6",
-        "7"
-      ],
-      "answer": 0,
-      "fact": "São Norte, Nordeste, Centro-Oeste, Sudeste e Sul."
-    },
-    {
       "id": "geografia-456",
       "difficulty": "easy",
       "text": "Em qual região do Brasil fica o estado do Piauí?",
@@ -6021,19 +5995,6 @@
       ],
       "answer": 0,
       "fact": "O nome homenageia o Marechal Rondon."
-    },
-    {
-      "id": "geografia-458",
-      "difficulty": "easy",
-      "text": "Qual oceano banha o Brasil?",
-      "options": [
-        "Atlântico",
-        "Pacífico",
-        "Índico",
-        "Ártico"
-      ],
-      "answer": 0,
-      "fact": "O litoral brasileiro tem mais de 7 mil km."
     },
     {
       "id": "geografia-459",
@@ -6192,32 +6153,6 @@
       "fact": "Por séculos, ele era muito poluído."
     },
     {
-      "id": "geografia-471",
-      "difficulty": "easy",
-      "text": "Qual rio atravessa Lisboa?",
-      "options": [
-        "Tejo",
-        "Douro",
-        "Sena",
-        "Danúbio"
-      ],
-      "answer": 0,
-      "fact": "É o rio mais longo da Península Ibérica."
-    },
-    {
-      "id": "geografia-472",
-      "difficulty": "easy",
-      "text": "Qual é o nome da cordilheira da América do Sul?",
-      "options": [
-        "Andes",
-        "Alpes",
-        "Himalaia",
-        "Rochosas"
-      ],
-      "answer": 0,
-      "fact": "É a cordilheira mais longa do mundo."
-    },
-    {
       "id": "geografia-473",
       "difficulty": "easy",
       "text": "Em que cordilheira fica o Mont Blanc?",
@@ -6281,32 +6216,6 @@
       ],
       "answer": 0,
       "fact": "Há mais bicicletas que pessoas na cidade."
-    },
-    {
-      "id": "geografia-478",
-      "difficulty": "easy",
-      "text": "Em qual país fica Punta del Este?",
-      "options": [
-        "Uruguai",
-        "Argentina",
-        "Chile",
-        "Paraguai"
-      ],
-      "answer": 0,
-      "fact": "É o principal balneário do Uruguai."
-    },
-    {
-      "id": "geografia-479",
-      "difficulty": "easy",
-      "text": "Em qual país fica Las Vegas?",
-      "options": [
-        "Estados Unidos",
-        "México",
-        "Canadá",
-        "Espanha"
-      ],
-      "answer": 0,
-      "fact": "Fica no estado de Nevada, no meio do deserto."
     },
     {
       "id": "geografia-480",
@@ -6398,58 +6307,6 @@
       ],
       "answer": 0,
       "fact": "A ponte sobre o Oiapoque liga os dois lados."
-    },
-    {
-      "id": "geografia-487",
-      "difficulty": "easy",
-      "text": "Em que estado fica a cidade de Paraty?",
-      "options": [
-        "Rio de Janeiro",
-        "São Paulo",
-        "Espírito Santo",
-        "Santa Catarina"
-      ],
-      "answer": 0,
-      "fact": "Ela tem ruas de pedra e um centro histórico colonial."
-    },
-    {
-      "id": "geografia-488",
-      "difficulty": "easy",
-      "text": "Em que estado fica a cidade de Jericoacoara?",
-      "options": [
-        "Ceará",
-        "Rio Grande do Norte",
-        "Piauí",
-        "Bahia"
-      ],
-      "answer": 0,
-      "fact": "Fica no litoral oeste do estado."
-    },
-    {
-      "id": "geografia-489",
-      "difficulty": "easy",
-      "text": "Em que estado fica a cidade de Búzios?",
-      "options": [
-        "Rio de Janeiro",
-        "Bahia",
-        "Santa Catarina",
-        "Espírito Santo"
-      ],
-      "answer": 0,
-      "fact": "A atriz Brigitte Bardot ajudou a torná-la famosa."
-    },
-    {
-      "id": "geografia-490",
-      "difficulty": "easy",
-      "text": "Em que estado fica o arquipélago de Fernando de Noronha?",
-      "options": [
-        "Pernambuco",
-        "Rio Grande do Norte",
-        "Paraíba",
-        "Bahia"
-      ],
-      "answer": 0,
-      "fact": "Fica a mais de 350 km da costa."
     },
     {
       "id": "geografia-491",
@@ -6933,19 +6790,6 @@
       "fact": "Ela é a sede do governo do país."
     },
     {
-      "id": "geografia-528",
-      "difficulty": "easy",
-      "text": "Em que país fica a ilha de Bali, além de Java e Sumatra?",
-      "options": [
-        "Indonésia",
-        "Filipinas",
-        "Tailândia",
-        "Malásia"
-      ],
-      "answer": 0,
-      "fact": "É um destino turístico muito famoso."
-    },
-    {
       "id": "geografia-529",
       "difficulty": "easy",
       "text": "Em que oceano fica o arquipélago das Maldivas?",
@@ -6996,19 +6840,6 @@
       ],
       "answer": 0,
       "fact": "São 11 fusos do Báltico ao Pacífico."
-    },
-    {
-      "id": "geografia-533",
-      "difficulty": "medium",
-      "text": "Qual país é famoso pela cidade de Petra, além de ser banhado pelo mar Morto?",
-      "options": [
-        "Jordânia",
-        "Israel",
-        "Egito",
-        "Síria"
-      ],
-      "answer": 0,
-      "fact": "A cidade foi cenário de Indiana Jones."
     },
     {
       "id": "geografia-534",
@@ -7191,19 +7022,6 @@
       ],
       "answer": 0,
       "fact": "A usina fica na fronteira entre Brasil e Paraguai."
-    },
-    {
-      "id": "geografia-548",
-      "difficulty": "medium",
-      "text": "Qual é o rio que dá nome à hidrelétrica de Belo Monte?",
-      "options": [
-        "Xingu",
-        "Madeira",
-        "Tocantins",
-        "Tapajós"
-      ],
-      "answer": 0,
-      "fact": "A usina fica no Pará e foi muito criticada por seus impactos."
     },
     {
       "id": "geografia-549",
@@ -7895,19 +7713,6 @@
       "fact": "A maior parte é de petróleo muito pesado."
     },
     {
-      "id": "geografia-602",
-      "difficulty": "easy",
-      "text": "Que país vizinho do Brasil tem a cidade de Bariloche e o tango?",
-      "options": [
-        "Argentina",
-        "Chile",
-        "Uruguai",
-        "Paraguai"
-      ],
-      "answer": 0,
-      "fact": "O tango nasceu nos bairros de Buenos Aires e Montevidéu."
-    },
-    {
       "id": "geografia-603",
       "difficulty": "easy",
       "text": "Em que região do Brasil fica o Pantanal?",
@@ -8454,19 +8259,6 @@
       "fact": "Fica na ilha de Nova Providência."
     },
     {
-      "id": "geografia-645",
-      "difficulty": "hard",
-      "text": "Em que estado brasileiro nasce o rio São Francisco?",
-      "options": [
-        "Minas Gerais",
-        "Bahia",
-        "Goiás",
-        "Pernambuco"
-      ],
-      "answer": 0,
-      "fact": "Ele nasce na Serra da Canastra."
-    },
-    {
       "id": "geografia-646",
       "difficulty": "hard",
       "text": "Qual é o rio que separa Brasil e Argentina em boa parte da fronteira?",
@@ -8894,19 +8686,6 @@
       ],
       "answer": 0,
       "fact": "Ao cruzá-la, muda-se um dia no calendário."
-    },
-    {
-      "id": "geografia-679",
-      "difficulty": "easy",
-      "text": "Em qual estado fica a Chapada Diamantina, famosa por suas cachoeiras?",
-      "options": [
-        "Bahia",
-        "Goiás",
-        "Minas Gerais",
-        "Tocantins"
-      ],
-      "answer": 0,
-      "fact": "Ela já foi um centro de garimpo de diamantes."
     },
     {
       "id": "geografia-680",
@@ -9832,32 +9611,6 @@
       "fact": "Ele despeja cerca de 20% da água doce nos oceanos."
     },
     {
-      "id": "geografia-747",
-      "difficulty": "hard",
-      "text": "Qual é a capital da Tanzânia?",
-      "options": [
-        "Dodoma",
-        "Dar es Salaam",
-        "Zanzibar",
-        "Arusha"
-      ],
-      "answer": 0,
-      "fact": "Dar es Salaam é a maior cidade."
-    },
-    {
-      "id": "geografia-748",
-      "difficulty": "hard",
-      "text": "Qual é a capital da Bolívia, segundo a Constituição?",
-      "options": [
-        "Sucre",
-        "La Paz",
-        "Cochabamba",
-        "Santa Cruz"
-      ],
-      "answer": 0,
-      "fact": "La Paz é a sede do governo."
-    },
-    {
       "id": "geografia-749",
       "difficulty": "hard",
       "text": "Qual é a menor capital de um país, em população, entre estas?",
@@ -9895,21 +9648,6 @@
       ],
       "answer": 0,
       "fact": "Ele é um ponto crítico do comércio mundial."
-    },
-    {
-      "id": "geografia-752",
-      "difficulty": "impossible",
-      "text": "Quantos fusos horários oficiais tem a França, contando territórios?",
-      "options": [
-        "12",
-        "1",
-        "4",
-        "8",
-        "10",
-        "24"
-      ],
-      "answer": 0,
-      "fact": "É o país com mais fusos do mundo."
     },
     {
       "id": "geografia-753",
@@ -9970,58 +9708,6 @@
       ],
       "answer": 0,
       "fact": "O nome homenageia Filipe II, da Espanha."
-    },
-    {
-      "id": "geografia-757",
-      "difficulty": "medium",
-      "text": "Em que país fica Petra, a cidade cavada na rocha?",
-      "options": [
-        "Jordânia",
-        "Egito",
-        "Síria",
-        "Israel"
-      ],
-      "answer": 0,
-      "fact": "Ela é uma das Novas Sete Maravilhas."
-    },
-    {
-      "id": "geografia-758",
-      "difficulty": "medium",
-      "text": "Em que país fica Angkor Wat?",
-      "options": [
-        "Camboja",
-        "Tailândia",
-        "Vietnã",
-        "Laos"
-      ],
-      "answer": 0,
-      "fact": "É o maior monumento religioso do mundo."
-    },
-    {
-      "id": "geografia-759",
-      "difficulty": "medium",
-      "text": "Em que país fica o Salar de Uyuni?",
-      "options": [
-        "Bolívia",
-        "Chile",
-        "Peru",
-        "Argentina"
-      ],
-      "answer": 0,
-      "fact": "É o maior deserto de sal do mundo."
-    },
-    {
-      "id": "geografia-760",
-      "difficulty": "medium",
-      "text": "Em que país fica o deserto do Atacama, em sua maior parte?",
-      "options": [
-        "Chile",
-        "Peru",
-        "Bolívia",
-        "Argentina"
-      ],
-      "answer": 0,
-      "fact": "É um dos lugares mais secos do mundo."
     },
     {
       "id": "geografia-761",
@@ -10139,32 +9825,6 @@
       ],
       "answer": 0,
       "fact": "A capital é Londres."
-    },
-    {
-      "id": "geografia-770",
-      "difficulty": "medium",
-      "text": "Que cidade italiana é famosa pelos canais e gôndolas?",
-      "options": [
-        "Veneza",
-        "Florença",
-        "Nápoles",
-        "Gênova"
-      ],
-      "answer": 0,
-      "fact": "Ela foi construída em ilhas e estacas."
-    },
-    {
-      "id": "geografia-771",
-      "difficulty": "hard",
-      "text": "Que paralelo costuma dividir as duas Coreias?",
-      "options": [
-        "Paralelo 38",
-        "Paralelo 20",
-        "Paralelo 45",
-        "Paralelo 17"
-      ],
-      "answer": 0,
-      "fact": "A zona desmilitarizada fica ao longo dessa linha."
     },
     {
       "id": "geografia-772",

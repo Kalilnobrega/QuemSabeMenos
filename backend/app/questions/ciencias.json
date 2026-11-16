@@ -2977,19 +2977,6 @@
       "fact": "O nome vem do rio Ebola, no Congo."
     },
     {
-      "id": "ciencias-228",
-      "difficulty": "medium",
-      "text": "Qual pandemia matou dezenas de milhões em 1918?",
-      "options": [
-        "Gripe espanhola",
-        "Peste negra",
-        "Covid-19",
-        "Cólera"
-      ],
-      "answer": 0,
-      "fact": "Ela foi causada por uma gripe H1N1."
-    },
-    {
       "id": "ciencias-229",
       "difficulty": "medium",
       "text": "Por que o céu é azul durante o dia?",
@@ -3209,19 +3196,6 @@
       ],
       "answer": 0,
       "fact": "Termômetros de mercúrio foram proibidos no Brasil em 2019."
-    },
-    {
-      "id": "ciencias-246",
-      "difficulty": "easy",
-      "text": "Que metal é o principal do aço?",
-      "options": [
-        "Ferro",
-        "Ouro",
-        "Cobre",
-        "Alumínio"
-      ],
-      "answer": 0,
-      "fact": "O aço combina ferro e um pouco de carbono."
     },
     {
       "id": "ciencias-247",
@@ -4467,19 +4441,6 @@
       "fact": "O eixo da Terra é inclinado em 23,5 graus."
     },
     {
-      "id": "ciencias-342",
-      "difficulty": "easy",
-      "text": "Que planeta tem uma mancha vermelha gigante?",
-      "options": [
-        "Júpiter",
-        "Saturno",
-        "Netuno",
-        "Marte"
-      ],
-      "answer": 0,
-      "fact": "A Grande Mancha Vermelha é uma tempestade de mais de 300 anos."
-    },
-    {
       "id": "ciencias-343",
       "difficulty": "easy",
       "text": "Como se chama a estrela da manhã, famosa nos poemas, que é um planeta?",
@@ -4556,19 +4517,6 @@
       ],
       "answer": 0,
       "fact": "O esmalte dos dentes é a substância mais dura do corpo humano."
-    },
-    {
-      "id": "ciencias-349",
-      "difficulty": "easy",
-      "text": "Qual é o nome do telescópio espacial lançado em 2021?",
-      "options": [
-        "James Webb",
-        "Hubble",
-        "Galileu",
-        "Kepler"
-      ],
-      "answer": 0,
-      "fact": "Ele fica a cerca de 1,5 milhão de km da Terra."
     },
     {
       "id": "ciencias-350",
@@ -5971,19 +5919,6 @@
       "fact": "Os russos usam o nome \"cosmonauta\"."
     },
     {
-      "id": "ciencias-454",
-      "difficulty": "easy",
-      "text": "Quem foi a primeira pessoa a pisar na Lua?",
-      "options": [
-        "Neil Armstrong",
-        "Buzz Aldrin",
-        "Yuri Gagarin",
-        "Michael Collins"
-      ],
-      "answer": 0,
-      "fact": "Armstrong pisou na Lua em 20 de julho de 1969."
-    },
-    {
       "id": "ciencias-455",
       "difficulty": "easy",
       "text": "Qual é a cor da superfície de Marte?",
@@ -6021,19 +5956,6 @@
       ],
       "answer": 0,
       "fact": "Ele só acontece na fase de Lua nova."
-    },
-    {
-      "id": "ciencias-458",
-      "difficulty": "easy",
-      "text": "Em quantas fases principais a Lua aparece no céu?",
-      "options": [
-        "4",
-        "2",
-        "6",
-        "8"
-      ],
-      "answer": 0,
-      "fact": "Elas são nova, crescente, cheia e minguante."
     },
     {
       "id": "ciencias-459",
@@ -6112,19 +6034,6 @@
       ],
       "answer": 0,
       "fact": "Daniel Fahrenheit criou um dos primeiros termômetros de mercúrio."
-    },
-    {
-      "id": "ciencias-465",
-      "difficulty": "easy",
-      "text": "Qual aparelho aponta o norte?",
-      "options": [
-        "Bússola",
-        "Termômetro",
-        "Periscópio",
-        "Telescópio"
-      ],
-      "answer": 0,
-      "fact": "Os chineses inventaram a bússola há mais de mil anos."
     },
     {
       "id": "ciencias-466",
@@ -6803,19 +6712,6 @@
       "fact": "O italiano Antonio Meucci também reivindicou a invenção."
     },
     {
-      "id": "ciencias-518",
-      "difficulty": "easy",
-      "text": "Quem é considerado o pai da aviação pelos brasileiros?",
-      "options": [
-        "Santos Dumont",
-        "Irmãos Wright",
-        "Leonardo da Vinci",
-        "Bartolomeu de Gusmão"
-      ],
-      "answer": 0,
-      "fact": "Ele voou com o 14-Bis em Paris, em 1906."
-    },
-    {
       "id": "ciencias-519",
       "difficulty": "easy",
       "text": "Quem foi a cientista pioneira em radioatividade, polonesa e francesa?",
@@ -6998,19 +6894,6 @@
       "fact": "O Brasil tem duas usinas nucleares em Angra dos Reis."
     },
     {
-      "id": "ciencias-533",
-      "difficulty": "easy",
-      "text": "Em que cidade brasileira ficam as usinas nucleares?",
-      "options": [
-        "Angra dos Reis",
-        "Rio de Janeiro",
-        "Santos",
-        "Itaipu"
-      ],
-      "answer": 0,
-      "fact": "Angra 1 começou a operar em 1985."
-    },
-    {
       "id": "ciencias-534",
       "difficulty": "easy",
       "text": "Que combustível sai da cana-de-açúcar no Brasil?",
@@ -7074,19 +6957,6 @@
       ],
       "answer": 0,
       "fact": "A frase foi dita ao pisar na Lua, em 1969."
-    },
-    {
-      "id": "ciencias-539",
-      "difficulty": "easy",
-      "text": "Em qual missão o homem chegou à Lua?",
-      "options": [
-        "Apollo 11",
-        "Apollo 13",
-        "Gemini 4",
-        "Soyuz 1"
-      ],
-      "answer": 0,
-      "fact": "O voo durou cerca de oito dias."
     },
     {
       "id": "ciencias-540",
@@ -8480,19 +8350,6 @@
       "fact": "Ele usou eletricidade para separar os elementos."
     },
     {
-      "id": "ciencias-647",
-      "difficulty": "hard",
-      "text": "Quem inventou a dinamite e criou um prêmio famoso?",
-      "options": [
-        "Alfred Nobel",
-        "Ernest Solvay",
-        "Humphry Davy",
-        "Otto Hahn"
-      ],
-      "answer": 0,
-      "fact": "Ele deixou sua fortuna para o prêmio ao ver um jornal chamá-lo de \"mercador da morte\"."
-    },
-    {
       "id": "ciencias-648",
       "difficulty": "hard",
       "text": "Quem descobriu a fissão nuclear, com Lise Meitner, em 1938?",
@@ -8530,19 +8387,6 @@
       ],
       "answer": 0,
       "fact": "Sua história virou filme de Christopher Nolan em 2023."
-    },
-    {
-      "id": "ciencias-651",
-      "difficulty": "hard",
-      "text": "Qual cientista brasileiro participou da descoberta dos mésons e fundou o CNPq, junto com outros?",
-      "options": [
-        "César Lattes",
-        "José Leite Lopes",
-        "Mário Schenberg",
-        "Carlos Chagas Filho"
-      ],
-      "answer": 0,
-      "fact": "Ele nasceu em Curitiba, em 1924."
     },
     {
       "id": "ciencias-652",
@@ -8933,19 +8777,6 @@
       ],
       "answer": 0,
       "fact": "Nasceu para melhorar as máquinas a vapor."
-    },
-    {
-      "id": "ciencias-682",
-      "difficulty": "hard",
-      "text": "Quem aperfeiçoou a máquina a vapor no século XVIII?",
-      "options": [
-        "James Watt",
-        "Thomas Newcomen",
-        "Robert Fulton",
-        "George Stephenson"
-      ],
-      "answer": 0,
-      "fact": "Uma unidade de potência leva o nome dele."
     },
     {
       "id": "ciencias-683",
@@ -9884,19 +9715,6 @@
       "fact": "Robert Hooke deu nome às células em 1665."
     },
     {
-      "id": "ciencias-751",
-      "difficulty": "medium",
-      "text": "Que planeta foi reclassificado como planeta-anão em 2006?",
-      "options": [
-        "Plutão",
-        "Ceres",
-        "Éris",
-        "Netuno"
-      ],
-      "answer": 0,
-      "fact": "A União Astronômica Internacional mudou a definição."
-    },
-    {
       "id": "ciencias-752",
       "difficulty": "medium",
       "text": "Qual é o elemento químico de símbolo Au?",
@@ -9908,19 +9726,6 @@
       ],
       "answer": 0,
       "fact": "O símbolo vem de \"aurum\", em latim."
-    },
-    {
-      "id": "ciencias-753",
-      "difficulty": "medium",
-      "text": "Que partícula do núcleo não tem carga?",
-      "options": [
-        "Nêutron",
-        "Próton",
-        "Elétron",
-        "Múon"
-      ],
-      "answer": 0,
-      "fact": "James Chadwick a descobriu em 1932."
     },
     {
       "id": "ciencias-754",
@@ -9936,19 +9741,6 @@
       "fact": "Ele previu elementos ainda não descobertos."
     },
     {
-      "id": "ciencias-755",
-      "difficulty": "hard",
-      "text": "Que químico francês é associado à conservação de massa?",
-      "options": [
-        "Antoine Lavoisier",
-        "Louis Pasteur",
-        "Joseph Gay-Lussac",
-        "Marie Curie"
-      ],
-      "answer": 0,
-      "fact": "Ele foi guilhotinado em 1794."
-    },
-    {
       "id": "ciencias-756",
       "difficulty": "hard",
       "text": "Que cientista descobriu o núcleo atômico?",
@@ -9960,45 +9752,6 @@
       ],
       "answer": 0,
       "fact": "O experimento usou uma folha fina de ouro."
-    },
-    {
-      "id": "ciencias-757",
-      "difficulty": "hard",
-      "text": "Que cientista formulou o princípio da incerteza?",
-      "options": [
-        "Werner Heisenberg",
-        "Erwin Schrödinger",
-        "Albert Einstein",
-        "Paul Dirac"
-      ],
-      "answer": 0,
-      "fact": "Ele foi publicado em 1927."
-    },
-    {
-      "id": "ciencias-758",
-      "difficulty": "hard",
-      "text": "Que físico propôs um experimento mental com um gato?",
-      "options": [
-        "Erwin Schrödinger",
-        "Werner Heisenberg",
-        "Niels Bohr",
-        "Max Born"
-      ],
-      "answer": 0,
-      "fact": "O gato estaria vivo e morto ao mesmo tempo."
-    },
-    {
-      "id": "ciencias-759",
-      "difficulty": "hard",
-      "text": "Que cientista previu a partícula descoberta em 2012, no CERN?",
-      "options": [
-        "Peter Higgs",
-        "Stephen Hawking",
-        "Murray Gell-Mann",
-        "Richard Feynman"
-      ],
-      "answer": 0,
-      "fact": "A partícula ficou conhecida como bóson de Higgs."
     },
     {
       "id": "ciencias-760",
@@ -10025,21 +9778,6 @@
       ],
       "answer": 0,
       "fact": "Ela filtra boa parte da radiação ultravioleta."
-    },
-    {
-      "id": "ciencias-762",
-      "difficulty": "impossible",
-      "text": "Qual é a constante de Avogadro, aproximadamente?",
-      "options": [
-        "6,02 × 10²³",
-        "3,14 × 10⁸",
-        "9,81 × 10²³",
-        "1,6 × 10¹⁹",
-        "6,67 × 10¹¹",
-        "8,31 × 10²³"
-      ],
-      "answer": 0,
-      "fact": "Ela indica o número de partículas em um mol."
     },
     {
       "id": "ciencias-763",
@@ -10087,21 +9825,6 @@
       "fact": "O nome homenageia Yuri Oganessian."
     },
     {
-      "id": "ciencias-766",
-      "difficulty": "impossible",
-      "text": "Quantos ossos tem o crânio de um adulto, somando rosto e caixa craniana?",
-      "options": [
-        "22",
-        "14",
-        "8",
-        "32",
-        "26",
-        "12"
-      ],
-      "answer": 0,
-      "fact": "O único osso móvel é a mandíbula."
-    },
-    {
       "id": "ciencias-767",
       "difficulty": "easy",
       "text": "Que fenômeno acontece quando a Lua cobre o Sol?",
@@ -10113,32 +9836,6 @@
       ],
       "answer": 0,
       "fact": "Ele só é visível de faixas estreitas da Terra."
-    },
-    {
-      "id": "ciencias-768",
-      "difficulty": "medium",
-      "text": "Que tipo de sangue é chamado de doador universal, nas hemácias?",
-      "options": [
-        "O negativo",
-        "AB positivo",
-        "A positivo",
-        "B negativo"
-      ],
-      "answer": 0,
-      "fact": "Ele é muito procurado em emergências."
-    },
-    {
-      "id": "ciencias-769",
-      "difficulty": "medium",
-      "text": "Que tipo de sangue é chamado de receptor universal?",
-      "options": [
-        "AB positivo",
-        "O negativo",
-        "A negativo",
-        "B positivo"
-      ],
-      "answer": 0,
-      "fact": "Pode receber hemácias de todos os grupos."
     },
     {
       "id": "ciencias-770",
@@ -10204,32 +9901,6 @@
       ],
       "answer": 0,
       "fact": "A fórmula é V = R × I."
-    },
-    {
-      "id": "ciencias-775",
-      "difficulty": "easy",
-      "text": "Que exame usa radiação para mostrar imagens dos ossos?",
-      "options": [
-        "Raio X",
-        "Ultrassom",
-        "Eletrocardiograma",
-        "Hemograma"
-      ],
-      "answer": 0,
-      "fact": "Wilhelm Röntgen descobriu esses raios em 1895."
-    },
-    {
-      "id": "ciencias-776",
-      "difficulty": "medium",
-      "text": "Que cientista italiano defendeu que a Terra gira em torno do Sol, e foi julgado em 1633?",
-      "options": [
-        "Galileu Galilei",
-        "Giordano Bruno",
-        "Leonardo da Vinci",
-        "Enrico Fermi"
-      ],
-      "answer": 0,
-      "fact": "A Igreja só o reabilitou no século XX."
     }
   ]
 }

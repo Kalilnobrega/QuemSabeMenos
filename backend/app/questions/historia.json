@@ -5971,19 +5971,6 @@
       "fact": "Pedro Américo pintou a cena em um quadro famoso."
     },
     {
-      "id": "historia-454",
-      "difficulty": "easy",
-      "text": "Qual lema está na bandeira do Brasil?",
-      "options": [
-        "Ordem e Progresso",
-        "Independência ou Morte",
-        "Liberdade e Igualdade",
-        "Paz e Amor"
-      ],
-      "answer": 0,
-      "fact": "O lema vem das ideias do filósofo Auguste Comte."
-    },
-    {
       "id": "historia-455",
       "difficulty": "easy",
       "text": "Que frase latina aparece na bandeira de Minas Gerais?",
@@ -6008,19 +5995,6 @@
       ],
       "answer": 0,
       "fact": "O ano foi 1888."
-    },
-    {
-      "id": "historia-457",
-      "difficulty": "easy",
-      "text": "Em que dia se lembra Tiradentes no Brasil?",
-      "options": [
-        "21 de abril",
-        "7 de setembro",
-        "13 de maio",
-        "15 de novembro"
-      ],
-      "answer": 0,
-      "fact": "Ele foi enforcado no Rio de Janeiro em 1792."
     },
     {
       "id": "historia-458",
@@ -6062,19 +6036,6 @@
       "fact": "A mudança para o Rio aconteceu em 1763."
     },
     {
-      "id": "historia-461",
-      "difficulty": "easy",
-      "text": "Que rei de Portugal fugiu de Napoleão e veio ao Brasil?",
-      "options": [
-        "Dom João VI",
-        "Dom Pedro I",
-        "Dom Manuel",
-        "Dom Sebastião"
-      ],
-      "answer": 0,
-      "fact": "A corte chegou em 1808."
-    },
-    {
       "id": "historia-462",
       "difficulty": "easy",
       "text": "Em que ano aconteceu a chegada de Cabral ao Brasil?",
@@ -6086,19 +6047,6 @@
       ],
       "answer": 0,
       "fact": "A expedição seguia em direção à Índia."
-    },
-    {
-      "id": "historia-463",
-      "difficulty": "easy",
-      "text": "Que povos ocupavam o Brasil antes da chegada dos europeus?",
-      "options": [
-        "Povos indígenas",
-        "Vikings",
-        "Romanos",
-        "Árabes"
-      ],
-      "answer": 0,
-      "fact": "Estima-se que eram milhões de pessoas."
     },
     {
       "id": "historia-464",
@@ -6296,19 +6244,6 @@
       "fact": "Atenas leva o nome dela."
     },
     {
-      "id": "historia-479",
-      "difficulty": "easy",
-      "text": "Que herói grego tinha um calcanhar vulnerável?",
-      "options": [
-        "Aquiles",
-        "Hércules",
-        "Ulisses",
-        "Perseu"
-      ],
-      "answer": 0,
-      "fact": "Ele foi morto por uma flecha em Troia."
-    },
-    {
       "id": "historia-480",
       "difficulty": "easy",
       "text": "Que herói mitológico executou doze trabalhos?",
@@ -6320,32 +6255,6 @@
       ],
       "answer": 0,
       "fact": "Ele matou a Hidra e o Leão da Nemeia."
-    },
-    {
-      "id": "historia-481",
-      "difficulty": "easy",
-      "text": "Que monstro da mitologia grega transformava em pedra quem a olhasse?",
-      "options": [
-        "Medusa",
-        "Hidra",
-        "Quimera",
-        "Esfinge"
-      ],
-      "answer": 0,
-      "fact": "Perseu cortou a cabeça dela."
-    },
-    {
-      "id": "historia-482",
-      "difficulty": "easy",
-      "text": "Que personagem da mitologia grega abriu uma caixa cheia de males?",
-      "options": [
-        "Pandora",
-        "Afrodite",
-        "Hera",
-        "Medeia"
-      ],
-      "answer": 0,
-      "fact": "Ao fim, sobrou só a esperança."
     },
     {
       "id": "historia-483",
@@ -6634,19 +6543,6 @@
       "fact": "Ela foi de 1964 a 1985."
     },
     {
-      "id": "historia-505",
-      "difficulty": "easy",
-      "text": "Que movimento pediu eleições diretas no Brasil, em 1984?",
-      "options": [
-        "Diretas Já",
-        "Fora Collor",
-        "Caras-Pintadas",
-        "Tenentismo"
-      ],
-      "answer": 0,
-      "fact": "Milhões de pessoas foram às ruas."
-    },
-    {
       "id": "historia-506",
       "difficulty": "easy",
       "text": "Como ficaram conhecidos os jovens que pediram a saída de Collor em 1992?",
@@ -6697,19 +6593,6 @@
       ],
       "answer": 0,
       "fact": "A bomba matou cerca de 140 mil pessoas até o fim de 1945."
-    },
-    {
-      "id": "historia-510",
-      "difficulty": "easy",
-      "text": "Qual é a grande rota comercial da Idade Média, entre o Mediterrâneo e a China?",
-      "options": [
-        "Rota da Seda",
-        "Rota das Índias",
-        "Rota do Sal",
-        "Estrada Real"
-      ],
-      "answer": 0,
-      "fact": "Marco Polo seguiu essa rota."
     },
     {
       "id": "historia-511",
@@ -6827,19 +6710,6 @@
       ],
       "answer": 0,
       "fact": "O livro \"Os Sertões\" conta a história dessa guerra."
-    },
-    {
-      "id": "historia-520",
-      "difficulty": "easy",
-      "text": "Quem escreveu \"Os Sertões\"?",
-      "options": [
-        "Euclides da Cunha",
-        "Machado de Assis",
-        "Graciliano Ramos",
-        "Jorge Amado"
-      ],
-      "answer": 0,
-      "fact": "Ele cobriu a guerra como jornalista."
     },
     {
       "id": "historia-521",
@@ -7063,19 +6933,6 @@
       "fact": "O Brasil foi o último país das Américas a abolir a escravidão."
     },
     {
-      "id": "historia-538",
-      "difficulty": "medium",
-      "text": "Quem assinou a Lei Áurea como regente?",
-      "options": [
-        "Princesa Isabel",
-        "Dom Pedro II",
-        "Dona Leopoldina",
-        "Rainha Vitória"
-      ],
-      "answer": 0,
-      "fact": "Dom Pedro II estava na Europa, em tratamento."
-    },
-    {
       "id": "historia-539",
       "difficulty": "medium",
       "text": "Quem foi a esposa austríaca de Dom Pedro I?",
@@ -7152,19 +7009,6 @@
       ],
       "answer": 0,
       "fact": "Ele se destacou em uma conferência de paz em 1907."
-    },
-    {
-      "id": "historia-545",
-      "difficulty": "medium",
-      "text": "Quem foi o \"Poeta dos Escravos\"?",
-      "options": [
-        "Castro Alves",
-        "Machado de Assis",
-        "Gonçalves Dias",
-        "José do Patrocínio"
-      ],
-      "answer": 0,
-      "fact": "Ele escreveu \"Navio Negreiro\" e \"Vozes d'África\"."
     },
     {
       "id": "historia-546",
@@ -7802,19 +7646,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi morto quando o avião em que estava foi abatido, em 1943."
-    },
-    {
-      "id": "historia-595",
-      "difficulty": "medium",
-      "text": "Quem foi o matemático britânico que decifrou a máquina Enigma?",
-      "options": [
-        "Alan Turing",
-        "Isaac Newton",
-        "Bertrand Russell",
-        "John von Neumann"
-      ],
-      "answer": 0,
-      "fact": "O filme O Jogo da Imitação conta a história dele."
     },
     {
       "id": "historia-596",
@@ -8712,19 +8543,6 @@
       ],
       "answer": 0,
       "fact": "A cúpula é a maior do mundo de concreto sem reforço."
-    },
-    {
-      "id": "historia-665",
-      "difficulty": "hard",
-      "text": "Qual imperador romano teria nomeado cônsul o próprio cavalo?",
-      "options": [
-        "Calígula",
-        "Nero",
-        "Cômodo",
-        "Tibério"
-      ],
-      "answer": 0,
-      "fact": "O cavalo se chamava Incitatus."
     },
     {
       "id": "historia-666",
@@ -9806,19 +9624,6 @@
       "fact": "A frota partiu de Lisboa em março."
     },
     {
-      "id": "historia-745",
-      "difficulty": "easy",
-      "text": "Quem proclamou a República no Brasil?",
-      "options": [
-        "Deodoro da Fonseca",
-        "Getúlio Vargas",
-        "Dom Pedro II",
-        "Floriano Peixoto"
-      ],
-      "answer": 0,
-      "fact": "O ato ocorreu em 1889."
-    },
-    {
       "id": "historia-746",
       "difficulty": "easy",
       "text": "Qual civilização construiu as pirâmides de Gizé?",
@@ -9884,19 +9689,6 @@
       "fact": "Ele governou até morrer, em 1953."
     },
     {
-      "id": "historia-751",
-      "difficulty": "medium",
-      "text": "Quem liderou a Revolução Cubana, em 1959?",
-      "options": [
-        "Fidel Castro",
-        "Che Guevara",
-        "Raúl Castro",
-        "Fulgencio Batista"
-      ],
-      "answer": 0,
-      "fact": "Ele governou o país por quase 50 anos."
-    },
-    {
       "id": "historia-752",
       "difficulty": "medium",
       "text": "Quem foi o primeiro presidente negro da África do Sul?",
@@ -9923,32 +9715,6 @@
       "fact": "A Índia se tornou independente em 1947."
     },
     {
-      "id": "historia-754",
-      "difficulty": "medium",
-      "text": "Quem foi o rei da França guilhotinado em 1793?",
-      "options": [
-        "Luís XVI",
-        "Luís XIV",
-        "Napoleão",
-        "Carlos X"
-      ],
-      "answer": 0,
-      "fact": "A esposa, Maria Antonieta, teve o mesmo fim."
-    },
-    {
-      "id": "historia-755",
-      "difficulty": "medium",
-      "text": "Que batalha marcou a derrota final de Napoleão?",
-      "options": [
-        "Waterloo",
-        "Austerlitz",
-        "Trafalgar",
-        "Borodino"
-      ],
-      "answer": 0,
-      "fact": "Foi em 1815, na atual Bélgica."
-    },
-    {
       "id": "historia-756",
       "difficulty": "medium",
       "text": "Quem pintou o quadro \"Independência ou Morte!\"?",
@@ -9962,19 +9728,6 @@
       "fact": "Ele fica no Museu do Ipiranga."
     },
     {
-      "id": "historia-757",
-      "difficulty": "medium",
-      "text": "Que presidente brasileiro se matou em 1954?",
-      "options": [
-        "Getúlio Vargas",
-        "João Goulart",
-        "Café Filho",
-        "Juscelino Kubitschek"
-      ],
-      "answer": 0,
-      "fact": "A carta-testamento dele ficou famosa."
-    },
-    {
       "id": "historia-758",
       "difficulty": "hard",
       "text": "Que ato de 1968 endureceu a ditadura militar?",
@@ -9986,45 +9739,6 @@
       ],
       "answer": 0,
       "fact": "Ele fechou o Congresso."
-    },
-    {
-      "id": "historia-759",
-      "difficulty": "hard",
-      "text": "Que lei de 1979 permitiu a volta de exilados ao Brasil?",
-      "options": [
-        "Lei da Anistia",
-        "Lei Falcão",
-        "Lei Áurea",
-        "Lei do Ventre Livre"
-      ],
-      "answer": 0,
-      "fact": "Ela também protegeu agentes da repressão."
-    },
-    {
-      "id": "historia-760",
-      "difficulty": "hard",
-      "text": "Que campanha de 1984 pedia eleições presidenciais diretas?",
-      "options": [
-        "Diretas Já",
-        "Fora Collor",
-        "Cara Pintada",
-        "Marcha da Família"
-      ],
-      "answer": 0,
-      "fact": "A emenda foi rejeitada no Congresso."
-    },
-    {
-      "id": "historia-761",
-      "difficulty": "hard",
-      "text": "Que arquiduque foi morto em Sarajevo, em 1914?",
-      "options": [
-        "Francisco Ferdinando",
-        "Francisco José",
-        "Guilherme II",
-        "Nicolau II"
-      ],
-      "answer": 0,
-      "fact": "O atentado detonou a Primeira Guerra."
     },
     {
       "id": "historia-762",
@@ -10066,19 +9780,6 @@
       "fact": "Os otomanos tomaram a cidade."
     },
     {
-      "id": "historia-765",
-      "difficulty": "hard",
-      "text": "Que cidade antiga foi soterrada pelo Vesúvio, no ano 79?",
-      "options": [
-        "Pompeia",
-        "Atenas",
-        "Cartago",
-        "Roma"
-      ],
-      "answer": 0,
-      "fact": "Herculano também foi destruída."
-    },
-    {
       "id": "historia-766",
       "difficulty": "impossible",
       "text": "Em que ano foi assinada a Magna Carta?",
@@ -10092,36 +9793,6 @@
       ],
       "answer": 0,
       "fact": "Ela limitou os poderes do rei João da Inglaterra."
-    },
-    {
-      "id": "historia-767",
-      "difficulty": "impossible",
-      "text": "Quantos anos durou a Guerra dos Cem Anos, na contagem oficial?",
-      "options": [
-        "116",
-        "100",
-        "99",
-        "130",
-        "90",
-        "120"
-      ],
-      "answer": 0,
-      "fact": "Ela foi travada entre França e Inglaterra."
-    },
-    {
-      "id": "historia-768",
-      "difficulty": "impossible",
-      "text": "Quantos anos durou o reinado de Luís XIV?",
-      "options": [
-        "72",
-        "50",
-        "45",
-        "60",
-        "80",
-        "30"
-      ],
-      "answer": 0,
-      "fact": "É o mais longo da história da Europa."
     },
     {
       "id": "historia-769",
@@ -10178,19 +9849,6 @@
       "fact": "O nome verdadeiro é Joaquim José da Silva Xavier."
     },
     {
-      "id": "historia-773",
-      "difficulty": "easy",
-      "text": "Quem foi o líder do Quilombo dos Palmares?",
-      "options": [
-        "Zumbi",
-        "Ganga Zumba",
-        "Tiradentes",
-        "Dom Pedro"
-      ],
-      "answer": 0,
-      "fact": "O Dia da Consciência Negra lembra a morte dele."
-    },
-    {
       "id": "historia-774",
       "difficulty": "hard",
       "text": "Que guerra dividiu Sul e Norte dos EUA, de 1861 a 1865?",
@@ -10202,19 +9860,6 @@
       ],
       "answer": 0,
       "fact": "Abraham Lincoln era o presidente."
-    },
-    {
-      "id": "historia-775",
-      "difficulty": "hard",
-      "text": "Que batalha de 1805 consagrou o almirante Nelson?",
-      "options": [
-        "Trafalgar",
-        "Waterloo",
-        "Austerlitz",
-        "Jutlândia"
-      ],
-      "answer": 0,
-      "fact": "Ele morreu durante a vitória."
     },
     {
       "id": "historia-776",

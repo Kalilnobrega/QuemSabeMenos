@@ -128,13 +128,6 @@
       "fact": "É o único felino realmente social."
     },
     {
-      "id": "vf-animais-e-natureza-19",
-      "difficulty": "medium",
-      "text": "As baleias são peixes.",
-      "answer": false,
-      "fact": "As baleias são mamíferos e amamentam os filhotes."
-    },
-    {
       "id": "vf-animais-e-natureza-20",
       "difficulty": "medium",
       "text": "O sapo começa a vida como um girino.",
@@ -394,13 +387,6 @@
       "fact": "Ela pode voltar ao estágio de pólipo."
     },
     {
-      "id": "vf-animais-e-natureza-57",
-      "difficulty": "hard",
-      "text": "Polvos têm apenas um coração.",
-      "answer": false,
-      "fact": "Eles têm três corações."
-    },
-    {
       "id": "vf-animais-e-natureza-58",
       "difficulty": "hard",
       "text": "Um tardígrado pode sobreviver no vácuo do espaço.",
@@ -644,20 +630,6 @@
       "text": "As hienas-malhadas só comem restos deixados por outros animais.",
       "answer": false,
       "fact": "Na verdade, elas caçam boa parte do alimento."
-    },
-    {
-      "id": "vf-animais-e-natureza-93",
-      "difficulty": "hard",
-      "text": "O macho do cavalo-marinho carrega os filhotes.",
-      "answer": true,
-      "fact": "A fêmea deposita os ovos em uma bolsa dele."
-    },
-    {
-      "id": "vf-animais-e-natureza-94",
-      "difficulty": "hard",
-      "text": "O camaleão muda de cor apenas para se esconder.",
-      "answer": false,
-      "fact": "A mudança também serve para comunicação e controle de temperatura."
     }
   ]
 }

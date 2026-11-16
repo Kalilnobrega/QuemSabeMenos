@@ -6153,19 +6153,6 @@
       "fact": "O nome significa \"penas\" em italiano."
     },
     {
-      "id": "comida-e-bebida-468",
-      "difficulty": "easy",
-      "text": "Qual destes é um tipo de massa italiana em forma de borboleta?",
-      "options": [
-        "Farfalle",
-        "Penne",
-        "Fusilli",
-        "Rigatoni"
-      ],
-      "answer": 0,
-      "fact": "O nome significa \"borboletas\" em italiano."
-    },
-    {
       "id": "comida-e-bebida-469",
       "difficulty": "easy",
       "text": "Qual destes é um tipo de massa em forma de parafuso?",
@@ -6413,19 +6400,6 @@
       "fact": "Em São Paulo, a quarta-feira é outro dia tradicional."
     },
     {
-      "id": "comida-e-bebida-488",
-      "difficulty": "easy",
-      "text": "Em que país o sushi é tradicional?",
-      "options": [
-        "Japão",
-        "China",
-        "Coreia do Sul",
-        "Tailândia"
-      ],
-      "answer": 0,
-      "fact": "No início, ele era uma técnica de conservar peixe."
-    },
-    {
       "id": "comida-e-bebida-489",
       "difficulty": "easy",
       "text": "Em que país a pizza nasceu, na forma atual?",
@@ -6437,19 +6411,6 @@
       ],
       "answer": 0,
       "fact": "Nápoles é considerada a sua casa."
-    },
-    {
-      "id": "comida-e-bebida-490",
-      "difficulty": "easy",
-      "text": "Em que país o macarrão instantâneo foi criado?",
-      "options": [
-        "Japão",
-        "China",
-        "Coreia do Sul",
-        "Estados Unidos"
-      ],
-      "answer": 0,
-      "fact": "O miojo foi lançado em 1958."
     },
     {
       "id": "comida-e-bebida-491",
@@ -7934,19 +7895,6 @@
       "fact": "A técnica é usada há milhares de anos."
     },
     {
-      "id": "comida-e-bebida-605",
-      "difficulty": "easy",
-      "text": "Qual fruta tem seus \"pelos\" dentro e costuma ser servida em lata com calda?",
-      "options": [
-        "Pêssego",
-        "Banana",
-        "Laranja",
-        "Melão"
-      ],
-      "answer": 0,
-      "fact": "Ele é muito popular nas sobremesas de Natal."
-    },
-    {
       "id": "comida-e-bebida-606",
       "difficulty": "easy",
       "text": "Qual prato costuma levar arroz, feijão, bife e ovo no almoço brasileiro?",
@@ -8426,19 +8374,6 @@
       ],
       "answer": 0,
       "fact": "Ele é parente da grappa italiana."
-    },
-    {
-      "id": "comida-e-bebida-643",
-      "difficulty": "hard",
-      "text": "Qual é o destilado mexicano defumado, feito de agave?",
-      "options": [
-        "Mezcal",
-        "Tequila",
-        "Pisco",
-        "Rum"
-      ],
-      "answer": 0,
-      "fact": "Algumas garrafas trazem um verme."
     },
     {
       "id": "comida-e-bebida-644",
@@ -9806,19 +9741,6 @@
       "fact": "O nome homenageia o brigadeiro Eduardo Gomes."
     },
     {
-      "id": "comida-e-bebida-745",
-      "difficulty": "easy",
-      "text": "Que prato baiano é um bolinho frito de feijão-fradinho?",
-      "options": [
-        "Acarajé",
-        "Tapioca",
-        "Pamonha",
-        "Cuscuz"
-      ],
-      "answer": 0,
-      "fact": "Ele costuma levar vatapá e camarão."
-    },
-    {
       "id": "comida-e-bebida-746",
       "difficulty": "easy",
       "text": "Que massa de mandioca, feita na frigideira, é típica do Nordeste?",
@@ -9830,32 +9752,6 @@
       ],
       "answer": 0,
       "fact": "Ela também é chamada de beiju."
-    },
-    {
-      "id": "comida-e-bebida-747",
-      "difficulty": "easy",
-      "text": "Que salgado tem frango desfiado e formato de gota?",
-      "options": [
-        "Coxinha",
-        "Empada",
-        "Quibe",
-        "Esfiha"
-      ],
-      "answer": 0,
-      "fact": "Ela é um clássico das festas brasileiras."
-    },
-    {
-      "id": "comida-e-bebida-748",
-      "difficulty": "easy",
-      "text": "Que salgado árabe tem carne moída e trigo, e é popular no Brasil?",
-      "options": [
-        "Quibe",
-        "Coxinha",
-        "Pastel",
-        "Bolinho de bacalhau"
-      ],
-      "answer": 0,
-      "fact": "Os imigrantes sírios e libaneses o trouxeram."
     },
     {
       "id": "comida-e-bebida-749",
@@ -9871,45 +9767,6 @@
       "fact": "A receita clássica leva também cachaça, açúcar e gelo."
     },
     {
-      "id": "comida-e-bebida-750",
-      "difficulty": "easy",
-      "text": "Que bebida quente de erva é típica do Rio Grande do Sul?",
-      "options": [
-        "Chimarrão",
-        "Tereré",
-        "Mate gelado",
-        "Quentão"
-      ],
-      "answer": 0,
-      "fact": "Ele é tomado em uma cuia, com bomba."
-    },
-    {
-      "id": "comida-e-bebida-751",
-      "difficulty": "easy",
-      "text": "Que bebida gelada de erva-mate é típica do Paraguai e de Mato Grosso do Sul?",
-      "options": [
-        "Tereré",
-        "Chimarrão",
-        "Guaraná",
-        "Quentão"
-      ],
-      "answer": 0,
-      "fact": "Ela é feita com água gelada."
-    },
-    {
-      "id": "comida-e-bebida-752",
-      "difficulty": "medium",
-      "text": "Que queijo italiano é usado para fazer tiramisù?",
-      "options": [
-        "Mascarpone",
-        "Muçarela",
-        "Parmesão",
-        "Gorgonzola"
-      ],
-      "answer": 0,
-      "fact": "Ele é cremoso e tem sabor suave."
-    },
-    {
       "id": "comida-e-bebida-753",
       "difficulty": "medium",
       "text": "Que queijo italiano é o verdadeiro parmesão?",
@@ -9921,45 +9778,6 @@
       ],
       "answer": 0,
       "fact": "A denominação de origem é protegida na Itália."
-    },
-    {
-      "id": "comida-e-bebida-754",
-      "difficulty": "medium",
-      "text": "Que molho francês leva manteiga, gema e limão?",
-      "options": [
-        "Holandês",
-        "Bechamel",
-        "Pesto",
-        "Tártaro"
-      ],
-      "answer": 0,
-      "fact": "Ele é servido em ovos beneditinos."
-    },
-    {
-      "id": "comida-e-bebida-755",
-      "difficulty": "medium",
-      "text": "Que molho italiano leva manjericão, pinoli e queijo?",
-      "options": [
-        "Pesto",
-        "Bolonhesa",
-        "Carbonara",
-        "Alfredo"
-      ],
-      "answer": 0,
-      "fact": "A receita clássica vem de Gênova."
-    },
-    {
-      "id": "comida-e-bebida-756",
-      "difficulty": "medium",
-      "text": "Que prato italiano leva ovo, queijo e guanciale?",
-      "options": [
-        "Carbonara",
-        "Bolonhesa",
-        "Amatriciana",
-        "Pesto"
-      ],
-      "answer": 0,
-      "fact": "Creme de leite não faz parte da receita tradicional."
     },
     {
       "id": "comida-e-bebida-757",
@@ -9988,19 +9806,6 @@
       "fact": "Ele é típico da Andaluzia."
     },
     {
-      "id": "comida-e-bebida-759",
-      "difficulty": "medium",
-      "text": "Que prato peruano é feito de peixe cru curtido em limão?",
-      "options": [
-        "Ceviche",
-        "Sushi",
-        "Sashimi",
-        "Poke"
-      ],
-      "answer": 0,
-      "fact": "O Peru o considera patrimônio nacional."
-    },
-    {
       "id": "comida-e-bebida-760",
       "difficulty": "medium",
       "text": "Que prato japonês é uma sopa de macarrão com caldo?",
@@ -10012,19 +9817,6 @@
       ],
       "answer": 0,
       "fact": "Ele veio da China e virou febre no Japão."
-    },
-    {
-      "id": "comida-e-bebida-761",
-      "difficulty": "hard",
-      "text": "Que bebida francesa só pode levar esse nome se vier de uma região específica?",
-      "options": [
-        "Champanhe",
-        "Conhaque de vinho",
-        "Cava",
-        "Prosecco"
-      ],
-      "answer": 0,
-      "fact": "A regra protege a região de Champagne."
     },
     {
       "id": "comida-e-bebida-762",
@@ -10079,32 +9871,6 @@
       "fact": "Mendoza é o grande polo de produção."
     },
     {
-      "id": "comida-e-bebida-766",
-      "difficulty": "hard",
-      "text": "Que uva é a mais famosa do Uruguai?",
-      "options": [
-        "Tannat",
-        "Malbec",
-        "Carmenère",
-        "Syrah"
-      ],
-      "answer": 0,
-      "fact": "Ela produz vinhos muito tânicos."
-    },
-    {
-      "id": "comida-e-bebida-767",
-      "difficulty": "hard",
-      "text": "Que uva é a mais famosa do Chile?",
-      "options": [
-        "Carmenère",
-        "Malbec",
-        "Tannat",
-        "Riesling"
-      ],
-      "answer": 0,
-      "fact": "Muitos acreditavam que ela estava extinta."
-    },
-    {
       "id": "comida-e-bebida-768",
       "difficulty": "hard",
       "text": "Que bebida japonesa é feita de arroz fermentado?",
@@ -10144,36 +9910,6 @@
       ],
       "answer": 0,
       "fact": "Ela passa de 2,6 milhões de unidades Scoville."
-    },
-    {
-      "id": "comida-e-bebida-771",
-      "difficulty": "impossible",
-      "text": "Em que ano nasceu a receita do Big Mac?",
-      "options": [
-        "1967",
-        "1948",
-        "1975",
-        "1985",
-        "1955",
-        "1999"
-      ],
-      "answer": 0,
-      "fact": "Jim Delligatti a criou na Pensilvânia."
-    },
-    {
-      "id": "comida-e-bebida-772",
-      "difficulty": "impossible",
-      "text": "Em que ano a pizza margherita teria sido criada?",
-      "options": [
-        "1889",
-        "1750",
-        "1920",
-        "1600",
-        "1945",
-        "1820"
-      ],
-      "answer": 0,
-      "fact": "Ela teria homenageado a rainha da Itália."
     },
     {
       "id": "comida-e-bebida-773",

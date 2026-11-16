@@ -401,13 +401,6 @@
       "fact": "A chance sobe de 1/3 para 2/3."
     },
     {
-      "id": "vf-matematica-e-logica-58",
-      "difficulty": "hard",
-      "text": "No problema de Monty Hall, a troca não muda a chance.",
-      "answer": false,
-      "fact": "Mudar de porta dobra a chance de ganhar."
-    },
-    {
       "id": "vf-matematica-e-logica-59",
       "difficulty": "hard",
       "text": "A sequência de Fibonacci se aproxima da razão áurea.",
@@ -532,13 +525,6 @@
       "text": "Um triângulo escaleno tem três lados iguais.",
       "answer": false,
       "fact": "Ele tem todos os lados diferentes."
-    },
-    {
-      "id": "vf-matematica-e-logica-77",
-      "difficulty": "hard",
-      "text": "A soma de 1 a 100 é 5.050.",
-      "answer": true,
-      "fact": "Gauss teria feito essa conta ainda na escola."
     },
     {
       "id": "vf-matematica-e-logica-78",

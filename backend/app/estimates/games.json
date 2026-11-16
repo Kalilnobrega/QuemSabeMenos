@@ -450,14 +450,6 @@
       "fact": "Faltou muito na época da pandemia."
     },
     {
-      "id": "chute-games-57",
-      "difficulty": "easy",
-      "text": "Em que ano foi lançado o Xbox?",
-      "answer": 2001,
-      "scale": 50,
-      "fact": "Foi a estreia da Microsoft nos consoles."
-    },
-    {
       "id": "chute-games-58",
       "difficulty": "easy",
       "text": "Em que ano foi lançado o Xbox 360?",
@@ -520,14 +512,6 @@
       "answer": 2025,
       "scale": 50,
       "fact": "Ele vendeu milhões nos primeiros dias."
-    },
-    {
-      "id": "chute-games-66",
-      "difficulty": "easy",
-      "text": "Em que ano foi lançado \"The Legend of Zelda\", original?",
-      "answer": 1986,
-      "scale": 50,
-      "fact": "O cartucho era dourado."
     },
     {
       "id": "chute-games-67",
@@ -890,14 +874,6 @@
       "fact": "Ele foi o mascote informal do primeiro PlayStation."
     },
     {
-      "id": "chute-games-112",
-      "difficulty": "easy",
-      "text": "Em que ano foi lançado \"Resident Evil\", original?",
-      "answer": 1996,
-      "scale": 50,
-      "fact": "As frases dubladas são engraçadas até hoje."
-    },
-    {
       "id": "chute-games-113",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Metal Gear Solid\", original?",
@@ -960,14 +936,6 @@
       "answer": 1979,
       "scale": 50,
       "fact": "Os jogadores o preferiram ao Space Invaders."
-    },
-    {
-      "id": "chute-games-121",
-      "difficulty": "easy",
-      "text": "Em que ano foi lançado \"Donkey Kong\", original?",
-      "answer": 1981,
-      "scale": 50,
-      "fact": "Foi o primeiro em que Mario apareceu."
     },
     {
       "id": "chute-games-122",
@@ -1488,14 +1456,6 @@
       "answer": 184,
       "unit": "bilhões",
       "fact": "É mais que o cinema e a música somados."
-    },
-    {
-      "id": "chute-games-187",
-      "difficulty": "medium",
-      "text": "Quantas peças tem um dominó tradicional?",
-      "answer": 28,
-      "unit": "peças",
-      "fact": "O jogo veio da China, passando pela Itália."
     },
     {
       "id": "chute-games-188",
@@ -2266,14 +2226,6 @@
       "fact": "Foi criado por um matemático, Richard Garfield."
     },
     {
-      "id": "chute-games-284",
-      "difficulty": "medium",
-      "text": "Em que ano o jogo Banco Imobiliário foi lançado no Brasil?",
-      "answer": 1944,
-      "scale": 50,
-      "fact": "A Estrela é a fabricante."
-    },
-    {
       "id": "chute-games-285",
       "difficulty": "medium",
       "text": "Qual é a altitude do ponto mais baixo do mundo de Minecraft, em blocos?",
@@ -2586,14 +2538,6 @@
       "fact": "O Steam foi lançado junto com ele."
     },
     {
-      "id": "chute-games-324",
-      "difficulty": "hard",
-      "text": "Em que ano saiu \"Counter-Strike\", como mod?",
-      "answer": 1999,
-      "scale": 50,
-      "fact": "Foi criado por Minh Le e Jess Cliffe."
-    },
-    {
       "id": "chute-games-325",
       "difficulty": "hard",
       "text": "Em que ano saiu \"BioShock\", original?",
@@ -2696,14 +2640,6 @@
       "answer": 2020,
       "scale": 50,
       "fact": "A Epic Games comprou o estúdio em 2021."
-    },
-    {
-      "id": "chute-games-338",
-      "difficulty": "hard",
-      "text": "Em que ano saiu \"Among Us\", original?",
-      "answer": 2018,
-      "scale": 50,
-      "fact": "Só virou febre em 2020."
     },
     {
       "id": "chute-games-339",
@@ -3098,52 +3034,12 @@
       "fact": "Dá para ganhar mais pegando cogumelos verdes."
     },
     {
-      "id": "chute-games-388",
-      "difficulty": "easy",
-      "text": "Quantas moedas Mario precisa pegar para ganhar uma vida extra?",
-      "answer": 100,
-      "unit": "moedas",
-      "fact": "A contagem volta a zero depois disso."
-    },
-    {
-      "id": "chute-games-389",
-      "difficulty": "easy",
-      "text": "Quantos fantasmas perseguem Pac-Man no labirinto?",
-      "answer": 4,
-      "unit": "fantasmas",
-      "fact": "Blinky, Pinky, Inky e Clyde."
-    },
-    {
       "id": "chute-games-390",
       "difficulty": "medium",
       "text": "Quantos anéis Sonic precisa ter para ganhar uma vida?",
       "answer": 100,
       "unit": "anéis",
       "fact": "Ele os perde ao levar um golpe."
-    },
-    {
-      "id": "chute-games-391",
-      "difficulty": "easy",
-      "text": "Quantas peças diferentes tem o Tetris clássico?",
-      "answer": 7,
-      "unit": "peças",
-      "fact": "Cada uma tem quatro quadrados."
-    },
-    {
-      "id": "chute-games-392",
-      "difficulty": "easy",
-      "text": "Quantos blocos forma cada peça do Tetris?",
-      "answer": 4,
-      "unit": "blocos",
-      "fact": "O nome vem do prefixo grego \"tetra\"."
-    },
-    {
-      "id": "chute-games-393",
-      "difficulty": "easy",
-      "text": "Quantos jogadores por time há em Counter-Strike competitivo?",
-      "answer": 5,
-      "unit": "jogadores",
-      "fact": "A partida vai até 13 vitórias de rodada."
     },
     {
       "id": "chute-games-394",

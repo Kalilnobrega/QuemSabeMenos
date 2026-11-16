@@ -514,14 +514,6 @@
       "fact": "O primeiro sorteio foi em março."
     },
     {
-      "id": "chute-dinheiro-e-negocios-65",
-      "difficulty": "easy",
-      "text": "Em que ano o iFood foi fundado?",
-      "answer": 2011,
-      "scale": 50,
-      "fact": "Começou como um guia impresso de cardápios."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-66",
       "difficulty": "easy",
       "text": "Em que ano a Uber começou a operar no Brasil?",
@@ -536,14 +528,6 @@
       "answer": 2008,
       "scale": 50,
       "fact": "Ele surgiu na Suécia."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-68",
-      "difficulty": "easy",
-      "text": "Em que ano o Airbnb foi fundado?",
-      "answer": 2008,
-      "scale": 50,
-      "fact": "O nome original era AirBed & Breakfast."
     },
     {
       "id": "chute-dinheiro-e-negocios-69",
@@ -576,14 +560,6 @@
       "answer": 1898,
       "scale": 50,
       "fact": "Primeiro ela se chamava Brad's Drink."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-73",
-      "difficulty": "hard",
-      "text": "Em que ano foi criado o Guaraná Antarctica?",
-      "answer": 1921,
-      "scale": 50,
-      "fact": "A fórmula é mantida em segredo."
     },
     {
       "id": "chute-dinheiro-e-negocios-74",
@@ -768,14 +744,6 @@
       "answer": 7,
       "unit": "dias",
       "fact": "É contado a partir do recebimento."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-97",
-      "difficulty": "easy",
-      "text": "Em que ano foi criado o Código de Defesa do Consumidor?",
-      "answer": 1990,
-      "scale": 50,
-      "fact": "Entrou em vigor em março de 1991."
     },
     {
       "id": "chute-dinheiro-e-negocios-98",
@@ -1280,44 +1248,12 @@
       "fact": "O nome mudou em 1924."
     },
     {
-      "id": "chute-dinheiro-e-negocios-161",
-      "difficulty": "medium",
-      "text": "Em que ano foi fundada a Intel?",
-      "answer": 1968,
-      "scale": 50,
-      "fact": "Gordon Moore e Robert Noyce foram os criadores."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-162",
-      "difficulty": "medium",
-      "text": "Em que ano foi fundada a Sony?",
-      "answer": 1946,
-      "scale": 50,
-      "fact": "A sede foi aberta em uma Tóquio em ruínas."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-163",
-      "difficulty": "medium",
-      "text": "Em que ano foi fundada a Samsung?",
-      "answer": 1938,
-      "scale": 50,
-      "fact": "Começou vendendo macarrão e peixe seco."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-164",
       "difficulty": "medium",
       "text": "Em que ano foi fundada a Kodak?",
       "answer": 1888,
       "scale": 50,
       "fact": "George Eastman criou o lema \"aperte o botão que nós fazemos o resto\"."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-165",
-      "difficulty": "medium",
-      "text": "Em que ano foi fundada a Nestlé?",
-      "answer": 1866,
-      "scale": 50,
-      "fact": "Henri Nestlé criou uma farinha láctea para bebês."
     },
     {
       "id": "chute-dinheiro-e-negocios-166",
@@ -1398,14 +1334,6 @@
       "answer": 1954,
       "scale": 50,
       "fact": "Começou em Miami, Flórida."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-176",
-      "difficulty": "medium",
-      "text": "Em que ano o Subway foi fundado?",
-      "answer": 1965,
-      "scale": 50,
-      "fact": "O fundador tinha 17 anos e queria pagar a faculdade."
     },
     {
       "id": "chute-dinheiro-e-negocios-177",
@@ -1592,14 +1520,6 @@
       "fact": "Ele também deixou Harvard."
     },
     {
-      "id": "chute-dinheiro-e-negocios-200",
-      "difficulty": "medium",
-      "text": "Quantos anos Steve Jobs tinha quando morreu, em 2011?",
-      "answer": 56,
-      "unit": "anos",
-      "fact": "Ele enfrentava um câncer no pâncreas."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-201",
       "difficulty": "medium",
       "text": "Quantos anos Warren Buffett tinha ao deixar o comando da Berkshire, no fim de 2025?",
@@ -1648,14 +1568,6 @@
       "fact": "Cada dia custou bilhões ao comércio mundial."
     },
     {
-      "id": "chute-dinheiro-e-negocios-207",
-      "difficulty": "easy",
-      "text": "Em que ano a Nintendo lançou o Switch?",
-      "answer": 2017,
-      "scale": 50,
-      "fact": "O console já vendeu mais de 150 milhões de unidades."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-208",
       "difficulty": "hard",
       "text": "Em que ano foi fundada a Pizza Hut?",
@@ -1678,14 +1590,6 @@
       "answer": 1942,
       "scale": 50,
       "fact": "Substituiu o mil-réis."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-211",
-      "difficulty": "hard",
-      "text": "Em que ano a Heineken foi fundada?",
-      "answer": 1864,
-      "scale": 50,
-      "fact": "Gerard Heineken tinha 22 anos."
     },
     {
       "id": "chute-dinheiro-e-negocios-212",
@@ -1718,14 +1622,6 @@
       "answer": 2006,
       "scale": 50,
       "fact": "O site era novo, e o negócio foi caro para a época."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-216",
-      "difficulty": "easy",
-      "text": "Em que ano o WhatsApp foi lançado?",
-      "answer": 2009,
-      "scale": 50,
-      "fact": "Seus criadores tinham sido recusados no Facebook."
     },
     {
       "id": "chute-dinheiro-e-negocios-217",
@@ -2440,14 +2336,6 @@
       "fact": "Em 2025, o ouro passou de 4 mil dólares a onça."
     },
     {
-      "id": "chute-dinheiro-e-negocios-306",
-      "difficulty": "hard",
-      "text": "Quantos gramas tem uma onça troy de ouro?",
-      "answer": 31.1,
-      "unit": "gramas",
-      "fact": "A unidade tem esse nome por causa de Troyes, na França."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-307",
       "difficulty": "hard",
       "text": "Quantos dólares valia o bitcoin em seu pico até o fim de 2021?",
@@ -2624,22 +2512,6 @@
       "fact": "O cálculo é do IBPT, que soma tributos diretos e indiretos."
     },
     {
-      "id": "chute-dinheiro-e-negocios-329",
-      "difficulty": "medium",
-      "text": "Em que ano foi lançado o Fusca no Brasil, fabricado em São Bernardo do Campo?",
-      "answer": 1959,
-      "scale": 50,
-      "fact": "Virou o carro mais vendido do Brasil por décadas."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-330",
-      "difficulty": "hard",
-      "text": "Em que ano abriu o primeiro shopping do Brasil, o Iguatemi de São Paulo?",
-      "answer": 1966,
-      "scale": 50,
-      "fact": "Ele fica na avenida Faria Lima."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-331",
       "difficulty": "medium",
       "text": "Quantos reais tinha de valor o primeiro salário mínimo do real, arredondado?",
@@ -2704,30 +2576,6 @@
       "fact": "Em 2022, tentaram revender por 48 milhões e a melhor oferta foi de só 280 dólares."
     },
     {
-      "id": "chute-dinheiro-e-negocios-339",
-      "difficulty": "medium",
-      "text": "Quantos bilhões de dólares a Microsoft pagou pelo Skype em 2011?",
-      "answer": 8.5,
-      "unit": "bilhões",
-      "fact": "O serviço foi desligado pela empresa em 2025."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-340",
-      "difficulty": "medium",
-      "text": "Quantos bilhões de dólares o Google pagou pela Motorola em 2012?",
-      "answer": 12.5,
-      "unit": "bilhões",
-      "fact": "Dois anos depois, vendeu a marca à Lenovo por 2,9 bilhões."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-341",
-      "difficulty": "medium",
-      "text": "Quantos bilhões de dólares a Lenovo pagou pela Motorola em 2014?",
-      "answer": 2.9,
-      "unit": "bilhões",
-      "fact": "O Google manteve a maior parte das patentes."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-342",
       "difficulty": "medium",
       "text": "Quantos bilhões de dólares a Kraft e a Heinz valiam ao se unirem em 2015, em negócio de 3G e Buffett?",
@@ -2774,22 +2622,6 @@
       "answer": -98.7,
       "unit": "bilhões",
       "fact": "Foi o maior prejuízo anual já registrado até então."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-348",
-      "difficulty": "hard",
-      "text": "Quanto o valor da Meta variou em um único dia de fevereiro de 2022, em bilhões de dólares?",
-      "answer": -232,
-      "unit": "bilhões",
-      "fact": "Foi a maior perda de valor em um dia até então."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-349",
-      "difficulty": "hard",
-      "text": "Quanto o valor da Nvidia variou em um único dia de janeiro de 2025, em bilhões de dólares?",
-      "answer": -589,
-      "unit": "bilhões",
-      "fact": "O motivo foi o surgimento da chinesa DeepSeek."
     },
     {
       "id": "chute-dinheiro-e-negocios-350",
@@ -3104,14 +2936,6 @@
       "fact": "A primeira costuma vir até 30 de novembro."
     },
     {
-      "id": "chute-dinheiro-e-negocios-389",
-      "difficulty": "easy",
-      "text": "Quantas horas por semana é a jornada máxima comum da CLT?",
-      "answer": 44,
-      "unit": "horas",
-      "fact": "Essa regra vale desde a Constituição de 1988."
-    },
-    {
       "id": "chute-dinheiro-e-negocios-390",
       "difficulty": "easy",
       "text": "Quantas moedas de 25 centavos formam R$ 5?",
@@ -3169,24 +2993,6 @@
       "unit": "%",
       "scale": 5,
       "fact": "Foi o ano da pandemia."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-397",
-      "difficulty": "medium",
-      "text": "Qual foi o resultado do PIB brasileiro em 2015, em porcentagem, aproximadamente?",
-      "answer": -3.5,
-      "unit": "%",
-      "scale": 5,
-      "fact": "A economia viveu uma grande recessão."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-398",
-      "difficulty": "medium",
-      "text": "Quanto variou o índice Dow Jones em 19 de outubro de 1987, em porcentagem?",
-      "answer": -22.6,
-      "unit": "%",
-      "scale": 10,
-      "fact": "O dia ficou conhecido como Segunda-Feira Negra."
     },
     {
       "id": "chute-dinheiro-e-negocios-399",
@@ -3352,14 +3158,6 @@
       "answer": 13,
       "unit": "salários",
       "fact": "Nas férias, ele ainda ganha um terço a mais."
-    },
-    {
-      "id": "chute-dinheiro-e-negocios-419",
-      "difficulty": "easy",
-      "text": "Quantas moedas diferentes de real estão em circulação?",
-      "answer": 6,
-      "unit": "moedas",
-      "fact": "São as de 1, 5, 10, 25 e 50 centavos e a de 1 real."
     },
     {
       "id": "chute-dinheiro-e-negocios-420",

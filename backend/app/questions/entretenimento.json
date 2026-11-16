@@ -6075,19 +6075,6 @@
       "fact": "O castelo fica na Escócia."
     },
     {
-      "id": "entretenimento-462",
-      "difficulty": "easy",
-      "text": "Qual é o nome do pai de Simba?",
-      "options": [
-        "Mufasa",
-        "Scar",
-        "Timão",
-        "Rafiki"
-      ],
-      "answer": 0,
-      "fact": "A morte dele emociona até hoje."
-    },
-    {
       "id": "entretenimento-463",
       "difficulty": "easy",
       "text": "Qual é o nome do cachorro em \"Up\"?",
@@ -6112,19 +6099,6 @@
       ],
       "answer": 0,
       "fact": "O filme é de 1939."
-    },
-    {
-      "id": "entretenimento-465",
-      "difficulty": "easy",
-      "text": "Qual é o nome do dinossauro de \"Toy Story\"?",
-      "options": [
-        "Rex",
-        "Dino",
-        "Barney",
-        "Bob"
-      ],
-      "answer": 0,
-      "fact": "Ele é um brinquedo muito medroso."
     },
     {
       "id": "entretenimento-466",
@@ -6270,19 +6244,6 @@
       "fact": "Ele é o príncipe dos saiyajins."
     },
     {
-      "id": "entretenimento-477",
-      "difficulty": "easy",
-      "text": "Qual é o nome do treinador de Pokémon principal?",
-      "options": [
-        "Ash",
-        "Brock",
-        "Misty",
-        "Gary"
-      ],
-      "answer": 0,
-      "fact": "Depois de 25 anos, ele foi campeão mundial."
-    },
-    {
       "id": "entretenimento-478",
       "difficulty": "easy",
       "text": "Qual é o Pokémon amarelo de Ash?",
@@ -6309,19 +6270,6 @@
       "fact": "Ele era professor de biologia marinha."
     },
     {
-      "id": "entretenimento-480",
-      "difficulty": "easy",
-      "text": "Quem é a estrela do mar amigo do Bob Esponja?",
-      "options": [
-        "Patrick",
-        "Lula Molusco",
-        "Sirigueijo",
-        "Plankton"
-      ],
-      "answer": 0,
-      "fact": "Ele mora debaixo de uma pedra."
-    },
-    {
       "id": "entretenimento-481",
       "difficulty": "easy",
       "text": "Qual é o nome do vizinho rabugento de Bob Esponja?",
@@ -6333,19 +6281,6 @@
       ],
       "answer": 0,
       "fact": "Ele toca clarinete muito mal."
-    },
-    {
-      "id": "entretenimento-482",
-      "difficulty": "easy",
-      "text": "Em que cidade fictícia vive Bob Esponja?",
-      "options": [
-        "Fenda do Biquíni",
-        "Springfield",
-        "Pedra Lascada",
-        "Gotham"
-      ],
-      "answer": 0,
-      "fact": "Ela fica no Oceano Pacífico."
     },
     {
       "id": "entretenimento-483",
@@ -6543,19 +6478,6 @@
       "fact": "A personagem é a Mulher-Elástica."
     },
     {
-      "id": "entretenimento-498",
-      "difficulty": "easy",
-      "text": "Em que filme o personagem Carl voa em uma casa com balões?",
-      "options": [
-        "Up: Altas Aventuras",
-        "Viva",
-        "Soul",
-        "Carros"
-      ],
-      "answer": 0,
-      "fact": "O início do filme é famoso por fazer todos chorarem."
-    },
-    {
       "id": "entretenimento-499",
       "difficulty": "easy",
       "text": "Em que filme um rato chamado Remy cozinha?",
@@ -6580,19 +6502,6 @@
       ],
       "answer": 0,
       "fact": "\"Não Falamos do Bruno\" fez muito sucesso."
-    },
-    {
-      "id": "entretenimento-501",
-      "difficulty": "easy",
-      "text": "Em que filme a menina Riley tem emoções como Alegria e Tristeza?",
-      "options": [
-        "Divertida Mente",
-        "Up",
-        "Viva",
-        "Soul"
-      ],
-      "answer": 0,
-      "fact": "A continuação de 2024 quebrou recordes."
     },
     {
       "id": "entretenimento-502",
@@ -6723,19 +6632,6 @@
       ],
       "answer": 0,
       "fact": "A série se passa nos anos 1980."
-    },
-    {
-      "id": "entretenimento-512",
-      "difficulty": "easy",
-      "text": "Em que série a personagem Rainha Elizabeth II é a protagonista?",
-      "options": [
-        "The Crown",
-        "Downton Abbey",
-        "Bridgerton",
-        "Victoria"
-      ],
-      "answer": 0,
-      "fact": "Olivia Colman e Helen Mirren são as atrizes mais famosas no papel."
     },
     {
       "id": "entretenimento-513",
@@ -6907,19 +6803,6 @@
       "fact": "Ele foi lançado em 1993."
     },
     {
-      "id": "entretenimento-526",
-      "difficulty": "easy",
-      "text": "Em que filme Marty McFly viaja no tempo?",
-      "options": [
-        "De Volta para o Futuro",
-        "O Exterminador do Futuro",
-        "Interestelar",
-        "Matrix"
-      ],
-      "answer": 0,
-      "fact": "O carro é um DeLorean."
-    },
-    {
       "id": "entretenimento-527",
       "difficulty": "easy",
       "text": "Em que filme um gorila gigante sobe em um arranha-céu?",
@@ -6983,19 +6866,6 @@
       ],
       "answer": 0,
       "fact": "A cena da bicicleta virou o logo do estúdio de Spielberg."
-    },
-    {
-      "id": "entretenimento-532",
-      "difficulty": "easy",
-      "text": "Em que filme Macaulay Culkin enfrenta dois ladrões trapalhões?",
-      "options": [
-        "Esqueceram de Mim",
-        "Matilda",
-        "Jumanji",
-        "Os Goonies"
-      ],
-      "answer": 0,
-      "fact": "O filme é um clássico de Natal."
     },
     {
       "id": "entretenimento-533",
@@ -7178,32 +7048,6 @@
       ],
       "answer": 0,
       "fact": "O personagem é um cirurgião."
-    },
-    {
-      "id": "entretenimento-547",
-      "difficulty": "medium",
-      "text": "Quem interpretou o Coringa em 2019?",
-      "options": [
-        "Joaquin Phoenix",
-        "Heath Ledger",
-        "Jack Nicholson",
-        "Jared Leto"
-      ],
-      "answer": 0,
-      "fact": "Ele ganhou o Oscar pelo papel."
-    },
-    {
-      "id": "entretenimento-548",
-      "difficulty": "medium",
-      "text": "Quem interpretou o Coringa em 1989?",
-      "options": [
-        "Jack Nicholson",
-        "Joaquin Phoenix",
-        "Heath Ledger",
-        "Mark Hamill"
-      ],
-      "answer": 0,
-      "fact": "Michael Keaton foi o Batman nesse filme."
     },
     {
       "id": "entretenimento-549",
@@ -7960,19 +7804,6 @@
       "fact": "O brinquedo original é japonês."
     },
     {
-      "id": "entretenimento-607",
-      "difficulty": "easy",
-      "text": "Em que filme o personagem Jack Sparrow é pirata?",
-      "options": [
-        "Piratas do Caribe",
-        "O Pirata Vermelho",
-        "Peter Pan",
-        "Hook"
-      ],
-      "answer": 0,
-      "fact": "Johnny Depp se inspirou em Keith Richards."
-    },
-    {
       "id": "entretenimento-608",
       "difficulty": "easy",
       "text": "Em que filme de aventura o herói usa chapéu e chicote?",
@@ -8023,19 +7854,6 @@
       ],
       "answer": 0,
       "fact": "Ele também dirigiu o filme."
-    },
-    {
-      "id": "entretenimento-612",
-      "difficulty": "medium",
-      "text": "Quem interpretou Rocky e escreveu o roteiro do filme?",
-      "options": [
-        "Sylvester Stallone",
-        "Arnold Schwarzenegger",
-        "Robert De Niro",
-        "Burt Reynolds"
-      ],
-      "answer": 0,
-      "fact": "Ele vendeu o cachorro para pagar as contas, e depois o comprou de volta."
     },
     {
       "id": "entretenimento-613",
@@ -8857,19 +8675,6 @@
       "fact": "A frase foi improvisada pelo ator Roy Scheider."
     },
     {
-      "id": "entretenimento-676",
-      "difficulty": "hard",
-      "text": "Em que filme aparece a frase \"A primeira regra é não falar sobre ele\"?",
-      "options": [
-        "Clube da Luta",
-        "Trainspotting",
-        "Seven",
-        "Matrix"
-      ],
-      "answer": 0,
-      "fact": "O filme é de 1999."
-    },
-    {
       "id": "entretenimento-677",
       "difficulty": "hard",
       "text": "Em que filme aparece o personagem Tyler Durden?",
@@ -8985,19 +8790,6 @@
       ],
       "answer": 0,
       "fact": "Dustin Hoffman ganhou o Oscar pelo papel."
-    },
-    {
-      "id": "entretenimento-686",
-      "difficulty": "hard",
-      "text": "Em que filme aparece o personagem John Nash?",
-      "options": [
-        "Uma Mente Brilhante",
-        "Rain Man",
-        "Gênio Indomável",
-        "A Teoria de Tudo"
-      ],
-      "answer": 0,
-      "fact": "Russell Crowe viveu o matemático."
     },
     {
       "id": "entretenimento-687",
@@ -9793,32 +9585,6 @@
       "fact": "Ele ganhou um Oscar honorário em 2025."
     },
     {
-      "id": "entretenimento-744",
-      "difficulty": "easy",
-      "text": "Em que filme da Disney uma princesa perde um sapatinho de cristal?",
-      "options": [
-        "Cinderela",
-        "Branca de Neve",
-        "A Bela Adormecida",
-        "Rapunzel"
-      ],
-      "answer": 0,
-      "fact": "O conto tem versões muito antigas."
-    },
-    {
-      "id": "entretenimento-745",
-      "difficulty": "easy",
-      "text": "Qual é o nome do cowboy de \"Toy Story\"?",
-      "options": [
-        "Woody",
-        "Buzz",
-        "Rex",
-        "Slinky"
-      ],
-      "answer": 0,
-      "fact": "Tom Hanks dubla o personagem em inglês."
-    },
-    {
       "id": "entretenimento-746",
       "difficulty": "easy",
       "text": "Qual é o nome do astronauta de brinquedo de \"Toy Story\"?",
@@ -9871,19 +9637,6 @@
       "fact": "O filme é de 1994."
     },
     {
-      "id": "entretenimento-750",
-      "difficulty": "easy",
-      "text": "Qual é o nome do peixinho procurado pelo pai em uma animação da Pixar?",
-      "options": [
-        "Nemo",
-        "Dory",
-        "Marlin",
-        "Crush"
-      ],
-      "answer": 0,
-      "fact": "O filme é de 2003."
-    },
-    {
       "id": "entretenimento-751",
       "difficulty": "easy",
       "text": "Qual é a identidade secreta do Homem-Aranha?",
@@ -9897,19 +9650,6 @@
       "fact": "Stan Lee foi um dos criadores."
     },
     {
-      "id": "entretenimento-752",
-      "difficulty": "easy",
-      "text": "Que super-herói tem Bruce Wayne como identidade secreta?",
-      "options": [
-        "Batman",
-        "Superman",
-        "Homem de Ferro",
-        "Flash"
-      ],
-      "answer": 0,
-      "fact": "Ele surgiu em 1939."
-    },
-    {
       "id": "entretenimento-753",
       "difficulty": "medium",
       "text": "Que ator interpreta Jack em \"Titanic\"?",
@@ -9921,45 +9661,6 @@
       ],
       "answer": 0,
       "fact": "O filme é de 1997."
-    },
-    {
-      "id": "entretenimento-754",
-      "difficulty": "medium",
-      "text": "Que atriz interpreta Rose em \"Titanic\"?",
-      "options": [
-        "Kate Winslet",
-        "Nicole Kidman",
-        "Julia Roberts",
-        "Cate Blanchett"
-      ],
-      "answer": 0,
-      "fact": "Ela foi indicada ao Oscar pelo papel."
-    },
-    {
-      "id": "entretenimento-755",
-      "difficulty": "medium",
-      "text": "Quem dirigiu \"Tubarão\" e \"Jurassic Park\"?",
-      "options": [
-        "Steven Spielberg",
-        "James Cameron",
-        "George Lucas",
-        "Ridley Scott"
-      ],
-      "answer": 0,
-      "fact": "O primeiro é de 1975."
-    },
-    {
-      "id": "entretenimento-756",
-      "difficulty": "medium",
-      "text": "Quem dirigiu \"A Origem\" e \"Interestelar\"?",
-      "options": [
-        "Christopher Nolan",
-        "Quentin Tarantino",
-        "Denis Villeneuve",
-        "David Fincher"
-      ],
-      "answer": 0,
-      "fact": "Ele levou o Oscar por \"Oppenheimer\"."
     },
     {
       "id": "entretenimento-757",
@@ -10001,58 +9702,6 @@
       "fact": "Ela foi adaptada dos livros de George R. R. Martin."
     },
     {
-      "id": "entretenimento-760",
-      "difficulty": "medium",
-      "text": "Qual é o nome da série sul-coreana da Netflix com jogos mortais?",
-      "options": [
-        "Round 6",
-        "Alice in Borderland",
-        "Sense8",
-        "Black Mirror"
-      ],
-      "answer": 0,
-      "fact": "Ela é a série mais vista da plataforma."
-    },
-    {
-      "id": "entretenimento-761",
-      "difficulty": "medium",
-      "text": "Qual novela brasileira tem o personagem Odete Roitman?",
-      "options": [
-        "Vale Tudo",
-        "Roque Santeiro",
-        "Avenida Brasil",
-        "Tieta"
-      ],
-      "answer": 0,
-      "fact": "A pergunta \"quem matou?\" parou o país em 1988."
-    },
-    {
-      "id": "entretenimento-762",
-      "difficulty": "hard",
-      "text": "Qual filme brasileiro venceu o Oscar de filme internacional, em 2025?",
-      "options": [
-        "Ainda Estou Aqui",
-        "Central do Brasil",
-        "Cidade de Deus",
-        "O Pagador de Promessas"
-      ],
-      "answer": 0,
-      "fact": "Walter Salles dirigiu o filme."
-    },
-    {
-      "id": "entretenimento-763",
-      "difficulty": "hard",
-      "text": "Qual atriz foi indicada ao Oscar por \"Central do Brasil\"?",
-      "options": [
-        "Fernanda Montenegro",
-        "Sônia Braga",
-        "Glória Pires",
-        "Marília Pêra"
-      ],
-      "answer": 0,
-      "fact": "Ela foi a primeira atriz latino-americana indicada na categoria."
-    },
-    {
       "id": "entretenimento-764",
       "difficulty": "hard",
       "text": "Quem é o protagonista de \"Tropa de Elite\"?",
@@ -10064,19 +9713,6 @@
       ],
       "answer": 0,
       "fact": "O filme é de 2007."
-    },
-    {
-      "id": "entretenimento-765",
-      "difficulty": "hard",
-      "text": "Que ator brasileiro fez o rei Xerxes em \"300\"?",
-      "options": [
-        "Rodrigo Santoro",
-        "Wagner Moura",
-        "Selton Mello",
-        "Cauã Reymond"
-      ],
-      "answer": 0,
-      "fact": "Ele também esteve em \"Lost\"."
     },
     {
       "id": "entretenimento-766",
@@ -10124,19 +9760,6 @@
       "fact": "A série é a mais longa do horário nobre americano."
     },
     {
-      "id": "entretenimento-769",
-      "difficulty": "hard",
-      "text": "Que diretor japonês criou \"A Viagem de Chihiro\"?",
-      "options": [
-        "Hayao Miyazaki",
-        "Akira Kurosawa",
-        "Makoto Shinkai",
-        "Satoshi Kon"
-      ],
-      "answer": 0,
-      "fact": "O filme ganhou o Oscar de animação em 2003."
-    },
-    {
       "id": "entretenimento-770",
       "difficulty": "hard",
       "text": "Que estúdio japonês é conhecido por \"Meu Amigo Totoro\"?",
@@ -10163,19 +9786,6 @@
       "fact": "O filme é de 1954."
     },
     {
-      "id": "entretenimento-772",
-      "difficulty": "hard",
-      "text": "Que ator fez o Coringa em \"O Cavaleiro das Trevas\"?",
-      "options": [
-        "Heath Ledger",
-        "Joaquin Phoenix",
-        "Jack Nicholson",
-        "Jared Leto"
-      ],
-      "answer": 0,
-      "fact": "Ele recebeu o Oscar depois de morrer."
-    },
-    {
       "id": "entretenimento-773",
       "difficulty": "impossible",
       "text": "Quem compôs a música de \"Star Wars\" e de \"Tubarão\"?",
@@ -10189,34 +9799,6 @@
       ],
       "answer": 0,
       "fact": "Ele tem mais de 50 indicações ao Oscar."
-    },
-    {
-      "id": "entretenimento-774",
-      "difficulty": "impossible",
-      "text": "Quantas indicações ao Oscar teve Meryl Streep?",
-      "options": [
-        "21",
-        "12",
-        "16",
-        "25",
-        "8",
-        "30"
-      ],
-      "answer": 0,
-      "fact": "É o recorde entre atores e atrizes."
-    },
-    {
-      "id": "entretenimento-775",
-      "difficulty": "hard",
-      "text": "Que ator fez o papel de Hannibal Lecter em \"O Silêncio dos Inocentes\"?",
-      "options": [
-        "Anthony Hopkins",
-        "Robert De Niro",
-        "Jack Nicholson",
-        "Gary Oldman"
-      ],
-      "answer": 0,
-      "fact": "Ele ficou cerca de 16 minutos em cena e levou o Oscar."
     }
   ]
 }

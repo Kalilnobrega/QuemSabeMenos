@@ -587,19 +587,6 @@
       "fact": "O Whopper foi criado em 1957, e significa algo \"enorme\" em inglês."
     },
     {
-      "id": "dinheiro-e-negocios-46",
-      "difficulty": "easy",
-      "text": "Que rede de fast-food é conhecida pelo sanduíche Big Mac?",
-      "options": [
-        "McDonald's",
-        "Burger King",
-        "Wendy's",
-        "Giraffas"
-      ],
-      "answer": 0,
-      "fact": "O Big Mac surgiu em 1967, e deu nome a um índice famoso de comparação de preços."
-    },
-    {
       "id": "dinheiro-e-negocios-47",
       "difficulty": "easy",
       "text": "Que marca alemã fabricou o Fusca?",
@@ -4370,19 +4357,6 @@
       "fact": "A Nestlé é a maior empresa de alimentos do mundo."
     },
     {
-      "id": "dinheiro-e-negocios-337",
-      "difficulty": "medium",
-      "text": "Que empresa holandesa-britânica é dona das marcas Dove e Omo?",
-      "options": [
-        "Unilever",
-        "Procter & Gamble",
-        "Henkel",
-        "Colgate"
-      ],
-      "answer": 0,
-      "fact": "A Unilever surgiu em 1930 da fusão entre uma fábrica de margarina e uma de sabão."
-    },
-    {
       "id": "dinheiro-e-negocios-338",
       "difficulty": "medium",
       "text": "Que grupo é dono das marcas Budweiser, Corona e Stella Artois?",
@@ -4927,19 +4901,6 @@
       ],
       "answer": 0,
       "fact": "Sua maior paixão é o dinheiro, e ele guarda seu primeiro centavo."
-    },
-    {
-      "id": "dinheiro-e-negocios-380",
-      "difficulty": "medium",
-      "text": "Em que país fica a sede da Toyota?",
-      "options": [
-        "Japão",
-        "Coreia do Sul",
-        "China",
-        "Taiwan"
-      ],
-      "answer": 0,
-      "fact": "A cidade onde fica a sede foi rebatizada de Toyota por causa da empresa."
     },
     {
       "id": "dinheiro-e-negocios-381",
@@ -5644,32 +5605,6 @@
       "fact": "A Foxconn é taiwanesa e tem fábricas com centenas de milhares de funcionários."
     },
     {
-      "id": "dinheiro-e-negocios-435",
-      "difficulty": "medium",
-      "text": "Que empresa fabrica os chips mais avançados para Apple e Nvidia?",
-      "options": [
-        "TSMC",
-        "Intel",
-        "Samsung Foods",
-        "Qualcomm"
-      ],
-      "answer": 0,
-      "fact": "A TSMC, de Taiwan, é a maior fabricante de chips sob encomenda do mundo."
-    },
-    {
-      "id": "dinheiro-e-negocios-436",
-      "difficulty": "medium",
-      "text": "Que empresa da China é dona do TikTok?",
-      "options": [
-        "ByteDance",
-        "Tencent",
-        "Alibaba",
-        "Baidu"
-      ],
-      "answer": 0,
-      "fact": "A ByteDance foi fundada em 2012 por Zhang Yiming."
-    },
-    {
       "id": "dinheiro-e-negocios-437",
       "difficulty": "medium",
       "text": "Quem fundou a gigante chinesa Alibaba?",
@@ -5681,19 +5616,6 @@
       ],
       "answer": 0,
       "fact": "Jack Ma era professor de inglês e foi rejeitado em dezenas de empregos."
-    },
-    {
-      "id": "dinheiro-e-negocios-438",
-      "difficulty": "medium",
-      "text": "Que empresa criou o WeChat, o superaplicativo da China?",
-      "options": [
-        "Tencent",
-        "Alibaba",
-        "ByteDance",
-        "Huawei"
-      ],
-      "answer": 0,
-      "fact": "No WeChat dá para conversar, pagar contas e até marcar consulta."
     },
     {
       "id": "dinheiro-e-negocios-439",
@@ -6110,19 +6032,6 @@
       ],
       "answer": 0,
       "fact": "Na época, a Apple estava a poucos meses de ficar sem caixa."
-    },
-    {
-      "id": "dinheiro-e-negocios-471",
-      "difficulty": "hard",
-      "text": "Quem foi o terceiro sócio-fundador da Apple, que vendeu sua parte por 800 dólares?",
-      "options": [
-        "Ronald Wayne",
-        "Steve Wozniak",
-        "Mike Markkula",
-        "John Sculley"
-      ],
-      "answer": 0,
-      "fact": "A parte de Wayne valeria centenas de bilhões de dólares hoje."
     },
     {
       "id": "dinheiro-e-negocios-472",
@@ -8296,19 +8205,6 @@
       "fact": "O iPhone original não tinha nem loja de aplicativos."
     },
     {
-      "id": "dinheiro-e-negocios-639",
-      "difficulty": "medium",
-      "text": "Que marca canadense de celulares dominou os escritórios com seu teclado físico?",
-      "options": [
-        "BlackBerry",
-        "Palm",
-        "Nokia",
-        "Motorola"
-      ],
-      "answer": 0,
-      "fact": "No auge, em 2011, a empresa tinha cerca de 85 milhões de usuários."
-    },
-    {
       "id": "dinheiro-e-negocios-640",
       "difficulty": "medium",
       "text": "O que é \"greenwashing\"?",
@@ -9123,21 +9019,6 @@
       "fact": "A bebida veio por causa dos soldados americanos na Segunda Guerra."
     },
     {
-      "id": "dinheiro-e-negocios-698",
-      "difficulty": "impossible",
-      "text": "Em que ano a primeira loja do McDonald's chegou ao Brasil?",
-      "options": [
-        "1979",
-        "1992",
-        "1965",
-        "1985",
-        "1973",
-        "1999"
-      ],
-      "answer": 0,
-      "fact": "Foi aberta em Copacabana, no Rio de Janeiro."
-    },
-    {
       "id": "dinheiro-e-negocios-699",
       "difficulty": "impossible",
       "text": "Em que ano o primeiro Burger King abriu no Brasil?",
@@ -9884,32 +9765,6 @@
       "fact": "O nome oficial é gratificação natalina."
     },
     {
-      "id": "dinheiro-e-negocios-751",
-      "difficulty": "medium",
-      "text": "Qual é o principal índice oficial de inflação do Brasil?",
-      "options": [
-        "IPCA",
-        "IGP-M",
-        "PIB",
-        "Selic"
-      ],
-      "answer": 0,
-      "fact": "O IBGE faz o cálculo todos os meses."
-    },
-    {
-      "id": "dinheiro-e-negocios-752",
-      "difficulty": "medium",
-      "text": "Que taxa básica de juros é definida pelo Banco Central?",
-      "options": [
-        "Selic",
-        "IPCA",
-        "TR",
-        "Ibovespa"
-      ],
-      "answer": 0,
-      "fact": "O Copom se reúne a cada 45 dias."
-    },
-    {
       "id": "dinheiro-e-negocios-753",
       "difficulty": "medium",
       "text": "Qual é o principal índice da bolsa de valores brasileira?",
@@ -9921,19 +9776,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi criado em 1968."
-    },
-    {
-      "id": "dinheiro-e-negocios-754",
-      "difficulty": "medium",
-      "text": "Que imposto os donos de carros pagam todo ano?",
-      "options": [
-        "IPVA",
-        "IPTU",
-        "ISS",
-        "ICMS"
-      ],
-      "answer": 0,
-      "fact": "Parte do valor fica com o município."
     },
     {
       "id": "dinheiro-e-negocios-755",
@@ -10040,19 +9882,6 @@
       "fact": "Ele tem baixa oscilação e liquidez diária."
     },
     {
-      "id": "dinheiro-e-negocios-763",
-      "difficulty": "hard",
-      "text": "Que economista britânico defendeu o gasto do governo em crises?",
-      "options": [
-        "John Maynard Keynes",
-        "Adam Smith",
-        "David Ricardo",
-        "Milton Friedman"
-      ],
-      "answer": 0,
-      "fact": "A obra mais famosa dele é de 1936."
-    },
-    {
       "id": "dinheiro-e-negocios-764",
       "difficulty": "hard",
       "text": "Que crise financeira começou com hipotecas nos EUA, em 2008?",
@@ -10092,19 +9921,6 @@
       "fact": "Rui Barbosa era o ministro da Fazenda."
     },
     {
-      "id": "dinheiro-e-negocios-767",
-      "difficulty": "hard",
-      "text": "Que plano econômico de 1990 congelou a poupança dos brasileiros?",
-      "options": [
-        "Plano Collor",
-        "Plano Real",
-        "Plano Cruzado",
-        "Plano Bresser"
-      ],
-      "answer": 0,
-      "fact": "O bloqueio atingiu valores acima de 50 mil cruzados novos."
-    },
-    {
       "id": "dinheiro-e-negocios-768",
       "difficulty": "impossible",
       "text": "Em que ano foi fundada a Bolsa de Amsterdã, a primeira moderna?",
@@ -10118,21 +9934,6 @@
       ],
       "answer": 0,
       "fact": "A Companhia das Índias Orientais vendeu ações lá."
-    },
-    {
-      "id": "dinheiro-e-negocios-769",
-      "difficulty": "impossible",
-      "text": "Qual foi a primeira empresa dos EUA a valer 1 trilhão de dólares?",
-      "options": [
-        "Apple",
-        "Microsoft",
-        "Amazon",
-        "ExxonMobil",
-        "Google",
-        "Tesla"
-      ],
-      "answer": 0,
-      "fact": "O marco ocorreu em agosto de 2018."
     },
     {
       "id": "dinheiro-e-negocios-770",

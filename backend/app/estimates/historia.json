@@ -309,14 +309,6 @@
       "fact": "Foi às margens do Ipiranga."
     },
     {
-      "id": "chute-historia-39",
-      "difficulty": "easy",
-      "text": "Em que ano foi a Proclamação da República no Brasil?",
-      "answer": 1889,
-      "scale": 50,
-      "fact": "Ela foi proclamada por Deodoro da Fonseca."
-    },
-    {
       "id": "chute-historia-40",
       "difficulty": "easy",
       "text": "Em que ano foi abolida a escravidão no Brasil?",
@@ -355,14 +347,6 @@
       "answer": 1960,
       "scale": 50,
       "fact": "Foi construída no governo de JK."
-    },
-    {
-      "id": "chute-historia-45",
-      "difficulty": "easy",
-      "text": "Em que ano Getúlio Vargas se matou?",
-      "answer": 1954,
-      "scale": 50,
-      "fact": "Ele estava no Palácio do Catete."
     },
     {
       "id": "chute-historia-46",
@@ -451,14 +435,6 @@
       "answer": 1910,
       "scale": 50,
       "fact": "Foi liderada por João Cândido."
-    },
-    {
-      "id": "chute-historia-57",
-      "difficulty": "easy",
-      "text": "Em que ano aconteceu a Semana de Arte Moderna?",
-      "answer": 1922,
-      "scale": 50,
-      "fact": "Ela foi em São Paulo, no Theatro Municipal."
     },
     {
       "id": "chute-historia-58",
@@ -789,14 +765,6 @@
       "fact": "Foi a mais longa revolta do Brasil."
     },
     {
-      "id": "chute-historia-99",
-      "difficulty": "easy",
-      "text": "Quantos anos durou a ditadura militar brasileira?",
-      "answer": 21,
-      "unit": "anos",
-      "fact": "Ela foi de 1964 a 1985."
-    },
-    {
       "id": "chute-historia-100",
       "difficulty": "medium",
       "text": "Quantos anos durou a Guerra Fria, aproximadamente?",
@@ -827,14 +795,6 @@
       "answer": 500,
       "unit": "anos",
       "fact": "Ele durou de 27 a.C. a 476 d.C."
-    },
-    {
-      "id": "chute-historia-104",
-      "difficulty": "medium",
-      "text": "Quantos anos durou a Guerra do Vietnã, aproximadamente, para os EUA?",
-      "answer": 20,
-      "unit": "anos",
-      "fact": "Ela terminou em 1975."
     },
     {
       "id": "chute-historia-105",
@@ -1477,28 +1437,12 @@
       "fact": "A corrida do ouro mudou o Brasil."
     },
     {
-      "id": "chute-historia-185",
-      "difficulty": "medium",
-      "text": "Em que ano a capital do Brasil foi transferida para o Rio de Janeiro?",
-      "answer": 1763,
-      "scale": 50,
-      "fact": "O ouro de Minas era embarcado no porto do Rio."
-    },
-    {
       "id": "chute-historia-186",
       "difficulty": "medium",
       "text": "Em que ano os jesuítas foram expulsos do Brasil?",
       "answer": 1759,
       "scale": 50,
       "fact": "Foi por ordem do Marquês de Pombal."
-    },
-    {
-      "id": "chute-historia-187",
-      "difficulty": "medium",
-      "text": "Em que ano aconteceu o Terremoto de Lisboa?",
-      "answer": 1755,
-      "scale": 50,
-      "fact": "Ele aconteceu no feriado de Todos os Santos."
     },
     {
       "id": "chute-historia-188",
@@ -1723,14 +1667,6 @@
       "answer": 1997,
       "scale": 50,
       "fact": "FHC se reelegeu no ano seguinte."
-    },
-    {
-      "id": "chute-historia-216",
-      "difficulty": "medium",
-      "text": "Em que ano o Brasil sediou as Olimpíadas?",
-      "answer": 2016,
-      "scale": 50,
-      "fact": "Elas foram no Rio de Janeiro."
     },
     {
       "id": "chute-historia-217",
@@ -2765,14 +2701,6 @@
       "fact": "Lincoln a assinou durante a Guerra Civil."
     },
     {
-      "id": "chute-historia-346",
-      "difficulty": "hard",
-      "text": "Em que ano a Nova Zelândia deu voto às mulheres?",
-      "answer": 1893,
-      "scale": 50,
-      "fact": "Foi o primeiro país a fazer isso em eleições nacionais."
-    },
-    {
       "id": "chute-historia-347",
       "difficulty": "hard",
       "text": "Em que ano a Suíça deu voto às mulheres?",
@@ -3077,14 +3005,6 @@
       "fact": "A declaração foi aprovada em 4 de julho."
     },
     {
-      "id": "chute-historia-385",
-      "difficulty": "medium",
-      "text": "Quantos anos Tiradentes tinha quando morreu?",
-      "answer": 45,
-      "unit": "anos",
-      "fact": "Ele foi enforcado em 1792."
-    },
-    {
       "id": "chute-historia-386",
       "difficulty": "hard",
       "text": "Quantos dias durou a Revolta da Vacina, no Rio, aproximadamente?",
@@ -3213,28 +3133,12 @@
       "fact": "Foi em outubro de 1962."
     },
     {
-      "id": "chute-historia-402",
-      "difficulty": "hard",
-      "text": "Quantos anos Mandela ficou preso?",
-      "answer": 27,
-      "unit": "anos",
-      "fact": "Ele saiu em 1990."
-    },
-    {
       "id": "chute-historia-403",
       "difficulty": "hard",
       "text": "Quantos anos Gengis Khan governou, aproximadamente?",
       "answer": 21,
       "unit": "anos",
       "fact": "Ele reinou de 1206 a 1227."
-    },
-    {
-      "id": "chute-historia-404",
-      "difficulty": "hard",
-      "text": "Quantos soldados Pizarro tinha em Cajamarca, aproximadamente?",
-      "answer": 168,
-      "unit": "soldados",
-      "fact": "Ele capturou Atahualpa, apesar dos milhares de guerreiros."
     },
     {
       "id": "chute-historia-405",
@@ -3245,28 +3149,12 @@
       "fact": "Jerusalém era o grande alvo."
     },
     {
-      "id": "chute-historia-406",
-      "difficulty": "easy",
-      "text": "Quantos reis magos a tradição conta?",
-      "answer": 3,
-      "unit": "reis",
-      "fact": "Eles levaram ouro, incenso e mirra."
-    },
-    {
       "id": "chute-historia-407",
       "difficulty": "easy",
       "text": "Quantas caravelas Colombo levou na primeira viagem?",
       "answer": 3,
       "unit": "navios",
       "fact": "Eram Santa Maria, Pinta e Niña."
-    },
-    {
-      "id": "chute-historia-408",
-      "difficulty": "medium",
-      "text": "Quantos navios Cabral trouxe, aproximadamente, em 1500?",
-      "answer": 13,
-      "unit": "navios",
-      "fact": "Eles carregavam cerca de 1.500 homens."
     },
     {
       "id": "chute-historia-409",
@@ -3552,14 +3440,6 @@
       "answer": 57,
       "unit": "anos",
       "fact": "Antes da política, ele foi metalúrgico e líder sindical."
-    },
-    {
-      "id": "chute-historia-445",
-      "difficulty": "easy",
-      "text": "Em que ano Fidel Castro chegou ao poder em Cuba?",
-      "answer": 1959,
-      "scale": 50,
-      "fact": "Ele governou o país por quase cinco décadas."
     },
     {
       "id": "chute-historia-446",

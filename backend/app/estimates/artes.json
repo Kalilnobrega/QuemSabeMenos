@@ -346,14 +346,6 @@
       "fact": "Ele foi casado com Carolina por 35 anos."
     },
     {
-      "id": "chute-artes-44",
-      "difficulty": "easy",
-      "text": "Quantos anos Elvis Presley viveu?",
-      "answer": 42,
-      "unit": "anos",
-      "fact": "Ele morreu em Graceland, em Memphis."
-    },
-    {
       "id": "chute-artes-45",
       "difficulty": "easy",
       "text": "Quantos anos Freddie Mercury viveu?",
@@ -456,14 +448,6 @@
       "answer": 5,
       "unit": "integrantes",
       "fact": "Eles morreram em um acidente de avião, em 1996."
-    },
-    {
-      "id": "chute-artes-58",
-      "difficulty": "easy",
-      "text": "Qual é a altura do Cristo Redentor, em metros, sem a base?",
-      "answer": 30,
-      "unit": "metros",
-      "fact": "Ele tem mais 8 metros de base."
     },
     {
       "id": "chute-artes-59",
@@ -898,14 +882,6 @@
       "fact": "O Queen foi o destaque do show em Londres."
     },
     {
-      "id": "chute-artes-113",
-      "difficulty": "medium",
-      "text": "Quantos discos o Thriller vendeu, em milhões, aproximadamente?",
-      "answer": 70,
-      "unit": "milhões",
-      "fact": "É o álbum mais vendido da história."
-    },
-    {
       "id": "chute-artes-114",
       "difficulty": "medium",
       "text": "Quantos discos os Beatles venderam, em milhões, aproximadamente?",
@@ -976,14 +952,6 @@
       "answer": 1942,
       "scale": 50,
       "fact": "Ele nasceu em Salvador."
-    },
-    {
-      "id": "chute-artes-123",
-      "difficulty": "easy",
-      "text": "Em que ano nasceu Chico Buarque, compositor de \"A Banda\"?",
-      "answer": 1944,
-      "scale": 50,
-      "fact": "Ele é também escritor."
     },
     {
       "id": "chute-artes-124",
@@ -1594,14 +1562,6 @@
       "fact": "Ele pintou a Noite Estrelada dessa janela."
     },
     {
-      "id": "chute-artes-200",
-      "difficulty": "medium",
-      "text": "Em que ano foi criada a Semana de Arte Moderna?",
-      "answer": 1922,
-      "scale": 50,
-      "fact": "Foi em São Paulo."
-    },
-    {
       "id": "chute-artes-201",
       "difficulty": "medium",
       "text": "Em que ano foi criada a Bossa Nova, em disco?",
@@ -1744,14 +1704,6 @@
       "answer": 1547,
       "scale": 50,
       "fact": "Ele foi escravizado em Argel por cinco anos."
-    },
-    {
-      "id": "chute-artes-219",
-      "difficulty": "medium",
-      "text": "Por quanto foi vendido \"Salvator Mundi\", em dólares?",
-      "answer": 450300000,
-      "unit": "dólares",
-      "fact": "Foi em 2017, pela casa Christie's."
     },
     {
       "id": "chute-artes-220",
@@ -2042,14 +1994,6 @@
       "fact": "É a peça com a maior carreira ininterrupta do mundo."
     },
     {
-      "id": "chute-artes-256",
-      "difficulty": "hard",
-      "text": "Quantos exemplares vendeu Agatha Christie, em bilhões?",
-      "answer": 2,
-      "unit": "bilhões",
-      "fact": "Ela é a autora de ficção mais vendida."
-    },
-    {
       "id": "chute-artes-257",
       "difficulty": "hard",
       "text": "Quantos exemplares de \"Dom Quixote\" foram vendidos, em milhões, segundo estimativas?",
@@ -2088,14 +2032,6 @@
       "answer": 500,
       "unit": "línguas",
       "fact": "Só a Bíblia e poucos outros têm tantos idiomas."
-    },
-    {
-      "id": "chute-artes-262",
-      "difficulty": "hard",
-      "text": "Quantos exemplares de \"O Alquimista\" foram vendidos, em milhões?",
-      "answer": 150,
-      "unit": "milhões",
-      "fact": "Ele é o livro brasileiro mais vendido."
     },
     {
       "id": "chute-artes-263",
@@ -2594,14 +2530,6 @@
       "fact": "É a maior da América Latina."
     },
     {
-      "id": "chute-artes-325",
-      "difficulty": "hard",
-      "text": "Quantos anos levou para construir o Taj Mahal?",
-      "answer": 22,
-      "unit": "anos",
-      "fact": "Foram cerca de 20 mil trabalhadores."
-    },
-    {
       "id": "chute-artes-326",
       "difficulty": "hard",
       "text": "Quantos trabalhadores construíram o Taj Mahal, aproximadamente?",
@@ -3098,36 +3026,12 @@
       "fact": "Eles somam 17 sílabas."
     },
     {
-      "id": "chute-artes-388",
-      "difficulty": "easy",
-      "text": "Quantos anos Beethoven tinha quando morreu?",
-      "answer": 56,
-      "unit": "anos",
-      "fact": "Ele estava quase totalmente surdo."
-    },
-    {
-      "id": "chute-artes-389",
-      "difficulty": "easy",
-      "text": "Quantos anos Mozart tinha quando morreu?",
-      "answer": 35,
-      "unit": "anos",
-      "fact": "Ele deixou mais de 600 obras."
-    },
-    {
       "id": "chute-artes-390",
       "difficulty": "easy",
       "text": "Quantos anos Van Gogh tinha quando morreu?",
       "answer": 37,
       "unit": "anos",
       "fact": "Ele viveu seus últimos meses na França."
-    },
-    {
-      "id": "chute-artes-391",
-      "difficulty": "medium",
-      "text": "Quantos anos Michelangelo tinha quando terminou a Pietà do Vaticano?",
-      "answer": 24,
-      "unit": "anos",
-      "fact": "Ele a assinou na faixa de Maria."
     },
     {
       "id": "chute-artes-392",
@@ -3144,14 +3048,6 @@
       "answer": 50,
       "unit": "mil",
       "fact": "Ele trabalhou até os 91 anos."
-    },
-    {
-      "id": "chute-artes-394",
-      "difficulty": "medium",
-      "text": "Quantos visitantes o Louvre recebe por ano, em milhões, aproximadamente?",
-      "answer": 9,
-      "unit": "milhões",
-      "fact": "Ele é o museu mais visitado do mundo."
     },
     {
       "id": "chute-artes-395",
@@ -3250,28 +3146,12 @@
       "fact": "Ele a levou consigo para a França."
     },
     {
-      "id": "chute-artes-407",
-      "difficulty": "hard",
-      "text": "Quantas páginas tem o Códice Leicester, de Leonardo da Vinci?",
-      "answer": 72,
-      "unit": "páginas",
-      "fact": "Bill Gates o comprou em 1994."
-    },
-    {
       "id": "chute-artes-408",
       "difficulty": "hard",
       "text": "Quanto Bill Gates pagou pelo Códice Leicester, em milhões de dólares?",
       "answer": 30.8,
       "unit": "milhões",
       "fact": "Foi o livro mais caro já vendido."
-    },
-    {
-      "id": "chute-artes-409",
-      "difficulty": "hard",
-      "text": "Quantas obras Claude Monet fez da série das ninfeias, aproximadamente?",
-      "answer": 250,
-      "unit": "quadros",
-      "fact": "Ele as pintou em Giverny."
     },
     {
       "id": "chute-artes-410",

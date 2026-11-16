@@ -1954,14 +1954,6 @@
       "fact": "Ele sofreu um acidente de esqui em 2013."
     },
     {
-      "id": "chute-esportes-245",
-      "difficulty": "medium",
-      "text": "Quantas vitórias Ayrton Senna tem na F1?",
-      "answer": 41,
-      "unit": "vitórias",
-      "fact": "Ele correu 161 GPs."
-    },
-    {
       "id": "chute-esportes-246",
       "difficulty": "medium",
       "text": "Quantas vitórias Nelson Piquet tem na F1?",
@@ -2938,14 +2930,6 @@
       "fact": "A obra custou cerca de 1 bilhão de dólares."
     },
     {
-      "id": "chute-esportes-368",
-      "difficulty": "hard",
-      "text": "Em que ano foi inaugurado o Morumbi, com a primeira fase?",
-      "answer": 1960,
-      "scale": 50,
-      "fact": "A obra ficou pronta só em 1970."
-    },
-    {
       "id": "chute-esportes-369",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Vila Belmiro?",
@@ -3090,14 +3074,6 @@
       "fact": "O jogo vai até o melhor de cinco sets."
     },
     {
-      "id": "chute-esportes-387",
-      "difficulty": "easy",
-      "text": "Quantos pontos tem um set normal de vôlei?",
-      "answer": 25,
-      "unit": "pontos",
-      "fact": "O desempate vai até 15."
-    },
-    {
       "id": "chute-esportes-388",
       "difficulty": "easy",
       "text": "Quantos anéis tem a bandeira olímpica?",
@@ -3120,14 +3096,6 @@
       "answer": 7,
       "unit": "gols",
       "fact": "O Brasil fez apenas um gol."
-    },
-    {
-      "id": "chute-esportes-391",
-      "difficulty": "easy",
-      "text": "Quantos títulos mundiais Ayrton Senna ganhou?",
-      "answer": 3,
-      "unit": "títulos",
-      "fact": "Ele foi campeão em 1988, 1990 e 1991."
     },
     {
       "id": "chute-esportes-392",
@@ -3168,14 +3136,6 @@
       "answer": 6,
       "unit": "G",
       "fact": "O pescoço do piloto é muito treinado."
-    },
-    {
-      "id": "chute-esportes-397",
-      "difficulty": "hard",
-      "text": "Qual é a velocidade de um saque recorde no tênis masculino, em km/h?",
-      "answer": 263,
-      "unit": "km/h",
-      "fact": "Sam Groth fez o saque em 2012."
     },
     {
       "id": "chute-esportes-398",
@@ -3226,14 +3186,6 @@
       "fact": "Foi na final da Copa de 1950, segundo estimativas."
     },
     {
-      "id": "chute-esportes-404",
-      "difficulty": "hard",
-      "text": "Quantos metros de altitude tem a cidade de La Paz, sede de jogos da Bolívia, aproximadamente?",
-      "answer": 3640,
-      "unit": "metros",
-      "fact": "Muitos adversários reclamam do ar rarefeito."
-    },
-    {
       "id": "chute-esportes-405",
       "difficulty": "easy",
       "text": "Quantos metros tem a prova de natação mais curta das Olimpíadas?",
@@ -3272,30 +3224,6 @@
       "answer": 3500,
       "unit": "km",
       "fact": "Ela dura cerca de três semanas."
-    },
-    {
-      "id": "chute-esportes-410",
-      "difficulty": "medium",
-      "text": "Quantos quilômetros tem o triatlo Ironman, somando tudo?",
-      "answer": 226,
-      "unit": "km",
-      "fact": "São natação, ciclismo e corrida."
-    },
-    {
-      "id": "chute-esportes-411",
-      "difficulty": "medium",
-      "text": "Quantos quilômetros de natação tem o triatlo Ironman?",
-      "answer": 3.8,
-      "unit": "km",
-      "fact": "Depois vêm ciclismo e corrida."
-    },
-    {
-      "id": "chute-esportes-412",
-      "difficulty": "medium",
-      "text": "Quantos buracos tem uma partida de golfe normal?",
-      "answer": 18,
-      "unit": "buracos",
-      "fact": "Saint Andrews, na Escócia, ajudou a definir o número."
     },
     {
       "id": "chute-esportes-413",

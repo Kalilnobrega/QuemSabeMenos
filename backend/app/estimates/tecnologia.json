@@ -386,14 +386,6 @@
       "fact": "Os fundadores alugavam colchões de ar."
     },
     {
-      "id": "chute-tecnologia-49",
-      "difficulty": "easy",
-      "text": "Em que ano foi criado o Nubank?",
-      "answer": 2013,
-      "scale": 50,
-      "fact": "Ele começou com um cartão roxo."
-    },
-    {
       "id": "chute-tecnologia-50",
       "difficulty": "easy",
       "text": "Em que ano foi criado o iFood?",
@@ -424,14 +416,6 @@
       "answer": 1997,
       "scale": 50,
       "fact": "Reed Hastings e Marc Randolph são os fundadores."
-    },
-    {
-      "id": "chute-tecnologia-54",
-      "difficulty": "easy",
-      "text": "Em que ano foi criada a Tesla?",
-      "answer": 2003,
-      "scale": 50,
-      "fact": "Elon Musk só entrou na empresa no ano seguinte."
     },
     {
       "id": "chute-tecnologia-55",
@@ -648,14 +632,6 @@
       "answer": 2022,
       "scale": 50,
       "fact": "O preço foi de 44 bilhões de dólares."
-    },
-    {
-      "id": "chute-tecnologia-82",
-      "difficulty": "easy",
-      "text": "Em que ano Steve Jobs apresentou o primeiro iPod?",
-      "answer": 2001,
-      "scale": 50,
-      "fact": "A frase foi \"mil músicas no seu bolso\"."
     },
     {
       "id": "chute-tecnologia-83",
@@ -1024,22 +1000,6 @@
       "answer": 22,
       "unit": "anos",
       "fact": "Ele foi de 2003 a 2025."
-    },
-    {
-      "id": "chute-tecnologia-129",
-      "difficulty": "easy",
-      "text": "Quantos dígitos tem um CPF, com verificadores?",
-      "answer": 11,
-      "unit": "dígitos",
-      "fact": "Os dois últimos são de checagem."
-    },
-    {
-      "id": "chute-tecnologia-130",
-      "difficulty": "easy",
-      "text": "Quantos dígitos tem um número de cartão de crédito comum?",
-      "answer": 16,
-      "unit": "dígitos",
-      "fact": "O último serve de checagem."
     },
     {
       "id": "chute-tecnologia-131",
@@ -1835,24 +1795,6 @@
       "fact": "Ele fica muito perto do zero absoluto."
     },
     {
-      "id": "chute-tecnologia-230",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura do nitrogênio líquido usado em overclock, em °C?",
-      "answer": -196,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Com esse frio, os chips quebram recordes de velocidade."
-    },
-    {
-      "id": "chute-tecnologia-231",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura do hélio líquido usado para resfriar, em °C?",
-      "answer": -269,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Ele é usado em ímãs e em chips quânticos."
-    },
-    {
       "id": "chute-tecnologia-232",
       "difficulty": "hard",
       "text": "Qual é a temperatura de operação do instrumento MIRI, do telescópio James Webb, em °C?",
@@ -2349,14 +2291,6 @@
       "fact": "Frank Rosenblatt o criou."
     },
     {
-      "id": "chute-tecnologia-294",
-      "difficulty": "hard",
-      "text": "Em que ano Deep Blue venceu Kasparov?",
-      "answer": 1997,
-      "scale": 50,
-      "fact": "A primeira partida entre eles foi um ano antes."
-    },
-    {
       "id": "chute-tecnologia-295",
       "difficulty": "hard",
       "text": "Em que ano AlphaGo venceu Lee Sedol?",
@@ -2395,14 +2329,6 @@
       "answer": 2005,
       "scale": 50,
       "fact": "Ele nasceu de uma empresa apoiada pela CIA."
-    },
-    {
-      "id": "chute-tecnologia-300",
-      "difficulty": "easy",
-      "text": "Em que ano o Facebook passou a se chamar Meta?",
-      "answer": 2021,
-      "scale": 50,
-      "fact": "A mudança foi uma aposta no metaverso."
     },
     {
       "id": "chute-tecnologia-301",
@@ -2933,14 +2859,6 @@
       "fact": "Seis mulheres foram as primeiras programadoras dele."
     },
     {
-      "id": "chute-tecnologia-367",
-      "difficulty": "hard",
-      "text": "Em que ano foi criado o transistor?",
-      "answer": 1947,
-      "scale": 50,
-      "fact": "Ele deu o Nobel a Bardeen, Brattain e Shockley."
-    },
-    {
       "id": "chute-tecnologia-368",
       "difficulty": "hard",
       "text": "Em que ano foi criado o circuito integrado?",
@@ -3141,14 +3059,6 @@
       "fact": "Gordon Moore fez a previsão em 1965."
     },
     {
-      "id": "chute-tecnologia-393",
-      "difficulty": "medium",
-      "text": "Quantos transistores tem um chip Intel 4004, de 1971?",
-      "answer": 2300,
-      "unit": "transistores",
-      "fact": "Hoje, há chips com dezenas de bilhões."
-    },
-    {
       "id": "chute-tecnologia-394",
       "difficulty": "medium",
       "text": "Quantos nanômetros tem um fio de cabelo, em milhares, de espessura?",
@@ -3260,15 +3170,6 @@
       "answer": 150,
       "unit": "toneladas",
       "fact": "O transporte exige vários aviões."
-    },
-    {
-      "id": "chute-tecnologia-408",
-      "difficulty": "hard",
-      "text": "Qual é a menor temperatura de um chip quântico da IBM, em °C?",
-      "answer": -273,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Fica a frações de grau do zero absoluto."
     },
     {
       "id": "chute-tecnologia-409",

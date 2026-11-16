@@ -402,14 +402,6 @@
       "fact": "O Japão pede que as pessoas não subam sem preparo."
     },
     {
-      "id": "chute-geografia-51",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Kilimanjaro, em metros?",
-      "answer": 5895,
-      "unit": "metros",
-      "fact": "É a maior montanha isolada do mundo."
-    },
-    {
       "id": "chute-geografia-52",
       "difficulty": "hard",
       "text": "Qual é a altitude do Monte Branco, em metros?",
@@ -450,28 +442,12 @@
       "fact": "Ele foi inaugurado em 1931."
     },
     {
-      "id": "chute-geografia-57",
-      "difficulty": "easy",
-      "text": "Qual é a altura da Torre Eiffel, em metros?",
-      "answer": 330,
-      "unit": "metros",
-      "fact": "Ela já foi a construção mais alta do mundo."
-    },
-    {
       "id": "chute-geografia-58",
       "difficulty": "medium",
       "text": "Qual é a altura da Estátua da Liberdade, com a base, em metros?",
       "answer": 93,
       "unit": "metros",
       "fact": "A estátua foi um presente da França."
-    },
-    {
-      "id": "chute-geografia-59",
-      "difficulty": "medium",
-      "text": "Qual é a altura da Grande Pirâmide de Gizé, em metros?",
-      "answer": 139,
-      "unit": "metros",
-      "fact": "Originalmente, tinha 146 metros."
     },
     {
       "id": "chute-geografia-60",
@@ -504,14 +480,6 @@
       "answer": 13,
       "unit": "km",
       "fact": "Ela foi inaugurada em 1974."
-    },
-    {
-      "id": "chute-geografia-64",
-      "difficulty": "hard",
-      "text": "Qual é o comprimento do Canal do Panamá, em km?",
-      "answer": 82,
-      "unit": "km",
-      "fact": "Um navio leva de 8 a 10 horas para atravessar."
     },
     {
       "id": "chute-geografia-65",
@@ -752,22 +720,6 @@
       "answer": 21900,
       "unit": "km²",
       "fact": "É o menor estado do Brasil."
-    },
-    {
-      "id": "chute-geografia-95",
-      "difficulty": "medium",
-      "text": "Qual é o tamanho do Vaticano, em km²?",
-      "answer": 0.44,
-      "unit": "km²",
-      "fact": "É o menor país do mundo."
-    },
-    {
-      "id": "chute-geografia-96",
-      "difficulty": "easy",
-      "text": "Em que ano a União Soviética acabou?",
-      "answer": 1991,
-      "scale": 50,
-      "fact": "O fim foi formalizado em dezembro."
     },
     {
       "id": "chute-geografia-97",
@@ -1033,14 +985,6 @@
       "answer": 20,
       "unit": "países",
       "fact": "O México é o país com mais falantes."
-    },
-    {
-      "id": "chute-geografia-130",
-      "difficulty": "easy",
-      "text": "Quantos países existem no mundo, segundo a ONU?",
-      "answer": 193,
-      "unit": "países",
-      "fact": "Além deles, há dois observadores, Vaticano e Palestina."
     },
     {
       "id": "chute-geografia-131",
@@ -1963,14 +1907,6 @@
       "fact": "Fica na República Dominicana."
     },
     {
-      "id": "chute-geografia-246",
-      "difficulty": "easy",
-      "text": "Quantos países formam a União Europeia em 2024?",
-      "answer": 27,
-      "unit": "países",
-      "fact": "A Croácia foi o último a entrar, em 2013."
-    },
-    {
       "id": "chute-geografia-247",
       "difficulty": "hard",
       "text": "Quantas línguas oficiais tem a Bolívia, contando as indígenas?",
@@ -2165,14 +2101,6 @@
       "fact": "Estácio de Sá fundou a cidade entre o Pão de Açúcar e o Cara de Cão."
     },
     {
-      "id": "chute-geografia-271",
-      "difficulty": "hard",
-      "text": "Em que ano foi fundada Salvador?",
-      "answer": 1549,
-      "scale": 50,
-      "fact": "Foi a primeira capital do Brasil."
-    },
-    {
       "id": "chute-geografia-272",
       "difficulty": "hard",
       "text": "Em que ano foi fundado o Recife?",
@@ -2325,14 +2253,6 @@
       "fact": "A cidade cresceu rápido no século XIX."
     },
     {
-      "id": "chute-geografia-291",
-      "difficulty": "hard",
-      "text": "Em que ano foi construída a Torre Eiffel?",
-      "answer": 1889,
-      "scale": 50,
-      "fact": "A estrutura seria desmontada depois de 20 anos."
-    },
-    {
       "id": "chute-geografia-292",
       "difficulty": "hard",
       "text": "Em que ano foi concluído o Empire State Building?",
@@ -2371,14 +2291,6 @@
       "answer": 1994,
       "scale": 50,
       "fact": "Ele liga o Reino Unido à França."
-    },
-    {
-      "id": "chute-geografia-297",
-      "difficulty": "hard",
-      "text": "Em que ano foi inaugurada a usina de Itaipu?",
-      "answer": 1984,
-      "scale": 50,
-      "fact": "A construção usou concreto para 210 estádios como o Maracanã."
     },
     {
       "id": "chute-geografia-298",
@@ -2435,14 +2347,6 @@
       "answer": 1975,
       "scale": 50,
       "fact": "A cidade do Rio virou capital do estado."
-    },
-    {
-      "id": "chute-geografia-305",
-      "difficulty": "hard",
-      "text": "Em que ano foi criada a Índia independente?",
-      "answer": 1947,
-      "scale": 50,
-      "fact": "A partição criou também o Paquistão."
     },
     {
       "id": "chute-geografia-306",
@@ -2739,14 +2643,6 @@
       "answer": 37,
       "unit": "%",
       "fact": "Ela fica no País de Gales."
-    },
-    {
-      "id": "chute-geografia-343",
-      "difficulty": "hard",
-      "text": "Qual é a altura da cachoeira Salto Angel, em metros?",
-      "answer": 979,
-      "unit": "metros",
-      "fact": "Em certos dias, a água vira névoa antes de chegar ao chão."
     },
     {
       "id": "chute-geografia-344",
@@ -3117,14 +3013,6 @@
       "fact": "Honshu é a maior delas."
     },
     {
-      "id": "chute-geografia-390",
-      "difficulty": "easy",
-      "text": "Quantos países formam a União Europeia, depois do Brexit?",
-      "answer": 27,
-      "unit": "países",
-      "fact": "O Reino Unido saiu em 2020."
-    },
-    {
       "id": "chute-geografia-391",
       "difficulty": "easy",
       "text": "Quantas cores tem a bandeira da França?",
@@ -3159,37 +3047,12 @@
       "fact": "É uma das regiões mais quentes do planeta."
     },
     {
-      "id": "chute-geografia-395",
-      "difficulty": "medium",
-      "text": "Qual é a altitude de um trecho de Baku, no Azerbaijão, em metros?",
-      "answer": -28,
-      "unit": "metros",
-      "scale": 10,
-      "fact": "É a capital mais baixa do mundo."
-    },
-    {
-      "id": "chute-geografia-396",
-      "difficulty": "medium",
-      "text": "Qual é o comprimento do Rio Nilo, em km, aproximadamente?",
-      "answer": 6650,
-      "unit": "km",
-      "fact": "Ele corre para o norte, até o Mediterrâneo."
-    },
-    {
       "id": "chute-geografia-397",
       "difficulty": "medium",
       "text": "Qual é a área da Rússia, em milhões de km², aproximadamente?",
       "answer": 17,
       "unit": "milhões",
       "fact": "Ela é quase o dobro do Brasil."
-    },
-    {
-      "id": "chute-geografia-398",
-      "difficulty": "medium",
-      "text": "Qual é a área do Saara, em milhões de km², aproximadamente?",
-      "answer": 9.2,
-      "unit": "milhões",
-      "fact": "Ele se espalha por 11 países."
     },
     {
       "id": "chute-geografia-399",
@@ -3206,23 +3069,6 @@
       "answer": 1.44,
       "unit": "bilhão",
       "fact": "Ela é o país mais populoso do mundo."
-    },
-    {
-      "id": "chute-geografia-401",
-      "difficulty": "hard",
-      "text": "Qual é a população do Vaticano, aproximadamente?",
-      "answer": 800,
-      "unit": "pessoas",
-      "fact": "Ele é o menor país do mundo."
-    },
-    {
-      "id": "chute-geografia-402",
-      "difficulty": "hard",
-      "text": "Qual é a área do Vaticano, em km²?",
-      "answer": 0.44,
-      "unit": "km²",
-      "scale": 1,
-      "fact": "Cabem nele poucos campos de futebol."
     },
     {
       "id": "chute-geografia-403",
@@ -3251,29 +3097,12 @@
       "fact": "É o segundo lago mais profundo do mundo."
     },
     {
-      "id": "chute-geografia-406",
-      "difficulty": "hard",
-      "text": "Qual é a menor temperatura da Sibéria em Oymyakon, em °C, oficialmente?",
-      "answer": -67.7,
-      "unit": "°C",
-      "scale": 15,
-      "fact": "O recorde é de 1933."
-    },
-    {
       "id": "chute-geografia-407",
       "difficulty": "hard",
       "text": "Qual é a altitude de La Rinconada, cidade mais alta do mundo, em metros?",
       "answer": 5100,
       "unit": "metros",
       "fact": "Ela fica no Peru."
-    },
-    {
-      "id": "chute-geografia-408",
-      "difficulty": "hard",
-      "text": "Quantas ilhas tem a Indonésia, aproximadamente?",
-      "answer": 17000,
-      "unit": "ilhas",
-      "fact": "Só parte delas é habitada."
     },
     {
       "id": "chute-geografia-409",
@@ -3308,36 +3137,12 @@
       "fact": "São o Ártico e o Antártico."
     },
     {
-      "id": "chute-geografia-413",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Lago Titicaca, em metros, aproximadamente?",
-      "answer": 3812,
-      "unit": "metros",
-      "fact": "Ele é o lago navegável mais alto do mundo."
-    },
-    {
       "id": "chute-geografia-414",
       "difficulty": "hard",
       "text": "Quantos milímetros de chuva por ano recebe um deserto, em média, no máximo?",
       "answer": 250,
       "unit": "mm",
       "fact": "O Atacama fica bem abaixo desse número."
-    },
-    {
-      "id": "chute-geografia-415",
-      "difficulty": "medium",
-      "text": "Quantos países atravessa o Rio Nilo, contando sua bacia, aproximadamente?",
-      "answer": 11,
-      "unit": "países",
-      "fact": "O Egito depende muito das águas dele."
-    },
-    {
-      "id": "chute-geografia-416",
-      "difficulty": "hard",
-      "text": "Quantos quilômetros tem o Canal de Suez, aproximadamente?",
-      "answer": 193,
-      "unit": "km",
-      "fact": "Ele liga o Mediterrâneo ao Mar Vermelho."
     },
     {
       "id": "chute-geografia-417",
@@ -3538,14 +3343,6 @@
       "answer": 21,
       "unit": "milhões",
       "fact": "É a maior região metropolitana do Hemisfério Sul."
-    },
-    {
-      "id": "chute-geografia-442",
-      "difficulty": "easy",
-      "text": "Quantos estados do Nordeste têm litoral?",
-      "answer": 9,
-      "unit": "estados",
-      "fact": "Todos os estados nordestinos têm praia."
     },
     {
       "id": "chute-geografia-443",

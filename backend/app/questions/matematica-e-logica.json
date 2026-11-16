@@ -2511,19 +2511,6 @@
       "fact": "64 é 4 × 4 × 4."
     },
     {
-      "id": "matematica-e-logica-194",
-      "difficulty": "medium",
-      "text": "Qual destes números é tanto quadrado quanto cubo perfeito?",
-      "options": [
-        "64",
-        "16",
-        "27",
-        "100"
-      ],
-      "answer": 0,
-      "fact": "64 é 8² e também 4³."
-    },
-    {
       "id": "matematica-e-logica-195",
       "difficulty": "medium",
       "text": "Quanto é −5 + 8?",
@@ -2821,19 +2808,6 @@
       ],
       "answer": 0,
       "fact": "O volume do cubo é aresta × aresta × aresta."
-    },
-    {
-      "id": "matematica-e-logica-218",
-      "difficulty": "medium",
-      "text": "Quantos litros cabem em 1 metro cúbico?",
-      "options": [
-        "1.000",
-        "100",
-        "10.000",
-        "10"
-      ],
-      "answer": 0,
-      "fact": "Uma caixa-d'água de 1.000 litros tem exatamente 1 metro cúbico de volume."
     },
     {
       "id": "matematica-e-logica-219",
@@ -3367,19 +3341,6 @@
       ],
       "answer": 0,
       "fact": "A soma 7 aparece de seis jeitos: 1+6, 2+5, 3+4, 4+3, 5+2 e 6+1."
-    },
-    {
-      "id": "matematica-e-logica-260",
-      "difficulty": "medium",
-      "text": "Um baralho comum, sem coringas, tem quantas cartas?",
-      "options": [
-        "52",
-        "54",
-        "48",
-        "40"
-      ],
-      "answer": 0,
-      "fact": "São 4 naipes com 13 cartas cada."
     },
     {
       "id": "matematica-e-logica-261",
@@ -6426,19 +6387,6 @@
       "fact": "Essa conta gerou muita discussão na internet."
     },
     {
-      "id": "matematica-e-logica-489",
-      "difficulty": "medium",
-      "text": "Qual é o menor múltiplo comum de 4 e 6?",
-      "options": [
-        "12",
-        "24",
-        "6",
-        "18"
-      ],
-      "answer": 0,
-      "fact": "Tanto 4 quanto 6 dividem 12."
-    },
-    {
       "id": "matematica-e-logica-490",
       "difficulty": "medium",
       "text": "Qual é o maior divisor comum de 18 e 24?",
@@ -6777,19 +6725,6 @@
       "fact": "A obra é uma das mais editadas da história."
     },
     {
-      "id": "matematica-e-logica-516",
-      "difficulty": "hard",
-      "text": "Quem propôs \"penso, logo existo\" e criou o plano cartesiano?",
-      "options": [
-        "René Descartes",
-        "Blaise Pascal",
-        "Isaac Newton",
-        "Gottfried Leibniz"
-      ],
-      "answer": 0,
-      "fact": "O nome \"cartesiano\" vem de Cartesius, sua forma latina."
-    },
-    {
       "id": "matematica-e-logica-517",
       "difficulty": "hard",
       "text": "Quem criou o primeiro computador mecânico, a Pascalina?",
@@ -6970,19 +6905,6 @@
       ],
       "answer": 0,
       "fact": "É uma pegadinha muito comum."
-    },
-    {
-      "id": "matematica-e-logica-531",
-      "difficulty": "hard",
-      "text": "Qual destes é um número perfeito?",
-      "options": [
-        "28",
-        "25",
-        "12",
-        "30"
-      ],
-      "answer": 0,
-      "fact": "A soma dos divisores dele dá 28."
     },
     {
       "id": "matematica-e-logica-532",
@@ -9000,19 +8922,6 @@
       "fact": "Basta dividir por 2."
     },
     {
-      "id": "matematica-e-logica-683",
-      "difficulty": "easy",
-      "text": "Quanto é o dobro de 250?",
-      "options": [
-        "500",
-        "300",
-        "450",
-        "750"
-      ],
-      "answer": 0,
-      "fact": "Basta multiplicar por 2."
-    },
-    {
       "id": "matematica-e-logica-684",
       "difficulty": "easy",
       "text": "Quanto é o triplo de 30?",
@@ -9559,19 +9468,6 @@
       "fact": "É 0,99 vezes 0,99."
     },
     {
-      "id": "matematica-e-logica-726",
-      "difficulty": "hard",
-      "text": "De quantas formas 5 livros podem ser arrumados em uma prateleira?",
-      "options": [
-        "120",
-        "25",
-        "60",
-        "720"
-      ],
-      "answer": 0,
-      "fact": "É o fatorial de 5."
-    },
-    {
       "id": "matematica-e-logica-727",
       "difficulty": "hard",
       "text": "Quantos números de 3 algarismos diferentes se formam com 1, 2 e 3?",
@@ -9793,19 +9689,6 @@
       "fact": "A conta é 8 × 7 × 6, pois a ordem importa."
     },
     {
-      "id": "matematica-e-logica-744",
-      "difficulty": "easy",
-      "text": "Que nome tem o resultado de uma subtração?",
-      "options": [
-        "Diferença",
-        "Soma",
-        "Produto",
-        "Quociente"
-      ],
-      "answer": 0,
-      "fact": "Em 10 menos 4, a diferença é 6."
-    },
-    {
       "id": "matematica-e-logica-745",
       "difficulty": "easy",
       "text": "Como se chama o número de baixo em uma fração?",
@@ -9986,19 +9869,6 @@
       ],
       "answer": 0,
       "fact": "Sete ao quadrado é igual a 49."
-    },
-    {
-      "id": "matematica-e-logica-759",
-      "difficulty": "medium",
-      "text": "Quantos graus tem cada ângulo de um triângulo equilátero?",
-      "options": [
-        "60",
-        "45",
-        "90",
-        "30"
-      ],
-      "answer": 0,
-      "fact": "A soma dá 180 graus."
     },
     {
       "id": "matematica-e-logica-760",
@@ -10189,19 +10059,6 @@
       ],
       "answer": 0,
       "fact": "A obra saiu em 1637."
-    },
-    {
-      "id": "matematica-e-logica-774",
-      "difficulty": "hard",
-      "text": "Que matemático grego calculou o raio da Terra usando sombras?",
-      "options": [
-        "Eratóstenes",
-        "Arquimedes",
-        "Euclides",
-        "Tales"
-      ],
-      "answer": 0,
-      "fact": "Ele chegou perto do valor correto no século III a.C."
     },
     {
       "id": "matematica-e-logica-775",

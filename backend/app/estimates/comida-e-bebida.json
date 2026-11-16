@@ -346,14 +346,6 @@
       "fact": "Ela é feita de creme de leite batido."
     },
     {
-      "id": "chute-comida-e-bebida-44",
-      "difficulty": "medium",
-      "text": "Quantas calorias tem uma colher de sopa de açúcar, sem contar a de chá?",
-      "answer": 48,
-      "unit": "kcal",
-      "fact": "O Brasil é o maior produtor mundial de açúcar."
-    },
-    {
       "id": "chute-comida-e-bebida-45",
       "difficulty": "medium",
       "text": "Quantas calorias tem uma barra de chocolate ao leite de 100 g, aproximadamente?",
@@ -632,14 +624,6 @@
       "answer": 1961,
       "scale": 50,
       "fact": "A bebida nasceu na Alemanha, como Fanta Klare Zitrone."
-    },
-    {
-      "id": "chute-comida-e-bebida-80",
-      "difficulty": "hard",
-      "text": "Em que ano foi lançada a Pepsi com esse nome?",
-      "answer": 1898,
-      "scale": 50,
-      "fact": "O nome vem de \"dyspepsia\"."
     },
     {
       "id": "chute-comida-e-bebida-81",
@@ -1890,14 +1874,6 @@
       "fact": "Ela começou fazendo panetones em São Paulo."
     },
     {
-      "id": "chute-comida-e-bebida-237",
-      "difficulty": "medium",
-      "text": "Em que ano foi criada a Sadia?",
-      "answer": 1944,
-      "scale": 50,
-      "fact": "O nome veio de \"S.A.\" e das letras finais de Concórdia."
-    },
-    {
       "id": "chute-comida-e-bebida-238",
       "difficulty": "medium",
       "text": "Em que ano foi criado o Toddynho?",
@@ -2272,14 +2248,6 @@
       "answer": -60,
       "unit": "°C",
       "fact": "Por isso, os frigoríficos japoneses são tão frios."
-    },
-    {
-      "id": "chute-comida-e-bebida-285",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura do sorvete feito com nitrogênio líquido, na hora, em °C?",
-      "answer": -196,
-      "unit": "°C",
-      "fact": "Ele cristaliza rápido e fica muito cremoso."
     },
     {
       "id": "chute-comida-e-bebida-286",
@@ -2986,14 +2954,6 @@
       "fact": "De Gaulle brincava sobre governar um país com 246 queijos."
     },
     {
-      "id": "chute-comida-e-bebida-374",
-      "difficulty": "hard",
-      "text": "Quantos tipos de queijo De Gaulle citou, em sua frase famosa?",
-      "answer": 246,
-      "unit": "tipos",
-      "fact": "Ele se perguntava como governar um país assim."
-    },
-    {
       "id": "chute-comida-e-bebida-375",
       "difficulty": "hard",
       "text": "Quantos kg de queijo um brasileiro come por ano, aproximadamente?",
@@ -3082,14 +3042,6 @@
       "fact": "A medida muda um pouco em cada receita."
     },
     {
-      "id": "chute-comida-e-bebida-386",
-      "difficulty": "easy",
-      "text": "Quantos mililitros tem uma lata comum de refrigerante, no Brasil?",
-      "answer": 350,
-      "unit": "ml",
-      "fact": "A latinha menor costuma ter 220 ml."
-    },
-    {
       "id": "chute-comida-e-bebida-387",
       "difficulty": "easy",
       "text": "Quantos mililitros tem uma garrafa comum de vinho?",
@@ -3130,24 +3082,6 @@
       "fact": "O forno precisa estar preaquecido."
     },
     {
-      "id": "chute-comida-e-bebida-392",
-      "difficulty": "easy",
-      "text": "Em que temperatura costuma ficar uma geladeira doméstica, em °C?",
-      "answer": 4,
-      "unit": "°C",
-      "scale": 3,
-      "fact": "Abaixo de 5 °C, as bactérias crescem devagar."
-    },
-    {
-      "id": "chute-comida-e-bebida-393",
-      "difficulty": "medium",
-      "text": "Em que temperatura a cerveja se serve bem gelada, em °C, aproximadamente?",
-      "answer": 4,
-      "unit": "°C",
-      "scale": 3,
-      "fact": "Tipos mais encorpados pedem menos frio."
-    },
-    {
       "id": "chute-comida-e-bebida-394",
       "difficulty": "medium",
       "text": "Qual é a temperatura de uma sorveteria na vitrine, em °C, aproximadamente?",
@@ -3155,15 +3089,6 @@
       "unit": "°C",
       "scale": 10,
       "fact": "Muito abaixo disso, o sorvete fica duro demais."
-    },
-    {
-      "id": "chute-comida-e-bebida-395",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura do nitrogênio usado em sorvetes de restaurante, em °C?",
-      "answer": -196,
-      "unit": "°C",
-      "scale": 30,
-      "fact": "Ele congela a mistura em segundos."
     },
     {
       "id": "chute-comida-e-bebida-396",
@@ -3180,14 +3105,6 @@
       "answer": 3,
       "unit": "xícaras",
       "fact": "O Brasil é o maior produtor mundial."
-    },
-    {
-      "id": "chute-comida-e-bebida-398",
-      "difficulty": "medium",
-      "text": "Qual é a produção de café do Brasil, em milhões de sacas por ano, aproximadamente?",
-      "answer": 60,
-      "unit": "milhões",
-      "fact": "Cada saca tem 60 quilos."
     },
     {
       "id": "chute-comida-e-bebida-399",
@@ -3254,14 +3171,6 @@
       "answer": 30,
       "unit": "quilos",
       "fact": "O valor é bem maior que o recomendado."
-    },
-    {
-      "id": "chute-comida-e-bebida-407",
-      "difficulty": "hard",
-      "text": "Quantos milhões de unidades Scoville tem a pimenta Carolina Reaper, aproximadamente?",
-      "answer": 1.6,
-      "unit": "milhão",
-      "fact": "Foi recorde mundial por uma década."
     },
     {
       "id": "chute-comida-e-bebida-408",

@@ -2042,19 +2042,6 @@
       "fact": "A empresa leva o nome do inventor Nikola Tesla."
     },
     {
-      "id": "tecnologia-157",
-      "difficulty": "easy",
-      "text": "Que empresa de Elon Musk faz foguetes que pousam de volta?",
-      "options": [
-        "SpaceX",
-        "Blue Origin",
-        "NASA",
-        "Boeing"
-      ],
-      "answer": 0,
-      "fact": "Os foguetes Falcon 9 pousam em pé para serem reutilizados."
-    },
-    {
       "id": "tecnologia-158",
       "difficulty": "easy",
       "text": "O que significa a sigla IA?",
@@ -5997,19 +5984,6 @@
       "fact": "O Android tem a Play Store."
     },
     {
-      "id": "tecnologia-456",
-      "difficulty": "easy",
-      "text": "O que usamos para digitar no computador?",
-      "options": [
-        "Teclado",
-        "Mouse",
-        "Monitor",
-        "Caixa de som"
-      ],
-      "answer": 0,
-      "fact": "O layout mais comum no Brasil é o ABNT."
-    },
-    {
       "id": "tecnologia-457",
       "difficulty": "easy",
       "text": "Qual é o símbolo usado nos endereços de e-mail?",
@@ -6166,19 +6140,6 @@
       "fact": "Ele foi criado em 2005."
     },
     {
-      "id": "tecnologia-469",
-      "difficulty": "easy",
-      "text": "Qual destes aplicativos é usado para pedir comida?",
-      "options": [
-        "iFood",
-        "Waze",
-        "Spotify",
-        "Excel"
-      ],
-      "answer": 0,
-      "fact": "A empresa foi fundada no Brasil em 2011."
-    },
-    {
       "id": "tecnologia-470",
       "difficulty": "easy",
       "text": "Que tecla do teclado dá espaço entre as palavras?",
@@ -6268,32 +6229,6 @@
       ],
       "answer": 0,
       "fact": "O filme levou três Oscars."
-    },
-    {
-      "id": "tecnologia-477",
-      "difficulty": "easy",
-      "text": "Quem é o empresário dono da Tesla e da SpaceX?",
-      "options": [
-        "Elon Musk",
-        "Jeff Bezos",
-        "Bill Gates",
-        "Tim Cook"
-      ],
-      "answer": 0,
-      "fact": "Ele nasceu na África do Sul."
-    },
-    {
-      "id": "tecnologia-478",
-      "difficulty": "easy",
-      "text": "Quem é o fundador da Microsoft mais famoso, ao lado de Paul Allen?",
-      "options": [
-        "Bill Gates",
-        "Steve Jobs",
-        "Elon Musk",
-        "Jeff Bezos"
-      ],
-      "answer": 0,
-      "fact": "Ele é também um grande filantropo."
     },
     {
       "id": "tecnologia-479",
@@ -6452,19 +6387,6 @@
       "fact": "Várias pessoas podem editar juntas."
     },
     {
-      "id": "tecnologia-491",
-      "difficulty": "easy",
-      "text": "Que site serve para buscar emprego e contatos profissionais?",
-      "options": [
-        "LinkedIn",
-        "TikTok",
-        "Pinterest",
-        "Twitch"
-      ],
-      "answer": 0,
-      "fact": "A Microsoft o comprou em 2016."
-    },
-    {
       "id": "tecnologia-492",
       "difficulty": "easy",
       "text": "Qual é o nome do aplicativo de mapas da Apple?",
@@ -6491,19 +6413,6 @@
       "fact": "Ela pertence hoje à chinesa Lenovo."
     },
     {
-      "id": "tecnologia-494",
-      "difficulty": "easy",
-      "text": "Que empresa finlandesa fazia celulares muito resistentes?",
-      "options": [
-        "Nokia",
-        "Sony",
-        "LG",
-        "Siemens"
-      ],
-      "answer": 0,
-      "fact": "O modelo 3310 virou meme."
-    },
-    {
       "id": "tecnologia-495",
       "difficulty": "easy",
       "text": "Que jogo famoso vinha nos celulares Nokia?",
@@ -6515,32 +6424,6 @@
       ],
       "answer": 0,
       "fact": "O jogo surgiu nos celulares da marca em 1997."
-    },
-    {
-      "id": "tecnologia-496",
-      "difficulty": "medium",
-      "text": "Que empresa criou o Kindle?",
-      "options": [
-        "Amazon",
-        "Apple",
-        "Google",
-        "Sony"
-      ],
-      "answer": 0,
-      "fact": "Ele foi lançado em 2007."
-    },
-    {
-      "id": "tecnologia-497",
-      "difficulty": "medium",
-      "text": "Que empresa criou o Echo, com a assistente Alexa?",
-      "options": [
-        "Amazon",
-        "Google",
-        "Apple",
-        "Samsung"
-      ],
-      "answer": 0,
-      "fact": "O aparelho surgiu em 2014."
     },
     {
       "id": "tecnologia-498",
@@ -7102,19 +6985,6 @@
       "fact": "O valor dela chegou a passar de 3 trilhões de dólares."
     },
     {
-      "id": "tecnologia-541",
-      "difficulty": "medium",
-      "text": "Que empresa projeta os chips Snapdragon?",
-      "options": [
-        "Qualcomm",
-        "Intel",
-        "AMD",
-        "Nvidia"
-      ],
-      "answer": 0,
-      "fact": "Eles estão em muitos celulares Android."
-    },
-    {
       "id": "tecnologia-542",
       "difficulty": "medium",
       "text": "Que empresa criou os chips M1 para Mac?",
@@ -7139,32 +7009,6 @@
       ],
       "answer": 0,
       "fact": "Ela não fabrica chips, apenas licencia os projetos."
-    },
-    {
-      "id": "tecnologia-544",
-      "difficulty": "medium",
-      "text": "Que empresa cria a linha de processadores Ryzen?",
-      "options": [
-        "AMD",
-        "Intel",
-        "Qualcomm",
-        "Nvidia"
-      ],
-      "answer": 0,
-      "fact": "A linha foi lançada em 2017."
-    },
-    {
-      "id": "tecnologia-545",
-      "difficulty": "medium",
-      "text": "Que empresa cria a linha de processadores Core?",
-      "options": [
-        "Intel",
-        "AMD",
-        "Qualcomm",
-        "Arm"
-      ],
-      "answer": 0,
-      "fact": "Ela foi fundada em 1968."
     },
     {
       "id": "tecnologia-546",
@@ -7360,19 +7204,6 @@
       ],
       "answer": 0,
       "fact": "Elas aparecem na parte de cima da tela."
-    },
-    {
-      "id": "tecnologia-561",
-      "difficulty": "easy",
-      "text": "Como se chama o bloqueio com o desenho de um padrão, no Android?",
-      "options": [
-        "Padrão de desbloqueio",
-        "Código QR",
-        "Backup",
-        "Pix"
-      ],
-      "answer": 0,
-      "fact": "Ele liga pontos em uma grade na tela."
     },
     {
       "id": "tecnologia-562",
@@ -7737,19 +7568,6 @@
       ],
       "answer": 0,
       "fact": "A empresa investiu pesado nesse formato."
-    },
-    {
-      "id": "tecnologia-590",
-      "difficulty": "easy",
-      "text": "Qual é o formato comum de um documento de texto do Word?",
-      "options": [
-        "DOCX",
-        "MP3",
-        "JPEG",
-        "MP4"
-      ],
-      "answer": 0,
-      "fact": "Antes de 2007, o formato era DOC."
     },
     {
       "id": "tecnologia-591",
@@ -8181,19 +7999,6 @@
       "fact": "Ele também ajudou a criar o Unix."
     },
     {
-      "id": "tecnologia-624",
-      "difficulty": "medium",
-      "text": "Em qual laboratório foi criado o Unix?",
-      "options": [
-        "Bell Labs",
-        "Xerox Parc",
-        "Google X",
-        "MIT"
-      ],
-      "answer": 0,
-      "fact": "Ken Thompson e Dennis Ritchie lideraram o projeto."
-    },
-    {
       "id": "tecnologia-625",
       "difficulty": "hard",
       "text": "Que empresa holandesa é a única fabricante de máquinas de litografia EUV?",
@@ -8441,19 +8246,6 @@
       "fact": "Ele escolheu o símbolo por ser pouco usado."
     },
     {
-      "id": "tecnologia-644",
-      "difficulty": "hard",
-      "text": "Quem criou o Bitcoin, com um pseudônimo?",
-      "options": [
-        "Satoshi Nakamoto",
-        "Vitalik Buterin",
-        "Hal Finney",
-        "Nick Szabo"
-      ],
-      "answer": 0,
-      "fact": "O artigo foi publicado em 2008."
-    },
-    {
       "id": "tecnologia-645",
       "difficulty": "hard",
       "text": "Quem é o fundador da exchange FTX, condenado em 2024?",
@@ -8478,84 +8270,6 @@
       ],
       "answer": 0,
       "fact": "Ele é conhecido pelas iniciais CZ."
-    },
-    {
-      "id": "tecnologia-647",
-      "difficulty": "hard",
-      "text": "Que linguagem o Google criou em 2009?",
-      "options": [
-        "Go",
-        "Rust",
-        "Swift",
-        "Dart"
-      ],
-      "answer": 0,
-      "fact": "Rob Pike e Ken Thompson participaram da criação."
-    },
-    {
-      "id": "tecnologia-648",
-      "difficulty": "hard",
-      "text": "Que linguagem nasceu na Mozilla e é conhecida pela segurança de memória?",
-      "options": [
-        "Rust",
-        "Go",
-        "Swift",
-        "Kotlin"
-      ],
-      "answer": 0,
-      "fact": "Ela começou como um projeto pessoal de Graydon Hoare."
-    },
-    {
-      "id": "tecnologia-649",
-      "difficulty": "hard",
-      "text": "Que linguagem foi criada por Yukihiro Matsumoto, nos anos 1990?",
-      "options": [
-        "Ruby",
-        "Perl",
-        "PHP",
-        "Lua"
-      ],
-      "answer": 0,
-      "fact": "O Rails a tornou popular em 2004."
-    },
-    {
-      "id": "tecnologia-650",
-      "difficulty": "hard",
-      "text": "Que linguagem foi criada por Bjarne Stroustrup?",
-      "options": [
-        "C++",
-        "C",
-        "Java",
-        "Rust"
-      ],
-      "answer": 0,
-      "fact": "Ele trabalhava no Bell Labs."
-    },
-    {
-      "id": "tecnologia-651",
-      "difficulty": "hard",
-      "text": "Que linguagem brasileira foi criada na PUC-Rio?",
-      "options": [
-        "Lua",
-        "Elixir",
-        "Ruby",
-        "Go"
-      ],
-      "answer": 0,
-      "fact": "Ela é muito usada em jogos, como no Roblox."
-    },
-    {
-      "id": "tecnologia-652",
-      "difficulty": "hard",
-      "text": "Que linguagem foi criada pelo brasileiro José Valim?",
-      "options": [
-        "Elixir",
-        "Lua",
-        "Go",
-        "Rust"
-      ],
-      "answer": 0,
-      "fact": "Ela roda na máquina virtual do Erlang."
     },
     {
       "id": "tecnologia-653",
@@ -8649,19 +8363,6 @@
       "fact": "O serviço chegou em 2015."
     },
     {
-      "id": "tecnologia-660",
-      "difficulty": "hard",
-      "text": "Em que país surgiu o Skype?",
-      "options": [
-        "Estônia",
-        "Suécia",
-        "Finlândia",
-        "Noruega"
-      ],
-      "answer": 0,
-      "fact": "Os programadores eram de lá, e os fundadores eram de outros países."
-    },
-    {
       "id": "tecnologia-661",
       "difficulty": "hard",
       "text": "Em que país nasceu o aplicativo Waze?",
@@ -8673,19 +8374,6 @@
       ],
       "answer": 0,
       "fact": "O Google o comprou em 2013."
-    },
-    {
-      "id": "tecnologia-662",
-      "difficulty": "hard",
-      "text": "Em que país nasceu o Spotify?",
-      "options": [
-        "Suécia",
-        "Noruega",
-        "Dinamarca",
-        "Finlândia"
-      ],
-      "answer": 0,
-      "fact": "Daniel Ek é um dos fundadores."
     },
     {
       "id": "tecnologia-663",
@@ -8751,19 +8439,6 @@
       ],
       "answer": 0,
       "fact": "A linha ThinkPad passou para ela."
-    },
-    {
-      "id": "tecnologia-668",
-      "difficulty": "hard",
-      "text": "Que empresa chinesa foi fundada por um ex-oficial do exército, Ren Zhengfei?",
-      "options": [
-        "Huawei",
-        "Xiaomi",
-        "Lenovo",
-        "BYD"
-      ],
-      "answer": 0,
-      "fact": "A empresa é líder em equipamentos 5G."
     },
     {
       "id": "tecnologia-669",
@@ -9026,19 +8701,6 @@
       "fact": "Ele estava em uma rua de Nova York."
     },
     {
-      "id": "tecnologia-689",
-      "difficulty": "hard",
-      "text": "Qual é o nome da unidade depois do terabyte?",
-      "options": [
-        "Petabyte",
-        "Exabyte",
-        "Zettabyte",
-        "Yottabyte"
-      ],
-      "answer": 0,
-      "fact": "Cada uma é cerca de mil vezes a anterior."
-    },
-    {
       "id": "tecnologia-690",
       "difficulty": "hard",
       "text": "Qual é o nome da unidade depois do petabyte?",
@@ -9183,21 +8845,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi criado por dois irmãos paquistaneses."
-    },
-    {
-      "id": "tecnologia-700",
-      "difficulty": "impossible",
-      "text": "De que país eram os irmãos criadores do vírus Brain?",
-      "options": [
-        "Paquistão",
-        "Índia",
-        "Rússia",
-        "Brasil",
-        "Turquia",
-        "Egito"
-      ],
-      "answer": 0,
-      "fact": "O nome e o endereço deles estavam dentro do vírus."
     },
     {
       "id": "tecnologia-701",
@@ -9350,21 +8997,6 @@
       "fact": "Ward Cunningham viu a palavra em um ônibus."
     },
     {
-      "id": "tecnologia-711",
-      "difficulty": "impossible",
-      "text": "Qual é o nome do primeiro domínio .com registrado, em 1985?",
-      "options": [
-        "symbolics.com",
-        "ibm.com",
-        "apple.com",
-        "google.com",
-        "nasa.com",
-        "bbn.com"
-      ],
-      "answer": 0,
-      "fact": "A empresa fazia computadores de pesquisa."
-    },
-    {
       "id": "tecnologia-712",
       "difficulty": "impossible",
       "text": "Qual é a duração do primeiro vídeo do YouTube?",
@@ -9425,21 +9057,6 @@
       "fact": "A compra custou 19 bilhões de dólares."
     },
     {
-      "id": "tecnologia-716",
-      "difficulty": "impossible",
-      "text": "Quantos funcionários o Instagram tinha ao ser comprado?",
-      "options": [
-        "13",
-        "130",
-        "1.300",
-        "5",
-        "50",
-        "500"
-      ],
-      "answer": 0,
-      "fact": "A venda foi de 1 bilhão de dólares."
-    },
-    {
       "id": "tecnologia-717",
       "difficulty": "easy",
       "text": "Que aparelho serve para ligar o celular à TV sem fio?",
@@ -9490,19 +9107,6 @@
       ],
       "answer": 0,
       "fact": "Era um aplicativo de localização cheio de funções."
-    },
-    {
-      "id": "tecnologia-721",
-      "difficulty": "hard",
-      "text": "Que computador da IBM venceu Kasparov no xadrez, em 1997?",
-      "options": [
-        "Deep Blue",
-        "Watson",
-        "AlphaGo",
-        "Hal"
-      ],
-      "answer": 0,
-      "fact": "Ele avaliava 200 milhões de posições por segundo."
     },
     {
       "id": "tecnologia-722",
@@ -9882,19 +9486,6 @@
       ],
       "answer": 0,
       "fact": "Ele surgiu para o Mac, em 1985."
-    },
-    {
-      "id": "tecnologia-751",
-      "difficulty": "easy",
-      "text": "Que empresa é dona do Photoshop?",
-      "options": [
-        "Adobe",
-        "Microsoft",
-        "Apple",
-        "Canon"
-      ],
-      "answer": 0,
-      "fact": "Ele foi lançado em 1990."
     },
     {
       "id": "tecnologia-752",

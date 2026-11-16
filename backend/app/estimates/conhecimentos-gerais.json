@@ -201,14 +201,6 @@
       "fact": "Com 828 metros, ele é o prédio mais alto do mundo desde 2010."
     },
     {
-      "id": "chute-conhecimentos-gerais-26",
-      "difficulty": "medium",
-      "text": "Em que ano as notas e moedas de euro começaram a circular?",
-      "answer": 2002,
-      "scale": 50,
-      "fact": "O euro já existia desde 1999, mas só em transações eletrônicas."
-    },
-    {
       "id": "chute-conhecimentos-gerais-27",
       "difficulty": "hard",
       "text": "Quantas línguas são faladas no mundo?",
@@ -321,14 +313,6 @@
       "fact": "Antes disso, a condução é proibida."
     },
     {
-      "id": "chute-conhecimentos-gerais-41",
-      "difficulty": "easy",
-      "text": "Quantos anos de idade são necessários para votar no Brasil, no mínimo?",
-      "answer": 16,
-      "unit": "anos",
-      "fact": "Entre 16 e 18 anos, o voto é facultativo."
-    },
-    {
       "id": "chute-conhecimentos-gerais-42",
       "difficulty": "easy",
       "text": "Quantos anos de idade tem uma debutante?",
@@ -359,14 +343,6 @@
       "answer": 12,
       "unit": "signos",
       "fact": "Cada um representa um animal."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-46",
-      "difficulty": "medium",
-      "text": "Quantos anos dura o mandato de um senador brasileiro?",
-      "answer": 8,
-      "unit": "anos",
-      "fact": "A eleição de renovação acontece a cada quatro anos."
     },
     {
       "id": "chute-conhecimentos-gerais-47",
@@ -431,14 +407,6 @@
       "answer": 150,
       "unit": "cm",
       "fact": "Um metro tem 100 centímetros."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-55",
-      "difficulty": "easy",
-      "text": "Quantos metros tem a Torre Eiffel, aproximadamente?",
-      "answer": 330,
-      "unit": "metros",
-      "fact": "A altura muda um pouco com o calor."
     },
     {
       "id": "chute-conhecimentos-gerais-56",
@@ -601,14 +569,6 @@
       "fact": "Thomas Edison fez milhares de testes."
     },
     {
-      "id": "chute-conhecimentos-gerais-76",
-      "difficulty": "medium",
-      "text": "Em que ano o avião 14-Bis voou?",
-      "answer": 1906,
-      "scale": 50,
-      "fact": "Santos Dumont voou em Paris."
-    },
-    {
       "id": "chute-conhecimentos-gerais-77",
       "difficulty": "medium",
       "text": "Em que ano foi feito o primeiro voo dos irmãos Wright?",
@@ -673,14 +633,6 @@
       "fact": "Surfistas o usavam em dias sem onda."
     },
     {
-      "id": "chute-conhecimentos-gerais-85",
-      "difficulty": "medium",
-      "text": "Em que ano foi lançada a boneca Barbie?",
-      "answer": 1959,
-      "scale": 50,
-      "fact": "Ruth Handler a criou."
-    },
-    {
       "id": "chute-conhecimentos-gerais-86",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Mickey Mouse?",
@@ -727,22 +679,6 @@
       "answer": 2001,
       "scale": 50,
       "fact": "Foi em Nova York e Washington."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-92",
-      "difficulty": "easy",
-      "text": "Em que ano o homem pisou na Lua?",
-      "answer": 1969,
-      "scale": 50,
-      "fact": "Foi com a Apollo 11."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-93",
-      "difficulty": "easy",
-      "text": "Em que ano a pandemia de covid-19 foi decretada?",
-      "answer": 2020,
-      "scale": 50,
-      "fact": "A OMS a declarou em março."
     },
     {
       "id": "chute-conhecimentos-gerais-94",
@@ -1529,22 +1465,6 @@
       "fact": "Dois outros filmes têm o mesmo recorde."
     },
     {
-      "id": "chute-conhecimentos-gerais-192",
-      "difficulty": "medium",
-      "text": "Quanto pesa uma estatueta do Oscar, em quilos?",
-      "answer": 3.8,
-      "unit": "quilos",
-      "fact": "Ela é banhada a ouro."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-193",
-      "difficulty": "medium",
-      "text": "Quanto mede uma estatueta do Oscar, em centímetros?",
-      "answer": 34,
-      "unit": "cm",
-      "fact": "Ela é um cavaleiro sobre um rolo de filme."
-    },
-    {
       "id": "chute-conhecimentos-gerais-194",
       "difficulty": "medium",
       "text": "Qual é a temperatura do gelo seco, em °C?",
@@ -1552,15 +1472,6 @@
       "unit": "°C",
       "scale": 20,
       "fact": "Ele é dióxido de carbono congelado."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-195",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura do nitrogênio usado em sorvetes de laboratório, em °C?",
-      "answer": -196,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Ele também é usado em tratamentos de pele."
     },
     {
       "id": "chute-conhecimentos-gerais-196",
@@ -1629,14 +1540,6 @@
       "fact": "Em uma vida, isso enche muitas piscinas."
     },
     {
-      "id": "chute-conhecimentos-gerais-204",
-      "difficulty": "hard",
-      "text": "Quantos quilômetros de vasos sanguíneos há no corpo, aproximadamente?",
-      "answer": 100000,
-      "unit": "km",
-      "fact": "Essa medida dá mais de duas voltas ao redor da Terra."
-    },
-    {
       "id": "chute-conhecimentos-gerais-205",
       "difficulty": "hard",
       "text": "Quantas células tem o corpo humano, em trilhões, aproximadamente?",
@@ -1675,14 +1578,6 @@
       "answer": 25,
       "unit": "anos",
       "fact": "É um terço da vida."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-210",
-      "difficulty": "hard",
-      "text": "Qual foi o recorde de tempo sem dormir, em dias, em 1964?",
-      "answer": 11,
-      "unit": "dias",
-      "fact": "Randy Gardner foi quem bateu o recorde."
     },
     {
       "id": "chute-conhecimentos-gerais-211",
@@ -1950,14 +1845,6 @@
       "fact": "Muito disso é em anúncios de TV e de internet."
     },
     {
-      "id": "chute-conhecimentos-gerais-244",
-      "difficulty": "hard",
-      "text": "Quantos telespectadores viram o Super Bowl de 2024, em milhões?",
-      "answer": 123,
-      "unit": "milhões",
-      "fact": "Foi o maior público da TV americana."
-    },
-    {
       "id": "chute-conhecimentos-gerais-245",
       "difficulty": "hard",
       "text": "Quantos telespectadores viram a chegada do homem à Lua, em milhões, aproximadamente?",
@@ -2118,14 +2005,6 @@
       "fact": "Ela traz o lobo-guará e foi lançada em 2020."
     },
     {
-      "id": "chute-conhecimentos-gerais-265",
-      "difficulty": "medium",
-      "text": "Quantas notas de real em circulação existem, entre os valores atuais?",
-      "answer": 7,
-      "unit": "valores",
-      "fact": "Vão de 2 a 200 reais."
-    },
-    {
       "id": "chute-conhecimentos-gerais-266",
       "difficulty": "medium",
       "text": "Quantas moedas de real em circulação existem, entre os valores?",
@@ -2204,14 +2083,6 @@
       "fact": "A contagem começa com a morte de Buda."
     },
     {
-      "id": "chute-conhecimentos-gerais-276",
-      "difficulty": "medium",
-      "text": "Em que ano foi adotado o calendário gregoriano?",
-      "answer": 1582,
-      "scale": 50,
-      "fact": "O papa Gregório XIII retirou 10 dias do ano."
-    },
-    {
       "id": "chute-conhecimentos-gerais-277",
       "difficulty": "medium",
       "text": "Quantos dias foram retirados do ano na criação do calendário gregoriano?",
@@ -2250,14 +2121,6 @@
       "answer": 10,
       "unit": "meses",
       "fact": "É por isso que dezembro vem de \"dez\"."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-282",
-      "difficulty": "medium",
-      "text": "Quantos fusos horários existem no mundo, no padrão comum?",
-      "answer": 24,
-      "unit": "fusos",
-      "fact": "Alguns países usam diferenças de 30 minutos."
     },
     {
       "id": "chute-conhecimentos-gerais-283",
@@ -2428,23 +2291,6 @@
       "fact": "Ela chegou aos EUA em 214 caixas."
     },
     {
-      "id": "chute-conhecimentos-gerais-304",
-      "difficulty": "medium",
-      "text": "Quantos metros tem o maior prédio do Brasil, em Balneário Camboriú, aproximadamente?",
-      "answer": 290,
-      "unit": "metros",
-      "fact": "A cidade é conhecida pelos arranha-céus."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-305",
-      "difficulty": "medium",
-      "text": "Qual é a altitude de Jericó, em metros?",
-      "answer": -258,
-      "unit": "metros",
-      "scale": 20,
-      "fact": "Ela é uma das cidades mais baixas do mundo."
-    },
-    {
       "id": "chute-conhecimentos-gerais-306",
       "difficulty": "medium",
       "text": "Qual é a altitude do Mar Morto, em metros, aproximadamente?",
@@ -2460,15 +2306,6 @@
       "answer": -10900,
       "unit": "metros",
       "fact": "Poucas pessoas já chegaram até lá."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-308",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Vale da Morte, nos EUA, em metros?",
-      "answer": -86,
-      "unit": "metros",
-      "scale": 20,
-      "fact": "Ele é o ponto mais baixo da América do Norte."
     },
     {
       "id": "chute-conhecimentos-gerais-309",
@@ -2525,14 +2362,6 @@
       "answer": 4.5,
       "unit": "bilhões",
       "fact": "Os meteoritos ajudaram nessa estimativa."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-316",
-      "difficulty": "hard",
-      "text": "Quantos anos o Universo tem, em bilhões de anos, aproximadamente?",
-      "answer": 13.8,
-      "unit": "bilhões",
-      "fact": "O dado vem do brilho do Big Bang."
     },
     {
       "id": "chute-conhecimentos-gerais-317",
@@ -2767,14 +2596,6 @@
       "fact": "As cores dela são verde e rosa."
     },
     {
-      "id": "chute-conhecimentos-gerais-346",
-      "difficulty": "hard",
-      "text": "Quantos minutos dura o desfile de uma escola do Grupo Especial do Rio, no máximo?",
-      "answer": 70,
-      "unit": "minutos",
-      "fact": "Passar do tempo tira pontos."
-    },
-    {
       "id": "chute-conhecimentos-gerais-347",
       "difficulty": "medium",
       "text": "Em que ano Júlio César foi morto, com sinal de menos para antes de Cristo?",
@@ -2895,15 +2716,6 @@
       "fact": "O número varia conforme a fonte."
     },
     {
-      "id": "chute-conhecimentos-gerais-362",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura mais baixa já medida na Terra, em °C?",
-      "answer": -89.2,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Foi na estação russa de Vostok, em 1983."
-    },
-    {
       "id": "chute-conhecimentos-gerais-363",
       "difficulty": "hard",
       "text": "Qual é a temperatura média de inverno na estação Vostok, na Antártida, em °C?",
@@ -2920,15 +2732,6 @@
       "unit": "°C",
       "scale": 20,
       "fact": "Foi na Sibéria, em Verkhoiansk."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-365",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura mais baixa já registrada no Canadá, em °C?",
-      "answer": -63,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Foi em Snag, no Yukon, em 1947."
     },
     {
       "id": "chute-conhecimentos-gerais-366",
@@ -2971,14 +2774,6 @@
       "answer": 450,
       "unit": "°C",
       "fact": "Lá, a pizza fica pronta em minutos."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-371",
-      "difficulty": "hard",
-      "text": "Qual é a temperatura do óleo de fritura, em °C, aproximadamente?",
-      "answer": 180,
-      "unit": "°C",
-      "fact": "Muito além disso, ele começa a queimar."
     },
     {
       "id": "chute-conhecimentos-gerais-372",
@@ -3165,15 +2960,6 @@
       "fact": "As duplas ficam frente a frente."
     },
     {
-      "id": "chute-conhecimentos-gerais-395",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura em que o álcool comum congela, em °C?",
-      "answer": -114,
-      "unit": "°C",
-      "scale": 20,
-      "fact": "Por isso, ele é usado em muitos termômetros."
-    },
-    {
       "id": "chute-conhecimentos-gerais-396",
       "difficulty": "medium",
       "text": "Qual é a temperatura de um freezer de hospital para vacinas, em °C?",
@@ -3189,14 +2975,6 @@
       "answer": 120,
       "unit": "mmHg",
       "fact": "Ela é chamada de 12 por 8."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-398",
-      "difficulty": "medium",
-      "text": "Quantos batimentos por minuto tem um adulto em repouso, em média?",
-      "answer": 70,
-      "unit": "batimentos",
-      "fact": "Atletas podem ter menos de 50."
     },
     {
       "id": "chute-conhecimentos-gerais-399",
@@ -3221,14 +2999,6 @@
       "answer": 30,
       "unit": "dias",
       "fact": "A água é bem mais urgente."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-402",
-      "difficulty": "medium",
-      "text": "Quantos litros de ar uma pessoa respira por dia, aproximadamente?",
-      "answer": 11000,
-      "unit": "litros",
-      "fact": "Isso dá milhares de respirações."
     },
     {
       "id": "chute-conhecimentos-gerais-403",
@@ -3301,14 +3071,6 @@
       "answer": 10,
       "unit": "quilos",
       "fact": "Ela está no Egito."
-    },
-    {
-      "id": "chute-conhecimentos-gerais-412",
-      "difficulty": "hard",
-      "text": "Quantos anos dura a meia-vida do carbono-14, aproximadamente?",
-      "answer": 5730,
-      "unit": "anos",
-      "fact": "Ela é usada para datar materiais antigos."
     },
     {
       "id": "chute-conhecimentos-gerais-413",

@@ -4623,19 +4623,6 @@
       "fact": "No curling, os jogadores varrem o gelo para controlar a velocidade da pedra."
     },
     {
-      "id": "esportes-354",
-      "difficulty": "easy",
-      "text": "Quantos jogadores um time de vôlei de quadra tem em jogo?",
-      "options": [
-        "6",
-        "5",
-        "7",
-        "4"
-      ],
-      "answer": 0,
-      "fact": "Os jogadores fazem rodízio de posição sempre que o time recupera o saque."
-    },
-    {
       "id": "esportes-355",
       "difficulty": "easy",
       "text": "Quantos pontos vale uma cesta normal, de dentro do arco, no basquete?",
@@ -6179,19 +6166,6 @@
       "fact": "Ele marcou mais de 100 gols como goleiro."
     },
     {
-      "id": "esportes-470",
-      "difficulty": "easy",
-      "text": "Em que clube Messi jogou por mais de 20 anos?",
-      "options": [
-        "Barcelona",
-        "Real Madrid",
-        "Paris Saint-Germain",
-        "Inter Miami"
-      ],
-      "answer": 0,
-      "fact": "Ele chegou lá aos 13 anos."
-    },
-    {
       "id": "esportes-471",
       "difficulty": "easy",
       "text": "Em que clube Cristiano Ronaldo virou o maior artilheiro?",
@@ -6463,19 +6437,6 @@
       ],
       "answer": 0,
       "fact": "São azul, amarelo, preto, verde e vermelho."
-    },
-    {
-      "id": "esportes-492",
-      "difficulty": "easy",
-      "text": "Quantos jogadores tem um time de rúgbi sevens em campo?",
-      "options": [
-        "7",
-        "15",
-        "11",
-        "5"
-      ],
-      "answer": 0,
-      "fact": "A modalidade entrou nas Olimpíadas em 2016."
     },
     {
       "id": "esportes-493",
@@ -6764,19 +6725,6 @@
       "fact": "O apelido nasceu de um xingamento dos rivais."
     },
     {
-      "id": "esportes-515",
-      "difficulty": "easy",
-      "text": "Qual time de futebol é o \"Verdão\"?",
-      "options": [
-        "Palmeiras",
-        "Coritiba",
-        "Goiás",
-        "Juventude"
-      ],
-      "answer": 0,
-      "fact": "Ele foi fundado por italianos."
-    },
-    {
       "id": "esportes-516",
       "difficulty": "easy",
       "text": "Qual time de futebol é o \"Fogão\"?",
@@ -6801,32 +6749,6 @@
       ],
       "answer": 0,
       "fact": "O estádio se chama São Januário."
-    },
-    {
-      "id": "esportes-518",
-      "difficulty": "easy",
-      "text": "Qual time de futebol é o \"Tricolor Gaúcho\"?",
-      "options": [
-        "Grêmio",
-        "Internacional",
-        "Juventude",
-        "Caxias"
-      ],
-      "answer": 0,
-      "fact": "A Arena do Grêmio fica em Porto Alegre."
-    },
-    {
-      "id": "esportes-519",
-      "difficulty": "easy",
-      "text": "Qual time de futebol é o \"Galo\"?",
-      "options": [
-        "Atlético Mineiro",
-        "Cruzeiro",
-        "América Mineiro",
-        "Sport"
-      ],
-      "answer": 0,
-      "fact": "Ele ganhou a Libertadores em 2013."
     },
     {
       "id": "esportes-520",
@@ -7217,19 +7139,6 @@
       ],
       "answer": 0,
       "fact": "Será a primeira com 48 seleções."
-    },
-    {
-      "id": "esportes-550",
-      "difficulty": "medium",
-      "text": "Quantas seleções jogam a Copa de 2026?",
-      "options": [
-        "48",
-        "32",
-        "36",
-        "64"
-      ],
-      "answer": 0,
-      "fact": "Eram 32 desde 1998."
     },
     {
       "id": "esportes-551",
@@ -7778,19 +7687,6 @@
       "fact": "Ele foi escolhido em 2003, direto do colégio."
     },
     {
-      "id": "esportes-593",
-      "difficulty": "medium",
-      "text": "Que time da NBA tem Michael Jordan na história?",
-      "options": [
-        "Chicago Bulls",
-        "LA Lakers",
-        "Boston Celtics",
-        "Miami Heat"
-      ],
-      "answer": 0,
-      "fact": "Ele ganhou seis títulos lá."
-    },
-    {
       "id": "esportes-594",
       "difficulty": "medium",
       "text": "Que time da NBA tem camisas roxas e douradas?",
@@ -7841,19 +7737,6 @@
       ],
       "answer": 0,
       "fact": "Ele revolucionou o arremesso de três pontos."
-    },
-    {
-      "id": "esportes-598",
-      "difficulty": "medium",
-      "text": "Em que Olimpíada surgiu o \"Dream Team\" de basquete dos EUA?",
-      "options": [
-        "Barcelona 1992",
-        "Atlanta 1996",
-        "Seul 1988",
-        "Sydney 2000"
-      ],
-      "answer": 0,
-      "fact": "Jordan, Magic e Bird estavam no time."
     },
     {
       "id": "esportes-599",
@@ -8062,19 +7945,6 @@
       ],
       "answer": 0,
       "fact": "Os dois velejadores têm dois ouros cada."
-    },
-    {
-      "id": "esportes-615",
-      "difficulty": "medium",
-      "text": "Em que esporte Isaquias Queiroz ganhou seu ouro?",
-      "options": [
-        "Canoagem",
-        "Remo",
-        "Natação",
-        "Vela"
-      ],
-      "answer": 0,
-      "fact": "Ele tem cinco medalhas olímpicas."
     },
     {
       "id": "esportes-616",
@@ -8883,19 +8753,6 @@
       "fact": "Essa é a chamada Tríplice Coroa do automobilismo."
     },
     {
-      "id": "esportes-678",
-      "difficulty": "hard",
-      "text": "Que piloto brasileiro é tetracampeão das 500 Milhas de Indianápolis?",
-      "options": [
-        "Hélio Castroneves",
-        "Tony Kanaan",
-        "Gil de Ferran",
-        "Emerson Fittipaldi"
-      ],
-      "answer": 0,
-      "fact": "Ele subia na grade depois das vitórias."
-    },
-    {
       "id": "esportes-679",
       "difficulty": "hard",
       "text": "Qual tenista é o maior vencedor de Roland Garros?",
@@ -9000,19 +8857,6 @@
       "fact": "O Brasil levou a prata em Sydney."
     },
     {
-      "id": "esportes-687",
-      "difficulty": "hard",
-      "text": "Qual saltador brasileiro ganhou dois ouros no salto triplo?",
-      "options": [
-        "Adhemar Ferreira da Silva",
-        "João do Pulo",
-        "Nelson Prudêncio",
-        "Jadel Gregório"
-      ],
-      "answer": 0,
-      "fact": "Ele é um dos maiores atletas do país."
-    },
-    {
       "id": "esportes-688",
       "difficulty": "hard",
       "text": "Qual saltador brasileiro bateu o recorde mundial do triplo em 1975?",
@@ -9024,19 +8868,6 @@
       ],
       "answer": 0,
       "fact": "Ele perdeu uma perna em um acidente de carro."
-    },
-    {
-      "id": "esportes-689",
-      "difficulty": "hard",
-      "text": "Qual brasileiro é o maior medalhista paralímpico?",
-      "options": [
-        "Daniel Dias",
-        "Clodoaldo Silva",
-        "Petrúcio Ferreira",
-        "Alan Fonteles"
-      ],
-      "answer": 0,
-      "fact": "Ele conquistou 27 medalhas."
     },
     {
       "id": "esportes-690",
@@ -9806,19 +9637,6 @@
       "fact": "James Naismith criou o esporte em 1891."
     },
     {
-      "id": "esportes-745",
-      "difficulty": "easy",
-      "text": "Em que esporte se usa um taco e um buraco?",
-      "options": [
-        "Golfe",
-        "Tênis",
-        "Beisebol",
-        "Críquete"
-      ],
-      "answer": 0,
-      "fact": "O Masters de Augusta é um dos torneios mais famosos."
-    },
-    {
       "id": "esportes-746",
       "difficulty": "easy",
       "text": "Em que esporte se joga em uma piscina com bola e goleiro?",
@@ -9845,32 +9663,6 @@
       "fact": "Ele foi tricampeão mundial."
     },
     {
-      "id": "esportes-748",
-      "difficulty": "easy",
-      "text": "Que esporte tem Rebeca Andrade entre os grandes nomes?",
-      "options": [
-        "Ginástica artística",
-        "Natação",
-        "Atletismo",
-        "Judô"
-      ],
-      "answer": 0,
-      "fact": "Ela ganhou ouro em Paris, em 2024."
-    },
-    {
-      "id": "esportes-749",
-      "difficulty": "easy",
-      "text": "Que esporte tem Marta entre os grandes nomes?",
-      "options": [
-        "Futebol",
-        "Basquete",
-        "Vôlei",
-        "Handebol"
-      ],
-      "answer": 0,
-      "fact": "Ela foi eleita seis vezes a melhor do mundo."
-    },
-    {
       "id": "esportes-750",
       "difficulty": "easy",
       "text": "Que esporte tem Ayrton Senna como lenda?",
@@ -9882,32 +9674,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi tricampeão mundial."
-    },
-    {
-      "id": "esportes-751",
-      "difficulty": "easy",
-      "text": "Que esporte tem Michael Jordan como lenda?",
-      "options": [
-        "Basquete",
-        "Beisebol",
-        "Golfe",
-        "Futebol americano"
-      ],
-      "answer": 0,
-      "fact": "Ele ganhou seis títulos da NBA."
-    },
-    {
-      "id": "esportes-752",
-      "difficulty": "easy",
-      "text": "Que esporte tem Roger Federer como lenda?",
-      "options": [
-        "Tênis",
-        "Golfe",
-        "Críquete",
-        "Squash"
-      ],
-      "answer": 0,
-      "fact": "Ele tem 20 títulos de Grand Slam."
     },
     {
       "id": "esportes-753",
@@ -10014,45 +9780,6 @@
       "fact": "Ele marcou 15 gols."
     },
     {
-      "id": "esportes-761",
-      "difficulty": "medium",
-      "text": "Que nadador brasileiro foi campeão olímpico em 2008?",
-      "options": [
-        "César Cielo",
-        "Thiago Pereira",
-        "Gustavo Borges",
-        "Bruno Fratus"
-      ],
-      "answer": 0,
-      "fact": "Ele venceu os 50 metros livre."
-    },
-    {
-      "id": "esportes-762",
-      "difficulty": "hard",
-      "text": "Que clube venceu mais vezes a Liga dos Campeões?",
-      "options": [
-        "Real Madrid",
-        "Milan",
-        "Liverpool",
-        "Bayern de Munique"
-      ],
-      "answer": 0,
-      "fact": "Ele já tem mais de 15 títulos."
-    },
-    {
-      "id": "esportes-763",
-      "difficulty": "hard",
-      "text": "Que clube brasileiro venceu o Mundial de 2005 sobre o Liverpool?",
-      "options": [
-        "São Paulo",
-        "Internacional",
-        "Corinthians",
-        "Grêmio"
-      ],
-      "answer": 0,
-      "fact": "Mineiro fez o gol da final."
-    },
-    {
       "id": "esportes-764",
       "difficulty": "hard",
       "text": "Que clube brasileiro venceu o Mundial de 2006 sobre o Barcelona?",
@@ -10066,19 +9793,6 @@
       "fact": "Adriano Gabiru fez o gol."
     },
     {
-      "id": "esportes-765",
-      "difficulty": "hard",
-      "text": "Que clube brasileiro venceu o Mundial de 2012 sobre o Chelsea?",
-      "options": [
-        "Corinthians",
-        "Santos",
-        "Internacional",
-        "Atlético-MG"
-      ],
-      "answer": 0,
-      "fact": "Guerrero fez o gol da final."
-    },
-    {
       "id": "esportes-766",
       "difficulty": "hard",
       "text": "Quem foi o primeiro brasileiro campeão de Fórmula 1?",
@@ -10090,19 +9804,6 @@
       ],
       "answer": 0,
       "fact": "O título veio em 1972."
-    },
-    {
-      "id": "esportes-767",
-      "difficulty": "hard",
-      "text": "Em que circuito Ayrton Senna morreu?",
-      "options": [
-        "Ímola",
-        "Monza",
-        "Spa",
-        "Interlagos"
-      ],
-      "answer": 0,
-      "fact": "Foi no GP de San Marino de 1994."
     },
     {
       "id": "esportes-768",

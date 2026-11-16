@@ -310,13 +310,6 @@
       "fact": "Ela é uma skatista."
     },
     {
-      "id": "vf-esportes-45",
-      "difficulty": "medium",
-      "text": "Usain Bolt é o recordista mundial dos 100 metros.",
-      "answer": true,
-      "fact": "A marca é de 9,58 segundos."
-    },
-    {
       "id": "vf-esportes-46",
       "difficulty": "medium",
       "text": "Usain Bolt nasceu nos Estados Unidos.",
@@ -630,13 +623,6 @@
       "text": "O Brasil é o único país a ter disputado todas as Copas do Mundo.",
       "answer": true,
       "fact": "A presença vem desde 1930."
-    },
-    {
-      "id": "vf-esportes-91",
-      "difficulty": "medium",
-      "text": "Michael Phelps foi campeão olímpico no atletismo.",
-      "answer": false,
-      "fact": "Ele conquistou suas medalhas na natação."
     },
     {
       "id": "vf-esportes-92",

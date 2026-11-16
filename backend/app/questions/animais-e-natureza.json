@@ -1893,19 +1893,6 @@
       "fact": "A temperatura no canal do raio chega a 30.000 °C."
     },
     {
-      "id": "animais-e-natureza-146",
-      "difficulty": "easy",
-      "text": "Qual a estação do ano em que as árvores costumam perder folhas?",
-      "options": [
-        "Outono",
-        "Verão",
-        "Primavera",
-        "Inverno"
-      ],
-      "answer": 0,
-      "fact": "As folhas caem para a árvore poupar água e energia."
-    },
-    {
       "id": "animais-e-natureza-147",
       "difficulty": "easy",
       "text": "Em qual estação as flores costumam desabrochar?",
@@ -1917,19 +1904,6 @@
       ],
       "answer": 0,
       "fact": "No Brasil, a primavera começa em setembro."
-    },
-    {
-      "id": "animais-e-natureza-148",
-      "difficulty": "easy",
-      "text": "Qual é o único mamífero que voa de verdade?",
-      "options": [
-        "Morcego",
-        "Esquilo-voador",
-        "Coruja",
-        "Beija-flor"
-      ],
-      "answer": 0,
-      "fact": "O esquilo-voador apenas plana."
     },
     {
       "id": "animais-e-natureza-149",
@@ -2530,19 +2504,6 @@
       "fact": "O Brasil é um grande produtor de esmeraldas."
     },
     {
-      "id": "animais-e-natureza-195",
-      "difficulty": "easy",
-      "text": "Qual destas pedras preciosas é vermelha?",
-      "options": [
-        "Rubi",
-        "Safira",
-        "Esmeralda",
-        "Turquesa"
-      ],
-      "answer": 0,
-      "fact": "Ele tem a mesma composição da safira."
-    },
-    {
       "id": "animais-e-natureza-196",
       "difficulty": "easy",
       "text": "Qual é a pedra mais dura da natureza?",
@@ -3115,19 +3076,6 @@
       "fact": "A mais alta tem cerca de 115 metros e fica na Califórnia."
     },
     {
-      "id": "animais-e-natureza-240",
-      "difficulty": "easy",
-      "text": "Qual árvore dá o látex usado na borracha natural?",
-      "options": [
-        "Seringueira",
-        "Cajueiro",
-        "Mangueira",
-        "Mogno"
-      ],
-      "answer": 0,
-      "fact": "A seringueira é originária da Amazônia."
-    },
-    {
       "id": "animais-e-natureza-241",
       "difficulty": "easy",
       "text": "Qual árvore dá a castanha muito vendida na Amazônia?",
@@ -3544,19 +3492,6 @@
       "fact": "Karl von Frisch recebeu o Nobel por descobrir essa dança."
     },
     {
-      "id": "animais-e-natureza-273",
-      "difficulty": "medium",
-      "text": "Quantos estômagos os bois têm, em compartimentos?",
-      "options": [
-        "4",
-        "2",
-        "3",
-        "5"
-      ],
-      "answer": 0,
-      "fact": "Eles têm rúmen, retículo, omaso e abomaso."
-    },
-    {
       "id": "animais-e-natureza-274",
       "difficulty": "medium",
       "text": "Quantas câmaras tem o coração de um peixe?",
@@ -3908,19 +3843,6 @@
       "fact": "O trabalho salvou o animal, que hoje tem mais de 3 mil indivíduos."
     },
     {
-      "id": "animais-e-natureza-301",
-      "difficulty": "medium",
-      "text": "Qual destes felinos é o mais rápido em distâncias curtas?",
-      "options": [
-        "Guepardo",
-        "Leopardo",
-        "Onça",
-        "Puma"
-      ],
-      "answer": 0,
-      "fact": "Ele acelera mais rápido que muitos carros esportivos."
-    },
-    {
       "id": "animais-e-natureza-302",
       "difficulty": "medium",
       "text": "Qual é o único felino que vive em bandos?",
@@ -4218,19 +4140,6 @@
       ],
       "answer": 0,
       "fact": "Pégaso é um animal mítico da Grécia Antiga."
-    },
-    {
-      "id": "animais-e-natureza-325",
-      "difficulty": "easy",
-      "text": "Que animal da fazenda fornece o toucinho e o bacon?",
-      "options": [
-        "Porco",
-        "Boi",
-        "Ovelha",
-        "Cabra"
-      ],
-      "answer": 0,
-      "fact": "O porco tem um olfato tão bom que é usado para achar trufas."
     },
     {
       "id": "animais-e-natureza-326",
@@ -5000,32 +4909,6 @@
       "fact": "As lagoas surgem das chuvas entre as dunas."
     },
     {
-      "id": "animais-e-natureza-385",
-      "difficulty": "medium",
-      "text": "Em que estado fica o Jalapão?",
-      "options": [
-        "Tocantins",
-        "Goiás",
-        "Maranhão",
-        "Bahia"
-      ],
-      "answer": 0,
-      "fact": "Os fervedouros são nascentes em que é impossível afundar."
-    },
-    {
-      "id": "animais-e-natureza-386",
-      "difficulty": "medium",
-      "text": "Em que estado fica Bonito, famoso por rios transparentes?",
-      "options": [
-        "Mato Grosso do Sul",
-        "Pará",
-        "Bahia",
-        "Santa Catarina"
-      ],
-      "answer": 0,
-      "fact": "A água com calcário faz as impurezas decantarem."
-    },
-    {
       "id": "animais-e-natureza-387",
       "difficulty": "medium",
       "text": "O que é um mangue?",
@@ -5364,19 +5247,6 @@
       "fact": "Ela se estende por mais de 1.200 km."
     },
     {
-      "id": "animais-e-natureza-413",
-      "difficulty": "medium",
-      "text": "Em que região fica o Grand Canyon?",
-      "options": [
-        "Arizona",
-        "Texas",
-        "Califórnia",
-        "Nevada"
-      ],
-      "answer": 0,
-      "fact": "O rio Colorado levou milhões de anos para formá-lo."
-    },
-    {
       "id": "animais-e-natureza-414",
       "difficulty": "medium",
       "text": "Qual rio formou o Grand Canyon?",
@@ -5635,19 +5505,6 @@
       ],
       "answer": 0,
       "fact": "Sua digestão é a mais lenta de todos os mamíferos."
-    },
-    {
-      "id": "animais-e-natureza-434",
-      "difficulty": "medium",
-      "text": "Qual é o nome do pequeno mamífero com bico de pato e veneno nas patas?",
-      "options": [
-        "Ornitorrinco",
-        "Equidna",
-        "Lontra",
-        "Tatu"
-      ],
-      "answer": 0,
-      "fact": "O macho tem um esporão venenoso nas patas de trás."
     },
     {
       "id": "animais-e-natureza-435",
@@ -7041,19 +6898,6 @@
       "fact": "Na lenda, as outras aves param para escutá-lo."
     },
     {
-      "id": "animais-e-natureza-542",
-      "difficulty": "hard",
-      "text": "Qual ave é conhecida por construir ninhos de barro em forma de forno?",
-      "options": [
-        "João-de-barro",
-        "Cardeal",
-        "Pica-pau",
-        "Tico-tico"
-      ],
-      "answer": 0,
-      "fact": "O ninho pode pesar vários quilos."
-    },
-    {
       "id": "animais-e-natureza-543",
       "difficulty": "hard",
       "text": "Que ave brasileira é conhecida como pássaro-ferreiro pelo som da voz?",
@@ -7091,19 +6935,6 @@
       ],
       "answer": 0,
       "fact": "É o animal mais rápido do mundo."
-    },
-    {
-      "id": "animais-e-natureza-546",
-      "difficulty": "hard",
-      "text": "Qual é a ave com maior envergadura viva?",
-      "options": [
-        "Albatroz-errante",
-        "Condor-dos-andes",
-        "Pelicano-branco",
-        "Marabu"
-      ],
-      "answer": 0,
-      "fact": "Sua envergadura pode passar de 3,5 metros."
     },
     {
       "id": "animais-e-natureza-547",
@@ -9793,32 +9624,6 @@
       "fact": "O casulo é a fase de transformação."
     },
     {
-      "id": "animais-e-natureza-744",
-      "difficulty": "easy",
-      "text": "Que roedor constrói represas em rios?",
-      "options": [
-        "Castor",
-        "Capivara",
-        "Esquilo",
-        "Lontra"
-      ],
-      "answer": 0,
-      "fact": "Os dentes dele não param de crescer."
-    },
-    {
-      "id": "animais-e-natureza-745",
-      "difficulty": "easy",
-      "text": "Que mamífero brasileiro passa o dia pendurado em árvores e anda bem devagar?",
-      "options": [
-        "Bicho-preguiça",
-        "Tamanduá",
-        "Tatu",
-        "Quati"
-      ],
-      "answer": 0,
-      "fact": "Ele desce da árvore cerca de uma vez por semana."
-    },
-    {
       "id": "animais-e-natureza-746",
       "difficulty": "easy",
       "text": "Que peixe de rio tem fama de morder em cardume?",
@@ -9830,19 +9635,6 @@
       ],
       "answer": 0,
       "fact": "O nome vem do tupi e lembra \"peixe-dente\"."
-    },
-    {
-      "id": "animais-e-natureza-747",
-      "difficulty": "easy",
-      "text": "Que molusco carrega uma concha nas costas e deixa rastro de muco?",
-      "options": [
-        "Caracol",
-        "Polvo",
-        "Lula",
-        "Ostra"
-      ],
-      "answer": 0,
-      "fact": "O muco ajuda o corpo a deslizar."
     },
     {
       "id": "animais-e-natureza-748",
@@ -9871,19 +9663,6 @@
       "fact": "As raízes também prendem a planta na terra."
     },
     {
-      "id": "animais-e-natureza-750",
-      "difficulty": "easy",
-      "text": "Que parte da planta costuma fazer a fotossíntese?",
-      "options": [
-        "Folha",
-        "Raiz",
-        "Semente",
-        "Casca"
-      ],
-      "answer": 0,
-      "fact": "A cor verde vem da clorofila."
-    },
-    {
       "id": "animais-e-natureza-751",
       "difficulty": "easy",
       "text": "Que animal listrado é parente do cavalo?",
@@ -9895,19 +9674,6 @@
       ],
       "answer": 0,
       "fact": "Cada zebra tem um desenho único."
-    },
-    {
-      "id": "animais-e-natureza-752",
-      "difficulty": "medium",
-      "text": "Que mamífero australiano põe ovos e tem bico parecido com o de pato?",
-      "options": [
-        "Ornitorrinco",
-        "Coala",
-        "Vombate",
-        "Canguru"
-      ],
-      "answer": 0,
-      "fact": "Os primeiros cientistas acharam que era uma fraude."
     },
     {
       "id": "animais-e-natureza-753",
@@ -9934,19 +9700,6 @@
       ],
       "answer": 0,
       "fact": "Muitas lendas amazônicas falam dele."
-    },
-    {
-      "id": "animais-e-natureza-755",
-      "difficulty": "medium",
-      "text": "Que peixe amazônico está entre os maiores de água doce do mundo?",
-      "options": [
-        "Pirarucu",
-        "Tambaqui",
-        "Tucunaré",
-        "Pintado"
-      ],
-      "answer": 0,
-      "fact": "Ele sobe à superfície para respirar ar."
     },
     {
       "id": "animais-e-natureza-756",
@@ -9986,32 +9739,6 @@
       ],
       "answer": 0,
       "fact": "Os seres humanos são onívoros."
-    },
-    {
-      "id": "animais-e-natureza-759",
-      "difficulty": "hard",
-      "text": "Qual é o maior lagarto do mundo?",
-      "options": [
-        "Dragão-de-komodo",
-        "Iguana-verde",
-        "Monitor-do-nilo",
-        "Teiú"
-      ],
-      "answer": 0,
-      "fact": "Ele vive em ilhas da Indonésia."
-    },
-    {
-      "id": "animais-e-natureza-760",
-      "difficulty": "hard",
-      "text": "Que ave faz a migração mais longa do planeta?",
-      "options": [
-        "Andorinha-do-ártico",
-        "Albatroz-errante",
-        "Cegonha-branca",
-        "Maçarico-de-bico-virado"
-      ],
-      "answer": 0,
-      "fact": "Ela vai do Ártico à Antártida e volta."
     },
     {
       "id": "animais-e-natureza-761",
@@ -10126,19 +9853,6 @@
       "fact": "Um exemplar apareceu na África do Sul, em 1938."
     },
     {
-      "id": "animais-e-natureza-769",
-      "difficulty": "medium",
-      "text": "Que árvore brasileira dá o pinhão?",
-      "options": [
-        "Araucária",
-        "Jacarandá",
-        "Ipê",
-        "Jatobá"
-      ],
-      "answer": 0,
-      "fact": "O pinhão é comum nas festas juninas do Sul."
-    },
-    {
       "id": "animais-e-natureza-770",
       "difficulty": "hard",
       "text": "Que serpente é a mais pesada do mundo?",
@@ -10191,19 +9905,6 @@
       ],
       "answer": 0,
       "fact": "O fruto dele é muito usado na cozinha goiana."
-    },
-    {
-      "id": "animais-e-natureza-774",
-      "difficulty": "hard",
-      "text": "Que réptil brasileiro é o maior jacaré das Américas?",
-      "options": [
-        "Jacaré-açu",
-        "Jacaré-do-pantanal",
-        "Jacaré-de-papo-amarelo",
-        "Jacaré-coroa"
-      ],
-      "answer": 0,
-      "fact": "Ele vive na bacia amazônica."
     }
   ]
 }

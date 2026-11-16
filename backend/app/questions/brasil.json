@@ -2200,19 +2200,6 @@
       "fact": "A região Norte tem sete estados e ocupa quase metade do território brasileiro."
     },
     {
-      "id": "brasil-169",
-      "difficulty": "easy",
-      "text": "Que animal brasileiro se enrola como uma bola e foi mascote da Copa de 2014?",
-      "options": [
-        "Tatu-bola",
-        "Tamanduá",
-        "Porco-espinho",
-        "Quati"
-      ],
-      "answer": 0,
-      "fact": "O mascote se chamava Fuleco, mistura de \"futebol\" com \"ecologia\"."
-    },
-    {
       "id": "brasil-170",
       "difficulty": "easy",
       "text": "Que ave brasileira tem um bico enorme e colorido?",
@@ -3614,19 +3601,6 @@
       "fact": "Foi inaugurado em 1954, nos 400 anos da cidade, com prédios de Oscar Niemeyer."
     },
     {
-      "id": "brasil-277",
-      "difficulty": "medium",
-      "text": "Que árvore do Sul do Brasil tem pinhas que dão o pinhão?",
-      "options": [
-        "Araucária",
-        "Ipê",
-        "Jatobá",
-        "Seringueira"
-      ],
-      "answer": 0,
-      "fact": "Também chamada de pinheiro-do-paraná, ela está ameaçada de extinção."
-    },
-    {
       "id": "brasil-278",
       "difficulty": "medium",
       "text": "Que árvore brasileira fica coberta de flores amarelas, roxas ou brancas no fim do inverno?",
@@ -5013,19 +4987,6 @@
       "fact": "É a maior ponte pênsil do Brasil."
     },
     {
-      "id": "brasil-384",
-      "difficulty": "medium",
-      "text": "Em que estado fica a Serra Gaúcha, com Gramado e Canela?",
-      "options": [
-        "Rio Grande do Sul",
-        "Santa Catarina",
-        "Paraná",
-        "São Paulo"
-      ],
-      "answer": 0,
-      "fact": "Canela tem a Catedral de Pedra, um dos cartões-postais da região."
-    },
-    {
       "id": "brasil-385",
       "difficulty": "medium",
       "text": "Que pássaro canta \"fogo-pagou\" e vive nas cidades e no campo?",
@@ -5089,19 +5050,6 @@
       ],
       "answer": 0,
       "fact": "O gavião-real, também chamado de harpia, caça macacos e preguiças."
-    },
-    {
-      "id": "brasil-390",
-      "difficulty": "medium",
-      "text": "Que planta aquática gigante da Amazônia tem folhas redondas que aguentam o peso de uma criança?",
-      "options": [
-        "Vitória-régia",
-        "Aguapé",
-        "Lótus",
-        "Taboa"
-      ],
-      "answer": 0,
-      "fact": "Segundo uma lenda indígena, a vitória-régia é uma moça que se apaixonou pela Lua."
     },
     {
       "id": "brasil-391",
@@ -5932,19 +5880,6 @@
       "fact": "A Pedra Azul parece mudar de cor ao longo do dia, por causa da luz e dos líquens na rocha."
     },
     {
-      "id": "brasil-451",
-      "difficulty": "easy",
-      "text": "Que personagem do Sítio do Picapau Amarelo é uma boneca de pano falante?",
-      "options": [
-        "Emília",
-        "Narizinho",
-        "Cuca",
-        "Tia Nastácia"
-      ],
-      "answer": 0,
-      "fact": "Monteiro Lobato criou a Emília em 1920."
-    },
-    {
       "id": "brasil-452",
       "difficulty": "easy",
       "text": "Quem criou a Turma da Mônica?",
@@ -5958,19 +5893,6 @@
       "fact": "O primeiro personagem foi o cãozinho Bidu, em 1959."
     },
     {
-      "id": "brasil-453",
-      "difficulty": "easy",
-      "text": "Que personagem da Turma da Mônica nunca toma banho?",
-      "options": [
-        "Cascão",
-        "Cebolinha",
-        "Franjinha",
-        "Chico Bento"
-      ],
-      "answer": 0,
-      "fact": "Ele tem medo de água."
-    },
-    {
       "id": "brasil-454",
       "difficulty": "easy",
       "text": "Que personagem da Turma da Mônica vive com fome?",
@@ -5982,19 +5904,6 @@
       ],
       "answer": 0,
       "fact": "Ela foi inspirada em uma das filhas de Maurício de Sousa."
-    },
-    {
-      "id": "brasil-455",
-      "difficulty": "easy",
-      "text": "Que personagem da Turma da Mônica mora na roça?",
-      "options": [
-        "Chico Bento",
-        "Cascão",
-        "Franjinha",
-        "Do Contra"
-      ],
-      "answer": 0,
-      "fact": "Ele foi inspirado em um tio-avô do autor."
     },
     {
       "id": "brasil-456",
@@ -6023,19 +5932,6 @@
       "fact": "O canal foi inaugurado em 1981."
     },
     {
-      "id": "brasil-458",
-      "difficulty": "easy",
-      "text": "Que apresentadora é a \"Rainha dos Baixinhos\"?",
-      "options": [
-        "Xuxa",
-        "Angélica",
-        "Eliana",
-        "Mara Maravilha"
-      ],
-      "answer": 0,
-      "fact": "O programa dela estreou na TV Globo em 1986."
-    },
-    {
       "id": "brasil-459",
       "difficulty": "easy",
       "text": "Que telejornal é o mais tradicional da TV Globo?",
@@ -6060,32 +5956,6 @@
       ],
       "answer": 0,
       "fact": "Ele estreou em 1973."
-    },
-    {
-      "id": "brasil-461",
-      "difficulty": "easy",
-      "text": "Que reality show brasileiro da Globo tem uma casa vigiada?",
-      "options": [
-        "Big Brother Brasil",
-        "No Limite",
-        "The Voice Brasil",
-        "A Fazenda"
-      ],
-      "answer": 0,
-      "fact": "O primeiro foi em 2002."
-    },
-    {
-      "id": "brasil-462",
-      "difficulty": "easy",
-      "text": "Que escola de samba carioca é azul e branca, com uma águia?",
-      "options": [
-        "Portela",
-        "Mangueira",
-        "Imperatriz",
-        "Vila Isabel"
-      ],
-      "answer": 0,
-      "fact": "É a maior vencedora do Carnaval do Rio."
     },
     {
       "id": "brasil-463",
@@ -6166,19 +6036,6 @@
       "fact": "Ele veio de Portugal e virou símbolo brasileiro."
     },
     {
-      "id": "brasil-469",
-      "difficulty": "easy",
-      "text": "Que instrumento de corda é usado na capoeira?",
-      "options": [
-        "Berimbau",
-        "Violão",
-        "Sanfona",
-        "Cavaquinho"
-      ],
-      "answer": 0,
-      "fact": "Ele tem uma cabaça que amplia o som."
-    },
-    {
       "id": "brasil-470",
       "difficulty": "easy",
       "text": "Que luta brasileira mistura dança e música?",
@@ -6205,19 +6062,6 @@
       "fact": "Luiz Gonzaga popularizou o gênero."
     },
     {
-      "id": "brasil-472",
-      "difficulty": "easy",
-      "text": "Que gênero musical nasceu no Rio no final dos anos 1950, com João Gilberto?",
-      "options": [
-        "Bossa nova",
-        "Forró",
-        "Axé",
-        "Sertanejo"
-      ],
-      "answer": 0,
-      "fact": "Garota de Ipanema é o maior sucesso do gênero."
-    },
-    {
       "id": "brasil-473",
       "difficulty": "easy",
       "text": "Que gênero musical da Bahia ficou famoso com Ivete Sangalo?",
@@ -6229,19 +6073,6 @@
       ],
       "answer": 0,
       "fact": "Daniela Mercury foi uma das pioneiras."
-    },
-    {
-      "id": "brasil-474",
-      "difficulty": "easy",
-      "text": "Que gênero musical tem duplas como Chitãozinho & Xororó?",
-      "options": [
-        "Sertanejo",
-        "Forró",
-        "Axé",
-        "Pagode"
-      ],
-      "answer": 0,
-      "fact": "Os dois irmãos cantam juntos há mais de 50 anos."
     },
     {
       "id": "brasil-475",
@@ -6296,19 +6127,6 @@
       "fact": "Ela liderou a Banda Eva."
     },
     {
-      "id": "brasil-479",
-      "difficulty": "easy",
-      "text": "Qual cantora carioca fez fama com \"Vai Malandra\"?",
-      "options": [
-        "Anitta",
-        "Ludmilla",
-        "Iza",
-        "Pabllo Vittar"
-      ],
-      "answer": 0,
-      "fact": "Ela foi a primeira brasileira a ter uma música em 1º no Spotify Global."
-    },
-    {
       "id": "brasil-480",
       "difficulty": "easy",
       "text": "Quem cantou \"Asa Branca\"?",
@@ -6320,19 +6138,6 @@
       ],
       "answer": 0,
       "fact": "A canção conta a seca do sertão."
-    },
-    {
-      "id": "brasil-481",
-      "difficulty": "easy",
-      "text": "Quem cantou \"Maluco Beleza\"?",
-      "options": [
-        "Raul Seixas",
-        "Cazuza",
-        "Renato Russo",
-        "Rita Lee"
-      ],
-      "answer": 0,
-      "fact": "Ele foi um dos pais do rock brasileiro."
     },
     {
       "id": "brasil-482",
@@ -6372,19 +6177,6 @@
       ],
       "answer": 0,
       "fact": "Ela veio para o Brasil ainda bebê."
-    },
-    {
-      "id": "brasil-485",
-      "difficulty": "easy",
-      "text": "Qual foi o primeiro presidente eleito depois de 1964, pelo voto direto?",
-      "options": [
-        "Fernando Collor",
-        "Tancredo Neves",
-        "José Sarney",
-        "Lula"
-      ],
-      "answer": 0,
-      "fact": "A eleição foi em 1989."
     },
     {
       "id": "brasil-486",
@@ -6478,32 +6270,6 @@
       "fact": "As fitinhas são um símbolo da cidade."
     },
     {
-      "id": "brasil-493",
-      "difficulty": "easy",
-      "text": "Em que dia se comemora o Dia de Finados?",
-      "options": [
-        "2 de novembro",
-        "1º de maio",
-        "12 de outubro",
-        "25 de dezembro"
-      ],
-      "answer": 0,
-      "fact": "É o dia de lembrar os mortos."
-    },
-    {
-      "id": "brasil-494",
-      "difficulty": "easy",
-      "text": "Em que dia se comemora Nossa Senhora Aparecida?",
-      "options": [
-        "12 de outubro",
-        "2 de novembro",
-        "25 de dezembro",
-        "1º de janeiro"
-      ],
-      "answer": 0,
-      "fact": "Foi lá que a imagem foi achada em um rio, em 1717."
-    },
-    {
       "id": "brasil-495",
       "difficulty": "easy",
       "text": "Em que mês acontece a Festa do Peão de Barretos?",
@@ -6528,19 +6294,6 @@
       ],
       "answer": 0,
       "fact": "Foi criado em 1968."
-    },
-    {
-      "id": "brasil-497",
-      "difficulty": "easy",
-      "text": "O que significa a sigla CEP?",
-      "options": [
-        "Código de Endereçamento Postal",
-        "Centro de Entregas Postais",
-        "Código de Empresa Postal",
-        "Cadastro de Endereço Público"
-      ],
-      "answer": 0,
-      "fact": "Foi criado em 1971, com só cinco dígitos."
     },
     {
       "id": "brasil-498",
@@ -6723,19 +6476,6 @@
       ],
       "answer": 0,
       "fact": "Ele chegou com os imigrantes sírios e libaneses."
-    },
-    {
-      "id": "brasil-512",
-      "difficulty": "easy",
-      "text": "Qual é o nome do pastel doce com queijo e goiabada?",
-      "options": [
-        "Romeu e Julieta",
-        "Trouxinha",
-        "Bem-casado",
-        "Churros"
-      ],
-      "answer": 0,
-      "fact": "Vem da combinação clássica de goiabada com queijo."
     },
     {
       "id": "brasil-513",
@@ -6933,32 +6673,6 @@
       "fact": "Ele usava unhas enormes por anos."
     },
     {
-      "id": "brasil-528",
-      "difficulty": "easy",
-      "text": "Qual presidente brasileiro foi um ex-líder sindical?",
-      "options": [
-        "Lula",
-        "Fernando Henrique",
-        "José Sarney",
-        "Itamar Franco"
-      ],
-      "answer": 0,
-      "fact": "Ele nasceu em Garanhuns, em Pernambuco."
-    },
-    {
-      "id": "brasil-529",
-      "difficulty": "easy",
-      "text": "Qual é o nome do palácio em que o presidente mora, em Brasília?",
-      "options": [
-        "Palácio da Alvorada",
-        "Palácio do Planalto",
-        "Palácio Guanabara",
-        "Palácio Itamaraty"
-      ],
-      "answer": 0,
-      "fact": "O projeto é de Oscar Niemeyer."
-    },
-    {
       "id": "brasil-530",
       "difficulty": "easy",
       "text": "Quem projetou os principais prédios de Brasília?",
@@ -7035,19 +6749,6 @@
       ],
       "answer": 0,
       "fact": "Os Arcos da Lapa são um antigo aqueduto."
-    },
-    {
-      "id": "brasil-536",
-      "difficulty": "easy",
-      "text": "Qual é o nome do morro carioca famoso por seu bondinho e pela vista?",
-      "options": [
-        "Pão de Açúcar",
-        "Corcovado",
-        "Vidigal",
-        "Tijuca"
-      ],
-      "answer": 0,
-      "fact": "O bondinho começou a funcionar em 1912."
     },
     {
       "id": "brasil-537",
@@ -7232,32 +6933,6 @@
       "fact": "Ela é macia e bem fácil de talhar."
     },
     {
-      "id": "brasil-551",
-      "difficulty": "medium",
-      "text": "Quem foi a pintora modernista de \"Abaporu\"?",
-      "options": [
-        "Tarsila do Amaral",
-        "Anita Malfatti",
-        "Djanira",
-        "Beatriz Milhazes"
-      ],
-      "answer": 0,
-      "fact": "O quadro está em um museu de Buenos Aires."
-    },
-    {
-      "id": "brasil-552",
-      "difficulty": "medium",
-      "text": "Quem foi o pintor de \"Os Retirantes\"?",
-      "options": [
-        "Candido Portinari",
-        "Di Cavalcanti",
-        "Pedro Américo",
-        "Almeida Júnior"
-      ],
-      "answer": 0,
-      "fact": "A obra retrata a seca do Nordeste."
-    },
-    {
       "id": "brasil-553",
       "difficulty": "medium",
       "text": "Em que prédio de Nova York estão os painéis \"Guerra e Paz\" de Portinari?",
@@ -7297,32 +6972,6 @@
       "fact": "Baleia é a cachorra famosa do livro."
     },
     {
-      "id": "brasil-556",
-      "difficulty": "medium",
-      "text": "Quem escreveu \"Capitães da Areia\"?",
-      "options": [
-        "Jorge Amado",
-        "Graciliano Ramos",
-        "José Lins do Rego",
-        "Erico Verissimo"
-      ],
-      "answer": 0,
-      "fact": "Livros dele foram queimados em praça pública em 1937."
-    },
-    {
-      "id": "brasil-557",
-      "difficulty": "medium",
-      "text": "Quem escreveu \"O Quinze\", sobre a seca de 1915?",
-      "options": [
-        "Rachel de Queiroz",
-        "Clarice Lispector",
-        "Graciliano Ramos",
-        "Cecília Meireles"
-      ],
-      "answer": 0,
-      "fact": "Ela foi a primeira mulher da Academia Brasileira de Letras."
-    },
-    {
       "id": "brasil-558",
       "difficulty": "medium",
       "text": "Quem escreveu \"A Hora da Estrela\"?",
@@ -7334,45 +6983,6 @@
       ],
       "answer": 0,
       "fact": "A autora nasceu na Ucrânia e foi criada no Brasil."
-    },
-    {
-      "id": "brasil-559",
-      "difficulty": "medium",
-      "text": "Quem escreveu o poema \"No meio do caminho tinha uma pedra\"?",
-      "options": [
-        "Carlos Drummond de Andrade",
-        "Manuel Bandeira",
-        "Vinicius de Moraes",
-        "Mário Quintana"
-      ],
-      "answer": 0,
-      "fact": "A estátua dele senta-se em um banco em Copacabana."
-    },
-    {
-      "id": "brasil-560",
-      "difficulty": "medium",
-      "text": "Quem escreveu \"Macunaíma\"?",
-      "options": [
-        "Mário de Andrade",
-        "Oswald de Andrade",
-        "Monteiro Lobato",
-        "José de Alencar"
-      ],
-      "answer": 0,
-      "fact": "O livro é de 1928."
-    },
-    {
-      "id": "brasil-561",
-      "difficulty": "medium",
-      "text": "Qual é o nome do filme de 1998 de Walter Salles, com Fernanda Montenegro?",
-      "options": [
-        "Central do Brasil",
-        "Cidade de Deus",
-        "Carandiru",
-        "Tropa de Elite"
-      ],
-      "answer": 0,
-      "fact": "Ela foi indicada ao Oscar de Melhor Atriz."
     },
     {
       "id": "brasil-562",
@@ -7388,19 +6998,6 @@
       "fact": "Foi indicado a quatro Oscars."
     },
     {
-      "id": "brasil-563",
-      "difficulty": "medium",
-      "text": "Qual é o nome do filme de 2007 com o Capitão Nascimento?",
-      "options": [
-        "Tropa de Elite",
-        "Cidade de Deus",
-        "O Som ao Redor",
-        "Carandiru"
-      ],
-      "answer": 0,
-      "fact": "O ator é Wagner Moura."
-    },
-    {
       "id": "brasil-564",
       "difficulty": "medium",
       "text": "Qual filme brasileiro ganhou o primeiro Oscar do país, em 2025?",
@@ -7414,19 +7011,6 @@
       "fact": "Fernanda Torres também foi indicada a Melhor Atriz."
     },
     {
-      "id": "brasil-565",
-      "difficulty": "medium",
-      "text": "Qual é a novela de 1988 em que Odete Roitman foi assassinada?",
-      "options": [
-        "Vale Tudo",
-        "Roque Santeiro",
-        "Tieta",
-        "A Próxima Vítima"
-      ],
-      "answer": 0,
-      "fact": "O país inteiro queria saber \"Quem matou?\"."
-    },
-    {
       "id": "brasil-566",
       "difficulty": "medium",
       "text": "Qual é o nome do cantor da Bahia que foi ministro da Cultura de Lula?",
@@ -7438,19 +7022,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi ministro de 2003 a 2008."
-    },
-    {
-      "id": "brasil-567",
-      "difficulty": "medium",
-      "text": "Qual movimento artístico de 1967 teve Caetano Veloso e Gilberto Gil?",
-      "options": [
-        "Tropicália",
-        "Bossa Nova",
-        "Jovem Guarda",
-        "Modernismo"
-      ],
-      "answer": 0,
-      "fact": "O disco Tropicália é de 1968."
     },
     {
       "id": "brasil-568",
@@ -7505,45 +7076,6 @@
       "fact": "A rivalidade com Marlene virou um fenômeno."
     },
     {
-      "id": "brasil-572",
-      "difficulty": "medium",
-      "text": "Que compositor escreveu \"Aquarela do Brasil\"?",
-      "options": [
-        "Ary Barroso",
-        "Noel Rosa",
-        "Cartola",
-        "Pixinguinha"
-      ],
-      "answer": 0,
-      "fact": "A música apareceu em um filme da Disney em 1942."
-    },
-    {
-      "id": "brasil-573",
-      "difficulty": "medium",
-      "text": "Que compositor é o autor do choro \"Carinhoso\"?",
-      "options": [
-        "Pixinguinha",
-        "Noel Rosa",
-        "Ary Barroso",
-        "Ernesto Nazareth"
-      ],
-      "answer": 0,
-      "fact": "Ela é uma das músicas brasileiras mais conhecidas."
-    },
-    {
-      "id": "brasil-574",
-      "difficulty": "medium",
-      "text": "Que personagem do desenho da Disney é um papagaio brasileiro?",
-      "options": [
-        "Zé Carioca",
-        "Pato Donald",
-        "Pateta",
-        "Pluto"
-      ],
-      "answer": 0,
-      "fact": "Ele apareceu em 1942, depois de uma viagem de Walt Disney ao Brasil."
-    },
-    {
       "id": "brasil-575",
       "difficulty": "medium",
       "text": "Em que cidade foi criado o personagem Zé Carioca, por inspiração?",
@@ -7570,19 +7102,6 @@
       "fact": "É um dos maiores museus a céu aberto do mundo."
     },
     {
-      "id": "brasil-577",
-      "difficulty": "medium",
-      "text": "Que artista fez os azulejos de Brasília?",
-      "options": [
-        "Athos Bulcão",
-        "Burle Marx",
-        "Tarsila do Amaral",
-        "Di Cavalcanti"
-      ],
-      "answer": 0,
-      "fact": "Ele é o autor de muitos dos painéis da cidade."
-    },
-    {
       "id": "brasil-578",
       "difficulty": "medium",
       "text": "Que museu no Rio de Janeiro pegou fogo em setembro de 2018?",
@@ -7607,19 +7126,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi reinaugurado em 2021."
-    },
-    {
-      "id": "brasil-580",
-      "difficulty": "medium",
-      "text": "Que museu de São Paulo tem um grande vão livre na Avenida Paulista?",
-      "options": [
-        "Masp",
-        "Pinacoteca",
-        "MAM",
-        "Inhotim"
-      ],
-      "answer": 0,
-      "fact": "Foi projetado por Lina Bo Bardi."
     },
     {
       "id": "brasil-581",
@@ -8441,45 +7947,6 @@
       "fact": "Ela chegou ao Brasil com menos de dois anos."
     },
     {
-      "id": "brasil-644",
-      "difficulty": "hard",
-      "text": "Quem foi o criador do personagem Macunaíma?",
-      "options": [
-        "Mário de Andrade",
-        "Oswald de Andrade",
-        "Monteiro Lobato",
-        "Ariano Suassuna"
-      ],
-      "answer": 0,
-      "fact": "Ele é chamado de \"herói sem nenhum caráter\"."
-    },
-    {
-      "id": "brasil-645",
-      "difficulty": "hard",
-      "text": "Quem foi o autor de \"O Auto da Compadecida\"?",
-      "options": [
-        "Ariano Suassuna",
-        "Dias Gomes",
-        "João Cabral de Melo Neto",
-        "Nelson Rodrigues"
-      ],
-      "answer": 0,
-      "fact": "O filme de 2000 virou um grande sucesso."
-    },
-    {
-      "id": "brasil-646",
-      "difficulty": "hard",
-      "text": "Quem foi o autor de \"Morte e Vida Severina\"?",
-      "options": [
-        "João Cabral de Melo Neto",
-        "Ariano Suassuna",
-        "Graciliano Ramos",
-        "Vinicius de Moraes"
-      ],
-      "answer": 0,
-      "fact": "O poema é de 1955."
-    },
-    {
       "id": "brasil-647",
       "difficulty": "hard",
       "text": "Quem foi o autor de \"Vestido de Noiva\"?",
@@ -8556,19 +8023,6 @@
       ],
       "answer": 0,
       "fact": "O livro é de 1995."
-    },
-    {
-      "id": "brasil-653",
-      "difficulty": "hard",
-      "text": "Quem foi o autor de \"Iracema\"?",
-      "options": [
-        "José de Alencar",
-        "Machado de Assis",
-        "Gonçalves Dias",
-        "Bernardo Guimarães"
-      ],
-      "answer": 0,
-      "fact": "O nome é um anagrama de América."
     },
     {
       "id": "brasil-654",
@@ -8777,19 +8231,6 @@
       ],
       "answer": 0,
       "fact": "O Guga ganhou três vezes Roland Garros."
-    },
-    {
-      "id": "brasil-670",
-      "difficulty": "hard",
-      "text": "Qual a tenista brasileira que ganhou Wimbledon nos anos 1950?",
-      "options": [
-        "Maria Esther Bueno",
-        "Beatriz Haddad Maia",
-        "Teliana Pereira",
-        "Niege Dias"
-      ],
-      "answer": 0,
-      "fact": "Ela ganhou vários Grand Slams em simples."
     },
     {
       "id": "brasil-671",
@@ -9102,19 +8543,6 @@
       ],
       "answer": 0,
       "fact": "O Garantido é vermelho e o Caprichoso é azul."
-    },
-    {
-      "id": "brasil-695",
-      "difficulty": "hard",
-      "text": "Em que cidade do Ceará fica a estátua do Padre Cícero?",
-      "options": [
-        "Juazeiro do Norte",
-        "Fortaleza",
-        "Sobral",
-        "Crato"
-      ],
-      "answer": 0,
-      "fact": "Ela é uma das maiores estátuas do Brasil."
     },
     {
       "id": "brasil-696",
@@ -9858,32 +9286,6 @@
       "fact": "As duas cidades disputam o título de maior do mundo."
     },
     {
-      "id": "brasil-749",
-      "difficulty": "easy",
-      "text": "Que grande festa religiosa acontece em Belém, em outubro?",
-      "options": [
-        "Círio de Nazaré",
-        "Lavagem do Bonfim",
-        "Festa do Divino",
-        "Bumba meu boi"
-      ],
-      "answer": 0,
-      "fact": "Milhões de pessoas participam da procissão."
-    },
-    {
-      "id": "brasil-750",
-      "difficulty": "easy",
-      "text": "Que cor da bandeira do Brasil é mais associada ao losango?",
-      "options": [
-        "Amarelo",
-        "Azul",
-        "Branco",
-        "Verde"
-      ],
-      "answer": 0,
-      "fact": "O verde fica no fundo e o azul, no círculo."
-    },
-    {
       "id": "brasil-751",
       "difficulty": "easy",
       "text": "Que frase está na faixa branca da bandeira brasileira?",
@@ -9895,19 +9297,6 @@
       ],
       "answer": 0,
       "fact": "O lema vem do positivismo."
-    },
-    {
-      "id": "brasil-752",
-      "difficulty": "easy",
-      "text": "Quem é o autor de \"O Sítio do Picapau Amarelo\"?",
-      "options": [
-        "Monteiro Lobato",
-        "Ziraldo",
-        "Mauricio de Sousa",
-        "Ruth Rocha"
-      ],
-      "answer": 0,
-      "fact": "Ele criou Emília e Narizinho."
     },
     {
       "id": "brasil-753",
@@ -9949,19 +9338,6 @@
       "fact": "O slogan era \"50 anos em 5\"."
     },
     {
-      "id": "brasil-756",
-      "difficulty": "medium",
-      "text": "Que sambista compôs \"As Rosas Não Falam\"?",
-      "options": [
-        "Cartola",
-        "Noel Rosa",
-        "Nelson Cavaquinho",
-        "Adoniran Barbosa"
-      ],
-      "answer": 0,
-      "fact": "Ele foi um dos fundadores da Mangueira."
-    },
-    {
       "id": "brasil-757",
       "difficulty": "hard",
       "text": "Que tratado de 1494 dividiu terras entre Portugal e Espanha?",
@@ -9973,32 +9349,6 @@
       ],
       "answer": 0,
       "fact": "A linha ficava a 370 léguas de Cabo Verde."
-    },
-    {
-      "id": "brasil-758",
-      "difficulty": "hard",
-      "text": "Que tratado de 1750 ampliou o território português na América?",
-      "options": [
-        "Tratado de Madri",
-        "Tratado de Tordesilhas",
-        "Tratado de Petrópolis",
-        "Tratado de Santo Ildefonso"
-      ],
-      "answer": 0,
-      "fact": "Alexandre de Gusmão foi o grande negociador."
-    },
-    {
-      "id": "brasil-759",
-      "difficulty": "hard",
-      "text": "Que tratado de 1903 trouxe o Acre para o Brasil?",
-      "options": [
-        "Tratado de Petrópolis",
-        "Tratado de Madri",
-        "Tratado de Ayacucho",
-        "Tratado de Assunção"
-      ],
-      "answer": 0,
-      "fact": "O Barão do Rio Branco negociou com a Bolívia."
     },
     {
       "id": "brasil-760",
@@ -10027,19 +9377,6 @@
       "fact": "Ele ficou conhecido como Almirante Negro."
     },
     {
-      "id": "brasil-762",
-      "difficulty": "hard",
-      "text": "Que líder comandou o povo de Canudos?",
-      "options": [
-        "Antônio Conselheiro",
-        "Lampião",
-        "Padre Cícero",
-        "João Cândido"
-      ],
-      "answer": 0,
-      "fact": "Euclides da Cunha escreveu sobre o conflito."
-    },
-    {
       "id": "brasil-763",
       "difficulty": "hard",
       "text": "Que obra de Euclides da Cunha narra a Guerra de Canudos?",
@@ -10051,19 +9388,6 @@
       ],
       "answer": 0,
       "fact": "Ela saiu em 1902."
-    },
-    {
-      "id": "brasil-764",
-      "difficulty": "hard",
-      "text": "Em que estado fica o Parque Nacional da Serra da Capivara?",
-      "options": [
-        "Piauí",
-        "Ceará",
-        "Bahia",
-        "Maranhão"
-      ],
-      "answer": 0,
-      "fact": "As pinturas rupestres são muito antigas."
     },
     {
       "id": "brasil-765",
@@ -10094,32 +9418,6 @@
       ],
       "answer": 0,
       "fact": "Ele fica em Minas Gerais."
-    },
-    {
-      "id": "brasil-767",
-      "difficulty": "medium",
-      "text": "Que capital brasileira é conhecida como \"Terra da Garoa\"?",
-      "options": [
-        "São Paulo",
-        "Curitiba",
-        "Porto Alegre",
-        "Belo Horizonte"
-      ],
-      "answer": 0,
-      "fact": "O apelido vem da chuva fina de antigamente."
-    },
-    {
-      "id": "brasil-768",
-      "difficulty": "medium",
-      "text": "Que capital brasileira fica em uma ilha chamada Ilha de Santa Catarina, em grande parte?",
-      "options": [
-        "Florianópolis",
-        "Vitória",
-        "São Luís",
-        "Belém"
-      ],
-      "answer": 0,
-      "fact": "Ela tem dezenas de praias."
     },
     {
       "id": "brasil-769",
@@ -10202,21 +9500,6 @@
       ],
       "answer": 0,
       "fact": "Ele tem 15 municípios."
-    },
-    {
-      "id": "brasil-775",
-      "difficulty": "impossible",
-      "text": "Quem foi o primeiro presidente civil eleito pelo voto direto no Brasil?",
-      "options": [
-        "Prudente de Morais",
-        "Deodoro da Fonseca",
-        "Floriano Peixoto",
-        "Campos Sales",
-        "Rodrigues Alves",
-        "Getúlio Vargas"
-      ],
-      "answer": 0,
-      "fact": "Ele assumiu em 1894."
     }
   ]
 }

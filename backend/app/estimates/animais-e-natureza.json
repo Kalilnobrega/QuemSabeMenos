@@ -234,14 +234,6 @@
       "fact": "O pintinho quebra a casca com um \"dente\" no bico."
     },
     {
-      "id": "chute-animais-e-natureza-30",
-      "difficulty": "medium",
-      "text": "Quantos ovos põe uma galinha poedeira por ano?",
-      "answer": 300,
-      "unit": "ovos",
-      "fact": "Elas põem quase um ovo por dia."
-    },
-    {
       "id": "chute-animais-e-natureza-31",
       "difficulty": "easy",
       "text": "Quantos filhotes costuma ter uma baleia-azul por gestação?",
@@ -296,14 +288,6 @@
       "answer": 2,
       "unit": "horas",
       "fact": "Um estudo de 2017 mediu isso em elefantes selvagens."
-    },
-    {
-      "id": "chute-animais-e-natureza-38",
-      "difficulty": "easy",
-      "text": "Qual a altura média de uma girafa adulta macho, em metros?",
-      "answer": 5.5,
-      "unit": "metros",
-      "fact": "Ela consegue enxergar a quilômetros de distância."
     },
     {
       "id": "chute-animais-e-natureza-39",
@@ -594,14 +578,6 @@
       "fact": "É o ponto mais fundo dos oceanos, no Pacífico."
     },
     {
-      "id": "chute-animais-e-natureza-75",
-      "difficulty": "medium",
-      "text": "Qual é a altitude do Pico da Neblina em metros?",
-      "answer": 2995,
-      "unit": "metros",
-      "fact": "Ele é o ponto mais alto do Brasil."
-    },
-    {
       "id": "chute-animais-e-natureza-76",
       "difficulty": "easy",
       "text": "Qual é a altura do Everest em metros?",
@@ -624,14 +600,6 @@
       "answer": 5.5,
       "unit": "milhões",
       "fact": "Ela responde por metade das florestas tropicais do mundo."
-    },
-    {
-      "id": "chute-animais-e-natureza-79",
-      "difficulty": "easy",
-      "text": "Quantas vértebras tem o pescoço de um ser humano e de uma girafa?",
-      "answer": 7,
-      "unit": "vértebras",
-      "fact": "Quase todos os mamíferos têm esse número."
     },
     {
       "id": "chute-animais-e-natureza-80",
@@ -952,14 +920,6 @@
       "answer": 1975,
       "scale": 50,
       "fact": "O filme aumentou muito o medo de tubarões no mundo todo."
-    },
-    {
-      "id": "chute-animais-e-natureza-120",
-      "difficulty": "medium",
-      "text": "Em que ano foi publicado o livro A Origem das Espécies?",
-      "answer": 1859,
-      "scale": 50,
-      "fact": "Darwin levou mais de 20 anos para publicar suas ideias."
     },
     {
       "id": "chute-animais-e-natureza-121",
@@ -1344,14 +1304,6 @@
       "answer": 209000,
       "unit": "m³/s",
       "fact": "É mais que os seis maiores rios seguintes somados."
-    },
-    {
-      "id": "chute-animais-e-natureza-169",
-      "difficulty": "medium",
-      "text": "Quantos metros de profundidade tem o lago Baikal?",
-      "answer": 1642,
-      "unit": "metros",
-      "fact": "É o lago mais profundo do planeta."
     },
     {
       "id": "chute-animais-e-natureza-170",
@@ -2080,14 +2032,6 @@
       "answer": 1306,
       "unit": "pernas",
       "fact": "Ele foi achado em uma mina, a 60 metros de profundidade."
-    },
-    {
-      "id": "chute-animais-e-natureza-261",
-      "difficulty": "hard",
-      "text": "Quantos genes tem um ser humano, aproximadamente?",
-      "answer": 20000,
-      "unit": "genes",
-      "fact": "Temos muito menos que muitas plantas."
     },
     {
       "id": "chute-animais-e-natureza-262",
@@ -2930,14 +2874,6 @@
       "fact": "Ele inspirou Up e o livro O Mundo Perdido."
     },
     {
-      "id": "chute-animais-e-natureza-367",
-      "difficulty": "hard",
-      "text": "Quantos metros tem o Dedo de Deus, em Teresópolis?",
-      "answer": 1692,
-      "unit": "metros",
-      "fact": "É um dos símbolos do montanhismo brasileiro."
-    },
-    {
       "id": "chute-animais-e-natureza-368",
       "difficulty": "hard",
       "text": "Quantos metros tem o Pão de Açúcar, aproximadamente?",
@@ -3074,14 +3010,6 @@
       "fact": "Elas se prendem em dois pares."
     },
     {
-      "id": "chute-animais-e-natureza-385",
-      "difficulty": "easy",
-      "text": "Quantas patas tem um caranguejo, contando as pinças?",
-      "answer": 10,
-      "unit": "patas",
-      "fact": "Por isso, ele é um decápode."
-    },
-    {
       "id": "chute-animais-e-natureza-386",
       "difficulty": "easy",
       "text": "Quantos meses dura a gestação de uma gata?",
@@ -3163,14 +3091,6 @@
       "fact": "Elas somam mais massa que aves e mamíferos selvagens juntos."
     },
     {
-      "id": "chute-animais-e-natureza-396",
-      "difficulty": "medium",
-      "text": "Quantas vezes por minuto o coração de um beija-flor bate, em pleno voo?",
-      "answer": 1200,
-      "unit": "batimentos",
-      "fact": "Em repouso, a frequência é bem menor."
-    },
-    {
       "id": "chute-animais-e-natureza-397",
       "difficulty": "medium",
       "text": "Quantas vezes por segundo um beija-flor bate as asas, nas espécies pequenas?",
@@ -3209,14 +3129,6 @@
       "answer": 390,
       "unit": "km/h",
       "fact": "Ele é o animal mais rápido do mundo."
-    },
-    {
-      "id": "chute-animais-e-natureza-402",
-      "difficulty": "hard",
-      "text": "Quantos quilômetros por ano uma andorinha-do-ártico percorre, aproximadamente?",
-      "answer": 70000,
-      "unit": "km",
-      "fact": "Em uma vida, ela pode voar o equivalente a três idas à Lua."
     },
     {
       "id": "chute-animais-e-natureza-403",
@@ -3291,22 +3203,6 @@
       "answer": 1,
       "unit": "filhote",
       "fact": "Às vezes nascem gêmeos, mas é raro criar os dois."
-    },
-    {
-      "id": "chute-animais-e-natureza-412",
-      "difficulty": "easy",
-      "text": "Quanto mede um beija-flor-abelha, o menor do mundo, em centímetros?",
-      "answer": 5,
-      "unit": "cm",
-      "fact": "Ele vive em Cuba."
-    },
-    {
-      "id": "chute-animais-e-natureza-413",
-      "difficulty": "medium",
-      "text": "Quantas horas por dia um coala dorme, aproximadamente?",
-      "answer": 20,
-      "unit": "horas",
-      "fact": "As folhas de eucalipto dão pouca energia."
     },
     {
       "id": "chute-animais-e-natureza-414",
@@ -3675,14 +3571,6 @@
       "answer": 40,
       "unit": "litros",
       "fact": "No calor ou no trabalho pesado ele bebe ainda mais."
-    },
-    {
-      "id": "chute-animais-e-natureza-460",
-      "difficulty": "easy",
-      "text": "Quantos dias dura a vida de uma mosca doméstica, aproximadamente?",
-      "answer": 28,
-      "unit": "dias",
-      "fact": "Nesse tempo uma fêmea pode botar centenas de ovos."
     },
     {
       "id": "chute-animais-e-natureza-461",

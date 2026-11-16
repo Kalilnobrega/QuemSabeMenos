@@ -458,14 +458,6 @@
       "fact": "A série começou em 1963."
     },
     {
-      "id": "chute-entretenimento-58",
-      "difficulty": "easy",
-      "text": "Em que ano foi lançado \"Star Wars\", o primeiro?",
-      "answer": 1977,
-      "scale": 50,
-      "fact": "Poucos acreditavam no sucesso do filme."
-    },
-    {
       "id": "chute-entretenimento-59",
       "difficulty": "easy",
       "text": "Em que ano foi lançado \"Tubarão\"?",
@@ -512,14 +504,6 @@
       "answer": 2009,
       "scale": 50,
       "fact": "Foi o maior filme em 3D de sua época."
-    },
-    {
-      "id": "chute-entretenimento-65",
-      "difficulty": "easy",
-      "text": "Em que ano foi lançado \"Homem de Ferro\"?",
-      "answer": 2008,
-      "scale": 50,
-      "fact": "Foi o início do universo Marvel."
     },
     {
       "id": "chute-entretenimento-66",
@@ -922,14 +906,6 @@
       "fact": "A novela teen teve mais de 20 temporadas."
     },
     {
-      "id": "chute-entretenimento-116",
-      "difficulty": "easy",
-      "text": "Quantos anos durou o programa \"Domingão do Faustão\"?",
-      "answer": 32,
-      "unit": "anos",
-      "fact": "Ele saiu da Globo em 2021."
-    },
-    {
       "id": "chute-entretenimento-117",
       "difficulty": "medium",
       "text": "Quantos Oscars \"Parasita\" ganhou?",
@@ -1040,14 +1016,6 @@
       "answer": 3.8,
       "unit": "kg",
       "fact": "Na Segunda Guerra, ela era de gesso."
-    },
-    {
-      "id": "chute-entretenimento-131",
-      "difficulty": "easy",
-      "text": "Em que ano foi inaugurada a primeira Disneylândia?",
-      "answer": 1955,
-      "scale": 50,
-      "fact": "Foi em Anaheim, na Califórnia."
     },
     {
       "id": "chute-entretenimento-132",
@@ -2234,14 +2202,6 @@
       "fact": "O filme é baseado em uma atração da Disney."
     },
     {
-      "id": "chute-entretenimento-280",
-      "difficulty": "hard",
-      "text": "Em que ano foi lançado \"Tropa de Elite\" no cinema?",
-      "answer": 2007,
-      "scale": 50,
-      "fact": "Uma versão vazou na internet antes da estreia."
-    },
-    {
       "id": "chute-entretenimento-281",
       "difficulty": "hard",
       "text": "Em que ano foi lançado \"Bacurau\"?",
@@ -2698,14 +2658,6 @@
       "fact": "É um dos maiores prêmios musicais do Brasil."
     },
     {
-      "id": "chute-entretenimento-338",
-      "difficulty": "hard",
-      "text": "Em que ano a Netflix começou a oferecer streaming?",
-      "answer": 2007,
-      "scale": 50,
-      "fact": "Antes, a empresa enviava DVDs pelo correio."
-    },
-    {
       "id": "chute-entretenimento-339",
       "difficulty": "hard",
       "text": "Em que ano a Disney+ foi lançada?",
@@ -3066,28 +3018,12 @@
       "fact": "A maioria foi em categorias técnicas."
     },
     {
-      "id": "chute-entretenimento-384",
-      "difficulty": "easy",
-      "text": "Quantos anões acompanham Bilbo em \"O Hobbit\"?",
-      "answer": 13,
-      "unit": "anões",
-      "fact": "Gandalf também acompanha o grupo."
-    },
-    {
       "id": "chute-entretenimento-385",
       "difficulty": "easy",
       "text": "Quantos irmãos Pevensie vão a Nárnia?",
       "answer": 4,
       "unit": "irmãos",
       "fact": "Eles entram pelo guarda-roupa."
-    },
-    {
-      "id": "chute-entretenimento-386",
-      "difficulty": "easy",
-      "text": "Quantos Vingadores originais aparecem no primeiro filme de 2012?",
-      "answer": 6,
-      "unit": "heróis",
-      "fact": "O filme foi escrito e dirigido por Joss Whedon."
     },
     {
       "id": "chute-entretenimento-387",
@@ -3106,14 +3042,6 @@
       "fact": "É a maior bilheteria da história."
     },
     {
-      "id": "chute-entretenimento-389",
-      "difficulty": "medium",
-      "text": "Quanto arrecadou \"Barbie\", de 2023, em bilhões de dólares, aproximadamente?",
-      "answer": 1.44,
-      "unit": "bilhão",
-      "fact": "Greta Gerwig dirigiu o filme."
-    },
-    {
       "id": "chute-entretenimento-390",
       "difficulty": "medium",
       "text": "Quantas estatuetas do Oscar ganhou \"O Senhor dos Anéis: O Retorno do Rei\"?",
@@ -3122,60 +3050,12 @@
       "fact": "Ele venceu em todas as categorias que disputou."
     },
     {
-      "id": "chute-entretenimento-391",
-      "difficulty": "medium",
-      "text": "Quantos Oscars Walt Disney ganhou?",
-      "answer": 22,
-      "unit": "estatuetas",
-      "fact": "Ninguém tem mais que ele."
-    },
-    {
-      "id": "chute-entretenimento-392",
-      "difficulty": "medium",
-      "text": "Quantos episódios tem \"Os Simpsons\", até 2024, aproximadamente?",
-      "answer": 790,
-      "unit": "episódios",
-      "fact": "A série estreou em 1989."
-    },
-    {
-      "id": "chute-entretenimento-393",
-      "difficulty": "medium",
-      "text": "Quantos episódios tem \"Friends\"?",
-      "answer": 236,
-      "unit": "episódios",
-      "fact": "O último foi visto por 52 milhões nos EUA."
-    },
-    {
-      "id": "chute-entretenimento-394",
-      "difficulty": "hard",
-      "text": "Quantas visualizações tem \"Baby Shark\" no YouTube, em bilhões, aproximadamente?",
-      "answer": 15,
-      "unit": "bilhões",
-      "fact": "É o vídeo mais visto da história."
-    },
-    {
-      "id": "chute-entretenimento-395",
-      "difficulty": "hard",
-      "text": "Quantos capítulos tem \"Avenida Brasil\"?",
-      "answer": 179,
-      "unit": "capítulos",
-      "fact": "O final parou o país em 2012."
-    },
-    {
       "id": "chute-entretenimento-396",
       "difficulty": "hard",
       "text": "Quantos anos Fernanda Montenegro tinha quando foi indicada ao Oscar?",
       "answer": 69,
       "unit": "anos",
       "fact": "A cerimônia foi em 1999."
-    },
-    {
-      "id": "chute-entretenimento-397",
-      "difficulty": "hard",
-      "text": "Quantos anos Harrison Ford tinha quando gravou o último \"Indiana Jones\", em 2023?",
-      "answer": 80,
-      "unit": "anos",
-      "fact": "Ele voltou ao papel depois de 15 anos."
     },
     {
       "id": "chute-entretenimento-398",
@@ -3192,14 +3072,6 @@
       "answer": 4,
       "unit": "hobbits",
       "fact": "São Frodo, Sam, Merry e Pippin."
-    },
-    {
-      "id": "chute-entretenimento-400",
-      "difficulty": "easy",
-      "text": "Quantos integrantes tem o grupo Mamonas Assassinas?",
-      "answer": 5,
-      "unit": "integrantes",
-      "fact": "A banda morreu em um acidente aéreo, em 1996."
     },
     {
       "id": "chute-entretenimento-401",
@@ -3242,14 +3114,6 @@
       "fact": "Ele apresentou de 2002 a 2016."
     },
     {
-      "id": "chute-entretenimento-406",
-      "difficulty": "hard",
-      "text": "Quantos anos Silvio Santos ficou na TV, aproximadamente?",
-      "answer": 60,
-      "unit": "anos",
-      "fact": "Ele morreu em 2024, aos 93 anos."
-    },
-    {
       "id": "chute-entretenimento-407",
       "difficulty": "hard",
       "text": "Quantos anos Hebe Camargo tinha quando morreu?",
@@ -3280,14 +3144,6 @@
       "answer": 23,
       "unit": "filmes",
       "fact": "A Disney comprou o estúdio em 2006."
-    },
-    {
-      "id": "chute-entretenimento-411",
-      "difficulty": "medium",
-      "text": "Quantos Oscars \"Ben-Hur\" ganhou?",
-      "answer": 11,
-      "unit": "estatuetas",
-      "fact": "O filme de 1959 foi o primeiro a alcançar esse número."
     },
     {
       "id": "chute-entretenimento-412",

@@ -409,14 +409,6 @@
       "fact": "O oxigênio é o mais abundante na crosta terrestre."
     },
     {
-      "id": "chute-ciencias-52",
-      "difficulty": "easy",
-      "text": "Em que ano Neil Armstrong pisou na Lua?",
-      "answer": 1969,
-      "scale": 50,
-      "fact": "A primeira pegada dele ainda está lá, porque na Lua não venta."
-    },
-    {
       "id": "chute-ciencias-53",
       "difficulty": "medium",
       "text": "Em que ano foi lançado o Sputnik?",
@@ -479,14 +471,6 @@
       "answer": 1953,
       "scale": 50,
       "fact": "Watson e Crick publicaram o artigo na revista Nature."
-    },
-    {
-      "id": "chute-ciencias-61",
-      "difficulty": "easy",
-      "text": "Em que ano aconteceu o desastre de Chernobyl?",
-      "answer": 1986,
-      "scale": 50,
-      "fact": "A cidade de Pripyat foi abandonada."
     },
     {
       "id": "chute-ciencias-62",
@@ -825,14 +809,6 @@
       "answer": 327,
       "unit": "°C",
       "fact": "Esse é um dos metais mais fáceis de fundir."
-    },
-    {
-      "id": "chute-ciencias-104",
-      "difficulty": "medium",
-      "text": "A que temperatura o nitrogênio líquido ferve, em °C?",
-      "answer": -196,
-      "unit": "°C",
-      "fact": "Ele é muito usado na conservação de células."
     },
     {
       "id": "chute-ciencias-105",
@@ -1315,28 +1291,12 @@
       "fact": "Ele ainda vai durar uns 5 bilhões de anos."
     },
     {
-      "id": "chute-ciencias-165",
-      "difficulty": "medium",
-      "text": "Qual é a idade do Universo, em bilhões de anos?",
-      "answer": 13.8,
-      "unit": "bilhões",
-      "fact": "Foi calculada principalmente com a radiação cósmica de fundo."
-    },
-    {
       "id": "chute-ciencias-166",
       "difficulty": "medium",
       "text": "Quantos bilhões de anos o Sol ainda tem de vida, aproximadamente?",
       "answer": 5,
       "unit": "bilhões",
       "fact": "Depois ele vai virar gigante vermelha e anã branca."
-    },
-    {
-      "id": "chute-ciencias-167",
-      "difficulty": "medium",
-      "text": "Quantos elementos químicos há na tabela periódica?",
-      "answer": 118,
-      "unit": "elementos",
-      "fact": "O último, oganessônio, foi nomeado em 2016."
     },
     {
       "id": "chute-ciencias-168",
@@ -1729,14 +1689,6 @@
       "answer": 2000,
       "unit": "kcal",
       "fact": "O cérebro consome cerca de 20% disso."
-    },
-    {
-      "id": "chute-ciencias-217",
-      "difficulty": "medium",
-      "text": "Quantas calorias tem 1 grama de gordura, aproximadamente?",
-      "answer": 9,
-      "unit": "kcal",
-      "fact": "Ela tem mais energia que os carboidratos e as proteínas."
     },
     {
       "id": "chute-ciencias-218",
@@ -2499,14 +2451,6 @@
       "fact": "Ela é o maior objeto feito pelo homem em órbita."
     },
     {
-      "id": "chute-ciencias-313",
-      "difficulty": "hard",
-      "text": "Qual é o custo total da Estação Espacial, em bilhões de dólares?",
-      "answer": 150,
-      "unit": "bilhões",
-      "fact": "É o objeto mais caro já construído."
-    },
-    {
       "id": "chute-ciencias-314",
       "difficulty": "hard",
       "text": "Quantas toneladas tinha o foguete Saturno V, em seu lançamento?",
@@ -3075,32 +3019,6 @@
       "fact": "Em lugares altos, ela ferve antes."
     },
     {
-      "id": "chute-ciencias-385",
-      "difficulty": "easy",
-      "text": "Em quantos graus a água congela, ao nível do mar, em °C?",
-      "answer": 0,
-      "unit": "°C",
-      "scale": 5,
-      "fact": "O sal pode baixar esse ponto."
-    },
-    {
-      "id": "chute-ciencias-386",
-      "difficulty": "easy",
-      "text": "Qual é a temperatura normal do corpo humano, em °C, aproximadamente?",
-      "answer": 36.5,
-      "unit": "°C",
-      "scale": 5,
-      "fact": "A febre começa perto de 37,8 °C."
-    },
-    {
-      "id": "chute-ciencias-387",
-      "difficulty": "easy",
-      "text": "Quantos pares de cromossomos tem uma célula humana?",
-      "answer": 23,
-      "unit": "pares",
-      "fact": "As células sexuais têm a metade."
-    },
-    {
       "id": "chute-ciencias-388",
       "difficulty": "easy",
       "text": "Quantos litros de sangue tem um adulto, aproximadamente?",
@@ -3150,15 +3068,6 @@
       "unit": "°C",
       "scale": 30,
       "fact": "De dia, ela pode passar de 100 °C."
-    },
-    {
-      "id": "chute-ciencias-394",
-      "difficulty": "medium",
-      "text": "Qual é a temperatura de ebulição do nitrogênio líquido, em °C?",
-      "answer": -196,
-      "unit": "°C",
-      "scale": 30,
-      "fact": "Por isso ele é usado em criogenia."
     },
     {
       "id": "chute-ciencias-395",
@@ -3276,14 +3185,6 @@
       "fact": "Ele é o elemento mais difícil de condensar."
     },
     {
-      "id": "chute-ciencias-409",
-      "difficulty": "hard",
-      "text": "Quantos metros de DNA há em uma célula humana, aproximadamente?",
-      "answer": 2,
-      "unit": "metros",
-      "fact": "Ele fica muito bem dobrado no núcleo."
-    },
-    {
       "id": "chute-ciencias-410",
       "difficulty": "easy",
       "text": "Quantos segundos a luz do Sol leva para chegar à Terra, aproximadamente?",
@@ -3300,14 +3201,6 @@
       "fact": "Parte deles se funde no sacro e no cóccix."
     },
     {
-      "id": "chute-ciencias-412",
-      "difficulty": "medium",
-      "text": "Quantos minutos o cérebro resiste sem oxigênio, em média, antes de lesões graves?",
-      "answer": 5,
-      "unit": "minutos",
-      "fact": "Por isso a reanimação precisa ser rápida."
-    },
-    {
       "id": "chute-ciencias-413",
       "difficulty": "medium",
       "text": "Qual é o comprimento do intestino delgado de um adulto, em metros, aproximadamente?",
@@ -3322,14 +3215,6 @@
       "answer": 4,
       "unit": "horas",
       "fact": "As gorduras demoram mais."
-    },
-    {
-      "id": "chute-ciencias-415",
-      "difficulty": "hard",
-      "text": "Quantas vezes o próton é mais pesado que o elétron?",
-      "answer": 1836,
-      "unit": "vezes",
-      "fact": "O próton é bem mais pesado."
     },
     {
       "id": "chute-ciencias-416",

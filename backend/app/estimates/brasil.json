@@ -458,14 +458,6 @@
       "fact": "Ele nasceu no Rio de Janeiro."
     },
     {
-      "id": "chute-brasil-58",
-      "difficulty": "easy",
-      "text": "Em que ano foi a estreia do Rock in Rio?",
-      "answer": 1985,
-      "scale": 50,
-      "fact": "Foram 10 dias, com mais de 1 milhão de pessoas."
-    },
-    {
       "id": "chute-brasil-59",
       "difficulty": "medium",
       "text": "Em que ano foi a estreia do Fantástico?",
@@ -544,14 +536,6 @@
       "answer": 2016,
       "scale": 50,
       "fact": "O Brasil teve seu recorde de medalhas até aquela edição."
-    },
-    {
-      "id": "chute-brasil-69",
-      "difficulty": "easy",
-      "text": "Em que ano foi a morte de Ayrton Senna?",
-      "answer": 1994,
-      "scale": 50,
-      "fact": "Foi um grande luto no país."
     },
     {
       "id": "chute-brasil-70",
@@ -1434,14 +1418,6 @@
       "fact": "Ele foi velado na Academia."
     },
     {
-      "id": "chute-brasil-180",
-      "difficulty": "medium",
-      "text": "Em que ano foi publicado \"Dom Casmurro\"?",
-      "answer": 1899,
-      "scale": 50,
-      "fact": "Até hoje se discute se Capitu traiu Bentinho."
-    },
-    {
       "id": "chute-brasil-181",
       "difficulty": "medium",
       "text": "Em que ano foi publicado \"Memórias Póstumas de Brás Cubas\"?",
@@ -1698,14 +1674,6 @@
       "fact": "A divisão atual é de 1970."
     },
     {
-      "id": "chute-brasil-213",
-      "difficulty": "medium",
-      "text": "Quantos fusos horários tem o Brasil, contando as ilhas?",
-      "answer": 4,
-      "unit": "fusos",
-      "fact": "A maior parte do país segue o horário de Brasília."
-    },
-    {
       "id": "chute-brasil-214",
       "difficulty": "medium",
       "text": "Quantos países de língua portuguesa tem na África?",
@@ -1856,14 +1824,6 @@
       "answer": 4,
       "unit": "mortos",
       "fact": "Foi o pior acidente radiológico fora de usinas."
-    },
-    {
-      "id": "chute-brasil-233",
-      "difficulty": "medium",
-      "text": "Quantos metros tem o Corcovado em relação ao mar?",
-      "answer": 710,
-      "unit": "metros",
-      "fact": "Ele tem uma estrada e um trem até o topo."
     },
     {
       "id": "chute-brasil-234",
@@ -2386,28 +2346,12 @@
       "fact": "A Lei do Divórcio foi uma grande batalha política."
     },
     {
-      "id": "chute-brasil-299",
-      "difficulty": "hard",
-      "text": "Em que ano foi aprovado o Estatuto da Criança e do Adolescente?",
-      "answer": 1990,
-      "scale": 50,
-      "fact": "Foi criado depois da Constituição de 1988."
-    },
-    {
       "id": "chute-brasil-300",
       "difficulty": "hard",
       "text": "Em que ano foi aprovado o Código de Trânsito atual?",
       "answer": 1997,
       "scale": 50,
       "fact": "Ele tornou obrigatório o uso do cinto."
-    },
-    {
-      "id": "chute-brasil-301",
-      "difficulty": "hard",
-      "text": "Em que ano foi criado o Mercosul, com o Tratado de Assunção?",
-      "answer": 1991,
-      "scale": 50,
-      "fact": "Quatro países o criaram."
     },
     {
       "id": "chute-brasil-302",
@@ -2440,14 +2384,6 @@
       "answer": 18,
       "unit": "anos",
       "fact": "É a menor idade para ocupar um cargo eletivo."
-    },
-    {
-      "id": "chute-brasil-306",
-      "difficulty": "easy",
-      "text": "Quantos anos, no mínimo, para tirar a CNH de carro?",
-      "answer": 18,
-      "unit": "anos",
-      "fact": "Antes disso, só com autorização judicial em casos especiais."
     },
     {
       "id": "chute-brasil-307",
@@ -2802,14 +2738,6 @@
       "fact": "Ele foi um dos cangaceiros mais famosos do Brasil."
     },
     {
-      "id": "chute-brasil-351",
-      "difficulty": "hard",
-      "text": "Em que ano Dom Pedro II foi coroado imperador, com 15 anos?",
-      "answer": 1841,
-      "scale": 50,
-      "fact": "O corpo diplomático chamou a coroação de uma grande festa."
-    },
-    {
       "id": "chute-brasil-352",
       "difficulty": "hard",
       "text": "Em que ano foi inaugurada a Ponte Hercílio Luz?",
@@ -3066,14 +2994,6 @@
       "fact": "Eles saíram de Lisboa em março e chegaram em abril."
     },
     {
-      "id": "chute-brasil-384",
-      "difficulty": "easy",
-      "text": "Quantos estados fazem parte da região Nordeste?",
-      "answer": 9,
-      "unit": "estados",
-      "fact": "A Bahia é o maior deles."
-    },
-    {
       "id": "chute-brasil-385",
       "difficulty": "easy",
       "text": "Quantos estados fazem parte da região Sul?",
@@ -3088,14 +3008,6 @@
       "answer": 7,
       "unit": "estados",
       "fact": "A região é a maior do país em área."
-    },
-    {
-      "id": "chute-brasil-387",
-      "difficulty": "easy",
-      "text": "Quantos estados fazem parte da região Sudeste?",
-      "answer": 4,
-      "unit": "estados",
-      "fact": "Ela é a mais populosa do país."
     },
     {
       "id": "chute-brasil-388",
@@ -3130,14 +3042,6 @@
       "fact": "Uma para cada título mundial."
     },
     {
-      "id": "chute-brasil-392",
-      "difficulty": "easy",
-      "text": "Quantos dias costuma durar o Carnaval oficial, de sábado a terça?",
-      "answer": 4,
-      "unit": "dias",
-      "fact": "A Quarta-Feira de Cinzas marca o fim."
-    },
-    {
       "id": "chute-brasil-393",
       "difficulty": "medium",
       "text": "Quantos quilômetros de fronteira terrestre tem o Brasil, aproximadamente?",
@@ -3154,36 +3058,12 @@
       "fact": "É o quinto maior país do mundo."
     },
     {
-      "id": "chute-brasil-395",
-      "difficulty": "medium",
-      "text": "Qual é a altura das Cataratas do Iguaçu, em metros, no ponto mais alto?",
-      "answer": 82,
-      "unit": "metros",
-      "fact": "A Garganta do Diabo é a parte mais famosa."
-    },
-    {
-      "id": "chute-brasil-396",
-      "difficulty": "medium",
-      "text": "Quanto mede a Ponte Rio-Niterói, em quilômetros, aproximadamente?",
-      "answer": 13,
-      "unit": "km",
-      "fact": "Ela foi inaugurada em 1974."
-    },
-    {
       "id": "chute-brasil-397",
       "difficulty": "medium",
       "text": "Quantos anos durou o Império no Brasil, de 1822 a 1889?",
       "answer": 67,
       "unit": "anos",
       "fact": "Dom Pedro II reinou quase todo esse período."
-    },
-    {
-      "id": "chute-brasil-398",
-      "difficulty": "medium",
-      "text": "Quantos anos durou a ditadura militar no Brasil, de 1964 a 1985?",
-      "answer": 21,
-      "unit": "anos",
-      "fact": "Tancredo Neves foi eleito de forma indireta em 1985."
     },
     {
       "id": "chute-brasil-399",
@@ -3259,14 +3139,6 @@
       "fact": "Cada estado tem a sua."
     },
     {
-      "id": "chute-brasil-408",
-      "difficulty": "medium",
-      "text": "Quantos metros de altura tem o Dedo de Deus, em Teresópolis, aproximadamente?",
-      "answer": 1692,
-      "unit": "metros",
-      "fact": "O pico é um símbolo do montanhismo brasileiro."
-    },
-    {
       "id": "chute-brasil-409",
       "difficulty": "medium",
       "text": "Quantos quilômetros tem a Rodovia Transamazônica, aproximadamente?",
@@ -3297,22 +3169,6 @@
       "answer": 196,
       "unit": "metros",
       "fact": "Ela foi inaugurada em 1984."
-    },
-    {
-      "id": "chute-brasil-413",
-      "difficulty": "easy",
-      "text": "Quantos jogadores titulares tem um time de vôlei de praia no Brasil, por equipe?",
-      "answer": 2,
-      "unit": "jogadores",
-      "fact": "O país é uma potência no esporte."
-    },
-    {
-      "id": "chute-brasil-414",
-      "difficulty": "medium",
-      "text": "Quantos metros de altura tem o Dedo de Deus, em Teresópolis, em relação ao nível do mar?",
-      "answer": 1692,
-      "unit": "metros",
-      "fact": "Ele é um símbolo do montanhismo."
     },
     {
       "id": "chute-brasil-415",

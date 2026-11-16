@@ -6023,19 +6023,6 @@
       "fact": "O projeto nasceu de uma parceria que falhou com a Nintendo."
     },
     {
-      "id": "games-458",
-      "difficulty": "easy",
-      "text": "Qual empresa criou o Xbox?",
-      "options": [
-        "Microsoft",
-        "Sony",
-        "Nintendo",
-        "Apple"
-      ],
-      "answer": 0,
-      "fact": "O primeiro foi lançado em 2001."
-    },
-    {
       "id": "games-459",
       "difficulty": "easy",
       "text": "Qual empresa criou o Game Boy?",
@@ -6086,19 +6073,6 @@
       ],
       "answer": 0,
       "fact": "O jogo saiu em 2006."
-    },
-    {
-      "id": "games-463",
-      "difficulty": "easy",
-      "text": "Qual empresa criou o Candy Crush?",
-      "options": [
-        "King",
-        "Rovio",
-        "Supercell",
-        "Zynga"
-      ],
-      "answer": 0,
-      "fact": "A Activision comprou a empresa em 2016."
     },
     {
       "id": "games-464",
@@ -6257,19 +6231,6 @@
       "fact": "Ela também criou o League of Legends."
     },
     {
-      "id": "games-476",
-      "difficulty": "easy",
-      "text": "Qual empresa criou The Witcher 3?",
-      "options": [
-        "CD Projekt Red",
-        "FromSoftware",
-        "Bethesda",
-        "Rockstar"
-      ],
-      "answer": 0,
-      "fact": "A empresa é da Polônia."
-    },
-    {
       "id": "games-477",
       "difficulty": "easy",
       "text": "Qual empresa criou o Skyrim?",
@@ -6294,19 +6255,6 @@
       ],
       "answer": 0,
       "fact": "Ele também foi para Super Smash Bros."
-    },
-    {
-      "id": "games-479",
-      "difficulty": "easy",
-      "text": "Em que jogo o personagem Kratos aparece?",
-      "options": [
-        "God of War",
-        "Halo",
-        "Uncharted",
-        "Devil May Cry"
-      ],
-      "answer": 0,
-      "fact": "Ele mata deuses gregos e depois nórdicos."
     },
     {
       "id": "games-480",
@@ -6335,19 +6283,6 @@
       "fact": "Angelina Jolie a interpretou no cinema."
     },
     {
-      "id": "games-482",
-      "difficulty": "easy",
-      "text": "Em que jogo o personagem Master Chief aparece?",
-      "options": [
-        "Halo",
-        "Doom",
-        "Destiny",
-        "Gears of War"
-      ],
-      "answer": 0,
-      "fact": "A série foi essencial para o primeiro Xbox."
-    },
-    {
       "id": "games-483",
       "difficulty": "easy",
       "text": "Em que jogo o personagem Geralt aparece?",
@@ -6372,19 +6307,6 @@
       ],
       "answer": 0,
       "fact": "O jogo se passa em 1899."
-    },
-    {
-      "id": "games-485",
-      "difficulty": "easy",
-      "text": "Em que jogo o personagem Joel protege Ellie?",
-      "options": [
-        "The Last of Us",
-        "Resident Evil",
-        "Days Gone",
-        "The Walking Dead"
-      ],
-      "answer": 0,
-      "fact": "Foi adaptado pela HBO."
     },
     {
       "id": "games-486",
@@ -6855,19 +6777,6 @@
       "fact": "O jogo foi criado em 1971 por um barbeiro."
     },
     {
-      "id": "games-522",
-      "difficulty": "easy",
-      "text": "Qual é o jogo de cartas da Mattel em que se grita o próprio nome?",
-      "options": [
-        "UNO",
-        "Dominó",
-        "Truco",
-        "Canastra"
-      ],
-      "answer": 0,
-      "fact": "Foi criado por Merle Robbins nos EUA."
-    },
-    {
       "id": "games-523",
       "difficulty": "easy",
       "text": "Que jogo de cartas brasileiro tem \"seis\" e \"doze\" gritados na mesa?",
@@ -6959,19 +6868,6 @@
       "fact": "No Brasil, ele também é conhecido como Palavras Cruzadas."
     },
     {
-      "id": "games-530",
-      "difficulty": "easy",
-      "text": "Que jogo de celular tem uma cobrinha comendo bolinhas e foi famoso no Nokia?",
-      "options": [
-        "Snake",
-        "Tetris",
-        "Pac-Man",
-        "Pong"
-      ],
-      "answer": 0,
-      "fact": "O jogo vinha nos celulares a partir de 1997."
-    },
-    {
       "id": "games-531",
       "difficulty": "easy",
       "text": "Que console tem o controle em forma de \"Joy-Con\"?",
@@ -6996,19 +6892,6 @@
       ],
       "answer": 0,
       "fact": "O design foi feito para combinar com um controle grande."
-    },
-    {
-      "id": "games-533",
-      "difficulty": "easy",
-      "text": "Em que país surgiu o jogo Tetris?",
-      "options": [
-        "União Soviética",
-        "Japão",
-        "Estados Unidos",
-        "Alemanha"
-      ],
-      "answer": 0,
-      "fact": "O nome mistura \"tetra\" e \"tênis\"."
     },
     {
       "id": "games-534",
@@ -7061,19 +6944,6 @@
       ],
       "answer": 0,
       "fact": "Ele também criou Zelda e Donkey Kong."
-    },
-    {
-      "id": "games-538",
-      "difficulty": "medium",
-      "text": "Quem é o criador de Metal Gear Solid e Death Stranding?",
-      "options": [
-        "Hideo Kojima",
-        "Shigeru Miyamoto",
-        "Hidetaka Miyazaki",
-        "Yoko Taro"
-      ],
-      "answer": 0,
-      "fact": "Ele fundou o próprio estúdio em 2015."
     },
     {
       "id": "games-539",
@@ -7178,19 +7048,6 @@
       ],
       "answer": 0,
       "fact": "Eles são irmãos britânicos."
-    },
-    {
-      "id": "games-547",
-      "difficulty": "medium",
-      "text": "Quem é o criador de Elden Ring e Dark Souls?",
-      "options": [
-        "Hidetaka Miyazaki",
-        "Hideo Kojima",
-        "Shigeru Miyamoto",
-        "Tetsuya Nomura"
-      ],
-      "answer": 0,
-      "fact": "Ele começou no setor tarde, aos 29 anos."
     },
     {
       "id": "games-548",
@@ -7440,19 +7297,6 @@
       "fact": "Por isso, muitas empresas migraram para o PlayStation."
     },
     {
-      "id": "games-567",
-      "difficulty": "medium",
-      "text": "Qual foi o console da Nintendo que usava sensor de movimento em 2006?",
-      "options": [
-        "Wii",
-        "GameCube",
-        "Wii U",
-        "Nintendo DS"
-      ],
-      "answer": 0,
-      "fact": "O controle com sensor virou febre."
-    },
-    {
       "id": "games-568",
       "difficulty": "medium",
       "text": "Qual foi o console da Nintendo de 2012, um fracasso comercial?",
@@ -7542,19 +7386,6 @@
       ],
       "answer": 0,
       "fact": "Ele foi o jogo do ano em 2018."
-    },
-    {
-      "id": "games-575",
-      "difficulty": "medium",
-      "text": "Qual jogo da Sony tem robôs dinossauros e a heroína Aloy?",
-      "options": [
-        "Horizon Zero Dawn",
-        "Uncharted",
-        "God of War",
-        "Ghost of Tsushima"
-      ],
-      "answer": 0,
-      "fact": "Ele foi lançado em 2017."
     },
     {
       "id": "games-576",
@@ -7659,19 +7490,6 @@
       ],
       "answer": 0,
       "fact": "O golpe é uma bola de energia."
-    },
-    {
-      "id": "games-584",
-      "difficulty": "medium",
-      "text": "Qual jogo tem o golpe \"Fatality\"?",
-      "options": [
-        "Mortal Kombat",
-        "Street Fighter",
-        "King of Fighters",
-        "Soulcalibur"
-      ],
-      "answer": 0,
-      "fact": "Foi um dos motivos para criar a classificação indicativa."
     },
     {
       "id": "games-585",
@@ -7960,19 +7778,6 @@
       "fact": "Ele é uma série de RPG da Bethesda."
     },
     {
-      "id": "games-607",
-      "difficulty": "medium",
-      "text": "Qual jogo tem a cidade submarina de Rapture?",
-      "options": [
-        "BioShock",
-        "Fallout",
-        "Subnautica",
-        "Prey"
-      ],
-      "answer": 0,
-      "fact": "A cidade foi criada por Andrew Ryan."
-    },
-    {
       "id": "games-608",
       "difficulty": "medium",
       "text": "Qual jogo tem a cidade flutuante de Columbia?",
@@ -8220,32 +8025,6 @@
       "fact": "É o mapa mais famoso da série."
     },
     {
-      "id": "games-627",
-      "difficulty": "hard",
-      "text": "Qual jogo tem o agente Sova?",
-      "options": [
-        "Valorant",
-        "Overwatch",
-        "Apex Legends",
-        "Counter-Strike"
-      ],
-      "answer": 0,
-      "fact": "O jogo foi lançado em 2020."
-    },
-    {
-      "id": "games-628",
-      "difficulty": "hard",
-      "text": "Qual jogo tem a personagem Tracer?",
-      "options": [
-        "Overwatch",
-        "Valorant",
-        "Apex Legends",
-        "Paladins"
-      ],
-      "answer": 0,
-      "fact": "A Blizzard o lançou em 2016."
-    },
-    {
       "id": "games-629",
       "difficulty": "hard",
       "text": "Qual jogo tem o Reino de Azeroth?",
@@ -8402,19 +8181,6 @@
       "fact": "O visual foi criticado no lançamento, mas virou clássico."
     },
     {
-      "id": "games-641",
-      "difficulty": "hard",
-      "text": "Qual é o nome do cavalo de Link em Ocarina of Time?",
-      "options": [
-        "Epona",
-        "Roach",
-        "Agro",
-        "Shadowfax"
-      ],
-      "answer": 0,
-      "fact": "Roach é o de Geralt, e Agro é de Shadow of the Colossus."
-    },
-    {
       "id": "games-642",
       "difficulty": "hard",
       "text": "Qual é o jogo que tem um cavalo chamado Agro?",
@@ -8543,19 +8309,6 @@
       ],
       "answer": 0,
       "fact": "Mads Mikkelsen também aparece no jogo."
-    },
-    {
-      "id": "games-652",
-      "difficulty": "hard",
-      "text": "Qual ator estrelou \"Cyberpunk 2077\" como Johnny Silverhand?",
-      "options": [
-        "Keanu Reeves",
-        "Norman Reedus",
-        "Mads Mikkelsen",
-        "Troy Baker"
-      ],
-      "answer": 0,
-      "fact": "A plateia gritou \"Você é incrível!\" no anúncio do jogo."
     },
     {
       "id": "games-653",
@@ -8909,19 +8662,6 @@
       "fact": "Foram os três protagonistas do jogo."
     },
     {
-      "id": "games-680",
-      "difficulty": "medium",
-      "text": "Qual jogo tem Niko Bellic?",
-      "options": [
-        "GTA IV",
-        "GTA V",
-        "Saints Row",
-        "Mafia"
-      ],
-      "answer": 0,
-      "fact": "Ele é um imigrante do Leste Europeu."
-    },
-    {
       "id": "games-681",
       "difficulty": "medium",
       "text": "Qual jogo tem o personagem John Marston?",
@@ -8959,19 +8699,6 @@
       ],
       "answer": 0,
       "fact": "A irmã dele, Claire, aparece no segundo jogo."
-    },
-    {
-      "id": "games-684",
-      "difficulty": "hard",
-      "text": "Qual é o verdadeiro nome do Master Chief?",
-      "options": [
-        "John-117",
-        "Sam Fisher",
-        "Isaac Clarke",
-        "Marcus Fenix"
-      ],
-      "answer": 0,
-      "fact": "O rosto dele nunca é mostrado por completo."
     },
     {
       "id": "games-685",
@@ -9102,19 +8829,6 @@
       ],
       "answer": 0,
       "fact": "Skyrim é uma de suas províncias."
-    },
-    {
-      "id": "games-695",
-      "difficulty": "hard",
-      "text": "Qual é o nome do mundo de \"World of Warcraft\"?",
-      "options": [
-        "Azeroth",
-        "Tamriel",
-        "Hyrule",
-        "Sanctuary"
-      ],
-      "answer": 0,
-      "fact": "Ele é dividido entre a Aliança e a Horda."
     },
     {
       "id": "games-696",
@@ -9778,21 +9492,6 @@
       "fact": "Ela não tem vocabulário fixo."
     },
     {
-      "id": "games-743",
-      "difficulty": "impossible",
-      "text": "Quantas estrelas tem \"Super Mario 64\", para coletar todas?",
-      "options": [
-        "120",
-        "70",
-        "100",
-        "50",
-        "150",
-        "200"
-      ],
-      "answer": 0,
-      "fact": "O castelo da princesa Peach é o ponto de partida."
-    },
-    {
       "id": "games-744",
       "difficulty": "easy",
       "text": "Em que jogo os jogadores constroem com blocos e enfrentam creepers?",
@@ -9806,32 +9505,6 @@
       "fact": "O creeper nasceu de um erro de modelagem."
     },
     {
-      "id": "games-745",
-      "difficulty": "easy",
-      "text": "Em que jogo os jogadores são tripulantes e impostores?",
-      "options": [
-        "Among Us",
-        "Fall Guys",
-        "Roblox",
-        "Fortnite"
-      ],
-      "answer": 0,
-      "fact": "A febre veio em 2020."
-    },
-    {
-      "id": "games-746",
-      "difficulty": "easy",
-      "text": "Em que jogo os jogadores caçam Pokémon nas ruas com o celular?",
-      "options": [
-        "Pokémon GO",
-        "Candy Crush",
-        "Clash Royale",
-        "Free Fire"
-      ],
-      "answer": 0,
-      "fact": "Ele estreou no Brasil em agosto de 2016."
-    },
-    {
       "id": "games-747",
       "difficulty": "easy",
       "text": "Que jogo de cores é famoso pelas palavras \"UNO\"?",
@@ -9843,19 +9516,6 @@
       ],
       "answer": 0,
       "fact": "O jogador grita o nome quando fica com uma carta."
-    },
-    {
-      "id": "games-748",
-      "difficulty": "easy",
-      "text": "Qual é o nome do encanador de boné vermelho da Nintendo?",
-      "options": [
-        "Mario",
-        "Sonic",
-        "Link",
-        "Pac-Man"
-      ],
-      "answer": 0,
-      "fact": "Ele usa macacão azul."
     },
     {
       "id": "games-749",
@@ -9936,84 +9596,6 @@
       "fact": "O nome verdadeiro dele é John-117."
     },
     {
-      "id": "games-755",
-      "difficulty": "medium",
-      "text": "Que personagem é a protagonista de \"Tomb Raider\"?",
-      "options": [
-        "Lara Croft",
-        "Aloy",
-        "Jill Valentine",
-        "Samus Aran"
-      ],
-      "answer": 0,
-      "fact": "Ela estreou em 1996."
-    },
-    {
-      "id": "games-756",
-      "difficulty": "medium",
-      "text": "Que personagem é o caçador de bruxos de \"The Witcher\"?",
-      "options": [
-        "Geralt de Rívia",
-        "Dante",
-        "Vergil",
-        "Ezio"
-      ],
-      "answer": 0,
-      "fact": "Ele nasceu nos livros de Andrzej Sapkowski."
-    },
-    {
-      "id": "games-757",
-      "difficulty": "medium",
-      "text": "Que personagem é o assassino florentino de \"Assassin's Creed II\"?",
-      "options": [
-        "Ezio Auditore",
-        "Altaïr",
-        "Connor",
-        "Bayek"
-      ],
-      "answer": 0,
-      "fact": "A história se passa na Renascença."
-    },
-    {
-      "id": "games-758",
-      "difficulty": "medium",
-      "text": "Que jogo de luta tem Ryu, Ken e Chun-Li?",
-      "options": [
-        "Street Fighter",
-        "Tekken",
-        "Mortal Kombat",
-        "King of Fighters"
-      ],
-      "answer": 0,
-      "fact": "A série nasceu em 1987."
-    },
-    {
-      "id": "games-759",
-      "difficulty": "medium",
-      "text": "Que jogo de luta tem Scorpion e Sub-Zero?",
-      "options": [
-        "Mortal Kombat",
-        "Street Fighter",
-        "Tekken",
-        "Dead or Alive"
-      ],
-      "answer": 0,
-      "fact": "A violência dele gerou polêmica nos EUA."
-    },
-    {
-      "id": "games-760",
-      "difficulty": "medium",
-      "text": "Que jogo de corrida tem Bowser, Peach e cascos de tartaruga?",
-      "options": [
-        "Mario Kart",
-        "Need for Speed",
-        "Gran Turismo",
-        "Crash Team Racing"
-      ],
-      "answer": 0,
-      "fact": "O casco azul é o mais temido."
-    },
-    {
       "id": "games-761",
       "difficulty": "medium",
       "text": "Que marca brasileira vendeu os consoles Sega no país?",
@@ -10040,19 +9622,6 @@
       "fact": "Hideo Kojima é o criador da série."
     },
     {
-      "id": "games-763",
-      "difficulty": "hard",
-      "text": "Que empresa criou \"Dark Souls\" e \"Elden Ring\"?",
-      "options": [
-        "FromSoftware",
-        "Capcom",
-        "Square Enix",
-        "Konami"
-      ],
-      "answer": 0,
-      "fact": "Hidetaka Miyazaki é o diretor."
-    },
-    {
       "id": "games-764",
       "difficulty": "hard",
       "text": "Que empresa belga criou \"Baldur's Gate 3\"?",
@@ -10064,32 +9633,6 @@
       ],
       "answer": 0,
       "fact": "Foi o jogo do ano de 2023."
-    },
-    {
-      "id": "games-765",
-      "difficulty": "hard",
-      "text": "Que empresa criou \"Hollow Knight\"?",
-      "options": [
-        "Team Cherry",
-        "Supergiant",
-        "Devolver",
-        "Motion Twin"
-      ],
-      "answer": 0,
-      "fact": "É um estúdio australiano."
-    },
-    {
-      "id": "games-766",
-      "difficulty": "hard",
-      "text": "Que empresa criou \"Hades\"?",
-      "options": [
-        "Supergiant Games",
-        "Team Cherry",
-        "Motion Twin",
-        "Klei"
-      ],
-      "answer": 0,
-      "fact": "Ela também fez \"Bastion\"."
     },
     {
       "id": "games-767",
@@ -10165,21 +9708,6 @@
       "fact": "Ele nasceu na Alemanha e foi para os EUA."
     },
     {
-      "id": "games-772",
-      "difficulty": "impossible",
-      "text": "Em que ano foi lançado \"Tennis for Two\", do físico William Higinbotham?",
-      "options": [
-        "1958",
-        "1947",
-        "1965",
-        "1972",
-        "1952",
-        "1969"
-      ],
-      "answer": 0,
-      "fact": "O jogo rodava em um osciloscópio."
-    },
-    {
       "id": "games-773",
       "difficulty": "hard",
       "text": "Que estúdio francês criou \"Dead Cells\"?",
@@ -10204,19 +9732,6 @@
       ],
       "answer": 0,
       "fact": "Ela também tem a série \"Pro Evolution Soccer\"."
-    },
-    {
-      "id": "games-775",
-      "difficulty": "hard",
-      "text": "Que empresa criou \"Monster Hunter\" e \"Resident Evil\"?",
-      "options": [
-        "Capcom",
-        "Konami",
-        "Square Enix",
-        "Sega"
-      ],
-      "answer": 0,
-      "fact": "Ela foi fundada no Japão."
     }
   ]
 }
