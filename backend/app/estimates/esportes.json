@@ -3312,6 +3312,1334 @@
       "answer": 2,
       "unit": "vezes",
       "fact": "As derrotas nas finais foram para o Uruguai e para a França."
+    },
+    {
+      "id": "chute-esportes-435",
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de basquete, contando os reservas, numa partida oficial?",
+      "answer": 12,
+      "unit": "jogadores",
+      "fact": "Só cinco ficam em quadra ao mesmo tempo."
+    },
+    {
+      "id": "chute-esportes-436",
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de vôlei, contando os reservas, numa partida oficial?",
+      "answer": 14,
+      "unit": "jogadores",
+      "fact": "O líbero usa uma camisa de cor diferente."
+    },
+    {
+      "id": "chute-esportes-437",
+      "difficulty": "easy",
+      "text": "Quantos árbitros de vídeo trabalham no VAR, em geral?",
+      "answer": 3,
+      "unit": "árbitros",
+      "fact": "Eles ficam numa sala longe do campo."
+    },
+    {
+      "id": "chute-esportes-438",
+      "difficulty": "easy",
+      "text": "Quantos minutos dura o intervalo de um jogo de futebol?",
+      "answer": 15,
+      "unit": "minutos",
+      "fact": "Os times voltam para o vestiário."
+    },
+    {
+      "id": "chute-esportes-439",
+      "difficulty": "easy",
+      "text": "Quantos minutos dura um jogo de futebol, somando os dois tempos e sem acréscimos?",
+      "answer": 90,
+      "unit": "minutos",
+      "fact": "O acréscimo compensa o tempo parado."
+    },
+    {
+      "id": "chute-esportes-440",
+      "difficulty": "easy",
+      "text": "Quantos quartos tem um jogo de basquete?",
+      "answer": 4,
+      "unit": "quartos",
+      "fact": "Na NBA cada quarto tem 12 minutos."
+    },
+    {
+      "id": "chute-esportes-441",
+      "difficulty": "easy",
+      "text": "Quantos sets tem uma partida de vôlei, no máximo?",
+      "answer": 5,
+      "unit": "sets",
+      "fact": "O quinto set, o tie-break, vai até 15 pontos."
+    },
+    {
+      "id": "chute-esportes-442",
+      "difficulty": "easy",
+      "text": "Quantos pontos tem o tie-break do vôlei?",
+      "answer": 15,
+      "unit": "pontos",
+      "fact": "É preciso ter dois pontos de vantagem para vencer."
+    },
+    {
+      "id": "chute-esportes-443",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale um lance livre no basquete?",
+      "answer": 1,
+      "unit": "ponto",
+      "fact": "Cada falta pode valer até três lances livres."
+    },
+    {
+      "id": "chute-esportes-444",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale uma cesta comum de dentro do garrafão no basquete?",
+      "answer": 2,
+      "unit": "pontos",
+      "fact": "A cesta de longe vale três pontos."
+    },
+    {
+      "id": "chute-esportes-445",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale um touchdown no futebol americano?",
+      "answer": 6,
+      "unit": "pontos",
+      "fact": "Depois do touchdown vem a chance de um ponto extra."
+    },
+    {
+      "id": "chute-esportes-446",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale um gol de campo no futebol americano?",
+      "answer": 3,
+      "unit": "pontos",
+      "fact": "O chute precisa passar entre as traves altas."
+    },
+    {
+      "id": "chute-esportes-447",
+      "difficulty": "easy",
+      "text": "Quantos games são preciso para ganhar um set de tênis, no mínimo?",
+      "answer": 6,
+      "unit": "games",
+      "fact": "É preciso ter dois games de vantagem."
+    },
+    {
+      "id": "chute-esportes-448",
+      "difficulty": "easy",
+      "text": "Quantos sets um tenista precisa vencer num Grand Slam masculino?",
+      "answer": 3,
+      "unit": "sets",
+      "fact": "As mulheres jogam melhor de três sets."
+    },
+    {
+      "id": "chute-esportes-449",
+      "difficulty": "easy",
+      "text": "Quantos torneios Grand Slam acontecem por ano no tênis?",
+      "answer": 4,
+      "unit": "torneios",
+      "fact": "São Austrália, Roland Garros, Wimbledon e US Open."
+    },
+    {
+      "id": "chute-esportes-450",
+      "difficulty": "easy",
+      "text": "Quantos rounds tem uma luta de UFC que não vale título?",
+      "answer": 3,
+      "unit": "rounds",
+      "fact": "Lutas de cinturão têm cinco rounds."
+    },
+    {
+      "id": "chute-esportes-451",
+      "difficulty": "easy",
+      "text": "Quantos minutos dura um round de UFC?",
+      "answer": 5,
+      "unit": "minutos",
+      "fact": "O intervalo entre os rounds é de um minuto."
+    },
+    {
+      "id": "chute-esportes-452",
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma piscina semiolímpica?",
+      "answer": 25,
+      "unit": "metros",
+      "fact": "A piscina olímpica tem 50 metros."
+    },
+    {
+      "id": "chute-esportes-453",
+      "difficulty": "easy",
+      "text": "Quantas raias tem uma piscina olímpica usada em provas?",
+      "answer": 8,
+      "unit": "raias",
+      "fact": "As raias da ponta ficam vazias nas finais."
+    },
+    {
+      "id": "chute-esportes-454",
+      "difficulty": "easy",
+      "text": "Quantas voltas na pista tem uma prova de 1.500 metros no atletismo, aproximadamente?",
+      "answer": 3.75,
+      "unit": "voltas",
+      "fact": "Cada volta na pista tem 400 metros."
+    },
+    {
+      "id": "chute-esportes-455",
+      "difficulty": "easy",
+      "text": "Quantos metros tem a prova mais longa de corrida em pista nas Olimpíadas?",
+      "answer": 10000,
+      "unit": "metros",
+      "fact": "A maratona é corrida fora do estádio."
+    },
+    {
+      "id": "chute-esportes-456",
+      "difficulty": "easy",
+      "text": "Quantos atletas correm numa prova de revezamento 4x100, por time?",
+      "answer": 4,
+      "unit": "atletas",
+      "fact": "O bastão precisa ser passado dentro de uma zona marcada."
+    },
+    {
+      "id": "chute-esportes-457",
+      "difficulty": "easy",
+      "text": "Quantos metros cada atleta corre no revezamento 4x400?",
+      "answer": 400,
+      "unit": "metros",
+      "fact": "É uma volta inteira na pista."
+    },
+    {
+      "id": "chute-esportes-458",
+      "difficulty": "easy",
+      "text": "Quantas medalhas de ouro o Brasil ganhou nas Olimpíadas de Paris 2024?",
+      "answer": 3,
+      "unit": "ouros",
+      "fact": "Rebeca Andrade, Beatriz Souza e Ana Patrícia e Duda venceram."
+    },
+    {
+      "id": "chute-esportes-459",
+      "difficulty": "easy",
+      "text": "Quantas medalhas de ouro o Brasil ganhou nas Olimpíadas do Rio 2016?",
+      "answer": 7,
+      "unit": "ouros",
+      "fact": "Foi o melhor resultado do Brasil até então."
+    },
+    {
+      "id": "chute-esportes-460",
+      "difficulty": "easy",
+      "text": "Quantos países participaram das Olimpíadas de Paris 2024, aproximadamente?",
+      "answer": 200,
+      "unit": "países",
+      "fact": "Quase todos os países do mundo mandam atletas."
+    },
+    {
+      "id": "chute-esportes-461",
+      "difficulty": "easy",
+      "text": "Quantos atletas participaram das Olimpíadas de Paris 2024, aproximadamente, em milhares?",
+      "answer": 10.5,
+      "unit": "mil",
+      "fact": "Metade dos atletas era de mulheres."
+    },
+    {
+      "id": "chute-esportes-462",
+      "difficulty": "easy",
+      "text": "Quantas cores tem os anéis olímpicos, sem contar o fundo branco?",
+      "answer": 5,
+      "unit": "cores",
+      "fact": "Com o branco, dá para formar a bandeira de qualquer país."
+    },
+    {
+      "id": "chute-esportes-463",
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem um time de hóquei no gelo em campo, contando o goleiro?",
+      "answer": 6,
+      "unit": "jogadores",
+      "fact": "Os jogadores trocam a toda hora durante o jogo."
+    },
+    {
+      "id": "chute-esportes-464",
+      "difficulty": "easy",
+      "text": "Quantos buracos tem um minigolfe comum?",
+      "answer": 18,
+      "unit": "buracos",
+      "fact": "O minigolfe imita o golfe em miniatura."
+    },
+    {
+      "id": "chute-esportes-465",
+      "difficulty": "easy",
+      "text": "Quantos pinos são derrubados num strike de boliche?",
+      "answer": 10,
+      "unit": "pinos",
+      "fact": "Três strikes seguidos são chamados de turkey."
+    },
+    {
+      "id": "chute-esportes-466",
+      "difficulty": "easy",
+      "text": "Quantos frames tem uma partida de boliche?",
+      "answer": 10,
+      "unit": "frames",
+      "fact": "A pontuação máxima é 300."
+    },
+    {
+      "id": "chute-esportes-467",
+      "difficulty": "easy",
+      "text": "Qual é a pontuação máxima numa partida de boliche?",
+      "answer": 300,
+      "unit": "pontos",
+      "fact": "São doze strikes seguidos."
+    },
+    {
+      "id": "chute-esportes-468",
+      "difficulty": "easy",
+      "text": "Quantas bolas cada jogador lança por frame no boliche, no máximo, antes do décimo?",
+      "answer": 2,
+      "unit": "bolas",
+      "fact": "No décimo frame pode haver uma bola extra."
+    },
+    {
+      "id": "chute-esportes-469",
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam um jogo de futebol de botão, por lado?",
+      "answer": 11,
+      "unit": "botões",
+      "fact": "O futebol de botão é chamado de futebol de mesa."
+    },
+    {
+      "id": "chute-esportes-470",
+      "difficulty": "easy",
+      "text": "Quantos metros tem o lado de uma área de pênalti, de comprimento, em direção ao campo?",
+      "answer": 16.5,
+      "unit": "metros",
+      "fact": "Por isso ela é chamada de grande área."
+    },
+    {
+      "id": "chute-esportes-471",
+      "difficulty": "easy",
+      "text": "Quantos metros tem a pequena área do futebol, em direção ao campo?",
+      "answer": 5.5,
+      "unit": "metros",
+      "fact": "O goleiro repõe a bola de dentro dela."
+    },
+    {
+      "id": "chute-esportes-472",
+      "difficulty": "easy",
+      "text": "Quantos metros a barreira precisa ficar da bola numa falta?",
+      "answer": 9.15,
+      "unit": "metros",
+      "fact": "O spray de espuma marca a distância."
+    },
+    {
+      "id": "chute-esportes-473",
+      "difficulty": "easy",
+      "text": "Quantos segundos um time tem para atacar no basquete?",
+      "answer": 24,
+      "unit": "segundos",
+      "fact": "O cronômetro de posse fica em cima da cesta."
+    },
+    {
+      "id": "chute-esportes-474",
+      "difficulty": "easy",
+      "text": "Quantos segundos um jogador pode ficar parado no garrafão, no basquete?",
+      "answer": 3,
+      "unit": "segundos",
+      "fact": "A regra impede que os altos fiquem embaixo da cesta."
+    },
+    {
+      "id": "chute-esportes-475",
+      "difficulty": "easy",
+      "text": "Quantas faltas um jogador pode cometer num jogo da NBA antes de ser excluído?",
+      "answer": 6,
+      "unit": "faltas",
+      "fact": "Em outros campeonatos o limite é de cinco faltas."
+    },
+    {
+      "id": "chute-esportes-476",
+      "difficulty": "medium",
+      "text": "Quantos gols o Brasil marcou na Copa de 2002?",
+      "answer": 18,
+      "unit": "gols",
+      "fact": "Ronaldo foi o artilheiro, com oito gols."
+    },
+    {
+      "id": "chute-esportes-477",
+      "difficulty": "medium",
+      "text": "Quantos gols Ronaldo marcou na Copa de 2002?",
+      "answer": 8,
+      "unit": "gols",
+      "fact": "Ele fez os dois gols da final contra a Alemanha."
+    },
+    {
+      "id": "chute-esportes-478",
+      "difficulty": "medium",
+      "text": "Quantos gols Romário marcou na Copa de 1994?",
+      "answer": 5,
+      "unit": "gols",
+      "fact": "Ele foi eleito o melhor jogador do torneio."
+    },
+    {
+      "id": "chute-esportes-479",
+      "difficulty": "medium",
+      "text": "Quantos gols Just Fontaine marcou numa única Copa, em 1958?",
+      "answer": 13,
+      "unit": "gols",
+      "fact": "O recorde dura até hoje."
+    },
+    {
+      "id": "chute-esportes-480",
+      "difficulty": "medium",
+      "text": "Quantos gols Mbappé marcou na final da Copa de 2022?",
+      "answer": 3,
+      "unit": "gols",
+      "fact": "Mesmo assim, a França perdeu nos pênaltis."
+    },
+    {
+      "id": "chute-esportes-481",
+      "difficulty": "medium",
+      "text": "Quantos gols Messi marcou na Copa de 2022?",
+      "answer": 7,
+      "unit": "gols",
+      "fact": "Ele foi eleito o melhor jogador do torneio."
+    },
+    {
+      "id": "chute-esportes-482",
+      "difficulty": "medium",
+      "text": "Quantos gols Klose marcou em Copas do Mundo?",
+      "answer": 16,
+      "unit": "gols",
+      "fact": "É o maior artilheiro da história das Copas."
+    },
+    {
+      "id": "chute-esportes-483",
+      "difficulty": "medium",
+      "text": "Quantos gols Marta marcou pela Seleção Brasileira, aproximadamente?",
+      "answer": 115,
+      "unit": "gols",
+      "fact": "Ela é a maior artilheira da história da Seleção."
+    },
+    {
+      "id": "chute-esportes-484",
+      "difficulty": "medium",
+      "text": "Quantas vezes Marta foi eleita a melhor jogadora do mundo?",
+      "answer": 6,
+      "unit": "vezes",
+      "fact": "Ela é chamada de Rainha do futebol."
+    },
+    {
+      "id": "chute-esportes-485",
+      "difficulty": "medium",
+      "text": "Quantos gols Pelé marcou na Copa de 1958?",
+      "answer": 6,
+      "unit": "gols",
+      "fact": "Ele tinha apenas 17 anos."
+    },
+    {
+      "id": "chute-esportes-486",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Pelé quando ganhou a primeira Copa?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "Ele é o jogador mais jovem a ganhar uma Copa."
+    },
+    {
+      "id": "chute-esportes-487",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Ronaldo quando ganhou a Copa de 1994?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "Ele não entrou em campo durante o torneio."
+    },
+    {
+      "id": "chute-esportes-488",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Neymar quando estreou pelo Santos?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "Ele estreou em 2009."
+    },
+    {
+      "id": "chute-esportes-489",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Messi quando estreou pelo Barcelona, no time principal?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "Ele chegou ao clube aos 13 anos."
+    },
+    {
+      "id": "chute-esportes-490",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Vini Jr. quando foi vendido ao Real Madrid?",
+      "answer": 16,
+      "unit": "anos",
+      "fact": "A venda foi fechada antes de ele estrear como profissional."
+    },
+    {
+      "id": "chute-esportes-491",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Endrick quando foi vendido ao Real Madrid?",
+      "answer": 16,
+      "unit": "anos",
+      "fact": "Ele saiu do Palmeiras."
+    },
+    {
+      "id": "chute-esportes-492",
+      "difficulty": "medium",
+      "text": "Quantos milhões de euros o Real Madrid pagou por Vini Jr., aproximadamente?",
+      "answer": 45,
+      "unit": "milhões",
+      "fact": "Foi uma das maiores vendas da história do Flamengo."
+    },
+    {
+      "id": "chute-esportes-493",
+      "difficulty": "medium",
+      "text": "Quantas vezes Vini Jr. ganhou o prêmio The Best da Fifa, até 2024?",
+      "answer": 1,
+      "unit": "vez",
+      "fact": "Ele venceu o prêmio The Best da Fifa em 2024."
+    },
+    {
+      "id": "chute-esportes-494",
+      "difficulty": "medium",
+      "text": "Quantas Bolas de Ouro Ronaldinho Gaúcho ganhou?",
+      "answer": 1,
+      "unit": "vez",
+      "fact": "Ele venceu em 2005."
+    },
+    {
+      "id": "chute-esportes-495",
+      "difficulty": "medium",
+      "text": "Quantas Bolas de Ouro Ronaldo Fenômeno ganhou?",
+      "answer": 2,
+      "unit": "vezes",
+      "fact": "Ele venceu em 1997 e 2002."
+    },
+    {
+      "id": "chute-esportes-496",
+      "difficulty": "medium",
+      "text": "Quantas Champions League Cristiano Ronaldo ganhou?",
+      "answer": 5,
+      "unit": "títulos",
+      "fact": "Quatro delas foram pelo Real Madrid."
+    },
+    {
+      "id": "chute-esportes-497",
+      "difficulty": "medium",
+      "text": "Quantas Champions League Messi ganhou?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "Todas foram pelo Barcelona."
+    },
+    {
+      "id": "chute-esportes-498",
+      "difficulty": "medium",
+      "text": "Quantos títulos brasileiros o Flamengo tem, aproximadamente, até 2024?",
+      "answer": 8,
+      "unit": "títulos",
+      "fact": "O clube discute a contagem do título de 1987."
+    },
+    {
+      "id": "chute-esportes-499",
+      "difficulty": "medium",
+      "text": "Quantos títulos brasileiros o Palmeiras tem, até 2024?",
+      "answer": 12,
+      "unit": "títulos",
+      "fact": "O Palmeiras é o maior campeão nacional."
+    },
+    {
+      "id": "chute-esportes-500",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Flamengo ganhou, até 2024?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "O primeiro título foi em 1981, com Zico."
+    },
+    {
+      "id": "chute-esportes-501",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Palmeiras ganhou, até 2024?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "O clube ganhou duas seguidas, em 2020 e 2021."
+    },
+    {
+      "id": "chute-esportes-502",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o São Paulo ganhou?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "O São Paulo também tem três Mundiais."
+    },
+    {
+      "id": "chute-esportes-503",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Santos ganhou?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Duas delas vieram com Pelé."
+    },
+    {
+      "id": "chute-esportes-504",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Grêmio ganhou?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "A última foi em 2017."
+    },
+    {
+      "id": "chute-esportes-505",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Corinthians ganhou?",
+      "answer": 1,
+      "unit": "título",
+      "fact": "O título veio em 2012, invicto."
+    },
+    {
+      "id": "chute-esportes-506",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Botafogo ganhou, até 2024?",
+      "answer": 1,
+      "unit": "título",
+      "fact": "O título veio em 2024."
+    },
+    {
+      "id": "chute-esportes-507",
+      "difficulty": "medium",
+      "text": "Quantas Libertadores o Atlético Mineiro ganhou?",
+      "answer": 1,
+      "unit": "título",
+      "fact": "O título veio em 2013, com Ronaldinho."
+    },
+    {
+      "id": "chute-esportes-508",
+      "difficulty": "medium",
+      "text": "Quantas Copas do Brasil o Cruzeiro ganhou?",
+      "answer": 6,
+      "unit": "títulos",
+      "fact": "É o maior campeão da competição."
+    },
+    {
+      "id": "chute-esportes-509",
+      "difficulty": "medium",
+      "text": "Quantos times disputam a Libertadores, na fase de grupos?",
+      "answer": 32,
+      "unit": "times",
+      "fact": "São oito grupos de quatro times."
+    },
+    {
+      "id": "chute-esportes-510",
+      "difficulty": "medium",
+      "text": "Quantos times disputam a Champions League, na fase principal, desde 2024?",
+      "answer": 36,
+      "unit": "times",
+      "fact": "O formato mudou para uma liga única."
+    },
+    {
+      "id": "chute-esportes-511",
+      "difficulty": "medium",
+      "text": "Quantos times disputam a Copa do Mundo de Clubes de 2025?",
+      "answer": 32,
+      "unit": "times",
+      "fact": "O torneio foi disputado nos Estados Unidos."
+    },
+    {
+      "id": "chute-esportes-512",
+      "difficulty": "medium",
+      "text": "Quantos times disputam a Premier League?",
+      "answer": 20,
+      "unit": "times",
+      "fact": "Três times caem por temporada."
+    },
+    {
+      "id": "chute-esportes-513",
+      "difficulty": "medium",
+      "text": "Quantos jogos um time faz numa temporada da Premier League?",
+      "answer": 38,
+      "unit": "jogos",
+      "fact": "O formato é igual ao do Brasileirão."
+    },
+    {
+      "id": "chute-esportes-514",
+      "difficulty": "medium",
+      "text": "Quantos jogos um time faz na temporada regular da NBA?",
+      "answer": 82,
+      "unit": "jogos",
+      "fact": "Depois vêm os playoffs."
+    },
+    {
+      "id": "chute-esportes-515",
+      "difficulty": "medium",
+      "text": "Quantos times tem a NBA?",
+      "answer": 30,
+      "unit": "times",
+      "fact": "Só um deles fica no Canadá."
+    },
+    {
+      "id": "chute-esportes-516",
+      "difficulty": "medium",
+      "text": "Quantos times tem a NFL?",
+      "answer": 32,
+      "unit": "times",
+      "fact": "A final é o Super Bowl."
+    },
+    {
+      "id": "chute-esportes-517",
+      "difficulty": "medium",
+      "text": "Quantos jogos um time faz na temporada regular da NFL?",
+      "answer": 17,
+      "unit": "jogos",
+      "fact": "O calendário é curto por causa do esforço físico."
+    },
+    {
+      "id": "chute-esportes-518",
+      "difficulty": "medium",
+      "text": "Quantos jogos um time faz na temporada regular do beisebol americano?",
+      "answer": 162,
+      "unit": "jogos",
+      "fact": "Quase um jogo por dia durante meses."
+    },
+    {
+      "id": "chute-esportes-519",
+      "difficulty": "medium",
+      "text": "Quantas equipes disputam a Fórmula 1, em 2024?",
+      "answer": 10,
+      "unit": "equipes",
+      "fact": "Cada equipe tem dois pilotos."
+    },
+    {
+      "id": "chute-esportes-520",
+      "difficulty": "medium",
+      "text": "Quantos pilotos disputam a Fórmula 1 em cada corrida?",
+      "answer": 20,
+      "unit": "pilotos",
+      "fact": "São dois pilotos por equipe."
+    },
+    {
+      "id": "chute-esportes-521",
+      "difficulty": "medium",
+      "text": "Quantas corridas teve a temporada 2024 da Fórmula 1?",
+      "answer": 24,
+      "unit": "corridas",
+      "fact": "Foi o maior calendário da história."
+    },
+    {
+      "id": "chute-esportes-522",
+      "difficulty": "medium",
+      "text": "Quantos pontos o vencedor de uma corrida de F1 ganha?",
+      "answer": 25,
+      "unit": "pontos",
+      "fact": "O segundo lugar ganha 18 pontos."
+    },
+    {
+      "id": "chute-esportes-523",
+      "difficulty": "medium",
+      "text": "Quantos pilotos marcam pontos numa corrida de Fórmula 1?",
+      "answer": 10,
+      "unit": "pilotos",
+      "fact": "Os dez primeiros pontuam."
+    },
+    {
+      "id": "chute-esportes-524",
+      "difficulty": "medium",
+      "text": "Quantos km/h um carro de Fórmula 1 alcança na reta de Interlagos, aproximadamente?",
+      "answer": 320,
+      "unit": "km/h",
+      "fact": "A reta dos boxes é longa e em subida."
+    },
+    {
+      "id": "chute-esportes-525",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Ayrton Senna quando foi campeão pela primeira vez?",
+      "answer": 28,
+      "unit": "anos",
+      "fact": "O primeiro título dele foi em 1988."
+    },
+    {
+      "id": "chute-esportes-526",
+      "difficulty": "medium",
+      "text": "Quantas pole positions Ayrton Senna fez na carreira?",
+      "answer": 65,
+      "unit": "poles",
+      "fact": "O recorde durou até 2006."
+    },
+    {
+      "id": "chute-esportes-527",
+      "difficulty": "medium",
+      "text": "Quantas vitórias Max Verstappen teve na temporada de 2023?",
+      "answer": 19,
+      "unit": "vitórias",
+      "fact": "Foi o recorde de vitórias numa temporada."
+    },
+    {
+      "id": "chute-esportes-528",
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais de F1 tem Max Verstappen, até 2024?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "Ele ganhou quatro seguidos, de 2021 a 2024."
+    },
+    {
+      "id": "chute-esportes-529",
+      "difficulty": "medium",
+      "text": "Quantas medalhas olímpicas o Brasil ganhou em Tóquio, ao todo?",
+      "answer": 21,
+      "unit": "medalhas",
+      "fact": "Foi o recorde do Brasil."
+    },
+    {
+      "id": "chute-esportes-530",
+      "difficulty": "medium",
+      "text": "Quantas medalhas de ouro Isaquias Queiroz ganhou em Olimpíadas?",
+      "answer": 1,
+      "unit": "ouro",
+      "fact": "Ele tem cinco medalhas olímpicas."
+    },
+    {
+      "id": "chute-esportes-531",
+      "difficulty": "medium",
+      "text": "Quantas medalhas olímpicas Isaquias Queiroz tem?",
+      "answer": 5,
+      "unit": "medalhas",
+      "fact": "Ele é da canoagem de velocidade."
+    },
+    {
+      "id": "chute-esportes-532",
+      "difficulty": "medium",
+      "text": "Quantas medalhas olímpicas o Brasil tem no judô, até 2024, aproximadamente?",
+      "answer": 28,
+      "unit": "medalhas",
+      "fact": "O judô é o esporte que mais deu medalhas ao Brasil."
+    },
+    {
+      "id": "chute-esportes-533",
+      "difficulty": "medium",
+      "text": "Quantas medalhas olímpicas Torben Grael ganhou na vela?",
+      "answer": 5,
+      "unit": "medalhas",
+      "fact": "É uma das famílias mais vitoriosas do esporte brasileiro."
+    },
+    {
+      "id": "chute-esportes-534",
+      "difficulty": "medium",
+      "text": "Quantos ouros olímpicos Robert Scheidt ganhou na vela?",
+      "answer": 2,
+      "unit": "ouros",
+      "fact": "Ele ganhou cinco medalhas olímpicas."
+    },
+    {
+      "id": "chute-esportes-535",
+      "difficulty": "medium",
+      "text": "Quantos ouros olímpicos o vôlei de praia brasileiro ganhou, até 2024?",
+      "answer": 4,
+      "unit": "ouros",
+      "fact": "A última foi com Ana Patrícia e Duda, em Paris."
+    },
+    {
+      "id": "chute-esportes-536",
+      "difficulty": "medium",
+      "text": "Quantas medalhas de ouro Simone Biles tem em Olimpíadas, até 2024?",
+      "answer": 7,
+      "unit": "ouros",
+      "fact": "Ela é a ginasta mais premiada da história."
+    },
+    {
+      "id": "chute-esportes-537",
+      "difficulty": "medium",
+      "text": "Quantas medalhas olímpicas Nadia Comăneci ganhou?",
+      "answer": 9,
+      "unit": "medalhas",
+      "fact": "Ela foi a primeira a tirar nota 10 nas Olimpíadas."
+    },
+    {
+      "id": "chute-esportes-538",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Nadia Comăneci quando tirou a primeira nota 10?",
+      "answer": 14,
+      "unit": "anos",
+      "fact": "A nota apareceu como 1,00 no placar, que não tinha o 10."
+    },
+    {
+      "id": "chute-esportes-539",
+      "difficulty": "medium",
+      "text": "Qual é o recorde mundial do salto em altura feminino, em metros, aproximadamente?",
+      "answer": 2.1,
+      "unit": "metros",
+      "fact": "O recorde foi quebrado em 2024."
+    },
+    {
+      "id": "chute-esportes-540",
+      "difficulty": "medium",
+      "text": "Qual é o recorde mundial do salto triplo masculino, em metros?",
+      "answer": 18.29,
+      "unit": "metros",
+      "fact": "O recorde é de 1995."
+    },
+    {
+      "id": "chute-esportes-541",
+      "difficulty": "medium",
+      "text": "Qual é o recorde mundial dos 100 metros livre na natação, em segundos, aproximadamente?",
+      "answer": 46.4,
+      "unit": "segundos",
+      "fact": "O recorde é do chinês Pan Zhanle."
+    },
+    {
+      "id": "chute-esportes-542",
+      "difficulty": "medium",
+      "text": "Qual é a velocidade média de Usain Bolt no recorde dos 100 metros, em km/h?",
+      "answer": 37.6,
+      "unit": "km/h",
+      "fact": "No pico ele passou de 44 km/h."
+    },
+    {
+      "id": "chute-esportes-543",
+      "difficulty": "medium",
+      "text": "Quantos passos Usain Bolt deu na prova dos 100 metros recorde, aproximadamente?",
+      "answer": 41,
+      "unit": "passos",
+      "fact": "A passada dele tinha quase 2,5 metros."
+    },
+    {
+      "id": "chute-esportes-544",
+      "difficulty": "medium",
+      "text": "Quantos metros tem a passada de Usain Bolt, aproximadamente?",
+      "answer": 2.4,
+      "unit": "metros",
+      "fact": "Ele tem quase dois metros de altura."
+    },
+    {
+      "id": "chute-esportes-545",
+      "difficulty": "medium",
+      "text": "Qual é a altura de Usain Bolt, em metros?",
+      "answer": 1.95,
+      "unit": "metros",
+      "fact": "Corredores altos costumam largar mais devagar."
+    },
+    {
+      "id": "chute-esportes-546",
+      "difficulty": "medium",
+      "text": "Qual é a altura de LeBron James, em metros, aproximadamente?",
+      "answer": 2.06,
+      "unit": "metros",
+      "fact": "Ele também é forte como um jogador de futebol americano."
+    },
+    {
+      "id": "chute-esportes-547",
+      "difficulty": "medium",
+      "text": "Qual é a altura de Shaquille O'Neal, em metros, aproximadamente?",
+      "answer": 2.16,
+      "unit": "metros",
+      "fact": "Ele calçava sapatos tamanho 58."
+    },
+    {
+      "id": "chute-esportes-548",
+      "difficulty": "medium",
+      "text": "Qual é a altura de Messi, em metros, aproximadamente?",
+      "answer": 1.7,
+      "unit": "metros",
+      "fact": "Ele tratou um problema de crescimento na infância."
+    },
+    {
+      "id": "chute-esportes-549",
+      "difficulty": "medium",
+      "text": "Qual é a altura de Cristiano Ronaldo, em metros, aproximadamente?",
+      "answer": 1.87,
+      "unit": "metros",
+      "fact": "Ele é famoso pela impulsão no cabeceio."
+    },
+    {
+      "id": "chute-esportes-550",
+      "difficulty": "medium",
+      "text": "Qual é a altura de Rebeca Andrade, em metros, aproximadamente?",
+      "answer": 1.55,
+      "unit": "metros",
+      "fact": "Ginastas costumam ser baixinhas."
+    },
+    {
+      "id": "chute-esportes-551",
+      "difficulty": "medium",
+      "text": "Qual é a altura de Oscar Schmidt, em metros, aproximadamente?",
+      "answer": 2.05,
+      "unit": "metros",
+      "fact": "Ele era chamado de Mão Santa."
+    },
+    {
+      "id": "chute-esportes-552",
+      "difficulty": "medium",
+      "text": "Quantos gramas pesa uma bola de golfe, aproximadamente?",
+      "answer": 46,
+      "unit": "gramas",
+      "fact": "O peso máximo é definido pelas regras do golfe."
+    },
+    {
+      "id": "chute-esportes-553",
+      "difficulty": "medium",
+      "text": "Quantas covinhas tem uma bola de golfe, aproximadamente?",
+      "answer": 350,
+      "unit": "covinhas",
+      "fact": "As covinhas ajudam a bola a voar mais longe."
+    },
+    {
+      "id": "chute-esportes-554",
+      "difficulty": "medium",
+      "text": "Quantos gramas pesa uma peteca de badminton, aproximadamente?",
+      "answer": 5,
+      "unit": "gramas",
+      "fact": "A peteca tem 16 penas."
+    },
+    {
+      "id": "chute-esportes-555",
+      "difficulty": "medium",
+      "text": "Quantos gramas pesa uma bola de pingue-pongue?",
+      "answer": 2.7,
+      "unit": "gramas",
+      "fact": "A bola tem 40 milímetros de diâmetro."
+    },
+    {
+      "id": "chute-esportes-556",
+      "difficulty": "medium",
+      "text": "Quantos centímetros tem uma mesa de pingue-pongue de altura?",
+      "answer": 76,
+      "unit": "cm",
+      "fact": "A rede tem 15,25 cm de altura."
+    },
+    {
+      "id": "chute-esportes-557",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma mesa de pingue-pongue de comprimento?",
+      "answer": 2.74,
+      "unit": "metros",
+      "fact": "A largura é de 1,525 metro."
+    },
+    {
+      "id": "chute-esportes-558",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma quadra de futsal, de largura, aproximadamente?",
+      "answer": 20,
+      "unit": "metros",
+      "fact": "O comprimento fica entre 25 e 42 metros."
+    },
+    {
+      "id": "chute-esportes-559",
+      "difficulty": "medium",
+      "text": "Quantos metros tem a rede de vôlei feminino de altura?",
+      "answer": 2.24,
+      "unit": "metros",
+      "fact": "A masculina tem 2,43 metros."
+    },
+    {
+      "id": "chute-esportes-560",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma quadra de vôlei de praia de comprimento?",
+      "answer": 16,
+      "unit": "metros",
+      "fact": "Ela é um pouco menor que a de vôlei de quadra."
+    },
+    {
+      "id": "chute-esportes-561",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma piscina de saltos ornamentais de profundidade, no mínimo?",
+      "answer": 5,
+      "unit": "metros",
+      "fact": "A profundidade protege os atletas que saltam de dez metros."
+    },
+    {
+      "id": "chute-esportes-562",
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem o trampolim mais alto do salto ornamental olímpico?",
+      "answer": 3,
+      "unit": "metros",
+      "fact": "A plataforma fica a dez metros."
+    },
+    {
+      "id": "chute-esportes-563",
+      "difficulty": "medium",
+      "text": "Quantos metros de altura tem a plataforma do salto ornamental de alto risco, o \"high diving\"?",
+      "answer": 27,
+      "unit": "metros",
+      "fact": "Os atletas entram na água a quase 90 km/h."
+    },
+    {
+      "id": "chute-esportes-564",
+      "difficulty": "medium",
+      "text": "Quantos km/h um saltador ornamental atinge na plataforma de 10 metros, aproximadamente?",
+      "answer": 50,
+      "unit": "km/h",
+      "fact": "O salto dura menos de dois segundos."
+    },
+    {
+      "id": "chute-esportes-565",
+      "difficulty": "medium",
+      "text": "Quantos quilos tem o peso do arremesso masculino olímpico?",
+      "answer": 7.26,
+      "unit": "kg",
+      "fact": "O peso feminino tem 4 kg."
+    },
+    {
+      "id": "chute-esportes-566",
+      "difficulty": "medium",
+      "text": "Quantos quilos tem o martelo do lançamento olímpico masculino?",
+      "answer": 7.26,
+      "unit": "kg",
+      "fact": "O martelo é uma bola presa a um cabo."
+    },
+    {
+      "id": "chute-esportes-567",
+      "difficulty": "medium",
+      "text": "Quantos quilos tem o disco do lançamento olímpico masculino?",
+      "answer": 2,
+      "unit": "kg",
+      "fact": "O disco feminino tem 1 kg."
+    },
+    {
+      "id": "chute-esportes-568",
+      "difficulty": "medium",
+      "text": "Quantos quilômetros tem a prova de 50 km de marcha atlética?",
+      "answer": 50,
+      "unit": "km",
+      "fact": "A prova foi retirada das Olimpíadas depois de Tóquio."
+    },
+    {
+      "id": "chute-esportes-569",
+      "difficulty": "medium",
+      "text": "Quantos km tem a prova de ciclismo de estrada masculina nas Olimpíadas de Paris, aproximadamente?",
+      "answer": 273,
+      "unit": "km",
+      "fact": "Os ciclistas passaram por Montmartre."
+    },
+    {
+      "id": "chute-esportes-570",
+      "difficulty": "medium",
+      "text": "Quantos km tem a natação do triatlo olímpico?",
+      "answer": 1.5,
+      "unit": "km",
+      "fact": "O triatlo olímpico soma 51,5 km."
+    },
+    {
+      "id": "chute-esportes-571",
+      "difficulty": "medium",
+      "text": "Quantos km tem o ciclismo do triatlo olímpico?",
+      "answer": 40,
+      "unit": "km",
+      "fact": "Depois vem a corrida de 10 km."
+    },
+    {
+      "id": "chute-esportes-572",
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais o Brasil tem no futebol de areia, aproximadamente?",
+      "answer": 15,
+      "unit": "títulos",
+      "fact": "O beach soccer nasceu nas praias do Rio."
+    },
+    {
+      "id": "chute-esportes-573",
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais de surfe o Brasil tem no masculino, até 2024?",
+      "answer": 7,
+      "unit": "títulos",
+      "fact": "Adriano de Souza, Medina, Ítalo e Filipe Toledo levaram títulos."
+    },
+    {
+      "id": "chute-esportes-574",
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais de surfe Filipe Toledo ganhou?",
+      "answer": 2,
+      "unit": "títulos",
+      "fact": "Ele venceu em 2022 e 2023."
+    },
+    {
+      "id": "chute-esportes-575",
+      "difficulty": "medium",
+      "text": "Quantos metros tinha a onda de Rodrigo Koxa, recorde em Nazaré, aproximadamente?",
+      "answer": 24,
+      "unit": "metros",
+      "fact": "O recorde foi registrado em 2017."
+    },
+    {
+      "id": "chute-esportes-576",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Rayssa Leal quando ganhou a prata em Tóquio?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "Ela ficou conhecida como Fadinha."
+    },
+    {
+      "id": "chute-esportes-577",
+      "difficulty": "medium",
+      "text": "Quantas lutas Anderson Silva venceu seguidas no UFC, aproximadamente?",
+      "answer": 16,
+      "unit": "lutas",
+      "fact": "Foi o recorde de vitórias seguidas por anos."
+    },
+    {
+      "id": "chute-esportes-578",
+      "difficulty": "medium",
+      "text": "Quantas vezes Anderson Silva defendeu o cinturão do UFC?",
+      "answer": 10,
+      "unit": "vezes",
+      "fact": "Ele era chamado de Spider."
+    },
+    {
+      "id": "chute-esportes-579",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Popó quando foi campeão mundial pela primeira vez?",
+      "answer": 23,
+      "unit": "anos",
+      "fact": "Ele é baiano e lutou como peso-pena."
+    },
+    {
+      "id": "chute-esportes-580",
+      "difficulty": "medium",
+      "text": "Quantas lutas Popó fez como profissional sem perder, no começo da carreira, aproximadamente?",
+      "answer": 38,
+      "unit": "lutas",
+      "fact": "Ele foi um dos maiores boxeadores do Brasil."
+    },
+    {
+      "id": "chute-esportes-581",
+      "difficulty": "medium",
+      "text": "Quantas lutas Mike Tyson venceu por nocaute, aproximadamente?",
+      "answer": 44,
+      "unit": "lutas",
+      "fact": "Ele foi o campeão dos pesos-pesados mais jovem da história."
+    },
+    {
+      "id": "chute-esportes-582",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Mike Tyson quando virou campeão mundial?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "O recorde de campeão mais jovem dos pesos-pesados é dele."
+    },
+    {
+      "id": "chute-esportes-583",
+      "difficulty": "easy",
+      "text": "Quantos cartões amarelos um jogador precisa levar num jogo para ser expulso?",
+      "answer": 2,
+      "unit": "cartões",
+      "fact": "O segundo amarelo vira vermelho."
+    },
+    {
+      "id": "chute-esportes-584",
+      "difficulty": "easy",
+      "text": "Quantos cartões amarelos seguidos tiram um jogador do próximo jogo do Brasileirão?",
+      "answer": 3,
+      "unit": "cartões",
+      "fact": "Depois da suspensão, a contagem zera."
+    },
+    {
+      "id": "chute-esportes-585",
+      "difficulty": "easy",
+      "text": "Quantos jogadores de linha tem um time de futebol em campo?",
+      "answer": 10,
+      "unit": "jogadores",
+      "fact": "Com o goleiro, são onze."
+    },
+    {
+      "id": "chute-esportes-586",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale um empate no futebol?",
+      "answer": 1,
+      "unit": "ponto",
+      "fact": "A derrota não vale nenhum ponto."
+    },
+    {
+      "id": "chute-esportes-587",
+      "difficulty": "easy",
+      "text": "Quantos países sediam a Copa do Mundo de 2026?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "Estados Unidos, Canadá e México."
+    },
+    {
+      "id": "chute-esportes-588",
+      "difficulty": "easy",
+      "text": "Quantos toques um time pode dar na bola antes de passar a rede no vôlei?",
+      "answer": 3,
+      "unit": "toques",
+      "fact": "O bloqueio não conta como toque."
+    },
+    {
+      "id": "chute-esportes-589",
+      "difficulty": "easy",
+      "text": "Quantas vezes seguidas um jogador pode tocar na bola no vôlei, fora o bloqueio?",
+      "answer": 1,
+      "unit": "vez",
+      "fact": "Dois toques seguidos é falta."
+    },
+    {
+      "id": "chute-esportes-590",
+      "difficulty": "easy",
+      "text": "Quantos metros tem uma piscina olímpica de largura?",
+      "answer": 25,
+      "unit": "metros",
+      "fact": "O comprimento é de 50 metros."
+    },
+    {
+      "id": "chute-esportes-591",
+      "difficulty": "easy",
+      "text": "Quantos km tem uma maratona, aproximadamente?",
+      "answer": 42,
+      "unit": "km",
+      "fact": "A distância exata é de 42,195 km."
+    },
+    {
+      "id": "chute-esportes-592",
+      "difficulty": "easy",
+      "text": "Quantas barreiras tem a prova de 110 metros com barreiras?",
+      "answer": 10,
+      "unit": "barreiras",
+      "fact": "Derrubar uma barreira não desclassifica o atleta."
+    },
+    {
+      "id": "chute-esportes-593",
+      "difficulty": "easy",
+      "text": "Quantas tentativas um atleta tem no salto em distância numa final, aproximadamente?",
+      "answer": 6,
+      "unit": "saltos",
+      "fact": "Vale o melhor salto."
+    },
+    {
+      "id": "chute-esportes-594",
+      "difficulty": "easy",
+      "text": "Quantos rounds tem uma luta de boxe por título mundial?",
+      "answer": 12,
+      "unit": "rounds",
+      "fact": "Antigamente as lutas tinham 15 rounds."
+    },
+    {
+      "id": "chute-esportes-595",
+      "difficulty": "easy",
+      "text": "Até quanto o juiz conta para declarar nocaute no boxe?",
+      "answer": 10,
+      "unit": "segundos",
+      "fact": "Se o lutador não levantar, perde por nocaute."
+    },
+    {
+      "id": "chute-esportes-596",
+      "difficulty": "easy",
+      "text": "Quantas faixas coloridas existem no judô, contando a preta, aproximadamente?",
+      "answer": 8,
+      "unit": "faixas",
+      "fact": "A faixa branca é a primeira."
+    },
+    {
+      "id": "chute-esportes-597",
+      "difficulty": "easy",
+      "text": "Quantas bolas tem a mesa de sinuca no jogo de bola 8, contando a branca?",
+      "answer": 16,
+      "unit": "bolas",
+      "fact": "A bola 8 é a última a ser encaçapada."
+    },
+    {
+      "id": "chute-esportes-598",
+      "difficulty": "easy",
+      "text": "Quantas caçapas tem uma mesa de sinuca?",
+      "answer": 6,
+      "unit": "caçapas",
+      "fact": "São quatro nos cantos e duas no meio."
+    },
+    {
+      "id": "chute-esportes-599",
+      "difficulty": "easy",
+      "text": "Quantas voltas tem uma corrida de Fórmula 1 em Interlagos, aproximadamente?",
+      "answer": 71,
+      "unit": "voltas",
+      "fact": "A corrida tem cerca de 305 km."
+    },
+    {
+      "id": "chute-esportes-600",
+      "difficulty": "easy",
+      "text": "Quantos pneus um carro de Fórmula 1 troca num pit stop?",
+      "answer": 4,
+      "unit": "pneus",
+      "fact": "A troca leva poucos segundos."
     }
   ]
 }

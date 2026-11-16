@@ -3290,6 +3290,838 @@
       "answer": 5,
       "unit": "segundos",
       "fact": "Os vídeos podem durar mais tempo."
+    },
+    {
+      "id": "chute-tecnologia-432",
+      "difficulty": "easy",
+      "text": "Quantas teclas tem um teclado numérico de celular antigo, contando * e #?",
+      "answer": 12,
+      "unit": "teclas",
+      "fact": "As letras ficavam espalhadas entre os números."
+    },
+    {
+      "id": "chute-tecnologia-433",
+      "difficulty": "easy",
+      "text": "Quantas letras ficavam na tecla 7 dos celulares antigos?",
+      "answer": 4,
+      "unit": "letras",
+      "fact": "As letras eram P, Q, R e S."
+    },
+    {
+      "id": "chute-tecnologia-434",
+      "difficulty": "easy",
+      "text": "Quantos caracteres cabiam num SMS comum?",
+      "answer": 160,
+      "unit": "caracteres",
+      "fact": "Mensagens maiores eram divididas em várias."
+    },
+    {
+      "id": "chute-tecnologia-435",
+      "difficulty": "easy",
+      "text": "Quantos pinos tem um carregador de tomada brasileiro padrão?",
+      "answer": 2,
+      "unit": "pinos",
+      "fact": "Aparelhos mais potentes têm três pinos."
+    },
+    {
+      "id": "chute-tecnologia-436",
+      "difficulty": "easy",
+      "text": "Quantas portas USB tem um notebook comum, aproximadamente?",
+      "answer": 3,
+      "unit": "portas",
+      "fact": "Notebooks finos têm cada vez menos portas."
+    },
+    {
+      "id": "chute-tecnologia-437",
+      "difficulty": "easy",
+      "text": "Quantos watts tem um carregador de celular comum, aproximadamente?",
+      "answer": 20,
+      "unit": "watts",
+      "fact": "Carregadores rápidos passam de 60 watts."
+    },
+    {
+      "id": "chute-tecnologia-438",
+      "difficulty": "easy",
+      "text": "Quantos anos dura a bateria de um celular antes de perder bastante capacidade, aproximadamente?",
+      "answer": 3,
+      "unit": "anos",
+      "fact": "A bateria perde capacidade a cada recarga completa."
+    },
+    {
+      "id": "chute-tecnologia-439",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para carregar um celular com carregador rápido até 50%, aproximadamente?",
+      "answer": 30,
+      "unit": "minutos",
+      "fact": "O carregamento fica mais lento perto dos 100%."
+    },
+    {
+      "id": "chute-tecnologia-440",
+      "difficulty": "easy",
+      "text": "Quantas câmeras tem a traseira de um celular topo de linha comum, aproximadamente?",
+      "answer": 3,
+      "unit": "câmeras",
+      "fact": "Cada câmera tem uma lente diferente."
+    },
+    {
+      "id": "chute-tecnologia-441",
+      "difficulty": "easy",
+      "text": "Quantos gigabytes de memória interna tem um celular intermediário comum, aproximadamente?",
+      "answer": 128,
+      "unit": "GB",
+      "fact": "Fotos e vídeos são o que mais ocupa espaço."
+    },
+    {
+      "id": "chute-tecnologia-442",
+      "difficulty": "easy",
+      "text": "Quantos megabytes tem 1 gigabyte, no sistema usado pelos computadores?",
+      "answer": 1024,
+      "unit": "MB",
+      "fact": "Os fabricantes de discos usam 1.000."
+    },
+    {
+      "id": "chute-tecnologia-443",
+      "difficulty": "easy",
+      "text": "Quantos bits tem 1 byte?",
+      "answer": 8,
+      "unit": "bits",
+      "fact": "Um byte guarda um caractere simples."
+    },
+    {
+      "id": "chute-tecnologia-444",
+      "difficulty": "easy",
+      "text": "Quantos gigabytes tem 1 terabyte, no sistema usado pelos computadores?",
+      "answer": 1024,
+      "unit": "GB",
+      "fact": "Um terabyte guarda centenas de milhares de fotos."
+    },
+    {
+      "id": "chute-tecnologia-445",
+      "difficulty": "easy",
+      "text": "Quantos segundos dura um Reels ou TikTok curto, aproximadamente?",
+      "answer": 30,
+      "unit": "segundos",
+      "fact": "Vídeos curtos dominam as redes sociais."
+    },
+    {
+      "id": "chute-tecnologia-446",
+      "difficulty": "easy",
+      "text": "Quantos minutos podia ter um vídeo no TikTok em 2024, no máximo, gravando no app?",
+      "answer": 10,
+      "unit": "minutos",
+      "fact": "No começo o limite era de 15 segundos."
+    },
+    {
+      "id": "chute-tecnologia-447",
+      "difficulty": "easy",
+      "text": "Quantos caracteres cabiam num tuíte, no começo do Twitter?",
+      "answer": 140,
+      "unit": "caracteres",
+      "fact": "O limite foi dobrado em 2017."
+    },
+    {
+      "id": "chute-tecnologia-448",
+      "difficulty": "easy",
+      "text": "Quantos caracteres cabem num post comum do X, o antigo Twitter, para quem não paga?",
+      "answer": 280,
+      "unit": "caracteres",
+      "fact": "Assinantes podem escrever textos bem maiores."
+    },
+    {
+      "id": "chute-tecnologia-449",
+      "difficulty": "easy",
+      "text": "Quantas pessoas cabem num grupo de WhatsApp, no máximo, em 2024?",
+      "answer": 1024,
+      "unit": "pessoas",
+      "fact": "As comunidades juntam vários grupos."
+    },
+    {
+      "id": "chute-tecnologia-450",
+      "difficulty": "easy",
+      "text": "Quantas fotos cabem num carrossel do Instagram, no máximo, em 2024?",
+      "answer": 20,
+      "unit": "fotos",
+      "fact": "O limite antes era de dez fotos."
+    },
+    {
+      "id": "chute-tecnologia-451",
+      "difficulty": "easy",
+      "text": "Quantos segundos dura um story do Instagram, por trecho, em geral?",
+      "answer": 15,
+      "unit": "segundos",
+      "fact": "Vídeos mais longos são cortados em pedaços."
+    },
+    {
+      "id": "chute-tecnologia-452",
+      "difficulty": "easy",
+      "text": "Quantas horas um story do Instagram fica no ar?",
+      "answer": 24,
+      "unit": "horas",
+      "fact": "Os destaques guardam os stories no perfil."
+    },
+    {
+      "id": "chute-tecnologia-453",
+      "difficulty": "easy",
+      "text": "Quantas pessoas uma conta pessoal do Facebook pode ter como amigos, no máximo?",
+      "answer": 5000,
+      "unit": "amigos",
+      "fact": "Páginas não têm esse limite de seguidores."
+    },
+    {
+      "id": "chute-tecnologia-454",
+      "difficulty": "easy",
+      "text": "Quantos minutos dura uma chamada grátis do Zoom em grupo, no plano básico?",
+      "answer": 40,
+      "unit": "minutos",
+      "fact": "O limite fez muita gente reiniciar reuniões."
+    },
+    {
+      "id": "chute-tecnologia-455",
+      "difficulty": "easy",
+      "text": "Quantos gigabytes de armazenamento o Google oferece grátis por conta?",
+      "answer": 15,
+      "unit": "GB",
+      "fact": "O espaço é dividido entre Gmail, Drive e Fotos."
+    },
+    {
+      "id": "chute-tecnologia-456",
+      "difficulty": "easy",
+      "text": "Quantos gigabytes de armazenamento o iCloud oferece grátis?",
+      "answer": 5,
+      "unit": "GB",
+      "fact": "Muita gente precisa pagar por mais espaço."
+    },
+    {
+      "id": "chute-tecnologia-457",
+      "difficulty": "easy",
+      "text": "Quantos megapixels tem a câmera principal de um celular intermediário comum, aproximadamente?",
+      "answer": 50,
+      "unit": "megapixels",
+      "fact": "Mais megapixels nem sempre significam fotos melhores."
+    },
+    {
+      "id": "chute-tecnologia-458",
+      "difficulty": "easy",
+      "text": "Quantos quadros por segundo tem um vídeo comum de celular, em geral?",
+      "answer": 30,
+      "unit": "quadros",
+      "fact": "Vídeos em câmera lenta usam muito mais."
+    },
+    {
+      "id": "chute-tecnologia-459",
+      "difficulty": "easy",
+      "text": "Quantos pixels de altura tem uma tela Full HD?",
+      "answer": 1080,
+      "unit": "pixels",
+      "fact": "Por isso ela também é chamada de 1080p."
+    },
+    {
+      "id": "chute-tecnologia-460",
+      "difficulty": "easy",
+      "text": "Quantas teclas tem a linha de cima de letras do teclado, QWERTYUIOP?",
+      "answer": 10,
+      "unit": "teclas",
+      "fact": "O nome QWERTY vem das primeiras letras dessa linha."
+    },
+    {
+      "id": "chute-tecnologia-461",
+      "difficulty": "easy",
+      "text": "Quantos botões tem um mouse comum, sem contar a rodinha?",
+      "answer": 2,
+      "unit": "botões",
+      "fact": "O mouse da Apple teve só um botão por muito tempo."
+    },
+    {
+      "id": "chute-tecnologia-462",
+      "difficulty": "easy",
+      "text": "Quantas teclas tem um piano digital comum completo?",
+      "answer": 88,
+      "unit": "teclas",
+      "fact": "O piano tem 52 teclas brancas e 36 pretas."
+    },
+    {
+      "id": "chute-tecnologia-463",
+      "difficulty": "easy",
+      "text": "Quantos amigos uma conta do Orkut podia ter, no máximo?",
+      "answer": 1000,
+      "unit": "amigos",
+      "fact": "Comunidades eram a parte mais famosa do Orkut."
+    },
+    {
+      "id": "chute-tecnologia-464",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Android, no primeiro celular?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "O primeiro celular Android foi o HTC Dream."
+    },
+    {
+      "id": "chute-tecnologia-465",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Google, como buscador?",
+      "answer": 1998,
+      "scale": 50,
+      "fact": "O nome vem de \"googol\", um número enorme."
+    },
+    {
+      "id": "chute-tecnologia-466",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Facebook?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "A rede começou só para alunos de Harvard."
+    },
+    {
+      "id": "chute-tecnologia-467",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Twitter?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "O pássaro azul virou X em 2023."
+    },
+    {
+      "id": "chute-tecnologia-468",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o WhatsApp?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "O Facebook comprou o WhatsApp em 2014."
+    },
+    {
+      "id": "chute-tecnologia-469",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o MSN Messenger?",
+      "answer": 1999,
+      "scale": 50,
+      "fact": "O \"chamar atenção\" fazia a janela tremer."
+    },
+    {
+      "id": "chute-tecnologia-470",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o TikTok, fora da China?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O app se juntou ao Musical.ly em 2018."
+    },
+    {
+      "id": "chute-tecnologia-471",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Uber?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "O Uber chegou ao Brasil em 2014."
+    },
+    {
+      "id": "chute-tecnologia-472",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o iFood?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "O app começou como um catálogo impresso de cardápios."
+    },
+    {
+      "id": "chute-tecnologia-473",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Waze?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "O app é israelense e foi comprado pelo Google."
+    },
+    {
+      "id": "chute-tecnologia-474",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançada a Wikipédia?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "Qualquer pessoa pode editar a enciclopédia."
+    },
+    {
+      "id": "chute-tecnologia-475",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Pix?",
+      "answer": 2020,
+      "scale": 50,
+      "fact": "O Pix foi criado pelo Banco Central."
+    },
+    {
+      "id": "chute-tecnologia-476",
+      "difficulty": "medium",
+      "text": "Em que ano o 4G chegou ao Brasil?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "A Copa das Confederações ajudou a acelerar a chegada."
+    },
+    {
+      "id": "chute-tecnologia-477",
+      "difficulty": "medium",
+      "text": "Em que ano o 5G chegou ao Brasil?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "Brasília foi a primeira capital a receber o 5G puro."
+    },
+    {
+      "id": "chute-tecnologia-478",
+      "difficulty": "medium",
+      "text": "Em que ano a TV digital começou no Brasil?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "O sinal analógico foi desligado aos poucos."
+    },
+    {
+      "id": "chute-tecnologia-479",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o pen drive, aproximadamente?",
+      "answer": 2000,
+      "scale": 50,
+      "fact": "Os primeiros guardavam só 8 megabytes."
+    },
+    {
+      "id": "chute-tecnologia-480",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Walkman?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "O aparelho da Sony tocava fitas cassete."
+    },
+    {
+      "id": "chute-tecnologia-481",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o primeiro computador pessoal da IBM?",
+      "answer": 1981,
+      "scale": 50,
+      "fact": "O IBM PC virou padrão de mercado."
+    },
+    {
+      "id": "chute-tecnologia-482",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Macintosh?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "O lançamento teve um famoso comercial no Super Bowl."
+    },
+    {
+      "id": "chute-tecnologia-483",
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a World Wide Web?",
+      "answer": 1989,
+      "scale": 50,
+      "fact": "Tim Berners-Lee criou a web no CERN."
+    },
+    {
+      "id": "chute-tecnologia-484",
+      "difficulty": "medium",
+      "text": "Em que ano foi feita a primeira ligação de celular?",
+      "answer": 1973,
+      "scale": 50,
+      "fact": "A ligação foi feita por um engenheiro da Motorola."
+    },
+    {
+      "id": "chute-tecnologia-485",
+      "difficulty": "medium",
+      "text": "Quantas músicas cabiam no primeiro iPod, segundo a Apple?",
+      "answer": 1000,
+      "unit": "músicas",
+      "fact": "O iPod tinha 5 GB."
+    },
+    {
+      "id": "chute-tecnologia-486",
+      "difficulty": "medium",
+      "text": "Quantos megabytes cabiam num CD-ROM comum?",
+      "answer": 700,
+      "unit": "MB",
+      "fact": "Um CD de música guarda cerca de 80 minutos."
+    },
+    {
+      "id": "chute-tecnologia-487",
+      "difficulty": "medium",
+      "text": "Quantos gigabytes cabem num DVD comum, de uma camada?",
+      "answer": 4.7,
+      "unit": "GB",
+      "fact": "O DVD de duas camadas guarda quase o dobro."
+    },
+    {
+      "id": "chute-tecnologia-488",
+      "difficulty": "medium",
+      "text": "Quantos gigabytes cabem num Blu-ray de uma camada?",
+      "answer": 25,
+      "unit": "GB",
+      "fact": "O laser azul permite gravar mais dados."
+    },
+    {
+      "id": "chute-tecnologia-489",
+      "difficulty": "medium",
+      "text": "Quantos kbps tinha uma internet discada comum?",
+      "answer": 56,
+      "unit": "kbps",
+      "fact": "O barulho da conexão ficou famoso."
+    },
+    {
+      "id": "chute-tecnologia-490",
+      "difficulty": "medium",
+      "text": "Quantas horas levaria para baixar um filme de 1 GB numa internet discada, aproximadamente?",
+      "answer": 40,
+      "unit": "horas",
+      "fact": "Hoje o mesmo filme baixa em segundos."
+    },
+    {
+      "id": "chute-tecnologia-491",
+      "difficulty": "medium",
+      "text": "Quantos megabits por segundo tem uma internet de fibra comum no Brasil, aproximadamente?",
+      "answer": 500,
+      "unit": "Mbps",
+      "fact": "A fibra óptica chegou a muitas cidades pequenas."
+    },
+    {
+      "id": "chute-tecnologia-492",
+      "difficulty": "medium",
+      "text": "Qual é a velocidade média da internet móvel no Brasil, em Mbps, aproximadamente, em 2024?",
+      "answer": 60,
+      "unit": "Mbps",
+      "fact": "O 5G aumentou a velocidade nas capitais."
+    },
+    {
+      "id": "chute-tecnologia-493",
+      "difficulty": "medium",
+      "text": "Quantas pessoas usam internet no Brasil, em porcentagem, aproximadamente, em 2024?",
+      "answer": 88,
+      "unit": "%",
+      "fact": "O celular é o principal meio de acesso."
+    },
+    {
+      "id": "chute-tecnologia-494",
+      "difficulty": "medium",
+      "text": "Quantas horas por dia o brasileiro passa na internet, em média?",
+      "answer": 9,
+      "unit": "horas",
+      "fact": "O Brasil está entre os países que mais ficam online."
+    },
+    {
+      "id": "chute-tecnologia-495",
+      "difficulty": "medium",
+      "text": "Quantos usuários o WhatsApp tem no Brasil, em milhões, aproximadamente?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "O aplicativo é usado por quase todos os brasileiros com celular."
+    },
+    {
+      "id": "chute-tecnologia-496",
+      "difficulty": "medium",
+      "text": "Quantos usuários o Instagram tem no mundo, em bilhões, aproximadamente, em 2024?",
+      "answer": 2,
+      "unit": "bilhões",
+      "fact": "O Brasil é um dos países com mais usuários."
+    },
+    {
+      "id": "chute-tecnologia-497",
+      "difficulty": "medium",
+      "text": "Quantos sites existem na internet, em bilhões, aproximadamente?",
+      "answer": 1.1,
+      "unit": "bilhão",
+      "fact": "A maior parte deles está inativa."
+    },
+    {
+      "id": "chute-tecnologia-498",
+      "difficulty": "medium",
+      "text": "Quantas buscas o Google recebe por dia, em bilhões, aproximadamente?",
+      "answer": 8.5,
+      "unit": "bilhões",
+      "fact": "O Google tem cerca de 90% das buscas do mundo."
+    },
+    {
+      "id": "chute-tecnologia-499",
+      "difficulty": "medium",
+      "text": "Quantos celulares a Apple vende por ano, em milhões, aproximadamente?",
+      "answer": 230,
+      "unit": "milhões",
+      "fact": "O iPhone responde pela maior parte da receita da Apple."
+    },
+    {
+      "id": "chute-tecnologia-500",
+      "difficulty": "medium",
+      "text": "Quantos quilos de lixo eletrônico o brasileiro gera por ano, em média?",
+      "answer": 10,
+      "unit": "kg",
+      "fact": "Pouca coisa é reciclada corretamente."
+    },
+    {
+      "id": "chute-tecnologia-501",
+      "difficulty": "medium",
+      "text": "Quantos núcleos tem o processador de um celular comum, aproximadamente?",
+      "answer": 8,
+      "unit": "núcleos",
+      "fact": "Cada núcleo cuida de tarefas diferentes."
+    },
+    {
+      "id": "chute-tecnologia-502",
+      "difficulty": "medium",
+      "text": "Quantos gigabytes de RAM tem um notebook comum, aproximadamente, em 2024?",
+      "answer": 8,
+      "unit": "GB",
+      "fact": "Para jogos e edição, o ideal é ter mais."
+    },
+    {
+      "id": "chute-tecnologia-503",
+      "difficulty": "medium",
+      "text": "Quantos quilobytes de memória tinha o computador da Apollo 11, de RAM, aproximadamente?",
+      "answer": 4,
+      "unit": "KB",
+      "fact": "Um celular de hoje é milhões de vezes mais potente."
+    },
+    {
+      "id": "chute-tecnologia-504",
+      "difficulty": "medium",
+      "text": "Quantos satélites de GPS estão em operação, aproximadamente?",
+      "answer": 31,
+      "unit": "satélites",
+      "fact": "O receptor precisa de pelo menos quatro para achar a posição."
+    },
+    {
+      "id": "chute-tecnologia-505",
+      "difficulty": "medium",
+      "text": "Quantos metros de precisão tem o GPS de um celular comum, aproximadamente?",
+      "answer": 5,
+      "unit": "metros",
+      "fact": "Dentro de prédios a precisão piora."
+    },
+    {
+      "id": "chute-tecnologia-506",
+      "difficulty": "medium",
+      "text": "Quantos cabos submarinos de internet chegam a Fortaleza, aproximadamente?",
+      "answer": 17,
+      "unit": "cabos",
+      "fact": "Fortaleza é um dos maiores pontos de chegada de cabos do mundo."
+    },
+    {
+      "id": "chute-tecnologia-507",
+      "difficulty": "medium",
+      "text": "Quantos km de altura ficam os satélites geoestacionários, aproximadamente?",
+      "answer": 36000,
+      "unit": "km",
+      "fact": "Eles giram junto com a Terra e parecem parados."
+    },
+    {
+      "id": "chute-tecnologia-508",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a fita VHS como formato principal, aproximadamente?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "As locadoras viviam dos filmes em VHS."
+    },
+    {
+      "id": "chute-tecnologia-509",
+      "difficulty": "medium",
+      "text": "Quantas locadoras de vídeo existiam no Brasil no auge, aproximadamente, em milhares?",
+      "answer": 10,
+      "unit": "mil",
+      "fact": "O streaming fez quase todas fecharem."
+    },
+    {
+      "id": "chute-tecnologia-510",
+      "difficulty": "medium",
+      "text": "Quantos anos durou o celular \"tijolão\" como sucesso no Brasil, aproximadamente?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Os primeiros celulares chegaram ao Brasil em 1990."
+    },
+    {
+      "id": "chute-tecnologia-511",
+      "difficulty": "medium",
+      "text": "Quantos minutos de conversa durava a bateria do Motorola DynaTAC?",
+      "answer": 30,
+      "unit": "minutos",
+      "fact": "Recarregar levava cerca de dez horas."
+    },
+    {
+      "id": "chute-tecnologia-512",
+      "difficulty": "medium",
+      "text": "Quantos milhões de unidades vendeu o Nokia 1100, aproximadamente?",
+      "answer": 250,
+      "unit": "milhões",
+      "fact": "É o celular mais vendido da história."
+    },
+    {
+      "id": "chute-tecnologia-513",
+      "difficulty": "medium",
+      "text": "Quantos milhões de unidades vendeu o Nokia 3310, aproximadamente?",
+      "answer": 126,
+      "unit": "milhões",
+      "fact": "O jogo da cobrinha era o grande passatempo."
+    },
+    {
+      "id": "chute-tecnologia-514",
+      "difficulty": "medium",
+      "text": "Quantos dias durava a bateria de um Nokia 3310 em espera, aproximadamente?",
+      "answer": 10,
+      "unit": "dias",
+      "fact": "Hoje muitos celulares precisam de carga todo dia."
+    },
+    {
+      "id": "chute-tecnologia-515",
+      "difficulty": "medium",
+      "text": "Quantos toques diferentes vinham no Nokia 3310, aproximadamente?",
+      "answer": 35,
+      "unit": "toques",
+      "fact": "O toque mais famoso virou marca da Nokia."
+    },
+    {
+      "id": "chute-tecnologia-516",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Larry Page quando fundou o Google?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "Ele fundou a empresa com Sergey Brin."
+    },
+    {
+      "id": "chute-tecnologia-517",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Jeff Bezos quando fundou a Amazon?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "Ele largou um emprego no mercado financeiro."
+    },
+    {
+      "id": "chute-tecnologia-518",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Elon Musk quando ficou bilionário com a venda do PayPal, aproximadamente?",
+      "answer": 31,
+      "unit": "anos",
+      "fact": "O eBay comprou o PayPal em 2002."
+    },
+    {
+      "id": "chute-tecnologia-519",
+      "difficulty": "medium",
+      "text": "Quantos funcionários tinha o Instagram quando foi comprado?",
+      "answer": 13,
+      "unit": "funcionários",
+      "fact": "O app tinha 30 milhões de usuários."
+    },
+    {
+      "id": "chute-tecnologia-520",
+      "difficulty": "easy",
+      "text": "Quantos números tem o teclado de um caixa eletrônico, sem as teclas de ação?",
+      "answer": 10,
+      "unit": "números",
+      "fact": "As teclas vão do 0 ao 9."
+    },
+    {
+      "id": "chute-tecnologia-521",
+      "difficulty": "easy",
+      "text": "Quantas teclas de seta tem um teclado comum?",
+      "answer": 4,
+      "unit": "teclas",
+      "fact": "Muitos jogos de computador usam as setas para andar."
+    },
+    {
+      "id": "chute-tecnologia-522",
+      "difficulty": "easy",
+      "text": "Quantas tomadas tem um filtro de linha comum, aproximadamente?",
+      "answer": 5,
+      "unit": "tomadas",
+      "fact": "O filtro protege aparelhos de picos de energia."
+    },
+    {
+      "id": "chute-tecnologia-523",
+      "difficulty": "easy",
+      "text": "Quantas pilhas AA usa um controle remoto de TV comum?",
+      "answer": 2,
+      "unit": "pilhas",
+      "fact": "Muitos controles usam pilhas AAA, menores."
+    },
+    {
+      "id": "chute-tecnologia-524",
+      "difficulty": "easy",
+      "text": "Quantos anos dura uma lâmpada de LED comum com uso normal, aproximadamente?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "A LED dura muito mais que a incandescente."
+    },
+    {
+      "id": "chute-tecnologia-525",
+      "difficulty": "easy",
+      "text": "Quantos watts gasta um notebook comum, aproximadamente?",
+      "answer": 60,
+      "unit": "watts",
+      "fact": "Notebooks de jogos gastam bem mais."
+    },
+    {
+      "id": "chute-tecnologia-526",
+      "difficulty": "easy",
+      "text": "Quantos segundos leva para um computador moderno com SSD ligar, aproximadamente?",
+      "answer": 15,
+      "unit": "segundos",
+      "fact": "Com HD antigo, levava mais de um minuto."
+    },
+    {
+      "id": "chute-tecnologia-527",
+      "difficulty": "easy",
+      "text": "Quantas horas um videogame portátil como o Switch aguenta jogando, aproximadamente?",
+      "answer": 5,
+      "unit": "horas",
+      "fact": "Jogos mais pesados gastam a bateria mais rápido."
+    },
+    {
+      "id": "chute-tecnologia-528",
+      "difficulty": "easy",
+      "text": "Quantas horas de bateria tem um fone sem fio comum, aproximadamente, sem o estojo?",
+      "answer": 5,
+      "unit": "horas",
+      "fact": "O estojo recarrega os fones várias vezes."
+    },
+    {
+      "id": "chute-tecnologia-529",
+      "difficulty": "easy",
+      "text": "Quantos anos durou a fabricação do iPod, aproximadamente?",
+      "answer": 21,
+      "unit": "anos",
+      "fact": "A Apple parou de fabricar o iPod em 2022."
+    },
+    {
+      "id": "chute-tecnologia-530",
+      "difficulty": "easy",
+      "text": "Quantos anos durou o Google+, a rede social do Google?",
+      "answer": 8,
+      "unit": "anos",
+      "fact": "A rede foi encerrada em 2019."
+    },
+    {
+      "id": "chute-tecnologia-531",
+      "difficulty": "easy",
+      "text": "Quantos amigos podiam aparecer no \"Top 8\" do MySpace?",
+      "answer": 8,
+      "unit": "amigos",
+      "fact": "Escolher a ordem causava briga entre amigos."
+    },
+    {
+      "id": "chute-tecnologia-532",
+      "difficulty": "easy",
+      "text": "Quantos segundos tinha um vídeo do Vine, no máximo?",
+      "answer": 6,
+      "unit": "segundos",
+      "fact": "O Vine fechou em 2017."
+    },
+    {
+      "id": "chute-tecnologia-533",
+      "difficulty": "easy",
+      "text": "Quantos jogadores podem jogar juntos numa partida online de \"Fall Guys\", no máximo?",
+      "answer": 40,
+      "unit": "jogadores",
+      "fact": "No lançamento, eram 60 jogadores."
+    },
+    {
+      "id": "chute-tecnologia-534",
+      "difficulty": "easy",
+      "text": "Quantos anos durou o Vine, desde o lançamento até o fim?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "O Vine foi lançado em 2013 e encerrado em 2017."
+    },
+    {
+      "id": "chute-tecnologia-535",
+      "difficulty": "easy",
+      "text": "Quantas portas USB-C tem um iPhone 15?",
+      "answer": 1,
+      "unit": "porta",
+      "fact": "Foi o primeiro iPhone com USB-C, no lugar do Lightning."
     }
   ]
 }

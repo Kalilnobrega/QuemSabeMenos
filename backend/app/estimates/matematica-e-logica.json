@@ -2957,6 +2957,1233 @@
       "text": "Qual é o resultado de 19 elevado à potência 3?",
       "answer": 6859,
       "fact": "Cada expoente a mais multiplica o valor pela base."
+    },
+    {
+      "id": "chute-matematica-e-logica-416",
+      "difficulty": "easy",
+      "text": "Um ônibus sai às 8h e chega às 11h30. Quantos minutos durou a viagem?",
+      "answer": 210,
+      "unit": "minutos",
+      "fact": "Três horas e meia dão 210 minutos."
+    },
+    {
+      "id": "chute-matematica-e-logica-417",
+      "difficulty": "easy",
+      "text": "Quantos minutos faltam para as 10h, se agora são 9h17?",
+      "answer": 43,
+      "unit": "minutos",
+      "fact": "Contar até a hora cheia facilita a conta."
+    },
+    {
+      "id": "chute-matematica-e-logica-418",
+      "difficulty": "easy",
+      "text": "Um pacote tem 12 biscoitos. Quantos biscoitos tem em 5 pacotes?",
+      "answer": 60,
+      "unit": "biscoitos",
+      "fact": "Multiplicar por 5 é o mesmo que multiplicar por 10 e dividir por 2."
+    },
+    {
+      "id": "chute-matematica-e-logica-419",
+      "difficulty": "easy",
+      "text": "Uma pizza tem 8 fatias. Quantas fatias sobram se 3 pessoas comem 2 cada?",
+      "answer": 2,
+      "unit": "fatias",
+      "fact": "Seis fatias comidas, duas sobrando."
+    },
+    {
+      "id": "chute-matematica-e-logica-420",
+      "difficulty": "easy",
+      "text": "Quantas pizzas de 8 fatias são precisas para 10 pessoas comerem 3 fatias cada, no mínimo?",
+      "answer": 4,
+      "unit": "pizzas",
+      "fact": "São 30 fatias, e três pizzas só dão 24."
+    },
+    {
+      "id": "chute-matematica-e-logica-421",
+      "difficulty": "easy",
+      "text": "Um carro anda 12 km com 1 litro. Quantos km ele anda com 40 litros?",
+      "answer": 480,
+      "unit": "km",
+      "fact": "É a autonomia de um tanque cheio de carro popular."
+    },
+    {
+      "id": "chute-matematica-e-logica-422",
+      "difficulty": "easy",
+      "text": "Um carro anda a 60 km/h. Quantos km ele anda em meia hora?",
+      "answer": 30,
+      "unit": "km",
+      "fact": "60 km/h é um quilômetro por minuto."
+    },
+    {
+      "id": "chute-matematica-e-logica-423",
+      "difficulty": "easy",
+      "text": "Quantas horas leva para andar 300 km a 100 km/h?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Tempo é distância dividida por velocidade."
+    },
+    {
+      "id": "chute-matematica-e-logica-424",
+      "difficulty": "easy",
+      "text": "Uma pessoa caminha 5 km por hora. Quantos km ela anda em 2 horas e meia?",
+      "answer": 12.5,
+      "unit": "km",
+      "fact": "Caminhar é um ótimo exercício diário."
+    },
+    {
+      "id": "chute-matematica-e-logica-425",
+      "difficulty": "easy",
+      "text": "Uma torneira enche 10 litros por minuto. Quantos minutos leva para encher 150 litros?",
+      "answer": 15,
+      "unit": "minutos",
+      "fact": "Uma banheira comum tem uns 150 litros."
+    },
+    {
+      "id": "chute-matematica-e-logica-426",
+      "difficulty": "easy",
+      "text": "Quantos dias tem 6 semanas?",
+      "answer": 42,
+      "unit": "dias",
+      "fact": "Cada semana tem 7 dias."
+    },
+    {
+      "id": "chute-matematica-e-logica-427",
+      "difficulty": "easy",
+      "text": "Quantas semanas cabem em 91 dias?",
+      "answer": 13,
+      "unit": "semanas",
+      "fact": "91 dias é quase um trimestre."
+    },
+    {
+      "id": "chute-matematica-e-logica-428",
+      "difficulty": "easy",
+      "text": "Quantos meses tem 3 anos e meio?",
+      "answer": 42,
+      "unit": "meses",
+      "fact": "Cada ano tem 12 meses."
+    },
+    {
+      "id": "chute-matematica-e-logica-429",
+      "difficulty": "easy",
+      "text": "Quantos minutos tem 4 horas?",
+      "answer": 240,
+      "unit": "minutos",
+      "fact": "Cada hora tem 60 minutos."
+    },
+    {
+      "id": "chute-matematica-e-logica-430",
+      "difficulty": "easy",
+      "text": "Quantos segundos tem 5 minutos?",
+      "answer": 300,
+      "unit": "segundos",
+      "fact": "Cada minuto tem 60 segundos."
+    },
+    {
+      "id": "chute-matematica-e-logica-431",
+      "difficulty": "easy",
+      "text": "Quanto é o dobro de 175?",
+      "answer": 350,
+      "fact": "Dobrar é somar o número com ele mesmo."
+    },
+    {
+      "id": "chute-matematica-e-logica-432",
+      "difficulty": "easy",
+      "text": "Quanto é o triplo de 45?",
+      "answer": 135,
+      "fact": "Triplicar é multiplicar por 3."
+    },
+    {
+      "id": "chute-matematica-e-logica-433",
+      "difficulty": "easy",
+      "text": "Quanto é a metade de 330?",
+      "answer": 165,
+      "fact": "Dividir por 2 é tirar a metade."
+    },
+    {
+      "id": "chute-matematica-e-logica-434",
+      "difficulty": "easy",
+      "text": "Quanto é a terça parte de 270?",
+      "answer": 90,
+      "fact": "A terça parte é dividir por 3."
+    },
+    {
+      "id": "chute-matematica-e-logica-435",
+      "difficulty": "easy",
+      "text": "Quanto é a quarta parte de 200?",
+      "answer": 50,
+      "fact": "A quarta parte é metade da metade."
+    },
+    {
+      "id": "chute-matematica-e-logica-436",
+      "difficulty": "easy",
+      "text": "Quanto é 20% de 450?",
+      "answer": 90,
+      "fact": "20% é o mesmo que dividir por 5."
+    },
+    {
+      "id": "chute-matematica-e-logica-437",
+      "difficulty": "easy",
+      "text": "Quanto é 75% de 80?",
+      "answer": 60,
+      "fact": "75% são três quartos."
+    },
+    {
+      "id": "chute-matematica-e-logica-438",
+      "difficulty": "easy",
+      "text": "Quanto é 5% de 600?",
+      "answer": 30,
+      "fact": "5% é metade de 10%."
+    },
+    {
+      "id": "chute-matematica-e-logica-439",
+      "difficulty": "easy",
+      "text": "Quanto é 1% de 2.500?",
+      "answer": 25,
+      "fact": "1% é dividir por 100."
+    },
+    {
+      "id": "chute-matematica-e-logica-440",
+      "difficulty": "easy",
+      "text": "Quanto é 150% de 40?",
+      "answer": 60,
+      "fact": "150% é o número mais a metade dele."
+    },
+    {
+      "id": "chute-matematica-e-logica-441",
+      "difficulty": "easy",
+      "text": "Quanto é 12 × 12?",
+      "answer": 144,
+      "fact": "Uma dúzia de dúzias é uma grosa."
+    },
+    {
+      "id": "chute-matematica-e-logica-442",
+      "difficulty": "easy",
+      "text": "Quanto é 99 + 99?",
+      "answer": 198,
+      "fact": "Some 100 e tire 1 de cada lado."
+    },
+    {
+      "id": "chute-matematica-e-logica-443",
+      "difficulty": "easy",
+      "text": "Quanto é 1.000 − 357?",
+      "answer": 643,
+      "fact": "Contar quanto falta até mil ajuda."
+    },
+    {
+      "id": "chute-matematica-e-logica-444",
+      "difficulty": "easy",
+      "text": "Quanto é 48 ÷ 4?",
+      "answer": 12,
+      "fact": "Dividir por 4 é dividir por 2 duas vezes."
+    },
+    {
+      "id": "chute-matematica-e-logica-445",
+      "difficulty": "easy",
+      "text": "Quanto é 7 × 9?",
+      "answer": 63,
+      "fact": "A tabuada do 9 tem truques com os dedos."
+    },
+    {
+      "id": "chute-matematica-e-logica-446",
+      "difficulty": "easy",
+      "text": "Quanto é 15 × 4?",
+      "answer": 60,
+      "fact": "Quatro quartos de hora formam uma hora."
+    },
+    {
+      "id": "chute-matematica-e-logica-447",
+      "difficulty": "easy",
+      "text": "Quanto é 11 × 11?",
+      "answer": 121,
+      "fact": "11 vezes 11 forma um número que se lê igual de trás para frente."
+    },
+    {
+      "id": "chute-matematica-e-logica-448",
+      "difficulty": "easy",
+      "text": "Quanto é 101 × 5?",
+      "answer": 505,
+      "fact": "Multiplicar por 101 repete o número."
+    },
+    {
+      "id": "chute-matematica-e-logica-449",
+      "difficulty": "easy",
+      "text": "Quanto é 360 ÷ 6?",
+      "answer": 60,
+      "fact": "Um hexágono regular tem ângulos centrais de 60 graus."
+    },
+    {
+      "id": "chute-matematica-e-logica-450",
+      "difficulty": "easy",
+      "text": "Quanto é 2 elevado a 5?",
+      "answer": 32,
+      "fact": "Cada potência de 2 dobra a anterior."
+    },
+    {
+      "id": "chute-matematica-e-logica-451",
+      "difficulty": "easy",
+      "text": "Quanto é 10 elevado a 4?",
+      "answer": 10000,
+      "fact": "O expoente diz quantos zeros vêm depois do 1."
+    },
+    {
+      "id": "chute-matematica-e-logica-452",
+      "difficulty": "easy",
+      "text": "Qual é a raiz quadrada de 81?",
+      "answer": 9,
+      "fact": "9 vezes 9 dá 81."
+    },
+    {
+      "id": "chute-matematica-e-logica-453",
+      "difficulty": "easy",
+      "text": "Qual é a raiz quadrada de 400?",
+      "answer": 20,
+      "fact": "20 vezes 20 dá 400."
+    },
+    {
+      "id": "chute-matematica-e-logica-454",
+      "difficulty": "easy",
+      "text": "Quantos lados tem um octógono?",
+      "answer": 8,
+      "unit": "lados",
+      "fact": "A placa de pare tem formato de octógono."
+    },
+    {
+      "id": "chute-matematica-e-logica-455",
+      "difficulty": "easy",
+      "text": "Quantos lados tem um decágono?",
+      "answer": 10,
+      "unit": "lados",
+      "fact": "Deca quer dizer dez em grego."
+    },
+    {
+      "id": "chute-matematica-e-logica-456",
+      "difficulty": "easy",
+      "text": "Quantos vértices tem uma pirâmide de base quadrada?",
+      "answer": 5,
+      "unit": "vértices",
+      "fact": "As pirâmides do Egito têm base quadrada."
+    },
+    {
+      "id": "chute-matematica-e-logica-457",
+      "difficulty": "easy",
+      "text": "Quantas faces tem uma pirâmide de base quadrada?",
+      "answer": 5,
+      "unit": "faces",
+      "fact": "São quatro triângulos e um quadrado."
+    },
+    {
+      "id": "chute-matematica-e-logica-458",
+      "difficulty": "easy",
+      "text": "Quantos graus tem um ângulo reto?",
+      "answer": 90,
+      "unit": "graus",
+      "fact": "Os cantos de uma folha de papel são ângulos retos."
+    },
+    {
+      "id": "chute-matematica-e-logica-459",
+      "difficulty": "easy",
+      "text": "Quantos graus tem uma volta completa?",
+      "answer": 360,
+      "unit": "graus",
+      "fact": "Uma volta inteira de skate é chamada de 360."
+    },
+    {
+      "id": "chute-matematica-e-logica-460",
+      "difficulty": "easy",
+      "text": "Quantos graus tem meia volta?",
+      "answer": 180,
+      "unit": "graus",
+      "fact": "Dar meia volta é virar para trás."
+    },
+    {
+      "id": "chute-matematica-e-logica-461",
+      "difficulty": "easy",
+      "text": "Quantos graus o ponteiro dos minutos anda em 15 minutos?",
+      "answer": 90,
+      "unit": "graus",
+      "fact": "Em uma hora ele dá a volta completa."
+    },
+    {
+      "id": "chute-matematica-e-logica-462",
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem o perímetro de um quadrado de 7 cm de lado?",
+      "answer": 28,
+      "unit": "cm",
+      "fact": "O perímetro é a soma de todos os lados."
+    },
+    {
+      "id": "chute-matematica-e-logica-463",
+      "difficulty": "easy",
+      "text": "Qual é a área de um quadrado de 9 metros de lado, em m²?",
+      "answer": 81,
+      "unit": "m²",
+      "fact": "A área do quadrado é lado vezes lado."
+    },
+    {
+      "id": "chute-matematica-e-logica-464",
+      "difficulty": "easy",
+      "text": "Qual é a área de um triângulo de base 10 e altura 6?",
+      "answer": 30,
+      "fact": "A área do triângulo é base vezes altura dividido por 2."
+    },
+    {
+      "id": "chute-matematica-e-logica-465",
+      "difficulty": "easy",
+      "text": "Quantos números pares existem de 1 a 50?",
+      "answer": 25,
+      "unit": "números",
+      "fact": "Metade dos números são pares."
+    },
+    {
+      "id": "chute-matematica-e-logica-466",
+      "difficulty": "easy",
+      "text": "Quantos números de dois algarismos existem?",
+      "answer": 90,
+      "unit": "números",
+      "fact": "Eles vão do 10 ao 99."
+    },
+    {
+      "id": "chute-matematica-e-logica-467",
+      "difficulty": "easy",
+      "text": "Quanto custam 4 cadernos de 15 reais e 2 canetas de 3 reais, em reais?",
+      "answer": 66,
+      "unit": "reais",
+      "fact": "Primeiro multiplica, depois soma."
+    },
+    {
+      "id": "chute-matematica-e-logica-468",
+      "difficulty": "easy",
+      "text": "Uma camiseta custava 50 reais e subiu 20%. Quanto custa agora, em reais?",
+      "answer": 60,
+      "unit": "reais",
+      "fact": "20% de 50 é 10."
+    },
+    {
+      "id": "chute-matematica-e-logica-469",
+      "difficulty": "easy",
+      "text": "Quantos anos tem quem nasceu em 1990, no fim de 2025?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "Basta subtrair o ano de nascimento do ano atual."
+    },
+    {
+      "id": "chute-matematica-e-logica-470",
+      "difficulty": "medium",
+      "text": "Uma loja dá 10% de desconto e depois mais 10%. Qual é o desconto total, em %?",
+      "answer": 19,
+      "unit": "%",
+      "fact": "Descontos seguidos não se somam direto."
+    },
+    {
+      "id": "chute-matematica-e-logica-471",
+      "difficulty": "medium",
+      "text": "Um preço sobe 50% e depois cai 50%. Qual é a perda total em relação ao preço inicial, em %?",
+      "answer": 25,
+      "unit": "%",
+      "fact": "A queda é calculada sobre um valor maior."
+    },
+    {
+      "id": "chute-matematica-e-logica-472",
+      "difficulty": "medium",
+      "text": "Um preço dobra e depois cai pela metade. Quantos % ele mudou no total?",
+      "answer": 0,
+      "unit": "%",
+      "fact": "Dobrar e dividir por dois volta ao valor original."
+    },
+    {
+      "id": "chute-matematica-e-logica-473",
+      "difficulty": "medium",
+      "text": "Quanto rende 1.000 reais a 1% ao mês por 12 meses, com juros compostos, aproximadamente?",
+      "answer": 1127,
+      "unit": "reais",
+      "fact": "É um pouco mais que 12% ao ano."
+    },
+    {
+      "id": "chute-matematica-e-logica-474",
+      "difficulty": "medium",
+      "text": "Quantos anos leva para um dinheiro dobrar a 10% ao ano, aproximadamente?",
+      "answer": 7,
+      "unit": "anos",
+      "fact": "A regra do 72 diz que basta dividir 72 pela taxa."
+    },
+    {
+      "id": "chute-matematica-e-logica-475",
+      "difficulty": "medium",
+      "text": "Quantos anos leva para um dinheiro dobrar a 6% ao ano, pela regra do 72?",
+      "answer": 12,
+      "unit": "anos",
+      "fact": "A regra do 72 é um atalho dos investidores."
+    },
+    {
+      "id": "chute-matematica-e-logica-476",
+      "difficulty": "medium",
+      "text": "Uma geladeira custa 2.000 reais à vista ou 12 de 200. Quantos reais a mais se paga a prazo?",
+      "answer": 400,
+      "unit": "reais",
+      "fact": "Comparar o total parcelado com o preço à vista mostra os juros."
+    },
+    {
+      "id": "chute-matematica-e-logica-477",
+      "difficulty": "medium",
+      "text": "Quantos reais são 3 dólares a 5,50 reais cada?",
+      "answer": 16.5,
+      "unit": "reais",
+      "fact": "O câmbio muda todos os dias."
+    },
+    {
+      "id": "chute-matematica-e-logica-478",
+      "difficulty": "medium",
+      "text": "Quantos reais custam 2,5 kg de carne a 48 reais o quilo?",
+      "answer": 120,
+      "unit": "reais",
+      "fact": "Meio quilo custa 24 reais."
+    },
+    {
+      "id": "chute-matematica-e-logica-479",
+      "difficulty": "medium",
+      "text": "Um carro faz 10 km/l e a gasolina custa 6 reais. Quanto custa rodar 250 km, em reais?",
+      "answer": 150,
+      "unit": "reais",
+      "fact": "São 25 litros de gasolina."
+    },
+    {
+      "id": "chute-matematica-e-logica-480",
+      "difficulty": "medium",
+      "text": "Um carro a 90 km/h leva quantos minutos para andar 30 km?",
+      "answer": 20,
+      "unit": "minutos",
+      "fact": "90 km/h é 1,5 km por minuto."
+    },
+    {
+      "id": "chute-matematica-e-logica-481",
+      "difficulty": "medium",
+      "text": "Quantos km/h dá correr 100 metros em 10 segundos?",
+      "answer": 36,
+      "unit": "km/h",
+      "fact": "Para converter m/s em km/h, multiplique por 3,6."
+    },
+    {
+      "id": "chute-matematica-e-logica-482",
+      "difficulty": "medium",
+      "text": "Quantos metros por segundo dá 72 km/h?",
+      "answer": 20,
+      "unit": "m/s",
+      "fact": "Para converter km/h em m/s, divida por 3,6."
+    },
+    {
+      "id": "chute-matematica-e-logica-483",
+      "difficulty": "medium",
+      "text": "Dois trens partem um em direção ao outro, a 300 km de distância, a 50 km/h e 100 km/h. Em quantas horas se encontram?",
+      "answer": 2,
+      "unit": "horas",
+      "fact": "As velocidades se somam quando um vai na direção do outro."
+    },
+    {
+      "id": "chute-matematica-e-logica-484",
+      "difficulty": "medium",
+      "text": "Se 3 pedreiros constroem um muro em 12 dias, em quantos dias 6 pedreiros constroem o mesmo muro?",
+      "answer": 6,
+      "unit": "dias",
+      "fact": "Mais gente trabalhando, menos dias de obra."
+    },
+    {
+      "id": "chute-matematica-e-logica-485",
+      "difficulty": "medium",
+      "text": "Se 5 máquinas fazem 5 peças em 5 minutos, quantos minutos 100 máquinas levam para fazer 100 peças?",
+      "answer": 5,
+      "unit": "minutos",
+      "fact": "Cada máquina faz uma peça em 5 minutos."
+    },
+    {
+      "id": "chute-matematica-e-logica-486",
+      "difficulty": "medium",
+      "text": "Uma lagoa tem uma planta que dobra de tamanho por dia e cobre tudo em 30 dias. Em que dia ela cobre metade?",
+      "answer": 29,
+      "unit": "º dia",
+      "fact": "No dia seguinte ela dobra e cobre tudo."
+    },
+    {
+      "id": "chute-matematica-e-logica-487",
+      "difficulty": "medium",
+      "text": "Um taco e uma bola custam 1,10 juntos. O taco custa 1 a mais que a bola. Quantos centavos custa a bola?",
+      "answer": 5,
+      "unit": "centavos",
+      "fact": "A resposta intuitiva de 10 centavos está errada."
+    },
+    {
+      "id": "chute-matematica-e-logica-488",
+      "difficulty": "medium",
+      "text": "Quantas partidas tem um campeonato de 20 times em turno e returno?",
+      "answer": 380,
+      "unit": "jogos",
+      "fact": "É o formato do Brasileirão."
+    },
+    {
+      "id": "chute-matematica-e-logica-489",
+      "difficulty": "medium",
+      "text": "Quantas partidas tem um torneio mata-mata com 64 times, até o campeão?",
+      "answer": 63,
+      "unit": "jogos",
+      "fact": "Cada jogo elimina um time."
+    },
+    {
+      "id": "chute-matematica-e-logica-490",
+      "difficulty": "medium",
+      "text": "Quantas partidas tem um torneio mata-mata com 16 times?",
+      "answer": 15,
+      "unit": "jogos",
+      "fact": "Cada jogo elimina exatamente um time."
+    },
+    {
+      "id": "chute-matematica-e-logica-491",
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um hexágono?",
+      "answer": 9,
+      "unit": "diagonais",
+      "fact": "A fórmula é n vezes n menos 3, dividido por 2."
+    },
+    {
+      "id": "chute-matematica-e-logica-492",
+      "difficulty": "medium",
+      "text": "Quantas diagonais tem um octógono?",
+      "answer": 20,
+      "unit": "diagonais",
+      "fact": "Cada vértice se liga a cinco outros por diagonais."
+    },
+    {
+      "id": "chute-matematica-e-logica-493",
+      "difficulty": "medium",
+      "text": "Quantos triângulos formam as diagonais de um vértice de um hexágono?",
+      "answer": 4,
+      "unit": "triângulos",
+      "fact": "Por isso a soma dos ângulos é 4 vezes 180."
+    },
+    {
+      "id": "chute-matematica-e-logica-494",
+      "difficulty": "medium",
+      "text": "Quantos graus separam os ponteiros do relógio às 3h em ponto?",
+      "answer": 90,
+      "unit": "graus",
+      "fact": "Cada hora do relógio vale 30 graus."
+    },
+    {
+      "id": "chute-matematica-e-logica-495",
+      "difficulty": "medium",
+      "text": "Quantos graus separam os ponteiros do relógio às 4h em ponto?",
+      "answer": 120,
+      "unit": "graus",
+      "fact": "São quatro espaços de 30 graus."
+    },
+    {
+      "id": "chute-matematica-e-logica-496",
+      "difficulty": "medium",
+      "text": "Quantas vezes os ponteiros das horas e dos minutos se sobrepõem em 12 horas?",
+      "answer": 11,
+      "unit": "vezes",
+      "fact": "Eles não se encontram entre 11h e 13h, só ao meio-dia."
+    },
+    {
+      "id": "chute-matematica-e-logica-497",
+      "difficulty": "medium",
+      "text": "Quantas vezes o número 1 aparece ao escrever de 1 a 20?",
+      "answer": 12,
+      "unit": "vezes",
+      "fact": "Do 10 ao 19 o 1 aparece em todas as dezenas."
+    },
+    {
+      "id": "chute-matematica-e-logica-498",
+      "difficulty": "medium",
+      "text": "Quantos números de 1 a 100 são divisíveis por 7?",
+      "answer": 14,
+      "unit": "números",
+      "fact": "O último é 98."
+    },
+    {
+      "id": "chute-matematica-e-logica-499",
+      "difficulty": "medium",
+      "text": "Quantos números primos existem entre 1 e 20?",
+      "answer": 8,
+      "unit": "primos",
+      "fact": "São 2, 3, 5, 7, 11, 13, 17 e 19."
+    },
+    {
+      "id": "chute-matematica-e-logica-500",
+      "difficulty": "medium",
+      "text": "Quantos divisores tem o número 12?",
+      "answer": 6,
+      "unit": "divisores",
+      "fact": "São 1, 2, 3, 4, 6 e 12."
+    },
+    {
+      "id": "chute-matematica-e-logica-501",
+      "difficulty": "medium",
+      "text": "Quantos divisores tem o número 36?",
+      "answer": 9,
+      "unit": "divisores",
+      "fact": "Quadrados perfeitos têm número ímpar de divisores."
+    },
+    {
+      "id": "chute-matematica-e-logica-502",
+      "difficulty": "medium",
+      "text": "Qual é o mínimo múltiplo comum de 4 e 6?",
+      "answer": 12,
+      "fact": "É o menor número que os dois dividem."
+    },
+    {
+      "id": "chute-matematica-e-logica-503",
+      "difficulty": "medium",
+      "text": "Qual é o máximo divisor comum de 24 e 36?",
+      "answer": 12,
+      "fact": "É o maior número que divide os dois."
+    },
+    {
+      "id": "chute-matematica-e-logica-504",
+      "difficulty": "medium",
+      "text": "Qual é a média de 4, 8, 10 e 18?",
+      "answer": 10,
+      "fact": "A média é a soma dividida pela quantidade."
+    },
+    {
+      "id": "chute-matematica-e-logica-505",
+      "difficulty": "medium",
+      "text": "Qual é a mediana de 3, 7, 9, 12 e 50?",
+      "answer": 9,
+      "fact": "A mediana é o valor do meio."
+    },
+    {
+      "id": "chute-matematica-e-logica-506",
+      "difficulty": "medium",
+      "text": "Qual é a probabilidade de tirar cara duas vezes seguidas numa moeda, em %?",
+      "answer": 25,
+      "unit": "%",
+      "fact": "Cada lançamento tem 50% de chance."
+    },
+    {
+      "id": "chute-matematica-e-logica-507",
+      "difficulty": "medium",
+      "text": "Qual é a probabilidade de tirar 6 num dado comum, em %, aproximadamente?",
+      "answer": 16.7,
+      "unit": "%",
+      "fact": "É uma chance em seis."
+    },
+    {
+      "id": "chute-matematica-e-logica-508",
+      "difficulty": "medium",
+      "text": "Qual é a probabilidade de tirar soma 7 com dois dados, em %, aproximadamente?",
+      "answer": 16.7,
+      "unit": "%",
+      "fact": "O 7 é a soma mais comum com dois dados."
+    },
+    {
+      "id": "chute-matematica-e-logica-509",
+      "difficulty": "medium",
+      "text": "Quantas combinações diferentes tem um cadeado de 3 dígitos de 0 a 9?",
+      "answer": 1000,
+      "unit": "combinações",
+      "fact": "Vão do 000 ao 999."
+    },
+    {
+      "id": "chute-matematica-e-logica-510",
+      "difficulty": "medium",
+      "text": "Quantas senhas diferentes de 4 dígitos existem?",
+      "answer": 10000,
+      "unit": "senhas",
+      "fact": "Por isso os bancos bloqueiam depois de poucas tentativas."
+    },
+    {
+      "id": "chute-matematica-e-logica-511",
+      "difficulty": "medium",
+      "text": "De quantas formas 4 pessoas podem fazer fila?",
+      "answer": 24,
+      "unit": "formas",
+      "fact": "São 4 vezes 3 vezes 2 vezes 1."
+    },
+    {
+      "id": "chute-matematica-e-logica-512",
+      "difficulty": "medium",
+      "text": "De quantas formas 5 livros podem ser arrumados numa estante?",
+      "answer": 120,
+      "unit": "formas",
+      "fact": "É o fatorial de 5."
+    },
+    {
+      "id": "chute-matematica-e-logica-513",
+      "difficulty": "medium",
+      "text": "Quantos anagramas tem a palavra OVO?",
+      "answer": 3,
+      "unit": "anagramas",
+      "fact": "As letras repetidas diminuem as combinações."
+    },
+    {
+      "id": "chute-matematica-e-logica-514",
+      "difficulty": "medium",
+      "text": "Quantas pessoas são necessárias numa sala para ter mais de 50% de chance de dois fazerem aniversário no mesmo dia?",
+      "answer": 23,
+      "unit": "pessoas",
+      "fact": "É o famoso paradoxo do aniversário."
+    },
+    {
+      "id": "chute-matematica-e-logica-515",
+      "difficulty": "medium",
+      "text": "Quantas vezes é preciso dobrar uma folha para ela ter 64 camadas?",
+      "answer": 6,
+      "unit": "dobras",
+      "fact": "Cada dobra duplica as camadas."
+    },
+    {
+      "id": "chute-matematica-e-logica-516",
+      "difficulty": "medium",
+      "text": "Quantos grãos de arroz há na 10ª casa do xadrez, se começa com 1 e dobra a cada casa?",
+      "answer": 512,
+      "unit": "grãos",
+      "fact": "Na 64ª casa, o número é astronômico."
+    },
+    {
+      "id": "chute-matematica-e-logica-517",
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 2, 6, 12, 20, 30?",
+      "answer": 42,
+      "fact": "A diferença entre os números aumenta de 2 em 2."
+    },
+    {
+      "id": "chute-matematica-e-logica-518",
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 3, 6, 12, 24?",
+      "answer": 48,
+      "fact": "Cada número é o dobro do anterior."
+    },
+    {
+      "id": "chute-matematica-e-logica-519",
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 2, 3, 5, 7, 11, 13?",
+      "answer": 17,
+      "fact": "São os números primos."
+    },
+    {
+      "id": "chute-matematica-e-logica-520",
+      "difficulty": "medium",
+      "text": "Qual é o próximo número da sequência 1, 8, 27, 64?",
+      "answer": 125,
+      "fact": "São os cubos dos números naturais."
+    },
+    {
+      "id": "chute-matematica-e-logica-521",
+      "difficulty": "medium",
+      "text": "Quanto é 15% de 15% de 10.000?",
+      "answer": 225,
+      "fact": "Primeiro 15% de 10.000 dá 1.500."
+    },
+    {
+      "id": "chute-matematica-e-logica-522",
+      "difficulty": "medium",
+      "text": "Quanto é 3/4 de 2/3 de 120?",
+      "answer": 60,
+      "fact": "Frações de frações se multiplicam."
+    },
+    {
+      "id": "chute-matematica-e-logica-523",
+      "difficulty": "medium",
+      "text": "Quanto é 0,25 × 0,4?",
+      "answer": 0.1,
+      "fact": "Um quarto de 0,4 é 0,1."
+    },
+    {
+      "id": "chute-matematica-e-logica-524",
+      "difficulty": "medium",
+      "text": "Quanto é 1/2 + 1/3, em fração decimal, aproximadamente?",
+      "answer": 0.83,
+      "fact": "A soma dá 5/6."
+    },
+    {
+      "id": "chute-matematica-e-logica-525",
+      "difficulty": "medium",
+      "text": "Qual é o número romano MCM em algarismos?",
+      "answer": 1900,
+      "scale": 50,
+      "fact": "M vale mil e CM vale novecentos."
+    },
+    {
+      "id": "chute-matematica-e-logica-526",
+      "difficulty": "medium",
+      "text": "Qual é o número romano XLIV em algarismos?",
+      "answer": 44,
+      "fact": "XL é 40 e IV é 4."
+    },
+    {
+      "id": "chute-matematica-e-logica-527",
+      "difficulty": "medium",
+      "text": "Qual é o número romano MMXXV em algarismos?",
+      "answer": 2025,
+      "scale": 50,
+      "fact": "Os romanos não tinham símbolo para o zero."
+    },
+    {
+      "id": "chute-matematica-e-logica-528",
+      "difficulty": "medium",
+      "text": "Quantos milhares tem um milhão?",
+      "answer": 1000,
+      "unit": "milhares",
+      "fact": "Mil vezes mil dá um milhão."
+    },
+    {
+      "id": "chute-matematica-e-logica-529",
+      "difficulty": "medium",
+      "text": "Quantas dezenas tem uma centena?",
+      "answer": 10,
+      "unit": "dezenas",
+      "fact": "Uma centena é igual a 100 unidades."
+    },
+    {
+      "id": "chute-matematica-e-logica-530",
+      "difficulty": "medium",
+      "text": "Quantos metros quadrados tem um hectare?",
+      "answer": 10000,
+      "unit": "m²",
+      "fact": "Um hectare é um quadrado de 100 por 100 metros."
+    },
+    {
+      "id": "chute-matematica-e-logica-531",
+      "difficulty": "medium",
+      "text": "Quantos hectares tem um quilômetro quadrado?",
+      "answer": 100,
+      "unit": "hectares",
+      "fact": "O hectare é muito usado na agricultura."
+    },
+    {
+      "id": "chute-matematica-e-logica-532",
+      "difficulty": "medium",
+      "text": "Quantos litros cabem num metro cúbico?",
+      "answer": 1000,
+      "unit": "litros",
+      "fact": "Uma caixa-d'água de mil litros tem um metro cúbico."
+    },
+    {
+      "id": "chute-matematica-e-logica-533",
+      "difficulty": "medium",
+      "text": "Quantos centímetros cúbicos tem um litro?",
+      "answer": 1000,
+      "unit": "cm³",
+      "fact": "Um litro é um cubo de 10 cm de lado."
+    },
+    {
+      "id": "chute-matematica-e-logica-534",
+      "difficulty": "medium",
+      "text": "Quantos centímetros tem um pé, a medida inglesa, aproximadamente?",
+      "answer": 30.5,
+      "unit": "cm",
+      "fact": "A altitude dos aviões é dada em pés."
+    },
+    {
+      "id": "chute-matematica-e-logica-535",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma milha terrestre, aproximadamente?",
+      "answer": 1609,
+      "unit": "metros",
+      "fact": "A milha ainda é usada nos Estados Unidos."
+    },
+    {
+      "id": "chute-matematica-e-logica-536",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma milha náutica, aproximadamente?",
+      "answer": 1852,
+      "unit": "metros",
+      "fact": "A milha náutica é usada no mar e no ar."
+    },
+    {
+      "id": "chute-matematica-e-logica-537",
+      "difficulty": "medium",
+      "text": "Quantos gramas tem uma libra, aproximadamente?",
+      "answer": 454,
+      "unit": "gramas",
+      "fact": "A libra é usada para pesar nos Estados Unidos."
+    },
+    {
+      "id": "chute-matematica-e-logica-538",
+      "difficulty": "medium",
+      "text": "Quantos graus Fahrenheit marca a água fervendo?",
+      "answer": 212,
+      "unit": "°F",
+      "fact": "Os americanos usam a escala Fahrenheit."
+    },
+    {
+      "id": "chute-matematica-e-logica-539",
+      "difficulty": "easy",
+      "text": "Uma sala tem 6 fileiras de 8 cadeiras. Quantas cadeiras tem a sala?",
+      "answer": 48,
+      "unit": "cadeiras",
+      "fact": "Multiplicar fileiras por colunas dá o total."
+    },
+    {
+      "id": "chute-matematica-e-logica-540",
+      "difficulty": "easy",
+      "text": "Um prédio tem 12 andares com 4 apartamentos cada. Quantos apartamentos tem o prédio?",
+      "answer": 48,
+      "unit": "apartamentos",
+      "fact": "Prédios residenciais costumam ter de 4 a 8 apartamentos por andar."
+    },
+    {
+      "id": "chute-matematica-e-logica-541",
+      "difficulty": "easy",
+      "text": "Uma caixa tem 24 latas. Quantas latas tem em 3 caixas?",
+      "answer": 72,
+      "unit": "latas",
+      "fact": "Três fardos de 24 dão 72 latas."
+    },
+    {
+      "id": "chute-matematica-e-logica-542",
+      "difficulty": "easy",
+      "text": "Um estacionamento tem 5 andares com 40 vagas cada. Quantas vagas são?",
+      "answer": 200,
+      "unit": "vagas",
+      "fact": "Shopping centers têm milhares de vagas."
+    },
+    {
+      "id": "chute-matematica-e-logica-543",
+      "difficulty": "easy",
+      "text": "Um livro tem 240 páginas. Lendo 20 por dia, em quantos dias ele termina?",
+      "answer": 12,
+      "unit": "dias",
+      "fact": "Ler um pouco por dia ajuda a terminar mais livros."
+    },
+    {
+      "id": "chute-matematica-e-logica-544",
+      "difficulty": "easy",
+      "text": "Uma série tem 8 episódios de 50 minutos. Quantos minutos tem a série inteira?",
+      "answer": 400,
+      "unit": "minutos",
+      "fact": "Dá quase sete horas de maratona."
+    },
+    {
+      "id": "chute-matematica-e-logica-545",
+      "difficulty": "easy",
+      "text": "Uma série tem 10 episódios de 45 minutos. Quantas horas tem a série inteira?",
+      "answer": 7.5,
+      "unit": "horas",
+      "fact": "São 450 minutos ao todo."
+    },
+    {
+      "id": "chute-matematica-e-logica-546",
+      "difficulty": "easy",
+      "text": "Um álbum tem 12 músicas de 4 minutos. Quantos minutos dura o álbum?",
+      "answer": 48,
+      "unit": "minutos",
+      "fact": "Discos de vinil têm limite de tempo por lado."
+    },
+    {
+      "id": "chute-matematica-e-logica-547",
+      "difficulty": "easy",
+      "text": "Uma festa tem 30 convidados e cada um come 5 salgadinhos. Quantos salgadinhos são precisos?",
+      "answer": 150,
+      "unit": "salgadinhos",
+      "fact": "Festas infantis costumam calcular mais salgadinhos por pessoa."
+    },
+    {
+      "id": "chute-matematica-e-logica-548",
+      "difficulty": "easy",
+      "text": "Uma pessoa corre 3 km por dia, de segunda a sexta. Quantos km corre na semana?",
+      "answer": 15,
+      "unit": "km",
+      "fact": "São cinco dias de corrida."
+    },
+    {
+      "id": "chute-matematica-e-logica-549",
+      "difficulty": "easy",
+      "text": "Um carro gasta 8 litros a cada 100 km. Quantos litros gasta em 300 km?",
+      "answer": 24,
+      "unit": "litros",
+      "fact": "O consumo na estrada costuma ser menor que na cidade."
+    },
+    {
+      "id": "chute-matematica-e-logica-550",
+      "difficulty": "easy",
+      "text": "Uma conta de 90 reais é dividida por 3 amigos. Quanto cada um paga, em reais?",
+      "answer": 30,
+      "unit": "reais",
+      "fact": "Dividir a conta em partes iguais é o jeito mais simples."
+    },
+    {
+      "id": "chute-matematica-e-logica-551",
+      "difficulty": "easy",
+      "text": "Uma camiseta custa 40 reais e uma calça custa o dobro. Quanto custam as duas juntas, em reais?",
+      "answer": 120,
+      "unit": "reais",
+      "fact": "A calça custa 80 reais."
+    },
+    {
+      "id": "chute-matematica-e-logica-552",
+      "difficulty": "easy",
+      "text": "Um celular de 1.200 reais é pago em 10 vezes. Quanto é cada parcela, em reais?",
+      "answer": 120,
+      "unit": "reais",
+      "fact": "Parcelas sem juros mantêm o preço total igual."
+    },
+    {
+      "id": "chute-matematica-e-logica-553",
+      "difficulty": "easy",
+      "text": "Um aluguel de 1.500 reais é dividido por 3 pessoas. Quanto cada uma paga, em reais?",
+      "answer": 500,
+      "unit": "reais",
+      "fact": "Dividir o aluguel ajuda a economizar."
+    },
+    {
+      "id": "chute-matematica-e-logica-554",
+      "difficulty": "easy",
+      "text": "Uma loja vende 3 camisetas por 90 reais. Quanto custa cada uma, em reais?",
+      "answer": 30,
+      "unit": "reais",
+      "fact": "Promoções de \"leve 3\" são comuns."
+    },
+    {
+      "id": "chute-matematica-e-logica-555",
+      "difficulty": "easy",
+      "text": "Uma garrafa de 2 litros enche quantos copos de 250 ml?",
+      "answer": 8,
+      "unit": "copos",
+      "fact": "Dois litros são 2.000 ml."
+    },
+    {
+      "id": "chute-matematica-e-logica-556",
+      "difficulty": "easy",
+      "text": "Um galão de 20 litros enche quantas garrafas de 500 ml?",
+      "answer": 40,
+      "unit": "garrafas",
+      "fact": "Galões de água de 20 litros são comuns em escritórios."
+    },
+    {
+      "id": "chute-matematica-e-logica-557",
+      "difficulty": "easy",
+      "text": "Quantos pacotes de 500 gramas formam 3 quilos?",
+      "answer": 6,
+      "unit": "pacotes",
+      "fact": "Cada quilo tem dois pacotes de meio quilo."
+    },
+    {
+      "id": "chute-matematica-e-logica-558",
+      "difficulty": "easy",
+      "text": "Quantos copos de 200 ml cabem numa jarra de 1 litro?",
+      "answer": 5,
+      "unit": "copos",
+      "fact": "Um litro tem mil mililitros."
+    },
+    {
+      "id": "chute-matematica-e-logica-559",
+      "difficulty": "easy",
+      "text": "Um ônibus faz o trajeto em 40 minutos. Quantos minutos leva ida e volta?",
+      "answer": 80,
+      "unit": "minutos",
+      "fact": "Isso dá uma hora e vinte minutos."
+    },
+    {
+      "id": "chute-matematica-e-logica-560",
+      "difficulty": "easy",
+      "text": "Uma pessoa dorme às 23h e acorda às 7h. Quantas horas dormiu?",
+      "answer": 8,
+      "unit": "horas",
+      "fact": "Oito horas é o recomendado para adultos."
+    },
+    {
+      "id": "chute-matematica-e-logica-561",
+      "difficulty": "easy",
+      "text": "Uma aula começa às 7h30 e termina às 12h. Quantos minutos dura a manhã de aulas?",
+      "answer": 270,
+      "unit": "minutos",
+      "fact": "São quatro horas e meia."
+    },
+    {
+      "id": "chute-matematica-e-logica-562",
+      "difficulty": "easy",
+      "text": "Uma planta cresce 2 cm por semana. Quantos cm ela cresce em 10 semanas?",
+      "answer": 20,
+      "unit": "cm",
+      "fact": "Plantas crescem mais rápido no verão."
+    },
+    {
+      "id": "chute-matematica-e-logica-563",
+      "difficulty": "easy",
+      "text": "Um cofre recebe 5 reais por dia. Quantos reais tem depois de 30 dias?",
+      "answer": 150,
+      "unit": "reais",
+      "fact": "Pequenas quantias somam muito com o tempo."
+    },
+    {
+      "id": "chute-matematica-e-logica-564",
+      "difficulty": "easy",
+      "text": "Um time ganhou 8 jogos, empatou 4 e perdeu 3. Quantos pontos fez, com 3 por vitória e 1 por empate?",
+      "answer": 28,
+      "unit": "pontos",
+      "fact": "As vitórias deram 24 pontos."
+    },
+    {
+      "id": "chute-matematica-e-logica-565",
+      "difficulty": "easy",
+      "text": "Um jogador fez 2 gols por jogo em 7 jogos. Quantos gols ele fez?",
+      "answer": 14,
+      "unit": "gols",
+      "fact": "Uma média de dois gols por jogo é rara no futebol profissional."
+    },
+    {
+      "id": "chute-matematica-e-logica-566",
+      "difficulty": "easy",
+      "text": "Um time de basquete fez 10 cestas de 2 e 5 de 3. Quantos pontos fez?",
+      "answer": 35,
+      "unit": "pontos",
+      "fact": "As cestas de 3 deram 15 pontos."
+    },
+    {
+      "id": "chute-matematica-e-logica-567",
+      "difficulty": "easy",
+      "text": "Numa turma de 40 alunos, 25% faltaram. Quantos alunos vieram?",
+      "answer": 30,
+      "unit": "alunos",
+      "fact": "Faltaram 10 alunos."
+    },
+    {
+      "id": "chute-matematica-e-logica-568",
+      "difficulty": "easy",
+      "text": "Uma escada tem 15 degraus de 20 cm. Quantos metros ela sobe?",
+      "answer": 3,
+      "unit": "metros",
+      "fact": "Cada andar de prédio tem cerca de 3 metros."
+    },
+    {
+      "id": "chute-matematica-e-logica-569",
+      "difficulty": "easy",
+      "text": "Um terreno tem 10 metros de frente e 30 de fundo. Qual é a área, em m²?",
+      "answer": 300,
+      "unit": "m²",
+      "fact": "Terrenos comuns têm 10 por 25 ou 10 por 30."
+    },
+    {
+      "id": "chute-matematica-e-logica-570",
+      "difficulty": "easy",
+      "text": "Um quarto tem 3 por 4 metros. Quantos metros quadrados de piso são precisos?",
+      "answer": 12,
+      "unit": "m²",
+      "fact": "É bom comprar uns 10% a mais por causa dos cortes."
+    },
+    {
+      "id": "chute-matematica-e-logica-571",
+      "difficulty": "easy",
+      "text": "Uma cerca vai cercar um terreno quadrado de 20 metros de lado. Quantos metros de cerca são precisos?",
+      "answer": 80,
+      "unit": "metros",
+      "fact": "O perímetro do quadrado é quatro vezes o lado."
+    },
+    {
+      "id": "chute-matematica-e-logica-572",
+      "difficulty": "easy",
+      "text": "Uma criança tem 8 anos e o pai tem 4 vezes a idade dela. Quantos anos tem o pai?",
+      "answer": 32,
+      "unit": "anos",
+      "fact": "Quatro vezes oito dá 32."
+    },
+    {
+      "id": "chute-matematica-e-logica-573",
+      "difficulty": "easy",
+      "text": "Um relógio atrasa 2 minutos por dia. Quantos minutos atrasa em uma semana?",
+      "answer": 14,
+      "unit": "minutos",
+      "fact": "Relógios de pulso precisam de ajuste de vez em quando."
     }
   ]
 }

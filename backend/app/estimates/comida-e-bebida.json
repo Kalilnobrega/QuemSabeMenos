@@ -3626,6 +3626,1433 @@
       "answer": 400,
       "unit": "gramas",
       "fact": "Crianças comem mais ou menos a metade."
+    },
+    {
+      "id": "chute-comida-e-bebida-478",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de pão de forma comum, aproximadamente?",
+      "answer": 500,
+      "unit": "gramas",
+      "fact": "O pão de forma integral costuma vir em pacotes de 400 a 500 gramas."
+    },
+    {
+      "id": "chute-comida-e-bebida-479",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pote comum de margarina?",
+      "answer": 500,
+      "unit": "gramas",
+      "fact": "Potes menores, de 250 gramas, também são comuns."
+    },
+    {
+      "id": "chute-comida-e-bebida-480",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem uma lata de atum comum?",
+      "answer": 170,
+      "unit": "gramas",
+      "fact": "O atum pode vir em óleo ou em água."
+    },
+    {
+      "id": "chute-comida-e-bebida-481",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem uma lata de sardinha comum?",
+      "answer": 125,
+      "unit": "gramas",
+      "fact": "A sardinha em lata tem muito ômega 3."
+    },
+    {
+      "id": "chute-comida-e-bebida-482",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem uma lata de milho verde comum?",
+      "answer": 200,
+      "unit": "gramas",
+      "fact": "O peso escrito costuma ser o do milho escorrido."
+    },
+    {
+      "id": "chute-comida-e-bebida-483",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de bolacha de água e sal comum?",
+      "answer": 200,
+      "unit": "gramas",
+      "fact": "Ela também é chamada de cream cracker."
+    },
+    {
+      "id": "chute-comida-e-bebida-484",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de farinha de trigo comum?",
+      "answer": 1000,
+      "unit": "gramas",
+      "fact": "A farinha costuma vir em pacotes de um quilo."
+    },
+    {
+      "id": "chute-comida-e-bebida-485",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de fubá comum?",
+      "answer": 1000,
+      "unit": "gramas",
+      "fact": "O fubá é a base do angu e da polenta."
+    },
+    {
+      "id": "chute-comida-e-bebida-486",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pote de sorvete de massa individual, aproximadamente?",
+      "answer": 100,
+      "unit": "gramas",
+      "fact": "O pote grande costuma ter dois litros."
+    },
+    {
+      "id": "chute-comida-e-bebida-487",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma caixinha de suco individual?",
+      "answer": 200,
+      "unit": "ml",
+      "fact": "Ela costuma vir com um canudinho colado."
+    },
+    {
+      "id": "chute-comida-e-bebida-488",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma garrafa de refrigerante de vidro, a pequena \"KS\"?",
+      "answer": 290,
+      "unit": "ml",
+      "fact": "As garrafas de vidro voltaram a ser retornáveis."
+    },
+    {
+      "id": "chute-comida-e-bebida-489",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma lata de energético comum?",
+      "answer": 250,
+      "unit": "ml",
+      "fact": "Também existem latas de 473 ml."
+    },
+    {
+      "id": "chute-comida-e-bebida-490",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma xícara de café pequena, de cafezinho?",
+      "answer": 50,
+      "unit": "ml",
+      "fact": "O cafezinho é servido em xícaras bem pequenas."
+    },
+    {
+      "id": "chute-comida-e-bebida-491",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma caneca comum?",
+      "answer": 300,
+      "unit": "ml",
+      "fact": "Canecas grandes passam de 400 ml."
+    },
+    {
+      "id": "chute-comida-e-bebida-492",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma taça de vinho servida, aproximadamente?",
+      "answer": 150,
+      "unit": "ml",
+      "fact": "A taça não deve ser enchida até a borda."
+    },
+    {
+      "id": "chute-comida-e-bebida-493",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma dose de cachaça, aproximadamente?",
+      "answer": 50,
+      "unit": "ml",
+      "fact": "Muitos bares servem a dose num copo pequeno."
+    },
+    {
+      "id": "chute-comida-e-bebida-494",
+      "difficulty": "easy",
+      "text": "Quantos litros tem uma garrafa de água mineral grande?",
+      "answer": 1.5,
+      "unit": "litros",
+      "fact": "Garrafões de 5 litros também são comuns."
+    },
+    {
+      "id": "chute-comida-e-bebida-495",
+      "difficulty": "easy",
+      "text": "Quantos ovos vêm numa bandeja grande de feira?",
+      "answer": 30,
+      "unit": "ovos",
+      "fact": "A bandeja de 30 ovos também é chamada de cartela."
+    },
+    {
+      "id": "chute-comida-e-bebida-496",
+      "difficulty": "easy",
+      "text": "Quantos pães de queijo pequenos tem um pacote de 1 kg, aproximadamente?",
+      "answer": 50,
+      "unit": "unidades",
+      "fact": "Os de coquetel são ainda menores."
+    },
+    {
+      "id": "chute-comida-e-bebida-497",
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um pastel de feira grande, aproximadamente?",
+      "answer": 20,
+      "unit": "cm",
+      "fact": "O pastel de feira é uma tradição de São Paulo."
+    },
+    {
+      "id": "chute-comida-e-bebida-498",
+      "difficulty": "easy",
+      "text": "Quantos reais custava um pastel de feira em São Paulo em 2024, aproximadamente?",
+      "answer": 10,
+      "unit": "reais",
+      "fact": "O caldo de cana é o acompanhamento clássico."
+    },
+    {
+      "id": "chute-comida-e-bebida-499",
+      "difficulty": "easy",
+      "text": "Quantos gramas de carne vão num hambúrguer caseiro comum, aproximadamente?",
+      "answer": 150,
+      "unit": "gramas",
+      "fact": "Hambúrgueres artesanais passam de 180 gramas."
+    },
+    {
+      "id": "chute-comida-e-bebida-500",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fritar uma batata frita congelada na airfryer, aproximadamente?",
+      "answer": 20,
+      "unit": "minutos",
+      "fact": "Sacudir o cesto no meio deixa a batata mais crocante."
+    },
+    {
+      "id": "chute-comida-e-bebida-501",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fazer um ovo frito, aproximadamente?",
+      "answer": 3,
+      "unit": "minutos",
+      "fact": "Gema mole pede menos tempo."
+    },
+    {
+      "id": "chute-comida-e-bebida-502",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para cozinhar batata para purê, aproximadamente?",
+      "answer": 20,
+      "unit": "minutos",
+      "fact": "A batata está pronta quando o garfo entra fácil."
+    },
+    {
+      "id": "chute-comida-e-bebida-503",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para cozinhar cenoura em pedaços, aproximadamente?",
+      "answer": 15,
+      "unit": "minutos",
+      "fact": "Cozida demais, a cenoura perde a cor."
+    },
+    {
+      "id": "chute-comida-e-bebida-504",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fazer um frango assado inteiro no forno, aproximadamente?",
+      "answer": 90,
+      "unit": "minutos",
+      "fact": "Um frango de 2 kg costuma levar mais de uma hora."
+    },
+    {
+      "id": "chute-comida-e-bebida-505",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para assar uma lasanha no forno, aproximadamente?",
+      "answer": 40,
+      "unit": "minutos",
+      "fact": "Cobrir com papel-alumínio evita que o queijo queime."
+    },
+    {
+      "id": "chute-comida-e-bebida-506",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fazer uma tapioca na frigideira, aproximadamente?",
+      "answer": 3,
+      "unit": "minutos",
+      "fact": "A goma de tapioca vem da mandioca."
+    },
+    {
+      "id": "chute-comida-e-bebida-507",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para cozinhar milho verde na panela comum, aproximadamente?",
+      "answer": 30,
+      "unit": "minutos",
+      "fact": "Na panela de pressão, leva bem menos."
+    },
+    {
+      "id": "chute-comida-e-bebida-508",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fazer pipoca na panela, aproximadamente?",
+      "answer": 5,
+      "unit": "minutos",
+      "fact": "O milho estoura quando a água de dentro vira vapor."
+    },
+    {
+      "id": "chute-comida-e-bebida-509",
+      "difficulty": "easy",
+      "text": "Quantas colheres de sopa de óleo se usa para fazer pipoca numa panela comum, aproximadamente?",
+      "answer": 3,
+      "unit": "colheres",
+      "fact": "Pouco óleo deixa a pipoca mais sequinha."
+    },
+    {
+      "id": "chute-comida-e-bebida-510",
+      "difficulty": "easy",
+      "text": "Quantos copos de arroz cru rendem uma panela para 4 pessoas, aproximadamente?",
+      "answer": 2,
+      "unit": "copos",
+      "fact": "O arroz mais que dobra de volume ao cozinhar."
+    },
+    {
+      "id": "chute-comida-e-bebida-511",
+      "difficulty": "easy",
+      "text": "Quantos copos de água se usa para cada copo de arroz, em geral?",
+      "answer": 2,
+      "unit": "copos",
+      "fact": "Arroz integral pede um pouco mais de água."
+    },
+    {
+      "id": "chute-comida-e-bebida-512",
+      "difficulty": "easy",
+      "text": "Quantos ovos leva uma omelete para uma pessoa, em geral?",
+      "answer": 2,
+      "unit": "ovos",
+      "fact": "Bater bem os ovos deixa a omelete mais fofa."
+    },
+    {
+      "id": "chute-comida-e-bebida-513",
+      "difficulty": "easy",
+      "text": "Quantas fatias de queijo vão num misto-quente comum?",
+      "answer": 2,
+      "unit": "fatias",
+      "fact": "O misto-quente é um clássico das padarias."
+    },
+    {
+      "id": "chute-comida-e-bebida-514",
+      "difficulty": "easy",
+      "text": "Quantas bolas de massa de pizza saem de 1 kg de farinha, aproximadamente?",
+      "answer": 5,
+      "unit": "bolas",
+      "fact": "Cada bola costuma virar uma pizza média."
+    },
+    {
+      "id": "chute-comida-e-bebida-515",
+      "difficulty": "easy",
+      "text": "Quantos minutos a massa de pão precisa crescer, aproximadamente?",
+      "answer": 60,
+      "unit": "minutos",
+      "fact": "A massa deve dobrar de tamanho."
+    },
+    {
+      "id": "chute-comida-e-bebida-516",
+      "difficulty": "easy",
+      "text": "Quantos dias dura um bolo caseiro fora da geladeira, aproximadamente?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "Bolos com recheio devem ficar na geladeira."
+    },
+    {
+      "id": "chute-comida-e-bebida-517",
+      "difficulty": "easy",
+      "text": "Quantos dias dura uma alface lavada na geladeira, aproximadamente?",
+      "answer": 5,
+      "unit": "dias",
+      "fact": "Guardar com papel-toalha ajuda a manter a alface firme."
+    },
+    {
+      "id": "chute-comida-e-bebida-518",
+      "difficulty": "easy",
+      "text": "Quantos dias dura um pão de forma depois de aberto, aproximadamente?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "Ele pode ser congelado para durar mais."
+    },
+    {
+      "id": "chute-comida-e-bebida-519",
+      "difficulty": "easy",
+      "text": "Quantos meses dura uma carne no freezer, aproximadamente?",
+      "answer": 6,
+      "unit": "meses",
+      "fact": "O freezer deve ficar a 18 graus negativos."
+    },
+    {
+      "id": "chute-comida-e-bebida-520",
+      "difficulty": "easy",
+      "text": "Quantos meses dura um pacote de arroz fechado, aproximadamente?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Arroz integral dura menos por causa da gordura do grão."
+    },
+    {
+      "id": "chute-comida-e-bebida-521",
+      "difficulty": "easy",
+      "text": "Quantos anos dura o mel fechado, em boas condições?",
+      "answer": 100,
+      "unit": "anos",
+      "fact": "Já acharam mel comestível em tumbas do Egito."
+    },
+    {
+      "id": "chute-comida-e-bebida-522",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem uma colher de sopa de maionese, aproximadamente?",
+      "answer": 90,
+      "unit": "kcal",
+      "fact": "A maionese é feita de ovo e óleo."
+    },
+    {
+      "id": "chute-comida-e-bebida-523",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem uma fatia de pão de forma, aproximadamente?",
+      "answer": 70,
+      "unit": "kcal",
+      "fact": "O pão integral tem um pouco mais de fibras."
+    },
+    {
+      "id": "chute-comida-e-bebida-524",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem um pão de queijo médio, aproximadamente?",
+      "answer": 100,
+      "unit": "kcal",
+      "fact": "O pão de queijo é feito com polvilho e queijo."
+    },
+    {
+      "id": "chute-comida-e-bebida-525",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem uma esfiha de carne, aproximadamente?",
+      "answer": 200,
+      "unit": "kcal",
+      "fact": "A esfiha chegou ao Brasil com os imigrantes árabes."
+    },
+    {
+      "id": "chute-comida-e-bebida-526",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem uma xícara de café sem açúcar, aproximadamente?",
+      "answer": 2,
+      "unit": "kcal",
+      "fact": "Quem engorda é o açúcar e o leite."
+    },
+    {
+      "id": "chute-comida-e-bebida-527",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem um copo de suco de laranja natural, aproximadamente?",
+      "answer": 110,
+      "unit": "kcal",
+      "fact": "O suco tem bastante açúcar natural da fruta."
+    },
+    {
+      "id": "chute-comida-e-bebida-528",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem um copo de leite desnatado, aproximadamente?",
+      "answer": 80,
+      "unit": "kcal",
+      "fact": "Ele tem quase a mesma proteína do integral."
+    },
+    {
+      "id": "chute-comida-e-bebida-529",
+      "difficulty": "easy",
+      "text": "Quantas calorias tem um iogurte natural pequeno, aproximadamente?",
+      "answer": 100,
+      "unit": "kcal",
+      "fact": "Os iogurtes adoçados têm bem mais."
+    },
+    {
+      "id": "chute-comida-e-bebida-530",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um pão de queijo médio, aproximadamente?",
+      "answer": 30,
+      "unit": "gramas",
+      "fact": "Os de coquetel pesam bem menos."
+    },
+    {
+      "id": "chute-comida-e-bebida-531",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa uma banana-nanica média, aproximadamente?",
+      "answer": 120,
+      "unit": "gramas",
+      "fact": "A banana é rica em potássio."
+    },
+    {
+      "id": "chute-comida-e-bebida-532",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa uma laranja média, aproximadamente?",
+      "answer": 180,
+      "unit": "gramas",
+      "fact": "A laranja-pera é a mais vendida no Brasil."
+    },
+    {
+      "id": "chute-comida-e-bebida-533",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um tomate médio, aproximadamente?",
+      "answer": 120,
+      "unit": "gramas",
+      "fact": "O tomate é, na botânica, uma fruta."
+    },
+    {
+      "id": "chute-comida-e-bebida-534",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa uma batata média, aproximadamente?",
+      "answer": 150,
+      "unit": "gramas",
+      "fact": "A batata veio dos Andes."
+    },
+    {
+      "id": "chute-comida-e-bebida-535",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa uma cebola média, aproximadamente?",
+      "answer": 120,
+      "unit": "gramas",
+      "fact": "Cortar cebola faz chorar por causa de um gás."
+    },
+    {
+      "id": "chute-comida-e-bebida-536",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um limão-taiti médio, aproximadamente?",
+      "answer": 80,
+      "unit": "gramas",
+      "fact": "O limão-taiti é o mais comum nas feiras."
+    },
+    {
+      "id": "chute-comida-e-bebida-537",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa uma melancia comum de feira, aproximadamente?",
+      "answer": 8,
+      "unit": "kg",
+      "fact": "A melancia tem mais de 90% de água."
+    },
+    {
+      "id": "chute-comida-e-bebida-538",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa um abacaxi médio, aproximadamente?",
+      "answer": 1.5,
+      "unit": "kg",
+      "fact": "O abacaxi não amadurece depois de colhido."
+    },
+    {
+      "id": "chute-comida-e-bebida-539",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa um mamão-formosa médio, aproximadamente?",
+      "answer": 1.5,
+      "unit": "kg",
+      "fact": "O mamão papaia é bem menor."
+    },
+    {
+      "id": "chute-comida-e-bebida-540",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa uma jaca grande, aproximadamente?",
+      "answer": 15,
+      "unit": "kg",
+      "fact": "A jaca é a maior fruta que nasce em árvore."
+    },
+    {
+      "id": "chute-comida-e-bebida-541",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa uma abóbora-moranga média, aproximadamente?",
+      "answer": 3,
+      "unit": "kg",
+      "fact": "Ela é usada no camarão na moranga."
+    },
+    {
+      "id": "chute-comida-e-bebida-542",
+      "difficulty": "easy",
+      "text": "Quantos quilos de carne vão numa feijoada para 10 pessoas, aproximadamente?",
+      "answer": 3,
+      "unit": "kg",
+      "fact": "A feijoada leva vários cortes de porco."
+    },
+    {
+      "id": "chute-comida-e-bebida-543",
+      "difficulty": "medium",
+      "text": "Quantos dias leva a fermentação de um iogurte caseiro, aproximadamente, em horas?",
+      "answer": 8,
+      "unit": "horas",
+      "fact": "O leite engrossa pela ação das bactérias."
+    },
+    {
+      "id": "chute-comida-e-bebida-544",
+      "difficulty": "medium",
+      "text": "Quantos dias leva para fazer chucrute em casa, aproximadamente?",
+      "answer": 21,
+      "unit": "dias",
+      "fact": "O chucrute é repolho fermentado."
+    },
+    {
+      "id": "chute-comida-e-bebida-545",
+      "difficulty": "medium",
+      "text": "Quantos meses um queijo minas padrão precisa maturar, no mínimo?",
+      "answer": 1,
+      "unit": "mês",
+      "fact": "O queijo minas frescal não passa por maturação."
+    },
+    {
+      "id": "chute-comida-e-bebida-546",
+      "difficulty": "medium",
+      "text": "Quantos dias leva para uma banana verde amadurecer em casa, aproximadamente?",
+      "answer": 5,
+      "unit": "dias",
+      "fact": "Guardar com uma maçã acelera o amadurecimento."
+    },
+    {
+      "id": "chute-comida-e-bebida-547",
+      "difficulty": "medium",
+      "text": "Quantos litros de leite rendem 1 kg de manteiga, aproximadamente?",
+      "answer": 20,
+      "unit": "litros",
+      "fact": "A manteiga é feita com a gordura do leite."
+    },
+    {
+      "id": "chute-comida-e-bebida-548",
+      "difficulty": "medium",
+      "text": "Quantos quilos de tomate rendem 1 kg de extrato de tomate, aproximadamente?",
+      "answer": 6,
+      "unit": "kg",
+      "fact": "O extrato é tomate cozido até perder a água."
+    },
+    {
+      "id": "chute-comida-e-bebida-549",
+      "difficulty": "medium",
+      "text": "Quantos quilos de uva rendem uma garrafa de vinho, aproximadamente?",
+      "answer": 1,
+      "unit": "kg",
+      "fact": "Cada cacho de uva rende pouco suco."
+    },
+    {
+      "id": "chute-comida-e-bebida-550",
+      "difficulty": "medium",
+      "text": "Quantos quilos de café verde rendem 1 kg de café torrado, aproximadamente?",
+      "answer": 1.2,
+      "unit": "kg",
+      "fact": "O grão perde água e fica mais leve na torra."
+    },
+    {
+      "id": "chute-comida-e-bebida-551",
+      "difficulty": "medium",
+      "text": "Quantos grãos de arroz cabem numa colher de sopa, aproximadamente?",
+      "answer": 500,
+      "unit": "grãos",
+      "fact": "Cada grão pesa cerca de 0,02 grama."
+    },
+    {
+      "id": "chute-comida-e-bebida-552",
+      "difficulty": "medium",
+      "text": "Quantas laranjas cabem numa caixa de colheita de 40 kg, aproximadamente?",
+      "answer": 200,
+      "unit": "laranjas",
+      "fact": "O Brasil é o maior produtor de suco de laranja."
+    },
+    {
+      "id": "chute-comida-e-bebida-553",
+      "difficulty": "medium",
+      "text": "Quantas espigas de milho tem um pé de milho, em geral?",
+      "answer": 2,
+      "unit": "espigas",
+      "fact": "O cabelo do milho é chamado de estigma."
+    },
+    {
+      "id": "chute-comida-e-bebida-554",
+      "difficulty": "medium",
+      "text": "Quantos grãos tem uma vagem de feijão, em média?",
+      "answer": 6,
+      "unit": "grãos",
+      "fact": "O feijão é uma leguminosa, como a ervilha."
+    },
+    {
+      "id": "chute-comida-e-bebida-555",
+      "difficulty": "medium",
+      "text": "Quantas sementes tem um maracujá, aproximadamente?",
+      "answer": 250,
+      "unit": "sementes",
+      "fact": "Cada semente fica envolvida pela polpa."
+    },
+    {
+      "id": "chute-comida-e-bebida-556",
+      "difficulty": "medium",
+      "text": "Quantos gomos tem uma tangerina, em média?",
+      "answer": 10,
+      "unit": "gomos",
+      "fact": "A tangerina também é chamada de mexerica e bergamota."
+    },
+    {
+      "id": "chute-comida-e-bebida-557",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de abacate, aproximadamente?",
+      "answer": 160,
+      "unit": "kcal",
+      "fact": "A gordura do abacate é considerada saudável."
+    },
+    {
+      "id": "chute-comida-e-bebida-558",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de queijo muçarela, aproximadamente?",
+      "answer": 300,
+      "unit": "kcal",
+      "fact": "A muçarela derrete bem por causa da umidade."
+    },
+    {
+      "id": "chute-comida-e-bebida-559",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de amendoim, aproximadamente?",
+      "answer": 570,
+      "unit": "kcal",
+      "fact": "O amendoim é rico em gordura e proteína."
+    },
+    {
+      "id": "chute-comida-e-bebida-560",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de pipoca sem manteiga, aproximadamente?",
+      "answer": 380,
+      "unit": "kcal",
+      "fact": "A pipoca é um grão integral."
+    },
+    {
+      "id": "chute-comida-e-bebida-561",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de ovo cozido, aproximadamente?",
+      "answer": 155,
+      "unit": "kcal",
+      "fact": "Um ovo médio pesa cerca de 50 gramas."
+    },
+    {
+      "id": "chute-comida-e-bebida-562",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de mandioca cozida, aproximadamente?",
+      "answer": 125,
+      "unit": "kcal",
+      "fact": "A mandioca é chamada de aipim e macaxeira."
+    },
+    {
+      "id": "chute-comida-e-bebida-563",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de tapioca pronta, aproximadamente?",
+      "answer": 240,
+      "unit": "kcal",
+      "fact": "A tapioca é feita só com a goma da mandioca."
+    },
+    {
+      "id": "chute-comida-e-bebida-564",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de cuscuz de milho, aproximadamente?",
+      "answer": 110,
+      "unit": "kcal",
+      "fact": "O cuscuz nordestino é feito com flocão de milho."
+    },
+    {
+      "id": "chute-comida-e-bebida-565",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de alface, aproximadamente?",
+      "answer": 15,
+      "unit": "kcal",
+      "fact": "A alface tem mais de 95% de água."
+    },
+    {
+      "id": "chute-comida-e-bebida-566",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem 100 gramas de chocolate meio amargo, aproximadamente?",
+      "answer": 500,
+      "unit": "kcal",
+      "fact": "Quanto mais cacau, menos açúcar."
+    },
+    {
+      "id": "chute-comida-e-bebida-567",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem um açaí de 500 ml com granola, aproximadamente?",
+      "answer": 600,
+      "unit": "kcal",
+      "fact": "O açaí puro é bem menos calórico."
+    },
+    {
+      "id": "chute-comida-e-bebida-568",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem uma lata de leite condensado inteira, aproximadamente?",
+      "answer": 1300,
+      "unit": "kcal",
+      "fact": "Ela tem muito açúcar e gordura do leite."
+    },
+    {
+      "id": "chute-comida-e-bebida-569",
+      "difficulty": "medium",
+      "text": "Quantas calorias tem um prato feito comum, com arroz, feijão, carne e salada, aproximadamente?",
+      "answer": 700,
+      "unit": "kcal",
+      "fact": "O PF é o almoço mais comum dos brasileiros."
+    },
+    {
+      "id": "chute-comida-e-bebida-570",
+      "difficulty": "medium",
+      "text": "Quantos gramas de proteína tem 100 g de carne bovina cozida, aproximadamente?",
+      "answer": 26,
+      "unit": "gramas",
+      "fact": "A carne também tem ferro e vitamina B12."
+    },
+    {
+      "id": "chute-comida-e-bebida-571",
+      "difficulty": "medium",
+      "text": "Quantos gramas de proteína tem 100 g de feijão cozido, aproximadamente?",
+      "answer": 5,
+      "unit": "gramas",
+      "fact": "Arroz com feijão juntos formam uma proteína mais completa."
+    },
+    {
+      "id": "chute-comida-e-bebida-572",
+      "difficulty": "medium",
+      "text": "Quantos gramas de proteína tem uma lata de atum, aproximadamente?",
+      "answer": 40,
+      "unit": "gramas",
+      "fact": "O atum é popular entre quem faz academia."
+    },
+    {
+      "id": "chute-comida-e-bebida-573",
+      "difficulty": "medium",
+      "text": "Quantos gramas de fibra se recomenda comer por dia, aproximadamente?",
+      "answer": 25,
+      "unit": "gramas",
+      "fact": "Frutas, verduras e grãos integrais são as melhores fontes."
+    },
+    {
+      "id": "chute-comida-e-bebida-574",
+      "difficulty": "medium",
+      "text": "Quantos miligramas de cafeína tem um cafezinho coado pequeno, aproximadamente?",
+      "answer": 40,
+      "unit": "mg",
+      "fact": "Um café expresso tem um pouco mais."
+    },
+    {
+      "id": "chute-comida-e-bebida-575",
+      "difficulty": "medium",
+      "text": "Quantos miligramas de cafeína tem uma xícara de chá-preto, aproximadamente?",
+      "answer": 45,
+      "unit": "mg",
+      "fact": "O chá-verde tem menos cafeína."
+    },
+    {
+      "id": "chute-comida-e-bebida-576",
+      "difficulty": "medium",
+      "text": "Quantos miligramas de cafeína tem um chocolate ao leite de 100 g, aproximadamente?",
+      "answer": 20,
+      "unit": "mg",
+      "fact": "O chocolate amargo tem mais."
+    },
+    {
+      "id": "chute-comida-e-bebida-577",
+      "difficulty": "medium",
+      "text": "Quantos miligramas de vitamina C tem uma laranja média, aproximadamente?",
+      "answer": 70,
+      "unit": "mg",
+      "fact": "A acerola tem muito mais vitamina C que a laranja."
+    },
+    {
+      "id": "chute-comida-e-bebida-578",
+      "difficulty": "medium",
+      "text": "Quantas vezes mais vitamina C que a laranja tem a acerola, aproximadamente?",
+      "answer": 30,
+      "unit": "vezes",
+      "fact": "A acerola é originária da América Central."
+    },
+    {
+      "id": "chute-comida-e-bebida-579",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura ideal da água para fazer café coado, em °C?",
+      "answer": 92,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "Água fervendo pode queimar o pó e amargar o café."
+    },
+    {
+      "id": "chute-comida-e-bebida-580",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do leite vaporizado para um cappuccino, em °C, aproximadamente?",
+      "answer": 65,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "Acima de 70 °C o leite perde a doçura."
+    },
+    {
+      "id": "chute-comida-e-bebida-581",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do óleo para fritar batata, na segunda fritura, em °C?",
+      "answer": 190,
+      "unit": "°C",
+      "fact": "Fritar duas vezes deixa a batata mais crocante."
+    },
+    {
+      "id": "chute-comida-e-bebida-582",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do forno para assar pão francês, em °C, aproximadamente?",
+      "answer": 220,
+      "unit": "°C",
+      "fact": "O vapor no forno deixa a casca crocante."
+    },
+    {
+      "id": "chute-comida-e-bebida-583",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura interna de um frango bem cozido, em °C?",
+      "answer": 74,
+      "unit": "°C",
+      "fact": "É a temperatura segura contra bactérias."
+    },
+    {
+      "id": "chute-comida-e-bebida-584",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura interna de um bife malpassado, em °C, aproximadamente?",
+      "answer": 50,
+      "unit": "°C",
+      "fact": "Ao ponto, a carne chega perto de 60 °C."
+    },
+    {
+      "id": "chute-comida-e-bebida-585",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura em que se serve um vinho branco, em °C, aproximadamente?",
+      "answer": 10,
+      "unit": "°C",
+      "fact": "Vinho branco muito gelado perde o aroma."
+    },
+    {
+      "id": "chute-comida-e-bebida-586",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura em que se toma um chimarrão, em °C, aproximadamente?",
+      "answer": 75,
+      "unit": "°C",
+      "fact": "Água fervendo queima a erva-mate."
+    },
+    {
+      "id": "chute-comida-e-bebida-587",
+      "difficulty": "medium",
+      "text": "Quantos graus negativos tem um picolé saindo do freezer, aproximadamente?",
+      "answer": -18,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "Por isso ele gruda na língua."
+    },
+    {
+      "id": "chute-comida-e-bebida-588",
+      "difficulty": "medium",
+      "text": "Quantos litros de óleo uma fritadeira de pastelaria comum usa, aproximadamente?",
+      "answer": 20,
+      "unit": "litros",
+      "fact": "O óleo precisa ser trocado com frequência."
+    },
+    {
+      "id": "chute-comida-e-bebida-589",
+      "difficulty": "medium",
+      "text": "Quantos pastéis uma pastelaria de feira vende num dia de movimento, aproximadamente?",
+      "answer": 500,
+      "unit": "pastéis",
+      "fact": "O pastel de feira tem massa fina e crocante."
+    },
+    {
+      "id": "chute-comida-e-bebida-590",
+      "difficulty": "medium",
+      "text": "Quantos pães franceses uma padaria média vende por dia, aproximadamente?",
+      "answer": 2000,
+      "unit": "pães",
+      "fact": "Muitas padarias fazem fornadas várias vezes ao dia."
+    },
+    {
+      "id": "chute-comida-e-bebida-591",
+      "difficulty": "medium",
+      "text": "Quantos quilos de farinha leva uma fornada de 100 pães franceses, aproximadamente?",
+      "answer": 3,
+      "unit": "kg",
+      "fact": "O pão francês leva farinha, água, sal e fermento."
+    },
+    {
+      "id": "chute-comida-e-bebida-592",
+      "difficulty": "medium",
+      "text": "Quantos litros de suco de laranja saem de 10 kg de laranja, aproximadamente?",
+      "answer": 4.5,
+      "unit": "litros",
+      "fact": "Metade do peso da laranja vira suco."
+    },
+    {
+      "id": "chute-comida-e-bebida-593",
+      "difficulty": "medium",
+      "text": "Quantos quilos de açúcar saem de uma tonelada de cana, aproximadamente?",
+      "answer": 130,
+      "unit": "kg",
+      "fact": "A cana também vira etanol."
+    },
+    {
+      "id": "chute-comida-e-bebida-594",
+      "difficulty": "medium",
+      "text": "Quantos litros de etanol saem de uma tonelada de cana, aproximadamente?",
+      "answer": 85,
+      "unit": "litros",
+      "fact": "O Brasil é pioneiro no carro a álcool."
+    },
+    {
+      "id": "chute-comida-e-bebida-595",
+      "difficulty": "medium",
+      "text": "Quantos litros de cachaça saem de uma tonelada de cana, aproximadamente?",
+      "answer": 100,
+      "unit": "litros",
+      "fact": "A cachaça é feita do caldo fermentado da cana."
+    },
+    {
+      "id": "chute-comida-e-bebida-596",
+      "difficulty": "medium",
+      "text": "Quantos anos uma cachaça precisa ficar em madeira para ser \"envelhecida\"?",
+      "answer": 1,
+      "unit": "ano",
+      "fact": "Pela lei, pelo menos metade dela precisa envelhecer um ano."
+    },
+    {
+      "id": "chute-comida-e-bebida-597",
+      "difficulty": "medium",
+      "text": "Quantos tipos de uva diferentes podem entrar no vinho do Porto, aproximadamente?",
+      "answer": 80,
+      "unit": "tipos",
+      "fact": "Os vinhos mais comuns usam poucas uvas principais."
+    },
+    {
+      "id": "chute-comida-e-bebida-598",
+      "difficulty": "medium",
+      "text": "Quantos anos um vinho do Porto vintage costuma envelhecer na garrafa, no mínimo recomendado?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Os melhores evoluem por décadas."
+    },
+    {
+      "id": "chute-comida-e-bebida-599",
+      "difficulty": "medium",
+      "text": "Quantos anos, no mínimo, um uísque escocês precisa envelhecer?",
+      "answer": 3,
+      "unit": "anos",
+      "fact": "O tempo é contado em barris de carvalho."
+    },
+    {
+      "id": "chute-comida-e-bebida-600",
+      "difficulty": "medium",
+      "text": "Quantos dias leva para fazer um pão de fermentação natural, contando o fermento pronto, aproximadamente?",
+      "answer": 1,
+      "unit": "dia",
+      "fact": "A massa fermenta devagar, por muitas horas."
+    },
+    {
+      "id": "chute-comida-e-bebida-601",
+      "difficulty": "medium",
+      "text": "Quantos dias leva para criar um fermento natural do zero, aproximadamente?",
+      "answer": 7,
+      "unit": "dias",
+      "fact": "O fermento natural é chamado de levain."
+    },
+    {
+      "id": "chute-comida-e-bebida-602",
+      "difficulty": "medium",
+      "text": "Quantas horas o feijão deve ficar de molho antes de cozinhar, aproximadamente?",
+      "answer": 8,
+      "unit": "horas",
+      "fact": "O molho diminui o tempo de cozimento."
+    },
+    {
+      "id": "chute-comida-e-bebida-603",
+      "difficulty": "medium",
+      "text": "Quantas horas leva um churrasco de costela no bafo, aproximadamente?",
+      "answer": 6,
+      "unit": "horas",
+      "fact": "Fogo baixo e paciência deixam a carne macia."
+    },
+    {
+      "id": "chute-comida-e-bebida-604",
+      "difficulty": "medium",
+      "text": "Quantas horas leva uma carne de panela para ficar macia na panela comum, aproximadamente?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Na panela de pressão leva menos de uma hora."
+    },
+    {
+      "id": "chute-comida-e-bebida-605",
+      "difficulty": "medium",
+      "text": "Quantas horas leva para assar um pernil inteiro, aproximadamente?",
+      "answer": 4,
+      "unit": "horas",
+      "fact": "O pernil costuma ser temperado na véspera."
+    },
+    {
+      "id": "chute-comida-e-bebida-606",
+      "difficulty": "medium",
+      "text": "Quantas horas um peru de Natal leva para assar, aproximadamente?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Muitos perus já vêm com termômetro pop-up."
+    },
+    {
+      "id": "chute-comida-e-bebida-607",
+      "difficulty": "medium",
+      "text": "Quantas horas leva para fazer doce de leite na panela comum, aproximadamente?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "O doce precisa ser mexido sem parar no final."
+    },
+    {
+      "id": "chute-comida-e-bebida-608",
+      "difficulty": "medium",
+      "text": "Quantas horas leva para cozinhar a lata de leite condensado na pressão para virar doce de leite, aproximadamente?",
+      "answer": 0.7,
+      "unit": "hora",
+      "fact": "A lata precisa ficar sempre coberta de água."
+    },
+    {
+      "id": "chute-comida-e-bebida-609",
+      "difficulty": "medium",
+      "text": "Quantos dias leva para fazer charque, a carne-seca, aproximadamente?",
+      "answer": 5,
+      "unit": "dias",
+      "fact": "A carne é salgada e seca ao sol."
+    },
+    {
+      "id": "chute-comida-e-bebida-610",
+      "difficulty": "medium",
+      "text": "Quantas horas leva para curar um salame artesanal, em semanas?",
+      "answer": 4,
+      "unit": "semanas",
+      "fact": "O salame perde água e ganha sabor."
+    },
+    {
+      "id": "chute-comida-e-bebida-611",
+      "difficulty": "medium",
+      "text": "Quantos ingredientes leva a receita clássica do pão de ló?",
+      "answer": 3,
+      "unit": "ingredientes",
+      "fact": "Ovos, açúcar e farinha formam o pão de ló."
+    },
+    {
+      "id": "chute-comida-e-bebida-612",
+      "difficulty": "medium",
+      "text": "Quantos ovos leva um pão de ló comum, aproximadamente?",
+      "answer": 6,
+      "unit": "ovos",
+      "fact": "Bater bem os ovos é o segredo da massa fofa."
+    },
+    {
+      "id": "chute-comida-e-bebida-613",
+      "difficulty": "medium",
+      "text": "Quantas gemas leva um quindim, para uma receita comum, aproximadamente?",
+      "answer": 12,
+      "unit": "gemas",
+      "fact": "O quindim tem origem nos doces portugueses de gemas."
+    },
+    {
+      "id": "chute-comida-e-bebida-614",
+      "difficulty": "medium",
+      "text": "Quantas colheres de sopa de chocolate em pó vão numa receita de brigadeiro, aproximadamente?",
+      "answer": 3,
+      "unit": "colheres",
+      "fact": "Alguns usam cacau em pó para um brigadeiro menos doce."
+    },
+    {
+      "id": "chute-comida-e-bebida-615",
+      "difficulty": "medium",
+      "text": "Quantas camadas tem um bolo de rolo pernambucano, aproximadamente?",
+      "answer": 15,
+      "unit": "camadas",
+      "fact": "As camadas são finíssimas e recheadas de goiabada."
+    },
+    {
+      "id": "chute-comida-e-bebida-616",
+      "difficulty": "medium",
+      "text": "Quantos tipos de queijo vão numa pizza de quatro queijos?",
+      "answer": 4,
+      "unit": "queijos",
+      "fact": "Os mais comuns são muçarela, provolone, parmesão e catupiry."
+    },
+    {
+      "id": "chute-comida-e-bebida-617",
+      "difficulty": "medium",
+      "text": "Quantos centímetros tem uma pizza média, aproximadamente?",
+      "answer": 30,
+      "unit": "cm",
+      "fact": "A pizza grande costuma ter 35 cm."
+    },
+    {
+      "id": "chute-comida-e-bebida-618",
+      "difficulty": "medium",
+      "text": "Quantos sabores de pizza um cardápio comum de pizzaria tem, aproximadamente?",
+      "answer": 40,
+      "unit": "sabores",
+      "fact": "Os mais pedidos são muçarela e calabresa."
+    },
+    {
+      "id": "chute-comida-e-bebida-619",
+      "difficulty": "medium",
+      "text": "Quantos espetos tem um rodízio de churrascaria, em tipos de carne, aproximadamente?",
+      "answer": 15,
+      "unit": "tipos",
+      "fact": "A picanha é a carne mais esperada do rodízio."
+    },
+    {
+      "id": "chute-comida-e-bebida-620",
+      "difficulty": "medium",
+      "text": "Quantos tipos de peixe são comuns num rodízio de sushi, aproximadamente?",
+      "answer": 4,
+      "unit": "tipos",
+      "fact": "O salmão é de longe o mais consumido."
+    },
+    {
+      "id": "chute-comida-e-bebida-621",
+      "difficulty": "medium",
+      "text": "Quantas peças tem um combinado de sushi para uma pessoa, aproximadamente?",
+      "answer": 20,
+      "unit": "peças",
+      "fact": "O sushi chegou ao Brasil com os imigrantes japoneses."
+    },
+    {
+      "id": "chute-comida-e-bebida-622",
+      "difficulty": "medium",
+      "text": "Quantos gramas de arroz vão num sushi de salmão, o niguiri, aproximadamente?",
+      "answer": 20,
+      "unit": "gramas",
+      "fact": "O arroz é temperado com vinagre e açúcar."
+    },
+    {
+      "id": "chute-comida-e-bebida-623",
+      "difficulty": "medium",
+      "text": "Quantos tipos de massa de pastel existem na feira comum, em sabores principais, aproximadamente?",
+      "answer": 10,
+      "unit": "sabores",
+      "fact": "Carne, queijo e palmito estão entre os favoritos."
+    },
+    {
+      "id": "chute-comida-e-bebida-624",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de açúcar comum?",
+      "answer": 1000,
+      "unit": "gramas",
+      "fact": "O açúcar refinado é o mais vendido."
+    },
+    {
+      "id": "chute-comida-e-bebida-625",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de sal comum?",
+      "answer": 1000,
+      "unit": "gramas",
+      "fact": "O sal de cozinha tem iodo adicionado por lei."
+    },
+    {
+      "id": "chute-comida-e-bebida-626",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um bombom comum, aproximadamente?",
+      "answer": 20,
+      "unit": "gramas",
+      "fact": "Caixas de bombom são presente clássico de Páscoa."
+    },
+    {
+      "id": "chute-comida-e-bebida-627",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um saquinho de pipoca de micro-ondas, aproximadamente?",
+      "answer": 100,
+      "unit": "gramas",
+      "fact": "A pipoca estoura em uns três minutos."
+    },
+    {
+      "id": "chute-comida-e-bebida-628",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de salgadinho comum, aproximadamente?",
+      "answer": 100,
+      "unit": "gramas",
+      "fact": "Boa parte do pacote é ar, para proteger o salgadinho."
+    },
+    {
+      "id": "chute-comida-e-bebida-629",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pote comum de iogurte grego individual?",
+      "answer": 100,
+      "unit": "gramas",
+      "fact": "O iogurte grego é mais cremoso por ter menos soro."
+    },
+    {
+      "id": "chute-comida-e-bebida-630",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pote de Nutella comum, o médio?",
+      "answer": 350,
+      "unit": "gramas",
+      "fact": "A Nutella leva avelã e cacau."
+    },
+    {
+      "id": "chute-comida-e-bebida-631",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um pacote de queijo ralado comum?",
+      "answer": 50,
+      "unit": "gramas",
+      "fact": "Ralar na hora deixa o queijo mais saboroso."
+    },
+    {
+      "id": "chute-comida-e-bebida-632",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma garrafa de azeite comum?",
+      "answer": 500,
+      "unit": "ml",
+      "fact": "O azeite deve ser guardado longe da luz."
+    },
+    {
+      "id": "chute-comida-e-bebida-633",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma garrafa de óleo de soja comum?",
+      "answer": 900,
+      "unit": "ml",
+      "fact": "O óleo de soja é o mais usado nas cozinhas brasileiras."
+    },
+    {
+      "id": "chute-comida-e-bebida-634",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem um frasco de ketchup comum, aproximadamente?",
+      "answer": 400,
+      "unit": "gramas",
+      "fact": "O ketchup já foi vendido como remédio."
+    },
+    {
+      "id": "chute-comida-e-bebida-635",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma garrafa de cachaça comum?",
+      "answer": 1000,
+      "unit": "ml",
+      "fact": "Garrafas menores, de 700 ml, também são comuns."
+    },
+    {
+      "id": "chute-comida-e-bebida-636",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem um copo de requeijão, aproximadamente?",
+      "answer": 250,
+      "unit": "ml",
+      "fact": "Muita gente usa o copo de requeijão como copo de casa."
+    },
+    {
+      "id": "chute-comida-e-bebida-637",
+      "difficulty": "easy",
+      "text": "Quantos litros tem uma garrafa térmica comum de café?",
+      "answer": 1,
+      "unit": "litro",
+      "fact": "A garrafa térmica tem paredes duplas com vácuo."
+    },
+    {
+      "id": "chute-comida-e-bebida-638",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fazer um miojo?",
+      "answer": 3,
+      "unit": "minutos",
+      "fact": "O macarrão instantâneo foi criado no Japão em 1958."
+    },
+    {
+      "id": "chute-comida-e-bebida-639",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para fazer um ovo cozido com gema dura, aproximadamente?",
+      "answer": 10,
+      "unit": "minutos",
+      "fact": "Colocar o ovo em água fria depois facilita descascar."
+    },
+    {
+      "id": "chute-comida-e-bebida-640",
+      "difficulty": "easy",
+      "text": "Quantos minutos leva para assar uma pizza no forno de casa, aproximadamente?",
+      "answer": 15,
+      "unit": "minutos",
+      "fact": "Forno de pizzaria assa em poucos minutos."
+    },
+    {
+      "id": "chute-comida-e-bebida-641",
+      "difficulty": "easy",
+      "text": "Quantos ovos leva um bolo simples, em geral?",
+      "answer": 3,
+      "unit": "ovos",
+      "fact": "Bater as claras em neve deixa o bolo mais fofo."
+    },
+    {
+      "id": "chute-comida-e-bebida-642",
+      "difficulty": "easy",
+      "text": "Quantos pães de queijo se come por pessoa num café da manhã, em média?",
+      "answer": 4,
+      "unit": "pães",
+      "fact": "O pão de queijo é símbolo de Minas Gerais."
+    },
+    {
+      "id": "chute-comida-e-bebida-643",
+      "difficulty": "easy",
+      "text": "Quantos pães franceses um pacote de padaria costuma ter, numa compra comum?",
+      "answer": 6,
+      "unit": "pães",
+      "fact": "O pão francês é vendido por quilo em muitas padarias."
+    },
+    {
+      "id": "chute-comida-e-bebida-644",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um pão francês, aproximadamente?",
+      "answer": 50,
+      "unit": "gramas",
+      "fact": "O pão francês não existe na França."
+    },
+    {
+      "id": "chute-comida-e-bebida-645",
+      "difficulty": "easy",
+      "text": "Quantas colheres de sopa de açúcar um cafezinho adoçado leva, em média?",
+      "answer": 1,
+      "unit": "colher",
+      "fact": "Muita gente usa adoçante no lugar do açúcar."
+    },
+    {
+      "id": "chute-comida-e-bebida-646",
+      "difficulty": "easy",
+      "text": "Quantos minutos o chá precisa ficar na água quente, em geral?",
+      "answer": 4,
+      "unit": "minutos",
+      "fact": "Cada tipo de chá tem um tempo ideal."
+    },
+    {
+      "id": "chute-comida-e-bebida-647",
+      "difficulty": "easy",
+      "text": "Quantos tomates vão num molho caseiro para 4 pessoas, aproximadamente?",
+      "answer": 6,
+      "unit": "tomates",
+      "fact": "O tomate italiano é o melhor para molho."
+    },
+    {
+      "id": "chute-comida-e-bebida-648",
+      "difficulty": "easy",
+      "text": "Quantos dentes de alho vão num arroz para 4 pessoas, em geral?",
+      "answer": 2,
+      "unit": "dentes",
+      "fact": "O alho é frito antes de entrar o arroz."
+    },
+    {
+      "id": "chute-comida-e-bebida-649",
+      "difficulty": "easy",
+      "text": "Quantas folhas de louro vão num feijão comum?",
+      "answer": 2,
+      "unit": "folhas",
+      "fact": "O louro dá aroma ao feijão."
+    },
+    {
+      "id": "chute-comida-e-bebida-650",
+      "difficulty": "easy",
+      "text": "Quantas latas de cerveja se calcula por adulto num churrasco, aproximadamente?",
+      "answer": 6,
+      "unit": "latas",
+      "fact": "A quantidade depende muito do calor e da duração."
+    },
+    {
+      "id": "chute-comida-e-bebida-651",
+      "difficulty": "easy",
+      "text": "Quantos sacos de carvão se usa num churrasco para 10 pessoas, aproximadamente?",
+      "answer": 2,
+      "unit": "sacos",
+      "fact": "Um saco comum tem 5 quilos."
+    },
+    {
+      "id": "chute-comida-e-bebida-652",
+      "difficulty": "easy",
+      "text": "Quantos quilos tem um saco de carvão comum?",
+      "answer": 5,
+      "unit": "kg",
+      "fact": "O carvão vegetal é feito de madeira queimada."
+    },
+    {
+      "id": "chute-comida-e-bebida-653",
+      "difficulty": "easy",
+      "text": "Quantas bolas de sorvete vêm numa casquinha dupla?",
+      "answer": 2,
+      "unit": "bolas",
+      "fact": "O sorvete de casquinha é mais antigo do que se pensa."
+    },
+    {
+      "id": "chute-comida-e-bebida-654",
+      "difficulty": "easy",
+      "text": "Quantas cores tem uma bala de goma de arco-íris, aproximadamente?",
+      "answer": 7,
+      "unit": "cores",
+      "fact": "Os corantes dão cores mas quase não mudam o sabor."
+    },
+    {
+      "id": "chute-comida-e-bebida-655",
+      "difficulty": "easy",
+      "text": "Quantas camadas tem um sanduíche Big Mac, contando os pães?",
+      "answer": 3,
+      "unit": "pães",
+      "fact": "O Big Mac tem um pão no meio."
     }
   ]
 }

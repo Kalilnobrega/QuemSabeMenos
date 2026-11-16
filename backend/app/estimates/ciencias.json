@@ -3451,6 +3451,1127 @@
       "answer": 60,
       "unit": "segundos",
       "fact": "Mergulhadores treinados passam de dez minutos."
+    },
+    {
+      "id": "chute-ciencias-468",
+      "difficulty": "easy",
+      "text": "Quantos dedos tem uma pessoa, somando as duas mãos?",
+      "answer": 10,
+      "unit": "dedos",
+      "fact": "Por isso contamos em base 10."
+    },
+    {
+      "id": "chute-ciencias-469",
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um adulto passa dormindo, em média?",
+      "answer": 7,
+      "unit": "horas",
+      "fact": "Dormir pouco atrapalha a memória e o humor."
+    },
+    {
+      "id": "chute-ciencias-470",
+      "difficulty": "easy",
+      "text": "Quantos litros de ar cabem nos pulmões de um adulto, aproximadamente?",
+      "answer": 6,
+      "unit": "litros",
+      "fact": "Numa respiração comum, entra só meio litro."
+    },
+    {
+      "id": "chute-ciencias-471",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa o fígado de um adulto, aproximadamente?",
+      "answer": 1.5,
+      "unit": "kg",
+      "fact": "O fígado é o maior órgão interno do corpo."
+    },
+    {
+      "id": "chute-ciencias-472",
+      "difficulty": "easy",
+      "text": "Quantos gramas pesa um rim, aproximadamente?",
+      "answer": 150,
+      "unit": "gramas",
+      "fact": "Dá para viver bem com um rim só."
+    },
+    {
+      "id": "chute-ciencias-473",
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um olho humano, de diâmetro, aproximadamente?",
+      "answer": 2.4,
+      "unit": "cm",
+      "fact": "O olho tem quase o tamanho de uma bola de gude grande."
+    },
+    {
+      "id": "chute-ciencias-474",
+      "difficulty": "easy",
+      "text": "Quantos meses um bebê costuma ter quando nasce o primeiro dente?",
+      "answer": 6,
+      "unit": "meses",
+      "fact": "Os dentes de baixo da frente costumam ser os primeiros."
+    },
+    {
+      "id": "chute-ciencias-475",
+      "difficulty": "easy",
+      "text": "Com quantos anos, em média, nasce o primeiro dente permanente?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "Ele nasce atrás dos dentes de leite, no fundo da boca."
+    },
+    {
+      "id": "chute-ciencias-476",
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem uma criança de 1 ano, em média?",
+      "answer": 75,
+      "unit": "cm",
+      "fact": "No primeiro ano o bebê cresce uns 25 centímetros."
+    },
+    {
+      "id": "chute-ciencias-477",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa uma criança de 1 ano, em média?",
+      "answer": 10,
+      "unit": "kg",
+      "fact": "O bebê costuma triplicar o peso no primeiro ano."
+    },
+    {
+      "id": "chute-ciencias-478",
+      "difficulty": "easy",
+      "text": "Com quantos anos, em média, uma criança começa a falar as primeiras palavras, em meses?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "\"Mamã\" e \"papá\" estão entre as primeiras."
+    },
+    {
+      "id": "chute-ciencias-479",
+      "difficulty": "easy",
+      "text": "Quantas horas por dia uma criança de 5 anos deve dormir, aproximadamente?",
+      "answer": 11,
+      "unit": "horas",
+      "fact": "O sono ajuda no crescimento."
+    },
+    {
+      "id": "chute-ciencias-480",
+      "difficulty": "easy",
+      "text": "Quantos graus Celsius marca um dia de calor forte no verão do Rio, aproximadamente?",
+      "answer": 38,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "A sensação térmica pode passar de 50 °C."
+    },
+    {
+      "id": "chute-ciencias-481",
+      "difficulty": "easy",
+      "text": "A que temperatura, em °C, a água de uma piscina fica gostosa para nadar, aproximadamente?",
+      "answer": 28,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "Piscinas olímpicas ficam entre 25 e 28 °C."
+    },
+    {
+      "id": "chute-ciencias-482",
+      "difficulty": "easy",
+      "text": "Quantos minutos o Sol leva para nascer por completo, do primeiro raio ao disco inteiro?",
+      "answer": 3,
+      "unit": "minutos",
+      "fact": "O Sol se move no céu o equivalente ao próprio tamanho a cada dois minutos."
+    },
+    {
+      "id": "chute-ciencias-483",
+      "difficulty": "easy",
+      "text": "De quantos em quantos anos acontece um ano bissexto?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "O dia extra é 29 de fevereiro."
+    },
+    {
+      "id": "chute-ciencias-484",
+      "difficulty": "easy",
+      "text": "Quantos metros por segundo corre uma pessoa comum numa corrida rápida, aproximadamente?",
+      "answer": 7,
+      "unit": "m/s",
+      "fact": "Usain Bolt passou de 12 metros por segundo."
+    },
+    {
+      "id": "chute-ciencias-485",
+      "difficulty": "easy",
+      "text": "Quantos km/h anda uma bicicleta num passeio tranquilo, aproximadamente?",
+      "answer": 15,
+      "unit": "km/h",
+      "fact": "Ciclistas profissionais passam de 40 km/h."
+    },
+    {
+      "id": "chute-ciencias-486",
+      "difficulty": "easy",
+      "text": "Quantos km/h anda um carro numa avenida da cidade, em geral?",
+      "answer": 50,
+      "unit": "km/h",
+      "fact": "Muitas avenidas reduziram o limite para 50 km/h."
+    },
+    {
+      "id": "chute-ciencias-487",
+      "difficulty": "easy",
+      "text": "Quantos metros um carro a 100 km/h percorre em um segundo, aproximadamente?",
+      "answer": 28,
+      "unit": "metros",
+      "fact": "Por isso olhar o celular ao volante é tão perigoso."
+    },
+    {
+      "id": "chute-ciencias-488",
+      "difficulty": "easy",
+      "text": "Quantos mililitros tem uma colher de chá, nas receitas?",
+      "answer": 5,
+      "unit": "ml",
+      "fact": "A colher de sopa tem o triplo."
+    },
+    {
+      "id": "chute-ciencias-489",
+      "difficulty": "easy",
+      "text": "Quantos gramas tem 1 litro de água?",
+      "answer": 1000,
+      "unit": "gramas",
+      "fact": "A água foi a referência para criar o quilo."
+    },
+    {
+      "id": "chute-ciencias-490",
+      "difficulty": "easy",
+      "text": "Quantos ossos tem um dedo da mão, sem contar o polegar?",
+      "answer": 3,
+      "unit": "ossos",
+      "fact": "O polegar tem só dois."
+    },
+    {
+      "id": "chute-ciencias-491",
+      "difficulty": "easy",
+      "text": "Quantos ossos tem o polegar?",
+      "answer": 2,
+      "unit": "ossos",
+      "fact": "O polegar opositor permite segurar objetos com precisão."
+    },
+    {
+      "id": "chute-ciencias-492",
+      "difficulty": "easy",
+      "text": "Quantas vezes por minuto o coração de um bebê recém-nascido bate, aproximadamente?",
+      "answer": 140,
+      "unit": "batimentos",
+      "fact": "O coração fica mais lento com a idade."
+    },
+    {
+      "id": "chute-ciencias-493",
+      "difficulty": "easy",
+      "text": "Qual é a frequência cardíaca de um atleta em repouso, aproximadamente?",
+      "answer": 50,
+      "unit": "batimentos",
+      "fact": "Atletas de resistência chegam a menos de 40."
+    },
+    {
+      "id": "chute-ciencias-494",
+      "difficulty": "easy",
+      "text": "Quantos litros de suor uma pessoa pode perder numa hora de exercício intenso no calor?",
+      "answer": 1.5,
+      "unit": "litros",
+      "fact": "Por isso é importante beber água durante o exercício."
+    },
+    {
+      "id": "chute-ciencias-495",
+      "difficulty": "easy",
+      "text": "Quantos copos de 250 ml somam 2 litros de água?",
+      "answer": 8,
+      "unit": "copos",
+      "fact": "É a recomendação popular de consumo diário."
+    },
+    {
+      "id": "chute-ciencias-496",
+      "difficulty": "easy",
+      "text": "Quantas calorias um adulto gasta numa hora de caminhada, aproximadamente?",
+      "answer": 250,
+      "unit": "kcal",
+      "fact": "Correndo, o gasto pode passar do dobro."
+    },
+    {
+      "id": "chute-ciencias-497",
+      "difficulty": "easy",
+      "text": "Quantas calorias um adulto gasta numa hora de corrida, aproximadamente?",
+      "answer": 600,
+      "unit": "kcal",
+      "fact": "O gasto depende do peso e da velocidade."
+    },
+    {
+      "id": "chute-ciencias-498",
+      "difficulty": "easy",
+      "text": "Quantas calorias um adulto gasta dormindo uma noite inteira, aproximadamente?",
+      "answer": 500,
+      "unit": "kcal",
+      "fact": "O corpo continua trabalhando enquanto dormimos."
+    },
+    {
+      "id": "chute-ciencias-499",
+      "difficulty": "easy",
+      "text": "Quantos dias leva para o corpo trocar a camada de cima da pele, aproximadamente?",
+      "answer": 28,
+      "unit": "dias",
+      "fact": "A poeira de casa tem muita pele morta."
+    },
+    {
+      "id": "chute-ciencias-500",
+      "difficulty": "easy",
+      "text": "Quantos milímetros a unha cresce por mês, aproximadamente?",
+      "answer": 3,
+      "unit": "mm",
+      "fact": "As unhas dos pés crescem mais devagar."
+    },
+    {
+      "id": "chute-ciencias-501",
+      "difficulty": "easy",
+      "text": "Quantos anos dura uma lâmpada de LED usada todo dia, aproximadamente?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Ela dura bem mais que a incandescente."
+    },
+    {
+      "id": "chute-ciencias-502",
+      "difficulty": "easy",
+      "text": "A que temperatura, em °C, se considera hipotermia no corpo humano?",
+      "answer": 35,
+      "unit": "°C",
+      "scale": 5,
+      "fact": "Abaixo disso o corpo começa a falhar."
+    },
+    {
+      "id": "chute-ciencias-503",
+      "difficulty": "easy",
+      "text": "Quantos metros de profundidade tem uma piscina comum de casa, aproximadamente?",
+      "answer": 1.4,
+      "unit": "metros",
+      "fact": "Piscinas olímpicas têm pelo menos dois metros."
+    },
+    {
+      "id": "chute-ciencias-504",
+      "difficulty": "easy",
+      "text": "Quantos metros de altura tem um poste de luz comum de rua, aproximadamente?",
+      "answer": 9,
+      "unit": "metros",
+      "fact": "Postes de avenidas largas são mais altos."
+    },
+    {
+      "id": "chute-ciencias-505",
+      "difficulty": "easy",
+      "text": "Quantos andares sobe uma escada de 100 degraus, aproximadamente?",
+      "answer": 6,
+      "unit": "andares",
+      "fact": "Cada andar costuma ter de 16 a 18 degraus."
+    },
+    {
+      "id": "chute-ciencias-506",
+      "difficulty": "medium",
+      "text": "Quantos minutos a luz do Sol leva para chegar a Marte, aproximadamente?",
+      "answer": 13,
+      "unit": "minutos",
+      "fact": "A distância muda bastante ao longo do ano."
+    },
+    {
+      "id": "chute-ciencias-507",
+      "difficulty": "medium",
+      "text": "Quantas vezes a Lua é menor que a Terra, em diâmetro, aproximadamente?",
+      "answer": 4,
+      "unit": "vezes",
+      "fact": "A Lua tem cerca de 3.500 km de diâmetro."
+    },
+    {
+      "id": "chute-ciencias-508",
+      "difficulty": "medium",
+      "text": "Quantos dias a Lua leva para ir de uma lua nova até a outra, aproximadamente?",
+      "answer": 29.5,
+      "unit": "dias",
+      "fact": "Esse ciclo deu origem à ideia de mês."
+    },
+    {
+      "id": "chute-ciencias-509",
+      "difficulty": "medium",
+      "text": "Quantos planetas do Sistema Solar têm anéis?",
+      "answer": 4,
+      "unit": "planetas",
+      "fact": "Júpiter, Saturno, Urano e Netuno têm anéis."
+    },
+    {
+      "id": "chute-ciencias-510",
+      "difficulty": "medium",
+      "text": "Quantos planetas do Sistema Solar são rochosos?",
+      "answer": 4,
+      "unit": "planetas",
+      "fact": "São Mercúrio, Vênus, Terra e Marte."
+    },
+    {
+      "id": "chute-ciencias-511",
+      "difficulty": "medium",
+      "text": "Quantos km de profundidade tem a crosta terrestre nos continentes, em média?",
+      "answer": 35,
+      "unit": "km",
+      "fact": "Sob os oceanos ela é bem mais fina."
+    },
+    {
+      "id": "chute-ciencias-512",
+      "difficulty": "medium",
+      "text": "Quantos km tem o raio da Terra, aproximadamente?",
+      "answer": 6370,
+      "unit": "km",
+      "fact": "A Terra é um pouco achatada nos polos."
+    },
+    {
+      "id": "chute-ciencias-513",
+      "difficulty": "medium",
+      "text": "Qual é a temperatura do núcleo da Terra, em °C, aproximadamente?",
+      "answer": 5500,
+      "unit": "°C",
+      "fact": "É quase tão quente quanto a superfície do Sol."
+    },
+    {
+      "id": "chute-ciencias-514",
+      "difficulty": "medium",
+      "text": "Quantos terremotos sentidos acontecem no mundo por ano, em milhares, aproximadamente?",
+      "answer": 500,
+      "unit": "mil",
+      "fact": "A maioria é fraca e só os aparelhos registram."
+    },
+    {
+      "id": "chute-ciencias-515",
+      "difficulty": "medium",
+      "text": "Quantos vulcões ativos existem no mundo, aproximadamente?",
+      "answer": 1350,
+      "unit": "vulcões",
+      "fact": "Muitos ficam no Círculo de Fogo do Pacífico."
+    },
+    {
+      "id": "chute-ciencias-516",
+      "difficulty": "medium",
+      "text": "Quantos km por hora as placas tectônicas se movem por ano, em centímetros, aproximadamente?",
+      "answer": 5,
+      "unit": "cm",
+      "fact": "É mais ou menos o quanto a unha cresce por ano."
+    },
+    {
+      "id": "chute-ciencias-517",
+      "difficulty": "medium",
+      "text": "Quantos elementos químicos são gases na temperatura ambiente, aproximadamente?",
+      "answer": 11,
+      "unit": "elementos",
+      "fact": "Entre eles estão hidrogênio, oxigênio e nitrogênio."
+    },
+    {
+      "id": "chute-ciencias-518",
+      "difficulty": "medium",
+      "text": "Quantos elementos químicos são líquidos na temperatura ambiente?",
+      "answer": 2,
+      "unit": "elementos",
+      "fact": "São o mercúrio e o bromo."
+    },
+    {
+      "id": "chute-ciencias-519",
+      "difficulty": "medium",
+      "text": "Quantos prótons tem um átomo de oxigênio?",
+      "answer": 8,
+      "unit": "prótons",
+      "fact": "O número de prótons define o elemento."
+    },
+    {
+      "id": "chute-ciencias-520",
+      "difficulty": "medium",
+      "text": "Quantos átomos de hidrogênio tem uma molécula de metano?",
+      "answer": 4,
+      "unit": "átomos",
+      "fact": "O metano é o principal gás do gás natural."
+    },
+    {
+      "id": "chute-ciencias-521",
+      "difficulty": "medium",
+      "text": "Quantos átomos tem uma molécula de gás carbônico?",
+      "answer": 3,
+      "unit": "átomos",
+      "fact": "São um de carbono e dois de oxigênio."
+    },
+    {
+      "id": "chute-ciencias-522",
+      "difficulty": "medium",
+      "text": "Qual é o pH da saliva, aproximadamente?",
+      "answer": 7,
+      "unit": "pH",
+      "scale": 2,
+      "fact": "A saliva ajuda a proteger os dentes dos ácidos."
+    },
+    {
+      "id": "chute-ciencias-523",
+      "difficulty": "medium",
+      "text": "Qual é o pH de um refrigerante de cola, aproximadamente?",
+      "answer": 2.5,
+      "unit": "pH",
+      "scale": 2,
+      "fact": "O ácido fosfórico deixa o refrigerante bem ácido."
+    },
+    {
+      "id": "chute-ciencias-524",
+      "difficulty": "medium",
+      "text": "Qual é o pH do leite, aproximadamente?",
+      "answer": 6.7,
+      "unit": "pH",
+      "scale": 2,
+      "fact": "O leite é levemente ácido."
+    },
+    {
+      "id": "chute-ciencias-525",
+      "difficulty": "medium",
+      "text": "Qual é o pH do sabão comum, aproximadamente?",
+      "answer": 10,
+      "unit": "pH",
+      "scale": 2,
+      "fact": "Produtos de limpeza costumam ser básicos."
+    },
+    {
+      "id": "chute-ciencias-526",
+      "difficulty": "medium",
+      "text": "A que temperatura, em °C, a água ferve no topo do Pico da Bandeira, aproximadamente?",
+      "answer": 90,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "Com menos pressão, a água ferve mais cedo."
+    },
+    {
+      "id": "chute-ciencias-527",
+      "difficulty": "medium",
+      "text": "A que temperatura, em °C, o álcool comum ferve?",
+      "answer": 78,
+      "unit": "°C",
+      "fact": "Ele evapora bem mais rápido que a água."
+    },
+    {
+      "id": "chute-ciencias-528",
+      "difficulty": "medium",
+      "text": "A que temperatura, em °C, o alumínio derrete?",
+      "answer": 660,
+      "unit": "°C",
+      "fact": "O alumínio é um metal leve e fácil de reciclar."
+    },
+    {
+      "id": "chute-ciencias-529",
+      "difficulty": "medium",
+      "text": "A que temperatura, em °C, o vidro comum começa a amolecer?",
+      "answer": 600,
+      "unit": "°C",
+      "fact": "Os sopradores de vidro trabalham com fornos muito quentes."
+    },
+    {
+      "id": "chute-ciencias-530",
+      "difficulty": "medium",
+      "text": "A que temperatura, em °C, a madeira pega fogo sozinha, aproximadamente?",
+      "answer": 300,
+      "unit": "°C",
+      "fact": "Com uma chama, ela pega fogo bem antes."
+    },
+    {
+      "id": "chute-ciencias-531",
+      "difficulty": "medium",
+      "text": "A que temperatura, em °C, o chocolate deve ser derretido para temperar, aproximadamente?",
+      "answer": 45,
+      "unit": "°C",
+      "fact": "Chocolate queimado fica granulado e amargo."
+    },
+    {
+      "id": "chute-ciencias-532",
+      "difficulty": "medium",
+      "text": "Quantos km/h tem o vento numa tempestade tropical, no mínimo?",
+      "answer": 63,
+      "unit": "km/h",
+      "fact": "Acima de 119 km/h ela vira furacão."
+    },
+    {
+      "id": "chute-ciencias-533",
+      "difficulty": "medium",
+      "text": "Quantas vezes mais quente que a superfície do Sol é um raio, aproximadamente?",
+      "answer": 5,
+      "unit": "vezes",
+      "fact": "O raio aquece o ar em uma fração de segundo."
+    },
+    {
+      "id": "chute-ciencias-534",
+      "difficulty": "medium",
+      "text": "Quantos km de distância está uma tempestade se o trovão vem 6 segundos depois do raio?",
+      "answer": 2,
+      "unit": "km",
+      "fact": "O som anda cerca de 1 km a cada 3 segundos."
+    },
+    {
+      "id": "chute-ciencias-535",
+      "difficulty": "medium",
+      "text": "Quantos decibéis tem uma conversa normal, aproximadamente?",
+      "answer": 60,
+      "unit": "decibéis",
+      "fact": "Acima de 85 decibéis por muito tempo, a audição pode sofrer."
+    },
+    {
+      "id": "chute-ciencias-536",
+      "difficulty": "medium",
+      "text": "Quantos decibéis tem um show de rock perto do palco, aproximadamente?",
+      "answer": 110,
+      "unit": "decibéis",
+      "fact": "Músicos costumam usar protetores de ouvido."
+    },
+    {
+      "id": "chute-ciencias-537",
+      "difficulty": "medium",
+      "text": "Quantos decibéis tem o som de uma moto acelerando, aproximadamente?",
+      "answer": 100,
+      "unit": "decibéis",
+      "fact": "O barulho constante cansa e estressa."
+    },
+    {
+      "id": "chute-ciencias-538",
+      "difficulty": "medium",
+      "text": "Até quantos hertz o ouvido humano consegue escutar, em milhares, aproximadamente?",
+      "answer": 20,
+      "unit": "mil",
+      "fact": "Cães escutam sons bem mais agudos."
+    },
+    {
+      "id": "chute-ciencias-539",
+      "difficulty": "medium",
+      "text": "A partir de quantos hertz o ouvido humano escuta, no mínimo, aproximadamente?",
+      "answer": 20,
+      "unit": "hertz",
+      "fact": "Sons mais graves são sentidos no corpo."
+    },
+    {
+      "id": "chute-ciencias-540",
+      "difficulty": "medium",
+      "text": "Quantas cores básicas o olho humano percebe com os cones?",
+      "answer": 3,
+      "unit": "cores",
+      "fact": "São vermelho, verde e azul."
+    },
+    {
+      "id": "chute-ciencias-541",
+      "difficulty": "medium",
+      "text": "Quantos megapixels teria o olho humano, segundo uma estimativa famosa?",
+      "answer": 576,
+      "unit": "megapixels",
+      "fact": "A conta é uma comparação, e não uma medida real."
+    },
+    {
+      "id": "chute-ciencias-542",
+      "difficulty": "medium",
+      "text": "Quantos litros de sangue o coração bombeia por minuto num exercício intenso, aproximadamente?",
+      "answer": 25,
+      "unit": "litros",
+      "fact": "Em repouso, são cerca de cinco litros."
+    },
+    {
+      "id": "chute-ciencias-543",
+      "difficulty": "medium",
+      "text": "Quantos dias um glóbulo branco comum vive, aproximadamente?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "O corpo produz bilhões deles por dia."
+    },
+    {
+      "id": "chute-ciencias-544",
+      "difficulty": "medium",
+      "text": "Quantos litros de bile o fígado produz por dia, aproximadamente?",
+      "answer": 0.8,
+      "unit": "litro",
+      "fact": "A bile ajuda a digerir gorduras."
+    },
+    {
+      "id": "chute-ciencias-545",
+      "difficulty": "medium",
+      "text": "Quantos metros tem o intestino grosso de um adulto, aproximadamente?",
+      "answer": 1.5,
+      "unit": "metros",
+      "fact": "O intestino delgado é bem mais comprido."
+    },
+    {
+      "id": "chute-ciencias-546",
+      "difficulty": "medium",
+      "text": "Quantos músculos o rosto humano tem, aproximadamente?",
+      "answer": 43,
+      "unit": "músculos",
+      "fact": "Eles permitem milhares de expressões."
+    },
+    {
+      "id": "chute-ciencias-547",
+      "difficulty": "medium",
+      "text": "Quantos quilos pesa o esqueleto de um adulto, aproximadamente?",
+      "answer": 10,
+      "unit": "kg",
+      "fact": "Os ossos são cerca de 15% do peso do corpo."
+    },
+    {
+      "id": "chute-ciencias-548",
+      "difficulty": "medium",
+      "text": "Quantas vezes mais forte que o aço, em peso, é o osso humano, segundo comparações?",
+      "answer": 1,
+      "unit": "vez",
+      "fact": "O osso é tão resistente quanto alguns metais, sendo bem mais leve."
+    },
+    {
+      "id": "chute-ciencias-549",
+      "difficulty": "medium",
+      "text": "Quantos centímetros a altura de uma pessoa diminui ao longo do dia, aproximadamente?",
+      "answer": 1,
+      "unit": "cm",
+      "fact": "As cartilagens da coluna se comprimem durante o dia."
+    },
+    {
+      "id": "chute-ciencias-550",
+      "difficulty": "medium",
+      "text": "Quantos anos uma pessoa leva para trocar todas as células do esqueleto, aproximadamente?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Os ossos estão sempre se renovando."
+    },
+    {
+      "id": "chute-ciencias-551",
+      "difficulty": "medium",
+      "text": "Quantos anos dura um fio de cabelo, no máximo, antes de cair, aproximadamente?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "Por isso o cabelo tem um comprimento máximo."
+    },
+    {
+      "id": "chute-ciencias-552",
+      "difficulty": "medium",
+      "text": "Quantas glândulas sudoríparas tem o corpo humano, em milhões, aproximadamente?",
+      "answer": 3,
+      "unit": "milhões",
+      "fact": "A maior parte fica nas palmas e nas solas."
+    },
+    {
+      "id": "chute-ciencias-553",
+      "difficulty": "medium",
+      "text": "Quantos litros de lágrimas uma pessoa produz por ano, aproximadamente?",
+      "answer": 60,
+      "unit": "litros",
+      "fact": "A maior parte é para lubrificar os olhos."
+    },
+    {
+      "id": "chute-ciencias-554",
+      "difficulty": "medium",
+      "text": "Quantas vezes uma pessoa respira por dia, em milhares, aproximadamente?",
+      "answer": 20,
+      "unit": "mil",
+      "fact": "A respiração acelera com o exercício."
+    },
+    {
+      "id": "chute-ciencias-555",
+      "difficulty": "medium",
+      "text": "Quantos sonhos uma pessoa tem por noite, em média?",
+      "answer": 5,
+      "unit": "sonhos",
+      "fact": "A maioria é esquecida logo ao acordar."
+    },
+    {
+      "id": "chute-ciencias-556",
+      "difficulty": "medium",
+      "text": "Quantos minutos dura um ciclo de sono completo, aproximadamente?",
+      "answer": 90,
+      "unit": "minutos",
+      "fact": "Uma noite tem de quatro a seis ciclos."
+    },
+    {
+      "id": "chute-ciencias-557",
+      "difficulty": "medium",
+      "text": "Quantas palavras por minuto uma pessoa fala numa conversa, aproximadamente?",
+      "answer": 150,
+      "unit": "palavras",
+      "fact": "Narradores de futebol falam bem mais rápido."
+    },
+    {
+      "id": "chute-ciencias-558",
+      "difficulty": "medium",
+      "text": "Quantas palavras por minuto uma pessoa lê em silêncio, aproximadamente?",
+      "answer": 250,
+      "unit": "palavras",
+      "fact": "Ler em voz alta é mais lento."
+    },
+    {
+      "id": "chute-ciencias-559",
+      "difficulty": "medium",
+      "text": "Quantos quilos de comida uma pessoa come por ano, aproximadamente?",
+      "answer": 700,
+      "unit": "kg",
+      "fact": "Isso dá quase dois quilos por dia."
+    },
+    {
+      "id": "chute-ciencias-560",
+      "difficulty": "medium",
+      "text": "Quantos litros de água uma pessoa bebe ao longo da vida, em milhares, aproximadamente?",
+      "answer": 60,
+      "unit": "mil",
+      "fact": "A conta inclui a água dos alimentos."
+    },
+    {
+      "id": "chute-ciencias-561",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de bactérias vivem na boca de uma pessoa, aproximadamente?",
+      "answer": 20,
+      "unit": "bilhões",
+      "fact": "Escovar os dentes controla esse número."
+    },
+    {
+      "id": "chute-ciencias-562",
+      "difficulty": "medium",
+      "text": "Quantas espécies de bactérias vivem no intestino humano, aproximadamente?",
+      "answer": 1000,
+      "unit": "espécies",
+      "fact": "Elas ajudam na digestão e na defesa do corpo."
+    },
+    {
+      "id": "chute-ciencias-563",
+      "difficulty": "medium",
+      "text": "Quantos anos o vírus da varíola foi combatido com vacinação até ser erradicado, aproximadamente?",
+      "answer": 180,
+      "unit": "anos",
+      "fact": "A primeira vacina foi criada em 1796."
+    },
+    {
+      "id": "chute-ciencias-564",
+      "difficulty": "medium",
+      "text": "Quantas doses tem a vacina contra a febre amarela, para adultos, em geral?",
+      "answer": 1,
+      "unit": "dose",
+      "fact": "Uma dose costuma proteger para a vida toda."
+    },
+    {
+      "id": "chute-ciencias-565",
+      "difficulty": "medium",
+      "text": "Quantos dias leva uma vacina para começar a proteger, em geral?",
+      "answer": 14,
+      "unit": "dias",
+      "fact": "O corpo precisa de tempo para criar anticorpos."
+    },
+    {
+      "id": "chute-ciencias-566",
+      "difficulty": "medium",
+      "text": "Quantos dias dura o período de incubação da gripe, aproximadamente?",
+      "answer": 2,
+      "unit": "dias",
+      "fact": "A pessoa pode transmitir antes de ter sintomas."
+    },
+    {
+      "id": "chute-ciencias-567",
+      "difficulty": "medium",
+      "text": "Quantos dias dura uma catapora, em geral?",
+      "answer": 10,
+      "unit": "dias",
+      "fact": "A vacina tornou a doença bem menos comum."
+    },
+    {
+      "id": "chute-ciencias-568",
+      "difficulty": "medium",
+      "text": "Quantos anos a penicilina levou da descoberta até o uso em massa, aproximadamente?",
+      "answer": 15,
+      "unit": "anos",
+      "fact": "A produção em grande escala veio na Segunda Guerra."
+    },
+    {
+      "id": "chute-ciencias-569",
+      "difficulty": "medium",
+      "text": "Quantos metros de comprimento tem o maior telescópio óptico em construção, o ELT, de espelho?",
+      "answer": 39,
+      "unit": "metros",
+      "fact": "O telescópio fica no Chile."
+    },
+    {
+      "id": "chute-ciencias-570",
+      "difficulty": "medium",
+      "text": "Quantos metros de diâmetro tem o espelho do telescópio James Webb?",
+      "answer": 6.5,
+      "unit": "metros",
+      "fact": "O espelho é feito de 18 partes douradas."
+    },
+    {
+      "id": "chute-ciencias-571",
+      "difficulty": "medium",
+      "text": "Quantos km da Terra fica o telescópio James Webb, em milhões, aproximadamente?",
+      "answer": 1.5,
+      "unit": "milhão",
+      "fact": "Ele fica quatro vezes mais longe que a Lua."
+    },
+    {
+      "id": "chute-ciencias-572",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a missão da sonda Cassini em Saturno?",
+      "answer": 13,
+      "unit": "anos",
+      "fact": "No fim, a sonda foi lançada contra o planeta."
+    },
+    {
+      "id": "chute-ciencias-573",
+      "difficulty": "medium",
+      "text": "Quantos anos a sonda New Horizons levou para chegar a Plutão?",
+      "answer": 9,
+      "unit": "anos",
+      "fact": "As fotos mostraram um coração de gelo em Plutão."
+    },
+    {
+      "id": "chute-ciencias-574",
+      "difficulty": "medium",
+      "text": "Quantos dias os astronautas da Apollo 13 passaram no espaço, aproximadamente?",
+      "answer": 6,
+      "unit": "dias",
+      "fact": "A missão virou filme com Tom Hanks."
+    },
+    {
+      "id": "chute-ciencias-575",
+      "difficulty": "medium",
+      "text": "Quantos dias a primeira astronauta, Valentina Tereshkova, passou no espaço, aproximadamente?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "Ela voou em 1963."
+    },
+    {
+      "id": "chute-ciencias-576",
+      "difficulty": "medium",
+      "text": "Quantos dias o brasileiro Marcos Pontes passou no espaço, aproximadamente?",
+      "answer": 10,
+      "unit": "dias",
+      "fact": "Ele foi à Estação Espacial em 2006."
+    },
+    {
+      "id": "chute-ciencias-577",
+      "difficulty": "medium",
+      "text": "Quantas voltas na Terra a Estação Espacial dá por dia, aproximadamente?",
+      "answer": 16,
+      "unit": "voltas",
+      "fact": "Os astronautas veem 16 nasceres do sol por dia."
+    },
+    {
+      "id": "chute-ciencias-578",
+      "difficulty": "medium",
+      "text": "Quantos minutos dura uma volta da Estação Espacial em torno da Terra, aproximadamente?",
+      "answer": 90,
+      "unit": "minutos",
+      "fact": "Ela anda a mais de 27 mil km/h."
+    },
+    {
+      "id": "chute-ciencias-579",
+      "difficulty": "medium",
+      "text": "Quantos km/h um foguete precisa alcançar para entrar em órbita, aproximadamente?",
+      "answer": 28000,
+      "unit": "km/h",
+      "fact": "Abaixo disso ele cai de volta."
+    },
+    {
+      "id": "chute-ciencias-580",
+      "difficulty": "medium",
+      "text": "Quantos minutos um foguete leva para chegar à órbita, aproximadamente?",
+      "answer": 9,
+      "unit": "minutos",
+      "fact": "A parte mais difícil é sair da atmosfera."
+    },
+    {
+      "id": "chute-ciencias-581",
+      "difficulty": "medium",
+      "text": "Quantas estrelas tem a constelação do Cruzeiro do Sul, nas principais?",
+      "answer": 5,
+      "unit": "estrelas",
+      "fact": "Ela aparece na bandeira do Brasil."
+    },
+    {
+      "id": "chute-ciencias-582",
+      "difficulty": "medium",
+      "text": "Quantas constelações oficiais existem no céu?",
+      "answer": 88,
+      "unit": "constelações",
+      "fact": "A divisão foi feita pela União Astronômica Internacional."
+    },
+    {
+      "id": "chute-ciencias-583",
+      "difficulty": "medium",
+      "text": "Quantos signos do zodíaco existem?",
+      "answer": 12,
+      "unit": "signos",
+      "fact": "Os signos vêm de constelações por onde o Sol passa."
+    },
+    {
+      "id": "chute-ciencias-584",
+      "difficulty": "easy",
+      "text": "Quantos rins tem um ser humano?",
+      "answer": 2,
+      "unit": "rins",
+      "fact": "Dá para viver bem com um rim só."
+    },
+    {
+      "id": "chute-ciencias-585",
+      "difficulty": "easy",
+      "text": "Quantos pulmões tem um ser humano?",
+      "answer": 2,
+      "unit": "pulmões",
+      "fact": "O pulmão esquerdo é menor para dar espaço ao coração."
+    },
+    {
+      "id": "chute-ciencias-586",
+      "difficulty": "easy",
+      "text": "Quantos meses um homem precisa esperar entre duas doações de sangue?",
+      "answer": 2,
+      "unit": "meses",
+      "fact": "Para as mulheres, o intervalo é de três meses."
+    },
+    {
+      "id": "chute-ciencias-587",
+      "difficulty": "easy",
+      "text": "Quantas horas de sono um adulto precisa por noite, em média?",
+      "answer": 8,
+      "unit": "horas",
+      "fact": "Crianças precisam de mais horas de sono."
+    },
+    {
+      "id": "chute-ciencias-588",
+      "difficulty": "easy",
+      "text": "Quantas vezes por minuto uma pessoa pisca, em média?",
+      "answer": 15,
+      "unit": "vezes",
+      "fact": "Piscar mantém os olhos úmidos."
+    },
+    {
+      "id": "chute-ciencias-589",
+      "difficulty": "easy",
+      "text": "A partir de quantos °C se considera febre, aproximadamente?",
+      "answer": 37.8,
+      "unit": "°C",
+      "fact": "A febre ajuda o corpo a combater infecções."
+    },
+    {
+      "id": "chute-ciencias-590",
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um bebê recém-nascido, em média?",
+      "answer": 50,
+      "unit": "cm",
+      "fact": "O bebê dobra de peso nos primeiros meses."
+    },
+    {
+      "id": "chute-ciencias-591",
+      "difficulty": "easy",
+      "text": "Quantos quilos pesa um bebê recém-nascido, em média?",
+      "answer": 3.3,
+      "unit": "kg",
+      "fact": "Bebês prematuros nascem mais leves."
+    },
+    {
+      "id": "chute-ciencias-592",
+      "difficulty": "easy",
+      "text": "Com quantos anos uma criança começa a perder os dentes de leite, em média?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "Os dentes da frente costumam cair primeiro."
+    },
+    {
+      "id": "chute-ciencias-593",
+      "difficulty": "easy",
+      "text": "Quantas costelas tem o ser humano?",
+      "answer": 24,
+      "unit": "costelas",
+      "fact": "São 12 pares."
+    },
+    {
+      "id": "chute-ciencias-594",
+      "difficulty": "easy",
+      "text": "Quantos planetas são maiores que a Terra no Sistema Solar?",
+      "answer": 4,
+      "unit": "planetas",
+      "fact": "São Júpiter, Saturno, Urano e Netuno."
+    },
+    {
+      "id": "chute-ciencias-595",
+      "difficulty": "easy",
+      "text": "Qual é a posição de Marte a partir do Sol?",
+      "answer": 4,
+      "unit": "º planeta",
+      "fact": "Marte é chamado de planeta vermelho."
+    },
+    {
+      "id": "chute-ciencias-596",
+      "difficulty": "easy",
+      "text": "Qual é a posição de Júpiter a partir do Sol?",
+      "answer": 5,
+      "unit": "º planeta",
+      "fact": "Júpiter é o maior planeta do Sistema Solar."
+    },
+    {
+      "id": "chute-ciencias-597",
+      "difficulty": "easy",
+      "text": "Quantos estados físicos da água vemos no dia a dia?",
+      "answer": 3,
+      "unit": "estados",
+      "fact": "Sólido, líquido e gasoso."
+    },
+    {
+      "id": "chute-ciencias-598",
+      "difficulty": "easy",
+      "text": "Quantos átomos de oxigênio tem uma molécula de gás carbônico?",
+      "answer": 2,
+      "unit": "átomos",
+      "fact": "A fórmula do gás carbônico é CO2."
+    },
+    {
+      "id": "chute-ciencias-599",
+      "difficulty": "easy",
+      "text": "Quantos watts tem um chuveiro elétrico comum, aproximadamente?",
+      "answer": 5500,
+      "unit": "watts",
+      "fact": "O chuveiro é o maior gasto de luz de muitas casas."
+    },
+    {
+      "id": "chute-ciencias-600",
+      "difficulty": "easy",
+      "text": "Quantos watts tem um micro-ondas comum, aproximadamente?",
+      "answer": 1200,
+      "unit": "watts",
+      "fact": "O micro-ondas aquece a água dos alimentos."
+    },
+    {
+      "id": "chute-ciencias-601",
+      "difficulty": "easy",
+      "text": "Quantos watts tem uma geladeira comum, aproximadamente?",
+      "answer": 150,
+      "unit": "watts",
+      "fact": "A geladeira liga e desliga o dia todo."
+    },
+    {
+      "id": "chute-ciencias-602",
+      "difficulty": "easy",
+      "text": "Quantos graus a temperatura da geladeira costuma ficar, aproximadamente?",
+      "answer": 4,
+      "unit": "°C",
+      "fact": "Abaixo de 5 °C as bactérias crescem devagar."
+    },
+    {
+      "id": "chute-ciencias-603",
+      "difficulty": "easy",
+      "text": "Quantos graus negativos fica um freezer comum?",
+      "answer": -18,
+      "unit": "°C",
+      "scale": 10,
+      "fact": "O freezer conserva alimentos por meses."
+    },
+    {
+      "id": "chute-ciencias-604",
+      "difficulty": "easy",
+      "text": "Quantas cores tem a luz branca separada num prisma, na divisão tradicional?",
+      "answer": 7,
+      "unit": "cores",
+      "fact": "Newton fez esse experimento no século 17."
+    },
+    {
+      "id": "chute-ciencias-605",
+      "difficulty": "easy",
+      "text": "Quantos metros por segundo anda o som no ar, aproximadamente?",
+      "answer": 340,
+      "unit": "m/s",
+      "fact": "O trovão chega depois do relâmpago por isso."
+    },
+    {
+      "id": "chute-ciencias-606",
+      "difficulty": "easy",
+      "text": "Quantos segundos o trovão leva para chegar se o raio caiu a 1 km, aproximadamente?",
+      "answer": 3,
+      "unit": "segundos",
+      "fact": "Contar os segundos ajuda a saber a distância da tempestade."
     }
   ]
 }

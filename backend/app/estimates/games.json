@@ -3185,6 +3185,638 @@
       "answer": 2,
       "unit": "dados",
       "fact": "Tirar duas vezes iguais dá nova jogada."
+    },
+    {
+      "id": "chute-games-416",
+      "difficulty": "easy",
+      "text": "Quantos botões de ação coloridos ou com símbolos tem um controle de PlayStation, no lado direito?",
+      "answer": 4,
+      "unit": "botões",
+      "fact": "Os símbolos são triângulo, círculo, xis e quadrado."
+    },
+    {
+      "id": "chute-games-417",
+      "difficulty": "easy",
+      "text": "Quantos analógicos tem um controle de PlayStation 5?",
+      "answer": 2,
+      "unit": "analógicos",
+      "fact": "Os analógicos chegaram aos controles da Sony em 1997."
+    },
+    {
+      "id": "chute-games-418",
+      "difficulty": "easy",
+      "text": "Quantos gatilhos tem um controle de Xbox, contando os de cima?",
+      "answer": 4,
+      "unit": "botões",
+      "fact": "Os gatilhos de baixo vibram no controle de Xbox One."
+    },
+    {
+      "id": "chute-games-419",
+      "difficulty": "easy",
+      "text": "Quantos controles Joy-Con vêm com um Nintendo Switch?",
+      "answer": 2,
+      "unit": "controles",
+      "fact": "Os Joy-Con podem ser usados um em cada mão."
+    },
+    {
+      "id": "chute-games-420",
+      "difficulty": "easy",
+      "text": "Quantas moedas Mario precisa juntar para ganhar uma vida extra?",
+      "answer": 100,
+      "unit": "moedas",
+      "fact": "O cogumelo verde também dá uma vida."
+    },
+    {
+      "id": "chute-games-421",
+      "difficulty": "easy",
+      "text": "Quantas fases tem cada mundo do \"Super Mario Bros.\" original?",
+      "answer": 4,
+      "unit": "fases",
+      "fact": "A última fase de cada mundo é um castelo."
+    },
+    {
+      "id": "chute-games-422",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale um fantasma comido no Pac-Man, o primeiro?",
+      "answer": 200,
+      "unit": "pontos",
+      "fact": "Cada fantasma seguido vale o dobro do anterior."
+    },
+    {
+      "id": "chute-games-423",
+      "difficulty": "easy",
+      "text": "Quantas linhas o Tetris apaga de uma vez numa jogada \"Tetris\"?",
+      "answer": 4,
+      "unit": "linhas",
+      "fact": "Só a peça reta consegue apagar quatro linhas."
+    },
+    {
+      "id": "chute-games-424",
+      "difficulty": "easy",
+      "text": "Quantos jogadores caem de paraquedas numa partida normal de Fortnite?",
+      "answer": 100,
+      "unit": "jogadores",
+      "fact": "Vence quem sobrar por último."
+    },
+    {
+      "id": "chute-games-425",
+      "difficulty": "easy",
+      "text": "Quantos jogadores caem numa partida normal de Free Fire?",
+      "answer": 50,
+      "unit": "jogadores",
+      "fact": "O Free Fire é muito popular no Brasil."
+    },
+    {
+      "id": "chute-games-426",
+      "difficulty": "easy",
+      "text": "Quantos impostores pode ter uma partida de Among Us, no máximo?",
+      "answer": 3,
+      "unit": "impostores",
+      "fact": "O jogo explodiu de popularidade em 2020."
+    },
+    {
+      "id": "chute-games-427",
+      "difficulty": "easy",
+      "text": "Quantas rotas tem o mapa principal de League of Legends?",
+      "answer": 3,
+      "unit": "rotas",
+      "fact": "As rotas são topo, meio e baixo."
+    },
+    {
+      "id": "chute-games-428",
+      "difficulty": "easy",
+      "text": "Quantas rodadas um time precisa vencer no Valorant para ganhar a partida?",
+      "answer": 13,
+      "unit": "rodadas",
+      "fact": "Empates em 12 a 12 vão para a prorrogação."
+    },
+    {
+      "id": "chute-games-429",
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem cada time numa partida de Rocket League, no modo padrão?",
+      "answer": 3,
+      "unit": "jogadores",
+      "fact": "O jogo mistura futebol com carros."
+    },
+    {
+      "id": "chute-games-430",
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem cada time numa partida de Dota 2?",
+      "answer": 5,
+      "unit": "jogadores",
+      "fact": "O jogo nasceu como um mod de Warcraft III."
+    },
+    {
+      "id": "chute-games-431",
+      "difficulty": "easy",
+      "text": "Quantos corações de vida o Link começa em muitos jogos de Zelda?",
+      "answer": 3,
+      "unit": "corações",
+      "fact": "Cada contêiner de coração aumenta a vida."
+    },
+    {
+      "id": "chute-games-432",
+      "difficulty": "easy",
+      "text": "Quantos blocos de altura tem o jogador no Minecraft, aproximadamente?",
+      "answer": 2,
+      "unit": "blocos",
+      "fact": "O jogador mede 1,8 bloco."
+    },
+    {
+      "id": "chute-games-433",
+      "difficulty": "easy",
+      "text": "Quantos olhos do Ender são necessários para abrir o portal do End no Minecraft?",
+      "answer": 12,
+      "unit": "olhos",
+      "fact": "O portal fica numa fortaleza escondida."
+    },
+    {
+      "id": "chute-games-434",
+      "difficulty": "easy",
+      "text": "Quantos blocos de obsidiana são necessários para um portal do Nether, sem os cantos?",
+      "answer": 10,
+      "unit": "blocos",
+      "fact": "O portal mínimo é de quatro por cinco."
+    },
+    {
+      "id": "chute-games-435",
+      "difficulty": "easy",
+      "text": "Quantos Pokémon iniciais o jogador pode escolher em cada geração?",
+      "answer": 3,
+      "unit": "Pokémon",
+      "fact": "São sempre um de fogo, um de água e um de planta."
+    },
+    {
+      "id": "chute-games-436",
+      "difficulty": "easy",
+      "text": "Quantos Pokémon um treinador pode levar na equipe?",
+      "answer": 6,
+      "unit": "Pokémon",
+      "fact": "Os outros ficam guardados no computador."
+    },
+    {
+      "id": "chute-games-437",
+      "difficulty": "easy",
+      "text": "Quantos golpes um Pokémon pode saber ao mesmo tempo?",
+      "answer": 4,
+      "unit": "golpes",
+      "fact": "Para aprender um novo, ele esquece um antigo."
+    },
+    {
+      "id": "chute-games-438",
+      "difficulty": "easy",
+      "text": "Qual é o nível máximo de um Pokémon?",
+      "answer": 100,
+      "unit": "nível",
+      "fact": "Pegar um Pokémon no nível 100 dá muito trabalho."
+    },
+    {
+      "id": "chute-games-439",
+      "difficulty": "easy",
+      "text": "Quantos jogadores tem uma partida de \"Mario Kart 8\", no máximo?",
+      "answer": 12,
+      "unit": "pilotos",
+      "fact": "O jogo tem pistas antigas e novas."
+    },
+    {
+      "id": "chute-games-440",
+      "difficulty": "easy",
+      "text": "Quantas voltas tem uma corrida comum no Mario Kart?",
+      "answer": 3,
+      "unit": "voltas",
+      "fact": "O casco azul persegue quem está em primeiro."
+    },
+    {
+      "id": "chute-games-441",
+      "difficulty": "easy",
+      "text": "Quantos jogadores podem jogar \"Super Smash Bros. Ultimate\" ao mesmo tempo?",
+      "answer": 8,
+      "unit": "jogadores",
+      "fact": "O jogo tem mais de 80 lutadores."
+    },
+    {
+      "id": "chute-games-442",
+      "difficulty": "easy",
+      "text": "Quantos anos tem o Mario, segundo a Nintendo, aproximadamente?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "A idade foi revelada por um criador da série."
+    },
+    {
+      "id": "chute-games-443",
+      "difficulty": "easy",
+      "text": "Quantos jogadores começam uma partida de \"Uno\"?",
+      "answer": 2,
+      "unit": "jogadores",
+      "fact": "O jogo aceita de dois a dez jogadores."
+    },
+    {
+      "id": "chute-games-444",
+      "difficulty": "easy",
+      "text": "Quantas cores de carta tem o Uno?",
+      "answer": 4,
+      "unit": "cores",
+      "fact": "São vermelho, azul, verde e amarelo."
+    },
+    {
+      "id": "chute-games-445",
+      "difficulty": "easy",
+      "text": "Quantas cartas tem o jogo de \"Banco Imobiliário\" de propriedades, aproximadamente?",
+      "answer": 28,
+      "unit": "cartas",
+      "fact": "O jogo é a versão brasileira do Monopoly."
+    },
+    {
+      "id": "chute-games-446",
+      "difficulty": "easy",
+      "text": "Quantos reais cada jogador recebe ao passar pelo ponto de partida no Banco Imobiliário clássico?",
+      "answer": 200,
+      "unit": "reais",
+      "fact": "O valor muda em versões mais novas."
+    },
+    {
+      "id": "chute-games-447",
+      "difficulty": "easy",
+      "text": "Quantas peças cada jogador recebe no dominó, numa partida a quatro?",
+      "answer": 7,
+      "unit": "peças",
+      "fact": "A partida começa com quem tem o duplo seis."
+    },
+    {
+      "id": "chute-games-448",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"Tetris\"?",
+      "answer": 1984,
+      "scale": 50,
+      "fact": "O jogo foi criado por um programador russo."
+    },
+    {
+      "id": "chute-games-449",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o primeiro \"Pokémon\", no Japão?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "Os jogos eram as versões Red e Green."
+    },
+    {
+      "id": "chute-games-450",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"Grand Theft Auto: San Andreas\"?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "O jogo se passa nos anos 1990."
+    },
+    {
+      "id": "chute-games-451",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"The Elder Scrolls V: Skyrim\"?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "O jogo já foi relançado em muitos consoles."
+    },
+    {
+      "id": "chute-games-452",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"PUBG\"?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "O jogo popularizou o battle royale."
+    },
+    {
+      "id": "chute-games-453",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"Hogwarts Legacy\"?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "O jogo se passa no século 19."
+    },
+    {
+      "id": "chute-games-454",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado \"Black Myth: Wukong\"?",
+      "answer": 2024,
+      "scale": 50,
+      "fact": "O jogo é chinês e foi um grande sucesso."
+    },
+    {
+      "id": "chute-games-455",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o Xbox One?",
+      "answer": 2013,
+      "scale": 50,
+      "fact": "O console foi lançado no mesmo ano do PS4."
+    },
+    {
+      "id": "chute-games-456",
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Steam?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "A loja começou com jogos da própria Valve."
+    },
+    {
+      "id": "chute-games-457",
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Twitch?",
+      "answer": 2011,
+      "scale": 50,
+      "fact": "A plataforma começou como parte do Justin.tv."
+    },
+    {
+      "id": "chute-games-458",
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Sega?",
+      "answer": 1960,
+      "scale": 50,
+      "fact": "A Sega começou com máquinas de fliperama."
+    },
+    {
+      "id": "chute-games-459",
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Riot Games?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "A empresa é dona de League of Legends."
+    },
+    {
+      "id": "chute-games-460",
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Valve?",
+      "answer": 1996,
+      "scale": 50,
+      "fact": "A empresa foi criada por ex-funcionários da Microsoft."
+    },
+    {
+      "id": "chute-games-461",
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a Mojang, criadora de Minecraft?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "A Microsoft comprou a Mojang em 2014."
+    },
+    {
+      "id": "chute-games-462",
+      "difficulty": "medium",
+      "text": "Em que ano a Microsoft comprou a Mojang?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "O negócio custou 2,5 bilhões de dólares."
+    },
+    {
+      "id": "chute-games-463",
+      "difficulty": "medium",
+      "text": "Em que ano a Tectoy foi fundada?",
+      "answer": 1987,
+      "scale": 50,
+      "fact": "A empresa trouxe a Sega para o Brasil."
+    },
+    {
+      "id": "chute-games-464",
+      "difficulty": "medium",
+      "text": "Quantos milhões de PlayStation 2 foram vendidos, aproximadamente?",
+      "answer": 160,
+      "unit": "milhões",
+      "fact": "É o console mais vendido da história."
+    },
+    {
+      "id": "chute-games-465",
+      "difficulty": "medium",
+      "text": "Quantos milhões de Game Boy foram vendidos, contando o Color, aproximadamente?",
+      "answer": 118,
+      "unit": "milhões",
+      "fact": "O Game Boy usava pilhas comuns."
+    },
+    {
+      "id": "chute-games-466",
+      "difficulty": "medium",
+      "text": "Quantos milhões de Nintendo DS foram vendidos, aproximadamente?",
+      "answer": 154,
+      "unit": "milhões",
+      "fact": "O DS é o portátil mais vendido da história."
+    },
+    {
+      "id": "chute-games-467",
+      "difficulty": "medium",
+      "text": "Quantos milhões de jogadores ativos por mês tem o Free Fire, aproximadamente, em milhões?",
+      "answer": 100,
+      "unit": "milhões",
+      "fact": "O Brasil é um dos maiores mercados do jogo."
+    },
+    {
+      "id": "chute-games-468",
+      "difficulty": "medium",
+      "text": "Quantos milhões de jogadores ativos por mês tem Roblox, aproximadamente, em 2024?",
+      "answer": 380,
+      "unit": "milhões",
+      "fact": "A maior parte dos jogadores é criança ou adolescente."
+    },
+    {
+      "id": "chute-games-469",
+      "difficulty": "medium",
+      "text": "Quantos jogos existem na Steam, aproximadamente, em milhares, em 2024?",
+      "answer": 100,
+      "unit": "mil",
+      "fact": "Milhares de jogos novos chegam todo ano."
+    },
+    {
+      "id": "chute-games-470",
+      "difficulty": "medium",
+      "text": "Quantos milhões de pessoas jogam videogame no Brasil, aproximadamente, em porcentagem da população?",
+      "answer": 70,
+      "unit": "%",
+      "fact": "O celular é o aparelho preferido dos jogadores brasileiros."
+    },
+    {
+      "id": "chute-games-471",
+      "difficulty": "medium",
+      "text": "Quantos dólares custava o PlayStation 5 no lançamento, nos Estados Unidos, a versão com leitor?",
+      "answer": 500,
+      "unit": "dólares",
+      "fact": "O preço no Brasil foi bem mais alto."
+    },
+    {
+      "id": "chute-games-472",
+      "difficulty": "medium",
+      "text": "Quantos reais custava o PlayStation 5 no lançamento no Brasil, a versão com leitor?",
+      "answer": 4700,
+      "unit": "reais",
+      "fact": "Os impostos encarecem muito os consoles no Brasil."
+    },
+    {
+      "id": "chute-games-473",
+      "difficulty": "medium",
+      "text": "Quantos dólares custava o Nintendo Switch no lançamento, nos Estados Unidos?",
+      "answer": 300,
+      "unit": "dólares",
+      "fact": "O console saiu com Zelda Breath of the Wild."
+    },
+    {
+      "id": "chute-games-474",
+      "difficulty": "medium",
+      "text": "Quantos dólares custava o PlayStation 1 no lançamento, nos Estados Unidos?",
+      "answer": 300,
+      "unit": "dólares",
+      "fact": "A Sony anunciou o preço numa feira e o público aplaudiu."
+    },
+    {
+      "id": "chute-games-475",
+      "difficulty": "medium",
+      "text": "Quantos espaços para salvar tinha um cartão de memória de PlayStation 1?",
+      "answer": 15,
+      "unit": "espaços",
+      "fact": "Alguns jogos ocupavam vários espaços."
+    },
+    {
+      "id": "chute-games-476",
+      "difficulty": "medium",
+      "text": "Quantos personagens jogáveis tinha o \"Mortal Kombat\" original?",
+      "answer": 7,
+      "unit": "personagens",
+      "fact": "Goro e Shang Tsung eram os chefes."
+    },
+    {
+      "id": "chute-games-477",
+      "difficulty": "medium",
+      "text": "Quantos agentes tem Valorant, aproximadamente, em 2024?",
+      "answer": 25,
+      "unit": "agentes",
+      "fact": "Cada agente tem habilidades próprias."
+    },
+    {
+      "id": "chute-games-478",
+      "difficulty": "medium",
+      "text": "Quantos tipos de Pokémon existem?",
+      "answer": 18,
+      "unit": "tipos",
+      "fact": "O tipo Fada foi o último a ser criado."
+    },
+    {
+      "id": "chute-games-479",
+      "difficulty": "medium",
+      "text": "Quantos Pokémon lendários tem a primeira geração, contando o Mew?",
+      "answer": 5,
+      "unit": "Pokémon",
+      "fact": "São Articuno, Zapdos, Moltres, Mewtwo e Mew."
+    },
+    {
+      "id": "chute-games-480",
+      "difficulty": "medium",
+      "text": "Quantas Pokébolas o Professor Carvalho dá ao jogador no começo de \"Pokémon Red e Blue\"?",
+      "answer": 5,
+      "unit": "Pokébolas",
+      "fact": "O jogador as recebe depois de entregar uma encomenda."
+    },
+    {
+      "id": "chute-games-481",
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Pikachu de altura, segundo a Pokédex?",
+      "answer": 0.4,
+      "unit": "metros",
+      "fact": "Ele pesa seis quilos."
+    },
+    {
+      "id": "chute-games-482",
+      "difficulty": "medium",
+      "text": "Quantos quilos pesa o Snorlax, segundo a Pokédex?",
+      "answer": 460,
+      "unit": "kg",
+      "fact": "Ele bloqueia o caminho até alguém tocar a Pokéflauta."
+    },
+    {
+      "id": "chute-games-483",
+      "difficulty": "medium",
+      "text": "Quantos quilos pesa o Pikachu, segundo a Pokédex?",
+      "answer": 6,
+      "unit": "kg",
+      "fact": "Ele é o mascote da série."
+    },
+    {
+      "id": "chute-games-484",
+      "difficulty": "medium",
+      "text": "Quantas fases tem o jogo \"Super Mario World\"?",
+      "answer": 96,
+      "unit": "saídas",
+      "fact": "O número conta as saídas secretas de cada fase."
+    },
+    {
+      "id": "chute-games-485",
+      "difficulty": "medium",
+      "text": "Quantas luas existem em \"Super Mario Odyssey\", no total?",
+      "answer": 999,
+      "unit": "luas",
+      "fact": "O jogo tem luas escondidas por todo o mapa."
+    },
+    {
+      "id": "chute-games-486",
+      "difficulty": "medium",
+      "text": "Quantos templos, os santuários, tem \"Zelda: Breath of the Wild\"?",
+      "answer": 120,
+      "unit": "santuários",
+      "fact": "Cada santuário é um pequeno quebra-cabeça."
+    },
+    {
+      "id": "chute-games-487",
+      "difficulty": "medium",
+      "text": "Quantas sementes de Korok tem \"Zelda: Breath of the Wild\"?",
+      "answer": 900,
+      "unit": "sementes",
+      "fact": "A recompensa por achar todas é uma piada."
+    },
+    {
+      "id": "chute-games-488",
+      "difficulty": "medium",
+      "text": "Quantos personagens jogáveis principais tem \"GTA V\"?",
+      "answer": 3,
+      "unit": "personagens",
+      "fact": "São Michael, Franklin e Trevor."
+    },
+    {
+      "id": "chute-games-489",
+      "difficulty": "medium",
+      "text": "Quantos dólares custou fazer \"GTA V\", contando o marketing, aproximadamente, em milhões?",
+      "answer": 265,
+      "unit": "milhões",
+      "fact": "Na época foi o jogo mais caro já feito."
+    },
+    {
+      "id": "chute-games-490",
+      "difficulty": "medium",
+      "text": "Quantas horas leva para terminar \"The Witcher 3\", só a história principal, aproximadamente?",
+      "answer": 50,
+      "unit": "horas",
+      "fact": "Com as missões extras, passa de 100 horas."
+    },
+    {
+      "id": "chute-games-491",
+      "difficulty": "medium",
+      "text": "Quantos dólares levou o time campeão do torneio de Dota 2 The International 2021, em milhões?",
+      "answer": 18,
+      "unit": "milhões",
+      "fact": "Foi um dos maiores prêmios da história dos esportes eletrônicos."
+    },
+    {
+      "id": "chute-games-492",
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais de League of Legends tem o jogador Faker, até 2024?",
+      "answer": 5,
+      "unit": "títulos",
+      "fact": "Ele é considerado o maior jogador da história do jogo."
+    },
+    {
+      "id": "chute-games-493",
+      "difficulty": "medium",
+      "text": "Quantos títulos mundiais de Counter-Strike a equipe brasileira Luminosity/SK ganhou, os Majors?",
+      "answer": 2,
+      "unit": "títulos",
+      "fact": "O time tinha FalleN, coldzera e fer."
+    },
+    {
+      "id": "chute-games-494",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha FalleN quando ganhou o primeiro Major de CS, aproximadamente?",
+      "answer": 24,
+      "unit": "anos",
+      "fact": "Ele é um dos jogadores mais famosos do Brasil."
     }
   ]
 }

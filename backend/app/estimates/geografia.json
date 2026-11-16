@@ -3324,6 +3324,806 @@
       "answer": 14,
       "unit": "horas",
       "fact": "No Norte do país, a duração do dia muda bem pouco ao longo do ano."
+    },
+    {
+      "id": "chute-geografia-456",
+      "difficulty": "easy",
+      "text": "Quantos continentes são contados no modelo mais ensinado nas escolas do Brasil?",
+      "answer": 6,
+      "unit": "continentes",
+      "fact": "Alguns modelos juntam as Américas num continente só."
+    },
+    {
+      "id": "chute-geografia-457",
+      "difficulty": "easy",
+      "text": "Quantos oceanos são reconhecidos hoje, contando o Austral?",
+      "answer": 5,
+      "unit": "oceanos",
+      "fact": "O Oceano Austral cerca a Antártida."
+    },
+    {
+      "id": "chute-geografia-458",
+      "difficulty": "easy",
+      "text": "Quantos estados brasileiros não têm litoral?",
+      "answer": 10,
+      "unit": "estados",
+      "fact": "Contando o DF, são onze unidades sem mar."
+    },
+    {
+      "id": "chute-geografia-459",
+      "difficulty": "easy",
+      "text": "Quantos estados brasileiros fazem fronteira com outro país?",
+      "answer": 11,
+      "unit": "estados",
+      "fact": "O Amazonas faz fronteira com três países."
+    },
+    {
+      "id": "chute-geografia-460",
+      "difficulty": "easy",
+      "text": "Quantas horas de diferença há entre Brasília e Londres, no inverno europeu?",
+      "answer": 3,
+      "unit": "horas",
+      "fact": "Londres fica no meridiano de Greenwich."
+    },
+    {
+      "id": "chute-geografia-461",
+      "difficulty": "easy",
+      "text": "Quantas horas de diferença há entre Brasília e Nova York, no inverno americano?",
+      "answer": 2,
+      "unit": "horas",
+      "fact": "No verão americano a diferença cai para uma hora."
+    },
+    {
+      "id": "chute-geografia-462",
+      "difficulty": "easy",
+      "text": "Quantos km tem o litoral brasileiro, aproximadamente, em milhares?",
+      "answer": 7.4,
+      "unit": "mil",
+      "fact": "Contando as reentrâncias, passa de 9 mil km."
+    },
+    {
+      "id": "chute-geografia-463",
+      "difficulty": "easy",
+      "text": "Qual é a posição do Brasil entre os maiores países do mundo em área?",
+      "answer": 5,
+      "unit": "º",
+      "fact": "Só Rússia, Canadá, China e Estados Unidos são maiores."
+    },
+    {
+      "id": "chute-geografia-464",
+      "difficulty": "easy",
+      "text": "Qual é a posição do Brasil entre os países mais populosos do mundo, aproximadamente?",
+      "answer": 7,
+      "unit": "º",
+      "fact": "Índia e China lideram com folga."
+    },
+    {
+      "id": "chute-geografia-465",
+      "difficulty": "easy",
+      "text": "Quantas capitais brasileiras ficam no litoral?",
+      "answer": 15,
+      "unit": "capitais",
+      "fact": "Muitas cidades nasceram no litoral na época colonial."
+    },
+    {
+      "id": "chute-geografia-466",
+      "difficulty": "easy",
+      "text": "Quantos km separam São Paulo de Brasília, aproximadamente, pela estrada?",
+      "answer": 1000,
+      "unit": "km",
+      "fact": "A viagem de carro leva umas doze horas."
+    },
+    {
+      "id": "chute-geografia-467",
+      "difficulty": "easy",
+      "text": "Quantos km separam São Paulo e Curitiba, aproximadamente, pela estrada?",
+      "answer": 410,
+      "unit": "km",
+      "fact": "A Régis Bittencourt liga as duas cidades."
+    },
+    {
+      "id": "chute-geografia-468",
+      "difficulty": "easy",
+      "text": "Quantos km separam Porto Alegre e Florianópolis, aproximadamente, pela estrada?",
+      "answer": 470,
+      "unit": "km",
+      "fact": "A BR-101 passa pelo litoral."
+    },
+    {
+      "id": "chute-geografia-469",
+      "difficulty": "easy",
+      "text": "Quantos km separam Salvador e Recife, aproximadamente, pela estrada?",
+      "answer": 800,
+      "unit": "km",
+      "fact": "O caminho passa por Aracaju e Maceió."
+    },
+    {
+      "id": "chute-geografia-470",
+      "difficulty": "easy",
+      "text": "Quantas horas dura um voo de São Paulo a Manaus, aproximadamente?",
+      "answer": 4,
+      "unit": "horas",
+      "fact": "É quase o mesmo tempo de um voo para Buenos Aires e volta."
+    },
+    {
+      "id": "chute-geografia-471",
+      "difficulty": "easy",
+      "text": "Quantas horas dura um voo de São Paulo a Miami, aproximadamente?",
+      "answer": 8,
+      "unit": "horas",
+      "fact": "Miami recebe muitos turistas brasileiros."
+    },
+    {
+      "id": "chute-geografia-472",
+      "difficulty": "easy",
+      "text": "Quantas horas dura um voo de São Paulo ao Rio de Janeiro, aproximadamente?",
+      "answer": 1,
+      "unit": "hora",
+      "fact": "A ponte aérea é uma das rotas mais movimentadas do mundo."
+    },
+    {
+      "id": "chute-geografia-473",
+      "difficulty": "easy",
+      "text": "Quantas horas dura um voo de São Paulo a Tóquio, com escala, aproximadamente?",
+      "answer": 25,
+      "unit": "horas",
+      "fact": "O Japão fica do outro lado do mundo."
+    },
+    {
+      "id": "chute-geografia-474",
+      "difficulty": "easy",
+      "text": "Quantos países tem a Oceania, aproximadamente?",
+      "answer": 14,
+      "unit": "países",
+      "fact": "A Austrália é de longe o maior deles."
+    },
+    {
+      "id": "chute-geografia-475",
+      "difficulty": "easy",
+      "text": "Quantos estados tem o México?",
+      "answer": 32,
+      "unit": "estados",
+      "fact": "Contando a Cidade do México."
+    },
+    {
+      "id": "chute-geografia-476",
+      "difficulty": "easy",
+      "text": "Quantas províncias tem a Argentina?",
+      "answer": 23,
+      "unit": "províncias",
+      "fact": "Buenos Aires é uma cidade autônoma."
+    },
+    {
+      "id": "chute-geografia-477",
+      "difficulty": "easy",
+      "text": "Quantos países tem a Península Ibérica, contando Andorra?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "Espanha e Portugal ocupam quase tudo."
+    },
+    {
+      "id": "chute-geografia-478",
+      "difficulty": "easy",
+      "text": "Quantos países fazem fronteira com a França no continente europeu?",
+      "answer": 8,
+      "unit": "países",
+      "fact": "O Brasil é o vizinho com a maior fronteira com a França."
+    },
+    {
+      "id": "chute-geografia-479",
+      "difficulty": "easy",
+      "text": "Quantos países a Rússia tem como vizinhos por terra, aproximadamente?",
+      "answer": 14,
+      "unit": "países",
+      "fact": "Ela divide o recorde com a China."
+    },
+    {
+      "id": "chute-geografia-480",
+      "difficulty": "easy",
+      "text": "Quantos países fazem fronteira com o Paraguai?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "São Brasil, Argentina e Bolívia."
+    },
+    {
+      "id": "chute-geografia-481",
+      "difficulty": "easy",
+      "text": "Quantos países fazem fronteira com os Estados Unidos?",
+      "answer": 2,
+      "unit": "países",
+      "fact": "São Canadá e México."
+    },
+    {
+      "id": "chute-geografia-482",
+      "difficulty": "easy",
+      "text": "Quantos metros tem o Corcovado, onde fica o Cristo?",
+      "answer": 710,
+      "unit": "metros",
+      "fact": "O Cristo foi inaugurado em 1931."
+    },
+    {
+      "id": "chute-geografia-483",
+      "difficulty": "medium",
+      "text": "Qual é a população de Florianópolis, em mil habitantes, aproximadamente?",
+      "answer": 540,
+      "unit": "mil",
+      "fact": "Grande parte da cidade fica numa ilha."
+    },
+    {
+      "id": "chute-geografia-484",
+      "difficulty": "medium",
+      "text": "Qual é a população de Palmas, a capital do Tocantins, em mil habitantes, aproximadamente?",
+      "answer": 300,
+      "unit": "mil",
+      "fact": "Palmas é a capital mais nova do Brasil."
+    },
+    {
+      "id": "chute-geografia-485",
+      "difficulty": "medium",
+      "text": "Qual é a população de Boa Vista, em mil habitantes, aproximadamente?",
+      "answer": 410,
+      "unit": "mil",
+      "fact": "É a única capital totalmente acima da Linha do Equador."
+    },
+    {
+      "id": "chute-geografia-486",
+      "difficulty": "medium",
+      "text": "Qual é a população de Vitória, em mil habitantes, aproximadamente?",
+      "answer": 320,
+      "unit": "mil",
+      "fact": "Vitória fica numa ilha."
+    },
+    {
+      "id": "chute-geografia-487",
+      "difficulty": "medium",
+      "text": "Qual é a população do Rio Grande do Sul, em milhões, aproximadamente?",
+      "answer": 10.9,
+      "unit": "milhões",
+      "fact": "O estado tem forte influência alemã e italiana."
+    },
+    {
+      "id": "chute-geografia-488",
+      "difficulty": "medium",
+      "text": "Qual é a população de Roraima, em mil habitantes, aproximadamente?",
+      "answer": 640,
+      "unit": "mil",
+      "fact": "É o estado menos populoso do Brasil."
+    },
+    {
+      "id": "chute-geografia-489",
+      "difficulty": "medium",
+      "text": "Qual é a área do Amazonas, em milhões de km², aproximadamente?",
+      "answer": 1.56,
+      "unit": "milhão km²",
+      "fact": "O Amazonas caberia o Reino Unido mais de seis vezes."
+    },
+    {
+      "id": "chute-geografia-490",
+      "difficulty": "medium",
+      "text": "Qual é a área de Sergipe, em mil km², aproximadamente?",
+      "answer": 22,
+      "unit": "mil km²",
+      "fact": "É o menor estado brasileiro."
+    },
+    {
+      "id": "chute-geografia-491",
+      "difficulty": "medium",
+      "text": "Qual é a área de Portugal, em mil km², aproximadamente?",
+      "answer": 92,
+      "unit": "mil km²",
+      "fact": "Portugal é menor que Pernambuco e Paraíba juntos."
+    },
+    {
+      "id": "chute-geografia-492",
+      "difficulty": "medium",
+      "text": "Qual é a área do Uruguai, em mil km², aproximadamente?",
+      "answer": 176,
+      "unit": "mil km²",
+      "fact": "O Uruguai é menor que o Paraná."
+    },
+    {
+      "id": "chute-geografia-493",
+      "difficulty": "medium",
+      "text": "Qual é a área do Japão, em mil km², aproximadamente?",
+      "answer": 378,
+      "unit": "mil km²",
+      "fact": "O Japão é um pouco menor que o Mato Grosso do Sul."
+    },
+    {
+      "id": "chute-geografia-494",
+      "difficulty": "medium",
+      "text": "Qual é a área da Itália, em mil km², aproximadamente?",
+      "answer": 301,
+      "unit": "mil km²",
+      "fact": "A Itália tem o formato de uma bota."
+    },
+    {
+      "id": "chute-geografia-495",
+      "difficulty": "medium",
+      "text": "Qual é a população dos Estados Unidos, em milhões, aproximadamente?",
+      "answer": 335,
+      "unit": "milhões",
+      "fact": "É o terceiro país mais populoso do mundo."
+    },
+    {
+      "id": "chute-geografia-496",
+      "difficulty": "medium",
+      "text": "Qual é a população de Buenos Aires, a cidade, em milhões, aproximadamente?",
+      "answer": 3,
+      "unit": "milhões",
+      "fact": "A região metropolitana passa de 15 milhões."
+    },
+    {
+      "id": "chute-geografia-497",
+      "difficulty": "medium",
+      "text": "Qual é a população de Lisboa, a cidade, em mil habitantes, aproximadamente?",
+      "answer": 550,
+      "unit": "mil",
+      "fact": "A região metropolitana tem quase 3 milhões."
+    },
+    {
+      "id": "chute-geografia-498",
+      "difficulty": "medium",
+      "text": "Quantos metros de altitude tem Belo Horizonte, aproximadamente?",
+      "answer": 850,
+      "unit": "metros",
+      "fact": "A cidade é cercada pela Serra do Curral."
+    },
+    {
+      "id": "chute-geografia-499",
+      "difficulty": "medium",
+      "text": "Quantos metros de altitude tem Curitiba, aproximadamente?",
+      "answer": 935,
+      "unit": "metros",
+      "fact": "É a capital mais fria do Brasil."
+    },
+    {
+      "id": "chute-geografia-500",
+      "difficulty": "medium",
+      "text": "Quantos metros de altitude tem La Paz, aproximadamente?",
+      "answer": 3600,
+      "unit": "metros",
+      "fact": "É a sede de governo mais alta do mundo."
+    },
+    {
+      "id": "chute-geografia-501",
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Aconcágua, aproximadamente?",
+      "answer": 6960,
+      "unit": "metros",
+      "fact": "É a montanha mais alta das Américas."
+    },
+    {
+      "id": "chute-geografia-502",
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Mont Blanc, aproximadamente?",
+      "answer": 4800,
+      "unit": "metros",
+      "fact": "É a montanha mais alta dos Alpes."
+    },
+    {
+      "id": "chute-geografia-503",
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Kilimanjaro, aproximadamente?",
+      "answer": 5895,
+      "unit": "metros",
+      "fact": "É a montanha mais alta da África."
+    },
+    {
+      "id": "chute-geografia-504",
+      "difficulty": "medium",
+      "text": "Quantos km² tem a Groenlândia, em milhões, aproximadamente?",
+      "answer": 2.2,
+      "unit": "milhões",
+      "fact": "É a maior ilha do mundo."
+    },
+    {
+      "id": "chute-geografia-505",
+      "difficulty": "medium",
+      "text": "Quantos km² tem o Pantanal, aproximadamente, em mil?",
+      "answer": 150,
+      "unit": "mil km²",
+      "fact": "É a maior planície alagável do mundo."
+    },
+    {
+      "id": "chute-geografia-506",
+      "difficulty": "medium",
+      "text": "Quantos km² tem o Mar Mediterrâneo, em milhões, aproximadamente?",
+      "answer": 2.5,
+      "unit": "milhões",
+      "fact": "O nome quer dizer \"no meio das terras\"."
+    },
+    {
+      "id": "chute-geografia-507",
+      "difficulty": "medium",
+      "text": "Quantos km² tem a Lagoa dos Patos, aproximadamente, em mil?",
+      "answer": 10,
+      "unit": "mil km²",
+      "fact": "É a maior lagoa do Brasil."
+    },
+    {
+      "id": "chute-geografia-508",
+      "difficulty": "medium",
+      "text": "Quantos km² tem o lago Titicaca, aproximadamente, em mil?",
+      "answer": 8.4,
+      "unit": "mil km²",
+      "fact": "É o lago navegável mais alto do mundo."
+    },
+    {
+      "id": "chute-geografia-509",
+      "difficulty": "medium",
+      "text": "Quantos metros tem o Salto Ángel, na Venezuela, aproximadamente?",
+      "answer": 980,
+      "unit": "metros",
+      "fact": "É a cachoeira mais alta do mundo."
+    },
+    {
+      "id": "chute-geografia-510",
+      "difficulty": "medium",
+      "text": "Quantos km tem a Grande Muralha da China, contando todos os trechos, em milhares?",
+      "answer": 21,
+      "unit": "mil",
+      "fact": "Boa parte da muralha está em ruínas."
+    },
+    {
+      "id": "chute-geografia-511",
+      "difficulty": "medium",
+      "text": "Quantos km de largura tem o Estreito de Gibraltar, no ponto mais estreito, aproximadamente?",
+      "answer": 14,
+      "unit": "km",
+      "fact": "O estreito separa a Europa da África."
+    },
+    {
+      "id": "chute-geografia-512",
+      "difficulty": "medium",
+      "text": "Quantos km tem a BR-116, aproximadamente?",
+      "answer": 4500,
+      "unit": "km",
+      "fact": "É a maior rodovia federal do Brasil."
+    },
+    {
+      "id": "chute-geografia-513",
+      "difficulty": "medium",
+      "text": "Quantos km tem a Rodovia Pan-Americana, aproximadamente, em milhares?",
+      "answer": 30,
+      "unit": "mil",
+      "fact": "Ela vai do Alasca à Argentina."
+    },
+    {
+      "id": "chute-geografia-514",
+      "difficulty": "medium",
+      "text": "Quantos km tem a ferrovia Transiberiana, aproximadamente?",
+      "answer": 9300,
+      "unit": "km",
+      "fact": "A viagem completa leva uma semana."
+    },
+    {
+      "id": "chute-geografia-515",
+      "difficulty": "medium",
+      "text": "Quantos km separam o Oiapoque do Chuí, em linha reta, aproximadamente?",
+      "answer": 4180,
+      "unit": "km",
+      "fact": "A expressão \"do Oiapoque ao Chuí\" quer dizer o Brasil inteiro."
+    },
+    {
+      "id": "chute-geografia-516",
+      "difficulty": "medium",
+      "text": "Quantos km separam o ponto mais a leste e o mais a oeste do Brasil, aproximadamente?",
+      "answer": 4320,
+      "unit": "km",
+      "fact": "O Brasil é quase tão largo quanto comprido."
+    },
+    {
+      "id": "chute-geografia-517",
+      "difficulty": "medium",
+      "text": "Quantos km separam o Brasil da África, no ponto mais próximo, aproximadamente?",
+      "answer": 2900,
+      "unit": "km",
+      "fact": "O ponto mais próximo fica no Rio Grande do Norte."
+    },
+    {
+      "id": "chute-geografia-518",
+      "difficulty": "medium",
+      "text": "Quantos km separam Brasil e Portugal, de Recife a Lisboa, aproximadamente?",
+      "answer": 5800,
+      "unit": "km",
+      "fact": "A viagem de caravela levava semanas."
+    },
+    {
+      "id": "chute-geografia-519",
+      "difficulty": "medium",
+      "text": "Quantos km separam Fernando de Noronha do continente, aproximadamente?",
+      "answer": 350,
+      "unit": "km",
+      "fact": "O arquipélago pertence a Pernambuco."
+    },
+    {
+      "id": "chute-geografia-520",
+      "difficulty": "medium",
+      "text": "Quantas ilhas tem o Havaí, as principais?",
+      "answer": 8,
+      "unit": "ilhas",
+      "fact": "O Havaí é o único estado americano feito só de ilhas."
+    },
+    {
+      "id": "chute-geografia-521",
+      "difficulty": "medium",
+      "text": "Quantas ilhas tem o arquipélago dos Açores?",
+      "answer": 9,
+      "unit": "ilhas",
+      "fact": "Os Açores pertencem a Portugal."
+    },
+    {
+      "id": "chute-geografia-522",
+      "difficulty": "medium",
+      "text": "Quantas ilhas tem o arquipélago da Madeira, habitadas?",
+      "answer": 2,
+      "unit": "ilhas",
+      "fact": "As ilhas habitadas são Madeira e Porto Santo."
+    },
+    {
+      "id": "chute-geografia-523",
+      "difficulty": "medium",
+      "text": "Quantos vulcões ativos tem a Islândia, aproximadamente?",
+      "answer": 30,
+      "unit": "vulcões",
+      "fact": "A ilha fica sobre duas placas tectônicas."
+    },
+    {
+      "id": "chute-geografia-524",
+      "difficulty": "medium",
+      "text": "Quantos vulcões ativos tem o Japão, aproximadamente?",
+      "answer": 110,
+      "unit": "vulcões",
+      "fact": "O Japão fica no Círculo de Fogo do Pacífico."
+    },
+    {
+      "id": "chute-geografia-525",
+      "difficulty": "medium",
+      "text": "Quantos terremotos o Japão sente por ano, aproximadamente, em milhares?",
+      "answer": 1.5,
+      "unit": "mil",
+      "fact": "A maior parte é fraca demais para causar estragos."
+    },
+    {
+      "id": "chute-geografia-526",
+      "difficulty": "medium",
+      "text": "Quantos graus de latitude a Linha do Equador marca?",
+      "answer": 0,
+      "unit": "graus",
+      "fact": "Ela divide a Terra em hemisférios norte e sul."
+    },
+    {
+      "id": "chute-geografia-527",
+      "difficulty": "medium",
+      "text": "Quantos graus de latitude marca o Trópico de Capricórnio, aproximadamente?",
+      "answer": 23.4,
+      "unit": "graus",
+      "fact": "O trópico passa por São Paulo."
+    },
+    {
+      "id": "chute-geografia-528",
+      "difficulty": "medium",
+      "text": "Quantos graus de latitude marca o Círculo Polar Ártico, aproximadamente?",
+      "answer": 66.5,
+      "unit": "graus",
+      "fact": "Acima dele existe o sol da meia-noite."
+    },
+    {
+      "id": "chute-geografia-529",
+      "difficulty": "medium",
+      "text": "Quantos graus de longitude marca o meridiano de Greenwich?",
+      "answer": 0,
+      "unit": "graus",
+      "fact": "Ele passa por Londres."
+    },
+    {
+      "id": "chute-geografia-530",
+      "difficulty": "medium",
+      "text": "Quantos graus de longitude tem cada fuso horário?",
+      "answer": 15,
+      "unit": "graus",
+      "fact": "A Terra gira 15 graus por hora."
+    },
+    {
+      "id": "chute-geografia-531",
+      "difficulty": "medium",
+      "text": "Quantos fusos horários tem os Estados Unidos, contando Alasca e Havaí?",
+      "answer": 6,
+      "unit": "fusos",
+      "fact": "Os territórios ultramarinos adicionam outros fusos."
+    },
+    {
+      "id": "chute-geografia-532",
+      "difficulty": "medium",
+      "text": "Quantos estados brasileiros a Linha do Equador atravessa?",
+      "answer": 4,
+      "unit": "estados",
+      "fact": "São Amazonas, Roraima, Pará e Amapá."
+    },
+    {
+      "id": "chute-geografia-533",
+      "difficulty": "medium",
+      "text": "Quantos estados brasileiros o Trópico de Capricórnio atravessa?",
+      "answer": 3,
+      "unit": "estados",
+      "fact": "São Mato Grosso do Sul, Paraná e São Paulo."
+    },
+    {
+      "id": "chute-geografia-534",
+      "difficulty": "medium",
+      "text": "Quantos países a Linha do Equador atravessa?",
+      "answer": 13,
+      "unit": "países",
+      "fact": "Na América do Sul, são Equador, Colômbia e Brasil."
+    },
+    {
+      "id": "chute-geografia-535",
+      "difficulty": "easy",
+      "text": "Quantos hemisférios a Linha do Equador separa?",
+      "answer": 2,
+      "unit": "hemisférios",
+      "fact": "Norte e sul."
+    },
+    {
+      "id": "chute-geografia-536",
+      "difficulty": "easy",
+      "text": "Quantos polos geográficos tem a Terra?",
+      "answer": 2,
+      "unit": "polos",
+      "fact": "O Polo Sul fica sobre um continente, a Antártida."
+    },
+    {
+      "id": "chute-geografia-537",
+      "difficulty": "easy",
+      "text": "Quantos km tem a circunferência da Terra na Linha do Equador, aproximadamente?",
+      "answer": 40000,
+      "unit": "km",
+      "fact": "Dar a volta ao mundo de avião leva cerca de dois dias."
+    },
+    {
+      "id": "chute-geografia-538",
+      "difficulty": "easy",
+      "text": "Quantos estados brasileiros começam com a letra P?",
+      "answer": 4,
+      "unit": "estados",
+      "fact": "Pará, Paraíba, Paraná e Pernambuco."
+    },
+    {
+      "id": "chute-geografia-539",
+      "difficulty": "easy",
+      "text": "Quantos estados brasileiros começam com a letra A?",
+      "answer": 4,
+      "unit": "estados",
+      "fact": "Acre, Alagoas, Amapá e Amazonas."
+    },
+    {
+      "id": "chute-geografia-540",
+      "difficulty": "easy",
+      "text": "Quantos estados brasileiros começam com a letra M?",
+      "answer": 4,
+      "unit": "estados",
+      "fact": "Maranhão, Mato Grosso, Mato Grosso do Sul e Minas Gerais."
+    },
+    {
+      "id": "chute-geografia-541",
+      "difficulty": "easy",
+      "text": "Quantas capitais brasileiras têm \"São\" no nome?",
+      "answer": 2,
+      "unit": "capitais",
+      "fact": "São Paulo e São Luís."
+    },
+    {
+      "id": "chute-geografia-542",
+      "difficulty": "easy",
+      "text": "Quantos países da América do Sul têm o espanhol como língua oficial?",
+      "answer": 9,
+      "unit": "países",
+      "fact": "Brasil, Guiana e Suriname não falam espanhol oficialmente."
+    },
+    {
+      "id": "chute-geografia-543",
+      "difficulty": "easy",
+      "text": "Quantas Guianas existem na América do Sul, contando a Francesa?",
+      "answer": 3,
+      "unit": "Guianas",
+      "fact": "A Guiana fala inglês, o Suriname fala holandês e a Guiana Francesa fala francês."
+    },
+    {
+      "id": "chute-geografia-544",
+      "difficulty": "easy",
+      "text": "Quantos km tem a ilha de Florianópolis de comprimento, aproximadamente?",
+      "answer": 54,
+      "unit": "km",
+      "fact": "A ilha tem mais de 40 praias famosas."
+    },
+    {
+      "id": "chute-geografia-545",
+      "difficulty": "easy",
+      "text": "Quantos países têm a Cordilheira dos Andes em seu território?",
+      "answer": 7,
+      "unit": "países",
+      "fact": "Os Andes vão da Venezuela até a Argentina e o Chile."
+    },
+    {
+      "id": "chute-geografia-546",
+      "difficulty": "easy",
+      "text": "Quantos km tem a Cordilheira dos Andes, em milhares, aproximadamente?",
+      "answer": 7,
+      "unit": "mil",
+      "fact": "É a maior cordilheira do mundo em comprimento."
+    },
+    {
+      "id": "chute-geografia-547",
+      "difficulty": "easy",
+      "text": "Quantos países a Floresta Amazônica cobre, contando a Guiana Francesa?",
+      "answer": 9,
+      "unit": "países",
+      "fact": "O Brasil tem cerca de 60% da floresta."
+    },
+    {
+      "id": "chute-geografia-548",
+      "difficulty": "easy",
+      "text": "Quantos continentes a Rússia ocupa?",
+      "answer": 2,
+      "unit": "continentes",
+      "fact": "A Rússia fica na Europa e na Ásia."
+    },
+    {
+      "id": "chute-geografia-549",
+      "difficulty": "easy",
+      "text": "Quantos continentes o Egito ocupa?",
+      "answer": 2,
+      "unit": "continentes",
+      "fact": "A Península do Sinai fica na Ásia."
+    },
+    {
+      "id": "chute-geografia-550",
+      "difficulty": "easy",
+      "text": "Quantos países fazem fronteira com a Bolívia?",
+      "answer": 5,
+      "unit": "países",
+      "fact": "A Bolívia não tem saída para o mar."
+    },
+    {
+      "id": "chute-geografia-551",
+      "difficulty": "easy",
+      "text": "Quantos km de largura tem o Chile, em média, aproximadamente?",
+      "answer": 180,
+      "unit": "km",
+      "fact": "O Chile tem mais de 4 mil km de comprimento."
+    },
+    {
+      "id": "chute-geografia-552",
+      "difficulty": "easy",
+      "text": "Quantos km de comprimento tem o Chile, aproximadamente, em milhares?",
+      "answer": 4.3,
+      "unit": "mil",
+      "fact": "O Chile vai do deserto do Atacama até a Patagônia."
+    },
+    {
+      "id": "chute-geografia-553",
+      "difficulty": "easy",
+      "text": "Quantas capitais tem a Bolívia, contando a sede de governo?",
+      "answer": 2,
+      "unit": "capitais",
+      "fact": "Sucre é a capital oficial, e La Paz é a sede do governo."
+    },
+    {
+      "id": "chute-geografia-554",
+      "difficulty": "easy",
+      "text": "Quantos países formam o Benelux?",
+      "answer": 3,
+      "unit": "países",
+      "fact": "Bélgica, Holanda e Luxemburgo."
+    },
+    {
+      "id": "chute-geografia-555",
+      "difficulty": "easy",
+      "text": "Quantas cidades brasileiras têm mais de 1 milhão de habitantes, aproximadamente?",
+      "answer": 15,
+      "unit": "cidades",
+      "fact": "A maior parte é capital."
     }
   ]
 }

@@ -2881,6 +2881,1550 @@
       "answer": 96,
       "unit": "folhas",
       "fact": "Cadernos de dez matérias passam de 200 folhas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-436",
+      "difficulty": "easy",
+      "text": "Quantos meses têm 31 dias no ano?",
+      "answer": 7,
+      "unit": "meses",
+      "fact": "Os meses com 31 dias são janeiro, março, maio, julho, agosto, outubro e dezembro."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-437",
+      "difficulty": "easy",
+      "text": "Quantos meses têm 30 dias no ano?",
+      "answer": 4,
+      "unit": "meses",
+      "fact": "São abril, junho, setembro e novembro."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-438",
+      "difficulty": "easy",
+      "text": "Quantos dias tem um semestre, aproximadamente?",
+      "answer": 182,
+      "unit": "dias",
+      "fact": "Um semestre é metade do ano."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-439",
+      "difficulty": "easy",
+      "text": "Quantas semanas tem um mês, aproximadamente?",
+      "answer": 4.3,
+      "unit": "semanas",
+      "fact": "Por isso o salário semanal não fecha certinho com o mensal."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-440",
+      "difficulty": "easy",
+      "text": "Quantos dias tem uma quinzena?",
+      "answer": 15,
+      "unit": "dias",
+      "fact": "Muita gente recebe o salário em duas quinzenas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-441",
+      "difficulty": "easy",
+      "text": "Quantos anos tem uma década?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Um século tem dez décadas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-442",
+      "difficulty": "easy",
+      "text": "Quantos anos tem um milênio?",
+      "answer": 1000,
+      "unit": "anos",
+      "fact": "O ano 2001 abriu o terceiro milênio."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-443",
+      "difficulty": "easy",
+      "text": "Quantas unidades tem uma grosa?",
+      "answer": 144,
+      "unit": "unidades",
+      "fact": "Uma grosa é uma dúzia de dúzias."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-444",
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de prata?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "Nas bodas de ouro, são 50 anos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-445",
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de algodão?",
+      "answer": 2,
+      "unit": "anos",
+      "fact": "As bodas de papel marcam o primeiro ano."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-446",
+      "difficulty": "easy",
+      "text": "Quantos anos de casamento celebram as bodas de cristal?",
+      "answer": 15,
+      "unit": "anos",
+      "fact": "A cada aniversário de casamento existe um nome de bodas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-447",
+      "difficulty": "easy",
+      "text": "Quantos anos tem quem faz bodas de ouro, se casou aos 25?",
+      "answer": 75,
+      "unit": "anos",
+      "fact": "As bodas de ouro marcam 50 anos de casamento."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-448",
+      "difficulty": "easy",
+      "text": "Quantos jogadores há num jogo de damas?",
+      "answer": 2,
+      "unit": "jogadores",
+      "fact": "Cada jogador começa com 12 peças."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-449",
+      "difficulty": "easy",
+      "text": "Quantas peças cada jogador tem no início de um jogo de damas?",
+      "answer": 12,
+      "unit": "peças",
+      "fact": "As peças andam na diagonal."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-450",
+      "difficulty": "easy",
+      "text": "Quantas casas tem o tabuleiro de damas?",
+      "answer": 64,
+      "unit": "casas",
+      "fact": "É o mesmo tabuleiro do xadrez."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-451",
+      "difficulty": "easy",
+      "text": "Quantas peças tem cada jogador no início do xadrez?",
+      "answer": 16,
+      "unit": "peças",
+      "fact": "São oito peões e oito peças maiores."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-452",
+      "difficulty": "easy",
+      "text": "Quantos reis tem um jogo de xadrez?",
+      "answer": 2,
+      "unit": "reis",
+      "fact": "Ganha quem der xeque-mate no rei do adversário."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-453",
+      "difficulty": "easy",
+      "text": "Quantas faces tem um dado comum?",
+      "answer": 6,
+      "unit": "faces",
+      "fact": "As faces opostas de um dado sempre somam 7."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-454",
+      "difficulty": "easy",
+      "text": "Quantos naipes tem um baralho comum?",
+      "answer": 4,
+      "unit": "naipes",
+      "fact": "São copas, ouros, espadas e paus."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-455",
+      "difficulty": "easy",
+      "text": "Quantas cartas de cada naipe tem um baralho comum?",
+      "answer": 13,
+      "unit": "cartas",
+      "fact": "Do ás ao rei."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-456",
+      "difficulty": "easy",
+      "text": "Quantos coringas vêm num baralho comum, em geral?",
+      "answer": 2,
+      "unit": "coringas",
+      "fact": "Muitos jogos não usam os coringas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-457",
+      "difficulty": "easy",
+      "text": "Quantas cartas cada jogador recebe no truco?",
+      "answer": 3,
+      "unit": "cartas",
+      "fact": "O truco é jogado em duplas ou em quatro."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-458",
+      "difficulty": "easy",
+      "text": "Quantas cartas cada jogador recebe no pôquer Texas Hold'em, na mão?",
+      "answer": 2,
+      "unit": "cartas",
+      "fact": "Outras cinco cartas ficam abertas na mesa."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-459",
+      "difficulty": "easy",
+      "text": "Quantos pontos vale uma partida de truco, para ganhar o jogo?",
+      "answer": 12,
+      "unit": "pontos",
+      "fact": "Quem pede truco pode fazer a mão valer mais."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-460",
+      "difficulty": "easy",
+      "text": "Quantas bolas coloridas tem um jogo de sinuca, sem a branca?",
+      "answer": 15,
+      "unit": "bolas",
+      "fact": "No snooker, a quantidade é diferente."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-461",
+      "difficulty": "easy",
+      "text": "Quantas letras tem a palavra \"Brasil\"?",
+      "answer": 6,
+      "unit": "letras",
+      "fact": "A palavra vem do pau-brasil."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-462",
+      "difficulty": "easy",
+      "text": "Quantas sílabas tem a palavra \"computador\"?",
+      "answer": 4,
+      "unit": "sílabas",
+      "fact": "Com-pu-ta-dor."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-463",
+      "difficulty": "easy",
+      "text": "Quantas vogais tem o alfabeto?",
+      "answer": 5,
+      "unit": "vogais",
+      "fact": "As vogais são A, E, I, O e U."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-464",
+      "difficulty": "easy",
+      "text": "Quantas consoantes tem o alfabeto da língua portuguesa?",
+      "answer": 21,
+      "unit": "consoantes",
+      "fact": "O alfabeto tem 26 letras desde 2009."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-465",
+      "difficulty": "easy",
+      "text": "Quantas letras foram incluídas no alfabeto português no acordo ortográfico?",
+      "answer": 3,
+      "unit": "letras",
+      "fact": "As letras K, W e Y voltaram oficialmente ao alfabeto."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-466",
+      "difficulty": "easy",
+      "text": "Quantos dias tem a Semana Santa, de domingo a domingo?",
+      "answer": 8,
+      "unit": "dias",
+      "fact": "Ela vai do Domingo de Ramos ao Domingo de Páscoa."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-467",
+      "difficulty": "easy",
+      "text": "Quantos dias tem o Carnaval, de sábado até a Quarta-feira de Cinzas?",
+      "answer": 5,
+      "unit": "dias",
+      "fact": "A quarta-feira marca o começo da Quaresma."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-468",
+      "difficulty": "easy",
+      "text": "Quantas horas por dia um trabalhador CLT trabalha, em geral, numa jornada de 44 horas semanais de segunda a sexta?",
+      "answer": 9,
+      "unit": "horas",
+      "fact": "O sábado livre é compensado nos outros dias."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-469",
+      "difficulty": "easy",
+      "text": "Quantas horas de almoço um trabalhador tem, no mínimo, numa jornada de 8 horas?",
+      "answer": 1,
+      "unit": "hora",
+      "fact": "A lei garante pelo menos uma hora de intervalo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-470",
+      "difficulty": "easy",
+      "text": "Quantos anos tem uma pessoa que nasceu em 2000, no ano de 2025?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "Quem nasceu em 2000 é chamado de \"zoomer\" ou geração Z."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-471",
+      "difficulty": "easy",
+      "text": "Quantos centímetros tem um sapato número 40, aproximadamente?",
+      "answer": 27,
+      "unit": "cm",
+      "fact": "A numeração brasileira vem de uma medida francesa."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-472",
+      "difficulty": "easy",
+      "text": "Quantas folhas A4 cabem numa folha A3?",
+      "answer": 2,
+      "unit": "folhas",
+      "fact": "Cada tamanho A é metade do anterior."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-473",
+      "difficulty": "easy",
+      "text": "Quantas folhas tem um bloco comum de folhas de fichário, aproximadamente?",
+      "answer": 100,
+      "unit": "folhas",
+      "fact": "O fichário permite trocar e reorganizar as folhas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-474",
+      "difficulty": "easy",
+      "text": "Quantas canetas vêm numa caixa comum de canetas esferográficas?",
+      "answer": 50,
+      "unit": "canetas",
+      "fact": "A caneta BIC é uma das mais vendidas do mundo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-475",
+      "difficulty": "easy",
+      "text": "Quantas cores tem um semáforo de pedestres?",
+      "answer": 2,
+      "unit": "cores",
+      "fact": "O boneco vermelho manda esperar e o verde libera."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-476",
+      "difficulty": "easy",
+      "text": "Quantos segundos dura o sinal amarelo de um semáforo, em geral?",
+      "answer": 4,
+      "unit": "segundos",
+      "fact": "Em avenidas rápidas, o amarelo dura mais."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-477",
+      "difficulty": "easy",
+      "text": "Quantos andares tem um prédio de apartamentos comum de São Paulo, aproximadamente?",
+      "answer": 15,
+      "unit": "andares",
+      "fact": "Prédios novos passam de 30 andares."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-478",
+      "difficulty": "easy",
+      "text": "Quantos metros quadrados tem um apartamento de dois quartos comum, aproximadamente?",
+      "answer": 60,
+      "unit": "m²",
+      "fact": "Apartamentos novos têm ficado menores."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-479",
+      "difficulty": "easy",
+      "text": "Quantos metros quadrados tem uma vaga de garagem comum, aproximadamente?",
+      "answer": 12,
+      "unit": "m²",
+      "fact": "Uma vaga mede mais ou menos 2,5 por 5 metros."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-480",
+      "difficulty": "easy",
+      "text": "Quantas pessoas cabem num elevador comum de prédio residencial, aproximadamente?",
+      "answer": 8,
+      "unit": "pessoas",
+      "fact": "O limite vem escrito numa placa dentro do elevador."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-481",
+      "difficulty": "easy",
+      "text": "Quantos quilos aguenta um elevador comum de prédio residencial, aproximadamente?",
+      "answer": 600,
+      "unit": "kg",
+      "fact": "A conta usa cerca de 75 quilos por pessoa."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-482",
+      "difficulty": "easy",
+      "text": "Quantos metros de altura tem uma porta comum de casa?",
+      "answer": 2.1,
+      "unit": "metros",
+      "fact": "A largura comum é de 80 centímetros."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-483",
+      "difficulty": "easy",
+      "text": "Quantos centímetros de largura tem uma porta comum de quarto?",
+      "answer": 80,
+      "unit": "cm",
+      "fact": "Portas de banheiro costumam ser mais estreitas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-484",
+      "difficulty": "easy",
+      "text": "Quantos centímetros de altura tem uma mesa de jantar comum, aproximadamente?",
+      "answer": 75,
+      "unit": "cm",
+      "fact": "Cadeiras comuns têm o assento a uns 45 cm do chão."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-485",
+      "difficulty": "easy",
+      "text": "Quantos centímetros de altura tem o assento de uma cadeira comum, aproximadamente?",
+      "answer": 45,
+      "unit": "cm",
+      "fact": "A medida deixa os pés apoiados no chão."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-486",
+      "difficulty": "easy",
+      "text": "Quantos metros de comprimento tem uma cama de casal comum?",
+      "answer": 1.9,
+      "unit": "metros",
+      "fact": "A cama queen é um pouco maior."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-487",
+      "difficulty": "easy",
+      "text": "Quantos centímetros de largura tem uma cama de solteiro comum?",
+      "answer": 88,
+      "unit": "cm",
+      "fact": "A cama de casal comum tem 1,38 metro de largura."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-488",
+      "difficulty": "medium",
+      "text": "Quantos anos de casamento celebram as bodas de madeira?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "Cada bodas tem um material simbólico."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-489",
+      "difficulty": "medium",
+      "text": "Quantos anos de casamento celebram as bodas de estanho?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Quanto mais tempo, mais resistente o material."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-490",
+      "difficulty": "medium",
+      "text": "Quantos anos de casamento celebram as bodas de jade?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "Bodas mais longas têm nomes de pedras preciosas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-491",
+      "difficulty": "medium",
+      "text": "Quantos anos de casamento celebram as bodas de safira?",
+      "answer": 45,
+      "unit": "anos",
+      "fact": "As bodas de diamante vêm 15 anos depois."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-492",
+      "difficulty": "medium",
+      "text": "Quantos anos de casamento celebram as bodas de ferro?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "Nem todo mundo concorda com todos os nomes de bodas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-493",
+      "difficulty": "medium",
+      "text": "Quantos países têm o inglês como língua oficial, aproximadamente?",
+      "answer": 58,
+      "unit": "países",
+      "fact": "O inglês é a língua mais estudada do mundo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-494",
+      "difficulty": "medium",
+      "text": "Quantos países têm o francês como língua oficial, aproximadamente?",
+      "answer": 29,
+      "unit": "países",
+      "fact": "Muitos ficam na África."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-495",
+      "difficulty": "medium",
+      "text": "Quantos países têm o árabe como língua oficial, aproximadamente?",
+      "answer": 22,
+      "unit": "países",
+      "fact": "O árabe é escrito da direita para a esquerda."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-496",
+      "difficulty": "medium",
+      "text": "Quantas línguas oficiais tem a ONU?",
+      "answer": 6,
+      "unit": "línguas",
+      "fact": "São inglês, francês, espanhol, russo, chinês e árabe."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-497",
+      "difficulty": "medium",
+      "text": "Quantas línguas oficiais tem a África do Sul?",
+      "answer": 12,
+      "unit": "línguas",
+      "fact": "O país é conhecido como nação arco-íris."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-498",
+      "difficulty": "medium",
+      "text": "Quantas línguas oficiais tem a Suíça?",
+      "answer": 4,
+      "unit": "línguas",
+      "fact": "São alemão, francês, italiano e romanche."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-499",
+      "difficulty": "medium",
+      "text": "Quantas línguas oficiais tem a Índia, contando as reconhecidas na Constituição, aproximadamente?",
+      "answer": 22,
+      "unit": "línguas",
+      "fact": "O hindi e o inglês são as mais usadas no governo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-500",
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto inglês?",
+      "answer": 26,
+      "unit": "letras",
+      "fact": "É o mesmo número do alfabeto português atual."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-501",
+      "difficulty": "medium",
+      "text": "Quantas letras tem o alfabeto espanhol, contando o Ñ?",
+      "answer": 27,
+      "unit": "letras",
+      "fact": "O Ñ é uma marca da língua espanhola."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-502",
+      "difficulty": "medium",
+      "text": "Quantos caracteres tem o alfabeto japonês hiragana, aproximadamente?",
+      "answer": 46,
+      "unit": "caracteres",
+      "fact": "O japonês ainda usa katakana e kanji."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-503",
+      "difficulty": "medium",
+      "text": "Quantas palavras tem a língua portuguesa, segundo os maiores dicionários, em milhares, aproximadamente?",
+      "answer": 400,
+      "unit": "mil",
+      "fact": "Ninguém usa todas elas no dia a dia."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-504",
+      "difficulty": "medium",
+      "text": "Quantas palavras uma pessoa conhece, em média, em milhares, aproximadamente?",
+      "answer": 20,
+      "unit": "mil",
+      "fact": "O vocabulário cresce com a leitura."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-505",
+      "difficulty": "medium",
+      "text": "Quantas palavras tem a Bíblia, em milhares, aproximadamente?",
+      "answer": 780,
+      "unit": "mil",
+      "fact": "A Bíblia tem 66 livros na versão protestante."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-506",
+      "difficulty": "medium",
+      "text": "Quantos livros tem a Bíblia católica?",
+      "answer": 73,
+      "unit": "livros",
+      "fact": "A versão protestante tem 66 livros."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-507",
+      "difficulty": "medium",
+      "text": "Quantos capítulos tem o livro de Salmos?",
+      "answer": 150,
+      "unit": "capítulos",
+      "fact": "É o livro mais longo da Bíblia."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-508",
+      "difficulty": "medium",
+      "text": "Quantos evangelhos tem o Novo Testamento?",
+      "answer": 4,
+      "unit": "evangelhos",
+      "fact": "São Mateus, Marcos, Lucas e João."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-509",
+      "difficulty": "medium",
+      "text": "Quantos anos Jesus teria vivido, segundo a tradição?",
+      "answer": 33,
+      "unit": "anos",
+      "fact": "A idade aparece em muitos ditados populares."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-510",
+      "difficulty": "medium",
+      "text": "Quantos dias dura a Quaresma, sem contar os domingos?",
+      "answer": 40,
+      "unit": "dias",
+      "fact": "Ela começa na Quarta-feira de Cinzas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-511",
+      "difficulty": "medium",
+      "text": "Quantos dias dura o Hanucá, a festa judaica das luzes?",
+      "answer": 8,
+      "unit": "dias",
+      "fact": "A cada noite se acende uma vela a mais."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-512",
+      "difficulty": "medium",
+      "text": "Quantos papas a Igreja Católica teve, até Leão XIV, aproximadamente?",
+      "answer": 267,
+      "unit": "papas",
+      "fact": "O primeiro papa, pela tradição, foi Pedro."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-513",
+      "difficulty": "medium",
+      "text": "Quantos cardeais podem votar num conclave, no máximo?",
+      "answer": 120,
+      "unit": "cardeais",
+      "fact": "Só cardeais com menos de 80 anos votam."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-514",
+      "difficulty": "medium",
+      "text": "Quantos guardas suíços protegem o papa, aproximadamente?",
+      "answer": 135,
+      "unit": "guardas",
+      "fact": "A Guarda Suíça existe desde 1506."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-515",
+      "difficulty": "medium",
+      "text": "Quantos anos de existência tem a Guarda Suíça, em 2026?",
+      "answer": 520,
+      "unit": "anos",
+      "fact": "Ela é o menor exército do mundo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-516",
+      "difficulty": "medium",
+      "text": "Quantas maravilhas tem a lista das Sete Maravilhas do Mundo Antigo que ainda estão de pé?",
+      "answer": 1,
+      "unit": "maravilha",
+      "fact": "Só a Grande Pirâmide de Gizé sobreviveu."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-517",
+      "difficulty": "medium",
+      "text": "Quantas maravilhas tem a lista do Mundo Moderno, eleita em 2007?",
+      "answer": 7,
+      "unit": "maravilhas",
+      "fact": "O Cristo Redentor está na lista."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-518",
+      "difficulty": "medium",
+      "text": "Quantos patrimônios mundiais da Unesco o Brasil tem, aproximadamente?",
+      "answer": 25,
+      "unit": "patrimônios",
+      "fact": "Entre eles estão Ouro Preto e Brasília."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-519",
+      "difficulty": "medium",
+      "text": "Quantos patrimônios mundiais da Unesco existem, aproximadamente?",
+      "answer": 1200,
+      "unit": "patrimônios",
+      "fact": "A Itália é um dos países com mais patrimônios."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-520",
+      "difficulty": "medium",
+      "text": "Quantos países fazem parte do G20, sem contar os blocos?",
+      "answer": 19,
+      "unit": "países",
+      "fact": "A União Europeia e a União Africana também participam."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-521",
+      "difficulty": "medium",
+      "text": "Quantos países fazem parte da Otan, aproximadamente, em 2024?",
+      "answer": 32,
+      "unit": "países",
+      "fact": "A Suécia e a Finlândia entraram recentemente."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-522",
+      "difficulty": "medium",
+      "text": "Quantos membros permanentes tem o Conselho de Segurança da ONU?",
+      "answer": 5,
+      "unit": "membros",
+      "fact": "Eles têm poder de veto."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-523",
+      "difficulty": "medium",
+      "text": "Quantos membros tem o Conselho de Segurança da ONU, ao todo?",
+      "answer": 15,
+      "unit": "membros",
+      "fact": "Dez membros se revezam a cada dois anos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-524",
+      "difficulty": "medium",
+      "text": "Quantos anos dura o mandato do secretário-geral da ONU?",
+      "answer": 5,
+      "unit": "anos",
+      "fact": "Ele pode ser reconduzido ao cargo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-525",
+      "difficulty": "medium",
+      "text": "Quantos prêmios Nobel diferentes existem, contando o de Economia?",
+      "answer": 6,
+      "unit": "prêmios",
+      "fact": "O de Economia foi criado em 1968."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-526",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros ganharam o Nobel, considerando quem nasceu no Brasil?",
+      "answer": 1,
+      "unit": "pessoa",
+      "fact": "Peter Medawar nasceu em Petrópolis e ganhou o Nobel de Medicina."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-527",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Malala quando ganhou o Nobel da Paz?",
+      "answer": 17,
+      "unit": "anos",
+      "fact": "Ela é a pessoa mais jovem a receber o prêmio."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-528",
+      "difficulty": "medium",
+      "text": "Quantas pessoas nascem por dia no Brasil, aproximadamente, em milhares?",
+      "answer": 7,
+      "unit": "mil",
+      "fact": "O número de nascimentos vem caindo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-529",
+      "difficulty": "medium",
+      "text": "Quantos filhos uma brasileira tem, em média, hoje?",
+      "answer": 1.6,
+      "unit": "filhos",
+      "fact": "Nos anos 1960, a média passava de seis."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-530",
+      "difficulty": "medium",
+      "text": "Quantos anos vive, em média, uma brasileira?",
+      "answer": 79,
+      "unit": "anos",
+      "fact": "Os homens vivem, em média, sete anos menos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-531",
+      "difficulty": "medium",
+      "text": "Quantos anos vive, em média, um brasileiro do sexo masculino?",
+      "answer": 73,
+      "unit": "anos",
+      "fact": "A expectativa de vida caiu na pandemia e voltou a subir."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-532",
+      "difficulty": "medium",
+      "text": "Com quantos anos, em média, as brasileiras têm o primeiro filho?",
+      "answer": 28,
+      "unit": "anos",
+      "fact": "A idade vem subindo nas últimas décadas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-533",
+      "difficulty": "medium",
+      "text": "Com quantos anos, em média, os brasileiros se casam pela primeira vez?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "Muitos casais moram juntos antes de casar."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-534",
+      "difficulty": "medium",
+      "text": "Quantos casamentos acontecem por ano no Brasil, em milhares, aproximadamente?",
+      "answer": 970,
+      "unit": "mil",
+      "fact": "Maio é um dos meses preferidos para casar."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-535",
+      "difficulty": "medium",
+      "text": "Quantos divórcios acontecem por ano no Brasil, em milhares, aproximadamente?",
+      "answer": 420,
+      "unit": "mil",
+      "fact": "O divórcio ficou mais simples a partir de 2010."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-536",
+      "difficulty": "medium",
+      "text": "Quantos anos dura, em média, um casamento que termina em divórcio no Brasil?",
+      "answer": 14,
+      "unit": "anos",
+      "fact": "O tempo médio vem diminuindo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-537",
+      "difficulty": "medium",
+      "text": "Quantos cachorros de estimação o Brasil tem, em milhões, aproximadamente?",
+      "answer": 62,
+      "unit": "milhões",
+      "fact": "O Brasil tem uma das maiores populações de pets do mundo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-538",
+      "difficulty": "medium",
+      "text": "Quantos gatos de estimação o Brasil tem, em milhões, aproximadamente?",
+      "answer": 30,
+      "unit": "milhões",
+      "fact": "O número de gatos cresce mais rápido que o de cães."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-539",
+      "difficulty": "medium",
+      "text": "Quantos celulares ativos o Brasil tem, em milhões, aproximadamente?",
+      "answer": 250,
+      "unit": "milhões",
+      "fact": "Há mais celulares do que pessoas no Brasil."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-540",
+      "difficulty": "medium",
+      "text": "Quantos carros novos o Brasil vende por ano, em milhões, aproximadamente?",
+      "answer": 2.5,
+      "unit": "milhões",
+      "fact": "O Brasil está entre os maiores mercados do mundo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-541",
+      "difficulty": "medium",
+      "text": "Quantas motos o Brasil tem em circulação, em milhões, aproximadamente?",
+      "answer": 33,
+      "unit": "milhões",
+      "fact": "A moto é muito usada para entregas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-542",
+      "difficulty": "medium",
+      "text": "Quantas pessoas morrem por ano no trânsito do Brasil, em milhares, aproximadamente?",
+      "answer": 35,
+      "unit": "mil",
+      "fact": "O número é maior que o de muitas guerras."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-543",
+      "difficulty": "medium",
+      "text": "Quantos km de rodovias pavimentadas o Brasil tem, em milhares, aproximadamente?",
+      "answer": 215,
+      "unit": "mil",
+      "fact": "A maior parte das estradas brasileiras não é asfaltada."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-544",
+      "difficulty": "medium",
+      "text": "Quantos aeroportos com voos comerciais regulares o Brasil tem, aproximadamente?",
+      "answer": 130,
+      "unit": "aeroportos",
+      "fact": "O Brasil tem milhares de pistas de pouso pequenas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-545",
+      "difficulty": "medium",
+      "text": "Quantos passageiros os aeroportos do Brasil recebem por ano, em milhões, aproximadamente?",
+      "answer": 120,
+      "unit": "milhões",
+      "fact": "O aeroporto de Guarulhos é o mais movimentado."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-546",
+      "difficulty": "medium",
+      "text": "Quantos metros por segundo cai uma gota de chuva, aproximadamente?",
+      "answer": 9,
+      "unit": "m/s",
+      "fact": "A resistência do ar segura a velocidade da gota."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-547",
+      "difficulty": "medium",
+      "text": "Quantas horas por dia o brasileiro passa vendo TV, em média?",
+      "answer": 5,
+      "unit": "horas",
+      "fact": "O streaming dividiu a audiência da TV aberta."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-548",
+      "difficulty": "medium",
+      "text": "Quantos livros o brasileiro lê por ano, em média?",
+      "answer": 4,
+      "unit": "livros",
+      "fact": "Muitos brasileiros não leram nenhum livro no último ano."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-549",
+      "difficulty": "medium",
+      "text": "Quantas bibliotecas públicas o Brasil tem, aproximadamente, em milhares?",
+      "answer": 5,
+      "unit": "mil",
+      "fact": "Muitas cidades pequenas não têm biblioteca."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-550",
+      "difficulty": "medium",
+      "text": "Quantos museus o Brasil tem, aproximadamente, em milhares?",
+      "answer": 3.9,
+      "unit": "mil",
+      "fact": "São Paulo e Rio concentram os mais visitados."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-551",
+      "difficulty": "medium",
+      "text": "Quantas salas de cinema o Brasil tem, aproximadamente, em milhares?",
+      "answer": 3.4,
+      "unit": "mil",
+      "fact": "Muitas cidades não têm nenhuma sala."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-552",
+      "difficulty": "medium",
+      "text": "Quantos estádios de futebol com mais de 40 mil lugares o Brasil tem, aproximadamente?",
+      "answer": 20,
+      "unit": "estádios",
+      "fact": "Muitos foram reformados para a Copa de 2014."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-553",
+      "difficulty": "medium",
+      "text": "Quantas igrejas evangélicas abrem por dia no Brasil, aproximadamente?",
+      "answer": 17,
+      "unit": "igrejas",
+      "fact": "O crescimento evangélico mudou o mapa religioso do país."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-554",
+      "difficulty": "medium",
+      "text": "Quantos feriados nacionais o Brasil tem por ano, contando os religiosos fixos?",
+      "answer": 10,
+      "unit": "feriados",
+      "fact": "Estados e cidades também têm feriados próprios."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-555",
+      "difficulty": "medium",
+      "text": "Quantos dias úteis tem o ano no Brasil, aproximadamente?",
+      "answer": 250,
+      "unit": "dias",
+      "fact": "O número muda conforme os feriados caem."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-556",
+      "difficulty": "medium",
+      "text": "Quantos anos de idade tem a pessoa mais velha viva do mundo, em 2025, aproximadamente?",
+      "answer": 116,
+      "unit": "anos",
+      "fact": "Os recordes de idade costumam ser de mulheres."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-557",
+      "difficulty": "medium",
+      "text": "Quantas línguas indígenas são faladas no Brasil hoje, aproximadamente?",
+      "answer": 270,
+      "unit": "línguas",
+      "fact": "Muitas correm risco de desaparecer."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-558",
+      "difficulty": "medium",
+      "text": "Quantos sinais tem o alfabeto da Libras, a língua de sinais brasileira?",
+      "answer": 26,
+      "unit": "sinais",
+      "fact": "A Libras é reconhecida como língua oficial desde 2002."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-559",
+      "difficulty": "medium",
+      "text": "Quantos pontos tem o alfabeto Morse para a letra S?",
+      "answer": 3,
+      "unit": "pontos",
+      "fact": "O SOS é três pontos, três traços e três pontos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-560",
+      "difficulty": "medium",
+      "text": "Quantos sinais tem o pedido de socorro SOS em código Morse?",
+      "answer": 9,
+      "unit": "sinais",
+      "fact": "Ele foi escolhido por ser fácil de lembrar."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-561",
+      "difficulty": "medium",
+      "text": "Quantas bandeiras de países têm a cor vermelha, em porcentagem, aproximadamente?",
+      "answer": 75,
+      "unit": "%",
+      "fact": "O vermelho é a cor mais comum nas bandeiras."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-562",
+      "difficulty": "medium",
+      "text": "Quantos países têm o azul na bandeira, aproximadamente?",
+      "answer": 100,
+      "unit": "países",
+      "fact": "O azul costuma representar o céu ou o mar."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-563",
+      "difficulty": "medium",
+      "text": "Quantas estrelas tem a bandeira da China?",
+      "answer": 5,
+      "unit": "estrelas",
+      "fact": "A estrela grande representa o partido."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-564",
+      "difficulty": "medium",
+      "text": "Quantas listras tem a bandeira da Grécia?",
+      "answer": 9,
+      "unit": "listras",
+      "fact": "Dizem que as listras lembram as sílabas de um lema."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-565",
+      "difficulty": "medium",
+      "text": "Quantas faixas tem a bandeira da Itália?",
+      "answer": 3,
+      "unit": "faixas",
+      "fact": "As cores são verde, branco e vermelho."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-566",
+      "difficulty": "medium",
+      "text": "Quantas pontas tem a folha da bandeira do Canadá?",
+      "answer": 11,
+      "unit": "pontas",
+      "fact": "A folha de bordo virou símbolo do país em 1965."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-567",
+      "difficulty": "medium",
+      "text": "Quantos anos tem a bandeira atual do Brasil, desde 1889, em 2025?",
+      "answer": 136,
+      "unit": "anos",
+      "fact": "A bandeira foi adotada quatro dias depois da República."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-568",
+      "difficulty": "medium",
+      "text": "Quantas palavras tem o Hino Nacional brasileiro, aproximadamente?",
+      "answer": 300,
+      "unit": "palavras",
+      "fact": "A letra é conhecida pelo vocabulário difícil."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-569",
+      "difficulty": "medium",
+      "text": "Quantas estrofes tem o Hino Nacional brasileiro?",
+      "answer": 4,
+      "unit": "estrofes",
+      "fact": "O hino tem duas partes, com duas estrofes cada."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-570",
+      "difficulty": "medium",
+      "text": "Quantos anos levou para a letra do Hino Nacional ser oficializada, depois da música?",
+      "answer": 91,
+      "unit": "anos",
+      "fact": "A música é de 1831, e a letra virou oficial em 1922."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-571",
+      "difficulty": "medium",
+      "text": "Quantos versos tem o Hino da Independência, na primeira estrofe?",
+      "answer": 4,
+      "unit": "versos",
+      "fact": "A música é atribuída a Dom Pedro I."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-572",
+      "difficulty": "medium",
+      "text": "Quantos estados brasileiros têm hino oficial?",
+      "answer": 26,
+      "unit": "estados",
+      "fact": "Os hinos estaduais são tocados em cerimônias locais."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-573",
+      "difficulty": "medium",
+      "text": "Quantos metros tem um campo de golfe comum, somando os 18 buracos, em quilômetros, aproximadamente?",
+      "answer": 6,
+      "unit": "km",
+      "fact": "Um jogador anda vários quilômetros numa partida."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-574",
+      "difficulty": "medium",
+      "text": "Quantos quilos tem uma bola de boliche comum, aproximadamente?",
+      "answer": 6,
+      "unit": "kg",
+      "fact": "O peso varia de acordo com o jogador."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-575",
+      "difficulty": "medium",
+      "text": "Quantos metros tem uma pista de boliche?",
+      "answer": 18,
+      "unit": "metros",
+      "fact": "Os pinos ficam arrumados em triângulo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-576",
+      "difficulty": "medium",
+      "text": "Quantos dados se usa no jogo de gamão?",
+      "answer": 2,
+      "unit": "dados",
+      "fact": "O gamão é um dos jogos de tabuleiro mais antigos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-577",
+      "difficulty": "medium",
+      "text": "Quantas peças tem cada jogador no gamão?",
+      "answer": 15,
+      "unit": "peças",
+      "fact": "O objetivo é tirar todas as peças do tabuleiro."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-578",
+      "difficulty": "medium",
+      "text": "Quantas palavras um jogo de palavras cruzadas comum tem, aproximadamente?",
+      "answer": 40,
+      "unit": "palavras",
+      "fact": "As palavras cruzadas surgiram em 1913, num jornal americano."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-579",
+      "difficulty": "medium",
+      "text": "Quantos números tem uma cartela de bingo comum?",
+      "answer": 24,
+      "unit": "números",
+      "fact": "O quadrado do meio costuma ser livre."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-580",
+      "difficulty": "medium",
+      "text": "Quantas bolas tem um jogo de bingo comum?",
+      "answer": 75,
+      "unit": "bolas",
+      "fact": "Em muitos lugares se usa bingo de 90 bolas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-581",
+      "difficulty": "medium",
+      "text": "Quantas peças tem um quebra-cabeça grande de adulto, aproximadamente?",
+      "answer": 1000,
+      "unit": "peças",
+      "fact": "Quebra-cabeças recordistas passam de 50 mil peças."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-582",
+      "difficulty": "medium",
+      "text": "Quantas peças tem um jogo de damas, contando os dois jogadores?",
+      "answer": 24,
+      "unit": "peças",
+      "fact": "Cada jogador tem 12 peças."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-583",
+      "difficulty": "easy",
+      "text": "Quantas rodas tem um triciclo?",
+      "answer": 3,
+      "unit": "rodas",
+      "fact": "Muitas crianças aprendem a pedalar num triciclo."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-584",
+      "difficulty": "easy",
+      "text": "Quantas rodas tem uma carreta de caminhão comum, contando o cavalo, aproximadamente?",
+      "answer": 18,
+      "unit": "rodas",
+      "fact": "Caminhões grandes espalham o peso em muitas rodas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-585",
+      "difficulty": "easy",
+      "text": "Quantos assentos tem um carro popular comum?",
+      "answer": 5,
+      "unit": "lugares",
+      "fact": "Dois na frente e três atrás."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-586",
+      "difficulty": "easy",
+      "text": "Quantos lugares tem um ônibus urbano comum sentado, aproximadamente?",
+      "answer": 40,
+      "unit": "lugares",
+      "fact": "Muitos passageiros viajam em pé."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-587",
+      "difficulty": "easy",
+      "text": "Quantas pessoas cabem num avião comercial comum de corredor único, aproximadamente?",
+      "answer": 180,
+      "unit": "pessoas",
+      "fact": "Aviões como o Boeing 737 e o Airbus A320 são os mais comuns."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-588",
+      "difficulty": "easy",
+      "text": "Quantos andares tem um ônibus de dois andares?",
+      "answer": 2,
+      "unit": "andares",
+      "fact": "Os ônibus de dois andares são comuns em Londres."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-589",
+      "difficulty": "easy",
+      "text": "Quantas portas tem um carro hatch de quatro portas, contando o porta-malas?",
+      "answer": 5,
+      "unit": "portas",
+      "fact": "O porta-malas do hatch é chamado de quinta porta."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-590",
+      "difficulty": "easy",
+      "text": "Quantos pneus de estepe tem um carro comum?",
+      "answer": 1,
+      "unit": "pneu",
+      "fact": "Alguns carros novos vêm com kit de reparo no lugar do estepe."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-591",
+      "difficulty": "easy",
+      "text": "Quantos metros tem um carro popular de comprimento, aproximadamente?",
+      "answer": 4,
+      "unit": "metros",
+      "fact": "Carros compactos cabem melhor nas vagas da cidade."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-592",
+      "difficulty": "easy",
+      "text": "Quantos km/h é a velocidade máxima comum perto de escolas?",
+      "answer": 30,
+      "unit": "km/h",
+      "fact": "O limite protege as crianças."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-593",
+      "difficulty": "easy",
+      "text": "Quantos pontos na carteira de motorista levam à suspensão para quem tem infração gravíssima?",
+      "answer": 20,
+      "unit": "pontos",
+      "fact": "Sem infração gravíssima, o limite é de 40 pontos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-594",
+      "difficulty": "easy",
+      "text": "Quantos anos é preciso ter para tirar carteira de motorista no Brasil?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "A primeira carteira é provisória por um ano."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-595",
+      "difficulty": "easy",
+      "text": "Quantos anos dura a carteira de motorista para quem tem menos de 50 anos?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Depois dos 50, a validade cai."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-596",
+      "difficulty": "easy",
+      "text": "Quantos anos é preciso ter para votar no Brasil, no mínimo?",
+      "answer": 16,
+      "unit": "anos",
+      "fact": "Dos 16 aos 18 anos o voto é opcional."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-597",
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem o número de um candidato a presidente na urna?",
+      "answer": 2,
+      "unit": "dígitos",
+      "fact": "O número do candidato é o mesmo do partido."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-598",
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem o número de um candidato a vereador na urna?",
+      "answer": 5,
+      "unit": "dígitos",
+      "fact": "Os dois primeiros são do partido."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-599",
+      "difficulty": "easy",
+      "text": "Quantos dias de licença-maternidade a lei garante, no mínimo?",
+      "answer": 120,
+      "unit": "dias",
+      "fact": "Algumas empresas estendem para 180 dias."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-600",
+      "difficulty": "easy",
+      "text": "Quantas horas de trabalho por semana a CLT permite, no máximo, sem hora extra?",
+      "answer": 44,
+      "unit": "horas",
+      "fact": "A jornada diária comum é de 8 horas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-601",
+      "difficulty": "easy",
+      "text": "Quantos anos é preciso ter para ser deputado federal, no mínimo?",
+      "answer": 21,
+      "unit": "anos",
+      "fact": "Vereadores podem ter 18 anos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-602",
+      "difficulty": "easy",
+      "text": "Quantos dias tem fevereiro num ano comum?",
+      "answer": 28,
+      "unit": "dias",
+      "fact": "É o mês mais curto do ano."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-603",
+      "difficulty": "easy",
+      "text": "Quantos meses têm 28 dias?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Todos os meses têm pelo menos 28 dias."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-604",
+      "difficulty": "easy",
+      "text": "Quantos domingos tem um ano, aproximadamente?",
+      "answer": 52,
+      "unit": "domingos",
+      "fact": "Alguns anos têm 53 domingos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-605",
+      "difficulty": "easy",
+      "text": "Quantos sábados e domingos tem um ano, aproximadamente?",
+      "answer": 104,
+      "unit": "dias",
+      "fact": "São cerca de 52 fins de semana."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-606",
+      "difficulty": "easy",
+      "text": "Quantas horas de diferença o horário de verão mudava no relógio?",
+      "answer": 1,
+      "unit": "hora",
+      "fact": "O horário de verão acabou no Brasil em 2019."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-607",
+      "difficulty": "easy",
+      "text": "Quantas vezes por ano a Terra dá a volta no Sol?",
+      "answer": 1,
+      "unit": "vez",
+      "fact": "A volta completa leva cerca de 365 dias."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-608",
+      "difficulty": "easy",
+      "text": "Quantos dias, aproximadamente, a Lua leva para passar por todas as fases?",
+      "answer": 29.5,
+      "unit": "dias",
+      "fact": "Por isso os meses têm cerca de 30 dias."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-609",
+      "difficulty": "easy",
+      "text": "Quantos signos tem o zodíaco ocidental?",
+      "answer": 12,
+      "unit": "signos",
+      "fact": "Cada signo dura cerca de um mês."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-610",
+      "difficulty": "easy",
+      "text": "Quantas notas musicais tem a escala comum, sem repetir?",
+      "answer": 7,
+      "unit": "notas",
+      "fact": "Dó, ré, mi, fá, sol, lá e si."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-611",
+      "difficulty": "easy",
+      "text": "Quantos músicos tem um octeto?",
+      "answer": 8,
+      "unit": "músicos",
+      "fact": "Octo quer dizer oito em latim."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-612",
+      "difficulty": "easy",
+      "text": "Quantos cantores tem uma dupla sertaneja?",
+      "answer": 2,
+      "unit": "cantores",
+      "fact": "As duplas sertanejas costumam cantar em harmonia de vozes."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-613",
+      "difficulty": "easy",
+      "text": "Quantos pés tem uma mesa comum?",
+      "answer": 4,
+      "unit": "pés",
+      "fact": "Mesas redondas às vezes têm um pé só no centro."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-614",
+      "difficulty": "easy",
+      "text": "Quantas pernas tem um banquinho de três pernas?",
+      "answer": 3,
+      "unit": "pernas",
+      "fact": "Três apoios nunca balançam num chão irregular."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-615",
+      "difficulty": "easy",
+      "text": "Quantos lados tem uma moeda?",
+      "answer": 2,
+      "unit": "lados",
+      "fact": "Cara e coroa."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-616",
+      "difficulty": "easy",
+      "text": "Quantas cores tem o arco-íris, na divisão mais comum?",
+      "answer": 7,
+      "unit": "cores",
+      "fact": "Newton escolheu sete cores para combinar com as notas musicais."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-617",
+      "difficulty": "easy",
+      "text": "Quantas cores primárias tem a tinta, no modelo escolar?",
+      "answer": 3,
+      "unit": "cores",
+      "fact": "Vermelho, amarelo e azul."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-618",
+      "difficulty": "easy",
+      "text": "Quantos dedos tem uma luva comum?",
+      "answer": 5,
+      "unit": "dedos",
+      "fact": "A luva de forno às vezes tem só o polegar separado."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-619",
+      "difficulty": "easy",
+      "text": "Quantos pares de meia vêm num pacote comum, aproximadamente?",
+      "answer": 3,
+      "unit": "pares",
+      "fact": "Meias somem misteriosamente na máquina de lavar."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-620",
+      "difficulty": "easy",
+      "text": "Quantos ovos tem uma caixinha comum de supermercado?",
+      "answer": 12,
+      "unit": "ovos",
+      "fact": "A dúzia é a forma mais comum de vender ovos."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-621",
+      "difficulty": "easy",
+      "text": "Quantos rolos de papel higiênico vêm num pacote comum?",
+      "answer": 4,
+      "unit": "rolos",
+      "fact": "Pacotes grandes trazem 12 ou mais."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-622",
+      "difficulty": "easy",
+      "text": "Quantas velas se colocam no bolo de quem faz 15 anos, uma por ano?",
+      "answer": 15,
+      "unit": "velas",
+      "fact": "Muita gente usa velas em formato de número."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-623",
+      "difficulty": "easy",
+      "text": "Quantas cadeiras são necessárias para uma mesa com 4 casais?",
+      "answer": 8,
+      "unit": "cadeiras",
+      "fact": "Um casal são duas pessoas."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-624",
+      "difficulty": "easy",
+      "text": "Quantos jogadores participam do jogo de pedra, papel e tesoura?",
+      "answer": 2,
+      "unit": "jogadores",
+      "fact": "Pedra ganha da tesoura, tesoura ganha do papel e papel ganha da pedra."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-625",
+      "difficulty": "easy",
+      "text": "Quantas opções tem o jogo de pedra, papel e tesoura?",
+      "answer": 3,
+      "unit": "opções",
+      "fact": "Cada opção ganha de uma e perde para outra."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-626",
+      "difficulty": "easy",
+      "text": "Quantas casas tem um jogo da velha?",
+      "answer": 9,
+      "unit": "casas",
+      "fact": "Duas pessoas que jogam bem sempre empatam."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-627",
+      "difficulty": "easy",
+      "text": "Quantas peças em fila são necessárias para ganhar no jogo da velha?",
+      "answer": 3,
+      "unit": "peças",
+      "fact": "A fila pode ser na horizontal, vertical ou diagonal."
+    },
+    {
+      "id": "chute-conhecimentos-gerais-628",
+      "difficulty": "easy",
+      "text": "Quantas peças em fila são necessárias para ganhar no Lig 4?",
+      "answer": 4,
+      "unit": "peças",
+      "fact": "O tabuleiro fica em pé e as peças caem."
     }
   ]
 }

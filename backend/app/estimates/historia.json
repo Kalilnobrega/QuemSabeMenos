@@ -3416,6 +3416,766 @@
       "answer": 2023,
       "scale": 50,
       "fact": "O ataque surpreendeu Israel num feriado judaico."
+    },
+    {
+      "id": "chute-historia-453",
+      "difficulty": "easy",
+      "text": "Quantos presidentes militares governaram o Brasil na ditadura?",
+      "answer": 5,
+      "unit": "presidentes",
+      "fact": "O último foi João Figueiredo."
+    },
+    {
+      "id": "chute-historia-454",
+      "difficulty": "easy",
+      "text": "Quantos anos tem a Constituição de 1988, em 2025?",
+      "answer": 37,
+      "unit": "anos",
+      "fact": "Ela é chamada de Constituição Cidadã."
+    },
+    {
+      "id": "chute-historia-455",
+      "difficulty": "easy",
+      "text": "Quantos dias se passaram entre as bombas de Hiroshima e Nagasaki?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "O Japão se rendeu dias depois."
+    },
+    {
+      "id": "chute-historia-456",
+      "difficulty": "easy",
+      "text": "Quantos países formaram a União Soviética no fim?",
+      "answer": 15,
+      "unit": "repúblicas",
+      "fact": "A Rússia era a maior delas."
+    },
+    {
+      "id": "chute-historia-457",
+      "difficulty": "easy",
+      "text": "Quantos anos tinha Napoleão quando virou imperador, aproximadamente?",
+      "answer": 35,
+      "unit": "anos",
+      "fact": "Ele colocou a coroa na própria cabeça."
+    },
+    {
+      "id": "chute-historia-458",
+      "difficulty": "easy",
+      "text": "Quantas caravelas Cabral trouxe ao chegar no Brasil, contando todos os navios?",
+      "answer": 13,
+      "unit": "navios",
+      "fact": "A frota tinha naus e caravelas."
+    },
+    {
+      "id": "chute-historia-459",
+      "difficulty": "easy",
+      "text": "Quantos navios Colombo usou na primeira viagem à América?",
+      "answer": 3,
+      "unit": "navios",
+      "fact": "Eram a Santa María, a Pinta e a Niña."
+    },
+    {
+      "id": "chute-historia-460",
+      "difficulty": "easy",
+      "text": "Quantos anos Colombo chegou à América antes de Cabral chegar ao Brasil?",
+      "answer": 8,
+      "unit": "anos",
+      "fact": "Colombo chegou em 1492, Cabral em 1500."
+    },
+    {
+      "id": "chute-historia-461",
+      "difficulty": "easy",
+      "text": "Quantos dias, aproximadamente, durou a viagem de Cabral de Lisboa ao Brasil?",
+      "answer": 44,
+      "unit": "dias",
+      "fact": "A frota saiu em 9 de março e chegou em 22 de abril."
+    },
+    {
+      "id": "chute-historia-462",
+      "difficulty": "easy",
+      "text": "Quantos anos durou a construção da Catedral de Notre-Dame, aproximadamente?",
+      "answer": 180,
+      "unit": "anos",
+      "fact": "A obra começou em 1163."
+    },
+    {
+      "id": "chute-historia-463",
+      "difficulty": "easy",
+      "text": "Quantos dias o Titanic navegou antes de afundar?",
+      "answer": 4,
+      "unit": "dias",
+      "fact": "Era a primeira viagem do navio."
+    },
+    {
+      "id": "chute-historia-464",
+      "difficulty": "easy",
+      "text": "Quantas missões tripuladas pousaram na Lua?",
+      "answer": 6,
+      "unit": "missões",
+      "fact": "A última foi a Apollo 17, em 1972."
+    },
+    {
+      "id": "chute-historia-465",
+      "difficulty": "easy",
+      "text": "Quantos astronautas estavam na Apollo 11?",
+      "answer": 3,
+      "unit": "astronautas",
+      "fact": "Michael Collins ficou em órbita enquanto os outros desciam."
+    },
+    {
+      "id": "chute-historia-466",
+      "difficulty": "easy",
+      "text": "Quantas horas Armstrong e Aldrin passaram fora do módulo na Lua, aproximadamente?",
+      "answer": 2.5,
+      "unit": "horas",
+      "fact": "Eles coletaram 21 quilos de rochas."
+    },
+    {
+      "id": "chute-historia-467",
+      "difficulty": "easy",
+      "text": "Quantos anos durou a construção de Brasília, até a inauguração?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "A cidade foi inaugurada em 1960."
+    },
+    {
+      "id": "chute-historia-468",
+      "difficulty": "easy",
+      "text": "Quantos meses Jânio Quadros ficou na presidência, aproximadamente?",
+      "answer": 7,
+      "unit": "meses",
+      "fact": "Ele renunciou em agosto de 1961."
+    },
+    {
+      "id": "chute-historia-469",
+      "difficulty": "easy",
+      "text": "Quantos dias Tancredo Neves governou como presidente?",
+      "answer": 0,
+      "unit": "dias",
+      "fact": "Ele adoeceu e morreu antes de tomar posse."
+    },
+    {
+      "id": "chute-historia-470",
+      "difficulty": "easy",
+      "text": "Quantos presidentes o Brasil teve eleitos pelo voto direto depois da ditadura, até 2022?",
+      "answer": 5,
+      "unit": "pessoas",
+      "fact": "Collor, FHC, Lula, Dilma e Bolsonaro."
+    },
+    {
+      "id": "chute-historia-471",
+      "difficulty": "easy",
+      "text": "Quantos mandatos de presidente Lula conquistou nas urnas, até 2022?",
+      "answer": 3,
+      "unit": "mandatos",
+      "fact": "Ele venceu em 2002, 2006 e 2022."
+    },
+    {
+      "id": "chute-historia-472",
+      "difficulty": "easy",
+      "text": "Quantos anos durou o Plano Real até a moeda completar 30 anos?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "O real foi lançado em 1994."
+    },
+    {
+      "id": "chute-historia-473",
+      "difficulty": "medium",
+      "text": "Em que ano foi assinada a Lei do Ventre Livre?",
+      "answer": 1871,
+      "scale": 50,
+      "fact": "Os filhos de escravizadas passaram a nascer livres."
+    },
+    {
+      "id": "chute-historia-474",
+      "difficulty": "medium",
+      "text": "Em que ano o Brasil proibiu o tráfico de escravizados, com a Lei Eusébio de Queirós?",
+      "answer": 1850,
+      "scale": 50,
+      "fact": "O tráfico continuou ilegalmente por um tempo."
+    },
+    {
+      "id": "chute-historia-475",
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu o Dia do Fico?",
+      "answer": 1822,
+      "scale": 50,
+      "fact": "Dom Pedro disse que ficava no Brasil."
+    },
+    {
+      "id": "chute-historia-476",
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu a Revolução de 1930?",
+      "answer": 1930,
+      "scale": 50,
+      "fact": "O movimento levou Getúlio Vargas ao poder."
+    },
+    {
+      "id": "chute-historia-477",
+      "difficulty": "medium",
+      "text": "Em que ano Getúlio Vargas criou a CLT?",
+      "answer": 1943,
+      "scale": 50,
+      "fact": "A CLT reúne as leis trabalhistas."
+    },
+    {
+      "id": "chute-historia-478",
+      "difficulty": "medium",
+      "text": "Em que ano foi assinada a Lei da Anistia no Brasil?",
+      "answer": 1979,
+      "scale": 50,
+      "fact": "Exilados políticos puderam voltar ao país."
+    },
+    {
+      "id": "chute-historia-479",
+      "difficulty": "medium",
+      "text": "Em que ano Fernando Collor sofreu impeachment?",
+      "answer": 1992,
+      "scale": 50,
+      "fact": "Ele renunciou antes da votação final no Senado."
+    },
+    {
+      "id": "chute-historia-480",
+      "difficulty": "medium",
+      "text": "Em que ano o Brasil mandou tropas à Segunda Guerra?",
+      "answer": 1944,
+      "scale": 50,
+      "fact": "A Força Expedicionária Brasileira lutou na Itália."
+    },
+    {
+      "id": "chute-historia-481",
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu a Revolução Chinesa?",
+      "answer": 1949,
+      "scale": 50,
+      "fact": "Mao Tsé-tung fundou a República Popular."
+    },
+    {
+      "id": "chute-historia-482",
+      "difficulty": "medium",
+      "text": "Em que ano aconteceu a Revolução Cubana?",
+      "answer": 1959,
+      "scale": 50,
+      "fact": "Fidel Castro governou Cuba por quase 50 anos."
+    },
+    {
+      "id": "chute-historia-483",
+      "difficulty": "medium",
+      "text": "Em que ano acabou a União Soviética?",
+      "answer": 1991,
+      "scale": 50,
+      "fact": "Quinze países se tornaram independentes."
+    },
+    {
+      "id": "chute-historia-484",
+      "difficulty": "medium",
+      "text": "Em que ano aconteceram os ataques de 11 de setembro?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "As Torres Gêmeas desabaram em Nova York."
+    },
+    {
+      "id": "chute-historia-485",
+      "difficulty": "medium",
+      "text": "Em que ano o Reino Unido votou pelo Brexit?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "A saída oficial aconteceu em 2020."
+    },
+    {
+      "id": "chute-historia-486",
+      "difficulty": "medium",
+      "text": "Quantos anos Francisco foi papa, aproximadamente?",
+      "answer": 12,
+      "unit": "anos",
+      "fact": "Ele foi eleito em 2013."
+    },
+    {
+      "id": "chute-historia-487",
+      "difficulty": "medium",
+      "text": "Quantos anos João Paulo II foi papa, aproximadamente?",
+      "answer": 27,
+      "unit": "anos",
+      "fact": "Foi um dos papados mais longos da história."
+    },
+    {
+      "id": "chute-historia-488",
+      "difficulty": "medium",
+      "text": "Quantas vezes João Paulo II visitou o Brasil?",
+      "answer": 4,
+      "unit": "vezes",
+      "fact": "Ele foi o papa que mais viajou."
+    },
+    {
+      "id": "chute-historia-489",
+      "difficulty": "medium",
+      "text": "Quantos presidentes os Estados Unidos tiveram até Donald Trump, em 2025?",
+      "answer": 47,
+      "unit": "presidentes",
+      "fact": "Trump é contado duas vezes por ter mandatos separados."
+    },
+    {
+      "id": "chute-historia-490",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha John F. Kennedy quando foi eleito?",
+      "answer": 43,
+      "unit": "anos",
+      "fact": "Ele foi o presidente eleito mais jovem dos Estados Unidos."
+    },
+    {
+      "id": "chute-historia-491",
+      "difficulty": "medium",
+      "text": "Quantos mandatos Franklin Roosevelt venceu?",
+      "answer": 4,
+      "unit": "mandatos",
+      "fact": "Depois dele, o limite passou a ser de dois mandatos."
+    },
+    {
+      "id": "chute-historia-492",
+      "difficulty": "medium",
+      "text": "Quantos anos Abraham Lincoln tinha quando foi assassinado?",
+      "answer": 56,
+      "unit": "anos",
+      "fact": "Ele foi baleado num teatro."
+    },
+    {
+      "id": "chute-historia-493",
+      "difficulty": "medium",
+      "text": "Quantos dias William Harrison ficou na presidência americana?",
+      "answer": 31,
+      "unit": "dias",
+      "fact": "Ele morreu de doença um mês depois da posse."
+    },
+    {
+      "id": "chute-historia-494",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Fernando Collor quando assumiu a presidência?",
+      "answer": 40,
+      "unit": "anos",
+      "fact": "Ele foi o presidente mais jovem do Brasil."
+    },
+    {
+      "id": "chute-historia-495",
+      "difficulty": "medium",
+      "text": "Quantos anos durou o governo de Fernando Henrique Cardoso?",
+      "answer": 8,
+      "unit": "anos",
+      "fact": "Ele foi o primeiro presidente reeleito."
+    },
+    {
+      "id": "chute-historia-496",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a República Velha?",
+      "answer": 41,
+      "unit": "anos",
+      "fact": "Ela foi de 1889 a 1930."
+    },
+    {
+      "id": "chute-historia-497",
+      "difficulty": "medium",
+      "text": "Quantos anos durou o Período Regencial?",
+      "answer": 9,
+      "unit": "anos",
+      "fact": "Foi o tempo entre a abdicação de Pedro I e a maioridade de Pedro II."
+    },
+    {
+      "id": "chute-historia-498",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a Guerra Civil Americana?",
+      "answer": 4,
+      "unit": "anos",
+      "fact": "Ela foi de 1861 a 1865."
+    },
+    {
+      "id": "chute-historia-499",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a construção do Canal do Panamá, pelos americanos?",
+      "answer": 10,
+      "unit": "anos",
+      "fact": "Os franceses tentaram antes e desistiram."
+    },
+    {
+      "id": "chute-historia-500",
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção da Torre Eiffel, aproximadamente?",
+      "answer": 2,
+      "unit": "anos",
+      "fact": "A torre seria desmontada depois de 20 anos."
+    },
+    {
+      "id": "chute-historia-501",
+      "difficulty": "medium",
+      "text": "Quantos anos levou para construir o Cristo Redentor?",
+      "answer": 9,
+      "unit": "anos",
+      "fact": "A obra começou em 1922."
+    },
+    {
+      "id": "chute-historia-502",
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção da Ponte Rio-Niterói?",
+      "answer": 6,
+      "unit": "anos",
+      "fact": "A ponte foi inaugurada em 1974."
+    },
+    {
+      "id": "chute-historia-503",
+      "difficulty": "medium",
+      "text": "Quantos anos levou a construção de Itaipu, aproximadamente?",
+      "answer": 9,
+      "unit": "anos",
+      "fact": "A primeira turbina começou a funcionar em 1984."
+    },
+    {
+      "id": "chute-historia-504",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a Dinastia Ming na China?",
+      "answer": 276,
+      "unit": "anos",
+      "fact": "A Cidade Proibida foi construída nessa época."
+    },
+    {
+      "id": "chute-historia-505",
+      "difficulty": "medium",
+      "text": "Quantas pessoas morreram no ataque às Torres Gêmeas, aproximadamente?",
+      "answer": 2800,
+      "unit": "pessoas",
+      "fact": "Contando os outros ataques do dia, passa de 2.900."
+    },
+    {
+      "id": "chute-historia-506",
+      "difficulty": "medium",
+      "text": "Quantas pessoas foram ao comício das Diretas Já em São Paulo, em 1984, aproximadamente, em mil?",
+      "answer": 1500,
+      "unit": "mil",
+      "fact": "Foi um dos maiores comícios da história do Brasil."
+    },
+    {
+      "id": "chute-historia-507",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre a Abolição e a Proclamação da República?",
+      "answer": 1,
+      "unit": "ano",
+      "fact": "A Abolição foi em 1888, e a República em 1889."
+    },
+    {
+      "id": "chute-historia-508",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre a chegada da família real e a Independência?",
+      "answer": 14,
+      "unit": "anos",
+      "fact": "A família real chegou em 1808."
+    },
+    {
+      "id": "chute-historia-509",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre a Independência do Brasil e a dos Estados Unidos?",
+      "answer": 46,
+      "unit": "anos",
+      "fact": "Os Estados Unidos se tornaram independentes em 1776."
+    },
+    {
+      "id": "chute-historia-510",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre a queda do Muro de Berlim e o fim da União Soviética?",
+      "answer": 2,
+      "unit": "anos",
+      "fact": "O muro caiu em 1989, e a URSS acabou em 1991."
+    },
+    {
+      "id": "chute-historia-511",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre o fim da Primeira e o começo da Segunda Guerra?",
+      "answer": 21,
+      "unit": "anos",
+      "fact": "O período é chamado de entreguerras."
+    },
+    {
+      "id": "chute-historia-512",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre o primeiro voo dos irmãos Wright e a chegada à Lua?",
+      "answer": 66,
+      "unit": "anos",
+      "fact": "O voo dos Wright foi em 1903."
+    },
+    {
+      "id": "chute-historia-513",
+      "difficulty": "medium",
+      "text": "Quantos anos se passaram entre o voo do 14-Bis e a chegada à Lua?",
+      "answer": 63,
+      "unit": "anos",
+      "fact": "O 14-Bis voou em Paris em 1906."
+    },
+    {
+      "id": "chute-historia-514",
+      "difficulty": "medium",
+      "text": "Quantos segundos durou o primeiro voo do 14-Bis, em 1906, o reconhecido no recorde?",
+      "answer": 21,
+      "unit": "segundos",
+      "fact": "O avião voou 220 metros nesse dia."
+    },
+    {
+      "id": "chute-historia-515",
+      "difficulty": "medium",
+      "text": "Quantos metros o 14-Bis voou no recorde de 1906?",
+      "answer": 220,
+      "unit": "metros",
+      "fact": "O voo aconteceu em Paris."
+    },
+    {
+      "id": "chute-historia-516",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Santos Dumont quando voou no 14-Bis?",
+      "answer": 33,
+      "unit": "anos",
+      "fact": "Ele nasceu em Minas Gerais em 1873."
+    },
+    {
+      "id": "chute-historia-517",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Tiradentes quando foi executado?",
+      "answer": 45,
+      "unit": "anos",
+      "fact": "A data, 21 de abril, virou feriado."
+    },
+    {
+      "id": "chute-historia-518",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Zumbi dos Palmares quando morreu, aproximadamente?",
+      "answer": 40,
+      "unit": "anos",
+      "fact": "O dia da morte, 20 de novembro, é o Dia da Consciência Negra."
+    },
+    {
+      "id": "chute-historia-519",
+      "difficulty": "medium",
+      "text": "Quantos anos durou o Quilombo dos Palmares, aproximadamente?",
+      "answer": 100,
+      "unit": "anos",
+      "fact": "Foi o maior quilombo da história do Brasil."
+    },
+    {
+      "id": "chute-historia-520",
+      "difficulty": "medium",
+      "text": "Quantas pessoas viviam em Palmares no auge, aproximadamente, em mil?",
+      "answer": 20,
+      "unit": "mil",
+      "fact": "O quilombo ficava na Serra da Barriga, em Alagoas."
+    },
+    {
+      "id": "chute-historia-521",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha a princesa Isabel quando assinou a Lei Áurea?",
+      "answer": 41,
+      "unit": "anos",
+      "fact": "Ela governava como regente."
+    },
+    {
+      "id": "chute-historia-522",
+      "difficulty": "medium",
+      "text": "Quantos artigos tem a Lei Áurea?",
+      "answer": 2,
+      "unit": "artigos",
+      "fact": "É uma das leis mais curtas do Brasil."
+    },
+    {
+      "id": "chute-historia-523",
+      "difficulty": "medium",
+      "text": "Quantos dias durou a viagem do navio da família real portuguesa até a Bahia, aproximadamente?",
+      "answer": 54,
+      "unit": "dias",
+      "fact": "A corte fugiu de Napoleão."
+    },
+    {
+      "id": "chute-historia-524",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Cleópatra quando morreu?",
+      "answer": 39,
+      "unit": "anos",
+      "fact": "Ela foi a última rainha do Egito antigo."
+    },
+    {
+      "id": "chute-historia-525",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Che Guevara quando morreu?",
+      "answer": 39,
+      "unit": "anos",
+      "fact": "Ele foi morto na Bolívia."
+    },
+    {
+      "id": "chute-historia-526",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Gandhi quando foi assassinado?",
+      "answer": 78,
+      "unit": "anos",
+      "fact": "Ele foi morto meses depois da independência da Índia."
+    },
+    {
+      "id": "chute-historia-527",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Princesa Diana quando morreu?",
+      "answer": 36,
+      "unit": "anos",
+      "fact": "Ela morreu num acidente em Paris."
+    },
+    {
+      "id": "chute-historia-528",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Cássia Eller quando morreu?",
+      "answer": 39,
+      "unit": "anos",
+      "fact": "O show dela no Rock in Rio de 2001 ficou famoso."
+    },
+    {
+      "id": "chute-historia-529",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Pelé quando morreu?",
+      "answer": 82,
+      "unit": "anos",
+      "fact": "Ele morreu em dezembro de 2022."
+    },
+    {
+      "id": "chute-historia-530",
+      "difficulty": "easy",
+      "text": "Quantos séculos se passaram desde a chegada de Cabral ao Brasil, até 2000?",
+      "answer": 5,
+      "unit": "séculos",
+      "fact": "O Brasil comemorou 500 anos em 2000."
+    },
+    {
+      "id": "chute-historia-531",
+      "difficulty": "easy",
+      "text": "Em que século aconteceu a Segunda Guerra Mundial?",
+      "answer": 20,
+      "unit": "º século",
+      "fact": "A guerra foi de 1939 a 1945."
+    },
+    {
+      "id": "chute-historia-532",
+      "difficulty": "easy",
+      "text": "Quantos anos tem um século?",
+      "answer": 100,
+      "unit": "anos",
+      "fact": "O século 21 começou em 2001."
+    },
+    {
+      "id": "chute-historia-533",
+      "difficulty": "easy",
+      "text": "Quantos séculos tem um milênio?",
+      "answer": 10,
+      "unit": "séculos",
+      "fact": "O terceiro milênio começou em 2001."
+    },
+    {
+      "id": "chute-historia-534",
+      "difficulty": "easy",
+      "text": "Quantos anos durou a Copa do Mundo de 1950 até a de 2014, ambas no Brasil?",
+      "answer": 64,
+      "unit": "anos",
+      "fact": "O Brasil perdeu em casa nas duas."
+    },
+    {
+      "id": "chute-historia-535",
+      "difficulty": "easy",
+      "text": "Quantas capitais o Brasil já teve?",
+      "answer": 3,
+      "unit": "capitais",
+      "fact": "Salvador, Rio de Janeiro e Brasília."
+    },
+    {
+      "id": "chute-historia-536",
+      "difficulty": "easy",
+      "text": "Quantos anos Salvador foi capital do Brasil, aproximadamente?",
+      "answer": 214,
+      "unit": "anos",
+      "fact": "A capital mudou para o Rio em 1763."
+    },
+    {
+      "id": "chute-historia-537",
+      "difficulty": "easy",
+      "text": "Quantos anos o Rio de Janeiro foi capital do Brasil, aproximadamente?",
+      "answer": 197,
+      "unit": "anos",
+      "fact": "O Rio foi capital de 1763 a 1960."
+    },
+    {
+      "id": "chute-historia-538",
+      "difficulty": "easy",
+      "text": "Quantos homens Leônidas levou para a Batalha das Termópilas, segundo a tradição?",
+      "answer": 300,
+      "unit": "espartanos",
+      "fact": "A batalha inspirou o filme \"300\"."
+    },
+    {
+      "id": "chute-historia-539",
+      "difficulty": "easy",
+      "text": "Quantos mosqueteiros havia no livro \"Os Três Mosqueteiros\", contando D'Artagnan?",
+      "answer": 4,
+      "unit": "mosqueteiros",
+      "fact": "D'Artagnan se junta aos três no começo da história."
+    },
+    {
+      "id": "chute-historia-540",
+      "difficulty": "easy",
+      "text": "Quantas pessoas viajaram no Mayflower para a América, aproximadamente?",
+      "answer": 100,
+      "unit": "pessoas",
+      "fact": "O navio chegou em 1620."
+    },
+    {
+      "id": "chute-historia-541",
+      "difficulty": "easy",
+      "text": "Quantas colônias inglesas formaram os Estados Unidos?",
+      "answer": 13,
+      "unit": "colônias",
+      "fact": "As listras da bandeira lembram as 13 colônias."
+    },
+    {
+      "id": "chute-historia-542",
+      "difficulty": "easy",
+      "text": "Quantos presidentes estão esculpidos no Monte Rushmore?",
+      "answer": 4,
+      "unit": "presidentes",
+      "fact": "Washington, Jefferson, Theodore Roosevelt e Lincoln."
+    },
+    {
+      "id": "chute-historia-543",
+      "difficulty": "easy",
+      "text": "Quantas pessoas pisaram na Lua na missão Apollo 11?",
+      "answer": 2,
+      "unit": "pessoas",
+      "fact": "Armstrong e Aldrin caminharam na Lua."
+    },
+    {
+      "id": "chute-historia-544",
+      "difficulty": "easy",
+      "text": "Quantos anos se passaram entre a chegada à Lua e 2025?",
+      "answer": 56,
+      "unit": "anos",
+      "fact": "A chegada à Lua foi em 1969."
+    },
+    {
+      "id": "chute-historia-545",
+      "difficulty": "easy",
+      "text": "Quantos anos o Muro de Berlim completou de queda em 2019?",
+      "answer": 30,
+      "unit": "anos",
+      "fact": "O muro caiu em novembro de 1989."
+    },
+    {
+      "id": "chute-historia-546",
+      "difficulty": "easy",
+      "text": "Quantas Copas do Mundo o Brasil ganhou com Pelé em campo?",
+      "answer": 3,
+      "unit": "títulos",
+      "fact": "Em 1962 Pelé se machucou no começo da Copa."
+    },
+    {
+      "id": "chute-historia-547",
+      "difficulty": "easy",
+      "text": "Quantas Copas o Brasil ganhou no século 20?",
+      "answer": 4,
+      "unit": "títulos",
+      "fact": "A quinta veio em 2002."
     }
   ]
 }

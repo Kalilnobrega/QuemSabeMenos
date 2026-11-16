@@ -3185,6 +3185,1268 @@
       "text": "Até que dia de dezembro deve ser paga a segunda parcela do 13º salário?",
       "answer": 20,
       "fact": "Nessa parcela é que entram os descontos de INSS e Imposto de Renda."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-444",
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota com a tartaruga-marinha?",
+      "answer": 2,
+      "unit": "reais",
+      "fact": "A nota de 2 reais foi lançada em 2001."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-445",
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota com a garça?",
+      "answer": 5,
+      "unit": "reais",
+      "fact": "A garça-branca-grande aparece na nota de 5 reais."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-446",
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota com a arara?",
+      "answer": 10,
+      "unit": "reais",
+      "fact": "A arara-vermelha está na nota de 10 reais."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-447",
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota com a garoupa?",
+      "answer": 100,
+      "unit": "reais",
+      "fact": "A garoupa é um peixe do litoral brasileiro."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-448",
+      "difficulty": "easy",
+      "text": "Quantos reais vale a nota com o lobo-guará?",
+      "answer": 200,
+      "unit": "reais",
+      "fact": "A nota de 200 reais foi lançada em 2020."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-449",
+      "difficulty": "easy",
+      "text": "Quantas moedas de 1 real formam 10 reais?",
+      "answer": 10,
+      "unit": "moedas",
+      "fact": "A moeda de 1 real tem duas cores de metal."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-450",
+      "difficulty": "easy",
+      "text": "Quantas moedas de 10 centavos formam 1 real?",
+      "answer": 10,
+      "unit": "moedas",
+      "fact": "A moeda de 10 centavos é dourada."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-451",
+      "difficulty": "easy",
+      "text": "Quantas notas de 50 reais formam 1.000 reais?",
+      "answer": 20,
+      "unit": "notas",
+      "fact": "Saques grandes costumam vir em notas de 50 e 100."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-452",
+      "difficulty": "easy",
+      "text": "Quantos reais sobram de 100 reais depois de gastar 37 e 25?",
+      "answer": 38,
+      "unit": "reais",
+      "fact": "Fazer conta de troco ajuda a não ser enganado."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-453",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um produto de 80 reais com 25% de desconto?",
+      "answer": 60,
+      "unit": "reais",
+      "fact": "25% de 80 é 20."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-454",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um produto de 200 reais com 10% de aumento?",
+      "answer": 220,
+      "unit": "reais",
+      "fact": "10% de 200 é 20."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-455",
+      "difficulty": "easy",
+      "text": "Quantos reais dá uma gorjeta de 10% numa conta de 150 reais?",
+      "answer": 15,
+      "unit": "reais",
+      "fact": "Os 10% não são obrigatórios por lei."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-456",
+      "difficulty": "easy",
+      "text": "Quantos reais cada pessoa paga numa conta de 240 reais dividida por 4?",
+      "answer": 60,
+      "unit": "reais",
+      "fact": "Dividir a conta virou mais fácil com o Pix."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-457",
+      "difficulty": "easy",
+      "text": "Quantos reais custam 3 parcelas de 49,90 reais, aproximadamente?",
+      "answer": 150,
+      "unit": "reais",
+      "fact": "Muitas lojas usam preços terminados em 90 centavos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-458",
+      "difficulty": "easy",
+      "text": "Quantas parcelas de 100 reais pagam uma geladeira de 2.400 reais?",
+      "answer": 24,
+      "unit": "parcelas",
+      "fact": "Parcelas longas costumam ter juros embutidos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-459",
+      "difficulty": "easy",
+      "text": "Quantos meses de salário um trabalhador CLT recebe de férias, com o terço extra?",
+      "answer": 1.33,
+      "unit": "salário",
+      "fact": "As férias pagam o salário mais um terço."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-460",
+      "difficulty": "easy",
+      "text": "Quantos dias de férias um trabalhador pode vender por ano, no máximo?",
+      "answer": 10,
+      "unit": "dias",
+      "fact": "Vender férias é chamado de abono pecuniário."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-461",
+      "difficulty": "easy",
+      "text": "Quantos dias antes do pagamento das férias a empresa precisa pagar o valor, no mínimo?",
+      "answer": 2,
+      "unit": "dias",
+      "fact": "O pagamento antecipado ajuda o trabalhador a viajar."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-462",
+      "difficulty": "easy",
+      "text": "Quantos meses de trabalho dão direito a férias?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Esse período é chamado de período aquisitivo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-463",
+      "difficulty": "easy",
+      "text": "Quantos anos de idade é preciso ter para abrir uma conta no banco sozinho, sem os pais?",
+      "answer": 18,
+      "unit": "anos",
+      "fact": "Menores podem ter conta com autorização dos responsáveis."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-464",
+      "difficulty": "easy",
+      "text": "Quantos dias o boleto costuma levar para compensar, em dias úteis, no máximo?",
+      "answer": 3,
+      "unit": "dias",
+      "fact": "O Pix cai na hora, a qualquer hora."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-465",
+      "difficulty": "easy",
+      "text": "Quantos segundos leva uma transferência por Pix, em geral?",
+      "answer": 10,
+      "unit": "segundos",
+      "fact": "O Pix funciona até em feriados e de madrugada."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-466",
+      "difficulty": "easy",
+      "text": "Quantos reais custa uma transferência por Pix entre pessoas?",
+      "answer": 0,
+      "unit": "reais",
+      "fact": "Para pessoas físicas, o Pix é gratuito."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-467",
+      "difficulty": "easy",
+      "text": "Quantas vezes por ano o salário mínimo é reajustado no Brasil?",
+      "answer": 1,
+      "unit": "vez",
+      "fact": "O reajuste costuma valer a partir de janeiro."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-468",
+      "difficulty": "easy",
+      "text": "Em que mês o salário mínimo costuma ser reajustado no Brasil?",
+      "answer": 1,
+      "fact": "O novo valor vale a partir do primeiro dia do ano."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-469",
+      "difficulty": "easy",
+      "text": "Em que mês do ano se paga o IPVA, em geral, na cota única?",
+      "answer": 1,
+      "fact": "Pagar à vista costuma dar desconto."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-470",
+      "difficulty": "easy",
+      "text": "Quantos funcionários um MEI pode contratar, no máximo?",
+      "answer": 1,
+      "unit": "funcionário",
+      "fact": "O MEI é para pequenos negócios."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-471",
+      "difficulty": "easy",
+      "text": "Quantos reais por ano um MEI pode faturar, em milhares, no limite atual, aproximadamente?",
+      "answer": 81,
+      "unit": "mil",
+      "fact": "Quem passa do limite precisa mudar de regime."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-472",
+      "difficulty": "easy",
+      "text": "Quantos dígitos tem o código de um boleto bancário, na linha digitável, aproximadamente?",
+      "answer": 47,
+      "unit": "dígitos",
+      "fact": "A linha digitável permite pagar sem o código de barras."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-473",
+      "difficulty": "easy",
+      "text": "Quantas moedas de 50 centavos formam 5 reais?",
+      "answer": 10,
+      "unit": "moedas",
+      "fact": "A moeda de 50 centavos é prateada."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-474",
+      "difficulty": "easy",
+      "text": "Quantos reais tem uma pessoa com 2 notas de 100, 3 de 20 e 1 de 5?",
+      "answer": 265,
+      "unit": "reais",
+      "fact": "Contar dinheiro em notas grandes primeiro facilita a conta."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-475",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um litro de leite longa vida no Brasil em 2025, aproximadamente?",
+      "answer": 5,
+      "unit": "reais",
+      "fact": "O preço do leite sobe na entressafra."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-476",
+      "difficulty": "easy",
+      "text": "Quantos reais custa uma dúzia de ovos no Brasil em 2025, aproximadamente?",
+      "answer": 12,
+      "unit": "reais",
+      "fact": "O preço do ovo subiu muito no começo de 2025."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-477",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um quilo de arroz no Brasil em 2025, aproximadamente?",
+      "answer": 6,
+      "unit": "reais",
+      "fact": "O arroz e o feijão pesam muito na cesta básica."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-478",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um cafezinho na padaria em 2025, aproximadamente?",
+      "answer": 5,
+      "unit": "reais",
+      "fact": "Em cafeterias o preço pode passar do dobro."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-479",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um ingresso de cinema comum em 2025, aproximadamente?",
+      "answer": 30,
+      "unit": "reais",
+      "fact": "Às terças muitos cinemas fazem promoção."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-480",
+      "difficulty": "easy",
+      "text": "Quantos reais custa uma assinatura básica de streaming no Brasil, aproximadamente?",
+      "answer": 30,
+      "unit": "reais",
+      "fact": "Planos com anúncios costumam ser mais baratos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-481",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um botijão de gás de 13 kg em 2025, aproximadamente?",
+      "answer": 110,
+      "unit": "reais",
+      "fact": "O preço muda bastante de uma cidade para outra."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-482",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um Big Mac no Brasil em 2025, aproximadamente?",
+      "answer": 25,
+      "unit": "reais",
+      "fact": "O Índice Big Mac compara preços entre países."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-483",
+      "difficulty": "easy",
+      "text": "Quantos reais custa uma corrida curta de aplicativo numa capital, aproximadamente?",
+      "answer": 15,
+      "unit": "reais",
+      "fact": "O preço sobe nos horários de pico."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-484",
+      "difficulty": "easy",
+      "text": "Quantos reais custa uma conta de luz média de uma casa no Brasil, por mês, aproximadamente?",
+      "answer": 150,
+      "unit": "reais",
+      "fact": "As bandeiras tarifárias encarecem a conta em períodos de seca."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-485",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um corte de cabelo masculino simples em 2025, aproximadamente?",
+      "answer": 40,
+      "unit": "reais",
+      "fact": "Barbearias de bairro costumam ser mais baratas."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-486",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançada a nota de 2 reais?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "A tartaruga-marinha foi escolhida como símbolo da nota."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-487",
+      "difficulty": "medium",
+      "text": "Em que ano o Brasil lançou a segunda família de notas do real, com tamanhos diferentes?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "Os tamanhos diferentes ajudam pessoas com deficiência visual."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-488",
+      "difficulty": "medium",
+      "text": "Em que ano a moeda de 1 centavo deixou de ser fabricada?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Ela continua valendo no comércio."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-489",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Banco Central do Brasil?",
+      "answer": 1964,
+      "scale": 50,
+      "fact": "Antes disso, o Banco do Brasil cuidava de parte dessas funções."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-490",
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a B3, com esse nome, depois da fusão da BM&FBovespa e da Cetip?",
+      "answer": 2017,
+      "scale": 50,
+      "fact": "A bolsa brasileira fica em São Paulo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-491",
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Bovespa?",
+      "answer": 1890,
+      "scale": 50,
+      "fact": "A bolsa começou como Bolsa Livre, em São Paulo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-492",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o FGTS?",
+      "answer": 1966,
+      "scale": 50,
+      "fact": "O fundo substituiu a antiga estabilidade no emprego."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-493",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o seguro-desemprego no Brasil?",
+      "answer": 1986,
+      "scale": 50,
+      "fact": "Ele foi criado junto com o Plano Cruzado."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-494",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o vale-transporte?",
+      "answer": 1985,
+      "scale": 50,
+      "fact": "O desconto máximo do salário é de 6%."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-495",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Simples Nacional?",
+      "answer": 2006,
+      "scale": 50,
+      "fact": "O Simples junta vários impostos numa guia só."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-496",
+      "difficulty": "medium",
+      "text": "Em que ano o Brasil criou o cadastro positivo, com nota de crédito automática?",
+      "answer": 2019,
+      "scale": 50,
+      "fact": "O cadastro mostra quem paga as contas em dia."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-497",
+      "difficulty": "medium",
+      "text": "Em que ano foi criada a Serasa?",
+      "answer": 1968,
+      "scale": 50,
+      "fact": "A Serasa reúne informações de crédito dos consumidores."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-498",
+      "difficulty": "medium",
+      "text": "Em que ano foi criado o Procon de São Paulo?",
+      "answer": 1976,
+      "scale": 50,
+      "fact": "O Procon defende os consumidores."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-499",
+      "difficulty": "medium",
+      "text": "Em que ano foi lançado o primeiro cartão de crédito no Brasil?",
+      "answer": 1956,
+      "scale": 50,
+      "fact": "O cartão se chamava Diners Club."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-500",
+      "difficulty": "medium",
+      "text": "Em que ano o Nubank lançou o cartão roxo?",
+      "answer": 2014,
+      "scale": 50,
+      "fact": "O cartão sem anuidade atraiu milhões de clientes."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-501",
+      "difficulty": "medium",
+      "text": "Em que ano a Magazine Luiza lançou a \"Lu\" como personagem digital?",
+      "answer": 2003,
+      "scale": 50,
+      "fact": "A Lu virou uma das influenciadoras virtuais mais seguidas."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-502",
+      "difficulty": "medium",
+      "text": "Em que ano a Amazon começou a vender no Brasil, com livros?",
+      "answer": 2012,
+      "scale": 50,
+      "fact": "A loja começou vendendo livros digitais."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-503",
+      "difficulty": "medium",
+      "text": "Em que ano a Americanas revelou o rombo bilionário?",
+      "answer": 2023,
+      "scale": 50,
+      "fact": "O caso foi chamado de inconsistência contábil."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-504",
+      "difficulty": "medium",
+      "text": "Em que ano a Oi entrou em recuperação judicial pela primeira vez?",
+      "answer": 2016,
+      "scale": 50,
+      "fact": "Foi uma das maiores recuperações judiciais do Brasil."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-505",
+      "difficulty": "medium",
+      "text": "Em que ano a Embraer foi privatizada?",
+      "answer": 1994,
+      "scale": 50,
+      "fact": "A empresa é uma das maiores fabricantes de aviões do mundo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-506",
+      "difficulty": "medium",
+      "text": "Em que ano a Petrobras fez a maior oferta de ações da história, até então?",
+      "answer": 2010,
+      "scale": 50,
+      "fact": "A capitalização foi usada para explorar o pré-sal."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-507",
+      "difficulty": "medium",
+      "text": "Em que ano a Ambev se juntou à Interbrew para formar a InBev?",
+      "answer": 2004,
+      "scale": 50,
+      "fact": "Depois veio a compra da Anheuser-Busch."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-508",
+      "difficulty": "medium",
+      "text": "Em que ano a Sadia e a Perdigão se uniram para formar a BRF?",
+      "answer": 2009,
+      "scale": 50,
+      "fact": "A BRF é uma das maiores empresas de alimentos do mundo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-509",
+      "difficulty": "medium",
+      "text": "Em que ano a JBS comprou a americana Swift?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "A compra transformou a JBS numa gigante global da carne."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-510",
+      "difficulty": "medium",
+      "text": "Em que ano o Itaú se fundiu ao Unibanco?",
+      "answer": 2008,
+      "scale": 50,
+      "fact": "A fusão criou o maior banco privado do Hemisfério Sul."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-511",
+      "difficulty": "medium",
+      "text": "Em que ano o Santander comprou o Banco Real, no Brasil?",
+      "answer": 2007,
+      "scale": 50,
+      "fact": "O Banco Real era do holandês ABN Amro."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-512",
+      "difficulty": "medium",
+      "text": "Em que ano o Bradesco comprou o HSBC Brasil?",
+      "answer": 2015,
+      "scale": 50,
+      "fact": "O negócio custou mais de 17 bilhões de reais."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-513",
+      "difficulty": "medium",
+      "text": "Em que ano foi fundada a XP Investimentos?",
+      "answer": 2001,
+      "scale": 50,
+      "fact": "A empresa começou como um escritório em Porto Alegre."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-514",
+      "difficulty": "medium",
+      "text": "Em que ano o iFood passou a dominar as entregas, com a saída do Uber Eats do Brasil?",
+      "answer": 2022,
+      "scale": 50,
+      "fact": "O Uber Eats deixou de entregar comida no país."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-515",
+      "difficulty": "medium",
+      "text": "Quantos dólares custava uma ação da Apple quando ela abriu capital, em 1980?",
+      "answer": 22,
+      "unit": "dólares",
+      "fact": "Depois de várias divisões, esse valor ficou bem menor."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-516",
+      "difficulty": "medium",
+      "text": "Quantos dólares valia uma ação da Amazon quando ela abriu capital, em 1997?",
+      "answer": 18,
+      "unit": "dólares",
+      "fact": "A empresa começou vendendo livros pela internet."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-517",
+      "difficulty": "medium",
+      "text": "Quantos dólares valia uma ação do Google quando ele abriu capital, em 2004?",
+      "answer": 85,
+      "unit": "dólares",
+      "fact": "A empresa usou um leilão diferente para vender as ações."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-518",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares o Facebook valia ao abrir capital, em 2012?",
+      "answer": 104,
+      "unit": "bilhões",
+      "fact": "A estreia na bolsa teve problemas técnicos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-519",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares valia a Apple quando Steve Jobs voltou, em 1997, aproximadamente?",
+      "answer": 3,
+      "unit": "bilhões",
+      "fact": "A Microsoft investiu 150 milhões na Apple naquele ano."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-520",
+      "difficulty": "medium",
+      "text": "Quantos milhões de dólares a Microsoft investiu na Apple em 1997?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "O acordo surpreendeu o público numa feira de tecnologia."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-521",
+      "difficulty": "medium",
+      "text": "Quantos dólares Steve Jobs recebia de salário por ano, na Apple, depois de voltar?",
+      "answer": 1,
+      "unit": "dólar",
+      "fact": "Ele ganhava mesmo com as ações da empresa."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-522",
+      "difficulty": "medium",
+      "text": "Quantas ações tinha Warren Buffett de sua primeira compra, aos 11 anos?",
+      "answer": 3,
+      "unit": "ações",
+      "fact": "Ele comprou ações de uma empresa de petróleo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-523",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares Warren Buffett já doou, aproximadamente?",
+      "answer": 60,
+      "unit": "bilhões",
+      "fact": "Ele prometeu doar quase toda a fortuna."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-524",
+      "difficulty": "medium",
+      "text": "Quantos anos Warren Buffett morou na mesma casa em Omaha, aproximadamente?",
+      "answer": 65,
+      "unit": "anos",
+      "fact": "Ele comprou a casa em 1958."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-525",
+      "difficulty": "medium",
+      "text": "Quantos dólares Warren Buffett pagou pela casa onde mora, em 1958?",
+      "answer": 31500,
+      "unit": "dólares",
+      "fact": "A casa fica em Omaha, no Nebraska."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-526",
+      "difficulty": "medium",
+      "text": "Quantas lojas o Starbucks tem no Brasil, aproximadamente?",
+      "answer": 130,
+      "unit": "lojas",
+      "fact": "A rede chegou ao Brasil em 2006."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-527",
+      "difficulty": "medium",
+      "text": "Quantas lojas o McDonald's tem no Brasil, aproximadamente?",
+      "answer": 1100,
+      "unit": "lojas",
+      "fact": "A primeira loja abriu em Copacabana."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-528",
+      "difficulty": "medium",
+      "text": "Quantas lojas o Burger King tem no Brasil, aproximadamente?",
+      "answer": 900,
+      "unit": "lojas",
+      "fact": "A rede chegou ao Brasil em 2004."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-529",
+      "difficulty": "medium",
+      "text": "Quantas lojas o Habib's tem no Brasil, aproximadamente?",
+      "answer": 500,
+      "unit": "lojas",
+      "fact": "A rede ficou famosa pela esfiha barata."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-530",
+      "difficulty": "medium",
+      "text": "Quantas lojas a Magazine Luiza tem no Brasil, aproximadamente?",
+      "answer": 1300,
+      "unit": "lojas",
+      "fact": "A empresa nasceu em Franca, no interior de São Paulo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-531",
+      "difficulty": "medium",
+      "text": "Quantas lojas a Renner tem, aproximadamente?",
+      "answer": 430,
+      "unit": "lojas",
+      "fact": "A Renner nasceu em Porto Alegre."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-532",
+      "difficulty": "medium",
+      "text": "Quantas agências o Banco do Brasil tem, aproximadamente, em milhares?",
+      "answer": 4,
+      "unit": "mil",
+      "fact": "O Banco do Brasil é o banco mais antigo do país."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-533",
+      "difficulty": "medium",
+      "text": "Quantos caixas eletrônicos o Brasil tem, em milhares, aproximadamente?",
+      "answer": 150,
+      "unit": "mil",
+      "fact": "O número vem caindo com o uso do celular."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-534",
+      "difficulty": "medium",
+      "text": "Quantos clientes tem a Caixa Econômica Federal, em milhões, aproximadamente?",
+      "answer": 150,
+      "unit": "milhões",
+      "fact": "A Caixa paga benefícios como o Bolsa Família."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-535",
+      "difficulty": "medium",
+      "text": "Quantas chaves Pix existiam no Brasil em 2024, em milhões, aproximadamente?",
+      "answer": 800,
+      "unit": "milhões",
+      "fact": "Cada pessoa pode ter várias chaves."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-536",
+      "difficulty": "medium",
+      "text": "Quantas transações por Pix o Brasil faz por dia, em milhões, aproximadamente?",
+      "answer": 200,
+      "unit": "milhões",
+      "fact": "O Pix virou o meio de pagamento mais usado do país."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-537",
+      "difficulty": "medium",
+      "text": "Quantos cartões de crédito existem no Brasil, em milhões, aproximadamente?",
+      "answer": 200,
+      "unit": "milhões",
+      "fact": "Muita gente tem mais de um cartão."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-538",
+      "difficulty": "medium",
+      "text": "Qual é a taxa de juros do cartão de crédito rotativo no Brasil, por ano, em %, aproximadamente?",
+      "answer": 430,
+      "unit": "%",
+      "fact": "É uma das maiores taxas do mundo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-539",
+      "difficulty": "medium",
+      "text": "Qual é a taxa de juros do cheque especial por mês, no máximo, em %?",
+      "answer": 8,
+      "unit": "%",
+      "fact": "O teto foi criado em 2020."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-540",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros estavam endividados em 2024, em porcentagem das famílias, aproximadamente?",
+      "answer": 78,
+      "unit": "%",
+      "fact": "A maior parte das dívidas é no cartão de crédito."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-541",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros estavam com o nome sujo em 2024, em milhões, aproximadamente?",
+      "answer": 73,
+      "unit": "milhões",
+      "fact": "O programa Desenrola ajudou a renegociar dívidas."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-542",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros investem na bolsa, em milhões, aproximadamente, em 2024?",
+      "answer": 5,
+      "unit": "milhões",
+      "fact": "O número era bem menor antes de 2018."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-543",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros têm dinheiro na poupança, em milhões, aproximadamente?",
+      "answer": 160,
+      "unit": "milhões",
+      "fact": "A poupança é a aplicação mais antiga do país."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-544",
+      "difficulty": "medium",
+      "text": "Qual é a meta de inflação do Brasil, em %?",
+      "answer": 3,
+      "unit": "%",
+      "fact": "A tolerância é de 1,5 ponto para cima ou para baixo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-545",
+      "difficulty": "medium",
+      "text": "Qual foi a inflação do Brasil em 2024, em %, aproximadamente?",
+      "answer": 4.8,
+      "unit": "%",
+      "fact": "A inflação ficou acima do teto da meta."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-546",
+      "difficulty": "medium",
+      "text": "Qual foi a inflação do Brasil em 2021, em %, aproximadamente?",
+      "answer": 10,
+      "unit": "%",
+      "fact": "Foi a maior inflação anual em seis anos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-547",
+      "difficulty": "medium",
+      "text": "Qual foi o crescimento do PIB brasileiro em 2023, em %, aproximadamente?",
+      "answer": 3,
+      "unit": "%",
+      "fact": "O agronegócio puxou o crescimento."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-548",
+      "difficulty": "medium",
+      "text": "Qual era a taxa de desemprego no Brasil no fim de 2024, em %, aproximadamente?",
+      "answer": 6.2,
+      "unit": "%",
+      "fact": "Foi a menor taxa da série histórica."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-549",
+      "difficulty": "medium",
+      "text": "Qual foi a taxa de desemprego mais alta do Brasil, durante a pandemia, em %, aproximadamente?",
+      "answer": 14.9,
+      "unit": "%",
+      "fact": "Milhões de pessoas perderam o emprego em 2020 e 2021."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-550",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros trabalham com carteira assinada, em milhões, aproximadamente?",
+      "answer": 39,
+      "unit": "milhões",
+      "fact": "Milhões trabalham na informalidade."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-551",
+      "difficulty": "medium",
+      "text": "Quantos brasileiros trabalham na informalidade, em milhões, aproximadamente?",
+      "answer": 39,
+      "unit": "milhões",
+      "fact": "São trabalhadores sem carteira e sem CNPJ."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-552",
+      "difficulty": "medium",
+      "text": "Qual é o PIB per capita do Brasil, em milhares de reais por ano, aproximadamente?",
+      "answer": 50,
+      "unit": "mil",
+      "fact": "O valor esconde a grande desigualdade do país."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-553",
+      "difficulty": "medium",
+      "text": "Qual é a posição do Brasil entre as maiores economias do mundo, aproximadamente?",
+      "answer": 10,
+      "unit": "º",
+      "fact": "O Brasil já foi a sexta economia, em 2011."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-554",
+      "difficulty": "medium",
+      "text": "Quanto o Brasil exporta por ano, em bilhões de dólares, aproximadamente?",
+      "answer": 340,
+      "unit": "bilhões",
+      "fact": "Soja, petróleo e minério de ferro lideram."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-555",
+      "difficulty": "medium",
+      "text": "Qual é o principal produto de exportação do Brasil, em porcentagem do total, a soja, aproximadamente?",
+      "answer": 16,
+      "unit": "%",
+      "fact": "A China é a maior compradora da soja brasileira."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-556",
+      "difficulty": "medium",
+      "text": "Quantos dólares vale uma tonelada de minério de ferro, aproximadamente, em 2024?",
+      "answer": 100,
+      "unit": "dólares",
+      "fact": "O preço depende muito da demanda da China."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-557",
+      "difficulty": "medium",
+      "text": "Quantos dólares vale uma saca de 60 kg de café arábica, em 2024, aproximadamente?",
+      "answer": 300,
+      "unit": "dólares",
+      "fact": "O preço do café subiu muito com secas e geadas."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-558",
+      "difficulty": "medium",
+      "text": "Quantos dólares vale o barril de petróleo Brent, em 2024, em média, aproximadamente?",
+      "answer": 80,
+      "unit": "dólares",
+      "fact": "O preço oscila com guerras e decisões da Opep."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-559",
+      "difficulty": "medium",
+      "text": "Quantos dólares vale uma onça de ouro, em 2025, aproximadamente?",
+      "answer": 3000,
+      "unit": "dólares",
+      "fact": "O ouro bateu recordes seguidos em 2024 e 2025."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-560",
+      "difficulty": "medium",
+      "text": "Quantos reais valia 1 dólar no fim de 2024, aproximadamente?",
+      "answer": 6.2,
+      "unit": "reais",
+      "fact": "O dólar subiu muito no fim do ano."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-561",
+      "difficulty": "medium",
+      "text": "Quantos reais valia 1 dólar quando o real foi lançado, em 1994?",
+      "answer": 1,
+      "unit": "real",
+      "fact": "O real começou valendo quase o mesmo que o dólar."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-562",
+      "difficulty": "medium",
+      "text": "Quantos reais valia 1 euro em 2024, em média, aproximadamente?",
+      "answer": 5.8,
+      "unit": "reais",
+      "fact": "O euro costuma valer mais que o dólar."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-563",
+      "difficulty": "medium",
+      "text": "Quantos ienes valia 1 dólar em 2024, aproximadamente?",
+      "answer": 150,
+      "unit": "ienes",
+      "fact": "O iene ficou fraco por causa dos juros baixos no Japão."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-564",
+      "difficulty": "medium",
+      "text": "Quantos pesos argentinos valia 1 dólar oficial no fim de 2024, aproximadamente?",
+      "answer": 1000,
+      "unit": "pesos",
+      "fact": "A Argentina viveu anos de inflação muito alta."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-565",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares tinha Jorge Paulo Lemann em 2024, aproximadamente?",
+      "answer": 16,
+      "unit": "bilhões",
+      "fact": "Ele é um dos sócios da 3G Capital."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-566",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares tinha Eduardo Saverin em 2024, aproximadamente?",
+      "answer": 30,
+      "unit": "bilhões",
+      "fact": "Ele é o brasileiro mais rico, segundo a Forbes."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-567",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares tinha Bernard Arnault, dono da LVMH, em 2024, aproximadamente?",
+      "answer": 200,
+      "unit": "bilhões",
+      "fact": "Ele chegou a ser o homem mais rico do mundo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-568",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares tinha Jeff Bezos em 2024, aproximadamente?",
+      "answer": 230,
+      "unit": "bilhões",
+      "fact": "Ele fundou a Amazon numa garagem."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-569",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares tinha Bill Gates em 2024, aproximadamente?",
+      "answer": 105,
+      "unit": "bilhões",
+      "fact": "Gates já foi o mais rico do mundo por muitos anos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-570",
+      "difficulty": "medium",
+      "text": "Quantos bilhões de dólares tinha Mark Zuckerberg em 2024, aproximadamente?",
+      "answer": 200,
+      "unit": "bilhões",
+      "fact": "Ele tem a maior parte das ações com direito a voto da Meta."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-571",
+      "difficulty": "medium",
+      "text": "Quantos anos tinha Mark Zuckerberg quando virou bilionário?",
+      "answer": 23,
+      "unit": "anos",
+      "fact": "Ele foi um dos bilionários mais jovens da história."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-572",
+      "difficulty": "medium",
+      "text": "Quantos funcionários tinha o Facebook quando abriu capital, em 2012, aproximadamente?",
+      "answer": 3500,
+      "unit": "funcionários",
+      "fact": "Hoje a Meta tem mais de 70 mil."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-573",
+      "difficulty": "medium",
+      "text": "Quantos funcionários tem a Petrobras, aproximadamente?",
+      "answer": 40000,
+      "unit": "funcionários",
+      "fact": "A empresa é a maior do Brasil em receita."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-574",
+      "difficulty": "medium",
+      "text": "Quantos funcionários tem a Ambev no Brasil, aproximadamente?",
+      "answer": 35000,
+      "unit": "funcionários",
+      "fact": "A Ambev é a maior cervejaria do país."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-575",
+      "difficulty": "medium",
+      "text": "Quantos funcionários tem o Itaú, aproximadamente?",
+      "answer": 95000,
+      "unit": "funcionários",
+      "fact": "O Itaú é o maior banco privado do Brasil."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-576",
+      "difficulty": "medium",
+      "text": "Quantos funcionários tem o McDonald's no mundo, contando franquias, em milhões, aproximadamente?",
+      "answer": 2,
+      "unit": "milhões",
+      "fact": "Muitos jovens têm no McDonald's o primeiro emprego."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-577",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a empresa Blockbuster, desde a fundação até a falência?",
+      "answer": 25,
+      "unit": "anos",
+      "fact": "A empresa foi fundada em 1985 e faliu em 2010."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-578",
+      "difficulty": "medium",
+      "text": "Quantos anos a Kodak levou da criação da câmera digital até a falência?",
+      "answer": 37,
+      "unit": "anos",
+      "fact": "A Kodak inventou a câmera digital, mas não apostou nela."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-579",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a empresa Mesbla, no Brasil, aproximadamente?",
+      "answer": 85,
+      "unit": "anos",
+      "fact": "A loja de departamentos faliu nos anos 1990."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-580",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a companhia aérea Varig?",
+      "answer": 79,
+      "unit": "anos",
+      "fact": "A Varig foi fundada em 1927 e parou de voar em 2006."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-581",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a Transbrasil, companhia aérea?",
+      "answer": 46,
+      "unit": "anos",
+      "fact": "A empresa parou de voar em 2001."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-582",
+      "difficulty": "medium",
+      "text": "Quantos anos durou a Vasp, companhia aérea paulista?",
+      "answer": 72,
+      "unit": "anos",
+      "fact": "A Vasp foi fundada em 1933 e parou em 2005."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-583",
+      "difficulty": "medium",
+      "text": "Quantos dias úteis o investidor espera para receber uma ação comprada na bolsa?",
+      "answer": 2,
+      "unit": "dias",
+      "fact": "Esse prazo é chamado de D+2."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-584",
+      "difficulty": "medium",
+      "text": "Quantas horas por dia a bolsa brasileira funciona, aproximadamente?",
+      "answer": 7,
+      "unit": "horas",
+      "fact": "O pregão acontece de segunda a sexta."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-585",
+      "difficulty": "medium",
+      "text": "Quantos anos dura um título do Tesouro Direto de longo prazo, como o de 2045?",
+      "answer": 20,
+      "unit": "anos",
+      "fact": "O Tesouro Direto permite investir com pouco dinheiro."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-586",
+      "difficulty": "medium",
+      "text": "Quantos reais é o valor mínimo para investir no Tesouro Direto, aproximadamente?",
+      "answer": 30,
+      "unit": "reais",
+      "fact": "O Tesouro foi criado para popularizar os investimentos."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-587",
+      "difficulty": "easy",
+      "text": "Quantas moedas diferentes de real existem em circulação, sem contar a de 1 centavo?",
+      "answer": 5,
+      "unit": "moedas",
+      "fact": "São as de 5, 10, 25 e 50 centavos e a de 1 real."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-588",
+      "difficulty": "easy",
+      "text": "Quantos reais custa um produto de 100 reais com 15% de desconto?",
+      "answer": 85,
+      "unit": "reais",
+      "fact": "15% de 100 é 15."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-589",
+      "difficulty": "easy",
+      "text": "Quantos reais de troco se recebe pagando 50 reais numa compra de 32?",
+      "answer": 18,
+      "unit": "reais",
+      "fact": "Contar para cima é um jeito fácil de conferir o troco."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-590",
+      "difficulty": "easy",
+      "text": "Quantos reais custam 12 pães franceses de 0,80 cada?",
+      "answer": 9.6,
+      "unit": "reais",
+      "fact": "O pão francês também é vendido por quilo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-591",
+      "difficulty": "easy",
+      "text": "Quantos reais custa uma pizza de 60 reais dividida por 4 amigos, por pessoa?",
+      "answer": 15,
+      "unit": "reais",
+      "fact": "Dividir a conta é fácil com o Pix."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-592",
+      "difficulty": "easy",
+      "text": "Quantos reais se gasta por mês com um café de 6 reais por dia útil, aproximadamente?",
+      "answer": 132,
+      "unit": "reais",
+      "fact": "São cerca de 22 dias úteis no mês."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-593",
+      "difficulty": "easy",
+      "text": "Quantos reais se economiza por ano guardando 10 reais por semana?",
+      "answer": 520,
+      "unit": "reais",
+      "fact": "O ano tem 52 semanas."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-594",
+      "difficulty": "easy",
+      "text": "Quantos reais se economiza por ano guardando 100 reais por mês?",
+      "answer": 1200,
+      "unit": "reais",
+      "fact": "Guardar todo mês cria o hábito de poupar."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-595",
+      "difficulty": "easy",
+      "text": "Quantos dias úteis o salário costuma cair no mês, para quem é CLT, no máximo?",
+      "answer": 5,
+      "unit": "º dia útil",
+      "fact": "A lei manda pagar até o quinto dia útil."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-596",
+      "difficulty": "easy",
+      "text": "Quantos meses de trabalho dão direito a um 13º inteiro?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Quem trabalhou menos recebe proporcional."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-597",
+      "difficulty": "easy",
+      "text": "Quantas horas de trabalho por semana tem um estágio de nível superior, no máximo?",
+      "answer": 30,
+      "unit": "horas",
+      "fact": "A lei limita seis horas por dia."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-598",
+      "difficulty": "easy",
+      "text": "Quantos anos dura um contrato de estágio na mesma empresa, no máximo?",
+      "answer": 2,
+      "unit": "anos",
+      "fact": "A regra não vale para pessoas com deficiência."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-599",
+      "difficulty": "easy",
+      "text": "Quantos meses dura o período de experiência de um emprego CLT, no máximo?",
+      "answer": 3,
+      "unit": "meses",
+      "fact": "São 90 dias no máximo."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-600",
+      "difficulty": "easy",
+      "text": "Quantos dias de trabalho o trabalhador precisa ter para pedir seguro-desemprego pela primeira vez, em meses?",
+      "answer": 12,
+      "unit": "meses",
+      "fact": "Nas vezes seguintes, o prazo é menor."
+    },
+    {
+      "id": "chute-dinheiro-e-negocios-601",
+      "difficulty": "easy",
+      "text": "Quantos reais por mês um MEI paga de imposto, aproximadamente, em 2025?",
+      "answer": 80,
+      "unit": "reais",
+      "fact": "O valor muda com o salário mínimo e com a atividade."
     }
   ]
 }
