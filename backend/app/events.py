@@ -232,11 +232,13 @@ class UsePowerUpRequest(BaseModel):
     option: int | None = None  # Batata quente: a alternativa do Palpite do além
 
 
-ReportReason = Literal["wrong_answer", "confusing", "wrong_level", "other"]
+# "unspecified": marcada na revelação com um toque. O motivo vem depois, no fim da partida.
+ReportReason = Literal["unspecified", "wrong_answer", "confusing", "wrong_level", "other"]
 
 
 class ReportQuestionRequest(BaseModel):
-    """Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco."""
+    """Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco.
+    Mandar de novo a mesma pergunta completa o report: troca o motivo e o comentário."""
 
     text: str = Field(min_length=1, max_length=500)
     reason: ReportReason

@@ -3237,7 +3237,7 @@
       "type": "object"
     },
     "ReportQuestionRequest": {
-      "description": "Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco.",
+      "description": "Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco.\nMandar de novo a mesma pergunta completa o report: troca o motivo e o comentário.",
       "properties": {
         "text": {
           "maxLength": 500,
@@ -3246,6 +3246,7 @@
         },
         "reason": {
           "enum": [
+            "unspecified",
             "wrong_answer",
             "confusing",
             "wrong_level",

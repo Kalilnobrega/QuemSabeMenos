@@ -359,8 +359,8 @@ async def test_report_reaches_the_reports_list(connect, server_url, monkeypatch)
     await ana.call("start_game")
     state = await bia.wait_for(lambda s: s["game"] and s["game"]["question"])
     text = state["game"]["question"]["text"]
+    assert (await bia.call("report_question", {"text": text, "reason": "unspecified"}))["ok"]  # o toque na revelação
     assert (await bia.call("report_question", {"text": text, "reason": "wrong_answer", "comment": " Errada. "}))["ok"]
-    assert (await bia.call("report_question", {"text": text, "reason": "other"}))["ok"]  # repetido: ignora quieto
     assert "error" in await bia.call("report_question", {"text": text, "reason": "chato"})
     monkeypatch.setattr(main, "HISTORY_TOKEN", "segredo")
     async with httpx.AsyncClient(base_url=server_url) as client:

@@ -302,15 +302,18 @@ def test_report_finds_the_question_of_the_match_or_of_the_bank(manager):
     assert manager.reported_question("sid-bia", "Pergunta que não existe?")[2] is None
 
 
-def test_report_is_saved_once_per_player_and_question(tmp_path, manager):
+def test_report_is_marked_first_and_detailed_later(tmp_path, manager):
     from app.history import MatchHistory
 
     history = MatchHistory(tmp_path / "h.db")
     room, ana = manager.create("sid-ana", profile("Ana"))
-    assert history.report(room, "q1", "Quanto?", "wrong_answer", "", ana.id, ana.nickname, 1)
-    assert not history.report(room, "q1", "Quanto?", "confusing", "de novo", ana.id, ana.nickname, 2)
-    assert history.report(room, "q2", "E agora?", "other", "Faltou a unidade.", ana.id, ana.nickname, 3)
+    # Marcada com um toque na revelação, detalhada no fim da partida.
+    assert history.report(room, "q1", "Quanto?", "unspecified", "", ana.id, ana.nickname, 1)
+    assert not history.report(room, "q1", "Quanto?", "unspecified", "", ana.id, ana.nickname, 2)
+    assert history.report(room, "q1", "Quanto?", "wrong_answer", "Era 12.", ana.id, ana.nickname, 3)
+    assert not history.report(room, "q1", "Quanto?", "unspecified", "", ana.id, ana.nickname, 4)  # não apaga o motivo
+    assert history.report(room, "q2", "E agora?", "other", "Faltou a unidade.", ana.id, ana.nickname, 5)
     reports = history.reports()
     assert [r["question_id"] for r in reports] == ["q2", "q1"]
-    assert reports[0]["comment"] == "Faltou a unidade." and reports[1]["reason"] == "wrong_answer"
+    assert reports[1]["reason"] == "wrong_answer" and reports[1]["comment"] == "Era 12." and reports[1]["at"] == 1
     assert reports[0]["status"] == "open" and reports[0]["nickname"] == "Ana"

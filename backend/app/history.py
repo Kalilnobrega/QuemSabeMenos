@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS reports (
     mode TEXT NOT NULL,
     question_id TEXT,  -- NULL se o texto não bateu com nenhuma pergunta do banco
     question_text TEXT NOT NULL,  -- como o jogador viu
-    reason TEXT NOT NULL,  -- wrong_answer, confusing, wrong_level, other
+    reason TEXT NOT NULL,  -- unspecified (só marcada), wrong_answer, confusing, wrong_level, other
     comment TEXT NOT NULL,
     player_id TEXT NOT NULL,
     nickname TEXT NOT NULL,
@@ -210,11 +210,14 @@ class MatchHistory:
         nickname: str,
         now: float,
     ) -> bool:
-        """Guarda o report de uma pergunta. Devolve False se o jogador já tinha reportado essa."""
+        """Guarda o report de uma pergunta, um por jogador. Se ele já tinha marcado, o motivo novo completa
+        o report. Um "unspecified" nunca apaga um motivo já dado. Devolve False se nada mudou."""
         with self.db:
             cursor = self.db.execute(
-                "INSERT OR IGNORE INTO reports (at, room_code, mode, question_id, question_text, reason, comment,"
-                " player_id, nickname) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "INSERT INTO reports (at, room_code, mode, question_id, question_text, reason, comment,"
+                " player_id, nickname) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                " ON CONFLICT (player_id, question_text) DO UPDATE SET reason = excluded.reason,"
+                " comment = excluded.comment WHERE excluded.reason != 'unspecified'",
                 (now, room.code, room.mode, question_id, text, reason, comment, player_id, nickname),
             )
         return cursor.rowcount == 1

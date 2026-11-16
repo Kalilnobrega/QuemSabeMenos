@@ -18,6 +18,7 @@ import { Confetti, Flame } from './Game'
 import { FlameIcon } from './RoundUI'
 import { LeaveButton } from './LeaveButton'
 import { PowerUpIcon } from './PowerUps'
+import { MatchQuestions } from './ReportQuestion'
 
 /** Segundos que faltam para a fase acabar, contando do momento em que o estado chegou. */
 function useCount(receivedAt: number, endsInMs: number) {
@@ -292,6 +293,7 @@ export function EndScreen({
     <section className="flex w-full flex-col gap-6">
       <h1 className="end-title text-center font-display text-5xl tracking-wide text-brand">Fim de jogo!</h1>
       {children}
+      {done && <MatchQuestions />}
       {done ? (
         <>
           {notice && (

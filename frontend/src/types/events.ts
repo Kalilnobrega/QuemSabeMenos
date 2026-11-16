@@ -2434,13 +2434,14 @@ export interface RejoinRoomRequest {
 }
 /**
  * Um jogador achou a pergunta estranha. `text` é a pergunta como ele viu, para achar no banco.
+ * Mandar de novo a mesma pergunta completa o report: troca o motivo e o comentário.
  *
  * This interface was referenced by `Events`'s JSON-Schema
  * via the `definition` "ReportQuestionRequest".
  */
 export interface ReportQuestionRequest {
   text: string;
-  reason: "wrong_answer" | "confusing" | "wrong_level" | "other";
+  reason: "unspecified" | "wrong_answer" | "confusing" | "wrong_level" | "other";
   comment?: string;
 }
 /**

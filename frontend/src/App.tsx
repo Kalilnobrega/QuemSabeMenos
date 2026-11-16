@@ -279,7 +279,9 @@ export default function App() {
         room?.game || room?.survival || room?.hot_potato ? 'justify-start pt-6 pb-10' : 'justify-center py-10'
       }`}
     >
-      <ReportProvider onSend={reportQuestion}>{content}</ReportProvider>
+      <ReportProvider onSend={reportQuestion} playing={room?.status === 'playing'}>
+        {content}
+      </ReportProvider>
       {/* Só na tela inicial e no lobby: na partida, o pé da tela fica para o Próxima. */}
       {!(room?.game || room?.survival || room?.hot_potato || room?.team_match || room?.estimate) && <SoundToggle />}
       {!connected && (
